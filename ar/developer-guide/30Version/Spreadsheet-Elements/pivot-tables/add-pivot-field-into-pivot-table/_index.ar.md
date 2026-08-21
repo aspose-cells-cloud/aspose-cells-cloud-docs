@@ -1,78 +1,88 @@
-﻿---
-title: إضافة حقل محوري إلى جدول محوري
-second_title: Documen
-linktitle: إضافة حقل محوري
+---
+title: "إضافة حقل محوري إلى جدول محوري"
+second_title: "Document"
+linktitle: "إضافة حقل محوري"
 type: docs
 url: /ar/pivot-tables/add-pivot-field/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
-keywords: Add a pivot field in a pivot table
-description: يدعم Cloud REST إضافة حقل محوري في جدول محوري. تدعم مجموعة أدوات تطوير البرامج (SDK) لغات تطوير متنوعة، بما في ذلك Android وGo وNodeJS وRuby وSwift.
+keywords: "Aspose.Cells Cloud, Excel, جدول محوري, إضافة حقل محوري, REST API, SDK"
+description: "إضافة حقل محوري إلى جدول محوري موجود باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن تفاصيل الطلب، مثالًا باستخدام cURL، وأكواد SDK."
 weight: 40
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة حقل محوري إلى جدول محوري
+ArticleTitle: "إضافة حقل محوري إلى جدول محوري – وثائق Aspose.Cells Cloud"
 ---
-يشير هذا REST API إلى حقل المحور `add` في جدول المحور
- 
-## RSET API
- 
+
+تقوم هذه الواجهة **إضافة** حقل محوري إلى جدول محوري موجود.
+
+> **الشرط المسبق:** لاستدعاء هذه النقطة النهائية، يجب تضمين رمز مصادقة JWT صالح في رأس `Authorization`، وضمان تخزين الملف في المجلد المحدد أو وحدة التخزين الافتراضية.
+
+## واجهة REST API
+
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
 ```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| فهرس الجدول المحوري| عدد صحيح| طريق| مؤشر جدول المحور|
-| نوع الحقل المحوري| خيط| استفسار| نوع منطقة الحقول.|
-| طلب|| جسم| Dto الذي يحتوي على فهرس الحقول|
-| بحاجة إلى إعادة الحساب| منطقي| استفسار|خطأ شنيع|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
- 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
- 
+
+### معلمات الطلب
+
+| اسم المعلمة     | النوع     | الموقع   | الوصف                                                              |
+|------------------|-----------|----------|---------------------------------------------------------------------|
+| name            | string    | path     | اسم المستند.                                                        |
+| sheetName       | string    | path     | اسم ورقة العمل.                                                     |
+| pivotTableIndex | integer   | path     | فهرس الجدول المحوري.                                                |
+| pivotFieldType  | string    | query    | نوع منطقة الحقول (مثل: Row، Column).                               |
+| request         | object    | body     | كائن يحتوي على فهارس الحقول المراد إضافتها.                         |
+| needReCalculate | boolean   | query    | اضبطها على **true** لإعادة حساب الجدول المحوري بعد تنفيذ العملية.   |
+| folder          | string    | query    | المجلد الذي يُخزّن فيه المستند.                                     |
+| storageName     | string    | query    | اسم وحدة التخزين.                                                   |
+
+يعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) واجهة برمجة تطبيقات متاحة عمومًا، ويتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** لاستدعاء خدمات Aspose.Cells عبر الويب. يوضح المثال التالي كيفية إضافة حقل محوري باستخدام cURL.
+
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row"  \
--X PUT \
--d '{"Data":[1,2]}'
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row" \
+  -X PUT \
+  -d '{"Data":[1,2]}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
- 
+
+يُعيد الطلب الناجح كائن JSON يحتوي على الحقلين `Code` و `Status`. مخطط المثال:
+
+```json
+{
+  "Code": 0,        // عدد صحيح يُشير إلى رمز حالة HTTP
+  "Status": "OK"    // رسالة نصية
+}
+```
+
+تشمل استجابات الخطأ المحتملة **400 Bad Request** عند غياب المعلمات، و**401 Unauthorized** إذا كان الرمز غير صالح، و**500 Internal Server Error** في حال حدوث مشكلات من جانب الخادم.
+
+## عائلة SDK للسحابة
+
+استخدام SDK هو أسرع طريقة لدمج هذه الوظيفة. فتتولى SDKs إدارة التفاصيل من المستوى المنخفض، مما يتيح لك التركيز على منطق أعمالك. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على القائمة الكاملة لـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر SDKs مختلفة:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="Ruby" tabName4="Python" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -123,6 +133,6 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
 
 {{< /tabs >}}
 
-
-
-
+**انظر أيضًا:**  
+- [إضافة جدول محوري](https://docs.aspose.cloud/cells/ar/pivot-tables/add-pivot-table/)  
+- [حذف حقل محوري](https://docs.aspose.cloud/cells/ar/pivot-tables/delete-pivot-field/)

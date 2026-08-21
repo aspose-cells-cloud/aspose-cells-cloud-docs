@@ -1,327 +1,361 @@
-﻿---
-title: Excel dosyalarına veri aktarın ve Excel dosyalarına veri aktarın
-second_title: Documen
-linktitle: İthalat ve İhracat Verileri
-type: docs
-url: /tr/data-import-and-export/
-keywords: Excel data import vs. Direct database access; Batch data import vs. Row-by-row data writing; Automated data export vs. Manual data extraction
-description: Grafikler, tablolar ve diğer veri görselleştirme öğelerini içerebilen yeni belgeler veya raporlar oluşturun
-weight: 25
-kwords: Excel Veri içe aktarımı ve doğrudan veritabanı erişimi; Toplu veri içe aktarımı ve satır satır veri yazma; Otomatik veri dışa aktarımı ve manuel veri çıkarma.
 ---
-Aspose.Cells Bulut API, çeşitli veri kaynaklarından veri içe aktarmayı destekler ve Excel'den verileri, grafikleri ve çizelgeleri Excel, CSV, PDF, HTML, PNG vb. dahil olmak üzere farklı biçimlerde dışa aktarabilir. Bu, veri yönetimini ve paylaşımını basit ve verimli hale getirir.
+title: "Veriyi Excel Dosyalarına İçe Aktarın ve Excel Dosyalarından Veri Dışa Aktarın"
+second_title: "Belge"
+linktitle: "Veri İçe ve Dışa Aktarma"
+type: docs
+url: /data-import-and-export/
+keywords: "Aspose.Cells Cloud, veri içe aktarma, Excel dışa aktarma, API, CSV, JSON, resim, dizi"
+description: "Aspose.Cells Cloud API (v3.0) kullanarak CSV, JSON, diziler ve resimlerden veriyi Excel dosyalarına nasıl içe aktarabileceğinizi ve çalışma kitaplarını, grafikleri ve şekilleri PDF, PNG ve diğer formatlara nasıl dışa aktarabileceğinizi öğrenin."
+weight: 25
+---
 
-## Çeşitli veri kaynaklarından veri nasıl içe aktarılır?
+Aspose.Cells Cloud API, çeşitli kaynaklardan veri içe aktarmayı destekler ve Excel çalışma kitaplarını, grafiklerini ve diğer nesnelerini **XLSX**, **CSV**, **PDF**, **HTML**, **PNG** ve daha fazlası gibi farklı formatlara dışa aktarabilir. Bu, veri yönetimi ve paylaşımını basit ve verimli hale getirir.
 
-Excel dosyasına veri aktarmak karmaşık bir işlemdir. Karmaşıklığa katkıda bulunan birçok faktör vardır ve bu nedenle dışa aktarma işlemi sırasında dikkate alınmalıdır. Çeşitli format ve veri türlerini dosyaya hassas ve profesyonel bir kalitede aktarabilme özelliği, Aspose.Cells Cloud'un en önemli özelliklerinden biridir.
+**API sürümü:** **v3.0** – Son güncelleme: **2024‑03‑15**
 
-### Veri API'leri Bilgilerini İçe Aktar
+### Hızlı Başlangıç Kılavuzu
 
-Excel dosyasına veya birden fazla Excel dosyasına veri aktarmak için aşağıdaki API'ler sağlanır:
+1. **İstek gövdesini hazırlayın** – İçe veya dışa aktarma seçeneklerini tanımlayan bir JSON gövdesi oluşturun (örneğin, `ImportCSVDataOption`, `ExportOptions`).
+2. **İsteği gönderin** – `curl`, Postman veya bir SDK kullanarak uygun uç noktayı (`POST /cells/import` veya `POST /cells/export`) çağırın.
+3. **Yanıtı işleyin** – Başarılı olursa işlenmiş dosyayı (ikili veya Base64) alırsınız. Hata durumunda HTTP durum kodunu ve JSON gövdesinde döndürülen hata mesajını inceleyin.
 
-|API|Tanım|
-|:- |:- |
-|[POST /hücreler/içe aktarma](https://apireference.aspose.cloud/cells/#/LightCells/PostImport)|Depolama alanı kullanmadan Excel dosyalarına veri aktarın.|
-|[POST /hücreler/{ad}/impportdata](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)|Depolamayı kullanarak Excel dosyasına veri aktarın.|
+#### Ön Gereksinimler
+
+- Aktif bir Aspose Cloud hesabı ve geçerli bir JWT belirteci.
+- Hedef çalışma kitabının belirtilen depolama konumunda mevcut olması (depoya dayalı API’ler için).
+- Doğru `Content-Type` başlık değerleri (dosya yükleme için `multipart/form-data`, JSON gövdeleri için `application/json`).
+
+## Çeşitli veri kaynaklarından veri nasıl içe aktarılır
+
+Verinin bir Excel dosyasına içe aktarılması süreci sırasında dikkat edilmesi gereken birçok husus içerir. Aspose.Cells Cloud’un profesyonel kalitede birçok format ve veri türünü içe aktarma yeteneği, öne çıkan özelliklerinden biridir.
+
+### Veri İçe Aktarma API Bilgileri
+
+Aşağıdaki API’ler, bir veya birden fazla Excel dosyasına veri içe aktarmak için sağlanmıştır:
+
+| API                                                                                                | Açıklama                                                  |
+| :------------------------------------------------------------------------------------------------- | :-------------------------------------------------------- |
+| [POST /cells/import](https://apireference.aspose.cloud/cells/#/LightCells/PostImport)              | Depolama kullanmadan veriyi Excel dosyalarına içe aktarır. |
+| [POST /cells/{name}/importdata](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) | Bulutta depolanan bir Excel dosyasına veri içe aktarır.   |
 
 ### İstek Parametreleri
 
-#### Depolama alanı kullanmadan
+#### Depolama kullanmadan
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| dosya| dosya| formData| Yüklenecek dosya|
-| İçe Aktarma Seçeneği| İçe Aktarma Seçenekleri| HTTPGövdesi| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| Parametre Adı | Tür           | Konum     | Açıklama                |
+| :------------ | :------------ | :-------- | :---------------------- |
+| file          | file          | formData  | Yüklenecek dosya        |
+| ImportOption  | ImportOptions | body      | İçe aktarma formatını belirtir (IntArray, DoubleArray, StringArray, TwoDimensionIntArray, TwoDimensionDoubleArray, TwoDimensionStringArray, BatchData, csvData, Picture) |
 
-#### Depolama kullanımıyla
+#### Depolama kullanarak
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
-| importData|| vücut||
+| Parametre Adı | Tür           | Konum  | Açıklama                |
+| :------------ | :------------ | :----- | :---------------------- |
+| name          | string        | path   | Excel dosyasının adı    |
+| folder        | string        | query  | Depolamadaki klasör yolu |
+| storageName   | string        | query  | Depolama adı            |
+| importData    | ImportOptions | body   | Veri içe aktarma gövdesi  |
 
-#### Veri içe aktarma seçeneği parametresi
+#### Veri içe aktarma seçeneği parametreleri
 
-**Önemli parametreler aşağıdaki tabloda açıklanmıştır**:
+**Önemli parametreler aşağıdaki tablolarda açıklanmıştır:**
 
-{{< tabs tabTotal="11" tabID="1" tabName1="ImportBatchDataOption" tabName2="ImportCSVDataOption" tabName3="ImportPictureOption" tabName4="Import2DimensionIntArrayOption" tabName5="Import2DimensionDoubleArrayOption" tabName6="Import2DimensionStringArrayOption" tabName7="ImportIntegerArrayOption" tabName8="ImportDoubleArrayOption" tabName9="ImportStringArrayOption" tabName10="CellValue" tabName11="FileSource" >}}
+{{< tabs tabTotal="11" tabID="1" tabName1="ImportBatchDataOption"  tabName2="ImportCSVDataOption"   tabName3="ImportPictureOption" tabName4="Import2DimensionIntArrayOption" tabName5="Import2DimensionDoubleArrayOption" tabName6="Import2DimensionStringArrayOption" tabName7="ImportIntegerArrayOption" tabName8="ImportDoubleArrayOption" tabName9="ImportStringArrayOption" tabName10="CellValue" tabName11="FileSource" >}}
+
 {{< tab tabNum="1" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametre</th><th scope="col">Tip</th> <th scope="col">Tanım</th></tr>
+    <tr><th>Parametre</th><th>Tür</th><th>Açıklama</th></tr>
   </thead>
   <tbody>
-    <tr> <td>Toplu Veri</td><td>Liste<CellValue></td> <td>toplu veri</td> </tr>
-    <tr> <td>Hedef Çalışma Sayfası</td><td> Sicim</td><td> Hedef çalışma kağıdının adı.</td></tr>
-    <tr><td>IsInsert</td><td>Sicim</td><td>doğru/yanlış.</td></tr>
-    <tr><td>Veri Türünü İçe Aktar</td><td> Sicim</td><td>İki BoyutluDizeTopluVeriDizisi</td></tr>
-    <tr> <td>Kaynak</td><td> Dosya Kaynağı</td><td>BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.</td></tr>
+    <tr><td>BatchData</td><td>List&lt;CellValue&gt;</td><td>İçe aktarılacak toplu veri</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Hedef çalışma sayfası adı</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Verinin eklenip eklenmeyeceği (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>TwoDimensionStringBatchDataArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>BatchData null olduğunda veri dosyasının konumu</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="2" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametre</th><th scope="col">Tip</th> <th scope="col">Tanım</th></tr>
+    <tr><th>Parametre</th><th>Tür</th><th>Açıklama</th></tr>
   </thead>
   <tbody>
-    <tr> <td>Sayısal Verileri Dönüştür</td><td>Sicim</td> <td>doğru/yanlış.</td> </tr>
-    <tr> <td>İlk Sıra</td><td>int</td> <td></td> </tr>
-    <tr> <td>İlkSütun</td><td>int</td><td></td></tr>
-    <tr><td>AyırıcıDize</td><td> Sicim</td> <td></td></tr>
-    <tr> <td>Hedef Çalışma Sayfası</td><td> Sicim</td><td> Hedef çalışma kağıdının adı.</td></tr>
-    <tr><td>ÖzelAyrıştırıcılar</td><td>Liste<CustomParserConfig></td><td></td></tr>
-    <tr><td>Veri Türünü İçe Aktar</td><td> Sicim</td><td>CSVVerileri</td></tr>
-    <tr> <td>Kaynak</td><td> Dosya Kaynağı</td><td>BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.</td></tr>
+    <tr><td>ConvertNumericData</td><td>boolean</td><td>Sayısal verilerin dönüştürülüp dönüştürülmeyeceği (true/false)</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>İlk satırın indeksi</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>İlk sütunun indeksi</td></tr>
+    <tr><td>SeparatorString</td><td>string</td><td>Sütun ayırıcısı</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Hedef çalışma sayfası adı</td></tr>
+    <tr><td>CustomParsers</td><td>List&lt;CustomParserConfig&gt;</td><td>Özel ayrıştırıcı yapılandırmaları</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>CSVData</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>BatchData null olduğunda veri dosyasının konumu</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="3" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametre</th><th scope="col">Tip</th> <th scope="col">Tanım</th></tr>
+    <tr><th>Parametre</th><th>Tür</th><th>Açıklama</th></tr>
   </thead>
   <tbody>
-    <tr> <td>İlk Sıra</td><td>int</td> <td></td> </tr>
-    <tr> <td>İlkSütun</td><td>int</td><td></td></tr>
-    <tr><td>Dikey</td><td>Sicim</td><td>doğru/yanlış.</td></tr>
-    <tr><td>Veri</td><td> Sicim[]</td> <td></td></tr>
-    <tr> <td>Hedef Çalışma Sayfası</td><td> Sicim</td><td> Hedef çalışma kağıdının adı.</td></tr>
-    <tr><td>IsInsert</td><td>Sicim</td><td>doğru/yanlış.</td></tr>
-    <tr><td>Veri Türünü İçe Aktar</td><td> Sicim</td><td>Resim</td></tr>
-    <tr> <td>Kaynak</td><td> Dosya Kaynağı</td><td>BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>İlk satırın indeksi</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>İlk sütunun indeksi</td></tr>
+    <tr><td>IsVertical</td><td>boolean</td><td>Resmin dikey yerleştirilip yerleştirilmeyeceği (true/false)</td></tr>
+    <tr><td>Data</td><td>string[]</td><td>Resim verisi (base‑64 dizeleri)</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Hedef çalışma sayfası adı</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Verinin eklenip eklenmeyeceği (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>Picture</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>BatchData null olduğunda veri dosyasının konumu</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="4" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametre</th><th scope="col">Tip</th> <th scope="col">Tanım</th></tr>
+    <tr><th>Parametre</th><th>Tür</th><th>Açıklama</th></tr>
   </thead>
   <tbody>
-    <tr> <td>İlk Sıra</td><td>int</td> <td></td> </tr>
-    <tr> <td>İlkSütun</td><td>int</td><td></td></tr>
-    <tr><td>Veri</td><td> Tam sayı[,]</td> <td></td></tr>
-    <tr> <td>Hedef Çalışma Sayfası</td><td> Sicim</td><td> Hedef çalışma kağıdının adı.</td></tr>
-    <tr><td>IsInsert</td><td>Sicim</td><td>doğru/yanlış.</td></tr>
-    <tr><td>Veri Türünü İçe Aktar</td><td> Sicim</td><td>İki Boyutlu Tam Dizi</td></tr>
-    <tr> <td>Kaynak</td><td> Dosya Kaynağı</td><td>BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>İlk satırın indeksi</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>İlk sütunun indeksi</td></tr>
+    <tr><td>Data</td><td>int[,] </td><td>İki boyutlu tamsayı dizisi</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Hedef çalışma sayfası adı</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Verinin eklenip eklenmeyeceği (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>TwoDimensionIntArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>BatchData null olduğunda veri dosyasının konumu</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="5" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametre</th><th scope="col">Tip</th> <th scope="col">Tanım</th></tr>
+    <tr><th>Parametre</th><th>Tür</th><th>Açıklama</th></tr>
   </thead>
   <tbody>
-    <tr> <td>İlk Sıra</td><td>int</td> <td></td> </tr>
-    <tr> <td>İlkSütun</td><td>int</td><td></td></tr>
-    <tr><td>Veri</td><td> Çift[,]</td> <td></td></tr>
-    <tr> <td>Hedef Çalışma Sayfası</td><td> Sicim</td><td> Hedef çalışma kağıdının adı.</td></tr>
-    <tr><td>IsInsert</td><td>Sicim</td><td>doğru/yanlış.</td></tr>
-    <tr><td>Veri Türünü İçe Aktar</td><td> Sicim</td><td>İki Boyutlu Çift Dizi</td></tr>
-    <tr> <td>Kaynak</td><td> Dosya Kaynağı</td><td>BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>İlk satırın indeksi</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>İlk sütunun indeksi</td></tr>
+    <tr><td>Data</td><td>double[,] </td><td>İki boyutlu çift noktalı sayı dizisi</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Hedef çalışma sayfası adı</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Verinin eklenip eklenmeyeceği (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>TwoDimensionDoubleArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>BatchData null olduğunda veri dosyasının konumu</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="6" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametre</th><th scope="col">Tip</th> <th scope="col">Tanım</th></tr>
+    <tr><th>Parametre</th><th>Tür</th><th>Açıklama</th></tr>
   </thead>
   <tbody>
-    <tr> <td>İlk Sıra</td><td>int</td> <td></td> </tr>
-    <tr> <td>İlkSütun</td><td>int</td><td></td></tr>
-    <tr><td>Veri</td><td> Sicim[,]</td> <td></td></tr>
-    <tr> <td>Hedef Çalışma Sayfası</td><td> Sicim</td><td> Hedef çalışma kağıdının adı.</td></tr>
-    <tr><td>IsInsert</td><td>Sicim</td><td>doğru/yanlış.</td></tr>
-    <tr><td>Veri Türünü İçe Aktar</td><td> Sicim</td><td>İki BoyutluDizeDizisi</td></tr>
-    <tr> <td>Kaynak</td><td> Dosya Kaynağı</td><td>BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>İlk satırın indeksi</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>İlk sütunun indeksi</td></tr>
+    <tr><td>Data</td><td>string[,] </td><td>İki boyutlu dize dizisi</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Hedef çalışma sayfası adı</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Verinin eklenip eklenmeyeceği (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>TwoDimensionStringArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>BatchData null olduğunda veri dosyasının konumu</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="7" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametre</th><th scope="col">Tip</th> <th scope="col">Tanım</th></tr>
+    <tr><th>Parametre</th><th>Tür</th><th>Açıklama</th></tr>
   </thead>
   <tbody>
-    <tr> <td>İlk Sıra</td><td>int</td> <td></td> </tr>
-    <tr> <td>İlkSütun</td><td>int</td><td></td></tr>
-    <tr><td>Dikey</td><td>Sicim</td><td>doğru/yanlış.</td></tr>
-    <tr><td>Veri</td><td> Tam sayı[]</td> <td></td></tr>
-    <tr> <td>Hedef Çalışma Sayfası</td><td> Sicim</td><td> Hedef çalışma kağıdının adı.</td></tr>
-    <tr><td>IsInsert</td><td>Sicim</td><td>doğru/yanlış.</td></tr>
-    <tr><td>Veri Türünü İçe Aktar</td><td> Sicim</td><td>TamsayıDizisi</td></tr>
-    <tr> <td>Kaynak</td><td> Dosya Kaynağı</td><td>BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>İlk satırın indeksi</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>İlk sütunun indeksi</td></tr>
+    <tr><td>IsVertical</td><td>boolean</td><td>Dizinin dikey olup olmadığı (true/false)</td></tr>
+    <tr><td>Data</td><td>int[] </td><td>Bir boyutlu tamsayı dizisi</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Hedef çalışma sayfası adı</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Verinin eklenip eklenmeyeceği (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>IntegerArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>BatchData null olduğunda veri dosyasının konumu</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="8" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametre</th><th scope="col">Tip</th> <th scope="col">Tanım</th></tr>
+    <tr><th>Parametre</th><th>Tür</th><th>Açıklama</th></tr>
   </thead>
   <tbody>
-    <tr> <td>İlk Sıra</td><td>int</td> <td></td> </tr>
-    <tr> <td>İlkSütun</td><td>int</td><td></td></tr>
-    <tr><td>Dikey</td><td>Sicim</td><td>doğru/yanlış.</td></tr>
-    <tr><td>Veri</td><td> Çift[]</td> <td></td></tr>
-    <tr> <td>Hedef Çalışma Sayfası</td><td> Sicim</td><td> Hedef çalışma kağıdının adı.</td></tr>
-    <tr><td>IsInsert</td><td>Sicim</td><td>doğru/yanlış.</td></tr>
-    <tr><td>Veri Türünü İçe Aktar</td><td> Sicim</td><td>ÇiftDizi</td></tr>
-    <tr> <td>Kaynak</td><td> Dosya Kaynağı</td><td>BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>İlk satırın indeksi</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>İlk sütunun indeksi</td></tr>
+    <tr><td>IsVertical</td><td>boolean</td><td>Dizinin dikey olup olmadığı (true/false)</td></tr>
+    <tr><td>Data</td><td>double[] </td><td>Bir boyutlu çift noktalı sayı dizisi</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Hedef çalışma sayfası adı</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Verinin eklenip eklenmeyeceği (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>DoubleArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>BatchData null olduğunda veri dosyasının konumu</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="9" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametre</th><th scope="col">Tip</th> <th scope="col">Tanım</th></tr>
+    <tr><th>Parametre</th><th>Tür</th><th>Açıklama</th></tr>
   </thead>
   <tbody>
-    <tr> <td>Sol Üst Satır</td><td>int</td> <td></td> </tr>
-    <tr> <td>Sol Üst Sütun</td><td>int</td><td></td></tr>
-    <tr> <td>AltSağSatır</td><td>int</td> <td></td> </tr>
-    <tr> <td>AltSağSütun</td><td>int</td><td></td></tr>
-    <tr><td>Dosya adı</td><td>Sicim</td><td></td></tr>
-    <tr><td>Veri</td><td> Sicim</td> <td></td></tr>
-    <tr> <td>Hedef Çalışma Sayfası</td><td> Sicim</td><td> Hedef çalışma kağıdının adı.</td></tr>
-    <tr><td>IsInsert</td><td>Sicim</td><td>doğru/yanlış.</td></tr>
-    <tr><td>Veri Türünü İçe Aktar</td><td> Sicim</td><td>Dize Dizisi</td></tr>
-    <tr> <td>Kaynak</td><td> Dosya Kaynağı</td><td>BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.</td></tr>
+    <tr><td>UpperLeftRow</td><td>int</td><td>Sol üst satır indeksi</td></tr>
+    <tr><td>UpperLeftColumn</td><td>int</td><td>Sol üst sütun indeksi</td></tr>
+    <tr><td>LowerRightRow</td><td>int</td><td> Sağ alt satır indeksi</td></tr>
+    <tr><td>LowerRightColumn</td><td>int</td><td>Sağ alt sütun indeksi</td></tr>
+    <tr><td>Filename</td><td>string</td><td>Kaynak dosyanın adı</td></tr>
+    <tr><td>Data</td><td>string</td><td>İçe aktarılacak dize verisi</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Hedef çalışma sayfası adı</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Verinin eklenip eklenmeyeceği (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>StringArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>BatchData null olduğunda veri dosyasının konumu</td></tr>
   </tbody>
 </table>
 
 {{< /tab >}}
 {{< tab tabNum="10" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametre</th><th scope="col">Tip</th> <th scope="col">Tanım</th></tr>
+    <tr><th>Parametre</th><th>Tür</th><th>Açıklama</th></tr>
   </thead>
   <tbody>
-    <tr><td>satırIndeksi</td><td>int</td> <td></td> </tr>
-    <tr><td>sütunIndeksi</td><td>int</td><td></td></tr>
-    <tr><td>tip</td><td>Sicim</td><td>veri türü</td></tr>
-    <tr><td>değer</td><td> Sicim</td> <td></td></tr>
-    <tr><td>stil</td><td> Stil(nesne)</td><td></td></tr>
+    <tr><td>rowIndex</td><td>int</td><td>Hücrenin satır indeksi</td></tr>
+    <tr><td>columnIndex</td><td>int</td><td>Hücrenin sütun indeksi</td></tr>
+    <tr><td>type</td><td>string</td><td>Hücre değeri veri türü</td></tr>
+    <tr><td>value</td><td>string</td><td>Hücre değeri</td></tr>
+    <tr><td>style</td><td>Style (object)</td><td>Hücre stili tanımı</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="11" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametre</th><th scope="col">Tip</th> <th scope="col">Tanım</th></tr>
+    <tr><th>Parametre</th><th>Tür</th><th>Açıklama</th></tr>
   </thead>
   <tbody>
-    <tr><td>DosyaKaynakTürü</td><td>Sicim</td> <td>BellekDosyaları/BulutDosyaSistemi/İstekDosyaları</td> </tr>
-    <tr><td>DosyaYolu</td><td>Sicim</td><td> dosya konumu</td></tr>
+    <tr><td>FileSourceType</td><td>string</td><td>InMemoryFiles, CloudFileSystem veya RequestFiles</td></tr>
+    <tr><td>FilePath</td><td>string</td><td>Kaynak dosyanın yolu</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< /tabs >}}
 
-## Excel nesneleri çeşitli dosya biçimlerine nasıl aktarılır
+## Excel nesneleri nasıl çeşitli dosya formatlarına dışa aktarılır
 
-Başlangıçta belirli bir biçimde Excel dosyasını oluşturduysanız, örneğin:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , Ve[CSV](https://docs.fileformat.com/spreadsheet/csv/)Bazen Excel dosyasını başka bir biçime dönüştürüp, sunduğu özel özelliklerden yararlanmayı faydalı bulabilirsiniz. Örneğin, bir Excel dosyasını şuraya aktarmak isteyebilirsiniz:[PDF](https://docs.fileformat.com/pdf/) İçeriklerinizi yetkisiz değişikliklerden korumak ve aynı anda okunmasını ve paylaşılmasını kolaylaştırmak için.
+Orijinal olarak bir Excel dosyasını **XLS**, **XLSX**, **XLSB** veya **CSV** formatında oluşturduysanız, belirli özelliklerden yararlanmak amacıyla başka bir formata dönüştürmek isteyebilirsiniz. Örneğin, **PDF** formatına dışa aktarmak, içeriğin yetkisiz değişikliklere karşı korunmasını sağlarken okunmasını ve paylaşılmasını kolaylaştırır.
 
-Excel nesnesinin dışa aktarımı karmaşık bir süreçtir. Karmaşıklığa katkıda bulunan birçok faktör vardır ve bu nedenle dışa aktarma işlemi sırasında dikkate alınmalıdır. Excel nesnesini tek bir format dosyasına hassas ve profesyonel bir kalitede aktarabilme özelliği, Aspose.Cells Cloud'un en önemli özelliklerinden biridir.
+Excel nesnelerinin dışa aktarılması bazı hususları içerir. Aspose.Cells Cloud, çalışma kitaplarını, grafikleri, şekilleri ve resimleri geniş bir format yelpazesine yüksek kalitede dışa aktarır:
 
- Excel dosyasından dışa aktarılan çalışma kitabı, grafik, şekil ve resimler için mükemmel bir şekilde çalışır. Şu formatlarda dışa aktarabilirsiniz:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/) Yalnızca dışa aktarılabilen biçimler:[PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [FARKLILIK](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [SAYILAR](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+_Sadece dışa aktarma formatları_: PDF, OTS, XPS, DIF, PNG, JPEG, BMP, SVG, TIFF, EMF, NUMBERS, FODS.  
+ Hem içe hem de dışa aktarma: XLS, XLSX, XLSB, CSV, TSV, XLSM, ODS, TXT.
 
-İstek, çok parçalı içeriğe sahip bir HTTP isteğidir (bkz.[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)veya[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Çok parçalı içeriğin ilk kısmı veri dosyasını, ikinci kısmı ise kaydetme seçeneklerini içerir.
+İstek, [RFC 2046] ve [RFC 1341]’de tanımlanan multipart içeriği kullanır. İlk kısım veri dosyasını içerir; ikinci kısım kaydetme seçeneklerini içerir.
 
-REST API `export` çalışma kitabı ve dahili nesneler farklı format dosyasına.
-
-### İhracat API Bilgi
+### Dışa Aktarma API Bilgileri
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/export
-
 ```
 
-İstek parametreleri şunlardır:
+#### İstek parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| dosya| dosya| formData| Yüklenecek dosya|
-| nesne türü| sicim| sorgu| nesne türü (çalışma kitabı/çalışma sayfası/grafik/şekil/resim/liste nesnesi/ole nesnesi)|
-| biçim| sicim| sorgu|[Dosya Biçimi](/cells/tr/supported-file-formats/)  |
+| Parametre Adı | Tür    | Konum    | Açıklama                                                                                      |
+| :------------ | :----- | :------- | :-------------------------------------------------------------------------------------------- |
+| file          | file   | formData | Yüklenecek dosya                                                                              |
+| objectType    | string | query    | Nesne türü (`workbook`, `worksheet`, `chart`, `shape`, `picture`, `listobject`, `oleobject`) |
+| format        | string | query    | İstenen çıktı dosya formatı ([Desteklenen Dosya Formatları](/cells/supported-file-formats/) bakın) |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport), web tarayıcınızdan doğrudan REST etkileşimleri gerçekleştirmenize olanak tanıyan herkese açık bir programlama arayüzü tanımlar.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+API’yi çağırmak için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, bir isteği ve JSON yanıtını göstermektedir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/export" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+curl -v "https://api.aspose.cloud/v3.0/cells/export" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'file1=@example1.xlsx' \
+  -F 'file2=@example2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "example1.pdf",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "example2.pdf",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
-
 {{< /tabs >}}
 
-## İçe ve dışa aktarma API'leri nasıl çağrılır?
+#### Yaygın HTTP durum kodları
 
-Aşağıdaki makaleler her API'in nasıl aranacağını ayrıntılı olarak açıklamakta ve cURL'i ve her API'in SDK Örneklerini içermektedir:
+| Durum | Anlam                                                          | Önerilen eylem                              |
+| ----- | -------------------------------------------------------------- | ------------------------------------------- |
+| 200   | Başarılı – dosya dışa aktarıldı                                | Döndürülen dosya(lar)ı işleyin              |
+| 400   | Hatalı istek – eksik veya geçersiz parametreler                | İstek gövdesini ve sorgu dizelerini kontrol edin |
+| 401   | Yetkisiz – geçersiz veya süresi geçmiş JWT belirteci          | Belirteci yenileyin ve tekrar deneyin       |
+| 404   | Bulunamadı – belirtilen çalışma kitabı veya çalışma sayfası yok | Dosya adını ve depolama yolunu kontrol edin |
+| 500   | İç sunucu hatası – sunucuda beklenmeyen durum                  | İstek kimliğiyle Aspose destek ekibine başvurun |
 
-- [Depolama alanı kullanmadan Excel dosyalarına veri nasıl aktarılır.](/cells/tr/import/without-using-storage)
-- [Depolamayı kullanarak Excel dosyalarına veri nasıl aktarılır.](/cells/tr/import/with-using-storage)
-- [Toplu Veriler Excel Çalışma Sayfasına Nasıl Aktarılır](/cells/tr/import-batch-data-into-excel-worksheet/)
-- [CSV Verileri Excel Çalışma Sayfasına Nasıl Aktarılır](/cells/tr/import-csv-data-into-excel-worksheet/)
-- [Excel Çalışma Sayfasına resim nasıl aktarılır](/cells/tr/import-picture-into-excel-worksheet/)
-- [Tamsayı Dizisi Excel Çalışma Sayfasına Nasıl Aktarılır](/cells/tr/import-integer-array-into-excel-worksheet/)
-- [Double Dizisi Excel Çalışma Sayfasına Nasıl Aktarılır](/cells/tr/import-double-array-into-excel-worksheet/)
-- [Excel Çalışma Sayfasına Dize Dizisi Nasıl Aktarılır](/cells/tr/import-string-array-into-excel-worksheet/)
-- [2 Boyutlu Tamsayı Dizisi Excel Çalışma Sayfasına Nasıl Aktarılır](/cells/tr/import-a-2D-integer-array-into-excel-worksheet/)
-- [2 Boyutlu Çift Dizi Excel Çalışma Sayfasına Nasıl Aktarılır](/cells/tr/import-a-2D-double-array-into-excel-worksheet/)
-- [2 Boyutlu Dize Dizisi Excel Çalışma Sayfasına Nasıl Aktarılır](/cells/tr/import-a-2D-string-array-into-excel-worksheet/)
-- [Excel grafiğini farklı dosya biçimine aktarın](/cells/tr/export-excel-chart-to-different-formats/)
-- [Excel liste nesnesini farklı bir dosya biçimine aktarın](/cells/tr/export-excel-listobject-to-different-formats/)
-- [Excel ole nesnesini farklı bir dosya biçimine aktarın](/cells/tr/export-excel-ole-object/)
-- [Excel resmini farklı dosya biçimine aktar](/cells/tr/export-excel-picture-to-different-formats/)
-- [Excel şeklini farklı dosya biçimine aktar](/cells/tr/export-excel-shape-to-different-formats/)
-- [Excel çalışma kitabını farklı bir dosya biçimine aktarın](/cells/tr/export-excel-to-different-formats/)
-- [Excel çalışma sayfasını farklı bir dosya biçimine aktarın](/cells/tr/export-excel-worksheet-to-different-formats//)
+## İçe ve dışa aktarma API’leri nasıl çağrılır
+
+Aşağıdaki makaleler her bir API’yi ayrıntılı olarak açıklar ve cURL ile SDK örnekleri içerir:
+
+- [Depolama kullanmadan Excel dosyalarına veri nasıl içe aktarılır.](/cells/import/without-using-storage)
+- [Depolama kullanarak Excel dosyalarına veri nasıl içe aktarılır.](/cells/import/with-using-storage)
+- [Toplu Veri Nasıl Excel Çalışma Sayfasına İçe Aktarılır](/cells/import-batch-data-into-excel-worksheet/)
+- [CSV Verisi Nasıl Excel Çalışma Sayfasına İçe Aktarılır](/cells/import-CSV-data-into-excel-worksheet/)
+- [Resim Nasıl Excel Çalışma Sayfasına İçe Aktarılır](/cells/import-picture-into-excel-worksheet/)
+- [Tamsayı Dizisi Nasıl Excel Çalışma Sayfasına İçe Aktarılır](/cells/import-integer-array-into-excel-worksheet/)
+- [Çift Sayı Dizisi Nasıl Excel Çalışma Sayfasına İçe Aktarılır](/cells/import-double-array-into-excel-worksheet/)
+- [Dize Dizisi Nasıl Excel Çalışma Sayfasına İçe Aktarılır](/cells/import-string-array-into-excel-worksheet/)
+- [2 Boyutlu Tamsayı Dizisi Nasıl Excel Çalışma Sayfasına İçe Aktarılır](/cells/import-a-2D-integer-array-into-excel-worksheet/)
+- [2 Boyutlu Çift Sayı Dizisi Nasıl Excel Çalışma Sayfasına İçe Aktarılır](/cells/import-a-2D-double-array-into-excel-worksheet/)
+- [2 Boyutlu Dize Dizisi Nasıl Excel Çalışma Sayfasına İçe Aktarılır](/cells/import-a-2D-string-array-into-excel-worksheet/)
+- [Excel Grafiği Nasıl Farklı Dosya Formatına Dışa Aktarılır](/cells/export-excel-chart-to-different-formats/)
+- [Excel Liste Nesnesi Nasıl Farklı Dosya Formatına Dışa Aktarılır](/cells/export-excel-listobject-to-different-formats/)
+- [Excel OLE Nesnesi Nasıl Farklı Dosya Formatına Dışa Aktarılır](/cells/export-excel-ole-object/)
+- [Excel Resmi Nasıl Farklı Dosya Formatına Dışa Aktarılır](/cells/export-excel-picture-to-different-formats/)
+- [Excel Şekli Nasıl Farklı Dosya Formatına Dışa Aktarılır](/cells/export-excel-shape-to-different-formats/)
+- [Excel Çalışma Kitabı Nasıl Farklı Dosya Formatına Dışa Aktarılır](/cells/export-excel-to-different-formats/)
+- [Excel Çalışma Sayfası Nasıl Farklı Dosya Formatına Dışa Aktarılır](/cells/export-excel-worksheet-to-different-formats/)

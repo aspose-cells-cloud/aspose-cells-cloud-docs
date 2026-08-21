@@ -1,71 +1,100 @@
-﻿---
-title: Hintergrund auf einem Excel-Arbeitsbuch löschen
-second_title: Documen
-linktitle: Löschen
-type: docs
-url: /de/delete-background-in-excel-file/
-aliases: [/delete-background-in-workbook/,/workbook/delete-background/,/workbook/background/delete/]
-keywords: Delete background on an Excel workbook
-description: Aspose.Cells Cloud REST API unterstützt das Löschen des Hintergrunds in einer Excel Arbeitsmappe in einer Excel Datei. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 170
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Hintergrund in einer Excel-Arbeitsmappe löschen
 ---
-Dieser REST API gibt an, dass der Hintergrund einer Excel-Arbeitsmappe gelöscht werden soll.
+title: "Hintergrund in einer Excel-Arbeitsmappe entfernen"
+second_title: "Dokument"
+linktitle: "Entfernen"
+type: docs
+url: /delete-background-in-excel-file/
+aliases:
+  - /delete-background-in-workbook/
+  - /workbook/delete-background/
+  - /workbook/background/delete/
+keywords: "Aspose Cells Hintergrund entfernen, Excel API Hintergrund entfernen, Aspose.Cells Cloud, DELETE /cells background"
+description: "Entfernen Sie ein Hintergrundbild aus einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud API. Erfahren Sie mehr über den DELETE-Endpunkt, die erforderlichen Parameter, ein cURL-Beispiel und SDK-Code in C#, Java, Python und weiteren Sprachen."
+weight: 170
+ArticleTitle: "Hintergrundbild aus Excel-Arbeitsmappe mit Aspose.Cells Cloud API entfernen"
+---
 
-**Abfrageparameter**
+Diese REST-API entfernt das Hintergrundbild einer Excel-Arbeitsmappe.
 
-|Parametername|Typ|Beschreibung|
-|:- |:- |:- |
-|Ordner|Schnur|Original-Arbeitsmappenordner.|
-|Speichername|Schnur|Speichername.|
+## DeleteWorkbookBackground API
 
-## REST API
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/background
+```
 
-|**API**|**Typ**|**Beschreibung**|**Ressourcenlink**|
-|:- |:- |:- |:- |
-|/Zellen/{Name}/Hintergrund|LÖSCHEN|Hintergrund in Excel-Datei löschen|[DeleteWorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground)|
+### **Sicherheit und Authentifizierung**
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
- Sie können**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+### **Abfrageparameter**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Parametername | Typ   | Beschreibung                                           | Erforderlich |
+| -------------- | ------ | ------------------------------------------------------ | ------------ |
+| folder         | string | Ordner, der die ursprüngliche Arbeitsmappe enthält.    | Nein         |
+| storageName    | string | Name des zu verwendenden Speicherdienstes.            | Nein         |
+
+### **Antwort**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200
+}
+```
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                   | Beschreibung                                                    |
+|------|-----------------------------|-----------------------------------------------------------------|
+| 200  | OK                          | Filter erfolgreich angewendet; Antwort enthält Details zum Vorgang. |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized                | Ungültiges oder fehlendes JWT-Token.                           |
+| 413  | Payload Too Large           | Die hochgeladene Datei überschreitet die Größenbeschränkung.   |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler.                                     |
+
+## Verwendung der DeleteWorkbookBackground API mit SDKs
+
+### DeleteWorkbookBackground API-Spezifikation
+
+Die <a href="https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground" target="_blank" rel="noopener noreferrer">OpenAPI-Spezifikation</a> definiert eine öffentlich zugängliche Programmierschnittstelle, über die Sie REST-Interaktionen direkt aus einem Webbrowser heraus durchführen können.
+
+Sie können das Kommandozeilentool **cURL** verwenden, um problemlos auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt eine vollständige DELETE-Anfrage mit dem erforderlichen Authentifizierungsheader; es ist kein Anforderungstext erforderlich.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?folder=DotnetFiles" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
-
+```bash
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/{name}/background?folder=DotnetFiles" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "x-aspose-client: Containerize.Swagger"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
- "Code": 200,
-
+  "Code": 200,
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-Familie
+### Verwendung der Aspose.Cells Cloud SDKs
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist die beste Möglichkeit, die Entwicklungszeit zu verkürzen. Ein SDK übernimmt die Details auf niedriger Ebene, sodass Sie sich auf Ihre Projektaufgaben konzentrieren können. Weitere Informationen finden Sie im <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub-Repository</a> für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{< tabs tabTotal="8" tabID="4"
+   tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby"
+   tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -116,3 +145,4 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+---

@@ -1,103 +1,131 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Växla intervall i kalkylblad
-second_title: Documen
-ArticleTitle: Swap Range Data in a Spreadshee
-linktitle: Byt rang
-type: docs
-url: /sv/swap-range/
-keywords: Aspose.Cells Cloud Web API, Swap Ranges, Office Cloud, RES
-description: Byt intervall för Excel API tillhandahåller ett kraftfullt verktyg för att byta ut två kolumner, rader, intervall eller enskilda celler i en Excel-fil. Denna API-fil låter användare effektivt ordna om sina tabeller, vilket säkerställer att den ursprungliga dataformateringen bevaras och att alla befintliga formler fortsätter att fungera korrekt. Genom att utnyttja denna API-fil kan användare effektivisera sina datahanteringsuppgifter och bibehålla integriteten i sina kalkylblad.
-weight: 100
-kwords: Excel, Office Moln, REST, PDF, CSV, Json, Markdown
 ---
-Utbyta data mellan två valfria kolumner, rader, områden eller enskilda celler i en Excel-fil.
+title: "Aspose.Cells Cloud – Byt kolumner, rader och intervall (v4.0)"
+second_title: "Dokument"
+ArticleTitle: "Byt/utväxla data mellan kolumner, rader och celler i Excel"
+linktype: "Swap Range"
+type: docs
+url: /swap-range/
+keywords: "Aspose Cells, Excel API, Byt intervall, moln kalkylark"
+description: "Byt kolumner, rader eller intervall i Excel-filer med Aspose.Cells Cloud API. Bevara formatering, formler och cellreferenser i en enda begäran."
+weight: 100
+---
 
-## **Växlingsintervall API**
+Utväxla automatiskt data mellan valfria två kolumner, rader, intervall eller celler i Excel-filer med Aspose.Cells Cloud API. Swap Range API:t möjliggör exakt datautväxling med bevarande av all formatering, formler och cellreferenser. Det stöder komplex dataomorganisering, batchbearbetning och sömlös molnintegration för företagsarbetsflöden.
+
+## **Swap Range API**
+
+### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/swap/range
+PUT https://api.aspose.cloud/v4.0/cells/swap/range
 ```
 
-### **Begäranparametrar:**
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp| Beskrivning|
-|:- |:- |:- |:- |
-|Kalkylblad|Fil|FormulärData|Ladda upp kalkylbladsfilen.|
-|arbetsblad1|Sträng|Fråga|Ange det kalkylblad som är källan för utbytesdataområdet.|
-|intervall1|Sträng|Fråga|Ange källan för utbytesdata.|
-|arbetsblad2|Sträng|Fråga|Ange det kalkylblad som är målet för utbytesdataområdet.|
-|intervall2|Sträng|Fråga|Ange målet för utbytesdata.|
-|utväg|Sträng|Fråga|(Valfritt) Mappsökvägen där arbetsboken lagras. Standardvärdet är null.|
-|outStorageName|Sträng|Fråga|Lagringsnamn för utdatafil.|
-|område|Sträng|Fråga|Inställningen för kalkylbladets region.|
-|lösenord|Sträng|Fråga|Lösenordet för att öppna kalkylbladsfilen.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### **Begäranparametrar**
+
+| Parameter Name     | Typ    | Plats      | Beskrivning                                                                                                                                   |
+| ------------------ | ------ | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Spreadsheet**    | Fil    | FormData   | **Obligatorisk.** Käll-Excel-arbetsboksfilen (`.xlsx`, `.xls`).                                                                               |
+| **worksheet1**     | Sträng | Fråga      | **Obligatorisk.** Namnet på det kalkylblad som innehåller det första dataområdet.                                                            |
+| **range1**         | Sträng | Fråga      | **Obligatorisk.** Cellintervall (t.ex. `A1:D10`) i `worksheet1` som ska bytas.                                                                |
+| **worksheet2**     | Sträng | Fråga      | **Obligatorisk.** Namnet på det kalkylblad som innehåller det andra dataområdet (kan vara samma som `worksheet1`).                            |
+| **range2**         | Sträng | Fråga      | **Obligatorisk.** Cellintervall (t.ex. `F1:I10`) i `worksheet2` som ska bytas. **Viktigt:** `range1` och `range2` måste ha identiska dimensioner. |
+| **outPath**        | Sträng | Fråga      | **Valfri.** Mapp i molnlagring där den ändrade arbetsboken kommer att sparas.                                                                |
+| **outStorageName** | Sträng | Fråga      | **Obligatorisk.** Namn på den konfigurerade molnlagringstjänsten (t.ex. `MyCompanyStorage`).                                                 |
+| **region**         | Sträng | Fråga      | **Valfri.** Lokal inställning (t.ex. `sv-SE`, `en-US`, `ja-JP`) som kan påverka formatering.                                                 |
+| **password**       | Sträng | Fråga      | **Valfri.** Lösenord för att dekryptera ett skyddat kalkylark. Utelämna om det inte är krypterat.                                              |
+
+**Exempel på begäran (cURL)**  
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/swap/range?worksheet1=Sheet1&range1=A1:D10&worksheet2=Sheet2&range2=F1:I10&outStorageName=MyCompanyStorage" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@/path/to/workbook.xlsx"
+```
 
 ### **Svar**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
+**Anteckningar:**  
+- API:t returnerar den ändrade arbetsboken som en filström. Om `outPath` anges sparas filen även på den angivna platsen i molnlagringen.  
+- Om intervallens dimensioner inte matchar får du ett **400 Bad Request**-fel.
+
 ### Felkoder
 
-- **400 Felaktig begäran**Ogiltig Apose.Cells Cloud API URI.
-- **401 Obehörig**Ogiltig åtkomsttoken. Eller ogiltigt klient-ID och hemlighet.
-- **404 Hittades inte**Kalkylbladsfilen är inte tillgänglig.
-- **500 Serverfel**Kalkylbladet har stött på ett fel vid hämtning av beräkningsdata.
+| Kod                  | Beskrivning                                                        |
+| -------------------- | ------------------------------------------------------------------ |
+| **400 Bad Request**  | Ogiltig begärans-URI eller icke matchande intervalldimensioner.   |
+| **401 Unauthorized** | Ogiltig eller utgången åtkomsttoken; client-id eller hemlighet är felaktiga. |
+| **404 Not Found**    | Den angivna kalkylarksfilen kan inte nås.                         |
+| **500 Server Error** | Ett internt fel uppstod vid bearbetning av arbetsboken.            |
 
-## Var ska vi använda Swap Range API?
+## Var bör vi använda Swap Range API?
 
-När du behöver byta intervalldata i ett kalkylblad kan du använda API.
+- **Omräkning av finansiella modeller** – Omorganisera datablock (t.ex. flytta Q3-prognosen till Q4) med bevarande av formler och villkorlig formatering.
+- **Dataflöden och ETL-proceser** – Byt ut rådataintervall mot rensade intervall i ett mellanlager-kalkylblad innan slutgiltig utdata skapas.
+- **Felkorrigering och dataåterställning** – Snabbt korrigera felplacerad data utan manuell kopiering och klistra in.
 
-## Varför ska du använda Swap Range API?
+## Varför använda Swap Range API?
 
-- Växla snabbt intervalldata i ett Excel-kalkylblad.
-- Utvecklingen kan snabbt slutföras via det befintliga SDK:t.
+- **Utvecklarvänligt** – SDK:er finns för flera programmeringsspråk, vilket minskar utvecklingsarbetet jämfört med att bygga egna lösningar.
+- **Sänker arbetskostnader** – Automatiserar dataomfördelning, vilket minskar behovet av manuell sammanställning.
+- **Betala per användning** – Du betalar bara för de API-anrop som du faktiskt gör.
+- **Ingen underhållsbehov** – Inga servrar att hantera, ingen programvaruuppdatering och inga kompatibilitetsproblem.
 
-## Så här använder du swap-intervallet API med SDK:er
+## Hur man använder Swap Range API med SDK:er
 
-### Specifikation för bytesområde API
+### Swap Range API-specifikation
 
- De[Specifikation för bytesområde API](https://reference.aspose.cloud/cells/#/TransformController/SwapRange) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[Swap Range API-specifikationen](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Transform/SwapRange) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
 ### Använd Aspose.Cells Cloud SDK:er
 
-Att använda SDK:t är det snabbaste sättet att utveckla, eftersom det abstraherar bort detaljer på låg nivå, vilket gör att du kan byta intervall med kort kod.
- Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det snabbaste sättet att utveckla, eftersom den abstraher bort detaljer på låg nivå och gör att du kan byta intervall med kort kod. Se [GitHub-arkivet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du gör anrop till Aspose.Cells webbtjänster med olika SDK:er:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SwapRange.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SwapRange.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SwapRange.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SwapRange.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SwapRange.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SwapRange.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SwapRange.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SwapRange.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SwapRange.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SwapRange.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SwapRange.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SwapRange.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SwapRange.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SwapRange.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SwapRange.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SwapRange.go" >}}
+{{</tab>}}
 {{< /tabs >}}
+---

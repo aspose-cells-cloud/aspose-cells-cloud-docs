@@ -1,76 +1,98 @@
-﻿---
-title: Gruppera rader på ett Excel-arbetsblad
-second_title: Documen
-linktitle: Grou
-type: docs
-url: /sv/rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
-keywords: Group rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder gruppering av rader i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 60
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Gruppera rader i ett Excel-kalkylblad
 ---
-Denna REST API anger att rader ska grupperas i ett Excel-arbetsblad.
+title: "Gruppera rader i ett Excel-arbetsblad"
+second_title: "Dokument"
+linktitle: "Gruppera"
+type: docs
+url: /rows/group/
+aliases: [/group-rows-in-excel-worksheet/]
+keywords: "gruppera rader, Excel, Aspose.Cells Cloud, REST API, SDK, arbetsblad, Excel API"
+description: "Gruppera rader i ett Excel-arbetsblad med Aspose.Cells Cloud REST API. Stöder flera SDK:er (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) för enkel integration."
+weight: 60
+ArticleTitle: "Gruppera rader i Excel-arbetsblad med Aspose.Cells Cloud API"
+---
 
-## RSET API
+Denna REST API grupperar rader i ett Excel-arbetsblad.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
- 
+**Förutsättningar:**  
+- Ett giltigt OAuth 2.0-åtkomsttoken (Bearer JWT) måste anges i `Authorization`-headern.  
+- Arbetsboken måste redan finnas i den angivna `folder` för den valda `storageName` (eller standardlagringen) innan begäran skickas.
+
+## PostGroupWorksheetRows API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| första index| heltal| fråga| Det första radindexet som ska användas.|
-| sista index| heltal| fråga| Det sista radindexet som ska användas.|
-| dölja| boolesk| fråga| radernas synliga tillstånd|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Begäran parametrar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameter Name | Typ     | Plats  | Beskrivning                                                              |
+| -------------- | ------- | ------ | ------------------------------------------------------------------------ |
+| name           | string  | path   | Namnet på arbetsboksfilen.                                               |
+| sheetName      | string  | path   | Namnet på arbetsbladet.                                                  |
+| firstIndex     | integer | query  | Nollbaserat index för den första rad som ska grupperas.                 |
+| lastIndex      | integer | query  | Nollbaserat index för den sista rad som ska grupperas.                  |
+| hide           | boolean | query  | Anger om de grupperade raderna ska döljas (`true` eller `false`).       |
+| folder         | string  | query  | Sökvägen till mappen som innehåller arbetsboken.                        |
+| storageName    | string  | query  | Namnet på lagringen där arbetsboken finns.                              |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/group?firstIndex=1&lastIndex=2&hide=true" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                             |
+|-----|-----------------------------|---------------------------------------------------------|
+| 200 | OK                          | Filter applicerades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Bad Request                 | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Unauthorized                | Ogiltigt eller saknat JWT-token.                        |
+| 413 | Payload Too Large           | Den uppladdade filen överskrider storleksgränsen.       |
+| 500 | Internal Server Error       | Oväntat serverfel.                                      |
+
+Typiska felmeddelanden:
+
+- **400 Bad Request** – kontrollera att `firstIndex` och `lastIndex` är giltiga heltal och att `firstIndex` ≤ `lastIndex`.  
+- **401 Unauthorized** – verifiera att `Authorization`-headern innehåller ett giltigt JWT-token.  
+- **404 Not Found** – se till att arbetsboken (`name`) och arbetsbladet (`sheetName`) finns i den angivna `folder`/`storageName`.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+**Se även:** [Avgruppera rader i ett Excel-arbetsblad](../rows/ungroup/ "Avgruppera rader i ett Excel-arbetsblad"), [Dölj rader i ett Excel-arbetsblad](../rows/hide/ "Dölj rader i ett Excel-arbetsblad"), [Visa rader i ett Excel-arbetsblad](../rows/unhide/ "Visa rader i ett Excel-arbetsblad").
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+## Cloud SDK-familj
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Besök [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

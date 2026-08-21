@@ -1,70 +1,78 @@
-﻿---
-title: Получить количество страниц из файла Excel
-second_title: Documen
-linktitle: Страница
+---
+title: "Получить количество страниц из файла Excel"
+second_title: "Документ"
+linktitle: "Страницы"
 type: docs
 url: /ru/get-page-count-from-an-excel-file/
-aliases: [/workbook/page-count/,/workbook/get/page-count/]
-keywords: Getting pages count on an Excel workbook
-description: Aspose.Cells Cloud REST API поддерживает подсчёт страниц в рабочей книге Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+aliases: [/workbook/page-count/, /workbook/get/page-count/]
+keywords: "Aspose.Cells, Cloud API, количество страниц Excel, постраничная разбивка книги"
+description: "Получить общее количество страниц для печати в книге Excel с помощью REST API Aspose.Cells Cloud (версия 3.0). Включает формат запроса, необходимые параметры, пример cURL, схему ответа, обработку ошибок и фрагменты кода SDK для различных языков программирования."
 weight: 10
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получить количество страниц
+version: "v3.0"
+ArticleTitle: "Получить количество страниц из файла Excel с помощью Aspose.Cells Cloud API"
 ---
-Этот REST API указывает на `get page count` для рабочей книги.
 
-## РСЕT API
+Этот REST API возвращает **количество страниц** для книги.
+
+## Безопасность и аутентификация
+Aspose.Cells Cloud API защищены и требуют [аутентификацию на основе JWT-токена](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/pagecount
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/pagecount
 ```
 
-Параметры запроса:
+### Параметры запроса
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип    | Местоположение | Обязательный | Описание                                 |
+| ------------- | ------ | -------------- | ------------ | ---------------------------------------- |
+| name          | string | path           | Да           | Имя документа Excel.                     |
+| folder        | string | query          | Нет          | Папка, содержащая документ.              |
+| storageName   | string | query          | Нет          | Имя хранилища, которое следует использовать. |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetPageCount) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetPageCount) определяет публично доступное программное интерфейсное API и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать утилиту командной строки cURL для простого доступа к REST API Aspose.Cells. Пример ниже демонстрирует, как вызвать конечную точку с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/pagecount" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/YourFile.xlsx/pagecount" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
+
+*Замените `YourFile.xlsx` на фактическое имя книги, которую вы хотите запросить.*
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 13
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Схема ответа
+
+| HTTP-статус | Тип данных | Описание                                               |
+| ----------- | ---------- | ------------------------------------------------------ |
+| 200         | integer    | Общее количество страниц для печати в книге (например, `13`). |
+| 4xx‑5xx     | JSON       | Объект ошибки (см. раздел _Обработка ошибок_).         |
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK берет на себя обработку низкоуровневых деталей и позволяет сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с [репозиторием на GitHub](https://github.com/aspose-cells-cloud), где представлен полный список облачных SDK Aspose.Cells.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют, как выполнять вызовы веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -94,7 +102,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/pagecount" \
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetPageCount.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82deb2e4189bc27ae92abf73c36b4df0" "Example_GetPageCount.ts" >}}
 
 {{< /tab >}}
 
@@ -117,3 +125,13 @@ curl -v "http://api.aspose.cloud/v3.0/cells/pagecount" \
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Обработка ошибок
+
+| HTTP-статус | Описание                                    | Пример тела JSON                                                                 |
+| ----------- | ------------------------------------------- | ------------------------------------------------------------------------------- |
+| 401         | Недействительный или отсутствующий JWT-токен. | `{ "Code": "InvalidAuthenticationToken", "Message": "Access token is missing or invalid." }` |
+| 404         | Указанная книга не найдена.                 | `{ "Code": "FileNotFound", "Message": "The requested file does not exist." }`  |
+| 400         | Неверный запрос — отсутствуют обязательные параметры. | `{ "Code": "BadRequest", "Message": "Required parameter 'name' is missing." }` |
+| 500         | Внутренняя ошибка сервера.                  | `{ "Code": "InternalError", "Message": "An unexpected error occurred." }`      |
+---

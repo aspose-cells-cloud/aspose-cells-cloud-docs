@@ -1,63 +1,69 @@
-﻿---
-title: الحصول على وصف الصف من ورقة عمل Excel
-second_title: Documen
-linktitle: رو
-type: docs
-url: /ar/rows/get/row/
-aliases: [/get-row-from-a-worksheet/]
-keywords: Get row info on an Excel workshee
-description: يدعم Cloud REST Aspose.Cells الحصول على معلومات الصفوف في ورقة عمل Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 10
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على وصف الصف من ورقة عمل Excel
 ---
-يشير هذا REST API إلى الحصول على بيانات الصف حسب فهرس الصف على ورقة عمل Excel.
+title: "الحصول على وصف الصف من ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "صف"
+type: docs
+url: /rows/get/row/
+aliases: [/get-row-from-a-worksheet/]
+keywords: "Aspose.Cells Cloud, API صف Excel, الحصول على صف ورقة العمل, REST API, .NET SDK, Java SDK, Python SDK"
+description: "استرجاع معلومات مفصّلة (مثل الارتفاع، النمط، الحالة المخفية، إلخ) لصف معيّن في ورقة عمل Excel باستخدام Aspose.Cells Cloud REST API. يشمل مثالًا لـ curl، وأجزاء من أكواد SDK، ومعالجة الأخطاء."
+weight: 10
+ArticleTitle: "الحصول على وصف الصف من ورقة عمل Excel – Aspose.Cells Cloud API"
+---
 
-## RSET API
+**المتطلبات المسبقة:**  
+- احصل على رمز وصول JWT صالح وشّمله في الرأس `Authorization: Bearer <jwt token>`.  
+- تأكّد من أن ملفّ المصنف مخزّن في مستودع Aspose Cloud، أو حدد مسار المجلّد الذي يوجد فيه.  
+- استخدم إصدار API **v3.0** كما هو مبيّن في عنوان URL للنهاية.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
- 
+تُعيد هذه الواجهة البرمجية لـ REST استرجاع بيانات الصف باستخدام فهرسه في ورقة عمل Excel.
+
+## واجهة GetWorksheetRow البرمجية
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| فهرس الصف| عدد صحيح| طريق| مؤشر الصف.|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعدّ واجهات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **معلّمات الطلب**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعلّمة | النوع | الموقع | الوصف |
+| -------------- | ------- | -------- | --------------------------------------------------- |
+| name | string | path | اسم ملف المصنف. |
+| sheetName | string | path | اسم ورقة العمل داخل المصنف. |
+| rowIndex | integer | path | الفهرس بصيغة الصفر-مبني للصف المراد استرجاعه. |
+| folder | string | query | المجلّد الذي يحتوي على المصنف. |
+| storageName | string | query | اسم المستودع الذي يوجد فيه المصنف. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow) واجهة برمجة تطبيقات متاحة عمومًا وتتيح لك إجراء تفاعلات REST مباشرة من متصفّح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells عبر الويب بسهولة. يُظهر المثال التالي كيفية إجراء المكالمات إلى واجهة Cloud API باستخدام cURL. شمّل الرأس `Authorization: Bearer <jwt token>` لمصادقة الطلب.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
   "Row": {
     "GroupLevel": 0,
     "Height": 13.5,
-    "Index": 10,
+    "Index": 0,
     "IsBlank": false,
     "IsHeightMatched": true,
     "IsHidden": false,
@@ -68,25 +74,55 @@ curl -v "http://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/ro
       }
     },
     "link": {
-      "Href": "api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/rows/10",
+      "Href": "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/rows/0",
       "Rel": "self"
     }
   },
   "Code": 200,
   "Status": "OK"
 }
- 
 ```
+
+**مخطط الاستجابة**
+
+| الخاصية | النوع | الوصف |
+|-------------------|---------|----------------------------------------------------------------------|
+| `GroupLevel` | integer | المستوى التفصيلي (المحوري) للصف (يُستخدم للتجميع). |
+| `Height` | number | ارتفاع الصف بوحدات النقاط. |
+| `Index` | integer | الفهرس بصيغة الصفر-مبني للصف المُعاد. |
+| `IsBlank` | boolean | يشير إلى ما إذا كان الصف يحتوي على أي بيانات. |
+| `IsHeightMatched`| boolean | `true` إذا كان ارتفاع الصف مطابقًا لارتفاع الصف الافتراضي. |
+| `IsHidden` | boolean | `true` إذا كان الصف مخفيًّا. |
+| `Style` | object | كائن يحتوي على معلومات النمط للصف. |
+| `link` | object | مرجع رابط تشعبي إلى مورد الصف. |
+| `Code` | integer | رمز حالة HTTP للاستجابة. |
+| `Status` | string | وصف نصّي للحالة (مثل "OK"). |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+**ملاحظات / معالجة الأخطاء:** قد تُعيد الواجهة البرمجية رموز الحالة التالية لـ HTTP:
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+- **200** – نجاح; تُعاد بيانات الصف.  
+- **401** – غير مصادق; رمز JWT مفقود أو غير صالح.  
+- **404** – غير موجود; المصنف أو ورقة العمل أو الصف المحدّد غير موجود.  
+- **500** – خطأ داخلي في الخادم; حدثت حالة غير متوقّعة.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+| الكود | الوصف | التصحيح |
+|------|-----------------------------------------------|------------------------------------------|
+| 200 | نجاح – تُعاد بيانات الصف. | – |
+| 401 | غير مصادق – رمز JWT مفقود أو غير صالح. | قدم رمز JWT صالحًا. |
+| 404 | غير موجود – المصنف أو ورقة العمل أو الصف مفقود. | تأكّد من أسماء الملفات وفهرس الصف. |
+| 500 | خطأ داخلي في الخادم – حالة غير متوقّعة. | اتّصل بدعم Aspose. |
+
+للحصول على قائمة كاملة برموز الأخطاء، راجع [مستند رموز الأخطاء](https://docs.aspose.cloud/cells/) في Aspose.Cells Cloud.
+
+## عائلة SDK للسحابة
+
+استخدام SDK هو أسرع طريقة لتطوير التطبيقات. SDK يُجرّد التفاصيل منخفضة المستوى لتمكينك من التركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر الويب باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

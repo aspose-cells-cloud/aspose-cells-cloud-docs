@@ -1,20 +1,24 @@
-﻿---
-title: Excel sayfa sonu ile çalışılıyor
-second_title: Documen
-linktitle: Sayfa Sonu
+---
+title: "Excel Sayfa Kopmaları ile Çalışmak"
+second_title: "Belge"
+linktitle: "PageBreaks"
 type: docs
 url: /tr/working-with-pagebreaks/
-aliases: [/working-with-pagebreaks/]
-keywords: Get, add, delete, and update page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında sayfa sonu alma, ekleme, silme ve güncelleme desteği sunar. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
+aliases: [/tr/working-with-pagebreaks/]
+keywords: "Excel, sayfa kopması, Aspose.Cells Cloud, REST API, çalışma sayfası, ekle, sil, al, güncelle, sayfa kopmaları"
+description: "Aspose.Cells Cloud REST API kullanarak Excel çalışma sayfalarında sayfa kopmaları nasıl eklenir, alınır ve silinir öğrenin. Dikey ve yatay kopmalar için örnekler içerir."
 weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Sayfa Sonları
+ArticleTitle: "Excel Sayfa Kopmaları ile Çalışmak – Aspose.Cells Cloud Belgeleme"
 ---
-## Excel çalışma sayfasında sayfa sonlarıyla nasıl çalışılır
 
-- [Excel çalışma sayfasına dikey sayfa sonu nasıl eklenir.](/cells/tr/page-breaks/add-vertical-page-break/)
-- [Excel çalışma sayfasına yatay sayfa sonu nasıl eklenir.](/cells/tr/page-breaks/add-horizontal-page-break/)
-- [Excel çalışma sayfasındaki dikey sayfa sonu nasıl silinir.](/cells/tr/page-breaks/delete-vertical-page-break/)
-- [Excel çalışma sayfasındaki yatay sayfa sonu nasıl silinir.](/cells/tr/page-breaks/delete-vertical-page-break/)
-- [Excel çalışma sayfasında dikey sayfa sonları nasıl alınır.](/cells/tr/page-breaks/get-vertical-page-breaks/)
-- [Excel çalışma sayfasında yatay sayfa sonları nasıl elde edilir.](/cells/tr/page-breaks/get-vertical-page-breaks/)
+## Excel çalışma sayfasında sayfa kopmaları ile nasıl çalışılır
+
+Bu kılavuz, Aspose.Cells Cloud kullanarak bir Excel çalışma sayfasındaki dikey ve yatay sayfa kopmalarını yönetmek için API işlemlerine hızlı erişim sağlar.
+
+- [Excel çalışma sayfasına dikey sayfa kopması nasıl eklenir.](/tr/cells/page-breaks/add-vertical-page-break/)
+- [Excel çalışma sayfasına yatay sayfa kopması nasıl eklenir.](/tr/cells/page-breaks/add-horizontal-page-break/)
+- [Excel çalışma sayfasından dikey sayfa kopması nasıl silinir.](/tr/cells/page-breaks/delete-vertical-page-break/)
+- [Excel çalışma sayfasından yatay sayfa kopması nasıl silinir.](/tr/cells/page-breaks/delete-horizontal-page-break/)
+- [Excel çalışma sayfasındaki dikey sayfa kopmaları nasıl alınır.](/tr/cells/page-breaks/get-vertical-page-breaks/)
+- [Excel çalışma sayfasındaki yatay sayfa kopmaları nasıl alınır.](/tr/cells/page-breaks/get-horizontal-page-breaks/)
+---

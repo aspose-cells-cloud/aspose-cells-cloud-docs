@@ -1,86 +1,134 @@
-﻿---
-title: Proteger el archivo Excel
-second_title: Documen
-linktitle: Cifrar el archivo Excel
-type: docs
-url: /es/protect-excel-files/
-aliases: [/protect/without-storage/,/protect/without-using-storage/,/protect/without-using-storage/]
-keywords: Protect Excel files
-description: Aspose.Cells Cloud REST API admite la protección de archivos Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 40
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Proteger archivos Excel sin usar almacenamiento
 ---
-Este REST API indica los archivos `protect` Excel.
+title: "Proteger archivos de Excel"
+second_title: "Documento"
+linktitle: "Cifrar archivos de Excel"
+type: docs
+url: /protect-excel-files/
+aliases:
+  [
+    /protect/without-storage/,
+    /protect/without-using-storage/,
+    /protect/without-using-storage/,
+  ]
+keywords: "Aspose.Cells, API de protección de Excel, cifrar libro de Excel, seguridad de hojas de cálculo en la nube, API REST"
+description: "Utilice la API REST de Aspose.Cells Cloud para proteger archivos de Excel. Esta guía muestra cómo cifrar libros mediante HTTP POST, cURL y SDKs para múltiples lenguajes de programación, en 2026."
+weight: 40
+---
 
-## RSET API
+Esta API REST protege archivos de Excel.
+
+## API REST
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/protect
- 
 ```
 
-Los parámetros de la solicitud son:
+### Seguridad y autenticación
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| archivo| archivo| datos del formulario| Archivo para cargar|
-| contraseña| cadena| consulta||
+Las API de Aspose.Cells Cloud son seguras y requieren [autenticación basada en token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+### Parámetros de solicitud
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Nombre del parámetro | Tipo   | Ubicación                  | Descripción                                    |
+| --------------------- | ------ | -------------------------- | ---------------------------------------------- |
+| file                  | file   | formData (cuerpo)          | Archivo para subir                             |
+| password              | string | cadena de consulta (`password`) | Contraseña utilizada para proteger el libro |
+
+### Respuesta
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Files": [
+    {
+      "Filename": "nombre protegido: smaple1.xlsx",
+      "FileSize": tamaño,
+      "FileContent": "-----CadenaBase64 de sample1-----"
+    },
+    {
+      "Filename": "nombre protegido: sample2.xlsx",
+      "FileSize": tamaño,
+      "FileContent": "-----CadenaBase64 de sample2-----"
+    }
+  ]
+}
+```
+
+**Códigos de estado HTTP**
+
+| Código | Significado                      | Descripción                                                    |
+|--------|----------------------------------|----------------------------------------------------------------|
+| 200    | OK                               | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta             | Parámetros faltantes o inválidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado                    | Token JWT inválido o faltante. |
+| 413    | Carga demasiado grande           | El archivo subido excede el límite de tamaño. |
+| 500    | Error interno del servidor       | Error inesperado del servidor. |
+
+## Cómo usar la API PostProtect con SDKs
+
+### Especificación de la API PostProtect
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) define una interfaz de programación accesible públicamente y permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo invocar la API en la nube con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/protect?password=123456" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
- 
+curl -v "http://api.aspose.cloud/v3.0/cells/protect?password=MySecretPwd" \
+  -X POST \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <token jwt>" \
+  -F 'file1=@sample1.xlsx' \
+  -F 'file2=@sample2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-{
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "sample1.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----CadenaBase64 de sample1-----"
+    },
+    {
+      "Filename": "sample2.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----CadenaBase64 de sample2-----"
+    }
+  ]
 }
-}
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Familia de SDK en la nube
+### **Manejo de errores**
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+– La API puede devolver los siguientes códigos de estado:
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+| Código HTTP | Significado                                     | Ejemplo de carga útil JSON de error                          |
+|-------------|-------------------------------------------------|--------------------------------------------------------------|
+| 400         | Solicitud incorrecta (por ejemplo, archivo faltante) | `{"Code":400,"Message":"Se requiere el archivo."}`            |
+| 401         | No autorizado (token inválido o faltante)       | `{"Code":401,"Message":"Token de acceso inválido."}`          |
+| 403         | Prohibido (permisos insuficientes)              | `{"Code":403,"Message":"Acceso denegado."}`                   |
+| 500         | Error interno del servidor                      | `{"Code":500,"Message":"Error inesperado del servidor."}`     |
+
+### Utilizar SDKs de Aspose.Cells Cloud
+
+Utilizar un SDK es la forma más rápida de desarrollar. Un SDK maneja los detalles de bajo nivel para que pueda centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDKs de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código demuestran cómo invocar los servicios web de Aspose.Cells utilizando diversos SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

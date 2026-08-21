@@ -1,53 +1,90 @@
-﻿---
-title: Aspose.Cells Molnwebb API - Åtkomsttoke för post
-second_title: Documen
-ArticleTitle: Get Access Token with Client ID and Secre
-linktitle: Åtkomsttoke för post
-type: docs
-url: /sv/post-access-token/
-keywords: Access Token, Aspose Cloud, API Authentication, OAuth, REST API, Excel, Office Cloud, Token Managemen
-description: Hämta en åtkomsttoken med hjälp av Cells Cloud Get Token API, som fungerar som en proxytjänst som vidarebefordrar användarförfrågningar till Aspose Cloud-autentiseringsservern och returnerar den resulterande åtkomsttoken till klienten på ett säkert sätt.
-weight: 100
-kwords: Excel, Office Moln, REST API, Autentisering, Tokenhantering, Middleware-integration, Säker API, Aspose Moln
 ---
-Hämta en åtkomsttoken med hjälp av Cells Cloud Get Token API med klient-ID och hemlighet.
+title: "Aspose.Cells Cloud Web API - Post Access Token"
+second_title: "Dokument"
+ArticleTitle: "Hämta åtkomsttoken med klient-ID och hemlighet"
+linktitle: "Post Access Token"
+type: docs
+url: /post-access-token/
+keywords: "Aspose.Cells, moln, åtkomsttoken, OAuth2, API, autentisering, REST, Excel, Office Cloud"
+description: "Skaffa en OAuth2-åtkomsttoken för Aspose.Cells Cloud genom att anropa slutpunkten POST /cells/connect/token med ditt klient-ID och din hemlighet."
+weight: 100
+---
 
-## **Åtkomsttoken för post API**
+Hämta en åtkomsttoken med Cells Cloud Get Token API med ett klient-ID och en hemlighet.
+
+## Post Access Token API
+
+Innan du anropar slutpunkten, se till att du har:
+
+* Ett registrerat Aspose Cloud-konto.  
+* Ett **klient-ID** och en **klienthemlighet** som genererats i Aspose Cloud-portal.  
+
+### Web-API
 
 ```
-POST http://api.aspose.cloud/v4.0/cells/connect/token
+POST https://api.aspose.cloud/v4.0/cells/connect/token
 ```
 
-### **Begäranparametrar:**
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp| Beskrivning|
-|:- |:- |:- |:- |
-| Klient-ID| sträng| fråga| Klient-ID|
-| Klienthemlighet| sträng| fråga| Klienthemlighet|
+Aspose.Cells Cloud-API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-### **Svar**
+### Begärparametrar
+
+| Parameternamn | Typ   | Plats                         | Beskrivning                                           |
+| ------------- | ----- | ----------------------------- | ----------------------------------------------------- |
+| grant_type    | sträng | brödtext (form‑url‑encoded)   | Fixt värde `client_credentials` som krävs för OAuth. |
+| client_id     | sträng | brödtext (form‑url‑encoded)   | Klientidentifieraren som utfärdats till dig.         |
+| client_secret | sträng | brödtext (form‑url‑encoded)   | Hemligheten kopplad till klient-ID:t.                |
+
+**Exempel på begäran (cURL)**  
+
+```bash
+curl -X POST "https://api.aspose.cloud/v4.0/cells/connect/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=DITT_KLIENT_ID&client_secret=DIN_KLIENTHEMLIGHET"
+```
+
+### Svar
 
 ```json
- [
-        {
-          "Name": "String",
-          "DataType": {
-            "Identifier": "String",
-            "Name": "string"
-          }
-        }
-  ]
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "token_type": "Bearer",
+  "expires_in": 3600
+}
 ```
 
-## Så här använder du Get public key API med SDK:er
+**HTTP-statuskoder**
+
+| Kod | Meningsinnehåll            | Beskrivning                                      |
+|-----|----------------------------|--------------------------------------------------|
+| 200 | OK                         | Filter tillämpades framgångsrikt; svaret innehåller åtgärd detaljer. |
+| 400 | Felaktig begäran           | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Oauktorisering              | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nyttolast         | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel          | Oväntat serverfel. |
+
+**Exempel på felhantering**
+
+```json
+{
+  "error": "invalid_client",
+  "error_description": "Klientautentisering misslyckades."
+}
+```
+
+## Hur man använder Get public key API med SDK:er
 
 ### OpenAPI-specifikation
 
- De[OpenAPI-specifikation](https://reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket gör att du kan utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket gör att du kan utföra REST-interaktioner direkt från en webbläsare.
 
 ### Använd Aspose.Cells Cloud SDK:er
 
-Att använda SDK:et är det bästa sättet att accelerera utvecklingen. SDK:et hanterar de underliggande detaljerna, vilket gör att du enkelt kan implementera en åtkomsttoken för celler med minimal kod.
- Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.nt. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda SDK är det snabbaste sättet att komma igång. SDK:et abstraherar de underliggande HTTP-detaljerna, vilket gör att du kan hämta en åtkomsttoken för Cells med minimal kod.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Kolla in [GitHub-arkivet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er. En SDK tar hand om detaljer på lågnivå så att du kan fokusera på dina projektuppgifter.
+
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:  
+---

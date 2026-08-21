@@ -1,81 +1,105 @@
-﻿---
-title: Actualizar el estilo de celda para la tabla dinámica
-second_title: Documen
-linktitle: Formato
-type: docs
-url: /es/pivot-tables/format/
-aliases: [/update-cell-style-for-pivot-table/]
-keywords: Update cell style for a pivot table
-description: Aspose.Cells Cloud REST API admite la actualización del estilo de celda de una tabla dinámica. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 90
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Actualizar estilo de celda para tabla dinámica
 ---
-Este REST API indica la actualización de la celda `style` para la tabla dinámica.
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Format
- 
+title: "Actualizar el estilo de celda para una tabla dinámica"
+second_title: "Document"
+linktype: Format
+type: docs
+url: /pivot-tables/format/
+aliases: [/update-cell-style-for-pivot-table/]
+keywords: "Aspose.Cells Cloud, estilo de tabla dinámica, API de actualización de estilo de celda, API REST, API de Excel, formateo de hojas de cálculo, SDK en la nube, estilo de celda, tabla dinámica"
+description: "Aprenda cómo actualizar el estilo de una celda específica en una tabla dinámica de Aspose.Cells Cloud mediante la API REST. Incluye el punto de conexión, parámetros, autenticación, ejemplo con cURL y fragmento de código del SDK de Go, así como orientación optimizada para SEO."
+weight: 90
+ArticleTitle: "Actualizar el estilo de celda para una tabla dinámica - Documentación de la API de Aspose.Cells Cloud"
+---
+
+Esta API REST actualiza el **estilo** de una celda en una tabla dinámica.
+
+**Requisitos previos / Autenticación**  
+Para llamar a este punto de conexión debe disponer de un token de acceso JWT válido de Aspose Cloud. Obtenga el token mediante el flujo OAuth 2.0 descrito en la [Guía de autenticación](/authentication/). Incluya el token en el encabezado de la solicitud:
+
+```http
+Authorization: Bearer <jwt token>
 ```
- Los parámetros de la solicitud son:
- 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del documento.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| índice de tabla dinámica| entero| camino| Índice de tabla dinámica|
-| columna| entero| consulta||
-| fila| entero| consulta||
-| estilo|| cuerpo| Estilo dto en el cuerpo de la solicitud.|
-| necesitoRecalcular| booleano| consulta|FALSO|
-| carpeta| cadena| consulta| Carpeta del documento.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
- 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableCellStyle) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
- 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+El token JWT es obligatorio para todas las llamadas a las API de Aspose.Cells Cloud.
+
+## API PostPivotTableCellStyle
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Format
+```
+
+### **Seguridad y autenticación**
+
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
+
+### **Parámetros de solicitud**
+
+| Nombre del parámetro | Tipo    | Ubicación | Descripción                                                                                             |
+|----------------------|---------|-----------|---------------------------------------------------------------------------------------------------------|
+| name                 | string  | path      | Nombre del documento (obligatorio).                                                                    |
+| sheetName            | string  | path      | Nombre de la hoja de cálculo (obligatorio).                                                            |
+| pivotTableIndex      | integer | path      | Índice de la tabla dinámica (obligatorio).                                                             |
+| column               | integer | query     | Índice de columna de la celda a formatear (basado en cero; obligatorio).                               |
+| row                  | integer | query     | Índice de fila de la celda a formatear (basado en cero; obligatorio).                                  |
+| style                | object  | body      | DTO de estilo (objeto de transferencia de datos) que define el nuevo estilo de celda.                 |
+| needReCalculate      | boolean | query     | Indica si la tabla dinámica debe recalcularse tras aplicar el formato. El valor predeterminado es **false**. |
+| folder               | string  | query     | Carpeta donde se almacena el documento (opcional).                                                     |
+| storageName          | string  | query     | Nombre del almacenamiento (opcional).                                                                  |
+| Method               | string  | N/A       | Método HTTP utilizado para la solicitud (**POST**).                                                     |
+
+La <a href="https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableCellStyle" target="_blank" rel="noopener noreferrer">Especificación OpenAPI</a> define una interfaz de programación públicamente accesible y le permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos **cURL** para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/Format?column=1&row=1" \
--X POST \
--d '{"Font":{"Name":"Arial", "Size":10}}'  \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/Format?column=1&row=1" \
+  -X POST \
+  -d '{"Font":{"Name":"Arial","Size":10}}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+**Respuesta**  
+En caso de éxito, el servicio devuelve el código HTTP 200 con un cuerpo vacío, lo que indica que el estilo se ha aplicado correctamente. En caso de error, se devuelve una carga útil en formato JSON con un código y un mensaje de error.
+
+| Estado HTTP | Descripción                                                             |
+|-------------|-------------------------------------------------------------------------|
+| 200         | Estilo aplicado correctamente.                                         |
+| 400         | Solicitud incorrecta — por ejemplo, índice de columna/fila no válido.  |
+| 401         | No autorizado — token JWT faltante o no válido.                        |
+| 404         | No encontrado — el documento, la hoja de cálculo o la tabla dinámica especificados no existen. |
+| 500         | Error interno del servidor — condición inesperada.                     |
+
+El cuerpo de la respuesta está vacío en caso de éxito.
+
+Para obtener más información, consulte la documentación de la API **Get Pivot Table**.
+
 ## Familia de SDK en la nube
- 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
- 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
- 
- 
- 
+
+Utilizar un SDK es la forma más rápida de desarrollar. Un SDK abstrae los detalles de bajo nivel, lo que le permite centrarse en su lógica de negocio. Consulte el <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">repositorio de GitHub</a> para ver una lista completa de los SDK de Aspose.Cells Cloud.
+
+El siguiente ejemplo de código demuestra cómo llamar a los servicios web de Aspose.Cells utilizando el SDK de **Go**:
+
 {{< tabs tabTotal="1" tabID="4" tabName1="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -86,6 +110,22 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 
 {{< /tabs >}}
 
-
-
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Actualizar el estilo de celda para una tabla dinámica",
+  "description": "Guía para actualizar el estilo de una celda específica en una tabla dinámica de Aspose.Cells Cloud mediante la API REST.",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2026-07-30",
+  "keywords": "Aspose.Cells Cloud, tabla dinámica, estilo de celda, API REST, SDK de Go",
+  "url": "https://docs.aspose.cloud/cells/pivot-tables/format/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose"
+  }
+}
+</script>

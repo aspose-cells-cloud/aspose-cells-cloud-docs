@@ -1,76 +1,94 @@
-﻿---
-title: Visa rader i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Avslöjad
-type: docs
-url: /sv/rows/unhide/
-aliases: [/unhide-rows-in-excel-worksheet/]
-keywords: Unhide rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder att visa rader i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 50
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Visa rader i ett Excel-kalkylblad
 ---
-Denna REST API anger att rader ska visas i ett Excel-arbetsblad.
+title: "Visa dolda rader i ett Excel-arbetsblad"
+second_title: "Document"
+linktitle: "Visa"
+type: docs
+url: /rows/unhide/
+aliases: [/unhide-rows-in-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, visa rader, REST API, kalkylark, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
+description: "Använd Aspose.Cells Cloud REST API för att visa dolda rader i ett Excel-arbetsblad. API:t är tillgängligt via flera SDK:er såsom .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl och Swift."
+weight: 50
+ArticleTitle: "Visa rader i ett Excel-arbetsblad med Aspose.Cells Cloud API"
+---
 
-## RSET API
+Denna REST API visar dolda rader i ett Excel-arbetsblad.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide
- 
+**Förutsättningar:** Skaffa en giltig JWT-åtkomsttoken från Aspose Clouds autentiseringstjänst och se till att målarbetsboken har laddats upp till ett stöddat lagringsutrymme innan du anropar detta slutpunkt.
+
+## PostUnhideWorksheetRows API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| startrad| heltal| fråga| Indexet för den första raden som ska användas.|
-| totala rader| heltal| fråga| Antal rader som ska hanteras.|
-| höjd| antal| fråga|15.0 |
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Begärandeparametrar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parametername | Typ     | Plats  | Beskrivning                                   |
+| ------------- | ------- | ------ | --------------------------------------------- |
+| name          | string  | path   | Arbetsbokens namn.                            |
+| sheetName     | string  | path   | Arbetsbladets namn.                           |
+| startrow      | integer | query  | Nollbaserat index för den första rad att visa. |
+| totalRows     | integer | query  | Antal rader att visa.                         |
+| height        | number  | query  | Radhöjd (standard 15,0).                      |
+| folder        | string  | query  | Dokumentmappen.                               |
+| storageName   | string  | query  | Lagringsutrymmets namn.                       |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+<a href="https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows" rel="noopener noreferrer">OpenAPI-specifikationen</a> definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+**Autentisering**  
+Alla begäranden måste autentiseras med en JWT-åtkomsttoken som erhållits från Aspose Clouds autentiseringstjänst. Inkludera token i `Authorization: Bearer <jwt token>`-headern.
+
+Du kan använda cURL-kommandoradsverktyget för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/unhide?startrow=1&totalRows=1&height=15" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+ -X POST \
+ -H "Content-Type: application/json" \
+ -H "Accept: application/json" \
+ -H "Authorization: Bearer <jwt token>"
+# Obs: POST-body är tom för detta slutsteg
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+**HTTP-statuskoder**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Kod | Betydelse                   | Beskrivning                                          |
+|-----|-----------------------------|------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Bad Request                 | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Unauthorized                | Ogiltig eller saknad JWT-token. |
+| 413 | Payload Too Large           | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internal Server Error       | Oväntat serverfel. |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+För detaljerad felsökning, se [Felsökningshandboken](/error-handling/).
+
+## Moln-SDK-familj
+
+Att använda en SDK är det bästa sättet att snabba upp utvecklingen. En SDK hanterar lågnivådetaljer så att du kan fokusera på dina projektuppgifter. Ta en titt på [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,6 +141,7 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -174,3 +193,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

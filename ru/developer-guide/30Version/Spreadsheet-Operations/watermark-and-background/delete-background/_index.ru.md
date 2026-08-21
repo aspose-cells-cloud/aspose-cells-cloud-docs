@@ -1,71 +1,100 @@
-﻿---
-title: Удалить фон в рабочей книге Excel
-second_title: Documen
-linktitle: Удалить
-type: docs
-url: /ru/delete-background-in-excel-file/
-aliases: [/delete-background-in-workbook/,/workbook/delete-background/,/workbook/background/delete/]
-keywords: Delete background on an Excel workbook
-description: Aspose.Cells Cloud REST API поддерживает удаление фона в рабочей книге Excel в файле Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 170
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Удаление фона в рабочей книге Excel
 ---
-Этот REST API указывает на необходимость удаления фона в рабочей книге Excel.
+title: "Удаление фонового изображения из книги Excel"
+second_title: "Документ"
+linktitle: "Удалить"
+type: docs
+url: /delete-background-in-excel-file/
+aliases:
+  - /delete-background-in-workbook/
+  - /workbook/delete-background/
+  - /workbook/background/delete/
+keywords: "Aspose Cells удаление фона, Excel API удаление фона, Aspose.Cells Cloud, DELETE /cells background"
+description: "Удаление фонового изображения из книги Excel с помощью API Aspose.Cells Cloud. Изучите конечную точку DELETE, необходимые параметры, пример cURL и код SDK на C#, Java, Python и других языках."
+weight: 170
+ArticleTitle: "Удаление фонового изображения из книги Excel с помощью API Aspose.Cells Cloud"
+---
 
-**Параметр запроса**
+Этот REST API удаляет фоновое изображение книги Excel.
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|папка|нить|Оригинальная папка рабочей тетради.|
-|имя_хранилища|нить|Имя хранилища.|
+## API DeleteWorkbookBackground
 
-## ОТДЫХ API
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/background
+```
 
-|**API**|**Тип**|**Описание**|**Ссылка на ресурс**|
-|:- |:- |:- |:- |
-|/cells/{name}/фон|УДАЛИТЬ|Удалить фон в файле Excel|[Удалить фон рабочей книги](https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground)|
+### **Безопасность и аутентификация**
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+API Aspose.Cells Cloud безопасны и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
- Вы можете использовать**cURL** Инструмент командной строки для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+### **Параметры запроса**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Имя параметра | Тип   | Описание                                         | Обязательный |
+| -------------- | ------ | ------------------------------------------- | -------- |
+| folder         | string | Папка, содержащая исходную книгу. | Нет       |
+| storageName    | string | Имя используемого сервиса хранилища.         | Нет       |
+
+### **Ответ**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200
+}
+```
+
+**HTTP-коды состояния**
+
+| Код | Значение                     | Описание                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK (ОК)                          | Фильтр успешно применён; ответ содержит подробности операции. |
+| 400  | Bad Request (Неверный запрос)                 | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401  | Unauthorized (Неавторизовано)                | Недействительный или отсутствующий JWT-токен. |
+| 413  | Payload Too Large (Слишком большой полезный груз)           | Загружаемый файл превышает лимит размера. |
+| 500  | Internal Server Error (Внутренняя ошибка сервера)       | Непредвиденная ошибка сервера. |
+
+## Как использовать API DeleteWorkbookBackground с SDK
+
+### Спецификация API DeleteWorkbookBackground
+
+<a href="https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground" target="_blank" rel="noopener noreferrer">Спецификация OpenAPI</a> определяет публично доступное программное интерфейсное описание, позволяющее выполнять взаимодействие с REST напрямую из веб-браузера.
+
+Вы можете использовать утилиту командной строки **cURL** для простого доступа к веб-сервисам Aspose.Cells. Приведённый ниже пример демонстрирует полный DELETE-запрос с необходимым заголовком аутентификации; тело запроса не требуется.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?folder=DotnetFiles" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
-
+```bash
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/{name}/background?folder=DotnetFiles" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "x-aspose-client: Containerize.Swagger"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
- "Code": 200,
-
+  "Code": 200,
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK берёт на себя низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Ознакомьтесь со <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">репозиторием на GitHub</a>, чтобы получить полный список SDK Aspose.Cells Cloud.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Приведённые ниже примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{< tabs tabTotal="8" tabID="4"
+   tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby"
+   tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
 

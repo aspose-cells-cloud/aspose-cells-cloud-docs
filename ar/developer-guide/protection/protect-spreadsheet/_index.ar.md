@@ -1,101 +1,156 @@
-﻿---
-title: Aspose.Cells Cloud Web API - حماية جداول البيانات
-second_title: Developer Guide for Excel Protectio
-ArticleTitle: Protect the Spreadsheet with passwor
-linktitle: حماية جدول البيانات
-type: docs
-url: /ar/protect-spreadsheet/
-keywords: Aspose.Cells Cloud Web API, password protection, encrypt spreadsheet, modify passwor
-description: يطبق هذا API حماية كلمة المرور ثنائية الطبقة على جداول البيانات Excel، مما يضمن الوصول الآمن والتعديل من خلال التشفير
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، JSON، Markdown، حماية كلمة مرور ثنائية الطبقة، تشفير جدول بيانات، تأمين Excel
 ---
-يطبق حماية كلمة المرور على جداول البيانات Excel، ويدعم كلمات المرور المفتوحة والمعدلة.
+title: "واجهة برمجة تطبيقات Aspose.Cells Cloud لحماية كلمات المرور في Excel – أتمتة تشفير كلمات المرور المطلوبة لفتح الملف وتعديله"
+second_title: "دليل المطور لحماية Excel"
+ArticleTitle: "أداة حماية كلمات المرور في Excel – ضبط كلمات المرور المطلوبة للفتح والتعديل – أمن أوراق العمل الخاصة بك"
+linktype: "docs"
+url: /protect-spreadsheet/
+keywords: "Aspose.Cells, حماية كلمات المرور في Excel, واجهة برمجة التطبيقات (API), كلمة المرور المطلوبة للفتح, كلمة المرور المطلوبة للتعديل, تخزين سحابي, أمن أوراق العمل"
+description: "قم بتأمين ملفات Excel برمجيًا باستخدام Aspose.Cells Cloud. ضبط كلمتي المرور (للفتح والتعديل) عبر استدعاء واحد فقط لواجهة برمجة التطبيقات. يدعم تنسيقات .xlsx و .xls والتخزين السحابي. جرّب الخدمة مجانًا."
+weight: 100
+---
 
-## **حماية جدول البيانات API**
+أتمتة حماية كلمات المرور في Excel على نطاق واسع باستخدام واجهة برمجة التطبيقات الخاصة بنا للمطورين — تطبيق كلمتي المرور (للفتح والتعديل) برمجيًا. مثالية لسير العمل المؤسسية وتوافقية مع تنسيقات .xlsx والتنسيقات القديمة. احصل على الوثائق وابدأ تكاملك المجاني اليوم.
+
+## **واجهة برمجة تطبيقات حماية ورقة العمل**
+
+### **واجهة برمجة التطبيقات الويب (Web API)**
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/protection/spreadsheet
+PUT https://api.aspose.cloud/v4.0/cells/protection/spreadsheet
 ```
 
-### **معلمات الطلب:**
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-|جدول بيانات|ملف|بيانات النموذج|قم بتحميل ملف جدول البيانات الذي تريد حمايته.|
-|كلمة المرور|خيط|استفسار|كلمة مرور التشفير لملف جدول البيانات.|
-|تعديل كلمة المرور|خيط|استفسار|كلمة المرور مطلوبة لتعديل جدول البيانات.|
-|المسار الخارجي|خيط|استفسار|(اختياري) مسار المجلد الذي سيتم تخزين المصنف المحمي فيه. الافتراضي هو null.|
-|اسم التخزين الخارجي|خيط|استفسار|اسم التخزين لملفات الإخراج.|
-|منطقة|خيط|استفسار|يقوم بتحديد إعدادات المنطقة للجدول الإلكتروني.|
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-## **إجابة**
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### **مُعَيَّنات الطلب (Request Parameters):**
+
+| اسم المُعَيّن         | النوع   | المسار / سلسلة الاستعلام / جسم HTTP | الوصف                                                                                                                                                 |
+| :------------------- | :----- | :---------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet          | ملف   | FormData                            | ملف ورقة عمل Excel المراد رفعه وحمايته بتشفير بكلمة مرور.                                                                                             |
+| openPassword         | نص (String) | استعلام (Query)                   | كلمة المرور المطلوبة لفتح (فك تشفير) ورقة العمل المحمية.                                                                                             |
+| modifyPassword       | نص (String) | استعلام (Query)                   | كلمة المرور المطلوبة لتمكين التعديل أو إجراء تغييرات على محتويات ورقة العمل.                                                                        |
+| outPath              | نص (String) | استعلام (Query)                   | (اختياري) يُحدِّد مسار مجلد الإخراج حيث سيتم حفظ كتاب العمل المحمي. إن لم يُحدَّد، سيُعاد الملف في استجابة الطلب.                                      |
+| outStorageName       | نص (String) | استعلام (Query)                   | اسم التخزين السحابي المستخدم لحفظ ملف كتاب العمل المحمي الناتج.                                                                                       |
+| region               | نص (String) | استعلام (Query)                   | يُحدِّد الإعدادات الإقليمية/الثقافية (مثل تنسيق التاريخ، وتنسيق الأرقام) التي سيتم تطبيقها على ورقة العمل أثناء المعالجة.                             |
+
+**المصادقة**  
+تتطلب جميع الاستدعاءات إلى واجهة برمجة تطبيقات حماية ورقة العمل رمز وصول OAuth 2.0 صالح. أدرج الرمز في رأس `Authorization`:
+
+```http
+Authorization: Bearer {access_token}
+```
+
+يجب الحصول على الرمز من نقطة نهاية المصادقة في Aspose Cloud، ويجب أن يتضمّن النطاق (**Cells**).
+
+## **الاستجابة**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### رموز الخطأ
+**رموز حالة HTTP**
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+| الرمز | المعنى                 | الوصف                                                                      |
+| ----- | ----------------------- | --------------------------------------------------------------------------- |
+| 200   | ناجح (OK)              | تطبيق الحماية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.                  |
+| 400   | طلب غير صحيح (Bad Request) | معطيات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم).                             |
+| 401   | غير مصرّح (Unauthorized)  | رمز JWT غير صالح أو مفقود.                                                  |
+| 413   | حجم الحمولة كبير جدًا (Payload Too Large) | تجاوز حجم الملف المرفوع الحد المسموح به.                                             |
+| 500   | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم.                                                         |
 
-## أين يجب علينا استخدام جدول البيانات المحمي API؟
+## أين يجب استخدام واجهة برمجة تطبيقات حماية ورقة العمل؟
 
-عندما تحتاج إلى قفل جدول بيانات بكلمة مرور، يمكنك استخدام هذا API.
+- **تأمين البيانات المالية الحساسة** – حماية ملفات Excel التي تحتوي على ميزانيات أو فواتير أو بيانات الرواتب باستخدام كلمتي مرور (لفتح وتعديل) لمنع الوصول غير المصرّح به أو التعديلات غير المسموح بها.
+- **مشاركة التقارير السرية بأمان** – ضمان قدرة المستلمين المصرّح بهم فقط على عرض التقارير أو تعديلها عند توزيع التقارير التجارية أو التقارير الخاصة بالتدقيق أو الامتثال داخليًا أو خارجيًا.
+- **أتمتة أمن المستندات في سير العمل** – دمج واجهة برمجة التطبيقات في الأنظمة المؤسسية (مثل أنظمة ERP وCRM) لحماية كلمات المرور تلقائيًا في أوراق العمل التي يتم إنشاؤها قبل حفظها أو إرسالها عبر البريد الإلكتروني.
+- **فرض الوصول للقراءة فقط** – السماح للمستخدمين بفتح التقارير للعرض مع تقييد التعديلات باستخدام كلمة مرور مميزة للتعديل — مثالية للقوالب أو مجموعات البيانات النهائية.
+- **الامتثال للمتطلبات التنظيمية** – المساعدة في الامتثال لمتطلبات GDPR أو HIPAA أو SOX من خلال تشفير بيانات أوراق العمل الحساسة عند التخزين وعند النقل عبر أتمتة الحماية.
 
-## لماذا يجب عليك استخدام Protect Spreadsheet API؟
+## لماذا يجب استخدام واجهة برمجة تطبيقات حماية ورقة العمل؟
 
-- قم بقفل جداول البيانات بسرعة باستخدام كلمة المرور.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+- **سهولة الاستخدام للمطورين** – توفر Aspose.Cells Cloud مكتبات SDK بلغات برمجة متعددة، ما يُسهّل التطور السريع ويأتي مع وثائق شاملة. مقارنةً ببناء حلول مخصصة، هذا يقلل بشكل كبير من جهد التطوير.
+- **تقليل الحاجة إلى الموظفين** – أتمتة دمج المستندات وأمنها، مما يقلل الحاجة إلى موظفين مخصصين.
+- **دفع مقابل الاستخدام فقط** – لا استثمار أولي؛ تدفع فقط مقابل الاستدعاءات الفعلية لواجهة برمجة التطبيقات.
+- **لا تكاليف صيانة** – لا خوادم للصيانة، ولا تحديثات برمجيات، ولا مخاوف تتعلق بالتوافق.
+- **الحفاظ على تنسيقات Excel الأصلية بالكامل** أثناء تطبيق حماية بكلمة المرور، مما يضمن أن كتاب العمل المحمي يظهر تمامًا كما هو في الملف الأصلي.
 
-## كيفية استخدام Protect Spreadsheet API مع SDKs
+## كيفية استخدام واجهة برمجة تطبيقات حماية ورقة العمل باستخدام SDKs
 
-### مواصفات OpenAPI
+### **مواصفات OpenAPI**
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/ProtectionController/ProtectSpreadsheet)يوفر واجهة برمجة مفصلة لتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+توفر [مواصفات واجهة برمجة تطبيقات حماية ورقة العمل](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet) واجهة برمجة برمجية عامة قابلة للوصول لتسهيل التفاعل المباشر عبر REST من متصفح ويب.
 
-### استخدم Aspose.Cells Cloud SDKs
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells عبر الويب بسهولة. يوضح المثال التالي كيفية إجراء استدعاءات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
-يُعد استخدام حزمة تطوير البرامج (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل الأساسية، مما يسمح لك بتطبيق جداول بيانات محمية للخلايا بسهولة وبأقل قدر من التعليمات البرمجية.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
-توضح أمثلة التعليمات البرمجية التالية كيفية التفاعل مع خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج المختلفة:
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ProtectSpreadsheet.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/protection/spreadsheet?openPassword=MyOpenPwd&modifyPassword=MyModifyPwd" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@/path/to/workbook.xlsx"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ProtectSpreadsheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (مشفرة بـ Base64)",
+  "contentType": "نوع MIME",
+  "fileDownloadName": "اسم ملف اختياري"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ProtectSpreadsheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ProtectSpreadsheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ProtectSpreadsheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ProtectSpreadsheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ProtectSpreadsheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ProtectSpreadsheet.go" >}}
-{{< /tab >}}
+
+{{< /tabs >}}
+
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
+
+استخدام SDK هو أفضل طريقة لتسريع التطوير. تتعامل SDK مع التفاصيل الأساسية، ما يسمح لك بتنفيذ وظيفة حماية ورقة العمل بحد أدنى من الكود. يُرجى الاطّلاع على <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الرمز التالية كيفية التفاعل مع خدمات Aspose.Cells عبر الويب باستخدام مكتبات SDK مختلفة:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ProtectSpreadsheet.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ProtectSpreadsheet.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ProtectSpreadsheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ProtectSpreadsheet.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ProtectSpreadsheet.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ProtectSpreadsheet.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ProtectSpreadsheet.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ProtectSpreadsheet.go" >}}
+{{</tab>}}
 {{< /tabs >}}

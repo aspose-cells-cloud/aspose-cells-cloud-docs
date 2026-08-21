@@ -1,93 +1,71 @@
-﻿---
-title: 获取垂直分页符
-second_title: Documen
-linktitle: 获取垂直分页符
-type: docs
-url: /zh/page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
-keywords: Add a page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持在 Excel 工作表中添加分页符。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 20
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 获取垂直分页符
 ---
-此 REST API 表示获取 `vertical` 分页符。
+title: "获取垂直分页符"
+second_title: "文档"
+linktitle: "获取垂直分页符"
+type: docs
+url: /page-breaks/get-vertical-page-breaks/
+aliases: [/get-vertical-page-breaks-inside-worksheet/]
+keywords: "Aspose.Cells, 垂直分页符, Excel API, 云电子表格, REST API"
+description: "使用 Aspose.Cells Cloud REST API（v3.0）从 Excel 工作表中检索垂直分页符。包含 HTTPS 端点、必需参数、cURL 示例、响应详情、错误处理及 SDK 示例。"
+weight: 20
+---
 
-## 重新设置 API
+此 REST API 用于从工作表中获取**垂直**分页符。
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
 ```
 
-请求参数为：
+### 请求参数
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路||
-|工作表名称|细绳|小路||
-|文件夹|细绳|询问||
-|存储名称|细绳|询问|存储名称。|
+| 参数名称       | 类型   | 位置 | 描述                                               | 是否必需 |
+| -------------- | ------ | ---- | -------------------------------------------------- | -------- |
+| `name`         | string | path | Excel 文件的名称。                                 | 是       |
+| `sheetName`    | string | path | 要从中读取分页符的工作表名称。                     | 是       |
+| `folder`       | string | query| 存储中包含该文件的文件夹。                         | 否       |
+| `storageName`  | string | query| 要使用的 Aspose Cloud 存储名称。                   | 否       |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/PageBreaks/GetVerticalPageBreaks)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/PageBreaks/GetVerticalPageBreaks) 定义了一个公开可用的编程接口，可让您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+您可以使用 **cURL** 轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用云 API。
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "VerticalPageBreaks": {
-
     "VerticalPageBreakList": [
-
       {
-
         "Column": 3,
-
         "EndRow": 1048575,
-
         "StartRow": 0
-
       }
-
     ],
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/VerticalPageBreaks",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/VerticalPageBreaks",
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
 ```
 
@@ -95,11 +73,34 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheet
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+### 响应详情
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| 字段                    | 类型   | 描述                                                                    |
+| ----------------------- | ------ | ----------------------------------------------------------------------- |
+| `VerticalPageBreakList` | array  | 垂直分页符对象集合。                                                    |
+| `Column`                | int    | 分页符发生的列索引（从 0 开始）。                                       |
+| `StartRow`              | int    | 分页范围的第一行（从 0 开始）。                                         |
+| `EndRow`                | int    | 分页范围的最后一行（从 0 开始，通常为 `1048575`，代表最后一行）。     |
+| `link.Href`             | string | 资源的自引用 URL（HTTPS）。                                             |
+| `Code`                  | int    | 服务返回的 HTTP 状态码。                                                |
+| `Status`                | string | HTTP 状态的文字描述。                                                   |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+### 错误处理
+
+| HTTP 状态码 | 含义         | 常见原因                       |
+| ----------- | ------------ | ------------------------------ |
+| 401         | 未授权       | 缺失或无效的 JWT 令牌。        |
+| 404         | 未找到       | 指定的文件或工作表不存在。     |
+| 400         | 请求错误     | 查询参数无效或格式错误。       |
+| 500         | 服务器内部错误 | 服务器端意外情况。             |
+
+请检查 JSON 响应中的 `Code` 和 `Status` 字段以获取更多详细信息。
+
+## 云 SDK 家族
+
+使用 SDK 是开发 Aspose.Cells Cloud 应用的最快方式。SDK 抽象了底层细节，让您能专注于业务逻辑。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -152,4 +153,3 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheet
 {{< /tab >}}
 
 {{< /tabs >}}
-

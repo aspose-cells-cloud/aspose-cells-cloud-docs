@@ -1,73 +1,69 @@
-﻿---
-title: Nascondi un foglio di lavoro Excel
-second_title: Documen
-linktitle: Nascosto
+---
+title: "Nascondere un foglio di Excel"
+second_title: "Documento"
+linktitle: "Nascondi"
 type: docs
 url: /it/worksheets/hide/
 aliases: [/hide-excel-worksheets/]
-keywords: Hide an Excel Worksheet on an Excel Workbook
-description: Aspose.Cells Cloud REST API supporta l'occultamento di un foglio di lavoro Excel su una cartella di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+keywords: "Aspose.Cells Cloud, Excel, nascondi foglio, REST API, foglio di calcolo"
+description: "Guida passo-passo per nascondere un foglio in un workbook Excel utilizzando l’API REST di Aspose.Cells Cloud, inclusi dettagli della richiesta, un esempio cURL e frammenti di codice SDK per diversi linguaggi."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Nascondi un foglio di lavoro Excel
 ---
-Questo REST API indica `hide worksheet`.
- 
-## RSET API
- 
+
+Questa API REST nasconde un foglio.
+
+## API REST
+
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
- 
 ```
- I parametri della richiesta sono:
- 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome del documento.|
-| Nome foglio| corda| sentiero| Nome del foglio di lavoro.|
-| èVisibile| booleano| domanda| Nuovo valore di visibilità del foglio di lavoro.|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
- 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
- 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Parametri della richiesta**
+
+| Nome parametro | Tipo    | Posizione | Descrizione                                               |
+| -------------- | ------- | --------- | --------------------------------------------------------- |
+| name           | string  | path      | Il nome del file del workbook Excel.                      |
+| sheetName      | string  | path      | Il nome del foglio da modificare.                         |
+| isVisible      | boolean | query     | Flag di visibilità (`true` per visibile, `false` per nascosto). |
+| folder         | string  | query     | Il percorso della cartella in cui è memorizzato il workbook. |
+| storageName    | string  | query     | Il nome del servizio di archiviazione.                    |
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare una chiamata all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/visible?isVisible=false" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Famiglia Cloud SDK
- 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
- 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+
+## Famiglia di SDK Cloud
+
+Utilizzare un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo delle SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come effettuare chiamate ai servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

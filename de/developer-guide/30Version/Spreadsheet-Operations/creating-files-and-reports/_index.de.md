@@ -1,20 +1,24 @@
-﻿---
-title: Erstellen Sie Excel-Dateien oder erstellen Sie Excel-Berichte
-second_title: Documen
-type: docs
-url: /de/creating-files-and-reports/
-aliases: [/workbook/create/]
-linktitle: Excel erstellen und melden
-keywords: Create document, Generate report, Excel report, Dynamic repor
-description: Erstellen Sie neue Dokumente oder Berichte, die Diagramme, Tabellen und andere Datenvisualisierungselemente enthalten können
-weight: 10
-kwords: Dokument erstellen, Bericht generieren, Excel-Bericht, Dynamischer Bericht
 ---
-Mit der Aspose.Cells Cloud API können Sie mühelos neue Excel-Arbeitsmappen erstellen und auch spezifische Excel-Arbeitsmappen basierend auf Vorlagendateien generieren. Darüber hinaus unterstützt es die Erstellung komplexer Excel-Berichte in Verbindung mit der SmartMarker-Funktion, die eine Vielzahl komplexer Anforderungen an die Datenverarbeitung und Berichterstellung erfüllen kann.
+title: "Excel-Dateien erstellen und Excel-Berichte erstellen"
+second_title: "Dokument"
+type: docs
+url: /creating-files-and-reports/
+aliases: [/workbook/create/]
+linktitle: "Excel und Bericht erstellen"
+keywords: "Aspose.Cells Cloud, Excel-API, Arbeitsmappe erstellen, Excel-Bericht, SmartMarker, Vorlage, Berichtsgenerierung"
+description: "Erfahren Sie, wie Sie leere Excel-Arbeitsmappen erstellen, Dateien aus Vorlagen generieren und mit SmartMarker gesteuerte Berichte mithilfe der Aspose.Cells Cloud API erstellen – inklusive Codebeispielen."
+weight: 10
+ArticleTitle: "Excel-Dateien erstellen und Excel-Berichte erstellen – Aspose.Cells Cloud API"
+---
 
-## Erstellen Sie eine Excel-Datei und einen Build-Bericht
+Mithilfe der Aspose.Cells Cloud API können Sie problemlos neue Excel-Arbeitsmappen erstellen sowie Arbeitsmappen aus Vorlagendateien generieren. Zudem unterstützt sie die Erstellung fortschrittlicher Excel-Berichte mithilfe der SmartMarker-Funktion, die eine Vielzahl von Datenverarbeitungs- und Berichtsanforderungen bewältigen kann.
 
-- [So erstellen Sie eine leere Arbeitsmappe.](/cells/de/create-an-empty-excel-file/)
-- [So erstellen Sie eine Excel-Arbeitsmappe mit einer Vorlagendatei.](/cells/de/create-an-excel-file-with-template-file/)
-- [So erstellen Sie einen Excel-Bericht mit einer Smart-Marker-Vorlage.](/cells/de/build-report-with-smart-marker/)
-- [So stellen Sie Daten für die Erstellung eines Excel-Berichts zusammen.](/cells/de/assembly-data-for-the-creation-of-an-excel-report/)
+**Voraussetzungen**: Stellen Sie vor Beginn sicher, dass Sie über einen gültigen Aspose Cloud API-Schlüssel sowie das für Ihre Entwicklungsplattform verfügbare Aspose.Cells Cloud SDK verfügen.
+
+## Erstellen einer Excel-Datei und Erstellen eines Berichts
+
+- [Wie Sie eine leere Arbeitsmappe erstellen.](/cells/create-an-empty-excel-file/)
+- [Wie Sie eine Excel-Arbeitsmappe mithilfe einer Vorlagendatei erstellen.](/cells/create-an-excel-file-with-template-file/)
+- [Wie Sie einen Excel-Bericht mithilfe einer SmartMarker-Vorlage erstellen.](/cells/build-report-with-smart-marker/)
+- [Wie Sie Daten für die Erstellung eines Excel-Berichts zusammenstellen.](/cells/assembly-data-for-the-creation-of-an-excel-report/)
+---

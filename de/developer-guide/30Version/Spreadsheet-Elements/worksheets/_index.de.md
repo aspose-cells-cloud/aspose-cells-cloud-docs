@@ -1,37 +1,39 @@
-﻿---
-title: Arbeiten mit dem Arbeitsblatt Excel
-second_title: Documen
-linktitle: Arbeitsblatt
-type: docs
-url: /de/worksheets/
-aliases: [/working-with-worksheets/]
-keywords: Working with worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API unterstützt die Arbeit mit Arbeitsblättern in einer Excel Arbeitsmappe. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Arbeiten mit Excel Arbeitsblatt.
 ---
-Ein Arbeitsblatt ist eine Sammlung von Zellen, in denen Sie Daten speichern und bearbeiten. Jede Arbeitsmappe Excel kann mehrere Arbeitsblätter enthalten.
+title: "Arbeiten mit Excel-Arbeitsblättern."
+second_title: "Dokument"
+linktitle: "Arbeitsblätter"
+type: docs
+url: /worksheets/
+aliases: [/working-with-worksheets/]
+keywords: "Excel-Arbeitsblatt, Aspose.Cells Cloud, REST-API, Tabellenkalkulation, Arbeitsmappe, Datenmanipulation, Excel-Automatisierung"
+description: "Die Aspose.Cells Cloud REST API ermöglicht das Arbeiten mit Arbeitsblättern in einer Excel-Arbeitsmappe. Das SDK unterstützt mehrere Programmiersprachen, darunter Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby und Swift."
+weight: 100
+ArticleTitle: "Arbeiten mit Excel-Arbeitsblättern – Aspose.Cells Cloud-Dokumentation"
+---
 
-**Arbeitsblatt Operieren**
+Ein Arbeitsblatt ist eine Sammlung von Zellen, in denen Sie Daten speichern und bearbeiten. Jede Excel-Arbeitsmappe kann mehrere Arbeitsblätter enthalten.
 
-- [So erhalten Sie Excel-Arbeitsblätter.](/cells/de/worksheets/get-all/)
-- [So erhalten Sie das Arbeitsblatt Excel in verschiedenen Formaten.](/cells/de/worksheets/get/)
-- [So erhalten Sie den Arbeitsblattbereich Excel mit verschiedenen Formaten.](/cells/de/worksheets/area-to-different-formats/)
-- [So erhalten Sie die Arbeitsblattseite Excel in verschiedenen Formaten.](/cells/de/get-worksheet-for-page-index/)
-- [So konvertieren Sie das Arbeitsblatt Excel in ein Bild.](/cells/de/worksheets/to-image/)
-- [So fügen Sie das Arbeitsblatt Excel hinzu.](/cells/de/worksheets/add/)
-- [So fügen Sie den Arbeitsblatthintergrund Excel hinzu.](/cells/de/worksheets/background/add/)
-- [So sortieren Sie die Arbeitsblattdaten Excel.](/cells/de/worksheets/sort-data/)
-- [So verbergen Sie das Arbeitsblatt Excel.](/cells/de/worksheets/hide/)
-- [So blenden Sie das Arbeitsblatt Excel ein.](/cells/de/worksheets/unhide/)
-- [So verschieben Sie das Arbeitsblatt Excel.](/cells/de/worksheets/move/)
-- [So berechnen Sie die Formel Excel.](/cells/de/worksheets/calculate-formula/)
-- [So kopieren Sie das Arbeitsblatt Excel.](/cells/de/worksheets/copy/)
-- [So benennen Sie das Arbeitsblatt Excel um.](/cells/de/worksheets/rename/)
-- [So aktualisieren Sie die Arbeitsblatteigenschaften Excel.](/cells/de/worksheets/update-properties/)
-- [So stellen Sie den Zoom des Arbeitsblatts Excel ein.](/cells/de/worksheets/zoom/)
-- [So frieren Sie Excel Arbeitsblattbereiche ein.](/cells/de/worksheets/freeze-panes/)
-- [So geben Sie die Fixierung von Arbeitsblattbereichen Excel auf.](/cells/de/worksheets/unfreeze-panes/)
-- [So löschen Sie das Arbeitsblatt Excel.](/cells/de/worksheets/delete/)
-- [So löschen Sie den Arbeitsblatthintergrund Excel.](/cells/de/worksheets/background/delete/)
-- [So arbeiten Sie mit der automatischen Anpassung einer Excel-Arbeitsmappe](/cells/de/worksheets/autofit/)
+**Arbeitsblatt-Operationen**
+
+- [So rufen Sie Excel-Arbeitsblätter ab](/cells/worksheets/get-all/)
+- [So rufen Sie ein Excel-Arbeitsblatt in verschiedenen Formaten ab](/cells/worksheets/get/)
+- [So rufen Sie einen Bereich eines Excel-Arbeitsblatts in verschiedenen Formaten ab](/cells/worksheets/area-to-different-formats/)
+- [So rufen Sie eine Seite eines Excel-Arbeitsblatts in verschiedenen Formaten ab](/cells/get-worksheet-for-page-index/)
+- [So konvertieren Sie ein Excel-Arbeitsblatt in ein Bild](/cells/worksheets/to-image/)
+- [So fügen Sie ein Excel-Arbeitsblatt hinzu](/cells/worksheets/add/)
+- [So fügen Sie einem Excel-Arbeitsblatt einen Hintergrund hinzu](/cells/worksheets/background/add/)
+- [So sortieren Sie Daten in einem Excel-Arbeitsblatt](/cells/worksheets/sort-data/)
+- [So blenden Sie ein Excel-Arbeitsblatt aus](/cells/worksheets/hide/)
+- [So zeigen Sie ein ausgeblendetes Excel-Arbeitsblatt wieder an](/cells/worksheets/unhide/)
+- [So verschieben Sie ein Excel-Arbeitsblatt](/cells/worksheets/move/)
+- [So berechnen Sie eine Excel-Formel](/cells/worksheets/calculate-formula/)
+- [So kopieren Sie ein Excel-Arbeitsblatt](/cells/worksheets/copy/)
+- [So benennen Sie ein Excel-Arbeitsblatt um](/cells/worksheets/rename/)
+- [So aktualisieren Sie die Eigenschaften eines Excel-Arbeitsblatts](/cells/worksheets/update-properties/)
+- [So legen Sie den Zoom für ein Excel-Arbeitsblatt fest](/cells/worksheets/zoom/)
+- [So frieren Sie Bereiche in einem Excel-Arbeitsblatt ein](/cells/worksheets/freeze-panes/)
+- [So geben Sie eingefrorene Bereiche in einem Excel-Arbeitsblatt wieder frei](/cells/worksheets/unfreeze-panes/)
+- [So löschen Sie ein Excel-Arbeitsblatt](/cells/worksheets/delete/)
+- [So entfernen Sie einen Hintergrund von einem Excel-Arbeitsblatt](/cells/worksheets/background/delete/)
+- [So passen Sie die Spaltenbreite einer Excel-Arbeitsmappe automatisch an](/cells/worksheets/autofit/)
+---

@@ -1,76 +1,117 @@
-﻿---
-title: Batchskydda Excel-fil
-second_title: Documen
-type: docs
-url: /sv/batch/protect
-keywords: Batch protection of multiple Excel files
-description: "Aspose.Cells Cloud API stöder batchskydd av flera Excel-filer. SDK:n stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
-weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Batch Protect
 ---
-Denna REST API indikerar till `batch protection` av kvalificerade filer.
+title: "Skyddera Excel-filer i batch"
+second_title: "Dokument"
+type: docs
+url: /batch/protect
+keywords: "Skyddera Excel-filer i batch, Aspose Cells Cloud, REST API, Excel-skydd, batchskydd"
+description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att skydda flera Excel-filer i batch. Innehåller begärandedetaljer, cURL-exempel och SDK-kodexempel för olika språk."
+weight: 100
+---
 
-## RSET API
+Detta REST API möjliggör **batchskydd** för lämpliga Excel-filer.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/protect
- 
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| batchProtectRequest|| kropp||
+Aspose.Cells Cloud API:n är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-**BatchProtectRequest-egenskaper**
+### Begäran parametrar
 
-Namn | Typ | Beskrivning | Anteckningar
------------- | ------------- | ------------- | -------------
- Källmapp | sträng | | [valfritt]Matchvillkor | Matchvillkorsbegäran | | [valfritt]Skyddstyp | sträng | | [valfritt]Lösenord | sträng | | [valfritt]Utmapp | sträng | | [valfritt]**MatchConditionRequest-egenskaper**
+| Parameternamn         | Typ                 | Plats   | Beskrivning                                                                                              |
+|-----------------------|---------------------|---------|----------------------------------------------------------------------------------------------------------|
+| batchProtectRequest   | BatchProtectRequest | body    | JSON-payload som anger källmappen, matchningsvillkor, skyddstyp, lösenord och utdatamapp.                |
 
-Namn | Typ | Beskrivning | Anteckningar
------------- | ------------- | ------------- | -------------
- RegexPattern | sträng | | [valfritt]FullMatchConditions | sträng[]| | [valfritt]The[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/PostProtectConvert) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Egenskaper för BatchProtectRequest
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Namn              | Typ                     | Beskrivning                                                                                | Anteckningar |
+|-------------------|--------------------------|--------------------------------------------------------------------------------------------|--------------|
+| SourceFolder      | string                   | Mapp som innehåller käll-Excel-filerna.                                                   | valfri       |
+| MatchCondition    | MatchConditionRequest   | Kriterier som används för att välja filer för skydd.                                      | valfri       |
+| ProtectionType    | string                   | Typ av skydd som ska tillämpas (t.ex. `All`, `ReadOnly`).                                 | valfri       |
+| Password          | string                   | Lösenord som ska ställas in för de skyddade filerna.                                       | valfri       |
+| OutFolder         | string                   | Målmappe för de skyddade filerna.                                                          | valfri       |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### Egenskaper för MatchConditionRequest
+
+| Namn                | Typ        | Beskrivning                                   | Anteckningar |
+|---------------------|------------|-----------------------------------------------|--------------|
+| RegexPattern        | string     | Reguljärt uttryck som används för att matcha filnamn. | valfri       |
+| FullMatchConditions | string[]   | Lista med exakta filnamnsvillkor.            | valfri       |
+
+### Begäran brödtextparameter
+
+| Parameternamn | Typ  | Beskrivning                                    |
+|---------------|------|------------------------------------------------|
+| data          | file | Binärt innehåll i arbetsboksfilen som ska skapas. |
+
+### **Svar**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+**HTTP-statuskoder**
+
+| Kod | Betydelse                     | När den returneras                      |
+|-----|-------------------------------|-----------------------------------------|
+| 200 OK | Arbetsboken skapades utan problem | Normalt flöde                            |
+| 201 Created | Arbetsboken skapades (alternativt svar) | När API:t returnerar statusen "created" |
+| 400 Bad Request | Ogiltiga parametrar | Klientsidigt fel                         |
+| 401 Unauthorized | Saknas eller ogiltig token | Autentiseringsfel                       |
+| 409 Conflict | Filen finns och `isWriteOver=false` | Konflikt med befintlig fil             
+
+## Hur man använder PostProtectConvert API med SDK:er
+
+### PostProtectConvert API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/PostProtectConvert) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör en anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/protect" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\",\"ProtectionType\":\"All\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\",\"ProtectionType\":\"All\"}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projekttal. Se [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man gör anrop till Aspose.Cells webbtjänster med hjälp av olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

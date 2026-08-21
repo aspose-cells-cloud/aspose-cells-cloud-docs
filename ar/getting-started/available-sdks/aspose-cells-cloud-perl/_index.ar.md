@@ -1,47 +1,61 @@
-﻿---
-title: "Aspose.Cells Cloud SDK لـ Perl: التحويل، الدمج، التقسيم، الحماية، البحث، الاستبدال، والمزيد"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for Perl: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells مجموعة SDK السحابية لكل
-type: docs
-url: /ar/available-sdks/aspose-cells-cloud-perl/
-description: "توفر مجموعة SDK السحابية Aspose.Cells لـ Perl قوة حقيقية عبر الأنظمة الأساسية: يوفر استيراد واحد للمطورين Windows وLinux وmacOS نفس القدرة على إنشاء كل كائن وتحويله ودمجه وتقسيمه وحمايته ومعالجته - لا يلزم تثبيت Office ولا يلزم إجراء تعديلات خاصة بالمنصة"
-weight: 30
-kwords: Perl، Perl SDK، Excel SDK لـ Perl، Cloud SDK لـ Perl، REST، مخطط، جدول محوري، كائن جدول/قائمة، تحويل جدول بيانات، PDF، CSV، JSON، Markdown، دمج، تقسيم، حماية، بحث، استبدال
 ---
-مجموعة تطوير البرامج مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا. يمكنك الوصول إليها[كود مصدر المكتبة Perl لـ Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl).
+title: "Aspose.Cells Cloud SDK for Perl – تحويل، دمج، تقسيم، حماية والمزيد"
+second_title: "مستند"
+ArticleTitle: "Aspose.Cells Cloud SDK for Perl – تحويل، دمج، تقسيم، حماية والمزيد"
+linktitle: "Aspose.Cells Cloud SDK for Perl"
+type: docs
+url: /available-sdks/aspose-cells-cloud-perl/
+description: "استكشف Aspose.Cells Cloud Perl SDK – مكتبة متعددة المنصات لإنشاء وتحويل ودمج وتقسيم وحماية وبحث واستبدال ملفات إكسل دون الحاجة إلى تثبيت أوفيس. يشمل دليل التثبيت وأمثلة الكود ومراجع الواجهة البرمجية."
+weight: 30
+keywords: "Perl, Aspose.Cells Cloud, Excel SDK, تحويل, PDF, API, معالجة إكسل, Perl SDK, معالجة إكسل في السحابة"
+---
 
-# **كيفية استخدام مكتبة Perl من Aspose.Cells Cloud**
+_تم التحديث الأخير في 30 يوليو 2026_
 
-مجموعة تطوير البرامج السحابية Aspose.Cells لـ Perl هي مكتبة فعّالة تُمكّن المطورين من التعامل مع ملفات Microsoft Excel ومعالجتها باستخدام لغة البرمجة Perl. باستخدام هذه المجموعة، يُمكنك إنشاء مستندات Excel وتحريرها وتحويلها في السحابة، دون الحاجة إلى تثبيت برامج أو تبعيات إضافية على جهازك المحلي.
+تُعتبر المكتبة مفتوحة المصدر ومرخصة بموجب ترخيص MIT. يمكنك الوصول إلى كود مصدَّر مكتبة Aspose.Cells Cloud لـ Perl [هنا](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl).
 
-في هذه المقالة، سنستكشف كيفية استخدام Aspose.Cells Cloud SDK لـ Perl لأداء بعض المهام الشائعة، مثل إنشاء مصنف Excel جديد، وإدراج البيانات في الخلايا، وحفظ المصنف المعدل في السحابة.
+# **كيفية استخدام مكتبة Aspose.Cells Cloud لغة Perl**
 
-## ابدء
+يُعد Aspose.Cells Cloud SDK for Perl مكتبة قوية تتيح للمطورين التلاعب ومعالجة ملفات مايكروسوفت إكسل باستخدام لغة البرمجة Perl. وباستخدام هذه المكتبة، يمكنك إنشاء وتعديل وتحويل مستندات إكسل في السحابة، دون الحاجة لتثبيت أي برامج إضافية أو تبعيات على جهازك المحلي.
 
- قبل أن تتمكن من استخدام حزمة تطوير البرامج السحابية Aspose.Cells للغة Go، عليك إعداد بيئة التطوير وتثبيت التبعيات اللازمة. راجع[المقال](https://docs.aspose.cloud/cells/quickstart/) على موقع الويب Aspose للحصول على معرف العميل والسر الخاص بالعميل.
+في هذه المقالة، سنستعرض كيفية استخدام Aspose.Cells Cloud SDK for Perl لإنجاز بعض المهام الشائعة، مثل إنشاء ملف إكسل جديد، وإدخال بيانات في الخلايا، وحفظ الملف المعدّل في السحابة.
 
-## كيفية تثبيت الحزمة Perl لـ Aspose.Cells Cloud
+## البدء
 
-يمكنك تثبيت Aspose.Cells Cloud SDK لـ Perl من خلال الأمر أدناه:
+قبل البدء باستخدام Aspose.Cells Cloud SDK لغة **Perl**، تحتاج إلى إعداد بيئة التطوير وتثبيت التبعيات المطلوبة. راجع **[دليل البدء السريع لـ Aspose.Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)** على موقع Aspose للحصول على معرّف العميل (client ID) ومعرّف سر العميل (client secret) الخاصين بك.
 
-```Powershell
+## كيفية تثبيت حزمة Perl الخاصة بـ Aspose.Cells Cloud
 
+**متطلبات مسبقة**  
+- Perl الإصدار 5.10 أو أحدث  
+- تثبيت CPAN (شبكة أرشيف Perl الشاملة)  
+- معرّف عميل (client ID) وسر عميل (client secret) ساري المفعول لـ Aspose.Cells Cloud  
+
+يمكنك تثبيت Aspose.Cells Cloud SDK لغة Perl باستخدام الأمر التالي:
+
+```perl
 perl -MCPAN -e shell
-
 install AsposeCellsCloud::CellsApi
-
 ```
 
-## كيفية استخدام الحزمة Perl لتحويل Xlsx إلى تنسيقات أخرى
+## كيفية استخدام حزمة Perl لتحويل ملف Xlsx إلى صيغ أخرى
 
-- استيراد مكتبة السحابة Aspose.Cells
- ابدأ باستيراد الحزمة اللازمة من SDK Aspose.Cells Cloud Perl إلى مشروعك.
-- تكوين العميل API باستخدام بيانات الاعتماد
- قم بمصادقة عميلك API باستخدام معرف العميل الفريد والسر الخاص بالعميل.
-- إعداد معلمات التحويل
- قم بتحديد المعلمات لمهمة التحويل، بما في ذلك اسم ملف المصدر، وتنسيق الإخراج المطلوب، ومسار مجلد التخزين.
-- تنفيذ تحويل المصنف
- استدعاء عملية التحويل باستخدام طريقة PostConvertWorkbook ومعالجة الاستجابة.
+- **استيراد مكتبة Aspose.Cells Cloud**  
+  ابدأ باستيراد الحزمة الضرورية من Aspose.Cells Cloud Perl SDK إلى مشروعك.
+
+- **إعداد عميل الواجهة البرمجية بالبيانات الاحصائية المطلوبة**  
+  مصادقة عميل الواجهة البرمجية باستخدام معرّف العميل وسر العميل الفريدَين الخاصين بك.
+
+- **إعداد معلمات التحويل**  
+  عرّف المعلمات الخاصة بمهمة التحويل، بما في ذلك اسم ملف المصدر، وصيغة الإخراج المطلوبة، ومسار مجلد التخزين.
+
+- **تنفيذ عملية تحويل الملف**  
+  نفّذ عملية التحويل باستخدام الطريقة `PostConvertWorkbook` وتعامل مع الاستجابة.
+
+فيما يلي مرجع موجز لعملية `PostConvertWorkbook`:
+
+| طريقة HTTP | نقطة النهاية                           | المعلمات المطلوبة                                 | مثال على الطلب (Perl)                                                                                         | مثال على الاستجابة (JSON)                               | رموز الحالة الممكنة |
+|-----------|----------------------------------------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|---------------------|
+| POST      | `/cells/convert`                       | `file` (ملف العمل المصدر)، `outputFormat`، `storage` | ```perl\nmy $result = $api_instance->post_convert_workbook({ file => 'Book1.xlsx', outputFormat => 'pdf', storage => 'MyStorage' });\n``` | `{ "File": "Book1.pdf", "Url": "https://.../Book1.pdf" }` | 200 OK، 400 Bad Request، 401 Unauthorized، 500 Server Error |
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_AvailableSDKs.pl" >}}

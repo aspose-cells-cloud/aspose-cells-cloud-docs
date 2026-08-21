@@ -1,74 +1,83 @@
-﻿---
-title: Zoom für ein Excel-Arbeitsblatt einstellen
-second_title: Documen
-linktitle: Zoo
-type: docs
-url: /de/worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
-keywords: Set zoom for an Excel worksheet
-description: Aspose.Cells Cloud REST API unterstützt die Zoomeinstellung für ein Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Zoom für ein Excel-Arbeitsblatt einstellen
 ---
-Dieser REST API zeigt `set the zoom value of Excel worksheet` an.
- 
-## RSET API
- 
+title: "Zoom für ein Excel-Arbeitsblatt festlegen – Aspose.Cells Cloud API v3.0"
+second_title: "Dokument"
+linktitle: "Zoom"
+type: docs
+url: /worksheets/zoom/
+aliases: [/set-zoom-in-excel-worksheet/]
+keywords: "Aspose.Cells, Excel-Zoom, Arbeitsblatt-Zoom, REST-API, Cloud-SDK, Excel-Automatisierung"
+description: "Erfahren Sie, wie Sie den Zoom eines Arbeitsblatts (10–400 %) mit der Aspose.Cells Cloud API v3.0 festlegen. Enthält cURL- und SDK-Beispiele sowie Fehlerbehandlung."
+weight: 20
+ArticleTitle: "Zoom für ein Excel-Arbeitsblatt festlegen – Aspose.Cells Cloud API v3.0"
+---
+
+Diese REST-API legt den Zoom-Wert eines Excel-Arbeitsblatts fest. **Authentifizierung** ist erforderlich; fügen Sie in den `Authorization`-Header jeder Anforderung ein gültiges Bearer-JWT-Token ein.
+
+## Sicherheit und Authentifizierung  
+Die Aspose.Cells Cloud-APIs sind sicher und erfordern eine [JWT-Token-basierte Authentifizierung](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST-API
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom
 ```
- Die Anforderungsparameter sind:
- 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg||
-| Blattname| Schnur| Weg||
-| Wert| ganze Zahl| Abfrage||
-| Ordner| Schnur| Abfrage||
-| Speichername| Schnur| Abfrage| Speichername.|
- 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
- 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Anforderungsparameter**
+
+| Parameter   | Typ     | Ort     | Beschreibung                                                         |
+| ----------- | ------- | ------- | -------------------------------------------------------------------- |
+| name        | string  | path    | Name der Excel-Datei (Arbeitsmappe).                                |
+| sheetName   | string  | path    | Name des zu ändernden Arbeitsblatts.                                 |
+| value       | integer | query   | Zoom-Prozentsatz (zulässiger Bereich **10–400**, z. B. `40` für 40 %). |
+| folder      | string  | query   | Pfad des Ordners, in dem die Datei gespeichert ist.                 |
+| storageName | string  | query   | Name des Speicherdienstes.                                           |
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
+
+Sie können das cURL-Befehlszeilentool nutzen, um Aspose.Cells-Webservices einfach aufzurufen. Im folgenden Beispiel wird gezeigt, wie mit cURL ein Aufruf an die Cloud-API erfolgt.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/zoom?value=40" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+**Informationen zur Fehlerantwort**  
+Mögliche HTTP-Statuscodes sind:
+
+- `400 Bad Request` – fehlende oder ungültige Parameter.
+- `401 Unauthorized` – fehlendes oder ungültiges JWT-Token.
+- `404 Not Found` – die angegebene Datei oder das angegebene Arbeitsblatt ist nicht vorhanden.
+- `500 Internal Server Error` – unerwarteter serverseitiger Fehler.
+
+Jede Fehlerantwort enthält einen JSON-Body mit einem `Code` und einer aussagekräftigen `Message`.
+
 ## Cloud SDK-Familie
- 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
- 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
- 
+
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK übernimmt Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf die Aufgaben Ihres Projekts zu konzentrieren. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud).
+
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webservices mit verschiedenen SDKs durchgeführt werden:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 

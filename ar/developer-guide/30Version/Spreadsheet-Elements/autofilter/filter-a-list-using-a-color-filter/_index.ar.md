@@ -1,83 +1,113 @@
-﻿---
-title: إضافة مرشح ألوان في ورقة عمل Excel
-second_title: Documen
-linktitle: إضافة فلتر اللون
-type: docs
-url: /ar/autofilter/add-color-filter/
-aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
-keywords: Adds a color filter on an Excel worksheet
-description: يدعم الإصدار Aspose.Cells Cloud API إضافة مرشح ألوان إلى ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 65
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة مرشح ألوان في ورقة عمل Excel
 ---
-يشير هذا REST API إلى إضافة `color filter` إلى ورقة عمل Excel.
+title: "إضافة مرشح لون في ورقة عمل Excel"
+second_title: "Document"
+linktitle: "إضافة مرشح لون"
+type: docs
+url: /autofilter/add-color-filter/
+aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
+keywords: "Excel, مرشح لون, Aspose.Cells Cloud, REST API, مرشح تلقائي, مصادقة JWT"
+description: "تعلم كيفية تطبيق مرشح لون على ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud API. يتضمن الرابط_endpoint_، المعاملات، مثال cURL، معالجة الأخطاء، وأمثلة SDKs."
+weight: 65
+ArticleTitle: "إضافة مرشح لون في ورقة عمل Excel باستخدام Aspose.Cells Cloud API"
+---
 
-## RSET API
+تعلم كيفية إضافة مرشح لون إلى ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud API. يغطي هذا الدليل الرابط_المطلوب_، المعاملات، شروط المصادقة المسبقة، مثال طلب cURL، أمثلة SDKs، ومعالجة الاستجابة.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter
- 
+تضيف هذه الواجهة البرمجية REST **مرشح لون** إلى ورقة عمل Excel.
+
+## PutWorksheetColorFilter API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| يتراوح| خيط| استفسار||
-| فهرس الحقل| عدد صحيح| استفسار||
-| مرشح الألوان|| جسم||
-| مطابقة الفراغات| منطقي| استفسار||
-| ينعش| منطقي| استفسار||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تتطلب واجهات Aspose.Cells Cloud APIs أمانًا وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة مبنية على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetColorFilter) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب:
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+
+| اسم المعاملة | النوع    | الموقع | الوصف                                                                 |
+|-------------|---------|--------|-----------------------------------------------------------------------------|
+| name        | string  | path   | اسم ملف Excel.                                                 |
+| sheetName   | string  | path   | اسم ورقة العمل التي تحتوي على البيانات المراد تصفية.           |
+| range       | string  | query  | النطاق الخلوي الذي يُطبّق عليه المرشح (مثل `A1:B10`).            |
+| fieldIndex  | integer | query  | المؤشر المبتدئ من الصفر للعمود الذي يُطبّق عليه مرشح اللون.       |
+| colorFilter | object  | body   | كائن JSON يُعرّف الألوان الأمامية والخلفية المراد تصفيتها.   |
+| matchBlanks | boolean | query  | ما إذا كانت الصفوف التي تحتوي على خلايا فارغة يجب تضمينها في نتائج التصفية.   |
+| refresh     | boolean | query  | إذا كانت القيمة `true`، فتُحدّث ورقة العمل بعد تطبيق المرشح.           |
+| folder      | string  | query  | المجلد في التخزين حيث يقع ملف Excel.                      |
+| storageName | string  | query  | اسم خدمة التخزين (مثل Aspose Cloud Storage).              |
+
+**مخطط JSON الخاص بـ `colorFilter`**
+
+| الخاصية          | النوع   | الوصف                                                                    | الإلزام |
+|-------------------|--------|--------------------------------------------------------------------------------|----------|
+| Pattern           | string | نمط التصفية (مثل `"Solid"`).                                             | نعم      |
+| ForegroundColor   | object | يُعرّف اللون الأمامي. يحتوي على خصائص فرعية مثل `Color`، `ColorIndex`، `IsShapeColor`، `ThemeColor`، و `Type`. | لا |
+| BackgroundColor   | object | يُعرّف اللون الخلفي. نفس الخصائص الفرعية مثل `ForegroundColor`.      | لا |
+
+### **الاستجابة**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | الوصف                                      |
+|-------|-----------------------------|--------------------------------------------------|
+| 200   | OK                          | تم تطبيق المرشح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400   | Bad Request                 | معاملات ناقصة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401   | Unauthorized                | رمز JWT غير صالح أو مفقود. |
+| 413   | Payload Too Large           | حجم الملف المرفوع يتجاوز الحد المسموح به. |
+| 500   | Internal Server Error       | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام PutWorksheetColorFilter API باستخدام SDKs
+
+### **مواصفات PutWorksheetColorFilter API**
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetColorFilter) واجهة برمجة قابلة للوصول العام وتسمح لك بإجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات ويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات لواجهة Cloud API باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/colorFilter?range=A1%3AB1&fieldIndex=0" \
 -X PUT \
 -d "{ \"Pattern\": \"Solid\", \"ForegroundColor\": { \"Color\": { \"A\": 255, \"R\": 0, \"G\": 255, \"B\": 255 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"Text2\", \"Tint\": 1 }, \"Type\": \"Automatic\" }, \"BackgroundColor\": { \"Color\": { \"A\": 255, \"R\": 0, \"G\": 255, \"B\": 255 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"Text2\", \"Tint\": 0 }, \"Type\": \"Automatic\" }}" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع التطوير. تعمل SDKs على إخفاء التفاصيل منخفضة المستوى حتى تتمكن من التركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -130,3 +160,5 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**انظر أيضًا:** [إضافة مرشح مخصص](https://docs.aspose.cloud/cells/autofilter/add-custom-filter/)، [إضافة مرشح تاريخ](https://docs.aspose.cloud/cells/autofilter/add-date-filter/)، [حذف المرشح التلقائي](https://docs.aspose.cloud/cells/autofilter/remove-auto-filter/).

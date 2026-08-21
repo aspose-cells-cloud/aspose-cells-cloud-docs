@@ -1,221 +1,415 @@
-﻿---
-title: الحصول على كائن القائمة في ورقة عمل Excel
-second_title: Documen
-linktitle: جي
-type: docs
-url: /ar/list-objects/get/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/get/]
-keywords: Get a list object(table) into an Excel worksheet
-description: يدعم Cloud REST Aspose.Cells إدخال كائن قائمة (جدول) في ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 9
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على كائن قائمة في ورقة عمل Excel
 ---
-يشير هذا REST API إلى `get` معلومات كائن القائمة حسب الفهرس أو تحويل `list object` إلى ملف بتنسيق مختلف في ورقة عمل Excel.
+---
+title: "واجهة برمجة تطبيقات Aspose.Cells Cloud – استرجاع كائن القائمة (الجدول) من ورقة العمل"
+description: "استرجاع كائن القائمة (الجدول) من ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. يدعم التصدير إلى صيغ متعددة (PDF وCSV وJSON، ...)."
+keywords:
+  - Aspose.Cells
+  - واجهة برمجة تطبيقات سحابية
+  - Excel
+  - ListObject
+  - جدول
+  - REST
+  - SDK
+type: docs
+slug: /list-objects/get/
+weight: 9
+---
 
-## RSET API
+# واجهة برمجة تطبيقات Aspose.Cells Cloud – استرجاع كائن القائمة (الجدول) من ورقة العمل
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listobjectindex}
- 
+استرجاع **كائن القائمة** (ويُعرف أيضًا باسم *الجدول*) من ورقة عمل معيّنة في ملف Excel. يمكن لهذه النقطة النهائية أيضًا تصدير الجدول مباشرةً إلى صيغة محددة باستخدام معامل الاستعلام الاختياري `format`.
+
+---
+
+## المتطلبات الأساسية
+
+| المتطلب | التفاصيل |
+|---------|---------|
+| **المصادقة** | مطلوب رمز **JWT** (Bearer) صالح. احصل على الرمز عبر تدفق مصادقة **OAuth2** الموصوف في [دليل المصادقة](/authentication/). |
+| **التخزين** | يجب أن يكون ملف جدول البيانات مخزنًا في موقع تخزين Aspose Cloud. إذا كان الملف موجودًا في مخزن غير افتراضي، فحدّد معامل الاستعلام `storageName`. |
+| **حدود معدل الطلبات** | تتبع واجهة البرمجة سياسة معدل الطلب القياسية في Aspose Cloud (الافتراضي = 100 طلب/دقيقة لكل حساب). |
+| **مكتبات SDK (اختيارية)** | استخدام إحدى مكتبات SDK الرسمية (C# أو Java أو Python، ...) يبسّط بناء الطلبات ومعالجة الاستجابات. راجع قسم **أمثلة SDK** أدناه. |
+
+---
+
+## الطلب
+
+### HTTP GET
+
+```
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listobjectindex}
 ```
 
-معلمات الطلب هي:
+| المعامل | النوع | الموقع | الإلزام | الوصف |
+|---------|-------|--------|---------|--------|
+| **name** | `string` | المسار | ✔️ | اسم ملف Excel (مع الامتداد). |
+| **sheetName** | `string` | المسار | ✔️ | ورقة العمل التي تحتوي على كائن القائمة. |
+| **listobjectindex** | `integer` | المسار | ✔️ | المؤشر المُعدّ من الصفر لكائن القائمة المراد استرجاعه. |
+| **format** | `string` | استعلام | ❌ | صيغة التصدير المطلوبة (مثل `pdf` أو `csv` أو `json`). |
+| **folder** | `string` | استعلام | ❌ | مسار المجلد الذي يخزن فيه ملف جدول البيانات. |
+| **storageName** | `string` | استعلام | ❌ | اسم مخزن Aspose Cloud المراد استخدامه. |
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| فهرس كائن القائمة| عدد صحيح| طريق| فهرس كائن القائمة.|
-| شكل| خيط| استفسار| تنسيق التصدير.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+#### ملاحظات
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/GetWorksheetListObject) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+* يجب إجراء جميع الاستدعاءات عبر **HTTPS**.  
+* عند تزويده، يكون محتوى جسم الاستجابة لمعامل `format` تدفق الملف المُصدَّر (مثل `application/pdf`).  
+* بدون `format`، تُعيد واجهة البرمجة وصفًا بالصيغة JSON لكائن القائمة.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+---
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+## مثال باستخدام cURL
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects/1" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects/1?format=csv" \
+  -X GET \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
 
-{{< /tab >}}
+*استبدل `<your_jwt_token>` برمز JWT صالح تم الحصول عليه من نقطة نهاية المصادقة.*
 
-{{< tab tabNum="12" >}}
+---
 
-```bash
+## الاستجابة الناجحة (JSON)
+
+عند **إهمال** معامل `format`، تُعيد واجهة البرمجة حمولة JSON تصف كائن القائمة.
+
+```json
 {
- "ListObject": {
-  "AutoFilter": {
-   "FilterColumns": [],
-   "Range": "B2:F11",
-   "Sorter": {
-    "CaseSensitive": false,
-    "HasHeaders": false,
-    "KeyList": [],
-    "SortLeftToRight": false
-   }
+  "ListObject": {
+    "AutoFilter": {
+      "FilterColumns": [],
+      "Range": "B2:F11",
+      "Sorter": {
+        "CaseSensitive": false,
+        "HasHeaders": false,
+        "KeyList": [],
+        "SortLeftToRight": false
+      }
+    },
+    "DisplayName": "Table3",
+    "StartColumn": 1,
+    "StartRow": 1,
+    "EndColumn": 5,
+    "EndRow": 10,
+    "ListColumns": [
+      {
+        "Name": "Column1",
+        "Range": {
+          "ColumnCount": 1,
+          "ColumnWidth": 8.5,
+          "FirstColumn": 1,
+          "FirstRow": 1,
+          "RefersTo": "=Sheet1!$B$2:$B$11",
+          "RowCount": 10,
+          "RowHeight": 13.5,
+          "Worksheet": "Sheet1"
+        },
+        "TotalsCalculation": "None"
+      },
+      {
+        "Name": "Column2",
+        "Range": {
+          "ColumnCount": 1,
+          "ColumnWidth": 8.5,
+          "FirstColumn": 2,
+          "FirstRow": 1,
+          "RefersTo": "=Sheet1!$C$2:$C$11",
+          "RowCount": 10,
+          "RowHeight": 13.5,
+          "Worksheet": "Sheet1"
+        },
+        "TotalsCalculation": "None"
+      },
+      {
+        "Name": "Column3",
+        "Range": {
+          "ColumnCount": 1,
+          "ColumnWidth": 8.5,
+          "FirstColumn": 3,
+          "FirstRow": 1,
+          "RefersTo": "=Sheet1!$D$2:$D$11",
+          "RowCount": 10,
+          "RowHeight": 13.5,
+          "Worksheet": "Sheet1"
+        },
+        "TotalsCalculation": "None"
+      },
+      {
+        "Name": "Column4",
+        "Range": {
+          "ColumnCount": 1,
+          "ColumnWidth": 8.5,
+          "FirstColumn": 4,
+          "FirstRow": 1,
+          "RefersTo": "=Sheet1!$E$2:$E$11",
+          "RowCount": 10,
+          "RowHeight": 13.5,
+          "Worksheet": "Sheet1"
+        },
+        "TotalsCalculation": "None"
+      },
+      {
+        "Name": "Column5",
+        "Range": {
+          "ColumnCount": 1,
+          "ColumnWidth": 8.5,
+          "FirstColumn": 5,
+          "FirstRow": 1,
+          "RefersTo": "=Sheet1!$F$2:$F$11",
+          "RowCount": 10,
+          "RowHeight": 13.5,
+          "Worksheet": "Sheet1"
+        },
+        "TotalsCalculation": "None"
+      }
+    ],
+    "ShowHeaderRow": true,
+    "ShowTableStyleColumnStripes": false,
+    "ShowTableStyleFirstColumn": false,
+    "ShowTableStyleLastColumn": false,
+    "ShowTableStyleRowStripes": true,
+    "ShowTotals": false,
+    "TableStyleName": "None",
+    "TableStyleType": "None",
+    "link": {
+      "Href": "api-qa.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects/0",
+      "Rel": "self"
+    }
   },
-  "DisplayName": "Table3",
-  "StartColumn": 1,
-  "StartRow": 1,
-  "EndColumn": 5,
-  "EndRow": 10,
-  "ListColumns": [{
-   "Name": "Column1",
-   "Range": {
-    "ColumnCount": 1,
-    "ColumnWidth": 8.5,
-    "FirstColumn": 1,
-    "FirstRow": 1,
-    "RefersTo": "=Sheet1!$B$2:$B$11",
-    "RowCount": 10,
-    "RowHeight": 13.5,
-    "Worksheet": "Sheet1"
-   },
-   "TotalsCalculation": "None"
-  }, {
-   "Name": "Column2",
-   "Range": {
-    "ColumnCount": 1,
-    "ColumnWidth": 8.5,
-    "FirstColumn": 2,
-    "FirstRow": 1,
-    "RefersTo": "=Sheet1!$C$2:$C$11",
-    "RowCount": 10,
-    "RowHeight": 13.5,
-    "Worksheet": "Sheet1"
-   },
-   "TotalsCalculation": "None"
-  }, {
-   "Name": "Column3",
-   "Range": {
-    "ColumnCount": 1,
-    "ColumnWidth": 8.5,
-    "FirstColumn": 3,
-    "FirstRow": 1,
-    "RefersTo": "=Sheet1!$D$2:$D$11",
-    "RowCount": 10,
-    "RowHeight": 13.5,
-    "Worksheet": "Sheet1"
-   },
-   "TotalsCalculation": "None"
-  }, {
-   "Name": "Column4",
-   "Range": {
-    "ColumnCount": 1,
-    "ColumnWidth": 8.5,
-    "FirstColumn": 4,
-    "FirstRow": 1,
-    "RefersTo": "=Sheet1!$E$2:$E$11",
-    "RowCount": 10,
-    "RowHeight": 13.5,
-    "Worksheet": "Sheet1"
-   },
-   "TotalsCalculation": "None"
-  }, {
-   "Name": "Column5",
-   "Range": {
-    "ColumnCount": 1,
-    "ColumnWidth": 8.5,
-    "FirstColumn": 5,
-    "FirstRow": 1,
-    "RefersTo": "=Sheet1!$F$2:$F$11",
-    "RowCount": 10,
-    "RowHeight": 13.5,
-    "Worksheet": "Sheet1"
-   },
-   "TotalsCalculation": "None"
-  }],
-  "ShowHeaderRow": true,
-  "ShowTableStyleColumnStripes": false,
-  "ShowTableStyleFirstColumn": false,
-  "ShowTableStyleLastColumn": false,
-  "ShowTableStyleRowStripes": true,
-  "ShowTotals": false,
-  "TableStyleName": "None",
-  "TableStyleType": "None",
-  "link": {
-   "Href": "api-qa.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects/0",
-   "Rel": "self"
-  }
- },
- "Code": 200,
- "Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
-{{< /tab >}}
+عند **توفير** معامل `format`، يكون محتوى جسم الاستجابة تدفقًا ثنائيًا من نوع الملف المطلوب (مثل `Content-Type: text/csv`).
 
-{{< /tabs >}}
+---
 
-## عائلة SDK السحابية
+## معالجة الأخطاء
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| رمز HTTP | المعنى | مثال JSON |
+|----------|---------|------------|
+| **400** | طلب غير صالح – معاملات مفقودة أو غير صالحة. | `{"Code":400,"Message":"Invalid format parameter."}` |
+| **401** | غير مُصرّح – رمز JWT مفقود أو غير صالح. | `{"Code":401,"Message":"Authentication failed."}` |
+| **404** | غير موجود – ملف جدول البيانات أو ورقة العمل أو كائن القائمة غير موجود. | `{"Code":404,"Message":"ListObject not found."}` |
+| **500** | خطأ داخلي في الخادم. | `{"Code":500,"Message":"Unexpected server error."}` |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+### أخطاء شائعة (ملاحظات)
 
-يحصل هذا REST API على كائن Excel `listobject` إلى ملف بتنسيق مختلف.
+* **المؤشر المعدّ من الصفر** – يبدأ `listobjectindex` من **0**. ولطلب المؤشر `1` سيُعاد الجدول الثاني في الورقة.  
+* **المجلد والتخزين** – إذا كان ملف جدول البيانات مخزنًا في مجلد فرعي، فضُمّن معامل الاستعلام `folder` (مثل `?folder=Reports/2024`).  
+* **صيغة التصدير** – لا يُسمح إلا بالصيغ المدعومة من محرك تحويل Aspose.Cells (`pdf` أو `xlsx` أو `csv` أو `json`، ...). يؤدي تزويده بقيمة غير مدعومة إلى حدوث خطأ **400**.
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+---
 
-{{< tab tabNum="1" >}}
+## أمثلة لـ SDKs
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleGetWorksheetListObject.cs" >}}
+تُظهر المقتطفات التالية كيفية استدعاء نقطة النهاية باستخدام مكتبات SDK الرسمية لـ Aspose.Cells Cloud. استبدل القيم الوهمية (`<YOUR_CLIENT>` و `<YOUR_JWT>`، إلخ) بإعداداتك الفعلية.
 
-{{< /tab >}}
+<details>
+<summary>💻 C#</summary>
 
-{{< tab tabNum="2" >}}
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model.Requests;
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_GetWorksheetListObject.java" >}}
+// تهيئة عميل واجهة البرمجة
+var apiInstance = new ListObjectsApi();
 
-{{< /tab >}}
+// بناء الطلب
+var request = new GetWorksheetListObjectRequest(
+    name: "Book1.xlsx",
+    sheetName: "Sheet1",
+    listobjectindex: 1,
+    format: null,               // مثلًا "csv" للتصدير
+    folder: null,
+    storageName: null
+);
 
-{{< tab tabNum="3" >}}
+// تنفيذ الطلب
+var response = apiInstance.GetWorksheetListObject(request);
+Console.WriteLine(response);
+```
+</details>
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_GetWorksheetListObject.php" >}}
+<details>
+<summary>☕ Java</summary>
 
-{{< /tab >}}
+```java
+import com.aspose.cells.cloud.api.ListObjectsApi;
+import com.aspose.cells.cloud.model.*;
+import com.aspose.cells.cloud.model.requests.*;
 
-{{< tab tabNum="4" >}}
+public class GetWorksheetListObjectExample {
+    public static void main(String[] args) throws ApiException {
+        ListObjectsApi apiInstance = new ListObjectsApi();
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetListObject.rb" >}}
+        GetWorksheetListObjectRequest request = new GetWorksheetListObjectRequest(
+                "Book1.xlsx",   // name
+                "Sheet1",       // sheetName
+                1,              // listobjectindex
+                null,           // format
+                null,           // folder
+                null            // storageName
+        );
 
-{{< /tab >}}
+        ListObjectResponse result = apiInstance.getWorksheetListObject(request);
+        System.out.println(result);
+    }
+}
+```
+</details>
 
-{{< tab tabNum="5" >}}
+<details>
+<summary>🐍 Python</summary>
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetListObject.ts" >}}
+```python
+from asposecellscloud.apis.list_objects_api import ListObjectsApi
+from asposecellscloud.models import GetWorksheetListObjectRequest
 
-{{< /tab >}}
+api = ListObjectsApi()
 
-{{< tab tabNum="6" >}}
+request = GetWorksheetListObjectRequest(
+    name="Book1.xlsx",
+    sheet_name="Sheet1",
+    listobjectindex=1,
+    format=None,
+    folder=None,
+    storage_name=None
+)
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetListObject.py" >}}
+response = api.get_worksheet_list_object(request)
+print(response)
+```
+</details>
 
-{{< /tab >}}
+<details>
+<summary>🟢 Node.js (TypeScript)</summary>
 
-{{< tab tabNum="7" >}}
+```typescript
+import { ListObjectsApi, GetWorksheetListObjectRequest } from "@asposecellscloud/asposecellscloud";
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetListObject.pl" >}}
+const api = new ListObjectsApi();
 
-{{< /tab >}}
+const request = new GetWorksheetListObjectRequest({
+    name: "Book1.xlsx",
+    sheetName: "Sheet1",
+    listobjectindex: 1,
+    format: undefined,
+    folder: undefined,
+    storageName: undefined
+});
 
-{{< tab tabNum="8" >}}
+api.getWorksheetListObject(request)
+   .then(response => console.log(response))
+   .catch(err => console.error(err));
+```
+</details>
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetListObject.go" >}}
+<details>
+<summary>🐘 PHP</summary>
 
-{{< /tab >}}
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
 
-{{< /tabs >}}
+use Aspose\Cells\Cloud\Api\ListObjectsApi;
+use Aspose\Cells\Cloud\Model\Requests\GetWorksheetListObjectRequest;
+
+$listObjectsApi = new ListObjectsApi();
+
+$request = new GetWorksheetListObjectRequest(
+    "Book1.xlsx",   // name
+    "Sheet1",       // sheetName
+    1,              // listobjectindex
+    null,           // format
+    null,           // folder
+    null            // storageName
+);
+
+$response = $listObjectsApi->getWorksheetListObject($request);
+print_r($response);
+?>
+```
+</details>
+
+<details>
+<summary>💎 Ruby</summary>
+
+```ruby
+require 'aspose_cells_cloud'
+
+api_instance = AsposeCellsCloud::ListObjectsApi.new
+
+request = AsposeCellsCloud::GetWorksheetListObjectRequest.new(
+  name: 'Book1.xlsx',
+  sheet_name: 'Sheet1',
+  listobjectindex: 1,
+  format: nil,
+  folder: nil,
+  storage_name: nil
+)
+
+result = api_instance.get_worksheet_list_object(request)
+puts result
+```
+</details>
+
+<details>
+<summary>🦪 Go</summary>
+
+```go
+package main
+
+import (
+    "fmt"
+    cells "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v3"
+    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v3/api"
+)
+
+func main() {
+    cfg := cells.NewConfiguration()
+    cfg.AddDefaultHeader("Authorization", "Bearer <your_jwt>")
+    client := api.NewAPIClient(cfg)
+
+    request := api.GetWorksheetListObjectRequest{
+        Name:            "Book1.xlsx",
+        SheetName:       "Sheet1",
+        Listobjectindex: 1,
+        Format:          nil,
+        Folder:          nil,
+        StorageName:     nil,
+    }
+
+    result, _, err := client.ListObjectsApi.GetWorksheetListObject(request)
+    if err != nil {
+        fmt.Println("Error:", err)
+        return
+    }
+    fmt.Printf("%+v\n", result)
+}
+```
+</details>
+
+---
+
+## انظر أيضًا
+
+| نقطة نهاية ذات صلة | الوصف |
+|--------------------|--------|
+| **إضافة كائن قائمة** | `POST /cells/{name}/worksheets/{sheetName}/listobjects` – إنشاء جدول جديد. |
+| **تحديث كائن القائمة** | `PUT /cells/{name}/worksheets/{sheetName}/listobjects/{listobjectindex}` – تعديل خصائص الجدول. |
+| **حذف كائن القائمة** | `DELETE /cells/{name}/worksheets/{sheetName}/listobjects/{listobjectindex}` – إزالة جدول. |
+| **سرد جميع كائنات القوائم** | `GET /cells/{name}/worksheets/{sheetName}/listobjects` – سرد الجداول في ورقة عمل. |
+
+---
+
+## المراجع
+
+* **مواصفات OpenAPI** – <https://apireference.aspose.cloud/cells/#/ListObjects/GetWorksheetListObject>  
+* **دليل المصادقة** – <https://docs.aspose.cloud/cells/authentication/>  
+* **مستودع GitHub (SDKs)** – <https://github.com/aspose-cells-cloud>  
+
+---
+---

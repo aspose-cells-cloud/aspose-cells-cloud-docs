@@ -1,73 +1,96 @@
-﻿---
-title: Effacer la mise en forme Cells dans la feuille de calcul Excel
-type: docs
-url: /fr/clear-cells-formatting-in-excel-worksheet/
-weight: 100
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Effacer Cells Formatage dans Excel Feuille de calcul
 ---
-Ce REST API indique `clear` cellules `style` dans un fichier Excel.
+title: "Effacer le formatage des cellules dans une feuille Excel"
+type: docs
+url: /clear-cells-formatting-in-excel-worksheet/
+weight: 100
+keywords: "Aspose.Cells Cloud, Excel, Effacer le formatage des cellules, API REST, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Utilisez l’API REST Aspose.Cells Cloud pour effacer le formatage des cellules dans une feuille Excel. Inclut les détails de la requête, un exemple cURL et des extraits de code SDK pour plusieurs langages."
+ArticleTitle: "Effacer le formatage des cellules dans une feuille Excel - Aspose.Cells Cloud API"
+---
 
-## RSET API
+**Remarque :** Tous les appels à l’API Aspose.Cells Cloud doivent être effectués via **HTTPS**. Les points de terminaison HTTP sont obsolètes et peuvent être bloqués par les navigateurs.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
- 
+- **Méthode :** POST  
+- **Point de terminaison :** `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats`
+
+Cette API REST efface le formatage des cellules dans un fichier Excel et fait partie de la suite Aspose.Cells Cloud dédiée à l’effacement du formatage des cellules dans les feuilles Excel.
+
+## API PostClearFormats
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du classeur.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
-| gamme| chaîne| requête| La gamme.|
-| startRow| entier| requête| La ligne de départ.|
-| colonne de démarrage| entier| requête| La colonne de départ.|
-| fin de ligne| entier| requête| La dernière rangée.|
-| fin de colonne| entier| requête| La colonne de fin.|
-| dossier| chaîne| requête| Le dossier du classeur.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostClearFormats) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### **Réponse**
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Schéma de réponse**
+
+| Champ   | Type    | Description                                            |
+|---------|---------|--------------------------------------------------------|
+| Code    | entier  | Code de statut HTTP renvoyé par l’API (par ex., 200). |
+| Status  | chaîne  | Résultat de l’opération (`OK` en cas de succès).      |
+
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                               |
+|------|-----------------------------|-----------------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou non valides (par ex., type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant.                           |
+| 413  | Charge utile trop volumineuse | Le fichier chargé dépasse la limite de taille.          |
+| 500  | Erreur interne du serveur   | Erreur inattendue sur le serveur.                         |
+
+## Comment utiliser l’API PostClearFormats à l’aide des SDK
+
+### Spécification de l’API PostClearFormats
+
+La <a href="https://apireference.aspose.cloud/cells/#/Cells/PostClearFormats" rel="noopener noreferrer">spécification OpenAPI</a> définit une interface de programmation publiquement accessible et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer un appel à l’API Cloud à l’aide de cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/clearformats?range=a1%3Aa10&startRow=1&startColumn=1&endRow=10&endColumn=10" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
+### Utiliser les SDK Aspose.Cells Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le moyen le plus rapide de développer. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +143,9 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Voir également**
+
+- [Effacer le contenu et les styles des cellules](https://docs.aspose.cloud/cells/clear-contents-and-styles)  
+- [Définir le style d’une cellule](https://docs.aspose.cloud/cells/set-cell-style)
+---

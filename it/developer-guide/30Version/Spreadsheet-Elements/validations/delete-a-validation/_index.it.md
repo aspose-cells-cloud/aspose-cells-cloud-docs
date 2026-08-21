@@ -1,73 +1,78 @@
-﻿---
-title: Elimina una convalida del foglio di lavoro su un foglio di lavoro Excel
-second_title: Documen
-linktitle: Elimina
-type: docs
-url: /it/validations/delete/
-keywords: Delete a worksheet validation on an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'eliminazione della convalida di un foglio di lavoro su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 10
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Elimina una convalida del foglio di lavoro su un foglio di lavoro Excel
 ---
-Questo REST API indica di eliminare una convalida del foglio di lavoro tramite indice su un foglio di lavoro Excel.
+title: "Elimina la convalida del foglio di calcolo – Aspose.Cells Cloud"
+second_title: "Documento"
+linktitle: "Elimina"
+type: docs
+url: /validations/delete/
+keywords: "Elimina, convalida foglio di calcolo, Aspose.Cells Cloud, API Excel"
+description: "Scopri come eliminare una convalida di un foglio di calcolo da un file Excel utilizzando l'API REST di Aspose.Cells Cloud. Include endpoint, parametri, dettagli sull'autenticazione, esempio cURL, gestione degli errori e frammenti di codice SDK."
+weight: 10
+---
 
-## RSET API
+Questa API REST elimina una convalida del foglio di calcolo in base al suo indice a base zero in un foglio di calcolo Excel.
+
+## API REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
-I parametri della richiesta sono:
+### **Parametri della richiesta**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome del documento.|
-| Nome foglio| corda| sentiero| Nome del foglio di lavoro.|
-| Indice di convalida| intero| sentiero| L'indice di convalida.|
-| cartella| corda| domanda| Cartella del documento.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome parametro  | Tipo    | Posizione | Descrizione                                          |
+| --------------- | ------- | --------- | ---------------------------------------------------- |
+| name            | string  | path      | Nome del file Excel.                                 |
+| sheetName       | string  | path      | Nome del foglio di calcolo.                          |
+| validationIndex | integer | path      | Indice a base zero della convalida da eliminare.     |
+| folder          | string  | query     | Cartella contenente il documento.                    |
+| storageName     | string  | query     | Nome del servizio di archiviazione.                  |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+La [Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di effettuare interazioni REST direttamente da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+Puoi utilizzare lo strumento a riga di comando cURL per chiamare il servizio web Aspose.Cells. L'esempio seguente mostra come eliminare una convalida con cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+**Codici di stato HTTP**
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+| Codice | Significato                 | Descrizione                                             |
+|--------|-----------------------------|---------------------------------------------------------|
+| 200  | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400  | Richiesta non valida        | Parametri mancanti o non validi (es. tipo di file non supportato). |
+| 401  | Non autorizzato             | Token JWT non valido o mancante. |
+| 413  | Payload troppo grande       | Il file caricato supera il limite di dimensione. |
+| 500  | Errore interno del server   | Errore imprevisto nel server. |
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+## Famiglia di SDK Cloud
+
+Utilizzare un SDK è il modo più veloce per integrare questa operazione nella propria applicazione. Gli SDK gestiscono i dettagli di basso livello, consentendoti di concentrarti sulla logica di business. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come eliminare una convalida di un foglio di calcolo utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

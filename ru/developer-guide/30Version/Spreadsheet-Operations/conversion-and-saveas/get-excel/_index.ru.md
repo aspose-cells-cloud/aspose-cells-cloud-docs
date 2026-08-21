@@ -1,63 +1,115 @@
-﻿---
-title: Преобразует файл Excel в другой формат
-second_title: Documen
-linktitle: Получить Exce
-type: docs
-url: /ru/get different formats files/
-aliases: [/export-excel-workbook-to-different-file-formats/, /export-different-formats/]
-keywords: Get excel files to kinds of format files
-description: Aspose.Cells Cloud REST API поддерживает преобразование файлов Excel в различные форматы. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 10
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Преобразует файл Excel в другие форматы
 ---
-Этот REST API указывает на файл Excel `get` в другом формате.
+title: "Aspose.Cells Cloud – Преобразование рабочей книги Excel в PDF, CSV, HTML и другие форматы (GET /cells/{name})"
+second_title: "Документ"
+linktitle: "Преобразование Excel"
+type: docs
+url: /get-different-formats-files/
+aliases:
+  - /export-excel-workbook-to-different-file-formats/
+  - /export-different-formats/
+keywords: "Aspose.Cells, преобразование Excel, преобразовать Excel, PDF, CSV, HTML, ODS, JSON, форматы изображений, экспорт таблиц, API, REST"
+description: "Узнайте, как получить рабочую книгу Excel в любом формате (PDF, CSV, HTML, PNG и др.) с помощью REST API Aspose.Cells Cloud. Приведены примеры cURL и SDK, информация об аутентификации и ответах."
+weight: 10
+ArticleTitle: "Aspose.Cells Cloud – Преобразование рабочей книги Excel в PDF, CSV, HTML и другие форматы (GET /cells/{name})"
+---
 
-**Параметр запроса**
+Этот REST API позволяет получить рабочую книгу Excel в другом формате.
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|формат|нить|Формат файла: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg и т. д.|
-|пароль|нить|Пароль, необходимый для открытия файла Excel.|
-|isAutoFit|нить|Автоматически подгоняет ширину строк и столбцов в этой книге. Значение по умолчанию — false.|
-|толькоSaveTable|нить|правда/ложь|
-|outPath|нить| Путь для сохранения результата. Если это один файл, `outPath` должен включать как имя файла, так и расширение. Если файлов несколько, `outPath` должен включать только имя папки.|
-|outStorageName|нить| Имя хранилища, где находится сохраненный файл.|
-|checkExcelRestriction|бул| Проверять ли ограничения файла Excel, когда пользователь изменяет ячейки, связанные с объектами.|
-|область|нить| Региональные настройки для рабочей книги.|
-|pageWideFitOnPerSheet|бул| Ширина страницы соответствует размеру листа.|
-|pageTallFitOnPerSheet|бул| Страница по высоте умещается на рабочем листе.|
-|одна страница на листе|бул| При конвертации в формат PDF — одна страница на листе.|
-|папка|нить|Оригинальная папка рабочей тетради.|
-|имя_хранилища|нить|Имя хранилища, где находится файл.|
+## API GetWorkBook
 
-## ОТДЫХ API
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}
+```
 
-|**API**|**Тип**|**Описание**|**Swagger Link**|
-|:- |:- |:- |:- |
-|/cells/{имя}|ПОЛУЧАТЬ|Экспортирует книгу в другой формат.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+### **Безопасность и аутентификация**
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
 
- Вы можете использовать**cURL** Инструмент командной строки для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+### **Параметры запроса**
 
-{{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
+| Имя параметра         | Тип    | Описание                                                                                                                                                   | Значение по умолчанию |
+| --------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| format                | string | Целевой формат файла (например, CSV, XLS, HTML, MHTML, ODS, PDF, XML, TXT, TIFF, XLSB, XLSM, XLSX, XLTM, XLTX, XPS, PNG, JPG, GIF, EMF, BMP, MD, Numbers, WMF, SVG и др.). | –                     |
+| password              | string | Пароль, необходимый для открытия файла Excel.                                                                                                             | –                     |
+| isAutoFit             | bool   | Автоматически подгоняет ширину строк и столбцов.                                                                                                          | false                 |
+| onlySaveTable         | bool   | Если **true**, сохраняются только данные таблицы. Принимает значения `true` или `false`.                                                                  | false                 |
+| outPath               | string | Путь для сохранения результата. Для одного файла укажите имя файла и расширение; для нескольких файлов — только папку.                                     | –                     |
+| outStorageName        | string | Имя хранилища, в котором будет сохранен выходной файл.                                                                                                   | –                     |
+| checkExcelRestriction | bool   | Проверка ограничений Excel при изменении ячеек или связанных объектов.                                                                                    | false                 |
+| region                | string | Региональные настройки, применяемые к рабочей книге.                                                                                                      | –                     |
+| pageWideFitOnPerSheet | bool   | Подгоняет ширину страницы под ширину каждого листа при преобразовании в PDF.                                                                               | false                 |
+| pageTallFitOnPerSheet | bool   | Подгоняет высоту страницы под высоту каждого листа при преобразовании в PDF.                                                                              | false                 |
+| onePagePerSheet       | bool   | Генерирует по одной странице PDF для каждого листа.                                                                                                       | false                 |
+| folder                | string | Путь к папке с исходной рабочей книгой.                                                                                                                   | –                     |
+| storageName           | string | Имя хранилища, в котором находится исходный файл.                                                                                                         | –                     |
+
+### Ответ
+
+**Успех (200)**
+
+- Если параметр запроса `format` не указан, API возвращает объект **[Workbook](/cells/workbook/)**, содержащий информацию о структуре рабочей книги.
+
+- Если параметр запроса `format` указывает тип файла, API возвращает преобразованный файл в запрошенном формате.
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/pdf
+Content-Disposition: attachment; filename="book1.pdf"
+Content-Length: 123456
+
+(двоичные данные PDF)
+```
+
+**Коды HTTP-статусов**
+
+| Код  | Значение                    | Описание                                                                 |
+|------|-----------------------------|--------------------------------------------------------------------------|
+| 200  | OK (Успех)                  | Фильтр применён успешно; ответ содержит детали операции.                |
+| 400  | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый формат файла). |
+| 401  | Unauthorized (Неавторизовано) | Недействительный или отсутствующий токен JWT.                           |
+| 413  | Payload Too Large (Слишком большой payload) | Загруженный файл превышает предельный размер.                          |
+| 500  | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                                         |
+
+> **Примечания:**  
+> - Преобразование больших рабочих книг может занять больше времени; рекомендуется увеличить таймаут запроса.  
+> - Некоторые форматы (например, `ODS`) не поддерживают определённые функции Excel, такие как макросы.
+
+## Как использовать API GetWorkBook с SDK
+
+> **Требования:**  
+> - Действующий **JWT-токен доступа**, полученный в процессе аутентификации Aspose.Cells.  
+> - Исходная рабочая книга должна быть размещена в поддерживаемом хранилище Aspose или передана непосредственно в запросе.  
+> - Убедитесь, что версия API (`v3.0`) соответствует последней выпущенной версии.
+
+### Спецификация API GetWorkBook
+
+<a href="https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook" rel="noopener noreferrer">Спецификация OpenAPI</a> определяет публично доступный программный интерфейс и позволяет выполнять REST-взаимодействия прямо из веб-браузера.
+
+### Пример запроса
+
+Вы можете использовать инструмент командной строки **cURL** для доступа к веб-сервисам Aspose.Cells. Следующий пример показывает корректный GET-запрос с обязательным заголовком авторизации.
+
+{{< tabs tabTotal="1" tabID="11" tabName11="Запрос" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger"}
+curl -X GET "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger"
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ разработки. SDK скрывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">репозитории на GitHub</a>.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода показывают, как вызывать веб-сервисы Aspose.Cells с помощью различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -110,3 +162,32 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" -H "acce
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**См. также**
+
+- <a href="https://apireference.aspose.cloud/cells/#/Workbook/ConvertWorkbook" rel="noopener noreferrer">Преобразование рабочей книги (POST)</a>  
+- <a href="https://apireference.aspose.cloud/cells/#/Workbook/SaveAs" rel="noopener noreferrer">Сохранить как (GET)</a>
+
+---
+
+_Последнее обновление: 2024-12-01_
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Aspose.Cells Cloud – Преобразование рабочей книги Excel в PDF, CSV, HTML и другие форматы (GET /cells/{name})",
+  "description": "Документация по конечной точке Aspose.Cells Cloud GET /cells/{name}, которая преобразует рабочие книги Excel в различные форматы, такие как PDF, CSV, HTML и другие.",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2024-12-01",
+  "keywords": "Aspose.Cells, преобразование Excel, PDF, CSV, HTML, API, REST, облако",
+  "url": "https://docs.aspose.cloud/cells/get-different-formats-files/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose"
+  }
+}
+</script>

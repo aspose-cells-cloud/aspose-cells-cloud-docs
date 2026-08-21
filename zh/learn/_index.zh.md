@@ -1,43 +1,44 @@
-﻿---
-title: 了解 Aspose.Cells Clou
-type: docs
-url: /zh/learn
-aliases: [/learn-aspose-cells-cloud]
-linktitle: 李尔王
-description: 欢迎了解Aspose.Cells云
-weight: 15
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 欢迎学习 Aspose.Cells 云
 ---
-# 欢迎学习 Aspose.Cells 云
+title: "学习 Aspose.Cells Cloud"
+type: docs
+url: /learn
+aliases: [/learn-aspose-cells-cloud]
+linktitle: "学习"
+description: "欢迎学习 Aspose.Cells Cloud。"
+weight: 15
+kwords: Excel, Office Cloud, REST API, 电子表格, PDF, CSV, Json, Markdown, 欢迎学习 Aspose.Cells Cloud
+---
 
-本网站致力于帮助想要使用Aspose.Cells云API开发framework构建应用程序的开发人员。
+# 欢迎学习 Aspose.Cells Cloud
 
-## 什么是 Aspose.Cells 云 API？
+本站点专为希望使用 Aspose.Cells Cloud API 开发框架构建应用程序的开发者而设。
 
-一项基于 REST 的服务，用于在云端以编程方式创建、编辑、转换和分析电子表格。处理 XLS、XLSX 和 CSV 文件 via 可扩展 API，无需 Microsoft Excel 依赖项。
+## 什么是 Aspose.Cells Cloud API？
 
-## 谁应该使用 Aspose.Cells 云 API？
+一种基于 REST 的服务，用于以编程方式在云端创建、编辑、转换和分析电子表格。通过可扩展的 API 处理 XLS、XLSX、CSV 文件，无需依赖 Microsoft Excel。
 
-开发人员构建电子表格自动化解决方案——从初学者到企业团队。无需安装 Excel，即可创建、编辑、转换和分析 XLSX/CSV 文件 via REST API。
+## 谁应该使用 Aspose.Cells Cloud API？
 
-## **如何分两步使用 Aspose.Cells Cloud API**
+构建电子表格自动化解决方案的开发者——从初学者到企业团队均可使用。通过 REST API 创建、编辑、转换和分析 XLSX/CSV 文件，无需安装 Excel。
 
-### *5分钟内实现零自动化*
+## **两步使用 Aspose.Cells Cloud API**  
 
-### 步骤1：**获取 API 凭证**
+### *5 分钟内实现零基础到自动化*  
+
+### 第一步：**获取 API 凭据**  
 
 1. [免费注册](https://dashboard.aspose.cloud/signup)  
-2. [创建应用程序](https://dashboard.aspose.cloud/applications)→ 复制 `Client ID` 和 `Client Secret`  
+2. [创建应用](https://dashboard.aspose.cloud/applications) → 复制 `Client ID` 和 `Client Secret`  
 
-### 第 2 步：**执行您的第一个 API 呼叫**
+### 第二步：**执行您的首个 API 调用**  
 
 ```bash
-# Get access token via cURL
+# 通过 cURL 获取访问令牌
 curl -X POST "https://api.aspose.cloud/connect/token" \
 -H "Content-Type: application/x-www-form-urlencoded" \
 -d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
 
-# Convert XLSX to PDF via cURL
+# 通过 cURL 将 XLSX 转换为 PDF
 curl -v "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet?format=PDF" \
 -X PUT \
 -H "Authorization: Bearer $ACCESS_TOKEN" \
@@ -45,42 +46,44 @@ curl -v "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet?format=PDF" \
 -F "File=@input.xlsx"
 ```
 
-### **使用 SDK 执行电子表格 API**
+### **通过 SDK 执行电子表格 API**  
 
 ```python
-# Python SDK example
+# Python SDK 示例
 from asposecellscloud.apis.cells_api import CellsApi
 from asposecellscloud.models import *
 from asposecellscloud.requests import *
 
-CellsCloudClientId ='....'  # get from https://dashboard.aspose.cloud/#/applications
-CellsCloudClientSecret='....'  # get from https://dashboard.aspose.cloud/#/applications
+CellsCloudClientId ='....'  # 从 https://dashboard.aspose.cloud/#/applications 获取
+CellsCloudClientSecret='....'  # 从 https://dashboard.aspose.cloud/#/applications 获取
 instance  = CellsApi(CellsCloudClientId,CellsCloudClientSecret)
 response = instance.convert_spreadsheet(ConvertSpreadsheetRequest( 'EmployeeSalesSummary.xlsx', 'pdf') , local_outpath = "EmployeeSalesSummary.pdf")
 
 ```
 
-## 为什么要使用 Aspose.Cells 云 API？
+## 为何选择 Aspose.Cells Cloud API？
 
-### 企业级云服务引擎
+### 面向企业级的云端 Excel 引擎
 
-Aspose.Cells Cloud 是一款功能强大的云服务引擎。它提供丰富的功能，帮助您创建、编辑、转换和分析电子表格。
+Aspose.Cells Cloud 是专为云端服务设计的强大 Excel 引擎，提供丰富的功能，助您创建、编辑、转换和分析电子表格。
 
 ### 多语言 SDK 支持
 
-- **完整覆盖：.NET/Java/Python/Node.js/PHP/Perl**
-- **新兴语言：Go/Ruby**
+- **全面覆盖：.NET/Java/Python/Node.js/PHP/Perl**
+- **新兴语言支持：Go/Ruby**
 
-### 低代码：以最少的编码实现快速开发
+### 低代码：以最少编码赋能快速开发
 
 ```C#
     CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("CellsCloudClientId"), Environment.GetEnvironmentVariable("CellsCloudClientSecret"));
     cellsApi.ConvertSpreadsheet(new ConvertSpreadsheetRequest { Spreadsheet = "EmployeeSalesSummary.xlsx", format = "pdf" }, "EmployeeSalesSummary.pdf");
 ```
 
-### 卓越的技术支持
+### 出色的技术支持
 
-- [Aspose.Cells 云开发中心文档](https://docs.aspose.cloud/cells/)
+- [Aspose.Cells Cloud 开发中心文档](https://docs.aspose.cloud/cells/)
 - [GitHub 热门仓库](https://github.com/aspose-cells-cloud)
-- [Aspose.Cells 库德 API 参考](https://reference.aspose.cloud/cells)
-- [Aspose.Cells 可以免费支持论坛](https://forum.aspose.cloud/c/cells/7)
+- [Aspose.Cells Cloud API 参考](https://reference.aspose.cloud/cells)
+- [Aspose.Cells Cloud 免费支持论坛](https://forum.aspose.cloud/c/cells/7)
+
+---

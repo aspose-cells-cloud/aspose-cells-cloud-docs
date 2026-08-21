@@ -1,98 +1,99 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Arbeitsblattinhalt in Remote-Tabellen suchen
-second_title: Documen
-ArticleTitle: Search Worksheet Content in Remote Spreadshee
-linktitle: Inhalt des Remote-Arbeitsblatts suchen
-type: docs
-url: /de/search-content-in-remote-worksheet/
-keywords: Excel API, Search Remote Worksheet, Cloud Spreadsheet, REST API, Search Text, Aspose.Cells, Document Search, Spreadsheet AP
-description: Effiziente Suche nach Text in einem Arbeitsblatt einer Remote-Tabelle, die in der Cloud gespeichert ist
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, JSON, Markdown, Alle leeren Zellen in einem Excel-Arbeitsblatt abgleichen, Remote-Arbeitsblattsuche
 ---
-Suchen Sie nach einem bestimmten Text in einem Arbeitsblatt einer Remote-Tabelle, die im Cloud-Speicher gespeichert ist.
+title: "Aspose.Cells Cloud Excel Textsuche Web-API – Text in entferntem Arbeitsblatt finden"
+second_title: "Dokument"
+ArticleTitle: "Text in entfernter Excel-Tabellendatei suchen – Spezifische Daten finden"
+linktitle: "Inhalte entfernter Arbeitsblätter durchsuchen"
+type: docs
+url: /search-content-in-remote-worksheet/
+keywords: "Aspose Cells, Excel API, Textsuche, entferntes Arbeitsblatt"
+description: "Suchen Sie mit der Aspose.Cells Cloud API nach Text, Zahlen oder Formeln in einem entfernten Excel-Arbeitsblatt. Unterstützt groß-/kleinschreibungsunabhängige Suche und passwortgeschützte Dateien."
+weight: 100
+---
 
-## **Schnittstellendetails**
+## **Inhalte im entfernten Arbeitsblatt durchsuchen**
 
-## **Inhalt im Remote-Arbeitsblatt suchen**
+Suchen Sie programmgesteuert nach spezifischem Text in beliebigen Excel-Arbeitsblättern mithilfe der Aspose.Cells Cloud API. Der Dienst kann Text, Zahlen oder Formeln in entfernten Dateien finden, die in einer Cloud-Speicherung gespeichert sind, und so automatisierte Workflows für Datenentdeckung, Inhaltsanalyse und Prüfung von Tabellenkalkulationen ermöglichen.
 
+### **Web-API**
+
+```curl
+PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content
+
+### **Sicherheit und Authentifizierung**
+
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
-### **Anforderungsparameter:**
+### **Anforderungsparameter**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody| Beschreibung|
-|:- |:- |:- |:- |
-|Name|Zeichenfolge|Weg|Der Name der zu durchsuchenden Arbeitsmappendatei.|
-|Arbeitsblatt|Zeichenfolge|Weg|Der Name des Arbeitsblatts.|
-|Suchtext|Zeichenfolge|Abfrage|Der zu durchsuchende Text.|
-|Groß-/Kleinschreibung ignorieren|Boolescher Wert|Abfrage|Gibt an, ob die Groß-/Kleinschreibung während der Suche ignoriert werden soll.|
-|Ordner|Zeichenfolge|Abfrage|Der Ordnerpfad, in dem die Arbeitsmappe gespeichert ist.|
-|Speichername|Zeichenfolge|Abfrage|(Optional) Der Name des Speichers bei Verwendung eines benutzerdefinierten Cloud-Speichers. Wenn dieser Name weggelassen wird, wird der Standardspeicher verwendet.|
-|Region|Zeichenfolge|Abfrage|Die Tabellenbereichseinstellung.|
-|Passwort|Zeichenfolge|Abfrage|Das Kennwort zum Öffnen der Tabellenkalkulationsdatei.|
+| Parametername   | Typ     | Pfad/Abfragezeichenfolge/HTTP-Body | Beschreibung                                                                                      |
+| --------------- | ------- | ---------------------------------- | ------------------------------------------------------------------------------------------------- |
+| name            | String  | Pfad                               | **Erforderlich.** Der Dateiname der Zielarbeitsmappe (z. B. `jahresbericht.xlsx`).               |
+| worksheet       | String  | Pfad                               | **Erforderlich.** Das Arbeitsblatt innerhalb der Arbeitsmappe, in dem die Suche erfolgt.         |
+| searchText      | String  | Abfrage                            | **Erforderlich.** Der genaue Text oder die Zahl, die gesucht werden soll.                        |
+| ignoreCase      | Boolean | Abfrage                            | **Optional.** Wenn `true`, erfolgt die Suche groß-/kleinschreibungsunabhängig. Standard ist `false`. |
+| folder          | String  | Abfrage                            | **Optional.** Pfad zum Ordner, der die Arbeitsmappe enthält. Falls nicht angegeben, wird das Stammverzeichnis verwendet. |
+| storageName     | String  | Abfrage                            | **Optional.** Name einer benutzerdefinierten Cloud-Speicherung. Falls nicht angegeben, wird die Standard-Speicherung verwendet. |
+| region          | String  | Abfrage                            | **Optional.** Gebietsschema-Einstellung (z. B. `de-DE`), die die Textvergleichung beeinflussen kann. |
+| password        | String  | Abfrage                            | **Optional.** Passwort für eine geschützte Arbeitsmappe. Weglassen, falls die Datei nicht verschlüsselt ist. |
 
 ### **Antwort**
 
 ```json
 {
-  "Name": "BrokenLinksResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "Properties": [
+  "textItems": [
     {
-      "Name": "BrokenLinks",
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "BrokenLink",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "BrokenLink",
-        },
-      }
+      "cellName": "A1",
+      "text": "Gesamt",
+      "occurrences": 1
     },
     {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
+      "cellName": "B5",
+      "text": "Gesamt",
+      "occurrences": 2
     }
-  ]
+  ],
+  "code": 200,
+  "status": "OK"
 }
 ```
 
-### Fehlercodes
+- **textItems** – Array von Treffern. Jedes Element enthält die Zelladresse (`cellName`), den gefundenen Text (`text`) und wie oft er in dieser Zelle vorkommt (`occurrences`).
+- **code** – vom Dienst zurückgegebener HTTP-Statuscode.
+- **status** – Textuelle Beschreibung des Ergebnisses.
 
-- **400 Ungültige Anfrage**: Ungültige Apose.Cells Cloud API-URI.
-- **401 Nicht autorisiert**: Ungültiges Zugriffstoken. Oder ungültige Client-ID und ungültiges Geheimnis.
-- **404 Nicht gefunden**: Auf die Tabellenkalkulationsdatei kann nicht zugegriffen werden.
-- **500 Serverfehler**: Beim Abrufen der Berechnungsdaten ist in der Tabelle eine Anomalie aufgetreten.
+### **Fehlercodes**
 
-## Wo sollten wir den Suchinhalt im Arbeitsblatt der Tabelle API verwenden?
+- **400 Bad Request** – Ungültige API-URI oder fehlerhafte Parameter.
+- **401 Unauthorized** – Fehlender oder ungültiger OAuth 2.0-Token.
+- **404 Not Found** – Die Arbeitsmappe oder das Arbeitsblatt kann nicht gefunden werden.
+- **500 Server Error** – Beim Verarbeiten der Anfrage ist ein unerwarteter Fehler aufgetreten.
 
-Wenn Sie im Arbeitsblatt einer Tabelle nach Inhalten suchen müssen, können Sie diese Nummer API verwenden.
+## Wofür sollte die Suche nach Inhalten im Arbeitsblatt der Spreadsheet API verwendet werden?
 
-## Warum sollten Sie den Suchinhalt im Arbeitsblatt der Tabelle API verwenden?
+- **Compliance-Audit der Arbeitsmappe:** Finden Sie schnell sensible Begriffe (z. B. „Vertraulich“) in der gesamten Datei.
+- **Datenverknüpfung über Arbeitsblätter hinweg:** Suchen Sie eine Projektnummer oder einen Kundennamen, der auf mehreren Arbeitsblättern vorkommt.
+- **Vorlagenverifikation:** Bestätigen Sie nach der Erstellung von Berichten, dass Platzhalter wie `{{Date}}` ersetzt wurden.
+- **Historische Datenanalyse:** Suchen Sie in veralteten Tabellenkalkulationen nach spezifischen Ereigniscodes, um frühere Geschäftslogik zu verstehen.
 
-- Mit diesem API können Sie mühelos Inhalte in einem Remote-Tabellenblatt suchen.
-- Die Entwicklung kann über das vorhandene SDK schnell abgeschlossen werden.
+## Warum sollte man die Suche nach Inhalten im Arbeitsblatt der Spreadsheet API verwenden?
 
-## So verwenden Sie die Suche nach defekten Links im Arbeitsblatt der Tabelle API mit SDKs
+- **Entwicklerfreundlich:** SDKs für viele Programmiersprachen beschleunigen die Entwicklung und sind vollständig dokumentiert.
+- **Geringere Arbeitskosten:** Reduziert den Bedarf an Mitarbeitern für manuelle Datenaufbereitung.
+- **Pay-per-Use:** Sie zahlen nur für die tatsächlich getätigten API-Aufrufe.
+- **Kein Wartungsaufwand:** Keine Server zu verwalten, keine Softwareupdates und keine Kompatibilitätsprobleme.
+- **Beibehaltung komplexer Excel-Formatierung** beim Exportieren der Ergebnisse in PDF oder andere Formate.
+
+## Wie verwendet man die Suche nach defekten Links im Arbeitsblatt der Spreadsheet API mit SDKs?
 
 ### OpenAPI-Spezifikation
 
- Der[OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteWorksheet) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt von einem Webbrowser aus.
+Die [OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteWorksheet) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
 
-### Verwenden Sie Aspose.Cells Cloud SDKs
+### Verwendung der Aspose.Cells Cloud SDKs
 
-Die Verwendung des SDK beschleunigt die Entwicklung am besten. Das SDK übernimmt die zugrunde liegenden Details und ermöglicht Ihnen die einfache Implementierung von Suchinhalten in Arbeitsblättern oder Tabellen für Zellen mit minimalem Code.
- Bitte schauen Sie sich die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
-
-Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die Verwendung eines SDKs ist der beste Weg, um die Entwicklung zu beschleunigen. Das SDK übernimmt die zugrunde liegenden Details, sodass Sie die Suche nach Inhalten im Arbeitsblatt von Tabellenkalkulationen mit minimalem Codeaufwand implementieren können. Besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.

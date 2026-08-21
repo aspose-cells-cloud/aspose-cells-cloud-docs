@@ -1,97 +1,164 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Convertir datos de un rango de hoja de cálculo a un archivo CSV
-second_title: Documen
-ArticleTitle: Convert a Spreadsheet Range data to a CSV file.
-linktitle: Convertir rango a CS
-type: docs
-url: /es/convert-range-to-csv/
-keywords: Convert range to csv, convert spreadsheet to csv, Aspose Cloud Web API, cloud conversion, Excel to cs
-description: Convierte un rango específico de un archivo de hoja de cálculo local a un formato CSV usando Excel API, lo que garantiza una ejecución perfecta en la nube
-weight: 100
-kwords: rango a csv, convertir hoja de cálculo a csv, Aspose Cloud Web API, conversión en la nube, Excel a csv
 ---
- Convierte un rango de datos desde un archivo de hoja de cálculo local/Excel a un[CSV](https://docs.fileformat.com/spreadsheet/csv/) archivo.
+title: "Convertir rango de Excel a CSV – Aspose.Cells Cloud API"
+second_title: "Documentos"
+ArticleTitle: "Cómo convertir un rango local de hoja de cálculo a un archivo CSV: guía paso a paso"
+linktitle: "Convertir rango a CSV"
+type: docs
+url: /convert-range-to-csv/
+keywords: "Aspose Cells, convertir rango a CSV, Excel a CSV, API de Excel, hoja de cálculo en la nube, convertir, Excel, CSV, Aspose.Cells, API en la nube"
+description: "Aprenda a convertir un rango específico de un libro local de Excel (XLSX o XLS) a CSV mediante la API REST de Aspose.Cells Cloud. Incluye sintaxis de solicitud, parámetros, manejo de errores y ejemplos de SDK."
+---
 
-## **Convertir rango a CSV API**
+Exporte un rango específico de un archivo local de Excel a CSV mediante la API de Aspose.Cells Cloud.
+
+## **Convertir rango a CSV (API)**
+
+**Requisitos previos**  
+Para llamar a este punto de conexión, debe tener un **client ID** y un **client secret** válidos de Aspose Cloud, obtener un **token de acceso JWT** y asegurarse de que la hoja de cálculo de origen esté en formato **XLSX** o **XLS**.
+
+### API web
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/range/csv
+PUT https://api.aspose.cloud/v4.0/cells/convert/range/csv
 ```
 
-### **Parámetros de la solicitud:**
+**Ejemplo con cURL**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody| Descripción|
-|:- |:- |:- |:- |
-|Hoja de cálculo|Archivo|Datos del formulario|Sube el archivo de hoja de cálculo.|
-|hoja de trabajo|Cadena|Consulta|El nombre de la hoja de cálculo Spreadsheet/Excel|
-|rango|Cadena|Consulta|Especifique el área de la celda (por ejemplo, A1:C10).|
-|Ruta de salida|Cadena|Consulta|(Opcional) La ruta de la carpeta donde se almacenará el libro. El valor predeterminado es nulo.|
-|nombreAlmacenamientoExterno|Cadena|Consulta|Nombre del almacenamiento del archivo de salida.|
-|Ubicación de fuentes|Cadena|Consulta|Especifique fuentes personalizadas si es necesario.|
-|región|Cadena|Consulta|Define la configuración de la región de la hoja de cálculo.|
-|contraseña|Cadena|Consulta|Se requiere contraseña para abrir el archivo de hoja de cálculo.|
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/csv?worksheet=Hoja1&range=A1:C10" \
+     -H "Authorization: Bearer {token_de_acceso}" \
+     -F "Spreadsheet=@ejemplo.xlsx"
+```
+
+### **Seguridad y autenticación**
+
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
+
+### **Parámetros de solicitud:**
+
+| Nombre del parámetro | Tipo   | Ruta/Cadena de consulta/Cuerpo HTTP | Descripción                                                                 |
+| :------------------- | :----- | :---------------------------------- | :--------------------------------------------------------------------------- |
+| Spreadsheet          | File   | FormData                            | Cargue el archivo de hoja de cálculo.                                       |
+| worksheet            | String | Query                               | Nombre de la hoja de cálculo.                                               |
+| range                | String | Query                               | Especifique el rango de celdas (por ejemplo, A1:C10).                      |
+| outPath              | String | Query                               | Ruta de la carpeta donde se almacenará el libro (opcional). Valor predeterminado: null. |
+| outStorageName       | String | Query                               | Nombre del almacenamiento de salida.                                        |
+| fontsLocation        | String | Query                               | Especifique fuentes personalizadas si es necesario.                         |
+| region               | String | Query                               | Define la configuración de región de la hoja de cálculo.                    |
+| password             | String | Query                               | Contraseña necesaria para abrir el archivo de hoja de cálculo.              |
 
 ### **Respuesta**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream",
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Códigos de error
+_Ejemplo de contenido CSV devuelto (primeras filas):_
 
-- **400 Solicitud incorrecta**: URI de nube Apose.Cells no válido API.
-- **401 No autorizado**Token de acceso no válido. O ID de cliente y secreto no válidos.
-- **404 No encontrado**:El archivo de hoja de cálculo no es accesible.
-- **Error de servidor 500**:La hoja de cálculo ha encontrado una anomalía al obtener los datos de cálculo.
+```csv
+Nombre,Fecha,Cantidad
+Juan Pérez,2023-01-15,1250.00
+María López,2023-01-16,980.50
+```
 
-## ¿Por qué debería utilizar la herramienta Convertir gráfico a CSV API?
+**Códigos de estado HTTP**
 
-- No necesita almacenamiento en la nube, lo que reduce la carga sobre los recursos de la nube.
-- El desarrollo se puede completar rápidamente a través del SDK existente.
+| Código | Significado              | Descripción                                                       |
+| ------ | ------------------------ | ----------------------------------------------------------------- |
+| 200    | Correcto                 | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta     | Parámetros ausentes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado            | Token JWT no válido o ausente.                                    |
+| 413    | Carga demasiado grande    | El archivo cargado excede el límite de tamaño.                   |
+| 500    | Error interno del servidor | Error inesperado en el servidor.                                 |
 
-## ¿Cómo utilizar la herramienta Convertir gráfico a CSV API con SDK?
+## ¿Dónde debe utilizar la API Convert Range to CSV?
+
+### **1. Escenarios de exportación y migración de datos**
+
+- **Integración con bases de datos**: Exporte rangos específicos de Excel directamente a sistemas de bases de datos.
+- **Integración con aplicaciones**: Alimente datos seleccionados de la hoja de cálculo a aplicaciones SaaS.
+- **Migración de sistemas**: Transfiera rangos de datos específicos entre sistemas heredados y modernos.
+- **Interoperabilidad multiplataforma**: Comparta subconjuntos de datos específicos entre distintas plataformas.
+
+### **2. Informes y análisis**
+
+- **Informes dirigidos**: Exporte secciones específicas de informes a CSV para análisis focalizado.
+- **Flujos de datos para paneles de control**: Proporcione rangos de datos específicos a herramientas de paneles de BI.
+- **Métricas de rendimiento**: Extraiga rangos de indicadores clave para sistemas de seguimiento de rendimiento.
+- **Informes financieros**: Exporte secciones de estados financieros para auditorías externas.
+
+### **3. Desarrollo y pruebas**
+
+- **Gestión de datos de prueba**: Exporte rangos de datos específicos para fines de pruebas.
+- **Entornos de desarrollo**: Comparta rangos de datos de ejemplo con equipos de desarrollo.
+- **Pruebas de API**: Genere datos de prueba en formato CSV a partir de secciones específicas de la hoja de cálculo.
+- **Desarrollo de prototipos**: Proporcione conjuntos de datos focalizados para prototipos de aplicaciones.
+
+### **4. Operaciones empresariales**
+
+- **Compartir datos selectivos**: Comparta rangos de datos específicos con socios externos.
+- **Copia de seguridad parcial de datos**: Haga copias de seguridad de rangos críticos en formato CSV.
+- **Transferencia interdepartamental**: Comparta datos específicos entre departamentos.
+- **Informes de cumplimiento**: Exporte rangos de datos regulatorios para presentaciones de cumplimiento.
+
+### **5. Flujos de trabajo automatizados**
+
+- **Exportación programada de rangos**: Exporte automáticamente rangos específicos según un horario.
+- **Extracción basada en eventos**: Exporte rangos según eventos o desencadenantes empresariales.
+- **Integración en flujos de trabajo**: Integre las exportaciones de rangos en flujos de trabajo de procesos empresariales.
+- **Procesamiento por lotes de rangos**: Procese múltiples rangos específicos en operaciones por lotes.
+
+## ¿Por qué debería utilizar la API Convert Range to CSV?
+
+- Puede convertir un rango de hoja de cálculo sin cargar previamente el libro, lo que ahorra espacio de almacenamiento y reduce costos.
+- El desarrollo puede completarse rápidamente utilizando los SDK existentes de Aspose.Cells Cloud.
+- **Integración sencilla**: API REST con documentación clara.
+- **Arquitectura escalable**: Maneja operaciones desde pequeñas hasta de escala empresarial.
+
+## ¿Cómo usar la API Convert Range to CSV con SDK?
 
 ### Especificación OpenAPI
 
- El[Especificación OpenAPI](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToCsv) describe un API de acceso público, que permite interacciones REST directamente desde un navegador web.
+La [Especificación OpenAPI](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToCSV) define una API públicamente accesible, lo que permite interacciones REST directamente desde un navegador web.
 
-## Utilice los SDK de la nube Aspose.Cells
+## Utilice los SDK de Aspose.Cells Cloud
 
-Usar el SDK es la forma más rápida de desarrollar, ya que abstrae los detalles de bajo nivel y le permite convertir un rango de datos en un archivo csv con código corto.
- Explore la lista completa de Aspose.Cells SDK en la nube en nuestro[Repositorio de GitHub](https://github.com/aspose-cells-cloud).
+Utilizar los SDK es la forma más rápida de desarrollar, ya que abstraen los detalles de bajo nivel, permitiéndole convertir un rango de datos a un archivo CSV con un código mínimo.  
+Explore la lista completa de SDK de Aspose.Cells Cloud en nuestro [repositorio de GitHub](https://github.com/aspose-cells-cloud).
 
-Los siguientes ejemplos de código ilustran cómo llamar a los servicios web Aspose.Cells utilizando varios SDK:
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertRangeToCsv.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertRangeToCsv.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertRangeToCsv.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertRangeToCsv.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertRangeToCsv.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertRangeToCsv.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertRangeToCsv.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToCsv.go" >}}
-{{< /tab >}}
+Los siguientes ejemplos de código ilustran cómo llamar a los servicios web de Aspose.Cells mediante varios SDK. Si la carga desde Gist está bloqueada, puede descargar los ejemplos directamente desde el repositorio.
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertRangeToCSV.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertRangeToCSV.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertRangeToCSV.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertRangeToCSV.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertRangeToCSV.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertRangeToCSV.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertRangeToCSV.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToCSV.go" >}}
+{{</tab>}}
 {{< /tabs >}}

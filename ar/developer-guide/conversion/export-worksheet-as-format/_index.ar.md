@@ -1,100 +1,151 @@
-﻿---
-title: Aspose.Cells Cloud Web API - تصدير ورقة عمل جدول بيانات كملف تنسيق
-second_title: Documen
-ArticleTitle: Export a Spreadsheet Worksheet as a Format fil
-linktitle: تصدير ورقة العمل
-type: docs
-url: /ar/export-worksheet-as-format/
-keywords: Export worksheet, Cloud storage conversion, File format transformation, API for spreadsheet
-description: يحول بكفاءة ورقة عمل من التخزين السحابي إلى تنسيقات مختلفة مثل PDF وCSV والصور
-weight: 100
-kwords: تصدير ورقة العمل، التحويل السحابي، PDF، تنسيقات الصور، Excel، REST API، CSV، JSON، Markdown، التعامل مع الخلايا الفارغة في Excel
 ---
-تصدير جدول بيانات سحابي/ورقة عمل Excel إلى ملف بتنسيق آخر باستخدام Aspose.Cells Cloud Web API.
+title: "تصدير ورقة عمل – واجهة Aspose.Cells Cloud API الإصدار 4 (PDF وPNG وSVG وCSV)"
+second_title: "مستند"
+ArticleTitle: "كيفية تصدير ورقة عمل جدول بيانات عن بُعد إلى تنسيق آخر: دليل خطوة بخطوة"
+linktype: "تصدير ورقة عمل"
+type: docs
+url: /export-worksheet-as-format/
+keywords: "Aspose Cells, تصدير ورقة عمل, واجهة برمجة التطبيقات السحابية, PDF, PNG, CSV, تحويل Excel"
+description: "قم بتحويل ورقة عمل مخزّنة في Aspose.Cells Cloud إلى تنسيق PDF أو PNG أو SVG أو CSV أو تنسيقات أخرى عبر طلب GET واحد. يشمل أمثلة كود بلغات C# وJava وPython وغيرها."
+weight: 100
+---
 
-## **تصدير ورقة العمل بالتنسيق API**
+تصدير ورقة عمل من جدول بيانات/Excel مخزّن في السحابة إلى ملف بتنسيق آخر باستخدام واجهة Aspose.Cells Cloud Web API.
+
+## **واجهة تصدير ورقة العمل كتنسيق**
+
+### واجهة برمجة التطبيقات عبر الويب
 
 ```http
-GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}
+GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}
 ```
 
-### **معلمات الطلب:**
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-|اسم|خيط|طريق|(مطلوب) اسم ملف المصنف الذي سيتم استرجاعه.|
-|ورقة عمل|خيط|طريق|(مطلوب) ورقة العمل المحددة للتحويل.|
-|شكل|خيط|استفسار|(مطلوب) تنسيق الإخراج المطلوب (على سبيل المثال، "png"، "pdf"، "svg").|
-|مجلد|خيط|استفسار|(اختياري) مسار المجلد الذي يُخزَّن فيه المصنف. القيمة الافتراضية هي null.|
-|اسم التخزين|خيط|استفسار|(اختياري) اسم وحدة التخزين السحابية المخصصة. استخدم وحدة التخزين الافتراضية إذا تم حذفها.|
-|المسار الخارجي|خيط|استفسار|(اختياري) مسار مجلد الإخراج. الافتراضي هو null.|
-|اسم التخزين الخارجي|خيط|استفسار|(اختياري) اسم تخزين ملف الإخراج.|
-|الخطوطالموقع|خيط|استفسار|(اختياري) حدد الخطوط المخصصة إذا لزم الأمر.|
-|منطقة|خيط|استفسار|إعداد منطقة جدول البيانات.|
-|كلمة المرور|خيط|استفسار|كلمة المرور للوصول إلى ملف جدول البيانات.|
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-### **إجابة**
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### **معلمات الطلب**
+
+| اسم المعلمة         | النوع   | المسار / سلسلة الاستعلام / جسم الطلب HTTP | الوصف                                                                                                                                               |
+| :----------------- | :----- | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**           | String | Path                       | (مطلوبة) اسم ملف المصنف المراد استرجاعه.                                                                                                           |
+| **worksheet**      | String | Path                       | (مطلوبة) ورقة العمل المحددة المراد تحويلها.                                                                                                        |
+| **format**         | String | Query                      | (مطلوبة) التنسيق المطلوب للملف الناتج (مثل `png` أو `pdf` أو `svg`).                                                                              |
+| **folder**         | String | Query                      | (اختياري) مسار المجلد الذي يخزّن فيه المصنف. القيمة الافتراضية هي `null`.                                                                           |
+| **storageName**    | String | Query                      | (اختياري) اسم مساحة التخزين السحابية المخصصة. استخدام مساحة التخزين الافتراضية عند حذفها.                                                          |
+| **outPath**        | String | Query                      | (اختياري) مسار مجلد الإخراج. القيمة الافتراضية هي `null`.                                                                                          |
+| **outStorageName** | String | Query                      | (اختياري) اسم مساحة تخزين الملف الناتج.                                                                                                            |
+| **fontsLocation**  | String | Query                      | (اختياري) تحديد الخطوط المخصصة عند الحاجة.                                                                                                         |
+| **region**         | String | Query                      | (اختياري) إعداد منطقة/لغة جدول البيانات (مثل `en-US` أو `fr-FR`). يؤثر على تنسيق الأرقام وتحليل التواريخ والسلوك المتعلق باللغة المحلية.            |
+| **password**       | String | Query                      | (اختياري) كلمة المرور للوصول إلى ملف جدول البيانات.                                                                                                |
+
+### **الاستجابة**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### رموز الخطأ
+**كودات حالة HTTP**
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+| الكود | المعنى                    | الوصف                                                                |
+| ---- | ------------------------- | --------------------------------------------------------------------- |
+| 200  | ناجح                      | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.         |
+| 400  | طلب غير صالح              | معلمات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم).                |
+| 401  | غير مصدق                 | رمز JWT غير صحيح أو مفقود.                                           |
+| 413  | حجم الحمولة كبير جدًا      | تجاوز حجم الملف المرفوع الحد المسموح به.                             |
+| 500  | خطأ داخلي في الخادم        | خطأ غير متوقع في الخادم.                                              |
 
-## لماذا يجب عليك استخدام جدول بيانات تصدير ورقة العمل بالتنسيق API؟
+## **أين يجب استخدام واجهة تصدير ورقة العمل إلى تنسيق آخر؟**
 
-- يمكنك تحويل ملفات السحابة إلى تنسيقات مختلفة في أي وقت وفي أي مكان.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+- **ترحيل الأنظمة القديمة** – تحويل آلاف ملفات XLS القديمة إلى تنسيق XLSX لأنظمة حديثة.
+- **توحيد التنسيقات للأرشفة** – جعل تنسيقات جداول البيانات المختلفة (XLS وXLSM وODS وCSV) موحدة لغرض الأرشفة.
+- **التوافق مع حزم المكتب** – تحويل ملفات Excel إلى تنسيقات متوافقة مع LibreOffice أو Google Sheets أو Apple Numbers.
+- **توحيد مصادر البيانات** – تحويل تنسيقات جداول البيانات المختلفة إلى CSV أو JSON لاستيرادها في قواعد البيانات.
+- **النشر على الويب** – تحويل النماذج المالية إلى HTML لعرضها على الويب.
 
-## كيفية استخدام ورقة عمل تصدير جدول البيانات بالتنسيق API مع مجموعات تطوير البرامج (SDKs)؟
+## **لماذا تستخدم واجهة تصدير ورقة العمل إلى تنسيق آخر؟**
 
-### تصدير ورقة العمل بالتنسيق API المواصفات
+- **دعم متعدد اللغات لواجهات برمجة التطبيقات (SDKs)** – توفر مكتبات عميل للغات برمجة متعددة، مما يسمح للمطورين باستدعاء الواجهة مباشرةً من بيئتهم المفضلة.
+- **تحويل مباشر دون رفع مبدئي** – تتيح تحويل ورقة عمل مخزّنة في مساحة تخزين سحابية إلى التنسيق المطلوب دون الحاجة لتنزيل الملف وإعادة رفعه.
+- **استخراج البيانات فقط** – تُعيد محتوى ورقة العمل بالتنسيق المختار دون الحفاظ على التنسيقات البصرية.
 
- ال[تصدير ورقة العمل بالتنسيق API المواصفات](https://reference.aspose.cloud/cells/#/ConversionController/ExportWorksheetAsFormat) يوفر واجهة برمجة يمكن الوصول إليها بشكل عام لإجراء تفاعلات REST مباشرة من متصفح الويب.
+## **كيفية استخدام واجهة تصدير ورقة جدول البيانات كتنسيق باستخدام واجهات برمجة التطبيقات (SDKs)؟**
 
-### استخدم Aspose.Cells Cloud SDKs
+### مواصفات واجهة تصدير ورقة العمل كتنسيق
 
-يعد استخدام SDK أسرع طريقة للتطوير، حيث إنه يجرد التفاصيل منخفضة المستوى، مما يسمح لك بتصدير جدول بيانات إلى ملف تنسيق باستخدام رمز قصير.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+توفر [مواصفات واجهة تصدير ورقة العمل كتنسيق](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportWorksheetAsFormat) واجهة برمجة مفتوحة للوصول إلى التفاعلات REST مباشرةً من متصفح ويب.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء المكالمات لواجهة برمجة التطبيقات السحابية باستخدام cURL.
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ExportWorksheetAsFormat.cs" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Sheet1?format=pdf" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/octet-stream"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ExportWorksheetAsFormat.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (مشفرة بـ Base64)",
+  "contentType": "نوع MIME",
+  "fileDownloadName": "اسم ملف اختياري"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExportWorksheetAsFormat.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ExportWorksheetAsFormat.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ExportWorksheetAsFormat.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ExportWorksheetAsFormat.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ExportWorksheetAsFormat.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportWorksheetAsFormat.go" >}}
-{{< /tab >}}
+
+{{< /tabs >}}
+
+### استخدام واجهات برمجة تطبيقات Aspose.Cells Cloud (SDKs)
+
+استخدام واجهات برمجة التطبيقات (SDKs) هو أسرع طريقة للتطوير، لأنها تُجرّدك من التفاصيل منخفضة المستوى، مما يسمح لك بتصدير ورقة عمل جدول بيانات إلى ملف بتنسيق مطلوب بكود موجز.  
+يرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بواجهات Aspose.Cells Cloud SDK.
+
+توضح أمثلة الكود التالية كيفية إجراء مكالمات لخدمات الويب Aspose.Cells باستخدام SDKs المختلفة:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ExportWorksheetAsFormat.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ExportWorksheetAsFormat.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExportWorksheetAsFormat.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ExportWorksheetAsFormat.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ExportWorksheetAsFormat.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ExportWorksheetAsFormat.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ExportWorksheetAsFormat.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportWorksheetAsFormat.go" >}}
+{{</tab>}}
 {{< /tabs >}}

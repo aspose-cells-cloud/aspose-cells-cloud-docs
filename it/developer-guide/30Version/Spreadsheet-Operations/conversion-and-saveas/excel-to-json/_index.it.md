@@ -1,80 +1,140 @@
-﻿---
-title: Excel a Jso
-second_title: Documen
-linktitle: Excel a Jso
-type: docs
-url: /it/convert-excel-file-to-json-file/
-keywords: Convert excel files to json files
-description: Aspose.Cells Cloud REST API supporta la conversione di file Excel in file JSON. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 100
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Excel in Json
 ---
-Questo REST API indica a `convert` un file di foglio di calcolo in un file in formato json.
+title: "Excel in JSON"
+second_title: "Documenti"
+linktype: "Excel in JSON"
+type: docs
+url: /convert-excel-file-to-json-file/
+keywords: "Aspose.Cells, Excel in JSON, API cloud, conversione foglio di calcolo, API REST"
+description: "Scopri come convertire fogli di calcolo Excel in file JSON tramite l'API REST di Aspose.Cells Cloud. Include esempio cURL, frammenti SDK (C#, Java, Python), parametri richiesti, autenticazione e formato della risposta."
+weight: 100
+ArticleTitle: "Converti Excel in JSON usando l'API REST di Aspose.Cells Cloud – Guida rapida"
+---
 
-**Parametro di query**
+## API REST
 
-|Nome del parametro|Tipo|Descrizione|
-|:- |:- |:- |
-|password|corda| La password necessaria per aprire un file Excel.|
-|Nome di archiviazione|corda| Nome dell'archivio in cui si trova il file.|
-|checkExcelRestriction|bool| Se verificare la restrizione del file Excel quando l'utente modifica gli oggetti correlati alle celle.|
+Questa API REST converte un file di foglio di calcolo in un file in formato JSON.
 
-**Parametro del corpo della richiesta**
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/json
+```
 
-|Nome del parametro|Tipo|Descrizione|
-|:- |:- |:- |
-|file di dati| file di dati|Il file di dati viene salvato nella prima parte del contenuto multiparte.|
+### Sicurezza e autenticazione
 
-**Risposta**
+Le API REST di Aspose.Cells Cloud sono sicure e richiedono [autenticazione basata su token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-[Informazioni sul file](/cells/it/file-info/)
+### Richiesta
 
-## Specifiche REST API
+**Parametri di query**
 
-|**API**|**Tipo**|**Descrizione**|**Collegamento Swagger**|
-|:- |:- |:- |:- |
-|/cells/convert/json|INVIARE|Convertire un foglio di calcolo in un file pptx.|[PostConvertWorkbookToJson](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToJson)|
+| Nome del parametro      | Tipo   | Descrizione                                                                 |
+| ----------------------- | ------ | --------------------------------------------------------------------------- |
+| `password`              | string | Password necessaria per aprire il file Excel (opzionale).                  |
+| `storageName`           | string | Nome dello storage in cui si trova il file (opzionale).                    |
+| `checkExcelRestriction` | bool   | Applica restrizioni specifiche di Excel alla modifica delle celle (opzionale). |
 
- IL[Specifiche OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToJson) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+**Parametro nel corpo della richiesta**
 
- Puoi usare**cURL** Strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Nome del parametro | Tipo | Descrizione                                                                                              |
+| ------------------ | ---- | -------------------------------------------------------------------------------------------------------- |
+| `datafile`         | file | Il file Excel da caricare. Deve essere inviato come prima parte di una richiesta `multipart/form-data`. |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+#### Esempio di chiamata cURL
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/json" \
+     -H "Authorization: Bearer $ACCESS_TOKEN" \
+     -H "accept: application/json" \
+     -H "Content-Type: multipart/form-data" \
+     -F "File=@myWorkbook.xlsx"
+```
+
+### Risposta
+
+Il servizio restituisce un oggetto **FileInfo**. I campi principali sono descritti di seguito:
+
+| Campo         | Tipo    | Descrizione                                                                     |
+| ------------- | ------- | ------------------------------------------------------------------------------- |
+| `Filename`    | string  | Nome del file JSON generato (ad esempio, `myWorkbook.json`).                    |
+| `FileSize`    | integer | Dimensione del file generato in byte.                                           |
+| `FileContent` | string  | Contenuto del file JSON codificato in Base64. Decodificarlo per ottenere il JSON effettivo. |
+
+**Esempio di risposta**
+
+```json
+{
+  "Filename": "myWorkbook.json",
+  "FileSize": 8423,
+  "FileContent": "eyJmb3JtYXR0ZWRfZGF0YSI6IH ... (stringa in base64) ..."
+}
+```
+
+#### Gestione degli errori
+
+Se la richiesta ha esito negativo, l'API restituisce un oggetto di errore con la seguente struttura:
+
+| Campo     | Tipo   | Descrizione                                    |
+| --------- | ------ | ---------------------------------------------- |
+| `Code`    | string | Identificatore dell'errore leggibile da macchina. |
+| `Message` | string | Descrizione leggibile dell'errore.             |
+
+Codici di stato HTTP comuni:
+
+- **400** – Richiesta non valida (ad esempio, file mancante o parametri non validi).
+- **401** – Non autorizzato (token di accesso non valido o mancante).
+- **500** – Errore interno del server.
+
+**Codici di stato HTTP**
+
+| Codice | Significato                 | Descrizione                                                              |
+|--------|-----------------------------|--------------------------------------------------------------------------|
+| 200    | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida        | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401    | Non autorizzato             | Token JWT non valido o mancante.                                         |
+| 413    | Payload troppo grande       | Il file caricato supera il limite di dimensione.                        |
+| 500    | Errore interno del server   | Errore imprevisto del server.                                            |
+
+## Come usare l'API PostConvertWorkbookToJson con gli SDK
+
+### Specifica dell'API PostConvertWorkbookToJson
+
+La <a href="https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToJson" rel="noopener noreferrer" title="Specifiche OpenAPI di Aspose.Cells – Converti cartella di lavoro in JSON">Specifiche OpenAPI</a> definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando **cURL** per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/json" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/json" \
+     -H "Authorization: Bearer $ACCESS_TOKEN" \
+     -H "accept: application/json" \
+     -H "Content-Type: multipart/form-data" \
+     -F "File=@myWorkbook.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
-  "Filename": "xxxxxx.json",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
+  "Filename": "myWorkbook.json",
+  "FileSize": 8423,
+  "FileContent": "eyJmb3JtYXR0ZWRfZGF0YSI6IH... (stringa in base64)"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+### Utilizzare gli SDK di Aspose.Cells Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'utilizzo di un SDK rappresenta il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer" title="SDK di Aspose.Cells Cloud su GitHub">repository GitHub</a> per l'elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come effettuare chiamate ai servizi web di Aspose.Cells utilizzando vari SDK:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -127,14 +187,8 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 
 {{< /tabs >}}
 
-## Altre API implementano questa funzione
+## Altre API che implementano funzionalità simili
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API consente di salvare il file MS Excel come file HTML con impostazioni aggiuntive e di salvare il risultato nell'archivio.
-
-Questo file Excel REST API `convert` in HTML.
-
-[METTI /celle/converti](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API consente di convertire il file MS Excel nel file HTML con impostazioni aggiuntive e di salvare il risultato nella risposta.
-
-Questo file Excel REST API `export` in HTML.
-
-[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API consente di convertire il file MS Excel nel file HTML con impostazioni aggiuntive e di salvare il risultato nella risposta.
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Salva un file Excel come file HTML con impostazioni aggiuntive e memorizza il risultato nello storage specificato.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Converte un file Excel in un file HTML con impostazioni aggiuntive e restituisce il risultato nella risposta.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Recupera un file Excel; può essere utilizzato con parametri di query per ottenere il file in formato HTML.

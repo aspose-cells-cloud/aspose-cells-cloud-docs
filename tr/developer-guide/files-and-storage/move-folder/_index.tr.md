@@ -1,74 +1,93 @@
-﻿---
-title: Klasörü Taşı
-second_title: Documen
-linktitle: Klasörü Taşı
+---
+title: "Aspose.Cells Cloud Klasör Taşıma API’si – Bulutta Klasörleri Hızlıca Taşıyın"
+second_title: "Belge"
+ArticleTitle: "Bulut Tabanlı Excel Dosyası Yönetimi – Bulutta Klasörleri Hızlıca Taşıyın"
+linktype: "Klasörü Taşı"
 type: docs
 url: /tr/move-folder/
-keywords: Move folder API, Excel API, Folder management, REST API, Aspose.Cells, Cloud storag
-description: Bu dokümantasyon, Aspose.Cells bulut depolama alanındaki klasörleri yönetmek için API Klasörünü Taşıma'nın kullanımına ilişkin kapsamlı bir kılavuz sağlar
+keywords: "Aspose.Cells, Klasörü Taşı, Bulut Depolama, Excel API"
+description: "Aspose.Cells Cloud deposunda RESTful Klasör Taşıma API’si aracılığıyla klasörleri nasıl taşırayacağınızı öğrenin. Endpoint, parametreler, örnek cURL, hata kodları ve C#, Java, Python ve daha fazlası için SDK örneklerini içerir."
 weight: 100
-kwords: Excel API, Klasörü taşı API, Office Bulut, REST API, Elektronik tablo yönetimi, PDF, CSV, JSON, Markdown, Bir çalışma sayfasındaki tüm boş hücreleri eşleştir Excel
 ---
+
+Bu API, bir klasörü Aspose.Cells Cloud deposu içindeki bir konumdan diğerine taşır. Dosyaları düzenlemeye ve bulut depolamayı verimli şekilde yönetmeye yardımcı olur.
+
 ## **Excel API: Klasörü Taşı**
 
+### Web API
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
 ```
-PUT http://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
+
+**Örnek cURL isteği**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/FolderA?destPath=FolderB" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
-### **İşlev Açıklaması**
+### **Güvenlik ve Kimlik Doğrulama**
 
-API numaralı bu cihaz, kullanıcıların Aspose.Cells bulut depolama alanında bir klasörü bir konumdan diğerine taşımasına olanak tanır. Dosyaları düzenlemek ve bulut depolama alanını etkili bir şekilde yönetmek için olmazsa olmazdır.
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-###  İstek parametreleri**Klasörü taşı** API
+### **moveFolder** API’sinin istek parametreleri şunlardır:
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTP Gövdesi| Tanım|
-|----------------|--|------------------------|--------------------------------------------------------|
-| srcPath| Sicim| Yol| Taşınacak klasörün kaynak yolu.|
-| hedefYolu| Sicim| Sorgu| Klasörün taşınması gereken hedef yol.|
-| srcDepolamaAdı| Sicim| Sorgu| Kaynak depolamanın adı.|
-| hedefDepolamaAdı| Sicim| Sorgu| Hedef depolama alanının adı.|
+| Parametre Adı   | Tür    | Konum | Açıklama                                                           |
+| ---------------- | ------ | ----- | ------------------------------------------------------------------ |
+| srcPath          | string | Yol   | Taşınacak klasörün tam yolu, örneğin `FolderA/`.                  |
+| destPath         | string | Sorgu | Klasörün taşınacağı hedef yol, örneğin `FolderB/`.                |
+| srcStorageName   | string | Sorgu | (İsteğe bağlı) Kaynak depo adı.                                   |
+| destStorageName  | string | Sorgu | (İsteğe bağlı) Hedef depo adı.                                     |
 
-### **Yanıt Açıklaması**
+**Parametre detayları**
 
-```json
-{
-Void
-}
-```
+- **srcPath** – zorunludur. Kaynak klasör yolu.
+- **destPath** – zorunludur. Hedef klasör yolu.
+- **srcStorageName** – isteğe bağlıdır. Kaynak depo tanımlayıcısı.
+- **destStorageName** – isteğe bağlıdır. Hedef depo tanımlayıcısı.
+
+### **Yanıt**
+
+Başarılı durumda API, HTTP durum kodu **200 OK** ile boş bir yanıt gövdesi döndürür. Hatalar, bir `error` alanı içeren JSON nesneleri olarak döndürülür.
+
+**HTTP Durum Kodları**
+
+| HTTP Kodu | HTTP Durumu           | Açıklama                                                            |
+| --------- | --------------------- | ------------------------------------------------------------------- |
+| 200       | OK (Tamam)            | Web API başarıyla çağrıldı; yanıt işlem ayrıntılarını içerir.     |
+| 400       | Bad Request (Hatalı İstek) | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401       | Unauthorized (Yetkisiz)    | Geçersiz veya eksik JWT belirteci.                                  |
+| 413       | Payload Too Large (Payload Çok Büyük) | Yüklenen dosya boyut sınırını aşıyor.                               |
+| 500       | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası.                                          |
 
 ## OpenAPI Spesifikasyonu
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/FolderController/MoveFolder) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/FolderController/MoveFolder), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-## Excel API SDK
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye nasıl çağrı yapılacağını göstermektedir.
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MoveFolder.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}?destPath={destPath}" \
+     -H "Authorization: Bearer {access_token}"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MoveFolder.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```json
+{}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MoveFolder.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MoveFolder.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MoveFolder.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MoveFolder.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MoveFolder.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MoveFolder.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. SDK, düşük seviye detayları kendisi yönetir ve sizin projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposunu](https://github.com/aspose-cells-cloud) kontrol edin.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:

@@ -1,46 +1,46 @@
-﻿---
-title: احصل على MaxRow من ورقة عمل Excel
+---
+title: "الحصول على MaxRow من ورقة عمل Excel"
 type: docs
 url: /ar/get-maxrow-from-excel-worksheet/
 weight: 40
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على MaxRow من ورقة عمل Excel
+ArticleTitle: "استرجاع رقم الصف الأقصى في ورقة عمل Excel – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+keywords: "Aspose.Cells, Excel, MaxRow, واجهة برمجة تطبيقات REST, SDK للحوسبة السحابية, جدول بيانات, ورقة عمل, GetMaxRow"
+description: "تعرّف على كيفية استرجاع رقم الصف الأقصى في ورقة عمل ضمن ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. يشمل بناء الجملة للطلب، مخطط الاستجابة، أمثلة SDK، وملاحظات الاستخدام."
 ---
-يشير هذا REST API إلى الحصول على `maxrow` في ملف Excel عندما تكون المعلمة `cellOrMethodName` هي `maxrow`.
 
-- **cURL مثال**
+تُعيد هذه الواجهة برمجية (REST API) **رقم الصف الأقصى** في ورقة عمل Excel عندما يتم تعيين معامل `cellOrMethodName` إلى `maxrow`.
 
+- **مثال باستخدام cURL**
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxrow" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxrow" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MaxRow": 1048576
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **عائلة SDK السحابية**
+- **استخدام SDKs الخاصة بـ Aspose.Cells Cloud**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعد استخدام SDK الطريقة الأكثر كفاءة لتسريع عملية التطوير. تتعامل الـ SDK مع التفاصيل منخفضة المستوى، مما يتيح لك التركيز على منطق مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
-
-
+توضح أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs متنوعة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -103,3 +103,26 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**مرجع الواجهة البرمجية (API Reference)**
+
+| العنصر | التفاصيل |
+|--------|----------|
+| **الطريقة (Method)** | `GET` |
+| **نقطة النهاية (Endpoint)** | `/cells/{fileName}/worksheets/{sheetName}/cells/maxrow` |
+| **المعاملات في المسار (Path Parameters)** | `fileName` – اسم ملف Excel (إلزامي) <br> `sheetName` – اسم ورقة العمل (إلزامي) |
+| **المعاملات الاستعلامية (Query Parameters)** | `folder` – مسار المجلد في التخزين (اختياري) <br> `storageName` – اسم التخزين (اختياري) |
+| **استجابة ناجحة (Success Response)** | `200 OK` <br> ```json { "MaxRow": integer } ``` |
+| **استجابات الأخطاء (Error Responses)** | `400 Bad Request` – معاملات غير صالحة <br> `401 Unauthorized` – فشل المصادقة <br> `404 Not Found` – ملف أو ورقة عمل غير موجودة |
+
+**المتطلبات المسبقة (Prerequisites)**
+
+- رمز مصادقة صالح من Aspose Cloud.  
+- يجب أن يكون الملف المستهدف مرفوعًا إلى تخزين Aspose Cloud أو متاحًا عبر رابط URL عام.  
+
+**ملاحظات**
+
+- تتوفر هذه العملية في إصدار API **v3.0** وما بعده.  
+- تتوافق قيمة `MaxRow` المسترجعة مع أعلى فهرس لصف مستخدم (مُعدّ من 1). بالنسبة لورقة عمل فارغة، تكون القيمة عادةً `1`.  
+
+توضح أمثلة SDK التالية كيفية تنفيذ هذه العملية بلغات برمجة مختلفة.

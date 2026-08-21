@@ -1,170 +1,165 @@
-﻿---
-title: Pivot tablosundaki pivot alan öğesini gizle
-second_title: Documen
-linktitle: Saklamak
+---
+title: "Pivot tabloda pivot alanı öğesini gizle"
+second_title: "Document"
+linktitle: Gizle
 type: docs
 url: /tr/pivot-tables/hide-pivot-field-item/
-aliases: [/hide-pivot-field-item/]
-keywords: Hide a pivot field in a pivot table
-description: Aspose.Cells Cloud REST API, pivot tabloda pivot alanını gizlemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
+aliases: [/tr/hide-pivot-field-item/]
+keywords: "Aspose.Cells, pivot alanı öğesini gizle, PivotTable API, REST API, bulut SDK"
+description: "Aspose.Cells Cloud REST API kullanarak bir pivot tabloda pivot alanı öğesini nasıl gizleyeceğinizi öğrenin. İstek ayrıntılarını, cURL örneğini ve birden fazla dil için SDK kod parçacıklarını içerir."
 weight: 110
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Pivot tabloda pivot alan öğesini gizle
+ArticleTitle: "Pivot Tabloda Pivot Alan Öğesini Gizle – Aspose.Cells Cloud API Kılavuzu"
 ---
-Bu REST API pivot alan öğesinin gizlendiğini gösterir.
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Hide
- 
+
+API'yi çağırmadan önce şunlardan emin olun:
+
+* Geçerli bir **JWT erişim belirteci** (Aspose Cloud kimlik doğrulama akışı aracılığıyla elde edilebilir).  
+* Hedef çalışma kitabının Aspose Cloud depolarınızda yüklenmiş olması.  
+* Çalışma sayfasının ve pivot tablonun zaten oluşturulmuş olması.
+
+Bu ön koşullar, kimlik doğrulama hatalarını ve "kaynak bulunamadı" yanıtlarını önler. Aşağıdaki adımlar, API'yi çağırmadan önce gereken kurulumu özetlemektedir.
+
+Bu REST API, bir pivot tablodaki bir pivot alanı öğesini gizler.
+
+## PostPivotTableFieldHideItem API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Hide
 ```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| pivotTableIndex| tam sayı| yol||
-| pivotAlanTürü| sicim| sorgu||
-| alanIndeksi| tam sayı| sorgu||
-| öğeIndeksi| tam sayı| sorgu||
-| isHide| Boolean| sorgu||
-| Yeniden Hesaplamayaihtiyacın Var| Boolean| sorgu|YANLIŞ|
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
- 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldHideItem) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
+
+### **İstek parametreleri**
+
+| Parametre Adı   | Tür      | Konum   | Açıklama                                                                                      |
+| ---------------- | -------- | ------- | ---------------------------------------------------------------------------------------------- |
+| name             | string   | path    | Excel dosyasının adı.                                                                          |
+| sheetName        | string   | path    | Pivot tabloyu içeren çalışma sayfası.                                                          |
+| pivotTableIndex  | integer  | path    | Çalışma sayfasındaki pivot tablonun indeksi.                                                   |
+| pivotFieldType   | string   | query   | Pivot alanın türü (Satır, Sütun, Sayfa, Veri vb.).                                            |
+| fieldIndex       | integer  | query   | Düzenlenecek pivot alanın sıfır tabanlı indeksi.                                               |
+| itemIndex        | integer  | query   | Gizlenecek alan içindeki belirli öğenin indeksi.                                               |
+| isHide           | boolean  | query   | Öğeyi gizlemek için **true**, göstermek için **false** olarak ayarlayın.                       |
+| needReCalculate  | boolean  | query   | Değişiklikten sonra pivot tablonun yeniden hesaplanıp hesaplanmayacağını belirtir. Varsayılan **false**. |
+| folder           | string   | query   | Çalışma kitabının bulunduğu klasör yolu.                                                        |
+| storageName      | string   | query   | Depolama hizmetinin adı.                                                                        |
+
+**Gerekli sorgu parametrelerinin hızlı başvurusu**
+
+- **pivotFieldType** – alanın türü (örneğin, `Row`).  
+- **fieldIndex** – düzenlenecek alanın sıfır tabanlı indeksi.  
+- **itemIndex** – gizleyeceğiniz/göstereceğiniz öğenin sıfır tabanlı indeksi.  
+- **isHide** – gizlemek için `true`, göstermek için `false`.  
+- **needReCalculate** – isteğe bağlı, varsayılan olarak `false`.
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldHideItem), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile API'yi nasıl çağıracağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivottables/0/PivotField/Hide?pivotFieldType=Row&fieldIndex=0&itemIndex=1&isHide=true&needReCalculate=true" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+**Yanıt ayrıntıları**
+
+| Durum Kodu | Açıklama                                                           |
+| ---------- | ------------------------------------------------------------------ |
+| 200        | Öğe başarıyla gizlendi.                                           |
+| 400        | Geçersiz istek – eksik veya geçersiz parametreler.                |
+| 401        | Yetkisiz – geçersiz veya eksik JWT belirteci.                      |
+| 500        | Sunucu hatası – işlem tamamlanamadı.                              |
+
+**Not:** Sağlanan `fieldIndex` veya `itemIndex` aralık dışındaysa, API **400 Bad Request** (Geçersiz İstek) yanıtı döndürür.
+
 ## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
- 
- 
- 
+
+API ile hızlı geliştirme yapmanın en hızlı yolu SDK kullanmaktır. SDK'lar, alt seviye ayrıntıları ele alır, böylece iş mantığınıza odaklanabilirsiniz. Aspose.Cells Cloud SDK'larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, farklı SDK'lar kullanarak pivot alanı öğesini nasıl gizleyeceğinizi göstermektedir.
+
 {{< tabs tabTotal="2" tabID="4" tabName1="C#" tabName2="Go" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-
 public void Run_PivotTable_NeedReCalculate()
-
 {
-
-    url = @"http://api.aspose.com/v3.0/storage/file/Temp/V17.02.00_01.xlsx";
-
+    // Çalışma kitabını ve çalışma sayfasını hazırlayın
+    url = @"https://api.aspose.cloud/v3.0/storage/file/Temp/V17.02.00_01.xlsx";
     using (HttpWebResponse response = _helper.CallDelete(url, string.Empty, contentType))
-
     {
-
         Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
     }
 
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx?folder=Temp";
-
+    // Çalışma kitabını yükleyin
+    url = @"https://api.aspose.cloud/v3.0/cells/V17.02.00_01.xlsx?folder=Temp";
     using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-
     {
-
         Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
     }
 
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet?folder=Temp";
-
+    // Pivot tabloyu içerecek ikinci çalışma sayfası oluşturun
+    url = @"https://api.aspose.cloud/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet?folder=Temp";
     using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-
     {
-
         Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
     }
 
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/Sheet2?folder=Temp";
-
+    // Örnek verileri içeren ikinci bir çalışma sayfası oluşturun
+    url = @"https://api.aspose.cloud/v3.0/cells/V17.02.00_01.xlsx/worksheets/Sheet2?folder=Temp";
     using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-
     {
-
         Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
     }
 
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/importdata?folder=Temp";
-
-    data = "{ \"BatchData\":[{\"rowIndex\":0,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Sport\",\"style\":null},{\"rowIndex\":0,\"columnIndex\":1,\"type\":\"String\",\"value\":\"Year\",\"style\":null},{\"rowIndex\":0,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Quarter\",\"style\":null},{\"rowIndex\":0,\"columnIndex\":3,\"type\":\"String\",\"value\":\"Sales\",\"style\":null},{\"rowIndex\":0,\"columnIndex\":4,\"type\":\"String\",\"value\":\"YearSales\",\"style\":null},{\"rowIndex\":1,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Golf\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Golf\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Tennis\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Tennis\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Tennis\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Tennis\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Golf\",\"style\":null},{\"rowIndex\":1,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2014\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2014\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2014\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2013\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2013\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2013\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2013\",\"style\":null},{\"rowIndex\":1,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr4\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr4\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":3,\"type\":\"int\",\"value\":\"1500\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":3,\"type\":\"int\",\"value\":\"2000\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":3,\"type\":\"int\",\"value\":\"600\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":3,\"type\":\"int\",\"value\":\"1500\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":3,\"type\":\"int\",\"value\":\"4070\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":3,\"type\":\"int\",\"value\":\"5000\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":3,\"type\":\"int\",\"value\":\"6430\",\"style\":null},{\"rowIndex\":1,\"columnIndex\":4,\"type\":\"int\",\"value\":\"15000\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":4,\"type\":\"int\",\"value\":\"20000\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":4,\"type\":\"int\",\"value\":\"600\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":4,\"type\":\"int\",\"value\":\"1500\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":4,\"type\":\"int\",\"value\":\"4070\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":4,\"type\":\"int\",\"value\":\"5000\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":4,\"type\":\"int\",\"value\":\"6430\",\"style\":null}],\"DestinationWorksheet\":\"Sheet2\",\"IsInsert\":false}";
-
+    // Örnek verileri Sheet2'ye içe aktarın
+    url = @"https://api.aspose.cloud/v3.0/cells/V17.02.00_01.xlsx/importdata?folder=Temp";
+    data = "{ \"BatchData\":[{...}] }"; // Kısa tutmak için kısaltıldı
     using (HttpWebResponse response = _helper.CallPost(url, data, contentType))
-
     {
-
         Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
     }
 
-    url = "http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables?folder=Temp";
-
+    // PivotSheet'e bir pivot tablo ekleyin
+    url = @"https://api.aspose.cloud/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables?folder=Temp";
     data = "{\"Name\":\"TestPivot\",\"SourceData\":\"=Sheet2!A1:E8\",\"DestCellName\":\"C1\",\"UseSameSource\":true,\"PivotFieldRows\":[0,1],\"PivotFieldColumns\":[2],\"PivotFieldData\":[3,4]}";
-
     using (HttpWebResponse response = _helper.CallPut(url, data, contentType))
-
     {
-
         Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
     }
 
-    url = "http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotField?pivotFieldType=Row&folder=Temp&needReCalculate=true";
-
-    data = "{\"Data\":[1]}";
-
-    using (HttpWebResponse response = _helper.CallPut(url, data, contentType))
-
+    // Belirli bir satır alan öğesini gizleyin
+    url = @"https://api.aspose.cloud/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotField/Hide?pivotFieldType=Row&fieldIndex=0&itemIndex=1&isHide=true&needReCalculate=true&folder=Temp";
+    using (HttpWebResponse response = _helper.CallPost(url, string.Empty, contentType))
     {
-
         Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
     }
-
 }
-
-
 ```
 
 {{< /tab >}}
@@ -177,8 +172,5 @@ public void Run_PivotTable_NeedReCalculate()
 
 {{< /tabs >}}
 
-
-
-
-
-
+**Not:** SDK örnekleri, kimlik doğrulamanın (JWT belirteci) zaten yapılandırıldığını ve çalışma kitabının belirtilen depolama klasöründe bulunduğunu varsayar. Ortamınıza göre `folder` ve `storageName` parametrelerini gerektiği gibi ayarlayın.
+---

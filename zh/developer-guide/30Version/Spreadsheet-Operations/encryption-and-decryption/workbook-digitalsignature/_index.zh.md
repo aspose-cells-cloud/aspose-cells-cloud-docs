@@ -1,74 +1,120 @@
-﻿---
-title: 为 Excel workboo 添加数字签名
-second_title: Documen
-linktitle: 数字签名
-type: docs
-url: /zh/excel-digital-signature/
-aliases: [/protect/digital-signature/,/workbook/digital-signature/]
-keywords: Add digital signature for an Excel workbook
-description: Aspose.Cells Cloud REST API 支持为 Excel 工作簿添加数字签名。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 35
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、为 Excel 工作簿添加数字签名
 ---
-此 REST API 表示为 Excel 工作簿添加 `digital signature`。
+title: "为 Excel 工作簿添加数字签名"
+ArticleTitle: "为 Excel 工作簿添加数字签名 – Aspose.Cells Cloud API"
+second_title: "文档"
+linktitle: "数字签名"
+type: docs
+url: /excel-digital-signature/
+aliases:
+  - /protect/digital-signature/
+  - /workbook/digital-signature/
+keywords: "Aspose.Cells Cloud, 数字签名, Excel 工作簿, REST API, .pfx, JWT, 签名 API"
+description: "了解如何使用 Aspose.Cells Cloud REST API（v4.0）为 Excel 工作簿添加数字签名。内容包括端点、参数、身份验证、响应模式、错误处理以及多种语言的 SDK 示例。"
+weight: 35
+---
 
-## 重新设置 API
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/digitalsignature
- 
+**前置条件：**  
+调用此端点前，请确保您已完成以下准备：
+
+- 已通过 Aspose Cloud 身份验证获取有效的 JWT 访问令牌。  
+- 已将目标工作簿上传至您的 Aspose Cloud 存储空间。  
+- 拥有 `.pfx` 或 `.p12` 格式的数字签名文件及其密码。
+
+此 REST API 可为 Excel 工作簿添加**数字签名**。
+
+## PostDigitalSignature API
+
+```http
+POST https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature
 ```
 
-请求参数为：
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|数字签名文件|细绳|询问|数字签名文件参数。|
-|密码|细绳|询问||
-|文件夹|细绳|询问|工作簿的文件夹。|
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 具备安全性，需采用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PostDigitalSignature)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### 请求参数
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名                   | 类型   | 位置                 | 描述                                           |
+| ------------------------ | ------ | -------------------- | ---------------------------------------------- |
+| **name**                 | string | `<code>path</code>`  | 工作簿的文件名。                               |
+| **digitalsignaturefile** | string | `<code>query</code>` | 数字签名文件（`.pfx` 或 `.p12`）的路径。       |
+| **password**             | string | `<code>query</code>` | 工作簿密码（若工作簿受保护）。                 |
+| **folder**               | string | `<code>query</code>` | 工作簿所在的文件夹。                           |
+| **storageName**          | string | `<code>query</code>` | 要使用的存储服务名称。                         |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+*注意：若文件名包含特殊字符，请先对其进行 URL 编码后再添加至查询字符串中。*
+
+### 错误处理
+
+| HTTP 状态码 | 含义                                                 |
+| ----------- | ---------------------------------------------------- |
+| 200         | 签名添加成功。                                       |
+| 400         | 请求错误 — 参数缺失或无效。                          |
+| 401         | 未授权 — OAuth 令牌无效或已过期。                    |
+| 403         | 禁止访问 — 权限不足或被拒绝访问。                   |
+| 500         | 服务器内部错误 — 发生意外故障。                     |
+
+### HTTP 状态码错误响应
+
+| HTTP 状态码 | 错误码              | 描述                                              |
+| ----------- | ------------------- | ------------------------------------------------- |
+| 400         | BadRequest          | 参数缺失或无效。                                  |
+| 401         | Unauthorized        | 令牌无效或缺失。                                  |
+| 404         | NotFound            | 在指定文件夹/存储中未找到指定的工作簿。           |
+| 500         | InternalServerError | 服务器发生意外错误。                              |
+
+
+## 如何结合 SDK 使用 PostDigitalSignature API
+
+### PostDigitalSignature API 规范
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Protection/PostDigitalSignature) 定义了一个公开可访问的编程接口，允许您直接通过网页浏览器执行 REST 交互。
+
+您可使用 cURL 命令行工具调用 Aspose.Cells 网络服务。以下示例演示了如何向该 API 发起请求：
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature?digitalsignaturefile=signature.pfx&password=YourPassword" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+**响应模式**  
+API 返回一个 JSON 对象，包含以下字段：
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| 字段         | 类型   | 描述                                             |
+| ------------ | ------ | ------------------------------------------------ |
+| `Code`       | int    | 表示结果的类 HTTP 状态码。                       |
+| `Status`     | string | 描述结果的简短文本（例如 `OK`）。               |
+| `SignatureId`| string | 已添加数字签名的标识符（可选）。                 |
+| `Message`    | string | 附加信息或错误详情（可选）。                     |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+### 使用 Aspose.Cells Cloud SDK
+
+使用 SDK 可简化集成过程并减少样板代码。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud) 获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells 网络服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -98,7 +144,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostDigitalSignature.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82a2de2e4189bc27ae92abf73c36b4df0" "Example_PostDigitalSignature.ts" >}}
 
 {{< /tab >}}
 

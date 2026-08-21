@@ -1,78 +1,77 @@
-﻿---
-title: Ta bort en viss dokumentegenskap
-second_title: Documen
-linktitle: Ta bort
-type: docs
-url: /sv/document-properties/delete/
-aliases: [/remove-a-particular-document-property/]
-keywords: Delete, and update properties from excel files
-description: Aspose.Cells Cloud REST API stöder borttagning av egenskaper från Excel-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 50
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ta bort en viss dokumentegenskap
 ---
-Denna REST API indikerar dokumentegenskapen `delete`.
+title: "Ta bort en specifik dokumentegenskap"
+second_title: "Dokument"
+linktitle: "Ta bort"
+type: docs
+url: /document-properties/delete/
+aliases: [/remove-a-particular-document-property/]
+keywords: "Aspose.Cells, ta bort dokumentegenskap, Excel-metadata-API, REST, moln-SDK, cURL-exempel"
+description: "Ta bort en specifik dokumentegenskap från en Excel-arbetsbok med Aspose.Cells Cloud REST API v3.0. Innehåller cURL- och SDK-exempel för C#, Java, Python och mer."
+weight: 50
+---
 
-## RSET API
+Denna REST API tar bort en dokumentegenskap från en arbetsbok.
+
+## REST API
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
 ```
 
-Begäranparametrarna är:
+### Begäran parametrar
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamnet.|
-| egenskapsnamn| sträng| väg| Fastighetens namn.|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameternamn   | Typ    | Plats  | Obligatorisk | Beskrivning                                      |
+| --------------- | ------ | ------ | ------------ | ------------------------------------------------ |
+| name            | string | path   | Ja           | Namnet på Excel-arbetsboken.                     |
+| propertyName    | string | path   | Ja           | Namnet på den dokumentegenskap som ska tas bort. |
+| folder          | string | query  | Nej          | Sökvägen till mappen där arbetsboken lagras.     |
+| storageName     | string | query  | Nej          | Namnet på lagringstjänsten.                      |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty) definierar ett offentligt tillgängligt programmeringsgränssnitt och möjliggör REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör anrop till moln-API:et med cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author"  \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author" \
+     -X DELETE \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-  
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Felaktiga svar
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| HTTP-status | Beskrivning                                                       | Exempel på JSON                                              |
+| ----------- | ----------------------------------------------------------------- | ------------------------------------------------------------ |
+| 400         | Felaktig begäran – saknar obligatoriska parametrar eller ogiltiga värden. | `{"Code":400,"Message":"Missing required parameter 'name'."}` |
+| 401         | Auktoriseringsfel – ogiltig eller saknad JWT-token.              | `{"Code":401,"Message":"Invalid access token."}`             |
+| 404         | Hittades inte – arbetsboken eller den angivna egenskapen finns inte. | `{"Code":404,"Message":"Document property not found."}`      |
+| 500         | Internt serverfel – ett oväntat tillstånd uppstod på servern.    | `{"Code":500,"Message":"An unexpected error has occurred."}` |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+## Moln-SDK-familj
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektsuppgifter. Kolla in [GitHub-repositoriet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med hjälp av olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

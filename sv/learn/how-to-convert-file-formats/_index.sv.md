@@ -1,64 +1,65 @@
-﻿---
-title: Hur man konverterar kalkylbladsfilformat med Aspose.Cells Clou
-linktitle: Hur man konverterar ett kalkylbladsfilformat
+---
+title: "Så här konverterar du kalkylarkfilformat med Aspose.Cells Cloud"
+linktitle: "Så här konverterar du kalkylarkfilformat"
 type: docs
 url: /sv/how-to-convert-file-formats
-description: Hur man konverterar filformat med Aspose.Cells Cloud
+description: "Så här konverterar du filformat med Aspose.Cells Cloud."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hur man konverterar filformat via Aspose.Cells Cloud
+kwords: Excel, Office Cloud, REST API, Kalkylark, PDF, CSV, JSON, Markdown, Så här konverterar du filformat via Aspose.Cells Cloud
 ---
+
 ## Introduktion
 
-Aspose.Cells Cloud Spreadsheet API tillhandahåller en uppsättning tvåkanaliga gränssnitt för att konvertera lokala och molnbaserade kalkylbladsfiler. Det stöder format som Excel (XLS, XLSX), CSV, HTML och PDF, vilket gör konverteringen enkel för att möta olika behov.
+Aspose.Cells Cloud-kalkylarks-API:t erbjuder en uppsättning dubbelkanalsgränssnitt för att konvertera lokala och molnbaserade kalkylarksfiler. Det stöder filformat som Excel (XLS, XLSX), CSV, HTML och PDF, vilket gör konverteringar enkla och anpassade till olika behov.
 
-### Tre konverteringslägen · Enhetlig objektmodell · Fullständig formattäckning
+### Tre konverteringslägen · Enhetlig objektmodell · Fullständigt formatomfattning
 
 ![Konverteringslägen](image.png)
 
 ## **Kärnkonverteringsmatris**
 
-| Konverteringstyp| Objektnivå| Typisk API| Utdataformat|
-|-----------------|-------------|---------------------------|--------------------------|
-|**Lokal konvertering**  | Arbetsbok|`ConvertSpreadsheet`            | PDF/XLSX/JSON/.... 30+ format|
-|| Arbetsblad|`ConvertWorksheetToImage`       |PNG/JPEG/SVG                   |
-|||`ConvertWorksheetToPdf`         | Pdf|
-|| Tabell|`ConvertTableToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertTableToPdf`             | Pdf|
-|||`ConvertTableToCsv`             | Csv-fil|
-|||`ConvertTableToHtml`            | Html|
-|||`ConvertTableToJson`            | Html|
-|| Räckvidd|`ConvertRangeToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertRangeToPdf`             | Pdf|
-|||`ConvertRangeToCsv`             | Csv-fil|
-|||`ConvertRangeToHtml`            | Html|
-|||`ConvertRangeToJson`            | JSON|
-|| Diagram|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertChartToPdf`             |PDF                            |
-|**Molnkonvertering**  | Arbetsbok|`ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... 30+ format|
-|| Arbetsblad|`ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... 30+ format|
-|| Tabell|`ExportTableAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
-|| Räckvidd|`ExportRangeAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
-|| Diagram|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
-|**Spara som i molnet**     | Arbetsbok|`SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... 30+ format|
+| Konverteringstyp       | Objektnivå        | Typiskt API                     | Utdataformat                   |
+|-----------------------|-------------------|---------------------------------|--------------------------------|
+| **Lokal konvertering** | Arbetsbok         | `ConvertSpreadsheet`            | PDF/XLSX/JSON/.... +30 format  |
+|                       | Arbeta med kalkylblad | `ConvertWorksheetToImage`       | PNG/JPEG/SVG                   |
+|                       |                   | `ConvertWorksheetToPdf`         | PDF                            |
+|                       | Tabell            | `ConvertTableToImage`           | PNG/JPEG/SVG/....              |
+|                       |                   | `ConvertTableToPdf`             | PDF                            |
+|                       |                   | `ConvertTableToCsv`             | CSV                            |
+|                       |                   | `ConvertTableToHtml`            | HTML                           |
+|                       |                   | `ConvertTableToJson`            | JSON                           |
+|                       | Omfattning (Range) | `ConvertRangeToImage`           | PNG/JPEG/SVG/....              |
+|                       |                   | `ConvertRangeToPdf`             | PDF                            |
+|                       |                   | `ConvertRangeToCsv`             | CSV                            |
+|                       |                   | `ConvertRangeToHtml`            | HTML                           |
+|                       |                   | `ConvertRangeToJson`            | JSON                           |
+|                       | Diagram           | `ConvertChartToImage`           | PNG/JPEG/SVG/....              |
+|                       |                   | `ConvertChartToPdf`             | PDF                            |
+| **Molnkonvertering**   | Arbetsbok         | `ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... +30 format  |
+|                       | Arbeta med kalkylblad | `ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... +30 format  |
+|                       | Tabell            | `ExportTableAsFormat`           | PDF/XLSX/JSON/.... +30 format  |
+|                       | Omfattning (Range) | `ExportRangeAsFormat`           | PDF/XLSX/JSON/.... +30 format  |
+|                       | Diagram           | `ExportChartAsFormat`           | PDF/XLSX/JSON/.... +30 format  |
+| **Spara i molnet som** | Arbetsbok         | `SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... +30 format  |
 
 ### **Lokal filkonvertering**
 
 ```csharp
-// Get Cells Cloud API client
+// Hämta Cells Cloud API-klienten
 CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
 ```
 
-- **Excel Filkonvertering**
+- **Excel-filkonvertering**
 
 ```c#
-// Convert local Excel to PDF
+// Konvertera lokal Excel till PDF
 cellsApi.ConvertSpreadsheet(new ConvertSpreadsheetRequest { Spreadsheet = "EmployeeSalesSummary.xlsx", format = "pdf" }, "EmployeeSalesSummary.pdf");
 ```
 
-- **Konvertera Excel-diagrammet till SVG-filen**
+- **Konvertera Excel-diagram till SVG-fil**
 
 ```c#
-// Convert local Excel Chart to Svg
+// Konvertera lokalt Excel-diagram till SVG
 cellsApi.ConvertChartToImage(new SDK.Request.ConvertChartToImageRequest
 {
     Spreadsheet = "EmployeeSalesSummary.xlsx",
@@ -72,8 +73,8 @@ cellsApi.ConvertChartToImage(new SDK.Request.ConvertChartToImageRequest
 - **Konvertera tabell till CSV-fil**
 
 ```C#
-# Convert the sale logs table of the Sales worksheet to csv
-result = api.ConvertTableToCsv( new SDK.Request.ConvertTableToCsvRequest
+// Konvertera tabellen med försäljningsloggar från kalkylbladet "Sales" till CSV
+result = api.ConvertTableToCsv(new SDK.Request.ConvertTableToCsvRequest
 {
     Spreadsheet = "EmployeeSalesSummary.xlsx",
     worksheet = "Sales",
@@ -83,55 +84,55 @@ result = api.ConvertTableToCsv( new SDK.Request.ConvertTableToCsvRequest
 
 ```
 
-### **Molnfilkonvertering**
+### **Molnfilskonvertering**
 
-Behöver också hämta Aspose Cells Cloud API-klienten.
+Du måste även hämta Aspose.Cells Cloud API-klienten.
 
 ```csharp
-// Get Cells Cloud API client
+// Hämta Cells Cloud API-klienten
 CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
 ```
 
 - **Konvertera Excel till PDF**
 
 ```csharp
-// Convert cloud Excel to PDF, Save to local file
-cellsApi.ExportSpreadsheetAsFormat( new SDK.Request.ExportSpreadsheetAsFormatRequest 
+// Konvertera moln-Excel till PDF och spara som lokal fil
+cellsApi.ExportSpreadsheetAsFormat(new SDK.Request.ExportSpreadsheetAsFormatRequest 
 { 
-    name = "EmployeeSalesSummary.xlsx" ,
+    name = "EmployeeSalesSummary.xlsx",
     format = "pdf",
-    folder ="NetSDKData" 
-} , "EmployeeSalesSummary.pdf");   
+    folder = "NetSDKData" 
+}, "EmployeeSalesSummary.pdf");   
 ```
 
-- **Konvertera Excel-arbetsbladet till pdf**
+- **Konvertera Excel-kalkylblad till PDF**
 
 ```csharp
-// Convert cloud Excel worksheet to PDF, Save to local file
-cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
+// Konvertera moln-Excel-kalkylblad till PDF och spara som lokal fil
+cellsApi.ExportWorksheetAsFormat(new SDK.Request.ExportWorksheetAsFormatRequest 
 { 
     name = "EmployeeSalesSummary.xlsx",
     worksheet = "Sales",
     format = "pdf",
-    folder ="NetSDKData" 
-} , "EmployeeSalesSummary_Sales.pdf");   
+    folder = "NetSDKData" 
+}, "EmployeeSalesSummary_Sales.pdf");   
 ```
 
 ```csharp
-// Convert cloud Excel worksheet to PDF, Save to local file
-cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
+// Konvertera moln-Excel-kalkylblad till PDF och spara som lokal fil
+cellsApi.ExportWorksheetAsFormat(new SDK.Request.ExportWorksheetAsFormatRequest 
 { 
     name = "EmployeeSalesSummary.xlsx",
     worksheet = "Sales",
     format = "pdf",
-    folder ="NetSDKData" 
-} , "EmployeeSalesSummary_Sales.pdf");   
+    folder = "NetSDKData" 
+}, "EmployeeSalesSummary_Sales.pdf");   
 ```
 
 ## Installera och initiera Aspose.Cells Cloud SDK
 
-Installera Aspose.Cells-Cloud NuGet-paketet i ditt .NET-projekt. Du kan använda NuGet-pakethanterarkonsolen eller NuGet-pakethanteraren i Visual Studio.
-Så här installerar du paketet med hjälp av pakethanterarkonsolen:
+Installera Aspose.Cells-Cloud NuGet-paketet i ditt .NET-projekt. Du kan använda NuGet Package Manager Console eller NuGet Package Manager i Visual Studio.  
+Här är hur du installerar paketet via Package Manager Console:
 
 ```powershell
 
@@ -139,7 +140,7 @@ Install-Package Aspose.Cells-Cloud
 
 ```
 
-Skapar en ny instans av CellsApi-klassen och initierar den med ditt klient-ID och din klienthemlighet. Nedan följer detaljerna i det tidigare nämnda kodavsnittet:
+Skapa en ny instans av klassen CellsApi och initiera den med ditt klient-ID och klienthemlighet. Här är detaljerna för ovanstående kodavsnitt:
 
 ```CSharp
 
@@ -147,20 +148,23 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ```
 
-Se till att byta ut DIN_API_NYCKEL, DIN_APP_SID och DIN_APP_KEY med din faktiska API-nyckel, program-SID och programnyckel.
+Se till att ersätta YOUR_API_KEY, YOUR_APP_SID och YOUR_APP_KEY med dina faktiska API-nyckel, applikations-SID och applikationsnyckel.
 
 ## **Användningsfall för filformatkonvertering**
 
- Aspose Cells Moln API levererar företagsklass**kalkylbladskonvertering** funktioner för kritiska affärsscenarier:
+Aspose.Cells Cloud API erbjuder enterprise-kvalitets **kalkylarkskonverteringsfunktioner** för kritiska affärs scenarier:
 
 1. **Excel → PDF**  
- Generera utskriftsklara rapporter med bevarad formatering
-2. **Kalkylblad → HTML**  
- Bädda in interaktiva tabeller i webbapplikationer
+   Skapa utskriftsklara rapporter med bevarat format
+2. **Kalkylark → HTML**  
+   Bädda in interaktiva tabeller i webbapplikationer
 3. **CSV → Excel (XLSX)**  
- Omvandla rådata till analyserbara arbetsböcker
-4. **Omkodning av anpassat format**  
- Konvertera mellan 20+ format (XLS, XLSB, ODS, FODS, TSV)
-![Konvertering från inmatningsformat till utmatningsformat](image-1.png)
+   Omvandla rådata till analyserbara arbetsböcker
+4. **Anpassad formatomkodning**  
+   Konvertera mellan 20+ format (XLS, XLSB, ODS, FODS, TSV)
 
-## **Slutsats: Effektivisera konverteringar med ett enda samtal på API**
+![Konvertering från indataformat till utdataformat](image-1.png)
+
+## **Sammanfattning: Effektivisera konverteringar med ett enda API-anrop**  
+
+---

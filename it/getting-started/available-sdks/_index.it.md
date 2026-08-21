@@ -1,81 +1,194 @@
-﻿---
-title: Disponibile Aspose.Cells Cloud SDK
-second_title: Documen
-ArticleTitle: "Available Aspose.Cells Cloud SDKs: C#, Java, PHP, Python, Ruby, Node.js, Go, Per"
-LinkTitle: Available SDK
-type: docs
-url: /it/available-sdks/
-description: Aspose.Cells Cloud supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni di oggetti interni e così via
-weight: 30
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, SDK disponibili
 ---
-# **Perché utilizzare Aspose.Cells Cloud SDK**
+title: "SDK di Aspose.Cells Cloud disponibili"
+second_title: "Documento"
+ArticleTitle: "SDK di Aspose.Cells Cloud disponibili: C#, Java, PHP, Python, Ruby, Node.js, Go, Perl"
+LinkTitle: "SDK disponibili"
+type: docs
+url: /available-sdks/
+description: "Esplora gli SDK di Aspose.Cells Cloud per C#, Java, PHP, Python, Ruby, Node.js, Go e Perl. Crea, converti e analizza file Excel nel cloud con API cross‑platform a basso costo."
+weight: 30
+keywords: "SDK di Aspose.Cells Cloud, C#, Java, PHP, Python, Ruby, Node.js, Go, Perl, Excel, API cloud"
+---
 
-## **Compatibilità multipiattaforma**
+# **Perché utilizzare gli SDK di Aspose.Cells Cloud**
 
-Aspose.Cells Cloud SDK fornisce una libreria SDK affidabile e stabile per più linguaggi di sviluppo, garantendo agli sviluppatori un solido supporto multipiattaforma e semplificando l'integrazione e l'utilizzo con Windows, Linux o macOS.
+## **Compatibilità cross‑platform**
 
-## **Elaborazione efficiente Excel e ricco set di funzionalità**
+Gli SDK di Aspose.Cells Cloud offrono una libreria affidabile e stabile per molteplici linguaggi di sviluppo. Forniscono ai programmatori un solido supporto cross‑platform, semplificando l’integrazione su Windows, Linux o macOS.
 
-Aspose.Cells Cloud SDK consente agli sviluppatori di lavorare in modo efficiente con i file Excel nel cloud, incluse le operazioni di lettura, scrittura, modifica e conversione, senza installare alcun software locale Office. L'SDK fornisce una vasta gamma di API e funzioni per supportare operazioni Excel complesse, come il calcolo di formule, la creazione di grafici, la formattazione condizionale, ecc., per soddisfare le diverse esigenze degli sviluppatori.
+## **Elaborazione efficiente dei file Excel e ampia gamma di funzionalità**
+
+Gli SDK di Aspose.Cells Cloud consentono ai programmatori di lavorare in modo efficiente con i file Excel nel cloud, inclusa la lettura, la scrittura, la modifica e la conversione, senza dover installare alcun software Office locale. L'SDK fornisce un’ampia gamma di API e funzionalità per supportare operazioni Excel complesse, come il calcolo di formule, la creazione di grafici, la formattazione condizionale e molto altro, soddisfacendo le esigenze diversificate dei programmatori.
 
 ## **Facile da integrare**
 
-L'SDK fornisce un'interfaccia API concisa e chiara, che consente agli sviluppatori di integrarsi rapidamente nei progetti esistenti, riducendo il ciclo di sviluppo e i costi.
+L'SDK fornisce un'API concisa e chiara che consente ai programmatori di integrarlo rapidamente nei propri progetti esistenti, riducendo i tempi e i costi di sviluppo.
 
-## **Ridurre i costi**
+## **Riduzione dei costi**
 
-Utilizzando Aspose.Cells Cloud SDK puoi ridurre i costi operativi della tua azienda, evitandoti di dover acquistare e gestire costosi software o server on-premise Office.
+L'utilizzo degli SDK di Aspose.Cells Cloud consente di ridurre i costi operativi dell'azienda, evitando la necessità di acquistare e mantenere costosi software Office o server on‑premise.
 
-In sintesi, l'utilizzo di Cloud SDK Aspose.Cells per Go può offrire numerosi vantaggi, tra cui compatibilità multipiattaforma, gestione efficiente dei file Excel, ampio set di funzionalità, protezione della sicurezza e della privacy, elevata scalabilità, facile integrazione, supporto e documentazione della community e costi ridotti. Questi vantaggi rendono Cloud SDK Aspose.Cells la scelta ideale per gli sviluppatori Go che lavorano con file Excel.
+### Panoramica sugli SDK
 
-# **Scenari applicativi**
+<table>
+<thead>
+<tr>
+<th>Linguaggio</th>
+<th>Ultima versione</th>
+<th>Installazione</th>
+<th>Esempio di avvio rapido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C#</td>
+<td>23.12</td>
+<td><code>dotnet add package Aspose.Cells-Cloud</code></td>
+<td>
+<pre><code class="language-csharp">var api = new CellsApi("clientId", "clientSecret");
+var result = api.ConvertSpreadsheet(new ConvertSpreadsheetRequest("sample.xlsx", "pdf"));</code></pre>
+</td>
+</tr>
+<tr>
+<td>Java</td>
+<td>23.12</td>
+<td><code>mvn dependency:copy -Dartifact=aspose:aspose-cells-cloud:23.12</code></td>
+<td>
+<pre><code class="language-java">CellsApi api = new CellsApi("clientId", "clientSecret");
+ConvertSpreadsheetRequest request = new ConvertSpreadsheetRequest();
+request.setSpreadsheet("Book1.xlsx");
+request.setFormat("pdf");
+File result = api.ConvertSpreadsheetRequest(request);</code></pre>
+</td>
+</tr>
+<tr>
+<td>PHP</td>
+<td>23.12</td>
+<td><code>composer require aspose/cells-cloud-sdk</code></td>
+<td>
+<pre><code class="language-php">$instance = new CellsApi(getenv("CellsCloudClientId"), getenv("CellsCloudClientSecret"));
+$convertSpreadsheetRequest = new ConvertSpreadsheetRequest();
+$convertSpreadsheetRequest->setSpreadsheet($EmployeeSalesSummaryXlsx);
+$convertSpreadsheetRequest->setFormat("pdf");
+$instance->convertSpreadsheet($convertSpreadsheetRequest, "export-out1.pdf");</code></pre>
+</td>
+</tr>
+<tr>
+<td>Python</td>
+<td>23.12</td>
+<td><code>pip install aspose-cells-cloud</code></td>
+<td>
+<pre><code class="language-python">instance = CellsApi(os.getenv('CellsCloudClientId'), os.getenv('CellsCloudClientSecret'))
+instance.convert_spreadsheet(ConvertSpreadsheetRequest('EmployeeSalesSummary.xlsx', 'pdf'), local_outpath="EmployeeSalesSummary.pdf")</code></pre>
+</td>
+</tr>
+<tr>
+<td>Ruby</td>
+<td>23.12</td>
+<td><code>gem install aspose_cells_cloud</code></td>
+<td>
+<pre><code class="language-ruby">@instance = AsposeCellsCloud::CellsApi.new(ENV['CellsCloudClientId'], ENV['CellsCloudClientSecret'])
+request = AsposeCellsCloud::ConvertSpreadsheetRequest.new(:Spreadsheet=>'EmployeeSalesSummary.xlsx', :format=>'pdf')
+response = @instance.convert_spreadsheet(request)</code></pre>
+</td>
+</tr>
+<tr>
+<td>Node.js</td>
+<td>23.12</td>
+<td><code>npm install asposecellscloud</code></td>
+<td>
+<pre><code class="language-javascript">const cellsApi = new CellsApi(process.env.CellsCloudClientId, process.env.CellsCloudClientSecret, "v4.0", process.env.CellsCloudApiBaseUrl);
+var request = new model.ConvertSpreadsheetRequest();
+request.spreadsheet = "Book1.xlsx";
+request.format = "pdf";
+return cellsApi.convertSpreadsheet(request).then((result) => {
+    expect(result.response.statusCode).to.equal(200);
+});</code></pre>
+</td>
+</tr>
+<tr>
+<td>Go</td>
+<td>23.12</td>
+<td><code>go get github.com/aspose/cells-cloud-go/v2</code></td>
+<td>
+<pre><code class="language-go">instance := NewCellsApiService(os.Getenv("ProductClientId"), os.Getenv("ProductClientSecret"))
+convertedData, httpResponse, err := instance.ConvertSpreadsheet(&amp;ConvertSpreadsheetRequest{Spreadsheet: employeeSalesSummaryXlsx, Format: "pdf"})</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
 
-## **Automazione dell'elaborazione dei fogli di calcolo**
+**Prerequisiti** – .NET 6+ / Java 8+ / PHP 7.4+ / Python 3.7+ / Ruby 2.6+ / Node 12+ / Go 1.16+ / Perl 5.30+. È inoltre necessario un ID client e un secret client Aspose Cloud validi.
 
-- Utilizzando Aspose.Cells Cloud SDK for Java, gli sviluppatori possono scrivere script di automazione per l'elaborazione batch di file di fogli di calcolo come Excel.
-- Le attività automatizzate possono includere l'importazione/esportazione di dati, la formattazione, il calcolo di formule, la generazione di grafici e altro ancora.
+**Esempio di richiesta e risposta API** – conversione di un file Excel in PDF:
+
+```json
+{
+  "Input": "EmployeeSalesSummary.xlsx",
+  "OutputFormat": "pdf"
+}
+```
+
+Gli SDK sono open‑source e ospitati su GitHub; è possibile effettuare il fork o contribuire al progetto:
+
+- C#: https://github.com/aspose-cells-cloud/aspose-cells-cloud-csharp  
+- Java: https://github.com/aspose-cells-cloud/aspose-cells-cloud-java  
+- PHP: https://github.com/aspose-cells-cloud/aspose-cells-cloud-php  
+- Python: https://github.com/aspose-cells-cloud/aspose-cells-cloud-python  
+- Ruby: https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby  
+- Node.js: https://github.com/aspose-cells-cloud/aspose-cells-cloud-node  
+- Go: https://github.com/aspose-cells-cloud/aspose-cells-cloud-go  
+- Perl: https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl  
+
+In sintesi, l’utilizzo degli SDK di Aspose.Cells Cloud offre numerosi vantaggi, tra cui compatibilità cross‑platform, gestione efficiente dei file Excel, ampia gamma di funzionalità, protezione della sicurezza e della privacy, elevata scalabilità, facilità di integrazione, supporto e documentazione della community e riduzione dei costi. Questi vantaggi rendono gli SDK la scelta ideale per programmatori che lavorano con file Excel.
+
+# **Casi d’uso**
+
+## **Automazione dell’elaborazione dei fogli elettronici**
+
+- Utilizzando gli SDK di Aspose.Cells Cloud, i programmatori possono scrivere script di automazione per l’elaborazione in batch di file foglio elettronico come Excel.  
+- Le attività automatizzate possono includere importazione/esportazione di dati, formattazione, calcolo di formule, generazione di grafici e altro ancora.
 
 ## **Elaborazione e analisi dei dati nel cloud**
 
-- Grazie al servizio Aspose.Cells nel cloud, è possibile elaborare grandi quantità di dati di fogli di calcolo senza impegnare risorse di elaborazione locali.
-- È adatto a scenari che richiedono analisi di dati complesse, data mining o generazione di report.
+- Con il servizio Aspose.Cells nel cloud, è possibile elaborare grandi quantità di dati in fogli elettronici senza occupare risorse di elaborazione locali.  
+- È adatto a scenari che richiedono analisi dati complesse, data mining o generazione di report.
 
-## **Compatibilità multipiattaforma**
+## **Compatibilità cross‑platform**
 
-- Grazie alla natura multipiattaforma di Go, Aspose.Cells Cloud SDK for Java semplifica l'implementazione dell'elaborazione dei fogli di calcolo su diversi sistemi operativi e architetture.
-- È particolarmente adatto per scenari che necessitano di supportare più ambienti operativi, come il backend delle applicazioni web, le applicazioni desktop e il backend delle applicazioni mobili.
+- Grazie alla natura cross‑platform dell'SDK, Aspose.Cells Cloud SDK rende semplice implementare l’elaborazione di fogli elettronici su diversi sistemi operativi e architetture.  
+- È particolarmente adatto a scenari che richiedono il supporto di ambienti multipli, come backend di applicazioni web, applicazioni desktop e backend di applicazioni mobili.
 
-## **API Integrazioni ed estensioni**
+## **Integrazioni ed estensioni API**
 
-- Aspose.Cells Cloud SDK for Java può essere integrato nelle API esistenti, fornendo funzionalità di elaborazione dei fogli di calcolo come parte del servizio.
-- È adatto per la creazione di applicazioni di livello aziendale, piattaforme SaaS o per la fornitura di servizi API.
+- Gli SDK di Aspose.Cells Cloud possono essere integrati in API esistenti, fornendo funzionalità di elaborazione di fogli elettronici come parte del servizio.  
+- È adatto per la creazione di applicazioni enterprise, piattaforme SaaS o per fornire servizi API.
 
 ## **Collaborazione e condivisione di documenti**
 
-- Con Aspose.Cells Cloud SDK for Java, puoi realizzare la funzione di modifica collaborativa online dei fogli di calcolo da parte di più persone.
-- Gli utenti possono modificare, commentare e condividere file di fogli di calcolo in tempo reale nel cloud per migliorare la collaborazione in team.
+- Con gli SDK di Aspose.Cells Cloud è possibile realizzare la modifica collaborativa online di fogli elettronici da parte di più utenti.  
+- Gli utenti possono modificare, commentare e condividere file di fogli elettronici in tempo reale nel cloud per migliorare la collaborazione di squadra.
 
 ## **Migrazione e trasformazione dei dati**
 
-- Quando è necessario migrare i dati da altri formati o sistemi, Cloud SDK Aspose.Cells può fungere da ponte per la trasformazione dei dati.
-- I dati in altri formati possono essere convertiti nel formato Excel per successive analisi ed elaborazioni.
+- Quando è necessario migrare dati da altri formati o sistemi, gli SDK di Aspose.Cells Cloud possono fungere da ponte per la trasformazione dei dati.  
+- I dati in altri formati possono essere convertiti nel formato Excel per l’analisi e l’elaborazione successive.
 
-## **Generazione automatica di report:**
+## **Generazione automatica di report**
 
-- Eseguendo regolarmente gli script, è possibile generare automaticamente report periodici o dashboard utilizzando Aspose.Cells Cloud SDK for Java.
-- Questa funzionalità è utile per le organizzazioni che hanno bisogno di monitorare regolarmente parametri aziendali, dati di vendita o dati finanziari.
+- Eseguendo script periodicamente, è possibile generare automaticamente report o dashboard periodici tramite gli SDK di Aspose.Cells Cloud.  
+- Utile per organizzazioni che devono monitorare metriche aziendali, dati di vendita o dati finanziari su base regolare.
 
-## **Integrazione nei processi CI/CD**
+## **Integrazione in processi CI/CD**
 
-- Integra Aspose.Cells Cloud SDK for Java nel tuo processo di integrazione continua/distribuzione continua (CI/CD) per automatizzare il test della correttezza dei dati del foglio di calcolo.
-- Ciò aiuta a garantire che le modifiche al codice non compromettano l'integrità o la formattazione dei dati del foglio di calcolo.
+- Integra gli SDK di Aspose.Cells Cloud nei tuoi processi di integrazione e distribuzione continua (CI/CD) per automatizzare il test della correttezza dei dati nei fogli elettronici.  
+- Ciò aiuta a garantire che le modifiche al codice non compromettano l’integrità o la formattazione dei dati nei fogli elettronici.
 
-## **Applicazione di foglio di calcolo personalizzata**
+## **Applicazioni personalizzate per fogli elettronici**
 
-- Con Aspose.Cells Cloud SDK for Java, puoi creare applicazioni di fogli di calcolo personalizzate per soddisfare specifiche esigenze aziendali.
-- Ad esempio, lo sviluppo di applicazioni personalizzate per l'elaborazione di moduli, strumenti di gestione dei dati finanziari, ecc.
+- Con gli SDK di Aspose.Cells Cloud è possibile creare applicazioni per fogli elettronici personalizzate per soddisfare esigenze aziendali specifiche.  
+- Ad esempio, sviluppare applicazioni personalizzate per l’elaborazione di moduli, strumenti di gestione di dati finanziari e così via.
 
-# **Vantaggi dell'SDK**
+# **Vantaggi degli SDK**
 
-Gli SDK da noi supportati sono testati al 100% e pronti all'uso. Questi SDK sono open source e hanno una licenza MIT. Puoi utilizzarli e persino personalizzarli gratuitamente.
+I nostri SDK sono testati al 100 % e pronti all’uso “out of the box”. Sono open‑source e rilasciati sotto licenza MIT, pertanto puoi utilizzarli e personalizzarli gratuitamente.

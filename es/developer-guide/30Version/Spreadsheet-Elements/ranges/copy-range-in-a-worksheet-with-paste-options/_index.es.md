@@ -1,75 +1,127 @@
-﻿---
-title: Copiar rango en una hoja de cálculo con la opción Pegar
-second_title: Documen
-linktitle: Policía
-type: docs
-url: /es/ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
-keywords: Copy a range in an Excel worksheet with paste options
-description: Aspose.Cells Cloud REST API permite copiar un rango en una hoja de cálculo Excel con opciones de pegado. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Copiar rango en una hoja de cálculo con opciones de pegado
 ---
-Este REST API indica copiar el rango de la hoja de cálculo en una hoja de cálculo Excel.
+title: "Copiar un rango en una hoja de cálculo con opciones de pegado"
+second_title: "Document"
+linktype: "Copiar"
+type: docs
+url: /ranges/copy/
+aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+keywords: "Aspose.Cells Cloud, API REST, Excel, copiar rango, hoja de cálculo, opciones de pegado"
+description: "Use la API REST de Aspose.Cells Cloud para copiar un rango dentro de una hoja de cálculo de Excel con soporte completo para opciones de pegado. Incluye ejemplos de SDK para múltiples lenguajes de programación."
+weight: 20
+ArticleTitle: "Copiar un rango en una hoja de cálculo con opciones de pegado – API de Aspose.Cells Cloud"
+---
 
-## RSET API
+Esta API REST copia un rango en una hoja de cálculo de un libro de Excel. Para operaciones relacionadas, consulte la documentación sobre **Obtener rango** y **Actualizar rango**.
+
+**Requisitos previos:** Para usar este endpoint, debe tener un token válido de OAuth 2.0 / JWT y asegurarse de que su versión de API coincida con la URL de la solicitud.
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 ```
 
-Los parámetros de la solicitud son:
+### **Parámetros de la solicitud**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| nombre del libro de trabajo|
-| nombreHoja| cadena| camino| nombre de la hoja de trabajo|
-| rangoOperar|| cuerpo| copiar datos, copiar estilo, copiar a, copiar valor|
-| carpeta| cadena| consulta| Carpeta de libro de trabajo.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción                                                                          |
+| --------------------- | ------ | --------- | ------------------------------------------------------------------------------------ |
+| name                  | string | path      | El nombre del libro de cálculo.                                                      |
+| sheetName             | string | path      | El nombre de la hoja de cálculo.                                                     |
+| rangeOperate          | string | body      | La operación a realizar: `copydata`, `copystyle`, `copyto` o `copyvalue`.           |
+| folder                | string | query     | La carpeta que contiene el libro de cálculo.                                         |
+| storageName           | string | query     | El nombre del servicio de almacenamiento.                                            |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangesCopy) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+**Notas:** El campo `rangeOperate` determina qué se copia. Use `copydata` para copiar únicamente los valores de las celdas, `copystyle` para el formato, `copyto` para ambos (datos y formato), y `copyvalue` para copiar valores sin fórmulas. La API admite rangos de hasta 1 millón de celdas; rangos más grandes podrían provocar un tiempo de espera.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangesCopy) define una interfaz de programación pública accesible y le permite realizar interacciones REST directamente desde un navegador web.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube mediante cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/ranges" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"Operate\": \"string\", \"Source\": { \"ColumnCount\": 0, \"ColumnWidth\": 0, \"FirstColumn\": 0, \"FirstRow\": 0, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 0, \"RowHeight\": 0, \"Worksheet\": \"string\" }, \"Target\": { \"ColumnCount\": 0, \"ColumnWidth\": 0, \"FirstColumn\": 0, \"FirstRow\": 0, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 0, \"RowHeight\": 0, \"Worksheet\": \"string\" }, \"PasteOptions\": { \"OnlyVisibleCells\": true, \"PasteType\": \"string\", \"SkipBlanks\": true, \"Transpose\": true }}"
-
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "Operate": "string",
+        "Source": {
+          "ColumnCount": 0,
+          "ColumnWidth": 0,
+          "FirstColumn": 0,
+          "FirstRow": 0,
+          "Name": "string",
+          "RefersTo": "string",
+          "RowCount": 0,
+          "RowHeight": 0,
+          "Worksheet": "string"
+        },
+        "Target": {
+          "ColumnCount": 0,
+          "ColumnWidth": 0,
+          "FirstColumn": 0,
+          "FirstRow": 0,
+          "Name": "string",
+          "RefersTo": "string",
+          "RowCount": 0,
+          "RowHeight": 0,
+          "Worksheet": "string"
+        },
+        "PasteOptions": {
+          "OnlyVisibleCells": true,
+          "PasteType": "string",
+          "SkipBlanks": true,
+          "Transpose": true
+        }
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+La respuesta correcta devuelve un código de estado `200 OK`. En caso de error, la API puede devolver cargas útiles como:
+
+```json
+{
+  "Code": 400,
+  "Message": "Bad Request – parámetros no válidos."
+}
+```
+
+o
+
+```json
+{
+  "Code": 401,
+  "Message": "Unauthorized – token de autenticación faltante o no válido."
+}
+```
+
+Estos objetos de error incluyen un código de estado HTTP y un mensaje descriptivo para ayudar a diagnosticar problemas.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Puede descargar un libro de cálculo de ejemplo para probar la operación de copia [aquí](https://example.com/sample.xlsx).
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor manera de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel para que usted pueda centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

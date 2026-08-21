@@ -1,76 +1,127 @@
-﻿---
-title: إضافة عمود فارغ إلى ورقة عمل Excel
-second_title: Documen
-linktitle: إعلان
-type: docs
-url: /ar/columns/add/
-aliases: [/add-an-empty-column-in-an-excel-worksheet/,/add-an-empty-column-in-a-worksheet/]
-keywords: Add column on an Excel workshee
-description: يدعم Cloud REST إضافة عمود في ورقة عمل Aspose.Cells. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة عمود فارغ في ورقة عمل Excel
 ---
-يشير هذا REST API إلى إدراج أعمدة ورقة العمل.
+title: "إضافة عمود فارغ إلى ورقة عمل إكسل - واجهة برمجة تطبيقات Aspose.Cells Cloud"
+second_title: "مستند"
+linktitle: "إضافة"
+type: docs
+url: /columns/add/
+aliases:
+  - /add-an-empty-column-in-an-excel-worksheet/
+  - /add-an-empty-column-in-a-worksheet/
+keywords: "إضافة، عمود، إكسل، API، Aspose.Cells، سحابة، REST، إدراج"
+description: "تعلم كيفية إدراج عمود جديد في ملف إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمن بناء الجملة الخاص بالطلب، مثال باستخدام cURL، وأمثلة لشيفرات SDK."
+weight: 20
+ArticleTitle: "إضافة عمود فارغ إلى ورقة عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud"
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية REST بإدراج عمود واحد أو أكثر داخل ورقة عمل.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}?totalColumns=1
- 
+**المتطلبات الأساسية**  
+قبل استدعاء هذه النقطة النهائية، تأكد من إتمام الخطوات التالية:
+
+- احصل على رمز وصول OAuth 2.0 صالح وشَمْلَه في الرأس `Authorization`.  
+- اخزن ملف العمل المستهدف في التخزين المحدّد (الافتراضي = "Default") أو حدّد معامَلات `folder` و`storageName` المناسبة.  
+- تحقق من أن اسم ورقة العمل المُعطى في `sheetName` موجود في ملف العمل.
+
+## واجهة PutInsertWorksheetColumns
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}?totalColumns=1
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| فهرس العمود| عدد صحيح| طريق| فهرس العمود.|
-| الأعمدة| عدد صحيح| استفسار| الأعمدة.|
-| تحديث المرجع| منطقي| استفسار| حقيقي|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتحتاج إلى <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة باستخدام رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معامَلات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل         | النوع   | الموقع | الوصف                                                                |
+| ------------------- | ------- | ------ | -------------------------------------------------------------------- |
+| **name**            | نصّ    | المسار | اسم ملف ملف العمل.                                                  |
+| **sheetName**       | نصّ    | المسار | اسم ورقة العمل.                                                     |
+| **columnIndex**     | عدد صحيح | المسار | المؤشّر بصفر (0) للعمود الذي يبدأ منه الإدراج.                     |
+| **totalColumns**    | عدد صحيح | الاستعلام | عدد الأعمدة المراد إدراجها.                                         |
+| **updateReference** | منطقي  | الاستعلام | عند القيمة **true**، تُحدّث المرجعيات الخلوية لتعكس الإدراج.      |
+| **folder**          | نصّ    | الاستعلام | مسار المجلّد الذي يحتوي على ملف العمل.                             |
+| **storageName**     | نصّ    | الاستعلام | اسم خدمة التخزين.                                                   |
+
+**ملاحظات**
+
+- يجب أن يكون `columnIndex` بين 0 وعدد الأعمدة الحالي في ورقة العمل. وعند الإدراج خارج النطاق الحالي، يتوسّع الملف تلقائيًا.  
+- يؤدي إدراج أعمدة متعددة (`totalColumns` > 1) إلى تحريك الأعمدة الموجودة نحو اليمين.  
+- يفترض الإعداد الافتراضي لعلامَة `updateReference` القيمة `false`؛ لذا، اضبطها على `true` لتحديث الصيغ والمجالات المسماة.
+
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns) واجهة برمجة تطبيقات متاحة عمومًا وتتيح لك إجراء تفاعلات REST مباشرة من متصفّح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL لاستدعاء خدمات Aspose.Cells. يُظهر المثال التالي طلبًا كاملاً يتضمّن المصادقة ومعاملات المسار الصحيحة.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns?startcolumn=1&totalColumns=1&updateReference=true" -H "accept: application/json"
-
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/1?totalColumns=1&updateReference=true" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+**كود الاستجابة**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| الكود | الوصف                                       |
+|------|---------------------------------------------|
+| 200  | تمّ إدراج العمود/الأعمدة بنجاح.             |
+| 400  | طلب خاطئ – معامَلات مفقودة أو غير صالحة.   |
+| 401  | غير مصرّح به – رمز وصول غير صالح أو مفقود.  |
+| 404  | ملف العمل أو ورقة العمل غير موجود.          |
+| 500  | خطأ داخلي في الخادم.                        |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+**أمثلة على استجابات الأخطاء**
+
+```json
+// 400 Bad Request – معامَلات مفقودة أو غير صالحة
+{
+  "Code": 400,
+  "Message": "معامل غير صالح: يجب أن يكون totalColumns عددًا صحيحًا موجبًا."
+}
+
+// 401 Unauthorized – رمز وصول غير صالح أو مفقود
+{
+  "Code": 401,
+  "Message": "فشلت المصادقة. رمز الوصول مفقود أو غير صالح."
+}
+
+// 404 Not Found – ملف العمل أو ورقة العمل غير موجود
+{
+  "Code": 404,
+  "Message": "لم يتم العثور على ملف العمل 'test.xlsx'."
+}
+
+// 500 Internal Server Error
+{
+  "Code": 500,
+  "Message": "حدث خطأ غير متوقع في الخادم."
+}
+```
+
+## عائلة SDK للسحابة
+
+استخدام SDK هو أسرع طريقة لتطوير البرمجيات. فتتولّى SDK تفاصيل المستوى المنخفض، ما يتيح لك التركيز على منطق مشروعك. راجع <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">مستودع GitHub</a> للاطّلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الشيفرة التالية كيفية استدعاء خدمات Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

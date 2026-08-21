@@ -1,78 +1,79 @@
-﻿---
-title: Quoi de neuf dans Aspose.Cells Cloud en 2024
-second_title: Documen
-linktitle: Quoi de neuf dans 202
+---
+title: Nouveautés d'Aspose.Cells Cloud en 2024
+second_title: "Document"
+linktitle: "Nouveautés de 2024"
 type: docs
 weight: 20
-url: /fr/new-features/2024/
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: Cette page décrit les nouvelles fonctionnalités les plus intéressantes du Cloud Aspose.Cells introduites dans les versions récentes
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Nouveautés de Aspose.Cells Cloud
+url: /new-features/2024/
+keywords: "Aspose.Cells, Cloud, 2024, nouvelles fonctionnalités, API de suppression des doublons, API d’extraction de texte, transformation de données, feuille de calcul, Excel, CSV, PDF, API REST"
+description: "Aperçu des nouvelles fonctionnalités et améliorations apportées à Aspose.Cells Cloud en 2024, notamment l’API de suppression des doublons, l’API d’extraction de texte et les améliorations liées à la transformation de données."
+ArticleTitle: "Nouvelles fonctionnalités et améliorations d'Aspose.Cells Cloud en 2024"
 ---
-Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez cette page pour trouver rapidement les dernières modifications.
+
+Bienvenue dans la documentation des nouveautés d’Aspose.Cells Cloud. Utilisez cette page pour retrouver rapidement les dernières modifications. Ce journal des modifications récapitule les principales améliorations, corrections de bugs et nouvelles API introduites dans chaque version d’Aspose.Cells Cloud au cours de l’année 2024.
 
 ## Améliorations de la version 24.12
 
-- Ajoutez la nouvelle API de suppression des doublons.
-- Ajoutez le nouveau texte d'extrait API.
-- Le filtre pivot n'a pas pu être créé avec succès.
+- Ajout de la nouvelle **API de suppression des doublons**.  
+- Ajout de la nouvelle **API d’extraction de texte**.  
+- Correction d’un bug pouvant entraîner l’échec de la création d’un filtre croisé dynamique.
 
 ## Améliorations de la version 24.11
 
-- Ajoutez la fonctionnalité de conversion de texte sur TextProcessingController.
+- Ajout d’une fonctionnalité de conversion de texte à `TextProcessingController`.
 
 ## Améliorations de la version 24.10
 
-- Ajoutez la nouvelle fonctionnalité concernant la suppression de caractères sur TextProcessingController.
+- Ajout d’une fonctionnalité de suppression de caractères à `TextProcessingController`.
 
 ## Améliorations de la version 24.9
 
-- Ajoutez une fonction de casse de mot pour TextProcessingController.
-- Prise en charge de l'exportation de la feuille de calcul vers HTML avec l'adresse ou l'ID de la cellule.
+- Ajout d’une fonction de gestion de la casse des mots à `TextProcessingController`.  
+- Prise en charge de l’exportation d’une feuille de calcul au format HTML avec les adresses ou les ID des cellules.
 
 ## Améliorations de la version 24.8
 
-- Ajoutez la fonction de découpage de texte sur les services cloud Cells.
+- Ajout d’une fonctionnalité de suppression des espaces superflus aux services Aspose.Cells Cloud.
 
 ## Améliorations de la version 24.7
 
-- Ajoutez une nouvelle fonctionnalité concernant l'ajout de contenu textuel.
-- Ajoutez un jeton d'accès par identifiant client et secret client.
+- Introduction de l’**API AddTextContent** permettant d’insérer du texte arbitraire dans une feuille de calcul.  
+- Ajout de la possibilité d’obtenir un jeton d’accès à l’aide de l’ID client et du secret client.
 
 ## Améliorations de la version 24.6.1
 
-- corriger les paramètres de requête étendus pour les API.
+- Correction des paramètres de requête étendus pour les API.
 
 ## Améliorations de la version 24.6.0
 
-- Optimiser les étapes de conversion de données appliquées.
-- Optimiser la fonction de chargement des données de transformation des données.
-- Augmenter la prise en charge de net425 et netstandard2.0.
+- Optimisation des étapes de conversion de données.  
+- Optimisation de la fonction de chargement des données pour la transformation de données.  
+- Prise en charge accrue de .NET Framework 4.2.5 et .NET Standard 2.0.
 
 ## Améliorations de la version 24.5.1
 
-- Ajoutez une méthode de requêtes de fusion pour le chargement des données de transformation de données.
-- Optimiser le modèle de données du graphique.
-- Mettre à jour l'obtention de l'adresse du jeton d'accès.
+- Ajout d’une méthode `merge-queries` pour le chargement des données dans la transformation de données.  
+- Optimisation du modèle de données des graphiques.  
+- Mise à jour du point de terminaison du jeton d’accès.
 
 ## Améliorations de la version 24.4
 
-- Prise en charge de la fonction de transformation des données pour les services cloud Aspose.Cells.
+- Prise en charge de la fonction de transformation de données pour les services Aspose.Cells Cloud.
 
 ## Améliorations de la version 24.3
 
-- Prise en charge de la déduplication des données.
-- Prise en charge du remplissage des données.
-- Prise en charge de la suppression des lignes incomplètes.
+- Prise en charge de la déduplication des données (améliorée).  
+- Prise en charge du remplissage des données.  
+- Prise en charge de la suppression des lignes incomplètes.  
 - Prise en charge du nettoyage des données.
 
 ## Améliorations de la version 24.2.1
 
-- Prise en charge de la déduplication des données.
+- Prise en charge initiale de la déduplication des données (étendue dans les versions ultérieures).
 
 ## Améliorations de la version 24.1.1
 
-- Correction des fautes d'orthographe pour plusieurs fonctions.
-- Ajoutez la méthode PostFitTallToPages pour le contrôleur de configuration de page.
-- Ajoutez la méthode PostFitWideToPages pour le contrôleur de configuration de page.
-- Optimiser les options de sauvegarde concernant la pagination.
+- Correction de fautes d’orthographe dans plusieurs fonctions.  
+- Ajout de la méthode `PostFitTallToPages` à `PageSetupController`.  
+- Ajout de la méthode `PostFitWideToPages` à `PageSetupController`.  
+- Optimisation des options d’enregistrement paginé.

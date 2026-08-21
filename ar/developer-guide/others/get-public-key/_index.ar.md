@@ -1,70 +1,83 @@
-﻿---
-title: Aspose.Cells Cloud WEb API - احصل على المفتاح العام
-second_title: Documen
-ArticleTitle: Get Public Ke
-linktitle: احصل على Ke العامة
-type: docs
-url: /ar/get-public-key/
-keywords: asymmetric encryption, public key retrieval, REST API, Excel API, security, data encryption, API integratio
-description: استرداد مفتاح عام غير متماثل لتشفير البيانات بشكل آمن
-weight: 100
-kwords: التشفير غير المتماثل، المفتاح العام، REST API، Excel API، الأمان، تشفير البيانات، تكامل API، JSON، توثيق API
 ---
-يسترجع المفتاح العام من خوارزمية التشفير غير المتماثلة.
+---
+title: "واجهة برمجة تطبيقات Aspose.Cells Cloud – الحصول على المفتاح العام (الإصدار 4.0) | وثائق REST"
+second_title: "مستند"
+ArticleTitle: "الحصول على المفتاح العام"
+linktype: "الحصول على المفتاح العام"
+type: docs
+url: /get-public-key/
+keywords: "Aspose.Cells، المفتاح العام، RSA، واجهة برمجة التطبيقات، السحابة"
+description: "استرجاع المفتاح العام RSA المستخدم لتشفير البيانات مع Aspose.Cells Cloud. يتضمن عنوان URL للنقطة الطرفية، المعاملات، مثالًا على الطلب والاستجابة، أكواد الحالة، وأمثلة على استخدام SDK."
+weight: 100
+---
 
-## **احصل على المفتاح العام API**
+تسترجع هذه الواجهة المفتاح العام من خوارزمية التشفير غير المتماثل.
+
+**ملخص موجز:** استخدم واجهة برمجة تطبيقات Aspose.Cells للحصول على المفتاح العام للحصول على المفتاح العام RSA (2048-بت) المطلوب لتشفير البيانات عند العمل مع ملفات إكسل في السحابة. يُعيد عنوان URL المفتاح بصيغة JSON، ويُحمي باستخدام OAuth 2.0.
+
+## **واجهة برمجة تطبيقات الحصول على المفتاح العام**
+
+**المتطلبات المسبقة:**  
+احصل على رمز وصول صالح لـ OAuth 2.0 يشمل النطاق `Cells.Read` قبل استدعاء هذه النقطة الطرفية.
+
+### **واجهة برمجة التطبيقات على الويب**
 
 ```
-GET http://api.aspose.cloud/v4.0/cells/publickey
+GET https://api.aspose.cloud/v4.0/cells/publickey
 ```
 
-### **معلمات الطلب:**
+**مثال على الطلب (cURL)**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-|||||
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/publickey" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
 
-### **إجابة**
+### **الأمان والمصادقة**
+
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+### **معاملات الطلب:**
+
+| اسم المعامل | النوع | الموقع | الوصف |
+|-------------|--------|--------|--------|
+| Authorization | نص | الرأس | رمزBearer لمصادقة OAuth2 (مطلوب). |
+| Accept | نص | الرأس | تنسيق الاستجابة المرغوب، مثل `application/json` (اختياري، والافتراضي هو JSON). |
+
+### **الاستجابة**
 
 ```json
 {
-  "Name": "CellsCloudPublicKeyResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "CellsCloudPublicKey",
-      "DataType": {
-        "Identifier": "Class",
-        "Reference": "CellsCloudPublicKey",
-      }
-    },
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
-    }
-  ]
+  "Code": 200,
+  "Status": "OK",
+  "CellsCloudPublicKey": {
+    "PublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr...",
+    "Algorithm": "RSA",
+    "KeySize": 2048
+  }
 }
 ```
 
-## كيفية استخدام الحصول على المفتاح العام API مع مجموعات تطوير البرامج (SDKs)
+**أكواد حالة HTTP**
 
-### مواصفات OpenAPI
+| الكود | المعنى | الوصف |
+|-------|--------|--------|
+| 200 | OK | تم تطبيق المرشح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | طلب غير صالح | معاملات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم). |
+| 401 | غير مصادق عليه | رمز JWT غير صالح أو مفقود. |
+| 413 | حجم الحمولة كبير جدًا | تجاوز حجم الملف المرفوع الحد المسموح. |
+| 500 | خطأ داخلي في الخادم | خطأ غير متوقع في الخادم. |
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/KeyController/GetPublicKey) يعرف واجهة برمجة يمكن الوصول إليها بشكل عام، مما يتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب الخاص بك.
+## كيفية استخدام واجهة برمجة تطبيقات الحصول على المفتاح العام باستخدام حزم تطوير البرامج (SDKs)
 
-### استخدم Aspose.Cells Cloud SDKs
+### **مواصفات OpenAPI**
 
-يُعد استخدام حزمة تطوير البرامج (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل الأساسية، مما يسمح لك بتطبيق الحصول على المفتاح العام للخلايا بسهولة وبأقل قدر من التعليمات البرمجية.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+تُعرّف [مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/KeyController/GetPublicKey) واجهة برمجة تطبيقات متاحة علنًا، مما يمكّنك من إجراء تفاعلات REST مباشرة من متصفح الويب الخاص بك.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية التفاعل مع خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج المختلفة:
+### **استخدام حزم تطوير برامج Aspose.Cells Cloud**
+
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. تُدار التفاصيل الأساسية بواسطة SDK، مما يسمح لك بتنفيذ الحصول على المفتاح العام للخلايا برمز موجز جدًا.  
+يرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم تطوير برامج Aspose.Cells Cloud.
+
+فيما يلي أمثلة ملموسة لأكثر اللغات استخدامًا:

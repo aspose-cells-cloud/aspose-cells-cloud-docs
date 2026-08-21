@@ -1,100 +1,104 @@
-﻿---
-title: Aspose.Cells Cloud Web API — экспорт диаграммы электронной таблицы в виде файла формата
-second_title: Documen
-ArticleTitle: Export a Spreadsheet Chart as a Format fil
-linktitle: Экспортировать диаграмму как форму
-type: docs
-url: /ru/export-chart-as-format/
-keywords: Export Chart, Aspose.Cells Cloud Web API, Spreadsheet Conversion, PDF Export, Image Export, REST, Excel, CSV, JSO
-description: Эффективно преобразует диаграммы из электронных таблиц, хранящихся в облаке, в указанные форматы, например PDF, или изображения напрямую, без загрузки.
-weight: 100
-kwords: Экспорт диаграммы, REST, преобразование в электронную таблицу, PDF, CSV, JSON, Markdown, Excel, формат изображения
 ---
-Экспортируйте облачную таблицу/диаграмму Excel в файл другого формата с помощью Aspose.Cells Cloud Web API.
+title: "Экспорт диаграммы Excel — Aspose.Cells Cloud API"
+second_title: "Документ"
+description: "Преобразуйте диаграмму из рабочей книги Excel, хранимой в облаке, в форматы PDF, PNG, SVG и другие с помощью одного REST-вызова."
+ArticleTitle: "Как преобразовать локальный лист электронной таблицы в PDF-файл: пошаговое руководство"
+linktitle: "Преобразование листа в PDF"
+type: docs
+url: /export-chart-as-format/
+keywords: "Aspose.Cells Cloud, экспорт диаграммы, API, PDF, PNG, SVG, Excel, REST, облачное преобразование"
+weight: 100
+---
 
-## **Экспортировать диаграмму в формате API**
+Экспортируйте диаграмму, расположенную в рабочей книге, хранимой в Aspose Cloud Storage, в другой файловый формат (PDF, PNG, SVG и т.д.), не скачивая исходный файл.
+
+## API ExportChartAsFormat
 
 ```http
-GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
+GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
 ```
 
-### **Параметры запроса:**
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody| Описание|
-|:- |:- |:- |:- |
-| имя| Нить| Путь| (Обязательно) Имя файла рабочей книги, который требуется извлечь.|
-| рабочий лист| Нить| Путь| Имя рабочего листа|
-| chartIndex| Целое число| Путь| Индекс диаграммы|
-| формат| Нить| Запрос| (Обязательно) Желаемый выходной формат (например, «png», «pdf», «svg»).|
-| папка| Нить| Запрос| (Необязательно) Путь к папке, где хранится рабочая книга; по умолчанию — null.|
-| имя_хранилища| Нить| Запрос|(Необязательно) Имя хранилища, если используется пользовательское облачное хранилище; если не указано, используйте хранилище по умолчанию.|
-| outPath| Нить| Запрос| (Необязательно) Путь к папке, где хранится рабочая книга; по умолчанию — null.|
-|outStorageName| Нить| Запрос| Имя хранилища выходного файла.|
-| шрифтыРасположение| Нить| Запрос| Используйте пользовательские шрифты.|
-| область| Нить| Запрос| Настройка региона электронной таблицы.|
-| пароль| Нить| Запрос| Пароль для открытия файла электронной таблицы.|
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
+
+### 📦 Параметры запроса
+
+| Имя                | Тип     | Местоположение | Обязательный | Описание                                                       |
+| ------------------ | ------- | -------------- | ------------ | -------------------------------------------------------------- |
+| **name**           | string  | Path           | Да           | Имя файла рабочей книги.                                       |
+| **worksheet**      | string  | Path           | Да           | Имя листа, содержащего диаграмму.                             |
+| **chartIndex**     | integer | Path           | Да           | Индекс экспортируемой диаграммы (начиная с нуля).             |
+| **format**         | string  | Query          | Да           | Желаемый выходной формат (например, `png`, `pdf`, `svg`).     |
+| **folder**         | string  | Query          | Нет          | Путь к папке, где хранится рабочая книга (по умолчанию: корень). |
+| **storageName**    | string  | Query          | Нет          | Имя пользовательского хранилища; опустите, чтобы использовать хранилище по умолчанию. |
+| **outPath**        | string  | Query          | Нет          | Путь к папке, куда будет сохранён преобразованный файл.       |
+| **outStorageName** | string  | Query          | Нет          | Имя хранилища для выходного файла.                            |
+| **fontsLocation**  | string  | Query          | Нет          | Путь к папке, содержащей пользовательские шрифты.             |
+| **region**         | string  | Query          | Нет          | Языковой стандарт (например, `en-US`, `fr-FR`).                |
+| **password**       | string  | Query          | Нет          | Пароль для открытия защищённой рабочей книги.                 |
 
 ### **Ответ**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream",
+      "Name": "file"
     }
+  }
 ]
 ```
 
-### Коды ошибок
+**Коды HTTP-статуса**
 
-- **400 Неверный запрос**: Неверный URI Apose.Cells Cloud API.
-- **401 Неавторизованный**: Недействительный токен доступа. Или недействительный идентификатор клиента и секретный ключ.
-- **404 Не найдено**: Файл электронной таблицы недоступен.
-- **500 Ошибка сервера**: В электронной таблице обнаружена аномалия при получении расчетных данных.
+| Код | Значение                | Описание                                                           |
+| --- | ----------------------- | ------------------------------------------------------------------ |
+| 200 | OK                      | Фильтр применён успешно; в ответе содержатся данные операции.     |
+| 400 | Bad Request             | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized            | Недействительный или отсутствующий JWT-токен.                    |
+| 413 | Payload Too Large       | Загруженный файл превышает допустимый размер.                     |
+| 500 | Internal Server Error   | Непредвиденная ошибка сервера.                                    |
 
-## Почему следует использовать экспорт электронной таблицы в формате API?
+## Как использовать API экспорта диаграммы в формат с помощью SDK?
 
-- Вы можете конвертировать облачные файлы в различные форматы в любое время и в любом месте.
-- Разработку можно быстро завершить с помощью существующего SDK.
+### Спецификация API экспорта диаграммы в формат
 
-## Как использовать экспорт электронной таблицы в формате API с SDK?
+[Спецификация API экспорта диаграммы в формат](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportChartAsFormat) предоставляет публично доступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-### Экспортировать диаграмму в формате API Спецификация
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как выполнить вызов облачного API с помощью cURL.
 
- The[Экспортировать диаграмму в формате API Спецификация](https://reference.aspose.cloud/cells/#/ConversionController/ExportChartAsFormat) определяет общедоступный программный интерфейс, позволяющий осуществлять REST-взаимодействие непосредственно из веб-браузера.
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
-### Используйте облачные SDK Aspose.Cells
+{{< tab tabNum="11" >}}
 
-Использование SDK — самый быстрый способ разработки, поскольку он абстрагируется от низкоуровневых деталей и позволяет экспортировать данные диаграммы электронной таблицы в файл формата с коротким кодом.
- Пожалуйста, проверьте[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}?format={format}" \
+  -H "Authorization: Bearer {access_token}"
+```
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ExportChartAsFormat.cs" >}}
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ExportChartAsFormat.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 закодировано)",
+  "contentType": "MIME-тип",
+  "fileDownloadName": "необязательное имя файла"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExportChartAsFormat.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ExportChartAsFormat.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ExportChartAsFormat.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ExportChartAsFormat.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ExportChartAsFormat.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportChartAsFormat.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK — самый быстрый способ разработки, так как он абстрагирует низкоуровневые детали, позволяя преобразовывать табличные данные электронной таблицы в PDF-файл с минимальным количеством кода. Посетите [репозиторий на GitHub](https://github.com/aspose-cells-cloud), чтобы ознакомиться с полным списком SDK Aspose.Cells Cloud.
+
+Следующие примеры кода иллюстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:

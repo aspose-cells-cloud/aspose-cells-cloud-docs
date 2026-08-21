@@ -1,102 +1,130 @@
-﻿---
-title: Dela en Excel-arbetsbok till flera filer
-second_title: Documen
-linktitle: Dela en Excel-fil
-type: docs
-url: /sv/split-multi-excel-files/
-aliases: [ /split/multi-files/]
-keywords: Split an Excel workbook to multi-files
-description: Aspose.Cells Cloud REST API stöder delning av en Excel-arbetsbok till flera filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 130
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Dela en Excel-arbetsbok till flera filer
 ---
-Denna REST API indikerar att en Excel `workbook` ska delas upp till flera filer med olika format.
+title: "Dela en Excel-arbetsbok i flera filer"
+ArticleTitle: "Hur man delar en Excel-arbetsbok i flera filer med Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Dela en Excel-fil"
+type: docs
+url: /split-multi-excel-files/
+aliases: [/split/multi-files/]
+keywords: "Excel, Aspose.Cells Cloud, REST API, dela arbetsbok, flera filer, JPEG, PNG, PDF, CSV, JSON"
+description: "Aspose.Cells Cloud REST API möjliggör delning av en Excel-arbetsbok i flera filer i olika format. Denna dokumentation tillhandahåller begärparametrar, ett cURL-exempel och SDK-kodexempel för språk som C#, Java, PHP, Ruby, Node.js, Python, Perl och Go."
+weight: 130
+---
 
-**Frågeparameter**
+Denna REST API delar en Excel-**arbetsbok** i flera filer i olika format.
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|formatera|sträng|Delat format.|
-|från|heltal|Starta kalkylbladsindex.|
-|till|heltal|Avsluta kalkylbladsindex.|
-|horisontell upplösning|heltal|Bildens horisontella upplösning.|
-|vertikal upplösning|heltal|Bildens vertikala upplösning.|
-|utmapp|sträng|utdata delad filposition.|
-|splitNameRule|sträng||
-|mapp|sträng|Original arbetsboksmapp.|
-|lagringsnamn|sträng|Lagringsnamn.|
+> **Förutsättningar** – För att använda denna API måste du erhålla en giltig JWT-token, säkerställa att du använder en SDK-version som stöds och verifiera att din arbetsbok lagras på en lagringsplats som stöds. API:t tillämpar även filstorleksbegränsningar som dokumenteras i plattformens riktlinjer.
 
-## REST API
+## PostWorkbookSplit API
 
-|**API**|**Typ**|**Beskrivning**|**Swagger-länk**|
-|:- |:- |:- |:- |
-|/celler/{namn}/split|POSTA|Dela en Excel-arbetsbok|[PostWorkbookSplit](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit)|
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/split
+```
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Säkerhet och autentisering**
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### Begärparametrar
+
+| Parameter namn       | Typ     | Plats     | Beskrivning                                                                                     | Obligatoriskt |
+| -------------------- | ------- | --------- | ----------------------------------------------------------------------------------------------- | ------------- |
+| files[]              | fil     | formData  | En eller flera Excel-arbetsböcker som ska **delas**. Använd `file1`, `file2`, … i begäran.     | Ja            |
+| format               | sträng  | Query     | Önskat utdataformat för de delade filerna.                                                     | Nej           |
+| from                 | heltal  | Query     | Startindex för kalkylblad.                                                                     | Nej           |
+| to                   | heltal  | Query     | Slutindex för kalkylblad.                                                                      | Nej           |
+| horizontalResolution | heltal  | Query     | Horisontell bildupplösning.                                                                     | Nej           |
+| verticalResolution   | heltal  | Query     | Vertikal bildupplösning.                                                                        | Nej           |
+| outFolder            | sträng  | Query     | Utdatamapp för de delade filerna.                                                               | Nej           |
+| splitNameRule        | sträng  | Query     | Namngivningsregel som tillämpas på delade filer.                                               | Nej           |
+| folder               | sträng  | Query     | Mapp som innehåller den ursprungliga arbetsboken.                                               | Nej           |
+| storageName          | sträng  | Query     | Namn på den lagring som ska användas.                                                           | Nej           |
+
+### **Svar**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+    "Files": [
+      {
+        "Filename" : "[fil1 namn]",
+        "Filesize" : [filstorlek],
+        "FileContent" : "[Base64-sträng]"
+      },
+      {
+        "Filename" : "[fil2 namn]",
+        "Filesize" : [filstorlek],
+        "FileContent" : "[Base64-sträng]"
+      },
+      {
+        "Filename" : "[fil3 namn]",
+        "Filesize" : [filstorlek],
+        "FileContent" : "[Base64-sträng]"
+      }
+    ]
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                             |
+|-----|-----------------------------|---------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Oautentiserad               | Ogiltig eller saknad JWT-token.                         |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksbegränsningen. |
+| 500 | Internt serverfel           | Oväntat serverfel.                                      |
+
+## Hur man använder PostWorkbookSplit API med SDK:er
+
+### PostWorkbookSplit API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/split?format=jpeg&from=1&to=1&horizontalResolution=0&verticalResolution=0" -H "accept: application/json"
-
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/split?format=jpeg&from=1&to=1&horizontalResolution=0&verticalResolution=0" -H "accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Result": {
-
     "Documents": [
-
       {
-
         "Id": 1,
-
         "link": {
-
           "Href": "413e3375-c163-4d5c-8b84-8f95f63902f6.png",
-
           "Rel": null,
-
           "Title": null,
-
           "Type": null
-
         }
-
       }
-
     ]
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå så att du kan fokusera på dina projektuppgifter. Ta en titt på [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -149,3 +177,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

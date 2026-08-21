@@ -1,46 +1,74 @@
-﻿---
-title: Obtenez MinRow à partir de la feuille de travail Excel
+---
+title: "Obtenir MinRow à partir d’une feuille Excel – Référence de l’API Aspose.Cells Cloud"
 type: docs
 url: /fr/get-minrow-from-excel-worksheet/
 weight: 80
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir MinRow à partir de la feuille de calcul Excel
+keywords: "Aspose.Cells, GetMinRow, feuille Excel, API REST, index de ligne minimale, SDK cloud"
+description: "Découvrez comment récupérer l’index de ligne minimal d’une feuille à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut une requête cURL complète avec authentification, le schéma de réponse et des exemples de SDK pour plusieurs langages."
+ArticleTitle: "Obtenir MinRow à partir d’une feuille Excel – Référence de l’API Aspose.Cells Cloud"
 ---
-Ce REST API indique que les émissions obtiennent un `minrow` dans un fichier Excel lorsque le paramètre `cellOrMethodName` est `minrow`.
 
-- **cURL Exemple**
+Cette API REST renvoie l’index de ligne minimal dans une feuille Excel lorsque le paramètre `cellOrMethodName` est défini sur `minrow`. L’endpoint peut être utilisé pour déterminer la première ligne non vide (indexée à partir de zéro) dans une feuille donnée.
 
+- **Exemple cURL :**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/minrow" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/minrow" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MinRow": 0
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Famille de SDK Cloud**
+**Requête**
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+```
+GET https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/minrow
+```
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+| Propriété          | Type   | Obligatoire | Description                                            |
+|--------------------|--------|-------------|--------------------------------------------------------|
+| `fileName`         | string | Oui         | Nom du classeur (par exemple, `myWorkbook.xlsx`).     |
+| `sheetName`        | string | Oui         | Feuille cible (par exemple, `Sheet1`).                |
+| `cellOrMethodName` | string | Oui         | Valeur fixe `minrow`.                                  |
+| `folder`           | string | Non         | Chemin du dossier dans le stockage cloud.             |
+| `storageName`      | string | Non         | Nom du stockage utilisé si ce n’est pas le stockage par défaut. |
 
+**Réponse**
 
+Le service renvoie un objet JSON contenant la propriété `MinRow`, indiquant l’index de la première ligne non vide (indexée à partir de zéro).
+
+| Code HTTP | Signification                                     |
+|-----------|---------------------------------------------------|
+| 200       | Succès – charge utile JSON avec `MinRow`.        |
+| 401       | Non autorisé – jeton invalide ou manquant.       |
+| 404       | Classeur ou feuille introuvable.                 |
+| 500       | Erreur interne du serveur.                       |
+
+La valeur `MinRow` est utile lorsqu’il s’agit de localiser rapidement le début des données dans une feuille.
+
+- **Utiliser les SDK Aspose.Cells Cloud**
+
+L’utilisation d’un SDK constitue la méthode la plus rapide pour développer. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur votre projet. Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants illustrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

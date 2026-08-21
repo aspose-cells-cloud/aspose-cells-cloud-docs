@@ -1,76 +1,148 @@
-﻿---
-title: Excel çalışma sayfasındaki bir OLE nesnesini güncelleyin
-second_title: Documen
-linktitle: Güncelleme
-type: docs
-url: /tr/oleobjects/update/
-aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
-keywords: Update an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki bir OLE nesnesini güncellemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 30
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki bir OLE nesnesini güncelleme
 ---
-Bu REST API, Excel çalışma sayfasında `update` ve `OLE object`'i gösterir.
+title: "Bir Excel Çalışma Sayfasında bir OLE Nesnesini Güncelleme"
+second_title: "Belge"
+linktitle: "Güncelle"
+type: docs
+url: /oleobjects/update/
+aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
+keywords: "OLE nesnesini güncelle, Excel, Aspose.Cells Cloud, REST API, SDK"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında bir OLE nesnesini (resim, grafik vb.) nasıl güncelleyeceğinizi öğrenin. cURL, SDK örnekleri, kimlik doğrulama adımları ve hata işleme içerir."
+weight: 30
+author: "Aspose Cloud Dokümantasyon Ekibi"
+lastmod: "2024-03-01"
+ArticleTitle: "Bir Excel Çalışma Sayfasında bir OLE Nesnesini Güncelleme – Aspose.Cells Cloud API Kılavuzu"
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasındaki bir **OLE nesnesini** günceller.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
- 
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
+
+## PostUpdateWorksheetOleObject API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
 ```
 
-İstek parametreleri şunlardır:
+İstek parametreleri:
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma kağıdının adı.|
-| oleObjectIndex| tam sayı| yol| Ole nesne dizini|
-| ole|| vücut| Ole Nesnesi|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı | Tür      | Parametre Konumu | Açıklama                                             |
+| ------------- | -------- | ---------------- | ---------------------------------------------------- |
+| name          | string   | path             | Çalışma kitabının adı.                               |
+| sheetName     | string   | path             | Çalışma sayfasının adı.                              |
+| oleObjectIndex| integer  | path             | Çalışma sayfası içindeki OLE nesnesinin indeksi.    |
+| ole           | object   | body             | Güncellenecek OLE nesnesinin JSON gösterimi.         |
+| folder        | string   | query            | Çalışma kitabını içeren klasör.                      |
+| storageName   | string   | query            | Depolama hizmetinin adı.                             |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/OleObjects/PostUpdateWorksheetOleObject) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Gövdesi Alanları
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Alan                  | Tür      | Gerekli    | Açıklama                                                   |
+| --------------------- | -------- | ---------- | ---------------------------------------------------------- |
+| ImageSourceFullName   | string   | isteğe bağlı | OLE nesnesi için kullanılan resim dosyasının yolu.          |
+| IsAutoSize            | boolean  | isteğe bağlı | OLE nesnesinin otomatik boyutlandırılıp olmayacağını belirtir. |
+| SourceFullName        | string   | gerekli    | OLE nesnesinin kaynağı (örneğin bir resim veya grafik).     |
+| UpperLeftRow          | integer  | gerekli    | Üst sol köşenin satır indeksi (sıfır tabanlı).             |
+| UpperLeftColumn       | integer  | gerekli    | Üst sol köşenin sütun indeksi (sıfır tabanlı).             |
+| Left                  | integer  | isteğe bağlı | Üst sol köşeden yatay ofset, nokta cinsinden.               |
+| Top                   | integer  | isteğe bağlı | Üst sol köşeden dikey ofset, nokta cinsinden.               |
+| Width                 | integer  | gerekli    | OLE nesnesinin genişliği, nokta cinsinden.                  |
+| Height                | integer  | gerekli    | OLE nesnesinin yüksekliği, nokta cinsinden.                 |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/PostUpdateWorksheetOleObject), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sini nasıl çağıracağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/" \
--X POST \
--d '{"ImageSourceFullName":"aspose-logo.png", "IsAutoSize":true, "SourceFullName":"Sample_Book2.xls", "UpperLeftRow":15, "Top":10, "UpperLeftColumn":5, "Left":10, "Width":400, "Height":400}' \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/" \
+  -X POST \
+  -d '{"ImageSourceFullName":"aspose-logo.png","IsAutoSize":true,"SourceFullName":"Sample_Book2.xls","UpperLeftRow":15,"Top":10,"UpperLeftColumn":5,"Left":10,"Width":400,"Height":400}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK",
+  "OLEObject": {
+    "Index": 0,
+    "ImageSourceFullName": "aspose-logo.png",
+    "IsAutoSize": true,
+    "SourceFullName": "Sample_Book2.xls",
+    "UpperLeftRow": 15,
+    "UpperLeftColumn": 5,
+    "Left": 10,
+    "Top": 10,
+    "Width": 400,
+    "Height": 400
+  }
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+## Hata Yanıtları
+
+| HTTP Durumu | Kod  | Mesaj                                                          |
+| ----------- | ---- | -------------------------------------------------------------- |
+| 400         | 4000 | Geçersiz istek – eksik veya geçersiz parametreler.             |
+| 401         | 4010 | Yetkisiz erişim – geçersiz veya eksik JWT belirteci.           |
+| 404         | 4040 | Bulunamadı – çalışma kitabında, çalışma sayfasında veya OLE nesnesinde hata var. |
+| 500         | 5000 | İç sunucu hatası – sunucu tarafında beklenmedik bir arıza.      |
+
+API ayrıca yanıt gövdesinde HTTP durumuna karşılık gelen özel bir **Code** alanını da döndürür (örneğin, 200 → 2000, 400 → 4000 vb.).
+
+## Bu API Ne Zaman Kullanılmalı?
+
+Mevcut bir OLE nesnesini (gömülü resim, grafik veya belge gibi) tüm çalışma sayfasını yeniden yüklemeksizin değiştirmeniz gerektiğinde bu uç noktayı kullanın. Tipik senaryolar, resim kaynağını güncellemek, nesneyi yeniden boyutlandırmak veya çalışma kitabı oluşturulduktan sonra konumunu değiştirmek içerir. İlgili işlemler için bkz. [OLE Nesnesi Ekle](/oleobjects/add/) ve [OLE Nesnesi Sil](/oleobjects/delete/).
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. SDK, alt seviye ayrıntıları soyutlar, böylece projenize odaklanabilirsiniz. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıda, Aspose.Cells Cloud SDK kullanarak bir OLE nesnesini güncelleyen kısa bir C# örneği verilmiştir:
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+
+var config = new Configuration
+{
+    AppSid = "<your-app-sid>",
+    AppKey = "<your-app-key>"
+};
+var oleApi = new OleObjectsApi(config);
+var request = new OleObjectUpdateRequest
+{
+    ImageSourceFullName = "aspose-logo.png",
+    IsAutoSize = true,
+    SourceFullName = "Sample_Book2.xls",
+    UpperLeftRow = 15,
+    UpperLeftColumn = 5,
+    Left = 10,
+    Top = 10,
+    Width = 400,
+    Height = 400
+};
+
+var response = oleApi.UpdateWorksheetOleObject("SampleBook.xlsx", "Sheet1", 0, request, folder: "myFolder");
+Console.WriteLine($"Durum: {response.Status}");
+```
+
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerini çeşitli SDK'lar kullanarak nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

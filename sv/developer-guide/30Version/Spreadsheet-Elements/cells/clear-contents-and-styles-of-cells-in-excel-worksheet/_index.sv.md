@@ -1,73 +1,96 @@
-﻿---
-title: Rensa innehåll och stilar för Cells i Excel-arbetsbladet
-type: docs
-url: /sv/clear-contents-and-styles-of-cells-in-excel-worksheet/
-weight: 50
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Rensa innehåll och stilar för Cells i Excel-arbetsblad
 ---
-Denna REST API indikerar `clear` celler `content` i en Excel-fil.
+title: "Rensa innehåll och stilar i celler i ett Excel-ark"
+type: docs
+url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+weight: 50
+keywords:
+  - Aspose.Cells
+  - Excel API
+  - rensa cellinnehåll
+  - rensa cellstilar
+  - moln kalkylark
+  - REST API
+description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att rensa cellinnehåll och stilar i ett Excel-ark, med cURL-exempel och SDK-kodstycken."
+ArticleTitle: "Rensa innehåll och stilar i celler i ett Excel-ark – Aspose.Cells Cloud API"
+---
 
-## RSET API
+Innan du använder **Clear Contents and Styles**-ändpunkten, se till att du har:
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
- 
+* En giltig **JWT-token** som du har hämtat från Aspose.Cells Cloud-autentiseringsflödet.  
+* Arbetsboken uppladdad till din valda lagringsplats (eller tillgänglig via `folder`-parametern).  
+* Den nödvändiga SDK-versionen installerad om du föredrar att arbeta med någon av de språkspecifika klientbiblioteken.
+
+Denna REST API rensar cellernas innehåll i en Excel-fil.
+
+## PostClearContents API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsboksnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| räckvidd| sträng| fråga| Räckvidden.|
-| startrad| heltal| fråga| Startraden.|
-| startkolumn| heltal| fråga| Startkolumnen.|
-| slutrad| heltal| fråga| Slutraden.|
-| slutkolumn| heltal| fråga| Slutkolumnen.|
-| mapp| sträng| fråga| Arbetsbokens mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Svar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**HTTP-statuskoder**
+
+| Kod | Betydelse                    | Beskrivning                                           |
+|-----|------------------------------|-------------------------------------------------------|
+| 200 | OK                           | Filter tillämpades framgångsrikt; svaret innehåller detaljer om åtgärden. |
+| 400 | Felaktig förfrågan           | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Auktorisering saknas         | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nyttolast           | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel            | Oväntat serverfel. |
+
+## Hur du använder PostClearContents API med SDK:er
+
+### PostClearContents API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda cURL-kommandoradsverktyget för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Förfrågan" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Besök [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du gör anrop till Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +143,28 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Rensa innehåll och stilar i celler i ett Excel-ark",
+  "description": "Hur du använder Aspose.Cells Cloud REST API för att rensa cellinnehåll och stilar i ett Excel-ark.",
+  "url": "https://docs.aspose.cloud/cells/clear-contents-and-styles-of-cells-in-excel-worksheet/",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2023-07-08",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://docs.aspose.cloud/cells/images/Aspose-image-for-open-graph.jpg",
+      "caption": "Aspose.Cells Cloud – Rensa innehåll och stilar i celler"
+    }
+  },
+  "keywords": "Aspose.Cells, Excel API, rensa cellinnehåll, rensa cellstilar, REST API, moln kalkylark"
+}
+</script>

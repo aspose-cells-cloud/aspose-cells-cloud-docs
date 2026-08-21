@@ -1,72 +1,108 @@
-﻿---
-title: Annuler la fusion Cells dans la feuille de calcul Excel
+---
+title: "Désassembler les cellules dans une feuille Excel"
 type: docs
 url: /fr/unmerge-cells-in-excel-worksheet/
 weight: 120
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Annuler la fusion Cells dans Excel Feuille de calcul
+keywords: "Aspose.Cells, Excel, Désassembler les cellules, API REST, SDK cloud"
+description: "Découvrez comment utiliser l’API REST Aspose.Cells Cloud pour désassembler les cellules dans une feuille Excel, avec des exemples de requête, le format de réponse et des extraits de code SDK pour plusieurs langages de programmation."
+ArticleTitle: "Désassembler les cellules dans une feuille Excel"
 ---
-Ce REST API indique `unmerge` cellules dans un fichier Excel.
 
-## RSET API
+Cet API REST désassemble les cellules dans un fichier Excel.
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge
 ```
 
-Les paramètres de la requête sont :
+## Sécurité et authentification
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Le nom du classeur.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| startRow| entier| requête| La ligne de départ.|
-| colonne de démarrage| entier| requête| La colonne de départ.|
-| totalRows| entier| requête| Le nombre total de lignes|
-| colonnes totales| entier| requête| Le nombre total de colonnes.|
-| dossier| chaîne| requête| Le dossier du classeur.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API Aspose.Cells Cloud sont sécurisées et exigent une [authentification basée sur un jeton JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetUnmerge) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+**Paramètres de la requête**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Nom du paramètre | Type    | Emplacement | Description                                             |
+|------------------|---------|-------------|---------------------------------------------------------|
+| name             | string  | path        | Nom du fichier de classeur.                             |
+| sheetName        | string  | path        | Nom de la feuille de calcul.                            |
+| startRow         | integer | query       | Index de ligne (à partir de 0) de la première ligne à désassembler. |
+| startColumn      | integer | query       | Index de colonne (à partir de 0) de la première colonne à désassembler. |
+| totalRows        | integer | query       | Nombre de lignes à inclure dans l’opération de désassemblage. |
+| totalColumns     | integer | query       | Nombre de colonnes à inclure dans l’opération de désassemblage. |
+| folder           | string  | query       | Chemin du dossier où le classeur est stocké.            |
+| storageName      | string  | query       | Nom du service de stockage.                             |
+
+## **Réponse**
+
+Retourne un `CellCloudResponse`.
+
+- **Aperçu des champs de réponse**
+
+| Champ           | Type    | Description                                           |
+| --------------- | ------- | ----------------------------------------------------- |
+| `Status`        | string  |                                                      |
+| `Code`          | integer | 200, 400, 401, 500, ...                              |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Codes d’état HTTP**
+
+| Code | Signification               | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant. |
+| 413  | Charge utile trop grande     | Le fichier téléchargé dépasse la taille limite. |
+| 500  | Erreur interne du serveur   | Erreur inattendue du serveur. |
+
+## Comment utiliser l’API `PostWorksheetUnmerge` avec les SDK
+
+### Spécification de l’API `PostWorksheetUnmerge`
+
+La [Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetUnmerge) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande `cURL` pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API cloud avec `cURL`.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/unmerge?startRow=10&startColumn=10&totalRows=10&totalColumns=10" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
+### Utiliser les SDK Aspose.Cells Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le moyen optimal d’accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,73 +1,90 @@
-﻿---
-title: Hämta ett OLE-objekt i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Ge
-type: docs
-url: /sv/oleobjects/get/
-aliases: [/get-oleobject-from-a-worksheet/]
-keywords: Get an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder hämtning av ett OLE-objekt i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta ett OLE-objekt i ett Excel-kalkylblad
 ---
-Denna REST API indikerar för `get` en `OLE object` med formatet i ett Excel-arbetsblad.
+title: "Hämta OLE-objekt från Excel-arbetsblad – Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Hämta"
+type: docs
+url: /oleobjects/get/
+aliases: [/get-oleobject-from-a-worksheet/]
+keywords: "aspose, cells, ole-objekt, excel, arbetsblad, hämta ole-objekt, rest api"
+description: "Hämta ett OLE-objekt (bild, diagram eller inbäddad fil) från ett arbetsblad med Aspose.Cells Cloud REST API. Innehåller HTTPS-slutpunkt, nödvändiga parametrar, exempel på cURL och SDK-kod i flera språk."
+ArticleTitle: "Hämta OLE-objekt från Excel-arbetsblad – Aspose.Cells Cloud API"
+weight: 10
+---
 
-## RSET API
+Denna REST API hämtar ett **OLE-objekt** från ett Excel-arbetsblad.
+
+## Säkerhet och autentisering
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## Rest API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
 ```
 
-Begäranparametrarna är:
+### Begäranparametrar
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| objektnummer| heltal| väg| Objektnumret.|
-| formatera| sträng| fråga| Det exporterade objektformatet.|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameternamn   | Typ     | Plats  | Beskrivning                                                  |
+| --------------- | ------- | ------ | ------------------------------------------------------------ |
+| name            | string  | path   | Dokumentets namn.                                            |
+| sheetName       | string  | path   | Arbetsbladets namn.                                          |
+| objectNumber    | integer | path   | Objektnumret inom arbetsbladet.                              |
+| format          | string  | query  | Önskat exportformat för objektet (t.ex. `png`, `jpeg`).     |
+| folder          | string  | query  | Mapp där dokumentet finns.                                   |
+| storageName     | string  | query  | Namn på det lagringsutrymme som ska användas.                |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Lagringsalternativ
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+- **folder** – anger undermappen i standardlagringen där arbetsboken finns.
+- **storageName** – åsidosätter standardlagringsnamnet om arbetsboken lagras någon annanstans.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för att anropa Aspose.Cells-webbtjänsten. Exemplet nedan visar hur du begär ett OLE-objekt som en PNG-bild.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+### Binärbildssvar
 
-Image file
- 
+När `format` är inställt på ett bildformat (t.ex. `png`) returnerar API:et de binära bilddata med headern:
+
+```
+Content-Type: image/png
 ```
 
-ELLER
+_(Bildfilen strömmas direkt till klienten.)_
 
-```bash
+### JSON-metadata-svar
+
+Om `format` utelämnas eller är inställt på `json` returnerar API:et ett JSON-svar som beskriver OLE-objektet:
+
+```json
 {
-    "Code": 200,
-    "Status": "OK",
-    "OLEObject":{
-    ......
-    } 
+  "Code": 200,
+  "Status": "OK",
+  "OLEObject": {
+    "Name": "Object1",
+    "Width": 200,
+    "Height": 150,
+    "Left": 10,
+    "Top": 20,
+    "IsLocked": false,
+    "FileFormat": "png"
+  }
 }
 ```
 
@@ -75,11 +92,30 @@ ELLER
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## Felhantering
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| HTTP-status | Felkod       | Beskrivning                                      |
+| ----------- | ------------ | ------------------------------------------------ |
+| 400         | BadRequest   | Saknade eller ogiltiga parametrar.              |
+| 401         | Unauthorized | Ogiltig eller saknad JWT-token.                 |
+| 404         | NotFound     | Arbetsbok, arbetsblad eller OLE-objekt hittades inte. |
+| 500         | ServerError  | Oväntat serverfel.                               |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+**Exempel på 404-svar**
+
+```json
+{
+  "Code": 404,
+  "Status": "NotFound",
+  "Message": "Det begärda OLE-objektet med nummer 0 hittades inte i arbetsbladet 'Sheet1'."
+}
+```
+
+## Molnsdk-familj
+
+Att använda en SDK är det snabbaste sättet att integrera API:et. SDK:er hanterar detaljer på lågnivå så att du kan fokusera på din affärslogik. Se [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

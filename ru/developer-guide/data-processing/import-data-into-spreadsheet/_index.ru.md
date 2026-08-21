@@ -1,107 +1,122 @@
-﻿---
-title: Aspose.Cells Cloud Web API — импорт данных CSV, JSON или XML в файл электронной таблицы
-second_title: Documen
-ArticleTitle: Import Csv, JSON, or XML Data into a Spreadsheet file
-linktitle: Импорт данных в электронную таблицу
-type: docs
-url: /ru/import-data-into-spreadsheet/
-keywords: Import data, Aspose.Cells Cloud Web API, spreadsheet integration, CSV, JSON, XML, data handling, Aspose.Cell
-description: Эффективно импортируйте данные в электронную таблицу из поддерживаемых форматов, таких как CSV, JSON и XML, с помощью Cloud Web Aspose.Cells API
-weight: 100
-kwords: Aspose.Cells Cloud Web API, Импорт данных, Office Cloud, REST, Электронная таблица, CSV, JSON, XM
 ---
- Импорт данных в электронную таблицу. Поддерживаемый формат файла импортируемых данных:[XML](https://docs.fileformat.com/web/xml/), [JSON](https://docs.fileformat.com/web/json/) или[CSV](https://docs.fileformat.com/spreadsheet/csv/).
+title: "Aspose.Cells Cloud API импорта данных — облачное решение для автоматического импорта данных CSV, JSON и XML в электронные таблицы Excel."
+second_title: "Документация"
+ArticleTitle: "Платформа интеграции многоканальных данных Excel – Aspose.Cells Cloud API автоматического импорта и преобразования данных."
+linktitle: "Импорт данных в электронную таблицу"
+type: docs
+url: /import-data-into-spreadsheet/
+keywords: "Aspose Cells, API импорта данных, CSV в Excel, JSON в Excel, XML в Excel, облачная электронная таблица, REST API"
+description: "Импортируйте данные CSV, JSON или XML в электронные таблицы Excel с помощью Aspose.Cells Cloud REST API. Изучите формат запроса, параметры, примеры кода SDK и обработку ошибок."
+weight: 100
+---
 
-## **Импорт данных в электронную таблицу API**
+## Основные возможности
+
+### Поддержка нескольких форматов данных
+
+- **<a href="https://docs.fileformat.com/spreadsheet/csv/" rel="noopener noreferrer">Импорт данных CSV</a>**: Поддерживает различные разделители и автоматически определяет кодировку.
+- **<a href="https://docs.fileformat.com/web/json/" rel="noopener noreferrer">Обработка данных JSON</a>**: Преобразует сложные структуры JSON в таблицы Excel.
+- **<a href="https://docs.fileformat.com/web/xml/" rel="noopener noreferrer">Преобразование XML-файлов</a>**: Сопоставляет данные узлов со структурой строк и столбцов Excel.
+
+## **Описание API импорта данных в электронную таблицу**
+
+### Веб-API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/import/data
+PUT https://api.aspose.cloud/v4.0/cells/import/data
 ```
 
-### **Параметры запроса:**
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody| Описание|
-|:- |:- |:- |:- |
-| файл данных| Файл| FormData| Загрузите файл данных для импорта.|
-| Электронная таблица| Файл| FormData| Загрузите целевой файл электронной таблицы.|
-| рабочий лист| Нить| Запрос| Укажите рабочий лист для импорта данных.|
-| стартселл| Нить| Запрос|Укажите начальную позицию для импорта данных.|
-| вставлять| Булевое значение| Запрос| Указывает, следует ли вставлять или перезаписывать указанные импортируемые данные.|
-| convertNumericData| Булевое значение| Запрос| Укажите, следует ли преобразовывать числовые данные при импорте.|
-| разветвитель| Нить| Запрос| Укажите разделитель для формата CSV.|
-| outPath| Нить| Запрос| (Необязательно) Путь к папке, где хранится книга. Значение по умолчанию — null.|
-|outStorageName| Нить| Запрос| Укажите имя хранилища выходного файла.|
-| шрифтыРасположение| Нить| Запрос| Определите пользовательские шрифты, которые будут использоваться.|
-| regoin| Нить| Запрос| Настройте конфигурацию региона электронной таблицы.|
-| пароль| Нить| Запрос| Пароль для открытия файла электронной таблицы.|
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
-### **Ответ**
+### Параметры запроса
+
+| Имя параметра      | Тип    | Расположение     | Описание                                                                     |
+|--------------------|--------|------------------|------------------------------------------------------------------------------|
+| datafile           | File   | FormData         | Файл данных (CSV, JSON или XML) для импорта.                                |
+| spreadsheet        | File   | FormData         | Целевая рабочая книга, в которую будут импортированы данные.                |
+| worksheet          | string | Query            | Имя рабочего листа, в который будут помещены данные.                        |
+| startCell          | string | Query            | Ячейка в левом верхнем углу (например, `A1`), определяющая начальную позицию импорта. |
+| insert             | bool   | Query            | `true` — добавить строки; `false` — перезаписать существующие данные.       |
+| convertNumericData | bool   | Query            | `true` — преобразовывать строковые числа в числа во время импорта.          |
+| splitter           | string | Query            | Разделитель CSV (один символ, по умолчанию `,`).                            |
+| outPath            | string | Query (опционально) | Путь к папке, где будет сохранена обновлённая рабочая книга.              |
+| outStorageName     | string | Query (опционально) | Имя хранилища для выходного файла.                                         |
+| fontsLocation      | string | Query (опционально) | Путь к пользовательской папке шрифтов, если требуется.                    |
+| region             | string | Query (опционально) | Конфигурация региона электронной таблицы (например, `ru-RU`).              |
+| password           | string | Query (опционально) | Пароль для открытия защищённой рабочей книги.                              |
+
+### Ответ
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Коды ошибок
+**Коды HTTP-статуса**
 
-- **400 Неверный запрос**: Неверный URI Apose.Cells Cloud API.
-- **401 Неавторизованный**: Недействительный токен доступа. Или недействительный идентификатор клиента и секретный ключ.
-- **404 Не найдено**: Файл электронной таблицы недоступен.
-- **500 Ошибка сервера**: В электронной таблице обнаружена аномалия при получении расчетных данных.
+| Код  | Значение                | Описание                                                            |
+|------|-------------------------|---------------------------------------------------------------------|
+| 200  | OK (ОК)                 | Фильтр успешно применён; ответ содержит детали операции.           |
+| 400  | Bad Request (Неверный запрос) | Отсутствуют или неверны параметры (например, неподдерживаемый тип файла). |
+| 401  | Unauthorized (Неавторизовано) | Неверный или отсутствующий JWT-токен.                              |
+| 413  | Payload Too Large (Слишком большой полезный груз) | Загруженный файл превышает лимит размера.                    |
+| 500  | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                                    |
 
-## Где следует использовать импорт данных в электронную таблицу API?
+## Почему стоит использовать этот API
 
-- Импорт больших объемов данных в электронную таблицу.
--  Формат файла импортированных данных:[XML](https://docs.fileformat.com/web/xml/), [JSON](https://docs.fileformat.com/web/json/) и[CSV](https://docs.fileformat.com/spreadsheet/csv/).
+- **Эффективная загрузка данных** — позволяет массово импортировать большие объёмы данных непосредственно в рабочую книгу без создания промежуточных файлов.
+- **Широкая поддержка SDK** — предоставляет клиентские библиотеки для .NET, Java, PHP, Ruby, Node.js, Python, Go и Perl, упрощая интеграцию.
+- **Обработка в памяти** — выполняет преобразования в памяти, что снижает требования к временному хранилищу.
 
-## Почему вам следует использовать импорт данных в электронную таблицу API?
+## Как использовать API импорта данных в электронную таблицу с SDK
 
-- Импорт больших объемов данных в электронные таблицы.
-- Разработку можно быстро завершить с помощью существующего SDK.
+**Примечания / ограничения:** API поддерживает до 1 000 000 строк на один импорт. По умолчанию используется только запятая в качестве разделителя CSV; другие односимвольные разделители можно указать через параметр `splitter`. Большие XML-файлы могут увеличить время обработки.
 
-## Как использовать импорт данных в электронную таблицу API с SDK
+Для смежных операций, таких как экспорт данных или преобразование форматов рабочих книг, см. документацию **Экспорт данных** и **Преобразование рабочей книги**.
 
-### Импорт данных в электронную таблицу API Спецификация
+### Спецификация API импорта данных в электронную таблицу
 
- The[Импорт данных в электронную таблицу API Спецификация](https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet) предоставляет общедоступный программный интерфейс, позволяющий взаимодействовать с REST непосредственно из вашего веб-браузера.
+<a href="https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet" rel="noopener noreferrer">Спецификация API импорта данных в электронную таблицу</a> предоставляет публично доступный программный интерфейс, позволяющий взаимодействовать с REST напрямую из веб-браузера.
+Вы можете использовать утилиту командной строки cURL для лёгкого доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как выполнять вызовы в облачный API с помощью cURL.
 
-### Используйте облачные SDK Aspose.Cells
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
-Использование SDK — самый быстрый способ разработки, поскольку он абстрагируется от низкоуровневых деталей и позволяет импортировать данные в электронную таблицу с помощью короткого кода.
- Пожалуйста, проверьте[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+{{< tab tabNum="11" >}}
 
-Следующие примеры кода иллюстрируют, как вызывать веб-службы Aspose.Cells с использованием различных SDK:
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/import/data?worksheet=Sheet1&startCell=A1&insert=true" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "datafile=@/path/to/data.csv" \
+  -F "spreadsheet=@/path/to/workbook.xlsx"
+```
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ImportDataIntoSpreadsheet.cs" >}}
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ImportDataIntoSpreadsheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 закодированный)",
+  "contentType": "MIME-тип",
+  "fileDownloadName": "необязательное имя файла"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ImportDataIntoSpreadsheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ImportDataIntoSpreadsheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ImportDataIntoSpreadsheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ImportDataIntoSpreadsheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ImportDataIntoSpreadsheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ImportDataIntoSpreadsheet.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK — самый быстрый способ разработки, поскольку он скрывает детали низкого уровня и позволяет импортировать данные в рабочий лист электронной таблицы всего несколькими строками кода. Полный список SDK Aspose.Cells Cloud доступен в <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">репозитории на GitHub</a>.
+---

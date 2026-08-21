@@ -1,15 +1,40 @@
-﻿---
-title: العمل على حذف صف في ورقة عمل Excel
-second_title: Documen
-linktitle: حذف
-type: docs
-url: /ar/rows/delete/
-keywords: Working with deleting row on an Excel worksheet. How to add rows on an Excel worksheet
-description: يدعم Cloud REST حذف الصفوف في ورقة عمل Aspose.Cells. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، العمل مع حذف صف في ورقة عمل Excel
 ---
-## العمل على حذف الصف في ورقة العمل Excel.
+---
+title: "العمل مع حذف الصفوف في ورقة عمل Excel"
+second_title: "Document"
+linktitle: "Delete"
+type: docs
+url: /rows/delete/
+keywords: "Aspose.Cells, حذف صف, Excel API, REST, سحابة, جدول بيانات, Excel, SDK"
+description: "تعرّف على كيفية حذف صف واحد أو صفوف متعددة في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. يشمل أمثلة كود مكتوبة بلغات Android وC# وGo وJava وNode.js وPerl وPHP وPython وRuby وSwift."
+weight: 20
+ArticleTitle: "العمل مع حذف الصفوف في ورقة عمل Excel – دليل واجهة Aspose.Cells Cloud API"
+---
 
-- [كيفية حذف صف فارغ في ورقة العمل Excel.](/cells/ar/rows/delete/row/) 
-- [كيفية حذف صفوف متعددة في ورقة العمل Excel.](/cells/ar/rows/delete/rows/) ) 
+## عمليات الحذف المتاحة
+
+تُظهر الأمثلة التالية كيفية حذف صف فارغ واحد أو عدة صفوف من ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API.
+
+- [كيفية حذف صف فارغ في ورقة عمل Excel](/cells/rows/delete/row/)
+- [كيفية حذف صفوف متعددة في ورقة عمل Excel](/cells/rows/delete/rows/)
+
+**مرجع واجهة برمجة التطبيقات**
+
+| العنصر | التفاصيل |
+|---------------------|---------------------------------------------------------------|
+| **طريقة HTTP** | DELETE |
+| **النقطة النهائية (Endpoint)** | `/cells/{fileName}/worksheets/{sheetName}/rows` |
+| **مُعاملات المسار** | `fileName` – اسم ملف Excel (مطلوب)<br>`sheetName` – اسم ورقة العمل (مطلوب) |
+| **مُعاملات الاستعلام** | `startrow` – فهرس الصف الأول المراد حذفه (مطلوب)<br>`totalRows` – عدد الصفوف المراد حذفها (مطلوب)<br>`storage` – اسم وحدة التخزين السحابية (اختياري)<br>`folder` – مسار المجلد داخل وحدة التخزين (اختياري) |
+| **جسم الطلب** | *لا يوجد* |
+| **مثال على الاستجابة** | ```json<br>{<br>  "Code": 200,<br>  "Status": "OK",<br>  "RowsDeleted": 1<br>}<br>``` |
+| **رموز الحالة الممكنة** | 200 OK – تم حذف الصفوف بنجاح<br>400 Bad Request – مُعلمات غير صالحة<br>401 Unauthorized – فشل المصادقة<br>404 Not Found – الملف أو ورقة العمل غير موجودة<br>500 Internal Server Error – مشكلة من جانب الخادم |
+
+**انظر أيضًا**
+
+- [إضافة صف](/cells/rows/add/)
+- [الحصول على صف](/cells/rows/get/)
+- [نسخ صف](/cells/rows/copy/)
+- [إخفاء صف](/cells/rows/hide/)
+- [نظرة عامة على الصفوف](/cells/rows/)
+---

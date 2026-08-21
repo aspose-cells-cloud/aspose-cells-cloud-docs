@@ -1,22 +1,26 @@
-﻿---
-title: Travailler avec l'hyperlien Excel
-second_title: Documen
-type: docs
-linktitle: Hyperlien
-url: /fr/hyperlinks/
-aliases: [/working-with-hyperlinks/,/working-with-hyperlink/]
-keywords: REST API, hyperlinks, spreadsheets, exce
-description: "Cells.Cloud API pour Excel opération : travailler avec des hyperliens sur un fichier Excel"
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Hyperliens
 ---
-Les hyperliens de la section Excel permettent de créer un raccourci pour accéder à une feuille de calcul, un fichier, un dossier ou une page web. Ils permettent d'accéder rapidement à un dossier ou à un lien spécifique.
+title: "Travail avec les liens hypertexte Excel"
+ArticleTitle: "Travail avec les liens hypertexte Excel – Documentation Aspose Cells Cloud"
+second_title: "Document"
+type: docs
+linktitle: "Liens hypertexte"
+url: /fr/hyperlinks/
+aliases: [/fr/working-with-hyperlinks/, /fr/working-with-hyperlink/]
+keywords: "Excel, liens hypertexte, Cells.Cloud, API, Aspose.Cells, feuille de calcul, liens, guide"
+description: "Découvrez comment récupérer, ajouter, mettre à jour et supprimer des liens hypertexte Excel à l’aide de l’API Aspose Cells Cloud."
+weight: 100
+---
 
-## Travailler avec des hyperliens sur un fichier Excel
+Les liens hypertexte dans Excel permettent aux utilisateurs de créer des raccourcis vers des feuilles de calcul, des fichiers, des dossiers ou des pages web, offrant ainsi une navigation rapide vers des emplacements spécifiques.
 
-- [Comment obtenir une description d'hyperlien à partir de la feuille de travail Excel.](/cells/fr/hyperlinks/get/)
-- [Comment obtenir la description de tous les hyperliens de la feuille de calcul Excel.](/cells/fr/hyperlinks/get-all/)
-- [Comment ajouter des hyperliens à la feuille de calcul Excel](/cells/fr/hyperlinks/add/)
-- [Comment mettre à jour les hyperliens dans la feuille de travail Excel](/cells/fr/hyperlinks/update/)
-- [Comment supprimer tous les hyperliens de la feuille de travail Excel](/cells/fr//hyperlinks/clear/)
-- [Comment supprimer un lien hypertexte de la feuille de travail Excel](/cells/fr//hyperlinks/delete/)
+**Prérequis :** un jeton API valide (voir le [Guide d’authentification](/fr/authentication/)) et le SDK Cells.Cloud installé.
+
+## Travail avec des liens hypertexte dans un fichier Excel
+
+- [Comment obtenir la description d’un lien hypertexte dans une feuille de calcul Excel.](/fr/cells/hyperlinks/get/) – Récupérer les détails d’un seul lien hypertexte, notamment son adresse et son texte affiché.  
+- [Comment obtenir la description de tous les liens hypertexte d’une feuille de calcul Excel.](/fr/cells/hyperlinks/get-all/) – Répertorier tous les liens hypertexte définis dans une feuille de calcul avec leurs propriétés correspondantes.  
+- [Comment ajouter des liens hypertexte à une feuille de calcul Excel](/fr/cells/hyperlinks/add/) – Insérer un nouveau lien hypertexte dans une feuille de calcul, en spécifiant l’URL cible et la plage de cellules.  
+- [Comment mettre à jour les liens hypertexte dans une feuille de calcul Excel](/fr/cells/hyperlinks/update/) – Modifier l’adresse, le texte affiché ou la cellule cible d’un lien hypertexte existant.  
+- [Comment supprimer tous les liens hypertexte d’une feuille de calcul Excel](/fr/cells/hyperlinks/clear/) – Supprimer tous les liens hypertexte d’une feuille de calcul en une seule opération.  
+- [Comment supprimer un lien hypertexte d’une feuille de calcul Excel](/fr/cells/hyperlinks/delete/) – Supprimer un lien hypertexte spécifique identifié par son index ou sa référence de cellule.  
+---

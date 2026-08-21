@@ -1,141 +1,159 @@
-﻿---
-title: Excel à CS
-second_title: Documen
-linktitle: Excel à CS
-type: docs
-url: /frconvert-excel-file-to-csv-file/
-aliases: [/convert-excel-file-to-csv-in-cloud/,/convert/excel-to-csv/,/convert-excel-file-to-csv-file/]
-keywords: Convert excel files to csv files
-description: Aspose.Cells Cloud REST API prend en charge la conversion de fichiers Excel en fichiers CSV. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 90
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Excel vers CSV
 ---
-Ce REST API indique à `convert` un fichier de feuille de calcul vers un fichier au format csv.
+title: "Excel vers CSV"
+second: "Document"
+linktitle: "Excel vers CSV"
+type: docs
+url: convert-excel-file-to-CSV-file/
+aliases:
+  - /convert-excel-file-to-CSV-in-cloud/
+  - /convert/excel-to-csv/
+  - /convert-excel-file-to-CSV-file/
+keywords: "Excel vers CSV, Aspose.Cells Cloud, API REST, conversion de feuilles de calcul, fichier CSV, conversion de fichiers"
+description: "Convertir des feuilles de calcul Excel en CSV à l’aide de l’API REST Aspose.Cells Cloud. Prend en charge plusieurs SDK et langages de programmation pour une intégration facile."
+weight: 90
+---
 
-**Paramètre de requête**
+Cette API REST convertit un fichier de feuille de calcul en fichier au format CSV.
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|mot de passe|chaîne| Le mot de passe nécessaire pour ouvrir un fichier Excel.|
-|nom de stockage|chaîne| Le nom du stockage où se trouve le fichier.|
-|vérifierExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
+## API REST
 
-**Paramètre du corps de la requête**
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/csv
+```
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|fichier de données| fichier de données|Le fichier de données est enregistré dans la première partie du contenu en plusieurs parties.|
+### **Sécurité et authentification**
 
-**Réponse**
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
-[Informations sur le fichier](/cells/fr/file-info/)
 
-## Spécification REST API
+### Paramètres de requête
 
-|**API**|**Taper**|**Description**|**Lien Swagger**|
-|:- |:- |:- |:- |
-|/cellules/convertir/csv|POSTE|Convertir une feuille de calcul en fichier csv.|[PostConvertWorkbookToCSV](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToCSV)|
+| Nom du paramètre        | Type   | Description                                                                           |
+| ----------------------- | ------ | ------------------------------------------------------------------------------------- |
+| `password`              | string | Le mot de passe requis pour ouvrir le fichier Excel.                                |
+| `storageName`           | string | Le nom du stockage où se trouve le fichier.                                         |
+| `checkExcelRestriction` | bool   | Indique s’il faut vérifier les restrictions des fichiers Excel lorsque l’utilisateur modifie des objets liés aux cellules. |
 
- Le[Spécification OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToCSV) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Paramètre du corps de la requête
 
- Vous pouvez utiliser**cURL** Outil en ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le cloud API avec cURL.
+| Nom du paramètre | Type      | Description                                                            |
+| ---------------- | --------- | ---------------------------------------------------------------------- |
+| `datafile`       | fichier | Le fichier de données inclus dans la première partie du corps de la requête multipart. |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### Réponse
+
+L’API renvoie un objet **FileInfo** contenant le fichier CSV généré.
+
+| Champ           | Type   | Description                                   |
+| --------------- | ------ | --------------------------------------------- |
+| **Filename**    | string | Nom du fichier CSV (par exemple, `exemple.csv`). |
+| **FileSize**    | int    | Taille du fichier en octets.                  |
+| **FileContent** | string | Contenu du fichier CSV encodé en Base64.      |
+
+[FileInfo](/cells/file-info/)
+
+
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Demande incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant. |
+| 413  | Charge utile trop grande    | Le fichier téléchargé dépasse la taille limite. |
+| 500  | Erreur interne du serveur   | Erreur inattendue du serveur. |
+## Comment utiliser l’API PostConvertWorkbookToCSV avec les SDK
+
+### Spécification de l’API PostConvertWorkbookToCSV
+
+La [Spécification OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToCSV) définit une interface de programmation accessible publiquement et vous permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande **cURL** pour accéder aux services web Aspose.Cells. L’exemple ci-dessous montre comment appeler l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/csv" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/csv" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: curl" \
+     -d '{"File":{}}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
-  "Filename": "xxxxxx.csv",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
+  "Filename": "exemple.CSV",
+  "FileSize": 12345,
+  "FileContent": "Contenu du fichier : chaîne_encodée_en_base64"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
+### Utiliser les SDK Aspose.Cells Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est la méthode la plus rapide pour développer. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur votre projet. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example_PostConvertWorkbookToPdf.cs" >}}
+{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example_PostConvertWorkbookToPDF.cs" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostConvertWorkbookToPdf.java" >}}
+{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostConvertWorkbookToPDF.java" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostConvertWorkbookToPdf.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostConvertWorkbookToPDF.php" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostConvertWorkbookToPdf.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostConvertWorkbookToPDF.rb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostConvertWorkbookToPdf.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostConvertWorkbookToPDF.ts" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostConvertWorkbookToPdf.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostConvertWorkbookToPDF.py" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostConvertWorkbookToPdf.pl" >}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostConvertWorkbookToPDF.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostConvertWorkbookToPdf.go" >}}
+{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostConvertWorkbookToPDF.go" >}}
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## D'autres API implémentent cette fonction
-
-[POST /cellules/{nom}/enregistrer sous](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)API vous permet d'enregistrer le fichier MS Excel sous forme de fichier CSV avec des paramètres supplémentaires et d'enregistrer le résultat sur le stockage.
-
-Ce fichier Excel REST API `convert` au format CSV.
-
-[PUT /cellules/convertir](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API vous permet de convertir le fichier MS Excel en fichier CSV avec des paramètres supplémentaires et d'enregistrer le résultat dans la réponse.
-
-Ce fichier Excel REST API `export` au format CSV.
-
-[OBTENIR /cellules/{nom}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API vous permet de convertir le fichier MS Excel en fichier CSV avec des paramètres supplémentaires et d'enregistrer le résultat dans la réponse.
+---

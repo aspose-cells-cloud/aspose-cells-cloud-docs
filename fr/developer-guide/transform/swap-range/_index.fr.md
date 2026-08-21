@@ -1,103 +1,130 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Plage de swap dans une feuille de calcul
-second_title: Documen
-ArticleTitle: Swap Range Data in a Spreadshee
-linktitle: Swap Rang
-type: docs
-url: /fr/swap-range/
-keywords: Aspose.Cells Cloud Web API, Swap Ranges, Office Cloud, RES
-description: L'outil d'échange de plages pour Excel et API offre un outil puissant permettant d'intervertir deux colonnes, lignes, plages ou cellules individuelles au sein d'un fichier Excel. Ce fichier API permet aux utilisateurs de réorganiser efficacement leurs tableaux, en préservant la mise en forme des données d'origine et en conservant le bon fonctionnement des formules existantes. Grâce à ce fichier API, les utilisateurs peuvent simplifier leurs tâches de manipulation de données et préserver l'intégrité de leurs feuilles de calcul.
-weight: 100
-kwords: Excel, Office Cloud, REST, PDF, CSV, Json, Markdown
 ---
-Échangez des données entre deux colonnes, lignes, plages ou cellules individuelles dans un fichier Excel.
+title: "Aspose.Cells Cloud – Échanger des colonnes, lignes et plages (v4.0)"
+second_title: "Document"
+ArticleTitle: "Échanger des données entre colonnes, lignes et cellules dans Excel"
+linktype: "docs"
+url: /swap-range/
+keywords: "Aspose Cells, API Excel, Échanger une plage, classeur cloud"
+description: "Échangez des colonnes, des lignes ou des plages dans des fichiers Excel à l’aide de l’API Aspose.Cells Cloud. Préservez le formatage, les formules et les références de cellules en une seule requête."
+weight: 100
+---
 
-## **Gamme Swap API**
+Échangez automatiquement des données entre deux colonnes, lignes, plages ou cellules quelconques dans des fichiers Excel à l’aide de l’API Aspose.Cells Cloud. L’API d’échange de plages permet d’échanger précisément des données tout en préservant tout le formatage, les formules et les références de cellules. Elle prend en charge la réorganisation complexe des données, le traitement par lots et l’intégration transparente dans le cloud pour les flux de travail professionnels.
+
+## **API d’échange de plages**
+
+### API Web
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/swap/range
+PUT https://api.aspose.cloud/v4.0/cells/swap/range
 ```
 
-### **Paramètres de la requête :**
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP| Description|
-|:- |:- |:- |:- |
-|Tableur|Déposer|Données de formulaire|Téléchargez le fichier de feuille de calcul.|
-|feuille de travail 1|Chaîne|Requête|Spécifiez la feuille de calcul qui est la source de la zone de données d'échange.|
-|gamme1|Chaîne|Requête|Spécifiez la source des données d’échange.|
-|feuille de travail 2|Chaîne|Requête|Spécifiez la feuille de calcul qui est la cible de la zone d’échange de données.|
-|gamme2|Chaîne|Requête|Spécifiez la cible des données d’échange.|
-|chemin de sortie|Chaîne|Requête|(Facultatif) Le chemin du dossier où est stocké le classeur. La valeur par défaut est null.|
-|outStorageName|Chaîne|Requête|Nom de stockage du fichier de sortie.|
-|région|Chaîne|Requête|Le paramètre de région de la feuille de calcul.|
-|mot de passe|Chaîne|Requête|Le mot de passe pour ouvrir le fichier de feuille de calcul.|
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### **Paramètres de la requête**
+
+| Nom du paramètre   | Type   | Emplacement | Description                                                                                                                                   |
+| ------------------ | ------ | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Spreadsheet**    | Fichier | FormData    | **Obligatoire.** Le fichier de classeur Excel source (`.xlsx`, `.xls`).                                                                       |
+| **worksheet1**     | Chaîne | Query       | **Obligatoire.** Nom de la feuille de calcul contenant la première zone de données.                                                          |
+| **range1**         | Chaîne | Query       | **Obligatoire.** Plage de cellules (par ex. `A1:D10`) dans `worksheet1` à échanger.                                                           |
+| **worksheet2**     | Chaîne | Query       | **Obligatoire.** Nom de la feuille de calcul contenant la deuxième zone de données (peut être identique à `worksheet1`).                    |
+| **range2**         | Chaîne | Query       | **Obligatoire.** Plage de cellules (par ex. `F1:I10`) dans `worksheet2` à échanger. **Important :** `range1` et `range2` doivent avoir des dimensions identiques. |
+| **outPath**        | Chaîne | Query       | **Facultatif.** Dossier dans le stockage cloud où le classeur modifié sera enregistré.                                                       |
+| **outStorageName** | Chaîne | Query       | **Obligatoire.** Nom du service de stockage cloud configuré (par ex. `MyCompanyStorage`).                                                    |
+| **region**         | Chaîne | Query       | **Facultatif.** Paramètre régional (par ex. `fr-FR`, `ja-JP`) pouvant influencer le formatage.                                               |
+| **password**       | Chaîne | Query       | **Facultatif.** Mot de passe permettant de déchiffrer un classeur protégé. Omettre s’il n’est pas chiffré.                                    |
+
+**Exemple de requête (cURL)**  
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/swap/range?worksheet1=Sheet1&range1=A1:D10&worksheet2=Sheet2&range2=F1:I10&outStorageName=MyCompanyStorage" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@/path/to/workbook.xlsx"
+```
 
 ### **Réponse**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Codes d'erreur
+**Remarques :**  
+- L’API renvoie le classeur modifié sous forme de flux de fichier. Si `outPath` est spécifié, le fichier est également enregistré à l’emplacement donné dans le stockage cloud.  
+- Des dimensions de plages non correspondantes entraîneront une erreur **400 Bad Request**.
 
-- **400 Mauvaise requête**: URI Apose.Cells Cloud API non valide.
-- **401 Non autorisé**: Jeton d'accès non valide. Ou identifiant client et secret non valides.
-- **404 non trouvé**:Le fichier de feuille de calcul n'est pas accessible.
-- **Erreur de serveur 500**:La feuille de calcul a rencontré une anomalie lors de l'obtention des données de calcul.
+### Codes d’erreur
 
-## Où devons-nous utiliser le Swap Range API ?
+| Code                 | Description                                                        |
+| -------------------- | ------------------------------------------------------------------ |
+| **400 Bad Request**  | URI de requête invalide ou dimensions de plages non correspondantes. |
+| **401 Unauthorized** | Jeton d’accès invalide ou expiré ; le client-id ou le secret est incorrect. |
+| **404 Not Found**    | Le fichier de classeur spécifié ne peut pas être accédé.         |
+| **500 Server Error** | Une erreur interne s’est produite lors du traitement du classeur. |
 
-Lorsque vous devez échanger des données de plage dans une feuille de calcul, vous pouvez utiliser ce API.
+## Où faut-il utiliser l’API d’échange de plages ?
 
-## Pourquoi utiliser la gamme Swap API ?
+- **Restructuration de modèles financiers** – Réorganisez des blocs de données (par ex. déplacez la prévision du T3 vers le T4) tout en préservant les formules et le formatage conditionnel.
+- **Canalisation de données et processus ETL** – Échangez des plages de données brutes avec des plages nettoyées dans une feuille intermédiaire avant la production finale.
+- **Correction d’erreurs et récupération de données** – Corrigez rapidement des données déplacées sans avoir à copier-coller manuellement.
 
-- Échangez rapidement des données de plage dans une feuille de calcul Excel.
-- Le développement peut être rapidement réalisé grâce au SDK existant.
+## Pourquoi utiliser l’API d’échange de plages ?
 
-## Comment utiliser la plage de swap API avec les SDK
+- **Adaptée aux développeurs** – Des SDK sont disponibles pour plusieurs langages, réduisant l’effort de développement par rapport à la création de solutions personnalisées.
+- **Réduction des coûts de main-d’œuvre** – Automatise le réarrangement des données, diminuant ainsi le besoin de consolidation manuelle.
+- **Paiement à l’usage** – Vous ne payez que pour les appels à l’API que vous effectuez réellement.
+- **Zéro maintenance** – Aucun serveur à gérer, aucune mise à jour logicielle à effectuer, aucune préoccupation de compatibilité.
 
-### Spécifications de la gamme Swap API
+## Comment utiliser l’API d’échange de plages avec les SDK ?
 
- Le[Spécifications de la gamme Swap API](https://reference.aspose.cloud/cells/#/TransformController/SwapRange) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Spécification de l’API d’échange de plages
 
-### Utiliser les SDK Cloud Aspose.Cells
+La [spécification de l’API d’échange de plages](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Transform/SwapRange) définit une interface de programmation accessible publiquement et permet d’effectuer directement des interactions REST depuis un navigateur web.
 
-L'utilisation du SDK est le moyen le plus rapide de développer, car il fait abstraction des détails de bas niveau, vous permettant d'échanger la plage avec du code court.
- Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+### Utiliser les SDK Aspose.Cells Cloud
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+L’utilisation d’un SDK est la méthode la plus rapide pour développer, car elle masque les détails de bas niveau et permet d’échanger des plages à l’aide d’un code concis. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SwapRange.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SwapRange.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SwapRange.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SwapRange.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SwapRange.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SwapRange.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SwapRange.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SwapRange.go" >}}
-{{< /tab >}}
+Les exemples de code suivants montrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SwapRange.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SwapRange.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SwapRange.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SwapRange.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SwapRange.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SwapRange.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SwapRange.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SwapRange.go" >}}
+{{</tab>}}
 {{< /tabs >}}
+---

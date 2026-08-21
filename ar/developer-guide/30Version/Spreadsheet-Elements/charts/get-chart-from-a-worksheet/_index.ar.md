@@ -1,74 +1,121 @@
-﻿---
-title: الحصول على مخطط من ورقة عمل
+---
+title: "استرجاع مخطط من ورقة عمل"
 type: docs
-url: /ar/charts/get/
+url: /charts/get/
 aliases: [/get-chart-from-a-worksheet/]
 weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على مخطط من ورقة عمل
+keywords: "Aspose.Cells Cloud, استرجاع المخطط, ورقة العمل, واجهة REST API, Excel, واجهة مخطط, استرجاع المخطط, مخطط Excel"
+description: "استرجاع معلومات المخطط، بما في ذلك البيانات الوصفية وتنسيق التصدير، من ورقة عمل باستخدام واجهة Aspose.Cells Cloud REST API."
+ArticleTitle: "استرجاع مخطط من ورقة عمل – واجهة Aspose.Cells Cloud API"
 ---
-يشير هذا REST API إلى الحصول على معلومات الرسم البياني.
- 
-## RSET API
- 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}
- 
+
+تقوم هذه الواجهة REST باسترجاع معلومات المخطط.
+
+**المتطلبات المسبقة** – لاستدعاء هذه النقطة النهائية، يجب أن تمتلك حسابًا صالحًا على Aspose.Cells Cloud، وموقع تخزين نشط، ورمز وصول JWT. احصل على الرمز المميز اتباعًا للتعليمات في دليل المصادقة قبل إجراء أي طلبات API.
+
+## واجهة GetWorksheetChart
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}
 ```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| رقم الرسم البياني| عدد صحيح| طريق| رقم الرسم البياني.|
-| شكل| خيط| استفسار| تنسيق الملف المُصدَّر.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
- 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+
+### **الأمان والمصادقة**
+
+واجهات Aspose.Cells Cloud آمنة وتشترط <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+### معاملات الطلب
+
+| اسم المعامل | النوع    | الموقع | الوصف                                     |
+|-------------|---------|--------|--------------------------------------------|
+| name        | string  | path   | اسم ملف Excel.                             |
+| sheetName   | string  | path   | اسم ورقة العمل التي يحتوي المخطط عليها.    |
+| chartNumber | integer | path   | المؤشر المبدئي (صفر-الأساس) للمخطط المراد استرجاعه. |
+| format      | string  | query  | تنسيق التصدير المطلوب (مثل: png، jpeg).    |
+| folder      | string  | query  | مسار المجلد حيث يتم تخزين المستند.         |
+| storageName | string  | query  | اسم خدمة التخزين.                          |
+
+### **الاستجابة**
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "Chart": {
+    "Name": "Chart 1",
+    "Type": "Bar",
+    "Top": 50,
+    "Left": 100,
+    "Width": 400,
+    "Height": 300,
+    "DataRange": "A1:B5",
+    "ShowLegend": true,
+    "Format": "png"
+  }
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | الوصف                                                 |
+|-------|----------------------------|--------------------------------------------------------|
+| 200   | ناجح (OK)                  | تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400   | طلب غير صالح (Bad Request) | معاملات مفقودة أو غير صالحة (مثل: نوع ملف غير مدعوم). |
+| 401   | غير مُصادَق (Unauthorized)  | رمز JWT غير صالح أو مفقود.                             |
+| 413   | حملة كبيرة جدًا (Payload Too Large) | ملف مُرفع يتجاوز الحد الأقصى للحجم.                |
+| 500   | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم.                         |
+
+## كيفية استخدام واجهة GetWorksheetChart مع حزم تطوير البرمجيات (SDKs)
+
+### مواصفات واجهة GetWorksheetChart
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) واجهة برمجة تطبيقات قابلة للوصول العام، وتسمح لك بإجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى واجهة Cloud API باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" 
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
-  "Status": "OK"
-
+  "Status": "OK",
+  "Chart": {
+    "Name": "Chart 1",
+    "Type": "Bar",
+    "Top": 50,
+    "Left": 100,
+    "Width": 400,
+    "Height": 300,
+    "DataRange": "A1:B5",
+    "ShowLegend": true,
+    "Format": "png"
+  }
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
-## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
- 
+
+### استخدام حزم تطوير البرمجيات Aspose.Cells Cloud
+
+استخدام حزمة تطوير البرمجيات (SDK) هو أفضل طريقة لتسريع عملية التطوير. تتعامل SDK مع التفاصيل من المستوى المنخفض، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم تطوير البرمجيات Aspose.Cells Cloud.
+
+توضح أمثلة الكود التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام SDKs مختلفة:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -130,3 +177,4 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 {{< /tab >}}
 
 {{< /tabs >}}
+---

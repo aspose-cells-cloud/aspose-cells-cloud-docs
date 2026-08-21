@@ -1,46 +1,74 @@
-﻿---
-title: احصل على MinRow من ورقة عمل Excel
+---
+title: "استرجاع MinRow من ورقة عمل Excel – مرجع واجهة برمجة تطبيقات Aspose.Cells Cloud"
 type: docs
 url: /ar/get-minrow-from-excel-worksheet/
 weight: 80
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على MinRow من ورقة عمل Excel
+keywords: "Aspose.Cells، GetMinRow، ورقة عمل Excel، واجهة برمجة تطبيقات REST، مؤشر الصف الأدنى، حزمة تطوير برامج السحابة"
+description: "تعرّف على كيفية استرجاع مؤشر الصف الأدنى لورقة عمل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST (الإصدار 3.0). يتضمن طلب cURL الكامل مع المصادقة، ومخطط الاستجابة، وأمثلة لحزم تطوير البرامج (SDKs) بعدة لغات برمجة."
+ArticleTitle: "استرجاع MinRow من ورقة عمل Excel – مرجع واجهة برمجة تطبيقات Aspose.Cells Cloud"
 ---
-يشير هذا REST API إلى الحصول على `minrow` في ملف Excel عندما تكون المعلمة `cellOrMethodName` هي `minrow`.
 
-- **cURL مثال**
+تُعيد هذه الواجهة API مؤشر الصف الأدنى في ورقة عمل Excel عندما يُعيّن المعامل `cellOrMethodName` بالقيمة `minrow`. يمكن استخدام هذه النقطة النهائية لتحديد أول صف غير فارغ (مبني على الصفر) في ورقة عمل معيّنة.
 
+- **مثال باستخدام cURL:**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/minrow" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/minrow" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MinRow": 0
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **عائلة SDK السحابية**
+**الطلب**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+```
+GET https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/minrow
+```
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+| الخصائص            | النوع   | الإلزامية | الوصف                                                  |
+|--------------------|---------|-----------|---------------------------------------------------------|
+| `fileName`         | نص      | نعم       | اسم ملف المصنف (مثلًا: `myWorkbook.xlsx`).             |
+| `sheetName`        | نص      | نعم       | ورقة العمل المستهدفة (مثلًا: `Sheet1`).                |
+| `cellOrMethodName` | نص      | نعم       | القيمة الثابتة `minrow`.                                |
+| `folder`           | نص      | لا         | مسار مجلد التخزين السحابي.                             |
+| `storageName`      | نص      | لا         | اسم التخزين في حال استخدام تخزين غير افتراضي.         |
 
+**الاستجابة**
 
+تُعيد الخدمة كائن JSON يحتوي على الخاصية `MinRow`، التي تشير إلى مؤشر أول صف غير فارغ (مبني على الصفر).
+
+| حالة HTTP | المعنى                                    |
+|-----------|--------------------------------------------|
+| 200       | نجاح – حمولة JSON تحتوي على `MinRow`.     |
+| 401       | غير مُصرّح – رمز وصول غير صالح أو مفقود. |
+| 404       | المصنف أو ورقة العمل غير موجودين.        |
+| 500       | خطأ داخلي في الخادم.                      |
+
+تُعتبر القيمة `MinRow` مفيدة عندما تحتاج إلى تحديد نقطة البداية للبيانات في ورقة العمل بسرعة.
+
+- **استخدام حزم تطوير البرامج (SDKs) لـ Aspose.Cells Cloud**
+
+يعتبر استخدام SDKs أسرع طريقة لتطوير التطبيقات، حيث تُدار التفاصيل منخفضة المستوى تلقائيًا، مما يمكّنك من التركيز على مشروعك. يُرجى مراجعة <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بحزم تطوير البرامج (SDKs) الخاصة بـ Aspose.Cells Cloud.
+
+توضح الأمثلة التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

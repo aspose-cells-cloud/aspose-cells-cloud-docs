@@ -1,73 +1,91 @@
-﻿---
-title: Ta bort alla kalkylbladsvalideringar på ett Excel-kalkylblad
-second_title: Documen
-linktitle: Clea
-type: docs
-url: /sv/validations/clear/
-keywords: Delete all worksheet validations from an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder borttagning av alla kalkylbladsvalideringar från ett Excel-kalkylblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ta bort alla kalkylbladsvalideringar på ett Excel-kalkylblad
 ---
-Denna REST API anger att alla kalkylbladsvalideringar ska tas bort på ett Excel-kalkylblad.
+title: "Ta bort alla kalkylbladsvalideringar – Aspose.Cells Cloud API"
+second_title: "Dokumentation"
+linktitle: "Ta bort"
+type: docs
+url: /validations/clear/
+keywords: "Aspose.Cells Cloud, Ta bort kalkylbladsvalideringar, Excel, REST API, Validering av kalkylark, API"
+description: "Ta bort alla regler för datavalidering från ett kalkylblad i en Excel-fil med Aspose.Cells Cloud REST API. Inkluderar autentiseringsssteg, begärandebeskrivning, cURL-exempel, svarschema, felhantering och SDK-utdrag."
+weight: 10
+---
 
-## RSET API
+**Förutsättningar**
+
+- Ett giltigt Aspose Cloud-konto.
+- En JWT-åtkomsttoken som har erhållits via Aspose Clouds autentiserings-API (`/connect/token`).
+- Arbetsboken måste lagras i din Aspose Cloud-lagring (eller så måste lämpliga frågeparametrar `folder`/`storageName` anges).
+
+Denna REST API tar bort alla kalkylbladsvalideringar från ett Excel-kalkylblad.
+
+## REST API
 
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
- 
 ```
 
-Begäranparametrarna är:
+### **Begärparametrar**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| valideringsindex| heltal| väg| Valideringsindexet.|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameternamn | Typ   | Plats  | Beskrivning                                            |
+| ------------- | ----- | ------ | ------------------------------------------------------ |
+| name          | string | path   | Namnet på Excel-dokumentet.                            |
+| sheetName     | string | path   | Namnet på kalkylbladet som innehåller valideringarna. |
+| folder        | string | query  | Mappen där dokumentet är lagrat.                       |
+| storageName   | string | query  | Namnet på lagringstjänsten.                            |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör att du kan utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda cURL-kommandoradsverktyget för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man anropar API:et med cURL efter att ha erhållit en JWT-token.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Felhantering
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| HTTP-status | Betydelse             | Beskrivning                                                |
+| ----------- | --------------------- | ---------------------------------------------------------- |
+| 400         | Felaktig begäran      | Begäran är felaktigt formaterad eller saknar nödvändiga parametrar. |
+| 401         | Auktorisering saknas  | JWT-token saknas, är ogiltig eller har gått ut.            |
+| 404         | Hittades inte         | Den angivna arbetsboken eller kalkylbladet finns inte.     |
+| 500         | Internt serverfel     | Ett oväntat fel uppstod på serversidan.                    |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Felsvaret följer samma JSON-struktur med fälten `Code` och `Message`, till exempel:
+
+```json
+{
+  "Code": 401,
+  "Message": "Ogiltig eller utgången token."
+}
+```
+
+## Moln-SDK-familj
+
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK abstraher bort detaljer på låg nivå så att du kan fokusera på affärslogik. Se [GitHub-repositoriet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:n.
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:n:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,68 +1,90 @@
-﻿---
-title: تحويل الرسم البياني إلى صورة
+---
+title: "تحويل مخطط Excel إلى صورة – واجهة Aspose.Cells Cloud REST API"
 type: docs
-url: /ar/charts/to-image/
+url: /charts/to-image/
 aliases: [/convert-charts-to-image/]
 weight: 50
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تحويل الرسم البياني إلى صورة
+keywords: "Aspose.Cells Cloud، تحويل المخطط إلى صورة، تحويل مخططات Excel، واجهة REST API، تنسيق الصورة، PNG، JPEG، BMP، TIFF، GIF"
+description: "تعلم كيفية تحويل كائنات المخططات في Excel إلى صور بتنسيقات PNG أو JPEG أو BMP أو TIFF أو GIF باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن تفاصيل نقطة النهاية، المعلمات، مثال باستخدام cURL، مقاطع كود لواجهات برمجة التطبيقات (SDK)، مثال على الاستجابة، ومعالجة الأخطاء."
+ArticleTitle: "تحويل مخطط Excel إلى صورة – واجهة Aspose.Cells Cloud REST API"
 ---
-يشير هذا REST API إلى كيفية تحويل مخطط إلى صورة.
 
-## RSET API
+توضح واجهة REST هذه كيفية تحويل **مخطط Excel** إلى صورة باستخدام **Aspose.Cells Cloud**.
 
-```bash
+## واجهة PutWorksheetAddChart API
 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}?format={format}
-
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}?format={format}
 ```
-معلمات الطلب هي:
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| رقم الرسم البياني| عدد صحيح| طريق| رقم الرسم البياني.|
-| شكل| خيط| استفسار| تنسيق الملف المُصدَّر.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تشمل تنسيقات الصور المدعومة `png` و `jpeg` و `bmp` و `tiff` و `gif`.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **الأمان والمصادقة**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+### معلمات الطلب
+
+| اسم المعلمة | النوع    | الموقع | الوصف                     |
+|------------|---------|--------|---------------------------|
+| name       | string  | path   | اسم المستند.              |
+| sheetName  | string  | path   | اسم ورقة العمل.           |
+| chartNumber| integer | path   | رقم المخطط.               |
+| format     | string  | query  | تنسيق الملف المصدر.       |
+| folder     | string  | query  | مجلد المستند.             |
+| storageName| string  | query  | اسم وحدة التخزين.         |
+
+### **الاستجابة**
+
+تُرجع نقطة النهاية ملف الصورة بالتنسيق المطلوب كدفق ثنائي (مثل `byte[]`). يتطابق رأس `Content-Type` في الاستجابة مع تنسيق الصورة المحدد، مثل `image/png` أو `image/jpeg` وما إلى ذلك.
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | الوصف                                           |
+|------|----------------------------|------------------------------------------------|
+| 200  | OK (تم بنجاح)              | تم تطبيق المرشح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | Bad Request (طلب خاطئ)     | معلمات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401  | Unauthorized (غير مخوّل)    | رمز JWT غير صالح أو مفقود.                     |
+| 413  | Payload Too Large (حمولة كبيرة جدًا) | تجاوز حجم الملف المرفوع الحد المسموح به. |
+| 500  | Internal Server Error (خطأ داخلي في الخادم) | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام واجهة PutWorksheetAddChart API باستخدام واجهات برمجة التطبيقات (SDKs)
+
+### مواصفات واجهة PutWorksheetAddChart API
+
+تُعرّف <a href="https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart" rel="noopener noreferrer">مواصفات OpenAPI</a> واجهة برمجة تطبيقات قابلة للوصول العام وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب الخاصة بـ Aspose.Cells. يوضح المثال التالي كيفية إجراء المكالمات إلى واجهة Cloud API باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg"
--X GET
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```text
 byte[]
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام واجهات برمجة تطبيقات (SDKs) الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام واجهة برمجة التطبيقات (SDK) هو أفضل طريقة لتسريع عملية التطوير. فواجهات برمجة التطبيقات (SDKs) تتعامل مع التفاصيل منخفضة المستوى وتسمح لك بالتركيز على مهام مشروعك. يُرجى الاطلاع على <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بواجهات برمجة التطبيقات (SDKs) الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
-
+توضح أمثلة الكود التالية كيفية استدعاء خدمات الويب الخاصة بـ Aspose.Cells باستخدام مكتبات (SDKs) مختلفة:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Python" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 
@@ -104,6 +126,8 @@ byte[]
 
 {{< tab tabNum="7" >}}
 
+مثال قادم قريبًا.
+
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
@@ -119,3 +143,4 @@ byte[]
 {{< /tab >}}
 
 {{< /tabs >}}
+---

@@ -1,80 +1,105 @@
-﻿---
-title: Excel إلى ماركدو
-second_title: Documen
-linktitle: Excel إلى ماركدو
-type: docs
-url: /ar/convert-excel-file-to-markdown-file/
-keywords: Convert excel files to markdown files
-description: يدعم Cloud REST تحويل ملفات إكسل إلى ملفات ترميز Markdown. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك أندرويد، وGo، وNodeJS، وRuby، وSwift.
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، Excel إلى Markdown
 ---
-يشير هذا REST API إلى `convert` ملف جدول بيانات إلى ملف بتنسيق markdown.
+title: "تحويل ملف إكسل إلى تنسيق ماركداون"
+second_title: "مستند"
+linktype: "conversion"
+type: docs
+url: /convert-excel-file-to-markdown-file/
+keywords: "Excel, Markdown, conversion, Aspose.Cells Cloud, REST API, excel to markdown conversion, aspose cells markdown api, excel markdown export"
+description: "تحويل أوراق عمل إكسل إلى تنسيق ماركداون باستخدام واجهة Aspose.Cells Cloud REST API – يتضمن مثالًا باستخدام cURL، وأمثلة لأكواد SDK، والمعلمات المطلوبة وتفاصيل المصادقة."
+weight: 100
+ArticleTitle: "تحويل ملف إكسل إلى ماركداون – وثائق واجهة برمجة تطبيقات Aspose.Cells Cloud"
+---
 
-**معلمة الاستعلام**
+تقوم هذه الواجهة البرمجية لواجهة REST بتحويل ملف جدول بيانات إلى ملف بصيغة ماركداون.
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|كلمة المرور|خيط| كلمة المرور المطلوبة لفتح الملف Excel.|
-|اسم التخزين|خيط| اسم التخزين الذي يقع فيه الملف.|
-|التحقق من قيود Excel|منطقي| ما إذا كان من الممكن التحقق من تقييد ملف Excel عندما يقوم المستخدم بتعديل الكائنات المرتبطة بالخلايا.|
+## الأمان والمصادقة
+تُعتبر واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [المصادقة باستخدام رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-**معلمة نص الطلب**
+## واجهة REST
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|ملف البيانات| ملف البيانات|يتم حفظ ملف البيانات في الجزء الأول من المحتوى المتعدد الأجزاء.|
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/markdown
+```
 
-**إجابة**
+### **الأمان والمصادقة**
 
-[معلومات الملف](/cells/ar/file-info/)
+تُعتبر واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [المصادقة باستخدام رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## مواصفات REST API
+### معاملات الاستعلام
 
-|**API**|**يكتب**|**وصف**|**رابط سواجر**|
-|:- |:- |:- |:- |
-|/الخلايا/التحويل/الترميز|بريد|تحويل جدول بيانات إلى ملف pptx.|[PostConvertWorkbookToMarkdown](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown)|
+| اسم المعامل             | النوع   | الموقع   | الوصف                                                                                                      |
+| ----------------------- | ------- | -------- | ---------------------------------------------------------------------------------------------------------- |
+| password                | string  | query    | كلمة المرور المطلوبة لفتح ملف إكسل.                                                                       |
+| storageName             | string  | query    | اسم وحدة التخزين التي يقع عليها الملف.                                                                    |
+| checkExcelRestriction   | bool    | query    | يُشير إلى ما إذا كان سيتم تطبيق القيود الخاصة بإكسل عند تعديل الخلايا أو الكائنات المرتبطة بها.         |
+| datafile                | file    | body     | ملف إكسل المراد رفعه كجزء أول من المحتوى متعدد الأجزاء (multipart content).                                |
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### الاستجابة
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+ترجع الواجهة البرمجية كائن JSON من النوع **FileInfo**:
+
+- **FileInfo** – كائن يحتوي على اسم الملف وحجمه ومحتواه المشفر بصيغة base64 للملف المُولَّد بصيغة ماركداون.
+
+```json
+{
+  "Filename": "example.md",
+  "FileSize": 12345,
+  "FileContent": "base64_encoded_string"
+}
+```
+
+### استجابات الأخطاء
+
+| رمز HTTP | الوصف                                                       | مثال محتوى JSON                                 |
+| --------- | ------------------------------------------------------------ | ----------------------------------------------- |
+| 401       | غير مُعتمد – رمز مفقود أو غير صالح.                         | `{"error":"Invalid access token."}`             |
+| 400       | طلب غير صحيح – معلمات مطلوبة مفقودة أو تنسيق ملف غير صالح. | `{"error":"The 'datafile' field is required."}` |
+| 500       | خطأ داخلي في الخادم – مشكلة غير متوقعة في الخادم.          | `{"error":"An unexpected error occurred."}`     |
+
+
+
+## كيفية استخدام واجهة PostConvertWorkbookToMarkdown باستخدام SDKs
+
+###仕様 واجهة PostConvertWorkbookToMarkdown
+
+يُعرّف [仕اء OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown) واجهة برمجة قابلة للوصول العام، ويسمح لك بإجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية استدعاء الواجهة البرمجية السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/markdown" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```shell
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/markdown" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "Authorization: Bearer <access_token>" \
+     -F "File=@your_excel_file.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
-  "Filename": "xxxxxx.md",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
+  "Filename": "example.md",
+  "FileSize": 12345,
+  "FileContent": "base64_encoded_string"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام SDKs لـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDKs هو أسرع طريقة للتطوير. فتتولى SDKs معالجة التفاصيل منخفضة المستوى، مما يتيح لك التركيز على منطق أعمالك. يمكنك الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الرمز التالية كيفية استدعاء خدمات Aspose.Cells باستخدام SDKs مختلفة:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -127,14 +152,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/markdown"
 
 {{< /tabs >}}
 
-## تنفذ واجهات برمجة التطبيقات الأخرى هذه الوظيفة
+## واجهات برمجية أخرى تنفذ نفس الوظيفة
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) يتيح لك API حفظ ملف MS Excel كملف HTML مع إعدادات إضافية وحفظ النتيجة في وحدة التخزين.
-
-هذا الملف REST API `convert` excel إلى HTML.
-
-[وضع /الخلايا/تحويل](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) يتيح لك API تحويل ملف MS Excel إلى ملف HTML بإعدادات إضافية وحفظ النتيجة في الاستجابة.
-
-هذا الملف REST API `export` excel إلى HTML.
-
-[احصل على /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) يتيح لك API تحويل ملف MS Excel إلى ملف HTML بإعدادات إضافية وحفظ النتيجة في الاستجابة.
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – تحفظ ملف إكسل بصيغة HTML مع إعدادات إضافية وتخزن النتيجة.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – تحول ملف إكسل إلى HTML مع خيارات إضافية وترد بالنتيجة في الاستجابة.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – تسترد ملف إكسل ويمكن تحويله إلى HTML مع إعدادات اختيارية.
+---

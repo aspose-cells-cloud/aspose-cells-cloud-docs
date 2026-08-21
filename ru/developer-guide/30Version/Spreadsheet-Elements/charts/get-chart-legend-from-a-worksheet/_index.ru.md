@@ -1,265 +1,245 @@
-﻿---
-title: Получить легенду диаграммы из рабочего листа
+---
+title: "Получить легенду диаграммы из рабочего листа"
 type: docs
-url: /ru/charts/legend/get/
+url: /charts/legend/get/
 aliases: [/get-chart-legend-from-a-worksheet/]
 weight: 80
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получение легенды диаграммы из рабочего листа
+keywords: "Aspose.Cells, легенда диаграммы, REST API, Excel, облачный SDK, получить легенду диаграммы, рабочий лист, электронная таблица"
+description: "Получить легенду диаграммы из конкретного рабочего листа в файле электронной таблицы Excel с использованием Aspose.Cells Cloud REST API (v3.0). Включает endpoint, параметры, пример cURL и фрагменты SDK."
 ---
-Этот REST API указывает на получение легенды диаграммы
- 
-## РСЕT API
- 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
- 
-```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей тетради.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| chartIndex| целое число| путь| Индекс диаграммы.|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
- 
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartLegend) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
- 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Операция **Get Chart Legend** (Получить легенду диаграммы) возвращает информацию о легенде диаграммы, расположенной в рабочем листе файла Excel. Данный endpoint входит в состав **Aspose.Cells Cloud API v3.0** и может быть использован при необходимости получить свойства легенды, такие как её положение, шрифт, размер и форматирование.
+
+## **REST API**
+
+```bash
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
+```
+
+### Безопасность и аутентификация
+
+Облачные API Aspose.Cells защищены и требуют [аутентификации на основе JWT-токена](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+### Параметры запроса
+
+| Имя параметра | Тип    | Расположение | Описание                                  |
+|---------------|--------|-------------|-------------------------------------------|
+| name          | string | path        | Имя файла рабочей книги.                  |
+| sheetName     | string | path        | Имя рабочего листа.                       |
+| chartIndex    | integer| path        | Индекс диаграммы (начиная с 0).           |
+| folder        | string | query       | Путь к папке, где хранится рабочая книга.|
+| storageName   | string | query       | Имя хранилища.                            |
+
+### **Ответ**
+
+```json
+{
+  "Legend": {
+    "Position": "Right",
+    "LegendEntries": {
+      "link": {
+        "Href": "/legendEntries",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Area": {
+      "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+      "FillFormat": {
+        "Type": "Automatic",
+        "SolidFill": null,
+        "PatternFill": null,
+        "TextureFill": null,
+        "GradientFill": null,
+        "ImageData": null
+      },
+      "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+      "Formatting": "Automatic",
+      "InvertIfNegative": false,
+      "Transparency": 0.0
+    },
+    "AutoScaleFont": true,
+    "BackgroundMode": "Automatic",
+    "Border": {
+      "BeginArrowLength": "Medium",
+      "BeginArrowWidth": "Medium",
+      "BeginType": "None",
+      "CapType": "Flat",
+      "Color": { "A": 0, "R": 0, "G": 0, "B": 0 },
+      "CompoundType": "Single",
+      "DashType": "Solid",
+      "EndArrowLength": "Medium",
+      "EndArrowWidth": "Medium",
+      "EndType": "None",
+      "GradientFill": null,
+      "IsAuto": true,
+      "IsAutomaticColor": true,
+      "IsVisible": true,
+      "JoinType": "Round",
+      "Style": "Solid",
+      "Transparency": 0.0,
+      "Weight": "HairLine",
+      "WeightPt": 0.0
+    },
+    "Font": {
+      "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+      "DoubleSize": 10.0,
+      "IsBold": false,
+      "IsItalic": false,
+      "IsStrikeout": false,
+      "IsSubscript": false,
+      "IsSuperscript": false,
+      "Name": "Arial",
+      "Size": 10,
+      "Underline": "None"
+    },
+    "IsAutomaticSize": true,
+    "IsInnerMode": null,
+    "Shadow": false,
+    "ShapeProperties": null,
+    "Width": 823,
+    "Height": 1043,
+    "X": 3125,
+    "Y": 1466,
+    "link": {
+      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend",
+      "Rel": "self",
+      "Title": null,
+      "Type": null
+    }
+  },
+  "Code": 0,
+  "Status": "0"
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код  | Значение                    | Описание                                                   |
+|------|-----------------------------|------------------------------------------------------------|
+| 200  | OK                          | Фильтр применён успешно; ответ содержит данные об операции.|
+| 400  | Bad Request                 | Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401  | Unauthorized                | Некорректный или отсутствующий JWT-токен.                 |
+| 413  | Payload Too Large           | Загружаемый файл превышает допустимый размер.              |
+| 500  | Internal Server Error       | Непредвиденная ошибка сервера.                             |
+
+## Как использовать API GetWorksheetChartLegend с помощью SDK
+
+### Спецификация API GetWorksheetChartLegend
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartLegend) определяет публично доступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к облачным сервисам Aspose.Cells. В следующем примере показано, как вызвать облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" 
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Legend": {
-
     "Position": "Right",
-
     "LegendEntries": {
-
       "link": {
-
         "Href": "/legendEntries",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "Area": {
-
-      "BackgroundColor": {
-
-        "A": 0,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
       "FillFormat": {
-
         "Type": "Automatic",
-
         "SolidFill": null,
-
         "PatternFill": null,
-
         "TextureFill": null,
-
         "GradientFill": null,
-
         "ImageData": null
-
       },
-
-      "ForegroundColor": {
-
-        "A": 0,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
       "Formatting": "Automatic",
-
       "InvertIfNegative": false,
-
       "Transparency": 0.0
-
     },
-
     "AutoScaleFont": true,
-
     "BackgroundMode": "Automatic",
-
     "Border": {
-
       "BeginArrowLength": "Medium",
-
       "BeginArrowWidth": "Medium",
-
       "BeginType": "None",
-
       "CapType": "Flat",
-
-      "Color": {
-
-        "A": 0,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "Color": { "A": 0, "R": 0, "G": 0, "B": 0 },
       "CompoundType": "Single",
-
       "DashType": "Solid",
-
       "EndArrowLength": "Medium",
-
       "EndArrowWidth": "Medium",
-
       "EndType": "None",
-
       "GradientFill": null,
-
       "IsAuto": true,
-
       "IsAutomaticColor": true,
-
       "IsVisible": true,
-
       "JoinType": "Round",
-
       "Style": "Solid",
-
       "Transparency": 0.0,
-
       "Weight": "HairLine",
-
       "WeightPt": 0.0
-
     },
-
     "Font": {
-
-      "Color": {
-
-        "A": 255,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
       "DoubleSize": 10.0,
-
       "IsBold": false,
-
       "IsItalic": false,
-
       "IsStrikeout": false,
-
       "IsSubscript": false,
-
       "IsSuperscript": false,
-
       "Name": "Arial",
-
       "Size": 10,
-
       "Underline": "None"
-
     },
-
     "IsAutomaticSize": true,
-
     "IsInnerMode": null,
-
     "Shadow": false,
-
     "ShapeProperties": null,
-
     "Width": 823,
-
     "Height": 1043,
-
     "X": 3125,
-
     "Y": 1466,
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend",
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
-  "Code": 0,
-
-  "Status": "0"
-
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
- 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
- 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
- 
+### Использование облачных SDK Aspose.Cells
+
+Использование SDK — это лучший способ ускорить разработку. SDK берёт на себя обработку низкоуровневых деталей и позволяет сосредоточиться на задачах проекта. Полный список облачных SDK Aspose.Cells представлен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
+
+Примеры кода ниже демонстрируют вызов облачных сервисов Aspose.Cells с использованием различных SDK:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

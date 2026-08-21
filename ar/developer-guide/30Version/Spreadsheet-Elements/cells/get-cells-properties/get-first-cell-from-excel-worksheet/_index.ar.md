@@ -1,97 +1,120 @@
-﻿---
-title: احصل على الخلية الأولى من ورقة عمل Excel
-type: docs
-url: /ar/get-first-cell-from-excel-worksheet/
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، JSON، Markdown، الحصول على الخلية الأولى من ورقة عمل Excel
 ---
-يشير هذا REST API إلى الحصول على `firstcell` في ملف Excel عندما تكون المعلمة `cellOrMethodName` هي `firstcell`.
+title: "الحصول على الخلية الأولى (A1) من ورقة عمل Excel"
+type: docs
+url: /get-first-cell-from-excel-worksheet/
+weight: 20
+keywords: "Aspose.Cells Cloud, Excel, REST API, Get First Cell, Worksheet, A1, API v3"
+description: "تعرّف على كيفية استرجاع الخلية الأولى (A1) في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API الإصدار 3.0. يتضمّن طلب cURL، واستجابة JSON، وأمثلة على الأخطاء، ونماذج SDK لـ C# وJava وPHP وPython وغيرها."
+ArticleTitle: "الحصول على الخلية الأولى (A1) من ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud API"
+---
 
-- **cURL مثال**
+توضّح هذه الواجهة REST كيفية استرجاع **الخلية الأولى** في ملف Excel عند تعيين المعامل `cellOrMethodName` إلى القيمة `firstcell`.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**نقطة النهاية (Endpoint)**  
+`GET https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{worksheet}/cells/firstcell`
+
+- **مثال باستخدام cURL**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```shell
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+**المعاملات**
+
+| المعامل               | النوع   | الوصف                                                          | الإجبارية |
+|------------------------|---------|------------------------------------------------------------------|-----------|
+| `cellOrMethodName`     | string  | يجب تعيينه إلى `firstcell` لاسترجاع الخلية الأولى.             | نعم       |
+| `fileName`             | string  | اسم ملف المصنف (مثل `myWorkbook.xlsx`).                        | نعم       |
+| `worksheet`            | string  | اسم ورقة العمل (مثل `Sheet1`).                                  | نعم       |
+| `Authorization`        | header  | رمزBearer للمصادقة.                                              | نعم       |
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "A1",
-
     "Row": 0,
-
     "Column": 0,
-
     "Value": "Category",
-
     "Type": "IsString",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
     "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Category</Font>",
-
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
+
+**استجابات الأخطاء**
+
+- **401 Unauthorized (غير مُصادَق)**
+
+```json
+{
+  "Code": "401",
+  "Message": "رمز الوصول غير صالح."
+}
+```
+
+- **404 Not Found (غير موجود)**
+
+```json
+{
+  "Code": "404",
+  "Message": "المصنف أو ورقة العمل أو الخلية المحددة غير موجودة."
+}
+```
+
+- **500 Internal Server Error (خطأ داخلي في الخادم)**
+
+```json
+{
+  "Code": "500",
+  "Message": "حدث خطأ غير متوقّع في الخادم."
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                       | الوصف                                                       |
+|-------|------------------------------|--------------------------------------------------------------|
+| 200   | OK (نجاح)                    | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400   | Bad Request (طلب خاطئ)      | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم).       |
+| 401   | Unauthorized (غير مُصادَق)   | رمز JWT غير صالح أو مفقود.                                  |
+| 413   | Payload Too Large (حمولة كبيرة جدًا) | الملف المرفوع يتجاوز الحد الأقصى للحجم.                     |
+| 500   | Internal Server Error (خطأ داخلي في الخادم) | خطأ غير متوقّع في الخادم.                                 |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **عائلة SDK السحابية**
+- **عائلة واجهات SDK للسحابة**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعد استخدام SDK الطريقة الأمثل لتسريع عملية التطوير، حيث تتعامل واجهات SDK مع التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بواجهات SDK الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
-
-- **عائلة SDK السحابية**
-
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
-
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -144,3 +167,4 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< /tabs >}}
+---

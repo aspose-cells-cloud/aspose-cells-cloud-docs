@@ -1,74 +1,83 @@
-﻿---
-title: Establecer zoom para una hoja de cálculo Excel
-second_title: Documen
-linktitle: Zoo
-type: docs
-url: /es/worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
-keywords: Set zoom for an Excel worksheet
-description: Aspose.Cells Cloud REST API admite la configuración de zoom para una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Establecer zoom para una hoja de cálculo Excel
 ---
-Este REST API indica `set the zoom value of Excel worksheet`.
- 
-## RSET API
- 
+title: "Establecer el zoom en una hoja de cálculo de Excel – Aspose.Cells Cloud API v3.0"
+second_title: "Documento"
+linktitle: "Zoom"
+type: docs
+url: /worksheets/zoom/
+aliases: [/set-zoom-in-excel-worksheet/]
+keywords: "Aspose.Cells, zoom de Excel, zoom de hoja de cálculo, API REST, SDK en la nube, automatización de Excel"
+description: "Aprenda a establecer el zoom de la hoja de cálculo (10–400 %) mediante la API de Aspose.Cells Cloud v3.0. Incluye ejemplos en cURL, SDK y manejo de errores."
+weight: 20
+ArticleTitle: "Establecer el zoom en una hoja de cálculo de Excel – Aspose.Cells Cloud API v3.0"
+---
+
+Esta API REST establece el valor de zoom de una hoja de cálculo de Excel. Se requiere **autenticación**; incluya un token JWT Bearer válido en el encabezado `Authorization` de cada solicitud.
+
+## Seguridad y autenticación
+Las API de Aspose.Cells Cloud son seguras y requieren [autenticación basada en tokens JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom
 ```
- Los parámetros de la solicitud son:
- 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino||
-| nombreHoja| cadena| camino||
-| valor| entero| consulta||
-| carpeta| cadena| consulta||
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
- 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
- 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Parámetros de la solicitud**
+
+| Parámetro   | Tipo    | Ubicación | Descripción                                                         |
+| ----------- | ------- | --------- | ------------------------------------------------------------------- |
+| name        | string  | path      | Nombre del archivo de Excel (libro de trabajo).                    |
+| sheetName   | string  | path      | Nombre de la hoja de cálculo que se desea modificar.               |
+| value       | integer | query     | Porcentaje de zoom (rango permitido **10–400**, por ejemplo, `40` para 40 %). |
+| folder      | string  | query     | Ruta de la carpeta donde se almacena el archivo.                   |
+| storageName | string  | query     | Nombre del servicio de almacenamiento.                             |
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) define una interfaz de programación públicamente accesible y le permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube mediante cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/zoom?value=40" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+**Información sobre respuestas de error**  
+Los códigos de estado HTTP posibles incluyen:
+
+- `400 Bad Request` – parámetros faltantes o no válidos.
+- `401 Unauthorized` – token JWT faltante o no válido.
+- `404 Not Found` – el archivo o la hoja de cálculo especificados no existen.
+- `500 Internal Server Error` – error inesperado del lado del servidor.
+
+Cada respuesta de error devuelve un cuerpo JSON que contiene un `Code` y un `Message` descriptivo.
+
 ## Familia de SDK en la nube
- 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
- 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
- 
+
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 
@@ -125,3 +134,4 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

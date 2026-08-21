@@ -1,46 +1,60 @@
-﻿---
-title: 从 Excel 工作表中获取 MaxDataRow
+---
+title: "从 Excel 工作表获取 MaxDataRow"
 type: docs
 url: /zh/get-maxdatarow-from-excel-worksheet/
 weight: 50
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表获取 MaxDataRow
+keywords: "Excel, Aspose.Cells Cloud, REST API, 获取 MaxDataRow, 工作表"
+description: "使用 Aspose.Cells Cloud REST API 检索 Excel 工作簿中指定工作表内包含数据的最后一行的索引。"
+ArticleTitle: "Aspose.Cells Cloud API – 从 Excel 工作表获取 MaxDataRow"
 ---
-此 REST API 表示当 `cellOrMethodName` 参数为 `maxdatarow` 时，在 Excel 文件中获取 `maxdatarow`。
+
+当 `cellOrMethodName` 参数设置为 `maxdatarow` 时，此 REST API 将返回 Excel 文件中的最大数据行索引。
 
 - **cURL 示例**
 
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatarow" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatarow" \
+     -H "Authorization: Bearer <your_access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+*注意：请求必须通过 **HTTPS** 发送，并包含有效的 OAuth2 bearer token。*
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MaxDataRow": 57
+}
 ```
+
+**可能的 HTTP 状态码**
+
+| 状态码 | 描述 |
+|--------|------|
+| 200 | 成功 – 返回最大数据行索引。 |
+| 401 | 未授权 – 无效或缺失身份验证 token。 |
+| 403 | 禁止访问 – 权限不足，无法访问工作簿。 |
+| 404 | 未找到 – 指定的工作簿或工作表不存在。 |
+| 500 | 服务器内部错误 – 服务器遇到意外情况。 |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK 系列**
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+- **使用 Aspose.Cells Cloud SDK**
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+使用 SDK 是加速开发的最高效方式。SDK 负责处理底层细节，让您专注于项目任务。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
 
-
+以下代码示例展示了如何使用 various SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -103,3 +117,40 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**另请参阅**
+
+- <a href="https://docs.aspose.cloud/cells/get-maxrow-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">从 Excel 工作表获取 MaxRow</a>  
+- <a href="https://docs.aspose.cloud/cells/get-maxcolumn-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">从 Excel 工作表获取 MaxColumn</a>  
+- <a href="https://docs.aspose.cloud/cells/get-mindatarow-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">从 Excel 工作表获取 MinDataRow</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "Aspose.Cells Cloud 获取 MaxDataRow",
+  "description": "返回指定工作表中包含数据的最后一行的索引。",
+  "url": "https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/maxdatarow",
+  "method": "GET",
+  "documentation": "https://docs.aspose.cloud/cells/get-maxdatarow-from-excel-worksheet/",
+  "input": [
+    {
+      "name": "fileName",
+      "valueRequired": true,
+      "description": "Excel 工作簿的名称。"
+    },
+    {
+      "name": "sheetName",
+      "valueRequired": true,
+      "description": "工作表的名称。"
+    }
+  ],
+  "output": {
+    "@type": "DataType",
+    "name": "MaxDataRow",
+    "description": "包含数据的最后一行的从零开始的索引。"
+  }
+}
+</script>
+
+*最后更新时间：2026-07-30*

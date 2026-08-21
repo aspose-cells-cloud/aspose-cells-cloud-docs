@@ -1,46 +1,60 @@
-﻿---
-title: Ottieni MaxDataRow dal foglio di lavoro Excel
+---
+title: "Ottieni MaxDataRow dal foglio di calcolo Excel"
 type: docs
 url: /it/get-maxdatarow-from-excel-worksheet/
 weight: 50
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni MaxDataRow dal foglio di lavoro Excel
+keywords: "Excel, Aspose.Cells Cloud, REST API, Ottieni MaxDataRow, Foglio di calcolo"
+description: "Recupera l'indice dell'ultima riga contenente dati in un foglio di calcolo specificato di un file Excel tramite l'API REST di Aspose.Cells Cloud."
+ArticleTitle: "Aspose.Cells Cloud API – Ottieni MaxDataRow dal foglio di calcolo Excel"
 ---
-Questo REST API indica che viene ottenuto un `maxdatarow` in un file Excel quando il parametro `cellOrMethodName` è `maxdatarow`.
 
-- **cURL Esempio**
+Questa REST API restituisce l'indice massimo della riga contenente dati in un file Excel quando il parametro `cellOrMethodName` è impostato su `maxdatarow`.
 
+- **Esempio cURL**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatarow" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatarow" \
+     -H "Authorization: Bearer <your_access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+*Nota: la richiesta deve essere inviata tramite **HTTPS** e includere un token OAuth2 bearer valido.*
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MaxDataRow": 57
+}
 ```
+
+**Codici di stato HTTP possibili**
+
+| Codice | Descrizione |
+|--------|-------------|
+| 200 | Esito positivo – restituisce l'indice massimo della riga contenente dati. |
+| 401 | Non autorizzato – token di autenticazione non valido o mancante. |
+| 403 | Accesso negato – autorizzazioni insufficienti per accedere al file Excel. |
+| 404 | Non trovato – il file Excel o il foglio di calcolo specificato non esiste. |
+| 500 | Errore interno del server – condizione imprevista nel server. |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Famiglia Cloud SDK**
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+- **Utilizzo degli SDK di Aspose.Cells Cloud**
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+L'utilizzo di un SDK rappresenta il modo più efficiente per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto.Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-
+I seguenti esempi di codice mostrano come chiamare i servizi web Aspose.Cells tramite vari SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -103,3 +117,40 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Vedi anche**
+
+- <a href="https://docs.aspose.cloud/cells/get-maxrow-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">Ottieni MaxRow dal foglio di calcolo Excel</a>  
+- <a href="https://docs.aspose.cloud/cells/get-maxcolumn-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">Ottieni MaxColumn dal foglio di calcolo Excel</a>  
+- <a href="https://docs.aspose.cloud/cells/get-mindatarow-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">Ottieni MinDataRow dal foglio di calcolo Excel</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "Aspose.Cells Cloud Get MaxDataRow",
+  "description": "Restituisce l'indice dell'ultima riga contenente dati in un foglio di calcolo specificato.",
+  "url": "https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/maxdatarow",
+  "method": "GET",
+  "documentation": "https://docs.aspose.cloud/cells/get-maxdatarow-from-excel-worksheet/",
+  "input": [
+    {
+      "name": "fileName",
+      "valueRequired": true,
+      "description": "Il nome del file Excel."
+    },
+    {
+      "name": "sheetName",
+      "valueRequired": true,
+      "description": "Il nome del foglio di calcolo."
+    }
+  ],
+  "output": {
+    "@type": "DataType",
+    "name": "MaxDataRow",
+    "description": "Indice in base zero dell'ultima riga contenente dati."
+  }
+}
+</script>
+
+*Ultimo aggiornamento: 2026-07-30*

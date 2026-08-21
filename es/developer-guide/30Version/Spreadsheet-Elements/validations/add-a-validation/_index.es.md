@@ -1,63 +1,58 @@
-﻿---
-title: Agregar una validación de hoja de trabajo en una hoja de trabajo Excel
-second_title: Documen
-linktitle: Anuncio
-type: docs
-url: /es/validations/add/
-keywords: Delete a worksheet validation on an Excel worksheet
-description: Aspose.Cells Cloud REST API permite añadir una validación de hoja de cálculo en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 10
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Agregar una validación de hoja de cálculo en una hoja de cálculo Excel
 ---
-Este REST API indica agregar una validación de hoja de trabajo en una hoja de trabajo Excel.
+title: "Agregar una validación de hoja de cálculo a una hoja de cálculo de Excel"
+second_title: "Documento"
+linktitle: "Agregar"
+type: docs
+url: /validations/add/
+keywords: "Agregar validación de hoja de cálculo, Excel, Aspose.Cells Cloud, API REST, hoja de cálculo, regla de validación"
+description: "Utilice la API REST de Aspose.Cells Cloud para agregar una validación de hoja de cálculo a un archivo de Excel. Los SDK están disponibles para C#, Java, PHP, Ruby, Node.js, Python, Perl, Go y Swift."
+weight: 10
+---
 
-## RSET API
+Esta API REST agrega una validación de hoja de cálculo a una hoja de cálculo de Excel.
+
+## API REST
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
- 
 ```
 
-Los parámetros de la solicitud son:
+### **Parámetros de la solicitud**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del documento.|
-| nombreHoja| cadena| camino| Nombre de la hoja de trabajo.|
-| rango| cadena| consulta| Área de celdas especificadas|
-| validación|| cuerpo| validación|
-| carpeta| cadena| consulta| Carpeta del documento.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción                                                      |
+| -------------------- | ------ | --------- | ---------------------------------------------------------------- |
+| name                 | string | path      | Nombre del documento de Excel.                                  |
+| sheetName            | string | path      | Nombre de la hoja de cálculo.                                   |
+| range                | string | query     | Rango de celdas al que se aplica la validación (por ejemplo, A1:B10). |
+| validation           | object | body      | Definición de la regla de validación.                           |
+| folder               | string | query     | Carpeta que contiene el documento.                              |
+| storageName          | string | query     | Nombre del servicio de almacenamiento.                          |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación de OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube mediante cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -66,9 +61,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/va
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells utilizando diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -98,7 +93,7 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetValidation.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutWorksheetValidation.ts" >}}
 
 {{< /tab >}}
 

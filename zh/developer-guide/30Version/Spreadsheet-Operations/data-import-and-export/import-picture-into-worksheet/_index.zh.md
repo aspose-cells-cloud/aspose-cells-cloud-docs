@@ -1,52 +1,107 @@
-﻿---
-title: 将图片导入 Excel 工作表
-second_title: Documen
-linktitle: 导入图片
-type: docs
-url: /zh/import-picture-into-excel-worksheet/
-aliases: [/import-picture-into-worksheet/,/import-data/picture/, /import/picture/]
-keywords: Import picture into Excel files
-description: Aspose.Cells Cloud REST API 支持将图片导入 Excel 文件。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 19
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、将图片导入 Excel 工作表
 ---
-此 REST API `import picture data` 进入 Excel 工作表。
+title: "将图片导入 Excel 工作表"
+ArticleTitle: "将图片导入 Excel 工作表 – Aspose.Cells Cloud API 指南"
+second_title: "文档"
+linktitle: "导入图片"
+type: docs
+url: /import-picture-into-excel-worksheet/
+aliases:
+  - /import-picture-into-worksheet/
+  - /import-data/picture/
+  - /import/picture/
+keywords: "导入图片, Excel, Aspose.Cells Cloud, REST API, v3.0"
+description: "了解如何使用 Aspose.Cells Cloud REST API v3.0 将图片导入 Excel 工作表。包含多部分请求示例、SDK 代码示例和错误处理指南。按照清晰的步骤快速上手。"
+weight: 19
+---
 
-该请求是具有多部分内容的 HTTP 请求（请参阅[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)或者[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html))。多部分内容的第一部分包含 ImportPictureOption 数据，第二部分包含数据文件。
+将图片导入 Excel 工作表，可为电子表格增添视觉内容，例如公司徽标、图表或示意图。本指南介绍如何使用 Aspose.Cells Cloud 的 **ImportPicture** 操作、所需请求格式以及如何处理响应。
 
-## 重新设置 API
+**前置条件：** 调用导入操作前，您必须拥有有效的 JWT 认证令牌，并且已将工作簿存储在 Aspose Cloud 存储中。
 
-```bash
+## PostImportData API
 
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-重要参数说明如下表：
+### 安全性与身份验证
 
-**导入图片选项**
+Aspose.Cells Cloud API 采用安全机制，需使用基于 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT 令牌的身份验证</a>。
 
-|参数名称|类型|描述|
-|:- |:- |:- |
-|左上行|整数||
-|左上列|整数||
-|右下行|整数||
-|右下列|整数||
-|文件名|细绳||
-|数据|细绳||
-|目的地工作表|细绳|目标工作表名称。|
-|是否插入|细绳|对/错。|
-|导入数据类型|细绳|整数数组/双精度数组/字符串数组/二维整数数组/二维双精度数组/二维字符串数组/批量数据/CSV数据/图片。|
-|来源|文件源|当 BatchData 参数为空时，指示数据文件位置。|
+### 请求参数
 
-**例子**
+该请求为 HTTP **POST** 请求，内容类型为 **multipart/related**（参见 [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) 或 [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)）。
 
-## Cloud SDK 系列
+- **第一部分** 包含一个名为 **ImportPictureOption** 的 JSON 对象，用于描述图片应放置的位置及方式。
+- **第二部分** 携带图片文件（或其 Base64 编码数据）。
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+### ImportPictureOption 定义
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+```json
+{
+  "UpperLeftRow": 0,
+  "UpperLeftColumn": 0,
+  "LowerRightRow": 10,
+  "LowerRightColumn": 5,
+  "Filename": "logo.png",
+  "Data": "iVBORw0KGgoAAAANSUhEUgAA...",
+  "DestinationWorksheet": "Sheet1",
+  "IsInsert": true,
+  "ImportDataType": "Picture",
+  "Source": { "FileSource": "Storage" }
+}
+```
+
+_`IsInsert` 为 **布尔型**：`true` 表示插入新图片，`false` 表示替换已有图片。_
+
+### 关键参数说明
+
+**ImportPictureOption**
+
+| 参数名称              | 类型        | 描述                                                                                                                                                                    |
+|-----------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| UpperLeftRow          | int         | 图片左上角所在行索引。                                                                                                                                                   |
+| UpperLeftColumn       | int         | 图片左上角所在列索引。                                                                                                                                                   |
+| LowerRightRow         | int         | 定义图片右下角位置的行索引。                                                                                                                                             |
+| LowerRightColumn      | int         | 定义图片右下角位置的列索引。                                                                                                                                             |
+| Filename              | string      | 图片文件名称。                                                                                                                                                           |
+| Data                  | string      | 图片的 Base64 编码二进制数据（若图片已作为第二部分上传则此项可选）。                                                                                                     |
+| DestinationWorksheet  | string      | 将插入图片的目标工作表名称。                                                                                                                                             |
+| **IsInsert**          | **boolean** | `true` 表示插入新图片；`false` 表示替换已有图片。                                                                                                                        |
+| ImportDataType        | string      | 待导入数据类型（例如：`Picture`、`IntArray`、`DoubleArray`、`StringArray`、`TwoDimensionIntArray`、`TwoDimensionDoubleArray`、`TwoDimensionStringArray`、`BatchData`、`csvData`）。 |
+| Source                | FileSource  | 当 `BatchData` 参数为空时，指示数据文件的位置。                                                                                                                          |
+
+### 响应
+
+成功请求返回 **HTTP 200**，JSON 负载示例如下：
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+可能的状态码：
+
+| 状态码 | 含义                     |
+|--------|--------------------------|
+| 200    | 导入成功                 |
+| 400    | 请求错误 — 缺少或数据无效 |
+| 401    | 未授权 — 令牌无效或缺失   |
+| 500    | 服务器内部错误            |
+
+## 如何结合 SDK 使用 PostImportData API
+
+### PostImportData API 规范
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) 定义了一个公开可访问的编程接口，允许您直接从网页浏览器发起 REST 请求。
+
+### 使用 Aspose.Cells Cloud SDK
+
+使用 SDK 是加速开发的最优方式。SDK 会自动处理底层细节，让您专注于项目核心任务。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 完整列表。
+
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 

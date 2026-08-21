@@ -1,105 +1,162 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Dela upp ett kalkylblad i flera filer, en för varje kalkylblad
-second_title: Documen
-ArticleTitle: Split a spreadsheet into multiple files, one for each worksheet
-linktitle: Dela fjärrkalkylblad i Clou
-type: docs
-url: /sv/split-remote-spreadsheet/
-keywords: spreadsheet splitting, cloud spreadsheet API, split Excel file, multi-format outpu
-description: Dela upp ett kalkylblad som lagras i molnlagring i flera utdataformat utan nedladdning
-weight: 100
-kwords: Excel, Office Moln, REST, Kalkylblad, PDF, CSV, JSON, Markdown, delat fjärrkalkylblad
 ---
-Dela upp kalkylarket som lagras i molnet i separata filer med 30 utdatafilformat.
+title: "Aspose.Cells Cloud-kalkylbladssplittrare Web API – dela Excel-arbetsbok i flera filer i 30+ format"
+second_title: "Dokument"
+ArticleTitle: "Dela Excel-fil i molnet för att separera filer & exportera till 30+ format"
+linktitle: "Dela fjärrkalkylblad i molnet"
+type: docs
+url: /split-remote-spreadsheet/
+keywords: "Aspose.Cells Cloud, dela Excel-arbetsbok, kalkylbladssplittrare, moln-API, exportera till PDF, exportera till CSV, exportera till JSON, flera formatexport, kalkylbladsbehandling i molnet"
+description: "Använd Aspose.Cells Cloud API för att dela en Excel-arbetsbok som lagras i molnlagring i separata kalkylblad och exportera varje del till över 30 format såsom PDF, CSV, JSON, XLSX, HTML, ODS och XPS."
+weight: 100
+---
 
-## **Delat fjärrkalkylblad API**
+Dela upp en stor Excel-arbetsbok som lagras i molnet i separata filer per kalkylblad och exportera varje del till över 30 utdataformat såsom PDF, CSV, JSON, ODS och XPS med Aspose.Cells Cloud.
+
+## **Split Remote Spreadsheet API**
+
+### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet
+PUT https://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet
 ```
 
-### **Begäranparametrar:**
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-text| Beskrivning|
-|:- |:- |:- |:- |
-| namn| Sträng| Väg| Namnet på den arbetsboksfil som ska delas.|
-| mapp| Sträng| Fråga| Mappsökvägen där arbetsboken lagras.|
-| från| Heltal| Fråga| Börja kalkylbladsindex.|
-| till| Heltal| Fråga| Avsluta kalkylbladsindex.|
-| utformat| Sträng| Fråga| Önskat utdataformat (t.ex. "Xlsx", "Pdf", "Csv").|
-| lagringsnamn| Sträng| Fråga|(Valfritt) Namnet på lagringsutrymmet om anpassad molnlagring används. Använd standardlagring om det utelämnas.|
-| utväg| Sträng| Fråga| (Valfritt) Mappsökvägen där arbetsboken lagras. Standardvärdet är null.|
-|outStorageName| Sträng| Fråga| Namn på utdatafilens lagringsplats.|
-| teckensnittPlats| Sträng| Fråga| Använd anpassade teckensnitt.|
-| område| Sträng| Fråga| Inställningen för kalkylbladets region.|
-| lösenord| Sträng| Fråga| Lösenordet för att öppna kalkylbladsfilen.|
+Aspose.Cells Cloud APIs är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
+
+### **Begäran parametrar:**
+
+| Parameter Name | Typ     | Path/Query String/HTTP Body | Beskrivning                                                                                                                       |
+| :------------- | :------ | :-------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
+| name           | String  | Path                        | Namnet på arbetsboksfilen (t.ex. `data.xlsx`) som ska delas, placerad i den angivna mappen i molnlagring.                          |
+| folder         | String  | Query                       | Sökvägen till molnlagringsmappen där källarbetsboken lagras.                                                                      |
+| from           | Integer | Query                       | Startindex för kalkylblad (0-baserat) för delningsåtgärden. Exempel: `0` anger det första kalkylbladet.                            |
+| to             | Integer | Query                       | Slutindex för kalkylblad (0-baserat) för delningsåtgärden. Exempel: `2` delar kalkylbladen 0, 1 och 2.                             |
+| outFormat      | String  | Query                       | Utdatafilformat för de delade filerna. Stödda format inkluderar `XLSX`, `PDF`, `CSV`, `JSON`, `HTML` och 30+ andra.                |
+| storageName    | String  | Query                       | _(Valfritt)_ Namnet på molnlagringen där källarbetsboken finns. Om utelämnas används standardmolnlagringen.                        |
+| outPath        | String  | Query                       | _(Valfritt)_ Målmappens sökväg i molnet där de delade filerna sparas. Om utelämnas sparas filerna i källmappen.                    |
+| outStorageName | String  | Query                       | Namnet på molnlagringen där de utdata-delade filerna kommer att lagras.                                                            |
+| fontsLocation  | String  | Query                       | _(Valfritt)_ Anger en anpassad mapp i molnet som innehåller typsnittsfiler för korrekt textrendering i PDF/bildutdata.            |
+| region         | String  | Query                       | _(Valfritt)_ Anger språkinställningen för formatering av tal, datum och valuta i utdatafilerna (t.ex. `"sv-SE"`, `"en-US"`, `"de-DE"`). |
+| password       | String  | Query                       | _(Valfritt)_ Om källarbetsboken är lösenordsskyddad, ange lösenordet för att öppna filen.                                          |
 
 ## **Svar**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream",
+      "Name": "file"
     }
+  }
 ]
 ```
 
-### Felkoder
+Filen kan laddas ner direkt från eller sparas till den plats som anges av `outPath`.
 
-- **400 Felaktig begäran**Ogiltig Apose.Cells Cloud API URI.
-- **401 Obehörig**Ogiltig åtkomsttoken. Eller ogiltigt klient-ID och hemlighet.
-- **404 Hittades inte**Kalkylbladsfilen är inte tillgänglig.
-- **500 Serverfel**Kalkylbladet har stött på ett fel vid hämtning av beräkningsdata.
+**Detaljerad lyckad respons**
 
-## Var ska vi använda Split Remote-kalkylbladet API?
+| Statuskod | Content‑Type               | Beskrivning                                  |
+| --------- | -------------------------- | -------------------------------------------- |
+| 200 OK    | `application/octet-stream` | Binär ström av den sammanslagna arbetsboksfilen. |
 
-När du behöver sammanfoga flera datafiler kan du använda API.
+**HTTP-statuskoder**
 
-## Varför ska du använda Split Remote-kalkylbladet API?
+| Kod | Betydelse               | Beskrivning                                                       |
+| --- | ----------------------- | ----------------------------------------------------------------- |
+| 200 | OK                      | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Bad Request             | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds).  |
+| 401 | Unauthorized            | Ogiltig eller saknad JWT-token.                                   |
+| 413 | Payload Too Large       | Den uppladdade filen överskrider storleksgränsen.                 |
+| 500 | Internal Server Error   | Oväntat serverfel.                                                |
 
-- Molnlagringsfiler behöver inte laddas ner och kan delas direkt i molnet.
-- Utvecklingen kan snabbt slutföras via det befintliga SDK:t.
+## Var bör vi använda Split Remote Spreadsheet API?
 
-## Så här använder du Split Remote-kalkylbladet API med SDK:er
+- **Avdelningsdatafördelning**: Dela en enhetlig arbetsbok som innehåller data från flera avdelningar i avdelningsspecifika filer.
+- **Regional rapportfördelning**: Dela nationella försäljningsrapporter i separata regionala rapportfiler enligt region.
+- **Kunddataskyddsfördelning**: Dela en arbetsbok som innehåller känslig information i en dedikerad kundvy-fil.
+- **Periodisk rapportdelning**: Dela automatiskt sammanfattande rapporter i veckovisa eller dagliga rapporter månadsvis.
+- **Fördelning i flera format**: Dela en enda Excel-fil i flera formatversioner såsom PDF, CSV, JSON, etc., samtidigt.
+- **Mallbaserad delning**: Dela datafiler i standardiserade utdatafiler baserat på fördefinierade mallar.
+- **Datkälla förbearbetning**: Dela Excel-filen i en standardiserad CSV-fil innan data laddas in i databasen.
+- **API-förberedelse av data**: Dela stora datamängder i mindre chunkar lämpliga för API-överföring.
+- **Mikrotjänstdatabefordran**: Dela den centrala datafilen i separata datafiler som krävs av varje mikrotjänst.
 
-### Specifikation för delat fjärrkalkylblad API
+## Varför bör du använda Split Remote Spreadsheet API?
 
- De[Specifikation för delat fjärrkalkylblad API](https://reference.aspose.cloud/cells/#/DataProcessingController/SplitRemoteSpreadsheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och möjliggör REST-interaktioner direkt från en webbläsare.
+- **Utvecklarvänligt**: Aspose.Cells Cloud erbjuder SDK-bibliotek i flera språk, vilket möjliggör snabb utveckling och följs med omfattande dokumentation. Jämfört med att bygga egna lösningar för diagramrendering minskar detta avsevärt utvecklingsarbetet.
+- **Lägre arbetskostnader**: Minskar behovet av tjänster dedikerade till dokumentkonsolidering.
+- **Betala per användning**: Inget förstainvestering; du betalar endast för API-anrop som faktiskt används.
+- **Inga underhållskostnader**: Inget behov av att underhålla servrar, uppdatera programvara eller hantera kompatibilitetsproblem.
+- **Bevarar avancerad Excel-formatering** i allmänt tillgängligt PDF-format.
+
+## Hur man använder Split Remote Spreadsheet API med SDK:er
+
+### Split Remote Spreadsheet API-specifikation
+
+[Split Remote Spreadsheet API-specifikationen](https://reference.aspose.cloud/cells/#/DataProcessingController/SplitRemoteSpreadsheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och möjliggör REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för kommandoraden för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/Report.xlsx/split/spreadsheet?folder=Input&outFormat=PDF&from=0&to=2" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64-kodad)",
+  "contentType": "MIME-typ",
+  "fileDownloadName": "valfritt filnamn"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Använd Aspose.Cells Cloud SDK:er
 
-Att använda SDK:t är det snabbaste sättet att utveckla, eftersom det abstraherar bort detaljer på låg nivå, vilket gör att du kan dela upp kalkylarket som lagras i molnet i separata filer med kort kod.
- Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Att använda ett SDK är det snabbaste sättet att utveckla, eftersom det abstraherar bort detaljerna på låg nivå och låter dig dela upp kalkylbladet i molnet i separata filer med kort kod.  
+Kolla in [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.  
+Följande kodexempel visar hur man gör anrop till Aspose.Cells webbtjänster med olika SDK:er:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SplitFileInRemote.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SplitFileInRemote.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SplitFileInRemote.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SplitFileInRemote.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SplitFileInRemote.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SplitFileInRemote.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SplitFileInRemote.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SplitFileInRemote.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SplitFileInRemote.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SplitFileInRemote.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SplitFileInRemote.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SplitFileInRemote.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SplitFileInRemote.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SplitFileInRemote.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SplitFileInRemote.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SplitFileInRemote.go" >}}
+{{</tab>}}
 {{< /tabs >}}

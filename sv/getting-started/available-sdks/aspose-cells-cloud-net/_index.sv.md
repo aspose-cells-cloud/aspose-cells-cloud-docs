@@ -1,54 +1,55 @@
-﻿---
-title: "Aspose.Cells Cloud SDK för C#: Konvertera, slå samman, dela, skydda, sök, ersätt med mera"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for C#: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells Cloud SDK för .Ne
-type: docs
-url: /sv/available-sdks/aspose-cells-cloud-net/
-description: "Aspose.Cells Cloud SDK för .Net erbjuder verklig plattformsoberoende kraft: en import ger Windows-, Linux- och macOS-utvecklare samma flytande API för att skapa, konvertera, slå samman, dela, skydda och manipulera alla Excel objekt – ingen Office installation krävs och inga plattformsspecifika justeringar behövs."
-weight: 30
-kwords: REST SDK för .Net, Excel SDK för .Net, Cloud SDK för .Net, stöd för konvertering, sammanslagning, delning, skydd, sökning, ersättning med mera
 ---
-SDK:et är öppen källkod och licensierat under MIT-licensen. Du kan komma åt[Netbibliotekets källkod för Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
+title: "Aspose.Cells Cloud SDK för C#: Konvertera, sammanfoga, dela upp, skydda, söka, ersätta och mer."
+second_title: "Document"
+ArticleTitle: "Aspose.Cells Cloud SDK för C#: Konvertera, sammanfoga, dela upp, skydda, söka, ersätta och mer."
+linktype: "docs"
+url: /available-sdks/aspose-cells-cloud-net/
+description: "Aspose.Cells Cloud .NET SDK tillhandahåller en plattformsöverskridande API för att skapa, konvertera, sammanfoga, dela upp, skydda, söka och ersätta Excel-filer – ingen Office-installation krävs."
+keywords: "Aspose.Cells, moln-SDK, .NET, Excel, konvertera, sammanfoga, dela upp, skydda, söka, ersätta, API"
+weight: 30
+---
 
-# **Hur man använder nätbiblioteket i Aspose.Cells Cloud**
+SDK:et är öppen källkod och licensierat under MIT-licensen. Du kan hämta källkoden för .NET-biblioteket för Aspose.Cells Cloud [här](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
 
-Aspose.Cells Cloud SDK för Net är ett kraftfullt bibliotek som låter utvecklare manipulera och bearbeta Microsoft Excel-filer med hjälp av programmeringsspråket Net. Med detta SDK kan du skapa, redigera och konvertera Excel-dokument i molnet, utan att installera ytterligare programvara eller beroenden på din lokala dator.
+# **Hur man använder .NET-biblioteket för Aspose.Cells Cloud**
 
-I den här artikeln ska vi utforska hur man använder Aspose.Cells Cloud SDK for Net för att utföra några vanliga uppgifter, som att skapa en ny Excel-arbetsbok, infoga data i celler och spara den modifierade arbetsboken i molnet.
+Aspose.Cells Cloud SDK för .NET är ett kraftfullt bibliotek som låter utvecklare manipulera och bearbeta Microsoft Excel-filer med hjälp av .NET-språket. Med detta SDK kan du skapa, redigera och konvertera Excel-dokument i molnet, utan att behöva installera ytterligare programvara eller beroenden på din lokala maskin.
+
+I den här artikeln kommer vi att undersöka hur du använder Aspose.Cells Cloud SDK för .NET för att utföra några vanliga uppgifter, till exempel att skapa en ny Excel-arbetsbok, infoga data i celler och spara den modifierade arbetsboken i molnet.
 
 ## Komma igång
 
- Innan du kan börja använda Aspose.Cells Cloud SDK för Go måste du konfigurera din utvecklingsmiljö och installera nödvändiga beroenden. Se[artikeln](https://docs.aspose.cloud/cells/quickstart/) på webbplatsen Aspose för att få ditt klient-ID och din klienthemlighet.
+Innan du kan börja använda Aspose.Cells Cloud SDK för .NET måste du konfigurera din utvecklingsmiljö och installera nödvändiga beroenden. Se [den här artikeln](https://docs.aspose.cloud/cells/quickstart/) på Asposes webbplats för att få ditt klient-ID och klienthemlighet.
 
-## Hur man installerar Net-paketet för Aspose.Cells Cloud
+**Förutsättningar**  
+- .NET 6.0 eller senare installerat.  
+- Ett Aspose Cloud-konto med klient-ID och klienthemlighet.  
+- Åtkomst till ett lagringsställe (Aspose Cloud-lagring eller en kompatibel tjänst).
 
-Du kan installera Aspose.Cells Cloud SDK for Net med hjälp av nuget. Nedan följer stegen för nuget:
+## Hur man installerar .NET-paketet för Aspose.Cells Cloud
+
+Du kan installera Aspose.Cells Cloud SDK för .NET med hjälp av NuGet. Här är stegen för NuGet:
 
 ```nuget
-
 Install-Package Aspose.Cells-Cloud
-
 ```
 
-Du kan även installera Aspose.Cells Cloud SDK for Net med hjälp av dotnet. Nedan följer stegen för dotnet:
+Du kan också installera Aspose.Cells Cloud SDK för .NET med hjälp av dotnet. Här är stegen för dotnet:
 
 ```powershell
-
 dotnet add package Aspose.Cells-Cloud
-
 ```
 
-## Hur man använder Net-paketet för att konvertera Xlsx till PDF
+## Hur man använder .NET-paketet för att konvertera Xlsx till PDF
 
-- Importera Aspose.Cells Molnbibliotek
- Börja med att importera det nödvändiga paketet från Aspose.Cells Cloud DotNet SDK till ditt projekt.
-- Konfigurera API-klienten med autentiseringsuppgifter
- Autentisera din API-klient med ditt unika klient-ID och din klienthemlighet.
-- Förbered konverteringsparametrar
- Definiera parametrar för konverteringsuppgiften, inklusive källfilens namn, önskat utdataformat och sökvägen till lagringsmappen.
-- Kör arbetsbokskonvertering
- Anropa konverteringsprocessen med hjälp av PostConvertWorkbook-metoden och hantera svaret.
+- Importera Aspose.Cells Cloud-biblioteket  
+  Börja med att importera det nödvändiga paketet från Aspose.Cells Cloud .NET SDK till ditt projekt.  
+- Konfigurera API-klienten med autentiseringsuppgifter  
+  Autentisera din API-klient med ditt unika klient-ID och klienthemlighet.  
+- Förbered konverteringsparametrar  
+  Definiera parametrar för konverteringsuppgiften, inklusive källfilens namn, önskat utdataformat och lagringsmappens sökväg.  
+- Kör arbetsbokskonverteringen  
+  Anropa konverteringsprocessen med metoden `PostConvertWorkbook` och hantera svaret.
 
 ### **Exempelkod**
 

@@ -1,98 +1,113 @@
-﻿---
-title: Belirli Bir Belge Özelliğini Edinin
-second_title: Documen
-linktitle: Ge
-type: docs
-url: /tr/document-properties/get/
-aliases: [/get-a-particular-document-property/]
-keywords: Get properties from excel files
-description: Aspose.Cells Cloud REST API, Excel dosyalarından özellik almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Belirli Bir Belge Özelliğini Al
 ---
-Bu REST API, belgenin özelliğinin adına göre okunmasını belirtir.
+title: "Belirli Bir Belge Özelliğini Alın"
+second_title: "Belge"
+linktitle: "Al"
+type: docs
+url: /document-properties/get/
+aliases: [/get-a-particular-document-property/]
+keywords: "Aspose.Cells, Bulut API, Belge Özelliğini Al, Excel meta verisi, REST GET, SDK örnekleri"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel dosyasından adı verilen bir belge özelliğini (örneğin Yazar, Başlık) alın. cURL örneği, SDK snippet’leri ve yanıt şemasını içerir."
+weight: 20
+---
 
-## RSET API
+Bu REST API, belirli bir adla belge özelliğini okur.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
 ```
 
-İstek parametreleri şunlardır:
+### İstek Parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| özellikAdı| sicim| yol| Emlak adı.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı  | Tür    | Konum  | Açıklama                                            |
+| -------------- | ------ | ------ | --------------------------------------------------- |
+| name           | string | path   | Excel dosyasının adı.                               |
+| propertyName   | string | path   | Alınacak belge özelliğinin adı.                     |
+| folder         | string | query  | Dosyayı içeren klasör (isteğe bağlı).               |
+| storageName    | string | query  | Depo adı (isteğe bağlı).                            |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Aspose.Cells web hizmetlerine kolayca erişmek için **cURL komut satırı aracı**nı kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’sine nasıl çağrı yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "DocumentProperty": {
-
-    "Name": "Author",
-
+    "Name": "Yazar",
     "Value": "",
-
     "BuiltIn": "True",
-
     "link": {
-
       "Href": "/test.xlsx/documentproperties/Author",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Yanıt Ayrıntıları
+
+API tarafından döndürülen JSON nesnesi aşağıdaki alanları içerir:
+
+| Alan                            | Tür     | Açıklama                                                       |
+| ------------------------------- | ------- | -------------------------------------------------------------- |
+| **DocumentProperty.Name**       | string  | Özelliğin adı (örneğin `Author`).                               |
+| **DocumentProperty.Value**      | string  | Özelliğin değeri. Ayarlanmamışsa boş olabilir.                  |
+| **DocumentProperty.BuiltIn**    | boolean | Özelliğin yerleşik Excel özelliği olup olmadığını gösterir.     |
+| **DocumentProperty.link.Href**  | string  | Özellik kaynağına olan göreli URL.                             |
+| **DocumentProperty.link.Rel**   | string  | İlişki türü; genellikle `self`.                                |
+| **DocumentProperty.link.Title** | string  | İnsan tarafından okunabilir başlık (`null` olabilir).           |
+| **DocumentProperty.link.Type**  | string  | Bağlantılı kaynağın MIME türü (`null` olabilir).               |
+| **Code**                        | integer | Hizmet tarafından döndürülen HTTP durum kodu.                  |
+| **Status**                      | string  | Durumun metinsel açıklaması (örneğin `OK`).                    |
+
+### Hata Yanıtları
+
+| HTTP Durumu | Kod                    | Açıklama                                          |
+| ----------- | ---------------------- | ------------------------------------------------- |
+| 400         | `InvalidParameter`     | Bir veya daha fazla istek parametresi geçersiz.  |
+| 401         | `AuthenticationFailed` | Eksik veya geçersiz JWT jetonu.                  |
+| 404         | `PropertyNotFound`     | Belirtilen belge özelliği mevcut değil.          |
+| 500         | `InternalError`        | Sunucuda beklenmeyen bir hata oluştu.            |
+
+Tipik bir hata gövdesi şu şekildedir:
+
+```json
+{
+  "Code": 404,
+  "Status": "Özellik bulunamadı"
+}
+```
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. SDK, düşük seviye detayları kendisi yönetir, böylece projenizin görevlerine odaklanabilirsiniz. Aspose.Cells Bulut SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerine farklı SDK’lar kullanılarak nasıl çağrı yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -145,3 +160,24 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Terimler
+
+| Terim                 | Tanım                                                                                      |
+| --------------------- | ------------------------------------------------------------------------------------------ |
+| **Belge Özelliği**    | Bir Excel defteriyle ilişkili meta veri parçası (örneğin Yazar, Başlık, Oluşturulma Tarihi). |
+| **Meta Veri**         | Diğer verileri açıklayan veri için genel terim; bu bağlamda belge özellikleri kastedilir.   |
+| **Özel Özellik**      | Yerleşik özellik setinde bulunmayan kullanıcı tanımlı bir özellik.                        |
+
+### Sık Sorulan Sorular
+
+**S:** _Aspose Cloud’da depolanan bir Excel dosyasının Yazar özelliğini nasıl alabilirim?_  
+**C:** Geçerli bir Bearer jetonu ile `https://api.aspose.cloud/v3.0/cells/{dosyaAdı}/documentproperties/author` adresine bir GET isteği gönderin. Yanıt JSON’unda `DocumentProperty.Name = "Yazar"` ve `Value` alanı bulunur.
+
+**S:** _İstenen özellik mevcut değilse hangi hata döndürülür?_  
+**C:** API, HTTP 404 durumu ile birlikte `Code: 404` ve `Status: "Özellik bulunamadı"` içeren bir JSON gövdesi döndürür.
+
+**S:** _Dosya varsayılan depoda bulunuyorsa `storageName` belirtmem gerekiyor mu?_  
+**C:** Hayır. `storageName` sorgu parametresi isteğe bağlıdır; hesabınız için yapılandırılmış varsayılan depoyu kullanmak için bu parametreyi atlayın.
+
+---

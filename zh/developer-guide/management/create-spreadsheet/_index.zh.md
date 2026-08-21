@@ -1,100 +1,142 @@
-﻿---
-title: Aspose.Cells Cloud Web API - 使用电子表格模板创建新的电子表格
-second_title: Documen
-ArticleTitle: Build a new Spreadsheet with a spreadsheet template - Timeline WorkPlan Table, Sales Data Comparison, etc
-linktitle: 创建电子表格
+---
+title: "创建电子表格 API – Aspose.Cells Cloud (v5.0) | 生成 Excel 文件"
+second_title: "文档"
+ArticleTitle: "如何创建新的 Excel 电子表格 —— 生成空白或基于模板的文件"
+linktype: "create-spreadsheet"
 type: docs
 url: /zh/create-spreadsheet/
-keywords: Spreadsheet Creation, Excel API, REST API, Office Cloud, Template Support, Productivity Enhancemen
-description: Excel API 允许用户创建具有指定名称的新电子表格，支持预定义内容或格式的可选模板，从而提高用户的工作效率
+keywords: "Aspose.Cells, 电子表格 API, 创建 Excel, 云服务, XLSX, ODS, CSV, 模板, SDK, 自动化"
+description: "了解如何使用 Aspose.Cells Cloud API (v5.0) 创建空白或基于模板的 Excel 工作簿。内容包括端点、参数、错误代码、身份验证步骤以及 SDK 示例。"
 weight: 100
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、JSON、Markdown、匹配 Excel 工作表中的所有空白单元格、电子表格创建、模板支持、生产力增强
 ---
-创建一个新的电子表格，可以是空白电子表格，也可以是基于指定模板创建的可用电子表格。
+
+使用 Aspose.Cells Cloud API 以编程方式创建新的 Excel 电子表格。可生成空白工作簿，或从自定义模板实例化文件。该 RESTful API 支持自动化 Excel 文件创建，非常适合用于报表生成、文档自动化及数据处理工作流。
 
 ## **创建电子表格 API**
 
+### Web API
+
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/create
+PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/create
 ```
 
-### **请求参数：**
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTP 正文|描述|
-|---------- ||----------------------- |----- |
-|格式|细绳|询问|指定新电子表格的名称。此名称将用于在系统中标识该电子表格。|
-|模板|细绳|询问|可选。如果提供，则新电子表格将基于指定的模板创建。这对于应用预定义的布局和样式非常有用。|
-|输出路径|细绳|询问| （可选）存储工作簿的文件夹路径。默认值为 null。|
-|输出存储名称|细绳|询问|输出文件存储名称。|
-|地区|细绳|询问|电子表格区域设置。|
-|密码|细绳|询问|打开电子表格文件的密码。|
+Aspose.Cells Cloud API 具备安全性，需采用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-### **回复**
+### 请求参数
+
+| 参数名称           | 类型   | 位置   | 描述                                                                                                                                           |
+| ------------------ | ------ | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **format**         | 字符串 | 查询   | **必填**。新电子表格的文件格式（例如 `XLSX`、`XLS`、`ODS`、`CSV`）。                                                                           |
+| **template**       | 字符串 | 查询   | **可选**。存储于您云端存储中的模板文件名（例如 `invoice_template.xlsx`）。若省略，则创建空白工作簿。                                             |
+| **outPath**        | 字符串 | 查询   | **可选**。生成文件在云端存储中的目标文件夹路径。若为 `null` 或省略，则保存至默认位置。                                                         |
+| **outStorageName** | 字符串 | 查询   | **必填**。已配置的云端存储标识符（例如 `MyDrive`）。                                                                                           |
+| **region**         | 字符串 | 查询   | **可选**。区域设置（例如 `fr-FR`），用于确定日期、数字和货币格式的默认值。                                                                     |
+| **password**       | 字符串 | 查询   | **可选**。加密模板文件的密码。若模板未受保护，请留空。                                                                                         |
+
+### 响应
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### 错误代码
+**HTTP 状态码**
 
-- **400 错误请求**：无效的 Apose.Cells Cloud API URI。
-- **401 未授权**：访问令牌无效。或者客户端 ID 和密钥无效。
-- **404 未找到**：电子表格文件无法访问。
-- **500 服务器错误**：电子表格在获取计算数据时遇到异常。
+| 状态码 | 含义                | 描述                                     |
+| ------ | ------------------- | ---------------------------------------- |
+| 200    | 成功 (OK)           | 操作成功；响应包含操作详情。             |
+| 400    | 错误请求 (Bad Request) | 缺少或无效参数（例如不支持的文件类型）。 |
+| 401    | 未授权 (Unauthorized) | 无效或缺失 JWT 令牌。                    |
+| 413    | 请求实体过大 (Payload Too Large) | 上传文件超过大小限制。                 |
+| 500    | 内部服务器错误 (Internal Server Error) | 服务器发生意外错误。                   |
 
-## 我们应该在哪里使用创建电子表格 API？
+## 在何处应使用创建电子表格 API？
 
-当您需要新建电子表格时，可以使用这个 API。
+- **自动化报表系统的初始化**——在每日/每周自动化周期开始时，创建新的空白工作簿，或根据标准模板生成报表文件。
+- **用户自助服务门户**——允许客户选择模板（报价单、项目进度表等），并即时下载自定义的 Excel 文件。
+- **批量数据导出与分发**——为每份导出数据集生成格式统一的独立工作簿，简化下游分发与处理流程。
 
-## 为什么要使用创建电子表格 API？
+后续操作（如添加工作表或填充单元格），请参阅 **添加工作表 API**、**更新单元格 API** 和 **导出工作簿 API**。
 
-- 您不仅可以创建空白电子表格，还可以基于模板创建特定的电子表格。
-- 通过现有的SDK即可快速完成开发。
+## 为何应使用创建电子表格 API？
 
-## 如何使用 SDK 创建电子表格 API
+- **开发者友好**——提供多种编程语言的 SDK 库及详尽文档，相比自研方案，更易于集成。
+- **提升效率**——实现文档整合自动化，减少人工操作。
+- **按需付费定价**——仅按 API 调用次数收费，无需预付许可费用。
+- **托管式服务**——API 完全托管，无需维护本地服务器或更新软件。
+
+## 如何通过 SDK 使用创建电子表格 API？
 
 ### 创建电子表格 API 规范
 
-这[创建电子表格 API 规范](https://reference.aspose.cloud/cells/#/ManagementController/CreateSpreadsheet)定义一个可公开访问的编程接口并直接从 Web 浏览器实现 REST 交互。
+[创建电子表格 API 规范](https://reference.aspose.cloud/cells/#/ManagementController/CreateSpreadsheet) 定义了一个公开可访问的编程接口，可直接从 Web 浏览器发起 REST 请求。
 
-### 使用 Aspose.Cells 云 SDK
+您可使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何通过 cURL 调用云 API。
 
-使用 SDK 是最快的开发方式，因为它抽象了低级细节，允许您使用短代码构建电子表格。
-请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_CreateSpreadsheet.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/create?format=XLSX&outStorageName=MyStorage" \
+  -H "Authorization: Bearer {access_token}"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_CreateSpreadsheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 编码)",
+  "contentType": "MIME 类型",
+  "fileDownloadName": "可选文件名"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_CreateSpreadsheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_CreateSpreadsheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_CreateSpreadsheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_CreateSpreadsheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_CreateSpreadsheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CreateSpreadsheet.go" >}}
-{{< /tab >}}
+
+{{< /tabs >}}
+
+### 使用 Aspose.Cells Cloud SDK
+
+使用 SDK 是开发速度最快的方式，它能屏蔽底层细节，让您用简洁代码构建电子表格。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_CreateSpreadsheet.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_CreateSpreadsheet.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_CreateSpreadsheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_CreateSpreadsheet.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_CreateSpreadsheet.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_CreateSpreadsheet.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_CreateSpreadsheet.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CreateSpreadsheet.go" >}}
+{{</tab>}}
 {{< /tabs >}}

@@ -1,79 +1,113 @@
-﻿---
-title: Добавить объект списка на рабочий лист Excel
-second_title: Documen
-linktitle: Объявление
+---
+title: "Добавление объекта списка (таблицы) в рабочий лист Excel"
+second_title: "Документ"
+linktitle: "Добавление"
 type: docs
 url: /ru/list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
-keywords: Add a list object(table) into an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает добавление объекта-списка (таблицы) в рабочий лист Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+keywords: "Aspose.Cells Cloud, Excel API, объект списка, таблица, REST API, рабочий лист"
+description: "Узнайте, как добавить объект списка (таблицу Excel) в рабочий лист с помощью REST API Aspose.Cells Cloud. Включает endpoint, параметры, шаги аутентификации, пример cURL и примеры кода SDK."
 weight: 10
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Добавление объекта списка на рабочий лист Excel
+ArticleTitle: "Добавление объекта списка (таблицы) в рабочий лист Excel – Документация Aspose.Cells Cloud"
 ---
-Этот REST API указывает на `add a list object(table)` на листе Excel.
 
-## РСЕT API
+Этот REST API добавляет **объект списка (таблицу)** в рабочий лист Excel.
+
+Прежде чем использовать этот endpoint, убедитесь, что у вас есть действительный JWT-токен, книга хранится в поддерживаемом облачном хранилище и указанный рабочий лист существует.
+
+## REST API
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 ```
 
-Параметры запроса:
+### Параметры запроса
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| startRow| целое число| запрос| Начальная строка диапазона списка.|
-| startColumn| целое число| запрос| Начальная строка диапазона списка.|
-| конец строки| целое число| запрос| Начальная строка диапазона списка.|
-| конец столбца| целое число| запрос| Начальная строка диапазона списка.|
-| hasHeaders| булев| запрос| Истинный|
-| listObject|| тело| Список объектов|
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра   | Тип     | Расположение | Описание                                                                   |
+| ---------------- | ------- | ------------ | -------------------------------------------------------------------------- |
+| **name**         | string  | path         | Имя файла книги.                                                           |
+| **sheetName**    | string  | path         | Имя рабочего листа.                                                        |
+| **startRow**     | integer | query        | Индекс первой строки диапазона таблицы (начинается с 0).                   |
+| **startColumn**  | integer | query        | Индекс первого столбца диапазона таблицы (начинается с 0).                |
+| **endRow**       | integer | query        | Индекс последней строки диапазона таблицы (начинается с 0).               |
+| **endColumn**    | integer | query        | Индекс последнего столбца диапазона таблицы (начинается с 0).             |
+| **hasHeaders**   | boolean | query        | `true`, если первая строка содержит заголовки столбцов; иначе `false`.   |
+| **listObject**   | object  | body         | Описание объекта списка (см. **Схему тела запроса**).                     |
+| **folder**       | string  | query        | Папка, содержащая книгу.                                                   |
+| **storageName**  | string  | query        | Имя хранилища.                                                             |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### Схема тела запроса
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Объект **listObject** описывает таблицу, которая будет создана. Приведены только наиболее распространённые свойства; полный список смотрите в спецификации OpenAPI.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "displayName": "MyTable",
+  "showTotals": false,
+  "style": "TableStyleMedium2"
 }
- 
 ```
 
-{{< /tab >}}
+### Пример запроса (cURL)
 
-{{< /tabs >}}
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "displayName": "MyTable",
+        "showTotals": false,
+        "style": "TableStyleMedium2"
+      }'
+```
+
+### Пример ответа
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+### Коды ошибок
+
+| HTTP-статус | Причина               | Описание                                           |
+|------------|----------------------|----------------------------------------------------|
+| **400**    | Bad Request          | Неверные параметры диапазона или некорректный JSON в теле. |
+| **401**    | Unauthorized         | Отсутствует или истёк JWT-токен.                  |
+| **404**    | Not Found            | Указанная книга или рабочий лист не существуют.   |
+| **500**    | Internal Server Error | Непредвиденная ошибка на стороне сервера.         |
+
+**Пример ответа 400**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Invalid range parameters."
+}
+```
+
+**Пример ответа 401**
+
+```json
+{
+  "Code": 401,
+  "Status": "Unauthorized",
+  "Message": "Authentication token is missing or expired."
+}
+```
+
+Полное описание этой операции приведено в [спецификации OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject).
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали и позволяет сосредоточиться на задачах проекта. Полный список облачных SDK Aspose.Cells Cloud см. в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+В приведённых ниже примерах кода показано, как выполнять вызовы веб-сервисов Aspose.Cells с помощью различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

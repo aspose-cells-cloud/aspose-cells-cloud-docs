@@ -1,38 +1,48 @@
-﻿---
-title: Aspose.Cells Cloud Web API - استبدال محتوى النطاق في جدول بيانات بعيد
-second_title: Documen
-ArticleTitle: Replace Range Content in Remote a Spreadshee
-linktitle: استبدال محتوى النطاق البعيد
-type: docs
-url: /ar/replace-content-in-remote-range/
-keywords: API, Excel API, Replace Content, Remote Spreadsheet, Cloud Storage, Text Replacement, REST AP
-description: استبدال النص بكفاءة ضمن نطاقات محددة من جداول البيانات البعيدة باستخدام Aspose.Cells Cloud API
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، JSON، Markdown، مطابقة جميع الخلايا الفارغة في ورقة عمل Excel، استبدال النص عن بعد، تكامل التخزين السحابي
 ---
-استبدال النص المحدد بكفاءة ضمن نطاق ملف جدول بيانات بعيد.
+title: "واجهة برمجة تطبيقات (Web API) لاستبدال المحتوى في Aspose.Cells Cloud – تحديث النص في نطاق جدول بيانات عن بُعد"
+second title: "مستند"
+ArticleTitle: "استبدال النص في النطاقات دفعة واحدة في ملفات إكسل السحابية – واجهة برمجة تطبيقات البحث والاستبدال"
+linktitle: "استبدال محتوى النطاق عن بُعد"
+type: docs
+url: /replace-content-in-remote-range/
+keywords: "استبدال نص في نطاق إكسل عن بُعد، واجهة برمجة تطبيقات Aspose.Cells Cloud، البحث والاستبدال في إكسل، تعديل جدول بيانات سحابي، تحديث ملف إكسل عن بُعد"
+description: "استخدم Aspose.Cells Cloud للبحث عن النص واستبداله في نطاق مُحدّد من ملف إكسل مخزّن عن بُعد. يدعم المصادقة، ومعالجة الأخطاء، ومكتبات SDK متعددة اللغات."
+weight: 100
+---
 
-## **استبدال المحتوى في النطاق البعيد API**
+قم بإجراء استبدال دفعي للنص عبر ملفات إكسل المخزّنة في السحابة. ابحث عن نصوص محدّدة وحدّثها بفعالية ضمن النطاقات المُختارة باستخدام واجهة برمجة تطبيقات البحث والاستبدال في Aspose.Cells Cloud.
+
+## **واجهة استبدال المحتوى في النطاق عن بُعد**
+
+### واجهة برمجة تطبيقات الويب (Web API)
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content
+PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content
 ```
 
-### **معلمات الطلب:**
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم ملف المصنف الذي سيتم تعديله.|
-| نص البحث| خيط| استفسار| النص الذي تريد البحث عنه داخل جدول البيانات.|
-| استبدال النص| خيط| استفسار| النص الذي سيتم استبدال النص الذي تم البحث عنه به.|
-| ورقة عمل| خيط| طريق| اسم ورقة العمل التي سيحدث فيها الاستبدال.|
-| منطقة الخلية| خيط| طريق| منطقة الخلية المحددة للاستبدال.|
-| مجلد| خيط| استفسار| مسار المجلد الذي يتم تخزين المصنف فيه.|
-| اسم التخزين| خيط| استفسار|(اختياري) اسم وحدة التخزين إذا كنت تستخدم تخزينًا سحابيًا مخصصًا. استخدم وحدة التخزين الافتراضية إذا تم حذفها.|
-| منطقة| خيط| استفسار| إعداد منطقة جدول البيانات.|
-| كلمة المرور| خيط| استفسار| كلمة المرور لفتح ملف جدول البيانات.|
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتشترط <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة مبنية على رمز JWT</a>.
 
-### **إجابة**
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### **مُعطَلات الطلب (Request Parameters)**
+
+| اسم المُعطَل (Parameter Name) | النوع (Type) | المسار / سلسلة الاستعلام / جسم طلب HTTP | الوصف |
+| :--------------------------- | :--------- | :------------------------------------- | :---- |
+| name                         | نص (String) | المسار (Path)                           | اسم ملف المصنف المخزّن في التخزين السحابي ويُراد تعديله (مثل `"report.xlsx"`). |
+| searchText                   | نص (String) | سلسلة الاستعلام (Query)                | النص الذي سيتم البحث عنه داخل ورقة العمل ونطاق الخلية المحدّدين. يدعم المطابقة الدقيقة للنصوص. |
+| replaceText                  | نص (String) | سلسلة الاستعلام (Query)                | النص الذي سيُستبدل بكلّ مرات ظهور `searchText` داخل النطاق المحدّد. |
+| worksheet                    | نص (String) | المسار (Path)                           | اسم ورقة العمل التي ستُجرى فيها عملية البحث والاستبدال. |
+| cellArea                     | نص (String) | المسار (Path)                           | النطاق المحدّد لخلايا (مثل `"A1:D20"`) الذي سيتم فيه البحث والاستبدال. |
+| folder                       | نص (String) | سلسلة الاستعلام (Query)                | مسار مجلد التخزين السحابي حيث يقع المصنف المصدر. |
+| storageName                  | نص (String) | سلسلة الاستعلام (Query)                | _(اختياري)_ اسم مجلد التخزين السحابي الذي يوجد فيه المصنف. وإذا حُذف، يُستخدم التخزين السحابي الافتراضي. |
+| region                       | نص (String) | سلسلة الاستعلام (Query)                | _(اختياري)_ يُعيّن الإعدادات الإقليمية (Locale) للتعامل مع النصوص، ما قد يؤثّر على حساسية الحالة (Case Sensitivity) وترميز الأحرف في عمليات البحث (مثل `"en-US"`, `"tr-TR"`). |
+| password                     | نص (String) | سلسلة الاستعلام (Query)                | _(اختياري)_ إذا كان المصنف محميًا بكلمة مرور، فوفّر كلمة المرور لفتح الملف وتعديله. |
+
+### **الاستجابة (Response)**
 
 ```json
 {
@@ -42,71 +52,111 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cel
     {
       "Name": "Code",
       "DataType": {
-        "Identifier": "Integer",
+        "Identifier": "Integer"
       }
     },
     {
       "Name": "Status",
       "DataType": {
-        "Identifier": "String",
+        "Identifier": "String"
       }
     }
   ]
 }
 ```
 
-### رموز الخطأ
+استدعاء ناجح يُعيد حُمْلَة JSON محدّدة كما يلي:
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
 
-## أين يجب علينا استخدام محتوى استبدال النطاق في جدول البيانات البعيد API؟
 
-عندما تحتاج إلى استبدال محتوى النطاق في جدول بيانات بعيد، يمكنك استخدام هذا API.
+### أكواد الأخطاء (Error Codes)
 
-## لماذا يجب عليك استخدام استبدال محتوى النطاق في جدول البيانات البعيد API؟
+| الكود (Code) | الرسالة (Message) | متى يحدث الخطأ؟ |
+| ----------- | ---------------- | --------------- |
+| 400         | Bad Request      | URI الطلب أو مُعطَلاته غير سليمة. |
+| 401         | Unauthorized     | نقص رمز المصادقة أو عدم صلاحيته. |
+| 404         | Not Found        | لا يمكن العثور على المصنف المحدّد أو الوصول إليه. |
+| 500         | Server Error     | خطأ داخلي في الخادم أثناء معالجة المصنف. |
 
-- استبدال محتوى النطاق بسرعة في جداول البيانات البعيدة.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+## أين يجب استخدام واجهة استبدال محتوى النطاق في جدول البيانات عن بُعد؟
 
-## كيفية استخدام استبدال محتوى النطاق في جدول البيانات البعيد API مع مجموعات تطوير البرامج (SDKs)
+- **تحديث ملفات سحابية دفعيًا**: تعديل محتويات ملفات إكسل متعددة مخزّنة في تخزين سحابي مثل AWS S3 وAzure Blob.
+- **تعبئة قوالب السحابة ديناميكيًا**: تعبئة دفعية لبيانات ديناميكية في قوالب التقارير المخزّنة في السحابة.
+- **مزامنة الملفات بين المناطق الجغرافية**: مزامنة اتساق محتوى ملفات إكسل المخزّنة في السحابة عبر مناطق جغرافية مختلفة.
+
+## لماذا يجب استخدام واجهة استبدال محتوى النطاق في جدول البيانات عن بُعد؟
+
+- **مُيسّرة للمطورين**: تقدّم Aspose.Cells Cloud مكتبات SDK بلغات برمجة متعددة، مما يتيح تطويرًا سريعًا مع توفر توثيق شامل. ومقارنةً ببناء حلول مخصّصة، يقلّل هذا بشكل كبير من جهد التطوير.
+- **تقليل تكاليف العمالة**: يقلّل الحاجة إلى تعيين موظفين متخصصين في دمج الوثائق.
+- **الدفع حسب الاستخدام (Pay-per-use)**: لا توجد استثمارات أولية؛ تدفع فقط مقابل الاستدعاءات الفعلية لواجهة برمجة التطبيقات.
+- **لا توجد تكاليف صيانة**: لا حاجة لصيانة الخوادم، أو تحديث البرامج، أو التعامل مع مشاكل التوافق.
+- **الحفاظ على تنسيقات إكسل المعقدة** في تنسيق PDF سهل الوصول إليه عالميًا.
+
+## كيف تستخدم واجهة استبدال محتوى النطاق في جدول البيانات عن بُعد باستخدام مكتبات SDK؟
 
 ### مواصفات OpenAPI
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/SearchControllor/ReplaceContentInRemoteRange) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تُعرّف [مواصفات OpenAPI](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceContentInRemoteRange) واجهة برمجة تطبيقات مفتوحة للعامة، وتتيح لك إجراء تفاعلات REST مباشرة من متصفّح الويب.
 
-### استخدم Aspose.Cells Cloud SDKs
+### استخدام مكتبات SDK من Aspose.Cells Cloud
 
-يُعد استخدام مجموعة أدوات تطوير البرامج (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل الأساسية، مما يسمح لك بتطبيق استبدال المحتوى في جداول البيانات للخلايا بسهولة وبأقل قدر من التعليمات البرمجية.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع التطوير. فتتولّى SDK التفاصيل الأساسية، وتسمح لك بتنفيذ استبدال المحتوى في جداول البيانات بقليل جدًا من الكود. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضّح أمثلة الكود التالية كيفية إجراء استدعاءات إلى خدمات ويب Aspose.Cells باستخدام مكتبات SDK مختلفة:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ReplaceTextInRemoteRange.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ReplaceTextInRemoteRange.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ReplaceTextInRemoteRange.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ReplaceTextInRemoteRange.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ReplaceTextInRemoteRange.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ReplaceTextInRemoteRange.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ReplaceTextInRemoteRange.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ReplaceTextInRemoteRange.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+
+```csharp
+```
+
+{{</tab>}}
+{{<tab tabNum="2" >}}
+
+```java
+```
+
+{{</tab>}}
+{{<tab tabNum="3" >}}
+
+```php
+```
+
+{{</tab>}}
+{{<tab tabNum="4" >}}
+
+```ruby
+```
+
+{{</tab>}}
+{{<tab tabNum="5" >}}
+
+```javascript
+```
+
+{{</tab>}}
+{{<tab tabNum="6" >}}
+
+```python
+```
+
+{{</tab>}}
+{{<tab tabNum="7" >}}
+
+```perl
+```
+
+{{</tab>}}
+{{<tab tabNum="8" >}}
+
+```go
+```
+
+{{</tab>}}
 {{< /tabs >}}

@@ -1,45 +1,77 @@
-﻿---
-title: Aspose.Cells Cloud Web API - تحقق من صحة خدمة السحابة
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Health Chec
-linktitle: التحقق من صحة خدمة السحابة
-type: docs
-url: /ar/check-cloud-service-health/
-keywords: cloud service health, Aspose.Cells, API status check, service monitoring, Excel API, REST API, health metrics, system availabilit
-description: راقب الحالة الصحية لخدمة Aspose.Cells السحابية باستخدام مقاييس الوقت الفعلي والرؤى التشغيلية
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحالة الصحية، توفر الخدمة، مقياس الأداء
 ---
-التحقق من حالة صحة خدمات السحابة Aspose.Cells.
+title: "Aspose.Cells Cloud – التحقق من صحة الخدمة (واجهة برمجة تطبيقات)"
+second_title: "وثيقة"
+ArticleTitle: "فحص صحة خدمة Aspose.Cells Cloud"
+linktype: "docs"
+url: /check-cloud-service-health/
+keywords: "Aspose.Cells Cloud، فحص صحة واجهة برمجة التطبيقات، حالة REST، مراقبة الخدمة السحابية"
+description: "راقب صحة خدمة Aspose.Cells Cloud في الزمن الفعلي. تعرّف على نقطة النهاية GET /v4.0/cells/status/check، والمعاملات، وتنسيق الاستجابة، وأمثلة SDK."
+weight: 100
+---
 
-### **التحقق من صحة خدمة السحابة API**
+تحقق من حالة صحة خدمات Aspose.Cells Cloud.
 
+**المتطلبات الأساسية**  
+لاستدعاء نقطة النهاية هذه، يجب أن يكون لديك رمز وصول صالح لـ Aspose Cloud. احصل على الرمز من خلال تسجيل تطبيق في لوحة تحكم Aspose Cloud، ثم استخدام client-id وclient-secret لطلب رمز Bearer عبر نقطة نهاية رموز OAuth2. تضمين الرمز في رأس `Authorization` كما هو موضح أدناه.
+
+## **فحص صحة الخدمة السحابية**
+
+### **واجهة برمجة التطبيقات عبر الويب**
+
+```http
+GET https://api.aspose.cloud/v4.0/cells/status/check
 ```
-GET http://api.aspose.cloud/v4.0/cells/status/check
-```
 
-### **معلمات الطلب:**
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-### **إجابة**
+### **معاملات الطلب**
+
+| المعامل         | النوع   | الإجباري | الوصف                                                                 |
+| --------------- | ------- | -------- | --------------------------------------------------------------------- |
+| Authorization   | رأس    | نعم      | رمز Bearer للمصادقة (`Authorization: Bearer <token>`).               |
+| detail          | استعلام | لا       | ضبطها على `true` لتضمين معلومات مفصّلة عن المكونات.                   |
+| Accept          | رأس    | لا       | تنسيق الاستجابة المطلوب، الافتراضي هو `application/json`.            |
+
+### **الاستجابة**
+
+تُعيد الخدمة حمولة JSON عند نجاح الطلب.
 
 ```json
 {
-String
+  "status": "OK",
+  "service": "Cells",
+  "timestamp": "{{timestamp}}",
+  "components": {
+    "api": "Operational",
+    "storage": "Operational",
+    "database": "Operational"
+  }
 }
 ```
 
-## كيفية استخدام حالة السحابة Aspose.Cells API مع مجموعات تطوير البرامج (SDKs)
+**رموز حالة HTTP**
+
+| الرمز | المعنى                 | الوصف                                                         |
+| ----- | ---------------------- | ------------------------------------------------------------- |
+| 200   | OK (نجاح)             | الخدمة صحّية؛ راجع مثال JSON أعلاه.                            |
+| 401   | غير مصادَق             | رمز مصادقة غير صالح أو مفقود.                                |
+| 503   | الخدمة غير متاحة       | الخدمة غير صحّية حاليًا أو خاضعة للصيانة.                     |
+| 4xx   | خطأ من العميل          | معاملات طلب غير صحيحة أو طلب معطّل الصيغة.                    |
+| 5xx   | خطأ من الخادم          | فشل غير متوقع في الخادم؛ أعد المحاولة لاحقًا.                 |
+
+## كيفية استخدام واجهة برمجة تطبيقات حالة Aspose.Cells Cloud باستخدام مكتبات SDK
 
 ### مواصفات OpenAPI
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/CellsStatusController/CheckCloudServiceHealth) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+<a href="https://reference.aspose.cloud/cells/#/CellsStatusController/CheckCloudServiceHealth" target="_blank" rel="noopener noreferrer">مواصفات OpenAPI</a> تُعرّف واجهة برمجة تطبيقات متاحة علنًا وتمكّنك من إجراء تفاعلات REST مباشرة من متصفح ويب.
 
-### استخدم Aspose.Cells Cloud SDKs
+### استخدام مكتبات SDK الخاصة بـ Aspose.Cells Cloud
 
-يُعد استخدام حزمة تطوير البرامج (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل الأساسية، مما يُتيح لك تنفيذ فحص سلامة السحابة للخلايا بسهولة وبأقل قدر من التعليمات البرمجية.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع التطوير. فالمكتبة SDK تتعامل مع التفاصيل الأساسية، مما يتيح لك تنفيذ فحص صحة خدمة Cells باستخدام كود محدود جدًا.  
+يرجى الاطّلاع على <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">مستودع GitHub</a> للاطّلاع على قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+وفيما يلي مقاطع نموذجية توضّح كيفية استدعاء نقطة النهاية الخاصة بفحص الصحة باستخدام أكثر مكتبات SDK شيوعًا.
+
+---

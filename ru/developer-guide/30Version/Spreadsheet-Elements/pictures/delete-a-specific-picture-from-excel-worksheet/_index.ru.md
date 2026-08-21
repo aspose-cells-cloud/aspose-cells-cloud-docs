@@ -1,74 +1,90 @@
-﻿---
-title: Удалить картинку в файле Excel
-second_title: Documen
-linktitle: Удалить
-type: docs
-url: /ru/pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
-keywords: Delete a picture in an Excel file
-description: Aspose.Cells Cloud REST API поддерживает удаление изображения из файла Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 50
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Удаление изображения из файла Excel
 ---
-Этот REST API указывает на `delete` картинку из рабочего листа Excel.
+title: "Удаление изображения из рабочего листа Excel – Aspose.Cells Cloud API"
+second_title: "Документ"
+linktitle: "Удаление"
+type: docs
+url: /pictures/delete/
+aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+keywords: "Aspose.Cells, облачный API, удаление изображения, рабочий лист Excel, REST"
+description: "Удаление изображения из рабочего листа Excel с помощью облачного REST API Aspose.Cells. Изучите DELETE-эндпоинт, необходимые параметры, аутентификацию, коды ошибок и примеры кода."
+weight: 50
+ArticleTitle: "Удаление изображения из рабочего листа Excel – Aspose.Cells Cloud API"
+---
 
-## РСЕT API
+Этот REST API удаляет изображение из рабочего листа Excel.
+
+### **Безопасность и аутентификация**
+
+Облачные API Aspose.Cells защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе токена JWT</a>.
+
+## REST API
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-Параметры запроса:
+### Параметры запроса
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Имя рабочего листа.|
-| pictureIndex| целое число| путь| Индекс изображений|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип    | Расположение | Обязательный | Описание                                                |
+| ------------- | ------ | ------------ | ------------ | ------------------------------------------------------- |
+| name          | string | path         | Да           | Имя файла книги.                                        |
+| sheetName     | string | path         | Да           | Имя рабочего листа, содержащего изображение.           |
+| pictureIndex  | integer| path         | Да           | Индекс удаляемого изображения (начинается с 0).         |
+| folder        | string | query        | Нет          | Папка, в которой хранится книга.                       |
+| storageName   | string | query        | Нет          | Имя службы хранилища (необязательно).                  |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPicture) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+Для простого доступа к веб-сервисам Aspose.Cells можно использовать утилиту командной строки cURL. Ниже приведён пример вызова с помощью cURL.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**Пример заголовков ответа**
+
+| Заголовок      | Значение                     |
+|----------------|-----------------------------|
+| Content-Type   | application/json            |
+| Content-Length | (зависит от сервера)        |
+| Date           | (дата сервера)              |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Обработка ошибок
+
+| HTTP-код | Значение                                                   | Пример полезной нагрузки ошибки                                     |
+| -------- | ---------------------------------------------------------- | ------------------------------------------------------------------- |
+| 200      | Изображение успешно удалено.                               | `{ "Code": 200, "Status": "OK" }`                                   |
+| 400      | Неверный запрос — некорректные параметры.                  | `{ "Code": 400, "Message": "Неверное значение pictureIndex." }`     |
+| 401      | Неавторизованный доступ — отсутствует/некорректный токен. | `{ "Code": 401, "Message": "Токен доступа отсутствует или недействителен." }` |
+| 404      | Не найдено — книга, рабочий лист или изображение не существует. | `{ "Code": 404, "Message": "Ресурс не найден." }`                 |
+| 500      | Внутренняя ошибка сервера.                                 | `{ "Code": 500, "Message": "Непредвиденная ошибка сервера." }`      |
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ разработки. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на вашем проекте. Полный список облачных SDK Aspose.Cells доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -121,3 +137,4 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 {{< /tab >}}
 
 {{< /tabs >}}
+---

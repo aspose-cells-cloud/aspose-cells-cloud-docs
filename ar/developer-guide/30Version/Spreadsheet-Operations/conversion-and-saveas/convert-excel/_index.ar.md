@@ -1,73 +1,107 @@
-﻿---
-title: تحويل ملف Excel إلى تنسيق مختلف
-second_title: Documen
-linktitle: تحويل Excel
-type: docs
-url: /ar/convert-an-excel-file-to-different-formats/
-aliases: [/convert-excel-workbook-to-different-file-formats/,/convert/excel-to-different-formats/]
-keywords: Convert excel files to kinds of format files
-description: يدعم Cloud REST تحويل ملفات إكسل إلى أنواع مختلفة من صيغ الملفات. تدعم مجموعة أدوات تطوير البرامج (SDK) لغات تطوير مختلفة، بما في ذلك أندرويد، وغو، ونود جي إس، وروبي، وسويفت.
-weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تحويل Excel
 ---
-يشير هذا REST API إلى ملف Excel `convert` بتنسيق ملف مختلف.
+title: "تحويل ملف إكسل إلى تنسيقات مختلفة"
+ArticleTitle: "تحويل ملف إكسل إلى تنسيقات مختلفة"
+second_title: "مستند"
+linktype: "تحويل إكسل"
+type: docs
+url: /convert-an-excel-file-to-different-formats/
+aliases:
+  [
+    /convert-excel-workbook-to-different-file-formats/,
+    /convert/excel-to-different-formats/,
+  ]
+keywords: "Aspose.Cells Cloud، تحويل إكسل، تحويل تنسيق الملف، واجهة REST API، واجهة برمجة التطبيقات SDK، CSV، PDF، HTML، JSON، Markdown"
+description: "قم بتحويل كتب عمل إكسل إلى تنسيقات مختلفة مثل CSV وPDF وHTML وJSON وMarkdown وغيرها باستخدام واجهة Aspose.Cells Cloud REST API."
+weight: 10
+---
 
-الطلب عبارة عن طلب HTTP يحتوي على محتوى متعدد الأجزاء (انظر[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)أو[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)يحتوي الجزء الأول من المحتوى المتعدد الأجزاء على ملف البيانات، ويحتوي الجزء الثاني على خيارات الحفظ.
+قبل استدعاء هذه النقطة النهائية (endpoint)، تأكد من حصولك على رمز JWT صالح، ومن وجود ملف المصنف المصدر في موقع تخزين مدعوم (مثل: Aspose Cloud Storage). ضع الرمز في رأس `Authorization`، وحدّد معلمة الاستعلام `storageName` إن لزم الأمر.
 
-**معلمة الاستعلام**
+تقوم هذه الواجهة REST API بتحويل ملف إكسل إلى تنسيقات إخراج مختلفة.
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|شكل|خيط| تنسيق الملف: csv، xls، html، mhtml، ods، pdf، xml، txt، tiff، xlsb، xlsm، xlsx، xltm، xltx، xps، png، jpg، gif، emf، bmp، md، Numbers، wmf، svg، وما إلى ذلك.|
-|كلمة المرور|خيط| كلمة المرور المطلوبة لفتح الملف Excel.|
-|المسار الخارجي|خيط| مسار حفظ النتيجة. إذا كان ملفًا واحدًا، فيجب أن يتضمن الرمز `outPath` اسم الملف وامتداده. أما في حالة وجود ملفات متعددة، فيجب أن يتضمن الرمز `outPath` المجلد فقط.|
-|اسم التخزين|خيط| اسم التخزين الذي يقع فيه الملف.|
-|التحقق من قيود Excel|منطقي| ما إذا كان من الممكن التحقق من تقييد ملف Excel عندما يقوم المستخدم بتعديل الكائنات المرتبطة بالخلايا.|
-|تنسيق التدفق|خيط| تنسيق تدفق ملف الإدخال.|
-|منطقة|خيط| الإعدادات الإقليمية للمصنف.|
-|ملاءمة الصفحة العريضة لكل ورقة|منطقي| تناسب الصفحة العريضة مع ورقة العمل.|
-|طول الصفحة يتناسب مع كل ورقة|منطقي| الصفحة الطويلة تناسب ورقة العمل.|
-|اسم الورقة|خيط| تحويل ورقة العمل المحددة.|
-|فهرس الصفحة|خيط| تحويل الصفحة المحددة من ورقة العمل، مطلوب sheetName.|
-|صفحة واحدة لكل ورقة|منطقي| عند التحويل إلى تنسيق PDF، صفحة واحدة لكل ورقة.|
-|صفوف تلقائية|منطقي| يتناسب تلقائيًا مع جميع الصفوف في هذا المصنف.|
-|ملاءمة الأعمدة التلقائية|منطقي| يتناسب عرض الأعمدة في هذا المصنف تلقائيًا.|
+## PutConvertWorkBook API
 
-**معلمة نص الطلب**
-
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|ملف البيانات| ملف البيانات|يتم حفظ ملف البيانات في الجزء الأول من المحتوى المتعدد الأجزاء.|
-|حفظ الخيارات| هدف|خيار الحفظ حفظ في الجزء الثاني من المحتوى المتعدد الأجزاء.|
-
-## الباقي API
-
-|**API**|**يكتب**|**وصف**|**رابط سواجر**|
-|:- |:- |:- |:- |
-|/خلايا/تحويل|يضع|تحويل المصنف من محتوى الطلب إلى تنسيق ما|[ضع كتاب العمل المحول](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
-
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
-
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
-
-{{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/convert?format=html" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+```http
+PUT https://api.aspose.cloud/v3.0/cells/convert
 ```
 
-{{< /tab >}}
+يكون الطلب عبارة عن طلب HTTP **PUT** بمحتوى متعدد الأجزاء (انظر [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) أو [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
+يحتوي الجزء الأول من جسم الطلب متعدد الأجزاء على **ملف البيانات**، بينما يحتوي الجزء الثاني على **خيارات الحفظ**.
 
-{{< /tabs >}}
+### **الأمان والمصادقة**
 
-## عائلة SDK السحابية
+تُعدّ واجهات Aspose.Cells Cloud API آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+### معلمات الاستعلام (Query Parameters)
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+| اسم المعلمة            | النوع   | الوصف                                                                                                                |
+| ----------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------- |
+| `format`                | string | تنسيق ملف الإخراج المستهدف (مثل: CSV، XLS، HTML، PDF، XML، TXT، TIFF، PNG، JPG، GIF، EMF، BMP، MD، Numbers، WMF، SVG، إلخ). |
+| `password`              | string | كلمة المرور المطلوبة لفتح ملف الإكسل المصدر.                                                                           |
+| `outPath`               | string | المسار الكامل (بما في ذلك اسم الملف وامتداده) لملف إخراج واحد، أو مسار مجلد عند توليد ملفات متعددة. |
+| `storageName`           | string | اسم مساحة التخزين التي يقع فيها ملف المصدر.                                                                         |
+| `checkExcelRestriction` | bool   | عند القيمة **true**، يتحقق من قيود إكسل قبل تعديل الخلايا أو الكائنات المرتبطة بها.                                     |
+| `streamFormat`          | string | تنسيق تدفق ملف الإدخال.                                                                                           |
+| `region`                | string | الإعدادات الإقليمية المطبّقة على مصنف العمل.                                                                                 |
+| `pageWideFitOnPerSheet` | bool   | ضبط عرض الصفحة لتناسب كل ورقة عمل عند التحويل إلى PDF.                                                           |
+| `pageTallFitOnPerSheet` | bool   | ضبط ارتفاع الصفحة لتناسب كل ورقة عمل عند التحويل إلى PDF.                                                          |
+| `sheetName`             | string | اسم ورقة العمل المراد تحويلها.                                                                                          |
+| `pageIndex`             | string | فهرس الصفحة المراد تحويلها (يتطلب `sheetName`).                                                                       |
+| `onePagePerSheet`       | bool   | عند القيمة **true**، يُولّد صفحة PDF واحدة لكل ورقة عمل.                                                                       |
+| `AutoRowsFit`           | bool   | ضبط ارتفاع جميع الصفوف في مصنف العمل تلقائيًا.                                                                                        |
+| `AutoColumnsFit`        | bool   | ضبط عرض الأعمدة في مصنف العمل تلقائيًا.                                                                                   |
+
+### معلمات جسم الطلب (Request Body Parameters)
+
+| اسم المعلمة | النوع      | الوصف                                                    |
+| -------------- | --------- | -------------------------------------------------------------- |
+| `datafile`     | data file | ملف الإكسل الموضّع في الجزء الأول من جسم الطلب متعدد الأجزاء. |
+| `SaveOptions`  | object    | خيارات الحفظ الموضّحة في الجزء الثاني من جسم الطلب متعدد الأجزاء.  |
+
+### **الاستجابة**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**رموز حالة HTTP**
+
+| الكود | المعنى                     | الوصف                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | نجاح (OK)                          | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صالح (Bad Request)                 | معلمات مفقودة أو غير صحيحة (مثل: نوع ملف غير مدعوم). |
+| 401  | غير مصادق عليه (Unauthorized)                | رمز JWT غير صالح أو مفقود. |
+| 413  | حجم الحمولة كبير جدًا (Payload Too Large)           | تجاوز حجم الملف المرفوع الحد المسموح به. |
+| 500  | خطأ داخلي في الخادم (Internal Server Error)       | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام PutConvertWorkBook API مع واجهات برمجة التطبيقات SDK
+
+### مواصفات PutConvertWorkBook API
+
+تُحدّد [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) واجهة قابلة للوصول بشكل عام تتيح التفاعل المباشر مع REST من متصفح ويب.
+
+### مثال باستخدام cURL
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/convert?format=html" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -d '{"File":{}}'
+```
+
+### استخدام واجهات برمجة التطبيقات SDK لـ Aspose.Cells Cloud
+
+استخدام واجهات SDK يُسرّع عملية التطوير من خلال التعامل مع التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على المنطق التجاري. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بواجهات Aspose.Cells Cloud SDK.
+
+تُظهر الأمثلة التالية كيفية استدعاء خدمات Aspose.Cells عبر واجهات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -85,37 +119,37 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/convert?format=html" -H "accept
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PutConvertWorkbook.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "ExamplePutConvertWorkbook.php" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PutConvertWorkbook.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "ExamplePutConvertWorkbook.rb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutConvertWorkbook.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "ExamplePutConvertWorkbook.ts" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PutConvertWorkbook.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "ExamplePutConvertWorkbook.py" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PutConvertWorkbook.pl" >}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "ExamplePutConvertWorkbook.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PutConvertWorkbook.go" >}}
+{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "ExamplePutConvertWorkbook.go" >}}
 
 {{< /tab >}}
 

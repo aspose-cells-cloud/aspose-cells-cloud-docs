@@ -1,21 +1,20 @@
-﻿---
-title: Hur man får olika innehåll från ett Excel-arbetsblad
-second_title: Documen
-linktitle: Ge
-type: docs
-url: /sv/worksheets/get/
-keywords: How to get different content from an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder hämtning av olika innehåll från ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hur man hämtar olika innehåll från ett Excel-kalkylblad
 ---
-## Jobbar med att hämta ett Excel-arbetsblad.
+title: "Så här får du olika innehåll från ett Excel-ark"
+second_title: "Dokument"
+linktype: "Hämta"
+type: docs
+url: /worksheets/get/
+keywords: "Excel, kalkylark, Aspose.Cells Cloud, REST API, extrahering av innehåll, formatkonvertering"
+description: "Lär dig hur du hämtar olika typer av innehåll från ett Excel-ark med Aspose.Cells Clouds REST API. Guiden täcker stödda format och innehåller länkar till relaterade åtgärder."
+weight: 20
+---
 
-- [Hur man får ett Excel-arbetsblad med olika format.](/cells/sv/worksheets/get-worksheet/) 
-    - [Hur man konverterar Excel-arbetsbladet till en bild.](/cells/sv/worksheets/to-image/)
-- [Hur man får ett Excel-arbetsbladsområde med olika format.](/cells/sv/worksheets/area-to-different-formats/)
-- [Hur man får ett Excel-arbetsblad med olika format.](/cells/sv/get-worksheet-for-page-index/) 
-- [Hur man får sidantal för ett Excel-arbetsblad.](/cells/sv/worksheets/page-count/) 
-- [Hur man får beskrivningen av Excel-arbetsblad.](/cells/sv/worksheets/get-all/) 
+## Arbeta med att hämta ett Excel-ark
 
-
+- [Så här får du ett Excel-ark i olika format](/cells/worksheets/get-worksheet/)  
+- [Så här konverterar du ett Excel-ark till en bild](/cells/worksheets/to-image/)  
+- [Så här får du ett område av ett Excel-ark i olika format](/cells/worksheets/area-to-different-formats/)  
+- [Så här får du en sida av ett Excel-ark i olika format](/cells/get-worksheet-for-page-index/)  
+- [Så här får du antalet sidor i ett Excel-ark](/cells/worksheets/page-count/)  
+- [Så här hämtar du beskrivningar av Excel-ark](/cells/worksheets/get-all/)  
+---

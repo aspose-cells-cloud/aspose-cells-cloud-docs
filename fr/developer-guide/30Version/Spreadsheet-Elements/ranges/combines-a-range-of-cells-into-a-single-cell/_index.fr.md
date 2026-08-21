@@ -1,74 +1,101 @@
-﻿---
-title: Combine une plage de Cells en une seule cellule
-second_title: Documen
-linktitle: Fusionner
-type: docs
-url: /fr/ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
-keywords: Merge a range of cells into a single cell
-description: Aspose.Cells Cloud REST API prend en charge la fusion d'une plage de cellules en une seule dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Combine une plage de Cells en une seule cellule
 ---
-Ce REST API indique de fusionner une plage de cellules en une seule cellule sur une feuille de calcul Excel.
+title: "Aspose.Cells Cloud API – Fusion de plages de cellules"
+second_title: "Document"
+linktitle: "Fusionner"
+type: docs
+url: /ranges/merge/
+aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+keywords: "Aspose.Cells, fusionner des cellules, API Excel, REST, SDK cloud"
+description: "Fusionner une plage de cellules en une seule cellule à l’aide de l’API REST Aspose.Cells Cloud. Découvrez le format de la requête, les paramètres et les exemples de SDK pour C#, Java, Python, etc."
+weight: 20
+---
 
-## RSET API
+Cet API REST permet de fusionner une plage de cellules en une seule cellule sur une feuille Excel.
+
+**Vue d’ensemble** – La fusion d’une plage combine les cellules sélectionnées en une seule cellule, en conservant la valeur de la cellule en haut à gauche et en supprimant les autres. Utilisez cette opération lorsque vous devez créer un en‑tête couvrant plusieurs colonnes ou lignes, ou lorsque vous souhaitez simplifier la mise en page d’une feuille.
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
 ```
 
-Les paramètres de la requête sont :
+### **Paramètres de la requête**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| nom du classeur|
-| nom de la feuille| chaîne| chemin| nom de la feuille de calcul|
-| gamme|| corps| plage dans la feuille de calcul|
-| dossier| chaîne| requête| Dossier de classeur.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type   | Emplacement | Description                                    |
+| ---------------- | ------ | ----------- | ---------------------------------------------- |
+| **name**         | string | path        | Nom du classeur.                               |
+| **sheetName**    | string | path        | Nom de la feuille de calcul.                   |
+| **range**        | object | body        | Objet plage spécifiant les cellules à fusionner. |
+| **folder**       | string | query       | Dossier dans lequel le classeur est stocké.    |
+| **storageName**  | string | query       | Nom du stockage.                               |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMerge) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+#### Schéma du corps de la requête
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+L’objet **Range** doit contenir les champs suivants (les autres sont facultatifs) :
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Propriété       | Type    | Obligatoire | Description                                           |
+| --------------- | ------- | ----------- | ----------------------------------------------------- |
+| **FirstRow**    | integer | Oui         | Index de ligne (à partir de 0) de la première ligne de la plage. |
+| **FirstColumn** | integer | Oui         | Index de colonne (à partir de 0) de la première colonne de la plage. |
+| **RowCount**    | integer | Oui         | Nombre de lignes à inclure dans la plage.             |
+| **ColumnCount** | integer | Oui         | Nombre de colonnes à inclure dans la plage.           |
+| **Name**        | string  | Non         | Nom facultatif pour la plage.                         |
+| **RefersTo**    | string  | Non         | Formule à laquelle la plage fait référence.            |
+| **Worksheet**   | string  | Non         | Nom de la feuille de calcul (si différent du paramètre de chemin). |
+| **RowHeight**   | number  | Non         | Hauteur des lignes dans la plage (en pixels).         |
+| **ColumnWidth** | number  | Non         | Largeur des colonnes dans la plage (en pixels).       |
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple ci‑dessous montre comment effectuer un appel à l’API Cloud via cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/merge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>" \
+  -d '{
+        "FirstRow": 9,
+        "FirstColumn": 0,
+        "RowCount": 1,
+        "ColumnCount": 7
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+#### Détails de la réponse
+
+| Statut HTTP                   | Description                                              | Exemple JSON                                           |
+| ----------------------------- | -------------------------------------------------------- | ------------------------------------------------------ |
+| **200 OK**                    | La plage a été fusionnée avec succès.                    | `{ "Code": 200, "Status": "OK" }`                      |
+| **400 Bad Request**           | Paramètres de plage non valides (par ex., indices hors limites). | `{ "Code": 400, "Message": "Plage non valide." }`         |
+| **401 Unauthorized**          | Jeton JWT manquant ou invalide.                          | `{ "Code": 401, "Message": "Échec de l’authentification." }` |
+| **404 Not Found**             | Classeur ou feuille de calcul introuvable.              | `{ "Code": 404, "Message": "Ressource introuvable." }`    |
+| **500 Internal Server Error** | Erreur interne inattendue du serveur.                   | `{ "Code": 500, "Message": "Erreur interne du serveur." }` |
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est la méthode optimale pour accélérer le développement. Un SDK gère les détails de bas niveau, ce qui vous permet de vous concentrer sur les tâches de votre projet. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code ci‑dessous montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

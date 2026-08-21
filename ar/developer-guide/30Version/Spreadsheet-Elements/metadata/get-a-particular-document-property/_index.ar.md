@@ -1,98 +1,113 @@
-﻿---
-title: الحصول على خاصية مستند معينة
-second_title: Documen
-linktitle: جي
-type: docs
-url: /ar/document-properties/get/
-aliases: [/get-a-particular-document-property/]
-keywords: Get properties from excel files
-description: يدعم Cloud REST Aspose.Cells الحصول على خصائص من ملفات Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على خاصية مستند معينة
 ---
-يشير هذا REST API إلى قراءة خصائص المستند حسب الاسم.
+title: "الحصول على خاصية مستند محددة"
+second_title: "المستند"
+linktitle: "الحصول على"
+type: docs
+url: /document-properties/get/
+aliases: [/get-a-particular-document-property/]
+keywords: "Aspose.Cells, واجهة برمجة التطبيقات السحابية، الحصول على خاصية المستند، بيانات التعريف الخاصة بملف إكسل، REST GET، أمثلة ل_sdk"
+description: "استرجاع خاصية مستند مسمّاة (مثل المؤلف أو العنوان) من ملف إكسل باستخدام واجهة Aspose.Cells Cloud REST API. يشمل مثالًا باستخدام أداة cURL، وأجزاء من كود SDK، ومخطط الاستجابة."
+weight: 20
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية للتطبيقات (REST API) بقراءة خاصية المستند حسب اسمها.
+
+## واجهة برمجة التطبيقات (REST API)
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
 ```
 
-معلمات الطلب هي:
+### مُعلَمات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم العقار| خيط| طريق| اسم العقار.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المُعلَمة | النوع | الموقع | الوصف |
+| -------------- | ------ | -------- | ---------------------------------------------- |
+| name | string | path | اسم ملف إكسل. |
+| propertyName | string | path | اسم خاصية المستند المراد استرجاعها. |
+| folder | string | query | المجلد الذي يحتوي على الملف (اختياري). |
+| storageName | string | query | اسم وحدة التخزين (اختياري). |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+يُعرّف [مواصفة OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty) واجهة برمجة تطبيقات متاحة عمومًا، وتتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+يمكنك استخدام أداة **cURL** لسهولة الوصول إلى خدمات Aspose.Cells عبر الويب. يُظهر المثال التالي كيفية إجراء المكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "DocumentProperty": {
-
     "Name": "Author",
-
     "Value": "",
-
     "BuiltIn": "True",
-
     "link": {
-
       "Href": "/test.xlsx/documentproperties/Author",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### تفاصيل الاستجابة
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يحتوي كائن JSON المُعاد من الواجهة البرمجية على الحقول التالية:
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+| الحقل | النوع | الوصف |
+| ------------------------------- | ------- | ------------------------------------------------------------ |
+| **DocumentProperty.Name** | string | اسم الخاصية (مثل `Author`). |
+| **DocumentProperty.Value** | string | قيمة الخاصية. قد تكون فارغة إذا لم تُحدّد. |
+| **DocumentProperty.BuiltIn** | boolean | يُشير إلى ما إذا كانت الخاصية جزءًا من مجموعة خصائص إكسل المدمجة. |
+| **DocumentProperty.link.Href** | string | عنوان URL النسبي لمورد الخاصية. |
+| **DocumentProperty.link.Rel** | string | نوع العلاقة، وغالبًا ما يكون `self`. |
+| **DocumentProperty.link.Title** | string | عنوان قابل للقراءة (قد يكون `null`). |
+| **DocumentProperty.link.Type** | string | نوع MIME لمورد الارتباط (قد يكون `null`). |
+| **Code** | integer | رمز حالة HTTP الذي تعيده الخدمة. |
+| **Status** | string | وصف نصّي لحالة الطلب (مثل `OK`). |
+
+### استجابات الأخطاء
+
+| حالة HTTP | الرمز | الوصف |
+| ----------- | ---------------------- | ----------------------------------------------- |
+| 400 | `InvalidParameter` | أحد مُعلَمات الطلب أو أكثر غير صالحة. |
+| 401 | `AuthenticationFailed` | رمز JWT مفقود أو غير صالح. |
+| 404 | `PropertyNotFound` | خاصية المستند المحددة غير موجودة. |
+| 500 | `InternalError` | حدث خطأ غير متوقع على الخادم. |
+
+يبدو محتوى الخطأ النموذجي كالتالي:
+
+```json
+{
+  "Code": 404,
+  "Status": "Property not found"
+}
+```
+
+## عائلة SDK للسحابة
+
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. فالـ SDK يتعامل مع التفاصيل منخفضة المستوى، مما يمكّنك من التركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطّلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية إجراء المكالمات إلى خدمات Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -145,3 +160,22 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### المصطلحات
+
+| المصطلح | التعريف |
+| --------------------- | -------------------------------------------------------------------------------------------------- |
+| **خصائص المستند** | جزء من بيانات التعريف المرتبطة بمصنف إكسل (مثل المؤلف أو العنوان أو تاريخ الإنشاء). |
+| **بيانات التعريف** | مصطلح عام يشير إلى البيانات التي تصف بيانات أخرى؛ وفي هذا السياق يشير إلى خصائص المستند. |
+| **خصائص مخصّصة** | خصائص يحددها المستخدم ولا تندرج ضمن الخصائص المدمجة. |
+
+### الأسئلة الشائعة
+
+**س:** _كيف يمكنني استرجاع خاصية المؤلف لملف إكسل مخزن في Aspose Cloud؟_  
+**ج:** أرسل طلب GET إلى `https://api.aspose.cloud/v3.0/cells/{fileName}/documentproperties/author` مع رمز Bearer صالح. ستتضمن استجابة JSON الحقل `DocumentProperty.Name = "Author"` وقيمته `Value`.
+
+**س:** _ما هو الخطأ الذي يتم إعادته إذا لم تكن الخاصية المطلوبة موجودة؟_  
+**ج:** تُعيد الواجهة البرمجية حالة HTTP 404 مع جسم JSON يحتوي على `Code: 404` و `Status: "Property not found"`.
+
+**س:** _هل يلزم تحديد `storageName` عند وجود الملف في وحدة التخزين الافتراضية؟_  
+**ج:** لا. مُعلَمة الاستعلام `storageName` اختيارية؛ يمكنك حذفها لاستخدام وحدة التخزين الافتراضية المُعدّة لحسابك.

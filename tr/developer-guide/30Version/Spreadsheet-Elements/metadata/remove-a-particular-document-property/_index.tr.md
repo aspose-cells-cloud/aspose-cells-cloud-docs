@@ -1,78 +1,77 @@
-﻿---
-title: Belirli Bir Belge Özelliğini Sil
-second_title: Documen
-linktitle: Sil
-type: docs
-url: /tr/document-properties/delete/
-aliases: [/remove-a-particular-document-property/]
-keywords: Delete, and update properties from excel files
-description: Aspose.Cells Cloud REST API, Excel dosyalarından özellik silmeyi destekler. SDK, Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift gibi çeşitli geliştirme dillerini destekler.
-weight: 50
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Belirli Bir Belge Özelliğini Sil
 ---
-Bu REST API, `delete` belge özelliğini gösterir.
+title: "Belirli Bir Belge Özelliğini Silme"
+second_title: "Belge"
+linktitle: "Sil"
+type: docs
+url: /document-properties/delete/
+aliases: [/remove-a-particular-document-property/]
+keywords: "Aspose.Cells, belge özelliği silme, Excel meta verisi API'si, REST, bulut SDK'sı, cURL örneği"
+description: "Aspose.Cells Cloud REST API v3.0 ile bir Excel çalışma kitabından belirli bir belge özelliğini silin. C#, Java, Python ve diğerleri için hem cURL hem de SDK örneklerini içerir."
+weight: 50
+---
 
-## RSET API
+Bu REST API, bir çalışma kitabından bir belge özelliğini siler.
+
+## REST API
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
 ```
 
-İstek parametreleri şunlardır:
+### İstek Parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| özellikAdı| sicim| yol| Emlak adı.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı | Tür     | Konum  | Gerekli | Açıklama                                           |
+|---------------|---------|--------|---------|----------------------------------------------------|
+| name          | string  | path   | Evet    | Excel çalışma kitabının adı.                       |
+| propertyName  | string  | path   | Evet    | Silinecek belge özelliğinin adı.                   |
+| folder        | string  | query  | Hayır   | Çalışma kitabının bulunduğu klasör yolu.           |
+| storageName   | string  | query  | Hayır   | Depolama hizmetinin adı.                           |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty), herkese açık erişilebilir bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sine istek nasıl yapılacağını göstermektedir.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author"  \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author" \
+     -X DELETE \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-  
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Hata Yanıtları
+
+| HTTP Durumu | Açıklama                                                       | Örnek JSON                                                     |
+|-------------|----------------------------------------------------------------|----------------------------------------------------------------|
+| 400         | Geçersiz istek – gerekli parametreler eksik veya geçersiz değerler. | `{"Code":400,"Message":"Eksik gerekli parametre 'name'."}`     |
+| 401         | Yetkisiz erişim – geçersiz veya eksik JWT belirteci.            | `{"Code":401,"Message":"Geçersiz erişim belirteci."}`          |
+| 404         | Bulunamadı – çalışma kitabı veya belirtilen özellik mevcut değil. | `{"Code":404,"Message":"Belge özelliği bulunamadı."}`          |
+| 500         | Sunucu iç hatası – sunucuda beklenmedik bir durum oluştu.       | `{"Code":500,"Message":"Beklenmedik bir hata oluştu."}`        |
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bir SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoludur. Bir SDK, düşük seviye detayları ele alır ve böylece projenizin görevlerine odaklanabilirsiniz. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerine çeşitli SDK'lar kullanılarak nasıl istek yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,16 +1,28 @@
-﻿---
-title: "Aspose.Cells Cloud Web API - تحويل جدول البيانات: تبديل بيانات النطاق، وحذف الصفوف والأعمدة وأوراق العمل الفارغة، والمزيد"
-second_title: Documen
-ArticleTitle: "Transform Spreadsheet: Swap Range Data, Delete Empty Rows, Columns, and Worksheets, and more"
-linktitle: تحويل
+---
+---
+title: "واجهة Aspose.Cells Cloud Web API – تحويل جداول البيانات: حذف الصفوف والأعمدة والورقات الفارغة، وتبديل النطاقات"
+second_title: "وثيقة"
+ArticleTitle: "تحويل جداول البيانات: حذف الصفوف والأعمدة والورقات الفارغة، وتبديل النطاقات"
+linktitle: "تحويل"
 type: docs
 url: /ar/transform/
-keywords: Aspose.Cells Cloud REST API, Transform Spreadsheet, Remove Empty Rows, Remove Empty Columns, Delete Worksheet
-description: تعرف على كيفية تحويل جداول البيانات بكفاءة عن طريق حذف الصفوف والأعمدة وأوراق العمل الفارغة باستخدام Aspose.Cells Cloud REST API
+keywords: "Aspose, Cells, API, حذف الصفوف الفارغة, حذف الأعمدة الفارغة, حذف الورقات الفارغة, تبديل النطاق, تنظيف جدول البيانات"
+description: "استخدم واجهات برمجة تطبيقات Aspose.Cells Cloud لحذف الصفوف والأعمدة والورقات الفارغة، وتبديل نطاقات Excel. تنظيف بيانات سريع ومُعتمد على السحابة للاستيراد الآلي."
 weight: 40
-kwords: Excel، Office تحويل السحابة وREST وجداول البيانات
 ---
-- **[حذف الأعمدة الفارغة في جدول بيانات](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-columns/)**
-- **[حذف الصفوف الفارغة في جدول بيانات](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-rows/)**
-- **[حذف أوراق العمل الفارغة في جدول بيانات](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-worksheets/)**
-- **[تبديل بيانات النطاق في جدول بيانات](https://docs.aspose.cloud/cells/swap-range/)**
+
+واجهات برمجة تطبيقات قوية لمعالجة بيانات Excel لإدارة احترافية لجداول البيانات. تُزيل هذه الواجهات الأعمدة والصفوف والورقات الفارغة تلقائيًا، وتُعيد ترتيب البيانات بين النطاقات بسلاسة. استخدمها لتجهيز جداول البيانات للتحليل أو التقارير أو التكامل دون الحاجة إلى تثبيت Excel.
+
+## واجهات برمجة تطبيقات تنظيف البيانات وتحسينها في Excel
+
+**متطلبات مسبقة** – قبل استدعاء أي واجهة برمجة تطبيقات للتحويل، احصل على رمز مصادقة صالح وتأكد من تخزين المصنف في موقع مدعوم (مثل مستودع Aspose Cloud أو رابط عام). يجب تمرير الرمز المميز في رأس `Authorization` لكل طلب.
+
+### تنظيف المحتوى الفارغ
+
+- **[حذف الأعمدة الفارغة](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-columns/)** – تحديد الأعمدة التي لا تحتوي على بيانات أو صيغ أو كائنات وحذفها تلقائيًا.  
+- **[حذف الصفوف الفارغة](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-rows/)** – إزالة جميع الصفوف الفارغة مع الحفاظ على هيكل الورقة.  
+- **[حذف الورقات الفارغة](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-worksheets/)** – تنظيف الورقات الفارغة لتقليل حجم الملف وتحسين التنظيم.
+
+### معالجة البيانات وإعادة تنظيمها
+
+- **[تبديل بيانات النطاقات](https://docs.aspose.cloud/cells/swap-range/)** – تبادل البيانات بين أي نطاقين أو عمودين أو صفين أو خليتين فرديتين داخل ملف Excel.

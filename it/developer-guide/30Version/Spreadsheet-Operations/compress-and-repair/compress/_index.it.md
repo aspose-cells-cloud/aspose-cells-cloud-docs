@@ -1,88 +1,120 @@
-﻿---
-title: Comprimi i dati in un file Excel
-second_title: Documen
-linktitle: Comprimi file Excel
-type: docs
-url: /it/compress-excel-files/
-aliases: [/compress/]
-keywords: Compress excel files
-description: Aspose.Cells Cloud REST API supporta la compressione di file Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 39
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Comprimi
 ---
-Questo REST API indica i dati `compress` in un file Excel.
+title: "Comprimere dati in un file Excel"
+ArticleTitle: "Comprimere dati in un file Excel – Aspose.Cells Cloud API"
+second_title: "Documento"
+linktype: "Comprimere file Excel"
+type: docs
+url: /compress-excel-files/
+aliases: [/compress/]
+keywords: "comprimere file Excel, Aspose Cells Cloud, compressione Excel, compressione fogli elettronici, API REST, compressione file"
+description: "Comprimi file Excel (XLS, XLSX, XLSM, XLSB, ODS) utilizzando l'API REST di Aspose.Cells Cloud. Imposta il livello di compressione, gestisci più file e integra tramite SDK."
+weight: 39
+---
 
-- Comprimi XLS, XLSX, XLSM, XLSB, ODS
-- Modo rapido per comprimere più file di fogli di calcolo Excel
-- Scegli il livello di compressione
-- Supporta più file
+## L'API PostCompress dei servizi web Aspose.Cells Cloud
 
-## RSET API
+**Prerequisiti:**  
+- È richiesto un token JWT valido per l'autenticazione.  
+- I formati di file supportati sono XLS, XLSX, XLSM, XLSB e ODS.  
+- La dimensione massima consentita per file è di 500 MB per richiesta (soggetta ai limiti del servizio).
 
-```bash
+Questa API REST comprime i dati in un file Excel.
 
+- Comprimi XLS, XLSX, XLSM, XLSB, ODS  
+- Comprimi rapidamente più file di fogli elettronici Excel  
+- Scegli il livello di compressione  
+- Supporta più file  
+
+### Endpoint dell'API Web
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/compress
-
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| file| file| formData| File da caricare|
-| Livello di compressione| intero| domanda||
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### Parametri della richiesta
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Nome parametro | Tipo    | Percorso/Query string/Corpo HTTP | Descrizione                                     |
+|----------------|---------|----------------------------------|-------------------------------------------------|
+| file           | file    | formData                         | File da caricare                                |
+| CompressLevel  | integer | query                            | Livello di compressione (0‑100); valori più alti indicano una compressione più intensa |
+
+### Parametro del corpo della richiesta
+
+| Nome parametro | Tipo | Descrizione                                    |
+| -------------- | ---- | ---------------------------------------------- |
+| data           | file | Contenuto binario del file del workbook da comprimere. |
+
+### **Risposta**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[nome file unito]",
+    "Filesize" : [dimensione file],
+    "FileContent" : "[Base64String]"
+}
+```
+
+*Nota:* `FileContent` contiene il workbook compresso codificato in stringa Base64. La lunghezza della stringa corrisponde alla dimensione del file compresso; puoi decodificarla utilizzando strumenti standard Base64 per recuperare il file Excel in formato binario.
+
+**Codici di stato HTTP**
+
+| Codice | Significato                 | Descrizione                                            |
+|--------|-----------------------------|--------------------------------------------------------|
+| 200  | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400  | Richiesta non valida        | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401  | Non autorizzato             | Token JWT non valido o mancante. |
+| 413  | Payload troppo grande       | Il file caricato supera il limite di dimensione. |
+| 500  | Errore interno del server   | Errore imprevisto nel server. |
+
+## Come utilizzare l'API PostCompress con gli SDK
+
+### Specifica dell'API PostCompress
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) definiscono un'interfaccia di programmazione pubblicamente accessibile e consentono di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/compress?CompressLevel=88" \
+# Utilizzare HTTPS per una connessione sicura
+curl -v "https://api.aspose.cloud/v3.0/cells/compress?CompressLevel=88" \
 -X POST \
 -H "Content-Type: multipart/form-data" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
+-H "Authorization: Bearer <token jwt>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+-F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+### Utilizzare gli SDK di Aspose.Cells Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'utilizzo di un SDK rappresenta il modo più rapido per accelerare lo sviluppo. Un SDK astrae i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

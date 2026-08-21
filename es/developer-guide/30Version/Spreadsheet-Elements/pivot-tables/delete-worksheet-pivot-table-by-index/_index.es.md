@@ -1,75 +1,100 @@
-﻿---
-title: Eliminar una tabla dinámica en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Borrar
+---
+title: "Eliminar una tabla dinámica en una hoja de cálculo de Excel"
+second_title: "Documento"
+linktitle: Eliminar
 type: docs
 url: /es/pivot-tables/delete/
 aliases: [/delete-worksheet-pivot-table-by-index/]
-keywords: Delete a pivot table in an Excel file
-description: Aspose.Cells Cloud REST API permite eliminar una tabla dinámica en un archivo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+keywords: "Aspose.Cells, tabla dinámica, eliminar, Excel, API REST"
+description: "Eliminar una tabla dinámica de una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye el formato de solicitud, un ejemplo con cURL, códigos de error y fragmentos de SDK para C#, Java, Python y Node.js."
 weight: 70
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Eliminar una tabla dinámica en una hoja de cálculo Excel
+ArticleTitle: "Cómo eliminar una tabla dinámica en una hoja de cálculo de Excel con Aspose.Cells Cloud"
 ---
-Esta REST API indica la tabla dinámica de la hoja de cálculo `delete` por índice.
- 
-## RSET API
- 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}
- 
+
+Esta API REST elimina una tabla dinámica de una hoja de cálculo por su índice.
+
+**Requisitos previos**: debe disponer de un token de acceso JWT válido para Aspose.Cells Cloud y el archivo de Excel de destino debe estar almacenado en una ubicación compatible con el almacenamiento. Asegúrese de especificar correctamente el nombre del archivo, el nombre de la hoja de cálculo y los detalles del almacenamiento antes de invocar la API.
+
+Las tablas dinámicas son una forma potente de resumir datos en una **hoja de cálculo de Excel**. Con Aspose.Cells Cloud, puede eliminar programáticamente una tabla dinámica no deseada mediante una única solicitud HTTP DELETE. Esta operación resulta ideal cuando necesita limpiar hojas de cálculo, automatizar la generación de informes o integrar la manipulación de Excel en sus aplicaciones.
+
+## API DeleteWorksheetPivotTable
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}
 ```
- Los parámetros de la solicitud son:
- 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del documento.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| índice de tabla dinámica| entero| camino| Índice de tabla dinámica|
-| carpeta| cadena| consulta| Carpeta del documento.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
- 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
- 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Seguridad y autenticación**
+
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
+
+### **Parámetros de la solicitud**
+
+| Nombre del parámetro | Tipo    | Ubicación | Descripción                                           |
+| --------------------- | ------- | --------- | ----------------------------------------------------- |
+| name                  | string  | path      | Nombre del documento de Excel.                       |
+| sheetName             | string  | path      | Nombre de la hoja de cálculo que contiene la tabla dinámica. |
+| pivotTableIndex       | integer | path      | Índice de base cero de la tabla dinámica que se va a eliminar. |
+| folder                | string  | query     | Ruta a la carpeta donde se almacena el documento.    |
+| storageName           | string  | query     | Nombre del servicio de almacenamiento.               |
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable) define una interfaz de programación pública accesible y le permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos **cURL** para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+**Ejemplo de respuesta**
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
+La respuesta sigue un esquema JSON simple:
+
+```json
+{
+  "Code": integer,   // Código de estado tipo HTTP de la operación
+  "Status": string   // Descripción textual, por ejemplo, "OK"
+}
+```
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+### Manejo de errores
+
+A continuación se muestran los códigos de estado de respuesta comunes:
+
+| Estado HTTP | Descripción                                                         |
+| ----------- | ------------------------------------------------------------------- |
+| 400         | Solicitud incorrecta: parámetros faltantes o no válidos.           |
+| 401         | No autorizado: token JWT no válido o ausente.                       |
+| 404         | No encontrado: el archivo, la hoja de cálculo o la tabla dinámica no existen. |
+| 500         | Error interno del servidor: se produjo una condición inesperada.   |
+
 ## Familia de SDK en la nube
- 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
- 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
- 
- 
+
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -128,3 +153,4 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

@@ -1,46 +1,46 @@
-﻿---
-title: 将 Excel 文件转换为其他格式
-second_title: Documen
-linktitle: 转换电子表格
-type: docs
-url: /zh/convert-a-spread-file-to-different-formats/
-keywords: Convert excel files to kinds of format files
-description: Aspose.Cells Cloud REST API 支持将 Excel 文件转换为多种格式的文件。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 10
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 转换 Excel
 ---
-此 REST API 指示 `convert` 将 Excel 文件转换为其他格式。它支持多种格式。它还可以在转换前设置页面设置和保存选项。
+title: "将 Excel 文件转换为不同格式"
+second_title: "文档"
+linktitle: "转换电子表格"
+type: docs
+url: /convert-a-spread-file-to-different-formats/
+keywords: "Excel 转换, 电子表格转换, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, 文件格式转换"
+description: "使用 Aspose.Cells Cloud REST API 将 Excel 工作簿转换为多种格式，例如 PDF、CSV、JSON 和 Markdown。该 API 支持 C#、Java、Python 等多种编程语言的 SDK。"
+weight: 10
+ArticleTitle: "将 Excel 文件转换为不同格式 – Aspose.Cells Cloud API 指南"
+---
 
-**请求主体参数**
+此 REST API 可将 Excel 文件转换为其他格式。它支持广泛的输出格式，并允许您在转换前设置页面设置和保存选项。
 
-|参数名称|类型|描述|
-|:- |:- |:- |
-|[转换工作簿选项](/cells/zh/convert-workbook-options/)|目的|转换工作簿选项。|
+## PostConvertWorkBook API
 
-**回复**
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert
+```
 
-[文件信息](/cells/zh/file-info/)
+在使用此 API 之前，请确保您拥有有效的 JWT 令牌，并已为您的编程语言安装了相应的 Aspose.Cells Cloud SDK。
 
-## 休息 API
+### **安全与身份验证**
 
-|**API**|**类型**|**描述**|**Swagger 链接**|
-|:- |:- |:- |:- |
-|/单元格/转换|邮政|将工作簿从请求内容转换为某种格式|[PostConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook)|
+Aspose.Cells Cloud API 采用安全机制，需要基于 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT 令牌的身份验证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+## 如何使用 SDK 调用 PostConvertWorkBook API
 
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+### PostConvertWorkBook API 规范
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook) 定义了一个公开可访问的编程接口，使您能够直接从网页浏览器执行 REST 交互。
+
+您可以使用 **cURL** 命令行工具轻松访问 Aspose.Cells Web 服务。下面的示例展示了如何通过 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: curl" \
      -d {}
 ```
 
@@ -48,21 +48,23 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert"
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
   "Filename": "filename",
-  "FileSize": xxxx,
+  "FileSize": 12345,
   "FileContent": "File Content: base64_encoded_string"
 }
-
 ```
 
-## Cloud SDK 系列
+{{< /tab >}}
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+{{< /tabs >}}
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+### 使用 Aspose.Cells Cloud SDK
+
+使用 SDK 是最快捷的开发方式。SDK 封装了底层细节，使您能够专注于项目本身。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

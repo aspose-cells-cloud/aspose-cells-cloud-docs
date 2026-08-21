@@ -1,63 +1,65 @@
-﻿---
-title: "Guida per sviluppatori: Converti, Unisci, Dividi, Proteggi, Cerca, Sostituisci e Trasforma: tutto nel cloud Cells"
-second_title: Documen
-linktitle: Guida per gli sviluppatori
-ArticleTitle: Convert, Merge, Split, Protect, Search, Replace & Transform — All in Cells Cloud
-type: docs
-url: /it/developer-guide/
-aliases: [/developer-guide-v4.0/]
-keywords: How to use Aspose.Cells Cloud REST APIs.  Conversion, Merge, Split, Protect, Search, Replace, Transform. Office Excel 2016,  Office Excel 2019,office Excel 365
-description: Questa guida per sviluppatori descrive scenari pratici e suggerimenti per aiutarti a utilizzare specifiche funzionalità Aspose.Cells for .NET, ottenere un determinato aspetto del documento Excel o rendere possibile un caso d'uso
-weight: 20
-kwords: Excel, Office Cloud, REST API, Converti/Unisci/Dividi/Proteggi, Foglio di calcolo, PDF, CSV, Json, Markdown, Guida per sviluppatori
 ---
-## **Caratteristiche principali**
+title: "Guida per sviluppatori: Convertire, Unire, Dividere, Proteggere, Cercare, Sostituire e Trasformare — Tutto in Cells Cloud."
+second_title: "Documento"
+linktitle: "Guida per sviluppatori"
+ArticleTitle: "Convertire, Unire, Dividere, Proteggere, Cercare, Sostituire e Trasformare — Tutto in Cells Cloud."
+type: docs
+url: /developer‑guide/
+aliases: [/developer‑guide‑v4.0/]
+keywords: "Aspose.Cells Cloud, Excel REST API, conversione fogli di calcolo, unire, dividere, proteggere, ricerca e sostituzione, trasformazione dati, esempi SDK, Java, .NET, Python, Node.js, PHP, Go, Ruby, Perl"
+description: "Guida completa per sviluppatori alle API REST di Aspose.Cells Cloud, che copre la conversione, l’unione, la divisione, la protezione, la ricerca e la sostituzione nei fogli di calcolo, nonché la trasformazione dei dati, con link agli esempi di SDK per Java, .NET, Python, Node.js, PHP, Go, Ruby e Perl."
+weight: 20
+---
+
+## **Funzionalità principali**
 
 ### **Conversione**
 
-- **[Salva foglio di calcolo con nome](https://docs.aspose.cloud/cells/save-an-excel-file-as-other-formats-files/)**
+- **[Salva foglio di calcolo come](https://docs.aspose.cloud/cells/save-an-excel-file-as-other-formats-files/)**
 - **[Converti foglio di calcolo](https://docs.aspose.cloud/cells/convert-spreadsheet/)**
 - **[Converti grafico del foglio di calcolo in immagine](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
-- **[Converti tabella foglio di calcolo in CSV](https://docs.aspose.cloud/cells/convert-table-to-csv/)**
-- **[Converti Spreadsheet Rage in JSON](https://docs.aspose.cloud/cells/convert-range-to-json/)**
+- **[Converti tabella del foglio di calcolo in CSV](https://docs.aspose.cloud/cells/convert-table-to-csv/)**
+- **[Converti intervallo del foglio di calcolo in JSON](https://docs.aspose.cloud/cells/convert-range-to-json/)**
 
-### **Elaborazione dei dati**
+### **Elaborazione dati**
 
 - **[Unisci fogli di calcolo](https://docs.aspose.cloud/cells/merge-spreadsheets/)**
-- **[Fogli di calcolo divisi](https://docs.aspose.cloud/cells/split-spreadsheet/)**
+- **[Dividi fogli di calcolo](https://docs.aspose.cloud/cells/split-spreadsheet/)**
 
-### **Trasformazione dei dati**
+### **Trasformazione dati**
 
-- **[Elimina le righe vuote del foglio di calcolo](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-rows/)**
-- **[Elimina le colonne vuote del foglio di calcolo](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-columns/)**
-- **[Sostituisci il contenuto del foglio di calcolo](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
+- **[Elimina righe vuote dal foglio di calcolo](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-rows/)**
+- **[Elimina colonne vuote dal foglio di calcolo](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-columns/)**
+- **[Sostituisci contenuto del foglio di calcolo](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
 
 ### **Gestione**
 
 - **[Crea un nuovo foglio di calcolo](https://docs.aspose.cloud/cells/create-spreadsheet/)**
-- **[Aggiungi un foglio di lavoro al foglio di calcolo](https://docs.aspose.cloud/cells/add-worksheet-to-spreadsheet/)**
-- **[Elimina un foglio di lavoro da un foglio di calcolo](https://docs.aspose.cloud/cells/delete-worksheet-from-spreadsheet/)**
-- **[Rinomina foglio di lavoro in foglio di calcolo](https://docs.aspose.cloud/cells/rename-worksheet-in-spreadsheet/)**
-
-### **Cerca e sostituisci**
+- **[Aggiungi un foglio al foglio di calcolo](https://docs.aspose.cloud/cells/add-worksheet-to-spreadsheet/)**
+- **[Elimina un foglio dal foglio di calcolo](https://docs.aspose.cloud/cells/delete-worksheet-from-spreadsheet/)**
+- **[Rinomina un foglio nel foglio di calcolo](https://docs.aspose.cloud/cells/rename-worksheet-in-spreadsheet/)**
+  
+### **Ricerca e sostituzione**
 
 - **[Cerca contenuto nel foglio di calcolo](https://docs.aspose.cloud/cells/search-spreadsheet-content/)**
-- **[Cerca link non funzionanti in Foglio di calcolo](https://docs.aspose.cloud/cells/search-spreadsheet-broken-links/)**
-- **[Sostituisci il contenuto nel foglio di calcolo](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
+- **[Cerca link interrotti nel foglio di calcolo](https://docs.aspose.cloud/cells/search-spreadsheet-broken-links/)**
+- **[Sostituisci contenuto nel foglio di calcolo](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
 
 ### **Protezione**
 
 - **[Proteggi foglio di calcolo](https://docs.aspose.cloud/cells/protect-spreadsheet/)**
 
-## **Codice ed esempio**
+## **Codice ed esempi**
 
-Scopri gratuitamente Cells Cloud SDK su GitHub. Accedi al codice open source e a numerosi esempi di casi d'uso:
+Scopri gli SDK di Cells Cloud su GitHub gratuitamente. Accedi al codice open-source e a numerosi esempi pratici:
 
-- [Java Esempi SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/tree/master/Examples)
-- [.NET Esempi SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/master/examples)
-- [Python Esempi SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/tree/master/examples)
-- [Esempi di Node.js SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/tree/master/Examples)
-- [PHP Esempi SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/tree/master/examples)
-- [Esempi di Go SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/tree/master/examples)
-- [Esempi di Ruby SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/tree/master/examples)
-- [Perl Esempi SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/tree/master/examples)
+- [Esempi di SDK Java su GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/tree/master/Examples)
+- [Esempi di SDK .NET su GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/master/examples)
+- [Esempi di SDK Python su GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/tree/master/examples)
+- [Esempi di SDK Node.js su GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/tree/master/Examples)
+- [Esempi di SDK PHP su GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/tree/master/examples)
+- [Esempi di SDK Go su GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/tree/master/examples)
+- [Esempi di SDK Ruby su GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/tree/master/examples)
+- [Esempi di SDK Perl su GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/tree/master/examples)
+
+---

@@ -1,98 +1,113 @@
-﻿---
-title: Ottieni una proprietà di un documento particolare
-second_title: Documen
-linktitle: Ge
-type: docs
-url: /it/document-properties/get/
-aliases: [/get-a-particular-document-property/]
-keywords: Get properties from excel files
-description: Aspose.Cells Cloud REST API supporta l'acquisizione di proprietà da file Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni una proprietà particolare del documento
 ---
-Questo REST API indica di leggere la proprietà del documento in base al nome.
+title: "Ottenere una Proprietà Specifica del Documento"
+second_title: "Documento"
+linktitle: "Ottieni"
+type: docs
+url: /document-properties/get/
+aliases: [/get-a-particular-document-property/]
+keywords: "Aspose.Cells, API Cloud, Ottieni Proprietà Documento, Metadata Excel, REST GET, Esempi SDK"
+description: "Recupera una proprietà nominata del documento (ad esempio, Autore, Titolo) da un file Excel utilizzando l'API REST Cloud di Aspose.Cells. Include un esempio cURL, frammenti di codice SDK e schema di risposta."
+weight: 20
+---
 
-## RSET API
+Questa REST API legge una proprietà del documento per nome.
+
+## API REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
 ```
 
-I parametri della richiesta sono:
+### Parametri della Richiesta
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome del documento.|
-| NomeProprietà| corda| sentiero| Il nome della proprietà.|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome Parametro | Tipo   | Posizione | Descrizione                                           |
+| -------------- | ------ | --------- | ----------------------------------------------------- |
+| name           | string | path      | Il nome del file Excel.                              |
+| propertyName   | string | path      | Il nome della proprietà del documento da recuperare. |
+| folder         | string | query     | La cartella contenente il file (opzionale).          |
+| storageName    | string | query     | Il nome dello storage (opzionale).                   |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty) definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di effettuare interazioni REST direttamente da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Puoi utilizzare lo strumento a riga di comando **cURL** per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "DocumentProperty": {
-
     "Name": "Author",
-
     "Value": "",
-
     "BuiltIn": "True",
-
     "link": {
-
       "Href": "/test.xlsx/documentproperties/Author",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+### Dettagli della Risposta
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'oggetto JSON restituito dall'API contiene i seguenti campi:
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+| Campo                           | Tipo    | Descrizione                                                      |
+| ------------------------------- | ------- | ---------------------------------------------------------------- |
+| **DocumentProperty.Name**       | string  | Il nome della proprietà (ad esempio, `Author`).                  |
+| **DocumentProperty.Value**      | string  | Il valore della proprietà. Può essere vuoto se non impostato.    |
+| **DocumentProperty.BuiltIn**    | boolean | Indica se la proprietà è una proprietà integrata di Excel.       |
+| **DocumentProperty.link.Href**  | string  | URL relativo alla risorsa della proprietà.                       |
+| **DocumentProperty.link.Rel**   | string  | Tipo di relazione, di solito `self`.                             |
+| **DocumentProperty.link.Title** | string  | Titolo leggibile (può essere `null`).                            |
+| **DocumentProperty.link.Type**  | string  | Tipo MIME della risorsa collegata (può essere `null`).           |
+| **Code**                        | integer | Codice di stato HTTP restituito dal servizio.                    |
+| **Status**                      | string  | Descrizione testuale dello stato (ad esempio, `OK`).             |
+
+### Risposte di Errore
+
+| Stato HTTP | Codice                 | Descrizione                                           |
+| ---------- | ---------------------- | ----------------------------------------------------- |
+| 400        | `InvalidParameter`     | Uno o più parametri della richiesta non sono validi.  |
+| 401        | `AuthenticationFailed` | Token JWT mancante o non valido.                      |
+| 404        | `PropertyNotFound`     | La proprietà del documento specificata non esiste.    |
+| 500        | `InternalError`        | Si è verificato un errore imprevisto sul server.      |
+
+Un corpo di errore tipico ha il seguente aspetto:
+
+```json
+{
+  "Code": 404,
+  "Status": "Property not found"
+}
+```
+
+## Famiglia di SDK Cloud
+
+L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, permettendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come effettuare chiamate ai servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -145,3 +160,24 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Terminologia
+
+| Termine               | Definizione                                                                                  |
+| --------------------- | -------------------------------------------------------------------------------------------- |
+| **Proprietà Documento** | Un pezzo di metadata associato a un file Excel (ad esempio, Autore, Titolo, Creato).         |
+| **Metadata**          | Termine generico per dati che descrivono altri dati; in questo contesto si riferisce alle proprietà del documento. |
+| **Proprietà Personalizzata** | Una proprietà definita dall'utente non inclusa nell'insieme integrato.                      |
+
+### Domande Frequenti
+
+**Domanda:** _Come posso recuperare la proprietà Autore di un file Excel archiviato in Aspose Cloud?_  
+**Risposta:** Invia una richiesta GET a `https://api.aspose.cloud/v3.0/cells/{fileName}/documentproperties/author` con un token Bearer valido. La risposta JSON include `DocumentProperty.Name = "Author"` e il relativo `Value`.
+
+**Domanda:** _Quale errore viene restituito se la proprietà richiesta non esiste?_  
+**Risposta:** L'API restituisce HTTP 404 con un corpo JSON contenente `Code: 404` e `Status: "Property not found"`.
+
+**Domanda:** _Devo specificare `storageName` quando il file si trova nello storage predefinito?_  
+**Risposta:** No. Il parametro di query `storageName` è opzionale; omettilo per utilizzare lo storage predefinito configurato per il tuo account.
+
+---

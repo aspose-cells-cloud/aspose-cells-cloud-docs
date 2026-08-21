@@ -1,75 +1,91 @@
-﻿---
-title: Excel çalışma sayfasındaki satırları gizle
-second_title: Documen
-linktitle: Saklandı
-type: docs
-url: /tr/rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
-keywords: Hide rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki satırları gizlemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 40
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki satırları gizle
 ---
-Bu REST API, Excel çalışma sayfasındaki satırları gizlemeyi gösterir.
+title: "Excel Çalışma Sayfasında Satırları Gizleme"
+second_title: "Belge"
+linktitle: "Gizle"
+type: docs
+url: /rows/hide/
+aliases: [/hide-rows-in-excel-worksheet/]
+keywords: "satırları gizle, Aspose.Cells Cloud, Excel API, REST, SDK"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında bir veya birden fazla satırı nasıl gizleyeceğinizi öğrenin. cURL örneği, SDK kod parçacıkları, parametreler, kimlik doğrulama, yanıt detayları ve hata yönetimi içerir."
+weight: 40
+ArticleTitle: "Aspose.Cells Cloud API Kullanarak Excel Çalışma Sayfasında Satırları Gizleme"
+---
 
-## RSET API
+Bu REST API, Excel çalışma sayfasında satırları gizler.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
- 
+**Önkoşullar:** Aspose Cloud OAuth uç noktasından alınmış geçerli bir JWT Bearer belirteci, Aspose Cloud depolama alanına kaydedilmiş çalışma kitapçığı ve gizlenecek satırları içeren çalışma sayfasının adı. API, XLS, XLSX ve diğer desteklenen formatlardaki Excel dosyalarıyla çalışır.
+
+## PostHideWorksheetRows API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| başlangıç satırı| tam sayı| sorgu| İşlem yapılacak satırın başlangıç indeksi.|
-| toplamSatırlar| tam sayı| sorgu| İşlem yapılacak satır sayısı.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre       | Tür     | Konum  | Açıklama                                                                 |
+| ----------------- | ------- | ------ | ------------------------------------------------------------------------ |
+| **name**        | string  | path   | Çalışma kitaplığı dosyasının adı.                                        |
+| **sheetName**   | string  | path   | Gizlenecek satırları içeren çalışma sayfasının adı.                      |
+| **startrow**    | integer | query  | Gizlenecek ilk satırın sıfır indeksli numarası.                          |
+| **totalRows**   | integer | query  | **startrow**’dan itibaren ardışık olarak gizlenecek satır sayısı.        |
+| **folder**      | string  | query  | Çalışma kitaplığının bulunduğu depodaki klasör.                          |
+| **storageName** | string  | query  | Depolama hizmetinin adı.                                                 |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows), bir web tarayıcısından doğrudan REST etkileşimlerinde bulunmanıza olanak tanıyan herkese açık bir programlama arayüzü sağlar.
+
+**cURL** komut satırı aracını Aspose.Cells web servislerini çağırmak için kullanabilirsiniz. API, Aspose Cloud OAuth uç noktasından alınan bir JWT Bearer belirteci gerektirir; bunu `Authorization` başlığında eklemeniz gerekir. Aşağıdaki örnek, cURL ile bir satırı gizlemeyi göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/hide?startrow=1&totalRows=1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Yanıt durum kodları**
+
+| Kod  | Açıklama                         |
+|------|----------------------------------|
+| 200  | Başarılı – satırlar gizlendi     |
+| 400  | Geçersiz istek – hatalı parametreler |
+| 401  | Yetkisiz – eksik veya geçersiz JWT |
+| 404  | Bulunamadı – çalışma kitaplığı veya çalışma sayfası mevcut değil |
+| 500  | Sunucu hatası – iç işlem başarısız |
+
+Başarılı bir çağrı, `Code` ve `Status` alanlarını içeren bir JSON nesnesi döndürür. Hata durumunda yanıt, `Message` ve uygun HTTP durum kodları (örneğin 400, 401, 404, 500) gibi ek alanlar içerir.
+
+**Notlar:** `startrow` değerinin çalışma sayfasının satır aralığı içinde olduğundan emin olun; aksi takdirde API 400 hatası döndürür. Satır indeksleri sıfır tabanlıdır, yani `startrow=0` birinci satıra karşılık gelir.
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bu işlevselliği uygulamanıza entegre etmenin en hızlı yolu bir SDK kullanmaktır. SDK’lar düşük seviye detayları yöneterek size iş mantığına odaklanma imkanı verir. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak satırların nasıl gizleneceğini göstermektedir. (Örnek dosya adlarında “Unhide” ifadesinin geçmesinin neden eski isimlendirme kalıplarıdır; her gist içindeki kod aslında **Gizle** işlemini gerçekleştirmektedir.)
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

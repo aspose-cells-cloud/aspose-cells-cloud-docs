@@ -1,25 +1,76 @@
-﻿---
-title: Erweiterte Konvertierung Excel Datei
-second_title: Documen
-linktitle: Erweiterte Konvertierung
-type: docs
-url: /de/advanced-convert-excel/
-keywords: Advanced Convert Excel file. Page setup , Save options, Page breaks, Page margins, Page orientation, Page size, Print area, Print titles, Print settings, Print worksheet, Print worksheet with page breaks, Print worksheet with page breaks and print titles, Print worksheet with page breaks and print titles and print area, Print worksheet with page breaks and print titles and print area and print settings, Print worksheet withpage breaks and print titles and print area and print settings and print orientation, Prin
-description: Aspose.Cells Cloud REST API unterstützt die Konvertierung von Excel-Dateien in verschiedene Formatdateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 50
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Konvertieren Excel
 ---
-## Advanced Cloud API für Excel Konvertierung
+title: "Erweiterte Excel-Dateikonvertierung"
+second_title: "Dokument"
+linktype: "Erweiterte Konvertierung"
+type: docs
+url: /advanced-convert-excel/
+keywords: "Aspose.Cells, Excel-Konvertierung, Cloud-API, SDK"
+description: "Die Aspose.Cells Cloud REST-API bietet leistungsstarke Funktionen zur Konvertierung von Excel-Arbeitsmappen in eine Vielzahl von Formaten sowie zur Konfiguration von Seitenformatierung, Speicheroptionen und Druckeinstellungen. SDKs sind für Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby und Swift verfügbar, was eine nahtlose Integration über verschiedene Plattformen hinweg ermöglicht."
+weight: 50
+ArticleTitle: "Erweiterte Excel-Dateikonvertierung – Aspose.Cells Cloud API-Anleitung"
+---
 
-### Möglichkeit zum Laden von Tabellenkalkulationsdateien aus mehreren Datenquellen
+## Erweiterte Cloud-API für Excel-Konvertierung
 
-### Seiteneinrichtung und Speicheroptionen festlegen
+Die erweiterte Konvertierungsfunktion ermöglicht es Ihnen, eine Excel-Arbeitsmappe in verschiedene Ausgabeformate (PDF, HTML, CSV usw.) zu konvertieren und dabei eine detaillierte Kontrolle über die Seitenformatierung, Speicheroptionen und Druckeinstellungen auszuüben.
+
+**Voraussetzungen / Authentifizierung**  
+Um diesen Endpunkt nutzen zu können, müssen Sie einen Zugriffstoken von Aspose.Cells Cloud erhalten und diesen im `Authorization`-Header als Bearer-Token übermitteln.
+
+**API-Referenz**  
+- **Methode:** `PUT`  
+- **Endpunkt:** `/cells/convert`  
+- **Parameter:**  
+  - `format` (Zeichenfolge, erforderlich) – Gewünschtes Ausgabeformat (z. B. `pdf`, `html`).  
+  - `outPath` (Zeichenfolge, optional) – Pfad im Cloud-Speicher, unter dem die konvertierte Datei gespeichert wird.  
+  - `options` (Objekt, optional) – JSON-Objekt mit erweiterten Konvertierungsoptionen wie `pageSetup`, `saveOptions` und `printSettings`.  
+- **Beispiel für Anforderungstext:**  
+  ```json
+  {
+    "format": "pdf",
+    "outPath": "output/converted.pdf",
+    "options": {
+      "pageSetup": {
+        "orientation": "Landscape",
+        "paperSize": "A4"
+      },
+      "saveOptions": {
+        "compress": true
+      },
+      "printSettings": {
+        "printHeadings": false
+      }
+    }
+  }
+  ```  
+- **Antwort:**  
+  - `200 OK` – Konvertierung erfolgreich; Antwort enthält den konvertierten Dateistream oder einen Verweis auf die gespeicherte Datei.  
+  - `400 Bad Request` – Ungültige Parameter oder fehlerhafter Anforderungstext.  
+  - `401 Unauthorized` – Authentifizierung fehlgeschlagen oder Token fehlt.  
+  - `500 Internal Server Error` – Serverseitiger Fehler während der Konvertierung.  
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                   | Beschreibung                                     |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Konvertierung erfolgreich; Antwort enthält Details zum Vorgang. |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized                | Ungültiger oder fehlender JWT-Token. |
+| 413  | Payload Too Large           | Die hochgeladene Datei überschreitet die maximale Dateigröße. |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler. |
+
+**Hinweise**  
+* Einige Ausgabeformate weisen spezifische Einschränkungen auf (z. B. werden bei der HTML-Konvertierung Makros nicht beibehalten). Weitere Informationen finden Sie in der formatabhängigen Dokumentation.
+
+### Die Fähigkeit, Tabellendateien aus verschiedenen Datenquellen zu laden
+
+### Festlegen der Seitenformatierung und Speicheroptionen
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDK beschleunigt die Entwicklung, da darin niedrigere Details abstrahiert werden, sodass Sie sich auf Ihre Projektaufgaben konzentrieren können. Besuchen Sie das <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub-Repository</a>, um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste mithilfe verschiedener SDKs durchgeführt werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -72,3 +123,26 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebAPI",
+  "name":"Aspose.Cells Cloud Erweiterte Konvertierung",
+  "description":"Konvertieren Sie eine Excel-Arbeitsmappe in PDF/HTML/CSV mit erweiterten Optionen.",
+  "url":"https://api.aspose.cloud/v3.0/cells/convert",
+  "documentation":"https://docs.aspose.cloud/cells/advanced-convert-excel/",
+  "endpointDescription":"PUT /cells/convert",
+  "input":{
+    "@type":"PropertyValueSpecification",
+    "valueRequired":true,
+    "valueName":"format",
+    "description":"Gewünschtes Ausgabeformat (pdf, html, csv, …)"
+  },
+  "target":{
+    "@type":"EntryPoint",
+    "urlTemplate":"https://api.aspose.cloud/v3.0/cells/convert?format={format}",
+    "httpMethod":"PUT"
+  }
+}
+</script>

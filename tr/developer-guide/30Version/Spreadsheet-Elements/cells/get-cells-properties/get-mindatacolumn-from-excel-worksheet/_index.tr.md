@@ -1,46 +1,80 @@
-﻿---
-title: Excel Çalışma Sayfasından MinDataColumn'u Alın
-type: docs
-url: /tr/get-mindatacolumn-from-excel-worksheet/
-weight: 110
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel Çalışma Sayfasından MinDataColumn Alma
 ---
-Bu REST API, `cellOrMethodName` parametresi `mindatacolumn` olduğunda Excel dosyasında `mindatacolumn` alındığını gösterir.
+title: "MinDataColumn'ı Alın – Aspose.Cells Cloud API Referansı (v3.0)"
+type: docs
+url: /get-mindatacolumn-from-excel-worksheet/
+weight: 110
+keywords: "Aspose.Cells Cloud, MinDataColumn, Excel çalışma sayfası, REST API, API referansı, v3.0, veri sütunu, bulut API"
+description: "Aspose.Cells Cloud REST API (v3.0) aracılığıyla bir Excel çalışma sayfasındaki veri içeren en soldaki sütunu alın. Yetkilendirme ayrıntılarını, istek sözdizimini, JSON yanıt örneğini, hata kodlarını ve SDK snippet'lerini içerir."
+ArticleTitle: "MinDataColumn'ı Alın – Aspose.Cells Cloud API Referansı (v3.0)"
+---
 
-- **cURL Örnek**
+**`mindatacolumn`** uç noktası, belirtilen bir çalışma sayfasında herhangi bir hücre verisi içeren en soldaki sütunun sıfır tabanlı indeksini döndürür.  
+Yani, aslında veri içeren ilk sütunu gösterir.
 
+> **Tanım** – `mindatacolumn`: Çalışma sayfasında veri içeren ilk sütunun indeksidir (0'dan başlar).
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Ön Gereksinimler**  
+- Geçerli bir OAuth2 erişim belirteci gereklidir.  
+- Excel dosyası Aspose Cloud depolama alanına yüklenmiş olmalıdır.
+
+**İstek Parametreleri**
+
+| Parametre      | Tür    | Gerekli  | Açıklama                                 |
+|----------------|--------|----------|---------------------------------------------|
+| `fileName`     | string | Evet      | Bulut depolama alanında saklanan Excel dosyasının adı. |
+| `sheetName`    | string | Evet      | Sütun indeksinin alınacağı çalışma sayfasının adı. |
+| `Authorization` (header) | string | Evet | OAuth2 kimlik doğrulaması için Bearer belirteci. |
+
+- **cURL Örneği**
+
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mindatacolumn" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
+```
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mindatacolumn" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mindatacolumn" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MinDataColumn": 2
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Bulut SDK Ailesi**
+**HTTP Durum Kodları**
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| Kod | Anlamı                     | Açıklama                                      |
+|-----|----------------------------|-----------------------------------------------|
+| 200 | Tamam                      | Süzgeç başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Hatalı İstek               | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Yetkisiz                   | Geçersiz veya eksik JWT belirteci. |
+| 413 | İçerik Çok Büyük           | Yüklenen dosya boyutu sınırını aşıyor. |
+| 500 | Sunucu İç Hatası           | Beklenmeyen sunucu hatası. |
+---
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+- Aspose.Cells Cloud SDK'larını Kullanın
 
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. SDK, düşük seviye detayları yönetir ve size proje mantığına odaklanma imkanı sunar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
+Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -76,7 +110,7 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetMinDataColumnWorksheet-1.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetMinDataColumnWorksheet-1.js" >}}
 
 {{< /tab >}}
 
@@ -103,3 +137,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

@@ -1,46 +1,77 @@
-﻿---
-title: Получить MaxDataColumn из рабочей таблицы Excel
+---
+title: "Aspose.Cells Cloud API – Получение MaxDataColumn из рабочего листа Excel (v3.0)"
 type: docs
 url: /ru/get-maxdatacolumn-from-excel-worksheet/
 weight: 70
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получить MaxDataColumn из листа Excel
+keywords: "Aspose.Cells Cloud, Get MaxDataColumn, рабочий лист Excel, REST API, v3.0, SDK"
+description: "Получение индекса последнего столбца, содержащего данные, в указанном рабочем листе с помощью REST API Aspose.Cells Cloud (v3.0). Включает детали запроса, пример ответа и примеры SDK."
+ArticleTitle: "Aspose.Cells Cloud API – Получение MaxDataColumn из рабочего листа Excel (v3.0)"
 ---
-Этот REST API указывает на то, что шоу получает `maxdatacolumn` в файле Excel, когда параметр `cellOrMethodName` равен `maxdatacolumn`.
 
-- **cURL Пример**
+Этот REST API возвращает индекс последнего столбца с данными в рабочем листе Excel при установке параметра `cellOrMethodName` в значение `maxdatacolumn`.
 
+## **Пример cURL**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatacolumn" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatacolumn" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{} 
-
+```json
+{
+  "MaxDataColumn": 12
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Семейство облачных SDK**
+**Детали запроса**  
+- **HTTP-метод:** `GET`  
+- **Шаблон конечной точки:** `https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/maxdatacolumn`  
+- **Параметры пути:**  
+  - `fileName` – Имя файла Excel (например, `myWorkbook.xlsx`).  
+  - `sheetName` – Имя рабочего листа (например, `Sheet1`).  
+- **Заголовки:**  
+  - `Authorization: Bearer <access_token>` (обязательно)  
+  - `Accept: application/json` (рекомендуется)  
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+**Параметры**
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+| Параметр | Местоположение | Тип    | Обязательный | Описание |
+|----------|----------------|--------|-------------|----------|
+| `fileName` | Путь         | string | Да          | Имя файла Excel, хранящегося в облачном хранилище. |
+| `sheetName` | Путь        | string | Да          | Рабочий лист, из которого следует получить индекс последнего столбца с данными. |
+| `cellOrMethodName` | Путь | string | Да | Должен быть установлен в значение `maxdatacolumn` для вызова этой операции. |
 
+**Ответы**
 
+| Код статуса | Описание                              | Пример полезной нагрузки |
+|-------------|---------------------------------------|--------------------------|
+| 200         | Успех – возвращает индекс последнего столбца с данными. | `{ "MaxDataColumn": 12 }` |
+| 401         | Неавторизован – недействительный или отсутствующий токен доступа. | `{ "error": "Invalid authentication." }` |
+| 404         | Не найдено – файл или рабочий лист не существует. | `{ "error": "Resource not found." }` |
+| 500         | Внутренняя ошибка сервера – непредвиденное состояние. | `{ "error": "Server error." }` |
+
+**Обработка ошибок**  
+В случае неудачи запроса проверьте HTTP-статус код и сообщение об ошибке в теле ответа. Убедитесь, что токен доступа действителен, а указанный файл и рабочий лист существуют в вашем облачном хранилище Aspose Cloud.
+
+- **Используйте SDK Aspose.Cells Cloud**
+
+Использование SDK — наиболее эффективный способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя вам сосредоточиться на задачах вашего проекта. Ознакомьтесь с полным списком SDK Aspose.Cells Cloud в <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">репозитории на GitHub</a>.
+
+Следующие примеры кода демонстрируют, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -53,8 +84,6 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< tab tabNum="2" >}}
 
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-cells-GetMaxDataColumnWorksheet-get-max-data-column.java" >}}
-
-
 
 {{< /tab >}}
 

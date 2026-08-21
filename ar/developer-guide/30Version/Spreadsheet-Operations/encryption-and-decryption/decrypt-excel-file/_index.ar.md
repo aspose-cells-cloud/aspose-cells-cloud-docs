@@ -1,83 +1,138 @@
-﻿---
-title: فك تشفير كتاب العمل Excel
-second_title: Documen
-linktitle: فك تشفير ملف Excel
-type: docs
-url: /ar/excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/,/workbook/decrypt/]
-keywords: REST API, spreadsheets, excel, decryp
-description: "Cells.Cloud API لـ Excel التشغيل: فك تشفير مصنف Excel"
-weight: 50
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، فك تشفير مصنف Excel
 ---
-يقوم هذا REST API بفك تشفير Excel `workbook`.
+title: "فك تشفير ملف Excel"
+second_title: "مستند"
+linktitle: "فك تشفير ملف Excel"
+type: docs
+url: /excel-file-decrypt/
+aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+keywords: "Aspose.Cells, فك تشفير Excel, REST API, SDK للحوسبة السحابية"
+description: "تعرّف على كيفية فك تشفير ملف Excel باستخدام واجهة Aspose.Cells Cloud REST API. يشمل المعلمات المطلوبة، مثال cURL، أمثلة للكود باستخدام SDK، وتفاصيل التعامل مع الأخطاء."
+ArticleTitle: "كيفية فك تشفير ملف Excel باستخدام واجهة Aspose.Cells Cloud API"
+weight: 50
+---
 
-**معلمة الاستعلام**
+**المتطلبات الأساسية**
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|مجلد|خيط|مجلد المصنف الأصلي.|
-|اسم التخزين|خيط|اسم التخزين.|
+- رمز وصول JWT صالح.
+- يجب أن يكون الملف المحمي ببيانات سرية قد تم رفعه إلى مساحة تخزين Aspose Cloud مع تحديد مساره في معامل الاستعلام `folder`.
 
-**معلمة نص الطلب**
+## واجهة DeleteDecryptWorkbook API
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|التشفير|طلب تشفير المصنف||
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/encryption
+```
 
-**طلب تشفير المصنف**
+### **الأمان والمصادقة**
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|نوع التشفير|خيط|XOR/متوافق/موفر تشفير محسّن الإصدار 1/موفر تشفير قوي|
-|طول المفتاح|عدد صحيح||
-|كلمة المرور|خيط||
+تُعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-## الباقي API
+### معاملات الاستعلام
 
-|**API**|**يكتب**|**وصف**|**رابط سواجر**|
-|:- |:- |:- |:- |
-|/الخلايا/{الاسم}/التشفير|حذف|فك تشفير مستند|[حذف وفك تشفير مصنف العمل](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook)|
+| اسم المعامل | النوع   | الوصف                                               |
+|-------------|--------|-----------------------------------------------------|
+| folder      | string | مسار المجلد الذي يوجد فيه ملف Excel الأصلي.          |
+| storageName | string | اسم مساحة التخزين التي يوجد فيها ملف Excel.         |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معامل جسم الطلب
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل | النوع                      | الوصف                                           |
+|-------------|----------------------------|-------------------------------------------------|
+| encryption  | WorkbookEncryptionRequest | إعدادات التشفير المطلوبة لفك التشفير.            |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### WorkbookEncryptionRequest
+
+| اسم المعامل    | النوع    | الوصف                                                                                             |
+|----------------|----------|---------------------------------------------------------------------------------------------------|
+| EncryptionType | string   | خوارزمية التشفير (`XOR`, `Compatible`, `EnhancedCryptographicProviderV1`, `StrongCryptographicProvider`). |
+| KeyLength      | integer  | طول مفتاح التشفير بالبتات.                                                                         |
+| Password       | string   | كلمة المرور المستخدمة لفك التشفير.                                                                |
+
+### الاستجابة
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+** أمثلة على استجابات الأخطاء**
+
+```json
+{
+  "Code": "400",
+  "Message": "معاملات طلب غير صالحة."
+}
+```
+
+```json
+{
+  "Code": "401",
+  "Message": "فشل المصادقة. رمز JWT غير صالح أو مفقود."
+}
+```
+
+```json
+{
+  "Code": "413",
+  "Message": "حجم البيانات كبير جدًا. تجاوز الملف المرفوع الحد المسموح به."
+}
+```
+
+```json
+{
+  "Code": "500",
+  "Message": "خطأ داخلي في الخادم. يُرجى المحاولة مرة أخرى لاحقًا."
+}
+```
+
+**رموز حالة HTTP**
+
+| الكود | المعنى                        | الوصف                                               |
+|-------|-------------------------------|-----------------------------------------------------|
+| 200   | ناجح (OK)                     | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400   | طلب غير صالح (Bad Request)    | معاملات مفقودة أو غير صالحة (مثل: نوع ملف غير مدعوم). |
+| 401   | غير مخوّل (Unauthorized)       | رمز JWT غير صالح أو مفقود.                          |
+| 413   | حجم البيانات كبير جدًا (Payload Too Large) | تجاوز الملف المرفوع الحد المسموح به.               |
+| 500   | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم.                            |
+## كيفية استخدام واجهة DeleteDecryptWorkbook API باستخدام حزم التطوير (SDKs)
+
+### مواصفات واجهة DeleteDecryptWorkbook API
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) واجهة برمجة تطبيقات عامة قابلة للوصول، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام **cURL** للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية استدعاء واجهة Cloud API باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "accept: application/json" -H "Content-Type: application/json" -H "x-aspose-client: Containerize.Swagger" -d "{ \"EncryptionType\": \"XOR\", \"KeyLength\": 1280, \"Password\": \"aspose\"}"
-
+```bash
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -d '{ "EncryptionType": "XOR", "KeyLength": 1280, "Password": "aspose"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
-  "Code":"200",
-
-  "Status":"OK"
-
+  "Code": "200",
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
-{{< /tabs >}}
+### استخدام حزم تطوير Aspose.Cells Cloud (SDKs)
 
-## عائلة SDK السحابية
+استخدام حزم التطوير (SDKs) هو أفضل طريقة لتسريع عملية التطوير. فتتولى حزم التطوير إدارة التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم تطوير Aspose.Cells Cloud.
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
-
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام حزم تطوير مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,76 +1,164 @@
-﻿---
-title: Uppdatera ett listobjekt i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Uppdatering
-type: docs
-url: /sv/list-objects/update/
-aliases: [/update-a-list-object-or-table-inside-the-worksheet/,/tables/update/]
-keywords: Update a list object(table) in an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder uppdatering av ett listobjekt (tabell) i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Uppdatera ett listobjekt i ett Excel-kalkylblad
 ---
-Denna REST API indikerar för `update` en `list object`-egenskap.
+title: "Uppdatera ett listobjekt i ett Excel-ark"
+ArticleTitle: "Uppdatera ett listobjekt i ett Excel-ark – Aspose.Cells Cloud API-dokumentation"
+second_title: "Dokument"
+linktitle: "Uppdatera"
+type: docs
+url: /list-objects/update/
+aliases:
+  - /update-a-list-object-or-table-inside-the-worksheet/
+  - /tables/update/
+keywords: "Aspose.Cells, ListObject, Uppdatera tabell, Excel-API, REST, molntjänst, uppdatera listobjekt, Excel-ark, tabell"
+description: "Lär dig hur du uppdaterar en Excel-tabell med Aspose.Cells Cloud API (v3.0). Innehåller slutpunkt, parametrar, exempel med cURL, felkoder och SDK-exempel."
+weight: 20
+---
 
-## RSET API
+Denna REST API uppdaterar egenskaperna för ett **listobjekt** (tabell) i ett Excel-ark.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}
- 
+## Säkerhet och autentisering
+
+Aspose.Cells Cloud API:n är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## Schema för begäran för begäran (Request Body Schema)
+
+DTO:t `listObject` innehåller följande fält. Endast de fält som du vill ändra behöver inkluderas i begäran.
+
+| Fält                                            | Typ                | Obligatoriskt | Beskrivning                                                                |
+| ----------------------------------------------- | ------------------ | ------------- | -------------------------------------------------------------------------- |
+| **DisplayName**                                 | sträng             | valfritt      | Namnet som visas för tabellen.                                             |
+| **StartRow** / **StartColumn**                  | heltal             | valfritt      | Nollbaserat index för första raden/kolumnen i tabellen.                   |
+| **EndRow** / **EndColumn**                      | heltal             | valfritt      | Nollbaserat index för sista raden/kolumnen i tabellen.                    |
+| **Range**                                       | sträng             | valfritt      | A1-stilens adress som definierar tabellintervallet (t.ex. `A1:D10`).      |
+| **ShowHeaderRow**                               | boolesk värde      | valfritt      | `true` för att visa rubrikraden.                                          |
+| **ShowTotals**                                  | boolesk värde      | valfritt      | `true` för att visa raden för totalberäkningar.                          |
+| **TableStyleName**                              | sträng             | valfritt      | Namn på den inbyggda tabellstilen som ska tillämpas.                      |
+| **TableStyleType**                              | sträng             | valfritt      | Stiltyp (`TableStyleLight`, `TableStyleMedium`, etc.).                    |
+| **ListColumns**                                 | array av objekt    | valfritt      | Samling med kolumndefinitioner (`Name`, `TotalsCalculation`).             |
+| **Sorter**, **AutoFilter**, **ShowTableStyle…** | objekt             | valfritt      | Avancerade stil- och filteralternativ (se fullständig DTO i OpenAPI-specifikationen). |
+
+### Minimal exempelnyttolast (payload)
+
+```json
+{
+  "DisplayName": "SalesData",
+  "Range": "A1:E20",
+  "ShowHeaderRow": true,
+  "ShowTotals": false
+}
 ```
 
-Begäranparametrarna är:
+## REST API
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| listaObjektindex| heltal| väg| lista Objektindex|
-| listObject|| kropp| listObject dto i begäran.|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+```bash
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}
+```
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObject) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Begärningsparametrar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameternamn       | Typ    | Plats | Beskrivning                          |
+| ------------------- | ------ | ----- | ------------------------------------ |
+| **name**            | sträng | path  | Dokumentets namn.                    |
+| **sheetName**       | sträng | path  | Arkets namn.                         |
+| **listObjectIndex** | heltal | path  | Index för listobjektet som ska uppdateras. |
+| **listObject**      | objekt | body  | ListObject DTO i begärandetexten.    |
+| **folder**          | sträng | query | Mapp som innehåller dokumentet.      |
+| **storageName**     | sträng | query | Namn på lagringsutrymmet.            |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObject) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+### Begäran
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet7/listobjects/0" \
--X POST \
--d "{ \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" }, \"AutoFilter\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" }, \"FilterColumns\": [ { \"FieldIndex\": 0, \"FilterType\": \"string\", \"MultipleFilters\": { \"MatchBlank\": true, \"MultipleFilterList\": [ {} ] }, \"ColorFilter\": { \"FilterByFillColor\": \"string\", \"Pattern\": \"string\", \"Color\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" }, \"ForegroundColorColor\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" }, \"BackgroundColor\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" } }, \"CustomFilters\": [ { \"FilterOperatorType\": \"string\" } ], \"DynamicFilter\": { \"DynamicFilterType\": \"string\" }, \"IconFilter\": { \"IconId\": 0, \"IconSetType\": \"string\" }, \"Top10Filter\": { \"Criteria\": \"string\", \"IsPercent\": true, \"IsTop\": true, \"Items\": 0 }, \"Visibledropdown\": \"string\" } ], \"Range\": \"string\", \"Sorter\": { \"CaseSensitive\": true, \"HasHeaders\": true, \"KeyList\": [ { \"Key\": 0, \"SortOrder\": \"string\", \"CustomList\": \"string\" } ], \"SortLeftToRight\": true } }, \"DisplayName\": \"string\", \"StartColumn\": 0, \"StartRow\": 0, \"EndColumn\": 0, \"EndRow\": 0, \"ListColumns\": [ { \"Name\": \"string\", \"TotalsCalculation\": \"string\" } ], \"ShowHeaderRow\": true, \"ShowTableStyleColumnStripes\": true, \"ShowTableStyleFirstColumn\": true, \"ShowTableStyleLastColumn\": true, \"ShowTableStyleRowStripes\": true, \"ShowTotals\": true, \"TableStyleName\": \"string\", \"TableStyleType\": \"string\"}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+    "DisplayName": "SalesData",
+    "Range": "A1:E20",
+    "ShowHeaderRow": true,
+    "ShowTotals": false,
+    "ListColumns": [
+      { "Name": "Product", "TotalsCalculation": "None" },
+      { "Name": "Quantity", "TotalsCalculation": "Sum" },
+      { "Name": "Price", "TotalsCalculation": "Average" }
+    ]
+  }'
 ```
 
 {{< /tab >}}
 
+### Svar
+
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+Ett lyckat svar innehåller följande fält:
+
+| Fält                    | Typ    | Beskrivning                                           |
+| ----------------------- | ------ | ----------------------------------------------------- |
+| Code                    | heltal | HTTP-statuskod (200 för lyckad begäran).              |
+| Status                  | sträng | Textuell beskrivning av statusen.                     |
+| UpdatedObject *(valfritt)* | objekt | Den uppdaterade `ListObject`-representationen, inklusive egenskaperna som ändrats. |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## Felaktiga svar (Error Responses)
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| HTTP-kod | Beskrivning                                                             | Exempel på nyttoinnehåll (payload)                    |
+| -------- | ----------------------------------------------------------------------- | ----------------------------------------------------- |
+| **400**  | Felaktig begäran – obligatoriska fält saknas eller ogiltig JSON.        | `{ "Code": 400, "Message": "Invalid request body." }`  |
+| **401**  | Auktorisering misslyckades – JWT-token saknas eller är ogiltig.         | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404**  | Resursen hittades inte – angivet arbetsbok, ark eller listobjekt saknas. | `{ "Code": 404, "Message": "Resource not found." }`    |
+| **500**  | Internt serverfel – oväntat tillstånd på serversidan.                   | `{ "Code": 500, "Message": "Server error." }`          |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+## Vanliga frågor (FAQ)
+
+<details>  
+<summary>Hur uppdaterar jag ett listobjekt med Aspose.Cells Cloud API?</summary>
+
+Använd slutpunkten `POST /cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}`. Inkludera en JSON-begäran med de egenskaper du vill ändra (t.ex. `DisplayName`, `ShowHeaderRow`). Autentisera med en JWT-token i `Authorization`-headern.
+
+</details>
+
+<details>  
+<summary>Vilket svar får jag efter en lyckad uppdatering?</summary>
+
+Ett JSON-objekt med `Code: 200` och `Status: "OK"` returneras. Vid ett fel returneras motsvarande HTTP-statuskod och ett `Error`-objekt som beskriver problemet.
+
+</details>
+
+<details>  
+<summary>Kan jag uppdatera en delmängd av listobjektets egenskaper?</summary>
+
+Ja. Inkludera bara de fält du vill ändra i begärandetexten; alla uteslutna fält förblir oförändrade.
+
+</details>
+
+## Relaterad dokumentation
+
+- [Lägg till ett listobjekt](https://docs.aspose.cloud/cells/list-objects/add/)
+- [Hämta listobjekt](https://docs.aspose.cloud/cells/list-objects/get/)
+- [Ta bort listobjekt](https://docs.aspose.cloud/cells/list-objects/delete/)
+
+## Molntjänstfamilj för SDK
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Besök [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:n.
+
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -100,7 +188,7 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostWorksheetListObject.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PostWorksheetListObject.ts" >}}
 
 {{< /tab >}}
 

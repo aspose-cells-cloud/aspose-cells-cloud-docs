@@ -1,81 +1,84 @@
-﻿---
-title: Anuncio
-type: docs
-url: /es/hyperlinks/add/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
-keywords: Add a hyperlink into an Excel worksheet
-description: Aspose.Cells Cloud REST API permite añadir un hipervínculo a una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Agregar
 ---
-Este REST API indica `add a worksheet hyperlink` en una hoja de cálculo Excel.
+title: "Agregar hipervínculo a una hoja de cálculo"
+type: docs
+url: /hyperlinks/add/
+aliases: [/add-hyperlinks-to-excel-worksheet/]
+keywords: "Aspose.Cells, agregar hipervínculo, API REST de Excel, SDK en la nube"
+description: "Aprenda cómo agregar un hipervínculo a una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud v3.0. Incluye el endpoint, una guía completa de parámetros, un ejemplo con cURL y fragmentos de código para SDK en C#, Java, Python y más."
+weight: 20
+---
 
-## RSET API
+Esta API REST agrega un hipervínculo a una hoja de cálculo de Excel.
+
+## API REST
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-Los parámetros de la solicitud son:
+### Parámetros de solicitud
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del documento.|
-| nombreHoja| cadena| camino| Nombre de la hoja de trabajo.|
-| primeraFila| entero| consulta||
-| primeraColumna| entero| consulta||
-| totalFilas| entero| consulta||
-| totalColumnas| entero| consulta||
-| DIRECCIÓN| cadena| consulta||
-| carpeta| cadena| consulta| La carpeta de documentos.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo    | Ubicación | Descripción                                                                                     |
+| -------------------- | ------- | --------- | ----------------------------------------------------------------------------------------------- |
+| name                 | string  | path      | Nombre del documento.                                                                           |
+| sheetName            | string  | path      | Nombre de la hoja de cálculo.                                                                   |
+| firstRow             | integer | query     | Índice de fila (basado en cero) de la primera fila del rango al que se aplicará el hipervínculo. |
+| firstColumn          | integer | query     | Índice de columna (basado en cero) de la primera columna del rango al que se aplicará el hipervínculo. |
+| totalRows            | integer | query     | Número de filas que abarca el rango del hipervínculo.                                           |
+| totalColumns         | integer | query     | Número de columnas que abarca el rango del hipervínculo.                                        |
+| address              | string  | query     | La URL de destino a la que apunta el hipervínculo (codificada en URL).                          |
+| folder               | string  | query     | Carpeta del documento.                                                                          |
+| storageName          | string  | query     | Nombre del almacenamiento.                                                                      |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La solicitud también puede incluir un cuerpo JSON que contenga los mismos campos (`Address`, `FirstRow`, `FirstColumn`, `TotalRows`, `TotalColumns`). Proporcionar el cuerpo es útil cuando prefiere una carga útil en lugar de parámetros en la cadena de consulta.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+### Respuestas de error
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Código HTTP | Razón                                                | Cuerpo de ejemplo                                                    |
+| ----------- | ---------------------------------------------------- | -------------------------------------------------------------------- |
+| **400**     | Solicitud incorrecta: parámetros faltantes o no válidos. | `{ "Code":"400", "Message":"Invalid parameter value." }`            |
+| **401**     | No autorizado: token JWT faltante o no válido.         | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
+| **404**     | No encontrado: el libro de trabajo o la hoja de cálculo no existe. | `{ "Code":"404", "Message":"File not found." }`                     |
+| **500**     | Error interno del servidor: fallo inesperado.          | `{ "Code":"500", "Message":"An unexpected error occurred." }`       |
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink) define una interfaz de programación públicamente accesible y le permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks?firstRow=1&firstColumn=6&totalRows=1&totalColumns=1&address=https%3A%2F%2Fwww.msnbc.com%2F" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Si la solicitud falla, la API devuelve los códigos de error HTTP estándar (por ejemplo, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error) junto con una carga útil en JSON que contiene un mensaje y código de error.
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de desarrollar. Un SDK gestiona los detalles de bajo nivel, para que usted pueda centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells utilizando diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,160 +1,134 @@
-﻿---
-title: Ottieni una forma tramite indice su un foglio di lavoro Excel
-second_title: Documen
-linktitle: Ge
+---
+title: "Ottenere una forma per indice in un foglio di lavoro Excel"
+second_title: "Document"
+linktype: "Get"
 type: docs
 url: /it/shapes/get/
-aliases: [/get-a-shape-by-index-inside-the-worksheet/]
-keywords: Get a shape on an Excel workshee
-description: Aspose.Cells Cloud REST API supporta l'ottenimento di una forma su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/get-a-shape-by-index-inside-the-worksheet/]
+keywords: "Aspose.Cells Cloud, API per le forme Excel, ottenere una forma per indice, forma nel foglio di lavoro, API REST, recupero della forma, Aspose.Cells SDK"
+description: "Recuperare una forma per indice da un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud. Include la sintassi della richiesta, i parametri, i dettagli della risposta e gli esempi di SDK."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni una forma tramite indice su un foglio di lavoro Excel
+ArticleTitle: "Ottenere una forma per indice in un foglio di lavoro Excel – Documentazione di Aspose.Cells Cloud"
 ---
-Questo REST API indica di ottenere una forma con formato immagine o informazioni sulla forma su un foglio di lavoro Excel.
 
-## RSET API
+Questa API REST recupera una forma (inclusi i dati dell'immagine o i metadati) da un foglio di lavoro Excel.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
- 
+## API GetWorksheetShape
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
 
-I parametri della richiesta sono:
+**Prerequisiti**  
+- Un token di accesso valido per Aspose Cloud (Bearer JWT).  
+- Il foglio di lavoro deve essere memorizzato nello storage di Aspose Cloud o in una cartella specificata.  
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| nome del documento.|
-| Nome foglio| corda| sentiero| nome del foglio di lavoro.|
-| indice di forma| intero| sentiero| indice delle forme nelle forme del foglio di lavoro.|
-| cartella| corda| domanda| Cartella del documento.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+### **Sicurezza e autenticazione**
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShape) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+### **Parametri della richiesta**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Nome parametro | Tipo    | Posizione | Descrizione                                         |
+| -------------- | ------- | -------- | --------------------------------------------------- |
+| name           | string  | path     | Nome del documento Excel.                         |
+| sheetName      | string  | path     | Nome del foglio di lavoro contenente la forma.         |
+| shapeindex     | integer | path     | Indice in base zero della forma all'interno del foglio di lavoro. |
+| folder         | string  | query    | Percorso della cartella in cui è memorizzato il documento.           |
+| storageName    | string  | query    | Nome del servizio di archiviazione.                        |
+
+**Nota:** `shapeindex` è in base zero; la prima forma ha indice 0. Assicurarsi che il foglio di lavoro sia memorizzato nella cartella e nello `storageName` specificati se non si utilizza lo storage predefinito.
+
+La [specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShape) definisce un'interfaccia di programmazione pubblicamente accessibile e consente di effettuare interazioni REST direttamente da un browser web.
+
+È possibile utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare una chiamata all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/autoshapes/1" \
+# Endpoint e percorso corretti
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/shapes/1" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 {
-
   "Status": "string",
-
   "Shape": {
-
     "link": {
-
       "Href": "string",
-
       "Rel": "string",
-
       "Title": "string",
-
       "Type": "string"
-
     },
-
     "Name": "string",
-
     "MsoDrawingType": "string",
-
     "AutoShapeType": "string",
-
     "Placement": "string",
-
     "UpperLeftRow": 0,
-
     "Top": 0,
-
     "UpperLeftColumn": 0,
-
     "Left": 0,
-
     "LowerRightRow": 0,
-
     "Bottom": 0,
-
     "LowerRightColumn": 0,
-
     "Right": 0,
-
     "Width": 0,
-
     "Height": 0,
-
     "X": 0,
-
     "Y": 0,
-
     "RotationAngle": 0,
-
     "HtmlText": "string",
-
     "Text": "string",
-
     "AlternativeText": "string",
-
     "TextHorizontalAlignment": "string",
-
     "TextHorizontalOverflow": "string",
-
     "TextOrientationType": "string",
-
     "TextVerticalAlignment": "string",
-
     "TextVerticalOverflow": "string",
-
     "IsGroup": true,
-
     "IsHidden": true,
-
     "IsLockAspectRatio": true,
-
     "IsLocked": true,
-
     "IsPrintable": true,
-
     "IsTextWrapped": true,
-
     "IsWordArt": true,
-
     "LinkedCell": "string",
-
     "ZOrderPosition": 0
-
   }
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+**Codici di stato HTTP possibili**
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+| Codice | Descrizione |
+|------|-------------|
+| **200 OK** | La forma è stata recuperata correttamente. |
+| **400 Bad Request** | La richiesta è malformata o mancano parametri obbligatori. |
+| **401 Unauthorized** | Autenticazione non riuscita o token mancante/non valido. |
+| **404 Not Found** | Il foglio di lavoro, il foglio di lavoro o l'indice della forma specificati non esistono. |
+| **500 Internal Server Error** | Si è verificato un errore imprevisto sul server. |
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+**Errori comuni:** Utilizzare un dominio di base errato (`api.aspose.com`) o il segmento obsoleto `/autoshapes/` produrrà un errore 404. Utilizzare sempre il segmento `/shapes/` con il dominio `api.aspose.cloud`.
+
+## Famiglia di SDK Cloud
+
+L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli a basso livello e consente di concentrarsi sulle attività del progetto. Consultare il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+Gli esempi di codice seguenti mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -207,3 +181,5 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Per operazioni correlate, consultare la documentazione su **[Aggiungere una forma](/it/shapes/add/)** e **[Aggiornare una forma](/it/shapes/update/)**.

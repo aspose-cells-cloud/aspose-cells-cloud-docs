@@ -1,74 +1,80 @@
-﻿---
-title: Разделить объединенные ячейки диапазона
-second_title: Documen
-linktitle: Unmerg
-type: docs
-url: /ru/ranges/unmerge/
-aliases: [/unmerge-merged-cells-of-the-range/]
-keywords: Unmerge merged cells of the range on an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает разделение объединённых ячеек диапазона на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Разделить объединенные ячейки диапазона
 ---
-Этот REST API указывает на необходимость разъединить объединенные ячейки этого диапазона на листе Excel.
+title: "Разъединение ячеек в диапазоне"
+second_title: "Документ"
+linktitle: "Разъединить"
+type: docs
+url: /ranges/unmerge/
+aliases: [/unmerge-merged-cells-of-the-range/]
+keywords: "Aspose.Cells Cloud, разъединение ячеек, Excel API, диапазон рабочего листа, REST API"
+description: "Узнайте, как использовать API Aspose.Cells Cloud для разъединения объединённых ячеек в заданном диапазоне рабочего листа. Включает конечную точку, параметры, пример cURL и фрагменты кода SDK для C#, Java, Python и других языков."
+weight: 20
+---  
 
-## РСЕT API
+Этот REST API разъединяет объединённые ячейки в указанном диапазоне на листе Excel.
+
+## REST API  
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unmerge
- 
-```
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unmerge
+```  
 
 Параметры запроса:
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| название рабочей книги|
-| Имя_листа| нить| путь| имя рабочего листа|
-| диапазон|| тело| диапазон на листе|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип   | Расположение | Обязательный | Описание                                   |
+|---------------|-------|--------------|-------------|---------------------------------------------|
+| name          | string | path        | Да          | Имя рабочей книги.                          |
+| sheetName     | string | path        | Да          | Имя рабочего листа.                         |
+| range         | object | body        | Да          | Объект диапазона, определяющий ячейки для разъединения. |
+| folder        | string | query       | Нет         | Папка, содержащая рабочую книгу.            |
+| storageName   | string | query       | Нет         | Имя хранилища.                              |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnmerge) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnmerge) определяет публично доступное программное интерфейсное решение и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать утилиту командной строки cURL для лёгкого доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как вызывать облачный API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/unmerge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}" 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+    "ColumnCount": 7,
+    "ColumnWidth": 19,
+    "FirstColumn": 0,
+    "FirstRow": 9,
+    "Name": "string",
+    "RefersTo": "string",
+    "RowCount": 1,
+    "RowHeight": 15,
+    "Worksheet": "Sheet1"
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+## Семейство облачных SDK  
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK берёт на себя обработку низкоуровневых деталей, позволяя сосредоточиться на задачах вашего проекта. Полный список SDK Aspose.Cells Cloud представлен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

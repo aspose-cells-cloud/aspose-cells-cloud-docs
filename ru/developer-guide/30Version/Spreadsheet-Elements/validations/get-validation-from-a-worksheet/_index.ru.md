@@ -1,131 +1,122 @@
-﻿---
-title: Получите проверку рабочего листа по индексу из рабочего листа Excel
-second_title: Documen
-linktitle: Ге
-type: docs
-url: /ru/validations/get/
-aliases: [/get-validation-from-a-worksheet/]
-keywords: Get a worksheet validation by index from an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает получение валидации листа по индексу из листа Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 10
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получить проверку листа по индексу из листа Excel
 ---
-Этот REST API указывает на необходимость проверки рабочего листа по индексу на рабочем листе Excel.
+title: "Получение проверки листа по индексу из рабочей книги Excel"
+second_title: "Документ"
+linktitle: "Получить"
+type: docs
+url: /validations/get/
+aliases: [/get-validation-from-a-worksheet/]
+keywords: "Aspose.Cells Cloud, API проверки листов, получить проверку по индексу, Excel REST API, Aspose.Cells SDK"
+description: "Получение проверки листа по её нулевому индексу из рабочей книги Excel с использованием API Aspose.Cells Cloud (v3.0). Включает пример cURL, схему ответа, коды ошибок и фрагменты кода SDK для C#, Java, Python и других языков."
+weight: 10
+---
 
-## РСЕT API
+Этот REST API позволяет получить проверку листа по её индексу в рабочей книге Excel.  
+Перед вызовом конечной точки получите токен JWT через конечную точку `/connect/token` и включите его в заголовок `Authorization` как `Bearer <jwt token>`.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
-Параметры запроса:
+### **Параметры запроса**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| индекс проверки| целое число| путь| Индекс проверки.|
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра    | Тип     | Расположение | Описание                                                |
+| ---------------- | ------- | ------------ | ------------------------------------------------------- |
+| name             | string  | path         | Имя файла рабочей книги.                                |
+| sheetName        | string  | path         | Имя рабочего листа.                                     |
+| validationIndex  | integer | path         | Нулевой индекс проверки, которую необходимо получить.  |
+| folder           | string  | query        | Папка, содержащая рабочую книгу.                        |
+| storageName      | string  | query        | Имя службы хранения.                                    |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidation) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidation) определяет публично доступное программное интерфейсное решение и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Следующий пример демонстрирует вызов API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Validation": {
-
     "AlertStyle": "Stop",
-
     "AreaList": [
-
       {
-
         "EndColumn": 0,
-
         "EndRow": 0,
-
         "StartColumn": 0,
-
         "StartRow": 0
-
       },
-
       {
-
         "EndColumn": 27,
-
         "EndRow": 0,
-
         "StartColumn": 26,
-
         "StartRow": 0
-
       }
-
     ],
-
     "IgnoreBlank": false,
-
     "InCellDropDown": false,
-
     "Operator": "None",
-
     "ShowError": false,
-
     "ShowInput": false,
-
     "Type": "AnyValue",
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/Validations/0",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/Validations/0",
       "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Схема ответа**
+
+| Поле           | Тип     | Описание                                                               |
+| -------------- | ------- | ---------------------------------------------------------------------- |
+| AlertStyle     | string  | Стиль предупреждения, отображаемого пользователю (Stop, Warning, Information). |
+| AreaList       | array   | Коллекция диапазонов ячеек, к которым применяется проверка.            |
+| IgnoreBlank    | boolean | Если `true`, пустые ячейки игнорируются при проверке.                  |
+| InCellDropDown | boolean | Если `true`, в ячейке отображается раскрывающийся список.              |
+| Operator       | string  | Оператор сравнения, используемый для проверки (например, `None`, `Between`). |
+| ShowError      | boolean | Определяет, отображается ли сообщение об ошибке при неудачной проверке. |
+| ShowInput      | boolean | Определяет, отображается ли сообщение при выборе ячейки.               |
+| Type           | string  | Тип проверки (например, `AnyValue`, `WholeNumber`, `Decimal` и т.д.). |
+| link.Href      | string  | Самоуказывающий URL-адрес ресурса проверки.                            |
+| link.Rel       | string  | Тип связи (всегда `self`).                                             |
+
+**Возможные коды ошибок**
+
+| HTTP-статус | Значение                                                              |
+| ----------- | -------------------------------------------------------------------- |
+| 200         | Проверка успешно получена.                                           |
+| 400         | Неверный запрос — отсутствуют или недопустимы параметры.             |
+| 401         | Неавторизовано — недопустимый или отсутствующий токен JWT.           |
+| 404         | Не найдено — рабочая книга, лист или индекс проверки не существуют.  |
+| 500         | Внутренняя ошибка сервера — непредвиденное состояние.                |
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ разработки под Aspose.Cells Cloud. SDK скрывает детали низкоуровневой реализации, позволяя сосредоточиться на бизнес-логике. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

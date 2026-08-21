@@ -1,102 +1,130 @@
-﻿---
-title: Dividi una cartella di lavoro Excel in più file
-second_title: Documen
-linktitle: Dividi un fil Excel
-type: docs
-url: /it/split-multi-excel-files/
-aliases: [ /split/multi-files/]
-keywords: Split an Excel workbook to multi-files
-description: Aspose.Cells Cloud REST API supporta la suddivisione di una cartella di lavoro Excel in più file. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 130
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Dividi una cartella di lavoro Excel in più file
 ---
-Questo REST API indica di dividere un Excel `workbook` in più file con formati diversi.
+title: "Dividere un file Excel in più file"
+ArticleTitle: "Come dividere un file Excel in più file utilizzando l'API Aspose.Cells Cloud"
+second_title: "Documento"
+linktitle: "Dividere un file Excel"
+type: docs
+url: /split-multi-excel-files/
+aliases: [/split/multi-files/]
+keywords: "Excel, Aspose.Cells Cloud, API REST, dividere cartella di lavoro, file multipli, JPEG, PNG, PDF, CSV, JSON"
+description: "L'API REST Aspose.Cells Cloud consente di dividere una cartella di lavoro Excel in più file in vari formati. Questa documentazione fornisce i parametri di richiesta, un esempio cURL e campioni di codice SDK per linguaggi come C#, Java, PHP, Ruby, Node.js, Python, Perl e Go."
+weight: 130
+---
 
-**Parametro di query**
+Questa API REST divide la **cartella di lavoro** Excel in più file in diversi formati.
 
-|Nome del parametro|Tipo|Descrizione|
-|:- |:- |:- |
-|formato|corda|Formato diviso.|
-|da|intero|Avvia l'indice del foglio di lavoro.|
-|A|intero|Indice finale del foglio di lavoro.|
-|risoluzione orizzontale|intero|Risoluzione orizzontale dell'immagine.|
-|risoluzione verticale|intero|Risoluzione verticale dell'immagine.|
-|cartella in uscita|corda|posizione del file di divisione in uscita.|
-|splitNameRule|corda||
-|cartella|corda|Cartella della cartella di lavoro originale.|
-|Nome di archiviazione|corda|Nome dell'archivio.|
+> **Prerequisiti** – Per utilizzare questa API è necessario ottenere un token JWT valido, assicurarsi di utilizzare una versione SDK supportata e verificare che la cartella di lavoro sia archiviata in una posizione di archiviazione supportata. L'API impone inoltre limiti di dimensione del file, descritti nelle linee guida della piattaforma.
 
-## RIPOSO API
+## API PostWorkbookSplit
 
-|**API**|**Tipo**|**Descrizione**|**Collegamento Swagger**|
-|:- |:- |:- |:- |
-|/cellule/{nome}/dividi|INVIARE|Dividi una cartella di lavoro Excel|[PostWorkbookSplit](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit)|
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/split
+```
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### **Sicurezza e autenticazione**
 
- Puoi usare**cURL** Strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+Le API Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### Parametri della richiesta
+
+| Nome parametro       | Tipo    | Posizione   | Descrizione                                                                                  | Obbligatorio |
+| -------------------- | ------- | ----------- | -------------------------------------------------------------------------------------------- | ------------ |
+| files[]              | file    | formData    | Una o più cartelle di lavoro Excel da **dividere**. Utilizzare `file1`, `file2`, … nella richiesta. | Sì           |
+| format               | string  | Query       | Format di output desiderato per i file risultanti.                                          | No           |
+| from                 | integer | Query       | Indice iniziale del foglio di lavoro.                                                        | No           |
+| to                   | integer | Query       | Indice finale del foglio di lavoro.                                                          | No           |
+| horizontalResolution | integer | Query       | Risoluzione orizzontale dell'immagine.                                                       | No           |
+| verticalResolution   | integer | Query       | Risoluzione verticale dell'immagine.                                                         | No           |
+| outFolder            | string  | Query       | Cartella di output per i file risultanti.                                                    | No           |
+| splitNameRule        | string  | Query       | Regola di denominazione applicata ai file risultanti.                                        | No           |
+| folder               | string  | Query       | Cartella contenente la cartella di lavoro originale.                                         | No           |
+| storageName          | string  | Query       | Nome dell'archiviazione da utilizzare.                                                       | No           |
+
+### **Risposta**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+    "Files": [
+      {
+        "Filename" : "[nome file1]",
+        "Filesize" : [dimensione file],
+        "FileContent" : "[Base64String]"
+      },
+      {
+        "Filename" : "[nome file2]",
+        "Filesize" : [dimensione file],
+        "FileContent" : "[Base64String]"
+      },
+      {
+        "Filename" : "[nome file3]",
+        "Filesize" : [dimensione file],
+        "FileContent" : "[Base64String]"
+      }
+    ]
+}
+```
+
+**Codici di stato HTTP**
+
+| Codice | Significato                 | Descrizione                                          |
+|--------|-----------------------------|------------------------------------------------------|
+| 200  | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400  | Richiesta non valida        | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401  | Non autorizzato             | Token JWT non valido o mancante. |
+| 413  | Payload troppo grande       | Il file caricato supera il limite di dimensione. |
+| 500  | Errore interno del server   | Errore imprevisto nel server. |
+
+## Come utilizzare l'API PostWorkbookSplit con gli SDK
+
+### Specifica dell'API PostWorkbookSplit
+
+La [Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando **cURL** per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/split?format=jpeg&from=1&to=1&horizontalResolution=0&verticalResolution=0" -H "accept: application/json"
-
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/split?format=jpeg&from=1&to=1&horizontalResolution=0&verticalResolution=0" -H "accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Result": {
-
     "Documents": [
-
       {
-
         "Id": 1,
-
         "link": {
-
           "Href": "413e3375-c163-4d5c-8b84-8f95f63902f6.png",
-
           "Rel": null,
-
           "Title": null,
-
           "Type": null
-
         }
-
       }
-
     ]
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+### Utilizzare gli SDK Aspose.Cells Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'utilizzo di un SDK è il modo migliore per accelerare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come effettuare chiamate ai servizi web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

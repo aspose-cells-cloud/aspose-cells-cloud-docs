@@ -1,72 +1,140 @@
-﻿---
-title: حذف جميع المخططات من ورقة العمل
+---
+title: "حذف جميع المخططات من ورقة عمل"
 type: docs
-url: /ar/charts/clear/
+url: /charts/clear/
 aliases: [/delete-all-charts-from-a-worksheet/]
 weight: 30
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حذف جميع المخططات من ورقة عمل
+keywords: "Aspose.Cells، السحابة، حذف، جميع المخططات، ورقة العمل، واجهة برمجة تطبيقات REST، DELETE، SDK"
+description: "تعرّف على كيفية حذف جميع المخططات الموجودة في ورقة عمل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API (الإصدار 3.0). تتضمن النهاية النهائية (endpoint)، المُعاملات، مثال cURL، مقاطع كود SDK، خطوات المصادقة، ومعالجة الأخطاء."
+ArticleTitle: "حذف جميع المخططات من ورقة عمل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud"
 ---
-يشير هذا REST API إلى مسح المخططات.
- 
-## RSET API
- 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
- 
+
+تقوم هذه الواجهة البرمجية REST بحذف جميع المخططات من ورقة العمل المحددة.
+
+**الخلفية** – يُعد حذف جميع المخططات من ورقة العمل مفيدًا عندما تحتاج إلى إعادة ضبط التصميم البصري لورقة العمل، أو استبدال التصورات البصرية القديمة، أو إعداد ملف عمل لإعادة الاستخدام دون الاحتفاظ ببيانات المخططات السابقة.
+
+قبل استدعاء الواجهة البرمجية، تأكد من استيفاء المتطلبات الأساسية التالية:
+
+- توفر رمز JWT صالح للمصادقة.
+- وجود ملف العمل في موقع ومسار التخزين المحددين.
+- استخدام إصدار الواجهة البرمجية **v3.0**.
+
+## واجهة DeleteWorksheetClearCharts البرمجية
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
- 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetClearCharts) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
- 
+
+### **الأمان والمصادقة**
+
+تتطلب واجهات برمجة تطبيقات Aspose.Cells Cloud مصادقة مبنية على <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">رمز JWT</a>، وهي آمنة.
+
+### مُعاملات الطلب
+
+| اسم المُعامل | النوع | الموقع | الوصف |
+| ------------ | ------ | -------- | ------------------------------------ |
+| name | string | path | اسم ملف العمل. |
+| sheetName | string | path | اسم ورقة العمل. |
+| folder | string | query | المجلد الذي يُخزّن فيه ملف العمل. |
+| storageName | string | query | اسم مساحة التخزين. |
+
+**رؤوس الطلب**
+
+| الرأس | الوصف |
+|---------------|---------------------------------|
+| Authorization | Bearer `<jwt token>` |
+| Accept | `application/json` |
+| Content-Type | `application/json` (لا يوجد جسم للطلب) |
+
+**جسم الطلب**
+
+لا تتطلب عملية DELETE **أي** جسم طلب.
+
+**الاستجابة**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**كود حالات HTTP**
+
+| الكود | المعنى | الوصف |
+|------|-----------------------------|--------------------------------------------------|
+| 200 | OK (تمت العملية بنجاح) | تم تطبيق الحذف بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | Bad Request (طلب غير صالح) | مُعاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401 | Unauthorized (غير مصرّح) | رمز JWT غير صالح أو مفقود. |
+| 413 | Payload Too Large (حجم البيانات كبير جدًا) | تجاوز حجم الملف المرفوع الحد المسموح. |
+| 500 | Internal Server Error (خطأ داخلي في الخادم) | خطأ غير متوقع في الخادم. |
+
+*أمثلة على استجابات الأخطاء*
+
+```json
+// 400 Bad Request
+{
+    "Code": 400,
+    "Message": "مُعامل غير صالح: يُطلب 'sheetName'."
+}
+
+// 401 Unauthorized
+{
+    "Code": 401,
+    "Message": "فشلت المصادقة. رمز JWT غير صالح."
+}
+
+// 413 Payload Too Large
+{
+    "Code": 413,
+    "Message": "تجاوز حجم بيانات الطلب الحد الأقصى المسموح به."
+}
+
+// 500 Internal Server Error
+{
+    "Code": 500,
+    "Message": "حدث خطأ غير متوقع في الخادم."
+}
+```
+
+## كيفية استخدام واجهة DeleteWorksheetClearCharts البرمجية مع SDKs
+
+### مواصفات واجهة DeleteWorksheetClearCharts البرمجية
+
+تعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetClearCharts) واجهة برمجة تطبيقات متاحة علنًا، وتمكّنك من إجراء تفاعلات REST مباشرة من خلال متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء المكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
+
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/charts" 
--X DELETE 
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/charts" \
+-X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
 ```
 
+
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
-{{< /tabs >}}
+يُعد استخدام SDK أفضل طريقة لتسريع عملية التطوير عند الحاجة إلى **حذف جميع المخططات** من ورقة عمل. تهتم SDK بتفاصيل المستوى المنخفض، وتتيح لك التركيز على مهام مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على القائمة الكاملة لـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
- 
+توضح مقاطع الكود التالية كيفية إجراء المكالمات إلى خدمات Aspose.Cells باستخدام SDKs مختلفة:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -128,3 +196,4 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/char
 {{< /tab >}}
 
 {{< /tabs >}}
+---

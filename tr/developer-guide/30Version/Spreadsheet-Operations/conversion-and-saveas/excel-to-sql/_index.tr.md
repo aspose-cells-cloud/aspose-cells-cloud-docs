@@ -1,80 +1,107 @@
-﻿---
-title: Excel SQ'ya
-second_title: Documen
-linktitle: Excel SQ'ya
-type: docs
-url: /tr/convert-excel-file-to-sql-file/
-keywords: Convert excel files to sql files
-description: Aspose.Cells Cloud REST API, Excel dosyalarını SQL dosyalarına dönüştürmeyi destekler. SDK, Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift gibi çeşitli geliştirme dillerini destekler.
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel'den SQL'e
 ---
-Bu REST API, `convert`'e bir elektronik tablo dosyasının sql formatındaki bir dosyaya dönüştürüldüğünü gösterir.
+title: "Excel'den SQL'e"
+second_title: "Belge"
+linktitle: "Excel'den SQL'e"
+type: docs
+url: /convert-excel-file-to-sql-file/
+keywords: "Aspose.Cells, Excel'den SQL'e, bulut API'si, elektronik tablo dönüştürme, REST"
+description: "Aspose.Cells Cloud REST API'sini kullanarak Excel elektronik tablo dosyalarını SQL dosyalarına dönüştürün. Uygulamalarınıza sorunsuz entegrasyon için birden fazla SDK ve programlama dilini destekler."
+weight: 100
+ArticleTitle: "Excel Dosyasını SQL'e Dönüştür – Aspose.Cells Cloud API'si"
+---
 
-**Sorgu Parametresi**
+Bu REST API'si, bir elektronik tablo dosyasını SQL formatlı bir dosyaya dönüştürür.
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|şifre|sicim| Excel dosyasını açmak için gereken şifre.|
-|depolamaAdı|sicim| Dosyanın bulunduğu depolama adı.|
-|checkExcelRestriction|bool| Kullanıcı hücrelerle ilgili nesneleri değiştirdiğinde Excel dosyasının kısıtlamasını kontrol edin.|
+**Ön Gereksinimler**  
+Bu uç noktayı kullanmak için, <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteç tabanlı kimlik doğrulama</a> kılavuzunda açıklandığı şekilde geçerli bir JWT belirteci oluşturmanız gerekir. API, hizmet dokümantasyonunda tanımlanan boyut sınırları dahilinde Excel dosyalarını işler ve `password` sorgu parametresi sağlandığında şifreli çalışma kitaplarını da işleyebilir.
 
-**İstek Gövde Parametresi**
+## PostConvertWorkbookToSQL API'si
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|veri dosyası| veri dosyası|Veri dosyası çok parçalı içeriğin ilk bölümüne kaydedilir.|
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/sql
+```
 
-**Cevap**
+### **Güvenlik ve Kimlik Doğrulama**
 
-[Dosya Bilgileri](/cells/tr/file-info/)
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteç tabanlı kimlik doğrulama</a> gerektirir.
 
-## REST API Spesifikasyonu
+### **Sorgu Parametresi**
 
-|**API**|**Tip**|**Tanım**|**Swagger Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/dönüştür/sql|POSTALAMAK|Bir elektronik tabloyu sql dosyasına dönüştürün.|[PostConvertWorkbookToSQL](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL)|
+| Parametre Adı         | Tür    | Açıklama                                                                                 |
+| --------------------- | ------ | ----------------------------------------------------------------------------------------- |
+| password              | string | Excel dosyasını açmak için gerekli şifre.                                                  |
+| storageName           | string | Dosyanın depolandığı deponun adı.                                                          |
+| checkExcelRestriction | bool   | Hücreyle ilgili nesneleri değiştirirken Excel dosyası kısıtlamalarının denetlenip denetlenmeyeceğini belirtir. |
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **İstek Gövdesi Parametresi**
 
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı | Tür        | Açıklama                                                                  |
+| ------------- | ---------- | ------------------------------------------------------------------------- |
+| datafile      | data file  | Dönüştürülecek elektronik tablo dosyası; isteğin ilk bölümü olarak eklenir. |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### Yanıt
+
+API, oluşturulmuş SQL dosyasını içeren bir **FileInfo** nesnesi döndürür.
+
+| Alan            | Tür    | Açıklama                                      |
+| --------------- | ------ | --------------------------------------------- |
+| **Filename**    | string | SQL dosyasının adı (örneğin, `example.sql`). |
+| **FileSize**    | int    | Dosyanın bayt cinsinden boyutu.               |
+| **FileContent** | string | SQL dosyasının Base64 ile kodlanmış içeriği.  |
+
+[FileInfo](/cells/file-info/)
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                               |
+|-----|-----------------------------|--------------------------------------------------------|
+| 200 | Tamam                       | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Hatalı İstek                | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Yetkisiz İstek              | Geçersiz veya eksik JWT belirteci.                      |
+| 413 | İstek Gövdesi Çok Büyük     | Yüklenen dosya boyut sınırını aşıyor.                   |
+| 500 | İç Sunucu Hatası            | Beklenmeyen sunucu hatası.                             |
+
+## SDK’larla PostConvertWorkbookToSQL API’sini Nasıl Kullanılır
+
+### PostConvertWorkbookToSQL API Spesifikasyonu
+
+<a href="https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL" rel="noopener noreferrer">OpenAPI Spesifikasyonu</a>, herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize izin verir.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sine istekte bulunmayı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/sql" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/sql" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: curl" \
+     -d '{"File":{}}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
-  "Filename": "xxxxxx.json",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
+  "Filename": "example.sql",
+  "FileSize": 1024,
+  "FileContent": "base64_encoded_string"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmak için en iyi yoldur. SDK, düşük seviye detayları yöneterek projenizin görevlerine odaklanmanıza olanak tanır. Aspose.Cells Cloud SDK’larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub depomuzu</a> inceleyin.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerini çeşitli SDK’lar kullanarak nasıl çağıracığınızı göstermektedir:
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -127,14 +154,17 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< /tabs >}}
 
-## Diğer API'ler bu işlevi uygular
+## Bu İşlevi Uygulayan Diğer API’ler
 
-[POST /hücreler/{ad}/kaydet](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API, MS Excel dosyasını ek ayarlarla HTML dosyası olarak kaydetmenizi ve sonucu depolama alanına kaydetmenizi sağlar.
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Bir çalışma kitabını farklı bir formatta kaydeder ve sonucu belirtilen depoda saklar.
 
-Bu REST API `convert` excel dosyası HTML'e.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Bir çalışma kitabını isteğe bağlı ayarlarla birlikte başka bir formata dönüştürür ve sonucu yanıtta döndürür.
 
-[PUT /hücreler/dönüştür](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API, MS Excel dosyasını ek ayarlarla HTML dosyasına dönüştürmenizi ve sonucu yanıta kaydetmenizi sağlar.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – İsteğe bağlı dönüştürme ayarlarıyla birlikte bir çalışma kitabını alır.
 
-Bu REST API `export` excel dosyası HTML'e.
+**Notlar**  
+- Şifreli Excel dosyalarını dönüştürürken `password` sorgu parametresinin sağlandığından emin olun; aksi takdirde dönüştürme işlemi 400 hatasıyla başarısız olur.  
+- Hizmet SQL dosyası içeriğini Base64 olarak döndürür; `.sql` dosyasına kaydetmeden önce bunu kod çözmeniz gerekir.  
 
-[GET /hücreler/{isim}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API, MS Excel dosyasını ek ayarlarla HTML dosyasına dönüştürmenizi ve sonucu yanıta kaydetmenizi sağlar.
+**Örnek Dosyalar**  
+API'yi hızlıca test etmek için örnek bir Excel çalışma kitabını [buradan](https://example.com/sample.xlsx) ve önceden oluşturulmuş bir SQL sonucunu [buradan](https://example.com/sample.sql) indirin.

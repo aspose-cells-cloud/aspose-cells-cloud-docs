@@ -1,87 +1,122 @@
-﻿---
-title: Excel-Datei reparieren
-second_title: Documen
-type: docs
-linktitle: Excel-Datei reparieren
-url: /de/repair-excel-files/
-keywords: Repair Excel, ODS, WPS, and so on files
-description: Reparieren Sie Excel-Dateien mit Aspose.Cells Cloud REST API. API unterstützt mehrere Entwicklungssprachen, darunter Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift für eine schnelle Integration in Ihre Projekte
-weight: 39
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Reparatur
 ---
-Dieser REST API weist auf `repair` Excel Dateien hin.
+title: "Excel-Dateien reparieren"
+second_title: "Dokument"
+type: docs
+linktitle: "Excel-Dateien reparieren"
+url: /repair-excel-files/
+keywords: "Aspose Cells, Excel-Reparatur-API, beschädigte XLSX, Wiederherstellung von Tabellenkalkulationen, Cloud-API"
+description: "Verwenden Sie die Aspose.Cells Cloud REST-API, um beschädigte Excel-Dateien (XLS, XLSX, XLSM, XLSB, ODS) zu reparieren. Laden Sie eine oder mehrere Dateien hoch, wählen Sie das Ausgabeformat aus und erhalten Sie die reparierten Dateien als Base64-codierten String. Keine Installation erforderlich."
+weight: 39
+---
 
-- Reparieren Sie XLS, XLSX, XLSM, XLSB, ODS usw.
-- Unterstützt mehrere Dateien.
+Diese REST-API ermöglicht es Ihnen, **Excel-Dateien zu reparieren**.
 
-Aspose.Cells Cloud Excel Repair stellt Daten aus beschädigten Excel-Dateien online ohne Installation wieder her. Beschädigte Excel-Dateien können problematisch sein, da sie sich nicht mehr öffnen lassen. Sie können die Aspose.Cells Cloud Excel Repair App ausprobieren, um Daten aus beschädigten Excel-Dateien wiederherzustellen.
+- Reparieren Sie XLS-, XLSX-, XLSM-, XLSB-, ODS- und weitere Tabellenkalkulationsformate.  
+- Unterstützt das Hochladen mehrerer Dateien in einer einzigen Anfrage.
 
-## RSET API
+Aspose.Cells Cloud Excel-Reparatur stellt Daten aus beschädigten Excel-Dateien online wieder her, ohne dass eine Installation erforderlich ist. Beschädigte Excel-Dateien sind problematisch, da sie nicht geöffnet werden können. Sie können die Aspose.Cells Cloud Excel-Reparatur-Anwendung ausprobieren, um Daten aus solchen Dateien wiederherzustellen.
+
+## REST-API
+
+Der Endpunkt **Excel-Dateien reparieren** repariert beschädigte Tabellenkalkulationsdateien und gibt den reparierten Inhalt zurück.
+
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/repair
-
 ```
 
-Die Anforderungsparameter sind:
+### **Sicherheit und Authentifizierung**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Datei| Datei| formData| Hochzuladende Datei|
-| Format| Schnur| Abfrage| Ausgabeformat, Standardwert ist null, Ausgabeformat ist gleich dem Eingabedateiformat.|
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
- Der[OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+### Anfrageparameter
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Parametername | Typ   | Standort                     | Beschreibung |
+|---------------|-------|------------------------------|--------------|
+| file          | Datei | formData (multipart)         | Hochzuladende Datei |
+| format        | string | query                       | Gewünschtes Ausgabeformat. Falls weggelassen (null), wird das Ausgabeformat standardmäßig dem Format der Eingabedatei entsprechen. |
+
+### **Antwort**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[zusammengeführter Dateiname]",
+    "Filesize" : [Dateigröße],
+    "FileContent" : "[Base64String]"
+}
+```
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                   | Beschreibung                                             |
+|------|-----------------------------|----------------------------------------------------------|
+| 200  | OK                          | Filter erfolgreich angewendet; Antwort enthält Operationsdetails. |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized                | Ungültiges oder fehlendes JWT-Token. |
+| 413  | Payload Too Large           | Hochgeladene Datei überschreitet die Größeinschränkung. |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler. |
+
+## So verwenden Sie die PostRepair-API mit SDKs
+
+### PostRepair-API-Spezifikation
+
+Die [OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt über einen Webbrowser.
+
+Sie können das cURL-Befehlszeilentool verwenden, um Aspose.Cells-Webdienste problemlos aufzurufen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an die Cloud-API durchführen.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Anfrage" tabName12="Antwort" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/repair" \
--X POST \
--H "Content-Type: multipart/form-data" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'
+curl -v "https://api.aspose.cloud/v3.0/cells/repair" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'file1=@file1.xlsx' \
+  -F 'file2=@file2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
+```json
 {
-    "Files":
-    [
-        {
-            "Filename":"xxxx1.xlsx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        {
-            "Filename":"xxxx2.xlsx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "file1.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "file2.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Bei Erfolg gibt der Dienst HTTP 200 mit einer JSON-Payload zurück, die ein `Files`-Array enthält. Bei Fehlersituationen verwendet die API standardmäßige HTTP-Statuscodes:
+
+- **400 Bad Request** – Ungültige Parameter oder nicht reparierbare Datei.  
+- **401 Unauthorized** – Fehlendes oder ungültiges JWT-Token.  
+- **413 Payload Too Large** – Die hochgeladene Datei überschreitet die zulässige Größe.  
+- **500 Internal Server Error** – Unerwarteter serverseitiger Fehler.
+
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist die beste Methode, um die Entwicklungszeit zu verkürzen. Ein SDK übernimmt die Low-Level-Details und ermöglicht es Ihnen, sich auf die Aufgaben Ihres Projekts zu konzentrieren. Weitere Informationen finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud) mit einer vollständigen Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mit verschiedenen SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

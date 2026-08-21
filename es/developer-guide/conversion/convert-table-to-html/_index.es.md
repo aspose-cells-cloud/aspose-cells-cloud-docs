@@ -1,97 +1,111 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Convertir los datos de una tabla de hoja de cálculo a un archivo HTML
-second_title: Documen
-ArticleTitle: Convert a Spreadsheet Table data to a Html fil
-linktitle: Convertir tabla a HTM
-type: docs
-url: /es/convert-table-to-html/
-keywords: Excel Table to HTML, Spreadsheet Conversion, Aspose.Cells Cloud Web API, REST, Convert Excel to HTML, Table to HTML, Document Conversion, Cloud Service
-description: Convierta fácilmente tablas de archivos de hojas de cálculo locales al formato HTML utilizando nuestro API basado en la nube
-weight: 100
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, HTML, PDF, CSV, JSON, Markdown, Coincidir celdas en blanco en Excel
 ---
-Convierte los datos de una tabla de hoja de cálculo local/Excel en un archivo html.
+title: "Aspose.Cells Cloud – Convertir tabla a HTML"
+description: "Convierta rápidamente tablas de Excel a HTML con la API de Aspose.Cells Cloud: segura, que conserva el formato y fácil de integrar."
+keywords: "Aspose.Cells, Excel a HTML, convertir tabla a HTML, API en la nube, conversión de hojas de cálculo"
+weight: 100
+date: 2026-07-30
+last_updated: 2026-07-30
+version: "v4.0"
+url: /convert-table-to-html/
+type: docs
+---
 
-## **Convertir tabla a HTML API**
+**Resumen rápido**: Este endpoint lee un libro de Excel local, extrae la **tabla** especificada, la convierte en un archivo **HTML** y devuelve el resultado como un flujo descargable. No es necesario cargar previamente el archivo en el almacenamiento de Aspose Cloud.
+
+## API ConvertTableToHTML
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/table/html
+PUT https://api.aspose.cloud/v4.0/cells/convert/table/html
 ```
 
-### **Parámetros de la solicitud:**
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP| Descripción|
-|:- |:- |:- |:- |
-| Hoja de cálculo| Archivo| Datos del formulario| Sube el archivo de hoja de cálculo que deseas convertir.|
-| hoja de trabajo| Cadena| Consulta| El nombre de la hoja de cálculo Spreadsheet/Excel|
-| nombre de la tabla| Cadena| Consulta| El nombre de la tabla a convertir.|
-| Ruta de salida| Cadena| Consulta| (Opcional) La ruta de la carpeta donde se almacenará el archivo convertido. El valor predeterminado es nulo.|
-|nombreAlmacenamientoExterno| Cadena| Consulta| El nombre de almacenamiento designado para el archivo de salida.|
-| Ubicación de fuentes| Cadena| Consulta| Especifique fuentes personalizadas para la conversión.|
-| región| Cadena| Consulta| Define la configuración de la región de la hoja de cálculo.|
-| contraseña| Cadena| Consulta| La contraseña necesaria para acceder al archivo de hoja de cálculo.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación mediante token JWT</a>.
+
+### Parámetros de la solicitud
+
+| Nombre             | Ubicación  | Tipo      | Obligatorio | Descripción                                                                                                      |
+|--------------------|------------|-----------|-------------|------------------------------------------------------------------------------------------------------------------|
+| **Spreadsheet**    | Form‑Data  | `File`    | **Sí**      | El libro de Excel que contiene la tabla que se va a convertir.                                                  |
+| **worksheet**      | Query      | `String`  | **Sí**      | Nombre de la hoja de cálculo que contiene la tabla.                                                             |
+| **tableName**      | Query      | `String`  | **Sí**      | Nombre exacto de la tabla que se va a convertir.                                                                |
+| **outPath**        | Query      | `String`  | No          | Ruta de carpeta en el almacenamiento de Aspose Cloud donde se guardará el archivo HTML (opcional).             |
+| **outStorageName** | Query      | `String`  | No          | Nombre del almacenamiento para el archivo de salida (opcional).                                                |
+| **fontsLocation**  | Query      | `String`  | No          | Ruta a una carpeta que contiene fuentes personalizadas necesarias para la conversión.                           |
+| **region**         | Query      | `String`  | No          | Identificador regional (por ejemplo, `es-ES`, `fr-FR`). Afecta el formato de números y fechas.                  |
+| **password**       | Query      | `String`  | No          | Contraseña para abrir un libro protegido.                                                                       |
+| **AutoRowsFit**    | Query      | `Boolean` | No          | Ajustar automáticamente todas las filas de la hoja de cálculo (`true`/`false`).                                 |
+| **AutoColumnsFit** | Query      | `Boolean` | No          | Ajustar automáticamente todas las columnas de la hoja de cálculo (`true`/`false`).                              |
 
 ### **Respuesta**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Códigos de error
+**Códigos de estado HTTP**
 
-- **400 Solicitud incorrecta**: URI de nube Apose.Cells no válido API.
-- **401 No autorizado**Token de acceso no válido. O ID de cliente y secreto no válidos.
-- **404 No encontrado**:El archivo de hoja de cálculo no es accesible.
-- **Error de servidor 500**:La hoja de cálculo ha encontrado una anomalía al obtener los datos de cálculo.
+| Código | Significado           | Descripción                                                          |
+|--------|-----------------------|----------------------------------------------------------------------|
+| 200    | OK                    | Filtro aplicado correctamente; la respuesta contiene los detalles de la operación. |
+| 400    | Solicitud incorrecta  | Parámetros faltantes o inválidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado         | Token JWT inválido o ausente.                                        |
+| 413    | Carga demasiado grande | El archivo subido supera el límite de tamaño.                       |
+| 500    | Error interno del servidor | Error inesperado en el servidor.                                   |
 
-## ¿Por qué debería utilizar la herramienta Convertir tabla a HTML API?
+## ¿Cuándo usar la API Convert Table to HTML?
 
-- No necesita almacenamiento en la nube, lo que reduce la carga sobre los recursos de la nube.
-- El desarrollo se puede completar rápidamente a través del SDK existente.
+- **Contenido web dinámico**: Inserte tablas de precios, cronogramas o listas de productos directamente en páginas web o CMS.
+- **Plantillas de correo electrónico**: Genere fragmentos de HTML para resúmenes de pedidos u otros informes que se muestren de forma coherente en distintos clientes de correo electrónico.
+- **Paneles de control y herramientas de informes**: Muestre datos de hojas de cálculo en tiempo real sin cargar el libro completo ni utilizar componentes de cuadrícula pesados.
+- **Vistas previas de documentos**: Ofrezca vistas previas rápidas y que conservan el formato de secciones específicas de hojas de cálculo.
 
-## ¿Cómo utilizar la tabla de conversión a HTML API con SDK?
+## ¿Cómo usar la API Convert Table to HTML con SDK?
 
-### Especificación API para convertir tablas a HTML
+### Especificación de la API Convert Table to HTML
 
- El[Especificación API para convertir tablas a HTML](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToHtml) describe una interfaz de programación de acceso público que le permite realizar interacciones REST directamente desde su navegador web.
+La [Especificación de la API Convert Table to HTML](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToHTML) proporciona una interfaz de programación accesible públicamente, lo que permite interactuar directamente con REST desde un navegador web.
 
-### Utilice los SDK de la nube Aspose.Cells
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube mediante cURL.
 
-Usar el SDK es la forma más rápida de desarrollar, ya que abstrae los detalles de bajo nivel y permite convertir los datos de una tabla de una hoja de cálculo en un archivo html con código corto.
- Por favor, consulte el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
-Los siguientes ejemplos de código ilustran cómo interactuar con los servicios web Aspose.Cells utilizando varios SDK:
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertTableToHtml.cs" >}}
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/html?worksheet=Sheet1&tableName=Table1" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@myWorkbook.xlsx" \
+  -o converted.html
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertTableToHtml.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (codificado en Base64)",
+  "contentType": "tipo MIME",
+  "fileDownloadName": "nombre de archivo opcional"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertTableToHtml.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertTableToHtml.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertTableToHtml.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertTableToHtml.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertTableToHtml.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertTableToHtml.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### Utilizar los SDK de Aspose.Cells Cloud
+
+Usar los SDK es la forma más rápida de desarrollar, ya que ocultan los detalles de bajo nivel y le permiten convertir datos de tablas de hojas de cálculo en un archivo CSV con un código mínimo. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver la lista completa de SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante distintos SDK:

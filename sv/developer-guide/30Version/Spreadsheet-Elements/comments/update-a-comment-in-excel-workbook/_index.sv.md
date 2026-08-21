@@ -1,78 +1,101 @@
-﻿---
-title: Uppdatering
-type: docs
-url: /sv/comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
-keywords: REST API, spreadsheets, excel, update commen
-description: "Cells.Cloud API för Excel drift: uppdatera kommentar"
-weight: 30
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Uppdatering
 ---
-Denna REST API indikerar cellkommentaren för att uppdatera kalkylbladet.
+title: "Uppdatera en kommentar i ett kalkylblads cell"
+type: docs
+url: /comments/update/
+aliases: [/update-a-comment-in-excel-workbook/]
+keywords: "Aspose.Cells Cloud, REST API, Excel, kalkylblad, cellkommentar, uppdatera cellkommentar, kommentarobjekt"
+description: "Använd Aspose.Cells Cloud REST API för att uppdatera en cellkommentar i ett kalkylblad i en Excel-arbetsbok, inklusive begärandedetaljer, svarsstatuskoder och SDK-exempel."
+weight: 30
+ArticleTitle: "Uppdatera cellkommentar i kalkylblad – Aspose.Cells Cloud API"
+---
 
-## RSET API
+Detta REST API uppdaterar en kommentar i en kalkylblads cell. Använd denna slutpunkt för att **uppdatera en cellkommentar** i en Excel-fil.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
- 
+**Förutsättningar:**
+- Ett giltigt OAuth/JWT-åtkomsttoken måste inkluderas i `Authorization`-headern.
+- Arbetsboken måste lagras på en stödd molnlagringsplats (ange `folder` och valfritt `storageName`).
+
+## PostWorksheetComment API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamnet.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| cellnamn| sträng| väg| Cellnamnet|
-| kommentar|| kropp| Kommentarobjekt|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begärandeparametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameter namn | Typ    | Plats  | Beskrivning                                                           |
+| -------------- | ------ | ------ | --------------------------------------------------------------------- |
+| name           | string | path   | Namnet på Excel-dokumentet.                                           |
+| sheetName      | string | path   | Namnet på kalkylbladet som innehåller cellen.                        |
+| cellName       | string | path   | Adressen till cellen (t.ex. **A1**).                                 |
+| comment        | object | body   | Ett **Comment**-objekt som definierar kommentaren som ska läggas till eller uppdateras. |
+| folder         | string | query  | Mappen där dokumentet lagras.                                         |
+| storageName    | string | query  | Namnet på lagringstjänsten.                                           |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör ett anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/a1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--d "{ \"CellName\": \"a1\", \"Author\": \"test\", \"HtmlNote\": \"string\", \"Note\": \"this is a comment\", \"AutoSize\": true, \"IsVisible\": true, \"Width\": 10, \"Height\": 10}"
-
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "CellName": "a1",
+        "Author": "test",
+        "HtmlNote": "string",
+        "Note": "detta är en kommentar",
+        "AutoSize": true,
+        "IsVisible": true,
+        "Width": 10,
+        "Height": 10
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+Möjliga svarsstatuskoder:
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Kod | Beskrivning                                    |
+|-----|------------------------------------------------|
+| 200 | Kommentaren uppdaterades framgångsrikt.       |
+| 400 | Felaktig begäran – saknade eller ogiltiga parametrar. |
+| 401 | Ej auktoriserad – autentisering misslyckades.  |
+| 404 | Ej hittad – arbetsboken, kalkylbladet eller kommentaren finns inte. |
+| 500 | Internt serverfel.                             |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+**Anteckningar / Tips:**
+- Maximal kommentarlängd är 1024 tecken.
+- Stödda tecken är UTF‑8; undvik kontrolltecken.
+
+## Moln SDK-familj
+
+Att använda en SDK är det snabbaste sättet att utveckla med Aspose.Cells Cloud. En SDK hanterar detaljer på lågnivå så att du kan fokusera på ditt projekt. Kolla in <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub-förvaret</a> för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -125,3 +148,8 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Relaterade operationer:
+- [Hämta kalkylbladskommentar](/comments/get/)
+- [Lägg till kalkylbladskommentar](/comments/add/)
+- [Ta bort kalkylbladskommentar](/comments/delete/)

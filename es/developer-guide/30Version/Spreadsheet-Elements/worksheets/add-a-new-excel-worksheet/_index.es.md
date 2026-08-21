@@ -1,75 +1,82 @@
-﻿---
-title: Agregar una hoja de trabajo Excel
-second_title: Documen
-linktitle: Anuncio
-type: docs
+---
+title: "Agregar una hoja de cálculo de Excel"
+ArticleTitle: "Agregar una hoja de cálculo de Excel - Guía de la API en la nube de Aspose.Cells"
+second_title: "Documento"
+linktype: "docs"
 url: /es/worksheets/add/
 aliases: [/add-a-new-excel-worksheet/]
-keywords: Add an Excel worksheet
-description: Aspose.Cells Cloud REST API admite la adición de una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+keywords: "agregar hoja de cálculo de Excel, Aspose.Cells Cloud, API REST, PUT worksheet, libro de Excel, solicitud de API"
+description: "Guía paso a paso para agregar una nueva hoja de cálculo a un libro de Excel mediante la API REST de Aspose.Cells Cloud, incluyendo detalles de la solicitud, un ejemplo con cURL y fragmentos de código de SDK para múltiples lenguajes."
 weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Agregar una hoja de cálculo Excel
 ---
-Este REST API indica `add new worksheet`.
 
-## RSET API
+Esta API REST agrega una nueva hoja de cálculo a un libro existente.
+
+**Requisitos previos**: Para llamar a este punto final, debe tener un token de autenticación válido de Aspose Cloud, el libro de trabajo objetivo debe haberse cargado en el almacenamiento de Aspose Cloud y debe conocer el nombre del almacenamiento (si utiliza un almacenamiento personalizado).
+
+## API REST
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
 ```
 
-Los parámetros de la solicitud son:
+### **Parámetros de solicitud**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del documento.|
-| nombreHoja| cadena| camino| El nuevo nombre de la hoja.|
-| posición| entero| consulta| La nueva posición de la hoja.|
-| tipo de hoja| cadena| consulta| El nuevo tipo de hoja.|
-| carpeta| cadena| consulta| Carpeta de documentos.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo    | Ubicación | Descripción                                           |
+|----------------------|---------|-----------|-------------------------------------------------------|
+| name                 | string  | path      | Nombre del archivo del libro de trabajo.            |
+| sheetName            | string  | path      | Nombre de la nueva hoja de cálculo que se va a crear. |
+| position             | integer | query     | Posición de índice base cero donde se inserta la hoja. |
+| sheettype            | string  | query     | Tipo de la nueva hoja (por ejemplo, **Chart**, **Dialog**). |
+| folder               | string  | query     | Carpeta que contiene el libro de trabajo.            |
+| storageName          | string  | query     | Nombre del almacenamiento de Aspose Cloud.           |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) define una interfaz de programación públicamente accesible y le permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube mediante cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Códigos de estado de respuesta posibles**
+
+| Código de estado | Descripción                                          |
+|------------------|------------------------------------------------------|
+| 200              | Hoja de cálculo agregada correctamente.             |
+| 400              | Solicitud incorrecta: parámetros inválidos.         |
+| 401              | No autorizado: token de autenticación faltante o inválido. |
+| 404              | No encontrado: el libro de trabajo o la carpeta no existen. |
+| 500              | Error interno del servidor: condición inesperada.   |
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de desarrollar. Un SDK abstracta los detalles de bajo nivel, lo que le permite centrarse en su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

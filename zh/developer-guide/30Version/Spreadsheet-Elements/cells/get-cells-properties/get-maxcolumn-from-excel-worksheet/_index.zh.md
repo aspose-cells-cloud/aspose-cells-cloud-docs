@@ -1,46 +1,47 @@
-﻿---
-title: 从 Excel 工作表中获取 MaxColumn
+---
+title: "从 Excel 工作表获取 MaxColumn"
 type: docs
 url: /zh/get-maxcolumn-from-excel-worksheet/
 weight: 60
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表获取 MaxColumn
+keywords: "Aspose Cells API, maxcolumn, Excel 工作表, REST, SDK"
+description: "使用 Aspose.Cells Cloud API 获取工作表的最大列索引。包含带身份验证的 cURL 请求、响应模式、参数、错误码及 SDK 示例（C#、Java、Python 等）。"
 ---
-此 REST API 表示当 `cellOrMethodName` 参数为 `maxcolumn` 时，在 Excel 文件中获取 `maxcolumn`。
+
+此 REST API 在 `cellOrMethodName` 参数设置为 `maxcolumn` 时，返回 Excel 工作表中的最大列索引。
 
 - **cURL 示例**
 
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxcolumn"  -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxcolumn" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MaxColumn": 15
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK 系列**
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+- **使用 Aspose.Cells Cloud SDK**
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+使用 SDK 是开发速度最快的方式。SDK 处理底层细节，让您专注于项目逻辑。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
 
-
+以下代码示例展示了如何使用 various SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -87,6 +88,8 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
+<!-- Swift 示例（目前未提供） -->
 
 {{< /tab >}}
 

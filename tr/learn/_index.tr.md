@@ -1,43 +1,44 @@
-﻿---
-title: Aspose.Cells Clou'yu öğrenin
-type: docs
-url: /tr/learn
-aliases: [/learn-aspose-cells-cloud]
-linktitle: Öğrenmek
-description: Aspose.Cells Bulut'u öğrenmeye hoş geldiniz
-weight: 15
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Öğrenmeye Hoş Geldiniz Aspose.Cells Bulut
 ---
-# Öğrenmeye Hoş Geldiniz Aspose.Cells Bulut
+title: "Aspose.Cells Cloud’u Öğrenin"
+type: docs
+url: /learn
+aliases: [/learn-aspose-cells-cloud]
+linktitle: "Öğrenin"
+description: "Aspose.Cells Cloud’u öğrenmeye hoş geldiniz."
+weight: 15
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Aspose.Cells Cloud’u Öğrenmeye Hoş Geldiniz
+---
 
-Bu site, Aspose.Cells Bulut API'lerini kullanarak uygulama geliştirmek isteyen geliştiricilere yardımcı olmaya adanmıştır.
+# Aspose.Cells Cloud’u Öğrenmeye Hoş Geldiniz
 
-## Aspose.Cells Bulut API'leri nedir?
+Bu site, Aspose.Cells Cloud API’lerinin geliştirme çerçevesini kullanarak uygulamalar geliştirmek isteyen geliştiricilere yardımcı olmak amacıyla hazırlanmıştır.
 
-Bulutta programatik olarak elektronik tablolar oluşturmak, düzenlemek, dönüştürmek ve analiz etmek için REST tabanlı bir hizmet. XLS, XLSX, CSV dosyalarını via bağımlılıklar olmadan ölçeklenebilir API'lerle işleyin.
+## Aspose.Cells Cloud API’leri Nedir?
 
-## Aspose.Cells Bulut API'lerini kimler kullanmalı?
+Bulut ortamında elektronik tabloları programlı olarak oluşturmak, düzenlemek, dönüştürmek ve analiz etmek için REST tabanlı bir hizmettir. Microsoft Excel bağımlılığı olmadan XLS, XLSX, CSV dosyalarını ölçeklenebilir API’ler ile işleyin.
 
-Başlangıç seviyesinden kurumsal ekiplere kadar elektronik tablo otomasyon çözümleri geliştiren geliştiriciler. XLSX/CSV dosyalarını oluşturun, düzenleyin, dönüştürün ve analiz edin. via REST API'lerini kurulum olmadan kullanın.
+## Aspose.Cells Cloud API’leri Kimler Kullanmalı?
 
-## **Aspose.Cells Cloud API'i İki Adımda Nasıl Kullanabilirsiniz?**
+Elektronik tablo otomasyonu çözümleri geliştiren geliştiriciler – başlangıç seviyesindeki bireylerden kurumsal ekiplere kadar. Excel kurulumları olmadan REST API’ler aracılığıyla XLSX/CSV dosyaları oluşturun, düzenleyin, dönüştürün ve analiz edin.
 
-### *5 Dakikada Sıfırdan Otomasyona*
+## **Aspose.Cells Cloud API’sini İki Adımda Nasıl Kullanırsınız?**
 
-###  Adım 1:**API Kimlik Bilgilerini Alın**
+### *Beş Dakikada Sıfırdan Otomasyona*  
 
-1. [Ücretsiz kaydolun](https://dashboard.aspose.cloud/signup)  
-2. [Uygulama oluştur](https://dashboard.aspose.cloud/applications) → `Client ID` ve `Client Secret`'i kopyalayın  
+### Adım 1: **API Kimlik Bilgilerini Alın**  
 
-###  Adım 2:**İlk API Çağrınızı Gerçekleştirin**
+1. [Ücretsiz olarak kaydolun](https://dashboard.aspose.cloud/signup)  
+2. [Uygulama oluşturun](https://dashboard.aspose.cloud/applications) → `Client ID` ve `Client Secret` değerlerini kopyalayın  
+
+### Adım 2: **İlk API Çağrınızı Gerçekleştirin**  
 
 ```bash
-# Get access token via cURL
+# cURL ile erişim belirteci alın
 curl -X POST "https://api.aspose.cloud/connect/token" \
 -H "Content-Type: application/x-www-form-urlencoded" \
--d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
+-d "grant_type=client_credentials&client_id=YENI_CLIENT_ID&client_secret=YENI_CLIENT_SECRET"
 
-# Convert XLSX to PDF via cURL
+# cURL ile XLSX’i PDF’e dönüştürün
 curl -v "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet?format=PDF" \
 -X PUT \
 -H "Authorization: Bearer $ACCESS_TOKEN" \
@@ -45,33 +46,32 @@ curl -v "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet?format=PDF" \
 -F "File=@input.xlsx"
 ```
 
-### **SDK kullanarak API Elektronik Tablosunu Çalıştırın**
+### **SDK ile Elektronik Tablo API’sini Çalıştırın**  
 
 ```python
-# Python SDK example
+# Python SDK örneği
 from asposecellscloud.apis.cells_api import CellsApi
 from asposecellscloud.models import *
 from asposecellscloud.requests import *
 
-CellsCloudClientId ='....'  # get from https://dashboard.aspose.cloud/#/applications
-CellsCloudClientSecret='....'  # get from https://dashboard.aspose.cloud/#/applications
-instance  = CellsApi(CellsCloudClientId,CellsCloudClientSecret)
-response = instance.convert_spreadsheet(ConvertSpreadsheetRequest( 'EmployeeSalesSummary.xlsx', 'pdf') , local_outpath = "EmployeeSalesSummary.pdf")
-
+CellsCloudClientId = '....'  # https://dashboard.aspose.cloud/#/applications adresinden alın
+CellsCloudClientSecret = '....'  # https://dashboard.aspose.cloud/#/applications adresinden alın
+instance = CellsApi(CellsCloudClientId, CellsCloudClientSecret)
+response = instance.convert_spreadsheet(ConvertSpreadsheetRequest('EmployeeSalesSummary.xlsx', 'pdf'), local_outpath="EmployeeSalesSummary.pdf")
 ```
 
-## Aspose.Cells Cloud API'lerini neden kullanmalısınız?
+## Neden Aspose.Cells Cloud API’lerini Kullanmalısınız?
 
-### Bulut Hizmetleri için Kurumsal Düzeyde Excel Motoru
+### Bulut Hizmetleri İçin Kurumsal Seviye Excel Motoru
 
-Aspose.Cells Cloud, bulut hizmetleri için güçlü bir Excel motorudur. Elektronik tablolar oluşturmanıza, düzenlemenize, dönüştürmenize ve analiz etmenize yardımcı olacak çok çeşitli özellikler sunar.
+Aspose.Cells Cloud, bulut hizmetleri için güçlü bir Excel motorudur. Elektronik tablolar oluşturmanıza, düzenlemenize, dönüştürmenize ve analiz etmenize yardımcı olacak geniş bir özellik yelpazesi sunar.
 
-### Çok Dilli SDK Desteği
+### Çoklu Dil SDK Desteği
 
-- **Tam kapsam: .NET/Java/Python/Node.js/PHP/Perl**
-- **Ortaya çıkan diller: Go/Ruby**
+- **Tam kapsama: .NET/Java/Python/Node.js/PHP/Perl**
+- **Yeni gelen diller: Go/Ruby**
 
-### Düşük Kod: Minimum Kodlamayla Hızlı Geliştirmeyi Güçlendirme
+### Az Kod: Minimal Kodlama ile Hızlı Geliştirme Güçlendirmesi
 
 ```C#
     CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("CellsCloudClientId"), Environment.GetEnvironmentVariable("CellsCloudClientSecret"));
@@ -80,7 +80,9 @@ Aspose.Cells Cloud, bulut hizmetleri için güçlü bir Excel motorudur. Elektro
 
 ### Olağanüstü teknik destek
 
-- [Aspose.Cells Bulut Geliştirme Merkezi Belgesi](https://docs.aspose.cloud/cells/)
+- [Aspose.Cells Cloud Geliştirme Merkezi Belgesi](https://docs.aspose.cloud/cells/)
 - [GitHub Popüler Depoları](https://github.com/aspose-cells-cloud)
-- [Aspose.Cells Coud API Referans](https://reference.aspose.cloud/cells)
-- [Aspose.Cells Coud Ücretsiz Destek Forumu](https://forum.aspose.cloud/c/cells/7)
+- [Aspose.Cells Cloud API Referansı](https://reference.aspose.cloud/cells)
+- [Aspose.Cells Cloud Ücretsiz Destek Forumu](https://forum.aspose.cloud/c/cells/7)
+
+---

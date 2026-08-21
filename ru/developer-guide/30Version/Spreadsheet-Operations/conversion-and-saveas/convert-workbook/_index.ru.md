@@ -1,46 +1,46 @@
-﻿---
-title: Конвертировать файл Excel в другой формат
-second_title: Documen
-linktitle: Преобразовать электронную таблицу
-type: docs
-url: /ru/convert-a-spread-file-to-different-formats/
-keywords: Convert excel files to kinds of format files
-description: Aspose.Cells Cloud REST API поддерживает преобразование файлов Excel в различные форматы. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 10
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Конвертация Excel
 ---
-Этот REST API указывает `convert` на файл Excel в другом формате. Он поддерживает различные форматы. Он также может задать параметры страницы и сохранить параметры перед конвертацией.
+title: "Преобразование файла Excel в различные форматы"
+second_title: "Документ"
+linktitle: "Преобразование электронной таблицы"
+type: docs
+url: /convert-a-spread-file-to-different-formats/
+keywords: "преобразование Excel, преобразование электронных таблиц, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, преобразование форматов файлов"
+description: "Используйте Aspose.Cells Cloud REST API для преобразования рабочих книг Excel в различные форматы, такие как PDF, CSV, JSON и Markdown. API поддерживает множество SDK для языков программирования, включая C#, Java, Python и другие."
+weight: 10
+ArticleTitle: "Преобразование файла Excel в различные форматы – Руководство по API Aspose.Cells Cloud"
+---
 
-**Параметр тела запроса**
+Этот REST API преобразует файл Excel в другой формат. Он поддерживает широкий спектр выходных форматов и позволяет настроить параметры страницы и сохранения перед преобразованием.
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|[ConvertWorkbookOptions](/cells/ru/convert-workbook-options/)| объект| Параметры преобразования рабочей книги.|
+## API PostConvertWorkBook
 
-**Ответ**
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert
+```
 
-[FileInfo](/cells/ru/file-info/)
+Перед использованием этого API убедитесь, что у вас есть действительный JWT-токен и установлено соответствующее SDK Aspose.Cells Cloud для вашего языка программирования.
 
-## ОТДЫХ API
+### **Безопасность и аутентификация**
 
-|**API**|**Тип**|**Описание**|**Swagger Link**|
-|:- |:- |:- |:- |
-|/клетки/конвертировать|ПОЧТА|Преобразует рабочую книгу из содержимого запроса в определенный формат|[PostConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook)|
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+## Как использовать API PostConvertWorkBook с SDK
 
- Вы можете использовать**cURL** Инструмент командной строки для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+### Спецификация API PostConvertWorkBook
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook) определяет общедоступное программное интерфейсное взаимодействие и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки **cURL** для простого доступа к веб-сервисам Aspose.Cells. В приведённом ниже примере показано, как вызвать облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: curl" \
      -d {}
 ```
 
@@ -48,21 +48,23 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert"
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
   "Filename": "filename",
-  "FileSize": xxxx,
+  "FileSize": 12345,
   "FileContent": "File Content: base64_encoded_string"
 }
-
 ```
 
-## Семейство облачных SDK
+{{< /tab >}}
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+{{< /tabs >}}
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK — самый быстрый способ разработки. SDK абстрагирует низкоуровневые детали, позволяя сосредоточиться на проекте. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
+
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -115,3 +117,4 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert"
 {{< /tab >}}
 
 {{< /tabs >}}
+---

@@ -1,102 +1,119 @@
-﻿---
-title: جي
-type: docs
-url: /ar/comments/get/
-aliases: [/get-comment-from-a-worksheet/]
-keywords: REST API, spreadsheets, excel, get commen
-description: "Cells.Cloud API لتشغيل Excel: احصل على التعليق"
-weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على
 ---
-يشير هذا REST API إلى الحصول على تعليق ورقة العمل حسب اسم الخلية.
+title: "الحصول على تعليق ورقة العمل – وثائق واجهة برمجة تطبيقات Aspose.Cells Cloud"
+type: docs
+url: /comments/get/
+aliases: [/get-comment-from-a-worksheet/]
+keywords: "Aspose.Cells، تعليق ورقة العمل، واجهة برمجة التطبيقات، GET، Excel"
+description: "تعرّف على كيفية استرجاع تعليق ورقة عمل باستخدام اسم الخلية عبر واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0). يتضمن عنوان URL للطلب، المعلمات، مثال باستخدام cURL، تفاصيل الاستجابة، وأكواد مقتطفة من SDK."
+weight: 10
+ArticleTitle: "الحصول على تعليق ورقة العمل – وثائق واجهة برمجة تطبيقات Aspose.Cells Cloud"
+---
 
-## RSET API
+تسترجع واجهة برمجة تطبيقات **Aspose.Cells Cloud** تعليق ورقة العمل باستخدام اسم الخلية.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
- 
+**المتطلبات المسبقة:** لاستدعاء هذه العملية، يجب تضمين رمز وصول JWT صالح في رأس `Authorization` (بالصيغة `Bearer <jwt token>`). ويمكنك الحصول على الرموز من خلال عملية المصادقة الموضحة في [دليل المصادقة](/cells/authentication/).
+
+## واجهة برمجة التطبيقات GetWorksheetComment
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| اسم الخلية| خيط| طريق| اسم الخلية|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetComment) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معلمات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعلمة | النوع   | الموقع (مسار URL / سلسلة الاستعلام) | الوصف                                                             |
+| ------------ | ------ | ---------------------------------- | ----------------------------------------------------------------- |
+| name         | string | مسار URL                           | اسم ملف Excel.                                                    |
+| sheetName    | string | مسار URL                           | اسم ورقة العمل التي يحتوي التعليق عليها.                         |
+| cellName     | string | مسار URL                           | عنوان الخلية (مثل **A1**) التي يتم استرجاع تعليقها.              |
+| folder       | string | سلسلة الاستعلام                    | مسار المجلد الذي يخزن فيه المستند.                                |
+| storageName  | string | سلسلة الاستعلام                    | اسم خدمة التخزين.                                                 |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+<a href="https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetComment" rel="noopener noreferrer">مواصفات OpenAPI</a> تُعرّف واجهة برمجة تطبيقات متاحة للعامة وتسمح لك بإجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات ويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء استدعاء إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/A1" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-    "Comment":{
-
-    "CellName":"A1",
-
-    "Author":"roy.wang",
-
+  "Comment": {
+    "CellName": "A1",
+    "Author": "roy.wang",
     "HtmlNote": "",
-
     "Note": "Aspose.Cells Cloud.",
-
     "AutoSize": "True",
-
     "IsVisible": "True",
-
     "Width": 30,
-
     "Height": 10,
-
     "TextHorizontalAlignment": "Bottom",
-
     "TextOrientationType": "TopToBottom",
-
     "TextVerticalAlignment": "Bottom"
-
-    },
- 
-   "Code": 200,
-
-   "Status": "OK"
-
+  },
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**الاستجابة:** تُعيد واجهة برمجة التطبيقات كائن JSON يحتوي على كائن `Comment` به الحقول التالية:
+
+| الحقل                      | النوع    | الوصف                                               |
+| -------------------------- | ------- | ---------------------------------------------------- |
+| `CellName`                 | string  | عنوان الخلية (مثل **A1**).                          |
+| `Author`                   | string  | اسم مؤلف التعليق.                                   |
+| `HtmlNote`                 | string  | محتوى التعليق بصيغة HTML (إن وُجد).                 |
+| `Note`                     | string  | النسخة النصية العادية من التعليق.                   |
+| `AutoSize`                 | boolean | يُشير إلى ما إذا كانت صندوق التعليق تحجم تلقائيًا.  |
+| `IsVisible`                | boolean | يُحدد ما إذا كان التعليق مرئيًا.                    |
+| `Width`                    | integer | عرض صندوق التعليق (بالأحرف).                       |
+| `Height`                   | integer | ارتفاع صندوق التعليق (بالأحرف).                     |
+| `TextHorizontalAlignment` | string  | المحاذاة الأفقية للنص (مثل **Bottom**).             |
+| `TextOrientationType`      | string  | اتجاه النص (مثل **TopToBottom**).                   |
+| `TextVerticalAlignment`    | string  | المحاذاة العمودية للنص (مثل **Bottom**).            |
+
+## الأخطاء الشائعة
+
+- **401 Unauthorized (غير مُصرّح)** – تأكّد من أن رمز JWT صالح وغير منتهٍ ومُدرج بشكل صحيح في رأس `Authorization`.
+- **404 Not Found (غير موجود)** – تأكّد من أن اسم الملف واسم ورقة العمل وعنوان الخلية صحيحان، وأن الملف موجود في المجلد أو التخزين المحدّد.
+- **500 Internal Server Error (خطأ داخلي في الخادم)** – تحقق من وجود بيانات مُشكّلة في حمولة الطلب، وتأكد من أن الخدمة تعمل بشكل سليم.
+
+**رموز حالات HTTP**
+
+| الرمز | المعنى                      | الوصف                                             |
+|------|-----------------------------|---------------------------------------------------|
+| 200  | OK (تم بنجاح)              | تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | Bad Request (طلب غير صالح) | معلمات ناقصة أو غير صالحة (مثل نوع ملف غير مدعوم).   |
+| 401  | Unauthorized (غير مُصرّح)  | رمز JWT غير صالح أو مفقود.                         |
+| 413  | Payload Too Large (حمولة كبيرة جدًا) | ملف مرسل يتجاوز الحد الأقصى للحجم.             |
+| 500  | Internal Server Error (خطأ داخلي في الخادم) | خطأ غير متوقع في الخادم.                     |
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع التطوير، حيث تتعامل SDK مع التفاصيل منخفضة المستوى وتسمح لك بالتركيز على مهام مشروعك. يُرجى زيارة <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للاطلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الرمز التالية كيفية إجراء استدعاءات إلى خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

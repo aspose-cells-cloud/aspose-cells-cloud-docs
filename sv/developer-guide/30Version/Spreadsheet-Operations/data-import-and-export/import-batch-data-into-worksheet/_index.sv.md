@@ -1,62 +1,65 @@
-﻿---
-title: Importera batchdata till Excel-arbetsbladet
-second_title: Documen
-linktitle: Importera batchdata
-type: docs
-url: /sv/import-batch-data-into-excel/
-aliases: [/import-batch-data-into-worksheet/,/import-data/batch-data/,/import/batch-data/]
-keywords: Import batch data into Excel files
-description: Aspose.Cells Cloud REST API stöder import av batchdata till Excel-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 19
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Importera batchdata till Excel-arbetsblad
 ---
-Detta REST API `import batch data` till Excel-arbetsblad.
+title: "Importera batchdata till Excel-arbetsblad"
+second_title: "Dokument"
+linktitle: "Importera batchdata"
+type: docs
+url: /import-batch-data-into-excel/
+aliases:
+  - /import-batch-data-into-worksheet/
+  - /import-data/batch-data/
+  - /import/batch-data/
+keywords: "Aspose.Cells, moln-API, importera batchdata, Excel, CSV, JSON, XML, arrayer"
+description: "Lär dig hur du importerar batchdata (CSV, JSON, XML, arrayer) till ett Excel-arbetsblad med Aspose.Cells Cloud REST API. Inkluderar autentisering, exempel på begäran/svar, SDK-utdrag och felhantering."
+weight: 19
+ArticleTitle: "Importera batchdata till Excel-arbetsblad – Aspose.Cells Cloud-dokumentation"
+---
 
-Begäran är en HTTP-begäran med flerdelat innehåll (se[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)eller[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)Den första delen av flerdelat innehåll innehåller ImportBatchDataOption-data och den andra innehåller en datafil.
+Detta REST-API **importerar batchdata** till ett Excel-arbetsblad. Det tar emot en multipart-begäran där den första delen innehåller objektet **ImportBatchDataOption** och den andra delen innehåller den faktiska datafilen (CSV, JSON, XML, etc.).
 
-## RSET API
+Operationen använder en HTTP-begäran med multipart-innehåll (se [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) eller [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).
 
-```bash
+## PostImportData API
 
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-De viktiga parametrarna beskrivs i följande tabell:
+### **Säkerhet och autentisering**
 
-**ImporteraBatchDataAlternativ**
+Aspose.Cells Cloud-API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-| BatchData|Lista<CellValue> | batchdata|
-|Destinationsarbetsblad| sträng| namn på destinationsarbetsblad.|
-| ÄrInfoga| sträng| sant/falskt.|
-| Importera datatyp| sträng|IntArray/DubbelArray/StringArray/TvåDimensionIntArray/TvåDimensionDubbelArray/TvåDimensionStringArray/BatchData/CSVData.|
-| Källa| Filkälla| Anger datafilens position när BatchData-parametern är null.|
+### ImportBatchDataOption
 
-**CellVärde**
+| Parameter namn           | Typ               | Beskrivning                                                                                                                                                                                  |
+| ------------------------ | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **BatchData**            | `List<CellValue>` | Samling av cellvärden som ska skrivas direkt.                                                                                                                                                |
+| **DestinationWorksheet** | `string`          | Namn på arbetsbladet dit data ska importeras.                                                                                                                                                |
+| **IsInsert**             | `bool`            | När `true` infogas data och befintliga celler skjuts åt sidan; när `false` skriver data över befintliga celler.                                                                              |
+| **ImportDataType**       | `string`          | Format på den data som ska importeras. Tillåtna värden: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
+| **Source**               | `FileSource`      | Anger platsen för datafilen när **BatchData** är `null`.                                                                                                                                     |
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-| radindex| int||
-| kolumnindex| int||
-| typ| sträng| datatyp|
-| värde| sträng||
-| stil| Stil (objekt)||
+### CellValue
 
-**Filkälla**
+| Parameter namn  | Typ      | Beskrivning                                              |
+| --------------- | -------- | -------------------------------------------------------- |
+| **rowIndex**    | `int`    | Nollbaserat radindex för målcellen.                      |
+| **columnIndex** | `int`    | Nollbaserat kolumnindex för målcellen.                   |
+| **type**        | `string` | Datatyp för värdet (t.ex. `int`, `double`, `string`).    |
+| **value**       | `string` | Det faktiska värdet som ska skrivas i cellen.            |
+| **style**       | `Style`  | Valfri stilinformation för cellen.                       |
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-| Filkällatyp| sträng| InMemoryFiles/CloudFileSystem/RequestFiles|
-| Filsökväg| sträng| filposition|
+### FileSource
 
-**Exempel**
+| Parameter namn     | Typ      | Beskrivning                                                          |
+| ------------------ | -------- | -------------------------------------------------------------------- |
+| **FileSourceType** | `string` | Källa för filen: `InMemoryFiles`, `CloudFileSystem` eller `RequestFiles`. |
+| **FilePath**       | `string` | Sökväg eller identifierare för filen inom den valda källan.         |
+
+### Exempel (XML)
 
 ```xml
-<ImportIntArrayOption>
-    <DestinationWorksheet>Sheet1</DestinationWorksheet>
+<ImportBatchDataOption>
+    <DestinationWorksheet>Ark1</DestinationWorksheet>
     <IsInsert>false</IsInsert>
     <ImportDataType>IntArray</ImportDataType>
     <FirstRow>1</FirstRow>
@@ -66,15 +69,39 @@ De viktiga parametrarna beskrivs i följande tabell:
         <FileSourceType>CloudFileSystem</FileSourceType>
         <FilePath>Array_int_xml.txt</FilePath>
     </Source>
-</ImportIntArrayOption>
-
+</ImportBatchDataOption>
 ```
 
-## Cloud SDK-familjen
+### Svar
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                                   |
+|-----|-----------------------------|---------------------------------------------------------------|
+| 200 | OK                          | Filter har tillämpats framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Inte auktoriserad           | Ogiltig eller saknad JWT-token.                               |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen.             |
+| 500 | Internt serverfel           | Oväntat serverfel.                                            |
+
+## Hur du använder PostImportData API med SDK:er
+
+### PostImportData API-specifikation
+
+[OpenAPI-specifikationen](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData) definierar ett offentligt tillgängligt programmeringsgränssnitt som gör att du kan utföra REST-interaktioner direkt från en webbläsare.
+
+### Använd Aspose.Cells Cloud SDK:er
+
+Att använda en SDK är det snabbaste sättet att integrera den här funktionen. SDK:er hanterar detaljer på låg nivå så att du kan fokusera på din affärslogik. Se [GitHub-repositoriet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

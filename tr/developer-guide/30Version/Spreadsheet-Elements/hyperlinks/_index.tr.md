@@ -1,22 +1,26 @@
-﻿---
-title: Excel hiper bağlantısıyla çalışıyor
-second_title: Documen
-type: docs
-linktitle: Köprü metni
-url: /tr/hyperlinks/
-aliases: [/working-with-hyperlinks/,/working-with-hyperlink/]
-keywords: REST API, hyperlinks, spreadsheets, exce
-description: "Cells. Excel için API Bulutu: Excel dosyasındaki hiper bağlantılarla çalışma"
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Köprüler
 ---
-&nbsp;&nbsp;&nbsp;&nbsp;Excel'deki köprüler, kullanıcıların belirli bir çalışma sayfasına, dosyaya, klasöre veya web sayfasına ulaşmak için kısayol oluşturmalarına olanak tanır. Belirli bir klasöre veya bağlantıya hızlı bir şekilde ulaşmamıza yardımcı olur.
+title: "Excel Bağlantıları ile Çalışmak"
+ArticleTitle: "Excel Bağlantıları ile Çalışmak – Aspose Cells Cloud Belgeleri"
+second_title: "Belge"
+type: docs
+linktitle: "Bağlantılar"
+url: /tr/hyperlinks/
+aliases: [/tr/working-with-hyperlinks/, /tr/working-with-hyperlink/]
+keywords: "Excel, bağlantılar, Cells.Cloud, API, Aspose.Cells, elektronik tablo, bağlantılar, kılavuz"
+description: "Aspose Cells Cloud API kullanarak Excel bağlantılarını nasıl alabileceğinizi, ekleyebileceğinizi, güncelleyebileceğinizi ve silebileceğinizi keşfedin."
+weight: 100
+---
 
-## Excel dosyasında Hiper Bağlantılarla Çalışma
+Excel'deki bağlantılar, kullanıcıların çalışma sayfalarına, dosyalara, klasörlere veya web sayfalarına hızlı erişim sağlayan kısayollar oluşturmasını sağlar.
 
-- [Excel numaralı çalışma kağıdından köprü açıklaması nasıl alınır.](/cells/tr/hyperlinks/get/)
-- [Excel numaralı çalışma kağıdından tüm hiper bağlantıların açıklamalarını nasıl alabilirim.](/cells/tr/hyperlinks/get-all/)
-- [Excel Çalışma Sayfasına Köprüler Nasıl Eklenir?](/cells/tr/hyperlinks/add/)
-- [Excel Çalışma Sayfasındaki Köprüler Nasıl Güncellenir?](/cells/tr/hyperlinks/update/)
-- [Excel Çalışma Sayfasındaki tüm köprüler nasıl silinir?](/cells/tr//hyperlinks/clear/)
-- [Excel numaralı çalışma sayfasından bir köprü metni nasıl silinir](/cells/tr//hyperlinks/delete/)
+**Önkoşullar:** Geçerli bir API jetonu ([Kimlik Doğrulama Kılavuzu](/tr/authentication/)) ve Cells.Cloud SDK’nın kurulmuş olması gerekir.
+
+## Excel Dosyası Üzerinde Bağlantılar ile Çalışma
+
+- [Excel Çalışma Sayfasından bir bağlantının açıklamasını nasıl alırım?](/tr/cells/hyperlinks/get/) – Adresi ve görüntülenen metni dahil, tek bir bağlantının ayrıntılarını alın.  
+- [Excel Çalışma Sayfasından tüm bağlantıların açıklamasını nasıl alırım?](/tr/cells/hyperlinks/get-all/) – Bir çalışma sayfasında tanımlı olan tüm bağlantıları ve ilgili özelliklerini listeleyin.  
+- [Excel Çalışma Sayfasına bağlantı nasıl eklenir?](/tr/cells/hyperlinks/add/) – Hedef URL’yi ve hücre aralığını belirterek bir bağlantı oluşturun.  
+- [Excel Çalışma Sayfasındaki bağlantılar nasıl güncellenir?](/tr/cells/hyperlinks/update/) – Mevcut bir bağlantının adresini, görüntülenen metnini veya hedef hücreyi değiştirin.  
+- [Excel Çalışma Sayfasından tüm bağlantılar nasıl silinir?](/tr/cells/hyperlinks/clear/) – Bir çalışma sayfasındaki tüm bağlantıları tek bir işlemde kaldırın.  
+- [Excel Çalışma Sayfasından bir bağlantı nasıl silinir?](/tr/cells/hyperlinks/delete/) – İndeksi veya hücre referansı ile belirlenmiş belirli bir bağlantıyı silin.  
+---

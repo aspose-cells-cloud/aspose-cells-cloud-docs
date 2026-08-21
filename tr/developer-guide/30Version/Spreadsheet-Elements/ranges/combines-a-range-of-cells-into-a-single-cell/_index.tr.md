@@ -1,74 +1,101 @@
-﻿---
-title: Cells Aralığını Tek Bir Hücrede Birleştirir
-second_title: Documen
-linktitle: Birleşmek
-type: docs
-url: /tr/ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
-keywords: Merge a range of cells into a single cell
-description: Aspose.Cells Cloud REST API, bir çalışma sayfasındaki hücre aralığını tek bir hücrede birleştirmeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Cells Aralığını Tek Bir Hücrede Birleştirir
 ---
-Bu REST API, Excel çalışma sayfasındaki hücre aralığını tek bir hücrede birleştirmeyi belirtir.
+title: "Aspose.Cells Cloud API – Hücre Aralığını Birleştir"
+secondtitle: "Belge"
+linktitle: "Birleştir"
+type: docs
+url: /ranges/merge/
+aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+keywords: "Aspose.Cells, hücre birleştir, Excel API, REST, bulut SDK"
+description: "Aspose.Cells Cloud REST API ile bir hücre aralığını tek bir hücrede birleştirin. C#, Java, Python ve diğerleri için istek formatı, parametreler ve SDK örnekleri öğrenin."
+weight: 20
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasındaki bir hücre aralığını tek bir hücrede birleştirir.
+
+**Genel Bakış** – Bir aralığı birleştirmek, seçilen hücreleri tek bir hücrede birleştirir, üst‑sol hücrenin değerini korurken diğerlerini atar. Birden fazla sütunu veya satırı kapsayan bir başlık oluşturmak gerektiğinde veya bir çalışma sayfasının düzenini basitleştirmek istediğinizde bu işlemi kullanın.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
 ```
 
-İstek parametreleri şunlardır:
+### **İstek Parametreleri**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| çalışma kitabı adı|
-| sayfaAdı| sicim| yol| çalışma sayfası adı|
-| menzil|| vücut| çalışma sayfasındaki aralık|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı   | Tür     | Konum  | Açıklama                                             |
+| ---------------- | ------- | ------ | ---------------------------------------------------- |
+| **name**         | string  | path   | Çalışma kitabının adı.                               |
+| **sheetName**    | string  | path   | Çalışma sayfasının adı.                              |
+| **range**        | object  | body   | Birleştirilecek hücreleri belirten aralık nesnesi.  |
+| **folder**       | string  | query  | Çalışma kitabının bulunduğu klasör.                  |
+| **storageName**  | string  | query  | Depo adı.                                            |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMerge) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+#### İstek Gövdesi Şeması
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+**Range** nesnesi aşağıdaki alanları içermelidir (diğerleri isteğe bağlıdır):
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Özellik         | Tür     | Zorunlu | Açıklama                                               |
+| ---------------- | ------- | ------- | ------------------------------------------------------ |
+| **FirstRow**     | integer | Evet    | Aralıktaki ilk satırın sıfır tabanlı indeksi.          |
+| **FirstColumn**  | integer | Evet    | Aralıktaki ilk sütunun sıfır tabanlı indeksi.         |
+| **RowCount**     | integer | Evet    | Aralığa dahil edilecek satır sayısı.                  |
+| **ColumnCount**  | integer | Evet    | Aralığa dahil edilecek sütun sayısı.                  |
+| **Name**         | string  | Hayır   | Aralığın isteğe bağlı adı.                            |
+| **RefersTo**     | string  | Hayır   | Aralığın işaret ettiği bir formül.                     |
+| **Worksheet**    | string  | Hayır   | Çalışma sayfası adı (yol parametresinden farklıysa). |
+| **RowHeight**    | number  | Hayır   | Aralıktaki satırların yüksekliği (piksel).            |
+| **ColumnWidth**  | number  | Hayır   | Aralıktaki sütunların genişliği (piksel).             |
+
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sine nasıl istek yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/merge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "FirstRow": 9,
+        "FirstColumn": 0,
+        "RowCount": 1,
+        "ColumnCount": 7
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+#### Yanıt Ayrıntıları
+
+| HTTP Durum Kodu               | Açıklama                                                | Örnek JSON                                             |
+| ----------------------------- | ------------------------------------------------------- | ------------------------------------------------------ |
+| **200 OK**                    | Aralık başarıyla birleştirildi.                         | `{ "Code": 200, "Status": "OK" }`                      |
+| **400 Bad Request**           | Geçersiz aralık parametreleri (örn., sınırlar dışındaki indeksler). | `{ "Code": 400, "Message": "Invalid range." }`         |
+| **401 Unauthorized**          | Eksik veya geçersiz JWT jetonu.                         | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404 Not Found**             | Çalışma kitabı veya çalışma sayfası bulunamadı.         | `{ "Code": 404, "Message": "Resource not found." }`    |
+| **500 Internal Server Error** | Beklenmeyen sunucu hatası.                              | `{ "Code": 500, "Message": "Internal server error." }` |
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bir SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, düşük seviye ayrıntıları işler; böylece projenizin görevlerine odaklanabilirsiniz. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web servislerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

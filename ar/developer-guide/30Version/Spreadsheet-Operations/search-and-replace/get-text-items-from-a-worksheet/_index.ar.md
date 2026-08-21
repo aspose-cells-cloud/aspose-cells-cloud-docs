@@ -1,53 +1,97 @@
-﻿---
-title: الحصول على عناصر نصية من ورقة عمل Excel
-second_title: Documen
-linktitle: احصل على ورقة العمل
+---
+title: "استرجاع عناصر النص من ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "استرجاع عناصر النص في ورقة العمل"
 type: docs
-url: /ar/worksheets/get-text-items/
+url: /worksheets/get-text-items/
 aliases: [/get-text-items-from-a-worksheet/]
 weight: 20
-keywords: Get text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
-description: يدعم Cloud REST Aspose.Cells الحصول على نص من ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على عناصر نصية من ورقة عمل Excel
+keywords: "Aspose.Cells، واجهة برمجة تطبيقات السحابة، Excel، ورقة عمل، عناصر نصية، REST"
+description: "استرجاع جميع عناصر النص من ورقة عمل محددة في ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمن أمثلة لـ cURL ورموز SDK، وخطوات المصادقة، ومخطط الاستجابة."
+ArticleTitle: "استرجاع عناصر النص من ورقة عمل Excel"
 ---
-يشير هذا REST API إلى ورقة العمل `read` `text items` في ورقة العمل Excel.
 
-## RSET API
+## واجهة برمجة تطبيقات REST
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/textItems
- 
+تقوم هذه واجهة برمجة تطبيقات REST بقراءة عناصر النص الموجودة في ورقة عمل ضمن ملف Excel.
+
+```
+https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{worksheet}/textItems
 ```
 
-معلمات الطلب هي:
+### الأمان والمصادقة
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [مصادقة تعتمد على رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+### معلمات الطلب
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetTextItems) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعلمة | النوع   | الموقع | الإلزام | الوصف                                    |
+| -------------- | ------ | -------- | -------- | ---------------------------------------------- |
+| name           | string | path     | نعم      | اسم ملف المصنف.                            |
+| sheetName      | string | path     | نعم      | اسم ورقة العمل.                         |
+| folder         | string | query    | لا       | المسار إلى المجلد الذي يحتوي على المصنف. |
+| storageName    | string | query    | لا       | اسم مساحة التخزين في Aspose Cloud.              |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **الاستجابة**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | الوصف                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK (تم بنجاح)                          | تم تطبيق التصفية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | Bad Request (طلب غير صالح)                 | معلمات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401  | Unauthorized (غير مصرّح)                | رمز JWT غير صالح أو مفقود. |
+| 413  | Payload Too Large (حمولة كبيرة جدًا)           | حجم الملف المرفّق يتجاوز الحد المسموح به. |
+| 500  | Internal Server Error (خطأ داخلي في الخادم)       | خطأ غير متوقع في الخادم. |
+## كيفية استخدام واجهة برمجة التطبيقات GetWorksheetTextItems باستخدام SDKs
+
+### مواصفات واجهة برمجة التطبيقات GetWorksheetTextItems
+
+تعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetTextItems){:target="_blank" rel="noopener noreferrer"} واجهة برمجة تطبيقات عامة قابلة للاستخدام، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب الخاصة بـ Aspose.Cells. يُظهر المثال التالي كيفية إجراء استدعاءات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/sheet1/textItems" -H "accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/sheet1/textItems" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
+```json
 {
   "Status": "string",
   "TextItems": {
@@ -70,18 +114,17 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/sheet1/tex
     ]
   }
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+تبسّط مكتبات SDK (Software Development Kits) عملية الدمج من خلال التعامل مع التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud){:target="_blank" rel="noopener noreferrer"} للاطّلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الرموز التالية كيفية إجراء استدعاءات لخدمات الويب الخاصة بـ Aspose.Cells باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -134,3 +177,5 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/sheet1/tex
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---

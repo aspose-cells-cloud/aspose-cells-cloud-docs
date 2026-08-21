@@ -1,76 +1,118 @@
-﻿---
-title: Пакетное преобразование файла Excel
-second_title: Documen
-type: docs
-url: /ru/batch/convert
-keywords: Batch conversion of multiple excel files
-description: Aspose.Cells Cloud API поддерживает пакетное преобразование нескольких файлов Excel. SDK поддерживает различные языки программирования, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 100
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Пакетное преобразование
 ---
-Этот REST API указывает на `batch conversion` подходящих файлов
+title: "Пакетное преобразование файлов Excel"
+second_title: "Документ"
+type: docs
+url: /batch/convert
+keywords: "пакетное преобразование, Excel, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, электронная таблица"
+description: "Узнайте, как использовать API Aspose.Cells Cloud для пакетного преобразования нескольких файлов Excel в такие форматы, как PDF, CSV, JSON или Markdown. В руководстве представлены сведения об endpoint'ах REST API, параметрах запроса, примере cURL и фрагментах кода SDK для различных языков программирования."
+weight: 100
+---
 
-## РСЕT API
+Этот REST API позволяет выполнять **пакетное преобразование** подходящих файлов.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/convert
- 
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| batchConvertRequest|| тело||
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе токена JWT</a>.
 
-**Свойства BatchConvertRequest**
+### Параметры запроса
 
-Имя | Тип | Описание | Примечания
------------- | ------------- | ------------- | -------------
-SourceFolder | string | | [необязательно]MatchCondition | MatchConditionRequest | | [необязательно]Format | string | | [необязательно]OutFolder | string | | [необязательно]SaveOptions | SaveOptions | | [необязательно]**Свойства MatchConditionRequest**
+| Имя параметра       | Тип    | Расположение | Описание                                           |
+|----------------------|--------|--------------|----------------------------------------------------|
+| **batchConvertRequest** | object | body         | Тело запроса, содержащее настройки преобразования. |
 
-Имя | Тип | Описание | Примечания
------------- | ------------- | ------------- | -------------
- RegexPattern | string | | [необязательно]FullMatchConditions | string[]| | [необязательно]The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/PostBatchConvert) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+#### Свойства BatchConvertRequest
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя               | Тип                 | Описание                                           | Примечания |
+|-------------------|---------------------|----------------------------------------------------|------------|
+| **SourceFolder**  | string              | Путь к папке, содержащей исходные файлы Excel.   | [опционально] |
+| **MatchCondition** | MatchConditionRequest | Условия, используемые для выбора файлов для преобразования. | [опционально] |
+| **Format**        | string              | Целевой формат преобразования (например, `pdf`, `csv`). | [опционально] |
+| **OutFolder**     | string              | Папка назначения, куда будут сохранены преобразованные файлы. | [опционально] |
+| **SaveOptions**   | SaveOptions         | Дополнительные параметры, управляющие способом сохранения файлов. | [опционально] |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+#### Свойства MatchConditionRequest
+
+| Имя                  | Тип       | Описание                                          | Примечания |
+|-----------------------|-----------|---------------------------------------------------|------------|
+| **RegexPattern**      | string    | Регулярное выражение, используемое для фильтрации имен файлов. | [опционально] |
+| **FullMatchConditions** | string[] | Список точных условий по имени файла для сопоставления. | [опционально] |
+
+### Параметр тела запроса
+
+| Имя параметра | Тип | Описание                                      |
+|---------------|-----|-----------------------------------------------|
+| data          | file | Бинарное содержимое файла рабочей книги для создания. |
+
+### **Ответ**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                     | Условия возврата                         |
+|-----|------------------------------|------------------------------------------|
+| 200 OK | Рабочая книга успешно создана | Нормальный сценарий выполнения           |
+| 201 Created | Рабочая книга создана (альтернативный ответ) | Когда API возвращает статус «создано» |
+| 400 Bad Request | Некорректные параметры | Ошибка со стороны клиента                |
+| 401 Unauthorized | Отсутствует или недействителен токен | Ошибка аутентификации                   |
+| 409 Conflict | Файл существует и `isWriteOver=false` | Конфликт с существующим файлом           |
+
+## Как использовать API PostBatchConvert с SDK
+
+### Спецификация API PostBatchConvert
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/PostBatchConvert) определяет общедоступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как выполнять вызовы в Cloud API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/convert" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\",\"SaveOptions\":{\"SaveFormat\":\"pdf\",\"CalculateFormula\":true,\"EnableHTTPCompression\":true,\"OnePagePerSheet\":true,\"CreateDirectory\":false,\"Compliance\":\"None\"}}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\",\"SaveOptions\":{\"SaveFormat\":\"pdf\",\"CalculateFormula\":true,\"EnableHTTPCompression\":true,\"OnePagePerSheet\":true,\"CreateDirectory\":false,\"Compliance\":\"None\"}}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали и позволяет сосредоточиться на задачах вашего проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 
@@ -106,7 +148,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/convert" \
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Batch-Convet.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Examples-Batch-Convet.js" >}}
 
 {{< /tab >}}
 

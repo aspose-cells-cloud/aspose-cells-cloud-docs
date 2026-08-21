@@ -1,68 +1,90 @@
-﻿---
-title: Grafiği Görüntüye Dönüştür
+---
+title: "Excel Grafğini Görüntüye Dönüştür – Aspose.Cells Cloud REST API"
 type: docs
-url: /tr/charts/to-image/
+url: /charts/to-image/
 aliases: [/convert-charts-to-image/]
 weight: 50
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Grafiği Görüntüye Dönüştür
+keywords: "Aspose.Cells Cloud, grafikten görüntüye, Excel grafik dönüştürme, REST API, görüntü formatı, PNG, JPEG, BMP, TIFF, GIF"
+description: "Aspose.Cells Cloud REST API kullanarak Excel grafik nesnelerini PNG, JPEG, BMP, TIFF veya GIF Görüntü formatlarına nasıl dönüştüreceğinizi öğrenin. Uç nokta detaylarını, parametreleri, cURL örneğini, SDK kod parçacıklarını, yanıt örneğini ve hata işleme bilgilerini içerir."
+ArticleTitle: "Excel Grafğini Görüntüye Dönüştür – Aspose.Cells Cloud REST API"
 ---
-Bu REST API bir grafiğin görüntüye nasıl dönüştürüleceğini gösterir.
 
-## RSET API
+Bu REST API, bir **Excel grafiğini** bir görsel formatına dönüştürmenin nasıl yapıldığını **Aspose.Cells Cloud** kullanarak göstermektedir.
 
-```bash
+## PutWorksheetAddChart API
 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}?format={format}
-
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}?format={format}
 ```
-İstek parametreleri şunlardır:
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| grafikNumarası| tam sayı| yol| Grafik numarası.|
-| biçim| sicim| sorgu| Dışa aktarılan dosya biçimi.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Desteklenen görüntü formatları şunlardır: `png`, `jpeg`, `bmp`, `tiff` ve `gif`.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **Güvenlik ve Kimlik Doğrulama**
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### İstek Parametreleri
+
+| Parametre Adı | Tür    | Konum | Açıklama                   |
+| ------------- | ------ | ----- | -------------------------- |
+| name          | string | path  | Belge adı.                 |
+| sheetName     | string | path  | Çalışma sayfası adı.       |
+| chartNumber   | integer| path  | Grafik numarası.           |
+| format        | string | query | Dışa aktarılan dosya formatı. |
+| folder        | string | query | Belge klasörü.             |
+| storageName   | string | query | Depo adı.                  |
+
+### **Yanıt**
+
+Uç nokta, istenen formatı ikili akış olarak (örneğin `byte[]`) döndürür. Yanıt `Content-Type` başlığı, seçilen görüntü formatına göre `image/png`, `image/jpeg` vb. değerler alır.
+
+**HTTP Durum Kodları**
+
+| Kod | Anlamı                      | Açıklama                                              |
+|-----|-----------------------------|-------------------------------------------------------|
+| 200 | OK (Tamam)                  | Sü 필터 başarıyla uygulandı; yanıt işlem detaylarını içerir. |
+| 400 | Bad Request (Hatalı İstek)  | Eksik veya geçersiz parametreler (örn. desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT belirteci.                   |
+| 413 | Payload Too Large (Çok Büyük Yük) | Yüklenecek dosya boyut sınırlarını aşıyor.            |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası.                         |
+
+## PutWorksheetAddChart API'yi SDK’larla Nasıl Kullanılır
+
+### PutWorksheetAddChart API Spesifikasyonu
+
+<a href="https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart" rel="noopener noreferrer">OpenAPI Spesifikasyonu</a>, herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından yapmanıza olanak tanır.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'ye nasıl istek atacağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg"
--X GET
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```text
 byte[]
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bir SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoluudur. Bir SDK, düşük seviye detayları yönetir ve sizin proje görevlerinize odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub deposunu</a> inceleyin.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
-
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Python" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 
@@ -104,6 +126,8 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< tab tabNum="7" >}}
 
+Örnek yakında gelecek.
+
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
@@ -119,3 +143,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

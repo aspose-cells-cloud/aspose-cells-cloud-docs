@@ -1,207 +1,100 @@
-﻿---
-title: Esportazione Shap
-second_title: Documen
-linktitle: Forma
-type: docs
-url: /it/export-excel-shape-to-different-formats/
-aliases: [ /export/excel-shape-to-different-formats/]
-keywords: Export Excel shape to kinds of format files
-description: Aspose.Cells Cloud REST API supporta l'esportazione di forme Excel in vari formati di file. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Esporta forma
 ---
- È possibile esportare i formati:[PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/),  [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/).
+title: "Esporta forme"
+second_title: "Documento"
+linktitle: "Forma"
+type: docs
+url: /export-excel-shape-to-different-formats/
+aliases: [/export/excel-shape-to-different-formats/]
+keywords: "Esporta forme, Aspose.Cells Cloud, Esportazione forma Excel, Formati immagine, REST API, SDK"
+description: "Scopri come esportare forme Excel in vari formati immagine (PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF) utilizzando l'API REST di Aspose.Cells Cloud e gli SDK."
+weight: 20
+ArticleTitle: "Esporta forme – Aspose.Cells Cloud"
+---
 
-- **RIPOSO API**
+Esportare forme da Excel consente di riutilizzare contenuti diagrammatici su diverse piattaforme e applicazioni. **Prerequisiti:** un token di accesso JWT valido e il file Excel di origine da caricare.
 
-|**API**|**Tipo**|**Descrizione**|**Collegamento Swagger**|
-|:- |:- |:- |:- |
-|/cellule/esporta|METTERE|Esportare oggetti Excel dal contenuto della richiesta in un formato specifico|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+È possibile esportare forme nei seguenti formati: **PNG**, **GIF**, **JPEG**, **BMP**, **SVG**, **TIFF**, **EMF**, **WMF**.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+## API PostExport
 
- Puoi usare**cURL** Strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
-
-- **Richiesta**
-
-```bash
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=tiff" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+```http
+PUT https://api.aspose.cloud/v3.0/cells/export
 ```
 
-- **Risposta**
+### **Sicurezza e autenticazione**
+
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
+
+
+### Parametri della richiesta
+
+| Nome parametro | Tipo   | Percorso/Query string/Corpo HTTP | Obbligatorio | Descrizione |
+|----------------|--------|----------------------------------|--------------|-------------|
+| file           | file   | formData                         | Sì           | File da caricare |
+| objectType     | string | query                            | Sì           | Tipo di oggetto da esportare. Per l'esportazione di grafici utilizzare `chart`. I valori validi includono `shape`, `worksheet`, `picture`, ecc. |
+| format         | string | query                            | Sì           | Format di output desiderato. Valori supportati: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`. |
+
+### **Esempio di richiesta**
 
 ```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=tiff" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "Authorization: Bearer <your_access_token>" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -d '{"File":{}}'
+```
+
+### Risposta
+
+```json
 {
-    "Files": [{
-        "Filename": "Book1_xlsx_Sheet1_Shapes_0.tif",
-        "FileSize": 390,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Shapes_0.tif",
-        "FileSize": 10040,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Shapes_1.tif",
-        "FileSize": 2824,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Shapes_2.tif",
-        "FileSize": 1350,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Shapes_3.tif",
-        "FileSize": 12978,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Shapes_4.tif",
-        "FileSize": 7002,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Shapes_5.tif",
-        "FileSize": 11532,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_0.tif",
-        "FileSize": 390,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_1.tif",
-        "FileSize": 1510,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_2.tif",
-        "FileSize": 2958,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_3.tif",
-        "FileSize": 3496,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_4.tif",
-        "FileSize": 906,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_5.tif",
-        "FileSize": 940,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_6.tif",
-        "FileSize": 1160,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_7.tif",
-        "FileSize": 2096,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_8.tif",
-        "FileSize": 2510,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_9.tif",
-        "FileSize": 1966,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_10.tif",
-        "FileSize": 1574,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_11.tif",
-        "FileSize": 3106,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_12.tif",
-        "FileSize": 2406,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_13.tif",
-        "FileSize": 21680,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_14.tif",
-        "FileSize": 21286,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_15.tif",
-        "FileSize": 9804,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_16.tif",
-        "FileSize": 2824,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_17.tif",
-        "FileSize": 1596,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_18.tif",
-        "FileSize": 1596,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Shapes_19.tif",
-        "FileSize": 8270,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet2_Shapes_0.tif",
-        "FileSize": 382,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet2_Shapes_1.tif",
-        "FileSize": 382,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet2_Shapes_2.tif",
-        "FileSize": 130084,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet2_Shapes_3.tif",
-        "FileSize": 120062,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet2_Shapes_4.tif",
-        "FileSize": 1538,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet2_Shapes_5.tif",
-        "FileSize": 1644,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet2_Shapes_6.tif",
-        "FileSize": 912,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet2_Shapes_7.tif",
-        "FileSize": 4892,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet2_Shapes_8.tif",
-        "FileSize": 794,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet2_Shapes_9.tif",
-        "FileSize": 4550,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet3_Shapes_0.tif",
-        "FileSize": 42570,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet3_Shapes_1.tif",
-        "FileSize": 12102,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet3_Shapes_2.tif",
-        "FileSize": 8290,
-        "FileContent": "-----Base64String--------"
-    }]
+  "Files": [
+    {
+      "Filename": "Book1_xlsx_Sheet1_Shapes_0.tif",
+      "FileSize": 390,
+      "FileContent": "-----Base64String--------"
+    }
+    // ... altri oggetti file ...
+  ]
 }
 ```
 
-- **Famiglia Cloud SDK**
+*I payload di file tipici codificati in Base64 variano da poche centinaia di byte a diversi megabyte, a seconda delle dimensioni dell’immagine e del formato.*
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+**Codici di stato HTTP**
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+| Codice | Significato           | Descrizione |
+|--------|-----------------------|-------------|
+| 200    | OK                    | Forme esportate correttamente; la risposta contiene l'elenco dei file. |
+| 400    | Richiesta non valida  | Parametri mancanti o non validi. |
+| 401    | Non autorizzato       | Token di accesso non valido o mancante. |
+| 413    | Payload troppo grande | Il file caricato supera il limite di dimensione. |
+| 500    | Errore interno server | Errore imprevisto sul server. |
+
+
+## Come utilizzare l'API PostExport con gli SDK
+
+### Specifica dell'API PostExport
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di eseguire interazioni REST direttamente da un browser web.
+
+È possibile utilizzare lo strumento a riga di comando **cURL** per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come chiamare l'API Cloud tramite cURL.
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=tiff" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "Authorization: Bearer <your_access_token>" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -d '{"File":{}}'
+```
+
+### Utilizzare gli SDK di Aspose.Cells Cloud
+
+L'utilizzo di un SDK rappresenta il modo più rapido per sviluppare con Aspose.Cells Cloud. Un SDK astrae i dettagli a basso livello, consentendoti di concentrarti sulla logica di business. Consulta la [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

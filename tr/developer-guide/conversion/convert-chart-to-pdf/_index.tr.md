@@ -1,100 +1,146 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Bir Elektronik Tablo Grafiğini PDF Dosyasına Dönüştürme
-second_title: Documen
-ArticleTitle: Converting a Spreadsheet Chart to a Pdf file
-linktitle: Grafiği PD'ye Dönüştür
-type: docs
-url: /tr/convert-chart-to-pdf/
-keywords: convert an Excel chart to pdf, convert spreadsheet to pdf, Aspose Cloud Web  API, cloud conversion, Excel to PD
-description: Bu API, yerel bir sürücüde bulunan elektronik tablolardaki grafikleri PDF dosyasına sorunsuz bir şekilde dönüştürür
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo Dönüştürme, PDF, CSV, JSON, Markdown, Grafiği PDF'e Dönüştürme, Bulut Dönüştürme
 ---
- Bir grafiği yerel bir elektronik tablo/Excel dosyasından bir tabloya dönüştürün[PDF](https://docs.fileformat.com/pdf/) dosya.
+title: "Aspose.Cells Cloud API – Excel Grafiğini PDF'ye Dönüştürme"
+second_title: "Doküman"
+ArticleTitle: "Yerel Bir Elektronik Tablo Grafiğini PDF Dosyasına Dönüştürme: Adım Adım Kılavuz"
+linktitle: "Grafiği PDF'ye Dönüştür"
+type: docs
+url: /convert-chart-to-pdf/
+keywords: "Aspose Cells, grafik, PDF, Excel, dönüştürme, bulut API"
+description: "Aspose.Cells Cloud REST API kullanarak yerel Excel dosyalarındaki grafikleri PDF formatına dışa aktarın. XLSX ve XLS dosyalarını destekler."
+weight: 100
+---
 
-## **Tabloyu PDF'e Dönüştür API**
+Bulut API kullanarak yerel bir Excel dosyasındaki grafikleri [PDF](https://docs.fileformat.com/pdf/) formatına dönüştürün.
+
+## **Grafiği PDF'ye Dönüştürme Web API'si**
+
+### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
+PUT https://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 ```
+
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
 ### **İstek Parametreleri:**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi| Tanım|
-|-------------- ||--------------------- |--------------------------------------------------- |
-| Elektronik tablo|Dosya| FormVerileri| E-tablo dosyasını yükleyin.|
-| çalışma sayfası| Sicim| Sorgu| Tabloyu içeren çalışma sayfasının adı.|
-| grafikIndeksi|Tam sayı| Sorgu| Dönüştürülecek grafiğin indeksi.|
-| çıkış yolu| Sicim| Sorgu| (İsteğe bağlı) Dönüştürülen dosyanın saklandığı klasör yolu. Varsayılan değer null'dır.|
-| outStorageName| Sicim| Sorgu| Çıktı dosyası depolama adı.|
-| yazı tipleriKonum| Sicim| Sorgu| Gerekirse özel yazı tipleri kullanın.|
-| bölge| Sicim| Sorgu| E-tablo bölge ayarı.|
-| şifre| Sicim| Sorgu| E-tablo dosyasını açmak için şifre.|
+| Parametre Adı    | Tür     | Yol/Sorgu Dizesi/HTTP Gövdesi | Açıklama                                                                                |
+| ---------------- | ------- | ---------------------------- | --------------------------------------------------------------------------------------- |
+| Spreadsheet      | Dosya   | FormData                     | Elektronik tablo dosyasını yükleyin.                                                    |
+| worksheet        | Metin   | Sorgu                        | Grafiğin bulunduğu çalışma sayfasının adı.                                              |
+| chartIndex       | Tamsayı | Sorgu                        | Dönüştürülecek grafiğin indeksi.                                                        |
+| outPath          | Metin   | Sorgu                        | (İsteğe bağlı) Dönüştürülen dosyanın saklandığı klasör yolu. Varsayılan değer null’dır. |
+| outStorageName   | Metin   | Sorgu                        | Çıktı dosyasının depo adı.                                                              |
+| fontsLocation    | Metin   | Sorgu                        | Gerekiyorsa özel yazı tiplerini kullanın.                                              |
+| region           | Metin   | Sorgu                        | Elektronik tablonun bölge ayarı.                                                        |
+| password         | Metin   | Sorgu                        | Elektronik tablo dosyasını açmak için parola.                                          |
 
-### **Cevap**
+### **Yanıt**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Hata Kodları
+**HTTP Durum Kodları**
 
-- **400 Kötü İstek**: Geçersiz Apose.Cells Bulut API URI.
-- **401 Yetkisiz**: Geçersiz erişim belirteci. Veya geçersiz istemci kimliği ve sırrı.
-- **404 Bulunamadı**: E-tablo dosyasına erişilemiyor.
-- **500 Sunucu Hatası**: Hesaplama verilerinin alınmasında elektronik tabloda bir anormallik tespit edildi.
+| Kod | Anlamı               | Açıklama                                                         |
+| --- | -------------------- | ---------------------------------------------------------------- |
+| 200 | Tamam                | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir.  |
+| 400 | Geçersiz İstek       | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Yetkisiz İstek       | Geçersiz veya eksik JWT belirteci.                              |
+| 413 | Yük Çok Büyük        | Yüklenen dosya boyut sınırını aşıyor.                           |
+| 500 | İç Sunucu Hatası     | Beklenmeyen sunucu hatası.                                      |
 
-## API Pdf'e Dönüştürme Tablosunu Nerede Kullanmalısınız?
+## Grafiği PDF'ye Dönüştürme API'si nerede kullanılmalıdır?
 
-- Tablodaki grafikleri Pdf olarak dışarı aktarın.
+### **1. İş Raporlama ve Otomasyonu**
 
-## Neden API PDF'e Dönüştürme Tablosunu kullanmalısınız?
+- **Finans Departmanları**: Aylık finansal rapor grafikleri → PDF arşivleme  
+- **Satış Takımları**: Performans eğilim grafikleri → PDF müşteri raporları  
+- **Pazarlama Analitikleri**: Kampanya performans grafikleri → PDF yöneticilere sunumlar  
+- **Operasyon Yönetimi**: Üretim izleme grafikleri → PDF uyumluluk belgeleri  
 
-- Bulut depolamaya gerek kalmaz, bulut kaynakları üzerindeki yük azalır.
-- Mevcut SDK üzerinden geliştirme hızlı bir şekilde tamamlanabilir.
+### **2. Yazılım Geliştirme ve Entegrasyonu**
 
-## SDK'larla PDF'e Dönüştürme Tablosu API Nasıl Kullanılır?
+- **SaaS Uygulamaları**: Kullanıcı tarafından oluşturulan grafik verileri → indirilebilir PDF raporları  
+- **Kurumsal Sistemler**: ERP/CRM sistemleri grafikleri → PDF denetim belgeleri  
+- **Mobil Uygulamalar**: Uygulama içi analitik grafikleri → paylaşılabilir PDF dosyaları  
+- **Web Uygulamaları**: Gösterge paneli grafikleri → PDF dışa aktarma işlevselliği  
 
-### Tabloyu PDF'e Dönüştür API Şartnamesi
+### **3. Doküman İşleme İş Akışları**
 
- The[Tabloyu PDF'e Dönüştür API Şartnamesi](https://reference.aspose.cloud/cells/#/ConversionController/ConvertChartToPdf) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+- **Toplu İşlem**: Birden fazla Excel dosyası grafiği aynı anda PDF’ye dönüştürülür  
+- **Zamanlanmış Görevler**: Günlük/haftalık grafik raporlarının otomatik oluşturulması  
+- **Şablon Tabanlı Çıktılar**: Standart grafik formatları → PDF dokümanları  
+- **Doküman Birleştirme**: Grafikleri diğer içeriklerle birlikte PDF formatında birleştirme  
 
-## Aspose.Cells Bulut SDK'larını kullanın
+### **4. Sektöre Özel Uygulamalar**
 
-SDK'yı kullanmak, düşük seviyeli ayrıntıları soyutlayarak bir grafiği kısa kodla bir PDF dosyasına dönüştürmenize olanak tanıdığı için geliştirmenin en hızlı yoludur.
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+- **Araştırma Kurumları**: Deneysel veri grafikleri → PDF araştırma makalesi çizelgeleri  
+- **Eğitim Sektörü**: Eğitim materyali grafikleri → PDF ders materyalleri  
+- **Danışmanlık Firmaları**: Analiz grafikleri → PDF müşteri teslimatları  
+- **Üretim**: Kalite kontrol grafikleri → PDF muayene raporları  
+- **Sağlık Hizmetleri**: Hasta verisi grafikleri → PDF tıbbi kayıtlar  
+- **Devlet Kurumları**: İstatistiksel grafikler → PDF resmi yayınlar  
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertChartToPdf.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertChartToPdf.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertChartToPdf.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertChartToPdf.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertChartToPdf.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertChartToPdf.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertChartToPdf.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertChartToPdf.go" >}}
-{{< /tab >}}
+### **5. İçerik Yönetimi ve Dağıtımı**
+
+- **Dijital Varlık Yönetimi**: Grafiklerin standartlaştırılmış PDF formatında arşivlenmesi  
+- **Bilgi Tabanları**: Gömülü PDF grafikli teknik dokümantasyon  
+- **Müşteri Portalleri**: İlgili taraflara güvenli PDF rapor teslimi  
+- **Düzenleyici Uyumluluk**: Denetim için hazır PDF dokümantasyon oluşturma  
+
+## Grafiği PDF'ye Dönüştürme API'si neden kullanılmalıdır?
+
+- Çalışma kitabını önceden yüklemeksizin grafikleri dönüştürebilirsiniz; bu, depolama alanından tasarruf sağlar ve maliyetleri düşürür.  
+- Geliştirme, mevcut Aspose.Cells Cloud SDK’ları aracılığıyla hızlıca tamamlanabilir.  
+- **Basit Entegrasyon**: Açık dokümantasyonlu REST API.  
+- **Ölçeklenebilir Mimari**: Küçük ölçekli işlerden kurumsal ölçekli işlemlere kadar tüm iş yüklerini işleyebilir.  
+
+## Grafiği PDF'ye Dönüştürme API'si SDK ile nasıl kullanılır?
+
+### Grafiği PDF'ye Dönüştürme API Spesifikasyonu
+
+[Grafiği PDF'ye Dönüştürme API Spesifikasyonu](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertChartToPDF), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+## Aspose.Cells Cloud SDK’larını Kullanın
+
+SDK kullanmak, düşük seviye detaylardan kurtularak minimum kodla bir grafiği PDF dosyasına dönüştürmenizi sağlayan en hızlı geliştirme yöntemidir.  
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanarak Aspose.Cells web servislerine nasıl istek atılacağını göstermektedir:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertChartToPDF.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertChartToPDF.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertChartToPDF.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertChartToPDF.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertChartToPDF.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertChartToPDF.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertChartToPDF.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertChartToPDF.go" >}}
+{{</tab>}}
 {{< /tabs >}}

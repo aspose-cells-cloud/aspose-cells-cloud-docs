@@ -1,78 +1,100 @@
-﻿---
-title: Autoanpassa flera rader i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Rad
-type: docs
-url: /sv/worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
-keywords: Autofit rows on an Excel workshee
-description: Aspose.Cells Cloud REST API stöder autopassning av rader i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 40
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Autoanpassa flera rader i ett Excel-kalkylblad
 ---
-Denna REST API anger att rader ska autoanpassas i ett Excel-arbetsblad.
+title: "Autojustera flera rader i ett Excel-ark"
+second_title: "Dokument"
+linktitle: "Rader"
+type: docs
+url: /worksheets/autofit/rows/
+aliases: [/autofit-multiple-rows-of-worksheet/]
+keywords: "autojustera rader, Excel, Aspose.Cells Cloud, REST API, kalkylark, kalkylark"
+description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att autojustera flera rader i ett Excel-ark. Inkluderar begärandsyntax, parametrar, cURL-exempel, SDK-utdrag och felhantering."
+weight: 40
+ArticleTitle: "Autojustera flera rader i ett Excel-ark – Aspose.Cells Cloud API-dokumentation"
+---
 
-## RSET API
+Denna REST API justerar automatiskt höjden på rader i ett Excel-ark.
+
+## Säkerhet och autentisering
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrows
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrows
 ```
 
-Begäranparametrarna är:
+### **Begärparametrar**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| autoFitterAlternativ|| kropp| Alternativ för automatisk montör.|
-| startrad| heltal| fråga| Starta raden.|
-| slutrad| heltal| fråga| Slutrad.|
-| endastAuto| boolesk| fråga|Falsk|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameternamn         | Typ     | Plats  | Beskrivning                                                                                                                         | Krävs  |
+| --------------------- | ------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| **name**              | string  | path   | Namnet på Excel-filen.                                                                                                              | ✔      |
+| **sheetName**         | string  | path   | Namnet på kalkylarket.                                                                                                              | ✔      |
+| **autoFitterOptions** | object  | body   | Alternativ som styr hur rader autojusteras (t.ex. ignorera dolda rader). Se kortfattad fältbeskrivning nedan.                      | ✖      |
+| **startRow**          | integer | query  | Den första raden att autojustera (1-baserat index).                                                                                | ✔      |
+| **endRow**            | integer | query  | Den sista raden att autojustera (inklusive).                                                                                       | ✔      |
+| **onlyAuto**          | boolean | query  | När `true` justerar API:et endast rader vars höjd automatiskt beräknas av Excel. När `false` utförs en fullständig autojustering. | ✖      |
+| **folder**            | string  | query  | Mappen som innehåller dokumentet.                                                                                                   | ✖      |
+| **storageName**       | string  | query  | Namnet på lagringstjänsten.                                                                                                         | ✖      |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRows) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+**autoFitterOptions**-fält (alla valfria):
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+- `AutoFitMergedCells` _(boolean)_ – Om `true` tas sammanfogade celler hänsyn till vid beräkning av radhöjd.
+- `IgnoreHidden` _(boolean)_ – När `true` ignoreras dolda rader under autojusteringsprocessen.
+- `OnlyAuto` _(boolean)_ – Speglar frågeparametern `onlyAuto`; när den är inställd åsidosätts värdet från frågan.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRows) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur Cloud API:et anropas med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitrows?firstRow=1&lastColumn=10&lastRow=7&firstColumn=1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"AutoFitMergedCells" : true, "IgnoreHidden" : true, "OnlyAuto" : false}'
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitrows?startRow=1&endRow=7" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"AutoFitMergedCells": true, "IgnoreHidden": true, "OnlyAuto": false}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+Typiska felsvar inkluderar:
+
+- **400 Bad Request** – Ogiltiga parametervärden eller felaktigt formaterad JSON-kropp.
+- **401 Unauthorized** – Saknas eller ogiltig JWT-token.
+- **404 Not Found** – Den angivna filen eller det angivna kalkylarket finns inte.
+- **500 Internal Server Error** – Ett oväntat serverfel uppstod.
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                             |
+|-----|-----------------------------|---------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Bad Request                 | Saknas eller ogiltiga parametrar (t.ex. ej stödd filtyp). |
+| 401 | Unauthorized                | Ogiltig eller saknad JWT-token.                         |
+| 413 | Payload Too Large           | Den uppladdade filen överskrider storleksgränsen.       |
+| 500 | Internal Server Error       | Oväntat serverfel.                                      |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## SDK-familj för molnet
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK hanterar detaljer på låg nivå så att du kan fokusera på ditt projekt. Ta en titt på [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur Aspose.Cells-webbtjänster anropas med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

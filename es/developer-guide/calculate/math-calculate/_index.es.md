@@ -1,110 +1,133 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Sumar, Restar, Multiplicar, Dividir y Porcentaje en un rango de Hojas de Cálculo/Excel
-second_title: Documen
-ArticleTitle: Add, Minus, Multiply, Divide and Percentage in Spreadsheet/Exce
-linktitle: Cálculo matemático
-type: docs
-url: /es/math-calculate/
-keywords: Math calculation,Cloud REST API, Add, Minus, Multiply, Divide, Percentage, Office Cloud, Aspose.Cell
-description: Guía completa para usar la función Math Calculate API para realizar cálculos en hojas de cálculo Excel
-weight: 100
-kwords: Cálculo matemático, Cloud REST API, Sumar, Restar, Multiplicar, Dividir, Porcentaje, Office Cloud, Aspose.Cells
 ---
-Los desarrolladores pueden usar este API para realizar cálculos de suma, resta, multiplicación, división y porcentajes en rangos específicos de hojas de cálculo/Excel.
+title: "Aspose.Cells Cloud – API de cálculo matemático (Suma, Resta, Multiplicación, División, %)"
+second_title: "Documento"
+ArticleTitle: "Suma, Resta, Multiplicación, División y Porcentajes en hojas de cálculo/Excel"
+linktype: "docs"
+url: /math-calculate/
+keywords: "API de cálculo matemático, Aspose.Cells Cloud, cálculos en Excel, suma, resta, multiplicación, división, porcentaje, procesamiento por lotes de Excel, API REST"
+description: "Aprenda a utilizar la API de cálculo matemático de Aspose.Cells Cloud para aplicar por lotes operaciones de suma, resta, multiplicación, división o porcentaje a rangos en Excel. Incluye el formato de solicitud, código de ejemplo y manejo de errores."
+weight: 100
+---
 
-|**Calcular operación** | Descripción|
-|:- |:- |
-|**Agregar** |+ |
-|**Menos** |-  |
-|**Multiplicar** |*  |
-|**Dividir** |/ |
-|**Porcentaje** |% |
+## **Introducción**: Cálculo rápido en hojas de cálculo – Fórmulas de suma, multiplicación, resta, división y porcentaje en una única API en ejecución
 
-## **Calcular matemáticas API**
+_Elaborar cálculos por lotes en columnas, filas o tablas completas sin escribir fórmulas._
+
+- **Matemáticas básicas**: sume, reste, multiplique o divida todas las celdas de un rango por cualquier número
+- **Porcentajes**: aumente/disminuya según un %, o calcule el % de un número (por ejemplo, +15%, -8%, 20% de…)
+- **Procesamiento por lotes**: aplique cambios instantáneamente a miles de celdas — sin relleno por arrastre, sin fórmulas matriciales ni VBA
+
+| **Operación de cálculo** | Descripción |
+| :---------------------- | :---------- |
+| **Suma**                | +           |
+| **Resta**               | -           |
+| **Multiplicación**      | \*          |
+| **División**            | /           |
+| **Porcentaje**          | %           |
+
+## **API de cálculo matemático**
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/calculate/math
+PUT https://api.aspose.cloud/v4.0/cells/calculate/math
 ```
 
-### **Parámetros de la solicitud:**
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP| Descripción|
-|:- |:- |:- |:- |
-| Hoja de cálculo| Archivo| Datos del formulario| Sube el archivo de hoja de cálculo para su procesamiento.|
-| operación| Cadena| Consulta| La operación matemática a realizar (Suma, Resta, Multiplicación, División y Porcentaje).|
-| valor| Cadena| Consulta| Un valor a utilizar en el cálculo, si corresponde.|
-| hoja de trabajo| Cadena| Consulta| El nombre de la hoja de trabajo sobre la que se va a operar.|
-| rango| Cadena| Consulta| El rango de celdas a incluir en el cálculo.|
-| región| Cadena| Consulta|Define la región específica de la hoja de cálculo.|
-| contraseña| Cadena| Consulta| La contraseña para abrir el archivo de hoja de cálculo, si está protegido.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
+
+### **Parámetros de solicitud:**
+
+| Nombre del parámetro | Tipo   | Ruta/cadena de consulta/cuerpo HTTP | Descripción                                                                                      |
+| :------------------- | :----- | :---------------------------------- | :----------------------------------------------------------------------------------------------- |
+| Spreadsheet (hoja de cálculo) | Archivo | FormData                            | Suba el archivo de hoja de cálculo para procesarlo.                                              |
+| operation (operación) | Cadena | Consulta                            | La operación matemática a realizar (Suma, Resta, Multiplicación, División y Porcentaje).         |
+| value (valor)        | Cadena | Consulta                            | Un valor a utilizar en el cálculo, si corresponde.                                               |
+| worksheet (hoja)     | Cadena | Consulta                            | El nombre de la hoja en la que realizar la operación.                                           |
+| range (rango)        | Cadena | Consulta                            | El rango de celdas a incluir en el cálculo.                                                     |
+| region (región)      | Cadena | Consulta                            | La configuración de región de la hoja de cálculo.                                               |
+| password (contraseña) | Cadena | Consulta                            | La contraseña para abrir el archivo de hoja de cálculo, si está protegido.                       |
 
 ### **Respuesta**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream",
+      "Name": "file"
     }
+  }
 ]
 ```
 
-### Códigos de error
+**Códigos de estado HTTP**
 
-- **400 Solicitud incorrecta**: URI de nube Apose.Cells no válido API.
-- **401 No autorizado**Token de acceso no válido. O ID de cliente y secreto no válidos.
-- **404 No encontrado**:El archivo de hoja de cálculo no es accesible.
-- **Error de servidor 500**:La hoja de cálculo ha encontrado una anomalía al obtener los datos de cálculo.
+| Código | Significado             | Descripción                                                        |
+| ------ | ----------------------- | ------------------------------------------------------------------ |
+| 200    | OK                      | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta    | Parámetros ausentes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado           | Token JWT inválido o ausente.                                      |
+| 413    | Payload demasiado grande | El archivo subido excede el límite de tamaño.                     |
+| 500    | Error interno del servidor | Error inesperado en el servidor.                                  |
 
-## ¿Dónde debemos utilizar el cálculo matemático API?
+## ¿Dónde debemos utilizar la API de cálculo matemático?
 
-El cálculo matemático API es adecuado para cálculos por lotes en hojas de cálculo.
+- **Finanzas**: sume un 13% de IVA a toda una columna de precios de compra.
+- **Inventario**: multiplique la columna de kg por 2,2046 para convertir por lotes a libras.
+- **Nómina**: sume una bonificación fija de 1.000 a la columna de bonificaciones para todo el personal.
+- **Conversión de divisas**: divida la columna de ventas por el tipo de cambio actual para obtener importes en USD.
+- **Calificación**: reste 5 puntos a la puntuación de cada estudiante como penalización por asistencia.
+- **Comercio electrónico**: aplique un descuento promocional del 15% reduciendo los precios de los productos con un solo clic.
 
-## ¿Por qué deberías utilizar el cálculo matemático API?
+## ¿Por qué debería utilizar la API de cálculo matemático?
 
-- Realizar cálculos matemáticos por lotes.
-- El desarrollo se puede completar rápidamente a través del SDK existente.
+- **Cálculos rápidos en Excel**: termine los informes mensuales en segundos.
+- **Aumento porcentual por lotes en Excel**: actualice precios, previsiones, comisiones con un solo clic.
+- **Sumar el mismo número a toda una columna**: inventario, conversión de divisas, conversión de unidades.
+- **Excel sin fórmulas**: los usuarios no técnicos valoran su simplicidad.
+- **El desarrollo puede completarse rápidamente mediante el SDK existente**.
 
-## Cómo usar la función matemática Calculate API con SDK
+**Notas**  
+El tamaño máximo de archivo admitido es de 200 MB. El parámetro `range` debe ser una dirección válida de Excel (por ejemplo, A1:B10). Las hojas de cálculo muy grandes pueden requerir más tiempo de procesamiento.
 
-### Especificación de cálculo matemático API
+## Cómo utilizar la API de cálculo matemático con SDK
 
- El[Especificación de cálculo matemático](https://reference.aspose.cloud/cells/#/CalculateController/MathCalculate) define una interfaz de programación de acceso público, que permite a los desarrolladores interactuar con API directamente desde un navegador web.
+### Especificación de la API de cálculo matemático
 
-### Utilice los SDK de la nube Aspose.Cells
+La [especificación de la API de cálculo matemático](https://reference.aspose.cloud/cells/#/CalculateController/MathCalculate) define una interfaz de programación pública accesible, lo que permite a los desarrolladores interactuar directamente con la API desde un navegador web.
 
-Usar el SDK es la forma más rápida de desarrollar, ya que abstrae los detalles de bajo nivel y permite realizar cálculos matemáticos por celda con solo un código corto.
- Por favor, consulte el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+### Utilice los SDK de Aspose.Cells Cloud
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Utilizar los SDK es la forma más rápida de desarrollar, ya que oculta los detalles de bajo nivel, permitiéndole realizar cálculos matemáticos por celda con solo un código breve.  
+Consulte los [SDK de Aspose.Cells Cloud en GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa.
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MathCalculate.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MathCalculate.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MathCalculate.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MathCalculate.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MathCalculate.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MathCalculate.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MathCalculate.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MathCalculate.go" >}}
-{{< /tab >}}
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante diversos SDK:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MathCalculate.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MathCalculate.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MathCalculate.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MathCalculate.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MathCalculate.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MathCalculate.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MathCalculate.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MathCalculate.go" >}}
+{{</tab>}}
 {{< /tabs >}}

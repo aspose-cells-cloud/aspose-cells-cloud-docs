@@ -1,62 +1,79 @@
-﻿---
-title: Supprimer toutes les images dans une feuille de calcul Excel
-second_title: Documen
-linktitle: Cléa
-type: docs
-url: /fr/pictures/clear/
-aliases: [/delete-all-pictures-from-excel-worksheet/]
-keywords: Delete all pictures in an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge la suppression de toutes les images d'une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 60
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Supprimer toutes les images dans une feuille de calcul Excel
 ---
-Ce REST API indique `delete` `all` images dans la feuille de travail.
+title: "Supprimer toutes les images d'une feuille de calcul Excel"
+second_title: "Document"
+linktitle: "Effacer"
+type: docs
+url: /pictures/clear/
+aliases: [/delete-all-pictures-from-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, supprimer toutes les images, feuille de calcul, API REST, effacer les images"
+description: "Découvrez comment supprimer toutes les images d'une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud, avec des exemples utilisant cURL et les SDK."
+weight: 60
+ArticleTitle: "Comment supprimer toutes les images d'une feuille de calcul Excel avec Aspose.Cells Cloud"
+---
 
-## RSET API
+Cette API REST supprime **toutes** les images d'une feuille de calcul.
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
- 
+**Conditions préalables**  
+- Un compte Aspose.Cells Cloud actif avec un jeton d'accès OAuth 2.0 valide.  
+- La version 3.0 (ou ultérieure) de l'API est requise ; les versions antérieures sont obsolètes.  
+- Le fichier Excel cible doit être stocké dans un emplacement de stockage pris en charge (par défaut ou personnalisé).
+
+**Compatibilité des versions**  
+Le point de terminaison respecte la spécification de l'API Cells Cloud 3.0. Assurez-vous que vos bibliothèques clientes et les URL de requête ciblent `api.aspose.cloud/v3.0`.
+
+## API DeleteWorksheetPictures
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### **Paramètres de la requête**
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom du paramètre | Type   | Emplacement | Description                                         |
+| ---------------- | ------ | ----------- | --------------------------------------------------- |
+| name             | string | Path        | Nom du fichier Excel.                              |
+| sheetName        | string | Path        | Nom de la feuille de calcul contenant les images. |
+| folder           | string | Query       | Dossier dans lequel le fichier est stocké.         |
+| storageName      | string | Query       | Nom du service de stockage.                        |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### Réponses d’erreur
+
+| Code HTTP | Description                                                             |
+| --------- | ----------------------------------------------------------------------- |
+| 401       | Non autorisé – jeton manquant ou invalide.                             |
+| 404       | Non trouvé – le fichier, la feuille de calcul ou l’index de saut de page spécifié n'existe pas. |
+| 400       | Requête incorrecte – syntaxe de requête mal formée ou paramètres invalides. |
+| 500       | Erreur interne du serveur – une condition inattendue s'est produite.   |
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures) définit une interface de programmation accessible publiquement et permet d'effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l'outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L'exemple suivant montre comment appeler l'API avec cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetName}/pictures" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -65,9 +82,9 @@ curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+Utiliser un SDK est le moyen le plus rapide de développer. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur votre logique métier. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l'aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +137,10 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Notes :** L'opération DELETE ne prend pas en charge la pagination et est soumise aux limites de débit standard des API Aspose.Cells Cloud (par défaut : 100 requêtes par minute). Ajustez en conséquence la logique de votre client.
+
+**Voir aussi** :  
+- [/pictures/delete/](../delete/) – Supprimer une image spécifique d'une feuille de calcul.  
+- [/pictures/add/](../add/) – Ajouter une image à une feuille de calcul.  
+---

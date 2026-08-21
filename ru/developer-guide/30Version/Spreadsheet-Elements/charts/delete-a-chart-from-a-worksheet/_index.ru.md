@@ -1,72 +1,119 @@
-﻿---
-title: Удалить диаграмму с рабочего листа
+---
+title: "Удаление диаграммы из рабочего листа"
 type: docs
-url: /ru/charts/delete/
+url: /charts/delete/
 aliases: [/delete-a-chart-from-a-worksheet/]
 weight: 40
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Удаление диаграммы из рабочего листа
+keywords:
+  - "Aspose.Cells"
+  - "REST API"
+  - "Удаление диаграммы"
+  - "Рабочий лист"
+  - "Excel"
+  - "Облачный SDK"
+  - "Удаление диаграммы"
+  - "Справка по API"
+description: "Удаляет диаграмму из рабочего листа по её индексу (начиная с нуля), используя Aspose.Cells Cloud REST API."
+ArticleTitle: "Удаление диаграммы из рабочего листа с помощью Aspose.Cells Cloud REST API"
 ---
-Этот REST API указывает на удаление диаграммы рабочего листа по индексу.
- 
-## РСЕT API
- 
+
+Этот REST API удаляет диаграмму с рабочего листа по её индексу.
+
+Для связанных операций см. страницы **[Добавление диаграммы](#)** и **[Получение диаграммы](#)**.
+
+## REST API
+
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
 ```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей тетради.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| chartIndex| целое число| путь| Индекс диаграммы.|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
- 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetDeleteChart) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+
+### Безопасность и аутентификация
+
+Aspose.Cells Cloud API защищены и требуют [аутентификации на основе JWT-токена](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+### Параметры запроса
+
+| Имя параметра | Тип    | Расположение | Описание                                             |
+|---------------|--------|-------------|------------------------------------------------------|
+| name          | string | path        | Имя рабочей книги.                                   |
+| sheetName     | string | path        | Имя рабочего листа.                                  |
+| chartIndex    | integer | path       | Индекс удаляемой диаграммы (начиная с нуля).         |
+| folder        | string | query       | Папка, содержащая рабочую книгу.                     |
+| storageName   | string | query       | Имя используемого хранилища.                         |
 
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Ответ**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Коды HTTP-статусов**
+
+| Код | Значение                    | Описание                                                                 |
+|-----|-----------------------------|--------------------------------------------------------------------------|
+| 200 | OK (ОК)                     | Фильтр успешно применён; ответ содержит подробности операции.           |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизовано) | Неверный или отсутствующий JWT-токен.                                   |
+| 413 | Payload Too Large (Слишком большой полезный груз) | Загруженный файл превышает допустимый размер.                   |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                                      |
+
+## Как использовать API PutWorksheetAddChart с SDK
+
+### Спецификация API PutWorksheetAddChart
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetDeleteChart) определяет общедоступное программное API и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для удобного доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как выполнить вызов облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" 
--X DELETE 
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" \
+-X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
-## Семейство облачных SDK
- 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
- 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
- 
+
+API возвращает следующие коды состояния:
+
+| Код | Описание                                              |
+|-----|-------------------------------------------------------|
+| 200 | Диаграмма успешно удалена                             |
+| 400 | Неверный запрос (например, некорректный индекс)       |
+| 401 | Неавторизован (отсутствует или недействителен JWT)   |
+| 404 | Рабочая книга, рабочий лист или диаграмма не найдены  |
+| 500 | Ошибка сервера                                        |
+
+**Обработка ошибок:** Подробную информацию об ошибках см. в общем описании модели ошибок в спецификации OpenAPI.
+
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK — лучший способ ускорить разработку. SDK скрывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
+
+Примеры кода ниже демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

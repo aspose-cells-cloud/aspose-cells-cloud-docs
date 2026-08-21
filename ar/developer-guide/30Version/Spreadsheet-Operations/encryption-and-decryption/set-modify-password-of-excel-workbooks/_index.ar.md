@@ -1,73 +1,103 @@
-﻿---
-title: تعيين كلمة مرور التعديل لدفتر العمل Excel
-second_title: Documen
-linktitle: تعديل كلمة مرور الملف Excel
-type: docs
-url: /ar/workbook/password/modify/
-aliases: [/set-modify-password-of-excel-workbooks/,/workbook/modify-password/]
-keywords: Modify password for an Excel workbook
-description: يدعم Cloud REST تعديل كلمة المرور لمصنف العمل Aspose.Cells. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 100
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تعيين كلمة مرور تعديل مصنف Excel
 ---
-يشير هذا REST API إلى حماية المستند من التغييرات.
+title: "تعديل حماية كلمة المرور لملف مصنف Excel"
+second_title: "مستند"
+linktitle: "تعديل كلمة مرور ملف Excel"
+type: docs
+url: /workbook/password/modify/
+aliases:
+  - /set-modify-password-of-excel-workbooks/
+  - /workbook/modify-password/
+keywords: "كلمة مرور Excel، Aspose.Cells Cloud، الحماية ضد الكتابة، واجهة REST API، تعديل كلمة مرور المصنف"
+description: "تغيير كلمة مرور الحماية ضد الكتابة لملف مصنف Excel باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمن أمثلة باستخدام cURL وSDKs."
+weight: 100
+ArticleTitle: "تعديل حماية كلمة المرور لملف مصنف Excel – Aspose.Cells Cloud"
+---
 
-## RSET API
+تقوم هذه الواجهة **بتغيير كلمة مرور الحماية ضد الكتابة** لمصنف Excel موجود مسبقًا.
+
+يتيح تحديث كلمة مرور الحماية ضد الكتابة برمجيًا تدوير كلمات المرور أو استبدالها دون تنزيل الملف. وهي مفيدة جدًا عند إدارة المصنفات المؤمنة المخزنة في مساحة التخزين الخاصة بـ Aspose.Cells Cloud.
+
+
+## واجهة REST API
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/writeProtection
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 ```
 
-معلمات الطلب هي:
+### الأمان والمصادقة
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| كلمة المرور|| جسم| تعديل كلمة المرور.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [مصادقة تعتمد على رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutDocumentProtectFromChanges) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### معاملات الطلب
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| اسم المعامل      | النوع   | الموقع     | الوصف                                            |
+| ---------------- | ------- | ---------- | ------------------------------------------------ |
+| **name**         | نص (string) | المسار (path) | اسم ملف مصنف Excel (مطلوب).                       |
+| **password**     | نص (string) | الجسم (body) بصيغة JSON | كلمة مرور الحماية ضد الكتابة الجديدة المراد تعيينها (مطلوب). |
+| **folder**       | نص (string) | الاستعلام (query) | المجلد اختياري حيث يُخزَّن المصنف.                |
+| **storageName**  | نص (string) | الاستعلام (query) | اسم خدمة التخزين اختياري.                        |
+
+### الاستجابة
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                        | الوصف                                            |
+|-------|-------------------------------|--------------------------------------------------|
+| 200   | ناجح (OK)                     | تم تطبيق التصفية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400   | طلب غير صالح (Bad Request)   | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401   | غير مصرّح (Unauthorized)      | رمز JWT غير صالح أو مفقود. |
+| 413   | حجم الحمولة كبير جدًا (Payload Too Large) | حجم الملف المرفوع يتجاوز الحد المسموح. |
+| 500   | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام واجهة PutDocumentProtectFromChanges باستخدام SDKs
+
+### مواصفات واجهة PutDocumentProtectFromChanges
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutDocumentProtectFromChanges) الواجهة البرمجية العامة المُتاحة التي تسمح لك بإجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول بسهولة إلى خدمات الويب الخاصة بـ Aspose.Cells. يوضح أمر cURL أدناه كيفية استدعاء واجهة Cloud API.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtection" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d "{ \"Password\": \"aspose\"}" 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtection?folder=Samples&storageName=Default" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{ "Password": "aspose" }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أسرع طريقة لتطوير التطبيقات. تُتعامل SDKs مع التفاصيل منخفضة المستوى، مما يتيح لك التركيز على المنطق التجاري. يُرجى مراجعة [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات الويب الخاصة بـ Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

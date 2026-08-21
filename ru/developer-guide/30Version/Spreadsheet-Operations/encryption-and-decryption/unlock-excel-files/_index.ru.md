@@ -1,84 +1,110 @@
-﻿---
-title: Разблокировать файл Excel
-second_title: Documen
-linktitle: Разблокировать файл Excel
-type: docs
-url: /ru/unlock-excel-files/
-aliases: [/unlock/without-storage/,/unlock/,/unlock/without-using-storage/]
-keywords: Unlock Excel files
-description: Aspose.Cells Cloud REST API поддерживает разблокировку файлов Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 70
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Разблокировка
 ---
-Этот REST API указывает на файлы `unlock` Excel.
+title: "Разблокировка файлов Excel"
+second: "Документ"
+linktitle: "Разблокировка файлов Excel"
+type: docs
+url: /unlock-excel-files/
+aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
+keywords: "Разблокировка Excel, Aspose.Cells Cloud, REST API, разблокировка Excel, защищённая паролем книга, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
+description: "Aspose.Cells Cloud REST API предоставляет конечную точку для разблокировки файлов Excel, защищённых паролем. SDK доступны для множества языков программирования, включая Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby и Swift."
+ArticleTitle: "Разблокировка файлов Excel с использованием Aspose.Cells Cloud REST API"
+weight: 70
+---
 
-## РСЕT API
+Этот REST API позволяет разблокировать файлы Excel.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/unlock
- 
+POST https://api.aspose.cloud/v3.0/cells/unlock
 ```
 
-Параметры запроса:
+### Безопасность и аутентификация
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| файл| файл| formData| Файл для загрузки|
-| пароль| нить| запрос||
+API Aspose.Cells Cloud защищены и требуют [аутентификации на основе JWT-токена](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostUnlock) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### Параметры запроса
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра | Тип   | Местоположение           | Описание                                     |
+|--------------|-------|-------------------------|---------------------------------------------|
+| file         | файл  | formData (тело HTTP-запроса) | Загружаемый файл                             |
+| password     | строка | строка запроса          | Пароль для разблокировки файла (если защищён) |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### Ответ
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                                     |
+|-----|-----------------------------|-------------------------------------------------------------|
+| 200 | OK (ОК)                     | Фильтр успешно применён; ответ содержит детали операции.    |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизовано) | Недействительный или отсутствующий JWT-токен.              |
+| 413 | Payload Too Large (Слишком большой полезный груз) | Загруженный файл превышает лимит размера.                   |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                              |
+
+## Как использовать API PostUnlock с SDK
+
+### Спецификация API PostUnlock
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostUnlock) определяет общедоступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для лёгкого доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как выполнять вызовы в облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
+curl -v "https://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
- 
+-F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK берёт на себя обработку низкоуровневых деталей и позволяет сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+**Примечания**  
+- API может разблокировать несколько файлов Excel за один запрос; каждый файл возвращается в массиве `Files` ответа.  
+- Убедитесь, что версия SDK соответствует версии API (`v3.0`), чтобы избежать проблем совместимости.
+
+Примеры кода ниже демонстрируют, как выполнять вызовы в веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

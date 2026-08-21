@@ -1,151 +1,124 @@
-﻿---
-title: Få alla
-type: docs
-url: /sv/hyperlinks/get-all/
-aliases: [/get-hyperlink-from-excel-worksheet/,/get-hyperlinks-from-excel-worksheet/]
-keywords: Get hyperlinks from an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder hämtning av hyperlänkar från ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta alla
 ---
-Denna REST API indikerar `get all hyperlinks` på ett Excel-arbetsblad.
+title: "Hämta alla hyperlänkar – Aspose.Cells Cloud REST API"
+type: docs
+url: /hyperlinks/get-all/
+aliases:
+  [/get-hyperlink-from-excel-worksheet/, /get-hyperlinks-from-excel-worksheet/]
+keywords: "Aspose.Cells, Hämta alla hyperlänkar, Excel API, REST API, Molntjänst SDK, cURL-exempel, hyperlänkar i kalkylark"
+description: "Hämta alla hyperlänkar från ett kalkylark i en Excel-fil med Aspose.Cells Cloud REST API (v3.0). Innehåller HTTPS-slutpunkt, nödvändiga parametrar, cURL-exempel, svarsschema och kodexempel för SDK:er."
+weight: 10
+ArticleTitle: "Hämta alla hyperlänkar – Aspose.Cells Cloud REST API-dokumentation"
+---
 
-## RSET API
+Detta REST API hämtar **alla hyperlänkar** från ett specifikt kalkylark i en Excel-arbetsbok.
+
+## Säkerhet och autentisering
+
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-Begäranparametrarna är:
+### Begäranparametrar
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parametername | Typ    | Plats  | Nödvändig | Standard | Beskrivning                            |
+| ------------- | ------ | ------ | --------- | -------- | -------------------------------------- |
+| name          | string | path   | Ja        | –        | Namn på Excel-dokumentet.              |
+| sheetName     | string | path   | Ja        | –        | Namn på kalkylarket.                   |
+| folder        | string | query  | Nej       | –        | Mapp som innehåller dokumentet.        |
+| storageName   | string | query  | Nej       | –        | Namn på lagringstjänsten som ska användas. |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Hypelinks/GetWorksheetHyperlinks) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Hyperlinks/GetWorksheetHyperlinks) definierar ett offentligt tillgängligt programmeringsgränssnitt och möjliggör REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda verktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Exempel nedan visar hur API:et anropas med cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Hyperlinks": {
-
     "Count": 4,
-
     "HyperlinkList": [
-
       {
-
         "link": {
-
           "Href": "/0",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/1",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/2",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/3",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       }
-
     ],
-
     "link": null
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+JSON-svaret innehåller ett `Hyperlinks`-objekt.
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+- **Count** – totalt antal hyperlänkar i kalkylarket.
+- **HyperlinkList** – ett fält där varje post innehåller ett `link`-objekt. Egenskapen `Href` lagrar hyperlänkens adress, medan `Rel`, `Title` och `Type` tillhandahåller ytterligare metadata (ofta `null` för enkla länkar).
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+### Felrespons
+
+| HTTP-kod | Anledning                                          | Exempel på kropp                                            |
+| -------- | -------------------------------------------------- | ---------------------------------------------------------- |
+| **400**  | Felaktig begäran – saknade eller ogiltiga parametrar. | `{ "Code":"400", "Message":"Invalid parameter value." }`   |
+| **401**  | Obehörig – saknad eller ogiltig JWT-token.         | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
+| **404**  | Ej hittad – arbetsboken eller kalkylarket finns inte. | `{ "Code":"404", "Message":"File not found." }`             |
+| **500**  | Internt serverfel – oväntat serverfel.              | `{ "Code":"500", "Message":"An unexpected error occurred." }` |
+
+## Molntjänst SDK-familj
+
+Att använda en SDK är det snabbaste sättet att integrera denna funktion. SDK:er hanterar detaljer på lägre nivå och låter dig fokusera på din affärslogik. Kontrollera [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur Aspose.Cells webbtjänster anropas med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

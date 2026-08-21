@@ -1,76 +1,165 @@
-﻿---
-title: Uppdatera en form på ett Excel-arbetsblad
-second_title: Documen
-linktitle: Uppdatering
-type: docs
-url: /sv/shapes/update/
-aliases: [/update-a-shape-inside-the-worksheet/]
-keywords: Update a shape on an Excel workshee
-description: Aspose.Cells Cloud REST API stöder uppdatering av en form på ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 31
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Uppdatera en form på ett Excel-kalkylblad
 ---
-Denna REST API anger att en form på ett Excel-arbetsblad ska uppdateras.
+title: "Uppdatera en form i ett Excel-ark"
+second_title: "Dokument"
+linktitle: "Uppdatera"
+type: docs
+url: /shapes/update/
+aliases: [/update-a-shape-inside-the-worksheet/]
+keywords: "uppdatera form Excel API, Aspose.Cells Cloud, uppdatera Excel-form, REST API, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
+description: "Lär dig hur du uppdaterar en form i ett Excel-ark med Aspose.Cells Cloud REST API. Innehåller HTTPS-slutpunkt, autentiseringsuppgifter, DTO-schemat, steg-för-steg-användning, cURL-exempel och SDK-kodexempel för flera språk."
+ArticleTitle: "Uppdatera en form i ett Excel-ark – Aspose.Cells Cloud API"
+weight: 31
+---
 
-## RSET API
+Denna REST API uppdaterar en form i ett Excel-ark.
+
+## Säkerhet och autentisering
+
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
 
-Begäranparametrarna är:
+### Begäranparametrar
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| dokumentnamn.|
-| arknamn| sträng| väg| arbetsbladets namn.|
-| formindex| heltal| väg| formindex i kalkylbladsformer.|
-| dto|| kropp||
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parametername   | Typ     | Plats  | Beskrivning                                                                                   |
+| --------------- | ------- | ------ | --------------------------------------------------------------------------------------------- |
+| **name**        | string  | path   | Namnet på arbetsboksfilen.                                                                    |
+| **sheetName**   | string  | path   | Namnet på arket som innehåller formen.                                                        |
+| **shapeindex**  | integer | path   | Det nollbaserade indexet för formen i arket.                                                  |
+| **dto**         | object  | body   | Objektet för formens dataöverföring som innehåller de uppdaterade egenskaperna (se _DTO-schema_ nedan). |
+| **folder**      | string  | query  | Mappen där arbetsboken är lagrad.                                                             |
+| **storageName** | string  | query  | Namnet på Aspose Cloud-lagringen.                                                             |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetShape) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### DTO-schema
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+`dto`-objektet innehåller de egenskaper som kan uppdateras. Alla fält är valfria om inget annat anges.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Fält                | Typ     | Obligatoriskt | Beskrivning                                                                         |
+| ------------------- | ------- | ------------- | ----------------------------------------------------------------------------------- |
+| **Name**            | string  | Nej           | Nytt namn för formen.                                                               |
+| **UpperLeftRow**    | integer | Nej           | Radindex för formens övre vänstra hörn.                                             |
+| **UpperLeftColumn** | integer | Nej           | Kolumnindex för formens övre vänstra hörn.                                          |
+| **Width**           | integer | Nej           | Bredd på formen (i punkter).                                                        |
+| **Height**          | integer | Nej           | Höjd på formen (i punkter).                                                         |
+| **RotationAngle**   | integer | Nej           | Rotationsvinkel i grader.                                                           |
+| **IsHidden**        | boolean | Nej           | `true` för att dölja formen.                                                        |
+| **IsLocked**        | boolean | Nej           | `true` för att låsa formen.                                                         |
+| **Font**            | object  | Nej           | Teckensnittsinställningar (se OpenAPI-specifikationen för underordnade egenskaper). |
+| **...**             | …       | Nej           | Ytterligare egenskaper såsom `HtmlText`, `AlternativeText`, `ZOrderPosition`, etc. |
 
-{{< tab tabNum="1" >}}
+> För en fullständig lista, se den officiella OpenAPI-specifikationen: <https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetShape>.
 
-```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes/0?folder=Temp" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d "{ \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" }, \"Name\": \"string\", \"MsoDrawingType\": \"string\", \"AutoShapeType\": \"string\", \"Placement\": \"string\", \"UpperLeftRow\": 0, \"Top\": 0, \"UpperLeftColumn\": 0, \"Left\": 0, \"LowerRightRow\": 0, \"Bottom\": 0, \"LowerRightColumn\": 10, \"Right\": 0, \"Width\": 0, \"Height\": 0, \"X\": 0, \"Y\": 0, \"RotationAngle\": 0, \"HtmlText\": \"string\", \"Text\": \"string\", \"AlternativeText\": \"string\", \"TextHorizontalAlignment\": \"string\", \"TextHorizontalOverflow\": \"string\", \"TextOrientationType\": \"string\", \"TextVerticalAlignment\": \"string\", \"TextVerticalOverflow\": \"string\", \"IsGroup\": true, \"IsHidden\": true, \"IsLockAspectRatio\": true, \"IsLocked\": true, \"IsPrintable\": true, \"IsTextWrapped\": true, \"IsWordArt\": true, \"LinkedCell\": \"string\", \"ZOrderPosition\": 0, \"Font\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"DoubleSize\": 0, \"IsBold\": true, \"IsItalic\": true, \"IsStrikeout\": true, \"IsSubscript\": true, \"IsSuperscript\": true, \"Name\": \"string\", \"Size\": 0, \"Underline\": \"string\" }, \"Hyperlink\": \"string\"}"
- 
-```
+### Begärandehuvuden
 
-{{< /tab >}}
+- `Content-Type: application/json`
+- `Accept: application/json`
+- `Authorization: Bearer <accessToken>` _(JWT-token från _Autentisering_-steget)_
 
-{{< tab tabNum="2" >}}
+### Begärantext (exempel)
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Name": "MyShape",
+  "UpperLeftRow": 2,
+  "UpperLeftColumn": 3,
+  "Width": 150,
+  "Height": 80,
+  "RotationAngle": 0,
+  "IsHidden": false,
+  "IsLocked": false,
+  "Font": {
+    "Name": "Calibri",
+    "Size": 12,
+    "IsBold": true,
+    "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }
+  }
 }
- 
 ```
 
-{{< /tab >}}
+## Exempel med cURL (kommandoradsverktyg)
 
-{{< /tabs >}}
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes/0?folder=Temp" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <accessToken>" \
+  -d '{
+        "Name": "UpdatedShape",
+        "UpperLeftRow": 1,
+        "UpperLeftColumn": 1,
+        "Width": 120,
+        "Height": 60,
+        "IsHidden": false,
+        "IsLocked": false
+      }'
+```
 
-## Cloud SDK-familjen
+### Svar
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+**Felhantering** – API:et kan returnera följande statuskoder:
+
+| Kod | Beteende              | Vanlig orsak                                        |
+| --- | --------------------- | --------------------------------------------------- |
+| 400 | Felaktig begäran      | Ogiltig JSON eller obligatoriska fält saknas.     |
+| 401 | Autentisering krävs   | Saknas eller ogiltig JWT-token.                    |
+| 404 | Hittades inte         | Arbetsboken, arket eller formindexet finns inte.  |
+| 500 | Internt serverfel     | Oväntat problem på servern.                         |
+
+**Exempel på felaktiga svar**
+
+*400 – Felaktig begäran*
+
+```json
+{
+  "Code": 400,
+  "Message": "Ogiltig begäran. Fältet 'Name' överskrider maxlängden."
+}
+```
+
+*401 – Autentisering krävs*
+
+```json
+{
+  "Code": 401,
+  "Message": "Autentisering misslyckades. Ogiltig eller utgången JWT-token."
+}
+```
+
+*404 – Hittades inte*
+
+```json
+{
+  "Code": 404,
+  "Message": "Den angivna arbetsboken, arket eller formindexet hittades inte."
+}
+```
+
+*500 – Internt serverfel*
+
+```json
+{
+  "Code": 500,
+  "Message": "Ett oväntat fel uppstod på servern."
+}
+```
+
+## SDK-familj för molnet
+
+Användning av en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Besök [GitHub-lagret](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:n.
+
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

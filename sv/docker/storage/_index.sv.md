@@ -1,22 +1,26 @@
-﻿---
-title: Så här ställer du in lagringspositionen för Aspose.Cells Cloud Docker Container-lagring
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Docker Container Storage Configuratio
-linktitle: Containerlagring
-type: docs
-url: /sv/docker/storage/
-description: Så här ställer du in lagringspositionen för Aspose.Cells Cloud Docker Container-lagring
-weight: 30
-kwords: Excel Cloud Docker-behållare, Self-Cloud Docker-behållare, REST Docker-behållare, kalkylblad, PDF, CSV, JSON, Markdown, Docker-avbildning, Run Docker-behållare
 ---
-## Standardkonfiguration för lagring ##
+title: "Hur du ställer in lagringsplatsen för Aspose.Cells Cloud Docker-containerlager"
+second_title: "Dokument"
+ArticleTitle: "Konfiguration av Aspose.Cells Cloud Docker-containerlager"
+linktitle: "Containerlager"
+type: docs
+url: /docker/storage/
+description: "Konfigurera lagringsplatsen för Aspose.Cells Cloud Docker-containrar med JSON, PowerShell eller Bash."
+weight: 30
+keywords: "Aspose.Cells, Docker, containerlager, JSON-konfiguration, PowerShell, Bash"
+---
+
+**Sammanfattning**: Denna guide visar hur du konfigurerar lagringsplatsen för Aspose.Cells Cloud Docker-containrar på Windows och Linux med hjälp av JSON-konfigurationsfiler och Docker-kommandon (`docker run`).
+
+## Standardkonfiguration för lager ##
+
+**Förutsättningar**: Se till att Docker Engine 20.10+ är installerat, att du har giltiga Aspose.Cells Cloud-licensnycklar (`LicensePublicKey` och `LicensePrivateKey`) och att mappen på värddatorn som du planerar att använda för lagring (t.ex. `c:/data` på Windows eller `/data` på Linux) finns och har rätt behörigheter.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
 {{< tab tabNum="1" >}}
 
-``` json
-
+```json
 {
   "Local": [
     {
@@ -31,8 +35,7 @@ kwords: Excel Cloud Docker-behållare, Self-Cloud Docker-behållare, REST Docker
 
 {{< tab tabNum="2" >}}
 
-``` json
-
+```json
 {
   "Local": [
     {
@@ -41,42 +44,57 @@ kwords: Excel Cloud Docker-behållare, Self-Cloud Docker-behållare, REST Docker
     }
   ]
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-##  Standardposition ##
+## Standardplats ##
 
-- **fönster**
+- **Windows**
 
 ```powershell
-
 c:\app\storageResource.json
-
 ```
 
 - **Linux**
 
-```linux
-
+```bash
 /app/storageResource.json
-
-
 ```
 
-##  Anpassad lagringskonfiguration ##
+## Anpassad lagringskonfiguration ##
 
-Behöver ange om lagringsprofilen för molnbildsfilen Aspose.Cells när kunden anger en lagringsmapp.
+Använd en anpassad lagringsprofil när du behöver använda en annan mapp för Aspose.Cells Cloud-data.
 
-``` powershell
+```bash
+docker run -d \
+  -v c:/data:c:/data \   # montera värddatormappen som containerlager
+  -p 47900:5000 \        # kartlägg API-porten
+  -e LicensePublicKey=yourLicensePublicKey \
+  -e LicensePrivateKey=yourLicensePrivateKey \
+  -e storagesCredentialsFilePath=c:/data/storageResource.json \
+  --name asposecellscloud \
+  aspose/cells-cloud:ltsc2019.22.9.0
+```
 
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey  -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
+*Exempel för Linux*:
 
+```bash
+docker run -d \
+  -v /data:/data \   # montera värddatormappen som containerlager
+  -p 47900:5000 \    # kartlägg API-porten
+  -e LicensePublicKey=yourLicensePublicKey \
+  -e LicensePrivateKey=yourLicensePrivateKey \
+  -e storagesCredentialsFilePath=/data/storageResource.json \
+  --name asposecellscloud \
+  aspose/cells-cloud:ltsc2019.22.9.0
 ```
 
 **Referensdokument** :
 
-- [Hur man kör Cloud Docker-containern Aspose.Cells.]( https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)
+- [Hur du kör Aspose.Cells Cloud Docker-container.](https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)
+- [Funktioner för Docker-container](https://docs.aspose.cloud/cells/docker/container-features/)
+- [Hämtning av Aspose.Cells Cloud Docker-avbildning](https://docs.aspose.cloud/cells/docker/download-image/)
+- [Hantering av containertaggar](https://docs.aspose.cloud/cells/docker/manage-tags/)

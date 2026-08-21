@@ -1,84 +1,139 @@
-﻿---
-title: 在 Excel 工作表中添加前 10 个项目
-second_title: Documen
-linktitle: 添加前 10 名过滤器
-type: docs
-url: /zh/autofilter/add-top-10-filter/ 
-aliases: [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/ ]
-keywords: Adds a top10 filter on an Excel worksheet
-description: Aspose.Cells Cloud API 支持在 Excel 工作表上添加 Top10 筛选器。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 65
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 工作表中添加前 10 个项目
 ---
-此 REST API 表示过滤列表中的 `top 10` 项
+title: "为 Excel 工作表添加前 10 项筛选器（Aspose.Cells Cloud）"
+ArticleTitle: "为 Excel 工作表添加前 10 项筛选器 – Aspose.Cells Cloud"
+second_title: "文档"
+linktitle: "添加前 10 项筛选器"
+type: docs
+url: /autofilter/add-top-10-filter/
+aliases:
+  [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
+keywords: "Aspose.Cells, 自动筛选, 前 10 项筛选器, Excel API"
+description: "了解如何使用 Aspose.Cells Cloud REST API 为 Excel 工作表应用前 10 项自动筛选。内容包括接口端点、参数说明、基于 HTTPS 的 cURL 示例、认证详情、错误处理，以及 C#、Java、Python 等多种语言的 SDK 代码片段。"
+weight: 65
+---
 
-## 重新设置 API
+此 REST API 可对列表中的**前 10 项**进行筛选。
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10
- 
+> **前置条件**  
+> • 使用 Aspose.Cells Cloud 认证机制获取有效的 JWT 令牌。  
+> • 将 Excel 工作簿上传至您的 Aspose Cloud 存储空间（或指定其所在的存储空间/文件夹）。  
+> • 明确需要筛选的工作表名称及单元格范围。
+
+## PutWorksheetFilterTop10 API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10
 ```
 
-请求参数为：
+### **安全与认证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路||
-|工作表名称|细绳|小路||
-|范围|细绳|询问||
-|字段索引|整数|询问||
-|位于顶部|布尔值|询问||
-|是百分比|布尔值|询问||
-|项目数量|整数|询问||
-|匹配空白|布尔值|询问||
-|刷新|布尔值|询问||
-|文件夹|细绳|询问||
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 采用安全机制，需使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的认证方式</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### 请求参数
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名         | 类型    | 位置   | 是否必需 | 默认值 | 描述                                                                 |
+| -------------- | ------- | ------ | -------- | ------ | -------------------------------------------------------------------- |
+| **name**       | string  | 路径   | 是       | —      | Excel 文件的名称。                                                  |
+| **sheetName**  | string  | 路径   | 是       | —      | 包含数据的工作表名称。                                              |
+| **range**      | string  | 查询   | 是       | —      | 应用筛选的单元格范围（例如 `A1:B10`）。                             |
+| **fieldIndex** | integer | 查询   | 是       | —      | 筛选所依据列的从零开始的索引。                                      |
+| **isTop**      | boolean | 查询   | 是       | `true` | 为 `true` 表示筛选前 N 项；为 `false` 表示筛选后 N 项。            |
+| **isPercent**  | boolean | 查询   | 否       | `false`| 为 `true` 时，将 `itemCount` 视为百分比；为 `false` 时为绝对数量。  |
+| **itemCount**  | integer | 查询   | 否       | `10`   | 筛选中包含的项目数量。                                              |
+| **matchBlanks**| boolean | 查询   | 否       | `false`| 为 `true` 时，将空单元格包含在筛选结果中。                          |
+| **refresh**    | boolean | 查询   | 否       | `false`| 为 `true` 时，在应用筛选后刷新筛选结果。                            |
+| **folder**     | string  | 查询   | 否       | —      | 存储空间中 Excel 文件所在的文件夹。                                 |
+| **storageName**| string  | 查询   | 否       | —      | Aspose Cloud 存储空间的名称。                                       |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **响应**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**典型错误响应**
+
+```json
+{
+    "Code":400,
+    "Message":"Bad Request – 缺少或无效的参数。"
+}
+```
+
+```json
+{
+    "Code":401,
+    "Message":"Unauthorized – JWT 令牌无效或缺失。"
+}
+```
+
+```json
+{
+    "Code":413,
+    "Message":"Payload Too Large – 上传的文件超出允许大小。"
+}
+```
+
+```json
+{
+    "Code":500,
+    "Message":"Internal Server Error – 意外的服务器错误。"
+}
+```
+
+**HTTP 状态码**
+
+| 状态码 | 含义           | 描述                                   |
+|--------|----------------|----------------------------------------|
+| 200    | OK（成功）     | 筛选器成功应用；响应包含操作详情。      |
+| 400    | Bad Request（请求错误） | 参数缺失或无效（例如不支持的文件类型）。 |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。                   |
+| 413    | Payload Too Large（载荷过大） | 上传的文件超过大小限制。            |
+| 500    | Internal Server Error（内部服务器错误） | 服务器发生意外错误。             |
+
+## 如何结合 SDK 使用 PutWorksheetFilterTop10 API
+
+### PutWorksheetFilterTop10 API 规范
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10) 定义了一个公开可访问的编程接口，允许您直接通过 Web 浏览器发起 REST 请求。
+
+您可使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用该 API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filterTop10?range=A1:B1&fieldIndex=0&isTop=true&itemCount=1&isPercent=true&matchBlanks=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filterTop10?range=A1:B10&fieldIndex=0&isTop=true&itemCount=10" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+### 使用 Aspose.Cells Cloud SDK
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是最快捷的开发方式。SDK 将处理底层细节，让您专注于业务逻辑。您可访问 [GitHub 仓库](https://github.com/aspose-cells-cloud) 查看 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

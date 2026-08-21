@@ -1,28 +1,32 @@
-﻿---
-title: Элемент электронной таблицы
-second_title: Documen
-type: docs
-url: /ru/spreadsheet-elements/
-keywords: Learn how to work with spreadsheet elements on Aspose Cells Cloud file
-description: Узнайте, как работать с элементами электронных таблиц в облачном файле Aspose Cells. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 100
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Файлы и хранилище
 ---
-- **[«Работа с Excel AutoFilter»](https://docs.aspose.cloud/cells/autofilter/)**
-- **["Работа с Excel Cells"](https://docs.aspose.cloud/cells/working-with-cells/)**
-- **[«Работа с диаграммами Excel»](https://docs.aspose.cloud/cells/charts/)**
-- **[«Работа со столбцами Excel»](https://docs.aspose.cloud/cells/columns/)**
-- **[«Работа с комментариями Excel»](https://docs.aspose.cloud/cells/comments/)**
-- **[«Работа с условным форматированием Excel»](https://docs.aspose.cloud/cells/conditional-formattings/)**
-- **[«Работа с гиперссылками Excel»](https://docs.aspose.cloud/cells/hyperlinks/)**
-- **[«Работа с объектом списка Excel»](https://docs.aspose.cloud/cells/list-objects/)**
-- **[«Работа с метаданными и свойствами Excel»](https://docs.aspose.cloud/cells/metadata/)**
-- **[«Работа с объектом Ole Excel»](https://docs.aspose.cloud/cells/oleobjects/)**
-- **[«Работа с разрывом страницы Excel»](https://docs.aspose.cloud/cells/working-with-pagebreaks/)**
-- **[«Работа с изображением Excel»](https://docs.aspose.cloud/cells/pictures/)**
-- **[«Работа со сводной таблицей Excel»](https://docs.aspose.cloud/cells/pivottables/)**
-- **[«Работа с диапазоном Excel»](https://docs.aspose.cloud/cells/ranges/)**
-- **["Работа с Excel строками"](https://docs.aspose.cloud/cells/rows/)**
-- **[«Работа с формой Excel»](https://docs.aspose.cloud/cells/shapes/)**
-- **[«Работа с проверкой Excel»](https://docs.aspose.cloud/cells/validations/)**
-- **[«Работа с рабочим листом Excel».](https://docs.aspose.cloud/cells/worksheets/)**
+title: "Элементы электронных таблиц"
+second_title: "Документ"
+type: docs
+url: /spreadsheet-elements/
+keywords: "Aspose.Cells, облако, Excel API, автофильтр, диаграммы, сводные таблицы, рабочие листы"
+description: "Ознакомьтесь с возможностями REST API Aspose.Cells Cloud для работы с Excel, включая автофильтр, ячейки, диаграммы, столбцы, комментарии, условное форматирование, гиперссылки, объекты списков, метаданные, OLE-объекты, разрывы страниц, изображения, сводные таблицы, диапазоны, строки, фигуры, валидацию и рабочие листы."
+weight: 100
+ArticleTitle: "Элементы электронных таблиц – Документация Aspose.Cells Cloud"
+---
+
+Изучите основные компоненты Excel, которыми можно управлять с помощью REST API Aspose.Cells Cloud. Каждая ссылка ниже ведёт к подробному руководству по работе с конкретным элементом электронной таблицы.
+
+- **["Работа с автофильтром в Excel"](https://docs.aspose.cloud/cells/autofilter/)** – Применение и настройка фильтров для отображения строк, соответствующих заданным критериям.  
+- **["Работа с ячейками Excel"](https://docs.aspose.cloud/cells/working-with-cells/)** – Чтение, запись и форматирование отдельных ячеек на различных рабочих листах.  
+- **["Работа с диаграммами Excel"](https://docs.aspose.cloud/cells/charts/)** – Создание, редактирование и обработка объектов диаграмм для визуализации данных.  
+- **["Работа со столбцами Excel"](https://docs.aspose.cloud/cells/columns/)** – Управление свойствами столбцов, такими как ширина, форматирование и видимость.  
+- **["Работа с комментариями в Excel"](https://docs.aspose.cloud/cells/comments/)** – Добавление, получение и удаление комментариев к ячейкам для совместной работы.  
+- **["Работа с условным форматированием в Excel"](https://docs.aspose.cloud/cells/conditional-formattings/)** – Определение правил, автоматически форматирующих ячейки на основе их значений.  
+- **["Работа с гиперссылками в Excel"](https://docs.aspose.cloud/cells/hyperlinks/)** – Вставка и управление гиперссылками на внешние ресурсы или внутренние расположения.  
+- **["Работа с объектами списков в Excel"](https://docs.aspose.cloud/cells/list-objects/)** – Работа с таблицами (объектами списков) для структурирования и анализа данных.  
+- **["Работа с метаданными и свойствами в Excel"](https://docs.aspose.cloud/cells/metadata/)** – Доступ и изменение метаданных рабочей книги и пользовательских свойств.  
+- **["Работа с OLE-объектами в Excel"](https://docs.aspose.cloud/cells/oleobjects/)** – Встраивание и управление OLE-объектами, такими как файлы Word или PowerPoint.  
+- **["Работа с разрывами страниц в Excel"](https://docs.aspose.cloud/cells/working-with-pagebreaks/)** – Вставка, удаление и перечисление разрывов страниц для контроля макета при печати.  
+- **["Работа с изображениями в Excel"](https://docs.aspose.cloud/cells/pictures/)** – Добавление, изменение размера и позиционирование изображений на рабочих листах.  
+- **["Работа со сводными таблицами в Excel"](https://docs.aspose.cloud/cells/pivottables/)** – Создание и настройка сводных таблиц для обобщения данных.  
+- **["Работа с диапазонами в Excel"](https://docs.aspose.cloud/cells/ranges/)** – Определение, чтение и изменение диапазонов ячеек для пакетной обработки.  
+- **["Работа со строками в Excel"](https://docs.aspose.cloud/cells/rows/)** – Настройка высоты строк, их видимости и форматирования.  
+- **["Работа с фигурами в Excel"](https://docs.aspose.cloud/cells/shapes/)** – Вставка и обработка графических фигур и автофигур.  
+- **["Работа с валидацией данных в Excel"](https://docs.aspose.cloud/cells/validations/)** – Применение правил валидации данных для ограничения ввода пользователем.  
+- **["Работа с рабочими листами в Excel"](https://docs.aspose.cloud/cells/worksheets/)** – Создание, удаление, переименование и управление настройками на уровне рабочего листа.  
+---

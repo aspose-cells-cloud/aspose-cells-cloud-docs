@@ -1,46 +1,46 @@
-﻿---
-title: Hämta MaxRow från Excel Worksheet
+---
+title: "Hämta MaxRow från ett Excel-arbetsblad"
 type: docs
 url: /sv/get-maxrow-from-excel-worksheet/
 weight: 40
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta MaxRow från Excel-arbetsblad
+ArticleTitle: "Hämta det högsta radnumret i ett Excel-arbetsblad – Aspose.Cells Cloud API"
+keywords: "Aspose.Cells, Excel, MaxRow, REST API, Molntjänst SDK, kalkylark, arbetsblad, GetMaxRow"
+description: "Lär dig hur du hämtar det högsta radnumret i ett arbetsblad i en Excel-fil med Aspose.Cells Cloud REST API. Inkluderar begäran syntax, svarsschema, SDK-exempel och användningsnoteringar."
 ---
-Denna REST API indikerar att en `maxrow` hämtas i en Excel-fil när parametern `cellOrMethodName` är `maxrow`.
 
-- **cURL Exempel**
+Denna REST API returnerar **högsta radnumret** i ett Excel-arbetsblad när parametern `cellOrMethodName` är inställd på `maxrow`.
 
+- **cURL-exempel**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxrow" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxrow" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MaxRow": 1048576
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK-familjen**
+- **Använd Aspose.Cells Cloud SDK:n**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda ett SDK är det mest effektiva sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på lågnivånivå, så att du kan fokusera på din projektlogik. Se [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:n.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
-
-
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:n:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -103,3 +103,27 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**API-referens**
+
+| Objekt | Detaljer |
+|--------|----------|
+| **Metod** | `GET` |
+| **Endpoint** | `/cells/{fileName}/worksheets/{sheetName}/cells/maxrow` |
+| **Sökvägsparametrar** | `fileName` – namn på Excel-filen (obligatoriskt) <br> `sheetName` – namn på arbetsbladet (obligatoriskt) |
+| **Frågeparametrar** | `folder` – mappsökväg i lagring (valfritt) <br> `storageName` – lagringsnamn (valfritt) |
+| **Lyckat svar** | `200 OK` <br> ```json { "MaxRow": heltal } ``` |
+| **Felaktiga svar** | `400 Bad Request` – ogiltiga parametrar <br> `401 Unauthorized` – autentiseringsfel <br> `404 Not Found` – fil eller arbetsblad hittades inte |
+
+**Förutsättningar**
+
+- En giltig Aspose Cloud-autentiseringstoken.  
+- Målarboksmappen måste vara uppladdad till Aspose Cloud-lagring eller tillgänglig via en offentlig URL.  
+
+**Noteringar**
+
+- Åtgärden finns tillgänglig i API-version **v3.0** och senare.  
+- Det returnerade värdet `MaxRow` motsvarar det högsta använda radindexet (1-baserat). För ett tomt arbetsblad är värdet vanligtvis `1`.  
+
+Följande SDK-exempel illustrerar hur du anropar operationen i olika programmeringsspråk.  
+---

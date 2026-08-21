@@ -1,76 +1,108 @@
-﻿---
-title: Ajouter un arrière-plan dans Workboo
-second_title: Documen
-linktitle: Annonce
-type: docs
-url: /fr/add-background-in-excel-file/
-aliases: [/add-background-in-workbook/,/workbook/add-background/,/workbook/background/add/]
-keywords: Add background on an Excel workbook
-description: Aspose.Cells Cloud REST API prend en charge l'ajout d'arrière-plan à un classeur Excel et à un fichier Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 160
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Ajouter un arrière-plan au classeur
 ---
-Ce REST API indique d'ajouter `background` sur un classeur Excel.
+title: "Ajouter une image d'arrière-plan à un classeur"
+second_title: "Document"
+linktitle: "Ajouter"
+type: docs
+url: /add-background-in-excel-file/
+aliases:
+  - /add-background-in-workbook/
+  - /workbook/add-background/
+  - /workbook/background/add/
+keywords: "Aspose.Cells, ajouter une image d'arrière-plan, API Excel, REST, SDK cloud, cURL, arrière-plan du classeur"
+description: "Découvrez comment ajouter une image d'arrière-plan à un classeur Excel à l'aide de l'API REST Aspose.Cells Cloud. Inclut les paramètres requis, les détails d'authentification, un exemple complet en cURL et des informations sur la gestion des erreurs."
+weight: 160
+---
 
-**Paramètre de requête**
+## API REST
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|picPath|chaîne|position de l'image.|
-|dossier|chaîne|Classeur original.|
-|nom de stockage|chaîne|Nom de stockage.|
+Cette API REST ajoute une **image d'arrière-plan** à un classeur Excel.
 
-**Paramètre du corps de la requête**
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/background
+```
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|fichier de données| fichier de données|Le fichier de données est enregistré dans le corps de la demande.|
+### **Sécurité et authentification**
 
-## RESTE API
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
-|**API**|**Taper**|**Description**|**Lien vers la ressource**|
-|:- |:- |:- |:- |
-|/cellules/{nom}/arrière-plan|METTRE|Ajouter un arrière-plan dans un fichier Excel|[Mettre l'arrière-plan du classeur](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)|
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Paramètres de requête
 
- Vous pouvez utiliser**cURL** Outil en ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le cloud API avec cURL.
+| Nom du paramètre | Type   | Description                                                |
+| ---------------- | ------ | ---------------------------------------------------------- |
+| `picPath`        | string | Chemin du fichier image à utiliser comme arrière-plan.    |
+| `folder`         | string | Dossier contenant le classeur original.                   |
+| `storageName`    | string | Nom du stockage où se trouve le fichier.                 |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### Paramètre du corps de la requête
+
+| Nom du paramètre | Type | Description                                            |
+| ---------------- | ---- | ------------------------------------------------------ |
+| `datafile`       | file | Fichier du classeur auquel l'arrière-plan sera appliqué. |
+
+**Paramètre de chemin** – `{name}` dans l’URL représente le **nom du fichier du classeur** (par exemple, `Book1.xlsx`).
+
+
+### **Réponse**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200
+}
+```
+
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                                |
+|------|-----------------------------|------------------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant.                            |
+| 413  | Charge utile trop grande    | Fichier téléchargé dépassant la limite de taille.         |
+| 500  | Erreur interne du serveur   | Erreur inattendue sur le serveur.                          |
+
+## Comment utiliser l’API PutWorkbookBackground avec les SDK
+
+### Spécification de l’API PutWorkbookBackground
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) définit une interface de programmation accessible publiquement qui permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande **cURL** pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre une requête complète, incluant l’indicateur de téléchargement de fichier multipart et l’en-tête d’authentification requis.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=DotnetFiles%2FWaterMark.png&folder=DotnetFiles" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger"
-
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=DotnetFiles%2FWaterMark.png&folder=DotnetFiles" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -F "datafile=@/path/to/Book1.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
- "Code": 200,
-
+  "Code": 200,
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+### Utiliser les SDK Aspose.Cells Cloud
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Utiliser un SDK est le moyen le plus rapide de développer. Un SDK abstractise les détails de bas niveau afin que vous puissiez vous concentrer sur votre logique métier. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +155,5 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---

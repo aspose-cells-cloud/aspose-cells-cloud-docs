@@ -1,74 +1,101 @@
-﻿---
-title: Mettre à jour les propriétés sur une feuille de calcul Excel
-second_title: Documen
-linktitle: Mise à jour
+---
+title: "Mettre à jour les propriétés d'une feuille de calcul – Référence de l'API Aspose.Cells Cloud (v3.0)"
+second_title: "Document"
+linktitle: "Mettre à jour"
 type: docs
-url: /fr/worksheets/update-properties/
+url: /worksheets/update-properties/
 aliases: [/update-excel-worksheet-properties/]
 weight: 20
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Mettre à jour les propriétés d'une feuille de calcul Excel
+keywords:
+  [
+    "Aspose.Cells",
+    "Excel",
+    "feuille de calcul",
+    "mettre à jour les propriétés",
+    "API REST",
+    "cloud",
+    "v3.0",
+  ]
+description: "Découvrez comment mettre à jour les propriétés de base d'une feuille de calcul Excel (par exemple, l'affichage des zéros, la visibilité de la règle) à l'aide de l'API REST Aspose.Cells Cloud v3.0. Inclut une requête cURL, des exemples SDK, des paramètres et la gestion des erreurs."
+ArticleTitle: "Mettre à jour les propriétés d'une feuille de calcul – Référence de l'API Aspose.Cells Cloud (v3.0)"
 ---
-Ce REST API indique `update worksheet base properties`.
- 
-## RSET API
- 
+
+Cet API REST met à jour les propriétés de base d'une feuille de calcul.
+
+## API REST
+
+**Prérequis :** Vous devez disposer d’un compte Aspose Cloud valide, obtenir un jeton d’accès JWT et vous assurer que le classeur cible est stocké dans un emplacement pris en charge. Toutes les requêtes doivent être effectuées via **HTTPS**.
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
- Les paramètres de la requête sont :
- 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin||
-| nom de la feuille| chaîne| chemin||
-| feuille|| corps||
-| dossier| chaîne| requête||
-| nom de stockage| chaîne| requête| nom de stockage.|
- 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetProperty) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
- 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Paramètres de la requête**
+
+| Nom du paramètre | Type   | Emplacement (chemin / chaîne de requête / corps HTTP) | Description                                                                                         |
+| ---------------- | ------ | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| name             | string | path                                                  | Nom du fichier de classeur (avec extension).                                                        |
+| sheetName        | string | path                                                  | Nom de la feuille de calcul à mettre à jour.                                                        |
+| sheet            | object | body                                                  | Objet JSON contenant des paires clé/valeur de propriétés de feuille de calcul (par exemple, `DisplayZeros`, `IsRulerVisible`). |
+| folder           | string | query                                                 | Chemin du dossier dans le stockage où se trouve le classeur.                                       |
+| storageName      | string | query                                                 | Nom du stockage à utiliser.                                                                         |
+
+L’objet **sheet** est envoyé dans le corps de la requête au format JSON. Les propriétés modifiables comprennent notamment `DisplayZeros`, `IsRulerVisible`, `IsGridlinesVisible`, ainsi que d’autres définies dans la spécification de l’API.
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetProperty) définit une interface de programmation publiquement accessible et permet d’effectuer directement des interactions REST depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1" \
 -X POST \
--d '{"DisplayZeros":"true","IsRulerVisible":"true"}'\
+-d '{"DisplayZeros":"true","IsRulerVisible":"true"}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+Codes de réponse typiques :
+
+- **200** – Succès. Les propriétés de la feuille de calcul ont été mises à jour.
+- **400** – Requête invalide (par exemple, JSON mal formé ou paramètre obligatoire manquant).
+- **401** – Non autorisé – jeton JWT manquant ou invalide.
+- **404** – Classeur ou feuille de calcul introuvable.
+- **500** – Erreur interne du serveur.
+
+| Code | Signification |
+|------|---------------|
+| 200 | Succès – les propriétés de la feuille de calcul ont été mises à jour. |
+| 400 | Requête incorrecte – JSON mal formé ou paramètre obligatoire manquant. |
+| 401 | Non autorisé – jeton JWT manquant ou invalide. |
+| 404 | Introuvable – le classeur ou la feuille de calcul n’existe pas. |
+| 500 | Erreur interne du serveur. |
+
 ## Famille de SDK Cloud
- 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
- 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
- 
- 
+
+L’utilisation d’un SDK est le moyen le plus rapide d’accélérer le développement. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants montrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
+
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -80,7 +107,6 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< tab tabNum="2" >}}
 
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-worksheet-UpdateWorksheetProperties-update-worksheet-properties.java" >}}
-
 
 {{< /tab >}}
 

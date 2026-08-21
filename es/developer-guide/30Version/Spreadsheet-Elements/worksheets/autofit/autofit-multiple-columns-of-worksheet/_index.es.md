@@ -1,67 +1,65 @@
-﻿---
-title: Ajustar automáticamente varias columnas en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Columna
-type: docs
-url: /es/worksheets/autofit/columns/
-aliases: [/autofit-multiple-columns-of-worksheet/]
-keywords: Autofit columns on an Excel workboo
-description: Aspose.Cells Cloud REST API admite el ajuste automático de columnas en un libro de trabajo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Ajuste automático de varias columnas en una hoja de cálculo Excel
 ---
-Este REST API indica que se debe ajustar automáticamente `multiple columns` en una hoja de cálculo Excel.
+title: "Autoajustar varias columnas en una hoja de cálculo de Excel"
+second_title: "Document"
+linktitle: "Columnas"
+type: docs
+url: /worksheets/autofit/columns/
+aliases: [/autofit-multiple-columns-of-worksheet/]
+keywords: "Aspose.Cells, autoajustar columnas, API de Excel, hoja de cálculo en la nube, REST"
+description: "Aprenda cómo autoajustar varias columnas en una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud (v3.0). Incluye el punto final, los parámetros, un ejemplo con cURL, manejo de errores y fragmentos de código para SDK en C#, Java, Python y más."
+weight: 20
+---
 
-## RSET API
+Esta API REST autoajusta **varias columnas** en una hoja de cálculo de Excel.
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
 ```
 
-Los parámetros de la solicitud son:
+### **Parámetros de la solicitud**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| El nombre del archivo.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| primeraColumna| entero| consulta| El índice de la columna de inicio.|
-| últimaColumna| entero| consulta| El índice de la columna final.|
-|[Opciones de autoajuste](/cells/es/auto-fitter-options/) || cuerpo| Opciones de ajuste automático.|
-| primeraFila| entero| consulta||
-| última fila| entero| consulta||
-| carpeta| cadena| consulta||
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro  | Tipo    | Ubicación | Descripción                                                                                                                               |
+| --------------------- | ------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| name                  | string  | path      | Nombre del archivo.                                                                                                                       |
+| sheetName             | string  | path      | Nombre de la hoja de cálculo.                                                                                                             |
+| firstColumn           | integer | query     | Índice de la columna inicial.                                                                                                              |
+| lastColumn            | integer | query     | Índice de la columna final.                                                                                                                |
+| autoFitterOptions\*   | object  | body      | Opciones del autoajustador (consulte [Opciones del autoajustador](/cells/auto-fitter-options/)). Incluye `AutoFitMergedCells`, `IgnoreHidden` y `OnlyAuto`. |
+| firstRow              | integer | query     | Índice de la fila inicial para el autoajuste (**opcional**).                                                                              |
+| lastRow               | integer | query     | Índice de la fila final para el autoajuste (**opcional**).                                                                                |
+| folder                | string  | query     | Ruta de la carpeta en el almacenamiento (**opcional**).                                                                                   |
+| storageName           | string  | query     | Nombre del almacenamiento (**opcional**).                                                                                                 |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+\*El nombre del parámetro se muestra como un enlace a la documentación relacionada.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) define una interfaz de programación accesible públicamente y permite realizar interacciones REST directamente desde un navegador web.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?lastColumn=5&firstColumn=0" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"AutoFitMergedCells" : true, "IgnoreHidden" : true, "OnlyAuto" : true}' 
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?lastColumn=5&firstColumn=0" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"AutoFitMergedCells": true, "IgnoreHidden": true, "OnlyAuto": true}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -70,9 +68,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel, lo que le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

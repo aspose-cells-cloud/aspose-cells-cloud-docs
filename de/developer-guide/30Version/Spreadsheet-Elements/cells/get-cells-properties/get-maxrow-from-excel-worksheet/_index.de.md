@@ -1,46 +1,46 @@
-﻿---
-title: Holen Sie sich MaxRow vom Arbeitsblatt Excel
+---
+title: "Ermitteln der MaxRow aus einem Excel-Arbeitsblatt"
 type: docs
 url: /de/get-maxrow-from-excel-worksheet/
 weight: 40
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, MaxRow aus Excel Arbeitsblatt abrufen
+ArticleTitle: "Höchste Zeilennummer in einem Excel-Arbeitsblatt abrufen – Aspose.Cells Cloud API"
+keywords: "Aspose.Cells, Excel, MaxRow, REST API, Cloud SDK, Tabellenkalkulation, Arbeitsblatt, GetMaxRow"
+description: "Erfahren Sie, wie Sie die höchste Zeilennummer eines Arbeitsblatts in einer Excel-Datei mithilfe der Aspose.Cells Cloud REST API abrufen. Enthält Anforderungssyntax, Antwortschema, SDK-Beispiele und Nutzungshinweise."
 ---
-Dieser REST API zeigt an, dass in einer Excel-Datei ein `maxrow` abgerufen wird, wenn der `cellOrMethodName`-Parameter `maxrow` ist.
 
-- **cURL Beispiel**
+Diese REST-API gibt die **höchste Zeilennummer** in einem Excel-Arbeitsblatt zurück, wenn der Parameter `cellOrMethodName` auf `maxrow` gesetzt ist.
 
+- **cURL-Beispiel**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Anforderung" tabName12="Antwort" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxrow" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxrow" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MaxRow": 1048576
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK-Familie**
+- **Verwenden der Aspose.Cells Cloud SDKs**
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist die effizienteste Methode zur Beschleunigung der Entwicklung. Ein SDK übernimmt die Details auf niedriger Ebene, sodass Sie sich auf die Logik Ihres Projekts konzentrieren können. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud).
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
-
-
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -103,3 +103,26 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**API-Referenz**
+
+| Element | Details |
+|--------|---------|
+| **Methode** | `GET` |
+| **Endpunkt** | `/cells/{fileName}/worksheets/{sheetName}/cells/maxrow` |
+| **Pfadparameter** | `fileName` – Name der Excel-Datei (erforderlich) <br> `sheetName` – Name des Arbeitsblatts (erforderlich) |
+| **Abfrageparameter** | `folder` – Pfad zum Ordner im Speicher (optional) <br> `storageName` – Name des Speichers (optional) |
+| **Erfolgsantwort** | `200 OK` <br> ```json { "MaxRow": Ganzzahl } ``` |
+| **Fehlerantworten** | `400 Bad Request` – ungültige Parameter <br> `401 Unauthorized` – Authentifizierungsfehler <br> `404 Not Found` – Datei oder Arbeitsblatt nicht gefunden |
+
+**Voraussetzungen**
+
+- Ein gültiges Aspose Cloud Authentifizierungstoken.  
+- Die Zielarbeitsmappe muss in den Aspose Cloud-Speicher hochgeladen oder über eine öffentliche URL erreichbar sein.  
+
+**Hinweise**
+
+- Der Vorgang ist ab API-Version **v3.0** verfügbar.  
+- Der zurückgegebene `MaxRow`-Wert entspricht dem höchsten verwendeten Zeilenindex (1-basiert). Bei einem leeren Arbeitsblatt beträgt der Wert typischerweise `1`.  
+
+Die folgenden SDK-Beispiele veranschaulichen den Aufruf des Vorgangs in verschiedenen Programmiersprachen.

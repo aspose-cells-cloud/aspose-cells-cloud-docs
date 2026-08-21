@@ -1,65 +1,78 @@
-﻿---
-title: Mettre à jour l'image dans un fichier Excel
-second_title: Documen
-linktitle: Mise à jour
-type: docs
-url: /fr/pictures/update/
-aliases: [/update-a-specific-picture-from-excel-workshee/]
-keywords: Update a picture in an Excel file
-description: Aspose.Cells Cloud REST API prend en charge la mise à jour d'une image dans un fichier Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 70
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Mettre à jour l'image dans un fichier Excel
 ---
-Ce REST API indique l'image `update` par index d'image pour une feuille de calcul Excel.
+title: "Mettre à jour une image dans un fichier Excel"
+second_title: "Document"
+linktitle: "Mettre à jour"
+type: docs
+url: /pictures/update/
+aliases: [/update-a-specific-picture-from-excel-workshee/]
+keywords: "Aspose.Cells Cloud, Excel, Mettre à jour une image, API REST, SDK"
+description: "Découvrez comment mettre à jour une image dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut les détails de la requête, un exemple cURL et des extraits de code SDK pour plusieurs langages."
+ArticleTitle: "Mettre à jour une image dans un fichier Excel à l’aide de l’API REST Aspose.Cells Cloud"
+weight: 70
+---
 
-## RSET API
+Cette API REST met à jour une image, identifiée par son index, dans une feuille de calcul Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
- 
+**Prérequis :** Vous devez disposer d’un jeton JWT Aspose Cloud valide, du fichier Excel cible stocké dans votre espace de stockage Aspose Cloud, et utiliser la version 3.0 ou ultérieure de l’API.
+
+## API PostWorksheetPicture
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
-| index des images| entier| chemin| L'index des images.|
-| image|| corps| Objet image|
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### **Paramètres de la requête**
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom du paramètre | Type    | Emplacement | Description                                                     |
+| ---------------- | ------- | ----------- | --------------------------------------------------------------- |
+| name             | string  | path        | Le nom du fichier Excel.                                        |
+| sheetName        | string  | path        | Le nom de la feuille de calcul contenant l’image.              |
+| pictureIndex     | integer | path        | Index de base zéro de l’image à mettre à jour.                  |
+| picture          | object  | body        | Objet JSON décrivant les propriétés de l’image à mettre à jour. |
+| folder           | string  | query       | Le dossier dans lequel le document est stocké.                 |
+| storageName      | string  | query       | Le nom du service de stockage.                                  |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Remarque :** L’index de l’image est de base zéro. Les formats d’image pris en charge incluent JPEG, PNG, BMP et GIF. La taille maximale d’une image est de 10 Mo.
+
+### Réponses d’erreur
+
+| Code HTTP | Description                                                        |
+| --------- | ------------------------------------------------------------------ |
+| 401       | Non autorisé – jeton manquant ou non valide.                      |
+| 404       | Non trouvé – le fichier, la feuille de calcul ou l’index d’image spécifié n’existe pas. |
+| 400       | Requête incorrecte – syntaxe de requête mal formée ou paramètres invalides. |
+| 500       | Erreur interne du serveur – une condition inattendue est survenue. |
+
+La <a href="https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture" rel="noopener noreferrer">Spécification OpenAPI</a> définit une interface de programmation publiquement accessible et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer un appel à l’API Cloud à l’aide de cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" \
 -X POST \
 -d "{ \"UpperLeftRow\": 10, \"Top\": 0, \"UpperLeftColumn\": 1, \"Left\": 0, \"LowerRightRow\": 0, \"Bottom\": 0, \"LowerRightColumn\": 3, \"ImageFormat\": \"jpg\", \"SourceFullName\": \"download.jpg\"}" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+-H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -68,9 +81,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le moyen le plus rapide de développer. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +136,5 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+
+*Voir aussi :* Ajouter une image, Supprimer une image, Obtenir une image, Effacer les images – autres opérations liées aux images dans l’API Aspose.Cells Cloud.

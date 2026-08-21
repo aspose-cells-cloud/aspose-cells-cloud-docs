@@ -1,75 +1,138 @@
-﻿---
-title: "كيفية تشغيل حاوية Aspose.Cells Cloud Docker: قم بتشغيل حاوية Aspose.Cells Cloud الرسمية في 3 خطوات: السحب والتكوين والبدء"
-second_title: Documen
-ArticleTitle: How to Run Aspose.Cells Cloud Docker Containe
-LinkTitle: Docker Containe
-type: docs
-url: /ar/getting-started/how-to-run-docker-container/
-aliases: [/how-to-run-docker-container/]
-description: كيفية تشغيل حاوية Docker Aspose.Cells السحابية. تدعم Aspose.Cells السحابية Excel إنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وتشغيلها وما إلى ذلك.
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، كيفية تشغيل حاوية Docker
 ---
- ال**عامل ميناء** صُممت هذه التقنية لأتمتة نشر التطبيقات باستخدام حاويات خفيفة الوزن. يمكن للمطورين استخدام**حاوية Docker** لتغليف التطبيق بكل مكتباته وتبعياته ونشر كل شيء كحزمة واحدة.
+title: "تشغيل حاوية Docker الخاصة بـ Aspose.Cells Cloud – سحب، تهيئة وتشغيل"
+second_title: "مستند"
+ArticleTitle: "كيفية تشغيل حاوية Docker الخاصة بـ Aspose.Cells Cloud"
+LinkTitle: "حاوية Docker"
+type: docs
+url: /getting-started/how-to-run-docker-container/
+aliases: [/how-to-run-docker-container/]
+description: "تعرّف على كيفية سحب حاوية Docker الخاصة بـ Aspose.Cells Cloud وتهيئتها وتشغيلها على نظامي التشغيل Windows أو Linux. يتضمن ملف YAML لـ Docker‑Compose، وإعداد الترخيص، وترقية المنافذ (Port mapping)، ونصائح لاستكشاف الأخطاء وإصلاحها."
+weight: 100
+keywords:
+  - "Aspose.Cells Cloud Docker"
+  - "حاوية Docker"
+  - "Docker Compose"
+  - "مفاتيح الترخيص"
+  - "Excel"
+  - "جدول بيانات"
+  - "واجهة برمجة تطبيقات سحابية"
+  - "Docker"
+  - "Aspose Cells"
+  - "واجهة برمجة تطبيقات"
+---
 
- Aspose.Cells نشر فريق Cloud حاوية Docker على[مركز دوكر](https://hub.docker.com/r/aspose/cells-cloud) لتسهيل الأمر على مستخدمي Docker. سترشدك الأقسام التالية إلى كيفية تشغيل أوامر Docker أو كتابة الإعدادات في ملف Yaml لأداة Docker Compose.
+تُصمم تقنية Docker لأتمتة نشر التطبيقات باستخدام حاويات خفيفة الوزن. ويمكن للمطورين استخدام حاوية Docker لحزم التطبيق مع جميع مكتباته واعتمادياته ونشرها كحزمة واحدة.
 
-## تكوين الحاوية
+نشر فريق Aspose.Cells Cloud حاوية Docker على <a href="https://hub.docker.com/r/aspose/cells-cloud" target="_blank" rel="noopener noreferrer">Docker Hub</a> لتسهيل استخدامها من قِبل مستخدمي Docker.
 
-### الأحجام المطلوبة
+**المتطلبات الأساسية** – تأكد من تثبيت محرك Docker بإصدار ≥ 20.x، وأن نظام التشغيل الخاص بك (Windows 10 أو Windows Server 2019/2022 أو إحدى توزيعات Linux المدعومة) يستوفي المتطلبات. ويمكنك تزويد مفتاح ترخيص اختياري لتشغيل التطبيق في الوضع المرخص.
 
-|مسار التركيب في الحاوية|وصف|
-|:- |:- |
-|ج:\الخطوط|مجلد يحتوي على الخطوط التي سيتم استخدامها لعرض المستندات|
-|ج:\البيانات|مجلد تخزين الملفات|
+- محرك Docker بإصدار ≥ 20.x مثبت  
+- نظام التشغيل المدعوم (Windows 10 أو Windows Server 2019/2022 أو إحدى توزيعات Linux)  
+- مفتاح ترخيص اختياري للتشغيل في الوضع المرخص  
 
-### حدود
+## تهيئة الحاوية
 
-|اسم|وصف|
-|:- |:- |
-|ترخيص المفتاح العام|المفتاح العام للترخيص|
-|مفتاح الترخيص الخاص|المفتاح الخاص للترخيص|
+### وحدات التخزين المطلوبة
 
-إذا تم حذف معلمات "الترخيص"، فسيعمل التطبيق في الوضع التجريبي.
+| مسار التحميل في الحاوية | الوصف |
+| :--- | :--- |
+| C:\fonts | مجلد يحتوي على الخطوط المستخدمة في عرض المستندات |
+| C:\data | مجلد لتخزين الملفات |
 
-### 1. اسحب صورة السحابة Aspose.Cells
+**البديل لنظامي التشغيل Linux/macOS**: استخدم المسارين `/fonts` و `/data` داخل الحاوية، وقم بربطهما بمجلدين على الجهاز المضيف مثل `/home/user/fonts` و `/home/user/data` عند تشغيل الحاوية.
+
+### المعاملات
+
+| الاسم | الوصف |
+| :--- | :--- |
+| LicensePublicKey | المفتاح العام للترخيص |
+| LicensePrivateKey | المفتاح الخاص للترخيص |
+
+إذا تم حذف معاملات **License**، يعمل التطبيق في الوضع التجريبي.
+
+### 1. سحب صورة Aspose.Cells Cloud
 
 ```bash
-# Pull Aspose.Cells Cloud Image latest version
-docker pull aspose/cells-cloud:latest
+# سحب إصدار مُحدد من صورة Aspose.Cells Cloud
+docker pull aspose/cells-cloud:25.9.0
 ```
 
 ```powershell
-# Pull Aspose.Cells Cloud Image  version on windows server 2019
-docker pull aspose/cells-cloud:ltsc2019.25.9.0 
-# Pull Aspose.Cells Cloud Image  version on windows server 2022
-docker pull aspose/cells-cloud:ltsc2022.25.9.0 
+# سحب صورة Aspose.Cells Cloud لنظام Windows Server 2019
+docker pull aspose/cells-cloud:ltsc2019.25.9.0
 
-# Pull Aspose.Cells Cloud Image  version on windows 11
-docker pull aspose/cells-cloud:ltsc2019.25.9.0 
+# سحب صورة Aspose.Cells Cloud لنظام Windows Server 2022
+docker pull aspose/cells-cloud:ltsc2022.25.9.0
+
+# سحب صورة Aspose.Cells Cloud لنظام Windows 11
+docker pull aspose/cells-cloud:ltsc2022.25.9.0
 ```
 
-### 2. تكوينات أداة Docker-Compose
+> **ملاحظة:** للحصول دائمًا على أحدث إصدار، يمكنك أيضًا سحب العلامة `latest`: `docker pull aspose/cells-cloud:latest`.
 
-يمكنك كتابة التكوينات التالية في ملف yaml الخاص بك لأداة Docker-Compose:
+### 2. التهيئة باستخدام أداة Docker‑Compose
 
-```JAVA
+يمكنك كتابة التهيئة التالية في ملف **docker‑compose.yml**:
+
+```yaml
 AsposeCellsCloud:
-      image: aspose/cells-cloud
-      ports: ["5000:80"]
-      volumes: [
-        "C:/Windows/Fonts:C:/Windows/Fonts",
-        "c:/data:c:/data",
-      ]
-      environment:
-        "LicensePublicKey": "yourKeyHere"
-        "LicensePrivateKey": "yourKeyHere"
+  image: aspose/cells-cloud:25.9.0
+  ports: ["5000:80"]   # منفذ المضيف 5000 ← منفذ الحاوية 80
+  volumes:
+    - "C:/Windows/Fonts:C:/Windows/Fonts"
+    - "c:/data:c:/data"
+  environment:
+    LicensePublicKey: "yourPublicKey"
+    LicensePrivateKey: "yourPrivateKey"
 ```
 
-### 3. قم بتشغيل حاوية Docker باستخدام سطر الأوامر
+> **ملاحظة:** يُشير تعيين المنافذ `5000:80` إلى أن واجهة برمجة التطبيقات ستكون متاحة عبر الرابط `http://localhost:5000`.
 
- يمكنك ببساطة تشغيل أمر docker التالي بعد سحب الحاوية من[مركز دوكر](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
+### 3. تشغيل حاوية Docker باستخدام سطر الأوامر
 
-```JAVA
-docker run   -e "LicensePublicKey=public_key" -e "LicensePrivateKey=private_key" -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 80:5000   aspose/cells-cloud
+```bash
+docker run \
+  -e "LicensePublicKey=yourPublicKey" \
+  -e "LicensePrivateKey=yourPrivateKey" \
+  -v c:/data:c:/data \
+  -v C:/Windows/Fonts:C:/Windows/Fonts \
+  -p 5000:80 \
+  aspose/cells-cloud:25.9.0
+```
+
+**استكشاف الأخطاء وإصلاحها:**  
+- **تعارض في المنافذ:** تأكد من أن منفذ 5000 على الجهاز المضيف غير مستخدم، أو غيّر التعيين إلى منفذ غير مستخدم.  
+- **فشل تحميل الترخيص:** تحقق من أن المفتاح العام والمفتاح الخاص تم تمريرهما بشكل صحيح كمتغيرات بيئة أو تم تحميلهما كملفات.  
+- **الخطوط مفقودة:** إذا ظهرت المستندات بخطوط غير صحيحة، تأكد من أن مجلد الخطوط مربوط بشكل صحيح ويحتوي على ملفات الخطوط المطلوبة.
+
+**موارد ذات صلة:**  
+- <a href="/cells/api/">مرجع واجهة برمجة التطبيقات</a> | <a href="/cells/license/">دليل تفعيل الترخيص</a> | <a href="/cells/getting-started/">نظرة عامة على البدء</a>
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Run Aspose.Cells Cloud Docker Container",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "url": "#1-pull-asposecells-cloud-image",
+      "name": "سحب صورة Docker",
+      "text": "شغّل الأمر `docker pull aspose/cells-cloud:<version>` لتنزيل الصورة المطلوبة."
+    },
+    {
+      "@type": "HowToStep",
+      "url": "#2-configurations-for-docker-compose-tool",
+      "name": "إنشاء ملف docker‑compose",
+      "text": "حدّد الصورة والمنافذ ووحدات التخزين ومتغيرات بيئة الترخيص في ملف `docker‑compose.yml`."
+    },
+    {
+      "@type": "HowToStep",
+      "url": "#3-run-a-docker-container-using-the-command-line",
+      "name": "تشغيل الحاوية",
+      "text": "نفّذ الأمر `docker run` مع متغيرات البيئة ووحدات التخزين وتعيين المنافذ المناسبة."
+    }
+  ]
+}
 ```

@@ -1,100 +1,104 @@
-﻿---
-title: Aspose.Cells Cloud Web API - تصدير مخطط جدول بيانات كملف تنسيق
-second_title: Documen
-ArticleTitle: Export a Spreadsheet Chart as a Format fil
-linktitle: تصدير الرسم البياني كنموذج
-type: docs
-url: /ar/export-chart-as-format/
-keywords: Export Chart, Aspose.Cells Cloud Web API, Spreadsheet Conversion, PDF Export, Image Export, REST, Excel, CSV, JSO
-description: يحول بكفاءة المخططات من جداول البيانات المخزنة في السحابة إلى تنسيقات محددة مثل PDF أو الصورة مباشرة دون تنزيلها
-weight: 100
-kwords: تصدير المخططات، REST، تحويل جداول البيانات، PDF، CSV، JSON، Markdown، Excel، تنسيق الصورة
 ---
-تصدير جدول بيانات سحابي/مخطط Excel إلى ملف بتنسيق آخر باستخدام Aspose.Cells Cloud Web API.
+title: "تصدير مخطط Excel – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+second_title: "مستند"
+description: "تحويل مخطط من ملف Excel مخزن في السحابة إلى تنسيق PDF أو PNG أو SVG أو تنسيقات أخرى باستخدام استدعاء REST واحد فقط."
+ArticleTitle: "كيفية تحويل ورقة عمل جدول بيانات محلي إلى ملف PDF: دليل خطوة بخطوة"
+linktitle: "تحويل ورقة العمل إلى PDF"
+type: docs
+url: /export-chart-as-format/
+keywords: "Aspose.Cells Cloud, تصدير المخطط, واجهة برمجة التطبيقات, PDF, PNG, SVG, Excel, REST, التحويل السحابي"
+weight: 100
+---
 
-## **تصدير الرسم البياني بالتنسيق API**
+قم بتحويل مخطط موجود في ملف عمل مخزن في مساحة التخزين الخاصة بـ Aspose Cloud إلى تنسيق ملف مختلف (PDF أو PNG أو SVG أو غيرها) دون تنزيل الملف المصدر.
+
+## واجهة برمجة تطبيقات ExportChartAsFormat
 
 ```http
-GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
+GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
 ```
 
-### **معلمات الطلب:**
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| (مطلوب) اسم ملف المصنف الذي سيتم استرجاعه.|
-| ورقة عمل| خيط| طريق| اسم ورقة العمل|
-| مؤشر الرسم البياني| عدد صحيح| طريق| مؤشر الرسم البياني|
-| شكل| خيط| استفسار| (مطلوب) تنسيق الإخراج المطلوب (على سبيل المثال، "png"، "pdf"، "svg").|
-| مجلد| خيط| استفسار| (اختياري) مسار المجلد الذي يتم تخزين المصنف فيه؛ الافتراضي هو null.|
-| اسم التخزين| خيط| استفسار|(اختياري) اسم التخزين إذا كنت تستخدم تخزينًا سحابيًا مخصصًا؛ استخدم التخزين الافتراضي إذا تم حذفه.|
-| المسار الخارجي| خيط| استفسار| (اختياري) مسار المجلد الذي يتم تخزين المصنف فيه؛ الافتراضي هو null.|
-|اسم التخزين الخارجي| خيط| استفسار| اسم تخزين ملف الإخراج.|
-| الخطوطالموقع| خيط| استفسار| استخدم الخطوط المخصصة.|
-| منطقة| خيط| استفسار| إعداد منطقة جدول البيانات.|
-| كلمة المرور| خيط| استفسار| كلمة المرور لفتح ملف جدول البيانات.|
+تُعد واجهات برمجة التطبيقات الخاصة بـ Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-### **إجابة**
+### 📦 معاملات الطلب
+
+| الاسم               | النوع    | الموقع | إجباري | الوصف                                                     |
+| ------------------ | ------- | ------ | ------ | --------------------------------------------------------- |
+| **name**           | نص     | المسار | نعم    | اسم ملف العمل.                                            |
+| **worksheet**      | نص     | المسار | نعم    | اسم ورقة العمل التي يحتويها المخطط.                        |
+| **chartIndex**     | عدد صحيح | المسار | نعم    | الفهرس بصفر كبداية للمخطط المراد تصديره.                  |
+| **format**         | نص     | الاستعلام | نعم    | تنسيق الإخراج المرغوب (مثل: `png`، `pdf`، `svg`).          |
+| **folder**         | نص     | الاستعلام | لا      | مسار المجلد الذي يخزن فيه ملف العمل (الافتراضي: الجذر).   |
+| **storageName**    | نص     | الاستعلام | لا      | اسم التخزين المخصص؛ تجاهل هذا الخيار لاستخدام التخزين الافتراضي. |
+| **outPath**        | نص     | الاستعلام | لا      | مسار المجلد الذي سيتم حفظ الملف المحول فيه.                |
+| **outStorageName** | نص     | الاستعلام | لا      | اسم التخزين لملف الإخراج.                                  |
+| **fontsLocation**  | نص     | الاستعلام | لا      | مسار مجلد يحتوي على الخطوط المخصصة.                        |
+| **region**         | نص     | الاستعلام | لا      | إعدادات الإقليم (مثل: `en-US`، `fr-FR`).                   |
+| **password**       | نص     | الاستعلام | لا      | كلمة المرور لفتح ملف عمل محمي.                             |
+
+### **الاستجابة**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream",
+      "Name": "file"
     }
+  }
 ]
 ```
 
-### رموز الخطأ
+**رموز حالة HTTP**
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+| الرمز | المعنى                   | الوصف                                                        |
+| ---- | ------------------------ | ------------------------------------------------------------ |
+| 200  | نجاح                     | تمت عملية التصفية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صالح             | معاملات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم).        |
+| 401  | غير مصادق عليه           | رمز JWT غير صالح أو مفقود.                                   |
+| 413  | حجم الحمولة كبير جداً     | حجم الملف المرفوع يتجاوز الحد المسموح به.                    |
+| 500  | خطأ داخلي في الخادم       | خطأ غير متوقع في الخادم.                                     |
 
-## لماذا يجب عليك استخدام مخطط جدول البيانات للتصدير بالتنسيق API؟
+## كيف تستخدم واجهة برمجة تطبيقات Export Chart as Format باستخدام مكتبات SDK؟
 
-- يمكنك تحويل ملفات السحابة إلى تنسيقات مختلفة في أي وقت وفي أي مكان.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+### مواصفات واجهة برمجة تطبيقات Export Chart as Format
 
-## كيفية استخدام مخطط جدول بيانات التصدير بالتنسيق API مع مجموعات تطوير البرامج (SDKs)؟
+توفر <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportChartAsFormat" rel="noopener noreferrer">مواصفات واجهة برمجة تطبيقات Export Chart as Format</a> واجهة برمجة تطبيقات متاحة للعامة وتتيح التفاعل عبر REST مباشرةً من متصفح ويب.
 
-### تصدير الرسم البياني بالتنسيق API المواصفات
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات ويب Aspose.Cells. يوضح المثال التالي كيفية إجراء المكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
- ال[تصدير الرسم البياني بالتنسيق API المواصفات](https://reference.aspose.cloud/cells/#/ConversionController/ExportChartAsFormat) يعرف واجهة برمجة يمكن الوصول إليها بشكل عام، مما يسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
-### استخدم Aspose.Cells Cloud SDKs
+{{< tab tabNum="11" >}}
 
-يعد استخدام SDK أسرع طريقة للتطوير، حيث يقوم بتجريد التفاصيل منخفضة المستوى، مما يسمح لك بتصدير بيانات مخطط جدول بيانات إلى ملف تنسيق باستخدام رمز قصير.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}?format={format}" \
+  -H "Authorization: Bearer {access_token}"
+```
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ExportChartAsFormat.cs" >}}
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ExportChartAsFormat.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (مشفرة بـ Base64)",
+  "contentType": "نوع MIME",
+  "fileDownloadName": "اسم ملف اختياري"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExportChartAsFormat.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ExportChartAsFormat.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ExportChartAsFormat.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ExportChartAsFormat.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ExportChartAsFormat.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportChartAsFormat.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### استخدام مكتبات SDK الخاصة بـ Aspose.Cells Cloud
+
+يعتبر استخدام مكتبة SDK الطريقة الأسرع للتطوير، لأنها تُجريد التفاصيل من المستوى المنخفض، مما يسمح لك بتحويل بيانات جدول البيانات إلى ملف PDF باستخدام كود محدود جداً. يُرجى الاطلاع على <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام مكتبات SDK مختلفة:

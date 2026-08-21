@@ -1,76 +1,98 @@
-﻿---
-title: Regrouper les lignes sur une feuille de calcul Excel
-second_title: Documen
-linktitle: Groupe
-type: docs
-url: /fr/rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
-keywords: Group rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge le regroupement de lignes dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 60
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Regrouper des lignes sur une feuille de calcul Excel
 ---
-Ce REST API indique de regrouper des lignes sur une feuille de calcul Excel.
+title: "Regrouper des lignes dans une feuille de calcul Excel"
+second_title: "Document"
+linktitle: "Regrouper"
+type: docs
+url: /rows/group/
+aliases: [/group-rows-in-excel-worksheet/]
+keywords: "regrouper des lignes, Excel, Aspose.Cells Cloud, API REST, SDK, feuille de calcul, API Excel"
+description: "Regrouper des lignes dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Prend en charge plusieurs SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) pour une intégration simplifiée."
+weight: 60
+ArticleTitle: "Regrouper des lignes dans une feuille de calcul Excel à l’aide de l’API Aspose.Cells Cloud"
+---
 
-## RSET API
+Cet API REST permet de regrouper des lignes dans une feuille de calcul Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
- 
+**Prérequis :**  
+- Un jeton d’accès OAuth 2.0 valide (Bearer JWT) doit être fourni dans l’en-tête `Authorization`.  
+- Le classeur doit déjà exister dans le `folder` spécifié de la `storageName` choisie (ou dans le stockage par défaut) avant l’envoi de la requête.
+
+## API PostGroupWorksheetRows
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Le nom du classeur.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| premierIndex| entier| requête| Le premier index de ligne à exploiter.|
-| dernierIndex| entier| requête| Le dernier index de ligne à exploiter.|
-| cacher| booléen| requête| état visible des lignes|
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API REST Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### **Paramètres de la requête**
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom du paramètre | Type    | Emplacement | Description                                                              |
+| ---------------- | ------- | ----------- | ------------------------------------------------------------------------ |
+| name             | string  | path        | Nom du fichier du classeur.                                              |
+| sheetName        | string  | path        | Nom de la feuille de calcul.                                             |
+| firstIndex       | integer | query       | Index de base zéro de la première ligne à regrouper.                     |
+| lastIndex        | integer | query       | Index de base zéro de la dernière ligne à regrouper.                     |
+| hide             | boolean | query       | Indique si les lignes groupées doivent être masquées (`true` ou `false`). |
+| folder           | string  | query       | Chemin du dossier contenant le classeur.                                 |
+| storageName      | string  | query       | Nom du stockage dans lequel se trouve le classeur.                       |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud à l’aide de cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/group?firstIndex=1&lastIndex=2&hide=true" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+-H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                                                 |
+|------|-----------------------------|-----------------------------------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Mauvaise requête            | Paramètres manquants ou invalides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant.                                             |
+| 413  | Payload trop volumineux     | Le fichier envoyé dépasse la taille limite autorisée.                      |
+| 500  | Erreur interne du serveur   | Erreur inattendue sur le serveur.                                          |
+
+Réponses d’erreur typiques :
+
+- **400 Mauvaise requête** – vérifiez que `firstIndex` et `lastIndex` sont des entiers valides et que `firstIndex` ≤ `lastIndex`.  
+- **401 Non autorisé** – vérifiez que l’en-tête `Authorization` contient un jeton JWT valide et à jour.  
+- **404 Non trouvé** – assurez-vous que le classeur (`name`) et la feuille de calcul (`sheetName`) existent dans le `folder` / `storageName` spécifiés.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Voir aussi :** [Dégrouper des lignes dans une feuille de calcul Excel](../rows/ungroup/ "Dégrouper des lignes dans une feuille de calcul Excel"), [Masquer des lignes dans une feuille de calcul Excel](../rows/hide/ "Masquer des lignes dans une feuille de calcul Excel"), [Afficher des lignes masquées dans une feuille de calcul Excel](../rows/unhide/ "Afficher des lignes masquées dans une feuille de calcul Excel").
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est la méthode optimale pour accélérer le développement. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur vos tâches de projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code ci-dessous illustrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

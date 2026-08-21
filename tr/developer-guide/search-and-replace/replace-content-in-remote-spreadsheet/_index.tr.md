@@ -1,83 +1,89 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Uzak Elektronik Tablodaki İçeriği Değiştir
-second_title: Documen
-ArticleTitle: Replace Content in Remote a Spreadshee
-linktitle: Uzak Elektronik Tablo İçeriğini Değiştir
-type: docs
-url: /tr/replace-content-in-remote-spreadsheet/
-keywords: Replace content, remote spreadsheet, Excel API, REST API, cloud storage, text replacemen
-description: Excel API'i kullanarak uzak elektronik tablolardaki metni verimli bir şekilde değiştirin
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, JSON, Markdown, Excel'deki içeriği değiştir, Bulut tabanlı metin değiştirme, Uzak elektronik tablodaki metni değiştir
 ---
-Uzak bir elektronik tablo dosyasında belirtilen metni verimli bir şekilde değiştirin.
+title: "Aspose.Cells Cloud Değiştirme Web API’si – Uzak Elektronik Tablo İçeriğini Güncelleştir"
+second_title: "Belge"
+ArticleTitle: "Bulut Excel Dosyalarında Toplu Metin Değiştirme – Bul ve Değiştir API’si"
+linktitle: "Uzak Elektronik Tablo İçeriğini Değiştir"
+type: docs
+url: /replace-content-in-remote-spreadsheet/
+keywords: "Aspose.Cells Cloud, içerik değiştirme, uzak elektronik tablo, bul ve değiştir API’si, bulut Excel, toplu metin değiştirme"
+description: "Aspose.Cells Cloud Bul ve Değiştir API’si ile uzaktaki Excel çalışma kitaplarındaki metinleri toplu olarak güncelleştirin. Güvenli HTTPS uç noktası, OAuth2 kimlik doğrulama ve hızlı entegrasyon için hazır SDK örnekleri."
+weight: 100
+---
 
-## **Uzak Elektronik Tablodaki İçeriği Değiştir API**
+Bulutta depolanan uzak Excel dosyaları üzerinde toplu metin değiştirme işlemi gerçekleştirin. Aspose.Cells Cloud için Bul ve Değiştir API’si ile belirli metin dizgilerini verimli bir şekilde bulun ve güncelleyin.
 
+
+## **Uzak Elektronik Tablo İçeriğini Değiştirme API’si**
+
+### **Web API’si**
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/{name}/replace/content
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/replace/content
+
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT jeton tabanlı kimlik doğrulama</a> gerektirir.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
-### **İstek Parametreleri:**
+### İstek Parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi| Tanım|
-|:- |:- |:- |:- |
-| isim| Sicim| Yol| Değiştirilecek çalışma kitabı dosyasının adı.|
-| aramaMetni| Sicim| Sorgu| E-tabloda aranacak metin.|
-| Metni değiştir| Sicim| Sorgu| Bulunan örneklerin yerine geçecek metin.|
-| dosya| Sicim| Sorgu| Çalışma kitabının saklandığı klasör yolu.|
-| depolamaAdı| Sicim| Sorgu|(İsteğe bağlı) Özel bulut depolama alanı kullanılıyorsa depolama alanının adı. Belirtilmezse varsayılan depolama alanını kullanın.|
-| bölge| Sicim| Sorgu| E-tablo bölge ayarı.|
-| şifre| Sicim| Sorgu| E-tablo dosyasını açmak için şifre.|
+| Parametre Adı  | Tür    | Konum  | Açıklama                                                                                                                                            |
+| --------------- | ------ | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**        | String | Yol    | Değiştirilecek, bulut depolama alanında saklanan çalışma kitaplığı dosyasının adı (örneğin, `"rapor.xlsx"`).                                        |
+| **searchText**  | String | Sorgu  | Tüm çalışma kitaplığı içinde bulunacak metin dizgisi. Arama büyük/küçük harfe duyarlıdır ve diğer parametrelerle kısıtlanmadığı sürece tüm sayfalara uygulanır. |
+| **replaceText** | String | Sorgu  | `searchText` ile eşleşen tüm durumların değiştirileceği metin dizgisi.                                                                             |
+| **folder**      | String | Sorgu  | Kaynak çalışma kitabını içeren bulut depolama klasör yolu (örneğin, `"/belgeler/üç_aylik/"`).                                                      |
+| **storageName** | String | Sorgu  | _(İsteğe bağlı)_ Özel bir bulut depolama adı (örneğin, `"MyS3Bucket"`). Atlanırsa, hesap için yapılandırılmış varsayılan depolama kullanılır.      |
+| **region**      | String | Sorgu  | _(İsteğe bağlı)_ Karakter kodlamasını ve dil-özel arama davranışını etkileyebilecek yerel kimlik (örneğin, `"tr-TR"`).                               |
+| **password**    | String | Sorgu  | _(İsteğe bağlı)_ Korumalı bir çalışma kitabını açmak için gerekli şifre.                                                                            |
 
-### **Cevap**
+### Yanıt
+
+Normalde başarılı bir yanıt, işlemin durumunu ve gerçekleştirilen değiştirme sayısını döndürür:
 
 ```json
 {
-  "Name": "CellsCloudResponse",
-  "Type": "Class",
-  "Properties": [
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
-    }
-  ]
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 ### Hata Kodları
 
-- **400 Kötü İstek**: Geçersiz Apose.Cells Bulut API URI.
-- **401 Yetkisiz**: Geçersiz erişim belirteci. Veya geçersiz istemci kimliği ve sırrı.
-- **404 Bulunamadı**: E-tablo dosyasına erişilemiyor.
-- **500 Sunucu Hatası**: Hesaplama verilerinin alınmasında elektronik tabloda bir anormallik tespit edildi.
+- **400 Bad Request** – Geçersiz Aspose.Cells Cloud API URI’si.
+- **401 Unauthorized** – Eksik veya geçersiz OAuth 2.0 erişim jetonu.
+- **404 Not Found** – Belirtilen elektronik tablo dosyasına ulaşılamadı.
+- **500 Server Error** – İstek işlenirken beklenmeyen sunucu tarafı bir sorun oluştu.
 
-## Uzaktan E-Tablo API'de İçeriği Değiştir'i nerede kullanmalıyız?
+## Hangi Durumlarda Uzak Elektronik Tablo İçeriğini Değiştirme API’si Kullanmalısınız?
 
-Uzaktaki bir elektronik tabloda içeriği değiştirmeniz gerektiğinde API'i kullanabilirsiniz.
+- **Toplu Bulut Dosyası Güncelleme** – AWS S3 veya Azure Blob gibi bulut depolamalarında saklanan birden fazla Excel dosyasının içeriğini değiştirin.
+- **Dinamik Bulut Şablonları Doldurma** – Bulutta depolanan rapor şablonlarını güncel verilerle doldurun.
+- **Bölgeler Arası Dosya Senkronizasyonu** – Farklı coğrafi depolama bölgelerindeki Excel dosyalarının tutarlılığını sağlayın.
 
-## Uzaktan E-Tablo API'deki İçeriği Değiştir özelliğini neden kullanmalısınız?
+## Neden Uzak Elektronik Tablo İçeriğini Değiştirme API’si Kullanmalısınız?
 
-- Uzaktaki elektronik tablolardaki içeriği hızla değiştirin.
-- Mevcut SDK üzerinden geliştirme hızlı bir şekilde tamamlanabilir.
+- **Geliştirici Dostu** – Aspose.Cells Cloud, birçok programlama dili için SDK kütüphaneleri sağlar; özel bir çözüm oluşturmak yerine geliştirme çabasını azaltır.
+- **Düşük İş Gücü Maliyeti** – Belgeleri manuel olarak birleştirmek için özel personel gerektirmesini ortadan kaldırır.
+- **Ödeme-Yalnızca-Kullanım** – Ön ödeme gerektirmez; yalnızca gerçekleştirdiğiniz API çağrıları için ödeme yaparsınız.
+- **Sıfır Bakım Maliyeti** – Yönetilecek sunucu yoktur, yazılım güncellemesi gerekmez ve uyumluluk sorunları yoktur.
+- **Tüm Hücre Biçimlendirmesi, Formülleri ve Grafikleri Korunur** – Metin değiştirme işlemi, orijinal çalışma kitabının düzenini ve hesaplamalarını korur.
 
-## Uzak E-Tablo API'deki İçeriği Değiştir özelliğinin SDK'larla nasıl kullanılacağı
+## SDK’lar ile Uzak Elektronik Tablo İçeriğini Değiştirme API’si Nasıl Kullanılır?
 
 ### OpenAPI Spesifikasyonu
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/SearchControllor/ReplaceContentInRemoteSpreadsheet) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceContentInRemoteRange), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-### Aspose.Cells Bulut SDK'larını kullanın
+### Aspose.Cells Cloud SDK’larını Kullanın
 
-SDK'yı kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. SDK, temel ayrıntıları ele alarak, hücrelerdeki içerikleri elektronik tablolarda minimum kodla kolayca değiştirmenize olanak tanır.
- Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoldur. SDK, alttaki ayrıntıları yönetir ve size elektronik tablolarda minimum kodla içerik değiştirme işlemini uygulamanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK’ları kullanarak Aspose.Cells web hizmetlerine nasıl istek gönderileceğini göstermektedir:
+
+
+---

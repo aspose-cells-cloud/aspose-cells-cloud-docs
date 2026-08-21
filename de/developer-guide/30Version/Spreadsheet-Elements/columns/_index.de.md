@@ -1,22 +1,26 @@
-﻿---
-title: Arbeiten mit der Spalte Excel
-second_title: Documen
-linktitle: Spalte
-type: docs
-url: /de/columns/
-aliases: [/working-with-columns/]
-keywords: REST API, columns, spreadsheets, exce
-description: "Cells.Cloud API für Excel bedienen: Spalten aus einem Excel Arbeitsblatt einblenden"
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Spalten
 ---
+title: "Arbeiten mit Excel-Spalten"
+second_title: "Dokument"
+linktitle: "Spalten"
+type: docs
+url: /columns/
+aliases: [/working-with-columns/]
+keywords: "Excel, Spalten, Aspose.Cells Cloud, API, Tabellenkalkulation, Arbeitsblatt, REST-API"
+description: "Detaillierte Anleitung zu den API-Vorgängen von Aspose.Cells Cloud für Excel-Arbeitsblattspalten, einschließlich Abruf, Hinzufügen, Kopieren, Ausblenden, Einblenden, Gruppieren, Aufheben der Gruppierung und Löschen."
+weight: 100
+ArticleTitle: "Arbeiten mit Excel-Spalten – Aspose.Cells Cloud-Dokumentation"
+---
+
 ## Arbeiten mit Spalten in einer Excel-Datei
 
-- [So erhalten Sie eine Spalte aus einem Arbeitsblatt Excel.](/cells/de/columns/get/)
-- [So fügen Sie einem Arbeitsblatt Excel eine leere Spalte hinzu.](/cells/de/columns/add/)
-- [So kopieren Sie Spalten in einem Arbeitsblatt Excel.](/cells/de/columns/copy/)
-- [So blenden Sie Spalten in einem Arbeitsblatt Excel aus.](/cells/de/columns/hide/)
-- [So blenden Sie Spalten in einem Arbeitsblatt Excel ein.](/cells/de/columns/unhide/)
-- [So gruppieren Sie Spalten in einem Arbeitsblatt Excel.](/cells/de/columns/group/)
-- [So heben Sie die Gruppierung von Spalten in einem Arbeitsblatt Excel auf.](/cells/de/columns/ungroup/)
-- [So löschen Sie eine Spalte in einem Arbeitsblatt Excel.](/cells/de/columns/delete/)
+Diese Seite bietet eine knappe Übersicht über die wichtigsten spaltenbezogenen Vorgänge, die über die Aspose.Cells Cloud API verfügbar sind. Nutzen Sie die folgenden Links, um zu den detaillierten Dokumentationen für jede Aktion zu gelangen, einschließlich Anforderungsparameter, Beispielcode und Beispielergebnissen.
+
+- [Wie man eine Spalte aus einem Excel-Arbeitsblatt abruft.](/cells/columns/get/)
+- [Wie man eine leere Spalte zu einem Excel-Arbeitsblatt hinzufügt.](/cells/columns/add/)
+- [Wie man Spalten in einem Excel-Arbeitsblatt kopiert.](/cells/columns/copy/)
+- [Wie man Spalten in einem Excel-Arbeitsblatt ausblendet.](/cells/columns/hide/)
+- [Wie man Spalten in einem Excel-Arbeitsblatt einblendet.](/cells/columns/unhide/)
+- [Wie man Spalten in einem Excel-Arbeitsblatt gruppiert.](/cells/columns/group/)
+- [Wie man die Gruppierung von Spalten in einem Excel-Arbeitsblatt aufhebt.](/cells/columns/ungroup/)
+- [Wie man eine Spalte aus einem Excel-Arbeitsblatt löscht.](/cells/columns/delete/)
+---

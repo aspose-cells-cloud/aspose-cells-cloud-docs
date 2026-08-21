@@ -1,75 +1,91 @@
-﻿---
-title: Скрыть строки на листе Excel
-second_title: Documen
-linktitle: Спрятан
+---
+title: "Скрытие строк в рабочей книге Excel"
+second_title: "Документ"
+linktype: "Скрыть"
 type: docs
 url: /ru/rows/hide/
 aliases: [/hide-rows-in-excel-worksheet/]
-keywords: Hide rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает скрытие строк на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+keywords: "скрыть строки, Aspose.Cells Cloud, Excel API, REST, SDK"
+description: "Узнайте, как скрыть одну или несколько строк в рабочей книге Excel с помощью REST API Aspose.Cells Cloud. Включает пример cURL, фрагменты SDK, параметры, аутентификацию, детали ответа и обработку ошибок."
 weight: 40
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Скрыть строки на листе Excel
+ArticleTitle: "Скрытие строк в рабочей книге Excel с помощью API Aspose.Cells Cloud"
 ---
-Этот REST API указывает на необходимость скрыть строки на листе Excel.
 
-## РСЕT API
+Этот REST API скрывает строки в рабочей книге Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
- 
+**Требования:** Действующий JWT-токен, полученный из OAuth-эндпоинта Aspose Cloud, рабочая книга, сохранённая в облачном хранилище Aspose, и имя рабочего листа, содержащего строки, которые нужно скрыть. API работает с файлами Excel в форматах XLS, XLSX и других поддерживаемых форматах.
+
+## API PostHideWorksheetRows
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| стартров| целое число| запрос| Начальный индекс строки, подлежащей обработке.|
-| totalRows| целое число| запрос| Количество обрабатываемых рядов.|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### Параметры запроса
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Параметр        | Тип     | Расположение | Описание                                                         |
+| --------------- | ------- | ------------ | ---------------------------------------------------------------- |
+| **name**        | string  | path         | Имя файла рабочей книги.                                         |
+| **sheetName**   | string  | path         | Имя рабочего листа, содержащего строки, которые нужно скрыть.   |
+| **startrow**    | integer | query        | Индекс первой скрываемой строки (отсчёт с нуля).                 |
+| **totalRows**   | integer | query        | Количество последовательных строк для скрытия, начиная с **startrow**. |
+| **folder**      | string  | query        | Папка в хранилище, где расположена рабочая книга.               |
+| **storageName** | string  | query        | Имя службы хранилища.                                            |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) предоставляет общедоступное программное интерфейсное описание, позволяющее выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки **cURL** для вызова веб-сервисов Aspose.Cells. API требует JWT-токена, полученного из OAuth-эндпоинта Aspose Cloud; его необходимо указать в заголовке `Authorization`. Ниже приведён пример скрытия строки с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/hide?startrow=1&totalRows=1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Коды состояния ответа**
+
+| Код | Описание |
+|-----|----------|
+| 200 | Успех — строки скрыты |
+| 400 | Неверный запрос — недопустимые параметры |
+| 401 | Неавторизован — отсутствует или недействителен JWT-токен |
+| 404 | Не найдено — рабочая книга или рабочий лист не существуют |
+| 500 | Ошибка сервера — внутренняя ошибка обработки |
+
+При успешном вызове возвращается JSON-объект, содержащий поля `Code` и `Status`. В случае ошибки в ответе также присутствуют дополнительные поля, например `Message`, и соответствующие HTTP-коды состояния (например, 400, 401, 404, 500).
+
+**Примечания:** Убедитесь, что значение `startrow` находится в пределах допустимого диапазона строк рабочего листа; в противном случае API вернёт ошибку 400. Индексы строк начинаются с нуля, т.е. `startrow=0` соответствует первой строке.
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ интеграции этой функциональности в ваше приложение. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на бизнес-логике. Полный список облачных SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют скрытие строк с помощью различных SDK. (Имена файлов примеров содержат «Unhide» из-за устаревшего именования; однако внутри каждого примера выполняется операция **Hide**.)
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

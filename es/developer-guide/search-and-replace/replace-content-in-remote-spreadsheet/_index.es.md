@@ -1,83 +1,89 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Reemplazar contenido en hoja de cálculo remota
-second_title: Documen
-ArticleTitle: Replace Content in Remote a Spreadshee
-linktitle: Reemplazar el contenido de la hoja de cálculo remota
-type: docs
-url: /es/replace-content-in-remote-spreadsheet/
-keywords: Replace content, remote spreadsheet, Excel API, REST API, cloud storage, text replacemen
-description: Reemplace texto de manera eficiente en hojas de cálculo remotas utilizando Excel API
-weight: 100
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown, Reemplazar contenido en Excel, Reemplazo de texto basado en la nube, Modificar texto en una hoja de cálculo remota
 ---
-Reemplace de manera eficiente el texto especificado dentro de un archivo de hoja de cálculo remota.
+title: "Aspose.Cells Cloud Replace Web API – Actualizar texto en hojas de cálculo remotas"
+second_title: "Documentación"
+ArticleTitle: "Sustitución masiva de texto en archivos Excel en la nube – API de buscar y reemplazar"
+linktitle: "Reemplazar contenido en hoja de cálculo remota"
+type: docs
+url: /replace-content-in-remote-spreadsheet/
+keywords: "Aspose.Cells Cloud, reemplazar contenido, hoja de cálculo remota, API de buscar y reemplazar, Excel en la nube, sustitución masiva de texto"
+description: "Utilice la API de buscar y reemplazar de Aspose.Cells Cloud para actualizar masivamente el texto en libros de Excel alojados en la nube. Endpoint seguro mediante HTTPS, autenticación OAuth2 y ejemplos listos para usar de SDKs para una integración rápida."
+weight: 100
+---
 
-## **Reemplazar contenido en hoja de cálculo remota API**
+Realice la sustitución masiva de texto en archivos Excel alojados en la nube. Busque y actualice eficientemente cadenas de texto específicas mediante la API de buscar y reemplazar de Aspose.Cells para hojas de cálculo en la nube.
 
+
+## **Reemplazar contenido en la API de hoja de cálculo remota**
+
+### **API web**
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/{name}/replace/content
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/replace/content
+
+### **Seguridad y autenticación**
+
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
-### **Parámetros de la solicitud:**
+### Parámetros de la solicitud
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody| Descripción|
-|:- |:- |:- |:- |
-| nombre| Cadena| Camino| El nombre del archivo del libro de trabajo que se va a modificar.|
-| buscarTexto| Cadena| Consulta| El texto a buscar en la hoja de cálculo.|
-| reemplazarTexto| Cadena| Consulta| El texto que reemplazará las ocurrencias encontradas.|
-| carpeta| Cadena| Consulta| La ruta de la carpeta donde se almacena el libro de trabajo.|
-| nombreDeAlmacenamiento| Cadena| Consulta|(Opcional) El nombre del almacenamiento si se usa almacenamiento en la nube personalizado. Si se omite, utilice el almacenamiento predeterminado.|
-| región| Cadena| Consulta| La configuración de la región de la hoja de cálculo.|
-| contraseña| Cadena| Consulta| La contraseña para abrir el archivo de hoja de cálculo.|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción                                                                                                                                                        |
+|----------------------|--------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **name**             | Cadena | Ruta      | Nombre del archivo del libro almacenado en el almacenamiento en la nube que se va a modificar (por ejemplo, `"informe.xlsx"`).                                   |
+| **searchText**       | Cadena | Consulta  | Cadena que se buscará en todo el libro. La búsqueda distingue entre mayúsculas y minúsculas y se aplica a todas las hojas de cálculo, salvo que se restringa mediante otros parámetros. |
+| **replaceText**      | Cadena | Consulta  | Cadena que reemplazará todas las apariciones de `searchText`.                                                                                                     |
+| **folder**           | Cadena | Consulta  | Ruta de la carpeta en el almacenamiento en la nube donde se encuentra el libro de origen (por ejemplo, `"/documents/quarterly/"`).                               |
+| **storageName**      | Cadena | Consulta  | _(Opcional)_ Nombre de un almacenamiento en la nube personalizado (por ejemplo, `"MiS3Bucket"`). Si se omite, se utilizará el almacenamiento predeterminado configurado para la cuenta. |
+| **region**           | Cadena | Consulta  | _(Opcional)_ Identificador regional que puede afectar la codificación de caracteres y el comportamiento de búsqueda específico del idioma (por ejemplo, `"es-ES"`). |
+| **password**         | Cadena | Consulta  | _(Opcional)_ Contraseña para abrir un libro protegido.                                                                                                            |
 
-### **Respuesta**
+### Respuesta
+
+Una respuesta correcta típica devuelve el estado de la operación y el número de reemplazos realizados:
 
 ```json
 {
-  "Name": "CellsCloudResponse",
-  "Type": "Class",
-  "Properties": [
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
-    }
-  ]
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 ### Códigos de error
 
-- **400 Solicitud incorrecta**: URI de nube Apose.Cells no válido API.
-- **401 No autorizado**Token de acceso no válido. O ID de cliente y secreto no válidos.
-- **404 No encontrado**:El archivo de hoja de cálculo no es accesible.
-- **Error de servidor 500**:La hoja de cálculo ha encontrado una anomalía al obtener los datos de cálculo.
+- **400 Bad Request (Solicitud incorrecta)** – URI inválido de la API de Aspose.Cells Cloud.
+- **401 Unauthorized (No autorizado)** – Token de acceso OAuth 2.0 ausente o inválido.
+- **404 Not Found (No encontrado)** – No se pudo acceder al archivo de hoja de cálculo especificado.
+- **500 Server Error (Error del servidor)** – Se produjo un problema inesperado del lado del servidor al procesar la solicitud.
 
-## ¿Dónde debemos utilizar el contenido Reemplazar en la hoja de cálculo remota API?
+## ¿Cuándo debería utilizar la API de reemplazar contenido en hoja de cálculo remota?
 
-Cuando necesite reemplazar contenido en una hoja de cálculo remota, puede usar este API.
+- **Actualización por lotes de archivos en la nube** – Modifique el contenido de varios archivos Excel almacenados en almacenamientos en la nube como AWS S3 o Azure Blob.
+- **Relleno dinámico de plantillas en la nube** – Rellene plantillas de informes alojadas en la nube con datos actualizados.
+- **Sincronización de archivos entre regiones** – Mantenga la coherencia de los archivos Excel en diferentes regiones geográficas de almacenamiento.
 
-## ¿Por qué debería utilizar Reemplazar contenido en la hoja de cálculo remota API?
+## ¿Por qué debería utilizar la API de reemplazar contenido en hoja de cálculo remota?
 
-- Reemplace rápidamente contenido en hojas de cálculo remotas.
-- El desarrollo se puede completar rápidamente a través del SDK existente.
+- **Amigable para desarrolladores** – Aspose.Cells Cloud proporciona bibliotecas SDK para múltiples lenguajes de programación, reduciendo el esfuerzo de desarrollo frente a la creación de una solución personalizada.
+- **Reducción de costos de mano de obra** – Elimina la necesidad de personal dedicado para consolidar documentos manualmente.
+- **Pago por uso** – Sin inversión inicial; solo paga por las llamadas a la API que realmente realice.
+- **Costos cero de mantenimiento** – Sin servidores que gestionar, sin actualizaciones de software y sin preocupaciones por compatibilidad.
+- **Conservación de todo formato de celda, fórmulas y gráficos** – La operación conserva la disposición y los cálculos originales del libro tras la sustitución del texto.
 
-## Cómo usar Reemplazar contenido en la hoja de cálculo remota API con SDK
+## Cómo utilizar la API de reemplazar contenido en hoja de cálculo remota con SDKs
 
 ### Especificación OpenAPI
 
- El[Especificación OpenAPI](https://reference.aspose.cloud/cells/#/SearchControllor/ReplaceContentInRemoteSpreadsheet) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación OpenAPI](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceContentInRemoteRange) define una interfaz de programación accesible públicamente y permite realizar interacciones REST directamente desde un navegador web.
 
-### Utilice los SDK de la nube Aspose.Cells
+### Utilizar los SDKs de Aspose.Cells Cloud
 
-Usar el SDK es la mejor manera de acelerar el desarrollo. El SDK gestiona los detalles subyacentes, lo que permite implementar fácilmente el reemplazo de contenido en las celdas de las hojas de cálculo con un mínimo de código.
- Por favor, consulte el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar los SDKs es la mejor forma de acelerar el desarrollo. Los SDK gestionan los detalles subyacentes, permitiéndole implementar simplemente la sustitución de contenido en hojas de cálculo con un mínimo de código. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDKs de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web de Aspose.Cells utilizando diversos SDKs:
+
+
+---

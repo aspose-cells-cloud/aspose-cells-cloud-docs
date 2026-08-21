@@ -1,76 +1,93 @@
-﻿---
-title: Сортировка данных диапазона на рабочем листе Excel
-second_title: Documen
-linktitle: Сор
-type: docs
-url: /ru/worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
-keywords: Sort range data on an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает сортировку диапазонов данных на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Сортировка данных диапазона на листе Excel
 ---
-Этот REST API указывает на `sort worksheet range data`.
- 
-## РСЕT API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
- 
+title: "Сортировка данных диапазона на листе Excel"
+second_title: "Документ"
+linktitle: "Сортировка"
+type: docs
+url: /worksheets/sort-data/
+aliases: [/sort-worksheet-data/]
+keywords: "Aspose.Cells Cloud, API сортировки Excel, сортировка диапазона на листе, REST API, dataSorter"
+description: "Сортировка конкретного диапазона на листе Excel с помощью REST API Aspose.Cells Cloud. Включает эндпоинт, необходимые параметры, шаги аутентификации, обработку ошибок и примеры SDK."
+weight: 20
+---
+
+REST API позволяет отсортировать данные внутри указанного диапазона на листе Excel.
+
+## REST API
+
+```shell
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
 ```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| cellArea| нить| запрос| Диапазон сортировки.|
-| сортировщик данных|| тело| с настройками сортировки.|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
- 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### Параметры запроса
+
+| Имя параметра | Тип   | Расположение | Обязательный | Описание                                                       |
+| -------------- | ------ | -------- | -------- | ----------------------------------------------------------------- |
+| name           | string | path     | Да      | Имя рабочей книги.                                                |
+| sheetName      | string | path     | Да      | Имя листа.                                               |
+| cellArea       | string | query    | Да      | Диапазон ячеек, подлежащий сортировке (например, `A5:A10`).                     |
+| dataSorter     | object | body     | Да      | JSON-объект, определяющий параметры сортировки (см. схему ниже). |
+| folder         | string | query    | Нет       | Папка, содержащая рабочую книгу.                            |
+| storageName    | string | query    | Нет       | Имя хранилища, в котором находится рабочая книга.            |
+
+**Схема объекта `dataSorter`** — в теле запроса должен содержаться JSON-объект со следующими свойствами:
+
+- `CaseSensitive` _(boolean, required)_ — определяет, учитывается ли регистр при сортировке.
+- `HasHeaders` _(boolean, required)_ — указывает, содержит ли диапазон строку заголовков.
+- `KeyList` _(array, required)_ — коллекция ключей сортировки. Каждый ключ представляет собой объект со следующими полями:
+  - `Key` _(integer)_ — индекс столбца (начиная с 0).
+  - `SortOrder` _(string)_ — `"ascending"` (по возрастанию) или `"descending"` (по убыванию).
+- `SortLeftToRight` _(boolean, required)_ — если `true`, сортировка выполняется слева направо; в противном случае — сверху вниз.
+- Дополнительно могут быть указаны параметры `CaseOrder`, `SortLeftToRight` и другие в соответствии со спецификацией OpenAPI.
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort) предоставляет общедоступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Для доступа к веб-сервисам Aspose.Cells можно использовать утилиту командной строки cURL. В следующем примере показано, как выполнить вызов облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
+
 {{< tab tabNum="1" >}}
- 
-```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/sort?cellArea=A5:A10" \
--X POST \
--d '{"CaseSensitive":false, "HasHeaders":false, "KeyList":[{"Key":0, "SortOrder":"descending"}], "SortLeftToRight":false}' \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+
+```shell
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/sort?cellArea=A5:A10" \
+  -X POST \
+  -d '{"CaseSensitive":false,"HasHeaders":false,"KeyList":[{"Key":0,"SortOrder":"descending"}],"SortLeftToRight":false}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+**Обработка ошибок** — API может возвращать стандартные HTTP-коды ошибок. Типичные ответы включают:
+
+| HTTP-статус | Код | Сообщение                                           |
+| ----------- | ---- | ------------------------------------------------- |
+| 400         | 400  | Неверный запрос — отсутствуют или недопустимы параметры.      |
+| 401         | 401  | Неавторизован — недопустимый или отсутствует JWT-токен.       |
+| 404         | 404  | Не найдено — рабочая книга или лист не существуют. |
+| 500         | 500  | Внутренняя ошибка сервера.                            |
+
+В случае ошибки тело ответа имеет следующий формат: `{ "Code": <статус>, "Message": "<описание>", "Status": "Error" }`.
+
 ## Семейство облачных SDK
- 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
- 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
- 
+
+Использование SDK — самый быстрый способ разработки. SDK берёт на себя обработку низкоуровневых деталей, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
+
+Приведённые ниже примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

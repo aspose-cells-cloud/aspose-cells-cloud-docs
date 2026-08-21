@@ -1,27 +1,41 @@
-﻿---
-title: Работа с сводной таблицей Excel
-second_title: Documen
-linktitle: Сводная таблица
-type: docs
-url: /ru/pivottables/
-aliases: [/working-with-pivot-tables/]
-keywords: Working with pivot table on an Excel worksheet
-description: Как заставить облачные REST API Aspose.Cells работать со сводной таблицей на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 100
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Сводные таблицы
 ---
+title: "Работа с сводными таблицами в Excel"
+second_title: "Документ"
+linktype: "Сводные таблицы"
+type: docs
+url: /pivottables/
+aliases: [/working-with-pivot-tables/]
+keywords: "Excel, сводная таблица, Aspose.Cells Cloud, API, электронная таблица, анализ данных, REST API"
+description: "Подробное руководство по использованию REST API Aspose.Cells Cloud для создания, получения, обновления и удаления сводных таблиц в листах Excel. Включает ссылки на SDK, примеры вызовов и примечания к версиям."
+weight: 100
+ArticleTitle: "Работа со сводными таблицами в Excel – Документация Aspose.Cells Cloud"
+---
+
 ## Работа со сводными таблицами в файле Excel
 
-- [Как получить информацию сводных таблиц из листа Excel.](/cells/ru/pivot-tables/get-all/)
-- [Как получить информацию сводной таблицы по индексу из листа Excel.](/cells/ru/pivot-tables/get/)
-- [Как добавить сводную таблицу на рабочий лист.](/cells/ru/pivot-tables/add/)
-- [Как добавить сводное поле в сводную таблицу.](/cells/ru/pivot-tables/add-pivot-field/)
-- [Как удалить все сводные таблицы из листа Excel.](/cells/ru/pivot-tables/clear/)
-- [Как удалить сводную таблицу по индексу из листа Excel.](/cells/ru/pivot-tables/delete/)
-- [Как обновить стиль ячеек сводной таблицы.](/cells/ru/pivot-tables/format/)
-- [Как обновить стиль сводной таблицы.](/cells/ru/pivot-tables/format-all/)
-- [Как добавить сводные фильтры для сводной таблицы.](/cells/ru/pivot-tables/add-filters/)
-- [Как скрыть элемент поля сводной таблицы.](/cells/ru/pivot-tables/hide-pivot-field-item/)
-- [Как переместить сводную таблицу на листе Excel.](/cells/ru/pivot-tables/move/)
-- [Как работать с задачей CellsObjectOperate.](/cells/ru/working-with-pivot-table-using-cellsobjectoperate-task/)
-- [Как преобразовать объект списка в сводную таблицу.](/cells/ru/pivot-tables/convert-table-to-pivottable/)
+Сводные таблицы — это мощный инструмент агрегации данных в Excel, позволяющий разработчикам динамически группировать, фильтровать и анализировать большие массивы данных. API Aspose.Cells Cloud предоставляет конечные точки для программного создания, получения, изменения и удаления сводных таблиц, что обеспечивает их беспрепятственную интеграцию в ваши приложения.
+
+**Необходимые условия** – У вас должен быть действующий маркер аутентификации Aspose.Cells Cloud, а также установленный поддерживаемый SDK (например, .NET, Java, Python, Go, Node.js, PHP, Ruby, Swift) в вашем проекте.
+
+**Пример вызова API** – Чтобы получить все сводные таблицы в конкретном листе, отправьте GET-запрос следующего вида:
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetName}/pivottables
+```
+
+**Примечания** – Для выполнения этих операций требуется версия Aspose.Cells Cloud 3.0 или выше.
+
+- [Как получить информацию о сводной таблице из листа Excel.](/cells/pivot-tables/get-all/)
+- [Как получить информацию о сводной таблице по индексу из листа Excel.](/cells/pivot-tables/get/)
+- [Как добавить сводную таблицу в лист.](/cells/pivot-tables/add/)
+- [Как добавить поле сводной таблицы в сводную таблицу.](/cells/pivot-tables/add-pivot-field/)
+- [Как удалить все сводные таблицы из листа Excel.](/cells/pivot-tables/clear/)
+- [Как удалить сводную таблицу по индексу из листа Excel.](/cells/pivot-tables/delete/)
+- [Как обновить стиль ячейки для сводной таблицы.](/cells/pivot-tables/format/)
+- [Как обновить стиль для всех сводных таблиц.](/cells/pivot-tables/format-all/)
+- [Как добавить фильтры к сводной таблице.](/cells/pivot-tables/add-filters/)
+- [Как скрыть элемент поля сводной таблицы в сводной таблице.](/cells/pivot-tables/hide-pivot-field-item/)
+- [Как переместить сводную таблицу на листе Excel.](/cells/pivot-tables/move/)
+- [Как работать с задачей CellsObjectOperate.](/cells/working-with-pivot-table-using-cellsobjectoperate-task/)
+- [Как преобразовать объект списка в сводную таблицу.](/cells/pivot-tables/convert-table-to-pivottable/)
+---

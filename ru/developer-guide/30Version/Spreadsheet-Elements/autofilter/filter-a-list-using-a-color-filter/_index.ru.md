@@ -1,83 +1,113 @@
-﻿---
-title: Добавьте цветовой фильтр в рабочий лист Excel
-second_title: Documen
-linktitle: Добавить цветовой фильтр
-type: docs
-url: /ru/autofilter/add-color-filter/
-aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
-keywords: Adds a color filter on an Excel worksheet
-description: Облако Aspose.Cells API поддерживает добавление цветового фильтра на лист Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 65
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Добавить цветовой фильтр на лист Excel
 ---
-Этот REST API указывает на добавление `color filter` на рабочий лист Excel.
+title: "Добавление фильтра по цвету в лист Excel"
+second_title: "Документ"
+linktitle: "Добавление фильтра по цвету"
+type: docs
+url: /autofilter/add-color-filter/
+aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
+keywords: "Excel, фильтр по цвету, Aspose.Cells Cloud, REST API, автофильтр, JWT-аутентификация"
+description: "Узнайте, как применить фильтр по цвету к листу Excel с помощью API Aspose.Cells Cloud. Включает конечную точку, параметры, пример cURL, обработку ошибок и примеры SDK."
+weight: 65
+ArticleTitle: "Добавление фильтра по цвету в лист Excel с использованием Aspose.Cells Cloud API"
+---
 
-## РСЕT API
+Узнайте, как добавить фильтр по цвету к листу Excel с помощью API Aspose.Cells Cloud. В этом руководстве описаны необходимая конечная точка, параметры, требования к аутентификации, пример запроса cURL, примеры SDK и обработка ответов.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter
- 
+Этот REST API добавляет **фильтр по цвету** к листу Excel.
+
+## PutWorksheetColorFilter API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь||
-| Имя_листа| нить| путь||
-| диапазон| нить| запрос||
-| fieldIndex| целое число| запрос||
-| цветовой фильтр|| тело||
-| matchBlanks| булев| запрос||
-| обновить| булев| запрос||
-| папка| нить| запрос||
-| имя_хранилища| нить| запрос| имя хранилища.|
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetColorFilter) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### Параметры запроса:
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Имя параметра | Тип    | Расположение | Описание                                                                 |
+|---------------|--------|-------------|-----------------------------------------------------------------------------|
+| name          | string | path        | Имя файла Excel.                                                 |
+| sheetName     | string | path        | Имя листа, содержащего данные, подлежащие фильтрации.           |
+| range         | string | query       | Диапазон ячеек, к которому применяется фильтр (например, `A1:B10`).            |
+| fieldIndex    | integer | query       | Индекс столбца (начиная с нуля), к которому применяется цветовой фильтр.       |
+| colorFilter   | object | body        | JSON-объект, определяющий передний и задний цвета для фильтрации.   |
+| matchBlanks   | boolean | query       | Следует ли включать строки с пустыми ячейками в результаты фильтрации.   |
+| refresh       | boolean | query       | Если `true`, лист обновляется после применения фильтра.           |
+| folder        | string | query       | Папка в хранилище, где расположен файл Excel.                      |
+| storageName   | string | query       | Имя сервиса хранилища (например, Aspose Cloud Storage).              |
+
+**Схема JSON для `colorFilter`**
+
+| Свойство          | Тип    | Описание                                                                    | Обязательное |
+|-------------------|--------|--------------------------------------------------------------------------------|----------|
+| Pattern           | string | Шаблон фильтра (например, `"Solid"`).                                             | Да      |
+| ForegroundColor   | object | Определяет передний цвет. Содержит подсвойства, такие как `Color`, `ColorIndex`, `IsShapeColor`, `ThemeColor` и `Type`. | Нет |
+| BackgroundColor   | object | Определяет задний цвет. Те же подсвойства, что и у `ForegroundColor`.      | Нет |
+
+### **Ответ**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                     | Описание                                      |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | OK                          | Фильтр успешно применён; ответ содержит детали операции. |
+| 400 | Bad Request                 | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized                | Недействительный или отсутствующий JWT-токен. |
+| 413 | Payload Too Large           | Загруженный файл превышает предельный размер. |
+| 500 | Internal Server Error       | Непредвиденная ошибка сервера. |
+
+## Как использовать API PutWorksheetColorFilter с SDK
+
+### Спецификация API PutWorksheetColorFilter
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetColorFilter) определяет публично доступное программное интерфейсное определение и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как делать вызовы в облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/colorFilter?range=A1%3AB1&fieldIndex=0" \
 -X PUT \
 -d "{ \"Pattern\": \"Solid\", \"ForegroundColor\": { \"Color\": { \"A\": 255, \"R\": 0, \"G\": 255, \"B\": 255 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"Text2\", \"Tint\": 1 }, \"Type\": \"Automatic\" }, \"BackgroundColor\": { \"Color\": { \"A\": 255, \"R\": 0, \"G\": 255, \"B\": 255 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"Text2\", \"Tint\": 0 }, \"Type\": \"Automatic\" }}" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK скрывает низкоуровневые детали, позволяя сосредоточиться на задачах вашего проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -130,3 +160,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**См. также:** [Добавление пользовательского фильтра](https://docs.aspose.cloud/cells/autofilter/add-custom-filter/), [Добавление фильтра по дате](https://docs.aspose.cloud/cells/autofilter/add-date-filter/), [Удаление автофильтра](https://docs.aspose.cloud/cells/autofilter/remove-auto-filter/).
+---

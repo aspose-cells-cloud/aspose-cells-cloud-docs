@@ -1,73 +1,86 @@
-﻿---
-title: إظهار ورقة عمل Excel
-second_title: Documen
-linktitle: غير مخفي
-type: docs
-url: /ar/worksheets/unhide/
-aliases: [/unhide-excel-worksheets/]
-keywords: Unhide an Excel Worksheet on an Excel Workbook
-description: يدعم Cloud REST Aspose.Cells إظهار ورقة العمل Excel في مصنف Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 60
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إظهار ورقة عمل Excel
 ---
-يشير هذا REST API إلى `unhide worksheet`.
- 
-## RSET API
- 
+title: "إظهار ورقة عمل في إكسل"
+second_title: "مستند"
+linktype: "إظهار"
+type: docs
+url: /worksheets/unhide/
+aliases: [/unhide-excel-worksheets/]
+keywords: "Aspose.Cells، إظهار ورقة عمل، واجهة برمجة تطبيقات إكسل، جدول بيانات سحابي، REST، رؤية ورقة العمل، ملف عمل إكسل"
+description: "تعرّف على كيفية استخدام واجهة Aspose.Cells Cloud REST API لإظهار ورقة عمل في ملف عمل إكسل. يتضمن تفاصيل الطلب، وأمثلة باستخدام cURL، وأكواد مقتطفات SDK بلغات برمجة متعددة."
+weight: 60
+---
+
+توفر هذه الواجهة البرمجية لواجهة REST نقطة نهاية **إظهار ورقة عمل** في ملف عمل إكسل.
+
+**المتطلبات الأساسية**  
+قبل استدعاء هذه العملية، يجب أن تتوفر لديك ما يلي:
+
+* رمز وصول Aspose Cloud صالح (JWT) مُدرج في رأس `Authorization`.  
+* ملف العمل مخزن في موقع تخزين مدعوم تحدده باستخدام معلمتَي الاستعلام `folder` و`storageName`.  
+* يجب أن يكون ملف العمل بصيغة مدعومة من قِبل Aspose.Cells (مثل `.xls`، `.xlsx`، `.xlsm`).  
+
+## واجهة برمجة تطبيقات REST
+
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 ```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مرئي| منطقي| استفسار| قيمة رؤية ورقة العمل الجديدة.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
- 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
- 
+
+### **مُعلمات الطلب**
+
+| اسم المعلمة | النوع   | الموقع | الوصف                                    |
+|-------------|---------|--------|--------------------------------------------|
+| name        | string  | path   | اسم المستند.                               |
+| sheetName   | string  | path   | اسم ورقة العمل.                            |
+| isVisible   | boolean | query  | القيمة الجديدة لرؤية ورقة العمل (`true`). |
+| folder      | string  | query  | مجلد المستند.                              |
+| storageName | string  | query  | اسم التخزين.                               |
+
+يُعرّف [مواصفة OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) واجهة برمجة تطبيقات متاحة عمومًا تتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL لاستدعاء خدمات Aspose.Cells عبر الويب بسهولة. يوضح المثال التالي كيفية إجراء الطلب باستخدام cURL.
+
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/visible?isVisible=true" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/visible?isVisible=true" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+-H "Authorization: Bearer <jwt token>"   # استبدل <jwt token> برمز الوصول الخاص بك
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
+**رموز الاستجابة المحتملة**
+
+| رمز HTTP | المعنى                                   | نموذج جسم الاستجابة (عند التطابق)                           |
+|----------|-------------------------------------------|--------------------------------------------------------------|
+| 200      | تم تحديث رؤية ورقة العمل بنجاح           | `{ "Code": 200, "Status": "OK" }`                           |
+| 400      | طلب غير صالح – معلمات مفقودة أو غير صحيحة | `{ "Code": 400, "Message": "Invalid request parameters." }` |
+| 401      | غير مُصادَق – رمز JWT مفقود أو غير صالح  | `{ "Code": 401, "Message": "Authentication failed." }`      |
+| 404      | غير موجود – ملف العمل أو ورقة العمل غير موجود | `{ "Code": 404, "Message": "File or worksheet not found." }` |
+| 500      | خطأ داخلي في الخادم                       | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+
+## مجموعة أدوات SDK السحابية
+
+استخدام SDK هو أسرع طريقة للتطوير. يتعامل SDK مع التفاصيل منخفضة المستوى، مما يمكّنك من التركيز على مشروعك. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر SDKs مختلفة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Perl" tabName8="Android" tabName9="Objective C" tabName10="Go" >}}
 

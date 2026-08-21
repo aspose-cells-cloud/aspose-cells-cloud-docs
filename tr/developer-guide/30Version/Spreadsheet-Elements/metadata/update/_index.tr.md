@@ -1,84 +1,89 @@
-﻿---
-title: Meta Verileri Güncelle
-second_title: Documen
-linktitle: Depolama kullanmadan güncelleme
-type: docs
-url: /tr/metadata/update/
-keywords: Update metadata on excel files
-description: Aspose.Cells Cloud REST API, Excel dosyalarındaki meta verilerin güncellenmesini destekler. SDK, Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift gibi çeşitli geliştirme dillerini destekler.
-weight: 35
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Meta Verileri Güncelle
 ---
-Bu REST API, `metadata`'in birden fazla Excel dosyasından güncellenmesini belirtir.
+title: "Meta Verilerini Güncelleme"
+second_title: "Belge"
+linktitle: "Depolama kullanmadan güncelleme"
+type: docs
+url: /metadata/update/
+keywords: "meta veriler, Excel, Aspose.Cells Cloud, REST API, güncelleme, elektronik tablo"
+description: "Aspose.Cells Cloud REST API, Excel dosyalarında meta verileri güncellemenizi sağlar. Birden fazla programlama dilinde (C#, Java, Python, Ruby, Go vb.) sorunsuz entegrasyon için çeşitli SDK’ları (C#, Java, Python, Ruby, Go vb.) destekler."
+weight: 35
+ArticleTitle: "Meta Verileri Güncelle – Aspose.Cells Cloud API Dokümantasyonu"
+---
 
-## RSET API
+Bu REST API, birden fazla Excel dosyasındaki **meta verileri** günceller.
+
+**Önkoşullar:** Aktif bir Aspose Cloud hesabı, geçerli bir JWT erişim belirteci ve yüklenmesi gereken Excel dosyaları.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/metadata/update
- 
+POST https://api.aspose.cloud/v3.0/cells/metadata/update
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| dosya| dosya| formData| Yüklenecek dosya|
-| Belge Özellikleri|| vücut| Cells belge özelliği.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/PostMetadata) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı      | Tür    | Konum             | Açıklama                                       |
+| ------------------ | ------ | ----------------- | ---------------------------------------------- |
+| file               | dosya  | formData          | Yüklenecek Excel dosyası.                      |
+| DocumentProperties | nesne  | HTTP gövdesi (JSON) | Excel dosyası için ayarlanacak belge özellikleri. |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Notlar:** Tek bir istekte en fazla 10 dosya yüklenebilir. Desteklenen formatlar: `.xlsx`, `.xls` ve `.csv`. Toplam istek boyutu 100 MB’ı aşmamalıdır.
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/PostMetadata), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye nasıl istek yapılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/metadata/update" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'  \
--d '[{name="test",value="test"}]'
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/metadata/update" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'xxxxx1=@xxxx1.xlsx' \
+  -F 'xxxxx2=@xxxx2.xlsx' \
+  -d '[{ "name": "test", "value": "test" }]'
 ```
+
+İstek, Bearer JWT belirteci içeren bir **Authorization** başlığı gerektirir. Belirtecin Aspose Cloud istemci kimlik bilgileriniz kullanılarak oluşturulduğundan emin olun.
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+## Bulut SDK Geliştirme Seti
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme hızını en çok artıracak en iyi yoldur. SDK, düşük seviye detayları yöneterek size proje görevlerinize odaklanma imkanı sunar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanılarak Aspose.Cells web servislerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -131,3 +136,8 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Ayrıca bakınız:**  
+- [Meta Verileri Al](/metadata/get/)  
+- [Meta Verileri Sil](/metadata/delete/)  
+---

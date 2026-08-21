@@ -1,20 +1,65 @@
-﻿---
-title: Trabajando con Excel Ole objec
-second_title: Documen
-linktitle: OleObject
-type: docs
-url: /es/oleobjects/
-aliases: [/working-with-oleobjects/]
-keywords: Get, add, delete, and update an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API permite obtener, agregar, eliminar y actualizar un objeto OLE en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 100
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, OleObjects
 ---
-**Cómo trabajar con objetos OLE en una hoja de cálculo Excel**
+---
+title: "Trabajar con objetos OLE de Excel"
+second_title: "Documento"
+linktitle: "OleObjects"
+type: docs
+url: /oleobjects/
+aliases: [/working-with-oleobjects/]
+keywords: "OLE, Excel, Aspose.Cells, API, Cloud"
+description: "Utilice la API REST de Aspose.Cells Cloud para recuperar, agregar, actualizar, eliminar y convertir objetos OLE en hojas de cálculo de Excel. Los SDK están disponibles para Java, .NET, Python, PHP, Ruby, Go, Node.js, Perl, Swift y Android."
+weight: 100
+ArticleTitle: "Trabajar con objetos OLE de Excel – Guía para recuperar, agregar, actualizar, eliminar y convertir objetos OLE"
+---
 
-- [Cómo obtener un objeto OLE de una hoja de cálculo Excel.](/cells/es/oleobjects/get/)
-- [Cómo agregar un objeto OLE a la hoja de cálculo ab Excel.](/cells/es/oleobjects/add/)
-- [Cómo actualizar un objeto OLE específico en una hoja de cálculo Excel.](/cells/es/oleobjects/update/)
-- [Cómo convertir un objeto OLE en una imagen en una hoja de cálculo Excel.](/cells/es/oleobjects/convert/)
-- [Cómo eliminar todos los objetos OLE en una hoja de cálculo Excel.](/cells/es/oleobjects/clear/)
-- [Cómo eliminar un objeto OLE específico en una hoja de cálculo Excel.](/cells/es/oleobjects/delete/)
+**Cómo trabajar con objetos OLE en una hoja de cálculo de Excel**
+
+La API REST de Aspose.Cells Cloud proporciona un conjunto completo de operaciones para gestionar objetos OLE de forma programática. A continuación se presenta una referencia concisa para cada operación, incluyendo el método HTTP, el patrón de punto final, los parámetros requeridos y un ejemplo breve de respuesta.
+
+- [Cómo obtener un objeto OLE de una hoja de cálculo de Excel](/cells/oleobjects/get/)
+  - **Método:** `GET`  
+  - **Punto final:** `/cells/{fileName}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}`  
+  - **Parámetros:** `fileName` (cadena), `sheetName` (cadena), `oleObjectIndex` (entero)  
+  - **Ejemplo de respuesta:**  
+    ```json
+    {
+      "OleObject": {
+        "Name": "Chart1",
+        "ContentType": "image/png",
+        "Width": 400,
+        "Height": 300
+      }
+    }
+    ```
+
+- [Cómo agregar un objeto OLE en una hoja de cálculo de Excel](/cells/oleobjects/add/)
+  - **Método:** `POST`  
+  - **Punto final:** `/cells/{fileName}/worksheets/{sheetName}/oleobjects`  
+  - **Parámetros:** `fileName`, `sheetName`, `oleObject` (binario o en base64), `imageFormat` (opcional)  
+  - **Ejemplo de cuerpo de solicitud:** multipart/form-data con el flujo del archivo.  
+  - **Ejemplo de respuesta:** `201 Created` con el encabezado de ubicación del nuevo objeto OLE.
+
+- [Cómo actualizar un objeto OLE específico en una hoja de cálculo de Excel](/cells/oleobjects/update/)
+  - **Método:** `PUT`  
+  - **Punto final:** `/cells/{fileName}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}`  
+  - **Parámetros:** `fileName`, `sheetName`, `oleObjectIndex`, `oleObject` (contenido actualizado)  
+  - **Ejemplo de respuesta:** `200 OK` con metadatos actualizados del objeto.
+
+- [Cómo convertir un objeto OLE en una imagen en una hoja de cálculo de Excel](/cells/oleobjects/convert/)
+  - **Método:** `GET`  
+  - **Punto final:** `/cells/{fileName}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}/convert`  
+  - **Parámetros:** `fileName`, `sheetName`, `oleObjectIndex`, `format` (por ejemplo, `png`, `jpeg`)  
+  - **Ejemplo de respuesta:** Flujo binario de imagen del objeto OLE convertido.
+
+- [Cómo eliminar todos los objetos OLE en una hoja de cálculo de Excel](/cells/oleobjects/clear/)
+  - **Método:** `DELETE`  
+  - **Punto final:** `/cells/{fileName}/worksheets/{sheetName}/oleobjects`  
+  - **Parámetros:** `fileName`, `sheetName`  
+  - **Ejemplo de respuesta:** `204 No Content` que indica que se eliminaron todos los objetos OLE.
+
+- [Cómo eliminar un objeto OLE específico en una hoja de cálculo de Excel](/cells/oleobjects/delete/)
+  - **Método:** `DELETE`  
+  - **Punto final:** `/cells/{fileName}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}`  
+  - **Parámetros:** `fileName`, `sheetName`, `oleObjectIndex`  
+  - **Ejemplo de respuesta:** `204 No Content` que confirma que se eliminó el objeto.
+---

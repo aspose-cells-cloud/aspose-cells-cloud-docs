@@ -1,54 +1,98 @@
-﻿---
-title: Rechercher du texte dans un classeur Excel
-second_title: Documen
-linktitle: Trouver dans le classeur
+---
+title: "Rechercher du texte dans un classeur Excel"
+second_title: "Document"
+linktitle: "Recherche dans le classeur"
 type: docs
-url: /fr/workbook/find-text/
+url: /workbook/find-text/
 aliases: [/find-text-in-a-workbook/]
 weight: 30
-keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) workbook
-description: Aspose.Cells Cloud REST API prend en charge la recherche de texte dans le classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Rechercher du texte dans un classeur Excel
+keywords: "Aspose.Cells, recherche de texte, API Excel, recherche dans un classeur"
+description: "Découvrez comment utiliser l’API Aspose.Cells Cloud pour **rechercher du texte** dans des classeurs Excel (XLS‑X, ODS). Inclut un exemple cURL, des extraits de code SDK et le schéma de réponse. Commencez dès maintenant."
+ArticleTitle: "Rechercher du texte dans un classeur Excel à l’aide de l’API Aspose.Cells Cloud"
 ---
-Ce REST API indique le texte `search` dans un fichier Excel.
 
-## RSET API
+Cette API REST permet de rechercher du texte dans un classeur Excel.
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/findText
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/findText
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| texte| chaîne| requête| Exemple de texte.|
-| dossier| chaîne| requête| Dossier du document.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksTextSearch) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+### Paramètres de la requête
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Nom du paramètre | Type   | Emplacement | Description                                               |
+| ---------------- | ------ | ----------- | --------------------------------------------------------- |
+| name             | string | path        | Nom du classeur Excel.                                   |
+| text             | string | query       | Chaîne de texte à rechercher.                            |
+| folder           | string | query       | Dossier contenant le classeur (facultatif).              |
+| storageName      | string | query       | Nom du stockage où réside le classeur (facultatif).      |
+
+### **Réponse**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
+```
+
+**Codes de statut HTTP**
+
+| Code | Signification                | Description                                                     |
+|------|------------------------------|-----------------------------------------------------------------|
+| 200  | OK                           | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte           | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                 | Jeton JWT invalide ou manquant.                                 |
+| 413  | Charge utile trop grande      | Le fichier téléchargé dépasse la taille limite.                |
+| 500  | Erreur interne du serveur     | Erreur inattendue du serveur.                                   |
+## Comment utiliser l’API PostWorkbooksTextSearch à l’aide des SDK
+
+### Spécification de l’API PostWorkbooksTextSearch
+
+La <a href="https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksTextSearch" target="_blank" rel="noopener noreferrer">spécification OpenAPI</a> définit une interface de programmation accessible publiquement et permet d’effectuer directement des interactions REST depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment appeler l’API à l’aide de cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/findText?text=a" -H "accept: application/json"
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/findText?text=a" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <your_access_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
   "Status": "string",
   "TextItems": {
@@ -71,18 +115,17 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/findText?text=a" -H 
     ]
   }
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
+### Utiliser les SDK Aspose.Cells Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est la méthode la plus rapide pour développer. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur votre projet. Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants illustrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -135,3 +178,4 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+---

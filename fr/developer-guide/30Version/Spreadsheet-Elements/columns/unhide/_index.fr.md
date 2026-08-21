@@ -1,76 +1,84 @@
-﻿---
-title: Afficher les colonnes sur une feuille de calcul Excel
-second_title: Documen
-linktitle: Dévoilé
-type: docs
-url: /fr/columns/unhide/
-aliases: [/unhide-columns-in-an-excel-worksheet/,/unhide-columns-in-excel-worksheet/]
-keywords: Unhide column on an Excel workshee
-description: Aspose.Cells Cloud REST API prend en charge l'affichage des colonnes masquées dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 50
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Afficher les colonnes sur une feuille de calcul Excel
 ---
-Ce REST API indique d'afficher les colonnes de la feuille de calcul.
+title: "Réafficher des colonnes dans une feuille de calcul Excel"
+ArticleTitle: "Réafficher des colonnes dans une feuille de calcul Excel – API Aspose.Cells Cloud"
+second_title: "Document"
+linktype: "docs"
+url: /columns/unhide/
+aliases:
+  [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
+keywords: "Aspose.Cells, API Cloud, réafficher des colonnes, Excel, REST, SDK"
+description: "Découvrez comment utiliser l’API REST Aspose.Cells Cloud pour réafficher des colonnes dans une feuille de calcul Excel. Inclut les détails de la requête, un exemple cURL et des exemples de code SDK pour plusieurs langages de programmation."
+weight: 50
+---
 
-## RSET API
+Cette API REST réaffiche les colonnes d'une feuille de calcul.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/unhide
- 
+**Prérequis** – Tous les points de terminaison d’Aspose.Cells Cloud nécessitent HTTPS et un jeton d’accès OAuth 2.0 valide. Assurez-vous d’avoir obtenu un jeton d’accès et de l’avoir inclus dans l’en-tête `Authorization` de vos requêtes.
+
+## API PostUnhideWorksheetColumns
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/unhide
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Le nom du classeur.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| colonne de départ| entier| requête| L'index de la colonne de début à exploiter.|
-| colonnes totales| entier| requête| Nombre de colonnes à exploiter.|
-| largeur| nombre| requête|50.0 |
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Paramètres de la requête
 
- Vous pouvez utiliser**cURL** Outil en ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le cloud API avec cURL.
+| Nom du paramètre | Type    | Emplacement | Description                                      |
+| ---------------- | ------- | ----------- | ------------------------------------------------ |
+| name             | string  | path        | Le nom du classeur.                              |
+| sheetName        | string  | path        | Le nom de la feuille de calcul.                  |
+| startColumn      | integer | query       | L'index de la première colonne à traiter.        |
+| totalColumns     | integer | query       | Le nombre de colonnes à traiter.                 |
+| width            | number  | query       | Largeur souhaitée des colonnes (par défaut = 50,0). |
+| folder           | string  | query       | Le dossier contenant le document.                |
+| storageName      | string  | query       | Le nom du service de stockage.                   |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+La <a href="https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns" target="_blank" rel="noopener noreferrer">spécification OpenAPI</a> définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande **cURL** pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/unhide?startColumn=1&totalColumns=1&height=15" -H "accept: application/json"
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/unhide?startColumn=1&totalColumns=1&width=15" -H "accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Codes HTTP de statut typiques**
+
+| Code | Description                                          |
+|------|------------------------------------------------------|
+| 200  | OK – Les colonnes ont été correctement réaffichées. |
+| 400  | Requête incorrecte – Paramètres non valides.        |
+| 401  | Non autorisé – Jeton manquant ou invalide.          |
+| 404  | Introuvable – Classeur ou feuille de calcul non trouvé. |
+| 500  | Erreur interne du serveur – Échec inattendu.        |
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK constitue la meilleure méthode pour accélérer le développement. Un SDK gère les détails de bas niveau, vous permettant ainsi de vous concentrer sur les tâches de votre projet. Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,76 +1,77 @@
-﻿---
-title: نسخ الأعمدة في ورقة العمل Excel
-second_title: Documen
-linktitle: شرطي
-type: docs
-url: /ar/columns/copy/
-aliases: [/copy-columns-in-excel-worksheet/,/copy-columns-in-an-excel-worksheet/]
-keywords: Copy column on an Excel workshee
-description: يدعم Cloud REST Aspose.Cells نسخ الأعمدة في ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 30
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، نسخ الأعمدة في ورقة عمل Excel
 ---
-هذه النسخة REST API `columns` في ورقة عمل Excel.
+title: "نسخ الأعمدة في ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "نسخ"
+type: docs
+url: /columns/copy/
+aliases:
+  [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
+keywords: "Aspose.Cells, نسخ الأعمدة, واجهة برمجة تطبيقات Excel, REST, واجهات برمجة التطبيقات السحابية, cURL, C#, Java, Python, Ruby, Node.js, Go, Perl"
+description: "تعرّف على كيفية نسخ عمود واحد أو أكثر في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمن بناء جملة الطلب، المعلمات المطلوبة، تفاصيل المصادقة، معالجة الأخطاء، وأمثلة لواجهات برمجة التطبيقات (SDKs) بلغات C# وJava وPython وRuby وNode.js وGo وPerl وغيرها."
+articleTitle: "نسخ الأعمدة في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud"
+weight: 30
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية (REST API) بنسخ **الأعمدة** في ورقة عمل Excel. وتتيح عملية **نسخ الأعمدة** تكرار عمود واحد أو نطاق من الأعمدة وإدراج النسخة في موقع محدّد ضمن نفس ورقة العمل. استخدم هذه الواجهة لنسخ الأعمدة بكفاءة عند التعامل مع جداول بيانات كبيرة، وراجع العمليات ذات الصلة مثل [إضافة عمود](/columns/add/) و[إخفاء عمود](/columns/hide/) لإكمال مهام إدارة الأعمدة الأخرى.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy
- 
-```
+## الأمان والمصادقة
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [مصادقة مبنية على رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-معلمات الطلب هي:
-
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| فهرس عمود المصدر| عدد صحيح| استفسار| فهرس عمود المصدر|
-| فهرس عمود الوجهة| عدد صحيح| استفسار| فهرس عمود الوجهة|
-| رقم العمود| عدد صحيح| استفسار| رقم العمود المنسوخ|
-| ورقة عمل| خيط| استفسار||
-| مجلد| خيط| استفسار| مجلد المستندات.|
-
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
-
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+## واجهة برمجة التطبيقات REST
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&ColumnNumber=10" -H "accept: application/json" 
-
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy
 ```
 
-{{< /tab >}}
+### معلمات الطلب
 
-{{< tab tabNum="12" >}}
+| اسم المعلمة               | النوع    | الموقع  | الوصف                                                                                      |
+| -------------------------- | ------- | -------- | ------------------------------------------------------------------------------------- |
+| **name**                   | نص (string)  | مسار (path)     | اسم ملف المصنف.                                                                    |
+| **sheetName**              | نص (string)  | مسار (path)     | اسم ورقة العمل.                                                                   |
+| **sourceColumnIndex**      | عدد صحيح (integer) | استعلام (query)    | فهرس العمود المراد نسخه (يبدأ من الصفر).                                                  |
+| **destinationColumnIndex** | عدد صحيح (integer) | استعلام (query)    | فهرس الموضع المراد إدراج الأعمدة المنسوخة فيه (يبدأ من الصفر).                            |
+| **columnNumber**           | عدد صحيح (integer) | استعلام (query)    | عدد الأعمدة المتتالية المراد نسخها.                                                |
+| **worksheet**              | نص (string)  | استعلام (query)    | _(اختياري)_ مُعرّف ورقة العمل يُستخدم عندما يختلف اسم ورقة العمل عن ما ورد في المسار. |
+| **folder**                 | نص (string)  | استعلام (query)    | مسار المجلد الذي يحتوي على المصنف في مساحة التخزين السحابية لـ Aspose.                   |
 
-```java
+يمكنك الاطّلاع على [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) للحصول على العقد الكاملة لهذه العملية.
 
- {
+### مثال باستخدام cURL
 
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&columnNumber=10" \
+     -H "Authorization: Bearer $ASPOSE_TOKEN" \
+     -H "accept: application/json"
+```
+
+### الاستجابة
+
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+## معالجة الأخطاء
 
-{{< /tabs >}}
+تعيد الواجهة رموز الحالة القياسية (HTTP Status Codes) مع جسم استجابة بصيغة JSON يصف الخطأ.
 
-## عائلة SDK السحابية
+| رمز الحالة | المعنى                                          | مثال على جسم JSON                                                   |
+| ----------- | ------------------------------------------------ | ------------------------------------------------------------------- |
+| **400**     | طلب غير صالح – معلمات غير صحيحة                 | `{ "Code": 400, "Message": "فهرس عمود غير صالح." }`               |
+| **401**     | غير مصرّح – رمز وصول مفقود أو غير صالح          | `{ "Code": 401, "Message": "رمز الوصول غير صالح أو منتهٍ." }` |
+| **404**     | غير موجود – المصنف أو ورقة العمل غير موجودين | `{ "Code": 404, "Message": "لم يتم العثور على المصنف." }`                 |
+| **500**     | خطأ داخلي في الخادم – ظرف غير متوقّع             | `{ "Code": 500, "Message": "حدث خطأ غير متوقّع." }`       |
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+> **كيفية استكشاف الأخطاء وحلّها:** تحقّق من أن رمز الوصول ساري المفعول، وأن اسم المصنف وورقة العمل صحيحان، وأن قيم `sourceColumnIndex` و`destinationColumnIndex` و`columnNumber` تقع ضمن نطاق أعمدة ورقة العمل.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+## عائلة واجهات برمجة التطبيقات السحابية (Cloud SDK Family)
+
+يُعدّ استخدام مكتبات SDK أفضل طريقة لتسريع عملية التطوير، إذ تُدار التفاصيل منخفضة المستوى تلقائيًا، مما يتيح لك التركيز على مهام مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بواجهات برمجة تطبيقات Aspose.Cells Cloud SDK.
+
+تُظهر الأمثلة التالية كيفية إجراء مكالمات لخدمات الويب Aspose.Cells باستخدام مكتبات SDK المختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +124,37 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "كيف أُجري المصادقة عند استدعاء واجهة برمجة تطبيقات نسخ الأعمدة؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "احصل على رمز وصول OAuth2 من Aspose Cloud باستخدام مُعرّف العميل والسر الخاصّين بك، ثم أدرج الرمز في رأس الطلب كـ `Authorization: Bearer <access_token>`."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ما الفرق بين `sourceColumnIndex` و`destinationColumnIndex`؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "يُمثل `sourceColumnIndex` فهرس العمود (الذي يبدأ من الصفر) الذي ترغب في نسخه، بينما يُمثل `destinationColumnIndex` فهرس الموضع (الذي يبدأ من الصفر) الذي سيتم إدراج الأعمدة المنسوخة فيه."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ما الاستجابة التي أتلقّاها في حال فشل عملية النسخ؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "تعيد الواجهة رمز حالة غير مساوٍ لـ 200 (مثل 400 لطلب غير صالح أو 401 لحالة عدم مصرّح). ويحتوي جسم الاستجابة على كائن JSON يحتوي على حقلَي `Code` و`Message` اللذين يصفان طبيعة الخطأ."
+      }
+    }
+  ]
+}
+</script>
+---

@@ -1,88 +1,120 @@
-﻿---
-title: Komprimera data i en Excel-fil
-second_title: Documen
-linktitle: Komprimera Excel-filen
-type: docs
-url: /sv/compress-excel-files/
-aliases: [/compress/]
-keywords: Compress excel files
-description: Aspose.Cells Cloud REST API stöder komprimering av Excel-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 39
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Komprimera
 ---
-Denna REST API indikerar `compress`-data i en Excel-fil.
+title: "Komprimera data i en Excel-fil"
+ArticleTitle: "Komprimera data i en Excel-fil – Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Komprimera Excel-filer"
+type: docs
+url: /compress-excel-files/
+aliases: [/compress/]
+keywords: "komprimera excel-fil, aspose cells cloud, excel-komprimering, kalkylarkskomprimering, rest-api, filkomprimering"
+description: "Komprimera Excel-filer (XLS, XLSX, XLSM, XLSB, ODS) med Aspose.Cells Cloud REST API. Ställ in komprimeringsnivå, hantera flera filer och integrera via SDK:er."
+weight: 39
+---
 
-- Komprimera XLS, XLSX, XLSM, XLSB, ODS
-- Snabbt sätt att komprimera flera Excel kalkylbladsfiler
-- Välj komprimeringsnivå
+## PostCompress API för Aspose.Cells Cloud Webbtjänster
+
+**Förutsättningar:**  
+- Ett giltigt JWT-token krävs för autentisering.  
+- Stödda filformat är XLS, XLSX, XLSM, XLSB och ODS.  
+- Den maximalt tillåtna filstorleken är 500 MB per förfrågan (beroende på tjänstebegränsningar).
+
+Denna REST API komprimerar data i en Excel-fil.
+
+- Komprimera XLS, XLSX, XLSM, XLSB, ODS  
+- Komprimera snabbt flera Excel-kalkylarksfiler  
+- Välj komprimeringsnivå  
 - Stöd för flera filer
 
-## RSET API
+### Web API-slutpunkt
 
-```bash
-
+```http
 POST https://api.aspose.cloud/v3.0/cells/compress
-
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| fil| fil| formulärData| Fil att ladda upp|
-| Komprimeringsnivå| heltal| fråga||
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Förfrågningsparametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Parametername   | Typ   | Path/Query String/HTTP Body | Beskrivning                                        |
+|-----------------|-------|-----------------------------|----------------------------------------------------|
+| file            | fil   | formData                    | Fil som ska laddas upp                             |
+| CompressLevel   | heltal | query                       | Komprimeringsnivå (0‑100); högre värden betyder starkare komprimering |
+
+### Parameter i begärandetexten
+
+| Parametername | Typ | Beskrivning                                   |
+| ------------- | --- | --------------------------------------------- |
+| data          | fil | Binärt innehåll i arbetsbokensfil som ska komprimeras. |
+
+### **Svar**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[sammanslagningsfilnamn]",
+    "Filesize" : [filstorlek],
+    "FileContent" : "[Base64-sträng]"
+}
+```
+
+*Obs:* `FileContent` innehåller den komprimerade arbetsboken kodad som en Base64-sträng. Strängens längd motsvarar storleken på den komprimerade filen; du kan avkoda den med standardverktyg för Base64 för att få tillbaka den binära Excel-filen.
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                       |
+|-----|-----------------------------|---------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Obehörig                    | Ogiltigt eller saknat JWT-token. |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
+
+## Hur du använder PostCompress API med SDK:er
+
+### PostCompress API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för kommandoraden för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Förfrågan" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/compress?CompressLevel=88" \
+# Använd HTTPS för en säker anslutning
+curl -v "https://api.aspose.cloud/v3.0/cells/compress?CompressLevel=88" \
 -X POST \
 -H "Content-Type: multipart/form-data" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+-F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det snabbaste sättet att påskynda utvecklingen. En SDK abstraherar lågnivådetaljer så att du kan fokusera på dina projektuppgifter. Kontrollera [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

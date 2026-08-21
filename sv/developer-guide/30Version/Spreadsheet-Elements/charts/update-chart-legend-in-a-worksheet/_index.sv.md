@@ -1,78 +1,78 @@
-﻿---
-title: Uppdatera diagramförklaring i ett arbetsblad
+---
+title: "Uppdatera diagramlegend i ett kalkylblad"
 type: docs
-url: /sv/charts/legend/update/
+url: /charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Uppdatera diagramförklaring i ett kalkylblad
+keywords: "Aspose.Cells, moln, Excel, diagram, legend, REST API, uppdatera, kalkylblad, cURL, SDK"
+description: "Hur man uppdaterar en diagramlegend i ett Excel-kalkylblad med Aspose.Cells Cloud REST API, inklusive exempel på cURL-förfrågningar och SDK-kodfragment för flera programmeringsspråk."
+ArticleTitle: "Uppdatera diagramlegend i ett kalkylblad – Aspose.Cells Cloud API-guide"
 ---
-Denna REST API indikerar uppdatering av diagramförklaringen
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
- 
+
+Denna REST API uppdaterar en diagramlegend.
+
+**Förutsättningar:** För att använda detta slutpunkt krävs ett giltigt Aspose Cloud JWT-token, och den måste finnas i ett stöds lagringsområde (standard är Aspose Cloud-lagring). Se till att arbetsbokens namn, kalkylbladsnamn och diagramindex är korrekta.
+
+En diagramlegend visar namnen och symbolerna för dataserierna i ett diagram. Uppdatering av legenden gör det möjligt att anpassa dess utseende, till exempel teckensnittsstil, färg och skugga.
+
+## PostWorksheetChartLegend API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
- Begäranparametrarna är:
- 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsboksnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| diagramindex| heltal| väg| Diagramindexet.|
-| legend|| kropp||
-| mapp| sträng| fråga| Arbetsbokens mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
 
- 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
- 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+### **Säkerhet och autentisering**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
+
+### Förfrågningsparametrar
+
+| Parametername   | Typ     | Plats  | Beskrivning                                    |
+|-----------------|---------|--------|------------------------------------------------|
+| name            | string  | path   | Namn på arbetsboken.                           |
+| sheetName       | string  | path   | Namn på kalkylbladet.                          |
+| chartIndex      | integer | path   | Index för det diagram som ska ändras.          |
+| legend          | object  | body   | JSON-objekt som definierar legendinställningarna. |
+| folder          | string  | query  | Mapp som innehåller arbetsboken.               |
+| storageName     | string  | query  | Namn på lagringsplatsen.                       |
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för kommandoraden för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man anropar moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Förfrågan" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" 
--d '{"Font":{"Color":{"A":"1", "R":"255", "G":"0", "B":"0"}, "DoubleSize":10.0, "IsBold":true, "IsItalic":false, "IsStrikeout":false, "IsSubscript":false, "IsSuperscript":false, "Name":"Arial", "Size":15, "Underline":"None"}, "Shadow":true}' 
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
+-d '{"Font":{"Color":{"A":"1","R":"255","G":"0","B":"0"},"DoubleSize":10.0,"IsBold":true,"IsItalic":false,"IsStrikeout":false,"IsSubscript":false,"IsSuperscript":false,"Name":"Arial","Size":15,"Underline":"None"},"Shadow":true}' \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
- 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
- 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
- 
+## Moln-SDK-familj
+
+Att använda en SDK accelererar utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Kolla in [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

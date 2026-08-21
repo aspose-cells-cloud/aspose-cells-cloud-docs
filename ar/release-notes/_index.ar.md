@@ -1,9 +1,10 @@
-﻿---
-title: ملاحظة الإصدار
-second_title: Documen
+---
+title: "ملاحظات الإصدار"
+second title: "مستند"
 type: docs
-url: /ar/release-notes/
-description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك
+url: /release-notes/
+description: "استكشف ملاحظات إصدار Aspose.Cells Cloud من عام 2016 إلى عام 2026، مع تفصيل الميزات الجديدة والتحسينات وإصلاحات الأخطاء وتحديثات واجهة برمجة التطبيقات لكل إصدار، مما يساعد المطورين على البقاء على اطلاع بمنصة الجداول الإلكترونية في السحابة."
 weight: 40
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، ملاحظات الإصدار
+ArticleTitle: "Aspose.Cells Cloud – ملاحظات الإصدار (2016‑2026)"
+keywords: "Aspose.Cells Cloud، ملاحظات الإصدار، 2026، 2025، 2024، 2023، 2022، 2021، 2020، 2019، 2018، 2017، 2016، تغييرات في واجهة برمجة التطبيقات، إصلاحات الأخطاء، ميزات جديدة، Excel، PDF، CSV، JSON"
 ---

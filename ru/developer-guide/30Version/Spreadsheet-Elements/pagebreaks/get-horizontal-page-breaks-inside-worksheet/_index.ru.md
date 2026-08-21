@@ -1,112 +1,97 @@
-﻿---
-title: Получить горизонтальный разрыв страницы
-second_title: Documen
-linktitle: Получить горизонтальный разрыв страницы
-type: docs
-url: /ru/page-breaks/get-horizontal-page-breaks/
-aliases: [/get-horizontal-page-breaks-inside-worksheet/]
-keywords: Add a page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает добавление разрыва страницы в лист Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 10
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Горизонтальные разрывы страниц
 ---
-Этот REST API указывает на необходимость получения `horizontal` разрывов страниц.
+title: "Получение горизонтальных разрывов страницы"
+second_title: "Документ"
+linktitle: "Получение горизонтальных разрывов страницы"
+type: docs
+url: /page-breaks/get-horizontal-page-breaks/
+aliases: [/get-horizontal-page-breaks-inside-worksheet/]
+keywords: "горизонтальные разрывы страницы, Aspose.Cells Cloud, REST API, рабочая книга Excel, SDK"
+description: "Получение горизонтальных разрывов страницы из рабочей книги Excel с помощью API Aspose.Cells Cloud. Включает endpoint, параметры, пример cURL, формат ответа и фрагменты кода SDK для C#, Java, Python и других языков."
+ArticleTitle: "Получение горизонтальных разрывов страницы — Документация API Aspose.Cells Cloud"
+weight: 10
+---
 
-## РСЕT API
+**Горизонтальный разрыв страницы** — это разрыв, основанный на строках, который заставляет рабочий лист начинать новую печатную страницу после указанной строки. Этот REST API позволяет получить такие горизонтальные разрывы страницы.
+
+## Безопасность и аутентификация
+
+API Aspose.Cells Cloud защищены и требуют [аутентификации с использованием токена JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks
 ```
 
-Параметры запроса:
+### Параметры запроса
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь||
-| Имя_листа| нить| путь||
-| папка| нить| запрос||
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Название параметра | Тип    | Местоположение | Описание                                                         |
+| ------------------ | ------ | -------------- | ---------------------------------------------------------------- |
+| name               | string | path           | Имя файла Excel.                                                 |
+| sheetName          | string | path           | Имя рабочего листа.                                              |
+| folder             | string | query          | Путь к папке в хранилище, где расположен файл. _(необязательно)_ |
+| storageName        | string | query          | Имя хранилища. _(необязательно)_                                 |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreaks) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+<a href="https://apireference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreaks" rel="noopener" title="Спецификация OpenAPI для GetHorizontalPageBreaks">Спецификация OpenAPI</a> определяет публично доступное программное интерфейсное API и позволяет выполнять взаимодействие с REST API непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Для простого доступа к веб-сервисам Aspose.Cells вы можете использовать утилиту командной строки cURL. В следующем примере показано, как вызвать облачный API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/horizontalpagebreaks" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/horizontalpagebreaks" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "HorizontalPageBreaks": {
-
     "HorizontalPageBreakList": [
-
       {
-
         "Row": 6,
-
         "EndColumn": 16383,
-
         "StartColumn": 0
-
       }
-
     ],
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/HorizontalPageBreaks",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/HorizontalPageBreaks",
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+## Обработка ошибок
+
+| HTTP-статус | Описание                                                           | Пример JSON                                            |
+| ----------- | ------------------------------------------------------------------ | ------------------------------------------------------ |
+| 400         | Неверный запрос — отсутствуют или некорректны параметры.          | `{ "Code": 400, "Message": "Invalid parameter." }`     |
+| 401         | Неавторизован — отсутствует или некорректен токен JWT.            | `{ "Code": 401, "Message": "Authentication failed." }` |
+| 404         | Не найдено — указанный файл или рабочий лист не существуют.       | `{ "Code": 404, "Message": "Resource not found." }`    |
+| 500         | Внутренняя ошибка сервера — непредвиденное состояние на сервере.  | `{ "Code": 500, "Message": "Server error." }`          |
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя вам сосредоточиться на задачах вашего проекта. Полный список облачных SDK Aspose.Cells Cloud доступен в <a href="https://github.com/aspose-cells-cloud" rel="noopener">репозитории GitHub</a>.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
-
-## Семейство облачных SDK
-
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
-
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

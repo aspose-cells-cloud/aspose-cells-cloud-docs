@@ -1,65 +1,60 @@
-﻿---
-title: Разгруппировать строки на рабочем листе Excel
-second_title: Documen
-linktitle: Унгру
-type: docs
-url: /ru/rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
-keywords: Ungroup rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает разгруппировку строк на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 70
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Разгруппировка строк на листе Excel
 ---
-Этот REST API указывает на необходимость разгруппировать строки на листе Excel.
+title: "Отгруппировка строк на листе Excel"
+second_title: "Документ"
+linktitle: "Отгруппировка"
+type: docs
+url: /rows/ungroup/
+aliases: [/ungroup-rows-in-excel-worksheet/]
+keywords: "отгруппировка строк, Excel, Aspose.Cells Cloud, REST API, SDK, электронная таблица"
+description: "Узнайте, как отгруппировать строки на листе Excel с помощью REST API и SDK Aspose.Cells Cloud для различных языков программирования."
+weight: 70
+---
 
-## РСЕT API
+Этот REST API отгруппировывает строки на листе Excel.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/ungroup
- 
 ```
 
-Параметры запроса:
+### **Параметры запроса**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| firstIndex| целое число| запрос| Первый индекс строки, подлежащий обработке.|
-| lastIndex| целое число| запрос| Последний индекс строки, подлежащий обработке.|
-| isAll| булев| запрос| Все ли ряды должны быть задействованы?|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип    | Местоположение | Описание                                                                 |
+| ------------- | ------ | -------------- | ------------------------------------------------------------------------ |
+| name          | string | path           | Имя рабочей книги.                                                       |
+| sheetName     | string | path           | Имя листа.                                                               |
+| firstIndex    | integer | query         | Начальный индекс (отсчитываемый от нуля) первой строки для отгруппировки. |
+| lastIndex     | integer | query         | Конечный индекс (отсчитываемый от нуля) последней строки для отгруппировки. |
+| isAll         | boolean | query         | Если **true**, все строки в указанном диапазоне будут отгруппированы.    |
+| folder        | string | query          | Папка, содержащая рабочую книгу.                                         |
+| storageName   | string | query          | Имя хранилища, в котором расположена рабочая книга.                      |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows) определяет публично доступное программное интерфейсное описание и позволяет выполнять взаимодействие по REST непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Пример ниже демонстрирует, как выполнять вызовы к облачному API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/ungroup?firstIndex=1&lastIndex=5&isAll=true" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+ -X POST \
+ -H "Content-Type: application/json" \
+ -H "Accept: application/json" \
+ -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -68,9 +63,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK берёт на себя обработку низкоуровневых деталей и позволяет сосредоточиться на задачах проекта. Полный список облачных SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

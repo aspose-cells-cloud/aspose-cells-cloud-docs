@@ -1,77 +1,83 @@
-﻿---
-title: 在 Excel 工作表中设置图表标题
+---
+title: "Aspose.Cells Cloud API – 在 Excel 工作表中设置图表标题"
 type: docs
 url: /zh/chart/title/add/
-aliases: [/set-chart-title-in-excel-worksheet/]
+aliases: [/zh/set-chart-title-in-excel-worksheet/]
 weight: 30
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 工作表中设置图表标题
+keywords: "Aspose.Cells Cloud, 图表标题 API, Excel 图表标题, REST API, SDK 示例"
+description: "了解如何使用 Aspose.Cells Cloud REST API 在 Excel 工作表中添加或更新图表标题。包含 cURL、SDK 示例、所需参数、身份验证步骤和错误处理。"
 ---
-此 REST API 表示添加图表标题/设置图表标题可见
- 
-## 重新设置 API
- 
-```bash
- 
+
+添加图表标题或使现有标题可见。
+
+## PutWorksheetChartTitle API
+
+```http
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
- 
 ```
-请求参数为：
- 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|图表索引|整数|小路|图表索引。|
-|标题||身体|图表标题。|
-|文件夹|细绳|询问|工作簿文件夹。|
-|存储名称|细绳|询问|存储名称。|
 
-<br/>
- 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartTitle)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
- 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+### **安全与身份验证**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Aspose.Cells Cloud API 是安全的，需要使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
+
+### 请求参数
+
+| 参数名        | 类型     | 位置   | 描述                         |
+| ------------- | -------- | ------ | ---------------------------- |
+| name          | string   | path   | 工作簿名称。                 |
+| sheetName     | string   | path   | 工作表名称。                 |
+| chartIndex    | integer  | path   | 图表索引。                   |
+| title         | string   | body   | 图表标题文本。               |
+| folder        | string   | query  | 包含工作簿的文件夹。         |
+| storageName   | string   | query  | 存储名称。                   |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartTitle) 定义了一个公开可用的编程接口，可让您直接从 Web 浏览器执行 REST 交互。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" 
--d '{"Text":"Sales Chart"}'
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+```bash
+curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
+  -d '{"Text":"Sales Chart"}' \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
- 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
- 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+**错误响应**
+
+| HTTP 状态码 | 示例载荷                                                                            | 描述                               |
+| ----------- | ----------------------------------------------------------------------------------- | ---------------------------------- |
+| 400         | `{ "Code": "400", "Message": "Invalid request payload." }`                         | 请求体格式错误或缺少必需字段。     |
+| 401         | `{ "Code": "401", "Message": "Authentication failed. Invalid or expired JWT token." }` | 承载令牌缺失、无效或已过期。       |
+| 404         | `{ "Code": "404", "Message": "Workbook, worksheet, or chart not found." }`          | 指定的资源不存在。                 |
+| 500         | `{ "Code": "500", "Message": "Internal server error." }`                            | 服务器上发生意外错误。             |
+
+## 云 SDK 家族
+
+使用 SDK 是最快捷的开发方式。SDK 抽象了底层细节，使您能够专注于项目任务。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用 various SDK 调用 Aspose.Cells Web 服务：
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -81,8 +87,6 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-chart-SetChartTitle-set-chart-title.java" >}}
 
@@ -135,3 +139,5 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---

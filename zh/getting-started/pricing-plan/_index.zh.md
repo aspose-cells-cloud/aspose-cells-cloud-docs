@@ -1,56 +1,57 @@
-﻿---
-title: Aspose.Cells 云定价计划：每月 150 次免费 API 通话，超出使用量则采用分级定价模式
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Pricing Pla
-linktitle: 定价计划
-type: docs
-url: /zh/pricing-plan/
-description: Aspose.Cells 云支持 Excel 创建、转换、合并、拆分、保护、内部对象操作等
-weight: 70
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 定价计划
 ---
-Aspose 构建了极其易用的软件即服务 (SaaS)，开发者可以在购买前进行充分评估。为此，我们采用了略有不同的销售模式。
+title: "Aspose.Cells Cloud 定价方案：每月 150 次免费 API 调用，超出后采用分层计费模式"
+second_title: "文档"
+ArticleTitle: "Aspose.Cells Cloud 定价方案"
+linktype: "定价方案"
+type: docs
+url: /pricing-plan/
+description: "了解 Aspose.Cells Cloud 的定价方案：每月享有 150 次免费 API 调用，超出后按需付费，单次调用低至 0.007 美元。无隐藏升级项目，仅提供透明的分层定价。"
+weight: 70
+keywords: "Aspose.Cells Cloud 定价, API 调用费用, 按需付费的 Excel API, 云端电子表格定价"
+---
+
+Aspose 提供极其易用的 Web API，供开发者在决定购买前充分评估。为此，我们采用了一种略有不同的销售模式。
 
 <table style="font-size: 16px; width: 100%; border-collapse: collapse;">
     <thead>
         <tr>
-            <th style="border: none;width:50%; padding: 10px;">已拨打电话 API</th>
-            <th style="border: none;width:35%; padding: 10px;">费率 / API 致电</th>
-            <th style="border: none; width:29%;padding: 10px;">价格/月</th>
+            <th style="border: none; width:45%; padding: 10px;">已调用 API 次数</th>
+            <th style="border: none; width:30%; padding: 10px;">单价 / 每次调用</th>
+            <th style="border: none; width:25%; padding: 10px;">月度费用</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="border: none; padding: 10px;">至 150 API 呼叫</td>
-            <td style="border: none; padding: 10px;">自由的</td>
-            <td style="border: none; padding: 10px;">$0</td>
+            <td style="border: none; padding: 10px;">0 至 150 次 API 调用</td>
+            <td style="border: none; padding: 10px;">免费</td>
+            <td style="border: none; padding: 10px;">0 美元</td>
         </tr>
         <tr>
-            <td style="border: none; padding: 10px;">下 1000 个 API 呼叫</td>
-            <td style="border: none; padding: 10px;">扁平率</td>
-            <td style="border: none; padding: 10px;">$30</td>
+            <td style="border: none; padding: 10px;">后续 1,000 次 API 调用</td>
+            <td style="border: none; padding: 10px;">统一费率</td>
+            <td style="border: none; padding: 10px;">30 美元</td>
         </tr>
         <tr>
-            <td style="border: none; padding: 10px;">下一个 14000 API 呼叫</td>
-            <td style="border: none; padding: 10px;">$0.090 / API 致电</td>
-            <td style="border: none; padding: 10px;"></td>
+            <td style="border: none; padding: 10px;">后续 14,000 次 API 调用</td>
+            <td style="border: none; padding: 10px;">0.090 美元 / 每次调用</td>
+            <td style="border: none; padding: 10px;">1,260 美元</td>
         </tr>
         <tr>
-            <td style="border: none; padding: 10px;">下一个 15000 个 API 呼叫</td>
-            <td style="border: none; padding: 10px;">$0.070 / API 致电</td>
-            <td style="border: none; padding: 10px;"></td>
+            <td style="border: none; padding: 10px;">后续 15,000 次 API 调用</td>
+            <td style="border: none; padding: 10px;">0.070 美元 / 每次调用</td>
+            <td style="border: none; padding: 10px;">1,050 美元</td>
         </tr>
         <tr>
-            <td style="border: none; padding: 10px;">下一个 60000 API 呼叫</td>
-            <td style="border: none; padding: 10px;">$0.050 / API 致电</td>
-            <td style="border: none; padding: 10px;"></td>
+            <td style="border: none; padding: 10px;">后续 60,000 次 API 调用</td>
+            <td style="border: none; padding: 10px;">0.050 美元 / 每次调用</td>
+            <td style="border: none; padding: 10px;">3,000 美元</td>
         </tr>
         <tr>
-            <td style="border: none; padding: 10px;">任何额外的 API 致电</td>
-            <td style="border: none; padding: 10px;">$0.007 / API 致电</td>
-            <td style="border: none; padding: 10px;"></td>
+            <td style="border: none; padding: 10px;">任何额外 API 调用</td>
+            <td style="border: none; padding: 10px;">0.007 美元 / 每次调用</td>
+            <td style="border: none; padding: 10px;">可变（按次计费）</td>
         </tr>
     </tbody>
 </table>
 
-请检查[定价计划和购买方式](https://purchase.aspose.cloud/buy)网页概述了我们的单一定价计划以及为什么没有“升级”或“降级”。
+请参阅 [定价方案及购买方式](https://purchase.aspose.cloud/buy) 页面，了解我们单一定价方案的详细说明，以及为何我们不提供“升级”或“降级”选项。

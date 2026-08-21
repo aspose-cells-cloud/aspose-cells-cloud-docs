@@ -1,83 +1,78 @@
-﻿---
-title: Cancella gli oggetti nel file Excel
-second_title: Documen
-linktitle: Pulito
+---
+title: "Rimuovi oggetti da un file Excel"
+second_title: "Documento"
+linktitle: "Rimuovi"
 type: docs
 url: /it/clear/
-aliases: [/clearobjects/]
-keywords: Clear internal objects of Excel files
-description: Aspose.Cells Cloud REST API supporta la cancellazione degli oggetti interni di Excel file. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/clearobjects/]
+keywords: "Aspose.Cells, Excel, Rimuovi oggetti, API REST, Cloud SDK, Rimuovi commenti, Elimina grafici"
+description: "Usa l'API REST di Aspose.Cells Cloud per eliminare commenti, grafici, forme e altri oggetti da un libro Excel. Supporta diversi SDK e restituisce il file pulito in formato Base64."
 weight: 39
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Cancella
 ---
-Questo REST API indica l'oggetto Excel `clear` in un file Excel.
 
-## RSET API
+Questa API REST consente di rimuovere gli oggetti da un file Excel.
+
+## API REST
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/clearobjects
-
 ```
 
-I parametri della richiesta sono:
+### Parametri della richiesta
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| file| file| formData| File da caricare|
-| tipo di oggetto| corda| domanda| righe duplicate/colonne vuote/righe vuote/formula/contenuto/stile/grafico/commento/immagine/forma/oggetto elenco/collegamento ipertestuale/oggetto ole/tabella pivot/validazione/sfondo|
+| Parametro  | Tipo   | Posizione   | Obbligatorio | Valore predefinito | Valori ammessi                                                                                                                                                                                      | Descrizione                                        |
+| ---------- | ------ | ----------- | ------------ | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| file       | file   | form‑data   | Sì           | —                  | —                                                                                                                                                                                                   | Il file Excel da caricare                          |
+| objecttype | string | query       | No           | —                  | `duplicaterows`, `blankcolumns`, `blankrows`, `formula`, `content`, `style`, `chart`, `comment`, `picture`, `shape`, `listobject`, `hyperlink`, `oleobject`, `pivottable`, `validation`, `background` | Tipi di oggetti da rimuovere (separati da virgola) |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects) definiscono un'interfaccia di programmazione pubblicamente accessibile e consentono di effettuare richieste REST direttamente da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud con cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+curl -v "https://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'xxxxx1=@xxxx1.xlsx' \
+  -F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "file1",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "file2",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+## Famiglia di SDK per il Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'uso di un SDK rappresenta il modo migliore per velocizzare lo sviluppo. Un SDK nasconde i dettagli a basso livello e ti consente di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

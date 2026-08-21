@@ -1,134 +1,174 @@
-﻿---
-title: Papiergröße
-second_title: Documen
-linktitle: Papiergröße
-type: docs
-url: /de/paper-size/
-keywords: Paper Size
-description: Aspose.Cells Cloud REST API unterstützt die Einstellung der Papiergröße. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Papiergröße
 ---
-## **Papierformatwerte**
+title: "Aspose.Cells Cloud – Vollständige Liste der Papierformat-Konstanten"
+second_title: "Dokument"
+linktitle: "Papierformat"
+type: docs
+url: /paper-size/
+keywords: "Papierformat, Aspose.Cells Cloud, REST-API, Tabellenkalkulation, A4, Letter, ISO, JIS, PRC"
+description: "Vollständige Liste der von der Aspose.Cells Cloud REST API unterstützten Papierformat-Konstanten, einschließlich Abmessungen und Nutzungsbeispielen zum Festlegen benutzerdefinierter Formate in Tabellenkalkulationen."
+weight: 20
+ArticleTitle: "Aspose.Cells Cloud Papierformat-Konstanten – Vollständige Referenz"
+---
 
-| Name| Beschreibung|
-|:- |:- |
-| PapierBrief| Brief (8-1/2 Zoll x 11 Zoll)|
-| PapierBriefKlein| Kleiner Buchstabe (8-1/2 Zoll x 11 Zoll)|
-| PaperTabloid| Tabloid (11 x 17 Zoll)|
-| PaperLedger| Hauptbuch (17 Zoll x 11 Zoll)|
-| PaperLegal| Legal (8-1/2 Zoll x 14 Zoll)|
-| Papiererklärung| Aussage (5-1/2 Zoll x 8-1/2 Zoll)|
-| PaperExecutive| Executive (7-1/4 Zoll x 10-1/2 Zoll)|
-| PapierA3| A3 (297 mm x 420 mm)|
-| PapierA4| A4 (210 mm x 297 mm)|
-| PapierA4Klein| A4 Klein (210 mm x 297 mm)|
-| PapierA5| A5 (148 mm x 210 mm)|
-| PapierB4| JIS B4 (257 mm x 364 mm)|
-| PapierB5|JIS B5 (182 mm x 257 mm)|
-| PaperFolio| Folio (8-1/2 Zoll x 13 Zoll)|
-| PapierQuarto| Quarto (215 mm x 275 mm)|
-| Papier 10x14| 10 Zoll x 14 Zoll.|
-| Papier 11x17| 11 Zoll x 17 Zoll.|
-| Papierhinweis| Hinweis (8-1/2 Zoll x 111 Zoll)|
-| PapierUmschlag9| Umschlag Nr. 9 (3-7/8 Zoll 1 x 8-7/8 Zoll)|
-| PapierUmschlag10| Umschlag Nr. 10 (4-1/8 Zoll x 9-1/2 Zoll)|
-| PapierUmschlag11| Umschlag Nr. 11 (4-1/2 Zoll x 10-3/8 Zoll)|
-| PapierUmschlag12| Umschlag Nr. 12 (4-1/2 Zoll x 11 Zoll)|
-| PapierUmschlag14| Umschlag Nr. 14 (5 Zoll x 11-1/2 Zoll)|
-| PapierCBlatt| Blatt im Format C|
-| PapierDBlatt| Blatt im Format D|
-| PapierEBlatt| Blatt im Format E|
-| PapierUmschlagDL| Umschlag DL (110 mm x 220 mm)|
-| PapierUmschlagC5| Umschlag C5 (162 mm x 229 mm)|
-| PapierUmschlagC3| Umschlag C3 (324 mm x 458 mm)|
-| PapierUmschlagC4| Umschlag C4 (229 mm x 324 mm)|
-| PapierUmschlagC6| Umschlag C6 (114 mm x 162 mm)|
-|PapierUmschlagC65| Umschlag C65 (114 mm x 229 mm)|
-| PapierUmschlagB4| Umschlag B4 (250 mm x 353 mm)|
-| PapierUmschlagB5| Umschlag B5 (176 mm x 250 mm)|
-| PapierUmschlagB6| Umschlag B6 (176 mm x 125 mm)|
-| PapierUmschlagItalien| Umschlag Italien (110 mm x 230 mm)|
-| PapierUmschlagMonarch| Umschlag Monarch (3-7/8 Zoll x 7-1/2 Zoll)|
-| PapierUmschlagPersönliche| Umschlag (3-5/8 Zoll x 6-1/2 Zoll)|
-| PapierFanfoldUS| US-Standard-Leporello (14-7/8 Zoll x 11 Zoll)|
-| PapierLeporelloStdDeutsch| Deutsches Standard-Leporello (8-1/2 Zoll x 12 Zoll)|
-| PapierLeporelloJuristischDeutsch| Deutsches Legal-Fächerblatt (8-1/2 Zoll x 13 Zoll)|
-| PapierISOB4| B4 (ISO) 250 x 353 mm|
-| PapierJapanischPostkarte| Japanische Postkarte (100 mm × 148 mm)|
-| Papier 9x11|9? × 11?0 |
-| Papier 10x11|10? × 11? |
-| Papier 15 x 11|15? × 11? |
-| PapierUmschlagEinladen| Einladungsumschlag (220 mm × 220 mm)|
-| PaperLetterExtra| US Letter Extra 9 \275 x 12 Zoll|
-| PaperLegalExtra|US Legal Extra 9 \275 x 15 Zoll|
-| PaperTabloidExtra| US Tabloid Extra 11,69 x 18 Zoll|
-| PapierA4Extra| A4 Extra 9,27 x 12,69 Zoll|
-| PapierBuchstabeQuer| Brief quer 8 \275 x 11 Zoll|
-| PapierA4Quer| A4 quer 210 x 297 mm|
-| PapierBuchstabeExtraQuer| Brief Extra Quer 9\275 x 12 Zoll|
-| PaperSuperA| SuperA/SuperA/A4 227 x 356 mm|
-| PaperSuperB| SuperB/SuperB/A3 305 x 487 mm|
-| PaperLetterPlus| US Letter Plus 8,5 x 12,69 Zoll|
-| PapierA4Plus| A4 Plus 210 x 330 mm|
-| PapierA5Quer| A5 quer 148 x 210 mm|
-| PapierJISB5Quer| B5 (JIS) Quer 182 x 257 mm|
-| PapierA3Extra| A3 Extra 322 x 445 mm|
-| PapierA5Extra| A5 Extra 174 x 235 mm|
-| PapierISOB5Extra| B5 (ISO) Extra 201 x 276 mm|
-| PapierA2| A2 420 x 594 mm|
-| PapierA3Quer| A3 quer 297 x 420 mm|
-| PapierA3ExtraQuer|A3 Extra quer 322 x 445 mm|
-| PapierJapanischDoppeltPostkarte| Japanische Doppelpostkarte 200 x 148 mm|
-| PapierA6| A6 105 x 148 mm|
-| PapierJapanischUmschlagKaku2| Japanischer Umschlag Kaku Nr. 2|
-| PapierJapanischUmschlagKaku3| Japanischer Umschlag Kaku Nr. 3|
-| PapierJapanischUmschlagChou3| Japanischer Umschlag Chou Nr. 3|
-| PapierJapanischUmschlagChou4| Japanischer Umschlag Chou Nr. 4|
-| PapierBriefGedreht| 11 Zoll × 8,5 Zoll|
-| PapierA3Gedreht| 420 mm × 297 mm|
-| PapierA4Gedreht| 297 mm × 210 mm|
-| PapierA5Gedreht| 210 mm × 148 mm|
-| PapierJISB4Rotated| B4 (JIS) Gedreht 364 x 257 mm|
-| PapierJISB5Gedreht| B5 (JIS) Gedreht 257 x 182 mm|
-| PapierJapanischPostkarteGedreht| Japanische Postkarte gedreht 148 x 100 mm|
-| PapierJapanischDoppeltPostkarteGedreht| Doppelte japanische Postkarte gedreht 148 x 200 mm|
-| PapierA6Gedreht| A6 gedreht 148 x 105 mm|
-| PapierJapanischUmschlagKaku2Gedreht|Japanischer Umschlag Kaku Nr. 2 gedreht|
-| PapierJapanischUmschlagKaku3Gedreht| Japanischer Umschlag Kaku Nr. 3 gedreht|
-| PapierJapanischUmschlagChou3Gedreht| Japanischer Umschlag Chou Nr. 3 gedreht|
-| PapierJapanischUmschlagChou4Gedreht| Japanischer Umschlag Chou Nr. 4 gedreht|
-| PapierJISB6| B6 (JIS) 128 x 182 mm|
-| PapierJISB6Gedreht| B6 (JIS) Gedreht 182 x 128 mm|
-| Papier 12x11| 12 x 11 Zoll|
-| PapierJapanischUmschlagSie4| Japanischer Umschlag Du #4|
-| PapierJapanischUmschlagYou4Rotated| Japanischer Umschlag You #4 gedreht|
-| PapierPRC16K| PRC 16K 146 x 215 mm|
-| PapierPRC32K| PRC 32K 97 x 151 mm|
-| PapierPRCEnvelop1| PRC-Umschlag Nr. 1 102 x 165 mm|
-| PapierPRCEnvelop2| PRC-Umschlag Nr. 2 102 x 176 mm|
-| PapierPRCEnvelop3| PRC-Umschlag Nr. 3 125 x 176 mm|
-| PapierPRCEnvelope4| PRC-Umschlag Nr. 4 110 x 208 mm|
-| PapierPRCEnvelope5| PRC-Umschlag Nr. 5 110 x 220 mm|
-| PapierPRCEnvelope6|PRC-Umschlag Nr. 6 120 x 230 mm|
-| PapierPRCEnvelope7| PRC-Umschlag Nr. 7 160 x 230 mm|
-| PapierPRCEnvelope8| PRC-Umschlag Nr. 8 120 x 309 mm|
-| PapierPRCEnvelope9| PRC-Umschlag Nr. 9 229 x 324 mm|
-| PapierPRCEnvelope10| PRC-Umschlag Nr. 10 324 x 458 mm|
-| PapierPRC16KRotated| PRC 16K gedreht|
-| PapierPRC32KRotated| PRC 32K gedreht|
-| PaperPRCBig32KRotated| PRC 32K (groß) gedreht|
-| PaperPRCEnvelope1Rotated| PRC-Umschlag Nr. 1 gedreht 165 x 102 mm|
-| PaperPRCEnvelope2Rotated| PRC-Umschlag Nr. 2 gedreht 176 x 102 mm|
-| PaperPRCEnvelope3Rotated| PRC-Umschlag Nr. 3 gedreht 176 x 125 mm|
-| PaperPRCEnvelope4Rotated| PRC-Umschlag Nr. 4 gedreht 208 x 110 mm|
-| PapierPRCEnvelope5Rotated| PRC-Umschlag Nr. 5 gedreht 220 x 110 mm|
-| PapierPRCEnvelope6Rotated| PRC-Umschlag Nr. 6 gedreht 230 x 120 mm|
-| PaperPRCEnvelope7Rotated| PRC-Umschlag Nr. 7 gedreht 230 x 160 mm|
-| PapierPRCEnvelope8Rotated|PRC-Umschlag Nr. 8 gedreht 309 x 120 mm|
-| PaperPRCEnvelope9Rotated| PRC-Umschlag Nr. 9 gedreht 324 x 229 mm|
-| PapierPRCEnvelope10Rotated| PRC-Umschlag Nr. 10 gedreht 458 x 324 mm|
-| PapierB3| übliches B3 (13,9 x 19,7 Zoll)|
-| PapierVisitenkarte| Visitenkarte (90 mm x 55 mm)|
-| PapierThermo| Thermisch (3 x 11 Zoll)|
-| Brauch| Stellt die benutzerdefinierte Papiergröße dar.|
+## **Papierformat-Werte**
+
+Entwickler verwenden diese Konstanten mit der `SetPageSetup`-API (oder der entsprechenden SDK-Methode), um die Seitendimensionen eines Arbeitsblatts festzulegen. Die folgende Tabelle listet alle unterstützten Papierformat-Werte zusammen mit ihren physikalischen Abmessungen auf.
+
+<caption>Unterstützte Papierformat-Konstanten für Aspose.Cells Cloud</caption>
+
+| Name                               | Beschreibung                                       |
+| ---------------------------------- | -------------------------------------------------- |
+| PaperLetter                        | Letter (8½ in × 11 in)                             |
+| PaperLetterSmall                   | Letter Small (8½ in × 11 in) – identisch mit Letter |
+| PaperTabloid                       | Tabloid (11 in × 17 in)                            |
+| PaperLedger                        | Ledger (17 in × 11 in)                             |
+| PaperLegal                         | Legal (8½ in × 14 in)                              |
+| PaperStatement                     | Statement (5½ in × 8½ in)                          |
+| PaperExecutive                     | Executive (7¼ in × 10½ in)                         |
+| PaperA3                            | A3 (297 mm × 420 mm)                               |
+| PaperA4                            | A4 (210 mm × 297 mm)                               |
+| PaperA4Small                       | A4 Small (210 mm × 297 mm) – identisch mit A4     |
+| PaperA5                            | A5 (148 mm × 210 mm)                               |
+| PaperB4                            | JIS B4 (257 mm × 364 mm)                           |
+| PaperB5                            | JIS B5 (182 mm × 257 mm)                           |
+| PaperFolio                         | Folio (8½ in × 13 in)                              |
+| PaperQuarto                        | Quarto (215 mm × 275 mm)                           |
+| Paper10x14                         | 10 in × 14 in                                      |
+| Paper11x17                         | 11 in × 17 in                                      |
+| PaperNote                          | Note (8½ in × 11 in)                               |
+| PaperEnvelope9                     | Umschlag #9 (3 7/8 in × 8 7/8 in)                  |
+| PaperEnvelope10                    | Umschlag #10 (4 1/8 in × 9½ in)                    |
+| PaperEnvelope11                    | Umschlag #11 (4½ in × 10 3/8 in)                   |
+| PaperEnvelope12                    | Umschlag #12 (4½ in × 11 in)                       |
+| PaperEnvelope14                    | Umschlag #14 (5 in × 11½ in)                       |
+| PaperCSheet                        | C-Format-Blatt                                     |
+| PaperDSheet                        | D-Format-Blatt                                     |
+| PaperESheet                        | E-Format-Blatt                                     |
+| PaperEnvelopeDL                    | Umschlag DL (110 mm × 220 mm)                      |
+| PaperEnvelopeC5                    | Umschlag C5 (162 mm × 229 mm)                      |
+| PaperEnvelopeC3                    | Umschlag C3 (324 mm × 458 mm)                      |
+| PaperEnvelopeC4                    | Umschlag C4 (229 mm × 324 mm)                      |
+| PaperEnvelopeC6                    | Umschlag C6 (114 mm × 162 mm)                      |
+| PaperEnvelopeC65                   | Umschlag C65 (114 mm × 229 mm)                     |
+| PaperEnvelopeB4                    | Umschlag B4 (250 mm × 353 mm)                      |
+| PaperEnvelopeB5                    | Umschlag B5 (176 mm × 250 mm)                      |
+| PaperEnvelopeB6                    | Umschlag B6 (176 mm × 125 mm)                      |
+| PaperEnvelopeItaly                 | Italienischer Umschlag (110 mm × 230 mm)           |
+| PaperEnvelopeMonarch               | Monarch-Umschlag (3 7/8 in × 7 ½ in)               |
+| PaperEnvelopePersonal              | Personal-Umschlag (3 5/8 in × 6 ½ in)              |
+| PaperFanfoldUS                     | US-Standard-Faltblatt (14 7/8 in × 11 in)         |
+| PaperFanfoldStdGerman              | Deutsches Standard-Faltblatt (8½ in × 12 in)       |
+| PaperFanfoldLegalGerman            | Deutsches juristisches Faltblatt (8½ in × 13 in)   |
+| PaperISOB4                         | B4 (ISO) 250 mm × 353 mm                           |
+| PaperJapanesePostcard              | Japanische Postkarte (100 mm × 148 mm)             |
+| Paper9x11                          | 9 in × 11 in                                       |
+| Paper10x11                         | 10 in × 11 in                                      |
+| Paper15x11                         | 15 in × 11 in                                      |
+| PaperEnvelopeInvite                | Einladungs-Umschlag (220 mm × 220 mm)              |
+| PaperLetterExtra                   | US Letter Extra (9¼ in × 12 in)                    |
+| PaperLegalExtra                    | US Legal Extra (9¼ in × 15 in)                     |
+| PaperTabloidExtra                  | US Tabloid Extra (11,69 in × 18 in)                |
+| PaperA4Extra                       | A4 Extra (9,27 in × 12,69 in)                      |
+| PaperLetterTransverse              | Letter Transverse (8¼ in × 11 in)                  |
+| PaperA4Transverse                  | A4 Transverse (210 mm × 297 mm)                    |
+| PaperLetterExtraTransverse         | Letter Extra Transverse (9¼ in × 12 in)            |
+| PaperSuperA                        | SuperA / SuperA / A4 (227 mm × 356 mm)             |
+| PaperSuperB                        | SuperB / SuperB / A3 (305 mm × 487 mm)             |
+| PaperLetterPlus                    | US Letter Plus (8,5 in × 12,69 in)                 |
+| PaperA4Plus                        | A4 Plus (210 mm × 330 mm)                          |
+| PaperA5Transverse                  | A5 Transverse (148 mm × 210 mm)                    |
+| PaperJISB5Transverse               | B5 (JIS) Transverse (182 mm × 257 mm)              |
+| PaperA3Extra                       | A3 Extra (322 mm × 445 mm)                         |
+| PaperA5Extra                       | A5 Extra (174 mm × 235 mm)                         |
+| PaperISOB5Extra                    | B5 (ISO) Extra (201 mm × 276 mm)                   |
+| PaperA2                            | A2 (420 mm × 594 mm)                               |
+| PaperA3Transverse                  | A3 Transverse (297 mm × 420 mm)                    |
+| PaperA3ExtraTransverse             | A3 Extra Transverse (322 mm × 445 mm)              |
+| PaperJapaneseDoublePostcard        | Japanische doppelte Postkarte (200 mm × 148 mm)    |
+| PaperA6                            | A6 (105 mm × 148 mm)                               |
+| PaperJapaneseEnvelopeKaku2         | Japanischer Umschlag Kaku #2 (100 mm × 148 mm)     |
+| PaperJapaneseEnvelopeKaku3         | Japanischer Umschlag Kaku #3 (120 mm × 235 mm)     |
+| PaperJapaneseEnvelopeChou3         | Japanischer Umschlag Chou #3 (120 mm × 235 mm)     |
+| PaperJapaneseEnvelopeChou4         | Japanischer Umschlag Chou #4 (120 mm × 235 mm)     |
+| PaperLetterRotated                 | 11 in × 8,5 in                                     |
+| PaperA3Rotated                     | 420 mm × 297 mm                                    |
+| PaperA4Rotated                     | 297 mm × 210 mm                                    |
+| PaperA5Rotated                     | 210 mm × 148 mm                                    |
+| PaperJISB4Rotated                  | B4 (JIS) Rotated (364 mm × 257 mm)                 |
+| PaperJISB5Rotated                  | B5 (JIS) Rotated (257 mm × 182 mm)                 |
+| PaperJapanesePostcardRotated       | Japanische Postkarte Rotated (148 mm × 100 mm)     |
+| PaperJapaneseDoublePostcardRotated | Japanische doppelte Postkarte Rotated (148 mm × 200 mm) |
+| PaperA6Rotated                     | A6 Rotated (148 mm × 105 mm)                       |
+| PaperJapaneseEnvelopeKaku2Rotated  | Japanischer Umschlag Kaku #2 Rotated (148 mm × 100 mm) |
+| PaperJapaneseEnvelopeKaku3Rotated  | Japanischer Umschlag Kaku #3 Rotated (235 mm × 120 mm) |
+| PaperJapaneseEnvelopeChou3Rotated  | Japanischer Umschlag Chou #3 Rotated (235 mm × 120 mm) |
+| PaperJapaneseEnvelopeChou4Rotated  | Japanischer Umschlag Chou #4 Rotated (235 mm × 120 mm) |
+| PaperJISB6                         | B6 (JIS) 128 mm × 182 mm                           |
+| PaperJISB6Rotated                  | B6 (JIS) Rotated (182 mm × 128 mm)                 |
+| Paper12x11                         | 12 in × 11 in                                      |
+| PaperJapaneseEnvelopeYou4          | Japanischer Umschlag You #4 (100 mm × 148 mm)      |
+| PaperJapaneseEnvelopeYou4Rotated   | Japanischer Umschlag You #4 Rotated (148 mm × 100 mm) |
+| PaperPRC16K                        | PRC 16K (146 mm × 215 mm)                          |
+| PaperPRC32K                        | PRC 32K (97 mm × 151 mm)                           |
+| PaperPRCEnvelope1                  | PRC Umschlag #1 (102 mm × 165 mm)                  |
+| PaperPRCEnvelope2                  | PRC Umschlag #2 (102 mm × 176 mm)                  |
+| PaperPRCEnvelope3                  | PRC Umschlag #3 (125 mm × 176 mm)                  |
+| PaperPRCEnvelope4                  | PRC Umschlag #4 (110 mm × 208 mm)                  |
+| PaperPRCEnvelope5                  | PRC Umschlag #5 (110 mm × 220 mm)                  |
+| PaperPRCEnvelope6                  | PRC Umschlag #6 (120 mm × 230 mm)                  |
+| PaperPRCEnvelope7                  | PRC Umschlag #7 (160 mm × 230 mm)                  |
+| PaperPRCEnvelope8                  | PRC Umschlag #8 (120 mm × 309 mm)                  |
+| PaperPRCEnvelope9                  | PRC Umschlag #9 (229 mm × 324 mm)                  |
+| PaperPRCEnvelope10                 | PRC Umschlag #10 (324 mm × 458 mm)                 |
+| PaperPRC16KRotated                 | PRC 16K Rotated                                    |
+| PaperPRC32KRotated                 | PRC 32K Rotated                                    |
+| PaperPRCBig32KRotated              | PRC 32K (Big) Rotated                              |
+| PaperPRCEnvelope1Rotated           | PRC Umschlag #1 Rotated (165 mm × 102 mm)          |
+| PaperPRCEnvelope2Rotated           | PRC Umschlag #2 Rotated (176 mm × 102 mm)          |
+| PaperPRCEnvelope3Rotated           | PRC Umschlag #3 Rotated (176 mm × 125 mm)          |
+| PaperPRCEnvelope4Rotated           | PRC Umschlag #4 Rotated (208 mm × 110 mm)          |
+| PaperPRCEnvelope5Rotated           | PRC Umschlag #5 Rotated (220 mm × 110 mm)          |
+| PaperPRCEnvelope6Rotated           | PRC Umschlag #6 Rotated (230 mm × 120 mm)          |
+| PaperPRCEnvelope7Rotated           | PRC Umschlag #7 Rotated (230 mm × 160 mm)          |
+| PaperPRCEnvelope8Rotated           | PRC Umschlag #8 Rotated (309 mm × 120 mm)          |
+| PaperPRCEnvelope9Rotated           | PRC Umschlag #9 Rotated (324 mm × 229 mm)          |
+| PaperPRCEnvelope10Rotated          | PRC Umschlag #10 Rotated (458 mm × 324 mm)         |
+| PaperB3                            | Übliches B3 (13,9 in × 19,7 in)                    |
+| PaperBusinessCard                  | Visitenkarte (90 mm × 55 mm)                       |
+| PaperThermal                       | Thermal (3 in × 11 in)                             |
+| Custom                             | Stellt ein benutzerdefiniertes Papierformat dar. Verwenden Sie den `Custom`-Enum-Wert zusammen mit expliziten Breiten- und Höhenwerten in Punkten. |
+
+**Voraussetzungen**  
+Vor dem Aufruf des Endpunkts muss ein aktives Aspose Cloud Access Token mit den entsprechenden Berechtigungen sowie die API-Version (`v3.0`) abgerufen werden.
+
+### So legen Sie ein Papierformat mit der Aspose.Cells Cloud REST API fest
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/Workbook/worksheets/Sheet1/pageSetup" \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Content-Type: application/json" \
+  -d '{"PaperSize":"PaperA4"}'
+```
+
+**Anforderungsdetails**  
+- **Methode:** `PUT`  
+- **Endpunkt:** `/cells/Workbook/worksheets/{sheetName}/pageSetup`  
+- **Pfadparameter:** `sheetName` – Name des Arbeitsblatts (Zeichenkette, erforderlich).  
+- **Anforderungstext:** JSON-Objekt mit der `PaperSize`-Eigenschaft. Der Wert muss eine der in der obigen Tabelle aufgeführten Konstanten sein, z. B. `"PaperA4"`.
+
+**Antworten**  
+- `200 OK` – Seitenformat erfolgreich aktualisiert.  
+- `400 Bad Request` – Ungültiger `PaperSize`-Wert.  
+- `401 Unauthorized` – Authentifizierung fehlgeschlagen oder Token fehlt.  
+- `404 Not Found` – Angegebenes Arbeitsblatt existiert nicht.
+
+**Beispiel-SDK (C#)**  
+```csharp
+var api = new CellsApi("client_id", "client_secret");
+var request = new PageSetup { PaperSize = PaperSizeEnum.PaperA4 };
+api.PutWorksheetPageSetup("Book1.xlsx", "Sheet1", request);
+```
+
+Für eine vollständige OpenAPI-Beschreibung siehe die <a href="https://api.aspose.cloud/v3.0/swagger.json" target="_blank" rel="noopener">Aspose.Cells Cloud Swagger-Spezifikation</a>.
+
+Weitere Informationen zum Konfigurieren von Rändern, Ausrichtung und anderen Layoutoptionen finden Sie in der [Seitenformat-Dokumentation](/page-setup/).

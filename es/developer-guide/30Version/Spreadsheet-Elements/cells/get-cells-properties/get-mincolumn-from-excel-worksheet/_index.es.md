@@ -1,46 +1,72 @@
-﻿---
-title: Obtener MinColumn de la hoja de trabajo Excel
-type: docs
-url: /es/get-mincolumn-from-excel-worksheet/
-weight: 100
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Obtener MinColumn de la hoja de trabajo Excel
 ---
-Este REST API indica que se obtiene un `mincolumn` en un archivo Excel cuando el parámetro `cellOrMethodName` es `mincolumn`.
+title: "Obtener MinColumn de una hoja de cálculo de Excel"
+type: docs
+url: /get-mincolumn-from-excel-worksheet/
+weight: 100
+keywords: Excel, Aspose.Cells Cloud, REST API, Obtener MinColumn, Hoja de cálculo, SDK, API en la nube
+description: Recuperar el índice mínimo de columna que contiene datos en una hoja de cálculo de un archivo de Excel mediante la API REST de Aspose.Cells Cloud.
+ArticleTitle: "Obtener MinColumn de una hoja de cálculo de Excel - Aspose.Cells Cloud API"
+---
 
-- **cURL Ejemplo**
+Esta API REST devuelve el índice mínimo de columna que contiene datos en una hoja de cálculo de Excel cuando el parámetro `cellOrMethodName` se establece en `mincolumn`.
 
+- **Ejemplo de cURL**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" \
+     -H "Authorization: Bearer <SU_TOKEN_DE_ACCESO>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MinColumn": 2
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Familia de SDK en la nube**
+**Detalles de la solicitud**
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+| Parámetro | Tipo | Obligatorio | Descripción |
+|-----------|------|-------------|-------------|
+| `cellOrMethodName` | string | Sí | Valor fijo `mincolumn` para indicar la operación. |
+| `folder` | string | No | Ruta a la carpeta que contiene el libro de cálculo (si no es la carpeta raíz). |
+| `storageName` | string | No | Nombre del almacenamiento en la nube de Aspose que se utilizará. |
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+**Detalles de la respuesta**
 
+La API devuelve un objeto JSON con una única propiedad:
 
+```json
+{
+  "MinColumn": integer   // Índice en base cero de la columna más a la izquierda que contiene datos.
+}
+```
+
+Códigos de estado HTTP típicos:
+
+- **200 OK** – Solicitud correcta, devuelve el valor de `MinColumn`.  
+- **401 Unauthorized** – Token de autenticación ausente o no válido.  
+- **404 Not Found** – El libro de cálculo, la hoja de cálculo o el rango de celdas especificados no existen.  
+- **500 Internal Server Error** – Error inesperado en el servidor.
+
+- **Uso de los SDK de Aspose.Cells Cloud**
+
+Utilizar un SDK es la forma más eficiente de desarrollar. Un SDK abstracta los detalles de bajo nivel, permitiéndole centrarse en la lógica de su proyecto. Consulte el <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">repositorio de GitHub</a> para obtener una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -103,3 +129,4 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

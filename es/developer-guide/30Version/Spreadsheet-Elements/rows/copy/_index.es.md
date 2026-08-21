@@ -1,126 +1,133 @@
-﻿---
-title: Copiar filas en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Policía
-type: docs
-url: /es/rows/copy/
-aliases: [/copy-rows-in-excel-worksheet/]
-keywords: Copy rows on an Excel workshee
-description: Aspose.Cells Cloud REST API permite copiar filas en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 30
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Copiar filas en una hoja de cálculo Excel
 ---
-Este REST API indica copiar filas de la hoja de cálculo.
+---
+title: "Copiar filas en una hoja de cálculo de Excel"
+description: "Copiar datos y formatos de filas completas específicas en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye autenticación, detalles de solicitud/respuesta, manejo de errores y ejemplos de SDK."
+api_version: "v3.0"
+endpoint: "/cells/{name}/worksheets/{sheetName}/cells/rows/copy"
+method: "POST"
+weight: 30
+---
 
-## RSET API
+# Copiar filas en una hoja de cálculo de Excel <span style="float:right;">v3.0</span>
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/copy
- 
+Copiar datos y formatos de filas completas específicas en una hoja de cálculo.
+
+---
+
+## Requisitos previos
+
+| # | Requisito |
+|---|-----------|
+| 1 | Un token **JWT** válido. Consulte la [guía de autenticación](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). |
+| 2 | El libro (`{name}`) ya debe existir en la **carpeta** / **almacenamiento** seleccionado. |
+| 3 | La hoja de cálculo de destino (`{sheetName}`) debe estar presente en el libro. |
+| 4 | (Opcional) Conozca la **carpeta** y el **storageName** si el archivo no se encuentra en la ubicación predeterminada. |
+
+---
+
+## Punto de conexión
+
+```
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/copy
 ```
 
-Los parámetros de la solicitud son:
+*Todos los parámetros de ruta distinguen mayúsculas de minúsculas.*
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| El nombre del libro de trabajo.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| sourceRowIndex| entero| consulta| Índice de fila de origen|
-| índice de fila de destino| entero| consulta| Índice de fila de destino|
-| número de fila| entero| consulta| El número de fila copiado|
-| hoja de trabajo| cadena| consulta| hoja de trabajo|
-| carpeta| cadena| consulta| La carpeta de documentos.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+### Parámetros de ruta
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetRows) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+| Parámetro | Tipo   | Obligatorio | Descripción |
+|-----------|--------|-------------|-------------|
+| `name`    | string | ✅ | Nombre del archivo del libro (por ejemplo, `test.xlsx`). |
+| `sheetName` | string | ✅ | Nombre de la hoja de cálculo (por ejemplo, `Sheet1`). |
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+### Parámetros de consulta
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Parámetro            | Tipo    | Obligatorio | Descripción |
+|----------------------|---------|-------------|-------------|
+| `sourceRowIndex`     | integer | ✅ | Índice de fila de origen (base cero). |
+| `destinationRowIndex`| integer | ✅ | Índice de fila de destino (base cero), donde se colocarán las filas copiadas. |
+| `rowNumber`          | integer | ✅ | Número de filas que se copiarán. |
+| `worksheet`          | string  | ❌ | Identificador de la hoja de cálculo; normalmente igual que **sheetName**. |
+| `folder`             | string  | ❌ | Ruta a la carpeta que contiene el libro. |
+| `storageName`        | string  | ❌ | Nombre del servicio de almacenamiento. |
 
-{{< tab tabNum="1" >}}
+---
+
+## Ejemplo de solicitud (cURL)
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/copy?sourceRowIndex=1&destinationRowIndex=12&rowNumber=10" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
+> **Nota**  
+> Reemplace `<jwt token>` con un token JWT válido obtenido del servicio de autenticación.
 
-{{< tab tabNum="2" >}}
+---
 
-```bash
+## Respuesta correcta
+
+| Código | Descripción |
+|--------|-------------|
+| **200** | Filas copiadas correctamente. |
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
-{{< /tab >}}
+El cuerpo de la respuesta es una instancia de `CellsCloudResponse`.
 
-{{< /tabs >}}
+---
 
-## Familia de SDK en la nube
+## Manejo de errores
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+| Código HTTP | Significado                                 | Cuerpo de ejemplo |
+|-------------|---------------------------------------------|-------------------|
+| **400**     | Solicitud incorrecta – parámetros faltantes o no válidos. | `{ "Code": 400, "Message": "Invalid sourceRowIndex." }` |
+| **401**     | No autorizado – token JWT inválido o faltante. | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404**     | No encontrado – el libro o la hoja de cálculo no existen. | `{ "Code": 404, "Message": "File not found." }` |
+| **500**     | Error interno del servidor – condición inesperada en el servidor. | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+**Pautas para el manejo**
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+* **400** – Verifique que todos los parámetros de consulta obligatorios estén presentes y correctamente formateados.  
+* **401** – Regenere o actualice el token JWT.  
+* **404** – Confirme los nombres del libro y de la hoja de cálculo, y asegúrese de que el archivo exista en la carpeta/almacenamiento especificado.  
+* **500** – Vuelva a intentarlo tras un breve retraso; si el problema persiste, contacte con el soporte de Aspose.
 
-{{< tab tabNum="1" >}}
+---
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostCopyWorksheetRows.cs" >}}
+## Ejemplos de SDK
 
-{{< /tab >}}
+Los fragmentos siguientes muestran cómo invocar la operación **Copiar filas** mediante los SDK oficiales de Aspose.Cells Cloud.
 
-{{< tab tabNum="2" >}}
+| Idioma | Ejemplo |
+|--------|---------|
+| **C#**   | <details><summary>Mostrar código</summary>```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar api = new CellsApi("clientId", "clientSecret");\nawait api.PostCopyWorksheetRowsAsync(name: "test.xlsx", sheetName: "Sheet1", sourceRowIndex: 1, destinationRowIndex: 12, rowNumber: 10);\n```</details> |
+| **Java** | <details><summary>Mostrar código</summary>```java\nCellsApi api = new CellsApi("clientId", "clientSecret");\napi.postCopyWorksheetRows("test.xlsx", "Sheet1", 1, 12, 10, null, null, null);\n```</details> |
+| **Python** | <details><summary>Mostrar código</summary>```python\nfrom asposecellscloud import CellsApi\napi = CellsApi(client_id='clientId', client_secret='clientSecret')\napi.post_copy_worksheet_rows(name='test.xlsx', sheet_name='Sheet1', source_row_index=1, destination_row_index=12, row_number=10)\n```</details> |
+| **Node.js** | <details><summary>Mostrar código</summary>```javascript\nconst { CellsApi } = require('asposecellscloud');\nconst api = new CellsApi('clientId', 'clientSecret');\nawait api.postCopyWorksheetRows('test.xlsx', 'Sheet1', 1, 12, 10);\n```</details> |
+| **Go** | <details><summary>Mostrar código</summary>```go\nimport \"github.com/asposecellscloud/aspose-cells-cloud-go/v3\"\napi := cells.NewCellsApiClient(\"clientId\", \"clientSecret\")\n_, err := api.PostCopyWorksheetRows(context.Background(), \"test.xlsx\", \"Sheet1\", 1, 12, 10, nil, nil, nil)\n```</details> |
+| **PHP** | <details><summary>Mostrar código</summary>```php\nuse Aspose\Cells\CellsApi;\n$api = new CellsApi('clientId', 'clientSecret');\n$api->postCopyWorksheetRows('test.xlsx', 'Sheet1', 1, 12, 10);\n```</details> |
+| **Ruby** | <details><summary>Mostrar código</summary>```ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::CellsApi.new('clientId', 'clientSecret')\napi.post_copy_worksheet_rows('test.xlsx', 'Sheet1', 1, 12, 10)\n```</details> |
+| **Perl** | <details><summary>Mostrar código</summary>```perl\nuse Aspose::Cells::CellsApi;\nmy $api = Aspose::Cells::CellsApi->new('clientId', 'clientSecret');\n$api->postCopyWorksheetRows(name => 'test.xlsx', sheetName => 'Sheet1', sourceRowIndex => 1, destinationRowIndex => 12, rowNumber => 10);\n```</details> |
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostCopyWorksheetRows.java" >}}
+*Los archivos de código fuente completos están disponibles en el [repositorio de GitHub de Aspose‑Cells‑Cloud](https://github.com/aspose-cells-cloud).*
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="3" >}}
+## Consulte también
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostCopyWorksheetRows.php" >}}
+- [Agregar fila en una hoja de cálculo de Excel](/rows/add/)  
+- [Eliminar fila en una hoja de cálculo de Excel](/rows/delete/)  
+- [Actualizar fila en una hoja de cálculo de Excel](/rows/update/)  
 
-{{< /tab >}}
+--- 
 
-{{< tab tabNum="4" >}}
-
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostCopyWorksheetRows.rb" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostCopyWorksheetRows.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostCopyWorksheetRows.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostCopyWorksheetRows.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostCopyWorksheetRows.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+*Página generada el **{{DATE}}**. Para la versión más reciente de esta API, consulte la [especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetRows).*

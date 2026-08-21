@@ -1,78 +1,88 @@
-﻿---
-title: Lägg till ett pivotfält i pivottabellen
-second_title: Documen
-linktitle: Lägg till pivotfält
+---
+title: "Lägg till ett pivotfält i en pivottabell"
+second_title: "Dokument"
+linktitle: "Lägg till pivotfält"
 type: docs
 url: /sv/pivot-tables/add-pivot-field/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
-keywords: Add a pivot field in a pivot table
-description: Aspose.Cells Cloud REST API stöder tillägg av ett pivotfält i en pivottabell. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+keywords: "Aspose.Cells Cloud, Excel, pivottabell, lägg till pivotfält, REST API, SDK"
+description: "Lägg till ett pivotfält i en befintlig pivottabell med Aspose.Cells Cloud REST API. Inkluderar begärandedetaljer, cURL-exempel och SDK-utdrag."
 weight: 40
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lägg till ett pivotfält i pivottabellen
+ArticleTitle: "Lägg till ett pivotfält i en pivottabell – Aspose.Cells Cloud-dokumentation"
 ---
-Denna REST API indikerar att `add` ska flytta pivotfältet till en pivottabell.
- 
-## RSET API
- 
+
+Denna REST API **lägger till** ett pivotfält i en befintlig pivottabell.
+
+> **Förutsättning:** För att anropa denna slutpunkt måste du inkludera en giltig JWT-autentiseringstoken i `Authorization`-headern och se till att arbetsboken är lagrad i den angivna mappen eller standardlagringen.
+
+## REST API
+
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
 ```
- Begäranparametrarna är:
- 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| pivottabellindex| heltal| väg| Pivottabellindex|
-| pivotFälttyp| sträng| fråga| Fältområdets typ.|
-| begäran|| kropp| Dto som begränsar fältindex|
-| behöverOmBeräkna| boolesk| fråga|Falsk|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
- 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
- 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### Begärparametrar
+
+| Parameternamn   | Typ     | Plats  | Beskrivning                                                         |
+| --------------- | ------- | ------ | ------------------------------------------------------------------- |
+| name            | string  | path   | Dokumentets namn.                                                   |
+| sheetName       | string  | path   | Arbetsbladets namn.                                                 |
+| pivotTableIndex | integer | path   | Index för pivottabellen.                                            |
+| pivotFieldType  | string  | query  | Typ av fältemne (t.ex. Row, Column).                                |
+| request         | object  | body   | DTO som innehåller fältindex som ska läggas till.                  |
+| needReCalculate | boolean | query  | Sätt till **true** för att omberäkna pivottabellen efter åtgärden. |
+| folder          | string  | query  | Mapp där dokumentet är lagrat.                                      |
+| storageName     | string  | query  | Namn på lagringen.                                                  |
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för att anropa Aspose.Cells-webbtjänster. Exemplet nedan visar hur du lägger till ett pivotfält med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row"  \
--X PUT \
--d '{"Data":[1,2]}'
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row" \
+  -X PUT \
+  -d '{"Data":[1,2]}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK-familjen
- 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
- 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
- 
+
+Ett lyckat svar returnerar ett JSON-objekt med fälten `Code` och `Status`. Exempelschema:
+
+```json
+{
+  "Code": 0,        // heltal som anger HTTP-statuskoden
+  "Status": "OK"    // strängmeddelande
+}
+```
+
+Möjliga felsvar inkluderar **400 Bad Request** för saknade parametrar, **401 Unauthorized** om token är ogiltig och **500 Internal Server Error** för serverseitiga problem.
+
+## Moln-SDK-familj
+
+Att använda en SDK är det snabbaste sättet att integrera denna funktionalitet. SDK:er hanterar detaljer på lågnivånivå och låter dig fokusera på din affärslogik. Se [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="Ruby" tabName4="Python" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -123,6 +133,6 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 
 {{< /tabs >}}
 
-
-
-
+**Se även:**  
+- [Lägg till en pivottabell](https://docs.aspose.cloud/cells/sv/pivot-tables/add-pivot-table/)  
+- [Ta bort pivotfält](https://docs.aspose.cloud/cells/sv/pivot-tables/delete-pivot-field/)

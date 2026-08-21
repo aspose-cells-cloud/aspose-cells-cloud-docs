@@ -1,78 +1,101 @@
-﻿---
-title: Mise à jour
-type: docs
-url: /fr/comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
-keywords: REST API, spreadsheets, excel, update commen
-description: "Cells.Cloud API pour Excel fonctionne : mettre à jour le commentaire"
-weight: 30
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Mise à jour
 ---
-Ce REST API indique Mettre à jour le commentaire de cellule de la feuille de calcul.
+title: "Mettre à jour le commentaire d'une cellule d'une feuille de calcul"
+type: docs
+url: /comments/update/
+aliases: [/update-a-comment-in-excel-workbook/]
+keywords: "Aspose.Cells Cloud, API REST, Excel, feuille de calcul, commentaire de cellule, mise à jour du commentaire de feuille de calcul, objet commentaire"
+description: "Utilisez l’API REST Aspose.Cells Cloud pour mettre à jour le commentaire d’une cellule dans une feuille de calcul d’un classeur Excel, y compris les détails de la requête, les codes de réponse et les exemples de SDK."
+weight: 30
+ArticleTitle: "Mettre à jour le commentaire d'une cellule de feuille de calcul – Aspose.Cells Cloud API"
+---
 
-## RSET API
+Cette API REST met à jour le commentaire d'une cellule d'une feuille de calcul. Utilisez ce point de terminaison pour **mettre à jour un commentaire de feuille de calcul** dans un fichier Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
- 
+**Prérequis :**  
+- Un jeton d'accès OAuth/JWT valide doit être inclus dans l'en-tête `Authorization`.  
+- Le classeur doit être stocké dans un emplacement de stockage cloud pris en charge (spécifiez `folder` et éventuellement `storageName`).
+
+## API PostWorksheetComment
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Le nom du document.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| nom de la cellule| chaîne| chemin| Le nom de la cellule|
-| commentaire|| corps| Objet de commentaire|
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Paramètres de la requête
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom du paramètre | Type   | Emplacement | Description                                                               |
+| ---------------- | ------ | ----------- | ------------------------------------------------------------------------- |
+| name             | string | path        | Le nom du document Excel.                                                |
+| sheetName        | string | path        | Le nom de la feuille de calcul contenant la cellule.                    |
+| cellName         | string | path        | L'adresse de la cellule (par exemple, **A1**).                           |
+| comment          | object | body        | Un objet **Comment** qui définit le commentaire à ajouter ou mettre à jour. |
+| folder           | string | query       | Le dossier dans lequel le document est stocké.                          |
+| storageName      | string | query       | Le nom du service de stockage.                                           |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+La [Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) définit une interface de programmation accessible publiquement et vous permet d'effectuer directement des interactions REST à partir d'un navigateur web.
+
+Vous pouvez utiliser l'outil en ligne de commande **cURL** pour accéder facilement aux services web Aspose.Cells. L'exemple suivant montre comment effectuer un appel à l'API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/a1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--d "{ \"CellName\": \"a1\", \"Author\": \"test\", \"HtmlNote\": \"string\", \"Note\": \"this is a comment\", \"AutoSize\": true, \"IsVisible\": true, \"Width\": 10, \"Height\": 10}"
-
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>" \
+  -d '{
+        "CellName": "a1",
+        "Author": "test",
+        "HtmlNote": "string",
+        "Note": "ceci est un commentaire",
+        "AutoSize": true,
+        "IsVisible": true,
+        "Width": 10,
+        "Height": 10
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Codes de statut de réponse possibles :
+
+| Code | Description                                         |
+|------|-----------------------------------------------------|
+| 200  | Commentaire mis à jour avec succès.                |
+| 400  | Requête incorrecte – paramètres manquants ou non valides. |
+| 401  | Non autorisé – échec de l'authentification.        |
+| 404  | Introuvable – le classeur, la feuille de calcul ou le commentaire n'existe pas. |
+| 500  | Erreur interne du serveur.                          |
+
+**Notes / Conseils :**  
+- La longueur maximale d’un commentaire est de 1024 caractères.  
+- Les caractères pris en charge sont en UTF‑8 ; évitez les caractères de contrôle.
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L'utilisation d'un SDK est le moyen le plus rapide de développer avec Aspose.Cells Cloud. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur votre projet. Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -125,3 +148,8 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Opérations associées :  
+- [Obtenir le commentaire de feuille de calcul](/comments/get/)  
+- [Ajouter un commentaire de feuille de calcul](/comments/add/)  
+- [Supprimer le commentaire de feuille de calcul](/comments/delete/)

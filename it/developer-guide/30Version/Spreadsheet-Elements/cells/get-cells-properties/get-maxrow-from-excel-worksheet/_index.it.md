@@ -1,46 +1,46 @@
-﻿---
-title: Ottieni MaxRow dal foglio di lavoro Excel
-type: docs
-url: /it/get-maxrow-from-excel-worksheet/
-weight: 40
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni MaxRow dal foglio di lavoro Excel
 ---
-Questo REST API indica che viene ottenuto un `maxrow` in un file Excel quando il parametro `cellOrMethodName` è `maxrow`.
+title: "Recuperare il numero massimo di riga in un foglio di calcolo Excel – Aspose.Cells Cloud API"
+type: docs
+url: /get-maxrow-from-excel-worksheet/
+weight: 40
+ArticleTitle: "Recuperare il numero massimo di riga in un foglio di calcolo Excel – Aspose.Cells Cloud API"
+keywords: "Aspose.Cells, Excel, MaxRow, REST API, Cloud SDK, Foglio di calcolo, Foglio, GetMaxRow"
+description: "Scopri come recuperare il numero massimo di riga in un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud. Include la sintassi della richiesta, lo schema della risposta, esempi di SDK e note sull'uso."
+---
 
-- **cURL Esempio**
+Questa REST API restituisce il **numero massimo di riga** in un foglio di calcolo Excel quando il parametro `cellOrMethodName` è impostato su `maxrow`.
 
+- **Esempio cURL**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxrow" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxrow" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MaxRow": 1048576
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Famiglia Cloud SDK**
+- **Utilizzo degli SDK di Aspose.Cells Cloud**
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+Utilizzare un SDK rappresenta il modo più efficiente per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulla logica del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
-
-
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -103,3 +103,26 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Riferimento API**
+
+| Elemento | Dettagli |
+|--------|----------|
+| **Metodo** | `GET` |
+| **Endpoint** | `/cells/{fileName}/worksheets/{sheetName}/cells/maxrow` |
+| **Parametri di percorso** | `fileName` – nome del file Excel (obbligatorio) <br> `sheetName` – nome del foglio di calcolo (obbligatorio) |
+| **Parametri di query** | `folder` – percorso della cartella nello storage (opzionale) <br> `storageName` – nome dello storage (opzionale) |
+| **Risposta in caso di successo** | `200 OK` <br> ```json { "MaxRow": integer } ``` |
+| **Risposte in caso di errore** | `400 Bad Request` – parametri non validi <br> `401 Unauthorized` – fallimento dell'autenticazione <br> `404 Not Found` – file o foglio non trovato |
+
+**Prerequisiti**
+
+- Un token di autenticazione valido di Aspose Cloud.  
+- Il workbook di destinazione deve essere caricato nello storage di Aspose Cloud o accessibile tramite un URL pubblico.  
+
+**Note**
+
+- L'operazione è disponibile dalla versione **v3.0** dell'API in poi.  
+- Il valore `MaxRow` restituito corrisponde all'indice della riga utilizzata più alta (1‑basato). Per un foglio vuoto, il valore è generalmente `1`.  
+
+Gli esempi di SDK riportati di seguito illustrano come richiamare l'operazione in diverse lingue di programmazione.

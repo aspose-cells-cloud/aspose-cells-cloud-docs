@@ -1,76 +1,77 @@
-﻿---
-title: Копировать столбцы на лист Excel
-second_title: Documen
-linktitle: Коп
-type: docs
-url: /ru/columns/copy/
-aliases: [/copy-columns-in-excel-worksheet/,/copy-columns-in-an-excel-worksheet/]
-keywords: Copy column on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает копирование столбцов на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 30
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Копирование столбцов на лист Excel
 ---
-Этот REST API копирует `columns` в рабочий лист Excel.
+title: "Копирование столбцов в рабочем листе Excel"
+second_title: "Документ"
+linktitle: "Копирование"
+type: docs
+url: /columns/copy/
+aliases:
+  [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
+keywords: "Aspose.Cells, копирование столбцов, API Excel, REST, облачный SDK, cURL, C#, Java, Python, Ruby, Node.js, Go, Perl"
+description: "Узнайте, как скопировать один или несколько столбцов в рабочем листе Excel с помощью Aspose.Cells Cloud REST API (v3.0). Включает синтаксис запроса, необходимые параметры, данные об аутентификации, обработку ошибок и примеры SDK на языках C#, Java, Python, Ruby, Node.js, Go, Perl и других."
+articleTitle: "Копирование столбцов в рабочем листе Excel с использованием Aspose.Cells Cloud API"
+weight: 30
+---
 
-## РСЕT API
+Этот REST API позволяет копировать **столбцы** в рабочем листе Excel. Операция **Copy Columns** (Копировать столбцы) позволяет дублировать один столбец или диапазон столбцов и вставить копию в указанное место того же рабочего листа. Используйте этот конечный пункт для эффективного копирования столбцов при работе с большими электронными таблицами. Дополнительные задачи управления столбцами можно выполнить с помощью связанных операций, таких как [Добавление столбца](/columns/add/) и [Скрытие столбца](/columns/hide/).
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy
- 
-```
+## Безопасность и аутентификация
+API Aspose.Cells Cloud безопасны и требуют [аутентификации на основе JWT-токена](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-Параметры запроса:
-
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| sourceColumnIndex| целое число| запрос| Индекс исходного столбца|
-| destinationColumnIndex| целое число| запрос| Индекс столбца назначения|
-| Номер столбца| целое число| запрос| Номер скопированного столбца|
-| рабочий лист| нить| запрос||
-| папка| нить| запрос| Папка с документами.|
-
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
-
- Вы можете использовать**cURL** Инструмент командной строки для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+## REST API
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&ColumnNumber=10" -H "accept: application/json" 
-
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy
 ```
 
-{{< /tab >}}
+### Параметры запроса
 
-{{< tab tabNum="12" >}}
+| Имя параметра            | Тип    | Расположение | Описание                                                                              |
+| ------------------------ | ------ | ------------ | ------------------------------------------------------------------------------------- |
+| **name**                 | string | path         | Имя рабочей книги.                                                                    |
+| **sheetName**            | string | path         | Имя рабочего листа.                                                                   |
+| **sourceColumnIndex**    | integer | query       | 0‑индексированный номер столбца, который нужно скопировать.                          |
+| **destinationColumnIndex** | integer | query     | 0‑индексированный номер столбца, куда будут вставлены скопированные столбцы.         |
+| **columnNumber**         | integer | query       | Количество последовательных столбцов для копирования.                                |
+| **worksheet**            | string | query        | _(Опционально)_ Идентификатор рабочего листа, используемый, если имя отличается от пути. |
+| **folder**               | string | query        | Путь к папке, содержащей рабочую книгу в облачном хранилище Aspose.                 |
 
-```java
+Полный контракт для этой операции описан в [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns).
 
- {
+### Пример cURL
 
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&columnNumber=10" \
+     -H "Authorization: Bearer $ASPOSE_TOKEN" \
+     -H "accept: application/json"
+```
+
+### Ответ
+
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+## Обработка ошибок
 
-{{< /tabs >}}
+API возвращает стандартные HTTP-коды состояния и JSON-тело с описанием ошибки.
+
+| Код состояния | Значение                                          | Пример JSON-тела                                                    |
+| ------------- | ------------------------------------------------ | ------------------------------------------------------------------- |
+| **400**       | Неверный запрос — некорректные параметры         | `{ "Code": 400, "Message": "Invalid column index." }`               |
+| **401**       | Неавторизован — отсутствует или недействителен токен | `{ "Code": 401, "Message": "Access token is invalid or expired." }` |
+| **404**       | Не найдено — рабочая книга или лист не существуют | `{ "Code": 404, "Message": "Workbook not found." }`                 |
+| **500**       | Внутренняя ошибка сервера — непредвиденное условие | `{ "Code": 500, "Message": "An unexpected error occurred." }`       |
+
+> **Как устранить неполадки:** Убедитесь, что токен доступа актуален, имена рабочей книги и листа указаны верно, а значения `sourceColumnIndex`, `destinationColumnIndex` и `columnNumber` находятся в пределах допустимого диапазона столбцов рабочего листа.
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — оптимальный способ ускорить разработку. SDK берёт на себя обработку низкоуровневых деталей, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+В приведённых ниже примерах кода показано, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +124,37 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Как выполнить аутентификацию при вызове API Copy Columns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Получите токен доступа OAuth2 в Aspose Cloud, используя ваш client ID и secret, и передайте его в заголовке запроса как `Authorization: Bearer <access_token>`."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "В чём разница между `sourceColumnIndex` и `destinationColumnIndex`?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "`sourceColumnIndex` — это 0‑индексированный номер столбца, который нужно скопировать. `destinationColumnIndex` — это 0‑индексированный номер столбца, куда будут вставлены скопированные столбцы."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Какой ответ приходит, если операция копирования завершилась с ошибкой?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "API возвращает код состояния, отличный от 200 (например, 400 для неверного запроса, 401 для неавторизованного доступа). В теле ответа содержится JSON-объект с полями `Code` и `Message`, описывающий ошибку."
+      }
+    }
+  ]
+}
+</script>
+---

@@ -1,960 +1,187 @@
-﻿---
-title: Ottieni informazioni sulle righe da un foglio di lavoro Excel
-second_title: Documen
-linktitle: Riga
+---
+title: "Ottenere informazioni sulle righe da un foglio di lavoro Excel"
+second_title: "Documenti"
+linktype: "Righe"
 type: docs
 url: /it/rows/get/rows/
-aliases: [/get-row-from-a-worksheet/]
-keywords: Get rows info on an Excel workshee
-description: Aspose.Cells Cloud REST API supporta l'acquisizione di righe su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/get-row-from-a-worksheet/]
+keywords: "Aspose.Cells Cloud, API per l'ottenimento delle righe, righe del foglio di lavoro Excel, API REST, esempio cURL, esempi di SDK, .NET, Java, Python"
+description: "Scopri come recuperare informazioni sulle righe da un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include endpoint, parametri, autenticazione, codice cURL ed esempi di codice per SDK in C#, Java, Python e altro."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni informazioni sulle righe da un foglio di lavoro Excel
+ArticleTitle: "Ottenere informazioni sulle righe da un foglio di lavoro Excel – Documentazione API Aspose.Cells Cloud"
 ---
-Questo REST API indica di ottenere informazioni sulle righe di un foglio di lavoro Excel.
 
-## RSET API
+Questa API REST recupera informazioni sulle righe da un foglio di lavoro Excel.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
+**Prerequisiti**  
+Per chiamare questo endpoint è necessario fornire un token JWT valido nell'header `Authorization`. Il token deve essere ottenuto tramite il flusso di autenticazione di Aspose.Cloud e deve includere gli ambiti richiesti per le operazioni su Cells. L'API segue lo schema di versionamento v3.0 ed è soggetta alle politiche standard di limitazione del traffico.
+
+## API GetWorksheetRows
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome della cartella di lavoro.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| cartella| corda| domanda| La cartella workdook.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRows) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### **Parametri della richiesta**
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Nome parametro | Tipo   | Posizione | Descrizione                  |
+| -------------- | ------ | --------- | ---------------------------- |
+| name           | string | path      | Nome del foglio di calcolo. |
+| sheetName      | string | path      | Nome del foglio di lavoro.  |
+| folder         | string | query     | Cartella del foglio di calcolo. |
+| storageName    | string | query     | Nome dell'archivio.         |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Lo [specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRows) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di effettuare interazioni REST direttamente da un browser web.
+
+È possibile utilizzare lo strumento a riga di comando **cURL** per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Rows": {
-
     "MaxRow": 20,
-
     "RowsCount": 17,
-
     "RowsList": [
-
-      {
-
-        "link": {
-
-          "Href": "/0",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/1",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/2",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/3",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/4",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/5",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/6",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/7",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/8",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/9",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/10",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/11",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/12",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/13",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/14",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/15",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/16",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/17",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/18",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/19",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/20",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/21",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/22",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/23",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/24",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      }
-
+      { "link": { "Href": "/0", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/1", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/2", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/3", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/4", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/5", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/6", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/7", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/8", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/9", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/10", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/11", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/12", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/13", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/14", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/15", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/16", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/17", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/18", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/19", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/20", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/21", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/22", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/23", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/24", "Rel": "self", "Title": null, "Type": null } }
     ],
-
     "link": {
-
       "Href": "/test.xlsx/worksheets/Sheet1/cells/rows",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+**Codici di risposta**
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+| Codice | Significato                 | Descrizione                                                                 |
+|--------|-----------------------------|-----------------------------------------------------------------------------|
+| 200    | OK                          | La richiesta ha avuto esito positivo e le informazioni sulle righe vengono restituite. |
+| 400    | Richiesta non valida        | La richiesta è malformata (ad esempio, parametri obbligatori mancanti).   |
+| 401    | Non autorizzato             | Token JWT non valido o mancante.                                            |
+| 404    | Non trovato                 | Il foglio di calcolo o il foglio di lavoro specificato non esiste.         |
+| 500    | Errore interno del server   | Si è verificato un errore imprevisto sul server.                           |
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+## Famiglia di SDK Cloud
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Utilizzare un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli a basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come effettuare chiamate ai servizi web di Aspose.Cells utilizzando vari SDK:
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```java
-
 curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows" -H "accept: application/json"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Rows": {
-
     "MaxRow": 20,
-
     "RowsCount": 17,
-
     "RowsList": [
-
-      {
-
-        "link": {
-
-          "Href": "/0",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/1",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/2",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/3",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/4",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/5",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/6",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/7",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/8",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/9",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/10",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/11",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/12",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/13",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/14",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/15",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/16",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/17",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/18",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/19",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/20",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/21",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/22",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/23",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "link": {
-
-          "Href": "/24",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      }
-
+      { "link": { "Href": "/0", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/1", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/2", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/3", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/4", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/5", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/6", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/7", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/8", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/9", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/10", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/11", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/12", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/13", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/14", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/15", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/16", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/17", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/18", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/19", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/20", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/21", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/22", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/23", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/24", "Rel": "self", "Title": null, "Type": null } }
     ],
-
     "link": {
-
       "Href": "/test.xlsx/worksheets/Sheet1/cells/rows",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+## Famiglia di SDK Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
-
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+Utilizzare un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli a basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Di seguito sono riportati esempi di codice specifici per linguaggio per il recupero delle righe del foglio di lavoro.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,144 +1,128 @@
-﻿---
-title: Tüm resimleri Excel numaralı çalışma sayfasından alın
-second_title: Documen
-linktitle: Al al
-type: docs
-url: /tr/pictures/get-all/
-aliases: [/get-picture-from-a-worksheet/]
-keywords: Get all pictures in an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki tüm resimleri almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki tüm resimleri alın
 ---
-Bu REST API, `get`'e Excel çalışma sayfasındaki tüm resim bilgilerini gösterir.
+title: "Excel çalışma sayfasındaki tüm resimleri alın"
+second_title: "Belge"
+linktitle: "Tümünü al"
+type: docs
+url: /pictures/get-all/
+aliases: [/get-picture-from-a-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel çalışma sayfası, resim API'si, tüm resimleri al, REST API, SDK"
+description: "Aspose.Cells Cloud REST API aracılığıyla bir Excel çalışma sayfasından tüm resim nesnelerini alın."
+ArticleTitle: "Excel çalışma sayfasındaki tüm resimleri alın - Aspose.Cells Cloud API"
+weight: 10
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasından tüm resim bilgilerini alır.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
- 
+**Önkoşullar**  
+Bu uç noktayı çağırmadan önce şunlardan emin olun:
+
+- Geçerli bir Aspose Cloud JWT erişim belirteci.  
+- Hedef Excel dosyasının seçilen depoya yüklenmiş olması.  
+- Doğru depo adı (özel bir depo kullanıyorsanız).  
+- Resimleri içeren çalışma sayfası adı.
+
+## GetWorksheetPictures API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
-İstek parametreleri şunlardır:
+**Not:** API’yi çağırırken HTTPS (TLS 1.2 veya üzeri) kullanın ve `Authorization` başlığına geçerli bir JWT belirteci ekleyin.
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| dosya| sicim| sorgu| Belgenin klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+### **Güvenlik ve Kimlik Doğrulama**
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPictures) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### **İstek parametreleri**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Parametre Adı | Tür     | Konum | Açıklama                                            |
+| ------------- | ------- | ----- | --------------------------------------------------- |
+| name          | string  | path  | Excel dosyasının adı.                               |
+| sheetName     | string  | path  | Resimleri içeren çalışma sayfasının adı.            |
+| folder        | string  | query | Dosyanın bulunduğu klasör yolu.                     |
+| storageName   | string  | query | Depolama hizmetinin adı.                            |
+
+### Hata Yanıtları
+
+| HTTP Kodu | Açıklama                                                                   |
+| --------- | -------------------------------------------------------------------------- |
+| 401       | Yetkisiz – eksik veya geçersiz belirteç.                                   |
+| 404       | Bulunamadı – belirtilen dosya, çalışma sayfası veya sayfa kırma dizini yok. |
+| 400       | Hatalı İstek – hatalı istek sözdizimi veya geçersiz parametreler.         |
+| 500       | Sunucu İç Hatası – beklenmeyen bir durumla karşılaşıldı.                   |
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPictures), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye istek nasıl yapılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Pictures": {
-
     "PictureList": [
-
       {
-
         "link": {
-
           "Href": "/0",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/1",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/2",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       }
-
     ],
-
     "link": {
-
       "Href": "/test.xlsx/worksheets/Sheet2/pictures",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+**Başarılı Yanıt** – Başarılı bir çağrı, HTTP 200 ile birlikte `Pictures` nesnesini içeren bir JSON yükü döndürür; bu nesne her bir resmin kaynak bağlantısını listeler.
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+## Bulut SDK Geliştirme Seti Ailesi
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+SDK kullanmak, geliştirme hızını artırmak için en iyi yoldur. Bir SDK, düşük seviye ayrıntıları yöneterek proje görevlerinize odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposunu](https://github.com/aspose-cells-cloud) kontrol edin.
+
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerine çeşitli SDK’lar aracılığıyla nasıl istek yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -191,3 +175,7 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+SDK’ları, ilgili paket yöneticilerinden doğrudan indirebilirsiniz (örneğin, .NET için NuGet, Java için Maven Central, PHP için Composer, Node.js için npm, Python için PyPI, Perl için CPAN ve Go için Go modülleri).  
+
+*Ayrıca bakın:* Bir resim ekleme, Bir resim silme, Resim özellikleri güncelleme.

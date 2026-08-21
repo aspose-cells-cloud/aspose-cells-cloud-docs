@@ -1,106 +1,115 @@
-﻿---
-title: Aspose.Cells Cloud Web API — объединение соответствующих файлов электронных таблиц в файл в удаленной папке
-second_title: Documen
-ArticleTitle: Merge matching spreadsheet files into a file in a remote Folder
-linktitle: Объединение таблиц в удаленной папке
-type: docs
-url: /ru/merge-spreadsheets-in-remote-folder/
-keywords: Merge spreadsheets, cloud storage, Excel API, remote processing, spreadsheet formats, REST AP
-description: Объедините файлы электронных таблиц, хранящиеся в облачном хранилище, в один файл, который поддерживает 30 форматов вывода, таких как PDF, CSV, Json и другие распространенные форматы.
-weight: 100
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, JSON, Markdown, Объединение электронных таблиц, Облачная обработка, Удалённая обработка файлов
 ---
-Объединяет соответствующие файлы электронных таблиц в файлы в удаленной папке, выходной формат файла поддерживает более 30 форматов, таких как PDF, CSV, Json и другие распространенные форматы.
+title: "Объединение совпадающих таблиц в удалённой папке"
+description: "Объединение файлов электронных таблиц, хранящихся в облачном хранилище Aspose Cloud, в один файл. Поддерживается более 30 выходных форматов: PDF, CSV, JSON, XLSX, ODS, XPS и другие."
+keywords: "Aspose.Cells, объединение таблиц, удалённая папка, API, PDF, CSV, JSON, XLSX, ODS, XPS"
+weight: 100
+type: docs
+url: /merge-spreadsheets-in-remote-folder/
+---
 
+Объединение нескольких файлов электронных таблиц, расположенных в удалённой папке облачного хранилища Aspose Cloud, в один выходной файл. Операция выполняется полностью в облаке, исключая необходимость загрузки исходных файлов локально. Поддерживается более 30 выходных форматов (PDF, CSV, JSON, XLSX, ODS, XPS и др.).
 
-## **Объединение таблиц в удаленной папке API**
+## API MergeSpreadsheetsInRemoteFolder
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
+PUT https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
 ```
 
-### **Параметры запроса:**
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody| Описание|
-|:- |:- |:- |:- |
-| папка| Нить| Запрос|Папка, в которой будут храниться объединенные файлы.|
-| fileMatchExpression| Нить| Запрос| Выражение для сопоставления файлов для слияния.|
-| outFormat| Нить| Запрос| Желаемый формат выходного файла.|
-| mergeInOneSheet| Булевое значение| Запрос| Указывает, следует ли объединить все данные на одном листе.|
-| имя_хранилища| Нить| Запрос| (Необязательно) Имя пользовательского облачного хранилища; если не указано иное, по умолчанию используется хранилище по умолчанию.|
-| outPath| Нить| Запрос| (Необязательно) Путь к папке для сохранения рабочей книги; по умолчанию — null.|
-|outStorageName| Нить| Запрос| Имя хранилища выходного файла.|
-| шрифтыРасположение| Нить| Запрос| Задает пользовательские шрифты.|
-| область| Нить| Запрос| Задает область электронной таблицы.|
-| пароль| Нить| Запрос| Пароль для открытия файла электронной таблицы.|
+API Aspose.Cells Cloud являются защищёнными и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
 
-## **Ответ**
+### Параметры запроса <a id="request-parameters"></a>
+
+| Имя                     | Тип     | Расположение | Обязательный | Описание                                                                                                      |
+| ----------------------- | ------- | ------------ | ------------ | ------------------------------------------------------------------------------------------------------------- |
+| **folder**              | string  | query        | **Да**       | Папка облачного хранилища, содержащая исходные таблицы.                                                      |
+| **fileMatchExpression** | string  | query        | **Да**       | Шаблон для выбора файлов (например, `*отчёт*.xlsx`). Поддерживаются подстановочные знаки `*` и `?`.           |
+| **outFormat**           | string  | query        | **Да**       | Желаемый выходной формат (`PDF`, `CSV`, `JSON`, `XLSX`, `ODS`, `XPS` и др.).                                 |
+| **mergeInOneSheet**     | boolean | query        | **Да**       | `true` — все данные объединяются в одну рабочую таблицу. `false` — каждый исходный файл получает свою таблицу. |
+| **storageName**         | string  | query        | Нет          | Имя пользовательского хранилища; по умолчанию используется основное хранилище.                               |
+| **outPath**             | string  | query        | Нет          | Папка назначения для объединённого файла. Если не указано, файл сохраняется в исходной папке.                 |
+| **outStorageName**      | string  | query        | Нет          | Имя хранилища, в которое будет записан объединённый файл.                                                    |
+| **fontsLocation**       | string  | query        | Нет          | Путь к папке с пользовательскими шрифтами (требуется для экспорта в PDF/изображения).                         |
+| **region**              | string  | query        | Нет          | Локаль для форматирования чисел, дат и валют (например, `ru-RU`, `de-DE`).                                    |
+| **password**            | string  | query        | Нет          | Пароль для открытия защищённых исходных таблиц.                                                              |
+
+## Пример запроса (cURL) <a id="request-example"></a>
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets?folder=MyFolder&fileMatchExpression=*.xlsx&outFormat=PDF&mergeInOneSheet=true" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Accept: application/json"
+```
+
+### **Ответ**
 
 ```json
-[
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-        }
-    }
-]
+{
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream"
+  }
+}
 ```
 
-### Коды ошибок
+Файл можно загрузить непосредственно по ссылке `FileUrl` или сохранить в папке, указанной в `outPath`.
 
-- **400 Неверный запрос**: Неверный URI Apose.Cells Cloud API.
-- **401 Неавторизованный**: Недействительный токен доступа. Или недействительный идентификатор клиента и секретный ключ.
-- **404 Не найдено**: Файл электронной таблицы недоступен.
-- **500 Ошибка сервера**: В электронной таблице обнаружена аномалия при получении расчетных данных.
+**Детали успешного ответа**
 
-## Где следует использовать функцию объединения таблиц в удаленной папке API?
+| Код статуса | Content‑Type               | Описание                               |
+| ----------- | -------------------------- | -------------------------------------- |
+| 200 OK      | `application/octet-stream` | Бинарный поток объединённого файла.    |
+| 202 Accepted| `application/json`         | JSON, содержащий `FileUrl`, `FileName` и др. |
 
-Если вам необходимо объединить несколько файлов данных, вы можете использовать этот код API.
+**Коды HTTP-статусов**
 
-## Почему следует использовать функцию объединения таблиц в удаленной папке API?
+| Код | Значение                | Описание                                               |
+| --- | ----------------------- | ------------------------------------------------------ |
+| 200 | OK                      | Фильтр применён успешно; ответ содержит детали операции. |
+| 400 | Bad Request             | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized            | Недействительный или отсутствующий JWT-токен.         |
+| 413 | Payload Too Large       | Размер загружаемого файла превышает предельно допустимый. |
+| 500 | Internal Server Error   | Непредвиденная ошибка сервера.                         |
 
-- Файлы облачного хранилища не нужно загружать, их можно объединить непосредственно в облаке.
-- Пакетное объединение нескольких файлов электронных таблиц, поддержка сопоставления выражений.
-- Разработку можно быстро завершить с помощью существующего SDK.
+## Как использовать API объединения таблиц с помощью SDK
 
-## Как использовать объединенную электронную таблицу в удаленной папке API с SDK
+### Спецификация OpenAPI
 
-### Объединение таблиц в удаленной папке API Спецификация
+Спецификация <a href="https://reference.aspose.cloud/cells/#/DataProcessingController/MergeSpreadsheetsInRemoteFolder" rel="noopener noreferrer">OpenAPI</a> предоставляет машинно-читаемое описание API, позволяющее напрямую взаимодействовать через REST.
 
- The[Объединение таблиц в удаленной папке API Спецификация](https://reference.aspose.cloud/cells/#/DataProcessingController/MergeSpreadsheetsInRemoteFolder) предоставляет общедоступный программный интерфейс, позволяющий взаимодействовать с REST непосредственно из веб-браузера.
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Следующий пример показывает, как делать вызовы в облачный API с помощью cURL.
 
-### Используйте облачные SDK Aspose.Cells
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
-Использование SDK — самый быстрый способ разработки, поскольку он абстрагируется от низкоуровневых деталей и позволяет объединять соответствующие файлы электронных таблиц в файлы в удаленной папке с помощью короткого кода.
- Пожалуйста, проверьте[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+{{< tab tabNum="11" >}}
 
-Следующие примеры кода иллюстрируют, как взаимодействовать с веб-сервисами Aspose.Cells с использованием различных SDK:
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MergeSpreadsheetsInRemoteFolder.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets?folder=MyFolder&fileMatchExpression=*.xlsx&outFormat=PDF&mergeInOneSheet=true" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/Book1.xlsx" \
+  -F "Spreadsheet=@/path/to/Book2.xlsx"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MergeSpreadsheetsInRemoteFolder.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MergeSpreadsheetsInRemoteFolder.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MergeSpreadsheetsInRemoteFolder.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MergeSpreadsheetsInRemoteFolder.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MergeSpreadsheetsInRemoteFolder.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MergeSpreadsheetsInRemoteFolder.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MergeSpreadsheetsInRemoteFolder.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK — самый быстрый способ разработки, поскольку он абстрагирует низкоуровневые детали и позволяет сократить код для импорта данных в рабочую таблицу. Ознакомьтесь с полным списком SDK Aspose.Cells Cloud в <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">репозитории на GitHub</a>.
+---

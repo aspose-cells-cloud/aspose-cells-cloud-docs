@@ -1,54 +1,80 @@
-﻿---
-title: Excel PN'ye
-second_title: Documen
-linktitle: Excel PN'ye
-type: docs
-url: /trconvert-excel-file-to-png-file/
-keywords: Convert excel files to png files
-description: Aspose.Cells Cloud REST API, Excel dosyalarının CSV dosyalarına dönüştürülmesini destekler. SDK, Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift gibi çeşitli geliştirme dillerini destekler.
-weight: 90
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel'den CSV'ye
 ---
-Bu REST API, `convert`'e bir elektronik tablo dosyasının png formatındaki bir dosyaya dönüştürüldüğünü gösterir.
+title: "Excel'den PNG'ye"
+second_title: "Belge"
+linktitle: "Excel'den PNG'ye"
+type: docs
+url: convert-excel-file-to-png-file/
+keywords: "Excel'den PNG'ye, Aspose.Cells Cloud, REST API, elektronik tablo dönüşümü, PNG formatı"
+description: "Aspose.Cells Cloud REST API ile Excel elektronik tablolarını PNG görüntülerine dönüştürün. Birden fazla SDK'yı destekler ve çeşitli programlama dilleri için detaylı örnekler sunar."
+weight: 90
+---
 
-**Sorgu Parametresi**
+Bu REST API, bir elektronik tablo dosyasını PNG formatına dönüştürür.
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|şifre|sicim| Excel dosyasını açmak için gereken şifre.|
-|depolamaAdı|sicim| Dosyanın bulunduğu depolama adı.|
-|checkExcelRestriction|bool| Kullanıcı hücrelerle ilgili nesneleri değiştirdiğinde Excel dosyasının kısıtlamasını kontrol edin.|
+## REST API Specification (REST API Spesifikasyonu)
 
-**İstek Gövde Parametresi**
+```
+POST https://api.aspose.cloud/v3.0/cells/convert/png
+```
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|veri dosyası| veri dosyası|Veri dosyası çok parçalı içeriğin ilk bölümüne kaydedilir.|
+### **Güvenlik ve Kimlik Doğrulama**
 
-**Cevap**
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-[Dosya Bilgileri](/cells/tr/file-info/)
+### **Sorgu Parametresi**
 
-## REST API Spesifikasyonu
+| Parametre Adı         | Tür    | Açıklama                                                                                     |
+| --------------------- | ------ | -------------------------------------------------------------------------------------------- |
+| password              | string | Excel dosyasını açmak için gereken şifre.                                                    |
+| storageName           | string | Dosyanın bulunduğu depo adı.                                                                 |
+| checkExcelRestriction | bool   | Hücreleri veya ilgili nesneleri değiştirirken Excel dosyası kısıtlamalarının denetlenip denetlenmeyeceğini belirler. |
 
-|**API**|**Tip**|**Tanım**|**Swagger Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/dönüştür/png|POSTALAMAK|Bir elektronik tabloyu png dosyasına dönüştürün.|[PostConvertWorkbookToPNG](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG)|
+### **İstek Gövdesi Parametresi**
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+| Parametre Adı | Tür       | Açıklama                                                                |
+| -------------- | --------- | ----------------------------------------------------------------------- |
+| datafile       | data file | Çok parçalı isteğin ilk kısmında yer alan elektronik tablo dosyası.      |
 
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### **Yanıt**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+API, oluşturulan PNG dosyasını içeren bir **FileInfo** nesnesi döndürür.
+
+| Alan            | Tür    | Açıklama                                      |
+| --------------- | ------ | --------------------------------------------- |
+| **Filename**    | string | PNG dosyasının adı (örneğin, `example.png`). |
+| **FileSize**    | int    | Dosyanın bayt cinsinden boyutu.               |
+| **FileContent** | string | PNG dosyasının Base64 ile kodlanmış içeriği.  |
+
+[FileInfo](/cells/file-info/)
+
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                         |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK (Tamam)                  | Sü 필 적용 성공; yanıt işlem ayrıntılarını içerir. |
+| 400  | Bad Request (Hatalı İstek)  | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401  | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT belirteci. |
+| 413  | Payload Too Large (Çok Büyük Yük) | Yüklenecek dosya boyut sınırını aşıyor. |
+| 500  | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası. |
+## SDK'lar ile PostConvertWorkbookToPNG API'sini Nasıl Kullanılır
+
+### PostConvertWorkbookToPNG API Spesifikasyonu
+
+
+[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+**cURL** komut satırı aracını kullanarak Aspose.Cells web hizmetlerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'ye nasıl istekte bulunulacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/png" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/png" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: curl" \
      -d {"File":{}}
 ```
 
@@ -56,25 +82,24 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/png"
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
   "Filename": "xxxxxx.png",
   "FileSize": xxxx,
   "FileContent": "File Content: base64_encoded_string"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK'larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoludur. SDK, düşük seviye detayları yönetir, böylece projenizin görevlerine odaklanabilirsiniz. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerinin nasıl çağrılacağını göstermektedir:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -127,14 +152,8 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< /tabs >}}
 
-## Diğer API'ler bu işlevi uygular
+## Benzer İşlevleri Gerçekleştiren Diğer API'ler
 
-[POST /hücreler/{ad}/kaydet](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)API, MS Excel dosyasını ek ayarlarla CSV dosyası olarak kaydetmenizi ve sonucu depolama alanına kaydetmenizi sağlar.
-
-Bu REST API `convert` excel dosyasını CSV'ye dönüştürün.
-
-[PUT /hücreler/dönüştür](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API, MS Excel dosyasını ek ayarlarla CSV dosyasına dönüştürmenizi ve sonucu yanıta kaydetmenizi sağlar.
-
-Bu REST API `export` excel dosyasını CSV'ye dönüştürün.
-
-[GET /hücreler/{isim}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API, MS Excel dosyasını ek ayarlarla CSV dosyasına dönüştürmenizi ve sonucu yanıta kaydetmenizi sağlar.
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Bir Excel dosyasını CSV (veya diğer formatlar) olarak ek ayarlarla kaydeder ve sonucu depolar.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Bir Excel dosyasını CSV (veya diğer formatlar) formatına dönüştürür, isteğe bağlı parametreler alır ve sonucu yanıtta döndürür.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Bir Excel dosyasını alır ve anında CSV (veya diğer formatlar) formatına dönüştürebilir.

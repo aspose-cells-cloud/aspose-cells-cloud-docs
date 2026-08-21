@@ -1,63 +1,71 @@
-﻿---
-title: Удалить фон на рабочем листе Excel
-second_title: Documen
-linktitle: Удалить
-type: docs
-url: /ru/worksheets/background/delete/
-aliases: [/delete-background-or-watermark-of-excel-worksheet/]
-keywords: Delete background on an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает удаление фона на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 210
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Удаление фона на листе Excel
 ---
-Этот REST API указывает на `delete worksheet background image`.
+title: "Удаление фонового изображения на листе Excel"
+second_title: "Документ"
+linktitle: "Удалить"
+type: docs
+url: /worksheets/background/delete/
+aliases: [/delete-background-or-watermark-of-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, Удаление фонового изображения листа, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Используйте Aspose.Cells Cloud REST API для удаления фонового изображения листа Excel. SDK доступны для C#, Java, PHP, Ruby, Node.js, Python, Perl и Go."
+weight: 210
+ArticleTitle: "Удаление фонового изображения на листе Excel с использованием Aspose.Cells Cloud API"
+---
 
-## РСЕT API
+Этот REST API удаляет фоновое изображение листа.
+
+**Необходимые условия:** Рабочая книга должна быть сохранена в облачном хранилище Aspose, а также у вас должен быть действующий JWT-токен доступа для аутентификации.
+
+## REST API
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
 ```
 
-Параметры запроса:
+### **Параметры запроса**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь||
-| Имя_листа| нить| путь||
-| папка| нить| запрос||
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип   | Местоположение | Описание                                                |
+|---------------|-------|---------------|---------------------------------------------------------|
+| name          | string | path          | Имя файла Excel.                                        |
+| sheetName     | string | path          | Имя листа, у которого удаляется фоновое изображение.   |
+| folder        | string | query         | Папка в хранилище, где находится файл.                  |
+| storageName   | string | query         | Имя хранилища (если отличается от хранилища по умолчанию). |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground) определяет публично доступное программное интерфейсное решение и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Все запросы требуют действительного JWT-токена. Получите токен через OAuth2 endpoint, как описано в руководстве по аутентификации.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/WorkSheetBackground_Sample_Test_Book.xls/worksheets/Sheet1/background" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/WorkSheetBackground_Sample_Test_Book.xls/worksheets/Sheet1/background" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                                  |
+|-----|-----------------------------|-----------------------------------------------------------|
+| 200 | OK (OK)                     | Фильтр успешно применён; ответ содержит подробную информацию о выполнении операции. |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или неверны параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизовано) | Неверный или отсутствующий JWT-токен.                     |
+| 413 | Payload Too Large (Слишком большой полезный груз) | Загруженный файл превышает допустимый размер.            |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                            |
 
 {{< /tab >}}
 
@@ -65,9 +73,9 @@ curl -v "http://api.aspose.com/v3.0/cells/WorkSheetBackground_Sample_Test_Book.x
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали и позволяет сосредоточиться на задачах вашего проекта. Ознакомьтесь со [списком репозитория GitHub](https://github.com/aspose-cells-cloud) для получения полного списка SDK Aspose.Cells Cloud.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Приведённые ниже примеры кода демонстрируют, как осуществлять вызовы веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +128,4 @@ curl -v "http://api.aspose.com/v3.0/cells/WorkSheetBackground_Sample_Test_Book.x
 {{< /tab >}}
 
 {{< /tabs >}}
+---

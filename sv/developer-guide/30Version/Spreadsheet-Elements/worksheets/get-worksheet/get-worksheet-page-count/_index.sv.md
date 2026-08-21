@@ -1,70 +1,82 @@
-﻿---
-title: Hämta sidantal för ett Excel-arbetsblad
-second_title: Documen
-linktitle: Sidräkning
-type: docs
-url: /sv/worksheets/page-count/
-keywords: Get page count on an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder att hämta sidantal på ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta sidantal för ett Excel-kalkylblad
 ---
-Denna REST API anger `get page count` för kalkylbladet.
+title: "Hämta sidantal för ett Excel-kalkylblad"
+second_title: "Dokument"
+linktitle: "PageCount"
+type: docs
+url: /worksheets/page-count/
+keywords: "Aspose.Cells, Excel API, kalkylbladets sidantal, REST, molntjänst, Excel-paginering"
+description: "Hämta antalet utskriftbara sidor i ett Excel-kalkylblad med Aspose.Cells Cloud REST API (v3.0). Inkluderar HTTPS-begäranformat, autentiseringssteg, exempel på cURL, fullständig JSON-svar, statuskoder och SDK-kodexempel."
+weight: 10
+ArticleTitle: "Hämta sidantal för ett Excel-kalkylblad – Aspose.Cells Cloud API"
+---
 
-## RSET API
+Denna REST API returnerar **sidantalet** för ett kalkylblad.
+
+**Autentisering:** Alla Aspose.Cells Cloud-slutpunkter kräver en Bearer-token som erhålls via OAuth2-flödet. Inkludera token i `Authorization`-huvudet enligt exemplified i cURL-exemplet nedan.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagecount
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagecount
 ```
 
-Begäranparametrarna är:
+### Begärandeparametrar
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameter   | Typ    | Plats  | Beskrivning                               |
+| ----------- | ------ | ------ | ----------------------------------------- |
+| name        | string | path   | Dokumentets namn.                         |
+| sheetName   | string | path   | Kalkylbladets namn.                       |
+| folder      | string | query  | Mapp som innehåller dokumentet.           |
+| storageName | string | query  | Namn på lagringsutrymmet.                 |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/GetPageCount) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/GetPageCount) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells-webbtjänster. Exemplet nedan visar hur du anropar API:et med cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/worksheets/Sheet1/pagecount" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/worksheets/Sheet1/pagecount" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <access_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
-3
- 
+```json
+{
+  "PageCount": 3
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Svarsdetaljer
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| HTTP-status | Betydelse                                         |
+| ----------- | ------------------------------------------------- |
+| **200**     | Lyckades – returnerar JSON-svaret ovan.           |
+| **401**     | Oauktoriserad – token saknas eller är ogiltig.    |
+| **404**     | Hittades inte – filen eller kalkylbladet finns inte. |
+| **500**     | Internt serverfel – oväntat serverfel.            |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+### Versionshistorik
+
+_API-version **v3.0** (släppt 2025). Om du använder en nyare version, hänvisa till den uppdaterade slutpunktsdokumentationen._
+
+## Molntjänstfamilj (SDK)
+
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK abstraher bort detaljer på låg nivå så att du kan fokusera på din affärslogik. Se [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:n.
+
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med hjälp av olika SDK:n:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -117,3 +129,8 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Anteckningar
+
+- Sidantalet speglar utskriftslayouten och tar hänsyn till sidbrytningar, marginaler och skalning. Dolda rader eller kolumner kan påverka resultatet.
+- Se till att målkalkylbladet finns och att filen är lagrad i den angivna `folder` och `storageName` innan du gör begäran.

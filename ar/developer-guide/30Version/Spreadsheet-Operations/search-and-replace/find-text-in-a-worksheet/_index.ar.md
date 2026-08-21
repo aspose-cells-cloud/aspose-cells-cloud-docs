@@ -1,54 +1,98 @@
-﻿---
-title: البحث عن نص في ورقة عمل Excel
-second_title: Documen
-linktitle: البحث في ورقة العمل
+---
+title: "العثور على نص في ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "العثور في ورقة العمل"
 type: docs
-url: /ar/worksheets/find-text/
+url: /worksheets/find-text/
 aliases: [/find-text-in-a-worksheet/]
 weight: 40
-keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
-description: يدعم Cloud REST Aspose.Cells API العثور على نص من ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، البحث عن نص في ورقة عمل Excel
+keywords: "Excel، Aspose.Cells Cloud، REST API، البحث عن نص، ورقة العمل، جدول البيانات، البحث"
+description: "استخدم واجهة برمجة تطبيقات Aspose.Cells Cloud REST API للعثور على نص في ورقة عمل Excel. تتوفر الواجهة عبر مجموعة متنوعة من SDKs ولغات البرمجة."
 ---
-يشير هذا REST API إلى النص `search` في ورقة العمل Excel.
 
-## RSET API
+تقوم هذه الواجهة البرمجية (REST API) بالبحث عن نص في ورقة عمل Excel.
+
+## واجهة برمجة التطبيقات REST
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/findText
- 
 ```
 
-معلمات الطلب هي:
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| نص| خيط| استفسار| نص للبحث.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+### **الأمان والمصادقة**
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextSearch) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تُعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### معاملات الطلب
+
+| اسم المُعامل | النوع   | الموقع | الوصف        |
+| -------------- | ------ | -------- | ------------------ |
+| name           | string | path     | اسم المستند.     |
+| sheetName      | string | path     | اسم ورقة العمل.    |
+| text           | string | query    | النص المراد البحث عنه.    |
+| folder         | string | query    | مجلد المستند. |
+| storageName    | string | query    | اسم وحدة التخزين.      |
+
+### **الاستجابة**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | الوصف                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | ناجح (OK)                          | تطبيق التصفية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صحيح (Bad Request)                 | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401  | غير مخوّل (Unauthorized)                | رمز JWT غير صالح أو مفقود. |
+| 413  | حجم البيانات كبير جدًا (Payload Too Large)           | حجم الملف المرفّع يتجاوز الحد المسموح به. |
+| 500  | خطأ داخلي في الخادم (Internal Server Error)       | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام PostWorksheetTextSearch API باستخدام SDKs
+
+### مواصفات PostWorksheetTextSearch API
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextSearch) واجهة برمجة تطبيقات عامة قابلة للوصول وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول بسهولة إلى خدمات الويب الخاصة بـ Aspose.Cells. يُظهر المثال التالي كيفية استدعاء واجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/findText?text=a" -H "accept: application/json"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
+```json
 {
   "Status": "string",
   "TextItems": {
@@ -71,18 +115,18 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/fi
     ]
   }
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أسرع طريقة لتطوير التطبيقات. تُجرّدك الـ SDK من التفاصيل التقنية منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات الويب الخاصة بـ Aspose.Cells باستخدام مكتبات SDK مختلفة:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}

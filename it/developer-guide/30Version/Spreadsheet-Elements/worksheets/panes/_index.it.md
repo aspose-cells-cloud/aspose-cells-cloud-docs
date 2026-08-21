@@ -1,17 +1,17 @@
-﻿---
-title: Come lavorare con i riquadri su un foglio di lavoro Excel
-second_title: Documen
-linktitle: Pannello
+---
+---
+title: "Come lavorare con i riquadri in un foglio di lavoro Excel"
+second_title: "Document"
+linktitle: "Riquadri"
 type: docs
 url: /it/worksheets/panes/
-keywords: How to work with panes on an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'utilizzo di riquadri su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+keywords: "Excel, riquadri, blocca riquadri, sblocca riquadri, Aspose.Cells Cloud, REST API"
+description: "Scopri come lavorare con i riquadri in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud, inclusi i passaggi per bloccare e sbloccare i riquadri in tutti i linguaggi SDK supportati."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Come lavorare con i riquadri su un foglio di lavoro Excel
 ---
-## Lavorare con i riquadri su un foglio di lavoro Excel.
 
-- [Come bloccare i riquadri in un foglio di lavoro Excel.](/cells/it/worksheets/panes/freeze/) 
-- [Come sbloccare i riquadri in un foglio di lavoro Excel.](/cells/it/worksheets/panes/unfreeze/) 
+## Lavorare con i riquadri in un foglio di lavoro Excel
 
-
+- [Come bloccare i riquadri in un foglio di lavoro Excel](/it/cells/worksheets/panes/freeze/) 
+- [Come sbloccare i riquadri in un foglio di lavoro Excel](/it/cells/worksheets/panes/unfreeze/)
+---

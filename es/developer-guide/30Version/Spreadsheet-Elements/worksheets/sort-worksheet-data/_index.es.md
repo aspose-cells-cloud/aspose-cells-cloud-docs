@@ -1,76 +1,93 @@
-﻿---
-title: Ordenar datos de rango en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Sor
-type: docs
-url: /es/worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
-keywords: Sort range data on an Excel worksheet
-description: Aspose.Cells Cloud REST API admite la ordenación de datos de rango en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Ordenar datos de rango en una hoja de cálculo Excel
 ---
-Este REST API indica `sort worksheet range data`.
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
- 
+title: "Ordenar datos de un rango en una hoja de cálculo de Excel"
+second_title: "Documento"
+linktitle: "Ordenar"
+type: docs
+url: /worksheets/sort-data/
+aliases: [/sort-worksheet-data/]
+keywords: "Aspose.Cells Cloud, API de ordenación de Excel, ordenación de rango en hoja de cálculo, API REST, dataSorter"
+description: "Ordenar un rango específico en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye el endpoint, los parámetros necesarios, los pasos de autenticación, el manejo de errores y ejemplos de SDK."
+weight: 20
+---
+
+La API REST ordena los datos dentro de un rango especificado en una hoja de cálculo de Excel.
+
+## API REST
+
+```shell
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
 ```
- Los parámetros de la solicitud son:
- 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| El nombre del libro de trabajo.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| área de celda| cadena| consulta| El rango a ordenar.|
-| Clasificador de datos|| cuerpo| con configuraciones de clasificación.|
-| carpeta| cadena| consulta| La carpeta del libro de trabajo.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
- 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
- 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### Parámetros de la solicitud
+
+| Nombre del parámetro | Tipo   | Ubicación | Obligatorio | Descripción                                                                 |
+| --------------------- | ------ | --------- | ----------- | --------------------------------------------------------------------------- |
+| name                  | string | path      | Sí          | Nombre del libro de trabajo.                                                |
+| sheetName             | string | path      | Sí          | Nombre de la hoja de cálculo.                                               |
+| cellArea              | string | query     | Sí          | Rango de celdas que se va a ordenar (por ejemplo, `A5:A10`).                |
+| dataSorter            | object | body      | Sí          | Objeto JSON que define la configuración de ordenación (véase el esquema a continuación). |
+| folder                | string | query     | No          | Carpeta que contiene el libro de trabajo.                                   |
+| storageName           | string | query     | No          | Nombre del almacenamiento donde se encuentra el libro de trabajo.           |
+
+**Esquema del objeto `dataSorter`** – El cuerpo debe contener un objeto JSON con las siguientes propiedades:
+
+- `CaseSensitive` _(booleano, obligatorio)_ – Determina si la ordenación distingue entre mayúsculas y minúsculas.
+- `HasHeaders` _(booleano, obligatorio)_ – Indica si el rango incluye una fila de encabezados.
+- `KeyList` _(matriz, obligatoria)_ – Colección de claves de ordenación. Cada objeto clave incluye:
+  - `Key` _(entero)_ – Índice de columna en base cero.
+  - `SortOrder` _(cadena)_ – `"ascending"` (ascendente) o `"descending"` (descendente).
+- `SortLeftToRight` _(booleano, obligatorio)_ – Si es `true`, la ordenación se realiza de izquierda a derecha; de lo contrario, de arriba a abajo.
+- Opcionalmente, también pueden proporcionarse `CaseOrder`, `SortLeftToRight`, etc., según la especificación OpenAPI.
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort) define una interfaz de programación accesible públicamente y permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube mediante cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
+
 {{< tab tabNum="1" >}}
- 
-```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/sort?cellArea=A5:A10" \
--X POST \
--d '{"CaseSensitive":false, "HasHeaders":false, "KeyList":[{"Key":0, "SortOrder":"descending"}], "SortLeftToRight":false}' \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+
+```shell
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/sort?cellArea=A5:A10" \
+  -X POST \
+  -d '{"CaseSensitive":false,"HasHeaders":false,"KeyList":[{"Key":0,"SortOrder":"descending"}],"SortLeftToRight":false}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+**Manejo de errores** – La API puede devolver códigos de error HTTP estándar. Las respuestas típicas incluyen:
+
+| Estado HTTP | Código | Mensaje                                                       |
+| ----------- | ------ | ------------------------------------------------------------- |
+| 400         | 400    | Solicitud incorrecta: faltan o son inválidos los parámetros. |
+| 401         | 401    | No autorizado: token JWT inválido o ausente.                  |
+| 404         | 404    | No encontrado: el libro de trabajo o la hoja de cálculo no existen. |
+| 500         | 500    | Error interno del servidor.                                   |
+
+El cuerpo de respuesta sigue el patrón `{ "Code": <status>, "Message": "<description>", "Status": "Error" }` en los casos de error.
+
 ## Familia de SDK en la nube
- 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
- 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
- 
+
+Utilizar un SDK es la forma más rápida de desarrollar. Un SDK gestiona los detalles de bajo nivel, permitiéndole centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells mediante diversos SDK:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

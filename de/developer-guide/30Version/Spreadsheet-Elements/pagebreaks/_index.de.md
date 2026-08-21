@@ -1,20 +1,24 @@
-﻿---
-title: Arbeiten mit Excel Seite brea
-second_title: Documen
-linktitle: Seitenumbruch
-type: docs
-url: /de/working-with-pagebreaks/
-aliases: [/working-with-pagebreaks/]
-keywords: Get, add, delete, and update page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API unterstützt das Abrufen, Hinzufügen, Löschen und Aktualisieren von Seitenumbrüchen in einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Seitenumbrüche
 ---
+title: "Arbeiten mit Excel-Seitenumbrüchen"
+second_title: "Dokument"
+linktitle: "PageBreaks"
+type: docs
+url: /working-with-pagebreaks/
+aliases: [/working-with-pagebreaks/]
+keywords: "Excel, Seitenumbruch, Aspose.Cells Cloud, REST API, Arbeitsblatt, hinzufügen, löschen, abrufen, aktualisieren, Seitenumbrüche"
+description: "Erfahren Sie, wie Sie vertikale und horizontale Seitenumbrüche in Excel-Arbeitsblättern mithilfe der Aspose.Cells Cloud REST API hinzufügen, abrufen und löschen. Enthält Beispiele für vertikale und horizontale Umbrüche."
+weight: 100
+ArticleTitle: "Arbeiten mit Excel-Seitenumbrüchen – Aspose.Cells Cloud-Dokumentation"
+---
+
 ## So arbeiten Sie mit Seitenumbrüchen in einem Excel-Arbeitsblatt
 
-- [So fügen Sie einem Arbeitsblatt Excel einen vertikalen Seitenumbruch hinzu.](/cells/de/page-breaks/add-vertical-page-break/)
-- [So fügen Sie einem Arbeitsblatt Excel einen horizontalen Seitenumbruch hinzu.](/cells/de/page-breaks/add-horizontal-page-break/)
-- [So löschen Sie einen vertikalen Seitenumbruch in einem Arbeitsblatt Excel.](/cells/de/page-breaks/delete-vertical-page-break/)
-- [So löschen Sie einen horizontalen Seitenumbruch in einem Arbeitsblatt Excel.](/cells/de/page-breaks/delete-vertical-page-break/)
-- [So erhalten Sie vertikale Seitenumbrüche in einem Excel-Arbeitsblatt.](/cells/de/page-breaks/get-vertical-page-breaks/)
-- [So erhalten Sie horizontale Seitenumbrüche in einem Excel-Arbeitsblatt.](/cells/de/page-breaks/get-vertical-page-breaks/)
+Diese Anleitung bietet schnellen Zugriff auf die API-Vorgänge zum Verwalten von vertikalen und horizontalen Seitenumbrüchen in einem Excel-Arbeitsblatt mithilfe von Aspose.Cells Cloud.
+
+- [So fügen Sie einen vertikalen Seitenumbruch in ein Excel-Arbeitsblatt ein.](/cells/page-breaks/add-vertical-page-break/)
+- [So fügen Sie einen horizontalen Seitenumbruch in ein Excel-Arbeitsblatt ein.](/cells/page-breaks/add-horizontal-page-break/)
+- [So löschen Sie einen vertikalen Seitenumbruch in einem Excel-Arbeitsblatt.](/cells/page-breaks/delete-vertical-page-break/)
+- [So löschen Sie einen horizontalen Seitenumbruch in einem Excel-Arbeitsblatt.](/cells/page-breaks/delete-horizontal-page-break/)
+- [So rufen Sie vertikale Seitenumbrüche in einem Excel-Arbeitsblatt ab.](/cells/page-breaks/get-vertical-page-breaks/)
+- [So rufen Sie horizontale Seitenumbrüche in einem Excel-Arbeitsblatt ab.](/cells/page-breaks/get-horizontal-page-breaks/)
+---

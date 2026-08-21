@@ -1,470 +1,279 @@
-﻿---
-title: Ottieni tutte le proprietà del documento
-second_title: Documen
-linktitle: Ottieni tutto
-type: docs
-url: /it/document-properties/get-all/
-aliases: [/get-all-document-properties/]
-keywords: Get properties from excel files
-description: Aspose.Cells Cloud REST API supporta l'acquisizione di proprietà da file Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 25
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni tutte le proprietà del documento
 ---
-Questo REST API indica di leggere le proprietà del documento.
+title: "Ottieni Tutte le Proprietà del Documento"
+second_title: "Documento"
+linktitle: "Ottieni tutte"
+type: docs
+url: /document-properties/get-all/
+aliases: [/get-all-document-properties/]
+keywords: "Ottieni Tutte le Proprietà del Documento, Aspose.Cells Cloud, Proprietà dei documenti Excel, REST API, SDK, Metadati Excel"
+description: "Recupera tutte le proprietà del documento da un file Excel utilizzando l'API REST di Aspose.Cells Cloud. L'endpoint funziona con tutti gli SDK e i linguaggi di programmazione supportati."
+ArticleTitle: "Ottieni Tutte le Proprietà del Documento – Aspose.Cells Cloud API"
+weight: 25
+---
 
-## RSET API
+Questa REST API legge le proprietà del documento.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
- 
+## API GetDocumentProperties
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e Autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome del documento.|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### Parametri della Richiesta
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Nome Parametro | Tipo   | Posizione | Descrizione                         |
+| -------------- | ------ | -------- | ----------------------------------- |
+| name           | string | path     | Nome del file Excel.                |
+| folder         | string | query    | Cartella contenente il file.        |
+| storageName    | string | query    | Nome del servizio di archiviazione. |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties) definisce un'interfaccia di programmazione pubblicamente accessibile e consente di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come chiamare l'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "DocumentProperties": {
-
     "DocumentPropertyList": [
-
       {
-
         "Name": "Title",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Title",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Subject",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Subject",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Author",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Author",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Keywords",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Keywords",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Comments",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Comments",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "LastSavedBy",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/LastSavedBy",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "CreateTime",
-
         "Value": "6/5/2015 6:17:20 PM",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/CreateTime",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "LastSavedTime",
-
         "Value": "9/27/2019 9:09:43 PM",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/LastSavedTime",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Category",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Category",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "NameOfApplication",
-
         "Value": "Microsoft Excel",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/NameOfApplication",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Version",
-
         "Value": "16.0300",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Version",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Security",
-
         "Value": "0",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Security",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "ScaleCrop",
-
         "Value": "False",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/ScaleCrop",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Template",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Template",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Manager",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Manager",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Company",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Company",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "LinksUpToDate",
-
         "Value": "False",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/LinksUpToDate",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       }
-
     ],
-
     "link": {
-
       "Href": "/test.xlsx/documentproperties",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+**Codici di Stato HTTP**
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+| Codice | Significato                  | Descrizione                                                             |
+|--------|------------------------------|-------------------------------------------------------------------------|
+| 200    | OK                           | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Bad Request                  | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401    | Unauthorized                 | Token JWT non valido o mancante.                                        |
+| 413    | Payload Too Large            | Il file caricato supera il limite di dimensione.                        |
+| 500    | Internal Server Error        | Errore imprevisto del server.                                           |
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+## Famiglia di SDK Cloud
+
+Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK gestisce i dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,100 +1,146 @@
-﻿---
-title: Aspose.Cells Cloud Web API - تحويل مخطط جدول بيانات إلى ملف PDF
-second_title: Documen
-ArticleTitle: Converting a Spreadsheet Chart to a Pdf file
-linktitle: تحويل الرسم البياني إلى PD
-type: docs
-url: /ar/convert-chart-to-pdf/
-keywords: convert an Excel chart to pdf, convert spreadsheet to pdf, Aspose Cloud Web  API, cloud conversion, Excel to PD
-description: يقوم هذا البرنامج API بتحويل المخططات من جداول البيانات الموجودة على محرك أقراص محلي إلى ملف PDF بسلاسة
-weight: 100
-kwords: Excel، Office السحابة، REST API، تحويل جدول البيانات، PDF، CSV، JSON، Markdown، تحويل الرسم البياني إلى PDF، التحويل السحابي
 ---
- تحويل مخطط من جدول بيانات محلي/ملف Excel إلى[PDF](https://docs.fileformat.com/pdf/) ملف.
+title: "واجهة برمجة تطبيقات Aspose.Cells Cloud – تحويل مخطط Excel إلى PDF"
+second_title: "مستند"
+ArticleTitle: "كيفية تحويل مخطط جدول بيانات محلي إلى ملف PDF: دليل خطوة بخطوة"
+linktitle: "تحويل المخطط إلى PDF"
+type: docs
+url: /convert-chart-to-pdf/
+keywords: "Aspose Cells, مخطط, PDF, Excel, تحويل, واجهة برمجة تطبيقات سحابية"
+description: "تصدير المخططات من ملفات Excel المحلية إلى تنسيق PDF باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. يدعم ملفات XLSX وXLS."
+weight: 100
+---
 
-## **تحويل المخطط إلى PDF API**
+تصدير المخططات من ملف Excel محلي إلى تنسيق [PDF](https://docs.fileformat.com/pdf/) باستخدام واجهة برمجة التطبيقات السحابية.
+
+## **تحويل المخطط إلى PDF – واجهة برمجة التطبيقات عبر الويب**
+
+### واجهة برمجة التطبيقات عبر الويب
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
+PUT https://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 ```
+
+### **الأمان والمصادقة**
+
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
 ### **معلمات الطلب:**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|-------------- ||--------------------- |--------------------------------------------------- |
-| جدول بيانات|ملف| بيانات النموذج| تحميل ملف جدول البيانات.|
-| ورقة عمل| خيط| استفسار| اسم ورقة العمل التي تحتوي على المخطط.|
-| مؤشر الرسم البياني|عدد صحيح| استفسار| مؤشر الرسم البياني الذي سيتم تحويله.|
-| المسار الخارجي| خيط| استفسار| (اختياري) مسار المجلد الذي يُخزَّن فيه الملف المُحوَّل. القيمة الافتراضية هي null.|
-| اسم التخزين الخارجي| خيط| استفسار| اسم تخزين ملف الإخراج.|
-| الخطوطالموقع| خيط| استفسار| استخدم الخطوط المخصصة إذا لزم الأمر.|
-| منطقة| خيط| استفسار| إعداد منطقة جدول البيانات.|
-| كلمة المرور| خيط| استفسار| كلمة المرور لفتح ملف جدول البيانات.|
+| اسم المعلمة | النوع     | المسار/سلسلة الاستعلام/جسم HTTP | الوصف                                                                 |
+|-------------|-----------|-------------------------------|------------------------------------------------------------------------|
+| Spreadsheet | ملف       | FormData                      | تحميل ملف جدول البيانات.                                              |
+| worksheet   | نص (String) | استعلام                         | اسم ورقة العمل التي تحتوي على المخطط.                                  |
+| chartIndex  | عدد صحيح   | استعلام                         | فهرس المخطط المراد تحويله.                                            |
+| outPath     | نص (String) | استعلام                         | (اختياري) مسار المجلد الذي يُخزَّن فيه الملف المحول. القيمة الافتراضية هي null. |
+| outStorageName | نص (String) | استعلام                         | اسم مخزن الملفات الناتجة.                                             |
+| fontsLocation | نص (String) | استعلام                         | استخدام خطوط مخصصة عند الضرورة.                                      |
+| region      | نص (String) | استعلام                         | إعداد منطقة جدول البيانات.                                            |
+| password    | نص (String) | استعلام                         | كلمة المرور لفتح ملف جدول البيانات.                                   |
 
-### **إجابة**
+### **الاستجابة**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### رموز الخطأ
+**رموز حالة HTTP**
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+| الرمز | المعنى                  | الوصف                                                                   |
+|-------|-------------------------|--------------------------------------------------------------------------|
+| 200   | ناجح (OK)               | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.             |
+| 400   | طلب غير صالح (Bad Request) | معلمات ناقصة أو غير صالحة (مثل: نوع ملف غير مدعوم).                     |
+| 401   | غير مخوّل (Unauthorized)  | رمز JWT غير صالح أو مفقود.                                              |
+| 413   | حجم البيانات كبير جدًا (Payload Too Large) | يتجاوز حجم الملف المرفوع الحد المسموح به.                              |
+| 500   | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم.                                               |
 
-## أين يجب عليك استخدام تحويل الرسم البياني إلى Pdf API؟
+## أين يجب استخدام واجهة برمجة التطبيقات لتحويل المخطط إلى PDF؟
 
-- تصدير المخططات البيانية في جدول البيانات بصيغة PDF.
+### **1. التقارير التجارية والأتمتة**
 
-## لماذا يجب عليك استخدام تحويل الرسم البياني إلى Pdf API؟
+- **الأقسام المالية**: مخططات التقارير المالية الشهرية → أرشفة بصيغة PDF  
+- **فرق المبيعات**: مخططات اتجاهات الأداء → تقارير PDF مقدمة للعملاء  
+- **تحليلات التسويق**: مخططات أداء الحملات → عروض تنفيذية موجزة بصيغة PDF  
+- **إدارة العمليات**: مخططات مراقبة الإنتاج → وثائق التزامن (Compliance) بصيغة PDF  
 
-- لا حاجة للتخزين السحابي، مما يقلل العبء على موارد السحابة.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+### **2. تطوير البرمجيات والتكامل**
 
-## كيفية استخدام تحويل الرسم البياني إلى PDF API مع SDKs؟
+- **تطبيقات SaaS**: بيانات المخططات المُنشأة من قبل المستخدمين → تقارير قابلة للتحميل بصيغة PDF  
+- **الأنظمة المؤسسية**: مخططات أنظمة ERP/CRM → وثائق تدقيق بصيغة PDF  
+- **تطبيقات الجوال**: مخططات التحليلات داخل التطبيق → ملفات PDF قابلة للمشاركة  
+- **تطبيقات الويب**: مخططات لوحة المعلومات → وظيفة تصدير إلى PDF  
 
-### تحويل المخطط إلى PDF API المواصفات
+### **3. سير عمل معالجة المستندات**
 
- ال[تحويل المخطط إلى PDF API المواصفات](https://reference.aspose.cloud/cells/#/ConversionController/ConvertChartToPdf) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+- **المعالجة بالدُّفعات (Batch Processing)**: تحويل مخططات من ملفات Excel متعددة إلى PDF في وقت واحد  
+- **المهام المجدولة**: إنشاء تلقائي للتقارير اليومية/الأسبوعية من مخططات  
+- **الإخراج القائم على القوالب**: تنسيقات مخططات قياسية → مستندات PDF  
+- **تجميع المستندات**: دمج المخططات مع محتويات أخرى في تنسيق PDF  
 
-## استخدم Aspose.Cells Cloud SDKs
+### **4. تطبيقات مخصصة حسب القطاع**
 
-يعد استخدام SDK أسرع طريقة للتطوير، حيث يقوم بتجريد التفاصيل منخفضة المستوى، مما يسمح لك بتحويل مخطط إلى ملف pdf باستخدام رمز قصير.
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+- **المؤسسات البحثية**: مخططات بيانات التجارب → أشكال مخططات لأوراق البحث المنشورة بصيغة PDF  
+- **قطاع التعليم**: مخططات المواد التعليمية → مواد دراسية بصيغة PDF  
+- **شركات الاستشارات**: مخططات التحليل → مستندات تسليم للعملاء بصيغة PDF  
+- **التصنيع**: مخططات ضمان الجودة → تقارير فحص بصيغة PDF  
+- **قطاع الرعاية الصحية**: مخططات بيانات المرضى → سجلات طبية بصيغة PDF  
+- **القطاع الحكومي**: مخططات إحصائية → منشورات رسمية بصيغة PDF  
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertChartToPdf.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertChartToPdf.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertChartToPdf.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertChartToPdf.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertChartToPdf.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertChartToPdf.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertChartToPdf.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertChartToPdf.go" >}}
-{{< /tab >}}
+### **5. إدارة المحتوى وتوزيعه**
+
+- **إدارة الأصول الرقمية**: أرشفة المخططات بصيغة PDF معيارية  
+- **قواعد المعرفة**: وثائق تقنية تحتوي على مخططات PDF مُدمجة  
+- **منصات العملاء**: تسليم آمن لتقارير PDF للمُ stakeholder  
+- **الامتثال التنظيمي**: إنشاء وثائق PDF جاهزة للتدقيق  
+
+## لماذا يجب استخدام واجهة برمجة التطبيقات لتحويل المخطط إلى PDF؟
+
+- يمكنك تحويل المخططات **بدون تحميل ملف المصنف مسبقًا**، مما يوفر مساحة التخزين ويقلل التكاليف.  
+- يمكن إكمال التطوير بسرعة من خلال SDKs الموجودة لـ Aspose.Cells Cloud.  
+- **تكامل بسيط**: واجهة برمجة تطبيقات REST مع توثيق واضح.  
+- **بنية قابلة للتطوير (Scalable Architecture)**: معالجة أحجام عمل تتراوح من عمليات صغيرة إلى عمليات مؤسسية كبيرة.  
+
+## كيفية استخدام واجهة برمجة التطبيقات لتحويل المخطط إلى PDF مع SDKs؟
+
+### مواصفات واجهة برمجة التطبيقات لتحويل المخطط إلى PDF
+
+تُعرّف [مواصفات واجهة برمجة التطبيقات لتحويل المخطط إلى PDF](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertChartToPDF) واجهة برمجة تطبيقات قابلة للوصول بشكل عام وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+## استخدام SDKs الخاصة بـ Aspose.Cells Cloud
+
+استخدام SDK هو أسرع طريقة للتطوير، حيث يُجرّدك من التفاصيل منخفضة المستوى، مما يسمح لك بتحويل المخطط إلى ملف PDF باستخدام كود معدود.  
+تُظهر أمثلة الكود التالية كيفية إجراء مكالمات لخدمات الويب Aspose.Cells Cloud باستخدام SDKs المختلفة:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertChartToPDF.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertChartToPDF.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertChartToPDF.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertChartToPDF.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertChartToPDF.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertChartToPDF.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertChartToPDF.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertChartToPDF.go" >}}
+{{</tab>}}
 {{< /tabs >}}

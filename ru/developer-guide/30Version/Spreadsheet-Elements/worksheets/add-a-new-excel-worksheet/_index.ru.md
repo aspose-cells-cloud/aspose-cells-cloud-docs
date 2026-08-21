@@ -1,75 +1,83 @@
-﻿---
-title: Добавить рабочий лист Excel
-second_title: Documen
-linktitle: Объявление
-type: docs
-url: /ru/worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
-keywords: Add an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает добавление листа Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Добавить рабочий лист Excel
 ---
-Этот REST API указывает на `add new worksheet`.
+title: "Добавление рабочего листа Excel"
+ArticleTitle: "Добавление рабочего листа Excel — Руководство по API Aspose.Cells Cloud"
+second_title: "Документ"
+linktitle: "Добавить"
+type: docs
+url: /worksheets/add/
+aliases: [/add-a-new-excel-worksheet/]
+keywords: "Добавление рабочего листа Excel, Aspose.Cells Cloud, REST API, PUT worksheet, рабочая тетрадь Excel, запрос API"
+description: "Пошаговое руководство по добавлению нового рабочего листа в рабочую тетрадь Excel с помощью REST API Aspose.Cells Cloud, включая детали запроса, пример cURL и фрагменты кода SDK для нескольких языков."
+weight: 20
+---
 
-## РСЕT API
+Этот REST API добавляет новый рабочий лист в существующую рабочую тетрадь.
+
+**Необходимые условия**: Для вызова этого конечного пункта необходимо иметь действительный маркер аутентификации Aspose Cloud, целевая рабочая тетрадь должна быть загружена в облачное хранилище Aspose Cloud, а также необходимо знать имя хранилища (если используется пользовательское хранилище).
+
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
 ```
 
-Параметры запроса:
+### **Параметры запроса**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Новое имя листа.|
-| позиция| целое число| запрос| Новое положение листа.|
-| листовой тип| нить| запрос| Новый тип листа.|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип    | Расположение | Описание                                           |
+| ------------- | ------ | ------------ | -------------------------------------------------- |
+| name          | string | path         | Имя файла рабочей тетради.                         |
+| sheetName     | string | path         | Имя нового создаваемого рабочего листа.            |
+| position      | integer | query       | Позиция вставки листа (индексация с нуля).         |
+| sheettype     | string | query        | Тип нового листа (например, **Chart**, **Dialog**). |
+| folder        | string | query        | Папка, содержащая рабочую тетрадь.                 |
+| storageName   | string | query        | Имя облачного хранилища Aspose Cloud.              |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как выполнить вызов облачного API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Возможные коды статуса ответа**
+
+| Код статуса | Описание                                             |
+|------------|------------------------------------------------------|
+| 200        | Рабочий лист успешно добавлен.                       |
+| 400        | Неверный запрос — недопустимые параметры.           |
+| 401        | Неавторизован — отсутствует или недействителен маркер аутентификации. |
+| 404        | Не найдено — рабочая тетрадь или папка не существуют. |
+| 500        | Внутренняя ошибка сервера — непредвиденное состояние. |
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ разработки. SDK абстрагирует низкоуровневые детали, позволяя сосредоточиться на вашем проекте. Ознакомьтесь со [списком репозиториев на GitHub](https://github.com/aspose-cells-cloud), где вы найдете полный список SDK для Aspose.Cells Cloud.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

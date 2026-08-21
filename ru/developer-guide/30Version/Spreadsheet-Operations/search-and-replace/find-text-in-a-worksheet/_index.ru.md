@@ -1,54 +1,98 @@
-﻿---
-title: Найти текст на рабочем листе Excel
-second_title: Documen
-linktitle: Найти в рабочем листе
+---
+title: "Поиск текста в листе Excel"
+second_title: "Документ"
+linktitle: "Поиск в листе"
 type: docs
-url: /ru/worksheets/find-text/
+url: /worksheets/find-text/
 aliases: [/find-text-in-a-worksheet/]
 weight: 40
-keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
-description: Aspose.Cells Cloud REST API поддерживает поиск текста в листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Поиск текста на листе Excel
+keywords: "Excel, Aspose.Cells Cloud, REST API, поиск текста, лист, электронная таблица, поиск"
+description: "Используйте REST API Aspose.Cells Cloud для поиска текста в листе Excel. API доступно через множество SDK и языков программирования."
 ---
-Этот REST API указывает на текст `search` на листе Excel.
 
-## РСЕT API
+Этот REST API позволяет искать текст в листе Excel.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/findText
- 
 ```
 
-Параметры запроса:
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| текст| нить| запрос| Текст для поиска.|
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+### **Безопасность и аутентификация**
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextSearch) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### Параметры запроса
+
+| Имя параметра | Тип   | Местоположение | Описание                 |
+| ------------- | ----- | -------------- | ------------------------- |
+| name          | string | path          | Имя документа.           |
+| sheetName     | string | path          | Имя листа.               |
+| text          | string | query         | Искомый текст.           |
+| folder        | string | query         | Папка документа.         |
+| storageName   | string | query         | Имя хранилища.           |
+
+### **Ответ**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                                   |
+|-----|-----------------------------|------------------------------------------------------------|
+| 200 | OK (Успешно)               | Фильтр применён успешно; ответ содержит детали операции.  |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизовано) | Недействительный или отсутствующий JWT-токен.             |
+| 413 | Payload Too Large (Слишком большой payload) | Загруженный файл превышает допустимый размер.             |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                            |
+
+## Как использовать API PostWorksheetTextSearch с SDK
+
+### Спецификация API PostWorksheetTextSearch
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextSearch) определяет общедоступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки **cURL** для удобного доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как вызвать Cloud API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/findText?text=a" -H "accept: application/json"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
+```json
 {
   "Status": "string",
   "TextItems": {
@@ -71,18 +115,18 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/fi
     ]
   }
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это самый быстрый способ разработки. SDK скрывает низкоуровневые детали, позволяя сосредоточиться на задачах вашего проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}

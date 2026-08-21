@@ -1,121 +1,133 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Uzak Elektronik Tablodaki Çalışma Sayfasının Bozuk Bağlantılarını Ara
-second_title: Documen
-ArticleTitle: Search Broken Links of Worksheet in Remote Spreadshee
-linktitle: Uzaktan Çalışma Sayfası Bozuk Bağlantısını Ara
-type: docs
-url: /tr/search-broken-links-in-remote-worksheet/
-keywords: broken links, Excel API, cloud spreadsheet, REST API, hyperlink validation, remote workshee
-description: Excel API'i kullanarak uzak bir elektronik tablo çalışma sayfasındaki bozuk bağlantıları zahmetsizce arayın
-weight: 100
-kwords: Excel API, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, JSON, Markdown, bozuk bağlantılar, geçersiz URL'ler, köprü metni doğrulaması
 ---
-Uzak bir elektronik tablo çalışma sayfasındaki bozuk bağlantıları arayın.
+title: "Aspose.Cells Cloud – Excel Bozuk Bağlantı Algılama API’si – Uzaktan Çalışma Sayfalarındaki Tablo Bağlantılarını Taranın ve Doğrulayın"
+secondtitle: "Belge"
+ArticleTitle: "Uzaktan Excel Çalışma Sayfasında Bozuk Bağlantıları Bulun ve Düzeltin – Bulut Tablo Bağlantı Denetleyicisi"
+linktitle: "Uzaktan Çalışma Sayfasındaki Bozuk Bağlantıları Arayın"
+type: docs
+url: /search-broken-links-in-remote-worksheet/
+keywords: "Aspose Cells, bozuk bağlantılar, Excel API, bulut tablo, bağlantı doğrulama"
+description: "Bulut depolama alanında depolanan Excel çalışma sayfalarındaki harici bozuk bağlantıları algılayın ve düzeltin. Aspose.Cells Cloud API’sini kullanarak aralıkları tarayın, bağlantı ayrıntılarını alın ve kalite kontrolünü otomatikleştirin."
+weight: 100
+---
 
-## **Uzaktan Çalışma Sayfasındaki Bozuk Bağlantıları Ara API**
+## **Uzaktan Çalışma Sayfasındaki Bozuk Bağlantıları Arama API’si**
+
+Bulut depolama alanında depolanan bir Excel çalışma sayfasındaki bozuk bağlantıları otomatik olarak algılayın. API, belirtilen aralıkları tarayarak bozuk harici başvuruları, geçersiz formülleri ve eksik veri kaynaklarını tespit eder. Bulut depolama sağlayıcılarıyla entegrasyonu destekler, uzaktan tablo denetimi ve otomatik kalite kontrolü sağlar. Kurumsal iş akışı otomasyonu için RESTful API.
+
+### **Web API’si**
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/broken-links
+PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/broken-links
+```
+
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### **İstek Parametreleri:**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTP Gövdesi| Tanım|
-|:- |:- |:- |:- |
-|isim|Sicim|Yol|Aranacak çalışma kitabı dosyasının adı.|
-|çalışma sayfası|Sicim|Yol|Arama için çalışma sayfasını belirtin.|
-|dosya|Sicim|Sorgu|Çalışma kitabının saklandığı klasör yolu.|
-|depolamaAdı|Sicim|Sorgu|(İsteğe bağlı) Özel bulut depolama alanı kullanılıyorsa depolama alanının adı. Belirtilmezse varsayılan depolama alanını kullanın.|
-|bölge|Sicim|Sorgu|E-tablo bölge ayarı.|
-|şifre|Sicim|Sorgu|E-tablo dosyasını açmak için şifre.|
+| Parametre Adı   | Tür      | Yol/Sorgu Dizisi/HTTP Gövdesi | Açıklama                                                                                                                                                                                                                     |
+| :-------------- | :------- | :-------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name            | String   | Yol                         | **Zorunlu.** Bozuk bağlantıların aranacağı Excel çalışma kitabının dosya adı (uzantısıyla birlikte) (örn. `Annual_Report.xlsx`).                                                                                           |
+| worksheet       | String   | Yol                         | **Zorunlu.** Bağlantı taramasının yapılacağı çalışma sayfasının tam adı (örn. `DataSheet1`).                                                                                                                                 |
+| folder          | String   | Sorgu                       | **İsteğe bağlı.** Hedef çalışma kitabının bulunduğu bulut depolama alanındaki dizin yolu. Belirtilmezse kök klasör kullanılır.                                                                                                |
+| storageName     | String   | Sorgu                       | **İsteğe bağlı.** Özelleştirilmiş yapılandırılmış bulut depolama alanınızın tanımlayıcısı. Belirtilmezse, API hesabın varsayılan depolama alanını kullanır.                                                                   |
+| region          | String   | Sorgu                       | **İsteğe bağlı.** Tarama sırasında uygulanacak yerel ayar (örn. `fr-FR`). Bu ayar, belirli formüllerin veya bölgesel veri formatlarının yorumlanmasını etkileyebilir. _Desteklenen yerel kodlar şunları içerir: `en-US`, `fr-FR`, `de-DE`, `es-ES`, vb._ |
+| password        | String   | Sorgu                       | **İsteğe bağlı.** Şifreli bir tablo için şifre çözme şifresi. Dosya şifrelenmemişse boş bırakın.                                                                                                                              |
 
-### **Cevap**
+**Örnek cURL isteği**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/Annual_Report.xlsx/worksheets/DataSheet1/search/broken-links?folder=Reports&storageName=MyStorage" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
+### **Yanıt**
 
 ```json
 {
-  "Name": "BrokenLinksResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "Properties": [
+  "Code": 200,
+  "Status": "OK",
+  "BrokenLinks": [
     {
-      "Name": "BrokenLinks",
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "BrokenLink",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "BrokenLink",
-        },
-      }
-    },
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
+      "Address": "='C:\\Data\\Source.xlsx'!A1",
+      "ErrorCode": "404",
+      "ErrorMessage": "Kaynak dosya bulunamadı"
     }
   ]
 }
 ```
 
+Yanıt nesnesi **BrokenLinksResponse** türündedir ve şunları içerir:
+
+- **BrokenLinks** – `BrokenLink` nesnelerinden oluşan bir koleksiyon; her biri sorunlu başvuruyu (adres, hata kodu ve mesajı) açıklar.
+- **Code** – Hizmet tarafından döndürülen sayısal durum kodu.
+- **Status** – Sonucun metinsel açıklaması.
+
+**Notlar**: API, sonuçları sayfalama yapmaz. Bir istekte en fazla 10.000 bozuk bağlantı döndürülebilir. Hesap başına rate limit (rate limiting) 100 istek/dakikadır.
+
 ### Hata Kodları
 
-- **400 Kötü İstek**: Geçersiz Apose.Cells Bulut API URI.
-- **401 Yetkisiz**: Geçersiz erişim belirteci. Veya geçersiz istemci kimliği ve sırrı.
-- **404 Bulunamadı**: E-tablo dosyasına erişilemiyor.
-- **500 Sunucu Hatası**: Hesaplama verilerinin alınmasında elektronik tabloda bir anormallik tespit edildi.
+- **400 Bad Request** – Geçersiz Aspose.Cells Cloud API URI’si.
+- **401 Unauthorized** – Geçersiz veya eksik erişim belirteci.
+- **404 Not Found** – Tablo dosyasına erişilemiyor.
+- **500 Server Error** – Hesaplama verileri alınırken bir sorun oluştu.
 
-## API nolu E-Tablonun çalışma sayfasında Kırık Bağlantıları Ara özelliğini nerede kullanmalıyız?
+## Excel Tablosunun Çalışma Sayfasındaki Bozuk Bağlantıları Arama API’si nerede kullanılmalıdır?
 
-Elektronik Tablo çalışma sayfasında bozuk bağlantıları aramanız gerektiğinde API numarasını kullanabilirsiniz.
+- **Büyük Finansal Modellerin Düzenli Denetimi**: Aylık veya çeyrek raporlar yayınlanmadan önce, büyük miktarda harici veri referansı içeren (örn. `Dashboard!B5:K50`) temel hesaplama alanlarını tarayarak tüm bağlantıların geçerli kaynak dosyalara işaret ettiğinden emin olun.
+- **Birleşmeler ve İstihkaklar İçin Veri Entegrasyonu**: İşletme birimlerini temsil eden birden fazla tablo dosyası birleştirildikten sonra "Overview" (Genel Bakış) çalışma sayfasını tarayarak, kaynak dosya yollarındaki değişiklikler veya izin sorunları nedeniyle geçersiz hale gelen bağlantıları belirleyin.
+- **Yatırımcı Veri Paketlerinin Hazırlanması**: Dış veritabanlarına veya pazar veri kaynaklarına bağlı grafikler ve tablolar içeren sunum materyalleri nihai hale getirilmeden önce tüm bağlantıların geçerliliğini kontrol edin.
 
-## API numaralı E-Tablonun çalışma sayfasındaki Bozuk Bağlantıları Ara özelliğini neden kullanmalısınız?
+## Neden Excel Tablosunun Çalışma Sayfasındaki Bozuk Bağlantıları Arama API’si kullanılmalıdır?
 
-- API ile uzaktan bir elektronik tablo çalışma sayfasındaki bozuk bağlantıları zahmetsizce arayın.
-- Mevcut SDK üzerinden geliştirme hızlı bir şekilde tamamlanabilir.
+- **Geliştirici Dostu**: Aspose.Cells Cloud, birden fazla dilde SDK kütüphaneleri sunar; hızlı geliştirme sağlar ve kapsamlı belgelerle birlikte gelir. Özelleştirilmiş grafik oluşturma çözümleri oluşturmakla karşılaştırıldığında, geliştirme iş yükünü büyük ölçüde azaltır.
+- **İşgücü Maliyetlerini Azaltır**: Elle belge birleştirme ve bağlantı doğrulama görevleri için çalışan personel ihtiyacını ortadan kaldırır.
+- **Öde-ve-Kullan**: Ön ödeme gerekmez; yalnızca kullandığınız API çağrıları için ödeme yaparsınız.
+- **Sıfır Bakım Maliyeti**: Bakımı yapılacak sunucu yok, yazılım güncellemesi yok, uyumluluk sorunu yok.
+- **Karmaşık Excel Biçimlendirmesini Evrensel Erişimli PDF Formatında Korur.**
 
-## SDK'lar ile API E-Tablosunun Çalışma Sayfasında Bozuk Bağlantıları Arama Özelliğinin Nasıl Kullanılacağı
+## Excel Tablosunun Çalışma Sayfasındaki Bozuk Bağlantıları Arama API’sini SDK’larla Nasıl Kullanılır
 
 ### OpenAPI Spesifikasyonu
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/SearchControllor/SearchBrokenLinksInRemoteWorksheet) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceContentInRemoteWorksheet), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-### Aspose.Cells Bulut SDK'larını kullanın
+### Aspose.Cells Cloud SDK’larını Kullanma
 
-SDK'yı kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. SDK, temel ayrıntıları ele alarak, minimum kodla hücreler için çalışma sayfaları veya elektronik tablolar içinde parçalı arama yapmanızı sağlar.
- Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoludur. SDK, alttaki detayları yöneterek Excel tablolarının çalışma sayfalarındaki bozuk bağlantıları aramayı minimum kodla uygulamanıza olanak tanır. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak Aspose.Cells web hizmetlerine nasıl istek yapıldığını göstermektedir:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchBrokenLinksInRemoteWorksheet.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchBrokenLinksInRemoteWorksheet.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchBrokenLinksInRemoteWorksheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchBrokenLinksInRemoteWorksheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchBrokenLinksInRemoteWorksheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchBrokenLinksInRemoteWorksheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchBrokenLinksInRemoteWorksheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchBrokenLinksInRemoteWorksheet.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchBrokenLinksInRemoteWorksheet.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchBrokenLinksInRemoteWorksheet.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchBrokenLinksInRemoteWorksheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchBrokenLinksInRemoteWorksheet.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchBrokenLinksInRemoteWorksheet.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchBrokenLinksInRemoteWorksheet.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchBrokenLinksInRemoteWorksheet.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchBrokenLinksInRemoteWorksheet.go" >}}
+{{</tab>}}
 {{< /tabs >}}
+---

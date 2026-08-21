@@ -1,76 +1,92 @@
-﻿---
-title: 移动 Excel 工作表
-second_title: Documen
-linktitle: 移动
-type: docs
-url: /zh/worksheets/move/
-aliases: [/move-excel-worksheets/]
-keywords: Move an Excel worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API 支持将 Excel 工作表移动到 Excel 工作簿。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 20
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、移动 Excel 工作表
 ---
-此 REST API 表示 `move worksheet`。
- 
-## 重新设置 API
- 
+title: "移动 Excel 工作表 – Aspose.Cells Cloud API (v3.0)"
+second_title: "文档"
+linktitle: "移动"
+type: docs
+url: /worksheets/move/
+aliases: [/move-excel-worksheets/]
+keywords: "Aspose.Cells Cloud, 移动工作表, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
+description: "了解如何使用 Aspose.Cells Cloud API (v3.0) 将 Excel 工作表移动到新位置。包含端点、必需参数、cURL 示例以及 C#、Java、Python 等语言的 SDK 代码。"
+weight: 20
+ArticleTitle: "如何使用 Aspose.Cells Cloud API v3.0 移动 Excel 工作表"
+---
+
+此 REST API 可在 Excel 工作簿内移动工作表。
+
+## REST API
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
 ```
-请求参数为：
- 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|移动||身体|具有移动参数。|
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
- 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
- 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### 请求参数
+
+| 参数名称     | 类型   | 位置   | 描述                                                                 |
+| ------------ | ------ | ------ | -------------------------------------------------------------------- |
+| name         | string | path   | Excel 文件名称。                                                     |
+| sheetName    | string | path   | 待移动的工作表名称。                                                 |
+| moving       | object | body   | JSON 对象，指定目标工作表（`DestinationWorksheet`）和相对位置（`Position`）。 |
+| folder       | string | query  | 存放工作簿的文件夹路径。                                             |
+| storageName  | string | query  | 存储服务名称。                                                       |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) 定义了一个公开可用的编程接口，允许您直接从网页浏览器发起 REST 交互。
+
+您可以使用 cURL 命令行工具调用 Aspose.Cells 网络服务。下面的示例展示了如何通过单个请求移动工作表。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--d '{"DestinationWorksheet":"Sheet5", "Position":"after"}' 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"DestinationWorksheet":"Sheet5","Position":"after"}'
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
+**HTTP 状态码**
+
+| 状态码 | 含义         | 描述                                       |
+|--------|--------------|--------------------------------------------|
+| 200    | OK（成功）   | 过滤器应用成功；响应包含操作详情。         |
+| 400    | Bad Request（错误请求） | 参数缺失或无效（例如，不支持的文件类型）。 |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。                      |
+| 413    | Payload Too Large（请求实体过大） | 上传的文件超出大小限制。                |
+| 500    | Internal Server Error（内部服务器错误） | 服务器发生意外错误。                    |
+
+**示例错误响应体**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "缺少必需参数 'moving'。"
+}
+```
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK 系列
- 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
- 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
- 
- 
- 
+
+## 云 SDK 家族
+
+使用 SDK 是加快开发速度的最佳方式。SDK 会处理底层细节，让您专注于项目任务。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells 网络服务：
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

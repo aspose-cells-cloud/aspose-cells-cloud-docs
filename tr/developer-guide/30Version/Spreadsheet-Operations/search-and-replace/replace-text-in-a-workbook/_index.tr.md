@@ -1,46 +1,177 @@
-﻿---
-title: Excel çalışma kitabındaki metni değiştirin
-second_title: Documen
-linktitle: Workboo'da değiştir
+---
+title: "Bir Excel çalışma kitabında metin değiştir"
+second_title: "Belge"
+linktitle: "Çalışma kitabında değiştir"
 type: docs
-url: /tr/workbook/replace-text/
+url: /workbook/replace-text/
 aliases: [/replace-text-in-a-workbook/]
 weight: 60
-keywords: Replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) workbook
-description: Aspose.Cells Cloud REST API, Excel çalışma kitabındaki metinlerin değiştirilmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma kitabındaki metni değiştirme
+keywords: "Aspose.Cells Cloud, Metin Değiştir, Excel Çalışma Kitabı, XLSX, ODS, REST API, Elektronik Tablo, SDK"
+description: "Aspose.Cells Cloud REST API’si kullanarak Excel (XLS, XLSX, XLSM, XLSB) ve OpenDocument Elektronik Tablosu (ODS) çalışma kitaplarında metin değiştirin. cURL ve geniş bir SDK yelpazesi (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go vb.) aracılığıyla kullanılabilir."
 ---
-Bu REST API, Excel çalışma kitabındaki `replace` metnini gösterir.
 
-## RSET API
+Bu REST API, bir Excel çalışma kitabında metin değiştirir.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText
- 
+```
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
+
+### İstek Parametreleri
+
+| Parametre Adı | Tür   | Konum | Açıklama                                              |
+| -------------- | ------ | -------- | ------------------------------------------------------- |
+| name           | string | path     | Çalışma kitabının dosya adı.                              |
+| sheetName      | string | path     | Değişiklik yapılının çalışma sayfasının adı.     |
+| oldValue       | string | query    | Değiştirilecek metin.                           |
+| newValue       | string | query    | Eski değerin yerine geçecek metin.                   |
+| folder         | string | query    | Çalışma kitabının bulunduğu klasör yolu.                    |
+| storageName    | string | query    | Çalışma kitabının bulunduğu depolama hizmetinin adı. |
+
+### **Yanıt**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+      "Workbook": {
+    "FileName": "test.xlsx",
+    "Links": [
+      {
+        "Href": "/test.xlsx",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "CSV Olarak İndir",
+        "Type": "text/csv"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "HTML Olarak İndir",
+        "Type": "text/html"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "ODS Olarak İndir",
+        "Type": "application/vnd.oasis.opendocument.spreadsheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "PDF Olarak İndir",
+        "Type": "application/pdf"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Tablo Ayrıştırılmış Metin Biçiminde İndir",
+        "Type": "text/plain"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "TIFF Olarak İndir",
+        "Type": "image/tiff"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Microsoft Excel 2003 Olarak İndir",
+        "Type": "application/vnd.ms-excel"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Microsoft Excel 2007 Olarak İndir",
+        "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "XPS Olarak İndir",
+        "Type": "application/vnd.ms-xpsdocument"
+      }
+    ],
+    "Worksheets": {
+      "link": {
+        "Href": "/worksheets",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DefaultStyle": {
+      "link": {
+        "Href": "/defaultstyle",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DocumentProperties": {
+      "link": {
+        "Href": "/documentproperties",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Names": {
+      "link": {
+        "Href": "/names",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Settings": {
+      "link": {
+        "Href": "/settings",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "IsWriteProtected": "False",
+    "IsProtected": "False",
+    "IsEncryption": "false",
+    "Password": null
+  }
+}
 ```
 
-İstek parametreleri şunlardır:
+**HTTP Durum Kodları**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| eskiDeğer| sicim| sorgu|Değiştirilecek eski metin.|
-| yeniDeğer| sicim| sorgu| Yerine konulacak yeni metin.|
-| dosya| sicim| sorgu| Belgenin klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Kod | Anlam                       | Açıklama                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | Başarılı (OK)                          | Filtre başarıyla uygulandı; yanıt işlem detaylarını içerir. |
+| 400  | Hatalı İstek (Bad Request)                 | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401  | Yetkisiz (Unauthorized)                | Geçersiz veya eksik JWT belirteci. |
+| 413  | Yük Çok Büyük (Payload Too Large)           | Yüklenen dosya boyut sınırını aşıyor. |
+| 500  | Sunucu İçi Hata (Internal Server Error)       | Beklenmeyen sunucu hatası. |
+## SDK’larla PostReplace API Nasıl Kullanılır
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorsheetTextReplace) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### PostReplace API Spesifikasyonu
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextReplace), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Aspose.Cells web hizmetlerini kolayca çağırmak için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile nasıl istek yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/replaceText?oldValue=a&newValue=a12" -H "accept: application/json"
 ```
 
@@ -48,45 +179,31 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/replaceText?oldValue
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Matches": 26,
-
   "Workbook": {
-
     "link": {
-
       "Href": "/test.xlsx",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bu işlevselliği entegre etmenin en hızlı yolu bir SDK kullanmaktır. Bir SDK, düşük seviye detayları yöneterek size iş mantığınızla ilgilenmeniz için fırsat verir. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -139,3 +256,5 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---

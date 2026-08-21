@@ -1,76 +1,98 @@
-﻿---
-title: Excel Çalışma Sayfasındaki Grup Satırları
-second_title: Documen
-linktitle: Grup
-type: docs
-url: /tr/rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
-keywords: Group rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında satırların gruplandırılmasını destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 60
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel Çalışma Sayfasında Satırları Gruplandır
 ---
-Bu REST API, Excel çalışma sayfasındaki satırları gruplamayı gösterir.
+title: "Excel Çalışma Sayfasında Satırları Gruplama"
+second_title: "Belge"
+linktitle: "Grupla"
+type: docs
+url: /rows/group/
+aliases: [/group-rows-in-excel-worksheet/]
+keywords: "satırları gruplama, Excel, Aspose.Cells Cloud, REST API, SDK, çalışma sayfası, Excel API"
+description: "Aspose.Cells Cloud REST API ile bir Excel çalışma sayfasında satırları gruplayın. Kolay entegrasyon için birden fazla SDK’yı (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) destekler."
+weight: 60
+ArticleTitle: "Aspose.Cells Cloud API ile Excel Çalışma Sayfasında Satırları Gruplama"
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasında satırları gruplar.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
- 
+**Önkoşullar:**  
+- Geçerli bir OAuth 2.0 erişim belirteci (Bearer JWT), `Authorization` başlığına eklenmelidir.  
+- İstek gönderilmeden önce çalışma kitabının, seçilen `storageName` (veya varsayılan depo) içinde belirtilen `folder` klasöründe zaten bulunuyor olması gerekir.
+
+## PostGroupWorksheetRows API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| ilkIndex| tam sayı| sorgu| İşlem yapılacak ilk satır indeksi.|
-| sonIndex| tam sayı| sorgu| İşlem yapılacak son satır indeksi.|
-| saklamak| Boolean| sorgu| satırlar görünür durumda|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **İstek Parametreleri**
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı | Tür      | Konum  | Açıklama                                                                    |
+| ------------- | -------- | ------ | --------------------------------------------------------------------------- |
+| name          | string   | path   | Çalışma kitabının dosya adı.                                                 |
+| sheetName     | string   | path   | Çalışma sayfasının adı.                                                      |
+| firstIndex    | integer  | query  | Gruplandırılacak ilk satırın sıfır tabanlı indeksi.                         |
+| lastIndex     | integer  | query  | Gruplandırılacak son satırın sıfır tabanlı indeksi.                         |
+| hide          | boolean  | query  | Gruplanan satırların gizlenip gizlenmeyeceğini belirtir (`true` veya `false`). |
+| folder        | string   | query  | Çalışma kitabını içeren klasörün yolu.                                        |
+| storageName   | string   | query  | Çalışma kitabının bulunduğu depo adı.                                         |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows), genel olarak erişilebilir bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye nasıl istek atılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/group?firstIndex=1&lastIndex=2&hide=true" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**HTTP Durum Kodları**
+
+| Kod  | Anlamı                    | Açıklama                                               |
+|------|---------------------------|--------------------------------------------------------|
+| 200  | OK (Tamam)                | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400  | Bad Request (Hatalı İstek)| Eksik veya geçersiz parametreler (örn., desteklenmeyen dosya türü). |
+| 401  | Unauthorized (Yetkisiz)   | Geçersiz veya eksik JWT belirteci.                     |
+| 413  | Payload Too Large (Çok Büyük Yük)| Yüklenecek dosya boyut sınırını aşıyor.            |
+| 500  | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası.                  |
+
+Yaygın hata yanıtları:
+
+- **400 Bad Request (Hatalı İstek)** – `firstIndex` ve `lastIndex` değerlerinin geçerli tam sayılar olduğunu ve `firstIndex` ≤ `lastIndex` koşulunu sağladığını kontrol edin.  
+- **401 Unauthorized (Yetkisiz)** – `Authorization` başlığının güncel bir JWT belirteci içerdiğini doğrulayın.  
+- **404 Not Found (Bulunamadı)** – Çalışma kitabının (`name`) ve çalışma sayfasının (`sheetName`) belirtilen `folder`/`storageName` içinde mevcut olduğundan emin olun.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+**Ayrıca bakınız:** [Excel çalışma sayfasında satırların gruplamasını kaldırma](../rows/ungroup/ "Excel çalışma sayfasında satırların gruplamasını kaldırma"), [Excel çalışma sayfasında satırları gizleme](../rows/hide/ "Excel çalışma sayfasında satırları gizleme"), [Excel çalışma sayfasında satırların gizliliğini kaldırma](../rows/unhide/ "Excel çalışma sayfasında satırların gizliliğini kaldırma").
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+## Bulut SDK Geliştirme Paketi
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Bir SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, düşük seviyeli ayrıntıları yöneterek size proje görevlerinize odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanılarak Aspose.Cells web servislerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

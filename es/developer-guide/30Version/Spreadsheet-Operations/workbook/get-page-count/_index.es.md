@@ -1,70 +1,78 @@
-﻿---
-title: Obtenga el recuento de páginas de un archivo Excel
-second_title: Documen
-linktitle: Página
+---
+title: "Obtener el número de páginas de un archivo de Excel"
+second_title: "Document"
+linktitle: "Páginas"
 type: docs
 url: /es/get-page-count-from-an-excel-file/
-aliases: [/workbook/page-count/,/workbook/get/page-count/]
-keywords: Getting pages count on an Excel workbook
-description: Aspose.Cells Cloud REST API permite obtener el número de páginas en un libro de trabajo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+aliases: [/es/workbook/page-count/, /es/workbook/get/page-count/]
+keywords: "Aspose.Cells, API en la nube, número de páginas de Excel, paginación de libros de trabajo"
+description: "Recuperar el número total de páginas imprimibles en un libro de trabajo de Excel mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye formato de solicitud, parámetros obligatorios, ejemplo con cURL, esquema de respuesta, manejo de errores y fragmentos de SDK para múltiples lenguajes."
 weight: 10
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Obtener recuento de páginas
+version: "v3.0"
+ArticleTitle: "Obtener el número de páginas de un archivo de Excel usando la API de Aspose.Cells Cloud"
 ---
-Este REST API indica `get page count` para el libro de trabajo.
 
-## RSET API
+Esta API REST devuelve el **número de páginas** de un libro de trabajo.
+
+## Seguridad y autenticación
+Las API de Aspose.Cells Cloud son seguras y requieren [autenticación basada en token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/pagecount
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/pagecount
 ```
 
-Los parámetros de la solicitud son:
+### Parámetros de la solicitud
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del documento.|
-| carpeta| cadena| consulta| Carpeta del documento.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo   | Ubicación | Obligatorio | Descripción                                      |
+| -------------------- | ------ | --------- | ----------- | ------------------------------------------------ |
+| name                 | string | path      | Sí          | El nombre del documento de Excel.               |
+| folder               | string | query     | No          | La carpeta que contiene el documento.           |
+| storageName          | string | query     | No          | El nombre del almacenamiento que se va a usar.  |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetPageCount) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetPageCount) define una interfaz de programación públicamente accesible y permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a la API REST de Aspose.Cells. El siguiente ejemplo muestra cómo invocar el punto de conexión mediante cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/pagecount" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/YourFile.xlsx/pagecount" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
+
+*Reemplace `YourFile.xlsx` con el nombre real del libro de trabajo que desea consultar.*
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 13
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Esquema de respuesta
+
+| Estado HTTP | Tipo de datos | Descripción                                             |
+| ----------- | ------------- | ------------------------------------------------------- |
+| 200         | integer       | El número total de páginas imprimibles del libro (por ejemplo, `13`). |
+| 4xx‑5xx     | JSON          | Objeto de error (ver sección _Manejo de errores_).    |
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -94,7 +102,7 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetPageCount.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82deb2e4189bc27ae92abf73c36b4df0" "Example_GetPageCount.ts" >}}
 
 {{< /tab >}}
 
@@ -117,3 +125,13 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Manejo de errores
+
+| Estado HTTP | Descripción                              | Cuerpo JSON de ejemplo                                                                      |
+| ----------- | ---------------------------------------- | ------------------------------------------------------------------------------------------- |
+| 401         | Token JWT inválido o ausente.            | `{ "Code": "InvalidAuthenticationToken", "Message": "El token de acceso está ausente o es inválido." }` |
+| 404         | No se pudo encontrar el libro especificado. | `{ "Code": "FileNotFound", "Message": "El archivo solicitado no existe." }`               |
+| 400         | Solicitud incorrecta: parámetros obligatorios ausentes. | `{ "Code": "BadRequest", "Message": "Falta el parámetro obligatorio 'name'." }`           |
+| 500         | Error interno del servidor.              | `{ "Code": "InternalError", "Message": "Ocurrió un error inesperado." }`                   |
+---

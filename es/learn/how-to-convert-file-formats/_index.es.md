@@ -1,64 +1,65 @@
-﻿---
-title: Cómo convertir formatos de archivos de hojas de cálculo con Aspose.Cells Clou
-linktitle: Cómo convertir el formato de archivo de una hoja de cálculo
-type: docs
-url: /es/how-to-convert-file-formats
-description: Cómo convertir formatos de archivos con Aspose.Cells Cloud
-weight: 10
-kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Cómo convertir formatos de archivo a través de Aspose.Cells Cloud
 ---
+title: "Cómo convertir formatos de archivos de hojas de cálculo con Aspose.Cells Cloud"
+linktitle: "Cómo convertir formatos de archivos de hojas de cálculo"
+type: docs
+url: /how-to-convert-file-formats
+description: "Cómo convertir formatos de archivos con Aspose.Cells Cloud."
+weight: 10
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown, Cómo convertir formatos de archivos mediante Aspose.Cells Cloud
+---
+
 ## Introducción
 
-Aspose.Cells Hoja de Cálculo en la Nube API ofrece un conjunto de interfaces de doble canal para convertir archivos de hojas de cálculo locales y en la nube. Admite formatos como Excel (XLS, XLSX), CSV, HTML y PDF, lo que facilita la conversión para satisfacer diversas necesidades.
+La API de hojas de cálculo de Aspose.Cells Cloud proporciona un conjunto de interfaces en dos canales para convertir archivos de hojas de cálculo locales y en la nube. Admite formatos como Excel (XLS, XLSX), CSV, HTML y PDF, facilitando la conversión para satisfacer diversas necesidades.
 
-### Tres modos de conversión · Modelo de objetos unificado · Cobertura de formato completa
+### Tres modos de conversión · Modelo de objeto unificado · Cobertura completa de formatos
 
 ![Modos de conversión](image.png)
 
-## **Matriz de conversión de núcleos**
+## **Matriz de conversión principal**
 
-| Tipo de conversión| Nivel de objeto| Típico API| Formatos de salida|
-|-----------------|-------------|---------------------------|--------------------------|
-|**Conversión local**  | Libro de trabajo|`ConvertSpreadsheet`            | PDF/XLSX/JSON/.... más de 30 formatos|
-|| Hoja de trabajo|`ConvertWorksheetToImage`       |PNG/JPEG/SVG                   |
-|||`ConvertWorksheetToPdf`         | PDF|
-|| Mesa|`ConvertTableToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertTableToPdf`             | PDF|
-|||`ConvertTableToCsv`             | Cvc|
-|||`ConvertTableToHtml`            | HTML|
-|||`ConvertTableToJson`            | HTML|
-|| Rango|`ConvertRangeToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertRangeToPdf`             | PDF|
-|||`ConvertRangeToCsv`             | Cvc|
-|||`ConvertRangeToHtml`            | HTML|
-|||`ConvertRangeToJson`            | JSON|
-|| Cuadro|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertChartToPdf`             |PDF                            |
-|**Conversión a la nube**  | Libro de trabajo|`ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... más de 30 formatos|
-|| Hoja de trabajo|`ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... más de 30 formatos|
-|| Mesa|`ExportTableAsFormat`           | PDF/XLSX/JSON/.... más de 30 formatos|
-|| Rango|`ExportRangeAsFormat`           | PDF/XLSX/JSON/.... más de 30 formatos|
-|| Cuadro|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... más de 30 formatos|
-|**Guardar como en la nube**     | Libro de trabajo|`SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... más de 30 formatos|
+| Tipo de conversión    | Nivel de objeto   | API típica                      | Formatos de salida             |
+|-----------------------|-------------------|---------------------------------|--------------------------------|
+| **Conversión local**  | Libro de trabajo  | `ConvertSpreadsheet`            | PDF/XLSX/JSON/… +30 formatos   |
+|                       | Hoja de cálculo   | `ConvertWorksheetToImage`       | PNG/JPEG/SVG                   |
+|                       |                   | `ConvertWorksheetToPdf`         | PDF                            |
+|                       | Tabla             | `ConvertTableToImage`           | PNG/JPEG/SVG/…                 |
+|                       |                   | `ConvertTableToPdf`             | PDF                            |
+|                       |                   | `ConvertTableToCsv`             | CSV                            |
+|                       |                   | `ConvertTableToHtml`            | HTML                           |
+|                       |                   | `ConvertTableToJson`            | JSON                           |
+|                       | Rango             | `ConvertRangeToImage`           | PNG/JPEG/SVG/…                 |
+|                       |                   | `ConvertRangeToPdf`             | PDF                            |
+|                       |                   | `ConvertRangeToCsv`             | CSV                            |
+|                       |                   | `ConvertRangeToHtml`            | HTML                           |
+|                       |                   | `ConvertRangeToJson`            | JSON                           |
+|                       | Gráfico           | `ConvertChartToImage`           | PNG/JPEG/SVG/…                 |
+|                       |                   | `ConvertChartToPdf`             | PDF                            |
+| **Conversión en la nube** | Libro de trabajo  | `ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/… +30 formatos   |
+|                       | Hoja de cálculo   | `ExportWorksheetAsFormat`       | PDF/XLSX/JSON/… +30 formatos   |
+|                       | Tabla             | `ExportTableAsFormat`           | PDF/XLSX/JSON/… +30 formatos   |
+|                       | Rango             | `ExportRangeAsFormat`           | PDF/XLSX/JSON/… +30 formatos   |
+|                       | Gráfico           | `ExportChartAsFormat`           | PDF/XLSX/JSON/… +30 formatos   |
+| **Guardar como en la nube** | Libro de trabajo  | `SaveSpreadsheetAs`             | PDF/XLSX/JSON/… +30 formatos   |
 
 ### **Conversión de archivos locales**
 
 ```csharp
-// Get Cells Cloud API client
+// Obtener el cliente de la API de Aspose.Cells Cloud
 CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
 ```
 
-- **Excel Conversión de archivos**
+- **Conversión de archivos de Excel**
 
 ```c#
-// Convert local Excel to PDF
+// Convertir un archivo de Excel local a PDF
 cellsApi.ConvertSpreadsheet(new ConvertSpreadsheetRequest { Spreadsheet = "EmployeeSalesSummary.xlsx", format = "pdf" }, "EmployeeSalesSummary.pdf");
 ```
 
-- **Convertir el gráfico Excel al archivo SVG**
+- **Convertir un gráfico de Excel a un archivo SVG**
 
 ```c#
-// Convert local Excel Chart to Svg
+// Convertir un gráfico de Excel local a SVG
 cellsApi.ConvertChartToImage(new SDK.Request.ConvertChartToImageRequest
 {
     Spreadsheet = "EmployeeSalesSummary.xlsx",
@@ -69,10 +70,10 @@ cellsApi.ConvertChartToImage(new SDK.Request.ConvertChartToImageRequest
 
 ```
 
-- **Convertir tabla a archivo CSV**
+- **Convertir una tabla a un archivo CSV**
 
 ```C#
-# Convert the sale logs table of the Sales worksheet to csv
+# Convertir la tabla de registros de ventas de la hoja "Sales" a CSV
 result = api.ConvertTableToCsv( new SDK.Request.ConvertTableToCsvRequest
 {
     Spreadsheet = "EmployeeSalesSummary.xlsx",
@@ -85,17 +86,17 @@ result = api.ConvertTableToCsv( new SDK.Request.ConvertTableToCsvRequest
 
 ### **Conversión de archivos en la nube**
 
-También es necesario obtener el cliente Cloud Aspose Cells API.
+También es necesario obtener el cliente de la API de Aspose.Cells Cloud.
 
 ```csharp
-// Get Cells Cloud API client
+// Obtener el cliente de la API de Aspose.Cells Cloud
 CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
 ```
 
 - **Convertir Excel a PDF**
 
 ```csharp
-// Convert cloud Excel to PDF, Save to local file
+// Convertir un archivo de Excel en la nube a PDF y guardarlo localmente
 cellsApi.ExportSpreadsheetAsFormat( new SDK.Request.ExportSpreadsheetAsFormatRequest 
 { 
     name = "EmployeeSalesSummary.xlsx" ,
@@ -104,10 +105,10 @@ cellsApi.ExportSpreadsheetAsFormat( new SDK.Request.ExportSpreadsheetAsFormatReq
 } , "EmployeeSalesSummary.pdf");   
 ```
 
-- **Convertir la hoja de cálculo Excel a PDF**
+- **Convertir una hoja de cálculo de Excel en la nube a PDF**
 
 ```csharp
-// Convert cloud Excel worksheet to PDF, Save to local file
+// Convertir una hoja de cálculo de Excel en la nube a PDF y guardarla localmente
 cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
 { 
     name = "EmployeeSalesSummary.xlsx",
@@ -118,7 +119,7 @@ cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest
 ```
 
 ```csharp
-// Convert cloud Excel worksheet to PDF, Save to local file
+// Convertir una hoja de cálculo de Excel en la nube a PDF y guardarla localmente
 cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
 { 
     name = "EmployeeSalesSummary.xlsx",
@@ -128,10 +129,10 @@ cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest
 } , "EmployeeSalesSummary_Sales.pdf");   
 ```
 
-## Instalación e inicialización del SDK de nube Aspose.Cells
+## Instalación e inicialización del SDK de Aspose.Cells Cloud
 
-Instale el paquete Aspose.Cells-Cloud NuGet en su proyecto .NET, puede utilizar la consola del administrador de paquetes NuGet o el administrador de paquetes NuGet en Visual Studio.
-A continuación se explica cómo puede instalar el paquete utilizando la Consola del Administrador de paquetes:
+Instale el paquete NuGet Aspose.Cells-Cloud en su proyecto .NET, ya sea mediante la Consola del Administrador de paquetes NuGet o el Administrador de paquetes NuGet en Visual Studio.
+A continuación se muestra cómo instalar el paquete mediante la Consola del Administrador de paquetes:
 
 ```powershell
 
@@ -139,7 +140,7 @@ Install-Package Aspose.Cells-Cloud
 
 ```
 
-Crea una nueva instancia de la clase CellsApi y la inicializa con su ID y secreto de cliente. A continuación, se detalla el fragmento de código mencionado:
+Cree una nueva instancia de la clase CellsApi, inicializándola con su ID de cliente y secreto de cliente. A continuación se detallan los componentes del fragmento de código anterior:
 
 ```CSharp
 
@@ -147,20 +148,22 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ```
 
-Asegúrese de reemplazar SU_API_CLAVE, TUYA_APLICACIÓN_SID y TU_APLICACIÓN_CLAVE con su clave real API, SID de la aplicación y clave de la aplicación.
+Asegúrese de reemplazar YOUR_API_KEY, YOUR_APP_SID y YOUR_APP_KEY con su clave API real, el SID de su aplicación y la clave de su aplicación.
 
 ## **Casos de uso de conversión de formatos de archivo**
 
- Aspose Cells La nube API ofrece nivel empresarial**conversión de hojas de cálculo** Capacidades para escenarios empresariales críticos:
+La API de Aspose.Cells Cloud ofrece capacidades de **conversión de hojas de cálculo** de nivel empresarial para escenarios críticos de negocio:
 
 1. **Excel → PDF**  
- Genere informes listos para imprimir con formato conservado
+   Genere informes listos para impresión con formato preservado  
 2. **Hojas de cálculo → HTML**  
- Incrustar tablas interactivas en aplicaciones web
+   Incruste tablas interactivas en aplicaciones web  
 3. **CSV → Excel (XLSX)**  
- Transformar datos sin procesar en libros de trabajo analizables
-4. **Transcodificación de formato personalizado**  
- Convierte entre más de 20 formatos (XLS, XLSB, ODS, FODS, TSV)
-![Conversión de formatos de entrada a formatos de salida](image-1.png)
+   Transforme datos sin procesar en libros de trabajo analizables  
+4. **Transcodificación de formatos personalizados**  
+   Convierta entre más de 20 formatos (XLS, XLSB, ODS, FODS, TSV)  
+![Conversión desde formatos de entrada a formatos de salida](image-1.png)
 
-## **Conclusión: Optimice las conversiones con una sola llamada al API**
+## **Conclusión: Simplifique las conversiones con una sola llamada a la API**  
+
+---

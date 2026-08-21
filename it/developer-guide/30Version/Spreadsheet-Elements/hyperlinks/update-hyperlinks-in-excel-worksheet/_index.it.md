@@ -1,126 +1,205 @@
-﻿---
-title: Aggiornamento
-type: docs
-url: /it/hyperlinks/update/
-aliases: [/update-hyperlinks-in-excel-worksheet/]
-keywords: Update a hyperlink in an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'aggiornamento di un collegamento ipertestuale in un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 30
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Aggiornamento
 ---
-Questo REST API indica `update worksheet hyperlink` tramite indice su un foglio di lavoro Excel.
+title: "Aggiornare un collegamento ipertestuale in un foglio di calcolo Excel – Guida all’API Aspose.Cells Cloud"
+description: "Scopri come aggiornare un collegamento ipertestuale in un foglio di calcolo Excel utilizzando l’API REST di Aspose.Cells Cloud (v3.0). Include endpoint, parametri, schema del corpo della richiesta, esempio cURL, frammenti di codice SDK, gestione degli errori, limitazione della frequenza e prerequisiti."
+keywords:
+  - "Aspose.Cells"
+  - "aggiornamento collegamento ipertestuale"
+  - "Excel API"
+  - "REST API"
+  - "foglio di calcolo cloud"
+  - "v3.0"
+weight: 30
+aliases:
+  - /hyperlinks/update/
+  - /update-hyperlinks-in-excel-worksheet/
+---
 
-## RSET API
+# Aggiornare un collegamento ipertestuale in un foglio di calcolo Excel  
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
- 
+**Versione API:** v3.0  
+
+L’operazione **PostWorksheetHyperlink** aggiorna un collegamento ipertestuale esistente in un foglio di calcolo identificato dal suo indice in base zero.
+
+---
+
+## Indice
+1. [Prerequisiti](#prerequisiti)  
+2. [Limitazione della frequenza](#limitazione-della-frequenza)  
+3. [Endpoint](#endpoint)  
+4. [Parametri](#parametri)  
+   - [Parametri di percorso](#parametri-di-percorso)  
+   - [Parametri di query](#parametri-di-query)  
+   - [Schema del corpo della richiesta](#schema-del-corpo-della-richiesta)  
+5. [Risposte](#risposte)  
+   - [Risposta di successo](#risposta-di-successo)  
+   - [Risposte di errore](#risposte-di-errore)  
+6. [Esempio cURL](#esempio-curl)  
+7. [Frammenti di codice SDK](#frammenti-di-codice-sdk)  
+8. [Vedi anche](#vedi-anche)  
+
+---
+
+## Prerequisiti <a name="prerequisiti"></a>
+
+| Requisito | Descrizione |
+|-----------|-------------|
+| **Autenticazione** | Autenticazione basata su token JWT. Ottieni un token come descritto nella [Guida all’autenticazione](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). |
+| **Archiviazione** | Il file di lavoro deve essere memorizzato in un’archiviazione supportata da Aspose Cloud (quella predefinita è **Default**). |
+| **Autorizzazioni** | Il token JWT deve avere i permessi di lettura e scrittura sul file di lavoro di destinazione. |
+| **Intestazioni** | `Content-Type: application/json` e `Accept: application/json` sono obbligatorie per tutte le richieste. |
+
+---
+
+## Limitazione della frequenza <a name="limitazione-della-frequenza"></a>
+
+Aspose.Cells Cloud impone un **massimo di 60 richieste al minuto per ogni token di accesso**. Superare questo limite restituisce l’errore HTTP **429 Too Many Requests (Troppe richieste)**. Implementa un ritardo esponenziale o rispetta l’intestazione `Retry-After` quando si verifica il throttling.
+
+---
+
+## Endpoint <a name="endpoint"></a>
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
 ```
 
-I parametri della richiesta sono:
+*Aggiorna il collegamento ipertestuale identificato da `hyperlinkIndex` nel foglio `sheetName` del file `name`.*
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome del documento.|
-| Nome foglio| corda| sentiero| Nome del foglio di lavoro.|
-| hyperlinkIndex| intero| sentiero| L'indice del collegamento ipertestuale.|
-| collegamento ipertestuale|| corpo| Oggetto collegamento ipertestuale|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+---
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/PostWorksheetHyperlink) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+## Parametri <a name="parametri"></a>
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+### Parametri di percorso <a name="parametri-di-percorso"></a>
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Nome            | Tipo   | Obbligatorio | Descrizione |
+|-----------------|--------|--------------|-------------|
+| `name`          | stringa | ✅ | Nome del file Excel (inclusa l’estensione). |
+| `sheetName`     | stringa | ✅ | Nome del foglio di calcolo contenente il collegamento ipertestuale. |
+| `hyperlinkIndex`| intero | ✅ | Indice in base zero del collegamento ipertestuale da aggiornare. |
 
-{{< tab tabNum="11" >}}
+### Parametri di query <a name="parametri-di-query"></a>
 
-```java
+| Nome        | Tipo   | Obbligatorio | Descrizione |
+|-------------|--------|--------------|-------------|
+| `folder`    | stringa | ❌ | Percorso della cartella nell’archiviazione dove risiede il file di lavoro. |
+| `storageName`| stringa | ❌ | Nome del servizio di archiviazione (es. `Default`). |
 
-curl -v  "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks/1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"Hyperlink\": { \"Address\": \"https://www.msnbc.com/\", \"Area\": { \"EndColumn\": 6, \"EndRow\": 1, \"StartColumn\": 6, \"StartRow\": 1 }, \"ScreenTip\": null, \"TextToDisplay\": \"https://www.msnbc.com/\", \"link\": { \"Href\": \"/test.xlsx/worksheets/Sheet1/hyperlinks/4\", \"Rel\": \"self\", \"Title\": null, \"Type\": null } }, \"Code\": 200, \"Status\": \"OK\"}"
+### Schema del corpo della richiesta <a name="schema-del-corpo-della-richiesta"></a>
 
-```
+Il corpo della richiesta deve contenere un oggetto **`hyperlink`**. Devono essere forniti solo i campi che si desidera modificare; i campi facoltativi omessi mantengono i loro valori attuali.
 
-{{< /tab >}}
+| Campo         | Tipo   | Obbligatorio | Descrizione |
+|---------------|--------|--------------|-------------|
+| `Address`     | stringa | ✅ | URL di destinazione del collegamento ipertestuale. |
+| `Area`        | oggetto | ✅ | Intervallo di celle in cui è posizionato il collegamento ipertestuale. Deve contenere `StartRow`, `StartColumn`, `EndRow`, `EndColumn` (tutti interi, in base zero). |
+| `ScreenTip`   | stringa | ❌ | Suggerimento visualizzato al passaggio del mouse. |
+| `TextToDisplay`| stringa | ❌ | Testo visualizzato all’interno della cella. |
+| `link`        | oggetto | ❌ | Link ipertestuali (`Href`, `Rel`, `Title`, `Type`). Generalmente omesso nei payload di richiesta. |
 
-{{< tab tabNum="12" >}}
+**Definizione dell’oggetto `Area`**
 
-```java
+| Sottocampo   | Tipo   | Obbligatorio | Descrizione |
+|--------------|--------|--------------|-------------|
+| `StartRow`   | intero | ✅ | Indice della riga iniziale in base zero. |
+| `StartColumn`| intero | ✅ | Indice della colonna iniziale in base zero. |
+| `EndRow`     | intero | ✅ | Indice della riga finale in base zero. |
+| `EndColumn`  | intero | ✅ | Indice della colonna finale in base zero. |
 
+---
+
+## Risposte <a name="risposte"></a>
+
+### Risposta di successo <a name="risposta-di-successo"></a>
+
+| Campo | Tipo   | Descrizione |
+|-------|--------|-------------|
+| `Code`| intero | Codice di stato HTTP (200 per successo). |
+| `Status`| stringa | Stato in forma testuale (`OK`). |
+| `Hyperlink`| oggetto (opzionale) | L’oggetto collegamento ipertestuale aggiornato, restituito quando viene richiesto l’oggetto secondario `link`. |
+
+**Esempio JSON**
+
+```json
 {
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+### Risposte di errore <a name="risposte-di-errore"></a>
 
-{{< /tabs >}}
+| Codice HTTP | Motivo | Corpo di esempio |
+|-------------|--------|-----------------|
+| **400** | Richiesta non valida – parametri mancanti o non validi. | `{ "Code":"400", "Message":"Valore di parametro non valido." }` |
+| **401** | Non autorizzato – token JWT mancante o non valido. | `{ "Code":"401", "Message":"Token di accesso mancante o non valido." }` |
+| **404** | Non trovato – il file di lavoro, il foglio di calcolo o il collegamento ipertestuale non esistono. | `{ "Code":"404", "Message":"File non trovato." }` |
+| **429** | Troppe richieste – limite di frequenza superato. | `{ "Code":"429", "Message":"Limite di richieste superato. Riprovare più tardi." }` |
+| **500** | Errore interno del server – errore imprevisto nel server. | `{ "Code":"500", "Message":"Si è verificato un errore imprevisto." }` |
 
-## Famiglia Cloud SDK
+---
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+## Esempio cURL <a name="esempio-curl"></a>
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+```bash
+curl -L -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks/1" \
+  -H "Authorization: Bearer <YOUR_JWT_TOKEN>" \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -d '{
+        "hyperlink": {
+          "Address": "https://www.msnbc.com/",
+          "Area": {
+            "StartRow": 1,
+            "StartColumn": 6,
+            "EndRow": 1,
+            "EndColumn": 6
+          },
+          "ScreenTip": "Homepage MSNBC",
+          "TextToDisplay": "MSNBC"
+        },
+        "folder": "samples",
+        "storageName": "Default"
+      }'
+```
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+**Risposta**
 
-{{< tab tabNum="1" >}}
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostWorksheetHyperlink.cs" >}}
+*Suggerimento:* Salva il payload JSON in un file (es. `payload.json`) e fai riferimento ad esso con `--data @payload.json` per una copia-incolla più pulita.
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="2" >}}
+## Frammenti di codice SDK <a name="frammenti-di-codice-sdk"></a>
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostWorksheetHyperlink.java" >}}
+I seguenti frammenti mostrano come chiamare **PostWorksheetHyperlink** utilizzando gli SDK ufficiali di Aspose.Cells Cloud. Sostituisci i valori segnaposto (`<YOUR_JWT_TOKEN>`, `<FILE_NAME>`, ecc.) con dati reali.
 
-{{< /tab >}}
+| Linguaggio | Esempio |
+|-----------|---------|
+| **C#** | ```csharp\nvar api = new CellsApi("<client_id>", "<client_secret>");\nvar hyperlink = new Hyperlink {\n    Address = \"https://www.msnbc.com/\",\n    Area = new LinkArea { StartRow = 1, StartColumn = 6, EndRow = 1, EndColumn = 6 },\n    ScreenTip = \"Homepage MSNBC\",\n    TextToDisplay = \"MSNBC\"\n};\nvar response = api.PostWorksheetHyperlink(\"test.xlsx\", \"Sheet1\", 1, hyperlink, folder: \"samples\");\n``` |
+| **Java** | ```java\nCellsApi api = new CellsApi(clientId, clientSecret);\nHyperlink hyperlink = new Hyperlink();\nhyperlink.setAddress(\"https://www.msnbc.com/\");\nLinkArea area = new LinkArea();\narea.setStartRow(1);\narea.setStartColumn(6);\narea.setEndRow(1);\narea.setEndColumn(6);\nhyperlink.setArea(area);\nhyperlink.setScreenTip(\"Homepage MSNBC\");\nhyperlink.setTextToDisplay(\"MSNBC\");\nCellsCloudResponse resp = api.postWorksheetHyperlink(\"test.xlsx\", \"Sheet1\", 1, hyperlink, \"samples\", null);\n``` |
+| **Python** | ```python\nimport asposecellscloud\nfrom asposecellscloud.apis.cells_api import CellsApi\napi = CellsApi(client_id, client_secret)\nhyperlink = asposecellscloud.models.Hyperlink(\n    address=\"https://www.msnbc.com/\",\n    area=asposecellscloud.models.LinkArea(start_row=1, start_column=6, end_row=1, end_column=6),\n    screen_tip=\"Homepage MSNBC\",\n    text_to_display=\"MSNBC\"\n)\nresponse = api.post_worksheet_hyperlink(\"test.xlsx\", \"Sheet1\", 1, hyperlink, folder=\"samples\")\n``` |
+| **Node.js** | ```javascript\nconst { CellsApi, Hyperlink, LinkArea } = require('asposecellscloud');\nconst api = new CellsApi(clientId, clientSecret);\nlet hyperlink = new Hyperlink({\n  address: 'https://www.msnbc.com/',\n  area: new LinkArea({ startRow: 1, startColumn: 6, endRow: 1, endColumn: 6 }),\n  screenTip: 'Homepage MSNBC',\n  textToDisplay: 'MSNBC'\n});\napi.postWorksheetHyperlink('test.xlsx', 'Sheet1', 1, hyperlink, { folder: 'samples' })\n  .then(resp => console.log(resp));\n``` |
+| **Go** | ```go\nimport (\n    \"github.com/asposecellscloud/aspose-cells-cloud-go/v3\"\n    \"github.com/asposecellscloud/aspose-cells-cloud-go/v3/api\"\n)\nclient := api.NewCellsApiClient(clientId, clientSecret)\narea := asposecellscloud.LinkArea{StartRow: 1, StartColumn: 6, EndRow: 1, EndColumn: 6}\nhyperlink := asposecellscloud.Hyperlink{Address: \"https://www.msnbc.com/\", Area: &area, ScreenTip: \"Homepage MSNBC\", TextToDisplay: \"MSNBC\"}\nresp, _ := client.PostWorksheetHyperlink(\"test.xlsx\", \"Sheet1\", 1, hyperlink, \"samples\", \"\")\nfmt.Println(resp)\n``` |
+| **PHP** | ```php\n<?php\nrequire_once('vendor/autoload.php');\nuse Aspose\Cells\CellsApi;\n$api = new CellsApi($clientId, $clientSecret);\n$hyperlink = new \\Aspose\\Cells\\Model\\Hyperlink();\n$hyperlink->setAddress('https://www.msnbc.com/');\n$area = new \\Aspose\\Cells\\Model\\LinkArea();\n$area->setStartRow(1);\n$area->setStartColumn(6);\n$area->setEndRow(1);\n$area->setEndColumn(6);\n$hyperlink->setArea($area);\n$hyperlink->setScreenTip('Homepage MSNBC');\n$hyperlink->setTextToDisplay('MSNBC');\n$response = $api->postWorksheetHyperlink('test.xlsx', 'Sheet1', 1, $hyperlink, 'samples');\nprint_r($response);\n?>\n``` |
+| **Ruby** | ```ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::CellsApi.new(client_id: CLIENT_ID, client_secret: CLIENT_SECRET)\nhyperlink = AsposeCellsCloud::Hyperlink.new(\n  address: 'https://www.msnbc.com/',\n  area: AsposeCellsCloud::LinkArea.new(start_row: 1, start_column: 6, end_row: 1, end_column: 6),\n  screen_tip: 'Homepage MSNBC',\n  text_to_display: 'MSNBC'\n)\nresult = api.post_worksheet_hyperlink('test.xlsx', 'Sheet1', 1, hyperlink, folder: 'samples')\nputs result\n``` |
+| **Perl** | ```perl\nuse AsposeCellsCloud::CellsApi;\nmy $api = AsposeCellsCloud::CellsApi->new(client_id => $client_id, client_secret => $client_secret);\nmy $area = AsposeCellsCloud::LinkArea->new(startRow => 1, startColumn => 6, endRow => 1, endColumn => 6);\nmy $hyperlink = AsposeCellsCloud::Hyperlink->new(address => 'https://www.msnbc.com/', area => $area, screenTip => 'Homepage MSNBC', textToDisplay => 'MSNBC');\nmy $resp = $api->post_worksheet_hyperlink(name=>'test.xlsx', sheetName=>'Sheet1', hyperlinkIndex=>1, hyperlink=>$hyperlink, folder=>'samples');\nprint $resp->{Code}, \" \", $resp->{Status}, \"\\n\";\n``` |
 
-{{< tab tabNum="3" >}}
+*Tutti gli SDK sono open-source e sono disponibili nel [repository GitHub di Aspose.Cells Cloud](https://github.com/aspose-cells-cloud).*
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostWorksheetHyperlink.php" >}}
+---
 
-{{< /tab >}}
+## Vedi anche <a name="vedi-also"></a>
 
-{{< tab tabNum="4" >}}
+- **Autenticazione** – [Introduzione ai token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
+- **Operazioni su archiviazione** – [Caricamento di un file](https://apireference.aspose.cloud/cells/#/Storage/UploadFile)  
+- **Altre operazioni sui collegamenti ipertestuali** – [Aggiungere un collegamento ipertestuale](https://apireference.aspose.cloud/cells/#/Hyperlinks/PostWorksheetHyperlink) | [Eliminare un collegamento ipertestuale](https://apireference.aspose.cloud/cells/#/Hyperlinks/DeleteWorksheetHyperlink)  
+- **Specifiche OpenAPI** – Definizione completa dell’endpoint: <https://apireference.aspose.cloud/cells/#/Hyperlinks/PostWorksheetHyperlink>  
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostWorksheetHyperlink.rb" >}}
+---
 
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostWorksheetHyperlink.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostWorksheetHyperlink.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostWorksheetHyperlink.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostWorksheetHyperlink.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+*Documento aggiornato l’ultima volta il: 2026‑07‑30*

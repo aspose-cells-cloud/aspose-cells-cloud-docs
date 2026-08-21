@@ -1,76 +1,111 @@
-﻿---
-title: Excel çalışma sayfasındaki liste nesnesi verilerini sıralayın
-second_title: Documen
-linktitle: Sor
-type: docs
-url: /tr/list-objects/sort-data/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/sort-data/]
-keywords: Sort a list object(table) in an Excel worksheet
-description: Aspose.Cells Cloud REST API, bir çalışma sayfasındaki liste nesnesini (tabloyu) sıralamayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 40
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasında liste nesnesi verilerini sıralayın
 ---
-Bu REST API, Excel çalışma sayfasında `sort table's data`'i gösterir.
+title: "Excel Çalışma Sayfasındaki ListObject Verilerini Sırala"
+second_title: "Belge"
+linktitle: "Sırala"
+type: docs
+url: /list-objects/sort-data/
+aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
+keywords: "Aspose.Cells Cloud, Excel, ListObject, Veri Sıralama, REST API, Çalışma Sayfası"
+description: "Aspose.Cells Cloud REST API (v3.0) kullanarak Excel çalışma sayfasındaki ListObject (tablo) verilerini nasıl sıralayacağınızı öğrenin. Uç nokta, parametreler, örnek cURL isteği ve SDK örneklerini içerir."
+weight: 40
+ArticleTitle: "Excel Çalışma Sayfasındaki ListObject Verilerini Sırala – Aspose.Cells Cloud API"
+---
 
-## RSET API
+**Ön Gereksinimler**  
+Bu API’yi çağırmak için geçerli bir Aspose Cloud JWT erişim belirteciniz olmalı ve çalışma kitabının Aspose Cloud deposuna yüklenmiş olması gerekir. Her istekte `Authorization: Bearer <jwt token>` başlığını ekleyin.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/sort
- 
+Bu REST API, Excel çalışma sayfasındaki bir tablonun verilerini sıralar.  
+Bu işlemi kullanmak için çalışma kitabının adını, çalışma sayfasının adını ve hedef ListObject’in indeksini sağlayın. Ayrıca sıralama kriterlerini tanımlayan bir `dataSorter` JSON gövdesi de ekleyin.
+
+## PostWorksheetListObjectSortTable API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/sort
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| listeNesneİndeksi| tam sayı| yol||
-| veriSorter|| vücut||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulamayı</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSortTable) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **İstek Parametreleri**
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı   | Tür      | Yol/Sorgu Dizesi/HTTP Gövdesi | Açıklama                                                                                                       |
+|-----------------|----------|------------------------------|----------------------------------------------------------------------------------------------------------------|
+| name            | string   | path                         | Aspose Cloud deposunda saklanan Excel dosyasının adı.                                                         |
+| sheetName       | string   | path                         | ListObject’i içeren çalışma sayfasının adı.                                                                    |
+| listObjectIndex | integer  | path                         | Çalışma sayfasındaki ListObject’in (tablonun) sıfır tabanlı indeksi.                                          |
+| dataSorter      | object   | body                         | Sıralama seçeneklerini belirten JSON nesnesi (örn. `CaseSensitive`, `HasHeaders`, `KeyList`, `SortLeftToRight`). |
+| folder          | string   | query                        | Excel dosyasının bulunduğu depodaki klasör yolu.                                                               |
+| storageName     | string   | query                        | Aspose Cloud deposunun adı.                                                                                    |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Notlar**  
+İstek gövdesi, `dataSorter` şemasıyla eşleşen geçerli bir JSON nesnesi olmalıdır. Sıralama işlemini çağırmadan önce çalışma kitabının, çalışma sayfasının ve ListObject’in mevcut olduğundan emin olun.
+
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSortTable), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’ye nasıl istek yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet7/listobjects/1/sort" \
--X POST \
--d "{ \"CaseSensitive\": true, \"HasHeaders\": true, \"KeyList\": [ { \"Key\": 1, \"SortOrder\": \"Ascending\", \"CustomList\": \"string\" } ], \"SortLeftToRight\": true}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -d '{
+        "CaseSensitive": true,
+        "HasHeaders": true,
+        "KeyList": [
+          {
+            "Key": 1,
+            "SortOrder": "Ascending",
+            "CustomList": "string"
+          }
+        ],
+        "SortLeftToRight": true
+      }' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**HTTP Durum Kodları**
+
+| Durum Kodu | Açıklama                                        |
+|------------|-------------------------------------------------|
+| 200        | OK – sıralama işlemi başarıyla tamamlandı.     |
+| 400        | Bad Request – geçersiz parametreler.           |
+| 401        | Unauthorized – kimlik doğrulama başarısız oldu.|
+| 404        | Not Found – çalışma kitabını, çalışma sayfasını veya ListObject’i bulamadı. |
+| 500        | Internal Server Error – sunucu tarafında sorun.|
+
+**Yanıt Parametreleri**
+
+| Parametre | Tür     | Açıklama                                   |
+|-----------|---------|---------------------------------------------|
+| Code      | integer | API tarafından döndürülen HTTP durum kodu.  |
+| Status    | string  | Sonucun metinsel açıklaması (örn. "OK").    |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+## Bulut SDK Geliştirme Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, düşük seviye detayları yönetir ve size proje görevlerinize odaklanma imkanı sunar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +158,6 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+[ListObjects Genel Bakış’a Geri Dön](/list-objects/)
+---

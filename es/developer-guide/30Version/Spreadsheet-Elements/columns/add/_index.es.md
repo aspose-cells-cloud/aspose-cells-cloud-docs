@@ -1,76 +1,127 @@
-﻿---
-title: Agregar una columna vacía en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Anuncio
-type: docs
-url: /es/columns/add/
-aliases: [/add-an-empty-column-in-an-excel-worksheet/,/add-an-empty-column-in-a-worksheet/]
-keywords: Add column on an Excel workshee
-description: Aspose.Cells Cloud REST API permite agregar columnas a una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Agregar una columna vacía en una hoja de cálculo Excel
 ---
-Este REST API indica insertar columnas en la hoja de cálculo.
+title: "Agregar una columna vacía a una hoja de cálculo de Excel - API de Aspose.Cells Cloud"
+second_title: "Documento"
+linktitle: "Agregar"
+type: docs
+url: /columns/add/
+aliases:
+  - /add-an-empty-column-in-an-excel-worksheet/
+  - /add-an-empty-column-in-a-worksheet/
+keywords: "agregar, columna, Excel, API, Aspose.Cells, Cloud, REST, insertar"
+description: "Aprenda cómo insertar una nueva columna en una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. Incluye la sintaxis de la solicitud, un ejemplo con cURL y ejemplos de código con SDK."
+weight: 20
+ArticleTitle: "Agregar una columna vacía a una hoja de cálculo de Excel mediante la API de Aspose.Cells Cloud"
+---
 
-## RSET API
+Esta API REST inserta una o más columnas en una hoja de cálculo.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}?totalColumns=1
- 
+**Prerrequisitos**  
+Antes de llamar a este punto final, asegúrese de haber completado los siguientes pasos:
+
+- Obtenga un token de acceso válido de OAuth 2.0 e inclúyalo en el encabezado `Authorization`.  
+- Almacene el libro de trabajo objetivo en el almacenamiento seleccionado (predeterminado = "Default") o especifique los parámetros adecuados `folder` y `storageName`.  
+- Verifique que el nombre de la hoja de cálculo proporcionado en `sheetName` exista en el libro de trabajo.
+
+## API PutInsertWorksheetColumns
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}?totalColumns=1
 ```
 
-Los parámetros de la solicitud son:
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| El nombre del libro de trabajo.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| índice de columna| entero| camino| El índice de la columna.|
-| columnas| entero| consulta| Las columnas.|
-| actualizarReferencia| booleano| consulta| Verdadero|
-| carpeta| cadena| consulta| La carpeta del libro de trabajo.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+### Parámetros de solicitud
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+| Nombre del parámetro | Tipo    | Ubicación | Descripción                                                           |
+|----------------------|---------|-----------|-----------------------------------------------------------------------|
+| **name**             | string  | path      | Nombre del archivo del libro de trabajo.                             |
+| **sheetName**        | string  | path      | Nombre de la hoja de cálculo.                                        |
+| **columnIndex**      | integer | path      | Índice de base cero de la columna donde comienza la inserción.       |
+| **totalColumns**     | integer | query     | Número de columnas a insertar.                                       |
+| **updateReference**  | boolean | query     | Si es **true**, se actualizan las referencias de celdas para reflejar la inserción. |
+| **folder**           | string  | query     | Ruta a la carpeta que contiene el libro de trabajo.                  |
+| **storageName**      | string  | query     | Nombre del servicio de almacenamiento.                               |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Notas**
+
+- El valor de `columnIndex` debe estar entre 0 y el número actual de columnas en la hoja de cálculo. Insertar más allá del rango existente expandirá automáticamente la hoja.  
+- Insertar varias columnas (`totalColumns` > 1) desplaza las columnas existentes hacia la derecha.  
+- El indicador `updateReference` tiene como valor predeterminado `false`; configúrelo como `true` para actualizar fórmulas y rangos con nombre.
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns) define una interfaz de programación públicamente accesible y permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para llamar a los servicios web de Aspose.Cells. El siguiente ejemplo muestra una solicitud completa, incluida la autenticación y el parámetro de ruta correcto.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns?startcolumn=1&totalColumns=1&updateReference=true" -H "accept: application/json"
-
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/1?totalColumns=1&updateReference=true" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Códigos de respuesta**
+
+| Código | Descripción                                          |
+|--------|------------------------------------------------------|
+| 200    | Columna(s) insertada(s) correctamente.              |
+| 400    | Solicitud incorrecta: parámetros faltantes o no válidos. |
+| 401    | No autorizado: token inválido o faltante.           |
+| 404    | Libro de trabajo o hoja de cálculo no encontrado.   |
+| 500    | Error interno del servidor.                         |
+
+**Ejemplos de respuestas de error**
+
+```json
+// 400 Bad Request – parámetros faltantes o no válidos
+{
+  "Code": 400,
+  "Message": "Parámetro no válido: totalColumns debe ser un entero positivo."
+}
+
+// 401 Unauthorized – token inválido o faltante
+{
+  "Code": 401,
+  "Message": "La autenticación falló. El token de acceso falta o no es válido."
+}
+
+// 404 Not Found – el libro de trabajo o la hoja de cálculo no existe
+{
+  "Code": 404,
+  "Message": "Libro de trabajo 'test.xlsx' no encontrado."
+}
+
+// 500 Internal Server Error
+{
+  "Code": 500,
+  "Message": "Se produjo un error inesperado en el servidor."
+}
+```
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de desarrollar. Un SDK maneja los detalles de bajo nivel para que pueda centrarse en la lógica de su proyecto. Consulte el <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">repositorio de GitHub</a> para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

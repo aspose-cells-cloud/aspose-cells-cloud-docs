@@ -1,63 +1,71 @@
-﻿---
-title: Excel çalışma sayfasındaki arka planı silin
-second_title: Documen
-linktitle: Sil
-type: docs
-url: /tr/worksheets/background/delete/
-aliases: [/delete-background-or-watermark-of-excel-worksheet/]
-keywords: Delete background on an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki arka planın silinmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 210
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki arka planı silme
 ---
-Bu REST API, `delete worksheet background image`'i gösterir.
+title: "Excel çalışma sayfasından arka planı silme"
+second_title: "Belge"
+linktitle: "Sil"
+type: docs
+url: /worksheets/background/delete/
+aliases: [/delete-background-or-watermark-of-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, Çalışma sayfası arka planını sil, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasının arka plan resmini silin. SDK’lar C#, Java, PHP, Ruby, Node.js, Python, Perl ve Go dilleri için mevcuttur."
+weight: 210
+ArticleTitle: "Aspose.Cells Cloud API kullanarak Excel çalışma sayfasından arka planı silme"
+---
 
-## RSET API
+Bu REST API, bir çalışma sayfasının arka plan resmini siler.
+
+**Önkoşullar:** Çalışma kitabının Aspose Cloud deposunda saklanmış olması ve kimlik doğrulama için geçerli bir JWT erişim belirteçine sahip olmanız gerekir.
+
+## REST API
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
 ```
 
-İstek parametreleri şunlardır:
+### **İstek parametreleri**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı | Tür   | Konum | Açıklama                                         |
+|---------------|-------|--------|--------------------------------------------------|
+| name          | string | path   | Excel dosyasının adı.                            |
+| sheetName     | string | path   | Arka planı silinecek çalışma sayfasının adı.     |
+| folder        | string | query  | Dosyanın bulunduğu depodaki klasör.              |
+| storageName   | string | query  | Depo adı (varsayılan depo değilse).              |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Tüm istekler geçerli bir JWT belirteci gerektirir. Belirteci, Kimlik Doğrulama kılavuzunda açıklanan OAuth2 belirteç uç noktası üzerinden edinin.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/WorkSheetBackground_Sample_Test_Book.xls/worksheets/Sheet1/background" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/WorkSheetBackground_Sample_Test_Book.xls/worksheets/Sheet1/background" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                         |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | Tamam (OK)                  | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Geçersiz İstek (Bad Request)| Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Yetkisiz (Unauthorized)     | Geçersiz veya eksik JWT belirteci.              |
+| 413 | İstek Gövdesi Çok Büyük     | Yüklenecek dosya boyut sınırlarını aşıyor.       |
+| 500 | Sunucu İç Hatası            | Beklenmeyen sunucu hatası.                       |
 
 {{< /tab >}}
 
@@ -65,9 +73,9 @@ curl -v "http://api.aspose.com/v3.0/cells/WorkSheetBackground_Sample_Test_Book.x
 
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, düşük seviye detayları yöneterek projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanılarak Aspose.Cells web hizmetlerine nasıl istek atılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

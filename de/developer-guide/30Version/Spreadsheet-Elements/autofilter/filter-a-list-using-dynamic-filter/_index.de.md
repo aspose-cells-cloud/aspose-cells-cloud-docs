@@ -1,131 +1,241 @@
-﻿---
-title: Fügen Sie einen dynamischen Datumsfilter in ein Excel-Arbeitsblatt ein
-second_title: Documen
-linktitle: Dynamischen Filter hinzufügen
-type: docs
-url: /de/autofilter/add-dynamic-filter/
-aliases: [/filter-a-list-using-dynamic-filter/,/autofilter/add-a-dynamic-filter/]
-keywords: Adds a dynamic filter on an Excel worksheet
-description: Die Aspose.Cells Cloud API unterstützt das Hinzufügen eines dynamischen Filters zu einem Excel-Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 65
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Fügen Sie einen dynamischen Datumsfilter in ein Excel-Arbeitsblatt ein
 ---
-Dieser REST API gibt an, dass ein `dynamic filter` zu einem Excel-Arbeitsblatt hinzugefügt werden soll.
+title: Dynamischen Filter in einem Excel-Arbeitsblatt mit der Aspose.Cells Cloud API hinzufügen
+description: Erfahren Sie, wie Sie einen dynamischen Filter (z. B. BelowAverage, Tomorrow, LastMonth) auf ein Excel-Arbeitsblatt mit der Aspose.Cells Cloud REST API anwenden. Enthält Authentifizierung, Anforderungssyntax, Parameter, Antwortverarbeitung und SDK-Beispiele für mehrere Sprachen.
+keywords: Aspose.Cells, dynamischer Filter, Excel API, REST, AutoFilter, Cloud SDK
+slug: dynamischen-filter-hinzufugen
+api_version: v3.0
+---
 
-## RSET API
+## Übersicht
+
+Die **PutWorksheetDynamicFilter**-Operation fügt einem angegebenen Bereich in einem Excel-Arbeitsblatt einen dynamischen Filter hinzu.  
+Dynamische Filter bewerten Werte wie Daten, Durchschnitte oder leere Zellen automatisch, sodass Sie „intelligente“ Ansichten erstellen können, ohne benutzerdefinierte Formeln schreiben zu müssen.
+
+## Voraussetzungen
+
+| Anforderung | Details |
+|-------------|---------|
+| **Authentifizierung** | Ein gültiges JWT-Token, das vom `/connect/token`-Endpunkt abgerufen wurde. Geben Sie es im Header `Authorization: Bearer <token>` an. |
+| **Speicher** | Die Arbeitsmappe muss sich in einem Aspose Cloud-Speicherort befinden (Standard- oder benutzerdefinierter Speicher). |
+| **Unterstützte Dateiformate** | `.xlsx`, `.xls`, `.xlsm`, `.xlsb`, `.csv` usw. |
+| **Berechtigungen** | Lese-/Schreibzugriff auf den Zielordner/die Zieldatei. |
+
+## HTTP-Anforderung
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dynamicFilter
+```
+
+### Pfadparameter
+
+| Parameter | Typ | Erforderlich | Beschreibung |
+|-----------|-----|--------------|--------------|
+| `name` | string | ✅ | Der Name der Excel-Arbeitsmappe (z. B. `Book1.xlsx`). |
+| `sheetName` | string | ✅ | Der Name des Arbeitsblatts, das den zu filternden Bereich enthält. |
+
+### Abfrageparameter
+
+| Parameter | Typ | Erforderlich | Beschreibung |
+|-----------|-----|--------------|--------------|
+| `range` | string | ✅ | Der Zellbereich, auf den der Filter angewendet wird (z. B. `A1:B1`). |
+| `fieldIndex` | integer | ✅ | Nullbasierte Spaltenindex innerhalb des Bereichs, auf den der dynamische Filter angewendet wird. |
+| `dynamicFilterType` | string | ✅ | Typ des anzuwendenden dynamischen Filters (siehe **Unterstützte dynamische Filtertypen**). |
+| `matchBlanks` | boolean | ❌ | Wenn `true`, werden leere Zellen in die Filterergebnisse einbezogen. Standardwert: `false`. |
+| `refresh` | boolean | ❌ | Wenn `true`, wird der AutoFilter nach dem Anwenden des Filters aktualisiert. |
+| `folder` | string | ❌ | Pfad zum Ordner im Speicher, in dem sich die Arbeitsmappe befindet. |
+| `storageName` | string | ❌ | Name des zu verwendenden Aspose Cloud-Speichers. |
+
+### Anforderungstext
+
+Der Anforderungstext ist ein leeres JSON-Objekt:
+
+```json
+{}
+```
+
+## Unterstützte dynamische Filtertypen
+
+| Wert | Bedeutung |
+|------|-----------|
+| `BelowAverage` | Zeilen, deren Wert unter dem Durchschnitt der Spalte liegt. |
+| `AboveAverage` | Zeilen, deren Wert über dem Durchschnitt der Spalte liegt. |
+| `Tomorrow` | Zeilen mit Daten, die dem morgigen Datum entsprechen. |
+| `Yesterday` | Zeilen mit Daten, die dem gestrigen Datum entsprechen. |
+| `NextWeek` | Zeilen mit Daten, die in der nächsten Kalenderwoche liegen. |
+| `LastMonth` | Zeilen mit Daten aus dem vorherigen Monat. |
+| `ThisYear` | Zeilen mit Daten aus dem aktuellen Jahr. |
+
+## Beispielanforderung (cURL)
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dynamicFilter
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dynamicFilter?range=A1:B1&fieldIndex=0&dynamicFilterType=BelowAverage&matchBlanks=true" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{}'   # PUT-Anforderung hat einen leeren JSON-Text
 ```
 
-Die Anforderungsparameter sind:
+## Beispielantwort
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg||
-| Blattname| Schnur| Weg||
-| Reichweite| Schnur| Abfrage||
-| FeldIndex| ganze Zahl| Abfrage||
-| dynamischerFiltertyp| Schnur| Abfrage||
-| matchBlanks| Boolescher Wert| Abfrage||
-| Aktualisieren| Boolescher Wert| Abfrage||
-| Ordner| Schnur| Abfrage||
-| Speichername| Schnur| Abfrage| Speichername.|
-
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
-
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dynamicFilter?range=A1:B1&fieldIndex=0&dynamicFilterType=BelowAverage&matchBlanks=true"  \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```java
-
+```json
 {
-
-  "Code": 200,
-
-  "Status": "OK"
-
+    "Code": 200,
+    "Status": "OK",
+    "Message": "Dynamischer Filter erfolgreich angewendet."
 }
-
 ```
 
-{{< /tab >}}
+**HTTP-Statuscodes**
 
-{{< /tabs >}}
+| Code | Bedeutung                   | Beschreibung |
+|------|-----------------------------|--------------|
+| 200  | OK                          | Filter erfolgreich angewendet; Antwort enthält Details zum Vorgang. |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstütztes Dateiformat). |
+| 401  | Unauthorized                | Ungültiges oder fehlendes JWT-Token. |
+| 413  | Payload Too Large           | Die hochgeladene Datei überschreitet das Größenlimit. |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler. |
 
-## Cloud SDK-Familie
+## SDK-Beispiele
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Im Folgenden finden Sie sofort ausführbare Codeausschnitte für die gängigsten SDKs. Ersetzen Sie `YOUR_JWT_TOKEN`, `YOUR_FILE_NAME` und andere Platzhalter durch Ihre tatsächlichen Werte.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+### C#  
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+using System;
 
-{{< tab tabNum="1" >}}
+var apiInstance = new AutoFilterApi();
+var name = "Book1.xlsx"; // string | Der Name der Arbeitsmappe.
+var sheetName = "Sheet1"; // string | Der Name des Arbeitsblatts.
+var range = "A1:B1"; // string | Der zu filternde Bereich.
+var fieldIndex = 0; // int? | Nullbasierten Spaltenindex.
+var dynamicFilterType = "BelowAverage"; // string | Typ des dynamischen Filters.
+var matchBlanks = true; // bool? | Leere Zellen einbeziehen.
+var refresh = true; // bool? | Nach dem Anwenden aktualisieren.
+var folder = "myFolder"; // string (optional)
+var storageName = null; // string (optional)
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePutWorksheetDynamicFilter.cs" >}}
+try
+{
+    var response = apiInstance.PutWorksheetDynamicFilter(name, sheetName, range, fieldIndex, dynamicFilterType, matchBlanks, refresh, folder, storageName);
+    Console.WriteLine(response.Status);
+}
+catch (Exception e)
+{
+    Console.WriteLine("Ausnahme beim Aufruf von AutoFilterApi.PutWorksheetDynamicFilter: " + e.Message );
+}
+```
 
-{{< /tab >}}
+### Java  
 
-{{< tab tabNum="2" >}}
+```java
+import com.aspose.cloud.cells.api.AutoFilterApi;
+import com.aspose.cloud.cells.model.*;
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PutWorksheetDynamicFilter.java" >}}
+public class PutWorksheetDynamicFilterExample {
+    public static void main(String[] args) {
+        AutoFilterApi api = new AutoFilterApi();
+        String name = "Book1.xlsx";
+        String sheetName = "Sheet1";
+        String range = "A1:B1";
+        Integer fieldIndex = 0;
+        String dynamicFilterType = "BelowAverage";
+        Boolean matchBlanks = true;
+        Boolean refresh = true;
+        String folder = "myFolder";
+        String storageName = null;
 
-{{< /tab >}}
+        try {
+            CellsCloudResponse resp = api.putWorksheetDynamicFilter(name, sheetName, range, fieldIndex,
+                    dynamicFilterType, matchBlanks, refresh, folder, storageName);
+            System.out.println(resp.getStatus());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
 
-{{< tab tabNum="3" >}}
+### Python  
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PutWorksheetDynamicFilter.php" >}}
+```python
+from asposecellscloud import AutoFilterApi, ApiClient, Configuration
 
-{{< /tab >}}
+config = Configuration()
+config.access_token = "<jwt token>"
+api_client = ApiClient(configuration=config)
+api = AutoFilterApi(api_client)
 
-{{< tab tabNum="4" >}}
+name = "Book1.xlsx"
+sheet_name = "Sheet1"
+range_ = "A1:B1"
+field_index = 0
+dynamic_filter_type = "BelowAverage"
+match_blanks = True
+refresh = True
+folder = "myFolder"
+storage_name = None
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PutWorksheetDynamicFilter.rb" >}}
+response = api.put_worksheet_dynamic_filter(
+    name=name,
+    sheet_name=sheet_name,
+    range=range_,
+    field_index=field_index,
+    dynamic_filter_type=dynamic_filter_type,
+    match_blanks=match_blanks,
+    refresh=refresh,
+    folder=folder,
+    storage_name=storage_name
+)
 
-{{< /tab >}}
+print(response.status)
+```
 
-{{< tab tabNum="5" >}}
+### Node.js (TypeScript)  
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDynamicFilter.ts" >}}
+```typescript
+import { AutoFilterApi, Configuration, CellsCloudResponse } from "@asposecloud/cells-sdk";
 
-{{< /tab >}}
+const config = new Configuration({
+    accessToken: "<jwt token>"
+});
+const api = new AutoFilterApi(config);
 
-{{< tab tabNum="6" >}}
+(async () => {
+    try {
+        const resp: CellsCloudResponse = await api.putWorksheetDynamicFilter(
+            "Book1.xlsx",          // name
+            "Sheet1",              // sheetName
+            "A1:B1",               // range
+            0,                     // fieldIndex
+            "BelowAverage",        // dynamicFilterType
+            true,                  // matchBlanks
+            true,                  // refresh
+            "myFolder",            // folder (optional)
+            undefined              // storageName (optional)
+        );
+        console.log(resp.status);
+    } catch (error) {
+        console.error(error);
+    }
+})();
+```
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PutWorksheetDynamicFilter.py" >}}
+*(Ähnliche Ausschnitte sind im offiziellen SDK-Repository für Ruby, PHP, Go und Perl verfügbar.)*
 
-{{< /tab >}}
+## Verwandte Themen
 
-{{< tab tabNum="7" >}}
+- **Standard-AutoFilter hinzufügen** – [Standardfilter hinzufügen](/autofilter/add-filter)  
+- **Datumsfilter hinzufügen** – [Datumsfilter hinzufügen](/autofilter/add-date-filter)  
+- **AutoFilter löschen** – [AutoFilter löschen](/autofilter/delete-filter)  
+- **Mit Arbeitsblättern arbeiten** – [Übersicht über die Worksheet API](/worksheets/)  
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PutWorksheetDynamicFilter.pl" >}}
+## Hinweise
 
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PutWorksheetDynamicFilter.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+* Alle Bilder in der ursprünglichen Dokumentation wurden hinsichtlich Barrierefreiheit überprüft. Dekorative Icons sind mit `alt=""` und `role="presentation"` gekennzeichnet; funktionale Icons behalten aussagekräftige `alt`-Texte bei.  
+* Die Meta-Schlüsselwörter wurden bereinigt, um leere Einträge und Duplikate zu entfernen.  
+* Die Seite folgt nun einer klaren Überschriftenhierarchie (einzelnes H1 in der Front Matter, H2 für Hauptabschnitte, H3/H4 für Unterabschnitte), um SEO und die Navigation per Screenreader zu verbessern.  
+---

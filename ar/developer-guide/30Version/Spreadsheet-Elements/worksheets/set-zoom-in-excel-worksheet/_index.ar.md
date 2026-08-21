@@ -1,74 +1,83 @@
-﻿---
-title: ضبط التكبير/التصغير لورقة العمل Excel
-second_title: Documen
-linktitle: حديقة الحيوانات
-type: docs
-url: /ar/worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
-keywords: Set zoom for an Excel worksheet
-description: يدعم Cloud REST إعداد التكبير/التصغير لورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تعيين التكبير/التصغير لورقة عمل Excel
 ---
-يشير هذا REST API إلى `set the zoom value of Excel worksheet`.
- 
-## RSET API
- 
+title: "ضبط تكبير ورقة عمل Excel – واجهة Aspose.Cells Cloud API الإصدار 3.0"
+second_title: "مستند"
+linktype: "تقرير"
+type: docs
+url: /worksheets/zoom/
+aliases: [/set-zoom-in-excel-worksheet/]
+keywords: "Aspose.Cells، تكبير Excel، تكبير ورقة العمل، واجهة برمجة تطبيقات REST، حزمة تطوير برامج السحابة، أتمتة Excel"
+description: "تعرّف على كيفية ضبط تكبير ورقة العمل (من 10٪ إلى 400٪) باستخدام واجهة Aspose.Cells Cloud API الإصدار 3.0. يتضمن أمثلة لـ cURL وحزم تطوير البرامج، وإدارة الأخطاء."
+weight: 20
+ArticleTitle: "ضبط تكبير ورقة عمل Excel – واجهة Aspose.Cells Cloud API الإصدار 3.0"
+---
+
+تقوم هذه الواجهة البرمجية REST بضبط قيمة التكبير لورقة عمل Excel. **المصادقة مطلوبة**؛ يُجبَر إرفاق رمز Bearer JWT صالح في رأس `Authorization` لكل طلب.
+
+## الأمان والمصادقة
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [مصادقة تعتمد على رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## واجهة برمجة تطبيقات REST
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom
 ```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| قيمة| عدد صحيح| استفسار||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
- 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **مُعلمات الطلب**
+
+| المعلمة        | النوع     | الموقع  | الوصف                                                            |
+|---------------|----------|---------|------------------------------------------------------------------|
+| name          | string   | path    | اسم ملف Excel (ورقة العمل).                                     |
+| sheetName     | string   | path    | اسم ورقة العمل المراد تعديلها.                                  |
+| value         | integer  | query   | نسبة التكبير بالمية (النطاق المسموح به **10–400**، مثال: `40` تعني 40٪). |
+| folder        | string   | query   | مسار المجلد حيث يُخزَّن الملف.                                   |
+| storageName   | string   | query   | اسم خدمة التخزين.                                                |
+
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) واجهة برمجة تطبيقات قابلة للوصول بشكل عام، وتمكّنك من إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إجراء مكالمة لواجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/zoom?value=40" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
- 
+
+**معلومات استجابة الأخطاء**  
+تشمل رموز حالة HTTP المحتملة ما يلي:
+
+- `400 Bad Request` – معلمات مفقودة أو غير صالحة.
+- `401 Unauthorized` – رمز JWT مفقود أو غير صالح.
+- `404 Not Found` – الملف أو ورقة العمل المحددة غير موجودة.
+- `500 Internal Server Error` – خطأ غير متوقع من جانب الخادم.
+
+تعيد كل استجابة خطأ جسم JSON يحتوي على `Code` و`Message` وصفي.
+
+## عائلة حزم تطوير البرامج (SDKs) السحابية
+
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. تقوم SDK بالتعامل مع التفاصيل منخفضة المستوى، مما يمكّنك من التركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم تطوير البرامج (SDKs) الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية إجراء مكالمات لخدمات Aspose.Cells باستخدام حزم تطوير البرامج (SDKs) المختلفة:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 

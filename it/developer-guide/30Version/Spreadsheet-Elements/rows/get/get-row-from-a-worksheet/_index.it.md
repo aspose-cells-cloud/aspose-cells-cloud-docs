@@ -1,63 +1,69 @@
-﻿---
-title: Ottieni la descrizione della riga da un foglio di lavoro Excel
-second_title: Documen
-linktitle: Ro
-type: docs
-url: /it/rows/get/row/
-aliases: [/get-row-from-a-worksheet/]
-keywords: Get row info on an Excel workshee
-description: Aspose.Cells Cloud REST API supporta l'acquisizione di informazioni sulle righe in un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 10
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni la descrizione della riga da un foglio di lavoro Excel
 ---
-Questo REST API indica di ottenere i dati di una riga tramite l'indice della riga su un foglio di lavoro Excel.
+title: "Ottenere la descrizione di una riga da un foglio di calcolo Excel"
+second_title: "Document"
+linktype: "Row"
+type: docs
+url: /rows/get/row/
+aliases: [/get-row-from-a-worksheet/]
+keywords: "Aspose.Cells Cloud, API riga Excel, Ottieni riga foglio di calcolo, REST API, .NET SDK, Java SDK, Python SDK"
+description: "Recupera informazioni dettagliate (altezza, stile, stato di visibilità, ecc.) per una specifica riga in un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud. Include esempio cURL, frammenti SDK e gestione degli errori."
+weight: 10
+ArticleTitle: "Ottenere la descrizione di una riga da un foglio di calcolo Excel – API Aspose.Cells Cloud"
+---
 
-## RSET API
+**Prerequisiti:**
+- Ottieni un token di accesso JWT valido e includilo nell'intestazione `Authorization: Bearer <jwt token>`.
+- Assicurati che il file di lavoro sia memorizzato nello storage di Aspose Cloud o specifica il percorso della cartella in cui si trova.
+- Usa la versione dell'API **v3.0** come mostrato nell'URL dell'endpoint.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
- 
+Questa API REST recupera i dati di una riga in base all'indice all'interno di un foglio di calcolo Excel.
+
+## GetWorksheetRow API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome della cartella di lavoro.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| indice di riga| intero| sentiero| L'indice di riga.|
-| cartella| corda| domanda| La cartella della cartella di lavoro.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### **Parametri della richiesta**
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Nome parametro | Tipo    | Posizione | Descrizione                                         |
+| -------------- | ------- | -------- | --------------------------------------------------- |
+| name           | string  | path     | Nome del file di lavoro.                            |
+| sheetName      | string  | path     | Nome del foglio di calcolo all'interno del file di lavoro. |
+| rowIndex       | integer | path     | Indice in base zero della riga da recuperare.       |
+| folder         | string  | query    | Cartella contenente il file di lavoro.              |
+| storageName    | string  | query    | Nome dello storage in cui risiede il file di lavoro. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow) definiscono un'interfaccia di programmazione pubblicamente accessibile e consentono di eseguire interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud con cURL. Includi l'intestazione `Authorization: Bearer <jwt token>` per autenticare la richiesta.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
   "Row": {
     "GroupLevel": 0,
     "Height": 13.5,
-    "Index": 10,
+    "Index": 0,
     "IsBlank": false,
     "IsHeightMatched": true,
     "IsHidden": false,
@@ -68,25 +74,55 @@ curl -v "http://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/ro
       }
     },
     "link": {
-      "Href": "api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/rows/10",
+      "Href": "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/rows/0",
       "Rel": "self"
     }
   },
   "Code": 200,
   "Status": "OK"
 }
- 
 ```
+
+**Schema della risposta**
+
+| Proprietà         | Tipo    | Descrizione                                                          |
+|-------------------|---------|----------------------------------------------------------------------|
+| `GroupLevel`      | integer | Livello di raggruppamento della riga (usato per l'aggregazione).    |
+| `Height`          | number  | Altezza della riga in punti.                                         |
+| `Index`           | integer | Indice in base zero della riga restituita.                           |
+| `IsBlank`         | boolean | Indica se la riga contiene dati.                                     |
+| `IsHeightMatched`| boolean | `true` se l'altezza della riga corrisponde all'altezza predefinita.  |
+| `IsHidden`        | boolean | `true` se la riga è nascosta.                                        |
+| `Style`           | object  | Oggetto contenente le informazioni di stile della riga.             |
+| `link`            | object  | Riferimento ipertestuale alla risorsa riga.                          |
+| `Code`            | integer | Codice di stato HTTP della risposta.                                 |
+| `Status`          | string  | Descrizione testuale dello stato (ad esempio, “OK”).                |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+**Note / Gestione errori:** L'API può restituire i seguenti codici di stato HTTP:
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+- **200** – Successo; i dati della riga vengono restituiti.
+- **401** – Non autorizzato; il token JWT è mancante o non valido.
+- **404** – Non trovato; il file di lavoro, il foglio di calcolo o la riga specificati non esistono.
+- **500** – Errore interno del server; si è verificata una condizione imprevista.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+| Codice | Descrizione                                   | Soluzione                                |
+|--------|-----------------------------------------------|------------------------------------------|
+| 200    | Successo – dati della riga restituiti.        | –                                        |
+| 401    | Non autorizzato – token JWT mancante o non valido. | Fornire un token JWT valido.           |
+| 404    | Non trovato – file di lavoro, foglio di calcolo o riga mancante. | Verificare i nomi e l'indice della riga. |
+| 500    | Errore interno del server – condizione imprevista. | Contattare il supporto Aspose.          |
+
+Per un elenco completo dei codici di errore, consulta la [documentazione sui codici di errore](https://docs.aspose.cloud/cells/) di Aspose.Cells Cloud.
+
+## Famiglia di SDK Cloud
+
+L'utilizzo di un SDK è il metodo più rapido per lo sviluppo. Un SDK astrae i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

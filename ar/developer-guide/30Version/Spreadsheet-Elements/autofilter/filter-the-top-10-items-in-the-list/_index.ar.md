@@ -1,84 +1,137 @@
-﻿---
-title: أضف أفضل 10 عناصر في ورقة العمل Excel
-second_title: Documen
-linktitle: أضف أفضل 10 مرشحات
-type: docs
-url: /ar/autofilter/add-top-10-filter/ 
-aliases: [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/ ]
-keywords: Adds a top10 filter on an Excel worksheet
-description: يدعم الإصدار Aspose.Cells Cloud API إضافة مرشح لأفضل 10 تطبيقات على ورقة عمل Excel. تدعم حزمة SDK لغات تطوير متنوعة، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 65
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة أفضل 10 عناصر في ورقة عمل Excel
 ---
-يشير هذا REST API إلى تصفية العنصر `top 10` في القائمة
+title: "إضافة عامل تصفية لأعلى 10 عناصر في ورقة عمل إكسل (Aspose.Cells Cloud)"
+ArticleTitle: "إضافة عامل تصفية لأعلى 10 عناصر في ورقة عمل إكسل – Aspose.Cells Cloud"
+second_title: "وثيقة"
+linktype: "docs"
+url: /ar/autofilter/add-top-10-filter/
+aliases:
+  [/ar/filter-the-top-10-items-in-the-list/, /ar/autofilter/add-a-top-10-filter/]
+keywords: "Aspose.Cells, عامل تصفية تلقائي، عامل تصفية لأعلى 10 عناصر، واجهة برمجة تطبيقات إكسل"
+description: "تعرّف على كيفية تطبيق عامل تصفية تلقائي لأعلى 10 عناصر في ورقة عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمن النهاية (endpoint)، المُعطَلات (parameters)، مثال cURL باستخدام HTTPS، تفاصيل المصادقة، معالجة الأخطاء، وأجزاء من كود SDK لـ C#، Java، Python، والمزيد."
+weight: 65
+---
 
-## RSET API
+تقوم هذه الواجهة REST بتصفية **أعلى 10 عناصر** في قائمة.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10
- 
+> **المتطلبات الأساسية**  
+> • احصل على رمز JWT صالح باستخدام مصادقة Aspose.Cells Cloud.  
+> • رفع ملف مصنف إكسل إلى مساحة التخزين الخاصة بك في Aspose Cloud (أو حدد مساحة التخزين/المجلد الذي يوجد فيه الملف).  
+> • اعرف اسم ورقة العمل ونطاق الخلية الذي تريد تطبيق التصفية عليه.
+
+## PutWorksheetFilterTop10 API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| يتراوح| خيط| استفسار||
-| فهرس الحقل| عدد صحيح| استفسار||
-| أعلى| منطقي| استفسار||
-| النسبة المئوية| منطقي| استفسار||
-| عدد العناصر| عدد صحيح| استفسار||
-| مطابقة الفراغات| منطقي| استفسار||
-| ينعش| منطقي| استفسار||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+واجهات برمجة التطبيقات الخاصة بـ Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### مُعطَلات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المُعطَل  | النوع    | الموقع | إجباري | القيمة الافتراضية | الوصف                                                                 |
+| --------------- | ------- | -------- | -------- | ------- | --------------------------------------------------------------------------- |
+| **name**        | string  | path     | نعم      | —       | اسم ملف إكسل.                                                 |
+| **sheetName**   | string  | path     | نعم      | —       | اسم ورقة العمل التي تحتوي على البيانات.                           |
+| **range**       | string  | query    | نعم      | —       | نطاق الخلايا الذي سيتم تطبيق التصفية عليه (مثال: `A1:B10`).             |
+| **fieldIndex**  | integer | query    | نعم      | —       | المؤشر المبني على الصفر لعمود تطبيق التصفية عليه.              |
+| **isTop**       | boolean | query    | نعم      | `true`  | `true` لتصفية العناصر العلوية؛ `false` للعناصر السفلية.                   |
+| **isPercent**   | boolean | query    | لا       | `false` | `true` لاعتبار `itemCount` نسبة مئوية؛ `false` للعدد المطلق. |
+| **itemCount**   | integer | query    | لا       | `10`    | عدد العناصر التي يجب تضمينها في عامل التصفية.                                   |
+| **matchBlanks** | boolean | query    | لا       | `false` | `true` لتضمين الخلايا الفارغة في نتائج عامل التصفية.                        |
+| **refresh**     | boolean | query    | لا       | `false` | `true` لتحديث عامل التصفية بعد تطبيقه.                             |
+| **folder**      | string  | query    | لا       | —       | المجلد في التخزين حيث يوجد ملف إكسل.                      |
+| **storageName** | string  | query    | لا       | —       | اسم مساحة تخزين Aspose Cloud.                                       |
+
+### **الاستجابة**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**استجابات الخطأ النموذجية**
+
+```json
+{
+    "Code":400,
+    "Message":"طلب غير صحيح – مُعطَلات مفقودة أو غير صالحة."
+}
+```
+
+```json
+{
+    "Code":401,
+    "Message":"غير مصرّح – رمز JWT غير صالح أو مفقود."
+}
+```
+
+```json
+{
+    "Code":413,
+    "Message":"حمولة كبيرة جدًا – حجم الملف المرفوع يتجاوز الحد المسموح به."
+}
+```
+
+```json
+{
+    "Code":500,
+    "Message":"خطأ داخلي في الخادم – حالة غير متوقعة في الخادم."
+}
+```
+
+**رموز حالة HTTP**
+
+| الكود | المعنى                     | الوصف                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | نجاح (OK)                          | تمت تطبيق التصفية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صحيح (Bad Request)                 | مُعطَلات مفقودة أو غير صالحة (مثال: نوع ملف غير مدعوم). |
+| 401  | غير مصرّح (Unauthorized)                | رمز JWT غير صالح أو مفقود. |
+| 413  | حمولة كبيرة جدًا (Payload Too Large)           | حجم الملف المرفوع يتجاوز الحد المسموح به. |
+| 500  | خطأ داخلي في الخادم (Internal Server Error)       | خطأ غير متوقع في الخادم. |
+## كيفية استخدام PutWorksheetFilterTop10 API باستخدام مكتبات SDK
+
+### مواصفات PutWorksheetFilterTop10 API
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10) واجهة برمجة تطبيقات قابلة للوصول العام، وتمكّنك من إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية استدعاء الواجهة باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filterTop10?range=A1:B1&fieldIndex=0&isTop=true&itemCount=1&isPercent=true&matchBlanks=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filterTop10?range=A1:B10&fieldIndex=0&isTop=true&itemCount=10" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام مكتبات SDK الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام مكتبة SDK هو أسرع طريقة للتطوير. فتتولى مكتبات SDK معالجة التفاصيل من المستوى المنخفض، مما يتيح لك التركيز على مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام مكتبات SDK المختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

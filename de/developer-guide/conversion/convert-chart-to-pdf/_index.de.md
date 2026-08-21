@@ -1,100 +1,146 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Konvertieren eines Tabellenkalkulationsdiagramms in eine PDF-Datei
-second_title: Documen
-ArticleTitle: Converting a Spreadsheet Chart to a Pdf file
-linktitle: Diagramm in PD konvertieren
-type: docs
-url: /de/convert-chart-to-pdf/
-keywords: convert an Excel chart to pdf, convert spreadsheet to pdf, Aspose Cloud Web  API, cloud conversion, Excel to PD
-description: Diese API konvertiert Diagramme aus Tabellenkalkulationen auf einem lokalen Laufwerk in PDF Datei nahtlos
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulationskonvertierung, PDF, CSV, JSON, Markdown, Diagramm in PDF konvertieren, Cloud-Konvertierung
 ---
- Konvertieren Sie ein Diagramm aus einer lokalen Tabellenkalkulationsdatei/Excel in eine[PDF](https://docs.fileformat.com/pdf/) Datei.
+title: "Aspose.Cells Cloud API – Excel-Diagramm in PDF konvertieren"
+second_title: "Dokument"
+ArticleTitle: "So konvertieren Sie ein lokales Tabellenkalkulationsdiagramm in eine PDF-Datei: Schritt-für-Schritt-Anleitung"
+linktitle: "Diagramm in PDF konvertieren"
+type: docs
+url: /convert-chart-to-pdf/
+keywords: "Aspose Cells, Diagramm, PDF, Excel, Konvertierung, Cloud API"
+description: "Exportieren Sie Diagramme aus lokalen Excel-Dateien in das PDF-Format mithilfe der Aspose.Cells Cloud REST API. Unterstützt XLSX- und XLS-Dateien."
+weight: 100
+---
 
-## **Diagramm in PDF konvertieren API**
+Exportieren Sie Diagramme aus einer lokalen Excel-Datei in das [PDF](https://docs.fileformat.com/pdf/)-Format mithilfe der Cloud API.
+
+## **Diagramm in PDF konvertieren – Web-API**
+
+### Web-API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
+PUT https://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 ```
+
+### **Sicherheit und Authentifizierung**
+
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
 ### **Anforderungsparameter:**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody| Beschreibung|
-|-------------- ||--------------------- |--------------------------------------------------- |
-| Kalkulationstabelle|Datei| FormData| Laden Sie die Tabellenkalkulationsdatei hoch.|
-| Arbeitsblatt| Zeichenfolge| Abfrage| Der Name des Arbeitsblatts, das das Diagramm enthält.|
-| Diagrammindex|Ganze Zahl| Abfrage| Der Index des zu konvertierenden Diagramms.|
-| Ausgangspfad| Zeichenfolge| Abfrage| (Optional) Der Ordnerpfad, in dem die konvertierte Datei gespeichert ist. Der Standardwert ist null.|
-| outStorageName| Zeichenfolge| Abfrage| Name des Ausgabedateispeichers.|
-| SchriftartenStandort| Zeichenfolge| Abfrage| Verwenden Sie bei Bedarf benutzerdefinierte Schriftarten.|
-| Region| Zeichenfolge| Abfrage| Die Tabellenbereichseinstellung.|
-| Passwort| Zeichenfolge| Abfrage| Das Kennwort zum Öffnen der Tabellenkalkulationsdatei.|
+| Parametername      | Typ    | Pfad/Abfragezeichenfolge/HTTP-Body | Beschreibung                                                                                      |
+|--------------------|--------|-------------------------------------|---------------------------------------------------------------------------------------------------|
+| Spreadsheet        | Datei  | FormData                            | Laden Sie die Tabellenkalkulationsdatei hoch.                                                    |
+| worksheet          | String | Abfrage                             | Der Name des Arbeitsblatts, das das Diagramm enthält.                                            |
+| chartIndex         | Integer| Abfrage                             | Der Index des zu konvertierenden Diagramms.                                                       |
+| outPath            | String | Abfrage                             | (Optional) Der Ordnerpfad, in dem die konvertierte Datei gespeichert wird. Standardwert ist null. |
+| outStorageName     | String | Abfrage                             | Name des Speichers für die Ausgabedatei.                                                         |
+| fontsLocation      | String | Abfrage                             | Verwenden Sie benutzerdefinierte Schriftarten, falls erforderlich.                               |
+| region           | String | Abfrage                             | Die Regionseinstellung der Tabellenkalkulation.                                                  |
+| password           | String | Abfrage                             | Das Passwort zum Öffnen der Tabellenkalkulationsdatei.                                           |
 
 ### **Antwort**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Fehlercodes
+**HTTP-Statuscodes**
 
-- **400 Ungültige Anfrage**: Ungültige Apose.Cells Cloud API-URI.
-- **401 Nicht autorisiert**: Ungültiges Zugriffstoken. Oder ungültige Client-ID und ungültiges Geheimnis.
-- **404 Nicht gefunden**: Auf die Tabellenkalkulationsdatei kann nicht zugegriffen werden.
-- **500 Serverfehler**: Beim Abrufen der Berechnungsdaten ist in der Tabelle eine Anomalie aufgetreten.
+| Code | Bedeutung               | Beschreibung                                                           |
+|------|-------------------------|------------------------------------------------------------------------|
+| 200  | OK                      | Filter erfolgreich angewendet; Antwort enthält Vorgangsdetails.       |
+| 400  | Bad Request             | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized            | Ungültiges oder fehlendes JWT-Token.                                  |
+| 413  | Payload Too Large       | Die hochgeladene Datei überschreitet die Größenbeschränkung.          |
+| 500  | Internal Server Error   | Unerwarteter Serverfehler.                                            |
 
-## Wo sollten Sie die Funktion „Diagramm in PDF konvertieren API“ verwenden?
+## Wo sollten Sie die API „Diagramm in PDF konvertieren“ verwenden?
 
-- Exportieren Sie die Diagramme in der Tabelle als PDF.
+### **1. Geschäftliche Berichterstellung und Automatisierung**
 
-## Warum sollten Sie die Funktion „Diagramm in PDF konvertieren API“ verwenden?
+- **Finanzabteilungen**: Monatliche Finanzberichtsdiagramme → PDF-Archivierung  
+- **Vertriebsteams**: Leistungstrenddiagramme → PDF-Kundenberichte  
+- **Marketing-Analytik**: Kampagnenleistungsdiagramme → PDF-Executive-Briefings  
+- **Operationsmanagement**: Produktionsüberwachungsdiagramme → PDF-Conformance-Dokumente  
 
-- Kein Cloud-Speicher erforderlich, wodurch die Belastung der Cloud-Ressourcen reduziert wird.
-- Die Entwicklung kann über das vorhandene SDK schnell abgeschlossen werden.
+### **2. Softwareentwicklung und Integration**
 
-## Wie verwende ich die Funktion „Diagramm in PDF konvertieren API“ mit SDKs?
+- **SaaS-Anwendungen**: Vom Benutzer generierte Diagrammdaten → herunterladbare PDF-Berichte  
+- **Unternehmenssysteme**: ERP/CRM-Systemdiagramme → PDF-Prüfungsunterlagen  
+- **Mobile Anwendungen**: In-App-Analysediagramme → weitergabe-fähige PDF-Dateien  
+- **Webanwendungen**: Dashboard-Diagramme → PDF-Export-Funktionalität  
 
-### Diagramm in PDF konvertieren API Spezifikation
+### **3. Dokumentenverarbeitungs-Workflows**
 
- Der[Diagramm in PDF konvertieren API Spezifikation](https://reference.aspose.cloud/cells/#/ConversionController/ConvertChartToPdf) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+- **Batchverarbeitung**: Mehrere Excel-Dateidiagramme gleichzeitig in PDF konvertieren  
+- **Geplante Aufgaben**: Automatisierte tägliche/wöchentliche Diagrammberichtsgenerierung  
+- **Vorlagenbasierte Ausgaben**: Standard-Diagrammformate → PDF-Dokumente  
+- **Dokumentenzusammenstellung**: Diagramme mit anderen Inhalten im PDF-Format kombinieren  
+
+### **4. Branchenspezifische Anwendungen**
+
+- **Forschungseinrichtungen**: Experimentelle Datencharts → PDF-Figuren für Forschungsarbeiten  
+- **Bildungsbereich**: Bildungsmaterialien-Diagramme → PDF-Kursunterlagen  
+- **Beratungsunternehmen**: Analysecharts → PDF-Kundenlieferungen  
+- **Fertigung**: Qualitätskontrollcharts → PDF-Prüfberichte  
+- **Gesundheitswesen**: Patientendatencharts → PDF-medizinische Aufzeichnungen  
+- **Öffentlicher Sektor**: Statistikcharts → PDF-offizielle Veröffentlichungen  
+
+### **5. Inhaltmanagement und Verteilung**
+
+- **Digital Asset Management**: Diagrammarchivierung im standardisierten PDF-Format  
+- **Wissensdatenbanken**: Technische Dokumentation mit eingebetteten PDF-Diagrammen  
+- **Kundenportale**: Sichere PDF-Berichtszustellung an Stakeholder  
+- **Regulatorische Konformität**: Prüfungsbereite PDF-Dokumentenerstellung  
+
+## Warum sollten Sie die API „Diagramm in PDF konvertieren“ verwenden?
+
+- Sie können Diagramme **ohne vorheriges Hochladen der Arbeitsmappe** konvertieren, was Speicherplatz spart und Kosten senkt.  
+- Die Entwicklung kann schnell über die vorhandenen Aspose.Cells Cloud SDKs abgeschlossen werden.  
+- **Einfache Integration**: REST API mit klarer Dokumentation.  
+- **Skalierbare Architektur**: Verarbeitet Workloads von kleinen bis unternehmensweiten Anwendungen.  
+
+## Wie verwenden Sie die API „Diagramm in PDF konvertieren“ mit SDKs?
+
+### API-Spezifikation für „Diagramm in PDF konvertieren“
+
+Die [API-Spezifikation „Diagramm in PDF konvertieren“](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertChartToPDF) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen REST-Interaktionen direkt aus einem Webbrowser.
 
 ## Verwenden Sie Aspose.Cells Cloud SDKs
 
-Die Verwendung des SDK ist die schnellste Art der Entwicklung, da es die Details auf niedriger Ebene abstrahiert und es Ihnen ermöglicht, ein Diagramm mit einem kurzen Code in eine PDF-Datei zu konvertieren.
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die Verwendung eines SDKs ist der schnellste Weg zur Entwicklung, da sie Low-Level-Details abstrahieren und Ihnen so die Konvertierung eines Diagramms in eine PDF-Datei mit minimalem Code ermöglichen.  
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste mit verschiedenen SDKs durchgeführt werden:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertChartToPdf.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertChartToPdf.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertChartToPdf.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertChartToPdf.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertChartToPdf.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertChartToPdf.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertChartToPdf.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertChartToPdf.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertChartToPDF.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertChartToPDF.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertChartToPDF.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertChartToPDF.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertChartToPDF.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertChartToPDF.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertChartToPDF.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertChartToPDF.go" >}}
+{{</tab>}}
 {{< /tabs >}}

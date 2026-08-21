@@ -1,93 +1,71 @@
-﻿---
-title: Obtener salto de página vertical
-second_title: Documen
-linktitle: Obtener salto de página vertical
-type: docs
-url: /es/page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
-keywords: Add a page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API permite añadir un salto de página en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Obtener saltos de página verticales
 ---
-Este REST API indica que se deben obtener `vertical` saltos de página.
+title: "Obtener saltos de página verticales"
+second_title: "Documento"
+linktitle: "Obtener saltos de página verticales"
+type: docs
+url: /page-breaks/get-vertical-page-breaks/
+aliases: [/get-vertical-page-breaks-inside-worksheet/]
+keywords: "Aspose.Cells, saltos de página verticales, API de Excel, hoja de cálculo en la nube, API REST"
+description: "Recuperar saltos de página verticales desde una hoja de cálculo de Excel usando la API REST de Aspose.Cells Cloud (v3.0). Incluye el endpoint HTTPS, parámetros necesarios, ejemplo con cURL, detalles de la respuesta, manejo de errores y ejemplos de SDK."
+weight: 20
+---
 
-## RSET API
+Esta API REST recupera los **saltos de página verticales** de una hoja de cálculo.
+
+## API REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
 ```
 
-Los parámetros de la solicitud son:
+### Parámetros de solicitud
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino||
-| nombreHoja| cadena| camino||
-| carpeta| cadena| consulta||
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción                                              | Obligatorio |
+| -------------------- | ------ | --------- | -------------------------------------------------------- | ----------- |
+| `name`               | string | path      | El nombre del archivo de Excel.                          | Sí          |
+| `sheetName`          | string | path      | El nombre de la hoja de cálculo desde la cual leer los saltos. | Sí          |
+| `folder`             | string | query     | La carpeta en el almacenamiento que contiene el archivo. | No          |
+| `storageName`        | string | query     | El nombre del almacenamiento de Aspose Cloud a utilizar. | No          |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/PageBreaks/GetVerticalPageBreaks) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/PageBreaks/GetVerticalPageBreaks) define una interfaz de programación públicamente accesible y permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+Puede utilizar **cURL** para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube mediante cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "VerticalPageBreaks": {
-
     "VerticalPageBreakList": [
-
       {
-
         "Column": 3,
-
         "EndRow": 1048575,
-
         "StartRow": 0
-
       }
-
     ],
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/VerticalPageBreaks",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/VerticalPageBreaks",
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
 ```
 
@@ -95,11 +73,34 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheet
 
 {{< /tabs >}}
 
+### Detalles de la respuesta
+
+| Campo                   | Tipo  | Descripción                                                                          |
+| ----------------------- | ----- | ------------------------------------------------------------------------------------ |
+| `VerticalPageBreakList` | array | Colección de objetos de salto de página vertical.                                   |
+| `Column`                | int   | Índice de columna (basado en cero) donde ocurre el salto.                            |
+| `StartRow`              | int   | Primera fila del rango de salto (basado en cero).                                    |
+| `EndRow`                | int   | Última fila del rango de salto (basado en cero; típicamente `1048575` para la última fila). |
+| `link.Href`             | string | URL de autorreferencia del recurso (HTTPS).                                          |
+| `Code`                  | int   | Código de estado HTTP devuelto por el servicio.                                      |
+| `Status`                | string | Descripción textual del estado HTTP.                                                 |
+
+### Manejo de errores
+
+| Código HTTP | Significado           | Causa típica                              |
+| ----------- | --------------------- | ------------------------------------------ |
+| 401         | No autorizado         | Token JWT ausente o inválido.              |
+| 404         | No encontrado         | El archivo o la hoja de cálculo especificados no existen. |
+| 400         | Solicitud incorrecta  | Parámetros de consulta inválidos o mal formados. |
+| 500         | Error interno del servidor | Condición inesperada del lado del servidor. |
+
+Compruebe los campos `Code` y `Status` en la respuesta JSON para obtener más detalles.
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de desarrollar con Aspose.Cells Cloud. Un SDK abstracta los detalles de bajo nivel para que pueda centrarse en la lógica de su negocio. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -152,4 +153,3 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
-

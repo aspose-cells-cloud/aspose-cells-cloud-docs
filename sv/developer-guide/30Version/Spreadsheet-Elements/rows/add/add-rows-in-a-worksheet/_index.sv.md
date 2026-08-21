@@ -1,75 +1,93 @@
-﻿---
-title: Lägg till flera rader i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Rad
-type: docs
-url: /sv/rows/add/rows/
-keywords: Add multi rows on an Excel workshee
-description: Aspose.Cells Cloud REST API stöder tillägg av flera rader i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lägg till flera rader i ett Excel-kalkylblad
 ---
-Denna REST API anger att flera nya kalkylbladsrader ska läggas till i ett Excel-kalkylblad.
+title: "Lägg till flera rader i ett Excel-ark"
+ArticleTitle: "Lägg till flera rader i ett Excel-ark med Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Rader"
+type: docs
+url: /rows/add/rows/
+keywords: "Aspose.Cells Cloud, infoga rader, Excel-ark, REST API, SDK, lägg till flera rader"
+description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att infoga flera rader i ett Excel-ark. Den här guiden täcker slutpunkten, begärparametrar, exempel på cURL-kommandon och SDK-användningsexempel."
+weight: 20
+---
 
-## RSET API
+Denna REST API lägger till flera nya rader i ett Excel-ark.
 
-```bash
- 
+## PutInsertWorksheetRows API
+
+```http
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| startrad| heltal| fråga| Indexet för den första raden som ska användas.|
-| totala rader| heltal| fråga|1 |
-| uppdateringsreferens| boolesk| fråga| Sann|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Begärparametrar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| ParameterNamn   | Typ     | Plats  | Beskrivning                                                          |
+| --------------- | ------- | ------ | -------------------------------------------------------------------- |
+| name            | string  | path   | Arbetsbokens namn.                                                   |
+| sheetName       | string  | path   | Arkets namn.                                                         |
+| startrow        | integer | query  | Indexet för den första rad som ska infogas (**0-baserat**).          |
+| totalRows       | integer | query  | Antalet rader som ska infogas.                                       |
+| updateReference | boolean | query  | Om cellreferenser ska uppdateras efter infogning (`true` eller `false`). |
+| folder          | string  | query  | Mappen som innehåller dokumentet.                                   |
+| storageName     | string  | query  | Lagringsnamnet.                                                      |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Förutsättningar**  
+Arbetsboken måste redan finnas i den angivna lagringen (eller mapp) innan du anropar den här åtgärden.
+
+**Autentisering**  
+API:et kräver en giltig JWT-token. Inkludera den i `Authorization`-headern enligt exemplet med cURL nedan.
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för kommandoraden för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur du anropar Cloud API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=11&updateReference=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
+
+> **Obs:** Denna `PUT`-åtgärd kräver inte en begäran med brödtext; ett tomt JSON-objekt (`{}`) kan skickas om klientbiblioteket tvingar fram en payload.
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+*Möjliga svarskoder*  
+
+- **200 OK** – Rader infogades framgångsrikt.  
+- **400 Bad Request** – Ogiltiga parametrar (t.ex. negativ radindexering).  
+- **401 Unauthorized** – Saknad eller ogiltig JWT-token.  
+- **404 Not Found** – Angiven arbetsbok eller ark finns inte.  
+- **500 Internal Server Error** – Oväntat serverfel.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+För ytterligare åtgärder på rader, se relaterade sidor: **Ta bort rader**, **Hämta rader** och **Kopiera rader**.
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+## Cloud SDK-familj
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK hanterar detaljer på lågnivå så att du kan fokusera på ditt projekt. Kontrollera [GitHub-repositoriet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -99,7 +117,7 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
 
 {{< /tab >}}
 

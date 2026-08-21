@@ -1,277 +1,81 @@
-﻿---
-title: Получить условное форматирование
-type: docs
-url: /ru/conditional-formattings/get-all/
-aliases: [/get-conditional-formattings-of-worksheet/]
-keywords: REST API, spreadsheets, excel, get condition formattin
-description: "Cells.Cloud API для Excel работает: получить форматирование условий"
-weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получить условное форматирование
 ---
- Этот REST API указывает на получение условного форматирования.
- 
-## РСЕT API
- 
+title: "Получить правила условного форматирования"
+type: docs
+url: /conditional-formattings/get-all/
+aliases: [/get-conditional-formattings-of-worksheet/]
+keywords: "Aspose.Cells Cloud, REST API, Excel, условное форматирование, лист, API условного форматирования"
+description: "Получить все правила условного форматирования, применённые к листу, с помощью REST API Aspose.Cells Cloud. Включает синтаксис запроса, шаги аутентификации, параметры, краткие примеры ответов и обработку ошибок."
+weight: 20
+---
+
+Этот REST API возвращает правила условного форматирования, применённые к листу.
+
+## Безопасность и аутентификация
+API Aspose.Cells Cloud защищены и требуют [аутентификации на основе JWT-токена](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
+
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings
 ```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь||
-| Имя_листа| нить| путь||
-| папка| нить| запрос||
-| имя_хранилища| нить| запрос| имя хранилища.|
- 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
- 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+### Параметры запроса
+
+| Имя параметра | Тип    | Расположение | Описание                                    |
+| ------------- | ------ | ------------ | ------------------------------------------- |
+| name          | string | path         | Имя файла Excel.                            |
+| sheetName     | string | path         | Имя листа.                                  |
+| folder        | string | query        | Путь к папке, где хранится файл.            |
+| storageName   | string | query        | Имя службы хранения (необязательно).        |
+
+### Ответы об ошибках
+
+| Код HTTP | Причина                                            | Пример тела ответа                                                  |
+| -------- | -------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**  | Неверный запрос — отсутствуют или некорректны параметры. | `{ "Code":"400", "Message":"Недопустимое значение параметра." }`   |
+| **401**  | Неавторизован — отсутствует или недействителен JWT-токен. | `{ "Code":"401", "Message":"Отсутствует или недействителен токен доступа." }` |
+| **404**  | Не найдено — книга или лист не существуют.         | `{ "Code":"404", "Message":"Файл не найден." }`                    |
+| **500**  | Внутренняя ошибка сервера — непредвиденная ошибка сервера. | `{ "Code":"500", "Message":"Произошла непредвиденная ошибка." }`   |
+
+<a href="https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings" target="_blank">Спецификация OpenAPI</a> определяет общедоступное программное интерфейсное API и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Следующий пример демонстрирует, как выполнить вызов облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <access_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-  "Status": "string",
+  "Status": "OK",
   "ConditionalFormattings": {
-    "link": {
-      "Href": "string",
-      "Rel": "string",
-      "Title": "string",
-      "Type": "string"
-    },
-    "Count": 0,
+    "Count": 1,
     "ConditionalFormattingList": [
       {
-        "link": {
-          "Href": "string",
-          "Rel": "string",
-          "Title": "string",
-          "Type": "string"
-        },
-        "sqref": "string",
+        "sqref": "A1:B10",
         "FormatConditions": [
           {
-            "link": {
-              "Href": "string",
-              "Rel": "string",
-              "Title": "string",
-              "Type": "string"
-            },
-            "Priority": 0,
-            "Type": "string",
-            "StopIfTrue": true,
-            "AboveAverage": {
-              "IsAboveAverage": true,
-              "IsEqualAverage": true,
-              "StdDev": 0
-            },
-            "ColorScale": {
-              "MaxCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MaxColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "MidCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MidColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "MinCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MinColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              }
-            },
-            "DataBar": {
-              "AxisColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "AxisPosition": "string",
-              "BarBorder": {
-                "Color": {
-                  "A": 0,
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "Type": "string"
-              },
-              "BarFillType": "string",
-              "Color": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "Direction": "string",
-              "MaxCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MaxLength": 0,
-              "MinCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MinLength": 0,
-              "NegativeBarFormat": {
-                "BorderColor": {
-                  "A": 0,
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "BorderColorType": "string",
-                "Color": {
-                  "A": 0,
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "ColorType": "string"
-              },
-              "ShowValue": true
-            },
-            "Formula1": "string",
-            "Formula2": "string",
-            "IconSet": {
-              "CfIcons": [
-                {
-                  "ImageData": "string",
-                  "Index": 0,
-                  "Type": "string"
-                }
-              ],
-              "Cfvos": [
-                {
-                  "IsGTE": true,
-                  "Type": "string"
-                }
-              ],
-              "IsCustom": true,
-              "Reverse": true,
-              "ShowValue": true,
-              "IconSetType": "string"
-            },
-            "Operator": "string",
+            "Priority": 1,
+            "Type": "CellValue",
+            "Operator": "GreaterThan",
+            "Formula1": "100",
             "Style": {
-              "link": {
-                "Href": "string",
-                "Rel": "string",
-                "Title": "string",
-                "Type": "string"
-              },
               "Font": {
-                "Color": {
-                  "A": 0,
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "DoubleSize": 0,
-                "IsBold": true,
-                "IsItalic": true,
-                "IsStrikeout": true,
-                "IsSubscript": true,
-                "IsSuperscript": true,
-                "Name": "string",
-                "Size": 0,
-                "Underline": "string"
-              },
-              "Name": "string",
-              "CultureCustom": "string",
-              "Custom": "string",
-              "BackgroundColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "ForegroundColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "IsFormulaHidden": true,
-              "IsDateTime": true,
-              "IsTextWrapped": true,
-              "IsGradient": true,
-              "IsLocked": true,
-              "IsPercent": true,
-              "ShrinkToFit": true,
-              "IndentLevel": 0,
-              "Number": 0,
-              "RotationAngle": 0,
-              "Pattern": "string",
-              "TextDirection": "string",
-              "VerticalAlignment": "string",
-              "HorizontalAlignment": "string",
-              "BorderCollection": [
-                {
-                  "LineStyle": "string",
-                  "Color": {
-                    "A": 0,
-                    "R": 0,
-                    "G": 0,
-                    "B": 0
-                  },
-                  "BorderType": "string"
-                }
-              ],
-              "BackgroundThemeColor": {
-                "ColorType": "string",
-                "Tint": 0
-              },
-              "ForegroundThemeColor": {
-                "ColorType": "string",
-                "Tint": 0
+                "Color": { "A": 255, "R": 255, "G": 0, "B": 0 },
+                "IsBold": true
               }
-            },
-            "Text": "string",
-            "TimePeriod": "string",
-            "Top10": {
-              "IsBottom": true,
-              "IsPercent": true,
-              "Rank": 0
             }
           }
         ]
@@ -279,20 +83,51 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
     ]
   }
 }
-
 ```
+
+_Приведённый выше пример содержит только наиболее релевантные поля, чтобы сделать полезную нагрузку компактной._
+
+**Параметры ответа**
+
+| Параметр                             | Тип     | Описание                                               |
+|--------------------------------------|---------|--------------------------------------------------------|
+| Status                               | string  | Результат выполнения запроса (например, **OK**).      |
+| ConditionalFormattings               | object  | Контейнер данных об условном форматировании.           |
+| ConditionalFormattings.Count         | integer | Количество возвращённых правил условного форматирования. |
+| ConditionalFormattings.ConditionalFormattingList | array   | Список объектов условного форматирования.              |
+| ConditionalFormattingList[].sqref    | string  | Диапазон ячеек, к которому применяется форматирование (например, **A1:B10**). |
+| ConditionalFormattingList[].FormatConditions | array   | Коллекция объектов условий форматирования для диапазона. |
+| FormatConditions[].Priority          | integer | Приоритет оценки условия.                              |
+| FormatConditions[].Type              | string  | Тип условия (например, **CellValue**).                |
+| FormatConditions[].Operator          | string  | Оператор, используемый для условия (например, **GreaterThan**). |
+| FormatConditions[].Formula1          | string  | Первая формула или значение условия.                   |
+| FormatConditions[].Style             | object  | Стиль, применяемый при выполнении условия.             |
+| Style.Font.Color                     | object  | Определение цвета шрифта в формате RGBA.               |
+| Style.Font.IsBold                    | boolean | Указывает, является ли шрифт полужирным.               |
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                              |
+|-----|-----------------------------|-------------------------------------------------------|
+| 200 | OK                          | Фильтр применён успешно; ответ содержит детали операции. |
+| 400 | Неверный запрос             | Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401 | Неавторизован               | Недействителен или отсутствует JWT-токен.             |
+| 413 | Полезная нагрузка слишком велика | Размер загружаемого файла превышает допустимый лимит. |
+| 500 | Внутренняя ошибка сервера   | Непредвиденная ошибка сервера.                        |
 
 {{< /tab >}}
 
 {{< /tabs >}}
-## **Источник SDK**
-Пакеты Cloud SDK Aspose.Cells можно загрузить со следующей страницы:[Доступные SDK](/cells/ru/available-sdks/)
-### **Примеры SDK**
+
+## Семейство облачных SDK
+
+Использование SDK — это лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в <a href="https://github.com/aspose-cells-cloud" target="_blank">репозитории GitHub</a>.
+
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-GetWorksheetConditionalFormatting-1.cs" >}}
 
@@ -302,13 +137,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-cells-get-conditional-formatting-worksheet.java" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-
-
 
 {{< /tab >}}
 
@@ -320,33 +151,23 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 
 {{< tab tabNum="5" >}}
 
-
-
 {{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-GetWorksheetConditionalFormatting-1.js" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-
-
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-GetWorksheetConditionalFormatting-1.pl" >}}
 

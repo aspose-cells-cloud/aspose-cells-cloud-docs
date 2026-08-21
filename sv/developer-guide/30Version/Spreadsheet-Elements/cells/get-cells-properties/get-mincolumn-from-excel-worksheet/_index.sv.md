@@ -1,46 +1,72 @@
-﻿---
-title: Hämta MinColumn från Excel-arbetsbladet
+---
+title: "Hämta MinColumn från Excel-arket"
 type: docs
 url: /sv/get-mincolumn-from-excel-worksheet/
 weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta MinColumn från Excel-arbetsblad
+keywords: Excel, Aspose.Cells Cloud, REST API, Hämta MinColumn, Ark, SDK, Molntjänst
+description: Hämta det minsta kolumnindexet som innehåller data i ett ark i en Excel-fil via Aspose.Cells Cloud REST API.
+ArticleTitle: "Hämta MinColumn från Excel-ark - Aspose.Cells Cloud API"
 ---
-Denna REST API indikerar att en `mincolumn` hämtas i en Excel-fil när parametern `cellOrMethodName` är `mincolumn`.
 
-- **cURL Exempel**
+Denna REST API returnerar det minsta kolumnindexet som innehåller data i ett Excel-ark när parametern `cellOrMethodName` är inställd på `mincolumn`.
 
+- **cURL-exempel**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" \
+     -H "Authorization: Bearer <DIN_AKTIVERINGS_TOKEN>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MinColumn": 2
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK-familjen**
+**Detaljer för begäran**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Parameter | Typ | Obligatoriskt | Beskrivning |
+|-----------|-----|---------------|-------------|
+| `cellOrMethodName` | sträng | Ja | Fast värde `mincolumn` för att ange åtgärden. |
+| `folder` | sträng | Nej | Sökväg till mappen som innehåller arbetsboken (om det inte är rotmappen). |
+| `storageName` | sträng | Nej | Namn på Aspose Cloud-lagringen som ska användas. |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+**Detaljer för svar**
 
+API:et returnerar ett JSON-objekt med en enda egenskap:
 
+```json
+{
+  "MinColumn": heltal   // Nollbaserat index för den vänstraste kolumnen som innehåller data.
+}
+```
+
+Typiska HTTP-statuskoder:
+
+- **200 OK** – Lyckad begäran, returnerar värdet `MinColumn`.  
+- **401 Oauktoriserad** – Saknar eller har ogiltig autentiseringstoken.  
+- **404 Inte hittad** – Den angivna arbetsboken, arket eller cellintervallet finns inte.  
+- **500 Internt serverfel** – Oväntat serverfel.
+
+- **Använd Aspose.Cells Cloud SDK:er**
+
+Att använda en SDK är det mest effektiva sättet att utveckla. En SDK abstraher bort detaljer på låg nivå och låter dig fokusera på din projektlogik. Ta en titt på <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub-förrådet</a> för en fullständig lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -103,3 +129,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

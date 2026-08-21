@@ -1,63 +1,95 @@
-﻿---
-title: Importera heltalsmatris till arbetsbladet Excel
-linktitle: Importera heltalsarray
-type: docs
-url: /sv/import-integer-array-into-excel-worksheet/
-aliases: [/import-integer-array-into-excel-worksheet/,/import-integer-array-into-worksheet/,/import-data/integer-array/, /import/integer-array/]
-keywords: Import integer array data into Excel files
-description: Aspose.Cells Cloud REST API stöder import av heltalsmatrisdata till Excel-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 30
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Importera heltalsmatris till Excel-arbetsblad
 ---
-Detta REST API `import int array data` till Excel-arbetsblad.
+title: "Importera heltalsarray till Excel-arbetsblad"
+linktitle: "Importera heltalsarray"
+type: docs
+url: /import-integer-array-into-excel-worksheet/
+aliases:
+  - /import-integer-array-into-excel-worksheet/
+  - /import-integer-array-into-worksheet/
+  - /import-data/integer-array/
+  - /import/integer-array/
+keywords: "Aspose.Cells Cloud, Excel, importera heltalsarray, REST API, SDK, C#, PHP, Ruby, Java, Python"
+description: "Lär dig hur du importerar en heltalsarray till ett Excel-arbetsblad med Aspose.Cells Cloud REST API. Innehåller begäresyntax, parametrar, exempelkod för flera SDK:er och svarsinformation."
+weight: 30
+ArticleTitle: "Importera heltalsarray till Excel-arbetsblad – Aspose.Cells Cloud API"
+---
 
-Begäran är en HTTP-begäran med flerdelat innehåll (se[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)eller[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)Den första delen av flerdelat innehåll innehåller ImportIntegerArrayOption-data och den andra innehåller en datafil.
+Denna REST API importerar en heltalsarray till ett Excel-arbetsblad.
 
-## RSET API
+Begäran måste vara en HTTP **POST** med multipart-innehåll (se [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) eller [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Den första delen av multipart-kroppen innehåller JSON-payloaden **ImportIntegerArrayOption**, och den andra delen innehåller källfilen (t.ex. en CSV- eller binär Excel-fil).
 
-```bash
+## PostImportData API
 
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-De viktiga parametrarna beskrivs i följande tabell:
+Båda slutpunkterna accepterar samma multipart-payload. Den första slutpunkten utför en generisk importåtgärd, medan den andra riktar sig till en specifik arbetsbok som identifieras av `{name}`.
 
-**ImporteraHeltalsmatrisAlternativ**
+### **Säkerhet och autentisering**
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-| Första raden| int||
-| Första kolumnen| int||
-| ÄrVertikal| sträng| sant/falskt.|
-| Data|Heltal[]||
-|Destinationsarbetsblad| sträng| namn på destinationsarbetsblad.|
-| ÄrInfoga| sträng| sant/falskt.|
-| Importera datatyp| sträng|IntArray/DubbelArray/StringArray/TvåDimensionIntArray/TvåDimensionDubbelArray/TvåDimensionStringArray/BatchData/CSVData.|
-| Källa| Filkälla| Anger datafilens position när BatchData-parametern är null.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-**Exempel**
+### **Begäran parametrar**
 
-```JSON
+### ImportIntegerArrayOption
 
+| Parameternamn            | Typ        | Beskrivning                                                                                                                                                                                    |
+| ------------------------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **FirstRow**             | int        | Nullbaserat index för den första raden där data ska placeras.                                                                                                                                |
+| **FirstColumn**          | int        | Nullbaserat index för den första kolumnen där data ska placeras.                                                                                                                             |
+| **IsVertical**           | boolean    | `true` för att infoga arrayen vertikalt (nedåt i en kolumn); `false` för att infoga den horisontellt ( längs en rad).                                                                       |
+| **Data**                 | Integer[]  | Den heltalsarray som ska importeras.                                                                                                                                                           |
+| **DestinationWorksheet** | string     | Namn på det arbetsblad som ska ta emot data.                                                                                                                                                   |
+| **IsInsert**             | boolean    | `true` för att infoga rader/kolumner innan data skrivs; `false` för att skriva över befintliga celler.                                                                                       |
+| **ImportDataType**       | string     | Typ av data som importeras. Giltiga värden: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
+| **Source**               | FileSource | Indikerar positionen för datafilen när parametern **BatchData** är `null`.                                                                                                                   |
+
+#### Exempel på begäran
+
+```json
 {
-    "Data": [1, 2, 4],
-    "DestinationWorksheet": "Sheet1",
-    "FirstRow": 1,
-    "FirstColumn": 2,
-    "IsVertical": true,
-    "IsInsert": true,
-    "importDataType": "IntArray"
+  "Data": [1, 2, 4],
+  "DestinationWorksheet": "Sheet1",
+  "FirstRow": 1,
+  "FirstColumn": 2,
+  "IsVertical": true,
+  "IsInsert": true,
+  "ImportDataType": "IntArray"
 }
-
 ```
 
-## Cloud SDK-familjen
+### Svar
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+En lyckad begäran returnerar **HTTP 200** med en JSON-payload liknande följande:
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+Möjliga statuskoder:
+
+| Kod | Betydelse                               |
+| --- | --------------------------------------- |
+| 200 | Importen lyckades                       |
+| 400 | Felaktig begäran – saknad eller ogiltig data |
+| 401 | Obehörig – ogiltig eller saknad token   |
+| 500 | Internt serverfel                       |
+
+## Hur du använder PostImportData API med SDK:er
+
+### PostImportData API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+### Använd Aspose.Cells Cloud SDK:er
+
+Att använda en SDK är det snabbaste sättet att integrera denna funktionalitet. SDK:er abstraherar från de lågnivådetaljer och låter dig fokusera på din affärslogik. Se [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

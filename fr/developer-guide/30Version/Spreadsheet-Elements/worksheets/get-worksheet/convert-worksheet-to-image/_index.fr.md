@@ -1,56 +1,76 @@
-﻿---
-title: Convertir une feuille de calcul en types de format
-second_title: Documen
-linktitle: Convertir la feuille de calcul
-type: docs
-url: /fr/worksheets/conversion/
-aliases: [/convert-worksheet-to-image/,/worksheets/to-image/]
-keywords: Convert worksheet to image format from an Excel workbook
-description: Aspose.Cells Cloud REST API prend en charge la conversion de feuilles de calcul au format image à partir d'un classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 130
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Convertir une feuille de calcul en différents formats
 ---
-[OBTENIR /cells/{name}/worksheets/{sheetName}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) API vous permet de convertir une feuille de calcul en différents formats, tels que[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [SAO](https://docs.fileformat.com/spreadsheet/ods/), [SMS](https://docs.fileformat.com/word-processing/txt/) . Les formats d'exportation uniquement :[PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NOMBRES](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+title: "Convertir une feuille de calcul en PDF, PNG, CSV et plus – Aspose.Cells Cloud API"
+second_title: "Document"
+linktitle: "Convertir une feuille de calcul"
+type: docs
+url: /worksheets/conversion/
+aliases:
+  - /convert-worksheet-to-image/
+  - /worksheets/to-image/
+keywords: "Aspose.Cells, conversion de feuille de calcul, API REST, cURL, SDK, PDF, PNG, CSV"
+description: "Découvrez comment convertir une seule feuille de calcul à partir d’un classeur Excel en PDF, PNG, CSV et plus de 15 autres formats à l’aide de l’API REST Aspose.Cells Cloud. Inclut un exemple cURL, des extraits de code SDK et une référence complète des paramètres."
+weight: 130
+ArticleTitle: "Convertir une feuille de calcul en PDF, PNG, CSV et plus – Aspose.Cells Cloud API"
+---
 
-## RESTE API
+**API de conversion de feuille de calcul** – Le point de terminaison `GET /cells/{name}/worksheets/{sheetName}` permet de convertir une seule feuille de calcul (une feuille à l’intérieur d’un classeur Excel) vers un autre type de fichier.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+> **Prérequis :** Vous devez posséder un jeton JWT valide et avoir le classeur stocké dans un emplacement pris en charge par le stockage Aspose Cloud avant d’invoquer ce point de terminaison.
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+Formats **importables** pris en charge (la feuille de calcul peut être lue à partir de) :
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+- XLS, XLSX, XLSB, CSV, TSV, XLSM, ODS, TXT
 
-{{< tab tabNum="1" >}}
+Formats **exportables uniquement** pris en charge (la feuille de calcul peut être enregistrée en tant que) :
 
-```java
+- PDF, OTS, XPS, DIF, PNG, JPEG, BMP, SVG, TIFF, EMF, NUMBERS, FODS
 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+## API REST
 
+La [Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) décrit l’interface publiquement accessible.
+
+### **Paramètres de la requête**
+
+| Paramètre                | Type    | Obligatoire | Valeur par défaut | Valeurs autorisées                                                  | Description                                           |
+| ------------------------ | ------- | ----------- | ----------------- | ------------------------------------------------------------------- | ----------------------------------------------------- |
+| **format**               | string  | Oui         | –                 | pdf, png, jpeg, bmp, svg, tiff, emf, csv, txt, … (voir liste ci-dessus) | Format de sortie cible.                              |
+| **verticalResolution**   | integer | Non         | 96                | 72‑600                                                              | Résolution verticale (DPI) pour la sortie image.     |
+| **horizontalResolution** | integer | Non         | 96                | 72‑600                                                              | Résolution horizontale (DPI) pour la sortie image.   |
+| **password**             | string  | Non         | –                 | –                                                                   | Mot de passe pour ouvrir un classeur protégé.        |
+| **folder**               | string  | Non         | –                 | –                                                                   | Dossier cloud où le classeur source est stocké.      |
+| **storage**              | string  | Non         | –                 | –                                                                   | Nom du stockage (par exemple, « Default »).          |
+
+### Réponse
+
+| Code d’état | Description                                                        | Type retourné              |
+| ----------- | ------------------------------------------------------------------ | -------------------------- |
+| **200**     | Conversion réussie ; flux binaire du fichier converti renvoyé.    | `application/octet-stream` |
+| **400**     | Requête incorrecte – paramètres manquants ou non valides.         | Objet d’erreur JSON        |
+| **401**     | Non autorisé – jeton JWT invalide ou manquant.                    | Objet d’erreur JSON        |
+| **404**     | Introuvable – le classeur ou la feuille de calcul n’existe pas.   | Objet d’erreur JSON        |
+| **500**     | Erreur interne du serveur – échec inattendu.                      | Objet d’erreur JSON        |
+
+#### Exemple de requête (cURL)
+
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-
-Converted Image 
+#### Exemple de réponse
 
 ```
-
-{{< /tab >}}
-
-{{< /tabs >}}
+Image convertie (flux binaire)
+```
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le moyen le plus rapide de développer. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -103,3 +123,4 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+---

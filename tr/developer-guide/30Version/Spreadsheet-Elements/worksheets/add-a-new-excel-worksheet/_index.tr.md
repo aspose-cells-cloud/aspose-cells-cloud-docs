@@ -1,75 +1,83 @@
-﻿---
-title: Excel çalışma sayfasını ekleyin
-second_title: Documen
-linktitle: Reklam
-type: docs
-url: /tr/worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
-keywords: Add an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfası eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfası ekle
 ---
-Bu REST API, `add new worksheet`'i gösterir.
+title: "Bir Excel Çalışma Sayfası Ekleyin"
+ArticleTitle: "Bir Excel Çalışma Sayfası Ekleyin - Aspose.Cells Cloud API Kılavuzu"
+second_title: "Belge"
+linktitle: "Ekle"
+type: docs
+url: /worksheets/add/
+aliases: [/add-a-new-excel-worksheet/]
+keywords: "Excel çalışma sayfası ekle, Aspose.Cells Cloud, REST API, çalışma sayfası ekle, Excel çalışma kitabı, API isteği"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabına yeni bir çalışma sayfası eklemenin adım adım kılavuzu; istek detaylarını, bir cURL örneğini ve birden fazla dil için SDK kod parçacıklarını içerir."
+weight: 20
+---
 
-## RSET API
+Bu REST API, mevcut bir çalışma kitabına yeni bir çalışma sayfası ekler.
+
+**Önkoşullar**: Bu uç noktayı çağırmak için geçerli bir Aspose Cloud kimlik doğrulama belirteciniz olmalıdır, hedef çalışma kitabının Aspose Cloud depoya yüklenmiş olması gerekir ve özel bir depo kullanıyorsanız depo adını bilmelisiniz.
+
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
 ```
 
-İstek parametreleri şunlardır:
+### **İstek parametreleri**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Yeni sayfa adı.|
-| konum| tam sayı| sorgu| Yeni sayfa pozisyonu.|
-| sayfa türü| sicim| sorgu| Yeni sayfa türü.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı | Tür      | Konum | Açıklama                                              |
+| ------------- | -------- | ----- | ----------------------------------------------------- |
+| name          | string   | path  | Çalışma kitabı dosyasının adı.                        |
+| sheetName     | string   | path  | Oluşturulacak yeni çalışma sayfasının adı.           |
+| position      | integer  | query | Sayfanın ekleneği sıfır tabanlı konum.                |
+| sheettype     | string   | query | Yeni sayfanın türü (örn., **Chart**, **Dialog**).    |
+| folder        | string   | query | Çalışma kitabının bulunduğu klasör.                   |
+| storageName   | string   | query | Aspose Cloud deposunun adı.                           |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet), herkese açık bir erişilebilir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, Cloud API'ye cURL ile nasıl istek yapıldığını göstermektedir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+**Olası yanıt durum kodları**
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| Durum Kodu | Açıklama                                             |
+|-----------|------------------------------------------------------|
+| 200       | Çalışma sayfası başarıyla eklendi.                   |
+| 400       | Geçersiz istek – geçersiz parametreler.             |
+| 401       | Yetkisiz erişim – kimlik doğrulama belirteci eksik/geçersiz. |
+| 404       | Bulunamadı – çalışma kitabı veya klasör mevcut değil. |
+| 500       | İç sunucu hatası – beklenmeyen durum.                |
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+## Bulut SDK Grubu
+
+Bir SDK kullanmak, geliştirmenin en hızlı yoludur. Bir SDK, düşük seviye detayları soyutlayarak projenize odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web servislerine nasıl istek yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -122,3 +130,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

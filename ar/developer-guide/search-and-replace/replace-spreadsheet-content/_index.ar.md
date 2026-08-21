@@ -1,102 +1,118 @@
-﻿---
-title: Aspose.Cells Cloud Web API - استبدال محتوى جدول البيانات
-second_title: Documen
-ArticleTitle: Replace Spreadsheet Conten
-linktitle: استبدال محتوى جدول البيانات
-type: docs
-url: /ar/replace-spreadsheet-content/
-keywords: Excel API, Spreadsheet manipulation, Replace text, Office Cloud integration, REST AP
-description: استبدال النص بكفاءة في ملفات جدول البيانات المحلية باستخدام Aspose.Cells API
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، JSON، Markdown، استبدال النص في Excel، مطابقة الخلايا الفارغة في ورقة العمل Excel
 ---
-استبدال النص المحدد بكفاءة داخل ملفات جدول البيانات المحلية.
+title: "Aspose.Cells Cloud – استبدال النص في ملفات إكسل المحلية (واجهة برمجة تطبيقات البحث والاستبدال)"
+second_title: "مستند"
+ArticleTitle: "استبدال النص دفعة في ملفات إكسل المحلية – واجهة برمجة تطبيقات البحث والاستبدال"
+linktitle: "استبدال محتوى جدول العمل"
+type: docs
+url: /replace-spreadsheet-content/
+keywords: "استبدال النص في إكسل، البحث والاستبدال في Aspose.Cells، واجهة برمجة تطبيقات جدول العمل المحلي، استبدال ملف إكسل، واجهة برمجة تطبيقات استبدال المحتوى"
+description: "استبدال النص في ملفات مصنفات إكسل المحلية دون رفعها إلى السحابة. استخدم واجهة برمجة تطبيقات البحث والاستبدال في Aspose.Cells Cloud لتحديث النطاقات أو الأوراق أو الملفات بأكملها في استدعاء واحد."
+weight: 100
+---
 
-## **استبدال محتوى جدول البيانات API**
+استبدال نص مُحدَّد داخل ملفات جداول العمل المحلية لإكسل دون رفعها إلى السحابة. حدّث محتوى المصنفات بكفاءة باستخدام واجهة برمجة تطبيقات البحث والاستبدال في Aspose.Cells Cloud للتحرير دون اتصال بالإنترنت.
 
+## **واجهة برمجة تطبيقات استبدال محتوى جدول العمل**
+
+### **واجهة برمجة التطبيقات عبر الويب**
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/replace/content
 ```
-PUT http://api.aspose.cloud/v4.0/cells/replace/content
+
+### **الأمان والمصادقة**
+
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
-### **معلمات الطلب:**
+### **معلَّمات الطلب:**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-| جدول بيانات| ملف| بيانات النموذج| تحميل ملف جدول البيانات.|
-| نص البحث| خيط| استفسار|النص الذي تريد البحث عنه.|
-| استبدال النص| خيط| استفسار| النص الذي سيتم استبداله به.|
-| ورقة عمل| خيط| استفسار| حدد ورقة العمل للاستبدال.|
-| منطقة الخلية| خيط| استفسار| حدد منطقة الخلية للاستبدال.|
-| منطقة| خيط| استفسار| إعداد منطقة جدول البيانات.|
-| كلمة المرور| خيط| استفسار| كلمة المرور لفتح ملف جدول البيانات.|
+| اسم المعلَّمة | النوع | المسار / سلسلة الاستعلام / جسم الطلب | الوصف |
+| :------------- | :----- | :------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet | ملف | FormData | ملف جدول العمل المحلي المراد معالجته. تشمل التنسيقات المدعومة: XLSX و XLS و ODS و CSV وما إلى ذلك. |
+| searchText | نص | Query | النص المراد البحث عنه داخل ورقة العمل المحددة ومنطقة الخلية المحددة. |
+| replaceText | نص | Query | النص الذي سيُستبدل بكل تكرارات `searchText` داخل النطاق المحدَّد. |
+| worksheet | نص | Query | _(اختياري)_ اسم ورقة العمل التي سيتم تنفيذ عملية البحث والاستبدال فيها. وإذا تُرك فارغًا، تُطبّق العملية على الورقة الأولى. |
+| cellArea | نص | Query | _(اختياري)_ النطاق المحدّد للخلايا (مثل: `"A1:D20"` أو `"B5:F15"`) حيث سيُجرى البحث والاستبدال. وإذا تُرك فارغًا، تُطبّق العملية على جميع الخلايا المستخدمة في ورقة العمل المحددة. |
+| region | نص | Query | _(اختياري)_ يُحدّد الإعدادات المحلية لمعالجة النص، والتي قد تؤثّر على حساسية الحروف وترميز الأحرف في عمليات البحث (مثل: `"en-US"` أو `"fr-FR"`). |
+| password | نص | Query | _(اختياري)_ إذا كان ملف جدول العمل المُرفع محميًا بكلمة مرور، فوفّر كلمة المرور لفتح الملف ومعالجته. |
 
-### **إجابة**
+### **الاستجابة**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream",
+      "Name": "file"
     }
+  }
 ]
 ```
 
-### رموز الخطأ
+الاستجابة هي تدفّق ثنائي يحتوي على المصنف المُحدّث. احفظه بالامتداد المناسب للملف (مثل: `.xlsx`).
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+### **أكواد الأخطاء**
 
-## أين يجب علينا استخدام محتوى الاستبدال في جدول البيانات API؟
+- **400 Bad Request (طلب غير صالح)** – رابط واجهة برمجة تطبيقات Aspose.Cells Cloud غير صالح أو معلَّمات غير صحيحة.
+- **401 Unauthorized (غير مصرّح به)** – رمز وصول غير صالح أو مفقود؛ احصل على رمز جديد.
+- **404 Not Found (غير موجود)** – ملف جدول العمل غير قابل للوصول أو ورقة العمل المحدّدة غير موجودة.
+- **500 Server Error (خطأ في الخادم)** – حدث خطأ داخلي أثناء معالجة جدول العمل؛ اتصل بالدعم إذا استمرّت المشكلة.
 
-عندما تحتاج إلى استبدال المحتوى في جدول البيانات بكلمة مرور، يمكنك استخدام هذا API.
+## أين نستخدم واجهة برمجة تطبيقات استبدال المحتوى في جدول العمل؟
 
-## لماذا يجب عليك استخدام استبدال المحتوى في جدول البيانات API؟
+- **المعالجة الدفعية لملفات إكسل المحلية** – أتمتة عملية البحث والاستبدال عبر العديد من المصنفات المخزنة محليًا.
+- **خطوط أنابيب البيانات المحلية** – دمج واجهة برمجة التطبيقات في مهام مجدولة لتعديل التقارير قبل أرشفتها أو توزيعها.
+- **توليد التقارير محليًا** – إدراج القيم ديناميكيًا في قوالب المصنفات دون رفعها إلى السحابة.
 
-- استبدال المحتوى في جداول البيانات بسرعة باستخدام كلمة المرور.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+## لماذا يجب استخدام واجهة برمجة تطبيقات استبدال المحتوى في جدول العمل؟
 
-## كيفية استخدام استبدال المحتوى في جدول البيانات API باستخدام مجموعات تطوير البرامج (SDKs)
+- **سهلة الاستخدام للمطورين** – توفر Aspose.Cells Cloud مكتبات SDK بلغات برمجة متعددة، مما يُسهّل التطوير السريع ويوثّق كل شيء بتفصيل. ومقارنةً ببناء حلول مخصصة، تُقلّل هذه الميزة بشكل كبير من جهود التطوير.
+- **خفض تكاليف العمالة** – تقلّل الحاجة إلى موظفين مخصصين لأداء عمليات دمج المستندات يدويًا.
+- **الدفع حسب الاستخدام** – لا يوجد استثمار مبدئي؛ تدفع فقط مقابل استدعاءات واجهة برمجة التطبيقات التي تستخدمها فعليًا.
+- **لا تكاليف صيانة** – لا خوادم يجب صيانتها، ولا تحديثات برمجية، ولا قلق بشأن التوافق.
+- **الحفاظ على تنسيق إكسل المعقد** – يظل تنسيق المصنف الأصلي، والمعادلات، والرسوم البيانية سليمًا بعد الاستبدال.
+
+## كيفية استخدام واجهة برمجة تطبيقات استبدال المحتوى في جدول العمل مع مكتبات SDK
 
 ### مواصفات OpenAPI
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/SearchControllor/ReplaceSpreadsheetContent) يعرف واجهة برمجة يمكن الوصول إليها بشكل عام، مما يسمح لك بإجراء تفاعلات REST مباشرة من متصفح الويب.
+تُعرّف [مواصفات OpenAPI](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceSpreadsheetContent) واجهة برمجة تطبيقات قابلة للوصول العام، مما يسمح لك بإجراء تفاعلات REST مباشرة من متصفح ويب.
 
-### استخدم Aspose.Cells Cloud SDKs
+### استخدام مكتبات SDK الخاصة بـ Aspose.Cells Cloud
 
-يُعد استخدام مجموعة أدوات تطوير البرامج (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل الأساسية، مما يسمح لك بتطبيق استبدال المحتوى في جداول البيانات للخلايا بسهولة وبأقل قدر من التعليمات البرمجية.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أسرع طريقة لتسريع التطوير. وتتولّى SDK تفاصيل الطبقة الأساسية، مما يسمح لك بتنفيذ عمليات استبدال المحتوى باستخدام كود معدود. راجع مستودع **Aspose.Cells Cloud SDK على GitHub** للحصول على قائمة كاملة باللغات المدعومة.
 
-تُظهر أمثلة التعليمات البرمجية التالية كيفية التفاعل مع خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية التفاعل مع خدمات Aspose.Cells عبر مكتبات SDK مختلفة:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ReplaceTextInLocalFile.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ReplaceTextInLocalFile.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ReplaceTextInLocalFile.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ReplaceTextInLocalFile.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ReplaceTextInLocalFile.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ReplaceTextInLocalFile.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ReplaceTextInLocalFile.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ReplaceTextInLocalFile.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ReplaceTextInLocalFile.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ReplaceTextInLocalFile.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ReplaceTextInLocalFile.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ReplaceTextInLocalFile.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ReplaceTextInLocalFile.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ReplaceTextInLocalFile.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ReplaceTextInLocalFile.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ReplaceTextInLocalFile.go" >}}
+{{</tab>}}
 {{< /tabs >}}

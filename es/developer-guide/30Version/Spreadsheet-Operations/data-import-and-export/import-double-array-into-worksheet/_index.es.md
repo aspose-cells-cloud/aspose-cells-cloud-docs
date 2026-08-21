@@ -1,47 +1,54 @@
-﻿---
-title: Importar matriz doble a la hoja de trabajo Excel
-second_title: Documen
-linktitle: Importar doble arra
-type: docs
-url: /es/import-double-array-into-excel-worksheet/
-aliases: [/import-double-array-into-worksheet/,/import-data/double-array/,/import/double-array/]
-keywords: Import double array data into Excel files
-description: Aspose.Cells Cloud REST API admite la importación de datos de matriz doble en archivos Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Importar matriz doble en la hoja de trabajo Excel
 ---
-Esta hoja de trabajo REST API `import double array data` en Excel.
+title: "Importar matriz doble en hoja de cálculo de Excel"
+second_title: "Documento"
+linktitle: "Importar matriz doble"
+type: docs
+url: /import-double-array-into-excel-worksheet/
+aliases:
+  - /import-double-array-into-worksheet/
+  - /import-data/double-array/
+  - /import/double-array/
+keywords: "Aspose.Cells, importar matriz doble, API de Excel, SDK en la nube"
+description: "Aprenda a importar una matriz doble en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye autenticación, formato de solicitud, parámetros, ejemplo en XML/JSON y detalles de respuesta."
+weight: 20
+ArticleTitle: "Importar matriz doble en hoja de cálculo de Excel – Guía de Aspose.Cells Cloud"
+---
 
-La solicitud es una solicitud HTTP con contenido de varias partes (ver[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)o[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La primera parte del contenido multiparte contiene los datos de ImportDoubleArrayOption y la segunda contiene un archivo de datos.
+Esta API REST **importa datos de matriz doble** en una hoja de cálculo de Excel.
 
-## RSET API
+> **Requisitos previos:** Debe tener un token JWT válido antes de llamar a esta API. Consulte la guía de autenticación para más detalles.
 
-```bash
+Envía una solicitud HTTP con contenido **multipart** (consulte [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) o [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
+La primera parte del cuerpo multipart contiene los datos de **ImportDoubleArrayOption** y la segunda parte contiene el archivo de datos.
 
+## API PostImportData
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-Los parámetros importantes se describen en la siguiente tabla:
+### **Seguridad y autenticación**
 
-**ImportarOpciónDeMatrizDoble**
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
-|Nombre del parámetro|Tipo|Descripción|
-|:- |:- |:- |
-| Primera fila| entero||
-| Primera columna| entero||
-| Es vertical| cadena| verdadero/falso.|
-| Datos|Doble[]||
-|Hoja de trabajo de destino| cadena| Nombre de la hoja de trabajo de destino.|
-| EsInsertar| cadena| verdadero/falso.|
-| Importar tipo de datos| cadena|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Fuente| Fuente del archivo| Indica la posición del archivo de datos cuando el parámetro BatchData es nulo.|
+### Parámetros de solicitud
 
-**Ejemplo**
+#### **ImportDoubleArrayOption**
+
+| Nombre del parámetro | Tipo       | Descripción                                                                                               |
+| --------------------- | ---------- | --------------------------------------------------------------------------------------------------------- |
+| FirstRow             | int        | Índice de fila (base cero) donde se colocarán los datos.                                                 |
+| FirstColumn          | int        | Índice de columna (base cero) donde se colocarán los datos.                                              |
+| IsVertical           | boolean    | `true` / `false` – determina si la matriz se inserta verticalmente (`true`) u horizontalmente (`false`). |
+| Data                 | Double[]   | Matriz de valores dobles para importar.                                                                  |
+| DestinationWorksheet | string     | Nombre de la hoja de cálculo de destino.                                                                 |
+| IsInsert             | boolean    | `true` / `false` – si es `true`, los datos se insertan; si es `false`, se sobrescriben las celdas existentes. |
+| ImportDataType       | string     | Tipo de datos que se importan (por ejemplo, `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`). |
+| Source               | FileSource | Especifica la ubicación del archivo de datos cuando el parámetro `BatchData` es nulo.                    |
+
+#### Ejemplo (XML)
 
 ```xml
-
 <ImportDoubleArrayOption>
     <DestinationWorksheet>Sheet1</DestinationWorksheet>
     <IsInsert>false</IsInsert>
@@ -49,32 +56,72 @@ Los parámetros importantes se describen en la siguiente tabla:
     <FirstRow>1</FirstRow>
     <FirstColumn>1</FirstColumn>
     <IsVertical>true</IsVertical>
+    <Data>1.99,1.9,2.0</Data>
     <Source>
         <FileSourceType>CloudFileSystem</FileSourceType>
         <FilePath>Array_double_xml.txt</FilePath>
     </Source>
 </ImportDoubleArrayOption>
-
 ```
+
+#### Ejemplo (JSON)
 
 ```json
 {
-    "Data": [1.99, 1.9, 2.0],
-    "DestinationWorksheet": "Sheet1",
-    "FirstRow": 0,
-    "FirstColumn": 0,
-    "IsVertical": false,
-    "IsInsert": true,
-    "importDataType": "DoubleArray"
+  "Data": [1.99, 1.9, 2.0],
+  "DestinationWorksheet": "Sheet1",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "IsVertical": false,
+  "IsInsert": true,
+  "ImportDataType": "DoubleArray"
 }
-
 ```
 
-## Familia de SDK en la nube
+### Respuesta
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Una solicitud correcta devuelve **HTTP 200** con una carga útil JSON similar a:
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+Códigos de estado posibles:
+
+| Código | Significado                                   |
+| ------ | --------------------------------------------- |
+| 200    | Importación correcta                          |
+| 400    | Solicitud incorrecta: datos faltantes o inválidos |
+| 401    | No autorizado: token inválido o ausente       |
+| 500    | Error interno del servidor                    |
+
+### Manejo de errores
+
+Cuando ocurre un error, la API devuelve un objeto JSON que contiene el código de error y un mensaje descriptivo. Ejemplo para una solicitud no autorizada:
+
+```json
+{
+  "Code": 401,
+  "Status": "Error"
+}
+```
+
+Para obtener más información sobre operaciones de importación relacionadas, consulte las páginas de documentación sobre “Importar matriz doble de 2 dimensiones” e “Importar matriz entera”.
+
+## Cómo usar la API PostImportData con SDK
+
+### Especificación de la API PostImportData
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
+
+### Uso de los SDK de Aspose.Cells Cloud
+
+Usar un SDK es la mejor forma de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

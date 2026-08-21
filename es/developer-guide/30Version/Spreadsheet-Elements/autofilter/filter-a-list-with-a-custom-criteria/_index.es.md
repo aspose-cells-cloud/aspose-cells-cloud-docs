@@ -1,86 +1,105 @@
-﻿---
-title: Agregar un criterio personalizado en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Agregar filtro personalizado
-type: docs
-url: /es/autofilter/add-custom-filter/ 
-aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/ ]
-keywords: Adds a custom filter on an Excel worksheet
-description: El SDK Aspose.Cells Cloud API permite agregar un filtro personalizado a una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 65
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Agregar un criterio personalizado en una hoja de cálculo Excel
 ---
-Este REST API indica filtrar una lista con un `custom criteria`.
+title: "Agregar un criterio personalizado en una hoja de cálculo de Excel"
+second_title: "Documento"
+linktitle: "Agregar filtro personalizado"
+type: docs
+url: /autofilter/add-custom-filter/
+aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/]
+keywords: "Excel, filtro personalizado, Aspose.Cells Cloud, API REST, filtro automático, hoja de cálculo, criterio personalizado"
+description: "Aprenda a usar la API REST de Aspose.Cells Cloud para agregar un filtro personalizado en una hoja de cálculo de Excel. Incluye detalles de la solicitud, un ejemplo con cURL y fragmentos de código SDK para múltiples lenguajes de programación."
+weight: 65
+ArticleTitle: "Agregar un criterio personalizado en una hoja de cálculo de Excel – API de Aspose.Cells Cloud"
+---
 
-## RSET API
+Esta API REST filtra una lista utilizando un **criterio personalizado**.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/custom
- 
+## API PutWorksheetCustomFilter
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/custom
 ```
 
-Los parámetros de la solicitud son:
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino||
-| nombreHoja| cadena| camino||
-| rango| cadena| consulta||
-| índice de campo| entero| consulta||
-| operadorTipo1| cadena| consulta||
-| Criterio 1| cadena| consulta||
-| esY| booleano| consulta||
-| operadorTipo2| cadena| consulta||
-| criterios2| cadena| consulta||
-| MatchBlanks| booleano| consulta||
-| refrescar| booleano| consulta||
-| carpeta| cadena| consulta||
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+### Parámetros de solicitud:
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+| Nombre del parámetro | Tipo    | Ubicación                   | Descripción                                                                 |
+|----------------------|---------|-----------------------------|-----------------------------------------------------------------------------|
+| name                 | string  | path                        | Nombre del archivo de Excel.                                               |
+| sheetName            | string  | path                        | Nombre de la hoja de cálculo que contiene los datos que se van a filtrar. |
+| range                | string  | query                       | Rango de celdas al que se aplicará el filtro (por ejemplo, `A1:B1`).       |
+| fieldIndex           | integer | query                       | Índice de columna basado en cero sobre el que se aplica el filtro.         |
+| operatorType1        | string  | query                       | Primer operador de comparación (por ejemplo, `LessOrEqual`, `Equal`).      |
+| criteria1            | string  | query                       | Primer valor o expresión de filtro.                                        |
+| isAnd                | boolean | query                       | Si es `true`, combina ambos criterios con **Y**; de lo contrario, con **O**. |
+| operatorType2        | string  | query                       | Segundo operador de comparación (opcional).                               |
+| criteria2            | string  | query                       | Segundo valor o expresión de filtro (opcional).                            |
+| matchBlanks          | boolean | query                       | Cuando es `true`, se incluyen las celdas vacías en los resultados del filtro. |
+| refresh              | boolean | query                       | Si es `true`, fuerza la actualización de la hoja de cálculo tras aplicar el filtro. |
+| folder               | string  | query                       | Ruta de carpeta en el almacenamiento donde se encuentra el archivo.       |
+| storageName          | string  | query                       | Nombre del servicio de almacenamiento.                                    |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Respuesta**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                                  |
+|--------|-----------------------------|--------------------------------------------------------------|
+| 200    | OK                          | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros ausentes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT no válido o ausente.                               |
+| 413    | Carga útil demasiado grande | El archivo subido excede el límite de tamaño.               |
+| 500    | Error interno del servidor  | Error inesperado en el servidor.                            |
+
+## Cómo utilizar la API PutWorksheetCustomFilter con SDKs
+
+### Especificación de la API PutWorksheetCustomFilter
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter) define una interfaz de programación públicamente accesible y le permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos **cURL** para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/custom?range=A1:B1&fieldIndex=0&operatorType1=LessOrEqual&criteria1=1" \
--X PUT 
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/custom?range=A1:B1&fieldIndex=0&operatorType1=LessOrEqual&criteria1=1" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Familia de SDK en la nube
+### Utilizar los SDK de Aspose.Cells Cloud
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de desarrollar. Un SDK maneja los detalles de bajo nivel para que usted se enfoque en la lógica de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells utilizando diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -133,3 +152,5 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Para otras operaciones de AutoFilter, como agregar un filtro estándar o un filtro de fecha, consulte las páginas de documentación relacionadas dentro de la sección AutoFilter.

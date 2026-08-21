@@ -1,31 +1,39 @@
-﻿---
-title: "Aspose.Cells için PHP Cloud SDK: Dönüştürme, birleştirme, bölme, koruma, arama, değiştirme ve daha fazlası"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for PHP: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells PH için Bulut SDK'sı
-type: docs
-url: /tr/available-sdks/aspose-cells-cloud-php/
-description: "Aspose.Cells için PHP Cloud SDK, gerçek platformlar arası güç sunar: tek bir içe aktarma, Windows, Linux ve macOS geliştiricilerine her nesneyi oluşturma, dönüştürme, birleştirme, bölme, koruma ve düzenleme konusunda aynı akıcı API özelliğini sağlar; Office kurulum gerekmez ve platforma özgü ayarlamalar gerekmez"
-weight: 30
-kwords: PHP SDK, PHP için Excel SDK, PHP için Cloud SDK, REST, Grafik, Pivot Tablo, Tablo/Liste Nesnesi, Elektronik Tablo Dönüştürme, PDF, CSV, Json, Markdown, Birleştirme, Bölme, Koruma, Arama, Değiştirme
 ---
-SDK açık kaynaklıdır ve MIT Lisansı kapsamında lisanslanmıştır. Erişim sağlayabilirsiniz[Aspose.Cells Cloud için PHP kütüphane kaynak kodu](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php).
+title: "Aspose.Cells Cloud PHP SDK – Excel Dosyalarını Dönüştürün, Birleştirin, Bölün, Koruyun"  
+second_title: "Belge"  
+ArticleTitle: "Aspose.Cells Cloud PHP SDK – Excel Dosyalarını Dönüştürün, Birleştirin, Bölün, Koruyun"  
+linktitle: "Aspose.Cells Cloud PHP SDK"  
+type: docs  
+url: /available-sdks/aspose-cells-cloud-php/  
+description: "Aspose.Cells Cloud PHP SDK’sini (v24.3) indirin. Composer üzerinden nasıl kurulacağını, kimlik doğrulaması nasıl yapılacağını, XLSX’i PDF/CSV’ye dönüştürmeyi, çalışma kitaplarını birleştirmeyi, sayfaları korumayı ve daha fazlasını öğrenin – Office kurmadan bunların hepsini yapın."  
+keywords: "Aspose.Cells, Bulut, PHP, SDK, Excel, Dönüştür, Birleştir, Böl, Koru"  
+weight: 30  
+---  
 
-# **PHP için Aspose.Cells Cloud SDK nasıl kullanılır?**
+Bu SDK açık kaynaklıdır ve MIT Lisansı altında lisanslanmıştır. Aspose.Cells Cloud için PHP kütüphanesinin kaynak koduna <a href="https://github.com/aspose-cells-cloud/aspose-cells-cloud-php" target="_blank" rel="noopener noreferrer">buradan</a> ulaşabilirsiniz.
 
-PHP için Aspose.Cells Cloud SDK, geliştiricilerin Go programlama dilini kullanarak Microsoft Excel dosyalarını düzenlemelerine ve işlemelerine olanak tanıyan güçlü bir kütüphanedir. Bu SDK ile, yerel makinenize ek yazılım veya bağımlılıklar yüklemeden bulutta Excel belgeleri oluşturabilir, düzenleyebilir ve dönüştürebilirsiniz.
+# **Aspose.Cells Cloud SDK for PHP Nasıl Kullanılır**
 
-Bu makalede, PHP için Aspose.Cells Cloud SDK'nın yeni bir Excel çalışma kitabı oluşturma, hücrelere veri ekleme ve değiştirilen çalışma kitabını buluta kaydetme gibi bazı genel görevleri gerçekleştirmek için nasıl kullanılacağını inceleyeceğiz.
+Aspose.Cells Cloud SDK for PHP, geliştiricilerin Microsoft Excel dosyalarını **PHP programlama dili** kullanarak işlemesini ve işlemesini sağlayan güçlü bir kütüphanedir. Bu SDK ile, yerel makinenize ek yazılım veya bağımlılıklar kurmadan bulutta Excel belgeleri oluşturabilir, düzenleyebilir ve dönüştürebilirsiniz.
 
-## Başlarken
+Bu makalede, Aspose.Cells Cloud SDK for PHP ile bazı yaygın görevleri nasıl gerçekleştireceğimizi inceleyeceğiz; örneğin yeni bir Excel çalışma kitabı oluşturma, hücrelere veri ekleme ve değiştirilmiş çalışma kitabını buluta kaydetme.
 
- Aspose.Cells Cloud SDK for Go'yu kullanmaya başlamadan önce, geliştirme ortamınızı ayarlamanız ve gerekli bağımlılıkları yüklemeniz gerekir. Bkz.[makale](https://docs.aspose.cloud/cells/quickstart/) Müşteri ID'nizi ve müşteri sırrınızı almak için Aspose web sitesini ziyaret edin.
+## Başlangıç
 
-## Aspose.Cells Cloud için PHP paketi nasıl kurulur?
+Aspose.Cells Cloud SDK for **PHP** kullanmaya başlamadan önce geliştirme ortamınızı kurmanız ve gerekli bağımlılıkları yüklemeniz gerekir. İstemci kimliğiniz ve istemci gizli anahtarınızı almak için Aspose web sitesindeki <a href="https://docs.aspose.cloud/cells/quickstart/" target="_blank" rel="noopener noreferrer">makaleye</a> bakın.
 
-PHP için Aspose.Cells Cloud SDK'yı yükleyebilirsiniz. Adımlar aşağıdadır:
+**Önkoşullar**
 
-- Aspose.Cells Cloud'u `composer.json` dosyanıza bağımlılık olarak ekleyin:
+- PHP 7.4 veya üzeri  
+- Geliştirme makinenizde Composer yüklü  
+- Geçerli Aspose Cloud istemci kimliği ve istemci gizli anahtarı  
+- Aspose Cloud depolama konumuna erişim (varsayılan veya özel)  
+
+## Aspose.Cells Cloud için PHP paketi nasıl yüklenir
+
+Aspose.Cells Cloud SDK for PHP’yi yükleyebilirsiniz. Aşağıda adımlar yer almaktadır:
+
+- `composer.json` dosyanıza Aspose.Cells Cloud’u bağımlılık olarak ekleyin:
 
    ```json
    {
@@ -35,31 +43,59 @@ PHP için Aspose.Cells Cloud SDK'yı yükleyebilirsiniz. Adımlar aşağıdadır
    }
    ```
 
-- SDK'yı yüklemek için Composer güncellemesini çalıştırın:
+- SDK’yı yüklemek için Composer güncellemesini çalıştırın:
 
    ```bash
-
    composer install
-
    ```
 
-- PHP kodunuza Composer'ın otomatik yükleyicisini ekleyin:
+- PHP kodunuzda Composer’in otomatik yükleyicisini ekleyin:
 
    ```php
-
    require 'vendor/autoload.php';
-
    ```
 
-## Xlsx'i diğer formatlara dönüştürmek için PHP paketi nasıl kullanılır?
+## PHP paketi ile Xlsx’i diğer formatlara dönüştürme
 
-- Aspose.Cells Bulut Kütüphanesini İçe Aktar
- Öncelikle Aspose.Cells Cloud PHP SDK'sından gerekli paketi projenize aktararak başlayın.
-- API İstemcisini Kimlik Bilgileriyle Yapılandırın
- API istemcinizi benzersiz istemci kimliğiniz ve istemci sırrınızla doğrulayın.
-- Dönüştürme Parametrelerini Hazırla
- Kaynak dosya adı, istenen çıktı biçimi ve depolama klasörü yolu dahil olmak üzere dönüştürme görevi için parametreleri tanımlayın.
-- Çalışma Kitabı Dönüşümünü Çalıştır
- Dönüştürme işlemini PostConvertWorkbook metodunu kullanarak çağırın ve yanıtı işleyin.
+- Aspose.Cells Cloud Kitaplığını İçe Aktar  
+  Öncelikle Aspose.Cells Cloud PHP SDK’sından projenize gerekli paketi içe aktarın.
+
+- Kimlik Bilgileri ile API İstemcisini Yapılandırma  
+  API istemcinizi benzersiz istemci kimliğiniz ve istemci gizli anahtarınız ile kimlik doğrulaması yapın.
+
+- Dönüştürme Parametrelerini Hazırlama  
+  Dönüştürme görevi için kaynak dosya adı, istenen çıktı formatı ve depolama klasör yolu gibi parametreleri tanımlayın.
+
+- Çalışma Kitabı Dönüştürmesini Gerçekleştirme  
+  `PostConvertWorkbook` yöntemini kullanarak dönüştürme işlemini çağırın ve yanıtı işleyin.
 
 {{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_AvailableSDKs.php" >}}
+
+### `PostConvertWorkbook` için API Referansı
+
+| Parametre      | Açıklama                                     | Tür    | Gerekli |
+|----------------|----------------------------------------------|--------|---------|
+| `file`         | Kaynak Excel dosyasının adı (örn. `sample.xlsx`). | string | Evet    |
+| `format`       | İstenen çıktı formatı (`pdf`, `csv`, `png`, vb.). | string | Evet    |
+| `storage`      | Kaynak dosyanın bulunduğu depo adı veya klasör yolu. | string | Hayır   |
+| `outPath`      | Dönüştürülmüş dosyayı doğrudan depoda kaydetmek için isteğe bağlı yol. | string | Hayır   |
+
+**HTTP Yöntemi:** POST  
+**Uç Nokta:** `/cells/convert/{format}`  
+
+**Yanıt Örneği (JSON)**  
+
+```json
+{
+  "status": "OK",
+  "url": "https://api.aspose.cloud/v3.0/cells/convert/output.pdf"
+}
+```
+
+**Durum Kodları**
+
+- `200` – Dönüştürme başarılı.  
+- `400` – Geçersiz istek (eksik veya geçersiz parametreler).  
+- `401` – Kimlik doğrulama başarısız.  
+- `500` – Sunucu hatası.  
+---

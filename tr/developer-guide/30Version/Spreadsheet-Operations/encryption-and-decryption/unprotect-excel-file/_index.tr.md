@@ -1,82 +1,97 @@
-﻿---
-title: Excel çalışma kitabının korumasını kaldırın
-second_title: Documen
-linktitle: Excel dosyasını koruma altına alın
-type: docs
-url: /tr/excel-file-unprotect/
-aliases: [/unprotect-excel-workbooks/, /workbook/unprotect/]
-keywords: REST API, spreadsheets, excel, merg
-description: "Cells. Excel için API Bulutu çalıştırın: Excel çalışma kitabını koruyun"
-weight: 60
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma kitabının korumasını kaldır
 ---
-Bu REST API, Excel `workbook`'in korumasını kaldırır.
+title: "Excel Çalışma Kitabını Korumasını Kaldır – Aspose.Cells Cloud API"
+second_title: "Belge"
+linktitle: "Excel Dosyasının Korumasını Kaldır"
+type: docs
+url: /excel-file-unprotect/
+aliases:
+  - /unprotect-excel-workbooks/
+  - /workbook/unprotect/
+keywords: "Aspose Cells, Excel koruması kaldırma API'si, çalışma kitabı korumasını kaldır, REST API, bulut elektronik tablo"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabının korumasını nasıl kaldıracağınızı öğrenin. İstek sözdizimi, parametreler, cURL örneği ve birden fazla dilde SDK kodunu içerir."
+weight: 60
+ArticleTitle: "Excel Çalışma Kitabını Korumasını Kaldır – Aspose.Cells Cloud API"
+---
 
-**Sorgu Parametresi**
+Bu REST API'yi bir Excel çalışma kitabının korumasını kaldırmak için kullanın.
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|dosya|sicim|Orijinal çalışma kitabı klasörü.|
-|depolamaAdı|sicim|Depolama adı.|
+## DeleteUnProtectWorkbook API
 
-**İstek Gövde Parametresi**
-
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|koruma|Çalışma Kitabı Koruma Talebi||
-
-**Çalışma Kitabı Koruma Talebi**
-
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|Koruma Türü|sicim|TÜMÜ/İÇERİK/HİÇBİRİ/NESNELER/SENARYOLAR/YAPI/PENCERELER|
-|Şifre|sicim||
-
-## DİNLENME API
-
-|**API**|**Tip**|**Tanım**|**Swagger Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/{isim}/koruma|SİLMEK|Bir belgenin korumasını kaldırın|[DeleteUnProtectWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectWorkbook)|
-
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectWorkbook) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
-
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection" -H "accept: application/json"  -H "Content-Type: application/json" -d "{ \"ProtectionType\": \"all\", \"Password\": \"aspose\"}"
-
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/protection
 ```
 
-{{< /tab >}}
+### **Güvenlik ve Kimlik Doğrulama**
 
-{{< tab tabNum="2" >}}
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-```java
+### Yol Parametreleri
 
+| Parametre | Tür     | Açıklama                                           | Gerekli |
+| --------- | ------- | -------------------------------------------------- | ------- |
+| **name**  | string  | Çalışma kitabı dosyasının adı (uzantı dahil).     | Evet    |
+
+### Sorgu Parametreleri
+
+| Parametre Adı | Tür    | Açıklama                                                |
+| ------------- | ------ | ------------------------------------------------------- |
+| folder        | string | Orijinal çalışma kitabının bulunduğu klasörün yolu.    |
+| storageName   | string | Çalışma kitabının bulunduğu depolama hizmetinin adı.   |
+
+### İstek Gövdesi Parametreleri
+
+| Parametre Adı | Tür                       | Açıklama                                          |
+| ------------- | ------------------------- | ------------------------------------------------ |
+| protection    | WorkbookProtectionRequest | Kaldırılacak koruma ayarlarını belirten nesne.   |
+
+#### WorkbookProtectionRequest
+
+| Parametre Adı  | Tür    | Açıklama                                                                                     |
+| -------------- | ------ | -------------------------------------------------------------------------------------------- |
+| ProtectionType | string | Kaldırılacak koruma türü (`ALL`, `CONTENTS`, `NONE`, `OBJECTS`, `SCENARIOS`, `STRUCTURE`, `WINDOWS`). |
+| Password       | string | Korumayı kaldırmak için gereken şifre (isteğe bağlı).                                        |
+
+#### cURL Örneği
+
+```bash
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=MyFolder&storageName=MyStorage" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -d '{ "ProtectionType": "ALL", "Password": "aspose"}'
+```
+
+#### Yanıt (Başarılı)
+
+```json
 {
-
-  "Code":"200",
-
-  "Status":"OK"
-
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
-{{< /tab >}}
+### HTTPS Durum Hata Yanıtları
 
-{{< /tabs >}}
+| HTTP Durumu | Kod                 | Açıklama                                                   |
+| ----------- | ------------------- | ---------------------------------------------------------- |
+| 400         | BadRequest          | Eksik veya geçersiz parametreler.                          |
+| 401         | Unauthorized        | Geçersiz veya eksik erişim belirteci.                      |
+| 404         | NotFound            | Belirtilen çalışma kitabının belirtilen klasör/depolamada bulunamadı. |
+| 500         | InternalServerError | Beklenmeyen sunucu hatası.                                 |
 
-## Bulut SDK Ailesi
+## DeleteUnProtectWorkbook API'sini SDK'larla Nasıl Kullanılır
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+### DeleteUnProtectWorkbook API Spesifikasyonu
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Protection/DeleteUnProtectWorkbook), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize izin verir.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye nasıl çağrı yapılacağını göstermektedir.
+
+### Aspose.Cells Cloud SDK’larını Kullanma
+
+SDK kullanmak entegrasyonu basitleştirir ve tekrarlayan kod miktarını azaltır. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -129,3 +144,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

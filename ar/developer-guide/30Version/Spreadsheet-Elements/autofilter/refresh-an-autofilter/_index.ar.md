@@ -1,78 +1,119 @@
-﻿---
-title: تحديث مرشح تلقائي في ورقة عمل Excel
-second_title: Documen
-linktitle: تحديث الفلتر التلقائي
+---
+title: "تحديث فلتر تلقائي في ورقة عمل إكسل"
+second_title: "وثيقة"
+linktitle: "تحديث الفلتر التلقائي"
 type: docs
 url: /ar/autofilter/refresh/
-aliases: [/refresh-an-autofilter/]
+aliases: [/ar/refresh-an-autofilter/]
 weight: 100
-keywords: Refresh auto filter on an Excel worksheet
-description: يدعم الإصدار Aspose.Cells Cloud API تحديث الفلتر تلقائيًا في ورقة العمل Excel. تدعم حزمة SDK لغات تطوير متنوعة، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تحديث مرشح تلقائي في ورقة عمل Excel
+keywords: "Aspose.Cells, AutoFilter, تحديث, إكسل, API, REST"
+description: "تحديث فلتر تلقائي موجود في ورقة عمل إكسل باستخدام واجهة Aspose.Cells Cloud REST API. يشمل أمثلة لـ cURL و SDKات متعددة مثل C#، Java، Python، والمزيد."
+ArticleTitle: "تحديث فلتر تلقائي في ورقة عمل إكسل"
 ---
-يشير هذا REST API إلى الفلتر التلقائي `refresh` في ورقة العمل Excel.
 
-## RSET API
+### ماذا يفعل **التحديث**؟
+
+استدعاء نقطة النهاية هذا يُطبّق معايير التصفية الحالية مجددًا بعد تغيّر بيانات الورقة (مثل إضافة أو حذف صفوف). لا يغيّر هذا الإجراء تعريف الفلتر؛ بل يقوم بتحديث العرض فقط ويُعيد استجابة توضّح الحالة.
+
+### واجهة REST API
+
+تقوم هذه واجهة REST API بتحديث الفلتر التلقائي في ورقة عمل إكسل (إصدار API **v3.0**).
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعدّ واجهات Aspose.Cells Cloud API آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetAutoFilterRefresh) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **الاستجابة**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**رموز حالة HTTP**
+
+| الرمز | المعنى                      | الوصف                                            |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | ناجح (OK)                   | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صالح (Bad Request) | معطيات ناقصة أو غير صحيحة (مثل نوع ملف غير مدعوم). |
+| 401  | غير مصادق عليه (Unauthorized) | رمز JWT غير صالح أو مفقود. |
+| 413  | حجم الحمولة كبير جدًا (Payload Too Large) | تجاوز حجم الملف المرفوع الحد المسموح. |
+| 500  | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم. |
+
+*أمثلة على استجابات الأخطاء*  
+
+```json
+// 400 Bad Request
+{
+    "Code": 400,
+    "Message": "معطى غير صالح: لم يتم العثور على اسم الورقة (sheetName)."
+}
+
+// 401 Unauthorized
+{
+    "Code": 401,
+    "Message": "فشلت المصادقة. رمز JWT مفقود أو غير صالح."
+}
+
+// 413 Payload Too Large
+{
+    "Code": 413,
+    "Message": "تجاوز حجم الملف المرفوع الحد الأقصى المسموح به."
+}
+
+// 500 Internal Server Error
+{
+    "Code": 500,
+    "Message": "حدث خطأ غير متوقع في الخادم."
+}
+```
+
+## كيفية استخدام واجهة PostWorksheetAutoFilterRefresh مع SDKs
+
+###仕様 واجهة PostWorksheetAutoFilterRefresh
+
+يُعرّف <a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetAutoFilterRefresh" rel="noopener noreferrer">مواصفات OpenAPI</a> واجهة برمجة تطبيقات متاحة للعامة وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب الخاصة بـ Aspose.Cells. يوضح المثال التالي كيفية إجراء المكالمات إلى واجهة Cloud API باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/refresh" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/refresh" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your-jwt-token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام SDKات Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. تُدار التفاصيل منخفضة المستوى بواسطة الـ SDK، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطّلاع على <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بـ SDKات Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
-
+توضح أمثلة الكود التالية كيفية إجراء مكالمات إلى خدمات الويب الخاصة بـ Aspose.Cells باستخدام SDKات متنوعة:
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -124,3 +165,4 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 {{< /tab >}}
 
 {{< /tabs >}}
+---

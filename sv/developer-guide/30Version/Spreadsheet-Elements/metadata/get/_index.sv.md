@@ -1,58 +1,78 @@
-﻿---
-title: Hämta metadata från filen Excel
-second_title: Documen
-linktitle: Få utan att använda lagringsutrymme
-type: docs
-url: /sv/metadata/get/
-keywords: Get properties from Excel files
-description: Aspose.Cells Cloud REST API stöder hämtning av egenskaper från Excel-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 23
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta metadata från Excel-filer
 ---
-Denna REST API indikerar att `metadata` ska hämtas från flera Excel-filer.
+title: "Hämta metadata från Excel-filer"
+second_title: "Dokument"
+linktitle: "Hämta utan att använda lagring"
+type: docs
+url: /metadata/get/
+keywords: "Aspose.Cells, Excel, metadata, REST API, molntjänst"
+description: "Hämta inbyggda eller anpassade metadata från Excel-arbetsböcker med Aspose.Cells Cloud REST API. Inkluderar begäranformat, parametrar, exempel på SDK-kod och felhantering."
+weight: 23
+ArticleTitle: "Hämta metadata från Excel-filer - Aspose.Cells Cloud API"
+---
+
+Denna REST API hämtar **metadata** från en eller flera Excel-filer.  
+Begäran måste inkludera ett `Authorization: Bearer <access_token>`-huvud som erhållits via OAuth 2.0-klientautentisering.
+
+**Förutsättningar**: För att kunna anropa denna slutpunkt måste du ha en giltig åtkomsttoken som erhållits från Aspose Clouds OAuth 2.0-tokenslutpunkt. Exempel på curl-begäran för att erhålla en token:
 
 ```bash
+curl -X POST "https://api.aspose.cloud/connect/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
+```
 
+## REST API
+
+```bash
 POST https://api.aspose.cloud/v3.0/cells/metadata/get
-
 ```
 
-- **Frågeparameter**
+### Frågeparameter
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-| typ| sträng| ALLA/Inbyggda/Anpassade|
+| Parameternamn | Typ    | Beskrivning                                                                 |
+| ------------- | ------ | --------------------------------------------------------------------------- |
+| type          | string | `ALL` / `BuiltIn` / `Custom` – anger vilka metadatagrupper som ska returneras. |
 
-- **Begäran om brödtextparameter**
+### Begärans brödtextparameter
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|Excel-fil| datafil|Datafilen sparas i den första delen av det flerdelade innehållet.|
+| Parameternamn | Typ       | Beskrivning                                                             |
+| ------------- | --------- | ----------------------------------------------------------------------- |
+| excel file    | datafil   | Excel-filen som skickas som första del i multipart-begäran.            |
 
-- **Svar**
+### Svar
 
-```bash
-{
-    [
-        { 
-            "Name":"test1",
-            "Value":"test1",
-            ...
-        },
-        { 
-            "Name":"test2",
-            "Value":"test3",
-            ...
-        }
-    ]
-}
+```json
+[
+  {
+    "Name": "Author",
+    "Value": "John Doe",
+    "BuiltIn": true,
+    "IsReadOnly": false
+  },
+  {
+    "Name": "CustomProp1",
+    "Value": "Custom Value",
+    "BuiltIn": false,
+    "IsReadOnly": false
+  }
+]
 ```
 
-- **Cloud SDK-familjen**
+| Kod | Betydelse               | När                                |
+|-----|-------------------------|------------------------------------|
+| 200 | Lyckades                | Metadata har returnerats.          |
+| 400 | Ogiltig begäran         | Fil saknas eller ogiltig fråga.    |
+| 401 | Obehörig                | Ogiltig eller saknad token.        |
+| 404 | Hittades inte           | Angiven fil kunde inte hittas.     |
+| 500 | Internt serverfel       | Oväntat serverfel uppstod.         |
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+API:et returnerar dessa standard-HTTP-statuskoder tillsammans med ett JSON-objekt som beskriver felet, om relevant.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+### Molntjänstfamilj
+
+Att använda en SDK accelererar utvecklingen genom att hantera detaljer på låg nivå. Se [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:n.
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:n:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -105,3 +125,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

@@ -1,14 +1,15 @@
-﻿---
-title: "Excel Procesamiento de texto: agregar texto, eliminar caracteres, recortar texto, actualizar mayúsculas y minúsculas y mucho más"
-second_title: Documen
-linktitle: Procesamiento de texto
+---
+title: "Procesamiento de texto en Excel: agregar texto, eliminar caracteres, recortar texto, actualizar mayúsculas y más"
+second_title: "Documento"
+linktype: "Procesamiento de texto"
 type: docs
-url: /es/text-processing/
-keywords: "Excel Text Processing: Add Text, Remove Characters, Trim Text, Update Word Case, Convert Text, Split Text, Merge Text, Replace Text, Find Text, Count Text, Text to PDF, Text to CSV, Text to JSON, Text to Markdow"
-description: Aspose.Cells Cloud REST API admite la combinación y división de archivos Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+url: /text-processing/
+keywords: "procesamiento de texto en Excel, agregar texto, eliminar caracteres, recortar texto, actualizar mayúsculas, convertir texto, dividir texto, fusionar texto, reemplazar texto, buscar texto, contar texto, texto a PDF, texto a CSV, texto a JSON, texto a Markdown, Aspose.Cells Cloud"
+description: "Explore la API REST de Aspose.Cells Cloud para tareas integrales de procesamiento de texto en Excel, incluyendo agregar texto, eliminar caracteres, recortar espacios, cambiar mayúsculas y minúsculas, convertir formatos y más. Los SDK están disponibles para Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby y Swift."
 weight: 20
 ---
-- **["Añadir texto a Excel: Insertar datos de forma eficiente con la hoja de cálculo WEB API"](https://docs.aspose.cloud/cells/excel-add-text/)**
-- **Eliminar caracteres de Excel: Insertar datos de forma eficiente con la hoja de cálculo WEB API**
-- **["Recortar contenido: Corregir espacios y saltos de línea Excel"](https://docs.aspose.cloud/cells/spreadsheet-trim-content/)**
-- **["Actualizar mayúsculas y minúsculas"](https://docs.aspose.cloud/cells/post-update-word-case/)**
+
+- **[Agregar texto a Excel: inserte datos de forma eficiente mediante la API web de hojas de cálculo](https://docs.aspose.cloud/cells/excel-add-text/)**
+- **[Eliminar caracteres de Excel: elimine caracteres no deseados de forma eficiente mediante la API web de hojas de cálculo](https://docs.aspose.cloud/cells/excel-remove-characters/)**
+- **[Recortar contenido: elimine espacios y saltos de línea en Excel](https://docs.aspose.cloud/cells/spreadsheet-trim-content/)**
+- **[Actualizar mayúsculas y minúsculas de palabras](https://docs.aspose.cloud/cells/post-update-word-case/)**

@@ -1,47 +1,54 @@
-﻿---
-title: Double Dizisini Excel Çalışma Sayfasına Aktar
-second_title: Documen
-linktitle: Çift diziyi içe aktar
-type: docs
-url: /tr/import-double-array-into-excel-worksheet/
-aliases: [/import-double-array-into-worksheet/,/import-data/double-array/,/import/double-array/]
-keywords: Import double array data into Excel files
-description: Aspose.Cells Cloud REST API, çift dizi verilerinin Excel dosyalarına aktarılmasını destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Çift Diziyi Excel Çalışma Sayfasına Aktar
 ---
-Bu REST API `import double array data`'i Excel çalışma sayfasına dönüştürün.
+title: "Excel Çalışma Sayfasına Çift Diziyi İçe Aktar"
+second_title: "Belge"
+linktitle: "Çift diziyi içe aktar"
+type: docs
+url: /import-double-array-into-excel-worksheet/
+aliases:
+  - /import-double-array-into-worksheet/
+  - /import-data/double-array/
+  - /import/double-array/
+keywords: "Aspose.Cells, çift diziyi içe aktar, Excel API, bulut SDK"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasına çift dizi içe aktarmanın nasıl yapıldığını öğrenin. Kimlik doğrulama, istek formatı, parametreler, örnek XML/JSON ve yanıt ayrıntılarını içerir."
+weight: 20
+ArticleTitle: "Excel Çalışma Sayfasına Çift Diziyi İçe Aktar – Aspose.Cells Bulut Kılavuzu"
+---
 
-İstek, çok parçalı içeriğe sahip bir HTTP isteğidir (bkz.[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)veya[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Çok parçalı içeriğin ilk kısmı ImportDoubleArrayOption verilerini, ikinci kısmı ise bir veri dosyasını içerir.
+Bu REST API, **çift dizi verisini** bir Excel çalışma sayfasına içe aktarır.
 
-## RSET API
+> **Önkoşullar:** Bu API’yi çağırmadan önce geçerli bir JWT belirteciniz olmalıdır. Ayrıntılar için kimlik doğrulama kılavuzuna bakın.
 
-```bash
+HTTP isteğini **çoklu parçalı (multipart)** içeriğiyle gönderirsiniz (bkz. [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) veya [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
+Çoklu parçalı gövdenin ilk parçası **ImportDoubleArrayOption** verisini içerir, ikinci parçası ise veri dosyasını içerir.
 
+## PostImportData API
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-Önemli parametreler aşağıdaki tabloda açıklanmıştır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-**DoubleArrayOption'ı İçe Aktar**
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-| İlk Sıra| int||
-| İlkSütun| int||
-| Dikey| sicim| doğru/yanlış.|
-| Veri|Çift[]||
-|Hedef Çalışma Sayfası| sicim| hedef çalışma sayfası adı.|
-| IsInsert| sicim| doğru/yanlış.|
-| Veri Türünü İçe Aktar| sicim|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Kaynak| Dosya Kaynağı| BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.|
+### İstek Parametreleri
 
-**Örnek**
+#### **ImportDoubleArrayOption**
+
+| Parametre Adı        | Tür        | Açıklama                                                                                                   |
+| --------------------- | ---------- | ---------------------------------------------------------------------------------------------------------- |
+| FirstRow             | int        | Verilerin yerleştirileceği ilk satırın sıfır tabanlı indeksi.                                              |
+| FirstColumn          | int        | Verilerin yerleştirileceği ilk sütunun sıfır tabanlı indeksi.                                              |
+| IsVertical           | boolean    | `true` / `false` – dizinin dikey (`true`) mi yoksa yatay (`false`) mi ekleneceğini belirler.               |
+| Data                 | Double[]   | İçe aktarılacak çift (double) değer dizisi.                                                                |
+| DestinationWorksheet | string     | Hedef çalışma sayfasının adı.                                                                               |
+| IsInsert             | boolean    | `true` / `false` – `true` ise veriler eklenir; `false` ise mevcut hücreler üzerine yazılır.                |
+| ImportDataType       | string     | İçe aktarılan veri türü (örn. `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`).           |
+| Source               | FileSource | `BatchData` parametresi null olduğunda veri dosyasının konumunu belirtir.                                  |
+
+#### Örnek (XML)
 
 ```xml
-
 <ImportDoubleArrayOption>
     <DestinationWorksheet>Sheet1</DestinationWorksheet>
     <IsInsert>false</IsInsert>
@@ -49,32 +56,72 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
     <FirstRow>1</FirstRow>
     <FirstColumn>1</FirstColumn>
     <IsVertical>true</IsVertical>
+    <Data>1.99,1.9,2.0</Data>
     <Source>
         <FileSourceType>CloudFileSystem</FileSourceType>
         <FilePath>Array_double_xml.txt</FilePath>
     </Source>
 </ImportDoubleArrayOption>
-
 ```
+
+#### Örnek (JSON)
 
 ```json
 {
-    "Data": [1.99, 1.9, 2.0],
-    "DestinationWorksheet": "Sheet1",
-    "FirstRow": 0,
-    "FirstColumn": 0,
-    "IsVertical": false,
-    "IsInsert": true,
-    "importDataType": "DoubleArray"
+  "Data": [1.99, 1.9, 2.0],
+  "DestinationWorksheet": "Sheet1",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "IsVertical": false,
+  "IsInsert": true,
+  "ImportDataType": "DoubleArray"
 }
-
 ```
 
-## Bulut SDK Ailesi
+### Yanıt
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Başarılı bir istek, JSON yükü içeren **HTTP 200** ile döner:
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+Olası durum kodları:
+
+| Kod | Anlamı                                   |
+|-----|------------------------------------------|
+| 200 | İçe aktarma işlemi başarılı              |
+| 400 | Geçersiz istek – eksik veya geçersiz veri|
+| 401 | Yetkisiz – geçersiz veya eksik belirteç  |
+| 500 | İç sunucu hatası                         |
+
+### Hata İşleme
+
+Bir hata oluştuğunda API, hata kodunu ve açıklayıcı bir mesajı içeren bir JSON nesnesi döner. Yetkisiz bir istek için örnek:
+
+```json
+{
+  "Code": 401,
+  "Status": "Error"
+}
+```
+
+İlgili içe aktarma işlemleri hakkında daha fazla bilgi için "İki Boyutlu Çift Diziyi İçe Aktar" ve "Tamsayı Dizisini İçe Aktar" belge sayfalarına bakın.
+
+## PostImportData API’yi SDK’larla Nasıl Kullanılır
+
+### PostImportData API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostImport), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+### Aspose.Cells Cloud SDK’larını Kullanma
+
+SDK kullanmak, geliştirme sürecini hızlandırmak için en iyi yoldur. Bir SDK düşük seviye ayrıntıları yönetir ve projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanarak Aspose.Cells web servislerini çağırma yöntemlerini göstermektedir:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

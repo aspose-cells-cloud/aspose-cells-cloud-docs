@@ -1,52 +1,60 @@
-﻿---
-title: Obtenez une photo dans un fichier Excel
-second_title: Documen
-linktitle: Gé
-type: docs
-url: /fr/pictures/get/
-aliases: [/convert-picture-to-image/]
-keywords: Get a picture in an Excel file
-description: Aspose.Cells Cloud REST API prend en charge l'obtention d'une image dans un fichier Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 10
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Obtenir une image dans un fichier Excel
 ---
-Ce REST API indique l'index image par image `get` à partir d'une feuille de calcul Excel.
+title: "API Cloud Aspose.Cells – Récupérer une image à partir d’une feuille de calcul"
+second_title: "Document"
+linktitle: "Récupérer"
+type: docs
+url: /pictures/get/
+aliases: [/convert-picture-to-image/]
+keywords: "Aspose.Cells, Récupérer une image, API, Excel, Cloud, REST"
+description: "Récupérer une image spécifique à partir d’une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’URL du point de terminaison, les paramètres, les étapes d’authentification, les codes de réponse et des exemples de code."
+weight: 10
+ArticleTitle: "API Cloud Aspose.Cells – Récupérer une image à partir d’une feuille de calcul"
+---
 
-## RSET API
+Cette API REST permet de récupérer une image à partir d’une feuille de calcul Excel à l’aide de son index à base zéro.
+
+## API REST
+
+Pour appeler ce point de terminaison, vous devez inclure un jeton d’accès JWT valide dans l’en-tête **Authorization**. Les jetons sont obtenus via le flux d’authentification Aspose.Cells Cloud et nécessitent les étendues appropriées pour l’accès aux fichiers. Pour plus d’informations sur l’obtention d’un jeton, consultez le guide global **Authentication**.
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-Les paramètres de la requête sont :
+### Paramètres de la requête
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
-| index des images| entier| chemin| L'index des images.|
-| format| chaîne| requête| Le format de l'objet exporté.|
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type    | Emplacement | Description                                                                                                         |
+| ---------------- | ------- | ----------- | ------------------------------------------------------------------------------------------------------------------- |
+| name             | string  | path        | Nom du fichier Excel.                                                                                               |
+| sheetName        | string  | path        | Nom de la feuille de calcul.                                                                                        |
+| pictureIndex     | integer | path        | Index à base zéro de l’image.                                                                                       |
+| format           | string  | query       | Format d’export souhaité (par exemple, png, jpg, bmp, gif, tiff). Si omis, l’image est renvoyée dans son format original. |
+| folder           | string  | query       | Dossier contenant le document.                                                                                      |
+| storageName      | string  | query       | Nom de l’emplacement de stockage.                                                                                   |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPicture) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Réponses d’erreur
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Code HTTP | Description                                                              |
+| --------- | ------------------------------------------------------------------------ |
+| 401       | Non autorisé – jeton manquant ou non valide.                            |
+| 404       | Introuvable – le fichier, la feuille de calcul ou l’index de saut de page spécifié n’existe pas. |
+| 400       | Requête incorrecte – syntaxe de la requête mal formée ou paramètres invalides. |
+| 500       | Erreur interne du serveur – une condition inattendue s’est produite.   |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPicture) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment appeler l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1?format=png" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
@@ -54,9 +62,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 {{< tab tabNum="2" >}}
 
 ```bash
-
-<IMAGE DATA> 
-
+# Données d’image binaires (PNG) renvoyées dans le corps de la réponse.
+# Exemple : extrait encodé en base64
+iVBORw0KGgoAAAANSUhEUgAA...
 ```
 
 {{< /tab >}}
@@ -65,9 +73,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est la méthode la plus rapide pour développer. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Cloud Aspose.Cells.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -91,31 +99,31 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetPictureWithFormat.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "ExampleGetWorksheetPictureWithFormat.rb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetPictureWithFormat.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "ExampleGetWorksheetPictureWithFormat.ts" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetPictureWithFormat.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "ExampleGetWorksheetPictureWithFormat.py" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetPictureWithFormat.pl" >}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "ExampleGetWorksheetPictureWithFormat.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetPictureWithFormat.go" >}}
+{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "ExampleGetWorksheetPictureWithFormat.go" >}}
 
 {{< /tab >}}
 

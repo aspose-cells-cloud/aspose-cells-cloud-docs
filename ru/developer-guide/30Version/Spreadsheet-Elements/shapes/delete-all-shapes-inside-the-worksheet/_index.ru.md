@@ -1,62 +1,64 @@
-﻿---
-title: Удалить все фигуры на листе Excel
-second_title: Documen
-linktitle: Клеа
-type: docs
-url: /ru/shapes/clear/
-aliases: [/delete-all-shapes-inside-the-worksheet/]
-keywords: Delete all shapes on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает удаление всех фигур на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 40
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Удалить все фигуры на листе Excel
 ---
-Этот REST API указывает на необходимость удаления всех фигур на листе Excel.
+title: "Удаление всех фигур на листе Excel"
+ArticleTitle: "Удаление всех фигур на листе Excel – Aspose.Cells Cloud API"
+second_title: "Документ"
+linktype: "Clear"
+type: docs
+url: /shapes/clear/
+aliases: [/delete-all-shapes-inside-the-worksheet/]
+keywords: "Aspose.Cells Cloud, удаление всех фигур, лист Excel, REST API, SDK, cURL, .NET, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift"
+description: "Удаление всех фигур с листа Excel с использованием Aspose.Cells Cloud REST API. Операция доступна через cURL и широкий спектр SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift)."
+weight: 40
+---
 
-## РСЕT API
+Этот REST API удаляет все фигуры с листа Excel.
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
- 
+**Необходимые условия:** Требуется действительный JWT-токен доступа. Получите его через OAuth2-процесс Aspose Cloud и включите в заголовок `Authorization`, как показано в примере ниже.
+
+## API DeleteWorksheetShapes
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| название документа.|
-| Имя_листа| нить| путь| имя рабочего листа.|
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShapes) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### **Параметры запроса**
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра | Тип   | Расположение | Описание                                     |
+| ------------- | ----- | ----------- | -------------------------------------------- |
+| name          | string | path       | Имя документа Excel.                         |
+| sheetName     | string | path       | Имя листа.                                   |
+| folder        | string | query      | Папка, содержащая документ.                  |
+| storageName   | string | query      | Имя хранилища, в котором находится документ. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+<a href="https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShapes" rel="noopener noreferrer">Спецификация OpenAPI</a> определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия напрямую из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Следующий пример показывает, как выполнить вызов облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -65,9 +67,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя вам сосредоточиться на задачах вашего проекта. Посетите [репозиторий на GitHub](https://github.com/aspose-cells-cloud), чтобы ознакомиться с полным списком SDK Aspose.Cells Cloud.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

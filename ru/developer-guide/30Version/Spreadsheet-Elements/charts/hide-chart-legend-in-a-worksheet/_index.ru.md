@@ -1,78 +1,96 @@
-﻿---
-title: Скрыть легенду диаграммы на рабочем листе
+---
+title: "Скрытие легенды диаграммы в рабочей книге Excel – Aspose.Cells Cloud API"
 type: docs
-url: /ru/charts/legend/hide/
+url: /charts/legend/hide/
 aliases: [/hide-chart-legend-in-a-worksheet/]
 weight: 110
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Скрыть легенду диаграммы на листе
+keywords: "Aspose.Cells, Excel, скрытие легенды диаграммы, REST API, облачное SDK, легенда диаграммы"
+description: "Узнайте, как скрыть легенду диаграммы в рабочей книге Excel с помощью Aspose.Cells Cloud REST API. Включает HTTPS-эндпоинт, необходимую аутентификацию, синтаксис запроса, детали ответа, обработку ошибок и примеры SDK."
 ---
-Этот REST API указывает на скрытие легенды в диаграмме.
- 
-## РСЕT API
- 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
- 
+
+Этот REST API скрывает легенду диаграммы. **Легенда диаграммы** — это прямоугольная область, содержащая идентификаторы рядов данных, отображаемых на диаграмме.
+
+API требует действительного JWT-токена Aspose Cloud, рабочая книга должна быть загружена в облачное хранилище Aspose Cloud, а используемая версия API — **v3.0**.
+
+## Безопасность и аутентификация  
+Aspose.Cells Cloud API защищены и требуют [аутентификации на основе JWT-токена](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей тетради.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| chartIndex| целое число| путь| Индекс диаграммы.|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
 
+### Параметры запроса
 
-<br/>
+| Имя параметра   | Тип    | Расположение | Описание                         |
+| --------------- | ------ | ------------ | -------------------------------- |
+| **name**        | string | path         | Имя рабочей книги.               |
+| **sheetName**   | string | path         | Имя рабочего листа.              |
+| **chartIndex**  | integer| path         | Индекс диаграммы.                |
+| **folder**      | string | query        | Папка рабочей книги (необязательно). |
+| **storageName** | string | query        | Имя хранилища (необязательно).   |
 
- 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartLegend) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartLegend) определяет данный публично доступный программный интерфейс.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Вы можете легко вызывать API с помощью утилиты командной строки cURL. Пример ниже демонстрирует запрос на скрытие легенды диаграммы с индексом 0 в файле _Sample_Test_Book.xls_.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" 
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Ответы
+
+| HTTP-статус                   | Описание                                              | Пример JSON                                                   |
+| ----------------------------- | ----------------------------------------------------- | ------------------------------------------------------------- |
+| **200 OK**                    | Легенда успешно скрыта.                               | `{ "Code": 200, "Status": "OK" }`                             |
+| **401 Unauthorized**          | Отсутствует или недействителен JWT-токен.            | `{ "Code": 401, "Message": "Invalid access token." }`         |
+| **404 Not Found**             | Рабочая книга, рабочий лист или диаграмма не найдены.| `{ "Code": 404, "Message": "Chart not found." }`              |
+| **500 Internal Server Error** | Непредвиденная ошибка сервера.                        | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+
+## Часто задаваемые вопросы
+
+**В:** _Как скрыть легенду диаграммы с помощью Aspose.Cells Cloud?_  
+**О:** Отправьте `DELETE`-запрос по адресу `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend`, указав действительный JWT-токен в заголовке `Authorization`. Ответ `200 OK` означает успешное выполнение.
+
+**В:** _Какая аутентификация требуется для API скрытия легенды диаграммы?_  
+**О:** Укажите заголовок `Authorization: Bearer <jwt token>`. Получите токен с помощью OAuth-процедуры Aspose Cloud.
+
+**В:** _Какой ответ об ошибке будет возвращён, если индекс диаграммы недопустим?_  
+**О:** Сервис вернёт `404 Not Found` с телом JSON, содержащим `Code: 404` и сообщение о том, что диаграмма не найдена.
+
+**В:** _Можно ли использовать HTTP вместо HTTPS?_  
+**О:** Нет. Все эндпоинты Aspose Cloud требуют HTTPS для обеспечения безопасности.
+
 ## Семейство облачных SDK
- 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
- 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
- 
+
+Использование SDK — самый быстрый способ разработки. SDK скрывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
+
+Следующие примеры кода демонстрируют вызов веб-служб Aspose.Cells с использованием различных SDK:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -118,7 +136,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
-
+**Скоро** – пример Swift SDK будет добавлен в ближайшее время.  
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
@@ -134,3 +152,22 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Скрытие легенды диаграммы в рабочей книге Excel – Aspose.Cells Cloud API",
+  "description": "Пошаговое руководство по скрытию легенды диаграммы в рабочей книге Excel с помощью Aspose.Cells Cloud REST API. Включает HTTPS-эндпоинт, аутентификацию, синтаксис запроса, детали ответа, обработку ошибок и примеры SDK.",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://docs.aspose.cloud/" },
+      { "@type": "ListItem", "position": 2, "name": "Cells", "item": "https://docs.aspose.cloud/cells/" },
+      { "@type": "ListItem", "position": 3, "name": "Диаграммы", "item": "https://docs.aspose.cloud/cells/charts/" },
+      { "@type": "ListItem", "position": 4, "name": "Скрытие легенды диаграммы", "item": "https://docs.aspose.cloud/cells/charts/legend/hide/" }
+    ]
+  },
+  "about": "Скрытие легенды диаграммы с помощью Aspose.Cells Cloud API"
+}
+</script>

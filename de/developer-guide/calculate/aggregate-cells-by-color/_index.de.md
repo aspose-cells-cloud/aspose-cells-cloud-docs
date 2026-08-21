@@ -1,44 +1,69 @@
-﻿---
-title: Aspose.Cells Cloud Web API – Summe, Anzahl, Durchschnittswert usw. nach Farbe in Tabellenkalkulation/Exce
-second_title: Documen
-ArticleTitle: Sum, Count, Average Value, etc by color in Spreadsheet/Exce
-LinkTitle: Aggregate Cells by Colo
-type: docs
-url: /de/aggregate-cells-by-color/
-keywords: Sum, Count, Average Value, Max Value, Min Value, Excel REST API, Spreadsheet Operations, Aspose.Cells, Excel Cloud AP
-description: Das Aspose.Cells Cloud Web API (Excel Cloud API) kann Datenberechnungen, Summierungen und Mittelwerte durchführen und kann auch die Maximal- und Minimalwerte in einer Excel-Tabelle basierend auf der Füllung oder Schriftfarbe der Zellen finden
-weight: 100
-kwords: Summe, Anzahl, Durchschnittswert, Maximalwert, Minimalwert, Excel REST API, Tabellenkalkulationsoperationen, Aspose.Cells, Excel Cloud API
 ---
-Der API kann Datenberechnungen, Summierungen und Mittelwerte durchführen und anhand der Füllung oder Schriftfarbe der Zellen auch die Maximal- und Minimalwerte in einer Excel-Tabelle ermitteln.
+title: "Aspose.Cells Cloud Web API – Summieren und Zählen nach Farbe in Excel"
+second_title: "Dokument"
+ArticleTitle: "Summe, Anzahl, Durchschnitt, Max, Min-Werte nach Farbe in Tabellenkalkulation/Excel"
+LinkTitle: "Zellen nach Farbe aggregieren"
+type: docs
+url: /aggregate-cells-by-color/
+keywords: "Aspose, Cells, Excel, API, aggregieren, Farbe, Summe, Anzahl, Durchschnitt, Min, Max"
+description: "Aggregieren Sie Excel-Zellen nach Hintergrund- oder Schriftfarbe (Summe, Anzahl, Durchschnitt, Min, Max) mit der Aspose.Cells Cloud API. Erfahren Sie mehr über den Endpunkt, die Parameter, die Authentifizierung und SDK-Beispiele."
+weight: 100
+---
 
-| Berechnungsvorgang| Beschreibung|
-|:- |:- |
-| Zählen| Bestimmen Sie die Anzahl der Zellen mit der gleichen Farbe.|
-| Summe| Berechnen Sie den Gesamtwert der Zellen mit derselben Farbe.|
-| Maximalwert| Identifizieren Sie den höchsten Wert unter den Zellen mit derselben Farbe.|
-| Min-Wert| Suchen Sie den niedrigsten Wert unter den Zellen mit der gleichen Farbe.|
-|Durchschnittswert| Berechnen Sie den Mittelwert von Zellen mit derselben Farbe.|
+## Übersicht
 
-## **Aggregieren von Cells nach Farbe API**
+Die API kann Datenberechnungen basierend auf der **Farbe** der Zellen durchführen. Sie kann Summen bilden, Zählen, Durchschnittswerte ermitteln sowie den höchsten und niedrigsten Wert in einer Excel-Tabellenkalkulation basierend auf der Füll- oder Schriftfarbe der Zellen bestimmen.
+
+| Berechnungsvorgang | Beschreibung                                                  |
+| :----------------- | :------------------------------------------------------------ |
+| Anzahl (Count)     | Ermitteln Sie die Anzahl der Zellen mit derselben Farbe.     |
+| Summe (Sum)        | Berechnen Sie den Gesamtwert der Zellen mit derselben Farbe. |
+| Maximalwert (Max)  | Ermitteln Sie den höchsten Wert unter den Zellen mit derselben Farbe. |
+| Minimalwert (Min)  | Ermitteln Sie den niedrigsten Wert unter den Zellen mit derselben Farbe. |
+| Durchschnitt (Average) | Berechnen Sie den Durchschnittswert der Zellen mit derselben Farbe. |
+
+## Web-API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/calculate/aggregate/color
+PUT https://api.aspose.cloud/v4.0/cells/calculate/aggregate/color
 ```
 
-### **Anforderungsparameter:**
+### **Sicherheit und Authentifizierung**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody| Beschreibung|
-|:- |:- |:- |:- |
-| Kalkulationstabelle| Datei| FormData| Tabellenkalkulationsdatei hochladen.|
-| Arbeitsblatt| Zeichenfolge| Abfrage| Gibt das Arbeitsblatt an.|
-| Reichweite| Zeichenfolge| Abfrage| Gibt den Bereich an.|
-| Betrieb| Zeichenfolge| Abfrage| Geben Sie Berechnungsmethoden an, einschließlich Summe, Anzahl, Durchschnitt, Min und Max.|
-| Farbposition| Zeichenfolge| Abfrage| Gibt den zu summierenden und zu zählenden Inhalt basierend auf der Hintergrundfarbe und/oder der Schriftfarbe an.|
-| Region| Zeichenfolge| Abfrage| Die Tabellenbereichseinstellung.|
-| Passwort| Zeichenfolge| Abfrage| Das Kennwort zum Öffnen der Tabellenkalkulationsdatei.|
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
-### **Antwort**
+### Anforderungsparameter
+
+| Parametername   | Typ    | Speicherort | Beschreibung                                                     |
+| :-------------- | :----- | :---------- | :--------------------------------------------------------------- |
+| Spreadsheet     | Datei  | FormData    | Die zu verarbeitende Excel-Arbeitsmappe.                        |
+| Worksheet       | String | Query       | Name des Arbeitsblatts, das den Bereich enthält.                |
+| Range           | String | Query       | A1-Stil-Bereich (z. B. `A1:B10`).                               |
+| Operation       | String | Query       | Berechnungsmethode – `Sum`, `Count`, `Average`, `Min` oder `Max`. |
+| ColorPosition   | String | Query       | Gibt an, welche Farbe ausgewertet werden soll – `Background`, `Font`. |
+| Region          | String | Query       | Die Regionseinstellung der Tabellenkalkulation (z. B. `us-east-1`). |
+| Password        | String | Query       | Passwort zum Öffnen einer geschützten Arbeitsmappe (optional).  |
+
+#### Enumerationen
+
+- **ColorPosition**
+
+  | Wert       | Bedeutung                        |
+  | :--------- | :------------------------------- |
+  | Background | Verwenden Sie die Füllfarbe der Zelle. |
+  | Font       | Verwenden Sie die Schriftfarbe der Zelle. |
+
+**Beispiel für eine multipart/form-data-Anfrage**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/calculate/aggregate/color?Worksheet=Sheet1&Range=A1:B10&Operation=Sum&ColorPosition=Background" \
+  -H "Authorization: Bearer <access_token>" \
+  -F "Spreadsheet=@/path/to/workbook.xlsx"
+```
+
+### Antwort
+
+Das folgende Schema beschreibt das Antwortobjekt. Ein konkretes Beispiel folgt nach dem Schema.
 
 ```json
 {
@@ -59,73 +84,102 @@ PUT http://api.aspose.cloud/v4.0/cells/calculate/aggregate/color
     },
     {
       "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
+      "DataType": { "Identifier": "Integer" }
     },
     {
       "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
+      "DataType": { "Identifier": "String" }
     }
   ]
 }
 ```
 
-### Fehlercodes
+**Beispielantwort (reale Werte)**
 
-- **400 Ungültige Anfrage**: Ungültige Apose.Cells Cloud API-URI.
-- **401 Nicht autorisiert**: Ungültiges Zugriffstoken. Oder ungültige Client-ID und ungültiges Geheimnis.
-- **404 Nicht gefunden**: Auf die Tabellenkalkulationsdatei kann nicht zugegriffen werden.
-- **500 Serverfehler**: Beim Abrufen der Berechnungsdaten ist in der Tabelle eine Anomalie aufgetreten.
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "AggregateResults": [
+    {
+      "Color": "#FF0000",
+      "Count": 12,
+      "Sum": 345.67,
+      "Average": 28.8,
+      "Min": 5.0,
+      "Max": 80.0
+    },
+    {
+      "Color": "#00FF00",
+      "Count": 7,
+      "Sum": 210.0,
+      "Average": 30.0,
+      "Min": 10.0,
+      "Max": 50.0
+    }
+  ]
+}
+```
 
-## Wo sollten wir das Aggregat nach Farbe API verwenden?
+**HTTP-Statuscodes**
 
-In einer Kalkulationstabelle werden Daten aus verschiedenen Kategorien in unterschiedlichen Farben angezeigt, sodass Operationen wie das Summieren, Zählen, Berechnen von Durchschnittswerten und das Ermitteln von Maximal- und Minimalwerten anhand der Farbe möglich sind.
+| Code | Bedeutung             | Beschreibung                                                     |
+| ---- | --------------------- | ---------------------------------------------------------------- |
+| 200  | OK                    | Filter erfolgreich angewendet; Antwort enthält Vorgangsdetails. |
+| 400  | Bad Request           | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized          | Ungültiges oder fehlendes JWT-Token.                            |
+| 413  | Payload Too Large     | Die hochgeladene Datei überschreitet das Größenlimit.           |
+| 500  | Internal Server Error | Unerwarteter Serverfehler.                                      |
 
-## Warum sollten Sie das Aggregate by Color API verwenden?
+## Wofür sollte die Aggregate-by-Color-API verwendet werden?
 
-- Stellen Sie Methoden zur Farbdatenanalyse bereit.
-- Klassifizieren und berechnen Sie Daten anhand der Farbe, um grundlegende Daten für die Datenanalyse bereitzustellen.
-- Die Entwicklung kann über das vorhandene SDK schnell abgeschlossen werden.
+In einer Tabellenkalkulation stammen Daten aus verschiedenen Kategorien oft farblich gekennzeichnet. Diese API ermöglicht es Ihnen, Summen zu bilden, zu zählen, Durchschnitte zu berechnen oder Minimal- und Maximalwerte für jede Farbgruppe zu ermitteln, wodurch die farbbasierte Datenanalyse vereinfacht wird.
 
-## So verwenden Sie das Aggregat nach Farbe API mit SDKs
+## Warum sollten Sie die Aggregate-by-Color-API verwenden?
 
-### Aggregat nach Farbe API Spezifikation
+Die API bietet eine schnelle und zuverlässige Möglichkeit, farbbasierte Berechnungen durchzuführen, ohne benutzerdefinierte Parsing-Logik schreiben zu müssen. Sie lässt sich nahtlos in Aspose.Cells Cloud SDKs integrieren, sodass Entwickler Farbaggregationen mit nur wenigen Codezeilen implementieren können.
 
- Der[Aggregat nach Farbe API Spezifikation](https://reference.aspose.cloud/cells/#/CalculateController/AggregateCellsByColor) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
+## So verwenden Sie die Aggregate-by-Color-API mit SDKs
+
+### Aggregate-by-Color-API-Spezifikation
+
+Die <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Calculate/AggregateCellsByColor" rel="noopener noreferrer">Aggregate-by-Color-API-Spezifikation</a> definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht es Ihnen, REST-Interaktionen direkt aus einem Webbrowser durchzuführen.
 
 ### Verwenden Sie Aspose.Cells Cloud SDKs
 
-Die Verwendung des SDK ist die schnellste Art der Entwicklung, da es die Details auf niedriger Ebene abstrahiert und Ihnen ermöglicht, Berechnungen nach Zellenfarbe mit nur einem kurzen Codestück zu aggregieren.
- Bitte schauen Sie sich die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der schnellste Weg zur Entwicklung, da sie die Low-Level-Details abstrahiert und es Ihnen ermöglicht, Berechnungen nach Zellfarbe mit nur einem kurzen Codeabschnitt zu aggregieren.  
+Schauen Sie sich das <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub-Repository</a> für eine vollständige Liste der Aspose.Cells Cloud SDKs an.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webservices mit verschiedenen SDKs durchgeführt werden:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_AggregateCellsByColor.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_AggregateCellsByColor.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_AggregateCellsByColor.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_AggregateCellsByColor.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_AggregateCellsByColor.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_AggregateCellsByColor.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_AggregateCellsByColor.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_AggregateCellsByColor.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_AggregateCellsByColor.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_AggregateCellsByColor.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_AggregateCellsByColor.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_AggregateCellsByColor.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_AggregateCellsByColor.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_AggregateCellsByColor.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_AggregateCellsByColor.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_AggregateCellsByColor.go" >}}
+{{</tab>}}
 {{< /tabs >}}
+
+**Hinweise:**
+
+- Wenn Sie mit geschützten Arbeitsmappen arbeiten, fügen Sie den optionalen Abfrageparameter `Password` hinzu; andernfalls schlägt die Anfrage mit einem 401-Fehler fehl.
+- Die maximale Anforderungsgröße für die Datei `Spreadsheet` beträgt 100 MB. Falls Sie größere Dateien verarbeiten müssen, erwägen Sie, die Arbeitsmappe zunächst in den Aspose-Cloud-Speicher hochzuladen und über den Parameter `Path` darauf zu verweisen (hier nicht dargestellt).

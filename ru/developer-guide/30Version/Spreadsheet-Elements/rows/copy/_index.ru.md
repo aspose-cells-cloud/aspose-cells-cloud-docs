@@ -1,126 +1,132 @@
-﻿---
-title: Копировать строки на лист Excel
-second_title: Documen
-linktitle: Коп
-type: docs
-url: /ru/rows/copy/
-aliases: [/copy-rows-in-excel-worksheet/]
-keywords: Copy rows on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает копирование строк на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 30
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Копирование строк на лист Excel
 ---
-Этот REST API указывает на копирование строк рабочего листа.
+title: "Копирование строк в листе Excel"
+description: "Копирование данных и форматов из конкретных строк в листе Excel с использованием REST API Aspose.Cells Cloud (v3.0). Включает аутентификацию, детали запроса и ответа, обработку ошибок и примеры SDK."
+api_version: "v3.0"
+endpoint: "/cells/{name}/worksheets/{sheetName}/cells/rows/copy"
+method: "POST"
+weight: 30
+---
 
-## РСЕT API
+# Копирование строк в листе Excel <span style="float:right;">v3.0</span>
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/copy
- 
+Копирование данных и форматов из указанных целых строк листа.
+
+---
+
+## Необходимые условия
+
+| № | Требование |
+|---|-------------|
+| 1 | Действующий токен **JWT**. Подробности см. в [руководстве по аутентификации](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). |
+| 2 | Рабочая книга (`{name}`) уже должна существовать в выбранной **папке** / **хранилище**. |
+| 3 | Целевой лист (`{sheetName}`) должен присутствовать в рабочей книге. |
+| 4 | (Опционально) Укажите **папку** и **storageName**, если файл находится не в папке по умолчанию. |
+
+---
+
+## Конечная точка
+
+```
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/copy
 ```
 
-Параметры запроса:
+*Все параметры пути чувствительны к регистру.*
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| sourceRowIndex| целое число| запрос| Индекс исходной строки|
-| destinationRowIndex| целое число| запрос| Индекс строки назначения|
-| Номер_строки| целое число| запрос| Номер скопированной строки|
-| рабочий лист| нить| запрос| рабочий лист|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+### Параметры пути
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetRows) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+| Параметр | Тип   | Обязательный | Описание |
+|----------|--------|--------------|----------|
+| `name`    | строка | ✅ | Имя файла рабочей книги (например, `test.xlsx`). |
+| `sheetName` | строка | ✅ | Имя листа (например, `Sheet1`). |
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+### Параметры запроса
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Параметр            | Тип    | Обязательный | Описание |
+|---------------------|--------|--------------|----------|
+| `sourceRowIndex`     | целое число | ✅ | Индекс исходной строки (начиная с 0). |
+| `destinationRowIndex`| целое число | ✅ | Индекс строки, на которую будут скопированы данные (начиная с 0). |
+| `rowNumber`          | целое число | ✅ | Количество копируемых строк. |
+| `worksheet`          | строка  | ❌ | Идентификатор листа; обычно совпадает с **sheetName**. |
+| `folder`             | строка  | ❌ | Путь к папке, содержащей рабочую книгу. |
+| `storageName`        | строка  | ❌ | Имя сервиса хранилища. |
 
-{{< tab tabNum="1" >}}
+---
+
+## Пример запроса (cURL)
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/copy?sourceRowIndex=1&destinationRowIndex=12&rowNumber=10" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
+> **Примечание**  
+> Замените `<jwt token>` на действующий JWT-токен, полученный от сервиса аутентификации.
 
-{{< tab tabNum="2" >}}
+---
 
-```bash
+## Успешный ответ
+
+| Код | Описание |
+|-----|----------|
+| **200** | Строки успешно скопированы. |
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
-{{< /tab >}}
+Тело ответа представляет собой экземпляр `CellsCloudResponse`.
 
-{{< /tabs >}}
+---
 
-## Семейство облачных SDK
+## Обработка ошибок
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+| HTTP-код | Значение                              | Пример тела ответа |
+|----------|---------------------------------------|--------------------|
+| **400**   | Неверный запрос — отсутствующие/неверные параметры. | `{ "Code": 400, "Message": "Invalid sourceRowIndex." }` |
+| **401**   | Неавторизованный доступ — неверный или отсутствующий JWT-токен. | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404**   | Не найдено — рабочая книга или лист не существуют. | `{ "Code": 404, "Message": "File not found." }` |
+| **500**   | Внутренняя ошибка сервера — непредвиденное состояние сервера. | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+**Рекомендации по устранению**
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+* **400** — Убедитесь, что все обязательные параметры запроса присутствуют и корректно сформатированы.  
+* **401** — Повторно сгенерируйте или обновите JWT-токен.  
+* **404** — Проверьте имена рабочей книги и листа, а также убедитесь, что файл существует в указанной папке/хранилище.  
+* **500** — Повторите запрос через короткую задержку; при повторении ошибки обратитесь в службу поддержки Aspose.
 
-{{< tab tabNum="1" >}}
+---
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostCopyWorksheetRows.cs" >}}
+## Примеры SDK
 
-{{< /tab >}}
+Ниже приведены фрагменты кода, демонстрирующие вызов операции **Copy Rows** с использованием официальных SDK Aspose.Cells Cloud.
 
-{{< tab tabNum="2" >}}
+| Язык | Пример |
+|------|--------|
+| **C#**   | <details><summary>Показать код</summary>```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar api = new CellsApi("clientId", "clientSecret");\nawait api.PostCopyWorksheetRowsAsync(name: "test.xlsx", sheetName: "Sheet1", sourceRowIndex: 1, destinationRowIndex: 12, rowNumber: 10);\n```</details> |
+| **Java** | <details><summary>Показать код</summary>```java\nCellsApi api = new CellsApi("clientId", "clientSecret");\napi.postCopyWorksheetRows("test.xlsx", "Sheet1", 1, 12, 10, null, null, null);\n```</details> |
+| **Python** | <details><summary>Показать код</summary>```python\nfrom asposecellscloud import CellsApi\napi = CellsApi(client_id='clientId', client_secret='clientSecret')\napi.post_copy_worksheet_rows(name='test.xlsx', sheet_name='Sheet1', source_row_index=1, destination_row_index=12, row_number=10)\n```</details> |
+| **Node.js** | <details><summary>Показать код</summary>```javascript\nconst { CellsApi } = require('asposecellscloud');\nconst api = new CellsApi('clientId', 'clientSecret');\nawait api.postCopyWorksheetRows('test.xlsx', 'Sheet1', 1, 12, 10);\n```</details> |
+| **Go** | <details><summary>Показать код</summary>```go\nimport \"github.com/asposecellscloud/aspose-cells-cloud-go/v3\"\napi := cells.NewCellsApiClient("clientId", "clientSecret")\n_, err := api.PostCopyWorksheetRows(context.Background(), "test.xlsx", "Sheet1", 1, 12, 10, nil, nil, nil)\n```</details> |
+| **PHP** | <details><summary>Показать код</summary>```php\nuse Aspose\Cells\CellsApi;\n$api = new CellsApi('clientId', 'clientSecret');\n$api->postCopyWorksheetRows('test.xlsx', 'Sheet1', 1, 12, 10);\n```</details> |
+| **Ruby** | <details><summary>Показать код</summary>```ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::CellsApi.new('clientId', 'clientSecret')\napi.post_copy_worksheet_rows('test.xlsx', 'Sheet1', 1, 12, 10)\n```</details> |
+| **Perl** | <details><summary>Показать код</summary>```perl\nuse Aspose::Cells::CellsApi;\nmy $api = Aspose::Cells::CellsApi->new('clientId', 'clientSecret');\n$api->postCopyWorksheetRows(name => 'test.xlsx', sheetName => 'Sheet1', sourceRowIndex => 1, destinationRowIndex => 12, rowNumber => 10);\n```</details> |
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostCopyWorksheetRows.java" >}}
+*Полные исходные файлы доступны в репозитории [Aspose‑Cells‑Cloud на GitHub](https://github.com/aspose-cells-cloud).*
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="3" >}}
+## См. также
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostCopyWorksheetRows.php" >}}
+- [Добавление строки в листе Excel](/rows/add/)  
+- [Удаление строки в листе Excel](/rows/delete/)  
+- [Обновление строки в листе Excel](/rows/update/)  
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="4" >}}
-
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostCopyWorksheetRows.rb" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostCopyWorksheetRows.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostCopyWorksheetRows.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostCopyWorksheetRows.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostCopyWorksheetRows.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+*Страница сгенерирована **{{DATE}}**. Последнюю версию этого API см. в [спецификации OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetRows).*

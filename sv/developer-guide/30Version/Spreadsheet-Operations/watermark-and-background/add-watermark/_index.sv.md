@@ -1,85 +1,127 @@
-﻿---
-title: Lägg till vattenstämpel i Excel-filen
-second_title: Documen
-linktitle: Lägg till vattenstämpel i Excel-filen
-type: docs
-url: /sv/add-watermark-into-excel-files/
-aliases: [ /watermark/]
-keywords: Add water marker for Excel files
-description: Aspose.Cells Cloud REST API stöder tillägg av vattenmarkörer för Excel-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 39
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Vattenstämpel
 ---
-Denna REST API indikerar att `watermark` ska läggas till på Excel-filer.
+title: "Lägg till vattenmärke i Excel-filer"
+second_title: "Dokument"
+linktitle: "Lägg till vattenmärke i Excel-filer"
+type: docs
+url: /add-watermark-into-excel-files/
+aliases: [/watermark/]
+keywords: "lägg till vattenmärke i Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Lär dig hur du lägger till ett textvattenmärke i Excel-arbetsböcker med Aspose.Cells Cloud REST API (v3.0). Innehåller cURL-exempel, nödvändiga parametrar och svarsinformation."
+weight: 39
+ArticleTitle: "Lägg till vattenmärke i Excel-filer – Aspose.Cells Cloud-dokumentation"
+---
 
-## RSET API
+Detta REST API lägger till ett **vattenmärke** i Excel-filer.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/watermark
- 
+**Förutsättningar:** Du måste skaffa en giltig JWT-åtkomsttoken och se till att Excel-filen är i ett format som stöds (t.ex. `.xlsx`, `.xls`).  
+**Bakgrund:** Ett vattenmärke är en halvtransparent textöverlagring som appliceras på varje kalkylblad för att indikera ägarskap eller sekretess.
+
+## PostWatermark API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/watermark
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| fil| fil| formulärData| Fil att ladda upp|
-| text| sträng| fråga||
-| färg| sträng| fråga||
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Begärparametrar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameternamn | Typ   | Plats                     | Beskrivning                                                 |
+| ------------- | ----- | ------------------------- | ----------------------------------------------------------- |
+| `file`        | fil   | formData (multipart body) | Excel-filen som vattenmärket ska appliceras på.             |
+| `text`        | sträng | query                     | Den text som ska visas som vattenmärke.                     |
+| `color`       | sträng | query                     | Vattenmärkets färg i ARGB-hexformat (t.ex. `004433ff`).     |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **Svar**
+
+JSON-svaret innehåller en **Files**-array. För varje filobjekt:
+
+- **Filename** – namn på den bearbetade arbetsboken.  
+- **FileSize** – filens storlek i byte.  
+- **FileContent** – Base64-kodat innehåll i den vattenmärkta Excel-filen; avkoda denna för att få fram den faktiska filen.
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Files": [
+        {
+            "Filename" : "[fil1-namn]",
+            "Filesize" : [filstorlek],
+            "FileContent" : "[Base64-sträng]"
+        },
+        {
+            "Filename" : "[fil2-namn]",
+            "Filesize" : [filstorlek],
+            "FileContent" : "[Base64-sträng]"
+        },
+        {
+            "Filename" : "[fil3-namn]",
+            "Filesize" : [filstorlek],
+            "FileContent" : "[Base64-sträng]"
+        }
+    ]
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                       |
+|-----|-----------------------------|---------------------------------------------------|
+| 200 | OK                          | Vattenmärket tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig förfrågan          | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Inte auktoriserad           | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nyttoinformation   | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
+
+## Hur man använder PostWatermark API med SDK:er
+
+### PostWatermark API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för att anropa Aspose.Cells webbtjänster. Exemplet nedan visar en komplett begäran, inklusive den nödvändiga autentiseringshuvudet. Ersätt `<your-jwt-token>` med en giltig JWT-åtkomsttoken som du har erhållit från Asposes autentiseringsändpunkt.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&color=004433ff" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
-
+curl -v "https://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&color=004433ff" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your-jwt-token>" \
+  -F "file=@Sample.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Sample_watermarked.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64-sträng--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda ett SDK är det snabbaste sättet att utveckla på. Ett SDK abstraher bort detaljer på låg nivå och låter dig fokusera på din affärslogik. Kolla in [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -132,4 +174,3 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
-

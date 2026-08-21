@@ -1,52 +1,112 @@
-﻿---
-title: Arbeta med ImportData Tas
-second_title: Documen
-type: docs
-url: /sv/tasks/importdata/
-aliases: [/working-with-importdata-task/]
-keywords: REST API, task, convert, spreadsheets, exce
-description: "Cells.Cloud API för Excel drift: uppgifter stöder import av data till Excel-fil"
-weight: 40
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Arbeta med ImportData-uppgift
 ---
-## REST API
+title: "ImportData-uppgift – Aspose.Cells Cloud API-referens och cURL-exempel"  
+second_title: "Dokument"  
+type: docs  
+url: /tasks/importdata/  
+aliases: [/working-with-importdata-task/]  
+keywords: "Aspose.Cells, ImportData-uppgift, Excel API, REST, cURL, SDK"  
+description: "Lär dig hur du importerar batchdata till Excel-arbetsböcker med Aspose.Cells Cloud ImportData-uppgift. Innehåller cURL-syntax, begäransschema, SDK-exempel (C#, PHP, Ruby, Node.js) och felhantering."  
+weight: 40  
+---  
 
-|**API**|**Typ**|**Beskrivning**|**Resurslänk**|
-|:- |:- |:- |:- |
-|/celler/uppgift/köruppgift|POSTA|Kör uppgift|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+## REST API  
 
+| **API** | **Typ** | **Beskrivning** | **Resurslänk** |
+| :- | :- | :- | :- |
+| /cells/task/runtask | POST | Kör uppgift | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) definierar ett offentligt tillgängligt programmeringssnitt som möjliggör direkta REST-interaktioner från en webbläsare.  
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
+Du kan använda kommandoradsverktyget **cURL** för att anropa Aspose.Cells Cloud-tjänster. Exempel nedan visar hur du kör en **ImportData**-uppgift med en korrekt formaterad JSON-payload.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" -H "accept: application/json" -H "Content-Type: application/json" -H "x-aspose-client: Containerize.Swagger" -d "{<Tasks> <TaskDescription> <TaskType>ImportData</TaskType> <ImportDataTaskParameter> <Workbook> <FileSourceType>CloudFileSystem</FileSourceType> <FilePath>TaskBook.xlsx</FilePath> </Workbook> <ImportBatchDataOption> <DestinationWorksheet>Sheet1</DestinationWorksheet> <IsInsert>true</IsInsert> <Source> <FileSourceType>RequestFiles</FileSourceType> <FilePath>Batch_data_xml.txt</FilePath> </Source> </ImportBatchDataOption> </ImportDataTaskParameter> </TaskDescription> <TaskDescription> <TaskType>ImportData</TaskType> <ImportDataTaskParameter> <Workbook> <FileSourceType>InMemoryFiles</FileSourceType> <FilePath>TaskBook.xlsx</FilePath> </Workbook> <ImportBatchDataOption> <DestinationWorksheet>Sheet2</DestinationWorksheet> <IsInsert>true</IsInsert> <Source> <FileSourceType>RequestFiles</FileSourceType> <FilePath>Batch_data_xml_2.txt</FilePath> </Source> </ImportBatchDataOption> </ImportDataTaskParameter> </TaskDescription> <TaskDescription> <TaskType>SaveResult</TaskType> <SaveResultTaskParameter> <ResultSource>InMemoryFiles</ResultSource> <ResultDestination> <DestinationType>CloudFileSystem</DestinationType> <InputFile>TaskBook.xlsx</InputFile> <OutputFile>ImpDataBook.xlsx</OutputFile> </ResultDestination> </SaveResultTaskParameter> </TaskDescription> </Tasks></TaskData>}"
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -d '{
+  "Tasks": [
+    {
+      "TaskDescription": {
+        "TaskType": "ImportData",
+        "ImportDataTaskParameter": {
+          "Workbook": {
+            "FileSourceType": "CloudFileSystem",
+            "FilePath": "TaskBook.xlsx"
+          },
+          "ImportBatchDataOption": {
+            "DestinationWorksheet": "Sheet1",
+            "IsInsert": true,
+            "Source": {
+              "FileSourceType": "RequestFiles",
+              "FilePath": "Batch_data_xml.txt"
+            }
+          }
+        }
+      }
+    },
+    {
+      "TaskDescription": {
+        "TaskType": "ImportData",
+        "ImportDataTaskParameter": {
+          "Workbook": {
+            "FileSourceType": "InMemoryFiles",
+            "FilePath": "TaskBook.xlsx"
+          },
+          "ImportBatchDataOption": {
+            "DestinationWorksheet": "Sheet2",
+            "IsInsert": true,
+            "Source": {
+              "FileSourceType": "RequestFiles",
+              "FilePath": "Batch_data_xml_2.txt"
+            }
+          }
+        }
+      }
+    },
+    {
+      "TaskDescription": {
+        "TaskType": "SaveResult",
+        "SaveResultTaskParameter": {
+          "ResultSource": "InMemoryFiles",
+          "ResultDestination": {
+            "DestinationType": "CloudFileSystem",
+            "InputFile": "TaskBook.xlsx",
+            "OutputFile": "ImpDataBook.xlsx"
+          }
+        }
+      }
+    }
+  ]
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
-HttpResponseMessage with the operation result.
-
+```json
+{
+  "Status": "OK",
+  "TaskId": "12345678",
+  "Result": {
+    "FilePath": "ImpDataBook.xlsx",
+    "DownloadUrl": "https://api.aspose.cloud/v3.0/cells/storage/file/ImpDataBook.xlsx"
+  }
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda ett SDK är det mest effektiva sättet att integrera dessa åtgärder i din applikation. SDK:er hanterar autentisering, begäransskapande och svarsparsering, så att du kan fokusera på affärslogik. För en fullständig lista över Aspose.Cells Cloud SDK:er, se [GitHub-förrådet](https://github.com/aspose-cells-cloud).  
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="5" tabID="8" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Perl" >}}
 
@@ -81,4 +141,3 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
-

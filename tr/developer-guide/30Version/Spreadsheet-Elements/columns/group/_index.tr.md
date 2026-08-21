@@ -1,76 +1,120 @@
-﻿---
-title: Excel çalışma sayfasındaki grup sütunları
-second_title: Documen
-linktitle: Grup
-type: docs
-url: /tr/columns/group/
-aliases: [/group-columns-in-an-excel-worksheet/, /group-columns-in-excel-worksheet/]
-keywords: Group column on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında gruplama sütununu destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 60
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki sütunları gruplama
 ---
-Bu REST API grup çalışma sayfası sütunlarını gösterir.
+title: "Sütunları Grupla – Aspise.Cells Bulut API Dokümantasyonu"
+description: "Aspose.Cells Cloud REST API'sini (v3.0) kullanarak bir Excel çalışma sayfasındaki sütunları gruplayın. İstek sözdizimi, parametreler, cURL ve SDK örnekleri ile yanıt detaylarını içerir."
+keywords: "Aspose.Cells, sütunları grupla, Excel API, REST, bulut SDK"
+weight: 60
+type: docs
+aliases:
+  - /group-columns-in-an-excel-worksheet/
+  - /group-columns-in-excel-worksheet/
+---
 
-## RSET API
+# Excel Çalışma Sayfasında Sütunları Gruplama
+
+**API sürümü:** v3.0  
+**İşlem:** `PostGroupWorksheetColumns` – Çalışma sayfasındaki sütunları gruplar.
+
+---
+
+## Genel Bakış
+
+Bu REST API, bir çalışma sayfasındaki sütunların bir aralığını gruplamanızı sağlar. Gruplanan sütunlar gösterilebilir veya gizlenebilir; bu sayede Microsoft Excel'deki gibi daraltılabilir bölümler oluşturabilirsiniz.
+
+---
+
+## Ön Gereksinimler
+
+- Aspose Cloud kimlik doğrulama hizmetinden alınmış geçerli bir **JWT erişim belirteci**.  
+- Çalışma kitabının konumu, Aspose.Cells Cloud'un erişebilmesi gerekmektedir (varsayılan depo veya özel depo adı).  
+- Gerekli SDK sürümü (SDK kullanılıyorsa): **v3.0** API sürümünü destekleyen en son sürüm.  
+
+---
+
+## Kimlik Doğrulama
+
+Tüm istekler **Bearer token** kimlik doğrulaması gerektirir.
+
+```http
+Authorization: Bearer <access_token>
+```
+
+Belirteç almayle ilgili ayrıntılar için [JWT kimlik doğrulama kılavuzuna](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) bakınız.
+
+---
+
+## HTTP İsteği
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
+```
+
+| Parametre | Konum | Gerekli | Açıklama |
+|-----------|--------|---------|-------------|
+| `name` | Yol | Evet | Çalışma kitabı dosya adı (örneğin, `test.xlsx`). |
+| `sheetName` | Yol | Evet | Gruplandırılacak sütunları içeren çalışma sayfası. |
+| `firstIndex` | Sorgu | Evet | Gruba dahil edilecek ilk sütunun sıfır tabanlı dizini. |
+| `lastIndex` | Sorgu | Evet | Gruba dahil edilecek son sütunun sıfır tabanlı dizini. |
+| `hide` | Sorgu | Hayır | `true` ise gruplanan sütunlar gizlenir; aksi takdirde görünür kalırlar. |
+| `folder` | Sorgu | Hayır | Çalışma kitabının bulunduğu klasörün yolu. |
+| `storageName` | Sorgu | Hayır | Dosyanın bulunduğu depolama hizmetinin adı. |
+
+---
+
+## İstek Örneği (cURL)
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
- 
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
 ```
 
-İstek parametreleri şunlardır:
+> **Not:** İstek, şifreli iletişimi sağlamak için **HTTPS** kullanır.
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| ilkIndex| tam sayı| sorgu|İşlem yapılacak ilk sütun indeksi.|
-| sonIndex| tam sayı| sorgu| İşlem yapılacak son sütun indeksi.|
-| saklamak| Boolean| sorgu| sütunların görünür durumu|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+---
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+## Yanıt
 
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### Başarılı (200)
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Alan | Tür | Açıklama |
+|--------|---------|-------------|
+| `Code` | tamsayı | HTTP durum kodu (`200`). |
+| `Status` | dize | İşlemin metinsel durumu (`OK`). |
 
-{{< tab tabNum="11" >}}
+**Örnek**
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" -H "accept: application/json"
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```java
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+### Hata (örneğin, 400 Bad Request)
 
-{{< /tabs >}}
+| Alan | Tür | Açıklama |
+|--------------|---------|-------------|
+| `Code` | tamsayı | HTTP durum kodu (`400`, `401`, `404`, `500`, …). |
+| `Status` | dize | Metinsel durum (`Error`). |
+| `ErrorMessage` | dize | Sorunun insan tarafından okunabilir açıklaması. |
+| `ErrorCode` | dize | Hataya ait programatik tanımlayıcı. |
 
-## Bulut SDK Ailesi
+**Örnek – Geçersiz İstek**
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+```json
+{
+  "Code": 400,
+  "Status": "Error",
+  "ErrorMessage": "Geçersiz sütun dizini.",
+  "ErrorCode": "InvalidParameter"
+}
+```
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+---
+
+## SDK Örnekleri
+
+Aşağıdaki kod parçacıkları, desteklenen SDK'lar kullanılarak **Çalışma Sayfası Sütunlarını Gruplama** işleminin nasıl çağrılacağını göstermektedir.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +167,26 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---
+
+## Notlar
+
+- **Gruplama davranışı:** API, Excel'de genişletilebilir veya daraltılabilir bir sütun grubu oluşturur. `hide=true` ayarı, grubu hemen daraltır.  
+- **Sıfır tabanlı dizinleme:** `firstIndex` ve `lastIndex` parametreleri **0** değerinden başlar; bir çalışma sayfasındaki ilk sütunun dizini 0’dır.  
+- **Depolama dikkatleri:** Çalışma kitabı varsayılan depolama dışındaki bir yerde bulunuyorsa, hem `folder` hem de `storageName` sorgu parametrelerini belirtmelisiniz.  
+
+---
+
+## Ayrıca Bakınız
+
+- [Kimlik Doğrulama – JWT belirteç tabanlı](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
+- [Çalışma Sayfası Sütunlarını Gruplama için OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns)  
+- [Aspose.Cells Cloud SDK'ları (GitHub)](https://github.com/aspose-cells-cloud)  
+- [Excel Çalışma Sayfasında Satırları Gruplama](/rows/group/)  
+
+---
+
+> *Ekran Görüntüsü:* ![Excel çalışma sayfasında gruplanmış sütunları gösteren ekran görüntüsü](./images/group-columns.png){: .img-fluid alt="Excel çalışma sayfasında gruplanmış sütunları gösteren ekran görüntüsü" }
+
+*Yukarıdaki yer tutucu görüntü, sütun gruplamanın görsel sonucunu gösteren gerçek bir ekran görüntüsü ile değiştirilmelidir.*

@@ -1,78 +1,101 @@
-﻿---
-title: 更新
-type: docs
-url: /zh/comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
-keywords: REST API, spreadsheets, excel, update commen
-description: Cells.Cloud API 为 Excel 操作：更新评论
-weight: 30
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 更新
 ---
-此 REST API 表示更新工作表的单元格注释。
+title: "更新工作表单元格批注"
+type: docs
+url: /comments/update/
+aliases: [/update-a-comment-in-excel-workbook/]
+keywords: "Aspose.Cells Cloud, REST API, Excel, 工作表, 单元格批注, 更新工作表批注, 批注对象"
+description: "使用 Aspose.Cells Cloud REST API 更新 Excel 工作簿中单元格的工作表批注，包括请求详情、响应码和 SDK 示例。"
+weight: 30
+ArticleTitle: "更新工作表单元格批注 – Aspose.Cells Cloud API"
+---
 
-## 重新设置 API
+此 REST API 用于更新工作表单元格上的批注。通过该端点可**更新 Excel 文件中的工作表批注**。
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
- 
+**前置条件：**  
+- 必须在 `Authorization` 请求头中包含有效的 OAuth/JWT 访问令牌。  
+- 工作簿必须存储在受支持的云存储位置（需指定 `folder`，可选 `storageName`）。  
+
+## PostWorksheetComment API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
-请求参数为：
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|单元格名称|细绳|小路|单元格名称|
-|评论||身体|评论对象|
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 安全可靠，需采用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### 请求参数
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名         | 类型   | 位置 | 描述                                                         |
+| -------------- | ------ | ---- | ------------------------------------------------------------ |
+| name           | string | path | Excel 文档的名称。                                           |
+| sheetName      | string | path | 包含目标单元格的工作表名称。                                 |
+| cellName       | string | path | 单元格地址（例如：**A1**）。                                 |
+| comment        | object | body | 一个 **Comment** 对象，用于定义待添加或更新的批注内容。     |
+| folder         | string | query | 文档所在的文件夹路径。                                       |
+| storageName    | string | query | 存储服务的名称。                                             |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) 定义了一个公开可访问的编程接口，允许您直接通过网页浏览器执行 REST 交互。
+
+您可以使用 **cURL** 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何通过 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/a1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--d "{ \"CellName\": \"a1\", \"Author\": \"test\", \"HtmlNote\": \"string\", \"Note\": \"this is a comment\", \"AutoSize\": true, \"IsVisible\": true, \"Width\": 10, \"Height\": 10}"
-
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "CellName": "a1",
+        "Author": "test",
+        "HtmlNote": "string",
+        "Note": "this is a comment",
+        "AutoSize": true,
+        "IsVisible": true,
+        "Width": 10,
+        "Height": 10
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+可能的响应状态码：
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| 状态码 | 描述                                     |
+|--------|------------------------------------------|
+| 200    | 批注更新成功。                          |
+| 400    | 请求错误 — 缺少或参数无效。             |
+| 401    | 未授权 — 身份验证失败。                 |
+| 404    | 未找到 — 工作簿、工作表或批注不存在。   |
+| 500    | 服务器内部错误。                        |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+**注意事项 / 提示：**  
+- 批注最大长度为 1024 个字符。  
+- 支持 UTF‑8 字符集；请避免使用控制字符。  
+
+## 云 SDK 开发套件
+
+使用 SDK 是快速开发 Aspose.Cells Cloud 应用的最佳方式。SDK 封装了底层细节，使您能专注于业务逻辑。请查看 <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub 仓库</a> 以获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用不同语言的 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -125,3 +148,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 {{< /tab >}}
 
 {{< /tabs >}}
+
+相关操作：  
+- [获取工作表批注](/comments/get/)  
+- [添加工作表批注](/comments/add/)  
+- [删除工作表批注](/comments/delete/)

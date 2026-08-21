@@ -1,70 +1,85 @@
-﻿---
-title: Aspose.Cells Cloud WEb API - Ottieni Public Ke
-second_title: Documen
-ArticleTitle: Get Public Ke
-linktitle: Ottieni Ke pubblico
+---
+---
+title: "Aspose.Cells Cloud API – Ottieni la Chiave Pubblica (v4.0) | Documentazione REST"
+second_title: "Documento"
+ArticleTitle: "Ottieni la Chiave Pubblica"
+linktitle: "Ottieni la Chiave Pubblica"
 type: docs
 url: /it/get-public-key/
-keywords: asymmetric encryption, public key retrieval, REST API, Excel API, security, data encryption, API integratio
-description: Recupera una chiave pubblica asimmetrica per la crittografia sicura dei dati
+keywords: "Aspose.Cells, Chiave Pubblica, RSA, API, Cloud"
+description: "Recupera la chiave pubblica RSA utilizzata per crittografare i dati con Aspose.Cells Cloud. Include endpoint, parametri, esempi di richiesta/risposta, codici di stato e esempi di utilizzo degli SDK."
 weight: 100
-kwords: crittografia asimmetrica, chiave pubblica, REST API, Excel API, sicurezza, crittografia dei dati, integrazione API, JSON, documentazione API
 ---
-Recupera la chiave pubblica da un algoritmo di crittografia asimmetrica.
 
-## **Ottieni la chiave pubblica API**
+Questa API recupera la chiave pubblica da un algoritmo di crittografia asimmetrica.
+
+**Sommario Breve:** Utilizza l'API Aspose.Cells *Ottieni la Chiave Pubblica* per ottenere la chiave pubblica RSA (2048 bit) necessaria per crittografare i dati durante il lavoro con file Excel nel cloud. L'endpoint restituisce la chiave in formato JSON ed è protetto tramite OAuth 2.0.
+
+## **API Ottieni la Chiave Pubblica**
+
+**Prerequisiti:**  
+Ottenere un token di accesso OAuth 2.0 valido che includa l'ambito `Cells.Read` prima di chiamare questo endpoint.
+
+### **API Web**
 
 ```
-GET http://api.aspose.cloud/v4.0/cells/publickey
+GET https://api.aspose.cloud/v4.0/cells/publickey
 ```
 
-### **Parametri di richiesta:**
+**Esempio di Richiesta (cURL)**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP| Descrizione|
-|:- |:- |:- |:- |
-|||||
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/publickey" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
+### **Sicurezza e Autenticazione**
+
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
+
+### **Parametri della Richiesta:**
+
+| Nome Parametro | Tipo   | Posizione | Descrizione                                                                 |
+| -------------- | ------ | --------- | --------------------------------------------------------------------------- |
+| Authorization  | string | Header    | Token Bearer per l'autenticazione OAuth2 (obbligatorio).                   |
+| Accept         | string | Header    | Formato di risposta desiderato, ad esempio `application/json` (opzionale, il valore predefinito è JSON). |
 
 ### **Risposta**
 
 ```json
 {
-  "Name": "CellsCloudPublicKeyResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "CellsCloudPublicKey",
-      "DataType": {
-        "Identifier": "Class",
-        "Reference": "CellsCloudPublicKey",
-      }
-    },
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
-    }
-  ]
+  "Code": 200,
+  "Status": "OK",
+  "CellsCloudPublicKey": {
+    "PublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr...",
+    "Algorithm": "RSA",
+    "KeySize": 2048
+  }
 }
 ```
 
-## Come utilizzare la chiave pubblica Get API con gli SDK
+**Codici di Stato HTTP**
 
-### Specifiche OpenAPI
+| Codice | Significato            | Descrizione                                                    |
+| ------ | ---------------------- | -------------------------------------------------------------- |
+| 200    | OK                     | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta Non Validata | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401    | Non Autorizzato        | Token JWT non valido o mancante.                               |
+| 413    | Payload Troppo Grande  | Il file caricato supera il limite di dimensione.              |
+| 500    | Errore Interno del Server | Errore imprevisto del server.                                |
 
- IL[Specifiche OpenAPI](https://reference.aspose.cloud/cells/#/KeyController/GetPublicKey) definisce un'interfaccia di programmazione accessibile al pubblico, che consente di eseguire interazioni REST direttamente dal browser web.
+## Come utilizzare l'API *Ottieni la Chiave Pubblica* con gli SDK
 
-### Utilizzare gli SDK cloud Aspose.Cells
+### Specifica OpenAPI
 
-Utilizzare l'SDK è il modo migliore per accelerare lo sviluppo. L'SDK gestisce i dettagli sottostanti, consentendo di implementare in modo semplice l'acquisizione della chiave pubblica per le celle con un codice minimo.
- Si prega di controllare il[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+La [Specifiche OpenAPI](https://reference.aspose.cloud/cells/#/KeyController/GetPublicKey) definiscono un'interfaccia di programmazione accessibile pubblicamente, consentendo di effettuare interazioni REST direttamente dal tuo browser web.
 
-I seguenti esempi di codice illustrano come interagire con i servizi Web Aspose.Cells utilizzando vari SDK:
+### Utilizzare gli SDK di Aspose.Cells Cloud
+
+L'utilizzo degli SDK rappresenta il modo migliore per velocizzare lo sviluppo. Gli SDK gestiscono i dettagli sottostanti, consentendoti di implementare semplicemente l'ottieni chiave pubblica per le celle con un codice minimo.  
+Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+Di seguito sono riportati esempi concreti per i linguaggi più comuni:
+
+---

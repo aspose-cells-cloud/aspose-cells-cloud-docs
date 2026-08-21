@@ -1,22 +1,26 @@
-﻿---
-title: العمل مع العمود Excel
-second_title: Documen
-linktitle: عمود
-type: docs
-url: /ar/columns/
-aliases: [/working-with-columns/]
-keywords: REST API, columns, spreadsheets, exce
-description: "Cells.Cloud API لـ Excel تعمل: إظهار الأعمدة من ورقة عمل Excel"
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الأعمدة
 ---
-## العمل مع الأعمدة في ملف Excel
+title: "العمل مع أعمدة ملفات إكسل"
+second_title: "مستند"
+linktype: "أعمدة"
+type: docs
+url: /columns/
+aliases: [/working-with-columns/]
+keywords: "إكسل، أعمدة، Aspose.Cells Cloud، API، جدول بيانات، ورقة عمل، REST API"
+description: "دليل مفصّل لعمليات API في Aspose.Cells Cloud المتعلقة بأعمدة ورقة عمل إكسل، ويغطي استرجاع الأعمدة وإضافتها ونسخها وإخفاءها وإظهارها وتجميعها وفك التجميع منها وحذفها."
+weight: 100
+ArticleTitle: "العمل مع أعمدة ملفات إكسل – وثائق Aspose.Cells Cloud"
+---
 
-- [كيفية الحصول على عمود من ورقة عمل Excel.](/cells/ar/columns/get/)
-- [كيفية إضافة عمود فارغ إلى ورقة العمل Excel.](/cells/ar/columns/add/)
-- [كيفية نسخ الأعمدة في ورقة العمل Excel.](/cells/ar/columns/copy/)
-- [كيفية إخفاء الأعمدة في ورقة العمل Excel.](/cells/ar/columns/hide/)
-- [كيفية إظهار الأعمدة في ورقة العمل Excel.](/cells/ar/columns/unhide/)
-- [كيفية تجميع الأعمدة في ورقة العمل Excel.](/cells/ar/columns/group/)
-- [كيفية إلغاء تجميع الأعمدة في ورقة العمل Excel.](/cells/ar/columns/ungroup/)
-- [كيفية حذف عمود في ورقة العمل Excel.](/cells/ar/columns/delete/)
+## العمل مع الأعمدة في ملف إكسل
+
+توفر هذه الصفحة نظرة موجزة مُوجزة عن العمليات الأساسية المرتبطة بالأعمدة المتاحة عبر واجهة برمجة تطبيقات Aspose.Cells Cloud. استخدم الروابط أدناه للتنقّل إلى الوثائق التفصيلية لكل إجراء، بما في ذلك مُعطَلات الطلب وأكواد الأمثلة واستجابات العينات.
+
+- [كيفية استرجاع عمود من ورقة عمل إكسل.](/cells/columns/get/)
+- [كيفية إضافة عمود فارغ إلى ورقة عمل إكسل.](/cells/columns/add/)
+- [كيفية نسخ أعمدة في ورقة عمل إكسل.](/cells/columns/copy/)
+- [كيفية إخفاء أعمدة في ورقة عمل إكسل.](/cells/columns/hide/)
+- [كيفية إظهار أعمدة في ورقة عمل إكسل.](/cells/columns/unhide/)
+- [كيفية تجميع أعمدة في ورقة عمل إكسل.](/cells/columns/group/)
+- [كيفية فك تجميع أعمدة في ورقة عمل إكسل.](/cells/columns/ungroup/)
+- [كيفية حذف عمود من ورقة عمل إكسل.](/cells/columns/delete/)
+---

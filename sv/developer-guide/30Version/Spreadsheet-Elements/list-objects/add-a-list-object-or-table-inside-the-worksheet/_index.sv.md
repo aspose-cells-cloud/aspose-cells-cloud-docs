@@ -1,79 +1,113 @@
-﻿---
-title: Lägg till ett listobjekt i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Annons
-type: docs
-url: /sv/list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
-keywords: Add a list object(table) into an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder tillägg av ett listobjekt (tabell) i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lägg till ett listobjekt i ett Excel-kalkylblad
 ---
-Denna REST API indikerar `add a list object(table)` i ett Excel-arbetsblad.
+title: "Lägg till ett listobjekt (tabell) i ett Excel-arbetsblad"
+second_title: "Dokument"
+linktitle: "Lägg till"
+type: docs
+url: /list-objects/add/
+aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+keywords: "Aspose.Cells Cloud, Excel API, listobjekt, tabell, REST API, arbetsblad"
+description: "Lär dig hur du lägger till ett listobjekt (Excel-tabell) i ett arbetsblad med Aspose.Cells Cloud REST API. Inkluderar slutpunkt, parametrar, autentiseringsssteg, cURL-exempel och SDK-kodexempel."
+weight: 10
+ArticleTitle: "Lägg till ett listobjekt (tabell) i ett Excel-arbetsblad – Aspose.Cells Cloud-dokumentation"
+---
 
-## RSET API
+Detta REST API lägger till ett **listobjekt (tabell)** i ett Excel-arbetsblad.
+
+Innan du använder denna slutpunkt, se till att du har en giltig JWT-token, att arbetsboken lagras i ett stöddat molnlagringssystem och att arbetsbladet finns.
+
+## REST API
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 ```
 
-Begäranparametrarna är:
+### Begärparametrar
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| startrad| heltal| fråga| Startraden i listintervallet.|
-| startkolumn| heltal| fråga| Startraden i listintervallet.|
-| slutrad| heltal| fråga| Startraden i listintervallet.|
-| slutkolumn| heltal| fråga| Startraden i listintervallet.|
-| harRubriker| boolesk| fråga| Sann|
-| listObject|| kropp| Listobjekt|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parametername   | Typ     | Plats  | Beskrivning                                                           |
+| --------------- | ------- | ------ | --------------------------------------------------------------------- |
+| **name**        | string  | path   | Namn på arbetsboksfilen.                                              |
+| **sheetName**   | string  | path   | Namn på arbetsbladet.                                                 |
+| **startRow**    | integer | query  | Nollbaserat index för den första raden i tabellintervallet.           |
+| **startColumn** | integer | query  | Nollbaserat index för den första kolumnen i tabellintervallet.        |
+| **endRow**      | integer | query  | Nollbaserat index för den sista raden i tabellintervallet.            |
+| **endColumn**   | integer | query  | Nollbaserat index för den sista kolumnen i tabellintervallet.         |
+| **hasHeaders**  | boolean | query  | `true` om den första raden innehåller kolumnrubriker, annars `false`. |
+| **listObject**  | object  | body   | Definitionen av listobjektet (se **Schemat för begärandetexten**).    |
+| **folder**      | string  | query  | Mapp som innehåller arbetsboken.                                      |
+| **storageName** | string  | query  | Lagringsnamn.                                                         |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Schemat för begärandetexten
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Objektet **listObject** beskriver tabellen som ska skapas. Endast de vanligaste egenskaperna visas; se OpenAPI-specifikationen för den fullständiga listan.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "displayName": "MinTabell",
+  "showTotals": false,
+  "style": "TableStyleMedium2"
 }
- 
 ```
 
-{{< /tab >}}
+### Exempel på begäran (cURL)
 
-{{< /tabs >}}
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "displayName": "MinTabell",
+        "showTotals": false,
+        "style": "TableStyleMedium2"
+      }'
+```
 
-## Cloud SDK-familjen
+### Exempel på svar
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+### Felkoder
+
+| HTTP-status | Anledning         | Beskrivning                                      |
+| ----------- | ----------------- | ------------------------------------------------ |
+| **400**     | Felaktig begäran  | Ogiltiga intervalsparametrar eller felaktig JSON-begärandetext. |
+| **401**     | Otillåten         | Saknad eller utgången JWT-token.                 |
+| **404**     | Hittades inte     | Den angivna arbetsboken eller arbetsbladet finns inte. |
+| **500**     | Internt serverfel | Oväntat serverfel på serversidan.                |
+
+**Exempel på 400-svar**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Invalid range parameters."
+}
+```
+
+**Exempel på 401-svar**
+
+```json
+{
+  "Code": 401,
+  "Status": "Unauthorized",
+  "Message": "Authentication token is missing or expired."
+}
+```
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) innehåller den fullständiga kontraktet för denna operation.
+
+## Molnsdk-familj
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Besök [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -126,3 +160,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

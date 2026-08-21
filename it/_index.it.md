@@ -1,107 +1,122 @@
-﻿---
-title: "Aspose.Cells Cloud Web: archiviazione cloud, conversione di fogli di calcolo, unione, suddivisione, protezione, elaborazione dati e altro ancora"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud Web: Cloud storage, Spreadsheet conversion, merged, splitting, protecting, data processing, and mor"
-linktitle: Centro sviluppatori
-type: docs
-url: /it/
-description: Aspose.Cells Le API Web Cloud supportano Spreadsheet/Excel per creare, convertire, unire, dividere, proteggere ed eseguire operazioni sugli oggetti interni, tra le altre funzioni. Aspose.Cells Cloud fornisce un documento completo, supporta interfacce RESTful ed esempi di codice per aiutare gli sviluppatori a integrare rapidamente
-weight: 10
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Aspose.Cells Documento Cloud
 ---
-## Che cosa sono le API cloud Aspose.Cells?
+title: "Aspose.Cells Cloud API – Convertire, unire, dividere e proteggere file Excel"
+second_title: "Documento"
+ArticleTitle: "Aspose.Cells Cloud API – Convertire, unire, dividere e proteggere file Excel"
+linktitle: "Centro sviluppatori"
+type: docs
+url: /
+description: "L'API REST di Aspose.Cells Cloud consente la conversione, l'unione, la divisione, la protezione e l'elaborazione completa dei fogli di calcolo Excel. Fino a 150 chiamate al mese gratuite, SDK disponibili per 8 linguaggi."
+weight: 10
+keywords: "Aspose.Cells Cloud, API Excel, conversione foglio di calcolo, unire Excel, dividere Excel, proteggere Excel, SDK foglio di calcolo cloud, REST API, elaborazione Excel"
+---
 
-Le API cloud Aspose.Cells sono un set di servizi cloud Spreadsheet/Excel: non è necessario installare Office, non è necessario configurare i server, basta inviare una richiesta HTTP e potrai eseguire tutte le operazioni comuni come creazione, modifica, conversione di formato, pulizia dei dati, grafici, tabelle pivot, crittografia, suddivisione, unione, filigrane, firme digitali, ecc., ovunque e in qualsiasi lingua.
+## Cos'è l'API Aspose.Cells Cloud?
 
-## Perché utilizzare le API cloud Aspose.Cells?
+Aspose.Cells Cloud API è una raccolta di servizi cloud per fogli di calcolo/Excel. Non è richiesta alcuna installazione di Office né configurazione del server: basta inviare una richiesta HTTP e potrai creare, modificare, convertire, pulire i dati, generare grafici, costruire tabelle pivot, crittografare, dividere, unire, aggiungere filigrane, applicare firme digitali e molto altro ancora, da qualsiasi linguaggio di programmazione.
 
-- Creazione, modifica, conversione e analisi di fogli di calcolo nell'archiviazione cloud basata sui servizi Cloud Web Aspose.Cells.
-- Crea, modifica, converti e analizza file di fogli di calcolo locali basati sui servizi Cloud Web Aspose.Cells API.
-- I formati di file supportati sono 30, come xlsx, csv, ods, xlsb, ecc.
-- Gestisci i fogli di calcolo direttamente tramite Aspose.Cells Cloud Web API senza la necessità di dipendenze Microsoft Excel.
-- 150 chiamate gratuite al mese al numero API.
-- Addebito graduale: quanto consumano gli utenti, quanto addebitano, più consumano, più sconti offrono.
-- **Codice abbreviato**:Cose che si possono fare in una frase.
-  - **Convertire XLSX in PDF** → ConvertiFoglioDiCalcoloInPdf
-  - **Elimina gli spazi extra nell'intero file** → TrimSpreadsheetContent
-  - **Combina più di 10 file in un unico report** → Unisci fogli di calcolo
+## Perché utilizzare le API Aspose.Cells Cloud?
 
-## **Come utilizzare le API cloud Aspose.Cells?**
+- Creare, modificare, convertire e analizzare fogli di calcolo su archiviazione cloud basata sui servizi API Web Aspose.Cells Cloud.  
+- Creare, modificare, convertire e analizzare file di fogli di calcolo locali basati sui servizi API Web Aspose.Cells Cloud.  
+- I formati di file supportati includono 30 formati, tra cui **xlsx**, **csv**, **ods**, **xlsb**, ecc.  
+- Gestire i fogli di calcolo direttamente tramite l'API Web Aspose.Cells Cloud senza dipendenze da Microsoft Excel.  
+- Il piano gratuito include fino a 150 chiamate API al mese.  
+- Pricing in base al consumo (pay-as-you-go).  
+- **Short-code**: Operazioni descritte in una frase.  
+  - **Convertire XLSX in PDF** → ConvertSpreadsheetToPdf  
+  - **Eliminare spazi extra in tutto il file** → TrimSpreadsheetContent  
+  - **Unire oltre 10 file in un unico report** → MergeSpreadsheets  
 
-###  Fase 1:**Ottieni le credenziali API**
+## **Come utilizzare le API Aspose.Cells Cloud?**
 
-- **[Registra Aspose Account Cloud](https://dashboard.aspose.cloud/signup)**
-- **[Ottieni le credenziali del cliente](https://dashboard.aspose.cloud/#/applications)**
+### Passo 1: **Ottenere le credenziali API**  
 
-###  Fase 2:**Chiama le API Web del foglio di calcolo con SDK (consigliato)**
+- **[Registrare un account Aspose Cloud](https://dashboard.aspose.cloud/signup)**  
+- **[Ottenere le credenziali client](https://dashboard.aspose.cloud/#/applications)**  
 
-Si consiglia di utilizzare l'SDK ufficiale per semplificare il processo di autenticazione e richiesta.
+### Passo 2: **Chiamare le API Web per fogli di calcolo tramite SDK (raccomandato)**  
 
-#### **[Installa SDK (usando .NET come esempio)](https://www.nuget.org/packages/Aspose.cells-Cloud/#readme-body-tab)**
+Si consiglia di utilizzare l'SDK ufficiale per semplificare l'autenticazione e la gestione delle richieste. L'SDK acquisisce e aggiorna automaticamente i token di accesso.
+
+#### **[Installare SDK .NET (NuGet)](https://www.nuget.org/packages/Aspose.cells-Cloud/#readme-body-tab)**
 
 ```powershell
-
-dotnet add package Aspose.Cells-Cloud --version 25.8.0
-
+dotnet add package Aspose.Cells-Cloud --version 26.6.0
 ```
 
-####  Esempio:**Converti Excel in PDF con SDK**
+#### Esempio: **Convertire Excel in PDF tramite SDK**
 
-```C#
-    CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
-    cellsApi.ConvertSpreadsheet(new ConvertSpreadsheetRequest { Spreadsheet = "EmployeeSalesSummary.xlsx", format = "pdf" }, "EmployeeSalesSummary.pdf");
+```csharp
+CellsApi cellsApi = new CellsApi(
+    Environment.GetEnvironmentVariable("ProductClientId"),
+    Environment.GetEnvironmentVariable("ProductClientSecret"));
+cellsApi.ConvertSpreadsheet(
+    new ConvertSpreadsheetRequest { Spreadsheet = "EmployeeSalesSummary.xlsx", format = "pdf" },
+    "EmployeeSalesSummary.pdf");
 ```
 
 #### Descrizione
 
-- **Foglio di calcolo**: Il nome del file Excel che deve trovarsi nella memoria locale.
-- **Formato**Formato di destinazione. Ad esempio pdf, png, csv, json, ecc.
-- **File di output** verrà salvato nella posizione locale. Il nome del file di output è "EmployeeSalesSummary.pdf".
+- **Spreadsheet**: Nome del file Excel presente nell'archiviazione locale.  
+- **Format**: Formato di destinazione (ad esempio, pdf, png, csv, json).  
+- **File di output**: Il file risultante verrà salvato localmente con il nome specificato.  
 
-## **Funzioni principali**
+## **Funzionalità principali**
 
-Aspose.Cells Cloud offre le seguenti funzionalità chiave per soddisfare le esigenze di automazione dei fogli di calcolo a livello aziendale:
+Aspose.Cells Cloud offre le seguenti funzionalità chiave per soddisfare le esigenze di automazione dei fogli di calcolo a livello enterprise:
 
-### **Convertitore di fogli di calcolo**
+### **Conversione foglio di calcolo**
 
-- **[Converti foglio di calcolo in file PDF](https://docs.aspose.cloud/cells/convert-excel-file-to-pdf-file/)**
-- **[Converti grafico del foglio di calcolo in immagine](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
-- **[Salva foglio di calcolo con nome](https://docs.aspose.cloud/cells/save-an-excel-file-as-other-formats-files/)**
+- **[Convertire foglio di calcolo in file PDF](https://docs.aspose.cloud/cells/convert-excel-file-to-pdf-file/)**  
+- **[Convertire grafico foglio di calcolo in immagine](https://docs.aspose.cloud/cells/convert-chart-to-image/)**  
+- **[Salva foglio di calcolo come](https://docs.aspose.cloud/cells/save-an-excel-file-as-other-formats-files/)**  
 
-### **Elaborazione dei dati**
+### **Elaborazione dati**
 
-- **[Unisci fogli di calcolo](https://docs.aspose.cloud/cells/merge-spreadsheets/)**
-- **[Fogli di calcolo divisi](https://docs.aspose.cloud/cells/split-spreadsheet/)**
-- **[Elimina le righe vuote del foglio di calcolo](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-rows/)**
-- **[Elimina le colonne vuote del foglio di calcolo](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-columns/)**
-- **[Sostituisci il contenuto del foglio di calcolo](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
+- **[Unire fogli di calcolo](https://docs.aspose.cloud/cells/merge-spreadsheets/)**  
+- **[Dividere fogli di calcolo](https://docs.aspose.cloud/cells/split-spreadsheet/)**  
+- **[Eliminare righe vuote dal foglio di calcolo](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-rows/)**  
+- **[Eliminare colonne vuote dal foglio di calcolo](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-columns/)**  
+- **[Sostituire contenuto foglio di calcolo](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**  
 
-## Supporta gli SDK (**SDK disponibili**)
+> **Nota**: Schema dettagliati delle richieste/risposte, metodi HTTP, parametri di query e risposte di esempio per ogni endpoint sono disponibili nel **Riferimento API Web Aspose.Cells Cloud per fogli di calcolo**, indicato di seguito.
 
--  Aspose.Cells Offerte cloud[SDK](https://github.com/aspose-cells-cloud)** in più lingue, pronto all'uso:
+**Riferimento rapido agli endpoint**
 
-| Lingua| Metodo di installazione| Repository GitHub|
-||----|-------|
-|[Java](https://www.oracle.com/java/) |[Maven](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/blob/master/Aspose.Cells.Cloud.pom.xml) |[Java Repository GitHub dell'SDK](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java) |
-|[.NET](https://dotnet.microsoft.com/) |[NuGet](https://www.nuget.org/packages/Aspose.cells-Cloud/#readme-body-tab) |[.NET Repository GitHub dell'SDK](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet) |
-|[Python](https://www.python.org/) |[pip](https://pypi.org/project/asposecellscloud/) |[Python Repository GitHub dell'SDK](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python) |
-|[Node.js](https://nodejs.org/en) |[npm](https://www.npmjs.com/package/asposecellscloud) |[Repository GitHub dell'SDK Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node) |
-|[PHP](https://www.php.net/) |[Compositore](https://packagist.org/packages/aspose/cells-sdk-php) |[PHP Repository GitHub dell'SDK](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php) |
-|[GoLang](https://go.dev/) |[Moduli Go](https://pkg.go.dev/github.com/aspose-cells-cloud/aspose-cells-cloud-go/v25) |[Repository GitHub dell'SDK GoLang](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go) |
-|[Rubino](https://www.ruby-lang.org/) |[RubyGems](https://rubygems.org/gems/aspose_cells_cloud) |[Repository GitHub dell'SDK Ruby](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby) |
-|[Perl](https://www.perl.org/) |[CPAN](https://metacpan.org/dist/AsposeCellsCloud-CellsApi) |[Perl Repository GitHub dell'SDK](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl) |
+| Operazione | Metodo HTTP | Percorso | Parametri obbligatori | Risposta di esempio |
+|-----------|-------------|------|---------------------|-----------------|
+| Convertire foglio di calcolo | POST | `/cells/convert` | `Spreadsheet` (file), `format` (string) | File binario (ad esempio, PDF) |
+| Unire fogli di calcolo | POST | `/cells/worksheets/merge` | `files` (elenco di file) | Cartella di lavoro unita |
+| Dividere foglio di calcolo | POST | `/cells/worksheets/split` | `Spreadsheet` (file), `format` (string) | Archivio di file divisi |
+| Eliminare righe vuote | POST | `/cells/worksheets/blankrows/delete` | `Spreadsheet` (file) | Cartella di lavoro aggiornata |
+| Sostituire contenuto | POST | `/cells/replace` | `Spreadsheet` (file), `oldValue`, `newValue` | Cartella di lavoro aggiornata |
 
-- **API Punto finale**: [Aspose.Cells Cloud Spreadsheet Web API Riferimento](https://reference.aspose.cloud/cells/)
+## SDK supportati (**SDK disponibili**)
+
+- Aspose.Cells Cloud fornisce [SDK](https://github.com/aspose-cells-cloud) pronti all’uso in ogni linguaggio principale: clona, codifica e distribuisci:
+
+| Linguaggio | Metodo di installazione | Repository GitHub SDK |
+|------|----------|-------------|
+| [Java](https://www.oracle.com/java/) | [Maven](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/blob/master/Aspose.Cells.Cloud.pom.xml) | [Repository GitHub SDK Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java) |
+| [.NET](https://dotnet.microsoft.com/) | [NuGet](https://www.nuget.org/packages/Aspose.cells-Cloud/#readme-body-tab) | [Repository GitHub SDK .NET](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet) |
+| [Python](https://www.python.org/) | [pip](https://pypi.org/project/asposecellscloud/) | [Repository GitHub SDK Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python) |
+| [Node.js](https://nodejs.org/en) | [npm](https://www.npmjs.com/package/asposecellscloud) | [Repository GitHub SDK Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node) |
+| [PHP](https://www.php.net/) | [Composer](https://packagist.org/packages/aspose/cells-sdk-php) | [Repository GitHub SDK PHP](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php) |
+| [GoLang](https://go.dev/) | [Go Modules](https://pkg.go.dev/github.com/aspose-cells-cloud/aspose-cells-cloud-go/v25) | [Repository GitHub SDK Go](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go) |
+| [Ruby](https://www.ruby-lang.org/) | [RubyGems](https://rubygems.org/gems/aspose_cells_cloud) | [Repository GitHub SDK Ruby](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby) |
+| [Perl](https://www.perl.org/) | [CPAN](https://metacpan.org/dist/AsposeCellsCloud-CellsApi) | [Repository GitHub SDK Perl](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl) |
+| **Endpoint API** | [Riferimento API Web Aspose.Cells Cloud per fogli di calcolo](https://reference.aspose.cloud/cells/) |  |
 
 ## **Esempi di codice e progetti open source**
 
-Tutti gli SDK sono open source e includono esempi completi:
+Tutti gli SDK sono open-source e includono numerosi esempi:
 
-- [Java Esempi SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/tree/master/Examples)
-- [.NET Esempi SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/master/examples)
-- [Python Esempi SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/tree/master/examples)
-- [Esempi di Node.js SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/tree/master/Examples)
-- [PHP Esempi SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/tree/master/examples)
-- [Esempi di Go SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/tree/master/examples)
-- [Esempi di Ruby SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/tree/master/examples)
-- [Perl Esempi SDK su Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/tree/master/examples)
+- [Esempi SDK Java su GitHub.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/tree/master/Examples)  
+- [Esempi SDK .NET su GitHub.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/master/examples)  
+- [Esempi SDK Python su GitHub.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/tree/master/examples)  
+- [Esempi SDK Node.js su GitHub.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/tree/master/Examples)  
+- [Esempi SDK PHP su GitHub.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/tree/master/examples)  
+- [Esempi SDK Go su GitHub.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/tree/master/examples)  
+- [Esempi SDK Ruby su GitHub.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/tree/master/examples)  
+- [Esempi SDK Perl su GitHub.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/tree/master/examples)  
+---

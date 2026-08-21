@@ -1,134 +1,174 @@
-﻿---
-title: 纸张尺寸
-second_title: Documen
-linktitle: 纸张尺寸
-type: docs
-url: /zh/paper-size/
-keywords: Paper Size
-description: Aspose.Cells Cloud REST API 支持设置纸张大小。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 20
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 纸张大小
 ---
+title: "Aspose.Cells Cloud – 纸张尺寸常量完整列表"
+second_title: "文档"
+linktitle: "纸张尺寸"
+type: docs
+url: /paper-size/
+keywords: "纸张尺寸, Aspose.Cells Cloud, REST API, 电子表格, A4, Letter, ISO, JIS, PRC"
+description: "Aspose.Cells Cloud REST API 支持的完整纸张尺寸常量列表，包含各尺寸的物理规格及在电子表格中设置自定义尺寸的使用示例。"
+weight: 20
+ArticleTitle: "Aspose.Cells Cloud 纸张尺寸常量 – 完整参考"
+---
+
 ## **纸张尺寸值**
 
-|姓名|描述|
-|:- |:- |
-|纸信|信纸（8-1/2 英寸 x 11 英寸）|
-|纸信小|小号信纸（8-1/2 英寸 x 11 英寸）|
-|纸质小报|小报（11英寸 x 17英寸）|
-|纸质账本|分类帐（17 英寸 x 11 英寸）|
-| PaperLegal|法律（8-1/2 英寸 x 14 英寸）|
-|纸质声明|声明（5-1/2 英寸 x 8-1/2 英寸）|
-|纸业执行官|行政级（7-1/4 英寸 x 10-1/2 英寸）|
-| A3纸|A3（297 毫米 x 420 毫米）|
-|纸张A4| A4（210毫米 x 297毫米）|
-|纸张A4小|A4 小号（210 毫米 x 297 毫米）|
-| A5纸|A5（148毫米×210毫米）|
-|纸B4| JIS B4（257 毫米 x 364 毫米）|
-|纸B5|JIS B5（182 毫米 x 257 毫米）|
-| PaperFolio|对开本（8-1/2 英寸 x 13 英寸）|
-|四开纸|四开本（215 毫米 x 275 毫米）|
-|纸10x14| 10 英寸 x 14 英寸|
-|纸11x17| 11 英寸 x 17 英寸|
-|PaperNote|纸币（8-1/2 英寸 x 111 英寸）|
-|纸信封9|信封 #9（3-7/8 英寸 1x 8-7/8 英寸）|
-|纸信封10|信封 #10（4-1/8 英寸 x 9-1/2 英寸）|
-|纸信封11|信封 #11（4-1/2 英寸 x 10-3/8 英寸）|
-|纸信封12|信封 #12（4-1/2 英寸 x 11 英寸）|
-|纸信封14|信封 #14（5 英寸 x 11-1/2 英寸）|
-|纸张|C尺寸床单|
-|纸张D表|D尺寸床单|
-|纸张电子表格|E尺寸床单|
-|纸质信封DL| DL信封（110毫米x 220毫米）|
-|纸信封C5| C5信封（162毫米 x 229毫米）|
-|纸信封C3| C3信封（324毫米 x 458毫米）|
-|纸信封C4| C4信封（229毫米 x 324毫米）|
-|纸信封C6| C6信封（114毫米 x 162毫米）|
-|纸质信封C65| C65信封（114毫米 x 229毫米）|
-|纸信封B4| B4信封（250毫米 x 353毫米）|
-|纸信封B5| B5信封（176毫米 x 250毫米）|
-|纸信封B6| B6信封（176毫米 x 125毫米）|
-|纸信封意大利|意大利信封（110 毫米 x 230 毫米）|
-|纸信封君主|Monarch 信封（3-7/8 英寸 x 7-1/2 英寸）|
-|纸信封个人|信封（3-5/8 英寸 x 6-1/2 英寸）|
-| PaperFanfoldUS|美国标准折叠纸（14-7/8 英寸 x 11 英寸）|
-|纸张折叠标准德语|德国标准折叠纸（8-1/2 英寸 x 12 英寸）|
-|纸张折叠法律德语|德国法律折页（8-1/2 英寸 x 13 英寸）|
-|纸张ISOB4| B4（ISO）250 x 353毫米|
-|纸日本明信片|日本明信片（100mm×148mm）|
-|纸9x11|9? × 11?0 |
-|纸10x11|10? × 11? |
-|纸张15x11|15? × 11? |
-|纸信封邀请|信封邀请函（220mm × 220mm）|
-| PaperLetterExtra|美国特大信函 9 \275 x 12 英寸|
-|PaperLegalExtra|美国法律特刊 9 \275 x 15 英寸|
-|报纸小报特刊|美国小报特刊 11.69 x 18 英寸|
-|纸张A4Extra| A4 超大 9.27 x 12.69 英寸|
-|纸信函横向|横向信件 8 \275 x 11 英寸|
-|纸张A4横向|A4 横向 210 x 297 毫米|
-|纸张信函额外横向|额外横向信件 9\275 x 12 英寸|
-|PaperSuperA| SuperA/SuperA/A4 227 x 356 毫米|
-|PaperSuperB| SuperB/SuperB/A3 305 x 487 毫米|
-|PaperLetterPlus|美国 Letter Plus 8.5 x 12.69 英寸|
-|纸张A4Plus| A4 加大 210 x 330 毫米|
-|纸A5横向|A5 横向 148 x 210 毫米|
-|纸张JISB5横向|B5 (JIS) 横向 182 x 257 毫米|
-|纸张A3Extra| A3 超大 322 x 445 毫米|
-|纸张A5特大号|A5 加大 174 x 235 毫米|
-|纸张ISOB5Extra| B5 (ISO) 加大版 201 x 276 毫米|
-|纸A2| A2 420 x 594 毫米|
-|纸A3横向|A3 横向 297 x 420 毫米|
-|纸张A3特大横向|A3 超横向 322 x 445 毫米|
-|纸质日本双面明信片|日本双面明信片 200 x 148 毫米|
-|A6纸|A6 105 x 148 毫米|
-|纸日语信封Kaku2|日本信封 Kaku #2|
-|纸日语信封Kaku3|日本信封 Kaku #3|
-|纸日语信封Chou3|日本信封 Chou #3|
-|纸日语信封Chou4|日本信封 Chou #4|
-|纸张信函旋转|11英寸×8.5英寸|
-|纸张A3旋转|420毫米×297毫米|
-|纸张A4旋转|297毫米×210毫米|
-|纸张A5旋转|210毫米×148毫米|
-|纸张JISB4旋转|B4 (JIS) 旋转 364 x 257 毫米|
-|纸张JISB5旋转|B5 (JIS) 旋转 257 x 182 毫米|
-|纸日本明信片旋转|日本明信片旋转 148 x 100 毫米|
-|纸张日本双层明信片旋转|旋转日本双面明信片 148 x 200 毫米|
-|纸张A6旋转|A6 旋转 148 x 105 毫米|
-|纸日本信封Kaku2旋转|日式信封 Kaku #2 旋转|
-|纸日本信封Kaku3旋转|日式 Kaku #3 旋转信封|
-|纸日本信封Chou3旋转|日式信封 Chou #3 旋转|
-|纸日本信封Chou4旋转|日式信封 Chou #4 旋转|
-|论文JISB6| B6（JIS）128 x 182毫米|
-|纸张JISB6旋转|B6 (JIS) 旋转 182 x 128 毫米|
-|纸12x11| 12 x 11英寸|
-|纸日语信封你4|日本信封你#4|
-|纸日本信封You4旋转|日式信封 You #4 旋转|
-|纸张PRC16K| PRC 16K 146 x 215 毫米|
-|纸张PRC32K| PRC 32K 97 x 151毫米|
-|纸PRC信封1| PRC 信封 #1 102 x 165 毫米|
-|纸PRC信封2| PRC 信封 #2 102 x 176 毫米|
-|纸PRC信封3| PRC 3号信封 125 x 176 毫米|
-|纸PRC信封4| PRC 信封 #4 110 x 208 毫米|
-|纸PRC信封5| PRC 信封 #5 110 x 220 毫米|
-|纸PRC信封6|PRC 信封 #6 120 x 230 毫米|
-|纸PRC信封7| PRC 信封 #7 160 x 230 毫米|
-|纸PRC信封8| PRC 8号信封 120 x 309 毫米|
-|纸PRC信封9| PRC 信封 #9 229 x 324 毫米|
-|纸张PRC信封10| PRC 信封 #10 324 x 458 毫米|
-|纸张PRC16K旋转|PRC 16K 旋转|
-|纸张PRC32K旋转|PRC 32K 旋转|
-|纸张PRCBig32KRotated| PRC 32K（大）旋转|
-|纸张PRC信封1旋转|PRC 信封 #1 旋转 165 x 102 毫米|
-|纸张PRC信封2旋转|PRC 信封 #2 旋转 176 x 102 毫米|
-|纸张PRC信封3旋转|PRC 3号信封旋转 176 x 125 毫米|
-|纸张PRC信封4旋转|PRC 信封 #4 旋转 208 x 110 毫米|
-|纸张PRC信封5旋转|PRC 信封 #5 旋转 220 x 110 毫米|
-|纸张PRC信封6旋转|PRC 信封 #6 旋转 230 x 120 毫米|
-|纸张PRC信封7旋转|PRC 信封 #7 旋转 230 x 160 毫米|
-|纸张PRC信封8旋转|PRC 8号信封 旋转 309 x 120 毫米|
-|纸张PRC信封9旋转|PRC 9号信封 旋转 324 x 229 毫米|
-|纸张PRC信封10旋转|PRC 信封 #10 旋转 458 x 324 毫米|
-|论文B3|普通 B3（13.9 x 19.7 英寸）|
-|纸名片|名片（90毫米 x 55毫米）|
-|纸张热敏|热敏（3 x 11 英寸）|
-|风俗|代表自定义纸张尺寸。|
+开发人员可将这些常量与 `SetPageSetup` API（或等效的 SDK 方法）配合使用，以定义工作表的页面尺寸。下表列出了所有受支持的纸张尺寸常量及其物理尺寸。
+
+<caption>Aspose.Cells Cloud 支持的纸张尺寸常量</caption>
+
+| 名称                               | 描述                                               |
+| ---------------------------------- | -------------------------------------------------- |
+| PaperLetter                        | Letter（8½ 英寸 × 11 英寸）                         |
+| PaperLetterSmall                   | Letter Small（8½ 英寸 × 11 英寸）——与 Letter 相同    |
+| PaperTabloid                       | Tabloid（11 英寸 × 17 英寸）                        |
+| PaperLedger                        | Ledger（17 英寸 × 11 英寸）                         |
+| PaperLegal                         | Legal（8½ 英寸 × 14 英寸）                          |
+| PaperStatement                     | Statement（5½ 英寸 × 8½ 英寸）                      |
+| PaperExecutive                     | Executive（7¼ 英寸 × 10½ 英寸）                     |
+| PaperA3                            | A3（297 毫米 × 420 毫米）                           |
+| PaperA4                            | A4（210 毫米 × 297 毫米）                           |
+| PaperA4Small                       | A4 Small（210 毫米 × 297 毫米）——与 A4 相同         |
+| PaperA5                            | A5（148 毫米 × 210 毫米）                           |
+| PaperB4                            | JIS B4（257 毫米 × 364 毫米）                       |
+| PaperB5                            | JIS B5（182 毫米 × 257 毫米）                       |
+| PaperFolio                         | Folio（8½ 英寸 × 13 英寸）                          |
+| PaperQuarto                        | Quarto（215 毫米 × 275 毫米）                       |
+| Paper10x14                         | 10 英寸 × 14 英寸                                  |
+| Paper11x17                         | 11 英寸 × 17 英寸                                  |
+| PaperNote                          | Note（8½ 英寸 × 11 英寸）                           |
+| PaperEnvelope9                     | 信封 #9（3 7/8 英寸 × 8 7/8 英寸）                 |
+| PaperEnvelope10                    | 信封 #10（4 1/8 英寸 × 9½ 英寸）                   |
+| PaperEnvelope11                    | 信封 #11（4½ 英寸 × 10 3/8 英寸）                  |
+| PaperEnvelope12                    | 信封 #12（4½ 英寸 × 11 英寸）                       |
+| PaperEnvelope14                    | 信封 #14（5 英寸 × 11½ 英寸）                       |
+| PaperCSheet                        | C 尺寸纸张                                         |
+| PaperDSheet                        | D 尺寸纸张                                         |
+| PaperESheet                        | E 尺寸纸张                                         |
+| PaperEnvelopeDL                    | 信封 DL（110 毫米 × 220 毫米）                      |
+| PaperEnvelopeC5                    | 信封 C5（162 毫米 × 229 毫米）                      |
+| PaperEnvelopeC3                    | 信封 C3（324 毫米 × 458 毫米）                      |
+| PaperEnvelopeC4                    | 信封 C4（229 毫米 × 324 毫米）                      |
+| PaperEnvelopeC6                    | 信封 C6（114 毫米 × 162 毫米）                      |
+| PaperEnvelopeC65                   | 信封 C65（114 毫米 × 229 毫米）                     |
+| PaperEnvelopeB4                    | 信封 B4（250 毫米 × 353 毫米）                      |
+| PaperEnvelopeB5                    | 信封 B5（176 毫米 × 250 毫米）                      |
+| PaperEnvelopeB6                    | 信封 B6（176 毫米 × 125 毫米）                      |
+| PaperEnvelopeItaly                 | 意大利信封（110 毫米 × 230 毫米）                   |
+| PaperEnvelopeMonarch               | Monarch 信封（3 7/8 英寸 × 7½ 英寸）               |
+| PaperEnvelopePersonal              | 个人信封（3 5/8 英寸 × 6½ 英寸）                    |
+| PaperFanfoldUS                     | 美国标准折叠纸（14 7/8 英寸 × 11 英寸）            |
+| PaperFanfoldStdGerman              | 德国标准折叠纸（8½ 英寸 × 12 英寸）                |
+| PaperFanfoldLegalGerman            | 德国法律折叠纸（8½ 英寸 × 13 英寸）                |
+| PaperISOB4                         | B4（ISO）250 毫米 × 353 毫米                        |
+| PaperJapanesePostcard              | 日本明信片（100 毫米 × 148 毫米）                   |
+| Paper9x11                          | 9 英寸 × 11 英寸                                   |
+| Paper10x11                         | 10 英寸 × 11 英寸                                  |
+| Paper15x11                         | 15 英寸 × 11 英寸                                  |
+| PaperEnvelopeInvite                | 邀请函信封（220 毫米 × 220 毫米）                   |
+| PaperLetterExtra                   | 美国 Letter Extra（9¼ 英寸 × 12 英寸）             |
+| PaperLegalExtra                    | 美国 Legal Extra（9¼ 英寸 × 15 英寸）              |
+| PaperTabloidExtra                  | 美国 Tabloid Extra（11.69 英寸 × 18 英寸）         |
+| PaperA4Extra                       | A4 Extra（9.27 英寸 × 12.69 英寸）                 |
+| PaperLetterTransverse              | Letter 横向（8¼ 英寸 × 11 英寸）                   |
+| PaperA4Transverse                  | A4 横向（210 毫米 × 297 毫米）                      |
+| PaperLetterExtraTransverse         | Letter Extra 横向（9¼ 英寸 × 12 英寸）             |
+| PaperSuperA                        | SuperA / SuperA / A4（227 毫米 × 356 毫米）         |
+| PaperSuperB                        | SuperB / SuperB / A3（305 毫米 × 487 毫米）         |
+| PaperLetterPlus                    | 美国 Letter Plus（8.5 英寸 × 12.69 英寸）          |
+| PaperA4Plus                        | A4 Plus（210 毫米 × 330 毫米）                      |
+| PaperA5Transverse                  | A5 横向（148 毫米 × 210 毫米）                      |
+| PaperJISB5Transverse               | B5（JIS）横置（182 毫米 × 257 毫米）                |
+| PaperA3Extra                       | A3 Extra（322 毫米 × 445 毫米）                     |
+| PaperA5Extra                       | A5 Extra（174 毫米 × 235 毫米）                     |
+| PaperISOB5Extra                    | B5（ISO）Extra（201 毫米 × 276 毫米）               |
+| PaperA2                            | A2（420 毫米 × 594 毫米）                           |
+| PaperA3Transverse                  | A3 横向（297 毫米 × 420 毫米）                      |
+| PaperA3ExtraTransverse             | A3 Extra 横向（322 毫米 × 445 毫米）                |
+| PaperJapaneseDoublePostcard        | 日本双面明信片（200 毫米 × 148 毫米）               |
+| PaperA6                            | A6（105 毫米 × 148 毫米）                           |
+| PaperJapaneseEnvelopeKaku2         | 日本 Kaku #2 信封（100 毫米 × 148 毫米）            |
+| PaperJapaneseEnvelopeKaku3         | 日本 Kaku #3 信封（120 毫米 × 235 毫米）            |
+| PaperJapaneseEnvelopeChou3         | 日本 Chou #3 信封（120 毫米 × 235 毫米）            |
+| PaperJapaneseEnvelopeChou4         | 日本 Chou #4 信封（120 毫米 × 235 毫米）            |
+| PaperLetterRotated                 | 11 英寸 × 8.5 英寸                                 |
+| PaperA3Rotated                     | 420 毫米 × 297 毫米                                 |
+| PaperA4Rotated                     | 297 毫米 × 210 毫米                                 |
+| PaperA5Rotated                     | 210 毫米 × 148 毫米                                 |
+| PaperJISB4Rotated                  | B4（JIS）旋转（364 毫米 × 257 毫米）                |
+| PaperJISB5Rotated                  | B5（JIS）旋转（257 毫米 × 182 毫米）                |
+| PaperJapanesePostcardRotated       | 日本明信片旋转（148 毫米 × 100 毫米）               |
+| PaperJapaneseDoublePostcardRotated | 日本双面明信片旋转（148 毫米 × 200 毫米）           |
+| PaperA6Rotated                     | A6 旋转（148 毫米 × 105 毫米）                      |
+| PaperJapaneseEnvelopeKaku2Rotated  | 日本 Kaku #2 信封旋转（148 毫米 × 100 毫米）        |
+| PaperJapaneseEnvelopeKaku3Rotated  | 日本 Kaku #3 信封旋转（235 毫米 × 120 毫米）        |
+| PaperJapaneseEnvelopeChou3Rotated  | 日本 Chou #3 信封旋转（235 毫米 × 120 毫米）        |
+| PaperJapaneseEnvelopeChou4Rotated  | 日本 Chou #4 信封旋转（235 毫米 × 120 毫米）        |
+| PaperJISB6                         | B6（JIS）128 毫米 × 182 毫米                        |
+| PaperJISB6Rotated                  | B6（JIS）旋转（182 毫米 × 128 毫米）                |
+| Paper12x11                         | 12 英寸 × 11 英寸                                  |
+| PaperJapaneseEnvelopeYou4          | 日本 You #4 信封（100 毫米 × 148 毫米）             |
+| PaperJapaneseEnvelopeYou4Rotated   | 日本 You #4 信封旋转（148 毫米 × 100 毫米）         |
+| PaperPRC16K                        | PRC 16K（146 毫米 × 215 毫米）                      |
+| PaperPRC32K                        | PRC 32K（97 毫米 × 151 毫米）                       |
+| PaperPRCEnvelope1                  | PRC 信封 #1（102 毫米 × 165 毫米）                  |
+| PaperPRCEnvelope2                  | PRC 信封 #2（102 毫米 × 176 毫米）                  |
+| PaperPRCEnvelope3                  | PRC 信封 #3（125 毫米 × 176 毫米）                  |
+| PaperPRCEnvelope4                  | PRC 信封 #4（110 毫米 × 208 毫米）                  |
+| PaperPRCEnvelope5                  | PRC 信封 #5（110 毫米 × 220 毫米）                  |
+| PaperPRCEnvelope6                  | PRC 信封 #6（120 毫米 × 230 毫米）                  |
+| PaperPRCEnvelope7                  | PRC 信封 #7（160 毫米 × 230 毫米）                  |
+| PaperPRCEnvelope8                  | PRC 信封 #8（120 毫米 × 309 毫米）                  |
+| PaperPRCEnvelope9                  | PRC 信封 #9（229 毫米 × 324 毫米）                  |
+| PaperPRCEnvelope10                 | PRC 信封 #10（324 毫米 × 458 毫米）                 |
+| PaperPRC16KRotated                 | PRC 16K 旋转                                       |
+| PaperPRC32KRotated                 | PRC 32K 旋转                                       |
+| PaperPRCBig32KRotated              | PRC 32K（大）旋转                                  |
+| PaperPRCEnvelope1Rotated           | PRC 信封 #1 旋转（165 毫米 × 102 毫米）             |
+| PaperPRCEnvelope2Rotated           | PRC 信封 #2 旋转（176 毫米 × 102 毫米）             |
+| PaperPRCEnvelope3Rotated           | PRC 信封 #3 旋转（176 毫米 × 125 毫米）             |
+| PaperPRCEnvelope4Rotated           | PRC 信封 #4 旋转（208 毫米 × 110 毫米）             |
+| PaperPRCEnvelope5Rotated           | PRC 信封 #5 旋转（220 毫米 × 110 毫米）             |
+| PaperPRCEnvelope6Rotated           | PRC 信封 #6 旋转（230 毫米 × 120 毫米）             |
+| PaperPRCEnvelope7Rotated           | PRC 信封 #7 旋转（230 毫米 × 160 毫米）             |
+| PaperPRCEnvelope8Rotated           | PRC 信封 #8 旋转（309 毫米 × 120 毫米）             |
+| PaperPRCEnvelope9Rotated           | PRC 信封 #9 旋转（324 毫米 × 229 毫米）             |
+| PaperPRCEnvelope10Rotated          | PRC 信封 #10 旋转（458 毫米 × 324 毫米）            |
+| PaperB3                            | 通常 B3（13.9 英寸 × 19.7 英寸）                   |
+| PaperBusinessCard                  | 名片（90 毫米 × 55 毫米）                           |
+| PaperThermal                       | 热敏纸（3 英寸 × 11 英寸）                          |
+| Custom                             | 表示自定义纸张尺寸。请结合 `Custom` 枚举及以点为单位的显式宽度和高度值使用。 |
+
+**前置条件**  
+在调用接口之前，必须获取具有相应权限的活动 Aspose Cloud 访问令牌及 API 版本（`v3.0`）。
+
+### 如何使用 Aspose.Cells Cloud REST API 设置纸张尺寸
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/Workbook/worksheets/Sheet1/pageSetup" \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Content-Type: application/json" \
+  -d '{"PaperSize":"PaperA4"}'
+```
+
+**请求详情**  
+- **方法：** `PUT`  
+- **端点：** `/cells/Workbook/worksheets/{sheetName}/pageSetup`  
+- **路径参数：** `sheetName` —— 工作表名称（字符串，必填）。  
+- **请求体：** 包含 `PaperSize` 属性的 JSON 对象。其值必须为上表中列出的常量之一，例如 `"PaperA4"`。
+
+**响应说明**  
+- `200 OK` —— 页面设置已成功更新。  
+- `400 Bad Request` —— `PaperSize` 值无效。  
+- `401 Unauthorized` —— 身份验证失败或缺少令牌。  
+- `404 Not Found` —— 指定的工作表不存在。
+
+**SDK 示例（C#）**  
+```csharp
+var api = new CellsApi("client_id", "client_secret");
+var request = new PageSetup { PaperSize = PaperSizeEnum.PaperA4 };
+api.PutWorksheetPageSetup("Book1.xlsx", "Sheet1", request);
+```
+
+完整的 OpenAPI 定义请参阅 <a href="https://api.aspose.cloud/v3.0/swagger.json" target="_blank" rel="noopener">Aspose.Cells Cloud Swagger 规范</a>。
+
+有关配置页边距、页面方向及其他布局选项，请参阅 [页面设置文档](/page-setup/)。

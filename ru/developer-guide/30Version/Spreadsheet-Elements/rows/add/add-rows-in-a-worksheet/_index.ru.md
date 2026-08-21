@@ -1,75 +1,93 @@
-﻿---
-title: Добавить несколько строк на рабочий лист Excel
-second_title: Documen
-linktitle: Ряд
-type: docs
-url: /ru/rows/add/rows/
-keywords: Add multi rows on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает добавление нескольких строк на лист Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Добавление нескольких строк на лист Excel
 ---
-Этот REST API указывает на добавление нескольких новых строк на рабочий лист Excel.
+title: "Добавление нескольких строк в рабочий лист Excel"
+ArticleTitle: "Добавление нескольких строк в рабочий лист Excel с использованием API Aspose.Cells Cloud"
+second_title: "Документ"
+linktitle: "Строки"
+type: docs
+url: /rows/add/rows/
+keywords: "Aspose.Cells Cloud, вставка строк, рабочий лист Excel, REST API, SDK, добавление нескольких строк"
+description: "Узнайте, как использовать REST API Aspose.Cells Cloud для вставки нескольких строк в рабочий лист Excel. В этом руководстве описаны конечная точка API, параметры запроса, примеры команд cURL и примеры использования SDK."
+weight: 20
+---
 
-## РСЕT API
+Этот REST API добавляет несколько новых строк в рабочий лист Excel.
 
-```bash
- 
+## API PutInsertWorksheetRows
+
+```http
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| стартров| целое число| запрос| Начальный индекс строки, подлежащей обработке.|
-| totalRows| целое число| запрос|1 |
-| обновлениеСсылка| булев| запрос| Истинный|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе токена JWT</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### **Параметры запроса**
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра  | Тип     | Местоположение | Описание                                                                 |
+| --------------- | ------- | ------------- | ------------------------------------------------------------------------ |
+| name            | string  | path          | Имя рабочей книги.                                                       |
+| sheetName       | string  | path          | Имя рабочего листа.                                                      |
+| startrow        | integer | query         | Индекс первой вставляемой строки (**с нуля**).                           |
+| totalRows       | integer | query         | Количество вставляемых строк.                                            |
+| updateReference | boolean | query         | Необходимо ли обновлять ссылки на ячейки после вставки (`true` или `false`). |
+| folder          | string  | query         | Папка, содержащая документ.                                              |
+| storageName     | string  | query         | Имя хранилища.                                                           |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Предварительные требования**  
+Рабочая книга должна уже существовать в указанном хранилище (или папке) перед вызовом этой операции.
+
+**Аутентификация**  
+API требует действительный токен JWT. Включите его в заголовок `Authorization`, как показано в примере cURL ниже.
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) определяет доступный для публичного использования программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Следующий пример демонстрирует вызов Cloud API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=11&updateReference=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
+
+> **Примечание:** Эта операция `PUT` не требует тело запроса; пустой JSON-объект (`{}`) можно отправить, если клиентская библиотека требует наличие полезной нагрузки.
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+*Возможные коды ответа*  
+
+- **200 OK** – строки успешно вставлены.  
+- **400 Bad Request** – недопустимые параметры (например, отрицательный индекс строки).  
+- **401 Unauthorized** – отсутствует или недействителен токен JWT.  
+- **404 Not Found** – указанная рабочая книга или рабочий лист не найдены.  
+- **500 Internal Server Error** – непредвиденная ошибка сервера.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Дополнительные операции со строками см. на смежных страницах: **Удаление строк**, **Получение строк** и **Копирование строк**.
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ разработки. SDK берет на себя обработку низкоуровневых деталей, позволяя сосредоточиться на вашем проекте. Пожалуйста, ознакомьтесь с [репозиторием на GitHub](https://github.com/aspose-cells-cloud), чтобы получить полный список SDK Aspose.Cells Cloud.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -99,7 +117,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
 
 {{< /tab >}}
 

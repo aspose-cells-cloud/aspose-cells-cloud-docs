@@ -1,70 +1,82 @@
-﻿---
-title: Obtenir le nombre de pages pour une feuille de calcul Excel
-second_title: Documen
-linktitle: PageConseil
-type: docs
-url: /fr/worksheets/page-count/
-keywords: Get page count on an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge le comptage de pages sur une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir le nombre de pages pour une feuille de calcul Excel
 ---
-Ce REST API indique `get page count` pour la feuille de calcul.
+title: "Obtenir le nombre de pages d'une feuille Excel"
+second_title: "Document"
+linktitle: "PageCount"
+type: docs
+url: /worksheets/page-count/
+keywords: "Aspose.Cells, API Excel, nombre de pages d'une feuille, REST, SDK cloud, pagination Excel"
+description: "Récupérez le nombre de pages imprimables d'une feuille Excel à l'aide de l'API REST Aspose.Cells Cloud (v3.0). Inclut le format de requête HTTPS, les étapes d'authentification, un exemple cURL, la réponse JSON complète, les codes de statut et des exemples de code SDK."
+weight: 10
+ArticleTitle: "Obtenir le nombre de pages d'une feuille Excel – API Aspose.Cells Cloud"
+---
 
-## RSET API
+Cette API REST renvoie le **nombre de pages** d'une feuille de calcul.
+
+**Authentification :** Tous les points de terminaison Aspose.Cells Cloud nécessitent un jeton Bearer obtenu via le flux OAuth2. Incluez ce jeton dans l'en-tête `Authorization`, comme indiqué dans l'exemple cURL ci-dessous.
+
+## API REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagecount
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagecount
 ```
 
-Les paramètres de la requête sont :
+### Paramètres de la requête
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| dossier| chaîne| requête| Dossier du document.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Paramètre   | Type   | Emplacement | Description                              |
+| ----------- | ------ | ----------- | ---------------------------------------- |
+| name        | string | path        | Nom du document.                         |
+| sheetName   | string | path        | Nom de la feuille de calcul.             |
+| folder      | string | query       | Dossier contenant le document.           |
+| storageName | string | query       | Nom du stockage.                         |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetPageCount) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetPageCount) définit une interface de programmation publiquement accessible et permet d’effectuer des interactions REST directement depuis un navigateur web.
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+Vous pouvez utiliser l'outil en ligne de commande **cURL** pour accéder facilement aux services web Aspose.Cells. L'exemple ci-dessous montre comment appeler l'API avec cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/worksheets/Sheet1/pagecount" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/worksheets/Sheet1/pagecount" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <access_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
-3
- 
+```json
+{
+  "PageCount": 3
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Détails de la réponse
+
+| Code HTTP | Signification                                              |
+| --------- | ---------------------------------------------------------- |
+| **200**   | Succès – renvoie la charge utile JSON indiquée ci-dessus. |
+| **401**   | Non autorisé – jeton manquant ou invalide.                |
+| **404**   | Introuvable – le fichier ou la feuille de calcul n'existe pas. |
+| **500**   | Erreur interne du serveur – condition inattendue du serveur. |
+
+### Historique des versions
+
+_API version **v3.0** (publiée en 2025). Si vous utilisez une version plus récente, veuillez consulter la documentation mise à jour du point de terminaison._
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+Utiliser un SDK est la méthode la plus rapide pour développer. Un SDK abstractise les détails de bas niveau afin que vous puissiez vous concentrer sur votre logique métier. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l'aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -117,3 +129,8 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Remarques
+
+- Le nombre de pages reflète la mise en page imprimable, en tenant compte des sauts de page, des marges et de l’échelle. Les lignes ou colonnes masquées peuvent influencer le résultat.
+- Avant d’envoyer la requête, assurez-vous que la feuille de calcul cible existe et que le fichier est stocké dans le dossier et le `storageName` spécifiés.

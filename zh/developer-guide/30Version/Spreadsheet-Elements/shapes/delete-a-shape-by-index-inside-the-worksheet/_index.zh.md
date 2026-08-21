@@ -1,74 +1,69 @@
-﻿---
-title: 在 Excel 工作表上按索引删除形状
-second_title: Documen
-linktitle: 删除
+---
+title: "通过索引删除 Excel 工作表中的形状"
+second_title: "文档"
+linktitle: "删除"
 type: docs
 url: /zh/shapes/delete/
-aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
-keywords: Delete a shape on an Excel workshee
-description: Aspose.Cells Cloud REST API 支持在 Excel 工作表上删除形状。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+aliases: [/zh/delete-a-shape-by-index-inside-the-worksheet/]
+keywords: "Aspose.Cells Cloud, 删除形状, 形状索引, Excel 工作表, REST API, SDK"
+description: "使用 Aspose.Cells Cloud REST API 删除 Excel 工作表中指定索引的形状。该 API 通过多种 SDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go）提供支持，并支持多种存储选项。"
 weight: 50
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、通过索引删除 Excel 工作表上的形状
 ---
-此 REST API 表示删除 Excel 工作表上的形状。
 
-## 重新设置 API
+此 REST API 用于删除 Excel 工作表中的形状。
+
+## REST API
 
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
- 
 ```
 
-请求参数为：
+### **请求参数**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|形状指数|整数|小路|工作表形状中的形状索引。|
-|文件夹|细绳|询问|文档的文件夹。|
-|存储名称|细绳|询问|存储名称。|
+| 参数名称     | 类型    | 位置   | 描述                             |
+| ------------ | ------- | ------ | -------------------------------- |
+| name         | string  | path   | 工作簿文件的名称。               |
+| sheetName    | string  | path   | 工作表的名称。                   |
+| shapeindex   | integer | path   | 工作表中形状集合的索引。         |
+| folder       | string  | query  | 存放工作簿的文件夹。             |
+| storageName  | string  | query  | 存储空间的名称。                 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShape)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShape) 定义了一个公开可访问的编程接口，可让您直接通过 Web 浏览器执行 REST 交互。
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+您可以使用 **cURL** 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes/1" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+## 云 SDK 家族
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是开发速度最快的方式。SDK 处理底层细节，让您专注于项目任务。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,17 +1,20 @@
-﻿---
-title: Fusionar y dividir archivos Excel
-second_title: Documen
-linktitle: Fusionar y dividir
-type: docs
-url: /es/merge-and-split/
-keywords: Merge Excel Files,Combine Excel Sheets,Join Excel Spreadsheets,Merge Multiple Excel Files,Split Excel File,Excel Sheet Separator,Excel Workbook Splitte
-description: Aspose.Cells Cloud REST API admite la combinación y división de archivos Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 32
-kwords: Combinar archivos Excel, Combinar hojas Excel, Unir hojas de cálculo Excel, Combinar varios archivos Excel, Dividir archivo Excel, Separador de hojas Excel, Divisor de libros Excel
 ---
-## Fusionar y dividir con archivos Excel
+title: "Fusionar y dividir archivos de Excel"
+second_title: "Documentos"
+linktype: "Fusionar y dividir"
+type: docs
+url: /merge-and-split/
+keywords: "Aspose.Cells Cloud, fusionar archivos de Excel, dividir libro de Excel, API de Excel"
+description: "Aprenda a utilizar la API REST de Aspose.Cells Cloud para fusionar varios libros de Excel en un solo archivo y dividir un libro en archivos separados. Los SDK están disponibles para Android, .NET, Go, Java, Node.js, Perl, PHP, Python, Ruby y Swift."
+ArticleTitle: "Fusionar y dividir archivos de Excel – Documentación de Aspose.Cells Cloud"
+---
 
-- [Cómo fusionar varios archivos Excel en un archivo Excel.](/cells/es/merge-multi-files-into-excel/)
-- [Cómo fusionar un libro de trabajo Excel en otro archivo Excel.](/cells/es/merge-an-excel-file-into-the-excel-file/)
-- [Cómo dividir varios archivos Excel.](/cells/es/split-multi-excel-files/)
-- [Cómo dividir un libro de trabajo Excel en varios archivos.](/cells/es/split-an-excel-file-to-multi-files/)
+## Fusionar y dividir con archivos de Excel
+
+Las siguientes guías muestran cómo combinar varios libros de Excel en un solo archivo o dividir un libro en varios archivos utilizando Aspose.Cells Cloud.
+
+- **Fusionar varios archivos:** [Cómo fusionar varios archivos de Excel en un solo libro](/cells/merge-multi-files-into-excel/) – Combina varios libros en un único libro consolidado.  
+- **Fusionar en un libro existente:** [Cómo fusionar un libro de Excel en otro libro](/cells/merge-an-excel-file-into-the-excel-file/) – Agrega el contenido de un libro a un libro existente.  
+- **Dividir varios archivos:** [Cómo dividir varios archivos de Excel](/cells/split-multi-excel-files/) – Separa una colección de libros en archivos individuales.  
+- **Dividir en varios archivos:** [Cómo dividir un libro de Excel en varios archivos](/cells/split-an-excel-file-to-multi-files/) – Divide un único libro en varios libros más pequeños.  
+---

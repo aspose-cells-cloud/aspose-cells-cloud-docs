@@ -1,74 +1,120 @@
-﻿---
-title: Lägg till digital signatur för arbetsboken Excel
-second_title: Documen
-linktitle: Digital signatur
-type: docs
-url: /sv/excel-digital-signature/
-aliases: [/protect/digital-signature/,/workbook/digital-signature/]
-keywords: Add digital signature for an Excel workbook
-description: Aspose.Cells Cloud REST API stöder tillägg av digital signatur för en Excel-arbetsbok. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 35
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lägg till digital signatur för Excel-arbetsboken
 ---
-Denna REST API anger att en `digital signature` ska läggas till för en Excel-arbetsbok.
+title: "Lägg till en digital signatur i en Excel-arbetsbok"
+ArticleTitle: "Lägg till en digital signatur i en Excel-arbetsbok – Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Digital signatur"
+type: docs
+url: /excel-digital-signature/
+aliases:
+  - /protect/digital-signature/
+  - /workbook/digital-signature/
+keywords: "Aspose.Cells Cloud, digital signatur, Excel-arbetsbok, REST API, .pfx, JWT, signatur-API"
+description: "Lär dig hur du lägger till en digital signatur i en Excel-arbetsbok med Aspose.Cells Cloud REST API (v4.0). Inkluderar slutpunkt, parametrar, autentisering, svarsschema, felhantering och SDK-exempel för flera språk."
+weight: 35
+---
 
-## RSET API
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/digitalsignature
- 
+**Förutsättningar:**  
+Innan du anropar denna slutpunkt ska du säkerställa att du har:
+
+- En giltig JWT-åtkomsttoken som du har fått via Aspose Cloud-autentisering.  
+- Målarbetsboken redan uppladdad till ditt Aspose Cloud-lager.  
+- En digital signaturfil i formatet `.pfx` eller `.p12` samt dess lösenord.
+
+Detta REST API lägger till en **digital signatur** i en Excel-arbetsbok.
+
+## PostDigitalSignature API
+
+```http
+POST https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsboksnamn.|
-| digitalsignaturfil| sträng| fråga| Parametrar för digitala signaturer.|
-| lösenord| sträng| fråga||
-| mapp| sträng| fråga| Arbetsbokens mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud-API:en är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostDigitalSignature) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begäranparametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameter Namn          | Typ    | Plats                | Beskrivning                                             |
+| ------------------------ | ------ | -------------------- | ------------------------------------------------------- |
+| **name**                 | string | `<code>path</code>`  | Namnet på arbetsboken.                                  |
+| **digitalsignaturefile** | string | `<code>query</code>` | Sökvägen till den digitala signaturfilen (`.pfx` eller `.p12`). |
+| **password**             | string | `<code>query</code>` | Lösenord för arbetsboken, om den är skyddad.            |
+| **folder**               | string | `<code>query</code>` | Mapp där arbetsboken lagras.                            |
+| **storageName**          | string | `<code>query</code>` | Namn på det lagringstjänst som ska användas.            |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+*Obs: Om filnamnet innehåller specialtecken ska du URL-koda det innan du lägger till det i frågesträngen.*
+
+### Felhantering
+
+| HTTP-status | Betydelse                                               |
+| ----------- | ------------------------------------------------------- |
+| 200         | Signatur tillagd utan problem.                          |
+| 400         | Felaktig begäran – saknade eller ogiltiga parametrar.   |
+| 401         | Auktoriseringsfel – ogiltig eller utgången OAuth-token. |
+| 403         | Åtkomst nekad – otillräckliga rättigheter eller nekad åtkomst. |
+| 500         | Internt serverfel – oväntat fel.                        |
+
+### HTTP-status och felaktiga svarsmeddelanden
+
+| HTTP-status | Kod                 | Beskrivning                                                |
+| ----------- | ------------------- | ---------------------------------------------------------- |
+| 400         | BadRequest          | Saknade eller ogiltiga parametrar.                         |
+| 401         | Unauthorized        | Ogiltig eller saknad åtkomsttoken.                         |
+| 404         | NotFound            | Den angivna arbetsboken hittades inte i den givna mappen/lagret. |
+| 500         | InternalServerError | Oväntat serverfel.                                         |
+
+
+## Hur du använder PostDigitalSignature API med SDK:er
+
+### PostDigitalSignature API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Protection/PostDigitalSignature) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för att anropa Aspose.Cells-webbtjänster. Exemplet nedan visar en begäran till API:et:
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature?digitalsignaturefile=signature.pfx&password=YourPassword" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+**Svarsschema**  
+API:et returnerar ett JSON-objekt med följande fält:
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Fält         | Typ    | Beskrivning                                           |
+| ------------ | ------ | ----------------------------------------------------- |
+| `Code`       | int    | HTTP-liknande statuskod som indikerar resultatet.     |
+| `Status`     | string | Kort text som beskriver utfallet (t.ex. `OK`).       |
+| `SignatureId`| string | Identifierare för den tillagda digitala signatur (valfritt). |
+| `Message`    | string | Ytterligare information eller feldetaljer (valfritt). |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+### Använd Aspose.Cells Cloud SDK:er
+
+Att använda en SDK förenklar integrationen och minskar mängden kod som behöver skrivas. Kontrollera [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -98,7 +144,7 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostDigitalSignature.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82a2de2e4189bc27ae92abf73c36b4df0" "Example_PostDigitalSignature.ts" >}}
 
 {{< /tab >}}
 

@@ -1,65 +1,95 @@
-﻿---
-title: Изменение ширины столбцов внутри диапазона
-second_title: Documen
-linktitle: Ширина столбца
-type: docs
-url: /ru/ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
-keywords: Set column width for range on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает настройку ширины столбца для диапазона на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 74
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Изменение ширины столбцов внутри диапазона
 ---
-Этот REST API указывает на установку ширины столбца в диапазоне
+title: "Изменение ширины столбцов внутри диапазона"
+ArticleTitle: "Изменение ширины столбцов внутри диапазона – Aspose.Cells Cloud API"
+second_title: "Документ"
+linktitle: "Ширина столбца"
+type: docs
+url: /ranges/update/column-width/
+aliases: [/change-widths-of-columns-inside-the-range/]
+keywords: "Aspose.Cells, ширина столбца, REST API, Excel, SDK, диапазон, облако"
+description: "Узнайте, как изменить ширину столбцов внутри диапазона с помощью Aspose.Cells Cloud REST API или SDK (C#, Java, Python и др.). Включает cURL, подробную информацию о запросе и ответе, а также шаги аутентификации."
+weight: 74
+---
 
-## РСЕT API
+Этот REST API устанавливает ширину столбцов для заданного диапазона.
+
+## Безопасность и аутентификация
+Aspose.Cells Cloud API защищены и требуют [аутентификации на основе JWT-токена](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth
- 
 ```
+
+**Необходимые условия** – Перед вызовом конечной точки необходимо:
+
+1. Создать учётную запись Aspose Cloud и получить *client ID* и *client secret*.  
+2. Получить JWT-токен, вызвав конечную точку OAuth (`/connect/token`). Токен возвращается в поле `access_token`.  
+3. Загрузить целевую рабочую книгу в хранилище Aspose Cloud (или убедиться, что она уже существует в указанной папке).  
 
 Параметры запроса:
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь||
-| Имя_листа| нить| путь||
-| ценить| число| запрос||
-| диапазон|| тело||
-| папка| нить| запрос||
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип    | Расположение | Описание |
+|---------------|--------|--------------|----------|
+| name          | string | path         | Имя файла рабочей книги |
+| sheetName     | string | path         | Имя рабочего листа |
+| value         | number | query        | Желаемое значение ширины столбца |
+| range         | object | body         | Объект диапазона, определяющий целевые ячейки |
+| folder        | string | query        | Путь к папке, где хранится рабочая книга |
+| storageName   | string | query        | Имя сервиса хранилища |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeColumnWidth) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeColumnWidth) определяет общедоступное программное интерфейсное решение и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как вызывать Cloud API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
+<h3 id="request">Запрос</h3>
+
 ```bash
- 
+# Вызов конечной точки column‑width для рабочей книги *test.xlsx*,
+# рабочего листа *Sheet1*, установка ширины выбранных столбцов в 20 пунктов.
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/columnWidth?value=20" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}" 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "ColumnCount": 7,
+        "ColumnWidth": 19,
+        "FirstColumn": 0,
+        "FirstRow": 9,
+        "Name": "string",
+        "RefersTo": "string",
+        "RowCount": 1,
+        "RowHeight": 15,
+        "Worksheet": "Sheet1"
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+<h3 id="response">Ответ</h3>
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+*Возможные сообщения об ошибках*  
+
+| Код HTTP | Описание                                     |
+|----------|----------------------------------------------|
+| 400      | Bad Request – неверный JSON или параметры   |
+| 401      | Unauthorized – отсутствует или недействителен токен |
+| 404      | Not Found – рабочая книга или рабочий лист отсутствуют |
 
 {{< /tab >}}
 
@@ -67,9 +97,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Ознакомьтесь с [репозиторием GitHub](https://github.com/aspose-cells-cloud), где представлен полный список SDK Aspose.Cells Cloud.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Приведённые ниже примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -122,3 +152,25 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Часто задаваемые вопросы (FAQ)
+
+**В:** *Какую конечную точку следует вызвать, чтобы установить ширину столбцов в диапазоне в файле Excel?*  
+**О:** `POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth`, где `{name}` — имя файла рабочей книги, а `{sheetName}` — имя целевого рабочего листа.
+
+**В:** *Как выполнить аутентификацию запроса при использовании API установки ширины столбца?*  
+**О:** Добавьте заголовок `Authorization: Bearer <jwt token>`. Получите JWT-токен через OAuth-процесс Aspose Cloud (`/connect/token`), используя ваш *client ID* и *client secret*.
+
+**В:** *Какой JSON-текст нужно отправить, чтобы изменить ширину столбцов A–C до 25 пунктов?*  
+**О:**  
+
+```json
+{
+  "FirstColumn": 0,
+  "ColumnCount": 3,
+  "FirstRow": 0,
+  "RowCount": 1
+}
+```
+
+Добавьте параметр запроса `value=25` к URL запроса.

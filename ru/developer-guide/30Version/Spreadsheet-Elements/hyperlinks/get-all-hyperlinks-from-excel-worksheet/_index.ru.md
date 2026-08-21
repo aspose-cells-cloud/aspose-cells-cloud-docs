@@ -1,151 +1,124 @@
-﻿---
-title: Получить все
-type: docs
-url: /ru/hyperlinks/get-all/
-aliases: [/get-hyperlink-from-excel-worksheet/,/get-hyperlinks-from-excel-worksheet/]
-keywords: Get hyperlinks from an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает получение гиперссылок из листа Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 10
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получить все
 ---
-Этот REST API указывает на `get all hyperlinks` на рабочем листе Excel.
+title: "Получить все гиперссылки – Aspose.Cells Cloud REST API"
+type: docs
+url: /hyperlinks/get-all/
+aliases:
+  [/get-hyperlink-from-excel-worksheet/, /get-hyperlinks-from-excel-worksheet/]
+keywords: "Aspose.Cells, Получить все гиперссылки, Excel API, REST API, облачный SDK, пример cURL, гиперссылки в электронных таблицах"
+description: "Получить все гиперссылки из рабочего листа файла Excel с использованием Aspose.Cells Cloud REST API (v3.0). Включает HTTPS-адрес, необходимые параметры, пример cURL, схему ответа и примеры кода SDK."
+weight: 10
+ArticleTitle: "Получить все гиперссылки – документация Aspose.Cells Cloud REST API"
+---
 
-## РСЕT API
+Этот REST API позволяет получить **все гиперссылки** из конкретного рабочего листа книги Excel.
+
+## Безопасность и аутентификация
+
+API Aspose.Cells Cloud защищены и требуют [аутентификацию с использованием токена JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-Параметры запроса:
+### Параметры запроса
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип    | Расположение | Обязательный | Значение по умолчанию | Описание                              |
+| ------------- | ------ | ------------ | ------------ | --------------------- | ------------------------------------- |
+| name          | string | path         | Да           | –                     | Имя файла документа Excel.            |
+| sheetName     | string | path         | Да           | –                     | Имя рабочего листа.                   |
+| folder        | string | query        | Нет          | –                     | Папка, содержащая документ.           |
+| storageName   | string | query        | Нет          | –                     | Имя используемого сервиса хранилища.  |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/GetWorksheetHyperlinks) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Hyperlinks/GetWorksheetHyperlinks) определяет публично доступное программное интерфейсное описание и позволяет выполнять взаимодействие с REST напрямую из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как вызвать API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Hyperlinks": {
-
     "Count": 4,
-
     "HyperlinkList": [
-
       {
-
         "link": {
-
           "Href": "/0",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/1",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/2",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/3",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       }
-
     ],
-
     "link": null
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Ответ JSON содержит объект `Hyperlinks`.
+
+- **Count** – общее количество гиперссылок на рабочем листе.
+- **HyperlinkList** – массив, каждый элемент которого содержит объект `link`. Свойство `Href` хранит адрес гиперссылки, а `Rel`, `Title` и `Type` предоставляют дополнительные метаданные (часто `null` для простых ссылок).
+
+### Ответы об ошибках
+
+| Код HTTP | Причина                                            | Пример тела ответа                                                  |
+| -------- | -------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**  | Неверный запрос – отсутствуют или некорректны параметры. | `{ "Code":"400", "Message":"Неверное значение параметра." }`        |
+| **401**  | Неавторизован – отсутствует или некорректен токен JWT.   | `{ "Code":"401", "Message":"Токен доступа отсутствует или некорректен." }` |
+| **404**  | Не найдено – книга или рабочий лист не существует.      | `{ "Code":"404", "Message":"Файл не найден." }`                     |
+| **500**  | Внутренняя ошибка сервера – непредвиденный сбой сервера. | `{ "Code":"500", "Message":"Произошла непредвиденная ошибка." }`    |
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ интеграции данной функциональности. SDK обрабатывают низкоуровневые детали, позволяя вам сосредоточиться на бизнес-логике. Полный список облачных SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,37 +1,147 @@
-﻿---
-title: Skaffa fastigheten Cells
+---
+title: "Hämta cellernas egenskaper"
 type: docs
 url: /sv/get-cells-properties/
 weight: 130
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta Cells Egenskaper
+keywords: "Aspose Cells Cloud, REST API, Excel, kalkylblad, cellegenskaper, hämta cellernas egenskaper"
+description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att hämta egenskaper för en specifik cell eller fördefinierade cellmetoder i ett Excel-kalkylblad."
 ---
-Denna REST API visar hur man gör `get a specific cell` i en Excel-fil.
 
-## RSET API
+Denna REST API visar hur man hämtar en specifik cell i en Excel-fil.
+
+## REST API
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}
- 
 ```
 
-Begäranparametrarna är:
+## Säkerhet och autentisering
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| cellEllerMetodnamn| sträng| väg|Cellens eller metodens namn. (Metodnamnsvärde: firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn och cellName.)|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begärandeparametrar
 
-### **Cloud SDK-familjen**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Parametername        | Typ    | Plats  | Beskrivning                                                                                                                                                                           |
+| -------------------- | ------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**             | sträng | path   | Namnet på Excel-dokumentet.                                                                                                                                                       |
+| **sheetName**        | sträng | path   | Namnet på kalkylbladet som innehåller cellen.                                                                                                                                        |
+| **cellOrMethodName** | sträng | path   | Cellens namn eller namnet på en fördefinierad metod (t.ex. `firstcell`, `endcell`, `maxrow`, `maxdatarow`, `maxcolumn`, `maxdatacolumn`, `minrow`, `mindatarow`, `mincolumn`, `mindatacolumn`). |
+| **folder**           | sträng | query  | Mappen där dokumentet lagras.                                                                                                                                              |
+| **storageName**      | sträng | query  | Namnet på lagringstjänsten.                                                                                                                                                      |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+## **Svar**
+
+Returnerar CellResponse.
+
+- **Översikt över svarsfält**
+
+| Fält            | Typ     | Beskrivning                                           |
+| --------------- | ------- | ----------------------------------------------------- |
+| `Name`          | sträng  | Cellens adress (t.ex. `F341`).                   |
+| `Row`           | heltal  | Radindex med nollbaserad indexering.                                 |
+| `Column`        | heltal  | Kolumnindex med nollbaserad indexering.                              |
+| `Value`         | sträng  | Den värde som visas i cellen.                           |
+| `Type`          | sträng  | Celldatatyp (t.ex. `IsString`).             |
+| `Formula`       | sträng  | Formeltext om cellen innehåller en formel.          |
+| `IsFormula`     | bool    | Indikerar om cellen innehåller en formel.        |
+| `IsMerged`      | bool    | Indikerar om cellen är en del av ett sammanfogat område. |
+| `IsArrayHeader` | bool    | Indikerar om cellen är en arrayhuvudrad.        |
+| `IsInArray`     | bool    | Indikerar om cellen tillhör en array.       |
+| `IsErrorValue`  | bool    | Indikerar om cellen innehåller ett felvärde.   |
+| `IsInTable`     | bool    | Indikerar om cellen finns i en tabell.         |
+| `IsStyleSet`    | bool    | Indikerar om en stil tillämpas på cellen.     |
+| `HtmlString`    | sträng  | HTML-kodad representation av cellens värde.      |
+| `Style.link`    | objekt  | Hyperlänk till stilresursen.                      |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Cell":{
+    "Name":"A1",
+    "Row": 0,
+    "Column":0,
+    "Value": "Hello Aspose.Cells",
+    "Type":"String",
+    "Formula" : "",
+    ...
+  }
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                     | Beskrivning                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400  | Felaktig begäran                 | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401  | Obehörig                | Ogiltig eller saknad JWT-token. |
+| 413  | För stor nyttolast           | Den uppladdade filen överskrider storleksgränsen. |
+| 500  | Internt serverfel       | Oväntat serverfel. |
+## Hur du använder GetWorksheetCell API med SDK:er
+
+### GetWorksheetCell API-specifikation
+
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda cURL kommandoradsverktyget för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör ett anrop till Cloud API med cURL.
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET" \
+     -H "Accept: application/json"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```json
+{
+  "Cell": {
+    "Name": "A3",
+    "Row": 2,
+    "Column": 0,
+    "Value": "Statistical",
+    "Type": "IsString",
+    "IsFormula": false,
+    "IsMerged": false,
+    "IsArrayHeader": false,
+    "IsInArray": false,
+    "IsErrorValue": false,
+    "IsInTable": false,
+    "IsStyleSet": false,
+    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">Statistical</Font>",
+    "Style": {
+      "link": {
+        "Href": "/style",
+        "Rel": "self"
+      }
+    },
+    "link": {
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3",
+      "Rel": "self"
+    }
+  },
+  "Code": "200",
+  "Status": "OK"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+### Använd Aspose.Cells Cloud SDK:er
+
+Att använda ett SDK är det mest effektiva sättet att snabba upp utvecklingen. Ett SDK abstraher bort detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Kolla in [GitHub-lagret](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -85,16 +195,16 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 
 {{< /tabs >}}
 
-### **Hur man får tag på en specifik cell**
+### Hur man hämtar en specifik cell
 
-- [Hämta celldata från ett kalkylblad](/cells/sv/get-cell-data-from-a-worksheet/)
-- [Hämta första cellen från arbetsbladet Excel](/cells/sv/get-first-cell-from-excel-worksheet/)
-- [Hämta sista cellen i arbetsbladet Excel](/cells/sv/get-last-cell-of-excel-worksheet/)
-- [Hämta MaxRow från arbetsbladet Excel](/cells/sv/get-maxrow-from-excel-worksheet/)
-- [Hämta MaxDataRow från arbetsbladet Excel](/cells/sv/get-maxdatarow-from-excel-worksheet/)
-- [Hämta MaxColumn från arbetsbladet Excel](/cells/sv/get-maxcolumn-from-excel-worksheet/)
-- [Hämta MaxDataColumn från arbetsbladet Excel](/cells/sv/get-maxdatacolumn-from-excel-worksheet/)
-- [Hämta MinRow från arbetsbladet Excel](/cells/sv/get-minrow-from-excel-worksheet/)
-- [Hämta MinDataRow från arbetsbladet Excel](/cells/sv/get-mindatarow-from-excel-worksheet/)
-- [Hämta MinColumn från arbetsbladet Excel](/cells/sv/get-mincolumn-from-excel-worksheet/)
-- [Hämta MinDataColumn från arbetsbladet Excel](/cells/sv/get-mindatacolumn-from-excel-worksheet/)
+- [Hämta celldata från ett kalkylblad](/sv/cells/get-cell-data-from-a-worksheet/)
+- [Hämta första cellen från Excel-kalkylblad](/sv/cells/get-first-cell-from-excel-worksheet/)
+- [Hämta sista cellen i Excel-kalkylblad](/sv/cells/get-last-cell-of-excel-worksheet/)
+- [Hämta MaxRow från Excel-kalkylblad](/sv/cells/get-maxrow-from-excel-worksheet/)
+- [Hämta MaxDataRow från Excel-kalkylblad](/sv/cells/get-maxdatarow-from-excel-worksheet/)
+- [Hämta MaxColumn från Excel-kalkylblad](/sv/cells/get-maxcolumn-from-excel-worksheet/)
+- [Hämta MaxDataColumn från Excel-kalkylblad](/sv/cells/get-maxdatacolumn-from-excel-worksheet/)
+- [Hämta MinRow från Excel-kalkylblad](/sv/cells/get-minrow-from-excel-worksheet/)
+- [Hämta MinDataRow från Excel-kalkylblad](/sv/cells/get-mindatarow-from-excel-worksheet/)
+- [Hämta MinColumn från Excel-kalkylblad](/sv/cells/get-mincolumn-from-excel-worksheet/)
+- [Hämta MinDataColumn från Excel-kalkylblad](/sv/cells/get-mindatacolumn-from-excel-worksheet/)

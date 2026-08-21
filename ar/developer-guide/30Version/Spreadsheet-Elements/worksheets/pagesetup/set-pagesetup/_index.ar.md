@@ -1,74 +1,112 @@
-﻿---
-title: تعيين إعداد الصفحة لورقة العمل
-second_title: Documen
-linktitle: تعيين الصفحة setu
-type: docs
-url: /ar/set-page-setup/
-keywords: Set page setup for an Excel worksheet
-description: يدعم Cloud REST إضافة ورقة عمل. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تعيين إعداد الصفحة لورقة عمل Excel
 ---
-يشير هذا REST API إلى `Set page setup for an Excel worksheet`.
+title: "ضبط إعدادات الصفحة لورقة عمل"
+second_title: "مستند"
+linktype: "ضبط إعدادات الصفحة"
+type: docs
+url: /set-page-setup/
+keywords: "Aspose.Cells, Excel, إعدادات الصفحة, REST API, ورقة عمل, SDK سحابي"
+description: "تعرّف على كيفية ضبط إعدادات الصفحة لورقة عمل Excel باستخدام Aspose.Cells Cloud REST API. يشمل تفاصيل الطلب، مثال آمن لاستخدام cURL عبر HTTPS، رموز حالات الاستجابة، ومقتطفات من كود SDK تدعم لغات برمجة متعددة."
+weight: 20
+ArticleTitle: "ضبط إعدادات الصفحة لورقة عمل – دليل API السحابي Aspose.Cells"
+---
 
-## RSET API
+متطلبات مسبقة: لاستدعاء هذه الواجهة البرمجية، يجب أن تمتلك رمز JWT (OAuth) صالحًا، كما يجب أن يكون الملف المصنف موجودًا في مساحة تخزين Aspose Cloud التي تمتلك صلاحيات القراءة والكتابة فيها. تأكد من تضمين الرمز في رأس **Authorization**، وأن حسابك يتمتع بحد كافٍ من الطلب المسموح به لواجهة API.
+
+تقوم هذه الواجهة البرمجية REST بضبط إعدادات الصفحة لورقة عمل Excel.
+
+## واجهة برمجة تطبيقات REST (REST API)
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup
-
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم الورقة الجديدة.|
-|[إعداد الصفحة](/cells/ar/page-setup) | هدف| جسم| وصف إعداد TPage.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/PageSetup/PostPageSetup) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **معلمات الطلب**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعلمة | النوع | الموقع | الوصف |
+|------------|-------|--------|--------|
+| name | string | path | اسم المستند. |
+| sheetName | string | path | اسم ورقة العمل. |
+| pageSetup | object | body | وصف إعدادات الصفحة. |
+| folder | string | query | مجلد المستند. |
+| storageName | string | query | اسم مساحة التخزين. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**مثال على حمولة JSON لموضوع `pageSetup`**
+
+```json
+{
+  "pageSetup": {
+    "orientation": "Portrait",
+    "paperSize": "A4",
+    "fitToPagesTall": 1,
+    "fitToPagesWide": 1,
+    "centerHorizontally": true,
+    "centerVertically": false
+  }
+}
+```
+
+يُعرّف <a href="https://reference.aspose.cloud/cells/#/PageSetup/PostPageSetup" target="_blank" rel="noopener noreferrer">مواصفات OpenAPI</a> واجهة برمجة تطبيقات متاحة عمومًا، ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب الخاصة بـ Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء المكالمات إلى واجهة API السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks/pagesetup" \
--X PUT \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks/pagesetup" \
+-X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d {pageSetup}
- 
+-H "Authorization: Bearer <jwt token>" \
+-d '{
+  "pageSetup": {
+    "orientation": "Portrait",
+    "paperSize": "A4",
+    "fitToPagesTall": 1,
+    "fitToPagesWide": 1,
+    "centerHorizontally": true,
+    "centerVertically": false
+  }
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+تعيد واجهة API كائن JSON يُظهر نتيجة العملية:
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**رموز حالات الاستجابة المحتملة**
+
+| الكود | المعنى | الحالة |
+|-------|---------|--------|
+| 200 | OK (تم بنجاح) | تم تحديث إعدادات الصفحة بنجاح |
+| 400 | Bad Request (طلب غير صالح) | حمولة JSON غير صالحة أو حقول مطلوبة مفقودة |
+| 401 | Unauthorized (غير مصرّح) | رمز JWT مفقود أو غير صالح |
+| 404 | Not Found (غير موجود) | اسم الملف المصنف أو ورقة العمل غير موجود |
+| 500 | Internal Server Error (خطأ داخلي في الخادم) | فشل غير متوقع في الخادم |
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. يتعامل SDK مع التفاصيل منخفضة المستوى ويسمح لك بالتركيز على مهام مشروعك. يُرجى الاطّلاع على <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية إجراء مكالمات لخدمات الويب الخاصة بـ Aspose.Cells باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

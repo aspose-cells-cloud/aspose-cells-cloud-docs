@@ -1,124 +1,132 @@
-﻿---
-title: Aralık içindeki satırların yüksekliklerini ayarlayın
-second_title: Documen
-linktitle: Sıra yüksekliği
-type: docs
-url: /tr/ranges/update/row-height/
-aliases: [/change-heights-of-rows-inside-the-range/]
-keywords: Set row height for range on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki aralık için satır yüksekliğinin ayarlanmasını destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 76
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Aralık içindeki satırların yüksekliklerini ayarlama
 ---
-Bu REST API, Excel çalışma sayfasındaki aralığın satır yüksekliğini ayarlamayı gösterir.
+---
+title: "Excel'de Bir Aralık İçin Satır Yüksekliğini Ayarla – Aspose.Cells Cloud API (v3.0)"
+description: "Aspose.Cells Cloud REST API'sini kullanarak bir Excel çalışma sayfasındaki belirli bir aralıktaki satır yüksekliğini değiştirin.uç nokta, parametreler, cURL örneği, örnek yanıtlar ve birden fazla dil için SDK snippet'leri içerir."
+keywords: "Aspose.Cells, satır yüksekliği, aralık, Excel, REST API, v3.0, SDK, cURL"
+date: 2026-07-30
+type: docs
+weight: 76
+aliases:
+  - /change-heights-of-rows-inside-the-range/
+---
 
-## RSET API
+# Excel'de Bir Aralık İçin Satır Yüksekliğini Ayarla
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/rowHeight
- 
+Bu işlem, Aspose Cloud deposunda depolanan bir çalışma sayfasında belirtilen bir aralığın satır yüksekliğini günceller.
+
+## Ön Gereksinimler / Kimlik Doğrulama
+
+**Cells.ReadWrite** kapsamdaki Aspose Cloud OAuth hizmetinden bir JWT erişim belirteci almanız gerekir.
+
+Belirteci, her isteğin `Authorization` başlığında şu şekilde dahil edin:
+
+```http
+Authorization: Bearer <jwt token>
 ```
 
-İstek parametreleri şunlardır:
+Eğer bir belirteciniz yoksa, bir talepte bulunmak için **Aspose Cloud kimlik doğrulama kılavuzunu** takip edin.
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| değer| sayı| sorgu||
-| menzil|| vücut||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
+## HTTP İsteği
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeRowHeight) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+| Yöntem | URI |
+|--------|-----|
+| **POST** | `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/rowHeight` |
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### Yol Parametreleri
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Ad | Tür | Açıklama |
+|----|-----|----------|
+| `name` | `string` | **Gerekli.** Bulutta depolanan Excel dosyasının adı. |
+| `sheetName` | `string` | **Gerekli.** Hedef aralığı içeren çalışma sayfası. |
 
-{{< tab tabNum="1" >}}
+### Sorgu Parametreleri
 
-```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/rowHeight?value=15" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}"
-```
+| Ad | Tür | Gerekli | Açıklama |
+|----|-----|---------|----------|
+| `value` | `number` | **Evet** | Aralığa uygulanacak istenen satır yüksekliği (nokta cinsinden). |
+| `folder` | `string` | Hayır | Dosyanın bulunduğu depodaki klasör yolu. |
+| `storageName` | `string` | Hayır | Kullanılacak depolama hizmetinin adı (birden fazla depo yapılandırılmışsa). |
 
-{{< /tab >}}
+### İstek Gövdesi (JSON)
 
-{{< tab tabNum="2" >}}
+Gövde, hangi satırların etkileneceğini tanımlayan bir **Range** (Aralık) nesnesi içermelidir.
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "FirstRow": 0,
+  "RowCount": 1,
+  "FirstColumn": 0,
+  "ColumnCount": 0
 }
- 
 ```
 
-{{< /tab >}}
+#### Range (Aralık) JSON Şeması
 
-{{< /tabs >}}
+| Özellik | Tür | Gerekli | Açıklama |
+|---------|-----|---------|----------|
+| `FirstRow` | tamsayı | **Evet** | Aralıktaki ilk satırın sıfır tabanlı indeksi. |
+| `RowCount` | tamsayı | **Evet** | Yüksekliğin uygulanacağı satır sayısı. |
+| `FirstColumn` | tamsayı | Hayır | İlk sütunun sıfır tabanlı indeksi (sadece satır yüksekliği için isteğe bağlı). |
+| `ColumnCount` | tamsayı | Hayır | Aralığın kapsadığı sütun sayısı (isteğe bağlı). |
 
-## Bulut SDK Ailesi
+Yalnızca yukarıda listelenen özellikler satır yüksekliği işlemi için kullanılır; ekstra alanlar yok sayılır.
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+## Örnek İstek
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/rowHeight?value=15&folder=Documents&storageName=MyStorage" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "FirstRow": 9,
+        "RowCount": 1
+      }'
+```
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+### Örnek Yanıt (Başarılı)
 
-{{< tab tabNum="1" >}}
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostWorksheetCellsRangeRowHeight.cs" >}}
+**HTTP Durum Kodları**
 
-{{< /tab >}}
+| Kod | Anlam                       | Açıklama                                      |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | OK (Tamam)                  | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request (Hatalı İstek)  | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT belirteci. |
+| 413 | Payload Too Large (Çok Büyük Yük) | Yüklenen dosya boyut sınırını aşıyor. |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası. |
 
-{{< tab tabNum="2" >}}
+Tüm yanıtlar bir sayısal `Code` ve insanın okuyabileceği bir `Status` (veya hata durumunda `Message`) içerir. Hata oluşursa ek olarak `ErrorDetails` bilgileri de sağlanabilir.
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostWorksheetCellsRangeRowHeight.java" >}}
+## SDK Örnekleri
 
-{{< /tab >}}
+Aşağıdaki snippet'ler, resmi Aspose.Cells Cloud SDK'larını kullanarak **Set Row Height for a Range** (Bir Aralık İçin Satır Yüksekliğini Ayarla) işlemini nasıl çağıracağınızı göstermektedir.
 
-{{< tab tabNum="3" >}}
+| Dil | Örnek |
+|-----|-------|
+| **C#** | <details><summary>Kodu göster</summary>```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar api = new RangesApi(configuration);\nvar range = new Range { FirstRow = 9, RowCount = 1 };\nawait api.PostWorksheetCellsRangeRowHeightAsync("test.xlsx", "Sheet1", range, 15);\n```</details> |
+| **Java** | <details><summary>Kodu göster</summary>```java\nimport com.aspose.cloud.cells.api.RangesApi;\nimport com.aspose.cloud.cells.model.Range;\n\nRangesApi api = new RangesApi(config);\nRange range = new Range().firstRow(9).rowCount(1);\napi.postWorksheetCellsRangeRowHeight("test.xlsx", "Sheet1", range, 15.0, null, null);\n```</details> |
+| **Python** | <details><summary>Kodu göster</summary>```python\nfrom asposecellscloud import RangesApi, ApiClient, Configuration\n\nconfig = Configuration()\nconfig.access_token = '<jwt token>'\napi = RangesApi(ApiClient(config))\nrange = {'FirstRow': 9, 'RowCount': 1}\napi.post_worksheet_cells_range_row_height('test.xlsx', 'Sheet1', range, value=15)\n```</details> |
+| **Node.js** | <details><summary>Kodu göster</summary>```javascript\nconst { RangesApi, Configuration } = require('asposecellscloud');\nconst config = new Configuration();\nconfig.accessToken = '<jwt token>';\nconst api = new RangesApi(config);\nconst range = { FirstRow: 9, RowCount: 1 };\napi.postWorksheetCellsRangeRowHeight('test.xlsx', 'Sheet1', range, 15)\n  .then(() => console.log('Row height set'))\n  .catch(err => console.error(err));\n```</details> |
+| **PHP** | <details><summary>Kodu göster</summary>```php\nuse Aspose\Cells\Configuration;\nuse Aspose\Cells\Api\RangesApi;\n\n$config = new Configuration();\n$config->setAccessToken('<jwt token>');\n$api = new RangesApi($config);\n$range = ['FirstRow' => 9, 'RowCount' => 1];\n$api->postWorksheetCellsRangeRowHeight('test.xlsx', 'Sheet1', $range, 15);\n```</details> |
+| **Ruby** | <details><summary>Kodu göster</summary>```ruby\nrequire 'aspose_cells_cloud'\nconfig = AsposeCellsCloud::Configuration.new\nconfig.access_token = '<jwt token>'\napi = AsposeCellsCloud::RangesApi.new\nrange = { 'FirstRow' => 9, 'RowCount' => 1 }\napi.post_worksheet_cells_range_row_height('test.xlsx', 'Sheet1', range, value: 15)\n```</details> |
+| **Go** | <details><summary>Kodu göster</summary>```go\nimport (\n    \"github.com/asposecellscloud/aspose-cells-cloud-go/v3\"\n    \"context\"\n)\n\ncfg := asposecellscloud.NewConfiguration()\ncfg.AccessToken = \"<jwt token>\"\napi := asposecellscloud.NewRangesApi(cfg)\nrangeBody := map[string]interface{}{ \"FirstRow\": 9, \"RowCount\": 1 }\n_, err := api.PostWorksheetCellsRangeRowHeight(context.Background(), \"test.xlsx\", \"Sheet1\", rangeBody, 15, nil, nil)\nif err != nil { panic(err) }\n```</details> |
+| **Perl** | <details><summary>Kodu göster</summary>```perl\nuse AsposeCellsCloud::Api::RangesApi;\nmy $api = AsposeCellsCloud::Api::RangesApi->new({ access_token => '<jwt token>' });\nmy $range = { FirstRow => 9, RowCount => 1 };\n$api->post_worksheet_cells_range_row_height('test.xlsx', 'Sheet1', $range, 15);\n```</details> |
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostWorksheetCellsRangeRowHeight.php" >}}
+> **Not:** Tüm SDK’lar, erişim belirteci yapılandırıldığında gerekli `Authorization: Bearer` başlığını otomatik olarak ekler.
 
-{{< /tab >}}
+## Ayrıca Bakınız
 
-{{< tab tabNum="4" >}}
+- **OpenAPI Specification** – Bu işlem için detaylı sözleşme: <https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeRowHeight>
+- **Aspose.Cells Cloud SDK Repository** – Kaynak kodu ve ek dil bağlamaları: <https://github.com/aspose-cells-cloud>
+- **Authentication Guide** – JWT belirteci nasıl alınır: <https://docs.aspose.cloud/cells/authentication/>
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostWorksheetCellsRangeRowHeight.rb" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostWorksheetCellsRangeRowHeight.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostWorksheetCellsRangeRowHeight.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostWorksheetCellsRangeRowHeight.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostWorksheetCellsRangeRowHeight.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+---

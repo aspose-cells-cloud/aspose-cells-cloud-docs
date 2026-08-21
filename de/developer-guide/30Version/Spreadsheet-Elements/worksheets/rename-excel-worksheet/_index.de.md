@@ -1,74 +1,70 @@
-﻿---
-title: Excel Arbeitsblatt umbenannt
-second_title: Documen
-linktitle: Umbenennen
-type: docs
-url: /de/worksheets/rename/
-aliases: [/rename-excel-worksheet/]
-keywords: Rename an Excel worksheet name to new name on an Excel workbook
-description: Aspose.Cells Cloud REST API unterstützt das Umbenennen eines Excel Arbeitsblattnamens in einen neuen Namen in einer Excel Arbeitsmappe. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Excel Arbeitsblatt umbenennen
 ---
-Dieser REST API zeigt `worksheet rename` an
- 
-## RSET API
- 
+title: "Excel-Arbeitsblatt umbenennen"
+second_title: "Dokument"
+linktitle: "Umbenennen"
+type: docs
+url: /worksheets/rename/
+aliases: [/rename-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel-Arbeitsblatt umbenennen, REST API, Tabellenkalkulations-SDK, Arbeitsblatt umbenennen, Cloud-Speicher"
+description: "Benennen Sie ein Arbeitsblatt in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API um. SDKs sind für Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby und Swift verfügbar."
+weight: 20
+---
+
+Diese REST API benennt ein Excel-Arbeitsblatt um.
+
+## REST API
+
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/rename
- 
 ```
- Die Anforderungsparameter sind:
- 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg||
-| Blattname| Schnur| Weg||
-| neuer Name| Schnur| Abfrage||
-| Ordner| Schnur| Abfrage||
-| Speichername| Schnur| Abfrage| Speichername.|
- 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostRenameWorksheet) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
- 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Anforderungsparameter**
+
+| Parametername | Typ    | Speicherort | Beschreibung                                  |
+| ------------- | ------ | ----------- | --------------------------------------------- |
+| name          | string | path        | Der Name der Excel-Datei.                     |
+| sheetName     | string | path        | Der aktuelle Name des Arbeitsblatts, das umbenannt werden soll. |
+| newname       | string | query       | Der neue Name für das Arbeitsblatt.           |
+| folder        | string | query       | Ordnerpfad im Speicher (optional).            |
+| storageName   | string | query       | Name des Speichers (optional).                |
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostRenameWorksheet) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
+
+Sie können das cURL-Befehlszeilentool verwenden, um Aspose.Cells-Webdienste einfach aufzurufen. Das folgende Beispiel zeigt, wie mithilfe von cURL Aufrufe an die Cloud-API durchgeführt werden.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/rename?newname=newSheet" \
+curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/rename?newname=newSheet" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Cloud SDK-Familie
- 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
- 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
- 
+
+Die Verwendung eines SDKs ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK übernimmt die Details auf niedriger Ebene, sodass Sie sich auf die Aufgaben Ihres Projekts konzentrieren können. Besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
+
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste mithilfe verschiedener SDKs durchgeführt werden:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

@@ -1,25 +1,38 @@
-﻿---
-title: Lavorando con la convalida Excel
-second_title: Documen
-linktitle: Validazione
-type: docs
-url: /it/validations/
-keywords: Working with validations on an Excel file
-description: Aspose.Cells Cloud REST API supporta l'utilizzo di convalide su un file Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 100
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Validazioni
 ---
-La convalida dei dati è una funzionalità di MS Excel utilizzata per controllare cosa un utente può inserire in una cella di un foglio Excel. Ad esempio, è possibile limitare le voci in un foglio, ad esempio un intervallo di date o solo numeri interi. Possiamo anche creare menu a discesa, che consentono di risparmiare spazio inutile e mostrano i valori in una singola cella. Inoltre, possiamo creare un messaggio personalizzato che verrà visualizzato all'utente quando inserisce un valore errato o un formato errato.
+title: "Lavorare con la convalida dei dati di Excel"
+second_title: "Documento"
+linktype: "Convalide"
+type: docs
+url: /validations/
+keywords: "convalida dei dati di Excel, Aspose.Cells Cloud, REST API, foglio di calcolo, Office Cloud"
+description: "Scopri come aggiungere, recuperare, aggiornare, eliminare e cancellare le regole di convalida dei dati di Excel in modo programmatico con l'API REST di Aspose.Cells Cloud. Include esempi per .NET, Java, Python e PHP."
+weight: 100
+ArticleTitle: "Lavorare con la convalida dei dati di Excel - Documentazione API Aspose.Cells Cloud"
+---
 
-Ad esempio, un utente può specificare una riunione programmata tra le 9:00 e le 18:00.
+La convalida dei dati di Excel è una funzionalità di Microsoft Excel utilizzata per controllare ciò che un utente può inserire in una cella di un foglio di calcolo. Può limitare le inserzioni a un intervallo di date specifico, a numeri interi solo o persino creare elenchi a discesa che risparmiano spazio e visualizzano i valori in una singola cella. È inoltre possibile definire un messaggio personalizzato che appare quando un utente immette un valore errato o un formato non valido.
 
-Possiamo utilizzare la convalida dei dati in Excel per assicurarci che un valore sia un numero positivo, una data compresa tra 15 e 30, che una data rientri nei prossimi 30 giorni o che un testo immesso sia inferiore a 25 caratteri, ecc.
+Ad esempio, un utente può specificare un appuntamento programmato tra le 9:00 e le 18:00.
 
-## Lavorare con le convalide su un file Excel
+La convalida dei dati può essere utilizzata per garantire che un valore sia un numero positivo, una data compresa tra il 15° e il 30° giorno di un mese, una data che si verifica nei prossimi 30 giorni o una voce di testo contenente meno di 25 caratteri, e così via.
 
-- [Come aggiungere informazioni di convalida da un foglio di lavoro Excel.](/cells/it/validations/delete/)
-- [Come ottenere informazioni di convalida da un foglio di lavoro Excel.](/cells/it/validations/get/)
-- [Come ottenere tutte le informazioni di convalida da un foglio di lavoro Excel.](/cells/it/validations/get-all/)
-- [Come eliminare le informazioni di convalida da un foglio di lavoro Excel.](/cells/it/validations/delete/)
-- [Come cancellare tutte le informazioni di convalida da un foglio di lavoro Excel.](/cells/it/validations/clear/)
-- [Come aggiornare le informazioni di convalida su un foglio di lavoro Excel.](/cells/it/validations/update/)
+### Riepilogo dell'API
+
+| Operazione | Metodo HTTP | Endpoint | Descrizione |
+|-----------|-------------|----------|-------------|
+| Aggiungi | POST | `/cells/{file}/worksheets/{sheet}/validations` | Crea una regola di convalida |
+| Ottieni | GET | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Recupera una regola specifica |
+| Ottieni tutte | GET | `/cells/{file}/worksheets/{sheet}/validations` | Elenca tutte le regole |
+| Aggiorna | PUT | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Modifica una regola |
+| Elimina | DELETE | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Rimuove una regola |
+| Cancella | POST | `/cells/{file}/worksheets/{sheet}/validations/clear` | Rimuove tutte le regole |
+
+## Lavorare con le convalide in un file Excel
+
+- [Come aggiungere una regola di convalida a un foglio di calcolo Excel](/cells/validations/add/)
+- [Come recuperare una regola di convalida da un foglio di calcolo Excel](/cells/validations/get/)
+- [Come recuperare tutte le regole di convalida da un foglio di calcolo Excel](/cells/validations/get-all/)
+- [Come eliminare una regola di convalida da un foglio di calcolo Excel](/cells/validations/delete/)
+- [Come cancellare tutte le regole di convalida da un foglio di calcolo Excel](/cells/validations/clear/)
+- [Come aggiornare una regola di convalida su un foglio di calcolo Excel](/cells/validations/update/)
+---

@@ -1,42 +1,43 @@
-﻿---
-title: Hur man sammanfogar flera kalkylbladsfiler med Aspose.Cells Clou
-linktitle: Hur man sammanfogar flera kalkylbladsfiler
-type: docs
-url: /sv/how-to-merge-multiple-files
-description: Hur man sammanfogar flera kalkylbladsfiler med Aspose.Cells Cloud
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hur man sammanfogar flera filer via Aspose.Cells Moln
 ---
+title: "Så här sammanfogar du flera kalkylark med Aspose.Cells Cloud"
+linktype: "Så här sammanfogar du flera kalkylark"
+type: docs
+url: /how-to-merge-multiple-files
+description: "Så här sammanfogar du flera kalkylark med Aspose.Cells Cloud."
+weight: 10
+kwords: Excel, Office Cloud, REST API, Kalkylark, PDF, CSV, JSON, Markdown, Så här sammanfogar du flera filer via Aspose.Cells Cloud
+---
+
 ## Introduktion
 
-Aspose.Cells Cloud API är en kraftfull molnbaserad lösning utformad för att skapa, redigera och konvertera kalkylbladsfiler. I den här artikeln kommer vi att guida dig genom processen att använda Aspose.Cells Cloud API för sammanslagna filformat, inklusive typiska användningsfall och exempelkod.
+Aspose.Cells Cloud API är en kraftfull molnbaserad lösning utformad för att skapa, redigera och konvertera kalkylarksfiler. I den här artikeln guidear vi dig genom processen för att använda Aspose.Cells Cloud API för att sammanfoga filer i olika format, inklusive vanliga användningsfall och exempelkod.
 
 ## Översikt
 
- Aspose.Cells Cloud API tillhandahåller robusta API:er för att sammanfoga flera kalkylbladsfiler till en fil med olika typer av format. De format som stöds inkluderar**Excel** (XLS, XLSX),**CSV-fil**, **HTML**, **PDF**, och mer. Genom att utnyttja Aspose.Cells Cloud API kan du enkelt sammanfoga flera kalkylbladsfiler till en fil med vanligt förekommande format, vilket tillgodoser en mängd olika behov.
+Aspose.Cells Cloud API erbjuder robusta API:er för att sammanfoga flera kalkylark till en fil i ett antal olika format. De format som stöds inkluderar **Excel** (XLS, XLSX), **CSV**, **HTML**, **PDF** och fler. Genom att utnyttja Aspose.Cells Cloud API kan du enkelt sammanfoga flera kalkylark till en fil i vanliga format, vilket möter en mängd olika behov.
 
-Det finns ett flertal API:er tillgängliga för filsammanslagning, generellt kompatibla med olika onlinemiljöer. Nedan följer en detaljerad beskrivning av dessa API:er:
+Flera API:er finns tillgängliga för filsammanfogning och de är i allmänhet kompatibla med olika online-miljöer. Nedan följer en detaljerad beskrivning av dessa API:er:
 
-| Fungera| Beskrivning| API Referens|
-|:------------------------- |:------------------------- |:------------------------- |
-|**[MergeSpreadsheets](https://docs.aspose.cloud/cells/merge-spreadsheets/)** | Sammanfoga lokala kalkylarksfiler till en fil i ett angivet format.|[SammanfogaKalkylblad](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets) |
-|**[MergeRemoteSpreadsheet](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)** | Sammanfoga kalkylbladsfiler i molnlagringsmappen till en fil i ett angivet format.|[Sammanfoga fjärrkalkylblad](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeRemoteSpreadsheet) |
-|**[Sammanfoga kalkylblad i fjärrmapp](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)** | Sammanfoga kalkylbladsfiler i molnlagringsmappen till en fil i ett angivet format.|[Sammanfoga kalkylblad i fjärrmapp](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder) |
+| Funktion        | Beskrivning      | API-referens      |
+| :------------------------- | :------------------------- | :------------------------- |
+| **[MergeSpreadsheets](https://docs.aspose.cloud/cells/merge-spreadsheets/)** | Sammanfogar lokala kalkylarksfiler till en fil i angivet format. | [MergeSpreadsheets](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets) |
+| **[MergeRemoteSpreadsheet](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)** | Sammanfogar kalkylarksfiler i en mapp i molnlagring till en fil i angivet format. | [Merge Remote Spreadsheet](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeRemoteSpreadsheet) |
+| **[Merge Spreadsheets In Remote Folder](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)** | Sammanfogar kalkylarksfiler i en mapp i molnlagring till en fil i angivet format. | [Merge Spreadsheets In Remote Folder](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder) |
 
-# Hur man sammanfogar flera filer via Aspose.Cells Cloud
+# Så här sammanfogar du flera filer till en fil via Aspose.Cells Cloud
 
- Aspose.Cells Cloud API tillhandahåller[flera SDK:er](https://github.com/aspose-cells-cloud)för olika programmeringsspråk. Välj det SDK som överensstämmer med ditt föredragna programmeringsspråk och följ den medföljande dokumentationen för installation och initialisering. Alternativt kan du skapa ditt eget SDK enligt[API referens](https://reference.aspose.cloud/cells/)I det här avsnittet använder vi C# som ett exempel för att beskriva processen för filsammanslagning.
+Aspose.Cells Cloud API erbjuder [flera SDK:er](https://github.com/aspose-cells-cloud) för olika programmeringsspråk. Välj den SDK som matchar ditt föredragna programmeringsspråk och följ den tillhörande dokumentationen för installation och initiering. Alternativt kan du skapa din egen SDK enligt [API-referensen](https://reference.aspose.cloud/cells/). I detta avsnitt använder vi C# som exempel för att visa detaljerade steg för filsammanfogning.
 
-## Registrering och erhållande av API-nyckel
+## Registrering och hämtning av API-nyckel
 
- Innan du börjar behöver du[registrera ett Aspose Cloud-konto](https://id.containerize.com/signup) och[skaffa en API-nyckel för autentisering](https://dashboard.aspose.cloud/applications)Genom att logga in på den officiella Aspose Cloud-webbplatsen kan du skapa ett gratis konto och få en API-nyckel för autentisering.
+Innan du börjar måste du [registrera ett Aspose Cloud-konto](https://id.containerize.com/signup) och [hämta en API-nyckel för autentisering](https://dashboard.aspose.cloud/applications). Genom att logga in på Aspose Cloud:s officiella webbplats kan du skapa ett kostnadsfritt konto och erhålla en API-nyckel för autentisering.
 
- För mer detaljerad information om operationer, vänligen se följande dokument:[Snabbstart med Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
+För mer avancerade åtgärder hänvisas till följande dokument: [Snabbstart med Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
 
-## Installera och initiera Aspose.Cells Cloud SDK
+## Installation och initiering av Aspose.Cells Cloud SDK
 
-Installera Aspose.Cells-Cloud NuGet-paketet i ditt .NET-projekt. Du kan använda NuGet-pakethanterarkonsolen eller NuGet-pakethanteraren i Visual Studio.
-Så här installerar du paketet med hjälp av pakethanterarkonsolen:
+Installera Aspose.Cells-Cloud NuGet-paketet i ditt .NET-projekt. Du kan använda NuGet Package Manager-konsolen eller NuGet Package Manager i Visual Studio.
+Här är hur du installerar paketet via Package Manager Console:
 
 ```Powershell
 
@@ -44,7 +45,7 @@ Install-Package Aspose.Cells-Cloud
 
 ```
 
-Skapar en ny instans av CellsApi-klassen och initierar den med ditt klient-ID och din klienthemlighet. Nedan följer detaljerna i det tidigare nämnda kodavsnittet:
+Skapa en ny instans av klassen `CellsApi` och initiera den med ditt klient-ID och klienthemlighet. Här är detaljerna för ovanstående kodavsnitt:
 
 ```CSharp
 
@@ -52,11 +53,11 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ```
 
-Se till att byta ut DIN_API_NYCKEL, DIN_APP_SID och DIN_APP_KEY med din faktiska API-nyckel, program-SID och programnyckel.
+Se till att ersätta `YOUR_API_KEY`, `YOUR_APP_SID` och `YOUR_APP_KEY` med dina faktiska API-nyckel, applikations-SID och applikationsnyckel.
 
-## Skapa API-förfrågan och ring API
+## Skapa API-förfrågan och anropa API:et
 
-### Utnyttja molntjänster för att sammanfoga lokala kalkylblad och leverera de konsoliderade filerna – antingen som lokala utdata eller minnesbaserade strömmar – i valfritt format.
+### Använd molntjänster för att sammanfoga lokala kalkylark och leverera den sammanslagna filen antingen som lokal utdata eller i minnesströmmar i valfritt format
 
 ```CSharp
 
@@ -64,44 +65,44 @@ using System.Collections.Generic;
 
 var cellsApi = new Aspose.Cells.Cloud.SDK.Api.CellsApi(System.Environment.GetEnvironmentVariable("ProductClientId"), System.Environment.GetEnvironmentVariable("ProductClientSecret"));
 
-// Suild merged spreadsheet request
+// Skapa begäran om sammanslagning av kalkylark
 var request = new Aspose.Cells.Cloud.SDK.Request.MergeSpreadsheetsRequest();
-// Set need merged files.
+// Ställ in filerna som ska sammanfogas
 IDictionary<string, System.IO.Stream> mapFiles = new Dictionary<string, System.IO.Stream>();
 mapFiles.Add("Book1.xlsx", File.OpenRead("Book1.xlsx"));
 mapFiles.Add("Book2.xlsx", File.OpenRead("Book2.xlsx"));
 request.Spreadsheet = mapFiles;
-// Set output format
+// Ställ in utdataformat
 request.outFormat = "pdf";
 
 cellsApi.MergeSpreadsheets(request, "MergedResultFile.pdf");
 
 ```
 
-### Molnsammanfoga kalkylblad som lagras i molnet och leverera den konsoliderade filen – lokalt eller tillbaka till molnlagring – i valfritt format.
+### Sammanfoga kalkylark som lagras i molnet och leverera den sammanslagna filen lokalt eller tillbaka till molnlagring i valfritt format
 
 ```C#
-// Get your Client ID and Client Secret from https://dashboard.aspose.cloud (free registration is required).
+// Hämta ditt Client ID och Client Secret från https://dashboard.aspose.cloud (kostnadsfri registrering krävs).
 var cellsApi = new Aspose.Cells.Cloud.SDK.Api.CellsApi(System.Environment.GetEnvironmentVariable("ProductClientId"), System.Environment.GetEnvironmentVariable("ProductClientSecret"));
-// Build merge request parameters 
+// Bygg parametrar för sammanslagningsbegäran
 var request = new Aspose.Cells.Cloud.SDK.Request.MergeRemoteSpreadsheetRequest();
-// Set cloud main file
+// Ställ in huvudfil i molnet
 request.name = "Book1.xlsx";
 request.folder = "RemoteFolder1";
-// Set cloud merged file
+// Ställ in fil att sammanfoga med i molnet
 request.mergedSpreadsheet = "RemoteFolder2/Book2.xlsx";
 request.outFormat = "pdf";
 cellsApi.MergeRemoteSpreadsheet(request, "MergedResultOutPutToLocalFile.pdf");
 ```
 
-### Automatiskt sammanfoga matchande filer i en molnkatalog, exportera det konsoliderade resultatet i det angivna formatet och leverera det lokalt eller tillbaka till molnlagring
+### Sammanfoga matchande filer automatiskt i en molnmapp, exportera det sammanslagna resultatet i angivet format och leverera det lokalt eller tillbaka till molnlagring
 
 ```csharp
-// Get your Client ID and Client Secret from https://dashboard.aspose.cloud (free registration is required).
+// Hämta ditt Client ID och Client Secret från https://dashboard.aspose.cloud (kostnadsfri registrering krävs).
 var cellsApi = new Aspose.Cells.Cloud.SDK.Api.CellsApi(System.Environment.GetEnvironmentVariable("ProductClientId"), System.Environment.GetEnvironmentVariable("ProductClientSecret"));
-// Build merge request parameters 
+// Bygg parametrar för sammanslagningsbegäran
 var request = new Aspose.Cells.Cloud.SDK.Request.MergeSpreadsheetsInRemoteFolderRequest();
-// Storage directory that needs to merge files
+// Lagringsmapp där filer ska sammanfogas
 request.folder = "RemoteFolder";
 request.fileMatchExpression = "*xlsx$";
 request.outFormat = "pdf";
@@ -110,17 +111,17 @@ cellsApi.MergeSpreadsheetsInRemoteFolder(request, "MergedResultOutPutToLocalFile
 
 ## Användningsfall
 
- De flera filerna**sammanslagna** Funktionen i Aspose.Cells Cloud API är användbar i olika praktiska användningsfall. Här är några vanliga scenarier:
+Funktionen för att **sammanfoga flera filer** i Aspose.Cells Cloud API är användbar i många praktiska scenario. Här är några vanliga fall:
 
 - **Sammanfoga flera Excel-filer till en Excel-fil** för dataanalys och lagring.
 - **Sammanfoga datafiler till en Excel-fil** för dataanalys.
 - **Sammanfoga flera bildfiler till en PDF-fil** för enkel delning.
-- **Sammanfoga flera filer till en html-fil** för visning och inbäddning på webbsidor.
+- **Sammanfoga flera filer till en HTML-fil** för visning och inbäddning i webbsidor.
 
 ## Slutsats
 
-Med Aspose.Cells Cloud API kan du enkelt sammanfoga flera kalkylbladsfiler till en fil. Genom att göra enkla API-anrop och ställa in lämpliga sammanfogningsalternativ kan du effektivt uppfylla olika krav på sammanfogade filer. Integrera Aspose.Cells Cloud API i dina applikationer för att öka produktiviteten och spara utvecklingstid.
+Med Aspose.Cells Cloud API kan du enkelt sammanfoga flera kalkylark till en fil. Genom att göra enkla API-anrop och ställa in lämpliga sammanfogningsalternativ kan du effektivt uppfylla diverse krav på filsammanfogning. Integrera Aspose.Cells Cloud API i dina applikationer för att förbättra produktiviteten och spara utvecklingstid.
 
- Observera att exempelkoden ovan endast är i demonstrationssyfte och att du skulle behöva ersätta den med giltiga autentiseringsuppgifter och filsökvägar när du använder den i praktiken. Dessutom erbjuder Aspose.Cells Cloud API många andra funktioner, såsom skapande av kalkylblad, redigering, manipulation och databehandling. Detaljerad API-dokumentation och exempelkod finns på[utvecklarguide för den officiella webbplatsen Aspose](/developer-guide/).
+Observera att ovanstående exempelkod är endast för demonstration. När du använder koden i praktiken måste du ersätta den med giltiga autentiseringsuppgifter och filsökvägar. Dessutom erbjuder Aspose.Cells Cloud API många ytterligare funktioner, såsom skapande, redigering, manipulering och datahantering av kalkylark. Detaljerad API-dokumentation och exempelkod hittar du på [utvecklarguiden på Asposes officiella webbplats](/developer-guide/).
 
-Vi hoppas att den här artikeln hjälper dig att förstå hur man använder Aspose.Cells Cloud API för filsammanslagning. Lycka till med implementeringen!
+Vi hoppas att denna artikel hjälpte dig att förstå hur du använder Aspose.Cells Cloud API för filsammanfogning. Lycka till med din implementation!

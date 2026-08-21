@@ -1,72 +1,104 @@
-﻿---
-title: Rensa Ändra lösenord för arbetsboken Excel
-second_title: Documen
-linktitle: Rensa Excel-filer Lösenord
-type: docs
-url: /sv/clear-excel-files-password/
-aliases: [/clear-modify-password-of-excel-workbooks/,/workbook/clear-modify-password/，/workbook/password/clear/]
-keywords: Delete password on an Excel workbook
-description: Aspose.Cells Cloud REST API stöder radering av lösenord i en Excel-arbetsbok. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 110
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Rensa Ändra lösenord för Excel Arbetsböcker
 ---
-Denna REST API indikerar att dokumentet ska avskyddas från ändringar.
+title: "Ta bort skrivskydd (lösenord) från en Excel-arbetsbok"
+second_title: "Dokument"
+linktitle: "Rensa Excel-filers lösenord"
+type: docs
+url: /clear-excel-files-password/
+aliases:
+  [
+    /clear-modify-password-of-excel-workbooks/,
+    /workbook/clear-modify-password/，/workbook/password/clear/,
+  ]
+keywords: "Aspose.Cells, Excel, borttagning av lösenord, skrivskydd, REST API, SDK-exempel"
+description: "Lär dig hur du tar bort skrivskydd (lösenord) från en Excel-arbetsbok med Aspose.Cells Cloud REST API. Innehåller cURL-exempel, autentiseringstred, och SDK-kodexempel."
+weight: 110
+ArticleTitle: "Ta bort skrivskydd (lösenord) från en Excel-arbetsbok"
+---
 
-## RSET API
+Denna REST API tar bort **skrivskydd (lösenord)** från en Excel-arbetsbok, vilket tillåter dig att **ta bort Excel-lösenordsskydd** programmatiskt.
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/writeProtection
- 
+**Förutsättningar:** Skaffa en giltig JWT-token, se till att arbetsboken är lagrad på en stödd lagringsplats och använd API-versionen v3.0.
+
+För att lägga till skydd, se guide:n [Skydda Excel](/cells/protect/).
+
+## DeleteDocumentUnprotectFromChanges API
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamnet.|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDocumentUnprotectFromChanges) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Begärandeparametrar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parametername | Typ    | Plats  | Beskrivning                                      |
+| ------------- | ------ | ------ | ------------------------------------------------ |
+| `name`        | string | path   | Namnet på Excel-arbetsboken.                     |
+| `folder`      | string | query  | Mappen som innehåller arbetsboken (valfritt).    |
+| `storageName` | string | query  | Namnet på lagringstjänsten (valfritt).           |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+
+### Svar
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                      |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Ogiltig begäran             | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Inte auktoriserad           | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
+## Hur du använder DeleteDocumentUnprotectFromChanges API med SDK:er
+
+### DeleteDocumentUnprotectFromChanges API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDocumentUnprotectFromChanges) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda cURL kommandoradsverktyget för enkelt att komma åt Aspose.Cells-tjänster. Följande exempel visar hur man gör ett anrop till REST API med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xlsx/writeProtection" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+### Använd Aspose.Cells Cloud SDK:er
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på lågnivå så att du kan fokusera på dina projektuppgifter. Kontrollera [GitHub-repositoriet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -96,7 +128,7 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_DeleteDocumentUnprotectFromChanges.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_DeleteDocumentUnprotectFromChanges.ts" >}}
 
 {{< /tab >}}
 
@@ -119,3 +151,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

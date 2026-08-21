@@ -1,246 +1,280 @@
-﻿---
-title: Найти текст из файла Excel
-second_title: Documen
-linktitle: Найти без использования хранилища
-type: docs
-url: /ru/search/
-aliases: [/search-without-using-storage/,/search-without-storage/]
-keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: Aspose.Cells Cloud REST API поддерживает поиск текста в файлах Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 50
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Поиск текста в файлах Excel
 ---
-Этот REST API указывает на текст `search` из файлов Excel.
-`## RSET API
+title: "Поиск текста в файлах Excel — Aspose.Cells Cloud API"
+description: "Ищите конкретный текст в файлах Excel (XLS, XLSX, XLSM, XLSB) и ODS с помощью Aspose.Cells Cloud API. Включает детали запроса, примеры cURL и SDK, а также обработку ошибок."
+keywords: "Aspose.Cells, Excel, поиск, API, REST"
+type: docs
+url: /cells/search/
+aliases:
+  - /search/
+  - /search-without-using-storage/
+  - /search-without-storage/
+weight: 50
+---
+
+# Поиск текста в файлах Excel — Aspose.Cells Cloud API
+
+## Обзор
+Aspose.Cells Cloud предоставляет **POST**-эндпоинт для поиска заданной строки текста внутри файлов рабочих книг Excel (XLS, XLSX, XLSM, XLSB) и электронных таблиц OpenDocument (ODS). API возвращает все ячейки, содержащие запрошенный текст, вместе со ссылкой на лист, где было найдено совпадение.
+
+> **Сценарии использования**  
+> - Проверка наличия конкретного значения в отчёте перед дальнейшей обработкой.  
+> - Создание быстрого инструмента «поиск и замена», который сначала выводит все вхождения.  
+> - Генерация индекса ключевых терминов по пакету электронных таблиц.
+
+---
+
+## Предварительные требования
+| Требование | Подробности |
+|------------|-------------|
+| **Аутентификация** | JWT-токен, полученный через OAuth-процесс Aspose Cloud. Токен должен включать область **Cells**. |
+| **Поддерживаемые форматы** | XLS, XLSX, XLSM, XLSB, ODS |
+| **Максимальный размер файла** | 150 МБ (в сжатом виде). Файлы большего размера вызывают ошибку **413 Payload Too Large**. |
+| **Обязательные заголовки** | `Authorization: Bearer <jwt-token>`  <br> `Accept: application/json` |
+| **Права доступа** | Токен должен иметь разрешение на *чтение* в целевом хранилище (если используется удалённое хранилище) — не требуется, если файл загружается как `multipart/form-data`. |
+
+*Совет:* Используйте эндпоинт **/connect/token** для генерации JWT-токена. Подробности см. в [Руководстве по аутентификации](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+---
+
+## Эндпоинт
+
+| Параметр | Значение |
+|----------|----------|
+| **HTTP-метод** | `POST` |
+| **URL** | `https://api.aspose.cloud/v3.0/cells/search` |
+| **Назначение** | Поиск заданного текста в загруженной рабочей книге Excel. |
+| **Безопасность** | JWT-токен (Bearer) — см. *Предварительные требования* выше. |
+
+---
+
+### **Безопасность и аутентификация**
+
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
+
+## Параметры запроса
+
+| Имя | Тип | Местоположение | Обязательный | Описание |
+|-----|-----|----------------|-------------|----------|
+| `file` | **file** | `formData` (multipart) | **Да** | Файл электронной таблицы для загрузки. |
+| `text` | **string** | Строка запроса | **Да** | Строка текста для поиска. |
+| `password` | **string** | Строка запроса | Нет | Пароль для открытия защищённой рабочей книги, если требуется. |
+| `sheetname` | **string** | Строка запроса | Нет | Имя листа, в котором ограничить поиск. Если опущено, поиск выполняется по всем листам. |
+| `checkExcelRestriction` | **boolean** | Строка запроса | Нет (по умолчанию: `true`) | Если `true`, API проверяет ограничения, специфичные для Excel (например, ячейки только для чтения), перед поиском. |
+
+---
+
+## Пример запроса (cURL)
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/search
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/search?text=Invoice&sheetname=Sheet1" \
+  -X POST \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>" \
+  -F "file=@InvoiceReport.xlsx"
 ```
 
-The request parameters are:
+*Замените `<jwt-token>` на действительный токен и при необходимости скорректируйте параметры запроса.*
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| file | file | formData | File to upload |
-| text | string | query |   |
-| password | string | query |   |
-| sheetname | string | query |   |
+---
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## Успешный ответ
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+**HTTP 200 — поиск выполнен успешно; ответ содержит найденные элементы текста.**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/search?text=1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'  
+```json
+{
+  "Status": "OK",
+  "Code": 200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "Text": "Invoice #12345",
+        "link": {
+          "Href": "InvoiceReport.xlsx/worksheets/Sheet1",
+          "Rel": "parent",
+          "Title": "Sheet1",
+          "Type": "string"
+        }
+      },
+      {
+        "Text": "Invoice #12346",
+        "link": {
+          "Href": "InvoiceReport.xlsx/worksheets/Sheet1",
+          "Rel": "parent",
+          "Title": "Sheet1",
+          "Type": "string"
+        }
+      }
+    ]
+  }
+}
 ```
 
-{{< /tab >}}
+### Поля ответа
 
-{{< tab tabNum="2" >}}
+| Поле | Тип | Описание |
+|------|-----|----------|
+| `Status` | string | Общий статус запроса (`OK` при успехе). |
+| `Code` | integer | HTTP-код статуса (200). |
+| `TextItems.link` | object | Гиперссылка на ресурс коллекции. |
+| `TextItems.TextItemList` | array | Список совпадений. Каждый элемент содержит: |
+| `Text` | string | Значение ячейки, совпавшее с искомым текстом. |
+| `link` | object | Гиперссылка на лист, где найдено совпадение (`Href` указывает на `Workbook/worksheets/SheetName`). |
 
-```bash
-[{
- "Text": "12/31/1899 10:10:00 AM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 11:10:00 AM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 12:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 1:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 2:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 3:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 4:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 5:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 6:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 7:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 8:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 9:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 10:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 11:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}]
- 
+---
+
+## Ответы об ошибках
+
+| HTTP-код | Значение | Типичная причина | Пример тела ответа |
+|----------|----------|------------------|---------------------|
+| **400** | Неверный запрос | Отсутствуют обязательные параметры, неподдерживаемый тип файла или недопустимые значения параметров запроса. | `{ "Status":"Error","Code":400,"Message":"Параметр запроса 'text' обязателен." }` |
+| **401** | Неавторизовано | Отсутствует или недействителен JWT-токен. | `{ "Status":"Error","Code":401,"Message":"Недействительный или просроченный токен доступа." }` |
+| **413** | Загруженные данные слишком большие | Загруженный файл превышает лимит в 150 МБ. | `{ "Status":"Error","Code":413,"Message":"Размер файла превышает допустимый предел." }` |
+| **500** | Внутренняя ошибка сервера | Непредвиденная проблема на стороне сервера. | `{ "Status":"Error","Code":500,"Message":"Произошла непредвиденная ошибка." }` |
+
+---
+
+## Примеры SDK
+
+Ниже приведены минимальные фрагменты кода для операции **PostSearch** с использованием официальных SDK Aspose.Cells Cloud. Замените `YOUR_JWT_TOKEN` и путь к файлу на свои значения.
+
+### C# (.NET)
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        var config = new Configuration
+        {
+            AccessToken = "YOUR_JWT_TOKEN",
+            BaseUrl = "https://api.aspose.cloud"
+        };
+        var cellsApi = new CellsApi(config);
+
+        using var stream = File.OpenRead("InvoiceReport.xlsx");
+        var result = cellsApi.PostSearch(
+            file: stream,
+            text: "Invoice",
+            sheetname: "Sheet1",
+            password: null,
+            checkExcelRestriction: true
+        );
+
+        foreach (var item in result.TextItems.TextItemList)
+        {
+            Console.WriteLine($"{item.Text}  ->  {item.Link.Href}");
+        }
+    }
+}
 ```
 
-{{< /tab >}}
+### Java
 
-{{< /tabs >}}
+```java
+import com.aspose.cells.cloud.sdk.api.CellsApi;
+import com.aspose.cells.cloud.sdk.model.*;
+import java.io.File;
 
-## Cloud SDK Family
+public class PostSearchDemo {
+    public static void main(String[] args) throws Exception {
+        CellsApi api = new CellsApi("YOUR_JWT_TOKEN");
+        File file = new File("InvoiceReport.xlsx");
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+        TextItemsResponse response = api.postSearch(
+                file,
+                "Invoice",
+                null,          // password
+                "Sheet1",      // sheetname
+                true           // checkExcelRestriction
+        );
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+        response.getTextItems().getTextItemList()
+                .forEach(item -> System.out.println(item.getText() + " -> " + item.getLink().getHref()));
+    }
+}
+```
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+### Python
 
-{{< tab tabNum="1" >}}
+```python
+import asposecellscloudsdk
+from asposecellscloudsdk import CellsApi, ApiException, Configuration
+from asposecellscloudsdk.models import TextItemsResponse
+import pathlib
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostSearch.cs" >}}
+config = Configuration()
+config.access_token = "YOUR_JWT_TOKEN"
+config.host = "https://api.aspose.cloud"
 
-{{< /tab >}}
+api_instance = CellsApi(configuration=config)
 
-{{< tab tabNum="2" >}}
+file_path = pathlib.Path("InvoiceReport.xlsx")
+with open(file_path, "rb") as f:
+    result: TextItemsResponse = api_instance.post_search(
+        file=f,
+        text="Invoice",
+        password=None,
+        sheetname="Sheet1",
+        check_excel_restriction=True
+    )
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostSearch.java" >}}
+for item in result.text_items.text_item_list:
+    print(f"{item.text} -> {item.link.href}")
+```
 
-{{< /tab >}}
+### Node.js (TypeScript)
 
-{{< tab tabNum="3" >}}
+```typescript
+import { CellsApi, Configuration } from "@asposecells-cloud/sdk";
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostSearch.php" >}}
+const config = new Configuration({
+    accessToken: "YOUR_JWT_TOKEN",
+    basePath: "https://api.aspose.cloud"
+});
 
-{{< /tab >}}
+const api = new CellsApi(config);
 
-{{< tab tabNum="4" >}}
+api.postSearch({
+    file: fs.createReadStream("InvoiceReport.xlsx"),
+    text: "Invoice",
+    sheetname: "Sheet1",
+    checkExcelRestriction: true
+}).then(response => {
+    response.textItems?.textItemList?.forEach(item => {
+        console.log(`${item.text} -> ${item.link?.href}`);
+    });
+}).catch(err => console.error(err));
+```
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostSearch.rb" >}}
+*(SDK для PHP, Ruby, Go и Perl доступны в [репозитории Aspose.Cells Cloud на GitHub](https://github.com/aspose-cells-cloud).)*
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="5" >}}
+## Дополнительные примечания
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostSearch.ts" >}}
+- **`checkExcelRestriction`** по умолчанию равен `true`. Установите значение `false` только в случае, если вы уверены, что рабочая книга не содержит защищённых ячеек, которые могут мешать поиску.
+- API возвращает **гиперссылки** (`Href`), которые можно использовать с другими эндпоинтами Aspose.Cells Cloud (например, для скачивания листа или получения форматирования ячейки).
+- При поиске в больших рабочих книгах рекомендуется сузить область поиска с помощью параметра `sheetname`, чтобы улучшить время отклика.
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="6" >}}
+## См. также
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostSearch.py" >}}
+- **Руководство по аутентификации** – <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>
+- **OpenAPI-спецификация для PostSearch** – <https://apireference.aspose.cloud/cells/#/LightCells/PostSearch>
+- **SDK Aspose.Cells Cloud** – <https://github.com/aspose-cells-cloud>
+- **Ограничения скорости и квоты** – <https://docs.aspose.cloud/total/getting-started/limits/>
 
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostSearch.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostSearch.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
-`
+---

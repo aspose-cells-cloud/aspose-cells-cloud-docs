@@ -1,90 +1,91 @@
-﻿---
-title: "Aspose.Cells Bulut Hızlı Başlangıç: 5 dakikada bir elektronik tablo uygulaması oluşturun"
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Quickstar
-linktitle: Hızlı yıldız
-type: docs
-url: /tr/quickstart/
-description: Aspose.Cells Bulut, Excel'in oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemleri vb. işlemlerini destekler
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Hızlı Başlangıç
 ---
-Bu talimatlar Aspose.Cells Cloud API'i başlatma ve gerekli elektronik tablo işleme kitaplıklarını yükleme konusunda size rehberlik eder.
+title: "Aspose.Cells Cloud Hızlı Başlangıç: 5 dakikada bir elektronik tablo uygulaması oluşturun"
+second_title: "Belge"
+ArticleTitle: "Aspose.Cells Cloud Hızlı Başlangıç"
+linktype: "Hızlı Başlangıç"
+type: docs
+url: /quickstart/
+description: "Aspose.Cells Cloud, Excel dosyalarını oluşturma, dönüştürme, birleştirme, bölme, koruma ve çok sayıda diğer özellik içeren dahili nesne işlemlerini yapmanızı sağlar."
+weight: 20
+keywords: "Aspose.Cells Cloud, Excel, Elektronik Tablo, API, Bulut SDK, REST API, PDF, CSV, JSON, Hızlı Başlangıç"
+---
 
-Elektronik tablo dönüştürme, oluşturma ve düzenleme özelliklerini herhangi bir modern işletim sisteminde çalışan uygulamalara kolayca entegre edebilirsiniz. Elektronik tabloları okumanıza, düzenlemenize, birleştirmenize, bölmenize ve çeşitli dosya biçimlerine dönüştürmenize yardımcı olurlar. Bu programlama kütüphaneleri, veriler, stiller, formüller, tablolar, grafikler, pivot tablolar, üstbilgiler, altbilgiler, yorumlar, çizim nesneleri, köprüler, filigranlar ve çok daha fazlası gibi eksiksiz bir Elektronik Tablo bileşenleri setiyle çalışmanıza olanak tanır.
+Bu talimatlar, Aspose.Cells Cloud API'sini başlatmanız ve gerekli elektronik tablo işleme kütüphanelerini kurmanız konusunda sizi yönlendirecektir.
+
+Modern bir işletim sisteminde çalışan uygulamalara kolayca elektronik tablo dönüştürme, oluşturma ve düzenleme özelliklerini entegre edebilirsiniz. Bu talimatlar, elektronik tabloları okumanızı, düzenlemenizi, birleştirmenizi ve bölmenizi yanı sıra çeşitli dosya formatlarına dönüştürmenizi sağlar. Bu programlama kütüphaneleri, veriler, stiller, formüller, tablolar, grafikler, dinamik tablolar, başlıklar, altbilgiler, yorumlar, çizim nesneleri, köprüler, filigranlar ve daha fazlası gibi tam bir elektronik tablo bileşeni yelpazesini kullanmanızı sağlar.
 
 ## Ücretsiz Hesap Oluşturun
 
-Aspose Cloud, bir ürünü satın almadan önce tam olarak değerlendirip test edebileceğiniz net ve rahat bir satış modeline dayanır.
+Aspose Cloud, ürününüzü satın alma kararı vermeden önce tam olarak değerlendirebilmeniz ve test edebilmeniz için açık ve rahat bir fiyatlandırma modeline sahiptir.
 
-Öncelikle Bulut altyapısına erişebilmek için ücretsiz bir hesap oluşturmanız gerekiyor:
+İlk olarak, bulut altyapısına erişmek için ücretsiz bir hesap oluşturmanız gerekir:
 
--  Lütfen şuraya gidin:[Aspose Gösterge Paneli](https://dashboard.aspose.cloud/#/) giriş sayfası
--  Daha hızlı giriş yapmak için tıklayın**GitHub ile Oturum Açın** veya**Google ile Giriş Yapın** düğme
+- Lütfen [Aspose Dashboard](https://dashboard.aspose.cloud/#/) oturum açma sayfasına gidin
+- Daha hızlı oturum açmak için **GitHub ile Oturum Aç** veya **Google ile Oturum Aç** butonuna tıklayın
 - Gerekli bilgileri sağlayın
 
 {{% alert style="info" %}}
 
-Tebrikler! Aspose Cloud'a başarıyla kaydoldunuz.
+Tebrikler! Aspose Cloud ile başarıyla kaydoldunuz.
 
 {{% /alert %}}
 
-## Hesap Ayrıntılarınızı Görüntüleyin ve Güncelleyin
+## Hesap Detaylarınızı Görüntüleyin ve Güncelleyin
 
-Daha sonra hesabınızda bireysel ayarlamalar yapmanız gerekiyor:
+Sonraki adım olarak hesabınız için bireysel ayarlar yapmanız gerekir:
 
--  Erişiminiz[Aspose Hesap Ayarları](https://id.containerize.com/admin/) Sayfanın sağ üst köşesindeki ikona tıklayarak.
+- Sayfanın sağ üst köşesindeki simgeye tıklayarak [Aspose Hesap Ayarları](https://id.containerize.com/admin/) sayfasına erişin.
 
-![gösterge paneli.png](dashboard.png)
+![dashboard.png](dashboard.png)
 
--  Seçin**Hesap Ayarları** Menü çubuğundaki öğeyi seçin. Ayarlarınızı kontrol edin ve**Değişiklikleri Kaydet** onaylamak için düğmeye basın.
+- Menü çubuğundan **Hesap Ayarları** seçeneğini seçin. Ayarlarınızı kontrol edin ve onaylamak için **Değişiklikleri Kaydet** butonuna tıklayın.
 
-![ayarlar.png](settings.png)
+![settings.png](settings.png)
 
-## Güvenlik Kimlik Bilgilerinizi Alın (İstemci Kimliği ve Gizli Bilgi)
+## Güvenlik Kimlik Bilgilerinizi (İstemci Kimliği ve Gizli Anahtarı) Edinin
 
-Aspose, güvenlik konularına büyük önem vermektedir. Kimlik doğrulama için JWT belirtecini, tüm istemci-sunucu etkileşimlerini güvence altına almak içinse uçtan uca HTTPS şifrelemesini kullanıyoruz.
+Aspose, güvenlik konularına büyük önem verir. Kimlik doğrulama için JWT belirteci kullanır ve tüm istemci-sunucu etkileşimlerini sonundan sonuna kadar HTTPS şifrelemesi ile korur.
 
- Bir Uygulama, benzersiz API kimlik bilgilerinden oluşan bir kümedir —**Müşteri Kimliği** Ve**Müşteri Sırrı** API numaralı Bulutumuzu aradığınızda kimlik doğrulaması için bunları kullanabilirsiniz. Çoğu durumda, yalnızca tek bir Uygulamaya ihtiyacınız vardır. Bazı gelişmiş senaryolarda, ayrı ayrı birden fazla Uygulama kaydedip kullanmak isteyebilirsiniz.**İstemci Kimliği ve Gizli** kimlik bilgileri.
+Bir Uygulama, benzersiz API kimlik bilgilerinden — **İstemci Kimliği** ve **İstemci Gizli Anahtarı** — oluşan bir kümedir. Bulut API'mizi çağırırken kimlik doğrulamak için bunları kullanabilirsiniz. Çoğu durumda, tek bir Uygulama yeterlidir. Bazı gelişmiş senaryolarda, ayrı **İstemci Kimliği ve Gizli Anahtar** kimlik bilgilerine sahip birden fazla Uygulama kaydedip kullanmak isteyebilirsiniz.
 
-Başvurularınız hakkında bilgi edinmek için lütfen aşağıdaki adımları izleyin:
+Uygulamalarınızla ilgili bilgilere erişmek için aşağıdaki adımları uygulayın:
 
-1.  Giriş yapın[Aspose Gösterge Paneli](https://dashboard.aspose.cloud/#/)
- 2. Sayfanın sol tarafında[Uygulamalar](https://dashboard.aspose.cloud/applications) sekmesi.
+1. [Aspose Dashboard](https://dashboard.aspose.cloud/#/) sayfasına giriş yapın
+2. Sayfanın sol tarafında [Uygulamalar](https://dashboard.aspose.cloud/applications) sekmesine tıklayın.
 
-![uygulamalar.png](applications.png)
+![applications.png](applications.png)
 
-3. Sayfanın en altına doğru ilerleyin, Yeni Başvuru Oluştur butonunu göreceksiniz, ona tıklayarak oluşturabilirsiniz.
+3. Sayfanın en altına gidin; burada **Yeni Uygulama Oluştur** butonunu bulacaksınız. Yeni bir uygulama oluşturmak için bu butona tıklayın.
 
-![yeniuygulamaoluştur.png](createnewapplication.png)
+![createnewapplication.png](createnewapplication.png)
 
-4. Oluşturma sayfasına girin, oluşturmak istediğiniz adı, açıklamayı ve depolama adresini seçip girin ve oluşturma işlemi başarıyla tamamlandıktan sonra önceki sayfaya dönmek için kaydet düğmesine tıklayın.
+4. Oluşturma sayfasında, istediğiniz adı, açıklamayı ve depo adresini girin; ardından başarıyla oluşturulduktan sonra önceki sayfaya dönmek için **Kaydet** butonuna tıklayın.
 
-![uygulama bilgisi.png](applicationinfo.png)
+![applicationinfo.png](applicationinfo.png)
 
-5. Sayfanın en altına doğru ilerleyin, az önce oluşturduğunuz Uygulama bilgileri kutusunu göreceksiniz, güvenlik bilgilerinizi görüntülemek ve güncellemek için tıklayın.
+5. Sayfanın en altına gidin; burada yeni oluşturduğunuz uygulama bilgileri kutusunu göreceksiniz. Güvenlik kimlik bilgilerinizi görüntülemek ve güncellemek için bunun üzerine tıklayın.
 
-![ilkuygulama.png](firstapp.png)
+![firstapp.png](firstapp.png)
 
 {{% alert style="info" %}}
 
-Tebrikler! Aspose.Cells API numaralı aramaları doğrulamak için güvenlik bilgilerinizi başarıyla aldınız.
+Tebrikler! Aspose.Cells API çağrılarını kimlik doğrulamak için gerekli güvenlik kimlik bilgilerini başarıyla aldınız.
 
 {{% /alert %}}
 
-## SDK'yı Seçin ve Yükleyin
+## SDK Seçin ve Kurun
 
- Olasılıklarınızı daha iyi anlamak için lütfen Aspose.Cells Bulut ürünlerinin geniş yelpazesini incelemek için bir dakikanızı ayırın. Bu yazılım ürünleri, yüksek performanslı bir temel üzerine inşa edilmiştir.[Bulut API](https://apireference.aspose.com/)7/24 hizmetinizdeyiz.
+Olası kullanım alanlarınızı daha iyi anlamak için lütfen Aspose.Cells Cloud ürünleri yelpazesini incelemek için biraz zaman ayırın. Bu yazılım ürünleri, 24/7 kullanılabilir olan yüksek performanslı [Bulut API](https://apireference.aspose.com/) temelinde inşa edilmiştir.
 
- Cloud API'in etkili kullanımı için güçlü bir aile sunuyoruz[Bulut SDK'ları](https://products.aspose.cloud/cells/family)neredeyse tüm büyük işletim sistemleri (Windows, macOS, Linux, Android) ve popüler programlama dilleri için,[Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Düğüm.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Yakut](https://products.aspose.cloud/cells/ruby) , Ve[Süratli](https://products.aspose.cloud/cells/swift).
+Bulut API'sini etkili bir şekilde kullanmak için, neredeyse tüm ana işletim sistemleri (Windows, macOS, Linux, Android) ve popüler programlama dilleri için güçlü bir dizi [Bulut SDK](https://products.aspose.cloud/cells/family) sunuyoruz; bunlar arasında [Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Ruby](https://products.aspose.cloud/cells/ruby) ve [Swift](https://products.aspose.cloud/cells/swift) bulunur.
 
- Yukarıdaki SDK'ların tümü şu adreste barındırılıyor:[GitHub](https://github.com/aspose-cells-cloud/)Her depo, kullanımını göstermek için çok çeşitli kod örnekleri içerir.
+Yukarıda belirtilen tüm SDK’lar [GitHub](https://github.com/aspose-cells-cloud/) üzerinde barındırılır. Her depo, kullanımını gösteren geniş bir kod örneği yelpazesini içerir.
 
 ## Geliştirici Belgelerini ve Kod Örneklerini Kontrol Edin
 
- Hesabınız artık tamamen yapılandırılmış ve geliştirici ortamı yüklenmiştir. Seçtiğiniz SDK ile kod yazmaya başlayabilirsiniz. Lütfen şuraya bakın:[Geliştirici Kılavuzu](https://docs.aspose.cloud/cells/developer-guide/) Cloud API'i kolayca kullanmak için bilgi almak için.
+Şimdi hesabınız tamamen yapılandırılmış ve geliştirici ortamı kurulmuştur. Seçtiğiniz SDK ile kod yazmaya başlayabilirsiniz. Bulut API’sini kolayca kullanmak için [Geliştirici Kılavuzu](https://docs.aspose.cloud/cells/developer-guide/) sayfasına bakınız.
 
-Örn. Bir Çalışma Kitabını diğer biçimlere dönüştürün.
+Örneğin, bir Çalışma Kitabını diğer formatlara dönüştürün.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -138,6 +139,7 @@ Tebrikler! Aspose.Cells API numaralı aramaları doğrulamak için güvenlik bil
 
 {{< /tabs >}}
 
-## Gerekirse Yardım İsteyin
+## Gerekirse Yardım İste
 
- Sorunlarınızı anlatmaktan ve sorularınızı sormaktan çekinmeyin.[Bulut Forumları](https://forum.aspose.cloud/c/cells/7)Aspose teknik destek ekibi size yardımcı olmaya hazır. Aspose'in telefonla teknik destek sağlamadığını lütfen unutmayın. Telefon desteği yalnızca satış ve satın alma soruları için mevcuttur.
+Lütfen sorunlarınızı tanımlayın ve sorularınızı [Bulut Forumları](https://forum.aspose.cloud/c/cells/7) üzerinden sorun. Aspose teknik destek ekibi size yardımcı olmaya hazırdır. Aspose, teknik destek için telefon desteği sağlamamaktadır; telefon desteği yalnızca satış ve satın alma soruları için mevcuttur.
+---

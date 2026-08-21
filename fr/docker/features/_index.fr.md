@@ -1,45 +1,74 @@
-﻿---
-title: "Aspose.Cells Fonctionnalités principales de Cloud Docker : conversion de feuilles de calcul, fusion, division, protection, traitement des données, etc."
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Docker Core Functionalit
-linktitle: Fonctionnalité
-type: docs
-url: /fr/docker-container-features/
-description: Aspose.Cells Cloud Docker Container est un service conteneurisé fourni par Aspose basé sur Docker, vous permettant de déployer les fonctionnalités du Cloud Aspose.Cells API dans des environnements cloud locaux ou privés sans dépendre des services cloud publics de Aspose
-weight: 30
-kwords: Excel Conteneur Docker Cloud, Conteneur Docker Cloud autonome, Conteneur Docker REST, Feuille de calcul, PDF, CSV, Json, Markdown, Image Docker, Conteneur Docker
 ---
-## Qu'est-ce que le conteneur Cloud Docker Aspose.Cells ?
+title: "Fonctionnalités de base d'Aspose.Cells Cloud Docker : conversion de classeurs, fusion, découpage, protection, traitement des données, et plus encore."
+second_title: "Document"
+ArticleTitle: "Fonctionnalités de base d'Aspose.Cells Cloud Docker"
+linktitle: "Fonctionnalités"
+type: docs
+url: /docker-container-features/
+description: "Exécutez localement l’API Aspose.Cells Cloud à l’aide du conteneur Docker Aspose.Cells Cloud — un service conteneurisé basé sur Docker, offrant un traitement complet des classeurs, une confidentialité renforcée et la possibilité de fonctionner hors ligne, sans recourir au cloud public d’Aspose."
+weight: 30
+keywords:
+  - Aspose.Cells
+  - Docker
+  - Conversion de classeurs
+  - Traitement Excel
+  - Export PDF
+  - Gestion CSV
+  - API REST
+  - Service conteneurisé
+  - Cloud privé
+  - Traitement hors ligne
+---
 
-Aspose.Cells Cloud Docker Container est un service conteneurisé fourni par Aspose basé sur Docker, vous permettant de déployer les fonctionnalités du Aspose.Cells Cloud API dans des environnements cloud locaux ou privés sans dépendre des services cloud publics de Aspose.
+## Qu’est-ce que le conteneur Docker Aspose.Cells Cloud ?
 
-## Pourquoi utiliser le conteneur Cloud Docker Aspose.Cells ?
+Le conteneur Docker Aspose.Cells Cloud est un service conteneurisé fourni par Aspose, fondé sur Docker, qui vous permet de déployer les fonctionnalités de l’API Aspose.Cells Cloud dans des environnements locaux ou en cloud privé, sans dépendre des services cloud publics d’Aspose.
 
-Aspose.Cells Cloud Docker Container est un puissant conteneur de services de traitement de feuilles de calcul qui prend en charge :
+## Pourquoi utiliser le conteneur Docker Aspose.Cells Cloud ?
 
-### Fonctionnalités principales
+Le conteneur Docker Aspose.Cells Cloud est un service puissant de traitement de classeurs, conteneurisé et prenant en charge :
+
+### Fonctionnalités de base
 
 - Lecture et écriture de fichiers Excel (XLS, XLSX, CSV, ODS, etc.)
-- Calculs de formules, graphiques, mise en forme conditionnelle, tableau croisé dynamique, graphique, etc.
-- Conversion de format (tel que Excel en PDF, HTML, images, etc.)
-- Opérations sur les cellules, paramètres de style, gestion des feuilles de calcul, etc.
+- Calculs de formules, graphiques, mise en forme conditionnelle, tableaux croisés dynamiques, etc.
+- Conversion de formats (par exemple Excel vers PDF, HTML, images, etc.)
+- Opérations sur les cellules, paramétrage des styles, gestion des feuilles de calcul, etc.
 
-Aspose.Cells Cloud Docker Container encapsule ces fonctionnalités sous forme de RESTful API et les regroupe dans une image Docker, vous permettant de l'exécuter sur votre propre infrastructure.
+Le conteneur Docker Aspose.Cells Cloud encapsule ces fonctionnalités sous forme d’une API RESTful, puis les intègre dans une image Docker, vous permettant de l’exécuter sur votre propre infrastructure.
 
-### Principaux avantages
+### Avantages principaux
 
-| Avantages| Description|
-|:- |:- |
-| Confidentialité et sécurité des données| Tout le traitement des fichiers est effectué au sein de votre réseau privé, pas besoin de les télécharger sur un cloud tiers.|
-| Disponibilité hors ligne| Ne dépend pas du cloud public Aspose, adapté aux environnements intranet ou isolés.|
-| Évolutivité| Faites évoluer facilement Docker/Kubernetes via.|
-| Le API unifié| Entièrement compatible avec le Cloud public Aspose.Cells API, aucune modification de code requise.|
-| Contrôle des licences| Prend en charge deux types d'autorisation, choisissez celui qui vous convient en fonction de votre situation réelle.|
+| Bénéfices                      | Description                                                                 |
+| ------------------------------ | --------------------------------------------------------------------------- |
+| Confidentialité et sécurité des données | Tous les traitements de fichiers s’effectuent au sein de votre réseau privé ; aucune donnée n’est envoyée vers un cloud tiers. |
+| Disponibilité hors ligne       | Ne dépend pas du cloud public d’Aspose, convient aux réseaux intranet ou aux environnements isolés. |
+| Évolutivité                    | Facilement extensible via Docker/Kubernetes.                                |
+| API unifiée                    | Complètement compatible avec l’API publique d’Aspose.Cells Cloud ; aucune modification de code n’est requise. |
+| Contrôle des licences          | Prend en charge deux types d’autorisation ; choisissez celle qui correspond à votre situation. |
 
-## Comment utiliser le conteneur Cloud Docker Aspose.Cells
+## Comment utiliser le conteneur Docker Aspose.Cells Cloud ?
 
- Reportez-vous au manuel d'utilisation --[comment utiliser le conteneur Cloud Docker Aspose.Cells](https://docs.aspose.cloud/cells/docker-developer-guide/#run-asposecells-cloud-docker-container).
+Consultez le guide utilisateur — [Comment utiliser le conteneur Docker Aspose.Cells Cloud](https://docs.aspose.cloud/cells/docker-developer-guide/#run-asposecells-cloud-docker-container).
+
+**Prérequis**
+
+- Docker Engine 20.10 ou version ultérieure installé sur la machine hôte.  
+- Au moins 2 Go de RAM et 2 cœurs CPU alloués au conteneur pour des charges de travail typiques.  
+- Un fichier de licence valide Aspose.Cells Cloud (ou un jeton d’accès) placé dans un répertoire qui sera monté dans le conteneur.
+
+**Démarrage rapide**
+
+1. Extraire l’image Docker : `docker pull aspose/cells-cloud`.  
+2. Lancer le conteneur, en montant les répertoires de licence et de données, par exemple :  
+   ```bash
+   docker run -d -p 8080:80 \
+     -v /path/to/license:/app/license \
+     -v /path/to/data:/app/data \
+     aspose/cells-cloud
+   ```  
+3. Accéder à l’API REST via `http://localhost:8080/v3.0/`. Pour une utilisation détaillée de l’API, voir la [documentation de référence de l’API Aspose.Cells Cloud](https://docs.aspose.cloud/cells/api-reference/).
 
 ## Document de référence
 
-- [Comment configurer le stockage du conteneur Cloud Docker Aspose.Cells.](https://docs.aspose.cloud/cells/docker/storage/)
+- [Comment configurer le stockage du conteneur Docker Aspose.Cells Cloud.](https://docs.aspose.cloud/cells/docker/storage/)

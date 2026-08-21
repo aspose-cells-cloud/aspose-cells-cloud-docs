@@ -1,53 +1,90 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Post Access Toke
-second_title: Documen
-ArticleTitle: Get Access Token with Client ID and Secre
-linktitle: Post Access Toke
-type: docs
-url: /it/post-access-token/
-keywords: Access Token, Aspose Cloud, API Authentication, OAuth, REST API, Excel, Office Cloud, Token Managemen
-description: Recupera un token di accesso utilizzando il token di accesso cloud Cells API, che funge da servizio proxy inoltrando le richieste degli utenti al server di autenticazione cloud Aspose e restituisce il token di accesso risultante al client in modo sicuro
-weight: 100
-kwords: Excel, Office Cloud, REST API, Autenticazione, Gestione token, Integrazione middleware, Sicuro API, Aspose Cloud
 ---
-Recupera un token di accesso utilizzando il Cloud Get Token Cells API con ID client e segreto.
+title: "Aspose.Cells Cloud Web API - Post Access Token"
+second_title: "Documento"
+ArticleTitle: "Ottieni il token di accesso con Client ID e Secret"
+linktitle: "Post Access Token"
+type: docs
+url: /post-access-token/
+keywords: "Aspose.Cells, Cloud, Token di accesso, OAuth2, API, Autenticazione, REST, Excel, Office Cloud"
+description: "Ottieni un token di accesso OAuth2 per Aspose.Cells Cloud chiamando l'endpoint POST /cells/connect/token con il tuo Client ID e secret."
+weight: 100
+---
 
-## **Token di accesso postale API**
+Recupera un token di accesso utilizzando l'API Cells Cloud Get Token con un Client ID e un secret.
+
+## API Post Access Token
+
+Prima di chiamare l'endpoint, assicurati di avere:
+
+* Un account Aspose Cloud registrato.  
+* Un **Client ID** e un **Client Secret** generati nel portale Aspose Cloud.  
+
+### Web API
 
 ```
-POST http://api.aspose.cloud/v4.0/cells/connect/token
+POST https://api.aspose.cloud/v4.0/cells/connect/token
 ```
 
-### **Parametri di richiesta:**
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP| Descrizione|
-|:- |:- |:- |:- |
-| ID cliente| corda| domanda| ID cliente|
-| Segreto del cliente| corda| domanda| Segreto del cliente|
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
-### **Risposta**
+### Parametri della richiesta
+
+| Nome parametro | Tipo   | Posizione                     | Descrizione                                          |
+| -------------- | ------ | ---------------------------- | ---------------------------------------------------- |
+| grant_type     | string | body (form‑url‑encoded)      | Valore fisso `client_credentials` richiesto per OAuth. |
+| client_id      | string | body (form‑url‑encoded)      | L'identificativo client rilasciato a te.             |
+| client_secret  | string | body (form‑url‑encoded)      | Il secret associato al Client ID.                    |
+
+**Esempio di richiesta (cURL)**  
+
+```bash
+curl -X POST "https://api.aspose.cloud/v4.0/cells/connect/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=IL_TUO_CLIENT_ID&client_secret=IL_TUO_CLIENT_SECRET"
+```
+
+### Risposta
 
 ```json
- [
-        {
-          "Name": "String",
-          "DataType": {
-            "Identifier": "String",
-            "Name": "string"
-          }
-        }
-  ]
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "token_type": "Bearer",
+  "expires_in": 3600
+}
 ```
 
-## Come utilizzare la chiave pubblica Get API con gli SDK
+**Codici di stato HTTP**
 
-### Specifiche OpenAPI
+| Codice | Significato                 | Descrizione                                      |
+|--------|-----------------------------|--------------------------------------------------|
+| 200    | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida        | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401    | Non autorizzato             | Token JWT non valido o mancante. |
+| 413    | Payload troppo grande       | Il file caricato supera il limite di dimensione. |
+| 500    | Errore interno del server   | Errore imprevisto del server. |
 
- IL[Specifiche OpenAPI](https://reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken) definisce un'interfaccia di programmazione accessibile al pubblico, che consente di eseguire interazioni REST direttamente da un browser web.
+**Esempio di gestione dell’errore**
 
-### Utilizzare gli SDK cloud Aspose.Cells
+```json
+{
+  "error": "invalid_client",
+  "error_description": "Autenticazione client non riuscita."
+}
+```
 
-Utilizzare l'SDK è il modo migliore per accelerare lo sviluppo. L'SDK gestisce i dettagli sottostanti, consentendo di implementare in modo semplice il token di accesso per le celle con un codice minimo.
- Si prega di controllare il[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDKs.nt. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Consulta[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+## Come utilizzare l’API Get public key con gli SDK
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+### Specifica OpenAPI
+
+La [Specifiche OpenAPI](https://reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken) definiscono un'interfaccia di programmazione accessibile pubblicamente, consentendoti di eseguire interazioni REST direttamente da un browser web.
+
+### Utilizzare gli SDK di Aspose.Cells Cloud
+
+L'utilizzo di un SDK è il modo più rapido per iniziare. L'SDK nasconde i dettagli HTTP sottostanti, consentendoti di ottenere un token di accesso per Cells con un numero minimo di righe di codice.
+
+Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:  
+---

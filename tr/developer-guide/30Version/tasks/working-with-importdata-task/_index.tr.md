@@ -1,52 +1,112 @@
-﻿---
-title: ImportData Tas ile Çalışma
-second_title: Documen
-type: docs
-url: /tr/tasks/importdata/
-aliases: [/working-with-importdata-task/]
-keywords: REST API, task, convert, spreadsheets, exce
-description: "Cells. Excel için API Bulutu: Görevler Excel dosyasına veri aktarımını destekler"
-weight: 40
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, ImportData Göreviyle Çalışma
 ---
-## DİNLENME API
+title: "ImportData Görevi – Aspose.Cells Cloud API Referansı ve cURL Örnekleri"  
+second_title: "Belge"  
+type: docs  
+url: /tr/tasks/importdata/  
+aliases: [/tr/working-with-importdata-task/]  
+keywords: "Aspose.Cells, ImportData Görevi, Excel API, REST, cURL, SDK"  
+description: "Aspose.Cells Cloud ImportData Görevi ile Excel çalışma kitaplarına toplu veri içe aktarmayı öğrenin. cURL sözdizimi, istek şeması, SDK örnekleri (C#, PHP, Ruby, Node.js) ve hata işleme içerir."  
+weight: 40  
+---  
 
-|**API**|**Tip**|**Tanım**|**Kaynak Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/görev/görevçalıştır|POSTALAMAK|Görevi Çalıştır|[GöreviSonradan Çalıştır](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+## REST API  
 
+| **API** | **Tür** | **Açıklama** | **Kaynak Bağlantısı** |
+| :- | :- | :- | :- |
+| /cells/task/runtask | POST | Görev Çalıştır | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Task/PostRunTask), web tarayıcısından doğrudan REST etkileşimlerini gerçekleştirmenizi sağlayan herkese açık bir programlama arayüzü tanımlar.  
 
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells Cloud hizmetlerini çağırmak için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, düzgün biçimlendirilmiş bir JSON yükü ile bir **ImportData** görevini nasıl çalıştıracağınızı göstermektedir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" -H "accept: application/json" -H "Content-Type: application/json" -H "x-aspose-client: Containerize.Swagger" -d "{<Tasks> <TaskDescription> <TaskType>ImportData</TaskType> <ImportDataTaskParameter> <Workbook> <FileSourceType>CloudFileSystem</FileSourceType> <FilePath>TaskBook.xlsx</FilePath> </Workbook> <ImportBatchDataOption> <DestinationWorksheet>Sheet1</DestinationWorksheet> <IsInsert>true</IsInsert> <Source> <FileSourceType>RequestFiles</FileSourceType> <FilePath>Batch_data_xml.txt</FilePath> </Source> </ImportBatchDataOption> </ImportDataTaskParameter> </TaskDescription> <TaskDescription> <TaskType>ImportData</TaskType> <ImportDataTaskParameter> <Workbook> <FileSourceType>InMemoryFiles</FileSourceType> <FilePath>TaskBook.xlsx</FilePath> </Workbook> <ImportBatchDataOption> <DestinationWorksheet>Sheet2</DestinationWorksheet> <IsInsert>true</IsInsert> <Source> <FileSourceType>RequestFiles</FileSourceType> <FilePath>Batch_data_xml_2.txt</FilePath> </Source> </ImportBatchDataOption> </ImportDataTaskParameter> </TaskDescription> <TaskDescription> <TaskType>SaveResult</TaskType> <SaveResultTaskParameter> <ResultSource>InMemoryFiles</ResultSource> <ResultDestination> <DestinationType>CloudFileSystem</DestinationType> <InputFile>TaskBook.xlsx</InputFile> <OutputFile>ImpDataBook.xlsx</OutputFile> </ResultDestination> </SaveResultTaskParameter> </TaskDescription> </Tasks></TaskData>}"
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -d '{
+  "Tasks": [
+    {
+      "TaskDescription": {
+        "TaskType": "ImportData",
+        "ImportDataTaskParameter": {
+          "Workbook": {
+            "FileSourceType": "CloudFileSystem",
+            "FilePath": "TaskBook.xlsx"
+          },
+          "ImportBatchDataOption": {
+            "DestinationWorksheet": "Sheet1",
+            "IsInsert": true,
+            "Source": {
+              "FileSourceType": "RequestFiles",
+              "FilePath": "Batch_data_xml.txt"
+            }
+          }
+        }
+      }
+    },
+    {
+      "TaskDescription": {
+        "TaskType": "ImportData",
+        "ImportDataTaskParameter": {
+          "Workbook": {
+            "FileSourceType": "InMemoryFiles",
+            "FilePath": "TaskBook.xlsx"
+          },
+          "ImportBatchDataOption": {
+            "DestinationWorksheet": "Sheet2",
+            "IsInsert": true,
+            "Source": {
+              "FileSourceType": "RequestFiles",
+              "FilePath": "Batch_data_xml_2.txt"
+            }
+          }
+        }
+      }
+    },
+    {
+      "TaskDescription": {
+        "TaskType": "SaveResult",
+        "SaveResultTaskParameter": {
+          "ResultSource": "InMemoryFiles",
+          "ResultDestination": {
+            "DestinationType": "CloudFileSystem",
+            "InputFile": "TaskBook.xlsx",
+            "OutputFile": "ImpDataBook.xlsx"
+          }
+        }
+      }
+    }
+  ]
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
-HttpResponseMessage with the operation result.
-
+```json
+{
+  "Status": "OK",
+  "TaskId": "12345678",
+  "Result": {
+    "FilePath": "ImpDataBook.xlsx",
+    "DownloadUrl": "https://api.aspose.cloud/v3.0/cells/storage/file/ImpDataBook.xlsx"
+  }
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bu işlemleri uygulamanıza entegre etmenin en verimli yolu bir SDK kullanmaktır. SDK’lar kimlik doğrulama, istek oluşturma ve yanıt ayrıştırma işlemlerini yöneterek iş mantığına odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="5" tabID="8" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Perl" >}}
 
@@ -81,4 +141,3 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
-

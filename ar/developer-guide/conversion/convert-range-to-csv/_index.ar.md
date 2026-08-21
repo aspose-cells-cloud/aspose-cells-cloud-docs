@@ -1,97 +1,164 @@
-﻿---
-title: Aspose.Cells Cloud Web API - تحويل بيانات نطاق جدول بيانات إلى ملف CSV
-second_title: Documen
-ArticleTitle: Convert a Spreadsheet Range data to a CSV file.
-linktitle: تحويل النطاق إلى CS
-type: docs
-url: /ar/convert-range-to-csv/
-keywords: Convert range to csv, convert spreadsheet to csv, Aspose Cloud Web API, cloud conversion, Excel to cs
-description: تحويل نطاق محدد من ملف جدول بيانات محلي إلى تنسيق CSV باستخدام Excel API، مما يضمن تنفيذًا سحابيًا سلسًا
-weight: 100
-kwords: تحويل النطاق إلى csv، تحويل جدول بيانات إلى csv، Aspose Cloud Web API، تحويل السحابة، Excel إلى csv
 ---
- تحويل نطاق البيانات من جدول بيانات محلي/ملف Excel إلى[ملف CSV](https://docs.fileformat.com/spreadsheet/csv/) ملف.
+title: "تحويل نطاق إكسل إلى CSV – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+second title: "وثيقة"
+ArticleTitle: "كيفية تحويل نطاق جدول بيانات محلي إلى ملف CSV: دليل خطوة بخطوة"
+linktype: "تحويل النطاق إلى CSV"
+type: docs
+url: /convert-range-to-csv/
+keywords: "Aspose Cells، تحويل النطاق إلى CSV، إكسل إلى CSV، واجهة برمجة تطبيقات إكسل، جدول بيانات سحابي، تحويل، إكسل، CSV، Aspose.Cells، واجهة برمجة تطبيقات سحابية"
+description: "تعرّف على كيفية تحويل نطاق معيّن من ملف إكسل محلي (XLSX أو XLS) إلى CSV باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمّن بناء الجملة الخاصة بالطلب، والمتغيّرات، ومعالجة الأخطاء، وأمثلة SDK."
+---
 
-## **تحويل النطاق إلى CSV API**
+تصدير نطاق معيّن من ملف إكسل محلي إلى CSV باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud.
+
+## **واجهة برمجة تحويل النطاق إلى CSV**
+
+**المتطلبات الأساسية**  
+للاستدعاء هذا الطرفية، يجب أن تمتلك **معرف عميل** و**سر عميل** صالحين لحساب Aspose Cloud، واحصل على **رمز وصول JWT**، وتأكد من أن ملف جدول البيانات الأصلي بصيغة **XLSX** أو **XLS**.
+
+### واجهة برمجة الويب
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/range/csv
+PUT https://api.aspose.cloud/v4.0/cells/convert/range/csv
 ```
 
-### **معلمات الطلب:**
+**مثال باستخدام cURL**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-|جدول بيانات|ملف|بيانات النموذج|تحميل ملف جدول البيانات.|
-|ورقة عمل|خيط|استفسار|اسم ورقة العمل Spreadsheet/Excel|
-|يتراوح|خيط|استفسار|حدد مساحة الخلية (على سبيل المثال، A1:C10).|
-|المسار الخارجي|خيط|استفسار|(اختياري) مسار المجلد الذي سيتم تخزين المصنف فيه. الافتراضي هو null.|
-|اسم التخزين الخارجي|خيط|استفسار|اسم تخزين ملف الإخراج.|
-|الخطوطالموقع|خيط|استفسار|حدد الخطوط المخصصة إذا لزم الأمر.|
-|منطقة|خيط|استفسار|يحدد إعداد منطقة جدول البيانات.|
-|كلمة المرور|خيط|استفسار|كلمة المرور مطلوبة لفتح ملف جدول البيانات.|
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/csv?worksheet=Sheet1&range=A1:C10" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@sample.xlsx"
+```
 
-### **إجابة**
+### **الأمان والمصادقة**
+
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+### **متغيّرات الطلب:**
+
+| اسم المتغيّر | النوع | المسار/سلسلة الاستعلام/جسم HTTP | الوصف |
+| :------------- | :----- | :------------------------- | :----------------------------------------------------------------------------- |
+| Spreadsheet    | ملف   | FormData                   | رفع ملف جدول البيانات.                                                   |
+| worksheet      | نص    | استعلام                      | اسم ورقة العمل في جدول البيانات.                                         |
+| range          | نص    | استعلام                      | تحديد منطقة الخلايا (مثال: A1:C10).                                          |
+| outPath        | نص    | استعلام                      | مسار المجلد الذي سيُخزّن فيه ملف العمل (اختياري). القيمة الافتراضية هي null. |
+| outStorageName | نص    | استعلام                      | اسم مساحة التخزين الخارجة.                                                    |
+| fontsLocation  | نص    | استعلام                      | تحديد خطوط مخصّصة إن لزم الأمر.                                              |
+| region         | نص    | استعلام                      | يحدّد إعدادات منطقة جدول البيانات.                                        |
+| password       | نص    | استعلام                      | كلمة المرور المطلوبة لفتح ملف جدول البيانات.                                |
+
+### **الاستجابة**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream",
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### رموز الخطأ
+_مثال لمحتوى CSV المُعاد (الصفوف الأولى فقط):_
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+```csv
+Name,Date,Amount
+John Doe,2023-01-15,1250.00
+Jane Smith,2023-01-16,980.50
+```
 
-## لماذا يجب عليك استخدام تحويل الرسم البياني إلى CSV API؟
+**رموز حالة HTTP**
 
-- لا حاجة للتخزين السحابي، مما يقلل العبء على موارد السحابة.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+| الرمز | المعنى               | الوصف                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | ناجح (OK)                    | تم تطبيق التصفية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صالح (Bad Request)           | مُعطَلات ناقصة أو غير صالحة (مثال: نوع ملف غير مدعوم).      |
+| 401  | غير مصرّح (Unauthorized)          | رمز JWT غير صالح أو ناقص.                                     |
+| 413  | حمل البيانات كبير جدًا (Payload Too Large) | تجاوز حجم الملف المرفوع الحد المسموح.                                 |
+| 500  | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقّع في الخادم.                                          |
 
-## كيفية استخدام تحويل الرسم البياني إلى CSV API مع SDKs؟
+## أين يجب استخدام واجهة برمجة تطبيقات تحويل النطاق إلى CSV؟
+
+### **1. سيناريوهات تصدير البيانات والترحيل**
+
+- **دمج قواعد البيانات**: تصدير نطاقات محددة من إكسل مباشرة إلى أنظمة قواعد البيانات.
+- **دمج التطبيقات**: تغذية بيانات جدول البيانات المختارة إلى تطبيقات SaaS.
+- **ترحيل الأنظمة**: نقل نطاقات بيانات محددة بين الأنظمة القديمة والحديثة.
+- **المشاركة عبر منصات مختلفة**: مشاركة مجموعات بيانات مركّزة عبر منصات متعددة.
+
+### **2. التقارير والتحليلات**
+
+- **التقارير الهدفية**: تصدير أقسام تقرير محددة إلى CSV لتحليلها بدقة.
+- **تغذية بيانات لوحات التحكم**: تزويد أدوات لوحات التحكم بالبيانات المحددة.
+- **مقاييس الأداء**: استخراج نطاقات مؤشرات الأداء (KPI) لأنظمة متابعة الأداء.
+- **التقارير المالية**: تصدير أقسام البيانات المالية لمراجعتها خارجيًا.
+
+### **3. التطوير والاختبار**
+
+- **إدارة بيانات الاختبار**: تصدير نطاقات بيانات محددة لأغراض الاختبار.
+- **بيئات التطوير**: مشاركة نطاقات بيانات تجريبية مع فِرق التطوير.
+- **اختبار واجهات برمجة التطبيقات**: إنشاء بيانات اختبار CSV من أقسام جدول البيانات المحددة.
+- **تطوير النماذج الأولية**: توفير مجموعات بيانات مركّزة لتطبيقات النماذج الأولية.
+
+### **4. العمليات التجارية**
+
+- **مشاركة بيانات انتقائية**: مشاركة نطاقات بيانات محددة مع شركاء خارجيين.
+- **نسخ احتياطي جزئي للبيانات**: نسخ نطاقات بيانات حرجة احتياطيًا بصيغة CSV.
+- **نقل البيانات بين الأقسام**: مشاركة نطاقات بيانات محددة بين الأقسام المختلفة.
+- **التقارير الامتثالية**: تصدير نطاقات بيانات تنظيمية لأغراض الامتثال.
+
+### **5. سير عمل الأتمتة**
+
+- **تصديرات النطاقات المجدولة**: تصدير نطاقات محددة تلقائيًا وفق جدول زمني.
+- **الاستخراج المُحفَّز**: تصدير نطاقات استنادًا إلى أحداث أو محفزات تجارية.
+- **دمج سير العمل**: دمج تصديرات النطاقات في سير العمل لعمليات الأعمال.
+- **معالجة النطاقات بالجملة**: معالجة نطاقات محددة متعددة في عمليات جملية.
+
+## لماذا يجب استخدام واجهة برمجة تطبيقات تحويل النطاق إلى CSV؟
+
+- يمكنك تحويل نطاق من جدول البيانات دون رفع ملف العمل أولاً، مما يوفّر مساحة التخزين ويقلّل التكاليف.
+- يمكن إكمال التطوير بسرعة باستخدام SDKs الموجودة لـ Aspose.Cells Cloud.
+- **دمج بسيط**: واجهة برمجة تطبيقات REST مع توثيق واضح.
+- **بنية قابلة للتوسّع**: تتعامل مع عمليات صغيرة ومتوسطة وضخمة على حد سواء.
+
+## كيف تستخدم واجهة برمجة تطبيقات تحويل النطاق إلى CSV مع SDKs؟
 
 ### مواصفات OpenAPI
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToCsv) يحدد API متاحًا للعامة، مما يتيح تفاعلات REST مباشرة من متصفح الويب.
+تُحدّد [مواصفات OpenAPI](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToCSV) واجهة برمجة تطبيقات متاحة للعامة، ما يسمح بالتفاعل عبر REST مباشرة من متصفّح الويب.
 
-## استخدم Aspose.Cells Cloud SDKs
+## استخدام SDKs لـ Aspose.Cells Cloud
 
-يعد استخدام SDK أسرع طريقة للتطوير، لأنه يقوم بتجريد التفاصيل منخفضة المستوى، مما يسمح لك بتحويل بيانات النطاق إلى ملف csv باستخدام رمز قصير.
- استكشف القائمة الكاملة لـ Aspose.Cells Cloud SDKs في موقعنا[مستودع GitHub](https://github.com/aspose-cells-cloud).
+استخدام SDK هو أسرع طريقة للتطوير، حيث يُجرّد التفاصيل منخفضة المستوى، ويسمح لك بتحويل نطاق من البيانات إلى ملف CSV باستخدام كود معدود.  
+استكشف القائمة الكاملة لـ SDKs الخاصة بـ Aspose.Cells Cloud في [مستودع GitHub](https://github.com/aspose-cells-cloud).
 
-توضح أمثلة التعليمات البرمجية التالية كيفية استدعاء خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج المختلفة:
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertRangeToCsv.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertRangeToCsv.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertRangeToCsv.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertRangeToCsv.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertRangeToCsv.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertRangeToCsv.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertRangeToCsv.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToCsv.go" >}}
-{{< /tab >}}
+توضّح أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة. في حال حظر تحميل الأمثلة من Gist، يمكنك تنزيلها مباشرة من المستودع.
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertRangeToCSV.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertRangeToCSV.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertRangeToCSV.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertRangeToCSV.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertRangeToCSV.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertRangeToCSV.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertRangeToCSV.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToCSV.go" >}}
+{{</tab>}}
 {{< /tabs >}}

@@ -1,76 +1,165 @@
-﻿---
-title: Mettre à jour une forme sur une feuille de calcul Excel
-second_title: Documen
-linktitle: Mise à jour
-type: docs
-url: /fr/shapes/update/
-aliases: [/update-a-shape-inside-the-worksheet/]
-keywords: Update a shape on an Excel workshee
-description: Aspose.Cells Cloud REST API prend en charge la mise à jour d'une forme dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 31
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Mettre à jour une forme sur une feuille de calcul Excel
 ---
-Ce REST API indique de mettre à jour une forme sur une feuille de calcul Excel.
+title: "Mettre à jour une forme sur une feuille de calcul Excel"
+second_title: "Document"
+linktitle: "Mettre à jour"
+type: docs
+url: /shapes/update/
+aliases: [/update-a-shape-inside-the-worksheet/]
+keywords: "mettre à jour une forme via l’API Excel, Aspose.Cells Cloud, mise à jour de forme Excel, API REST, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
+description: "Découvrez comment mettre à jour une forme sur une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’endpoint HTTPS, les détails d’authentification, le schéma DTO, un guide pas à pas, un exemple cURL et des extraits de code SDK pour plusieurs langages."
+ArticleTitle: "Mettre à jour une forme sur une feuille de calcul Excel – API Aspose.Cells Cloud"
+weight: 31
+---
 
-## RSET API
+Cet API REST permet de mettre à jour une forme sur une feuille de calcul Excel.
+
+## Sécurité et authentification
+
+Les API REST Aspose.Cells Cloud sont sécurisées et nécessitent une [authentification basée sur un jeton JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
 
-Les paramètres de la requête sont :
+### Paramètres de la requête
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| nom du document.|
-| nom de la feuille| chaîne| chemin| nom de la feuille de calcul.|
-| indice de forme| entier| chemin| index des formes dans les formes de la feuille de calcul.|
-| dto|| corps||
-| dossier| chaîne| requête| Dossier du document.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type    | Emplacement | Description                                                                              |
+| ---------------- | ------- | ----------- | ---------------------------------------------------------------------------------------- |
+| **name**         | string  | path        | Le nom du fichier classeur.                                                              |
+| **sheetName**    | string  | path        | Le nom de la feuille de calcul contenant la forme.                                      |
+| **shapeindex**   | integer | path        | L’index de la forme (à partir de 0) au sein de la feuille de calcul.                    |
+| **dto**          | object  | body        | L’objet de transfert de données (DTO) contenant les propriétés mises à jour (voir *Schéma DTO* ci-dessous). |
+| **folder**       | string  | query       | Le dossier dans lequel le classeur est stocké.                                          |
+| **storageName**  | string  | query       | Le nom du stockage Aspose Cloud.                                                        |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetShape) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Schéma DTO
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+L’objet `dto` contient les propriétés modifiables. Tous les champs sont facultatifs sauf mention contraire.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Champ                | Type    | Obligatoire | Description                                                                 |
+| -------------------- | ------- | ----------- | --------------------------------------------------------------------------- |
+| **Name**             | string  | Non         | Nouveau nom de la forme.                                                    |
+| **UpperLeftRow**     | integer | Non         | Indice de ligne du coin supérieur gauche de la forme.                       |
+| **UpperLeftColumn**  | integer | Non         | Indice de colonne du coin supérieur gauche de la forme.                     |
+| **Width**            | integer | Non         | Largeur de la forme (en points).                                            |
+| **Height**           | integer | Non         | Hauteur de la forme (en points).                                            |
+| **RotationAngle**    | integer | Non         | Angle de rotation en degrés.                                                |
+| **IsHidden**         | boolean | Non         | `true` pour masquer la forme.                                               |
+| **IsLocked**         | boolean | Non         | `true` pour verrouiller la forme.                                           |
+| **Font**             | object  | Non         | Paramètres de police (voir la spécification OpenAPI pour les sous-propriétés). |
+| **...**              | …       | Non         | Autres propriétés telles que `HtmlText`, `AlternativeText`, `ZOrderPosition`, etc. |
 
-{{< tab tabNum="1" >}}
+> Pour une liste complète, consultez la spécification OpenAPI officielle : <https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetShape>.
 
-```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes/0?folder=Temp" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d "{ \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" }, \"Name\": \"string\", \"MsoDrawingType\": \"string\", \"AutoShapeType\": \"string\", \"Placement\": \"string\", \"UpperLeftRow\": 0, \"Top\": 0, \"UpperLeftColumn\": 0, \"Left\": 0, \"LowerRightRow\": 0, \"Bottom\": 0, \"LowerRightColumn\": 10, \"Right\": 0, \"Width\": 0, \"Height\": 0, \"X\": 0, \"Y\": 0, \"RotationAngle\": 0, \"HtmlText\": \"string\", \"Text\": \"string\", \"AlternativeText\": \"string\", \"TextHorizontalAlignment\": \"string\", \"TextHorizontalOverflow\": \"string\", \"TextOrientationType\": \"string\", \"TextVerticalAlignment\": \"string\", \"TextVerticalOverflow\": \"string\", \"IsGroup\": true, \"IsHidden\": true, \"IsLockAspectRatio\": true, \"IsLocked\": true, \"IsPrintable\": true, \"IsTextWrapped\": true, \"IsWordArt\": true, \"LinkedCell\": \"string\", \"ZOrderPosition\": 0, \"Font\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"DoubleSize\": 0, \"IsBold\": true, \"IsItalic\": true, \"IsStrikeout\": true, \"IsSubscript\": true, \"IsSuperscript\": true, \"Name\": \"string\", \"Size\": 0, \"Underline\": \"string\" }, \"Hyperlink\": \"string\"}"
- 
-```
+### En-têtes de la requête
 
-{{< /tab >}}
+- `Content-Type: application/json`
+- `Accept: application/json`
+- `Authorization: Bearer <accessToken>` _(le jeton JWT obtenu lors de l’authentification)_
 
-{{< tab tabNum="2" >}}
+### Corps de la requête (exemple)
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Name": "MyShape",
+  "UpperLeftRow": 2,
+  "UpperLeftColumn": 3,
+  "Width": 150,
+  "Height": 80,
+  "RotationAngle": 0,
+  "IsHidden": false,
+  "IsLocked": false,
+  "Font": {
+    "Name": "Calibri",
+    "Size": 12,
+    "IsBold": true,
+    "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }
+  }
 }
- 
 ```
 
-{{< /tab >}}
+## Exemple avec cURL (outil en ligne de commande)
 
-{{< /tabs >}}
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes/0?folder=Temp" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <accessToken>" \
+  -d '{
+        "Name": "UpdatedShape",
+        "UpperLeftRow": 1,
+        "UpperLeftColumn": 1,
+        "Width": 120,
+        "Height": 60,
+        "IsHidden": false,
+        "IsLocked": false
+      }'
+```
+
+### Réponse
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+**Gestion des erreurs** – L’API peut renvoyer les codes HTTP suivants :
+
+| Code | Signification           | Cause typique                                                   |
+| ---- | ----------------------- | --------------------------------------------------------------- |
+| 400  | Bad Request (Requête incorrecte) | Payload JSON invalide ou champs obligatoires manquants.        |
+| 401  | Unauthorized (Non autorisé)      | Jeton JWT manquant ou invalide.                                 |
+| 404  | Not Found (Introuvable)          | Le classeur, la feuille de calcul ou l’index de forme n’existe pas. |
+| 500  | Internal Server Error (Erreur interne) | Problème inattendu côté serveur.                              |
+
+**Exemples de réponses d’erreur**
+
+*400 – Bad Request*
+
+```json
+{
+  "Code": 400,
+  "Message": "Invalid request payload. 'Name' field exceeds maximum length."
+}
+```
+
+*401 – Unauthorized*
+
+```json
+{
+  "Code": 401,
+  "Message": "Authentication failed. Invalid or expired JWT token."
+}
+```
+
+*404 – Not Found*
+
+```json
+{
+  "Code": 404,
+  "Message": "The specified workbook, worksheet, or shape index was not found."
+}
+```
+
+*500 – Internal Server Error*
+
+```json
+{
+  "Code": 500,
+  "Message": "An unexpected error occurred on the server."
+}
+```
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est la méthode recommandée pour accélérer le développement. Un SDK gère les détails de bas niveau, vous permettant de vous concentrer sur vos tâches de projet. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants illustrent l’appel des services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +212,4 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+---

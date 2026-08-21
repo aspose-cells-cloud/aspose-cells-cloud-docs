@@ -1,76 +1,143 @@
-﻿---
-title: Verschieben Sie einen benannten Bereich mit einem Arbeitsblatt Excel
-second_title: Documen
-linktitle: Bewegung
-type: docs
-url: /de/ranges/move/
-aliases: [/move-a-named-ranged-with-a-excel-worksheet/]
-keywords: Move a named ranged with an Excel workshee
-description: Aspose.Cells Cloud REST API unterstützt das Verschieben eines benannten Bereichs mit einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Verschieben eines benannten Bereichs mit einem Excel-Arbeitsblatt
 ---
-Dieser REST API gibt an, dass der aktuelle Bereich in den Zielbereich auf einem Excel-Arbeitsblatt verschoben werden soll.
+title: "Verschieben eines benannten Bereichs mit einer Excel-Arbeitsmappe"
+second_title: "Dokument"
+linktitle: "Verschieben"
+type: docs
+url: /ranges/move/
+aliases: [/move-a-named-range-with-an-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, benannter Bereich verschieben, Excel-Arbeitsmappe, REST-API, Bereich verschieben, SDK-Beispiele"
+description: "Erfahren Sie, wie Sie einen benannten Bereich innerhalb einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API v3.0 verschieben – inklusive Endpunkt-Details, Authentifizierung, Beispielen und SDK-Codebeispielen."
+weight: 20
+ArticleTitle: "Verschieben eines benannten Bereichs mit einer Excel-Arbeitsmappe über die Aspose.Cells Cloud API"
+---
 
-## RSET API
+Das Verschieben eines benannten Bereichs ist eine häufige Aufgabe, wenn Sie Daten programmgesteuert neu organisieren müssen. Dieser Abschnitt erläutert, wie Sie einen definierten Bereich auf derselben Arbeitsmappe an eine neue Position verschieben, mithilfe der Aspose.Cells Cloud REST API.
+
+Diese REST-API verschiebt einen angegebenen Bereich an eine Zielposition innerhalb einer Excel-Arbeitsmappe.
+
+## REST-API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/moveto
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/moveto
 ```
 
-Die Anforderungsparameter sind:
+### Authentifizierung
+Die API erfordert ein **Bearer JWT-Token**, das über den OAuth-Flow von Aspose Cloud abgerufen wird. Fügen Sie das Token in den `Authorization`-Header ein:
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Arbeitsmappenname|
-| Blattname| Schnur| Weg| Arbeitsblattname|
-| Zielzeile| ganze Zahl| Abfrage| Die Startzeile des Zielbereichs.|
-| Zielspalte| ganze Zahl| Abfrage| Die Startspalte des Zielbereichs.|
-| Reichweite|| Körper| Bereich im Arbeitsblatt|
-| Ordner| Schnur| Abfrage| Arbeitsmappenordner.|
-| Speichername| Schnur| Abfrage| Speichername.|
+```
+Authorization: Bearer <jwt token>
+```
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMoveTo) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+Das Token muss den Scope **Cells** besitzen.
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+### Voraussetzungen
+- Die Arbeitsmappe muss im Aspose Cloud-Speicher gespeichert sein.  
+- Geben Sie den Speichernamen (`storageName`) und den Ordnerpfad (`folder`) an, wenn sich die Datei nicht im Root-Verzeichnis befindet.  
+- Verwenden Sie die neueste Version des Aspose.Cells Cloud SDK, die API-Version **v3.0** unterstützt.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **Sicherheit und Authentifizierung**
+
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
+
+### Anfrageparameter
+
+| Name           | Typ    | Position | Beschreibung |
+|----------------|--------|----------|-------------|
+| **name**       | string | path     | Name der Arbeitsmappe |
+| **sheetName**  | string | path     | Name des Arbeitsblatts |
+| **destRow**    | integer| query    | Startzeilenindex des Zielbereichs (0-basiert) |
+| **destColumn**| integer| query    | Startspaltenindex des Zielbereichs (0-basiert) |
+| **range**      | object | body     | Definition des zu verschiebenden Quellbereichs |
+| **folder**     | string | query    | Ordnerpfad, in dem die Arbeitsmappe gespeichert ist |
+| **storageName**| string | query    | Name des Aspose Cloud-Speichers |
+
+### Anforderungstext
+
+| Feld           | Typ    | Erforderlich | Beschreibung |
+|----------------|--------|--------------|-------------|
+| **ColumnCount**| integer| Nein | Anzahl der Spalten im Quellbereich |
+| **ColumnWidth**| integer| Nein | Breite jeder Spalte (in Punkten) |
+| **FirstColumn**| integer| Nein | Nullbasierter Index der ersten Spalte des Quellbereichs |
+| **FirstRow**   | integer| Nein | Nullbasierter Index der ersten Zeile des Quellbereichs |
+| **Name**       | string | Nein | Name des Bereichs (falls es sich um einen benannten Bereich handelt) |
+| **RefersTo**   | string | Nein | A1-Referenzstil, der den Bereich definiert |
+| **RowCount**   | integer| Nein | Anzahl der Zeilen im Quellbereich |
+| **RowHeight**  | integer| Nein | Höhe jeder Zeile (in Punkten) |
+| **Worksheet**  | string | Nein | Arbeitsblatt, das den Quellbereich enthält |
+
+### Arbeitsablauf
+
+1. **Hochladen** der Arbeitsmappe in den Aspose Cloud-Speicher (sofern noch nicht vorhanden).  
+2. **Erstellen** eines JWT-Tokens über den OAuth-Endpunkt.  
+3. **Erstellen** des JSON-Payloads, der den Quellbereich beschreibt.  
+4. **Aufrufen** des `moveto`-Endpunkts mit den erforderlichen Pfad- und Abfrageparametern sowie dem JSON-Body.  
+5. **Überprüfen** der Antwort; bei erfolgreicher Ausführung wird ein Statuscode `200 OK` zurückgegeben.
+
+### Beispielanfrage / -antwort
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anfrage" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/moveto?destRow=20&destColumn=20" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-d '{ 
+  "ColumnCount": 7,
+  "ColumnWidth": 19,
+  "FirstColumn": 0,
+  "FirstRow": 9,
+  "Name": "MyRange",
+  "RefersTo": "A10:G10",
+  "RowCount": 1,
+  "RowHeight": 15,
+  "Worksheet": "Sheet1"
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Im Fehlerfall enthält die Antwort ein optionales Feld `ErrorMessage`, das zusätzliche Details zum Fehler liefert.
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                  | Beschreibung |
+|------|----------------------------|--------------------------------------------------|
+| 200  | OK                         | Filter erfolgreich angewendet; Antwort enthält Details zur Operation. |
+| 400  | Bad Request                | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized               | Ungültiges oder fehlendes JWT-Token. |
+| 413  | Payload Too Large          | Die hochgeladene Datei überschreitet die Größe. |
+| 500  | Internal Server Error      | Unerwarteter Serverfehler. |
+
+**Antwortschema**
+
+| Feld | Typ | Beschreibung |
+|------|-----|-------------|
+| **Code** | integer | HTTP-ähnlicher Statuscode, der von der API zurückgegeben wird (z. B. 200) |
+| **Status** | string | Textuelle Beschreibung des Ergebnisses (z. B. "OK") |
+| **ErrorMessage** | string (optional) | Menschlich lesbare Fehlerdetails im Fehlerfall |
+
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDK ist der beste Weg, die Entwicklungsgeschwindigkeit zu erhöhen. Ein SDK übernimmt die Low-Level-Details, sodass Sie sich auf Ihre Projektziele konzentrieren können. Besuchen Sie das <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub-Repository</a> für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste mit verschiedenen SDKs durchgeführt werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

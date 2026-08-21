@@ -1,79 +1,113 @@
-﻿---
-title: Fügen Sie ein Listenobjekt in ein Excel-Arbeitsblatt ein
-second_title: Documen
-linktitle: Anzeige
-type: docs
-url: /de/list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
-keywords: Add a list object(table) into an Excel worksheet
-description: Aspose.Cells Cloud REST API unterstützt das Hinzufügen eines Listenobjekts (Tabelle) zu einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Hinzufügen eines Listenobjekts in einem Excel-Arbeitsblatt
 ---
-Dieser REST API weist auf `add a list object(table)` in einem Excel-Arbeitsblatt hin.
+title: "Ein Listenobjekt (Tabelle) zu einem Excel-Arbeitsblatt hinzufügen"
+second_title: "Dokument"
+linktitle: "Hinzufügen"
+type: docs
+url: /list-objects/add/
+aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+keywords: "Aspose.Cells Cloud, Excel-API, Listenobjekt, Tabelle, REST-API, Arbeitsblatt"
+description: "Erfahren Sie, wie Sie mit der Aspose.Cells Cloud REST-API ein Listenobjekt (Excel-Tabelle) zu einem Arbeitsblatt hinzufügen. Enthält Endpunkt, Parameter, Authentifizierungsschritte, cURL-Beispiel und SDK-Codebeispiele."
+weight: 10
+ArticleTitle: "Ein Listenobjekt (Tabelle) zu einem Excel-Arbeitsblatt hinzufügen – Aspose.Cells Cloud-Dokumentation"
+---
 
-## RSET API
+Diese REST-API fügt ein **Listenobjekt (Tabelle)** zu einem Excel-Arbeitsblatt hinzu.
+
+Bevor Sie diesen Endpunkt verwenden, stellen Sie sicher, dass Sie über ein gültiges JWT-Token verfügen, die Arbeitsmappe in einer unterstützten Cloud-Speicherlösung gespeichert ist und das Arbeitsblatt vorhanden ist.
+
+## REST-API
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 ```
 
-Die Anforderungsparameter sind:
+### Anforderungsparameter
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Dokumentname.|
-| Blattname| Schnur| Weg| Der Arbeitsblattname.|
-| startRow| ganze Zahl| Abfrage| Die Startzeile des Listenbereichs.|
-| Startspalte| ganze Zahl| Abfrage| Die Startzeile des Listenbereichs.|
-| Zeilenende| ganze Zahl| Abfrage| Die Startzeile des Listenbereichs.|
-| Spaltenende| ganze Zahl| Abfrage| Die Startzeile des Listenbereichs.|
-| hatHeader| Boolescher Wert| Abfrage| WAHR|
-| Listenobjekt|| Körper| List-Objekt|
-| Ordner| Schnur| Abfrage| Ordner des Dokuments.|
-| Speichername| Schnur| Abfrage| Speichername.|
+| Parametername   | Typ     | Ort    | Beschreibung                                                              |
+| --------------- | ------- | ------ | ------------------------------------------------------------------------- |
+| **name**        | string  | path   | Dateiname der Arbeitsmappe.                                               |
+| **sheetName**   | string  | path   | Name des Arbeitsblatts.                                                   |
+| **startRow**    | integer | query  | Nullbasierter Index der ersten Zeile des Tabellenbereichs.               |
+| **startColumn** | integer | query  | Nullbasierter Index der ersten Spalte des Tabellenbereichs.              |
+| **endRow**      | integer | query  | Nullbasierter Index der letzten Zeile des Tabellenbereichs.              |
+| **endColumn**   | integer | query  | Nullbasierter Index der letzten Spalte des Tabellenbereichs.             |
+| **hasHeaders**  | boolean | query  | `true`, wenn die erste Zeile Spaltenüberschriften enthält, andernfalls `false`. |
+| **listObject**  | object  | body   | Definition des Listenobjekts (siehe **Schema des Anforderungstextes**).  |
+| **folder**      | string  | query  | Ordner, der die Arbeitsmappe enthält.                                     |
+| **storageName** | string  | query  | Name des Speichers.                                                       |
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+### Schema des Anforderungstextes
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+Das **listObject**-Objekt beschreibt die zu erstellende Tabelle. Es werden nur die gängigsten Eigenschaften angezeigt; die vollständige Liste finden Sie in der OpenAPI-Spezifikation.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "displayName": "MeineTabelle",
+  "showTotals": false,
+  "style": "TableStyleMedium2"
 }
- 
 ```
 
-{{< /tab >}}
+### Beispielanforderung (cURL)
 
-{{< /tabs >}}
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "displayName": "MeineTabelle",
+        "showTotals": false,
+        "style": "TableStyleMedium2"
+      }'
+```
+
+### Beispielantwort
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+### Fehlercodes
+
+| HTTP-Status | Grund                 | Beschreibung                                        |
+| ----------- | --------------------- | --------------------------------------------------- |
+| **400**     | Bad Request           | Ungültige Bereichsparameter oder fehlerhafter JSON-Text. |
+| **401**     | Unauthorized          | Fehlendes oder abgelaufenes JWT-Token.             |
+| **404**     | Not Found             | Angegebene Arbeitsmappe oder Arbeitsblatt existiert nicht. |
+| **500**     | Internal Server Error | Unerwarteter Serverfehler.                         |
+
+**Beispiel für eine 400-Antwort**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Ungültige Bereichsparameter."
+}
+```
+
+**Beispiel für eine 401-Antwort**
+
+```json
+{
+  "Code": 401,
+  "Status": "Unauthorized",
+  "Message": "Authentifizierungstoken fehlt oder ist abgelaufen."
+}
+```
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) enthält die vollständige Spezifikation für diesen Vorgang.
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDK ist die beste Möglichkeit, die Entwicklungsgeschwindigkeit zu erhöhen. Ein SDK übernimmt die Details auf unterster Ebene und ermöglicht es Ihnen, sich auf Ihre Projektanforderungen zu konzentrieren. Besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs anzuzeigen.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste mithilfe verschiedener SDKs durchgeführt werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -126,3 +160,4 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+---

@@ -1,93 +1,215 @@
-﻿---
-title: Ersetzen Sie Text in einem Excel-Arbeitsblatt
-second_title: Documen
-linktitle: Im Arbeitsblatt ersetzen
-type: docs
-url: /de/replace-text-in-a-worksheet/
-url: /de/worksheets/replace-text/
-aliases: [/replace-text-in-a-workbook/]
-keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
-description: Aspose.Cells Cloud REST API unterstützt das Suchen von Text aus Excel Arbeitsblättern. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 70
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Text in einem Excel-Arbeitsblatt ersetzen
 ---
-Dieser REST API zeigt `replace` Text in einem Excel Arbeitsblatt an.
+title: "Text in einem Excel-Arbeitsblatt ersetzen – Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Im Arbeitsblatt ersetzen"
+type: docs
+url: /worksheets/replace-text/
+aliases: [/replace-text-in-a-workbook/]
+keywords: "Aspose.Cells, Text ersetzen, Excel, REST-API, Tabellenkalkulation, Arbeitsblatt"
+description: "Erfahren Sie, wie Sie Text in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud API (v3.0) ersetzen. Enthält Voraussetzungen, Authentifizierung, Anforderungssyntax, cURL-Beispiel, SDK-Codebeispiele, Antwortdetails und Fehlerbehandlung."
+ArticleTitle: "Text in einem Excel-Arbeitsblatt ersetzen – Aspose.Cells Cloud API"
+weight: 70
+---
 
-## RSET API
+Diese REST-API ersetzt Text in einem Excel-Arbeitsblatt mithilfe der **Aspose.Cells Textersetzung-API**.
+
+## Sicherheit und Authentifizierung
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine [JWT-Token-basierte Authentifizierung](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText
 ```
 
-Die Anforderungsparameter sind:
+### Anforderungsparameter
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Dokumentname.|
-| Blattname| Schnur| Weg| Arbeitsblattname.|
-| alterWert| Schnur| Abfrage|Der alte Text, der ersetzt werden soll.|
-| neuerWert| Schnur| Abfrage| Der neue Text, durch den ersetzt werden soll.|
-| Ordner| Schnur| Abfrage| Ordner des Dokuments.|
-| Speichername| Schnur| Abfrage| Speichername.|
+| Parametername   | Typ    | Ort     | Beschreibung                            |
+| ---------------- | ------ | ------- | --------------------------------------- |
+| **name**         | string | path    | Der Name der Excel-Arbeitsmappe.        |
+| **sheetName**    | string | path    | Der Name des Arbeitsblatts.             |
+| **oldValue**     | string | query   | Der zu ersetzende Text.                 |
+| **newValue**     | string | query   | Der Ersatztext.                         |
+| **folder**       | string | query   | Der Ordner, der die Datei enthält.      |
+| **storageName**  | string | query   | Der Name des Speicherdienstes.          |
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorsheetTextReplace) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+### **Antwort**
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+```json
+{
+    "Status":"OK",
+    "Code":200,
+      "Workbook": {
+    "FileName": "test.xlsx",
+    "Links": [
+      {
+        "Href": "/test.xlsx",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Als CSV herunterladen",
+        "Type": "text/csv"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Als HTML herunterladen",
+        "Type": "text/html"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Als ODS herunterladen",
+        "Type": "application/vnd.oasis.opendocument.spreadsheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Als PDF herunterladen",
+        "Type": "application/pdf"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Als tabellengebundenes Textformat herunterladen",
+        "Type": "text/plain"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Als TIFF herunterladen",
+        "Type": "image/tiff"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Als Microsoft Excel 2003 herunterladen",
+        "Type": "application/vnd.ms-excel"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Als Microsoft Excel 2007 herunterladen",
+        "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Als XPS herunterladen",
+        "Type": "application/vnd.ms-xpsdocument"
+      }
+    ],
+    "Worksheets": {
+      "link": {
+        "Href": "/worksheets",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DefaultStyle": {
+      "link": {
+        "Href": "/defaultstyle",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DocumentProperties": {
+      "link": {
+        "Href": "/documentproperties",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Names": {
+      "link": {
+        "Href": "/names",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Settings": {
+      "link": {
+        "Href": "/settings",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "IsWriteProtected": "False",
+    "IsProtected": "False",
+    "IsEncryption": "false",
+    "Password": null
+  }
+}
+```
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                   | Beschreibung                                                     |
+|------|-----------------------------|------------------------------------------------------------------|
+| 200  | OK                          | Filter erfolgreich angewendet; Antwort enthält Details zum Vorgang. |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized                | Ungültiges oder fehlendes JWT-Token.                            |
+| 413  | Payload Too Large           | Die hochgeladene Datei überschreitet die Größenbeschränkung.   |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler.                                       |
+
+## So verwenden Sie die PostWorksheetTextReplace-API mit SDKs
+
+### PostWorksheetTextReplace-API-Spezifikation
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextReplace) definiert diese öffentlich zugängliche Schnittstelle.
+
+Sie können das cURL-Befehlszeilentool verwenden, um den Dienst aufzurufen:
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/replaceText?oldValue=b&newValue=b11" -H "accept: application/json"
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/replaceText?oldValue=b&newValue=b11" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Matches": 0,
-
   "Worksheet": {
-
     "link": {
-
       "Href": "/test.xlsx/worksheets/Sheet1",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+### Verwendung der Aspose.Cells Cloud SDKs
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK übernimmt Details auf niedriger Ebene, sodass Sie sich auf Ihre Projekt Aufgaben konzentrieren können. Weitere Informationen finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}

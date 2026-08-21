@@ -1,46 +1,93 @@
-﻿---
-title: Ta bort fil - Excel AP
-second_title: Documen
-linktitle: Ta bort fil
+---
+---
+title: "Aspose.Cells Cloud – Delete File API"
+second_title: "Dokument"
+ArticleTitle: "Aspose.Cells Cloud – Delete File API"
+linktitle: "Ta bort fil"
 type: docs
 url: /sv/delete-file/
-keywords: Delete file, Excel API, REST API, Office Cloud, Spreadsheet management, File deletion, Cloud storage, API usag
-description: Lär dig hur du tar bort filer i Excel med hjälp av Aspose.Cells API. Den här guiden ger detaljerad information om slutpunkten deleteFile API, förfrågningsparametrar och svarsstruktur.
+keywords: "Aspose Cells, Delete File API, Excel molnlagring, REST API, filhantering"
+description: "Ta bort en Excel-fil från Aspose.Cells Cloud-lagring med REST-baserade Delete File API. Inkluderar endpoint, parametrar, autentisering och exempelkod."
 weight: 100
-kwords: Ta bort fil, Excel API, REST API, Office Moln, Kalkylbladshantering, Filradering, Molnlagring, API usag
 ---
+
+**deleteFile**-API:et tar bort den angivna filen från molnlagringen och hjälper dig att effektivt hantera resurser och data.
+
 ## **Excel API: Ta bort fil**
 
+### Web API
+
+```http
+DELETE https://api.aspose.cloud/v4.0/cells/storage/file/{path}
 ```
-DELETE http://api.aspose.cloud/v4.0/cells/storage/file/{path}
+
+### **Säkerhet och autentisering**
+
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
-### **Funktionsbeskrivning**
+### Begärparametrar
 
- De**ta bort fil** API låter användare ta bort specifika filer från molnlagring, vilket säkerställer effektiv hantering av resurser och data.
+| Parameternamn  | Typ    | Plats  | Beskrivning                                                                                      |
+| :------------- | :----- | :----- | :----------------------------------------------------------------------------------------------- |
+| `path`         | string | Sökväg | Den URL-kodade sökvägen till den fil som ska tas bort.                                          |
+| `storageName`  | string | Fråga  | Namnet på lagringen där filen finns. Utelämna om standardlagring används.                       |
+| `versionId`    | string | Fråga  | Identifikator för en specifik filversion som ska tas bort. Om utelämnas tas den senaste versionen bort. |
 
-###  Begäranparametrarna för**ta bort fil** API är
+### Svarsbeskrivning
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-text| Beskrivning|
-|:- |:- |:- |:- |
-|väg|Sträng|Väg|Sökvägen till filen som behöver raderas.|
-|lagringsnamn|Sträng|Fråga|Namnet på lagringsplatsen där filen finns. Valfritt om standardlagringsplats används.|
-|versions-ID|Sträng|Fråga|Versions-ID för filen som ska raderas, om tillämpligt.|
-
-### **Svarsbeskrivning**
+En lyckad begäran returnerar **HTTP 200** med en tom svarsbody. Inget JSON-innehåll returneras.
 
 ```json
-{
-Void
-}
+{}
 ```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse             | Beskrivning                                                      |
+| ---- | --------------------- | ---------------------------------------------------------------- |
+| 200  | OK                    | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400  | Felaktig begäran      | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401  | Autentisering krävs   | Ogiltig eller saknad JWT-token.                                  |
+| 413  | För stor nyttolast    | Den uppladdade filen överskrider storleksgränsen.                |
+| 500  | Internt serverfel     | Oväntat serverfel.                                               |
 
 ## OpenAPI-specifikation
 
- De[OpenAPI-specifikation](https://reference.aspose.cloud/cells/#/FileController/DeleteFile) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://reference.aspose.cloud/cells/#/FileController/DeleteFile) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
-## Excel API SDK
+Du kan använda verktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur du gör anrop till Cloud API med cURL.
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK hanterar detaljer på låg nivå, vilket gör att du kan fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X DELETE "https://api.aspose.cloud/v4.0/cells/storage/file/Example.xlsx?storageName=MyStorage" \
+     -H "Authorization: Bearer DIN_ACCESS_TOKEN" \
+     -H "Accept: application/json"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+### Använd Aspose.Cells Cloud SDK:n
+
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på lågnivå, så att du kan fokusera på dina projekttal. Kontrollera [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:n.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells webbtjänster med olika SDK:er.
+
+---

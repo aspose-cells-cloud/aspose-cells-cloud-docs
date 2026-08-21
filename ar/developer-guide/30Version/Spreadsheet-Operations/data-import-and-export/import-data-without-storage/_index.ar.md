@@ -1,88 +1,107 @@
-﻿---
-title: استيراد البيانات دون استخدام التخزين
-second_title: Documen
-linktitle: استيراد البيانات بدون تخزين
-type: docs
-url: /ar/import/without-using-storage/ 
-aliases: [/import-data-in-excel-worksheet-without-using-storage/]
-keywords: REST API,  spreadsheets, excel, Import
-description: Cells.Cloud API لاستيراد الملفات Excel
-weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، استيراد البيانات دون استخدام التخزين
 ---
-استيراد بيانات Excel عملية معقدة. تساهم عوامل عديدة في تعقيدها، لذا يجب أخذها في الاعتبار أثناء عملية التصدير. تُعد إمكانية استيراد مختلف التنسيقات وأنواع البيانات إلى الملف بجودة احترافية ودقيقة من أهم ميزات Aspose.Cells Cloud.
+title: "استيراد البيانات دون استخدام التخزين – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+second_title: "المستند"
+linktitle: "استيراد البيانات دون استخدام التخزين"
+type: docs
+url: /import/without-using-storage/
+aliases: [/import-data-in-excel-worksheet-without-using-storage/]
+keywords: "Aspose.Cells، واجهة برمجة تطبيقات السحابة، استيراد البيانات دون استخدام التخزين، واجهة برمجة تطبيقات استيراد Excel، استيراد REST"
+description: "تعلم كيفية استيراد البيانات دون استخدام التخزين في ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. يتضمن تنسيق الطلب، المعلّمات، مثال cURL، كود SDK، ومعالجة الأخطاء."
+weight: 10
+ArticleTitle: "استيراد البيانات دون استخدام التخزين – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+---
 
-يشير هذا REST API إلى `import data` في ملف Excel.
+يمكن أن يكون استيراد بيانات Excel معقدًا نظرًا لتأثير العديد من العوامل على النتيجة. ويجب أخذ جميع هذه العوامل بعين الاعتبار أثناء عملية **الاستيراد**. وتُبسّط Aspose.Cells Cloud عملية استيراد تنسيقات وأنواع بيانات متنوعة إلى ملف Excel بجودة احترافية.
 
-## RSET API
+تقوم هذه الواجهة البرمجية REST باستيراد **البيانات** إلى ملف Excel.
 
-```bash
+## واجهة PostImportData API
 
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-
 ```
 
-**معلمات الطلب هي:**
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| ملف| ملف| نموذج البيانات| الملف للتحميل|
-| خيار الاستيراد| خيارات الاستيراد| نص HTTP| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+تعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتحتاج إلى <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-**معلمات خيارات استيراد البيانات** موصوفة في[رابط المرجع](/cells/ar/import/#import-data-option-parameter).
+### **مُعلّمات الطلب:**
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+| اسم المعلّمة | النوع          | الموقع  | الوصف                                                                                                                                     |
+| ------------ | ------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| file         | ملف           | formData | ملف Excel المرفوع.                                                                                                                         |
+| ImportOption | ImportOption  | جسم JSON | كائن JSON يُعرّف البيانات المراد استيرادها، ونوعها (مثل `IntArray` أو `DoubleArray` أو `StringArray`)، وموقعها داخل ورقة العمل. |
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+تُوصَف مُعلّمات **ImportOption** في **مرجع خيار استيراد البيانات** [/cells/import/#import-data-option-parameter](/cells/import/#import-data-option-parameter).
+
+**المتطلبات المسبقة:**  
+يجب إنشاء رمز JWT صالح مسبقًا، ولا يجوز أن يتجاوز حجم الملف الحد الأقصى للخدمة (عادةً 100 ميغابايت). وتشمل تنسيقات الملفات المدعومة XLS وXLSX وCSV وODS. وتأكد من تثبيت SDK المناسب إذا كنت تفضّل الوصول البرمجي.
+
+### الاستجابة
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                      | الوصف                                                                 |
+|-------|-----------------------------|------------------------------------------------------------------------|
+| 200   | ناجح (OK)                   | تم تطبيق العامل بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.             |
+| 400   | طلب غير صالح (Bad Request)  | مُعلّمات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم).                 |
+| 401   | غير مُصادَق (Unauthorized)   | رمز JWT غير صالح أو مفقود.                                             |
+| 413   | حمل البيانات كبير جدًا (Payload Too Large) | تجاوز حجم الملف المرفوع الحد المسموح به.                             |
+| 500   | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم.                                              |
+
+**ملاحظات:**  
+عند إرسال الطلب، يتم تعيين رأس `Content-Type: multipart/form-data` تلقائيًا بواسطة العلامة `-F`. وللحملات الكبيرة، فكّر في ضغط البيانات قبل الاستيراد وتطبيق منطق إعادة المحاولة للأخطاء المؤقتة.
+
+## كيفية استخدام واجهة PostImportData API باستخدام حزم تطوير البرامج (SDKs)
+
+###仕様 واجهة PostImportData API
+
+يُعرّف [仕様 OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) واجهة برمجة تطبيقات متاحة علنًا ويسمح لك بإجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء المكالمات إلى واجهة برمجة تطبيقات السحابة باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/import" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' \
--F 'ImportOption={\"Data\":[1,2,4],\"DestinationWorksheet\":\"Sheet1\",\"FirstRow\":1,\"FirstColumn\":2,\"IsVertical\":true,\"IsInsert\":true,\"importDataType\":\"IntArray\"}'
+curl -v "https://api.aspose.cloud/v3.0/cells/import" \
+  -X POST \
+  -H "Authorization: Bearer <jwt_token>" \
+  -F "file=@file.xlsx" \
+  -F "ImportOption={\"Data\":[1,2,4],\"DestinationWorksheet\":\"Sheet1\",\"FirstRow\":1,\"FirstColumn\":2,\"IsVertical\":true,\"IsInsert\":true,\"ImportDataType\":\"IntArray\"}"
 ```
+
+*تقوم العلامة `-F` بتعيين `Content-Type: multipart/form-data` تلقائيًا.*  
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Status":"OK",
+  "Code":200
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+### استخدام حزم تطوير البرامج (SDKs) الخاصة بـ Aspose.Cells Cloud
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. فتتولّى SDK تفاصيل المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم SDK الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر الأمثلة التالية كيفية استدعاء خدمات الويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -135,3 +154,4 @@ curl -v "http://api.aspose.cloud/v3.0/cells/import" \
 {{< /tab >}}
 
 {{< /tabs >}}
+---

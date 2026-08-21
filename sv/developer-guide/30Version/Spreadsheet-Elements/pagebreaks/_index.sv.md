@@ -1,20 +1,24 @@
-﻿---
-title: Arbetar med Excel sidbrytning
-second_title: Documen
-linktitle: Sidbrytning
+---
+title: "Arbeta med sidbrytningar i Excel"
+second_title: "Dokument"
+linktype: "sidbrytningar"
 type: docs
 url: /sv/working-with-pagebreaks/
-aliases: [/working-with-pagebreaks/]
-keywords: Get, add, delete, and update page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder hämtning, tillägg, borttagning och uppdatering av sidbrytningar i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+aliases: [/sv/working-with-pagebreaks/]
+keywords: "Excel, sidbrytning, Aspose.Cells Cloud, REST API, kalkylblad, lägg till, ta bort, hämta, uppdatera, sidbrytningar"
+description: "Lär dig hur du lägger till, hämtar och tar bort sidbrytningar i Excel-kalkylblad med Aspose.Cells Cloud REST API. Innehåller exempel för vertikala och horisontella brytningar."
 weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Sidbrytningar
+ArticleTitle: "Arbeta med sidbrytningar i Excel – Aspose.Cells Cloud-dokumentation"
 ---
-## Hur man arbetar med sidbrytningar i ett Excel-arbetsblad
 
-- [Hur man lägger till en vertikal sidbrytning i ett Excel-arbetsblad.](/cells/sv/page-breaks/add-vertical-page-break/)
-- [Hur man lägger till en horisontell sidbrytning i ett Excel-arbetsblad.](/cells/sv/page-breaks/add-horizontal-page-break/)
-- [Hur man tar bort en vertikal sidbrytning i ett Excel-arbetsblad.](/cells/sv/page-breaks/delete-vertical-page-break/)
-- [Hur man tar bort en horisontell sidbrytning i ett Excel-arbetsblad.](/cells/sv/page-breaks/delete-vertical-page-break/)
-- [Hur man får vertikala sidbrytningar i ett Excel-arbetsblad.](/cells/sv/page-breaks/get-vertical-page-breaks/)
-- [Hur man får horisontella sidbrytningar i ett Excel-arbetsblad.](/cells/sv/page-breaks/get-vertical-page-breaks/)
+## Hur man arbetar med sidbrytningar i ett Excel-kalkylblad
+
+Denna guide ger snabb tillgång till API-åtgärderna för att hantera vertikala och horisontella sidbrytningar i ett Excel-kalkylblad med Aspose.Cells Cloud.
+
+- [Hur man lägger till en vertikal sidbrytning i ett Excel-kalkylblad.](/sv/cells/page-breaks/add-vertical-page-break/)
+- [Hur man lägger till en horisontell sidbrytning i ett Excel-kalkylblad.](/sv/cells/page-breaks/add-horizontal-page-break/)
+- [Hur man tar bort en vertikal sidbrytning i ett Excel-kalkylblad.](/sv/cells/page-breaks/delete-vertical-page-break/)
+- [Hur man tar bort en horisontell sidbrytning i ett Excel-kalkylblad.](/sv/cells/page-breaks/delete-horizontal-page-break/)
+- [Hur man hämtar vertikala sidbrytningar i ett Excel-kalkylblad.](/sv/cells/page-breaks/get-vertical-page-breaks/)
+- [Hur man hämtar horisontella sidbrytningar i ett Excel-kalkylblad.](/sv/cells/page-breaks/get-horizontal-page-breaks/)
+---

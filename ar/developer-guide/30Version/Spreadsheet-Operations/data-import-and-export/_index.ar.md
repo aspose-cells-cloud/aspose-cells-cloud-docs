@@ -1,327 +1,363 @@
-﻿---
-title: استيراد البيانات إلى ملفات Excel وتصدير البيانات من ملفات Excel
-second_title: Documen
-linktitle: استيراد وتصدير البيانات
-type: docs
-url: /ar/data-import-and-export/
-keywords: Excel data import vs. Direct database access; Batch data import vs. Row-by-row data writing; Automated data export vs. Manual data extraction
-description: إنشاء مستندات أو تقارير جديدة يمكن أن تتضمن مخططات وجداول وعناصر تصور البيانات الأخرى
-weight: 25
-kwords: Excel استيراد البيانات مقابل الوصول المباشر إلى قاعدة البيانات؛ استيراد البيانات دفعة واحدة مقابل كتابة البيانات صفًا تلو الآخر؛ تصدير البيانات تلقائيًا مقابل استخراج البيانات يدويًا.
 ---
-يدعم Aspose.Cells Cloud API استيراد البيانات من مجموعة متنوعة من مصادر البيانات، ويمكنه تصدير البيانات من Excel والرسوم البيانية إلى تنسيقات مختلفة، بما في ذلك Excel وCSV وPDF وHTML وPNG وما إلى ذلك. وهذا يجعل إدارة البيانات ومشاركتها بسيطة وفعالة.
+title: "استيراد البيانات إلى ملفات Excel وتصدير البيانات من ملفات Excel"
+second_title: "Document"
+linktitle: "استيراد وتصدير البيانات"
+type: docs
+url: /data-import-and-export/
+keywords: "Aspose.Cells Cloud, استيراد البيانات, تصدير Excel, API, CSV, JSON, صورة, مصفوفة"
+description: "تعرّف على كيفية استيراد البيانات من ملفات CSV وJSON والمصفوفات والصور إلى ملفات Excel، وتصدير كتب العمل والرسوم البيانية والأشكال إلى PDF وPNG وغير ذلك باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud (النسخة 3.0)."
+weight: 25
+---
 
-## كيفية استيراد البيانات من مصادر بيانات مختلفة
+تدعم واجهة برمجة تطبيقات Aspose.Cells Cloud استيراد البيانات من مصادر متنوعة، كما يمكنها تصدير كتب عمل Excel والرسوم البيانية والكائنات الأخرى إلى صيغ مختلفة، تشمل **XLSX** و**CSV** و**PDF** و**HTML** و**PNG** والمزيد. ويجعل هذا إدارة البيانات ومشاركتها بسيطة وفعّالة.
 
-استيراد البيانات إلى ملف Excel عملية معقدة. تساهم عوامل عديدة في تعقيدها، لذا يجب أخذها في الاعتبار أثناء عملية التصدير. تُعد إمكانية استيراد مختلف التنسيقات وأنواع البيانات إلى الملف بجودة احترافية ودقيقة من أهم ميزات Aspose.Cells Cloud.
+**إصدار واجهة برمجة التطبيقات:** **v3.0** – آخر تحديث: **2024‑03‑15**
 
-### معلومات حول واجهات برمجة تطبيقات استيراد البيانات
+### دليل البدء السريع
 
-يتم توفير واجهات برمجة التطبيقات التالية لاستيراد البيانات إلى ملف Excel أو ملفات Excel متعددة:
+1. **تجهيز حمولة الطلب** – بناء هيكل JSON يصف خيارات الاستيراد أو التصدير (مثل `ImportCSVDataOption` و`ExportOptions`).
+2. **إرسال الطلب** – استخدام `curl` أو Postman أو SDK لاستدعاء نقطة النهاية المناسبة (`POST /cells/import` أو `POST /cells/export`).
+3. **معالجة الاستجابة** – عند النجاح، تُستلم الملف المعالج (ثنائي أو مشفر بـ Base64). وفي حالة حدوث خطأ، تُفحَص كود حالة HTTP والرسالة الخطأ المُعادة في هيكل JSON.
 
-|API|وصف|
-|:- |:- |
-|[POST /cells/import](https://apireference.aspose.cloud/cells/#/LightCells/PostImport)|استيراد البيانات إلى الملفات Excel دون استخدام مساحة التخزين.|
-|[POST /cells/{name}/importdata](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)|استيراد البيانات إلى الملف Excel باستخدام التخزين.|
+#### المتطلبات الأساسية
 
-### معلمات الطلب
+- حساب نشط على Aspose Cloud ومفتاح JWT صالح.
+- يجب أن يكون كتاب العمل الهدف موجودًا في موقع التخزين المحدّد (لواجهات برمجة التطبيقات المعتمدة على التخزين).
+- رؤوس `Content-Type` الصحيحة (`multipart/form-data` لتحميل الملفات، `application/json` للأجسام JSON).
 
-#### بدون استخدام التخزين
+## كيفية استيراد البيانات من مصادر بيانات متنوعة
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| ملف| ملف| نموذج البيانات| الملف للتحميل|
-| خيار الاستيراد| خيارات الاستيراد| نص HTTP| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+يتضمّن استيراد البيانات إلى ملف Excel عدة اعتبارات يجب أخذها بعين الاعتبار أثناء العملية. إن إمكانية استيراد تنسيقات وأنواع بيانات متعددة بدقة احترافية تُعدّ من الميزات الرئيسية في Aspose.Cells Cloud.
 
-#### مع استخدام التخزين
+### معلومات واجهات برمجة التطبيقات لاستيراد البيانات
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
-| استيراد البيانات|| جسم||
+توفّر واجهات برمجة التطبيقات التالية إمكانية استيراد البيانات إلى ملف Excel واحد أو أكثر:
 
-#### معلمة خيار استيراد البيانات
+| واجهة برمجة التطبيقات                                                                              | الوصف                                               |
+| :-------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [POST /cells/import](https://apireference.aspose.cloud/cells/#/LightCells/PostImport)              | استيراد البيانات إلى ملفات Excel دون استخدام التخزين. |
+| [POST /cells/{name}/importdata](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) | استيراد البيانات إلى ملف Excel المخزّن في السحابة. |
 
-**يتم وصف المعلمات المهمة في الجدول التالي**:
+### معاملات الطلب
 
-{{< tabs tabTotal="11" tabID="1" tabName1="ImportBatchDataOption" tabName2="ImportCSVDataOption" tabName3="ImportPictureOption" tabName4="Import2DimensionIntArrayOption" tabName5="Import2DimensionDoubleArrayOption" tabName6="Import2DimensionStringArrayOption" tabName7="ImportIntegerArrayOption" tabName8="ImportDoubleArrayOption" tabName9="ImportStringArrayOption" tabName10="CellValue" tabName11="FileSource" >}}
+#### دون استخدام التخزين
+
+| اسم المعامل | النوع          | الموقع     | الوصف                                                                                                    |
+| :---------- | :------------- | :--------- | :------------------------------------------------------------------------------------------------------- |
+| file        | ملف            | formData   | الملف المراد رفعه                                                                                         |
+| ImportOption | ImportOptions | body       | يحدّد تنسيق الاستيراد (IntArray، DoubleArray، StringArray، TwoDimensionIntArray، TwoDimensionDoubleArray، TwoDimensionStringArray، BatchData، csvData، Picture) |
+
+#### باستخدام التخزين
+
+| اسم المعامل | النوع          | الموقع     | الوصف                 |
+| :---------- | :------------- | :--------- | :--------------------- |
+| name        | string         | path       | اسم ملف Excel          |
+| folder      | string         | query      | مسار المجلد في التخزين |
+| storageName | string         | query      | اسم التخزين            |
+| importData  | ImportOptions  | body       | حمولة استيراد البيانات |
+
+#### معاملات خيار استيراد البيانات
+
+**تُوصَف المعاملات المهمّة في الجداول التالية:**
+
+{{< tabs tabTotal="11" tabID="1" tabName1="ImportBatchDataOption"  tabName2="ImportCSVDataOption"   tabName3="ImportPictureOption" tabName4="Import2DimensionIntArrayOption" tabName5="Import2DimensionDoubleArrayOption" tabName6="Import2DimensionStringArrayOption" tabName7="ImportIntegerArrayOption" tabName8="ImportDoubleArrayOption" tabName9="ImportStringArrayOption" tabName10="CellValue" tabName11="FileSource" >}}
+
 {{< tab tabNum="1" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">المعلمة</th><th scope="col">يكتب</th> <th scope="col">وصف</th></tr>
+    <tr><th>المعامل</th><th>النوع</th><th>الوصف</th></tr>
   </thead>
   <tbody>
-    <tr> <td>بيانات الدفعة</td><td>قائمة<CellValue></td> <td>بيانات الدفعة</td> </tr>
-    <tr> <td>ورقة عمل الوجهة</td><td> خيط</td><td> اسم ورقة عمل الوجهة.</td></tr>
-    <tr><td>هل تم إدراجه</td><td>خيط</td><td>صواب/خطأ.</td></tr>
-    <tr><td>نوع بيانات الاستيراد</td><td> خيط</td><td>مصفوفة بيانات الدفعة ذات البعدين</td></tr>
-    <tr> <td>مصدر</td><td> مصدر الملف</td><td>يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData فارغة.</td></tr>
+    <tr><td>BatchData</td><td>List&lt;CellValue&gt;</td><td>بيانات الدفعة المراد استيرادها</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>اسم ورقة العمل الوجهة</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>ما إذا كان سيتم إدراج البيانات (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>TwoDimensionStringBatchDataArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>مكان ملف البيانات عند وجود BatchData كـ null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="2" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">المعلمة</th><th scope="col">يكتب</th> <th scope="col">وصف</th></tr>
+    <tr><th>المعامل</th><th>النوع</th><th>الوصف</th></tr>
   </thead>
   <tbody>
-    <tr> <td>تحويل البيانات الرقمية</td><td>خيط</td> <td>صواب/خطأ.</td> </tr>
-    <tr> <td>الصف الأول</td><td>عدد صحيح</td> <td></td> </tr>
-    <tr> <td>العمود الأول</td><td>عدد صحيح</td><td></td></tr>
-    <tr><td>سلسلة فاصلة</td><td> خيط</td> <td></td></tr>
-    <tr> <td>ورقة عمل الوجهة</td><td> خيط</td><td> اسم ورقة عمل الوجهة.</td></tr>
-    <tr><td>المحللات المخصصة</td><td>قائمة<CustomParserConfig></td><td></td></tr>
-    <tr><td>نوع بيانات الاستيراد</td><td> خيط</td><td>بيانات CSV</td></tr>
-    <tr> <td>مصدر</td><td> مصدر الملف</td><td>يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData فارغة.</td></tr>
+    <tr><td>ConvertNumericData</td><td>boolean</td><td>ما إذا كان سيتم تحويل البيانات الرقمية (true/false)</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>فهرس الصف الأول</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>فهرس العمود الأول</td></tr>
+    <tr><td>SeparatorString</td><td>string</td><td>فاصل الأعمدة</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>اسم ورقة العمل الوجهة</td></tr>
+    <tr><td>CustomParsers</td><td>List&lt;CustomParserConfig&gt;</td><td>إعدادات محللات مخصصة</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>CSVData</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>مكان ملف البيانات عند وجود BatchData كـ null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="3" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">المعلمة</th><th scope="col">يكتب</th> <th scope="col">وصف</th></tr>
+    <tr><th>المعامل</th><th>النوع</th><th>الوصف</th></tr>
   </thead>
   <tbody>
-    <tr> <td>الصف الأول</td><td>عدد صحيح</td> <td></td> </tr>
-    <tr> <td>العمود الأول</td><td>عدد صحيح</td><td></td></tr>
-    <tr><td>عمودي</td><td>خيط</td><td>صواب/خطأ.</td></tr>
-    <tr><td>بيانات</td><td> خيط[]</td> <td></td></tr>
-    <tr> <td>ورقة عمل الوجهة</td><td> خيط</td><td> اسم ورقة عمل الوجهة.</td></tr>
-    <tr><td>هل تم إدراجه</td><td>خيط</td><td>صواب/خطأ.</td></tr>
-    <tr><td>نوع بيانات الاستيراد</td><td> خيط</td><td>صورة</td></tr>
-    <tr> <td>مصدر</td><td> مصدر الملف</td><td>يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData فارغة.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>فهرس الصف الأول</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>فهرس العمود الأول</td></tr>
+    <tr><td>IsVertical</td><td>boolean</td><td>ما إذا كانت الصورة موضّعة رأسيًا (true/false)</td></tr>
+    <tr><td>Data</td><td>string[]</td><td>بيانات الصورة (سلاسل مشفرة بـ Base64)</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>اسم ورقة العمل الوجهة</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>ما إذا كان سيتم إدراج البيانات (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>Picture</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>مكان ملف البيانات عند وجود BatchData كـ null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="4" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">المعلمة</th><th scope="col">يكتب</th> <th scope="col">وصف</th></tr>
+    <tr><th>المعامل</th><th>النوع</th><th>الوصف</th></tr>
   </thead>
   <tbody>
-    <tr> <td>الصف الأول</td><td>عدد صحيح</td> <td></td> </tr>
-    <tr> <td>العمود الأول</td><td>عدد صحيح</td><td></td></tr>
-    <tr><td>بيانات</td><td> عدد صحيح[،]</td> <td></td></tr>
-    <tr> <td>ورقة عمل الوجهة</td><td> خيط</td><td> اسم ورقة عمل الوجهة.</td></tr>
-    <tr><td>هل تم إدراجه</td><td>خيط</td><td>صواب/خطأ.</td></tr>
-    <tr><td>نوع بيانات الاستيراد</td><td> خيط</td><td>مصفوفة ثنائية الأبعاد</td></tr>
-    <tr> <td>مصدر</td><td> مصدر الملف</td><td>يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData فارغة.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>فهرس الصف الأول</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>فهرس العمود الأول</td></tr>
+    <tr><td>Data</td><td>int[,] </td><td>مصفوفة عددية صحيحة ثنائية الأبعاد</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>اسم ورقة العمل الوجهة</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>ما إذا كان سيتم إدراج البيانات (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>TwoDimensionIntArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>مكان ملف البيانات عند وجود BatchData كـ null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="5" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">المعلمة</th><th scope="col">يكتب</th> <th scope="col">وصف</th></tr>
+    <tr><th>المعامل</th><th>النوع</th><th>الوصف</th></tr>
   </thead>
   <tbody>
-    <tr> <td>الصف الأول</td><td>عدد صحيح</td> <td></td> </tr>
-    <tr> <td>العمود الأول</td><td>عدد صحيح</td><td></td></tr>
-    <tr><td>بيانات</td><td> مزدوج[،]</td> <td></td></tr>
-    <tr> <td>ورقة عمل الوجهة</td><td> خيط</td><td> اسم ورقة عمل الوجهة.</td></tr>
-    <tr><td>هل تم إدراجه</td><td>خيط</td><td>صواب/خطأ.</td></tr>
-    <tr><td>نوع بيانات الاستيراد</td><td> خيط</td><td>مصفوفة مزدوجة الأبعاد</td></tr>
-    <tr> <td>مصدر</td><td> مصدر الملف</td><td>يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData فارغة.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>فهرس الصف الأول</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>فهرس العمود الأول</td></tr>
+    <tr><td>Data</td><td>double[,] </td><td>مصفوفة ذات أبعاد مزدوجة من نوع double</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>اسم ورقة العمل الوجهة</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>ما إذا كان سيتم إدراج البيانات (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>TwoDimensionDoubleArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>مكان ملف البيانات عند وجود BatchData كـ null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="6" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">المعلمة</th><th scope="col">يكتب</th> <th scope="col">وصف</th></tr>
+    <tr><th>المعامل</th><th>النوع</th><th>الوصف</th></tr>
   </thead>
   <tbody>
-    <tr> <td>الصف الأول</td><td>عدد صحيح</td> <td></td> </tr>
-    <tr> <td>العمود الأول</td><td>عدد صحيح</td><td></td></tr>
-    <tr><td>بيانات</td><td> خيط[،]</td> <td></td></tr>
-    <tr> <td>ورقة عمل الوجهة</td><td> خيط</td><td> اسم ورقة عمل الوجهة.</td></tr>
-    <tr><td>هل تم إدراجه</td><td>خيط</td><td>صواب/خطأ.</td></tr>
-    <tr><td>نوع بيانات الاستيراد</td><td> خيط</td><td>مصفوفة سلسلة ثنائية الأبعاد</td></tr>
-    <tr> <td>مصدر</td><td> مصدر الملف</td><td>يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData فارغة.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>فهرس الصف الأول</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>فهرس العمود الأول</td></tr>
+    <tr><td>Data</td><td>string[,] </td><td>مصفوفة سلاسل نصية ثنائية الأبعاد</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>اسم ورقة العمل الوجهة</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>ما إذا كان سيتم إدراج البيانات (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>TwoDimensionStringArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>مكان ملف البيانات عند وجود BatchData كـ null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="7" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">المعلمة</th><th scope="col">يكتب</th> <th scope="col">وصف</th></tr>
+    <tr><th>المعامل</th><th>النوع</th><th>الوصف</th></tr>
   </thead>
   <tbody>
-    <tr> <td>الصف الأول</td><td>عدد صحيح</td> <td></td> </tr>
-    <tr> <td>العمود الأول</td><td>عدد صحيح</td><td></td></tr>
-    <tr><td>عمودي</td><td>خيط</td><td>صواب/خطأ.</td></tr>
-    <tr><td>بيانات</td><td> عدد صحيح[]</td> <td></td></tr>
-    <tr> <td>ورقة عمل الوجهة</td><td> خيط</td><td> اسم ورقة عمل الوجهة.</td></tr>
-    <tr><td>هل تم إدراجه</td><td>خيط</td><td>صواب/خطأ.</td></tr>
-    <tr><td>نوع بيانات الاستيراد</td><td> خيط</td><td>مجموعة الأعداد الصحيحة</td></tr>
-    <tr> <td>مصدر</td><td> مصدر الملف</td><td>يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData فارغة.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>فهرس الصف الأول</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>فهرس العمود الأول</td></tr>
+    <tr><td>IsVertical</td><td>boolean</td><td>ما إذا كانت المصفوفة رأسية (true/false)</td></tr>
+    <tr><td>Data</td><td>int[] </td><td>مصفوفة عددية صحيحة أحادية البعد</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>اسم ورقة العمل الوجهة</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>ما إذا كان سيتم إدراج البيانات (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>IntegerArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>مكان ملف البيانات عند وجود BatchData كـ null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="8" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">المعلمة</th><th scope="col">يكتب</th> <th scope="col">وصف</th></tr>
+    <tr><th>المعامل</th><th>النوع</th><th>الوصف</th></tr>
   </thead>
   <tbody>
-    <tr> <td>الصف الأول</td><td>عدد صحيح</td> <td></td> </tr>
-    <tr> <td>العمود الأول</td><td>عدد صحيح</td><td></td></tr>
-    <tr><td>عمودي</td><td>خيط</td><td>صواب/خطأ.</td></tr>
-    <tr><td>بيانات</td><td> مزدوج[]</td> <td></td></tr>
-    <tr> <td>ورقة عمل الوجهة</td><td> خيط</td><td> اسم ورقة عمل الوجهة.</td></tr>
-    <tr><td>هل تم إدراجه</td><td>خيط</td><td>صواب/خطأ.</td></tr>
-    <tr><td>نوع بيانات الاستيراد</td><td> خيط</td><td>مصفوفة مزدوجة</td></tr>
-    <tr> <td>مصدر</td><td> مصدر الملف</td><td>يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData فارغة.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>فهرس الصف الأول</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>فهرس العمود الأول</td></tr>
+    <tr><td>IsVertical</td><td>boolean</td><td>ما إذا كانت المصفوفة رأسية (true/false)</td></tr>
+    <tr><td>Data</td><td>double[] </td><td>مصفوفة من نوع double أحادية البعد</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>اسم ورقة العمل الوجهة</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>ما إذا كان سيتم إدراج البيانات (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>DoubleArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>مكان ملف البيانات عند وجود BatchData كـ null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="9" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">المعلمة</th><th scope="col">يكتب</th> <th scope="col">وصف</th></tr>
+    <tr><th>المعامل</th><th>النوع</th><th>الوصف</th></tr>
   </thead>
   <tbody>
-    <tr> <td>الصف العلوي الأيسر</td><td>عدد صحيح</td> <td></td> </tr>
-    <tr> <td>العمود العلوي الأيسر</td><td>عدد صحيح</td><td></td></tr>
-    <tr> <td>الصف السفلي الأيمن</td><td>عدد صحيح</td> <td></td> </tr>
-    <tr> <td>العمود الأيمن السفلي</td><td>عدد صحيح</td><td></td></tr>
-    <tr><td>اسم الملف</td><td>خيط</td><td></td></tr>
-    <tr><td>بيانات</td><td> خيط</td> <td></td></tr>
-    <tr> <td>ورقة عمل الوجهة</td><td> خيط</td><td> اسم ورقة عمل الوجهة.</td></tr>
-    <tr><td>هل تم إدراجه</td><td>خيط</td><td>صواب/خطأ.</td></tr>
-    <tr><td>نوع بيانات الاستيراد</td><td> خيط</td><td>مصفوفة السلاسل</td></tr>
-    <tr> <td>مصدر</td><td> مصدر الملف</td><td>يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData فارغة.</td></tr>
+    <tr><td>UpperLeftRow</td><td>int</td><td>فهرس الصف العلوي الأيسر</td></tr>
+    <tr><td>UpperLeftColumn</td><td>int</td><td>فهرس العمود العلوي الأيسر</td></tr>
+    <tr><td>LowerRightRow</td><td>int</td><td>فهرس الصف السفلي الأيمن</td></tr>
+    <tr><td>LowerRightColumn</td><td>int</td><td>فهرس العمود السفلي الأيمن</td></tr>
+    <tr><td>Filename</td><td>string</td><td>اسم الملف المصدر</td></tr>
+    <tr><td>Data</td><td>string</td><td>البيانات النصية المراد استيرادها</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>اسم ورقة العمل الوجهة</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>ما إذا كان سيتم إدراج البيانات (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>StringArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>مكان ملف البيانات عند وجود BatchData كـ null</td></tr>
   </tbody>
 </table>
 
 {{< /tab >}}
 {{< tab tabNum="10" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">المعلمة</th><th scope="col">يكتب</th> <th scope="col">وصف</th></tr>
+    <tr><th>المعامل</th><th>النوع</th><th>الوصف</th></tr>
   </thead>
   <tbody>
-    <tr><td>فهرس الصف</td><td>عدد صحيح</td> <td></td> </tr>
-    <tr><td>فهرس العمود</td><td>عدد صحيح</td><td></td></tr>
-    <tr><td>يكتب</td><td>خيط</td><td>نوع البيانات</td></tr>
-    <tr><td>قيمة</td><td> خيط</td> <td></td></tr>
-    <tr><td>أسلوب</td><td> النمط (الكائن)</td><td></td></tr>
+    <tr><td>rowIndex</td><td>int</td><td>فهرس الصف للخلية</td></tr>
+    <tr><td>columnIndex</td><td>int</td><td>فهرس العمود للخلية</td></tr>
+    <tr><td>type</td><td>string</td><td>نوع بيانات قيمة الخلية</td></tr>
+    <tr><td>value</td><td>string</td><td>قيمة الخلية</td></tr>
+    <tr><td>style</td><td>Style (object)</td><td>تعريف نمط الخلية</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="11" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">المعلمة</th><th scope="col">يكتب</th> <th scope="col">وصف</th></tr>
+    <tr><th>المعامل</th><th>النوع</th><th>الوصف</th></tr>
   </thead>
   <tbody>
-    <tr><td>نوع مصدر الملف</td><td>خيط</td> <td>ملفات في الذاكرة/نظام ملفات السحابة/ملفات الطلب</td> </tr>
-    <tr><td>مسار الملف</td><td>خيط</td><td> موضع الملف</td></tr>
+    <tr><td>FileSourceType</td><td>string</td><td>InMemoryFiles أو CloudFileSystem أو RequestFiles</td></tr>
+    <tr><td>FilePath</td><td>string</td><td>مسار الملف المصدر</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< /tabs >}}
 
-## كيفية تصدير كائنات Excel إلى تنسيقات ملفات مختلفة
+## كيفية تصدير كائنات Excel إلى صيغ ملفات متنوعة
 
-إذا قمت في الأصل بإنشاء ملف Excel بتنسيق معين، مثل[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [إكس إل إس بي](https://docs.fileformat.com/spreadsheet/xlsb/) ، و[ملف CSV](https://docs.fileformat.com/spreadsheet/csv/)قد تجد أحيانًا أنه من المفيد تحويل ملف إكسل إلى صيغة أخرى للاستفادة من الميزات الخاصة التي يوفرها. على سبيل المثال، قد ترغب في تصدير ملف إكسل إلى[PDF](https://docs.fileformat.com/pdf/) لحماية محتوياتك من أي تعديلات غير مصرح بها وتسهيل قراءتها ومشاركتها في وقت واحد.
+إذا أنشأتم ملف Excel في البداية بصيغة مثل **XLS** أو **XLSX** أو **XLSB** أو **CSV**، فقد ترغبون في تحويله إلى صيغة أخرى للاستفادة من ميزات محددة. على سبيل المثال، يحمي تصدير الملف بصيغة **PDF** المحتوى من التعديلات غير المصرح بها، مع جعله سهل القراءة والمشاركة.
 
-تصدير كائن Excel عملية معقدة. تساهم عوامل عديدة في تعقيدها، لذا يجب أخذها في الاعتبار أثناء عملية التصدير. تُعد إمكانية تصدير كائن Excel إلى ملف بتنسيق واحد بجودة احترافية ودقيقة من أهم ميزات Aspose.Cells Cloud.
+يتضمّن تصدير كائنات Excel عدة اعتبارات. وتوفّر Aspose.Cells Cloud تصديرًا عالي الجودة لكتب العمل والرسوم البيانية والأشكال والصور إلى مجموعة واسعة من الصيغ:
 
- يعمل بشكل مثالي مع مصنفات العمل والمخططات والأشكال والصور المُصدَّرة من ملفات إكسل. يمكنك تصدير التنسيقات التالية:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [إكس إل إس بي](https://docs.fileformat.com/spreadsheet/xlsb/), [ملف CSV](https://docs.fileformat.com/spreadsheet/csv/), [تي إس في](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [المواد المستنفدة للأوزون](https://docs.fileformat.com/spreadsheet/ods/), [رسالة قصيرة](https://docs.fileformat.com/word-processing/txt/) . تنسيقات التصدير فقط:[PDF](https://docs.fileformat.com/pdf/), [أو تي إس](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [ديف](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [أرقام](https://docs.fileformat.com/spreadsheet/numbers/), [فودز](https://docs.fileformat.com/spreadsheet/fods/).
+_صيغ التصدير فقط_: PDF وOTS وXPS وDIF وPNG وJPEG وBMP وSVG وTIFF وEMF وNUMBERS وFODS.  
+_صيغ تدعم الاستيراد والتصدير معًا_: XLS وXLSX وXLSB وCSV وTSV وXLSM وODS وTXT.
 
-الطلب عبارة عن طلب HTTP يحتوي على محتوى متعدد الأجزاء (انظر[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)أو[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)يحتوي الجزء الأول من المحتوى المتعدد الأجزاء على ملف البيانات، ويحتوي الجزء الثاني على خيارات الحفظ.
+يستخدم الطلب محتوى متعدد الأجزاء كما هو مُعرّف في [RFC 2046] و[RFC 1341]. يحتوي الجزء الأول على ملف البيانات؛ ويحتوي الجزء الثاني على خيارات الحفظ.
 
-مصنف REST API `export` والكائنات الداخلية لملف بتنسيق مختلف.
-
-### معلومات التصدير API
+### معلومات واجهة برمجة التطبيقات للتصدير
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/export
-
 ```
 
-معلمات الطلب هي:
+#### معاملات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| ملف| ملف| نموذج البيانات| الملف للتحميل|
-| نوع الكائن| خيط| استفسار| نوع الكائن (مصنف/ورقة عمل/مخطط/شكل/صورة/قائمة/كائن زيتي)|
-| شكل| خيط| استفسار|[تنسيق الملف](/cells/ar/supported-file-formats/)  |
+| اسم المعامل | النوع   | الموقع     | الوصف                                                                                      |
+| :---------- | :------ | :--------- | :------------------------------------------------------------------------------------------ |
+| file        | ملف     | formData   | الملف المراد رفعه                                                                           |
+| objectType  | string  | query      | نوع الكائن (`workbook` أو `worksheet` أو `chart` أو `shape` أو `picture` أو `listobject` أو `oleobject`) |
+| format      | string  | query      | صيغة ملف الإخراج المطلوبة (انظر [صيغ الملفات المدعومة](/cells/supported-file-formats/))     |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) واجهة برمجة تطبيقات عامة قابلة للوصول تتيح تنفيذ تفاعلات REST مباشرة من متصفح ويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL لاستدعاء واجهة برمجة التطبيقات. يوضّح المثال التالي طلبًا واستجابته بصيغة JSON.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/export" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+curl -v "https://api.aspose.cloud/v3.0/cells/export" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'file1=@example1.xlsx' \
+  -F 'file2=@example2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "example1.pdf",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "example2.pdf",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
-
 {{< /tabs >}}
+
+#### كودات حالة HTTP الشائعة
+
+| الحالة | المعنى                                                        | الإجراء الموصى به                           |
+| ------ | -------------------------------------------------------------- | -------------------------------------------- |
+| 200    | نجاح – تم تصدير الملف                                         | معالجة الملف (الملفات) المُعادة             |
+| 400    | طلب غير صالح – معاملات مفقودة أو غير صالحة                  | التحقق من حمولة الطلب وسلاسل الاستعلام       |
+| 401    | غير مصرّح – مفتاح JWT غير صالح أو منتهي الصلاحية             | تحديث المفتاح وإعادة المحاولة                |
+| 404    | غير موجود – كتاب العمل أو ورقة العمل المحدّدة غير موجودة     | التحقق من اسم الملف ومسار التخزين            |
+| 500    | خطأ داخلي في الخادم – حالة غير متوقّعة على الخادم           | الاتصال بدعم Aspose مع معرّف الطلب           |
 
 ## كيفية استدعاء واجهات برمجة التطبيقات للاستيراد والتصدير
 
-تشرح المقالات التالية كل API كيفية الاتصال بالتفصيل وتحتوي على cURL وأمثلة SDK لكل API:
+تشرح المقالات التالية كل واجهة برمجة تطبيقات بالتفصيل، وتحتوي على أمثلة باستخدام cURL وSDKs:
 
-- [كيفية استيراد البيانات إلى الملفات Excel دون استخدام التخزين.](/cells/ar/import/without-using-storage)
-- [كيفية استيراد البيانات إلى الملفات Excel باستخدام التخزين.](/cells/ar/import/with-using-storage)
-- [كيفية استيراد بيانات الدفعة إلى ورقة العمل Excel](/cells/ar/import-batch-data-into-excel-worksheet/)
-- [كيفية استيراد بيانات CSV إلى ورقة العمل Excel](/cells/ar/import-csv-data-into-excel-worksheet/)
-- [كيفية استيراد الصورة إلى ورقة العمل Excel](/cells/ar/import-picture-into-excel-worksheet/)
-- [كيفية استيراد مصفوفة الأعداد الصحيحة إلى ورقة العمل Excel](/cells/ar/import-integer-array-into-excel-worksheet/)
-- [كيفية استيراد مصفوفة مزدوجة إلى ورقة العمل Excel](/cells/ar/import-double-array-into-excel-worksheet/)
-- [كيفية استيراد مصفوفة نصية إلى ورقة العمل Excel](/cells/ar/import-string-array-into-excel-worksheet/)
-- [كيفية استيراد مصفوفة أعداد صحيحة ثنائية الأبعاد إلى ورقة العمل Excel](/cells/ar/import-a-2D-integer-array-into-excel-worksheet/)
-- [كيفية استيراد مصفوفة ثنائية الأبعاد إلى ورقة العمل Excel](/cells/ar/import-a-2D-double-array-into-excel-worksheet/)
-- [كيفية استيراد مصفوفة سلسلة ثنائية الأبعاد إلى ورقة العمل Excel](/cells/ar/import-a-2D-string-array-into-excel-worksheet/)
-- [تصدير الرسم البياني Excel إلى تنسيق ملف مختلف](/cells/ar/export-excel-chart-to-different-formats/)
-- [تصدير كائن القائمة Excel إلى تنسيق ملف مختلف](/cells/ar/export-excel-listobject-to-different-formats/)
-- [تصدير كائن ole Excel إلى تنسيق ملف مختلف](/cells/ar/export-excel-ole-object/)
-- [تصدير الصورة Excel إلى تنسيق ملف مختلف](/cells/ar/export-excel-picture-to-different-formats/)
-- [تصدير الشكل Excel إلى تنسيق ملف مختلف](/cells/ar/export-excel-shape-to-different-formats/)
-- [تصدير مصنف Excel إلى تنسيق ملف مختلف](/cells/ar/export-excel-to-different-formats/)
-- [تصدير ورقة العمل Excel إلى تنسيق ملف مختلف](/cells/ar/export-excel-worksheet-to-different-formats//)
+- [كيفية استيراد البيانات إلى ملفات Excel دون استخدام التخزين.](/cells/import/without-using-storage)
+- [كيفية استيراد البيانات إلى ملفات Excel باستخدام التخزين.](/cells/import/with-using-storage)
+- [كيفية استيراد بيانات دُفعات إلى ورقة عمل Excel](/cells/import-batch-data-into-excel-worksheet/)
+- [كيفية استيراد بيانات CSV إلى ورقة عمل Excel](/cells/import-CSV-data-into-excel-worksheet/)
+- [كيفية استيراد صورة إلى ورقة عمل Excel](/cells/import-picture-into-excel-worksheet/)
+- [كيفية استيراد مصفوفة عددية صحيحة إلى ورقة عمل Excel](/cells/import-integer-array-into-excel-worksheet/)
+- [كيفية استيراد مصفوفة double إلى ورقة عمل Excel](/cells/import-double-array-into-excel-worksheet/)
+- [كيفية استيراد مصفوفة سلاسل نصية إلى ورقة عمل Excel](/cells/import-string-array-into-excel-worksheet/)
+- [كيفية استيراد مصفوفة عددية صحيحة ثنائية الأبعاد إلى ورقة عمل Excel](/cells/import-a-2D-integer-array-into-excel-worksheet/)
+- [كيفية استيراد مصفوفة double ثنائية الأبعاد إلى ورقة عمل Excel](/cells/import-a-2D-double-array-into-excel-worksheet/)
+- [كيفية استيراد مصفوفة سلاسل نصية ثنائية الأبعاد إلى ورقة عمل Excel](/cells/import-a-2D-string-array-into-excel-worksheet/)
+- [تصدير الرسم البياني لملف Excel إلى صيغة ملف مختلفة](/cells/export-excel-chart-to-different-formats/)
+- [تصدير كائن قائمة Excel إلى صيغة ملف مختلفة](/cells/export-excel-listobject-to-different-formats/)
+- [تصدير كائن OLE Object في Excel إلى صيغة ملف مختلفة](/cells/export-excel-ole-object/)
+- [تصدير صورة Excel إلى صيغة ملف مختلفة](/cells/export-excel-picture-to-different-formats/)
+- [تصدير شكل Excel إلى صيغة ملف مختلفة](/cells/export-excel-shape-to-different-formats/)
+- [تصدير كتاب عمل Excel إلى صيغة ملف مختلفة](/cells/export-excel-to-different-formats/)
+- [تصدير ورقة عمل Excel إلى صيغة ملف مختلفة](/cells/export-excel-worksheet-to-different-formats/)
+
+---

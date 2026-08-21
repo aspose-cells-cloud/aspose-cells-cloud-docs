@@ -1,83 +1,129 @@
-﻿---
-title: Kryptera en Excel-arbetsbok
-second_title: Documen
-linktitle: Kryptera en Excel-fil
-type: docs
-url: /sv/excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/,/workbook/encrypt/]
-keywords: Encrypt Excel workbook
-description: Aspose.Cells Cloud REST API stöder kryptering av Excel-arbetsböcker. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Kryptera en Excel-arbetsbok
 ---
-Denna REST API krypterar en Excel `workbook`.
+title: "Kryptera en Excel-arbetsbok med Aspose.Cells Cloud API – Snabba cURL- och SDK-exempel"
+secondtitle: "Dokument"
+linktitle: "Kryptera en Excel-fil"
+type: docs
+url: /excel-file-encrypt/
+aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+keywords: "Aspose Cells kryptera arbetsbok, Excel-krypterings-API, REST API, cURL, .NET, Java, Python, PHP, Ruby, Node.js, Go, Perl"
+description: "Lär dig hur du krypterar en Excel-arbetsbok med Aspose.Cells Cloud REST API (v3.0). Innehåller cURL-kommando, SDK-kodexempel (C#, Java, Python, …), nödvändiga parametrar och felhantering."
+weight: 20
+ArticleTitle: "Kryptera Excel-arbetsbok med Aspose.Cells Cloud API – cURL- och SDK-exempel"
+---
 
-**Frågeparameter**
+Denna REST API krypterar en Excel-**arbetsbok**.
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|mapp|sträng|Original arbetsboksmapp.|
-|lagringsnamn|sträng|Lagringsnamn.|
+**Förutsättningar:** Du måste ha ett giltigt JWT-token och arbetsboken redan uppladdad till ett lagringsplats innan du anropar denna slutpunkt.
 
-**Begäran om brödtextparameter**
+## PostEncryptDocument API
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|kryptering|Arbetsbokkrypteringsbegäran||
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/encryption
+```
 
-**Arbetsbokkrypteringsbegäran**
+### **Säkerhet och autentisering**
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|Krypteringstyp|sträng|XOR/Kompatibel/FörbättradKryptografiskProviderV1/StrongKryptografiskProvider|
-|Nyckellängd|heltal||
-|Lösenord|sträng||
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-## REST API
+### **Frågeparametrar**
 
-|**API**|**Typ**|**Beskrivning**|**Swagger-länk**|
-|:- |:- |:- |:- |
-|/celler/{namn}/kryptering|POSTA|Kryptera Excel-dokumentet|[PostEncryptDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument)|
+| Parameternamn   | Typ    | Obligatorisk | Beskrivning                          |
+| --------------- | ------ | ------------ | ------------------------------------ |
+| folder          | string | ✗            | Sökvägen till mappen med den ursprungliga arbetsboken. |
+| storageName     | string | ✗            | Namnet på den lagring som ska användas. |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Parametrar i begärandetexten**
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
+| Parameternamn | Typ                       | Obligatorisk | Beskrivning                        |
+| ------------- | ------------------------- | ------------ | ---------------------------------- |
+| encryption    | WorkbookEncryptionRequest | ✓            | Krypteringsinställningar för arbetsboken. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+#### **WorkbookEncryptionRequest**
+
+| Parameternamn  | Typ     | Obligatorisk | Beskrivning                                                                              |
+| -------------- | ------- | ------------ | ---------------------------------------------------------------------------------------- |
+| EncryptionType | string  | ✓            | Krypteringsalgoritm. Se tabellen nedan för stödda värden och deras betydelse.          |
+| KeyLength      | integer | ✗            | Längden på krypteringsnyckeln i bitar (ignoreras för `XOR` och `Compatible`).           |
+| Password       | string  | ✓            | Lösenord som används för kryptering.                                                     |
+
+#### **Värden för EncryptionType**
+
+| Värde                             | Beskrivning                                          |
+| --------------------------------- | ---------------------------------------------------- |
+| `XOR`                             | Enkel XOR-algoritm (äldre, låg säkerhet).           |
+| `Compatible`                      | Excel 97‑2003-kompatibel kryptering (40‑bitars).    |
+| `EnhancedCryptographicProviderV1` | AES‑128 med SHA‑1-hash.                              |
+| `StrongCryptographicProvider`     | AES‑256 med SHA‑512-hash (starkaste versionen).      |
+
+### Svar
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                                 |
+|-----|-----------------------------|-------------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Oauktoriserad               | Ogiltigt eller saknat JWT-token.                            |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen.          |
+| 500 | Internt serverfel           | Oväntat serverfel.                                          |
+
+## Hur du använder PostEncryptDocument API med SDK:er
+
+### PostEncryptDocument API-specifikation
+
+<a href="https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument" rel="noopener noreferrer">OpenAPI-specifikationen</a> definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör ett anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"EncryptionType\": \"XOR\", \"KeyLength\": 128, \"Password\": \"mateen\"}"
-
+```bash
+# Kryptera arbetsboken "test.xlsx" med XOR-algoritmen (128‑bitars nyckel) och lösenordet "mateen".
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -d '{ "EncryptionType": "XOR", "KeyLength": 128, "Password": "mateen"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
-    "Code":"200",
-
-    "Status":"OK"
-
+  "Code": "200",
+  "Status": "OK"
 }
-
 ```
+
+**Möjliga felaktiga svar**
+
+| HTTP-status | Kod                 | Meddelande                                           |
+| ----------- | ------------------- | ---------------------------------------------------- |
+| 400         | BadRequest          | Saknade eller ogiltiga parametrar.                  |
+| 401         | Unauthorized        | Autentiseringstoken saknas eller är ogiltigt.       |
+| 403         | Forbidden           | Otillräckliga behörigheter för att komma åt lagringen. |
+| 500         | InternalServerError | Oväntat serverfel.                                   |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på lågnivå så att du kan fokusera på dina projektuppgifter. Kolla in <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub-lagringsplatsen</a> för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -130,3 +176,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

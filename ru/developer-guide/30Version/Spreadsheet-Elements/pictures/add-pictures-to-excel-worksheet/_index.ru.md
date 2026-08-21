@@ -1,68 +1,93 @@
-﻿---
-title: Добавить изображение в файл Excel
-second_title: Documen
-linktitle: Объявление
-type: docs
-url: /ru/pictures/add/
-aliases: [/add-pictures-to-excel-worksheet/]
-keywords: Add a picture in an Excel file
-description: Aspose.Cells Cloud REST API поддерживает добавление изображения в файл Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Добавить изображение в файл Excel
 ---
-Этот REST API указывает `add` на новую картинку для рабочего листа Excel.
+title: "Добавление изображения в файл Excel"
+second_title: "Документ"
+linktitle: "Добавить"
+type: docs
+url: /pictures/add/
+aliases: [/add-pictures-to-excel-worksheet/]
+keywords: "Aspose.Cells, Excel, добавление изображения, REST API"
+description: "Используйте Aspose.Cells Cloud REST API для добавления изображения в лист Excel. SDK для Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby и Swift упрощают интеграцию на различных платформах."
+weight: 20
+ArticleTitle: "Добавление изображения в лист Excel — API Aspose.Cells Cloud"
+---
 
-## РСЕT API
+Этот REST API добавляет новое изображение в лист Excel.  
+**Необходимые условия:** У вас должен быть действительный токен аутентификации Aspose Cloud, существующая рабочая книга, сохранённая в поддерживаемом хранилище, и соответствующие права на изменение листа.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
- 
+## API PutWorksheetAddPicture
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Имя рабочего листа.|
-| картина|| тело| Объект изображения|
-| верхняя левая строка| целое число| запрос|0 |
-| верхняя левая колонка| целое число| запрос|0 |
-| нижняя правая строка| целое число| запрос|0 |
-| нижняя правая колонка| целое число| запрос|0 |
-| picturePath| нить| запрос| Если путь к изображению не указан, данные изображения проверяются в теле запроса.|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### Параметры запроса
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра | Тип    | Расположение | Описание                                                                                   |
+| ------------- | ------ | ----------- | ------------------------------------------------------------------------------------------ |
+| name          | string | path        | Имя рабочей книги.                                                                         |
+| sheetName     | string | path        | Имя листа.                                                                                |
+| picture       | object | body        | Объект изображения (бинарные данные).                                                     |
+| upperLeftRow  | integer | query      | Нулевой индекс верхней левой строки, в которую будет помещено изображение.               |
+| upperLeftColumn | integer | query    | Нулевой индекс верхнего левого столбца, в который будет помещено изображение.            |
+| lowerRightRow | integer | query      | Нулевой индекс нижней правой строки области изображения.                                 |
+| lowerRightColumn | integer | query   | Нулевой индекс нижнего правого столбца области изображения.                              |
+| picturePath   | string | query       | Путь к файлу изображения; если опущен, данные изображения должны быть переданы в теле запроса. |
+| folder        | string | query       | Папка, содержащая рабочую книгу.                                                          |
+| storageName   | string | query       | Имя службы хранилища.                                                                     |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Примечание к телу запроса:** При отсутствии параметра `picturePath` передавайте бинарные данные изображения в теле запроса, используя `multipart/form-data`.
+
+### Коды HTTP-статуса
+
+| Код | Значение                     | Описание                                                                 |
+|-----|-----------------------------|--------------------------------------------------------------------------|
+| 200 | OK                          | Фильтр применён успешно; ответ содержит информацию о выполнении операции. |
+| 400 | Bad Request                 | Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized                | Недействительный или отсутствующий JWT-токен.                           |
+| 413 | Payload Too Large           | Загруженный файл превышает лимит размера.                               |
+| 500 | Internal Server Error       | Непредвиденная ошибка сервера.                                           |
+
+**Пример схемы ответа 200**
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "PictureUrl": "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/1"
+}
+```
+
+**Примечание:** Максимальный размер изображения — 10 МБ; файлы большего размера будут отклонены с ответом `400 Bad Request`.
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture) определяет общедоступное программное интерфейсное решение и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Следующий пример демонстрирует, как выполнять вызовы в Cloud API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures?picturePath=aspose-cloud.png" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures?picturePath=aspose-cloud.png" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -71,9 +96,9 @@ curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Ознакомьтесь с [репозиторием на GitHub](https://github.com/aspose-cells-cloud), чтобы увидеть полный список SDK Aspose.Cells Cloud.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как выполнять вызовы в веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -103,7 +128,7 @@ curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetAddPicture.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82deb4189bc27ae92abf73c36b4df0" "Example_PutWorksheetAddPicture.ts" >}}
 
 {{< /tab >}}
 
@@ -126,3 +151,5 @@ curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Примечание:** Поддерживаемые форматы изображений включают PNG, JPEG, BMP и GIF. Максимальный размер изображения — 10 МБ; файлы большего размера будут отклонены с ответом `400 Bad Request`.

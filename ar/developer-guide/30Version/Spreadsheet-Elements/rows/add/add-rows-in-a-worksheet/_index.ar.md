@@ -1,75 +1,93 @@
-﻿---
-title: إضافة صفوف متعددة إلى ورقة عمل Excel
-second_title: Documen
-linktitle: صف
-type: docs
-url: /ar/rows/add/rows/
-keywords: Add multi rows on an Excel workshee
-description: يدعم Cloud REST إضافة صفوف متعددة في ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة صفوف متعددة على ورقة عمل Excel
 ---
-يشير هذا REST API إلى إضافة عدة صفوف جديدة في ورقة العمل Excel.
+title: "إضافة صفوف متعددة إلى ورقة عمل Excel"
+ArticleTitle: "إضافة صفوف متعددة إلى ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud API"
+second_title: "مستند"
+linktype: "صفحات"
+type: docs
+url: /rows/add/rows/
+keywords: "Aspose.Cells Cloud، إدخال صفوف، ورقة عمل Excel، واجهة REST API، مكتبة SDK، إضافة صفوف متعددة"
+description: "تعرّف على كيفية استخدام واجهة Aspose.Cells Cloud REST API لإدخال صفوف متعددة في ورقة عمل Excel. يغطي هذا الدليل نقطة النهاية ومعلمات الطلب وأوامر cURL النموذجية وأمثلة استخدام مكتبات SDK."
+weight: 20
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية REST بإضافة عدة صفوف جديدة إلى ورقة عمل Excel.
 
-```bash
- 
+## PutInsertWorksheetRows API
+
+```http
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| صف البداية| عدد صحيح| استفسار| مؤشر الصف الأول الذي سيتم تشغيله.|
-| إجمالي الصفوف| عدد صحيح| استفسار|1 |
-| تحديث المرجع| منطقي| استفسار| حقيقي|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتشترط <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">المصادقة باستخدام رمز مميز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **معلمات الطلب**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعلمة     | النوع    | الموقع | الوصف                                                                 |
+|------------------|----------|--------|------------------------------------------------------------------------|
+| name             | نص (string) | المسار (path) | اسم المصنف (الملف).                                                    |
+| sheetName        | نص (string) | المسار (path) | اسم ورقة العمل.                                                        |
+| startrow         | عدد صحيح (integer) | الاستعلام (query) | فهرس أول صف سيتم إدراجه (**يبدأ من الصفر**).                          |
+| totalRows        | عدد صحيح (integer) | الاستعلام (query) | عدد الصفوف المراد إدراجه.                                              |
+| updateReference  | منطقي (boolean) | الاستعلام (query) | ما إذا كان سيتم تحديث مراجع الخلايا بعد الإدراج (`true` أو `false`). |
+| folder           | نص (string) | الاستعلام (query) | المجلد الذي يحتوي على المستند.                                         |
+| storageName      | نص (string) | الاستعلام (query) | اسم وحدة التخزين.                                                       |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**المتطلبات المسبقة**  
+يجب أن يكون المصنف موجودًا مسبقًا في وحدة التخزين (أو المجلد) المحددة قبل تنفيذ هذه العملية.
+
+**المصادقة**  
+تتطلب الواجهة البرمجية وجود رمز مميز JWT صالح. يُدرج في رأس الطلب `Authorization` كما هو موضح في مثال cURL أدناه.
+
+يُعرّف [مواصفة OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) واجهة برمجة تطبيقات عامة قابلة للاستخدام، وتتيح لك إجراء تفاعلات REST مباشرة من خلال متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات ويب Aspose.Cells. يوضح المثال التالي كيفية استدعاء واجهة Cloud API باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=11&updateReference=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
+
+> **ملاحظة:** لا تتطلب هذه العملية `PUT` وجود جسم طلب؛ يمكن إرسال كائن JSON فارغ (`{}`) إذا اشترطت مكتبة العميل وجود حمل بيانات.
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+*رموز الاستجابة الممكنة*  
+
+- **200 OK** – أُدخلت الصفوف بنجاح.  
+- **400 Bad Request** – معلمات غير صالحة (مثل: فهرس صف سالب).  
+- **401 Unauthorized** – رمز JWT مفقود أو غير صالح.  
+- **404 Not Found** – المصنف أو ورقة العمل المحددة غير موجودة.  
+- **500 Internal Server Error** – خطأ في الخادم غير متوقع.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+للمزيد من العمليات على الصفوف، راجع الصفحات ذات الصلة: **حذف الصفوف**، **الحصول على بيانات الصفوف**، و **نسخ الصفوف**.
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+## مجموعة أدوات Cloud SDK
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+استخدام مكتبة SDK هو أسرع طريقة لتطوير التطبيقات، إذ تُدارة التفاصيل منخفضة المستوى تلقائيًا مما يسمح لك بالتركيز على مشروعك. يُرجى مراجعة [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام مكتبات SDK متنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -99,7 +117,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
 
 {{< /tab >}}
 

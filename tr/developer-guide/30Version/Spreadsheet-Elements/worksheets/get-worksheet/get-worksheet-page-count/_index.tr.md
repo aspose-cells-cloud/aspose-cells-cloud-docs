@@ -1,70 +1,82 @@
-﻿---
-title: Excel çalışma sayfasının sayfa sayısını alın
-second_title: Documen
-linktitle: SayfaCoun
+---
+title: "Excel Çalışma Sayfası İçin Sayfa Sayısını Alın"
+second_title: "Belge"
+linktitle: "SayfaSayısı"
 type: docs
 url: /tr/worksheets/page-count/
-keywords: Get page count on an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel Çalışma Sayfasında sayfa sayısını almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
+keywords: "Aspose.Cells, Excel API, çalışma sayfası sayfa sayısı, REST, bulut SDK'sı, Excel sayfalama"
+description: "Aspose.Cells Cloud REST API'sini (v3.0) kullanarak bir Excel çalışma sayfasındaki yazdırılabilir sayfa sayısını alın. HTTPS istek formatını, kimlik doğrulama adımlarını, örnek cURL isteğini, tam JSON yanıtını, durum kodlarını ve SDK kod örneklerini içerir."
 weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfası için sayfa sayısını alma
+ArticleTitle: "Excel Çalışma Sayfası İçin Sayfa Sayısını Alın – Aspose.Cells Cloud API"
 ---
-Bu REST API çalışma sayfası için `get page count`'i gösterir.
 
-## RSET API
+Bu REST API, bir çalışma sayfası için **sayfa sayısını** döndürür.
+
+**Kimlik Doğrulama:** Tüm Aspose.Cells Cloud uç noktaları, OAuth2 akışı aracılığıyla elde edilen Bearer belirteci gerektirir. Belirteci aşağıda gösterilen cURL örneğinde olduğu gibi `Authorization` başlığında dahil edin.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagecount
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagecount
 ```
 
-İstek parametreleri şunlardır:
+### İstek Parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| dosya| sicim| sorgu| Belgenin klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre   | Tür    | Konum  | Açıklama                              |
+| ----------- | ------ | ------ | ------------------------------------- |
+| name        | string | path   | Belge adı.                            |
+| sheetName   | string | path   | Çalışma sayfası adı.                  |
+| folder      | string | query  | Belgeyi içeren klasör.                |
+| storageName | string | query  | Depo adı.                             |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/GetPageCount) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/GetPageCount), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells web servislerine kolayca ulaşmak için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile API’yi nasıl çağıracağınızı göstermektedir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/worksheets/Sheet1/pagecount" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/worksheets/Sheet1/pagecount" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <access_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
-3
- 
+```json
+{
+  "PageCount": 3
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Yanıt Detayları
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| HTTP Durumu | Anlamı                                                  |
+| ----------- | ------------------------------------------------------- |
+| **200**     | Başarılı – yukarıda gösterilen JSON yükünü döndürür.    |
+| **401**     | Yetkisiz – eksik veya geçersiz belirteç.               |
+| **404**     | Bulunamadı – dosya veya çalışma sayfası mevcut değil.   |
+| **500**     | Sunucu iç hatası – beklenmeyen sunucu durumu.          |
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+### Versiyon Geçmişi
+
+_API versiyonu **v3.0** (yayınlandı 2025). Daha yeni bir sürüm kullanıyorsanız, güncellenmiş uç nokta belgelerine bakın._
+
+## Bulut SDK Kütüphanesi
+
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. SDK, düşük seviye detayları soyutlayarak iş mantığınıza odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, farklı SDK'lar kullanılarak Aspose.Cells web servislerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -117,3 +129,8 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Notlar
+
+- Sayfa sayısı, sayfa kırılımlarını, kenar boşluklarını ve ölçeklemeyi dikkate alarak yazdırılabilir düzeni yansıtır. Gizli satır veya sütunlar sonucu etkileyebilir.
+- İsteği yapmadan önce hedef çalışma sayfasının mevcut olduğundan ve dosyanın belirtilen `folder` ve `storageName` konumunda depolandığından emin olun.

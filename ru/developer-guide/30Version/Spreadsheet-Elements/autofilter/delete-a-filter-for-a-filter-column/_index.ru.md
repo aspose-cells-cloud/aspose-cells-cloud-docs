@@ -1,84 +1,106 @@
-﻿---
-title: Удалить фильтр на листе Excel
-second_title: Documen
-linktitle: Удалить фильтр
+---
+title: "Удаление фильтра из рабочей книги Excel — Aspose.Cells Cloud API"
+second_title: "Документ"
+linktitle: "Удалить фильтр"
 type: docs
 url: /ru/delete-filter/
-aliases: [/delete-a-filter-for-a-filter-column/,/delete-auto-filter/]
-keywords: Deletes a filter on an Excel worksheet
-description: Облако Aspose.Cells API поддерживает удаление фильтра на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+aliases: [/ru/delete-a-filter-for-a-filter-column/, /ru/delete-auto-filter/]
+keywords: "Aspose.Cells Cloud удаление фильтра, Excel, REST API, SDK"
+description: "Узнайте, как удалить Автофильтр из рабочего листа Excel с помощью Aspose.Cells Cloud REST API, cURL и SDK (C#, Java, Python и др.). Включает адрес конечной точки, параметры, аутентификацию и примеры кода."
 weight: 100
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Удалить фильтр на листе Excel
 ---
-Этот REST API указывает на удаление `filter` на рабочем листе Excel.
 
-## РСЕT API
+## REST API
+
+Этот REST API удаляет **Автофильтр** с рабочего листа Excel.
 
 ```bash
-
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
-
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| Путь| Название рабочей книги.|
-| Имя_листа| нить| Путь| Название рабочего листа.|
-|диапазон|нить| Запрос||
-|fieldIndex|целое число| Запрос||
-|dateTimeGroupingType|нить| Запрос| День/Час/Минута/Месяц/Секунда/Год|
-|год|целое число| Запрос||
-|месяц|целое число| Запрос||
-|день|целое число| Запрос||
-|час|целое число| Запрос||
-|минута|целое число| Запрос||
-|второй|целое число| Запрос||
-|matchBlanks|нить| Запрос|правда/ложь|
-|обновить|нить| Запрос|правда/ложь|
-|папка|нить| Запрос|Оригинальная папка рабочей тетради.|
-|имя_хранилища|нить| Запрос|Имя хранилища.|
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### Параметры запроса
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра          | Тип    | Расположение | Обязательный? | Описание                                                                                   |
+| ---------------------- | ------ | ------------ | ------------- | ------------------------------------------------------------------------------------------ |
+| **name**               | string | Path         | Да            | Имя рабочей книги.                                                                         |
+| **sheetName**          | string | Path         | Да            | Имя рабочего листа.                                                                        |
+| **range**              | string | Query        | Нет           | Диапазон ячеек, к которому применяется фильтр (например, `A1:C10`).                       |
+| **fieldIndex**         | integer| Query        | Да            | Нулевой индекс столбца, к которому применяется фильтр.                                     |
+| **dateTimeGroupingType**| string| Query        | Нет           | Способ группировки значений даты и времени: `Day`, `Hour`, `Minute`, `Month`, `Second`, `Year`. |
+| **year**               | integer| Query        | Нет           | Компонент года для группировки дат.                                                        |
+| **month**              | integer| Query        | Нет           | Компонент месяца для группировки дат.                                                      |
+| **day**                | integer| Query        | Нет           | Компонент дня для группировки дат.                                                         |
+| **hour**               | integer| Query        | Нет           | Компонент часа для группировки дат.                                                        |
+| **minute**             | integer| Query        | Нет           | Компонент минуты для группировки дат.                                                      |
+| **second**             | integer| Query        | Нет           | Компонент секунды для группировки дат.                                                     |
+| **matchBlanks**        | boolean| Query        | Нет           | `true` / `false` — включать ли пустые ячейки в фильтр.                                     |
+| **refresh**            | boolean| Query        | Нет           | `true` / `false` — обновлять ли рабочий лист после удаления.                               |
+| **folder**             | string | Query        | Нет           | Папка исходной рабочей книги.                                                              |
+| **storageName**        | string | Query        | Нет           | Имя хранилища.                                                                             |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Ответ**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                                                 |
+|-----|-----------------------------|--------------------------------------------------------------------------|
+| 200 | OK (OK)                     | Фильтр успешно применён; ответ содержит подробности операции.            |
+| 400 | Bad Request (Неверный запрос)| Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизовано)| Неверный или отсутствующий токен JWT.                                     |
+| 413 | Payload Too Large (Слишком большой payload)| Загруженный файл превышает лимит размера.                     |
+| 500 | Internal Server Error (Внутренняя ошибка сервера)| Непредвиденная ошибка сервера.                                  |
+
+## Как использовать API DeleteWorksheetFilter с SDK
+
+### Спецификация API DeleteWorksheetFilter
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) определяет общедоступное программное интерфейсное определение и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как вызвать облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?fieldIndex=0&criteria=Year" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?fieldIndex=0&dateTimeGroupingType=Year" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — наиболее эффективный способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже показывают, как выполнять вызовы веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

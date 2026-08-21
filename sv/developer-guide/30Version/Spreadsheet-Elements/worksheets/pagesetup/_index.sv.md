@@ -1,53 +1,90 @@
-﻿---
-title: Sidinställningar för arbetsblad
-second_title: Documen
-linktitle: Sidinställningar
-type: docs
-url: /sv/page-setup/
-keywords: An Excel worksheet page setup
-description: Aspose.Cells Cloud REST API stöder tillägg av ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Sidinställningar för ett Excel-kalkylblad
 ---
-# **sidinställningar**
+title: "Arbetsblad – Sidinställning"
+second_title: "Dokument"
+linktitle: "Sidinställning"
+type: docs
+url: /page-setup/
+keywords: "Aspose.Cells, pageSetup, arbetsblad, utskriftsinställningar, marginaler, orientering, pappersstorlek, sidhuvud, sidfot, skalning"
+description: "Lär dig hur du konfigurerar utskriftslayout för Excel-arbetsblad med Aspose.Cells Cloud:s PageSetup-objekt. Innehåller en lista över egenskaper, standardvärden, intervall och kodexempel i C#, Java och Python."
+weight: 20
+ArticleTitle: "Arbetsblad – Sidinställning – Konfigurera utskriftslayout med Aspose.Cells Cloud"
+---
 
-inställning för utskriftssida i Excel
+# **PageSetup**
 
-## **Fastigheter**
+Excel-utskriftssidinställningar
 
-| Fastighetsnamn| Fastighetstyp| Nullvärde| Skrivskyddad| Standardvärde| Beskrivning|
-|:- |:- |:- |:- |:- |:- |
-|Svartvitt|Booleansk|sann| falsk||Representerar om delar av dokumentet kommer att skrivas ut i svartvitt.|
-|Bottenmarginal|Flytande|sann| falsk||Representerar storleken på den nedre marginalen, i centimeter.|
-|CentrumHorisontellt|Booleansk|sann| falsk||Representerar om arket är utskrivet centrerat horisontellt.|
-|Centrera vertikalt|Booleansk|sann| falsk||Representerar om arket är utskrivet centrerat vertikalt.|
-|FörstaSidnummer|Heltal|sann| falsk||Representerar det första sidnumret som kommer att användas när detta ark skrivs ut.|
-|AnpassaTillSidorHögt|Heltal|sann| falsk||Representerar antalet sidor som kalkylbladet kommer att skalas till när det skrivs ut. Standardvärdet är 1.|
-|AnpassaTillSidorBred|Heltal|sann| falsk||Representerar antalet sidor i bredd som kalkylbladet skalas till när det skrivs ut. Standardvärdet är 1.|
-|Sidfotsmarginal|Flytande|sann| falsk||Representerar avståndet från sidans nederkant till sidfoten, i centimeter.|
-|Sidhuvudmarginal|Flytande|sann| falsk||Representerar avståndet från sidans överkant till sidhuvudet, i centimeter.|
-|ÄrAutoFörstaSidnummer|Booleansk|sann| falsk||Anger om den första sidnumret tilldelas automatiskt.|
-|IsHFAlignMarginals|Booleansk|sann| falsk||Anger om sidhuvud- och sidfotsmarginalerna är justerade med sidans marginaler. Om den här egenskapen är sann kommer vänster sidhuvud och sidfot att justeras med vänstermarginalen och höger sidhuvud och sidfot kommer att justeras med högermarginalen. Det här alternativet är aktiverat som standard.|
-|ÄrHFDiffFörst|Booleansk|sann| falsk||Sant betyder att sidhuvudet/sidfoten på första sidan skiljer sig från andra sidor.|
-|ÄrHFDiffUddaJämn|Booleansk|sann| falsk||Sant betyder att sidhuvudet/sidfoten på udda sidor skiljer sig från udda sidor.|
-|ÄrHFSkalaMedDokument|Booleansk|sann| falsk||Anger om sidhuvud och sidfot är skalade med dokumentskalning. Gäller endast för Excel 2007.|
-|ÄrProcentSkala|Booleansk|sann| falsk||Om den här egenskapen är Falskt styr egenskaperna AnpassaTillBred och AnpassaTillHög hur kalkylbladet skalas.|
-|Vänstermarginal|Flytande|sann| falsk||Representerar storleken på vänstermarginalen, i centimeter.|
-|Beställa|Sträng|sann| falsk||Representerar den ordning som Microsoft Excel använder för att numrera sidor vid utskrift av ett stort kalkylblad.|
-|Orientering|Sträng|sann| falsk|| Representerar sidans utskriftsorientering. Liggande/Stående|
-|Pappersstorlek|Sträng|sann| falsk||Representerar papprets storlek.|
-|Utskriftsområde|Sträng|sann| falsk||Representerar det område som ska skrivas ut.|
-|Skriv ut kommentarer|Sträng|sann| falsk||Representerar hur kommentarer skrivs ut med arket.|
-|Utskriftskopior|Heltal|sann| falsk||Hämta och anger antal kopior att skriva ut.|
-|Skriv utUtkast|Booleansk|sann| falsk||Representerar om arket kommer att skrivas ut utan grafik.|
-|Utskriftsfel|Sträng|sann| falsk||Anger vilken typ av utskriftsfel som visas.|
-|Skriv ut rutnät|Booleansk|sann| falsk||Representerar om cellstödlinjer skrivs ut på sidan.|
-|Skriv ut rubriker|Booleansk|sann| falsk||Representerar om rad- och kolumnrubriker skrivs ut med den här sidan.|
-|Utskriftskvalitet|Heltal|sann| falsk||Representerar utskriftskvaliteten.|
-|Skriv utTitelKolumner|Sträng|sann| falsk||Representerar kolumnerna som innehåller cellerna som ska upprepas på vänster sida av varje sida.|
-|Skriv utTitelRader|Sträng|sann| falsk||Representerar raderna som innehåller cellerna som ska upprepas högst upp på varje sida.|
-|Högermarginal|Flytande|sann| falsk||Representerar storleken på den högra marginalen, i centimeter.|
-|Övre marginal|Flytande|sann| falsk||Representerar storleken på den övre marginalen, i centimeter.|
-|Zoom|Heltal|sann| falsk||Representerar skalningsfaktorn i procent. Den bör vara mellan 10 och 400.|
-|Rubrik|Behållare|sann| falsk||Representerar sidhuvudet.|
-|Sidfot|Behållare|sann| falsk||Representerar sidans sidfot.|
+## Översikt
+
+**PageSetup**-objektet definierar utskriftslayoutalternativen för ett Excel-arbetsblad, till exempel marginaler, orientering, skalning, sidhuvud, sidfot och andra utskriftsrelaterade inställningar. Genom att konfigurera dessa egenskaper kan utvecklare skapa utskriftsvänliga arbetsböcker som matchar önskad utseende och sidindelning.
+
+Här är ett kort C#-exempel som visar hur vanliga sidinställningsegenskaper ställs in med Aspose.Cells Cloud SDK:
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+
+// Initiera API-klienten (ersätt med dina autentiseringsuppgifter)
+var apiInstance = new CellsApi("DIN_KLIENT_ID", "DIN_KLIENT_HEMILGHET");
+
+// Definiera PageSetup-inställningarna
+var pageSetup = new PageSetup()
+{
+    Orientation = "Landscape",
+    PaperSize = "A4",
+    CenterHorizontally = true,
+    CenterVertically = true,
+    Zoom = 100
+};
+
+// Verkställ inställningarna på arbetsblad nummer ett i arbetsboken
+apiInstance.PutWorksheetPageSetup("Sample.xlsx", "Sheet1", pageSetup);
+```
+
+Detta kodstycke ställer in arbetsbladet i liggande orientering, använder A4-papper, centrera innehållet horisontellt och vertikalt samt applicerar en skalningsfaktor på 100 %.
+
+## Egenskaper
+
+| Egenskapsnamn         | Egenskapstyp | Nullable | ReadOnly | Standardvärde  | Beskrivning                                                                 |
+| --------------------- | ------------ | -------- | -------- | -------------- | ---------------------------------------------------------------------------- |
+| BlackAndWhite         | bool         | false    | false    | false          | Skriver ut arbetsbladet i svartvitt läge.                                    |
+| BottomMargin          | float        | true     | false    | 2,54 cm        | Storlek på nedre marginalen i centimeter.                                    |
+| CenterHorizontally    | bool         | false    | false    | false          | Centrerar arket horisontellt vid utskrift.                                   |
+| CenterVertically      | bool         | false    | false    | false          | Centrerar arket vertikalt vid utskrift.                                      |
+| FirstPageNumber       | int          | true     | false    | 1              | Det första sidnumret som används vid utskrift av arket.                     |
+| FitToPagesTall        | int          | false    | false    | 1              | Antal sidor i höjdled som arbetsbladet skalas till.                          |
+| FitToPagesWide        | int          | false    | false    | 1              | Antal sidor i breddled som arbetsbladet skalas till.                         |
+| FooterMargin          | float        | true     | false    | 2,54 cm        | Avstånd från sidans nedre kant till sidfoten, i centimeter.                  |
+| HeaderMargin          | float        | true     | false    | 2,54 cm        | Avstånd från sidans övre kant till sidhuvudet, i centimeter.                 |
+| IsAutoFirstPageNumber | bool         | false    | false    | false          | Tilldelar det första sidnumret automatiskt.                                  |
+| IsHFAlignMargins      | bool         | false    | false    | true           | Om true, matchas marginalerna för sidhuvud/sidfot med sidans marginaler.     |
+| IsHFDiffFirst         | bool         | false    | false    | false          | Indikerar att sidhuvudet/sidfoten på första sidan skiljer sig från andra sidor. |
+| IsHFDiffOddEven       | bool         | false    | false    | false          | Indikerar att sidhuvudet/sidfoten på udda sidor skiljer sig från jämna sidor. |
+| IsHFScaleWithDoc      | bool         | false    | false    | false          | Skalas sidhuvud och sidfot tillsammans med dokumentet (Excel 2007+).        |
+| IsPercentScale        | bool         | false    | false    | true           | När false styr `FitToPagesWide` och `FitToPagesTall` skalningen.             |
+| LeftMargin            | float        | true     | false    | 2,54 cm        | Storlek på vänster marginal i centimeter.                                    |
+| Order                 | string       | true     | false    | "DownThenOver" | Ordningen som Excel använder för att numrera sidor vid utskrift av stora arbetsblad. |
+| Orientation           | string       | false    | false    | "Portrait"     | Sidorientering: **Landscape** eller **Portrait**.                            |
+| PaperSize             | string       | true     | false    | "A4"           | Pappersstorlek som används vid utskrift.                                     |
+| PrintArea             | string       | true     | false    | (inget)        | Cellintervall som ska skrivas ut (t.ex. `"A1:D20"`).                         |
+| PrintComments         | string       | true     | false    | "NoComments"   | Hur kommentarer skrivs ut tillsammans med arket.                             |
+| PrintCopies           | int          | true     | false    | 1              | Antal exemplar att skriva ut.                                                 |
+| PrintDraft            | bool         | false    | false    | false          | Skriver ut arbetsbladet i utkastläge (utan grafik).                          |
+| PrintErrors           | string       | true     | false    | "Display"      | Typ av utskriftsfel som visas.                                                |
+| PrintGridlines        | bool         | false    | false    | false          | Skriver ut cellernas rutnät.                                                  |
+| PrintHeadings         | bool         | false    | false    | false          | Skriver ut rad- och kolumnrubriker.                                           |
+| PrintQuality          | int          | true     | false    | 600            | Utskriftskvalitetsinställning (punkter per tum).                             |
+| PrintTitleColumns     | string       | true     | false    | (inget)        | Kolumner som ska upprepas på vänster sida av varje utskriven sida.           |
+| PrintTitleRows        | string       | true     | false    | (inget)        | Rader som ska upprepas längst upp på varje utskriven sida.                   |
+| RightMargin           | float        | true     | false    | 2,54 cm        | Storlek på höger marginal i centimeter.                                       |
+| TopMargin             | float        | true     | false    | 2,54 cm        | Storlek på övre marginal i centimeter.                                        |
+| Zoom                  | int          | false    | false    | 100            | Skalningsfaktor i procent (10–400 %).                                         |
+| Header                | object       | true     | false    | (inget)        | Konfiguration för sidhuvud.                                                   |
+| Footer                | object       | true     | false    | (inget)        | Konfiguration för sidfot.                                                     |
+
+## Relaterade objekt
+
+- **Header** – Konfigurerar arbetsbladets sidhuvud.  
+- **Footer** – Konfigurerar arbetsbladets sidfot.  
+- **PrintOptions** – Ytterligare utskriftsrelaterade inställningar, till exempel sidbrytningar och utskriftsområde.  
+---

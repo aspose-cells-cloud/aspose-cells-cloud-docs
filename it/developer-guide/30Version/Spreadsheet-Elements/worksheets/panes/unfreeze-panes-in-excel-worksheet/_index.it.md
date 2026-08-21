@@ -1,77 +1,73 @@
-﻿---
-title: Sblocca i riquadri su un foglio di lavoro Excel
-second_title: Documen
-linktitle: Sbloccare
+---
+title: "Sblocca i riquadri in un foglio Excel"
+second_title: "Document"
+linktype: "Sblocca"
 type: docs
 url: /it/worksheets/panes/unfreeze/
-aliases: [/unfreeze-panes-in-excel-worksheet/,/worksheets/unfreeze-panes/]
-keywords: Unfreeze panes on an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta lo sblocco dei riquadri su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases:
+  - /it/unfreeze-panes-in-excel-worksheet/
+  - /it/worksheets/unfreeze-panes/
+keywords: "sblocca riquadri, Excel, Aspose.Cells Cloud, API REST, SDK, C#, Java, PHP, Python, Node.js, Go, Swift, Android, Ruby, Perl"
+description: "Scopri come rimuovere i riquadri bloccati da un foglio Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include un esempio cURL e frammenti di codice SDK per C#, Java, Python e altri linguaggi."
 weight: 200
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Sblocca i riquadri su un foglio di lavoro Excel
 ---
-Questo REST API indica `unfreeze panes` sul foglio di lavoro Excel.
- 
-## RSET API
- 
+
+Questa chiamata API REST **sblocca** (rimuove i riquadri bloccati) da un foglio Excel.
+
+## API REST
+
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
 ```
- I parametri della richiesta sono:
- 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero||
-| Nome foglio| corda| sentiero||
-| riga| intero| domanda||
-| colonna| intero| domanda||
-| righe congelate| intero| domanda||
-| colonne congelate| intero| domanda||
-| cartella| corda| domanda||
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
- 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetFreezePanes) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
- 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Parametri della richiesta**
+
+| Nome Parametro | Tipo   | Posizione | Descrizione                                         |
+| -------------- | ------ | --------- | --------------------------------------------------- |
+| `name`         | string | path      | Nome del file Excel.                                |
+| `sheetName`    | string | path      | Nome del foglio di lavoro.                          |
+| `folder`       | string | query     | Percorso della cartella nello storage dove è posizionato il file. |
+| `storageName`  | string | query     | Nome dello storage Aspose Cloud.                    |
+
+_Nessun ulteriore parametro di query (come riga, colonna, frozenRows o frozenColumns) è richiesto per l'operazione di sblocco._
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetFreezePanes) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/freezepanes?row=1&column=1&freezedRows=1&freezedColumns=1" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/freezepanes" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Famiglia Cloud SDK
- 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
- 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
- 
+
+## Famiglia di SDK Cloud
+
+Utilizzare un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, permettendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web Aspose.Cells utilizzando vari SDK:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

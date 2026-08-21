@@ -1,57 +1,57 @@
-﻿---
-title: Получить сводную таблицу на листе Excel
-second_title: Documen
-linktitle: Получать
-type: docs
-url: /ru/pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
-keywords: Get a pivot table in an Excel file
-description: Aspose.Cells Cloud REST API поддерживает получение сводной таблицы в файле Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 10
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получение сводной таблицы на листе Excel
 ---
-Этот REST API указывает на получение информации о листе `pivottable` по индексу.
- 
-## РСЕT API
- 
+title: "Получение сводной таблицы в листе Excel"
+second_title: "Документ"
+linktype: "Получить"
+type: docs
+url: /pivot-tables/get/
+aliases: [/get-worksheet-pivot-table-information-by-index/]
+keywords: "Aspose.Cells, сводная таблица, Excel, REST API, получение сводной таблицы листа"
+description: "Получение сводной таблицы из листа Excel через Aspose.Cells Cloud REST API. Включает синтаксис запроса, параметры, аутентификацию, схему ответа, обработку ошибок и примеры SDK."
+weight: 10
+ArticleTitle: "Получение сводной таблицы в листе Excel"
+---
+
+Этот REST API позволяет получить информацию о **сводной таблице** в листе по её индексу.
+
+### **Безопасность и аутентификация**
+
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
+
+## REST API
+
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}
 ```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| pivottableIndex| целое число| путь||
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
- 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTable) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### Параметры запроса
+
+| Имя параметра     | Тип     | Местоположение | Описание                                             |
+| ----------------- | ------- | -------------- | ---------------------------------------------------- |
+| **name**          | string  | path           | Имя файла Excel.                                     |
+| **sheetName**     | string  | path           | Имя листа, содержащего сводную таблицу.             |
+| **pivottableIndex** | integer | path         | Индекс сводной таблицы в листе (начинается с 0).    |
+| **folder**        | string  | query          | Папка, в которой хранится документ.                 |
+| **storageName**   | string  | query          | Имя облачного хранилища Aspose Cloud.               |
+
+Для удобного доступа к веб-сервисам Aspose.Cells можно использовать утилиту командной строки **cURL**. Пример ниже показывает, как вызвать API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
   "Status": "string",
   "PivotFilters": [
@@ -69,9 +69,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
             "FilterType": "string",
             "MultipleFilters": {
               "MatchBlank": true,
-              "MultipleFilterList": [
-                {}
-              ]
+              "MultipleFilterList": [{}]
             },
             "ColorFilter": {
               "FilterByFillColor": "string",
@@ -140,7 +138,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
               "IsTop": true,
               "Items": 0
             },
-            "Visibledropdown": "string"
+            "VisibleDropdown": "string"
           }
         ],
         "Range": "string",
@@ -168,20 +166,43 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
     }
   ]
 }
- 
 ```
- 
+
+**Схема ответа**
+
+| Поле            | Тип     | Описание                                             |
+|-----------------|---------|------------------------------------------------------|
+| Status          | string  | Текст статуса операции (например, «OK»).            |
+| PivotFilters    | array   | Коллекция определений фильтров сводной таблицы.      |
+| └─ AutoFilter   | object  | Подробная информация об автоматической фильтрации.   |
+|    └─ link      | object  | Сведения о гиперссылке для фильтра.                  |
+|    └─ FilterColumns | array | Параметры фильтрации отдельных столбцов.         |
+|    └─ Range     | string  | Диапазон ячеек, к которому применяется фильтр.       |
+|    └─ Sorter    | object  | Конфигурация сортировки отфильтрованных данных.     |
+| (дополнительные вложенные поля имеют такую же структуру, как показано в примере JSON) |
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+### Обработка ошибок
+
+API использует стандартные HTTP-коды состояния. Типичные ответы:
+
+| Код состояния | Значение                                                           | Пример JSON (ошибка)                              |
+|--------------|--------------------------------------------------------------------|---------------------------------------------------|
+| 200          | Успех — возвращена сводная таблица                                | —                                                 |
+| 401          | Неавторизованный доступ — недействительный или отсутствующий токен | `{"code":401,"message":"Invalid access token."}`  |
+| 404          | Не найдено — файл, лист или индекс сводной таблицы не существуют  | `{"code":404,"message":"Pivot table not found."}` |
+| 500          | Ошибка сервера — непредвиденное условие                           | `{"code":500,"message":"Internal server error."}` |
+
+**Примечания:** API поддерживает файлы Excel объёмом до 150 МБ и работает с форматами Excel 2007–2021. Убедитесь, что имя листа указано с учётом регистра.
+
 ## Семейство облачных SDK
- 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
- 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
- 
- 
+
+Использование SDK — оптимальный способ ускорить разработку. SDK скрывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в репозитории [GitHub](https://github.com/aspose-cells-cloud).
+
+В приведённых ниже примерах показано, как вызывать веб-сервисы Aspose.Cells с помощью различных SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Perl" tabName10="Go" >}}
 
@@ -240,3 +261,4 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
 {{< /tab >}}
 
 {{< /tabs >}}
+---

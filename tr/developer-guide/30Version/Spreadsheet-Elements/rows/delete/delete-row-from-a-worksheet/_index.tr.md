@@ -1,171 +1,125 @@
-﻿---
-title: Excel çalışma sayfasındaki satırı sil
-second_title: Documen
-linktitle: Ro
-type: docs
-url: /tr/rows/delete/row/
-aliases: [/delete-row-from-a-worksheet/]
-keywords: Delete rows on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki satırların silinmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 80
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki satırı sil
 ---
-Bu REST API, Excel çalışma sayfasındaki bir satırı silmeyi belirtir.
+title: "Excel Çalışma Sayfasından Bir Satır Silme"
+second_title: "Belge"
+linktitle: "Satır"
+type: docs
+url: /rows/delete/row/
+aliases: [/delete-row-from-a-worksheet/]
+description: "Aspose.Cells Cloud REST API aracılığıyla bir Excel çalışma sayfasından belirli bir satırı silmek için DELETE /worksheets/{sheetName}/cells/rows/{rowIndex} uç noktasını kullanın. cURL komutunu, SDK örneklerini ve tüm parametre referansını içerir."
+keywords: "Aspose.Cells, satır sil, Excel, API, REST, Bulut, SDK"
+weight: 80
+ArticleTitle: "Excel Çalışma Sayfasından Bir Satır Silme – Aspose.Cells Cloud API Kılavuzu"
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasından bir satırı siler.
+
+**Ön Gereksinimler**  
+- Geçerli bir JWT **Yetkilendirme** belirteci.  
+- Çalışma kitabının desteklenen Aspose Bulut depolama alanına (varsayılan veya özel) kaydedilmiş olması gerekir.  
+- Hedef klasör (belirtilmişse) seçilen depolama alanında mevcut olmalıdır.
+
+## REST API
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
 ```
 
-İstek parametreleri şunlardır:
+### **İstek Parametreleri**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma kağıdı bame.|
-| satırIndeksi| tam sayı| yol| Satır dizini.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı     | Tür      | Yol / Sorgu | Gerekli | Açıklama                                                                                        |
+| ----------------- | -------- | ----------- | ------- | ----------------------------------------------------------------------------------------------- |
+| **name**          | string   | path        | Evet    | Çalışma kitabı adı.                                                                             |
+| **sheetName**     | string   | path        | Evet    | Çalışma sayfası adı.                                                                            |
+| **rowIndex**      | integer  | path        | Evet    | Silinecek satırın sıfır tabanlı indeksi.                                                        |
+| **startrow**      | integer  | query       | Hayır   | Silinecek ilk satırın indeksi (genellikle `rowIndex` ile aynı).                                 |
+| **totalRows**     | integer  | query       | Hayır   | Silinecek ardışık satır sayısı.                                                                 |
+| **updateReference** | boolean | query      | Hayır   | `true` (varsayılan) olarak ayarlandığında, silme işleminden sonra formüller, adlandırılmış aralıklar ve diğer referanslar güncellenir. |
+| **folder**        | string   | query       | Hayır   | Çalışma kitabının bulunduğu klasör.                                                             |
+| **storageName**   | string   | query       | Hayır   | Depolama hizmetinin adı.                                                                        |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, tam olarak çalıştırılabilir bir çağrı göstermektedir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=1&updateReference=true" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
-}
- 
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-## Bulut SDK Ailesi
-
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
-
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
-
-## **giriiş**
-
-Bu örnek, uygulamalarınızda Aspose.Cells Cloud API kullanarak Excel Çalışma Sayfasındaki bir satırı nasıl sileceğinizi gösterir. REST API'imizi herhangi bir dille kullanabilirsiniz: .NET, Java, PHP, Ruby, Rails, Python, jQuery ve daha fazlası.
-
-## **API Bilgi**
-
-|**API**|**Tip**|**Tanım**|**Kaynak Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/{ad}/çalışma sayfaları/{sayfaAdı}/hücreler/satırlar|POSTALAMAK|Excel Çalışma Sayfasından Satırları Sil|[Çalışma Sayfası Satırlarını Sil](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)|
-
-### **cURL Örnek**
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=1&updateReference=true" -H "accept: application/json"
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-
-{
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Olası HTTP Yanıt Kodları**
+
+| Kod | Anlamı                               | Açıklama                                                                     |
+|-----|--------------------------------------|------------------------------------------------------------------------------|
+| 200 | OK (Tamam)                           | Satır başarıyla silindi.                                                    |
+| 400 | Bad Request (Hatalı İstek)           | Eksik veya geçersiz parametreler (örneğin, sayısal olmayan `rowIndex`).     |
+| 401 | Unauthorized (Yetkisiz)              | Geçersiz veya eksik JWT belirteci.                                           |
+| 404 | Not Found (Bulunamadı)               | Belirtilen çalışma kitabı, çalışma sayfası veya satır mevcut değil.         |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası; ayrıntılar için hata yanıtına bakın.           |
+
+**Hata Yanıt Örneği**
+
+```json
+{
+  "Code": 400,
+  "Message": "Geçersiz satır indeksi sağlandı."
+}
+```
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, düşük seviyeli detayları soyutlayarak projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub Deposu](https://github.com/aspose-cells-cloud)’na göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web servislerine yönelik çağrıların farklı SDK’larla nasıl yapılacağını göstermektedir:
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleDeleteWorksheetRow.cs" >}}
+```bash
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=1&updateReference=true" \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_DeleteWorksheetRow.java" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_DeleteWorksheetRow.php" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_DeleteWorksheetRow.rb" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_DeleteWorksheetRow.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_DeleteWorksheetRow.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_DeleteWorksheetRow.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_DeleteWorksheetRow.go" >}}
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**İlgili İşlemler**  
+- [Satır Ekle](/cells/rows/add/row/)  
+- [Birden Fazla Satır Sil](/cells/rows/delete/rows/)  
+- [Satır Detaylarını Al](/cells/rows/get/row/)  
+---

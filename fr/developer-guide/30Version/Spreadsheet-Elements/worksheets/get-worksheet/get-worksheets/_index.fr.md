@@ -1,102 +1,75 @@
-﻿---
-title: Obtenir la feuille de travail
-second_title: Documen
-linktitle: Al
-type: docs
-url: /fr/worksheets/get-all/
-aliases: [/get-worksheet-count/]
-keywords: Get worksheets description from an Excel workbook
-description: Aspose.Cells Cloud REST API prend en charge l'obtention de la description des feuilles de calcul à partir d'un classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir des feuilles de calcul
 ---
-Ce REST API indique `get worksheets information`.
+title: "Obtenir toutes les feuilles de calcul"
+second_title: "Document"
+linktitle: "Toutes"
+type: docs
+url: /worksheets/get-all/
+aliases: [/get-worksheet-count/]
+keywords: "Aspose.Cells, API Cloud, Obtenir les feuilles de calcul, Excel, REST, SDK"
+description: "Récupérer la liste des feuilles de calcul dans un classeur Excel via l’API REST Aspose.Cells Cloud (v3.0). Inclut un exemple cURL, des extraits de code SDK et le format de réponse."
+weight: 10
+---
 
-## RSET API
+Cet API REST renvoie des informations sur les feuilles de calcul contenues dans un classeur.
+
+## API REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 ```
 
-Les paramètres de la requête sont :
+### **Paramètres de la requête**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| dossier| chaîne| requête| Dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type   | Emplacement | Description                              |
+| ---------------- | ------ | ----------- | ---------------------------------------- |
+| name             | string | path        | Le nom du document Excel.                |
+| folder           | string | query       | Le dossier contenant le document.        |
+| storageName      | string | query       | Le nom du stockage à utiliser.           |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder aux services Aspose.Cells Cloud. L’exemple ci-dessous illustre une requête GET permettant de récupérer les feuilles de calcul.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton JWT>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Worksheets": {
-
     "WorksheetList": [
-
       {
-
         "link": {
-
           "Href": "/Sheet1",
-
           "Rel": "self"
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/Sheet2",
-
           "Rel": "self"
-
         }
-
       }
-
     ],
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets",
       "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
 ```
 
@@ -104,11 +77,31 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
 
 {{< /tabs >}}
 
+## Gestion des erreurs
+
+Codes d’état HTTP typiques renvoyés par ce point de terminaison :
+
+| Code | Signification         | Description                                    |
+| ---- | --------------------- | ---------------------------------------------- |
+| 400  | Bad Request           | Paramètre obligatoire manquant (par ex. `name`). |
+| 401  | Unauthorized          | Jeton JWT invalide ou manquant.                |
+| 404  | Not Found             | Le classeur spécifié n’existe pas.             |
+| 500  | Internal Server Error | Condition inattendue côté serveur.             |
+
+Les réponses d’erreur sont renvoyées au format JSON, par exemple :
+
+```json
+{
+  "Code": "401",
+  "Message": "Jeton d’accès invalide."
+}
+```
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK constitue la meilleure façon d’accélérer le développement. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,73 +1,145 @@
-﻿---
-title: 如何使用智能标记模板创建 Excel 报告
-second_title: Documen
-linktitle: 智能市场
-type: docs
-url: /zh/build-report-with-smart-marker/
-aliases: [/create-excel-workbook-from-a-smartmarker-template/,/workbook/smartmarker/,/workbook/create/smartmarker/]
-keywords: How to create an Excel workbook with a smart marker template
-description: Aspose.Cells Cloud REST API 如何创建带有智能标记模板的工作簿 Excel。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 40
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、如何使用智能标记模板创建 Excel 工作簿
 ---
-此 REST API 表示使用 `smart marker` 创建 `workbook`。
+title: "使用 Smart Marker 模板构建 Excel 报表"
+second_title: "文档"
+linktype: "SmartMarker"
+type: docs
+url: /build-report-with-smart-marker/
+aliases:
+  - /create-excel-workbook-from-a-smartmarker-template/
+  - /workbook/smartmarker/
+  - /workbook/create/smartmarker/
+keywords: "Excel, Smart Marker（智能标记）, Aspose.Cells Cloud, REST API, 工作簿, SDK, API, 报表生成"
+description: "了解如何使用 Aspose.Cells Cloud REST API 从 Smart Marker 模板生成 Excel 工作簿。内容包括请求/响应详情、cURL 示例、前置条件、注意事项以及 SDK 代码示例。"
+weight: 40
+ArticleTitle: "使用 Smart Marker 模板构建 Excel 报表 —— Aspose.Cells Cloud API 指南"
+---
 
-**查询参数**
+此 REST API 使用 Smart Marker 模板创建工作簿。
 
-|参数名称|类型|描述|
-|:- |:- |:- |
-|xml文件|细绳||
-|输出路径|细绳||
-|文件夹|细绳|原始工作簿文件夹。|
-|存储名称|细绳|存储名称。|
+## 工作簿 SmartMarker API
 
-**请求主体参数**
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/smartmarker
+```
 
-|参数名称|类型|描述|
-|:- |:- |:- |
-|xml文件|文件||
+### **安全与认证**
 
-## 休息 API
+Aspose.Cells Cloud API 是安全的，需要使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的认证</a>。
 
-|**API**|**类型**|**描述**|**Swagger 链接**|
-|:- |:- |:- |:- |
-|/cells/{name}/smartmarker|邮政|从 SmartMarker 模板文件创建新的 Excel 工作簿|[PostWorkbookGetSmartMarkerResult](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult)|
+### **什么是 Smart Marker（智能标记）？**
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+Smart Marker（智能标记）是一种占位符语法，用于将 XML（或 JSON）文件中的数据字段映射到 Excel 模板中的单元格。在运行时，Aspose.Cells 会将这些标记替换为对应的数据，从而实现以编程方式生成完整填充的报表。
 
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+### **查询参数**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| 参数名称 | 类型   | 描述                                           |
+| -------- | ------ | ---------------------------------------------- |
+| outPath  | string | 生成的工作簿将被保存的目标路径。               |
+| folder   | string | 包含原始工作簿的文件夹。                       |
+| storageName | string | 要使用的存储服务名称。                         |
+
+### **请求体参数**
+
+| 参数名称 | 类型 | 描述                                         |
+| -------- | ---- | -------------------------------------------- |
+| xmlFile  | file | 随请求一起上传的 Smart Marker XML 数据文件。 |
+
+### **响应**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**注意事项 / 限制：**  
+- 该 API 仅支持最大 **50 MB** 的 Excel 文件。  
+- 仅支持 **.xlsx**、**.xlsm** 和 **.xlsb** 格式。  
+- 每个账户的速率限制为 **每秒 20 个请求**。
+
+**HTTP 状态码**
+
+| 状态码 | 含义           | 描述                                               |
+| ------ | -------------- | -------------------------------------------------- |
+| 200    | OK（成功）     | 成功应用筛选；响应包含操作详情。                   |
+| 400    | Bad Request（错误请求） | 缺少或无效参数（例如，不支持的文件类型）。         |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。                               |
+| 413    | Payload Too Large（载荷过大） | 上传文件超出大小限制。                            |
+| 500    | Internal Server Error（内部服务器错误） | 服务器端意外错误。                               |
+
+## 如何使用工作簿 SmartMarker API
+
+### 工作簿 SmartMarker API 规范
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult)定义了一个公开可访问的编程接口，可让您直接从 Web 浏览器发起 REST 调用。
+
+### 使用 Aspose.Cells Cloud SDK
+
+您可以使用 **cURL** 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+
+**快速单行示例**
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/{name}/smartmarker?outPath={outPath}" -H "Authorization: Bearer {access_token}" -F "xmlFile=@Sample_SmartMarker_Data.xml"
+```
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/newworkbook_14.xlsx/smartmarker?xmlFile=Sample_SmartMarker_Data.xml" -H "accept: multipart/form-data" -H "x-aspose-client: Containerize.Swagger"
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/newworkbook_14.xlsx/smartmarker?outPath=GeneratedReport.xlsx" \
+    -H "accept: multipart/form-data" \
+    -H "x-aspose-client: Containerize.Swagger" \
+    -F "xmlFile=@Sample_SmartMarker_Data.xml"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
+```text
+HTTP/1.1 200 OK
+Content-Type: application/json
 
-HttpResponseMessage with the processing result in content.
-
+{
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+### **错误处理**
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| HTTP 状态码 | 描述               | 典型原因                                           |
+| ----------- | ------------------ | -------------------------------------------------- |
+| 400         | Bad Request（错误请求） | 缺少模板、XML 格式错误或参数无效。                 |
+| 401         | Unauthorized（未授权） | 无效或缺失的认证令牌。                             |
+| 404         | Not Found（未找到） | 指定的工作簿或存储位置不存在。                     |
+| 500         | Internal Server Error（内部服务器错误） | 服务器端意外失败。                               |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+**错误响应示例（400）**
+
+```json
+{
+  "Code": 400,
+  "Message": "XML 数据文件缺失或格式错误。"
+}
+```
+
+## 云 SDK 家族
+
+使用 SDK 是加速开发的最佳方式。SDK 会处理底层细节，让您专注于项目任务。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

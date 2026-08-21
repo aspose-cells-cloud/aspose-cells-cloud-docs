@@ -1,75 +1,96 @@
-﻿---
-title: Diagrammtitel in einem Arbeitsblatt löschen
+---
+title: "Diagrammtitel in einem Arbeitsblatt löschen"
 type: docs
-url: /de/charts/delete-chart-title/
+url: /charts/delete-chart-title/
 aliases: [/delete-chart-title-in-a-worksheet/]
 weight: 150
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Diagrammtitel in einem Arbeitsblatt löschen
+keywords: "Aspose.Cells, Cloud API, Diagrammtitel löschen, Excel, REST, SDK"
+description: "Erfahren Sie, wie Sie einen Diagrammtitel aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API (v4.0) entfernen. Enthält cURL- und SDK-Beispiele sowie Fehlerbehandlung."
 ---
-Dieser REST API zeigt an, dass der Titel im Diagramm ausgeblendet wird
- 
-## RSET API
- 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
- 
-```
- Die Anforderungsparameter sind:
- 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Name der Arbeitsmappe.|
-| Blattname| Schnur| Weg| Arbeitsblattname.|
-| Diagrammindex| ganze Zahl| Weg| Der Diagrammindex.|
-| Ordner| Schnur| Abfrage| Der Arbeitsmappenordner.|
-| Speichername| Schnur| Abfrage| Speichername.|
- 
-<br/>
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartTitle) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
- 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+Diese REST API löscht den Titel eines Diagramms.
+
+## REST API
+
+```bash
+DELETE https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
+```
+
+### Sicherheit und Authentifizierung
+
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine [JWT-Token-basierte Authentifizierung](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+
+### Anforderungsparameter
+
+| Parametername   | Typ    | Speicherort | Beschreibung                                   |
+| --------------- | ------ | ----------- | ---------------------------------------------- |
+| name            | string | path        | Der Name der Arbeitsmappe.                     |
+| sheetName       | string | path        | Der Name des Arbeitsblatts.                    |
+| chartIndex      | integer| path        | Der nullbasierte Index des Diagramms.          |
+| folder          | string | query       | Der Ordner, der die Arbeitsmappe enthält.      |
+| storageName     | string | query       | Der Speichername.                              |
+
+
+### **Antwort**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                   | Beschreibung                                                           |
+|------|-----------------------------|------------------------------------------------------------------------|
+| 200  | OK                          | Filter erfolgreich angewendet; Antwort enthält Details zum Vorgang.   |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized                | Ungültiges oder fehlendes JWT-Token.                                  |
+| 413  | Payload Too Large           | Die hochgeladene Datei überschreitet das Größenlimit.                 |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler.                                             |
+
+## Verwendung der DeleteWorksheetChartTitle-API mit SDKs
+
+### DeleteWorksheetChartTitle-API-Spezifikation
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartTitle) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
+
+Sie können das cURL-Befehlszeilentool verwenden, um problemlos auf die Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie der Aufruf durchgeführt wird, einschließlich des erforderlichen **Bearer JWT**-Tokens für die Authentifizierung.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title"
--X DELETE 
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+```bash
+curl -v "https://api.aspose.cloud/v4.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-Familie
- 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
- 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+### Verwendung von Aspose.Cells Cloud SDKs
 
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklungsgeschwindigkeit zu erhöhen. Ein SDK übernimmt die Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektziele konzentrieren. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud).
+
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

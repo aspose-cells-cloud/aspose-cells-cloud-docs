@@ -1,122 +1,142 @@
-﻿---
-title: Aspose.Cells Cloud Web API - البحث عن المحتوى في جدول بيانات بعيد
-second_title: Documen
-ArticleTitle: Search Content in a Remote Spreadshee
-linktitle: البحث عن محتوى جدول البيانات عن بعد
-type: docs
-url: /ar/search-content-in-remote-spreadsheet/
-keywords: remote spreadsheet search, Excel API, search text in spreadsheet, cloud storage search, Aspose.Cells AP
-description: ابحث بكفاءة عن نص في جدول بيانات بعيد باستخدام Aspose.Cells API
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، JSON، Markdown، مطابقة جميع الخلايا الفارغة في ورقة عمل Excel، البحث عن جدول بيانات عن بُعد، البحث عن تخزين سحابي
 ---
-البحث عن نص محدد في جدول بيانات بعيد.
+title: "البحث عن نص في ملفات إكسل بعيدة – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+second_title: "الوثيقة"
+ArticleTitle: "البحث عن نص في ملفات إكسل بعيدة – العثور على بيانات محددة"
+linktitle: "البحث في محتوى الملف المتبعد"
+type: docs
+url: /search-content-in-remote-spreadsheet/
+keywords: "Aspose.Cells, API بحث في إكسل, ملف إكسل سحابي, بحث عن نص, REST"
+description: "البحث عن نصوص أو أرقام أو صيغ في ملفات إكسل المخزَّنة في مساحة التخزين السحابية باستخدام Aspose.Cells Cloud. يدعم الاستعلامات غير الحساسة لحالة الأحرف، واختيار المجلد، والملفات المحمية بكلمة مرور."
+weight: 100
+---
 
-### **البحث عن المحتوى في جدول البيانات البعيد API**
+### **واجهة برمجة تطبيقات البحث في محتوى الملف المتبعد**
 
+ابحث برمجيًا عن نص محدد داخل أي ملف إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. ابحث عن نصوص أو أرقام أو صيغ في الملفات المخزَّنة في مساحة التخزين السحابية. تتيح لك هذه الواجهة القائمة على REST اكتشاف البيانات تلقائيًا، وتحليل المحتوى، وتنفيذ سير عمل مراجعة الملفات.
+
+### **واجهة برمجة التطبيقات عبر الويب**
+
+```bash
+PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/search/content
+
+### **الأمان والمصادقة**
+
+تُعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتحتاج إلى <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
-### **معلمات الطلب:**
+### **مُعلمات الطلب:**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-|اسم|خيط|طريق|اسم ملف المصنف الذي تريد البحث فيه.|
-|نص البحث|خيط|استفسار|النص الذي يجب البحث عنه في جدول البيانات.|
-|تجاهل الحالة|منطقي|استفسار|يشير إلى ما إذا كان سيتم تجاهل الحالة في البحث.|
-|مجلد|خيط|استفسار|مسار المجلد الذي يتم تخزين المصنف فيه.|
-|اسم التخزين|خيط|استفسار|(اختياري) اسم وحدة التخزين السحابية المخصصة. يُستخدم التخزين الافتراضي في حال عدم تحديده.|
-|منطقة|خيط|استفسار|إعداد منطقة جدول البيانات.|
-|كلمة المرور|خيط|استفسار|كلمة المرور لفتح ملف جدول البيانات.|
+| اسم المُعلَمة | النوع   | المسار / سلسلة الاستعلام / جسم الطلب HTTP | الوصف                                                                                                                                                      |
+| :------------- | :------ | :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name           | نص (String)  | المسار (Path)                       | **مطلوبة**. اسم ملف إكسل (مع امتداده) الذي سيتم فيه إجراء البحث عن النص، مثل `sales_data.xlsx`.                         |
+| searchText     | نص (String)  | سلسلة الاستعلام (Query)                      | **مطلوبة**. النص أو الرقم أو المحتوى الجزئي المطلوب العثور عليه عبر الملف أو ورقة/أوراق العمل بالكامل.                                                 |
+| ignoringCase   | منطقي (Boolean) | سلسلة الاستعلام (Query)                      | **اختيارية**. تحدد ما إذا كان البحث حساسًا لحالة الأحرف أم لا. ضع القيمة `true` لإجراء بحث غير حساس لحالة الأحرف (مثل: "Report" تطابق "REPORT")؛ الافتراضي هو `false`.                    |
+| folder         | نص (String)  | سلسلة الاستعلام (Query)                      | **اختيارية**. المسار إلى المجلد داخل مساحة التخزين السحابية التي تحتوي على الملف المستهدف. إذا لم تُحدَّد، يُفترض المجلد الجذري.                            |
+| storageName    | نص (String)  | سلسلة الاستعلام (Query)                      | **اختيارية**. المعرّف المسمّى لخدمة تخزين سحابية مُعدَّة مسبقًا. إذا لم تُحدَّد، تستخدم الواجهة التخزين الافتراضي المرتبط بالحساب. |
+| region         | نص (String)  | سلسلة الاستعلام (Query)                      | **اختيارية**. إعداد المنطقة (مثل: `es-ES`) الذي يُطبَّق أثناء البحث، وقد يؤثر على قواعد تسوية أو ترتيب النصوص.                              |
+| password       | نص (String)  | سلسلة الاستعلام (Query)                      | **اختيارية**. كلمة المرور اللازمة لفك تشفير ملف إكسل المحمي بكلمة مرور. لا تُحدِّد هذه المعلمة إذا لم يكن الملف مشفرًا.                      |
 
-### **إجابة**
+**قائمة المصطلحات**
+
+- **searchText** – النص الدقيق المطلوب العثور عليه؛ يمكن أن يكون جزءًا من النص.
+- **ignoringCase** – تجعل القيمة `true` البحث غير حساس لحالة الأحرف؛ والقيمة `false` تجعل البحث حساسًا لحالة الأحرف.
+- **folder** – المسار إلى المجلد الذي يحتوي على ملف إكسل.
+- **storageName** – معرّف إعداد تخزين مخصص.
+- **region** – رمز المنطقة الذي يؤثر في قواعد مقارنة النصوص.
+- **password** – كلمة المرور اللازمة لفك تشفير الملفات المحمية.
+
+### **الاستجابة**
 
 ```json
 {
-  "Name": "BrokenLinksResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "Properties": [
+  "Code": 200,
+  "Status": "OK",
+  "TextItems": [
     {
-      "Name": "BrokenLinks",
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "BrokenLink",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "BrokenLink",
-        },
-      }
-    },
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
+      "Filename": "string",
+      "Worksheet": "string",
+      "Position": "string",
+      "Content": "string"
     }
   ]
 }
 ```
 
-### رموز الخطأ
+تحتوي الاستجابة على قائمة بالخلايا (`CellName`) التي تم العثور على النص المطلوب فيها، مع اسم ورقة العمل والنص المطابق. إذا لم يُعثر على أي مطابقات، تكون المصفوفة `TextItems` فارغة، لكن الطلب يعود مع رمز الحالة HTTP 200 OK.
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+### رموز الأخطاء
 
-## أين يجب علينا استخدام محتوى البحث داخل جدول البيانات API؟
+- **400 Bad Request** – عنوان URI لواجهة برمجة تطبيقات Aspose.Cells Cloud غير صالح.  
+  ```json
+  {"code":400,"message":"Invalid request URI"}
+  ```
+- **401 Unauthorized** – رمز الوصول أو معرّف العميل أو سر العميل غير صالح.  
+  ```json
+  {"code":401,"message":"Invalid access token"}
+  ```
+- **404 Not Found** – ملف الملف المتبعد غير قابل للوصول.  
+  ```json
+  {"code":404,"message":"File not found"}
+  ```
+- **500 Server Error** – ظرف غير متوقع منع الواجهة من إكمال الطلب.  
+  ```json
+  {"code":500,"message":"Internal server error"}
+  ```
 
-عندما تحتاج إلى البحث عن محتوى داخل جدول البيانات، يمكنك استخدام هذا API.
+## أين نستخدم واجهة برمجة التطبيقات للبحث في المحتوى داخل الملف؟
 
-## لماذا يجب عليك استخدام محتوى البحث داخل جدول البيانات API؟
+- **مراجعة شاملة لامتثال الملفات** – امسح ملف إكسل بالكامل بسرعة لتحديد جميع المصطلحات الحساسة (مثل: "بند سري"، "بيانات داخلية") لاختبار أمن البيانات والامتثال في المؤسسات.
+- **استعلام الارتباطات عبر ورقات العمل** – عندما تكون معلومات المشروع موزعة عبر ورقات عمل متعددة، ابحث عن رقم مشروع أو اسم عميل محدد وابحث فورًا عن جميع البيانات ذات الصلة.
+- **التحقق من محتوى القوالب دفعة واحدة** – بعد توليد التقارير تلقائيًا، امسح ملفات إكسل متعددة دفعة واحدة للتأكد من أن جميع العناصر النائبة المحددة مسبقًا (مثل `{{Date}}`) تم استبدالها بشكل صحيح، مما يضمن اكتمال التقرير ودقته.
+- **أرشفة البيانات التاريخية واستخراجها** – حلّل الملفات القديمة، ابحث عن رموز أحداث أو مصطلحات تجارية محددة، وافهم بسرعة المنطق التجاري التاريخي لغرض التنقيب عن البيانات.
 
-- ابحث بسهولة عن المحتوى داخل جدول بيانات بعيد باستخدام هذا الجهاز API.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+## لماذا يجب استخدام واجهة برمجة التطبيقات للبحث في المحتوى داخل الملف؟
 
-## كيفية استخدام البحث عن الروابط المعطلة ضمن نطاق جدول البيانات API باستخدام مجموعات أدوات تطوير البرامج (SDKs)
+- **سهلة المطورين** – توفر Aspose.Cells Cloud مكتبات SDK بلغات برمجة متعددة، مما يتيح تطويرًا سريعًا مع توفر وثائق شاملة. بالمقارنة مع بناء حلول مخصصة، يقلل هذا جهد التطوير بشكل كبير.
+- **تقليل تكاليف العمالة** – يُجرِّد المهام المتكررة من البحث، مما يحرر المطورين من العمل اليدوي في استخراج البيانات.
+- **دفع مقابل الاستخدام فقط** – لا يوجد استثمار أولي؛ تدفع فقط مقابل مكالمات الواجهة التي تستخدمها فعلًا.
+- **لا حاجة للصيانة** – تعتني Aspose بالخوادم والتحديثات والتوافق، لتتمكن أنت من التركيز على منطق تطبيقك.
+- **يحافظ على تنسيقات إكسل المعقدة** – يمكن تصدير النتائج إلى تنسيق PDF قابل للوصول عالميًا مع الحفاظ على التنسيق الأصلي.
+
+## كيف تستخدم البحث عن الروابط التالفة ضمن نطاق واجهة برمجة التطبيقات للملفات باستخدام SDKs؟
 
 ### مواصفات OpenAPI
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteSpreadsheet) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويمكّنك من تنفيذ تفاعلات REST مباشرة من متصفح الويب.
+<a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteSpreadsheet" rel="noopener noreferrer">مواصفات OpenAPI</a> تُعرِّف واجهة برمجة تطبيقات متاحة للعامة وتمكّنك من إجراء تفاعلات REST مباشرة من متصفح ويب.
 
-### استخدم Aspose.Cells Cloud SDKs
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
-يُعد استخدام حزمة تطوير البرامج (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل الأساسية، مما يسمح لك بسهولة تنفيذ محتوى البحث داخل جداول البيانات للخلايا باستخدام الحد الأدنى من التعليمات البرمجية.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDKs هو أفضل طريقة لتسريع التطوير. تتعامل SDK مع التفاصيل الأساسية، مما يسمح لك بتنفيذ البحث عن المحتوى داخل ملفات إكسل برمجيًا وبأقل قدر ممكن من الكود. يُرجى الاطلاع على <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية استدعاء خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج المختلفة:
+توضح الأمثلة التالية كيفية استدعاء خدمات الويب Aspose.Cells باستخدام مكتبات SDK المختلفة:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchTextInRemoteSpreadsheet.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchTextInRemoteSpreadsheet.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchTextInRemoteSpreadsheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchTextInRemoteSpreadsheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchTextInRemoteSpreadsheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchTextInRemoteSpreadsheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchTextInRemoteSpreadsheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchTextInRemoteSpreadsheet.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchTextInRemoteSpreadsheet.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchTextInRemoteSpreadsheet.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchTextInRemoteSpreadsheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchTextInRemoteSpreadsheet.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchTextInRemoteSpreadsheet.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchTextInRemoteSpreadsheet.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchTextInRemoteSpreadsheet.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchTextInRemoteSpreadsheet.go" >}}
+{{</tab>}}
 {{< /tabs >}}

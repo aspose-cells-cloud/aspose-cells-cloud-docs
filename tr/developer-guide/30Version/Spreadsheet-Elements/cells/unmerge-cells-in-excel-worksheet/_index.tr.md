@@ -1,72 +1,108 @@
-﻿---
-title: Cells'i Excel Çalışma Sayfasında Birleştir
+---
+title: "Excel Çalışma Sayfasında Hücreleri Birleştirmeyi Kaldır"
 type: docs
 url: /tr/unmerge-cells-in-excel-worksheet/
 weight: 120
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Cells'i Excel Çalışma Sayfasında Birleştirme
+keywords: "Aspose.Cells, Excel, Hücreleri Birleştirmeyi Kaldır, REST API, Bulut SDK"
+description: "Aspose.Cells Cloud REST API kullanarak Excel çalışma sayfasındaki hücreleri birleştirmeyi nasıl kaldıracağınızı öğrenin. İstek örnekleri, yanıt biçimi ve birden fazla programlama dili için SDK kod örnekleriyle birlikte."
+ArticleTitle: "Excel Çalışma Sayfasında Hücreleri Birleştirmeyi Kaldır"
 ---
-Bu REST API, Excel dosyasındaki `unmerge` hücresini gösterir.
 
-## RSET API
+Bu REST API, bir Excel dosyasındaki hücreleri birleştirmeyi kaldırır.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge
 ```
 
-İstek parametreleri şunlardır:
+## Güvenlik ve Kimlik Doğrulama
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| başlangıç satırı| tam sayı| sorgu| Başlangıç sırası.|
-| başlangıçSütunu| tam sayı| sorgu| Başlangıç sütunu.|
-| toplamSatırlar| tam sayı| sorgu| Toplam satır sayısı|
-| toplamSütunlar| tam sayı| sorgu| Toplam sütunlar.|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API'leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulama](https://docs.aspose.cloud/tr/total/getting-started/rest-api-overview/authenticating-api-requests/) gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetUnmerge) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+**İstek Parametreleri**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Parametre Adı  | Tür     | Konum   | Açıklama                                              |
+|----------------|---------|----------|---------------------------------------------------------|
+| name           | string  | path     | Çalışma kitaplığı dosyasının adı.                       |
+| sheetName      | string  | path     | Çalışma sayfasının adı.                                 |
+| startRow       | integer | query    | Birleştirmeyi kaldırma işlemine dahil edilecek ilk satırın sıfır tabanlı indeksi. |
+| startColumn    | integer | query    | Birleştirmeyi kaldırma işlemine dahil edilecek ilk sütunun sıfır tabanlı indeksi. |
+| totalRows      | integer | query    | Birleştirmeyi kaldırma işlemine dahil edilecek satır sayısı. |
+| totalColumns   | integer | query    | Birleştirmeyi kaldırma işlemine dahil edilecek sütun sayısı. |
+| folder         | string  | query    | Çalışma kitabının depolandığı klasör yolu.              |
+| storageName    | string  | query    | Depolama hizmetinin adı.                               |
+
+## **Yanıt**
+
+CellCloudResponse döndürür.
+
+- **Yanıt Alanları Genel Bakış**
+
+| Alan            | Tür     | Açıklama                                              |
+| --------------- | ------- | ----------------------------------------------------- |
+| `Status`          | string  |                    |
+| `Code`           | integer | 200,400,401,500,...                                 |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                           |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK (Tamam)                  | Süzgeç başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400  | Bad Request (Hatalı İstek)  | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401  | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT belirteci. |
+| 413  | Payload Too Large (Çok Büyük Yük) | Yüklenen dosya boyut sınırını aşıyor. |
+| 500  | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası. |
+
+## PostWorksheetUnmerge API'sini SDK’larla Nasıl Kullanılır
+
+### PostWorksheetUnmerge API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetUnmerge), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’sine nasıl istek yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/unmerge?startRow=10&startColumn=10&totalRows=10&totalColumns=10" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bir SDK kullanmak, geliştirme sürecini hızlandırmak için en iyi yoldur. Bir SDK, düşük seviye ayrıntıları yönetir ve projenizdeki görevlere odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak Aspose.Cells web hizmetlerine nasıl istek yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

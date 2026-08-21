@@ -1,112 +1,97 @@
-﻿---
-title: Hämta horisontell sidbrytning
-second_title: Documen
-linktitle: Hämta horisontell sidbrytning
-type: docs
-url: /sv/page-breaks/get-horizontal-page-breaks/
-aliases: [/get-horizontal-page-breaks-inside-worksheet/]
-keywords: Add a page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder att lägga till en sidbrytning i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta horisontella sidbrytningar
 ---
-Denna REST API indikerar att `horizontal` sidbrytningar ska hämtas.
+title: "Hämta horisontella sidbrytningar"
+second_title: "Dokument"
+linktitle: "Hämta horisontella sidbrytningar"
+type: docs
+url: /page-breaks/get-horizontal-page-breaks/
+aliases: [/get-horizontal-page-breaks-inside-worksheet/]
+keywords: "horisontella sidbrytningar, Aspose.Cells Cloud, REST API, Excel-ark, SDK"
+description: "Hämta horisontella sidbrytningar från ett Excel-ark via Aspose.Cells Cloud API. Inkluderar slutpunkt, parametrar, cURL-exempel, svarsformat och SDK-fragment för C#, Java, Python och mer."
+ArticleTitle: "Hämta horisontella sidbrytningar – Aspose.Cells Cloud API-dokumentation"
+weight: 10
+---
 
-## RSET API
+**Horisontell sidbrytning** – en radbaserad brytning som tvingar arket att börja en ny utskriftssida efter den angivna raden. Detta REST API hämtar dessa horisontella sidbrytningar.
+
+## Säkerhet och autentisering
+
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks
 ```
 
-Begäranparametrarna är:
+### Begärandeparametrar
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg||
-| arknamn| sträng| väg||
-| mapp| sträng| fråga||
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameter_name | Typ    | Plats  | Beskrivning                                                       |
+| -------------- | ------ | ------ | ----------------------------------------------------------------- |
+| name           | string | path   | Namnet på Excel-filen.                                            |
+| sheetName      | string | path   | Namnet på arket.                                                  |
+| folder         | string | query  | Mappbanan i lagringen där filen finns. _(valfritt)_              |
+| storageName    | string | query  | Namnet på lagringen. _(valfritt)_                                 |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreaks) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+<a href="https://apireference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreaks" rel="noopener" title="OpenAPI-specifikation för GetHorizontalPageBreaks">OpenAPI-specifikationen</a> definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda verktyget cURL för kommandoraden för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du anropar Cloud API:et med cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/horizontalpagebreaks" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/horizontalpagebreaks" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "HorizontalPageBreaks": {
-
     "HorizontalPageBreakList": [
-
       {
-
         "Row": 6,
-
         "EndColumn": 16383,
-
         "StartColumn": 0
-
       }
-
     ],
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/HorizontalPageBreaks",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/HorizontalPageBreaks",
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## Felhantering
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| HTTP-status | Beskrivning                                                | Exempel på JSON                                        |
+| ----------- | ---------------------------------------------------------- | ------------------------------------------------------ |
+| 400         | Felaktig begäran – saknade eller ogiltiga parametrar.     | `{ "Code": 400, "Message": "Invalid parameter." }`     |
+| 401         | Otillåten – JWT-token saknas eller är ogiltig.             | `{ "Code": 401, "Message": "Authentication failed." }` |
+| 404         | Inte hittad – den angivna filen eller det angivna arket finns inte. | `{ "Code": 404, "Message": "Resource not found." }`    |
+| 500         | Internt serverfel – oväntat tillstånd på servern.          | `{ "Code": 500, "Message": "Server error." }`          |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+## SDK-familj för molnet
 
-## Cloud SDK-familjen
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projekttäcknen. Ta en titt på [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
-
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

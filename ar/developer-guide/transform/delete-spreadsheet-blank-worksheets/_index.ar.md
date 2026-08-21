@@ -1,99 +1,119 @@
-﻿---
-title: Aspose.Cells Cloud Web API - حذف أوراق العمل الفارغة في جدول البيانات
-second_title: Documen
-ArticleTitle: Delete Blank Worksheets in a Spreadshee
-linktitle: حذف ورقة العمل الفارغة
-type: docs
-url: /ar/delete-spreadsheet-blank-worksheets/
-keywords: Aspose.Cells Cloud Web API, Delete Blank Worksheets, Spreadsheet Managemen
-description: احذف بكفاءة جميع أوراق العمل الفارغة من جدول بيانات لا تحتوي على أي بيانات أو عناصر. حسّن أداء مصنفك.
-weight: 100
-kwords: Excel، Office السحابة، REST، جدول بيانات، PDF، CSV، JSON، Markdown
 ---
-احذف جميع أوراق العمل الفارغة التي لا تحتوي على أي بيانات أو كائنات أخرى من جدول بيانات Excel.
+title: "واجهة Aspose.Cells Cloud الويبية للـ API - حذف أوراق العمل الفارغة/الفارغة تلقائيًا"
+second_title: "وثيقة"
+ArticleTitle: "حذف جميع أوراق العمل الفارغة في Excel – دليل إزالة الأوراق الفارغة"
+linktitle: "حذف أوراق العمل الفارغة"
+type: docs
+url: /delete-spreadsheet-blank-worksheets/
+keywords: "Aspose.Cells Cloud, حذف أوراق العمل الفارغة, Excel API, تنظيف ملفات العمل, تحسين جداول البيانات"
+description: "استخدم واجهة Aspose.Cells Cloud API لحذف أوراق العمل الفارغة أو الفارغة تلقائيًا من ملفات عمل Excel. تعلّم كيفية تحديد الأوراق التي لا تحتوي على بيانات أو صيغ أو مخططات أو كائنات، وحذفها لتحسين أداء وتنظيم ملفات العمل."
+weight: 100
+---
 
-## **حذف جدول بيانات فارغ أوراق العمل API**
+احذف جميع أوراق العمل الفارغة من ملفات عمل Excel تلقائيًا باستخدام واجهة Aspose.Cells Cloud API. تكتشف واجهتنا الذكية الأوراق التي لا تحتوي على بيانات أو صيغ أو مخططات أو تعليقات أو كائنات، وتحذفها مع الحفاظ على جميع أوراق العمل التي تحتوي على محتوى. تدعم الواجهة المعالجة الدفعية والتشغيل الآلي في السحابة والتكامل السلس لسير عمل تنظيف ملفات العمل في المؤسسات.
+
+## **واجهة API DeleteSpreadsheetBlankWorksheets**
+
+### واجهة الويب
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/delete/blank-worksheets
+PUT https://api.aspose.cloud/v4.0/cells/delete/blank-worksheets
 ```
 
-### **معلمات الطلب:**
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-| جدول بيانات| ملف| بيانات النموذج| قم بتحميل ملف جدول البيانات المراد تنظيفه.|
-| المسار الخارجي| خيط| استفسار| (اختياري) مسار المجلد الذي يُخزَّن فيه المصنف. القيمة الافتراضية هي null.|
-|اسم التخزين الخارجي| خيط| استفسار| اسم تخزين ملف الإخراج.|
-| منطقة| خيط| استفسار| إعداد منطقة جدول البيانات.|
-| كلمة المرور| خيط| استفسار| كلمة المرور لفتح ملف جدول البيانات.|
+تُعدّ واجهات Aspose.Cells Cloud API آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-## **إجابة**
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### **مُعطَلات الطلب:**
+
+| اسم المُعطَل | النوع | المسار/سلسلة الاستعلام/גוף HTTP | الوصف                                                                                                                                                                                                                        |
+| :------------- | :----- | :-------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | ملف   | FormData                    | **إجباري**. ملف ملف عمل Excel الذي سيتم تنظيفه. يدعم التنسيقات مثل `.xlsx` و`.xls` و`.xlsm` و`.xlsb` و`.ods`.                                                                                                       |
+| outPath        | نص   | استعلام                       | **اختياري**. مسار المجلد الهدف داخل مساحة التخزين السحابية حيث سيتم حفظ الملف الناتج. إذا تُرك فارغًا أو ضُبط على `null`، فسيُخزَّن الملف المُعالَج في الموقع الافتراضي أو في نفس الدليل الذي يوجد فيه الملف الأصلي. |
+| outStorageName | نص   | استعلام                       | **إجباري**. اسم خدمة تخزين سحابية مُعدة مسبقًا حيث يجب حفظ الملف الناتج (مثل `MyFirstStorage`). يُحدِّد هذا المُعطَل مساحة التخزين التي سيتم كتابة النتائج فيها.                               |
+| region         | نص   | استعلام                       | **اختياري**. إعداد الإقليم/اللغة المطبَّق أثناء معالجة ملف العمل، مثل `en-US` أو `zh-CN`. قد يؤثر هذا على معالجة تنسيقات التواريخ والأرقام والنصوص.                                                          |
+| password       | نص   | استعلام                       | **اختياري**. كلمة المرور المطلوبة لفتح ملف Excel المحمي بكلمة مرور. يمكن تجاهل هذا المُعطَل إذا لم يكن الملف المرفوع مشفرًا.                                                                                  |
+
+## **الاستجابة**
+
+تُعيد الواجهة ملف العمل المُعالَج كتدفق ملفات.
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### رموز الخطأ
+- **رمز الحالة الناجح:** `200 OK` – تمت معالجة ملف العمل وعُاد الملف المُنظَّف في جسم الاستجابة.  
+- **Content‑Type:** `application/octet-stream`
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+### رموز الأخطاء
 
-## أين يجب علينا استخدام حذف أوراق العمل الفارغة API؟
+- **400 Bad Request**: عنوان URI لواجهة Aspose.Cells Cloud API غير صالح.  
+- **401 Unauthorized**: رمز الوصول غير صالح، أو مُعرَّف العميل وكلمة السر غير صالحين.  
+- **404 Not Found**: ملف جدول البيانات غير قابل للوصول.  
+- **500 Server Error**: حدث خلل في ملف جدول البيانات أثناء محاولة الحصول على بيانات الحساب.
 
-عندما تحتاج إلى تحويل البيانات، يمكنك استخدام هذا API.
+## أين يجب استخدام واجهة API لحذف أوراق العمل الفارغة في جداول البيانات؟
 
-## لماذا يجب عليك استخدام حذف أوراق العمل الفارغة API؟
+- **التنظيف بعد دمج البيانات**: بعد دمج البيانات من ملفات متعددة في ملف عمل واحد، احذف تلقائيًا أي أوراق متبقية أو ورق افتراضية أُنشأت أثناء العملية لكنها لا تحتوي على بيانات.  
+- **توليد التقارير القائمة على القوالب**: في سير العمل التي تستخدم قوالب Excel ذات أوراق متعددة مُعدة مسبقًا، قم بتنظيف جميع أوراق القالب غير المستخدمة بعد ملء الأوراق المطلوبة فقط بالبيانات.  
+- **أنفاق معالجة البيانات الآلية (ETL)**: كخطوة أولية لتطهير ملفات عمل Excel المستوردة من أنظمة أو رفعها من قِبل المستخدمين قبل إجراء التحليل أو التخزين أو التكامل، لضمان معالجة الأوراق التي تحتوي على محتوى حقيقي فقط.  
+- **تحسين وترحيل ملفات العمل القديمة**: عند تحديث ملفات Excel القديمة والمتفرقة التي تสะสม غالبًا عددًا كبيرًا من أوراق العمل الفارغة أو القديمة مع مرور الوقت.  
+- **بوابات المحتوى الذي يُولِّده المستخدمون**: نظّف ووحِّد ملفات العمل المُرسَلة من قِبل المستخدمين عبر تطبيقات الويب أو النماذج، واحذف الأوراق الفارغة عن طريق الخطأ للحفاظ على جودة ملف احترافية ومتسقة.  
 
-- قم بحذف جميع أوراق العمل الفارغة التي لا تحتوي على أي بيانات أو كائنات أخرى من جدول البيانات Excel بسرعة.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+## لماذا يجب استخدام واجهة API لحذف أوراق العمل الفارغة في جداول البيانات؟
 
-## كيفية استخدام حذف أوراق العمل الفارغة في جداول البيانات API مع مجموعات تطوير البرامج (SDKs)
+- **سهل الاستخدام للمطورين**: توفر Aspose.Cells Cloud مكتبات SDK بلغات برمجة متعددة، ما يسهّل التطوير السريع ويوثّقها بشكل شامل. وبالمقارنة مع بناء حلول مخصصة، تقلّل هذه الطريقة بشكل كبير من جهد التطوير.  
+- **خفض تكاليف العمالة**: يقلل الحاجة إلى تعيين موظفين متخصصين في دمج المستندات.  
+- **الدفع حسب الاستخدام**: لا حاجة لاستثمار أولي، فقط ادفع مقابل استدعاءات API التي تُستخدم فعليًا.  
+- **لا تكاليف صيانة**: لا حاجة لصيانة الخوادم أو تحديث البرمجيات أو التعامل مع مشاكل التوافق.  
 
-### حذف أوراق العمل الفارغة في جدول البيانات API المواصفات
+## كيفية استخدام واجهة API لحذف أوراق العمل الفارغة في جداول البيانات باستخدام SDKs
 
- ال[حذف أوراق العمل الفارغة في جدول البيانات API المواصفات](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankWorksheets) يعرف واجهة برمجة يمكن الوصول إليها بشكل عام، مما يسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### مواصفات واجهة API لحذف أوراق العمل الفارغة في جداول البيانات
 
-### استخدم Aspose.Cells Cloud SDKs
+تُعرِّف [مواصفات واجهة API لحذف أوراق العمل الفارغة في جداول البيانات](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Transform/RemoveSpreadsheetBlankWorksheets) واجهة برمجة قابلة للوصول بشكل عام، ما يسمح لك بإجراء تفاعلات REST مباشرة من متصفح الويب.
 
-يعد استخدام SDK أسرع طريقة للتطوير، حيث إنه يجرد التفاصيل منخفضة المستوى، مما يسمح لك بحذف أوراق العمل الفارغة باستخدام رمز قصير.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+### استخدام SDKs لـ Aspose.Cells Cloud
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+استخدام SDK هو أسرع طريقة للتطوير، لأنها تُجرّدك من التفاصيل منخفضة المستوى، مما يسمح لك بحذف أوراق العمل الفارغة في جداول البيانات باستخدام كود موجز. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteSpreadsheetBlankWorksheets.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteSpreadsheetBlankWorksheets.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteSpreadsheetBlankWorksheets.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteSpreadsheetBlankWorksheets.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteSpreadsheetBlankWorksheets.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteSpreadsheetBlankWorksheets.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteSpreadsheetBlankWorksheets.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankWorksheets.go" >}}
-{{< /tab >}}
+توضّح أمثلة الكود التالية كيفية إجراء مكالمات لخدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteSpreadsheetBlankWorksheets.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteSpreadsheetBlankWorksheets.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteSpreadsheetBlankWorksheets.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteSpreadsheetBlankWorksheets.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteSpreadsheetBlankWorksheets.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteSpreadsheetBlankWorksheets.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteSpreadsheetBlankWorksheets.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankWorksheets.go" >}}
+{{</tab>}}
 {{< /tabs >}}

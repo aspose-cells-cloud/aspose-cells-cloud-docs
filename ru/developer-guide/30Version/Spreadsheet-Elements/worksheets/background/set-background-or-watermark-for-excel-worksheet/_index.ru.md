@@ -1,65 +1,79 @@
-﻿---
-title: Установить фон на рабочем листе Excel
-second_title: Documen
-linktitle: Объявление
-type: docs
-url: /ru/worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
-keywords: Delete an Excel worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API поддерживает удаление листа Excel из книги Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 180
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Установка фона на листе Excel
 ---
-Этот REST API указывает на `add worksheet background image`.
+title: "Установка фонового изображения на лист Excel"
+ArticleTitle: "Установка фонового изображения на лист Excel – Руководство по API Aspose.Cells Cloud"
+second_title: "Документ"
+linktitle: "Добавить"
+type: docs
+url: /worksheets/background/add/
+aliases: [/set-background-or-watermark-for-excel-worksheet/]
+keywords: "Aspose.Cells, Excel, лист, фон, REST API, SDK, добавить изображение"
+description: "Узнайте, как добавить фоновое изображение (PNG, JPEG, BMP) на лист Excel с помощью REST API Aspose.Cells Cloud. Включает endpoint, необходимые параметры, шаги аутентификации, пример cURL и примеры кода SDK."
+weight: 180
+---
 
-## РСЕT API
+Этот REST API добавляет фоновое изображение на лист.
+
+## Безопасность и аутентификация
+Aspose.Cells Cloud API защищены и требуют [аутентификации с использованием токена JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
- 
 ```
 
-Параметры запроса:
+### **Параметры запроса**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь||
-| Имя_листа| нить| путь||
-| png|| тело||
-| папка| нить| запрос||
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип   | Расположение | Описание                                                       |
+| ------------- | ----- | ------------ | -------------------------------------------------------------- |
+| name          | string | path        | Имя файла книги Excel.                                         |
+| sheetName     | string | path        | Имя листа, на который будет применено изображение.            |
+| imageFile     | file   | body        | Бинарный файл изображения (PNG, JPEG, BMP и др.) для установки в качестве фона. |
+| folder        | string | query       | Папка в хранилище, где находится файл книги.                   |
+| storageName   | string | query       | Имя хранилища Aspose Cloud.                                    |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+**Поддерживаемые форматы и ограничения**
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+- Поддерживаемые расширения изображений: **PNG, JPEG, BMP, GIF**.
+- Максимальный размер файла: **5 МБ**.
+- Изображение повторяется (заливается тайлом), чтобы заполнить весь фон листа.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) определяет публично доступное программное интерфейсное решение и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как выполнить вызов облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/background" \
--X PUT \
--T Creative.jpg \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/background" \
+  -X PUT \
+  -F "imageFile=@Creative.jpg" \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+_Возможные ответы об ошибках_
+
+| HTTP-код | Описание                                                   |
+| -------- | ---------------------------------------------------------- |
+| 400      | Неверный запрос — отсутствуют или некорректны параметры.    |
+| 401      | Неавторизовано — недействительный или просроченный токен JWT. |
+| 404      | Не найдено — файл книги или лист не существует.             |
+| 500      | Внутренняя ошибка сервера — непредвиденное состояние сервера. |
 
 {{< /tab >}}
 
@@ -67,9 +81,9 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/back
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK берёт на себя обработку низкоуровневых деталей, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

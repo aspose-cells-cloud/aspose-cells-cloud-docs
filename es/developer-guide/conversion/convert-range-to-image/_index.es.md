@@ -1,100 +1,119 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Convertir datos de un rango de hoja de cálculo a una imagen
-second_title: Documen
-ArticleTitle: Convert a Spreadsheet Range data to an Imag
-linktitle: Convertir rango a imagen
-type: docs
-url: /es/convert-range-to-image/
-keywords: Aspose.Cells Cloud Web API, Convert Range to Image, Spreadsheet to Image, Cloud Conversion, Image Format
-description: Convertir un rango de datos de un archivo de hoja de cálculo local/Excel a un archivo de imagen
-weight: 100
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, Conversión de imágenes, PNG, SVG, TIFF, JSON, Markdown
 ---
-Convierte datos de rango de una hoja de cálculo local/Excel a un archivo de imagen. Compatible.**FORMATOS DE IMAGEN:** [PNG](https://docs.fileformat.com/image/png/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/)
+title: "Convertir rango de Excel a imagen – Aspose.Cells Cloud API"
+description: "Convierta un rango específico de un archivo local de Excel a PNG, JPEG, SVG, TIFF o BMP mediante la API REST de Aspose.Cells Cloud – no es necesario cargar el libro completo."
+keywords: "Aspose.Cells Cloud, convertir rango a imagen, API de Excel, formatos de imagen, PNG, JPEG, SVG, TIFF, BMP"
+slug: convert-range-to-image
+api_version: "v4.0"
+date: 2026-07-30
+---
 
-## **Convertir rango a imagen API**
+La llamada lee un archivo de hoja de cálculo local, convierte el rango especificado y devuelve la imagen como un flujo binario.
+
+## Método para convertir rango a imagen
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
+PUT https://api.aspose.cloud/v4.0/cells/convert/range/image
 ```
 
-### **Parámetros de la solicitud:**
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody| Descripción|
-|:- |:- |:- |:- |
-|Hoja de cálculo|Archivo|Datos del formulario|Sube el archivo de hoja de cálculo para la conversión.|
-|hoja de trabajo|Cadena|Consulta|El nombre de la hoja de cálculo Spreadsheet/Excel|
-|rango|Cadena|Consulta|Define el área de celda a convertir (por ejemplo, A1:C10).|
-|formato|Cadena|Consulta|Especifique el formato del archivo de salida (por ejemplo, png, svg, tiff).|
-|encabezados de impresión|Booleano|Consulta|Indique si se deben imprimir los encabezados de filas y columnas.|
-|Ruta de salida|Cadena|Consulta|(Opcional) La ruta de la carpeta donde se almacena el libro de trabajo; el valor predeterminado es nulo.|
-|nombreAlmacenamientoExterno|Cadena|Consulta|Nombre del almacenamiento del archivo de salida.|
-|Ubicación de fuentes|Cadena|Consulta|Fuentes personalizadas para utilizar en la conversión.|
-|regresar|Cadena|Consulta|Define la configuración de la región de la hoja de cálculo.|
-|contraseña|Cadena|Consulta|Contraseña para abrir el archivo de hoja de cálculo si está protegido.|
+Las APIs de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
-### **Respuesta**
+## Parámetros de solicitud
+
+| Nombre             | Ubicación                        | Tipo    | Obligatorio | Descripción                                                                     |
+|--------------------|----------------------------------|---------|-------------|---------------------------------------------------------------------------------|
+| **Spreadsheet**    | Datos de formulario (`multipart/form-data`) | Archivo | **Sí**      | El archivo de Excel que se va a procesar.                                       |
+| **worksheet**      | Consulta                         | Cadena  | **Sí**      | Nombre de la hoja de cálculo que contiene el rango (por ejemplo, `Hoja1`).      |
+| **range**          | Consulta                         | Cadena  | **Sí**      | Área de celdas que se va a convertir, por ejemplo, `A1:C10`.                    |
+| **format**         | Consulta                         | Cadena  | **Sí**      | Formato de imagen de salida (`png`, `jpeg`, `svg`, `tiff`, `bmp`).              |
+| **printHeadings**  | Consulta                         | Booleano | No         | `true` para incluir encabezados de filas/columnas en la imagen.                 |
+| **outPath**        | Consulta                         | Cadena  | No          | Ruta de carpeta para el archivo generado si desea guardarlo en el almacenamiento en la nube. |
+| **outStorageName** | Consulta                         | Cadena  | No          | Nombre del servicio de almacenamiento (por ejemplo, `MiAlmacenamiento`).        |
+| **fontsLocation**  | Consulta                         | Cadena  | No          | URL o ruta a fuentes personalizadas utilizadas durante la conversión.           |
+| **region**         | Consulta                         | Cadena  | No          | Identificador regional (por ejemplo, `es-ES`, `fr-FR`). Afecta el formateo de números y fechas. |
+| **password**       | Consulta                         | Cadena  | No          | Contraseña para libros cifrados.                                                 |
+| **AutoRowsFit**    | Consulta                         | Booleano | No         | Ajustar automáticamente las filas antes de representar.                         |
+| **AutoColumnsFit** | Consulta                         | Booleano | No         | Ajustar automáticamente las columnas antes de representar.                      |
+
+## Respuesta
+
+La API devuelve el archivo HTML convertido como un **flujo binario** (`application/octet-stream`).
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Códigos de error
+### Ejemplo de respuesta correcta (HTTP)
 
-- **400 Solicitud incorrecta**: URI de nube Apose.Cells no válido API.
-- **401 No autorizado**Token de acceso no válido. O ID de cliente y secreto no válidos.
-- **404 No encontrado**:El archivo de hoja de cálculo no es accesible.
-- **Error de servidor 500**:La hoja de cálculo ha encontrado una anomalía al obtener los datos de cálculo.
+```
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="report.png"
+Content-Length: 8423
+```
 
-## ¿Por qué debería utilizar la opción Convertir rango a imagen API?
+Guarde el cuerpo de la respuesta en un archivo (por ejemplo, `report.png`) para ver la imagen renderizada en un navegador web.
 
-- No necesita almacenamiento en la nube, lo que reduce la carga sobre los recursos de la nube.
-- El desarrollo se puede completar rápidamente a través del SDK existente.
+---
 
-## ¿Cómo utilizar el rango de conversión a imagen API con SDK?
+**Códigos de estado HTTP**
 
-### Especificación de conversión de rango a imagen API
+| Código | Significado             | Descripción                                                      |
+|--------|-------------------------|------------------------------------------------------------------|
+| 200    | Correcto                | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta    | Parámetros faltantes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado           | Token JWT inválido o ausente.                                    |
+| 413    | Carga útil demasiado grande | El archivo subido excede el límite de tamaño.                 |
+| 500    | Error interno del servidor | Error inesperado en el servidor.                               |
 
- El[Especificación de conversión de rango a imagen API](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToImage) Proporciona una interfaz de programación de acceso público, que permite interacciones REST directamente desde su navegador web.
+## ¿Cómo usar la API Convert Range to Image con SDK?
 
-### Utilice los SDK de la nube Aspose.Cells
+### Especificación OpenAPI
 
-Usar el SDK es la forma más rápida de desarrollar, ya que abstrae los detalles de bajo nivel y le permite convertir datos de rango en una imagen con un código corto.
- Por favor, consulte el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+La [Especificación OpenAPI](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToImage) describe una API públicamente accesible, lo que permite interactuar directamente mediante REST desde un navegador web.
 
-Los siguientes ejemplos de código ilustran cómo llamar a los servicios web Aspose.Cells utilizando varios SDK:
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube con cURL.
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertRangeToImage.cs" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/image?format=png&worksheet=Hoja1&range=A1:C10&AutoRowsFit=true&AutoColumnsFit=true" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@Report.xlsx" \
+     -F "outPath=output/report.png"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertRangeToImage.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="report.png"
+Content-Length: 8423
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertRangeToImage.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertRangeToImage.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertRangeToImage.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertRangeToImage.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertRangeToImage.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToImage.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+## Utilice los SDK de Aspose.Cells Cloud
+
+Utilizar un SDK es la forma más rápida de desarrollar, ya que oculta los detalles de bajo nivel, permitiéndole convertir un rango de datos en un archivo de imagen con un código mínimo.  
+Consulte la lista completa de SDK de Aspose.Cells Cloud en nuestro [repositorio de GitHub](https://github.com/aspose-cells-cloud).
+
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante diversos SDK. Si la carga desde Gist está bloqueada, puede descargar los ejemplos directamente desde el repositorio.
+
+---

@@ -1,75 +1,93 @@
-﻿---
-title: Fügen Sie einem Arbeitsblatt Excel mehrere Zeilen hinzu
-second_title: Documen
-linktitle: Reihe
-type: docs
-url: /de/rows/add/rows/
-keywords: Add multi rows on an Excel workshee
-description: Aspose.Cells Cloud REST API unterstützt das Hinzufügen mehrerer Zeilen in einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Mehrere Zeilen zu einem Excel-Arbeitsblatt hinzufügen
 ---
-Dieser REST API gibt an, dass mehrere neue Arbeitsblattzeilen zu einem Excel-Arbeitsblatt hinzugefügt werden sollen.
+title: "Mehrere Zeilen zu einem Excel-Arbeitsblatt hinzufügen"
+ArticleTitle: "Mehrere Zeilen zu einem Excel-Arbeitsblatt mit der Aspose.Cells Cloud API hinzufügen"
+second_title: "Dokument"
+linktype: "Rows"
+type: docs
+url: /rows/add/rows/
+keywords: "Aspose.Cells Cloud, Zeilen einfügen, Excel-Arbeitsblatt, REST API, SDK, mehrere Zeilen hinzufügen"
+description: "Erfahren Sie, wie Sie die Aspose.Cells Cloud REST API verwenden, um mehrere Zeilen in ein Excel-Arbeitsblatt einzufügen. Dieser Leitfaden behandelt den Endpunkt, die Anforderungsparameter, Beispiels cURL-Befehle und SDK-Nutzungsbeispiele."
+weight: 20
+---
 
-## RSET API
+Diese REST API fügt mehrere neue Zeilen zu einem Excel-Arbeitsblatt hinzu.
 
-```bash
- 
+## PutInsertWorksheetRows API
+
+```http
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
 ```
 
-Die Anforderungsparameter sind:
+### **Sicherheit und Authentifizierung**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Der Name der Arbeitsmappe.|
-| Blattname| Schnur| Weg| Der Arbeitsblattname.|
-| Startreihe| ganze Zahl| Abfrage| Der Anfangszeilenindex, der bearbeitet werden soll.|
-| Gesamtzeilen| ganze Zahl| Abfrage|1 |
-| Update-Referenz| Boolescher Wert| Abfrage| WAHR|
-| Ordner| Schnur| Abfrage| Der Dokumentenordner.|
-| Speichername| Schnur| Abfrage| Speichername.|
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+### **Anforderungsparameter**
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+| Parametername   | Typ     | Position | Beschreibung                                                         |
+| --------------- | ------- | -------- | -------------------------------------------------------------------- |
+| name            | string  | path     | Der Name der Arbeitsmappe.                                           |
+| sheetName       | string  | path     | Der Name des Arbeitsblatts.                                          |
+| startrow        | integer | query    | Der Index der ersten einzufügenden Zeile (**0-basiert**).            |
+| totalRows       | integer | query    | Die Anzahl der einzufügenden Zeilen.                                 |
+| updateReference | boolean | query    | Gibt an, ob Zellverweise nach dem Einfügen aktualisiert werden sollen (`true` oder `false`). |
+| folder          | string  | query    | Der Ordner, der das Dokument enthält.                                |
+| storageName     | string  | query    | Der Speichername.                                                    |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Voraussetzungen**  
+Die Arbeitsmappe muss bereits im angegebenen Speicher (oder Ordner) vorhanden sein, bevor dieser Vorgang aufgerufen wird.
+
+**Authentifizierung**  
+Die API erfordert ein gültiges JWT-Token. Fügen Sie es in den `Authorization`-Header ein, wie im folgenden cURL-Beispiel gezeigt.
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht es Ihnen, REST-Interaktionen direkt aus einem Webbrowser durchzuführen.
+
+Sie können das cURL-Befehlszeilentool verwenden, um problemlos auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie die Cloud-API mit cURL aufgerufen wird.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=11&updateReference=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
+
+> **Hinweis:** Dieser `PUT`-Vorgang erfordert keinen Anforderungstext; ein leeres JSON-Objekt (`{}`) kann gesendet werden, wenn die Client-Bibliothek einen Payload erzwingt.
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+*Mögliche Antwortcodes*  
+
+- **200 OK** – Zeilen erfolgreich eingefügt.  
+- **400 Bad Request** – Ungültige Parameter (z. B. negativer Zeilenindex).  
+- **401 Unauthorized** – Fehlendes oder ungültiges JWT-Token.  
+- **404 Not Found** – Die angegebene Arbeitsmappe oder das angegebene Arbeitsblatt ist nicht vorhanden.  
+- **500 Internal Server Error** – Unerwarteter Serverfehler.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Weitere Vorgänge zu Zeilen finden Sie auf den folgenden Seiten: **Zeilen löschen**, **Zeilen abrufen** und **Zeilen kopieren**.
+
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDK ist die schnellste Möglichkeit zur Entwicklung. Ein SDK übernimmt Low-Level-Details, sodass Sie sich auf Ihr Projekt konzentrieren können. Überprüfen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -99,7 +117,7 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
 
 {{< /tab >}}
 

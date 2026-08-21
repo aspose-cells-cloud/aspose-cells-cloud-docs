@@ -1,79 +1,114 @@
-﻿---
-title: إضافة مرشح أيقونة في ورقة عمل Excel
-second_title: Documen
-linktitle: إضافة فلتر الأيقونات
-type: docs
-url: /ar/autofilter/add-icon-filter/
-aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
-keywords: Adds an icon filter on an Excel worksheet
-description: يدعم الإصدار Aspose.Cells Cloud API إضافة مرشح أيقونات إلى ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 65
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة مرشح أيقونة في ورقة عمل Excel
 ---
-يشير هذا REST API إلى إضافة `icon filter` إلى ورقة عمل Excel.
+title: "إضافة مرشح أيقونات إلى ورقة عمل إكسل"
+second_title: "مستند"
+linktype: "إضافة مرشح أيقونات"
+type: docs
+url: /autofilter/add-icon-filter/
+aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
+keywords: "Aspose.Cells Cloud, إكسل, مرشح الأيقونات, المرشح التلقائي, REST API"
+description: "تعرّف على كيفية إضافة مرشح أيقونات إلى ورقة عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API، مع تفاصيل الطلب، ومثال باستخدام cURL، وأكواد أمثلة للـ SDK، وإدارة الأخطاء."
+weight: 65
+ArticleTitle: "إضافة مرشح أيقونات إلى ورقة عمل إكسل – وثائق Aspose.Cells Cloud"
+---
 
-## RSET API
+## واجهة برمجة التطبيقات REST
+
+تُضيف هذه الواجهة **مرشح أيقونات** إلى ورقة عمل إكسل باستخدام **واجهة Aspose.Cells Cloud REST API**.
+
+**الخلفية:** يطبّق مرشح الأيقونات مجموعة مرئية من الأيقونات على الخلايا بناءً على قيمها، مما يسمح بتحليل بصري سريع لاتجاهات البيانات. تشمل حالات الاستخدام الشائعة تسليط الضوء على مقاييس الأداء أو مؤشرات الحالة أو تصنيف القيم باستخدام أيقونات على شكل إشارات مرورية (مثل الإشارة الضوئية) مباشرةً داخل ورقات عمل إكسل.
+
 
 ```bash
-
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter
-
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-|يتراوح|خيط| استفسار||
-|فهرس الحقل|عدد صحيح| استفسار||
-|نوع مجموعة الأيقونات|خيط| استفسار| أسهم ٣/أسهم رمادية ٣/أعلام ٣/علامات ٣/رموز ٣/رموز ٣٢/إشارات مرور ٣١/إشارات مرور ٣٢/أسهم ٤/أسهم رمادية ٤/تقييم ٤/أحمر إلى أسود ٤/إشارات مرور ٤/أسهم ٥/أسهم رمادية ٥/أرباع ٥/تقييم ٥/نجوم ٣/مربعات ٥/مثلثات ٣/لا شيء/مجموعة مخصصة/ابتسامات ٣/ابتسامات ملونة ٣|
-|معرف الأيقونة|عدد صحيح| استفسار||
-|مطابقة الفراغات|خيط| استفسار|صواب/خطأ|
-|ينعش|خيط| استفسار|صواب/خطأ|
-|مجلد|خيط| استفسار|مجلد المصنف الأصلي.|
-|اسم التخزين| استفسار|خيط|اسم التخزين.|
+تتطلب واجهات برمجة تطبيقات Aspose.Cells Cloud مصادقة قائمة على رمز <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token</a>، وهي آمنة.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب:
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل | النوع   | الموقع | الوصف |
+|-------------|---------|--------|--------|
+| name        | string  | Path   | اسم ملف العمل (workbook). |
+| sheetName   | string  | Path   | اسم ورقة العمل. |
+| range       | string  | Query  | النطاق الخلوي (مثل `A1:B1`) الذي سيتم تطبيق المرشح عليه. |
+| fieldIndex  | integer | Query  | الفهرس الصفر-based للعمود الذي يستهدفه المرشح. |
+| iconSetType | string  | Query  | مجموعة الأيقونات المراد استخدامها. القيم المسموح بها: `Arrows3`, `ArrowsGray3`, `Flags3`, `Signs3`, `Symbols3`, `Symbols32`, `TrafficLights31`, `TrafficLights32`, `Arrows4`, `ArrowsGray4`, `Rating4`, `RedToBlack4`, `TrafficLights4`, `Arrows5`, `ArrowsGray5`, `Quarters5`, `Rating5`, `Stars3`, `Boxes5`, `Triangles3`, `None`, `CustomSet`, `Smilies3`, `ColorSmilies3`. |
+| iconId      | integer | Query  | المُعرّف الخاص بالأيقونة المحددة ضمن مجموعة الأيقونات المختارة. |
+| matchBlanks | boolean | Query  | يحدد ما إذا كانت الخلايا الفارغة تُشمل (`true` أو `false`). |
+| refresh     | boolean | Query  | يشير إلى ما إذا كان المرشح يجب أن يُحدّث بعد التطبيق (`true` أو `false`). |
+| folder      | string  | Query  | المجلد الذي يحتوي على ملف العمل الأصلي. |
+| storageName | string  | Query  | اسم وحدة التخزين التي يوجد فيها ملف العمل. |
+
+### **الاستجابة**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | الوصف |
+|-------|-----------------------------|--------|
+| 200   | OK                          | تم تطبيق المرشح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400   | Bad Request                 | معاملات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم). |
+| 401   | Unauthorized                | رمز JWT غير صالح أو مفقود. |
+| 413   | Payload Too Large           | حجم الملف المرفوع يتجاوز الحد المسموح به. |
+| 500   | Internal Server Error       | خطأ داخلي في الخادم غير متوقع. |
+
+## كيفية استخدام PutWorksheetIconFilter API باستخدام SDKs
+
+### مواصفات PutWorksheetIconFilter API
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) واجهة برمجة تطبيقات مفتوحة للوصول العام، وتتيح لك إجراء تفاعلات REST مباشرةً من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات ويب Aspose.Cells. يُظهر المثال التالي كيفية إجراء استدعاء إلى واجهة Cloud API باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/iconFilter?range=A1:B1&fieldIndex=0&iconSetType=ArrowsGray3&iconId=1" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/iconFilter?range=A1:B1&fieldindex=0&iconsettype=ArrowsGray3&iconid=1" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
+رموز حالات الاستجابة الممكنة:
+
+| الرمز | الوصف |
+|-------|--------|
+| 200   | تم تطبيق المرشح بنجاح. |
+| 400   | طلب غير صالح – معاملات مفقودة أو غير صحيحة. |
+| 401   | غير مصرّح به – رمز مصادقة غير صالح أو مفقود. |
+| 404   | ملف العمل أو ورقة العمل أو النطاق المحدد غير موجود. |
+| 500   | خطأ داخلي في الخادم. |
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. تتعامل الـ SDK مع التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى مراجعة [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -126,3 +161,5 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 {{< /tab >}}
 
 {{< /tabs >}}
+
+لمزيد من إمكانات المرشح التلقائي، راجع الوثائق حول **[إضافة مرشح لون](/autofilter/add-color-filter/)**، **[إضافة مرشح تواريخ](/autofilter/add-date-filter/)**، و **[مسح المرشح التلقائي](/autofilter/clear-autofilter/)**.

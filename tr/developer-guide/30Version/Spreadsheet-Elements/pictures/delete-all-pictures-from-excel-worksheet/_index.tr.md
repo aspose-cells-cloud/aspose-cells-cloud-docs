@@ -1,73 +1,90 @@
-﻿---
-title: Excel çalışma sayfasındaki tüm resimleri silin
-second_title: Documen
-linktitle: Temiz
-type: docs
-url: /tr/pictures/clear/
-aliases: [/delete-all-pictures-from-excel-worksheet/]
-keywords: Delete all pictures in an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki tüm resimlerin silinmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 60
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki tüm resimleri sil
 ---
-Bu REST API, `delete`'i gösterir `all` çalışma kağıdındaki resimler.
+title: "Bir Excel çalışma sayfasındaki tüm resimleri silin"
+second_title: "Belge"
+linktitle: "Temizle"
+type: docs
+url: /pictures/clear/
+aliases: [/delete-all-pictures-from-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, tüm resimleri sil, çalışma sayfası, REST API, resimleri temizle"
+description: "Aspose.Cells Cloud REST API ile bir Excel çalışma sayfasından tüm resimleri nasıl sileceğinizi cURL ve SDK örnekleriyle öğrenin."
+weight: 60
+ArticleTitle: "Aspose.Cells Cloud ile Bir Excel Çalışma Sayfasındaki Tüm Resimleri Nasıl Silirsiniz?"
+---
 
-## RSET API
+Bu REST API, bir çalışma sayfasındaki **tüm** resimleri siler.
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
- 
+**Önkoşullar**  
+- Geçerli bir OAuth 2.0 erişim belirteci ile aktif bir Aspose.Cells Cloud hesabı.  
+- API sürümü 3.0 (veya daha üstü) gereklidir; önceki sürümler kullanım dışıdır.  
+- Hedef Excel dosyası, desteklenen bir depolama konumunda (öntanımlı veya özel) saklanmalıdır.
+
+**Sürüm Uyumluluğu**  
+Uç nokta, Cells Cloud 3.0 API仕様ına uyar. İstemci kütüphanelerinizin ve istek URL’lerinizin `api.aspose.cloud/v3.0` adresini hedeflediğinden emin olun.
+
+## DeleteWorksheetPictures API
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **İstek parametreleri**
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı | Tür   | Konum | Açıklama                                     |
+| -------------- | ------ | -------- | ------------------------------------------ |
+| name           | string | Yol     | Excel dosyasının adı.                    |
+| sheetName      | string | Yol     | Resimleri içeren çalışma sayfasının adı. |
+| folder         | string | Sorgu   | Dosyanın bulunduğu klasör.           |
+| storageName    | string | Sorgu   | Depolama hizmetinin adı.               |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### Hata Yanıtları
+
+| HTTP Kodu | Açıklama                                                                    |
+| --------- | ------------------------------------------------------------------------------ |
+| 401       | Yetkisiz – eksik veya geçersiz belirteç.                                       |
+| 404       | Bulunamadı – belirtilen dosya, çalışma sayfası veya sayfa kırma dizini mevcut değil. |
+| 400       | Geçersiz İstek – hatalı istek sözdizimi veya geçersiz parametreler.                  |
+| 500       | İç Sunucu Hatası – beklenmeyen bir durumla karşılaşıldı.               |
+
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile API’yi nasıl çağıracağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetName}/pictures" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+## Bulut SDK Geliştirme Grubu
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. Bir SDK, düşük seviye detayları yöneterek iş mantığınıza odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +137,10 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Notlar:** DELETE işlemi sayfalamayi desteklemez ve standart Aspose.Cells Cloud API hız sınırlarına (öntanımlı 100 istek/dakika) tabidir. İstemci mantığınızı buna göre ayarlayın.
+
+**Ayrıca bakınız**:  
+- [/pictures/delete/](../delete/) – Bir çalışma sayfasından belirli bir resmi silin.  
+- [/pictures/add/](../add/) – Bir çalışma sayfasına resim ekleyin.  
+---

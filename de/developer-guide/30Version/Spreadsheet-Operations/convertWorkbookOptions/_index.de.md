@@ -1,506 +1,594 @@
-﻿---
-title: Option „Arbeitsmappe konvertieren“
-second_title: Documen
-linktitle: Option „Arbeitsmappe konvertieren“
-type: docs
-url: /de/convert-workbook-options/
-keywords: ConvertWorkbookOptions
-description: Aspose.Cells Cloud REST API unterstützt die Konvertierung von Excel-Dateien in verschiedene Dateiformate. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 79
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Arbeitsmappenoptionen konvertieren
 ---
+title: "Arbeitsmappenkonvertierungsoptionen"
+second_title: "Dokument"
+linktitle: "Arbeitsmappenkonvertierungsoptionen"
+type: docs
+url: /convert-workbook-options/
+keywords: "Aspose.Cells, ConvertWorkbookOptions, Excel-Konvertierung, PDF, CSV, API"
+description: "Arbeitsmappenkonvertierungsoptionen – Konfigurieren Sie die Excel-Arbeitsmappenkonvertierung in PDF, CSV, HTML und weitere Formate mit der Aspose.Cells Cloud API."
+weight: 79
+ArticleTitle: "Arbeitsmappenkonvertierungsoptionen – Aspose.Cells Cloud API"
+---
+
 # ConvertWorkbookOptions-Eigenschaften
 
-Name | Typ | Beschreibung | Hinweise
------------- | ------------- | ------------- | -------------
-**Datenquelle** | **Objekt** Datendateiquelle: CloudFileSystem, RequestFiles, HttpUri. |
-**[Dateiinfo](/Zellen/Dateiinfo/)** | **Objekt** | Beschreibung der Dateiinformationen. Enthält Dateiname, Dateigröße und Dateiinhalt (Base64-Zeichenfolge). |
-**[Seiteneinrichtung](/Zellen/Seiteneinrichtung/)** | **Objekt** | Eigenschaften der Seiteneinrichtung. |
-**Speicheroptionen** | **Objekt** | Speicheroptionen: DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
-**ConvertFormat** | **Schnur** | Das Dateiformat: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg usw. |
-**CheckExcelRestriction** | **Boolescher Wert** | Ruft den Typ des automatisch angepassten umbrochenen Textes ab und legt ihn fest. |
+**API-Version:** 23.12 (2024‑03)
 
-## **fileSource-Eigenschaften**
+`ConvertWorkbookOptions` ist das Anforderungsmodell, das von der Aspose.Cells Cloud-Konvertierungs-API verwendet wird, um festzulegen, wie eine Excel-Arbeitsmappe in ein anderes Format (PDF, CSV, HTML usw.) transformiert werden soll. Es fasst die Quelldateiinformationen, das Zielformat, die Seiteneinrichtungseinstellungen und formatspezifische Speicheroptionen zusammen.
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|Dateiquellentyp|Zeichenfolge|WAHR| FALSCH||Eine Eigenschaft namens FileSourceType vom Typ FileSourceType, auf die zugegriffen und die geändert werden kann. (CloudFileSystem/RequestFiles/HttpUri)|
-|Dateipfad|Zeichenfolge|WAHR| FALSCH||Der Dateipositionspfad.|
+| Name                                | Typ         | Beschreibung                                                                                                   | Hinweise |
+| ----------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------- | ------- |
+| **DataSource**                      | **Objekt**  | Quelldateiquelle: `CloudFileSystem`, `RequestFiles` oder `HttpUri`.                                            |         |
+| **[FileInfo](/cells/file-info/)**   | **Objekt**  | Gibt Dateinamen, Größe und base64-codierten Inhalt an.                                                   |         |
+| **[PageSetup](/cells/page-setup/)** | **Objekt**  | Seiteneinrichtungseigenschaften wie Ränder, Ausrichtung und Skalierung.                                              |         |
+| **SaveOptions**                     | **Objekt**  | Container für formatspezifische Speicheroptionen (z. B. `PdfSaveOptions`, `HtmlSaveOptions`).                |         |
+| **ConvertFormat**                   | **Zeichenfolge**  | Zieldateiformat (z. B. **PDF**, **CSV**, **HTML**, **XLSX**, **TIFF**, usw.).                              |         |
+| **CheckExcelRestriction**           | **Boolean** | Gibt an, ob Excel-spezifische Einschränkungen (maximale Zeilen, Spalten, Blattname-Länge usw.) erzwungen werden sollen. |         |
 
-## **DbfSaveOptions-Eigenschaften**
+**Voraussetzungen**
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|ExportAsString|Boolescher Wert|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+- Holen Sie sich ein gültiges OAuth 2.0-Zugriffstoken für Aspose.Cells Cloud.  
+- Stellen Sie sicher, dass die Quelldatei über einen der unterstützten `DataSource`-Typen erreichbar ist.
 
-## **DifSaveOptions-Eigenschaften**
+**Kurzes Beispiel**
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+```json
+{
+  "DataSource": {
+    "FileInfo": {
+      "FileName": "Beispiel.xlsx",
+      "FileContent": "<base64-codierter-Inhalt>"
+    }
+  },
+  "ConvertFormat": "pdf",
+  "SaveOptions": {
+    "PdfSaveOptions": {
+      "CompressImages": true,
+      "ImageQuality": 90
+    }
+  }
+}
+```
 
-## **DocxSaveOptions-Eigenschaften**
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -d @request.json \
+     -o Beispiel.pdf
+```
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|Standardschriftart|Zeichenfolge|WAHR| FALSCH|||
-|CheckWorkbookDefaultFont|Boolescher Wert|WAHR| FALSCH|||
-|CheckFontCompatibility|Boolescher Wert|WAHR| FALSCH|||
-|IsFontSubstitutionCharGranularity|Boolescher Wert|WAHR| FALSCH|||
-|Eine Seite pro Blatt|Boolescher Wert|WAHR| FALSCH|||
-|Alle Spalten auf einer Seite pro Blatt|Boolescher Wert|WAHR| FALSCH|||
-|Fehler ignorieren|Boolescher Wert|WAHR| FALSCH|||
-|LeereSeiteausgeben,wennnichtszudruckenist|Boolescher Wert|WAHR| FALSCH|||
-|Seitenindex|Ganze Zahl|WAHR| FALSCH|||
-|Seitenanzahl|Ganze Zahl|WAHR| FALSCH|||
-|Druckseitentyp|Zeichenfolge|WAHR| FALSCH|||
-|Gitternetzlinientyp|Zeichenfolge|WAHR| FALSCH|||
-|TextCrossType|Zeichenfolge|WAHR| FALSCH|||
-|Standard-Bearbeitungssprache|Zeichenfolge|WAHR| FALSCH|||
-|EmfRenderSetting|Zeichenfolge|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+**API-Anforderungsdetails**
 
-## **HtmlSaveOptions-Eigenschaften**
+Die Konvertierungsoperation erfolgt mit einer **POST**-Anforderung an den Endpunkt:
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|ExportPageHeaders|Boolescher Wert|WAHR| FALSCH|||
-|ExportPageFooters|Boolescher Wert|WAHR| FALSCH|||
-|Zeilen- und Spaltenüberschriften exportieren|Boolescher Wert|WAHR| FALSCH|||
-|AlleBlätter anzeigen|Boolescher Wert|WAHR| FALSCH|||
-|Bildoptionen|Klasse|WAHR| FALSCH|||
-|Als einzelne Datei speichern|Boolescher Wert|WAHR| FALSCH|||
-|ExportHiddenWorksheet|Boolescher Wert|WAHR| FALSCH|||
-|Gitterlinien exportieren|Boolescher Wert|WAHR| FALSCH|||
-|Präsentationspräferenz|Boolescher Wert|WAHR| FALSCH|||
-|CellCssPrefix|Zeichenfolge|WAHR| FALSCH|||
-|TableCssId|Zeichenfolge|WAHR| FALSCH|||
-|IsFullPathLink|Boolescher Wert|WAHR| FALSCH|||
-|ExportWorksheetCSSSeparat|Boolescher Wert|WAHR| FALSCH|||
-|ExportSimilarBorderStyle|Boolescher Wert|WAHR| FALSCH|||
-|MergeEmptyTdForcely|Boolescher Wert|WAHR| FALSCH|||
-|ExportCellCoordinate|Boolescher Wert|WAHR| FALSCH|||
-|ExportExtraHeadings|Boolescher Wert|WAHR| FALSCH|||
-|ExportHeadings|Boolescher Wert|WAHR| FALSCH|||
-|ExportFormel|Boolescher Wert|WAHR| FALSCH|||
-|TooltipText hinzufügen|Boolescher Wert|WAHR| FALSCH|||
-|ExportBogusRowData|Boolescher Wert|WAHR| FALSCH|||
-|Nicht verwendete Stile ausschließen|Boolescher Wert|WAHR| FALSCH|||
-|ExportDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
-|ExportWorksheetProperties|Boolescher Wert|WAHR| FALSCH|||
-|ExportWorkbookProperties|Boolescher Wert|WAHR| FALSCH|||
-|ExportFrameScriptsAndProperties|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis der angehängten Dateien|Zeichenfolge|WAHR| FALSCH|||
-|AttachedFilesUrlPrefix|Zeichenfolge|WAHR| FALSCH|||
-|Codierung|Zeichenfolge|WAHR| FALSCH|||
-|Nur aktivesArbeitsblatt exportieren|Boolescher Wert|WAHR| FALSCH|||
-|ExportChartImageFormat|Zeichenfolge|WAHR| FALSCH|||
-|ExportImagesAsBase64|Boolescher Wert|WAHR| FALSCH|||
-|HiddenColDisplayType|Zeichenfolge|WAHR| FALSCH|||
-|HiddenRowDisplayType|Zeichenfolge|WAHR| FALSCH|||
-|HtmlCrossStringType|Zeichenfolge|WAHR| FALSCH|||
-|IsExpImageToTempDir|Boolescher Wert|WAHR| FALSCH|||
-|Seitentitel|Zeichenfolge|WAHR| FALSCH|||
-|ParseHtmlTagInCell|Boolescher Wert|WAHR| FALSCH|||
-|CellNameAttribute|Zeichenfolge|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+```
+https://api.aspose.cloud/v3.0/cells/convert
+```
 
-## **ImageSaveOptions-Eigenschaften**
+Erforderliche Header:
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|ChartImageType|Zeichenfolge|WAHR| FALSCH|||
-|EmbededImageNameInSvg|Zeichenfolge|WAHR| FALSCH|||
-|Horizontale Auflösung|Ganze Zahl|WAHR| FALSCH|||
-|Bildformat|Zeichenfolge|WAHR| FALSCH|||
-|IsCellAutoFit|Boolescher Wert|WAHR| FALSCH|||
-|Eine Seite pro Blatt|Boolescher Wert|WAHR| FALSCH|||
-|NurBereich|Boolescher Wert|WAHR| FALSCH|||
-|Druckseite|Zeichenfolge|WAHR| FALSCH|||
-|DruckenMitStatusDialog|Boolescher Wert|WAHR| FALSCH|||
-|Qualität|Ganze Zahl|WAHR| FALSCH|||
-|Tiff-Komprimierung|Zeichenfolge|WAHR| FALSCH|||
-|Vertikale Auflösung|Ganze Zahl|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+| Header                | Wert                               |
+|-----------------------|------------------------------------|
+| `Authorization`       | `Bearer {access_token}`            |
+| `Content-Type`        | `application/json`                |
 
-## **JsonSaveOptions-Eigenschaften**
+Der Anforderungstext muss eine JSON-Repräsentation von `ConvertWorkbookOptions` sein (siehe obiges Beispiel). Alle Eigenschaften sind optional, es sei denn, sie werden vom gewählten `ConvertFormat` benötigt.
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|Exportbereich|Klasse|WAHR| FALSCH|||
-|HasHeaderRow|Boolescher Wert|WAHR| FALSCH|||
-|ExportAsString|Boolescher Wert|WAHR| FALSCH|||
-|Einzug|Zeichenfolge|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+**API-Antwort**
 
-## **MarkdownSaveOptions-Eigenschaften**
+Eine erfolgreiche Konvertierung gibt **HTTP 200 OK** (oder **202 Accepted** bei asynchroner Verarbeitung) zurück und liefert die konvertierte Datei im Antworttext. Bei gestreamter Antwort enthält der `Content-Disposition`-Header den vorgeschlagenen Dateinamen.
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|Codierung|Zeichenfolge|WAHR| FALSCH|||
-|FormatStrategie|Zeichenfolge|WAHR| FALSCH|||
-|Zeilentrenner|Zeichenfolge|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+Beispiel einer JSON-Antwort für eine asynchrone Anforderung:
 
-## **OoxmlSaveOptions-Eigenschaften**
+```json
+{
+  "JobId": "a1b2c3d4e5",
+  "Status": "InProgress",
+  "ResultUrl": "https://api.aspose.cloud/v3.0/cells/jobs/a1b2c3d4e5/result"
+}
+```
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|ExportCellName|Boolescher Wert|WAHR| FALSCH|||
-|UpdateZoom|Boolescher Wert|WAHR| FALSCH|||
-|EnableZip64|Boolescher Wert|WAHR| FALSCH|||
-|EmbedOoxmlAsOleObject|Boolescher Wert|WAHR| FALSCH|||
-|Komprimierungstyp|Zeichenfolge|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+**Statuscodes**
 
-## **PclSaveOptions-Eigenschaften**
+| Code | Bedeutung                                 |
+|------|------------------------------------------|
+| 200  | Konvertierung abgeschlossen; Datei zurückgegeben.     |
+| 202  | Konvertierung akzeptiert; Ergebnis später verfügbar. |
+| 400  | Ungültige Anforderung – fehlende oder ungültige Parameter. |
+| 401  | Nicht autorisiert – ungültiges oder fehlendes Token. |
+| 403  | Verboten – unzureichende Berechtigungen.   |
+| 500  | Interner Serverfehler.                   |
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|fontFullName|Zeichenfolge|WAHR| FALSCH|||
-|fontPclName|Zeichenfolge|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+**Hinweise / Einschränkungen**
 
-## **PdfSaveOptions-Eigenschaften**
+- Die `CheckExcelRestriction`-Flag erzwingt Excel-Grenzwerte wie maximale Zeilen (1.048.576) und Spalten (16.384).  
+- Nicht alle Zielformate unterstützen alle `SaveOptions`-Eigenschaften; nicht unterstützte Optionen werden ignoriert.  
+- Wenn `HttpUri` als Datenquelle verwendet wird, muss die URL öffentlich erreichbar sein und keine Authentifizierung erfordern.  
+- Die API-Methode und der Endpunkt wurden hinzugefügt, um die Klarheit für Entwickler zu verbessern und Integrationsfehler zu reduzieren.  
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|DisplayDocTitle|Boolescher Wert|WAHR| FALSCH|||
-|ExportDocumentStructure|Boolescher Wert|WAHR| FALSCH|||
-|EmfRenderSetting|Zeichenfolge|WAHR| FALSCH|||
-|BenutzerdefinierteEigenschaftenExport|Zeichenfolge|WAHR| FALSCH|||
-|Optimierungstyp|Zeichenfolge|WAHR| FALSCH|||
-|Produzent|Zeichenfolge|WAHR| FALSCH|||
-|PDF-Komprimierung|Zeichenfolge|WAHR| FALSCH|||
-|Schriftkodierung|Zeichenfolge|WAHR| FALSCH|||
-|Wasserzeichen|Klasse|WAHR| FALSCH|||
-|Formel berechnen|Boolescher Wert|WAHR| FALSCH|||
-|CheckFontCompatibility|Boolescher Wert|WAHR| FALSCH|||
-|Einhaltung|Zeichenfolge|WAHR| FALSCH|||
-|Standardschriftart|Zeichenfolge|WAHR| FALSCH|||
-|Eine Seite pro Blatt|Boolescher Wert|WAHR| FALSCH|||
-|Druckseitentyp|Zeichenfolge|WAHR| FALSCH|||
-|Sicherheitsoptionen|Klasse|WAHR| FALSCH|||
-|gewünschter PPI|Ganze Zahl|WAHR| FALSCH|||
-|jpegQualität|Ganze Zahl|WAHR| FALSCH|||
-|Bildtyp|Zeichenfolge|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+## FileSource-Eigenschaften
 
-## **PptxSaveOptions-Eigenschaften**
+| Eigenschaftsname  | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                                               |
+| ----------------- | --------------- | -------- | -------- | ------------ | -------------------------------------------------------------------------- |
+| FileSourceType    | Zeichenfolge    | true     | false    |              | Gibt den Quelltyp an (`CloudFileSystem`, `RequestFiles`, `HttpUri`). |
+| FilePath          | Zeichenfolge    | true     | false    |              | Dateipfadposition.                                                       |
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|IgnoreHiddenRows|Boolescher Wert|WAHR| FALSCH|||
-|SchriftgrößeFürZeilentypAnpassen|Zeichenfolge|WAHR| FALSCH|||
-|ExportViewType|Zeichenfolge|WAHR| FALSCH|||
-|Standardschriftart|Zeichenfolge|WAHR| FALSCH|||
-|CheckWorkbookDefaultFont|Boolescher Wert|WAHR| FALSCH|||
-|CheckFontCompatibility|Boolescher Wert|WAHR| FALSCH|||
-|IsFontSubstitutionCharGranularity|Boolescher Wert|WAHR| FALSCH|||
-|Eine Seite pro Blatt|Boolescher Wert|WAHR| FALSCH|||
-|Alle Spalten auf einer Seite pro Blatt|Boolescher Wert|WAHR| FALSCH|||
-|Fehler ignorieren|Boolescher Wert|WAHR| FALSCH|||
-|LeereSeiteausgeben,wennnichtszudruckenist|Boolescher Wert|WAHR| FALSCH|||
-|Seitenindex|Ganze Zahl|WAHR| FALSCH|||
-|Seitenanzahl|Ganze Zahl|WAHR| FALSCH|||
-|Druckseitentyp|Zeichenfolge|WAHR| FALSCH|||
-|Gitternetzlinientyp|Zeichenfolge|WAHR| FALSCH|||
-|TextCrossType|Zeichenfolge|WAHR| FALSCH|||
-|Standard-Bearbeitungssprache|Zeichenfolge|WAHR| FALSCH|||
-|EmfRenderSetting|Zeichenfolge|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+## DbfSaveOptions-Eigenschaften
 
-## **SqlScriptSaveOptions-Eigenschaften**
+| Eigenschaftsname          | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                        |
+| ------------------------- | --------------- | -------- | -------- | ------------ | --------------------------------------------------- |
+| ExportAsString            | Boolean         | true     | false    |              | Wenn **true**, werden numerische Werte als Zeichenfolgen exportiert. |
+| SaveFormat                | Zeichenfolge    | true     | false    |              | Bezeichner des DBF-Dateiformats.                    |
+| CachedFileFolder          | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.  |
+| ClearData                 | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.          |
+| CreateDirectory           | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert. |
+| EnableHttpCompression     | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.       |
+| RefreshChartCache         | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                 | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.            |
+| ValidateMergedAreas       | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.         |
+| MergeAreas                | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.             |
+| SortExternalNames         | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                 |
+| CheckExcelRestriction     | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| UpdateSmartArt            | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version. |
+| EncryptDocumentProperties | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei. |
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|CheckIfTableExists|Boolescher Wert|WAHR| FALSCH|||
-|ColumnTypeMap|Zeichenfolge|WAHR| FALSCH|||
-|CheckAllDataForColumnType|Boolescher Wert|WAHR| FALSCH|||
-|Leere Zeile Zwischen Zeilen Hinzufügen|Boolescher Wert|WAHR| FALSCH|||
-|Separator|Zeichenfolge|WAHR| FALSCH|||
-|Operatortyp|Zeichenfolge|WAHR| FALSCH|||
-|Primärschlüssel|Ganze Zahl|WAHR| FALSCH|||
-|Tabelle erstellen|Boolescher Wert|WAHR| FALSCH|||
-|ID-Name|Zeichenfolge|WAHR| FALSCH|||
-|StartId|Ganze Zahl|WAHR| FALSCH|||
-|Tabellenname|Zeichenfolge|WAHR| FALSCH|||
-|ExportAsString|Boolescher Wert|WAHR| FALSCH|||
-|Exportbereich|Klasse|WAHR| FALSCH|||
-|HasHeaderRow|Boolescher Wert|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+## DifSaveOptions-Eigenschaften
 
-## **SvgSaveOptions-Eigenschaften**
+| Eigenschaftsname          | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                        |
+| ------------------------- | --------------- | -------- | -------- | ------------ | --------------------------------------------------- |
+| SaveFormat                | Zeichenfolge    | true     | false    |              | Bezeichner des DIF-Dateiformats.                    |
+| CachedFileFolder          | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.  |
+| ClearData                 | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.          |
+| CreateDirectory           | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert. |
+| EnableHttpCompression     | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.       |
+| RefreshChartCache         | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                 | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.            |
+| ValidateMergedAreas       | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.         |
+| MergeAreas                | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.             |
+| SortExternalNames         | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                 |
+| CheckExcelRestriction     | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| UpdateSmartArt            | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version. |
+| EncryptDocumentProperties | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei. |
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|Blattindex|Ganze Zahl|WAHR| FALSCH|||
-|ChartImageType|Zeichenfolge|WAHR| FALSCH|||
-|EmbededImageNameInSvg|Zeichenfolge|WAHR| FALSCH|||
-|Horizontale Auflösung|Ganze Zahl|WAHR| FALSCH|||
-|Bildformat|Zeichenfolge|WAHR| FALSCH|||
-|IsCellAutoFit|Boolescher Wert|WAHR| FALSCH|||
-|Eine Seite pro Blatt|Boolescher Wert|WAHR| FALSCH|||
-|NurBereich|Boolescher Wert|WAHR| FALSCH|||
-|Druckseite|Zeichenfolge|WAHR| FALSCH|||
-|DruckenMitStatusDialog|Boolescher Wert|WAHR| FALSCH|||
-|Qualität|Ganze Zahl|WAHR| FALSCH|||
-|Tiff-Komprimierung|Zeichenfolge|WAHR| FALSCH|||
-|Vertikale Auflösung|Ganze Zahl|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+## DocxSaveOptions-Eigenschaften
 
-## **TxtSaveOptions-Eigenschaften**
+| Eigenschaftsname                  | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                           |
+| --------------------------------- | --------------- | -------- | -------- | ------------ | ------------------------------------------------------ |
+| DefaultFont                       | Zeichenfolge    | true     | false    |              | Schriftart, die verwendet wird, wenn eine Quellschriftart nicht verfügbar ist. |
+| CheckWorkbookDefaultFont          | Boolean         | true     | false    |              | Überprüft, ob die Standardarbeitsmappenschriftart angewendet wird. |
+| CheckFontCompatibility            | Boolean         | true     | false    |              | Überprüft Schriftartkompatibilität für das Zielformat. |
+| IsFontSubstitutionCharGranularity | Boolean         | true     | false    |              | Steuert zeichenbasierte Schriftartersatzfunktion.     |
+| OnePagePerSheet                   | Boolean         | true     | false    |              | Erzwingt, dass jedes Blatt auf einer separaten Seite erscheint. |
+| AllColumnsInOnePagePerSheet       | Boolean         | true     | false    |              | Passt alle Spalten eines Blattes auf eine Seite.     |
+| IgnoreError                       | Boolean         | true     | false    |              | Ignoriert nicht-kritische Fehler während der Konvertierung. |
+| OutputBlankPageWhenNothingToPrint | Boolean         | true     | false    |              | Erzeugt eine leere Seite, wenn nichts gerendert werden soll. |
+| PageIndex                         | Integer         | true     | false    |              | Index der ersten zu exportierenden Seite.            |
+| PageCount                         | Integer         | true     | false    |              | Anzahl der zu exportierenden Seiten.                  |
+| PrintingPageType                  | Zeichenfolge    | true     | false    |              | Gibt den Seitentyp für das Drucken an.                |
+| GridlineType                      | Zeichenfolge    | true     | false    |              | Bestimmt, wie Gitterlinien gerendert werden.          |
+| TextCrossType                     | Zeichenfolge    | true     | false    |              | Definiert den Kreuztyp für die Textwiedergabe.        |
+| DefaultEditLanguage               | Zeichenfolge    | true     | false    |              | Standardsprache für die Textbearbeitung.             |
+| EmfRenderSetting                  | Zeichenfolge    | true     | false    |              | Einstellungen für die EMF-Wiedergabe.                 |
+| MergeAreas                        | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.               |
+| SortExternalNames                 | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                   |
+| UpdateSmartArt                    | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version. |
+| SaveFormat                        | Zeichenfolge    | true     | false    |              | Bezeichner des DOCX-Dateiformats.                     |
+| CachedFileFolder                  | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.    |
+| ClearData                         | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.            |
+| CreateDirectory                   | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert. |
+| EnableHttpCompression             | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.         |
+| RefreshChartCache                 | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                         | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.              |
+| ValidateMergedAreas               | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.           |
+| CheckExcelRestriction             | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| EncryptDocumentProperties         | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei. |
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|Zitattyp|Zeichenfolge|WAHR| FALSCH|||
-|Separator|Zeichenfolge|WAHR| FALSCH|||
-|Trennzeichenfolge|Zeichenfolge|WAHR| FALSCH|||
-|Immer zitiert|Boolescher Wert|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+## HtmlSaveOptions-Eigenschaften
 
-## **XlsSaveOptions- und XlsbSaveOptions-Eigenschaften**
+| Eigenschaftsname                | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                          |
+| ------------------------------- | --------------- | -------- | -------- | ------------ | ----------------------------------------------------- |
+| ExportPageHeaders               | Boolean         | true     | false    |              | Schließt Seitenheader in die HTML-Ausgabe ein.       |
+| ExportPageFooters               | Boolean         | true     | false    |              | Schließt Seitenfußzeilen in die HTML-Ausgabe ein.    |
+| ExportRowColumnHeadings         | Boolean         | true     | false    |              | Exportiert Zeilen- und Spaltenüberschriften.         |
+| ShowAllSheets                   | Boolean         | true     | false    |              | Zeigt alle Arbeitsblätter in einer einzigen HTML-Datei. |
+| ImageOptions                    | Klasse          | true     | false    |              | Einstellungen zur Steuerung der Bildwiedergabe.      |
+| SaveAsSingleFile                | Boolean         | true     | false    |              | Speichert die gesamte Arbeitsmappe als eine HTML-Datei. |
+| ExportHiddenWorksheet           | Boolean         | true     | false    |              | Schließt ausgeblendete Arbeitsblätter in den Export ein. |
+| ExportGridLines                 | Boolean         | true     | false    |              | Rendert Gitterlinien in der HTML-Ausgabe.             |
+| PresentationPreference          | Boolean         | true     | false    |              | Optimiert HTML für den Präsentationsmodus.           |
+| CellCssPrefix                   | Zeichenfolge    | true     | false    |              | Präfix, das generierten CSS-Klassennamen für Zellen hinzugefügt wird. |
+| TableCssId                      | Zeichenfolge    | true     | false    |              | ID-Attribut für die generierte HTML-Tabelle.          |
+| IsFullPathLink                  | Boolean         | true     | false    |              | Erzeugt vollständige Pfad-Hyperlinks für Ressourcen. |
+| ExportWorksheetCSSSeparately    | Boolean         | true     | false    |              | Platziert das CSS jedes Arbeitsblatts in einer separaten Datei. |
+| ExportSimilarBorderStyle        | Boolean         | true     | false    |              | Vereint ähnliche Randstile, um die CSS-Größe zu reduzieren. |
+| MergeEmptyTdForcely             | Boolean         | true     | false    |              | Erzwingt das Zusammenführen leerer `<td>`-Elemente.  |
+| ExportCellCoordinate            | Boolean         | true     | false    |              | Schließt Zellkoordinaten (z. B. A1) in die HTML-Ausgabe ein. |
+| ExportExtraHeadings             | Boolean         | true     | false    |              | Fügt zusätzliche Überschriftenzeilen/-spalten hinzu, falls erforderlich. |
+| ExportHeadings                  | Boolean         | true     | false    |              | Exportiert Zeilen- und Spaltenüberschriften.         |
+| ExportFormula                   | Boolean         | true     | false    |              | Zeigt Formeln anstelle berechneter Werte an.          |
+| AddTooltipText                  | Boolean         | true     | false    |              | Fügt Tooltips mit Zellkommentaren hinzu.              |
+| ExportBogusRowData              | Boolean         | true     | false    |              | Schließt Platzhalterzeilen für leere Daten ein.       |
+| ExcludeUnusedStyles             | Boolean         | true     | false    |              | Entfernt nicht verwendete CSS-Stile.                  |
+| ExportDocumentProperties        | Boolean         | true     | false    |              | Schreibt dokumentübergreifende Eigenschaften in HTML-Meta-Tags. |
+| ExportWorksheetProperties       | Boolean         | true     | false    |              | Schreibt arbeitsblattübergreifende Eigenschaften in HTML. |
+| ExportWorkbookProperties        | Boolean         | true     | false    |              | Schreibt arbeitsmappenübergreifende Eigenschaften in HTML. |
+| ExportFrameScriptsAndProperties | Boolean         | true     | false    |              | Schließt Skripte und Eigenschaften für Frames ein.    |
+| AttachedFilesDirectory          | Zeichenfolge    | true     | false    |              | Verzeichnispfad für angehängte Dateien.               |
+| AttachedFilesUrlPrefix          | Zeichenfolge    | true     | false    |              | URL-Präfix für angehängte Dateien.                    |
+| Encoding                        | Zeichenfolge    | true     | false    |              | Zeichenkodierung für die HTML-Datei.                  |
+| ExportActiveWorksheetOnly       | Boolean         | true     | false    |              | Exportiert nur das aktive Arbeitsblatt.               |
+| ExportChartImageFormat          | Zeichenfolge    | true     | false    |              | Bildformat für eingebettete Diagramme.                |
+| ExportImagesAsBase64            | Boolean         | true     | false    |              | Kodiert Bilder als Base64-Zeichenfolgen.              |
+| HiddenColDisplayType            | Zeichenfolge    | true     | false    |              | Gibt an, wie ausgeblendete Spalten angezeigt werden.  |
+| HiddenRowDisplayType            | Zeichenfolge    | true     | false    |              | Gibt an, wie ausgeblendete Zeilen angezeigt werden.   |
+| HtmlCrossStringType             | Zeichenfolge    | true     | false    |              | Bestimmt, wie Kreuzzeichenfolgen-Daten gerendert werden. |
+| IsExpImageToTempDir             | Boolean         | true     | false    |              | Exportiert Bilder in ein temporäres Verzeichnis.      |
+| PageTitle                       | Zeichenfolge    | true     | false    |              | Titel für die generierte HTML-Seite.                  |
+| ParseHtmlTagInCell              | Boolean         | true     | false    |              | Analysiert HTML-Tags in Zellwerten.                   |
+| CellNameAttribute               | Zeichenfolge    | true     | false    |              | Attributname, der den Zellverweis enthält.            |
+| SaveFormat                      | Zeichenfolge    | true     | false    |              | Bezeichner des HTML-Dateiformats.                     |
+| CachedFileFolder                | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.    |
+| ClearData                       | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.            |
+| CreateDirectory                 | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert. |
+| EnableHttpCompression           | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.         |
+| RefreshChartCache               | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                       | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.              |
+| ValidateMergedAreas             | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.           |
+| MergeAreas                      | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.               |
+| SortExternalNames               | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                   |
+| CheckExcelRestriction           | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| UpdateSmartArt                  | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version. |
+| EncryptDocumentProperties       | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei. |
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|Farbanpassung|Boolescher Wert|WAHR| FALSCH|||
-|Wps-Kompatibilität|Boolescher Wert|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+## ImageSaveOptions-Eigenschaften
 
-## **XmlSaveOptions-Eigenschaften**
+| Eigenschaftsname          | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                        |
+| ------------------------- | --------------- | -------- | -------- | ------------ | --------------------------------------------------- |
+| ChartImageType            | Zeichenfolge    | true     | false    |              | Bildformat für die Diagrammwiedergabe.              |
+| EmbeddedImageNameInSvg    | Zeichenfolge    | true     | false    |              | Name für eingebettete Bilder in SVG-Ausgaben.       |
+| HorizontalResolution      | Integer         | true     | false    |              | Horizontale DPI der exportierten Bilddatei.         |
+| ImageFormat               | Zeichenfolge    | true     | false    |              | Zielbildformat (PNG, JPG usw.).                     |
+| IsCellAutoFit             | Boolean         | true     | false    |              | Passt Zellinhalte automatisch an die Bildgröße an.  |
+| OnePagePerSheet           | Boolean         | true     | false    |              | Rendert jedes Arbeitsblatt auf einer separaten Seite. |
+| OnlyArea                  | Boolean         | true     | false    |              | Exportiert nur den definierten Bereich des Arbeitsblattes. |
+| PrintingPage              | Zeichenfolge    | true     | false    |              | Seitenaufbau für das Drucken.                       |
+| PrintWithStatusDialog     | Boolean         | true     | false    |              | Zeigt einen Statusdialog während des Druckvorgangs an. |
+| Quality                   | Integer         | true     | false    |              | Komprimierungsqualität für JPEG-Bilder (0–100).     |
+| TiffCompression           | Zeichenfolge    | true     | false    |              | Komprimierungstyp für TIFF-Bilder.                  |
+| VerticalResolution        | Integer         | true     | false    |              | Vertikale DPI der exportierten Bilddatei.           |
+| SaveFormat                | Zeichenfolge    | true     | false    |              | Bezeichner des Bilddateiformats.                    |
+| CachedFileFolder          | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.  |
+| ClearData                 | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.          |
+| CreateDirectory           | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert. |
+| EnableHttpCompression     | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.       |
+| RefreshChartCache         | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                 | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.            |
+| ValidateMergedAreas       | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.         |
+| MergeAreas                | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.             |
+| SortExternalNames         | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                 |
+| CheckExcelRestriction     | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| UpdateSmartArt            | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version. |
+| EncryptDocumentProperties | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei. |
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|Blattindizes|Anordnung|WAHR| FALSCH|||
-|Exportbereich|Klasse|WAHR| FALSCH|||
-|HasHeaderRow|Boolescher Wert|WAHR| FALSCH|||
-|XmlMapName|Zeichenfolge|WAHR| FALSCH|||
-|Blattname als Elementname|Boolescher Wert|WAHR| FALSCH|||
-|Daten als Attribut|Boolescher Wert|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+## JsonSaveOptions-Eigenschaften
 
-## **XpsSaveOptions-Eigenschaften**
+| Eigenschaftsname          | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                              |
+| ------------------------- | --------------- | -------- | -------- | ------------ | --------------------------------------------------------- |
+| ExportArea                | Klasse          | true     | false    |              | Definiert den zu exportierenden Arbeitsblattbereich.      |
+| HasHeaderRow              | Boolean         | true     | false    |              | Gibt an, ob die erste Zeile Spaltenüberschriften enthält. |
+| ExportAsString            | Boolean         | true     | false    |              | Exportiert alle Werte als Zeichenfolgen.                  |
+| Indent                    | Zeichenfolge    | true     | false    |              | Zeichenfolge für Einzüge (z. B. zwei Leerzeichen).        |
+| SaveFormat                | Zeichenfolge    | true     | false    |              | Bezeichner des JSON-Dateiformats.                         |
+| CachedFileFolder          | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.        |
+| ClearData                 | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.                |
+| CreateDirectory           | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert.   |
+| EnableHttpCompression     | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.             |
+| RefreshChartCache         | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                 | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.                  |
+| ValidateMergedAreas       | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.               |
+| MergeAreas                | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.                   |
+| SortExternalNames         | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                       |
+| CheckExcelRestriction     | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| UpdateSmartArt            | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version.    |
+| EncryptDocumentProperties | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei.  |
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|Standardschriftart|Zeichenfolge|WAHR| FALSCH|||
-|CheckWorkbookDefaultFont|Boolescher Wert|WAHR| FALSCH|||
-|CheckFontCompatibility|Boolescher Wert|WAHR| FALSCH|||
-|IsFontSubstitutionCharGranularity|Boolescher Wert|WAHR| FALSCH|||
-|Eine Seite pro Blatt|Boolescher Wert|WAHR| FALSCH|||
-|Alle Spalten auf einer Seite pro Blatt|Boolescher Wert|WAHR| FALSCH|||
-|Fehler ignorieren|Boolescher Wert|WAHR| FALSCH|||
-|LeereSeiteausgeben,wennnichtszudruckenist|Boolescher Wert|WAHR| FALSCH|||
-|Seitenindex|Ganze Zahl|WAHR| FALSCH|||
-|Seitenanzahl|Ganze Zahl|WAHR| FALSCH|||
-|Druckseitentyp|Zeichenfolge|WAHR| FALSCH|||
-|Gitternetzlinientyp|Zeichenfolge|WAHR| FALSCH|||
-|TextCrossType|Zeichenfolge|WAHR| FALSCH|||
-|Standard-Bearbeitungssprache|Zeichenfolge|WAHR| FALSCH|||
-|EmfRenderSetting|Zeichenfolge|WAHR| FALSCH|||
-|Bereiche zusammenführen|Boolescher Wert|WAHR| FALSCH|||
-|SortExternalNames|Boolescher Wert|WAHR| FALSCH|||
-|SmartArt aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|Format speichern|Zeichenfolge|WAHR| FALSCH|||
-|CachedFileFolder|Zeichenfolge|WAHR| FALSCH|||
-|ClearData|Boolescher Wert|WAHR| FALSCH|||
-|Verzeichnis erstellen|Boolescher Wert|WAHR| FALSCH|||
-|HTTP-Komprimierung aktivieren|Boolescher Wert|WAHR| FALSCH|||
-|ChartCache aktualisieren|Boolescher Wert|WAHR| FALSCH|||
-|SortNames|Boolescher Wert|WAHR| FALSCH|||
-|ValidateMergedAreas|Boolescher Wert|WAHR| FALSCH|||
-|CheckExcelRestriction|Boolescher Wert|WAHR| FALSCH|||
-|EncryptDocumentProperties|Boolescher Wert|WAHR| FALSCH|||
+## MarkdownSaveOptions-Eigenschaften
+
+| Eigenschaftsname          | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                                  |
+| ------------------------- | --------------- | -------- | -------- | ------------ | ------------------------------------------------------------- |
+| Encoding                  | Zeichenfolge    | true     | false    |              | Zeichenkodierung für die Markdown-Datei.                      |
+| FormatStrategy            | Zeichenfolge    | true     | false    |              | Strategie zur Formatierung von Markdown (z. B. GitHub, CommonMark). |
+| LineSeparator             | Zeichenfolge    | true     | false    |              | Zeilenumbruchzeichen (mehrere Zeichen möglich).                |
+| SaveFormat                | Zeichenfolge    | true     | false    |              | Bezeichner des Markdown-Dateiformats.                         |
+| CachedFileFolder          | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.            |
+| ClearData                 | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.                    |
+| CreateDirectory           | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert.       |
+| EnableHttpCompression     | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.                 |
+| RefreshChartCache         | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                 | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.                      |
+| ValidateMergedAreas       | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.                   |
+| MergeAreas                | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.                       |
+| SortExternalNames         | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                           |
+| CheckExcelRestriction     | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| UpdateSmartArt            | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version.        |
+| EncryptDocumentProperties | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei.      |
+
+## OoxmlSaveOptions-Eigenschaften
+
+| Eigenschaftsname          | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                          |
+| ------------------------- | --------------- | -------- | -------- | ------------ | ----------------------------------------------------- |
+| ExportCellName            | Boolean         | true     | false    |              | Schließt Zellennamen in die exportierte Datei ein.    |
+| UpdateZoom                | Boolean         | true     | false    |              | Aktualisiert den Zoomfaktor im Ausgabedokument.       |
+| EnableZip64               | Boolean         | true     | false    |              | Aktiviert ZIP64-Erweiterungen für große Dateien.      |
+| EmbedOoxmlAsOleObject     | Boolean         | true     | false    |              | Integriert OOXML als OLE-Objekt.                      |
+| CompressionType           | Zeichenfolge    | true     | false    |              | Art der angewendeten Komprimierung (z. B. Normal, Maximum). |
+| SaveFormat                | Zeichenfolge    | true     | false    |              | Bezeichner des OOXML-Dateiformats.                    |
+| CachedFileFolder          | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.    |
+| ClearData                 | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.            |
+| CreateDirectory           | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert. |
+| EnableHttpCompression     | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.         |
+| RefreshChartCache         | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                 | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.              |
+| ValidateMergedAreas       | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.           |
+| MergeAreas                | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.               |
+| SortExternalNames         | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                   |
+| CheckExcelRestriction     | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| UpdateSmartArt            | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version. |
+| EncryptDocumentProperties | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei. |
+
+## PclSaveOptions-Eigenschaften
+
+| Eigenschaftsname          | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                        |
+| ------------------------- | --------------- | -------- | -------- | ------------ | --------------------------------------------------- |
+| fontFullName              | Zeichenfolge    | true     | false    |              | Vollständiger Name der zu verwendenden Schriftart.  |
+| fontPclName               | Zeichenfolge    | true     | false    |              | PCL-spezifischer Schriftartname.                    |
+| SaveFormat                | Zeichenfolge    | true     | false    |              | Bezeichner des PCL-Dateiformats.                    |
+| CachedFileFolder          | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.  |
+| ClearData                 | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.          |
+| CreateDirectory           | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert. |
+| EnableHttpCompression     | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.       |
+| RefreshChartCache         | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                 | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.            |
+| ValidateMergedAreas       | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.         |
+| MergeAreas                | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.             |
+| SortExternalNames         | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                 |
+| CheckExcelRestriction     | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| UpdateSmartArt            | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version. |
+| EncryptDocumentProperties | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei. |
+
+## PDFSaveOptions-Eigenschaften
+
+| Eigenschaftsname          | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                          |
+| ------------------------- | --------------- | -------- | -------- | ------------ | ----------------------------------------------------- |
+| DisplayDocTitle           | Boolean         | true     | false    |              | Verwendet den Dokumenttitel als PDF-Titel.           |
+| ExportDocumentStructure   | Boolean         | true     | false    |              | Behält die logische Dokumentstruktur bei.            |
+| EmfRenderSetting          | Zeichenfolge    | true     | false    |              | Einstellungen für die EMF-Bildwiedergabe.            |
+| CustomPropertiesExport    | Zeichenfolge    | true     | false    |              | Steuert den Export benutzerdefinierter Dokumenteigenschaften. |
+| OptimizationType          | Zeichenfolge    | true     | false    |              | Art der PDF-Optimierung (z. B. Größe, Geschwindigkeit). |
+| Producer                  | Zeichenfolge    | true     | false    |              | Name der PDF-Erstellungsanwendung.                   |
+| PDFCompression            | Zeichenfolge    | true     | false    |              | Komprimierungsalgorithmus für PDF-Streams.           |
+| FontEncoding              | Zeichenfolge    | true     | false    |              | Kodierung für eingebettete Schriftarten.             |
+| Watermark                 | Klasse          | true     | false    |              | Wasserzeichen-Einstellungen für das PDF.             |
+| CalculateFormula          | Boolean         | true     | false    |              | Berechnet Formeln vor dem Export.                    |
+| CheckFontCompatibility    | Boolean         | true     | false    |              | Überprüft Schriftartkompatibilität für PDF-Wiedergabe. |
+| Compliance                | Zeichenfolge    | true     | false    |              | PDF/A- oder PDF/X-Konformitätsstufe.                  |
+| DefaultFont               | Zeichenfolge    | true     | false    |              | Schriftart, die verwendet wird, wenn eine Quellschriftart nicht verfügbar ist. |
+| OnePagePerSheet           | Boolean         | true     | false    |              | Platziert jedes Arbeitsblatt auf einer separaten PDF-Seite. |
+| PrintingPageType          | Zeichenfolge    | true     | false    |              | Gibt den Seitentyp für das Drucken an.                |
+| SecurityOptions           | Klasse          | true     | false    |              | Sicherheitseinstellungen wie Passwörter und Berechtigungen. |
+| desiredPPI                | Integer         | true     | false    |              | Gewünschte Bildschirmauflösung in DPI.               |
+| jpegQuality               | Integer         | true     | false    |              | JPEG-Bildqualität (0–100).                           |
+| ImageType                 | Zeichenfolge    | true     | false    |              | Bildtyp für die Rasterung.                           |
+| SaveFormat                | Zeichenfolge    | true     | false    |              | Bezeichner des PDF-Dateiformats.                     |
+| CachedFileFolder          | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.    |
+| ClearData                 | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.            |
+| CreateDirectory           | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert. |
+| EnableHttpCompression     | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.         |
+| RefreshChartCache         | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                 | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.              |
+| ValidateMergedAreas       | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.           |
+| MergeAreas                | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.               |
+| SortExternalNames         | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                   |
+| CheckExcelRestriction     | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| UpdateSmartArt            | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version. |
+| EncryptDocumentProperties | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei. |
+
+## PptxSaveOptions-Eigenschaften
+
+| Eigenschaftsname                  | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                            |
+| --------------------------------- | --------------- | -------- | -------- | ------------ | ------------------------------------------------------- |
+| IgnoreHiddenRows                  | Boolean         | true     | false    |              | Überspringt ausgeblendete Zeilen beim Export.           |
+| AdjustFontSizeForRowType          | Zeichenfolge    | true     | false    |              | Steuert die Schriftgradanpassung basierend auf Zeilentyp. |
+| ExportViewType                    | Zeichenfolge    | true     | false    |              | Bestimmt, welche Ansicht (Folie, Notizen) exportiert wird. |
+| DefaultFont                       | Zeichenfolge    | true     | false    |              | Schriftart, die verwendet wird, wenn eine Quellschriftart nicht verfügbar ist. |
+| CheckWorkbookDefaultFont          | Boolean         | true     | false    |              | Überprüft, ob die Standardarbeitsmappenschriftart angewendet wird. |
+| CheckFontCompatibility            | Boolean         | true     | false    |              | Überprüft Schriftartkompatibilität für das Zielformat.  |
+| IsFontSubstitutionCharGranularity | Boolean         | true     | false    |              | Steuert zeichenbasierte Schriftartersatzfunktion.       |
+| OnePagePerSheet                   | Boolean         | true     | false    |              | Platziert jedes Arbeitsblatt auf einer separaten Folie. |
+| AllColumnsInOnePagePerSheet       | Boolean         | true     | false    |              | Passt alle Spalten eines Blattes auf eine Folie.        |
+| IgnoreError                       | Boolean         | true     | false    |              | Ignoriert nicht-kritische Fehler während der Konvertierung. |
+| OutputBlankPageWhenNothingToPrint | Boolean         | true     | false    |              | Erzeugt eine leere Folie, wenn nichts gerendert werden soll. |
+| PageIndex                         | Integer         | true     | false    |              | Index der ersten zu exportierenden Folie.              |
+| PageCount                         | Integer         | true     | false    |              | Anzahl der zu exportierenden Folien.                    |
+| PrintingPageType                  | Zeichenfolge    | true     | false    |              | Gibt den Seitentyp für das Drucken an.                  |
+| GridlineType                      | Zeichenfolge    | true     | false    |              | Bestimmt, wie Gitterlinien gerendert werden.            |
+| TextCrossType                     | Zeichenfolge    | true     | false    |              | Definiert den Kreuztyp für die Textwiedergabe.          |
+| DefaultEditLanguage               | Zeichenfolge    | true     | false    |              | Standardsprache für die Textbearbeitung.               |
+| EmfRenderSetting                  | Zeichenfolge    | true     | false    |              | Einstellungen für die EMF-Wiedergabe.                   |
+| MergeAreas                        | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.                 |
+| SortExternalNames                 | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                     |
+| UpdateSmartArt                    | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version.  |
+| SaveFormat                        | Zeichenfolge    | true     | false    |              | Bezeichner des PPTX-Dateiformats.                       |
+| CachedFileFolder                  | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.      |
+| ClearData                         | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.              |
+| CreateDirectory                   | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert. |
+| EnableHttpCompression             | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.           |
+| RefreshChartCache                 | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                         | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.                |
+| ValidateMergedAreas               | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.             |
+| CheckExcelRestriction             | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| EncryptDocumentProperties         | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei. |
+
+## SqlScriptSaveOptions-Eigenschaften
+
+| Eigenschaftsname          | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                              |
+| ------------------------- | --------------- | -------- | -------- | ------------ | --------------------------------------------------------- |
+| CheckIfTableExists        | Boolean         | true     | false    |              | Überprüft, ob die Zieltabelle bereits existiert.          |
+| ColumnTypeMap             | Zeichenfolge    | true     | false    |              | Zuordnung von Spaltennamen zu SQL-Datentypen.             |
+| CheckAllDataForColumnType | Boolean         | true     | false    |              | Scannt alle Zeilen, um Spaltentypen abzuleiten.            |
+| AddBlankLineBetweenRows   | Boolean         | true     | false    |              | Fügt eine leere Zeile zwischen generierten Zeilen ein.     |
+| Separator                 | Zeichenfolge    | true     | false    |              | Zeichenfolge zur Trennung von Spalten (z. B. Komma, Tab). |
+| OperatorType              | Zeichenfolge    | true     | false    |              | SQL-Operator (INSERT, UPDATE usw.).                       |
+| PrimaryKey                | Integer         | true     | false    |              | Spaltenindex, der als Primärschlüssel fungiert.           |
+| CreateTable               | Boolean         | true     | false    |              | Erzeugt eine CREATE TABLE-Anweisung.                      |
+| IdName                    | Zeichenfolge    | true     | false    |              | Name der Bezeichnerspalte.                                |
+| StartId                   | Integer         | true     | false    |              | Startwert für automatisch erhöhte IDs.                    |
+| TableName                 | Zeichenfolge    | true     | false    |              | Name der Ziel-Datenbanktabelle.                           |
+| ExportAsString            | Boolean         | true     | false    |              | Exportiert alle Werte als Zeichenfolgen.                  |
+| ExportArea                | Klasse          | true     | false    |              | Definiert den zu exportierenden Arbeitsblattbereich.      |
+| HasHeaderRow              | Boolean         | true     | false    |              | Gibt an, ob die erste Zeile Spaltenüberschriften enthält. |
+| SaveFormat                | Zeichenfolge    | true     | false    |              | Bezeichner der SQL-Skriptdatei.                           |
+| CachedFileFolder          | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.        |
+| ClearData                 | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.                |
+| CreateDirectory           | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert.   |
+| EnableHttpCompression     | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.             |
+| RefreshChartCache         | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                 | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.                  |
+| ValidateMergedAreas       | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.               |
+| MergeAreas                | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.                   |
+| SortExternalNames         | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                       |
+| CheckExcelRestriction     | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| UpdateSmartArt            | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version.    |
+| EncryptDocumentProperties | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei.  |
+
+## SvgSaveOptions-Eigenschaften
+
+| Eigenschaftsname          | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                        |
+| ------------------------- | --------------- | -------- | -------- | ------------ | --------------------------------------------------- |
+| SheetIndex                | Integer         | true     | false    |              | Index des zu exportierenden Arbeitsblattes.        |
+| ChartImageType            | Zeichenfolge    | true     | false    |              | Bildformat für die Diagrammwiedergabe.             |
+| EmbeddedImageNameInSvg    | Zeichenfolge    | true     | false    |              | Name für eingebettete Bilder in SVG-Ausgaben.      |
+| HorizontalResolution      | Integer         | true     | false    |              | Horizontale DPI des exportierten SVG.              |
+| ImageFormat               | Zeichenfolge    | true     | false    |              | Zielbildformat für Rasterelemente.                 |
+| IsCellAutoFit             | Boolean         | true     | false    |              | Passt Zellinhalte automatisch an die SVG-Größe an. |
+| OnePagePerSheet           | Boolean         | true     | false    |              | Rendert jedes Arbeitsblatt auf einer separaten SVG-Seite. |
+| OnlyArea                  | Boolean         | true     | false    |              | Exportiert nur den definierten Bereich des Arbeitsblattes. |
+| PrintingPage              | Zeichenfolge    | true     | false    |              | Seitenaufbau für das Drucken.                      |
+| PrintWithStatusDialog     | Boolean         | true     | false    |              | Zeigt einen Statusdialog während des Druckvorgangs an. |
+| Quality                   | Integer         | true     | false    |              | Komprimierungsqualität für Rasterbilder.           |
+| TiffCompression           | Zeichenfolge    | true     | false    |              | Komprimierungstyp für in SVG eingebettete TIFF-Bilder. |
+| VerticalResolution        | Integer         | true     | false    |              | Vertikale DPI des exportierten SVG.                |
+| SaveFormat                | Zeichenfolge    | true     | false    |              | Bezeichner des SVG-Dateiformats.                   |
+| CachedFileFolder          | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien. |
+| ClearData                 | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.         |
+| CreateDirectory           | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert. |
+| EnableHttpCompression     | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.      |
+| RefreshChartCache         | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                 | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.           |
+| ValidateMergedAreas       | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.        |
+| MergeAreas                | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.            |
+| SortExternalNames         | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                |
+| CheckExcelRestriction     | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| UpdateSmartArt            | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version. |
+| EncryptDocumentProperties | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei. |
+
+## TxtSaveOptions-Eigenschaften
+
+| Eigenschaftsname          | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                                             |
+| ------------------------- | --------------- | -------- | -------- | ------------ | ------------------------------------------------------------------------ |
+| QuoteType                 | Zeichenfolge    | true     | false    |              | Art des Zitierens (z. B. doppelt, einfach).                             |
+| Separator                 | Zeichenfolge    | true     | false    |              | Spaltentrennzeichen (z. B. Komma, Tab).                                 |
+| SeparatorString           | Zeichenfolge    | true     | false    |              | Vollständige Zeichenfolge als Trennzeichen, wenn mehrere Zeichen benötigt werden. |
+| AlwaysQuoted              | Boolean         | true     | false    |              | Erzwingt, dass alle Felder in Anführungszeichen stehen.                 |
+| SaveFormat                | Zeichenfolge    | true     | false    |              | Bezeichner des TXT-Dateiformats.                                        |
+| CachedFileFolder          | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.                      |
+| ClearData                 | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.                              |
+| CreateDirectory           | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert.                |
+| EnableHttpCompression     | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.                           |
+| RefreshChartCache         | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern.      |
+| SortNames                 | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.                               |
+| ValidateMergedAreas       | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.                             |
+| MergeAreas                | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.                                 |
+| SortExternalNames         | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                                     |
+| CheckExcelRestriction     | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung.        |
+| UpdateSmartArt            | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version.                 |
+| EncryptDocumentProperties | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei.               |
+
+## XlsSaveOptions & XlsbSaveOptions-Eigenschaften
+
+| Eigenschaftsname          | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                        |
+| ------------------------- | --------------- | -------- | -------- | ------------ | --------------------------------------------------- |
+| MatchColor                | Boolean         | true     | false    |              | Behält exakte Zellfarben beim Export bei.          |
+| WpsCompatibility          | Boolean         | true     | false    |              | Aktiviert Kompatibilität mit WPS Office.          |
+| SaveFormat                | Zeichenfolge    | true     | false    |              | Bezeichner des XLS/XLSB-Dateiformats.              |
+| CachedFileFolder          | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien. |
+| ClearData                 | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.         |
+| CreateDirectory           | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert. |
+| EnableHttpCompression     | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.      |
+| RefreshChartCache         | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                 | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.           |
+| ValidateMergedAreas       | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.        |
+| MergeAreas                | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.            |
+| SortExternalNames         | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                |
+| CheckExcelRestriction     | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| UpdateSmartArt            | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version. |
+| EncryptDocumentProperties | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei. |
+
+## XmlSaveOptions-Eigenschaften
+
+| Eigenschaftsname          | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                              |
+| ------------------------- | --------------- | -------- | -------- | ------------ | --------------------------------------------------------- |
+| SheetIndexes              | Array           | true     | false    |              | Liste der Arbeitsblattindizes, die in den Export einbezogen werden sollen. |
+| ExportArea                | Klasse          | true     | false    |              | Definiert den zu exportierenden Arbeitsblattbereich.      |
+| HasHeaderRow              | Boolean         | true     | false    |              | Gibt an, ob die erste Zeile Spaltenüberschriften enthält. |
+| XmlMapName                | Zeichenfolge    | true     | false    |              | Name der auf das Arbeitsblatt angewendeten XML-Mappe.     |
+| SheetNameAsElementName    | Boolean         | true     | false    |              | Verwendet den Blattnamen als XML-Elementname.             |
+| DataAsAttribute           | Boolean         | true     | false    |              | Exportiert Zelldaten als XML-Attribute statt Elemente.   |
+| SaveFormat                | Zeichenfolge    | true     | false    |              | Bezeichner des XML-Dateiformats.                          |
+| CachedFileFolder          | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.        |
+| ClearData                 | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.                |
+| CreateDirectory           | Zeichenfolge    | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert.   |
+| EnableHttpCompression     | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.             |
+| RefreshChartCache         | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                 | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.                  |
+| ValidateMergedAreas       | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.               |
+| MergeAreas                | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.                   |
+| SortExternalNames         | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                       |
+| CheckExcelRestriction     | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| UpdateSmartArt            | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version.    |
+| EncryptDocumentProperties | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei.  |
+
+## XpsSaveOptions-Eigenschaften
+
+| Eigenschaftsname                  | Eigenschaftstyp | Nullable | ReadOnly | Standardwert | Beschreibung                                           |
+| --------------------------------- | --------------- | -------- | -------- | ------------ | ------------------------------------------------------ |
+| DefaultFont                       | Zeichenfolge    | true     | false    |              | Schriftart, die verwendet wird, wenn eine Quellschriftart nicht verfügbar ist. |
+| CheckWorkbookDefaultFont          | Boolean         | true     | false    |              | Überprüft, ob die Standardarbeitsmappenschriftart angewendet wird. |
+| CheckFontCompatibility            | Boolean         | true     | false    |              | Überprüft Schriftartkompatibilität für das Zielformat. |
+| IsFontSubstitutionCharGranularity | Boolean         | true     | false    |              | Steuert zeichenbasierte Schriftartersatzfunktion.     |
+| OnePagePerSheet                   | Boolean         | true     | false    |              | Platziert jedes Arbeitsblatt auf einer separaten XPS-Seite. |
+| AllColumnsInOnePagePerSheet       | Boolean         | true     | false    |              | Passt alle Spalten eines Blattes auf eine Seite.     |
+| IgnoreError                       | Boolean         | true     | false    |              | Ignoriert nicht-kritische Fehler während der Konvertierung. |
+| OutputBlankPageWhenNothingToPrint | Boolean         | true     | false    |              | Erzeugt eine leere Seite, wenn nichts gerendert werden soll. |
+| PageIndex                         | Integer         | true     | false    |              | Index der ersten zu exportierenden Seite.            |
+| PageCount                         | Integer         | true     | false    |              | Anzahl der zu exportierenden Seiten.                  |
+| PrintingPageType                  | Zeichenfolge    | true     | false    |              | Gibt den Seitentyp für das Drucken an.                |
+| GridlineType                      | Zeichenfolge    | true     | false    |              | Bestimmt, wie Gitterlinien gerendert werden.          |
+| TextCrossType                     | Zeichenfolge    | true     | false    |              | Definiert den Kreuztyp für die Textwiedergabe.        |
+| DefaultEditLanguage               | Zeichenfolge    | true     | false    |              | Standardsprache für die Textbearbeitung.             |
+| EmfRenderSetting                  | Zeichenfolge    | true     | false    |              | Einstellungen für die EMF-Wiedergabe.                 |
+| MergeAreas                        | Boolean         | true     | false    |              | Vereint benachbarte Zellen, wo möglich.               |
+| SortExternalNames                 | Boolean         | true     | false    |              | Sortiert externe benannte Verweise.                   |
+| UpdateSmartArt                    | Boolean         | true     | false    |              | Aktualisiert SmartArt-Objekte auf die neueste Version. |
+| SaveFormat                        | Zeichenfolge    | true     | false    |              | Bezeichner des XPS-Dateiformats.                      |
+| CachedFileFolder                  | Zeichenfolge    | true     | false    |              | Ordner für temporäre Zwischengespeicherte Dateien.    |
+| ClearData                         | Boolean         | true     | false    |              | Löscht vorhandene Daten vor dem Speichern.            |
+| CreateDirectory                   | Boolean         | true     | false    |              | Erstellt das Zielverzeichnis, falls es nicht existiert. |
+| EnableHttpCompression             | Boolean         | true     | false    |              | Aktiviert HTTP-Komprimierung für die Antwort.         |
+| RefreshChartCache                 | Boolean         | true     | false    |              | Aktualisiert zwischengespeicherte Diagrammdaten vor dem Speichern. |
+| SortNames                         | Boolean         | true     | false    |              | Sortiert benannte Bereiche alphabetisch.              |
+| ValidateMergedAreas               | Boolean         | true     | false    |              | Überprüft verbundene Zellen auf Konsistenz.           |
+| CheckExcelRestriction             | Boolean         | true     | false    |              | Erzwingt Excel-spezifische Grenzwerte während der Konvertierung. |
+| EncryptDocumentProperties         | Boolean         | true     | false    |              | Verschlüsselt Dokumenteigenschaften in der Ausgabedatei. |
+---

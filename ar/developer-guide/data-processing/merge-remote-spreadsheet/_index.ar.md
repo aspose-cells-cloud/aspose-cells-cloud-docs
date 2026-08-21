@@ -1,107 +1,182 @@
-﻿---
-title: Aspose.Cells Cloud Web API - دمج جدول بيانات واحد في آخر.
-second_title: Aspose.Cells Cloud"
-ArticleTitle: Merge one spreadsheet into anothe
-linktitle: دمج جدول البيانات عن بعد
-type: docs
-url: /ar/merge-remote-spreadsheet/
-keywords: Merge spreadsheets, cloud storage, Aspose.Cells Cloud Web API, spreadsheet merging, XLSX, CSV, PD
-description: يمكنك دمج ملف جدول بيانات مخزن في وحدة تخزين سحابية في جدول بيانات آخر، ومن ثم تحديد تنسيق وموقع إخراج البيانات.
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، JSON، Markdown، دمج الخلايا الفارغة، المعالجة السحابية
 ---
-يمكنك دمج ملف جدول بيانات مخزن في وحدة تخزين سحابية في جدول بيانات آخر، ومن ثم تحديد تنسيق وموقع إخراج البيانات.
+title: "Aspose.Cells Cloud – دمج ملفات Excel في السحابة | دمج جداول البيانات عبر واجهة برمجة التطبيقات"
+second_title: "Aspose.Cells Cloud"
+ArticleTitle: "دمج ملفات Excel في السحابة | دمج جداول البيانات عبر الإنترنت باستخدام واجهة برمجة التطبيقات Aspose.Cells Cloud"
+linktitle: "دمج جدول بيانات بعيد"
+type: docs
+url: /merge-remote-spreadsheet/
+keywords: "Aspose.Cells، دمج Excel، واجهة برمجة تطبيقات سحابية، دمج جداول البيانات"
+description: "دمج أوراق عمل Excel المخزنة في التخزين السحابي باستخدام واجهة برمجة التطبيقات Aspose.Cells Cloud. حدد تنسيق الإخراج ومجلد الوجهة ووضع الدمج في استدعاء HTTPS واحد."
+weight: 100
+---
 
-## **دمج جدول البيانات عن بعد API**
+دمج ملفات Excel المخزنة في السحابة مع جداول بيانات أخرى بسرعة باستخدام واجهة برمجة التطبيقات Aspose.Cells Cloud، وتحديد تنسيق بيانات الإخراج وموقع التخزين.
+
+## واجهة برمجة التطبيقات لدمج جدول البيانات البعيد
+
+قبل استدعاء هذه العملية، تأكد من امتلاكك للآتي:
+
+- رمز وصول **JWT** صالح (انظر دليل المصادقة).
+- تحميل ملفات مصنف المصدر وجميع الملفات المراد دمجها في التخزين السحابي الخاص بك.
+- امتلاك الأذونات المناسبة لقراءة الملفات من مجلد المصدر وكتابتها في مجلد الوجهة.
+
+### واجهة برمجة التطبيقات عبر الويب
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
+PUT https://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
 ```
 
-### **معلمات الطلب:**
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-|اسم|خيط|طريق|اسم ملف المصنف الذي سيتم دمجه.|
-|جدول بيانات مدمج|خيط|استفسار|قائمة ملفات جدول البيانات المراد دمجها.|
-|مجلد|خيط|استفسار|مسار المجلد الذي يتم تخزين المصنف فيه.|
-|تنسيق خارجي|خيط|استفسار|تنسيق ملف الإخراج (على سبيل المثال، XLSX، PDF).|
-|دمج في ورقة واحدة|منطقي|استفسار|ما إذا كان سيتم دمج كافة البيانات في ورقة عمل واحدة.|
-|اسم التخزين|خيط|استفسار|(اختياري) اسم وحدة التخزين في حال استخدام تخزين سحابي مخصص. يُضبط افتراضيًا على وحدة التخزين الافتراضية في حال حذفه.|
-|المسار الخارجي|خيط|استفسار|(اختياري) مسار المجلد للمصنف المدمج. افتراضيًا، القيمة فارغة.|
-|اسم التخزين الخارجي|خيط|استفسار|اسم التخزين لملف الإخراج.|
-|الخطوطالموقع|خيط|استفسار|موقع الخط المخصص.|
-|منطقة|خيط|استفسار|إعداد منطقة جدول البيانات.|
-|كلمة المرور|خيط|استفسار|كلمة المرور للوصول إلى ملف جدول البيانات.|
+واجهات برمجة التطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-### **إجابة**
+### معاملات الطلب:
+
+| اسم المعامل         | النوع    | المسار/سلسلة الاستعلام/جسم HTTP | الوصف                                                                                                                           |
+| :------------------ | :------- | :----------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
+| name                | String   | Path                           | اسم ملف مصنف المصدر المراد دمجه.                                                                                                |
+| mergedSpreadsheet   | String   | Query                          | قائمة بأسماء ملفات جداول البيانات مفصولة بفواصل لدمجها داخل مصنف المصدر.                                                       |
+| folder              | String   | Query                          | مسار المجلد في التخزين السحابي الذي يحتوي على مصنف المصدر.                                                                      |
+| outFormat           | String   | Query                          | التنسيق المطلوب لملف الإخراج المدمج (مثل `XLSX`، `PDF`، `CSV`).                                                                |
+| mergeInOneSheet     | Boolean  | Query                          | ضع `true` لدمج جميع بيانات المصدر في ورقة عمل واحدة؛ وضع `false` لإنشاء أوراق عمل منفصلة لكل ملف.                               |
+| storageName         | String   | Query                          | _(اختياري)_ اسم التخزين السحابي الذي يحتوي على مصنف المصدر. إذا تم حذفه، يُستخدم التخزين الافتراضي.                            |
+| outPath             | String   | Query                          | _(اختياري)_ مسار مجلد الوجهة في التخزين السحابي لحفظ ملف الدمج. إذا تم حذفه، يُحفظ الملف في مجلد المصدر.                      |
+| outStorageName      | String   | Query                          | اسم التخزين السحابي لحفظ ملف الإخراج.                                                                                           |
+| fontsLocation       | String   | Query                          | _(اختياري)_ مسار مجلد مخصص لملفات الخطوط المستخدمة أثناء التحويل إلى تنسيقات الصور أو PDF.                                    |
+| region              | String   | Query                          | _(اختياري)_ المنطقة/اللغة لتنسيق التواريخ والأرقام والعملات في ملف الإخراج (مثل `en-US`، `de-DE`).                             |
+| password            | String   | Query                          | _(اختياري)_ كلمة المرور المطلوبة لفتح مصنف المصدر إذا كان مشفرًا.                                                             |
+
+### الاستجابة
+
+**الحالة:** `200 OK`
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### رموز الخطأ
+يمكن تنزيل الملف مباشرةً أو حفظه في الموقع المحدد بواسطة `outPath`.
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+**تفاصيل استجابة ناجحة**
 
-## أين يجب علينا استخدام Merge Remote Spreadsheet API؟
+| رمز الحالة | نوع المحتوى               | الوصف                                 |
+| ----------- | -------------------------- | --------------------------------------- |
+| 200 OK      | `application/octet-stream` | تدفق ثنائي لملف المصنف المدمج.         |
 
-- عندما تحتاج إلى دمج ملفات بيانات متعددة معًا في التخزين السحابي.
+**رموز حالة HTTP**
 
+| الرمز | المعنى                | الوصف                                                             |
+| ----- | --------------------- | ------------------------------------------------------------------ |
+| 200   | OK (تم بنجاح)         | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.       |
+| 400   | Bad Request (طلب خاطئ) | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم).             |
+| 401   | Unauthorized (غير مصرّح) | رمز JWT غير صالح أو مفقود.                                        |
+| 413   | Payload Too Large (حجم الحمولة كبير جدًا) | تجاوز حجم الملف المرفوع الحد المسموح به.                      |
+| 500   | Internal Server Error (خطأ داخلي في الخادم) | خطأ غير متوقع في الخادم.                                     |
 
-## لماذا يجب عليك استخدام Merge Remote Spreadsheet API؟
+## متى يجب استخدام واجهة برمجة التطبيقات لدمج جدول البيانات البعيد؟
 
-- لا تحتاج ملفات التخزين السحابي إلى التنزيل، ويمكن دمجها مباشرة في السحابة.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+### دمج البيانات على مستوى المؤسسات
 
-## كيفية استخدام دمج جدول البيانات عن بُعد API مع مجموعات تطوير البرامج (SDKs)
+- **تجميع التقارير متعددة الإدارات** – تجميع تقارير Excel المنفصلة المقدمة من فِرَق المبيعات والتسويق والمالية وغيرها.
+- **تلخيص بيانات الفروع** – تلخيص بيانات الأداء من كل فرع حول العالم.
+- **تجميع بيانات الشركاء** – دمج مساهمات بيانات الشركاء المتعددين في مصنف واحد.
 
-### مواصفات دمج جدول البيانات عن بُعد API
+### سير العمل لمعالجة الوثائق في السحابة
 
- ال[مواصفات دمج جدول البيانات عن بُعد API](https://reference.aspose.cloud/cells/#/DataProcessingController/MergeRemoteSpreadsheet) يوفر واجهة برمجة يمكن الوصول إليها بشكل عام لتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+- **معالجة الملفات في التخزين السحابي** – دمج ملفات Excel المخزنة في AWS S3 أو Azure Blob أو Google Cloud Storage مباشرةً.
+- **تجميع البيانات من مصادر متعددة** – دمج ملفات من مواقع سحابية مختلفة في مصنف واحد.
+- **أنابيب البيانات الآلية** – دمج واجهة برمجة التطبيقات في عمليات ETL لأتمتة دمج الملفات.
 
-## Excel API مجموعة تطوير البرامج
+### أتمتة إدارة الوثائق
 
-### استخدم Aspose.Cells Cloud SDKs
+- **تجميع إصدارات مختلفة** – دمج إصدارات مختلفة من خطة مشروع أو مصنف ميزانية.
+- **تعبئة البيانات في القوالب** – إدخال ملفات البيانات في قوالب تقارير معيارية.
+- **توليد التقارير الدورية** – أتمتة إنشاء التقارير الأسبوعية والشهرية والربعية.
 
-يعد استخدام SDK أسرع طريقة للتطوير، حيث إنه يجرد التفاصيل منخفضة المستوى، مما يسمح لك بدمج جدول بيانات في جدول بيانات آخر باستخدام رمز قصير.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
-تُظهر أمثلة التعليمات البرمجية التالية كيفية التفاعل مع خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+### التعاون عبر المنصات
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MergeRemoteSpreadsheet.cs" >}}
+- **التعاون مع الفِرَق البعيدة** – تجميع العمل المقدم من أعضاء الفريق المنتشرين.
+- **تنظيم بيانات العملاء** – دمج بيانات الطلبات أو التعليقات من عملاء متعددين.
+- **تلخيص معلومات الموردين** – دمج عروض الأسعار أو معلومات المنتجات من عدة موردين.
+
+## لماذا يجب عليك استخدام واجهة برمجة التطبيقات لدمج جدول البيانات البعيد؟
+
+- **سهل الاستخدام للمطورين** – توفر Aspose.Cells Cloud SDKs للغات برمجة متعددة، مما يقلل وقت التطوير ويوفر وثائق شاملة. مقارنةً بإنشاء حل مخصص، يقلل هذا بشكل كبير من حجم العمل.
+- **خفض تكاليف العمالة** – يقلل الحاجة إلى موظفين مخصصين لدمج الوثائق يدويًا.
+- **دفع مقابل الاستخدام فقط** – لا استثمار أولي؛ تدفع فقط مقابل استدعاءات واجهة برمجة التطبيقات التي تستخدمها فعليًا.
+- **لا تكاليف صيانة** – لا خوادم للمحافظة عليها، ولا تحديثات برمجية، ولا مشكلات توافق.
+
+## كيفية استخدام واجهة برمجة التطبيقات لدمج جدول البيانات البعيد مع واجهات SDK
+
+### مواصفات واجهة برمجة التطبيقات لدمج جدول البيانات البعيد
+
+<a href="https://reference.aspose.cloud/cells/#/DataProcessingController/MergeRemoteSpreadsheet" target="_blank" rel="noopener noreferrer">مواصفات واجهة برمجة التطبيقات لدمج جدول البيانات البعيد</a> تصف الواجهة REST التي يمكن استدعاؤها مباشرةً من أي عميل HTTP.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات ويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء استدعاءات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/merge/spreadsheet?mergedSpreadsheet=Report1.xlsx&outFormat=XLSX&mergeInOneSheet=true" \
+  -H "Authorization: Bearer {access_token}"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MergeRemoteSpreadsheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MergeRemoteSpreadsheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MergeRemoteSpreadsheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MergeRemoteSpreadsheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MergeRemoteSpreadsheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MergeRemoteSpreadsheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MergeRemoteSpreadsheet.go" >}}
-{{< /tab >}}
+
+{{< /tabs >}}
+
+### استخدام واجهات SDK لـ Aspose.Cells Cloud
+
+استخدام SDK هو أسرع طريقة للتطوير، حيث تُجرّد التفاصيل من المستوى المنخفض وتمكّنك من دمج جدول بيانات في جدول بيانات آخر باستخدام مقتطف كود قصير.  
+يرجى الاطلاع على <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بواجهات SDK لـ Aspose.Cells Cloud.
+
+توضح أمثلة الكود التالية كيفية التفاعل مع خدمات ويب Aspose.Cells باستخدام واجهات SDK مختلفة:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MergeRemoteSpreadsheet.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MergeRemoteSpreadsheet.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MergeRemoteSpreadsheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MergeRemoteSpreadsheet.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MergeRemoteSpreadsheet.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MergeRemoteSpreadsheet.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MergeRemoteSpreadsheet.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MergeRemoteSpreadsheet.go" >}}
+{{</tab>}}
 {{< /tabs >}}

@@ -1,160 +1,134 @@
-﻿---
-title: Excel çalışma sayfasındaki dizine göre bir şekil alın
-second_title: Documen
-linktitle: Ge
-type: docs
-url: /tr/shapes/get/
-aliases: [/get-a-shape-by-index-inside-the-worksheet/]
-keywords: Get a shape on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında şekil almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasında dizine göre şekil alma
 ---
-Bu REST API, Excel çalışma sayfasında resim formatında bir şekil veya şekil bilgisi almayı gösterir.
+title: "Excel Çalışma Sayfasında Dizine Göre Bir Şekil Alma"
+second_title: "Belge"
+linktype: "Get"
+type: docs
+url: /shapes/get/
+aliases: [/get-a-shape-by-index-inside-the-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel şekil API’si, dizine göre şekil alma, çalışma sayfası şekli, REST API, şekil alma, Aspose.Cells SDK"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından dizine göre bir şekil (resim verileri veya meta veriler dahil) alın. İstek sözdizimi, parametreler, yanıt ayrıntıları ve SDK örneklerini içerir."
+weight: 20
+ArticleTitle: "Excel Çalışma Sayfasında Dizine Göre Bir Şekil Alma – Aspose.Cells Cloud Dokümantasyonu"
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasından bir şekli (resim verileri veya meta verileri dahil) alır.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
- 
+## GetWorksheetShape API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
 
-İstek parametreleri şunlardır:
+**Gereksinimler**  
+- Geçerli bir Aspose Cloud erişim belirteci (Bearer JWT).  
+- Çalışma kitabının Aspose Cloud deponuzda veya belirtilen bir klasörde saklanmalı.  
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| belge adı.|
-| sayfaAdı| sicim| yol| çalışma sayfası adı.|
-| şekil indeksi| tam sayı| yol| çalışma kağıdı şekillerinde şekil indeksi.|
-| dosya| sicim| sorgu| Belgenin klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+### **Güvenlik ve Kimlik Doğrulama**
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShape) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### **İstek parametreleri**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Parametre Adı | Tür      | Konum  | Açıklama                                                |
+| ------------- | -------- | ------ | ------------------------------------------------------- |
+| name          | string   | path   | Excel belgesinin adı.                                   |
+| sheetName     | string   | path   | Şeklin bulunduğu çalışma sayfasının adı.                |
+| shapeindex    | integer  | path   | Çalışma sayfasındaki şeklin sıfır tabanlı dizini.      |
+| folder        | string   | query  | Belgenin bulunduğu klasör yolu.                         |
+| storageName   | string   | query  | Depolama hizmetinin adı.                                |
+
+**Not:** `shapeindex` sıfır tabanlıdır; ilk şeklin dizini 0’dır. Varsayılan depolamayı kullanmıyorsanız, çalışma kitabının belirtilen `folder` ve `storageName` içinde saklandığından emin olun.
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShape), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye nasıl istek yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/autoshapes/1" \
+# Düzeltildi: endpoint ve yol
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/shapes/1" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 {
-
   "Status": "string",
-
   "Shape": {
-
     "link": {
-
       "Href": "string",
-
       "Rel": "string",
-
       "Title": "string",
-
       "Type": "string"
-
     },
-
     "Name": "string",
-
     "MsoDrawingType": "string",
-
     "AutoShapeType": "string",
-
     "Placement": "string",
-
     "UpperLeftRow": 0,
-
     "Top": 0,
-
     "UpperLeftColumn": 0,
-
     "Left": 0,
-
     "LowerRightRow": 0,
-
     "Bottom": 0,
-
     "LowerRightColumn": 0,
-
     "Right": 0,
-
     "Width": 0,
-
     "Height": 0,
-
     "X": 0,
-
     "Y": 0,
-
     "RotationAngle": 0,
-
     "HtmlText": "string",
-
     "Text": "string",
-
     "AlternativeText": "string",
-
     "TextHorizontalAlignment": "string",
-
     "TextHorizontalOverflow": "string",
-
     "TextOrientationType": "string",
-
     "TextVerticalAlignment": "string",
-
     "TextVerticalOverflow": "string",
-
     "IsGroup": true,
-
     "IsHidden": true,
-
     "IsLockAspectRatio": true,
-
     "IsLocked": true,
-
     "IsPrintable": true,
-
     "IsTextWrapped": true,
-
     "IsWordArt": true,
-
     "LinkedCell": "string",
-
     "ZOrderPosition": 0
-
   }
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+**Olası HTTP durum kodları**
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| Kod  | Açıklama                                                  |
+|------|-----------------------------------------------------------|
+| **200 OK** | Şekil başarıyla alındı.                                   |
+| **400 Bad Request** | İstek bozuk veya gerekli parametreler eksik.              |
+| **401 Unauthorized** | Kimlik doğrulama başarısız oldu veya belirteç eksik/geçersiz. |
+| **404 Not Found** | Belirtilen çalışma kitabısı, çalışma sayfası veya şekil dizini mevcut değil. |
+| **500 Internal Server Error** | Beklenmeyen bir sunucu hatası oluştu.                     |
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+**Yaygın hatalar:** Yanlış temet domaini (`api.aspose.com`) veya güncel olmayan `/autoshapes/` segmentinin kullanılması 404 hatasına neden olur. Her zaman `api.aspose.cloud` domaini ile `/shapes/` segmentini kullanın.
+
+## Bulut SDK Geliştirme Ailesi
+
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoludur. SDK, düşük seviye detayları yönetir ve projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web hizmetlerine nasıl istek yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -207,3 +181,5 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+İlgili işlemler için lütfen **[Şekil Ekleme](/shapes/add/)** ve **[Şekil Güncelleme](/shapes/update/)** dokümantasyonuna bakın.

@@ -1,74 +1,112 @@
-﻿---
-title: Ställ in sidinställningar för ett kalkylblad
-second_title: Documen
-linktitle: Ställ in sidinställningar
+---
+title: "Ställa in sidinställning för ett kalkylblad"
+second_title: "Dokument"
+linktype: "Ställa in sidinställning"
 type: docs
 url: /sv/set-page-setup/
-keywords: Set page setup for an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder tillägg av ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+keywords: "Aspose.Cells, Excel, sidinställning, REST API, kalkylblad, molntjänst"
+description: "Lär dig hur du ställer in sidinställningen för ett Excel-kalkylblad med Aspose.Cells Cloud REST API. Inkluderar begärandedetaljer, ett säkert HTTPS cURL-exempel, svarsstatuskoder och SDK-kodsnuttar för flera programmeringsspråk."
 weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ange sidinställningar för ett Excel-kalkylblad
+ArticleTitle: "Ställa in sidinställning för ett kalkylblad – Aspose.Cells Cloud API-guide"
 ---
-Denna REST API indikerar `Set page setup for an Excel worksheet`.
 
-## RSET API
+Förutsättningar: För att kunna anropa denna API måste du ha en giltig JWT-token (OAuth) och arbetsboken måste finnas i en Aspose Cloud-lagringsplats där du har läs- och skrivbehörighet. Se till att token inkluderas i **Authorization**-headern och att ditt konto har nödvändig API-kvot.
+
+Denna REST API ställer in sidinställningen för ett Excel-kalkylblad.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup
-
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Det nya namnet på arket.|
-|[sidinställningar](/cells/sv/page-setup) | objekt| kropp| Beskrivning av TPage Setup.|
-| mapp| sträng| fråga| Dokumentmapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://reference.aspose.cloud/cells/#/PageSetup/PostPageSetup) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Begärparametrar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameternamn | Typ    | Plats  | Beskrivning             |
+| ------------- | ------ | ------ | ----------------------- |
+| name          | string | path   | Dokumentets namn.       |
+| sheetName     | string | path   | Kalkylbladets namn.     |
+| pageSetup     | object | body   | Beskrivning av sidinställning. |
+| folder        | string | query  | Dokumentmapp.           |
+| storageName   | string | query  | Lagringsnamn.           |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Exempel på JSON-svar för objektet `pageSetup`**
+
+```json
+{
+  "pageSetup": {
+    "orientation": "Portrait",
+    "paperSize": "A4",
+    "fitToPagesTall": 1,
+    "fitToPagesWide": 1,
+    "centerHorizontally": true,
+    "centerVertically": false
+  }
+}
+```
+
+<a href="https://reference.aspose.cloud/cells/#/PageSetup/PostPageSetup" target="_blank" rel="noopener noreferrer">OpenAPI-specifikationen</a> definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks/pagesetup" \
--X PUT \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks/pagesetup" \
+-X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d {pageSetup}
- 
+-H "Authorization: Bearer <jwt token>" \
+-d '{
+  "pageSetup": {
+    "orientation": "Portrait",
+    "paperSize": "A4",
+    "fitToPagesTall": 1,
+    "fitToPagesWide": 1,
+    "centerHorizontally": true,
+    "centerVertically": false
+  }
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+API:et returnerar ett JSON-objekt som anger resultatet av operationen:
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+**Möjliga svarsstatuskoder**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Kod | Betydelse                   | När                                                        |
+|-----|-----------------------------|------------------------------------------------------------|
+| 200 | OK                          | Lyckad uppdatering av sidinställning                       |
+| 400 | Felaktig begäran            | Ogiltig JSON-payload eller saknade obligatoriska fält     |
+| 401 | Autentisering krävs         | Saknas eller ogiltig JWT-token                             |
+| 404 | Hittades inte               | Arbetsboken eller kalkylbladets namn finns inte           |
+| 500 | Internt serverfel           | Oväntat serverfel                                           |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+## SDK-familj för molnet
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Se i <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub-arkivet</a> för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -121,3 +159,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

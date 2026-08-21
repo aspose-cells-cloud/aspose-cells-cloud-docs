@@ -1,57 +1,57 @@
-﻿---
-title: Ottieni una tabella pivot in un foglio di lavoro Excel
-second_title: Documen
-linktitle: Ottenere
+---
+title: "Ottenere una tabella pivot in un foglio Excel"
+second_title: "Document"
+linktype: Get
 type: docs
 url: /it/pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
-keywords: Get a pivot table in an Excel file
-description: Aspose.Cells Cloud REST API supporta l'acquisizione di una tabella pivot in un file Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/get-worksheet-pivot-table-information-by-index/]
+keywords: "Aspose.Cells, tabella pivot, Excel, REST API, ottenere tabella pivot del foglio"
+description: "Recuperare una tabella pivot da un foglio Excel tramite l'API REST di Aspose.Cells Cloud. Include sintassi della richiesta, parametri, autenticazione, schema della risposta, gestione degli errori ed esempi di SDK."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni una tabella pivot in un foglio di lavoro Excel
+ArticleTitle: "Ottenere una tabella pivot in un foglio Excel"
 ---
-Questo REST API indica di ottenere informazioni sul foglio di lavoro `pivottable` tramite indice.
- 
-## RSET API
- 
+
+Questa REST API recupera le informazioni sulla **tabella pivot** di un foglio tramite il suo indice.
+
+### **Sicurezza e autenticazione**
+
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione tramite token JWT</a>.
+
+## REST API
+
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}
 ```
- I parametri della richiesta sono:
- 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome del documento.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| indice della tabella pivot| intero| sentiero||
-| cartella| corda| domanda| Cartella del documento.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
- 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTable) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
- 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### Parametri della richiesta
+
+| Nome parametro      | Tipo    | Posizione | Descrizione                                              |
+| ------------------- | ------- | -------- | -------------------------------------------------------- |
+| **name**            | string  | path     | Nome del file Excel.                                     |
+| **sheetName**       | string  | path     | Nome del foglio che contiene la tabella pivot.          |
+| **pivottableIndex** | integer | path     | Indice in base zero della tabella pivot nel foglio.     |
+| **folder**          | string  | query    | Cartella in cui è memorizzato il documento.             |
+| **storageName**     | string  | query    | Nome dello storage Aspose Cloud.                        |
+
+Puoi utilizzare lo strumento a riga di comando **cURL** per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come chiamare l'API con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
   "Status": "string",
   "PivotFilters": [
@@ -69,9 +69,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
             "FilterType": "string",
             "MultipleFilters": {
               "MatchBlank": true,
-              "MultipleFilterList": [
-                {}
-              ]
+              "MultipleFilterList": [{}]
             },
             "ColorFilter": {
               "FilterByFillColor": "string",
@@ -140,7 +138,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
               "IsTop": true,
               "Items": 0
             },
-            "Visibledropdown": "string"
+            "VisibleDropdown": "string"
           }
         ],
         "Range": "string",
@@ -168,20 +166,43 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
     }
   ]
 }
- 
 ```
- 
+
+**Schema della risposta**
+
+| Campo          | Tipo    | Descrizione                                      |
+|----------------|---------|--------------------------------------------------|
+| Status         | string  | Testo dello stato dell’operazione (es. “OK”).   |
+| PivotFilters   | array   | Raccolta di definizioni dei filtri pivot.       |
+| └─ AutoFilter  | object  | Dettagli del filtro automatico applicato alla tabella pivot. |
+|    └─ link     | object  | Informazioni sull’hyperlink del filtro.         |
+|    └─ FilterColumns | array | Impostazioni individuali del filtro per colonna. |
+|    └─ Range    | string  | Intervallo di celle a cui si applica il filtro. |
+|    └─ Sorter   | object  | Configurazione dell’ordinamento per i dati filtrati. |
+| (ulteriori campi nidificati seguono la stessa struttura mostrata nel JSON di esempio) |
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Famiglia Cloud SDK
- 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
- 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
- 
- 
+
+### Gestione degli errori
+
+L’API segue i codici di stato HTTP standard. Le risposte tipiche includono:
+
+| Codice stato | Significato                                                          | Esempio JSON (errore)                             |
+| ----------- | -------------------------------------------------------------------- | ------------------------------------------------- |
+| 200         | Successo – la tabella pivot viene restituita                         | —                                                 |
+| 401         | Non autorizzato – token non valido o mancante                       | `{"code":401,"message":"Token di accesso non valido."}`  |
+| 404         | Non trovato – il file, il foglio o l'indice della tabella pivot non esistono | `{"code":404,"message":"Tabella pivot non trovata."}` |
+| 500         | Errore del server – condizione imprevista                           | `{"code":500,"message":"Errore interno del server."}` |
+
+**Note:** L’API supporta file Excel fino a 150 MB e funziona con i formati Excel 2007‑2021. Assicurati che il nome del foglio sia distinto tra maiuscole e minuscole.
+
+## Famiglia di SDK cloud
+
+Utilizzare un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, permettendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Perl" tabName10="Go" >}}
 

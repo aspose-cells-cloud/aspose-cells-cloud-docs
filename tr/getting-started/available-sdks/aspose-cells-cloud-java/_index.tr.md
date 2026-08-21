@@ -1,31 +1,32 @@
-﻿---
-title: "Aspose.Cells Cloud SDK for Java: Dönüştürme, birleştirme, bölme, koruma, arama, değiştirme ve daha fazlası"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for Java: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells Java için Bulut SDK'sı
-type: docs
-url: /tr/available-sdks/aspose-cells-cloud-java/
-description: "Aspose.Cells Cloud SDK for Java gerçek platformlar arası güç sunar: tek bir içe aktarma, Windows, Linux ve macOS geliştiricilerine her nesneyi oluşturma, dönüştürme, birleştirme, bölme, koruma ve düzenleme konusunda aynı akıcılığı sağlar; Excel kurulum gerekmez ve platforma özgü ayarlamalar gerekmez"
-weight: 30
-kwords: Java SDK, Excel SDK for Java, Cloud SDK for Java, REST, Grafik, Pivot Tablo, Tablo/Liste Nesnesi, Elektronik Tabloyu Dönüştür, PDF, CSV, Json, Markdown, Birleştir, Böl, Koru, Ara, Değiştir
 ---
-SDK açık kaynaklıdır ve MIT Lisansı kapsamında lisanslanmıştır. Erişim sağlayabilirsiniz[Aspose.Cells Cloud için Java kütüphane kaynak kodu](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
+title: "Aspose.Cells Cloud SDK for Java: Dönüştür, birleştir, böl, koru, ara, değiştir ve daha fazlası"
+second_title: "Belge"
+ArticleTitle: "Aspose.Cells Cloud SDK for Java: Dönüştür, birleştir, böl, koru, ara, değiştir ve daha fazlası"
+linktype: "Aspose.Cells Cloud SDK for Java"
+type: docs
+url: /available-sdks/aspose-cells-cloud-java/
+description: "Office yüklü olmadan Aspose.Cells Cloud Java SDK’sını kullanarak Excel dosyaları oluşturun, dönüştürün, birleştirin, bölün, koruyun, ara ve değiştirin."
+weight: 30
+keywords: "Aspose Cells Java SDK, Excel dönüştürme Java, Bulut elektronik tablo API’si, Java Excel kütüphanesi, Aspose.Cells Cloud Java"
+---
 
-# **Aspose.Cells Cloud'un Java kütüphanesi nasıl kullanılır?**
+Bu SDK açık kaynaklıdır ve MIT Lisansı altında lisanslanmıştır. Aspose.Cells Cloud için Java kitaplığı kaynak koduna [buradan](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java) ulaşabilirsiniz.
 
-Aspose.Cells Cloud SDK for Java, geliştiricilerin Java programlama dilini kullanarak Microsoft Excel dosyalarını düzenlemelerine ve işlemelerine olanak tanıyan güçlü bir kütüphanedir. Bu SDK ile, yerel makinenize ek yazılım veya bağımlılıklar yüklemeden bulutta Excel belgeleri oluşturabilir, düzenleyebilir ve dönüştürebilirsiniz.
+# **Aspose.Cells Cloud Java Kitaplığı Nasıl Kullanılır**
 
-Bu makalede, Aspose.Cells Cloud SDK for Java'in yeni bir Excel çalışma kitabı oluşturma, hücrelere veri ekleme ve değiştirilen çalışma kitabını buluta kaydetme gibi bazı genel görevleri gerçekleştirmek için nasıl kullanılacağını inceleyeceğiz.
+Aspose.Cells Cloud SDK for Java, geliştiricilerin Java programlama dili ile Microsoft Excel dosyalarını manipüle etmesine ve işlemesine olanak tanıyan güçlü bir kitaplıktır. Bu SDK ile, yerel makinenize ek yazılım veya bağımlılıklar yüklemeksizin Excel belgelerini bulutta oluşturabilir, düzenleyebilir ve dönüştürebilirsiniz.
 
-## Başlarken
+Bu makalede, Aspose.Cells Cloud SDK for Java’yi kullanarak yeni bir Excel çalışma kitabının oluşturulması, hücrelere veri eklenmesi ve değiştirilmiş çalışma kitabının buluta kaydedilmesi gibi yaygın görevleri nasıl gerçekleştireceğinizi inceleyeceğiz.
 
- Aspose.Cells Cloud SDK for Go'yu kullanmaya başlamadan önce, geliştirme ortamınızı ayarlamanız ve gerekli bağımlılıkları yüklemeniz gerekir. Bkz.[makale](https://docs.aspose.cloud/cells/quickstart/) Müşteri ID'nizi ve müşteri sırrınızı almak için Aspose web sitesini ziyaret edin.
+## Başlangıç
 
-## Maven'i Aspose.Cells Cloud'a bağımlılık eklemek için nasıl kullanırım?
+Aspose.Cells Cloud SDK for Go kullanmaya başlamadan önce geliştirme ortamınızı kurmanız ve gerekli bağımlılıkları kurmanız gerekir. İstemci kimliğinizi ve istemci sırrınızı almak için Aspose web sitesindeki [bu makaleye](https://docs.aspose.cloud/cells/quickstart/) bakın.
 
-Maven projenize Aspose.Cells Cloud SDK için bağımlılıklar ekleyin. Aşağıdaki bağımlılıkları pom.xml dosyasına ekleyin:
+## Maven ile Aspose.Cells Cloud için bağımlılıklar nasıl eklenir
 
-**Aspose Maven Depo**
+Maven projenizde Aspose.Cells Cloud SDK için bağımlılıkları ekleyin. Aşağıdaki bağımlılıkları pom.xml dosyanıza ekleyin:
+
+**Aspose Maven Deposu**
 
 ```java
 
@@ -39,7 +40,7 @@ Maven projenize Aspose.Cells Cloud SDK için bağımlılıklar ekleyin. Aşağı
 
 ```
 
-**Maven Bağımlılık**
+**Maven Bağımlılığı**
 
 ```java
 
@@ -51,16 +52,16 @@ Maven projenize Aspose.Cells Cloud SDK için bağımlılıklar ekleyin. Aşağı
 
 ```
 
-## Xlsx'i PDF'e dönüştürmek için Java paketi nasıl kullanılır?
+## Java paketi ile Xlsx’yi PDF’e nasıl dönüştürülür
 
-- Aspose.Cells Bulut Kütüphanesini İçe Aktar
- Öncelikle Aspose.Cells Cloud Java SDK'sından gerekli paketi projenize aktararak başlayın.
-- API İstemcisini Kimlik Bilgileriyle Yapılandırın
- API istemcinizi benzersiz istemci kimliğiniz ve istemci sırrınızla doğrulayın.
-- Dönüştürme Parametrelerini Hazırla
- Kaynak dosya adı, istenen çıktı biçimi ve depolama klasörü yolu dahil olmak üzere dönüştürme görevi için parametreleri tanımlayın.
-- Çalışma Kitabı Dönüşümünü Çalıştır
- Dönüştürme işlemini PostConvertWorkbook metodunu kullanarak çağırın ve yanıtı işleyin.
+- Aspose.Cells Cloud Kitaplığı İçe Aktarılır
+  Önce Aspose.Cells Cloud Java SDK’sından gerekli paketi projenize aktarın.
+- Kimlik Bilgileriyle API İstemcisi Yapılandırılır
+  API istemcinizi benzersiz istemci kimliğiniz ve istemci sırrınızla doğrulayın.
+- Dönüştürme Parametreleri Hazırlanır
+  Dönüştürme görevi için kaynak dosya adı, istenen çıktı formatı ve depolama klasör yolu gibi parametreleri tanımlayın.
+- Çalışma Kitabı Dönüştürme İşlemi Gerçekleştirilir
+  PostConvertWorkbook yöntemini kullanarak dönüştürme işlemini başlatın ve yanıtı işleyin.
 
 ### **Örnek Kod**
 

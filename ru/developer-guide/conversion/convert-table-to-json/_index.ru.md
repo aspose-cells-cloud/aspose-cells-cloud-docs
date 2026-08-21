@@ -1,97 +1,172 @@
-﻿---
-title: Aspose.Cells Cloud Web API — Преобразование данных электронной таблицы в файл JSON
-second_title: Documen
-ArticleTitle: Convert a Spreadsheet Table data to a Json file
-linktitle: Конвертировать таблицу в JSO
-type: docs
-url: /ru/convert-table-to-json/
-keywords: Excel API, JSON conversion, spreadsheet to JSON, cloud file conversion, REST API, Aspose.Cell
-description: Эффективно конвертируйте локальную электронную таблицу в формат JSON с помощью Excel API. Этот метод обеспечивает бесперебойную обработку файлов без необходимости использования облачного хранилища.
-weight: 100
-kwords: Excel API, преобразование JSON, преобразование облачных файлов, электронные таблицы, REST API, Aspose.Cells, обработка локальных дисков, преобразование форматов файлов
 ---
-Конвертируйте локальную электронную таблицу/таблицу Excel в файл JSON с помощью Aspose.Cells Cloud Web API.
+title: "Aspose.Cells Cloud Web API – Преобразование локальных табличных данных Excel в файл JSON"
+second_title: "Документ"
+ArticleTitle: "Как преобразовать табличные данные локальной электронной таблицы в файл JSON: пошаговое руководство"
+linktype: "Преобразование таблицы в JSON"
+type: docs
+url: /convert-table-to-json/
+keywords: "Excel, API, JSON, преобразование, облако, файл, электронная таблица"
+description: "Используйте Aspose.Cells Cloud API для преобразования локальной таблицы Excel в файл JSON за один PUT-запрос. Включает пример cURL, параметры и фрагменты кода SDK для C#, Java, Python и других языков."
+weight: 100
+---
 
-## **Преобразовать таблицу в Json API**
+Преобразуйте локальную таблицу электронной таблицы/Excel в файл **JSON** с помощью Aspose.Cells Cloud Web API.
+
+## **API преобразования таблицы в JSON**
+
+### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/table/json
+PUT https://api.aspose.cloud/v4.0/cells/convert/table/json
 ```
 
-### **Параметры запроса:**
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/Тело HTTP| Описание|
-|-------------|-|-----------------------|----------------------------------------------|
-| Электронная таблица| Файл| FormData| Загрузите файл электронной таблицы.|
-| рабочий лист|Нить| Запрос| Укажите имя листа электронной таблицы.|
-| имя_таблицы|Нить| Запрос| Укажите имя таблицы для преобразования.|
-| outPath|Нить| Запрос| (Необязательно) Путь к папке, где хранится рабочая книга; по умолчанию — null.|
-| outStorageName|Нить| Запрос| Укажите имя хранилища выходного файла.|
-| шрифтыРасположение|Нить| Запрос| Используйте пользовательские шрифты для конвертации.|
-| область|Нить| Запрос|Определите настройки региона для электронной таблицы.|
-| пароль|Нить| Запрос| Пароль, необходимый для открытия файла электронной таблицы.|
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
-## **Ответ**
+### Параметры запроса
+
+| Имя параметра     | Тип   | Расположение | Описание                                                                                         |
+| ------------------ | ------ | -------- | ------------------------------------------------------------------------------------------------ |
+| **Spreadsheet**    | Файл   | FormData | Загружаемый файл Excel.                                                                          |
+| **worksheet**      | Строка | Query    | Имя рабочего листа, содержащего таблицу.                                                         |
+| **tableName**      | Строка | Query    | Имя преобразуемой таблицы.                                                                       |
+| **outPath**        | Строка | Query    | (Необязательно) Путь к папке, где будет сохранён результирующий файл JSON; по умолчанию **null**. |
+| **outStorageName** | Строка | Query    | (Необязательно) Имя хранилища, в котором будет размещён выходной файл.                           |
+| **fontsLocation**  | Строка | Query    | (Необязательно) Путь к пользовательским шрифтам, используемым во время преобразования.           |
+| **region**         | Строка | Query    | (Необязательно) Региональные настройки для рабочей книги.                                        |
+| **password**       | Строка | Query    | (Необязательно) Пароль для открытия защищённой рабочей книги.                                   |
+
+### Ответ
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Коды ошибок
+**Коды HTTP-статуса**
 
-- **400 Неверный запрос**: Неверный URI Apose.Cells Cloud API.
-- **401 Неавторизованный**: Недействительный токен доступа. Или недействительный идентификатор клиента и секретный ключ.
-- **404 Не найдено**: Файл электронной таблицы недоступен.
-- **500 Ошибка сервера**: В электронной таблице обнаружена аномалия при получении расчетных данных.
+| Код | Значение                | Описание                                                             |
+| ---- | --------------------- | -------------------------------------------------------------------- |
+| 200  | OK (ОК)               | Фильтр успешно применён; ответ содержит детали операции.            |
+| 400  | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401  | Unauthorized (Неавторизован) | Недействительный или отсутствующий JWT-токен.                       |
+| 413  | Payload Too Large (Слишком большой объём полезной нагрузки) | Загруженный файл превышает ограничение по размеру.                |
+| 500  | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                                      |
 
-## Почему вам следует использовать Convert Table to Json API?
+## **Где следует использовать API преобразования таблицы в JSON?**
 
-- Нет необходимости в облачном хранилище, что снижает нагрузку на облачные ресурсы.
-- Разработку можно быстро завершить с помощью существующего SDK.
+- **Интерактивные панели мониторинга в реальном времени** – Преобразуйте живые данные Excel в JSON для использования с библиотеками визуализации, такими как Chart.js или D3.js.
+- **Таблицы как сервис (Spreadsheet-as-a-Service)** – Предоставьте таблицы Excel в виде JSON-эндпоинтов для других микросервисов.
+- **Полезные нагрузки веб-перехватчиков (Webhook Payloads)** – Преобразуйте данные таблиц в JSON для уведомлений через веб-перехватчики.
+- **Быстрое прототипирование данных** – Быстро преобразуйте очищенные данные Excel в JSON для анализа в Python или R.
+- **Конвейеры машинного обучения** – Предварительно обрабатывайте обучающие данные, хранящиеся в бизнес-таблицах.
+- **Операции в электронной коммерции** – Синхронизируйте каталоги товаров или прайс-листы с веб-сайтами через JSON.
+- **Автоматизация отчётов** – Генерируйте JSON-ленты из финансовых моделей для автоматизированной генерации отчётов.
+- **Конфигурация приложений** – Управляйте флагами функций, настройками или параметрами A/B-тестов в Excel → JSON.
+- **Многоязычная поддержка** – Преобразуйте локализационные таблицы в JSON для библиотек интернационализации (i18n).
+- **Динамические меню/навигация** – Храните структуры навигации веб-сайта в Excel и развертывайте их как JSON.
 
-## Как использовать таблицу преобразования в Json API с SDK?
+## Почему следует использовать API преобразования таблицы в JSON?
 
-### Преобразование таблицы в Json API Спецификация
+- **Удобен для разработчиков** – Aspose.Cells Cloud предоставляет SDK для множества языков, что снижает усилия по разработке и обеспечивает исчерпывающую документацию.
+- **Экономически эффективно** – Преобразуйте табличные данные без предварительной загрузки рабочей книги, экономя место в хранилище и снижая затраты.
+- **Совместимость с современными веб- и мобильными платформами** – JSON — нативный язык данных для веба; API позволяет напрямую подавать живые данные электронной таблицы в React, Vue, Angular, мобильные приложения или одностраничные приложения без сложного парсинга.
+- **Широкая поддержка языков** – JSON работает практически со всеми языками программирования, базами данных и веб-сервисами.
+- **Сохранение структурированных данных**
+  - **Интеллектуальное определение структуры** – Автоматически преобразует табличные данные в корректные массивы/объекты JSON.
+  - **Сопоставление заголовков** – Использует первую строку в качестве ключей JSON для создания чистых структур объектов.
+  - **Сохранение типов данных** – Сохраняет числа, даты и логические значения (не только текст).
 
- The[Преобразование таблицы в Json API Спецификация](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToJson) предоставляет общедоступный программный интерфейс, позволяющий взаимодействовать с REST непосредственно из веб-браузера.
+_История версий:_ Эндпоинт преобразования таблицы в JSON был добавлен в API версии **v4.0** (2024 г.) и остаётся текущей стабильной версией. Предыдущие эндпоинты версии v3.x устарели.
 
-### Используйте облачные SDK Aspose.Cells
+## Как использовать API преобразования таблицы в JSON с SDK?
 
-Использование SDK — самый быстрый способ разработки, поскольку он абстрагируется от низкоуровневых деталей и позволяет преобразовать данные электронной таблицы в файл JSON с помощью короткого кода.
- Пожалуйста, проверьте[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+### Спецификация API преобразования таблицы в JSON
 
-В следующих примерах кода показано, как взаимодействовать с веб-сервисами Aspose.Cells с использованием различных SDK:
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertTableToJson.cs" >}}
+[Спецификация API преобразования таблицы в JSON](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToJson){:target="\_blank" rel="noopener noreferrer"} предоставляет общедоступное программное интерфейсное описание, позволяющее выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells Cloud. Приведённый ниже пример демонстрирует, как делать вызовы в облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sheet1&tableName=Table1" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@myWorkbook.xlsx" \
+  -o converted.json
+```
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sheet1&tableName=MyTable" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@/path/to/your/file.xlsx" \
+     -F "outPath=output/folder" \
+     -F "outStorageName=MyStorage"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertTableToJson.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+```
+{
+ "Code": 200,
+ "Status": "OK"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertTableToJson.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertTableToJson.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertTableToJson.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertTableToJson.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertTableToJson.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertTableToJson.go" >}}
-{{< /tab >}}
+
+{{< /tabs >}}
+
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK абстрагирует низкоуровневые детали, позволяя преобразовать табличные данные электронной таблицы в файл JSON с минимальным объёмом кода. Полный список SDK Aspose.Cells Cloud доступен в официальном репозитории на GitHub.
+
+Следующие примеры кода демонстрируют взаимодействие с веб-сервисами Aspose.Cells Cloud с использованием различных SDK:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}  
+{{<tab tabNum="1" >}}  
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertTableToJson.cs" >}}  
+{{</tab>}}  
+{{<tab tabNum="2" >}}  
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertTableToJson.java" >}}  
+{{</tab>}}  
+{{<tab tabNum="3" >}}  
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertTableToJson.php" >}}  
+{{</tab>}}  
+{{<tab tabNum="4" >}}  
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertTableToJson.rb" >}}  
+{{</tab>}}  
+{{<tab tabNum="5" >}}  
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertTableToJson.ts" >}}  
+{{</tab>}}  
+{{<tab tabNum="6" >}}  
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertTableToJson.py" >}}  
+{{</tab>}}  
+{{<tab tabNum="7" >}}  
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertTableToJson.pl" >}}  
+{{</tab>}}  
+{{<tab tabNum="8" >}}  
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertTableToJson.go" >}}  
+{{</tab>}}  
 {{< /tabs >}}

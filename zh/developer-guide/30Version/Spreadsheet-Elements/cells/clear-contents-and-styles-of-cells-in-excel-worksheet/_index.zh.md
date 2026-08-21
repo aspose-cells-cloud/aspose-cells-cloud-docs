@@ -1,73 +1,96 @@
-﻿---
-title: 清除 Excel 工作表中 Cells 的内容和样式
-type: docs
-url: /zh/clear-contents-and-styles-of-cells-in-excel-worksheet/
-weight: 50
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、清除 Excel 工作表中 Cells 的内容和样式
 ---
-此 REST API 表示 Excel 文件中的 `clear` 个单元格 `content`。
+title: "清除 Excel 工作表中单元格的内容和样式"
+type: docs
+url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+weight: 50
+keywords:
+  - Aspose.Cells
+  - Excel API
+  - 清除单元格内容
+  - 清除单元格样式
+  - 云电子表格
+  - REST API
+description: "了解如何使用 Aspose.Cells Cloud REST API 清除 Excel 工作表中的单元格内容和样式，包含 cURL 示例和 SDK 代码片段。"
+ArticleTitle: "清除 Excel 工作表中单元格的内容和样式 – Aspose.Cells Cloud API"
+---
 
-## 重新设置 API
+在使用 **清除内容和样式** 端点之前，请确保已完成以下准备：
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
- 
+* 已通过 Aspose.Cells Cloud 身份验证流程获取有效的 **JWT 令牌**。  
+* 工作簿已上传至您选择的存储位置（或可通过 `folder` 参数访问）。  
+* 如需使用特定语言的客户端库，需已安装相应的 SDK 版本。
+
+此 REST API 可用于清除 Excel 文件中单元格的内容。
+
+## PostClearContents API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
 ```
 
-请求参数为：
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|范围|细绳|询问|范围。|
-|起始行|整数|询问|起始行。|
-|起始列|整数|询问|起始列。|
-|结束行|整数|询问|末行。|
-|结束列|整数|询问|结束列。|
-|文件夹|细绳|询问|工作簿文件夹。|
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 具备安全性，需采用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### **响应**
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**HTTP 状态码说明**
+
+| 状态码 | 含义             | 描述                                           |
+|--------|------------------|------------------------------------------------|
+| 200    | OK（请求成功）   | 筛选条件已成功应用；响应中包含操作详情。       |
+| 400    | Bad Request（错误请求） | 缺少或无效参数（例如不支持的文件类型）。       |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。                           |
+| 413    | Payload Too Large（载荷过大） | 上传文件大小超出限制。                         |
+| 500    | Internal Server Error（服务器内部错误） | 发生意外服务器错误。                           |
+
+## 如何使用 SDK 调用 PostClearContents API
+
+### PostClearContents API 规范
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) 定义了一个公开可访问的编程接口，允许您直接通过网页浏览器执行 REST 交互。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+### 使用 Aspose.Cells Cloud SDK
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。如需获取 Aspose.Cells Cloud SDK 的完整列表，请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +143,28 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cell
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "清除 Excel 工作表中单元格的内容和样式",
+  "description": "如何使用 Aspose.Cells Cloud REST API 清除 Excel 工作表中的单元格内容和样式。",
+  "url": "https://docs.aspose.cloud/cells/clear-contents-and-styles-of-cells-in-excel-worksheet/",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2023-07-08",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://docs.aspose.cloud/cells/images/Aspose-image-for-open-graph.jpg",
+      "caption": "Aspose.Cells Cloud – 清除单元格内容和样式"
+    }
+  },
+  "keywords": "Aspose.Cells, Excel API, 清除单元格内容, 清除单元格样式, REST API, 云电子表格"
+}
+</script>

@@ -1,75 +1,89 @@
-﻿---
-title: 在 Excel 工作表上设置背景
-second_title: Documen
-linktitle: 广告
-type: docs
-url: /zh/worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
-keywords: Delete an Excel worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API 支持从 Excel 工作簿中删除 Excel 工作表。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 180
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 工作表上设置背景
 ---
-此 REST API 表示 `add worksheet background image`。
+title: "为 Excel 工作表设置背景"
+ArticleTitle: "为 Excel 工作表设置背景 – Aspose.Cells Cloud API 指南"
+second_title: "文档"
+linktitle: "添加"
+type: docs
+url: /worksheets/background/add/
+aliases: [/set-background-or-watermark-for-excel-worksheet/]
+keywords: "Aspose.Cells, Excel, 工作表, 背景, REST API, SDK, 添加图像"
+description: "了解如何使用 Aspose.Cells Cloud REST API 为 Excel 工作表添加背景图像（PNG、JPEG、BMP）。包括端点、必需参数、认证步骤、cURL 示例及 SDK 代码示例。"
+weight: 180
+---
 
-## 重新设置 API
+此 REST API 可为工作表添加背景图像。
+
+## 安全性与认证
+Aspose.Cells Cloud API 是安全的，需要采用 [JWT 令牌认证](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)。
+
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
- 
 ```
 
-请求参数为：
+### **请求参数**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路||
-|工作表名称|细绳|小路||
-|png||身体||
-|文件夹|细绳|询问||
-|存储名称|细绳|询问|存储名称。|
+| 参数名         | 类型   | 位置   | 描述                                                     |
+| -------------- | ------ | ------ | -------------------------------------------------------- |
+| name           | string | path   | Excel 工作簿的名称。                                     |
+| sheetName      | string | path   | 应用图像的工作表名称。                                   |
+| imageFile      | file   | body   | 用作背景的二进制图像文件（PNG、JPEG、BMP 等）。          |
+| folder         | string | query  | 工作簿所在的存储文件夹。                                 |
+| storageName    | string | query  | Aspose Cloud 存储的名称。                                |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+**支持的格式与限制**
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+- 接受的图像扩展名：**PNG、JPEG、BMP、GIF**。
+- 最大文件大小：**5 MB**。
+- 图像将平铺以填充整个工作表背景。
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) 定义了一个公开可访问的编程接口，可让您直接通过 Web 浏览器执行 REST 交互。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/background" \
--X PUT \
--T Creative.jpg \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/background" \
+  -X PUT \
+  -F "imageFile=@Creative.jpg" \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+_可能的错误响应_
+
+| HTTP 状态码 | 描述                                         |
+| ----------- | -------------------------------------------- |
+| 400         | 请求错误 – 参数缺失或无效。                   |
+| 401         | 未授权 – JWT 令牌无效或已过期。               |
+| 404         | 未找到 – 工作簿或工作表不存在。               |
+| 500         | 服务器内部错误 – 服务器上出现意外情况。       |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+## 云 SDK 家族
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是加速开发的最佳方式。SDK 可处理底层细节，让您专注于项目任务。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

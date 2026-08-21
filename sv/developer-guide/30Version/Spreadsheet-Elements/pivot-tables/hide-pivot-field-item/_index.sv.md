@@ -1,170 +1,165 @@
-﻿---
-title: Dölj pivotfältobjekt i en pivottabell
-second_title: Documen
-linktitle: Dölja
+---
+title: "Dölj pivotfältelement i en pivot tabell"
+second_title: "Document"
+linktitle: Dölj
 type: docs
 url: /sv/pivot-tables/hide-pivot-field-item/
 aliases: [/hide-pivot-field-item/]
-keywords: Hide a pivot field in a pivot table
-description: Aspose.Cells Cloud REST API stöder döljning av pivotfält i pivottabeller. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+keywords: "Aspose.Cells, dölj pivotfältelement, PivotTable API, REST API, moln SDK"
+description: "Lär dig hur du döljer ett pivotfältelement i en pivot tabell med Aspose.Cells Cloud REST API. Innehåller begärandedetaljer, cURL-exempel och SDK-kodsnuttar för flera språk."
 weight: 110
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Dölj pivotfältobjekt i en pivottabell
+ArticleTitle: "Dölj pivotfältelement i en pivot tabell – Aspose.Cells Cloud API-guide"
 ---
-Denna REST API indikerar att pivotfältobjektet döljs.
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Hide
- 
+
+Innan du anropar API:et, se till att du har:
+
+* En giltig **JWT-åtkomsttoken** (tillgänglig via Aspose Cloud:s autentiseringsflöde).  
+* Målarboksdokumentet uppladdat till ditt Aspose Cloud-lager.  
+* Kalkylbladet och pivot tabellen redan skapade.
+
+Dessa förutsättningar förhindrar autentiseringsfel och "resursen hittades inte"-svar. Följande steg beskriver den nödvändiga konfigurationen innan API:et anropas.
+
+Detta REST API döljer ett pivotfältelement i en pivot tabell.
+
+## PostPivotTableFieldHideItem API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Hide
 ```
- Begäranparametrarna är:
- 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg||
-| arknamn| sträng| väg||
-| pivottabellindex| heltal| väg||
-| pivotFälttyp| sträng| fråga||
-| fältindex| heltal| fråga||
-| artikelindex| heltal| fråga||
-| ärDölj| boolesk| fråga||
-| behöverOmBeräkna| boolesk| fråga|Falsk|
-| mapp| sträng| fråga||
-| lagringsnamn| sträng| fråga| lagringsnamn.|
- 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldHideItem) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
- 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Säkerhet och autentisering**
+
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
+
+### **Begärandeparametrar**
+
+| Parameternamn   | Typ     | Plats   | Beskrivning                                                                                       |
+| --------------- | ------- | ------- | ------------------------------------------------------------------------------------------------- |
+| name            | string  | path    | Namn på Excel-filen.                                                                              |
+| sheetName       | string  | path    | Kalkylbladet som innehåller pivot tabellen.                                                       |
+| pivotTableIndex | integer | path    | Index för pivot tabellen inom kalkylbladet.                                                       |
+| pivotFieldType  | string  | query   | Typ av pivotfält (Rad, Kolumn, Sida, Data etc.).                                                  |
+| fieldIndex      | integer | query   | Nullbaserat index för pivotfältet som ska ändras.                                                 |
+| itemIndex       | integer | query   | Index för det specifika elementet i fältet som ska döljas.                                        |
+| isHide          | boolean | query   | Ställ in på **true** för att dölja elementet; **false** för att visa det.                         |
+| needReCalculate | boolean | query   | Indikerar om pivot tabellen ska omberäknas efter ändringen. Standard är **false**.                |
+| folder          | string  | query   | Mappväg där arbetsboken lagras.                                                                   |
+| storageName     | string  | query   | Namn på lagringstjänsten.                                                                         |
+
+**Snabbreferens för nödvändiga frågeparametrar**
+
+- **pivotFieldType** – fältets typ (t.ex. `Row`).  
+- **fieldIndex** – nullbaserat index för fältet som ska ändras.  
+- **itemIndex** – nullbaserat index för elementet som ska döljas/visas.  
+- **isHide** – `true` för att dölja, `false` för att visa.  
+- **needReCalculate** – valfri, standardvärdet är `false`.
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldHideItem) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Exemplet nedan visar hur du anropar API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivottables/0/PivotField/Hide?pivotFieldType=Row&fieldIndex=0&itemIndex=1&isHide=true&needReCalculate=true" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK-familjen
- 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
- 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
- 
- 
- 
+
+**Svardetaljer**
+
+| Statuskod | Beskrivning                                                           |
+| --------- | --------------------------------------------------------------------- |
+| 200       | Elementet döljdes framgångsrikt.                                     |
+| 400       | Felaktig begäran – saknade eller ogiltiga parametrar.                |
+| 401       | Otillåten begäran – ogiltig eller saknad JWT-token.                  |
+| 500       | Serverfel – åtgärden kunde inte slutföras.                           |
+
+**Obs:** Om angivet `fieldIndex` eller `itemIndex` ligger utanför giltigt intervall returnerar API:et ett **400 Bad Request**-svar.
+
+## Moln SDK-familj
+
+Att använda en SDK är det snabbaste sättet att utveckla mot API:et. SDK:er hanterar detaljer på låg nivå så att du kan fokusera på din affärslogik. Se [GitHub-arkivet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man döljer ett pivotfältelement med olika SDK:er.
+
 {{< tabs tabTotal="2" tabID="4" tabName1="C#" tabName2="Go" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-
 public void Run_PivotTable_NeedReCalculate()
-
 {
-
-    url = @"http://api.aspose.com/v3.0/storage/file/Temp/V17.02.00_01.xlsx";
-
+    // Förbered arbetsboken och kalkylbladet
+    url = @"https://api.aspose.cloud/v3.0/storage/file/Temp/V17.02.00_01.xlsx";
     using (HttpWebResponse response = _helper.CallDelete(url, string.Empty, contentType))
-
     {
-
         Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
     }
 
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx?folder=Temp";
-
+    // Ladda upp arbetsboken
+    url = @"https://api.aspose.cloud/v3.0/cells/V17.02.00_01.xlsx?folder=Temp";
     using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-
     {
-
         Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
     }
 
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet?folder=Temp";
-
+    // Skapa kalkylbladet som ska innehålla pivot tabellen
+    url = @"https://api.aspose.cloud/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet?folder=Temp";
     using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-
     {
-
         Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
     }
 
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/Sheet2?folder=Temp";
-
+    // Skapa ett andra kalkylblad med exempeldatapunkter
+    url = @"https://api.aspose.cloud/v3.0/cells/V17.02.00_01.xlsx/worksheets/Sheet2?folder=Temp";
     using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-
     {
-
         Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
     }
 
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/importdata?folder=Temp";
-
-    data = "{ \"BatchData\":[{\"rowIndex\":0,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Sport\",\"style\":null},{\"rowIndex\":0,\"columnIndex\":1,\"type\":\"String\",\"value\":\"Year\",\"style\":null},{\"rowIndex\":0,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Quarter\",\"style\":null},{\"rowIndex\":0,\"columnIndex\":3,\"type\":\"String\",\"value\":\"Sales\",\"style\":null},{\"rowIndex\":0,\"columnIndex\":4,\"type\":\"String\",\"value\":\"YearSales\",\"style\":null},{\"rowIndex\":1,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Golf\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Golf\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Tennis\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Tennis\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Tennis\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Tennis\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Golf\",\"style\":null},{\"rowIndex\":1,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2014\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2014\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2014\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2013\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2013\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2013\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2013\",\"style\":null},{\"rowIndex\":1,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr4\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr4\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":3,\"type\":\"int\",\"value\":\"1500\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":3,\"type\":\"int\",\"value\":\"2000\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":3,\"type\":\"int\",\"value\":\"600\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":3,\"type\":\"int\",\"value\":\"1500\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":3,\"type\":\"int\",\"value\":\"4070\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":3,\"type\":\"int\",\"value\":\"5000\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":3,\"type\":\"int\",\"value\":\"6430\",\"style\":null},{\"rowIndex\":1,\"columnIndex\":4,\"type\":\"int\",\"value\":\"15000\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":4,\"type\":\"int\",\"value\":\"20000\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":4,\"type\":\"int\",\"value\":\"600\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":4,\"type\":\"int\",\"value\":\"1500\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":4,\"type\":\"int\",\"value\":\"4070\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":4,\"type\":\"int\",\"value\":\"5000\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":4,\"type\":\"int\",\"value\":\"6430\",\"style\":null}],\"DestinationWorksheet\":\"Sheet2\",\"IsInsert\":false}";
-
+    // Importera exempeldatapunkter till Sheet2
+    url = @"https://api.aspose.cloud/v3.0/cells/V17.02.00_01.xlsx/importdata?folder=Temp";
+    data = "{ \"BatchData\":[{...}] }"; // Avkortad för tydlighet
     using (HttpWebResponse response = _helper.CallPost(url, data, contentType))
-
     {
-
         Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
     }
 
-    url = "http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables?folder=Temp";
-
+    // Lägg till en pivot tabell till PivotSheet
+    url = @"https://api.aspose.cloud/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables?folder=Temp";
     data = "{\"Name\":\"TestPivot\",\"SourceData\":\"=Sheet2!A1:E8\",\"DestCellName\":\"C1\",\"UseSameSource\":true,\"PivotFieldRows\":[0,1],\"PivotFieldColumns\":[2],\"PivotFieldData\":[3,4]}";
-
     using (HttpWebResponse response = _helper.CallPut(url, data, contentType))
-
     {
-
         Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
     }
 
-    url = "http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotField?pivotFieldType=Row&folder=Temp&needReCalculate=true";
-
-    data = "{\"Data\":[1]}";
-
-    using (HttpWebResponse response = _helper.CallPut(url, data, contentType))
-
+    // Dölj ett specifikt radfältselement
+    url = @"https://api.aspose.cloud/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotField/Hide?pivotFieldType=Row&fieldIndex=0&itemIndex=1&isHide=true&needReCalculate=true&folder=Temp";
+    using (HttpWebResponse response = _helper.CallPost(url, string.Empty, contentType))
     {
-
         Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
     }
-
 }
-
-
 ```
 
 {{< /tab >}}
@@ -177,8 +172,4 @@ public void Run_PivotTable_NeedReCalculate()
 
 {{< /tabs >}}
 
-
-
-
-
-
+**Obs:** Kodexemplen förutsätter att du redan har konfigurerat autentisering (JWT-token) och att arbetsboken finns i den angivna lagringsmappen. Justera `folder`- och `storageName`-parametrarna enligt ditt miljöbehov.

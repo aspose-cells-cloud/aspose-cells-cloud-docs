@@ -1,112 +1,151 @@
-﻿---
-title: Batch-Spli
-second_title: Documen
-type: docs
-url: /de/batch/split
-keywords: Batch split Excel file
-description: Aspose.Cells Cloud API unterstützt Batch-Split-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Batch-Split
 ---
-Dieser REST API weist auf `batch split` der berechtigten Datei hin.
+title: "Batch Split"
+second_title: "Dokumentation"
+type: docs
+url: /batch/split
+keywords: "Batch Split, Aspose.Cells Cloud, REST API, Excel, PDF, CSV, JSON, Tabellenkalkulation, Cloud SDK"
+description: "Dokumentation für die Aspose.Cells Cloud Batch Split API, die Tabellenkalkulationsdateien in verschiedene Formate wie PDF, CSV oder JSON aufteilt. Enthält Anforderungsdetails, Beispiel-cURL-Befehle und SDK-Nutzung in verschiedenen Programmiersprachen."
+weight: 100
+---
 
-## RSET API
+Diese REST API führt eine **Batch-Aufteilung** (Batch Split) geeigneter Dateien durch.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/split
- 
 ```
 
-Die Anforderungsparameter sind:
+### **Sicherheit und Authentifizierung**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| BatchSplitRequest|| Körper||
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
-**BatchSplitRequest-Eigenschaften**
+### Anforderungsparameter
 
-Name | Typ | Beschreibung | Hinweise
------------- | ------------- | ------------- | -------------
- Quellordner | Zeichenfolge | | [optional]Quellspeicher | Zeichenfolge | | [optional]Übereinstimmungsbedingung | Übereinstimmungsbedingungsanforderung | | [optional]Format | Zeichenfolge | | [optional]VonIndex | Ganzzahl | | [optional]BisIndex | Ganzzahl | | [optional]Ausgangsordner | Zeichenfolge | | [optional]Speicheroptionen | Speicheroptionen | | [optional]**MatchConditionRequest-Eigenschaften**
+| Parametername     | Typ                | Pfad/Query/String/HTTPBody | Beschreibung                                         |
+|-------------------|--------------------|----------------------------|------------------------------------------------------|
+| BatchSplitRequest | BatchSplitRequest  | body                       | Anforderungstext mit Optionen für die Aufteilung.  |
 
-Name | Typ | Beschreibung | Hinweise
------------- | ------------- | ------------- | -------------
- RegexPattern | Zeichenfolge | | [optional]FullMatchConditions | Zeichenfolge[]| | [optional]Die[OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/Batch/PostBatchSplit) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+### **BatchSplitRequest**-Eigenschaften
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+| Name             | Typ                  | Beschreibung                                         | Anmerkungen  |
+|------------------|----------------------|------------------------------------------------------|--------------|
+| SourceFolder     | string               | Ordner, der die Quelldatei enthält.                 | [optional]   |
+| SourceStorage    | string               | Speichername, in dem sich die Quelldatei befindet.  | [optional]   |
+| MatchCondition   | MatchConditionRequest| Bedingungen zur Auswahl der Dateien für die Aufteilung.| [optional]   |
+| Format           | string               | Gewünschtes Ausgabeformat (z. B. pdf, csv).         | [optional]   |
+| FromIndex        | integer              | Startindex der zu teilenden Seiten.                 | [optional]   |
+| ToIndex          | integer              | Endindex der zu teilenden Seiten.                   | [optional]   |
+| OutFolder        | string               | Zielordner für die aufgeteilten Dateien.            | [optional]   |
+| SaveOptions      | SaveOptions          | Zusätzliche Optionen zum Speichern der Ausgabe.     | [optional]   |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **MatchConditionRequest**-Eigenschaften
+
+| Name               | Typ       | Beschreibung                                     | Anmerkungen  |
+|--------------------|-----------|--------------------------------------------------|--------------|
+| RegexPattern       | string    | Regulärer Ausdruck zur Übereinstimmung mit Dateinamen. | [optional]   |
+| FullMatchConditions| string[]  | Liste exakter Übereinstimmungsbedingungen.      | [optional]   |
+
+### Anforderungstext-Parameter
+
+| Parametername | Typ  | Beschreibung                                  |
+| ------------- | ---- | --------------------------------------------- |
+| data          | file | Binärer Inhalt der zu erstellenden Arbeitsmappe. |
+
+### **Antwort**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                            | Wann zurückgegeben                         |
+|------|--------------------------------------|--------------------------------------------|
+| 200 OK | Arbeitsmappe erfolgreich erstellt    | Normaler Ablauf                            |
+| 201 Created | Arbeitsmappe erstellt (alternative Antwort) | Wenn die API den Status „Created“ zurückgibt |
+| 400 Bad Request | Ungültige Parameter                 | Client-seitiger Fehler                     |
+| 401 Unauthorized | Fehlendes oder ungültiges Token    | Authentifizierungsfehler                   |
+| 409 Conflict | Datei existiert und `isWriteOver=false` | Konflikt mit vorhandener Datei            |
+
+
+## Verwendung der PostBatchSplit API mit SDKs
+
+### PostBatchSplit API-Spezifikation
+
+Die [OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/Batch/PostBatchSplit) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht es Ihnen, REST-Interaktionen direkt aus einem Webbrowser heraus durchzuführen.
+
+Sie können das cURL-Befehlszeilentool nutzen, um Aspose.Cells-Webdienste einfach anzusprechen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an die Cloud API durchführen.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Anforderung" tabName12="Antwort" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/split" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\"}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-Familie
+### Verwendung der Aspose.Cells Cloud SDKs
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Aufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK übernimmt die Low-Level-Details und ermöglicht es Ihnen, sich auf Ihre Aufteilungsaufgaben zu konzentrieren. Bitte prüfen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste mit verschiedenen SDKs durchgeführt werden:
 
-{{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
+{{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js"  tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
 {{< /tab >}}
 
 {{< /tabs >}}
+---

@@ -1,76 +1,79 @@
-﻿---
-title: Klare Bedingungsformatierung
-type: docs
-url: /de/conditional-formattings/clear/
-aliases: [/clear-all-condition-formattings/]
-keywords: REST API, spreadsheets, excel, clear all condition formatting
-description: "Cells.Cloud API für Excel betreiben: alle Zustandsformatierungen löschen"
-weight: 80
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Bedingungsformatierungen löschen
 ---
-Dieser REST API zeigt an, dass alle Bedingungsformatierungen gelöscht werden sollen.
- 
-## RSET API
- 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings
- 
-```
- Die Anforderungsparameter sind:
- 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg||
-| Blattname| Schnur| Weg||
-| Ordner| Schnur| Abfrage||
-| Speichername| Schnur| Abfrage| Speichername.|
- 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormattings) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
- 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+title: "Bedingte Formatierungen löschen"
+type: docs
+url: /conditional-formattings/clear/
+aliases: [/clear-all-condition-formattings/]
+keywords: "Aspose.Cells Cloud, REST API, bedingte Formatierung löschen, Excel, Arbeitsblätter, JWT, v3.2"
+description: "Löschen Sie alle bedingten Formatierungsregeln aus einem Arbeitsblatt mithilfe der Aspose.Cells Cloud API (v3.2). Erfahren Sie mehr zur Anforderungssyntax, den erforderlichen Parametern, den Authentifizierungsschritten und sehen Sie Beispielcodes in verschiedenen SDKs."
+weight: 80
+---
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Diese REST API löscht alle bedingten Formatierungsregeln aus einem Arbeitsblatt.
+
+## REST API
+
+```bash
+DELETE https://api.aspose.cloud/v3.2/cells/{name}/worksheets/{sheetName}/conditionalFormattings
+```
+
+### Anforderungsparameter
+
+| Parametername   | Typ    | Ort    | Beschreibung                                                         |
+| --------------- | ------ | ------ | -------------------------------------------------------------------- |
+| **name**        | string | path   | Der Name der Arbeitsmappe (z. B. `Book1.xlsx`).                     |
+| **sheetName**   | string | path   | Der Name des Arbeitsblatts, aus dem die bedingte Formatierung entfernt werden soll. |
+| **folder**      | string | query  | _(Optional)_ Pfad des Ordners im Speicher, in dem sich die Arbeitsmappe befindet. |
+| **storageName** | string | query  | _(Optional)_ Name des Speicherdienstes.                             |
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormattings) definiert eine öffentlich zugängliche Programmierschnittstelle, und **die OpenAPI-Spezifikation** ermöglicht es Ihnen, REST-Interaktionen direkt aus einem Webbrowser durchzuführen.
+
+Sie können das cURL-Befehlszeilentool verwenden, um problemlos auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an die Cloud-API durchführen.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Anforderung" tabName12="Antwort" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+```bash
+curl -v "https://api.aspose.cloud/v3.2/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
   "Code": "200",
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
- 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+### Fehlerantworten
+
+| HTTP-Code | Grund                                              | Beispielinhalt                                                      |
+| --------- | -------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**   | Bad Request – fehlende oder ungültige Parameter.  | `{ "Code":"400", "Message":"Ungültiger Parameterwert." }`          |
+| **401**   | Unauthorized – fehlender oder ungültiger JWT-Token. | `{ "Code":"401", "Message":"Zugriffstoken fehlt oder ist ungültig." }` |
+| **404**   | Not Found – Arbeitsmappe oder Arbeitsblatt existiert nicht. | `{ "Code":"404", "Message":"Datei nicht gefunden." }`              |
+| **500**   | Internal Server Error – unerwarteter Serverfehler. | `{ "Code":"500", "Message":"Ein unerwarteter Fehler ist aufgetreten." }` |
+
+## SDK-Beispiele
+
+Die Verwendung eines SDKs ist die beste Möglichkeit, die Entwicklung zu beschleunigen. Ein SDK übernimmt die Low-Level-Details, sodass Sie sich auf Ihre Projektaufgaben konzentrieren können. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud).
+
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste mit verschiedenen SDKs durchgeführt werden:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-ClearConditionFormattings-1.cs" >}}
 
@@ -84,8 +87,6 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 
 {{< tab tabNum="3" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
@@ -96,41 +97,29 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 
 {{< tab tabNum="5" >}}
 
-
-
 {{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-ClearConditionFormattings-1.js" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-
-
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-ClearConditionFormattings-1.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "63fda1be9e5149f83edca47ce58dac87" >}}
 

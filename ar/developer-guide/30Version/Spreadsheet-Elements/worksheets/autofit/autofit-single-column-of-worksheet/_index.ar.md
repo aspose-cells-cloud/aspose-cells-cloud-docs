@@ -1,79 +1,83 @@
-﻿---
-title: ملاءمة عمود تلقائيًا في ورقة عمل Excel
-second_title: Documen
-linktitle: عمود
-type: docs
-url: /ar/worksheets/autofit/column/
-aliases: [/autofit-single-column-of-worksheet/]
-keywords: Autofit a column on an Excel workshee
-description: يدعم Cloud REST Aspose.Cells الضبط التلقائي لعمود في ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 10
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، ملاءمة عمود تلقائيًا في ورقة عمل Excel
 ---
-يشير هذا REST API إلى ملاءمة عمود تلقائيًا في ورقة عمل Excel.
+title: "ضبط عمود تلقائيًا في Excel باستخدام واجهة Aspose.Cells Cloud API – دليل سريع"
+second_title: "مستند"
+linktitle: "عمود"
+type: docs
+url: /worksheets/autofit/column/
+aliases: [/autofit-single-column-of-worksheet/]
+keywords: "Aspose.Cells Cloud، ضبط عمود تلقائيًا، واجهة Excel API، واجهة REST API، حزمة تطوير البرمجيات (SDK)، C#، Java، PHP، Ruby، Node.js، Python، Perl، Go"
+description: "تعرّف على كيفية ضبط عرض عمود (أو نطاق من الأعمدة) تلقائيًا في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. يشمل أمثلة على cURL وحزم تطوير البرمجيات (SDK) (C#، Java، Python، إلخ) وتفاصيل كاملة للطلب والاستجابة."
+weight: 10
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية (REST API) تلقائيًا بضبط عرض عمود واحد أو نطاق متصل من الأعمدة في ورقة عمل Excel.
+
+## واجهة REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
 ```
 
-معلمات الطلب هي:
+### معاملات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الملف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| العمود الأول| عدد صحيح| استفسار| فهرس العمود الأول.|
-| العمود الأخير| عدد صحيح| استفسار| فهرس العمود الأخير.|
-|[خيارات التجهيز التلقائي](/cells/ar/auto-filter-options) || جسم| خيارات التركيب التلقائي.|
-| الصف الأول| عدد صحيح| استفسار| فهرس الصف الأول.|
-| الصف الأخير| عدد صحيح| استفسار| مؤشر الصف الأخير.|
-| مجلد| خيط| استفسار| المجلد.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعامل         | النوع    | الموقع  | الوصف                                                                                              |
+| ------------------- | -------- | ------- | -------------------------------------------------------------------------------------------------- |
+| name                | string   | path    | اسم ملف Excel.                                                                                     |
+| sheetName           | string   | path    | اسم ورقة العمل.                                                                                    |
+| firstColumn         | integer  | query   | المؤشر البصري (بدون احتساب الصفر) للعمود الأول المراد ضبطه تلقائيًا.                               |
+| lastColumn          | integer  | query   | المؤشر البصري (بدون احتساب الصفر) للعمود الأخير المراد ضبطه تلقائيًا.                              |
+| autoFitterOptions   | object   | body    | خيارات تحكم في سلوك الضبط التلقائي (انظر [AutoFitterOptions](/cells/auto-filter-options)).       |
+| firstRow            | integer  | query   | المؤشر البصري (بدون احتساب الصفر) للصف الأول الذي يُؤخذ بعين الاعتبار عند حساب عرض العمود.        |
+| lastRow             | integer  | query   | المؤشر البصري (بدون احتساب الصفر) للصف الأخير الذي يُؤخذ بعين الاعتبار عند حساب عرض العمود.       |
+| folder              | string   | query   | المجلد الموجود فيه الملف ضمن التخزين.                                                             |
+| storageName         | string   | query   | اسم خدمة التخزين.                                                                                  |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### استجابات الأخطاء
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| حالة HTTP | المعنى                                      | مثال لجسم JSON                                             |
+| --------- | ------------------------------------------- | ----------------------------------------------------------- |
+| 400       | معامل (أو معاملات) غير صالحة               | `{"Code":400,"Message":"معامل غير صالح 'firstColumn'."}`  |
+| 401       | غير مُصادَق – رمز JWT مفقود أو غير صالح   | `{"Code":401,"Message":"فشل المصادقة."}`                   |
+| 404       | ملف أو ورقة عمل غير موجودة                 | `{"Code":404,"Message":"ورقة العمل 'Sheet1' غير موجودة."}` |
+| 500       | خطأ داخلي في الخادم                         | `{"Code":500,"Message":"حدث خطأ غير متوقع."}`              |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) واجهة برمجة تطبيقات قابلة للوصول عامًا، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** لاستدعاء خدمات Aspose.Cells Cloud. يوضح المثال التالي كيفية استدعاء نقطة نهاية ضبط العمود تلقائيًا.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?lastColumn=2&firstColumn=2" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"AutoFitMergedCells" : true, "IgnoreHidden" : true, "OnlyAuto" : true}' 
-
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?firstColumn=2&lastColumn=2" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"AutoFitMergedCells": true, "IgnoreHidden": true, "OnlyAuto": true}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## عائلة حزم تطوير البرمجيات (SDK) في السحابة
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام حزمة تطوير البرمجيات (SDK) هي أسرع طريقة لدمج الواجهة البرمجية في تطبيقك. تتعامل SDKs مع التفاصيل منخفضة المستوى لتمكينك من التركيز على المنطق التجاري. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على القائمة الكاملة لحزم تطوير البرمجيات (SDK) الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الرمز التالية كيفية استدعاء نقطة نهاية ضبط العمود تلقائيًا باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -126,3 +130,5 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---

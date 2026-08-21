@@ -1,76 +1,143 @@
-﻿---
-title: نقل نطاق مسمى باستخدام ورقة عمل Excel
-second_title: Documen
-linktitle: موف
-type: docs
-url: /ar/ranges/move/
-aliases: [/move-a-named-ranged-with-a-excel-worksheet/]
-keywords: Move a named ranged with an Excel workshee
-description: يدعم Cloud REST نقل نطاق مُسمّى باستخدام ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، نقل نطاق مسمى باستخدام ورقة عمل Excel
 ---
-يشير هذا REST API إلى نقل النطاق الحالي إلى نطاق الوجهة على ورقة عمل Excel.
+title: "نقل نطاق مسمّى باستخدام ورقة عمل Excel"
+second_title: "وثيقة"
+linktitle: "نقل"
+type: docs
+url: /ranges/move/
+aliases: [/move-a-named-range-with-an-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, نقل نطاق مسمّى, ورقة عمل Excel, REST API, نقل النطاق, أمثلة SDK"
+description: "تعرّف على كيفية نقل نطاق مسمّى ضمن ورقة عمل Excel باستخدام Aspose.Cells Cloud REST API الإصدار 3.0، مع تفاصيل نقطة النهاية، المصادقة، أمثلة وأكواد SDK."
+weight: 20
+ArticleTitle: "نقل نطاق مسمّى باستخدام ورقة عمل Excel عبر واجهة Aspose.Cells Cloud API"
+---
 
-## RSET API
+يُعد نقل النطاق المسمّى مهمة شائعة عندما تحتاج إلى إعادة تنظيم البيانات برمجيًا. يشرح هذا القسم كيفية نقل نطاق مُعرّف إلى موقع جديد على نفس ورقة العمل باستخدام واجهة Aspose.Cells Cloud REST API.
+
+تقوم هذه الواجهة البرمجية بنقل النطاق المحدّد إلى نطاق وجهة في ورقة عمل Excel.
+
+## واجهة REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/moveto
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/moveto
 ```
 
-معلمات الطلب هي:
+### المصادقة
+تتطلب الواجهة رمز <strong>Bearer JWT</strong> يُحصل عليه عبر تدفق OAuth الخاص بـ Aspose Cloud. يجب تضمين الرمز في رأس `Authorization`:
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل|
-| ديست رو| عدد صحيح| استفسار| صف البداية لنطاق الوجهة.|
-| عمود dest| عدد صحيح| استفسار| عمود البداية لنطاق الوجهة.|
-| يتراوح|| جسم| النطاق في ورقة العمل|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+```
+Authorization: Bearer <jwt token>
+```
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMoveTo) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+ويجب أن يحتوي الرمز على النطاق **Cells**.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### المتطلبات الأساسية
+- يجب أن يكون المصنف مخزنًا في مساحة التخزين الخاصة بـ Aspose Cloud.  
+- قدم اسم التخزين (`storageName`) ومسار المجلد (`folder`) إن لم يكن الملف في الدليل الجذر.  
+- استخدم أحدث إصدار من SDK الخاص بـ Aspose.Cells Cloud الذي يدعم إصدار الواجهة **v3.0**.
+
+### **الأمان والمصادقة**
+
+تُعدّ واجهات Aspose.Cells Cloud آمنة وتحتاج إلى <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+### معاملات الطلب
+
+| الاسم           | النوع   | الموقع | الوصف |
+|----------------|--------|----------|-------------|
+| **name**       | سلسلة نصية | المسار     | اسم ملف المصنف |
+| **sheetName**  | سلسلة نصية | المسار     | اسم ورقة العمل |
+| **destRow**    | عدد صحيح| الاستعلام    | مؤشر الصف الابتدائي لنطاق الوجهة (يبدأ من 0) |
+| **destColumn**| عدد صحيح| الاستعلام    | مؤشر العمود الابتدائي لنطاق الوجهة (يبدأ من 0) |
+| **range**      | كائن | الجسم     | تعريف النطاق المصدر المراد نقله |
+| **folder**     | سلسلة نصية | الاستعلام    | مسار المجلد حيث يُخزّن المصنف |
+| **storageName**| سلسلة نصية | الاستعلام    | اسم مساحة تخزين Aspose Cloud |
+
+### جسم الطلب
+
+| الحقل          | النوع   | الإلزام | الوصف |
+|----------------|--------|----------|-------------|
+| **ColumnCount**| عدد صحيح| لا | عدد الأعمدة في النطاق المصدر |
+| **ColumnWidth**| عدد صحيح| لا | عرض كل عمود (بالنقاط) |
+| **FirstColumn**| عدد صحيح| لا | المؤشر المُعدَّ من الصفر لأول عمود في النطاق المصدر |
+| **FirstRow**   | عدد صحيح| لا | المؤشر المُعدَّ من الصفر لأول صف في النطاق المصدر |
+| **Name**       | سلسلة نصية | لا | اسم النطاق (إن كان نطاقًا مسمّى) |
+| **RefersTo**   | سلسلة نصية | لا | مرجع بنمط A1 يُعرّف النطاق |
+| **RowCount**   | عدد صحيح| لا | عدد الصفوف في النطاق المصدر |
+| **RowHeight**  | عدد صحيح| لا | ارتفاع كل صف (بالنقاط) |
+| **Worksheet**  | سلسلة نصية | لا | ورقة العمل التي تحتوي على النطاق المصدر |
+
+### سير العمل
+
+1. **ارفع** المصنف إلى مساحة تخزين Aspose Cloud (إن لم يكن موجودًا مسبقًا).  
+2. **ولّد** رمز JWT باستخدام نقطة نهاية OAuth.  
+3. **ابنِ** حمولة JSON التي تصف النطاق المصدر.  
+4. **استدعِ** نقطة النهاية `moveto` باستخدام المعاملات المطلوبة (المسار، معاملات الاستعلام وجسم JSON).  
+5. **تحقق** من الاستجابة؛ فاستدعاء ناجح يُعيد حالة `200 OK`.
+
+### مثال على طلب/استجابة
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/moveto?destRow=20&destColumn=20" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-d '{ 
+  "ColumnCount": 7,
+  "ColumnWidth": 19,
+  "FirstColumn": 0,
+  "FirstRow": 9,
+  "Name": "MyRange",
+  "RefersTo": "A10:G10",
+  "RowCount": 1,
+  "RowHeight": 15,
+  "Worksheet": "Sheet1"
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+عند حدوث خطأ، تتضمن الاستجابة حقلًا اختياريًا `ErrorMessage` يوفّر تفاصيل إضافية حول السبب.
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+**رموز حالة HTTP**
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+| الرمز | المعنى                     | الوصف                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | ناجح (OK)                          | تم تطبيق المرشّح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صالح (Bad Request)                 | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401  | غير مصرّح به (Unauthorized)                | رمز JWT غير صالح أو مفقود. |
+| 413  | حجم الحمولة كبير جدًا (Payload Too Large)           | يتجاوز حجم الملف المرفوع الحد المسموح. |
+| 500  | خطأ داخلي في الخادم (Internal Server Error)       | خطأ غير متوقع في الخادم. |
+
+**مخطّط الاستجابة**
+
+| الحقل | النوع   | الوصف |
+|-------|--------|-------------|
+| **Code** | عدد صحيح | رمز حالة مشابه لـ HTTP تعيده الواجهة (مثل 200) |
+| **Status** | سلسلة نصية | وصف نصي للنتيجة (مثل "OK") |
+| **ErrorMessage** | سلسلة نصية (اختياري) | تفاصيل الخطأ المقروءة من قِبل الإنسان عند فشل الاستدعاء |
+
+## عائلة SDK للسحابة
+
+يُعد استخدام SDK الطريقة الأفضل لتسريع عملية التطوير. يتعامل SDK مع التفاصيل منخفضة المستوى لتمكينك من التركيز على مهام مشروعك. يُرجى الاطّلاع على <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للاطّلاع على القائمة الكاملة لـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+توضّح أمثلة الكود التالية كيفية إجراء استدعاءات لخدمات الويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

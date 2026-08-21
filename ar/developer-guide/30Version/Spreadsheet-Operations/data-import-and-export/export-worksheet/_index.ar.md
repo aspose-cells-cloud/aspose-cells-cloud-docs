@@ -1,91 +1,170 @@
-﻿---
-title: تصدير ورقة العمل
-second_title: Documen
-linktitle: ورقة عمل
-type: docs
-url: /ar/export-excel-worksheet-to-different-formats/
-aliases: [ /export/excel-worksheet-to-different-formats/]
-keywords: Export Excel worksheet to kinds of format files
-description: يدعم Cloud REST تصدير أوراق العمل إلى أنواع مختلفة من ملفات التنسيق. تدعم مجموعة أدوات تطوير البرامج (SDK) لغات تطوير مختلفة، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تصدير ورقة العمل
 ---
- يمكنك تصدير التنسيقات:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [إكس إل إس بي](https://docs.fileformat.com/spreadsheet/xlsb/), [ملف CSV](https://docs.fileformat.com/spreadsheet/csv/), [تي إس في](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [المواد المستنفدة للأوزون](https://docs.fileformat.com/spreadsheet/ods/), [رسالة قصيرة](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [أو تي إس](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [ديف](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [أرقام](https://docs.fileformat.com/spreadsheet/numbers/), [فودز](https://docs.fileformat.com/spreadsheet/fods/)..
+title: "تصدير ورقة عمل – Aspose.Cells Cloud"
+second_title: "المستند"
+linktitle: "ورقة العمل"
+type: docs
+url: /export-excel-worksheet-to-different-formats/
+aliases: [/export/excel-worksheet-to-different-formats/]
+keywords: "Aspose.Cells, تصدير ورقة عمل, API لملفات إكسل, PDF, CSV, TIFF, ODS, تنسيقات الصور"
+description: "تعرّف على كيفية تصدير ورقة عمل إكسل إلى تنسيقات مثل PDF وCSV وTIFF وغيرها باستخدام واجهة Aspose.Cells Cloud REST API. يشمل مثال cURL وتفاصيل المصادقة المطلوبة ومعلمات الاستدعاء ومعالجة الاستجابة."
+weight: 20
+ArticleTitle: "تصدير ورقة عمل إكسل إلى تنسيقات متنوعة – Aspose.Cells Cloud"
+---
 
-- **الباقي API**
+يمكنك تصدير ورقة العمل إلى التنسيقات التالية:
 
-|**API**|**يكتب**|**وصف**|**رابط سواجر**|
-|:- |:- |:- |:- |
-|/الخلايا/التصدير|بريد|تصدير ملف Excel من محتوى الطلب إلى تنسيق ما|[ما بعد التصدير](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+- **XLS** – [تفاصيل تنسيق XLS](https://docs.fileformat.com/spreadsheet/xls/)
+- **XLSX** – [تفاصيل تنسيق XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)
+- **XLSB** – [تفاصيل تنسيق XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)
+- **CSV** – [تفاصيل تنسيق CSV](https://docs.fileformat.com/spreadsheet/csv/)
+- **TSV** – [تفاصيل تنسيق TSV](https://docs.fileformat.com/spreadsheet/tsv/)
+- **XLSM** – [تفاصيل تنسيق XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)
+- **ODS** – [تفاصيل تنسيق ODS](https://docs.fileformat.com/spreadsheet/ods/)
+- **TXT** – [تفاصيل تنسيق TXT](https://docs.fileformat.com/word-processing/txt/)
+- **PDF** – [تفاصيل تنسيق PDF](https://docs.fileformat.com/pdf/)
+- **OTS** – [تفاصيل تنسيق OTS](https://docs.fileformat.com/spreadsheet/ots/)
+- **XPS** – [تفاصيل تنسيق XPS](https://docs.fileformat.com/page-description-language/xps/)
+- **DIF** – [تفاصيل تنسيق DIF](https://docs.fileformat.com/spreadsheet/dif/)
+- **PNG** – [تفاصيل تنسيق PNG](https://docs.fileformat.com/Image/png/)
+- **JPEG** – [تفاصيل تنسيق JPEG](https://docs.fileformat.com/image/jpeg/)
+- **BMP** – [تفاصيل تنسيق BMP](https://docs.fileformat.com/image/bmp/)
+- **SVG** – [تفاصيل تنسيق SVG](https://docs.fileformat.com/page-description-language/svg/)
+- **TIFF** – [تفاصيل تنسيق TIFF](https://docs.fileformat.com/image/tiff/)
+- **EMF** – [تفاصيل تنسيق EMF](https://docs.fileformat.com/image/emf/)
+- **NUMBERS** – [تفاصيل تنسيق Numbers](https://docs.fileformat.com/spreadsheet/numbers/)
+- **FODS** – [تفاصيل تنسيق FODS](https://docs.fileformat.com/spreadsheet/fods/)
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+[استكشف عمليات التصدير ذات الصلة مثل تصدير ملف العمل كاملاً أو مخطط بياني.](https://docs.aspose.cloud/cells/export-excel-workbook-to-different-formats/)
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+## واجهة PostExport API
 
-- **طلب**
-
-```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=worksheet&format=tiff" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+```http
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
-- **إجابة**
+### **الأمان والمصادقة**
 
-```bash
+تستخدم واجهات برمجة تطبيقات Aspose.Cells Cloud آليات أمنية وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة قائمة على رمز JWT</a>.
+
+### معلمات الطلب
+
+| اسم المعلمة | النوع | المسار/سلسلة الاستعلام/محتوى جسم HTTP | مطلوب | الوصف |
+|-------------|-------|----------------------------------------|--------|---------|
+| file | ملف | formData | نعم | الملف المراد تحميله |
+| objectType | سلسلة نصية | استعلام | نعم | نوع الكائن المراد تصديره. لتصدير المخططات استخدم `chart`. قيم أخرى محتملة: `worksheet` (ورقة عمل)، `picture` (صورة)، إلخ. |
+| format | سلسلة نصية | استعلام | نعم | التنسيق المطلوب للإخراج. القيم المدعومة: `png`، `jpeg`، `gif`، `bmp`، `svg`، `tiff`، `emf`، `wmf`، `pdf`. |
+
+### الاستجابة
+
+```json
 {
-    "Files": [{
-        "Filename": "Book1_xlsx_Sheet1.tif",
-        "FileSize": 390,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet2.tif",
-        "FileSize": 10040,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet3.tif",
-        "FileSize": 2824,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4.tif",
-        "FileSize": 1350,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet5.tif",
-        "FileSize": 12978,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6.tif",
-        "FileSize": 7002,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet7.tif",
-        "FileSize": 11532,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet1.tif",
-        "FileSize": 382,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet2.tif",
-        "FileSize": 382,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet3.tif",
-        "FileSize": 130084,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet4.tif",
-        "FileSize": 120062,
-        "FileContent": "-----Base64String--------"
-    }]
+  "Files": [
+    {
+      "Filename": "Book1_xlsx_Sheet1.tif",
+      "FileSize": 390,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet2.tif",
+      "FileSize": 10040,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet3.tif",
+      "FileSize": 2824,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet4.tif",
+      "FileSize": 1350,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet5.tif",
+      "FileSize": 12978,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet6.tif",
+      "FileSize": 7002,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet7.tif",
+      "FileSize": 11532,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet1.tif",
+      "FileSize": 382,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet2.tif",
+      "FileSize": 382,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet3.tif",
+      "FileSize": 130084,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet4.tif",
+      "FileSize": 120062,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
-- **عائلة SDK السحابية**
+### **معالجة الأخطاء**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+إذا فشل الطلب، تُعيد واجهة API كائن JSON يحتوي على حقول مثل `Code` و `Message`. تشمل رموز حالة HTTP الشائعة **401 Unauthorized** (رمز مفقود أو غير صالح) و **400 Bad Request** (معلمات غير صالحة).
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+**رموز حالة HTTP**
+
+| الرمز | المعنى | الوصف |
+|-------|---------|--------|
+| 200 | نجاح | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | طلب غير صالح | معلمات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401 | غير مصدق | رمز JWT غير صالح أو مفقود. |
+| 413 | حجم الحمولة كبير جدًا | تجاوز حجم الملف المرفوع الحد المسموح به. |
+| 500 | خطأ داخلي في الخادم | خطأ غير متوقع في الخادم. |
+
+**ملاحظات**
+
+- الحد الأقصى لحجم الملف المسموح برفعه هو 50 ميغابايت.  
+- تدعم واجهة API تصدير عدة أوراق عمل في طلب واحد؛ تُعاد كل ورقة عمل كملف منفصل داخل المصفوفة `Files`.  
+- تتوفر المعالجة غير المتزامنة لملفات العمل الكبيرة؛ استخدم رمز الحالة `202 Accepted` لمراقبة حالة العملية عبر الاستبيان (polling).
+
+## كيفية استخدام واجهة PostExport API مع مكتبات SDK
+
+### المتطلبات الأساسية
+
+قبل استدعاء واجهة API، احصل على رمز وصول JWT صالح باستخدام عملية مصادقة Aspose.Cells Cloud. تأكد من تضمين الرمز في رأس الطلب `Authorization` لكل طلب. تتعامل مكتبات SDK مع الحصول على الرمز تلقائيًا عند تكوينها ببيانات اعتماد العميل الخاصة بك.
+
+### مواصفات واجهة PostExport API
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) واجهة برمجة تطبيقات عامة قابلة للاستدعاء مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية استدعاء واجهة API عبر cURL.
+
+```bash
+# تصدير ورقة عمل إلى تنسيق TIFF
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=worksheet&format=tiff" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -F "File=@MyWorkbook.xlsx"
+```
+
+### استخدام مكتبات SDK الخاصة بـ Aspose.Cells Cloud
+
+استخدام مكتبة SDK هو أسرع طريقة لتطوير التطبيقات مع Aspose.Cells Cloud. فالمكتبة SDK تُجرّدك من التفاصيل التقنية منخفضة المستوى، مما يسمح لك بالتركيز على منطق عملك. للاطلاع على القائمة الكاملة للمكتبات المدعومة، يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud).
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر مكتبات SDK متنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -138,3 +217,4 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=worksheet&fo
 {{< /tab >}}
 
 {{< /tabs >}}
+---

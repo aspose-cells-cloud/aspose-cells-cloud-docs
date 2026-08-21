@@ -1,74 +1,90 @@
-﻿---
-title: Eliminar una imagen en un archivo Excel
-second_title: Documen
-linktitle: Borrar
-type: docs
-url: /es/pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
-keywords: Delete a picture in an Excel file
-description: Aspose.Cells Cloud REST API permite eliminar imágenes en archivos Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 50
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Eliminar una imagen en un archivo Excel
 ---
-Este REST API indica a `delete` una imagen de una hoja de trabajo Excel.
+title: "Eliminar una imagen de una hoja de cálculo de Excel – Aspose.Cells Cloud API"
+second_title: "Documento"
+linktitle: "Eliminar"
+type: docs
+url: /pictures/delete/
+aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+keywords: "Aspose.Cells, API en la nube, eliminar imagen, hoja de cálculo de Excel, REST"
+description: "Elimine una imagen de una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. Aprenda sobre el punto final DELETE, los parámetros requeridos, la autenticación, los códigos de error y el código de ejemplo."
+weight: 50
+ArticleTitle: "Eliminar una imagen de una hoja de cálculo de Excel – Aspose.Cells Cloud API"
+---
 
-## RSET API
+Esta API REST elimina una imagen de una hoja de cálculo de Excel.
+
+### **Seguridad y autenticación**
+
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
+
+## API REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-Los parámetros de la solicitud son:
+### Parámetros de solicitud
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| El nombre del libro de trabajo.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| índice de imágenes| entero| camino| Índice de imágenes|
-| carpeta| cadena| consulta| La carpeta del libro de trabajo.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo    | Ubicación | Obligatorio | Descripción                                                  |
+| -------------------- | ------- | --------- | ----------- | ------------------------------------------------------------ |
+| name                 | string  | path      | Sí          | El nombre del archivo del libro.                             |
+| sheetName            | string  | path      | Sí          | El nombre de la hoja de cálculo que contiene la imagen.     |
+| pictureIndex         | integer | path      | Sí          | El índice de base cero de la imagen que se va a eliminar.   |
+| folder               | string  | query     | No          | La carpeta donde se almacena el libro.                       |
+| storageName          | string  | query     | No          | El nombre del servicio de almacenamiento (opcional).        |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPicture) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar la llamada con cURL.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**Cabeceras de ejemplo de respuesta**
+
+| Cabecera       | Valor                         |
+|----------------|-------------------------------|
+| Content-Type   | application/json              |
+| Content-Length | (varía)                       |
+| Date           | (fecha del servidor)          |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Manejo de errores
+
+| Código HTTP | Significado                                                       | Cuerpo de ejemplo de error                                             |
+| ----------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| 200         | Imagen eliminada correctamente.                                   | `{ "Code": 200, "Status": "OK" }`                                       |
+| 400         | Solicitud incorrecta: parámetros no válidos.                      | `{ "Code": 400, "Message": "Índice de imagen no válido." }`             |
+| 401         | No autorizado: token faltante o no válido.                        | `{ "Code": 401, "Message": "Falta o no es válido el token de acceso." }` |
+| 404         | No encontrado: el libro, la hoja de cálculo o la imagen no existen. | `{ "Code": 404, "Message": "Recurso no encontrado." }`                 |
+| 500         | Error interno del servidor.                                       | `{ "Code": 500, "Message": "Error inesperado del servidor." }`         |
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de desarrollar. Un SDK gestiona los detalles de bajo nivel, para que pueda centrarse en su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells mediante varios SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

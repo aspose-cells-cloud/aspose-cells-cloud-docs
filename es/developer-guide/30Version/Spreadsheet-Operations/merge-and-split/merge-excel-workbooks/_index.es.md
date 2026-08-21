@@ -1,291 +1,318 @@
-﻿---
-title: Fusionar un libro de trabajo Excel en otro archivo Excel
-second_title: Documen
-linktitle: Fusionar un archivo Excel en el archivo Excel
-type: docs
-url: /es/merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
-keywords: Merge an Excel Workbooks into other Excel file
-description: Aspose.Cells Cloud REST API permite fusionar archivos Excel con otros Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 50
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Combinar un libro de trabajo Excel en otro archivo Excel
 ---
-Este REST API indica fusionar un libro de trabajo Excel `workbook` en otro libro de trabajo Excel.
+title: "Fusionar un libro de Excel en otro libro"
+second_title: "Documento"
+linktitle: "Fusionar un libro de Excel en otro libro"
+type: docs
+url: /merge-an-excel-file-into-the-excel-file/
+aliases: [/merge-excel-workbooks/, /workbook/merge/]
+keywords: "fusión de Excel, Aspose.Cells Cloud, API de libro de cálculo, API REST, fusión de hojas de cálculo, SDK en la nube, autenticación, mergeWith, ejemplo en cURL"
+description: "Guía paso a paso para fusionar un libro de Excel en otro utilizando la API REST de Aspose.Cells Cloud (v3.0). Incluye autenticación, el parámetro mergeWith requerido, un ejemplo en cURL y fragmentos de código del SDK."
+ArticleTitle: "Fusionar un libro de Excel en otro libro mediante la API de Aspose.Cells Cloud"
+weight: 50
+---
 
-**Parámetro de consulta**
+## API REST
 
-|Nombre del parámetro|Tipo|Descripción|
-|:- |:- |:- |
-|carpeta|cadena|Carpeta del libro de trabajo original.|
-|nombreDeAlmacenamiento|cadena|Nombre de almacenamiento.|
+Esta API REST fusiona un **libro** de Excel en otro libro.
 
-## RESTO API
+```bash
+POST https://api.aspose.cloud/v3.0/cells/{name}/merge
+```
 
-|**API**|**Tipo**|**Descripción**|**Enlace Swagger**|
-|:- |:- |:- |:- |
-|/celdas/{nombre}/fusionar|CORREO|Fusionar libros de trabajo Excel|[Fusionar libros de trabajo posteriores](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge)|
+### **Seguridad y autenticación**
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
- Puedes utilizar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **Parámetro de consulta**
+
+| Nombre del parámetro | Tipo   | Descripción                                                 |
+| -------------------- | ------ | ----------------------------------------------------------- |
+| folder               | string | Carpeta que contiene el libro original.                    |
+| storageName          | string | Nombre del almacenamiento.                                 |
+| **mergeWith**        | string | Nombre del libro que se fusionará en el libro de destino. |
+
+### **Respuesta**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+      "Workbook": {
+    "FileName": "test.xlsx",
+    "Links": [
+      {
+        "Href": "/test.xlsx",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Descargar como CSV",
+        "Type": "text/csv"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Descargar como HTML",
+        "Type": "text/html"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Descargar como ODS",
+        "Type": "application/vnd.oasis.opendocument.spreadsheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Descargar como PDF",
+        "Type": "application/pdf"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Descargar como formato de texto delimitado por tablas",
+        "Type": "text/plain"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Descargar como TIFF",
+        "Type": "image/tiff"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Descargar como Microsoft Excel 2003",
+        "Type": "application/vnd.ms-excel"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Descargar como Microsoft Excel 2007",
+        "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Descargar como XPS",
+        "Type": "application/vnd.ms-xpsdocument"
+      }
+    ],
+    "Worksheets": {
+      "link": {
+        "Href": "/worksheets",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DefaultStyle": {
+      "link": {
+        "Href": "/defaultstyle",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DocumentProperties": {
+      "link": {
+        "Href": "/documentproperties",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Names": {
+      "link": {
+        "Href": "/names",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Settings": {
+      "link": {
+        "Href": "/settings",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "IsWriteProtected": "False",
+    "IsProtected": "False",
+    "IsEncryption": "false",
+    "Password": null
+  }
+}
+```
+
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                            |
+|--------|-----------------------------|--------------------------------------------------------|
+| 200    | OK                          | Filtro aplicado correctamente; la respuesta contiene los detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros faltantes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT inválido o faltante.                         |
+| 413    | Payload demasiado grande     | El archivo cargado supera el límite de tamaño.        |
+| 500    | Error interno del servidor  | Error inesperado en el servidor.                       |
+
+## Cómo utilizar la API PostWorkbooksMerge con SDK
+
+### Especificación de la API PostWorkbooksMerge
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) define una interfaz de programación accesible públicamente y permite que la API realice interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos **cURL** para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube mediante cURL, incluyendo la cabecera de autenticación necesaria.
+
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/merge?mergeWith=test2.xlsx" -H "accept: application/json"
-
+```bash
+# Fusionar test2.xlsx en test.xlsx
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/merge?mergeWith=test2.xlsx" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access-token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Workbook": {
-
     "FileName": "test.xlsx",
-
     "Links": [
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As CSV",
-
+        "Title": "Descargar como CSV",
         "Type": "text/csv"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As HTML",
-
+        "Title": "Descargar como HTML",
         "Type": "text/html"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As ODS",
-
+        "Title": "Descargar como ODS",
         "Type": "application/vnd.oasis.opendocument.spreadsheet"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As PDF",
-
+        "Title": "Descargar como PDF",
         "Type": "application/pdf"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As Table Delimited Text Format",
-
+        "Title": "Descargar como formato de texto delimitado por tablas",
         "Type": "text/plain"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As TIFF",
-
+        "Title": "Descargar como TIFF",
         "Type": "image/tiff"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As Microsoft Excel 2003",
-
+        "Title": "Descargar como Microsoft Excel 2003",
         "Type": "application/vnd.ms-excel"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As Microsoft Excel 2007",
-
+        "Title": "Descargar como Microsoft Excel 2007",
         "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As XPS",
-
+        "Title": "Descargar como XPS",
         "Type": "application/vnd.ms-xpsdocument"
-
       }
-
     ],
-
     "Worksheets": {
-
       "link": {
-
         "Href": "/worksheets",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "DefaultStyle": {
-
       "link": {
-
         "Href": "/defaultstyle",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "DocumentProperties": {
-
       "link": {
-
         "Href": "/documentproperties",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "Names": {
-
       "link": {
-
         "Href": "/names",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "Settings": {
-
       "link": {
-
         "Href": "/settings",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "IsWriteProtected": "False",
-
     "IsProtected": "False",
-
     "IsEncryption": "false",
-
     "Password": null
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
-
-Response headers
-
-
 ```
+
+La respuesta devuelve un objeto `Workbook` que contiene metadatos sobre el libro fusionado, incluidos enlaces para descargar el resultado en varios formatos (CSV, PDF, HTML, etc.).
+
+Cabeceras de respuesta
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Familia de SDK en la nube
+### Utilizar los SDK de Aspose.Cells Cloud
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK abstracta los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante varios SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,122 +1,317 @@
-﻿---
-title: Supprimer
-type: docs
-url: /fr/comments/delete/
-aliases: [/delete-a-comment-in-a-worksheet/]
-keywords: REST API, spreadsheets, excel, delete a commen
-description: "Cells.Cloud API pour Excel fonctionne : supprimer un commentaire"
-weight: 40
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Supprimer
 ---
-Ce REST API indique Supprimer le commentaire de cellule de la feuille de calcul.
+title: "API de suppression de commentaire de feuille de calcul – Aspose.Cells Cloud"
+description: "Supprimez un commentaire cellulaire spécifique dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut l’endpoint, les paramètres, des exemples de requête/réponse, des extraits de code SDK et la gestion des erreurs."
+keywords: "Aspose.Cells, supprimer le commentaire, API Excel, REST, commentaire de feuille de calcul"
+date: "2026-07-30"
+lastModified: "2026-07-30"
+---
 
-## RSET API
+# API de suppression de commentaire de feuille de calcul – Aspose.Cells Cloud
+
+> **Dernière mise à jour de la page :** 30 juillet 2026  
+
+## Vue d’ensemble
+Un **commentaire** est une note textuelle attachée à une cellule spécifique dans une feuille de calcul Excel.  
+L’opération **Supprimer le commentaire de feuille de calcul** supprime un commentaire à partir de la cellule spécifiée.
+
+![Aspose.Cells Cloud – Illustration de la suppression de commentaire de feuille de calcul](/cells/images/Aspose-image-for-open-graph.jpg "Aspose.Cells Cloud – API de suppression de commentaire de feuille de calcul")
+
+## Authentification
+Tous les endpoints d’Aspose.Cells Cloud exigent une **authentification basée sur un jeton JWT**.  
+Incluez le jeton dans l’en-tête `Authorization` :
+
+```
+Authorization: Bearer <jeton jwt>
+```
+
+Pour plus de détails sur l’obtention d’un jeton JWT, consultez le [guide d’authentification](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## Conditions préalables
+- Un jeton d’accès JWT valide.  
+- Le classeur cible (`{name}`) doit exister à l’emplacement de stockage spécifié.  
+- Facultatif : l’un des SDK Aspose.Cells Cloud installés pour votre langage préféré.
+
+## Requête HTTP
+
+### Endpoint
+```
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
+```
+
+### Paramètres de chemin
+| Paramètre   | Type   | Obligatoire | Description |
+|-------------|--------|-------------|-------------|
+| `name`      | string | ✅ | Le nom du classeur Excel (par exemple, `test.xlsx`). |
+| `sheetName` | string | ✅ | Le nom de la feuille de calcul contenant le commentaire. |
+| `cellName`  | string | ✅ | L’adresse de la cellule dont le commentaire sera supprimé (par exemple, `A1`). |
+
+### Paramètres de requête
+| Paramètre     | Type   | Obligatoire | Description |
+|---------------|--------|-------------|-------------|
+| `folder`      | string | ❌ | Le chemin du dossier où le classeur est stocké. Si omis, le dossier racine est utilisé. |
+| `storageName` | string | ❌ | Le nom du service de stockage (par exemple, `MyCloud`). Si omis, le stockage par défaut est utilisé. |
+
+## Exemple de requête
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/A1?folder=Docs&storageName=MyStorage" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
-Les paramètres de la requête sont :
+## Réponse
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Le nom du document.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| nom de la cellule| chaîne| chemin| Le nom de la cellule|
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+### Succès (200)
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComment) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
-
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```java
-
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/A1" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```java
-
+```json
 {
-    "Code": 200,
-    "Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
-{{< /tab >}}
+**Codes de statut HTTP**
 
-{{< /tabs >}}
+| Code | Signification               | Description |
+|------|-----------------------------|-------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant. |
+| 413  | Charge utile trop grande      | Le fichier téléchargé dépasse la limite de taille. |
+| 500  | Erreur interne du serveur     | Erreur inattendue du serveur. |
 
-## Famille de SDK Cloud
+### Réponses d’erreur
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+| Code HTTP | Description | Exemple |
+|-----------|-------------|---------|
+| 400 | Requête incorrecte – paramètres manquants ou mal formés. | `{ "Code": 400, "Message": "Paramètres non valides." }` |
+| 401 | Non autorisé – jeton invalide ou manquant. | `{ "Code": 401, "Message": "Authentification requise." }` |
+| 404 | Non trouvé – le fichier, la feuille de calcul ou le commentaire n’existe pas. | `{ "Code": 404, "Message": "Ressource introuvable." }` |
+| 500 | Erreur interne du serveur – condition inattendue sur le serveur. | `{ "Code": 500, "Message": "Erreur serveur." }` |
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+## Exemples de SDK
+Ci-dessous figurent des extraits prêts à l’emploi pour les langages les plus populaires. Remplacez `<jeton jwt>`, `test.xlsx`, `Sheet1` et `A1` par vos propres valeurs.
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+### C#
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+using Aspose.Cells.Cloud.SDK.Client;
 
-{{< tab tabNum="1" >}}
+// Configuration du client API
+var config = new Configuration
+{
+    AccessToken = "<jeton jwt>",
+    BasePath = "https://api.aspose.cloud"
+};
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleDeleteWorksheetComment.cs" >}}
+var apiInstance = new WorksheetsApi(config);
+try
+{
+    var result = apiInstance.DeleteWorksheetComment(
+        name: "test.xlsx",
+        sheetName: "Sheet1",
+        cellName: "A1",
+        folder: "Docs",
+        storageName: "MyStorage"
+    );
+    Console.WriteLine("Commentaire supprimé. Statut : " + result.Status);
+}
+catch (Exception e)
+{
+    Console.WriteLine("Exception lors de l'appel à WorksheetsApi.DeleteWorksheetComment : " + e.Message);
+}
+```
 
-{{< /tab >}}
+### Java
+```java
+import com.aspose.cloud.cells.api.WorksheetsApi;
+import com.aspose.cloud.cells.client.ApiException;
+import com.aspose.cloud.cells.model.CellsCloudResponse;
 
-{{< tab tabNum="2" >}}
+public class DeleteWorksheetCommentExample {
+    public static void main(String[] args) {
+        WorksheetsApi api = new WorksheetsApi();
+        api.getApiClient().setAccessToken("<jeton jwt>");
+        try {
+            CellsCloudResponse response = api.deleteWorksheetComment(
+                "test.xlsx",
+                "Sheet1",
+                "A1",
+                "Docs",
+                "MyStorage"
+            );
+            System.out.println("Commentaire supprimé, statut : " + response.getStatus());
+        } catch (ApiException e) {
+            System.err.println("Exception lors de l'appel à WorksheetsApi#deleteWorksheetComment");
+            e.printStackTrace();
+        }
+    }
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_DeleteWorksheetComment.java" >}}
+### PHP
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
 
-{{< /tab >}}
+$config = new Aspose\Cells\Configuration();
+$config->setAccessToken('<jeton jwt>');
+$config->setHost('https://api.aspose.cloud');
 
-{{< tab tabNum="3" >}}
+$apiInstance = new Aspose\Cells\Api\WorksheetsApi(
+    new GuzzleHttp\Client(),
+    $config
+);
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_DeleteWorksheetComment.php" >}}
+try {
+    $result = $apiInstance->deleteWorksheetComment(
+        'test.xlsx',
+        'Sheet1',
+        'A1',
+        'Docs',
+        'MyStorage'
+    );
+    echo "Commentaire supprimé. Statut : " . $result->getStatus();
+} catch (Exception $e) {
+    echo 'Exception lors de l’appel à WorksheetsApi->deleteWorksheetComment : ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
 
-{{< /tab >}}
+### Ruby
+```ruby
+require 'aspose_cells_cloud'
 
-{{< tab tabNum="4" >}}
+config = AsposeCellsCloud::Configuration.new
+config.access_token = '<jeton jwt>'
+config.host = 'https://api.aspose.cloud'
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_DeleteWorksheetComment.rb" >}}
+api_instance = AsposeCellsCloud::WorksheetsApi.new
+begin
+  result = api_instance.delete_worksheet_comment('test.xlsx', 'Sheet1', 'A1', 'Docs', 'MyStorage')
+  puts "Commentaire supprimé – statut : #{result.status}"
+rescue AsposeCellsCloud::ApiError => e
+  puts "Exception lors de l’appel à WorksheetsApi->delete_worksheet_comment : #{e}"
+end
+```
 
-{{< /tab >}}
+### Node.js (TypeScript)
+```typescript
+import { WorksheetsApi, Configuration } from "@asposecloud/cells-cloud";
 
-{{< tab tabNum="5" >}}
+const config = new Configuration({
+    accessToken: "<jeton jwt>",
+    basePath: "https://api.aspose.cloud"
+});
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_DeleteWorksheetComment.ts" >}}
+const api = new WorksheetsApi(config);
 
-{{< /tab >}}
+api.deleteWorksheetComment("test.xlsx", "Sheet1", "A1", "Docs", "MyStorage")
+    .then((response) => {
+        console.log("Commentaire supprimé. Statut :", response.status);
+    })
+    .catch((error) => {
+        console.error("Erreur lors de la suppression du commentaire :", error);
+    });
+```
 
-{{< tab tabNum="6" >}}
+### Python
+```python
+from asposecellscloud.apis import WorksheetsApi
+from asposecellscloud import Configuration, ApiClient
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_DeleteWorksheetComment.py" >}}
+config = Configuration()
+config.access_token = "<jeton jwt>"
+config.host = "https://api.aspose.cloud"
 
-{{< /tab >}}
+api_client = ApiClient(configuration=config)
+api = WorksheetsApi(api_client)
 
-{{< tab tabNum="7" >}}
+try:
+    response = api.delete_worksheet_comment(
+        name="test.xlsx",
+        sheet_name="Sheet1",
+        cell_name="A1",
+        folder="Docs",
+        storage_name="MyStorage"
+    )
+    print("Commentaire supprimé. Statut :", response.status)
+except Exception as e:
+    print("Exception lors de l’appel à WorksheetsApi->delete_worksheet_comment :", e)
+```
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_DeleteWorksheetComment.pl" >}}
+### Perl
+```perl
+use AsposeCellsCloud::Api::WorksheetsApi;
+use AsposeCellsCloud::Configuration;
 
-{{< /tab >}}
+my $config = AsposeCellsCloud::Configuration->new(
+    access_token => '<jeton jwt>',
+    host => 'https://api.aspose.cloud'
+);
+my $api_instance = AsposeCellsCloud::Api::WorksheetsApi->new($config);
 
-{{< tab tabNum="8" >}}
+eval {
+    my $result = $api_instance->delete_worksheet_comment(
+        name        => 'test.xlsx',
+        sheet_name  => 'Sheet1',
+        cell_name   => 'A1',
+        folder      => 'Docs',
+        storage_name=> 'MyStorage'
+    );
+    print "Commentaire supprimé. Statut : " . $result->{status} . "\n";
+};
+if ($@) {
+    warn "Exception lors de l’appel à WorksheetsApi->delete_worksheet_comment : $@\n";
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_DeleteWorksheetComment.go" >}}
+### Go
+```go
+package main
 
-{{< /tab >}}
+import (
+    "fmt"
+    "github.com/asposecellscloud/aspose-cells-cloud-go/v3"
+    "github.com/asposecellscloud/aspose-cells-cloud-go/v3/api"
+    "github.com/asposecellscloud/aspose-cells-cloud-go/v3/config"
+)
 
-{{< /tabs >}}
+func main() {
+    cfg := config.NewConfiguration()
+    cfg.AccessToken = "<jeton jwt>"
+    cfg.Host = "https://api.aspose.cloud"
+
+    apiInstance := api.NewWorksheetsApi(cfg)
+
+    result, _, err := apiInstance.DeleteWorksheetComment(
+        "test.xlsx",   // name
+        "Sheet1",      // sheetName
+        "A1",          // cellName
+        "Docs",        // dossier (facultatif)
+        "MyStorage",   // storageName (facultatif)
+    )
+    if err != nil {
+        fmt.Printf("Erreur lors de l’appel à DeleteWorksheetComment : %v\n", err)
+        return
+    }
+    fmt.Printf("Commentaire supprimé. Statut : %s\n", result.Status)
+}
+```
+
+## Opérations connexes
+- [Ajouter un commentaire de feuille de calcul](/comments/add/)  
+- [Mettre à jour un commentaire de feuille de calcul](/comments/update/)  
+
+## Limitation de débit
+Aspose.Cells Cloud applique une **limite de débit par défaut de 100 requêtes par minute par compte**. Dépasser cette limite renvoie HTTP 429 Too Many Requests. Mettez en œuvre une backoff exponentielle ou respectez l’en-tête `Retry-After` pour éviter la limitation.
+
+## Voir aussi
+- **Spécification OpenAPI :** <https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComment>  
+- **Guide d’authentification :** <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>  
+- **Dépôt SDK :** <https://github.com/aspose-cells-cloud>  
+
+---

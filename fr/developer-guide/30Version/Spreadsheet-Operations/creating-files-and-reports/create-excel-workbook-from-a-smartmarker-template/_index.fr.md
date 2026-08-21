@@ -1,73 +1,145 @@
-﻿---
-title: Comment créer un rapport Excel avec un modèle de marqueur intelligent
-second_title: Documen
-linktitle: SmartMarke
-type: docs
-url: /fr/build-report-with-smart-marker/
-aliases: [/create-excel-workbook-from-a-smartmarker-template/,/workbook/smartmarker/,/workbook/create/smartmarker/]
-keywords: How to create an Excel workbook with a smart marker template
-description: Aspose.Cells Cloud REST API Comment créer un classeur Excel avec un modèle de marqueur intelligent. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 40
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Comment créer un classeur Excel avec un modèle de marqueur intelligent
 ---
-Ce REST API indique de créer `workbook` avec `smart marker`.
+title: "Créer des rapports Excel avec des modèles Smart Marker"
+second_title: "Document"
+linktitle: "SmartMarker"
+type: docs
+url: /build-report-with-smart-marker/
+aliases:
+  - /create-excel-workbook-from-a-smartmarker-template/
+  - /workbook/smartmarker/
+  - /workbook/create/smartmarker/
+keywords: "Excel, Smart Marker, Aspose.Cells Cloud, REST API, Classeur, SDK, API, Génération de rapports"
+description: "Découvrez comment générer des classeurs Excel à partir de modèles Smart Marker à l’aide de l’API REST Aspose.Cells Cloud. Inclut les détails de la requête/réponse, un exemple cURL, les conditions préalables, des notes et des exemples de code SDK."
+weight: 40
+ArticleTitle: "Créer des rapports Excel avec des modèles Smart Marker – Guide de l’API Aspose.Cells Cloud"
+---
 
-**Paramètre de requête**
+Cette API REST permet de créer un classeur à partir d’un modèle Smart Marker.
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|fichier xml|chaîne||
-|chemin de sortie|chaîne||
-|dossier|chaîne|Classeur original.|
-|nom de stockage|chaîne|Nom de stockage.|
+## API SmartMarker pour les classeurs
 
-**Paramètre du corps de la requête**
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/smartmarker
+```
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|fichier xml|déposer||
+### **Sécurité et authentification**
 
-## RESTE API
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification par jeton JWT</a>.
 
-|**API**|**Taper**|**Description**|**Lien Swagger**|
-|:- |:- |:- |:- |
-|/cellules/{nom}/smartmarker|POSTE|Créer un nouveau classeur Excel à partir d'un fichier modèle SmartMarker|[PostWorkbookGetSmartMarkerResult](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult)|
+### **Qu’est-ce qu’un Smart Marker ?**
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+Un Smart Marker est une syntaxe de placeholder qui fait correspondre des champs de données d’un fichier XML (ou JSON) à des cellules d’un modèle Excel. À l’exécution, Aspose.Cells remplace les marqueurs par les données correspondantes, ce qui permet de générer des rapports entièrement remplis de manière programmatique.
 
- Vous pouvez utiliser**cURL** Outil en ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le cloud API avec cURL.
+### **Paramètres de requête**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Nom du paramètre | Type   | Description                                                  |
+| ---------------- | ------ | ------------------------------------------------------------ |
+| outPath          | string | Chemin de destination où le classeur généré sera enregistré. |
+| folder           | string | Dossier contenant le classeur original.                      |
+| storageName      | string | Nom du service de stockage à utiliser.                       |
+
+### **Paramètre du corps de la requête**
+
+| Nom du paramètre | Type | Description                                           |
+| ---------------- | ---- | ----------------------------------------------------- |
+| xmlFile          | file | Fichier de données XML Smart Marker envoyé avec la requête. |
+
+### **Réponse**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**Notes / Limites :**  
+- L’API prend en charge les fichiers Excel d’une taille maximale de **50 Mo**.  
+- Les formats acceptés sont uniquement **.xlsx**, **.xlsm** et **.xlsb**.  
+- Une limite de débit de **20 requêtes par seconde** par compte est appliquée.
+
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                                    |
+| ---- | --------------------------- | -------------------------------------------------------------- |
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Mauvaise requête            | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant.                                |
+| 413  | Charge utile trop grande      | Le fichier téléchargé dépasse la limite de taille.            |
+| 500  | Erreur interne du serveur   | Erreur serveur inattendue.                                     |
+
+## Comment utiliser l’API SmartMarker pour les classeurs
+
+### Spécification de l’API SmartMarker pour les classeurs
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+### Utiliser les SDK Aspose.Cells Cloud
+
+Vous pouvez utiliser l’outil en ligne de commande **cURL** pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud avec cURL.
+
+**Exemple rapide en une seule ligne**
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/{name}/smartmarker?outPath={outPath}" -H "Authorization: Bearer {access_token}" -F "xmlFile=@Sample_SmartMarker_Data.xml"
+```
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/newworkbook_14.xlsx/smartmarker?xmlFile=Sample_SmartMarker_Data.xml" -H "accept: multipart/form-data" -H "x-aspose-client: Containerize.Swagger"
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/newworkbook_14.xlsx/smartmarker?outPath=GeneratedReport.xlsx" \
+    -H "accept: multipart/form-data" \
+    -H "x-aspose-client: Containerize.Swagger" \
+    -F "xmlFile=@Sample_SmartMarker_Data.xml"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
+```text
+HTTP/1.1 200 OK
+Content-Type: application/json
 
-HttpResponseMessage with the processing result in content.
-
+{
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### **Gestion des erreurs**
+
+| Code d’état HTTP | Description           | Cause typique                                              |
+| ---------------- | --------------------- | ---------------------------------------------------------- |
+| 400              | Mauvaise requête      | Modèle manquant, XML mal formé ou paramètres invalides.   |
+| 401              | Non autorisé          | Jeton d’authentification invalide ou manquant.             |
+| 404              | Non trouvé            | Le classeur ou l’emplacement de stockage spécifié n’existe pas. |
+| 500              | Erreur interne du serveur | Échec serveur inattendu.                                  |
+
+**Exemple de réponse d’erreur (400)**
+
+```json
+{
+  "Code": 400,
+  "Message": "Le fichier de données XML est manquant ou mal formé."
+}
+```
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+Utiliser un SDK est le meilleur moyen d’accélérer le développement. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

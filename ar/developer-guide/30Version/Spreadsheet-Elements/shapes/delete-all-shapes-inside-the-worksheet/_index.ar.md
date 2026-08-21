@@ -1,73 +1,75 @@
-﻿---
-title: حذف جميع الأشكال الموجودة في ورقة العمل Excel
-second_title: Documen
-linktitle: كليا
+---
+title: "حذف جميع الأشكال في ورقة عمل Excel"
+ArticleTitle: "حذف جميع الأشكال في ورقة عمل Excel – واجهة Aspose.Cells Cloud API"
+second_title: "وثيقة"
+linktitle: "مسح"
 type: docs
 url: /ar/shapes/clear/
-aliases: [/delete-all-shapes-inside-the-worksheet/]
-keywords: Delete all shapes on an Excel workshee
-description: يدعم Cloud REST حذف جميع الأشكال في ورقة عمل Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
+aliases: [/ar/delete-all-shapes-inside-the-worksheet/]
+keywords: "Aspose.Cells Cloud، حذف جميع الأشكال، ورقة عمل Excel، واجهة REST API، حزمة تطوير البرامج (SDK)، cURL، .NET، Java، PHP، Ruby، Node.js، Python، Perl، Go، Android، Swift"
+description: "احذف جميع الأشكال من ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. تتوفر هذه العملية عبر cURL ومجموعة واسعة من حزم تطوير البرامج (SDKs) (C#، Java، PHP، Ruby، Node.js، Python، Perl، Go، Android، Swift)."
 weight: 40
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حذف جميع الأشكال في ورقة عمل Excel
 ---
-يشير هذا REST API إلى حذف كافة الأشكال الموجودة في ورقة العمل Excel.
 
-## RSET API
+تحذف هذه الواجهة البرمجية (REST API) جميع الأشكال الموجودة في ورقة عمل Excel.
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
- 
+**المتطلبات المسبقة:** يلزم وجود رمز وصول JWT صالح. احصل عليه عبر تدفق Aspose Cloud OAuth2 وأدجه في رأس `Authorization` كما هو موضح في المثال التالي.
+
+## DeleteWorksheetShapes API
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المستند.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تتطلب واجهات Aspose.Cells Cloud API <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShapes) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **مُعاملات الطلب**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المُعامل      | النوع   | الموقع   | الوصف                                             |
+| ---------------- | ------- | -------- | -------------------------------------------------- |
+| name             | string  | path     | اسم ملف Excel.                                     |
+| sheetName        | string  | path     | اسم ورقة العمل.                                    |
+| folder           | string  | query    | المجلد الذي يحتوي على المستند.                     |
+| storageName      | string  | query    | اسم وحدة التخزين التي يوجد فيها المستند.            |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+يُعرّف <a href="https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShapes" rel="noopener noreferrer">مواصفة OpenAPI</a> واجهة برمجة تطبيقات عامة قابلة للوصول، وتمكّنك من إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إجراء استدعاء إلى واجهة Cloud API باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## عائلة حزم تطوير البرامج (SDKs) للسحابة
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام حزمة تطوير البرامج (SDK) هو أفضل طريقة لتسريع عملية التطوير. فتتولى حزمة التطوير إدارة التفاصيل من المستوى المنخفض، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم تطوير البرامج (SDKs) الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام حزم تطوير البرامج المختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

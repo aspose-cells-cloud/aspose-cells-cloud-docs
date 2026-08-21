@@ -1,79 +1,124 @@
-﻿---
-title: Esporta carattere
-second_title: Documen
-linktitle: Char
-type: docs
-url: /it/export-excel-chart-to-different-formats/
-aliases: [ /export/excel-chart-to-different-formats/]
-keywords: Export Excel chart to kinds of format files
-description: Aspose.Cells Cloud REST API supporta l'esportazione di grafici Excel in vari formati di file. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Esporta grafico
 ---
- È possibile esportare i formati:[PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/),  [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/), [PDF](https://docs.fileformat.com/pdf/).
+title: "Esporta grafico Excel"
+second_title: "Documento"
+linktype: "grafico"
+type: docs
+url: /export-excel-chart-to-different-formats/
+aliases: [/export/excel-chart-to-different-formats/]
+description: "Esporta oggetti grafico Excel in formati diffusi come PNG, JPEG, PDF, SVG, TIFF, EMF, WMF e altri utilizzando l'API REST Aspose.Cells Cloud o gli SDK. Include autenticazione, un esempio cURL e campioni di codice per diversi linguaggi."
+keywords: "Aspose.Cells, esportazione grafico, esportazione grafico Excel, API REST, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK, formati grafico, Aspose Cells Cloud"
+weight: 20
+ArticleTitle: "Esporta grafico Excel – Documento"
+---
 
-- **RIPOSO API**
+Esportare oggetti grafico da un foglio di calcolo Excel in vari formati immagine e documento è un requisito comune per la generazione di report e la pubblicazione. Aspose.Cells Cloud fornisce un semplice endpoint REST che converte direttamente i grafici in formati diffusi come PNG, JPEG, PDF, SVG, TIFF, EMF, WMF e altri.
 
-|**API**|**Tipo**|**Descrizione**|**Collegamento Swagger**|
-|:- |:- |:- |:- |
-|/cellule/esporta|INVIARE|Esporta Excel oggetti dal contenuto della richiesta in un formato|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+Puoi esportare i grafici nei seguenti formati: [PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/), e [PDF](https://docs.fileformat.com/pdf/).
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+**Prerequisiti:**  
+- Un account Aspose.Cells Cloud valido con un abbonamento attivo.  
+- Un token OAuth 2.0 Bearer (JWT) ottenuto tramite il flusso di autenticazione.  
+- Il file del foglio di calcolo da caricare (dimensione massima < 50 MB).  
 
- Puoi usare**cURL** Strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
-
-- **Richiesta**
+## **API REST**
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format=tiff" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
-- **Risposta**
+### **Sicurezza e autenticazione**
 
-```bash
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'[autenticazione basata su token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+### Parametri della richiesta
+
+| Nome parametro | Tipo   | Percorso/Query string/Corpo HTTP | Obbligatorio | Descrizione                                                                                                                     |
+|----------------|--------|----------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------|
+| file           | file   | formData                         | Sì           | File da caricare                                                                                                                  |
+| objectType     | string | query                            | Sì           | Il tipo di oggetto da esportare. Per l'esportazione di grafici usa `chart`. Altri valori possibili sono `worksheet`, `picture`, ecc.            |
+| format         | string | query                            | Sì           | Format di output desiderato. Valori supportati: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.                        |
+
+### **Risposta**
+
+```json
 {
-    "Files": [{
-        "Filename": "Book1_xlsx_Sheet4_Charts_0.tif",
-        "FileSize": 10040,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Charts_1.tif",
-        "FileSize": 12978,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Charts_2.tif",
-        "FileSize": 7002,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Charts_3.tif",
-        "FileSize": 11532,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Charts_0.tif",
-        "FileSize": 8270,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet3_Charts_0.tif",
-        "FileSize": 42570,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet3_Charts_1.tif",
-        "FileSize": 12102,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet3_Charts_2.tif",
-        "FileSize": 8290,
-        "FileContent": "-----Base64String--------"
-    }]
+  "Files": [
+    {
+      "Filename": "Book1_xlsx_Sheet4_Charts_0.tif",
+      "FileSize": 10040,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet4_Charts_1.tif",
+      "FileSize": 12978,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet4_Charts_2.tif",
+      "FileSize": 7002,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet4_Charts_3.tif",
+      "FileSize": 11532,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet6_Charts_0.tif",
+      "FileSize": 8270,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet3_Charts_0.tif",
+      "FileSize": 42570,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet3_Charts_1.tif",
+      "FileSize": 12102,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet3_Charts_2.tif",
+      "FileSize": 8290,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
-- **Famiglia Cloud SDK**
+**Codici di stato HTTP**
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+| Codice | Significato                     | Descrizione                                      |
+|--------|----------------------------------|--------------------------------------------------|
+| 200    | OK                               | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida             | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401    | Non autorizzato                  | Token JWT non valido o mancante. |
+| 413    | Payload troppo grande            | Il file caricato supera il limite di dimensione. |
+| 500    | Errore interno del server        | Errore imprevisto del server. |
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+## Come utilizzare l'API PostExport con gli SDK
+
+### Specifica dell'API PostExport
+
+La [specifica OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di effettuare direttamente interazioni REST da un browser web.
+
+Tutte le richieste devono includere un token OAuth 2.0 Bearer valido nell'intestazione `Authorization`. L'esempio seguente mostra come chiamare l'API con **cURL** e caricare un foglio di calcolo usando multipart/form‑data.
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format=tiff" \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Accept: multipart/form-data" \
+  -H "Content-Type: multipart/form-data" \
+  -H "x-aspose-client: Containerize.Swagger" \
+  -F "File=@/path/to/your/workbook.xlsx"
+```
+
+### Utilizzare gli SDK di Aspose.Cells Cloud
+
+L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello e ti permette di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come effettuare chiamate ai servizi web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -126,4 +171,3 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 
 {{< /tabs >}}
-

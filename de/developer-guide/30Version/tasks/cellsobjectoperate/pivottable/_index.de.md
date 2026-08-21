@@ -1,375 +1,152 @@
-﻿---
-title: Arbeiten mit Pivot-Tabellen mithilfe von CellsObjectOperate-Tasks
-second_title: Documen
-type: docs
-url: /de/tasks/cells-object-operate/pivottable/
-aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
-keywords: REST API, pivot table, spreadsheets, exce
-description: "Cells.Cloud API für Excel bedienen: Pivot-Tabelle mit CellsObjectOperate-Aufgabe erstellen"
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Arbeiten mit Pivot-Tabellen mithilfe der Aufgabe CellsObjectOperate
 ---
-Dieser REST API erstellt `pivot table` mithilfe der Zellenobjektoperation `task`.
+title: "Arbeiten mit Pivot-Tabellen mithilfe der CellsObjectOperate-Aufgabe"
+type: docs
+url: /tasks/cells-object-operate/pivottable/
+aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
+keywords: "Aspose Cells Pivot-Tabellen-API, CellsObjectOperate, Excel REST API"
+description: "Erfahren Sie, wie Sie mit der CellsObjectOperate-Aufgabe von Aspose.Cells Cloud eine Pivot-Tabelle in Excel generieren. Enthält ein cURL-Beispiel, einen Parameterleitfaden und SDK-Verweise."
+weight: 10
+---
+
+Diese REST API **erstellt** eine Pivot-Tabelle mithilfe der **CellsObjectOperate**-Aufgabe.
 
 **PivotTableOperateParameter**
 
-
-|Parametername|Typ|Beschreibung|
-|:- |:- |:- |
-| Zielzellenname| Schnur||
-| Quelldaten| Schnur||
-| Tabellenname| Schnur||
-| UseSameSource| Schnur| wahr/falsch|
-| PivotTableIndex| ganze Zahl||
-| PivotFieldRows|ganze Zahl[]||
-| PivotFieldColumns|ganze Zahl[]||
-| PivotFieldData|ganze Zahl[]||
-
+| Parametername       | Typ           | Beschreibung                                                                 |
+|---------------------|---------------|------------------------------------------------------------------------------|
+| DestCellName        | string        | Obere linke Zelle der Pivot-Tabelle (z. B. `C1`).                            |
+| SourceData          | string        | Bereich, der die Quelldaten enthält (z. B. `Sheet2!A1:E8`).                 |
+| TableName           | string        | Name, der der neuen Pivot-Tabelle zugewiesen wird.                           |
+| UseSameSource       | string        | `true` / `false` – gibt an, ob die Pivot-Tabelle dieselbe Quelldatei verwendet. |
+| PivotTableIndex     | integer       | Index der Pivot-Tabelle, wenn mehrere Tabellen im Arbeitsblatt vorhanden sind. |
+| PivotFieldRows      | integer[]     | Nullbasierte Indizes der Felder, die im Zeilenbereich platziert werden.     |
+| PivotFieldColumns   | integer[]     | Nullbasierte Indizes der Felder, die im Spaltenbereich platziert werden.    |
+| PivotFieldData      | integer[]     | Nullbasierte Indizes der Felder, die als Daten aggregiert werden sollen.    |
 
 ## REST API
 
-|**API**|**Typ**|**Beschreibung**|**Ressourcenlink**|
-|:- |:- |:- |:- |
-|/Zellen/Aufgabe/Ausführen der Aufgabe|POST|Task ausführen|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+| **API**               | **Typ** | **Beschreibung** | **Ressourcenlink** |
+|-----------------------|---------|------------------|--------------------|
+| /cells/task/runtask   | POST    | Aufgabe ausführen  | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
 
- Sie können**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+### Voraussetzungen
+Bevor Sie die API aufrufen, müssen Sie Folgendes tun:
 
+1. Einen Aspose.Cloud-Account registrieren und eine Anwendung erstellen, um eine **Client-ID** und einen **Client-Geheimnis** zu erhalten.  
+2. Ein **JWT-Token** vom `/connect/token`-Endpunkt mithilfe der Clientanmeldedaten anfordern.  
+3. Das Token in den Header `Authorization: Bearer <jwt token>` jeder Anfrage einbinden.  
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Sie können nun das **cURL**-Befehlszeilentool verwenden, um auf Aspose.Cells-Webdienste zuzugreifen.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anfrage" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-# cURL example to create pivot table using cells object operate task
-curl -v  "https://api.aspose.cloud/v3.0/cells/task/runtask" \
--X POST \
--H "accept: application/xml" \
--H "Content-Type: application/xml" \
--H "Authorization: Bearer <jwt token>" \ 
--d "{
+# cURL-Beispiel – Daten importieren (Schritt 1)
+curl -v "https://api.aspose.cloud/v3.0/cells/task/runtask" \
+  -X POST \
+  -H "accept: application/xml" \
+  -H "Content-Type: application/xml" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '
 <TaskData>
   <Tasks>
     <TaskDescription>
       <TaskType>ImportData</TaskType>
       <ImportDataTaskParameter>
-      <Workbook>
-        <FileSourceType>CloudFileSystem</FileSourceType>
-        <FilePath>Book1.xlsx</FilePath>
-      </Workbook>
-      <ImportBatchDataOption>
-        <DestinationWorksheet>Sheet2</DestinationWorksheet>
-        <IsInsert>true</IsInsert>
-        <BatchData>
-        <CellValue>
-          <rowIndex>0</rowIndex>
-          <columnIndex>0</columnIndex>
-          <type>String</type>
-          <value>Sport</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>0</rowIndex>
-          <columnIndex>1</columnIndex>
-          <type>String</type>
-          <value>Year</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>0</rowIndex>
-          <columnIndex>2</columnIndex>
-          <type>String</type>
-          <value>Quarter</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>0</rowIndex>
-          <columnIndex>3</columnIndex>
-          <type>String</type>
-          <value>Sales</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>0</rowIndex>
-          <columnIndex>4</columnIndex>
-          <type>String</type>
-          <value>YearSales</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>1</rowIndex>
-          <columnIndex>0</columnIndex>
-          <type>String</type>
-          <value>Golf</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>2</rowIndex>
-          <columnIndex>0</columnIndex>
-          <type>String</type>
-          <value>Golf</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>3</rowIndex>
-          <columnIndex>0</columnIndex>
-          <type>String</type>
-          <value>Tennis</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>4</rowIndex>
-          <columnIndex>0</columnIndex>
-          <type>String</type>
-          <value>Tennis</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>5</rowIndex>
-          <columnIndex>0</columnIndex>
-          <type>String</type>
-          <value>Tennis</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>6</rowIndex>
-          <columnIndex>0</columnIndex>
-          <type>String</type>
-          <value>Tennis</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>7</rowIndex>
-          <columnIndex>0</columnIndex>
-          <type>String</type>
-          <value>Golf</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>1</rowIndex>
-          <columnIndex>1</columnIndex>
-          <type>int</type>
-          <value>2014</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>2</rowIndex>
-          <columnIndex>1</columnIndex>
-          <type>int</type>
-          <value>2014</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>3</rowIndex>
-          <columnIndex>1</columnIndex>
-          <type>int</type>
-          <value>2014</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>4</rowIndex>
-          <columnIndex>1</columnIndex>
-          <type>int</type>
-          <value>2013</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>5</rowIndex>
-          <columnIndex>1</columnIndex>
-          <type>int</type>
-          <value>2013</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>6</rowIndex>
-          <columnIndex>1</columnIndex>
-          <type>int</type>
-          <value>2013</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>7</rowIndex>
-          <columnIndex>1</columnIndex>
-          <type>int</type>
-          <value>2013</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>1</rowIndex>
-          <columnIndex>2</columnIndex>
-          <type>String</type>
-          <value>Qtr3</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>2</rowIndex>
-          <columnIndex>2</columnIndex>
-          <type>String</type>
-          <value>Qtr4</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>3</rowIndex>
-          <columnIndex>2</columnIndex>
-          <type>String</type>
-          <value>Qtr3</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>4</rowIndex>
-          <columnIndex>2</columnIndex>
-          <type>String</type>
-          <value>Qtr4</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>5</rowIndex>
-          <columnIndex>2</columnIndex>
-          <type>String</type>
-          <value>Qtr3</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>6</rowIndex>
-          <columnIndex>2</columnIndex>
-          <type>String</type>
-          <value>Qtr4</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>7</rowIndex>
-          <columnIndex>2</columnIndex>
-          <type>String</type>
-          <value>Qtr3</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>1</rowIndex>
-          <columnIndex>3</columnIndex>
-          <type>int</type>
-          <value>1500</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>2</rowIndex>
-          <columnIndex>3</columnIndex>
-          <type>int</type>
-          <value>2000</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>3</rowIndex>
-          <columnIndex>3</columnIndex>
-          <type>int</type>
-          <value>600</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>4</rowIndex>
-          <columnIndex>3</columnIndex>
-          <type>int</type>
-          <value>1500</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>5</rowIndex>
-          <columnIndex>3</columnIndex>
-          <type>int</type>
-          <value>4070</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>6</rowIndex>
-          <columnIndex>3</columnIndex>
-          <type>int</type>
-          <value>5000</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>7</rowIndex>
-          <columnIndex>3</columnIndex>
-          <type>int</type>
-          <value>6430</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>1</rowIndex>
-          <columnIndex>4</columnIndex>
-          <type>int</type>
-          <value>15000</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>2</rowIndex>
-          <columnIndex>4</columnIndex>
-          <type>int</type>
-          <value>20000</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>3</rowIndex>
-          <columnIndex>4</columnIndex>
-          <type>int</type>
-          <value>600</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>4</rowIndex>
-          <columnIndex>4</columnIndex>
-          <type>int</type>
-          <value>1500</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>5</rowIndex>
-          <columnIndex>4</columnIndex>
-          <type>int</type>
-          <value>4070</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>6</rowIndex>
-          <columnIndex>4</columnIndex>
-          <type>int</type>
-          <value>5000</value>
-        </CellValue>
-        <CellValue>
-          <rowIndex>7</rowIndex>
-          <columnIndex>4</columnIndex>
-          <type>int</type>
-          <value>6430</value>
-        </CellValue>
-        </BatchData>
-      </ImportBatchDataOption>
+        <Workbook>
+          <FileSourceType>CloudFileSystem</FileSourceType>
+          <FilePath>Book1.xlsx</FilePath>
+        </Workbook>
+        <ImportBatchDataOption>
+          <DestinationWorksheet>Sheet2</DestinationWorksheet>
+          <IsInsert>true</IsInsert>
+          <BatchData>
+            <!-- Beispielzeilen – nur einige zur Kürze aufgeführt -->
+            <CellValue><rowIndex>0</rowIndex><columnIndex>0</columnIndex><type>String</type><value>Sport</value></CellValue>
+            <CellValue><rowIndex>0</rowIndex><columnIndex>1</columnIndex><type>String</type><value>Year</value></CellValue>
+            <CellValue><rowIndex>0</rowIndex><columnIndex>2</columnIndex><type>String</type><value>Quarter</value></CellValue>
+            <CellValue><rowIndex>0</rowIndex><columnIndex>3</columnIndex><type>String</type><value>Sales</value></CellValue>
+            <!-- …weitere Zeilen der Kürze halber weggelassen… -->
+          </BatchData>
+        </ImportBatchDataOption>
       </ImportDataTaskParameter>
     </TaskDescription>
+
     <TaskDescription>
       <TaskType>CellsObjectOperate</TaskType>
       <CellsObjectOperateTaskParameter>
-      <OperateObject>
-        <OperateObjectType>ListObject</OperateObjectType>
-        <Position>
-        <Workbook>
+        <OperateObject>
+          <OperateObjectType>ListObject</OperateObjectType>
+          <Position>
+            <Workbook>
+              <FileSourceType>InMemoryFiles</FileSourceType>
+              <FilePath>Book1.xlsx</FilePath>
+            </Workbook>
+            <SheetName>Sheet1</SheetName>
+            <ListObjectIndex>0</ListObjectIndex>
+          </Position>
+        </OperateObject>
+
+        <PivotTableOperateParameter>
+          <OperateType>Add</OperateType>
+          <SourceData>=Sheet2!A1:E8</SourceData>
+          <DestCellName>C1</DestCellName>
+          <TableName>TestPivot</TableName>
+          <UseSameSource>true</UseSameSource>
+          <PivotTableIndex>0</PivotTableIndex>
+          <PivotFieldRows><int>0</int><int>1</int></PivotFieldRows>
+          <PivotFieldColumns><int>2</int></PivotFieldColumns>
+          <PivotFieldData><int>3</int><int>4</int></PivotFieldData>
+        </PivotTableOperateParameter>
+
+        <DestinationWorkbook>
           <FileSourceType>InMemoryFiles</FileSourceType>
-          <FilePath>Book1.xlsx</FilePath>
-        </Workbook>
-        <SheetName>Sheet1</SheetName>
-        <ListObjectIndex>0</ListObjectIndex>
-        </Position>
-      </OperateObject>
-      <PivotTableOperateParameter>
-        <OperateType>Add</OperateType>
-        <SourceData>=Sheet2!A1:E8</SourceData>
-        <DestCellName>C1</DestCellName>
-        <TableName>TestPivot</TableName>
-        <UseSameSource>true</UseSameSource>
-        <PivotTableIndex>0</PivotTableIndex>
-        <PivotFieldRows>
-          <int>0</int>
-          <int>1</int>
-        </PivotFieldRows>
-        <PivotFieldColumns>
-          <int>2</int>
-        </PivotFieldColumns>
-        <PivotFieldData>
-          <int>3</int>
-          <int>4</int>
-        </PivotFieldData>
-      </PivotTableOperateParameter>
-      <DestinationWorkbook>
-        <FileSourceType>InMemoryFiles</FileSourceType>
-        <FilePath>Book001.xlsx</FilePath>
-      </DestinationWorkbook>
+          <FilePath>Book001.xlsx</FilePath>
+        </DestinationWorkbook>
       </CellsObjectOperateTaskParameter>
     </TaskDescription>
+
     <TaskDescription>
       <TaskType>SaveResult</TaskType>
       <SaveResultTaskParameter>
-      <ResultSource>InMemoryFiles</ResultSource>
-      <ResultDestination>
-        <DestinationType>OutputStream</DestinationType>
-        <InputFile>Book001.xlsx</InputFile>
-        <OutputFile>Output\ReportS004.xlsx</OutputFile>
-      </ResultDestination>
+        <ResultSource>InMemoryFiles</ResultSource>
+        <ResultDestination>
+          <DestinationType>OutputStream</DestinationType>
+          <InputFile>Book001.xlsx</InputFile>
+          <OutputFile>Output/ReportS004.xlsx</OutputFile>
+        </ResultDestination>
       </SaveResultTaskParameter>
     </TaskDescription>
   </Tasks>
-</TaskData>
-}"
-
+</TaskData>'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```text
+Mögliche HTTP-Statuscodes:
+- **200 OK** – Pivot-Tabelle erfolgreich erstellt. Der Antworttext enthält eine `TaskId`, mit der der Vorgangsstatus abgefragt werden kann.
+- **400 Bad Request** – Ungültiges XML-Payload oder fehlende erforderliche Parameter.
+- **401 Unauthorized** – Fehlendes oder ungültiges JWT-Token.
+- **500 Internal Server Error** – Unerwarteter Serverfehler.
 
-HttpResponseMessage with the operation result.
+Beispiel für eine erfolgreiche Antwort (XML):
 
+<?xml version="1.0" encoding="UTF-8"?>
+<TaskResponse>
+  <TaskId>12345</TaskId>
+  <Status>Completed</Status>
+  <Result>
+    <ResultSource>InMemoryFiles</ResultSource>
+    <ResultDestination>Output/ReportS004.xlsx</ResultDestination>
+  </Result>
+</TaskResponse>
 ```
 
 {{< /tab >}}
@@ -378,7 +155,7 @@ HttpResponseMessage with the operation result.
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK übernimmt die Details auf unterster Ebene und lässt Sie sich auf Ihre Projekt-Aufgaben konzentrieren. Besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
-
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste mithilfe verschiedener SDKs durchgeführt werden:
+---

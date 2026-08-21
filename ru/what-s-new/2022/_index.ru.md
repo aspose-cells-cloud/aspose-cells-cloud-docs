@@ -1,64 +1,65 @@
-﻿---
+---
 title: Что нового в Aspose.Cells Cloud в 2022 году
-second_title: Latest Updates & Feature
-linktitle: Что нового в 202
+second_title: "Документ"
+linktitle: "Что нового в 2022 году"
 type: docs
 weight: 90
-url: /ru/new-features/2023/
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: На этой странице описываются наиболее интересные новые функции Aspose.Cells Cloud, представленные в последних выпусках.
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Что нового в Aspose.Cells Cloud
+url: /new-features/2023/
+keywords: "Что нового в Aspose.Cells Cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF."
+description: "На этой странице описаны наиболее интересные новые функции Aspose.Cells Cloud, представленные в последних выпусках."
+kwords: Excel, Office Cloud, REST API, Таблицы, PDF, CSV, Json, Markdown, Что нового в Aspose.Cells Cloud
 ---
-Знакомьтесь с новинками в облачных документах Aspose.Cells. Используйте эту страницу для быстрого поиска последних изменений.
 
-## Aspose.Cells Облако 22.12
+Добро пожаловать в документацию «Что нового в Aspose.Cells Cloud». Используйте эту страницу, чтобы быстро найти последние изменения.
 
-- Поддержка работы осей диаграммы.
+## Aspose.Cells Cloud 22.12
 
-## Aspose.Cells Облако 22.11
+- Поддержка операций с осями диаграмм.
 
-- Добавить новый API для преобразования в JSON.
-- Добавить новый API для преобразования в SQL.
-- Добавить новый API для конвертации в CVS.
+## Aspose.Cells Cloud 22.11
 
-## Aspose.Cells Облако 22.10
+- Добавлен новый API для преобразования в JSON.
+- Добавлен новый API для преобразования в SQL.
+- Добавлен новый API для преобразования в CSV.
 
-- Добавить новый API для конвертации в pptx.
-- Добавить новый API для конвертации в разметку.
-- Добавить новый API для конвертации в html.
+## Aspose.Cells Cloud 22.10
 
-## Aspose.Cells Облако 22.9
+- Добавлен новый API для преобразования в PPTX.
+- Добавлен новый API для преобразования в Markdown.
+- Добавлен новый API для преобразования в HTML.
 
-- Поддержка экспорта страницы в файл другого формата.
-- Добавить новый API для конвертации в PDF.
-- Добавить новый API для конвертации в png.
-- Добавить новый API для конвертации в docx.
+## Aspose.Cells Cloud 22.9
 
-## Aspose.Cells Облако 22.8
+- Поддержка экспорта страницы в файлы других форматов.
+- Добавлен новый API для преобразования в PDF.
+- Добавлен новый API для преобразования в PNG.
+- Добавлен новый API для преобразования в DOCX.
 
-- Поддержка транспонирования Excel строк в столбцы.
+## Aspose.Cells Cloud 22.8
 
-## Aspose.Cells Облако 22.7
+- Поддержка транспонирования строк Excel в столбцы.
 
-- Улучшение Сохранить API на облачных сервисах ячеек (добавлено четыре варианта сохранения).
-- Оптимизированный LightCellsController в облаке ячеек.
+## Aspose.Cells Cloud 22.7
 
-## Aspose.Cells Облако 22.6
+- Улучшение API сохранения в облачных сервисах Cells (добавлено четыре параметра сохранения).
+- Оптимизация LightCellsController в облачных сервисах Cells.
 
-- [Улучшение для Cells Cloud API.](/cells/ru/aspose-cells-cloud-22-6-release-notes/)
-- Поддержка конвертации файлов в zip-архиве в различные форматы.
+## Aspose.Cells Cloud 22.6
 
-## Aspose.Cells Облако 22.5
+- [Улучшения API облачных сервисов Cells.](/cells/aspose-cells-cloud-22-6-release-notes/)
+- Поддержка преобразования файлов, упакованных в ZIP, в различные форматы.
 
-- [Улучшение для экспорта API.](https://docs.aspose.cloud/cells/export/)
-- [Улучшение для чистого API.](https://docs.aspose.cloud/cells/clear/)
+## Aspose.Cells Cloud 22.5
 
-## Aspose.Cells Облако 22.4
+- [Улучшения API экспорта.](https://docs.aspose.cloud/cells/export/)
+- [Улучшения API очистки.](https://docs.aspose.cloud/cells/clear/)
+
+## Aspose.Cells Cloud 22.4
 
 - Исправлено несколько ошибок.
-- [Улучшение пользовательского интерфейса Swagger.](https://apireference.aspose.cloud/cells/)
+- [Улучшения Swagger UI.](https://apireference.aspose.cloud/cells/)
 
-## Aspose.Cells Облако 22.3
+## Aspose.Cells Cloud 22.3
 
-- [Добавлен новый API о создании спецификации кодогенерации.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
-- [Поддержка добавления цифровой подписи для облака Aspose.Cells.](/cells/ru/workbook/digital-signature/)
+- [Добавлен новый API для генерации спецификации codegen.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
+- [Поддержка добавления цифровой подписи в Aspose.Cells Cloud.](/cells/workbook/digital-signature/)

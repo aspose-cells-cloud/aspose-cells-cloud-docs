@@ -1,75 +1,80 @@
-﻿---
-title: Dölj kolumner i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Gömd
-type: docs
-url: /sv/columns/hide/
-aliases: [/hide-columns-in-excel-worksheet/,/hide-columns-in-an-excel-worksheet/]
-keywords: Hide column on an Excel workshee
-description: Aspose.Cells Cloud REST API stöder döljning av kolumner på ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 40
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Dölj kolumner i ett Excel-kalkylblad
 ---
-Denna REST API indikerar att dölja kalkylbladskolumner.
+title: "Dölj kolumner i ett Excel-arbetsark"
+second_title: "Dokument"
+linktitle: "Dölj"
+type: docs
+url: /columns/hide/
+aliases:
+  - /hide-columns-in-excel-worksheet/
+  - /hide-columns-in-an-excel-worksheet/
+keywords: "Aspose.Cells Cloud, API för att dölja kolumner, Excel-kolumndöljning, REST API för att dölja kolumner, Aspose.Cells SDK, kalkylarkautomation"
+description: "Lär dig hur du döljer en eller flera kolumner i ett Excel-arbetsark med Aspose.Cells Cloud REST API (v3.0). Innehåller slutpunkt, parametrar, cURL-exempel, SDK-kodexempel och felhantering."
+weight: 40
+---
 
-## RSET API
+Denna REST API döljer kolumner i ett arbetsark.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
 ```
 
-Begäranparametrarna är:
+### Begäranparametrar
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| startkolumn| heltal| fråga| Börjkolumnindexet som ska användas.|
-| totalaKolumner| heltal| fråga| Antal kolumner som ska användas.|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parametername | Typ     | Plats  | Beskrivning                                                                 |
+| ------------- | ------- | ------ | --------------------------------------------------------------------------- |
+| name          | string  | path   | Namnet på arbetsboksfilen.                                                  |
+| sheetName     | string  | path   | Namnet på arbetsarket där kolumner kommer att döljas.                      |
+| startColumn   | integer | query  | Nollbaserat index för den första kolumnen som ska döljas.                  |
+| totalColumns  | integer | query  | Antal på varandra följande kolumner som ska döljas, börjande från **startColumn**. |
+| folder        | string  | query  | Sökvägen till mappen som innehåller arbetsboken.                           |
+| storageName   | string  | query  | Namnet på lagringstjänsten där filen finns.                                |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) definierar ett offentligt tillgängligt programmeringsgränssnitt och möjliggör REST-interaktioner direkt från en webbläsare.
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
+Du kan använda kommandoradsverktyget **cURL** för enkelt att anropa Aspose.Cells-webbtjänster. Exempel nedan visar hur man döljer en kolumn med cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
- curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/hide?startColumn=1&totalColumns=1" -H "accept: application/json"
-
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/hide?startColumn=1&totalColumns=1" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
+
+**Möjliga svarskoder**
+
+| HTTP-kod | Betydelse                              | Exempel JSON (fel)                                    |
+| -------- | -------------------------------------- | ----------------------------------------------------- |
+| 200      | Lyckades                               | `{ "Code": 200, "Status": "OK" }`                     |
+| 400      | Felaktig begäran (t.ex. ogiltiga parametrar) | `{ "Code": 400, "Message": "Ogiltigt kolumnområde." }` |
+| 401      | Otillåten (saknas/ogiltigt token)      | `{ "Code": 401, "Message": "Ogiltig åtkomsttoken." }` |
+| 404      | Hittades inte (arbetsbok eller arbetsark) | `{ "Code": 404, "Message": "Filen hittades inte." }`   |
+| 500      | Internt serverfel                      | `{ "Code": 500, "Message": "Oväntat fel." }`          |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## familj av moln-SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK abstraher bort detaljer på låg nivå så att du kan fokusera på din affärslogik. Kontrollera [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

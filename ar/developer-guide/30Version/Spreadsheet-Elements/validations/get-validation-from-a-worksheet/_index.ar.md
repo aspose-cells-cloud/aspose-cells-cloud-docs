@@ -1,131 +1,122 @@
-﻿---
-title: احصل على التحقق من صحة ورقة العمل عن طريق الفهرس من ورقة عمل Excel
-second_title: Documen
-linktitle: جي
-type: docs
-url: /ar/validations/get/
-aliases: [/get-validation-from-a-worksheet/]
-keywords: Get a worksheet validation by index from an Excel worksheet
-description: يدعم Cloud REST Aspose.Cells التحقق من صحة ورقة العمل من خلال الفهرس من ورقة عمل Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 10
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، احصل على التحقق من صحة ورقة العمل عن طريق الفهرس من ورقة عمل Excel
 ---
-يشير هذا REST API إلى الحصول على التحقق من صحة ورقة العمل عن طريق الفهرس على ورقة العمل Excel.
+title: "الحصول على تحقق من صحة ورقة عمل باستخدام الفهرس من ورقة عمل إكسل"
+second_title: "Document"
+linktitle: "الحصول على"
+type: docs
+url: /validations/get/
+aliases: [/get-validation-from-a-worksheet/]
+keywords: "Aspose.Cells Cloud, واجهة برمجة تطبيقات التحقق من صحة ورقة العمل, الحصول على التحقق باستخدام الفهرس, واجهة برمجة تطبيقات إكسل عبر REST, Aspose.Cells SDK"
+description: "استرجاع التحقق من صحة ورقة عمل باستخدام فهرسه الصفري (zero‑based) من ملف إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0). يتضمن مثالًا باستخدام cURL، ومخطط الاستجابة، وأكواد الأخطاء، وأجزاء أكواد SDK بلغات C# وJava وPython وغيرهم."
+weight: 10
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية لواجهة برمجة تطبيقات REST باسترجاع التحقق من صحة ورقة العمل باستخدام فهرسه من ورقة عمل إكسل.  
+قبل استدعاء نقطة النهاية (endpoint)، يجب الحصول على رمز JWT عبر نقطة النهاية `/connect/token`، ثم تضمينه في رأس الطلب `Authorization` على الشكل `Bearer <jwt token>`.
+
+## واجهة برمجة تطبيقات REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
-معلمات الطلب هي:
+### **معلمات الطلب**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مؤشر التحقق| عدد صحيح| طريق| مؤشر التحقق.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعلمة    | النوع    | الموقع  | الوصف                                                     |
+| --------------- | ------- | -------- | ---------------------------------------------------------- |
+| name            | string  | path     | اسم ملف المصنف (workbook).                               |
+| sheetName       | string  | path     | اسم ورقة العمل.                                           |
+| validationIndex | integer | path     | الفهرس الصفري (zero‑based) للتحقق المراد استرجاعه.       |
+| folder          | string  | query    | المجلد الذي يحتوي على المصنف.                            |
+| storageName     | string  | query    | اسم خدمة التخزين.                                         |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidation) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidation) واجهة برمجة مفتوحة للبرمجة متاحة عمومًا، ويسمح لك بإجراء تفاعلات REST مباشرة من متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية استدعاء الواجهة باستخدام cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Validation": {
-
     "AlertStyle": "Stop",
-
     "AreaList": [
-
       {
-
         "EndColumn": 0,
-
         "EndRow": 0,
-
         "StartColumn": 0,
-
         "StartRow": 0
-
       },
-
       {
-
         "EndColumn": 27,
-
         "EndRow": 0,
-
         "StartColumn": 26,
-
         "StartRow": 0
-
       }
-
     ],
-
     "IgnoreBlank": false,
-
     "InCellDropDown": false,
-
     "Operator": "None",
-
     "ShowError": false,
-
     "ShowInput": false,
-
     "Type": "AnyValue",
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/Validations/0",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/Validations/0",
       "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+**مخطط الاستجابة**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| الحقل           | النوع    | الوصف                                                                 |
+| --------------- | ------- | ---------------------------------------------------------------------- |
+| AlertStyle      | string  | أسلوب التنبيه المعروض للمستخدم (Stop, Warning, Information).           |
+| AreaList        | array   | مجموعة من نطاقات الخلايا التي يسري عليها التحقق.                      |
+| IgnoreBlank     | boolean | إذا كانت `true`، تُتجاهل الخلايا الفارغة أثناء التحقق.                 |
+| InCellDropDown  | boolean | إذا كانت `true`، يُعرض قائمة منسدلة داخل الخلية.                      |
+| Operator        | string  | عامل المقارنة المستخدم في التحقق (مثل `None`, `Between`).             |
+| ShowError       | boolean | يحدد ما إذا كان سيتم عرض رسالة خطأ عند فشل التحقق.                    |
+| ShowInput       | boolean | يحدد ما إذا كان سيتم عرض رسالة إدخال عند تحديد الخلية.               |
+| Type            | string  | نوع التحقق (مثل `AnyValue`, `WholeNumber`, `Decimal`, إلخ).           |
+| link.Href       | string  | عنوان URL المرجعي الذاتي للمورد الخاص بالتحقق.                         |
+| link.Rel        | string  | نوع العلاقة (دائمًا `self`).                                           |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+**أكواد الأخطاء الممكنة**
+
+| الحالة HTTP | المعنى                                                                   |
+| ----------- | ------------------------------------------------------------------------ |
+| 200         | تم استرجاع التحقق بنجاح.                                                 |
+| 400         | طلب غير صالح – معلمات مفقودة أو غير صحيحة.                              |
+| 401         | غير مُصادَق – رمز JWT غير صالح أو مفقود.                                |
+| 404         | غير موجود – المصنف أو ورقة العمل أو فهرس التحقق غير موجود.              |
+| 500         | خطأ داخلي في الخادم – حالة غير متوقعة.                                 |
+
+## مجموعة أدوات SDK للحوسبة السحابية
+
+استخدام حزمة تطوير البرامج (SDK) هي أسرع طريقة لتطوير تطبيقات متوافقة مع Aspose.Cells Cloud. فحزمة SDK تُجرّدك من التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على منطق أعمالك. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم SDK الخاصة بـ Aspose.Cells Cloud.
+
+توضح الأمثلة التالية كيفية استدعاء خدمات Aspose.Cells باستخدام حزم SDK المختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

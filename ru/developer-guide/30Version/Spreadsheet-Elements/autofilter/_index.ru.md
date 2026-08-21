@@ -1,101 +1,84 @@
-﻿---
-title: Работа с Excel AutoFilte
-second_title: Documen
-linktitle: Автофильтр
-type: docs
-url: /ru/autofilter/
-aliases: [/working-with-autofilter/]
-keywords: Get, add, delete, and so on for auto filter on an Excel worksheet
-description: Облачные API Aspose.Cells поддерживают автоматическую фильтрацию данных на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 100
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Автофильтр
 ---
-Автофильтр — это самый быстрый способ выбрать только те элементы рабочего листа, которые вы хотите отобразить в списке. Функция автофильтра позволяет пользователям фильтровать элементы списка по заданным критериям. Фильтрация по тексту, числам или датам.
+title: "Работа с автофильтром Excel"
+second_title: "Документ"
+linktype: "AutoFilter"
+type: docs
+url: /autofilter/
+aliases: [/working-with-autofilter/]
+keywords: "Автофильтр, Aspose.Cells Cloud, фильтр Excel, цветовой фильтр, фильтр по дате, динамический фильтр, числовой фильтр, текстовый фильтр, фильтр пустых значений, пользовательский фильтр"
+description: "Узнайте, как добавлять, редактировать и удалять автофильтры Excel (цветовой, по дате, динамический, числовой, текстовый, пустых значений) с помощью API Aspose.Cells Cloud. Примеры кода на множестве языков."
+weight: 100
+ArticleTitle: "Работа с автофильтром Excel – документация Aspose.Cells Cloud"
+---
+
+Автофильтр — это самый быстрый способ отобразить только те элементы, которые вам нужны, на листе. Функция автофильтра позволяет пользователям фильтровать список на основе заданных критериев — по тексту, числам или датам.
 
 **Различные типы фильтров**
 
-Aspose.Cells Cloud предоставляет несколько API для применения различных типов фильтров, таких как фильтр по цвету, фильтр по дате, фильтр по числу, текстовый фильтр, пустые фильтры и непустые фильтры.
+Aspose.Cells Cloud предоставляет множество API для применения различных типов фильтров, таких как цветовой фильтр, фильтр по дате, числовой фильтр, текстовый фильтр, фильтр пустых значений и фильтр непустых значений.
 
 <table class="table table-striped">
   <tr>
-  <td class="col-md-2"> <li>Цвет заливки</li> </td>
-  <td class="col-md-10">
-  <p>Aspose.Cells Облачные услуги
- <a href="/cells/ru/autofilter/add-color-filter/">API фильтра добавления цвета заливки</a>
-для фильтрации данных на основе свойства цвета заливки ячеек.</p>
-  </td>
+    <td class="col-md-2"><strong>Цвет заливки</strong></td>
+    <td class="col-md-10">
+      <p>Aspose.Cells Cloud предоставляет <a href="/cells/autofilter/add-color-filter/">API добавления цветового фильтра по заливке</a> для фильтрации данных на основе свойства цвета заливки ячеек.</p>
+    </td>
   </tr>
   <tr>
-    <td class="col-md-2"> <li>Дата</li> </td>
-  <td class="col-md-10">
-  <p>
- Можно реализовать различные типы фильтров дат, например, отфильтровать все строки, содержащие даты в январе 2018 года.<a href="/cells/ru/autofilter/add-date-filter/">API добавить дату цветового фильтра</a> может реализовать эту функциональность.
-</p>
-  </td>
+    <td class="col-md-2"><strong>Дата</strong></td>
+    <td class="col-md-10">
+      <p>Можно применять различные фильтры по дате, например, фильтровать строки, содержащие даты января 2018 года. Используйте <a href="/cells/autofilter/add-date-filter/">API добавления фильтра по дате</a> для добавления фильтра по дате.</p>
+    </td>
   </tr>
-    <tr>
-    <td class="col-md-2"> <li>Динамическая дата</li> </td>
-  <td class="col-md-10">
-  <p>
- Иногда требуются динамические фильтры на основе даты, например, все ячейки имеют даты в январе, независимо от года.<a href="/cells/ru/autofilter/add-dynamic-filter/">API динамического фильтра</a>  
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Динамическая дата</strong></td>
+    <td class="col-md-10">
+      <p>Динамические фильтры по дате позволяют фильтровать ячейки, относящиеся к определённому месяцу, независимо от года (например, все даты января). Подробнее см. в <a href="/cells/autofilter/add-dynamic-filter/">API динамического фильтра</a>.</p>
+    </td>
   </tr>
-      <tr>
-    <td class="col-md-2"> <li>Число</li> </td>
-  <td class="col-md-10">
-  <p>
-<a href="/cells/ru/autofilter/add-filter/">Пользовательские фильтры API</a> можно применять с использованием Aspose.Cells, например, для выбора ячеек, имеющих числа в заданном диапазоне.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Число</strong></td>
+    <td class="col-md-10">
+      <p><a href="/cells/autofilter/add-filter/">API пользовательских фильтров</a> позволяет фильтровать ячейки, числовые значения которых попадают в заданный диапазон.</p>
+    </td>
   </tr>
-        <tr>
-    <td class="col-md-2"> <li>Текст</li> </td>
-  <td class="col-md-10">
-  <p>
- Если столбец содержит текст и необходимо выбрать ячейки, содержащие определенный текст,<a href="/cells/ru/autofilter/add-filter/"> Фильтр добавления API</a> можно использовать.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Текст</strong></td>
+    <td class="col-md-10">
+      <p>Если столбец содержит текст, вы можете выбрать ячейки, содержащие определённую подстроку, с помощью <a href="/cells/autofilter/add-filter/">API добавления фильтра</a>.</p>
+    </td>
   </tr>
-          <tr>
-    <td class="col-md-2"> <li>Бланки</li> </td>
-  <td class="col-md-10">
-  <p>
-
- Если столбец содержит текст, в котором мало пустых ячеек, и требуется фильтр для выбора только тех строк, в которых присутствуют пустые ячейки,<a href="/cells/ru/autofilter/match-all-blank/"> Совпадение всех пустых ячеек API</a> можно использовать
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Пустые значения</strong></td>
+    <td class="col-md-10">
+      <p>Для получения строк, в которых столбец пуст, используйте <a href="/cells/autofilter/match-all-blank/">API сопоставления всех пустых ячеек</a>.</p>
+    </td>
   </tr>
-            <tr>
-    <td class="col-md-2"> <li>Не пустые</li> </td>
-  <td class="col-md-10">
-  <p>
-
- Когда необходимо отфильтровать ячейки, содержащие текст,<a href="/cells/ru/autofilter/match-all-blank/"> Совпадение всех пустых ячеек API</a> можно использовать
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Непустые значения</strong></td>
+    <td class="col-md-10">
+      <p>Для фильтрации строк, в которых столбец содержит любые непустые значения, используйте <a href="/cells/autofilter/match-all-non-blank/">API сопоставления всех непустых ячеек</a>.</p>
+    </td>
   </tr>
-              <tr>
-    <td class="col-md-2"> <li>Пользовательский фильтр</li> </td>
-  <td class="col-md-10">
-  <p>
- Aspose.Cells Облачные услуги<a href="/cells/ru/autofilter/add-dynamic-filter/"> пользовательские фильтры API</a> как строки фильтра, содержащие некоторую конкретную строку, и строки фильтра, которые начинаются или заканчиваются некоторой конкретной строкой.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Пользовательский фильтр</strong></td>
+    <td class="col-md-10">
+      <p>Aspose.Cells Cloud предоставляет <a href="/cells/autofilter/add-custom-filter/">API пользовательских фильтров</a> для решения сложных задач, например, фильтрации строк, содержащих определённую подстроку или начинающихся/заканчивающихся на определённую строку.</p>
+    </td>
   </tr>
 </table>
 
-**Автоматическая фильтрация данных**
+**Операции с автофильтром**
 
-- [Как добавить цветовой фильтр на лист Excel.](/cells/ru/autofilter/add-color-filter/)
-- [Как добавить пользовательский фильтр на лист Excel.](/cells/ru/autofilter/add-custom-filter/)
-- [Как добавить фильтр по дате на лист Excel.](/cells/ru/autofilter/add-date-filter/)
-- [Как добавить динамический фильтр на лист Excel.](/cells/ru/autofilter/add-dynamic-filter/)
-- [Как добавить фильтр на лист Excel.](/cells/ru/autofilter/add-filter/)
-- [Как добавить фильтр значков на лист Excel.](/cells/ru/autofilter/add-icon-filter/)
-- [Как удалить фильтр по дате на листе Excel.](/cells/ru/autofilter/delete-a-date-filter/)
-- [Как удалить фильтр на листе Excel.](/cells/ru/delete-filter/)
-- [Как получить описание автофильтра из рабочего листа Excel.](/cells/ru/autofilter/get/)
-- [Как сопоставить все пробелы на листе Excel.](/cells/ru/autofilter/match-all-blank/)
-- [Как сопоставить все непустые ячейки на листе Excel.](/cells/ru/autofilter/match-all-non-blank/)
-- [Как обновить автофильтр на листе Excel.](/cells/ru/autofilter/refresh/)
+- [Как добавить цветовой фильтр на лист Excel](/cells/autofilter/add-color-filter/) — **Метод:** POST, **Конечная точка:** `/cells/autofilter/add-color-filter/`
+- [Как добавить пользовательский фильтр на лист Excel](/cells/autofilter/add-custom-filter/) — **Метод:** POST, **Конечная точка:** `/cells/autofilter/add-custom-filter/`
+- [Как добавить фильтр по дате на лист Excel](/cells/autofilter/add-date-filter/) — **Метод:** POST, **Конечная точка:** `/cells/autofilter/add-date-filter/`
+- [Как добавить динамический фильтр на лист Excel](/cells/autofilter/add-dynamic-filter/) — **Метод:** POST, **Конечная точка:** `/cells/autofilter/add-dynamic-filter/`
+- [Как добавить фильтр на лист Excel](/cells/autofilter/add-filter/) — **Метод:** POST, **Конечная точка:** `/cells/autofilter/add-filter/`
+- [Как добавить фильтр по значку на лист Excel](/cells/autofilter/add-icon-filter/) — **Метод:** POST, **Конечная точка:** `/cells/autofilter/add-icon-filter/`
+- [Как удалить фильтр по дате на листе Excel](/cells/autofilter/delete-a-date-filter/) — **Метод:** DELETE, **Конечная точка:** `/cells/autofilter/delete-a-date-filter/`
+- [Как удалить фильтр на листе Excel](/cells/delete-filter/) — **Метод:** DELETE, **Конечная точка:** `/cells/delete-filter/`
+- [Как получить описание автофильтра на листе Excel](/cells/autofilter/get/) — **Метод:** GET, **Конечная точка:** `/cells/autofilter/get/`
+- [Как сопоставить все пустые ячейки на листе Excel](/cells/autofilter/match-all-blank/) — **Метод:** POST, **Конечная точка:** `/cells/autofilter/match-all-blank/`
+- [Как сопоставить все непустые ячейки на листе Excel](/cells/autofilter/match-all-non-blank/) — **Метод:** POST, **Конечная точка:** `/cells/autofilter/match-all-non-blank/`
+- [Как обновить автофильтр на листе Excel](/cells/autofilter/refresh/) — **Метод:** POST, **Конечная точка:** `/cells/autofilter/refresh/`

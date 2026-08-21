@@ -1,104 +1,155 @@
-﻿---
-title: SaveAs Exce
-second_title: Documen
-linktitle: Bir tane kaydet
-type: docs
-url: /tr/save-an-excel-file-as-other-formats-files/
-aliases: [/convert-excel-workbook-to-different-file-formats/, /saveas-other-formats/]
-keywords: Save excel files as kinds of format files
-description: Aspose.Cells Cloud REST API, Excel dosyalarını farklı formatlardaki dosyalar olarak kaydetmeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 30
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, SaveAs Excel
 ---
-Bu REST API, `save` excel dosyasını farklı formatta bir dosya olarak gösterir.
+title: "Excel Çalışma Kitabını Kaydet – Aspose.Cells Cloud API"
+second_title: "Belge"
+linktitle: "Farklı Kaydet"
+type: docs
+url: /save-an-excel-file-as-other-formats-files/
+aliases:
+  - /convert-excel-workbook-to-different-file-formats/
+  - /saveas-other-formats/
+keywords: "Aspose Cells, Excel, Farklı Kaydet, PDF, CSV, JSON, Markdown, REST API"
+description: "Aspose.Cells Cloud REST API kullanarak Excel çalışma kitaplarını PDF, CSV, JSON, Markdown ve diğer formatlara kaydedin."
+weight: 30
+---
 
-**Yol Parametresi**
+Bu REST API, bir Excel dosyasını farklı formatlarda **kaydetmenizi** sağlar.  
+Bu uç noktayı çağırmadan önce, geçerli bir OAuth 2.0 erişim belirtecinizin olduğunu ve kaynak çalışma kitabının Aspose Cloud depolama alanınızda saklandığını doğrulayın.
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|isim|sicim| Dosya adı.|
+**Gereksinimler**  
+1. Bir JWT erişim belirteci edinin ve her isteğin `Authorization: Bearer <token>` başlığına ekleyin.  
+2. Kaynak çalışma kitabını Aspose Cloud depolama alanına yükleyin (veya zaten mevcut olduğunu doğrulayın).  
+3. Çalışma kitabının bulunduğu depo adını ve klasör yolunu bilin.
 
-**Sorgu Parametresi**
+## PostWorkbookSaveAs API
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|yeni dosya adı|sicim| yeni dosya adı|
-|isAutoFitRows|sicim| Bu çalışma kitabındaki tüm satırları otomatik olarak sığdırır. Varsayılan değer false'tur.|
-|isAutoFitColumns|sicim| Bu çalışma kitabındaki sütun genişliğini otomatik olarak ayarlar. Varsayılan değer false'tur.|
-|dosya|sicim|Orijinal çalışma kitabı klasörü.|
-|depolamaAdı|sicim| Dosyanın bulunduğu depolama adı.|
-|outStorageName|sicim| Kaydedilen dosyanın bulunduğu depolama adı.|
-|checkExcelRestriction|bool| Kullanıcı hücrelerle ilgili nesneleri değiştirdiğinde Excel dosyasının kısıtlamasını kontrol edin.|
-|bölge|sicim| Çalışma kitabı için bölgesel ayarlar.|
-|sayfaGenişSayfaBaşınaSığdır|bool| Sayfa genişliği çalışma kağıdına sığar.|
-|sayfaTallFitOnSheet|bool| Sayfanın uzunluğu çalışma kağıdına sığacak kadardır.|
-|sayfaAdı|sicim| Belirtilen çalışma sayfasını dönüştürün.|
-|sayfaIndeksi|sicim| Belirtilen çalışma sayfası sayfasını dönüştürmek için sheetName gereklidir.|
-|birSayfa/Sayfa|bool| PDF formatına dönüştürüldüğünde her yaprağa bir sayfa düşülür.|
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/saveAs
+```
 
-**İstek Gövde Parametresi**
+### **Güvenlik ve Kimlik Doğrulama**
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|Kaydetme Seçenekleri| Nesne|Kaydet seçeneği çok parçalı içeriğin ikinci bölümüne kaydeder.|
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulamayı</a> gerektirir.
 
-## DİNLENME API
+### **Yol Parametresi**
 
-|**API**|**Tip**|**Tanım**|**Kaynak Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/{ad}/kaydet|POSTALAMAK|Çalışma kitabını Biçime Aktar|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+| Parametre Adı | Tür   | Açıklama                      |
+| -------------- | ------ | --------------------------- |
+| name           | string | Excel dosyasının adı. |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **Sorgu Parametresi**
 
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı         | Tür    | Açıklama                                                                                 |
+| --------------------- | ------ | ---------------------------------------------------------------------------------------- |
+| newfilename           | string | Kaydedilecek belge için yeni dosya adı.                                                  |
+| isAutoFitRows         | string | Doğruysa, çalışma kitabındaki tüm satırları otomatik olarak sığdırır. Varsayılan değer `false`'tir. |
+| isAutoFitColumns      | string | Doğruysa, çalışma kitabındaki sütun genişliklerini otomatik olarak sığdırır. Varsayılan değer `false`'tir. |
+| folder                | string | Orijinal çalışma kitabının bulunduğu klasör.                                              |
+| storageName           | string | Kaynak dosyanın bulunduğu depo adı.                                                       |
+| outStorageName        | string | Çıktı dosyasının kaydedileceği depo adı.                                                  |
+| checkExcelRestriction | bool   | Hücreleri veya ilgili nesneleri değiştirirken Excel kısıtlamalarının uygulanıp uygulanmayacağını belirtir. |
+| region                | string | Çalışma kitabına uygulanacak bölgesel ayarlar.                                            |
+| pageWideFitOnPerSheet | bool   | Dönüştürme sırasında sayfa genişliğini her bir çalışma sayfasına sığdırır.                |
+| pageTallFitOnPerSheet | bool   | Dönüştürme sırasında sayfa yüksekliğini her bir çalışma sayfasına sığdırır.               |
+| sheetName             | string | Dönüştürülecek çalışma sayfasının adı.                                                    |
+| pageIndex             | string | Belirtilen çalışma sayfası içinde dönüştürülecek sayfanın dizini (`sheetName` gerekli).   |
+| onePagePerSheet       | bool   | PDF'e dönüştürürken her çalışma sayfası için bir sayfa oluşturur.                          |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **İstek Gövdesi Parametresi**
+
+| Parametre Adı | Tür    | Açıklama                                                       |
+| -------------- | ------ | -------------------------------------------------------------- |
+| SaveOptions    | Object | İkinci kısım olarak multipart isteğin içine sağlanan kaydetme seçenekleri. |
+
+**Örnek istek gövdesi (multipart isteğin JSON kısmı)**
+
+```json
+{
+  "SaveOptions": {
+    "SaveFormat": "pdf",
+    "CompressionLevel": 9
+  }
+}
+```
+
+### Yanıt
+
+API, bir `SaveResponse` nesnesi döndürür.
+
+```json
+{
+  "Status": "OK",
+  "Code": 200,
+  "SaveResult": {
+    "Documents": [
+      {
+        "Name": "sample.pdf",
+        "Size": 10240,
+        "Folder": "output",
+        "Storage": "MyStorage"
+      }
+    ]
+  }
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                             |
+|------|-----------------------------|------------------------------------------------------|
+| 200  | Tamam (OK)                  | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400  | Hatalı İstek (Bad Request)  | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401  | Yetkisiz (Unauthorized)     | Geçersiz veya eksik JWT belirteci.                   |
+| 413  | İçerik Çok Büyük (Payload Too Large) | Yüklenen dosya boyut sınırını aşıyor.               |
+| 500  | Sunucu İç Hatası (Internal Server Error) | Beklenmeyen sunucu hatası.                      |
+
+## SDK'lar ile PostWorkbookSaveAs API Nasıl Kullanılır
+
+### PostWorkbookSaveAs API Belirtimi
+
+[OpenAPI Belirtimi](https://reference.aspose.cloud/cells/#/Conversion/PostWorkbookSaveAs), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için **cURL** kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'yi nasıl çağıracağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfilename=sample.pdf&isAutoFitRows=true&isAutoFitColumns=true" -H "accept: multipart/form-data" 
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfilename=sample.pdf&isAutoFitRows=true&isAutoFitColumns=true" \
+  -H "accept: multipart/form-data" \
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
   "SaveResult": {
-    "SourceDocument": {
-      "Href": "test.xlsx",
-      "Rel": null,
-      "Title": null,
-      "Type": null
-    },
-    "DestDocument": {
-      "Href": "test.pdf",
-      "Rel": null,
-      "Title": null,
-      "Type": null
-    },
-    "AdditionalItems": []
+    "Documents": [
+      {
+        "Name": "sample.pdf",
+        "Size": 10240,
+        "Folder": "output",
+        "Storage": "MyStorage"
+      }
+    ]
   },
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK'larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme hızını en hızlı şekilde artıracaktır. SDK, düşük seviye detayları kendisi yönetir ve size proje görevlerinize odaklanma imkanı verir. Aspose.Cells Cloud SDK'larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub deposuna</a> bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -151,3 +202,5 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Diğer dönüşüm senaryoları için [Excel’i PDF’e Dönüştür](/convert-excel-to-pdf/) ve [Excel’i CSV’ye Dışa Aktar](/export-excel-to-csv/) kılavuzlarına bakın.

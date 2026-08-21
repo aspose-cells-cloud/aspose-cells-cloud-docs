@@ -1,47 +1,62 @@
-﻿---
-title: Dize Dizisini Excel Çalışma Sayfasına Aktar
-second_title: Documen
-linktitle: Diziyi içe aktar
+---
+title: "Excel Çalışma Sayfasına Dize Dizisi İçe Aktar – Aspose.Cells Cloud"
+second_title: "Belge"
+linktitle: "Dize dizisi içe aktar"
 type: docs
 url: /tr/import-string-array-into-excel-worksheet/
-aliases: [/import-string-array-into-worksheet/,/import-data/string-array/,/import/string-array/]
-keywords: Import string array data into Excel files
-description: Aspose.Cells Cloud REST API, dize dizisi verilerinin Excel dosyalarına aktarılmasını destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
+aliases:
+  - /import-string-array-into-worksheet/
+  - /import-data/string-array/
+  - /import/string-array/
+keywords: "Aspose.Cells Cloud, dize dizisi içe aktar, Excel REST API, çok parçalı yükleme, çalışma sayfası verisi içe aktarma, bulut SDK'sı"
+description: "Aspose.Cells Cloud REST API'sini (v3.0) kullanarak bir dize dizisini Excel çalışma sayfasına nasıl içe aktaracağınızı öğrenin. İstek formatını, parametreleri ve SDK örneklerini içerir."
 weight: 40
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Dize Dizisini Excel Çalışma Sayfasına Aktar
+ArticleTitle: "Excel Çalışma Sayfasına Dize Dizisi İçe Aktar – Aspose.Cells Cloud"
 ---
-Bu REST API `import string array data`'i Excel çalışma sayfasına dönüştürün.
 
-İstek, çok parçalı içeriğe sahip bir HTTP isteğidir (bkz.[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)veya[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Çok parçalı içeriğin ilk kısmı ImportStringArrayOption verilerini, ikinci kısmı ise bir veri dosyasını içerir.
+Bir dize dizisini Excel çalışma sayfasına içe aktarmak, lisel verilerle spreadsheets doldururken yaygın bir görevdir. Bu işlem, yapılandırma değerlerini yükleme, harici kaynaklardan veri aktarma veya çalışma sayfalarını önceden tanımlanmış dize koleksiyonlarıyla başlatma gibi senaryolar için kullanışlıdır.
 
-## RSET API
+**Önkoşullar:**  
+- Aspose.Cells Cloud kimlik doğrulama akışı aracılığıyla elde edilen geçerli bir JWT jetonu.  
+- Aspose Cloud depolarınızda mevcut bir çalışma kitapçığı (veya yeni oluşturabilme yeteneği).  
+- `ImportStringArrayOption` modelini destekleyen uygun SDK sürümü.
 
-```bash
+Bu REST API, dize dizisi verilerini bir Excel çalışma sayfasına içe aktarır.
 
+## PostImportData API
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
+
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT jeton tabanlı kimlik doğrulama</a> gerektirir.
+
+### **İstek Parametreleri**
+
+İstek, çok parçalı HTTP içeriği kullanır (bkz. [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) veya [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
+Çok parçalı gövdenin ilk parçası bir **ImportStringArrayOption** yükünü içerir; ikinci parça kaynak veri dosyasını içerir.
 
 Önemli parametreler aşağıdaki tabloda açıklanmıştır:
 
-**İçe AktarDizeArraySeçeneği**
+<caption>ImportStringArrayOption parametreleri</caption>
+### **ImportStringArrayOption**
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-| İlk Sıra| int||
-| İlkSütun| int||
-| Dikey| sicim| doğru/yanlış.|
-| Veri|Sicim[]||
-|Hedef Çalışma Sayfası| sicim| hedef çalışma sayfası adı.|
-| IsInsert| sicim| doğru/yanlış.|
-| Veri Türünü İçe Aktar| sicim|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Kaynak| Dosya Kaynağı| BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.|
+| Parametre Adı        | Tür        | Açıklama                                                                                                                                                                            |
+| --------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| FirstRow             | int        | Verilerin yerleştirileceği başlangıç satır indeksi (1‑tabanlı).                                                                                                                     |
+| FirstColumn          | int        | Verilerin yerleştirileceği başlangıç sütun indeksi (1‑tabanlı).                                                                                                                     |
+| IsVertical           | boolean    | Verileri dikey eklemek için `true`; yatay eklemek için `false`.                                                                                                                    |
+| Data                 | String[]   | İçe aktarılacak dize dizisi.                                                                                                                                                        |
+| DestinationWorksheet | string     | Verilerin gönderileceği çalışma sayfasının adı.                                                                                                                                    |
+| IsInsert             | boolean    | Satırları/sütunları eklemek için (`true`, mevcut hücreleri kaydırarak); mevcut hücreleri üzerine yazmak için (`false`).                                                             |
+| ImportDataType       | string     | İçe aktarılan veri türü (örn. `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`).     |
+| Source               | FileSource | **BatchData** null olduğunda veri dosyasının bulunduğu yeri tanımlar (örn. `CloudFileSystem`, `LocalFile`). `BatchData` sağlanmadıysa gereklidir.                                   |
 
-**Örnek**
+### Örnek
 
 ```xml
-
 <ImportStringArrayOption>
     <DestinationWorksheet>Sheet1</DestinationWorksheet>
     <IsInsert>false</IsInsert>
@@ -54,14 +69,40 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
         <FilePath>Array_string_xml.txt</FilePath>
     </Source>
 </ImportStringArrayOption>
-
 ```
 
-## Bulut SDK Ailesi
+### Yanıt
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Başarılı bir istek, JSON yükü içeren **HTTP 200** döndürür:
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+Olası durum kodları:
+
+| Kod | Anlam                                   |
+| --- | --------------------------------------- |
+| 200 | İçe aktarma başarılı                    |
+| 400 | Geçersiz istek – eksik veya geçersiz veri |
+| 401 | Yetkisiz – geçersiz veya eksik jeton    |
+| 500 | Sunucu iç hatası                        |
+
+
+## SDK ile PostImportData API Nasıl Kullanılır
+
+### PostImportData API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostImport), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize izin verir.
+
+### Aspose.Cells Cloud SDK Kullanın
+
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoludur. Bir SDK, düşük seviye detayları yöneterek projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için [GitHub deposunu](https://github.com/aspose-cells-cloud) inceleyin.
+
+Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanarak Aspose.Cells web servislerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

@@ -1,78 +1,78 @@
-﻿---
-title: 更新工作表中的图表图例
+---
+title: "更新工作表中的图表图例"
 type: docs
-url: /zh/charts/legend/update/
+url: /charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在工作表中更新图表图例
+keywords: "Aspose.Cells, 云, Excel, 图表, 图例, REST API, 更新, 工作表, cURL, SDK"
+description: "如何使用 Aspose.Cells Cloud REST API 更新 Excel 工作表中的图表图例，包含 cURL 请求示例及多种编程语言的 SDK 代码片段。"
+ArticleTitle: "更新工作表中的图表图例 – Aspose.Cells Cloud API 指南"
 ---
-此 REST API 表示更新图表图例
- 
-## 重新设置 API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
- 
+
+本 REST API 用于更新图表图例。
+
+**前提条件**：要使用此接口，您必须拥有有效的 Aspose Cloud JWT 令牌，且目标工作簿需存储于受支持的存储位置（默认为 Aspose Cloud 存储）。请确保工作簿名称、工作表名称和图表索引正确无误。
+
+图表图例用于显示图表中数据系列的名称和符号。更新图例可自定义其外观，例如字体样式、颜色和阴影效果。
+
+## PostWorksheetChartLegend API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
-请求参数为：
- 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|图表索引|整数|小路|图表索引。|
-|传奇||身体||
-|文件夹|细绳|询问|工作簿文件夹。|
-|存储名称|细绳|询问|存储名称。|
 
- 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
- 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+### **安全性与身份验证**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Aspose.Cells Cloud API 采用安全机制，需进行 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
+
+### 请求参数
+
+| 参数名称      | 类型    | 位置   | 描述                                   |
+| ------------- | ------- | ------ | -------------------------------------- |
+| name          | string  | path   | 工作簿名称。                           |
+| sheetName     | string  | path   | 工作表名称。                           |
+| chartIndex    | integer | path   | 待修改图表的索引。                     |
+| legend        | object  | body   | 定义图例设置的 JSON 对象。             |
+| folder        | string  | query  | 包含工作簿的文件夹路径。               |
+| storageName   | string  | query  | 存储空间名称。                         |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend) 定义了一个公开可访问的编程接口，允许您直接通过 Web 浏览器发起 REST 请求。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" 
--d '{"Font":{"Color":{"A":"1", "R":"255", "G":"0", "B":"0"}, "DoubleSize":10.0, "IsBold":true, "IsItalic":false, "IsStrikeout":false, "IsSubscript":false, "IsSuperscript":false, "Name":"Arial", "Size":15, "Underline":"None"}, "Shadow":true}' 
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
+-d '{"Font":{"Color":{"A":"1","R":"255","G":"0","B":"0"},"DoubleSize":10.0,"IsBold":true,"IsItalic":false,"IsStrikeout":false,"IsSubscript":false,"IsSuperscript":false,"Name":"Arial","Size":15,"Underline":"None"},"Shadow":true}' \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
- 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
- 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
- 
+## 云 SDK 开发工具包（SDK Family）
+
+使用 SDK 可加速开发进程。SDK 处理底层细节，让您专注于项目核心任务。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

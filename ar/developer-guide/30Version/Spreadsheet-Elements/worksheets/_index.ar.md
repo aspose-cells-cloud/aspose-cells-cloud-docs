@@ -1,37 +1,39 @@
-﻿---
-title: العمل مع ورقة العمل Excel
-second_title: Documen
-linktitle: ورقة عمل
-type: docs
-url: /ar/worksheets/
-aliases: [/working-with-worksheets/]
-keywords: Working with worksheet on an Excel workbook
-description: يدعم Cloud REST العمل مع أوراق العمل على مصنف Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، العمل مع ورقة العمل Excel.
 ---
-ورقة العمل هي مجموعة من الخلايا لحفظ البيانات ومعالجتها. يمكن أن يحتوي كل مصنف Excel على أوراق عمل متعددة.
+title: "العمل مع أوراق عمل إكسل."
+second_title: "مستند"
+linktype: "ورقات العمل"
+type: docs
+url: /worksheets/
+aliases: [/working-with-worksheets/]
+keywords: "ورقة عمل إكسل، Aspose.Cells Cloud، REST API، جدول بيانات، ملف عمل، معالجة البيانات، أتمتة إكسل"
+description: "تتيح واجهة Aspose.Cells Cloud REST العمل مع أوراق العمل في ملف عمل إكسل. يدعم SDK لغات برمجة متعددة، منها Android وC# وGo وJava وNode.js وPerl وPHP وPython وRuby وSwift."
+weight: 100
+ArticleTitle: "العمل مع أوراق عمل إكسل – وثائق Aspose.Cells Cloud"
+---
 
-**ورقة عمل التشغيل**
+ورقة العمل عبارة عن مجموعة من الخلايا تُستخدم لتخزين البيانات ومعالجتها. يمكن أن يحتوي ملف عمل إكسل الواحد على عدة أوراق عمل.
 
-- [كيفية الحصول على أوراق عمل Excel.](/cells/ar/worksheets/get-all/)
-- [كيفية الحصول على ورقة عمل Excel بتنسيقات مختلفة.](/cells/ar/worksheets/get/)
-- [كيفية الحصول على ورقة عمل Excel بتنسيقات مختلفة.](/cells/ar/worksheets/area-to-different-formats/)
-- [كيفية الحصول على صفحة ورقة العمل Excel بتنسيقات مختلفة.](/cells/ar/get-worksheet-for-page-index/)
-- [كيفية تحويل ورقة العمل Excel إلى صورة.](/cells/ar/worksheets/to-image/)
-- [كيفية إضافة ورقة العمل Excel.](/cells/ar/worksheets/add/)
-- [كيفية إضافة خلفية ورقة العمل Excel.](/cells/ar/worksheets/background/add/)
-- [كيفية فرز بيانات ورقة العمل Excel.](/cells/ar/worksheets/sort-data/)
-- [كيفية إخفاء ورقة العمل Excel.](/cells/ar/worksheets/hide/)
-- [كيفية إظهار ورقة العمل Excel.](/cells/ar/worksheets/unhide/)
-- [كيفية نقل ورقة العمل Excel.](/cells/ar/worksheets/move/)
-- [كيفية حساب صيغة Excel.](/cells/ar/worksheets/calculate-formula/)
-- [كيفية نسخ ورقة العمل Excel.](/cells/ar/worksheets/copy/)
-- [كيفية إعادة تسمية ورقة العمل Excel.](/cells/ar/worksheets/rename/)
-- [كيفية تحديث خصائص ورقة العمل Excel.](/cells/ar/worksheets/update-properties/)
-- [كيفية ضبط تكبير ورقة العمل Excel.](/cells/ar/worksheets/zoom/)
-- [كيفية تجميد أجزاء ورقة العمل Excel.](/cells/ar/worksheets/freeze-panes/)
-- [كيفية إلغاء تجميد أجزاء ورقة العمل Excel.](/cells/ar/worksheets/unfreeze-panes/)
-- [كيفية حذف ورقة العمل Excel.](/cells/ar/worksheets/delete/)
-- [كيفية حذف خلفية ورقة العمل Excel.](/cells/ar/worksheets/background/delete/)
-- [كيفية العمل مع التجهيز التلقائي لكتاب العمل Excel](/cells/ar/worksheets/autofit/)
+**عمليات أوراق العمل**
+
+- [كيفية الحصول على أوراق عمل إكسل](/cells/worksheets/get-all/)
+- [كيفية الحصول على ورقة عمل إكسل بصيغ مختلفة](/cells/worksheets/get/)
+- [كيفية الحصول على منطقة من ورقة عمل إكسل بصيغ مختلفة](/cells/worksheets/area-to-different-formats/)
+- [كيفية الحصول على صفحة من ورقة عمل إكسل بصيغ مختلفة](/cells/get-worksheet-for-page-index/)
+- [كيفية تحويل ورقة عمل إكسل إلى صورة](/cells/worksheets/to-image/)
+- [كيفية إضافة ورقة عمل إكسل](/cells/worksheets/add/)
+- [كيفية إضافة خلفية لورقة عمل إكسل](/cells/worksheets/background/add/)
+- [كيفية فرز البيانات في ورقة عمل إكسل](/cells/worksheets/sort-data/)
+- [كيفية إخفاء ورقة عمل إكسل](/cells/worksheets/hide/)
+- [كيفية إظهار ورقة عمل إكسل المخفية](/cells/worksheets/unhide/)
+- [كيفية نقل ورقة عمل إكسل](/cells/worksheets/move/)
+- [كيفية حساب صيغة إكسل](/cells/worksheets/calculate-formula/)
+- [كيفية نسخ ورقة عمل إكسل](/cells/worksheets/copy/)
+- [كيفية إعادة تسمية ورقة عمل إكسل](/cells/worksheets/rename/)
+- [كيفية تحديث خصائص ورقة عمل إكسل](/cells/worksheets/update-properties/)
+- [كيفية ضبط تكبير/تصغير ورقة عمل إكسل](/cells/worksheets/zoom/)
+- [كيفية تجميد الإطارات في ورقة عمل إكسل](/cells/worksheets/freeze-panes/)
+- [كيفية إلغاء تجميد الإطارات في ورقة عمل إكسل](/cells/worksheets/unfreeze-panes/)
+- [كيفية حذف ورقة عمل إكسل](/cells/worksheets/delete/)
+- [كيفية حذف الخلفية من ورقة عمل إكسل](/cells/worksheets/background/delete/)
+- [كيفية ضبط العرض التلقائي لملف عمل إكسل](/cells/worksheets/autofit/)
+---

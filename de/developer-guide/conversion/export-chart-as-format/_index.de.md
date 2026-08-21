@@ -1,100 +1,106 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Exportieren eines Tabellenkalkulationsdiagramms als Formatdatei
-second_title: Documen
-ArticleTitle: Export a Spreadsheet Chart as a Format fil
-linktitle: Diagramm als Forma exportieren
-type: docs
-url: /de/export-chart-as-format/
-keywords: Export Chart, Aspose.Cells Cloud Web API, Spreadsheet Conversion, PDF Export, Image Export, REST, Excel, CSV, JSO
-description: Konvertiert Diagramme aus in der Cloud gespeicherten Tabellen effizient in bestimmte Formate wie PDF oder direkt in Bilder, ohne sie herunterzuladen
-weight: 100
-kwords: Diagramm exportieren, REST, Tabellenkalkulationskonvertierung, PDF, CSV, JSON, Markdown, Excel, Bildformat
 ---
-Exportieren Sie eine Cloud-Tabelle/ein Excel-Diagramm mit dem Aspose.Cells Cloud Web API in eine Datei in einem anderen Format.
+title: "Excel-Diagramm exportieren – Aspose.Cells Cloud API"
+second_title: "Dokument"
+description: "Konvertieren Sie ein Diagramm aus einer in der Cloud gespeicherten Excel-Arbeitsmappe mit einem einzigen REST-Aufruf in PDF, PNG, SVG oder andere Formate."
+ArticleTitle: "So konvertieren Sie ein lokales Arbeitsblatt einer Tabellenkalkulation in eine PDF-Datei: Schritt-für-Schritt-Anleitung"
+linktype: "Dokumentation"
+type: docs
+url: /export-chart-as-format/
+keywords: "Aspose.Cells Cloud, Diagramm exportieren, API, PDF, PNG, SVG, Excel, REST, Cloud-Konvertierung"
+weight: 100
+---
 
-## **Diagramm exportieren als Format API**
+Konvertieren Sie ein Diagramm, das sich in einer Arbeitsmappe befindet, die bei Aspose Cloud gespeichert ist, in ein anderes Dateiformat (PDF, PNG, SVG, …), ohne die Quelldatei herunterzuladen.
+
+## ExportChartAsFormat-API
 
 ```http
-GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
+GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
 ```
 
-### **Anforderungsparameter:**
+### **Sicherheit und Authentifizierung**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody| Beschreibung|
-|:- |:- |:- |:- |
-| Name| Zeichenfolge| Weg| (Erforderlich) Der Name der abzurufenden Arbeitsmappendatei.|
-| Arbeitsblatt| Zeichenfolge| Weg| Arbeitsblattname|
-| Diagrammindex| Ganze Zahl| Weg| Diagrammindex|
-| Format| Zeichenfolge| Abfrage| (Erforderlich) Das gewünschte Ausgabeformat (z. B. „png“, „pdf“, „svg“).|
-| Ordner| Zeichenfolge| Abfrage| (Optional) Der Ordnerpfad, in dem die Arbeitsmappe gespeichert ist; der Standardwert ist null.|
-| Speichername| Zeichenfolge| Abfrage|(Optional) Der Name des Speichers, wenn benutzerdefinierter Cloud-Speicher verwendet wird. Wenn dieser Name weggelassen wird, verwenden Sie den Standardspeicher.|
-| Ausgangspfad| Zeichenfolge| Abfrage| (Optional) Der Ordnerpfad, in dem die Arbeitsmappe gespeichert ist; der Standardwert ist null.|
-|outStorageName| Zeichenfolge| Abfrage| Name des Ausgabedateispeichers.|
-| SchriftartenStandort| Zeichenfolge| Abfrage| Verwenden Sie benutzerdefinierte Schriftarten.|
-| Region| Zeichenfolge| Abfrage| Die Tabellenbereichseinstellung.|
-| Passwort| Zeichenfolge| Abfrage| Das Kennwort zum Öffnen der Tabellenkalkulationsdatei.|
+Die Aspose.Cells Cloud-APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
+
+### 📦 Anforderungsparameter
+
+| Name               | Typ     | Ort     | Erforderlich | Beschreibung                                                     |
+| ------------------ | ------- | ------- | ------------ | ---------------------------------------------------------------- |
+| **name**           | string  | Pfad    | Ja           | Dateiname der Arbeitsmappe.                                      |
+| **worksheet**      | string  | Pfad    | Ja           | Name des Arbeitsblatts, das das Diagramm enthält.              |
+| **chartIndex**     | integer | Pfad    | Ja           | Nullbasierten Index des zu exportierenden Diagramms.           |
+| **format**         | string  | Abfrage | Ja           | Gewünschtes Ausgabeformat (z. B. `png`, `pdf`, `svg`).          |
+| **folder**         | string  | Abfrage | Nein         | Ordnerpfad, in dem die Arbeitsmappe gespeichert ist (Standard: Root). |
+| **storageName**    | string  | Abfrage | Nein         | Benutzerdefinierter Speichername; weglassen, um den Standardspeicher zu verwenden. |
+| **outPath**        | string  | Abfrage | Nein         | Ordnerpfad, in dem die konvertierte Datei gespeichert wird.    |
+| **outStorageName** | string  | Abfrage | Nein         | Speichername für die Ausgabedatei.                              |
+| **fontsLocation**  | string  | Abfrage | Nein         | Pfad zu einem Ordner, der benutzerdefinierte Schriftarten enthält. |
+| **region**         | string  | Abfrage | Nein         | Gebietsschema-Einstellung (z. B. `de-DE`, `en-US`, `fr-FR`).   |
+| **password**       | string  | Abfrage | Nein         | Passwort zum Öffnen einer geschützten Arbeitsmappe.             |
 
 ### **Antwort**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream",
+      "Name": "file"
     }
+  }
 ]
 ```
 
-### Fehlercodes
+**HTTP-Statuscodes**
 
-- **400 Ungültige Anfrage**: Ungültige Apose.Cells Cloud API-URI.
-- **401 Nicht autorisiert**: Ungültiges Zugriffstoken. Oder ungültige Client-ID und ungültiges Geheimnis.
-- **404 Nicht gefunden**: Auf die Tabellenkalkulationsdatei kann nicht zugegriffen werden.
-- **500 Serverfehler**: Beim Abrufen der Berechnungsdaten ist in der Tabelle eine Anomalie aufgetreten.
+| Code | Bedeutung             | Beschreibung                                                     |
+| ---- | --------------------- | ---------------------------------------------------------------- |
+| 200  | OK                    | Filter erfolgreich angewendet; Antwort enthält Operationsdetails. |
+| 400  | Bad Request           | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized          | Ungültiges oder fehlendes JWT-Token.                            |
+| 413  | Payload Too Large     | Die hochgeladene Datei überschreitet das Größenlimit.           |
+| 500  | Internal Server Error | Unerwarteter Serverfehler.                                      |
 
-## Warum sollten Sie das Tabellenkalkulationsdiagramm im Format API exportieren?
+## Wie verwende ich die „Diagramm exportieren als Format“-API mit SDKs?
 
-- Sie können Cloud-Dateien jederzeit und überall in verschiedene Formate konvertieren.
-- Die Entwicklung kann über das vorhandene SDK schnell abgeschlossen werden.
+### API-Spezifikation für „Diagramm exportieren als Format“
 
-## Wie verwende ich das Tabellenkalkulationsdiagramm im Format API mit SDKs?
+Die [API-Spezifikation für „Diagramm exportieren als Format“](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportChartAsFormat) bietet eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
 
-### Diagramm als Format API Spezifikation exportieren
+Sie können das cURL-Befehlszeilentool verwenden, um bequem auf Aspose.Cells-Webservices zuzugreifen. Das folgende Beispiel zeigt, wie Aufrufe an die Cloud-API mit cURL durchgeführt werden.
 
- Der[Diagramm als Format API Spezifikation exportieren](https://reference.aspose.cloud/cells/#/ConversionController/ExportChartAsFormat) definiert eine öffentlich zugängliche Programmierschnittstelle, die es Ihnen ermöglicht, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
+{{< tabs tabTotal="2" tabID="11" tabName11="Anforderung" tabName12="Antwort" >}}
 
-### Verwenden Sie Aspose.Cells Cloud SDKs
+{{< tab tabNum="11" >}}
 
-Die Verwendung des SDK ist die schnellste Art der Entwicklung, da es die Details auf niedriger Ebene abstrahiert und Ihnen ermöglicht, Tabellendiagrammdaten mit einem kurzen Code in eine Formatdatei zu exportieren.
- Bitte schauen Sie sich die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}?format={format}" \
+  -H "Authorization: Bearer {access_token}"
+```
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ExportChartAsFormat.cs" >}}
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ExportChartAsFormat.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64-codiert)",
+  "contentType": "MIME-Typ",
+  "fileDownloadName": "optionaler Dateiname"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExportChartAsFormat.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ExportChartAsFormat.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ExportChartAsFormat.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ExportChartAsFormat.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ExportChartAsFormat.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportChartAsFormat.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### Verwenden der Aspose.Cells Cloud SDKs
+
+Die Verwendung eines SDKs ist der schnellste Weg zur Entwicklung, da sie Low-Level-Details abstrahieren und es Ihnen ermöglichen, Tabellendaten einer Spreadsheet-Datei mit minimalem Code in eine PDF-Datei zu konvertieren. Bitte prüfen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
+
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webservices mit verschiedenen SDKs aufgerufen werden:
+
+---

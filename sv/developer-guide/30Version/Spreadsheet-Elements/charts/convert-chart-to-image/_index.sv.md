@@ -1,68 +1,90 @@
-﻿---
-title: Konvertera diagram till bild
+---
+title: "Konvertera Excel-diagram till bild – Aspose.Cells Cloud REST API"
 type: docs
-url: /sv/charts/to-image/
+url: /charts/to-image/
 aliases: [/convert-charts-to-image/]
 weight: 50
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Konvertera diagram till bild
+keywords: "Aspose.Cells Cloud, diagram till bild, Excel-diagramkonvertering, REST API, bildformat, PNG, JPEG, BMP, TIFF, GIF"
+description: "Lär dig hur du konverterar Excel-diagramobjekt till PNG-, JPEG-, BMP-, TIFF- eller GIF-bilder med Aspose.Cells Cloud REST API. Innehåller slutpunktsinformation, parametrar, cURL-exempel, SDK-utdrag, svarsexempel och felhantering."
+ArticleTitle: "Konvertera Excel-diagram till bild – Aspose.Cells Cloud REST API"
 ---
-Denna REST API visar hur man konverterar ett diagram till en bild.
 
-## RSET API
+Denna REST API visar hur man konverterar ett **Excel-diagram** till en bild med **Aspose.Cells Cloud**.
 
-```bash
+## PutWorksheetAddChart API
 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}?format={format}
-
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}?format={format}
 ```
-Begäranparametrarna är:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| diagramnummer| heltal| väg| Diagrammet nummer.|
-| formatera| sträng| fråga| Det exporterade filformatet.|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Stödda bildformat inkluderar `png`, `jpeg`, `bmp`, `tiff` och `gif`.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Säkerhet och autentisering**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### Begärparametrar
+
+| Parameternamn  | Typ     | Plats  | Beskrivning                     |
+| -------------- | ------- | ------ | ------------------------------- |
+| name           | string  | path   | Dokumentnamn.                   |
+| sheetName      | string  | path   | Arbeidsbladsnamn.               |
+| chartNumber    | integer | path   | Diagramnumret.                  |
+| format         | string  | query  | Det exporterade filformatet.    |
+| folder         | string  | query  | Dokumentmappen.                 |
+| storageName    | string  | query  | Lagringsnamn.                   |
+
+### **Svar**
+
+Slutpunkten returnerar bildfilen i det begärda formatet som en binär ström (t.ex. `byte[]`). Svarsheadern `Content-Type` matchar det valda bildformatet, t.ex. `image/png`, `image/jpeg`, etc.
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                            |
+|-----|-----------------------------|--------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. ej stött filtyp). |
+| 401 | Inte auktoriserad           | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
+
+## Hur man använder PutWorksheetAddChart API med SDK:er
+
+### PutWorksheetAddChart API-specificering
+
+<a href="https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart" rel="noopener noreferrer">OpenAPI-specificeringen</a> definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg"
--X GET
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```text
 byte[]
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Se <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub-förrådet</a> för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
-
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Python" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 
@@ -103,6 +125,8 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
+
+Exempel kommer snart.
 
 {{< /tab >}}
 

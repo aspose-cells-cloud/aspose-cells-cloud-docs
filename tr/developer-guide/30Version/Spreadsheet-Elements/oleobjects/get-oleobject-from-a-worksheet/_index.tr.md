@@ -1,73 +1,90 @@
-﻿---
-title: Excel çalışma sayfasında bir OLE nesnesi alın
-second_title: Documen
-linktitle: Ge
-type: docs
-url: /tr/oleobjects/get/
-aliases: [/get-oleobject-from-a-worksheet/]
-keywords: Get an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında bir OLE nesnesi almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasında bir OLE nesnesi alın
 ---
-Bu REST API, `get`'e `OLE object`'i Excel çalışma sayfasında formatlanmış olarak gösterir.
+title: "Excel Çalışma Sayfasından OLE Nesnesini Alın – Aspose.Cells Cloud API"
+secondtitle: "Belge"
+linktitle: "Al"
+type: docs
+url: /oleobjects/get/
+aliases: [/get-oleobject-from-a-worksheet/]
+keywords: "aspose, cells, ole nesnesi, excel, çalışma sayfası, ole nesnesi al, rest api"
+description: "Aspose.Cells Cloud REST API kullanarak bir çalışma sayfasından bir OLE nesnesini (görüntü, grafik veya gömülü dosya) alın. HTTPS uç noktası, gerekli parametreler, örnek cURL ve birden fazla dilde SDK kodunu içerir."
+ArtikelBaşlığı: "Excel Çalışma Sayfasından OLE Nesnesini Alın – Aspose.Cells Cloud API"
+weight: 10
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasından bir **OLE nesnesi** alır.
+
+## Güvenlik ve Kimlik Doğrulama
+Aspose.Cells Cloud API’leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulama](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) gerektirir.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
 ```
 
-İstek parametreleri şunlardır:
+### İstek Parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| nesneNumarası| tam sayı| yol| Nesne numarası.|
-| biçim| sicim| sorgu| Dışa aktarılan nesne biçimi.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı | Tür      | Konum | Açıklama                                                    |
+| ------------- | -------- | ----- | ----------------------------------------------------------- |
+| name          | string   | path  | Belge adı.                                                  |
+| sheetName     | string   | path  | Çalışma sayfası adı.                                        |
+| objectNumber  | integer  | path  | Çalışma sayfası içindeki nesne numarası.                   |
+| format        | string   | query | Nesnenin istenen dışa aktarma formatı (örn., `png`, `jpeg`).|
+| folder        | string   | query | Belgenin bulunduğu klasör.                                  |
+| storageName   | string   | query | Kullanılacak depo adı.                                     |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### Depo Seçenekleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+- **folder** – Çalışma kitabının bulunduğu varsayılan depodaki alt klasörü belirtir.
+- **storageName** – Çalışma kitabının başka bir yerde depolandığı durumda varsayılan depo adını geçersiz kılar.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject), genel olarak erişilebilir bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+**cURL** komut satırı aracını kullanarak Aspose.Cells web hizmetini çağırabilirsiniz. Aşağıdaki örnek, bir OLE nesnesini PNG görüntüsü olarak istemeyi nasıl yapacağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+### İkili Görüntü Yanıtı
 
-Image file
- 
+`format` bir görüntü türüne (`png`, `jpeg` vb.) ayarlandığında, API başlıkla birlikte ikili görüntü verisini döndürür:
+
+```
+Content-Type: image/png
 ```
 
-VEYA
+_(Görüntü dosyası doğrudan istemciye akışlanır.)_
 
-```bash
+### JSON Meta Veri Yanıtı
+
+`format` atlanırsa veya `json` olarak ayarlanırsa, API OLE nesnesini açıklayan bir JSON yükü döndürür:
+
+```json
 {
-    "Code": 200,
-    "Status": "OK",
-    "OLEObject":{
-    ......
-    } 
+  "Code": 200,
+  "Status": "OK",
+  "OLEObject": {
+    "Name": "Object1",
+    "Width": 200,
+    "Height": 150,
+    "Left": 10,
+    "Top": 20,
+    "IsLocked": false,
+    "FileFormat": "png"
+  }
 }
 ```
 
@@ -75,11 +92,30 @@ VEYA
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+## Hata Yanıtları
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| HTTP Durumu | Hata Kodu    | Açıklama                                      |
+| ----------- | ------------ | --------------------------------------------- |
+| 400         | BadRequest   | Eksik veya geçersiz parametreler.             |
+| 401         | Unauthorized | Geçersiz veya eksik JWT belirteci.            |
+| 404         | NotFound     | Çalışma kitabı, çalışma sayfası veya OLE nesnesi bulunamadı. |
+| 500         | ServerError  | Beklenmeyen sunucu hatası.                    |
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+**Örnek 404 Yanıtı**
+
+```json
+{
+  "Code": 404,
+  "Status": "NotFound",
+  "Message": "Sayfa 'Sheet1' içinde numarası 0 olan istenen OLE nesnesi bulunamadı."
+}
+```
+
+## Bulut SDK Kullanımı
+
+SDK kullanmak, API’yi entegre etmenin en hızlı yoludur. SDK’lar düşük seviyeli ayrıntıları yöneterek size iş mantığınız üzerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, farklı SDK’larla Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

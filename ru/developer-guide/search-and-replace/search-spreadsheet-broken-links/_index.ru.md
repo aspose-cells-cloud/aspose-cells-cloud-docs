@@ -1,120 +1,137 @@
-﻿---
-title: Aspose.Cells Cloud Web API — Поиск неработающих ссылок в электронной таблице
-second_title: Documen
-ArticleTitle: Search Spreadsheet Broken Links in a Spreadshee
-linktitle: Ссылка на поисковую таблицу не работает
-type: docs
-url: /ru/search-spreadsheet-broken-links/
-keywords: search broken links, spreadsheet API, Excel broken links, REST API, Office Cloud integratio
-description: Эффективный поиск неработающих ссылок в локальных электронных таблицах с помощью Excel API
-weight: 100
-kwords: Excel API, поиск неработающих ссылок, Office Cloud, REST API, управление электронными таблицами, PDF, CSV, JSON, Markdown, определение неработающих ссылок, восстановление гиперссылок
 ---
-Поиск неработающих ссылок в локальных электронных таблицах.
+title: "Поиск неработающих ссылок в электронной таблице – Aspose.Cells Cloud API"
+second_title: "Документация"
+ArticleTitle: "Найти и исправить неработающие ссылки в Excel – облачный проверщик ссылок электронных таблиц"
+linktype: "Search Spreadsheet Broken Links"
+type: docs
+url: /search-spreadsheet-broken-links/
+keywords: "Aspose Cells, неработающие ссылки, аудит электронной таблицы, Excel API, облачная электронная таблица, проверщик ссылок"
+description: "Обнаружение и исправление неработающих ссылок в книгах Excel с помощью Aspose.Cells Cloud API. Сканирование диапазонов, получение подробных результатов в формате JSON, интеграция с SDK на любом языке."
+weight: 100
+---
 
-## **Поиск неработающих ссылок в электронной таблице API**
+## **API поиска неработающих ссылок в электронной таблице**
 
+Автоматическое обнаружение неработающих ссылок в файлах Excel. Наш API сканирует указанные диапазоны на наличие неработающих внешних ссылок, некорректных формул и отсутствующих источников данных. Поддерживает удалённый аудит электронных таблиц, автоматическую проверку качества и интеграцию с поставщиками облачных хранилищ. RESTful API для автоматизации корпоративных рабочих процессов.
+
+**Краткое описание:** используйте этот конечный пункт для быстрого выявления и устранения недействительных ссылок в книгах, обеспечивая целостность данных в финансовых моделях, наборах данных для слияний и поглощений (M&A), а также презентационных материалах для инвесторов.
+
+### **Веб-API**
+
+```bash
+PUT https://api.aspose.cloud/v4.0/cells/search/broken-links
 ```
-PUT http://api.aspose.cloud/v4.0/cells/search/broken-links
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/broken-links?worksheet=Sheet1" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@sample.xlsx"
 ```
 
-### **Параметры запроса:**
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody| Описание|
-|:- |:- |:- |:- |
-|Электронная таблица|Файл|FormData|Загрузите файл электронной таблицы для анализа.|
-|рабочий лист|Нить|Запрос|Укажите рабочий лист для проверки.|
-|cellArea|Нить|Запрос|Определите область ячейки для анализа.|
-|область|Нить|Запрос|Настройте конфигурацию региона электронной таблицы.|
-|пароль|Нить|Запрос|Укажите пароль для доступа к файлу электронной таблицы.|
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
-### **Ответ**
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### Параметры запроса
+
+| Имя параметра | Тип   | Расположение         | Описание                                                                                                            |
+|---------------|-------|----------------------|---------------------------------------------------------------------------------------------------------------------|
+| Spreadsheet   | File  | FormData (multipart) | **Обязательный.** Файл книги Excel (`.xlsx`, `.xls` и др.), подлежащий анализу.                                     |
+| worksheet     | String| Query                | **Необязательный.** Имя листа для анализа. Если не указан, используется первый лист.                                |
+| cellArea      | String| Query                | **Необязательный.** Целевой диапазон ячеек в нотации A1 (например, `B2:D10`). Если не указан, анализируется весь используемый диапазон. |
+| region        | String| Query                | **Необязательный.** Локаль (например, `ru-RU`), которая может влиять на интерпретацию дат, чисел и валют.          |
+| password      | String| Query                | **Необязательный.** Пароль для зашифрованных книг. Оставьте пустым, если файл не защищён.                           |
+
+### Ответ
 
 ```json
 {
-  "Name": "BrokenLinksResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "Properties": [
+  "BrokenLinks": [
     {
-      "Name": "BrokenLinks",
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "BrokenLink",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "BrokenLink",
-        },
-      }
+      "CellName": "B5",
+      "Link": "C:\\Data\\source.xlsx",
+      "ErrorMessage": "Файл не найден",
+      "Status": "Broken"
     },
     {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
+      "CellName": "C12",
+      "Link": "http://example.com/data.csv",
+      "ErrorMessage": "404 Not Found",
+      "Status": "Broken"
     }
-  ]
+  ],
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 ### Коды ошибок
 
-- **400 Неверный запрос**: Неверный URI Apose.Cells Cloud API.
-- **401 Неавторизованный**: Недействительный токен доступа. Или недействительный идентификатор клиента и секретный ключ.
-- **404 Не найдено**: Файл электронной таблицы недоступен.
-- **500 Ошибка сервера**: В электронной таблице обнаружена аномалия при получении расчетных данных.
+| Код  | Описание |
+|------|----------|
+| **400 Bad Request** | Некорректный URI Aspose.Cells Cloud API. |
+| **401 Unauthorized** | Некорректный токен доступа, client ID или client secret. |
+| **404 Not Found** | Файл электронной таблицы недоступен. |
+| **429 Too Many Requests** | Превышен лимит запросов (60 вызовов в минуту). |
+| **500 Server Error** | В процессе получения данных для расчётов в электронной таблице возникла ошибка. |
 
-## Где следует использовать функцию поиска неработающих ссылок в таблице API?
 
-Если вам нужно найти неработающие ссылки в электронной таблице, вы можете использовать этот код API.
+## Где следует использовать поиск неработающих ссылок в API электронных таблиц?
 
-## Почему следует использовать функцию поиска неработающих ссылок в таблице API?
+- **Регулярный аудит больших финансовых моделей**: перед публикацией ежемесячных или ежеквартальных отчётов автоматически сканируйте ключевые расчётные области (например, `Dashboard!B5:K50`), содержащие множество внешних ссылок, чтобы убедиться, что все ссылки указывают на действующие исходные файлы.  
+- **Интеграция данных при слияниях и поглощениях**: после объединения нескольких файлов электронных таблиц, представляющих бизнес-подразделения, просканируйте лист «Обзор», чтобы выявить ссылки, ставшие недействительными из-за изменения путей к файлам или проблем с правами доступа.  
+- **Подготовка пакетов данных для инвесторов**: перед завершением презентационных материалов, содержащих диаграммы и таблицы, связанные с внешними базами данных или источниками рыночных данных, проверьте все ссылки на действительность.
 
-- С легкостью ищите неработающие ссылки в удаленной электронной таблице с помощью API.
-- Разработку можно быстро завершить с помощью существующего SDK.
+## Почему следует использовать поиск неработающих ссылок в API электронных таблиц?
 
-## Как использовать поиск неработающих ссылок в электронной таблице API с SDK
+- **Удобный для разработчиков** – Aspose.Cells Cloud предоставляет SDK на множестве языков программирования, что ускоряет разработку и обеспечивает исчерпывающую документацию. По сравнению с созданием собственных решений это значительно сокращает объём работ.  
+- **Снижение трудозатрат** – Исключает необходимость в выделенных сотрудниках для ручной проверки ссылок в документах.  
+- **Оплата по факту использования** – Нет необходимости в начальных инвестициях; вы платите только за фактически выполненные вызовы API.  
+- **Отсутствие затрат на обслуживание** – Нет необходимости в поддержке серверов, обновлении программного обеспечения и решении проблем совместимости.  
+- **Сохранение сложного форматирования Excel** – Результаты возвращаются в универсальном формате JSON, при этом сохраняется исходное форматирование книги.
+
+## Как использовать поиск неработающих ссылок в API электронных таблиц с помощью SDK
 
 ### Спецификация OpenAPI
 
- The[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/SearchController/SearchSpreadsheetBrokenLinks) определяет общедоступный программный интерфейс, позволяющий осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/SearchController/SearchSpreadsheetBrokenLinks){:target="_blank" rel="noopener noreferrer"} определяет публично доступное программное интерфейсное описание, позволяющее выполнять REST-взаимодействия напрямую из веб-браузера.
 
-### Используйте облачные SDK Aspose.Cells
+### Использование SDK Aspose.Cells Cloud
 
-Использование SDK — лучший способ ускорить разработку. SDK берёт на себя всю необходимую информацию, позволяя вам легко реализовывать поиск по неработающим ссылкам в ячейках электронных таблиц с минимальным количеством кода.
- Пожалуйста, проверьте[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — оптимальный способ ускорить разработку. SDK скрывает детали реализации, позволяя легко внедрить функциональность поиска неработающих ссылок с минимальным объёмом кода. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud){:target="_blank" rel="noopener noreferrer"}.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Приведённые ниже примеры кода демонстрируют, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchSpreadsheetBrokenLinks.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchSpreadsheetBrokenLinks.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchSpreadsheetBrokenLinks.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchSpreadsheetBrokenLinks.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchSpreadsheetBrokenLinks.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchSpreadsheetBrokenLinks.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchSpreadsheetBrokenLinks.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchSpreadsheetBrokenLinks.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchSpreadsheetBrokenLinks.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchSpreadsheetBrokenLinks.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchSpreadsheetBrokenLinks.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchSpreadsheetBrokenLinks.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchSpreadsheetBrokenLinks.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchSpreadsheetBrokenLinks.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchSpreadsheetBrokenLinks.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchSpreadsheetBrokenLinks.go" >}}
+{{</tab>}}
 {{< /tabs >}}
+
+
+---

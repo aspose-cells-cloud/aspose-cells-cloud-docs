@@ -1,38 +1,39 @@
-﻿---
-title: Excel dosyası Aspose.Cells Clou ile nasıl onarılır
-linktitle: Excel numaralı bir dosya nasıl onarılır
-type: docs
-url: /tr/how-to-repair-excel-file
-description: Excel veya diğer elektronik tablo dosyası Aspose.Cells Cloud ile nasıl onarılır
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel veya diğer elektronik tablo dosyalarını Aspose.Cells Bulut aracılığıyla nasıl onarabilirim?
 ---
-## giriiş
+title: "Aspose.Cells Cloud ile bir Excel dosyasını nasıl onarırız?"
+linktitle: "Aspose.Cells Cloud ile bir Excel dosyasını nasıl onarırız?"
+type: docs
+url: /how-to-repair-excel-file
+description: "Aspose.Cells Cloud ile Excel veya diğer elektronik tablo dosyasını nasıl onaracağınız."
+weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Aspose.Cells Cloud ile Excel veya diğer elektronik tablo dosyasını nasıl onaracağınız
+---
 
-Aspose.Cells Cloud API, elektronik tablo dosyalarının oluşturulması, düzenlenmesi ve dönüştürülmesi için tasarlanmış güçlü bir bulut tabanlı çözümdür. Bu makalede, tipik kullanım durumları ve örnek kodlar da dahil olmak üzere, Aspose.Cells Cloud API'in dosya onarımı için kullanım sürecini adım adım açıklayacağız.
+## Giriş
+
+Aspose.Cells Cloud API, elektronik tablo dosyalarının oluşturulması, düzenlenmesi ve dönüştürülmesi için tasarlanmış güçlü bir bulut tabanlı çözümdür. Bu makalede, dosya onarımı amacıyla Aspose.Cells Cloud API’nin nasıl kullanılacağını, tipik kullanım durumlarını ve örnek kodu size adım adım anlatacağız.
 
 ## Genel Bakış
 
-Aspose.Cells Cloud API, Excel veya başka bir elektronik tablo dosyasını onarmak için güçlü bir API sağlar. Aspose.Cells Cloud API'i kullanarak, Excel veya başka bir elektronik tablo dosyasını zahmetsizce onarabilir ve çeşitli gereksinimlerinizi karşılayabilirsiniz.
+Aspose.Cells Cloud API, Excel veya diğer elektronik tablo dosyalarını onarmak için güçlü bir API sunar. Aspose.Cells Cloud API’yi kullanarak, çeşitli ihtiyaçlara uygun şekilde Excel veya diğer elektronik tablo dosyalarını kolayca onarabilirsiniz.
 
-API, dosya onarımı için kullanılabilir ve genellikle çeşitli çevrimiçi ortamlarla uyumludur. Aşağıda API'in ayrıntılı bir açıklaması bulunmaktadır:
+API, genellikle çeşitli çevrimiçi ortamlarla uyumlu bir şekilde dosya onarımı için kullanıma hazırdır. Aşağıda API ile ilgili detaylı açıklamalar yer almaktadır:
 
-- **[Excel veya başka bir elektronik tablo dosyasını onarın.](https://reference.aspose.cloud/cells/#/LightCells/PostRepair)** API'i nasıl arayacağınıza dair rehberlik için lütfen şuraya bakın:[geliştirme kılavuzu](https://docs.aspose.cloud/cells/repair/).
+- **[Excel veya diğer elektronik tablo dosyasını onarın.](https://reference.aspose.cloud/cells/#/LightCells/PostRepair)** Bu API’yi nasıl çağıracağınız konusunda yardım almak için lütfen [geliştirici kılavuzuna](https://docs.aspose.cloud/cells/repair/) bakın.
 
-# Excel veya başka bir elektronik tabloyu Aspose.Cells Bulutu aracılığıyla nasıl onarabilirim?
+# Aspose.Cells Cloud ile Excel veya başka bir elektronik tabloyu nasıl onarırız?
 
- Aspose.Cells Bulut API şunları sağlar:[birden fazla SDK](https://github.com/aspose-cells-cloud)Farklı programlama dilleri için. Tercih ettiğiniz programlama diline uygun SDK'yı seçin ve kurulum ve başlatma için beraberindeki belgeleri takip edin. Alternatif olarak, kendi SDK'nızı aşağıdakilere göre oluşturabilirsiniz:[API referans](https://reference.aspose.cloud/cells/)Bu bölümde, dosya onarım sürecini ayrıntılı olarak anlatmak için C# örneğini kullanacağız.
+Aspose.Cells Cloud API, farklı programlama dilleri için [birden fazla SDK](https://github.com/aspose-cells-cloud) sunar. Tercih ettiğiniz programlama diliyle uyumlu SDK’yı seçin ve kurulum ve başlatma işlemleri için eşlik eden belgeleri takip edin. Alternatif olarak, [API referansına](https://reference.aspose.cloud/cells/) göre kendi SDK’nızı oluşturabilirsiniz. Bu bölümde, dosya onarımının sürecini detaylıca açıklamak için C# örneğini kullanacağız.
 
-## API Anahtarının Kaydı ve Alınması
+## Kayıt Olma ve API Anahtarının Edinilmesi
 
- Başlamadan önce şunları yapmanız gerekir:[Aspose Bulut hesabını kaydedin](https://id.containerize.com/signup) Ve[kimlik doğrulaması için API anahtarını edinin](https://dashboard.aspose.cloud/applications)Resmi Aspose Cloud web sitesine giriş yaparak ücretsiz hesap oluşturabilir ve kimlik doğrulama amacıyla API anahtarını alabilirsiniz.
+Başlamadan önce, bir [Aspose Cloud hesabı oluşturmanız](https://id.containerize.com/signup) ve [kimlik doğrulama için API anahtarı almanız](https://dashboard.aspose.cloud/applications) gerekir. Resmi Aspose Cloud web sitesine giriş yaparak ücretsiz bir hesap oluşturabilir ve kimlik doğrulama amacıyla bir API anahtarı edinebilirsiniz.
 
- Daha detaylı işlemler için lütfen aşağıdaki belgelere bakınız:[Cells Bulut ile Hızlı Başlangıç](https://docs.aspose.cloud/cells/quickstart/)
+Daha derinlemesine işlemler için lütfen aşağıdaki belgelere bakın: [Cells Cloud ile Hızlı Başlangıç](https://docs.aspose.cloud/cells/quickstart/)
 
-## Aspose.Cells Cloud SDK'sını Yükleme ve Başlatma
+## Aspose.Cells Cloud SDK’nın Kurulması ve Başlatılması
 
-.NET projenize Aspose.Cells-Cloud NuGet paketini kurun, NuGet Paket Yöneticisi Konsolunu veya Visual Studio'deki NuGet Paket Yöneticisini kullanabilirsiniz.
-Paketi Paket Yöneticisi Konsolu'nu kullanarak nasıl kurabileceğiniz aşağıda açıklanmıştır:
+.NET projenizde Aspose.Cells-Cloud NuGet paketini kurun; NuGet Paket Yöneticisi Konsolunu veya Visual Studio’daki NuGet Paket Yöneticisi’ni kullanabilirsiniz.
+Paket Yöneticisi Konsolu’nu kullanarak paketi nasıl kuracağınız aşağıda belirtilmiştir:
 
 ```Powershell
 
@@ -40,7 +41,7 @@ Install-Package Aspose.Cells-Cloud
 
 ```
 
-CellsApi sınıfının yeni bir örneğini oluşturur ve istemci kimliğiniz ve istemci sırrınızla başlatır. Yukarıda belirtilen kod parçacığının ayrıntıları aşağıdadır:
+CellsApi sınıfının yeni bir örneğini oluşturup, istemci kimliğinizi ve istemci gizli anahtarınızı kullanarak başlatın. Yukarıdaki kod parçasının detayları aşağıdadır:
 
 ```CSharp
 
@@ -48,11 +49,11 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ```
 
-KENDİ'nizi değiştirdiğinizden emin olun_API_ANAHTAR, SENİN_UYGULAMA_SID ve SİZİN_UYGULAMA_Gerçek API anahtarınız, uygulama SID'niz ve uygulama anahtarınızla KEY.
+Lütfen YOUR_API_KEY, YOUR_APP_SID ve YOUR_APP_KEY ifadelerini gerçek API anahtarınız, uygulama SID’niz ve uygulama anahtarınız ile değiştirin.
 
-## API Talebini Oluşturun ve API'i Arayın
+## API İsteği Oluşturma ve API’yi Çağırma
 
-Bu, PostRepairRequest'in yeni bir örneğini oluşturur ve istediğiniz dosya biçimi ve dosyalarla başlatır. Ardından, bu onarım isteğiyle API onarımını çağırır. Repaired işlevi, genişletilmiş sorgu parametrelerini de destekler. Yukarıda belirtilen kod parçacığının ayrıntıları aşağıdadır:
+PostRepairRequest sınıfının yeni bir örneğini oluştururken, istenen dosya formatını ve dosyaları başlatır. Ardından bu onarım isteği ile onarım API’sini çağırır. Onarım işlevi genişletilmiş sorgu parametrelerini de destekler. Yukarıdaki kod parçasının detayları aşağıdadır:
 
 ```CSharp
 
@@ -65,10 +66,10 @@ Bu, PostRepairRequest'in yeni bir örneğini oluşturur ve istediğiniz dosya bi
 
 ```
 
-## Çözüm
+## Sonuç
 
-Aspose.Cells Cloud API ile Excel veya başka bir elektronik tablo dosyasını kolayca onarabilirsiniz. Basit API aramaları yaparak ve uygun onarım seçeneklerini ayarlayarak çeşitli dosya onarım gereksinimlerini verimli bir şekilde karşılayabilirsiniz. Verimliliği artırmak ve geliştirme süresinden tasarruf etmek için Aspose.Cells Cloud API'i uygulamalarınıza entegre edin.
+Aspose.Cells Cloud API ile Excel veya diğer elektronik tablo dosyalarını kolayca onarabilirsiniz. Basit API çağrıları yaparak ve uygun onarım seçeneklerini ayarlayarak, çeşitli dosya onarım ihtiyaçlarını verimli şekilde yerine getirebilirsiniz. Aspose.Cells Cloud API’yi uygulamalarınıza entegre ederek üretkenliği artırın ve geliştirme süresinden kazanın.
 
- Yukarıdaki örnek kodun yalnızca tanıtım amaçlı olduğunu ve pratikte kullanırken geçerli kimlik doğrulama bilgileri ve dosya yollarıyla değiştirmeniz gerekeceğini lütfen unutmayın. Ayrıca, Aspose.Cells Cloud API, elektronik tablo oluşturma, düzenleme, düzenleme ve veri işleme gibi birçok başka özellik sunar. Ayrıntılı API dokümantasyonu ve örnek kod şu adreste bulunabilir:[resmi Aspose web sitesinin geliştirici kılavuzu](/developer-guide/).
+Lütfen yukarıdaki örnek kodun yalnızca демонстрацион (gösterim) amaçlı olduğunu unutmayın. Pratikte kullanırken geçerli kimlik doğrulama kimlik bilgileri ve dosya yollarıyla değiştirmeniz gerekir. Ayrıca, Aspose.Cells Cloud API, elektronik tablo oluşturma, düzenleme, işleme ve veri işleme gibi birçok başka özellik de sunar. Detaylı API belgeleri ve örnek kodlar [Aspose’in resmi web sitesinin geliştirici kılavuzunda](/developer-guide/) yer almaktadır.
 
-Bu makalenin, Aspose.Cells Cloud API'i dosya onarımı için nasıl kullanacağınızı anlamanıza yardımcı olmasını umuyoruz. Uygulamanızda bol şans!
+Umarız bu makale, Aspose.Cells Cloud API’yi dosya onarımı amacıyla nasıl kullanacağınızı anlamanzda yardımcı olur. Uygulamanızda başarılar dileriz!

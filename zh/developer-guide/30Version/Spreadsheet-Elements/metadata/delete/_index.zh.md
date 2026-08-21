@@ -1,82 +1,97 @@
-﻿---
-title: 删除 Excel 文件的元数据
-second_title: Documen
-linktitle: 不使用存储删除
-type: docs
-url: /zh/metadata/delete/
-keywords: Deleting metadata from Excel files
-description: Aspose.Cells Cloud REST API 支持从 Excel 文件中删除元数据。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 55
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、删除 Excel 文件上的元数据。
 ---
-此 REST API 表示从多个 Excel 文件中删除 `metadata`。
+title: "从 Excel 文件中删除元数据"
+second_title: "文档"
+linktitle: "无需使用存储空间删除"
+type: docs
+url: /metadata/delete/
+keywords: "Aspose.Cells, 删除元数据, Excel API, 工作簿属性"
+description: "通过 Aspose.Cells Cloud API 删除工作簿元数据（作者、标题、自定义属性）。包含端点、身份验证、参数、cURL 和 SDK 示例。"
+weight: 55
+ArticleTitle: "从 Excel 文件中删除元数据 – Aspose.Cells Cloud 文档"
+---
 
-## 重新设置 API
+**概述**  
+删除元数据（Delete Metadata）操作会永久移除上传的 Excel 文件中的所有工作簿属性（标准属性和自定义属性），并返回处理后的文件。
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/metadata/delete
- 
+**前置条件**  
+- 有效的 Aspose.Cells Cloud JWT 令牌（可通过 OAuth 2.0 身份验证流程获取）。  
+- API 版本 **v3.0**（本示例中使用的端点）。  
+- 若使用 SDK，请安装对应语言的 Aspose.Cells Cloud SDK（例如通过 NuGet、Maven、npm、pip、CPAN 或 Go modules）。
+
+此 REST API 可从一个或多个 Excel 文件中删除**元数据**。它将移除工作簿属性，如作者、标题和自定义数据，并返回清理后的文件。
+
+## API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/metadata/delete
 ```
 
-请求参数为：
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|文件|文件|表单数据|要上传的文件|
-|类型|细绳|询问|全部|
+Aspose.Cells Cloud API 是安全的，需要<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/DeleteMetadata)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### **请求参数**
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名 | 类型   | 位置     | 描述                                      |
+| ------ | ------ | -------- | ----------------------------------------- |
+| file   | file   | formData | 待上传以执行**元数据**删除操作的 Excel 文件 |
+| type   | string | query    | 操作类型；设置为 **all** 以删除所有**元数据** |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+<a href="https://apireference.aspose.cloud/cells/#/DeleteMetadata" target="_blank" rel="noopener noreferrer">OpenAPI 规范</a> 定义了一个公开可访问的编程接口，让您能直接从网页浏览器发起 REST 请求。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/metadata/delete" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'  
+curl -v "https://api.aspose.cloud/v3.0/cells/metadata/delete?type=all" \
+  -X POST \
+  -H "Authorization: Bearer <jwt token>" \
+  -F "file=@file1.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "file1.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+**错误响应** 可能包括：
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+- **400 Bad Request（错误请求）** – 缺少文件或 `type` 参数值无效。  
+- **401 Unauthorized（未授权）** – JWT 令牌无效或缺失。  
+- **500 Internal Server Error（内部服务器错误）** – 服务器端处理错误。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+API 将返回一个 JSON 对象，其中包含 `Error` 字段，用于描述每种情况下的详细错误信息。
+
+| 状态码 | 含义 | 描述 |
+|--------|------|------|
+| 200 | OK（成功） | 元数据已删除，文件已返回 |
+| 400 | Bad Request（错误请求） | 缺少文件或 `type` 参数无效 |
+| 401 | Unauthorized（未授权） | JWT 令牌无效或缺失 |
+| 500 | Internal Server Error（内部服务器错误） | 服务器处理失败 |
+
+## Cloud SDK 家族
+
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，使您能够专注于项目任务。请查阅 <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>，获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用不同语言的 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

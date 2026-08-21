@@ -1,112 +1,163 @@
-﻿---
-title: Aspose.Cells Cloud Webb API - Lägg till ett kalkylblad i ett kalkylblad
-second_title: Documen
-ArticleTitle: Add a Worksheet to a Spreadshee
-linktitle: Lägg till kalkylblad i kalkylblad
-type: docs
-url: /sv/add-worksheet-to-spreadsheet/
-keywords: Aspose.Cells Cloud Web API, Add Worksheet, Spreadsheet Management, RES
-description: Med Cloud Web API kan utvecklare effektivt lägga till nya kalkylblad i en arbetsbok, vilket ger kontroll över kalkylbladets typ, position och namn. Denna funktion förbättrar hanteringen och flexibiliteten i arbetsböcker.
-weight: 100
-kwords: Excel, Office Moln, REST, Kalkylblad, PDF, CSV, JSON, Markdown, Hantera Excel Arbetsblad, Skapande av dynamiska kalkylblad
 ---
-Lägga till ett kalkylblad i kalkylbladet och ange typ och plats för kalkylbladet.
+title: "Aspose.Cells Cloud Excel-add-in för att lägga till kalkylblad – Infoga nya kalkylblad med typ- och positionskontroll"
+second_title: "Dokument"
+ArticleTitle: "Hur man lägger till kalkylblad i Excel – Infoga nya kalkylblad på specifika platser"
+linktitle: "Lägg till kalkylblad i kalkylark"
+type: docs
+url: /add-worksheet-to-spreadsheet/
+keywords: "excel, lägg till kalkylblad, aspose cells api, kalkylark, moln-api, kalkylbladstyp, kalkylbladsposition"
+description: "Lär dig hur du programmatiskt lägger till ett nytt kalkylblad, diagramkalkylblad eller makrokalkylblad till en Excel-arbetsbok med Aspose.Cells Cloud API. Kontrollera kalkylbladstyp, namn och infogningsposition med ett enda REST-anrop."
+weight: 100
+---
 
-|**Arbetsbladstyp** | Beskrivning|
-|:- |:- |
-|**VB** | Visual Basic-modulen|
-|**Arbetsblad** | Arbetsblad|
-|**Diagram** | Diagramblad|
-|**BIFF4Makro** | BIFF4 Makroark|
-|**InternationellMakro** | Internationellt makroark|
-|**Andra** | Internationellt makroark|
-|**Dialog** | Dialogarbetsblad|
+Lägg programmatiskt till kalkylblad i Excel-filer med full kontroll över kalkylbladstyp och plats. Infoga vanliga kalkylblad, diagramkalkylblad eller makrokalkylblad på valfri plats i arbetsboken. Denna REST-baserade åtgärd möjliggör automatiserad hantering och organisering av Excel-arbetsböcker.
 
-## **Lägg till arbetsblad i kalkylblad API**
+**Förutsättningar**
+
+- Ett aktivt Aspose.Cells Cloud-konto med en giltig JWT-åtkomsttoken.
+- Ett konfigurerat molnlagernamn (t.ex. `CompanyOneDrive`) där arbetsboken ska sparas.
+- Målarbetsboken måste vara tillgänglig i den angivna lagringen och, om den är skyddad, måste det korrekta lösenordet anges.
+
+| **Kalkylbladstyp**     | Beskrivning                                       |
+| :--------------------- | :------------------------------------------------ |
+| **VB**                 | Visual Basic-modul                                |
+| **Worksheet**          | Vanligt kalkylblad                                |
+| **Chart**              | Diagramkalkylblad                                 |
+| **BIFF4Macro**         | BIFF4-makrokalkylblad                             |
+| **InternationalMacro** | Internationellt makrokalkylblad                   |
+| **Other**              | Anpassad eller mindre vanlig kalkylbladstyp som inte listas ovan |
+| **Dialog**             | Dialogkalkylblad                                  |
+
+## **Lägg till kalkylblad i kalkylark – API**
+
+### Webb-API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet
+PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet
 ```
 
-### **Begäranparametrar:**
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp| Beskrivning|
-|:- |:- |:- |:- |
-|Kalkylblad|Fil|FormulärData|Ladda upp kalkylbladsfilen.|
-|arktyp|Sträng|Fråga|Anger namnet på det nya kalkylbladet. Om inget namn anges kommer ett standardnamn att tilldelas.|
-|placera|Heltal|Fråga|Anger positionen där det nya kalkylbladet ska infogas. Om inget anges läggs kalkylbladet till i slutet av arbetsboken.|
-|arknamn|Sträng|Fråga|Anger vilken typ av kalkylblad som ska läggas till. Om inget anges används en standardkalkylbladstyp.|
-|utväg|Sträng|Fråga|(Valfritt) Mappsökvägen där arbetsboken lagras. Standardvärdet är null.|
-|outStorageName|Sträng|Fråga|Namn på utdatafilens lagringsplats.|
-|område|Sträng|Fråga|Inställningen för kalkylbladets region.|
-|lösenord|Sträng|Fråga|Lösenordet för att öppna kalkylbladsfilen.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-### **Svar**
+### Begäransparametrar
+
+| Parameter Name     | Typ     | Plats     | Beskrivning                                                                                                                                                                                          |
+| :----------------- | :------ | :-------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Spreadsheet**    | Fil     | FormData  | **Obligatorisk.** Excel-arbetsboken (.xlsx, .xls, etc.) till vilken ett nytt kalkylblad kommer att läggas till.                                                                                      |
+| **sheetType**      | Sträng  | Fråga     | **Valfri.** Typen av kalkylblad som ska skapas. Acceptabla värden är `worksheet` (standard), `chartsheet`, `macrosheet`, `vbmodule` och `dialog`.                                                  |
+| **position**       | Heltal | Fråga     | **Valfri.** Nullbaserat index där det nya kalkylbladet ska infogas. `0` infogar före det första kalkylbladet; `2` infogar som tredje kalkylblad. Utelämna för att lägga till kalkylbladet sist.     |
+| **sheetName**      | Sträng  | Fråga     | **Valfri.** Namn på det nya kalkylbladet. Måste vara unikt inom arbetsboken. Om utelämnas genereras ett standardnamn som "BladX".                                                                  |
+| **outPath**        | Sträng  | Fråga     | **Valfri.** Målmapp i molnlagringen där den ändrade arbetsboken ska sparas. Om `null` eller utelämnad sparas arbetsboken på samma plats som källfilen eller till en standardväg.                     |
+| **outStorageName** | Sträng  | Fråga     | **Obligatorisk.** Identifierare för den konfigurerade molnlagringen (t.ex. `CompanyOneDrive`) där utdatafilen ska skrivas.                                                                          |
+| **region**         | Sträng  | Fråga     | **Valfri.** Språkinställning (t.ex. `sv-SE`) som kan påverka formatering och regionala regler i det nya kalkylbladet.                                                                              |
+| **password**       | Sträng  | Fråga     | **Valfri.** Lösenord för att dekryptera och ändra en lösenordsskyddad arbetsbok. Utelämna om filen inte är krypterad.                                                                               |
+
+### Svar
+
+Vid framgång returnerar API:et **HTTP 200 OK** (eller **201 Created** när en ny fil genereras) med den uppdaterade arbetsboksfilen.
 
 ```json
-[
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
-    }
-]
+{
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream"
+  }
+}
 ```
 
-### Felkoder
+**HTTP-statuskoder**
 
-- **400 Felaktig begäran**Ogiltig Apose.Cells Cloud API URI.
-- **401 Obehörig**Ogiltig åtkomsttoken. Eller ogiltigt klient-ID och hemlighet.
-- **404 Hittades inte**Kalkylbladsfilen är inte tillgänglig.
-- **500 Serverfel**Kalkylbladet har stött på ett fel vid hämtning av beräkningsdata.
+| Kod | Betydelse             | Beskrivning                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applicerades framgångsrikt; svaret innehåller åtgärddetaljer. |
+| 400  | Felaktig förfrågan    | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds).  |
+| 401  | Obehörig              | Ogiltig eller saknad JWT-token.                                   |
+| 413  | För stor nyttolast    | Den uppladdade filen överskrider storleksgränsen.                 |
+| 500  | Internt serverfel     | Oväntat serverfel.                                                |
 
-## Var ska vi använda Lägg till kalkylblad till kalkylblad API?
+## Var bör vi använda API:et för att lägga till kalkylblad i kalkylark?
 
-När du behöver lägga till ett kalkylblad för ett kalkylblad kan du använda API.
+- **Automatiserad rapportgenerering** – Skapa och infoga månadsvisa kalkylblad (t.ex. `2024‑05`) dynamiskt vid generering av rapporter över finansiella tillstånd.
+- **Batch-mallinitiering** – Lägg till ett dedikerat analyskalkylblad för varje ny kund eller projekt vid generering av offert- eller förslagssatser i bulk.
+- **Dynamisk instrumentpanelutvidgning** – Infoga nya diagramkalkylblad i realtid när nya datadimensioner blir tillgängliga.
+- **Kompatibilitet och revisionsarkivering** – Lägg automatiskt till bevisinsamlingskalkylblad under årliga revisioner, med varje inspektionspunkt isolerad.
+- För att ta bort ett kalkylblad, se åtgärden **[Ta bort kalkylblad](/delete-worksheet/)**.
+- För att flytta ett kalkylblad, se åtgärden **[Flytta kalkylblad](/move-worksheet/)**.
 
-## Varför ska du använda Lägg till kalkylblad i kalkylblad API?
+## Varför bör du använda API:et för att lägga till kalkylblad i kalkylark?
 
-- Lägg till ett kalkylblad i kalkylbladet och ange kalkylbladets typ och plats.
-- Utvecklingen kan snabbt slutföras via det befintliga SDK:t.
+- **Utvecklarvänligt** – Aspose.Cells Cloud tillhandahåller SDK:er för flera språk, vilket minskar utvecklingsarbetet och erbjuder omfattande dokumentation.
+- **Lägre arbetskostnader** – Eliminerar behovet av manuell skapande av kalkylblad och repetitiva kopiera/klistra-uppgifter.
+- **Betala per användning** – Du betalar endast för de API-anrop som du faktiskt gör.
+- **Ingen underhållsbelastning** – Inga servrar att hantera, inga programuppdateringar och inga kompatibilitetsproblem.
 
-## Så här använder du Lägg till kalkylblad i kalkylblad API med SDK:er
+## Hur man använder API:et för att lägga till kalkylblad i kalkylark med SDK:er
 
-### Lägg till kalkylblad i kalkylblad API Specifikation
+### API-specifikation för att lägga till kalkylblad i kalkylark
 
- De[Lägg till kalkylblad i kalkylblad API Specifikation](https://reference.aspose.cloud/cells/#/ManagementController/AddWorksheetToSpreadsheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[API-specifikationen för att lägga till kalkylblad i kalkylark](https://reference.aspose.cloud/cells/#/ManagementController/AddWorksheetToSpreadsheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för kommandoraden för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Förfrågan" tabName12="Svar" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet?worksheetName=Blad1" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json" \
+     -F "Spreadsheet=@/sökväg/till/Book1.xlsx"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64-kodad)",
+  "contentType": "MIME-typ",
+  "fileDownloadName": "valfritt filnamn"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Använd Aspose.Cells Cloud SDK:er
 
-Att använda SDK:t är det snabbaste sättet att utveckla, eftersom det abstraherar detaljer på låg nivå, vilket gör att du kan lägga till ett kalkylblad i ett kalkylblad med kort kod.
- Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK abstraherar lågnivådetaljer, vilket gör att du kan lägga till ett kalkylblad med minimal kod. Se den fullständiga listan över SDK:er i [GitHub-förrådet](https://github.com/aspose-cells-cloud).
 
-Följande kodexempel visar hur man gör API-anrop till Aspose.Cells-webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar tjänsten med olika SDK:er:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_AddWorksheet.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_AddWorksheet.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_AddWorksheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_AddWorksheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_AddWorksheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_AddWorksheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_AddWorksheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_AddWorksheet.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}  
+{{<tab tabNum="1" >}}  
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_AddWorksheet.cs" >}}  
+{{</tab>}}  
+{{<tab tabNum="2" >}}  
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_AddWorksheet.java" >}}  
+{{</tab>}}  
+{{<tab tabNum="3" >}}  
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_AddWorksheet.php" >}}  
+{{</tab>}}  
+{{<tab tabNum="4" >}}  
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_AddWorksheet.rb" >}}  
+{{</tab>}}  
+{{<tab tabNum="5" >}}  
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_AddWorksheet.ts" >}}  
+{{</tab>}}  
+{{<tab tabNum="6" >}}  
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_AddWorksheet.py" >}}  
+{{</tab>}}  
+{{<tab tabNum="7" >}}  
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_AddWorksheet.pl" >}}  
+{{</tab>}}  
+{{<tab tabNum="8" >}}  
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_AddWorksheet.go" >}}  
+{{</tab>}}  
 {{< /tabs >}}

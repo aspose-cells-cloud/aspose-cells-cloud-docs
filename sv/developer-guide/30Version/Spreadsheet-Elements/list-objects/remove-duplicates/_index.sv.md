@@ -1,65 +1,84 @@
-﻿---
-title: Listobjekt ta bort dubbletter
-second_title: Documen
-linktitle: Ta bort dubblett
-type: docs
-keywords: list object(table) remove duplicates 
-url: /sv/list-objects/remove-duplicates/
-description:  Ta bort dubbletter på listobjekt.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Listobjekt ta bort dubbletter
 ---
-Denna REST API indikerar att dubbletter ska tas bort från listobjektet.
+title: "Ta bort dubbletter från en ListObject – Aspose.Cells Cloud API-dokumentation"
+second_title: "Dokument"
+linktitle: "Ta bort dubbletter"
+type: docs
+keywords: "ta bort dubbletter, listobject, Aspose.Cells Cloud API, Excel, REST"
+url: /list-objects/remove-duplicates/
+description: "Lär dig hur du tar bort dubbletter från en ListObject i ett Excel-ark med Aspose.Cells Cloud REST API. Inkluderar endpoint, parametrar, autentisering samt exempel på begäranden och svar."
+weight: 20
+---
 
-## RSET API
+Denna REST API tar bort dubbletter från en **ListObject** i ett Excel-ark.
+
+## REST API
 
 ```bash
-
-POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
-
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
 ```
 
-Begäranparametrarna är:
+### **Begärandeparametrar**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp| Beskrivning|
-|:- |:- |:- |:- |
-|namn|Sträng|Väg||
-|arknamn|Sträng|Väg||
-|listaObjektindex|Heltal|Väg||
-|mapp|Sträng|Fråga||
-|lagringsnamn|Sträng|Fråga||
+| Parameternamn       | Typ     | Plats  | Beskrivning                                               |
+| ------------------- | ------- | ------ | --------------------------------------------------------- |
+| **name**            | String  | Path   | Namnet på Excel-filen.                                    |
+| **sheetName**       | String  | Path   | Namnet på arket som innehåller listobjektet.              |
+| **listObjectIndex** | Integer | Path   | Det nollbaserade indexet för det listobjekt som ska bearbetas. |
+| **folder**          | String  | Query  | (Valfritt) Sökvägen till mappen där filen lagras.         |
+| **storageName**     | String  | Query  | (Valfritt) Namnet på lagringstjänsten.                    |
 
- De[OpenAPI-specifikation](https://reference.aspose.cloud/cells/#/ListObjectsController/PostWorksheetListObjectRemoveDuplicates) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Exempel på begäran (cURL)
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 {{< tab tabNum="1" >}}
 
-```powershell
-curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
-```powershell
-
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "DuplicateRowsRemoved": 12,
+  "Message": "Dubbletterna togs framgångsrikt bort."
+}
 ```
 
 {{< /tab >}}
-
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Svar
 
-Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Se GitHub-arkivet för en komplett lista över Aspose.Cells Cloud SDK:er.
+Vid lyckad begäran returnerar tjänsten ett JSON-objekt som liknar exemplet ovan. Fälten är:
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+- **Code** – HTTP-statuskod (`200` för lyckad åtgärd).
+- **Status** – Textuell beskrivning av statusen.
+- **DuplicateRowsRemoved** – Antal rader som togs bort.
+- **Message** – Ytterligare information om åtgärden.
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                           |
+|-----|-----------------------------|-------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Bad Request                 | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Unauthorized                | Ogiltigt eller saknat JWT-token.                      |
+| 413 | Payload Too Large           | Den uppladdade filen överskrider storleksgränsen.     |
+| 500 | Internal Server Error       | Oväntat serverfel.                                    |
+
+## Cloud SDK-familj
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Kontrollera GitHub-förrådet för en komplett lista över Aspose.Cells Cloud SDK:n.
+
+Följande kodexempel visar hur du anropar Aspose.Cells webbtjänster med olika SDK:n:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

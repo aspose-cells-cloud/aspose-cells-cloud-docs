@@ -1,64 +1,65 @@
-﻿---
-title: كيفية تحويل تنسيقات ملفات جداول البيانات باستخدام Aspose.Cells Clou
-linktitle: كيفية تحويل تنسيق ملف جدول البيانات
-type: docs
-url: /ar/how-to-convert-file-formats
-description: كيفية تحويل تنسيقات الملفات باستخدام Aspose.Cells Cloud
-weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، كيفية تحويل تنسيقات الملفات من خلال Aspose.Cells السحابة
 ---
-## مقدمة
+title: "كيفية تحويل تنسيقات ملفات جداول البيانات باستخدام Aspose.Cells Cloud"
+linktitle: "كيفية تحويل تنسيقات ملفات جداول البيانات"
+type: docs
+url: /how-to-convert-file-formats
+description: "كيفية تحويل تنسيقات الملفات باستخدام Aspose.Cells Cloud."
+weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, كيفية تحويل تنسيقات الملفات عبر Aspose.Cells Cloud
+---
 
-يوفر جدول بيانات السحابة Aspose.Cells مجموعة من الواجهات ثنائية القناة لتحويل ملفات جداول البيانات المحلية والسحابية. يدعم تنسيقات مثل Excel (XLS، XLSX)، وCSV، وHTML، وPDF، مما يجعل التحويل سهلاً لتلبية مختلف الاحتياجات.
+## المقدمة
 
-### ثلاثة أوضاع تحويل · نموذج كائن موحد · تغطية تنسيق كاملة
+تقدم واجهة برمجة تطبيقات جداول بيانات Aspose.Cells Cloud مجموعة من الواجهات ذات القناتَين للتحويل، سواء كانت ملفات جداول البيانات محلية أو موجودة في السحابة. وتدعم التنسيقات مثل Excel (XLS و XLSX) وCSV وHTML وPDF، مما يسهّل عملية التحويل لتلبية مختلف الاحتياجات.
+
+### ثلاثة أوضاع للتحويل · نموذج كائن موحّد · تغطية كاملة للتنسيقات
 
 ![أوضاع التحويل](image.png)
 
 ## **مصفوفة التحويل الأساسية**
 
-| نوع التحويل| مستوى الكائن| نموذجي API| تنسيقات الإخراج|
-|-----------------|-------------|---------------------------|--------------------------|
-|**التحويل المحلي**  | كتاب العمل|`ConvertSpreadsheet`            | PDF/XLSX/JSON/.... أكثر من 30 تنسيقًا|
-|| ورقة عمل|`ConvertWorksheetToImage`       |PNG/JPEG/SVG                   |
-|||`ConvertWorksheetToPdf`         | ملف بي دي إف|
-|| طاولة|`ConvertTableToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertTableToPdf`             | ملف بي دي إف|
-|||`ConvertTableToCsv`             | ملف CSV|
-|||`ConvertTableToHtml`            | HTML|
-|||`ConvertTableToJson`            | HTML|
-|| يتراوح|`ConvertRangeToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertRangeToPdf`             | ملف بي دي إف|
-|||`ConvertRangeToCsv`             | ملف CSV|
-|||`ConvertRangeToHtml`            | HTML|
-|||`ConvertRangeToJson`            | JSON|
-|| جدول|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertChartToPdf`             |PDF                            |
-|**تحويل السحابة**  | كتاب العمل|`ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... أكثر من 30 تنسيقًا|
-|| ورقة عمل|`ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... أكثر من 30 تنسيقًا|
-|| طاولة|`ExportTableAsFormat`           | PDF/XLSX/JSON/.... أكثر من 30 تنسيقًا|
-|| يتراوح|`ExportRangeAsFormat`           | PDF/XLSX/JSON/.... أكثر من 30 تنسيقًا|
-|| جدول|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... أكثر من 30 تنسيقًا|
-|**حفظ باسم السحابة**     | كتاب العمل|`SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... أكثر من 30 تنسيقًا|
+| نوع التحويل            | مستوى الكائن        | واجهة برمجة التطبيق النموذجية   | تنسيقات الإخراج               |
+|------------------------|--------------------|----------------------------------|-------------------------------|
+| **التحويل المحلي**     | Workbook (كتاب عمل) | `ConvertSpreadsheet`             | PDF/XLSX/JSON/.... +30 تنسيق |
+|                        | Worksheet (ورقة عمل) | `ConvertWorksheetToImage`       | PNG/JPEG/SVG                  |
+|                        |                    | `ConvertWorksheetToPdf`         | PDF                           |
+|                        | Table (جدول)       | `ConvertTableToImage`           | PNG/JPEG/SVG/....             |
+|                        |                    | `ConvertTableToPdf`             | PDF                           |
+|                        |                    | `ConvertTableToCsv`             | CSV                           |
+|                        |                    | `ConvertTableToHtml`            | HTML                          |
+|                        |                    | `ConvertTableToJson`            | JSON                          |
+|                        | Range (نطاق)       | `ConvertRangeToImage`           | PNG/JPEG/SVG/....             |
+|                        |                    | `ConvertRangeToPdf`             | PDF                           |
+|                        |                    | `ConvertRangeToCsv`             | CSV                           |
+|                        |                    | `ConvertRangeToHtml`            | HTML                          |
+|                        |                    | `ConvertRangeToJson`            | JSON                          |
+|                        | Chart (رسم بياني)  | `ConvertChartToImage`           | PNG/JPEG/SVG/....             |
+|                        |                    | `ConvertChartToPdf`             | PDF                           |
+| **التحويل السحابي**    | Workbook (كتاب عمل) | `ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... +30 تنسيق |
+|                        | Worksheet (ورقة عمل) | `ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... +30 تنسيق |
+|                        | Table (جدول)       | `ExportTableAsFormat`           | PDF/XLSX/JSON/.... +30 تنسيق |
+|                        | Range (نطاق)       | `ExportRangeAsFormat`           | PDF/XLSX/JSON/.... +30 تنسيق |
+|                        | Chart (رسم بياني)  | `ExportChartAsFormat`           | PDF/XLSX/JSON/.... +30 تنسيق |
+| **الحفظ في السحابة**   | Workbook (كتاب عمل) | `SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... +30 تنسيق |
 
-### **تحويل الملفات المحلية**
+### **التحويل المحلي للملفات**
 
 ```csharp
-// Get Cells Cloud API client
+// الحصول على عميل واجهة برمجة تطبيقات Aspose.Cells Cloud
 CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
 ```
 
-- **Excel تحويل الملفات**
+- **تحويل ملف Excel**
 
 ```c#
-// Convert local Excel to PDF
+// تحويل ملف Excel المحلي إلى PDF
 cellsApi.ConvertSpreadsheet(new ConvertSpreadsheetRequest { Spreadsheet = "EmployeeSalesSummary.xlsx", format = "pdf" }, "EmployeeSalesSummary.pdf");
 ```
 
-- **تحويل مخطط Excel إلى ملف SVG**
+- **تحويل رسم بياني في Excel إلى ملف SVG**
 
 ```c#
-// Convert local Excel Chart to Svg
+// تحويل الرسم البياني في Excel المحلي إلى تنسيق SVG
 cellsApi.ConvertChartToImage(new SDK.Request.ConvertChartToImageRequest
 {
     Spreadsheet = "EmployeeSalesSummary.xlsx",
@@ -69,10 +70,10 @@ cellsApi.ConvertChartToImage(new SDK.Request.ConvertChartToImageRequest
 
 ```
 
-- **تحويل الجدول إلى ملف CSV**
+- **تحويل جدول إلى ملف CSV**
 
 ```C#
-# Convert the sale logs table of the Sales worksheet to csv
+# تحويل جدول سجلات المبيعات في ورقة العمل "Sales" إلى تنسيق CSV
 result = api.ConvertTableToCsv( new SDK.Request.ConvertTableToCsvRequest
 {
     Spreadsheet = "EmployeeSalesSummary.xlsx",
@@ -83,19 +84,19 @@ result = api.ConvertTableToCsv( new SDK.Request.ConvertTableToCsvRequest
 
 ```
 
-### **تحويل الملفات السحابية**
+### **التحويل السحابي للملفات**
 
-يجب أيضًا الحصول على العميل Aspose Cells Cloud API.
+يجب أيضًا الحصول على عميل واجهة برمجة تطبيقات Aspose.Cells Cloud.
 
 ```csharp
-// Get Cells Cloud API client
+// الحصول على عميل واجهة برمجة تطبيقات Aspose.Cells Cloud
 CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
 ```
 
 - **تحويل Excel إلى PDF**
 
 ```csharp
-// Convert cloud Excel to PDF, Save to local file
+// تحويل ملف Excel الموجود في السحابة إلى PDF وحفظه محليًا
 cellsApi.ExportSpreadsheetAsFormat( new SDK.Request.ExportSpreadsheetAsFormatRequest 
 { 
     name = "EmployeeSalesSummary.xlsx" ,
@@ -104,10 +105,10 @@ cellsApi.ExportSpreadsheetAsFormat( new SDK.Request.ExportSpreadsheetAsFormatReq
 } , "EmployeeSalesSummary.pdf");   
 ```
 
-- **تحويل ورقة العمل Excel إلى pdf**
+- **تحويل ورقة عمل في Excel إلى PDF**
 
 ```csharp
-// Convert cloud Excel worksheet to PDF, Save to local file
+// تحويل ورقة عمل في Excel الموجودة في السحابة إلى PDF وحفظها محليًا
 cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
 { 
     name = "EmployeeSalesSummary.xlsx",
@@ -118,7 +119,7 @@ cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest
 ```
 
 ```csharp
-// Convert cloud Excel worksheet to PDF, Save to local file
+// تحويل ورقة عمل في Excel الموجودة في السحابة إلى PDF وحفظها محليًا
 cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
 { 
     name = "EmployeeSalesSummary.xlsx",
@@ -128,10 +129,10 @@ cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest
 } , "EmployeeSalesSummary_Sales.pdf");   
 ```
 
-## تثبيت وتكوين SDK السحابي Aspose.Cells
+## تثبيت وتهيئة SDK لـ Aspose.Cells Cloud
 
-قم بتثبيت الحزمة Aspose.Cells-Cloud NuGet في مشروعك .NET، ويمكنك استخدام وحدة التحكم Package Manager NuGet أو Package Manager NuGet في Visual Studio.
-إليك كيفية تثبيت الحزمة باستخدام وحدة التحكم في إدارة الحزم:
+قم بتثبيت حزمة Aspose.Cells-Cloud NuGet في مشروع .NET الخاص بك، يمكنك استخدام وحدة تحكم مدير الحزم NuGet أو مدير حزم NuGet في Visual Studio.  
+إليك كيفية تثبيت الحزمة باستخدام وحدة تحكم مدير الحزم:
 
 ```powershell
 
@@ -139,7 +140,7 @@ Install-Package Aspose.Cells-Cloud
 
 ```
 
-يُنشئ مثيلًا جديدًا لفئة CellsApi، مع تهيئة مُعرّف العميل وسرّه. فيما يلي تفاصيل مقتطف الكود المذكور أعلاه:
+قم بإنشاء مثيل جديد من فئة CellsApi، وقم بتهيئته باستخدام معرّف العميل وسر العميل. فيما يلي تفاصيل مقتطف الكود المذكور أعلاه:
 
 ```CSharp
 
@@ -147,20 +148,22 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ```
 
-تأكد من استبدال الخاص بك_API_مفتاحك_برنامج_SID ومعرفك_برنامج_المفتاح مع المفتاح الفعلي API ومعرف تطبيق SID ومفتاح التطبيق.
+تأكد من استبدال YOUR_API_KEY وYOUR_APP_SID وYOUR_APP_KEY بمفتاح API الفعلي وSID للتطبيق ومفتاح التطبيق الفعليين.
 
-## **حالات استخدام تحويل تنسيق الملف**
+## **حالات استخدام تحويل تنسيقات الملفات**  
 
- Aspose Cells Cloud API توفر خدمات على مستوى المؤسسة**تحويل جدول البيانات** القدرات اللازمة لسيناريوهات الأعمال الحرجة:
+تقدم واجهة برمجة تطبيقات Aspose.Cells Cloud قدرات **تحويل جداول البيانات** على مستوى المؤسسات لسيناريوهات الأعمال الحرجة:  
 
 1. **Excel → PDF**  
- إنشاء تقارير جاهزة للطباعة مع التنسيق المحفوظ
+   إنشاء تقارير جاهزة للطباعة مع الحفاظ على التنسيق  
 2. **جداول البيانات → HTML**  
- تضمين الجداول التفاعلية في تطبيقات الويب
+   تضمين جداول تفاعلية في تطبيقات الويب  
 3. **CSV → Excel (XLSX)**  
- تحويل البيانات الخام إلى مصنفات قابلة للتحليل
-4. **تحويل التنسيق المخصص**  
- التحويل بين أكثر من 20 تنسيقًا (XLS، XLSB، ODS، FODS، TSV)
+   تحويل البيانات الخام إلى كتب عمل قابلة للتحليل  
+4. **ترميز تنسيقات مخصصة**  
+   التحويل بين أكثر من 20 تنسيق (XLS و XLSB و ODS و FODS و TSV)  
 ![التحويل من تنسيقات الإدخال إلى تنسيقات الإخراج](image-1.png)
 
-## **الاستنتاج: تبسيط التحويلات بمكالمة واحدة على الرقم API**
+## **الخاتمة: تبسيط عمليات التحويل باستخدام استدعاء واحد لواجهة برمجة التطبيق**  
+
+---

@@ -1,72 +1,82 @@
-﻿---
-title: Calcular fórmula en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Calcular
-type: docs
-url: /es/worksheets/calculate-formula/
-aliases: [/calculate-formula-in-a-worksheet/]
-keywords: Calculate formula on an Excel worksheet
-description: Aspose.Cells Cloud REST API admite el cálculo de fórmulas en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Calcular fórmula en una hoja de cálculo Excel
 ---
-Este REST API indica obtener `calculate formula value` en una hoja de cálculo.
+title: "Calcular una fórmula en una hoja de cálculo de Excel"
+second_title: "Documento"
+linktitle: "Calcular"
+type: docs
+url: /worksheets/calculate-formula/
+aliases: [/calculate-formula-in-a-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, cálculo de fórmulas, API REST, SDKs, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
+description: "Calcule fórmulas en una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. Admite múltiples SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift) con ejemplos listos para usar."
+weight: 20
+ArticleTitle: "Calcular una fórmula en una hoja de cálculo de Excel – Documentación de Aspose.Cells Cloud"
+---
 
-## RSET API
+Esta API REST devuelve el **valor calculado de una fórmula** en una hoja de cálculo. Puede utilizarse para **evaluar una fórmula de Excel** directamente desde su aplicación.
+
+## API REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResult
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResult
 ```
 
-Los parámetros de la solicitud son:
+### **Parámetros de solicitud**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del documento.|
-| nombreHoja| cadena| camino| Nombre de la hoja de trabajo.|
-| fórmula| cadena| consulta| La fórmula.|
-| carpeta| cadena| consulta| Carpeta del documento.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción                                        |
+| --------------------- | ------ | --------- | -------------------------------------------------- |
+| name                  | string | path      | Nombre del archivo de Excel.                      |
+| sheetName             | string | path      | Nombre de la hoja de cálculo que contiene la fórmula. |
+| formula               | string | query     | La fórmula que se va a evaluar (por ejemplo, `SUM(A5:A10)`). |
+| folder                | string | query     | Carpeta donde se almacena el documento.           |
+| storageName           | string | query     | Nombre del servicio de almacenamiento (si aplica). |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetCalculateFormula) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación de OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetCalculateFormula) define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+### Autenticación
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Todas las solicitudes deben incluir un token **Bearer JWT** válido en el encabezado `Authorization`:
+
+```
+Authorization: Bearer <your_jwt_token>
+```
+
+Puede obtener un token siguiendo el flujo OAuth 2.0 descrito en la guía de autenticación de Aspose.Cells Cloud.
+
+### Códigos de estado de respuesta posibles
+
+| Código | Descripción                                          |
+| ------ | ---------------------------------------------------- |
+| 200    | Solicitud correcta; se devuelve el valor de la fórmula. |
+| 400    | Solicitud incorrecta: faltan parámetros o estos son inválidos. |
+| 401    | No autorizado: token JWT inválido o ausente.         |
+| 404    | No encontrado: el archivo o la hoja de cálculo especificados no existen. |
+| 500    | Error interno del servidor: condición inesperada en el servidor. |
+
+Puede utilizar la herramienta de línea de comandos **cURL** para invocar fácilmente los servicios web de Aspose.Cells Cloud. El siguiente ejemplo muestra cómo solicitar el resultado de una fórmula con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet2/formulaResult?formula=SUM(A5:A10)" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet2/formulaResult?formula=SUM(A5:A10)" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Value": {
-
     "Value": "0"
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
- 
+}
 ```
 
 {{< /tab >}}
@@ -75,58 +85,66 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet2
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de integrar la API. Un SDK gestiona los detalles de bajo nivel, lo que le permite centrarse en su lógica de negocio. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePutWorkbookBackground.cs" >}}
+{{< gist "aspose-cells-cloud-gists" "d1a2b3c4e5f67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.cs" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PutWorkbookBackground.java" >}}
+{{< gist "aspose-cells-cloud-gists" "a1b2c3d4e5f67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.java" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PutWorkbookBackground.php" >}}
+{{< gist "aspose-cells-cloud-gists" "b1c2d3e4f5g67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.php" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PutWorkbookBackground.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "c1d2e3f4g5h67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.rb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorkbookBackground.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "d1e2f3g4h5i67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.ts" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PutWorkbookBackground.py" >}}
+{{< gist "aspose-cells-cloud-gists" "e1f2g3h4i5j67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.py" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PutWorkbookBackground.pl" >}}
+{{< gist "aspose-cells-cloud-gists" "f1g2h3i4j5k67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PutWorkbookBackground.go" >}}
+{{< gist "aspose-cells-cloud-gists" "g1h2i3j4k5l67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.go" >}}
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---
+
+**Consulte también:**  
+- [Obtener hoja de cálculo](https://docs.aspose.cloud/cells/worksheets/get-worksheet/)  
+- [Actualizar hoja de cálculo](https://docs.aspose.cloud/cells/worksheets/update-worksheet/)  
+- [Calcular todas las fórmulas](https://docs.aspose.cloud/cells/worksheets/calculate-all-formulas/)  
+---

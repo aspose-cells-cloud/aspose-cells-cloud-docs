@@ -1,73 +1,96 @@
-﻿---
-title: Contenidos y estilos claros de Cells en la hoja de trabajo Excel
-type: docs
-url: /es/clear-contents-and-styles-of-cells-in-excel-worksheet/
-weight: 50
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Borrar contenido y estilos de Cells en la hoja de trabajo Excel
 ---
-Este REST API indica `clear` celdas `content` en un archivo Excel.
+title: "Borrar Contenidos y Estilos de Celdas en una Hoja de Cálculo de Excel"
+type: docs
+url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+weight: 50
+keywords:
+  - Aspose.Cells
+  - API de Excel
+  - borrar contenidos de celdas
+  - borrar estilos de celdas
+  - hoja de cálculo en la nube
+  - API REST
+description: "Aprenda a usar la API REST de Aspose.Cells Cloud para borrar contenidos y estilos de celdas en una hoja de cálculo de Excel, con ejemplos en cURL y fragmentos de código de SDK."
+ArticleTitle: "Borrar Contenidos y Estilos de Celdas en una Hoja de Cálculo de Excel – Aspose.Cells Cloud API"
+---
 
-## RSET API
+Antes de utilizar el punto de conexión **Borrar Contenidos y Estilos**, asegúrese de tener:
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
- 
+* Un **token JWT** válido obtenido mediante el flujo de autenticación de Aspose.Cells Cloud.  
+* El libro cargado en la ubicación de almacenamiento elegida (o accesible mediante el parámetro `folder`).  
+* La versión del SDK requerida instalada, si prefiere trabajar con alguna de las bibliotecas cliente específicas por lenguaje.
+
+Esta API REST borra los contenidos de las celdas en un archivo de Excel.
+
+## API PostClearContents
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
 ```
 
-Los parámetros de la solicitud son:
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del libro de trabajo.|
-| nombreHoja| cadena| camino| Nombre de la hoja de trabajo.|
-| rango| cadena| consulta| El rango.|
-| startRow| entero| consulta| La fila de salida.|
-| columna de inicio| entero| consulta| La columna de inicio.|
-| fin de fila| entero| consulta| La última fila.|
-| columna final| entero| consulta| La columna final.|
-| carpeta| cadena| consulta| La carpeta del libro de trabajo.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+### **Respuesta**
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                      |
+|--------|-----------------------------|--------------------------------------------------|
+| 200    | Correcto                    | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros ausentes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT inválido o ausente. |
+| 413    | Payload demasiado grande     | El archivo cargado excede el límite de tamaño. |
+| 500    | Error interno del servidor  | Error inesperado en el servidor. |
+
+## Cómo usar la API PostClearContents con SDK
+
+### Especificación de la API PostClearContents
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube mediante cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Familia de SDK en la nube
+### Utilizar los SDK de Aspose.Cells Cloud
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells utilizando diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +143,28 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Borrar Contenidos y Estilos de Celdas en una Hoja de Cálculo de Excel",
+  "description": "Cómo utilizar la API REST de Aspose.Cells Cloud para borrar contenidos y estilos de celdas en una hoja de cálculo de Excel.",
+  "url": "https://docs.aspose.cloud/cells/clear-contents-and-styles-of-cells-in-excel-worksheet/",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2023-07-08",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://docs.aspose.cloud/cells/images/Aspose-image-for-open-graph.jpg",
+      "caption": "Aspose.Cells Cloud – Borrar Contenidos y Estilos de Celdas"
+    }
+  },
+  "keywords": "Aspose.Cells, API de Excel, borrar contenidos de celdas, borrar estilos de celdas, API REST, hoja de cálculo en la nube"
+}
+</script>

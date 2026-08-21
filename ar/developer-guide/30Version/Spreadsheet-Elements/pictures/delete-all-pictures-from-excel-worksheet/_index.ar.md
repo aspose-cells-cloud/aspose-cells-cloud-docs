@@ -1,73 +1,90 @@
-﻿---
-title: حذف جميع الصور في ورقة العمل Excel
-second_title: Documen
-linktitle: كليا
-type: docs
-url: /ar/pictures/clear/
-aliases: [/delete-all-pictures-from-excel-worksheet/]
-keywords: Delete all pictures in an Excel worksheet
-description: يدعم Cloud REST حذف جميع الصور في ورقة عمل Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 60
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حذف جميع الصور في ورقة عمل Excel
 ---
-يشير هذا REST API إلى `delete` `all` صور في ورقة العمل.
+title: "حذف جميع الصور في ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "مسح"
+type: docs
+url: /pictures/clear/
+aliases: [/delete-all-pictures-from-excel-worksheet/]
+keywords: "Aspose.Cells Cloud، Excel، حذف جميع الصور، ورقة عمل، REST API، مسح الصور"
+description: "تعرّف على كيفية حذف جميع الصور من ورقة عمل Excel باستخدام Aspose.Cells Cloud REST API مع أمثلة لـ cURL وSDKs."
+weight: 60
+ArticleTitle: "كيفية حذف جميع الصور في ورقة عمل Excel باستخدام Aspose.Cells Cloud"
+---
 
-## RSET API
+يقوم هذا الـ REST API بحذف **جميع** الصور في ورقة عمل.
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
- 
+**المتطلبات المسبقة**  
+- حساب نشط على Aspose.Cells Cloud مع رمز وصول OAuth 2.0 ساري المفعول.  
+- يتطلب إصدار API 3.0 (أو أحدث)، أما الإصدارات الأقدم فهي مُهمَلة.  
+- يجب تخزين ملف Excel المستهدف في موقع تخزين مدعوم (افتراضي أو مخصص).
+
+**توافق الإصدار**  
+يتبع هذا الـ endpoint مواصفات Cells Cloud 3.0 API. تأكد من أن مكتبات العميل وعناوين URL للطلبات تستهدف `api.aspose.cloud/v3.0`.
+
+## DeleteWorksheetPictures API
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعدّ واجهات برمجة التطبيقات Aspose.Cells Cloud آمنة وتحتاج إلى <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **معلمات الطلب**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعلمة | النوع   | الموقع | الوصف                                     |
+|-------------|---------|--------|--------------------------------------------|
+| name        | string  | Path   | اسم ملف Excel.                            |
+| sheetName   | string  | Path   | اسم ورقة العمل التي تحتوي على الصور.      |
+| folder      | string  | Query  | المجلد الذي يُخزَّن فيه الملف.            |
+| storageName | string  | Query  | اسم خدمة التخزين.                          |
+
+### استجابات الخطأ
+
+| رمز HTTP | الوصف                                                                 |
+|----------|------------------------------------------------------------------------|
+| 401      | غير مُصادَق – نقصان أو عدم صلاحية الرمز.                              |
+| 404      | غير موجود – الملف أو ورقة العمل أو فهرس كسر الصفحة المحددة غير موجود. |
+| 400      | طلب غير صالح – تركيب جملة الطلب أو المعلمات غير صحيحة.                |
+| 500      | خطأ داخلي في الخادم – تم مواجهة شرط غير متوقع.                       |
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures) واجهة برمجة تطبيقات قابلة للوصول العام وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية استدعاء الـ API باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetName}/pictures" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## عائلة SDK للسحابة
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أسرع طريقة للتطوير. يتعامل الـ SDK مع التفاصيل منخفضة المستوى، مما يتيح لك التركيز على منطق أعمالك. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs لـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +137,10 @@ curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**ملاحظات:** لا يدعم إجراء DELETE الترقيم (pagination)، ويخضع لقيود معدل الطلبات القياسية لـ Aspose.Cells Cloud API (افتراضيًا 100 طلب في الدقيقة). قم بتعديل منطق العميل وفقًا لذلك.
+
+**انظر أيضًا**:  
+- [/pictures/delete/](../delete/) – حذف صورة محددة من ورقة عمل.  
+- [/pictures/add/](../add/) – إضافة صورة إلى ورقة عمل.  
+---

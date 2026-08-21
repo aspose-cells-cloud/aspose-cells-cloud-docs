@@ -1,78 +1,79 @@
-﻿---
-title: Ajouter un saut de page vertical
-second_title: Documen
-linktitle: Ajouter un saut de page vertical
-type: docs
-url: /fr/page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
-keywords: Add a page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge l'ajout d'un saut de page dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 40
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Ajouter un saut de page vertical
 ---
-Ce REST API indique d'insérer un saut de page vertical.
+title: "Ajouter un saut de page vertical"
+second_title: "Document"
+linktitle: "Ajouter un saut de page vertical"
+type: docs
+url: /page-breaks/add-vertical-page-break/
+aliases: [/insert-vertical-page-break-inside-worksheet/]
+keywords: "Aspose.Cells Cloud, saut de page vertical, API REST, Excel, SDK, cURL"
+description: "Découvrez comment insérer un saut de page vertical dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut la syntaxe de la requête, un exemple cURL, des exemples de SDK, un guide d’authentification et des détails sur la gestion des erreurs."
+weight: 40
+ArticleTitle: "Ajouter un saut de page vertical – API Aspose.Cells Cloud"
+---
 
-## RSET API
+Cette API REST insère un saut de page vertical dans une feuille de calcul.
+
+## Sécurité et authentification  
+Les API Aspose.Cells Cloud sont sécurisées et exigent une [authentification basée sur un jeton JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
 ```
 
-Les paramètres de la requête sont :
+### Paramètres de la requête
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin||
-| nom de la feuille| chaîne| chemin||
-| nom de cellule| chaîne| requête||
-| colonne| entier| requête||
-| rangée| entier| requête||
-| startRow| entier| requête||
-| fin de ligne| entier| requête||
-| dossier| chaîne| requête||
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type    | Emplacement | Description                                                                 |
+|------------------|---------|-------------|-----------------------------------------------------------------------------|
+| name             | string  | chemin      | Le nom du classeur Excel.                                                  |
+| sheetName        | string  | chemin      | Le nom de la feuille de calcul dans laquelle le saut de page sera ajouté. |
+| cellname         | string  | requête     | La référence de cellule (par ex., **A1**) définissant l’emplacement du saut de page. |
+| column           | integer | requête     | L’index de colonne (à partir de zéro) à partir duquel le saut de page commence. |
+| row              | integer | requête     | L’index de ligne (à partir de zéro) à partir duquel le saut de page commence. |
+| startRow         | integer | requête     | La première ligne de la plage du saut de page.                             |
+| endRow           | integer | requête     | La dernière ligne de la plage du saut de page.                             |
+| folder           | string  | requête     | Le chemin du dossier dans le stockage où se trouve le classeur.           |
+| storageName      | string  | requête     | Le nom du service de stockage.                                             |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+**Paramètres obligatoires** – Soit `cellname`, soit `column` doit être fourni. Lorsque `column` est utilisé, vous pouvez également fournir `row`, `startRow` et `endRow` pour définir une plage. Tous les autres champs sont facultatifs.
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak) définit une interface de programmation publiquement accessible et permet d’effectuer directement des interactions REST depuis un navigateur web.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
+### Exemple cURL
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks?column=9" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/SampleBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks?column=9" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
-{{< /tab >}}
+#### Réponse
 
-{{< tab tabNum="2" >}}
-
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
-{{< /tab >}}
+**Codes de statut HTTP**
 
-{{< /tabs >}}
+| Code | Signification              | Description                                                       |
+|------|----------------------------|-------------------------------------------------------------------|
+| 200  | OK                         | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte         | Paramètres manquants ou non valides (par ex., type de fichier non pris en charge). |
+| 401  | Non autorisé               | Jeton JWT non valide ou manquant.                                |
+| 413  | Charge utile trop grande   | Le fichier téléchargé dépasse la taille limite.                 |
+| 500  | Erreur interne du serveur  | Erreur inattendue du serveur.                                     |
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le moyen le plus efficace d’accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants illustrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

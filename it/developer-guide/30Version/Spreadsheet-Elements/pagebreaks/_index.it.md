@@ -1,20 +1,23 @@
-﻿---
-title: Lavorando con Excel interruzione di pagina
-second_title: Documen
-linktitle: Interruzione di pagina
+---
+title: "Lavorare con interruzioni di pagina in Excel"
+second_title: "Documento"
+linktitle: "InterruzioniDiPagina"
 type: docs
 url: /it/working-with-pagebreaks/
-aliases: [/working-with-pagebreaks/]
-keywords: Get, add, delete, and update page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'acquisizione, l'aggiunta, l'eliminazione e l'aggiornamento di interruzioni di pagina in un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/working-with-pagebreaks/]
+keywords: "Excel, interruzione di pagina, Aspose.Cells Cloud, REST API, foglio di calcolo, aggiungi, elimina, ottieni, aggiorna, interruzioni di pagina"
+description: "Scopri come aggiungere, recuperare ed eliminare le interruzioni di pagina nei fogli di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud. Include esempi per interruzioni verticali e orizzontali."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Interruzioni di pagina
+ArticleTitle: "Lavorare con le interruzioni di pagina in Excel – Documentazione di Aspose.Cells Cloud"
 ---
-## Come lavorare con le interruzioni di pagina in un foglio di lavoro Excel
 
-- [Come aggiungere un'interruzione di pagina verticale in un foglio di lavoro Excel.](/cells/it/page-breaks/add-vertical-page-break/)
-- [Come aggiungere un'interruzione di pagina orizzontale in un foglio di lavoro Excel.](/cells/it/page-breaks/add-horizontal-page-break/)
-- [Come eliminare un'interruzione di pagina verticale in un foglio di lavoro Excel.](/cells/it/page-breaks/delete-vertical-page-break/)
-- [Come eliminare un'interruzione di pagina orizzontale in un foglio di lavoro Excel.](/cells/it/page-breaks/delete-vertical-page-break/)
-- [Come ottenere interruzioni di pagina verticali in un foglio di lavoro Excel.](/cells/it/page-breaks/get-vertical-page-breaks/)
-- [Come ottenere interruzioni di pagina orizzontali in un foglio di lavoro Excel.](/cells/it/page-breaks/get-vertical-page-breaks/)
+## Come lavorare con le interruzioni di pagina in un foglio di calcolo Excel
+
+Questa guida fornisce un accesso rapido alle operazioni API per gestire le interruzioni di pagina verticali e orizzontali in un foglio di calcolo Excel utilizzando Aspose.Cells Cloud.
+
+- [Come aggiungere un'interruzione di pagina verticale in un foglio di calcolo Excel.](/it/cells/page-breaks/add-vertical-page-break/)
+- [Come aggiungere un'interruzione di pagina orizzontale in un foglio di calcolo Excel.](/it/cells/page-breaks/add-horizontal-page-break/)
+- [Come eliminare un'interruzione di pagina verticale in un foglio di calcolo Excel.](/it/cells/page-breaks/delete-vertical-page-break/)
+- [Come eliminare un'interruzione di pagina orizzontale in un foglio di calcolo Excel.](/it/cells/page-breaks/delete-horizontal-page-break/)
+- [Come ottenere le interruzioni di pagina verticali in un foglio di calcolo Excel.](/it/cells/page-breaks/get-vertical-page-breaks/)
+- [Come ottenere le interruzioni di pagina orizzontali in un foglio di calcolo Excel.](/it/cells/page-breaks/get-horizontal-page-breaks/)

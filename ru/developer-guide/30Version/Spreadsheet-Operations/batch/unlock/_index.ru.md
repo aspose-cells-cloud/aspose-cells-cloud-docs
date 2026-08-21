@@ -1,76 +1,117 @@
-﻿---
-title: Пакетная разблокировка
-second_title: Documen
-type: docs
-url: /ru/batch/unlock
-keywords: Batch unlock of multiple Excel files
-description: Aspose.Cells Cloud API поддерживает пакетную разблокировку нескольких файлов Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 100
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Пакетная разблокировка
 ---
-Этот REST API указывает на `batch unlock` подходящих файлов.
+title: "Пакетная разблокировка"
+second_title: "Документ"
+type: docs
+url: /batch/unlock
+keywords: "пакетная разблокировка, Aspose.Cells Cloud, Excel, REST API, электронная таблица, облачный SDK"
+description: "Разблокируйте несколько файлов Excel пакетно с использованием REST API Aspose.Cells Cloud. Поддерживаются SDK для C#, Java, Python и других языков."
+weight: 100
+---
 
-## РСЕT API
+Этот REST API позволяет пакетно разблокировать подходящие файлы Excel.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/unlock
- 
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| BatchLockRequest|| тело||
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
 
-**Свойства BatchLockRequest**
+### Параметры запроса
 
-Имя | Тип | Описание | Примечания
------------- | ------------- | ------------- | -------------
- SourceFolder | строка | | [необязательно]MatchCondition | MatchConditionRequest | | [необязательно]Password | строка | | [необязательно]OutFolder | строка | | [необязательно]**Свойства MatchConditionRequest**
+| Имя параметра | Тип | Расположение | Описание |
+|----------------|------|----------|-------------|
+| **BatchLockRequest** |  | body | Тело запроса, содержащее настройки разблокировки. |
 
-Имя | Тип | Описание | Примечания
------------- | ------------- | ------------- | -------------
- RegexPattern | string | | [необязательно]FullMatchConditions | string[]| | [необязательно]The[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/Batch/PostBatchUnlock) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### Свойства **BatchLockRequest**
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя             | Тип                     | Описание                                      | Примечания |
+|-----------------|--------------------------|-----------------------------------------------|------------|
+| SourceFolder    | string                   | Папка, содержащая исходные файлы Excel.       | [необязательно] |
+| MatchCondition  | MatchConditionRequest    | Критерии выбора файлов для разблокировки.      | [необязательно] |
+| Password        | string                   | Пароль, применённый к защищённым рабочим книгам. | [необязательно] |
+| OutFolder       | string                   | Папка назначения для разблокированных файлов.  | [необязательно] |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### Свойства **MatchConditionRequest**
+
+| Имя                | Тип       | Описание                                     | Примечания |
+|--------------------|-----------|----------------------------------------------|------------|
+| RegexPattern       | string    | Регулярное выражение для сопоставления имён файлов. | [необязательно] |
+| FullMatchConditions| string[]  | Точные условия имён файлов для сопоставления. | [необязательно] |
+
+### Параметр тела запроса
+
+| Имя параметра | Тип | Описание                                     |
+| -------------- | ---- | -------------------------------------------- |
+| data           | file | Двоичное содержимое файла рабочей книги для создания. |
+
+### **Ответ**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                      | Когда возвращается                        |
+|-----|-------------------------------|-------------------------------------------|
+| 200 OK | Рабочая книга успешно создана | Нормальный ход выполнения                  |
+| 201 Created | Рабочая книга создана (альтернативный ответ) | Если API возвращает статус «создано» |
+| 400 Bad Request | Недопустимые параметры | Ошибка на стороне клиента                 |
+| 401 Unauthorized | Отсутствует или недействителен токен | Ошибка аутентификации                    |
+| 409 Conflict | Файл существует, а `isWriteOver=false` | Конфликт с существующим файлом            |
+
+## Как использовать API PostBatchLock с SDK
+
+### Спецификация API PostBatchLock
+
+[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/Batch/PostBatchUnlock) определяет общедоступное программное интерфейсное решение и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать инструмент командной строки cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как выполнять вызовы облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/unlock" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\"}" 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"SourceFolder":"CellsTests","OutFolder":"Output","MatchCondition":{"RegexPattern":"(^Book)(.+)(xlsx$)"},"Password":"123456"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
-Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах разблокировки. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ разработки функциональности разблокировки. SDK абстрагирует низкоуровневые детали, позволяя сосредоточиться на бизнес-логике. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,14 +1,16 @@
-﻿---
-title: "Aspose.Cells Cloud Web API - Excel Вычисления: сумма, количество, среднее, минимум, максимум, сложение, вычитание, умножение, деление и т. д."
-second_title: Documen
-ArticleTitle: "Excel Calculation: Sum, Count, Average, Min, Max, Add, Subtract, Multiply, Divide, et"
-linktitle: Вычислить
+---
+title: "Aspose.Cells Cloud Web API – вычисление SUM, COUNT, AVERAGE, MIN, MAX и базовых математических операций"
+second_title: "Документ"
+ArticleTitle: "Развивайте свои навыки работы с данными: освойте ключевые вычисления в Excel — сложение, вычитание, умножение, деление и многое другое"
+linktype: "calculate"
 type: docs
 url: /ru/calculate/
-keywords: Aspose.Cells Cloud REST API, Excel conversion, merge spreadsheets, split documents, protect Excel files, search and replace in Excel, transform spreadsheets, Office Excel 2016, Office Excel 2019, Office Excel 365
-description: В этом руководстве разработчика содержатся практические сценарии и советы по эффективному использованию функций Aspose.Cells for .NET, позволяющие добиться определенного внешнего вида документа Excel и эффективно реализовать различные варианты использования.
+keywords: "Aspose.Cells Cloud, API для вычислений в Excel, SUM, COUNT, AVERAGE, MIN, MAX, базовые математические операции, REST API, вычисления в электронных таблицах"
+description: "Узнайте, как использовать Aspose.Cells Cloud REST API для вычисления SUM, COUNT, AVERAGE, MIN, MAX и базовых арифметических операций в листах Excel. Включает синтаксис запроса, примеры кода, ответы сервера и обработку ошибок."
 weight: 20
-kwords: Excel, Office Облако, REST API, Работа с электронными таблицами, PDF Преобразование, Обработка CSV, Обработка JSON, Поддержка Markdown, Руководство разработчика, Функциональность вычислений
 ---
-- **[Сумма, количество, среднее значение и т. д. по цвету в электронной таблице/Excel](https://docs.aspose.cloud/cells/aggregate-cells-by-color/)**
-- **[Сложение, вычитание, умножение, деление и процент в электронной таблице/Excel](https://docs.aspose.cloud/cells/math-calculate/)**
+
+Автоматически выполняйте вычисления, такие как **SUM**, **COUNT**, **AVERAGE**, **MIN** и **MAX**, в листах Excel с помощью Aspose.Cells Cloud REST API — без необходимости ручной фильтрации или использования локального программного обеспечения для работы с электронными таблицами. API поддерживается в **Aspose.Cells Cloud**, использует стандартную аутентификацию (OAuth 2.0 или JWT), возвращает результаты в формате JSON и предоставляет понятные коды ошибок для некорректных диапазонов или проблем с аутентификацией. Подробный синтаксис запроса см. в официальной справке REST API.
+
+- **[Вычисление по цвету ячеек](https://docs.aspose.cloud/cells/aggregate-cells-by-color/)** — получение итогов, сгруппированных по цвету фона или шрифта, за один запрос.
+- **[Быстрое вычисление в электронной таблице](https://docs.aspose.cloud/cells/math-calculate/)** — мгновенное вычисление SUM, COUNT, AVERAGE, MIN, MAX (и базовых арифметических операций) по любому диапазону.

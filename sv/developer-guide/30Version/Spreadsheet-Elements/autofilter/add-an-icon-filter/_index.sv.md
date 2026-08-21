@@ -1,79 +1,114 @@
-﻿---
-title: Lägg till ett ikonfilter i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Lägg till ikonfilter
-type: docs
-url: /sv/autofilter/add-icon-filter/
-aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
-keywords: Adds an icon filter on an Excel worksheet
-description: "Aspose.Cells Cloud API stöder tillägg av ett ikonfilter på ett Excel-arbetsblad. SDK:t stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
-weight: 65
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lägg till ett ikonfilter i ett Excel-kalkylblad
 ---
-Denna REST API indikerar att `icon filter` läggs till i ett Excel-arbetsblad.
+title: "Lägg till en ikonfilter i ett Excel-ark"
+second_title: "Dokument"
+linktitle: "Lägg till ikonfilter"
+type: docs
+url: /autofilter/add-icon-filter/
+aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
+keywords: "Aspose.Cells Cloud, Excel, Ikonfilter, AutoFilter, REST API"
+description: "Lär dig hur du lägger till ett ikonfilter i ett Excel-ark med hjälp av Aspose.Cells Cloud REST API, inklusive begärandedetaljer, cURL-exempel, SDK-kodexempel och felhantering."
+weight: 65
+ArticleTitle: "Lägg till ett ikonfilter i ett Excel-ark – Aspose.Cells Cloud-dokumentation"
+---
 
-## RSET API
+## REST API
+
+Denna REST API lägger till ett **ikonfilter** i ett Excel-ark med hjälp av **Aspose.Cells Cloud REST API**.
+
+**Bakgrund:** Ett ikonfilter tillämpar ett visuellt ikonset på celler baserat på deras värden, vilket möjliggör snabb visuell analys av datatrender. Vanliga användningsfall inkluderar att framhäva prestandamätare, statusindikatorer eller kategorisera värden med trafikljus-ikoner direkt i Excel-ark.
+
 
 ```bash
-
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter
-
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| Väg| Arbetsbokens namn.|
-| arknamn| sträng| Väg| Arbetsbladets namn.|
-|räckvidd|sträng| Fråga||
-|fältindex|heltal| Fråga||
-|ikonuppsättningstyp|sträng| Fråga| Pilar3/Grå pilar3/Flaggor3/Skyltar3/Symboler3/Symboler32/Trafikljus31/Trafikljus32/Pilar4/Grå pilar4/Betyg4/Röd till svart4/Trafikljus4/Pilar5/Grå pilar5/Kvarter5/Betyg5/Stjärnor3/Rutor5/Trianglar3/Ingen/Anpassad/Smilies3/FärgSmilies3|
-|ikon-ID|heltal| Fråga||
-|matchBlanks|sträng| Fråga|sant/falskt|
-|uppdatera|sträng| Fråga|sant/falskt|
-|mapp|sträng| Fråga|Original arbetsboksmapp.|
-|lagringsnamn| Fråga|sträng|Lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+### Begärandeparametrar:
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Parameternamn | Typ    | Plats  | Beskrivning |
+|---------------|--------|--------|-------------|
+| name          | string | Path   | Arbetsbokens namn. |
+| sheetName     | string | Path   | Arkets namn. |
+| range         | string | Query  | Cellintervallet (t.ex. `A1:B1`) som filtret ska tillämpas på. |
+| fieldIndex    | integer| Query  | Nollbaserat index för den kolumn som filtret riktar sig mot. |
+| iconSetType   | string | Query  | Det ikonset som ska användas. Tillåtna värden: `Arrows3`, `ArrowsGray3`, `Flags3`, `Signs3`, `Symbols3`, `Symbols32`, `TrafficLights31`, `TrafficLights32`, `Arrows4`, `ArrowsGray4`, `Rating4`, `RedToBlack4`, `TrafficLights4`, `Arrows5`, `ArrowsGray5`, `Quarters5`, `Rating5`, `Stars3`, `Boxes5`, `Triangles3`, `None`, `CustomSet`, `Smilies3`, `ColorSmilies3`. |
+| iconId        | integer| Query  | Identifieraren för den specifika ikonen inom det valda ikonsetet. |
+| matchBlanks   | boolean| Query  | Bestämmer om tomma celler inkluderas (`true` eller `false`). |
+| refresh       | boolean| Query  | Anger om filtret ska uppdateras efter tillämpning (`true` eller `false`). |
+| folder        | string | Query  | Mappen som innehåller den ursprungliga arbetsboken. |
+| storageName   | string | Query  | Namnet på lagringsplatsen där arbetsboken finns. |
+
+### **Svar**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                    | Beskrivning |
+|-----|------------------------------|-------------|
+| 200 | OK                           | Filtret har tillämpats framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran             | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Oautentiserad                | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nyttolast           | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel            | Oväntat serverfel. |
+## Hur du använder PutWorksheetIconFilter API med SDK:er
+
+### PutWorksheetIconFilter API-specificering
+
+[OpenAPI-specificeringen](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur du gör ett anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/iconFilter?range=A1:B1&fieldIndex=0&iconSetType=ArrowsGray3&iconId=1" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/iconFilter?range=A1:B1&fieldindex=0&iconsettype=ArrowsGray3&iconid=1" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
+Möjliga svarsstatuskoder:
+
+| Kod | Beskrivning |
+|-----|-------------|
+| 200 | Filtret har tillämpats framgångsrikt. |
+| 400 | Felaktig begäran – saknade eller ogiltiga parametrar. |
+| 401 | Oautentiserad – ogiltig eller saknad autentiseringstoken. |
+| 404 | Arbetsbok, ark eller angivet intervall hittades inte. |
+| 500 | Internt serverfel. |
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivånivå, så att du kan fokusera på dina projektuppgifter. Se [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -126,3 +161,5 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+För övriga AutoFilter-funktioner, se dokumentationen för **[Lägg till färgfilter](/autofilter/add-color-filter/)**, **[Lägg till datumfilter](/autofilter/add-date-filter/)** och **[Rensa AutoFilter](/autofilter/clear-autofilter/)**.

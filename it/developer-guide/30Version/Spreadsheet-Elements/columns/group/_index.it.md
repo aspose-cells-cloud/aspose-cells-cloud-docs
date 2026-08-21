@@ -1,76 +1,120 @@
-﻿---
-title: Raggruppa le colonne su un foglio di lavoro Excel
-second_title: Documen
-linktitle: Gruppo
-type: docs
-url: /it/columns/group/
-aliases: [/group-columns-in-an-excel-worksheet/, /group-columns-in-excel-worksheet/]
-keywords: Group column on an Excel workshee
-description: Aspose.Cells Cloud REST API supporta il raggruppamento di colonne su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 60
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Raggruppa colonne su un foglio di lavoro Excel
 ---
-Questo REST API indica le colonne del foglio di lavoro di gruppo.
+title: "Raggruppa Colonne – Documentazione Aspise.Cells Cloud API"
+description: "Raggruppa le colonne del foglio di lavoro in un foglio di calcolo Excel utilizzando l'API REST Aspose.Cells Cloud (v3.0). Include la sintassi della richiesta, i parametri, esempi cURL e SDK e i dettagli della risposta."
+keywords: "Aspose.Cells, raggruppa colonne, API Excel, REST, SDK cloud"
+weight: 60
+type: docs
+aliases:
+  - /group-columns-in-an-excel-worksheet/
+  - /group-columns-in-excel-worksheet/
+---
 
-## RSET API
+# Raggruppare Colonne su un Foglio di Lavoro Excel
+
+**Versione API:** v3.0  
+**Operazione:** `PostGroupWorksheetColumns` – Raggruppa le colonne del foglio di lavoro nel foglio di lavoro.
+
+---
+
+## Panoramica
+
+Questa API REST consente di raggruppare un intervallo di colonne in un foglio di lavoro. Le colonne raggruppate possono essere mostrate o nascoste, consentendo di creare sezioni comprimibili simili a quelle di Microsoft Excel.
+
+---
+
+## Prerequisiti
+
+- Un **token di accesso JWT** valido ottenuto dal servizio di autenticazione di Aspose Cloud.  
+- Il workbook deve essere memorizzato in una posizione accessibile ad Aspose.Cells Cloud (archivio predefinito o un nome di archivio personalizzato).  
+- Versione SDK richiesta (se si utilizza un SDK): l'ultima release che supporta la versione API **v3.0**.  
+
+---
+
+## Autenticazione
+
+Tutte le richieste richiedono l'autenticazione con **token Bearer**.
+
+```http
+Authorization: Bearer <access_token>
+```
+
+Per maggiori dettagli su come ottenere un token, consulta la [guida all'autenticazione JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+---
+
+## Richiesta HTTP
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
+```
+
+| Parametro | Posizione | Obbligatorio | Descrizione |
+|-----------|----------|--------------|-------------|
+| `name` | Path | Sì | Nome del file del workbook (es. `test.xlsx`). |
+| `sheetName` | Path | Sì | Nome del foglio di lavoro contenente le colonne da raggruppare. |
+| `firstIndex` | Query | Sì | Indice in base zero della prima colonna da includere nel gruppo. |
+| `lastIndex` | Query | Sì | Indice in base zero dell'ultima colonna da includere nel gruppo. |
+| `hide` | Query | No | Se `true`, le colonne raggruppate vengono nascoste; altrimenti rimangono visibili. |
+| `folder` | Query | No | Percorso della cartella contenente il workbook. |
+| `storageName` | Query | No | Nome del servizio di archiviazione in cui si trova il file. |
+
+---
+
+## Esempio di Richiesta (cURL)
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
- 
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
 ```
 
-I parametri della richiesta sono:
+> **Nota:** La richiesta utilizza **HTTPS** per garantire la crittografia della comunicazione.
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome della cartella di lavoro.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| primoIndice| intero| domanda|Il primo indice di colonna da utilizzare.|
-| ultimoIndice| intero| domanda| L'ultimo indice di colonna su cui operare.|
-| nascondere| booleano| domanda| stato visibile delle colonne|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+---
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+## Risposta
 
- Puoi usare**cURL** Strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+### Successo (200)
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Campo | Tipo | Descrizione |
+|-------|------|-------------|
+| `Code` | integer | Codice di stato HTTP (`200`). |
+| `Status` | string | Stato testuale dell'operazione (`OK`). |
 
-{{< tab tabNum="11" >}}
+**Esempio**
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" -H "accept: application/json"
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```java
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+### Errore (es. 400 Bad Request)
 
-{{< /tabs >}}
+| Campo | Tipo | Descrizione |
+|-------|------|-------------|
+| `Code` | integer | Codice di stato HTTP (`400`, `401`, `404`, `500`, …). |
+| `Status` | string | Stato testuale (`Error`). |
+| `ErrorMessage` | string | Descrizione leggibile dell'errore. |
+| `ErrorCode` | string | Identificatore programmatico dell'errore. |
 
-## Famiglia Cloud SDK
+**Esempio – Richiesta non valida**
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+```json
+{
+  "Code": 400,
+  "Status": "Error",
+  "ErrorMessage": "Indice di colonna non valido.",
+  "ErrorCode": "InvalidParameter"
+}
+```
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+---
+
+## Esempi SDK
+
+I seguenti frammenti mostrano come chiamare l'operazione **Raggruppa Colonne Foglio di Lavoro** utilizzando gli SDK supportati.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +167,26 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---
+
+## Note
+
+- **Comportamento del raggruppamento:** L'API crea un gruppo di colonne che può essere espanso o compresso in Excel. Impostando `hide=true`, il gruppo viene immediatamente compresso.  
+- **Indicizzazione in base zero:** Sia `firstIndex` che `lastIndex` iniziano da **0**; la prima colonna in un foglio di lavoro ha indice 0.  
+- **Considerazioni sull'archiviazione:** Se il workbook si trova in un archivio non predefinito, fornire entrambi i parametri di query `folder` e `storageName`.  
+
+---
+
+## Vedi Anche
+
+- [Autenticazione – Token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
+- [Specifica OpenAPI per Raggruppa Colonne Foglio di Lavoro](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns)  
+- [SDK Aspose.Cells Cloud (GitHub)](https://github.com/aspose-cells-cloud)  
+- [Raggruppare Righelle su un Foglio di Lavoro Excel](/rows/group/)  
+
+---
+
+> *Illustrazione:* ![Schermata che mostra colonne raggruppate in un foglio di lavoro Excel](./images/group-columns.png){: .img-fluid alt="Schermata che mostra colonne raggruppate in un foglio di lavoro Excel" }
+
+*L'immagine di seguito è un segnaposto e dovrebbe essere sostituita con una schermata reale che dimostri il risultato visivo del raggruppamento delle colonne.*

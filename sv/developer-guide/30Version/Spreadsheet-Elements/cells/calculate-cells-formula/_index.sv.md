@@ -1,69 +1,105 @@
-﻿---
-title: Beräkna formeln Cells
-type: docs
-url: /sv/calculate-cells-formula/
-weight: 90
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Beräkna Cells formel
 ---
-Denna REST API indikerar att `cells formula` ska beräknas i en Excel-fil.
+title: "Beräkna cellformel – Aspose.Cells Cloud API"
+type: docs
+url: /calculate-cells-formula/
+weight: 90
+keywords: "Aspose.Cells Cloud, beräkna cellformel, Excel API, REST API, SDK"
+description: "Beräkna en Excel-cellformel via Aspose.Cells Cloud REST API (v3.0). Inkluderar endpoint, parametrar, cURL-exempel och SDK-utdrag."
+ArticleTitle: "Beräkna cellformel – Aspose.Cells Cloud API-dokumentation"
+---
 
-## RSET API
+## REST API
+
+Detta REST API beräknar **cellformeln** i en Excel-arbetsbok.
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/calculate
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/calculate
 ```
 
-Begäranparametrarna är:
+## Säkerhet och autentisering
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg||
-| arknamn| sträng| väg||
-| cellnamn| sträng| väg||
-| alternativ|| kropp||
-| mapp| sträng| fråga||
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PostCellCalculate) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begäranparametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameter Name | Typ    | Parameterplats (path/query/body) | Beskrivning                                                          |
+| -------------- | ------ | -------------------------------- | -------------------------------------------------------------------- |
+| name           | string | path                             | Namn på Excel-filen (t.ex. `Book1.xlsx`).                           |
+| sheetName      | string | path                             | Namn på kalkylbladet som innehåller cellen.                         |
+| cellName       | string | path                             | Adress till cellen som ska beräknas (t.ex. `A1`).                   |
+| options        | object | body                             | JSON-objekt med beräkningsalternativ (se tabellen **Options object**). |
+| folder         | string | query                            | Mapp i lagringen där filen finns.                                   |
+| storageName    | string | query                            | Namn på Aspose Cloud-lagringen.                                      |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+#### Options object
+
+| Fält          | Typ     | Beskrivning                                                                    | Standardvärde |
+| ------------- | ------- | ------------------------------------------------------------------------------ | ------------- |
+| CalcStackSize | string  | Maximal storlek för beräkningsstacken.                                         | `"1"`         |
+| IgnoreError   | boolean | Om `true`, ignoreras beräkningsfel och cellvärdet sätts till `#N/A`.          | `false`       |
+| Recursive     | boolean | Aktiverar rekursiv beräkning av beroende celler.                               | `false`       |
+| Precision     | string  | Antal decimaler för numeriska resultat.                                        | `"15"`        |
+| UseThreading  | boolean | Aktiverar flertrådad beräkning.                                                | `false`       |
+
+
+### **Svar**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                                   |
+|-----|-----------------------------|---------------------------------------------------------------|
+| 200 | OK                          | Filter applicerades framgångsrikt; svaret innehåller åtgärdsdetaljer. |
+| 400 | Bad Request                 | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Unauthorized                | Ogiltig eller saknad JWT-token.                               |
+| 413 | Payload Too Large           | Den uppladdade filen överskrider storleksgränsen.             |
+| 500 | Internal Server Error       | Oväntat serverfel.                                            |
+
+## Hur man använder PostCellCalculate API med SDK:er
+
+### PostCellCalculate API-specificering
+
+[OpenAPI-specificeringen](https://apireference.aspose.cloud/cells/#/Cells/PostCellCalculate) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda cURL kommandoradsverktyget för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man anropar Cloud API:et med cURL. **Först måste du erhålla en JWT-token** genom att autentisera mot `/connect/token`-endpoint och ersätta `<jwt token>` med tokenvärdet.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/A1/calculate" \
--d '{"CalcStackSize": "1"}' \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/A1/calculate" \
+  -d '{"CalcStackSize":"1"}' \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK abstraher bort detaljer på låg nivå och låter dig fokusera på dina projektsuppgifter. Se <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub-förrådet</a> för en komplett lista över Aspose.Cells Cloud SDK:er.
 
 Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
 
@@ -118,3 +154,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

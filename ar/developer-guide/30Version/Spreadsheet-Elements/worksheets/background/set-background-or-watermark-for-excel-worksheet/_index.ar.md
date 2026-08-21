@@ -1,65 +1,79 @@
-﻿---
-title: تعيين الخلفية على ورقة عمل Excel
-second_title: Documen
-linktitle: إعلان
-type: docs
-url: /ar/worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
-keywords: Delete an Excel worksheet on an Excel workbook
-description: يدعم Cloud REST حذف ورقة عمل من مصنف. تدعم حزمة تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 180
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تعيين الخلفية على ورقة عمل Excel
 ---
-يشير هذا REST API إلى `add worksheet background image`.
+title: "ضبط الخلفية في ورقة عمل Excel"
+ArticleTitle: "ضبط الخلفية في ورقة عمل Excel – دليل واجهة برمجة تطبيقات Aspose.Cells Cloud"
+second_title: "مستند"
+linktitle: "إضافة"
+type: docs
+url: /worksheets/background/add/
+aliases: [/set-background-or-watermark-for-excel-worksheet/]
+keywords: "Aspose.Cells, Excel, ورقة عمل, خلفية, واجهة برمجة تطبيقات REST, SDK, إضافة صورة"
+description: "تعرّف على كيفية إضافة صورة خلفية (PNG أو JPEG أو BMP) إلى ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمّن العنوان، المُعطيات المطلوبة، خطوات المصادقة، مثال باستخدام cURL، وأمثلة للكود باستخدام SDKs."
+weight: 180
+---
 
-## RSET API
+تقوم هذه واجهة برمجة تطبيقات REST بإضافة صورة خلفية إلى ورقة العمل.
+
+## الأمان والمصادقة
+تُعتبر واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [مصادقة مبنية على رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## واجهة برمجة تطبيقات REST
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
- 
 ```
 
-معلمات الطلب هي:
+### **مُعطيات الطلب**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| بابوا نيو غينيا|| جسم||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المُعطى     | النوع   | الموقع | الوصف                                                         |
+|------------------|---------|--------|----------------------------------------------------------------|
+| name            | string  | path   | اسم ملف مصنف Excel.                                           |
+| sheetName       | string  | path   | اسم ورقة العمل التي سيتم تطبيق الصورة عليها.                  |
+| imageFile       | file    | body   | ملف الصورة الثنائي (PNG أو JPEG أو BMP وما إلى ذلك) ليُضبط كخلفية. |
+| folder          | string  | query  | المجلد في التخزين حيث يقع ملف المصنف.                         |
+| storageName     | string  | query  | اسم مجلد تخزين Aspose Cloud.                                  |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+**الصيغ والحدود المدعومة**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+- تنسيقات الصور المقبولة: **PNG، JPEG، BMP، GIF**.
+- الحد الأقصى لحجم الملف: **5 ميغابايت**.
+- تُكرّر الصورة لتغطية كامل مساحة خلفية ورقة العمل.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) واجهة برمجة تطبيقات قابلة للوصول العام، ويتيح لك إجراء تفاعلات REST مباشرة من متصفّح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب الخاصة بـ Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمة إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/background" \
--X PUT \
--T Creative.jpg \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/background" \
+  -X PUT \
+  -F "imageFile=@Creative.jpg" \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+_استجابات الأخطاء المحتملة_
+
+| رمز HTTP | الوصف                                                             |
+|----------|--------------------------------------------------------------------|
+| 400      | طلب غير صحيح – مُعطيات مفقودة أو غير صالحة.                       |
+| 401      | غير مخوّل – رمز JWT غير صالح أو منتهٍ.                            |
+| 404      | غير موجود – ملف المصنف أو ورقة العمل غير موجودين.                 |
+| 500      | خطأ داخلي في الخادم – شرط غير متوقّع حدث على الخادم.             |
 
 {{< /tab >}}
 
@@ -67,9 +81,9 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/back
 
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. فتتولّى SDKs معالجة التفاصيل منخفضة المستوى وتجعلك تركّز على مهام مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطّلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات الويب الخاصة بـ Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

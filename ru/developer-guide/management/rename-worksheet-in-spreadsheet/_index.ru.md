@@ -1,101 +1,156 @@
-﻿---
-title: Aspose.Cells Cloud Web API — Переименование листа в электронной таблице
-second_title: Documen
-ArticleTitle: Rename worksheet in Spreadshee
-linktitle: Переименовать рабочий лист в электронной таблице
-type: docs
-url: /ru/rename-worksheet-in-spreadsheet/
-keywords: Excel API, Rename Worksheet, Workbook Management, REST API, Spreadsheet Organizatio
-description: Конечная точка Web API позволяет пользователям переименовывать указанный рабочий лист в рабочей книге, улучшая организацию и удобочитаемость.
-weight: 100
-kwords: Excel API, Переименование листа, Управление рабочими книгами, REST API, Электронная таблица, PDF, CSV, JSON, Markdown, Сопоставление всех пустых ячеек на листе Excel
 ---
-Переименовать имя листа в электронной таблице.
+title: "Переименование листа в Excel — Aspose.Cells Cloud API"
+second_title: "Документ"
+ArticleTitle: "Как переименовать листы в Excel — изменение названий листов"
+linktitle: "Переименование листа в электронной таблице"
+type: docs
+url: /rename-worksheet-in-spreadsheet/
+keywords: "переименование листа, Aspose.Cells Cloud, Excel API, электронная таблица, SDK, REST API"
+description: "Легко переименовывайте листы Excel с помощью Aspose.Cells Cloud API. Узнайте необходимые параметры, посмотрите примеры cURL и получите код SDK для C#, Java, Python и других языков."
+weight: 100
+---
 
-## **Переименовать имя листа в электронной таблице API**
+Переименовывайте листы в рабочих книгах Excel программно с помощью Aspose.Cells Cloud API. Изменяйте названия листов, динамически обновляйте метки вкладок и автоматизируйте организацию электронных таблиц с помощью вызовов RESTful API. Это полезно для стандартизации документов и автоматизации рабочих процессов.
+
+## Переименование названия листа в Spreadsheet API
+
+### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet
+PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet?sourceName={sourceName}&targetName={targetName}&outPath={outPath}&outStorageName={outStorageName}&region={region}&password={password}
 ```
 
-### **Параметры запроса:**
+**Пример cURL**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody| Описание|
-|:- |:- |:- |:- |
-|Электронная таблица|Файл|FormData|Загрузите файл электронной таблицы.|
-|sourceName|Нить|Запрос|Текущее имя переименовываемого листа.|
-|targetName|Нить|Запрос|Новое имя для рабочего листа.|
-|outPath|Нить|Запрос|(Необязательно) Путь к папке, где хранится книга. Значение по умолчанию — null.|
-|outStorageName|Нить|Запрос|Имя хранилища выходного файла.|
-|область|Нить|Запрос|Настройка региона электронной таблицы.|
-|пароль|Нить|Запрос|Пароль для открытия файла электронной таблицы.|
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet?sourceName=Sheet1&targetName=Report_Q1" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "spreadsheet=@myWorkbook.xlsx"
+```
 
-### **Ответ**
+### **Безопасность и аутентификация**
+
+Aspose.Cells Cloud API безопасны и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
+
+### Параметры запроса
+
+| Имя параметра     | Тип    | Расположение | Описание                                                                                                                                                                                                     |
+| ----------------- | ------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Spreadsheet**   | Файл   | FormData     | **Обязательный**. Файл рабочей книги Excel (.xlsx, .xls и др.), содержащий лист, который необходимо переименовать.                                                                                           |
+| **sourceName**    | String | Query        | **Обязательный**. Текущее название листа, который вы хотите переименовать.                                                                                                                                   |
+| **targetName**    | String | Query        | **Обязательный**. Новое название для присвоения листу. Должно соответствовать правилам именования Excel (не допускаются символы `:`, `\`, `?`, `*`, `[`, `]`) и быть уникальным в пределах книги.            |
+| **outPath**       | String | Query        | **Необязательный**. Путь к целевой папке в облачном хранилище, куда будет сохранена переименованная книга. Если `null` или параметр опущен, файл сохраняется в ту же папку, что и исходная книга (или в путь по умолчанию). |
+| **outStorageName**| String | Query        | **Необязательный**. Идентификатор настроенного облачного хранилища (например, `ArchiveStorage`). Если опущен, используется хранилище по умолчанию.                                                            |
+| **region**        | String | Query        | **Необязательный**. Языковая настройка (например, `ko-KR`), которая может повлиять на кодировку символов или региональные соглашения по именованию.                                                          |
+| **password**      | String | Query        | **Необязательный**. Пароль расшифровки, необходимый для открытия и редактирования защищённой паролем книги. Пропустите, если файл не зашифрован.                                                               |
+
+**Примечание**: Названия листов ограничены 31 символом и не могут содержать символы `:`, `\`, `?`, `*`, `[`, `]`.
+
+### Ответ
+
+Успешный запрос возвращает JSON-объект с информацией о статусе и ссылкой на переименованный файл.
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Коды ошибок
+**Коды HTTP-статуса**
 
-- **400 Неверный запрос**: Неверный URI Apose.Cells Cloud API.
-- **401 Неавторизованный**: Недействительный токен доступа. Или недействительный идентификатор клиента и секретный ключ.
-- **404 Не найдено**: Файл электронной таблицы недоступен.
-- **500 Ошибка сервера**: В электронной таблице обнаружена аномалия при получении расчетных данных.
+| Код | Значение               | Описание                                                                 |
+| --- | ---------------------- | ------------------------------------------------------------------------ |
+| 200 | OK (ОК)                | Фильтр применён успешно; ответ содержит детали выполненной операции.    |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизованный запрос) | Неверный или отсутствующий JWT-токен.                                 |
+| 413 | Payload Too Large (Слишком большой payload) | Загруженный файл превышает лимит размера.                             |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                                        |
 
-## Где следует использовать функцию «Переименовать рабочий лист» в электронной таблице API?
+## Где следует использовать API для переименования листа в электронной таблице?
 
-Если вам необходимо переименовать рабочий лист в электронных таблицах, вы можете использовать этот код API.
+- **Генерация отчётов и соблюдение корпоративных стандартов** — При автоматической генерации отчётов для клиентов общие названия листов (например, `Sheet1`) заменяются на имена, специфичные для клиента (например, `AcmeCorp_Q1_Summary`), чтобы обеспечить профессиональное оформление.
+- **Стандартизация конвейера обработки данных** — В ETL-процессах листы, экспортированные с нерегулярными названиями, переименовываются в стандартизированные, такие как `Raw_Data` или `Cleaned_Data`, для соответствия требованиям последующего анализа.
+- **Многоязычная доставка контента** — В зависимости от языковых предпочтений пользователя названия листов локализуются (например, `数据` или `Data`) перед отправкой файла, обеспечивая персонализированный опыт.
 
-## Почему следует использовать функцию «Переименовать рабочий лист» в электронной таблице API?
+## Почему стоит использовать API для переименования листа в электронной таблице?
 
-- Быстро переименовывайте рабочие листы из электронных таблиц.
-- Разработку можно быстро завершить с помощью существующего SDK.
+- **Удобно для разработчиков** — Предоставляет SDK для множества языков с подробной документацией, упрощая интеграцию по сравнению с созданием собственного решения.
+- **Снижение трудозатрат** — Автоматизирует переименование листов, уменьшая объём ручной работы.
+- **Модель оплаты по факту использования** — Взимается плата только за вызовы API, что исключает первоначальные лицензионные расходы.
+- **Отсутствие необходимости в обслуживании серверов** — Как облачная служба, она устраняет необходимость в размещении и обслуживании серверов или установке обновлений программного обеспечения.
+- **Поддержка автоматизации** — Облегчает автоматическую стандартизацию документов в рамках рабочих процессов.
 
-## Как использовать функцию «Переименовать рабочий лист» в электронной таблице API с SDK
+## Как использовать API для переименования листа в электронной таблице с помощью SDK
 
 ### Спецификация OpenAPI
 
- The[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/ManagementController/RenameWorksheetInSpreadsheet)описывает общедоступный программный интерфейс, позволяющий взаимодействовать с REST непосредственно из веб-браузера.
+<a href="https://reference.aspose.cloud/cells/#/ManagementController/RenameWorksheetInSpreadsheet" target="_blank" rel="noopener noreferrer">Спецификация OpenAPI</a> описывает публично доступное программное интерфейсное описание, позволяющее взаимодействовать с REST-интерфейсом непосредственно из веб-браузера.
 
-### Используйте облачные SDK Aspose.Cells
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как выполнять вызовы в Cloud API с помощью cURL.
 
-Использование SDK — лучший способ ускорить разработку. SDK берёт на себя всю необходимую информацию, позволяя вам легко реализовать переименование листов в ячейках электронных таблиц с минимальным количеством кода.
- Пожалуйста, проверьте[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
-Следующие примеры кода иллюстрируют, как вызывать веб-службы Aspose.Cells с использованием различных SDK:
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_RenameWorksheet.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet?sheetName=Sheet1&destName=NewSheetName" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -F "Spreadsheet=@/path/to/input.xlsx"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_RenameWorksheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 закодировано)",
+  "contentType": "MIME-тип",
+  "fileDownloadName": "необязательное имя файла"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_RenameWorksheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_RenameWorksheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_RenameWorksheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_RenameWorksheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_RenameWorksheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_RenameWorksheet.go" >}}
-{{< /tab >}}
+
+{{< /tabs >}}
+
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK — это самый быстрый способ ускорить разработку. SDK скрывает детали базового HTTP-уровня, позволяя переименовывать листы с минимальным количеством кода. Полный список SDK Aspose.Cells Cloud доступен в репозитории GitHub.
+
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с помощью различных SDK:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_RenameWorksheet.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_RenameWorksheet.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_RenameWorksheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_RenameWorksheet.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_RenameWorksheet.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_RenameWorksheet.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_RenameWorksheet.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_RenameWorksheet.go" >}}
+{{</tab>}}
 {{< /tabs >}}

@@ -1,98 +1,102 @@
-﻿---
-title: 获取文件列表 - Aspose.Cells AP
-second_title: Developer Guide for Aspose.Cell
-linktitle: 获取文件列表
-type: docs
-url: /zh/get-files-list/
-keywords: Aspose.Cells API, Get Files List, REST API, Excel File Management, Cloud Storage, File Retrieval, Programming Interfac
-description: 了解如何使用 Aspose.Cells API 从指定文件夹检索文件列表。本指南提供有关请求参数、响应结构的详细信息，以及各种编程语言的代码示例
-weight: 100
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, JSON, Markdown, 云文件管理, 获取文件列表
 ---
-## **Excel API：获取文件列表**
+title: "Aspose.Cells Cloud API – 获取文件列表（文件夹内容）"
+description: "从 Aspose.Cells Cloud 存储中的指定文件夹中检索文件和子文件夹列表。"
+keywords:
+  - Aspose.Cells
+  - API
+  - 获取文件列表
+  - 云存储
+  - Excel
+  - REST
+type: docs
+weight: 100
+---
+
+**获取文件列表** 操作返回 Aspose.Cells Cloud 存储中指定文件夹内所存储的文件和子文件夹集合。  
+这是浏览基于云的 Excel 工作簿、归档文件及其他受支持文件类型的主要入口点。
+
+## Aspose.Cells Cloud API – 获取文件列表（文件夹内容）
 
 ```
-GET http://api.aspose.cloud/v4.0/cells/storage/folder/{path}
+GET https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
 
-### **功能描述**
+### **安全与身份验证**
 
-这**获取文件列表**API 允许用户检索 Aspose.Cells 云存储中指定目录中包含的文件和文件夹的完整列表。此端点对于高效管理文件至关重要，并且支持各种文件格式。
+Aspose.Cells Cloud API 采用安全机制，需要使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-### 请求参数**获取文件列表**API 是
+### 请求参数
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|小路|细绳|小路|从中检索文件列表的云存储文件夹的路径。|
-|存储名称|细绳|询问|要访问的存储的名称。|
+| 名称             | 位置   | 类型    | 是否必需 | 描述                                                       |
+| ---------------- | ------ | ------- | -------- | ---------------------------------------------------------- |
+| **path**         | 路径   | 字符串  | 是       | 云存储中文件夹的路径。                                     |
+| **storageName**  | 查询参数 | 字符串  | 否       | 要使用的存储名称；若省略，则使用默认存储。                |
+| **pageSize**     | 查询参数 | 整数    | 否       | 每页返回的最大项数（默认值：100）。                        |
+| **pageNumber**   | 查询参数 | 整数    | 否       | 要检索的页码（从 1 开始计数，默认值：1）。                 |
 
-### **响应描述**
+- **Value** – `StorageFile` 对象数组。每个对象包含以下字段：
+  - `Name` – 文件或文件夹名称。
+  - `IsFolder` – 若该项为文件夹，则值为 `true`。
+  - `Size` – 大小（单位：字节）；文件夹大小始终为 `0`。
+  - `ModifiedDate` – 最后修改时间（ISO 8601 格式）。
+
+### **响应**
+
+**HTTP 状态码**
+
+| HTTP 状态码 | HTTP 状态             | 描述                                                   |
+| ----------- | --------------------- | ------------------------------------------------------ |
+| 200         | OK（成功）            | Web API 调用成功；响应中包含操作详情。                 |
+| 400         | Bad Request（错误请求） | 缺少或无效的参数（例如，不支持的文件类型）。           |
+| 401         | Unauthorized（未授权） | JWT 令牌无效或缺失。                                   |
+| 413         | Payload Too Large（载荷过大） | 上传的文件超出大小限制。                             |
+| 500         | Internal Server Error（内部服务器错误） | 发生意外的服务器错误。                           |
+|             |                       |                                                        |
+
+## OpenAPI 规范
+
+[OpenAPI 规范](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Folder/GetFilesList) 定义了一个公开可访问的编程接口，允许您直接通过网页浏览器执行 REST 交互。
+
+您可使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何通过 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/folder/{path}?storageName=MyStorage&pageSize=100&pageNumber=1" \
+     -H "Authorization: Bearer <your_access_token>"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
 
 ```json
 {
-  "Name": "FilesList",
-  "Description": [
-    "Files list"
-  ],
-  "Type": "Class",
-  "IsAbstract": false,
-  "Properties": [
+  "Value": [
     {
-      "Name": "Value",
-      "Description": [
-        "Files and folders contained by the specified StorageFile."
-      ],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "StorageFile",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "StorageFile",
-          "Name": "class:storagefile"
-        },
-        "Name": "container"
-      }
+      "Name": "Report.xlsx",
+      "IsFolder": false,
+      "Size": 124578,
+      "ModifiedDate": "2024-03-10T12:34:56Z"
+    },
+    {
+      "Name": "Archives",
+      "IsFolder": true,
+      "Size": 0,
+      "ModifiedDate": "2024-02-01T08:00:00Z"
     }
   ]
 }
 ```
 
-## OpenAPI 规范
+{{< /tab >}}
 
-这[OpenAPI 规范](https://reference.aspose.cloud/cells/#/FolderController/GetFilesList)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互，从而方便集成和测试。
-
-## Excel API SDK
-
-使用 SDK 是加速开发流程的最佳方法。SDK 可以管理底层细节，让您专注于项目任务。如需查看 Aspose.Cells 云 SDK 的完整列表，请访问[GitHub 存储库](https://github.com/aspose-cells-cloud).
-
-以下代码示例说明了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
-
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_GetFilesList.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_GetFilesList.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_GetFilesList.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_GetFilesList.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_GetFilesList.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_GetFilesList.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_GetFilesList.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_GetFilesList.go" >}}
-{{< /tab >}}
 {{< /tabs >}}
+
+### 使用 Aspose.Cells Cloud SDK
+
+使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您能够专注于项目任务。请查阅 <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub 仓库</a> 以获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：

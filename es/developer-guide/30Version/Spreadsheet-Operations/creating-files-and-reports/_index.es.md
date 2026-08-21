@@ -1,20 +1,24 @@
-﻿---
-title: Crear archivos Excel o generar informes Excel
-second_title: Documen
-type: docs
-url: /es/creating-files-and-reports/
-aliases: [/workbook/create/]
-linktitle: Crear Excel y Reportar
-keywords: Create document, Generate report, Excel report, Dynamic repor
-description: Generar nuevos documentos o informes que puedan incluir gráficos, tablas y otros elementos de visualización de datos
-weight: 10
-kwords: Crear documento, Generar informe, Informe Excel, Informe dinámico
 ---
-Con Aspose.Cells Cloud API, puede crear fácilmente nuevos libros de trabajo Excel y generar libros de trabajo específicos Excel a partir de archivos de plantilla. Además, permite la creación de informes complejos Excel junto con la función SmartMarker, que satisface diversas necesidades de procesamiento de datos y generación de informes complejos.
+title: "Crear archivos de Excel y generar informes de Excel"
+second_title: "Documento"
+type: docs
+url: /creating-files-and-reports/
+aliases: [/workbook/create/]
+linktitle: "Crear Excel e informes"
+keywords: "Aspose.Cells Cloud, API de Excel, crear libro, informe de Excel, SmartMarker, plantilla, generación de informes"
+description: "Aprenda a crear libros de Excel vacíos, generar archivos a partir de plantillas y construir informes impulsados por SmartMarker utilizando la API de Aspose.Cells Cloud, con ejemplos de código."
+weight: 10
+ArticleTitle: "Crear archivos de Excel y generar informes de Excel – API de Aspose.Cells Cloud"
+---
 
-## Cree un archivo Excel y genere un informe
+Utilizando la API de Aspose.Cells Cloud, puede crear fácilmente nuevos libros de Excel y generar libros a partir de archivos de plantilla. También admite la creación de informes avanzados de Excel mediante la característica SmartMarker, la cual puede manejar una amplia variedad de necesidades de procesamiento y generación de informes.
 
-- [Cómo crear un libro de trabajo vacío.](/cells/es/create-an-empty-excel-file/)
-- [Cómo crear un libro de trabajo Excel con un archivo de plantilla.](/cells/es/create-an-excel-file-with-template-file/)
-- [Cómo crear un informe Excel con una plantilla de marcador inteligente.](/cells/es/build-report-with-smart-marker/)
-- [Cómo reunir datos para la creación de un informe Excel.](/cells/es/assembly-data-for-the-creation-of-an-excel-report/)
+**Requisitos previos**: Antes de comenzar, asegúrese de tener una clave válida de la API de Aspose Cloud y el SDK de Aspose.Cells Cloud instalado para su lenguaje de desarrollo.
+
+## Crear un archivo de Excel y generar un informe
+
+- [Cómo crear un libro vacío.](/cells/create-an-empty-excel-file/)
+- [Cómo crear un libro de Excel con un archivo de plantilla.](/cells/create-an-excel-file-with-template-file/)
+- [Cómo crear un informe de Excel con una plantilla SmartMarker.](/cells/build-report-with-smart-marker/)
+- [Cómo ensamblar los datos para la creación de un informe de Excel.](/cells/assembly-data-for-the-creation-of-an-excel-report/)
+---

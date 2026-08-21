@@ -1,64 +1,65 @@
-﻿---
-title: Novità di Aspose.Cells Cloud nel 2022
-second_title: Documen
-linktitle: Novità del 202
+---
+title: Novità in Aspose.Cells Cloud nel 2022
+second_title: "Documenti"
+linktype: "Novità nel 2022"
 type: docs
 weight: 90
-url: /it/new-features/2023/
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: Questa pagina descrive le nuove funzionalità Cloud Aspose.Cells più interessanti introdotte nelle versioni recenti
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Novità in Aspose.Cells Cloud
+url: /new-features/2023/
+keywords: "Novità in Aspose.Cells Cloud. Microsoft Office Excel, foglio di calcolo Open Office, CSV, PDF."
+description: "Questa pagina descrive le funzionalità più interessanti introdotte di recente in Aspose.Cells Cloud."
+kwords: Excel, Office Cloud, REST API, foglio di calcolo, PDF, CSV, JSON, Markdown, Novità in Aspose.Cells Cloud
 ---
-Benvenuti alle novità di Aspose.Cells Cloud Docs. Utilizzate questa pagina per trovare rapidamente le ultime modifiche.
 
-## Aspose.Cells Nuvola 22.12
+Benvenuti alla sezione delle novità di Aspose.Cells Cloud. Utilizzate questa pagina per individuare rapidamente le modifiche più recenti.
 
-- Supporta il funzionamento degli assi del grafico.
+## Aspose.Cells Cloud 22.12
 
-## Aspose.Cells Nuvola 22.11
+- Supporto per le operazioni sull’asse dei grafici.
 
-- Aggiungi una nuova API per la conversione in JSON.
-- Aggiungi una nuova API per la conversione in SQL.
-- Aggiungi una nuova API per la conversione in CVS.
+## Aspose.Cells Cloud 22.11
 
-## Aspose.Cells Nuvola 22.10
+- Aggiunta di una nuova API per la conversione in JSON.
+- Aggiunta di una nuova API per la conversione in SQL.
+- Aggiunta di una nuova API per la conversione in CSV.
 
-- Aggiungi una nuova API per la conversione in pptx.
-- Aggiungi una nuova API per la conversione in markdown.
-- Aggiungi una nuova API per la conversione in HTML.
+## Aspose.Cells Cloud 22.10
 
-## Aspose.Cells Nuvola 22.9
+- Aggiunta di una nuova API per la conversione in PPTX.
+- Aggiunta di una nuova API per la conversione in Markdown.
+- Aggiunta di una nuova API per la conversione in HTML.
 
-- Supporta l'esportazione della pagina in altri formati di file.
-- Aggiungi una nuova API per convertire in PDF.
-- Aggiungi una nuova API per la conversione in png.
-- Aggiungi una nuova API per la conversione in docx.
+## Aspose.Cells Cloud 22.9
 
-## Aspose.Cells Nuvola 22.8
+- Supporto per l'esportazione di pagine in altri formati di file.
+- Aggiunta di una nuova API per la conversione in PDF.
+- Aggiunta di una nuova API per la conversione in PNG.
+- Aggiunta di una nuova API per la conversione in DOCX.
 
-- Supporta la trasposizione di Excel righe in colonne.
+## Aspose.Cells Cloud 22.8
 
-## Aspose.Cells Nuvola 22.7
+- Supporto per la trasposizione delle righe di Excel in colonne.
 
-- Miglioramento Salva API sui servizi cloud delle celle (aggiungi quattro opzioni di salvataggio).
-- LightCellsController ottimizzato sul cloud delle celle.
+## Aspose.Cells Cloud 22.7
 
-## Aspose.Cells Nuvola 22.6
+- Miglioramento dell'API Save nei servizi cloud di Cells (aggiunte quattro opzioni di salvataggio).
+- Ottimizzazione di LightCellsController nei servizi cloud di Cells.
 
-- [Miglioramento per le API Cloud Cells.](/cells/it/aspose-cells-cloud-22-6-release-notes/)
-- Supporto per convertire i file nel pacchetto zip in tipi di formato.
+## Aspose.Cells Cloud 22.6
 
-## Aspose.Cells Nuvola 22.5
+- [Miglioramento delle API di Cells Cloud.](/cells/aspose-cells-cloud-22-6-release-notes/)
+- Supporto per la conversione di file contenuti in pacchetti ZIP in vari formati.
 
-- [Miglioramento per l'esportazione API.](https://docs.aspose.cloud/cells/export/)
-- [Miglioramento per cancellare API.](https://docs.aspose.cloud/cells/clear/)
+## Aspose.Cells Cloud 22.5
 
-## Aspose.Cells Nuvola 22.4
+- [Miglioramento dell'API di esportazione.](https://docs.aspose.cloud/cells/export/)
+- [Miglioramento dell'API di pulizia.](https://docs.aspose.cloud/cells/clear/)
 
-- Correggere alcuni bug.
-- [Miglioramento dell'interfaccia utente Swagger.](https://apireference.aspose.cloud/cells/)
+## Aspose.Cells Cloud 22.4
 
-## Aspose.Cells Nuvola 22.3
+- Risolti alcuni bug.
+- [Miglioramento dell'interfaccia Swagger UI.](https://apireference.aspose.cloud/cells/)
 
-- [Aggiungere il nuovo API sulla creazione delle specifiche di codegen.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
-- [Supporto per aggiungere la firma digitale per Aspose.Cells Cloud.](/cells/it/workbook/digital-signature/)
+## Aspose.Cells Cloud 22.3
+
+- [Aggiunta di una nuova API per la generazione di specifiche codegen.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
+- [Supporto per l'aggiunta di firma digitale in Aspose.Cells Cloud.](/cells/workbook/digital-signature/)

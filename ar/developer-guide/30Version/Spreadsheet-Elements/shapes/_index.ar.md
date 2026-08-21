@@ -1,20 +1,25 @@
-﻿---
-title: العمل مع Excel شاب
-second_title: Documen
-linktitle: شكل
-type: docs
-url: /ar/shapes/
-aliases: [/working-with-shapes/,/working-with-images/]
-keywords: Working with shape on an Excel workshee
-description: كيفية التعامل مع الأشكال في ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك أندرويد، وC#، وGo، وJava، وNodeJS، وPerl، وPHP، وPython، وRuby، وSwift.
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، العمل مع الشكل على ورقة عمل Excel
 ---
-## العمل مع الأشكال على ملف Excel
+title: "العمل مع أشكال Excel"
+second_title: "المستند"
+linktype: "الأشكال"
+type: docs
+url: /shapes/
+aliases: ["/working-with-shapes/", "/working-with-images/"]
+keywords: "أشكال Excel، Aspose.Cells Cloud، API، ورقة عمل، عمليات الأشكال"
+description: "تعرّف على كيفية إدارة أشكال Excel عبر API الخاص بـ Aspose.Cells Cloud — استرجاع الأشكال وإضافتها وحذفها وتحويلها مع دعم SDK."
+weight: 100
+ArticleTitle: "العمل مع أشكال Excel – وثائق Aspose.Cells Cloud"
+---
 
-- [كيفية الحصول على جميع الأشكال على ورقة العمل Excel.](/cells/ar/shapes/get-all/)
-- [كيفية الحصول على شكل حسب الفهرس داخل ورقة العمل Excel.](/cells/ar/shapes/get/)
-- [كيفية إضافة شكل إلى ورقة العمل Excel.](/cells/ar/shapes/add/)
-- [كيفية حذف كافة الأشكال الموجودة في ورقة العمل Excel.](/cells/ar/shapes/clear/)
-- [كيفية حذف شكل حسب الفهرس في ورقة العمل Excel.](/cells/ar/shapes/delete/)
-- [كيفية تحويل الشكل إلى صورة على ورقة العمل Excel.](/cells/ar/shapes/conversion/)
+## العمل مع الأشكال في ملف Excel
+
+تمثل الأشكال كائنات الرسم مثل الخطوط والمستطيلات ومربعات النص والصور التي يمكن وضعها على ورقة عمل في Excel. وهي مفيدة لتمثيل البيانات بصريًا، أو إضافة ملاحظات، أو إنشاء عناصر تفاعلية داخل جدول بيانات. توفر هذه الصفحة روابط سريعة لأكثر العمليات الشائعة المتعلقة بالأشكال، مع وصف موجز لكل منها.
+
+**المتطلبات المسبقة:** لاستخدام عمليات الأشكال، يجب أن تمتلك مفتاح API صالح لـ Aspose.Cells Cloud، وملف مصنف مُحمّل مسبقًا في السحابة.
+
+- [كيفية استرجاع جميع الأشكال في ورقة عمل Excel.](/cells/shapes/get-all/) – يسترجع مجموعة كاملة من الأشكال الموجودة في ورقة العمل.
+- [كيفية استرجاع شكل معين حسب الفهرس في ورقة عمل Excel.](/cells/shapes/get/) – يعيد الشكل المُحدّد الموجود عند الفهرس المُعطى.
+- [كيفية إضافة شكل في ورقة عمل Excel.](/cells/shapes/add/) – يُدرج شكلًا جديدًا (مثل مستطيل أو خط أو صورة) داخل ورقة العمل.
+- [كيفية حذف جميع الأشكال في ورقة عمل Excel.](/cells/shapes/clear/) – يحذف جميع الأشكال من ورقة العمل في عملية واحدة.
+- [كيفية حذف شكل معين حسب الفهرس في ورقة عمل Excel.](/cells/shapes/delete/) – يحذف الشكل الموجود عند الفهرس المُعطى.
+- [كيفية تحويل شكل إلى صورة في ورقة عمل Excel.](/cells/shapes/conversion/) – يحوّل الشكل المحدّد إلى ملف صورة (PNG أو JPEG وما إلى ذلك) للاستخدام الخارجي.

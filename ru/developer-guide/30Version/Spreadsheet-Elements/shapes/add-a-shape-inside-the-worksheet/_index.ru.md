@@ -1,81 +1,103 @@
-﻿---
-title: Добавьте фигуру на рабочий лист Excel
-second_title: Documen
-linktitle: Объявление
-type: docs
-url: /ru/shapes/add/
-aliases: [/add-a-shape-inside-the-worksheet/]
-keywords: Add shape on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает добавление фигур на лист Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 30
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Добавить фигуру на рабочий лист Excel
 ---
-Этот REST API указывает на добавление фигуры на рабочий лист Excel.
+title: "Добавление фигуры в рабочий лист Excel"
+second_title: "Документ"
+linktype: "Добавить"
+type: docs
+url: /shapes/add/
+aliases: [/add-a-shape-inside-the-worksheet/]
+keywords: "Aspose.Cells, добавление фигуры, Excel, REST API, облачный SDK, shapeDTO, тип рисования"
+description: "Узнайте, как добавлять фигуры (дуги, линии, прямоугольники и т.д.) в рабочий лист Excel с помощью Aspose.Cells Cloud REST API версии 3.0. Приведён синтаксис запроса, обязательные параметры, шаги аутентификации и примеры кода SDK."
+weight: 30
+ArticleTitle: "Добавление фигуры в рабочий лист Excel с использованием Aspose.Cells Cloud API"
+---
 
-## РСЕT API
+Этот REST API добавляет фигуру в рабочий лист Excel.  
+Конечная точка относится к **версии API v3.0**; убедитесь, что вы используете JWT-токен доступа, получённый через OAuth2-поток Aspose Cloud (client‑id/client‑secret), и включаете его в заголовок `Authorization: Bearer <token>`.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
- 
+### **Безопасность и аутентификация**
+
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
+
+## PutWorksheetShape API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
-Параметры запроса:
+### **Параметры запроса**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| название документа.|
-| Имя_листа| нить| путь| имя рабочего листа.|
-| shapeDTO|| тело||
-|drawingType| нить| запрос| тип объекта формы|
-| верхняя левая строка| целое число| запрос| Указатель верхнего левого ряда.|
-| верхняя левая колонка| целое число| запрос| Индекс верхнего левого столбца.|
-| вершина| целое число| запрос| Представляет собой вертикальное смещение Spinner от его левой строки в пикселях.|
-| левый| целое число| запрос| Представляет горизонтальное смещение Spinner от его левого столбца в пикселях.|
-| ширина| целое число| запрос| Представляет высоту Spinner в пикселях.|
-| высота| целое число| запрос| Представляет ширину Spinner в пикселях.|
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра  | Тип    | Расположение | Описание                                                                                               |
+| --------------- | ------ | ------------ | ------------------------------------------------------------------------------------------------------ |
+| name            | string | path         | Имя документа.                                                                                         |
+| sheetName       | string | path         | Имя рабочего листа.                                                                                    |
+| shapeDTO        | object | body         | JSON-объект, описывающий добавляемую фигуру (полная схема указана в спецификации OpenAPI).             |
+| drawingType     | string | query        | Тип объекта фигуры (например, `arc`, `line`, `rectangle`).                                            |
+| upperLeftRow    | integer | query       | Индекс верхней левой строки фигуры.                                                                    |
+| upperLeftColumn | integer | query       | Индекс верхнего левого столбца фигуры.                                                                 |
+| top             | integer | query       | Вертикальное смещение фигуры от её верхнего края в пикселях.                                          |
+| left            | integer | query       | Горизонтальное смещение фигуры от её левого края в пикселях.                                          |
+| width           | integer | query       | Ширина фигуры в пикселях.                                                                              |
+| height          | integer | query       | Высота фигуры в пикселях.                                                                              |
+| folder          | string | query        | Папка, содержащая документ.                                                                            |
+| storageName     | string | query        | Имя хранилища.                                                                                         |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape) определяет публично доступное программное интерфейсное решение и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать утилиту командной строки cURL для лёгкого доступа к веб-сервисам Aspose.Cells. Следующий пример демонстрирует вызов облачного API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes?DrawingType=arc&upperLeftRow=1&upperLeftColumn=1&top=1&left=1&width=100&height=100" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK",
+  "ShapeId": 5
 }
- 
 ```
+
+_В случае успешного ответа возвращаются HTTP-код статуса, текстовое описание статуса и идентификатор newly created shape (`ShapeId`)._
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Коды HTTP-статусов**
+
+| Код | Значение                    | Описание                                                                 |
+|-----|-----------------------------|--------------------------------------------------------------------------|
+| 200 | OK                          | Фильтр успешно применён; ответ содержит детали операции.                |
+| 400 | Bad Request                 | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized                | Недопустимый или отсутствующий JWT-токен.                               |
+| 413 | Payload Too Large           | Загружаемый файл превышает допустимый размер.                           |
+| 500 | Internal Server Error       | Непредвиденная ошибка сервера.                                          |
+
+Типичные ответы об ошибках включают:
+
+- **400 Bad Request** — отсутствуют или недопустимы параметры.  
+- **401 Unauthorized** — недопустимый или отсутствующий JWT-токен.  
+- **404 Not Found** — указанный рабочий лист или документ не существует.
+
+Каждая ошибка возвращается в виде JSON-объекта, содержащего поля `Code` и `Message`.
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK берёт на себя обработку низкоуровневых деталей, позволяя сосредоточиться на задачах проекта. Полный список облачных SDK Aspose.Cells доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

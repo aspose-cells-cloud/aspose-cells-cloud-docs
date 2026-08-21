@@ -1,65 +1,84 @@
-﻿---
-title: قائمة إزالة العناصر المكررة
-second_title: Documen
-linktitle: إزالة المكرر
-type: docs
-keywords: list object(table) remove duplicates 
-url: /ar/list-objects/remove-duplicates/
-description:  إزالة التكرارات الموجودة في كائن القائمة.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إزالة كائنات القائمة المكررة
 ---
-يشير هذا REST API إلى إزالة التكرارات الموجودة في كائن القائمة.
+title: "إزالة الصفوف المكررة من ListObject – وثائق واجهة Aspose.Cells Cloud API"
+second_title: "وثيقة"
+linktitle: "إزالة التكرارات"
+type: docs
+keywords: "إزالة التكرارات، listobject، واجهة Aspose.Cells Cloud API، إكسل، REST"
+url: /list-objects/remove-duplicates/
+description: "تعرّف على كيفية حذف الصفوف المكررة من ListObject في ورقة عمل إكسل باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن النقطة النهائية (endpoint)، المعاملات، المصادقة، وطلبات واستجابات نموذجية."
+weight: 20
+---
 
-## RSET API
+تقوم هذه الواجهة (REST API) بإزالة الصفوف المكررة من **ListObject** في ورقة عمل إكسل.
+
+## واجهة REST API
 
 ```bash
-
-POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
-
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
 ```
 
-معلمات الطلب هي:
+### **معاملات الطلب**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-|اسم|خيط|طريق||
-|اسم الورقة|خيط|طريق||
-|قائمة كائنات الفهرس|عدد صحيح|طريق||
-|مجلد|خيط|استفسار||
-|اسم التخزين|خيط|استفسار||
+| اسم المعاملة         | النوع    | الموقع   | الوصف                                                    |
+|---------------------|----------|----------|-----------------------------------------------------------|
+| **name**            | نص (String) | المسار (Path) | اسم ملف إكسل.                                            |
+| **sheetName**       | نص (String) | المسار (Path) | اسم ورقة العمل التي تحتوي على الكائن القائم (list object). |
+| **listObjectIndex** | عدد صحيح (Integer) | المسار (Path) | الفهرس الصفري (zero-based) للكائن القائم الذي سيتم معالجته. |
+| **folder**          | نص (String) | الاستعلام (Query) | (اختياري) مسار المجلد حيث يُخزَّن الملف.                  |
+| **storageName**     | نص (String) | الاستعلام (Query) | (اختياري) اسم خدمة التخزين.                              |
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/ListObjectsController/PostWorksheetListObjectRemoveDuplicates) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
-
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### طلب نموذجي (cURL)
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 {{< tab tabNum="1" >}}
 
-```powershell
-curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
-```powershell
-
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "DuplicateRowsRemoved": 12,
+  "Message": "تمت إزالة الصفوف المكررة بنجاح."
+}
 ```
 
 {{< /tab >}}
-
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### الاستجابة
 
-يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى مراجعة مستودع GitHub للاطلاع على قائمة كاملة بمجموعات تطوير البرمجيات السحابية (Aspose.Cells).
+عند النجاح، تُعيد الخدمة كائن JSON يشبه المثال أعلاه. الحقول هي:
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+- **Code** – رمز حالة HTTP (`200` للنجاح).
+- **Status** – وصف نصي لحالة الطلب.
+- **DuplicateRowsRemoved** – عدد الصفوف التي تمت إزالتها.
+- **Message** – معلومات إضافية حول العملية.
+
+**رموز حالات HTTP**
+
+| الرمز | المعنى                      | الوصف                                                       |
+|-------|-----------------------------|-------------------------------------------------------------|
+| 200   | OK (نجاح)                  | تمت تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400   | Bad Request (طلب خاطئ)     | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم).      |
+| 401   | Unauthorized (غير موثّق)    | رمز JWT غير صالح أو مفقود.                                  |
+| 413   | Payload Too Large (حمولة كبيرة جدًا) | تجاوز حجم الملف المرفوع الحد المسموح.                        |
+| 500   | Internal Server Error (خطأ داخلي في الخادم) | خطأ غير متوقع في الخادم.                                     |
+
+## عائلة SDK للسحابة
+
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. فالـ SDK يتعامل مع التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى مراجعة مستودع GitHub للحصول على قائمة كاملة بـ SDKs لـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

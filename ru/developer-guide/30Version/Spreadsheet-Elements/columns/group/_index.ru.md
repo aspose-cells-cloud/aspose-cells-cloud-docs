@@ -1,76 +1,120 @@
-﻿---
-title: Группировка столбцов на листе Excel
-second_title: Documen
-linktitle: Гроу
-type: docs
-url: /ru/columns/group/
-aliases: [/group-columns-in-an-excel-worksheet/, /group-columns-in-excel-worksheet/]
-keywords: Group column on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает группировку столбцов на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 60
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Группировка столбцов на листе Excel
 ---
-Этот REST API указывает столбцы группового рабочего листа.
+title: "Группировка столбцов — Документация Aspise.Cells Cloud API"
+description: "Группировка столбцов рабочего листа в Excel-файле с использованием REST API Aspose.Cells Cloud (версия 3.0). Содержит синтаксис запроса, параметры, примеры cURL и SDK, а также детали ответа."
+keywords: "Aspose.Cells, группировка столбцов, Excel API, REST, облачный SDK"
+weight: 60
+type: docs
+aliases:
+  - /group-columns-in-an-excel-worksheet/
+  - /group-columns-in-excel-worksheet/
+---
 
-## РСЕT API
+# Группировка столбцов в Excel-таблице
+
+**Версия API:** v3.0  
+**Операция:** `PostGroupWorksheetColumns` — группировка столбцов рабочего листа.
+
+---
+
+## Обзор
+
+Этот REST API позволяет сгруппировать диапазон столбцов на рабочем листе. Группируемые столбцы можно отображать или скрывать, что позволяет создавать сворачиваемые секции, аналогичные тем, что реализованы в Microsoft Excel.
+
+---
+
+## Предварительные требования
+
+- Действующий **JWT-токен доступа**, полученный из службы аутентификации Aspose Cloud.  
+- Книга должна храниться в месте, доступном для Aspose.Cells Cloud (по умолчанию — в облачном хранилище, либо в пользовательском хранилище).  
+- Требуемая версия SDK (если используется SDK): последняя версия, поддерживающая API **v3.0**.  
+
+---
+
+## Аутентификация
+
+Все запросы требуют аутентификации с использованием **Bearer-токена**.
+
+```http
+Authorization: Bearer <access_token>
+```
+
+Сведения о получении токена см. в [руководстве по аутентификации JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+---
+
+## HTTP-запрос
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
+```
+
+| Параметр | Место | Обязательный | Описание |
+|----------|-------|-------------|----------|
+| `name` | Path | Да | Имя файла книги (например, `test.xlsx`). |
+| `sheetName` | Path | Да | Имя рабочего листа, содержащего столбцы для группировки. |
+| `firstIndex` | Query | Да | Нулевой индекс первого столбца, включаемого в группу. |
+| `lastIndex` | Query | Да | Нулевой индекс последнего столбца, включаемого в группу. |
+| `hide` | Query | Нет | Если `true`, сгруппированные столбцы скрываются; иначе остаются видимыми. |
+| `folder` | Query | Нет | Путь к папке, содержащей книгу. |
+| `storageName` | Query | Нет | Имя сервиса хранилища, где расположен файл. |
+
+---
+
+## Пример запроса (cURL)
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
- 
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
 ```
 
-Параметры запроса:
+> **Примечание:** Запрос использует **HTTPS** для обеспечения зашифрованной передачи данных.
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| firstIndex| целое число| запрос|Первый индекс столбца, подлежащий обработке.|
-| lastIndex| целое число| запрос| Последний индекс столбца, который будет обработан.|
-| скрывать| булев| запрос| столбцы видимого состояния|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+---
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+## Ответ
 
- Вы можете использовать**cURL** Инструмент командной строки для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+### Успех (200)
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Поле | Тип | Описание |
+|------|-----|----------|
+| `Code` | integer | HTTP-код статуса (`200`). |
+| `Status` | string | Текстовое описание состояния операции (`OK`). |
 
-{{< tab tabNum="11" >}}
+**Пример**
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" -H "accept: application/json"
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```java
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+### Ошибка (например, 400 Bad Request)
 
-{{< /tabs >}}
+| Поле | Тип | Описание |
+|------|-----|----------|
+| `Code` | integer | HTTP-код статуса (`400`, `401`, `404`, `500`, …). |
+| `Status` | string | Текстовое описание (`Error`). |
+| `ErrorMessage` | string | Человекочитаемое описание ошибки. |
+| `ErrorCode` | string | Программный идентификатор ошибки. |
 
-## Семейство облачных SDK
+**Пример — Неверный запрос**
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+```json
+{
+  "Code": 400,
+  "Status": "Error",
+  "ErrorMessage": "Недопустимый индекс столбца.",
+  "ErrorCode": "InvalidParameter"
+}
+```
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+---
+
+## Примеры SDK
+
+Ниже приведены фрагменты кода, демонстрирующие вызов операции **Group Worksheet Columns** с использованием поддерживаемых SDK.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +167,26 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---
+
+## Примечания
+
+- **Поведение при группировке:** API создаёт группу столбцов, которую можно разворачивать и сворачивать в Excel. При установке `hide=true` группа сразу сворачивается.  
+- **Нумерация с нуля:** Параметры `firstIndex` и `lastIndex` начинаются с **0**; первый столбец на листе имеет индекс 0.  
+- **Работа со хранилищем:** Если книга хранится не в хранилище по умолчанию, необходимо указать оба параметра запроса: `folder` и `storageName`.  
+
+---
+
+## См. также
+
+- [Аутентификация — на основе JWT-токена](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
+- [OpenAPI-спецификация операции Group Worksheet Columns](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns)  
+- [SDK Aspose.Cells Cloud (GitHub)](https://github.com/aspose-cells-cloud)  
+- [Группировка строк в Excel-таблице](/rows/group/)  
+
+---
+
+> *Иллюстрация:* ![Снимок экрана сгруппированных столбцов в Excel-таблице](./images/group-columns.png){: .img-fluid alt="Снимок экрана сгруппированных столбцов в Excel-таблице" }
+
+*Вышеприведённое заглушечное изображение следует заменить реальным скриншотом, демонстрирующим визуальный результат группировки столбцов.*

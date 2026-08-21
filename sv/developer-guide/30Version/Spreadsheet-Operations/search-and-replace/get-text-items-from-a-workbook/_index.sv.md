@@ -1,52 +1,96 @@
-﻿---
-title: Hämta textobjekt från en Excel-arbetsbok
-second_title: Documen
-linktitle: Kom in i arbetsboken
+---
+title: "Hämta textobjekt från en Excel-arbetsbok"
+ArticleTitle: "Hämta textobjekt från en Excel-arbetsbok med Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Hämta i arbetsbok"
 type: docs
-url: /sv/workbook/get-text-items/
+url: /workbook/get-text-items/
 aliases: [/get-text-items-from-a-workbook/]
 weight: 10
-keywords: Get text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
-description: Aspose.Cells Cloud REST API stöder hämtning av text från Excel-arbetsbladet. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta textobjekt från en Excel-arbetsbok
+keywords: "Excel, Aspose.Cells Cloud, REST API, kalkylark, hämta textobjekt, arbetsbok"
+description: "Hämta textobjekt från en Excel-arbetsbok med Aspose.Cells Cloud REST API. Tillgängligt via SDK:er för C#, Java, Python, PHP, Ruby, Go, Node.js, Perl och Swift."
 ---
-Denna REST API indikerar `read`-arbetsbokens `text items` i Excel-arbetsboken.
 
-## RSET API
+
+## REST API
+
+Detta REST API läser en arbetsboks **textobjekt** i en Excel-fil.
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/textItems
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/textItems
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| mapp| sträng| fråga| Arbetsbokens mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookTextItems) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+### Begäranparametrar
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Parametername | Typ    | Plats  | Beskrivning                                             |
+| ------------- | ------ | ------ | ------------------------------------------------------- |
+| name          | string | path   | Namnet på arbetsboksfilen.                              |
+| folder        | string | query  | Mappsökvägen i lagringen där arbetsboken finns.         |
+| storageName   | string | query  | Namnet på lagringstjänsten.                             |
+
+### **Svar**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                           |
+|-----|-----------------------------|-------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Oautentiserad               | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksbegränsningen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
+## Hur du använder GetWorkbookTextItems API med SDK:er
+
+### GetWorkbookTextItems API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookTextItems) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för kommandoraden för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör en anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/textItems" -H "accept: application/json"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
+```json
 {
   "Status": "string",
   "TextItems": {
@@ -69,18 +113,27 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/textItems" -H "accept
     ]
   }
 }
-       
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+Typiska HTTP-statuskoder:
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Kod | Beskrivning                                  |
+|-----|----------------------------------------------|
+| 200 | Begäran lyckades; textobjekt returneras.     |
+| 401 | Oautentiserad – saknad eller ogiltig token.  |
+| 403 | Förbjuden – otillräckliga behörigheter.      |
+| 404 | Ej hittad – arbetsbok eller resurs hittades inte. |
+| 500 | Internt serverfel – oväntat misslyckande.     |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+### Använd Aspose.Cells Cloud SDK:er
+
+Detta exempel använder API-version **v3.0**; se ändringslogg för nyare versioner. Att använda en SDK är det bästa sättet att snabba upp utvecklingen. En SDK hanterar detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Se [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -133,3 +186,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

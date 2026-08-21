@@ -1,46 +1,178 @@
-﻿---
-title: استبدال النص في كتاب العمل Excel
-second_title: Documen
-linktitle: استبدال في كتاب العمل
+---
+title: "استبدال نص في ملف مصنف إكسل"
+second_title: "مستند"
+linktitle: "استبدال في المصنف"
 type: docs
-url: /ar/workbook/replace-text/
+url: /workbook/replace-text/
 aliases: [/replace-text-in-a-workbook/]
 weight: 60
-keywords: Replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) workbook
-description: يدعم Cloud REST Aspose.Cells استبدال النص من مصنف Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، استبدال النص في مصنف Excel
+keywords: "Aspose.Cells Cloud, استبدال النص, ملف مصنف إكسل, XLSX, ODS, واجهة برمجة التطبيقات REST, جدول بيانات, SDK"
+description: "استبدال النص في ملفات مصنف إكسل (XLS, XLSX, XLSM, XLSB) وجداول بيانات OpenDocument (ODS) باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. متاحة عبر cURL ومجموعة واسعة من SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, إلخ)."
 ---
-يشير هذا REST API إلى النص `replace` في مصنف Excel.
 
-## RSET API
+تقوم هذه الواجهة البرمجية REST باستبدال النص في ملف مصنف إكسل.
+
+## واجهة برمجة التطبيقات REST
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText
- 
+```
+### **الأمان والمصادقة**
+
+تُعد واجهات برمجة التطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+### معاملات الطلب
+
+| اسم المعامل | النوع   | الموقع | الوصف                                             |
+| -------------- | ------ | -------- | ------------------------------------------------------- |
+| name           | string | path     | اسم ملف المصنف.                              |
+| sheetName      | string | path     | اسم ورقة العمل التي تتم فيها عملية الاستبدال.     |
+| oldValue       | string | query    | النص الذي يجب استبداله.                           |
+| newValue       | string | query    | النص الذي سيُستبدل بالقيمة القديمة.                   |
+| folder         | string | query    | مسار المجلد الذي يحتوي على المصنف.                    |
+| storageName    | string | query    | اسم خدمة التخزين التي يخزن فيها المصنف. |
+
+### **الاستجابة**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+      "Workbook": {
+    "FileName": "test.xlsx",
+    "Links": [
+      {
+        "Href": "/test.xlsx",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "تنزيل كملف CSV",
+        "Type": "text/csv"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "تنزيل كملف HTML",
+        "Type": "text/html"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "تنزيل كملف ODS",
+        "Type": "application/vnd.oasis.opendocument.spreadsheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "تنزيل كملف PDF",
+        "Type": "application/pdf"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "تنزيل كملف نصي مقسّم بفواصل",
+        "Type": "text/plain"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "تنزيل كصورة TIFF",
+        "Type": "image/tiff"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "تنزيل كملف Microsoft Excel 2003",
+        "Type": "application/vnd.ms-excel"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "تنزيل كملف Microsoft Excel 2007",
+        "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "تنزيل كملف XPS",
+        "Type": "application/vnd.ms-xpsdocument"
+      }
+    ],
+    "Worksheets": {
+      "link": {
+        "Href": "/worksheets",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DefaultStyle": {
+      "link": {
+        "Href": "/defaultstyle",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DocumentProperties": {
+      "link": {
+        "Href": "/documentproperties",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Names": {
+      "link": {
+        "Href": "/names",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Settings": {
+      "link": {
+        "Href": "/settings",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "IsWriteProtected": "False",
+    "IsProtected": "False",
+    "IsEncryption": "false",
+    "Password": null
+  }
+}
 ```
 
-معلمات الطلب هي:
+**رموز حالة HTTP**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| القيمة القديمة| خيط| استفسار|النص القديم المراد استبداله.|
-| قيمة جديدة| خيط| استفسار| النص الجديد الذي سيتم استبداله به.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| الرمز | المعنى                     | الوصف                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | نجاح (OK)                          | تم تطبيق العامل بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صالح (Bad Request)                 | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401  | غير مخوّل (Unauthorized)                | رمز JWT غير صالح أو مفقود. |
+| 413  | حجم البيانات كبير جدًا (Payload Too Large)           | حجم الملف المرفوع يتجاوز الحد المسموح به. |
+| 500  | خطأ داخلي في الخادم (Internal Server Error)       | خطأ غير متوقع في الخادم. |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorsheetTextReplace) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+## كيفية استخدام واجهة PostReplace API مع SDKs
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### مواصفات واجهة PostReplace API
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextReplace) واجهة برمجة تطبيقات مفتوحة للعامة وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة cURL سطر الأوامر لاستدعاء خدمات Aspose.Cells بسهولة. يوضح المثال أدناه كيفية إجراء الطلب باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/replaceText?oldValue=a&newValue=a12" -H "accept: application/json"
 ```
 
@@ -48,45 +180,31 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/replaceText?oldValue
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Matches": 26,
-
   "Workbook": {
-
     "link": {
-
       "Href": "/test.xlsx",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أسرع طريقة لدمج هذه الوظيفة. تتعامل الـ SDK مع التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على منطق عملك. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,21 +1,20 @@
-﻿---
-title: Как получить другой контент из рабочего листа Excel
-second_title: Documen
-linktitle: Ге
+---
+title: "Как получить различное содержимое из рабочего листа Excel"
+second_title: "Документ"
+linktype: "Получить"
 type: docs
 url: /ru/worksheets/get/
-keywords: How to get different content from an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает получение различного содержимого из рабочего листа Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+keywords: "Excel, рабочий лист, Aspose.Cells Cloud, REST API, извлечение содержимого, преобразование форматов"
+description: "Узнайте, как извлекать различные типы содержимого из рабочего листа Excel с помощью REST API Aspose.Cells Cloud. В руководстве описаны поддерживаемые форматы и приведены ссылки на связанные операции."
 weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Как получить разное содержимое из листа Excel
 ---
-## Работаем над получением рабочего листа Excel.
 
-- [Как получить рабочий лист Excel в разных форматах.](/cells/ru/worksheets/get-worksheet/) 
-    - [Как преобразовать рабочий лист Excel в изображение.](/cells/ru/worksheets/to-image/)
-- [Как получить область листа Excel с различными форматами.](/cells/ru/worksheets/area-to-different-formats/)
-- [Как получить страницу рабочего листа Excel с различными форматами.](/cells/ru/get-worksheet-for-page-index/) 
-- [Как получить количество страниц на листе Excel.](/cells/ru/worksheets/page-count/) 
-- [Как получить описание рабочих листов Excel.](/cells/ru/worksheets/get-all/) 
+## Работа с получением рабочего листа Excel
 
-
+- [Как получить рабочий лист Excel в различных форматах](/ru/cells/worksheets/get-worksheet/)  
+- [Как преобразовать рабочий лист Excel в изображение](/ru/cells/worksheets/to-image/)  
+- [Как получить область рабочего листа Excel в различных форматах](/ru/cells/worksheets/area-to-different-formats/)  
+- [Как получить страницу рабочего листа Excel в различных форматах](/ru/cells/get-worksheet-for-page-index/)  
+- [Как получить количество страниц в рабочем листе Excel](/ru/cells/worksheets/page-count/)  
+- [Как извлечь описания рабочих листов Excel](/ru/cells/worksheets/get-all/)  
+---

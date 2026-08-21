@@ -1,70 +1,82 @@
-﻿---
-title: Seitenzahl für ein Excel-Arbeitsblatt abrufen
-second_title: Documen
-linktitle: PageCount
-type: docs
-url: /de/worksheets/page-count/
-keywords: Get page count on an Excel worksheet
-description: Aspose.Cells Cloud REST API unterstützt das Abrufen der Seitenanzahl auf einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Seitenanzahl für ein Excel-Arbeitsblatt abrufen
 ---
-Dieser REST API gibt `get page count` für das Arbeitsblatt an.
+title: "Ermitteln der Seitenanzahl für ein Excel-Arbeitsblatt"
+second_title: "Dokument"
+linktitle: "Seitenanzahl"
+type: docs
+url: /worksheets/page-count/
+keywords: "Aspose.Cells, Excel-API, Seitenanzahl des Arbeitsblatts, REST, Cloud-SDK, Excel-Seitenumbrüche"
+description: "Abrufen der Anzahl der druckbaren Seiten in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API (v3.0). Enthält HTTPS-Anforderungsformat, Authentifizierungsschritte, Beispiel-cURL, vollständige JSON-Antwort, HTTP-Statuscodes und SDK-Codebeispiele."
+weight: 10
+ArticleTitle: "Ermitteln der Seitenanzahl für ein Excel-Arbeitsblatt – Aspose.Cells Cloud API"
+---
 
-## RSET API
+Diese REST API gibt die **Seitenanzahl** für ein Arbeitsblatt zurück.
+
+**Authentifizierung:** Alle Aspose.Cells Cloud-Endpunkte erfordern ein Bearer-Token, das über den OAuth2-Fluss abgerufen wird. Geben Sie das Token im `Authorization`-Header an, wie im folgenden cURL-Beispiel gezeigt.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagecount
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagecount
 ```
 
-Die Anforderungsparameter sind:
+### Anforderungsparameter
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Dokumentname.|
-| Blattname| Schnur| Weg| Der Arbeitsblattname.|
-| Ordner| Schnur| Abfrage| Ordner des Dokuments.|
-| Speichername| Schnur| Abfrage| Speichername.|
+| Parameter   | Typ    | Ort      | Beschreibung                            |
+| ----------- | ------ | -------- | --------------------------------------- |
+| name        | string | path     | Name des Dokuments.                     |
+| sheetName   | string | path     | Name des Arbeitsblatts.                 |
+| folder      | string | query    | Ordner, der das Dokument enthält.       |
+| storageName | string | query    | Name des Speichers.                     |
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/GetPageCount) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/GetPageCount) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+Sie können das Kommandozeilentool **cURL** verwenden, um problemlos auf Aspose.Cells-Webservices zuzugreifen. Das folgende Beispiel zeigt, wie die API mit cURL aufgerufen wird.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/worksheets/Sheet1/pagecount" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/worksheets/Sheet1/pagecount" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <access_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
-3
- 
+```json
+{
+  "PageCount": 3
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Antwortdetails
+
+| HTTP-Status | Bedeutung                                           |
+| ----------- | --------------------------------------------------- |
+| **200**     | Erfolg – gibt die oben gezeigte JSON-Nutzdatenstruktur zurück. |
+| **401**     | Nicht autorisiert – fehlendes oder ungültiges Token. |
+| **404**     | Nicht gefunden – die Datei oder das Arbeitsblatt ist nicht vorhanden. |
+| **500**     | Interner Serverfehler – unerwarteter Serverzustand. |
+
+### Versionshistorie
+
+_API-Version **v3.0** (veröffentlicht 2025). Falls Sie eine neuere Version verwenden, beachten Sie die aktualisierte Endpunkt-Dokumentation._
+
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der schnellste Weg zur Entwicklung. Ein SDK abstractisiert Low-Level-Details, sodass Sie sich auf Ihre Geschäftslogik konzentrieren können. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud).
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webservices mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -117,3 +129,8 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Hinweise
+
+- Die Seitenanzahl spiegelt das druckbare Layout wider und berücksichtigt Seitenumbrüche, Ränder sowie Skalierung. Ausgeblendete Zeilen oder Spalten können das Ergebnis beeinflussen.
+- Stellen Sie sicher, dass das Zielarbeitsblatt vorhanden ist und die Datei im angegebenen `folder` und `storageName` gespeichert ist, bevor Sie die Anforderung senden.

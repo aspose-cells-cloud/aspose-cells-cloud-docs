@@ -1,65 +1,62 @@
-﻿---
-title:  Aralık Sıralaması
-second_title: Documen
-linktitle: Sor
-type: docs
-keywords: Range Sort
-url: /tr/ranges/sort/
-description:  Bir dizi hücrenin etrafına dış kenarlık belirler.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Aralık Sıralaması
 ---
-Bu REST API aralık sıralamasını gösterir.
+title: Aralık Sıralama
+second_title: "Belge"
+linktitle: "Sırala"
+type: docs
+keywords: "Aralık Sıralama, Aspose.Cells Cloud, REST API, Elektronik Tablo, Excel, API"
+url: /ranges/sort/
+description: Aspose.Cells Cloud kullanarak bir defter içindeki hücre aralığını sıralamak için bir API sağlar.
+weight: 20
+---
 
-## RSET API
+Bu REST API, belirli bir hücre aralığını sıralar.
+
+## REST API
 
 ```bash
-
-POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/sort
-
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/sort
 ```
 
-İstek parametreleri şunlardır:
+İstek parametreleri:
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi| Tanım|
-|:- |:- |:- |:- |
-|isim|Sicim|Yol|Çalışma kitabının adı.|
-|sayfaAdı|Sicim|Yol|Çalışma sayfasının adı.|
-|aralıkÇalıştır|Sınıf|Vücut| Aralık Sıralama İsteği|
-|dosya|Sicim|Sorgu|Orijinal çalışma kitabı klasörü.|
-|depolamaAdı|Sicim|Sorgu|Depolama adı.|
+| Parametre Adı | Tür   | Konum | Açıklama                                        |
+|---------------|-------|-------|-------------------------------------------------|
+| name          | String | Yol   | Defter adı.                                     |
+| sheetName     | String | Yol   | Çalışma sayfası adı.                            |
+| rangeOperate  | Class  | Gövde | Aralık Sıralama istek nesnesi.                  |
+| folder        | String | Sorgu | Orijinal defterin bulunduğu klasör.             |
+| storageName   | String | Sorgu | Depo adı.                                       |
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangeSort) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangeSort), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sine nasıl istek yapıldığını göstermektedir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 {{< tab tabNum="1" >}}
 
 ```powershell
 curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/sort" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
 ```powershell
-
+# (Yanıt örneği burada gösterilecektir)
 ```
 
 {{< /tab >}}
-
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+## Bulut SDK Geliştirme Seti
 
-Geliştirme sürecini hızlandırmanın en iyi yolu bir SDK kullanmaktır. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Aspose.Cells Bulut SDK'sının tam listesi için lütfen GitHub deposuna göz atın.
+Bir SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, düşük seviye detayları yönetir ve projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen GitHub deposunu kontrol edin.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web servislerine nasıl istek yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,78 +1,79 @@
-﻿---
-title: إضافة فواصل الصفحات العمودية
-second_title: Documen
-linktitle: إضافة فواصل الصفحات العمودية
-type: docs
-url: /ar/page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
-keywords: Add a page break in an Excel worksheet
-description: يدعم Cloud REST إضافة فاصل صفحات في ورقة عمل. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 40
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة فاصل صفحة عمودي
 ---
-يشير هذا REST API إلى إدراج فاصل الصفحة الرأسي.
+title: "إضافة فاصل صفحات عمودي"
+second_title: "مستند"
+linktype: "إضافة فاصل صفحات عمودي"
+type: docs
+url: /page-breaks/add-vertical-page-break/
+aliases: [/insert-vertical-page-break-inside-worksheet/]
+keywords: "Aspose.Cells Cloud، فاصل صفحات عمودي، REST API، Excel، SDK، cURL"
+description: "تعرّف على كيفية إدراج فاصل صفحات عمودي في ورقة عمل Excel باستخدام Aspose.Cells Cloud REST API (الإصدار 3.0). يشمل بنية الطلب، مثال cURL، أمثلة SDK، دليل المصادقة، وتفاصيل معالجة الأخطاء."
+weight: 40
+ArticleTitle: "إضافة فاصل صفحات عمودي – Aspose.Cells Cloud API"
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية لـ REST بإدخال فاصل صفحات عمودي في ورقة عمل.
+
+## الأمان والمصادقة
+تُعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتحتاج إلى [المصادقة باستخدام رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## واجهة برمجة التطبيقات REST
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
 ```
 
-معلمات الطلب هي:
+### مُعاملات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| اسم الخلية| خيط| استفسار||
-| عمود| عدد صحيح| استفسار||
-| صف| عدد صحيح| استفسار||
-| صف البداية| عدد صحيح| استفسار||
-| صف النهاية| عدد صحيح| استفسار||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المُعامل | النوع | الموقع | الوصف |
+|-------------|-------|--------|--------|
+| name | string | path | اسم ملف Excel (الدفتر العمل). |
+| sheetName | string | path | اسم ورقة العمل التي سيتم إضافة فاصل الصفحات فيها. |
+| cellname | string | query | مرجع الخلية (مثل **A1**) الذي يحدد موقع فاصل الصفحات. |
+| column | integer | query | الفهرس الصفري للعمود الذي يبدأ فيه فاصل الصفحات. |
+| row | integer | query | الفهرس الصفري للصف الذي يبدأ فيه فاصل الصفحات. |
+| startRow | integer | query | الصف الأول في نطاق فاصل الصفحات. |
+| endRow | integer | query | الصف الأخير في نطاق فاصل الصفحات. |
+| folder | string | query | مسار المجلد في التخزين حيث يقع الدفتر العمل. |
+| storageName | string | query | اسم خدمة التخزين. |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+**المُعاملات الإلزامية** – يجب تزويد إما `cellname` **أو** `column`. عند استخدام `column`، يمكنك أيضًا تقديم `row` و`startRow` و`endRow` لتحديد نطاق. جميع الحقول الأخرى اختيارية.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak) واجهة برمجة تطبيقات متاحة عمومًا وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
+### مثال cURL
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks?column=9" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/SampleBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks?column=9" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
+#### الاستجابة
 
-{{< tab tabNum="2" >}}
-
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
-{{< /tab >}}
+**كود حالات HTTP**
 
-{{< /tabs >}}
+| الكود | المعنى | الوصف |
+|-------|---------|--------|
+| 200 | OK (تمت العملية بنجاح) | تطبيق العامل بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | طلب غير صالح | مُعاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401 | غير مصرّح به | رمز JWT غير صالح أو مفقود. |
+| 413 | حمل البيانات كبير جدًا | تجاوز حجم الملف المرفوع الحد المسموح به. |
+| 500 | خطأ داخلي في الخادم | خطأ غير متوقع في الخادم. |
 
-## عائلة SDK السحابية
+## عائلة SDK للسحابة
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يتعامل SDK مع التفاصيل منخفضة المستوى ويسمح لك بالتركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية إجراء مكالمات إلى خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

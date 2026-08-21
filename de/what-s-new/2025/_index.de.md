@@ -1,108 +1,109 @@
-﻿---
-title: Was ist neu in Aspose.Cells Cloud im Jahr 2025
-second_title: Documen
-linktitle: Was ist neu in 202
+---
+title: Was gibt's Neues in Aspose.Cells Cloud im Jahr 2025
+second title: "Dokument"
+link title: "Was gibt's Neues in 2025"
 type: docs
 weight: 9
-url: /de/new-features/2025/
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: Diese Seite beschreibt die interessantesten neuen Aspose.Cells Cloud-Funktionen, die in den letzten Versionen eingeführt wurden
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Was ist neu in Aspose.Cells Cloud
+url: /new-features/2025/
+keywords: "Aspose.Cells Cloud, neue Features 2025, Tabellen-API, Excel, CSV, PDF, Cloud-Tabellen"
+description: "Diese Seite listet die neuesten Aspose.Cells Cloud-Funktionen und Verbesserungen auf, die im Jahr 2025 veröffentlicht wurden, einschließlich neuer APIs, Verbesserungen und Bugfixes."
+ArticleTitle: "Was gibt's Neues in Aspose.Cells Cloud im Jahr 2025 – Neueste Funktionen und Verbesserungen"
 ---
-Willkommen bei den Neuerungen in Aspose.Cells Cloud-Dokumenten. Auf dieser Seite finden Sie schnell die neuesten Änderungen.
 
-## Funktionen und Verbesserungen in Version 25.9
+Willkommen bei „Was gibt’s Neues“ in den Aspose.Cells Cloud-Dokumentationen. Nutzen Sie diese Seite, um schnell die neuesten Änderungen zu finden.
 
-|**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
-|:- |:- |:- |
-|56632 | Aktualisieren Sie den Namen des Formulardatenparameters für die Cells Cloud-Codespezifikation für Cells Cloud 3.0-Dienste.| Verbesserung|
-|56793 | Beheben Sie das Problem mit StringEnumConverter bei Aspose.Cells Cloud Services.| Insekt|
-|56866 | Unterstützt das Zuschneiden von Tabellenkalkulationsinhalten in Cells Cloud 4.0.| Verbesserung|
-|56867 | Unterstützt das Trimmen von Arbeitsblattbereichsinhalten in Cells Cloud 4.0.| Verbesserung|
-|56919 | Beim Speichern der Tabelle als Datei in einem anderen Format in der Zell-Cloud ist eine Ausnahme aufgetreten.| Insekt|
-|56922 | Beim Exportieren des Bereichs/der Tabelle als HTML-Datei gehen Daten verloren.| Insekt|
-|56936 | Beheben Sie einige Probleme mit Rechtschreibfehlern.| Insekt|
+## Funktionen & Verbesserungen in Version 25.9
 
-## Funktionen und Verbesserungen in Version 25.8
+|**ID**|**Zusammenfassung**|**Kategorie**|
+| :- | :- | :- |
+| 56632 | Aktualisierung des Form-Data-Parameter-Namens für die Cells Cloud 3.0-API-Spezifikation. | Verbesserung |
+| 56793 | Behebung des StringEnumConverter-Problems in Aspose.Cells Cloud-Diensten. | Bug |
+| 56866 | Hinzufügen der Unterstützung für das Trimmen von Tabelleninhalten in Cells Cloud 4.0. | Verbesserung |
+| 56867 | Hinzufügen der Unterstützung für das Trimmen des Arbeitsblattbereichsinhalts in Cells Cloud 4.0. | Verbesserung |
+| 56919 | Behebung der Ausnahme beim Speichern einer Tabellendatei in einem anderen Format in Cells Cloud. | Bug |
+| 56922 | Behebung des Datenverlusts beim Exportieren eines Bereichs oder einer Tabelle als HTML-Datei. | Bug |
+| 56936 | Behebung mehrerer Rechtschreibfehler. | Bug |
 
-|**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
-|:- |:- |:- |
-|37693|Unterstützung der Autorisierung im Aspose.Cells Cloud Docker Container|Neue Funktion|
-|56300|Neue Funktion: Aggregieren Sie Zellen nach Farbe in CalculateController.|Neue Funktion|
-|56301|Neue Funktion: Mathematische Berechnungen in CalculateController.|Neue Funktion|
-|56302|Neue Funktion: Hinzufügen/Löschen/Umbenennen von Arbeitsblättern im ManagementController.|Neue Funktion|
-|56303|Neue Funktion: Hinzufügen/Löschen von Arbeitsblättern im ManagementController.|Neue Funktion|
-|56304|Neue Funktion: Erstellen Sie eine Tabelle im ManagementController.|Neue Funktion|
-|56309|Neue Funktion: Neugestaltung des Datenimports in die Tabellenkalkulation.|Neue Funktion|
-|56310|Neue Funktion: Datenbereiche in der Tabelle vertauschen.|Neue Funktion|
-|56407|Korrigieren Sie den Codegenerator der Cells Cloud SDK-Spezifikation für den Enum-Abfrageparameter.|Insekt|
+## Funktionen & Verbesserungen in Version 25.8
 
-## Funktionen und Verbesserungen in Version 25.7
+|**ID**|**Zusammenfassung**|**Kategorie**|
+| :- | :- | :- |
+| 37693 | Hinzufügen der Unterstützung für Autorisierung im Aspose.Cells Cloud Docker-Container. | Neue Funktion |
+| 56300 | Einführung von Aggregation nach Zellfarbe im CalculateController. | Neue Funktion |
+| 56301 | Einführung mathematischer Berechnungen im CalculateController. | Neue Funktion |
+| 56302 | Hinzufügen der Möglichkeit, Arbeitsblätter in ManagementController hinzuzufügen, zu löschen oder umzubenennen. | Neue Funktion |
+| 56303 | Hinzufügen der Möglichkeit, Arbeitsblätter in ManagementController hinzuzufügen oder zu löschen. | Neue Funktion |
+| 56304 | Hinzufügen der Möglichkeit, eine Tabellendatei in ManagementController zu erstellen. | Neue Funktion |
+| 56309 | Neugestaltung des Datenimports in die Tabellendatei. | Neue Funktion |
+| 56310 | Hinzufügen der Möglichkeit, Datenbereiche innerhalb der Tabellendatei zu tauschen. | Neue Funktion |
+| 56407 | Behebung des Codegenerators für Enum-Abfrageparameter in der Cells Cloud SDK-Spezifikation. | Bug |
 
-|**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
-|:- |:- |:- |
-|55754|Das Kürzen der gesamten Arbeitsmappe ist fehlgeschlagen.|Insekt|
-|55755|Das Aktualisieren der Groß-/Kleinschreibung der gesamten Arbeitsmappe ist fehlgeschlagen.|Insekt|
-|55930|Fügen Sie Funktionen zum Schützen/Aufheben des Schutzes von Tabellenkalkulationen hinzu.|Neue Funktion|
-|55931|Fügen Sie die Konvertierung von Arbeitsblättern/Tabellen/Bereichen in andere Formate hinzu.|Neue Funktion|
-|56088|Optimieren Sie die Operationsbereichsoptionen für TextProcessingController.|Verbesserung|
+## Funktionen & Verbesserungen in Version 25.7
 
-## Funktionen und Verbesserungen in Version 25.6
+|**ID**|**Zusammenfassung**|**Kategorie**|
+| :- | :- | :- |
+| 55754 | Behebung des Fehlers beim Trimmen der Arbeitsmappe. | Bug |
+| 55755 | Behebung des Fehlers bei der Aktualisierung der Wort Groß-/Kleinschreibung in der Arbeitsmappe. | Bug |
+| 55930 | Hinzufügen von Funktionen zum Schützen/Entschützen von Tabellendateien. | Neue Funktion |
+| 55931 | Hinzufügen der Möglichkeit, Arbeitsblätter, Tabellen oder Bereiche in andere Formate zu konvertieren. | Neue Funktion |
+| 56088 | Optimierung der Operationsbereichsoptionen für TextProcessingController. | Verbesserung |
 
-|**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
-|:- |:- |:- |
-|55222 | Beheben Sie den Fehler beim Hochladen mehrerer Dateien in der Swagger-Benutzeroberfläche.| Insekt|
-|55335 | Optimieren Sie die Konvertierung des Bereichs in ein Bild.| Verbesserung|
-|55370 | Beheben Sie den Fehler beim Ersetzen von Text in einer lokalen Datei in Cells Cloud 4.0.| Insekt|
-|55374 | Beheben Sie den Fehler beim Hochladen mehrerer Dateien in der Swagger-Benutzeroberfläche.| Insekt|
-|55440 | Diagramm kann nicht in Bild im SVG-Format konvertiert werden| Insekt|
-|55539 | Unterstützt das Löschen leerer Zeilen, Spalten und Arbeitsblätter.| Neue Funktion|
-|55540 | Optimieren Sie den Suchkontext für Remote-Tabellenkalkulationsfunktionen, indem Sie sie in unabhängige APIs aufteilen, die jeweils einem bestimmten Betriebsbereich gewidmet sind.| Neue Funktion|
-|55541 | Optimieren Sie die Suche nach defekten Links für Remote-Tabellenkalkulationsfunktionen, indem Sie sie in unabhängige APIs aufteilen, die jeweils einem bestimmten Betriebsbereich gewidmet sind.| Neue Funktion|
-|55542 | Optimieren Sie den Ersetzungskontext für Remote-Tabellenkalkulationsfunktionen, indem Sie sie in unabhängige APIs aufteilen, die jeweils einem bestimmten Betriebsbereich gewidmet sind.| Neue Funktion|
+## Funktionen & Verbesserungen in Version 25.6
 
-## Funktionen und Verbesserungen in Version 25.5
+|**ID**|**Zusammenfassung**|**Kategorie**|
+| :- | :- | :- |
+| 55222 | Behebung eines Fehlers beim Hochladen mehrerer Dateien in Swagger UI. | Bug |
+| 55335 | Optimierung der Konvertierung eines Bereichs in ein Bild. | Verbesserung |
+| 55370 | Behebung eines Fehlers beim Ersetzen von Text in einer lokalen Datei in Cells Cloud 4.0. | Bug |
+| 55374 | Behebung eines Fehlers beim Hochladen mehrerer Dateien in Swagger UI. | Bug |
+| 55440 | Behebung der Unfähigkeit, Diagramme in SVG-Bildformate zu konvertieren. | Bug |
+| 55539 | Hinzufügen der Unterstützung zum Löschen leerer Zeilen, Spalten und Arbeitsblätter. | Neue Funktion |
+| 55540 | Optimierung der Suchumgebung für Remote-Tabellenfunktionen durch Aufteilung in unabhängige APIs, jeweils einer spezifischen Operationsart zugeordnet. | Neue Funktion |
+| 55541 | Optimierung der Suchumgebung für defekte Verknüpfungen bei Remote-Tabellenfunktionen durch Aufteilung in unabhängige APIs, jeweils einer spezifischen Operationsart zugeordnet. | Neue Funktion |
+| 55542 | Optimierung der Ersetzungsumgebung für Remote-Tabellenfunktionen durch Aufteilung in unabhängige APIs, jeweils einer spezifischen Operationsart zugeordnet. | Neue Funktion |
 
-|**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
-|:- |:- |:- |
-|54791 | Fügen Sie die neue API hinzu, um den öffentlichen Schlüssel zum Verschlüsseln des Passworts zu erhalten.| Neue Funktion|
-|54792 |Optimieren Sie die Funktion zum Konvertieren von Arbeitsmappen: Fügen Sie den Parameter „Zeilen automatisch anpassen“ hinzu.| Verbesserung|
-|54854 | Optimieren Sie die automatische Zeilenanpassung für das Arbeitsblatt: Fügen Sie die Zeilenanzahl hinzu.| Verbesserung|
-|54915 | Optimieren Sie die automatische Zeilenanpassung für das Arbeitsblatt: Fügen Sie firstColumn und lastColumn hinzu.| Verbesserung|
+## Funktionen & Verbesserungen in Version 25.5
 
-## Funktionen und Verbesserungen in Version 25.4
+|**ID**|**Zusammenfassung**|**Kategorie**|
+| :- | :- | :- |
+| 54791 | Hinzufügen einer neuen API zum Abrufen des öffentlichen Schlüssels, der zur Verschlüsselung von Passwörtern verwendet wird. | Neue Funktion |
+| 54792 | Hinzufügen eines Parameters zur automatischen Anpassung von Zeilenhöhen für die Arbeitsmappenkonvertierung. | Verbesserung |
+| 54854 | Hinzufügen eines Zeilenzählerparameters zur automatischen Anpassung von Zeilenhöhen für ein Arbeitsblatt. | Verbesserung |
+| 54915 | Hinzufügen der Parameter firstColumn und lastColumn zur automatischen Anpassung von Zeilenhöhen für ein Arbeitsblatt. | Verbesserung |
 
-|**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
-|:- |:- |:- |
-|54059 | Neu API für umfassende Formelfehlerprüfungen in Excel-Arbeitsmappen| Neue Funktion|
-|54060 | Neu API für externe Referenzprüfungen in Excel-Arbeitsmappen| Neue Funktion|
-|54135 | Unterstützung für die Verwendung benutzerdefinierter Schriftarten aus dem Cloud-Speicher.| Neue Funktion|
+## Funktionen & Verbesserungen in Version 25.4
 
-## Funktionen und Verbesserungen in Version 25.3
+|**ID**|**Zusammenfassung**|**Kategorie**|
+| :- | :- | :- |
+| 54059 | Neue API für umfassende Formelfehlerprüfungen in Excel-Arbeitsmappen. | Neue Funktion |
+| 54060 | Neue API für externe Verweisprüfungen in Excel-Arbeitsmappen. | Neue Funktion |
+| 54135 | Unterstützung für die Verwendung benutzerdefinierter Schriftarten aus dem Cloud-Speicher. | Neue Funktion |
 
-|**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
-|:- |:- |:- |
-|53496 | Die Eigenschaften von `SaveOptions` wurden optimiert, um Leistung und Flexibilität zu verbessern.| Verbesserung|
-|53497 | Die Konvertierungsmethode von `Workbook` wurde für verbesserte Effizienz und Zuverlässigkeit optimiert.| Verbesserung|
-|53557 | Entwickelte einen neuen API, um eine umfassende Liste aller Stile in einer Arbeitsmappe abzurufen.| Neue Funktion|
-|53623 | Alle Speicheroptionen wurden verbessert, um die Funktionalität und das Benutzererlebnis zu verbessern.| Verbesserung|
-|53782 | Ein neuer API zum Einfügen von Bildern in Zellen wurde hinzugefügt.| Neue Funktion|
+## Funktionen & Verbesserungen in Version 25.3
 
-## Funktionen und Verbesserungen in Version 25.2
+|**ID**|**Zusammenfassung**|**Kategorie**|
+| :- | :- | :- |
+| 53496 | Optimierung der Eigenschaften von `SaveOptions`, um Leistung und Flexibilität zu verbessern. | Verbesserung |
+| 53497 | Optimierung der Konvertierungsmethode von `Workbook`, um Effizienz und Zuverlässigkeit zu verbessern. | Verbesserung |
+| 53557 | Entwicklung einer neuen API zum Abrufen einer vollständigen Liste aller Stile in einer Arbeitsmappe. | Neue Funktion |
+| 53623 | Verbesserung aller Speicheroptionen zur Verbesserung der Funktionalität und Benutzerfreundlichkeit. | Verbesserung |
+| 53782 | Hinzufügen einer neuen API zum Einfügen von Bildern in Zellen. | Neue Funktion |
 
-|**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
-|:- |:- |:- |
-|53048 |Unterstützt das Kopieren eines Bereichs von einer Arbeitsmappe in eine andere.| Verbesserung|
-|53361 | Fügen Sie Abfrageparameter für Bild- und Druckoptionen hinzu, um das Arbeitsblatt API zu verbessern.| Verbesserung|
-|53363 | API hinzugefügt, um die Anzahl der Excel-Zeichen für die Zellenwolke zu zählen.| Neue Funktion|
-|53364 | API hinzugefügt, um die Anzahl der Excel Wörter für die Zellenwolke zu zählen.| Neue Funktion|
-|53365 | Ein API wurde hinzugefügt, um die Anzahl der Vorkommen eines bestimmten Wortes in Excel für die Zellenwolke zu zählen.| Neue Funktion|
-|53367 | Fügen Sie eine neue Funktion hinzu, um die Konvertierung von Bereichen in Bilder zu unterstützen.| Neue Funktion|
-|53368 | Fügen Sie eine neue Funktion hinzu, um die Konvertierung von Arbeitsblättern in Bilder zu unterstützen.| Neue Funktion|
+## Funktionen & Verbesserungen in Version 25.2
 
-## Funktionen und Verbesserungen in Version 25.1
+|**ID**|**Zusammenfassung**|**Kategorie**|
+| :- | :- | :- |
+| 53048 | Unterstützung beim Kopieren eines Bereichs von einer Arbeitsmappe in eine andere Arbeitsmappe. | Verbesserung |
+| 53361 | Hinzufügen von Abfrageparametern für Bild- und Druckoptionen zur Verbesserung der Get Worksheet API. | Verbesserung |
+| 53363 | Hinzufügen einer API zum Zählen der Anzahl der Excel-Zeichen für Cells Cloud. | Neue Funktion |
+| 53364 | Hinzufügen einer API zum Zählen der Anzahl der Excel-Wörter für Cells Cloud. | Neue Funktion |
+| 53365 | Hinzufügen einer API zum Zählen der Häufigkeit eines bestimmten Wortes in Excel für Cells Cloud. | Neue Funktion |
+| 53367 | Hinzufügen einer neuen Funktion zur Unterstützung der Konvertierung von Bereichern in Bilder. | Neue Funktion |
+| 53368 | Hinzufügen einer neuen Funktion zur Unterstützung der Konvertierung von Arbeitsblättern in Bilder. | Neue Funktion |
 
-|**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
-|:- |:- |:- |
-|52489 | Fügen Sie die neue API zum Aufteilen von Text in der Zelle hinzu.| Neue Funktion|
-|52639 | Optimieren Sie die APIs für PivotTable-Filter.| Verbesserung|
+## Funktionen & Verbesserungen in Version 25.1
+
+|**ID**|**Zusammenfassung**|**Kategorie**|
+| :- | :- | :- |
+| 52489 | Hinzufügen der neuen API zum Aufteilen von Text in der Zelle. | Neue Funktion |
+| 52639 | Optimierung von Pivot-Tabellenfilter-bezogenen APIs. | Verbesserung |

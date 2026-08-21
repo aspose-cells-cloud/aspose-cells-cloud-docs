@@ -1,72 +1,106 @@
-﻿---
-title: Fusionner Cells dans la feuille de calcul Excel
-type: docs
-url: /fr/merge-cells-in-excel-worksheet/
-weight: 110
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Fusion Cells dans Excel Feuille de calcul
 ---
-Ce REST API indique `merge` cellules dans un fichier Excel.
+title: "Comment fusionner des cellules dans une feuille Excel – Aspose.Cells Cloud API (v3.0)"
+type: docs
+url: /merge-cells-in-excel-worksheet/
+weight: 110
+keywords: "fusionner des cellules, Aspose.Cells, API cloud, Excel"
+description: "Guide pour fusionner des cellules dans une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud avec des exemples cURL et des SDK."
+ArticleTitle: "Comment fusionner des cellules dans une feuille Excel – Aspose.Cells Cloud API (v3.0)"
+---
 
-## RSET API
+L’API REST Aspose.Cells Cloud permet de fusionner un bloc rectangulaire de cellules en une seule cellule s’étendant sur les lignes et colonnes spécifiées.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merge
- 
+**Conditions préalables**  
+- Un jeton JWT valide pour l’authentification.  
+- Le classeur doit déjà exister dans le dossier de stockage spécifié.  
+- La configuration du stockage (nom du dossier et nom du stockage) doit être définie dans votre compte Aspose.Cloud.
+
+## API PostWorksheetMerge
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merge
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Le nom du classeur.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| startRow| entier| requête| La ligne de départ.|
-| colonne de démarrage| entier| requête| La colonne de départ.|
-| totalRows| entier| requête| Le nombre total de lignes|
-| colonnes totales| entier| requête| Le nombre total de colonnes.|
-| dossier| chaîne| requête| Le dossier du classeur.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API REST Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetMerge) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Paramètres de la requête
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom             | Type    | Emplacement | Description                                                  |
+|-----------------|---------|-------------|--------------------------------------------------------------|
+| name            | string  | path        | Nom du classeur.                                             |
+| sheetName       | string  | path        | Nom de la feuille de calcul.                                 |
+| startRow        | integer | query       | Indice de la première ligne (à partir de zéro ; 0 = première ligne). |
+| startColumn     | integer | query       | Indice de la première colonne (à partir de zéro ; 0 = première colonne). |
+| totalRows       | integer | query       | Nombre de lignes à fusionner.                                |
+| totalColumns    | integer | query       | Nombre de colonnes à fusionner.                              |
+| folder          | string  | query       | Dossier contenant le classeur.                               |
+| storageName     | string  | query       | Nom du stockage.                                             |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+*Aucun corps de requête n’est requis pour cette opération.*
+
+## **Réponse**
+
+Renvoie un objet CellsCloudResponse.
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                                  |
+|------|-----------------------------|--------------------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant.                              |
+| 413  | Charge utile trop grande     | Le fichier téléchargé dépasse la limite de taille.          |
+| 500  | Erreur interne du serveur   | Erreur serveur inattendue.                                   |
+
+## Comment utiliser l’API PostWorksheetMerge avec les SDK
+
+### Spécification de l’API PostWorksheetMerge
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetMerge) définit une interface de programmation accessible publiquement et vous permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande **cURL** pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API cloud via cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/merge?startRow=10&startColumn=10&totalRows=10&totalColumns=10"  \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/merge?startRow=10&startColumn=10&totalRows=10&totalColumns=10" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
+### Utiliser les SDK Aspose.Cells Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK constitue la méthode optimale pour accélérer le développement. Un SDK gère les détails de bas niveau, vous permettant ainsi de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

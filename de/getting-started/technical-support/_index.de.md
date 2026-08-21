@@ -1,20 +1,22 @@
-﻿---
-title: Aspose.Cells Technischer Cloud-Support
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Technical Suppor
-LinkTitle: Technical Suppor
-type: docs
-url: /de/technical-support/
-description: Aspose.Cells Cloud unterstützt Excel zum Erstellen, Konvertieren, Zusammenführen, Teilen, Schützen, für innere Objektoperationen usw.
-weight: 80
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Technischer Support
 ---
-## **Aspose.Cloud Technischer Support**
+title: "Aspose.Cells Cloud Technischer Support"
+second_title: "Dokument"
+ArticleTitle: "Aspose.Cells Cloud Technischer Support"
+LinkTitle: "Technischer Support"
+type: docs
+url: /technical-support/
+description: "Holen Sie sich kostenlosen technischen Support für Aspose.Cells Cloud. Stellen Sie Ihre Fragen im Aspose Cloud Forum, lesen Sie die FAQ und erfahren Sie, wie Sie unser Entwicklerteam für schnelle Unterstützung kontaktieren können."
+keywords: "Aspose Cells Cloud Support, technischer Support, Aspose Cloud Forum, API-Support, Aspose Cells Cloud FAQ"
+weight: 80
+---
 
-Aspose bietet unbegrenzten kostenlosen technischen Support für alle seine Produkte. Der Support steht allen Benutzern zur Verfügung, einschließlich der Evaluierung.
+## Aspose.Cells Cloud Technischer Support
 
-Wenn Sie Hilfe mit Aspose Cells Cloud benötigen, beachten Sie Folgendes:
+Aspose bietet für alle seine Produkte uneingeschränkten, kostenlosen technischen Support. Dieser steht allen Nutzern zur Verfügung, einschließlich jener, die die Dienstleistung gerade testen.
 
--  Der wichtigste Weg zur Unterstützung ist die[Aspose Forum](http://forum.aspose.cloud/) . Stellen Sie Ihre Frage im[Aspose Cells Forum](https://forum.aspose.cloud/c/cells) und es wird innerhalb weniger Stunden beantwortet. Die Fragen werden direkt vom Aspose Cells Cloud-Entwicklungsteam beantwortet.
-- Bitte beachten Sie, dass unter Aspose kein technischer Telefonsupport angeboten wird. Telefonischer Support steht ausschließlich für Fragen zu Verkauf und Kauf zur Verfügung.
-- Wenn Sie in den Foren auf eine Antwort warten, berücksichtigen Sie bitte die Zeitzonenunterschiede.
+Falls Sie Unterstützung bei Aspose.Cells Cloud benötigen, können Sie folgende Ressourcen nutzen:
+
+- Der primäre Support-Kanal ist das [Aspose Cloud Forum](https://forum.aspose.cloud/). Stellen Sie Ihre Frage im [Aspose Cells Cloud Forum](https://forum.aspose.cloud/c/cells); Ihre Anfrage wird innerhalb weniger Stunden vom Entwicklerteam von Aspose.Cells Cloud beantwortet.  
+- Bitte beachten Sie, dass der telefonische Support ausschließlich Anfragen zum Vertrieb und Kauf betrifft; technische Probleme müssen über das Forum bearbeitet werden.  
+- Wenn Sie auf eine Antwort im Forum warten, berücksichtigen Sie bitte Zeitzonendifferenzen.  
+---

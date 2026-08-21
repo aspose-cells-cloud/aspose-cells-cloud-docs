@@ -1,81 +1,103 @@
-﻿---
-title: Excel çalışma sayfasına bir şekil ekleyin
-second_title: Documen
-linktitle: Reklam
-type: docs
-url: /tr/shapes/add/
-aliases: [/add-a-shape-inside-the-worksheet/]
-keywords: Add shape on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasına şekil eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 30
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasına şekil ekleme
 ---
-Bu REST API, Excel çalışma sayfasına bir şekil eklemeyi gösterir.
+title: "Excel Çalışma Sayfasına Bir Şekil Ekleyin"
+second_title: "Belge"
+linktitle: "Ekle"
+type: docs
+url: /shapes/add/
+aliases: [/add-a-shape-inside-the-worksheet/]
+keywords: "Aspose.Cells, şekil ekle, Excel, REST API, bulut SDK, shapeDTO, çizim türü"
+description: "Aspose.Cells Cloud REST API v3.0 kullanarak Excel çalışma sayfasına şekil (yay, çizgi, dikdörtgen vb.) nasıl ekleneceğini öğrenin. İstek sözdizimi, gerekli parametreler, kimlik doğrulama adımları ve örnek SDK kodunu içerir."
+weight: 30
+ArticleTitle: "Aspose.Cells Cloud API ile Excel Çalışma Sayfasına Bir Şekil Ekleyin"
+---
 
-## RSET API
+Bu REST API, Excel çalışma sayfasına bir şekil ekler.  
+Uç nokta **API sürümü v3.0**’a aittir; Aspose Cloud OAuth2 akışı (istemci kimliği/istemci sırrı) ile alınan bir JWT erişim belirteci kullandığınızdan ve bunu `Authorization: Bearer <token>` başlığında kullandığınızdan emin olun.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
- 
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
+
+## PutWorksheetShape API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
-İstek parametreleri şunlardır:
+### **İstek parametreleri**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| belge adı.|
-| sayfaAdı| sicim| yol| çalışma sayfası adı.|
-| şekilDTO|| vücut||
-|çizimTürü| sicim| sorgu| şekil nesne türü|
-| üstSolSatır| tam sayı| sorgu| Sol üst sıra dizini.|
-| üstSolSütun| tam sayı| sorgu| Sol üst sütun dizini.|
-| tepe| tam sayı| sorgu| Spinner'ın sol satırından dikey uzaklığını piksel cinsinden temsil eder.|
-| sol| tam sayı| sorgu| Spinner'ın sol sütunundan yatay uzaklığını piksel cinsinden temsil eder.|
-| Genişlik| tam sayı| sorgu| Spinner'ın yüksekliğini piksel cinsinden temsil eder.|
-| yükseklik| tam sayı| sorgu| Spinner'ın genişliğini piksel cinsinden temsil eder.|
-| dosya| sicim| sorgu| Belgenin klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı   | Tür    | Konum | Açıklama                                                                                           |
+| ---------------- | ------ | ----- | -------------------------------------------------------------------------------------------------- |
+| name             | string | path  | Belge adı.                                                                                         |
+| sheetName        | string | path  | Çalışma sayfası adı.                                                                               |
+| shapeDTO         | object | body  | Eklenecek şekli açıklayan JSON nesnesi (tam şema için OpenAPI spesifikasyonuna bakın).           |
+| drawingType      | string | query | Şekil nesne türü (örneğin, `arc`, `line`, `rectangle`).                                            |
+| upperLeftRow     | integer| query | Şeklin sol üst köşesinin satır indeksi.                                                            |
+| upperLeftColumn  | integer| query | Şeklin sol üst köşesinin sütun indeksi.                                                            |
+| top              | integer| query | Şeklin üst kenarından itibaren dikey ofset (piksel cinsinden).                                     |
+| left             | integer| query | Şeklin sol kenarından itibaren yatay ofset (piksel cinsinden).                                     |
+| width            | integer| query | Şeklin genişliği (piksel cinsinden).                                                               |
+| height           | integer| query | Şeklin yüksekliği (piksel cinsinden).                                                              |
+| folder           | string | query | Belgeyi içeren klasör.                                                                             |
+| storageName      | string | query | Depo adı.                                                                                          |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape), herkese açık erişilebilir bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’ye nasıl istek yapılacağını göstermektedir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes?DrawingType=arc&upperLeftRow=1&upperLeftColumn=1&top=1&left=1&width=100&height=100" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK",
+  "ShapeId": 5
 }
- 
 ```
+
+_Başarılı yanıt, HTTP durum kodunu, metinsel durumu ve yeni oluşturulan şeklin tanımlayıcısını (`ShapeId`) döndürür._
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+**HTTP Durum Kodları**
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| Kod | Anlamı                      | Açıklama                                         |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | OK (Tamam)                  | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request (Hatalı İstek)  | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT belirteci.              |
+| 413 | Payload Too Large (Çok Büyük Yük) | Yüklenen dosya boyut sınırnını aşıyor.          |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası.                   |
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Typical error responses include:
+
+- **400 Bad Request** – eksik veya geçersiz parametreler.  
+- **401 Unauthorized** – geçersiz veya eksik JWT belirteci.  
+- **404 Not Found** – belirtilen çalışma sayfası veya belge mevcut değil.
+
+Her hata, `Code` ve `Message` alanlarını içeren bir JSON nesnesi olarak döndürülür.
+
+## Cloud SDK Family
+
+Bir SDK kullanmak, geliştirme hızını en hızlı yoldan artırmak için en iyi yoldur. Bir SDK, düşük seviye detayları ele alır böylece projenizin görevlerine odaklanabilirsiniz. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerini farklı SDK’lar kullanarak nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

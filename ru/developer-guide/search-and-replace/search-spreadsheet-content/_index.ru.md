@@ -1,122 +1,133 @@
-﻿---
-title: Aspose.Cells Cloud Web API — Поиск содержимого электронных таблиц
-second_title: Documen
-ArticleTitle: Search Spreadsheet Conten
-linktitle: Поиск по содержимому электронной таблицы
-type: docs
-url: /ru/search-spreadsheet-content/
-keywords: Excel, Office Cloud, REST API, Spreadsheet Search, PDF Export, CSV Handling, JSON Formatting, Markdown Integration, Match Empty Cells in Exce
-description: Эффективный поиск текста в локальных файлах электронных таблиц с помощью нашего API
-weight: 100
-kwords: Excel, Office Облако, REST API, Поиск в электронных таблицах, Экспорт PDF, Обработка CSV, Форматирование JSON, Интеграция Markdown, Сопоставление пустых Cells в Excel
 ---
-Найдите текст в локальных файлах электронных таблиц, используя наш номер API.
+title: "Поиск содержимого электронной таблицы — Aspose.Cells Cloud API (поиск текста в Excel)"
+second_title: "Документ"
+ArticleTitle: "Поиск текста в локальных электронных таблицах Excel — поиск конкретных данных"
+linktype: "docs"
+url: /search-spreadsheet-content/
+keywords: "Aspose.Cells, API поиска в Excel, поиск по содержимому электронной таблицы, облачный API для электронных таблиц, поиск текста"
+description: "Используйте Aspose.Cells Cloud API для поиска текста, чисел или формул в локальных файлах Excel. Поддерживает регистронезависимый поиск, ограничение по рабочему листу и безопасную аутентификацию."
+weight: 100
+---
 
-## **Поиск содержимого электронной таблицы API**
+## **API для поиска по содержимому электронной таблицы**
+
+Программно ищите конкретный текст в любой электронной таблице Excel с помощью Aspose.Cells Cloud API. API позволяет находить текст, числа или формулы в локальных файлах, хранящихся в облаке, что позволяет автоматизировать поиск данных, анализ содержимого и аудит электронных таблиц.
+
+### **Веб-API**
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/search/content
+PUT https://api.aspose.cloud/v4.0/cells/search/content
 ```
 
-### **Параметры запроса:**
+Если вы предпочитаете использовать прямые HTTP-запросы, приведённый ниже пример cURL демонстрирует тот же запрос:
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody| Описание|
-|:- |:- |:- |:- |
-|Электронная таблица|Файл|FormData|Загрузите файл электронной таблицы для поиска.|
-|searchText|Нить|Запрос|Текст для поиска в электронной таблице.|
-|игнорируяРегистр|Булевое значение|Запрос|Укажите, следует ли игнорировать регистр при поиске.|
-|рабочий лист|Нить|Запрос|Укажите рабочий лист, на котором следует выполнить поиск.|
-|cellArea|Нить|Запрос|Укажите область ячеек для поиска.|
-|область|Нить|Запрос|Настройка региона для электронной таблицы.|
-|пароль|Нить|Запрос|Пароль, необходимый для открытия файла электронной таблицы.|
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/content?searchText=Invoice&ignoringCase=true" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: multipart/form-data" \
+     -F "spreadsheet=@/path/to/your/file.xlsx"
+```
+
+### **Безопасность и аутентификация**
+
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### **Параметры запроса**
+
+| Параметр      | Тип     | Местоположение | Описание                                                                              |
+| ------------- | ------- | -------------- | ------------------------------------------------------------------------------------- |
+| spreadsheet   | Файл    | FormData       | Файл Excel, в котором необходимо выполнить поиск.                                   |
+| searchText    | Строка  | Query          | Текст (или числовое значение), который необходимо найти в рабочей книге.             |
+| ignoringCase  | Логическое | Query       | Установите значение `true` для выполнения регистронезависимого поиска.                |
+| worksheet     | Строка  | Query          | Имя рабочего листа, в котором ограничить поиск. Если не указано, сканируются все.    |
+| cellArea      | Строка  | Query          | Диапазон в стиле A1 (например, `A1:C10`), ограничивающий область поиска.             |
+| region        | Строка  | Query          | Географический регион сервиса (например, `us-east-1`).                               |
+| password      | Строка  | Query          | Пароль, необходимый для открытия защищённой рабочей книги.                           |
 
 ### **Ответ**
 
+API возвращает объект `SearchResult`, содержащий массив найденных ячеек. Каждый элемент содержит имя рабочего листа, адрес ячейки и найденный текст.
+
 ```json
 {
-  "Name": "BrokenLinksResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "Properties": [
+  "textItems": [
     {
-      "Name": "BrokenLinks",
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "BrokenLink",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "BrokenLink",
-        },
-      }
+      "cellName": "A1",
+      "text": "Итого",
+      "occurrences": 1
     },
     {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
+      "cellName": "B5",
+      "text": "Итого",
+      "occurrences": 2
     }
-  ]
+  ],
+  "code": 200,
+  "status": "OK"
 }
 ```
 
 ### Коды ошибок
 
-- **400 Неверный запрос**: Неверный URI Apose.Cells Cloud API.
-- **401 Неавторизованный**: Недействительный токен доступа. Или недействительный идентификатор клиента и секретный ключ.
-- **404 Не найдено**: Файл электронной таблицы недоступен.
-- **500 Ошибка сервера**: В электронной таблице обнаружена аномалия при получении расчетных данных.
+- **400 Bad Request** — Недопустимый URI запроса или параметры.
+- **401 Unauthorized** — Отсутствует или недействителен токен доступа, либо неверные учётные данные клиента.
+- **404 Not Found** — Указанный файл электронной таблицы не может быть доступен.
+- **500 Internal Server Error** — Во время обработки рабочей книги произошла непредвиденная ошибка сервера.
 
-## Где следует использовать содержимое поиска в таблице API?
+## Где следует использовать API поиска по содержимому электронной таблицы?
 
-Если вам необходимо выполнить поиск по содержимому электронной таблицы, вы можете использовать этот код API.
+- **Комплексный аудит соответствия рабочей книги** — Сканирование всей рабочей книги для поиска конфиденциальных терминов (например, «Конфиденциальное условие», «Внутренние данные») в целях обеспечения безопасности данных и соответствия требованиям.
+- **Межлистовой запрос связанных данных** — Поиск номера проекта или имени клиента, встречающегося на нескольких рабочих листах, для быстрой интеграции между листами.
+- **Пакетная проверка содержимого шаблонов** — После генерации отчётов проверьте, что все шаблонные заполнители (например, `{{Date}}`) корректно заменены во всей пачке файлов Excel.
+- **Архивирование и майнинг исторических данных** — Поиск в устаревших файлах Excel конкретных кодов событий или деловых терминов для ускорения анализа и «археологии» данных.
 
-## Почему вам следует использовать поиск по содержимому таблицы API?
+## Почему стоит использовать API поиска по содержимому электронной таблицы?
 
-- Удобный поиск контента в электронной таблице с помощью API.
-- Разработку можно быстро завершить с помощью существующего SDK.
+- **Удобный для разработчиков** — SDK доступны для множества языков, что снижает объём разработки по сравнению с созданием собственного решения.
+- **Снижение трудозатрат** — Автоматизирует задачи, которые иначе требовали бы ручной проверки электронных таблиц.
+- **Оплата по факту использования** — Вы платите только за фактически выполненные вызовы API.
+- **Отсутствие необходимости в обслуживании** — Нет серверов для управления, обновлений ПО и проблем совместимости.
+- **Сохранение сложного форматирования** — Результаты можно экспортировать в PDF, сохранив исходное оформление Excel.
 
-## Как использовать поиск неработающих ссылок в электронной таблице API с SDK
+## Как использовать поиск по содержимому электронной таблицы с помощью SDK
 
 ### Спецификация OpenAPI
 
- The[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/SearchControllor/SearchSpreadsheetContent) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/SearchControllor/SearchSpreadsheetContent) определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия напрямую из веб-браузера.
 
-### Используйте облачные SDK Aspose.Cells
+### Использование SDK Aspose.Cells Cloud
 
-Использование SDK — лучший способ ускорить разработку. SDK берёт на себя всю необходимую информацию, позволяя вам легко реализовывать поиск по содержимому ячеек в электронных таблицах с минимальным объёмом кода.
- Пожалуйста, проверьте[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ интеграции функционала поиска. SDK абстрагирует HTTP-уровень, позволяя вызывать API с минимальным объёмом кода. Полный список SDK доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют вызов операции поиска по содержимому электронной таблицы с использованием различных SDK:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchTextInLocalFile.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchTextInLocalFile.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchTextInLocalFile.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchTextInLocalFile.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchTextInLocalFile.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchTextInLocalFile.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchTextInLocalFile.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchTextInLocalFile.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchTextInLocalFile.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchTextInLocalFile.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchTextInLocalFile.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchTextInLocalFile.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchTextInLocalFile.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchTextInLocalFile.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchTextInLocalFile.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchTextInLocalFile.go" >}}
+{{</tab>}}
 {{< /tabs >}}

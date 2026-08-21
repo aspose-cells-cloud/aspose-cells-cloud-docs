@@ -1,76 +1,92 @@
-﻿---
-title: Déplacer une feuille de calcul Excel
-second_title: Documen
-linktitle: Mouvement
-type: docs
-url: /fr/worksheets/move/
-aliases: [/move-excel-worksheets/]
-keywords: Move an Excel worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API prend en charge le déplacement d'une feuille de calcul Excel vers un classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Déplacer une feuille de calcul Excel
 ---
-Ce REST API indique `move worksheet`.
- 
-## RSET API
- 
+title: "Déplacer une feuille Excel – API Aspose.Cells Cloud (v3.0)"
+second_title: "Document"
+linktitle: "Déplacer"
+type: docs
+url: /worksheets/move/
+aliases: [/move-excel-worksheets/]
+keywords: "Aspose.Cells Cloud, Déplacer une feuille, Excel, API REST, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
+description: "Découvrez comment déplacer une feuille Excel vers une nouvelle position à l’aide de l’API Aspose.Cells Cloud (v3.0). Inclut l’endpoint, les paramètres requis, un exemple cURL et du code SDK en C#, Java, Python, etc."
+weight: 20
+ArticleTitle: "Comment déplacer une feuille Excel avec l’API Aspose.Cells Cloud v3.0"
+---
+
+Cette API REST permet de déplacer une feuille dans un classeur Excel.
+
+## API REST
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
 ```
- Les paramètres de la requête sont :
- 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| mobile|| corps| avec des paramètres mobiles.|
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
- 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
- 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### Paramètres de la requête
+
+| Nom du paramètre | Type   | Emplacement | Description                                                                                                           |
+| ---------------- | ------ | ----------- | --------------------------------------------------------------------------------------------------------------------- |
+| name             | string | path        | Nom du fichier Excel.                                                                                                |
+| sheetName        | string | path        | Nom de la feuille à déplacer.                                                                                        |
+| moving           | object | body        | Objet JSON spécifiant la feuille de destination (`DestinationWorksheet`) et la position relative (`Position`).     |
+| folder           | string | query       | Chemin du dossier où le classeur est stocké.                                                                        |
+| storageName      | string | query       | Nom du service de stockage.                                                                                          |
+
+La [Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) définit une interface de programmation publiquement accessible et vous permet d’effectuer directement des interactions REST depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour appeler les services web Aspose.Cells. L’exemple ci-dessous montre comment déplacer une feuille en une seule requête.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--d '{"DestinationWorksheet":"Sheet5", "Position":"after"}' 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton JWT>" \
+  -d '{"DestinationWorksheet":"Sheet5","Position":"after"}'
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                                                 |
+|------|-----------------------------|-----------------------------------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant.                                             |
+| 413  | Charge utile trop grande    | Le fichier téléchargé dépasse la taille limite.                            |
+| 500  | Erreur interne du serveur   | Erreur serveur inattendue.                                                  |
+
+**Exemple de charge utile d’erreur**
+
+```json
+{
+  "Code": 400,
+  "Status": "Requête incorrecte",
+  "Message": "Paramètre requis manquant : 'moving'."
+}
+```
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Famille de SDK Cloud
- 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
- 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
- 
- 
- 
+
+L’utilisation d’un SDK est le moyen le plus efficace d’accélérer le développement. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

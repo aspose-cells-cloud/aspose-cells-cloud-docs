@@ -1,99 +1,73 @@
-﻿---
-title: Abrufen von Zelldaten aus einem Arbeitsblatt
-type: docs
-url: /de/get-cell-data-from-a-worksheet/
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Zellendaten aus einem Arbeitsblatt abrufen
 ---
-Dieser REST API zeigt an, dass in einer Excel-Datei ein `cell` abgerufen wird, wenn der `cellOrMethodName`-Parameter der Zellenname ist.
+title: "Zellendaten aus einem Arbeitsblatt abrufen"
+type: docs
+url: /get-cell-data-from-a-worksheet/
+weight: 10
+keywords: "Aspose.Cells Cloud, Zellendaten abrufen, Excel-API, REST-API, Zellwert, Arbeitsblatt-API, Aspose-API-Beispiel"
+description: "Rufen Sie den Wert, den Typ und den Stil einer einzelnen Zelle aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API (v3.0) ab. Enthält cURL- und SDK-Beispiele, Parameter und Fehlerbehandlung."
+---
 
-- **cURL Beispiel**
+Diese REST-API ruft eine Zelle aus einem Excel-Arbeitsblatt ab, wenn der Parameter **`cellOrMethodName`** einen Zellennamen angibt (eine A1-Adresse wie `A3`).
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+- **cURL-Beispiel**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Anforderung" tabName12="Antwort" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?client_id=xxxx&client_secret=xxxx" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```shell
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+**Parameter**
+
+| Parameter          | Type   | Beschreibung                                                | Erforderlich |
+|--------------------|--------|-------------------------------------------------------------|--------------|
+| `cellOrMethodName` | string | Muss auf `firstcell` gesetzt werden, um die erste Zelle abzurufen. | Ja           |
+| `fileName`         | string | Name der Arbeitsmappe (z. B. `myWorkbook.xlsx`).            | Ja           |
+| `worksheet`        | string | Name des Arbeitsblatts (z. B. `Sheet1`).                    | Ja           |
+| `Authorization`    | header | Bearer-Token zur Authentifizierung.                          | Ja           |
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "A3",
-
     "Row": 2,
-
     "Column": 0,
-
-    "Value": "Statistical",
-
+    "Value": "Kategorie",
     "Type": "IsString",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
-    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">Statistical</Font>",
-
+    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Kategorie</Font>",
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
-    },
-
-    "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3",
-
-      "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK-Familie**
-
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
-
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+- **Verwendung der Aspose.Cells Cloud SDKs**
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -146,3 +120,5 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---

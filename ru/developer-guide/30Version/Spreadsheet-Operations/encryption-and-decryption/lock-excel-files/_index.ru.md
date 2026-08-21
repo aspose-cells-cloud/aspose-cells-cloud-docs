@@ -1,84 +1,95 @@
-﻿---
-title: Блокировка файла Excel
-second_title: Documen
-linktitle: Блокировка файла Excel
+---
+title: "Блокировка файлов Excel"
+second_title: "Документ"
+linktitle: "Блокировка файлов Excel"
 type: docs
 url: /ru/lock-excel-files/
-aliases: [/lock/without-storage/,/lock/,/lock/without-using-storage/]
-keywords: Lock Excel files
-description: Aspose.Cells Cloud REST API поддерживает блокировку файлов Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+keywords: "Блокировка, Excel, API, Aspose.Cells, Облако, REST, Рабочая тетрадь, Электронная таблица, SDK"
+description: "Узнайте, как блокировать рабочие тетради Excel с помощью REST API Aspose.Cells Cloud (версия 3.0). Включает HTTPS-эндпоинт, аутентификацию, cURL-запрос, схему ответа и примеры кода SDK для C#, Java, Python и других языков."
+ArticleTitle: "Блокировка файлов Excel – Документация API Aspose.Cells Cloud"
 weight: 70
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Блокировка
 ---
-Этот REST API указывает на файлы `lock` Excel.
 
-## РСЕT API
+**Версия API:** v3.0 (текущая)
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/lock
- 
+Этот REST API **блокирует** рабочие тетради Excel.
+
+## API PostLock
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/lock
 ```
 
-Параметры запроса:
+**Необходимые условия** – Запрос должен отправляться по протоколу **HTTPS** и включать действительный токен OAuth 2.0 Bearer в заголовке `Authorization`.
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| файл| файл| formData| Файл для загрузки|
-| пароль| нить| запрос||
+### Параметры запроса:
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostLock) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+| Имя параметра | Тип   | Расположение                  | Описание                                            |
+|---------------|-------|-------------------------------|-----------------------------------------------------|
+| file          | file  | form‑data (multipart body)    | Рабочая тетрадь Excel, подлежащая загрузке и блокировке. |
+| password      | string| query string                  | Пароль для рабочей тетради (необязательно).        |
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+<a href="https://apireference.aspose.cloud/cells/#/LightCells/PostLock" target="_blank" rel="noopener noreferrer">Спецификация OpenAPI</a> определяет публично доступное программное интерфейсное решение и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как **вызвать** облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/lock?password=123456" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/lock?password=123456" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <access_token>" \
+  -F "file=@Sample.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Sample.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+*Вы можете загрузить тестовую рабочую тетрадь — [Sample.xlsx](https://example.com/Sample.xlsx) — для проверки запроса.*
+
+**Примечание:** API поддерживает файлы размером до 100 МБ; более крупные данные могут привести к ответу с кодом 413 («Payload Too Large» — «Слишком большой объем данных»).
+
+### **Детали ответа**
+
+| Поле        | Тип             | Описание                                            |
+|-------------|-----------------|-----------------------------------------------------|
+| Filename    | string          | Имя заблокированной рабочей тетради, возвращаемое сервисом. |
+| FileSize    | integer         | Размер заблокированного файла в байтах.            |
+| FileContent | string (Base64) | Заблокированная рабочая тетрадь, закодированная в формате Base64. |
+
+Для извлечения заблокированной рабочей тетради декодируйте значение `FileContent` из Base64 и сохраните его, используя имя файла `Filename`, указанное в ответе.
+
+### **Обработка ошибок**
+
+– API возвращает стандартные HTTP-коды состояния (например, `400 Bad Request`, `401 Unauthorized`, `500 Internal Server Error`) вместе с объектом ошибки в формате JSON, содержащим поля `Code` и `Message`.
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK скрывает низкоуровневые детали, позволяя сосредоточиться на задачах вашего проекта. Ознакомьтесь со <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">репозиторием на GitHub</a>, чтобы получить полный список SDK Aspose.Cells Cloud.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -131,4 +142,3 @@ curl -v "http://api.aspose.cloud/v3.0/cells/lock?password=123456" \
 {{< /tab >}}
 
 {{< /tabs >}}
-

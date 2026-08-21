@@ -1,105 +1,115 @@
-﻿---
-title: Obtener rangos con nombre en un libro de trabajo Excel
-second_title: Documen
-linktitle: Nombre
-type: docs
-url: /es/ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
-keywords: Get cells data based on named range on an Excel worksheet
-description: Aspose.Cells Cloud REST API permite obtener datos de celdas según un rango con nombre en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 10
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Obtener rangos con nombre en un libro de trabajo Excel
 ---
-Este REST API indica información de rangos de hojas de trabajo de lectura.
+title: "Obtener rangos con nombre en un libro de Excel"
+second_title: "Documento"
+linktitle: "Nombre"
+type: docs
+url: /ranges/get/name/
+aliases: [/get-named-ranges-inside-the-workbook/]
+keywords: "rangos con nombre, Excel, Aspose.Cells, API en la nube, hojas de cálculo"
+description: "Recuperar rangos con nombre de un libro de Excel mediante la API REST de Aspose.Cells Cloud. Incluye detalles de la solicitud, comandos cURL de ejemplo y ejemplos de SDK para múltiples lenguajes de programación."
+ArticleTitle: "Obtener rangos con nombre en un libro de Excel – Aspose.Cells Cloud API"
+weight: 10
+---
 
-## RSET API
+Esta API REST devuelve información sobre los rangos con nombre definidos dentro de las hojas de cálculo.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
- 
+**Antecedentes** – Un *rango con nombre* es un identificador definido por el usuario que hace referencia a una celda específica o a un bloque de celdas en una hoja de cálculo. Los rangos con nombre simplifican la creación de fórmulas, mejoran la legibilidad y permiten el acceso programático a áreas frecuentemente utilizadas de un libro.
+
+**Requisitos previos** – El acceso a la API de Aspose.Cells Cloud requiere un token de acceso JWT válido. Obtenga el token autenticándose con su ID de cliente y secreto de cliente de Aspose Cloud a través del punto final del token OAuth 2.0. Incluya el token en el encabezado `Authorization: Bearer <jwt token>` de cada solicitud.
+
+## API GetNamedRanges
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
 ```
 
-Los parámetros de la solicitud son:
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del documento.|
-| carpeta| cadena| consulta| Carpeta de documentos.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+### Parámetros de solicitud
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+| Nombre del parámetro | Tipo   | Ubicación     | Descripción                                          |
+| -------------------- | ------ | ------------- | ---------------------------------------------------- |
+| name                 | string | Ruta          | El nombre del documento de Excel.                   |
+| folder               | string | Cadena de consulta | La carpeta que contiene el documento.             |
+| storageName          | string | Cadena de consulta | El nombre del almacenamiento donde reside el documento. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Códigos de estado HTTP**
+
+| Código | Significado                | Descripción                                          |
+| ------ | -------------------------- | ---------------------------------------------------- |
+| 200    | Correcto                   | Filtro aplicado correctamente; la respuesta contiene los detalles de la operación. |
+| 400    | Solicitud incorrecta       | Parámetros faltantes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado              | Token JWT no válido o faltante.                      |
+| 413    | Payload demasiado grande    | El archivo cargado excede el límite de tamaño.      |
+| 500    | Error interno del servidor | Error inesperado en el servidor.                     |
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) define una interfaz de programación accesible públicamente que le permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para invocar los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo recuperar rangos con nombre mediante cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/ranges" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Ranges": {
-
     "RangeList": [
-
       {
-
         "ColumnCount": 7,
-
         "ColumnWidth": 8.428571428571429,
-
         "FirstColumn": 1,
-
         "FirstRow": 9,
-
         "Name": "data",
-
         "RefersTo": "=Sheet1!$B$10:$H$10",
-
         "RowCount": 1,
-
         "RowHeight": 15,
-
         "Worksheet": "Sheet1"
-
       }
-
     ]
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Modelo de respuesta**
+
+| Campo           | Tipo    | Descripción                                              |
+|-----------------|---------|----------------------------------------------------------|
+| `ColumnCount`   | integer | Número de columnas en el rango.                          |
+| `ColumnWidth`   | number  | Ancho de cada columna (en puntos).                       |
+| `FirstColumn`   | integer | Índice basado en cero de la primera columna del rango.   |
+| `FirstRow`      | integer | Índice basado en cero de la primera fila del rango.      |
+| `Name`          | string  | Nombre definido por el usuario para el rango.            |
+| `RefersTo`      | string  | Fórmula que define la referencia a la celda (por ejemplo, `=Sheet1!$B$10:$H$10`). |
+| `RowCount`      | integer | Número de filas en el rango.                             |
+| `RowHeight`     | number  | Altura de cada fila (en puntos).                         |
+| `Worksheet`     | string  | Nombre de la hoja de cálculo que contiene el rango.      |
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de integrar esta funcionalidad. Los SDK manejan los detalles de bajo nivel para que usted se enfoque en la lógica de su negocio. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

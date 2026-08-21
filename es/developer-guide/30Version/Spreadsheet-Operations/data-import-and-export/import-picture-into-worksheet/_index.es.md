@@ -1,54 +1,110 @@
-﻿---
-title: Importar imagen a la hoja de trabajo Excel
-second_title: Documen
-linktitle: Importar imagen
-type: docs
-url: /es/import-picture-into-excel-worksheet/
-aliases: [/import-picture-into-worksheet/,/import-data/picture/, /import/picture/]
-keywords: Import picture into Excel files
-description: Aspose.Cells Cloud REST API admite la importación de imágenes a archivos Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 19
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Importar imagen a la hoja de trabajo Excel
 ---
-Esta hoja de trabajo REST API `import picture data` en Excel.
+title: "Importar imagen en hoja de cálculo de Excel"
+ArticleTitle: "Importar imagen en hoja de cálculo de Excel – Guía de la API de Aspose.Cells Cloud"
+second_title: "Documentos"
+linktitle: "Importar imagen"
+type: docs
+url: /import-picture-into-excel-worksheet/
+aliases:
+  - /import-picture-into-worksheet/
+  - /import-data/picture/
+  - /import/picture/
+keywords: "importar imagen, Excel, Aspose.Cells Cloud, API REST, v3.0"
+description: "Aprenda a importar imágenes en hojas de cálculo de Excel mediante la API REST de Aspose.Cells Cloud v3.0. Incluye ejemplos de solicitudes multipart, códigos de ejemplo para SDK y orientación sobre el manejo de errores. Comience rápidamente con pasos claros y detallados."
+weight: 19
+---
 
-La solicitud es una solicitud HTTP con contenido de varias partes (ver[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)o[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La primera parte del contenido multiparte contiene los datos de ImportPictureOption y la segunda contiene un archivo de datos.
+Importar una imagen en una hoja de cálculo de Excel permite enriquecer las hojas de cálculo con contenido visual, como logotipos, gráficos o diagramas. Esta guía muestra cómo utilizar la operación **ImportPicture** de Aspose.Cells Cloud, el formato necesario para la solicitud y cómo manejar las respuestas.
 
-## RSET API
+**Requisitos previos:** Debe tener un token de autenticación JWT válido y un libro existente almacenado en Aspose Cloud Storage antes de invocar la operación de importación.
 
-```bash
+## API PostImportData
 
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-Los parámetros importantes se describen en la siguiente tabla:
+### **Seguridad y autenticación**
 
-**Importar opción de imagen**
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
-|Nombre del parámetro|Tipo|Descripción|
-|:- |:- |:- |
-| Fila superior izquierda| entero||
-| Columna superior izquierda| entero||
-| Fila inferior derecha| entero||
-| Columna inferior derecha| entero||
-| Nombre del archivo| cadena||
-| Datos| Cadena||
-|Hoja de trabajo de destino| cadena| Nombre de la hoja de trabajo de destino.|
-| EsInsertar| cadena| verdadero/falso.|
-| Importar tipo de datos| cadena|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture.|
-| Fuente| Fuente del archivo| Indica la posición del archivo de datos cuando el parámetro BatchData es nulo.|
+### **Parámetros de la solicitud**
 
-**Ejemplo**
+La solicitud es una HTTP **POST** con contenido **multipart/related** (consulte [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) o [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).
 
-## Familia de SDK en la nube
+- La **primera parte** contiene un objeto JSON denominado **ImportPictureOption** que describe dónde y cómo se debe colocar la imagen.
+- La **segunda parte** transporta el archivo de imagen (o sus datos codificados en Base64).
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+### ImportPictureOption – definición
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+```json
+{
+  "UpperLeftRow": 0,
+  "UpperLeftColumn": 0,
+  "LowerRightRow": 10,
+  "LowerRightColumn": 5,
+  "Filename": "logo.png",
+  "Data": "iVBORw0KGgoAAAANSUhEUgAA...",
+  "DestinationWorksheet": "Hoja1",
+  "IsInsert": true,
+  "ImportDataType": "Picture",
+  "Source": { "FileSource": "Storage" }
+}
+```
 
-{{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
+_`IsInsert` es un valor **booleano**: `true` inserta una nueva imagen, `false` reemplaza una existente._
+
+### Parámetros importantes
+
+**ImportPictureOption**
+
+| Nombre del parámetro | Tipo        | Descripción                                                                                                                                                                         |
+|----------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| UpperLeftRow         | int         | Índice de fila de la esquina superior izquierda donde se colocará la imagen.                                                                                                       |
+| UpperLeftColumn      | int         | Índice de columna de la esquina superior izquierda donde se colocará la imagen.                                                                                                    |
+| LowerRightRow        | int         | Índice de fila de la esquina inferior derecha que define los límites de la imagen.                                                                                                 |
+| LowerRightColumn     | int         | Índice de columna de la esquina inferior derecha que define los límites de la imagen.                                                                                              |
+| Filename             | string      | Nombre del archivo de imagen.                                                                                                                                                      |
+| Data                 | string      | Datos binarios de la imagen codificados en Base64 (opcional si el archivo se envía como la segunda parte).                                                                        |
+| DestinationWorksheet | string      | Nombre de la hoja de cálculo donde se insertará la imagen.                                                                                                                         |
+| **IsInsert**         | **boolean** | `true` para insertar una nueva imagen; `false` para reemplazar una existente.                                                                                                      |
+| ImportDataType       | string      | Tipo de datos que se va a importar (por ejemplo, `Picture`, `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`). |
+| Source               | FileSource  | Indica la ubicación del archivo de datos cuando el parámetro `BatchData` es null.                                                                                                 |
+
+### Respuesta
+
+Una solicitud correcta devuelve **HTTP 200** con una carga útil JSON similar a:
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+Códigos de estado posibles:
+
+| Código | Significado                                         |
+|--------|-----------------------------------------------------|
+| 200    | Importación realizada con éxito                    |
+| 400    | Solicitud incorrecta: datos faltantes o inválidos |
+| 401    | No autorizado: token inválido o ausente            |
+| 500    | Error interno del servidor                         |
+
+
+## Cómo usar la API PostImportData con SDK
+
+### Especificación de la API PostImportData
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
+
+### Uso de los SDK de Aspose.Cells Cloud
+
+Utilizar un SDK es la mejor manera de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel, para que usted pueda centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells utilizando diversos SDK:
+
+{{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js"  tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -86,3 +142,4 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

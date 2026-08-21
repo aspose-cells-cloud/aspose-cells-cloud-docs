@@ -1,73 +1,69 @@
-﻿---
-title: Ein Excel-Arbeitsblatt ausblenden
-second_title: Documen
-linktitle: Versteckt
-type: docs
-url: /de/worksheets/hide/
-aliases: [/hide-excel-worksheets/]
-keywords: Hide an Excel Worksheet on an Excel Workbook
-description: Aspose.Cells Cloud REST API unterstützt das Ausblenden eines Excel Arbeitsblatts in einer Excel Arbeitsmappe. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 50
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Ausblenden eines Excel Arbeitsblatts
 ---
-Dieser REST API zeigt `hide worksheet` an.
- 
-## RSET API
- 
+title: "Excel-Arbeitsblatt ausblenden"
+second_title: "Dokument"
+linktitle: "Ausblenden"
+type: docs
+url: /worksheets/hide/
+aliases: [/hide-excel-worksheets/]
+keywords: "Aspose.Cells Cloud, Excel, Arbeitsblatt ausblenden, REST API, Tabellenkalkulation"
+description: "Schritt-für-Schritt-Anleitung zum Ausblenden eines Arbeitsblatts in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API, einschließlich Anforderungsdetails, einem cURL-Beispiel und SDK-Code-Snippets für mehrere Sprachen."
+weight: 50
+---
+
+Diese REST API blendet ein Arbeitsblatt aus.
+
+## REST API
+
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
- 
 ```
- Die Anforderungsparameter sind:
- 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Dokumentname.|
-| Blattname| Schnur| Weg| Arbeitsblattname.|
-| ist sichtbar| Boolescher Wert| Abfrage| Neuer Sichtbarkeitswert für das Arbeitsblatt.|
-| Ordner| Schnur| Abfrage| Der Dokumentenordner.|
-| Speichername| Schnur| Abfrage| Speichername.|
- 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
- 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Anforderungsparameter**
+
+| Parametername   | Typ     | Ort    | Beschreibung                                                 |
+| --------------- | ------- | ------ | ------------------------------------------------------------ |
+| name            | string  | path   | Der Name der Excel-Arbeitsmappe.                             |
+| sheetName       | string  | path   | Der Name des zu ändernden Arbeitsblatts.                     |
+| isVisible       | boolean | query  | Sichtbarkeitsflag (`true` für sichtbar, `false` für ausgeblendet). |
+| folder          | string  | query  | Der Ordnerpfad, in dem die Arbeitsmappe gespeichert ist.     |
+| storageName     | string  | query  | Der Name des Speicherdienstes.                               |
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht es Ihnen, REST-Interaktionen direkt aus einem Webbrowser heraus durchzuführen.
+
+Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie ein Aufruf an die Cloud-API mit cURL durchgeführt wird.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/visible?isVisible=false" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Cloud SDK-Familie
- 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
- 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklungsgeschwindigkeit zu erhöhen. Ein SDK übernimmt die Details auf unterster Ebene, sodass Sie sich auf Ihre Projekt Aufgaben konzentrieren können. Bitte besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
+
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste unter Verwendung verschiedener SDKs durchgeführt werden:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

@@ -1,54 +1,56 @@
-﻿---
-title: "Aspose.Cells Cloud SDK per C#: converti, unisci, dividi, proteggi, cerca, sostituisci e altro ancora"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for C#: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells Cloud SDK per .Ne
-type: docs
-url: /it/available-sdks/aspose-cells-cloud-net/
-description: "Aspose.Cells Cloud SDK per .Net offre una vera potenza multipiattaforma: un'importazione fornisce agli sviluppatori Windows, Linux e macOS la stessa fluidità API per creare, convertire, unire, dividere, proteggere e manipolare ogni Excel oggetto, senza Office installazione richiesta e senza modifiche specifiche della piattaforma."
-weight: 30
-kwords: REST SDK per .Net, Excel SDK per .Net, Cloud SDK per .Net, supporto per conversione, unione, suddivisione, protezione, ricerca, sostituzione e altro ancora
 ---
-L'SDK è open source e concesso in licenza con licenza MIT. È possibile accedervi[il codice sorgente della libreria Net per Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
+title: "Aspose.Cells Cloud SDK per C#: convertire, unire, dividere, proteggere, cercare, sostituire e altro ancora."
+second_title: "Documento"
+ArticleTitle: "Aspose.Cells Cloud SDK per C#: convertire, unire, dividere, proteggere, cercare, sostituire e altro ancora."
+linktitle: "Aspose.Cells Cloud SDK per .NET"
+type: docs
+url: /available-sdks/aspose-cells-cloud-net/
+description: "L'SDK .NET di Aspose.Cells Cloud fornisce un'API cross-platform per creare, convertire, unire, dividere, proteggere, cercare e sostituire file Excel—nessuna installazione di Office richiesta."
+keywords: "Aspose.Cells, Cloud SDK, .NET, Excel, convertire, unire, dividere, proteggere, cercare, sostituire, API"
+weight: 30
+---
 
-# **Come utilizzare la libreria Net di Aspose.Cells Cloud**
+L'SDK è open-source e concesso in licenza con la licenza MIT. Puoi accedere al codice sorgente della libreria .NET per Aspose.Cells Cloud [qui](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
 
-Aspose.Cells Cloud SDK for Net è una potente libreria che consente agli sviluppatori di manipolare ed elaborare file Microsoft e Excel utilizzando il linguaggio di programmazione Net. Con questo SDK, è possibile creare, modificare e convertire documenti Excel nel cloud, senza installare software aggiuntivo o dipendenze sul computer locale.
+# **Come utilizzare la libreria .NET di Aspose.Cells Cloud**
 
-In questo articolo esploreremo come utilizzare Aspose.Cells Cloud SDK for Net per eseguire alcune attività comuni, come la creazione di una nuova cartella di lavoro Excel, l'inserimento di dati nelle celle e il salvataggio della cartella di lavoro modificata nel cloud.
+L'SDK .NET di Aspose.Cells Cloud è una libreria potente che consente agli sviluppatori di manipolare e elaborare file Microsoft Excel utilizzando il linguaggio di programmazione .NET. Con questo SDK è possibile creare, modificare e convertire documenti Excel nel cloud, senza dover installare software o dipendenze aggiuntive sul proprio computer locale.
 
-## Iniziare
+In questo articolo esploreremo come utilizzare l'SDK .NET di Aspose.Cells Cloud per eseguire alcune attività comuni, come la creazione di un nuovo libro Excel, l'inserimento di dati nelle celle e il salvataggio del libro modificato nel cloud.
 
- Prima di poter iniziare a utilizzare Cloud SDK per Go Aspose.Cells, è necessario configurare l'ambiente di sviluppo e installare le dipendenze necessarie. Fare riferimento a[l'articolo](https://docs.aspose.cloud/cells/quickstart/) sul sito Aspose per ottenere il tuo ID cliente e il tuo segreto cliente.
+## Per iniziare
 
-## Come installare il pacchetto Net per Aspose.Cells Cloud
+Prima di poter iniziare a utilizzare l'SDK .NET di Aspose.Cells Cloud, è necessario configurare l'ambiente di sviluppo e installare le dipendenze necessarie. Consulta [questo articolo](https://docs.aspose.cloud/cells/quickstart/) sul sito Web di Aspose per ottenere il proprio client ID e client secret.
 
-È possibile installare Aspose.Cells Cloud SDK for Net utilizzando nuget. Di seguito sono riportati i passaggi per nuget:
+**Prerequisiti**  
+- .NET 6.0 o versioni successive installate.  
+- Un account Aspose Cloud con client ID e client secret.  
+- Accesso a una posizione di archiviazione (archivio Aspose Cloud o un servizio compatibile).
+
+## Come installare il pacchetto .NET per Aspose.Cells Cloud
+
+Puoi installare l'SDK .NET di Aspose.Cells Cloud utilizzando NuGet. Di seguito sono riportati i passaggi per NuGet:
 
 ```nuget
-
 Install-Package Aspose.Cells-Cloud
-
 ```
 
-Puoi installare Cloud SDK for Net Aspose.Cells anche tramite dotnet. Di seguito sono riportati i passaggi per dotnet:
+Puoi installare l'SDK .NET di Aspose.Cells Cloud anche utilizzando dotnet. Di seguito sono riportati i passaggi per dotnet:
 
 ```powershell
-
 dotnet add package Aspose.Cells-Cloud
-
 ```
 
-## Come usare il pacchetto Net per convertire Xlsx in PDF
+## Come utilizzare il pacchetto .NET per convertire Xlsx in PDF
 
-- Importa Aspose.Cells Cloud Library
- Per prima cosa, importa il pacchetto necessario dal Cloud DotNet SDK Aspose.Cells nel tuo progetto.
-- Configurare il client API con credenziali
- Autentica il tuo cliente API con il tuo ID cliente univoco e il tuo segreto cliente.
-- Preparare i parametri di conversione
- Definire i parametri per l'attività di conversione, tra cui il nome del file sorgente, il formato di output desiderato e il percorso della cartella di archiviazione.
-- Esegui conversione cartella di lavoro
- Richiamare il processo di conversione utilizzando il metodo PostConvertWorkbook e gestire la risposta.
+- Importare la libreria Aspose.Cells Cloud  
+  Inizia importando il pacchetto necessario dall'SDK .NET di Aspose.Cells Cloud nel proprio progetto.  
+- Configurare il client API con le credenziali  
+  Esegui l'autenticazione del client API con il proprio client ID e client secret univoci.  
+- Preparare i parametri per la conversione  
+  Definire i parametri per l'attività di conversione, inclusi il nome del file di origine, il formato di output desiderato e il percorso della cartella di archiviazione.  
+- Eseguire la conversione del Workbook  
+  Richiamare il processo di conversione utilizzando il metodo `PostConvertWorkbook` e gestire la risposta.
 
 ### **Codice di esempio**
 

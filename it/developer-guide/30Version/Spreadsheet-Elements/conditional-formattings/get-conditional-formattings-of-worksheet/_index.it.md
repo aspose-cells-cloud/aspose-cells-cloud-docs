@@ -1,277 +1,81 @@
-﻿---
-title: Ottieni formattazione condizionale
-type: docs
-url: /it/conditional-formattings/get-all/
-aliases: [/get-conditional-formattings-of-worksheet/]
-keywords: REST API, spreadsheets, excel, get condition formattin
-description: "Cells.Cloud API per Excel opera: ottieni la formattazione della condizione"
-weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni formattazioni condizionali
 ---
- Questo REST API indica Ottieni formattazioni condizionali
- 
-## RSET API
- 
+title: "Ottenere le regole di formattazione condizionale"
+type: docs
+url: /conditional-formattings/get-all/
+aliases: [/get-conditional-formattings-of-worksheet/]
+keywords: "Aspose.Cells Cloud, REST API, Excel, Formattazione condizionale, Foglio di lavoro, API di formattazione condizionale"
+description: "Recupera tutte le regole di formattazione condizionale applicate a un foglio di lavoro utilizzando l'API REST di Aspose.Cells Cloud. Include la sintassi della richiesta, i passaggi di autenticazione, i parametri, esempi concisi di risposta e la gestione degli errori."
+weight: 20
+---
+
+Questa API REST recupera le regole di formattazione condizionale applicate a un foglio di lavoro.
+
+## Sicurezza e autenticazione
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'[autenticazione basata su token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
+
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings
 ```
- I parametri della richiesta sono:
- 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero||
-| Nome foglio| corda| sentiero||
-| cartella| corda| domanda||
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
- 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
- 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
- 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+### Parametri della richiesta
+
+| Nome parametro | Tipo   | Posizione | Descrizione                                      |
+| -------------- | ------ | --------- | ------------------------------------------------ |
+| name           | string | path      | Il nome del file Excel.                          |
+| sheetName      | string | path      | Il nome del foglio di lavoro.                    |
+| folder         | string | query     | Il percorso della cartella in cui è memorizzato il file. |
+| storageName    | string | query     | Il nome del servizio di archiviazione (opzionale). |
+
+### Risposte di errore
+
+| Codice HTTP | Motivo                                                    | Corpo di esempio                                                    |
+| ----------- | --------------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**     | Richiesta non valida – parametri mancanti o non validi.   | `{ "Code":"400", "Message":"Valore di parametro non valido." }`     |
+| **401**     | Non autorizzato – token JWT mancante o non valido.        | `{ "Code":"401", "Message":"Il token di accesso è mancante o non valido." }` |
+| **404**     | Non trovato – cartella di lavoro o foglio di lavoro inesistente. | `{ "Code":"404", "Message":"File non trovato." }`                   |
+| **500**     | Errore interno del server – errore imprevisto nel server. | `{ "Code":"500", "Message":"Si è verificato un errore imprevisto." }` |
+
+La <a href="https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings" target="_blank">Specifiche OpenAPI</a> definiscono un'interfaccia di programmazione pubblicamente accessibile e consentono di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare una chiamata all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <access_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-  "Status": "string",
+  "Status": "OK",
   "ConditionalFormattings": {
-    "link": {
-      "Href": "string",
-      "Rel": "string",
-      "Title": "string",
-      "Type": "string"
-    },
-    "Count": 0,
+    "Count": 1,
     "ConditionalFormattingList": [
       {
-        "link": {
-          "Href": "string",
-          "Rel": "string",
-          "Title": "string",
-          "Type": "string"
-        },
-        "sqref": "string",
+        "sqref": "A1:B10",
         "FormatConditions": [
           {
-            "link": {
-              "Href": "string",
-              "Rel": "string",
-              "Title": "string",
-              "Type": "string"
-            },
-            "Priority": 0,
-            "Type": "string",
-            "StopIfTrue": true,
-            "AboveAverage": {
-              "IsAboveAverage": true,
-              "IsEqualAverage": true,
-              "StdDev": 0
-            },
-            "ColorScale": {
-              "MaxCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MaxColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "MidCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MidColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "MinCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MinColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              }
-            },
-            "DataBar": {
-              "AxisColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "AxisPosition": "string",
-              "BarBorder": {
-                "Color": {
-                  "A": 0,
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "Type": "string"
-              },
-              "BarFillType": "string",
-              "Color": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "Direction": "string",
-              "MaxCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MaxLength": 0,
-              "MinCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MinLength": 0,
-              "NegativeBarFormat": {
-                "BorderColor": {
-                  "A": 0,
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "BorderColorType": "string",
-                "Color": {
-                  "A": 0,
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "ColorType": "string"
-              },
-              "ShowValue": true
-            },
-            "Formula1": "string",
-            "Formula2": "string",
-            "IconSet": {
-              "CfIcons": [
-                {
-                  "ImageData": "string",
-                  "Index": 0,
-                  "Type": "string"
-                }
-              ],
-              "Cfvos": [
-                {
-                  "IsGTE": true,
-                  "Type": "string"
-                }
-              ],
-              "IsCustom": true,
-              "Reverse": true,
-              "ShowValue": true,
-              "IconSetType": "string"
-            },
-            "Operator": "string",
+            "Priority": 1,
+            "Type": "CellValue",
+            "Operator": "GreaterThan",
+            "Formula1": "100",
             "Style": {
-              "link": {
-                "Href": "string",
-                "Rel": "string",
-                "Title": "string",
-                "Type": "string"
-              },
               "Font": {
-                "Color": {
-                  "A": 0,
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "DoubleSize": 0,
-                "IsBold": true,
-                "IsItalic": true,
-                "IsStrikeout": true,
-                "IsSubscript": true,
-                "IsSuperscript": true,
-                "Name": "string",
-                "Size": 0,
-                "Underline": "string"
-              },
-              "Name": "string",
-              "CultureCustom": "string",
-              "Custom": "string",
-              "BackgroundColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "ForegroundColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "IsFormulaHidden": true,
-              "IsDateTime": true,
-              "IsTextWrapped": true,
-              "IsGradient": true,
-              "IsLocked": true,
-              "IsPercent": true,
-              "ShrinkToFit": true,
-              "IndentLevel": 0,
-              "Number": 0,
-              "RotationAngle": 0,
-              "Pattern": "string",
-              "TextDirection": "string",
-              "VerticalAlignment": "string",
-              "HorizontalAlignment": "string",
-              "BorderCollection": [
-                {
-                  "LineStyle": "string",
-                  "Color": {
-                    "A": 0,
-                    "R": 0,
-                    "G": 0,
-                    "B": 0
-                  },
-                  "BorderType": "string"
-                }
-              ],
-              "BackgroundThemeColor": {
-                "ColorType": "string",
-                "Tint": 0
-              },
-              "ForegroundThemeColor": {
-                "ColorType": "string",
-                "Tint": 0
+                "Color": { "A": 255, "R": 255, "G": 0, "B": 0 },
+                "IsBold": true
               }
-            },
-            "Text": "string",
-            "TimePeriod": "string",
-            "Top10": {
-              "IsBottom": true,
-              "IsPercent": true,
-              "Rank": 0
             }
           }
         ]
@@ -279,20 +83,51 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
     ]
   }
 }
-
 ```
+
+_L'esempio precedente mostra solo i campi più rilevanti per mantenere il payload conciso._
+
+**Parametri di risposta**
+
+| Parametro                                    | Tipo    | Descrizione                                                   |
+|----------------------------------------------|---------|---------------------------------------------------------------|
+| Status                                       | string  | Stato del risultato della richiesta (ad esempio, **OK**).     |
+| ConditionalFormattings                       | object  | Contenitore per i dati di formattazione condizionale.         |
+| ConditionalFormattings.Count                 | integer | Numero di regole di formattazione condizionale restituite.    |
+| ConditionalFormattings.ConditionalFormattingList | array   | Elenco di oggetti di formattazione condizionale.              |
+| ConditionalFormattingList[].sqref            | string  | Intervallo di celle a cui si applica la formattazione (ad esempio, **A1:B10**). |
+| ConditionalFormattingList[].FormatConditions | array   | Raccolta di oggetti di condizione di formattazione per l'intervallo. |
+| FormatConditions[].Priority                  | integer | Priorità di valutazione della condizione.                     |
+| FormatConditions[].Type                      | string  | Tipo di condizione (ad esempio, **CellValue**).              |
+| FormatConditions[].Operator                  | string  | Operatore utilizzato per la condizione (ad esempio, **GreaterThan**). |
+| FormatConditions[].Formula1                  | string  | Prima formula o valore per la condizione.                     |
+| FormatConditions[].Style                     | object  | Stile applicato quando la condizione è soddisfatta.           |
+| Style.Font.Color                             | object  | Definizione colore RGBA per il carattere.                     |
+| Style.Font.IsBold                            | boolean | Indica se il carattere è in grassetto.                        |
+
+**Codici di stato HTTP**
+
+| Codice | Significato               | Descrizione                                                  |
+|--------|---------------------------|--------------------------------------------------------------|
+| 200    | OK                        | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida      | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401    | Non autorizzato           | Token JWT non valido o mancante.                             |
+| 413    | Payload troppo grande     | Il file caricato supera il limite di dimensione.             |
+| 500    | Errore interno del server | Errore imprevisto nel server.                                |
 
 {{< /tab >}}
 
 {{< /tabs >}}
-## **Origine SDK**
-Gli SDK Cloud Aspose.Cells possono essere scaricati dalla seguente pagina:[SDK disponibili](/cells/it/available-sdks/)
-### **Esempi di SDK**
+
+## Famiglia di SDK Cloud
+
+Utilizzare un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il <a href="https://github.com/aspose-cells-cloud" target="_blank">repository GitHub</a> per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-GetWorksheetConditionalFormatting-1.cs" >}}
 
@@ -302,13 +137,9 @@ Gli SDK Cloud Aspose.Cells possono essere scaricati dalla seguente pagina:[SDK d
 
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-cells-get-conditional-formatting-worksheet.java" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-
-
 
 {{< /tab >}}
 
@@ -320,33 +151,23 @@ Gli SDK Cloud Aspose.Cells possono essere scaricati dalla seguente pagina:[SDK d
 
 {{< tab tabNum="5" >}}
 
-
-
 {{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-GetWorksheetConditionalFormatting-1.js" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-
-
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-GetWorksheetConditionalFormatting-1.pl" >}}
 
@@ -359,3 +180,4 @@ Gli SDK Cloud Aspose.Cells possono essere scaricati dalla seguente pagina:[SDK d
 {{< /tab >}}
 
 {{< /tabs >}}
+---

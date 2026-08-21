@@ -1,76 +1,94 @@
-﻿---
-title: Excel çalışma sayfasındaki satırları göster
-second_title: Documen
-linktitle: Gizlenmemiş
-type: docs
-url: /tr/rows/unhide/
-aliases: [/unhide-rows-in-excel-worksheet/]
-keywords: Unhide rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki satırların gizlenmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 50
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki satırları gösterme
 ---
-Bu REST API, Excel çalışma sayfasındaki satırların gösterilmesini gösterir.
+title: "Excel Çalışma Sayfasında Satırları Tekrar Görünür Hale Getirme"
+second_title: "Belge"
+linktitle: "Tekrar Görünür Hale Getir"
+type: docs
+url: /rows/unhide/
+aliases: [/unhide-rows-in-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, satırları tekrar görünür hale getir, REST API, elektronik tablo, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
+description: "Aspose.Cells Cloud REST API'sini kullanarak bir Excel çalışma sayfasında satırları tekrar görünür hale getirin. API, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl ve Swift gibi çeşitli SDK'lar aracılığıyla kullanılabilir."
+weight: 50
+ArticleTitle: "Aspose.Cells Cloud API kullanarak Excel çalışma sayfasında satırları tekrar görünür hale getirme"
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasındaki satırları tekrar görünür hale getirir.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide
- 
+**Ön Koşullar:** Bu uç noktayı çağırmadan önce Aspose Cloud kimlik doğrulama hizmetinden geçerli bir JWT erişim belirteci almanız ve hedef çalışma kitabının desteklenen bir depoya yüklenmiş olması gerekir.
+
+## PostUnhideWorksheetRows API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| başlangıç satırı| tam sayı| sorgu| İşlem yapılacak satırın başlangıç indeksi.|
-| toplamSatırlar| tam sayı| sorgu| İşlem yapılacak satır sayısı.|
-| yükseklik| sayı| sorgu|15.0 |
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **İstek Parametreleri**
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı | Tür    | Konum  | Açıklama                                      |
+| ------------- | ------ | ------ | --------------------------------------------- |
+| name          | string | path   | Çalışma kitabının adı.                         |
+| sheetName     | string | path   | Çalışma sayfasının adı.                        |
+| startrow      | integer | query | Tekrar görünür hale getirilecek ilk satırın sıfır tabanlı dizini. |
+| totalRows     | integer | query | Tekrar görünür hale getirilecek satır sayısı. |
+| height        | number | query | Satır yüksekliği (varsayılan 15.0).           |
+| folder        | string | query | Belge klasörü.                                |
+| storageName   | string | query | Depo adı.                                     |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+<a href="https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows" rel="noopener noreferrer">OpenAPI Spesifikasyonu</a>, herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+**Kimlik Doğrulama**  
+Tüm istekler, Aspose Cloud kimlik doğrulama hizmetinden alınan JWT erişim belirteci kullanılarak doğrulanmalıdır. Belirteci `Authorization: Bearer <jwt token>` başlığına ekleyin.
+
+Aspose.Cells web hizmetlerine kolayca ulaşmak için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sine nasıl istek yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/unhide?startrow=1&totalRows=1&height=15" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+ -X POST \
+ -H "Content-Type: application/json" \
+ -H "Accept: application/json" \
+ -H "Authorization: Bearer <jwt token>"
+# Not: Bu uç nokta için POST gövdesi boştur
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+**HTTP Durum Kodları**
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| Kod | Anlam                       | Açıklama                                         |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | OK (Tamam)                  | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request (Hatalı İstek) | Eksik veya geçersiz parametreler (örn., desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT belirteci.              |
+| 413 | Payload Too Large (Çok Büyük Yük) | Yüklenen dosya boyut sınırını aşıyor.          |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası.                   |
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Ayrıntılı sorun giderme için [Hata Yönetimi kılavuzuna](/error-handling/) bakın.
+
+## Bulut SDK Geliştirme Takımı
+
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoludur. SDK, düşük seviye ayrıntıları yöneterek size proje görevlerine odaklanma imkânı sunar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub Deposu](https://github.com/aspose-cells-cloud)'na bakın.
+
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerine farklı SDK'lar kullanılarak nasıl istek yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,6 +141,7 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}

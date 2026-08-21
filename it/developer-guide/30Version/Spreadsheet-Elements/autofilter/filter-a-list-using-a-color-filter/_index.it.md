@@ -1,83 +1,113 @@
-﻿---
-title: Aggiungi un filtro colore in un foglio di lavoro Excel
-second_title: Documen
-linktitle: Aggiungi filtro colore
-type: docs
-url: /it/autofilter/add-color-filter/
-aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
-keywords: Adds a color filter on an Excel worksheet
-description: Il Cloud Aspose.Cells API supporta l'aggiunta di un filtro colore su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 65
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Aggiungi un filtro colore in un foglio di lavoro Excel
 ---
-Questo REST API indica di aggiungere un `color filter` su un foglio di lavoro Excel.
+title: "Aggiungi un filtro colore in un foglio di lavoro Excel"
+second_title: "Documento"
+linktitle: "Aggiungi filtro colore"
+type: docs
+url: /autofilter/add-color-filter/
+aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
+keywords: "Excel, filtro colore, Aspose.Cells Cloud, REST API, filtro automatico, autenticazione JWT"
+description: "Scopri come applicare un filtro colore in un foglio di lavoro Excel con Aspose.Cells Cloud API. Include endpoint, parametri, esempio cURL, gestione errori ed esempi di SDK."
+weight: 65
+ArticleTitle: "Aggiungi un filtro colore in un foglio di lavoro Excel usando Aspose.Cells Cloud API"
+---
 
-## RSET API
+Scopri come aggiungere un filtro colore in un foglio di lavoro Excel utilizzando l'API Aspose.Cells Cloud. Questa guida copre l'endpoint richiesto, i parametri, i prerequisiti di autenticazione, la richiesta cURL di esempio, gli esempi di SDK e la gestione della risposta.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter
- 
+Questa API REST aggiunge un **filtro colore** a un foglio di lavoro Excel.
+
+## PutWorksheetColorFilter API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero||
-| Nome foglio| corda| sentiero||
-| allineare| corda| domanda||
-| fieldIndex| intero| domanda||
-| filtro colore|| corpo||
-| matchBlanks| booleano| domanda||
-| aggiornare| booleano| domanda||
-| cartella| corda| domanda||
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetColorFilter) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### Parametri della richiesta:
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Nome Parametro | Tipo    | Posizione | Descrizione                                                                 |
+|----------------|---------|-----------|-----------------------------------------------------------------------------|
+| name           | string  | path      | Il nome del file Excel.                                                     |
+| sheetName      | string  | path      | Il nome del foglio di lavoro contenente i dati da filtrare.                |
+| range          | string  | query     | L'intervallo di celle a cui viene applicato il filtro (es. `A1:B10`).      |
+| fieldIndex     | integer | query     | Indice in base zero della colonna su cui viene applicato il filtro colore. |
+| colorFilter    | object  | body      | Oggetto JSON che definisce i colori in primo piano e in secondo piano da filtrare. |
+| matchBlanks    | boolean | query     | Se le righe con celle vuote debbano essere incluse nei risultati del filtro. |
+| refresh        | boolean | query     | Se `true`, il foglio di lavoro viene aggiornato dopo l'applicazione del filtro. |
+| folder         | string  | query     | La cartella nello storage in cui si trova il file Excel.                    |
+| storageName    | string  | query     | Il nome del servizio di storage (es. Aspose Cloud Storage).                 |
+
+**Schema JSON di `colorFilter`**
+
+| Proprietà         | Tipo   | Descrizione                                                                    | Obbligatoria |
+|-------------------|--------|--------------------------------------------------------------------------------|--------------|
+| Pattern           | string | Schema di filtro (es. `"Solid"`).                                             | Sì           |
+| ForegroundColor   | object | Definisce il colore in primo piano. Contiene le sotto‑proprietà `Color`, `ColorIndex`, `IsShapeColor`, `ThemeColor` e `Type`. | No |
+| BackgroundColor   | object | Definisce il colore in secondo piano. Stesse sotto‑proprietà di `ForegroundColor`. | No |
+
+### **Risposta**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Codici di stato HTTP**
+
+| Codice | Significato                 | Descrizione                                      |
+|--------|-----------------------------|--------------------------------------------------|
+| 200    | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida        | Parametri mancanti o non validi (es. tipo di file non supportato). |
+| 401    | Non autorizzato             | Token JWT non valido o mancante. |
+| 413    | Payload troppo grande       | Il file caricato supera il limite di dimensione. |
+| 500    | Errore interno del server   | Errore imprevisto del server. |
+
+## Come usare l'API PutWorksheetColorFilter con gli SDK
+
+### Specifica dell'API PutWorksheetColorFilter
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetColorFilter) definiscono un'interfaccia di programmazione accessibile pubblicamente e permettono di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/colorFilter?range=A1%3AB1&fieldIndex=0" \
 -X PUT \
 -d "{ \"Pattern\": \"Solid\", \"ForegroundColor\": { \"Color\": { \"A\": 255, \"R\": 0, \"G\": 255, \"B\": 255 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"Text2\", \"Tint\": 1 }, \"Type\": \"Automatic\" }, \"BackgroundColor\": { \"Color\": { \"A\": 255, \"R\": 0, \"G\": 255, \"B\": 255 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"Text2\", \"Tint\": 0 }, \"Type\": \"Automatic\" }}" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+### Utilizzare gli SDK di Aspose.Cells Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK astrae i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -130,3 +160,6 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Vedi anche:** [Aggiungi un filtro personalizzato](https://docs.aspose.cloud/cells/autofilter/add-custom-filter/), [Aggiungi un filtro per data](https://docs.aspose.cloud/cells/autofilter/add-date-filter/), [Rimuovi un filtro automatico](https://docs.aspose.cloud/cells/autofilter/remove-auto-filter/).
+---

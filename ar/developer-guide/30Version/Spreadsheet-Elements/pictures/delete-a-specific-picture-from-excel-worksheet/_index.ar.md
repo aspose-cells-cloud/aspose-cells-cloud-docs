@@ -1,74 +1,90 @@
-﻿---
-title: حذف صورة في ملف Excel
-second_title: Documen
-linktitle: حذف
-type: docs
-url: /ar/pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
-keywords: Delete a picture in an Excel file
-description: يدعم Cloud REST حذف صورة من ملف. تدعم حزمة SDK لغات تطوير متنوعة، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 50
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حذف صورة في ملف Excel
 ---
-يشير هذا REST API إلى `delete` صورة من ورقة عمل Excel.
+title: "حذف صورة من ورقة عمل Excel – واجهة Aspose.Cells Cloud API"
+second_title: "مستند"
+linktitle: "حذف"
+type: docs
+url: /pictures/delete/
+aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+keywords: "Aspose.Cells، واجهة Cloud API، حذف صورة، ورقة عمل Excel، REST"
+description: "احذف صورة من ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. تعرّف على نقطة نهاية DELETE، والمعلمات المطلوبة، والمصادقة، وأكواد الأخطاء، ونماذج الكود."
+weight: 50
+ArticleTitle: "حذف صورة من ورقة عمل Excel – واجهة Aspose.Cells Cloud API"
+---
 
-## RSET API
+تقوم هذه الواجهة REST بحذف صورة من ورقة عمل Excel.
+
+### **الأمان والمصادقة**
+
+واجهات Aspose.Cells Cloud API آمنة وتحتاج إلى <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+## واجهة REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-معلمات الطلب هي:
+### معلمات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم العبادة.|
-| فهرس الصورة| عدد صحيح| طريق| فهرس الصورة|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعلمة | النوع | الموقع | مطلوب | الوصف |
+|-------------|-------|--------|--------|--------|
+| name | string | path | نعم | اسم ملف المصنف. |
+| sheetName | string | path | نعم | اسم ورقة العمل التي تحتوي على الصورة. |
+| pictureIndex | integer | path | نعم | الفهرس المبدئي (بدون تحديد) للصورة المراد حذفها. |
+| folder | string | query | لا | المجلد الذي يُخزّن فيه المصنف. |
+| storageName | string | query | لا | اسم خدمة التخزين (اختياري). |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPicture) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells عبر الويب بسهولة. يوضح المثال التالي كيفية إجراء الطلب باستخدام cURL.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**رؤوس استجابة نموذجية**
+
+| الرأس | القيمة |
+|--------|--------|
+| Content-Type | application/json |
+| Content-Length | (يتغير) |
+| Date | (تاريخ الخادم) |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### معالجة الأخطاء
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| رمز HTTP | المعنى | نموذج حمولة الخطأ |
+|----------|---------|-------------------|
+| 200 | تمت عملية حذف الصورة بنجاح. | `{ "Code": 200, "Status": "OK" }` |
+| 400 | طلب غير صالح – معلمات غير صحيحة. | `{ "Code": 400, "Message": "فهرس الصورة غير صالح." }` |
+| 401 | غير مُصرّح – رمز مفقود أو غير صالح. | `{ "Code": 401, "Message": "رمز الوصول مفقود أو غير صالح." }` |
+| 404 | غير موجود – المصنف أو ورقة العمل أو الصورة غير موجودة. | `{ "Code": 404, "Message": "المورد غير موجود." }` |
+| 500 | خطأ داخلي في الخادم. | `{ "Code": 500, "Message": "خطأ غير متوقع في الخادم." }` |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+## مجموعة أدوات SDK للسحابة
+
+استخدام SDK هو أسرع طريقة للتطوير. تُدار التفاصيل منخفضة المستوى بواسطة SDK، مما يتيح لك التركيز على مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs لـ Aspose.Cells Cloud.
+
+توضح الأمثلة التالية كيفية استدعاء خدمات Aspose.Cells عبر واجهة REST باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

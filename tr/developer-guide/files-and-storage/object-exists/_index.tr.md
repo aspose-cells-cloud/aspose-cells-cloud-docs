@@ -1,106 +1,92 @@
-﻿---
-title: Nesne Var
-second_title: Documen
-linktitle: Nesne Var
-type: docs
-url: /tr/object-exists/
-keywords: Excel API, Object Exists, REST API, Aspose, File Management, Excel, Office Cloud, Spreadsheet, PDF, CSV, JSON, Markdow
-description: Nesne Var API, belirtilen bir dosyanın veya klasörün Aspose.Cells bulut depolama alanında var olup olmadığını kontrol eder
-weight: 100
-kwords: Excel API, Nesne Var, REST API, Aspose, Office Bulut, Dosya Yönetimi, Elektronik Tablo, PDF, CSV, JSON, Markdown, Excel'de dosya varlığını kontrol etme
 ---
-## **Excel API: Nesne Var**
+title: "Nesne Var mı API’si – Aspose.Cells Cloud’da Dosya/Klasör Varlığını Kontrol Edin"
+second_title: "Belge"
+ArticleTitle: "Nesne Var mı API’si – Aspose.Cells Cloud’da Dosya veya Klasör Varlığını Doğrulayın"
+linktitle: "Nesne Var mı"
+type: docs
+url: /object-exists/
+keywords: "Aspose.Cells, bulut depolama, nesne var mı, dosya varlığı, klasör varlığı, API"
+description: "Aspose.Cells Cloud depolama alanında bir dosya veya klasörün varlığını hızlı bir şekilde doğrulamak için Nesne Var mı API’sini kullanın. İsteğe bağlı depolama adı ve sürüm kimliğini destekler ve sürümü belirlenmiş nesnelerle çalışır."
+weight: 100
+---
 
+**Nesne Var mı API’si**, geliştiricilerin belirli bir dosya veya klasörün Aspose.Cells Cloud depolama alanında olup olmadığını belirlemesini sağlar. Varlığı ve yolun bir klasöre mi yoksa dosyaya mı işaret ettiğine dair basit bir Boolean döndürür.
+
+## **Excel API: Nesne Var mı**
+
+### Web API’si
+
+```http
+GET https://api.aspose.cloud/v5.0/cells/storage/exist/{path}
 ```
-GET http://api.aspose.cloud/v4.0/cells/storage/exist/{path}
-```
 
-### **İşlev Açıklaması**
+_`{path}`_, depolamadaki dosya veya klasörün tam yoldur.
 
-`objectExists` API, geliştiricilerin Aspose.Cells bulut depolama alanında belirtilen bir dosya veya klasörün varlığını doğrulamasına olanak tanır.
+### **Güvenlik ve Kimlik Doğrulama**
 
-###  İstek parametreleri**nesneVar** API
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTP Gövdesi| Tanım|
-|:- |:- |:- |:- |
-|yol|Sicim|Yol|Bulut depolama alanındaki dosya veya klasörün yolu.|
-|depolamaAdı|Sicim|Sorgu|Dosyanın bulunduğu depolama alanının adı.|
-|sürüm kimliği|Sicim|Sorgu|Dosyanın sürüm kimliği (varsa).|
+### İstek Parametreleri
 
-### **Yanıt Açıklaması**
+| Parametre Adı  | Tür    | Konum   | Gerekli | Açıklama                                                             |
+| -------------- | ------ | ------- | ------- | -------------------------------------------------------------------- |
+| `path`         | string | Yol     | Evet    | Dosya veya klasörün tam yolu.                                        |
+| `storageName`  | string | Sorgu   | Hayır   | Depolamanın adı; atlanırsa varsayılan olarak birincil depolama kullanılır. |
+| `versionId`    | string | Sorgu   | Hayır   | Dosyanın belirli sürüm tanımlayıcısı (sürümleme etkinleştirilmişse). |
+
+**HTTP Durum Kodları**
+
+| HTTP Kodu | HTTP Durumu           | Açıklama                                                          |
+| --------- | --------------------- | ----------------------------------------------------------------- |
+| 200       | Tamam (OK)            | Web API’si başarıyla çağrıldı; yanıt işlem ayrıntılarını içerir.  |
+| 400       | Geçersiz İstek        | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401       | Yetkisiz              | Geçersiz veya eksik JWT belirteci.                                |
+| 413       | Yük Çok Büyük         | Yüklenen dosya boyut sınırını aşıyor.                             |
+| 500       | Sunucu İç Hatası      | Beklenmeyen sunucu hatası.                                        |
+
+### **Yanıt**
+
+Başarılı bir çağrı, iki özellik içeren bir JSON yükü döndürür:
 
 ```json
 {
-  "Name": "ObjectExist",
-  "Description": [
-    "Object exists"
-  ],
-  "Type": "Class",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "Exists",
-      "Description": [
-        "Indicates that the file or folder exists."
-      ],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Boolean",
-        "Name": "boolean"
-      }
-    },
-    {
-      "Name": "IsFolder",
-      "Description": [
-        "True if it is a folder, false if it is a file."
-      ],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Boolean",
-        "Name": "boolean"
-      }
-    }
-  ]
+  "Exists": true,
+  "IsFolder": false
 }
 ```
 
+- **Exists** – Dosya veya klasör varsa `true`; aksi halde `false`.
+- **IsFolder** – Yol bir klasöre işaret ediyorsa `true`; dosya için `false`.
+
 ## OpenAPI Spesifikasyonu
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/StorageController/ObjectExists) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/StorageController/ObjectExists), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
-## Excel API SDK
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’sine istek nasıl yapılır gerektiğini göstermektedir.
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ObjectExists.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/exist/myFolder/subFolder" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ObjectExists.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ObjectExists.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ObjectExists.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ObjectExists.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ObjectExists.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ObjectExists.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ObjectExists.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+Gelişmeyi hızlamanın en iyi yolu bir SDK kullanmaktır. Bir SDK, düşük seviye ayrıntıları yöneterek projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
+
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanılarak Aspose.Cells web hizmetlerine istek nasıl yapılacağını göstermektedir. Bir Gist yüklenemezse, her sekmenin altında statik bir örnek verilmiştir.

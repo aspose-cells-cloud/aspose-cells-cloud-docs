@@ -1,59 +1,60 @@
-﻿---
-title: Aspose.Cells Clou ile bir dosya nasıl korunur?
-linktitle: Excel dosyasını nasıl koruyabilirsiniz?
-type: docs
-url: /tr/how-to-protect-file
-description: Excel dosyası Aspose.Cells Cloud ile nasıl korunur?
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Aspose.Cells Bulut aracılığıyla dosya nasıl korunur
 ---
-## giriiş
+title: "Aspose.Cells Cloud ile bir dosyayı nasıl koruyabilirsiniz?"
+linktype: "Aspose.Cells Cloud ile bir Excel dosyasını nasıl koruyabilirsiniz?"
+type: docs
+url: /how-to-protect-file
+description: "Aspose.Cells Cloud ile bir Excel dosyasını nasıl koruyabileceğiniz."
+weight: 10
+kwords: Excel, Office Cloud, REST API, Tablo İşleme, PDF, CSV, Json, Markdown, Aspose.Cells Cloud ile dosya koruma
+---
 
-Aspose.Cells Cloud API, elektronik tablo dosyalarının oluşturulması, düzenlenmesi ve dönüştürülmesi için tasarlanmış güçlü bir bulut tabanlı çözümdür. Bu makalede, tipik kullanım durumları ve örnek kodlar da dahil olmak üzere, Aspose.Cells Cloud API'in dosya koruması için kullanım sürecini adım adım açıklayacağız.
+## Giriş
+
+Aspose.Cells Cloud API, tablo işlem dosyalarının oluşturulması, düzenlenmesi ve dönüştürülmesi için geliştirilmiş güçlü bir bulut tabanlı çözümdür. Bu makalede, Aspose.Cells Cloud API’yi kullanarak dosya koruma işlemini nasıl gerçekleştireceğinizi adım adım açıklıyoruz; bu işlem, yaygın kullanım durumlarını ve örnek kodu da içerir.
 
 ## Genel Bakış
 
-Aspose.Cells Cloud API, Excel veya elektronik tablo dosyalarını korumak için birden fazla güçlü API sunar. Aspose.Cells Cloud API'i kullanarak, Excel veya diğer elektronik tablo dosyalarını zahmetsizce koruyabilir ve çeşitli gereksinimlerinizi karşılayabilirsiniz.
+Aspose.Cells Cloud API, Excel veya tablo işlem dosyalarını korumak için birden fazla güçlü API sağlar. Aspose.Cells Cloud API’yi kullanarak, çeşitli ihtiyaçlara uygun şekilde Excel veya diğer tablo işlem dosyalarını kolayca koruyabilirsiniz.
 
-Dosya koruması için çeşitli çevrimiçi ortamlarla uyumlu çok sayıda API mevcuttur. Aşağıda bu API'lerin ayrıntılı bir açıklaması yer almaktadır:
+Dosya koruma işlemleri için çeşitli API’ler mevcuttur ve genellikle farklı çevrimiçi ortamlarla uyumludur. Aşağıda bu API’lerin detaylı açıklamaları yer almaktadır:
 
-| İşlev| Tanım| API Referans|
-|:------------------------- |:------------------------- |:------------------------- |
-|**[Bir elektronik tabloyu koruyun](https://docs.aspose.cloud/cells/protect-spreadsheet/)**  | Bir elektronik tabloyu koruyun.|[PostProtect](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet) |
-|**[Bir elektronik tablonun korumasını kaldırın](https://docs.aspose.cloud/cells/unprotect-spreadsheet/)**  | Bir elektronik tablonun korumasını kaldırın.|[SilKorumasını Kaldır](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/UnprotectSpreadsheet) |
+| İşlev        | Açıklama      | API Referansı      |
+| :------------------------- | :------------------------- | :------------------------- |
+| **[Tablo işlem dosyasını koru](https://docs.aspose.cloud/cells/protect-spreadsheet/)**  | Bir tablo işlem dosyasını korur. | [PostProtect](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet) |
+| **[Tablo işlem dosyasının korumasını kaldır](https://docs.aspose.cloud/cells/unprotect-spreadsheet/)**  | Bir tablo işlem dosyasının korumasını kaldırır. | [DeleteUnprotect](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/UnprotectSpreadsheet) |
 
-- Aşağıda 3.0 sürümünün koruma özelliği API'leri gösterilmektedir.
+- Aşağıda, 3.0 sürümüne ait koruma özellikli API’ler listelenmiştir.
 
-| İşlev Açıklaması| Geliştirme Belgesi| API Fonksiyonu|
-|-----------------|-------------|---------------------------|
-|**[Şifre koruması uygulayarak MS Excel ve OpenDocument Elektronik Tablosunu güvenli hale getirin.](https://reference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook)** |[Geliştirme Kılavuzu](https://docs.aspose.cloud/cells/excel-file-encrypt/) |[PostEncryptWorkbook](https://reference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook) |
-|**[MS Excel ve OpenDocument Elektronik Tablosunu Koruyun.](https://reference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook)** |[Geliştirme Kılavuzu](https://docs.aspose.cloud/cells/protect-excel-file/) |[PostProtectWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook) |
-|**[Bulut depolama kullanmadan MS Excel ve OpenDocument Elektronik Tablosunu koruyun.](https://reference.aspose.cloud/cells/#/LightCells/PostProtect)** |[Geliştirme Kılavuzu](https://docs.aspose.cloud/cells/protect-excel-files/) |[PostProtect](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) |
-|**[MS Excel ve OpenDocument Elektronik Tablo dijital imzası.](https://reference.aspose.cloud/cells/#/Protection/PostDigitalSignature)** |[Geliştirme Kılavuzu](https://docs.aspose.cloud/cells/workbook/digital-signature/) |[PostDigitalSignature](https://reference.aspose.cloud/cells/#/Protection/PostDigitalSignature) |
-|**[Dosyaları toplu olarak koru.](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect)** |[Geliştirme Kılavuzu](https://docs.aspose.cloud/cells/batch/protect/) |[PostBatchProtect](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect) |
+| İşlev Açıklaması       | Geliştirme Dokümantasyonu      | API İşlevi |
+|-----------------------|-------------------|---------------------------------|
+| **[Parola koruması uygulayarak MS Excel ve OpenDocument Tablo İşlem dosyalarını güvence altına alın.](https://reference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook)** | [Geliştirme Kılavuzu](https://docs.aspose.cloud/cells/excel-file-encrypt/) | [PostEncryptWorkbook](https://reference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook) |
+| **[MS Excel ve OpenDocument Tablo İşlem dosyalarını koruyun.](https://reference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook)** | [Geliştirme Kılavuzu](https://docs.aspose.cloud/cells/protect-excel-file/) | [PostProtectWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook) |
+| **[Bulut depolama kullanmadan MS Excel ve OpenDocument Tablo İşlem dosyalarını koruyun.](https://reference.aspose.cloud/cells/#/LightCells/PostProtect)** | [Geliştirme Kılavuzu](https://docs.aspose.cloud/cells/protect-excel-files/) | [PostProtect](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) |
+| **[MS Excel ve OpenDocument Tablo İşlem dosyaları için dijital imza.](https://reference.aspose.cloud/cells/#/Protection/PostDigitalSignature)** | [Geliştirme Kılavuzu](https://docs.aspose.cloud/cells/workbook/digital-signature/) | [PostDigitalSignature](https://reference.aspose.cloud/cells/#/Protection/PostDigitalSignature) |
+| **[Dosyaları toplu koruma.](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect)** | [Geliştirme Kılavuzu](https://docs.aspose.cloud/cells/batch/protect/) | [PostBatchProtect](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect) |
 
-# Excel dosyası Aspose.Cells Cloud ile nasıl korunur?
+# Aspose.Cells Cloud ile Excel dosyasını nasıl koruyabilirsiniz
 
- Aspose.Cells Bulut API şunları sağlar:[birden fazla SDK](https://github.com/aspose-cells-cloud)Farklı programlama dilleri için. Tercih ettiğiniz programlama diline uygun SDK'yı seçin ve kurulum ve başlatma için beraberindeki belgeleri takip edin. Alternatif olarak, kendi SDK'nızı aşağıdakilere göre oluşturabilirsiniz:[API referans](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet)Bu bölümde, dosya birleştirme işlemini ayrıntılı olarak anlatmak için C# örneğini kullanacağız.
+Aspose.Cells Cloud API, farklı programlama dilleri için [birden fazla SDK](https://github.com/aspose-cells-cloud) sunar. Tercih ettiğiniz programlama diliyle uyumlu SDK’yi seçin ve kurulum ile başlatma için ilgili dokümantasyonu takip edin. Alternatif olarak, [API referansını](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet) kullanarak kendi SDK’nızı da oluşturabilirsiniz. Bu bölümde, örnek olarak C# kullanarak dosya koruma işleminin adım adım nasıl gerçekleştirileceğini açıklıyoruz.
 
-## API Anahtarının Kaydı ve Alınması
+## Kayıt ve API Anahtarı Elde Etme
 
- Başlamadan önce şunları yapmanız gerekir:[Aspose Bulut hesabını kaydedin](https://id.containerize.com/signup) Ve[kimlik doğrulaması için API anahtarını edinin](https://dashboard.aspose.cloud/applications)Resmi Aspose Cloud web sitesine giriş yaparak ücretsiz hesap oluşturabilir ve kimlik doğrulama amacıyla API anahtarını alabilirsiniz.
+Başlamadan önce, bir [Aspose Cloud hesabı oluşturmanız](https://id.containerize.com/signup) ve [kimlik doğrulama için bir API anahtarı almanız](https://dashboard.aspose.cloud/applications) gerekir. Resmi Aspose Cloud web sitesine giriş yaparak ücretsiz bir hesap oluşturabilir ve kimlik doğrulama amacıyla bir API anahtarı edinebilirsiniz.
 
- Daha detaylı işlemler için lütfen aşağıdaki belgelere bakınız:[Cells Bulut ile Hızlı Başlangıç](https://docs.aspose.cloud/cells/quickstart/)
+Daha derinlemesine işlemler için aşağıdaki dokümanlara bakabilirsiniz: [Cells Cloud ile Hızlı Başlangıç](https://docs.aspose.cloud/cells/quickstart/)
 
-## Aspose.Cells Cloud SDK'sını Yükleme ve Başlatma
+## Aspose.Cells Cloud SDK Kurulumu ve Başlatılması
 
-.NET projenize Aspose.Cells-Cloud NuGet paketini kurun, NuGet Paket Yöneticisi Konsolunu veya Visual Studio'deki NuGet Paket Yöneticisini kullanabilirsiniz.
-Paketi Paket Yöneticisi Konsolu'nu kullanarak nasıl kurabileceğiniz aşağıda açıklanmıştır:
+.NET projenizde Aspose.Cells-Cloud NuGet paketini yükleyin. Bunu NuGet Paket Yöneticisi Konsolu veya Visual Studio’da NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz.
+
+Paket Yöneticisi Konsolu kullanarak paketi nasıl yükleyeceğiniz aşağıda verilmiştir:
 
 ```Powershell
 
 Install-Package Aspose.Cells-Cloud
-ww
 ```
 
-CellsApi sınıfının yeni bir örneğini oluşturur ve istemci kimliğiniz ve istemci sırrınızla başlatır. Yukarıda belirtilen kod parçacığının ayrıntıları aşağıdadır:
+CellsApi sınıfının yeni bir örneğini oluşturun ve istemci kimliğiniz ile istemci sırrınız ile başlatın. Yukarıdaki kod parçasının detayları aşağıda verilmiştir:
 
 ```CSharp
 
@@ -61,11 +62,11 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ```
 
-KENDİ'nizi değiştirdiğinizden emin olun_API_ANAHTAR, SENİN_UYGULAMA_SID ve SİZİN_UYGULAMA_Gerçek API anahtarınız, uygulama SID'niz ve uygulama anahtarınızla KEY.
+Lütfen YOUR_API_KEY, YOUR_APP_SID ve YOUR_APP_KEY ifadelerini gerçek API anahtarınız, uygulama SID’niz ve uygulama anahtarınız ile değiştirin.
 
-## API Talebini Oluşturun ve API'i Arayın
+## API İsteği Oluşturma ve API’yi Çağırma
 
-Bu, PostProtectRequest'in yeni bir örneğini oluşturur ve istediğiniz dosyalar ve koruma Çalışma Kitabı isteğiyle başlatır. Ardından, bu koruma isteğiyle API numaralı korumayı çağırır. Koruma işlevi, genişletilmiş sorgu parametrelerini de destekler. Yukarıda belirtilen kod parçacığının ayrıntıları aşağıdadır:
+Bu işlem, PostProtectRequest sınıfının yeni bir örneğini oluşturur ve isterseniz dosyaları ve koruma için Workbook isteğini başlatır. Daha sonra bu koruma isteği ile koruma API’sini çağırır. Koruma işlevi, genişletilmiş sorgu parametrelerini de destekler. Yukarıdaki kod parçasının detayları aşağıda verilmiştir:
 
 ```CSharp
 
@@ -74,19 +75,19 @@ cellsApi.ProtectSpreadsheet(new ProtectSpreadsheetRequest { Spreadsheet = "Book1
 
 ```
 
-## Kullanım Örnekleri
+## Kullanım Alanları
 
- The**korumak** Excel dosyası veya Aspose.Cells Bulutu API'in başka bir elektronik tablo özelliği, çeşitli pratik kullanım durumlarında kullanışlıdır. İşte bazı yaygın senaryolar:
+Aspose.Cells Cloud API’nin **koruma** özelliği, Excel veya diğer tablo işlem dosyaları için çeşitli pratik kullanım alanlarında yararlıdır. Aşağıda bazı yaygın senaryolar yer almaktadır:
 
--  Eklemek**birden fazla dijital imza dosyası** yerel Excel dosyaları veya diğer elektronik tablo dosyaları için.
--  Eklemek**şifre koruması** yerel Excel dosyaları veya diğer elektronik tablo dosyaları için.
--  Ayarlamak**Her Zaman Salt Okunur Olarak Açık** Kolay paylaşım için.
-- **Birden fazla dosyayı bir HTML dosyasında birleştirin** web sayfalarında görüntülenmek ve yerleştirilmek üzere.
+- Yerel Excel dosyaları veya diğer tablo işlem dosyaları için **birden fazla dijital imza ekleme**.
+- Yerel Excel dosyaları veya diğer tablo işlem dosyaları için **parola koruması ekleme**.
+- Kolay paylaşım için **her zaman salt okunur olarak aç** ayarını yapma.
+- **Birden fazla dosyayı HTML dosyasına birleştirip** web sayfalarında gösterme veya gömmek.
 
-## Çözüm
+## Sonuç
 
-Aspose.Cells Cloud API ile korumalı Excel dosyaları veya diğer elektronik tablo dosyaları üzerinde kolayca işlem yapabilirsiniz. Basit API aramaları yaparak ve uygun koruma seçeneklerini ayarlayarak çeşitli dosya birleştirme gereksinimlerini verimli bir şekilde karşılayabilirsiniz. Verimliliği artırmak ve geliştirme süresinden tasarruf etmek için Aspose.Cells Cloud API'i uygulamalarınıza entegre edin.
+Aspose.Cells Cloud API ile Excel veya diğer tablo işlem dosyalarını kolayca koruyabilirsiniz. Basit API çağrıları yaparak ve uygun koruma seçeneklerini ayarlayarak, çeşitli dosya birleştirme ihtiyaçlarınızı verimli şekilde yerine getirebilirsiniz. Aspose.Cells Cloud API’yi uygulamalarınıza entegre ederek üretkenliği artırın ve geliştirme zamanından tasarruf edin.
 
- Yukarıdaki örnek kodun yalnızca tanıtım amaçlı olduğunu ve pratikte kullanırken geçerli kimlik doğrulama bilgileri ve dosya yollarıyla değiştirmeniz gerekeceğini lütfen unutmayın. Ayrıca, Aspose.Cells Cloud API, elektronik tablo oluşturma, düzenleme, düzenleme ve veri işleme gibi birçok başka özellik sunar. Ayrıntılı API dokümantasyonu ve örnek kod şu adreste bulunabilir:[resmi Aspose web sitesinin geliştirici kılavuzu](/developer-guide/).
+Lütfen dikkat ediniz: yukarıdaki örnek kod yalnızca gösterim amaçlıdır. Pratikte kullanırken geçerli kimlik doğrulama kimlik bilgileri ve dosya yollarını kullanmanız gerekir. Ayrıca, Aspose.Cells Cloud API, tablo işlem dosyası oluşturma, düzenleme, manipülasyon ve veri işleme gibi birçok başka özellik sunar. Detaylı API dokümantasyonu ve örnek kodlar [Aspose web sitesinin geliştirici kılavuzunda](/developer-guide/) bulunabilir.
 
-Bu makalenin, Aspose.Cells Cloud API'i dosya koruması için nasıl kullanacağınızı anlamanıza yardımcı olmasını umuyoruz. Uygulamanızda bol şans!
+Umarız bu makale, Aspose.Cells Cloud API kullanarak dosya koruma işlemini nasıl gerçekleştireceğinizi anlamanzda yardımcı olur. Uygulama aşamasında başarılar dileriz!

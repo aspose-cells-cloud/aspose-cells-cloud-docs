@@ -1,36 +1,46 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Bereichsinhalte in Remote-Tabellen ersetzen
-second_title: Documen
-ArticleTitle: Replace Range Content in Remote a Spreadshee
-linktitle: Ersetzen Sie den Inhalt des Remote-Bereichs
-type: docs
-url: /de/replace-content-in-remote-range/
-keywords: API, Excel API, Replace Content, Remote Spreadsheet, Cloud Storage, Text Replacement, REST AP
-description: Ersetzen Sie effizient Text innerhalb bestimmter Bereiche von Remote-Tabellenkalkulationen mithilfe von Aspose.Cells Cloud API
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, JSON, Markdown, Alle leeren Zellen in einem Excel-Arbeitsblatt abgleichen, Remote-Textersetzung, Cloud-Speicherintegration
 ---
-Ersetzen Sie effizient angegebenen Text innerhalb eines Bereichs einer Remote-Tabellenkalkulationsdatei.
+title: "Aspose.Cells Cloud Replace Web API – Text in Remote Spreadsheet Range aktualisieren"
+second_title: "Dokumentation"
+ArticleTitle: "Massenhaftes Ersetzen von Text in Cloud-Excel-Dateien – Find & Replace API"
+linktitle: "Inhalt entfernter Bereiche ersetzen"
+type: docs
+url: /replace-content-in-remote-range/
+keywords: "Text in entferntem Excel-Bereich ersetzen, Aspose.Cells Cloud API, Excel finden und ersetzen, Cloud-Tabelleneditor, entfernte Excel-Datei aktualisieren"
+description: "Verwenden Sie Aspose.Cells Cloud, um Text in einem bestimmten Bereich einer entfernten Excel-Datei zu suchen und zu ersetzen. Unterstützt Authentifizierung, Fehlerbehandlung und mehrsprachige SDKs."
+weight: 100
+---
 
-## **Inhalt im Remote-Bereich ersetzen API**
+Führen Sie massenhaftes Ersetzen von Texten in entfernten Excel-Dateien durch, die in der Cloud gespeichert sind. Suchen und aktualisieren Sie gezielt Textzeichenfolgen innerhalb ausgewählter Bereiche effizient mithilfe der Aspose.Cells Find & Replace API.
+
+## **Inhalt in entferntem Bereich ersetzen – API**
+
+### Web-API
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content
+PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content
 ```
 
-### **Anforderungsparameter:**
+### **Sicherheit und Authentifizierung**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTP-Text| Beschreibung|
-|:- |:- |:- |:- |
-| Name| Zeichenfolge| Weg| Der Name der zu ändernden Arbeitsmappendatei.|
-| Suchtext| Zeichenfolge| Abfrage| Der Text, nach dem in der Tabelle gesucht werden soll.|
-| replaceText| Zeichenfolge| Abfrage| Der Text, durch den der gesuchte Text ersetzt werden soll.|
-| Arbeitsblatt| Zeichenfolge| Weg| Der Name des Arbeitsblatts, in dem die Ersetzung erfolgen soll.|
-| Zellbereich| Zeichenfolge| Weg| Der spezifische Zellbereich für den Ersatz.|
-| Ordner| Zeichenfolge| Abfrage| Der Ordnerpfad, in dem die Arbeitsmappe gespeichert ist.|
-| Speichername| Zeichenfolge| Abfrage|(Optional) Der Name des Speichers, wenn benutzerdefinierter Cloud-Speicher verwendet wird. Wenn dieser Name weggelassen wird, verwenden Sie den Standardspeicher.|
-| Region| Zeichenfolge| Abfrage| Die Tabellenbereichseinstellung.|
-| Passwort| Zeichenfolge| Abfrage| Das Kennwort zum Öffnen der Tabellenkalkulationsdatei.|
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### **Anforderungsparameter**
+
+| Parametername | Typ   | Pfad/Abfragezeichenfolge/HTTP-Body | Beschreibung                                                                                                                                                 |
+| :------------ | :---- | :------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name          | String | Pfad                             | Der Name der Arbeitsmappe, die in der Cloud gespeichert ist und bearbeitet werden soll (z. B. `"report.xlsx"`).                                            |
+| searchText    | String | Abfrage                          | Die Zeichenfolge, die im angegebenen Arbeitsblatt und Zellbereich gesucht werden soll. Unterstützt exakte Textübereinstimmung.                              |
+| replaceText   | String | Abfrage                          | Die Zeichenfolge, die alle Vorkommen von `searchText` im angegebenen Bereich ersetzen soll.                                                                |
+| worksheet     | String | Pfad                             | Der Name des Arbeitsblatts, in dem der Find- und Replace-Vorgang durchgeführt wird.                                                                         |
+| cellArea      | String | Pfad                             | Der spezifische Zellbereich (z. B. `"A1:D20"`), in dem die Textsuche und -ersetzung erfolgt.                                                                |
+| folder        | String | Abfrage                          | Der Pfad des Cloud-Speicherordners, in dem sich die Quell-Arbeitsmappe befindet.                                                                            |
+| storageName   | String | Abfrage                          | _(Optional)_ Der Name des Cloud-Speichers, in dem sich die Arbeitsmappe befindet. Falls weggelassen, wird der Standard-Cloud-Speicher verwendet.           |
+| region        | String | Abfrage                          | _(Optional)_ Legt die Locale für die Textverarbeitung fest, was sich auf die Groß-/Kleinschreibung und Zeichencodierung bei Suchvorgängen auswirken kann (z. B. `"de-DE"`, `"en-US"`). |
+| password      | String | Abfrage                          | _(Optional)_ Falls die Arbeitsmappe passwortgeschützt ist, geben Sie das Passwort an, um die Datei zu öffnen und zu bearbeiten.                             |
 
 ### **Antwort**
 
@@ -42,71 +52,111 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cel
     {
       "Name": "Code",
       "DataType": {
-        "Identifier": "Integer",
+        "Identifier": "Integer"
       }
     },
     {
       "Name": "Status",
       "DataType": {
-        "Identifier": "String",
+        "Identifier": "String"
       }
     }
   ]
 }
 ```
 
+Ein erfolgreicher Aufruf gibt die folgende konkrete JSON-Payload zurück:
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+
 ### Fehlercodes
 
-- **400 Ungültige Anfrage**: Ungültige Apose.Cells Cloud API-URI.
-- **401 Nicht autorisiert**: Ungültiges Zugriffstoken. Oder ungültige Client-ID und ungültiges Geheimnis.
-- **404 Nicht gefunden**: Auf die Tabellenkalkulationsdatei kann nicht zugegriffen werden.
-- **500 Serverfehler**: Beim Abrufen der Berechnungsdaten ist in der Tabelle eine Anomalie aufgetreten.
+| Code | Nachricht     | Wann auftritt                                        |
+| ---- | ------------- | ---------------------------------------------------- |
+| 400  | Bad Request   | Die Anforderungs-URI oder -Parameter sind fehlerhaft. |
+| 401  | Unauthorized  | Fehlender oder ungültiger Authentifizierungstoken.  |
+| 404  | Not Found     | Die angegebene Arbeitsmappe konnte nicht gefunden oder aufgerufen werden. |
+| 500  | Server Error  | Ein interner Serverfehler während der Verarbeitung der Arbeitsmappe. |
 
-## Wo sollten wir den Inhalt des Bereichs im Remote-Arbeitsblatt API ersetzen?
+## Wofür sollte die Replace Content of Range in Remote Spreadsheet API verwendet werden?
 
-Wenn Sie den Inhalt eines Bereichs in einer Remote-Tabelle ersetzen müssen, können Sie API verwenden.
+- **Batch-Cloud-Datei-Aktualisierung**: Ändern Sie den Inhalt mehrerer Excel-Dateien, die in Cloud-Speichern wie AWS S3 oder Azure Blob gespeichert sind.
+- **Dynamische Befüllung von Cloud-Templates**: Batch-Befüllung dynamischer Daten für Berichtsvorlagen, die in der Cloud gespeichert sind.
+- **Überregionsdateisynchronisierung**: Synchronisieren Sie die Inhaltskonsistenz von Excel-Dateien in Cloud-Speichern über verschiedene geografische Regionen hinweg.
 
-## Warum sollten Sie den Inhalt des Bereichs in der Remote-Tabelle API ersetzen?
+## Warum sollte man die Replace Content of Range in Remote Spreadsheet API verwenden?
 
-- Ersetzen Sie schnell den Inhalt von Range in Remote-Tabellen.
-- Die Entwicklung kann über das vorhandene SDK schnell abgeschlossen werden.
+- **Entwicklerfreundlich**: Aspose.Cells Cloud bietet SDK-Bibliotheken in mehreren Sprachen, was eine schnelle Entwicklung und umfassende Dokumentation ermöglicht. Im Vergleich zur Erstellung benutzerdefinierter Lösungen reduziert dies die Entwicklungsarbeit erheblich.
+- **Kostensenkung**: Reduziert den Bedarf an speziellen Positionen für die Dokumentenkonsolidierung.
+- **Pay-per-Use**: Keine Vorabinvestition; Sie zahlen nur für tatsächlich genutzte API-Aufrufe.
+- **Keine Wartungskosten**: Keine Notwendigkeit, Server zu warten, Software zu aktualisieren oder Kompatibilitätsprobleme zu lösen.
+- **Beibehaltung komplexer Excel-Formatierung** in einem universell zugänglichen PDF-Format.
 
-## So verwenden Sie den Inhalt des Bereichs „Ersetzen“ in der Remote-Tabelle API mit SDKs
+## Verwendung der Replace Content of Range in Remote Spreadsheet API mit SDKs
 
 ### OpenAPI-Spezifikation
 
- Der[OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/SearchControllor/ReplaceContentInRemoteRange) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+Die [OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceContentInRemoteRange) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
 
-### Verwenden Sie Aspose.Cells Cloud SDKs
+### Verwendung von Aspose.Cells Cloud SDKs
 
-Die Verwendung des SDK beschleunigt die Entwicklung am besten. Das SDK übernimmt die zugrunde liegenden Details und ermöglicht Ihnen, Inhalte in Tabellenkalkulationen für Zellen mit minimalem Code einfach zu ersetzen.
- Bitte schauen Sie sich die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der beste Weg, um die Entwicklung zu beschleunigen. Das SDK übernimmt die zugrunde liegenden Details, sodass Sie das Ersetzen von Inhalten in Tabellenblättern mit minimalem Codeaufwand umsetzen können. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud).
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste mit verschiedenen SDKs durchgeführt werden:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ReplaceTextInRemoteRange.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ReplaceTextInRemoteRange.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ReplaceTextInRemoteRange.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ReplaceTextInRemoteRange.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ReplaceTextInRemoteRange.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ReplaceTextInRemoteRange.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ReplaceTextInRemoteRange.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ReplaceTextInRemoteRange.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+
+```csharp
+```
+
+{{</tab>}}
+{{<tab tabNum="2" >}}
+
+```java
+```
+
+{{</tab>}}
+{{<tab tabNum="3" >}}
+
+```php
+```
+
+{{</tab>}}
+{{<tab tabNum="4" >}}
+
+```ruby
+```
+
+{{</tab>}}
+{{<tab tabNum="5" >}}
+
+```javascript
+```
+
+{{</tab>}}
+{{<tab tabNum="6" >}}
+
+```python
+```
+
+{{</tab>}}
+{{<tab tabNum="7" >}}
+
+```perl
+```
+
+{{</tab>}}
+{{<tab tabNum="8" >}}
+
+```go
+```
+
+{{</tab>}}
 {{< /tabs >}}

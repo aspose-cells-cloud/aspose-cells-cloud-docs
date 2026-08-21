@@ -1,74 +1,69 @@
-﻿---
-title: Ta bort en form via index i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Ta bort
+---
+title: "Ta bort en form efter index på ett Excel-ark"
+second_title: "Dokument"
+linktitle: "Ta bort"
 type: docs
 url: /sv/shapes/delete/
-aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
-keywords: Delete a shape on an Excel workshee
-description: Aspose.Cells Cloud REST API stöder borttagning av former på ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+aliases: [/sv/delete-a-shape-by-index-inside-the-worksheet/]
+keywords: "Aspose.Cells Cloud, Ta bort form, Formindex, Excel-ark, REST API, SDK"
+description: "Använd Aspose.Cells Cloud REST API för att ta bort en form efter dess index på ett Excel-ark. API:t är tillgängligt via flera SDK:er (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) och stöder olika lagringsalternativ."
 weight: 50
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ta bort en form via index på ett Excel-kalkylblad
 ---
-Denna REST API anger att en form ska tas bort från ett Excel-arbetsblad.
 
-## RSET API
+Denna REST API tar bort en form från ett Excel-ark.
+
+## REST API
 
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
- 
 ```
 
-Begäranparametrarna är:
+### **Begärparametrar**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| dokumentnamn.|
-| arknamn| sträng| väg| arbetsbladets namn.|
-| formindex| heltal| väg| formindex i kalkylbladsformer.|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parametername   | Typ     | Plats  | Beskrivning                                       |
+| --------------- | ------- | ------ | ------------------------------------------------- |
+| name            | string  | path   | Namn på arbetsboksfilen.                          |
+| sheetName       | string  | path   | Namn på arket.                                    |
+| shapeindex      | integer | path   | Index för formen i arket formsamling.            |
+| folder          | string  | query  | Mapp där arbetsboken lagras.                      |
+| storageName     | string  | query  | Namn på lagringsplatsen.                          |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShape) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShape) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör ett anrop till moln-API:t med cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes/1" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## SDK-familj för molnet
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK hanterar detaljer på lågnivå så att du kan fokusera på dina projektuppgifter. Kolla in [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

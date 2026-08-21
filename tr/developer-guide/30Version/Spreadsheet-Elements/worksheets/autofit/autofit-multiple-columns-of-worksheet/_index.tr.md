@@ -1,78 +1,76 @@
-﻿---
-title: Excel çalışma sayfasına birden fazla sütunu otomatik olarak sığdır
-second_title: Documen
-linktitle: Kolon
-type: docs
-url: /tr/worksheets/autofit/columns/
-aliases: [/autofit-multiple-columns-of-worksheet/]
-keywords: Autofit columns on an Excel workboo
-description: Aspose.Cells Cloud REST API, Excel çalışma kitabında sütunların otomatik olarak sığdırılmasını destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasında birden fazla sütunu otomatik olarak sığdırma
 ---
-Bu REST API, Excel çalışma sayfasına `multiple columns`'in otomatik olarak sığdırılacağını gösterir.
+title: "Excel Çalışma Sayfasında Birden Fazla Sütunu Otomatik Uyarlama"
+second_title: "Belge"
+linktitle: "Sütunlar"
+type: docs
+url: /worksheets/autofit/columns/
+aliases: [/autofit-multiple-columns-of-worksheet/]
+keywords: "Aspose.Cells, sütunları otomatik uyarlama, Excel API, bulut tablolu hesaplama, REST"
+description: "Aspose.Cells Cloud REST API'sini (v3.0) kullanarak bir Excel çalışma sayfasında birden fazla sütunu otomatik uyarlamanın nasıl yapıldığını öğrenin. Uç nokta, parametreler, cURL örneği, hata yönetimi ve C#, Java, Python ve daha fazlası için SDK kod parçacıklarını içerir."
+weight: 20
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasında **birden fazla sütunu** otomatik olarak ayarlar.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
 ```
 
-İstek parametreleri şunlardır:
+### **İstek Parametreleri**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Dosya adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| ilkSütun| tam sayı| sorgu| Başlangıç sütun indeksi.|
-| sonSütun| tam sayı| sorgu| Son sütun indeksi.|
-|[autoFitterOptions](/cells/tr/auto-fitter-options/) || vücut| Oto Montaj Seçenekleri.|
-| ilkSatır| tam sayı| sorgu||
-| sonSatır| tam sayı| sorgu||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı       | Tür      | Konum  | Açıklama                                                                                                                                   |
+| ------------------- | -------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| name                | string   | path   | Dosya adı.                                                                                                                                  |
+| sheetName           | string   | path   | Çalışma sayfası adı.                                                                                                                        |
+| firstColumn         | integer  | query  | Başlangıç sütun indeksi.                                                                                                                    |
+| lastColumn          | integer  | query  | Bitiş sütun indeksi.                                                                                                                        |
+| autoFitterOptions\* | object   | body   | Otomatik uyarlama seçenekleri (bkz. [Otomatik Uyarlama Seçenekleri](/cells/auto-fitter-options/)). `AutoFitMergedCells`, `IgnoreHidden` ve `OnlyAuto` içerir. |
+| firstRow            | integer  | query  | Otomatik uyarlama için başlangıç satır indeksi (**isteğe bağlı**).                                                                          |
+| lastRow             | integer  | query  | Otomatik uyarlama için bitiş satır indeksi (**isteğe bağlı**).                                                                              |
+| folder              | string   | query  | Depolama içindeki klasör yolu (**isteğe bağlı**).                                                                                          |
+| storageName         | string   | query  | Depolama adı (**isteğe bağlı**).                                                                                                            |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+\* Parametre adı, ilgili belgelendirmeye yönlendiren bir bağlantı olarak gösterilir.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sine istekte bulunmanın nasıl yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?lastColumn=5&firstColumn=0" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"AutoFitMergedCells" : true, "IgnoreHidden" : true, "OnlyAuto" : true}' 
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?lastColumn=5&firstColumn=0" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"AutoFitMergedCells": true, "IgnoreHidden": true, "OnlyAuto": true}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+## Bulut SDK Geliştirme Grubu
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bir SDK kullanmak, geliştirme sürecini hızlandırmak için en iyi yoldur. Bir SDK, düşük seviye ayrıntıları işler; böylece projenizin görevlerine odaklanabilirsiniz. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposunu](https://github.com/aspose-cells-cloud) kontrol edin.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web servislerine çeşitli SDK'lar kullanarak nasıl istekte bulunacağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

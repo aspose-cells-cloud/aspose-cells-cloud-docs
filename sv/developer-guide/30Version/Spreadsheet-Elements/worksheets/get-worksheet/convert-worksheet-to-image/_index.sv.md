@@ -1,56 +1,76 @@
-﻿---
-title: Konvertera kalkylblad till olika format
-second_title: Documen
-linktitle: Konvertera arbetsblad
-type: docs
-url: /sv/worksheets/conversion/
-aliases: [/convert-worksheet-to-image/,/worksheets/to-image/]
-keywords: Convert worksheet to image format from an Excel workbook
-description: Aspose.Cells Cloud REST API stöder konvertering av kalkylblad till bildformat från en Excel-arbetsbok. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 130
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Konvertera kalkylblad till olika format
 ---
-[HÄMTA /celler/{namn}/arbetsblad/{arknamn}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) API låter dig konvertera kalkylblad till olika format, som[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV-fil](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [Textmeddelande](https://docs.fileformat.com/word-processing/txt/) . Formaten som endast är avsedda för export:[PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [TAL](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+title: "Konvertera kalkylblad till PDF, PNG, CSV och mer – Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Konvertera kalkylblad"
+type: docs
+url: /worksheets/conversion/
+aliases:
+  - /convert-worksheet-to-image/
+  - /worksheets/to-image/
+keywords: "Aspose.Cells, konvertering av kalkylblad, REST API, cURL, SDK, PDF, PNG, CSV"
+description: "Lär dig hur du konverterar ett enskilt kalkylblad från en Excel-arbetsbok till PDF, PNG, CSV och mer än 15 andra format med Aspose.Cells Cloud REST API. Inkluderar cURL-exempel, SDK-utdrag och en komplett parameterreferens."
+weight: 130
+ArticleTitle: "Konvertera kalkylblad till PDF, PNG, CSV och mer – Aspose.Cells Cloud API"
+---
+
+**API för kalkylbladskonvertering** – slutpunkten `GET /cells/{name}/worksheets/{sheetName}` konverterar ett enskilt kalkylblad (ett ark i en Excel-arbetsbok) till en annan filtyp.
+
+> **Förutsättning:** Du måste ha en giltig JWT-token och arbetsboken lagrad på en stödd Aspose Cloud-lagringsplats innan du anropar denna slutpunkt.
+
+Stödda **inläsningsbara** format (kalkylbladet kan läsas från):
+
+- XLS, XLSX, XLSB, CSV, TSV, XLSM, ODS, TXT
+
+Stödda **endast-utmatningsbara** format (kalkylbladet kan sparas som):
+
+- PDF, OTS, XPS, DIF, PNG, JPEG, BMP, SVG, TIFF, EMF, NUMBERS, FODS
 
 ## REST API
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) beskriver det offentligt tillgängliga gränssnittet.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+### **Begärparametrar**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Parameter                | Typ     | Krävs  | Standard | Tillåtna värden                                                       | Beskrivning                                      |
+| ------------------------ | ------- | ------ | -------- | --------------------------------------------------------------------- | ------------------------------------------------ |
+| **format**               | sträng  | Ja     | –        | pdf, png, jpeg, bmp, svg, tiff, emf, csv, txt, … (se stödd lista)    | Målutmatningsformat.                             |
+| **verticalResolution**   | heltal  | Nej    | 96       | 72‑600                                                                | Vertikal DPI för bildutmatning.                 |
+| **horizontalResolution** | heltal  | Nej    | 96       | 72‑600                                                                | Horisontell DPI för bildutmatning.              |
+| **password**             | sträng  | Nej    | –        | –                                                                     | Lösenord för att öppna en skyddad arbetsbok.    |
+| **folder**               | sträng  | Nej    | –        | –                                                                     | Mapp i molnet där källarbetsboken lagras.        |
+| **storage**              | sträng  | Nej    | –        | –                                                                     | Namn på lagringen (t.ex. "Default").             |
 
-{{< tab tabNum="1" >}}
+### Svar
 
-```java
+| Statuskod | Beskrivning                                                            | Returtyp                   |
+| --------- | ---------------------------------------------------------------------- | -------------------------- |
+| **200**   | Konverteringen lyckades; binär ström av den konverterade filen returneras. | `application/octet-stream` |
+| **400**   | Felaktig begäran – saknade eller ogiltiga parametrar.                 | JSON-felobjekt             |
+| **401**   | Otillåten – ogiltig eller saknad JWT-token.                           | JSON-felobjekt             |
+| **404**   | Hittades inte – arbetsbok eller kalkylblad finns inte.                | JSON-felobjekt             |
+| **500**   | Internt serverfel – oväntat misslyckande.                              | JSON-felobjekt             |
 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+#### Exempel på begäran (cURL)
 
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-
-Converted Image 
+#### Exempel på svar
 
 ```
+Konverterad bild (binär ström)
+```
 
-{{< /tab >}}
+## Molnsdk-familj
 
-{{< /tabs >}}
+Att använda en sdk är det snabbaste sättet att utveckla. En sdk hanterar detaljer på låg nivå så att du kan fokusera på ditt projekt. Kontrollera [GitHub-repositoryt](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud sdks.
 
-## Cloud SDK-familjen
-
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
-
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du anropar Aspose.Cells webbtjänster med olika sdks:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -103,3 +123,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

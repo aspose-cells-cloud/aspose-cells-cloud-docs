@@ -1,78 +1,119 @@
-﻿---
-title: Actualiser un filtre automatique dans une feuille de calcul Excel
-second_title: Documen
-linktitle: Actualiser le filtre automatique
+---
+title: "Actualiser un filtre automatique dans une feuille Excel"
+second_title: "Document"
+linktitle: "Actualiser le filtre automatique"
 type: docs
 url: /fr/autofilter/refresh/
-aliases: [/refresh-an-autofilter/]
+aliases: [/fr/refresh-an-autofilter/]
 weight: 100
-keywords: Refresh auto filter on an Excel worksheet
-description: Le Cloud Aspose.Cells API prend en charge l'actualisation automatique du filtre sur une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Actualiser un filtre automatique dans une feuille de calcul Excel
+keywords: "Aspose.Cells, AutoFilter, actualiser, Excel, API, REST"
+description: "Actualiser un filtre automatique existant sur une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut des exemples cURL et des SDK pour C#, Java, Python, etc."
+ArticleTitle: "Actualiser un filtre automatique dans une feuille Excel"
 ---
-Ce REST API indique le filtre automatique `refresh` sur une feuille de calcul Excel.
 
-## RSET API
+### Que fait l’opération **Actualiser** ?
+
+L’appel de l’endpoint réapplique les critères de filtrage actuels après que les données de la feuille de calcul ont été modifiées (par exemple, des lignes ont été ajoutées ou supprimées). Cette opération ne modifie pas la définition du filtre ; elle met simplement à jour l’affichage et renvoie une réponse indiquant le statut.
+
+### API REST
+
+Cette API REST actualise un filtre automatique dans une feuille Excel (version de l’API **v3.0**).
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin||
-| nom de la feuille| chaîne| chemin||
-| dossier| chaîne| requête||
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetAutoFilterRefresh) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### **Réponse**
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant. |
+| 413  | Charge utile trop volumineuse | Le fichier téléchargé dépasse la taille maximale autorisée. |
+| 500  | Erreur interne du serveur   | Erreur inattendue du serveur. |
+
+*Exemples de réponses d’erreur*  
+
+```json
+// 400 Requête incorrecte
+{
+    "Code": 400,
+    "Message": "Paramètre non valide : sheetName introuvable."
+}
+
+// 401 Non autorisé
+{
+    "Code": 401,
+    "Message": "Échec de l’authentification. Le jeton JWT est manquant ou non valide."
+}
+
+// 413 Charge utile trop volumineuse
+{
+    "Code": 413,
+    "Message": "Le fichier téléchargé dépasse la taille maximale autorisée."
+}
+
+// 500 Erreur interne du serveur
+{
+    "Code": 500,
+    "Message": "Une erreur inattendue s’est produite sur le serveur."
+}
+```
+
+## Comment utiliser l’API PostWorksheetAutoFilterRefresh à l’aide des SDK
+
+### Spécification de l’API PostWorksheetAutoFilterRefresh
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetAutoFilterRefresh) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple ci-dessous montre comment effectuer des appels à l’API Cloud à l’aide de cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/refresh" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/refresh" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <votre-jeton-jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
+### Utiliser les SDK Aspose.Cells Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le moyen le plus efficace d’accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
-
+Les exemples de code suivants illustrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -124,3 +165,4 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+---

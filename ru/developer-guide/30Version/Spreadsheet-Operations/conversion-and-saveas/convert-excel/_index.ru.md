@@ -1,73 +1,107 @@
-﻿---
-title: Конвертировать файл Excel в другой формат
-second_title: Documen
-linktitle: Конвертировать Excel
-type: docs
-url: /ru/convert-an-excel-file-to-different-formats/
-aliases: [/convert-excel-workbook-to-different-file-formats/,/convert/excel-to-different-formats/]
-keywords: Convert excel files to kinds of format files
-description: Aspose.Cells Cloud REST API поддерживает преобразование файлов Excel в различные форматы. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 10
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Конвертация Excel
 ---
-Этот REST API указывает на файл Excel `convert` в другом формате.
+title: "Преобразование файла Excel в различные форматы"
+ArticleTitle: "Преобразование файла Excel в различные форматы"
+second_title: "Документ"
+linktype: "Преобразование Excel"
+type: docs
+url: /convert-an-excel-file-to-different-formats/
+aliases:
+  [
+    /convert-excel-workbook-to-different-file-formats/,
+    /convert/excel-to-different-formats/,
+  ]
+keywords: "Aspose.Cells Cloud, преобразование Excel, преобразование форматов файлов, REST API, SDK, CSV, PDF, HTML, JSON, Markdown"
+description: "Преобразуйте рабочие книги Excel в такие форматы, как CSV, PDF, HTML, JSON, Markdown и другие, с использованием REST API Aspose.Cells Cloud."
+weight: 10
+---
 
-Запрос представляет собой HTTP-запрос с составным содержимым (см.[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)или[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Первая часть составного содержимого содержит файл данных, а вторая — параметры сохранения.
+Перед вызовом этого конечного ponto убедитесь, что вы получили действительный токен JWT и что исходная рабочая книга находится в поддерживаемом хранилище (например, Aspose Cloud Storage). Включите токен в заголовок `Authorization`, а при необходимости укажите параметр запроса `storageName`.
 
-**Параметр запроса**
+Этот REST API преобразует файл Excel в различные выходные форматы.
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|формат|нить| Формат файла: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg и т. д.|
-|пароль|нить| Пароль, необходимый для открытия файла Excel.|
-|outPath|нить| Путь для сохранения результата. Если это один файл, `outPath` должен включать как имя файла, так и расширение. Если файлов несколько, `outPath` должен включать только имя папки.|
-|имя_хранилища|нить| Имя хранилища, где находится файл.|
-|checkExcelRestriction|бул| Проверять ли ограничения файла Excel, когда пользователь изменяет ячейки, связанные с объектами.|
-|streamFormat|нить| Формат входного файлового потока.|
-|область|нить| Региональные настройки для рабочей книги.|
-|pageWideFitOnPerSheet|бул| Ширина страницы соответствует размеру листа.|
-|pageTallFitOnPerSheet|бул| Страница по высоте умещается на рабочем листе.|
-|Имя_листа|нить| Преобразовать указанный рабочий лист.|
-|pageIndex|нить| Преобразовать указанную страницу рабочего листа, обязательно sheetName.|
-|одна страница на листе|бул| При конвертации в формат PDF — одна страница на листе.|
-|AutoRowsFit|бул| Автоматически подгоняет все строки в этой книге.|
-|AutoColumnsFit|бул| Автоматически подгоняет ширину столбцов в этой книге.|
+## API PutConvertWorkBook
 
-**Параметр тела запроса**
-
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|файл данных| файл данных|Файл данных сохраняется в первой части многочастного контента.|
-|SaveOptions| Объект|Параметр «Сохранить» сохраняет во второй части многочастного контента.|
-
-## ОТДЫХ API
-
-|**API**|**Тип**|**Описание**|**Swagger Link**|
-|:- |:- |:- |:- |
-|/клетки/конвертировать|ПОМЕЩАТЬ|Преобразует рабочую книгу из содержимого запроса в определенный формат|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
-
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
-
- Вы можете использовать**cURL** Инструмент командной строки для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
-
-{{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/convert?format=html" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+```http
+PUT https://api.aspose.cloud/v3.0/cells/convert
 ```
 
-{{< /tab >}}
+Запрос представляет собой HTTP **PUT** с многочастным содержимым (см. [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) или [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
+Первая часть многочастного тела содержит **файл данных**, а вторая часть — **параметры сохранения**.
 
-{{< /tabs >}}
+### Безопасность и аутентификация
 
-## Семейство облачных SDK
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе токена JWT</a>.
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+### Параметры запроса
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+| Имя параметра           | Тип    | Описание                                                                                                                  |
+| ----------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------- |
+| `format`                | string | Целевой формат файла (например, CSV, XLS, HTML, PDF, XML, TXT, TIFF, PNG, JPG, GIF, EMF, BMP, MD, Numbers, WMF, SVG и др.). |
+| `password`              | string | Пароль, необходимый для открытия исходного файла Excel.                                                                  |
+| `outPath`               | string | Полный путь (включая имя файла и расширение) для одного выходного файла или путь к папке при генерации нескольких файлов. |
+| `storageName`           | string | Имя хранилища, в котором находится исходный файл.                                                                         |
+| `checkExcelRestriction` | bool   | Если **true**, проверяет ограничения Excel перед изменением ячеек или связанных объектов.                                |
+| `streamFormat`          | string | Формат входного потока файла.                                                                                             |
+| `region`                | string | Региональные настройки, применяемые к рабочей книге.                                                                     |
+| `pageWideFitOnPerSheet` | bool   | Регулирует ширину страницы под размер каждого листа при преобразовании в PDF.                                             |
+| `pageTallFitOnPerSheet` | bool   | Регулирует высоту страницы под размер каждого листа при преобразовании в PDF.                                             |
+| `sheetName`             | string | Имя листа для преобразования.                                                                                             |
+| `pageIndex`             | string | Индекс страницы для преобразования (требуется `sheetName`).                                                               |
+| `onePagePerSheet`       | bool   | Если **true**, генерирует по одной странице PDF на каждый лист.                                                           |
+| `AutoRowsFit`           | bool   | Автоматически подгоняет все строки в рабочей книге.                                                                       |
+| `AutoColumnsFit`        | bool   | Автоматически подгоняет ширину столбцов в рабочей книге.                                                                  |
+
+### Параметры тела запроса
+
+| Имя параметра | Тип       | Описание                                                   |
+| ------------- | --------- | ---------------------------------------------------------- |
+| `datafile`    | data file | Файл Excel, размещенный в первой части многочастного тела. |
+| `SaveOptions` | object    | Параметры сохранения, размещенные во второй части тела.    |
+
+### Ответ
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                                                   |
+|-----|-----------------------------|----------------------------------------------------------------------------|
+| 200 | OK                          | Фильтр успешно применён; ответ содержит сведения о выполненной операции.   |
+| 400 | Bad Request                 | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized                | Недействительный или отсутствующий токен JWT.                             |
+| 413 | Payload Too Large           | Загруженный файл превышает лимит размера.                                  |
+| 500 | Internal Server Error       | Непредвиденная ошибка сервера.                                             |
+
+## Как использовать API PutConvertWorkBook с SDK
+
+### Спецификация API PutConvertWorkBook
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) определяет открытый интерфейс, позволяющий выполнять прямые REST-взаимодействия из веб-браузера.
+
+### Пример cURL
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/convert?format=html" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -d '{"File":{}}'
+```
+
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK ускоряет разработку, позволяя сосредоточиться на бизнес-логике, поскольку низкоуровневые детали обрабатываются SDK. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
+
+Следующие примеры кода демонстрируют вызов веб-служб Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -85,37 +119,37 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/convert?format=html" -H "accept
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PutConvertWorkbook.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "ExamplePutConvertWorkbook.php" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PutConvertWorkbook.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "ExamplePutConvertWorkbook.rb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutConvertWorkbook.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "ExamplePutConvertWorkbook.ts" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PutConvertWorkbook.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "ExamplePutConvertWorkbook.py" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PutConvertWorkbook.pl" >}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "ExamplePutConvertWorkbook.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PutConvertWorkbook.go" >}}
+{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "ExamplePutConvertWorkbook.go" >}}
 
 {{< /tab >}}
 

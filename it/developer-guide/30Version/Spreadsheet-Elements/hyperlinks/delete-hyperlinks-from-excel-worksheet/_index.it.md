@@ -1,75 +1,79 @@
-﻿---
-title: Pulito
+---
+title: "Rimuovi collegamenti ipertestuali"
 type: docs
 url: /it/hyperlinks/clear/
 aliases: [/add-hyperlinks-to-excel-worksheet/]
-keywords: Clear hyperlinks from an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta la cancellazione dei collegamenti ipertestuali da un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+keywords: "Aspose.Cells Cloud, Excel, rimuovi collegamenti ipertestuali, elimina collegamenti ipertestuali, REST API, foglio di lavoro, SDK"
+description: "Scopri come rimuovere tutti i collegamenti ipertestuali da un foglio di lavoro Excel utilizzando l'API REST Aspose.Cells Cloud o uno qualsiasi degli SDK supportati (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl, ecc.)."
 weight: 40
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Cancella
+ArticleTitle: "Rimuovi collegamenti ipertestuali – Documentazione API Aspose.Cells Cloud"
 ---
-Questo REST API indica `delete all hyperlinks` su un foglio di lavoro Excel.
 
-## RSET API
+Questa API REST elimina **tutti i collegamenti ipertestuali** in un foglio di lavoro Excel.
+
+## Sicurezza e autenticazione
+Le API Aspose.Cells Cloud sono sicure e richiedono l'[autenticazione basata su token JWT](https://docs.aspose.cloud/it/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-I parametri della richiesta sono:
+### Parametri della richiesta
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome del documento.|
-| Nome foglio| corda| sentiero| Nome del foglio di lavoro.|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome parametro | Tipo   | Posizione | Descrizione                           |
+| -------------- | ------ | --------- | ------------------------------------- |
+| name           | string | path      | Il nome del file Excel.               |
+| sheetName      | string | path      | Il nome del foglio di lavoro.         |
+| folder         | string | query     | La cartella che contiene il documento.|
+| storageName    | string | query     | Il nome del servizio di archiviazione.|
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/DeleteWorksheetHyperlinks) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### Risposte di errore
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Codice HTTP | Motivo                                              | Corpo di esempio                                                     |
+| ----------- | --------------------------------------------------- | -------------------------------------------------------------------- |
+| **400**     | Richiesta non valida – parametri mancanti o non validi. | `{ "Code":"400", "Message":"Valore di parametro non valido." }`     |
+| **401**     | Non autorizzato – token JWT mancante o non valido.  | `{ "Code":"401", "Message":"Token di accesso mancante o non valido." }` |
+| **404**     | Non trovato – cartella di lavoro o foglio di lavoro non esistenti. | `{ "Code":"404", "Message":"File non trovato." }`                  |
+| **500**     | Errore interno del server – errore imprevisto sul server. | `{ "Code":"500", "Message":"Si è verificato un errore imprevisto." }` |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+La [Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Hyperlinks/DeleteWorksheetHyperlinks) definisce un'interfaccia di programmazione pubblicamente accessibile, consentendoti di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando **cURL** per chiamare i servizi web Aspose.Cells. L'esempio seguente mostra come eliminare tutti i collegamenti ipertestuali da un foglio di lavoro.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test1.xlsx/worksheets/Sheet1/hyperlinks" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+## Famiglia di SDK Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'utilizzo di un SDK accelera lo sviluppo gestendo per te i dettagli a basso livello. Per un elenco completo degli SDK Aspose.Cells Cloud, visita il [repository GitHub](https://github.com/aspose-cells-cloud).
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come eliminare i collegamenti ipertestuali dei fogli di lavoro utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

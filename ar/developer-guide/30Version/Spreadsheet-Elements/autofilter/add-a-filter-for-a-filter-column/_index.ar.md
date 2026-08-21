@@ -1,62 +1,88 @@
-﻿---
-title: إضافة مرشح في ورقة عمل Excel
-second_title: Documen
-linktitle: إضافة فلتر
+---
+title: "إضافة مرشّح في ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "إضافة مرشّح"
 type: docs
 url: /ar/autofilter/add-filter/
 aliases: [/add-a-filter-for-a-filter-column/]
-keywords: Adds a filter for a filter column on an Excel worksheet
-description: يدعم الإصدار Aspose.Cells Cloud API إضافة مُرشِّح لعمود مُرشِّح في ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
+keywords: "Aspose.Cells, سحابة, Excel, المرشّح التلقائي، إضافة مرشّح، واجهة برمجة تطبيقات REST، مكتبة تطوير برمجيات"
+description: "تعرّف على كيفية إضافة مرشّح تلقائي إلى عمود في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمّن أمثلة cURL ومكتبات تطوير برمجيات (SDK) ودليل المعاملات."
 weight: 60
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة مرشح في ورقة عمل Excel
+ArticleTitle: "إضافة مرشّح في ورقة عمل Excel باستخدام Aspose.Cells Cloud"
 ---
-يشير هذا REST API إلى إضافة `a filter` لعمود التصفية على ورقة العمل Excel.
 
-## RSET API
+**المتطلبات المسبقة:** قبل استدعاء هذه الواجهة، يجب عليك الحصول على رمز JWT صالح، والتأكّد من أن مصنف العمل المستهدف مُحمّل في التخزين المحدّد، وامتلاك الصلاحيات اللازمة للوصول إلى الملف. يُوصى باستخدام إصدار حديث من cURL (7.68 أو أحدث) لتشغيل الأمثلة المبنية على سطر الأوامر.
 
-```bash
+تضيف هذه الواجهة البرمجية للخدمات REST مرشّحًا لعمود معيّن في ورقة عمل Excel.
 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
+## واجهة PutWorksheetFilter البرمجية
 
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-|يتراوح|خيط| استفسار||
-|فهرس الحقل|عدد صحيح| استفسار||
-|معايير|خيط| استفسار||
-|مطابقة الفراغات|خيط| استفسار|صواب/خطأ|
-|ينعش|خيط| استفسار|صواب/خطأ|
-|مجلد|خيط| استفسار|مجلد المصنف الأصلي.|
-|اسم التخزين|خيط| استفسار|اسم التخزين.|
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتشترط <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل | النوع   | الموقع | الوصف |
+|-------------|---------|--------|--------|
+| name        | string  | Path   | اسم مصنف العمل. |
+| sheetName   | string  | Path   | اسم ورقة العمل. |
+| range       | string  | Query  | النطاق الخلوي الذي يحتوي على المرشّح (مثل `A1:B1`). |
+| fieldIndex  | integer | Query  | الفهرس الصفري (zero-based) للعمود الذي يُطبّق عليه المرشّح. |
+| criteria    | string  | Query  | معايير المرشّح (مثل قيمة أو تعبير). |
+| matchBlanks | boolean | Query  | اضبطها على `true` لتضمين الخلايا الفارغة في المرشّح، وإلا فاضبطها على `false`. |
+| refresh     | boolean | Query  | اضبطها على `true` لتحديث المرشّح بعد تطبيقه، وإلا فاضبطها على `false`. |
+| folder      | string  | Query  | المجلد الذي يخزّن فيه مصنف العمل الأصلي. |
+| storageName | string  | Query  | اسم خدمة التخزين. |
+
+### **الاستجابة**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                        | الوصف |
+|-------|-------------------------------|--------|
+| 200   | OK (نجاح)                     | تطبيق المرشّح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400   | Bad Request (طلب خاطئ)        | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401   | Unauthorized (غير مُعتمد)      | رمز JWT غير صالح أو مفقود. |
+| 413   | Payload Too Large (حمولة كبيرة جدًا) | حجم الملف المرفوع يتجاوز الحد المسموح. |
+| 500   | Internal Server Error (خطأ داخلي في الخادم) | خطأ غير متوقّع في الخادم. |
+
+## كيفية استخدام واجهة PutWorksheetFilter مع مكتبات تطوير البرمجيات (SDKs)
+
+### مواصفات واجهة PutWorksheetFilter
+
+تُعرّف <a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter" target="_blank" rel="noopener noreferrer">مواصفة OpenAPI</a> واجهة برمجة تطبيقات عامة قابلة للوصول وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات Aspose.Cells Web. يوضح المثال التالي كيفية استدعاء الواجهة باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?range=A1:B1&fieldIndex=0&criteria=Year" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?range=A1:B1&fieldIndex=0&criteria=Year" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
@@ -67,11 +93,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام مكتبات Aspose.Cells Cloud SDKs
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام مكتبة تطوير برمجيات (SDK) هو أسرع طريقة لتطوير التطبيقات. فهي تتعامل مع التفاصيل الدقيقة من المستوى المنخفض، مما يتيح لك التركيز على مشروعك. يُرجى مراجعة <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بمكتبات Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells Web باستخدام مكتبات تطوير برمجيات متنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -124,3 +150,4 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 {{< /tab >}}
 
 {{< /tabs >}}
+---

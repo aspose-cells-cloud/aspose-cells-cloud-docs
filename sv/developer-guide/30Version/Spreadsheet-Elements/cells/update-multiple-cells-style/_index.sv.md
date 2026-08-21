@@ -1,71 +1,132 @@
-﻿---
-title: Uppdatera flera Cells Styl
+---
+title: "Uppdatera flera cellers stil – Aspose.Cells Cloud API-referens (v3.0)"
 type: docs
 url: /sv/update-multiple-cells-style/
 weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Uppdatera flera Cells Stil
+keywords: ["Aspose.Cells", "uppdatera flera cellers stil", "Excel-cellstil-API", "molntjänst (SDK)", "REST API", "cURL-exempel", "JSON-förfrågan", "JWT-autentisering"]
+description: "Lär dig hur du uppdaterar stil för ett intervall av celler i en Excel-arbetsbok med Aspose.Cells Cloud REST API v3.0. Inkluderar endpoint, HTTP-metod, parametrar, cURL- och SDK-exempel, autentisering, felhantering och versionsinformation."
+ArticleTitle: "Uppdatera flera cellers stil – Aspose.Cells Cloud API-referens (v3.0)"
 ---
-Denna REST API indikerar att `cells style` har satts till en cell i en Excel-fil.
 
-## RSET API
+## REST API
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
- 
+Denna REST API ställer in **stilen** för ett intervall av celler i en Excel-arbetsbok.
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
 ```
 
-Begäranparametrarna är:
+## Säkerhet och autentisering
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsboksnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| räckvidd| sträng| fråga| Räckvidden.|
-| stil|| kropp| med uppdateringsinställningar för stil.|
-| mapp| sträng| fråga| Arbetsbokens mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+### Förfrågningsparametrar
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| ParameterNamn   | Typ    | Plats  | Beskrivning |
+|----------------|--------|--------|-------------|
+| **name**       | string | path   | Namn på arbetsboken. |
+| **sheetName**  | string | path   | Namn på kalkylbladet. |
+| **range**      | string | query  | Cellintervallet (t.ex. `A1:A10`). |
+| **style**      | object | body   | JSON-objekt som definierar den stil som ska tillämpas. |
+| **folder**     | string | query  | Mapp som innehåller arbetsboken. |
+| **storageName**| string | query  | Namn på lagringsutrymmet. |
+
+#### Style-objekt
+`style`-JSON-objektet representerar cellformatering. Det kan innehålla någon av följande valfria egenskaper:
+
+- **Font** – Teckensnittsinställningar (`Name`, `Size`, `IsBold`, `IsItalic`, `Color`, etc.).  
+- **BackgroundColor** – Bakgrundsfärg i ARGB-format.  
+- **ForegroundColor** – Förgrundsfärg i ARGB-format.  
+- **Name**, **CultureCustom**, **Custom** – Ytterligare stilmetadata.
+
+## **Svar**
+
+Returnerar CellCloudResponse.
+
+- **Översikt över svarsfält**
+
+| Fält            | Typ     | Beskrivning                                           |
+| --------------- | ------- | ----------------------------------------------------- |
+| `Status`        | string  |                                                       |
+| `Code`          | integer | 200,400,401,500,...                                 |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod  | Betydelse                   | Beskrivning                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter har tillämpats korrekt; svaret innehåller åtgärdens detaljer. |
+| 400  | Felaktig förfrågan          | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401  | Oautentiserad               | Ogiltig eller saknad JWT-token. |
+| 413  | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen. |
+| 500  | Internt serverfel           | Oväntat serverfel. |
+
+## Hur man använder PostUpdateWorksheetRangeStyle API med SDK:er
+
+### PostUpdateWorksheetRangeStyle API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle) innehåller hela schemat.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells molntjänster. Följande exempel visar hur man gör förfrågningar till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Förfrågan" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/style?range=a1%3Aa10" \
--X POST \
- -d "{ \"Font\": { \"Color\": { \"A\":255, \"R\": 255, \"G\": 255, \"B\": 0 }, \"DoubleSize\": 10, \"IsBold\": true, \"IsItalic\": true, \"IsStrikeout\": true, \"IsSubscript\": true, \"IsSuperscript\": true, \"Name\": \"Arial\", \"Size\": 22 }, \"Name\": \"string\", \"CultureCustom\": \"string\", \"Custom\": \"string\", \"BackgroundColor\": { \"A\": 10, \"R\": 10, \"G\": 10, \"B\": 10 }, \"ForegroundColor\": { \"A\": 255, \"R\": 255, \"G\": 255, \"B\": 0 } \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+cURL -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/style?range=a1%3Aa10" \
+  -X POST \
+  -d '{
+        "Font": {
+          "Color": { "A":255, "R":255, "G":255, "B":0 },
+          "Size": 22,
+          "IsBold": true,
+          "IsItalic": true,
+          "IsStrikeout": true,
+          "IsSubscript": true,
+          "IsSuperscript": true,
+          "Name": "Arial"
+        },
+        "Name": "string",
+        "CultureCustom": "string",
+        "Custom": "string",
+        "BackgroundColor": { "A":10, "R":10, "G":10, "B":10 },
+        "ForegroundColor": { "A":255, "R":255, "G":255, "B":0 }
+      }' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+### Använd Aspose.Cells Cloud SDK:er
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Se [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells molntjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -118,3 +179,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

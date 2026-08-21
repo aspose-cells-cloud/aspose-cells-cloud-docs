@@ -1,76 +1,92 @@
-﻿---
-title: Verschieben Sie ein Excel Arbeitsblatt
-second_title: Documen
-linktitle: Bewegung
-type: docs
-url: /de/worksheets/move/
-aliases: [/move-excel-worksheets/]
-keywords: Move an Excel worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API unterstützt das Verschieben eines Excel Arbeitsblatts in eine Excel Arbeitsmappe. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Verschieben eines Excel Arbeitsblatts
 ---
-Dieser REST API zeigt `move worksheet` an.
- 
-## RSET API
- 
+title: "Verschieben eines Excel-Arbeitsblatts – Aspose.Cells Cloud API (v3.0)"
+second_title: "Dokument"
+linktitle: "Verschieben"
+type: docs
+url: /worksheets/move/
+aliases: [/move-excel-worksheets/]
+keywords: "Aspose.Cells Cloud, Arbeitsblatt verschieben, Excel, REST-API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
+description: "Erfahren Sie, wie Sie ein Excel-Arbeitsblatt an eine neue Position verschieben können, mithilfe der Aspose.Cells Cloud API (v3.0). Enthält Endpunkt, erforderliche Parameter, cURL-Beispiel und SDK-Code in C#, Java, Python und mehr."
+weight: 20
+ArticleTitle: "So verschieben Sie ein Excel-Arbeitsblatt mit Aspose.Cells Cloud API v3.0"
+---
+
+Diese REST-API verschiebt ein Arbeitsblatt innerhalb einer Excel-Arbeitsmappe.
+
+## REST-API
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
 ```
- Die Anforderungsparameter sind:
- 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Dokumentname.|
-| Blattname| Schnur| Weg| Der Arbeitsblattname.|
-| Umzug|| Körper| mit beweglichen Parametern.|
-| Ordner| Schnur| Abfrage| Der Dokumentenordner.|
-| Speichername| Schnur| Abfrage| Speichername.|
- 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
- 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### Anforderungsparameter
+
+| Parametername | Typ    | Ort    | Beschreibung                                                                                                           |
+| ------------- | ------ | ------ | ---------------------------------------------------------------------------------------------------------------------- |
+| name          | string | path   | Name der Excel-Datei.                                                                                                 |
+| sheetName     | string | path   | Name des zu verschiebenden Arbeitsblatts.                                                                             |
+| moving        | object | body   | JSON-Objekt, das das Zielarbeitsblatt (`DestinationWorksheet`) und die relative Position (`Position`) angibt.         |
+| folder        | string | query  | Pfad des Ordners, in dem die Arbeitsmappe gespeichert ist.                                                            |
+| storageName   | string | query  | Name des Speicherdiensts.                                                                                             |
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht es Ihnen, REST-Interaktionen direkt aus einem Webbrowser durchzuführen.
+
+Sie können das cURL-Befehlszeilentool verwenden, um Aspose.Cells-Webdienste aufzurufen. Das folgende Beispiel zeigt, wie ein Arbeitsblatt mit einer einzigen Anforderung verschoben wird.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--d '{"DestinationWorksheet":"Sheet5", "Position":"after"}' 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"DestinationWorksheet":"Sheet5","Position":"after"}'
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                   | Beschreibung                                                                 |
+|------|-----------------------------|------------------------------------------------------------------------------|
+| 200  | OK                          | Filter erfolgreich angewendet; Antwort enthält Details zum Vorgang.         |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp).     |
+| 401  | Unauthorized                | Ungültiges oder fehlendes JWT-Token.                                        |
+| 413  | Payload Too Large           | Die hochgeladene Datei überschreitet das Größenlimit.                       |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler.                                                   |
+
+**Beispiel für Fehlerantwort**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Erforderlicher Parameter 'moving' fehlt."
+}
+```
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Cloud SDK-Familie
- 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
- 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
- 
- 
- 
+
+Die Verwendung eines SDKs ist die beste Möglichkeit, die Entwicklung zu beschleunigen. Ein SDK übernimmt die Low-Level-Details, sodass Sie sich auf Ihre Projekt Aufgaben konzentrieren können. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud).
+
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

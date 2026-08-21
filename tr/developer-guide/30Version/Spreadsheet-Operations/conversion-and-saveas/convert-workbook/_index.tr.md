@@ -1,46 +1,45 @@
-﻿---
-title: Excel Dosyasını Farklı Biçime Dönüştürme
-second_title: Documen
-linktitle: Elektronik Tabloyu Dönüştür
-type: docs
-url: /tr/convert-a-spread-file-to-different-formats/
-keywords: Convert excel files to kinds of format files
-description: Aspose.Cells Cloud REST API, Excel dosyalarını çeşitli biçimlerdeki dosyalara dönüştürmeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Dönüştür Excel
 ---
-Bu REST API, `convert`'e Excel dosyasını farklı bir formatta gösterir. Farklı formatları destekler. Ayrıca, dönüştürmeden önce sayfa düzenini ve kaydetme seçeneklerini ayarlayabilir.
+title: "Bir Excel Dosyasını Farklı Biçimlere Dönüştürme"
+second_title: "Belge"
+linktype: "Döküman"
+url: /tr/convert-a-spread-file-to-different-formats/
+keywords: "Excel dönüştürme, spreadsheet dönüştürme, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, dosya biçimi dönüştürme"
+description: "Aspose.Cells Cloud REST API’sini kullanarak Excel çalışma kitaplarını PDF, CSV, JSON ve Markdown gibi çeşitli biçimlere dönüştürün. API, C#, Java, Python ve diğerleri gibi diller için birden fazla SDK’yi destekler."
+weight: 10
+ArticleTitle: "Bir Excel Dosyasını Farklı Biçimlere Dönüştürme – Aspose.Cells Cloud API Kılavuzu"
+---
 
-**İstek Gövde Parametresi**
+Bu REST API, bir Excel dosyasını farklı bir forma dönüştürür. Geniş bir çıktı formatı yelpazesi sunar ve dönüştürme işleminden önce sayfa ayarlarını ve kaydetme seçeneklerini belirlemenize olanak tanır.
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|[ConvertWorkbookOptions](/cells/tr/convert-workbook-options/)| nesne| Çalışma Kitabı Seçeneklerini Dönüştür.|
+## PostConvertWorkBook API
 
-**Cevap**
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert
+```
 
-[Dosya Bilgileri](/cells/tr/file-info/)
+Bu API’yi kullanmadan önce geçerli bir JWT belirteciniz olduğundan ve programlama diliniz için uygun Aspose.Cells Cloud SDK’sini yüklediğinizden emin olun.
 
-## DİNLENME API
+### **Güvenlik ve Kimlik Doğrulama**
 
-|**API**|**Tip**|**Tanım**|**Swagger Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/dönüştür|POSTALAMAK|Çalışma kitabını istek içeriğinden bir biçime dönüştürür|[PostConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook)|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+## SDK’lar ile PostConvertWorkBook API’yi Nasıl Kullanılır?
 
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### PostConvertWorkBook API Spesifikasyonu
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web hizmetlerine kolayca ulaşmak için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’yi nasıl çağıracağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: curl" \
      -d {}
 ```
 
@@ -48,21 +47,23 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert"
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
-  "Filename": "filename",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
+  "Filename": "dosya_adı",
+  "FileSize": 12345,
+  "FileContent": "Dosya İçeriği: base64_kodlanmış_dize"
 }
-
 ```
 
-## Bulut SDK Ailesi
+{{< /tab >}}
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+{{< /tabs >}}
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+### Aspose.Cells Cloud SDK’larını Kullanın
+
+SDK kullanmak, geliştirmenin en hızlı yoludur. Bir SDK, düşük seviye detayları soyutlayarak projenize odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -115,3 +116,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

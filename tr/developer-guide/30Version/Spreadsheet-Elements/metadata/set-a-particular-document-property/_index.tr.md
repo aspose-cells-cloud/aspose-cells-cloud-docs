@@ -1,126 +1,150 @@
-﻿---
-title: Belirli Bir Belge Özelliğini Ayarlama
-second_title: Documen
-linktitle: Güncelleme
-type: docs
-url: /tr/document-properties/update/
-aliases: [/set-a-particular-document-property/]
-keywords: Update properties from excel files
-description: Aspose.Cells Cloud REST API, Excel dosyalarından özellik güncellemeyi destekler. SDK, Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift gibi çeşitli geliştirme dillerini destekler.
-weight: 30
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Belirli Bir Belge Özelliğini Ayarlama
 ---
-Bu REST API, `set/create` belge özelliğini gösterir.
+---
+title: "Aspose.Cells Cloud API – Belge Özelliğini Güncelleme (Ayarlama)"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabında bir belge özelliği oluşturun veya ayarlayın."
+keywords: "Aspose.Cells, Bulut API, Belge Özelliğini Güncelle, Excel meta verisi, REST API, SDK örnekleri"
+api_version: "v3.0"
+---
 
-## RSET API
+# Genel Bakış
+**Belge Özelliğini Güncelleme (Ayarlama)** işlemi, Aspose Cloud Depolama’da depolanan bir Excel çalışma kitabında yeni bir belge özelliği oluşturmanıza veya mevcut birini değiştirmenize olanak tanır.
+
+*Uç Nokta*  
+`PUT https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}`  
+
+İstek, ayarlanacak özelliği açıklayan bir JSON yükü alır.
+
+---
+
+## Ön Koşullar
+- Geçerli bir **JWT erişim belirteci** (bkz. **Kimlik Doğrulama** bölümü).  
+- Hedef çalışma kitabının (`{name}`) zaten Aspose Cloud Depolama’da (veya belirttiğiniz bir klasörde) bulunuyor olması gerekir.  
+- `storageName` (depolama adı) isteğe bağlıdır; atlanırsa varsayılan depolama kullanılır.
+
+---
+
+## Kimlik Doğrulama
+Aspose.Cells Cloud, **JWT belirteci tabanlı kimlik doğrulama** kullanır. Belirteci `Authorization` başlığına ekleyin:
+
+```http
+Authorization: Bearer <jwt-token>
+```
+
+JWT belirteci almayle ilgili ayrıntılar için [Kimlik Doğrulama Kılavuzu](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) sayfasını ziyaret edin.
+
+---
+
+## HTTP İsteği
+
+| Öğe              | Değer |
+|------------------|-------|
+| **Yöntem**       | `PUT` |
+| **URI**          | `/cells/{name}/documentproperties/{propertyName}` |
+| **Content-Type**| `application/json` |
+| **Accept**       | `application/json` |
+
+### Yol Parametreleri
+
+| Ad            | Tür    | Gerekli | Açıklama |
+|---------------|--------|---------|----------|
+| `name`        | string | ✅ | Excel dosyasının adı (uzantısı dahil). |
+| `propertyName`| string | ✅ | Ayarlanacak veya oluşturulacak belge özelliği adı. |
+
+### Sorgu Parametreleri
+
+| Ad            | Tür    | Gerekli | Açıklama |
+|---------------|--------|---------|----------|
+| `folder`      | string | ❌ | Çalışma kitabının bulunduğu depolamadaki klasör yolu. |
+| `storageName` | string | ❌ | Depolama hizmetinin adı. Atlanırsa varsayılan depolama kullanılır. |
+
+### İstek Gövdesi – Belge Özelliği Nesnesi
+
+```json
+{
+  "Name": "author",
+  "Value": "aspose",
+  "BuiltIn": "string",          // isteğe bağlı, örneğin "true" veya "false"
+  "Link": {                     // isteğe bağlı
+    "Href": "string",
+    "Rel": "string",
+    "Title": "string",
+    "Type": "string"
+  }
+}
+```
+
+| Alan    | Tür    | Gerekli | Açıklama |
+|---------|--------|---------|----------|
+| **Name**   | string | ✅ | Özellik adı (örneğin `author`). |
+| **Value**  | string | ✅ | Özellik değeri. |
+| **BuiltIn**| string | ❌ | Özelliğin yerleşik olup olmadığını belirtir. |
+| **Link**   | object | ❌ | Hiperbağlantı bilgisi (`Href`, `Rel`, `Title`, `Type`). |
+
+---
+
+## Örnek İstek (cURL)
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author?folder=Docs&storageName=MyStorage" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>" \
+  -d '{
+        "Name": "author",
+        "Value": "aspose",
+        "BuiltIn": "false",
+        "Link": {
+          "Href": "https://example.com",
+          "Rel": "self",
+          "Title": "Author link",
+          "Type": "text/html"
+        }
+      }'
 ```
 
-İstek parametreleri şunlardır:
+### Örnek Başarılı Yanıt
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| özellikAdı| sicim| yol| Emlak adı.|
-| mülk|| vücut| yeni emlak değeriyle.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
-
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Properties/PutDocumentProperty) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
-
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```java
-
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author"  \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d "{ \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" }, \"Name\": \"author\", \"Value\": \"aspose\", \"BuiltIn\": \"string\"}"
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```java
-
+```json
+{
   "Code": 200,
-
-  "Status": "Created"
-
+  "Status": "OK"
 }
-
 ```
 
-{{< /tab >}}
+---
 
-{{< /tabs >}}
+**HTTP Durum Kodları**
 
-## Bulut SDK Ailesi
+| Kod | Anlam                       | Açıklama                                      |
+|-----|-----------------------------|------------------------------------------------|
+| 200 | OK (Tamam)                  | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request (Hatalı İstek)  | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT belirteci. |
+| 413 | Payload Too Large (Yük Çok Büyük) | Yüklenen dosya boyut sınırını aşıyor. |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası. |
+---
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+## SDK Örnekleri
+Aşağıdaki kod parçacıkları, resmi Aspose.Cells Cloud SDK’larıyla bu işlemi çağırmayı göstermektedir.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+| Dil | Örnek |
+|-----|-------|
+| **C#** | <details><summary>C# örneğini göster</summary>```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar apiInstance = new DocumentPropertiesApi();\nvar request = new PutDocumentPropertyRequest(\n    name: \"test.xlsx\",\n    propertyName: \"author\",\n    property: new CellsDocumentProperty {\n        Name = \"author\",\n        Value = \"aspose\",\n        BuiltIn = \"false\",\n        Link = new Link {\n            Href = \"https://example.com\",\n            Rel = \"self\",\n            Title = \"Author link\",\n            Type = \"text/html\"\n        }\n    },\n    folder: \"Docs\",\n    storageName: \"MyStorage\"\n);\nvar response = apiInstance.PutDocumentProperty(request);\nConsole.WriteLine(response.Status);\n```\n</details> |
+| **Java** | <details><summary>Java örneğini göster</summary>```java\nimport com.aspose.cells.cloud.api.DocumentPropertiesApi;\nimport com.aspose.cells.cloud.model.*;\n\nDocumentPropertiesApi api = new DocumentPropertiesApi();\nCellsDocumentProperty prop = new CellsDocumentProperty();\nprop.setName(\"author\");\nprop.setValue(\"aspose\");\nprop.setBuiltIn(\"false\");\nLink link = new Link();\nlink.setHref(\"https://example.com\");\nlink.setRel(\"self\");\nlink.setTitle(\"Author link\");\nlink.setType(\"text/html\");\nprop.setLink(link);\n\nPutDocumentPropertyRequest request = new PutDocumentPropertyRequest(\"test.xlsx\", \"author\", prop, \"Docs\", \"MyStorage\");\nCellsCloudResponse response = api.putDocumentProperty(request);\nSystem.out.println(response.getStatus());\n```\n</details> |
+| **Python** | <details><summary>Python örneğini göster</summary>```python\nfrom asposecellscloud import DocumentPropertiesApi, CellsDocumentProperty, Link\n\napi = DocumentPropertiesApi()\nprop = CellsDocumentProperty(name=\"author\", value=\"aspose\", built_in=\"false\")\nprop.link = Link(href=\"https://example.com\", rel=\"self\", title=\"Author link\", type=\"text/html\")\nresponse = api.put_document_property(name=\"test.xlsx\", property_name=\"author\", property=prop, folder=\"Docs\", storage_name=\"MyStorage\")\nprint(response.status)\n```\n</details> |
+| **Node.js** | <details><summary>Node.js örneğini göster</summary>```javascript\nconst { DocumentPropertiesApi, CellsDocumentProperty, Link } = require('asposecellscloud');\n\nconst api = new DocumentPropertiesApi();\nconst prop = new CellsDocumentProperty({\n  name: 'author',\n  value: 'aspose',\n  builtIn: 'false',\n  link: new Link({ href: 'https://example.com', rel: 'self', title: 'Author link', type: 'text/html' })\n});\n\napi.putDocumentProperty({\n  name: 'test.xlsx',\n  propertyName: 'author',\n  property: prop,\n  folder: 'Docs',\n  storageName: 'MyStorage'\n}).then(res => console.log(res.status));\n```\n</details> |
+| **Go** | <details><summary>Go örneğini göster</summary>```go\nimport (\n    \"context\"\n    cells \"github.com/aspose-cells-cloud/aspose-cells-cloud-go/v3\"\n)\n\napi := cells.NewDocumentPropertiesApi()\nprop := cells.CellsDocumentProperty{Name: \"author\", Value: \"aspose\", BuiltIn: \"false\"}\nprop.Link = &cells.Link{Href: \"https://example.com\", Rel: \"self\", Title: \"Author link\", Type: \"text/html\"}\nreq := cells.PutDocumentPropertyRequest{Name: \"test.xlsx\", PropertyName: \"author\", Property: &prop, Folder: \"Docs\", StorageName: \"MyStorage\"}\nresp, _, err := api.PutDocumentProperty(context.Background(), req)\nif err != nil { panic(err) }\nfmt.Println(resp.Status)\n```\n</details> |
+| **Ruby** | <details><summary>Ruby örneğini göster</summary>```ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::DocumentPropertiesApi.new\nprop = AsposeCellsCloud::CellsDocumentProperty.new(\n  name: 'author',\n  value: 'aspose',\n  built_in: 'false',\n  link: AsposeCellsCloud::Link.new(\n    href: 'https://example.com',\n    rel: 'self',\n    title: 'Author link',\n    type: 'text/html'\n  )\n)\nresponse = api.put_document_property('test.xlsx', 'author', prop, folder: 'Docs', storage_name: 'MyStorage')\nputs response.status\n```\n</details> |
+| **PHP** | <details><summary>PHP örneğini göster</summary>```php\n<?php\nuse Aspose\Cells\DocumentPropertiesApi;\nuse Aspose\Cells\Model\CellsDocumentProperty;\nuse Aspose\Cells\Model\Link;\n\n$api = new DocumentPropertiesApi();\n$prop = new CellsDocumentProperty([\n    'Name' => 'author',\n    'Value' => 'aspose',\n    'BuiltIn' => 'false',\n    'Link' => new Link([\n        'Href' => 'https://example.com',\n        'Rel' => 'self',\n        'Title' => 'Author link',\n        'Type' => 'text/html'\n    ])\n]);\n$response = $api->putDocumentProperty('test.xlsx', 'author', $prop, 'Docs', 'MyStorage');\necho $response->getStatus();\n?>\n```\n</details> |
+| **Perl** | <details><summary>Perl örneğini göster</summary>```perl\nuse AsposeCellsCloud::DocumentPropertiesApi;\nuse AsposeCellsCloud::Object::CellsDocumentProperty;\nuse AsposeCellsCloud::Object::Link;\n\nmy $api = AsposeCellsCloud::DocumentPropertiesApi->new();\nmy $prop = AsposeCellsCloud::Object::CellsDocumentProperty->new(\n    Name    => 'author',\n    Value   => 'aspose',\n    BuiltIn => 'false',\n    Link    => AsposeCellsCloud::Object::Link->new(\n        Href  => 'https://example.com',\n        Rel   => 'self',\n        Title => 'Author link',\n        Type  => 'text/html'\n    )\n);\nmy $response = $api->put_document_property(name => 'test.xlsx', property_name => 'author', property => $prop, folder => 'Docs', storage_name => 'MyStorage');\nprint $response->{Status}, \"\\n\";\n```\n</details> |
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+---
 
-{{< tab tabNum="1" >}}
+## İlgili Bağlantılar
+- **OpenAPI Spesifikasyonu**: <https://apireference.aspose.cloud/cells/#/Properties/PutDocumentProperty> (yeni sekmede açılır, `rel="noopener noreferrer"`).  
+- **Kimlik Doğrulama Kılavuzu**: <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/> (yeni sekmede açılır, `rel="noopener noreferrer"`).  
+- **Aspose.Cells Cloud SDK’ları**: <https://github.com/aspose-cells-cloud> (yeni sekmede açılır, `rel="noopener noreferrer"`).
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePutDocumentProperty.cs" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PutDocumentProperty.java" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PutDocumentProperty.php" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PutDocumentProperty.rb" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutDocumentProperty.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PutDocumentProperty.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PutDocumentProperty.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PutDocumentProperty.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+---
+---

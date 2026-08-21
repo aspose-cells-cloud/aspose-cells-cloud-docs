@@ -1,147 +1,154 @@
-﻿---
-title: العمل مع SaveResult Tas
-second_title: Documen
-type: docs
-url: /ar/tasks/save-result/
-aliases: [/working-with-saveresult-task/]
-keywords: REST API, task, save result, spreadsheets, exce
-description: "Cells.Cloud API لتشغيل Excel: تدعم المهام حفظ النتيجة في محتوى الاستجابة أو التخزين السحابي"
-weight: 50
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، العمل مع مهمة SaveResult
 ---
-## الباقي API
+title: "العمل مع مهمة SaveResult"
+second_title: "مستند"
+type: docs
+url: /tasks/save-result/
+aliases: [/working-with-saveresult-task/]
+keywords: "مهمة SaveResult، واجهة برمجة تطبيقات Aspose.Cells Cloud، تصدير النتيجة، تنزيل ملف الحساب، التخزين السحابي، واجهة REST API، الجداول الحسابية، إكسل"
+description: "تعرّف على كيفية استخدام مهمة SaveResult في واجهة برمجة تطبيقات Aspose.Cells Cloud لتصدير بيانات ملف الحساب المعالَجة إلى التخزين السحابي أو تنزيلها مباشرةً. يشمل أمثلة cURL وJava و.NET، ومرجعًا كاملاً للمعاملات."
+weight: 50
+---
 
-|**API**|**يكتب**|**وصف**|**رابط المورد**|
-|:- |:- |:- |:- |
-|/الخلايا/المهمة/تشغيل المهمة|بريد|تشغيل المهمة|[مهمة ما بعد التشغيل](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+## واجهة برمجة التطبيقات REST
 
+| **الواجهة** | **النوع** | **الوصف** | **رابط المورد** |
+| :- | :- | :- | :- |
+| /cells/task/runtask | POST | تشغيل المهمة | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+يُعرّف [مواصفة OpenAPI](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) واجهة برمجة تطبيقات متاحة علنًا، ويتيح لك إجراء تفاعلات REST مباشرة من خلال متصفح ويب.
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول إلى خدمات الويب الخاصة بـ Aspose.Cells بسهولة. يُظهر المثال التالي كيفية استدعاء واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/xml" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -d "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<TaskData>
+  <Tasks>
+    <TaskDescription>
+      <TaskType>ImportData</TaskType>
+      <ImportDataTaskParameter>
+        <Workbook>
+          <FileSourceType>CloudFileSystem</FileSourceType>
+          <FilePath>TaskBook.xlsx</FilePath>
+        </Workbook>
+        <ImportBatchDataOption>
+          <DestinationWorksheet>Sheet1</DestinationWorksheet>
+          <IsInsert>true</IsInsert>
+          <Source>
+            <FileSourceType>RequestFiles</FileSourceType>
+            <FilePath>Batch_data_xml.txt</FilePath>
+          </Source>
+        </ImportBatchDataOption>
+      </ImportDataTaskParameter>
+    </TaskDescription>
 
-curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" -H "accept: application/json" -H "Content-Type: application/json" -H "x-aspose-client: Containerize.Swagger" -d "{ <Tasks>\t<TaskDescription>\t <TaskType>ImportData</TaskType>\t <ImportDataTaskParameter>\t\t<Workbook>\t\t <FileSourceType>CloudFileSystem</FileSourceType>\t\t <FilePath>TaskBook.xlsx</FilePath>\t\t</Workbook>\t\t<ImportBatchDataOption>\t\t <DestinationWorksheet>Sheet1</DestinationWorksheet>\t\t <IsInsert>true</IsInsert>\t\t <Source>\t\t\t<FileSourceType>RequestFiles</FileSourceType>\t\t\t<FilePath>Batch_data_xml.txt</FilePath>\t\t </Source>\t\t</ImportBatchDataOption>\t </ImportDataTaskParameter>\t</TaskDescription>\t<TaskDescription>\t <TaskType>ImportData</TaskType>\t <ImportDataTaskParameter>\t\t<Workbook>\t\t <FileSourceType>InMemoryFiles</FileSourceType>\t\t <FilePath>TaskBook.xlsx</FilePath>\t\t</Workbook>\t\t<ImportBatchDataOption>\t\t <DestinationWorksheet>Sheet2</DestinationWorksheet>\t\t <IsInsert>true</IsInsert>\t\t <Source>\t\t\t<FileSourceType>RequestFiles</FileSourceType>\t\t\t<FilePath>Batch_data_xml_2.txt</FilePath>\t\t </Source>\t\t</ImportBatchDataOption>\t </ImportDataTaskParameter>\t</TaskDescription>\t<TaskDescription>\t <TaskType>SaveResult</TaskType>\t <SaveResultTaskParameter>\t\t<ResultSource>InMemoryFiles</ResultSource>\t\t<ResultDestination>\t\t <DestinationType>CloudFileSystem</DestinationType>\t\t <InputFile>TaskBook.xlsx</InputFile>\t\t <OutputFile>ImpDataBook.xlsx</OutputFile>\t\t</ResultDestination>\t </SaveResultTaskParameter>\t</TaskDescription> </Tasks></TaskData>}"
+    <TaskDescription>
+      <TaskType>ImportData</TaskType>
+      <ImportDataTaskParameter>
+        <Workbook>
+          <FileSourceType>InMemoryFiles</FileSourceType>
+          <FilePath>TaskBook.xlsx</FilePath>
+        </Workbook>
+        <ImportBatchDataOption>
+          <DestinationWorksheet>Sheet2</DestinationWorksheet>
+          <IsInsert>true</IsInsert>
+          <Source>
+            <FileSourceType>RequestFiles</FileSourceType>
+            <FilePath>Batch_data_xml_2.txt</FilePath>
+          </Source>
+        </ImportBatchDataOption>
+      </ImportDataTaskParameter>
+    </TaskDescription>
 
+    <TaskDescription>
+      <TaskType>SaveResult</TaskType>
+      <SaveResultTaskParameter>
+        <ResultSource>InMemoryFiles</ResultSource>
+        <ResultDestination>
+          <DestinationType>CloudFileSystem</DestinationType>
+          <InputFile>TaskBook.xlsx</InputFile>
+          <OutputFile>ImpDataBook.xlsx</OutputFile>
+        </ResultDestination>
+      </SaveResultTaskParameter>
+    </TaskDescription>
+  </Tasks>
+</TaskData>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
-HttpResponseMessage with the operation result.
-
+```text
+HttpResponseMessage تحتوي على نتيجة العملية.
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. فالمكتبة (SDK) تعتني بالتفاصيل منخفضة المستوى وتجعلك تركّز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الرمز التالية كيفية إجراء مكالمات إلى خدمات الويب الخاصة بـ Aspose.Cells باستخدام مكتبات (SDKs) مختلفة:
 
 {{< tabs tabTotal="1" tabID="4" tabName1="Java" >}}
 
 {{< tab tabNum="1" >}}
 ```java
-
 var xml = @"
-
 <TaskData>
-
   <Tasks>
-
     <TaskDescription>
-
       <TaskType>Convert</TaskType>
-
       <ConvertTaskParameter>
-
         <Workbook>
-
           <FileSourceType>CloudFileSystem</FileSourceType>
-
           <FilePath>Source.xlsx</FilePath>
-
         </Workbook>
-
         <DestinationFile>Temp.tiff</DestinationFile>
-
         <ImageSaveOptions>
-
           <HorizontalResolution>200</HorizontalResolution>
-
           <OnePagePerSheet>true</OnePagePerSheet>
-
           <VerticalResolution>100</VerticalResolution>
-
         </ImageSaveOptions>
-
       </ConvertTaskParameter>
-
     </TaskDescription>
 
     <TaskDescription>
-
       <TaskType>SaveResult</TaskType>
-
       <SaveResultTaskParameter>
-
         <ResultSource>InMemoryFiles</ResultSource>
-
         <ResultDestination>
-
           <DestinationType>OutputStream</DestinationType>
-
           <InputFile>Temp.tiff</InputFile>
-
           <OutputFile>Output.tiff</OutputFile>
-
         </ResultDestination>
-
       </SaveResultTaskParameter>
-
     </TaskDescription>
-
   </Tasks>
-
 </TaskData>
-
 ";
 
 ServiceHelper helper = new ServiceHelper(sid, key);
-
 using (HttpWebResponse response = helper.CallPost("http://api.aspose.com/v3.0/cells/task/runtask", xml, "application/xml"))
-
 {
-
     if (response.StatusCode == HttpStatusCode.OK)
-
     {
-
         System.Console.WriteLine("OK");
-
         Stream st = response.GetResponseStream();
-
         FileStream fs = new FileStream("Output.tiff", FileMode.OpenOrCreate);
-
         st.CopyTo(fs);
-
     }
-
 }
-
-
 ```
 {{< /tab >}}
 
 {{< /tabs >}}
+---

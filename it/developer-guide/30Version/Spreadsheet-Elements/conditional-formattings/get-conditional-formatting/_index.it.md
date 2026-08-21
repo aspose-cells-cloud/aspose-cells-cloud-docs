@@ -1,56 +1,61 @@
-﻿---
-title: Ottieni formattazione condizionale
+---
+title: "Ottieni Formattazione Condizionale"
 type: docs
 url: /it/conditional-formattings/get/
-aliases: [/get-conditional-formatting/]
-keywords: REST API, spreadsheets, excel, get condition formattin
-description: "Cells.Cloud API per Excel opera: ottieni la formattazione della condizione"
+aliases: [/it/get-conditional-formatting/]
+keywords: "Aspose.Cells Cloud, REST API, Formattazione Condizionale, Excel, Foglio di Lavoro"
+description: "Recupera le regole di formattazione condizionale da un foglio di lavoro utilizzando l'API REST di Aspose.Cells Cloud."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni formattazione condizionale
 ---
-Questo REST API indica Ottieni formattazione condizionale
- 
-## RSET API
- 
+
+Questa REST API recupera le regole di formattazione condizionale da un foglio di lavoro.
+
+## REST API
+
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
- 
 ```
- I parametri della richiesta sono:
- 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero||
-| Nome foglio| corda| sentiero||
-| indice| intero| sentiero||
-| cartella| corda| domanda||
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
- 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormatting) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
- 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
- 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+### Parametri della Richiesta
+
+| Nome Parametro | Tipo    | Posizione | Descrizione                                             |
+| -------------- | ------- | --------- | ------------------------------------------------------- |
+| name           | string  | path      | Nome del file del foglio di calcolo.                   |
+| sheetName      | string  | path      | Nome del foglio di lavoro che contiene la formattazione. |
+| index          | integer | path      | Indice a base zero della regola di formattazione condizionale. |
+| folder         | string  | query     | Percorso della cartella in cui è memorizzato il foglio di calcolo. |
+| storageName    | string  | query     | Nome del servizio di archiviazione.                     |
+
+### Risposte di Errore
+
+| Codice HTTP | Motivo                                                         | Esempio Corpo Risposta                                              |
+| ----------- | -------------------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**     | Richiesta Non Validata – parametri mancanti o non validi.     | `{ "Code":"400", "Message":"Valore del parametro non valido." }`   |
+| **401**     | Non Autorizzato – token JWT mancante o non valido.            | `{ "Code":"401", "Message":"Token di accesso mancante o non valido." }` |
+| **404**     | Non Trovato – il foglio di calcolo o il foglio di lavoro non esiste. | `{ "Code":"404", "Message":"File non trovato." }`                  |
+| **500**     | Errore Interno del Server – errore imprevisto nel server.     | `{ "Code":"500", "Message":"Si è verificato un errore imprevisto." }` |
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormatting) definiscono un'interfaccia di programmazione pubblicamente accessibile e consentono di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare una chiamata all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
   "Status": "string",
   "ConditionalFormatting": {
@@ -274,17 +279,16 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 {{< /tab >}}
 
 {{< /tabs >}}
-## Famiglia Cloud SDK
- 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
- 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+
+## Famiglia di SDK Cloud
+
+Utilizzare un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-GetConditionalFormatting-1.cs" >}}
 
@@ -298,8 +302,6 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 
 {{< tab tabNum="3" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
@@ -310,41 +312,29 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 
 {{< tab tabNum="5" >}}
 
-
-
 {{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-GetConditionalFormatting-1.js" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-
-
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-GetConditionalFormatting-1.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "d1809f85075aaa2f4d954930e916d115" >}}
 

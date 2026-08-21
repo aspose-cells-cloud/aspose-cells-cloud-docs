@@ -1,81 +1,110 @@
-﻿---
-title: Obtenga la primera celda de la hoja de trabajo Excel
-type: docs
-url: /es/get-first-cell-from-excel-worksheet/
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Obtener la primera celda de la hoja de trabajo Excel
 ---
-Este REST API indica que se obtiene un `firstcell` en un archivo Excel cuando el parámetro `cellOrMethodName` es `firstcell`.
+title: "Obtener la primera celda (A1) de una hoja de cálculo de Excel"
+type: docs
+url: /get-first-cell-from-excel-worksheet/
+weight: 20
+keywords: "Aspose.Cells Cloud, Excel, REST API, Obtener primera celda, Hoja de cálculo, A1, API v3"
+description: "Aprenda cómo recuperar la primera celda (A1) de una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud v3.0. Incluye solicitud cURL, respuesta JSON, ejemplos de error y muestras de SDK para C#, Java, PHP, Python y más."
+ArticleTitle: "Obtener la primera celda (A1) de una hoja de cálculo de Excel mediante la API de Aspose.Cells Cloud"
+---
 
-- **cURL Ejemplo**
+Esta API REST muestra cómo recuperar la **primera celda** en un archivo de Excel cuando el parámetro `cellOrMethodName` se establece en `firstcell`.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Punto de conexión**  
+`GET https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{worksheet}/cells/firstcell`
+
+- **Ejemplo con cURL**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```shell
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+**Parámetros**
+
+| Parámetro          | Tipo   | Descripción                                                | Obligatorio |
+|--------------------|--------|------------------------------------------------------------|-------------|
+| `cellOrMethodName` | string | Debe establecerse en `firstcell` para recuperar la primera celda. | Sí          |
+| `fileName`         | string | Nombre del archivo del libro (por ejemplo, `myWorkbook.xlsx`). | Sí          |
+| `worksheet`        | string | Nombre de la hoja de cálculo (por ejemplo, `Sheet1`).     | Sí          |
+| `Authorization`    | header | Token Bearer para la autenticación.                        | Sí          |
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "A1",
-
     "Row": 0,
-
     "Column": 0,
-
     "Value": "Category",
-
     "Type": "IsString",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
     "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Category</Font>",
-
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
+
+**Respuestas de error**
+
+- **401 No autorizado**
+
+```json
+{
+  "Code": "401",
+  "Message": "Token de acceso inválido."
+}
+```
+
+- **404 No encontrado**
+
+```json
+{
+  "Code": "404",
+  "Message": "El libro, la hoja de cálculo o la celda especificados no existen."
+}
+```
+
+- **500 Error interno del servidor**
+
+```json
+{
+  "Code": "500",
+  "Message": "Se produjo un error inesperado en el servidor."
+}
+```
+
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                                |
+|--------|-----------------------------|------------------------------------------------------------|
+| 200    | OK                          | Filtro aplicado correctamente; la respuesta contiene los detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros faltantes o inválidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT inválido o ausente.                              |
+| 413    | Carga demasiado grande       | El archivo cargado supera el límite de tamaño.            |
+| 500    | Error interno del servidor  | Error inesperado en el servidor.                           |
 
 {{< /tab >}}
 
@@ -83,15 +112,9 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 - **Familia de SDK en la nube**
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor manera de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel para que usted pueda centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
-
-- **Familia de SDK en la nube**
-
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
-
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,82 +1,97 @@
-﻿---
-title: Heben Sie den Schutz eines Excel-Arbeitsbuchs auf
-second_title: Documen
-linktitle: Unprotect Excel fil
-type: docs
-url: /de/excel-file-unprotect/
-aliases: [/unprotect-excel-workbooks/, /workbook/unprotect/]
-keywords: REST API, spreadsheets, excel, merg
-description: "Cells.Cloud API für Excel betreiben: Schützen Sie eine Excel Arbeitsmappe"
-weight: 60
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Schutz einer Excel Arbeitsmappe aufheben
 ---
-Dieser REST API hebt den Schutz eines Excel `workbook` auf.
+title: "Excel-Arbeitsmappe entsperren – Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Excel-Datei entsperren"
+type: docs
+url: /excel-file-unprotect/
+aliases:
+  - /unprotect-excel-workbooks/
+  - /workbook/unprotect/
+keywords: "Aspose Cells, Excel-Entsperr-API, Arbeitsmapppenschutz entfernen, REST-API, Cloud-Tabellenkalkulation"
+description: "Erfahren Sie, wie Sie den Schutz einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API entfernen. Enthält Anforderungssyntax, Parameter, cURL-Beispiel und SDK-Code in mehreren Sprachen."
+weight: 60
+ArticleTitle: "Excel-Arbeitsmappe entsperren – Aspose.Cells Cloud API"
+---
 
-**Abfrageparameter**
+Verwenden Sie diese REST API, um den Schutz einer Excel-Arbeitsmappe zu entfernen.
 
-|Parametername|Typ|Beschreibung|
-|:- |:- |:- |
-|Ordner|Schnur|Original-Arbeitsmappenordner.|
-|Speichername|Schnur|Speichername.|
+## DeleteUnProtectWorkbook API
 
-**Anforderungstextparameter**
-
-|Parametername|Typ|Beschreibung|
-|:- |:- |:- |
-|Schutz|Arbeitsmappenschutzanforderung||
-
-**Arbeitsmappenschutzanforderung**
-
-|Parametername|Typ|Beschreibung|
-|:- |:- |:- |
-|Schutztyp|Schnur|ALLE/INHALTE/KEINE/OBJEKTE/SZENARIEN/STRUKTUR/FENSTER|
-|Passwort|Schnur||
-
-## REST API
-
-|**API**|**Typ**|**Beschreibung**|**Swagger-Link**|
-|:- |:- |:- |:- |
-|/Zellen/{Name}/Schutz|LÖSCHEN|Aufheben des Dokumentschutzes|[LöschenSchutz der Arbeitsmappe aufheben](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectWorkbook)|
-
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectWorkbook) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
-
- Sie können**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection" -H "accept: application/json"  -H "Content-Type: application/json" -d "{ \"ProtectionType\": \"all\", \"Password\": \"aspose\"}"
-
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/protection
 ```
 
-{{< /tab >}}
+### **Sicherheit und Authentifizierung**
 
-{{< tab tabNum="2" >}}
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
-```java
+### Pfadparameter
 
+| Parameter | Typ    | Beschreibung                                               | Erforderlich |
+| --------- | ------ | ---------------------------------------------------------- | ------------ |
+| **name**  | string | Name der Arbeitsmappe (einschließlich Dateierweiterung). | Ja           |
+
+### Abfrageparameter
+
+| Parametername | Typ    | Beschreibung                                           |
+| ------------- | ------ | ------------------------------------------------------ |
+| folder        | string | Pfad zum Ordner, der die ursprüngliche Arbeitsmappe enthält. |
+| storageName   | string | Name des Speicherdienstes, in dem sich die Arbeitsmappe befindet. |
+
+### Anforderungstextparameter
+
+| Parametername | Typ                     | Beschreibung                                          |
+| ------------- | ----------------------- | ----------------------------------------------------- |
+| protection    | WorkbookProtectionRequest | Objekt, das die zu entfernenden Schutzeinstellungen angibt. |
+
+#### WorkbookProtectionRequest
+
+| Parametername   | Typ    | Beschreibung                                                                                                    |
+| --------------- | ------ | --------------------------------------------------------------------------------------------------------------- |
+| ProtectionType  | string | Typ des zu entfernenden Schutzes (`ALL`, `CONTENTS`, `NONE`, `OBJECTS`, `SCENARIOS`, `STRUCTURE`, `WINDOWS`). |
+| Password        | string | Passwort zum Entfernen des Schutzes (optional).                                                                |
+
+#### cURL-Beispiel
+
+```bash
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=MyFolder&storageName=MyStorage" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -d '{ "ProtectionType": "ALL", "Password": "aspose"}'
+```
+
+#### Antwort (Erfolg)
+
+```json
 {
-
-  "Code":"200",
-
-  "Status":"OK"
-
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
-{{< /tab >}}
+### HTTPS-Statusfehlerantworten
 
-{{< /tabs >}}
+| HTTP-Status | Code                | Beschreibung                                              |
+| ----------- | ------------------- | --------------------------------------------------------- |
+| 400         | BadRequest          | Fehlende oder ungültige Parameter.                        |
+| 401         | Unauthorized        | Ungültiges oder fehlendes Zugriffstoken.                  |
+| 404         | NotFound            | Angegebene Arbeitsmappe im angegebenen Ordner/Speicher nicht gefunden. |
+| 500         | InternalServerError | Unerwarteter Serverfehler.                                |
 
-## Cloud SDK-Familie
+## Verwenden der DeleteUnProtectWorkbook API mit SDKs
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+### DeleteUnProtectWorkbook API-Spezifikation
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Protection/DeleteUnProtectWorkbook) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
+
+Sie können das cURL-Befehlszeilentool verwenden, um Aspose.Cells-Webservices einfach aufzurufen. Das folgende Beispiel zeigt, wie mit cURL Aufrufe an die Cloud-API durchgeführt werden.
+
+### Verwenden der Aspose.Cells Cloud SDKs
+
+Die Verwendung eines SDK vereinfacht die Integration und reduziert den Boilerplate-Code. Besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
+
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webservices mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

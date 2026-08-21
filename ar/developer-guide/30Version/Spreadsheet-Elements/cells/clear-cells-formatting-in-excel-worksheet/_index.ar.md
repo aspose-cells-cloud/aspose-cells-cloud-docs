@@ -1,73 +1,96 @@
-﻿---
-title: مسح التنسيق Cells في ورقة العمل Excel
-type: docs
-url: /ar/clear-cells-formatting-in-excel-worksheet/
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، مسح Cells التنسيق في ورقة العمل Excel
 ---
-يشير هذا REST API إلى `clear` الخلايا `style` في الملف Excel.
+title: "مسح تنسيق الخلايا في ورقة عمل Excel"
+type: docs
+url: /clear-cells-formatting-in-excel-worksheet/
+weight: 100
+keywords: "Aspose.Cells Cloud، Excel، مسح تنسيق الخلايا، REST API، C#، Java، PHP، Ruby، Node.js، Python، Perl، Go"
+description: "استخدم واجهة Aspose.Cells Cloud REST API لمسح تنسيق الخلايا في ورقة عمل Excel. يتضمن تفاصيل الطلب، مثالًا باستخدام cURL، ومقتطفات من كود SDK بلغات برمجة متعددة."
+ArticleTitle: "مسح تنسيق الخلايا في ورقة عمل Excel - واجهة Aspose.Cells Cloud API"
+---
 
-## RSET API
+**ملاحظة:** يجب أن تتم جميع مكالمات واجهة Aspose.Cells Cloud API عبر **HTTPS**. عناوين URL الخاصة ببروتوكول HTTP غير موصى بها وقد تُحظر من قبل المتصفحات.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
- 
+- **الطريقة:** POST  
+- **النقطة الطرفية (Endpoint):** `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats`
+
+تقوم هذه الواجهة البرمجية REST بمسح تنسيق الخلايا في ملف Excel، وهي جزء من مجموعة Aspose.Cells Cloud لمسح تنسيق الخلايا في أوراق عمل Excel.
+
+## واجهة PostClearFormats API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| يتراوح| خيط| استفسار| المدى.|
-| صف البداية| عدد صحيح| استفسار| صف البداية.|
-| عمود البداية| عدد صحيح| استفسار| عمود البداية.|
-| صف النهاية| عدد صحيح| استفسار| الصف الأخير.|
-| عمود النهاية| عدد صحيح| استفسار| العمود النهائي.|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعد واجهات Aspose.Cells Cloud API آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostClearFormats) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **الاستجابة**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**مخطط الاستجابة**
+
+| الحقل | النوع | الوصف |
+|--------|---------|-----------------------------------------------|
+| Code | عدد صحيح | رمز حالة HTTP الذي تعيده الواجهة (مثل 200). |
+| Status | نص | نتيجة العملية (`OK` للنجاح). |
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى | الوصف |
+|------|-----------------------------|--------------------------------------------------|
+| 200 | OK | تمت تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | طلب غير صالح | معاملات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم). |
+| 401 | غير مصدق | رمز JWT غير صحيح أو مفقود. |
+| 413 | حجم الحمولة كبير جدًا | حجم الملف المرفوع يتجاوز الحد المسموح به. |
+| 500 | خطأ داخلي في الخادم | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام واجهة PostClearFormats API مع مكتبات SDK
+
+### مواصفات واجهة PostClearFormats API
+
+<a href="https://apireference.aspose.cloud/cells/#/Cells/PostClearFormats" rel="noopener noreferrer">مواصفات OpenAPI</a> تُعرّف واجهة برمجة تطبيقات متاحة للعامة وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة cURL سطر الأوامر للوصول إلى خدمات Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إجراء مكالمة إلى واجهة Cloud API باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/clearformats?range=a1%3Aa10&startRow=1&startColumn=1&endRow=10&endColumn=10" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام مكتبات SDK الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام مكتبة SDK هو أسرع طريقة للتطوير. فتقوم المكتبة بمعالجة التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام مكتبات SDK المختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +143,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/c
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**انظر أيضًا**
+
+- [مسح محتويات الخلايا وأنماطها](https://docs.aspose.cloud/cells/clear-contents-and-styles)  
+- [ضبط نمط الخلية](https://docs.aspose.cloud/cells/set-cell-style)
+---

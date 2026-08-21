@@ -1,75 +1,91 @@
-﻿---
-title: Ocultar filas en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Oculto
-type: docs
-url: /es/rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
-keywords: Hide rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API permite ocultar filas en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 40
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Ocultar filas en una hoja de cálculo Excel
 ---
-Este REST API indica ocultar filas en una hoja de cálculo Excel.
+title: "Ocultar filas en una hoja de cálculo de Excel"
+second_title: "Document"
+linktype: "Ocultar"
+type: docs
+url: /rows/hide/
+aliases: [/hide-rows-in-excel-worksheet/]
+keywords: "ocultar filas, Aspose.Cells Cloud, API de Excel, REST, SDK"
+description: "Aprenda a ocultar una o varias filas en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye ejemplo con cURL, fragmentos de código de SDK, parámetros, autenticación, detalles de respuesta y manejo de errores."
+weight: 40
+ArticleTitle: "Ocultar filas en una hoja de cálculo de Excel mediante la API de Aspose.Cells Cloud"
+---
 
-## RSET API
+Esta API REST oculta filas en una hoja de cálculo de Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
- 
+**Requisitos previos:** Un token JWT Bearer válido obtenido del endpoint OAuth de Aspose Cloud, el libro almacenado en el almacenamiento de Aspose Cloud y el nombre de la hoja de cálculo que contiene las filas que se van a ocultar. La API funciona con archivos de Excel en formatos XLS, XLSX y otros compatibles.
+
+## API PostHideWorksheetRows
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
 ```
 
-Los parámetros de la solicitud son:
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| El nombre del libro de trabajo.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| fila de salida| entero| consulta| El índice de la fila inicial que se va a operar.|
-| totalFilas| entero| consulta| Número de filas a operar.|
-| carpeta| cadena| consulta| La carpeta de documentos.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+### Parámetros de solicitud
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+| Parámetro       | Tipo    | Ubicación | Descripción                                                                 |
+|-----------------|---------|-----------|-----------------------------------------------------------------------------|
+| **name**        | string  | path      | Nombre del archivo del libro.                                               |
+| **sheetName**   | string  | path      | Nombre de la hoja de cálculo que contiene las filas que se van a ocultar.   |
+| **startrow**    | integer | query     | Índice de base cero de la primera fila que se va a ocultar.                 |
+| **totalRows**   | integer | query     | Número de filas consecutivas que se van a ocultar, comenzando desde **startrow**. |
+| **folder**      | string  | query     | Carpeta en el almacenamiento donde se encuentra el libro.                   |
+| **storageName** | string  | query     | Nombre del servicio de almacenamiento.                                      |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [Especificación de OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) proporciona una interfaz de programación públicamente accesible que permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos **cURL** para llamar a los servicios web de Aspose.Cells. La API requiere un token JWT Bearer obtenido del endpoint OAuth de Aspose Cloud; inclúyalo en la cabecera `Authorization`. El ejemplo siguiente demuestra cómo ocultar una fila mediante cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/hide?startrow=1&totalRows=1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Códigos de estado de respuesta**
+
+| Código | Descripción                              |
+|--------|------------------------------------------|
+| 200    | Éxito – filas ocultas                    |
+| 400    | Solicitud incorrecta – parámetros no válidos |
+| 401    | No autorizado – token JWT faltante o inválido |
+| 404    | No encontrado – el libro o la hoja de cálculo no existen |
+| 500    | Error del servidor – fallo interno de procesamiento |
+
+Una llamada exitosa devuelve un objeto JSON que contiene los campos `Code` y `Status`. En caso de error, la respuesta incluye campos adicionales como `Message` y los códigos de estado HTTP apropiados (por ejemplo, 400, 401, 404, 500).
+
+**Notas:** Asegúrese de que el valor de `startrow` esté dentro del rango de filas de la hoja de cálculo; de lo contrario, la API devolverá un error 400. Los índices de fila son de base cero, por lo que `startrow=0` se refiere a la primera fila.
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de integrar esta funcionalidad en su aplicación. Los SDK manejan los detalles de bajo nivel, para que pueda centrarse en la lógica de negocio. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo ocultar filas mediante varios SDK. (Los nombres de los archivos de ejemplo hacen referencia a “Unhide” debido a una nomenclatura heredada; el código incluido en cada fragmento realiza la operación **Ocultar**).
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

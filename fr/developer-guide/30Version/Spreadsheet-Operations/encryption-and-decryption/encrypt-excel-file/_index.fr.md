@@ -1,83 +1,129 @@
-﻿---
-title: Crypter un classeur Excel
-second_title: Documen
-linktitle: Crypter un fichier Excel
-type: docs
-url: /fr/excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/,/workbook/encrypt/]
-keywords: Encrypt Excel workbook
-description: Aspose.Cells Cloud REST API prend en charge le chiffrement du classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Crypter un classeur Excel
 ---
-Ce REST API crypte un Excel `workbook`.
+title: "Chiffrer un classeur Excel à l’aide de l’API Aspose.Cells Cloud – Exemples rapides cURL et SDK"
+second_title: "Document"
+linktitle: "Chiffrer un fichier Excel"
+type: docs
+url: /excel-file-encrypt/
+aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+keywords: "Aspose Cells chiffrer classeur, API de chiffrement Excel, API REST, cURL, .NET, Java, Python, PHP, Ruby, Node.js, Go, Perl"
+description: "Découvrez comment chiffrer un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut la commande cURL, des exemples de code SDK (C#, Java, Python, …), les paramètres requis et la gestion des erreurs."
+weight: 20
+ArticleTitle: "Chiffrer un classeur Excel avec l’API Aspose.Cells Cloud – Exemples cURL et SDK"
+---
 
-**Paramètre de requête**
+Cette API REST chiffre un **classeur** Excel.
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|dossier|chaîne|Classeur original.|
-|nom de stockage|chaîne|Nom de stockage.|
+**Prérequis :** Vous devez disposer d’un jeton JWT valide et avoir chargé le classeur dans un emplacement de stockage avant d’appeler ce point de terminaison.
 
-**Paramètre du corps de la requête**
+## API PostEncryptDocument
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|cryptage|Demande de chiffrement du classeur||
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/encryption
+```
 
-**Demande de chiffrement du classeur**
+### **Sécurité et authentification**
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|Type de cryptage|chaîne|XOR/Compatible/Fournisseur cryptographique amélioré V1/Fournisseur cryptographique fort|
-|Longueur de clé|entier||
-|Mot de passe|chaîne||
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
-## RESTE API
+### **Paramètres de requête**
 
-|**API**|**Taper**|**Description**|**Lien Swagger**|
-|:- |:- |:- |:- |
-|/cellules/{nom}/cryptage|POSTE|Crypter le document Excel|[PostEncryptDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument)|
+| Nom du paramètre | Type   | Obligatoire | Description                              |
+| ---------------- | ------ | ----------- | ---------------------------------------- |
+| folder           | string | ✗           | Chemin du dossier contenant le classeur original. |
+| storageName      | string | ✗           | Nom du stockage à utiliser.              |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### **Paramètre du corps de la requête**
 
- Vous pouvez utiliser**cURL** Outil en ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le cloud API avec cURL.
+| Nom du paramètre | Type                      | Obligatoire | Description                              |
+| ---------------- | ------------------------- | ----------- | ---------------------------------------- |
+| encryption       | WorkbookEncryptionRequest | ✓           | Paramètres de chiffrement pour le classeur. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+#### **WorkbookEncryptionRequest**
+
+| Nom du paramètre | Type    | Obligatoire | Description                                                                                      |
+| ---------------- | ------- | ----------- | ------------------------------------------------------------------------------------------------ |
+| EncryptionType   | string  | ✓           | Algorithme de chiffrement. Voir le tableau ci-dessous pour les valeurs prises en charge et leur signification. |
+| KeyLength        | integer | ✗           | Longueur de la clé de chiffrement en bits (ignorée pour `XOR` et `Compatible`).                 |
+| Password         | string  | ✓           | Mot de passe utilisé pour le chiffrement.                                                       |
+
+#### **Valeurs possibles pour EncryptionType**
+
+| Valeur                            | Description                                        |
+| --------------------------------- | -------------------------------------------------- |
+| `XOR`                             | Algorithme XOR simple (obsolète, sécurité faible). |
+| `Compatible`                      | Chiffrement compatible Excel 97‑2003 (40 bits).    |
+| `EnhancedCryptographicProviderV1` | AES‑128 avec hachage SHA‑1.                        |
+| `StrongCryptographicProvider`     | AES‑256 avec hachage SHA‑512 (le plus sécurisé).   |
+
+### Réponse
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Codes de statut HTTP**
+
+| Code | Signification              | Description                                                                  |
+|------|----------------------------|------------------------------------------------------------------------------|
+| 200  | OK                         | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte         | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé               | Jeton JWT invalide ou manquant.                                              |
+| 413  | Charge utile trop volumineuse | Le fichier chargé dépasse la taille maximale autorisée.                   |
+| 500  | Erreur interne du serveur  | Erreur serveur inattendue.                                                   |
+
+## Comment utiliser l’API PostEncryptDocument avec les SDK
+
+### Spécification de l’API PostEncryptDocument
+
+La <a href="https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument" rel="noopener noreferrer">Spécification OpenAPI</a> définit une interface de programmation publiquement accessible et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande **cURL** pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer un appel à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"EncryptionType\": \"XOR\", \"KeyLength\": 128, \"Password\": \"mateen\"}"
-
+```bash
+# Chiffre le classeur "test.xlsx" à l’aide de l’algorithme XOR (clé 128‑bits) et du mot de passe "mateen".
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -d '{ "EncryptionType": "XOR", "KeyLength": 128, "Password": "mateen"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
-    "Code":"200",
-
-    "Status":"OK"
-
+  "Code": "200",
+  "Status": "OK"
 }
-
 ```
+
+**Réponses d’erreur possibles**
+
+| Statut HTTP | Code                | Message                                             |
+| ----------- | ------------------- | --------------------------------------------------- |
+| 400         | BadRequest          | Paramètres manquants ou non valides.                |
+| 401         | Unauthorized        | Le jeton d’authentification est absent ou non valide. |
+| 403         | Forbidden           | Permissions insuffisantes pour accéder au stockage. |
+| 500         | InternalServerError | Erreur serveur inattendue.                          |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
+### Utiliser les SDK Aspose.Cells Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK constitue la méthode optimale pour accélérer le développement. Un SDK gère les détails de bas niveau, ce qui vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants illustrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -130,3 +176,4 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+---

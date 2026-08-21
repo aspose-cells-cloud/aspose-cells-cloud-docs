@@ -1,364 +1,415 @@
-﻿---
-title: Filer och lagring
-second_title: Documen
+---
+title: "Aspose.Cells Cloud API – Fil- och mapphantering (uppladdning, nedladdning, kopiering, flyttning)"
+second_title: "Dokument"
+ArticleTitle: "Molnfilhantering för Excel – En effektiv och säker lösning för lagring och intelligent organisering av Excel-filer"
+linktitle: "Filer och lagring"
 type: docs
 url: /sv/files-and-storage/
-aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
-keywords: Aspose Cells Cloud file storage, upload, download, delete, move, copy file
-description: Omfattande guide om hur man använder Aspose Cells Cloud för fillagring, inklusive uppladdning, nedladdning och hantering av filer. SDK-stöd för olika programmeringsspråk som Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+aliases: [/sv/working-with-files-and-storage-using-aspose-cells-cloud/]
+keywords: "Aspose.Cells Cloud, fillagrings-API, ladda upp Excel-fil, ladda ned Excel-fil, kopiera fil, flytta fil, ta bort fil, mapphantering, REST API, cURL-exempel"
+description: "Omfattande guide för hantering av Excel-filer och mappar i Aspose.Cells Cloud-lagring. Innehåller uppladdning, nedladdning, kopiering, flyttning, borttagning och mappåtgärder med cURL-exempel, nödvändiga parametrar och autentiseringsnoteringar."
 weight: 100
-kwords: Aspose Cells, Molnlagring, REST API, Filhantering, Excel, PDF, CSV, JSON, Markdow
 ---
- Aspose.Cells Cloud erbjuder omfattande hjälpfunktioner för att arbeta med filer som laddats upp till Aspose.Cells Cloud Storage eller annan molnlagring som du väljer. För hjälp med att konfigurera tredjepartslagring, vänligen se[Aspose Hjälpämnen för molngränssnitt](https://docs.aspose.cloud/display/totalcloud/Aspose+Cloud+UI+Help+Topics).
 
-**Aspose.Cells Cloud erbjuder en rad API:er för fil-, mapp- och lagringsdrift.**
+Aspose.Cells Cloud tillhandahåller en omfattande uppsättning hjälpfunktioner för arbete med filer lagrade i Aspose.Cells Cloud-lagring eller valfri tredjepartsmolnlagring enligt ditt val. För hjälp med konfiguration av tredjepartsmolnlagring, se [Aspose Cloud UI-hjälpämnen](https://docs.aspose.cloud/display/totalcloud/Aspose+Cloud+UI+Help+Topics).
+
+**Aspose.Cells Cloud erbjuder ett utbud av API:er för fil-, mapp- och lagringsåtgärder.**
+
+> **Obs:** Alla API-anrop måste använda **HTTPS**. Se [Autentiseringsguide](/sv/cells/authentication/) för detaljer om hur du hämtar en JWT-token.
+
+**Förutsättningar:** För att använda dessa API:er behöver du ett giltigt Aspose Cloud-konto, en JWT-åtkomsttoken samt en konfigurerad lagringsplats (antingen Aspose Cloud-lagring eller en ansluten tredjepartsmolnlagring).
+
+**Senast uppdaterad:** 2024-12-01
 
 ## **Hur man laddar upp en fil**
 
-### Ladda upp fil API Information
+### Information om API för filuppladdning
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/file/{path}
+PUT https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 ```
 
-Begäranparametrarna är:
+Följande begärandeparametrar finns:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| väg| sträng| väg|Sökväg för att ladda upp filen inklusive filnamn och filändelse (t.ex. /file.ext eller /Folder 1/file.ext). Om innehållet är flerdelat och sökvägen inte innehåller filnamnet, försöker den hämta det från filename-parametern i Content-Disposition-rubriken.|
-| fil| Fil| formulärData| Fil att ladda upp|
-| lagringsnamn| sträng| fråga| Lagringsnamn|
+| Parameternamn   | Typ   | Plats  | Beskrivning |
+|----------------|-------|--------|-------------|
+| path           | string| path   | Sökväg för uppladdning av filen, inklusive filnamn och filtillägg (t.ex. `/mapp1/Rapport.xlsx`). |
+| file           | file  | formData | Filen som ska laddas upp. |
+| storageName    | string| query  | Namn på lagring som ska användas. |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/File/UploadFile) definierar ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från en webbläsare.
+**HTTP-svarskoder**
 
-### Exempel på uppladdningsfil
+| Kod | Beskrivning                              |
+|-----|------------------------------------------|
+| 200 | Filen har laddats upp.                   |
+| 400 | Felaktig begäran – saknade eller ogiltiga parametrar. |
+| 401 | Autentisering krävs – ogiltig eller saknad JWT-token. |
+| 404 | Lagringen hittades inte.                 |
+| 500 | Internt serverfel.                       |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till molnet API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/File/UploadFile) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### Exempel på filuppladdning
+
+Du kan använda cURL-kommandoradsverktyget för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du laddar upp en fil med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/Book1.xlsx" \
--X PUT \
--H "accept: application/json" \
--H "Content-Type: multipart/form-data" \
--H "Authorization: Bearer <jwt token>" \
--d {"File":{}}
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MinMapp/Rapport.xlsx" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>" \
+  -F "File=@Rapport.xlsx"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Uploaded": [
-    "string"
+    "MinMapp/Rapport.xlsx"
   ],
-  "Errors": [
-    {
-      "Code": "string",
-      "Message": "string",
-      "Description": "string",
-      "InnerError": {
-        "RequestId": "string",
-        "Date": "2021-12-02T03:21:11.704Z"
-      }
-    }
-  ]
-} 
+  "Errors": []
+}
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-## **Hur man laddar ner en fil**
+*Obs: Maximal filstorlek för uppladdning är 100 MB. Begränsningar kan gälla.*
 
-### Ladda ner fil API Information
+## **Hur man laddar ned en fil**
+
+### Information om API för filnedladdning
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/file/{path}
+GET https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 ```
 
-Begäranparametrarna är:
+Följande begärandeparametrar finns:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| väg| sträng| väg| Filsökväg (t.ex. '/mapp/fil.ext')|
-| lagringsnamn| sträng| fråga| Lagringsnamn|
-| versions-ID| sträng| fråga| Filversions-ID att ladda ner|
+| Parameternamn | Typ    | Plats  | Beskrivning |
+|--------------|--------|--------|-------------|
+| path         | string | path   | Sökväg till filen (t.ex. `/mapp/Rapport.xlsx`). |
+| storageName  | string | query  | Namn på lagring som ska användas. |
+| versionId    | string | query  | Identifierare för versionen av filen som ska laddas ned (valfritt). |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/File/DownloadFile) definierar ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från en webbläsare.
+**HTTP-svarskoder**
 
-### Ladda ner filexempel
+| Kod | Beskrivning                              |
+|-----|------------------------------------------|
+| 200 | Filen har laddats ner; binär ström returneras. |
+| 400 | Felaktig begäran – ogiltiga parametrar.  |
+| 401 | Autentisering krävs – saknad eller ogiltig JWT-token. |
+| 404 | Filen hittades inte.                     |
+| 500 | Internt serverfel.                       |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till molnet API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/File/DownloadFile) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="13" tabName13="Request" tabName14="Response" >}}
+### Exempel på filnedladdning
+
+{{< tabs tabTotal="2" tabID="13" tabName13="Begäran" tabName14="Svar" >}}
 {{< tab tabNum="13" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/Book1.xlsx" \
--X GET \
--H "Content-Type: application/json" \
--H "accept: multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MinMapp/Rapport.xlsx" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="14" >}}
 
-```bash
+```json
 {
-    Stream
+  "Stream": "<binär data>"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
+*Obs: Svaret innehåller filens binära ström. Spara utdata till en fil när du använder cURL (`-o filnamn.xlsx`).*
+
 ## **Hur man tar bort en fil**
 
-### Ta bort fil API Information
+### Information om API för filborttagning
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/storage/file/{path}
+DELETE https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 ```
 
-Begäranparametrarna är:
+Följande begärandeparametrar finns:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| väg| sträng| väg| Filsökväg (t.ex. '/mapp/fil.ext')|
-| lagringsnamn| sträng| fråga| Lagringsnamn|
-| versions-ID| sträng| fråga| Filversions-ID att radera|
+| Parameternamn | Typ    | Plats  | Beskrivning |
+|--------------|--------|--------|-------------|
+| path         | string | path   | Sökväg till filen (t.ex. `/mapp/Rapport.xlsx`). |
+| storageName  | string | query  | Namn på lagring som ska användas. |
+| versionId    | string | query  | Identifierare för versionen av filen som ska tas bort (valfritt). |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/File/DeleteFile) definierar ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från en webbläsare.
+**HTTP-svarskoder**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till molnet API med cURL.
+| Kod | Beskrivning                              |
+|-----|------------------------------------------|
+| 200 | Filen har tagits bort.                   |
+| 400 | Felaktig begäran – saknade eller ogiltiga parametrar. |
+| 401 | Autentisering krävs – ogiltig JWT-token. |
+| 404 | Filen hittades inte.                     |
+| 500 | Internt serverfel.                       |
 
-{{< tabs tabTotal="2" tabID="15" tabName15="Request" tabName16="Response" >}}
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/File/DeleteFile) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från en webbläsare.
+
+### Exempel på filborttagning
+
+{{< tabs tabTotal="2" tabID="15" tabName15="Begäran" tabName16="Svar" >}}
 {{< tab tabNum="15" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/book12.xlsx" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MinMapp/GammalRapport.xlsx" \
+  -X DELETE \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="16" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
+*Obs: Filborttagning är permanent; se till att ha en säkerhetskopia om det behövs.*
+
 ## **Hur man kopierar en fil**
 
-### Kopiera fil API Information
+### Information om API för filkopiering
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/file/copy/{srcPath}
+PUT https://api.aspose.cloud/v3.0/cells/storage/file/copy/{srcPath}
 ```
 
-Begäranparametrarna är:
+Följande begärandeparametrar finns:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| srcPath| sträng| väg| Sökväg till källfil (t.ex. '/mapp/fil.ext')|
-|destPath| sträng| fråga| Sökväg till målfilen|
-| srcLagringsnamn| sträng| fråga| Källlagringsnamn|
-| destStorageName| sträng| fråga| Namn på destinationslagring|
-| versions-ID| sträng| fråga| Filversions-ID att kopiera|
+| Parameternamn     | Typ    | Plats  | Beskrivning |
+|------------------|--------|--------|-------------|
+| srcPath          | string | path   | Källfilens sökväg (t.ex. `/mapp/Källfil.xlsx`). |
+| destPath         | string | query  | Målfilens sökväg (t.ex. `/mapp/Målfil.xlsx`). |
+| srcStorageName   | string | query  | Källlagringens namn (valfritt). |
+| destStorageName  | string | query  | Mållagringens namn (valfritt). |
+| versionId        | string | query  | Filversionens ID som ska kopieras (valfritt). |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/File/CopyFile) definierar ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från en webbläsare.
+**HTTP-svarskoder**
 
-### Exempel på kopieringsfil
+| Kod | Beskrivning                              |
+|-----|------------------------------------------|
+| 200 | Filen har kopierats.                     |
+| 400 | Felaktig begäran – ogiltiga parametrar.  |
+| 401 | Autentisering krävs – saknad eller ogiltig JWT-token. |
+| 404 | Källfilen hittades inte.                 |
+| 500 | Internt serverfel.                       |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till molnet API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/File/CopyFile) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="17" tabName17="Request" tabName18="Response" >}}
+### Exempel på filkopiering
 
+{{< tabs tabTotal="2" tabID="17" tabName17="Begäran" tabName18="Svar" >}}
 {{< tab tabNum="17" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/copy/Book1.xlsx?destPath=Book2.xlsx" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/copy/MinMapp/Rapport.xlsx?destPath=MinMapp/RapportKopia.xlsx" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="18" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
+*Obs: Kopieringsåtgärden tar inte bort källfilen.*
+
 ## **Hur man flyttar en fil**
 
-### Flytta fil API Information
+### Information om API för filflyttning
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/file/move/{srcPath}
+PUT https://api.aspose.cloud/v3.0/cells/storage/file/move/{srcPath}
 ```
 
-Begäranparametrarna är:
+Följande begärandeparametrar finns:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| srcPath| sträng| väg| Sökväg till källfil (t.ex. '/src.ext')|
-|destPath| sträng| fråga| Sökväg till målfil (t.ex. '/dest.ext')|
-| srcLagringsnamn| sträng| fråga| Källlagringsnamn|
-| destStorageName| sträng| fråga| Namn på destinationslagring|
-| versions-ID| sträng| fråga| Filversions-ID som ska flyttas|
+| Parameternamn     | Typ    | Plats  | Beskrivning |
+|------------------|--------|--------|-------------|
+| srcPath          | string | path   | Källfilens sökväg (t.ex. `/mapp/Källfil.xlsx`). |
+| destPath         | string | query  | Målfilens sökväg (t.ex. `/mapp/Målfil.xlsx`). |
+| srcStorageName   | string | query  | Källlagringens namn (valfritt). |
+| destStorageName  | string | query  | Mållagringens namn (valfritt). |
+| versionId        | string | query  | Filversionens ID som ska flyttas (valfritt). |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/File/MoveFile) definierar ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från en webbläsare.
+**HTTP-svarskoder**
 
-### Flytta fil exempel
+| Kod | Beskrivning                              |
+|-----|------------------------------------------|
+| 200 | Filen har flyttats.                      |
+| 400 | Felaktig begäran – ogiltiga parametrar.  |
+| 401 | Autentisering krävs – saknad eller ogiltig JWT-token. |
+| 404 | Källfilen hittades inte.                 |
+| 500 | Internt serverfel.                       |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till molnet API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/File/MoveFile) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### Exempel på filflyttning
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/move/Book2.xlsx?destPath=MoveBook2.xlsx" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/move/MinMapp/Rapport.xlsx?destPath=MinMapp/FlyttadRapport.xlsx" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
+*Obs: Vid flyttning bevaras filens versionshistorik.*
+
 ## **Hur man skapar en mapp**
 
-### Skapa mapp API Information
+### Information om API för mappskapande
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
+PUT https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 ```
 
-Begäranparametrarna är:
+Följande begärandeparametrar finns:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| väg| sträng| väg|Mappsökväg att skapa (t.ex. 'mapp_1/mapp_2/') |
-| lagringsnamn| sträng| fråga| Lagringsnamn|
+| Parameternamn | Typ    | Plats  | Beskrivning |
+|--------------|--------|--------|-------------|
+| path         | string | path   | Sökväg till mappen som ska skapas (t.ex. `mapp1/mapp2/`). |
+| storageName  | string | query  | Namn på lagring som ska användas. |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Folder/CreateFolder) definierar ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från en webbläsare.
+**HTTP-svarskoder**
 
-### Exempel på skapa mapp
+| Kod | Beskrivning                              |
+|-----|------------------------------------------|
+| 200 | Mappen har skapats.                      |
+| 400 | Felaktig begäran – ogiltig sökväg eller parametrar. |
+| 401 | Autentisering krävs – saknad eller ogiltig JWT-token. |
+| 500 | Internt serverfel.                       |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till molnet API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Folder/CreateFolder) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="3" tabName3="Request" tabName4="Response" >}}
+### Exempel på mappskapande
+
+{{< tabs tabTotal="2" tabID="3" tabName3="Begäran" tabName4="Svar" >}}
 {{< tab tabNum="3" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/newfolder" \
--X PUT \
--H "accept: application/json" \
--H "Content-Type: multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/nymapp" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="4" >}}
 
-```bash
+```json
 {
   "Uploaded": [
-    "string"
+    "nymapp"
   ],
-  "Errors": [
-    {
-      "Code": "string",
-      "Message": "string",
-      "Description": "string",
-      "InnerError": {
-        "RequestId": "string",
-        "Date": "2021-12-02T03:21:11.704Z"
-      }
-    }
-  ]
+  "Errors": []
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-## **Hur man får filer i en mapp**
+*Obs: Mappsökvägar är skiftlägeskänsliga.*
 
-### Hämta filer API Information
+## **Hur man hämtar filer i en mapp**
+
+### Information om API för filhämtning
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
+GET https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 ```
 
-Begäranparametrarna är:
+Följande begärandeparametrar finns:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| väg| sträng| väg| Mappsökväg (t.ex. '/mapp')|
-| lagringsnamn| sträng| fråga| Lagringsnamn|
+| Parameternamn | Typ    | Plats  | Beskrivning |
+|--------------|--------|--------|-------------|
+| path         | string | path   | Mappsökväg (t.ex. `/mapp`). |
+| storageName  | string | query  | Namn på lagring som ska användas. |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Folder/GetFilesList) definierar ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från en webbläsare.
+**HTTP-svarskoder**
 
-### Hämta filer exempel
+| Kod | Beskrivning                              |
+|-----|------------------------------------------|
+| 200 | Lista med filer och undermappar returneras. |
+| 400 | Felaktig begäran – ogiltig sökväg.       |
+| 401 | Autentisering krävs – saknad eller ogiltig JWT-token. |
+| 404 | Mappen hittades inte.                    |
+| 500 | Internt serverfel.                       |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till molnet API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Folder/GetFilesList) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="5" tabName5="Request" tabName6="Response" >}}
+### Exempel på filhämtning
+
+{{< tabs tabTotal="2" tabID="5" tabName5="Begäran" tabName6="Svar" >}}
 {{< tab tabNum="5" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
--X GET \
--H "Content-Type: application/json" \
--H "accept: multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/malMapp" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="6" >}}
 
-```bash
+```json
 {
   "Value": [
     {
-      "Name": "string",
-      "IsFolder": true,
+      "Name": "Rapport.xlsx",
+      "IsFolder": false,
       "ModifiedDate": "2021-12-08T12:38:45.739Z",
-      "Size": 0,
-      "Path": "string"
+      "Size": 102400,
+      "Path": "/malMapp/Rapport.xlsx"
     }
   ]
 }
@@ -367,182 +418,216 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
 {{< /tab >}}
 {{< /tabs >}}
 
+*Obs: Svaret innehåller både filer och undermappar i den angivna sökvägen.*
+
 ## **Hur man tar bort en mapp**
 
-### Ta bort mapp API Information
+### Information om API för mappborttagning
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
+DELETE https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 ```
 
-Begäranparametrarna är:
+Följande begärandeparametrar finns:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| väg| sträng| väg| Mappsökväg (t.ex. '/mapp')|
-| lagringsnamn| sträng| fråga| Lagringsnamn|
-| rekursiv| boolesk| fråga|Falsk|
+| Parameternamn | Typ     | Plats  | Beskrivning |
+|--------------|---------|--------|-------------|
+| path         | string  | path   | Mappsökväg (t.ex. `/mapp`). |
+| storageName  | string  | query  | Namn på lagring som ska användas. |
+| recursive    | boolean | query  | Sätt till `true` för att ta bort mappen rekursivt. |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Folder/DeleteFolder) definierar ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från en webbläsare.
+**HTTP-svarskoder**
 
-### Exempel på radering av mapp
+| Kod | Beskrivning                              |
+|-----|------------------------------------------|
+| 200 | Mappen har tagits bort.                  |
+| 400 | Felaktig begäran – ogiltiga parametrar.  |
+| 401 | Autentisering krävs – saknad eller ogiltig JWT-token. |
+| 404 | Mappen hittades inte.                    |
+| 500 | Internt serverfel.                       |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till molnet API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Folder/DeleteFolder) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="7" tabName7="Request" tabName8="Response" >}}
+### Exempel på mappborttagning
 
+{{< tabs tabTotal="2" tabID="7" tabName7="Begäran" tabName8="Svar" >}}
 {{< tab tabNum="7" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/malMapp" \
+  -X DELETE \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="8" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
+*Obs: Om du tar bort en mapp med `recursive=true` tas allt innehåll bort permanent.*
+
 ## **Hur man kopierar en mapp**
 
-### Kopieringsmapp API Information
+### Information om API för mappkopiering
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/folder/copy/{srcPath}
+PUT https://api.aspose.cloud/v3.0/cells/storage/folder/copy/{srcPath}
 ```
 
-Begäranparametrarna är:
+Följande begärandeparametrar finns:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| srcPath| sträng| väg| Sökväg till källmappen (t.ex. '/src')|
-|destPath| sträng| fråga| Sökväg till målmapp (t.ex. '/dst')|
-| srcLagringsnamn| sträng| fråga| Källlagringsnamn|
-| destStorageName| sträng| fråga| Namn på destinationslagring|
+| Parameternamn     | Typ    | Plats  | Beskrivning |
+|------------------|--------|--------|-------------|
+| srcPath          | string | path   | Källmappens sökväg (t.ex. `/käll`). |
+| destPath         | string | query  | Målmappens sökväg (t.ex. `/mål`). |
+| srcStorageName   | string | query  | Källlagringens namn (valfritt). |
+| destStorageName  | string | query  | Mållagringens namn (valfritt). |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Folder/CopyFolder) definierar ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från en webbläsare.
+**HTTP-svarskoder**
 
-### Exempel på kopieringsmapp
+| Kod | Beskrivning                              |
+|-----|------------------------------------------|
+| 200 | Mappen har kopierats.                    |
+| 400 | Felaktig begäran – ogiltiga parametrar.  |
+| 401 | Autentisering krävs – saknad eller ogiltig JWT-token. |
+| 404 | Källmappen hittades inte.                |
+| 500 | Internt serverfel.                       |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till molnet API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Folder/CopyFolder) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="21" tabName21="Request" tabName22="Response" >}}
+### Exempel på mappkopiering
+
+{{< tabs tabTotal="2" tabID="21" tabName21="Begäran" tabName22="Svar" >}}
 {{< tab tabNum="21" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/copy/srcfolder?destPath=desfolder" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/copy/kallmapp?destPath=malmapp" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="22" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*Obs: Kopieringsåtgärden skapar en ny mapp med samma innehåll som källmappen.*
 
 ## **Hur man flyttar en mapp**
 
-### Flytta mapp API Information
+### Information om API för mappflyttning
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/folder/move/{srcPath}
+PUT https://api.aspose.cloud/v3.0/cells/storage/folder/move/{srcPath}
 ```
 
-Begäranparametrarna är:
+Följande begärandeparametrar finns:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| srcPath| sträng| väg| Mappsökväg att flytta (t.ex. '/mapp')|
-|destPath| sträng| fråga| Sökväg till målmapp att flytta till (t.ex. '/dst')|
-| srcLagringsnamn| sträng| fråga| Källlagringsnamn|
-| destStorageName| sträng| fråga| Namn på destinationslagring|
+| Parameternamn     | Typ    | Plats  | Beskrivning |
+|------------------|--------|--------|-------------|
+| srcPath          | string | path   | Källmappens sökväg (t.ex. `/mapp`). |
+| destPath         | string | query  | Målmappens sökväg (t.ex. `/mål`). |
+| srcStorageName   | string | query  | Källlagringens namn (valfritt). |
+| destStorageName  | string | query  | Mållagringens namn (valfritt). |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Folder/MoveFolder) definierar ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från en webbläsare.
+**HTTP-svarskoder**
 
-### Exempel på att flytta mapp
+| Kod | Beskrivning                              |
+|-----|------------------------------------------|
+| 200 | Mappen har flyttats.                     |
+| 400 | Felaktig begäran – ogiltiga parametrar.  |
+| 401 | Autentisering krävs – saknad eller ogiltig JWT-token. |
+| 404 | Källmappen hittades inte.                |
+| 500 | Internt serverfel.                       |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till molnet API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Folder/MoveFolder) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="23" tabName23="Request" tabName24="Response" >}}
+### Exempel på mappflyttning
+
+{{< tabs tabTotal="2" tabID="23" tabName23="Begäran" tabName24="Svar" >}}
 {{< tab tabNum="23" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/move/desfolder" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/move/malmapp?destPath=doelmapp" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
-{{< tab tabnum="24" >}}
+{{< tab tabNum="24" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-## **Hur man kontrollerar om det finns lagringsutrymme**
+*Obs: Vid mappflyttning bevaras mappens interna struktur och filversioner.*
 
-### Lagring finns API Information
+## **Hur man kontrollerar om en lagring finns**
+
+### Information om API för lagringsexistenskontroll
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/{storageName}/exist
+GET https://api.aspose.cloud/v3.0/cells/storage/{storageName}/exist
 ```
 
-Begäranparametrarna är:
+Följande begärandeparametrar finns:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| lagringsnamn| sträng| väg| Lagringsnamn|
+| Parameternamn | Typ    | Plats  | Beskrivning |
+|--------------|--------|--------|-------------|
+| storageName  | string | path   | Namn på lagringen som ska kontrolleras. |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Storage/StorageExists) definierar ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från en webbläsare.
+**HTTP-svarskoder**
 
-### Exempel på lagring finns
+| Kod | Beskrivning                              |
+|-----|------------------------------------------|
+| 200 | Lagringens existens returneras (`true` eller `false`). |
+| 401 | Autentisering krävs – saknad eller ogiltig JWT-token. |
+| 404 | Lagringen hittades inte.                 |
+| 500 | Internt serverfel.                       |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till molnet API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Storage/StorageExists) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="33" tabName33="Request" tabName34="Response" >}}
+### Exempel på lagringsexistenskontroll
+
+{{< tabs tabTotal="2" tabID="33" tabName33="Begäran" tabName34="Svar" >}}
 {{< tab tabNum="33" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/cellsstorage/exist" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/MinLagring/exist" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="34" >}}
 
-```bash
+```json
 {
   "Exists": true
 }
@@ -553,41 +638,47 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/cellsstorage/exist" \
 
 ## **Hur man kontrollerar om en fil eller mapp finns**
 
-### Objektet finns API Information
+### Information om API för objektexistenskontroll
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/exist/{path}
+GET https://api.aspose.cloud/v3.0/cells/storage/exist/{path}
 ```
 
-Begäranparametrarna är:
+Följande begärandeparametrar finns:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| väg| sträng| väg| Sökväg till fil eller mapp (t.ex. '/file.ext' eller '/mapp')|
-| lagringsnamn| sträng| fråga| Lagringsnamn|
-| versions-ID| sträng| fråga| Filversions-ID|
+| Parameternamn | Typ    | Plats  | Beskrivning |
+|--------------|--------|--------|-------------|
+| path         | string | path   | Sökväg till fil eller mapp (t.ex. `/fil.xlsx` eller `/mapp`). |
+| storageName  | string | query  | Namn på lagring som ska kontrolleras. |
+| versionId    | string | query  | Filversionsidentifierare (valfritt). |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Storage/ObjectExists) definierar ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från en webbläsare.
+**HTTP-svarskoder**
 
-### Exempel på objekt finns
+| Kod | Beskrivning                              |
+|-----|------------------------------------------|
+| 200 | Information om existens returneras.      |
+| 401 | Autentisering krävs – saknad eller ogiltig JWT-token. |
+| 404 | Fil eller mapp hittades inte.            |
+| 500 | Internt serverfel.                       |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till molnet API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Storage/ObjectExists) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="37" tabName37="Request" tabName38="Response" >}}
+### Exempel på objektexistenskontroll
+
+{{< tabs tabTotal="2" tabID="37" tabName37="Begäran" tabName38="Svar" >}}
 {{< tab tabNum="37" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/exist/Book1.xlsx" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/exist/Book1.xlsx" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="38" >}}
 
-```bash
+```json
 {
   "Exists": true,
   "IsFolder": false
@@ -597,101 +688,112 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/exist/Book1.xlsx" \
 {{< /tab >}}
 {{< /tabs >}}
 
-## **Hur man får reda på diskanvändning**
+## **Hur man får användningsinformation för diskutrymme**
 
-### Hämta information om diskanvändning API
+### Information om API för diskanvändning
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/disc
+GET https://api.aspose.cloud/v3.0/cells/storage/disc
 ```
 
-Begäranparametrarna är:
+Följande begärandeparametrar finns:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| lagringsnamn| sträng| fråga| Lagringsnamn|
+| Parameternamn | Typ    | Plats  | Beskrivning |
+|--------------|--------|--------|-------------|
+| storageName  | string | query  | Namn på lagring som ska frågas. |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Storage/GetDiscUsage) definierar ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från en webbläsare.
+**HTTP-svarskoder**
 
-### Hämta exempel på diskanvändning
+| Kod | Beskrivning                              |
+|-----|------------------------------------------|
+| 200 | Information om diskutrymme returneras.   |
+| 401 | Autentisering krävs – saknad eller ogiltig JWT-token. |
+| 500 | Internt serverfel.                       |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till molnet API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Storage/GetDiscUsage) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="40" tabName40="Request" tabName41="Response" >}}
+### Exempel på diskanvändning
 
+{{< tabs tabTotal="2" tabID="40" tabName40="Begäran" tabName41="Svar" >}}
 {{< tab tabNum="40" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/disc" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/disc?storageName=MinLagring" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="41" >}}
 
-```bash
+```json
 {
-  "UsedSize": 0,
-  "TotalSize": 0
+  "UsedSize": 12345678,
+  "TotalSize": 987654321
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-## **Hur man hämtar filversioner**
+## **Hur man får filversioner**
 
-### Hämta information om filversioner API
+### Information om API för filversioner
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/version/{path}
+GET https://api.aspose.cloud/v3.0/cells/storage/version/{path}
 ```
 
-Begäranparametrarna är:
+Följande begärandeparametrar finns:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| väg| sträng| väg| Filsökväg (t.ex. '/file.ext')|
-| lagringsnamn| sträng| fråga| Lagringsnamn|
+| Parameternamn | Typ    | Plats  | Beskrivning |
+|--------------|--------|--------|-------------|
+| path         | string | path   | Sökväg till filen (t.ex. `/fil.xlsx`). |
+| storageName  | string | query  | Namn på lagring som ska frågas. |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Storage/GetFileVersions) definierar ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från en webbläsare.
+**HTTP-svarskoder**
 
-### Hämta exempel på filversioner
+| Kod | Beskrivning                              |
+|-----|------------------------------------------|
+| 200 | Lista med filversioner returneras.       |
+| 401 | Autentisering krävs – saknad eller ogiltig JWT-token. |
+| 404 | Filen hittades inte.                     |
+| 500 | Internt serverfel.                       |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till molnet API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Storage/GetFileVersions) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="46" tabName46="Request" tabName47="Response" >}}
+### Exempel på filversioner
+
+{{< tabs tabTotal="2" tabID="46" tabName46="Begäran" tabName47="Svar" >}}
 {{< tab tabNum="46" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/cellsstorage/exist" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/version/Rapport.xlsx?storageName=MinLagring" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
-{{< tab tabnum="47" >}}
+{{< tab tabNum="47" >}}
 
-```bash
+```json
 {
   "Value": [
     {
-      "Name": "string",
-      "IsFolder": true,
+      "Name": "Rapport.xlsx",
+      "IsFolder": false,
       "ModifiedDate": "2021-12-08T18:57:46.128Z",
-      "Size": 0,
-      "Path": "string",
-      "VersionId": "string",
+      "Size": 102400,
+      "Path": "/Rapport.xlsx",
+      "VersionId": "1",
       "IsLatest": true
     }
   ]
-} 
+}
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
+---

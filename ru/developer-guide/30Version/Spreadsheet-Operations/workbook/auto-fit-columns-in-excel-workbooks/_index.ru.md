@@ -1,76 +1,101 @@
-﻿---
-title: Автоподбор столбцов на фил Excel
-second_title: Documen
-linktitle: Столбец
-type: docs
-url: /ru/autofit-columns-on-an-excel-file/
-aliases: [/auto-fit-columns-in-excel-workbooks,/autofit-columns-in-excel-workbooks/,/columns/autofit/,/workbook/autofit/columns/]
-keywords: Autofit columns on an Excel workboo
-description: Aspose.Cells Cloud REST API поддерживает автоподбор столбцов в рабочей книге Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 90
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Автоподбор столбцов в рабочей книге Excel
 ---
-Этот REST API указывает на необходимость автоматического подбора столбцов в рабочей книге Excel.
+title: "Автоматическая подгонка столбцов в файле Excel"
+second_title: "Документ"
+linktype: "Столбцы"
+type: docs
+url: /autofit-columns-on-an-excel-file/
+aliases:
+  [
+    /auto-fit-columns-in-excel-workbooks,
+    /autofit-columns-in-excel-workbooks/,
+    /columns/autofit/,
+    /workbook/autofit/columns/,
+  ]
+keywords: "автоматическая подгонка столбцов, Excel, Aspose.Cells Cloud, REST API, SDK, cURL, API"
+description: "Узнайте, как использовать REST API Aspose.Cells Cloud для автоматической подгонки столбцов в книге Excel. Приведены детали запроса, пример cURL и примеры кода SDK для различных языков."
+weight: 90
+---
 
-## РСЕT API
+Этот REST API поддерживает автоматическую подгонку столбцов в книге Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
- 
+## API PostAutofitWorkbookColumns
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
 ```
 
 Параметры запроса:
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-|[autoFitterOptions](/cells/ru/auto-fitter-options/) || тело| Параметры автоустановки.|
-| startColumn| целое число| запрос| Начальная колонка.|
-| конец столбца| целое число| запрос| Конец столбца.|
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра        | Тип    | Расположение | Описание                                                |
+| --------------------- | ------- | ------------ | ------------------------------------------------------- |
+| **name**              | string  | путь         | Имя файла книги.                                        |
+| **autoFitterOptions** | object  | тело         | Параметры, управляющие поведением автоматической подгонки. |
+| **startColumn**       | integer | запрос       | Индекс первого столбца для подгонки (начинается с 0).   |
+| **endColumn**         | integer | запрос       | Индекс последнего столбца для подгонки (начинается с 0). |
+| **folder**            | string  | запрос       | Папка, содержащая книгу.                                |
+| **storageName**       | string  | запрос       | Имя службы хранилища.                                   |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns){:rel="noopener noreferrer"} определяет публично доступное программное интерфейсное решение и позволяет выполнять взаимодействие по REST напрямую из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Для простого доступа к веб-сервисам Aspose.Cells можно использовать утилиту командной строки cURL. В следующем примере показано, как вызвать облачный API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -d '{"AutoFitMergedCells":true, "IgnoreHidden":true}'
- 
 ```
+
+> **Примечание.** В рабочей среде всегда используйте HTTPS-endpoint и храните JWT-токен в секрете.
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Необходимые условия
+Перед вызовом этой операции убедитесь, что у вас есть действующий API-ключ Aspose Cloud, сгенерированный JWT-токен и что целевая книга уже существует в указанном местоположении хранилища.
+
+**Коды HTTP-статуса**
+
+| Код | Значение                     | Описание                                                                 |
+|-----|-----------------------------|--------------------------------------------------------------------------|
+| 200 | OK                          | Фильтр применён успешно; в ответе содержатся детали операции.           |
+| 400 | Bad Request                 | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized                | Недействительный или отсутствующий JWT-токен.                           |
+| 413 | Payload Too Large           | Загружаемый файл превышает ограничение по размеру.                      |
+| 500 | Internal Server Error       | Непредвиденная ошибка сервера.                                           |
+
+API может возвращать следующие HTTP-статусы:
+
+| Код | Описание                                            |
+|-----|-----------------------------------------------------|
+| 200 | Успех — столбцы автоматически подогнаны             |
+| 400 | Неверный запрос — отсутствующие или некорректные параметры |
+| 401 | Неавторизован — недействительный или просроченный JWT |
+| 500 | Ошибка сервера — внутренняя ошибка обработки        |
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — наиболее эффективный способ ускорить разработку. SDK берёт на себя низкоуровневые детали, позволяя вам сосредоточиться на логике вашего проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud){:rel="noopener noreferrer"}.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

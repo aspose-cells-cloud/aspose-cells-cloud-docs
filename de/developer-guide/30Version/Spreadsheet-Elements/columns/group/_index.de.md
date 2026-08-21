@@ -1,76 +1,120 @@
-﻿---
-title: Gruppieren Sie Spalten auf einem Excel-Arbeitsblatt
-second_title: Documen
-linktitle: Grou
-type: docs
-url: /de/columns/group/
-aliases: [/group-columns-in-an-excel-worksheet/, /group-columns-in-excel-worksheet/]
-keywords: Group column on an Excel workshee
-description: Aspose.Cells Cloud REST API unterstützt Gruppierungsspalten in einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 60
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Spalten auf einem Excel-Arbeitsblatt gruppieren
 ---
-Dieser REST API gibt an, dass Arbeitsblattspalten gruppiert werden.
+title: "Spalten gruppieren – Aspise.Cells Cloud API-Dokumentation"
+description: "Gruppieren Sie Arbeitsblattspalten in einer Excel-Datei mithilfe der Aspose.Cells Cloud REST-API (v3.0). Enthält Anforderungssyntax, Parameter, cURL- und SDK-Beispiele sowie Antwortdetails."
+keywords: "Aspose.Cells, Spalten gruppieren, Excel-API, REST, Cloud-SDK"
+weight: 60
+type: docs
+aliases:
+  - /group-columns-in-an-excel-worksheet/
+  - /group-columns-in-excel-worksheet/
+---
 
-## RSET API
+# Spalten in einem Excel-Arbeitsblatt gruppieren
+
+**API-Version:** v3.0  
+**Vorgang:** `PostGroupWorksheetColumns` – Gruppiert Spalten in einem Arbeitsblatt.
+
+---
+
+## Übersicht
+
+Diese REST-API ermöglicht das Gruppieren eines Bereichs von Spalten in einem Arbeitsblatt. Gruppierte Spalten können ein- oder ausgeblendet werden, sodass Sie einklappbare Abschnitte erstellen können, die denen in Microsoft Excel ähneln.
+
+---
+
+## Voraussetzungen
+
+- Ein gültiges **JWT-Zugriffstoken**, das beim Aspose Cloud-Authentifizierungsdienst abgerufen wurde.  
+- Die Arbeitsmappe muss an einem Ort gespeichert sein, der für Aspose.Cells Cloud zugänglich ist (Standardspeicher oder benutzerdefinierter Speichername).  
+- Erforderliche SDK-Version (falls ein SDK verwendet wird): Die neueste Veröffentlichung, die API-Version **v3.0** unterstützt.  
+
+---
+
+## Authentifizierung
+
+Alle Anforderungen erfordern eine **Bearer-Token**-Authentifizierung.
+
+```http
+Authorization: Bearer <access_token>
+```
+
+Einzelheiten zum Abrufen eines Tokens finden Sie im [JWT-Authentifizierungsleitfaden](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+---
+
+## HTTP-Anforderung
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
+```
+
+| Parameter | Ort | Erforderlich | Beschreibung |
+|-----------|-----|--------------|-------------|
+| `name` | Pfad | Ja | Der Dateiname der Arbeitsmappe (z. B. `test.xlsx`). |
+| `sheetName` | Pfad | Ja | Das Arbeitsblatt, das die zu gruppierenden Spalten enthält. |
+| `firstIndex` | Abfrage | Ja | Nullbasiertes Index der ersten Spalte, die in die Gruppe einzubeziehen ist. |
+| `lastIndex` | Abfrage | Ja | Nullbasiertes Index der letzten Spalte, die in die Gruppe einzubeziehen ist. |
+| `hide` | Abfrage | Nein | Wenn `true`, werden die gruppierten Spalten ausgeblendet; andernfalls bleiben sie sichtbar. |
+| `folder` | Abfrage | Nein | Pfad zum Ordner, der die Arbeitsmappe enthält. |
+| `storageName` | Abfrage | Nein | Name des Speicherdiensts, in dem sich die Datei befindet. |
+
+---
+
+## Anforderungsbeispiel (cURL)
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
- 
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
 ```
 
-Die Anforderungsparameter sind:
+> **Hinweis:** Die Anforderung verwendet **HTTPS**, um eine verschlüsselte Übertragung sicherzustellen.
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Der Name der Arbeitsmappe.|
-| Blattname| Schnur| Weg| Der Arbeitsblattname.|
-| ersterIndex| ganze Zahl| Abfrage|Der erste Spaltenindex, der bearbeitet werden soll.|
-| letzterIndex| ganze Zahl| Abfrage| Der letzte zu bearbeitende Spaltenindex.|
-| verstecken| Boolescher Wert| Abfrage| Sichtbarer Status der Spalten|
-| Ordner| Schnur| Abfrage| Der Dokumentenordner.|
-| Speichername| Schnur| Abfrage| Speichername.|
+---
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+## Antwort
 
- Sie können**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+### Erfolg (200)
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Feld | Typ | Beschreibung |
+|------|-----|-------------|
+| `Code` | Integer | HTTP-Statuscode (`200`). |
+| `Status` | String | Textuelle Statusangabe des Vorgangs (`OK`). |
 
-{{< tab tabNum="11" >}}
+**Beispiel**
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" -H "accept: application/json"
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```java
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+### Fehler (z. B. 400 Bad Request)
 
-{{< /tabs >}}
+| Feld | Typ | Beschreibung |
+|------|-----|-------------|
+| `Code` | Integer | HTTP-Statuscode (`400`, `401`, `404`, `500`, …). |
+| `Status` | String | Textuelle Statusangabe (`Error`). |
+| `ErrorMessage` | String | Menschlich lesbare Beschreibung des Problems. |
+| `ErrorCode` | String | Programmatischer Fehlerbezeichner. |
 
-## Cloud SDK-Familie
+**Beispiel – Bad Request**
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+```json
+{
+  "Code": 400,
+  "Status": "Error",
+  "ErrorMessage": "Ungültiger Spaltenindex.",
+  "ErrorCode": "InvalidParameter"
+}
+```
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+---
+
+## SDK-Beispiele
+
+Die folgenden Codeausschnitte zeigen, wie der Vorgang **Group Worksheet Columns** mithilfe der unterstützten SDKs aufgerufen wird.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +167,26 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---
+
+## Hinweise
+
+- **Gruppierungsverhalten:** Die API erstellt eine Spaltengruppe, die in Excel erweitert oder eingeklappt werden kann. Durch Festlegen von `hide=true` wird die Gruppe sofort eingeklappt.  
+- **Nullbasierte Indizierung:** Sowohl `firstIndex` als auch `lastIndex` beginnen bei **0**; die erste Spalte in einem Arbeitsblatt hat den Index 0.  
+- **Speicherüberlegungen:** Wenn sich die Arbeitsmappe in einem Nicht-Standard-Speicher befindet, müssen sowohl die Abfrageparameter `folder` als auch `storageName` angegeben werden.  
+
+---
+
+## Siehe auch
+
+- [Authentifizierung – JWT-Token-basiert](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
+- [OpenAPI-Spezifikation für Group Worksheet Columns](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns)  
+- [Aspose.Cells Cloud SDKs (GitHub)](https://github.com/aspose-cells-cloud)  
+- [Zeilen in einem Excel-Arbeitsblatt gruppieren](/rows/group/)  
+
+---
+
+> *Abbildung:* ![Screenshot mit gruppierten Spalten in einem Excel-Arbeitsblatt](./images/group-columns.png){: .img-fluid alt="Screenshot mit gruppierten Spalten in einem Excel-Arbeitsblatt" }
+
+*Das obige Platzhalterbild sollte durch einen echten Screenshot ersetzt werden, der das visuelle Ergebnis des Spaltengruppierens zeigt.*

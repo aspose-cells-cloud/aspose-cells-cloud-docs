@@ -1,65 +1,78 @@
-﻿---
-title: Обновить картинку в файле Excel
-second_title: Documen
-linktitle: Обновление
-type: docs
-url: /ru/pictures/update/
-aliases: [/update-a-specific-picture-from-excel-workshee/]
-keywords: Update a picture in an Excel file
-description: Aspose.Cells Cloud REST API поддерживает обновление изображения в файле Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 70
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Обновление изображения в файле Excel
 ---
-Этот REST API указывает на индекс рисунка `update` для рабочего листа Excel.
+title: "Обновление изображения в файле Excel"
+second_title: "Документ"
+linktype: "Обновление"
+type: docs
+url: /pictures/update/
+aliases: [/update-a-specific-picture-from-excel-workshee/]
+keywords: "Aspose.Cells Cloud, Excel, Обновление изображения, REST API, SDK"
+description: "Узнайте, как обновить изображение в рабочем листе Excel с помощью REST API Aspose.Cells Cloud. Включает подробности запроса, пример cURL и фрагменты кода SDK для различных языков программирования."
+ArticleTitle: "Обновление изображения в файле Excel с помощью REST API Aspose.Cells Cloud"
+weight: 70
+---
 
-## РСЕT API
+Этот REST API обновляет изображение, идентифицируемое по его индексу, на рабочем листе Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
- 
+**Необходимые условия:** У вас должен быть действительный JWT-токен Aspose Cloud, целевой файл Excel должен храниться в облачном хранилище Aspose Cloud, а также необходимо использовать версию API 3.0 или выше.
+
+## API PostWorksheetPicture
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| pictureIndex| целое число| путь| Индекс изображения.|
-| картина|| тело| Объект изображения|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### **Параметры запроса**
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра | Тип    | Расположение | Описание                                                  |
+|---------------|--------|-------------|-----------------------------------------------------------|
+| name          | string | path        | Имя документа Excel.                                      |
+| sheetName     | string | path        | Имя рабочего листа, содержащего изображение.             |
+| pictureIndex  | integer| path        | Нулевой индекс обновляемого изображения.                  |
+| picture       | object | body        | JSON-объект, описывающий свойства изображения для обновления. |
+| folder        | string | query       | Папка, в которой хранится документ.                       |
+| storageName   | string | query       | Имя службы хранилища.                                     |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Примечание:** Индекс изображения нумеруется с нуля. Поддерживаемые форматы изображений: JPEG, PNG, BMP и GIF. Максимальный размер изображения — 10 МБ.
+
+### Ответы об ошибках
+
+| HTTP-код | Описание                                                                 |
+|----------|--------------------------------------------------------------------------|
+| 401      | Неавторизован — отсутствует или недействителен токен.                   |
+| 404      | Не найдено — указанный файл, рабочий лист или индекс изображения не существует. |
+| 400      | Неверный запрос — неправильный синтаксис запроса или недопустимые параметры. |
+| 500      | Внутренняя ошибка сервера — возникло непредвиденное состояние.           |
+
+<a href="https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture" rel="noopener noreferrer">Спецификация OpenAPI</a> определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Приведённый ниже пример демонстрирует вызов облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" \
 -X POST \
 -d "{ \"UpperLeftRow\": 10, \"Top\": 0, \"UpperLeftColumn\": 1, \"Left\": 0, \"LowerRightRow\": 0, \"Bottom\": 0, \"LowerRightColumn\": 3, \"ImageFormat\": \"jpg\", \"SourceFullName\": \"download.jpg\"}" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -68,9 +81,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ разработки. SDK берёт на себя обработку низкоуровневых деталей, позволяя сосредоточиться на задачах вашего проекта. Ознакомьтесь с <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">репозиторием на GitHub</a> для получения полного списка SDK Aspose.Cells Cloud.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Приведённые ниже примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +136,5 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 {{< /tab >}}
 
 {{< /tabs >}}
+
+*См. также:* Добавление изображения, Удаление изображения, Получение изображения, Очистка изображений — другие операции, связанные с изображениями, в API Aspose.Cells Cloud.

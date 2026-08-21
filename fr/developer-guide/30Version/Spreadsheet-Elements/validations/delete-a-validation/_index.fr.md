@@ -1,73 +1,78 @@
-﻿---
-title: Supprimer une validation de feuille de calcul sur une feuille de calcul Excel
-second_title: Documen
-linktitle: Supprimer
-type: docs
-url: /fr/validations/delete/
-keywords: Delete a worksheet validation on an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge la suppression d'une validation de feuille de calcul sur une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Supprimer une validation de feuille de calcul sur une feuille de calcul Excel
 ---
-Ce REST API indique de supprimer une validation de feuille de calcul par index sur une feuille de calcul Excel.
+title: "Supprimer la validation de feuille de calcul – Aspose.Cells Cloud"
+second_title: "Document"
+linktitle: "Supprimer"
+type: docs
+url: /validations/delete/
+keywords: "Supprimer, validation de feuille de calcul, Aspose.Cells Cloud, API Excel"
+description: "Découvrez comment supprimer une validation de feuille de calcul à partir d’un fichier Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’endpoint, les paramètres, les détails d’authentification, un exemple cURL, la gestion des erreurs et des extraits de code SDK."
+weight: 10
+---
 
-## RSET API
+Cette API REST supprime une validation de feuille de calcul à partir de son index de base zéro sur une feuille de calcul Excel.
+
+## API REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
-Les paramètres de la requête sont :
+### **Paramètres de la requête**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
-| validationIndex| entier| chemin| L'indice de validation.|
-| dossier| chaîne| requête| Dossier du document.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type    | Emplacement | Description                                           |
+| ---------------- | ------- | ----------- | ----------------------------------------------------- |
+| name             | string  | path        | Le nom du fichier Excel.                              |
+| sheetName        | string  | path        | Le nom de la feuille de calcul.                       |
+| validationIndex  | integer | path        | L’index de base zéro de la validation à supprimer.   |
+| folder           | string  | query       | Le dossier contenant le document.                     |
+| storageName      | string  | query       | Le nom du service de stockage.                        |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+Vous pouvez utiliser l’outil en ligne de commande cURL pour appeler le service web Aspose.Cells. L’exemple ci-dessous montre comment supprimer une validation à l’aide de cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                                  |
+|------|-----------------------------|--------------------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant.                              |
+| 413  | Charge utile trop grande     | Le fichier téléchargé dépasse la limite de taille.          |
+| 500  | Erreur interne du serveur   | Erreur serveur inattendue.                                   |
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est la méthode la plus rapide pour intégrer cette opération dans votre application. Les SDK gèrent les détails de bas niveau afin que vous puissiez vous concentrer sur la logique métier. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment supprimer une validation de feuille de calcul à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

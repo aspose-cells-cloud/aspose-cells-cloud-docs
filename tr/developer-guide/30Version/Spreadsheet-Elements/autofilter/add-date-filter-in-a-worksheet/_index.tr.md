@@ -1,84 +1,117 @@
-﻿---
-title: Excel çalışma sayfasına tarih filtresi ekleyin
-second_title: Documen
-linktitle: Tarih filtresi ekle
+---
+title: "Bir Excel Çalışma Sayfasına Tarih Filtresi Ekle"
+second_title: "Belge"
+linktitle: "Tarih filtresi ekle"
 type: docs
 url: /tr/autofilter/add-date-filter/
-aliases: [/add-date-filter-in-a-worksheet/,/autofilter/add-a-date-filter/]
-keywords: Adds a date filter on an Excel worksheet
-description: Aspose.Cells Cloud API, Excel çalışma sayfasına tarih filtresi eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
+aliases:
+  - /tr/add-date-filter-in-a-worksheet/
+  - /tr/autofilter/add-a-date-filter/
+description: "Aspose.Cells Cloud REST API’si (v3.0) ile bir Excel çalışma sayfasına tarih filtresi nasıl ekleyeceğinizi öğrenin. cURL örneği, SDK kod parçacıkları (C#, Java, Python vb.), parametreler ve hata işleme içerir."
 weight: 65
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasına tarih filtresi ekleme
+ArticleTitle: "Bir Excel Çalışma Sayfasına Tarih Filtresi Ekle | Aspose.Cells Cloud API"
+keywords: "Aspose.Cells, Excel tarih filtresi, AutoFilter API, REST API, bulut SDK, cURL, elektronik tablo otomasyonu"
 ---
-Bu REST API, Excel Çalışma Sayfasına `date filter` eklenmesini gösterir.
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasına bir **tarih filtresi** ekler.
 
-```bash
+**Önkoşullar:** Geçerli bir JWT belirteciniz olmalı ve hedef çalışma kitabının zaten belirtilen depolama konumunda bulunuyor olması gerekir. İstek, JSON gövdesi gerektirmez.
 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
+## PutWorksheetDateFilter API
 
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| Yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| Yol| Çalışma sayfasının adı.|
-|menzil|sicim| Sorgu||
-|alanIndeksi|tam sayı| Sorgu||
-|tarihZamanGruplamaTürü|sicim| Sorgu| Gün/Saat/Dakika/Ay/Saniye/Yıl|
-|yıl|tam sayı| Sorgu||
-|ay|tam sayı| Sorgu||
-|gün|tam sayı| Sorgu||
-|saat|tam sayı| Sorgu||
-|dakika|tam sayı| Sorgu||
-|ikinci|tam sayı| Sorgu||
-|matchBlanks|sicim| Sorgu|doğru/yanlış|
-|yenilemek|sicim| Sorgu|doğru/yanlış|
-|dosya|sicim| Sorgu|Orijinal çalışma kitabı klasörü.|
-|depolamaAdı|sicim| Sorgu|Depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Parametre Adı            | Tür      | Konum   | Açıklama                                                                                                                                                             |
+| ------------------------ | -------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**                 | string   | Yol     | Çalışma kitabının adı.                                                                                                                                                |
+| **sheetName**            | string   | Yol     | Çalışma sayfasının adı.                                                                                                                                               |
+| **range**                | string   | Sorgu   | Filtrenin uygulanacağı Excel aralığı (örn., `A1:B1`).                                                                                                                |
+| **fieldIndex**           | integer  | Sorgu   | Filtrelenecek sütunun sıfır tabanlı indeksi.                                                                                                                         |
+| **dateTimeGroupingType** | string   | Sorgu   | Tarih/saat filtresi için gruplandırma türü. İzin verilen değerler: `Day`, `Hour`, `Minute`, `Month`, `Second`, `Year`. Değerler büyük/küçük harfe duyarlıdır; varsayılan: `Day`. |
+| **year**                 | integer  | Sorgu   | Filtre değeri için yıl bileşeni.                                                                                                                                      |
+| **month**                | integer  | Sorgu   | Filtre değeri için ay bileşeni.                                                                                                                                       |
+| **day**                  | integer  | Sorgu   | Filtre değeri için gün bileşeni.                                                                                                                                      |
+| **hour**                 | integer  | Sorgu   | Filtre değeri için saat bileşeni.                                                                                                                                     |
+| **minute**               | integer  | Sorgu   | Filtre değeri için dakika bileşeni.                                                                                                                                   |
+| **second**               | integer  | Sorgu   | Filtre değeri için saniye bileşeni.                                                                                                                                   |
+| **matchBlanks**          | boolean  | Sorgu   | Boş hücrelerin dahil edilip edilmeyeceği (`true` veya `false`).                                                                                                      |
+| **refresh**              | boolean  | Sorgu   | Uygulamadan sonra filtre yenilensin mi? (`true` veya `false`).                                                                                                       |
+| **folder**               | string   | Sorgu   | Orijinal çalışma kitabının bulunduğu klasör yolu.                                                                                                                     |
+| **storageName**          | string   | Sorgu   | Depolama hizmetinin adı.                                                                                                                                             |
+
+*PUT isteği, istek gövdesi gerektirmez; tüm parametreler sorgu dizgisinde sağlanır.*
+
+### **Yanıt**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                                                 |
+|-----|-----------------------------|--------------------------------------------------------------------------|
+| 200 | OK (Tamam)                  | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir.          |
+| 400 | Bad Request (Hatalı İstek)  | Eksik veya geçersiz parametreler (örn., desteklenmeyen dosya türü).     |
+| 401 | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT belirteci.                                       |
+| 413 | Payload Too Large (Çok Büyük Yük) | Yüklenen dosya boyut sınırını aşıyor.                                  |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası.                                           |
+
+## PutWorksheetDateFilter API’yi SDK’lar ile Nasıl Kullanılır
+
+### PutWorksheetDateFilter API Spesifikasyonu
+
+
+<a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter" rel="noopener noreferrer">OpenAPI Spesifikasyonu</a>, herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+**cURL** komut satırı aracını kullanarak Aspose.Cells web hizmetlerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’sine nasıl istek yapılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?range=A1:B1&fieldIndex=0&dateTimeGroupingType=Year&year=1920&refresh=true" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?range=A1:B1&fieldIndex=0&dateTimeGroupingType=Year&year=1920&refresh=true" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+### Aspose.Cells Cloud SDK’larını Kullanın
+
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. SDK, düşük seviye detayları yöneterek size proje görevlerinize odaklanma imkânı verir. Aspose.Cells Cloud SDK’larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub deposuna</a> göz atın.
+
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanılarak Aspose.Cells web hizmetlerine nasıl istek atılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -108,7 +141,7 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDateFilter.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDateFilter.ts" >}}
 
 {{< /tab >}}
 

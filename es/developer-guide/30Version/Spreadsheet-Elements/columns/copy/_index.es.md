@@ -1,76 +1,77 @@
-﻿---
-title: Copiar columnas en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Policía
+---
+title: "Copiar columnas en una hoja de cálculo de Excel"
+second_title: "Documentos"
+linktype: "Copiar"
 type: docs
 url: /es/columns/copy/
-aliases: [/copy-columns-in-excel-worksheet/,/copy-columns-in-an-excel-worksheet/]
-keywords: Copy column on an Excel workshee
-description: Aspose.Cells Cloud REST API permite copiar columnas en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+aliases:
+  [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
+keywords: "Aspose.Cells, copiar columnas, API de Excel, REST, SDK en la nube, cURL, C#, Java, Python, Ruby, Node.js, Go, Perl"
+description: "Aprenda a copiar una o más columnas en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye la sintaxis de la solicitud, los parámetros requeridos, detalles de autenticación, manejo de errores y ejemplos de SDK en C#, Java, Python, Ruby, Node.js, Go, Perl y más."
+articleTitle: "Copiar columnas en una hoja de cálculo de Excel mediante la API de Aspose.Cells Cloud"
 weight: 30
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Copiar columnas en una hoja de cálculo Excel
 ---
-Esta copia REST API `columns` en una hoja de trabajo Excel.
 
-## RSET API
+Esta API REST permite **copiar columnas** en una hoja de cálculo de Excel. La operación **Copiar columnas** le permite duplicar una sola columna o un rango de columnas e insertar la copia en una ubicación específica dentro de la misma hoja de cálculo. Utilice este punto final para copiar columnas de forma eficiente al trabajar con hojas de cálculo grandes, y consulte operaciones relacionadas como [Agregar columna](/es/columns/add/) y [Ocultar columna](/es/columns/hide/) para realizar tareas adicionales de gestión de columnas.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy
- 
-```
+## Seguridad y autenticación
+Las API de Aspose.Cells Cloud son seguras y requieren [autenticación basada en token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-Los parámetros de la solicitud son:
-
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| El nombre del libro de trabajo.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| índice de columna de origen| entero| consulta| Índice de la columna de origen|
-| índice de columna de destino| entero| consulta| Índice de la columna de destino|
-| número de columna| entero| consulta| El número de columna copiado|
-| hoja de trabajo| cadena| consulta||
-| carpeta| cadena| consulta| La carpeta de documentos.|
-
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
-
- Puedes utilizar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+## API REST
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&ColumnNumber=10" -H "accept: application/json" 
-
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy
 ```
 
-{{< /tab >}}
+### Parámetros de la solicitud
 
-{{< tab tabNum="12" >}}
+| Nombre del parámetro         | Tipo    | Ubicación | Descripción                                                                               |
+| ---------------------------- | ------- | --------- | ----------------------------------------------------------------------------------------- |
+| **name**                     | string  | path      | Nombre del libro.                                                                         |
+| **sheetName**                | string  | path      | Nombre de la hoja de cálculo.                                                             |
+| **sourceColumnIndex**        | integer | query     | Índice de base cero de la columna que se va a copiar.                                     |
+| **destinationColumnIndex**   | integer | query     | Índice de base cero donde se insertarán la(s) columna(s) copiada(s).                      |
+| **columnNumber**             | integer | query     | Número de columnas consecutivas que se van a copiar.                                      |
+| **worksheet**                | string  | query     | _(Opcional)_ Identificador de la hoja de cálculo utilizado cuando el nombre difiere del de la ruta. |
+| **folder**                   | string  | query     | Ruta a la carpeta que contiene el libro en el almacenamiento de Aspose Cloud.            |
 
-```java
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) define el contrato completo de esta operación.
 
- {
+### Ejemplo con cURL
 
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&columnNumber=10" \
+     -H "Authorization: Bearer $ASPOSE_TOKEN" \
+     -H "accept: application/json"
+```
+
+### Respuesta
+
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+## Manejo de errores
 
-{{< /tabs >}}
+La API devuelve códigos de estado HTTP estándar con una carga útil en formato JSON que describe el error.
+
+| Código de estado | Significado                                           | Cuerpo JSON de ejemplo                                            |
+| ---------------- | ----------------------------------------------------- | ----------------------------------------------------------------- |
+| **400**          | Solicitud incorrecta: parámetros inválidos           | `{ "Code": 400, "Message": "Índice de columna no válido." }`     |
+| **401**          | No autorizado: token ausente o inválido               | `{ "Code": 401, "Message": "El token de acceso no es válido o ha expirado." }` |
+| **404**          | No encontrado: el libro o la hoja de cálculo no existen | `{ "Code": 404, "Message": "Libro no encontrado." }`             |
+| **500**          | Error interno del servidor: condición inesperada      | `{ "Code": 500, "Message": "Se produjo un error inesperado." }`  |
+
+> **Cómo solucionar problemas:** Verifique que el token de acceso esté vigente, que los nombres del libro y la hoja de cálculo sean correctos, y que `sourceColumnIndex`, `destinationColumnIndex` y `columnNumber` estén dentro del rango de columnas de la hoja de cálculo.
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más eficaz de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel para que pueda centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +124,37 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cómo me autentico al llamar a la API de Copiar columnas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Obtenga un token de acceso OAuth2 de Aspose Cloud mediante su ID de cliente y su secreto, e inclúyalo en el encabezado de la solicitud como `Authorization: Bearer <access_token>`."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la diferencia entre `sourceColumnIndex` y `destinationColumnIndex`?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "`sourceColumnIndex` es el índice de base cero de la columna que desea copiar. `destinationColumnIndex` es el índice de base cero donde se insertarán la(s) columna(s) copiada(s)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué respuesta recibo si la operación de copia falla?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La API devuelve un código de estado distinto de 200 (por ejemplo, 400 para una solicitud incorrecta, 401 para no autorizado). El cuerpo de la respuesta contiene un objeto JSON con los campos `Code` y `Message` que describen el error."
+      }
+    }
+  ]
+}
+</script>
+---

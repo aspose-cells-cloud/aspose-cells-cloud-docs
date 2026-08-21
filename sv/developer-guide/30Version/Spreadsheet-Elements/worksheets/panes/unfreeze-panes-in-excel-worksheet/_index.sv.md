@@ -1,77 +1,73 @@
-﻿---
-title: Tina upp rutor på ett Excel-arbetsblad
-second_title: Documen
-linktitle: Tina upp
-type: docs
-url: /sv/worksheets/panes/unfreeze/
-aliases: [/unfreeze-panes-in-excel-worksheet/,/worksheets/unfreeze-panes/]
-keywords: Unfreeze panes on an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder upptining av rutor på ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 200
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Återställ fönster i ett Excel-kalkylblad
 ---
-Denna REST API indikerar `unfreeze panes` på Excel-arbetsbladet.
- 
-## RSET API
- 
+title: "Avfrys rutor i ett Excel-ark"
+second_title: "Dokument"
+linktitle: "Avfrys"
+type: docs
+url: /worksheets/panes/unfreeze/
+aliases:
+  - /unfreeze-panes-in-excel-worksheet/
+  - /worksheets/unfreeze-panes/
+keywords: "avfrys rutor, Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Python, Node.js, Go, Swift, Android, Ruby, Perl"
+description: "Lär dig hur du tar bort frysta rutor från ett Excel-ark med Aspose.Cells Cloud REST API (v3.0). Inkluderar cURL-exempel och SDK-kodfragment för C#, Java, Python med mera."
+weight: 200
+---
+
+Detta REST API-anrop **avfryser** (tar bort frysta rutor) från ett Excel-ark.
+
+## REST API
+
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
 ```
- Begäranparametrarna är:
- 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg||
-| arknamn| sträng| väg||
-| rad| heltal| fråga||
-| kolumn| heltal| fråga||
-| frysta rader| heltal| fråga||
-| frystaKolumner| heltal| fråga||
-| mapp| sträng| fråga||
-| lagringsnamn| sträng| fråga| lagringsnamn.|
- 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetFreezePanes) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
- 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Parametrar för begäran**
+
+| Parameternamn   | Typ    | Plats  | Beskrivning                                         |
+| --------------- | ------ | ------ | --------------------------------------------------- |
+| `name`          | string | path   | Namn på Excel-filen.                                |
+| `sheetName`     | string | path   | Namn på arket.                                      |
+| `folder`        | string | query  | Mappväg i lagringen där filen finns.               |
+| `storageName`   | string | query  | Namn på Aspose Cloud-lagringen.                     |
+
+_Inga ytterligare frågeparametrar (t.ex. row, column, frozenRows eller frozenColumns) krävs för avfrysningen._
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetFreezePanes) definierar ett offentligt tillgängligt programmeringsgränssnitt och möjliggör REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur du gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/freezepanes?row=1&column=1&freezedRows=1&freezedColumns=1" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/freezepanes" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK-familjen
- 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
- 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
- 
+
+## SDK-familj för molnet
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Besök [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du anropar Aspose.Cells webbtjänster med olika SDK:er:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

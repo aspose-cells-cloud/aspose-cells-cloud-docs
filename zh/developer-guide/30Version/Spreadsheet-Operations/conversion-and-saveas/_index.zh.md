@@ -1,40 +1,114 @@
-﻿---
-title: 将 Excel 文件转换为其他格式或以不同方式保存
-second_title: Documen
-linktitle: 转换并保存 A
+---
+title: "将 Excel 文件转换为其他格式或以不同方式保存"
+second_title: "文档"
+linktitle: "转换与另存为"
 type: docs
 url: /zh/conversion-and-save-as/
-aliases: [/convert-excel/,/convert/]
-keywords: File conversion, Format conversion, PDF export, Save file, Save Excel file
-description: Aspose.Cells Cloud REST API 支持将 Excel 文件转换为多种格式的文件。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+aliases: [/zh/convert-excel/, /zh/convert/]
+keywords: "Aspose.Cells, Excel 转换 API, Excel 转 PDF, Excel 转 CSV, Excel 转 JSON, 云端电子表格转换"
+description: "了解如何使用 Aspose.Cells Cloud REST API 将 Excel 工作簿转换为 PDF、CSV、JSON、HTML 以及超过 15 种其他格式。包含端点详情、示例 cURL 命令以及 Java、.NET、Python 等语言的 SDK 代码片段。"
 weight: 30
-kwords: 文件转换、格式转换、PDF 导出、保存文件、保存 Excel 文件、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、将 Excel 转换为各种格式
+ArticleTitle: "使用 Aspose.Cells Cloud 将 Excel 文件转换为 PDF、CSV、JSON 等格式"
 ---
-如果您最初以某种格式创建了 Excel 文件，例如[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)， 和[CSV](https://docs.fileformat.com/spreadsheet/csv/)有时，您可能会发现将 Excel 文件转换为其他格式很有用，这样您就可以利用其提供的特殊功能。例如，您可能想将 Excel 文件转换为[PDF](https://docs.fileformat.com/pdf/)保护您的内容免受任何未经授权的修改，并使其易于同时阅读和共享。
 
-文档转换是一个复杂的过程。许多因素都会增加其复杂性，因此在转换过程中应考虑所有因素。Aspose.Cells Cloud 的一大优势在于能够以精准的专业质量将 Excel 文件从一种格式转换为另一种格式。
+如果您最初以某种格式创建了 Excel 文件——例如 [XLS](https://docs.fileformat.com/spreadsheet/xls/)、[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)、[XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) 或 [CSV](https://docs.fileformat.com/spreadsheet/csv/)——那么将 Excel 文件转换为其他格式以利用特定功能可能非常有用。例如，将 Excel 文件转换为 [PDF](https://docs.fileformat.com/pdf/) 可防止其内容被未授权修改，并使其更易于阅读和共享。
 
-它完美适用于任何文档格式转换。您可以导入和导出文档：[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [消耗臭氧层物质](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/) . 仅导出格式：[PDF](https://docs.fileformat.com/pdf/), [奥特斯](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [数字](https://docs.fileformat.com/spreadsheet/numbers/), [食物中毒](https://docs.fileformat.com/spreadsheet/fods/).
+**前置条件**  
+在调用转换 API 之前，请从 Aspose Cloud 获取 OAuth 2.0 访问令牌，并确保工作簿已存储在您的 Aspose Cloud 存储中（或作为请求体包含在 PUT 转换端点中）。
 
-提供了以下 API 来将 Excel 文件转换为其他文件格式：
+文档转换是一个复杂的过程。许多因素会影响转换过程的复杂性，这些因素在转换过程中都应予以考虑。提供精确、专业级别的 Excel 格式间转换是 Aspose.Cells Cloud 的核心功能之一。
 
-|API|描述|
-|:- |:- |
-|[获取/单元格/{名称}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|将 Excel 文件从云存储转换为其他格式。|
-|[PUT /单元格/转换](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|将 Excel 文件从请求内容转换为其他格式。|
-|[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|将 Excel 文件作为其他格式文件保存到存储中。|
+该服务可无缝支持任意文档格式的转换。您可以导入和导出以下格式的文档：
 
-以下文章详细解释了每个 API，并包含每个 cURL 的 API 和 SDK 示例：
+**支持的格式**  
+- 支持导入/导出：[XLS](https://docs.fileformat.com/spreadsheet/xls/)、[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)、[XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)、[CSV](https://docs.fileformat.com/spreadsheet/csv/)、[TSV](https://docs.fileformat.com/spreadsheet/tsv/)、[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)、[ODS](https://docs.fileformat.com/spreadsheet/ods/)、[TXT](https://docs.fileformat.com/word-processing/txt/)
+- 仅支持导出：[PDF](https://docs.fileformat.com/pdf/)、[OTS](https://docs.fileformat.com/spreadsheet/ots/)、[XPS](https://docs.fileformat.com/page-description-language/xps/)、[DIF](https://docs.fileformat.com/spreadsheet/dif/)、[PNG](https://docs.fileformat.com/Image/png/)、[JPEG](https://docs.fileformat.com/image/jpeg/)、[BMP](https://docs.fileformat.com/image/bmp/)、[SVG](https://docs.fileformat.com/page-description-language/svg/)、[TIFF](https://docs.fileformat.com/image/tiff/)、[EMF](https://docs.fileformat.com/image/emf/)、[NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/)、[FODS](https://docs.fileformat.com/spreadsheet/fods/)
 
-- [将 Excel 文件转换为不同格式的文件。](/cells/zh/convert-an-excel-file-to-different-formats)
-- [将 Excel 文件保存为不同格式的文件。](/cells/zh/save-an-excel-file-as-other-formats-files)
-- [将 Excel 文件转换为 Csv 文件。](/cells/zh/convert-excel-file-to-csv-file)
-- [将 Excel 文件转换为 Docx 文件。](/cells/zh/convert-excel-file-to-docx-file)
-- [将 Excel 文件转换为 Html 文件。](/cells/zh/convert-excel-file-to-html-file)
-- [将 Excel 文件转换为 Json 文件。](/cells/zh/convert-excel-file-to-json-file)
-- [将 Excel 文件转换为 Markdown 文件。](/cells/zh/convert-excel-file-to-markdown-file)
-- [将 Excel 文件转换为 PDF 文件。](/cells/zh/convert-excel-file-to-pdf-file)
-- [将 Excel 文件转换为 Png 文件。](/cells/zh/convert-excel-file-to-png-file)
-- [将 Excel 文件转换为 Pptx 文件。](/cells/zh/convert-excel-file-to-pptx-file)
-- [将 Excel 文件转换为 SQL 文件。](/cells/zh/convert-excel-file-to-sql-file)
-- [将 Excel 文件转换为 TIFF 文件。](/cells/zh/convert-excel-file-to-tiff-file)
+### 转换 API
+
+| API                         | 描述                                                                 |
+| :-------------------------- | :------------------------------------------------------------------- |
+| `GET /cells/{name}`         | 从云端存储获取 Excel 工作簿并将其转换为请求的格式。                 |
+| `PUT /cells/convert`        | 将请求体中提供的 Excel 工作簿转换为指定的输出格式。                 |
+| `POST /cells/{name}/saveAs` | 将现有 Excel 工作簿直接以其他格式保存到云端存储中。                  |
+
+**API 详情**
+
+- **GET /cells/{name}**  
+  - **路径参数：** `name` – 工作簿文件名（必填）。  
+  - **查询参数：** `format` – 目标格式（例如：pdf、csv、json）；`storage` – 云端存储名称（可选）；`folder` – 存储内文件夹路径（可选）。  
+  - **响应：** 转换后工作簿的文件流；`Content‑Type` 与目标格式匹配。  
+  - **状态码：** 200 OK、400 Bad Request、401 Unauthorized、404 Not Found、500 Internal Server Error。  
+
+- **PUT /cells/convert**  
+  - **请求体：** multipart/form‑data，包含源工作簿文件（`file`）和必填字段 `format`（指定所需输出格式）。  
+  - **响应：** 转换后文件的二进制流。  
+  - **状态码：** 200 OK、400 Bad Request、401 Unauthorized、500 Internal Server Error。  
+
+- **POST /cells/{name}/saveAs**  
+  - **路径参数：** `name` – 现有工作簿名称。  
+  - **查询参数：** `format` – 目标格式；`outPath` – 云端存储中的目标路径（可选）；`storage` – 存储名称（可选）。  
+  - **响应：** 包含操作结果和保存文件路径的 JSON 对象。示例响应如下：  
+
+    ```json
+    {
+      "status": "OK",
+      "code": 200,
+      "message": "文件保存成功。",
+      "path": "Converted/MyWorkbook.pdf"
+    }
+    ```  
+
+  - **状态码：** 200 OK、400 Bad Request、401 Unauthorized、404 Not Found、500 Internal Server Error。  
+
+**转换为 PDF 的示例 cURL 命令**
+
+```bash
+curl -X GET "https://api.aspose.cloud/v3.0/cells/MyWorkbook.xlsx?format=pdf" \
+  -H "Authorization: Bearer {access_token}" \
+  -o MyWorkbook.pdf
+```
+
+**Java SDK 代码片段（GET /cells/{name}）**
+
+```java
+CellsApi apiInstance = new CellsApi();
+String name = "MyWorkbook.xlsx";
+String format = "pdf";
+File result = apiInstance.cellsGetWorkbook(name, format, null, null);
+result.renameTo(new File("MyWorkbook.pdf"));
+```
+
+**.NET SDK 代码片段（PUT /cells/convert）**
+
+```csharp
+var api = new CellsApi();
+var file = File.ReadAllBytes("MyWorkbook.xlsx");
+var format = "pdf";
+var result = api.ConvertWorkbook(new MemoryStream(file), format);
+File.WriteAllBytes("MyWorkbook.pdf", result);
+```
+
+**Python SDK 代码片段（POST /cells/{name}/saveAs）**
+
+```python
+import asposecellscloud
+api = asposecellscloud.CellsApi()
+api.post_save_as(name="MyWorkbook.xlsx", format="pdf", out_path="Converted/MyWorkbook.pdf")
+```
+
+以下文章详细介绍了每个 API，并提供了额外的 cURL 和 SDK 示例：
+
+- [将 Excel 文件转换为其他格式](/zh/cells/convert-an-excel-file-to-different-formats)
+- [将 Excel 文件另存为其他格式](/zh/cells/save-an-excel-file-as-other-formats-files)
+- [将 Excel 文件转换为 CSV 文件](/zh/cells/convert-excel-file-to-csv-file)
+- [将 Excel 文件转换为 DOCX 文件](/zh/cells/convert-excel-file-to-docx-file)
+- [将 Excel 文件转换为 HTML 文件](/zh/cells/convert-excel-file-to-html-file)
+- [将 Excel 文件转换为 JSON 文件](/zh/cells/convert-excel-file-to-json-file)
+- [将 Excel 文件转换为 Markdown 文件](/zh/cells/convert-excel-file-to-markdown-file)
+- [将 Excel 文件转换为 PDF 文件](/zh/cells/convert-excel-file-to-pdf-file)
+- [将 Excel 文件转换为 PNG 文件](/zh/cells/convert-excel-file-to-png-file)
+- [将 Excel 文件转换为 PPTX 文件](/zh/cells/convert-excel-file-to-pptx-file)
+- [将 Excel 文件转换为 SQL 文件](/zh/cells/convert-excel-file-to-sql-file)
+- [将 Excel 文件转换为 TIFF 文件](/zh/cells/convert-excel-file-to-tiff-file)
+---

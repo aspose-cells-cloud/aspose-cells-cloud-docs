@@ -1,73 +1,90 @@
-﻿---
-title: الحصول على كائن OLE في ورقة عمل Excel
-second_title: Documen
-linktitle: جي
-type: docs
-url: /ar/oleobjects/get/
-aliases: [/get-oleobject-from-a-worksheet/]
-keywords: Get an OLE object in an Excel worksheet
-description: يدعم Cloud REST Aspose.Cells الحصول على كائن OLE في ورقة عمل Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على كائن OLE في ورقة عمل Excel
 ---
-يشير هذا REST API إلى `get` و`OLE object` بتنسيق في ورقة عمل Excel.
+title: "استرجاع كائن OLE من ورقة عمل Excel – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+second_title: "مستند"
+linktitle: "استرجاع"
+type: docs
+url: /oleobjects/get/
+aliases: [/get-oleobject-from-a-worksheet/]
+keywords: "aspose, cells, كائن ole, excel, ورقة عمل, استرجاع كائن ole, rest api"
+description: "استرجاع كائن OLE (صورة أو مخطط أو ملف مُضمن) من ورقة عمل باستخدام واجهة Aspose.Cells Cloud REST API. تتضمن نقطة نهاية HTTPS والمعلمات المطلوبة وعينة من كود cURL ورموز SDK بلغات برمجة متعددة."
+ArticleTitle: "استرجاع كائن OLE من ورقة عمل Excel – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+weight: 10
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية لواجهة الويب (REST API) باسترجاع **كائن OLE** من ورقة عمل Excel.
+
+## الأمان والمصادقة
+تُعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتشترط [المصادقة باستخدام رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## واجهة REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
 ```
 
-معلمات الطلب هي:
+### معلمات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| رقم الكائن| عدد صحيح| طريق| رقم الكائن.|
-| شكل| خيط| استفسار| تنسيق الكائن المُصدَّر.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعلمة | النوع   | الموقع | الوصف                                                      |
+|-------------|---------|--------|-------------------------------------------------------------|
+| name        | نص (string) | المسار | اسم المستند.                                                |
+| sheetName   | نص (string) | المسار | اسم ورقة العمل.                                             |
+| objectNumber| عدد صحيح (integer) | المسار | رقم الكائن داخل ورقة العمل.                               |
+| format      | نص (string) | استعلام | تنسيق التصدير المرغوب للكائن (مثل: `png`, `jpeg`). |
+| folder      | نص (string) | استعلام | المجلد الذي يحتوي على المستند.                            |
+| storageName | نص (string) | استعلام | اسم وحدة التخزين المراد استخدامها.                         |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### خيارات وحدة التخزين
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+- **folder** – يُحدد المجلد الفرعي داخل وحدة التخزين الافتراضية حيث يكمن ملف العمل.
+- **storageName** – يُتجاوز اسم وحدة التخزين الافتراضية إذا كان ملف العمل محفوظًا في مكان آخر.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject) واجهة برمجة قابلة للوصول العام، وتمكّنك من إجراء تفاعلات REST مباشرة من خلال متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** لاستدعاء خدمة الويب Aspose.Cells. يوضح المثال التالي كيفية طلب كائن OLE كصورة PNG.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+### استجابة الصورة الثنائية
 
-Image file
- 
+عند تعيين `format` إلى نوع صورة (مثل `png`)، تُعيد الواجهة بيانات الصورة الثنائية مع الرأس:
+
+```
+Content-Type: image/png
 ```
 
-أو
+_(يُرسل ملف الصورة مباشرة إلى العميل.)_
 
-```bash
+### استجابة البيانات الوصفية بصيغة JSON
+
+إذا حُذفت المعلمة `format` أو وُضعت على `json`، تُعيد الواجهة حمولة JSON تصف كائن OLE:
+
+```json
 {
-    "Code": 200,
-    "Status": "OK",
-    "OLEObject":{
-    ......
-    } 
+  "Code": 200,
+  "Status": "OK",
+  "OLEObject": {
+    "Name": "Object1",
+    "Width": 200,
+    "Height": 150,
+    "Left": 10,
+    "Top": 20,
+    "IsLocked": false,
+    "FileFormat": "png"
+  }
 }
 ```
 
@@ -75,11 +92,30 @@ Image file
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## استجابات الأخطاء
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| حالة HTTP | رمز الخطأ     | الوصف                                              |
+|-----------|----------------|-----------------------------------------------------|
+| 400       | BadRequest     | معلمات مفقودة أو غير صالحة.                         |
+| 401       | Unauthorized   | رمز JWT غير صالح أو مفقود.                          |
+| 404       | NotFound       | لم يتم العثور على ملف العمل أو ورقة العمل أو كائن OLE. |
+| 500       | ServerError    | خطأ غير متوقع في الخادم.                            |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+**مثال على استجابة الخطأ 404**
+
+```json
+{
+  "Code": 404,
+  "Status": "NotFound",
+  "Message": "لم يتم العثور على كائن OLE المطلوب برقم 0 في ورقة العمل 'Sheet1'."
+}
+```
+
+## عائلة SDK للسحابة
+
+استخدام SDK هو أسرع طريقة لدمج الواجهة البرمجية. تُدار التفاصيل من المستوى المنخفض بواسطة SDKs، ما يتيح لك التركيز على منطق عملك. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

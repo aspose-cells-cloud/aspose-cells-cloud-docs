@@ -1,74 +1,121 @@
-﻿---
-title: Получить диаграмму из рабочего листа
+---
+title: "Получение диаграммы из рабочего листа"
 type: docs
-url: /ru/charts/get/
+url: /charts/get/
 aliases: [/get-chart-from-a-worksheet/]
 weight: 10
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получение диаграммы из рабочего листа
+keywords: "Aspose.Cells Cloud, получение диаграммы, рабочий лист, REST API, Excel, API диаграмм, извлечение диаграммы, диаграмма Excel"
+description: "Получение информации о диаграмме, включая метаданные и формат экспорта, из рабочего листа с использованием REST API Aspose.Cells Cloud."
+ArticleTitle: "Получение диаграммы из рабочего листа – API Aspose.Cells Cloud"
 ---
-Этот REST API указывает на получение информации о диаграмме.
- 
-## РСЕT API
- 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}
- 
-```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| chartNumber| целое число| путь| Номер диаграммы.|
-| формат| нить| запрос| Формат экспортированного файла.|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
- 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Этот REST API извлекает информацию о диаграмме.
+
+**Необходимые условия** – Для вызова этого эндпоинта у вас должна быть действующая учетная запись Aspose.Cells Cloud, активное хранилище и JWT-токен доступа. Получите токен, следуя инструкциям в руководстве по аутентификации, прежде чем отправлять какие-либо запросы к API.
+
+## API GetWorksheetChart
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}
+```
+
+### **Безопасность и аутентификация**
+
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации посредством JWT-токена</a>.
+
+### Параметры запроса
+
+| Имя параметра | Тип    | Расположение | Описание                                |
+| ------------- | ------ | ------------ | --------------------------------------- |
+| name          | string | path         | Имя файла Excel.                        |
+| sheetName     | string | path         | Имя рабочего листа, содержащего диаграмму. |
+| chartNumber   | integer| path         | Индекс диаграммы (начиная с 0) для извлечения. |
+| format        | string | query        | Желаемый формат экспорта (например, png, jpeg). |
+| folder        | string | query        | Путь к папке, где сохранён документ.    |
+| storageName   | string | query        | Имя сервиса хранилища.                  |
+
+### **Ответ**
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "Chart": {
+    "Name": "Chart 1",
+    "Type": "Bar",
+    "Top": 50,
+    "Left": 100,
+    "Width": 400,
+    "Height": 300,
+    "DataRange": "A1:B5",
+    "ShowLegend": true,
+    "Format": "png"
+  }
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код  | Значение                    | Описание                                              |
+|------|-----------------------------|-------------------------------------------------------|
+| 200  | OK (Успех)                  | Фильтр применён успешно; ответ содержит детали операции. |
+| 400  | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401  | Unauthorized (Неавторизовано) | Недействительный или отсутствующий JWT-токен.        |
+| 413  | Payload Too Large (Слишком большой payload) | Загруженный файл превышает предельный размер.         |
+| 500  | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                        |
+
+## Как использовать API GetWorksheetChart с SDK
+
+### Спецификация API GetWorksheetChart
+
+[OpenAPI-спецификация](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) определяет публично доступное программное интерфейсное определение и позволяет выполнять REST-взаимодействия прямо из веб-браузера.
+
+Вы можете использовать инструмент командной строки cURL для удобного доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как выполнять вызовы к облачному API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" 
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
-  "Status": "OK"
-
+  "Status": "OK",
+  "Chart": {
+    "Name": "Chart 1",
+    "Type": "Bar",
+    "Top": 50,
+    "Left": 100,
+    "Width": 400,
+    "Height": 300,
+    "DataRange": "A1:B5",
+    "ShowLegend": true,
+    "Format": "png"
+  }
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
-## Семейство облачных SDK
- 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
- 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
- 
+
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK — это лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах вашего проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
+
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-сервисов Aspose.Cells с использованием различных SDK:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

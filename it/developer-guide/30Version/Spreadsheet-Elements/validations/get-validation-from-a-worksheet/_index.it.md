@@ -1,131 +1,122 @@
-﻿---
-title: Ottieni una convalida del foglio di lavoro tramite indice da un foglio di lavoro Excel
-second_title: Documen
-linktitle: Ge
-type: docs
-url: /it/validations/get/
-aliases: [/get-validation-from-a-worksheet/]
-keywords: Get a worksheet validation by index from an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta la convalida di un foglio di lavoro tramite indice da un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 10
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni una convalida del foglio di lavoro tramite indice da un foglio di lavoro Excel
 ---
-Questo REST API indica di ottenere una convalida del foglio di lavoro tramite indice su un foglio di lavoro Excel.
+title: "Ottenere una convalida del foglio di calcolo per indice da un foglio di calcolo Excel"
+second_title: "Document"
+linktype: "Get"
+type: docs
+url: /validations/get/
+aliases: [/get-validation-from-a-worksheet/]
+keywords: "Aspose.Cells Cloud, API per la convalida del foglio di calcolo, ottenere la convalida per indice, API REST di Excel, Aspose.Cells SDK"
+description: "Recuperare una convalida del foglio di calcolo tramite il relativo indice in base zero da un file di lavoro Excel utilizzando l'API Aspose.Cells Cloud (v3.0). Include esempio cURL, schema di risposta, codici di errore e frammenti di codice SDK per C#, Java, Python e altri."
+weight: 10
+---
 
-## RSET API
+Questa API REST recupera una convalida del foglio di calcolo tramite il suo indice da un foglio di calcolo Excel.  
+Prima di chiamare l'endpoint, ottieni un token JWT tramite l'endpoint `/connect/token` e includilo nell'header `Authorization` come `Bearer <jwt token>`.
+
+## API REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
-I parametri della richiesta sono:
+### **Parametri della richiesta**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome del documento.|
-| Nome foglio| corda| sentiero| Nome del foglio di lavoro.|
-| Indice di convalida| intero| sentiero| L'indice di convalida.|
-| cartella| corda| domanda| Cartella del documento.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome parametro  | Tipo    | Posizione | Descrizione                                           |
+| --------------- | ------- | --------- | ----------------------------------------------------- |
+| name            | string  | path      | Nome del file di lavoro.                              |
+| sheetName       | string  | path      | Nome del foglio di calcolo.                           |
+| validationIndex | integer | path      | Indice in base zero della convalida da recuperare.    |
+| folder          | string  | query     | Cartella contenente il file di lavoro.                |
+| storageName     | string  | query     | Nome del servizio di archiviazione.                   |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidation) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidation) definiscono un'interfaccia di programmazione pubblicamente accessibile e consentono di effettuare interazioni REST direttamente da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come chiamare l'API con cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Validation": {
-
     "AlertStyle": "Stop",
-
     "AreaList": [
-
       {
-
         "EndColumn": 0,
-
         "EndRow": 0,
-
         "StartColumn": 0,
-
         "StartRow": 0
-
       },
-
       {
-
         "EndColumn": 27,
-
         "EndRow": 0,
-
         "StartColumn": 26,
-
         "StartRow": 0
-
       }
-
     ],
-
     "IgnoreBlank": false,
-
     "InCellDropDown": false,
-
     "Operator": "None",
-
     "ShowError": false,
-
     "ShowInput": false,
-
     "Type": "AnyValue",
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/Validations/0",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/Validations/0",
       "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+**Schema della risposta**
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+| Campo          | Tipo    | Descrizione                                                                   |
+| -------------- | ------- | ----------------------------------------------------------------------------- |
+| AlertStyle     | string  | Stile dell'avviso mostrato all'utente (Stop, Warning, Information).          |
+| AreaList       | array   | Collezione di intervalli di celle a cui si applica la convalida.             |
+| IgnoreBlank    | boolean | Se `true`, le celle vuote vengono ignorate durante la convalida.             |
+| InCellDropDown | boolean | Se `true`, viene visualizzato un elenco a discesa nella cella.               |
+| Operator       | string  | Operatore di confronto utilizzato per la convalida (ad esempio, `None`, `Between`). |
+| ShowError      | boolean | Determina se mostrare un messaggio di errore in caso di convalida fallita.   |
+| ShowInput      | boolean | Determina se mostrare un messaggio di input quando la cella viene selezionata. |
+| Type           | string  | Tipo di convalida (ad esempio, `AnyValue`, `WholeNumber`, `Decimal`, ecc.).  |
+| link.Href      | string  | URL di riferimento interno alla risorsa di convalida.                        |
+| link.Rel       | string  | Tipo di relazione (sempre `self`).                                           |
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+**Codici di errore possibili**
+
+| Status HTTP | Significato                                                               |
+| ----------- | ------------------------------------------------------------------------- |
+| 200         | Convalida recuperata correttamente.                                       |
+| 400         | Richiesta non valida – parametri mancanti o non validi.                   |
+| 401         | Non autorizzato – token JWT non valido o mancante.                        |
+| 404         | Non trovato – il file di lavoro, il foglio di calcolo o l'indice della convalida non esistono. |
+| 500         | Errore interno del server – condizione imprevista.                        |
+
+## Famiglia di SDK per il cloud
+
+Utilizzare un SDK è il modo più rapido per sviluppare con Aspose.Cells Cloud. Un SDK astrae i dettagli di basso livello, permettendoti di concentrarti sulla logica di business. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -178,3 +169,5 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---

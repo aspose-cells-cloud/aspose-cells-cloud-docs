@@ -1,148 +1,103 @@
-﻿---
-title: Ottieni tutte le forme su un foglio di lavoro Excel
-second_title: Documen
-linktitle: Get-al
+---
+title: "Ottieni tutte le forme in un foglio di calcolo Excel"
+second_title: "Document"
+linktype: "Get-all"
 type: docs
 url: /it/shapes/get-all/
-aliases: [/get-all-shapes-inside-the-worksheet/]
-keywords: Get all shapes on an Excel workshee
-description: Aspose.Cells Cloud REST API supporta l'ottenimento di tutte le forme su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/get-all-shapes-inside-the-worksheet/]
+keywords: "Aspose.Cells, API cloud, forme Excel, ottenere forme, REST, SDK"
+description: "Recupera tutte le forme (grafici, immagini, caselle di testo) da un foglio di calcolo utilizzando l'API REST di Aspose.Cells Cloud. Include esempio cURL, frammenti SDK, passaggi di autenticazione e gestione degli errori."
+ArticleTitle: "Ottieni tutte le forme in un foglio di calcolo Excel"
 weight: 10
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni tutte le forme su un foglio di lavoro Excel
 ---
-Questo REST API indica Ottieni forme del foglio di lavoro
 
-## RSET API
+Questa API REST consente di recuperare tutte le forme in un foglio di calcolo Excel.
+
+## Sicurezza e autenticazione
+Le API di Aspose.Cells Cloud sono sicure e richiedono [autenticazione basata su token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
-I parametri della richiesta sono:
+### Parametri della richiesta
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| nome del documento.|
-| Nome foglio| corda| sentiero| nome del foglio di lavoro.|
-| cartella| corda| domanda| Cartella del documento.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome Parametro  | Tipo   | Posizione | Descrizione                                                                                              |
+| --------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------- |
+| **name**        | string | path     | Il nome del file Excel.                                                                                  |
+| **sheetName**   | string | path     | Il nome del foglio di calcolo.                                                                           |
+| **folder**      | string | query    | La cartella che contiene il documento.                                                                   |
+| **storageName** | string | query    | Il nome del servizio di archiviazione da utilizzare.                                                     |
+| **include**     | string | query    | Impostare su `details` per restituire tutte le proprietà della forma; in caso contrario verranno restituiti solo gli oggetti `link`. |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShapes) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+> **Opzionale**: `folder`, `storageName` e `include` possono essere omissibili quando il file si trova nella cartella radice dell'archiviazione.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+È possibile utilizzare lo strumento a riga di comando cURL per accedere ai servizi web di Aspose.Cells. L'esempio seguente mostra una richiesta che include i parametri di query opzionali.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes?folder=Samples&storageName=MyStorage" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 {
-
-  "Shapes" : {
-
-    "ShapeList" : [
-
+  "Shapes": {
+    "ShapeList": [
       {
-
-        "link" : {
-
-          "Href" : "/0",
-
-          "Rel" : "self",
-
-          "Type" : null,
-
-          "Title" : null
-
+        "link": {
+          "Href": "/0",
+          "Rel": "self",
+          "Type": null,
+          "Title": null
         }
-
       },
-
       {
-
-        "link" : {
-
-          "Href" : "/1",
-
-          "Rel" : "self",
-
-          "Type" : null,
-
-          "Title" : null
-
+        "link": {
+          "Href": "/1",
+          "Rel": "self",
+          "Type": null,
+          "Title": null
         }
-
       },
-
       {
-
-        "link" : {
-
-          "Href" : "/2",
-
-          "Rel" : "self",
-
-          "Type" : null,
-
-          "Title" : null
-
+        "link": {
+          "Href": "/2",
+          "Rel": "self",
+          "Type": null,
+          "Title": null
         }
-
       },
-
       {
-
-        "link" : {
-
-          "Href" : "/3",
-
-          "Rel" : "self",
-
-          "Type" : null,
-
-          "Title" : null
-
+        "link": {
+          "Href": "/3",
+          "Rel": "self",
+          "Type": null,
+          "Title": null
         }
-
       }
-
     ],
-
-    "link" : {
-
-      "Href" : "http://api.aspose.com/v1.1/cells/sampleShapes.xlsx/worksheets/Sheet1/shapes",
-
-      "Rel" : "self",
-
-      "Type" : null,
-
-      "Title" : null
-
+    "link": {
+      "Href": "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes",
+      "Rel": "self",
+      "Type": null,
+      "Title": null
     }
-
   },
-
-  "Code" : 200,
-
-  "Status" : "OK"
-
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
@@ -150,11 +105,38 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+### Campi della risposta
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'oggetto `Shapes` contiene un elenco di elementi `Shape`. Ogni forma include le seguenti proprietà (quando viene utilizzato il flag `include=details`; altrimenti verranno restituiti solo gli oggetti `link`).
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+| Proprietà  | Tipo   | Descrizione                                                                |
+| ---------- | ------ | -------------------------------------------------------------------------- |
+| **Name**   | string | Il nome assegnato alla forma (ad esempio, "Chart 1").                      |
+| **Type**   | string | Il tipo di forma (ad esempio, `Chart`, `Picture`, `TextBox`).              |
+| **Top**    | number | La distanza, in punti, dal bordo superiore del foglio di calcolo alla forma. |
+| **Left**   | number | La distanza, in punti, dal bordo sinistro del foglio di calcolo alla forma. |
+| **Width**  | number | La larghezza della forma in punti.                                         |
+| **Height** | number | L'altezza della forma in punti.                                            |
+| **Link**   | object | Informazioni sull'hyperlink (`Href`, `Rel`, `Type`, `Title`).              |
+
+## Gestione degli errori
+
+| Stato HTTP | Descrizione                                        | Corpo di esempio dell'errore                                         |
+| ---------- | ------------------------------------------------- | -------------------------------------------------------------------- |
+| **400**    | Richiesta non valida – parametri non corretti.    | `{ "Code": 400, "Message": "Valore del parametro non valido." }`     |
+| **401**    | Non autorizzato – token mancante o non valido.    | `{ "Code": 401, "Message": "Token di accesso mancante o non valido." }` |
+| **404**    | Non trovato – cartella di lavoro o foglio inesistente. | `{ "Code": 404, "Message": "File o foglio di calcolo non trovato." }` |
+| **500**    | Errore interno del server – condizione imprevista. | `{ "Code": 500, "Message": "Si è verificato un errore imprevisto." }` |
+
+Una richiesta riuscita restituisce **HTTP 200** con un oggetto `Shapes` contenente l'elenco delle forme, come illustrato nell'esempio di risposta precedente.
+
+L'API impone un limite di **150 richieste al minuto per token JWT**. Superare questo limite restituisce **HTTP 429** con un'intestazione `Retry-After` che indica quando riprovare.
+
+## Famiglia di SDK cloud
+
+Utilizzare un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello e consente di concentrarsi sulle attività del progetto. Consultare il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come effettuare chiamate ai servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

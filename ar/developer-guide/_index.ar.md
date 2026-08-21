@@ -1,25 +1,25 @@
-﻿---
-title: "دليل المطور: التحويل، الدمج، التقسيم، الحماية، البحث، الاستبدال والتحويل - كل ذلك في السحابة Cells"
-second_title: Documen
-linktitle: دليل المطور
-ArticleTitle: Convert, Merge, Split, Protect, Search, Replace & Transform — All in Cells Cloud
-type: docs
-url: /ar/developer-guide/
-aliases: [/developer-guide-v4.0/]
-keywords: How to use Aspose.Cells Cloud REST APIs.  Conversion, Merge, Split, Protect, Search, Replace, Transform. Office Excel 2016,  Office Excel 2019,office Excel 365
-description: يصف دليل المطور هذا السيناريوهات العملية والنصائح لمساعدتك على استخدام ميزات Aspose.Cells for .NET المحددة، أو تحقيق مظهر مستند Excel معين، أو جعل حالة الاستخدام ممكنة
-weight: 20
-kwords: Excel، Office السحابة، REST API، تحويل/دمج/تقسيم/حماية، جدول بيانات، PDF، CSV، JSON، Markdown، دليل المطور
 ---
+title: "دليل المطور: التحويل، الدمج، التقسيم، الحماية، البحث، الاستبدال & التحويل — كل ذلك في خدمة خلايا السحابية."
+second_title: "الوثيقة"
+linktitle: "دليل المطور"
+ArticleTitle: "التحويل، الدمج، التقسيم، الحماية، البحث، الاستبدال & التحويل — كل ذلك في خدمة خلايا السحابية."
+type: docs
+url: /developer‑guide/
+aliases: [/developer‑guide‑v4.0/]
+keywords: "Aspose.Cells Cloud، واجهة برمجة تطبيقات Excel REST، تحويل جداول البيانات، دمج، تقسيم، حماية، بحث واستبدال، تحويل البيانات، أمثلة SDK، Java، .NET، Python، Node.js، PHP، Go، Ruby، Perl"
+description: "دليل مطور شامل لواجهات برمجة تطبيقات Aspose.Cells Cloud REST، يغطي تحويل جداول البيانات، والدمج، والتقسيم، والحماية، والبحث والاستبدال، وتحويل البيانات، مع روابط لأمثلة SDK لـ Java، و.NET، وPython، وNode.js، وPHP، وGo، وRuby، وPerl."
+weight: 20
+---
+
 ## **الميزات الأساسية**
 
-### **تحويل**
+### **التحويل**
 
-- **[حفظ جدول البيانات باسم](https://docs.aspose.cloud/cells/save-an-excel-file-as-other-formats-files/)**
-- **[تحويل جدول بيانات](https://docs.aspose.cloud/cells/convert-spreadsheet/)**
-- **[تحويل مخطط جدول بيانات إلى صورة](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
-- **[تحويل جدول بيانات إلى CSV](https://docs.aspose.cloud/cells/convert-table-to-csv/)**
-- **[تحويل جدول بيانات Rage إلى Json](https://docs.aspose.cloud/cells/convert-range-to-json/)**
+- **[حفظ جدول البيانات بصيغة أخرى](https://docs.aspose.cloud/cells/save-an-excel-file-as-other-formats-files/)**
+- **[تحويل جدول البيانات](https://docs.aspose.cloud/cells/convert-spreadsheet/)**
+- **[تحويل مخطط جدول البيانات إلى صورة](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
+- **[تحويل جدول جدول البيانات إلى CSV](https://docs.aspose.cloud/cells/convert-table-to-csv/)**
+- **[تحويل نطاق جدول البيانات إلى JSON](https://docs.aspose.cloud/cells/convert-range-to-json/)**
 
 ### **معالجة البيانات**
 
@@ -32,32 +32,34 @@ kwords: Excel، Office السحابة، REST API، تحويل/دمج/تقسيم/
 - **[حذف الأعمدة الفارغة في جدول البيانات](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-columns/)**
 - **[استبدال محتوى جدول البيانات](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
 
-### **إدارة**
+### **الإدارة**
 
 - **[إنشاء جدول بيانات جديد](https://docs.aspose.cloud/cells/create-spreadsheet/)**
 - **[إضافة ورقة عمل إلى جدول بيانات](https://docs.aspose.cloud/cells/add-worksheet-to-spreadsheet/)**
 - **[حذف ورقة عمل من جدول بيانات](https://docs.aspose.cloud/cells/delete-worksheet-from-spreadsheet/)**
-- **[إعادة تسمية ورقة العمل في جدول بيانات](https://docs.aspose.cloud/cells/rename-worksheet-in-spreadsheet/)**
+- **[إعادة تسمية ورقة عمل داخل جدول بيانات](https://docs.aspose.cloud/cells/rename-worksheet-in-spreadsheet/)**
 
-### **بحث واستبدال**
+### **البحث والاستبدال**
 
-- **[البحث عن المحتوى في جدول البيانات](https://docs.aspose.cloud/cells/search-spreadsheet-content/)**
-- **[البحث عن الروابط المعطلة في جدول البيانات](https://docs.aspose.cloud/cells/search-spreadsheet-broken-links/)**
+- **[البحث عن محتوى داخل جدول البيانات](https://docs.aspose.cloud/cells/search-spreadsheet-content/)**
+- **[البحث عن الروابط التالفة في جدول البيانات](https://docs.aspose.cloud/cells/search-spreadsheet-broken-links/)**
 - **[استبدال المحتوى في جدول البيانات](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
 
-### **حماية**
+### **الحماية**
 
 - **[حماية جدول البيانات](https://docs.aspose.cloud/cells/protect-spreadsheet/)**
 
-## **الكود والمثال**
+## **الكود والأمثلة**
 
-اكتشف Cells Cloud SDKs على GitHub مجانًا. اطلع على الكود مفتوح المصدر وأمثلة شاملة على حالات الاستخدام:
+اكتشف SDKs لخدمة خلايا السحابية على GitHub مجانًا. احصل على كود مفتوح المصدر وأمثلة واسعة النطاق لحالات الاستخدام:
 
-- [Java أمثلة SDK على Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/tree/master/Examples)
-- [.NET أمثلة SDK على Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/master/examples)
-- [Python أمثلة SDK على Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/tree/master/examples)
-- [أمثلة SDK لـ Node.js على Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/tree/master/Examples)
-- [PHP أمثلة SDK على Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/tree/master/examples)
-- [أمثلة Go SDK على Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/tree/master/examples)
-- [أمثلة SDK Ruby على Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/tree/master/examples)
-- [Perl أمثلة SDK على Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/tree/master/examples)
+- [أمثلة SDK لـ Java على GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/tree/master/Examples)
+- [أمثلة SDK لـ .NET على GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/master/examples)
+- [أمثلة SDK لـ Python على GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/tree/master/examples)
+- [أمثلة SDK لـ Node.js على GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/tree/master/Examples)
+- [أمثلة SDK لـ PHP على GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/tree/master/examples)
+- [أمثلة SDK لـ Go على GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/tree/master/examples)
+- [أمثلة SDK لـ Ruby على GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/tree/master/examples)
+- [أمثلة SDK لـ Perl على GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/tree/master/examples)
+
+---

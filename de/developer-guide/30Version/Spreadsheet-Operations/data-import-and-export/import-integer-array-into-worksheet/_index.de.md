@@ -1,63 +1,95 @@
-﻿---
-title: Importieren Sie ein Integer-Array in das Arbeitsblatt Excel
-linktitle: Integer-Array importieren
-type: docs
-url: /de/import-integer-array-into-excel-worksheet/
-aliases: [/import-integer-array-into-excel-worksheet/,/import-integer-array-into-worksheet/,/import-data/integer-array/, /import/integer-array/]
-keywords: Import integer array data into Excel files
-description: Aspose.Cells Cloud REST API unterstützt den Import von Integer-Array-Daten in Excel Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 30
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Integer-Array in Excel Arbeitsblatt importieren
 ---
-Dieses REST API `import int array data` in Excel Arbeitsblatt.
+title: "Ganzzahl-Array in Excel-Arbeitsblatt importieren"
+linktitle: "Ganzzahl-Array importieren"
+type: docs
+url: /import-integer-array-into-excel-worksheet/
+aliases:
+  - /import-integer-array-into-excel-worksheet/
+  - /import-integer-array-into-worksheet/
+  - /import-data/integer-array/
+  - /import/integer-array/
+keywords: "Aspose.Cells Cloud, Excel, Ganzzahl-Array importieren, REST API, SDK, C#, PHP, Ruby, Java, Python"
+description: "Erfahren Sie, wie Sie ein Ganzzahl-Array mit der Aspose.Cells Cloud REST API in ein Excel-Arbeitsblatt importieren können. Enthält die Anforderungssyntax, Parameter, Beispielcode für mehrere SDKs und Antwortdetails."
+weight: 30
+ArticleTitle: "Ganzzahl-Array in Excel-Arbeitsblatt importieren – Aspose.Cells Cloud API"
+---
 
-Bei der Anfrage handelt es sich um eine HTTP-Anfrage mit mehrteiligem Inhalt (siehe[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)oder[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Der erste Teil des mehrteiligen Inhalts enthält die ImportIntegerArrayOption-Daten und der zweite eine Datendatei.
+Diese REST API importiert ein Ganzzahl-Array in ein Excel-Arbeitsblatt.
 
-## RSET API
+Die Anforderung muss ein HTTP-**POST** mit Multiteil-Inhalt sein (siehe [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) oder [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Der erste Teil des Multiteil-Körpers enthält das JSON-Payload für **ImportIntegerArrayOption**, der zweite Teil enthält die Quelldatendatei (z. B. eine CSV- oder binäre Excel-Datei).
 
-```bash
+## PostImportData API
 
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-Die wichtigen Parameter sind in der folgenden Tabelle beschrieben:
+Beide Endpunkte akzeptieren denselben Multiteil-Inhalt. Der erste Endpunkt führt eine allgemeine Importoperation durch, während der zweite auf eine spezifische Arbeitsmappe mit dem Namen `{name}` abzielt.
 
-**ImportIntegerArrayOption**
+### **Sicherheit und Authentifizierung**
 
-|Parametername|Typ|Beschreibung|
-|:- |:- |:- |
-| Erste Reihe| int||
-| Erste Spalte| int||
-| IsVertical| Schnur| wahr/falsch.|
-| Daten|Ganze Zahl[]||
-|ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
-| IsInsert| Schnur| wahr/falsch.|
-| ImportDataType| Schnur|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Quelle| Dateiquelle| Gibt die Datendateiposition an, wenn der BatchData-Parameter null ist.|
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
-**Beispiel**
+### **Anforderungsparameter**
 
-```JSON
+### ImportIntegerArrayOption
 
+| Parametername           | Typ        | Beschreibung                                                                                                                                                                                    |
+| ----------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **FirstRow**            | int        | Nullbasierter Index der ersten Zeile, in die die Daten eingefügt werden sollen.                                                                                                                |
+| **FirstColumn**         | int        | Nullbasierter Index der ersten Spalte, in die die Daten eingefügt werden sollen.                                                                                                               |
+| **IsVertical**          | boolean    | `true`, um das Array vertikal (einer Spalte nach unten) einzufügen; `false`, um es horizontal (einer Zeile quer) einzufügen.                                                                   |
+| **Data**                | Integer[]  | Das zu importierende Ganzzahl-Array.                                                                                                                                                            |
+| **DestinationWorksheet**| string     | Name des Arbeitsblatts, das die Daten empfangen soll.                                                                                                                                          |
+| **IsInsert**            | boolean    | `true`, um Zeilen/Spalten einzufügen, bevor die Daten geschrieben werden; `false`, um vorhandene Zellen zu überschreiben.                                                                      |
+| **ImportDataType**      | string     | Art der importierten Daten. Gültige Werte: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`.   |
+| **Source**              | FileSource | Gibt die Position der Datendatei an, wenn der Parameter **BatchData** `null` ist.                                                                                                              |
+
+#### Beispiel für Anforderungstext
+
+```json
 {
-    "Data": [1, 2, 4],
-    "DestinationWorksheet": "Sheet1",
-    "FirstRow": 1,
-    "FirstColumn": 2,
-    "IsVertical": true,
-    "IsInsert": true,
-    "importDataType": "IntArray"
+  "Data": [1, 2, 4],
+  "DestinationWorksheet": "Sheet1",
+  "FirstRow": 1,
+  "FirstColumn": 2,
+  "IsVertical": true,
+  "IsInsert": true,
+  "ImportDataType": "IntArray"
 }
-
 ```
 
-## Cloud SDK-Familie
+### Antwort
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Eine erfolgreiche Anforderung gibt **HTTP 200** mit einem JSON-Payload zurück, der folgendermaßen aussieht:
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+Mögliche Statuscodes:
+
+| Code | Bedeutung                                     |
+| ---- | --------------------------------------------- |
+| 200  | Import erfolgreich                             |
+| 400  | Ungültige Anforderung – fehlende oder ungültige Daten |
+| 401  | Nicht autorisiert – ungültiges oder fehlendes Token |
+| 500  | Interner Serverfehler                         |
+
+## Verwendung der PostImportData API mit SDKs
+
+### PostImportData API-Spezifikation
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
+
+### Verwendung von Aspose.Cells Cloud SDKs
+
+Die Verwendung eines SDKs ist die schnellste Möglichkeit, diese Funktion zu integrieren. SDKs verbergen die niederstufigen Details und ermöglichen es Ihnen, sich auf Ihre Geschäftslogik zu konzentrieren. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud).
+
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webservices mit verschiedenen SDKs aufgerufen werden:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 
@@ -80,3 +112,4 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+---

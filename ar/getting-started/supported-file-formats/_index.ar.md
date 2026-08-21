@@ -1,53 +1,55 @@
-﻿---
-title: Aspose.Cells تنسيق الملف المدعوم من السحابة
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud Supported File Formats: Excel, Pdf, CSV, Json, Markdown, and mor"
-linktitle: تنسيق الملف المدعوم
-type: docs
-url: /ar/supported-file-formats/
-description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك
-weight: 40
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تنسيقات الملفات المدعومة
 ---
-|**شكل**|**وصف**|**حمولة**|**يحفظ**|
-|:- |:- |:- |:- |
-|[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Excel 95/5.0 - 2003 كتاب العمل.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|تنسيق ملف Open XML SpreadsheetML Office.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[إكس إل إس بي](https://docs.fileformat.com/spreadsheet/xlsb/)|Excel مصنف ثنائي.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|Excel مصنف ممكّن بالماكرو.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLT](https://docs.fileformat.com/spreadsheet/xlt/)|Excel 97 - Excel 2003 قالب.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[إكس إل تي إكس](https://docs.fileformat.com/spreadsheet/xltx/)|Excel قالب.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[إكس إل تي إم](https://docs.fileformat.com/spreadsheet/xltm/)|Excel قالب ممكّن للماكرو.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[إكس إل إيه إم](https://docs.fileformat.com/spreadsheet/xlam/)|ملف الوظيفة الإضافية الممكنة للماكرو Excel والذي يستخدم لإضافة وظائف جديدة إلى Excel.||{{< emoticons/tick >}}|
-|[ملف CSV](https://docs.fileformat.com/spreadsheet/csv/)|ملف CSV (القيمة المنفصلة بفاصلة).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[تي إس في](https://docs.fileformat.com/spreadsheet/tsv/)|ملف TSV (القيم المنفصلة بعلامات التبويب).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|محدد بعلامات تبويب|ملف نصي مفصول بعلامات التبويب، مثل ملف TSV.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[رسالة قصيرة](https://docs.fileformat.com/word-processing/txt/)|ملف نص عادي محدد.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[HTML](https://docs.fileformat.com/web/html/)|تنسيق HTML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[إم إتش تي إم إل](https://docs.fileformat.com/web/mhtml/)|ملف MHTML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[المواد المستنفدة للأوزون](https://docs.fileformat.com/spreadsheet/ods/)|ODS (جدول بيانات OpenDocument).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|جدول بيانات ML|Excel ملف XML 2003.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[أرقام](https://docs.fileformat.com/spreadsheet/numbers/)|تم إنشاء المستند بواسطة تطبيق "Numbers" من Apple والذي يشكل جزءًا من مجموعة iWork office من Apple، وهي مجموعة من التطبيقات التي تعمل على أنظمة التشغيل Mac OS X وiOS.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[JSON](https://docs.fileformat.com/web/json/)|تدوين كائنات JavaScript|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[ديف](https://docs.fileformat.com/spreadsheet/dif/)|تنسيق تبادل البيانات.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[DBF](https://docs.fileformat.com/database/dbf/)|الملف ذو الامتداد .dbf هو ملف قاعدة بيانات يستخدمه تطبيق نظام إدارة قاعدة البيانات المسمى dBASE.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[PDF](https://docs.fileformat.com/pdf/)|تنسيق المستندات المحمولة من Adobe.||{{< emoticons/tick >}}|
-|[XPS](https://docs.fileformat.com/page-description-language/xps/)|تنسيق مواصفات ورق XML.||{{< emoticons/tick >}}|
-|[SVG](https://docs.fileformat.com/page-description-language/svg/)|تنسيق الرسومات المتجهة القابلة للتطوير.||{{< emoticons/tick >}}|
-|[TIFF](https://docs.fileformat.com/image/tiff/)|تنسيق ملف الصورة المُعلَّمة||{{< emoticons/tick >}}|
-|[PNG](https://docs.fileformat.com/image/png/)|تنسيق الرسومات الشبكية المحمولة||{{< emoticons/tick >}}|
-|[BMP](https://docs.fileformat.com/image/bmp/)|تنسيق صورة نقطية||{{< emoticons/tick >}}|
-|[EMF](https://docs.fileformat.com/image/emf/)|تنسيق ملف التعريف المعزز||{{< emoticons/tick >}}|
-|[JPEG](https://docs.fileformat.com/image/jpeg/)|JPEG هو نوع من تنسيقات الصور التي يتم حفظها باستخدام طريقة الضغط الفاقد.||{{< emoticons/tick >}}|
-|[صورة متحركة](https://docs.fileformat.com/image/gif/)|تنسيق التبادل الرسومي||{{< emoticons/tick >}}|
-|[تخفيض السعر](https://docs.fileformat.com/word-processing/md/)|يمثل مستند تخفيض السعر.|{{< emoticons/tick >}} |{{< emoticons/tick >}}|
-|[إس إكس سي](https://docs.fileformat.com/spreadsheet/sxc/)|تنسيق قائم على XML يستخدمه OpenOffice وStarOffice|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[فودز](https://docs.fileformat.com/spreadsheet/fods/)|هذا هو تنسيق المستند المفتوح المخزن بصيغة XML المسطحة.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[دوككس](https://docs.fileformat.com/word-processing/docx/)|تنسيق معروف لمستندات Word Microsoft وهو عبارة عن مزيج من XML والملفات الثنائية.||{{< emoticons/tick >}}|
-|[PPTX](https://docs.fileformat.com/presentation/pptx/)|يعتمد تنسيق PPTX على تنسيق ملف العرض التقديمي المفتوح XML Microsoft PowerPoint.||{{< emoticons/tick >}}|
-|[إس كيو إل سكريبت](https://docs.fileformat.com/database/sql/)|لغة الاستعلام المنظمة.||{{< emoticons/tick >}}|
-|[إكس إتش تي إم إل](https://docs.fileformat.com/web/xhtml/)|XHTML هو تنسيق ملف نصي يحتوي على علامات في XML، باستخدام إعادة صياغة HTML 4.0.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[إيبوب](https://docs.fileformat.com/ebook/epub/)|الملفات ذات الامتداد .epub عبارة عن تنسيق ملف كتاب إلكتروني يوفر تنسيق نشر رقمي قياسي للناشرين والمستهلكين.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[إكس إم إل](https://docs.fileformat.com/web/xml/)|XML تعني لغة ترميز قابلة للتوسيع وهي مشابهة لـ HTML ولكنها تختلف في استخدام العلامات لتعريف الكائنات.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[أوتس](https://docs.fileformat.com/spreadsheet/ots/)|ملف ورقة قالب المستند المفتوح (OTS).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[AZW3](https://docs.fileformat.com/ebook/azw3/)|AZW هو تنسيق ملف كتاب إلكتروني رقمي طورته شركة أمازون لأجهزة Kindle. AZW3، المعروف أيضًا باسم Kindle Format 8 (KF8).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+title: "تنسيقات الملفات المدعومة في Aspose.Cells Cloud"
+second_title: "مستند"
+ArticleTitle: "تنسيقات الملفات المدعومة في Aspose.Cells Cloud: إكسل، PDF، CSV، JSON، Markdown، والمزيد"
+linktitle: "تنسيقات الملفات المدعومة"
+type: docs
+url: /supported-file-formats/
+description: "استكشف القائمة الكاملة لتنسيقات الملفات التي تدعمها خدمة Aspose.Cells Cloud — الاستيراد والتصدير والتحويل لملفات إكسل، CSV، PDF، JSON، Markdown، ODS، والمزيد."
+weight: 40
+keywords: "Aspose.Cells Cloud، تنسيقات الملفات المدعومة، إكسل، XLSX، CSV، PDF، JSON، Markdown، ODS، تنسيقات الصور، تنسيقات جداول البيانات، تحويل المستندات"
+---
+
+|**التنسيق**|**الوصف**|**التحميل**|**الحفظ**|
+| :- | :- | :- | :- |
+|<a href="https://docs.fileformat.com/spreadsheet/xls/" rel="noopener noreferrer">XLS</a>|ملف مصنف إكسل 95/5.0 – 2003.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/xlsx/" rel="noopener noreferrer">XLSX</a>|تنسيق ملف Excel XML المفتوح (Office Open XML SpreadsheetML).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/xlsb/" rel="noopener noreferrer">XLSB</a>|ملف مصنف إكسل ثنائي (Excel Binary Workbook).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/xlsm/" rel="noopener noreferrer">XLSM</a>|ملف مصنف إكسل مُمكَّن للماكرو (Excel Macro-Enabled Workbook).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/xlt/" rel="noopener noreferrer">XLT</a>|قالب إكسل 97 – 2003.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/xltx/" rel="noopener noreferrer">XLTX</a>|قالب إكسل.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/xltm/" rel="noopener noreferrer">XLTM</a>|قالب إكسل مُمكَّن للماكرو (Excel Macro-Enabled Template).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/xlam/" rel="noopener noreferrer">XLAM</a>|ملف إضافي (Add‑In) لـ إكسل مُمكَّن للماكرو، ويُستخدم لإضافة وظائف جديدة إلى إكسل.|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/csv/" rel="noopener noreferrer">CSV</a>|ملف CSV (القيم المفصولة بالفواصل).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/tsv/" rel="noopener noreferrer">TSV</a>|ملف TSV (القيم المفصولة بالمسافات البادئة).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|TabDelimited|ملف نصي مفصّل بالمسافات البادئة، وهو نفسه ملف TSV.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/word-processing/txt/" rel="noopener noreferrer">TXT</a>|ملف نصي عادي مفصّل.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/web/html/" rel="noopener noreferrer">HTML</a>|تنسيق HTML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/web/mhtml/" rel="noopener noreferrer">MHTML</a>|ملف MHTML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/ods/" rel="noopener noreferrer">ODS</a>|ODS (OpenDocument Spreadsheet – جدول بيانات OpenDocument).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|SpreadsheetML|ملف Excel 2003 XML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/numbers/" rel="noopener noreferrer">Numbers</a>|المستندات التي تم إنشاؤها باستخدام تطبيق "Numbers" التابع لشركة آبل، وهو جزء من حزمة برامج iWork المكتبية التي تعمل على أنظمة التشغيل macOS وiOS.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/web/json/" rel="noopener noreferrer">JSON</a>|JSON (JavaScript Object Notation – تدوين كائن جافا سكريبت).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/dif/" rel="noopener noreferrer">DIF</a>|DIF (Data Interchange Format – تنسيق تبادل البيانات).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/database/dbf/" rel="noopener noreferrer">DBF</a>|ملف الامتداد .dbf هو ملف قاعدة بيانات يُستخدم من قِبل تطبيق إدارة قواعد البيانات المسمّى dBASE.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/pdf/" rel="noopener noreferrer">PDF</a>|PDF (Adobe Portable Document Format – تنسيق المستندات المحمولة من Adobe).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/page-description-language/xps/" rel="noopener noreferrer">XPS</a>|XPS (XML Paper Specification –仕様 تنسيق أوراق XML).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/page-description-language/svg/" rel="noopener noreferrer">SVG</a>|SVG (Scalable Vector Graphics – رسومات متجهة قابلة للتحجيم).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/image/tiff/" rel="noopener noreferrer">TIFF</a>|TIFF (Tagged Image File Format – تنسيق صور مُعلَّمة).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/image/png/" rel="noopener noreferrer">PNG</a>|PNG (Portable Network Graphics – رسومات الشبكة المحمولة).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/image/bmp/" rel="noopener noreferrer">BMP</a>|BMP (Bitmap Image Format – تنسيق صور نقطية).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/image/emf/" rel="noopener noreferrer">EMF</a>|EMF (Enhanced Metafile Format – تنسيق ملفات وصفية محسّنة).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/image/jpeg/" rel="noopener noreferrer">JPEG</a>|JPEG هو نوع من صور الصور المحفوظة باستخدام طريقة ضغط مفقود (lossy compression).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/image/gif/" rel="noopener noreferrer">GIF</a>|GIF (Graphical Interchange Format – تنسيق تبادل الرسوميات).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/word-processing/md/" rel="noopener noreferrer">MARKDOWN</a>|يوفّر مستند Markdown.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/sxc/" rel="noopener noreferrer">SXC</a>|تنسيق قائم على XML يُستخدم من قِبل OpenOffice وStarOffice.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/fods/" rel="noopener noreferrer">FODS</a>|تنسيق Open Document محفوظ بصيغة XML مسطّحة (flat XML).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/word-processing/docx/" rel="noopener noreferrer">DOCX</a>|تنسيق شائع لمستندات Microsoft Word، وهو مزيج من ملفات XML وثنائية.|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/presentation/pptx/" rel="noopener noreferrer">PPTX</a>|تنسيق PPTX مبني على تنسيق عرض Microsoft PowerPoint المفتوح باستخدام XML.|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/database/sql/" rel="noopener noreferrer">SqlScript</a>|SQL (Structured Query Language – لغة الاستعلام المنسّقة).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/web/xhtml/" rel="noopener noreferrer">XHtml</a>|XHTML هو تنسيق ملف نصّي قائم على العلامات باستخدام XML، ويُعدّ إعادة صياغة لـ HTML 4.0.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/ebook/epub/" rel="noopener noreferrer">Epub</a>|الملفات ذات الامتداد .epub هي تنسيق ملفات للكتب الإلكترونية، وتوفّر تنسيقًا رقميًا معياريًا للنشر للمؤلفين والمستهلكين.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/web/xml/" rel="noopener noreferrer">Xml</a>|XML (Extensible Markup Language – لغة الترميز القابلة للتوسعة)، تشبه HTML لكنها تستخدم العلامات لتحديد الكائنات.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/ots/" rel="noopener noreferrer">Ots</a>|ملف Ots (Open Document Template Sheet – قالب جدول بيانات OpenDocument).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/ebook/azw3/" rel="noopener noreferrer">AZW3</a>|AZW هو تنسيق ملف كتب إلكترونية طوّرته أمازون لأجهزتها Kindle. AZW3 يُعرف أيضًا باسم Kindle Format 8 (KF8).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+---

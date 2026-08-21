@@ -1,98 +1,99 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Cerca il contenuto del foglio di lavoro nel foglio di calcolo remoto
-second_title: Documen
-ArticleTitle: Search Worksheet Content in Remote Spreadshee
-linktitle: Cerca il contenuto del foglio di lavoro remoto
-type: docs
-url: /it/search-content-in-remote-worksheet/
-keywords: Excel API, Search Remote Worksheet, Cloud Spreadsheet, REST API, Search Text, Aspose.Cells, Document Search, Spreadsheet AP
-description: Cerca in modo efficiente il testo all'interno di un foglio di lavoro di un foglio di calcolo remoto archiviato nel cloud
-weight: 100
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, JSON, Markdown, Trova tutte le celle vuote in un foglio di lavoro Excel, Ricerca foglio di lavoro remoto
 ---
-Cerca un testo specificato all'interno di un foglio di lavoro di un foglio di calcolo remoto archiviato nel cloud.
+title: "Aspose.Cells Cloud Excel Text Search Web API – Trova testo nel foglio di calcolo remoto"
+second_title: "Documento"
+ArticleTitle: "Cerca testo in un foglio di calcolo Excel remoto – Trova dati specifici"
+linktitle: "Cerca contenuto nel foglio di calcolo remoto"
+type: docs
+url: /search-content-in-remote-worksheet/
+keywords: "Aspose Cells, Excel API, ricerca testo, foglio di calcolo remoto"
+description: "Cerca testo, numeri o formule in un foglio di calcolo Excel remoto utilizzando l'API Aspose.Cells Cloud. Supporta ricerche che non distinguono tra maiuscole e minuscole e file protetti da password."
+weight: 100
+---
 
-## **Dettagli dell'interfaccia**
+## **Cerca contenuto nel foglio di calcolo remoto**
 
-## **Cerca contenuto nel foglio di lavoro remoto**
+Cerca in modo programmatico un testo specifico all'interno di qualsiasi foglio di calcolo Excel utilizzando l'API Aspose.Cells Cloud. Il servizio è in grado di individuare testo, numeri o formule in file remoti memorizzati nello storage cloud, abilitando flussi di lavoro automatizzati per l'individuazione di dati, l'analisi dei contenuti e il controllo dei fogli di calcolo.
 
+### **Web API**
+
+```curl
+PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content
+
+### **Sicurezza e autenticazione**
+
+Le API Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
-### **Parametri di richiesta:**
+### **Parametri della richiesta**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP| Descrizione|
-|:- |:- |:- |:- |
-|nome|Corda|Sentiero|Nome del file della cartella di lavoro da cercare.|
-|foglio di lavoro|Corda|Sentiero|Il nome del foglio di lavoro.|
-|testo di ricerca|Corda|Domanda|Il testo da ricercare.|
-|ignorando il caso|Booleano|Domanda|Indica se ignorare la distinzione tra maiuscole e minuscole durante la ricerca.|
-|cartella|Corda|Domanda|Percorso della cartella in cui è archiviata la cartella di lavoro.|
-|Nome di archiviazione|Corda|Domanda|(Facoltativo) Il nome dell'archiviazione se si utilizza un archivio cloud personalizzato. Se omesso, viene utilizzato l'archivio predefinito.|
-|regione|Corda|Domanda|Impostazione della regione del foglio di calcolo.|
-|password|Corda|Domanda|La password per aprire il file del foglio di calcolo.|
+| Nome parametro | Tipo    | Percorso/Query String/Corpo HTTP | Descrizione                                                                                       |
+| -------------- | ------- | -------------------------------- | ------------------------------------------------------------------------------------------------- |
+| name           | String  | Percorso                         | **Obbligatorio.** Il nome del file del workbook target (ad esempio, `annual_report.xlsx`).       |
+| worksheet      | String  | Percorso                         | **Obbligatorio.** Il foglio di calcolo all'interno del workbook in cui viene eseguita la ricerca. |
+| searchText     | String  | Query                            | **Obbligatorio.** La stringa esatta o il numero da individuare.                                   |
+| ignoreCase     | Boolean | Query                            | **Facoltativo.** Se `true`, la ricerca non distingue tra maiuscole e minuscole. Default: `false`. |
+| folder         | String  | Query                            | **Facoltativo.** Percorso della cartella contenente il workbook. Se omesso, viene usata la root.  |
+| storageName    | String  | Query                            | **Facoltativo.** Nome di uno storage cloud configurato personalmente. Se omesso, viene usato lo storage predefinito. |
+| region         | String  | Query                            | **Facoltativo.** Impostazione locale (ad esempio, `it-IT`) che potrebbe influenzare il confronto tra testi. |
+| password       | String  | Query                            | **Facoltativo.** Password per un workbook protetto. Omettere se il file non è crittografato.      |
 
 ### **Risposta**
 
 ```json
 {
-  "Name": "BrokenLinksResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "Properties": [
+  "textItems": [
     {
-      "Name": "BrokenLinks",
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "BrokenLink",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "BrokenLink",
-        },
-      }
+      "cellName": "A1",
+      "text": "Totale",
+      "occurrences": 1
     },
     {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
+      "cellName": "B5",
+      "text": "Totale",
+      "occurrences": 2
     }
-  ]
+  ],
+  "code": 200,
+  "status": "OK"
 }
 ```
 
-### Codici di errore
+- **textItems** – Array di corrispondenze. Ogni elemento contiene l'indirizzo della cella (`cellName`), la stringa corrispondente (`text`) e il numero di occorrenze in quella cella (`occurrences`).
+- **code** – Codice di stato HTTP restituito dal servizio.
+- **status** – Descrizione testuale del risultato.
 
-- **400 Richiesta non valida**: URI Apose.Cells Cloud API non valido.
-- **401 Non autorizzato**: Token di accesso non valido. Oppure ID client e segreto non validi.
-- **404 Non trovato**: Il file del foglio di calcolo non è accessibile.
-- **Errore del server 500**: Il foglio di calcolo ha riscontrato un'anomalia nell'ottenimento dei dati di calcolo.
+### **Codici di errore**
 
-## Dove dovremmo utilizzare il contenuto di ricerca all'interno del foglio di lavoro del foglio di calcolo API?
+- **400 Bad Request** – URI API non valido o parametri malformati.
+- **401 Unauthorized** – Token OAuth 2.0 mancante o non valido.
+- **404 Not Found** – Impossibile individuare il workbook o il foglio di calcolo.
+- **500 Server Error** – Si è verificata una condizione imprevista durante l'elaborazione della richiesta.
 
-Quando hai bisogno di cercare contenuti all'interno del foglio di lavoro di Spreadsheet, puoi utilizzare questo API.
+## Dove dovremmo utilizzare la funzione di ricerca del contenuto all'interno del foglio di calcolo dell'API Spreadsheet?
 
-## Perché dovresti usare il contenuto di Ricerca all'interno del foglio di lavoro del Foglio di calcolo API?
+- **Audit di conformità del workbook:** individua rapidamente termini sensibili (ad esempio, “Riservato”) in tutto il file.
+- **Associazione di dati tra fogli:** trova un numero di progetto o un nome cliente che appare su più fogli.
+- **Verifica dei modelli:** dopo la generazione di report, conferma che i segnaposto come `{{Date}}` siano stati sostituiti.
+- **Estrazione di dati storici:** cerca codici di eventi specifici in fogli di calcolo legacy per comprendere la logica aziendale passata.
 
-- Cerca senza sforzo i contenuti all'interno di un foglio di calcolo remoto con questo API.
-- Lo sviluppo può essere completato rapidamente tramite l'SDK esistente.
+## Perché dovresti utilizzare la funzione di ricerca del contenuto all'interno del foglio di calcolo dell'API Spreadsheet?
 
-## Come utilizzare la ricerca di collegamenti interrotti all'interno del foglio di lavoro del foglio di calcolo API con SDK
+- **Facile da usare per gli sviluppatori:** SDK per molti linguaggi accelerano lo sviluppo e sono completamente documentati.
+- **Riduzione dei costi del personale:** riduce la necessità di personale dedicato alla raccolta manuale di dati.
+- **Pagamento in base all'uso:** paghi solo per le chiamate API effettivamente effettuate.
+- **Nessuna manutenzione richiesta:** nessun server da gestire, nessun aggiornamento software e nessun problema di compatibilità.
+- **Preserva la formattazione complessa di Excel** quando esporti i risultati in PDF o altri formati.
 
-### Specifiche OpenAPI
+## Come utilizzare la ricerca di link rotti all'interno del foglio di calcolo dell'API Spreadsheet con gli SDK
 
- IL[Specifiche OpenAPI](https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteWorksheet) definisce un'interfaccia di programmazione accessibile al pubblico e consente interazioni REST direttamente da un browser web.
+### Specifica OpenAPI
 
-### Utilizzare gli SDK cloud Aspose.Cells
+La [Specifiche OpenAPI](https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteWorksheet) definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono interazioni REST direttamente da un browser web.
 
-Utilizzare l'SDK è il modo migliore per accelerare lo sviluppo. L'SDK gestisce i dettagli sottostanti, consentendo di implementare in modo semplice i contenuti di ricerca all'interno di fogli di lavoro o fogli di calcolo per celle, con un codice minimo.
- Si prega di controllare il[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+### Utilizzare gli SDK Aspose.Cells Cloud
 
-I seguenti esempi di codice mostrano come chiamare i servizi Web Aspose.Cells utilizzando vari SDK:
+L'utilizzo dell'SDK è il modo migliore per velocizzare lo sviluppo. L'SDK gestisce i dettagli sottostanti, consentendoti di implementare semplicemente la ricerca di contenuti all'interno del foglio di calcolo per celle con un codice minimo. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per l'elenco completo degli SDK Aspose.Cells Cloud.

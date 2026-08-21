@@ -1,74 +1,135 @@
-﻿---
-title: Konvertera listobjekt till intervall i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Konvertering
-type: docs
-url: /sv/list-objects/to-range/
-aliases: [/convert-list-object-or-table-to-range/,/tables/to-range/]
-keywords: Convert a list object(table) to range in an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder konvertering av ett listobjekt (tabell) till ett intervall i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 30
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Konvertera listobjekt till intervall i ett Excel-kalkylblad
 ---
-Denna REST API anger `convert table or list object to range` i ett Excel-arbetsblad.
+title: "Konvertera listobjekt till intervall – Aspose.Cells Cloud API"
+ArticleTitle: "Konvertera listobjekt till intervall med Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Konvertering"
+type: docs
+url: /list-objects/to-range/
+aliases:
+  - /convert-list-object-or-table-to-range/
+  - /tables/to-range/
+keywords: "Aspose Cells API, konvertera listobjekt till intervall, Excel REST API"
+description: "Lär dig hur du konverterar ett Excel-listobjekt (tabell) till ett intervall med Aspose.Cells Cloud REST API. Innehåller begäransyntax, parametrar, exempel på cURL, svarschema, autentiseringsinformation, felkoder och SDK-exempel."
+weight: 30
+---
 
-## RSET API
+Denna REST API konverterar ett **listobjekt (tabell)** till ett **intervall** i ett Excel-ark.
+
+**Förutsättningar:**  
+Innan du anropar endpointet, se till att arbetsboken är uppladdad till din Aspose Cloud-lagring, att arket innehåller det mål-listobjektet och att du använder ett format som stöds (t.ex. .xlsx, .xlsm).
+
+## REST API
+
+**Autentisering**  
+För att kunna utföra den här åtgärden måste du inkludera en giltig JWT-token i `Authorization`-headern. Skaffa token genom att skicka en POST-begäran till OAuth 2.0-tokenändpunkten med ditt klient-ID och klienthemlighet. Token måste inkludera scope:et `Cells.ReadWrite` och är giltig under den tid som token-tjänsten anger.
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg||
-| arknamn| sträng| väg||
-| listaObjektindex| heltal| väg||
-| mapp| sträng| fråga||
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:n är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectConvertToRange) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begärparametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Namn                | Typ     | Plats  | Obligatoriskt | Standardvärde | Beskrivning                                            |
+| ------------------- | ------- | ------ | ------------- | ------------- | ------------------------------------------------------ |
+| **name**            | string  | path   | Ja            | –             | Namnet på Excel-filen.                                 |
+| **sheetName**       | string  | path   | Ja            | –             | Namnet på arket som innehåller listobjektet.           |
+| **listObjectIndex** | integer | path   | Ja            | –             | Nollbaserat index för listobjektet (tabellen) som ska konverteras. |
+| **folder**          | string  | query  | Nej           | –             | Mappväg där filen lagras.                              |
+| **storageName**     | string  | query  | Nej           | –             | Namn på lagringstjänsten.                              |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+> **Obs!** Denna åtgärd fungerar endast med moderna Excel-format som **.xlsx** och **.xlsm**. Listobjektet får inte vara skyddat. Mer information om listobjekt finns i [Översikt över listobjekt](/list-objects/). För detaljer om hur du arbetar med intervall, se [intervall-dokumentationen](/ranges/).
+
+### cURL-exempel (begäran)
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects/0/ConvertToRange" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <ditt-jwt-token>"
 ```
 
 {{< /tab >}}
 
+#### Svarschema
+
+API:t returnerar ett **200 OK**-svar med information om det nyskapade intervallet.
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "RangeName": "A1:C10",
+  "Address": "Sheet1!A1:C10",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "RowCount": 10,
+  "ColumnCount": 3
+}
+```
+
+| Fält            | Typ     | Beskrivning                                     |
+| --------------- | ------- | ----------------------------------------------- |
+| **Code**        | integer | HTTP-liknande statuskod (200 anger lyckad åtgärd). |
+| **Status**      | string  | Textuell statusmeddelande.                      |
+| **RangeName**   | string  | Det namn som tilldelats det skapade intervallet. |
+| **Address**     | string  | Fullständig adress till intervallet, inklusive arknamn. |
+| **FirstRow**    | integer | Nollbaserat index för första raden i intervallet. |
+| **FirstColumn** | integer | Nollbaserat index för första kolumnen i intervallet. |
+| **RowCount**    | integer | Antal rader i intervallet.                      |
+| **ColumnCount** | integer | Antal kolumner i intervallet.                   |
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                            |
+|-----|-----------------------------|--------------------------------------------------------|
+| 200 | OK                          | Filter har tillämpats korrekt; svaret innehåller åtgärdens information. |
+| 400 | Bad Request                 | Saknade eller ogiltiga parametrar (t.ex. filformat som inte stöds). |
+| 401 | Unauthorized                | Ogiltig eller saknad JWT-token. |
+| 413 | Payload Too Large           | Den uppladdade filen överskrider storleksgränsen.     |
+| 500 | Internal Server Error       | Oväntat serverfel.                                     |
+
+**Felsvarschema (exempel):**
+
+```json
+{
+  "Code": 400,
+  "Message": "Ogiltigt listObjectIndex. Index måste ligga mellan 0 och 5."
+}
+```
+
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK",
+  "RangeName": "A1:C10",
+  "Address": "Sheet1!A1:C10",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "RowCount": 10,
+  "ColumnCount": 3
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## Moln-SDK-familj
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå så att du kan fokusera på dina projektuppgifter. Titta in på [GitHub-repositoriet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:n.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med olika SDK:n:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

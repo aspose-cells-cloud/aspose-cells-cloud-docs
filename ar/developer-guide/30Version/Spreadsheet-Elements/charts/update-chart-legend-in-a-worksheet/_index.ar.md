@@ -1,66 +1,67 @@
-﻿---
-title: تحديث أسطورة الرسم البياني في ورقة العمل
+---
+title: "تحديث أسطورة المخطط في ورقة عمل"
 type: docs
-url: /ar/charts/legend/update/
+url: /charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تحديث أسطورة الرسم البياني في ورقة عمل
+keywords: "Aspose.Cells، السحابة، Excel، مخطط، أسطورة، واجهة برمجة التطبيقات REST، تحديث، ورقة عمل، cURL، SDK"
+description: "كيفية تحديث أسطورة مخطط في ورقة عمل Excel باستخدام واجهة برمجة التطبيقات REST لـ Aspose.Cells Cloud، مع أمثلة لطلبات cURL وأكواد مقتطفات SDK بلغات برمجة متعددة."
+ArticleTitle: "تحديث أسطورة المخطط في ورقة عمل – دليل واجهة برمجة تطبيقات Aspose.Cells Cloud"
 ---
-يشير هذا REST API إلى أسطورة مخطط التحديث
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
- 
-```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مؤشر الرسم البياني| عدد صحيح| طريق| مؤشر الرسم البياني.|
-| أسطورة|| جسم||
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
 
- 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+تقوم هذه الواجهة البرمجية (REST API) بتحديث أسطورة المخطط.
+
+**المتطلبات المسبقة:** لاستخدام هذه النهاية (endpoint)، يجب أن تمتلك رمز JWT صالح لـ Aspose Cloud، ويجب أن يكون الملف المطلوب مخزنًا في موقع دعم للتخزين (الافتراضي هو مستودع Aspose Cloud). تأكد من أن اسم الملف، واسم ورقة العمل، وفهرس المخطط صحيحة.
+
+تعرض أسطورة المخطط أسماء ورموز سلاسل البيانات في المخطط. يسمح لك التحديث بالأسطورة بتخصيص مظهرها، مثل نمط الخط، واللون، والظل.
+
+## واجهة PostWorksheetChartLegend برمجية
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
+```
+
+### **الأمان والمصادقة**
+
+تتطلب واجهات برمجة تطبيقات Aspose.Cells Cloud مصادقة قائمة على رمز <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token</a>، وهي آمنة.
+
+### معاملات الطلب
+
+| اسم المعامل      | النوع    | الموقع | الوصف                                        |
+| ---------------- | -------- | ------ | --------------------------------------------- |
+| name             | string   | path   | اسم ملف العمل (Workbook).                     |
+| sheetName        | string   | path   | اسم ورقة العمل.                               |
+| chartIndex       | integer  | path   | فهرس المخطط المراد تعديله.                    |
+| legend           | object   | body   | كائن JSON يُعرّف إعدادات الأسطورة.             |
+| folder           | string   | query  | المجلد الذي يحتوي على ملف العمل.              |
+| storageName      | string   | query  | اسم المستودع (Storage).                       |
+
+يُعرّف [مواصفة OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend) واجهة برمجة تطبيقات عامة قابلة للاستخدام، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات Aspose.Cells عبر الويب. يُظهر المثال التالي كيفية استدعاء واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" 
--d '{"Font":{"Color":{"A":"1", "R":"255", "G":"0", "B":"0"}, "DoubleSize":10.0, "IsBold":true, "IsItalic":false, "IsStrikeout":false, "IsSubscript":false, "IsSuperscript":false, "Name":"Arial", "Size":15, "Underline":"None"}, "Shadow":true}' 
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
+-d '{"Font":{"Color":{"A":"1","R":"255","G":"0","B":"0"},"DoubleSize":10.0,"IsBold":true,"IsItalic":false,"IsStrikeout":false,"IsSubscript":false,"IsSuperscript":false,"Name":"Arial","Size":15,"Underline":"None"},"Shadow":true}' \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
 
 {{< /tab >}}
@@ -68,11 +69,10 @@ curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet
 {{< /tabs >}}
 
 ## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
- 
+
+استخدام SDK يُسرّع عملية التطوير، حيث يتعامل SDK مع التفاصيل منخفضة المستوى، مما يمكّنك من التركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

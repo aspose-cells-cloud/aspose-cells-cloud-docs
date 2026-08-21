@@ -1,83 +1,139 @@
-﻿---
-title: Descifrar un libro de trabajo Excel
-second_title: Documen
-linktitle: Descifrar un archivo Excel
-type: docs
-url: /es/excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/,/workbook/decrypt/]
-keywords: REST API, spreadsheets, excel, decryp
-description: "Cells.Cloud API para Excel opera: descifrar un libro de trabajo Excel"
-weight: 50
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Descifrar un libro de trabajo Excel
 ---
-Este REST API descifra un Excel `workbook`.
+title: "Descifrar un libro de Excel"
+second: "Documento"
+linktitle: "Descifrar un archivo de Excel"
+type: docs
+url: /excel-file-decrypt/
+aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+keywords: "Aspose.Cells, descifrado de Excel, API REST, SDK en la nube"
+description: "Aprenda cómo descifrar un libro de Excel utilizando la API REST de Aspose.Cells Cloud. Incluye parámetros requeridos, ejemplo de cURL, ejemplos de código con SDK y detalles sobre manejo de errores."
+ArticleTitle: "Cómo descifrar un libro de Excel utilizando la API de Aspose.Cells Cloud"
+weight: 50
+---
 
-**Parámetro de consulta**
+**Prerrequisitos**
 
-|Nombre del parámetro|Tipo|Descripción|
-|:- |:- |:- |
-|carpeta|cadena|Carpeta del libro de trabajo original.|
-|nombreDeAlmacenamiento|cadena|Nombre de almacenamiento.|
+- Un token de acceso JWT válido.
+- El libro debe estar cargado en el almacenamiento de Aspose Cloud y su ruta especificada en el parámetro de consulta `folder`.
 
-**Parámetro del cuerpo de la solicitud**
+## API DeleteDecryptWorkbook
 
-|Nombre del parámetro|Tipo|Descripción|
-|:- |:- |:- |
-|cifrado|Solicitud de cifrado del libro de trabajo||
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/encryption
+```
 
-**Solicitud de cifrado del libro de trabajo**
+### **Seguridad y autenticación**
 
-|Nombre del parámetro|Tipo|Descripción|
-|:- |:- |:- |
-|Tipo de cifrado|cadena|XOR/Compatible/Proveedor criptográfico mejorado V1/Proveedor criptográfico fuerte|
-|Longitud de clave|entero||
-|Contraseña|cadena||
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
-## RESTO API
+### Parámetros de consulta
 
-|**API**|**Tipo**|**Descripción**|**Enlace Swagger**|
-|:- |:- |:- |:- |
-|/células/{nombre}/cifrado|DELTE|Descifrar un documento|[EliminarDescifrarLibro](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook)|
+| Nombre del parámetro | Tipo   | Descripción                                           |
+| --------------------- | ------ | ----------------------------------------------------- |
+| folder                | string | Ruta de la carpeta donde se encuentra el libro original. |
+| storageName           | string | Nombre del almacenamiento donde reside el libro.      |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+### Parámetro del cuerpo de la solicitud
 
- Puedes utilizar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+| Nombre del parámetro | Tipo                      | Descripción                                          |
+| --------------------- | ------------------------- | ---------------------------------------------------- |
+| encryption            | WorkbookEncryptionRequest | Configuraciones de cifrado necesarias para el descifrado. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### WorkbookEncryptionRequest
+
+| Nombre del parámetro | Tipo    | Descripción                                                                                                    |
+| --------------------- | ------- | -------------------------------------------------------------------------------------------------------------- |
+| EncryptionType        | string  | Algoritmo de cifrado (`XOR`, `Compatible`, `EnhancedCryptographicProviderV1`, `StrongCryptographicProvider`). |
+| KeyLength             | integer | Longitud de la clave de cifrado en bits.                                                                      |
+| Password              | string  | Contraseña utilizada para el descifrado.                                                                       |
+
+### Respuesta
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Ejemplos de respuestas de error**
+
+```json
+{
+  "Code": "400",
+  "Message": "Parámetros de solicitud inválidos."
+}
+```
+
+```json
+{
+  "Code": "401",
+  "Message": "La autenticación falló. Token JWT inválido o faltante."
+}
+```
+
+```json
+{
+  "Code": "413",
+  "Message": "Carga útil demasiado grande. El archivo cargado supera el tamaño permitido."
+}
+```
+
+```json
+{
+  "Code": "500",
+  "Message": "Error interno del servidor. Intente nuevamente más tarde."
+}
+```
+
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                              |
+| ------ | --------------------------- | -------------------------------------------------------- |
+| 200    | OK                          | Filtro aplicado correctamente; la respuesta contiene los detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros faltantes o inválidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT inválido o faltante.                           |
+| 413    | Carga útil demasiado grande | El archivo cargado supera el límite de tamaño.          |
+| 500    | Error interno del servidor  | Error inesperado del servidor.                           |
+
+## Cómo utilizar la API DeleteDecryptWorkbook con SDK
+
+### Especificación de la API DeleteDecryptWorkbook
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) define una interfaz de programación públicamente accesible y permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar **cURL** para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo llamar a la API en la nube con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "accept: application/json" -H "Content-Type: application/json" -H "x-aspose-client: Containerize.Swagger" -d "{ \"EncryptionType\": \"XOR\", \"KeyLength\": 1280, \"Password\": \"aspose\"}"
-
+```bash
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -d '{ "EncryptionType": "XOR", "KeyLength": 1280, "Password": "aspose"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
-  "Code":"200",
-
-  "Status":"OK"
-
+  "Code": "200",
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
-{{< /tabs >}}
+### Utilizar los SDK de Aspose.Cells Cloud
 
-## Familia de SDK en la nube
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK maneja los detalles de bajo nivel para que usted se enfoque en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
-
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells utilizando distintos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

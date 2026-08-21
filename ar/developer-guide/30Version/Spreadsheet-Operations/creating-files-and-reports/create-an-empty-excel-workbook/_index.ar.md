@@ -1,129 +1,111 @@
-﻿---
-title: إنشاء دفتر عمل فارغ Excel
-second_title: Documen
-linktitle: دفتر عمل فارغ
-type: docs
-url: /ar/create-an-empty-excel-file/
-aliases: [/create-an-empty-excel-workbook/,/workbook/new/,/workbook/create/empty-workbook/]
-keywords: How to create an Excel workbook
-description: Aspose.Cells Cloud REST API كيفية إنشاء مصنف فارغ Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إنشاء مصنف فارغ Excel
 ---
-يشير هذا REST API إلى إنشاء `empty workbook`.
+title: "إنشاء مصنف Excel فارغ"
+second_title: "مستند"
+linktitle: "مصنف فارغ"
+type: docs
+url: /create-an-empty-excel-file/
+aliases:
+  [
+    /create-an-empty-excel-workbook/,
+    /workbook/new/,
+    /workbook/create/empty-workbook/,
+  ]
+keywords: "Aspose.Cells، السحابة، إكسل، مصنف فارغ، REST API، SDK"
+description: "تعلم كيفية إنشاء مصنف إكسل فارغ باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن أمثلة باستخدام cURL و SDKs."
+weight: 20
+ArticleTitle: "إنشاء مصنف إكسل فارغ باستخدام واجهة Aspose.Cells Cloud API"
+---
 
-**معلمة الاستعلام**
+تقوم هذه الواجهة البرمجية REST بإنشاء **مصنف فارغ**.
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|ملف القالب|خيط||
-|ملف البيانات|خيط||
-|isWriteOver|خيط| صواب/خطأ|
-|مجلد|خيط|مجلد المصنف الأصلي.|
-|اسم التخزين|خيط|اسم التخزين.|
+## PutWorkbookCreate API
 
-**معلمة نص الطلب**
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}
+```
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|بيانات|ملف||
+### **الأمان والمصادقة**
 
-## الباقي API
+تُعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتحتاج إلى <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-|**API**|**يكتب**|**وصف**|**رابط المورد**|
-|:- |:- |:- |:- |
-|/الخلايا/{الاسم}|يضع|إنشاء مصنف عمل فارغ|[وضع إنشاء مصنف](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate)|
+### معاملات الاستعلام
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+| اسم المعامل | النوع   | الوصف                                                      |
+|-------------|---------|------------------------------------------------------------|
+| templateFile| string  | مسار ملف مصنف قالب لاستخدامه كأساس (اختياري).             |
+| dataFile    | string  | مسار ملف بيانات لتعبئة المصنف به (اختياري).                |
+| isWriteOver | boolean | `true` للكتابة فوق الملف الموجود؛ و `false` خلاف ذلك.      |
+| folder      | string  | المجلد الوجهة للمصنف الذي تم إنشاؤه (اختياري).             |
+| storageName | string  | اسم خدمة التخزين المراد استخدامها.                         |
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### معامل جسم الطلب
+
+| اسم المعامل | النوع | الوصف                                           |
+|-------------|-------|-------------------------------------------------|
+| data        | file  | المحتوى الثنائي لملف المصنف المراد إنشاؤه.      |
+
+### **الاستجابة**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                        | وقت الإرجاع                              |
+|-------|-------------------------------|------------------------------------------|
+| 200 OK | تم إنشاء المصنف بنجاح          | التدفق الطبيعي                           |
+| 201 Created | تم إنشاء المصنف (استجابة بديلة) | عندما تُعيد الواجهة البرمجية حالة "تم الإنشاء" |
+| 400 Bad Request | معاملات غير صالحة         | خطأ من جانب العميل                        |
+| 401 Unauthorized | رمز مفقود أو غير صالح     | خطأ في المصادقة                          |
+| 409 Conflict | الملف موجود و `isWriteOver=false` | تضارب مع الملف الموجود                   |
+
+## كيفية استخدام PutWorkbookCreate API باستخدام SDKs
+
+### مواصفات PutWorkbookCreate API
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) واجهة برمجة تطبيقات قابلة للوصول العام وتسمح لك بإجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول إلى خدمات Aspose.Cells عبر الويب. تضمين رأس `Authorization` مع رمز وصول OAuth2/JWT ساري المفعول. بالنسبة لمصنف فارغ، يكون جسم الطلب اختياريًا؛ وإذا احتجت إلى رفع ملف، أضف `--data-binary @empty.xlsx` كما هو موضح أدناه.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?isWriteOver=false" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
-
+```bash
+# إنشاء مصنف فارغ باسم newworkbook.xlsx
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?isWriteOver=false" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     --data-binary @empty.xlsx   # احذف هذا السطر للمصنف الفارغ تمامًا
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-  "Status": "string",
-  "Workbook": {
-    "FileName": "string",
-    "Links": [
-      {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    ],
-    "Worksheets": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "DefaultStyle": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "DocumentProperties": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Names": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Settings": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "IsWriteProtected": "string",
-    "IsProtected": "string",
-    "IsEncryption": "string",
-    "Password": "string"
-  }
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
-
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. فهي تُجرّدك من التفاصيل منخفضة المستوى لتتمكن من التركيز على مهام مشروعك. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -176,3 +158,4 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?isWriteOver=fa
 {{< /tab >}}
 
 {{< /tabs >}}
+---

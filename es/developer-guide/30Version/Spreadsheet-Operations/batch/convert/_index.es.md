@@ -1,76 +1,119 @@
-﻿---
-title: Conversión por lotes del archivo Excel
-second_title: Documen
-type: docs
-url: /es/batch/convert
-keywords: Batch conversion of multiple excel files
-description: Aspose.Cells Cloud API admite la conversión por lotes de varios archivos de Excel. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 100
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Conversión por lotes
 ---
-Este REST API indica `batch conversion` de archivos elegibles
+title: "Conversión por lotes de archivos de Excel"
+second_title: "Documento"
+type: docs
+url: /batch/convert
+keywords: "conversión por lotes, Excel, Aspose.Cells Cloud, API REST, PDF, CSV, JSON, Markdown, hoja de cálculo"
+description: "Aprenda a utilizar la API de Aspose.Cells Cloud para convertir por lotes varios archivos de Excel en formatos como PDF, CSV, JSON o Markdown. Esta guía incluye detalles sobre los puntos finales de la API REST, parámetros de solicitud, ejemplo de cURL y fragmentos de código SDK para varios lenguajes."
+weight: 100
+---
 
-## RSET API
+Esta API REST permite la **conversión por lotes** de archivos compatibles.
+
+## API REST
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/convert
- 
 ```
 
-Los parámetros de la solicitud son:
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| Solicitud de conversión por lotes|| cuerpo||
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
-**Propiedades de BatchConvertRequest**
+### Parámetros de solicitud
 
-Nombre | Tipo | Descripción | Notas
------------- | ------------- | ------------- | -------------
-CarpetaOrigen | cadena | | [opcional]CondiciónDeCoincidencia | SolicitudDeCondiciónDeCoincidencia | | [opcional]Formato | cadena | | [opcional]CarpetaDeSalida | cadena | | [opcional]OpcionesDeGuardado | OpcionesDeGuardado | | [opcional]**Propiedades de MatchConditionRequest**
+| Nombre del parámetro | Tipo   | Ubicación | Descripción                                           |
+|----------------------|--------|-----------|-------------------------------------------------------|
+| **batchConvertRequest** | objeto | cuerpo    | Cuerpo de la solicitud que contiene la configuración de conversión. |
 
-Nombre | Tipo | Descripción | Notas
------------- | ------------- | ------------- | -------------
- RegexPattern | cadena | | [opcional]FullMatchConditions | cadena[]| | [opcional]El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/PostBatchConvert) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+#### Propiedades de BatchConvertRequest
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+| Nombre             | Tipo                  | Descripción                                           | Notas       |
+|--------------------|-----------------------|-------------------------------------------------------|-------------|
+| **SourceFolder**   | string                | Ruta a la carpeta que contiene los archivos de Excel de origen. | [opcional]  |
+| **MatchCondition** | MatchConditionRequest | Condiciones utilizadas para seleccionar archivos para la conversión. | [opcional]  |
+| **Format**         | string                | Formato de destino para la conversión (por ejemplo, `pdf`, `csv`). | [opcional]  |
+| **OutFolder**      | string                | Carpeta de destino donde se guardarán los archivos convertidos. | [opcional]  |
+| **SaveOptions**    | SaveOptions           | Opciones adicionales que controlan cómo se guardan los archivos. | [opcional]  |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+#### Propiedades de MatchConditionRequest
+
+| Nombre                  | Tipo       | Descripción                                          | Notas       |
+|-------------------------|------------|------------------------------------------------------|-------------|
+| **RegexPattern**        | string     | Expresión regular utilizada para filtrar nombres de archivos. | [opcional]  |
+| **FullMatchConditions** | string[]   | Lista de condiciones exactas de nombres de archivos para coincidencia. | [opcional]  |
+
+
+### Parámetro del cuerpo de solicitud
+
+| Nombre del parámetro | Tipo | Descripción                                    |
+| --------------------- | ---- | ---------------------------------------------- |
+| data                  | archivo | Contenido binario del archivo de libro para crear. |
+  
+### **Respuesta**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**Códigos de estado HTTP**
+
+| Código | Significado                  | Cuándo se devuelve                     |
+|--------|------------------------------|----------------------------------------|
+| 200 OK | Libro creado correctamente   | Flujo normal                           |
+| 201 Created | Libro creado (respuesta alternativa) | Cuando la API devuelve un estado de creado |
+| 400 Bad Request | Parámetros inválidos | Error del lado del cliente             |
+| 401 Unauthorized | Token faltante o inválido | Error de autenticación               |
+| 409 Conflict | El archivo ya existe y `isWriteOver=false` | Conflicto con el archivo existente |
+
+## Cómo utilizar la API PostBatchConvert con SDK
+
+### Especificación de la API PostBatchConvert
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/PostBatchConvert) define una interfaz de programación públicamente accesible y permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/convert" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\",\"SaveOptions\":{\"SaveFormat\":\"pdf\",\"CalculateFormula\":true,\"EnableHTTPCompression\":true,\"OnePagePerSheet\":true,\"CreateDirectory\":false,\"Compliance\":\"None\"}}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\",\"SaveOptions\":{\"SaveFormat\":\"pdf\",\"CalculateFormula\":true,\"EnableHTTPCompression\":true,\"OnePagePerSheet\":true,\"CreateDirectory\":false,\"Compliance\":\"None\"}}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Familia de SDK en la nube
+### Utilizar los SDK de Aspose.Cells Cloud
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor manera de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells utilizando varios SDK:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 
@@ -106,7 +149,7 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Batch-Convet.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Examples-Batch-Convet.js" >}}
 
 {{< /tab >}}
 

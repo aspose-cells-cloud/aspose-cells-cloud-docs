@@ -1,46 +1,80 @@
-﻿---
-title: Hämta MinDataColumn från arbetsbladet Excel
+---
+title: "Hämta MinDataColumn – Aspose.Cells Cloud API-referens (v3.0)"
 type: docs
 url: /sv/get-mindatacolumn-from-excel-worksheet/
 weight: 110
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta MinDataColumn från Excel-arbetsblad
+keywords: "Aspose.Cells Cloud, MinDataColumn, Excel-arbetsblad, REST API, API-referens, v3.0, dataspalt, moln-API"
+description: "Hämta den mest vänstra kolumnen som innehåller data i ett Excel-arbetsblad via Aspose.Cells Cloud REST API (v3.0). Inkluderar autentiseringsinformation, begärsyntax, exempel på JSON-svar, felkoder och SDK-utdrag."
+ArticleTitle: "Hämta MinDataColumn – Aspose.Cells Cloud API-referens (v3.0)"
 ---
-Denna REST API indikerar att en `mindatacolumn` hämtas i en Excel-fil när parametern `cellOrMethodName` är `mindatacolumn`.
 
-- **cURL Exempel**
+**`mindatacolumn`**-ändpunkten returnerar det nollbaserade indexet för den mest vänstra kolumnen som innehåller någon celldata i ett angivet arbetsblad.  
+Med andra ord anger den vilken kolumn som är den första som faktiskt innehåller data.
 
+> **Definition** – `mindatacolumn`: indexet (börjar vid 0) för den första kolumnen som innehåller data i arbetsbladet.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Förutsättningar**  
+- Ett giltigt OAuth2-åtkomsttoken krävs.  
+- Excel-filen måste vara uppladdad till Aspose Cloud-lagring.
+
+**Begärparametrar**
+
+| Parameter                | Typ    | Obligatorisk | Beskrivning                                      |
+|--------------------------|--------|--------------|--------------------------------------------------|
+| `fileName`               | sträng | Ja           | Namn på Excel-filen som finns lagrad i molnlagring. |
+| `sheetName`              | sträng | Ja           | Namn på arbetsbladet från vilket kolumnindexet ska hämtas. |
+| `Authorization` (huvud)  | sträng | Ja           | Bearer-token för OAuth2-autentisering.          |
+
+- **cURL-exempel**
+
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mindatacolumn" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
+```
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mindatacolumn" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mindatacolumn" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MinDataColumn": 2
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK-familjen**
+**HTTP-statuskoder**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Kod | Betydelse                 | Beskrivning                                         |
+|-----|---------------------------|-----------------------------------------------------|
+| 200 | OK                        | Filtrering lyckades; svaret innehåller åtgärdens information. |
+| 400 | Felaktig begäran          | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Inte auktoriserad         | Ogiltig eller saknad JWT-token.                     |
+| 413 | För stor nyttolast        | Den uppladdade filen överskrider storleksgränsen.   |
+| 500 | Internt serverfel         | Oväntat serverfel.                                  |
+---
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+- Använd Aspose.Cells Cloud SDK:n
 
+Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK hanterar detaljer på lågnivå och låter dig fokusera på din projektlogik. Kontrollera [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:n.
 
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:n:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -76,7 +110,7 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetMinDataColumnWorksheet-1.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetMinDataColumnWorksheet-1.js" >}}
 
 {{< /tab >}}
 
@@ -103,3 +137,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

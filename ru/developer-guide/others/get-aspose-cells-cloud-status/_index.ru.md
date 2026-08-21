@@ -1,45 +1,72 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Получить Aspose Cells Cloud Status
-second_title: Documen
-ArticleTitle: Get Aspose.Cells Cloud Run Statu
-linktitle: Получите Aspose Cells Облачный статус
+---
+title: "Aspose.Cells Cloud Web API — Получение состояния Aspose.Cells Cloud"
+second_title: "Документ"
+ArticleTitle: "Получение состояния Aspose.Cells Cloud"
+linktitle: "Получение состояния Aspose.Cells Cloud"
 type: docs
 url: /ru/get-aspose-cells-cloud-status/
-keywords: Aspose, Cells, Cloud, API, Health Status, Excel, REST, Service Monitoring, SLA Complianc
-description: Мониторинг состояния облачного сервиса Aspose.Cells в режиме реального времени
+keywords: "Aspose.Cells, Cloud API, проверка работоспособности, Excel, REST"
+description: "Мониторинг состояния работоспособности службы Aspose.Cells Cloud в режиме реального времени."
 weight: 100
-kwords: Excel API, Aspose Облако, REST API, Проверка работоспособности, Облачная служба, Задержка ответа, Частота ошибок, Мониторинг SLA, Устранение неполадок интеграции
 ---
-Получайте информацию о состоянии облачного сервиса Aspose.Cells в режиме реального времени.
 
-## **Получить Aspose.Cells Cloud Status API Endpoint**
+Получение состояния работоспособности службы Aspose.Cells Cloud в режиме реального времени.
+
+**Необходимые условия:** Для вызова этого API необходимо получить токен доступа Bearer, используя учетные данные клиента Aspose Cloud. Включите токен в заголовок `Authorization` в формате `Bearer {access_token}`.
+
+## **Получение состояния Aspose.Cells Cloud**
+
+### **Web API**
+
+Конечная точка использует метод HTTP **GET** и не требует тела запроса.
 
 ```
-GET http://api.aspose.cloud/v4.0/cells
+GET https://api.aspose.cloud/v4.0/cells
 ```
+
+### **Безопасность и аутентификация**
+
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
 ### **Параметры запроса:**
 
-| Имя параметра| Тип| Путь/Строка запроса/Тело HTTP| Описание|
-|:- |:- |:- |:- |
+| Имя параметра | Тип   | Путь/Строка запроса/Тело HTTP-запроса | Описание                                |
+| ------------- | ----- | ------------------------------------- | --------------------------------------- |
+| Authorization | Строка | Заголовок                             | Bearer-токен для аутентификации (обязательный). |
+| format        | Строка | Параметр запроса                      | Желаемый формат ответа, например `json`. |
 
 ### **Ответ**
 
 ```json
 {
-String
+  "status": "OK",
+  "service": "Aspose.Cells Cloud",
+  "timestamp": "2026-07-06T12:34:56Z"
 }
 ```
 
-## Как использовать Get Aspose.Cells Cloud Status API с SDK
+**Схема ответа**
+
+| Поле      | Тип                | Описание                               |
+| --------- | ------------------ | -------------------------------------- |
+| status    | string             | Состояние сервиса (`OK`, `Degraded` и т.д.). |
+| service   | string             | Имя сервиса.                           |
+| timestamp | string (ISO‑8601)  | Время выполнения проверки состояния.   |
+
+API возвращает стандартный JSON-ответ, содержащий текущее состояние работоспособности службы Aspose.Cells Cloud.
+
+**Коды HTTP-статуса**
+
+- **200 OK** — Сервис работоспособен, ответ содержит информацию о состоянии.
+- **401 Unauthorized** — Отсутствует или недействителен токен аутентификации.
+- **503 Service Unavailable** — Сервис временно недоступен (например, в режиме обслуживания или при возникновении проблем).
+
+## Как использовать API получения состояния Aspose.Cells Cloud с помощью SDK
 
 ### Спецификация OpenAPI
 
- The[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/CellsStatusController/GetAsposeCellsCloudStatus) определяет общедоступный программный интерфейс, позволяющий выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/CellsStatusController/GetAsposeCellsCloudStatus) определяет общедоступное программное интерфейсное описание, позволяющее выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-### Используйте облачные SDK Aspose.Cells
+### Использование SDK Aspose.Cells Cloud
 
-Использование SDK — лучший способ ускорить разработку. SDK берёт на себя все базовые детали, позволяя вам легко реализовать функцию get aspose.cells cloud run status для ячеек с минимальным количеством кода.
- Пожалуйста, проверьте[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
-
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Использование SDK упрощает интеграцию и снижает объем шаблонного кода. SDK обрабатывает все низкоуровневые детали, позволяя получить состояние работы Aspose.Cells Cloud с минимальными усилиями. Ознакомьтесь со [страницей репозитория на GitHub](https://github.com/aspose-cells-cloud), чтобы увидеть полный список SDK Aspose.Cells Cloud.

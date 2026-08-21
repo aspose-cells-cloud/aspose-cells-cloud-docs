@@ -1,33 +1,65 @@
-﻿---
-title: Aspose.Cells Cloud Web APIs – Konvertieren Sie eine Kalkulationstabelle in ein anderes Dateiformat, einschließlich Arbeitsblätter, Tabellen, Diagramme und Datenbereiche
-second_title: Documen
-ArticleTitle: Convert spreadsheets, worksheets, tables, and ranges to other format files
-linktitle: Konvertierung
+---
+title: "Aspose.Cells Cloud Web API: Umfassende Lösung für die Konvertierung von Tabellendatenformaten"
+second_title: "Dokument"
+ArticleTitle: "Web-APIs für Online-Konvertierung von Excel-Dateien"
+linktype: "Konvertierung"
 type: docs
 url: /de/conversion/
-keywords: Aspose.Cells Cloud Web APIs, Spreadsheet conversion, worksheet conversion, table conversion, range conversion,Excel Cloud APIs, RES
-description: Detaillierte Anleitung zum Konvertieren von Tabellen, Arbeitsblättern, Tabellen und Bereichen in verschiedene Formate, einschließlich PDF, Bild, HTML, CSV, JSON und Markdown
+keywords: "Aspose.Cells, Cloud API, Tabellenkonvertierung, Excel zu PDF, Excel zu CSV, Excel zu JSON, REST API, SDK"
+description: "Erfahren Sie, wie Sie Excel-Bereiche, Diagramme, Tabellen, Arbeitsblätter oder ganze Tabellendateien mithilfe der Aspose.Cells Cloud REST API in PDF, Bilder, HTML, CSV, JSON, Markdown und XML konvertieren können. Schnelle, sichere Lösung ohne Installation mit SDKs für .NET, Java, Python und weitere Sprachen."
 weight: 20
-kwords: Aspose.Cells Cloud-APIs, Tabellenkalkulationskonvertierung, Arbeitsblattkonvertierung, Tabellenkonvertierung, Bereichskonvertierung, Excel Cloud-APIs, RES
 ---
-- **[Konvertieren Sie ein Tabellenkalkulationsdiagramm in ein Bild.](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
-- **[Konvertieren Sie ein Tabellenkalkulationsdiagramm in eine PDF-Datei.](https://docs.aspose.cloud/cells/convert-chart-to-pdf/)**
-- **[Konvertieren Sie einen Tabellenkalkulationsbereich in eine CSV-Datei.](https://docs.aspose.cloud/cells/convert-range-to-csv/)**
-- **[Konvertieren Sie einen Tabellenkalkulationsbereich in eine HTML-Datei.](https://docs.aspose.cloud/cells/convert-range-to-html/)**
-- **[Konvertieren Sie einen Tabellenkalkulationsbereich in ein Bild.](https://docs.aspose.cloud/cells/convert-range-to-image/)**
-- **[Konvertieren Sie einen Tabellenkalkulationsbereich in eine JSON-Datei.](https://docs.aspose.cloud/cells/convert-range-to-json/)**
-- **[Konvertieren Sie einen Tabellenkalkulationsbereich in eine PDF-Datei.](https://docs.aspose.cloud/cells/convert-range-to-pdf/)**
-- **[Konvertieren Sie eine Tabelle in eine Datei mit einem anderen Format.](https://docs.aspose.cloud/cells/convert-spreadsheet/)**
-- **[Konvertieren Sie eine Tabellenkalkulationstabelle in eine CSV-Datei.](https://docs.aspose.cloud/cells/convert-table-to-csv/)**
-- **[Konvertieren Sie eine Tabellenkalkulationstabelle in eine HTML-Datei.](https://docs.aspose.cloud/cells/convert-table-to-html/)**
-- **[Konvertieren Sie eine Tabellenkalkulationstabelle in ein Bild.](https://docs.aspose.cloud/cells/convert-table-to-image/)**
-- **[Konvertieren Sie eine Tabellenkalkulationstabelle in eine JSON-Datei.](https://docs.aspose.cloud/cells/convert-table-to-json/)**
-- **[Konvertieren Sie eine Tabellenkalkulationstabelle in eine PDF-Datei.](https://docs.aspose.cloud/cells/convert-table-to-pdf/)**
-- **[Konvertieren Sie ein Tabellenkalkulationsblatt in ein Bild.](https://docs.aspose.cloud/cells/convert-worksheet-to-image/)**
-- **[Konvertieren Sie ein Tabellenkalkulationsblatt in eine PDF-Datei.](https://docs.aspose.cloud/cells/convert-worksheet-to-pdf/)**
-- **[Exportieren Sie ein Tabellenkalkulationsdiagramm als Datei in einem anderen Format.](https://docs.aspose.cloud/cells/export-chart-as-format/)**
-- **[Exportieren Sie einen Tabellenkalkulationsbereich als Datei in einem anderen Format.](https://docs.aspose.cloud/cells/export-range-as-format/)**
-- **[Exportieren Sie einen Tabellenkalkulationsbereich als Datei in einem anderen Format.](https://docs.aspose.cloud/cells/export-spreadsheet-as-format/)**
-- **[Exportieren Sie eine Tabellenkalkulationstabelle als Datei in einem anderen Format.](https://docs.aspose.cloud/cells/export-table-as-format/)**
-- **[Exportieren Sie ein Tabellenkalkulationsblatt als Datei in einem anderen Format.](https://docs.aspose.cloud/cells/export-worksheet-as-format/)**
-- **[Speichern Sie eine Tabelle als Datei in einem anderen Format.](https://docs.aspose.cloud/cells/save-spreadsheet-as/)**
+
+## Toolkit zur Konvertierung von Tabellendaten
+
+Ermöglichen Sie mithilfe der Aspose.Cells Cloud API problemlos die Konvertierung in mehrere Formate für Tabellendaten. Unterstützt die umfassende Exportfunktion für Arbeitsblätter, Tabellen, Diagramme und Datenbereiche, einschließlich PDF, Bilder, CSV, JSON und weitere. Cloud-basierte Verarbeitung, keine Installation erforderlich, mit REST API und SDK-Unterstützung.
+
+### Bereichskonvertierung
+
+- **[Konvertieren Sie einen Tabellenbereich in eine CSV-Datei.](https://docs.aspose.cloud/cells/convert-range-to-csv/)**
+- **[Konvertieren Sie einen Tabellenbereich in eine HTML-Datei.](https://docs.aspose.cloud/cells/convert-range-to-html/)**
+- **[Konvertieren Sie einen Tabellenbereich in eine JSON-Datei.](https://docs.aspose.cloud/cells/convert-range-to-json/)**
+- **[Konvertieren Sie einen Tabellenbereich in eine PDF-Datei.](https://docs.aspose.cloud/cells/convert-range-to-pdf/)**
+- **[Exportieren Sie einen Tabellenbereich in ein anderes Dateiformat.](https://docs.aspose.cloud/cells/export-range-as-format/)**
+- **[Exportieren Sie eine Tabellendatei in ein anderes Dateiformat.](https://docs.aspose.cloud/cells/export-spreadsheet-as-format/)**
+- **[Konvertieren Sie einen Tabellenbereich in ein Bild.](https://docs.aspose.cloud/cells/convert-range-to-image/)**
+
+### Diagrammkonvertierung
+
+- **[Konvertieren Sie ein Tabellendiagramm in ein Bild.](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
+- **[Konvertieren Sie ein Tabellendiagramm in eine PDF-Datei.](https://docs.aspose.cloud/cells/convert-chart-to-pdf/)**
+- **[Exportieren Sie ein Tabellendiagramm in ein anderes Dateiformat.](https://docs.aspose.cloud/cells/export-chart-as-format/)**
+
+### Tabellenkonvertierung
+
+- **[Konvertieren Sie eine Tabellentabelle in eine CSV-Datei.](https://docs.aspose.cloud/cells/convert-table-to-csv/)**
+- **[Konvertieren Sie eine Tabellentabelle in eine HTML-Datei.](https://docs.aspose.cloud/cells/convert-table-to-html/)**
+- **[Konvertieren Sie eine Tabellentabelle in ein Bild.](https://docs.aspose.cloud/cells/convert-table-to-image/)**
+- **[Konvertieren Sie eine Tabellentabelle in eine JSON-Datei.](https://docs.aspose.cloud/cells/convert-table-to-json/)**
+- **[Konvertieren Sie eine Tabellentabelle in eine PDF-Datei.](https://docs.aspose.cloud/cells/convert-table-to-pdf/)**
+- **[Exportieren Sie eine Tabellentabelle in ein anderes Dateiformat.](https://docs.aspose.cloud/cells/export-table-as-format/)**
+
+### Arbeitsblattkonvertierung
+
+- **[Konvertieren Sie ein Arbeitsblatt in ein Bild.](https://docs.aspose.cloud/cells/convert-worksheet-to-image/)**
+- **[Konvertieren Sie ein Arbeitsblatt in eine PDF-Datei.](https://docs.aspose.cloud/cells/convert-worksheet-to-pdf/)**
+- **[Exportieren Sie ein Arbeitsblatt in ein anderes Dateiformat.](https://docs.aspose.cloud/cells/export-worksheet-as-format/)**
+
+### Tabellendatenkonvertierung
+
+- **[Speichern Sie eine Tabellendatei in einem anderen Dateiformat.](https://docs.aspose.cloud/cells/save-spreadsheet-as/)**
+- **[Konvertieren Sie eine Tabellendatei in ein anderes Dateiformat.](https://docs.aspose.cloud/cells/convert-spreadsheet/)**
+
+## Unterstützungs-Matrix für Formate
+
+| Zielformat | Bereich | Diagramm | Tabelle | Arbeitsblatt | Tabellendatei |
+| :--------- | :------ | :------- | :------ | :----------- | :------------ |
+| **PDF**    | Ja      | Ja       | Ja      | Ja           | Ja            |
+| **Bild**   | Ja      | Ja       | Ja      | Ja           | Ja            |
+| **HTML**   | Ja      | Ja       | Ja      | Ja           | Ja            |
+| **CSV**    | Ja      | Nein     | Ja      | Ja           | Ja            |
+| **JSON**   | Ja      | Nein     | Ja      | Ja           | Ja            |
+| **Markdown**| Ja     | Nein     | Ja      | Ja           | Ja            |
+| **XML**    | Ja      | Nein     | Ja      | Ja           | Ja            |
+
+---

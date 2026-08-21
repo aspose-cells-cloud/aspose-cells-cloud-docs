@@ -1,46 +1,48 @@
-﻿---
-title: Excel Workshe'den MaxColumn'u alın
+---
+title: "Excel Çalışma Sayfasından MaxColumn Değerini Alın"
 type: docs
 url: /tr/get-maxcolumn-from-excel-worksheet/
 weight: 60
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel Çalışma Sayfasından MaxColumn'u Al
+keywords: "Aspose Cells API, maxcolumn, Excel çalışma sayfası, REST, SDK"
+description: "Aspose.Cells Cloud API kullanarak bir çalışma sayfasının maksimum sütun dizinini alın. Kimlik doğrulama ile cURL isteği, yanıt şeması, parametreler, hata kodları ve SDK örnekleri (C#, Java, Python vb.) içerir."
 ---
-Bu REST API, `cellOrMethodName` parametresi `maxcolumn` olduğunda Excel dosyasında `maxcolumn` alındığını gösterir.
 
-- **cURL Örnek**
+Bu REST API, `cellOrMethodName` parametresi `maxcolumn` olarak ayarlandığında bir Excel çalışma sayfasındaki maksimum sütun dizinini döndürür.
 
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+- **cURL Örneği**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxcolumn"  -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxcolumn" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MaxColumn": 15
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Bulut SDK Ailesi**
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+- **Aspose.Cells Cloud SDK’larını Kullanın**
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. SDK, düşük seviye ayrıntıları yöneterek projenizin mantığına odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-
+Aşağıdaki kod örnekleri, Aspose.Cells web servislerini farklı SDK’lar kullanarak nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -87,6 +89,8 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
+<!-- Swift örneği (şu anda sağlanmamaktadır) -->
 
 {{< /tab >}}
 

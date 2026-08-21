@@ -1,76 +1,164 @@
-﻿---
-title: Aggiorna un oggetto elenco in un foglio di lavoro Excel
-second_title: Documen
-linktitle: Aggiornamento
-type: docs
-url: /it/list-objects/update/
-aliases: [/update-a-list-object-or-table-inside-the-worksheet/,/tables/update/]
-keywords: Update a list object(table) in an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'aggiornamento di un oggetto elenco (tabella) in un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Aggiorna un oggetto elenco in un foglio di lavoro Excel
 ---
-Questo REST API indica le proprietà `update` e `list object`.
+title: "Aggiorna un oggetto elenco in un foglio di calcolo Excel"
+ArticleTitle: "Aggiorna un oggetto elenco in un foglio di calcolo Excel – Documentazione dell'API Aspose.Cells Cloud"
+second_title: "Documento"
+linktitle: "Aggiorna"
+type: docs
+url: /list-objects/update/
+aliases:
+  - /update-a-list-object-or-table-inside-the-worksheet/
+  - /tables/update/
+keywords: "Aspose.Cells, ListObject, Aggiorna tabella, API Excel, REST, SDK cloud, aggiornamento oggetto elenco, foglio di calcolo Excel, tabella"
+description: "Scopri come aggiornare una tabella Excel utilizzando l'API Aspose.Cells Cloud (v3.0). Include endpoint, parametri, esempio cURL, codici di errore ed esempi di SDK."
+weight: 20
+---
 
-## RSET API
+Questa REST API consente di aggiornare le proprietà di un **oggetto elenco** (tabella) in un foglio di calcolo Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}
- 
+## Sicurezza e autenticazione
+
+Le API Aspose.Cells Cloud sono sicure e richiedono l'[autenticazione basata su token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## Schema del corpo della richiesta
+
+Il DTO `listObject` contiene i campi seguenti. Sono richiesti nel corpo della richiesta soltanto i campi che si desidera modificare.
+
+| Campo                                           | Tipo               | Obbligatorio | Descrizione                                                                |
+| ----------------------------------------------- | ------------------ | ------------ | -------------------------------------------------------------------------- |
+| **DisplayName**                                 | stringa            | opzionale    | Nome visualizzato per la tabella.                                          |
+| **StartRow** / **StartColumn**                  | intero             | opzionale    | Indice in base zero della prima riga/colonna della tabella.               |
+| **EndRow** / **EndColumn**                      | intero             | opzionale    | Indice in base zero dell'ultima riga/colonna della tabella.               |
+| **Range**                                       | stringa            | opzionale    | Indirizzo in stile A1 che definisce l'intervallo della tabella (es. `A1:D10`). |
+| **ShowHeaderRow**                               | booleano           | opzionale    | `true` per visualizzare la riga di intestazione.                          |
+| **ShowTotals**                                  | booleano           | opzionale    | `true` per visualizzare la riga dei totali.                               |
+| **TableStyleName**                              | stringa            | opzionale    | Nome dello stile di tabella predefinito da applicare.                     |
+| **TableStyleType**                              | stringa            | opzionale    | Tipo di stile (`TableStyleLight`, `TableStyleMedium`, ecc.).              |
+| **ListColumns**                                 | array di oggetti   | opzionale    | Collezione di definizioni di colonne (`Name`, `TotalsCalculation`).       |
+| **Sorter**, **AutoFilter**, **ShowTableStyle…** | oggetto            | opzionale    | Opzioni avanzate di formattazione e filtraggio (vedere il DTO completo nella specifica OpenAPI). |
+
+### Payload di esempio minimo
+
+```json
+{
+  "DisplayName": "SalesData",
+  "Range": "A1:E20",
+  "ShowHeaderRow": true,
+  "ShowTotals": false
+}
 ```
 
-I parametri della richiesta sono:
+## REST API
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome del documento.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| indiceoggettoelenco| intero| sentiero| elenco Indice degli oggetti|
-| oggetto elenco|| corpo| listObject dto nel corpo della richiesta.|
-| cartella| corda| domanda| Cartella del documento.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+```bash
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}
+```
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObject) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### **Parametri della richiesta**
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Nome del parametro  | Tipo    | Posizione | Descrizione                             |
+| ------------------- | ------- | --------- | --------------------------------------- |
+| **name**            | stringa | path      | Nome del documento.                     |
+| **sheetName**       | stringa | path      | Nome del foglio di calcolo.             |
+| **listObjectIndex** | intero  | path      | Indice dell'oggetto elenco da aggiornare. |
+| **listObject**      | oggetto | body      | DTO `ListObject` nel corpo della richiesta. |
+| **folder**          | stringa | query     | Cartella contenente il documento.       |
+| **storageName**     | stringa | query     | Nome dello storage.                     |
+
+La [specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObject) definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di effettuare interazioni REST direttamente da un browser web.
+
+### Richiesta
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet7/listobjects/0" \
--X POST \
--d "{ \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" }, \"AutoFilter\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" }, \"FilterColumns\": [ { \"FieldIndex\": 0, \"FilterType\": \"string\", \"MultipleFilters\": { \"MatchBlank\": true, \"MultipleFilterList\": [ {} ] }, \"ColorFilter\": { \"FilterByFillColor\": \"string\", \"Pattern\": \"string\", \"Color\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" }, \"ForegroundColorColor\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" }, \"BackgroundColor\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" } }, \"CustomFilters\": [ { \"FilterOperatorType\": \"string\" } ], \"DynamicFilter\": { \"DynamicFilterType\": \"string\" }, \"IconFilter\": { \"IconId\": 0, \"IconSetType\": \"string\" }, \"Top10Filter\": { \"Criteria\": \"string\", \"IsPercent\": true, \"IsTop\": true, \"Items\": 0 }, \"Visibledropdown\": \"string\" } ], \"Range\": \"string\", \"Sorter\": { \"CaseSensitive\": true, \"HasHeaders\": true, \"KeyList\": [ { \"Key\": 0, \"SortOrder\": \"string\", \"CustomList\": \"string\" } ], \"SortLeftToRight\": true } }, \"DisplayName\": \"string\", \"StartColumn\": 0, \"StartRow\": 0, \"EndColumn\": 0, \"EndRow\": 0, \"ListColumns\": [ { \"Name\": \"string\", \"TotalsCalculation\": \"string\" } ], \"ShowHeaderRow\": true, \"ShowTableStyleColumnStripes\": true, \"ShowTableStyleFirstColumn\": true, \"ShowTableStyleLastColumn\": true, \"ShowTableStyleRowStripes\": true, \"ShowTotals\": true, \"TableStyleName\": \"string\", \"TableStyleType\": \"string\"}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+    "DisplayName": "SalesData",
+    "Range": "A1:E20",
+    "ShowHeaderRow": true,
+    "ShowTotals": false,
+    "ListColumns": [
+      { "Name": "Product", "TotalsCalculation": "None" },
+      { "Name": "Quantity", "TotalsCalculation": "Sum" },
+      { "Name": "Price", "TotalsCalculation": "Average" }
+    ]
+  }'
 ```
 
 {{< /tab >}}
 
+### Risposta
+
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+La risposta in caso di esito positivo include i campi seguenti:
+
+| Campo                     | Tipo   | Descrizione                                                      |
+| ------------------------- | ------ | ---------------------------------------------------------------- |
+| **Code**                  | intero | Codice di stato HTTP (200 per successo).                         |
+| **Status**                | stringa| Descrizione testuale dello stato.                                |
+| **UpdatedObject** *(opzionale)* | oggetto | Rappresentazione dell’`ListObject` aggiornato, contenente i campi modificati. |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+## Risposte di errore
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+| Codice HTTP | Descrizione                                                            | Payload di esempio                                      |
+| ----------- | ---------------------------------------------------------------------- | ------------------------------------------------------- |
+| **400**     | Richiesta non valida – campi obbligatori mancanti o JSON malformato.  | `{ "Code": 400, "Message": "Invalid request body." }`   |
+| **401**     | Non autorizzato – token JWT mancante o non valido.                    | `{ "Code": 401, "Message": "Authentication failed." }`  |
+| **404**     | Non trovato – il foglio di calcolo, il foglio o l'oggetto elenco specificati non esistono. | `{ "Code": 404, "Message": "Resource not found." }` |
+| **500**     | Errore interno del server – condizione imprevista lato server.        | `{ "Code": 500, "Message": "Server error." }`           |
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+## Domande frequenti (FAQ)
+
+<details>  
+<summary>Come aggiorno un oggetto elenco utilizzando l'API Aspose.Cells Cloud?</summary>
+
+Utilizzare l'endpoint `POST /cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}`. Includere nel corpo JSON le proprietà da modificare (es. `DisplayName`, `ShowHeaderRow`). Eseguire l'autenticazione tramite token JWT nell'intestazione `Authorization`.
+
+</details>
+
+<details>  
+<summary>Che risposta ricevo dopo un aggiornamento riuscito?</summary>
+
+Viene restituito un oggetto JSON con `Code: 200` e `Status: "OK"`. In caso di errore, la risposta contiene il codice di stato HTTP appropriato e un oggetto `Error` che descrive il problema.
+
+</details>
+
+<details>  
+<summary>Posso aggiornare solo un sottoinsieme delle proprietà dell'oggetto elenco?</summary>
+
+Sì. Includere nel corpo della richiesta soltanto i campi che si desidera modificare; tutti gli altri campi rimangono invariati.
+
+</details>
+
+## Documentazione correlata
+
+- [Aggiungi un oggetto elenco](https://docs.aspose.cloud/cells/list-objects/add/)
+- [Ottieni oggetto elenco](https://docs.aspose.cloud/cells/list-objects/get/)
+- [Elimina oggetto elenco](https://docs.aspose.cloud/cells/list-objects/delete/)
+
+## Famiglia di SDK cloud
+
+L'utilizzo di un SDK rappresenta il modo più rapido per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -100,7 +188,7 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostWorksheetListObject.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PostWorksheetListObject.ts" >}}
 
 {{< /tab >}}
 

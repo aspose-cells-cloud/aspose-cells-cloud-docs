@@ -1,63 +1,69 @@
-﻿---
-title: 从 Excel 工作表中获取行描述
-second_title: Documen
-linktitle: 罗
-type: docs
-url: /zh/rows/get/row/
-aliases: [/get-row-from-a-worksheet/]
-keywords: Get row info on an Excel workshee
-description: Aspose.Cells Cloud REST API 支持获取 Excel 工作表的行信息。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 10
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表获取行描述
 ---
-此 REST API 表示通过 Excel 工作表上的行索引获取行数据。
+title: "从 Excel 工作表中获取行描述"
+second_title: "Document"
+linktitle: "行"
+type: docs
+url: /rows/get/row/
+aliases: [/get-row-from-a-worksheet/]
+keywords: "Aspose.Cells Cloud、Excel 行 API、获取工作表行、REST API、.NET SDK、Java SDK、Python SDK"
+description: "使用 Aspose.Cells Cloud REST API 获取 Excel 工作表中特定行的详细信息（如高度、样式、隐藏状态等）。包含 curl 示例、SDK 代码片段和错误处理。"
+weight: 10
+ArticleTitle: "从 Excel 工作表中获取行描述 – Aspose.Cells Cloud API"
+---
 
-## 重新设置 API
+**前置条件：**  
+- 获取有效的 JWT 访问令牌，并将其包含在 `Authorization: Bearer <jwt token>` 请求头中。  
+- 确保工作簿已存储于 Aspose Cloud 存储中，或指定其所在文件夹路径。  
+- 使用 API 版本 **v3.0**，如端点 URL 所示。
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
- 
+该 REST API 可根据行索引检索 Excel 工作表中的行数据。
+
+## GetWorksheetRow API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
 ```
 
-请求参数为：
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|行索引|整数|小路|行索引。|
-|文件夹|细绳|询问|工作簿文件夹。|
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 采用安全机制，需使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### **请求参数**
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名称      | 类型    | 位置   | 描述                                   |
+| ------------- | ------- | ------ | -------------------------------------- |
+| name          | string  | path   | 工作簿文件的名称。                     |
+| sheetName     | string  | path   | 工作簿内工作表的名称。                 |
+| rowIndex      | integer | path   | 要检索行的从零开始的索引。             |
+| folder        | string  | query  | 包含工作簿的文件夹路径。               |
+| storageName   | string  | query  | 工作簿所在存储的名称。                 |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow) 定义了一个公开可用的编程接口，允许您直接通过 Web 浏览器执行 REST 交互。
+
+您可使用 cURL 命令行工具轻松访问 Aspose.Cells 网络服务。以下示例展示了如何使用 cURL 调用 Cloud API。请在请求头中包含 `Authorization: Bearer <jwt token>` 以完成身份验证。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
   "Row": {
     "GroupLevel": 0,
     "Height": 13.5,
-    "Index": 10,
+    "Index": 0,
     "IsBlank": false,
     "IsHeightMatched": true,
     "IsHidden": false,
@@ -68,25 +74,55 @@ curl -v "http://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/ro
       }
     },
     "link": {
-      "Href": "api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/rows/10",
+      "Href": "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/rows/0",
       "Rel": "self"
     }
   },
   "Code": 200,
   "Status": "OK"
 }
- 
 ```
+
+**响应架构**
+
+| 属性              | 类型    | 描述                                               |
+|-------------------|---------|----------------------------------------------------|
+| `GroupLevel`      | integer | 行的分级层级（用于分组）。                         |
+| `Height`          | number  | 行高（单位为磅）。                                 |
+| `Index`           | integer | 返回的行的从零开始的索引。                         |
+| `IsBlank`         | boolean | 是否该行不包含任何数据。                           |
+| `IsHeightMatched` | boolean | 行高是否与默认行高一致。                           |
+| `IsHidden`        | boolean | 行是否处于隐藏状态。                               |
+| `Style`           | object  | 包含该行样式信息的对象。                           |
+| `link`            | object  | 指向该行资源的超链接引用。                         |
+| `Code`            | integer | 响应的 HTTP 状态码。                               |
+| `Status`          | string  | 状态的文本描述（例如，“OK”）。                     |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+**说明 / 错误处理：** 该 API 可能返回以下 HTTP 状态码：
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+- **200** – 成功；返回行数据。  
+- **401** – 未授权；JWT 令牌缺失或无效。  
+- **404** – 未找到；指定的工作簿、工作表或行不存在。  
+- **500** – 服务器内部错误；发生意外情况。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+| 状态码 | 描述                             | 解决方案                             |
+|--------|----------------------------------|--------------------------------------|
+| 200    | 成功 — 返回行数据。              | —                                    |
+| 401    | 未授权 — 缺失或无效的 JWT 令牌。  | 提供有效的 JWT 令牌。                |
+| 404    | 未找到 — 工作簿、工作表或行缺失。 | 核实文件名、工作表名及行索引。       |
+| 500    | 服务器内部错误 — 意外情况。      | 联系 Aspose 技术支持。               |
+
+完整错误码列表，请参阅 Aspose.Cells Cloud [错误码文档](https://docs.aspose.cloud/cells/)。
+
+## 云 SDK 家族
+
+使用 SDK 是开发的最快方式。SDK 抽象了底层细节，让您专注于项目任务。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells 网络服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

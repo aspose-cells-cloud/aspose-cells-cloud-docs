@@ -1,57 +1,57 @@
-﻿---
-title: Hämta en pivottabell i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Få
-type: docs
-url: /sv/pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
-keywords: Get a pivot table in an Excel file
-description: Aspose.Cells Cloud REST API stöder att hämta en pivottabell i en Excel-fil. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta en pivottabell i ett Excel-kalkylblad
 ---
-Denna REST API indikerar att information om arbetsblad `pivottable` ska hämtas via index.
- 
-## RSET API
- 
+title: "Hämta en pivottabell i ett Excel-ark"
+second_title: "Dokument"
+linktitle: Hämta
+type: docs
+url: /pivot-tables/get/
+aliases: [/get-worksheet-pivot-table-information-by-index/]
+keywords: "Aspose.Cells, pivottabell, Excel, REST API, hämta pivottabell från kalkylark"
+description: "Hämta en pivottabell från ett Excel-ark via Aspose.Cells Cloud REST API. Innehåller begärandesyntax, parametrar, autentisering, svarsschema, felhantering och SDK-exempel."
+weight: 10
+ArticleTitle: "Hämta en pivottabell i ett Excel-ark"
+---
+
+Denna REST API hämtar information om **pivottabell** i ett kalkylark baserat på dess index.
+
+### **Säkerhet och autentisering**
+
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
+
+## REST API
+
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}
 ```
- Begäranparametrarna är:
- 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| pivottabellIndex| heltal| väg||
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
- 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTable) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
- 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### Begäransparametrar
+
+| Parameternamn       | Typ     | Plats  | Beskrivning                                              |
+| ------------------- | ------- | ------ | -------------------------------------------------------- |
+| **name**            | string  | path   | Namnet på Excel-filen.                                   |
+| **sheetName**       | string  | path   | Namnet på kalkylarket som innehåller pivottabellen.     |
+| **pivottableIndex** | integer | path   | Nollbaserat index för pivottabellen i kalkylarket.       |
+| **folder**          | string  | query  | Mappen där dokumentet lagras.                            |
+| **storageName**     | string  | query  | Namnet på Aspose Cloud-lagringen.                        |
+
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur du anropar API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
   "Status": "string",
   "PivotFilters": [
@@ -69,9 +69,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
             "FilterType": "string",
             "MultipleFilters": {
               "MatchBlank": true,
-              "MultipleFilterList": [
-                {}
-              ]
+              "MultipleFilterList": [{}]
             },
             "ColorFilter": {
               "FilterByFillColor": "string",
@@ -140,7 +138,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
               "IsTop": true,
               "Items": 0
             },
-            "Visibledropdown": "string"
+            "VisibleDropdown": "string"
           }
         ],
         "Range": "string",
@@ -168,20 +166,43 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
     }
   ]
 }
- 
 ```
- 
+
+**Svarschema**
+
+| Fält           | Typ     | Beskrivning                                        |
+|----------------|---------|----------------------------------------------------|
+| Status         | string  | Statustext för åtgärden (t.ex. "OK").             |
+| PivotFilters   | array   | Samling av pivotfilterdefinitioner.               |
+| └─ AutoFilter  | object  | Detaljer för automatiskt filter som tillämpas på pivot. |
+|    └─ link     | object  | Hyperlänksinformation för filtret.                |
+|    └─ FilterColumns | array | Inställningar för individuella kolumnfilter.   |
+|    └─ Range    | string  | Cellområde som filtret gäller för.                |
+|    └─ Sorter   | object  | Sorteringskonfiguration för den filtrerade datan. |
+| (ytterligare nästlade fält följer samma struktur som visas i JSON-exemplet) |
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK-familjen
- 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
- 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
- 
- 
+
+### Felhantering
+
+API:et följer standard HTTP-statuskoder. Typiska svar inkluderar:
+
+| Statuskod | Betydelse                                                        | Exempel JSON (fel)                                |
+| --------- | ---------------------------------------------------------------- | ------------------------------------------------ |
+| 200       | Lyckades – pivottabellen returneras                              | —                                                |
+| 401       | Auktorisering misslyckades – ogiltig eller saknad token         | `{"code":401,"message":"Invalid access token."}` |
+| 404       | Hittades inte – fil, kalkylark eller pivottabellindex finns inte | `{"code":404,"message":"Pivot table not found."}` |
+| 500       | Serverfel – oväntat tillstånd                                    | `{"code":500,"message":"Internal server error."}` |
+
+**Anteckningar:** API:et stöder Excel-filer upp till 150 MB och fungerar med Excel 2007–2021-format. Se till att kalkylarkets namn är skiftlägeskänsligt.
+
+## Moln SDK-familj
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Ta en titt på [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Perl" tabName10="Go" >}}
 

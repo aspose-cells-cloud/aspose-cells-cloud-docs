@@ -1,100 +1,142 @@
-﻿---
-title: Aspose.Cells Cloud Web API - 从电子表格中删除工作表
-second_title: Documen
-ArticleTitle: Delete a worksheet from the Spreadshee
-linktitle: 从电子表格中删除工作表
-type: docs
-url: /zh/delete-worksheet-from-spreadsheet/
-keywords: delete worksheet, spreadsheet management, Aspose.Cells Cloud Web API, REST API, workbook structure, remove worksheet
-description: 此 API 端点使用户能够从工作簿中删除指定的工作表，通过消除不必要或多余的工作表来简化工作簿结构的管理
-weight: 100
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、JSON、Markdown、管理 Excel 工作表、删除冗余工作表
 ---
-从电子表格中删除工作表。
+title: "Aspose.Cells Cloud Excel 删除工作表 Web API - 以编程方式从工作簿中移除工作表"
+second_title: "文档"
+ArticleTitle: "如何删除 Excel 中的工作表 - 从工作簿中移除工作表"
+linktitle: "从电子表格中删除工作表"
+type: docs
+url: /delete-worksheet-from-spreadsheet/
+keywords: "Aspose Cells, 删除工作表 API, Excel 工作表移除, 云电子表格, REST API"
+description: "了解如何使用 Aspose.Cells Cloud API 从 Excel 文件中删除工作表。包含端点、参数、示例 cURL 和 SDK 示例。"
+weight: 100
+---
 
-## **从电子表格中删除工作表 API**
+使用 Aspose.Cells Cloud API 以编程方式从 Excel 工作簿中删除工作表。安全地移除单个或多个工作表，清理工作簿结构，并实现电子表格优化自动化。适用于企业级 Excel 管理和文档处理工作流的 RESTful API。
+
+## 从电子表格中删除工作表 API
+
+### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/delete/worksheet
+PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/delete/worksheet?sheetName={sheetName}&outPath={outPath}&outStorageName={outStorageName}&region={region}&password={password}"
 ```
 
-### **请求参数：**
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:-               |:-     |:-                         |:-           |
-|电子表格|文件|表单数据|上传电子表格文件。|
-|工作表名称|细绳|询问|指定要删除的工作表的名称或标识符。此参数是必需的，并且必须与工作簿中现有工作表的名称匹配。|
-|输出路径|细绳|询问| （可选）存储工作簿的文件夹路径。默认值为 null。|
-|输出存储名称|细绳|询问|输出文件存储名称。|
-|地区|细绳|询问|电子表格区域设置。|
-|密码|细绳|询问|打开电子表格文件的密码。|
+Aspose.Cells Cloud API 是安全的，需要使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-### **回复**
+### 请求参数：
+
+| 参数名称         | 类型     | 位置     | 描述                                                                                                                                                            |
+| :--------------- | :------- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet      | 文件     | FormData | **必需项。** 源 Excel 工作簿文件（如 .xlsx、.xls 等），将从中删除工作表。                                                                                      |
+| sheetName        | 字符串   | Query    | **必需项。** 要删除的工作表的确切名称（例如 `Sheet1`、`TemporaryData`）。                                                                                       |
+| outPath          | 字符串   | Query    | **可选项。** 云存储中保存修改后工作簿的目标文件夹路径。若省略或为 `null`，则工作簿将保存在源文件所在位置或默认路径。                                            |
+| outStorageName   | 字符串   | Query    | **可选项。** 输出文件将写入的云存储服务标识符（例如 `ProjectStorage`）。若未提供，则使用默认存储。                                                              |
+| region           | 字符串   | Query    | **可选项。** 区域设置（例如 `zh-CN`），可能在保存操作期间影响特定区域的公式或数据。                                                                             |
+| password         | 字符串   | Query    | **可选项。** 打开和修改受密码保护的电子表格所需的密码。若文件未加密，则无需提供。                                                                               |
+
+### 响应
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### 错误代码
+**HTTP 状态码**
 
-- **400 错误请求**：无效的 Apose.Cells Cloud API URI。
-- **401 未授权**：访问令牌无效。或者客户端 ID 和密钥无效。
-- **404 未找到**：电子表格文件无法访问。
-- **500 服务器错误**：电子表格在获取计算数据时遇到异常。
+| 状态码 | 含义             | 描述                               |
+| ------ | ---------------- | ---------------------------------- |
+| 200    | OK（成功）       | 成功应用过滤器；响应包含操作详情。 |
+| 400    | Bad Request（错误请求） | 参数缺失或无效（例如不支持的文件类型）。 |
+| 401    | Unauthorized（未授权）  | JWT 令牌无效或缺失。               |
+| 413    | Payload Too Large（请求实体过大） | 上传的文件超过大小限制。         |
+| 500    | Internal Server Error（内部服务器错误） | 意外服务器错误。             |
 
-## 我们应该在哪里使用电子表格 API 中的删除工作表？
+## 应在何处使用“从电子表格中删除工作表” API？
 
-当您需要从电子表格中删除工作表时，可以使用此 API。
+- **自动化报告后处理** – 生成最终财务报告后，自动删除用于临时计算的中间工作表，使最终文件保持整洁和专业。
+- **模板文件的动态清理** – 用户从模板生成自定义文档（例如报价单）时，删除未被选中的可选页面。
+- **工作流归档优化** – 项目或审计完成后，删除草稿或协作用工作表，仅保留最终版本用于归档和合规。
 
-## 为什么要使用电子表格 API 中的删除工作表？
+## 为何应使用“从电子表格中删除工作表” API？
 
-- 快速从电子表格中删除工作表。
-- 通过现有的SDK即可快速完成开发。
+- **开发者友好** – Aspose.Cells Cloud 提供多种语言的 SDK 库，便于快速开发，并提供详尽的文档。
+- **降低人工成本** – 无需专人手动整合文档。
+- **按需付费** – 无需前期投资；仅对实际使用的 API 调用收费。
+- **零维护成本** – 无需维护服务器、无需软件更新、无兼容性问题。
 
-## 如何使用 SDK 从电子表格 API 中删除工作表
+## 如何使用 SDK 调用“从电子表格中删除工作表” API
 
-### 从电子表格中删除工作表 API 规范
+### 删除工作表 API 规范
 
-这[从电子表格中删除工作表 API 规范](https://reference.aspose.cloud/cells/#/ManagementController/DeleteWorksheetFromSpreadsheet)定义一个可公开访问的编程接口，允许您直接从 Web 浏览器执行 REST 交互。
+<a href="https://reference.aspose.cloud/cells/#/ManagementController/DeleteWorksheetFromSpreadsheet" rel="noopener noreferrer">“从电子表格中删除工作表” API 规范</a> 定义了一个公开可访问的编程接口，允许您直接从 Web 浏览器发起 REST 交互。
 
-### 使用 Aspose.Cells 云 SDK
+您可使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例演示如何通过 cURL 调用 Cloud API。
 
-使用 SDK 是最快的开发方式，因为它抽象了低级细节，允许您使用短代码从电子表格中删除工作表。
-请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteWorksheet.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/delete/worksheet?sheetName=Sheet1" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -F "Spreadsheet=@/path/to/input.xlsx"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteWorksheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 编码)",
+  "contentType": "MIME 类型",
+  "fileDownloadName": "可选文件名"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteWorksheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteWorksheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteWorksheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteWorksheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteWorksheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteWorksheet.go" >}}
-{{< /tab >}}
+
+{{< /tabs >}}
+
+### 使用 Aspose.Cells Cloud SDK
+
+使用 SDK 是最快捷的开发方式，它抽象了底层细节，使您能以极少的代码删除工作表。请查阅 <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub 仓库</a> 以获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例演示如何使用多种 SDK 调用 Aspose.Cells Web 服务：
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteWorksheet.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteWorksheet.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteWorksheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteWorksheet.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteWorksheet.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteWorksheet.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteWorksheet.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteWorksheet.go" >}}
+{{</tab>}}
 {{< /tabs >}}

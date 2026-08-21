@@ -1,47 +1,54 @@
-﻿---
-title: Importer un double tableau dans la feuille de calcul Excel
-second_title: Documen
-linktitle: Importer un tableau double
-type: docs
-url: /fr/import-double-array-into-excel-worksheet/
-aliases: [/import-double-array-into-worksheet/,/import-data/double-array/,/import/double-array/]
-keywords: Import double array data into Excel files
-description: Aspose.Cells Cloud REST API prend en charge l'importation de données de tableaux doubles dans des fichiers Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Importer un double tableau dans une feuille de calcul Excel
 ---
-Cette feuille de travail REST API `import double array data` dans Excel.
+title: "Importer un tableau de doubles dans une feuille Excel"
+second_title: "Document"
+linktitle: "Importer un tableau de doubles"
+type: docs
+url: /import-double-array-into-excel-worksheet/
+aliases:
+  - /import-double-array-into-worksheet/
+  - /import-data/double-array/
+  - /import/double-array/
+keywords: "Aspose.Cells, importer un tableau de doubles, API Excel, SDK cloud"
+description: "Découvrez comment importer un tableau de doubles dans une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’authentification, le format des requêtes, les paramètres, des exemples XML/JSON et les détails de la réponse."
+weight: 20
+ArticleTitle: "Importer un tableau de doubles dans une feuille Excel – Guide Aspose.Cells Cloud"
+---
 
-La requête est une requête HTTP avec un contenu en plusieurs parties (voir[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)ou[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La première partie du contenu en plusieurs parties contient les données ImportDoubleArrayOption et la seconde contient un fichier de données.
+Cette API REST **importe des données de type tableau de doubles** dans une feuille Excel.
 
-## RSET API
+> **Prérequis :** Vous devez disposer d’un jeton JWT valide avant d’appeler cette API. Consultez le guide d’authentification pour plus de détails.
 
-```bash
+Vous envoyez une requête HTTP dont le contenu est de type **multipart** (voir [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) ou [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
+La première partie du corps multipart contient les données **ImportDoubleArrayOption**, tandis que la seconde partie contient le fichier de données.
 
+## API PostImportData
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-Les paramètres importants sont décrits dans le tableau suivant :
+### **Sécurité et authentification**
 
-**ImporterDoubleArrayOption**
+Les API Aspose.Cells Cloud sont sécurisées et exigent une authentification basée sur <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">jeton JWT</a>.
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-| Première rangée| int||
-| Première colonne| int||
-| EstVertical| chaîne| vrai/faux.|
-| Données|Double[]||
-|Feuille de travail de destination| chaîne| nom de la feuille de travail de destination.|
-| EstInsérer| chaîne| vrai/faux.|
-| ImporterDataType| chaîne|IntArray/DoubleArray/StringArray/DeuxDimensionIntArray/DeuxDimensionDoubleArray/DeuxDimensionStringArray/BatchData/CSVData.|
-| Source| Source du fichier| Indique la position du fichier de données lorsque le paramètre BatchData est nul.|
+### Paramètres de la requête
 
-**Exemple**
+#### **ImportDoubleArrayOption**
+
+| Nom du paramètre     | Type       | Description                                                                                                 |
+| --------------------- | ---------- | ----------------------------------------------------------------------------------------------------------- |
+| FirstRow             | int        | Indice de la première ligne (indexé à partir de 0) où les données seront insérées.                         |
+| FirstColumn          | int        | Indice de la première colonne (indexé à partir de 0) où les données seront insérées.                       |
+| IsVertical           | boolean    | `true` / `false` – détermine si le tableau est inséré verticalement (`true`) ou horizontalement (`false`). |
+| Data                 | Double[]   | Tableau de valeurs doubles à importer.                                                                      |
+| DestinationWorksheet | string     | Nom de la feuille cible.                                                                                    |
+| IsInsert             | boolean    | `true` / `false` – si `true`, les données sont insérées ; si `false`, les cellules existantes sont remplacées. |
+| ImportDataType       | string     | Type de données importées (par exemple, `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`). |
+| Source               | FileSource | Indique l’emplacement du fichier de données lorsque le paramètre `BatchData` est null.                      |
+
+#### Exemple (XML)
 
 ```xml
-
 <ImportDoubleArrayOption>
     <DestinationWorksheet>Sheet1</DestinationWorksheet>
     <IsInsert>false</IsInsert>
@@ -49,32 +56,72 @@ Les paramètres importants sont décrits dans le tableau suivant :
     <FirstRow>1</FirstRow>
     <FirstColumn>1</FirstColumn>
     <IsVertical>true</IsVertical>
+    <Data>1.99,1.9,2.0</Data>
     <Source>
         <FileSourceType>CloudFileSystem</FileSourceType>
         <FilePath>Array_double_xml.txt</FilePath>
     </Source>
 </ImportDoubleArrayOption>
-
 ```
+
+#### Exemple (JSON)
 
 ```json
 {
-    "Data": [1.99, 1.9, 2.0],
-    "DestinationWorksheet": "Sheet1",
-    "FirstRow": 0,
-    "FirstColumn": 0,
-    "IsVertical": false,
-    "IsInsert": true,
-    "importDataType": "DoubleArray"
+  "Data": [1.99, 1.9, 2.0],
+  "DestinationWorksheet": "Sheet1",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "IsVertical": false,
+  "IsInsert": true,
+  "ImportDataType": "DoubleArray"
 }
-
 ```
 
-## Famille de SDK Cloud
+### Réponse
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+Une requête réussie renvoie **HTTP 200** avec une charge utile JSON similaire à :
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+Codes de statut possibles :
+
+| Code | Signification                                  |
+| ---- | ---------------------------------------------- |
+| 200  | Importation réussie                            |
+| 400  | Requête incorrecte – données manquantes ou invalides |
+| 401  | Non autorisé – jeton invalide ou manquant      |
+| 500  | Erreur interne du serveur                      |
+
+### Gestion des erreurs
+
+Lorsqu’une erreur se produit, l’API renvoie un objet JSON contenant le code d’erreur et un message descriptif. Exemple pour une requête non autorisée :
+
+```json
+{
+  "Code": 401,
+  "Status": "Error"
+}
+```
+
+Pour plus d’informations sur les opérations d’importation connexes, consultez les pages de documentation « Importer un tableau de doubles à deux dimensions » et « Importer un tableau d’entiers ».
+
+## Comment utiliser l’API PostImportData avec les SDK
+
+### Spécification de l’API PostImportData
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) définit une interface de programmation publiquement accessible et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+### Utiliser les SDK Aspose.Cells Cloud
+
+L’utilisation d’un SDK est la meilleure façon d’accélérer le développement. Un SDK gère les détails de bas niveau, vous permettant de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

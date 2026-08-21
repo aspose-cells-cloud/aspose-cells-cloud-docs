@@ -1,63 +1,95 @@
-﻿---
-title: Importera en 2-dimensionell heltalsmatris till arbetsbladet Excel
-second_title: Documen
-linktitle: Importera 2-dimensionell heltalsarray
-type: docs
-url: /sv/import-a-2D-integer-array-into-excel-worksheet/
-aliases: [/import-2dimension-integer-array-into-excel-worksheet/,/import-2dimension-integer-array-into-worksheet/, /import-data/2dimension-integer-array/, /import/2dimension-integer-array/]
-keywords: Import 2 dimension integer array data into Excel files
-description: Aspose.Cells Cloud REST API stöder import av 2-dimensionella heltalsmatrisdata till Excel-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Importera 2-dimensionell heltalsmatris till Excel-arbetsblad
 ---
-Detta REST API `import 2 dimension integer array data` till Excel-arbetsblad.
+title: "Importera tvådimensionellt heltalsfält till Excel-ark"
+second_title: "Dokument"
+linktype: "Importera tvådimensionellt heltalsfält"
+type: docs
+url: /import-a-2d-integer-array-into-excel-worksheet/
+aliases:
+  [
+    /import-2dimension-integer-array-into-excel-worksheet/,
+    /import-2dimension-integer-array-into-worksheet/,
+    /import-data/2dimension-integer-array/,
+    /import/2dimension-integer-array/,
+  ]
+keywords: "Aspose.Cells Cloud, importera 2D-heltalsfält, Excel-ark, REST API, SDK, Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
+description: "Aspose.Cells Cloud REST API möjliggör import av tvådimensionella heltalsfält till Excel-ark. SDK:er finns tillgängliga för Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby och Swift."
+weight: 20
+---
 
-Begäran är en HTTP-begäran med flerdelat innehåll (se[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)eller[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)Den första delen av flerdelat innehåll innehåller Import2DimensionIntegerArrayOption-data och den andra innehåller en datafil.
+Denna REST API **importerar ett tvådimensionellt heltalsfält** till ett Excel-ark.
+
+Förfrågan är en HTTP-förfrågan med multipart-innehåll (se [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) eller [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Den första delen av multipart-innehållet innehåller `Import2DimensionIntegerArrayOption`-data och den andra delen innehåller datafilen.
 
 De viktiga parametrarna beskrivs i följande tabell:
 
-## RSET API
+## REST API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-**Importera2DimensionHeltalArrayAlternativ**
+### **Säkerhet och autentisering**
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-| Första raden| int||
-| Första kolumnen| int||
-| Data|Heltal[,]||
-|Destinationsarbetsblad| sträng| namn på destinationsarbetsblad.|
-| ÄrInfoga| sträng| sant/falskt.|
-| Importera datatyp| sträng|IntArray/DubbelArray/StringArray/TvåDimensionIntArray/TvåDimensionDubbelArray/TvåDimensionStringArray/BatchData/CSVData.|
-| Källa| Filkälla| Anger datafilens position när BatchData-parametern är null.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-**Exempel**
+### **Import2DimensionIntegerArrayOption**
+
+| Parameter Name       | Typ        | Beskrivning                                                                                                                                                                                  |
+| -------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| FirstRow             | int        | 1-baserat index för den första raden dit data placeras.                                                                                                                                      |
+| FirstColumn          | int        | 1-baserat index för den första kolumnen dit data placeras.                                                                                                                                   |
+| Data                 | Integer[,] | Tvådimensionellt heltalsfält som innehåller värdena som ska importeras.                                                                                                                      |
+| DestinationWorksheet | string     | Namn på målarket.                                                                                                                                                                             |
+| IsInsert             | string     | `"true"` för att infoga data (skjuta befintliga celler), `"false"` för att skriva över befintliga celler.                                                                                   |
+| ImportDataType       | string     | Anger dataformatet. Stödda värden: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`.        |
+| Source               | FileSource | Anger datafilens plats när `BatchData`-parametern är `null`.                                                                                                                                 |
+
+### **Exempel**
 
 ```json
 {
-    "Data": [
-        [1, 2],
-        [3, 4]
-    ],
-    "DestinationWorksheet": "Sheet2",
-    "FirstRow": 4,
-    "FirstColumn": 1,
-    "importDataType": "TwoDimensionIntArray"
+  "Data": [
+    [1, 2],
+    [3, 4]
+  ],
+  "DestinationWorksheet": "Sheet2",
+  "FirstRow": 4,
+  "FirstColumn": 1,
+  "ImportDataType": "TwoDimensionIntArray"
 }
-
 ```
 
-## Cloud SDK-familjen
+### Svar
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                                                 |
+|-----|-----------------------------|-----------------------------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens information. |
+| 400 | Felaktig förfrågan          | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds).           |
+| 401 | Autentisering krävs         | Ogiltig eller saknad JWT-token.                                             |
+| 413 | För stor nyttolast          | Uppladdad fil överskrider storleksgränsen.                                  |
+| 500 | Internt serverfel           | Oväntat serverfel.                                                          |
+
+## Hur man använder PostImportData API med SDK:er
+
+### PostImportData API-specifikation
+
+[OpenAPI-specifikationen](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData) definierar ett offentligt tillgängligt programmeringsgränssnitt som låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+### Använd Aspose.Cells Cloud SDK:er
+
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Besök [GitHub-repositoriet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

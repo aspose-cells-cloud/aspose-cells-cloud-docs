@@ -1,71 +1,98 @@
-﻿---
-title: Сбор данных для создания отчета Excel
-second_title: Documen
-linktitle: Дата сборки
-type: docs
-url: /ru/assembly-data-for-the-creation-of-an-excel-report/
-aliases: [/assembly/]
-keywords: Assemble data in Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: Aspoe.Cells Cloud генерирует отчёты в форматах XLS, XLSX, XLSM, XLSB и ODS, используя шаблон и таблицу данных. Обрабатывайте смарт-маркеры в шаблоне для заполнения данными из другой таблицы данных. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 40
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Сборка
 ---
-Этот REST API указывает на данные `assembly` в файле Excel.
+title: "Сбор данных для создания отчёта в Excel"
+second_title: "Документ"
+linktype: "Сбор данных"
+type: docs
+url: /assembly-data-for-the-creation-of-an-excel-report/
+aliases: [/assembly/]
+keywords: "Aspose.Cells, отчёт Excel, сбор данных, облачный API, REST, SDK, cURL, PDF, ODS"
+description: "Узнайте, как использовать API сборки Aspose.Cells Cloud для объединения данных в отчётах в форматах Excel (XLSX, PDF, ODS). Включает описание конечной точки, параметры, пример cURL, код SDK, руководство по аутентификации и обработку ошибок."
+weight: 40
+---
 
-## РСЕT API
+Этот REST API выполняет сбор данных **внутрь** файла Excel.
+
+## REST API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/assembly
-
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| файл| файл| formData| Файл для загрузки|
-| источник данных| нить| запрос||
-| формат| нить| запрос| Xlsx|
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostAssemble) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### Параметры запроса
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Имя параметра | Тип   | Местоположение            | Описание                                                     |
+|---------------|-------|---------------------------|--------------------------------------------------------------|
+| file          | файл  | formData (multipart body) | Загружаемый файл электронной таблицы.                         |
+| DataSource    | строка | строка запроса            | Идентификатор источника данных, предоставляющего данные для сборки. |
+| format        | строка | строка запроса            | Желаемый выходной формат (например, `xlsx`, `pdf`).          |
+
+### **Ответ**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[имя файла 2]",
+    "Filesize" : [размер файла],
+    "FileContent" : "[Base64String]"
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                     | Описание                                                      |
+|-----|------------------------------|---------------------------------------------------------------|
+| 200 | OK (ОК)                      | Фильтр успешно применён; ответ содержит детали операции.     |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизовано) | Недопустимый или отсутствующий JWT-токен.                    |
+| 413 | Payload Too Large (Слишком большой полезный груз) | Загруженный файл превышает допустимый размер.                |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                               |
+
+## Как использовать API PostAssemble с SDK
+
+### Спецификация API PostAssemble
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostAssemble) определяет публично доступное программное интерфейсное определение и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать инструмент командной строки cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как выполнять вызовы облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/assembly?datasource=ds&format=pdf" \
--X POST \
--H "Content-Type: multipart/form-data" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+curl -v "https://api.aspose.cloud/v3.0/cells/assembly?DataSource=ds&format=pdf" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'template=@template.xlsx' \
+  -F 'data=@data.json'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "report1",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "report2",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
@@ -73,11 +100,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/assembly?datasource=ds&format=pdf" \
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ разработки с использованием API. SDK скрывает низкоуровневые детали, позволяя сосредоточиться на бизнес-логике. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+В следующих примерах кода показано, как вызывать веб-сервисы Aspose.Cells с помощью различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -130,3 +157,5 @@ curl -v "http://api.aspose.cloud/v3.0/cells/assembly?datasource=ds&format=pdf" \
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---

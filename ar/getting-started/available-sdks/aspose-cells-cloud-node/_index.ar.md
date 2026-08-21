@@ -1,29 +1,30 @@
-﻿---
-title: "Aspose.Cells مجموعة SDK السحابية لـ Node.js: التحويل، الدمج، التقسيم، الحماية، البحث، الاستبدال، والمزيد"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for Node.js: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells مجموعة تطوير البرامج السحابية لـ Node.j
-type: docs
-url: /ar/available-sdks/aspose-cells-cloud-node/
-description: "توفر مجموعة SDK السحابية Aspose.Cells لـ Node.js قوة حقيقية عبر الأنظمة الأساسية: يوفر استيراد واحد للمطورين Windows وLinux وmacOS نفس القدرة على إنشاء كل كائن وتحويله ودمجه وتقسيمه وحمايته ومعالجته - لا يلزم تثبيت Office ولا يلزم إجراء تعديلات خاصة بالمنصة"
-weight: 30
-kwords: Node.js، مجموعة أدوات تطوير برمجيات Node.js، مجموعة أدوات تطوير برمجيات Excel لـ Node.js، مجموعة أدوات تطوير برمجيات Cloud لـ Node.js، REST، مخطط، جدول محوري، كائن جدول/قائمة، تحويل جدول بيانات، PDF، CSV، JSON، Markdown، دمج، تقسيم، حماية، بحث، استبدال
 ---
-مجموعة تطوير البرامج مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا. يمكنك الوصول إليها[كود مصدر مكتبة Node لـ Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
+title: "Aspose.Cells Cloud SDK لـ Node.js: التحويل، الدمج، التقسيم، الحماية، البحث، الاستبدال، والمزيد."
+second_title: "وثيقة"
+ArticleTitle: "Aspose.Cells Cloud SDK لـ Node.js: التحويل، الدمج، التقسيم، الحماية، البحث، الاستبدال، والمزيد."
+linktitle: "Aspose.Cells Cloud SDK لـ Node.js"
+type: docs
+url: /available-sdks/aspose-cells-cloud-node/
+description: "يقدّم Aspose.Cells Cloud SDK لـ Node.js قوة حقيقية متعددة المنصات: استيراد واحد يوفّر لمطوري Windows وLinux وmacOS واجهة برمجة تطابق سلسة لإنشاء وتحويل ودمج وتقسيم وحماية والتعامل مع كل كائنات Excel دون الحاجة إلى تثبيت Office، أو إجراء أي تعديلات خاصة بالمنصة."
+weight: 30
+kwords: Node.js، Node.js SDK، Excel SDK لـ Node.js، Cloud SDK لـ Node.js، REST، مخطط، جدول محوري، كائن جدول/قائمة، تحويل جدول بيانات، PDF، CSV، Json، Markdown، دمج، تقسيم، حماية، بحث، استبدال
+---
 
-# **كيفية استخدام مكتبة Node من Aspose.Cells Cloud**
+يُعد SDK مفتوح المصدر ومرخّص بموجب ترخيص MIT. يمكنك الاطّلاع على كود مصدر مكتبة Node الخاصة بـ Aspose.Cells Cloud [هنا](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
 
-مجموعة تطوير البرامج السحابية Aspose.Cells لـ Node هي مكتبة فعّالة تُمكّن المطورين من التعامل مع ملفات Microsoft Excel ومعالجتها باستخدام لغة برمجة Node. باستخدام هذه المجموعة، يُمكنك إنشاء مستندات Excel وتحريرها وتحويلها في السحابة، دون الحاجة إلى تثبيت برامج أو تبعيات إضافية على جهازك المحلي.
+# **كيفية استخدام مكتبة Node الخاصة بـ Aspose.Cells Cloud**
 
-في هذه المقالة، سنستكشف كيفية استخدام Aspose.Cells Cloud SDK for Node لأداء بعض المهام الشائعة، مثل إنشاء مصنف Excel جديد، وإدراج البيانات في الخلايا، وحفظ المصنف المعدل في السحابة.
+يُعد Aspose.Cells Cloud SDK لـ Node مكتبة قوية تسمح للمطورين بالتعامل مع ملفات مايكروسوفت إكسل ومعالجتها باستخدام لغة البرمجة Node. وباستخدام هذا SDK، يمكنك إنشاء وتحرير وتحويل مستندات Excel في السحابة، دون الحاجة إلى تثبيت برامج أو تبعيات إضافية على جهازك المحلي.
 
-## ابدء
+في هذه المقالة، سنستعرض كيفية استخدام Aspose.Cells Cloud SDK لـ Node لتنفيذ بعض المهام الشائعة، مثل إنشاء دفتر عمل Excel جديد، وإدخال البيانات في الخلايا، وحفظ دفتر العمل المعدّل في السحابة.
 
- قبل أن تتمكن من استخدام حزمة تطوير البرامج السحابية Aspose.Cells للغة Go، عليك إعداد بيئة التطوير وتثبيت التبعيات اللازمة. راجع[المقال](https://docs.aspose.cloud/cells/quickstart/) على موقع الويب Aspose للحصول على معرف العميل والسر الخاص بالعميل.
+## البدء
+
+قبل أن تبدأ باستخدام Aspose.Cells Cloud SDK لـ Go، تحتاج إلى إعداد بيئة التطوير الخاصة بك وتثبيت التبعيات الضرورية. راجع [المقالة](https://docs.aspose.cloud/cells/quickstart/) على موقع Aspose للحصول على معرّف العميل وسرّ معرّف العميل الخاص بك.
 
 ## كيفية تثبيت حزمة Node لـ Aspose.Cells Cloud
 
-يمكنك تثبيت حزمة تطوير البرامج السحابية Aspose.Cells لـ Node باستخدام npm. فيما يلي خطوات استخدام npm:
+يمكنك تثبيت Aspose.Cells Cloud SDK لـ Node باستخدام npm. فيما يلي الخطوات باستخدام npm:
 
 ```Powershell
 
@@ -31,9 +32,9 @@ npm install asposecellscloud
 
 ```
 
-## كيفية إضافة التبعيات في تكوين الحزمة لـ Aspose.Cells Cloud
+## كيفية إضافة التبعيات في ملف إعدادات الحزمة لـ Aspose.Cells Cloud
 
-ملف تكوين العقدة: package.json
+ملف إعدادات node: package.json
 
 ```Node
 
@@ -54,15 +55,15 @@ npm install asposecellscloud
 
 ```
 
-## كيفية استخدام حزمة Node لتحويل Xlsx إلى تنسيقات أخرى
+## كيفية استخدام حزمة Node لتحويل ملف Xlsx إلى صيغ أخرى
 
-- استيراد مكتبة السحابة Aspose.Cells
- ابدأ باستيراد الحزمة اللازمة من SDK Aspose.Cells Cloud NodeJS إلى مشروعك.
-- تكوين العميل API باستخدام بيانات الاعتماد
- قم بمصادقة عميلك API باستخدام معرف العميل الفريد والسر الخاص بالعميل.
-- إعداد معلمات التحويل
- قم بتحديد المعلمات لمهمة التحويل، بما في ذلك اسم ملف المصدر، وتنسيق الإخراج المطلوب، ومسار مجلد التخزين.
-- تنفيذ تحويل المصنف
- استدعاء عملية التحويل باستخدام طريقة PostConvertWorkbook ومعالجة الاستجابة.
+- استيراد مكتبة Aspose.Cells Cloud  
+  ابدأ باستيراد الحزمة الضرورية من SDK لـ Aspose.Cells Cloud NodeJS في مشروعك.
+- إعداد عميل API مع بيانات الاعتماد  
+  قم بمصادقة عميل API الخاص بك باستخدام معرّف العميل وسرّ معرّف العميل الفريد الخاص بك.
+- إعداد معايير التحويل  
+  عرّف المعايير لمهام التحويل، بما في ذلك اسم الملف المصدر، وصيغة الإخراج المرغوبة، ومسار مجلد التخزين.
+- تنفيذ عملية تحويل دفتر العمل  
+  استدعِ عملية التحويل باستخدام الدالة PostConvertWorkbook، وتعامل مع الاستجابة.
 
 {{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_AvailableSDKs.ts" >}}

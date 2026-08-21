@@ -1,80 +1,107 @@
-﻿---
-title: Excel к Доку
-second_title: Documen
-linktitle: Excel к Доку
-type: docs
-url: /ruconvert-excel-file-to-docx-file/
-keywords: Convert excel files to docx files
-description: Aspose.Cells Cloud REST API поддерживает преобразование файлов Excel в CSV-файлы. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 90
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Excel в Docx
 ---
-Этот REST API указывает `convert` на файл электронной таблицы в формате docx.
+title: "Excel в DOCX"
+second_title: "Документ"
+linktitle: "Excel в DOCX"
+type: docs
+url: convert-excel-file-to-docx-file/
+keywords: "конвертация Excel в DOCX, Aspose.Cells Cloud, REST API, конвертация электронных таблиц, генерация документов"
+description: "Конвертируйте электронные таблицы Excel в документы DOCX с помощью REST API Aspose.Cells Cloud. Поддерживает множество SDK и языков программирования для бесшовной интеграции."
+weight: 90
+---
 
-**Параметр запроса**
+Этот REST API конвертирует файл электронной таблицы в формат DOCX.
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|пароль|нить| Пароль, необходимый для открытия файла Excel.|
-|имя_хранилища|нить| Имя хранилища, где находится файл.|
-|checkExcelRestriction|бул| Проверять ли ограничения файла Excel, когда пользователь изменяет ячейки, связанные с объектами.|
+## REST API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/docx
+```
+
+### **Безопасность и аутентификация**
+
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе токена JWT</a>.
+
+
+
+**Параметры запроса**
+
+| Имя параметра         | Тип    | Описание                                                                                     |
+| --------------------- | ------ | -------------------------------------------------------------------------------------------- |
+| password              | string | Пароль, необходимый для открытия файла Excel.                                               |
+| storageName           | string | Имя хранилища, в котором расположен файл.                                                   |
+| checkExcelRestriction | bool   | Указывает, следует ли проверять ограничения файла Excel при изменении пользователем объектов, связанных с ячейками. |
 
 **Параметр тела запроса**
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|файл данных| файл данных|Файл данных сохраняется в первой части многочастного контента.|
+| Имя параметра | Тип       | Описание                                                      |
+| -------------- | --------- | ------------------------------------------------------------- |
+| datafile       | data file | Файл данных, сохранённый в первой части тела запроса multipart. |
 
 **Ответ**
 
-[FileInfo](/cells/ru/file-info/)
+API возвращает объект **FileInfo**, содержащий созданный Word-файл.
 
-## REST API Спецификация
+| Поле            | Тип    | Описание                                    |
+| --------------- | ------ | ------------------------------------------- |
+| **Filename**    | string | Имя Word-файла (например, `example.docx`). |
+| **FileSize**    | int    | Размер файла в байтах.                      |
+| **FileContent** | string | Содержимое Word-файла в формате Base64.     |
 
-|**API**|**Тип**|**Описание**|**Swagger Link**|
-|:- |:- |:- |:- |
-|/cells/convert/docx|ПОЧТА|Конвертировать электронную таблицу в файл docx.|[PostConvertWorkbookToDocx](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToDocx)|
 
- The[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToDocx) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[FileInfo](/cells/file-info/)
 
- Вы можете использовать**cURL** Инструмент командной строки для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+**Коды HTTP-статусов**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Код  | Значение                    | Описание                                                     |
+|------|-----------------------------|--------------------------------------------------------------|
+| 200  | OK (ОК)                     | Фильтр применён успешно; ответ содержит детали операции.    |
+| 400  | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401  | Unauthorized (Неавторизован) | Недопустимый или отсутствующий токен JWT.                    |
+| 413  | Payload Too Large (Слишком большой полезный груз) | Загруженный файл превышает предельный размер. |
+| 500  | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера. |
+
+## Как использовать API PostConvertWorkbookToDocx с SDK
+
+### Спецификация API PostConvertWorkbookToDocx
+
+[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToDocx) определяет публично доступное программное интерфейсное описание и позволяет выполнять взаимодействие по REST непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки **cURL** для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как делать вызовы в облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/docx" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/docx" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: curl" \
+     -d '{"File":{}}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
-  "Filename": "xxxxxx.docx",
-  "FileSize": xxxx,
+  "Filename": "example.docx",
+  "FileSize": 12345,
   "FileContent": "File Content: base64_encoded_string"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя вам сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -127,14 +154,12 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/docx"
 
 {{< /tabs >}}
 
-## Другие API реализуют эту функцию
+## Другие API, реализующие эту функцию
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)API позволяет сохранить файл MS Excel как CSV-файл с дополнительными настройками и сохранить результат в хранилище.
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Сохраняет файл Excel как DOCX с дополнительными настройками и сохраняет результат в указанном хранилище.
 
-Этот файл REST API `convert` Excel в CSV.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Конвертирует файл Excel в DOCX с необязательными настройками и возвращает результат в ответе.
 
-[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API позволяет преобразовать файл MS Excel в файл CSV с дополнительными настройками и сохранить результат в ответе.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Получает рабочую книгу Excel и конвертирует её в DOCX с необязательными параметрами.
 
-Этот файл REST API `export` Excel в CSV.
-
-[ПОЛУЧИТЬ /cells/{имя}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API позволяет преобразовать файл MS Excel в файл CSV с дополнительными настройками и сохранить результат в ответе.
+---

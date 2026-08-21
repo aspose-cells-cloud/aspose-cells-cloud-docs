@@ -1,60 +1,93 @@
-﻿---
-title: Excel çalışma sayfasında otomatik filtre edinin
-second_title: Documen
-linktitle: Otomatik filtrelemeyi al
-type: docs
-url: /tr/autofilter/get/
-aliases: [/get-autofilter-description/]
-keywords: Gets auto filter description from an Excel worksheet
-description: Aspose.Cells Cloud API, Excel çalışma sayfasından otomatik filtre açıklaması almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 50
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasında otomatik filtre alın
 ---
-Bu REST API, Excel çalışma sayfasında `auto filter` açıklamasını almayı gösterir.
+title: "Otomatik Filtre Al"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından Otomatik Filtre açıklamasını alın."
+keywords: "Otomatik Filtre, Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+type: docs
+url: /cells/autofilter/get/
+aliases:
+  - /get-autofilter-description/
+weight: 50
+---
 
-## RSET API
+# Çalışma Sayfasından Otomatik Filtre Açıklamasını Alma
+
+**Sürüm:** v3.0  
+**Uç nokta:** `GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter`
+
+> **Not:** Tüm örnek istekler **HTTPS** kullanır. JWT jetonlarını güvenli olmayan bir bağlantı üzerinden asla göndermeyin.
+
+---
+
+## Genel Bakış
+
+Bir **Otomatik Filtre**, kullanıcıların bir çalışma sayfasındaki satırları sütun değerlerine, renklere, özel kriterlere ve daha fazlasına göre filtrelemesini sağlar. Bu API, filtre sütunlarını, aralığını ve sıralama ayrıntılarını içeren tam Otomatik Filtre yapılandırmasını döndürür; böylece filtre ayarlarını programatik olarak inceleyebilir veya yeniden oluşturabilirsiniz.
+
+---
+
+## Ön Gereksinimler
+
+| Gereksinim | Açıklama |
+|-----------|----------|
+| **Kimlik Doğrulama** | Geçerli bir JWT jetonu gerekli. [Kimlik doğrulama kılavuzuna](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) bakın. |
+| **Dosya konumu** | Çalışma kitabının Aspose Cloud Deposu'nda (veya bağlı harici bir depoda) bulunması gerekir. |
+| **Desteklenen formatlar** | Aspose.Cells tarafından desteklenen tüm Excel formatları (örneğin, `.xlsx`, `.xls`, `.xlsm`). |
+| **SDK (isteğe bağlı)** | SDK kullanmayı tercih ediyorsanız, uygun paketi yükleyin (örneğin, .NET için `dotnet add package Aspose.Cells-Cloud`). |
+
+---
+
+## İstek
+
+### HTTP İsteği
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
+```
+
+### Yol Parametreleri
+
+| Parametre | Tür   | Açıklama |
+|-----------|-------|----------|
+| `name`      | string | **Gerekli.** Uzantısıyla birlikte çalışma kitabı dosya adı. |
+| `sheetName` | string | **Gerekli.** Otomatik Filtre’nin alınacağı çalışma sayfası adı. |
+
+### Sorgu Parametreleri
+
+| Parametre   | Tür   | Açıklama |
+|-------------|-------|----------|
+| `folder`      | string | Çalışma kitabının bulunduğu depodaki klasör yolu. |
+| `storageName` | string | Kullanılacak depo adı. |
+
+### Güvenlik
+
+API, **JWT jeton tabanlı kimlik doğrulama** kullanır. Jetonu `Authorization` başlığına ekleyin:
+
+```http
+Authorization: Bearer <your_jwt_token>
+```
+
+---
+
+## İstek Örneği (cURL)
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
- 
+curl "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter?folder=MyFolder&storageName=MyStorage" \
+  -X GET \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt_token>"
 ```
 
-İstek parametreleri şunlardır:
+---
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
+## Yanıt
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/AutoFilter/GetWorksheetAutoFilter) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+Hizmet, `AutoFilter` modelini sarmalayan bir JSON nesnesi döndürür.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### Başarılı Yanıt Şeması
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```java
-
-curl  "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```java
-
- {
-  "Status": "string",
+```json
+{
+  "Status": "OK",
+  "Code": 200,
   "AutoFilter": {
     "link": {
       "Href": "string",
@@ -76,63 +109,32 @@ curl  "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilte
           "FilterByFillColor": "string",
           "Pattern": "string",
           "Color": {
-            "Color": {
-              "A": 0,
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
+            "Color": { "A": 0, "R": 0, "G": 0, "B": 0 },
             "ColorIndex": 0,
             "IsShapeColor": true,
-            "ThemeColor": {
-              "ColorType": "string",
-              "Tint": 0
-            },
+            "ThemeColor": { "ColorType": "string", "Tint": 0 },
             "Type": "string"
           },
           "ForegroundColorColor": {
-            "Color": {
-              "A": 0,
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
+            "Color": { "A": 0, "R": 0, "G": 0, "B": 0 },
             "ColorIndex": 0,
             "IsShapeColor": true,
-            "ThemeColor": {
-              "ColorType": "string",
-              "Tint": 0
-            },
+            "ThemeColor": { "ColorType": "string", "Tint": 0 },
             "Type": "string"
           },
           "BackgroundColor": {
-            "Color": {
-              "A": 0,
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
+            "Color": { "A": 0, "R": 0, "G": 0, "B": 0 },
             "ColorIndex": 0,
             "IsShapeColor": true,
-            "ThemeColor": {
-              "ColorType": "string",
-              "Tint": 0
-            },
+            "ThemeColor": { "ColorType": "string", "Tint": 0 },
             "Type": "string"
           }
         },
         "CustomFilters": [
-          {
-            "FilterOperatorType": "string"
-          }
+          { "FilterOperatorType": "string" }
         ],
-        "DynamicFilter": {
-          "DynamicFilterType": "string"
-        },
-        "IconFilter": {
-          "IconId": 0,
-          "IconSetType": "string"
-        },
+        "DynamicFilter": { "DynamicFilterType": "string" },
+        "IconFilter": { "IconId": 0, "IconSetType": "string" },
         "Top10Filter": {
           "Criteria": "string",
           "IsPercent": true,
@@ -147,11 +149,7 @@ curl  "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilte
       "CaseSensitive": true,
       "HasHeaders": true,
       "KeyList": [
-        {
-          "Key": 0,
-          "SortOrder": "string",
-          "CustomList": "string"
-        }
+        { "Key": 0, "SortOrder": "string", "CustomList": "string" }
       ],
       "SortLeftToRight": true
     }
@@ -159,64 +157,94 @@ curl  "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilte
 }
 ```
 
-{{< /tab >}}
+### Yanıt Örneği
 
-{{< /tabs >}}
+```json
+{
+  "Status": "OK",
+  "Code": 200,
+  "AutoFilter": {
+    "link": {
+      "Href": "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter",
+      "Rel": "self",
+      "Title": "AutoFilter",
+      "Type": "application/json"
+    },
+    "FilterColumns": [
+      {
+        "FieldIndex": 1,
+        "FilterType": "Custom",
+        "MultipleFilters": {
+          "MatchBlank": false,
+          "MultipleFilterList": [
+            {
+              "Operator": "Equals",
+              "Criteria": "Approved"
+            }
+          ]
+        },
+        "ColorFilter": null,
+        "CustomFilters": [],
+        "DynamicFilter": null,
+        "IconFilter": null,
+        "Top10Filter": null,
+        "Visibledropdown": "true"
+      }
+    ],
+    "Range": "A1:C100",
+    "Sorter": {
+      "CaseSensitive": false,
+      "HasHeaders": true,
+      "KeyList": [
+        {
+          "Key": 1,
+          "SortOrder": "Ascending",
+          "CustomList": null
+        }
+      ],
+      "SortLeftToRight": false
+    }
+  }
+}
+```
 
-## Bulut SDK Ailesi
+---
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+**HTTP Durum Kodları**
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+| Kod | Anlam                       | Açıklama                                      |
+|-----|-----------------------------|-----------------------------------------------|
+| 200 | Tamam                       | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Hatalı İstek                | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Yetkisiz                    | Geçersiz veya eksik JWT jetonu. |
+| 413 | Yük Çok Büyük               | Yüklenecek dosya boyut limitini aşıyor. |
+| 500 | Sunucu İç Hatası            | Beklenmeyen sunucu hatası. |
+---
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+## SDK Örnekleri
 
-{{< tab tabNum="1" >}}
+İşlem, tüm Aspose.Cells Cloud SDK’larında mevcuttur. Aşağıda çalıştırılabilir örnek kod parçacıkları verilmiştir.
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleGetWorksheetAutoFilter.cs" >}}
+| Dil | Örnek |
+|-----|-------|
+| **C#** | <details><summary>Kodu göster</summary>```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar apiInstance = new CellsApi();\nvar response = apiInstance.GetWorksheetAutoFilter("Book1.xlsx", "Sheet1", folder: "MyFolder", storageName: "MyStorage");\nConsole.WriteLine(response.AutoFilter);\n```</details> |
+| **Java** | <details><summary>Kodu göster</summary>```java\nimport com.aspose.cells.cloud.api.CellsApi;\nimport com.aspose.cells.cloud.model.AutoFilterResponse;\n\nCellsApi api = new CellsApi();\nAutoFilterResponse resp = api.getWorksheetAutoFilter("Book1.xlsx", "Sheet1", "MyFolder", "MyStorage");\nSystem.out.println(resp.getAutoFilter());\n```</details> |
+| **Python** | <details><summary>Kodu göster</summary>```python\nfrom asposecellscloud import CellsApi\n\napi = CellsApi()\nresp = api.get_worksheet_auto_filter(name='Book1.xlsx', sheet_name='Sheet1', folder='MyFolder', storage_name='MyStorage')\nprint(resp.auto_filter)\n```</details> |
+| **Node.js** | <details><summary>Kodu göster</summary>```javascript\nconst { CellsApi } = require('asposecellscloud');\nconst api = new CellsApi();\napi.getWorksheetAutoFilter('Book1.xlsx', 'Sheet1', { folder: 'MyFolder', storageName: 'MyStorage' })\n  .then(resp => console.log(resp.autoFilter))\n  .catch(err => console.error(err));\n```</details> |
+| **PHP** | <details><summary>Kodu göster</summary>```php\nuse Aspose\Cells\CellsApi;\nuse Aspose\Cells\Models\AutoFilterResponse;\n\n$api = new CellsApi();\n$response = $api->getWorksheetAutoFilter('Book1.xlsx', 'Sheet1', 'MyFolder', 'MyStorage');\nprint_r($response->getAutoFilter());\n```</details> |
+| **Ruby** | <details><summary>Kodu göster</summary>```ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::CellsApi.new\nresp = api.get_worksheet_auto_filter('Book1.xlsx', 'Sheet1', folder: 'MyFolder', storage_name: 'MyStorage')\nputs resp.auto_filter\n```</details> |
+| **Go** | <details><summary>Kodu göster</summary>```go\nimport (\n    \"fmt\"\n    \"github.com/aspose-cells-cloud/aspose-cells-cloud-go/v3\"\n)\n\napi := asposecellscloud.NewAPIClient()\nresp, _, err := api.CellsApi.GetWorksheetAutoFilter(context.Background(), \"Book1.xlsx\", \"Sheet1\", \"MyFolder\", \"MyStorage\")\nif err != nil { panic(err) }\nfmt.Println(resp.AutoFilter)\n```</details> |
+| **Perl** | <details><summary>Kodu göster</summary>```perl\nuse AsposeCellsCloud::CellsApi;\nmy $api = AsposeCellsCloud::CellsApi->new();\nmy $resp = $api->get_worksheet_auto_filter(name=>'Book1.xlsx', sheet_name=>'Sheet1', folder=>'MyFolder', storage_name=>'MyStorage');\nprint $resp->{autoFilter};\n```</details> |
 
-{{< /tab >}}
+SDK’ların tam listesi ve kurulum talimatları için [Aspose.Cells Cloud GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-{{< tab tabNum="2" >}}
+---
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_GetWorksheetAutoFilter.java" >}}
+## Aşağıdakilere Bakın
 
-{{< /tab >}}
+- [Otomatik Filtre – OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/GetWorksheetAutoFilter)  
+- [Kimlik doğrulama kılavuzu](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
+- [Depo işlemleri](https://docs.aspose.cloud/cells/storage/)  
 
-{{< tab tabNum="3" >}}
-
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_GetWorksheetAutoFilter.php" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetAutoFilter.rb" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetAutoFilter.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetAutoFilter.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetAutoFilter.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetAutoFilter.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+---
+---

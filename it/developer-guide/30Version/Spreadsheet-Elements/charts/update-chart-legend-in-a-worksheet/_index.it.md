@@ -1,78 +1,78 @@
-﻿---
-title: Aggiorna la legenda del grafico in un foglio di lavoro
+---
+title: "Aggiornare la legenda di un grafico in un foglio di lavoro"
 type: docs
-url: /it/charts/legend/update/
+url: /charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Aggiorna la legenda del grafico in un foglio di lavoro
+keywords: "Aspose.Cells, Cloud, Excel, Grafico, Legenda, REST API, Aggiornamento, Foglio di lavoro, cURL, SDK"
+description: "Come aggiornare la legenda di un grafico in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud, con esempi di richiesta cURL e frammenti di codice SDK per diversi linguaggi di programmazione."
+ArticleTitle: "Aggiornare la legenda di un grafico in un foglio di lavoro – Guida all'API Aspose.Cells Cloud"
 ---
-Questo REST API indica l'aggiornamento della legenda del grafico
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
- 
+
+Questa API REST aggiorna la legenda di un grafico.
+
+**Prerequisiti:** Per utilizzare questa endpoint è necessario disporre di un token JWT valido di Aspose Cloud e il workbook di destinazione deve essere memorizzato in una posizione di archiviazione supportata (quella predefinita è l'archiviazione Aspose Cloud). Assicurarsi che il nome del workbook, il nome del foglio di lavoro e l'indice del grafico siano corretti.
+
+Una legenda di grafico visualizza i nomi e i simboli delle serie di dati presenti nel grafico. L'aggiornamento della legenda consente di personalizzarne l'aspetto, ad esempio lo stile del carattere, il colore e l'ombreggiatura.
+
+## API PostWorksheetChartLegend
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
- I parametri della richiesta sono:
- 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome della cartella di lavoro.|
-| Nome foglio| corda| sentiero| Nome del foglio di lavoro.|
-| graficoIndice| intero| sentiero| L'indice del grafico.|
-| leggenda|| corpo||
-| cartella| corda| domanda| La cartella della cartella di lavoro.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
 
- 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
- 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+### **Sicurezza e autenticazione**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
+
+### Parametri della richiesta
+
+| Nome parametro | Tipo    | Posizione | Descrizione                                   |
+| -------------- | ------- | --------- | --------------------------------------------- |
+| name           | string  | path      | Nome del workbook.                            |
+| sheetName      | string  | path      | Nome del foglio di lavoro.                    |
+| chartIndex     | integer | path      | Indice del grafico da modificare.             |
+| legend         | object  | body      | Oggetto JSON che definisce le impostazioni della legenda. |
+| folder         | string  | query     | Cartella contenente il workbook.              |
+| storageName    | string  | query     | Nome dell'archiviazione.                      |
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend) definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di effettuare interazioni REST direttamente da un browser web.
+
+È possibile utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come chiamare l'API Cloud tramite cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" 
--d '{"Font":{"Color":{"A":"1", "R":"255", "G":"0", "B":"0"}, "DoubleSize":10.0, "IsBold":true, "IsItalic":false, "IsStrikeout":false, "IsSubscript":false, "IsSuperscript":false, "Name":"Arial", "Size":15, "Underline":"None"}, "Shadow":true}' 
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
+-d '{"Font":{"Color":{"A":"1","R":"255","G":"0","B":"0"},"DoubleSize":10.0,"IsBold":true,"IsItalic":false,"IsStrikeout":false,"IsSubscript":false,"IsSuperscript":false,"Name":"Arial","Size":15,"Underline":"None"},"Shadow":true}' \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
- 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
- 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
- 
+## Famiglia di SDK Cloud
+
+L'utilizzo di un SDK accelera lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

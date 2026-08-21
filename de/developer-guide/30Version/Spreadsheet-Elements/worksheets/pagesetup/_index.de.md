@@ -1,53 +1,90 @@
-﻿---
-title: Arbeitsblattseiten-Setup
-second_title: Documen
-linktitle: Seiteneinrichtung
-type: docs
-url: /de/page-setup/
-keywords: An Excel worksheet page setup
-description: Aspose.Cells Cloud REST API unterstützt das Hinzufügen eines Excel Arbeitsblatts. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Ein Excel Arbeitsblattseiten-Setup
 ---
-# **Seiteneinrichtung**
+title: "Arbeitsblatt-Seiteinrichtung"
+second_title: "Dokument"
+linktype: "Seiteinrichtung"
+type: docs
+url: /page-setup/
+keywords: "Aspose.Cells, PageSetup, Arbeitsblatt, Druckeinstellungen, Ränder, Orientierung, Papierformat, Kopfzeile, Fußzeile, Skalierung"
+description: "Erfahren Sie, wie Sie das Drucklayout eines Excel-Arbeitsblatts mit dem PageSetup-Objekt von Aspose.Cells Cloud konfigurieren. Enthält eine Liste der Eigenschaften, Standardwerte, Bereichsangaben und Codebeispiele für C#, Java und Python."
+weight: 20
+ArticleTitle: "Arbeitsblatt-Seiteinrichtung – Konfigurieren des Drucklayouts mit Aspose.Cells Cloud"
+---
 
-Excel-Einstellungen für die Druckseite
+# **PageSetup**
 
-## **Eigenschaften**
+Excel-Druckseiteneinstellungen
 
-| Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
-|:- |:- |:- |:- |:- |:- |
-|Schwarz und Weiß|Boolescher Wert|WAHR| FALSCH||Gibt an, ob Elemente des Dokuments in Schwarzweiß gedruckt werden.|
-|Unterer Rand|Schwimmend|WAHR| FALSCH||Stellt die Größe des unteren Rands in Zentimetern dar.|
-|Horizontal zentrieren|Boolescher Wert|WAHR| FALSCH||Gibt an, ob das Blatt horizontal zentriert gedruckt wird.|
-|Vertikal zentrieren|Boolescher Wert|WAHR| FALSCH||Gibt an, ob das Blatt vertikal zentriert gedruckt wird.|
-|ErsteSeitennummer|Ganze Zahl|WAHR| FALSCH||Stellt die erste Seitenzahl dar, die beim Drucken dieses Blattes verwendet wird.|
-|FitToPagesTall|Ganze Zahl|WAHR| FALSCH||Gibt die Seitenanzahl an, auf die das Arbeitsblatt beim Drucken skaliert wird. Der Standardwert ist 1.|
-|FitToPagesWide|Ganze Zahl|WAHR| FALSCH||Gibt die Seitenanzahl an, auf die das Arbeitsblatt beim Drucken skaliert wird. Der Standardwert ist 1.|
-|Fußzeilenrand|Schwimmend|WAHR| FALSCH||Stellt den Abstand vom unteren Seitenrand bis zur Fußzeile in Zentimetern dar.|
-|Kopfzeilenrand|Schwimmend|WAHR| FALSCH||Stellt den Abstand vom oberen Seitenrand zur Kopfzeile in Zentimetern dar.|
-|IsAutoFirstPageNumber|Boolescher Wert|WAHR| FALSCH||Gibt an, ob die erste Seitenzahl automatisch vergeben wird.|
-|IsHFAlignMargins|Boolescher Wert|WAHR| FALSCH||Gibt an, ob die Kopf- und Fußzeilenränder an den Seitenrändern ausgerichtet sind. Wenn diese Eigenschaft auf „true“ gesetzt ist, werden die linke Kopf- und Fußzeile am linken Rand und die rechte Kopf- und Fußzeile am rechten Rand ausgerichtet. Diese Option ist standardmäßig aktiviert.|
-|IsHFDiffFirst|Boolescher Wert|WAHR| FALSCH||„True“ bedeutet, dass sich die Kopf-/Fußzeile der ersten Seite von denen anderer Seiten unterscheidet.|
-|IsHFDiffOddEven|Boolescher Wert|WAHR| FALSCH||„True“ bedeutet, dass die Kopf-/Fußzeile der ungeraden Seiten bei den ungeraden Seiten unterschiedlich ist.|
-|IsHFScaleWithDoc|Boolescher Wert|WAHR| FALSCH||Gibt an, ob Kopf- und Fußzeile mit der Dokumentskalierung skaliert werden. Gilt nur für Excel 2007.|
-|IsPercentScale|Boolescher Wert|WAHR| FALSCH||Wenn diese Eigenschaft „False“ ist, steuern die Eigenschaften „FitToPagesWide“ und „FitToPagesTall“, wie das Arbeitsblatt skaliert wird.|
-|Linker Rand|Schwimmend|WAHR| FALSCH||Stellt die Größe des linken Rands in Zentimetern dar.|
-|Befehl|Zeichenfolge|WAHR| FALSCH||Stellt die Reihenfolge dar, die Microsoft Excel zum Nummerieren der Seiten beim Drucken eines großen Arbeitsblatts verwendet.|
-|Orientierung|Zeichenfolge|WAHR| FALSCH|| Stellt die Druckausrichtung der Seite dar. Querformat/Hochformat|
-|Papiergröße|Zeichenfolge|WAHR| FALSCH||Stellt die Größe des Papiers dar.|
-|Druckbereich|Zeichenfolge|WAHR| FALSCH||Stellt den zu druckenden Bereich dar.|
-|Kommentare drucken|Zeichenfolge|WAHR| FALSCH||Stellt die Art und Weise dar, wie Kommentare mit dem Blatt gedruckt werden.|
-|Druckkopien|Ganze Zahl|WAHR| FALSCH||Ruft die Anzahl der zu druckenden Kopien ab und legt sie fest.|
-|Druckentwurf|Boolescher Wert|WAHR| FALSCH||Gibt an, ob das Blatt ohne Grafiken gedruckt wird.|
-|Druckfehler|Zeichenfolge|WAHR| FALSCH||Gibt die Art des angezeigten Druckfehlers an.|
-|Rasterlinien drucken|Boolescher Wert|WAHR| FALSCH||Gibt an, ob Zellgitternetzlinien auf der Seite gedruckt werden.|
-|Drucküberschriften|Boolescher Wert|WAHR| FALSCH||Gibt an, ob Zeilen- und Spaltenüberschriften mit dieser Seite gedruckt werden.|
-|Druckqualität|Ganze Zahl|WAHR| FALSCH||Stellt die Druckqualität dar.|
-|Titelspalten drucken|Zeichenfolge|WAHR| FALSCH||Stellt die Spalten dar, die die Zellen enthalten, die auf der linken Seite jeder Seite wiederholt werden sollen.|
-|Titelzeilen drucken|Zeichenfolge|WAHR| FALSCH||Stellt die Zeilen dar, die die Zellen enthalten, die oben auf jeder Seite wiederholt werden sollen.|
-|Rechter Rand|Schwimmend|WAHR| FALSCH||Stellt die Größe des rechten Rands in Zentimetern dar.|
-|Oberer Rand|Schwimmend|WAHR| FALSCH||Stellt die Größe des oberen Rands in Zentimetern dar.|
-|Zoom|Ganze Zahl|WAHR| FALSCH||Stellt den Skalierungsfaktor in Prozent dar. Er sollte zwischen 10 und 400 liegen.|
-|Kopfzeile|Container|WAHR| FALSCH||Stellt den Seitenkopf dar.|
-|Fußzeile|Container|WAHR| FALSCH||Stellt den Seitenfuß dar.|
+## Übersicht
+
+Das **PageSetup**-Objekt definiert die Layout-Optionen für den Druck eines Excel-Arbeitsblatts, wie z. B. Ränder, Orientierung, Skalierung, Kopf- und Fußzeilen sowie andere druckbezogene Einstellungen. Durch die Konfiguration dieser Eigenschaften können Entwickler druckbare Arbeitsmappen erstellen, die dem gewünschten Erscheinungsbild und der gewünschten Seitenanzahl entsprechen.
+
+Im Folgenden finden Sie ein kurzes C#-Beispiel, das zeigt, wie gängige PageSetup-Eigenschaften mithilfe des Aspose.Cells Cloud SDK festgelegt werden:
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+
+// Initialisieren des API-Clients (durch eigene Anmeldedaten ersetzen)
+var apiInstance = new CellsApi("IHRE_CLIENT_ID", "IHRE_CLIENT_GEHEIMNIS");
+
+// PageSetup-Einstellungen definieren
+var pageSetup = new PageSetup()
+{
+    Orientation = "Landscape",
+    PaperSize = "A4",
+    CenterHorizontally = true,
+    CenterVertically = true,
+    Zoom = 100
+};
+
+// Einstellungen auf das erste Arbeitsblatt der Arbeitsmappe anwenden
+apiInstance.PutWorksheetPageSetup("Sample.xlsx", "Sheet1", pageSetup);
+```
+
+Dieses Snippet legt die Orientierung des Arbeitsblatts auf Querformat fest, verwendet A4-Papier, zentriert den Inhalt horizontal und vertikal und wendet einen Skalierungsfaktor von 100 % an.
+
+## Eigenschaften
+
+| Eigenschaftsname        | Eigenschaftstyp | Nullable | ReadOnly | Standardwert    | Beschreibung                                                                 |
+| ----------------------- | --------------- | -------- | -------- | --------------- | ---------------------------------------------------------------------------- |
+| BlackAndWhite           | bool            | false    | false    | false           | Druckt das Arbeitsblatt im Schwarz-Weiß-Modus.                              |
+| BottomMargin            | float           | true     | false    | 2,54 cm         | Größe des unteren Randes in Zentimetern.                                     |
+| CenterHorizontally      | bool            | false    | false    | false           | Zentriert das Arbeitsblatt horizontal beim Druck.                            |
+| CenterVertically        | bool            | false    | false    | false           | Zentriert das Arbeitsblatt vertikal beim Druck.                              |
+| FirstPageNumber         | int             | true     | false    | 1               | Die erste Seitenzahl, die beim Drucken des Arbeitsblatts verwendet wird.     |
+| FitToPagesTall          | int             | false    | false    | 1               | Anzahl der Seitenhöhe, auf die das Arbeitsblatt skaliert wird.              |
+| FitToPagesWide          | int             | false    | false    | 1               | Anzahl der Seitenbreite, auf die das Arbeitsblatt skaliert wird.            |
+| FooterMargin            | float           | true     | false    | 2,54 cm         | Abstand vom unteren Rand der Seite bis zur Fußzeile in Zentimetern.         |
+| HeaderMargin            | float           | true     | false    | 2,54 cm         | Abstand vom oberen Rand der Seite bis zur Kopfzeile in Zentimetern.         |
+| IsAutoFirstPageNumber   | bool            | false    | false    | false           | Weist die erste Seitenzahl automatisch zu.                                   |
+| IsHFAlignMargins        | bool            | false    | false    | true            | Wenn „true“, stimmen die Ränder für Kopf- und Fußzeile mit den Seitenrändern überein. |
+| IsHFDiffFirst           | bool            | false    | false    | false           | Gibt an, dass Kopf- und Fußzeile auf der ersten Seite von den anderen Seiten abweichen. |
+| IsHFDiffOddEven         | bool            | false    | false    | false           | Gibt an, dass Kopf- und Fußzeile auf ungeraden Seiten von den geraden abweichen. |
+| IsHFScaleWithDoc        | bool            | false    | false    | false           | Skaliert Kopf- und Fußzeile zusammen mit dem Dokument (Excel 2007+).        |
+| IsPercentScale          | bool            | false    | false    | true            | Wenn „false“, steuern „FitToPagesWide“ und „FitToPagesTall“ die Skalierung. |
+| LeftMargin              | float           | true     | false    | 2,54 cm         | Größe des linken Randes in Zentimetern.                                      |
+| Order                   | string          | true     | false    | "DownThenOver"  | Die Reihenfolge, die Excel beim Drucken eines großen Arbeitsblatts zur Seitennummerierung verwendet. |
+| Orientation             | string          | false    | false    | "Portrait"      | Seitenorientierung: **Landscape** (Querformat) oder **Portrait** (Hochformat). |
+| PaperSize               | string          | true     | false    | "A4"            | Für den Druck verwendete Papiergröße.                                        |
+| PrintArea               | string          | true     | false    | (keine)         | Zellbereich, der gedruckt werden soll (z. B. `"A1:D20"`).                    |
+| PrintComments           | string          | true     | false    | "NoComments"    | Art des Drucks von Kommentaren zusammen mit dem Arbeitsblatt.               |
+| PrintCopies             | int             | true     | false    | 1               | Anzahl der auszudruckenden Exemplare.                                        |
+| PrintDraft              | bool            | false    | false    | false           | Druckt das Arbeitsblatt im Entwurfsmodus (ohne Grafiken).                   |
+| PrintErrors             | string          | true     | false    | "Display"       | Art der anzuzeigenden Druckfehler.                                           |
+| PrintGridlines          | bool            | false    | false    | false           | Druckt Zellgitterlinien.                                                     |
+| PrintHeadings           | bool            | false    | false    | false           | Druckt Zeilen- und Spaltenüberschriften.                                    |
+| PrintQuality            | int             | true     | false    | 600             | Druckqualität (Dots per inch).                                               |
+| PrintTitleColumns       | string          | true     | false    | (keine)         | Spalten, die auf der linken Seite jeder gedruckten Seite wiederholt werden. |
+| PrintTitleRows          | string          | true     | false    | (keine)         | Zeilen, die oben auf jeder gedruckten Seite wiederholt werden.              |
+| RightMargin             | float           | true     | false    | 2,54 cm         | Größe des rechten Randes in Zentimetern.                                     |
+| TopMargin               | float           | true     | false    | 2,54 cm         | Größe des oberen Randes in Zentimetern.                                      |
+| Zoom                    | int             | false    | false    | 100             | Skalierungsfaktor in Prozent (10–400 %).                                     |
+| Header                  | object          | true     | false    | (keine)         | Konfiguration der Seitenkopfzeile.                                           |
+| Footer                  | object          | true     | false    | (keine)         | Konfiguration der Seitenfußzeile.                                            |
+
+## Verwandte Objekte
+
+- **Header** – Konfiguriert die Arbeitsblatt-Kopfzeile.  
+- **Footer** – Konfiguriert die Arbeitsblatt-Fußzeile.  
+- **PrintOptions** – Weitere druckbezogene Einstellungen wie Seitenumbrüche und Druckbereich.  
+---

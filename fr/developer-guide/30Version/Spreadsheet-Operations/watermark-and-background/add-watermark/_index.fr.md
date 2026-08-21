@@ -1,85 +1,125 @@
-﻿---
-title: Ajouter un filigrane dans le fichier Excel
-second_title: Documen
-linktitle: Ajouter un filigrane dans le fichier Excel
-type: docs
-url: /fr/add-watermark-into-excel-files/
-aliases: [ /watermark/]
-keywords: Add water marker for Excel files
-description: Aspose.Cells Cloud REST API prend en charge l'ajout d'un marqueur d'eau pour les fichiers Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 39
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Filigrane
 ---
-Ce REST API indique d'ajouter `watermark` sur les fichiers Excel.
+title: "Ajouter une filigrane aux fichiers Excel"
+second_title: "Document"
+linktitle: "Ajouter une filigrane aux fichiers Excel"
+type: docs
+url: /add-watermark-into-excel-files/
+aliases: [/watermark/]
+keywords: "ajouter une filigrane à Excel, Aspose.Cells Cloud, API REST, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Découvrez comment ajouter une filigrane textuelle aux classeurs Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut un exemple cURL, les paramètres requis et les détails de la réponse."
+weight: 39
+ArticleTitle: "Ajouter une filigrane aux fichiers Excel – Documentation Aspose.Cells Cloud"
+---
 
-## RSET API
+Cette API REST ajoute une **filigrane** aux fichiers Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/watermark
- 
+**Prérequis :** Vous devez obtenir un jeton d’accès JWT valide et vous assurer que le fichier Excel est dans un format pris en charge (par exemple, `.xlsx`, `.xls`).  
+**Contexte :** Une filigrane est un texte semi-transparent superposé à chaque feuille de calcul afin d’indiquer la propriété ou le caractère confidentiel du document.
+
+## API PostWatermark
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/watermark
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| déposer| déposer| données de formulaire| Fichier à télécharger|
-| texte| chaîne| requête||
-| couleur| chaîne| requête||
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une authentification basée sur <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### **Paramètres de la requête**
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom du paramètre | Type   | Emplacement                     | Description                                                  |
+| ---------------- | ------ | ------------------------------- | ------------------------------------------------------------ |
+| `file`           | fichier | formData (corps multipart)      | Le fichier Excel auquel la filigrane sera appliquée.       |
+| `text`           | chaîne  | query                           | Le texte de la filigrane à afficher.                         |
+| `color`          | chaîne  | query                           | La couleur de la filigrane au format hexadécimal ARGB (par exemple, `004433ff`). |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **Réponse**
+
+La réponse JSON contient un tableau **Files** (Fichiers). Pour chaque objet fichier :
+
+- **Filename** – nom du classeur traité.  
+- **FileSize** – taille du fichier en octets.  
+- **FileContent** – contenu de l’ fichier Excel filigrané encodé en Base64 ; décodez-le pour obtenir le fichier effectif.
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Files": [
+        {
+            "Filename" : "[nom_fichier1]",
+            "Filesize" : [taille_fichier],
+            "FileContent" : "[Base64String]"
+        },        {
+            "Filename" : "[nom_fichier2]",
+            "Filesize" : [taille_fichier],
+            "FileContent" : "[Base64String]"
+        },        {
+            "Filename" : "[nom_fichier3]",
+            "Filesize" : [taille_fichier],
+            "FileContent" : "[Base64String]"
+        }
+    ]
+}
+```
+
+**Codes d’état HTTP**
+
+| Code | Signification               | Description                                                  |
+|------|-----------------------------|--------------------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Demande incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant. |
+| 413  | Charge utile trop grande     | Le fichier téléchargé dépasse la limite de taille. |
+| 500  | Erreur interne du serveur    | Erreur inattendue du serveur. |
+
+## Comment utiliser l’API PostWatermark à l’aide des SDK
+
+### Spécification de l’API PostWatermark
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark) définit une interface de programmation publiquement accessible et permet d’effectuer directement des interactions REST depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande **cURL** pour appeler les services web Aspose.Cells. L’exemple ci-dessous montre une requête complète, incluant l’en-tête d’authentification requis. Remplacez `<your-jwt-token>` par un jeton d’accès JWT valide obtenu à partir du point d’authentification Aspose.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&color=004433ff" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
-
+curl -v "https://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&color=004433ff" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your-jwt-token>" \
+  -F "file=@Sample.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Sample_watermarked.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
+### Utiliser les SDK Aspose.Cells Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est la méthode la plus rapide pour développer. Un SDK masque les détails de bas niveau, vous permettant ainsi de vous concentrer sur votre logique métier. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code ci-dessous montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -132,4 +172,4 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
-
+---

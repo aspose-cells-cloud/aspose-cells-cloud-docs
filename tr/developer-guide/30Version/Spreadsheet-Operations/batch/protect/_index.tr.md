@@ -1,76 +1,117 @@
-﻿---
-title: Batch Protect Excel Dosyası
-second_title: Documen
-type: docs
-url: /tr/batch/protect
-keywords: Batch protection of multiple Excel files
-description: Aspose.Cells Cloud API, birden fazla Excel dosyasının toplu olarak korunmasını destekler. SDK, Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift gibi çeşitli geliştirme dillerini destekler.
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Toplu Koruma
 ---
-Bu REST API, `batch protection`'e uygun dosyaları gösterir.
+title: "Excel Dosyalarını Toplu Olarak Korumalı Hale Getir"
+second_title: "Belge"
+type: docs
+url: /batch/protect
+keywords: "Excel Dosyalarını Toplu Olarak Korumalı Hale Getir, Aspose Cells Cloud, REST API, Excel koruması, toplu koruma"
+description: "Aspose.Cells Cloud REST API’sini kullanarak birden fazla Excel dosyasını toplu olarak nasıl koruyabileceğinizi öğrenin. İstek detaylarını, cURL örneğini ve çeşitli programlama dilleri için SDK kod örneklerini içerir."
+weight: 100
+---
 
-## RSET API
+Bu REST API, uygun Excel dosyalarının **toplu korumasını** sağlar.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/protect
- 
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| topluKorumaİsteği|| vücut||
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-**BatchProtectRequest Özellikleri**
+### İstek Parametreleri
 
-Adı | Türü | Açıklama | Notlar
------------- | ------------- | ------------- | -------------
- KaynakKlasör | dize | | [isteğe bağlı]EşleşmeKoşulu | EşleşmeKoşuluİsteği | | [isteğe bağlı]KorumaTürü | dize | | [isteğe bağlı]Parola | dize | | [isteğe bağlı]ÇıkışKlasörü | dize | | [isteğe bağlı]**MatchConditionRequest Özellikleri**
+| Parametre Adı        | Tür                  | Konum | Açıklama                                                                                               |
+|----------------------|----------------------|-------|--------------------------------------------------------------------------------------------------------|
+| batchProtectRequest  | BatchProtectRequest  | body  | Kaynak klasörü, eşleştirme koşullarını, koruma türünü, parolayı ve çıktı klasörünü belirten JSON yükü. |
 
-Adı | Türü | Açıklama | Notlar
------------- | ------------- | ------------- | -------------
- RegexPattern | dize | | [isteğe bağlı]FullMatchConditions | dize[]| | [isteğe bağlı][OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/PostProtectConvert) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### BatchProtectRequest Özellikleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Ad                | Tür                        | Açıklama                                                                              | Notlar     |
+|-------------------|----------------------------|---------------------------------------------------------------------------------------|------------|
+| SourceFolder      | string                     | Kaynak Excel dosyalarını içeren klasör.                                               | isteğe bağlı |
+| MatchCondition    | MatchConditionRequest      | Korumaya uygun dosyaları seçmek için kullanılan kriterler.                            | isteğe bağlı |
+| ProtectionType    | string                     | Uygulanacak koruma türü (örn. `All`, `ReadOnly`).                                     | isteğe bağlı |
+| Password          | string                     | Korumalı dosyalar için ayarlanacak parola.                                            | isteğe bağlı |
+| OutFolder         | string                     | Korumalı dosyaların konumlandırılacağı hedef klasör.                                  | isteğe bağlı |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### MatchConditionRequest Özellikleri
+
+| Ad                  | Tür        | Açıklama                                     | Notlar     |
+|---------------------|------------|----------------------------------------------|------------|
+| RegexPattern        | string     | Dosya adlarını eşleştirmek için kullanılan normal ifade. | isteğe bağlı |
+| FullMatchConditions | string[]   | Tam dosya adı koşullarının listesi.          | isteğe bağlı |
+
+### İstek Gövdesi Parametresi
+
+| Parametre Adı | Tür  | Açıklama                              |
+|---------------|------|---------------------------------------|
+| data          | file | Oluşturulacak çalışma kitabının ikili içeriği. |
+
+### **Yanıt**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+**HTTP Durum Kodları**
+
+| Kod | Anlamı                       | Ne Zaman Döner                          |
+|-----|------------------------------|-----------------------------------------|
+| 200 OK | Çalışma kitabı başarıyla oluşturuldu | Normal akış                              |
+| 201 Created | Çalışma kitabı oluşturuldu (alternatif yanıt) | API oluşturulmuş durumunda döner |
+| 400 Bad Request | Geçersiz parametreler | İstemci tarafı hatası                    |
+| 401 Unauthorized | Eksik veya geçersiz belirteç | Kimlik doğrulama hatası                 |
+| 409 Conflict | Dosya mevcut ve `isWriteOver=false` | Mevcut dosya ile çakışma              
+
+## SDK’lar ile PostProtectConvert API’sini Nasıl Kullanılır
+
+### PostProtectConvert API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/PostProtectConvert), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye nasıl istek atılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/protect" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\",\"ProtectionType\":\"All\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\",\"ProtectionType\":\"All\"}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bir SDK kullanmak, geliştirme sürecini hızlandırmak için en iyi yoldur. SDK, düşük seviye detayları kendisi yönetir ve sizin projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanılarak Aspose.Cells web hizmetlerine istek nasıl atılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +164,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

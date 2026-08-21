@@ -1,137 +1,277 @@
-﻿---
-title: Excel çalışma sayfasından sütunları al
-second_title: Documen
-linktitle: Ge
-type: docs
-url: /tr/columns/get/
-aliases: [/get-columns-from-an-excel-worksheet/,/get-columns-from-a-worksheet/,/get-column-from-a-worksheet/]
-keywords: Get columns on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında sütunların alınmasını destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasından sütunları al
 ---
-Bu REST API, Çalışma sayfasının sütun verilerini sütunun indeksine göre oku'yu gösterir.
+title: Sütun Detaylarını Al – Aspose.Cells Cloud API Referansı (v4.0)
+description: Aspose.Cells Cloud REST API kullanarak bir çalışma sayfası sütunuyla ilgili detaylı bilgiyi (indeks, genişlik, stil, gizli durumu) alın.
+keywords: Aspose.Cells, Bulut API, Excel sütunu, Sütun al, REST API, JWT, çalışma sayfası
+date: 2026-07-30
+---
 
-## RSET API
+# Sütun Detaylarını Al  
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
- 
+Aspose Cloud’da depolanan bir Excel çalışma kitabından belirli bir çalışma sayfası sütunuyla (indeks, genişlik, stil, gizli durumu) ilgili detaylı bilgi alın.
+
+## İçindekiler
+1. [Önkoşullar](#önkoşullar)  
+2. [Kimlik Doğrulama](#kimlik-doğrulama)  
+3. [Uç Nokta](#uç-nokta)  
+4. [İstek Parametreleri](#istek-parametreleri)  
+5. [cURL Örneği](#curl-örneği)  
+6. [Yanıt Örneği](#yanıt-örneği)  
+7. [Yanıt Şeması](#yanıt-şeması)  
+8. [Olası Hatalar](#olası-hatalar)  
+9. [SDK Örnekleri](#sdk-örnekleri)  
+10. [Ek Kaynaklar](#ek-kaynaklar)  
+
+---
+
+## Önkoşullar
+- Aspose Cloud kimlik doğrulama yoluyla elde edilmiş geçerli bir **JWT erişim jetonu**.  
+- Çalışma kitabının dosyası, Aspose Cloud Depolama Alanı (veya başka desteklenen bir depolama) içinde depolanmış olmalı ve gerekliyse klasör yolu bilinmelidir.  
+
+---
+
+## Kimlik Doğrulama
+Tüm Aspose.Cells Cloud API’leri, **JWT jeton tabanlı kimlik doğrulama** kullanır. Jetonu `Authorization` başlığına ekleyin:
+
+```http
+Authorization: Bearer <access_token>
 ```
 
-İstek parametreleri şunlardır:
+Jeton alma ile ilgili ayrıntılar için [kimlik doğrulama kılavuzuna](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) bakın.
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| sütunIndeksi| tam sayı| yol| Sütun dizini.|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+---
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
-
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
-
-curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0" -H "accept: application/json"
-
+## Uç Nokta
+```
+GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
 ```
 
-{{< /tab >}}
+- **{name}** – Çalışma kitabının dosya adı (örn. `test.xlsx`).  
+- **{sheetName}** – Çalışma sayfasının adı (örn. `Sheet1`).  
+- **{columnIndex}** – Alınacak sütunun sıfır tabanlı indeksi.  
 
-{{< tab tabNum="12" >}}
+---
 
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT jeton tabanlı kimlik doğrulama</a> gerektirir.
+
+## Istek Parametreleri
+
+| Ad               | Konum | Tür     | Gerekli | Açıklama |
+|------------------|-------|---------|---------|----------|
+| **name**         | path  | string  | Evet    | Çalışma kitabının dosya adı. |
+| **sheetName**    | path  | string  | Evet    | Sütunu içeren çalışma sayfası. |
+| **columnIndex**  | path  | integer | Evet    | Alınacak sütunun sıfır tabanlı indeksi. |
+| **folder**       | query | string  | Hayır   | Çalışma kitabının bulunduğu depolama klasörü. |
+| **storageName**  | query | string  | Hayır   | Depolama hizmetinin adı (örn. Aspose Cloud Depolama Alanı). |
+
+---
+
+## cURL Örneği
 ```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0?folder=MyFolder&storageName=MyStorage" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
+```
 
+---
+
+## Yanıt Örneği
+```json
 {
-"Column": {
-  "GroupLevel": 0,
-  "Index": 10,
-  "IsHidden": false,
-  "Width": 8.5,
-  "Style": {
+  "Column": {
+    "GroupLevel": 0,
+    "Index": 0,
+    "IsHidden": false,
+    "Width": 8.5,
+    "Style": {
+      "link": {
+        "Href": "/style",
+        "Rel": "self"
+      }
+    },
     "link": {
-      "Href": "/style",
+      "Href": "https://api.aspose.cloud/v4.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0",
       "Rel": "self"
     }
   },
-  "link": {
-    "Href": "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0",
-    "Rel": "self"
-  }
-},
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
-
-
 ```
 
-{{< /tab >}}
+---
 
-{{< /tabs >}}
+## Yanıt Şeması
+| Alan                 | Tür     | Açıklama |
+|----------------------|---------|----------|
+| `Column.GroupLevel`  | integer | Sütunun özet düzeyi (gruplama için kullanılır). |
+| `Column.Index`       | integer | Sütunun sıfır tabanlı indeksi. |
+| `Column.IsHidden`    | boolean | Sütun gizliyse `true`, aksi halde `false`. |
+| `Column.Width`       | number  | Sütunun genişliği karakter cinsinden. |
+| `Column.Style`       | object  | Sütunun stil kaynağına bir `link` içerir. |
+| `Column.link`        | object  | Sütun kaynağına yönelik kendi bağlantısı (self-link). |
+| `Code`               | integer | Yanıtın HTTP durum kodu. |
+| `Status`             | string  | Durumun metinsel açıklaması (örn. **OK**). |
 
-## Bulut SDK Ailesi
+---
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+## Olası Hatalar
+| HTTP Durumu | Kod | Mesaj                   | Ne zaman oluşur |
+|-------------|-----|-------------------------|-----------------|
+| 400         | 400 | Bad Request (Geçersiz İstek) | Gerekli parametreler eksik veya hatalı. |
+| 401         | 401 | Unauthorized (Yetkisiz)      | Eksik veya geçersiz `Authorization` başlığı. |
+| 404         | 404 | Not Found (Bulunamadı)       | Çalışma kitabı, çalışma sayfası veya sütun mevcut değil. |
+| 500         | 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu tarafı sorunu. |
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+### Örnek – 404 Bulunamadı
+```json
+{
+  "Code": 404,
+  "Message": "Sütun indeksi aralık dışı."
+}
+```
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+### Örnek – 401 Yetkisiz
+```json
+{
+  "Code": 401,
+  "Message": "Geçersiz veya eksik kimlik doğrulama jetonu."
+}
+```
 
-{{< tab tabNum="1" >}}
+---
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleGetWorksheetColumns.cs" >}}
+## SDK Örnekleri
+Aşağıdaki kod parçacıkları, resmi Aspose.Cells Cloud SDK’larını kullanarak **Get Worksheet Columns** (Çalışma Sayfası Sütunlarını Al) işlemini çağırma yöntemini göstermektedir. Bir Gist kullanılamaz hale gelirse, örnek kod burada doğrudan verilmiştir.
 
-{{< /tab >}}
+<details><summary>**C#**</summary>
 
-{{< tab tabNum="2" >}}
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+using System;
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_GetWorksheetColumns.java" >}}
+// API istemcisini yapılandır
+var apiInstance = new CellsApi("client_id", "client_secret");
 
-{{< /tab >}}
+// Gerekli parametreleri ayarla
+string name = "test.xlsx";
+string sheetName = "Sheet1";
+int columnIndex = 0;
+string folder = "MyFolder";          // isteğe bağlı
+string storageName = "MyStorage";    // isteğe bağlı
 
-{{< tab tabNum="3" >}}
+try
+{
+    var response = apiInstance.GetWorksheetColumns(name, sheetName, columnIndex, folder, storageName);
+    Console.WriteLine("Sütun İndeksi: " + response.Column.Index);
+    Console.WriteLine("Genişlik: " + response.Column.Width);
+}
+catch (Exception e)
+{
+    Console.WriteLine("CellsApi.GetWorksheetColumns çağrısında özel durum: " + e.Message );
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_GetWorksheetColumns.php" >}}
+</details>
 
-{{< /tab >}}
+<details><summary>**Java**</summary>
 
-{{< tab tabNum="4" >}}
+```java
+import com.aspose.cells.cloud.api.CellsApi;
+import com.aspose.cells.cloud.model.ColumnsResponse;
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetColumns.rb" >}}
+public class GetWorksheetColumnsExample {
+    public static void main(String[] args) {
+        CellsApi apiInstance = new CellsApi("client_id", "client_secret");
 
-{{< /tab >}}
+        String name = "test.xlsx";
+        String sheetName = "Sheet1";
+        Integer columnIndex = 0;
+        String folder = "MyFolder";          // isteğe bağlı
+        String storageName = "MyStorage";    // isteğe bağlı
 
-{{< tab tabNum="5" >}}
+        try {
+            ColumnsResponse result = apiInstance.getWorksheetColumns(name, sheetName, columnIndex, folder, storageName);
+            System.out.println("Sütun indeksi: " + result.getColumn().getIndex());
+            System.out.println("Genişlik: " + result.getColumn().getWidth());
+        } catch (Exception e) {
+            System.err.println("CellsApi#getWorksheetColumns çağrısında özel durum");
+            e.printStackTrace();
+        }
+    }
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetColumns.ts" >}}
+</details>
 
-{{< /tab >}}
+<details><summary>**Python**</summary>
 
-{{< tab tabNum="6" >}}
+```python
+import asposecellscloudsdk
+from asposecellscloudsdk import CellsApi, ApiClient, Configuration
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetColumns.py" >}}
+config = Configuration()
+config.client_id = "client_id"
+config.client_secret = "client_secret"
 
-{{< /tab >}}
+api_instance = CellsApi(ApiClient(config))
 
-{{< tab tabNum="7" >}}
+name = "test.xlsx"
+sheet_name = "Sheet1"
+column_index = 0
+folder = "MyFolder"       # isteğe bağlı
+storage_name = "MyStorage"  # isteğe bağlı
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetColumns.pl" >}}
+try:
+    response = api_instance.get_worksheet_columns(name, sheet_name, column_index, folder, storage_name)
+    print("Sütun indeksi:", response.column.index)
+    print("Genişlik:", response.column.width)
+except Exception as e:
+    print("CellsApi->get_worksheet_columns çağrısında özel durum:", e)
+```
 
-{{< /tab >}}
+</details>
 
-{{< tab tabNum="8" >}}
+<details><summary>**Node.js (TypeScript)**</summary>
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetColumns.go" >}}
+```typescript
+import { CellsApi, Configuration } from "@asposecloud/cells-sdk";
 
-{{< /tab >}}
+const config = new Configuration({
+    clientId: "client_id",
+    clientSecret: "client_secret"
+});
+const apiInstance = new CellsApi(config);
 
-{{< /tabs >}}
+const name = "test.xlsx";
+const sheetName = "Sheet1";
+const columnIndex = 0;
+const folder = "MyFolder";       // isteğe bağlı
+const storageName = "MyStorage"; // isteğe bağlı
+
+apiInstance.getWorksheetColumns(name, sheetName, columnIndex, folder, storageName)
+    .then((result) => {
+        console.log("Sütun indeksi:", result.column?.index);
+        console.log("Genişlik:", result.column?.width);
+    })
+    .catch((error) => {
+        console.error("getWorksheetColumns çağrısında hata:", error);
+    });
+```
+
+</details>
+
+> **Not:** Tüm SDK’lar, `client_id` ve `client_secret` sağladığınızda otomatik olarak `Authorization` başlığını işlemektedir.
+
+---
+
+## Ek Kaynaklar
+- **OpenAPI Spesifikasyonu:** <https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns>  
+- **Kimlik Doğrulama Kılavuzu:** <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>  
+- **GitHub Deposu (SDK’lar ve Örnekler):** <https://github.com/aspose-cells-cloud>  
+
+--- 
+
+*Belge son güncelleme tarihi: 2026-07-30.*

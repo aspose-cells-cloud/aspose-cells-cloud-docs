@@ -1,74 +1,84 @@
-﻿---
-title: Supprimer un objet OLE dans une feuille de calcul Excel
-second_title: Documen
-linktitle: Supprimer
+---
+title: "Supprimer un objet OLE dans une feuille Excel"
+second_title: "Document"
+linktitle: "Supprimer"
 type: docs
 url: /fr/oleobjects/delete/
-aliases: [/delete-a-specific-oleobject-from-excel-worksheet/]
-keywords: Delete an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge la suppression d'un objet OLE dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+aliases: [/fr/delete-a-specific-oleobject-from-excel-worksheet/]
+keywords: "Aspose.Cells, Cloud, Supprimer, OLE, Objet, Excel, feuille de calcul, REST, API, SDK"
+description: "Découvrez comment supprimer un objet OLE d'une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud (v4.0). Inclut l’endpoint HTTPS, les étapes d’authentification, un exemple cURL, des extraits de code SDK, des conseils sur la gestion des erreurs et des liens vers les prochaines étapes."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Supprimer un objet OLE dans une feuille de calcul Excel
+ArticleTitle: "Supprimer un objet OLE d’une feuille Excel à l’aide de l’API Aspose.Cells Cloud"
 ---
-Ce REST API indique `delete` un objet OLE dans une feuille de calcul Excel.
 
-## RSET API
+Cette page explique comment supprimer un objet OLE spécifique d’une feuille de calcul dans un classeur Excel à l’aide de **Aspose.Cells Cloud**. Un objet OLE peut être une image liée, un graphique ou tout autre objet intégré que Excel stocke comme entité distincte.
+
+## Sécurité et authentification
+Les API Aspose.Cells Cloud sont sécurisées et exigent une [authentification basée sur un jeton JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
- 
+DELETE https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
 ```
 
-Les paramètres de la requête sont :
+### Paramètres de la requête
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Le nom du classeur.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de travail.|
-| oleObjectIndex| entier| chemin| Index des objets Ole|
-| dossier| chaîne| requête| Le dossier du classeur.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type    | Emplacement | Description                                           |
+|------------------|---------|-------------|-------------------------------------------------------|
+| name             | string  | path        | Le nom du classeur.                                   |
+| sheetName        | string  | path        | Le nom de la feuille de calcul.                       |
+| oleObjectIndex   | integer | path        | Index de l’objet OLE à supprimer.                     |
+| folder           | string  | query       | Le dossier contenant le classeur. (facultatif)       |
+| storageName      | string  | query       | Le nom du service de stockage. (facultatif)          |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+Vous pouvez utiliser l’outil en ligne de commande **cURL** pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer cet appel avec cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v4.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton JWT>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Détails de la réponse
+
+| Statut HTTP          | Description                                                              | Exemple JSON                                                          |
+|----------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| **200 OK**           | L’objet OLE a été supprimé avec succès.                                  | `{ "Code": 200, "Status": "OK" }`                                     |
+| **401 Unauthorized** | Le jeton JWT est manquant ou invalide.                                   | `{ "Code": 401, "Message": "Le jeton d’accès est manquant ou invalide." }` |
+| **404 Not Found**    | Le classeur, la feuille de calcul ou l’index d’objet OLE spécifié n’existe pas. | `{ "Code": 404, "Message": "L’index de l’objet OLE est hors limites." }` |
+| **400 Bad Request**  | Les paramètres requis sont manquants ou mal formés.                      | `{ "Code": 400, "Message": "Paramètres de requête invalides." }`     |
+
+Gérez ces réponses dans votre application en vérifiant le code de statut et en affichant le message associé.
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le meilleur moyen d’accélérer le développement. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

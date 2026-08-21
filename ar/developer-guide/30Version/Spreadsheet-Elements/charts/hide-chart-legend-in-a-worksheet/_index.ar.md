@@ -1,78 +1,96 @@
-﻿---
-title: إخفاء أسطورة الرسم البياني في ورقة العمل
+---
+title: "إخفاء أسطورة المخطط في ورقة عمل Excel – واجهة برمجة تطبيقات Aspose.Cells Cloud"
 type: docs
-url: /ar/charts/legend/hide/
+url: /charts/legend/hide/
 aliases: [/hide-chart-legend-in-a-worksheet/]
 weight: 110
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إخفاء أسطورة الرسم البياني في ورقة العمل
+keywords: "Aspose.Cells, Excel, إخفاء أسطورة المخطط, واجهة برمجة تطبيقات REST, واجهة برمجة التطبيقات السحابية, أسطورة المخطط"
+description: "تعرّف على كيفية إخفاء أسطورة مخطط في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. تتضمن الرابط (Endpoint) باستخدام HTTPS، ومصادقة مطلوبة، وبنية الطلب، وتفاصيل الاستجابة، ومعالجة الأخطاء، وأمثلة لواجهات برمجة التطبيقات (SDKs)."
 ---
-يشير هذا REST API إلى إخفاء الأسطورة في الرسم البياني
- 
-## RSET API
- 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
- 
+
+تقوم هذه الواجهة بـإخفاء أسطورة المخطط. تُعد **أسطورة المخطط** هي المربع الذي يُعرّف سلاسل البيانات المُرسَمة في المخطط.
+
+تتطلب الواجهة رمزًا صالحًا لـ Aspose Cloud JWT، ويجب تحميل المصنف إلى تخزين Aspose Cloud، وتستخدم الإصدار **v3.0** من الواجهة.
+
+## الأمان والمصادقة
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [مصادقة تعتمد على رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## واجهة برمجة تطبيقات REST
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مؤشر الرسم البياني| عدد صحيح| طريق| مؤشر الرسم البياني.|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
 
+### معلمات الطلب
 
-<br/>
+| اسم المعلمة   | النوع   | الموقع | الوصف                                    |
+| ------------- | ------- | ------ | ----------------------------------------- |
+| **name**      | نص (string) | path   | اسم المصنف.                              |
+| **sheetName** | نص (string) | path   | اسم ورقة العمل.                           |
+| **chartIndex**| عدد صحيح (integer) | path   | فهرس المخطط.                             |
+| **folder**    | نص (string) | query  | مجلد المصنف (اختياري).                   |
+| **storageName**| نص (string) | query  | اسم التخزين (اختياري).                    |
 
- 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartLegend) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartLegend) هذه الواجهة البرمجية المتاحة علنًا.
+
+يمكنك استخدام أداة سطر الأوامر cURL لاستدعاء الواجهة بسهولة. يُظهر المثال أدناه طلبًا لإخفاء أسطورة المخطط رقم 0 في ملف _Sample_Test_Book.xls_.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" 
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
-## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
- 
+
+## الاستجابات
+
+| حالة HTTP                     | الوصف                                      | مثال JSON                                                     |
+| ----------------------------- | ------------------------------------------- | ------------------------------------------------------------- |
+| **200 OK**                    | تم إخفاء أسطورة المخطط بنجاح.               | `{ "Code": 200, "Status": "OK" }`                             |
+| **401 Unauthorized**          | رمز JWT مفقود أو غير صالح.                 | `{ "Code": 401, "Message": "Invalid access token." }`         |
+| **404 Not Found**             | المصنف أو ورقة العمل أو المخطط غير موجود.  | `{ "Code": 404, "Message": "Chart not found." }`              |
+| **500 Internal Server Error** | خطأ غير متوقع في الخادم.                   | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+
+## الأسئلة الشائعة (FAQ)
+
+**س:** كيف يمكنني إخفاء أسطورة المخطط باستخدام Aspose.Cells Cloud؟  
+**ج:** أرسل طلب `DELETE` إلى الرابط `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend` مع رمز JWT صالح في رأس `Authorization`. استجابة `200 OK` تشير إلى نجاح العملية.
+
+**س:** ما نوع المصادقة المطلوبة لواجهة إخفاء أسطورة المخطط؟  
+**ج:** تضمن رأس `Authorization: Bearer <jwt token>`. احصل على الرمز عبر تدفق مصادقة OAuth في Aspose Cloud.
+
+**س:** ما الاستجابة الخطأ التي سأحصل عليها إذا كان فهرس المخطط غير صالح؟  
+**ج:** تعيد الخدمة `404 Not Found` مع جسم JSON يحتوي على `Code: 404` ورسالة تصف المخطط المفقود.
+
+**س:** هل يمكنني استخدام HTTP بدلاً من HTTPS؟  
+**ج:** لا. جميع نقاط نهاية Aspose Cloud تتطلب HTTPS لأغراض الأمان.
+
+## عائلة واجهات برمجة التطبيقات السحابية (Cloud SDK Family)
+
+استخدام واجهات برمجة التطبيقات (SDK) هو أسرع طريقة لتطوير التطبيقات. فواجهات SDK تُجرّد التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بواجهات برمجة التطبيقات السحابية لـ Aspose.Cells.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -118,7 +136,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
-
+**قريبًا** – سيتم إضافة مثال لواجهة SDK الخاصة بـ Swift قريبًا.  
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
@@ -134,3 +152,22 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "إخفاء أسطورة المخطط في ورقة عمل Excel – واجهة برمجة تطبيقات Aspose.Cells Cloud",
+  "description": "دليل خطوة بخطوة لإخفاء أسطورة المخطط في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. تتضمن الرابط باستخدام HTTPS، والمصادقة، وبنية الطلب، وتفاصيل الاستجابة، ومعالجة الأخطاء، وأمثلة لواجهات برمجة التطبيقات (SDKs).",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "الصفحة الرئيسية", "item": "https://docs.aspose.cloud/" },
+      { "@type": "ListItem", "position": 2, "name": "Cells", "item": "https://docs.aspose.cloud/cells/" },
+      { "@type": "ListItem", "position": 3, "name": "Charts", "item": "https://docs.aspose.cloud/cells/charts/" },
+      { "@type": "ListItem", "position": 4, "name": "إخفاء أسطورة المخطط", "item": "https://docs.aspose.cloud/cells/charts/legend/hide/" }
+    ]
+  },
+  "about": "إخفاء أسطورة المخطط باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud"
+}
+</script>

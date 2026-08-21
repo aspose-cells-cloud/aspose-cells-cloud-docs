@@ -1,76 +1,71 @@
-﻿---
-title: Separa le righe in un foglio di lavoro Excel
-second_title: Documen
-linktitle: Ungrou
+---
+title: "Raggruppa righe in un foglio di lavoro Excel"
+second_title: "Documento"
+linktitle: "Rimuovi raggruppamento"
 type: docs
 url: /it/rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
-keywords: Ungroup rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta la separazione delle righe in un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/ungroup-rows-in-excel-worksheet/]
+keywords: "Rimuovi raggruppamento righe, Excel, Aspose.Cells Cloud, REST API, SDK, foglio di calcolo"
+description: "Scopri come rimuovere il raggruppamento delle righe in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud e gli SDK per vari linguaggi di programmazione."
 weight: 70
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Separa le righe in un foglio di lavoro Excel
 ---
-Questo REST API indica di separare le righe in un foglio di lavoro Excel.
 
-## RSET API
+Questa API REST rimuove il raggruppamento delle righe in un foglio di lavoro Excel.
+
+## API REST
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/ungroup
- 
 ```
 
-I parametri della richiesta sono:
+### **Parametri della richiesta**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome della cartella di lavoro.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| primoIndice| intero| domanda| Il primo indice di riga da utilizzare.|
-| ultimoIndice| intero| domanda| L'ultimo indice di riga su cui operare.|
-| èTutto| booleano| domanda| Tutte le righe devono essere azionate|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome parametro | Tipo    | Posizione | Descrizione                                                                 |
+| -------------- | ------- | --------- | --------------------------------------------------------------------------- |
+| name           | string  | path      | Il nome del foglio di calcolo.                                             |
+| sheetName      | string  | path      | Il nome del foglio di lavoro.                                              |
+| firstIndex     | integer | query     | L'indice in base zero della prima riga da sottoporre a rimozione del raggruppamento. |
+| lastIndex      | integer | query     | L'indice in base zero dell'ultima riga da sottoporre a rimozione del raggruppamento. |
+| isAll          | boolean | query     | Se **true**, vengono rimosse le righe raggruppate in tutto l'intervallo specificato. |
+| folder         | string  | query     | La cartella contenente il foglio di calcolo.                               |
+| storageName    | string  | query     | Il nome dell'archivio in cui si trova il foglio di calcolo.                |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows) definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di effettuare interazioni REST direttamente da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API cloud tramite cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/ungroup?firstIndex=1&lastIndex=5&isAll=true" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+ -X POST \
+ -H "Content-Type: application/json" \
+ -H "Accept: application/json" \
+ -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+## Famiglia di SDK cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'utilizzo di un SDK rappresenta il modo più efficiente per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

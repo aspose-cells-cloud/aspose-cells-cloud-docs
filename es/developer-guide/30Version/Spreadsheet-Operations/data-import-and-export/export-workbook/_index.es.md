@@ -1,59 +1,91 @@
-﻿---
-title: Exportar libro de trabajo
-second_title: Documen
-linktitle: Cuaderno de trabajo
-type: docs
-url: /es/export-excel-to-different-formats/
-aliases: [ /export/excel-to-different-formats/]
-keywords: Export Excel file to kinds of format files
-description: Aspose.Cells Cloud REST API admite la exportación de archivos Excel a diversos formatos. El SDK admite diversos lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown, Exportar libro de trabajo
 ---
- Puedes exportar formatos:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [SAO](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OET](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [Diferencia](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NÚMEROS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+title: "Exportar Libro de Trabajo"
+second_title: "Documento"
+linktitle: "Libro de Trabajo"
+type: docs
+url: /export-excel-to-different-formats/
+aliases: [/export/excel-to-different-formats/]
+keywords: "Aspose.Cells Cloud, exportación de Excel, conversión de libro de trabajo, PDF, CSV, JSON, formatos de imagen, API de hojas de cálculo, XLSX, ODS, PNG"
+description: "Una guía paso a paso sobre cómo exportar libros de trabajo de Excel a múltiples formatos, incluyendo PDF, CSV, JSON y varios tipos de imagen, utilizando la API REST y los SDK de Aspose.Cells Cloud."
+weight: 20
+---
 
-- **RESTO API**
+Puede exportar libros de trabajo a cualquiera de los siguientes formatos: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
-|**API**|**Tipo**|**Descripción**|**Enlace Swagger**|
-|:- |:- |:- |:- |
-|/células/exportar|CORREO|Exportar objetos de Excel del contenido de la solicitud a algún formato|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+## API REST
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
-
- Puedes utilizar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
-
-- **Pedido**
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=workbook&format=tiff" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
-- **Respuesta**
+### **Seguridad y Autenticación**
 
-```bash
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
+
+
+### Parámetros de Solicitud
+
+| Nombre del Parámetro | Tipo    | Ruta/Cadena de Consulta/Cuerpo HTTP | Obligatorio | Descripción |
+|----------------------|---------|-------------------------------------|-------------|-------------|
+| file                 | archivo | formData                            | Sí          | Archivo a cargar |
+| objectType           | string  | query                               | Sí          | Tipo de objeto a exportar. Para exportar gráficos use `chart`. Otros valores posibles son `worksheet`, `picture`, etc. |
+| format               | string  | query                               | Sí          | Formato de salida deseado. Valores admitidos: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`. |
+
+
+### **Respuesta**
+
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"Book1_xlsx.tif",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"myDocument_xlsx.tif",
-            "FileSize":348126,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Book1_xlsx.tif",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx.tif",
+      "FileSize": 348126,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
-- **Familia de SDK en la nube**
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+**Códigos de Estado HTTP**
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+| Código | Significado           | Descripción |
+|--------|-----------------------|-------------|
+| 200    | OK                    | Formas exportadas correctamente; la respuesta contiene la lista de archivos. |
+| 400    | Solicitud Incorrecta  | Parámetros faltantes o inválidos. |
+| 401    | No Autorizado         | Token de acceso inválido o faltante. |
+| 413    | Carga Demasiado Grande| El archivo cargado supera el límite de tamaño. |
+| 500    | Error Interno del Servidor | Error inesperado en el servidor. |
+
+
+## Cómo Usar la API PostExport con SDK
+
+### Especificación de la API PostExport
+
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) define una interfaz de programación accesible públicamente que le permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos **cURL** para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo llamar a la API en la nube mediante cURL.
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=workbook&format=tiff" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -d '{"File":{}}'
+```
+
+### Uso de los SDK de Aspose.Cells Cloud
+
+El uso de un SDK acelera el desarrollo al manejar los detalles de bajo nivel, permitiéndole centrarse en la lógica de negocio. Una lista completa de los SDK de Aspose.Cells Cloud está disponible en el [repositorio de GitHub](https://github.com/aspose-cells-cloud).
+
+Los siguientes ejemplos de código muestran cómo llamar al servicio web de Aspose.Cells utilizando diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

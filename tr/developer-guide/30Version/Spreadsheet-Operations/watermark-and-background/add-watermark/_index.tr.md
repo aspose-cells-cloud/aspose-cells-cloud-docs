@@ -1,85 +1,125 @@
-﻿---
-title: Excel dosyasına filigran ekleyin
-second_title: Documen
-linktitle: Excel Dosyasına Filigran Ekle
-type: docs
-url: /tr/add-watermark-into-excel-files/
-aliases: [ /watermark/]
-keywords: Add water marker for Excel files
-description: Aspose.Cells Cloud REST API, Excel dosyaları için su işareti eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 39
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Filigran
 ---
-Bu REST API, Excel dosyalarına `watermark` eklenmesini belirtir.
+title: "Excel dosyalarına filigran ekleme"
+second_title: "Belge"
+linktitle: "Excel Dosyalarına Filigran Ekleme"
+type: docs
+url: /add-watermark-into-excel-files/
+aliases: [/watermark/]
+keywords: "Excel dosyasına filigran ekleme, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Aspose.Cells Cloud REST API (v3.0) kullanarak Excel çalışma kitaplarına metin filigranı nasıl ekleyeceğinizi öğrenin. cURL örneği, gerekli parametreler ve yanıt ayrıntılarını içerir."
+weight: 39
+ArticleTitle: "Excel Dosyalarına Filigran Ekle – Aspose.Cells Cloud Dokümantasyonu"
+---
 
-## RSET API
+Bu REST API, Excel dosyalarına bir **filigran** ekler.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/watermark
- 
+**Önkoşullar:** Geçerli bir JWT erişim belirteci edinmelisiniz ve Excel dosyasının desteklenen bir formatta olduğundan emin olmalısınız (örneğin, `.xlsx`, `.xls`).  
+**Arka plan:** Filigran, sahipliği veya gizliliği belirtmek için her çalışma sayfasına uygulanan yarı saydam bir metin katmanıdır.
+
+## PostWatermark API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/watermark
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| dosya| dosya| formData| Yüklenecek dosya|
-| metin| sicim| sorgu||
-| renk| sicim| sorgu||
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulamayı</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **İstek Parametreleri**
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı | Tür   | Konum                     | Açıklama                                                    |
+| -------------- | ------ | ------------------------- | ----------------------------------------------------------- |
+| `file`         | dosya  | formData (multipart body) | Filigranın uygulanacağı Excel dosyası.                       |
+| `text`         | string | sorgu                     | Görüntülenecek filigran metni.                              |
+| `color`        | string | sorgu                     | ARGB hex formatında filigran rengi (örneğin, `004433ff`). |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **Yanıt**
+
+JSON yanıtı, bir **Files** dizisi içerir. Her dosya nesnesi için:
+
+- **Filename** – işlenmiş çalışma kitabının adı.  
+- **FileSize** – dosyanın bayt cinsinden boyutu.  
+- **FileContent** – filigranlı Excel dosyasının Base64 ile kodlanmış içeriği; gerçek dosyayı elde etmek için bunu çözmeniz gerekir.
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Files": [
+        {
+            "Filename" : "[dosya1_adı]",
+            "Filesize" : [dosya boyutu],
+            "FileContent" : "[Base64Dizesi]"
+        },        {
+            "Filename" : "[dosya2_adı]",
+            "Filesize" : [dosya boyutu],
+            "FileContent" : "[Base64Dizesi]"
+        },        {
+            "Filename" : "[dosya3_adı]",
+            "Filesize" : [dosya boyutu],
+            "FileContent" : "[Base64Dizesi]"
+        }
+    ]
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                         |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | Tamam                       | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400  | Hatalı İstek                | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401  | Yetkisiz                    | Geçersiz veya eksik JWT belirteci. |
+| 413  | Yük Çok Büyük               | Yüklenen dosya boyut sınırını aşıyor. |
+| 500  | İç Sunucu Hatası            | Beklenmeyen sunucu hatası. |
+
+## PostWatermark API’yi SDK’larla Nasıl Kullanılır
+
+### PostWatermark API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+**cURL** komut satırı aracını kullanarak Aspose.Cells web hizmetlerini çağırabilirsiniz. Aşağıdaki örnek, gerekli kimlik doğrulama başlığını içeren tam bir isteği göstermektedir. `<your-jwt-token>` yerine Aspose kimlik doğrulama uç noktasından elde ettiğiniz geçerli bir JWT erişim belirteci yazın.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&color=004433ff" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
-
+curl -v "https://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&color=004433ff" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your-jwt-token>" \
+  -F "file=@Sample.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Sample_watermarked.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64Dizesi--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. Bir SDK, düşük seviyeli ayrıntıları soyutlayarak iş mantığınıza odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK’ları kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -132,4 +172,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
-
+---

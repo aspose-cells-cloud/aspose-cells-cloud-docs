@@ -1,100 +1,145 @@
-﻿---
-title: Aspose.Cells Cloud Web API - 压缩电子表格的大小
-second_title: Documen
-ArticleTitle: Compress the size of the Spreadshee
-linktitle: 压缩电子表格
-type: docs
-url: /zh/compress-spreadsheet/
-keywords: Spreadsheet Compression, Reduce File Size, Aspose.Cells Cloud Web AP
-description: 压缩电子表格 API 允许用户通过应用指定的压缩级别、优化存储和增强性能来有效地减少电子表格的文件大小
-weight: 100
-kwords: Excel, Office 云、REST、电子表格压缩、文件大小优化、PDF、CSV、Json、Markdow
 ---
-压缩电子表格的大小。
+title: "Aspose.Cells Cloud Excel 压缩 Web API —— 以编程方式减小电子表格文件大小"
+second_title: "文档"
+ArticleTitle: "如何压缩 Excel 文件 —— 减小电子表格尺寸并优化性能"
+linktitle: "压缩电子表格"
+type: docs
+url: /compress-spreadsheet/
+keywords: "Excel 压缩, Aspose.Cells Cloud, 电子表格尺寸缩减, API, 工作簿优化"
+description: "了解如何使用 Aspose.Cells Cloud API 压缩 Excel 工作簿。获取分步示例、参数说明、身份验证方法及最佳实践。"
+weight: 100
+---
+
+使用 Aspose.Cells Cloud API 以编程方式压缩 Excel 电子表格并减小文件大小。通过移除未使用的数据、压缩嵌入对象以及清理格式，可优化工作簿性能。该 RESTful API 支持自动化 Excel 文件压缩与优化工作流。
 
 ## **压缩电子表格 API**
 
+### Web API
+
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/compress
+PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/compress
 ```
 
-### **请求参数：**
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTP 正文|描述|
-|:- |:- |:- |:- |
-|电子表格|文件|表单数据|上传要压缩的电子表格文件。|
-|等级|整数|询问|指定要应用的压缩级别，范围从 0（无压缩）到 9（最大压缩）。|
-|输出路径|细绳|询问|（可选）存储压缩工作簿的文件夹路径。默认值为空。|
-|输出存储名称|细绳|询问|输出文件存储名称。|
-|地区|细绳|询问|电子表格区域设置。|
-|密码|细绳|询问|打开电子表格文件所需的密码。|
+Aspose.Cells Cloud API 采用安全机制，需通过 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-### **回复**
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### 请求参数
+
+| 参数名             | 类型     | 位置（路径/查询/字符串/HTTP 请求体） | 描述                                                                                             |
+| ------------------ | -------- | ----------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Spreadsheet        | 文件     | FormData                            | **必填项。** 待压缩的源 Excel 工作簿文件（`.xlsx`、`.xls` 等）。                                |
+| level              | 整数     | Query                               | **可选项。** 压缩强度（0 = 最快/最低压缩，9 = 最慢/最高压缩）。若未指定，默认采用平衡值（5）。     |
+| outPath            | 字符串   | Query                               | **可选项。** 压缩后文件在您云存储中的目标文件夹路径。若未指定，则保存至源工作簿所在文件夹。       |
+| outStorageName     | 字符串   | Query                               | **必填项。** 已配置的云存储服务的标识符（例如：`CorporateDrive`）。                              |
+| region             | 字符串   | Query                               | **可选项。** 区域设置（例如：`de-DE`），可能影响区域特定数据处理方式。                           |
+| password           | 字符串   | Query                               | **可选项。** 解密受保护电子表格所需的密码。若文件未加密，请留空。                                |
+
+### 响应
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### 错误代码
+**HTTP 状态码**
 
-- **400 错误请求**：无效的 Apose.Cells Cloud API URI。
-- **401 未授权**：访问令牌无效。或者客户端 ID 和密钥无效。
-- **404 未找到**：电子表格文件无法访问。
-- **500 服务器错误**：电子表格在获取计算数据时遇到异常。
+| 状态码 | 含义             | 描述                                         |
+| ------ | ---------------- | -------------------------------------------- |
+| 200    | OK（成功）       | 压缩操作成功；响应包含操作详情。             |
+| 400    | Bad Request      | 缺少或无效参数（如不支持的文件类型）。       |
+| 401    | Unauthorized     | JWT 令牌无效或缺失。                         |
+| 413    | Payload Too Large| 上传文件超出大小限制。                       |
+| 500    | Internal Server Error | 服务器内部错误。                         |
 
-## 我们应该在哪里使用压缩电子表格 API？
+## 压缩电子表格 API 的适用场景
 
-当您需要减小电子表格的大小时，您可以使用这个 API。
+- **自动化报告分发** —— 在发送月度财务报表前进行压缩，确保邮件成功投递并提升收件人体验。
+- **用户上传文件优化** —— 在后台压缩用户上传的 Excel 文件，节省云存储空间并降低存储成本。
+- **数据管道处理与迁移** —— 压缩 ETL 流程中生成的中间 Excel 文件，加快网络传输速度并减轻临时存储压力。
 
-## 为什么要使用压缩电子表格 API？
+## 为何应使用压缩电子表格 API？
 
-- 电子表格太大，需要减小文件大小。
-- 通过现有的SDK即可快速完成开发。
+- **开发者友好** —— Aspose.Cells Cloud 提供多种语言的 SDK 库，配合详尽文档，可快速完成开发。
+- **降低人工成本** —— 无需专人手动合并文档。
+- **按需付费定价** —— 无需前期投入，仅对实际调用的 API 请求计费。
+- **免服务器维护** —— 无需管理服务器、软件更新或兼容性问题。
 
-## 如何将压缩电子表格 API 与 SDK 结合使用
+## 如何结合 SDK 使用压缩电子表格 API
 
-### 压缩电子表格 API 规格
+### 压缩电子表格 API 规范
 
-这[压缩电子表格 API 规格](https://reference.aspose.cloud/cells/#/ManagementController/CompressSpreadsheet)为 REST 交互提供可公开访问的接口，允许从 Web 浏览器直接调用 API。
+[压缩电子表格 API 规范](https://reference.aspose.cloud/cells/#/ManagementController/CompressSpreadsheet) 提供了公开可访问的 REST 接口，支持直接从网页浏览器发起 API 调用。
 
-### 使用 Aspose.Cells 云 SDK
+您可使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何通过 cURL 调用 Cloud API。
 
-使用 SDK 是最快的开发方式，因为它抽象了低级细节，允许您使用短代码压缩电子表格大小。
-请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
-以下代码示例演示了如何使用各种 SDK 与 Aspose.Cells Web 服务进行交互：
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_CompressSpreadsheet.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/compress?level=5&outStorageName=MyStorage" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/input.xlsx"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_CompressSpreadsheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 编码)",
+  "contentType": "MIME 类型",
+  "fileDownloadName": "可选文件名"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_CompressSpreadsheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_CompressSpreadsheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_CompressSpreadsheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_CompressSpreadsheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_CompressSpreadsheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CompressSpreadsheet.go" >}}
-{{< /tab >}}
+
+{{< /tabs >}}
+
+### 使用 Aspose.Cells Cloud SDK
+
+使用 SDK 是最快捷的开发方式，它抽象了底层细节，仅需寥寥数行代码即可完成电子表格压缩。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用不同 SDK 与 Aspose.Cells Web 服务交互：
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_CompressSpreadsheet.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_CompressSpreadsheet.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_CompressSpreadsheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_CompressSpreadsheet.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_CompressSpreadsheet.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_CompressSpreadsheet.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_CompressSpreadsheet.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CompressSpreadsheet.go" >}}
+{{</tab>}}
 {{< /tabs >}}

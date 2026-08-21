@@ -1,26 +1,34 @@
-﻿---
-title: Aspose.Cells 云概述
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud Overview: a REST-first, language-neutral API service that turns Excel operations into simple HTTPS calls—no local Office install, no platform"
-linktitle: 概述
+---
+title: "Aspose.Cells Cloud 概述"
+second_title: "文档"
+ArticleTitle: "Aspose.Cells Cloud 概述：一种以 REST 优先、语言中立的 API 服务，可将 Excel 操作简化为简单的 HTTPS 调用——无需本地安装 Office，亦无平台依赖。"
+linktitle: "概述"
 type: docs
 url: /zh/overview/
-description: Aspose.Cells 云支持 Excel 创建、转换、合并、拆分、保护、内部对象操作等
+description: "探索 Aspose.Cells Cloud——一种以 REST 优先的 API，可让您在云端创建、操作、转换、合并、拆分、保护并渲染 Excel 文件（XLS/XLSX），支持导出为 PDF、HTML、ODS、XPS、CSV 等多种格式。提供免费试用。"
+keywords: "Aspose Cells，云 API，Excel 转换，PDF，HTML，ODS，XPS，CSV，电子表格 SDK"
 weight: 10
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 概述
 ---
-Aspose.Cells Cloud 是一个 REST API，它支持各种文档处理任务，例如在云端创建、操作、转换和渲染 Excel 文档。您可以轻松转换[XLS](https://docs.fileformat.com/spreadsheet/xls/)和[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)文件转换为各种格式，例如[PDF](https://docs.fileformat.com/view/pdf/), [HTML](https://docs.fileformat.com/web/html/), [消耗臭氧层物质](https://docs.fileformat.com/spreadsheet/ods/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [CSV](https://docs.fileformat.com/spreadsheet/csv/)等等。
+
+Aspose.Cells Cloud 是一种 RESTful API，可支持多种文档处理任务，例如在云端创建、编辑、转换和渲染 Excel 文档。您可以轻松地将 Excel 文件转换为以下多种格式：
+
+- PDF  
+- HTML  
+- ODS  
+- XPS  
+- CSV  
+- 以及其他主流格式  
+
+**前置要求：** 使用本服务前，您需拥有一个 Aspose Cloud 账户及有效的 API 密钥。所有需身份验证的请求均须提供上述凭据。
 
 ## **SDK**
 
-使用 SDK（API 客户端）可以处理请求和管理响应的底层细节，从而加快开发速度，使开发人员能够专注于项目特定的代码。探索我们的[GitHub 存储库](https://github.com/aspose-cells-cloud)获取完整的 Aspose.Cells SDK 列表，其中包含可加速项目开发的工作示例。请参阅我们的“[可用的 SDK](/cells/zh/available-sdks/) ”文章来了解如何将 SDK 集成到您的项目中。
+使用 SDK（即 API 客户端）可加快开发进度，因为它能自动处理底层的请求发送与响应解析逻辑，使开发人员能更专注于项目相关代码的编写。您可访问我们的 <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub 仓库</a>，获取 Aspose.Cells SDK 的完整列表，其中包含可运行的示例代码，助您快速启动项目开发。请参阅我们的《[可用 SDK](/cells/available-sdks/zh/)》一文，了解如何将 SDK 集成至您的项目中。
 
-## **API 探索者**
+## **API Explorer**
 
-这[Aspose.Cells 云 API 参考](https://apireference.aspose.cloud/cells/)提供了一种用户友好的方式，可直接在浏览器中试用我们的 API！它支持无缝交互，并可测试我们 API 公开的每个操作。
+<a href="https://apireference.aspose.cloud/cells/" rel="noopener noreferrer">Aspose.Cells Cloud API 参考文档</a> 提供了一种便捷的方式，让您可在浏览器中直接试验 API。通过该工具，您可以无缝交互并测试服务所暴露的全部操作。如需快速上手，可尝试“工作簿转换”示例，该示例演示了如何通过一个简单的 POST 请求将 Excel 文件转换为 PDF。
 
-## **安全和身份验证**
+### **安全性与身份验证**
 
-Aspose.Cells 用于云 API 优先考虑安全性并要求进行访问身份验证。
-
-有关验证请求的详细信息，请参阅“[验证 API 请求页面](/total/getting-started/rest-api-overview/authenticating-api-requests/)“ 页
+Aspose.Cells Cloud API 安全可靠，需采用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/zh/" rel="noopener noreferrer">基于 JWT 令牌的身份验证方式</a>。

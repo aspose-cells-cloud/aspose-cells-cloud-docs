@@ -1,79 +1,104 @@
-﻿---
-title: Lägg till bild i en Excel-fil
-second_title: Documen
-linktitle: Annons
+---
+title: "Lägg till en bild i en Excel-fil"
+second_title: "Dokument"
+linktitle: "Lägg till"
 type: docs
 url: /sv/pictures/add/
-aliases: [/add-pictures-to-excel-worksheet/]
-keywords: Add a picture in an Excel file
-description: Aspose.Cells Cloud REST API stöder tillägg av en bild i en Excel-fil. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+aliases: [/sv/add-pictures-to-excel-worksheet/]
+keywords: "Aspose.Cells, Excel, lägg till bild, REST API"
+description: "Använd Aspose.Cells Cloud REST API för att lägga till en bild i ett Excel-arbetsblad. SDK:er för Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby och Swift förenklar integration över plattformar."
 weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lägg till bild i en Excel-fil
+ArticleTitle: "Lägg till en bild i ett Excel-arbetsblad – Aspose.Cells Cloud API"
 ---
-Denna REST API indikerar för `add` en ny bild för ett Excel-arbetsblad.
 
-## RSET API
+Denna REST API lägger till en ny bild i ett Excel-arbetsblad.  
+**Förutsättningar:** Du måste ha en giltig Aspose Cloud-autentiseringstoken, en befintlig arbetsbok lagrad i ett stödjt lagringssystem samt tillräckliga behörigheter för att ändra arbetsbladet.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
- 
+## PutWorksheetAddPicture API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| arknamn| sträng| väg| Namnet på arbetsbladet.|
-| bild|| kropp| Bildobjekt|
-| övre vänsterrad| heltal| fråga|0 |
-| övre vänsterkolumn| heltal| fråga|0 |
-| nedre högerrad| heltal| fråga|0 |
-| nedre högerkolumn| heltal| fråga|0 |
-| bildPath| sträng| fråga| Bildens sökväg, om den inte anges, granskas bilddata i begäran.|
-| mapp| sträng| fråga| Arbetsbokens mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begärandeparametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameternamn    | Typ     | Plats  | Beskrivning                                                                                   |
+| ---------------- | ------- | ------ | --------------------------------------------------------------------------------------------- |
+| name             | string  | path   | Namnet på arbetsboken.                                                                        |
+| sheetName        | string  | path   | Namnet på arbetsbladet.                                                                       |
+| picture          | object  | body   | Bildobjekt (binär data).                                                                      |
+| upperLeftRow     | integer | query  | Nollbaserat index för den övre vänstra raden där bilden ska placeras.                         |
+| upperLeftColumn  | integer | query  | Nollbaserat index för den övre vänstra kolumnen där bilden ska placeras.                      |
+| lowerRightRow    | integer | query  | Nollbaserat index för den nedre högra raden i bildområdet.                                    |
+| lowerRightColumn | integer | query  | Nollbaserat index för den nedre högra kolumnen i bildområdet.                                 |
+| picturePath      | string  | query  | Sökvägen till bildfilen; om utelämnad måste bilddatat skickas i begärandetexten.             |
+| folder           | string  | query  | Mappen som innehåller arbetsboken.                                                            |
+| storageName      | string  | query  | Namnet på lagringstjänsten.                                                                   |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**OBS! Begärandetext:** När `picturePath` utelämnas, skicka den binära bilddata i begärandetexten med `multipart/form-data`.
+
+### HTTP-statuskoder
+
+| Kod | Beteende                    | Beskrivning                                              |
+|-----|-----------------------------|----------------------------------------------------------|
+| 200 | OK                          | Filter applicerades framgångsrikt; svaren innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Inte auktoriserad           | Ogiltig eller saknad JWT-token.                          |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen.        |
+| 500 | Internt serverfel           | Oväntat serverfel.                                       |
+
+**Exempel 200-svarschema**
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "PictureUrl": "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/1"
+}
+```
+
+**OBS!** Den maximala bildstorleken är 10 MB; större filer kommer att avvisas med ett `400 Bad Request`-svar.
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda cURL-kommandoradsverktyget för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du gör anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures?picturePath=aspose-cloud.png" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures?picturePath=aspose-cloud.png" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## SDK-familj för molnet
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att snabba upp utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Se [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med hjälp av olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -103,7 +128,7 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetAddPicture.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82deb4189bc27ae92abf73c36b4df0" "Example_PutWorksheetAddPicture.ts" >}}
 
 {{< /tab >}}
 
@@ -126,3 +151,5 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**OBS!** Stödda bildformat inkluderar PNG, JPEG, BMP och GIF. Den maximala bildstorleken är 10 MB; större filer kommer att avvisas med ett `400 Bad Request`-svar.

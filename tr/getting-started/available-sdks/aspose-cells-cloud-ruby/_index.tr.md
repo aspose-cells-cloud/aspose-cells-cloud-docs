@@ -1,29 +1,30 @@
-﻿---
-title: "Aspose.Cells Ruby için Cloud SDK: Dönüştürme, birleştirme, bölme, koruma, arama, değiştirme ve daha fazlası"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for Ruby: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells Rub için Bulut SDK'sı
-type: docs
-url: /tr/available-sdks/aspose-cells-cloud-ruby/
-description: "Aspose.Cells Ruby için Cloud SDK gerçek platformlar arası güç sunar: tek bir içe aktarma, Windows, Linux ve macOS geliştiricilerine her nesneyi oluşturma, dönüştürme, birleştirme, bölme, koruma ve yönetme konusunda aynı akıcılığı sağlar; Excel kurulum gerekmez ve platforma özgü ayarlamalar gerekmez"
-weight: 30
-kwords: Ruby SDK, Ruby için Excel SDK, Ruby için Cloud SDK, REST, Grafik, Pivot Tablo, Tablo/Liste Nesnesi, Elektronik Tablo Dönüştürme, PDF, CSV, Json, Markdown, Birleştirme, Bölme, Koruma, Arama, Değiştirme
 ---
-SDK açık kaynaklıdır ve MIT Lisansı kapsamında lisanslanmıştır. Erişim sağlayabilirsiniz[Aspose.Cells Cloud için Ruby kütüphanesi kaynak kodu](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby).
+title: "Aspose.Cells Cloud SDK for Ruby: Dönüştür, birleştir, böl, koru, ara, değiştir ve daha fazlası"
+second_title: "Belge"
+ArticleTitle: "Aspose.Cells Cloud SDK for Ruby: Dönüştür, birleştir, böl, koru, ara, değiştir ve daha fazlası"
+linktype: "Aspose.Cells Cloud SDK for Ruby"
+type: docs
+url: /available-sdks/aspose-cells-cloud-ruby/
+description: "Aspose.Cells Cloud SDK for Ruby, Office kurulumlarına ihtiyaç duymadan Excel nesneleri oluşturmak, dönüştürmek, birleştirmek, bölmek, korumak, aramak ve değiştirmek için akıcı, platformlar arası bir API sağlar."
+weight: 30
+keywords: "Ruby, Aspose.Cells Cloud, Excel SDK, REST API, Dönüştür, Birleştir, Böl, Koru, Ara, Değiştir, Grafik, Pivot Tablo, Tablo/Liste Nesnesi, PDF, CSV, JSON, Markdown"
+---
 
-# **Ruby için Aspose.Cells Cloud SDK nasıl kullanılır?**
+Bu SDK açık kaynaklıdır ve MIT Lisansı altında lisanslanmıştır. Aspose.Cells Cloud için Ruby kütüphanesinin kaynak koduna [buradan](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby) ulaşabilirsiniz.
 
-Ruby için Aspose.Cells Cloud SDK, geliştiricilerin Ruby programlama dilini kullanarak Microsoft Excel dosyalarını düzenlemelerine ve işlemelerine olanak tanıyan güçlü bir kütüphanedir. Bu SDK ile, yerel makinenize ek yazılım veya bağımlılıklar yüklemeden bulutta Excel belgeleri oluşturabilir, düzenleyebilir ve dönüştürebilirsiniz.
+# **Aspose.Cells Cloud SDK for Ruby Nasıl Kullanılır**
 
-Bu makalede, Aspose.Cells Cloud SDK for Ruby'nin yeni bir Excel çalışma kitabı oluşturma, hücrelere veri ekleme ve değiştirilen çalışma kitabını buluta kaydetme gibi bazı genel görevleri gerçekleştirmek için nasıl kullanılacağını inceleyeceğiz.
+Aspose.Cells Cloud SDK for Ruby, geliştiricilerin Ruby programlama dili kullanarak Microsoft Excel dosyalarını işlemesine ve manipüle etmesine olanak tanıyan güçlü bir kütüphanedir. Bu SDK ile yerel makinenize ek yazılım veya bağımlılıklar kurmadan Excel belgelerini bulutta oluşturabilir, düzenleyebilir ve dönüştürebilirsiniz.
 
-## Başlarken
+Bu makalede, Aspose.Cells Cloud SDK for Ruby kullanarak yeni bir Excel çalışma kitabının oluşturulması, hücrelere veri eklenmesi ve değiştirilen çalışma kitabının buluta kaydedilmesi gibi yaygın görevlerin nasıl yapılacağını inceleyeceğiz.
 
- Aspose.Cells Cloud SDK for Go'yu kullanmaya başlamadan önce, geliştirme ortamınızı ayarlamanız ve gerekli bağımlılıkları yüklemeniz gerekir. Bkz.[makale](https://docs.aspose.cloud/cells/quickstart/) Müşteri ID'nizi ve müşteri sırrınızı almak için Aspose web sitesini ziyaret edin.
+## Başlangıç
 
-## Aspose.Cells Cloud için Ruby paketi nasıl kurulur?
+Aspose.Cells Cloud SDK for Ruby kullanmaya başlamadan önce geliştirme ortamınızı ayarlamanız ve gerekli bağımlılıkları yüklemeniz gerekir. İstemci kimliğinizi ve istemci sırrınızı almak için Aspose web sitesindeki [bu makaleye](https://docs.aspose.cloud/cells/quickstart/) bakın.
 
-Aşağıdaki komutla Aspose.Cells Cloud SDK for Ruby'yi kurabilirsiniz:
+## Aspose.Cells Cloud için Ruby Paketinin Kurulumu
+
+Aspose.Cells Cloud SDK for Ruby’yi aşağıdaki komutla kurabilirsiniz:
 
 ```bash
 
@@ -31,15 +32,15 @@ Aşağıdaki komutla Aspose.Cells Cloud SDK for Ruby'yi kurabilirsiniz:
   
  ```
 
-## Xlsx'i diğer formatlara dönüştürmek için Ruby paketi nasıl kullanılır?
+## Ruby Paketini Kullanarak Xlsx’yi Diğer Formatlara Dönüştürme
 
-- Aspose.Cells Bulut Kütüphanesini İçe Aktar
- Öncelikle Aspose.Cells Cloud Python SDK'sından gerekli paketi projenize aktararak başlayın.
-- API İstemcisini Kimlik Bilgileriyle Yapılandırın
- API istemcinizi benzersiz istemci kimliğiniz ve istemci sırrınızla doğrulayın.
-- Dönüştürme Parametrelerini Hazırla
- Kaynak dosya adı, istenen çıktı biçimi ve depolama klasörü yolu dahil olmak üzere dönüştürme görevi için parametreleri tanımlayın.
-- Çalışma Kitabı Dönüşümünü Çalıştır
- Dönüştürme işlemini PostConvertWorkbook metodunu kullanarak çağırın ve yanıtı işleyin.
+- Aspose.Cells Cloud Kitaplığını İçe Aktarın  
+  Önce Aspose.Cells Cloud Ruby SDK’sından gerekli paketi projenize içe aktarın.
+- Kimlik Bilgileriyle API İstemcisini Yapılandırın  
+  API istemcinizi benzersiz istemci kimliğiniz ve istemci sırrınızla doğrulayın.
+- Dönüştürme Parametrelerini Hazırlayın  
+  Dönüştürme görevi için kaynak dosya adı, istenen çıktı formatı ve depolama klasörü yolu dahil parametreleri tanımlayın.
+- Çalışma Kitabını Dönüştürmeyi Gerçekleştirin  
+  PostConvertWorkbook yöntemini kullanarak dönüştürme işlemini başlatın ve yanıtı işleyin.
 
 {{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_AvailableSDKs.rb" >}}

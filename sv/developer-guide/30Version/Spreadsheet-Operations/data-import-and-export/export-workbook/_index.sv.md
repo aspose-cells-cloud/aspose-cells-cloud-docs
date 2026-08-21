@@ -1,59 +1,91 @@
-﻿---
-title: Exportera arbetsbok
-second_title: Documen
-linktitle: Arbetsbok
-type: docs
-url: /sv/export-excel-to-different-formats/
-aliases: [ /export/excel-to-different-formats/]
-keywords: Export Excel file to kinds of format files
-description: Aspose.Cells Cloud REST API stöder export av Excel-filer till olika typer av filformat. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Exportera arbetsbok
 ---
- Du kan exportera format:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV-fil](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [Textmeddelande](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [TAL](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+title: "Exportera arbetsbok"
+second_title: "Dokument"
+linktitle: "Arbetsbok"
+type: docs
+url: /export-excel-to-different-formats/
+aliases: [/export/excel-to-different-formats/]
+keywords: "Aspose.Cells Cloud, Excel-export, konvertering av arbetsbok, PDF, CSV, JSON, bildformat, Spreadsheet API, XLSX, ODS, PNG"
+description: "Ett steg-för-steg-guide för hur man exporterar Excel-arbetsböcker till flera format — inklusive PDF, CSV, JSON och diverse bildtyper — med Aspose.Cells Cloud REST API och SDK:er."
+weight: 20
+---
 
-- **REST API**
+Du kan exportera arbetsböcker till något av följande format: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
-|**API**|**Typ**|**Beskrivning**|**Swagger-länk**|
-|:- |:- |:- |:- |
-|/celler/exportera|POSTA|Exportera Excel-objekt från begäran till något format|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+## REST API
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
-
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
-
-- **Begäran**
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=workbook&format=tiff" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
-- **Svar**
+### **Säkerhet och autentisering**
 
-```bash
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
+
+
+### Begäraparametrar
+
+| Parameter Name | Typ    | Path/Query String/HTTP Body | Obligatorisk | Beskrivning                                               |
+|----------------|--------|-----------------------------|--------------|-----------------------------------------------------------|
+| file           | fil    | formData                    | Ja           | Fil som ska laddas upp                                    |
+| objectType     | sträng | query                       | Ja           | Objekttypen som ska exporteras. För diagramexport använd `chart`. Andra möjliga värden är `worksheet`, `picture`, etc. |
+| format         | sträng | query                       | Ja           | Önskat utdataformat. Stödda värden: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`. |
+
+
+### **Svar**
+
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"Book1_xlsx.tif",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"myDocument_xlsx.tif",
-            "FileSize":348126,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Book1_xlsx.tif",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx.tif",
+      "FileSize": 348126,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
-- **Cloud SDK-familjen**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+**HTTP-statuskoder**
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+| Kod | Betydelse             | Beskrivning                                      |
+|-----|-----------------------|--------------------------------------------------|
+| 200 | OK                    | Objekt exporterades framgångsrikt; svaret innehåller fillistan. |
+| 400 | Felaktig begäran      | Saknade eller ogiltiga parametrar.              |
+| 401 | Oauktoriserad         | Ogiltig eller saknad åtkomsttoken.              |
+| 413 | Payload för stor      | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel     | Oväntat serverfel.                               |
+
+
+## Hur man använder PostExport API med SDK:er
+
+### PostExport API-specifikation
+
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definierar ett offentligt tillgängligt programmeringsgränssnitt som gör att du kan utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man anropar Cloud API:et med cURL.
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=workbook&format=tiff" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -d '{"File":{}}'
+```
+
+### Använd Aspose.Cells Cloud SDK:er
+
+Att använda en SDK påskyndar utvecklingen eftersom den hanterar detaljer på lägre nivå, så att du kan fokusera på affärslogiken. En komplett lista över Aspose.Cells Cloud SDK:er finns i [GitHub-lagret](https://github.com/aspose-cells-cloud).
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänsten med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

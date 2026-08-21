@@ -1,75 +1,93 @@
-﻿---
-title: Agregar varias filas en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Fila
-type: docs
-url: /es/rows/add/rows/
-keywords: Add multi rows on an Excel workshee
-description: Aspose.Cells Cloud REST API permite agregar varias filas en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Agregar varias filas en una hoja de cálculo Excel
 ---
-Este REST API indica agregar varias filas nuevas en una hoja de cálculo Excel.
+title: "Agregar varias filas a una hoja de cálculo de Excel"
+ArticleTitle: "Agregar varias filas a una hoja de cálculo de Excel mediante la API de Aspose.Cells Cloud"
+second_title: "Documentos"
+linktitle: "Filas"
+type: docs
+url: /rows/add/rows/
+keywords: "Aspose.Cells Cloud, insertar filas, hoja de cálculo de Excel, API REST, SDK, agregar varias filas"
+description: "Aprenda a utilizar la API REST de Aspose.Cells Cloud para insertar varias filas en una hoja de cálculo de Excel. Esta guía cubre el punto de conexión, los parámetros de solicitud, ejemplos de comandos cURL y ejemplos de uso del SDK."
+weight: 20
+---
 
-## RSET API
+Esta API REST agrega varias filas nuevas a una hoja de cálculo de Excel.
 
-```bash
- 
+## API PutInsertWorksheetRows
+
+```http
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
 ```
 
-Los parámetros de la solicitud son:
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| El nombre del libro de trabajo.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| fila de salida| entero| consulta| El índice de la fila inicial que se va a operar.|
-| totalFilas| entero| consulta|1 |
-| actualizarReferencia| booleano| consulta| Verdadero|
-| carpeta| cadena| consulta| La carpeta de documentos.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+### **Parámetros de solicitud**
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+| Nombre del parámetro | Tipo    | Ubicación | Descripción                                                           |
+|----------------------|---------|-----------|-----------------------------------------------------------------------|
+| name                 | string  | path      | El nombre del libro de cálculo.                                       |
+| sheetName            | string  | path      | El nombre de la hoja de cálculo.                                      |
+| startrow             | integer | query     | El índice de la primera fila que se va a insertar (**basado en 0**). |
+| totalRows            | integer | query     | El número de filas a insertar.                                        |
+| updateReference      | boolean | query     | Si se deben actualizar las referencias de celdas tras la inserción (`true` o `false`). |
+| folder               | string  | query     | La carpeta que contiene el documento.                                 |
+| storageName          | string  | query     | El nombre del almacenamiento.                                         |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Requisitos previos**  
+El libro de cálculo ya debe existir en el almacenamiento (o carpeta) especificado antes de invocar esta operación.
+
+**Autenticación**  
+La API requiere un token JWT válido. Inclúyalo en el encabezado `Authorization`, tal como se muestra en el ejemplo de cURL a continuación.
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo invocar la API en la nube mediante cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=11&updateReference=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
+
+> **Nota:** Esta operación `PUT` no requiere un cuerpo de solicitud; se puede enviar un objeto JSON vacío (`{}`) si la biblioteca cliente obliga a incluir un payload.
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+*Códigos de respuesta posibles*  
+
+- **200 OK** – Filas insertadas correctamente.  
+- **400 Bad Request** – Parámetros inválidos (por ejemplo, índice de fila negativo).  
+- **401 Unauthorized** – Token JWT ausente o inválido.  
+- **404 Not Found** – El libro de cálculo o la hoja de cálculo especificados no existen.  
+- **500 Internal Server Error** – Error inesperado del servidor.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Para realizar otras operaciones con filas, consulte las páginas relacionadas: **Eliminar filas**, **Obtener filas** y **Copiar filas**.
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de desarrollar. Un SDK maneja los detalles de bajo nivel para que usted pueda centrarse en su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo invocar los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -99,7 +117,7 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
 
 {{< /tab >}}
 

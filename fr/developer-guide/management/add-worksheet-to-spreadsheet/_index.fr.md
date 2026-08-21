@@ -1,112 +1,163 @@
-﻿---
-title: Aspose.Cells Cloud Webb API - Ajouter une feuille de calcul à une feuille de calcul
-second_title: Documen
-ArticleTitle: Add a Worksheet to a Spreadshee
-linktitle: Ajouter une feuille de calcul à une feuille de calcul
-type: docs
-url: /fr/add-worksheet-to-spreadsheet/
-keywords: Aspose.Cells Cloud Web API, Add Worksheet, Spreadsheet Management, RES
-description: Le Cloud Web Aspose.Cells API permet aux développeurs d'ajouter efficacement une nouvelle feuille de calcul à un classeur, en contrôlant son type, sa position et son nom. Cette fonctionnalité améliore la gestion et la flexibilité des classeurs.
-weight: 100
-kwords: Excel, Office Cloud, REST, Tableur, PDF, CSV, JSON, Markdown, Gérer Excel Feuilles de calcul, Création de feuilles de calcul dynamiques
 ---
-Ajout d'une feuille de calcul à la feuille de calcul, en spécifiant le type et l'emplacement de la feuille de calcul.
+title: "Aspose.Cells Cloud Excel – API Web pour ajouter une feuille de calcul – Insérer de nouvelles feuilles avec contrôle du type et de la position"
+second_title: "Document"
+ArticleTitle: "Comment ajouter des feuilles de calcul à Excel – Insérer de nouvelles feuilles à des emplacements spécifiques"
+linktitle: "Ajouter une feuille de calcul à un classeur"
+type: docs
+url: /add-worksheet-to-spreadsheet/
+keywords: "excel, ajouter une feuille de calcul, aspose cells api, classeur, api cloud, type de feuille, position de la feuille"
+description: "Découvrez comment ajouter programmatically une nouvelle feuille de calcul, une feuille graphique ou une feuille de macro à un classeur Excel à l’aide de l’API Aspose.Cells Cloud. Contrôlez le type, le nom et la position d’insertion de la feuille en une seule requête REST."
+weight: 100
+---
 
-|**Type de feuille de calcul** | Description|
-|:- |:- |
-|**VB** | Module Visual Basic|
-|**Feuille de travail** | Feuille de travail|
-|**Graphique** | Feuille de graphique|
-|**BIFF4Macro** | Feuille de macro BIFF4|
-|**Macro internationale** | Fiche macro internationale|
-|**Autre** | Fiche macro internationale|
-|**Dialogue** | Feuille de travail de dialogue|
+Ajoutez programmatically des feuilles de calcul à des fichiers Excel, avec un contrôle complet sur le type et l’emplacement de la feuille. Insérez des feuilles de calcul standard, des feuilles graphiques ou des feuilles de macro à n’importe quelle position dans le classeur. Cette opération RESTful permet la gestion et l’organisation automatisées des classeurs Excel.
 
-## **Ajouter une feuille de calcul à la feuille de calcul API**
+**Prérequis**
+
+- Un compte Aspose.Cells Cloud actif disposant d’un jeton d’accès JWT valide.
+- Un nom de stockage cloud configuré (par exemple, `CompanyOneDrive`) où le classeur sera enregistré.
+- Le classeur cible doit être accessible dans le stockage spécifié ; s’il est protégé par mot de passe, le mot de passe correct doit être fourni.
+
+| **Type de feuille**       | Description                                               |
+| :------------------------ | :-------------------------------------------------------- |
+| **VB**                    | Module Visual Basic                                       |
+| **Worksheet**             | Feuille de calcul standard                                |
+| **Chart**                 | Feuille graphique                                         |
+| **BIFF4Macro**            | Feuille de macro BIFF4                                    |
+| **InternationalMacro**    | Feuille de macro internationale                           |
+| **Other**                 | Type de feuille personnalisé ou moins courant non listé ci-dessus |
+| **Dialog**                | Feuille de dialogue                                       |
+
+## **API d’ajout d’une feuille de calcul à un classeur**
+
+### API Web
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet
+PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet
 ```
 
-### **Paramètres de la requête :**
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP| Description|
-|:- |:- |:- |:- |
-|Tableur|Déposer|Données de formulaire|Télécharger un fichier de feuille de calcul.|
-|type de feuille|Chaîne|Requête|Spécifie le nom de la nouvelle feuille de calcul. S'il n'est pas renseigné, un nom par défaut lui sera attribué.|
-|position|Entier|Requête|Spécifie la position d'insertion de la nouvelle feuille de calcul. Si ce paramètre n'est pas renseigné, la feuille de calcul sera ajoutée à la fin du classeur.|
-|nom de la feuille|Chaîne|Requête|Spécifie le type de feuille de calcul à ajouter. À défaut, un type de feuille de calcul par défaut sera utilisé.|
-|chemin de sortie|Chaîne|Requête|(Facultatif) Le chemin du dossier où est stocké le classeur. La valeur par défaut est null.|
-|outStorageName|Chaîne|Requête|Nom de stockage du fichier de sortie.|
-|région|Chaîne|Requête|Le paramètre de région de la feuille de calcul.|
-|mot de passe|Chaîne|Requête|Le mot de passe pour ouvrir le fichier de feuille de calcul.|
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
-### **Réponse**
+### Paramètres de la requête
+
+| Nom du paramètre   | Type    | Emplacement | Description                                                                                                                                                                                          |
+| :----------------- | :------ | :---------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Spreadsheet**    | Fichier | FormData    | **Obligatoire.** Le classeur Excel (.xlsx, .xls, etc.) auquel une nouvelle feuille sera ajoutée.                                                                                                         |
+| **sheetType**      | Chaîne  | Query       | **Facultatif.** Le type de feuille à créer. Les valeurs acceptables sont `worksheet` (par défaut), `chartsheet`, `macrosheet`, `vbmodule` et `dialog`.                                                        |
+| **position**       | Entier  | Query       | **Facultatif.** Index de base zéro indiquant l’emplacement d’insertion de la nouvelle feuille. `0` insère avant la première feuille ; `2` insère comme troisième feuille. Omettre pour ajouter la feuille à la fin.                                       |
+| **sheetName**      | Chaîne  | Query       | **Facultatif.** Nom de la nouvelle feuille de calcul. Doit être unique dans le classeur. Si omis, un nom par défaut tel que « FeuilleX » est généré.                                                              |
+| **outPath**        | Chaîne  | Query       | **Facultatif.** Répertoire cible dans le stockage cloud où le classeur modifié sera enregistré. Si `null` ou omis, le classeur est enregistré à l’emplacement du fichier source ou dans un chemin par défaut. |
+| **outStorageName** | Chaîne  | Query       | **Obligatoire.** Identifiant du stockage cloud configuré (par exemple, `CompanyOneDrive`) où le fichier de sortie doit être écrit.                                                                          |
+| **region**         | Chaîne  | Query       | **Facultatif.** Paramètre régional (par exemple, `fr‑CA`) pouvant affecter le formatage et les règles régionales dans la nouvelle feuille.                                                                                     |
+| **password**       | Chaîne  | Query       | **Facultatif.** Mot de passe permettant de déchiffrer et modifier un classeur protégé par mot de passe. Omettre si le fichier n’est pas chiffré.                                                                                       |
+
+### Réponse
+
+En cas de succès, l’API renvoie **HTTP 200 OK** (ou **201 Created** si un nouveau fichier est généré), accompagnée du classeur mis à jour.
 
 ```json
-[
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
-    }
-]
+{
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream"
+  }
+}
 ```
 
-### Codes d'erreur
+**Codes d’état HTTP**
 
-- **400 Mauvaise requête**: URI Apose.Cells Cloud API non valide.
-- **401 Non autorisé**: Jeton d'accès non valide. Ou identifiant client et secret non valides.
-- **404 non trouvé**:Le fichier de feuille de calcul n'est pas accessible.
-- **Erreur de serveur 500**:La feuille de calcul a rencontré une anomalie lors de l'obtention des données de calcul.
+| Code | Signification         | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte    | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé          | Jeton JWT invalide ou manquant.                                     |
+| 413  | Charge utile trop volumineuse | Le fichier téléchargé dépasse la taille maximale autorisée.                                 |
+| 500  | Erreur interne du serveur | Erreur serveur inattendue.                                          |
 
-## Où devrions-nous utiliser la fonction Ajouter une feuille de calcul à la feuille de calcul API ?
+## À quoi sert l’API d’ajout d’une feuille de calcul à un classeur ?
 
-Lorsque vous devez ajouter une feuille de calcul à une feuille de calcul, vous pouvez utiliser ce API.
+- **Génération automatisée de rapports** – Créer et insérer dynamiquement des feuilles mensuelles (par exemple, `2024‑05`) lors de la génération d’états financiers.
+- **Initialisation par lots de modèles** – Ajouter une feuille d’analyse dédiée pour chaque nouveau client ou projet lors de la génération en masse de devis ou de propositions commerciales.
+- **Extension dynamique de tableaux de bord** – Insérer des feuilles graphiques en temps réel dès que de nouvelles dimensions de données deviennent disponibles.
+- **Archivage conformité et audit** – Ajouter automatiquement des feuilles de collecte de preuves lors des audits annuels, en isolant chaque point d’inspection.
+- Pour supprimer une feuille, voir l’opération **[Delete Worksheet](/delete-worksheet/)**.
+- Pour déplacer une feuille, voir l’opération **[Move Worksheet](/move-worksheet/)**.
 
-## Pourquoi devriez-vous utiliser la feuille de calcul Ajouter à la feuille de calcul API ?
+## Pourquoi utiliser l’API d’ajout d’une feuille de calcul à un classeur ?
 
-- Ajoutez une feuille de calcul à la feuille de calcul, en spécifiant le type et l’emplacement de la feuille de calcul.
-- Le développement peut être rapidement réalisé grâce au SDK existant.
+- **Adapté aux développeurs** – Aspose.Cells Cloud fournit des SDK pour de nombreux langages, réduisant l’effort de développement et offrant une documentation complète.
+- **Réduction des coûts de main-d’œuvre** – Élimine la nécessité de créer manuellement des feuilles de calcul et d’effectuer des tâches répétitives de copier-coller.
+- **Paiement à l’utilisation** – Vous ne payez que les appels API effectivement effectués.
+- **Maintenance nulle** – Aucun serveur à gérer, aucune mise à jour logicielle à effectuer, aucune préoccupation de compatibilité.
 
-## Comment utiliser l'option Ajouter une feuille de calcul à une feuille de calcul API avec les SDK
+## Comment utiliser l’API d’ajout d’une feuille de calcul à un classeur avec les SDK
 
-### Ajouter une feuille de calcul à la feuille de calcul API Spécification
+### Spécification de l’API d’ajout d’une feuille de calcul à un classeur
 
- Le[Ajouter une feuille de calcul à la feuille de calcul API Spécification](https://reference.aspose.cloud/cells/#/ManagementController/AddWorksheetToSpreadsheet) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+La [spécification de l’API d’ajout d’une feuille de calcul à un classeur](https://reference.aspose.cloud/cells/#/ManagementController/AddWorksheetToSpreadsheet) définit une interface de programmation accessible publiquement et permet d’effectuer directement des interactions REST depuis un navigateur web.
 
-### Utiliser les SDK Cloud Aspose.Cells
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud avec cURL.
 
-L'utilisation du SDK est le moyen le plus rapide de développer, car il fait abstraction des détails de bas niveau, vous permettant d'ajouter une feuille de calcul à une feuille de calcul avec un code court.
- Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
-Les exemples de code suivants montrent comment effectuer des appels API vers des services Web Aspose.Cells à l'aide de divers SDK :
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_AddWorksheet.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet?worksheetName=Feuille1" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json" \
+     -F "Spreadsheet=@/chemin/vers/Book1.xlsx"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_AddWorksheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (encodé en Base64)",
+  "contentType": "type MIME",
+  "fileDownloadName": "nom de fichier optionnel"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_AddWorksheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_AddWorksheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_AddWorksheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_AddWorksheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_AddWorksheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_AddWorksheet.go" >}}
-{{< /tab >}}
+
+{{< /tabs >}}
+
+### Utiliser les SDK Aspose.Cells Cloud
+
+L’utilisation d’un SDK masque les détails de bas niveau, vous permettant d’ajouter une feuille de calcul avec un minimum de code. Reportez-vous à la liste complète des SDK dans le [dépôt GitHub](https://github.com/aspose-cells-cloud).
+
+Les exemples de code suivants montrent comment appeler le service à l’aide de divers SDK :
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}  
+{{<tab tabNum="1" >}}  
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_AddWorksheet.cs" >}}  
+{{</tab>}}  
+{{<tab tabNum="2" >}}  
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_AddWorksheet.java" >}}  
+{{</tab>}}  
+{{<tab tabNum="3" >}}  
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_AddWorksheet.php" >}}  
+{{</tab>}}  
+{{<tab tabNum="4" >}}  
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_AddWorksheet.rb" >}}  
+{{</tab>}}  
+{{<tab tabNum="5" >}}  
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_AddWorksheet.ts" >}}  
+{{</tab>}}  
+{{<tab tabNum="6" >}}  
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_AddWorksheet.py" >}}  
+{{</tab>}}  
+{{<tab tabNum="7" >}}  
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_AddWorksheet.pl" >}}  
+{{</tab>}}  
+{{<tab tabNum="8" >}}  
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_AddWorksheet.go" >}}  
+{{</tab>}}  
 {{< /tabs >}}

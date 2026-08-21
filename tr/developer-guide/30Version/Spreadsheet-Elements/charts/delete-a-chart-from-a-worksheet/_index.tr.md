@@ -1,72 +1,119 @@
-﻿---
-title: Bir Çalışma Sayfasından Bir Grafiği Silin
+---
+title: "Bir Çalışma Sayfasından Bir Grafik Silme"
 type: docs
-url: /tr/charts/delete/
+url: /charts/delete/
 aliases: [/delete-a-chart-from-a-worksheet/]
 weight: 40
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Çalışma Sayfasından Grafik Silme
+keywords:
+  - "Aspose.Cells"
+  - "REST API"
+  - "Grafik Silme"
+  - "Çalışma Sayfası"
+  - "Excel"
+  - "Bulut SDK'sı"
+  - "Grafik Silme"
+  - "API Referansı"
+description: "Aspose.Cells Cloud REST API kullanılarak bir çalışma sayfasından grafik, sıfır tabanlı indeksine göre silinir."
+ArticleTitle: "Aspose.Cells Cloud REST API ile Bir Çalışma Sayfasından Bir Grafik Silme"
 ---
-Bu REST API, çalışma sayfası grafiğinin indekse göre silinmesini gösterir.
- 
-## RSET API
- 
+
+Bu REST API, bir grafik indeksine göre bir çalışma sayfası grafiğini siler.
+
+İlgili işlemler için **[Grafik Ekle](#)** ve **[Grafiği Al](#)** sayfalarına bakın.
+
+## REST API
+
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
 ```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabı adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| grafikIndeksi| tam sayı| yol| Grafik endeksi.|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
- 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetDeleteChart) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+
+### Güvenlik ve Kimlik Doğrulama
+
+Aspose.Cells Cloud API’leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulama](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) gerektirir.
+
+### İstek Parametreleri
+
+| Parametre Adı | Tür      | Konum  | Açıklama                                      |
+| ------------- | -------- | ------ | --------------------------------------------- |
+| name          | string   | path   | Çalışma kitabının adı.                        |
+| sheetName     | string   | path   | Çalışma sayfasının adı.                       |
+| chartIndex    | integer  | path   | Silinecek grafiğin sıfır tabanlı indeksi.    |
+| folder        | string   | query  | Çalışma kitabının bulunduğu klasör.           |
+| storageName   | string   | query  | Kullanılacak depo adı.                       |
 
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Yanıt**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                              |
+|-----|-----------------------------|-------------------------------------------------------|
+| 200 | OK (Tamam)                  | Filtre başarıyla uygulandı; yanıt, işlem ayrıntılarını içerir. |
+| 400 | Geçersiz İstek              | Eksik veya geçersiz parametreler (örn., desteklenmeyen dosya türü). |
+| 401 | Yetkisiz                    | Geçersiz veya eksik JWT belirteci.                   |
+| 413 | Yük Çok Büyük               | Yüklenecek dosya boyut sınırını aşıyor.              |
+| 500 | Sunucu İç Hatası            | Beklenmeyen sunucu hatası.                           |
+
+## PutWorksheetAddChart API'sini SDK’lar ile Nasıl Kullanılır
+
+### PutWorksheetAddChart API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetDeleteChart), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’sine istek nasıl yapılır gösterir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" 
--X DELETE 
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" \
+-X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
-## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
- 
+
+API aşağıdaki durum kodlarını döndürür:
+
+| Kod | Açıklama                              |
+|-----|---------------------------------------|
+| 200 | Grafik başarıyla silindi             |
+| 400 | Geçersiz istek (örn., geçersiz indeks) |
+| 401 | Yetkisiz (eksik veya geçersiz JWT)   |
+| 404 | Çalışma kitabında, çalışma sayfasında veya grafik bulunamadı |
+| 500 | Sunucu hatası                         |
+
+**Hata yönetimi:** Ayrıntılı hata bilgisi için OpenAPI spesifikasyonundaki genel hata modeline bakın.
+
+### Aspose.Cells Cloud SDK’larını Kullanma
+
+SDK kullanmak, geliştirme hızını artırmak için en iyi yoldur. SDK, düşük seviye detayları soyutlayarak projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak Aspose.Cells web hizmetlerinin nasıl çağrılacağını gösterir:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

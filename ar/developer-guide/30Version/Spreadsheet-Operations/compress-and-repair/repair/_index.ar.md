@@ -1,87 +1,121 @@
-﻿---
-title: إصلاح الملف Excel
-second_title: Documen
-type: docs
-linktitle: إصلاح الملف Excel
-url: /ar/repair-excel-files/
-keywords: Repair Excel, ODS, WPS, and so on files
-description: إصلاح ملفات Excel باستخدام Aspose.Cells Cloud REST API. يدعم API لغات تطوير متعددة بما في ذلك Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و Swift للتكامل السريع في مشاريعك
-weight: 39
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إصلاح
 ---
-يشير هذا REST API إلى الملفات `repair` Excel.
+title: "إصلاح ملفات إكسل"
+second_title: "مستند"
+type: docs
+linktitle: "إصلاح ملفات إكسل"
+url: /repair-excel-files/
+keywords: "Aspose Cells, API إصلاح إكسل, ملفات XLSX تالفة, استرداد جداول البيانات, API سحابية"
+description: "استخدم واجهة Aspose.Cells Cloud REST API لإصلاح ملفات إكسل التالفة (XLS، XLSX، XLSM، XLSB، ODS). ارفع ملفًا واحدًا أو عدة ملفات، واختر تنسيق الإخراج، واحصل على الملفات المُصلحة بصيغة Base64. لا حاجة لتثبيت أي شيء."
+weight: 39
+---
 
-- إصلاح XLS، XLSX، XLSM، XLSB، ODS، وما إلى ذلك.
-- دعم ملفات متعددة.
+تتيح لك هذه الواجهة البرمجية (REST API) **إصلاح** ملفات إكسل.
 
-يستعيد تطبيق Aspose.Cells Cloud Excel Repair البيانات من ملفات Excel التالفة عبر الإنترنت دون الحاجة إلى تثبيت. قد تُسبب ملفات Excel التالفة مشكلةً لعدم قدرتك على فتحها. يمكنك تجربة تطبيق Aspose.Cells Cloud Excel Repair لاستعادة البيانات من ملفات Excel التالفة.
+- إصلاح تنسيقات جداول البيانات مثل XLS وXLSX وXLSM وXLSB وODS وغيرها.  
+- يدعم رفع ملفات متعددة في طلب واحد.
 
-## RSET API
+تقوم خدمة إصلاح ملفات إكسل من Aspose.Cells Cloud باسترداد البيانات من ملفات إكسل التالفة عبر الإنترنت دون أي تثبيت. تُعد ملفات إكسل التالفة مشكلة لأنها لا يمكن فتحها. يمكنك تجربة تطبيق Aspose.Cells Cloud لإصلاح ملفات إكسل لاسترداد البيانات من هذه الملفات.
+
+## واجهة REST API
+
+يقوم الطرف النهائي **إصلاح ملفات إكسل** بإصلاح ملفات جداول البيانات التالفة وإعادة محتواها المُصلَح.
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/repair
-
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| ملف| ملف| نموذج البيانات| الملف للتحميل|
-| شكل| خيط| استفسار| تنسيق الإخراج، القيمة الافتراضية هي null، تنسيق الإخراج يساوي تنسيق ملف الإدخال.|
+تُعد واجهات Aspose.Cells Cloud API آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| اسم المعامل | النوع | الموقع | الوصف |
+|-------------|-------|--------|--------|
+| file | ملف | formData (multipart) | الملف المراد رفعه |
+| format | نص | query | تنسيق الإخراج المرغوب. إذا تم حذفه (null)، يصبح تنسيق الإخراج افتراضيًا هو نفس تنسيق الملف المدخل. |
+
+### **الاستجابة**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[اسم الملف المدمج]",
+    "Filesize" : [حجم الملف],
+    "FileContent" : "[Base64String]"
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى | الوصف |
+|-------|--------|--------|
+| 200 | ناجح | تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | طلب غير صحيح | معاملات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم). |
+| 401 | غير مصرّح به | رمز JWT غير صالح أو مفقود. |
+| 413 | حمل البيانات كبير جدًا | يتجاوز حجم الملف المرفَع الحد المسموح به. |
+| 500 | خطأ داخلي في الخادم | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام PostRepair API باستخدام حزم تطوير البرمجيات (SDKs)
+
+### مواصفات PostRepair API
+
+تُعرّف [مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) واجهة برمجة تطبيقات متاحة عمومًا وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء المكالمات إلى API السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/repair" \
--X POST \
--H "Content-Type: multipart/form-data" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'
+curl -v "https://api.aspose.cloud/v3.0/cells/repair" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'file1=@file1.xlsx' \
+  -F 'file2=@file2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
+```json
 {
-    "Files":
-    [
-        {
-            "Filename":"xxxx1.xlsx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        {
-            "Filename":"xxxx2.xlsx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "file1.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "file2.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+عند النجاح، تُعيد الخدمة كود HTTP 200 مع حمولة JSON تحتوي على مصفوفة `Files`. وفي حالات الخطأ، تستخدم الواجهة رموز الحالة القياسية لـ HTTP:
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+- **400 Bad Request** – معاملات غير صحيحة أو ملف لا يمكن إصلاحه.  
+- **401 Unauthorized** – رمز JWT مفقود أو غير صالح.  
+- **413 Payload Too Large** – يتجاوز حجم الملف المرفَع الحد المسموح به.  
+- **500 Internal Server Error** – فشل غير متوقع من جانب الخادم.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+## عائلة حزم تطوير البرمجيات السحابية
+
+استخدام حزمة تطوير البرمجيات (SDK) هو أفضل طريقة لتسريع عملية التطوير. وتتولى حزمة التطوير معالجة التفاصيل من المستوى المنخفض، وتسمح لك بالتركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم Aspose.Cells Cloud SDK.
+
+يُظهر أمثلة الرمز التالية كيفية استدعاء خدمات Aspose.Cells عبر حزم تطوير برمجيات متنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

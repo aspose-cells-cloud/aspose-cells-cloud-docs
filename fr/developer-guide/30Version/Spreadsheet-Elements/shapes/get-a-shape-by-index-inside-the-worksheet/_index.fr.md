@@ -1,160 +1,134 @@
-﻿---
-title: Obtenir une forme par index sur une feuille de calcul Excel
-second_title: Documen
-linktitle: Gé
-type: docs
-url: /fr/shapes/get/
-aliases: [/get-a-shape-by-index-inside-the-worksheet/]
-keywords: Get a shape on an Excel workshee
-description: Aspose.Cells Cloud REST API prend en charge l'obtention d'une forme dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir une forme par index sur une feuille de calcul Excel
 ---
-Ce REST API indique d'obtenir une forme avec un format d'image ou une information de forme sur une feuille de calcul Excel.
+title: "Obtenir une forme par son index dans une feuille Excel"
+second_title: "Document"
+linktitle: "Obtenir"
+type: docs
+url: /shapes/get/
+aliases: [/get-a-shape-by-index-inside-the-worksheet/]
+keywords: "Aspose.Cells Cloud, API de forme Excel, obtenir une forme par index, forme de feuille de calcul, API REST, récupération de forme, Aspose.Cells SDK"
+description: "Récupérer une forme par son index dans une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut la syntaxe de requête, les paramètres, les détails de la réponse et des exemples de SDK."
+weight: 20
+ArticleTitle: "Obtenir une forme par index dans une feuille Excel – Documentation Aspose.Cells Cloud"
+---
 
-## RSET API
+Cette API REST permet de récupérer une forme (y compris ses données d’image ou ses métadonnées) à partir d’une feuille Excel.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
- 
+## API GetWorksheetShape
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
 
-Les paramètres de la requête sont :
+**Prérequis**  
+- Un jeton d’accès Aspose Cloud valide (Bearer JWT).  
+- Le classeur doit être stocké dans votre espace de stockage Aspose Cloud ou dans un dossier spécifié.  
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| nom du document.|
-| nom de la feuille| chaîne| chemin| nom de la feuille de calcul.|
-| indice de forme| entier| chemin| index des formes dans les formes de la feuille de calcul.|
-| dossier| chaîne| requête| Dossier du document.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+### **Sécurité et authentification**
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShape) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+### **Paramètres de la requête**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Nom du paramètre | Type    | Emplacement | Description                                               |
+| ---------------- | ------- | ----------- | --------------------------------------------------------- |
+| name             | string  | path        | Nom du fichier Excel.                                     |
+| sheetName        | string  | path        | Nom de la feuille de calcul contenant la forme.          |
+| shapeindex       | integer | path        | Index de la forme dans la feuille (indexation à zéro).   |
+| folder           | string  | query       | Chemin du dossier où le document est stocké.             |
+| storageName      | string  | query       | Nom du service de stockage.                               |
+
+**Remarque :** `shapeindex` est indexé à zéro ; la première forme a donc l’index 0. Assurez-vous que le classeur est stocké dans le dossier et le service de stockage spécifiés si vous n’utilisez pas le stockage par défaut.
+
+La [Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShape) définit une interface de programmation publiquement accessible et permet d’effectuer directement des interactions REST depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple ci-dessous montre comment effectuer un appel à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/autoshapes/1" \
+# Endpoint et chemin corrigés
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/shapes/1" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+-H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 {
-
   "Status": "string",
-
   "Shape": {
-
     "link": {
-
       "Href": "string",
-
       "Rel": "string",
-
       "Title": "string",
-
       "Type": "string"
-
     },
-
     "Name": "string",
-
     "MsoDrawingType": "string",
-
     "AutoShapeType": "string",
-
     "Placement": "string",
-
     "UpperLeftRow": 0,
-
     "Top": 0,
-
     "UpperLeftColumn": 0,
-
     "Left": 0,
-
     "LowerRightRow": 0,
-
     "Bottom": 0,
-
     "LowerRightColumn": 0,
-
     "Right": 0,
-
     "Width": 0,
-
     "Height": 0,
-
     "X": 0,
-
     "Y": 0,
-
     "RotationAngle": 0,
-
     "HtmlText": "string",
-
     "Text": "string",
-
     "AlternativeText": "string",
-
     "TextHorizontalAlignment": "string",
-
     "TextHorizontalOverflow": "string",
-
     "TextOrientationType": "string",
-
     "TextVerticalAlignment": "string",
-
     "TextVerticalOverflow": "string",
-
     "IsGroup": true,
-
     "IsHidden": true,
-
     "IsLockAspectRatio": true,
-
     "IsLocked": true,
-
     "IsPrintable": true,
-
     "IsTextWrapped": true,
-
     "IsWordArt": true,
-
     "LinkedCell": "string",
-
     "ZOrderPosition": 0
-
   }
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Codes d’état HTTP possibles**
+
+| Code | Description |
+|------|-------------|
+| **200 OK** | La forme a été récupérée avec succès. |
+| **400 Bad Request** | La requête est mal formée ou les paramètres obligatoires sont manquants. |
+| **401 Unauthorized** | L’authentification a échoué ou le jeton est manquant/ invalide. |
+| **404 Not Found** | Le classeur, la feuille ou l’index de forme spécifié n’existe pas. |
+| **500 Internal Server Error** | Une erreur inattendue s’est produite côté serveur. |
+
+**Précautions fréquentes :** L’utilisation d’un domaine de base incorrect (`api.aspose.com`) ou du segment obsolète `/autoshapes/` entraînera une erreur 404. Utilisez toujours le segment `/shapes/` avec le domaine `api.aspose.cloud`.
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est la meilleure façon d’accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -207,3 +181,5 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Pour les opérations associées, consultez la documentation sur **[Ajout d’une forme](/shapes/add/)** et **[Mise à jour d’une forme](/shapes/update/)**.

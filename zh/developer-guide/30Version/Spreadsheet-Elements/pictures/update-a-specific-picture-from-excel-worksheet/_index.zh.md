@@ -1,76 +1,89 @@
-﻿---
-title: 更新 Excel 文件中的图片
-second_title: Documen
-linktitle: 更新
-type: docs
-url: /zh/pictures/update/
-aliases: [/update-a-specific-picture-from-excel-workshee/]
-keywords: Update a picture in an Excel file
-description: Aspose.Cells Cloud REST API 支持更新 Excel 文件中的图片。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 70
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 文件中更新图片
 ---
-此 REST API 指示 Excel 工作表的逐张图片索引为 `update`。
+title: "更新 Excel 文件中的图片"
+second_title: "文档"
+linktitle: "更新"
+type: docs
+url: /pictures/update/
+aliases: [/update-a-specific-picture-from-excel-workshee/]
+keywords: "Aspose.Cells Cloud, Excel, 更新图片, REST API, SDK"
+description: "了解如何使用 Aspose.Cells Cloud REST API 更新 Excel 工作表中的图片。包含请求详情、cURL 示例以及多种编程语言的 SDK 代码片段。"
+ArticleTitle: "使用 Aspose.Cells Cloud REST API 更新 Excel 文件中的图片"
+weight: 70
+---
 
-## 重新设置 API
+此 REST API 用于根据图片索引更新 Excel 工作表中的图片。
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
- 
+**前置条件**：您必须拥有有效的 Aspose Cloud JWT 令牌、存储于 Aspose Cloud 存储中的目标 Excel 文件，并使用 API 版本 3.0 或更高版本。
+
+## PostWorksheetPicture API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-请求参数为：
+### **安全与身份认证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|图片索引|整数|小路|图片的索引。|
-|图片||身体|图片对象|
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 安全可靠，需使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份认证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### **请求参数**
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名         | 类型   | 位置   | 描述                                             |
+| -------------- | ------ | ------ | ------------------------------------------------ |
+| name           | string | path   | Excel 文档的名称。                               |
+| sheetName      | string | path   | 包含目标图片的工作表名称。                       |
+| pictureIndex   | integer| path   | 待更新图片的从零开始的索引。                     |
+| picture        | object | body   | 描述待更新图片属性的 JSON 对象。                 |
+| folder         | string | query  | 存放文档的文件夹路径。                           |
+| storageName    | string | query  | 存储服务的名称。                                 |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**注意**：图片索引为从零开始计数。支持的图像格式包括 JPEG、PNG、BMP 和 GIF，单张图片最大尺寸为 10 MB。
+
+### 错误响应
+
+| HTTP 状态码 | 描述                                                   |
+| ----------- | ------------------------------------------------------ |
+| 401         | 未授权 — 缺少或无效的令牌。                            |
+| 404         | 未找到 — 指定的文件、工作表或图片索引不存在。         |
+| 400         | 请求错误 — 请求语法格式错误或参数无效。                |
+| 500         | 内部服务器错误 — 遇到意外情况。                        |
+
+<a href="https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture" rel="noopener noreferrer">OpenAPI 规范</a> 定义了一个公开可访问的编程接口，允许您直接通过 Web 浏览器发起 REST 请求。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" \
 -X POST \
 -d "{ \"UpperLeftRow\": 10, \"Top\": 0, \"UpperLeftColumn\": 1, \"Left\": 0, \"LowerRightRow\": 0, \"Bottom\": 0, \"LowerRightColumn\": 3, \"ImageFormat\": \"jpg\", \"SourceFullName\": \"download.jpg\"}" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+## 云 SDK 开发工具包（SDK Family）
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是最快捷的开发方式。SDK 封装了底层细节，让您能专注于项目任务本身。请查阅 <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub 仓库</a> 获取 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +136,5 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 {{< /tab >}}
 
 {{< /tabs >}}
+
+*另请参见*：插入图片、删除图片、获取图片、清除图片 — Aspose.Cells Cloud API 中其他与图片相关的操作。

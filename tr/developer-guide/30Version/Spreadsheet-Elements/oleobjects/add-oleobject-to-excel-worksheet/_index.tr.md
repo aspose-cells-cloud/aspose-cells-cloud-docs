@@ -1,81 +1,117 @@
-﻿---
-title: Excel çalışma sayfasına bir OLE nesnesi ekleyin
-second_title: Documen
-linktitle: Eklemek
-type: docs
-url: /tr/oleobjects/add/
-aliases: [/add-oleobject-to-excel-worksheet/]
-keywords: Add an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasına OLE nesnesi eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasına bir OLE nesnesi ekleme
 ---
-Bu REST API, Excel çalışma sayfasında `add OLE object`'i gösterir.
+title: "Excel Çalışma Sayfasına Bir OLE Nesnesi Ekleyin"
+second_title: "Belge"
+linktitle: "OLE nesnesi ekle"
+type: docs
+url: /oleobjects/add/
+aliases: [/add-oleobject-to-excel-worksheet/]
+keywords: "OLE nesnesi ekle, Excel, Aspose.Cells Cloud, REST API, SDK"
+description: "Aspose.Cells Cloud REST API’sini kullanarak Excel çalışma sayfalarına OLE nesneleri ekleyin. API, doğrudan veya C#, Java, PHP, Ruby, Node.js, Python, Perl ve Go için SDK’lar aracılığıyla çağrılabilir."
+ArticleTitle: "Aspose.Cells Cloud API ile Excel Çalışma Sayfasına OLE Nesnesi Ekleme"
+weight: 20
+---
 
-## RSET API
+Aspose.Cells Cloud API, Excel çalışma kitaplıklarının programlı olarak manipulate edilmesini sağlar; bu, OLE nesnelerini (örneğin Word belgeleri, PDF’ler veya diğer ikili dosyalar) doğrudan bir çalışma sayfasına gömme yeteneğini de içerir.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
- 
+Bu REST API, bir Excel çalışma sayfasına bir **OLE nesnesi** ekler.
+
+**Önkoşullar** – Geçerli bir JWT kimlik doğrulama belirteciniz olmalıdır ve `oleFile` veya `imageFile` tarafından başvurulan kaynak dosyalar, uç noktayı çağırmadan önce belirtilen depolama konumuna yüklenmiş olmalıdır.
+
+## PutWorksheetOleObject API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma kağıdının adı.|
-| oleObject|| vücut| Ole Nesnesi|
-| üstSolSatır| tam sayı| sorgu|0 |
-| üstSolSütun| tam sayı| sorgu|0 |
-| yükseklik| tam sayı| sorgu|0 |
-| Genişlik| tam sayı| sorgu|0 |
-| oleDosyası| sicim| sorgu| OLE dosya adı|
-| resimDosyası| sicim| sorgu| Görüntü dosya adı|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı   | Tür      | Konum | Açıklama                                            |
+| ---------------- | -------- | ----- | --------------------------------------------------- |
+| name             | string   | path  | Çalışma kitabı dosya adı.                           |
+| sheetName        | string   | path  | Çalışma sayfası adı.                                |
+| oleObject        | object   | body  | OLE nesnesi tanımı.                                 |
+| upperLeftRow     | integer  | query | Üst sol köşenin satır indeksi (varsayılan 0).       |
+| upperLeftColumn  | integer  | query | Üst sol köşenin sütun indeksi (varsayılan 0).       |
+| height           | integer  | query | OLE nesnesinin yüksekliği (varsayılan 0).           |
+| width            | integer  | query | OLE nesnesinin genişliği (varsayılan 0).            |
+| oleFile          | string   | query | OLE kaynak dosyasının adı.                          |
+| imageFile        | string   | query | Önizleme resim dosyasının adı.                      |
+| folder           | string   | query | Çalışma kitabını içeren klasör.                     |
+| storageName      | string   | query | Kullanılacak depolama adı.                          |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Notlar** – `upperLeftRow` ve `upperLeftColumn` sıfır tabanlı indeksleme kullanır. `oleFile` (ve isteğe bağlı olarak `imageFile`) hedef depolamada zaten mevcut olmalıdır; aksi takdirde istek bir hata döndürür.
+
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject), herkese açık bir programlama arayüzü tanımlar ve web tarayıcınızdan doğrudan REST etkileşimlerinde bulunmanıza olanak tanır.
+
+Aspose.Cells web servislerini çağırmak için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile bir OLE nesnesi eklemeyi nasıl yapacağınızı göstermektedir. **Tüm üretim çağrılarında HTTPS gereklidir.**
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobjects" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"ImageSourceFullName":"aspose-logo.png", "IsAutoSize":true, "SourceFullName":"Sample_Book2.xls", "UpperLeftRow":15, "Top":10, "UpperLeftColumn":5, "Left":10,"Width":400, "Height":400}'
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobjects" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"ImageSourceFullName":"aspose-logo.png", "IsAutoSize":true, "SourceFullName":"Sample_Book2.xls", "UpperLeftRow":15, "Top":10, "UpperLeftColumn":5, "Left":10, "Width":400, "Height":400}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+![Excel çalışma sayfasına gömülü bir OLE nesnesi gösteren ekran görüntüsü](/cells/images/ole-object-example.png)
+
+**Olası HTTP durum kodları**
+
+| Kod  | Açıklama                                             |
+|------|------------------------------------------------------|
+| 200  | OLE nesnesi başarıyla eklendi.                      |
+| 400  | Geçersiz istek – eksik veya geçersiz parametreler.  |
+| 401  | Yetkisiz – geçersiz veya eksik JWT belirteci.       |
+| 404  | Bulunamadı – çalışma kitabı, çalışma sayfası veya kaynak dosya mevcut değil. |
+| 500  | Sunucu iç hatası – beklenmedik bir hata oluştu.     |
+
+Tipik bir başarılı yanıt aşağıdaki JSON yükünü döndürür:
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "Data": {
+    "OleObjectId": "12345",
+    "UpperLeftRow": 15,
+    "UpperLeftColumn": 5,
+    "Width": 400,
+    "Height": 400,
+    "SourceFullName": "Sample_Book2.xls",
+    "ImageSourceFullName": "aspose-logo.png"
+  }
+}
+```
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak geliştirme sürecini hızlandırır. Bir SDK, düşük seviye detayları soyutlayarak iş mantığınıza odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web servislerini çeşitli SDK’lar kullanarak nasıl çağıracaklarınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

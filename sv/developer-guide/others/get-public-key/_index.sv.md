@@ -1,70 +1,85 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Hämta offentlig nyckel
-second_title: Documen
-ArticleTitle: Get Public Ke
-linktitle: Hämta offentlig nyckel
+---
+---
+title: "Aspose.Cells Cloud API – Hämta offentlig nyckel (v4.0) | REST-dokumentation"
+secondtitle: "Dokument"
+articletitle: "Hämta offentlig nyckel"
+linktitle: "Hämta offentlig nyckel"
 type: docs
 url: /sv/get-public-key/
-keywords: asymmetric encryption, public key retrieval, REST API, Excel API, security, data encryption, API integratio
-description: Hämta en asymmetrisk offentlig nyckel för säker datakryptering
+keywords: "Aspose.Cells, offentlig nyckel, RSA, API, moln"
+description: "Hämta den RSA-offentliga nyckel som används för kryptering av data med Aspose.Cells Cloud. Innehåller endpoint, parametrar, exempel på begäran/svar, statuskoder och exempel på hur SDK:er används."
 weight: 100
-kwords: asymmetrisk kryptering, publik nyckel, REST API, Excel API, säkerhet, datakryptering, API integration, JSON, API dokumentation
 ---
-Hämtar den publika nyckeln från en asymmetrisk krypteringsalgoritm.
 
-## **Hämta offentlig nyckel API**
+Denna API hämtar den offentliga nyckeln från ett asymmetriskt kryptografiskt algoritmsystem.
+
+**Sammanfattning:** Använd Aspose.Cells API för att hämta offentlig nyckel för att erhålla den RSA-offentliga nyckeln (2048-bitars) som krävs för att kryptera data när du arbetar med Excel-filer i molnet. Endpoint returnerar nyckeln i JSON-format och är säkrad med OAuth 2.0.
+
+## **API för att hämta offentlig nyckel**
+
+**Förutsättningar:**  
+För att kunna anropa denna endpoint måste du först ha ett giltigt OAuth 2.0-åtkomsttoken som innehåller scope:et `Cells.Read`.
+
+### **Webb-API**
 
 ```
-GET http://api.aspose.cloud/v4.0/cells/publickey
+GET https://api.aspose.cloud/v4.0/cells/publickey
 ```
+
+**Exempel på begäran (cURL)**
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/publickey" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
+### **Säkerhet och autentisering**
+
+Aspose.Cells Cloud-API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
 ### **Begäranparametrar:**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-text| Beskrivning|
-|:- |:- |:- |:- |
-|||||
+| Parameternamn | Typ   | Plats  | Beskrivning                                                                     |
+| ------------- | ----- | ------ | ------------------------------------------------------------------------------- |
+| Authorization | string | Header | Bearer-token för OAuth2-autentisering (obligatoriskt).                          |
+| Accept        | string | Header | Önskat svarsformat, t.ex. `application/json` (valfritt, standard är JSON).      |
 
 ### **Svar**
 
 ```json
 {
-  "Name": "CellsCloudPublicKeyResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "CellsCloudPublicKey",
-      "DataType": {
-        "Identifier": "Class",
-        "Reference": "CellsCloudPublicKey",
-      }
-    },
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
-    }
-  ]
+  "Code": 200,
+  "Status": "OK",
+  "CellsCloudPublicKey": {
+    "PublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr...",
+    "Algorithm": "RSA",
+    "KeySize": 2048
+  }
 }
 ```
 
-## Så här använder du Get public key API med SDK:er
+**HTTP-statuskoder**
+
+| Kod | Betydelse             | Beskrivning                                                       |
+| --- | --------------------- | ----------------------------------------------------------------- |
+| 200 | OK                    | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Bad Request (Felaktig begäran) | Saknade eller ogiltiga parametrar (t.ex. filformat som inte stöds). |
+| 401 | Unauthorized (Ej auktoriserad) | Ogiltig eller saknad JWT-token.                                  |
+| 413 | Payload Too Large (För stor nyttolast) | Den uppladdade filen överskrider storleksgränsen.             |
+| 500 | Internal Server Error (Internt serverfel) | Oväntat serverfel.                                              |
+
+## Hur du använder API:et för att hämta offentlig nyckel med SDK:er
 
 ### OpenAPI-specifikation
 
- De[OpenAPI-specifikation](https://reference.aspose.cloud/cells/#/KeyController/GetPublicKey) definierar ett offentligt tillgängligt programmeringsgränssnitt som gör att du kan utföra REST-interaktioner direkt från din webbläsare.
+[OpenAPI-specifikationen](https://reference.aspose.cloud/cells/#/KeyController/GetPublicKey) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket gör det möjligt för dig att utföra REST-interaktioner direkt från din webbläsare.
 
 ### Använd Aspose.Cells Cloud SDK:er
 
-Att använda SDK:et är det bästa sättet att påskynda utvecklingen. SDK:et hanterar de underliggande detaljerna, vilket gör att du enkelt kan implementera "get public key for cells" med minimal kod.
- Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda SDK är det bästa sättet att påskynda utvecklingen. SDK:et hanterar de underliggande detaljerna så att du bara behöver implementera hämtning av offentlig nyckel för cells med minimal kod.  
+Kolla in [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel illustrerar hur man interagerar med Aspose.Cells-webbtjänster med hjälp av olika SDK:er:
+Här följer konkreta exempel för de vanligaste programmeringsspråken:
+
+---

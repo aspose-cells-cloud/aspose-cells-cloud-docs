@@ -1,107 +1,121 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Importar datos CSV, JSON o XML a un archivo de hoja de cálculo
-second_title: Documen
-ArticleTitle: Import Csv, JSON, or XML Data into a Spreadsheet file
-linktitle: Importar datos a una hoja de cálculo
-type: docs
-url: /es/import-data-into-spreadsheet/
-keywords: Import data, Aspose.Cells Cloud Web API, spreadsheet integration, CSV, JSON, XML, data handling, Aspose.Cell
-description: Importe datos de manera eficiente a una hoja de cálculo desde formatos compatibles como CSV, JSON y XML utilizando Aspose.Cells Cloud Web API
-weight: 100
-kwords: Aspose.Cells Cloud Web API, Importar datos, Office Cloud, REST, Hoja de cálculo, CSV, JSON, XM
 ---
- Importar datos a una hoja de cálculo. El formato admitido del archivo de datos importado es[XML](https://docs.fileformat.com/web/xml/), [JSON](https://docs.fileformat.com/web/json/) o[CSV](https://docs.fileformat.com/spreadsheet/csv/).
+title: "API de importación de datos de Aspose.Cells Cloud: una solución en la nube para importar automáticamente datos CSV, JSON y XML en hojas de cálculo de Excel."
+second_title: "Documento"
+ArticleTitle: "Plataforma de integración de datos de múltiples fuentes para Excel – API de importación y transformación automática de datos de Aspose.Cells Cloud."
+linktitle: "Importar datos en hoja de cálculo"
+type: docs
+url: /import-data-into-spreadsheet/
+keywords: "Aspose Cells, API de importación de datos, CSV a Excel, JSON a Excel, XML a Excel, hoja de cálculo en la nube, API REST"
+description: "Importe datos CSV, JSON o XML en hojas de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Aprenda sobre el formato de solicitud, parámetros, código de ejemplo con SDK y manejo de errores."
+weight: 100
+---
 
-## **Importar datos a una hoja de cálculo API**
+## Características principales
+
+### Soporte para datos en múltiples formatos
+
+- **<a href="https://docs.fileformat.com/spreadsheet/csv/" rel="noopener noreferrer">Importación de datos CSV</a>**: admite diversos delimitadores y detecta automáticamente la codificación.
+- **<a href="https://docs.fileformat.com/web/json/" rel="noopener noreferrer">Gestión de datos JSON</a>**: aplanar estructuras JSON complejas en tablas de Excel.
+- **<a href="https://docs.fileformat.com/web/xml/" rel="noopener noreferrer">Conversión de archivos XML</a>**: asigna datos de nodos a la estructura de filas y columnas de Excel.
+
+## Descripción de la API de importación de datos en hoja de cálculo
+
+### API web
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/import/data
+PUT https://api.aspose.cloud/v4.0/cells/import/data
 ```
 
-### **Parámetros de la solicitud:**
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody| Descripción|
-|:- |:- |:- |:- |
-| archivo de datos| Archivo| Datos del formulario| Sube el archivo de datos que deseas importar.|
-| Hoja de cálculo| Archivo| Datos del formulario| Sube el archivo de hoja de cálculo de destino.|
-| hoja de trabajo| Cadena| Consulta| Especifique la hoja de trabajo para importar datos.|
-| celda de inicio| Cadena| Consulta|Especifique la posición inicial para importar datos.|
-| insertar| Booleano| Consulta| Indica si se deben insertar o sobrescribir los datos de importación especificados.|
-| convertirDatosNumericos| Booleano| Consulta| Especifique si desea convertir datos numéricos durante la importación.|
-| disidente| Cadena| Consulta| Especifique el delimitador para el formato CSV.|
-| Ruta de salida| Cadena| Consulta| (Opcional) La ruta de la carpeta donde se almacena el libro. El valor predeterminado es nulo.|
-|nombreAlmacenamientoExterno| Cadena| Consulta| Especifique el nombre de almacenamiento del archivo de salida.|
-| Ubicación de fuentes| Cadena| Consulta| Define fuentes personalizadas que se utilizarán.|
-| regresar| Cadena| Consulta| Establecer la configuración de la región de la hoja de cálculo.|
-| contraseña| Cadena| Consulta| La contraseña para abrir el archivo de hoja de cálculo.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
-### **Respuesta**
+### Parámetros de solicitud
+
+| Nombre del parámetro | Tipo   | Ubicación         | Descripción                                                                 |
+| -------------------- | ------ | ----------------- | --------------------------------------------------------------------------- |
+| datafile             | File   | FormData          | El archivo de datos (CSV, JSON o XML) que se va a importar.                |
+| spreadsheet          | File   | FormData          | El libro de trabajo de destino que recibirá los datos importados.          |
+| worksheet            | string | Query             | Nombre de la hoja de cálculo donde se colocarán los datos.                 |
+| startCell            | string | Query             | Celda superior izquierda (por ejemplo, `A1`) que marca la posición inicial para la importación. |
+| insert               | bool   | Query             | `true` para insertar filas; `false` para sobrescribir los datos existentes. |
+| convertNumericData   | bool   | Query             | `true` para convertir cadenas numéricas en números durante la importación. |
+| splitter             | string | Query             | Delimitador CSV de un solo carácter (el valor predeterminado es `,`).      |
+| outPath              | string | Query (opcional)  | Ruta de carpeta donde se guardará el libro de trabajo actualizado.        |
+| outStorageName       | string | Query (opcional)  | Nombre de la ubicación de almacenamiento para el archivo de salida.       |
+| fontsLocation        | string | Query (opcional)  | Ruta a una carpeta personalizada de fuentes, si es necesario.              |
+| region               | string | Query (opcional)  | Configuración regional de la hoja de cálculo (por ejemplo, `es-ES`).       |
+| password             | string | Query (opcional)  | Contraseña para abrir un libro de trabajo protegido.                       |
+
+### Respuesta
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Códigos de error
+**Códigos de estado HTTP**
 
-- **400 Solicitud incorrecta**: URI de nube Apose.Cells no válido API.
-- **401 No autorizado**Token de acceso no válido. O ID de cliente y secreto no válidos.
-- **404 No encontrado**:El archivo de hoja de cálculo no es accesible.
-- **Error de servidor 500**:La hoja de cálculo ha encontrado una anomalía al obtener los datos de cálculo.
+| Código | Significado             | Descripción                                                     |
+| ------ | ----------------------- | --------------------------------------------------------------- |
+| 200    | Correcto                | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta    | Parámetros ausentes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado           | Token JWT no válido o ausente.                                  |
+| 413    | Carga útil demasiado grande | El archivo cargado excede el límite de tamaño.              |
+| 500    | Error interno del servidor | Error inesperado del servidor.                                |
 
-## ¿Dónde debemos utilizar la importación de datos en la hoja de cálculo API?
+## Por qué debería utilizar esta API
 
-- Importar grandes cantidades de datos a una hoja de cálculo.
--  El formato del archivo de datos importados es[XML](https://docs.fileformat.com/web/xml/), [JSON](https://docs.fileformat.com/web/json/) y[CSV](https://docs.fileformat.com/spreadsheet/csv/).
+- **Carga eficiente de datos**: permite importar grandes conjuntos de datos directamente en un libro de trabajo sin crear archivos intermedios.
+- **Amplia compatibilidad con SDK**: proporciona bibliotecas cliente para .NET, Java, PHP, Ruby, Node.js, Python, Go y Perl, facilitando la integración.
+- **Procesamiento en memoria**: realiza transformaciones en memoria, lo que reduce los requisitos de almacenamiento temporal.
 
-## ¿Por qué debería utilizar la función Importar datos en la hoja de cálculo API?
+## Cómo usar la API de importación de datos en hoja de cálculo con SDK
 
-- Importar grandes cantidades de datos a hojas de cálculo.
-- El desarrollo se puede completar rápidamente a través del SDK existente.
+**Notas / limitaciones**: la API admite hasta 1 000 000 de filas por importación. El delimitador CSV predeterminado es únicamente la coma; se pueden especificar otros delimitadores de un solo carácter mediante el parámetro `splitter`. Los archivos XML grandes pueden aumentar el tiempo de procesamiento.
 
-## Cómo utilizar la función Importar datos en una hoja de cálculo API con SDK
+Para operaciones relacionadas, como exportar datos o convertir formatos de libro de trabajo, consulte la documentación sobre **Exportar datos** y **Convertir libro de trabajo**.
 
-### Importar datos a una hoja de cálculo API Especificación
+### Especificación de la API de importación de datos en hoja de cálculo
 
- El[Importar datos a una hoja de cálculo API Especificación](https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet) Proporciona una interfaz de programación de acceso público, que permite interacciones REST directamente desde su navegador web.
+La <a href="https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet" rel="noopener noreferrer">Especificación de la API de importación de datos en hoja de cálculo</a> proporciona una interfaz de programación accesible públicamente, lo que permite interacciones REST directamente desde su navegador web.
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube con cURL.
 
-### Utilice los SDK de la nube Aspose.Cells
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
-Usar el SDK es la forma más rápida de desarrollar, ya que abstrae los detalles de bajo nivel y permite importar datos a una hoja de cálculo con código corto.
- Por favor, consulte el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+{{< tab tabNum="11" >}}
 
-Los siguientes ejemplos de código ilustran cómo invocar los servicios web Aspose.Cells utilizando varios SDK:
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/import/data?worksheet=Sheet1&startCell=A1&insert=true" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "datafile=@/path/to/data.csv" \
+  -F "spreadsheet=@/path/to/workbook.xlsx"
+```
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ImportDataIntoSpreadsheet.cs" >}}
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ImportDataIntoSpreadsheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (codificado en Base64)",
+  "contentType": "tipo MIME",
+  "fileDownloadName": "nombre de archivo opcional"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ImportDataIntoSpreadsheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ImportDataIntoSpreadsheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ImportDataIntoSpreadsheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ImportDataIntoSpreadsheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ImportDataIntoSpreadsheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ImportDataIntoSpreadsheet.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### Utilizar SDK de Aspose.Cells Cloud
+
+Utilizar el SDK es la forma más rápida de desarrollar, ya que abstracta los detalles de bajo nivel, permitiéndole importar datos en una hoja de cálculo con un código breve. Consulte el <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">repositorio de GitHub</a> para obtener una lista completa de SDK de Aspose.Cells Cloud.

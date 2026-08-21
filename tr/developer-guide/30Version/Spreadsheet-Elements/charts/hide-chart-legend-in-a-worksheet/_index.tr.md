@@ -1,78 +1,95 @@
-﻿---
-title: Çalışma Sayfasındaki Grafik Efsanesini Gizle
+---
+title: "Excel Çalışma Sayfasında Grafik Efsanesini Gizle – Aspose.Cells Cloud API"
 type: docs
-url: /tr/charts/legend/hide/
+url: /charts/legend/hide/
 aliases: [/hide-chart-legend-in-a-worksheet/]
 weight: 110
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Çalışma Sayfasında Grafik Efsanesini Gizle
+keywords: "Aspose.Cells, Excel, grafik efsanesini gizle, REST API, Bulut SDK'sı, grafik efsanesi"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında grafik efsanesini nasıl gizleyeceğinizi öğrenin. HTTPS uç noktası, gerekli kimlik doğrulama, istek sözdizimi, yanıt ayrıntıları, hata işleme ve SDK örnekleri içerir."
 ---
-Bu REST API, grafikteki efsaneyi gizler
- 
-## RSET API
- 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
- 
+
+Bu REST API, bir grafikteki efsaneyi gizler. Bir **grafik efsanesi**, grafikte çizilen veri serilerini tanımlayan kutudur.
+
+API, geçerli bir Aspose Cloud JWT jetonu gerektirir; çalışma kitabının Aspose Cloud deposuna yüklenmiş olması gerekir ve kullanılan API sürümü **v3.0**'dır.
+
+## Güvenlik ve Kimlik Doğrulama
+Aspose.Cells Cloud API'leri güvenlidir ve [JWT jeton tabanlı kimlik doğrulama](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) gerektirir.
+
+## REST API
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabı adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| grafikIndeksi| tam sayı| yol| Grafik endeksi.|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
 
+### İstek parametreleri
 
-<br/>
+| Parametre Adı   | Tür     | Konum | Açıklama                          |
+| ---------------- | ------- | ------ | --------------------------------- |
+| **name**         | string  | path   | Çalışma kitabı adı.               |
+| **sheetName**    | string  | path   | Çalışma sayfası adı.              |
+| **chartIndex**   | integer | path   | Grafik indeksi.                   |
+| **folder**       | string  | query  | Çalışma kitabı klasörü (isteğe bağlı). |
+| **storageName**  | string  | query  | Depo adı (isteğe bağlı).          |
 
- 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartLegend) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+[OpenAPI Specifikasyonu](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartLegend), bu genel olarak erişilebilir programlama arayüzünü tanımlar.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+API'yi kolayca çağırmak için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, _Sample_Test_Book.xls_ dosyasındaki 0 numaralı grafik için efsaneyi gizleyen bir isteği göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" 
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Yanıtlar
+
+| HTTP Durumu                   | Açıklama                                             | Örnek JSON                                                     |
+| ----------------------------- | ---------------------------------------------------- | -------------------------------------------------------------- |
+| **200 OK**                    | Efsane başarıyla gizlendi.                           | `{ "Code": 200, "Status": "OK" }`                              |
+| **401 Unauthorized**          | Eksik veya geçersiz JWT jetonu.                      | `{ "Code": 401, "Message": "Invalid access token." }`          |
+| **404 Not Found**             | Çalışma kitabı, çalışma sayfası veya grafik yoktur.  | `{ "Code": 404, "Message": "Chart not found." }`               |
+| **500 Internal Server Error** | Beklenmeyen sunucu hatası.                           | `{ "Code": 500, "Message": "An unexpected error occurred." }`  |
+
+## SSS
+
+**S:** _Aspose.Cells Cloud kullanarak bir grafik efsanesini nasıl gizlerim?_  
+**C:** Geçerli bir JWT jetonunu `Authorization` başlığında taşıyıp `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend` adresine bir `DELETE` isteği gönderin. `200 OK` yanıtı başarı anlamına gelir.
+
+**S:** _Grafik Efsanesini Gizle API'si için hangi kimlik doğrulama gerekir?_  
+**C:** `Authorization: Bearer <jwt token>` başlığını ekleyin. Jetonu Aspose Cloud OAuth akışı aracılığıyla edinin.
+
+**S:** _Grafik indeksi geçersizse hangi hata yanıtı alırım?_  
+**C:** Servis, `Code: 404` içeren ve eksik grafikle ilgili bir mesaj barındıran JSON gövdesiyle `404 Not Found` döndürür.
+
+**S:** _HTTPS yerine HTTP kullanabilir miyim?_  
+**C:** Hayır. Tüm Aspose Cloud uç noktaları güvenlik nedeniyle HTTPS gerektirir.
+
 ## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
- 
+SDK kullanmak, geliştirmenin en hızlı yoludur. Bir SDK, düşük seviyeli ayrıntıları soyutlayarak projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub Deposu'na](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanarak Aspose.Cells web servislerini çağırma yöntemlerini göstermektedir:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -118,7 +135,7 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
-
+**Yakında gelecek** – Swift SDK örneği kısa sürede eklenecektir.  
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
@@ -134,3 +151,22 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Excel Çalışma Sayfasında Grafik Efsanesini Gizle – Aspose.Cells Cloud API",
+  "description": "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında grafik efsanesini gizlemenin adım adım rehberi. HTTPS uç noktası, kimlik doğrulama, istek sözdizimi, yanıt ayrıntıları, hata işleme ve SDK örnekleri içerir.",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://docs.aspose.cloud/" },
+      { "@type": "ListItem", "position": 2, "name": "Cells", "item": "https://docs.aspose.cloud/cells/" },
+      { "@type": "ListItem", "position": 3, "name": "Charts", "item": "https://docs.aspose.cloud/cells/charts/" },
+      { "@type": "ListItem", "position": 4, "name": "Grafik Efsanesini Gizle", "item": "https://docs.aspose.cloud/cells/charts/legend/hide/" }
+    ]
+  },
+  "about": "Aspose.Cells Cloud API kullanarak grafik efsanesini gizleme"
+}
+</script>

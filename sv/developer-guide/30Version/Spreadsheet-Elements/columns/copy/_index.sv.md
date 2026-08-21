@@ -1,76 +1,76 @@
-﻿---
-title: Kopiera kolumner på ett Excel-arbetsblad
-second_title: Documen
-linktitle: Polis
-type: docs
-url: /sv/columns/copy/
-aliases: [/copy-columns-in-excel-worksheet/,/copy-columns-in-an-excel-worksheet/]
-keywords: Copy column on an Excel workshee
-description: Aspose.Cells Cloud REST API stöder kopiering av kolumner på ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 30
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Kopiera kolumner till ett Excel-kalkylblad
 ---
-Denna REST API-kopiering av `columns` till ett Excel-arbetsblad.
+title: "Kopiera kolumner i ett Excel-arbetsark"
+second_title: "Dokument"
+linktitle: "Kopiera"
+type: docs
+url: /columns/copy/
+aliases:
+  [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
+keywords: "Aspose.Cells, kopiera kolumner, Excel API, REST, molntjänst, cURL, C#, Java, Python, Ruby, Node.js, Go, Perl"
+description: "Lär dig hur du kopierar en eller flera kolumner i ett Excel-arbetsark med Aspose.Cells Cloud REST API (v3.0). Inkluderar begärsyntax, nödvändiga parametrar, autentiseringsuppgifter, felhantering och SDK-exempel i C#, Java, Python, Ruby, Node.js, Go, Perl och mer."
+articleTitle: "Kopiera kolumner i ett Excel-arbetsark med Aspose.Cells Cloud API"
+weight: 30
+---
 
-## RSET API
+Denna REST API kopierar **kolumner** i ett Excel-arbetsark. **Kopiera kolumner**-åtgärden låter dig duplicera en enskild kolumn eller ett intervall av kolumner och infoga kopian på en angiven plats inom samma arbetsark. Använd denna slutpunkt för att effektivt kopiera kolumner vid arbetet med stora kalkylark, och se relaterade åtgärder som [Lägg till kolumn](/columns/add/) och [Dölj kolumn](/columns/hide/) för ytterligare kolumnhanteringsuppgifter.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy
- 
-```
+## Säkerhet och autentisering
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-Begäranparametrarna är:
-
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| källkolumnindex| heltal| fråga| Index för källkolumnen|
-| destinationKolumnIndex| heltal| fråga| Index för destinationskolumnen|
-| kolumnnummer| heltal| fråga| Det kopierade kolumnnumret|
-| arbetsblad| sträng| fråga||
-| mapp| sträng| fråga| Dokumentmappen.|
-
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
-
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+## REST API
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&ColumnNumber=10" -H "accept: application/json" 
-
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy
 ```
 
-{{< /tab >}}
+### Begärparametrar
 
-{{< tab tabNum="12" >}}
+| Parameternamn              | Typ     | Plats  | Beskrivning                                                                           |
+| -------------------------- | ------- | ------ | ------------------------------------------------------------------------------------- |
+| **name**                   | string  | path   | Namnet på arbetsboken.                                                                |
+| **sheetName**              | string  | path   | Namnet på arbetsarket.                                                                |
+| **sourceColumnIndex**      | integer | query  | 0-baserat index för kolumnen som ska kopieras.                                       |
+| **destinationColumnIndex** | integer | query  | 0-baserat index där den kopierade kolumnen/kolumnerna ska infogas.                   |
+| **columnNumber**           | integer | query  | Antalet på varandra följande kolumner som ska kopieras.                              |
+| **worksheet**              | string  | query  | _(Valfritt)_ Arbetsarkidentifikator som används när arbetsarkets namn skiljer sig från sökvägen. |
+| **folder**                 | string  | query  | Sökvägen till mappen som innehåller arbetsboken i Aspose Cloud-lagringen.            |
 
-```java
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) definierar hela kontraktet för denna åtgärd.
 
- {
+### cURL-exempel
 
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&columnNumber=10" \
+     -H "Authorization: Bearer $ASPOSE_TOKEN" \
+     -H "accept: application/json"
+```
+
+### Svar
+
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+## Felhantering
 
-{{< /tabs >}}
+API:et returnerar standard HTTP-statuskoder med ett JSON-svar som beskriver felet.
 
-## Cloud SDK-familjen
+| Statuskod | Betydelse                                          | Exempel på JSON-svar                                                |
+| --------- | -------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**   | Ogiltig begäran – ogiltiga parametrar              | `{ "Code": 400, "Message": "Invalid column index." }`               |
+| **401**   | Auktorisering misslyckades – token saknas eller är ogiltig | `{ "Code": 401, "Message": "Access token is invalid or expired." }` |
+| **404**   | Hittades inte – arbetsboken eller arbetsarket finns inte | `{ "Code": 404, "Message": "Workbook not found." }`                 |
+| **500**   | Internt serverfel – oväntat tillstånd              | `{ "Code": 500, "Message": "An unexpected error occurred." }`       |
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+> **Så här felsöker du:** Kontrollera att åtkomsttoken är giltig, att namnen på arbetsboken och arbetsarket är korrekta och att `sourceColumnIndex`, `destinationColumnIndex` och `columnNumber` ligger inom arbetsarkets kolumnintervall.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+## Molntjänstfamilj för SDK
+Att använda en SDK är det bästa sättet att snabba på utvecklingen. En SDK hanterar detaljer på lågnivå så att du kan fokusera på dina projektuppgifter. Ta en titt på [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du gör anrop till Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +123,37 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hur autentiserar jag vid anrop till Copy Columns API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Skaffa en OAuth2-åtkomsttoken från Aspose Cloud med ditt klient-ID och hemlighet, och inkludera den i begärandehuvudet som `Authorization: Bearer <access_token>`."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vad är skillnaden mellan `sourceColumnIndex` och `destinationColumnIndex`?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "`sourceColumnIndex` är det 0-baserade indexet för kolumnen du vill kopiera. `destinationColumnIndex` är det 0-baserade indexet där den kopierade kolumnen/kolumnerna ska infogas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vad får jag för svar om kopieringsåtgärden misslyckas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "API:et returnerar en statuskod som inte är 200 (t.ex. 400 för ogiltig begäran, 401 för auktoriseringsfel). Svarsbody innehåller ett JSON-objekt med fälten `Code` och `Message` som beskriver felet."
+      }
+    }
+  ]
+}
+</script>
+---

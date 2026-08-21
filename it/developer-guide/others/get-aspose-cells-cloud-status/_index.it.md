@@ -1,45 +1,73 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Ottieni Aspose Cells Stato del cloud
-second_title: Documen
-ArticleTitle: Get Aspose.Cells Cloud Run Statu
-linktitle: Ottieni Aspose Cells Stato cloud
+---
+---
+title: "Aspose.Cells Cloud Web API - Ottieni lo stato di Aspose Cells Cloud"
+second_title: "Documento"
+ArticleTitle: "Ottieni lo stato di Aspose Cells Cloud"
+linktitle: "Ottieni lo stato di Aspose Cells Cloud"
 type: docs
 url: /it/get-aspose-cells-cloud-status/
-keywords: Aspose, Cells, Cloud, API, Health Status, Excel, REST, Service Monitoring, SLA Complianc
-description: Monitora lo stato di integrità del servizio cloud Aspose.Cells in tempo reale
+keywords: "Aspose.Cells, Cloud API, Controllo integrità, Excel, REST"
+description: "Monitora in tempo reale lo stato di integrità del servizio Aspose.Cells Cloud."
 weight: 100
-kwords: Excel API, Aspose Cloud, REST API, Controllo dello stato, Servizio cloud, Latenza di risposta, Percentuali di errore, Monitoraggio SLA, Risoluzione dei problemi di integrazione
 ---
-Ottieni lo stato di integrità del servizio cloud Aspose.Cells in tempo reale.
 
-## **Ottieni lo stato del cloud Aspose.Cells Endpoint API**
+Ottieni in tempo reale lo stato di integrità del servizio Aspose.Cells Cloud.
+
+**Prerequisiti:** Per chiamare questa API è necessario ottenere un token di accesso Bearer utilizzando le credenziali del client Aspose Cloud. Includi il token nell'intestazione `Authorization` come `Bearer {access_token}`.
+
+## **Ottieni lo stato di Aspose.Cells Cloud**
+
+### **API Web**
+
+L'endpoint utilizza il metodo HTTP **GET** e non richiede un corpo della richiesta.
 
 ```
-GET http://api.aspose.cloud/v4.0/cells
+GET https://api.aspose.cloud/v4.0/cells
 ```
 
-### **Parametri di richiesta:**
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP| Descrizione|
-|:- |:- |:- |:- |
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
+
+### **Parametri della richiesta:**
+
+| Nome parametro | Tipo   | Percorso/Stringa di query/Corpo HTTP | Descrizione                                      |
+| -------------- | ------ | ------------------------------------ | ------------------------------------------------ |
+| Authorization  | String | Intestazione                         | Token Bearer per l'autenticazione (obbligatorio). |
+| format         | String | Query                                | Formato di risposta desiderato, ad esempio `json`. |
 
 ### **Risposta**
 
 ```json
 {
-String
+  "status": "OK",
+  "service": "Aspose.Cells Cloud",
+  "timestamp": "2026-07-06T12:34:56Z"
 }
 ```
 
-## Come utilizzare lo stato cloud Get Aspose.Cells API con gli SDK
+**Schema della risposta**
 
-### Specifiche OpenAPI
+| Campo     | Tipo              | Descrizione                                    |
+| --------- | ----------------- | ---------------------------------------------- |
+| status    | stringa           | Stato del servizio (`OK`, `Degraded`, ecc.).  |
+| service   | stringa           | Nome del servizio.                             |
+| timestamp | stringa (ISO‑8601) | Ora del controllo dello stato.                 |
 
- IL[Specifiche OpenAPI](https://reference.aspose.cloud/cells/#/CellsStatusController/GetAsposeCellsCloudStatus) definisce un'interfaccia di programmazione accessibile al pubblico che consente di eseguire interazioni REST direttamente da un browser web.
+L'API restituisce un payload JSON standard che include la **status** corrente dell'integrità del servizio Aspose.Cells Cloud.
 
-### Utilizzare gli SDK cloud Aspose.Cells
+**Codici di stato HTTP**
 
-Utilizzare l'SDK è il modo migliore per accelerare lo sviluppo. L'SDK gestisce i dettagli sottostanti, consentendo di implementare in modo semplice lo stato di esecuzione cloud di Get Aspose.cells per le celle con un codice minimo.
- Si prega di controllare il[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+- **200 OK** – Il servizio è integro e la risposta contiene le informazioni sullo stato.
+- **401 Unauthorized** – Token di autenticazione mancante o non valido.
+- **503 Service Unavailable** – Il servizio è attualmente disattivato per manutenzione o presenta problemi.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+## Come utilizzare l'API "Ottieni lo stato di Aspose.Cells Cloud" con gli SDK
+
+### Specifica OpenAPI
+
+La [Specifiche OpenAPI](https://reference.aspose.cloud/cells/#/CellsStatusController/GetAsposeCellsCloudStatus) definiscono un'interfaccia di programmazione accessibile pubblicamente che consente di effettuare interazioni REST direttamente da un browser web.
+
+### Utilizzare gli SDK di Aspose.Cells Cloud
+
+L'utilizzo dell'SDK semplifica l'integrazione e riduce il codice boilerplate. L'SDK gestisce i dettagli sottostanti, consentendo di recuperare facilmente lo stato di esecuzione di Aspose.Cells Cloud con il minimo sforzo. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.

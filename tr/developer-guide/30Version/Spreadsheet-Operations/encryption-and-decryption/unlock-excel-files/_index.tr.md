@@ -1,84 +1,110 @@
-﻿---
-title: Excel Dosyasının Kilidini Aç
-second_title: Documen
-linktitle: Excel Dosyasının Kilidini Aç
-type: docs
-url: /tr/unlock-excel-files/
-aliases: [/unlock/without-storage/,/unlock/,/unlock/without-using-storage/]
-keywords: Unlock Excel files
-description: Aspose.Cells Cloud REST API, Excel dosyalarının kilidini açmayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 70
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Kilidini Aç
 ---
-Bu REST API, `unlock` Excel dosyalarını gösterir.
+title: "Excel Dosyalarını Kilidini Açın"
+second_title: "Belge"
+linktitle: "Excel Dosyalarını Kilidini Açın"
+type: docs
+url: /unlock-excel-files/
+aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
+keywords: "Excel Kilidini Aç, Aspose.Cells Cloud, REST API, Excel kilidini açma, şifreli çalışma kitaplığı, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
+description: "Aspose.Cells Cloud REST API, şifre korumalı Excel dosyalarının kilidini açmak için bir uç nokta sağlar. SDK’lar, Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby ve Swift dahil olmak üzere birden fazla programlama dili için mevcuttur."
+ArticleTitle: "Aspose.Cells Cloud REST API ile Excel Dosyalarını Kilidini Açın"
+weight: 70
+---
 
-## RSET API
+Bu REST API, Excel dosyalarının kilidini açar.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/unlock
- 
+POST https://api.aspose.cloud/v3.0/cells/unlock
 ```
 
-İstek parametreleri şunlardır:
+### Güvenlik ve Kimlik Doğrulama
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| dosya| dosya| formData| Yüklenecek dosya|
-| şifre| sicim| sorgu||
+Aspose.Cells Cloud API’leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulama](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostUnlock) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı | Tür     | Konum                  | Açıklama                                       |
+|---------------|---------|------------------------|------------------------------------------------|
+| file          | dosya   | formData (HTTP gövdesi) | Yüklenecek dosya                               |
+| password      | string  | sorgu dizisi           | Dosyanın kilidini açmak için şifre (korumalıysa) |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### Yanıt
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlamı                      | Açıklama                                         |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | Tamam                       | Filtre başarıyla uygulandı; yanıt işlem detaylarını içerir. |
+| 400 | Geçersiz İstek              | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Yetkisiz                    | Geçersiz veya eksik JWT belirteci. |
+| 413 | Yük Çok Büyük               | Yüklü dosya boyut limitini aşıyor. |
+| 500 | Sunucu İç Hatası            | Beklenmeyen sunucu hatası. |
+
+## SDK’lar ile PostUnlock API’sini Nasıl Kullanılır?
+
+### PostUnlock API Belirtimi
+
+[OpenAPI Belirtimi](https://apireference.aspose.cloud/cells/#/LightCells/PostUnlock), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye nasıl istek yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
+curl -v "https://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
- 
+-F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanın
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme hızını artırmak için en iyi yoldur. Bir SDK, düşük seviye detayları yönetir ve proje görevlerinize odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub Deposu](https://github.com/aspose-cells-cloud)’nu inceleyin.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+**Notlar**  
+- API, tek bir istekte birden fazla Excel dosyasının kilidini açabilir; her dosya yanıtın `Files` dizisinde döndürülür.  
+- Uyumluluk sorunlarını önlemek için SDK sürümünüzün API sürümüyle (`v3.0`) eşleştiğinden emin olun.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak Aspose.Cells web hizmetlerine nasıl istek yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

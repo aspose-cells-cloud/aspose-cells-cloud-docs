@@ -1,85 +1,140 @@
-﻿---
-title: Diviser un fichier Excel en plusieurs fichiers
-second_title: Documen
-linktitle: Fichier Split Multi Excel
-type: docs
-url: /fr/split-an-excel-file-to-multi-files/
-aliases: [/split-excel-workbooks/,/workbook/split/]
-keywords: Split multi Excel files
-description: Aspose.Cells Cloud REST API prend en charge le fractionnement de plusieurs fichiers Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 32
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Split
 ---
-Cette API REST indique les fichiers `split` et Excel multiples.
+title: "Diviser un fichier Excel en plusieurs fichiers"
+second_title: "Document"
+linktitle: "Diviser des fichiers Excel multipages"
+type: docs
+url: /split-an-excel-file-to-multi-files/
+aliases: [/split-excel-workbooks/,/workbook/split/]
+keywords: "Aspose.Cells, Cloud, Excel, Diviser, API, PDF, CSV, JSON"
+description: "Utilisez l’API REST Aspose.Cells Cloud pour diviser des classeurs Excel multi-feuilles en fichiers séparés. Prend en charge les formats de sortie tels que PDF, CSV et JSON, et est accessible via des SDK pour Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby et Swift."
+weight: 32
+ArticleTitle: "Diviser un fichier Excel en plusieurs fichiers - Documentation Aspose.Cells Cloud"
+---
 
-## RSET API
+L’API REST Aspose.Cells Cloud permet de diviser des classeurs Excel multi-feuilles en fichiers distincts.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/split
- 
+**Prérequis**  
+Avant d’appeler l’API, vous devez obtenir un jeton JWT valide et l’inclure dans l’en-tête `Authorization` de chaque requête. Consultez le [guide d’authentification](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) pour plus de détails.
+
+## API PostSplit
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/split
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| déposer| déposer| données de formulaire| Fichier à télécharger|
-| format| chaîne| requête||
-| mot de passe| chaîne| requête||
-| depuis| entier| requête||
-| à| entier| requête||
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostSplit) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Paramètres de la requête
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom du paramètre | Type   | Emplacement | Description                                                    |
+|------------------|--------|-------------|----------------------------------------------------------------|
+| file             | file   | formData    | Le classeur Excel à télécharger.                              |
+| format           | string | query       | Format de sortie souhaité (par exemple, `pdf`, `csv`, `json`).|
+| password         | string | query       | Mot de passe pour un classeur chiffré (facultatif).           |
+| from             | integer| query       | Index de la première feuille à inclure (indexation à 1).      |
+| to               | integer| query       | Index de la dernière feuille à inclure (inclusif).            |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **Réponse**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Files": [
+        {
+            "Filename" : "[nom_fichier1]",
+            "Filesize" : [taille_fichier],
+            "FileContent" : "[Base64String]"
+        },
+        {
+            "Filename" : "[nom_fichier2]",
+            "Filesize" : [taille_fichier],
+            "FileContent" : "[Base64String]"
+        },
+        {
+            "Filename" : "[nom_fichier3]",
+            "Filesize" : [taille_fichier],
+            "FileContent" : "[Base64String]"
+        }
+    ]
+}
+```
+
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                                     |
+|------|-----------------------------|-----------------------------------------------------------------|
+| 200  | OK                          | Le filtre a été appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Demande incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant.                                 |
+| 413  | Charge utile trop grande     | Le fichier téléchargé dépasse la limite de taille.             |
+| 500  | Erreur interne du serveur    | Erreur inattendue côté serveur.                                 |
+
+## Comment utiliser l’API PostSplit avec les SDK
+
+### Spécification de l’API PostSplit
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostSplit) définit une interface de programmation publiquement accessible et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                                     |
+|------|-----------------------------|-----------------------------------------------------------------|
+| 200  | OK                          | Le classeur a été divisé avec succès ; la réponse contient la liste des fichiers. |
+| 400  | Demande incorrecte          | Paramètres manquants ou non valides (par exemple, format non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant.                                 |
+| 500  | Erreur interne du serveur    | Une erreur inattendue s’est produite côté serveur.             |
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/split?format=pdf" \
+curl -v "https://api.aspose.cloud/v3.0/cells/split?format=pdf" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
+-H "Authorization: Bearer <jeton_jwt>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+-F 'xxxxx2=@xxxx2.xlsx' \
+# Remplacez xxxxx1.xlsx et xxxxx2.xlsx par les chemins vers vos fichiers Excel
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx_sheet1.pdf",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
+```json
+{
+    "Files": [
+        {
+            "Filename": "xxxxx_feuille1.pdf",
+            "FileSize": 274022,
+            "FileContent": "-----Base64String--------"
         },
-        { 
-            "Filename":"xxxxx_sheet2.pdf",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
+        {
+            "Filename": "xxxxx_feuille2.pdf",
+            "FileSize": 274022,
+            "FileContent": "-----Base64String--------"
         }
-        ....
+        …
     ]
- 
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
+### Utiliser les SDK Aspose.Cells Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le moyen le plus efficace d’accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants illustrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

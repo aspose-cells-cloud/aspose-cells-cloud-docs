@@ -1,75 +1,83 @@
-﻿---
-title: Aggiungi un foglio di lavoro Excel
-second_title: Documen
-linktitle: A.D
+---
+title: "Aggiungi un foglio di Excel"
+ArticleTitle: "Aggiungi un foglio di Excel - Guida all'API di Aspose.Cells Cloud"
+second_title: "Documento"
+linktitle: "Aggiungi"
 type: docs
 url: /it/worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
-keywords: Add an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'aggiunta di un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/add-a-new-excel-worksheet/]
+keywords: "Aggiungi foglio Excel, Aspose.Cells Cloud, API REST, PUT worksheet, cartella di lavoro Excel, richiesta API"
+description: "Guida passo-passo per aggiungere un nuovo foglio a una cartella di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud, inclusi dettagli sulla richiesta, un esempio cURL e frammenti di codice SDK per diversi linguaggi."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Aggiungi un foglio di lavoro Excel
 ---
-Questo REST API indica `add new worksheet`.
 
-## RSET API
+Questa API REST aggiunge un nuovo foglio a una cartella di lavoro esistente.
+
+**Prerequisiti**: Per chiamare questo endpoint è necessario disporre di un token di autenticazione Aspose Cloud valido, la cartella di lavoro target deve essere caricata nell'archivio Aspose Cloud e si deve conoscere il nome dell'archivio (in caso di utilizzo di un archivio personalizzato).
+
+## API REST
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
 ```
 
-I parametri della richiesta sono:
+### **Parametri della richiesta**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome del documento.|
-| Nome foglio| corda| sentiero| Il nuovo nome del foglio.|
-| posizione| intero| domanda| La nuova posizione del foglio.|
-| tipo di foglio| corda| domanda| Il nuovo tipo di foglio.|
-| cartella| corda| domanda| Cartella documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome parametro | Tipo    | Posizione | Descrizione                                          |
+| -------------- | ------- | --------- | ---------------------------------------------------- |
+| name           | string  | path      | Nome del file della cartella di lavoro.              |
+| sheetName      | string  | path      | Nome del nuovo foglio da creare.                     |
+| position       | integer | query     | Posizione iniziale in base zero in cui inserire il foglio. |
+| sheettype      | string  | query     | Tipo del nuovo foglio (ad esempio, **Chart**, **Dialog**). |
+| folder         | string  | query     | Cartella contenente la cartella di lavoro.           |
+| storageName    | string  | query     | Nome dell'archivio Aspose Cloud.                     |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) definiscono un'interfaccia di programmazione pubblicamente accessibile e consentono di effettuare interazioni REST direttamente da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+È possibile utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare una chiamata all'API Cloud tramite cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+**Codici di stato di risposta possibili**
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+| Codice di stato | Descrizione                                          |
+|----------------|------------------------------------------------------|
+| 200            | Foglio aggiunto correttamente.                       |
+| 400            | Richiesta non valida – parametri non validi.         |
+| 401            | Non autorizzato – token di autenticazione mancante o non valido. |
+| 404            | Non trovato – la cartella di lavoro o la cartella non esiste. |
+| 500            | Errore interno del server – condizione imprevista.   |
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+## Famiglia di SDK Cloud
+
+L'utilizzo di un SDK è il modo più rapido per sviluppare. Un SDK astrae i dettagli a basso livello, consentendoti di concentrarti sul tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

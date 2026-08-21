@@ -1,71 +1,132 @@
-﻿---
-title: Actualización de varios estilos Cells
-type: docs
-url: /es/update-multiple-cells-style/
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Actualizar varios estilos Cells
 ---
-Este REST API indica el conjunto `cells style` en una celda en un archivo Excel.
+title: "Actualizar el estilo de varias celdas – Referencia de la API de Aspose.Cells Cloud (v3.0)"
+type: docs
+url: /update-multiple-cells-style/
+weight: 20
+keywords: ["Aspose.Cells", "actualizar estilo de varias celdas", "API de estilo de celdas Excel", "SDK en la nube", "API REST", "ejemplo cURL", "solicitud JSON", "autenticación JWT"]
+description: "Aprenda cómo actualizar el estilo de un rango de celdas en un libro de Excel usando la API REST de Aspose.Cells Cloud v3.0. Incluye el endpoint, el método HTTP, los parámetros, ejemplos con cURL y SDK, autenticación, manejo de errores e información de versión."
+ArticleTitle: "Actualizar el estilo de varias celdas – Referencia de la API de Aspose.Cells Cloud (v3.0)"
+---
 
-## RSET API
+## API REST
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
- 
+Esta API REST establece el **estilo** para un rango de celdas en un libro de Excel.
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
 ```
 
-Los parámetros de la solicitud son:
+## Seguridad y autenticación
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del libro de trabajo.|
-| nombreHoja| cadena| camino| Nombre de la hoja de trabajo.|
-| rango| cadena| consulta| El rango.|
-| estilo|| cuerpo| con configuración de estilo de actualización.|
-| carpeta| cadena| consulta| La carpeta del libro de trabajo.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+Las API de Aspose.Cells Cloud son seguras y requieren [autenticación basada en token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+### Parámetros de la solicitud
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Nombre del parámetro | Tipo   | Ubicación | Descripción |
+|----------------------|--------|-----------|-------------|
+| **name**             | string | path      | Nombre del libro. |
+| **sheetName**        | string | path      | Nombre de la hoja de cálculo. |
+| **range**            | string | query     | Rango de celdas (por ejemplo, `A1:A10`). |
+| **style**            | object | body      | Objeto JSON que define el estilo que se aplicará. |
+| **folder**           | string | query     | Carpeta que contiene el libro. |
+| **storageName**      | string | query     | Nombre del almacenamiento. |
+
+#### Objeto style
+El objeto JSON `style` representa el formato de celda. Puede contener cualquiera de las siguientes propiedades opcionales:
+
+- **Font** – Configuración de fuente (`Name`, `Size`, `IsBold`, `IsItalic`, `Color`, etc.).  
+- **BackgroundColor** – Color de fondo en formato ARGB.  
+- **ForegroundColor** – Color de primer plano en formato ARGB.  
+- **Name**, **CultureCustom**, **Custom** – Metadatos adicionales del estilo.
+
+## **Respuesta**
+
+Devuelve un `CellCloudResponse`.
+
+- **Descripción general de los campos de respuesta**
+
+| Campo             | Tipo    | Descripción                                           |
+| ----------------- | ------- | ----------------------------------------------------- |
+| `Status`          | string  |                                                       |
+| `Code`            | integer | 200, 400, 401, 500, ...                               |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                          |
+|--------|-----------------------------|------------------------------------------------------|
+| 200    | OK                          | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros faltantes o inválidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT inválido o faltante. |
+| 413    | Carga útil demasiado grande | El archivo cargado supera el límite de tamaño. |
+| 500    | Error interno del servidor  | Error inesperado en el servidor. |
+
+## Cómo usar la API PostUpdateWorksheetRangeStyle con SDK
+
+### Especificación de la API PostUpdateWorksheetRangeStyle
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle) proporciona el esquema completo.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/style?range=a1%3Aa10" \
--X POST \
- -d "{ \"Font\": { \"Color\": { \"A\":255, \"R\": 255, \"G\": 255, \"B\": 0 }, \"DoubleSize\": 10, \"IsBold\": true, \"IsItalic\": true, \"IsStrikeout\": true, \"IsSubscript\": true, \"IsSuperscript\": true, \"Name\": \"Arial\", \"Size\": 22 }, \"Name\": \"string\", \"CultureCustom\": \"string\", \"Custom\": \"string\", \"BackgroundColor\": { \"A\": 10, \"R\": 10, \"G\": 10, \"B\": 10 }, \"ForegroundColor\": { \"A\": 255, \"R\": 255, \"G\": 255, \"B\": 0 } \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+cURL -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/style?range=a1%3Aa10" \
+  -X POST \
+  -d '{
+        "Font": {
+          "Color": { "A":255, "R":255, "G":255, "B":0 },
+          "Size": 22,
+          "IsBold": true,
+          "IsItalic": true,
+          "IsStrikeout": true,
+          "IsSubscript": true,
+          "IsSuperscript": true,
+          "Name": "Arial"
+        },
+        "Name": "string",
+        "CultureCustom": "string",
+        "Custom": "string",
+        "BackgroundColor": { "A":10, "R":10, "G":10, "B":10 },
+        "ForegroundColor": { "A":255, "R":255, "G":255, "B":0 }
+      }' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+### Uso de los SDK de Aspose.Cells Cloud
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Usar un SDK es la mejor forma de acelerar el desarrollo. Un SDK maneja los detalles de bajo nivel, lo que le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells usando diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -118,3 +179,4 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

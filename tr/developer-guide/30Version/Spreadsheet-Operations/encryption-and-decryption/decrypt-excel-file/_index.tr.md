@@ -1,83 +1,138 @@
-﻿---
-title: Excel çalışma dosyasının şifresini çözün
-second_title: Documen
-linktitle: Excel dosyasının şifresini çöz
-type: docs
-url: /tr/excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/,/workbook/decrypt/]
-keywords: REST API, spreadsheets, excel, decryp
-description: "Cells. Excel için API bulutunu çalıştırın: Excel çalışma kitabını şifresini çözün"
-weight: 50
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma kitabının şifresini çözme
 ---
-Bu REST API, Excel `workbook`'i şifreler.
+title: "Bir Excel Çalışma Kitabını Şifresini Çözme"
+second_title: "Belge"
+linktitle: "Bir Excel dosyasının şifresini çözme"
+type: docs
+url: /excel-file-decrypt/
+aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+keywords: "Aspose.Cells, Excel şifre çözme, REST API, bulut SDK"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabının şifresini nasıl çözeceğinizi öğrenin. Gerekli parametreleri, cURL örneğini, SDK kod örneklerini ve hata işleme ayrıntılarını içerir."
+ArticleTitle: "Aspose.Cells Cloud API Kullanarak Bir Excel Çalışma Kitabının Şifresini Nasıl Çözersiniz?"
+weight: 50
+---
 
-**Sorgu Parametresi**
+**Ön Gereksinimler**
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|dosya|sicim|Orijinal çalışma kitabı klasörü.|
-|depolamaAdı|sicim|Depolama adı.|
+- Geçerli bir JWT erişim belirteci.
+- Çalışma kitabının Aspose Cloud deposuna yüklenmiş olması ve yolu `folder` sorgu parametresinde belirtilmiş olması gerekir.
 
-**İstek Gövde Parametresi**
+## DeleteDecryptWorkbook API
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|şifreleme|Çalışma KitabıŞifrelemeİsteği||
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/encryption
+```
 
-**Çalışma KitabıŞifrelemeİsteği**
+### **Güvenlik ve Kimlik Doğrulama**
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|Şifreleme Türü|sicim|XOR/Uyumlu/GelişmişKriptografikSağlayıcıV1/GüçlüKriptografikSağlayıcı|
-|Anahtar Uzunluğu|tam sayı||
-|Şifre|sicim||
+Aspose.Cells Cloud API’leri güvendedir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-## DİNLENME API
+### Sorgu Parametreleri
 
-|**API**|**Tip**|**Tanım**|**Swagger Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/{isim}/şifreleme|SİL|Bir belgeyi şifresini çözmek|[DeleteDecryptWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook)|
+| Parametre Adı | Tür   | Açıklama                                     |
+| -------------- | ------ | ----------------------------------------------- |
+| folder         | string | Orijinal çalışma kitabının bulunduğu klasör yolu.           |
+| storageName    | string | Çalışma kitabının bulunduğu depo adı. |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Gövdesi Parametresi
 
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı | Tür                      | Açıklama                                  |
+| -------------- | ------------------------- | -------------------------------------------- |
+| encryption     | WorkbookEncryptionRequest | Şifre çözme için gereken şifreleme ayarları. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### WorkbookEncryptionRequest
+
+| Parametre Adı | Tür    | Açıklama                                                                                                   |
+| -------------- | ------- | ------------------------------------------------------------------------------------------------------------- |
+| EncryptionType | string  | Şifreleme algoritması (`XOR`, `Compatible`, `EnhancedCryptographicProviderV1`, `StrongCryptographicProvider`). |
+| KeyLength      | integer | Şifreleme anahtarının bit cinsinden uzunluğu.                                                                         |
+| Password       | string  | Şifre çözme için kullanılan şifre.                                                                                 |
+
+### Yanıt
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Örnek Hata Yanıtları**
+
+```json
+{
+  "Code": "400",
+  "Message": "Geçersiz istek parametreleri."
+}
+```
+
+```json
+{
+  "Code": "401",
+  "Message": "Kimlik doğrulama başarısız. Geçersiz veya eksik JWT belirteci."
+}
+```
+
+```json
+{
+  "Code": "413",
+  "Message": "Yük çok büyük. Yüklenen dosya izin verilen boyutu aşıyor."
+}
+```
+
+```json
+{
+  "Code": "500",
+  "Message": "İç sunucu hatası. Lütfen daha sonra tekrar deneyin."
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | Tamam (OK)                          | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400  | Geçersiz İstek (Bad Request)                 | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401  | Yetkisiz (Unauthorized)                | Geçersiz veya eksik JWT belirteci. |
+| 413  | Yük Çok Büyük (Payload Too Large)           | Yüklenen dosya boyut sınırını aşıyor. |
+| 500  | İç Sunucu Hatası (Internal Server Error)       | Beklenmeyen sunucu hatası. |
+## DeleteDecryptWorkbook API’sini SDK’larla Nasıl Kullanırız?
+
+### DeleteDecryptWorkbook API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize izin verir.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için **cURL** kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’sini nasıl çağıracağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "accept: application/json" -H "Content-Type: application/json" -H "x-aspose-client: Containerize.Swagger" -d "{ \"EncryptionType\": \"XOR\", \"KeyLength\": 1280, \"Password\": \"aspose\"}"
-
+```bash
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -d '{ "EncryptionType": "XOR", "KeyLength": 1280, "Password": "aspose"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
-  "Code":"200",
-
-  "Status":"OK"
-
+  "Code": "200",
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
-{{< /tabs >}}
+### Aspose.Cells Cloud SDK’larını Kullanma
 
-## Bulut SDK Ailesi
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoludur. Bir SDK düşük seviye ayrıntıları yöneterek size proje görevlerine odaklanma imkanı sunar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
-
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

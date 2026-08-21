@@ -1,97 +1,120 @@
-﻿---
-title: Hämta första mobilen från Excel-arbetsbladet
+---
+title: "Hämta första cellen (A1) från ett Excel-arbetsblad"
 type: docs
 url: /sv/get-first-cell-from-excel-worksheet/
 weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta första cellen från Excel Arbetsblad
+keywords: "Aspose.Cells Cloud, Excel, REST API, Hämta första cellen, Arbetsblad, A1, API v3"
+description: "Lär dig hur du hämtar den första cellen (A1) i ett Excel-arbetsblad med Aspose.Cells Cloud REST API v3.0. Innehåller cURL-förfrågan, JSON-svar, felexempel och SDK-exempel för C#, Java, PHP, Python och mer."
+ArticleTitle: "Hämta första cellen (A1) från ett Excel-arbetsblad med Aspose.Cells Cloud API"
 ---
-Denna REST API indikerar att en `firstcell` hämtas i en Excel-fil när parametern `cellOrMethodName` är `firstcell`.
 
-- **cURL Exempel**
+Denna REST API visar hur du hämtar **den första cellen** i en Excel-fil när parametern `cellOrMethodName` är inställd på `firstcell`.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Slutpunkt**  
+`GET https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{worksheet}/cells/firstcell`
+
+- **cURL-exempel**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Förfrågan" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```shell
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+**Parametrar**
+
+| Parameter          | Typ    | Beskrivning                                                | Obligatoriskt |
+|--------------------|--------|------------------------------------------------------------|---------------|
+| `cellOrMethodName` | sträng | Måste vara inställd på `firstcell` för att hämta första cellen. | Ja            |
+| `fileName`         | sträng | Namn på arbetsboksfilen (t.ex. `myWorkbook.xlsx`).          | Ja            |
+| `worksheet`        | sträng | Namn på arbetsbladet (t.ex. `Sheet1`).                    | Ja            |
+| `Authorization`    | header | Bearer-token för autentisering.                            | Ja            |
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "A1",
-
     "Row": 0,
-
     "Column": 0,
-
-    "Value": "Category",
-
+    "Value": "Kategori",
     "Type": "IsString",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
-    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Category</Font>",
-
+    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Kategori</Font>",
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
+
+**Felresponser**
+
+- **401 Oauktoriserad**
+
+```json
+{
+  "Code": "401",
+  "Message": "Ogiltig åtkomsttoken."
+}
+```
+
+- **404 Hittades inte**
+
+```json
+{
+  "Code": "404",
+  "Message": "Den angivna arbetsboken, arbetsbladet eller cellen finns inte."
+}
+```
+
+- **500 Internt serverfel**
+
+```json
+{
+  "Code": "500",
+  "Message": "Ett oväntat fel uppstod på servern."
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                                |
+|-----|-----------------------------|------------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller detaljer om åtgärden. |
+| 400 | Felaktig förfrågan          | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Oauktoriserad               | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK-familjen**
+- **Moln-SDK-familj**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå så att du kan fokusera på dina projektuppgifter. Ta en titt på [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
-
-- **Cloud SDK-familjen**
-
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
-
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -144,3 +167,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

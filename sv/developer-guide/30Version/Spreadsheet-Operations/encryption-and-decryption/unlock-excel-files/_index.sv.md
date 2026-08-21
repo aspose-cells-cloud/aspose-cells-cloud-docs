@@ -1,84 +1,110 @@
-﻿---
-title: Lås upp filen Excel
-second_title: Documen
-linktitle: Lås upp filen Excel
-type: docs
-url: /sv/unlock-excel-files/
-aliases: [/unlock/without-storage/,/unlock/,/unlock/without-using-storage/]
-keywords: Unlock Excel files
-description: Aspose.Cells Cloud REST API stöder upplåsning av Excel-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 70
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lås upp
 ---
-Denna REST API indikerar `unlock` Excel filer.
+title: "Lås upp Excel-filer"
+second_title: "Dokument"
+linktitle: "Lås upp Excel-filer"
+type: docs
+url: /unlock-excel-files/
+aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
+keywords: "Lås upp Excel, Aspose.Cells Cloud, REST API, Upplåsning av Excel-filer, lösenordsskyddad arbetsbok, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
+description: "Aspose.Cells Cloud REST API tillhandahåller ett slutpunkt för att låsa upp lösenordsskyddade Excel-filer. SDK:er är tillgängliga för flera programmeringsspråk, inklusive Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby och Swift."
+ArticleTitle: "Lås upp Excel-filer med Aspose.Cells Cloud REST API"
+weight: 70
+---
 
-## RSET API
+Denna REST API låser upp Excel-filer.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/unlock
- 
+POST https://api.aspose.cloud/v3.0/cells/unlock
 ```
 
-Begäranparametrarna är:
+### Säkerhet och autentisering
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| fil| fil| formulärData| Fil att ladda upp|
-| lösenord| sträng| fråga||
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostUnlock) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begärandeparametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameternamn | Typ   | Plats                 | Beskrivning                                   |
+| ------------- | ----- | --------------------- | --------------------------------------------- |
+| file          | fil   | formData (HTTP-body)  | Fil att ladda upp                             |
+| password      | sträng | Frågesträng          | Lösenord för att låsa upp filen (om skyddad) |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### Svar
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                             |
+|-----|-----------------------------|---------------------------------------------------------|
+| 200 | OK                          | Filter applicerades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Obehörig                    | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
+
+## Hur man använder PostUnlock API med SDK:er
+
+### PostUnlock API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/LightCells/PostUnlock) definierar ett offentligt tillgängligt programmeringsgränssnitt och möjliggör REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för kommandoraden för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
+curl -v "https://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
- 
+-F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Kontrollera [GitHub-repositoriet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+**Anteckningar**  
+- API:et kan låsa upp flera Excel-filer i en enda begäran; varje fil returneras i `Files`-arrayen i svaret.  
+- Se till att din SDK-version matchar API-versionen (`v3.0`) för att undvika kompatibilitetsproblem.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

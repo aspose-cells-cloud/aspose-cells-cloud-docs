@@ -1,75 +1,105 @@
-﻿---
-title: Ändern Sie die Breite der Spalten innerhalb des Bereichs
-second_title: Documen
-linktitle: Spaltenbreite
-type: docs
-url: /de/ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
-keywords: Set column width for range on an Excel workshee
-description: Aspose.Cells Cloud REST API unterstützt das Festlegen der Spaltenbreite für Bereiche in einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 74
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Spaltenbreiten innerhalb des Bereichs ändern
 ---
-Dieser REST API gibt an, Spaltenbreite des Bereichs festzulegen
+title: "Spaltenbreiten innerhalb eines Bereichs ändern"
+ArticleTitle: "Spaltenbreiten innerhalb eines Bereichs ändern – Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Spaltenbreite"
+type: docs
+url: /ranges/update/column-width/
+aliases: [/change-widths-of-columns-inside-the-range/]
+keywords: "Aspose.Cells, Spaltenbreite, REST API, Excel, SDK, Bereich, Cloud"
+description: "Erfahren Sie, wie Sie Spaltenbreiten innerhalb eines Bereichs mithilfe der Aspose.Cells Cloud REST API oder SDKs (C#, Java, Python usw.) ändern. Enthält cURL-Beispiele, Anforderungs-/Antwortdetails und Authentifizierungsschritte."
+weight: 74
+---
 
-## RSET API
+Dieser REST-Dienst legt die Spaltenbreite eines Bereichs fest.
+
+## Sicherheit und Authentifizierung  
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine [JWT-Token-basierte Authentifizierung](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth
- 
 ```
 
-Die Anforderungsparameter sind:
+**Voraussetzungen** – Vor dem Aufruf des Endpunkts müssen Sie Folgendes tun:
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg||
-| Blattname| Schnur| Weg||
-| Wert| Nummer| Abfrage||
-| Reichweite|| Körper||
-| Ordner| Schnur| Abfrage||
-| Speichername| Schnur| Abfrage| Speichername.|
+1. Einen Aspose Cloud-Account erstellen und eine *Client-ID* sowie einen *Client-Secret* erhalten.  
+2. Ein JWT-Token durch Aufruf des OAuth-Endpunkts (`/connect/token`) anfordern. Das Token wird im Feld `access_token` zurückgegeben.  
+3. Die Zielarbeitsmappe in Ihren Aspose Cloud-Speicher hochladen (oder sicherstellen, dass sie bereits im angegebenen Ordner vorhanden ist).  
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeColumnWidth) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+Die Anforderungsparameter lauten:
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+| Parametername | Typ    | Ort     | Beschreibung |
+|---------------|--------|---------|--------------|
+| name          | string | path    | Name der Arbeitsmappendatei |
+| sheetName     | string | path    | Name des Arbeitsblatts |
+| value         | number | query   | Gewünschter Spaltenbreitenwert |
+| range         | object | body    | Bereichsobjekt, das die Zielzellen definiert |
+| folder        | string | query   | Ordnerpfad, in dem die Arbeitsmappe gespeichert ist |
+| storageName   | string | query   | Name des Speicherdiensts |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeColumnWidth) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
+
+Sie können das cURL-Befehlszeilentool verwenden, um Aspose.Cells-Webdienste problemlos aufzurufen. Das folgende Beispiel zeigt, wie Aufrufe an die Cloud-API mit cURL durchgeführt werden.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
+<h3 id="request">Anforderung</h3>
+
 ```bash
- 
+# Aufruf des Spaltenbreiten-Endpunkts für die Arbeitsmappe *test.xlsx*,
+# Arbeitsblatt *Sheet1*, Festlegen der Breite der ausgewählten Spalten auf 20 Punkte.
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/columnWidth?value=20" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}" 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "ColumnCount": 7,
+        "ColumnWidth": 19,
+        "FirstColumn": 0,
+        "FirstRow": 9,
+        "Name": "string",
+        "RefersTo": "string",
+        "RowCount": 1,
+        "RowHeight": 15,
+        "Worksheet": "Sheet1"
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+<h3 id="response">Antwort</h3>
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+*Mögliche Fehlerantworten*  
+
+| HTTP-Code | Beschreibung                              |
+|-----------|-------------------------------------------|
+| 400       | Bad Request – ungültiges JSON oder Parameter |
+| 401       | Unauthorized – fehlendes oder ungültiges Token |
+| 404       | Not Found – Arbeitsmappe oder Arbeitsblatt nicht vorhanden |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-Familie
+## Cloud SDK-Familie  
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK übernimmt die Low-Level-Details, sodass Sie sich auf Ihre Projekt Aufgaben konzentrieren können. Besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -122,3 +152,25 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## FAQ
+
+**Q:** *Welcher Endpunkt muss aufgerufen werden, um die Spaltenbreite eines Bereichs in einer Excel-Arbeitsmappe festzulegen?*  
+**A:** `POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth`, wobei `{name}` der Name der Arbeitsmappendatei und `{sheetName}` das Zielarbeitsblatt ist.
+
+**Q:** *Wie wird die Anforderung bei Verwendung der Spaltenbreiten-API authentifiziert?*  
+**A:** Fügen Sie den Header `Authorization: Bearer <jwt token>` hinzu. Holen Sie sich das JWT-Token über den Aspose Cloud OAuth-Flow (`/connect/token`) unter Verwendung Ihrer Client-ID und Client-Secret.
+
+**Q:** *Welcher JSON-Body muss gesendet werden, um die Breite der Spalten A–C auf 25 Punkte zu ändern?*  
+**A:**  
+
+```json
+{
+  "FirstColumn": 0,
+  "ColumnCount": 3,
+  "FirstRow": 0,
+  "RowCount": 1
+}
+```
+
+Fügen Sie dem Anforderungs-URL den Abfrageparameter `value=25` hinzu.

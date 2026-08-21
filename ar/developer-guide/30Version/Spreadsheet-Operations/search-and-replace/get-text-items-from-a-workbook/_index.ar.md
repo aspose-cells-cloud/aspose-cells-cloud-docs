@@ -1,52 +1,96 @@
-﻿---
-title: الحصول على عناصر نصية من كتاب العمل Excel
-second_title: Documen
-linktitle: احصل على كتاب العمل
-type: docs
-url: /ar/workbook/get-text-items/
+---
+title: "استرجاع عناصر نصية من ملف عمل Excel"
+ArticleTitle: "استرجاع عناصر نصية من ملف عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud"
+second_title: "مستند"
+linktype: "docs"
+url: /workbook/get-text-items/
 aliases: [/get-text-items-from-a-workbook/]
 weight: 10
-keywords: Get text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
-description: يدعم Cloud REST Aspose.Cells الحصول على نص من ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على عناصر نصية من مصنف Excel
+keywords: "Excel، Aspose.Cells Cloud، واجهة برمجة تطبيقات REST، جدول بيانات، استرجاع عناصر نصية، ملف عمل"
+description: "استرجاع عناصر نصية من ملف عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. متاح عبر حزم تطوير برمجيات (SDKs) لـ C#، Java، Python، PHP، Ruby، Go، Node.js، Perl، و Swift."
 ---
-يشير هذا REST API إلى المصنف `read` رقم `text items` في المصنف Excel.
 
-## RSET API
+
+## واجهة برمجة تطبيقات REST
+
+تقوم هذه واجهة برمجة تطبيقات REST بقراءة **عناصر النص** في ملف Excel.
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/textItems
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/textItems
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookTextItems) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### معاملات الطلب
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| اسم المعامل | النوع | الموقع | الوصف |
+| ------------ | ------ | -------- | ------------------------------------------------------ |
+| name | string | path | اسم ملف ملف العمل. |
+| folder | string | query | مسار المجلد في التخزين حيث يقع ملف العمل. |
+| storageName | string | query | اسم خدمة التخزين. |
+
+### **الاستجابة**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى | الوصف |
+|------|-----------------------------|--------------------------------------------------|
+| 200 | ناجح | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | طلب غير صالح | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401 | غير مصدق | رمز JWT غير صالح أو مفقود. |
+| 413 | حجم الحمولة كبير جدًا | تجاوز حجم الملف المرفوع الحد المسموح به. |
+| 500 | خطأ داخلي في الخادم | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام واجهة برمجة تطبيقات GetWorkbookTextItems مع حزم تطوير البرمجيات (SDKs)
+
+### مواصفات واجهة برمجة تطبيقات GetWorkbookTextItems
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookTextItems) واجهة برمجة تطبيقات قابلة للوصول بشكل عام وتسمح لك بإجراء تفاعلات REST مباشرة من خلال متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب الخاصة بـ Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إجراء استدعاء لواجهة برمجة تطبيقات السحابة باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/textItems" -H "accept: application/json"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
+```json
 {
   "Status": "string",
   "TextItems": {
@@ -69,18 +113,27 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/textItems" -H "accept
     ]
   }
 }
-       
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+رموز الحالة الشائعة للاستجابة:
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| الرمز | الوصف |
+|------|---------------------------------------------|
+| 200 | نجح الطلب؛ يتم إرجاع عناصر النص. |
+| 401 | غير مصدق – رمز مفقود أو غير صالح. |
+| 403 | ممنوع – صلاحيات غير كافية. |
+| 404 | غير موجود – ملف العمل أو المورد غير موجود. |
+| 500 | خطأ داخلي في الخادم – فشل غير متوقع. |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+### استخدام حزم تطوير البرمجيات الخاصة بـ Aspose.Cells Cloud
+
+يستخدم هذا المثال إصدار واجهة برمجة التطبيقات **v3.0**؛ راجع سجل التغييرات للحصول على الإصدارات الأحدث. استخدام حزمة تطوير البرمجيات (SDK) هو أفضل طريقة لتسريع عملية التطوير، حيث تتعامل الحزمة مع التفاصيل منخفضة المستوى وتركّز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم تطوير البرمجيات الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الكود التالية كيفية استدعاء خدمات الويب الخاصة بـ Aspose.Cells باستخدام حزم تطوير برمجيات مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

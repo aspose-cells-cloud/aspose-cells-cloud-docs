@@ -1,50 +1,82 @@
-﻿---
-title: Entwicklerhandbuch 3.
-second_title: Documen
+---
+title: "Aspose.Cells Cloud 3.0 Entwicklerhandbuch"
+ArticleTitle: "Aspose.Cells Cloud 3.0 REST API Entwicklerhandbuch – Erstellung, Konvertierung und Gestaltung von Excel-Arbeitsmappen"
+second_title: "Dokument"
 type: docs
 url: /de/developer-guide-3.0/
-aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
-keywords: How to use Aspose.Cells Cloud REST APIs. Office Excel 2013,  Office Excel 2016,  Office Excel 2019,office Excel 365
-description: Dieses Entwicklerhandbuch beschreibt praktische Szenarien und Tipps, die Ihnen helfen, bestimmte Aspose.Cells for .NET Funktionen zu verwenden, ein bestimmtes Excel Dokument-Erscheinungsbild zu erreichen oder einen Anwendungsfall zu ermöglichen
+aliases: [/de/developer-guide/v3.0/,/de/developer-guide-v3.0/]
+keywords: "Aspose.Cells Cloud, Excel REST API, Konvertierung von Arbeitsmappen, Chart API, Datenimport, Export, PDF, CSV, JSON, Entwicklerhandbuch"
+description: "Erfahren Sie, wie Sie die REST APIs von Aspose.Cells Cloud 3.0 für die Erstellung, Konvertierung, Gestaltung, Diagrammerstellung, Tabellenbearbeitung und mehr von Excel-Arbeitsmappen verwenden. Enthält Codebeispiele und Best-Practice-Tipps."
 weight: 150
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Entwicklerhandbuch
 ---
+
 ## Arbeiten mit Aspose.Cells Cloud REST APIs
 
-{{< tabs tabTotal="8" tabID="1" tabName1="File" tabName2="Home" tabName3="Insert" tabName4="Page Layout" tabName5="Formulas" tabName6="Data" tabName7="Review" tabName8="View" >}}
+Das **Aspose.Cells Cloud 3.0 Entwicklerhandbuch** bietet eine prägnante, durchsuchbare Übersicht über die am häufigsten verwendeten REST API-Vorgänge für Excel-Arbeitsmappen und -Arbeitsblätter. Es richtet sich an Entwickler, die Excel-Dateien programmgesteuert erstellen, ändern, konvertieren und bearbeiten müssen. Nutzen Sie die nachfolgenden Abschnitte, um den gewünschten Vorgang zu finden; jeder Link führt zu einer detaillierten Seite mit Anforderungssyntax, Parametern und Beispielen. Diese Hub-Seite bündelt die Referenz zur **Aspose.Cells Cloud REST API**, sodass workbookbezogene Endpunkte, Diagrammfunktionen sowie Import- und Exportfunktionen leichter gefunden werden können.
+
+**Voraussetzungen:** Bevor Sie die APIs nutzen, stellen Sie sicher, dass Sie über ein gültiges Aspose Cloud-Konto, einen API-Schlüssel und ein geheimes Schlüsselwort sowie die entsprechenden SDKs für Ihre Entwicklungsumgebung verfügen.
+
+### Inhaltsverzeichnis
+- [Dateivorgänge](#dateivorgänge)
+- [Startseite (Zellformatierung & Zeilen-/Spaltenverwaltung)](#startseite-zellformatierung--zeilen--spaltenverwaltung)
+- [Einfügen (Diagramme, Tabellen & OLE-Objekte)](#einfügen-diagramme-tabellen--ole-objekte)
+- [Seitenlayout (Seitenumbrüche & Einrichtung)](#seitenlayout-seitenumbrüche--einrichtung)
+- [Formeln (Berechnung & Namen)](#formeln-berechnung--namen)
+- [Daten (Gliederung, Filter & Import)](#daten-gliederung-filter--import)
+- [Überprüfen (Kommentare & Schutz)](#überprüfen-kommentare--schutz)
+- [Ansicht (Fenster- & Zoomsteuerung)](#ansicht-fenster--zoomsteuerung)
+
+### Kurze API-Übersicht
+
+| API-Gruppe | Beispielendpunkt | Hauptaktion |
+|-----------|----------------|----------------|
+| **Arbeitsmappe erstellen** | `POST /cells/workbook` | Erstellt eine neue leere Excel-Arbeitsmappe |
+| **Arbeitsmappe konvertieren** | `PUT /cells/workbook/convert` | Konvertiert eine Excel-Datei in PDF, CSV, JSON usw. |
+| **Diagramm hinzufügen** | `POST /cells/worksheets/{sheetName}/charts` | Fügt ein neues Diagramm in ein Arbeitsblatt ein |
+| **Tabellen verwalten** | `PUT /cells/worksheets/{sheetName}/tables/{tableName}` | Aktualisiert oder löscht ein Listenobjekt (Tabelle) |
+| **Daten importieren** | `POST /cells/worksheets/{sheetName}/import` | Importiert CSV, JSON, Bilder oder Arrays in ein Arbeitsblatt |
+| **Formeln berechnen** | `POST /cells/workbook/calculate` | Berechnet alle Formeln in einer Arbeitsmappe neu |
+| **Filter anwenden** | `POST /cells/worksheets/{sheetName}/filters` | Fügt Filterkriterien hinzu oder entfernt sie |
+| **Arbeitsmappe schützen** | `POST /cells/workbook/protect` | Wendet Passwortschutz auf eine Arbeitsmappe an |
+
+Diese häufig genutzten Vorgänge decken die Kernfunktionalität der **Aspose.Cells Cloud Excel REST API** ab und verlinken direkt auf detaillierte Dokumentationsseiten.
+
+Sie können eine PDF-Version der obigen Kurzübersicht für Offline-Nutzung herunterladen.
+
+{{< tabs tabTotal="8" tabID="1" tabName1="Datei" tabName2="Startseite" tabName3="Einfügen" tabName4="Seitenlayout" tabName5="Formeln" tabName6="Daten" tabName7="Überprüfen" tabName8="Ansicht" >}}
 {{< tab tabNum="1" >}}
 <div class="row">
     <div class="col-md-6">
-        <p>Arbeitsmappe neu, konvertieren, speichern unter</p>
+        <p>Arbeitsmappe: Neu, Konvertieren, Speichern unter</p>
         <ul>
-            <li><a href="/cells/de/create-an-empty-excel-workbook/">Erstellt eine leere Excel-Arbeitsmappe.</a></li>
-            <li><a href="/cells/de/create-excel-workbook-from-a-template-file/">Erstellt die Arbeitsmappe Excel aus einer Vorlagendatei.</a></li>
-            <li><a href="/cells/de/create-excel-workbook-from-a-smartmarker-template/">Erstellt die Arbeitsmappe Excel aus einer Smartmarker-Vorlage.</a></li>
-            <li><a href="/cells/de/convert/">Konvertiert die Arbeitsmappe Excel in verschiedene Dateiformate.</a></li>
-            <li><a href="/cells/de/saveas-other-formats/">Speichern Sie die Arbeitsmappe Excel in verschiedenen Dateiformaten.</a></li>
+            <li><a href="/de/cells/create-an-empty-excel-workbook/" title="Erstellt eine leere Excel-Arbeitsmappe per API" rel="noopener">Erstellen einer leeren Excel-Arbeitsmappe.</a></li>
+            <li><a href="/de/cells/create-excel-workbook-from-a-template-file/" title="Erstellt eine Arbeitsmappe aus einer Vorlagendatei" rel="noopener">Erstellen einer Excel-Arbeitsmappe aus einer Vorlagendatei.</a></li>
+            <li><a href="/de/cells/create-excel-workbook-from-a-smartmarker-template/" title="Erstellt eine Arbeitsmappe aus einer SmartMarker-Vorlage" rel="noopener">Erstellen einer Excel-Arbeitsmappe aus einer SmartMarker-Vorlage.</a></li>
+            <li><a href="/de/cells/convert/" title="Konvertiert eine Excel-Arbeitsmappe in ein anderes Format" rel="noopener">Konvertieren einer Excel-Arbeitsmappe in verschiedene Dateiformate.</a></li>
+            <li><a href="/de/cells/saveas-other-formats/" title="Speichert eine Excel-Arbeitsmappe in einem anderen Format" rel="noopener">Speichern einer Excel-Arbeitsmappe in verschiedenen Dateiformaten.</a></li>
         </ul>
         <p>Suchen, Ersetzen</p>
         <ul>
-            <li><a href="/cells/de/search/">Suchen Sie nach Textformulardateien Excel.</a></li>
-            <li><a href="/cells/de/replace/">Ersetzen Sie in den Dateien Excel den alten Wert durch den neuen Wert.</a></li>
+            <li><a href="/de/cells/search/" title="Sucht nach Text in Excel-Dateien" rel="noopener">Suchen von Text in Excel-Dateien.</a></li>
+            <li><a href="/de/cells/replace/" title="Ersetzt Werte in Excel-Dateien" rel="noopener">Ersetzen alter Werte durch neue Werte in Excel-Dateien.</a></li>
         </ul>
-        <p>Kompresse</p>
+        <p>Komprimieren</p>
         <ul>
-            <li><a href="/cells/de/compress/">Komprimieren Sie Excel-Dateien.</a></li>
+            <li><a href="/de/cells/compress/" title="Komprimiert Excel-Dateien" rel="noopener">Komprimieren von Excel-Dateien.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
-        <p>Arbeitsmappe zusammenführen, teilen</p>
+        <p>Arbeitsmappe: Zusammenführen, Teilen</p>
         <ul>
-            <li><a href="/cells/de/merge/">Führt Excel Arbeitsmappen zusammen.</a></li>
-            <li><a href="/cells/de/split/">Splits Excel Arbeitsmappen.</a></li>
+            <li><a href="/de/cells/merge/" title="Fügt mehrere Excel-Arbeitsmappen zusammen" rel="noopener">Zusammenführen von Excel-Arbeitsmappen.</a></li>
+            <li><a href="/de/cells/split/" title="Teilt eine Excel-Arbeitsmappe in einzelne Dateien" rel="noopener">Teilen von Excel-Arbeitsmappen.</a></li>
         </ul>
-        <p>Wasserzeichen</p>
+        <p=Wasserzeichen</p>
         <ul>
-            <li><a href="/cells/de/add-background-in-workbook/">Fügt der Arbeitsmappe einen Hintergrund hinzu.</a></li>
-            <li><a href="/cells/de/delete-background-in-workbook/">Löscht den Hintergrund in der Arbeitsmappe.</a></li>
-            <li><a href="/cells/de/set-background-or-watermark-for-excel-worksheet/">Legt den Hintergrund oder das Wasserzeichen auf dem Arbeitsblatt Excel fest.</a></li>
-            <li><a href="/cells/de/delete-background-or-watermark-of-excel-worksheet/">Löscht den Hintergrund oder das Wasserzeichen auf dem Arbeitsblatt Excel.</a></li>
+            <li><a href="/de/cells/add-background-in-workbook/" title="Fügt ein Hintergrundbild zu einer Arbeitsmappe hinzu" rel="noopener">Hinzufügen eines Hintergrundbilds zu einer Arbeitsmappe.</a></li>
+            <li><a href="/de/cells/delete-background-in-workbook/" title="Löscht ein Hintergrundbild einer Arbeitsmappe" rel="noopener">Löschen eines Hintergrundbilds aus einer Arbeitsmappe.</a></li>
+            <li><a href="/de/cells/set-background-or-watermark-for-excel-worksheet/" title="Setzt ein Hintergrundbild oder Wasserzeichen auf ein Arbeitsblatt" rel="noopener">Setzen eines Hintergrundbilds oder Wasserzeichens auf ein Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/delete-background-or-watermark-of-excel-worksheet/" title="Löscht ein Hintergrundbild oder Wasserzeichen eines Arbeitsblatts" rel="noopener">Löschen eines Hintergrundbilds oder Wasserzeichens von einem Excel-Arbeitsblatt.</a></li>
         </ul>
     </div>
 </div>
@@ -52,30 +84,30 @@ kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Mark
 {{< tab tabNum="2" >}}
 <div class="row">
     <div class="col-md-6">
-        <p>Cells Schriftart, Stile, bedingte Formatierung und Wert</p>
+        <p>Zellenschriftarten, -stile, bedingte Formatierung und Werte</p>
         <ul>
-            <li><a href="/cells/de/get-cell-style-from-a-worksheet/">Ruft den Zellenstil aus einem Excel-Arbeitsblatt ab.</a></li>
-            <li><a href="/cells/de/update-multiple-cells-style/">Aktualisiert den Stil mehrerer Zellen auf einem Arbeitsblatt Excel.</a></li>
-            <li><a href="/cells/de/change-cell-style-in-excel-worksheet/">Aktualisiert den Zellenstil auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/apply-rich-text-formatting-to-a-cell/">Legt die Rich-Text-Formatierung für eine Zelle des Arbeitsblatts Excel fest.</a></li>
-            <li><a href="/cells/de/clear-contents-and-styles-of-cells-in-excel-worksheet/">Löscht Inhalt und Formatvorlagen der Zellen im Arbeitsblatt Excel.</a></li>
-            <li><a href="/cells/de/working-with-conditional-formatting/">Fügt bedingte Formatierungen im Arbeitsblatt Excel hinzu, löscht und aktualisiert sie.</a></li>
-            <li><a href="/cells/de/set-value-of-a-cell-in-a-worksheet/">Legt den Wert einer Zelle in einem Arbeitsblatt Excel fest.</a></li>
+            <li><a href="/de/cells/get-cell-style-from-a-worksheet/" title="Ruft einen Zellstil aus einem Arbeitsblatt ab" rel="noopener">Abrufen eines Zellstils aus einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/update-multiple-cells-style/" title="Aktualisiert Stile mehrerer Zellen" rel="noopener">Aktualisieren des Stils mehrerer Zellen auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/change-cell-style-in-excel-worksheet/" title="Ändert den Stil einer einzelnen Zelle" rel="noopener">Aktualisieren des Zellstils auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/apply-rich-text-formatting-to-a-cell/" title="Wendet Rich-Text-Formatierung auf eine Zelle an" rel="noopener">Anwenden von Rich-Text-Formatierung für eine Zelle auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/clear-contents-and-styles-of-cells-in-excel-worksheet/" title="Löscht Zellinhalte und -stile" rel="noopener">Löschen von Inhalten und Stilen von Zellen auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/working-with-conditional-formatting/" title="Verwaltet bedingte Formatierungsregeln" rel="noopener">Hinzufügen, Löschen und Aktualisieren bedingter Formatierungen auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/set-value-of-a-cell-in-a-worksheet/" title="Legt den Wert einer Zelle fest" rel="noopener">Festlegen des Werts einer Zelle auf einem Excel-Arbeitsblatt.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
-        <p>Zeilen/Spalten einfügen, löschen, kopieren, ausblenden und automatisch anpassen</p>
+        <p>Zeile/Spalte: Einfügen, Löschen, Kopieren, Ausblenden und automatische Anpassung</p>
         <ul>
-            <li><a href="/cells/de/add-an-empty-row-in-a-worksheet/">Fügt eine leere Zeile in einem Excel-Arbeitsblatt hinzu.</a></li>
-            <li><a href="/cells/de/delete-row-from-a-worksheet/">Löscht eine Zeile aus einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/copy-rows-in-excel-worksheet/">Kopiert Zeilen auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/hide-rows-in-excel-worksheet/">Zeilen in einem Arbeitsblatt Excel ausblenden.</a></li>
-            <li><a href="/cells/de/auto-fit-rows-in-excel-workbooks/">Zeilen in einer Arbeitsmappe Excel automatisch anpassen.</a></li>
-            <li><a href="/cells/de/columns/add/">Fügt einem Excel-Arbeitsblatt eine leere Spalte hinzu.</a></li>
-            <li><a href="/cells/de/columns/delete/">Löscht eine Spalte aus einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/columns/copy/">Kopiert Spalten auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/columns/hide/">Spalten in einem Excel-Arbeitsblatt ausblenden.</a></li>
-            <li><a href="/cells/de/columns/autofit/">Spalten in einer Arbeitsmappe Excel automatisch anpassen.</a></li>
+            <li><a href="/de/cells/add-an-empty-row-in-a-worksheet/" title="Fügt eine leere Zeile in ein Arbeitsblatt ein" rel="noopener">Hinzufügen einer leeren Zeile auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/delete-row-from-a-worksheet/" title="Löscht eine Zeile aus einem Arbeitsblatt" rel="noopener">Löschen einer Zeile aus einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/copy-rows-in-excel-worksheet/" title="Kopiert Zeilen innerhalb eines Arbeitsblatts" rel="noopener">Kopieren von Zeilen auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/hide-rows-in-excel-worksheet/" title="Blendet Zeilen in einem Arbeitsblatt aus" rel="noopener">Ausblenden von Zeilen auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/auto-fit-rows-in-excel-workbooks/" title="Passt Zeilen in einer Arbeitsmappe automatisch an" rel="noopener">Automatisches Anpassen von Zeilen auf einer Excel-Arbeitsmappe.</a></li>
+            <li><a href="/de/cells/columns/add/" title="Fügt eine leere Spalte in ein Arbeitsblatt ein" rel="noopener">Hinzufügen einer leeren Spalte auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/columns/delete/" title="Löscht eine Spalte aus einem Arbeitsblatt" rel="noopener">Löschen einer Spalte aus einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/columns/copy/" title="Kopiert Spalten innerhalb eines Arbeitsblatts" rel="noopener">Kopieren von Spalten auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/columns/hide/" title="Blendet Spalten in einem Arbeitsblatt aus" rel="noopener">Ausblenden von Spalten auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/columns/autofit/" title="Passt Spalten in einer Arbeitsmappe automatisch an" rel="noopener">Automatisches Anpassen von Spalten auf einer Excel-Arbeitsmappe.</a></li>
         </ul>
     </div>
 </div>
@@ -85,47 +117,47 @@ kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Mark
     <div class="col-md-6">
         <p>Diagramm</p>
         <ul>
-            <li><a href="/cells/de/add-a-chart-in-a-worksheet/">Fügt einem Excel-Arbeitsblatt ein Diagramm hinzu.</a></li>
-            <li><a href="/cells/de/delete-a-chart-from-a-worksheet/">Löscht ein Diagramm auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/delete-all-charts-from-a-worksheet/">Löscht alle Diagramme auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/convert-chart-to-image/">Konvertiert Diagramme in Bilder.</a></li>
-            <li><a href="/cells/de/hide-chart-legend-in-a-worksheet/">Blendet die Diagrammlegende auf einem Excel-Arbeitsblatt aus.</a></li>
-            <li><a href="/cells/de/update-chart-title-in-excel-worksheet/">Aktualisiert den Diagrammtitel auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/delete-chart-title-in-a-worksheet/">Löscht den Diagrammtitel auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/add-a-chart-in-a-worksheet/" title="Fügt ein Diagramm zu einem Arbeitsblatt hinzu" rel="noopener">Hinzufügen eines Diagramms auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/delete-a-chart-from-a-worksheet/" title="Löscht ein Diagramm aus einem Arbeitsblatt" rel="noopener">Löschen eines Diagramms auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/delete-all-charts-from-a-worksheet/" title="Löscht alle Diagramme aus einem Arbeitsblatt" rel="noopener">Löschen aller Diagramme auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/convert-chart-to-image/" title="Konvertiert ein Diagramm in eine Bilddatei" rel="noopener">Konvertieren eines Diagramms in ein Bild.</a></li>
+            <li><a href="/de/cells/hide-chart-legend-in-a-worksheet/" title="Blendet ein Diagramm-Legende aus" rel="noopener">Ausblenden der Diagramm-Legende auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/update-chart-title-in-excel-worksheet/" title="Aktualisiert einen Diagrammtitel" rel="noopener">Aktualisieren des Diagrammtitels auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/delete-chart-title-in-a-worksheet/" title="Löscht einen Diagrammtitel" rel="noopener">Löschen des Diagrammtitels auf einem Excel-Arbeitsblatt.</a></li>
         </ul>
-        <p>Tisch</p>
+        <p>Tabelle</p>
         <ul>
-            <li><a href="/cells/de/add-a-list-object-or-table-inside-the-worksheet/">Fügt einem Excel-Arbeitsblatt ein Listenobjekt hinzu.</a></li>
-            <li><a href="/cells/de/update-a-list-object-or-table-inside-the-worksheet/">Aktualisiert ein Listenobjekt auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/convert-list-object-or-table-to-range/">Konvertiert das Listenobjekt in einen Bereich.</a></li>
-            <li><a href="/cells/de/sort-table-data/">Sortiert Tabellendaten.</a></li>
+            <li><a href="/de/cells/add-a-list-object-or-table-inside-the-worksheet/" title="Fügt eine Tabelle (Listenobjekt) zu einem Arbeitsblatt hinzu" rel="noopener">Hinzufügen eines Listenobjekts auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/update-a-list-object-or-table-inside-the-worksheet/" title="Aktualisiert eine Tabelle in einem Arbeitsblatt" rel="noopener">Aktualisieren eines Listenobjekts auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/convert-list-object-or-table-to-range/" title="Konvertiert eine Tabelle in einen Bereich" rel="noopener">Konvertieren eines Listenobjekts in einen Bereich.</a></li>
+            <li><a href="/de/cells/sort-table-data/" title="Sortiert Daten innerhalb einer Tabelle" rel="noopener">Sortieren von Tabellendaten.</a></li>
         </ul>
-        <p>OleObject</p>
+        <p>OLE-Objekt</p>
         <ul>
-            <li><a href="/cells/de/add-oleobject-to-excel-worksheet/">Fügt ein OLE-Objekt zu einem Excel-Arbeitsblatt hinzu.</a></li>
-            <li><a href="/cells/de/update-a-specific-oleobject-from-excel-worksheet/">Aktualisiert ein bestimmtes OLE-Objekt auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/convert-oleobject-to-image/">Konvertiert OLE-Objekte in Bilder.</a></li>
-            <li><a href="/cells/de/delete-all-oleobjects-from-excel-worksheet/">Löscht alle Ole-Objekte auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/delete-a-specific-oleobject-from-excel-worksheet/">Löscht ein bestimmtes OLE-Objekt auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/add-oleobject-to-excel-worksheet/" title="Fügt ein OLE-Objekt zu einem Arbeitsblatt hinzu" rel="noopener">Hinzufügen eines OLE-Objekts auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/update-a-specific-oleobject-from-excel-worksheet/" title="Aktualisiert ein bestimmtes OLE-Objekt" rel="noopener">Aktualisieren eines bestimmten OLE-Objekts auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/convert-oleobject-to-image/" title="Konvertiert ein OLE-Objekt in ein Bild" rel="noopener">Konvertieren eines OLE-Objekts in ein Bild.</a></li>
+            <li><a href="/de/cells/delete-all-oleobjects-from-excel-worksheet/" title="Löscht alle OLE-Objekte aus einem Arbeitsblatt" rel="noopener">Löschen aller OLE-Objekte auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/delete-a-specific-oleobject-from-excel-worksheet/" title="Löscht ein bestimmtes OLE-Objekt" rel="noopener">Löschen eines bestimmten OLE-Objekts auf einem Excel-Arbeitsblatt.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
         <p>Form</p>
         <ul>
-            <li><a href="/cells/de/add-a-shape-inside-the-worksheet/">Fügt einem Excel-Arbeitsblatt eine Form hinzu.</a></li>
-            <li><a href="/cells/de/delete-all-shapes-inside-the-worksheet/">Löscht alle Formen auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/delete-a-shape-by-index-inside-the-worksheet/">Löscht eine Form nach Index auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/add-a-shape-inside-the-worksheet/" title="Fügt eine Form zu einem Arbeitsblatt hinzu" rel="noopener">Hinzufügen einer Form auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/delete-all-shapes-inside-the-worksheet/" title="Löscht alle Formen aus einem Arbeitsblatt" rel="noopener">Löschen aller Formen auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/delete-a-shape-by-index-inside-the-worksheet/" title="Löscht eine Form anhand ihres Index" rel="noopener">Löschen einer Form anhand ihres Index auf einem Excel-Arbeitsblatt.</a></li>
         </ul>
         <p>Pivot-Tabelle</p>
         <ul>
-            <li><a href="/cells/de/add-a-pivot-table-in-a-worksheet/">Fügt eine Pivot-Tabelle in ein Arbeitsblatt Excel ein.</a></li>
-            <li><a href="/cells/de/delete-worksheet-pivot-tables/">Löscht auf allen Pivot-Tabellen ein Arbeitsblatt Excel.</a></li>
-            <li><a href="/cells/de/delete-worksheet-pivot-table-by-index/">Löscht eine Pivot-Tabelle nach Index auf einem Arbeitsblatt Excel.</a></li>
-            <li><a href="/cells/de/update-cell-style-for-pivot-table/">Aktualisiert den Zellenstil der Pivot-Tabelle auf einem Arbeitsblatt Excel.</a></li>
-            <li><a href="/cells/de/update-style-for-pivot-table/">Aktualisiert den Stil der Pivot-Tabelle auf einem Arbeitsblatt Excel.</a></li>
-            <li><a href="/cells/de/working-with-pivot-filters/">Arbeiten mit Pivot-Filtern auf einem Excel-Arbeitsblatt</a></li>
-            <li><a href="/cells/de/hide-pivot-field-item/">Blendet Pivot-Feldelement auf einem Excel-Arbeitsblatt aus</a></li>
-            <li><a href="/cells/de/move-pivot-table/">Verschiebt die Pivot-Tabelle auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/add-a-pivot-table-in-a-worksheet/" title="Fügt eine Pivot-Tabelle zu einem Arbeitsblatt hinzu" rel="noopener">Hinzufügen einer Pivot-Tabelle auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/delete-worksheet-pivot-tables/" title="Löscht alle Pivot-Tabellen aus einem Arbeitsblatt" rel="noopener">Löschen aller Pivot-Tabellen auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/delete-worksheet-pivot-table-by-index/" title="Löscht eine Pivot-Tabelle anhand ihres Index" rel="noopener">Löschen einer Pivot-Tabelle anhand ihres Index auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/update-cell-style-for-pivot-table/" title="Aktualisiert den Zellstil in einer Pivot-Tabelle" rel="noopener">Aktualisieren des Zellstils einer Pivot-Tabelle auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/update-style-for-pivot-table/" title="Aktualisiert den Gesamtstil einer Pivot-Tabelle" rel="noopener">Aktualisieren des Stils einer Pivot-Tabelle auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/working-with-pivot-filters/" title="Arbeitet mit Pivot-Tabellenfiltern" rel="noopener">Arbeiten mit Pivot-Filtern auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/hide-pivot-field-item/" title="Blendet ein Pivot-Feld-Element aus" rel="noopener">Ausblenden von Pivot-Feld-Elementen auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/move-pivot-table/" title="Verschiebt eine Pivot-Tabelle innerhalb eines Arbeitsblatts" rel="noopener">Verschieben einer Pivot-Tabelle auf einem Excel-Arbeitsblatt.</a></li>
         </ul>
     </div>
 </div>
@@ -135,10 +167,10 @@ kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Mark
     <div class="col-md-6">
         <p>Seitenumbruch</p>
         <ul>
-            <li><a href="/cells/de/insert-horizontal-page-break-inside-worksheet/">Fügt einen horizontalen Seitenumbruch in ein Excel-Arbeitsblatt ein.</a></li>
-            <li><a href="/cells/de/insert-vertical-page-break-inside-worksheet/">Fügt einen vertikalen Seitenumbruch in ein Excel-Arbeitsblatt ein.</a></li>
-            <li><a href="/cells/de/delete-horizontal-page-break-inside-worksheet/">Löscht einen horizontalen Seitenumbruch auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/delete-vertical-page-break-inside-worksheet/">Löscht einen vertikalen Seitenumbruch auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/insert-horizontal-page-break-inside-worksheet/" title="Fügt einen horizontalen Seitenumbruch ein" rel="noopener">Einfügen eines horizontalen Seitenumbruchs auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/insert-vertical-page-break-inside-worksheet/" title="Fügt einen vertikalen Seitenumbruch ein" rel="noopener">Einfügen eines vertikalen Seitenumbruchs auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/delete-horizontal-page-break-inside-worksheet/" title="Löscht einen horizontalen Seitenumbruch" rel="noopener">Löschen eines horizontalen Seitenumbruchs auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/delete-vertical-page-break-inside-worksheet/" title="Löscht einen vertikalen Seitenumbruch" rel="noopener">Löschen eines vertikalen Seitenumbruchs auf einem Excel-Arbeitsblatt.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
@@ -151,11 +183,11 @@ kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Mark
 {{< tab tabNum="5" >}}
 <div class="row">
     <div class="col-md-6">
-        <p>Berechnen</p>
+        <p>Berechnung</p>
         <ul>
-            <li><a href="/cells/de/calculate-all-formulas-in-a-workbook/">Berechnet alle Formeln in einer Arbeitsmappe Excel.</a></li>
-            <li><a href="/cells/de/calculate-cells-formula/">Berechnet die Zellformel in einer Arbeitsmappe Excel.</a></li>
-            <li><a href="/cells/de/calculate-formula-in-a-worksheet/">Berechnet die Formel auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/calculate-all-formulas-in-a-workbook/" title="Berechnet alle Formeln in einer Arbeitsmappe" rel="noopener">Berechnen aller Formeln auf einer Excel-Arbeitsmappe.</a></li>
+            <li><a href="/de/cells/calculate-cells-formula/" title="Berechnet die Formel einer bestimmten Zelle" rel="noopener">Berechnen von Zellformeln auf einer Excel-Arbeitsmappe.</a></li>
+            <li><a href="/de/cells/calculate-formula-in-a-worksheet/" title="Berechnet eine Formel in einem Arbeitsblatt" rel="noopener">Berechnen einer Formel auf einem Excel-Arbeitsblatt.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
@@ -170,40 +202,40 @@ kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Mark
     <div class="col-md-6">
         <p>Gliederung</p>
         <ul>
-            <li><a href="/cells/de/group-rows-in-excel-worksheet/">Gruppiert Zeilen auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/ungroup-rows-in-excel-worksheet/">Hebt die Gruppierung von Zeilen in einem Excel-Arbeitsblatt auf</a></li>
+            <li><a href="/de/cells/group-rows-in-excel-worksheet/" title="Gruppiert Zeilen in einem Arbeitsblatt" rel="noopener">Gruppieren von Zeilen auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/ungroup-rows-in-excel-worksheet/" title="Hebt die Gruppierung von Zeilen in einem Arbeitsblatt auf" rel="noopener">Aufheben der Gruppierung von Zeilen auf einem Excel-Arbeitsblatt.</a></li>
         </ul>
         <p>Filter</p>
         <ul>
-            <li><a href="/cells/de/add-a-filter-for-a-filter-column/">Fügt einen Filter für eine Filterspalte in einem Excel-Arbeitsblatt hinzu.</a></li>
-            <li><a href="/cells/de/delete-a-filter-for-a-filter-column/">Löscht einen Filter für eine Filterspalte in einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/remove-a-date-filter/">Entfernt einen Datumsfilter aus einem Arbeitsblatt Excel.</a></li>
-            <li><a href="/cells/de/add-an-icon-filter/">Fügt einem Excel-Arbeitsblatt einen Symbolfilter hinzu.</a></li>
-            <li><a href="/cells/de/add-date-filter-in-a-worksheet/">Fügen Sie einem Arbeitsblatt vom Typ Excel einen Datumsfilter hinzu.</a></li>
-            <li><a href="/cells/de/filter-data-by-using-an-autofilter/">Filtert eine Liste mit einem benutzerdefinierten Kriterium auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/filter-the-top-10-items-in-the-list/">Filtert die Top 10-Elemente in der Liste auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/match-all-blank-cells-in-the-list/">Entspricht allen leeren Zellen in der Liste auf einem Arbeitsblatt Excel.</a></li>
+            <li><a href="/de/cells/add-a-filter-for-a-filter-column/" title="Fügt einem Spaltenfilter hinzu" rel="noopener">Hinzufügen eines Filters für eine Spalte auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/delete-a-filter-for-a-filter-column/" title="Löscht einen Spaltenfilter" rel="noopener">Löschen eines Filters für eine Spalte auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/remove-a-date-filter/" title="Entfernt einen Datumsfilter" rel="noopener">Entfernen eines Datumsfilters auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/add-an-icon-filter/" title="Fügt einen Symbolfilter hinzu" rel="noopener">Hinzufügen eines Symbolfilters auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/add-date-filter-in-a-worksheet/" title="Fügt einen Datumsfilter hinzu" rel="noopener">Hinzufügen eines Datumsfilters auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/filter-data-by-using-an-autofilter/" title="Filtert Daten mithilfe von AutoFilter" rel="noopener">Filtern von Daten mithilfe eines AutoFilters auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/filter-the-top-10-items-in-the-list/" title="Filtert die Top-10-Elemente" rel="noopener">Filtern der Top-10-Elemente in der Liste auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/match-all-blank-cells-in-the-list/" title="Findet alle leeren Zellen" rel="noopener">Finden aller leeren Zellen in der Liste auf einem Excel-Arbeitsblatt.</a></li>
         </ul>
-            <p>Sortieren</p>
+        <p>Sortierung</p>
         <ul>
-            <li><a href="/cells/de/sort-worksheet-data/">Sortiert Zellendaten auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/sort-worksheet-data/" title="Sortiert Arbeitsblattdaten" rel="noopener">Sortieren von Daten auf einem Excel-Arbeitsblatt.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
-        <p>Daten importieren</p>
+        <p>Datenimport</p>
         <ul>
-            <li><a href="/cells/de/import/">Importiert Daten in Excel-Dateien.</a></li>
-            <li><a href="/cells/de/import-csv-data-into-worksheet/">Importiert CSV-Daten in ein Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/import/picture/">Importiert ein Bild in ein Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/import/double-array/">Importiert ein Double-Array in ein Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/import/integer-array/">Importiert ein Integer-Array in ein Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/import/string-array/">Importiert ein Zeichenfolgenarray in ein Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/import/with-using-storage/">Importiert Daten mithilfe von Speicher in ein Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/import/without-using-storage/">Importiert Daten in ein Excel-Arbeitsblatt, ohne Speicher zu verwenden.</a></li>
+            <li><a href="/de/cells/import/" title="Importiert Daten in Excel-Dateien" rel="noopener">Importieren von Daten in Excel-Dateien.</a></li>
+            <li><a href="/de/cells/import-CSV-data-into-worksheet/" title="Importiert CSV-Daten in ein Arbeitsblatt" rel="noopener">Importieren von CSV-Daten in ein Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/import/picture/" title="Importiert ein Bild in ein Arbeitsblatt" rel="noopener">Importieren eines Bildes in ein Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/import/double-array/" title="Importiert ein Double-Array in ein Arbeitsblatt" rel="noopener">Importieren eines Double-Arrays in ein Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/import/integer-array/" title="Importiert ein Integer-Array in ein Arbeitsblatt" rel="noopener">Importieren eines Integer-Arrays in ein Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/import/string-array/" title="Importiert ein String-Array in ein Arbeitsblatt" rel="noopener">Importieren eines String-Arrays in ein Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/import/with-using-storage/" title="Importiert Daten unter Verwendung des Speichers" rel="noopener">Importieren von Daten in ein Excel-Arbeitsblatt unter Verwendung des Speichers.</a></li>
+            <li><a href="/de/cells/import/without-using-storage/" title="Importiert Daten ohne Verwendung des Speichers" rel="noopener">Importieren von Daten in ein Excel-Arbeitsblatt ohne Verwendung des Speichers.</a></li>
         </ul>
-        <p>Montage</p>
+        <p>Assembly</p>
         <ul>
-            <li><a href="/cells/de/assembly/">Daten in Excel-Dateien zusammenstellen.</a></li>
+            <li><a href="/de/cells/assembly/" title="Fügt Daten in Excel-Dateien zusammen" rel="noopener">Zusammenführen von Daten in Excel-Dateien.</a></li>
         </ul>
     </div>
 </div>
@@ -213,16 +245,16 @@ kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Mark
     <div class="col-md-6">
         <p>Kommentare</p>
         <ul>
-            <li><a href="/cells/de/add-a-comment-to-a-cell-in-a-worksheet/">Fügt einer Zelle in einem Arbeitsblatt Excel einen Kommentar hinzu.</a></li>
-            <li><a href="/cells/de/update-a-comment-in-excel-workbook/">Aktualisiert einen Kommentar auf einem Excel-Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/delete-all-comments-in-a-worksheet/">Löscht alle Kommentare auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/add-a-comment-to-a-cell-in-a-worksheet/" title="Fügt einer Zelle einen Kommentar hinzu" rel="noopener">Hinzufügen eines Kommentars zu einer Zelle auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/update-a-comment-in-excel-workbook/" title="Aktualisiert einen Zellkommentar" rel="noopener">Aktualisieren eines Kommentars auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/delete-all-comments-in-a-worksheet/" title="Löscht alle Kommentare in einem Arbeitsblatt" rel="noopener">Löschen aller Kommentare auf einem Excel-Arbeitsblatt.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
         <p>Änderungen</p>
         <ul>
-            <li><a href="/cells/de/protect-excel-workbooks/">Schützt eine Arbeitsmappe Excel.</a></li>
-            <li><a href="/cells/de/unprotect-excel-workbooks/">Hebt den Schutz einer Arbeitsmappe Excel auf.</a></li>
+            <li><a href="/de/cells/protect-excel-workbooks/" title="Schützt eine Excel-Arbeitsmappe" rel="noopener">Schützen einer Excel-Arbeitsmappe.</a></li>
+            <li><a href="/de/cells/unprotect-excel-workbooks/" title="Hebt den Schutz einer Excel-Arbeitsmappe auf" rel="noopener">Aufheben des Schutzes einer Excel-Arbeitsmappe.</a></li>
         </ul>
     </div>
 </div>
@@ -230,21 +262,22 @@ kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Mark
 {{< tab tabNum="8" >}}
 <div class="row">
     <div class="col-md-6">
-        <p>Windows</p>
+        <p>Fenster</p>
         <ul>
-            <li><a href="/cells/de/freeze-panes-in-excel-worksheet/">Friert Bereiche auf einem Excel-Arbeitsblatt ein.</a></li>
-            <li><a href="/cells/de/unfreeze-panes-in-excel-worksheet/">Gibt Fenster auf einem Arbeitsblatt Excel frei.</a></li>
-            <li><a href="/cells/de/hide-excel-worksheets/">Blendet ein Excel-Arbeitsblatt aus.</a></li>
-            <li><a href="/cells/de/unhide-excel-worksheets/">Löscht alle Kommentare auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/freeze-panes-in-excel-worksheet/" title="Friert Bereiche in einem Arbeitsblatt ein" rel="noopener">Einfrieren von Bereichen auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/unfreeze-panes-in-excel-worksheet/" title="Gefriert Bereiche in einem Arbeitsblatt wieder auf" rel="noopener">Aufheben des Einfrierens von Bereichen auf einem Excel-Arbeitsblatt.</a></li>
+            <li><a href="/de/cells/hide-excel-worksheets/" title="Blendet ein Arbeitsblatt aus" rel="noopener">Ausblenden eines Excel-Arbeitsblatts.</a></li>
+            <li><a href="/de/cells/unhide-excel-worksheets/" title="Blendet ein Arbeitsblatt wieder ein" rel="noopener">Einsblenden eines Excel-Arbeitsblatts.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
         <p>Zoom</p>
         <ul>
-            <li><a href="/cells/de/set-zoom-in-excel-worksheet/">Legt den Zoom auf einem Excel-Arbeitsblatt fest.</a></li>
+            <li><a href="/de/cells/set-zoom-in-excel-worksheet/" title="Legt den Zoom-Faktor eines Arbeitsblatts fest" rel="noopener">Festlegen des Zoom-Faktors auf einem Excel-Arbeitsblatt.</a></li>
         </ul>
     </div>
 </div>
 {{< /tab >}}
 
 {{< /tabs >}}
+---

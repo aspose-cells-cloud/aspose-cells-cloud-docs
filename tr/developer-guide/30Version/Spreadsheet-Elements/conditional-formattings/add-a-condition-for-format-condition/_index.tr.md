@@ -1,144 +1,305 @@
-﻿---
-title: Koşul Ekle
-type: docs
-url: /tr/conditional-formattings/add-a-condition/
-aliases: [/add-a-condition-for-format-condition/]
-keywords: REST API, spreadsheets, excel, add conditiona
-description: "Cells. Excel için API Bulutu çalıştır: koşul ekle"
-weight: 40
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Koşul Ekle
 ---
-Bu REST API, Biçim koşulu için bir koşul ekle'yi belirtir.
- 
-## RSET API
- 
+title: Koşullu Biçimlendirmeye Koşul Ekleme
+description: Aspose.Cells Cloud REST API (v3.0) kullanarak bir çalışma sayfasının koşullu biçimlendirmesine bir koşul eklemenin nasıl yapılacağını öğrenin. Uç nokta, parametreler, kimlik doğrulama, cURL örneği, SDK kod parçacıkları ve hata işleme içerir.
+keywords: "Aspose.Cells Cloud, Koşullu Biçimlendirme, Koşul Ekle, REST API, Excel, Çalışma Sayfası"
+type: docs
+url: /conditional-formattings/add-a-condition/
+aliases:
+  - /add-a-condition-for-format-condition/
+weight: 40
+---
+
+# Koşullu Biçimlendirmeye Koşul Ekleme
+
+Aspose.Cells Cloud REST API (v3.0) kullanarak bir çalışma sayfasındaki mevcut koşullu biçimlendirme kuralına bir koşul ekleyin.
+
+---
+
+## Ön Gereksinimler
+
+| Gereksinim | Detaylar |
+|-----------|----------|
+| **Kimlik Doğrulama** | OAuth 2.0 akışı aracılığıyla alınmış geçerli bir JWT erişim belirteci (Bearer). |
+| **API Sürümü** | v3.0 – uç nokta URL’si `/v3.0/` içerir. |
+| **Depo** | Çalışma kitabının Aspose.Cells Cloud tarafından erişilebilir bir depolama konumunda bulunması gerekir (varsayılan: `Default`). |
+| **İzinler** | Hedef çalışma kitabında Okuma/Yazma izni. |
+| **Desteklenen Formatlar** | Aspose.Cells tarafından desteklenen herhangi bir çalışma kitabı formatı (örn. `.xlsx`, `.xls`, `.xlsm`). |
+
+---
+
+## Uç Nokta
+
+**HTTP Yöntemi:** `PUT`  
+**URL:**  
+
+```
+https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition
+```
+
+| Parametre | Konum | Tür | Gerekli | Açıklama |
+|-----------|-------|-----|---------|----------|
+| `name` | Yol | string | **Evet** | Çalışma kitabı dosyasının adı (uzantı dahil). |
+| `sheetName` | Yol | string | **Evet** | Koşullu biçimlendirmeyi içeren çalışma sayfasının adı. |
+| `index` | Yol | integer | **Evet** | Düzenlenecek koşullu biçimlendirme koleksiyonunun sıfır tabanlı indeksi. |
+| `type` | Sorgu | string | **Evet** | Koşul türü. İzin verilen değerler: `CellValue`, `Expression`, `ColorScale`, `DataBar`, `IconSet`, `Top10`, `UniqueValues`, `DuplicateValues`, `ContainsText`, `NotContainsText`, `BeginsWith`, `EndsWith`, `ContainsBlanks`, `NotContainsBlanks`, `ContainsErrors`, `NotContainsErrors`, `TimePeriod`, `AboveAverage`. |
+| `operatorType` | Sorgu | string | **Evet** | Koşul için operatör. İzin verilen değerler: `Between`, `Equal`, `GreaterThan`, `GreaterOrEqual`, `LessThan`, `None`, `NotBetween`, `NotEqual`. |
+| `formula1` | Sorgu | string | **Evet** | Koşul ile ilişkili ilk formül/değer. |
+| `formula2` | Sorgu | string | Hayır | İkinci formül/değer (yalnızca iki değer gerektiren operatörler için gerekli, örneğin `Between`). |
+| `folder` | Sorgu | string | Hayır | Çalışma kitabının bulunduğu depodaki klasör. |
+| `storageName` | Sorgu | string | Hayır | Depolama hizmetinin adı. |
+
+> **Not:** Tüm yol parametreleri (`name`, `sheetName`, `index`) ve `type`, `operatorType`, `formula1` sorgu parametreleri zorunludur. `formula2`, `folder` ve `storageName` ise isteğe bağlıdır.
+
+---
+
+## İstek Örneği (cURL)
+
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition
- 
-```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| dizin| tam sayı| yol||
-| tip| sicim| sorgu||
-| operatörTürü| sicim| sorgu||
-| formül1| sicim| sorgu||
-| formül2| sicim| sorgu||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
- 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionCondition) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0/condition?type=CellValue&operatorType=Equal&formula1=v1&formula2=v2" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/conditionalFormattings/0/condition?type=CellValue&operatorType=Equal&formula1=v1&formula2=v2" \
+ -X PUT \
+ -H "Content-Type: application/json" \
+ -H "Accept: application/json" \
+ -H "Authorization: Bearer <jwt_token>"
 ```
 
-{{< /tab >}}
+*`<jwt_token>` ifadesini geçerli bir erişim belirteci ile değiştirin ve gerekli durumlara göre `name`, `sheetName`, `index` ve sorgu değerlerini ayarlayın.*
 
-{{< tab tabNum="12" >}}
+---
 
-```java
+## Başarılı Yanıt
 
+```json
 {
   "Code": "200",
   "Status": "OK"
 }
-
 ```
 
-{{< /tab >}}
+Yanıt, koşulun başarıyla eklendiğini gösterir. İşlem, HTTP durum kodunu ve kısa durum mesajını içeren genel bir `CellsCloudResponse` nesnesi döndürür.
 
-{{< /tabs >}}
- 
-## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+---
 
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
+## Hata Yanıtları
 
-{{< tab tabNum="1" >}}
+| HTTP Kodu | Sebep | Örnek Gövde |
+|-----------|-------|--------------|
+| **400** | Geçersiz İstek – eksik veya geçersiz parametreler. | `{ "Code":"400", "Message":"Invalid parameter value." }` |
+| **401** | Yetkisiz – eksik veya geçersiz JWT belirteci. | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
+| **404** | Bulunamadı – çalışma kitabı, çalışma sayfası veya koşullu biçimlendirme indeksi mevcut değil. | `{ "Code":"404", "Message":"File not found." }` |
+| **500** | Sunucu İçi Hata – beklenmeyen sunucu hatası. | `{ "Code":"500", "Message":"An unexpected error occurred." }` |
 
+---
 
+## Notlar ve Yaygın Hatalar
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-AddConditionforFormatCondition-1.cs" >}}
+* **Parametre Kodlama** – `formula1`/`formula2` içindeki özel karakterler URL ile kodlanmalıdır (örn. boşluklar → `%20`).  
+* **Operatör Uyumluluğu** – Bazı operatörler (örn. `Between`) hem `formula1` hem de `formula2` gerektirir. Tek değer gerektiren operatörler için `formula2` atlanmalıdır.  
+* **Koşullu Biçimlendirme İndeksi** – İndeks sıfır tabanlıdır. İndeksten emin değilseniz doğru indeksi almak için **Koşullu Biçimlendirmeleri Al** uç noktasını kullanın.  
+* **Depo Klasörü** – Çalışma kitabının varsayılan olmayan bir klasörde yer alıyorsa `folder` sorgu parametresini belirtmelisiniz; aksi takdirde API kök klasörü varsayar.  
+* **Ortam Sınırlandırma** – Aspose.Cells Cloud, hesap başına istek sınırları uygular. 429 yanıtı alırsanız, kısa bir gecikmeden sonra tekrar deneyin.
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="2" >}}
+## SDK Örnekleri
 
+En popüler SDK'lar için çalıştırılabilir kod parçacıkları aşağıdadır. Yer tutucu değerleri (`YOUR_FILE`, `YOUR_SHEET` vb.) kendi verilerinizle değiştirin.
 
+### C# (.NET)
 
-{{< /tab >}}
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+using System;
 
-{{< tab tabNum="3" >}}
+class Program
+{
+    static void Main()
+    {
+        var apiInstance = new ConditionalFormattingsApi();
+        string name = "Book1.xlsx";
+        string sheetName = "Sheet1";
+        int index = 0;
+        string type = "CellValue";
+        string operatorType = "Equal";
+        string formula1 = "v1";
+        string formula2 = "v2";
+        string folder = null;          // isteğe bağlı
+        string storageName = null;     // isteğe bağlı
 
+        try
+        {
+            var response = apiInstance.PutWorksheetFormatConditionCondition(
+                name, sheetName, index, type, operatorType, formula1, formula2, folder, storageName);
+            Console.WriteLine($"Status: {response.Status}");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("Exception when calling ConditionalFormattingsApi.PutWorksheetFormatConditionCondition: " + e.Message);
+        }
+    }
+}
+```
 
+### Java
 
-{{< /tab >}}
+```java
+import com.aspose.cloud.cells.api.ConditionalFormattingsApi;
+import com.aspose.cloud.cells.model.CellsCloudResponse;
 
-{{< tab tabNum="4" >}}
+public class AddConditionExample {
+    public static void main(String[] args) {
+        ConditionalFormattingsApi api = new ConditionalFormattingsApi();
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Examples-Ruby-ConditionalFormatting-put_worksheet_format_condition_condition-.rb" >}}
+        String name = "Book1.xlsx";
+        String sheetName = "Sheet1";
+        int index = 0;
+        String type = "CellValue";
+        String operatorType = "Equal";
+        String formula1 = "v1";
+        String formula2 = "v2";
 
-{{< /tab >}}
+        try {
+            CellsCloudResponse resp = api.putWorksheetFormatConditionCondition(
+                    name, sheetName, index, type, operatorType, formula1, formula2, null, null);
+            System.out.println("Response: " + resp.getStatus());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
 
-{{< tab tabNum="5" >}}
+### Node.js
 
+```javascript
+const { ConditionalFormattingsApi, ApiClient } = require('asposecellscloud');
+const api = new ConditionalFormattingsApi();
 
+const name = "Book1.xlsx";
+const sheetName = "Sheet1";
+const index = 0;
+const type = "CellValue";
+const operatorType = "Equal";
+const formula1 = "v1";
+const formula2 = "v2";
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-AddConditionforFormatCondition-1.js" >}}
+api.putWorksheetFormatConditionCondition(
+    name,
+    sheetName,
+    index,
+    type,
+    operatorType,
+    formula1,
+    formula2,
+    null,
+    null
+).then((response) => {
+    console.log('Status:', response.body.Status);
+}).catch((err) => {
+    console.error(err);
+});
+```
 
-{{< /tab >}}
+### Ruby
 
-{{< tab tabNum="6" >}}
+```ruby
+require 'aspose_cells_cloud'
 
+api_instance = AsposeCellsCloud::ConditionalFormattingsApi.new
+name = 'Book1.xlsx'
+sheet_name = 'Sheet1'
+index = 0
+type = 'CellValue'
+operator_type = 'Equal'
+formula1 = 'v1'
+formula2 = 'v2'
 
+begin
+  result = api_instance.put_worksheet_format_condition_condition(
+    name, sheet_name, index, type, operator_type, formula1, formula2, nil, nil
+  )
+  puts "Status: #{result.status}"
+rescue AsposeCellsCloud::ApiError => e
+  puts "Exception when calling ConditionalFormattingsApi->put_worksheet_format_condition_condition: #{e}"
+end
+```
 
-{{< /tab >}}
+### Perl
 
-{{< tab tabNum="7" >}}
+```perl
+use AsposeCellsCloud::ConditionalFormattingsApi;
 
+my $api_instance = AsposeCellsCloud::ConditionalFormattingsApi->new();
 
+my $name         = 'Book1.xlsx';
+my $sheet_name   = 'Sheet1';
+my $index        = 0;
+my $type         = 'CellValue';
+my $operatorType = 'Equal';
+my $formula1     = 'v1';
+my $formula2     = 'v2';
 
-{{< /tab >}}
+eval {
+    my $result = $api_instance->put_worksheet_format_condition_condition(
+        name => $name,
+        sheet_name => $sheet_name,
+        index => $index,
+        type => $type,
+        operator_type => $operatorType,
+        formula1 => $formula1,
+        formula2 => $formula2,
+        folder => undef,
+        storage_name => undef
+    );
+    print "Status: " . $result->{status} . "\n";
+};
+if ($@) {
+    warn "Exception when calling ConditionalFormattingsApi->put_worksheet_format_condition_condition: $@\n";
+}
+```
 
-{{< tab tabNum="8" >}}
+### Go
 
+```go
+package main
 
+import (
+    "fmt"
+    "github.com/asposecellscloud/aspose-cells-cloud-go/v3/sdk"
+)
 
-{{< /tab >}}
+func main() {
+    cfg := sdk.NewConfiguration()
+    cfg.AccessToken = "YOUR_JWT_TOKEN"
+    api := sdk.NewConditionalFormattingsApi(cfg)
 
-{{< tab tabNum="9" >}}
+    name := "Book1.xlsx"
+    sheetName := "Sheet1"
+    index := int32(0)
+    condType := "CellValue"
+    operatorType := "Equal"
+    formula1 := "v1"
+    formula2 := "v2"
 
+    resp, _, err := api.PutWorksheetFormatConditionCondition(
+        name, sheetName, index, condType, operatorType, formula1, formula2, nil, nil,
+    )
+    if err != nil {
+        fmt.Printf("Error: %v\n", err)
+        return
+    }
+    fmt.Printf("Status: %s\n", resp.Status)
+}
+```
 
+> **Eksik SDK’lar** – İhtiyacınız olan bir dil listelenmemişse, genel **API Referansı** sayfasına bakın ve HTTP isteğini manuel olarak oluşturun.
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-AddConditionforFormatCondition-1.pl" >}}
+---
 
-{{< /tab >}}
+## Aşağıdakilere Bakın
 
-{{< tab tabNum="10" >}}
+- **[Koşullu Biçimlendirmeleri Al](https://docs.aspose.cloud/cells/conditional-formattings/get-conditional-formattings/)** – Bir çalışma sayfasının koşullu biçimlendirme kurallarının listesini alın.  
+- **[Koşullu Biçimlendirmeyi Sil](https://docs.aspose.cloud/cells/conditional-formattings/delete-a-conditional-formatting/)** – Mevcut bir koşullu biçimlendirme kuralını kaldırın.  
+- **[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionCondition)** – Bu işlemin tam makineyle okunabilir tanımı.  
 
-{{< gist "aspose-cells-cloud-gists" "3f7bbe16993e8e2216dad2458f768b70" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+---

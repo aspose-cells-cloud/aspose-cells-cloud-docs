@@ -1,99 +1,128 @@
-﻿---
-title: Aspose.Cells Cloud Web API - حذف الصفوف الفارغة في جدول البيانات
-second_title: Documen
-ArticleTitle: Delete Blank Rows in a Spreadshee
-linktitle: حذف الصف الفارغ
-type: docs
-url: /ar/delete-spreadsheet-blank-rows/
-keywords: Delete blank rows, Excel API, Spreadsheet cleaning, Aspose.Cells Cloud Web API, Remove empty row
-description: حذف جميع الصفوف الفارغة في جدول البيانات بكفاءة والتي لا تحتوي على أي بيانات أو كائنات، مما يعزز تنظيم البيانات
-weight: 100
-kwords: Excel، REST، جدول بيانات، PDF، CSV، JSON، Markdown، مطابقة جميع الخلايا الفارغة في ورقة عمل Excel، إزالة الصفوف الفارغة
 ---
-حذف جميع الصفوف الفارغة التي لا تحتوي على أي بيانات أو كائنات أخرى من جدول بيانات Excel.
+title: "واجهة Aspose.Cells Cloud الويبية – حذف الصفوف الفارغة/الفارغة تلقائيًا"
+second_title: "وثيقة"
+ArticleTitle: "كيف تحذف جميع الصفوف الفارغة في إكسل – دليل شامل لإزالة البيانات غير المرغوب فيها"
+linktype: "حذف الصفوف الفارغة"
+type: docs
+url: /delete-spreadsheet-blank-rows/
+keywords: "Aspose.Cells, Excel, صفوف فارغة, حذف الصفوف, تنظيف جداول البيانات, API"
+description: "أزل جميع الصفوف الفارغة من ملفات إكسل باستخدام واجهة Aspose.Cells Cloud API. سريع، جاهز للمعالجة الدُفعية، وقابل للبرمجة بالكامل – شاهد أمثلة كود بلغات C# وJava وPython وغيرها."
+weight: 100
+---
 
-## **حذف AP لـ SpreadsheetBlankRows**
+احذف جميع الصفوف الفارغة من جداول بيانات إكسل تلقائيًا باستخدام واجهة Aspose.Cells Cloud API. تكتشف واجهتنا الذكية الصفوف التي لا تحتوي على بيانات أو صيغ أو تعليقات أو كائنات وتحذفها مع الحفاظ على محتوى الملف الآخر. وتدعم المعالجة الدُفعية، والأتمتة السحابية، والتكامل السلس لسير عمل تنظيف البيانات في المؤسسات.
+
+## واجهة DeleteSpreadsheetBlankRows
+
+### واجهة الويب
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/delete/blank-rows
+PUT https://api.aspose.cloud/v4.0/cells/delete/blank-rows
 ```
 
-### **معلمات الطلب:**
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-|جدول بيانات|ملف|بيانات النموذج|تحميل ملف جدول البيانات.|
-|المسار الخارجي|خيط|استفسار|(اختياري) مسار المجلد الذي يُخزَّن فيه المصنف. القيمة الافتراضية هي null.|
-|اسم التخزين الخارجي|خيط|استفسار|اسم تخزين ملف الإخراج.|
-|منطقة|خيط|استفسار|إعداد منطقة جدول البيانات.|
-|كلمة المرور|خيط|استفسار|كلمة المرور لفتح ملف جدول البيانات.|
+تُعد واجهات Aspose.Cells Cloud آمنة وتحتاج إلى <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-### **إجابة**
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+
+### معاملات الطلب
+
+| اسم المعامل | النوع | الموقع | الوصف |
+|-------------|-------|--------|--------|
+| Spreadsheet | ملف | FormData | ملف إكسل (`.xlsx`، `.xls`، `.ods`، إلخ) المراد معالجته. |
+| outPath | سلسلة نصية | استعلام | (اختياري) المسار الهدف في مساحة التخزين السحابية الخاصة بك لملف جدول البيانات المُنظّف. إذا تُرك فارغًا، يُحفظ الملف إلى جانب الملف الأصلي. |
+| outStorageName | سلسلة نصية | استعلام | اسم مساحة التخزين السحابية المُعدّة (مثل `MyDropbox`، `CorporateOneDrive`). مطلوب عند رغبتك في حفظ الناتج في مساحة تخزين محددة. |
+| region | سلسلة نصية | استعلام | إعدادات التوطين (مثل `en-US`، `fr-FR`) المطبّقة أثناء المعالجة. |
+| password | سلسلة نصية | استعلام | كلمة المرور لفتح جدول بيانات مشفر. تُترك فارغة إن لم يكن الملف محميًا. |
+
+**المصادقة**  
+يجب أن يتضمّن كل طلب رأس `Authorization: Bearer <access_token>`. احصل على رمز الوصول عبر سير عمل Aspose Cloud OAuth2 كما هو موصوف في دليل المصادقة.
+
+**المتطلبات المسبقة والملاحظات**  
+- تأكد من إعداد مساحة تخزين Aspose Cloud ورفع ملف جدول البيانات الأصلي قبل استدعاء واجهة API.  
+- تشمل تنسيقات الملفات المدعومة `.xlsx` و`.xls` و`.ods` وأنواع جداول البيانات الشائعة الأخرى.  
+- الحد الأقصى لحجم الملف هو 150 ميجابايت لكل طلب؛ يجب معالجة الملفات الأكبر حجمًا على دفعات.  
+
+### الاستجابة
+
+ترجع الواجهة مصفوفة JSON تحتوي على مرجعٍ إلى الملف الذي تمت معالجته.
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### رموز الخطأ
+### رموز الأخطاء
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+- **400 Bad Request** – عنوان URI لواجهة Aspose.Cells Cloud غير صالح.
+- **401 Unauthorized** – رمز الوصول أو بيانات اعتماد العميل غير صالح.
+- **404 Not Found** – لا يمكن الوصول إلى ملف جدول البيانات.
+- **500 Server Error** – حدث خطأ غير متوقع أثناء معالجة الملف.
 
-## أين يجب علينا استخدام حذف الصفوف الفارغة في جدول البيانات API؟
+## أين نستخدم واجهة حذف الصفوف الفارغة من جدول البيانات؟
 
-عندما تحتاج إلى تحويل البيانات، يمكنك استخدام هذا API.
+- **سير عمل استيراد البيانات والتنظيف** – نظّف الصفوف الفارغة الزائدة أو الهيكلية مباشرة بعد استيراد البيانات من ملفات CSV أو قواعد البيانات أو واجهات ويب.
+- **توليد التقارير واللوحات التحليلية** – تأكد من مظهر احترافي من خلال إزالة الصفوف الفارغة غير الضرورية قبل إنهاء التقارير المالية أو المبيعية أو التشغيلية.
+- **تجهيز البيانات للتحليل (ETL)** – قم بالمعالجة المبدئية لبيانات إكسل في خطوط أنابيب ETL قبل تحميلها في مستودعات البيانات (مثل Snowflake وBigQuery) أو أدوات تحليل الأعمال (مثل Tableau وPower BI).
+- **التكامل مع الأنظمة وتيقات الواجهات** – وحّد ملفات إكسل المستلمة من أنظمة شركاء أو أنظمة إدارة علاقات العملاء (CRM) أو أنظمة تخطيط موارد المؤسسة (ERP) عن طريق إزالة الصفوف غير المستخدمة.
+- **أتمتة الوثائق والمعالجة الدُفعية** – احذف الصفوف التخطيطية التي يولّدها محركات القوالب قبل التوزيع.
+- **معالجة المحتوى المُنشأ من قِبل المستخدمين** – طبّق تنسيقًا موحّدًا على ملفات إكسل المرفوعة من بوابات الويب أو التطبيقات قبل معالجتها أو تخزينها.
+- **ترحيل البيانات القديمة** – بسّط أرشيفات جداول البيانات القديمة بحذف الصفوف الفارغة أو التخطيطية التي تُركت تاريخيًا.
 
-## لماذا يجب عليك استخدام حذف الصفوف الفارغة في جدول البيانات API؟
+## لماذا يجب عليك استخدام واجهة حذف الصفوف الفارغة من جدول البيانات؟
 
-- قم بحذف جميع الصفوف الفارغة التي لا تحتوي على أي بيانات أو كائنات أخرى من جدول بيانات Excel بسرعة.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+- **سهل الاستخدام للمطورين** – توفر SDKs للعديد من لغات البرمجة، مما يقلل جهد التطوير مقارنة ببناء حلول مخصصة.
+- **خفض تكاليف العمالة** – يلغي الحاجة إلى التنظيف اليدوي لجداول البيانات أو تعيين موظفين مخصصين لهذا الغرض.
+- **دفع مقابل الاستخدام فقط** – تدفع فقط مقابل الطلبات التي تُنفّذ فعليًا.
+- **لا تكاليف صيانة** – لا خوادم لإدارتها، ولا تحديثات برمجية، ولا مشاكل توافق.
 
-## كيفية استخدام حذف الصفوف الفارغة في جدول البيانات API مع مجموعات تطوير البرامج (SDKs)
+## كيفية استخدام واجهة حذف الصفوف الفارغة من جدول البيانات باستخدام SDKs
 
-### حذف الصفوف الفارغة في جدول البيانات API المواصفات
+### مواصفات واجهة حذف الصفوف الفارغة من جدول البيانات
 
- ال[حذف الصفوف الفارغة في جدول البيانات API المواصفات](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankRows) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تُعرّف [مواصفات واجهة حذف الصفوف الفارغة من جدول البيانات](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankRows) واجهة برمجة قابلة للوصول علنًا وتسمح لك بإجراء تفاعلات REST مباشرة من متصفح ويب.
 
-### استخدم Aspose.Cells Cloud SDKs
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
-يعد استخدام SDK أسرع طريقة للتطوير، حيث إنه يجرد التفاصيل منخفضة المستوى، مما يسمح لك بحذف الصفوف الفارغة في جدول البيانات باستخدام رمز قصير.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDKs هو أسرع طريقة للتطوير، حيث تُجرّدك من التفاصيل منخفضة المستوى، مما يسمح لك بحذف الصفوف الفارغة من جدول البيانات بكود موجز.  
+يرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية إجراء مكالمات إلى خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteSpreadsheetBlankRows.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteSpreadsheetBlankRows.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteSpreadsheetBlankRows.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteSpreadsheetBlankRows.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteSpreadsheetBlankRows.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteSpreadsheetBlankRows.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteSpreadsheetBlankRows.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankRows.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}  
+{{<tab tabNum="1" >}}  
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteSpreadsheetBlankRows.cs" >}}  
+{{</tab>}}  
+{{<tab tabNum="2" >}}  
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteSpreadsheetBlankRows.java" >}}  
+{{</tab>}}  
+{{<tab tabNum="3" >}}  
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteSpreadsheetBlankRows.php" >}}  
+{{</tab>}}  
+{{<tab tabNum="4" >}}  
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteSpreadsheetBlankRows.rb" >}}  
+{{</tab>}}  
+{{<tab tabNum="5" >}}  
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteSpreadsheetBlankRows.ts" >}}  
+{{</tab>}}  
+{{<tab tabNum="6" >}}  
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteSpreadsheetBlankRows.py" >}}  
+{{</tab>}}  
+{{<tab tabNum="7" >}}  
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteSpreadsheetBlankRows.pl" >}}  
+{{</tab>}}  
+{{<tab tabNum="8" >}}  
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankRows.go" >}}  
+{{</tab>}}  
 {{< /tabs >}}

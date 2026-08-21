@@ -1,64 +1,91 @@
-﻿---
-title: 将二维双精度数组导入 Excel 工作表
-second_title: Documen
-linktitle: 导入二维双阵列
-type: docs
-url: /zh/import-a-2D-double-array-into-excel-worksheet/
-aliases: [/import-2dimension-double-array-into-excel-worksheet/,/import-2dimension-double-array-into-worksheet/, /import-data/2dimension-double-array/, /import/2dimension-double-array/]
-keywords: Import 2 dimension double array data into Excel files
-description: Aspose.Cells Cloud REST API 支持将二维双精度数组数据导入 Excel 文件。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 20
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、将二维双精度数组导入 Excel 工作表
 ---
-此 REST API `import 2 dimension double array data` 进入 Excel 工作表。
+title: "将二维双精度数组导入 Excel 工作表"
+second_title: "文档"
+linktitle: "导入二维双精度数组"
+type: docs
+url: /import-a-2D-double-array-into-excel-worksheet/
+aliases:
+  [
+    /import-2dimension-double-array-into-excel-worksheet/,
+    /import-2dimension-double-array-into-worksheet/,
+    /import-data/2dimension-double-array/,
+    /import/2dimension-double-array/,
+  ]
+keywords: "导入二维双精度数组, Excel, Aspose Cells Cloud, REST API, 电子表格, 数据导入"
+description: "了解如何使用 Aspose.Cells Cloud REST API 将二维双精度数组导入 Excel 工作表。包含请求格式、参数和 SDK 代码示例。"
+weight: 20
+---
 
-该请求是具有多部分内容的 HTTP 请求（请参阅[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)或者[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)）。多部分内容的第一部分包含 Import2DimensionDoubleArrayOption 数据，第二部分包含一个数据文件。
+此 REST API **将二维双精度数组导入 Excel 工作表**。
 
-## 重新设置 API
+该请求为 HTTP `POST` 请求，内容为 multipart 格式（参见 [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) 或 [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)）。multipart 正文的第一部分包含 **Import2DimensionDoubleArrayOption** 数据，第二部分包含源数据文件。
+
+## REST API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-重要参数说明如下表：
+重要参数说明如下表所示：
 
-**Import2DimensionDoubleArray选项**
+### Import2DimensionDoubleArrayOption
 
-|参数名称|类型|描述|
-|:- |:- |:- |
-|第一排|整数||
-|第一列|整数||
-|数据|双倍的[，]||
-|目的地工作表|细绳|目标工作表名称。|
-|是否插入|细绳|对/错。|
-|导入数据类型|细绳|整数数组/双精度数组/字符串数组/二维整数数组/二维双精度数组/二维字符串数组/批量数据/CSV数据。|
-|来源|文件源|当 BatchData 参数为空时，指示数据文件位置。|
+| 参数名称                 | 类型         | 描述                                                                 |
+| ------------------------ | ------------ | -------------------------------------------------------------------- |
+| **FirstRow**             | `int`        | 导入起始的行索引（1‑based，即从 1 开始）                             |
+| **FirstColumn**          | `int`        | 导入起始的列索引（1‑based，即从 1 开始）                             |
+| **Data**                 | `Double[,]`  | 要导入的二维双精度值数组                                             |
+| **DestinationWorksheet** | `string`     | 接收数据的工作表名称                                                 |
+| **IsInsert**             | `string`     | `"true"` 表示插入新行，`"false"` 表示覆盖已有单元格                   |
+| **ImportDataType**       | `string`     | 导入数据的类型（例如：`IntArray`、`DoubleArray`、`TwoDimensionDoubleArray`、`BatchData`、`csvData` 等） |
+| **Source**               | `FileSource` | 当 `BatchData` 参数为 null 时，指示数据文件的位置                     |
 
-**例子**
+**示例**
 
 ```json
-
 {
-    "Data": [
-        [1.0, 2.9, 3.1],
-        [2.0, 2.1, 3.1]
-    ],
-    "DestinationWorksheet": "Sheet2",
-    "FirstRow": 4,
-    "FirstColumn": 1,
-    "importDataType": "TwoDimensionDoubleArray"
+  "Data": [
+    [1.0, 2.9, 3.1],
+    [2.0, 2.1, 3.1]
+  ],
+  "DestinationWorksheet": "Sheet2",
+  "FirstRow": 4,
+  "FirstColumn": 1,
+  "importDataType": "TwoDimensionDoubleArray"
 }
-
 ```
 
-## Cloud SDK 系列
+### 响应
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+**HTTP 状态码**
+
+| 状态码 | 含义           | 描述                                               |
+|--------|----------------|----------------------------------------------------|
+| 200    | OK（成功）     | 筛选器应用成功；响应包含操作详情。                 |
+| 400    | Bad Request（错误请求） | 缺少或参数无效（例如：不支持的文件类型）。         |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。                               |
+| 413    | Payload Too Large（请求实体过大） | 上传的文件超出大小限制。                         |
+| 500    | Internal Server Error（内部服务器错误） | 发生意外的服务器错误。                           |
+
+## 如何结合 SDK 使用 PostImportData API
+
+### PostImportData API 规范
+
+[OpenAPI 规范](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData) 定义了一个公开可访问的编程接口，允许您直接从网页浏览器中执行 REST 交互。
+
+### 使用 Aspose.Cells Cloud SDK
+
+使用 SDK 是集成此功能的最快方式。SDK 处理底层细节，使您能够专注于业务逻辑。Aspose.Cells Cloud SDK 的完整列表请参见 [GitHub 仓库](https://github.com/aspose-cells-cloud)。
+
+以下代码示例演示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

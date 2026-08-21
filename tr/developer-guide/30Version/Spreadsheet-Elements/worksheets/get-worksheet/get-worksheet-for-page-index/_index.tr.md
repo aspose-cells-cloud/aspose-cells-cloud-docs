@@ -1,56 +1,89 @@
-﻿---
-title: Excel çalışma sayfasının bir sayfasını dışa aktarın
-second_title: Documen
-linktitle: Sayfa
-type: docs
-url: /tr/worksheets/page-to-different-formats/
-aliases: [/get-worksheet-for-page-index/]
-keywords: Get page to different format content from an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel Çalışma Sayfasından farklı biçimli içeriklere sayfa almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 240
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasının bir sayfasını dışa aktar
 ---
-[GET /hücreler/{ad}/çalışmasayfaları/{sayfaAdı}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) API, çalışma sayfanızın işaretli sayfasını çeşitli biçim dosyalarına dönüştürmenizi sağlar. Desteklenen biçimler:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [FARKLILIK](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [SAYILAR](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+title: "Bir Çalışma Sayfası Sayfasını Dışa Aktar – Aspose.Cells Cloud API Referansı"
+ArticleTitle: "Bir Çalışma Sayfası Sayfasını Dışa Aktar – Aspose.Cells Cloud API Referansı"
+second_title: "Belge"
+linktitle: "Sayfa"
+type: docs
+url: /worksheets/page-to-different-formats/
+aliases: [/get-worksheet-for-page-index/]
+keywords: "Aspose.Cells Cloud, çalışma sayfası sayfası dışa aktarma, PDF, PNG, CSV, REST API, JWT kimlik doğrulama, dosya formatları"
+description: "Aspose.Cells Cloud REST API kullanarak belirli bir çalışma sayfası sayfasını PDF, PNG, CSV ve diğer formatlara nasıl dışa aktaracağınızı öğrenin. cURL isteği, parametre kılavuzu ve birden fazla dil için SDK örneklerini içerir."
+weight: 240
+---
 
-## DİNLENME API
+Belirli bir çalışma sayfası sayfasını dışa aktarmak, tüm çalışma kitabını indirmek yerine bir raporun yazdırılabilir anlık görüntüsüne, bir grafik görüntüsüne veya bir veri çıkıntısına ihtiyaç duyduğunuzda faydalıdır. Bu uç nokta, tek bir sayfayı alt işlem akışınız için en uygun formatla almanızı sağlar.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorkshee) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[GET /cells/{name}/worksheets/{sheetName}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) API’si, bir çalışma sayfasının belirli bir sayfasını çeşitli dosya formatlarına dönüştürmenizi sağlar. Desteklenen formatlar: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+## REST API
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından yapmanızı sağlar.
+
+> **Önkoşullar** – Geçerli bir JWT kimlik doğrulama jetonuna ve `folder` parametresiyle belirttiğiniz bulut klasöründe depolanmış bir çalışma kitabına sahip olmanız gerekir.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’sine nasıl istek yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1?format=png&verticalResolution=100&horizontalResolution=90&pageIndex=1&folder=DotnetFiles" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
+**Yanıt** – Hizmet, istenen sayfayı seçilen formatta döndürür. Görüntü formatları (png, jpeg, gif vb.) için gövde ikili görüntü verisi içerir; belge formatları (pdf, xls, csv vb.) için gövde dosya içeriğini içerir. Başarılı bir çağrı HTTP 200 döndürür.
 
-Converted Image 
+*PNG yanıtı örneği (kesilmiş base64 parçası):*
 
+```text
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABG0lEQVR42mNkYGBg+M+ABbJw
+...
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Parametreler**
+
+| Parametre              | Tür     | Açıklama                                                               | Varsayılan |
+| ---------------------- | ------- | ------------------------------------------------------------------------ | ---------- |
+| `format`               | string  | Çıktı dosyası formatı (örn. `pdf`, `png`, `csv`).                       | `pdf`      |
+| `verticalResolution`   | integer | Oluşturulan görüntünün dikey DPI’si.                                   | `100`      |
+| `horizontalResolution` | integer | Oluşturulan görüntünün yatay DPI’si.                                   | `100`      |
+| `pageIndex`            | integer | Dışa aktarılacak çalışma sayfası sayfasının sıfır tabanlı indeksi (`0` = ilk sayfa). | `0`        |
+| `folder`               | string  | Kaynak çalışma kitabının bulunduğu bulut depolama klasörü.             | —          |
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                                  |
+|-----|-----------------------------|-----------------------------------------------------------|
+| 200 | Tamam                       | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | İstek Hatası                | Eksik veya geçersiz parametreler (örn. desteklenmeyen dosya türü). |
+| 401 | Yetkisiz                    | Geçersiz veya eksik JWT jetonu.                           |
+| 413 | Yük Çok Büyük               | Yüklenen dosya boyut sınırını aşıyor.                     |
+| 500 | İç Sunucu Hatası            | Beklenmeyen sunucu hatası.                                |
+
+**Olası hatalar**
+
+- **401 Yetkisiz** – Geçersiz veya eksik JWT jetonu.
+- **404 Bulunamadı** – Belirtilen çalışma kitabının veya çalışma sayfasının bulunamaması.
+- **400 İstek Hatası** – Geçersiz parametre değeri (örn. desteklenmeyen `format`).
+- **500 İç Sunucu Hatası** – Beklenmeyen sunucu tarafı sorunu.
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. SDK, düşük seviye ayrıntıları kendisi işlediği için projenizin görevlerine odaklanabilirsiniz. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak Aspose.Cells web hizmetlerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,137 +1,277 @@
-﻿---
-title: 从 Excel 工作表中获取列
-second_title: Documen
-linktitle: 葛
-type: docs
-url: /zh/columns/get/
-aliases: [/get-columns-from-an-excel-worksheet/,/get-columns-from-a-worksheet/,/get-column-from-a-worksheet/]
-keywords: Get columns on an Excel workshee
-description: Aspose.Cells Cloud REST API 支持获取 Excel 工作表上的列。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 10
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表中获取列
 ---
-此 REST API 表示通过列索引读取工作表列数据。
+title: 获取列详情 – Aspose.Cells Cloud API 参考（v4.0）
+description: 使用 Aspose.Cells Cloud REST API 获取工作表列（索引、宽度、样式、隐藏状态）的详细信息。
+keywords: Aspose.Cells, 云 API, Excel 列, 获取列, REST API, JWT, 工作表
+date: 2026-07-30
+---
 
-## 重新设置 API
+# 获取列详情  
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
- 
+从存储在 Aspose Cloud 中的 Excel 工作簿中获取指定工作表列（索引、宽度、样式、隐藏状态）的详细信息。
+
+## 目录
+1. [前置条件](#prerequisites)  
+2. [身份验证](#authentication)  
+3. [接口地址](#endpoint)  
+4. [请求参数](#request-parameters)  
+5. [cURL 示例](#curl-example)  
+6. [响应示例](#response-example)  
+7. [响应结构](#response-schema)  
+8. [可能的错误](#possible-errors)  
+9. [SDK 示例](#sdk-examples)  
+10. [其他资源](#additional-resources)  
+
+---
+
+## 前置条件
+- 已通过 Aspose Cloud 身份验证获取有效的 **JWT 访问令牌**。  
+- 工作簿文件必须已存储在 Aspose Cloud 存储（或其他受支持的存储）中，并需知晓其所在的文件夹路径（如有）。  
+
+---
+
+## 身份验证
+所有 Aspose.Cells Cloud API 均采用 **基于 JWT 令牌的身份验证**。请将令牌置于 `Authorization` 请求头中：
+
+```http
+Authorization: Bearer <access_token>
 ```
 
-请求参数为：
+获取令牌的详细步骤，请参阅 [身份验证指南](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)。
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|列索引|整数|小路|列索引。|
-|文件夹|细绳|询问|工作簿文件夹。|
-|存储名称|细绳|询问|存储名称。|
+---
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
-
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
-
-curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0" -H "accept: application/json"
-
+## 接口地址
+```
+GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
 ```
 
-{{< /tab >}}
+- **{name}** – 工作簿文件名（例如 `test.xlsx`）。  
+- **{sheetName}** – 工作表名称（例如 `Sheet1`）。  
+- **{columnIndex}** – 要获取的列的**零基索引**。
 
-{{< tab tabNum="12" >}}
+---
 
+### **安全与身份验证**
+
+Aspose.Cells Cloud API 具备高安全性，需使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
+
+## 请求参数
+
+| 参数名          | 位置 | 类型    | 是否必需 | 说明 |
+|-----------------|------|---------|----------|------|
+| **name**        | path | string  | 是       | 工作簿文件名。 |
+| **sheetName**   | path | string  | 是       | 包含目标列的工作表名称。 |
+| **columnIndex** | path | integer | 是       | 要获取的列的**零基索引**。 |
+| **folder**      | query| string  | 否       | 工作簿所在的存储文件夹路径。 |
+| **storageName** | query| string  | 否       | 存储服务名称（例如 Aspose Cloud Storage）。 |
+
+---
+
+## cURL 示例
 ```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0?folder=MyFolder&storageName=MyStorage" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
+```
 
+---
+
+## 响应示例
+```json
 {
-"Column": {
-  "GroupLevel": 0,
-  "Index": 10,
-  "IsHidden": false,
-  "Width": 8.5,
-  "Style": {
+  "Column": {
+    "GroupLevel": 0,
+    "Index": 0,
+    "IsHidden": false,
+    "Width": 8.5,
+    "Style": {
+      "link": {
+        "Href": "/style",
+        "Rel": "self"
+      }
+    },
     "link": {
-      "Href": "/style",
+      "Href": "https://api.aspose.cloud/v4.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0",
       "Rel": "self"
     }
   },
-  "link": {
-    "Href": "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0",
-    "Rel": "self"
-  }
-},
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
-
-
 ```
 
-{{< /tab >}}
+---
 
-{{< /tabs >}}
+## 响应结构
+| 字段                | 类型    | 说明 |
+|---------------------|---------|------|
+| `Column.GroupLevel` | integer | 列的分组级别（用于大纲分组）。 |
+| `Column.Index`      | integer | 列的**零基索引**。 |
+| `Column.IsHidden`   | boolean | 若列被隐藏则为 `true`，否则为 `false`。 |
+| `Column.Width`      | number  | 列宽（以字符数表示）。 |
+| `Column.Style`      | object  | 包含指向该列样式资源的 `link`。 |
+| `Column.link`       | object  | 指向该列资源的自链接。 |
+| `Code`              | integer | 响应的 HTTP 状态码。 |
+| `Status`            | string  | 状态的文字描述（例如 **OK**）。 |
 
-## Cloud SDK 系列
+---
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+## 可能的错误
+| HTTP 状态码 | 错误码 | 错误消息                 | 出现原因 |
+|-------------|--------|--------------------------|----------|
+| 400         | 400    | Bad Request              | 缺失或格式错误的必需参数。 |
+| 401         | 401    | Unauthorized             | 缺失或无效的 `Authorization` 请求头。 |
+| 404         | 404    | Not Found                | 工作簿、工作表或列不存在。 |
+| 500         | 500    | Internal Server Error    | 服务器端突发错误。 |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+### 示例 – 404 Not Found（未找到）
+```json
+{
+  "Code": 404,
+  "Message": "Column index out of range."
+}
+```
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+### 示例 – 401 Unauthorized（未授权）
+```json
+{
+  "Code": 401,
+  "Message": "Invalid or missing authentication token."
+}
+```
 
-{{< tab tabNum="1" >}}
+---
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleGetWorksheetColumns.cs" >}}
+## SDK 示例
+以下代码片段演示如何使用官方 Aspose.Cells Cloud SDK 调用 **Get Worksheet Columns（获取工作表列）** 接口。若 Gist 不可用，内联代码亦已提供。
 
-{{< /tab >}}
+<details><summary>**C#**</summary>
 
-{{< tab tabNum="2" >}}
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+using System;
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_GetWorksheetColumns.java" >}}
+// 配置 API 客户端
+var apiInstance = new CellsApi("client_id", "client_secret");
 
-{{< /tab >}}
+// 设置必需参数
+string name = "test.xlsx";
+string sheetName = "Sheet1";
+int columnIndex = 0;
+string folder = "MyFolder";          // 可选
+string storageName = "MyStorage";    // 可选
 
-{{< tab tabNum="3" >}}
+try
+{
+    var response = apiInstance.GetWorksheetColumns(name, sheetName, columnIndex, folder, storageName);
+    Console.WriteLine("Column Index: " + response.Column.Index);
+    Console.WriteLine("Width: " + response.Column.Width);
+}
+catch (Exception e)
+{
+    Console.WriteLine("Exception when calling CellsApi.GetWorksheetColumns: " + e.Message );
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_GetWorksheetColumns.php" >}}
+</details>
 
-{{< /tab >}}
+<details><summary>**Java**</summary>
 
-{{< tab tabNum="4" >}}
+```java
+import com.aspose.cells.cloud.api.CellsApi;
+import com.aspose.cells.cloud.model.ColumnsResponse;
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetColumns.rb" >}}
+public class GetWorksheetColumnsExample {
+    public static void main(String[] args) {
+        CellsApi apiInstance = new CellsApi("client_id", "client_secret");
 
-{{< /tab >}}
+        String name = "test.xlsx";
+        String sheetName = "Sheet1";
+        Integer columnIndex = 0;
+        String folder = "MyFolder";          // 可选
+        String storageName = "MyStorage";    // 可选
 
-{{< tab tabNum="5" >}}
+        try {
+            ColumnsResponse result = apiInstance.getWorksheetColumns(name, sheetName, columnIndex, folder, storageName);
+            System.out.println("Column index: " + result.getColumn().getIndex());
+            System.out.println("Width: " + result.getColumn().getWidth());
+        } catch (Exception e) {
+            System.err.println("Exception while calling CellsApi#getWorksheetColumns");
+            e.printStackTrace();
+        }
+    }
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetColumns.ts" >}}
+</details>
 
-{{< /tab >}}
+<details><summary>**Python**</summary>
 
-{{< tab tabNum="6" >}}
+```python
+import asposecellscloudsdk
+from asposecellscloudsdk import CellsApi, ApiClient, Configuration
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetColumns.py" >}}
+config = Configuration()
+config.client_id = "client_id"
+config.client_secret = "client_secret"
 
-{{< /tab >}}
+api_instance = CellsApi(ApiClient(config))
 
-{{< tab tabNum="7" >}}
+name = "test.xlsx"
+sheet_name = "Sheet1"
+column_index = 0
+folder = "MyFolder"       # 可选
+storage_name = "MyStorage"  # 可选
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetColumns.pl" >}}
+try:
+    response = api_instance.get_worksheet_columns(name, sheet_name, column_index, folder, storage_name)
+    print("Column index:", response.column.index)
+    print("Width:", response.column.width)
+except Exception as e:
+    print("Exception when calling CellsApi->get_worksheet_columns:", e)
+```
 
-{{< /tab >}}
+</details>
 
-{{< tab tabNum="8" >}}
+<details><summary>**Node.js (TypeScript)**</summary>
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetColumns.go" >}}
+```typescript
+import { CellsApi, Configuration } from "@asposecloud/cells-sdk";
 
-{{< /tab >}}
+const config = new Configuration({
+    clientId: "client_id",
+    clientSecret: "client_secret"
+});
+const apiInstance = new CellsApi(config);
 
-{{< /tabs >}}
+const name = "test.xlsx";
+const sheetName = "Sheet1";
+const columnIndex = 0;
+const folder = "MyFolder";       // 可选
+const storageName = "MyStorage"; // 可选
+
+apiInstance.getWorksheetColumns(name, sheetName, columnIndex, folder, storageName)
+    .then((result) => {
+        console.log("Column index:", result.column?.index);
+        console.log("Width:", result.column?.width);
+    })
+    .catch((error) => {
+        console.error("Error calling getWorksheetColumns:", error);
+    });
+```
+
+</details>
+
+> **注意**：所有 SDK 均会在您提供 `client_id` 和 `client_secret` 后自动处理 `Authorization` 请求头。
+
+---
+
+## 其他资源
+- **OpenAPI 规范**： <https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns>  
+- **身份验证指南**： <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>  
+- **GitHub 仓库（SDK 与示例）**： <https://github.com/aspose-cells-cloud>  
+
+--- 
+
+*本文档最后更新于 2026‑07‑30。*

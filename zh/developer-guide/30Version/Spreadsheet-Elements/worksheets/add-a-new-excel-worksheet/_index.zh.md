@@ -1,75 +1,83 @@
-﻿---
-title: 添加 Excel 工作表
-second_title: Documen
-linktitle: 广告
-type: docs
-url: /zh/worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
-keywords: Add an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持添加 Excel 工作表。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 20
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、添加 Excel 工作表
 ---
-此 REST API 表示 `add new worksheet`。
+title: "添加 Excel 工作表"
+ArticleTitle: "添加 Excel 工作表 - Aspose.Cells Cloud API 指南"
+second_title: "文档"
+linktitle: "添加"
+type: docs
+url: /worksheets/add/
+aliases: [/add-a-new-excel-worksheet/]
+keywords: "添加 Excel 工作表, Aspose.Cells Cloud, REST API, PUT 工作表, Excel 工作簿, API 请求"
+description: "分步指南，介绍如何使用 Aspose.Cells Cloud REST API 向 Excel 工作簿添加新工作表，包括请求详情、cURL 示例以及多种编程语言的 SDK 代码片段。"
+weight: 20
+---
 
-## 重新设置 API
+此 REST API 可向现有工作簿添加新工作表。
+
+**前提条件**：调用此接口前，您需具备有效的 Aspose Cloud 身份验证令牌，目标工作簿已上传至 Aspose Cloud 存储，并知晓存储名称（如使用自定义存储）。
+
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
 ```
 
-请求参数为：
+### **请求参数**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|新工作表名称。|
-|位置|整数|询问|新的工作表位置。|
-|纸张类型|细绳|询问|新的工作表类型。|
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
+| 参数名        | 类型     | 位置   | 描述                                           |
+| ------------- | -------- | ------ | ---------------------------------------------- |
+| name          | string   | path   | 工作簿文件的名称。                             |
+| sheetName     | string   | path   | 待创建新工作表的名称。                         |
+| position      | integer  | query  | 工作表插入位置（从 0 开始计数）。              |
+| sheettype     | string   | query  | 新工作表类型（例如：**Chart**、**Dialog**）。 |
+| folder        | string   | query  | 包含工作簿的文件夹。                           |
+| storageName   | string   | query  | Aspose Cloud 存储的名称。                      |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) 定义了一个公开可用的编程接口，支持您直接通过网页浏览器执行 REST 交互。
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+您可使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例演示如何使用 cURL 调用 Cloud API。
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+**可能的响应状态码**
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| 状态码 | 描述                                       |
+| ------ | ------------------------------------------ |
+| 200    | 成功添加工作表。                           |
+| 400    | 请求错误 — 参数无效。                      |
+| 401    | 未授权 — 缺失或无效的身份验证令牌。        |
+| 404    | 未找到 — 工作簿或文件夹不存在。            |
+| 500    | 服务器内部错误 — 意外情况。                |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+## 云 SDK 家族
+
+使用 SDK 是开发速度最快的途径。SDK 抽象了底层细节，让您专注于项目本身。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例演示如何使用各类 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,81 +1,117 @@
-﻿---
-title: Aggiungere un oggetto OLE in un foglio di lavoro Excel
-second_title: Documen
-linktitle: Aggiungere
+---
+title: "Aggiungi un oggetto OLE in un foglio di calcolo Excel"
+second_title: "Documento"
+linktitle: "Aggiungi oggetto OLE"
 type: docs
 url: /it/oleobjects/add/
 aliases: [/add-oleobject-to-excel-worksheet/]
-keywords: Add an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'aggiunta di un oggetto OLE in un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+keywords: "Aggiungi oggetto OLE, Excel, Aspose.Cells Cloud, API REST, SDK"
+description: "Utilizza l'API REST di Aspose.Cells Cloud per aggiungere oggetti OLE ai fogli di calcolo Excel. L'API può essere chiamata direttamente o tramite SDK per C#, Java, PHP, Ruby, Node.js, Python, Perl e Go."
+ArticleTitle: "Aggiungi un oggetto OLE a un foglio di calcolo Excel con l'API Aspose.Cells Cloud"
 weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Aggiungi un oggetto OLE in un foglio di lavoro Excel
 ---
-Questo REST API indica `add OLE object` in un foglio di lavoro Excel.
 
-## RSET API
+L'API Aspose.Cells Cloud consente la manipolazione programmatica di cartelle di lavoro Excel, inclusa la possibilità di incorporare oggetti OLE (ad esempio documenti Word, PDF o altri file binari) direttamente in un foglio di calcolo.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
- 
+Questa API REST aggiunge un **oggetto OLE** a un foglio di calcolo Excel.
+
+**Prerequisiti** – È necessario disporre di un token di autenticazione JWT valido e i file di origine a cui fanno riferimento `oleFile` o `imageFile` devono essere caricati nella posizione di archiviazione specificata prima di richiamare l'endpoint.
+
+## API PutWorksheetOleObject
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome della cartella di lavoro.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| oleObject|| corpo| Oggetto Ole|
-| riga superiore sinistra| intero| domanda|0 |
-| colonnain alto a sinistra| intero| domanda|0 |
-| altezza| intero| domanda|0 |
-| larghezza| intero| domanda|0 |
-| oleFile| corda| domanda| Nome file OLE|
-| file immagine| corda| domanda| Nome file immagine|
-| cartella| corda| domanda| La cartella della cartella di lavoro.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### Parametri della richiesta
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Nome parametro  | Tipo    | Posizione | Descrizione                                        |
+| --------------- | ------- | --------- | -------------------------------------------------- |
+| name            | string  | path      | Nome del file della cartella di lavoro.            |
+| sheetName       | string  | path      | Nome del foglio di calcolo.                        |
+| oleObject       | object  | body      | Definizione dell'oggetto OLE.                      |
+| upperLeftRow    | integer | query     | Indice di riga dell'angolo superiore sinistro (default 0). |
+| upperLeftColumn | integer | query     | Indice di colonna dell'angolo superiore sinistro (default 0). |
+| height          | integer | query     | Altezza dell'oggetto OLE (default 0).              |
+| width           | integer | query     | Larghezza dell'oggetto OLE (default 0).            |
+| oleFile         | string  | query     | Nome del file sorgente OLE.                        |
+| imageFile       | string  | query     | Nome del file immagine di anteprima.               |
+| folder          | string  | query     | Cartella contenente la cartella di lavoro.         |
+| storageName     | string  | query     | Nome dell'archiviazione da utilizzare.             |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Note** – `upperLeftRow` e `upperLeftColumn` utilizzano un indicizzazione a base zero. Il file `oleFile` (e opzionalmente `imageFile`) deve già esistere nell'archiviazione di destinazione; altrimenti la richiesta restituirà un errore.
+
+La [specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject) definisce un'interfaccia di programmazione pubblicamente accessibile e consente di effettuare interazioni REST direttamente da un browser web.
+
+È possibile utilizzare lo strumento a riga di comando **cURL** per chiamare i servizi web di Aspose.Cells. L'esempio seguente dimostra come aggiungere un oggetto OLE con cURL. **Per tutte le chiamate in produzione è obbligatorio HTTPS.**
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobjects" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"ImageSourceFullName":"aspose-logo.png", "IsAutoSize":true, "SourceFullName":"Sample_Book2.xls", "UpperLeftRow":15, "Top":10, "UpperLeftColumn":5, "Left":10,"Width":400, "Height":400}'
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobjects" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"ImageSourceFullName":"aspose-logo.png", "IsAutoSize":true, "SourceFullName":"Sample_Book2.xls", "UpperLeftRow":15, "Top":10, "UpperLeftColumn":5, "Left":10, "Width":400, "Height":400}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+![Screenshot che mostra un oggetto OLE incorporato in un foglio di calcolo Excel](/cells/images/ole-object-example.png)
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+**Codici di stato HTTP possibili**
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+| Codice | Descrizione                                              |
+|--------|----------------------------------------------------------|
+| 200    | Oggetto OLE aggiunto correttamente.                      |
+| 400    | Richiesta non valida – parametri mancanti o non validi.  |
+| 401    | Non autorizzato – token JWT non valido o mancante.       |
+| 404    | Non trovato – la cartella di lavoro, il foglio o il file sorgente non esiste. |
+| 500    | Errore interno del server – errore imprevisto.           |
+
+Una tipica risposta positiva restituisce il seguente payload JSON:
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "Data": {
+    "OleObjectId": "12345",
+    "UpperLeftRow": 15,
+    "UpperLeftColumn": 5,
+    "Width": 400,
+    "Height": 400,
+    "SourceFullName": "Sample_Book2.xls",
+    "ImageSourceFullName": "aspose-logo.png"
+  }
+}
+```
+
+## Famiglia di SDK per il Cloud
+
+Utilizzare un SDK accelera lo sviluppo. Un SDK astrae i dettagli a basso livello, consentendoti di concentrarti sulla logica di business. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come richiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

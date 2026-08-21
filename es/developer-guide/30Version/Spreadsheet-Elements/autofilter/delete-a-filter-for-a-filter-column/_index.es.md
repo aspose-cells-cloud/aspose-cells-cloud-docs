@@ -1,84 +1,106 @@
-﻿---
-title: Eliminar un filtro en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Eliminar filtro
+---
+title: "Eliminar un filtro de una hoja de cálculo de Excel – Aspose.Cells Cloud API"
+second_title: "Documento"
+linktitle: "Eliminar filtro"
 type: docs
 url: /es/delete-filter/
-aliases: [/delete-a-filter-for-a-filter-column/,/delete-auto-filter/]
-keywords: Deletes a filter on an Excel worksheet
-description: El SDK Aspose.Cells Cloud API permite eliminar un filtro en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+aliases: [/delete-a-filter-for-a-filter-column/, /delete-auto-filter/]
+keywords: "Aspose.Cells Cloud, eliminar filtro, Excel, REST API, SDK"
+description: "Aprenda cómo eliminar un filtro automático de una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud, cURL y SDKs (C#, Java, Python, etc.). Incluye endpoint, parámetros, autenticación y código de ejemplo."
 weight: 100
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Eliminar un filtro en una hoja de cálculo Excel
 ---
-Este REST API indica eliminar un `filter` en una hoja de trabajo Excel.
 
-## RSET API
+## API REST
+
+Esta API REST elimina un **filtro automático** en una hoja de cálculo de Excel.
 
 ```bash
-
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
-
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
 ```
 
-Los parámetros de la solicitud son:
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| Camino| El nombre del libro de trabajo.|
-| nombreHoja| cadena| Camino| El nombre de la hoja de trabajo.|
-|rango|cadena| Consulta||
-|índice de campo|entero| Consulta||
-|Tipo de agrupación de fecha y hora|cadena| Consulta| Día/Hora/Minuto/Mes/Segundo/Año|
-|año|entero| Consulta||
-|mes|entero| Consulta||
-|día|entero| Consulta||
-|hora|entero| Consulta||
-|minuto|entero| Consulta||
-|segundo|entero| Consulta||
-|MatchBlanks|cadena| Consulta|verdadero/falso|
-|refrescar|cadena| Consulta|verdadero/falso|
-|carpeta|cadena| Consulta|Carpeta del libro de trabajo original.|
-|nombreDeAlmacenamiento|cadena| Consulta|Nombre de almacenamiento.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+### Parámetros de solicitud
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+| Nombre del parámetro       | Tipo    | Ubicación | ¿Obligatorio? | Descripción                                                                                      |
+| -------------------------- | ------- | --------- | ------------- | ------------------------------------------------------------------------------------------------ |
+| **name**                   | string  | Ruta      | Sí            | Nombre del libro.                                                                                |
+| **sheetName**              | string  | Ruta      | Sí            | Nombre de la hoja de cálculo.                                                                    |
+| **range**                  | string  | Consulta  | No            | Rango de celdas al que se aplica el filtro (por ejemplo, `A1:C10`).                              |
+| **fieldIndex**             | integer | Consulta  | Sí            | Índice de base cero de la columna a la que se aplica el filtro.                                  |
+| **dateTimeGroupingType**   | string  | Consulta  | No            | Cómo se agrupan los valores de fecha/hora: `Day`, `Hour`, `Minute`, `Month`, `Second` o `Year`. |
+| **year**                   | integer | Consulta  | No            | Componente de año para la agrupación de fechas.                                                  |
+| **month**                  | integer | Consulta  | No            | Componente de mes para la agrupación de fechas.                                                  |
+| **day**                    | integer | Consulta  | No            | Componente de día para la agrupación de fechas.                                                  |
+| **hour**                   | integer | Consulta  | No            | Componente de hora para la agrupación de fechas.                                                 |
+| **minute**                 | integer | Consulta  | No            | Componente de minuto para la agrupación de fechas.                                               |
+| **second**                 | integer | Consulta  | No            | Componente de segundo para la agrupación de fechas.                                              |
+| **matchBlanks**            | boolean | Consulta  | No            | `true` / `false` – si se incluyen celdas en blanco en el filtro.                                |
+| **refresh**                | boolean | Consulta  | No            | `true` / `false` – si se debe actualizar la hoja de cálculo tras la eliminación.                |
+| **folder**                 | string  | Consulta  | No            | Carpeta original del libro.                                                                      |
+| **storageName**            | string  | Consulta  | No            | Nombre del almacenamiento.                                                                       |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Respuesta**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                                                 |
+|--------|-----------------------------|-----------------------------------------------------------------------------|
+| 200    | OK                          | Filtro eliminado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros faltantes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT inválido o faltante.                                              |
+| 413    | Payload demasiado grande     | El archivo subido excede el límite de tamaño.                              |
+| 500    | Error interno del servidor  | Error inesperado en el servidor.                                            |
+
+## Cómo usar la API DeleteWorksheetFilter con SDKs
+
+### Especificación de la API DeleteWorksheetFilter
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) define una interfaz de programación públicamente accesible y permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo llamar a la API en la nube mediante cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?fieldIndex=0&criteria=Year" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?fieldIndex=0&dateTimeGroupingType=Year" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Familia de SDK en la nube
+### Utilizar los SDKs de Aspose.Cells Cloud
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más eficiente de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel, permitiéndole centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDKs de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante diversos SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

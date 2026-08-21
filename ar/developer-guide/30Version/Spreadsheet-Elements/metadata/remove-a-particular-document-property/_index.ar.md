@@ -1,78 +1,77 @@
-﻿---
-title: حذف خاصية مستند معينة
-second_title: Documen
-linktitle: حذف
-type: docs
-url: /ar/document-properties/delete/
-aliases: [/remove-a-particular-document-property/]
-keywords: Delete, and update properties from excel files
-description: يدعم Cloud REST حذف الخصائص من ملفات Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 50
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حذف خاصية مستند معينة
 ---
-يشير هذا REST API إلى خاصية المستند `delete`.
+title: "حذف خاصية مستند محددة"
+second_title: "المستند"
+linktitle: "حذف"
+type: docs
+url: /document-properties/delete/
+aliases: [/remove-a-particular-document-property/]
+keywords: "Aspose.Cells, حذف خاصية المستند, واجهة برمجة تطبيقات بيانات ميتا للإكسل, REST, وحدة تحكم سحابية, مثال cURL"
+description: "حذف خاصية مستند محددة من ملف عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API الإصدار 3.0. يتضمن أمثلة لـ cURL ووحدات التحكم (SDKs) لـ C# وJava وPython وغيرها."
+weight: 50
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية (REST API) بحذف خاصية مستند من ملف عمل.
+
+## واجهة برمجة تطبيقات REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
 ```
 
-معلمات الطلب هي:
+### معلمات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم العقار| خيط| طريق| اسم العقار.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعلمة | النوع | الموقع | الإلزام | الوصف |
+| ------------ | ------ | -------- | -------- | --------------------------------------------- |
+| name | string | path | نعم | اسم ملف عمل إكسل. |
+| propertyName | string | path | نعم | اسم خاصية المستند المراد حذفها. |
+| folder | string | query | لا | مسار المجلد الذي يخزن فيه ملف العمل. |
+| storageName | string | query | لا | اسم خدمة التخزين. |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty) واجهة برمجة قابلة للوصول بشكل عام وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب الخاصة بـ Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author"  \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author" \
+     -X DELETE \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-  
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استجابات الأخطاء
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| حالة HTTP | الوصف | مثال JSON |
+| ----------- | ----------------------------------------------------------------------- | ------------------------------------------------------------- |
+| 400 | طلب غير صحيح – معلمات مطلوبة مفقودة أو قيم غير صالحة. | `{"Code":400,"Message":"Missing required parameter 'name'."}` |
+| 401 | غير مصرح به – رمز JWT غير صالح أو غير موجود. | `{"Code":401,"Message":"Invalid access token."}` |
+| 404 | غير موجود – ملف العمل أو الخاصية المحددة غير موجود. | `{"Code":404,"Message":"Document property not found."}` |
+| 500 | خطأ داخلي في الخادم – حدثت حالة غير متوقعة على الخادم. | `{"Code":500,"Message":"An unexpected error has occurred."}` |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+## عائلة وحدات التحكم (SDK) السحابية
+
+استخدام وحدة التحكم (SDK) هو أفضل طريقة لتسريع عملية التطوير. فوحدات التحكم تتعامل مع التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بوحدات تحكم Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية إجراء مكالمات لخدمات الويب الخاصة بـ Aspose.Cells باستخدام مختلف وحدات التحكم (SDKs):
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

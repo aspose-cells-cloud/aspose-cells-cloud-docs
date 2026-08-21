@@ -1,64 +1,68 @@
-﻿---
-title: Cléa
-type: docs
-url: /fr/hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
-keywords: Clear hyperlinks from an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge la suppression des hyperliens d'une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 40
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Effacer
 ---
-Ce REST API indique `delete all hyperlinks` sur une feuille de calcul Excel.
+title: "Effacer les liens hypertexte"
+type: docs
+url: /hyperlinks/clear/
+aliases: [/add-hyperlinks-to-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, effacer les liens hypertexte, supprimer les liens hypertexte, API REST, feuille de calcul, SDK"
+description: "Découvrez comment supprimer tous les liens hypertexte d'une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud ou de l'un des SDK pris en charge (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl, etc.)."
+weight: 40
+ArticleTitle: "Effacer les liens hypertexte – Documentation de l'API Aspose.Cells Cloud"
+---
 
-## RSET API
+Cette API REST supprime **tous les liens hypertexte** d'une feuille de calcul Excel.
+
+## Sécurité et authentification
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une [authentification basée sur un jeton JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-Les paramètres de la requête sont :
+### Paramètres de la requête
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type   | Emplacement | Description                                  |
+| ---------------- | ------ | ----------- | -------------------------------------------- |
+| name             | string | path        | Le nom du fichier Excel.                     |
+| sheetName        | string | path        | Le nom de la feuille de calcul.              |
+| folder           | string | query       | Le dossier contenant le document.            |
+| storageName      | string | query       | Le nom du service de stockage.               |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/DeleteWorksheetHyperlinks) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Réponses d’erreur
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Code HTTP | Raison                                                   | Corps d’exemple                                                                 |
+| --------- | -------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| **400**   | Requête incorrecte – paramètres manquants ou non valides. | `{ "Code":"400", "Message":"Valeur de paramètre non valide." }`                |
+| **401**   | Non autorisé – jeton JWT manquant ou non valide.         | `{ "Code":"401", "Message":"Le jeton d’accès est manquant ou non valide." }`   |
+| **404**   | Introuvable – classeur ou feuille de calcul inexistante. | `{ "Code":"404", "Message":"Fichier introuvable." }`                           |
+| **500**   | Erreur interne du serveur – défaillance serveur inattendue. | `{ "Code":"500", "Message":"Une erreur inattendue s’est produite." }`         |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Hyperlinks/DeleteWorksheetHyperlinks) définit une interface de programmation publiquement accessible, vous permettant d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande **cURL** pour appeler les services web Aspose.Cells. L’exemple ci-dessous montre comment supprimer tous les liens hypertexte d’une feuille de calcul.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test1.xlsx/worksheets/Sheet1/hyperlinks" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -67,9 +71,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test1.xlsx/worksheets/Sheet1/hyperl
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK accélère le développement en gérant les détails de bas niveau pour vous. Pour obtenir la liste complète des SDK Aspose.Cells Cloud, rendez-vous sur le [dépôt GitHub](https://github.com/aspose-cells-cloud).
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment supprimer les liens hypertexte d’une feuille de calcul à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,77 +1,82 @@
-﻿---
-title: Excel Çalışma Sayfasındaki camları dondurun
-second_title: Documen
-linktitle: Dondur
-type: docs
-url: /tr/worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/,/worksheets/freeze-panes/]
-keywords: Freeze panes on an Excel Worksheet
-description: Aspose.Cells Cloud REST API, Excel Çalışma Sayfasında bölmeleri dondurmayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 190
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel Çalışma Sayfasındaki bölmeleri dondurma
 ---
-Bu REST API, Excel çalışma sayfasında `set freeze panes`'i göstermektedir.
- 
-## RSET API
- 
+title: "Excel Çalışma Sayfasında Bölmeleri Dondurma"
+second_title: "Belge"
+linktitle: "Dondur"
+type: docs
+url: /worksheets/panes/freeze/
+aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+keywords: "Aspose.Cells Cloud, Bölmeleri Dondurma, Excel, REST API, Çalışma Sayfası"
+description: "Aspose.Cells Cloud REST API ile bir Excel çalışma sayfasında satır ve sütunları nasıl donduracağını öğrenin. Uç nokta sözdizimi, gerekli parametreler, cURL örneği, kimlik doğrulama yönlendirmesi, hata yanıt ayrıntıları ve birden fazla dil için SDK kod örneklerini içerir."
+weight: 190
+---
+
+Bu REST API, bir Excel çalışma sayfasında bölmeleri **dondurur**.
+
+## REST API
+
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
 ```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| sıra| tam sayı| sorgu||
-| kolon| tam sayı| sorgu||
-| dondurulmuşSatırlar| tam sayı| sorgu||
-| dondurulmuşSütunlar| tam sayı| sorgu||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
- 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetFreezePanes) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+İstek parametreleri:
+
+| Parametre Adı | Tür      | Konum  | Açıklama                                            |
+| ------------- | -------- | ------ | --------------------------------------------------- |
+| name          | string   | path   | Çalışma kitabının dosya adı.                        |
+| sheetName     | string   | path   | Bölmelerin dondurulacağı çalışma sayfasının adı.    |
+| row           | integer  | query  | İlk **dondurulmamış** satırın sıfır tabanlı indeksi. |
+| column        | integer  | query  | İlk **dondurulmamış** sütunun sıfır tabanlı indeksi. |
+| frozenRows    | integer  | query  | Üstten itibaren dondurulacak satır sayısı.          |
+| frozenColumns | integer  | query  | Soldan itibaren dondurulacak sütun sayısı.          |
+| folder        | string   | query  | Çalışma kitabının bulunduğu depolama klasör yolu.   |
+| storageName   | string   | query  | Depolama hizmetinin adı.                            |
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetFreezePanes), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye istek nasıl yapılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/freezepanes?row=1&column=1&freezedRows=1&freezedColumns=1" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/freezepanes?row=1&column=1&frozenRows=1&frozenColumns=1" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
- 
+
+### Hata Yanıtı
+
+| HTTP Durumu               | Kod | Mesaj                           | Örnek                                                    |
+| ------------------------- | --- | ------------------------------- | -------------------------------------------------------- |
+| 400 Bad Request           | 400 | Geçersiz parametreler           | `{ "Code": 400, "Message": "Geçersiz frozenRows değeri" }` |
+| 401 Unauthorized          | 401 | Eksik veya geçersiz JWT jetonu  | `{ "Code": 401, "Message": "Geçersiz erişim jetonu" }`   |
+| 404 Not Found             | 404 | Çalışma kitabını veya çalışma sayfasını bulamadı | `{ "Code": 404, "Message": "Dosya bulunamadı" }` |
+| 500 Internal Server Error | 500 | Beklenmeyen sunucu hatası       | `{ "Code": 500, "Message": "İç sunucu hatası" }`         |
+
+## Bulut SDK Geliştirme Seti Ailesi
+
+Bir SDK kullanmak, geliştirme hızını en çok artıran en iyi yoldur. Bir SDK, düşük seviye ayrıntıları işler; böylece projenizin görevlerine odaklanabilirsiniz. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
+
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerine farklı SDK’lar kullanarak nasıl istek yapıldığını göstermektedir:
+
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}

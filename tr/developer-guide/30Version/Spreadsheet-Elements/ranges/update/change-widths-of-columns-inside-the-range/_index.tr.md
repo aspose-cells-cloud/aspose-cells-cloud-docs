@@ -1,75 +1,104 @@
-﻿---
-title: Rang İçindeki Sütunların Genişliklerini Değiştir
-second_title: Documen
-linktitle: Sütun genişliği
-type: docs
-url: /tr/ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
-keywords: Set column width for range on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki aralık için sütun genişliğini ayarlamayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 74
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Aralık İçindeki Sütunların Genişliklerini Değiştirme
 ---
-Bu REST API, aralığın sütun genişliğini ayarla'yı gösterir
+title: "Aralık İçinde Sütun Genişliklerini Değiştirme"
+ArticleTitle: "Aralık İçinde Sütun Genişliklerini Değiştirme – Aspose.Cells Cloud API"
+second_title: "Belge"
+linktitle: "Sütun genişliği"
+type: docs
+url: /ranges/update/column-width/
+aliases: [/change-widths-of-columns-inside-the-range/]
+keywords: "Aspose.Cells, sütun genişliği, REST API, Excel, SDK, aralık, bulut"
+description: "Aspose.Cells Cloud REST API veya SDK’ları (C#, Java, Python vb.) kullanarak bir aralık içinde sütun genişliklerini nasıl değiştireceğinizi öğrenin. cURL, istek/yanıt ayrıntıları ve kimlik doğrulama adımları içerir."
+weight: 74
+---
 
-## RSET API
+Bu REST API, bir aralığın sütun genişliğini ayarlar.
+
+## Güvenlik ve Kimlik Doğrulama
+Aspose.Cells Cloud API’leri güvenlidir ve [JWT token tabanlı kimlik doğrulama](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) gerektirir.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth
- 
 ```
 
-İstek parametreleri şunlardır:
+**Önkoşullar** – Uç noktayı çağırmadan önce şunları yapmanız gerekir:
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| değer| sayı| sorgu||
-| menzil|| vücut||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
+1. Bir Aspose Cloud hesabı oluşturun ve bir *istemci ID* ile *istemci gizli anahtarı* edinin.  
+2. OAuth uç noktasını (`/connect/token`) çağırarak bir JWT token isteyin. Token, `access_token` alanında döndürülür.  
+3. Hedef çalışma kitabını Aspose Cloud depo alanınıza yükleyin (veya zaten belirtilen klasörde mevcut olduğundan emin olun).  
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeColumnWidth) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+İstek parametreleri aşağıdaki gibidir:
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı  | Tür     | Konum   | Açıklama                                      |
+|----------------|---------|---------|-----------------------------------------------|
+| name           | string  | path    | Çalışma kitabı dosyasının adı                  |
+| sheetName      | string  | path    | Çalışma sayfasının adı                         |
+| value          | number  | query   | İstenen sütun genişliği değeri                 |
+| range          | object  | body    | Hedef hücreleri tanımlayan aralık nesnesi      |
+| folder         | string  | query   | Çalışma kitabının depolandığı klasör yolu      |
+| storageName    | string  | query   | Depolama hizmetinin adı                        |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeColumnWidth), herkese açık erişilebilir bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’ye nasıl istek yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
+<h3 id="request">İstek</h3>
+
 ```bash
- 
+# *test.xlsx* adlı çalışma kitabının,
+# *Sheet1* adlı çalışma sayfasının seçili sütunlarının genişliğini 20 punto olarak ayarlamak için sütun genişliği uç noktasını çağırın.
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/columnWidth?value=20" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}" 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "ColumnCount": 7,
+        "ColumnWidth": 19,
+        "FirstColumn": 0,
+        "FirstRow": 9,
+        "Name": "string",
+        "RefersTo": "string",
+        "RowCount": 1,
+        "RowHeight": 15,
+        "Worksheet": "Sheet1"
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+<h3 id="response">Yanıt</h3>
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+*Olası hata yanıtları*  
+
+| HTTP Kodu | Açıklama                                  |
+|-----------|-------------------------------------------|
+| 400       | Hatalı İstek – geçersiz JSON veya parametreler |
+| 401       | Yetkisiz – eksik veya geçersiz token      |
+| 404       | Bulunamadı – çalışma kitabı veya çalışma sayfası eksik |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
 ## Bulut SDK Ailesi
+Bir SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, düşük seviye detayları yöneterek size proje görevlerinize odaklanma imkanı sunar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
-
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerini çeşitli SDK’lar kullanarak nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -122,3 +151,25 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## SSS
+
+**S:** *Bir Excel çalışma kitabında bir aralığın sütun genişliğini ayarlamak için hangi uç noktayı çağırırım?*  
+**C:** `POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth` (burada `{name}` çalışma kitabı dosya adıdır ve `{sheetName}` hedef çalışma sayfasıdır).
+
+**S:** *Sütun genişliği API’sini kullanırken isteği nasıl kimlik doğrularım?*  
+**C:** `Authorization: Bearer <jwt token>` başlığını ekleyin. JWT token’ı, istemci ID ve istemci gizli anahtarınızla Aspose Cloud OAuth akışı (`/connect/token`) aracılığıyla edinin.
+
+**S:** *Sütun A’dan C’ye kadar olan genişliği 25 punto yapmak için hangi JSON gövdesini göndermeliyim?*  
+**C:**  
+
+```json
+{
+  "FirstColumn": 0,
+  "ColumnCount": 3,
+  "FirstRow": 0,
+  "RowCount": 1
+}
+```
+
+İsteğe URL’ye `value=25` sorgu parametresini ekleyin.

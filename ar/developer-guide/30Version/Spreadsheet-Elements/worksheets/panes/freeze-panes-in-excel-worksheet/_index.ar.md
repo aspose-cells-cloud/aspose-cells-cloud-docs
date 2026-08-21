@@ -1,77 +1,82 @@
-﻿---
-title: تجميد الأجزاء في ورقة العمل Excel
-second_title: Documen
-linktitle: تجميد
-type: docs
-url: /ar/worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/,/worksheets/freeze-panes/]
-keywords: Freeze panes on an Excel Worksheet
-description: يدعم Cloud REST Aspose.Cells تجميد الأجزاء في ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 190
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تجميد الأجزاء في ورقة عمل Excel
 ---
-يشير هذا REST API إلى `set freeze panes` في ورقة العمل Excel.
- 
-## RSET API
- 
+title: "تجميد الأقسام في ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "تجميد"
+type: docs
+url: /worksheets/panes/freeze/
+aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+keywords: "Aspose.Cells Cloud, تجميد الأقسام, Excel, REST API, ورقة العمل"
+description: "تعرّف على كيفية تجميد الصفوف والأعمدة في ورقة عمل Excel باستخدام REST API الخاص بـ Aspose.Cells Cloud. يتضمّن بنية نقطة نهاية التوصيل، والمعلمات المطلوبة، ومثال على استخدام cURL، وإرشادات المصادقة، وتفاصيل استجابة الأخطاء، وأكواد أمثلة باستخدام SDKs بلغات برمجة متعددة."
+weight: 190
+---
+
+تُستخدم هذه الواجهة البرمجية **لتحديد** تجميد الأقسام في ورقة عمل Excel.
+
+## واجهة REST API
+
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
 ```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| صف| عدد صحيح| استفسار||
-| عمود| عدد صحيح| استفسار||
-| صفوف مجمدة| عدد صحيح| استفسار||
-| أعمدة مجمدة| عدد صحيح| استفسار||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
- 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetFreezePanes) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+تتضمن معلمات الطلب ما يلي:
+
+| اسم المعلمة   | النوع    | الموقع  | الوصف                                              |
+| -------------- | ------- | ------- | --------------------------------------------------- |
+| name           | string  | path    | اسم ملف المصنف.                                     |
+| sheetName      | string  | path    | اسم ورقة العمل التي سيتم تجميد أقسامها فيها.         |
+| row            | integer | query   | الفهرس الصفرِي للصف الأول **غير المُجمّد**.          |
+| column         | integer | query   | الفهرس الصفرِي للعمود الأول **غير المُجمّد**.        |
+| frozenRows     | integer | query   | عدد الصفوف المراد تجميدها ابتداءً من الأعلى.         |
+| frozenColumns  | integer | query   | عدد الأعمدة المراد تجميدها ابتداءً من اليسار.         |
+| folder         | string  | query   | مسار المجلد في التخزين حيث يقع المصنف.               |
+| storageName    | string  | query   | اسم خدمة التخزين.                                   |
+
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetFreezePanes) واجهة برمجة قابلة للوصول من خارج النظام، ويتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات Aspose.Cells عبر الويب. يُظهر المثال التالي كيفية إجراء مكالمات لواجهة Cloud API باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/freezepanes?row=1&column=1&freezedRows=1&freezedColumns=1" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/freezepanes?row=1&column=1&frozenRows=1&frozenColumns=1" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
- 
+
+### استجابة الأخطاء
+
+| حالة HTTP                 | الكود | الرسالة                         | المثال                                                  |
+| ------------------------- | ---- | ------------------------------- | -------------------------------------------------------- |
+| 400 Bad Request           | 400  | معلمات غير صالحة                | `{ "Code": 400, "Message": "قيمة frozenRows غير صالحة" }` |
+| 401 Unauthorized          | 401  | رمز JWT مفقود أو غير صالح      | `{ "Code": 401, "Message": "رمز الوصول غير صالح" }`     |
+| 404 Not Found             | 404  | المصنف أو ورقة العمل غير موجود | `{ "Code": 404, "Message": "الملف غير موجود" }`           |
+| 500 Internal Server Error | 500  | خطأ غير متوقع في الخادم         | `{ "Code": 500, "Message": "خطأ داخلي في الخادم" }`    |
+
+## عائلة SDK للسحابة
+
+يُعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. فتتولى SDK معالجة التفاصيل منخفضة المستوى، مما يمكّنك من التركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية إجراء مكالمات لخدمات Aspose.Cells عبر وسائل مختلفة باستخدام SDKs:
+
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}

@@ -1,63 +1,69 @@
-﻿---
-title: Excel çalışma sayfasından satır açıklamasını al
-second_title: Documen
-linktitle: Ro
-type: docs
-url: /tr/rows/get/row/
-aliases: [/get-row-from-a-worksheet/]
-keywords: Get row info on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında satır bilgisi almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasından satır açıklamasını al
 ---
-Bu REST API, Excel çalışma sayfasındaki satırın indeksine göre satır verisini almayı gösterir.
+title: "Bir Excel Çalışma Sayfasından Satır Açıklaması Alın"
+second_title: "Belge"
+linktitle: "Satır"
+type: docs
+url: /rows/get/row/
+aliases: [/get-row-from-a-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel satır API'si, Çalışma Sayfası Satırı Al, REST API, .NET SDK, Java SDK, Python SDK"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki belirli bir satırın (yükseklik, stil, gizli durumu vb.) ayrıntılı bilgilerini alın. cURL örneği, SDK kod parçacıkları ve hata yönetimi içerir."
+weight: 10
+ArticleTitle: "Bir Excel Çalışma Sayfasından Satır Açıklaması Alın – Aspose.Cells Cloud API"
+---
 
-## RSET API
+**Ön Gereksinimler:**
+- Geçerli bir JWT erişim belirteci edinin ve bunu `Authorization: Bearer <jwt token>` başlığına ekleyin.
+- Çalışma kitabının Aspose Cloud deposunda depolandığından emin olun veya yer aldığı klasör yolunu belirtin.
+- Uç nokta URL'inde gösterildiği gibi API sürümünü **v3.0** olarak kullanın.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
- 
+Bu REST API, bir Excel çalışma sayfasındaki satır verilerini indeksine göre alır.
+
+## GetWorksheetRow API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| satırIndeksi| tam sayı| yol| Satır dizini.|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **İstek Parametreleri**
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı | Tür      | Konum | Açıklama                                              |
+|---------------|----------|-------|-------------------------------------------------------|
+| name          | string   | path  | Çalışma kitabının dosya adı.                          |
+| sheetName     | string   | path  | Çalışma kitabındaki çalışma sayfasının adı.          |
+| rowIndex      | integer  | path  | Alınacak satırın sıfır tabanlı indeksi.              |
+| folder        | string   | query | Çalışma kitabını içeren klasör.                       |
+| storageName   | string   | query | Çalışma kitabının bulunduğu depo adı.                |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'ye istek nasıl atılacağını göstermektedir. İsteği kimlik doğrulamak için `Authorization: Bearer <jwt token>` başlığını ekleyin.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
   "Row": {
     "GroupLevel": 0,
     "Height": 13.5,
-    "Index": 10,
+    "Index": 0,
     "IsBlank": false,
     "IsHeightMatched": true,
     "IsHidden": false,
@@ -68,25 +74,55 @@ curl -v "http://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/ro
       }
     },
     "link": {
-      "Href": "api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/rows/10",
+      "Href": "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/rows/0",
       "Rel": "self"
     }
   },
   "Code": 200,
   "Status": "OK"
 }
- 
 ```
+
+**Yanıt şeması**
+
+| Özellik           | Tür       | Açıklama                                                              |
+|--------------------|-----------|-----------------------------------------------------------------------|
+| `GroupLevel`       | integer   | Satırın taslak düzeyi (gruplama için kullanılır).                     |
+| `Height`           | number    | Satırın nokta cinsinden yüksekliği.                                   |
+| `Index`            | integer   | Döndürülen satırın sıfır tabanlı indeksi.                             |
+| `IsBlank`          | boolean   | Satırda herhangi bir veri olup olmadığını gösterir.                   |
+| `IsHeightMatched`  | boolean   | Satır yüksekliği varsayılan satır yüksekliğiyle eşleşiyorsa `true`.   |
+| `IsHidden`         | boolean   | Satır gizliyse `true`.                                                |
+| `Style`            | object    | Satır için stil bilgilerini içeren nesne.                             |
+| `link`             | object    | Satır kaynağına yönelik hiperbağlantı referansı.                      |
+| `Code`             | integer   | Yanıtın HTTP durum kodu.                                              |
+| `Status`           | string    | Durumun metinsel açıklaması (örneğin, “OK”).                         |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+**Notlar / Hata Yönetimi:** API aşağıdaki HTTP durum kodlarından birini döndürebilir:
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+- **200** – Başarılı; satır verileri döndürülür.  
+- **401** – Yetkisiz; JWT belirteci eksik veya geçersiz.  
+- **404** – Bulunamadı; belirtilen çalışma kitabı, çalışma sayfası veya satır mevcut değil.  
+- **500** – Sunucu iç hatası; beklenmeyen bir durum oluştu.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+| Kod  | Açıklama                                      | Giderme                                  |
+|------|-----------------------------------------------|------------------------------------------|
+| 200  | Başarılı – satır verileri döndürüldü.         | –                                        |
+| 401  | Yetkisiz – eksik veya geçersiz JWT belirteci. | Geçerli bir JWT belirteci sağlayın.      |
+| 404  | Bulunamadı – çalışma kitabı, çalışma sayfası veya satır eksik.| Adları ve satır indeksini kontrol edin. |
+| 500  | Sunucu iç hatası – beklenmeyen durum.         | Aspose desteğiyle iletişime geçin.       |
+
+Hata kodlarının tam listesi için Aspose.Cells Cloud [Hata Kodları belgesine](https://docs.aspose.cloud/cells/) bakın.
+
+## Cloud SDK Ailesi
+
+SDK kullanmak geliştirmenin en hızlı yoludur. Bir SDK, düşük seviyeli ayrıntıları soyutlayarak proje görevlerinize odaklanmanıza olanak tanır. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, farklı SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl istek atılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

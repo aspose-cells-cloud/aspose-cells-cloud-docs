@@ -1,348 +1,307 @@
-﻿---
-title: Hämta cellstil från ett arbetsblad
+---
+title: "Hämta cellstil från ett kalkylblad – Aspose.Cells Cloud API"
 type: docs
 url: /sv/get-cell-style-from-a-worksheet/
 weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta cellstil från ett kalkylblad
+keywords: "Aspose.Cells, Excel, REST API, cellstil, kalkylark, molnbaserat SDK, API-dokumentation"
+description: "Lär dig hur du hämtar stilinformation för en specifik cell i ett Excel-kalkylblad med Aspose.Cells Cloud REST API v3. Innehåller cURL-exempel, svarsschema, statuskoder och SDK-utdrag."
+ArticleTitle: "Hämta cellstil från ett kalkylblad med Aspose.Cells Cloud API – detaljerad guide"
 ---
-Denna REST API indikerar hämtning av cell `style` i en Excel-fil.
 
-## RSET API
+Använd detta REST API för att hämta **stilen** på en cell i ett Excel-kalkylblad.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
- 
+## GetWorksheetCellStyle API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| cellnamn| sträng| väg| Cellens namn.|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCellStyle) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begärningsparametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Parameternamn | Typ   | Plats  | Beskrivning                        |
+| ------------- | ----- | ------ | ---------------------------------- |
+| name          | string | path   | Namnet på Excel-dokumentet.        |
+| sheetName     | string | path   | Namnet på kalkylbladet.            |
+| cellName      | string | path   | Cellens adress (t.ex. A1).         |
+| folder        | string | query  | Mappen som innehåller filen.       |
+| storageName   | string | query  | Namnet på den lagringsplats som ska användas. |
+
+
+### **Svar**
+
+```json
+{
+  "Style": {
+    "Font": {
+      "Color": { "A": 255, "R": 5, "G": 99, "B": 193 },
+      "DoubleSize": 11,
+      "IsBold": false,
+      "IsItalic": false,
+      "IsStrikeout": false,
+      "IsSubscript": false,
+      "IsSuperscript": false,
+      "Name": "Calibri",
+      "Size": 11,
+      "Underline": "Single"
+    },
+    "Name": null,
+    "CultureCustom": "General",
+    "Custom": "",
+    "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+    "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+    "IsFormulaHidden": false,
+    "IsDateTime": false,
+    "IsTextWrapped": false,
+    "IsGradient": false,
+    "IsLocked": true,
+    "IsPercent": false,
+    "ShrinkToFit": false,
+    "IndentLevel": 0,
+    "Number": 0,
+    "RotationAngle": 0,
+    "Pattern": "None",
+    "TextDirection": "Context",
+    "VerticalAlignment": "Bottom",
+    "HorizontalAlignment": "General",
+    "BorderCollection": [
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "BottomBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "DiagonalDown"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "DiagonalUp"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "Horizontal"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "LeftBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "RightBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "TopBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "Vertical"
+      }
+    ],
+    "BackgroundThemeColor": null,
+    "ForegroundThemeColor": null,
+    "link": {
+      "Href": "/test.xlsx/worksheets/Sheet1/cells/a1/style",
+      "Rel": "self",
+      "Title": null,
+      "Type": null
+    }
+  },
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                             |
+|-----|-----------------------------|---------------------------------------------------------|
+| 200 | OK                          | Filter applicerades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Autentisering misslyckades  | Ogiltig eller saknad JWT-token.                         |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen.       |
+| 500 | Internt serverfel           | Oväntat serverfel.                                      |
+
+**Felaktiga svar**  
+Typiska fel-svar för denna slutpunkt följer det standardiserade Aspose.Cells-felformatet. Ett 400 Bad Request-svar ser till exempel ut så här:
+
+```json
+{
+  "Code": 400,
+  "Message": "Ogiltig parameter 'cellName'.",
+  "Description": "Cellnamnet som angavs är inte i giltigt A1-format."
+}
+```
+
+Ett 401 Unauthorized-svar ser i sin tur ut så här:
+
+```json
+{
+  "Code": 401,
+  "Message": "Autentisering misslyckades.",
+  "Description": "JWT-token saknas eller är ogiltig."
+}
+```
+
+## Hur man använder GetWorksheetCellStyle API med SDK:er
+
+### GetWorksheetCellStyle API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCellStyle) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för att enkelt komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör ett anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/a1/style" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-
   "Style": {
-
     "Font": {
-
-      "Color": {
-
-        "A": 255,
-
-        "R": 5,
-
-        "G": 99,
-
-        "B": 193
-
-      },
-
+      "Color": { "A": 255, "R": 5, "G": 99, "B": 193 },
       "DoubleSize": 11,
-
       "IsBold": false,
-
       "IsItalic": false,
-
       "IsStrikeout": false,
-
       "IsSubscript": false,
-
       "IsSuperscript": false,
-
       "Name": "Calibri",
-
       "Size": 11,
-
       "Underline": "Single"
-
     },
-
     "Name": null,
-
     "CultureCustom": "General",
-
     "Custom": "",
-
-    "BackgroundColor": {
-
-      "A": 0,
-
-      "R": 0,
-
-      "G": 0,
-
-      "B": 0
-
-    },
-
-    "ForegroundColor": {
-
-      "A": 0,
-
-      "R": 0,
-
-      "G": 0,
-
-      "B": 0
-
-    },
-
+    "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+    "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
     "IsFormulaHidden": false,
-
     "IsDateTime": false,
-
     "IsTextWrapped": false,
-
     "IsGradient": false,
-
     "IsLocked": true,
-
     "IsPercent": false,
-
     "ShrinkToFit": false,
-
     "IndentLevel": 0,
-
     "Number": 0,
-
     "RotationAngle": 0,
-
     "Pattern": "None",
-
     "TextDirection": "Context",
-
     "VerticalAlignment": "Bottom",
-
     "HorizontalAlignment": "General",
-
     "BorderCollection": [
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "BottomBorder"
-
       },
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "DiagonalDown"
-
       },
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "DiagonalUp"
-
       },
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "Horizontal"
-
       },
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "LeftBorder"
-
       },
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "RightBorder"
-
       },
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "TopBorder"
-
       },
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "Vertical"
-
       }
-
     ],
-
     "BackgroundThemeColor": null,
-
     "ForegroundThemeColor": null,
-
     "link": {
-
       "Href": "/test.xlsx/worksheets/Sheet1/cells/a1/style",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## Svarschema
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Fält                     | Typ    | Beskrivning                                                          |
+| ------------------------ | ------ | -------------------------------------------------------------------- |
+| **Style**                | objekt | Container för alla stilrelaterade egenskaper för cellen.            |
+| Style.Font               | objekt | Teckensnittsinställningar (namn, storlek, färg, stilflaggor).        |
+| Style.Font.Color         | objekt | RGBA-färgvärden för teckensnittet.                                   |
+| Style.Font.IsBold        | boolean | `true` om teckensnittet är fetstilt.                                 |
+| Style.Font.IsItalic      | boolean | `true` om teckensnittet är kursivt.                                  |
+| Style.Font.IsStrikeout   | boolean | `true` om teckensnittet är genomstruken.                             |
+| Style.Font.IsSubscript   | boolean | `true` om teckensnittet är nedsänkt.                                 |
+| Style.Font.IsSuperscript | boolean | `true` om teckensnittet är upphöjt.                                  |
+| Style.Font.Name          | string  | Teckensnittsfamiljens namn (t.ex. **Calibri**).                      |
+| Style.Font.Size          | number  | Teckensnittets storlek i punkter.                                    |
+| Style.Font.Underline     | string  | Understruksstil (t.ex. **Single**).                                  |
+| Style.IsLocked           | boolean | Anger om cellen är skyddad mot redigering.                           |
+| Style.IsTextWrapped      | boolean | `true` om textbrytning är aktiverat.                                 |
+| Style.IsGradient         | boolean | `true` om ett gradientfyllning är tillämpat.                         |
+| Style.Pattern            | string  | Namn på fyllningsmönster (t.ex. **None**).                           |
+| Style.BorderCollection   | array   | Lista med objekt som definierar linjestil, färg och bordertyp.       |
+| Style.BackgroundColor    | objekt  | RGBA-värden för cellens bakgrund.                                    |
+| Style.ForegroundColor    | objekt  | RGBA-värden för cellens förgrund.                                    |
+| …                        | …       | _(Andra fält följer samma mönster som beskrivs i API-referensen.)_   |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+### Använd Aspose.Cells Cloud SDK:er
+
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på lågnivå, så att du kan fokusera på dina projektuppgifter. Besök [GitHub-lagret](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -395,3 +354,8 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Se även**  
+- [Ställ in cellstil](https://apireference.aspose.cloud/cells/#/Cells/SetWorksheetCellStyle)  
+- [Hämta cellvärde](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell)
+---

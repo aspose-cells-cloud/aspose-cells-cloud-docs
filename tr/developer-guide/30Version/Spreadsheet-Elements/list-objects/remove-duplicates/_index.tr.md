@@ -1,65 +1,84 @@
-﻿---
-title: Liste nesnesi yinelenenleri kaldırır
-second_title: Documen
-linktitle: Yinelenenleri kaldır
-type: docs
-keywords: list object(table) remove duplicates 
-url: /tr/list-objects/remove-duplicates/
-description:  Liste nesnesindeki yinelenenleri kaldır.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Liste nesnesi yinelenenleri kaldır
 ---
-Bu REST API liste nesnesindeki yinelenenleri kaldırmayı gösterir.
+title: "Bir ListObject'ten Yineleyen Satırları Kaldır – Aspose.Cells Cloud API Dokümantasyonu"
+second_title: "Belge"
+linktitle: "Yineleyenleri kaldır"
+type: docs
+keywords: "yineleyenleri kaldır, listobject, Aspose.Cells Cloud API, Excel, REST"
+url: /list-objects/remove-duplicates/
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki bir ListObject'ten yineleyen satırları nasıl sileceğinizi öğrenin. Endpoint, parametreler, kimlik doğrulama ve örnek istekler ile yanıtları içerir."
+weight: 20
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasındaki bir **ListObject**'ten yineleyen satırları kaldırır.
+
+## REST API
 
 ```bash
-
-POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
-
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
 ```
 
-İstek parametreleri şunlardır:
+### **İstek parametreleri**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi| Tanım|
-|:- |:- |:- |:- |
-|isim|Sicim|Yol||
-|sayfaAdı|Sicim|Yol||
-|listeNesneİndeksi|Tam sayı|Yol||
-|dosya|Sicim|Sorgu||
-|depolamaAdı|Sicim|Sorgu||
+| Parametre Adı       | Tür     | Konum  | Açıklama                                               |
+| ------------------- | ------- | ------ | ------------------------------------------------------ |
+| **name**            | String  | Yol    | Excel dosyasının adı.                                  |
+| **sheetName**       | String  | Yol    | Liste nesnesini içeren çalışma sayfasının adı.         |
+| **listObjectIndex** | Integer | Yol    | İşlenecek liste nesnesinin sıfır tabanlı indeksi.      |
+| **folder**          | String  | Sorgu  | (İsteğe bağlı) Dosyanın bulunduğu klasör yolu.         |
+| **storageName**     | String  | Sorgu  | (İsteğe bağlı) Depolama hizmetinin adı.                |
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/ListObjectsController/PostWorksheetListObjectRemoveDuplicates) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### Örnek İstek (cURL)
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 {{< tab tabNum="1" >}}
 
-```powershell
-curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
-```powershell
-
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "DuplicateRowsRemoved": 12,
+  "Message": "Yineleyen satırlar başarıyla kaldırıldı."
+}
 ```
 
 {{< /tab >}}
-
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Yanıt
 
-Geliştirme sürecini hızlandırmanın en iyi yolu bir SDK kullanmaktır. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Aspose.Cells Bulut SDK'sının tam listesi için lütfen GitHub deposuna göz atın.
+Başarılı durumda hizma, yukarıdaki örneğe benzer bir JSON nesnesi döndürür. Alanlar:
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+- **Code** – HTTP durum kodu (başarı durumunda `200`).
+- **Status** – Durumun metinsel açıklaması.
+- **DuplicateRowsRemoved** – Kaldırılan satır sayısı.
+- **Message** – İşlemle ilgili ek bilgiler.
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                           |
+|-----|-----------------------------|----------------------------------------------------|
+| 200 | OK (Tamam)                  | Filtre başarıyla uygulandı; yanıt işlem detaylarını içerir. |
+| 400 | Bad Request (Hatalı İstek)  | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT belirteci. |
+| 413 | Payload Too Large (Çok Büyük Yük) | Yüklenen dosya boyut sınırını aşıyor. |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası. |
+
+## Bulut SDK Geliştirme Kiti
+
+Bir SDK kullanmak, geliştirme hızını en hızlı şekilde artıran en iyi yoldur. SDK, düşük seviye detayları yöneterek size proje görevlerinize odaklanma imkanı verir. Aspose.Cells Cloud SDK'larının tam listesi için lütfen GitHub deposunu kontrol edin.
+
+Aşağıdaki kod örnekleri, farklı SDK'lar kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,100 +1,146 @@
-﻿---
-title: Aspose.Cells Cloud Web API - نقل ورقة عمل إلى موضع جديد في جدول البيانات
-second_title: Documen
-ArticleTitle: Move worksheet to new position in Spreadshee
-linktitle: نقل ورقة العمل في جدول البيانات
-type: docs
-url: /ar/move-worksheet-in-spreadsheet/
-keywords: Move Worksheet, Aspose.Cells Cloud Web API, Spreadsheet Management, Worksheet Positioning, Workbook Organization, Excel AP
-description: يتيح MoveWorksheet API للمستخدمين إعادة وضع ورقة عمل محددة بكفاءة داخل مصنف، وبالتالي تحسين تنظيم بيانات جدول البيانات وإمكانية الوصول إليها
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، نقل ورقة العمل، تنظيم المصنف، PDF، CSV، JSON، Markdown
 ---
-نقل ورقة العمل إلى موضع جديد في جدول البيانات.
+title: "Aspose.Cells Cloud Excel: واجهة ويب لنقل الأوراق – تغيير موضع الورقة برمجيًا"
+second_title: "وثيقة"
+ArticleTitle: "كيفية نقل أوراق العمل في إكسل – إعادة ترتيب ترتيب الأوراق والمواقع"
+linktitle: "نقل ورقة في جدول بيانات"
+type: docs
+url: /move-worksheet-in-spreadsheet/
+keywords: "واجهة نقل ورقة عمل، واجهة إعادة ترتيب الأوراق، واجهة تغيير ترتيب الأوراق، واجهة إدارة علامات تبويب إكسل، واجهة Aspose Cells REST API، أتمتة تحديد موضع الأوراق، واجهة تنظيم ملفات العمل، واجهة هيكل الجداول البيانات، أتمتة إكسل السحابية، إعادة ترتيب دفعي للأوراق"
+description: "تعرّف على كيفية نقل أوراق العمل داخل ملفات عمل إكسل لإعادة تنظيم ترتيب الأوراق وتحسين هيكل ملف العمل. غيّر مواقع أوراق العمل، وأعد ترتيب علامات التبويب لتحسين سير العمل، وأتمتة تنظيم الأوراق لإدارة احترافية للجداول البيانات."
+weight: 100
+---
 
-## **نقل ورقة العمل من جدول البيانات API**
+انقل أوراق العمل برمجيًا داخل ملفات عمل إكسل باستخدام واجهة Aspose.Cells Cloud API. غيّر مواقع الأوراق، وأعد ترتيب علامات التبويب، وحسّن هيكل ملف العمل عبر مكالمات API عبر REST. مثالية لأتمتة تنظيم الجداول وإنشاء تخطيطات قياسية لملفات العمل.
+
+## **نقل ورقة من واجهة جدول البيانات**
+
+### واجهة الويب
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet
+PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet?sheetName={sheetName}&position={position}&outPath={outPath}&outStorageName={outStorageName}&region={region}&password={password}
 ```
 
-### **معلمات الطلب:**
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-|جدول بيانات|ملف|بيانات النموذج|تحميل ملف جدول البيانات.|
-|ورقة عمل|خيط|استفسار|الاسم الحالي للورقة التي سيتم نقلها.|
-|موضع|عدد صحيح|استفسار|الموضع الجديد لورقة العمل.|
-|المسار الخارجي|خيط|استفسار|(اختياري) مسار المجلد الذي يُخزَّن فيه المصنف. القيمة الافتراضية هي null.|
-|اسم التخزين الخارجي|خيط|استفسار|اسم تخزين ملف الإخراج.|
-|منطقة|خيط|استفسار|إعداد منطقة جدول البيانات.|
-|كلمة المرور|خيط|استفسار|كلمة المرور لفتح ملف جدول البيانات.|
+توفّر واجهات Aspose.Cells Cloud API أمانًا وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة مبنية على رمز JWT</a>.
 
-### **إجابة**
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### **معلَمات الطلب:**
+
+| اسم المعلَمة | النوع   | المسار/سلسلة الاستعلام/جسم الطلب HTTP | الوصف                                                                                                                                               |
+| :------------- | :------ | :------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | ملف    | FormData                   | **مطلوبة**. ملف ملف عمل إكسل المصدر (.xlsx، .xls، إلخ) الذي يحتوي على الورقة التي سيتم إعادة تحديد موضعها.                                         |
+| worksheet      | سلسلة  | استعلام                      | **مطلوبة**. الاسم الدقيق لورقة العمل التي سيتم نقلها (مثل `Summary`، `RawData_2024`).                                                             |
+| position       | عدد صحيح | استعلام                      | **مطلوبة**. المؤشر الجديد (مبني على الصفر) لموقع الورقة. مثلاً، ينقل `0` الورقة إلى الموضع الأول، وينقل `2` الورقة لتكون الورقة الثالثة.         |
+| outPath        | سلسلة  | استعلام                      | **اختيارية**. مسار المجلد الوجهة في التخزين السحابي حيث سيتم حفظ ملف العمل بعد إعادة ترتيبه. إذا كانت `null` أو مُهملة، تُستخدم افتراضيًا مجلد الملف الأصلي. |
+| outStorageName | سلسلة  | استعلام                      | **مطلوبة**. اسم خدمة التخزين السحابي المُعدّ مسبقًا (مثل `TeamDrive`) التي سيتم حفظ الملف الناتج فيها.                                              |
+| region         | سلسلة  | استعلام                      | **اختيارية**. إعداد اللغة المحلية (مثل `es-MX`) الذي سيتم تطبيقه، وقد يؤثر على بعض قواعد التنسيق أثناء عملية الحفظ.                              |
+| password       | سلسلة  | استعلام                      | **اختيارية**. كلمة المرور المطلوبة لفك تشفير ملف عمل محمي بكلمة مرور وتعديله. اتركها فارغة إذا لم يكن الملف مشفرًا.                                  |
+
+### **الاستجابة**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### رموز الخطأ
+**رموز حالة HTTP**
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+| الرمز | المعنى                  | الوصف                                                                 |
+| ---- | ----------------------- | --------------------------------------------------------------------- |
+| 200  | ناجح                    | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.         |
+| 400  | طلب غير صحيح            | معلمات ناقصة أو غير صالحة (مثل نوع ملف غير مدعوم).                 |
+| 401  | غير مصرّح به            | رمز JWT غير صالح أو ناقص.                                            |
+| 413  | حجم الحمولة كبير جدًا    | حجم الملف المرفوع يتجاوز الحد المسموح به.                           |
+| 500  | خطأ داخلي في الخادم      | خطأ غير متوقع في الخادم.                                             |
 
-## أين يجب علينا استخدام ورقة العمل المتحركة في جدول البيانات API؟
+## أين نستخدم واجهة نقل ورقة في جدول البيانات؟
 
-عندما تحتاج إلى نقل ورقة عمل إلى موضع جديد في جداول البيانات، يمكنك استخدام هذا API.
+- **توليد تقارير معيارية**: بعد توليد التقارير الشهرية أو الفصلية تلقائيًا، تُنقل ورقة العمل `Summary` أو `Executive Overview` إلى أعلى ملف العمل لضمان عرض الاستنتاجات الأساسية فور فتح الملف.
+- **خط أنابيب معالجة البيانات**: بعد معالجة أوراق البيانات الخام من مصادر بيانات مختلفة في عملية ETL، تُنقل ورقة `Processed_Data` التي تم تنظيفها وتحويلها إلى موضع منطقي في ملف العمل (مثل الموضع الأوسط)، مما يخلق هيكلًا واضحًا للعملية مع البيانات الأصلية ونتائج التحليل.
+- **توصيل ملفات مخصصة للمستخدم**: بعد اختيار المستخدم تخطيطًا مفضّلًا عبر واجهة تكوين (مثل وضع صفحة الرسم البياني في الأعلى)، يعيد النظام تلقائيًا ترتيب ترتيب أوراق العمل داخل ملف العمل وفقًا للاختيار، ثم يُوصّل الملف المخصص.
 
-## لماذا يجب عليك استخدام ورقة العمل المتحركة في جدول البيانات API؟
+## لماذا يجب عليك استخدام واجهة نقل ورقة في جدول البيانات؟
 
-- نقل أوراق العمل بسرعة من جداول البيانات.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+- **سهلة للمطورين**: توفر Aspose.Cells Cloud مكتبات SDK بلغات متعددة، مما يُمكّن من تطوير سريع ويتضمّن وثائق شاملة. مقارنةً ببناء حلول مخصصة، تقلّل هذه المكتبات بشكل كبير من حجم العمل التطويري.
+- **خفض تكاليف العمالة**: تقلل الحاجة إلى الموظفين المخصصين لدمج الوثائق.
+- **الدفع حسب الاستخدام**: لا توجد استثمارات أولية؛ تدفع فقط مقابل مكالمات API التي تستخدمها فعليًا.
+- **لا تكاليف صيانة**: لا حاجة لصيانة الخوادم، أو تحديث البرمجيات، أو التعامل مع مشكلات التوافق.
 
-## كيفية استخدام ورقة عمل النقل في جدول البيانات API مع مجموعات تطوير البرامج (SDKs)
+## كيفية استخدام واجهة نقل ورقة في جدول البيانات مع SDKs
 
-### نقل ورقة العمل في جدول بيانات API المواصفات
+### مواصفات واجهة نقل ورقة في جدول البيانات
 
- ال[نقل ورقة العمل في جدول بيانات API المواصفات](https://reference.aspose.cloud/cells/#/ManagementController/MoveWorksheetInSpreadsheet) يوفر واجهة برمجة يمكن الوصول إليها بشكل عام لتسهيل تفاعلات REST المباشرة من متصفح الويب.
+توفر [مواصفات واجهة نقل ورقة في جدول البيانات](https://reference.aspose.cloud/cells/#/ManagementController/MoveWorksheetInSpreadsheet) واجهة برمجة تطبيقات متاحة للعامة لتسهيل التفاعل المباشر مع REST من متصفح الويب.
 
-### استخدم Aspose.Cells Cloud SDKs
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells عبر الويب بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
 
-يعد استخدام SDK أسرع طريقة للتطوير، حيث إنه يجرد التفاصيل منخفضة المستوى، مما يسمح لك بنقل ورقة العمل في جدول البيانات باستخدام رمز قصير.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
-تُظهر أمثلة التعليمات البرمجية التالية كيفية استدعاء خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج المختلفة:
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MoveWorksheet.cs" >}}
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheet/move?sheetName=Sheet1&destIndex=0" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -F "Spreadsheet=@/path/to/input.xlsx"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MoveWorksheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MoveWorksheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MoveWorksheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MoveWorksheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MoveWorksheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MoveWorksheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MoveWorksheet.go" >}}
-{{< /tab >}}
+
+{{< /tabs >}}
+
+### استخدام مكتبات Aspose.Cells Cloud SDKs
+
+استخدام SDKs هو أسرع طريقة للتطوير، حيث تُجرّدك من التفاصيل منخفضة المستوى، مما يتيح لك نقل أوراق العمل في جدول البيانات باستخدام كود مختصر. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بمكتبات Aspose.Cells Cloud SDKs.  
+توضح أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر الويب باستخدام مكتبات SDK المختلفة:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MoveWorksheet.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MoveWorksheet.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MoveWorksheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MoveWorksheet.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MoveWorksheet.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MoveWorksheet.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MoveWorksheet.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MoveWorksheet.go" >}}
+{{</tab>}}
 {{< /tabs >}}

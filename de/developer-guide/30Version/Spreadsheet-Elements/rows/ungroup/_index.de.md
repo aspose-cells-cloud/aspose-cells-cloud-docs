@@ -1,65 +1,60 @@
-﻿---
-title: Gruppierung von Zeilen auf einem Excel-Arbeitsblatt aufheben
-second_title: Documen
-linktitle: Ungrou
-type: docs
-url: /de/rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
-keywords: Ungroup rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API unterstützt das Aufheben der Gruppierung von Zeilen in einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 70
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Zeilengruppierung auf einem Excel Arbeitsblatt aufheben
 ---
-Dieser REST API gibt an, dass die Gruppierung von Zeilen in einem Excel-Arbeitsblatt aufgehoben werden soll.
+title: "Gruppierung von Zeilen in einem Excel-Arbeitsblatt aufheben"
+second_title: "Dokument"
+linktitle: "Gruppierung aufheben"
+type: docs
+url: /rows/ungroup/
+aliases: [/ungroup-rows-in-excel-worksheet/]
+keywords: "Zeilengruppierung aufheben, Excel, Aspose.Cells Cloud, REST API, SDK, Tabellenkalkulation"
+description: "Erfahren Sie, wie Sie die Gruppierung von Zeilen in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API und SDKs für verschiedene Programmiersprachen aufheben."
+weight: 70
+---
 
-## RSET API
+Diese REST API hebt die Gruppierung von Zeilen in einem Excel-Arbeitsblatt auf.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/ungroup
- 
 ```
 
-Die Anforderungsparameter sind:
+### **Anfrageparameter**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Der Name der Arbeitsmappe.|
-| Blattname| Schnur| Weg| Der Arbeitsblattname.|
-| ersterIndex| ganze Zahl| Abfrage| Der erste zu bearbeitende Zeilenindex.|
-| letzterIndex| ganze Zahl| Abfrage| Der letzte zu bearbeitende Zeilenindex.|
-| istAlles| Boolescher Wert| Abfrage| Sollen alle Reihen bedient werden|
-| Ordner| Schnur| Abfrage| Der Dokumentenordner.|
-| Speichername| Schnur| Abfrage| Speichername.|
+| Parametername   | Typ     | Ort    | Beschreibung                                                  |
+| --------------- | ------- | ------ | ------------------------------------------------------------- |
+| name            | string  | path   | Der Name der Arbeitsmappe.                                    |
+| sheetName       | string  | path   | Der Name des Arbeitsblatts.                                   |
+| firstIndex      | integer | query  | Der nullbasierte Index der ersten Zeile, deren Gruppierung aufgehoben werden soll. |
+| lastIndex       | integer | query  | Der nullbasierte Index der letzten Zeile, deren Gruppierung aufgehoben werden soll. |
+| isAll           | boolean | query  | Falls **true**, wird die Gruppierung für alle Zeilen im angegebenen Bereich aufgehoben. |
+| folder          | string  | query  | Der Ordner, der die Arbeitsmappe enthält.                     |
+| storageName     | string  | query  | Der Name des Speichers, in dem sich die Arbeitsmappe befindet. |
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+Sie können das cURL-Befehlszeilentool verwenden, um Aspose.Cells-Webdienste einfach aufzurufen. Das folgende Beispiel zeigt, wie Aufrufe an die Cloud-API mit cURL durchgeführt werden.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Anfrage" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/ungroup?firstIndex=1&lastIndex=5&isAll=true" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+ -X POST \
+ -H "Content-Type: application/json" \
+ -H "Accept: application/json" \
+ -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -68,9 +63,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklungszeit zu verkürzen. Ein SDK übernimmt die Details auf unterster Ebene und ermöglicht es Ihnen, sich auf Ihre Projekt Aufgaben zu konzentrieren. Besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs anzuzeigen.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

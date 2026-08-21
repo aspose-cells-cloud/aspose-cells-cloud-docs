@@ -1,46 +1,60 @@
-﻿---
-title: احصل على MaxDataRow من ورقة العمل Excel
-type: docs
-url: /ar/get-maxdatarow-from-excel-worksheet/
-weight: 50
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على MaxDataRow من ورقة عمل Excel
 ---
-يشير هذا REST API إلى الحصول على `maxdatarow` في ملف Excel عندما تكون المعلمة `cellOrMethodName` هي `maxdatarow`.
+title: "الحصول على MaxDataRow من ورقة عمل Excel"
+type: docs
+url: /get-maxdatarow-from-excel-worksheet/
+weight: 50
+keywords: "Excel، Aspose.Cells Cloud، REST API، الحصول على MaxDataRow، ورقة العمل"
+description: "يسترجع فهرس آخر صف يحتوي على بيانات في ورقة عمل محددة من ملف Excel باستخدام واجهة Aspose.Cells Cloud REST API."
+ArticleTitle: "واجهة Aspose.Cells Cloud API – الحصول على MaxDataRow من ورقة عمل Excel"
+---
 
-- **cURL مثال**
+تُعيد هذه الواجهة REST فهرس آخر صف يحتوي على بيانات في ملف Excel عندما يُضبط المعامل `cellOrMethodName` على القيمة `maxdatarow`.
 
+- **مثال باستخدام cURL**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatarow" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatarow" \
+     -H "Authorization: Bearer <your_access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+*ملاحظة: يجب إرسال الطلب عبر **HTTPS** ويشمل رمز مميز (bearer token) صالح لـ OAuth2.*
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MaxDataRow": 57
+}
 ```
+
+**رموز حالات HTTP المحتملة**
+
+| الرمز | الوصف |
+|------|-------------|
+| 200 | نجاح – يُعيد فهرس آخر صف يحتوي على بيانات. |
+| 401 | غير مصرّح به – رمز مصادقة غير صالح أو مفقود. |
+| 403 | ممنوع – لا توجد صلاحيات كافية للوصول إلى ملف العمل. |
+| 404 | غير موجود – ملف العمل أو ورقة العمل المحددة غير موجودة. |
+| 500 | خطأ داخلي في الخادم – شرط غير متوقع في الخادم. |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **عائلة SDK السحابية**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+- **استخدام SDKs الخاصة بـ Aspose.Cells Cloud**
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+يُعد استخدام SDKs الطريقة الأكثر كفاءة لتسريع عملية التطوير. فتتولى SDKs إدارة التفاصيل من المستوى المنخفض، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-
+توضح أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -103,3 +117,40 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**انظر أيضًا**
+
+- <a href="https://docs.aspose.cloud/cells/get-maxrow-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">الحصول على MaxRow من ورقة عمل Excel</a>  
+- <a href="https://docs.aspose.cloud/cells/get-maxcolumn-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">الحصول على MaxColumn من ورقة عمل Excel</a>  
+- <a href="https://docs.aspose.cloud/cells/get-mindatarow-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">الحصول على MinDataRow من ورقة عمل Excel</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "Aspose.Cells Cloud Get MaxDataRow",
+  "description": "يعيد فهرس آخر صف يحتوي على بيانات في ورقة عمل محددة.",
+  "url": "https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/maxdatarow",
+  "method": "GET",
+  "documentation": "https://docs.aspose.cloud/cells/get-maxdatarow-from-excel-worksheet/",
+  "input": [
+    {
+      "name": "fileName",
+      "valueRequired": true,
+      "description": "اسم ملف Excel."
+    },
+    {
+      "name": "sheetName",
+      "valueRequired": true,
+      "description": "اسم ورقة العمل."
+    }
+  ],
+  "output": {
+    "@type": "DataType",
+    "name": "MaxDataRow",
+    "description": "فهرس الصف الأخير الذي يحتوي على بيانات (يبدأ من الصفر)."
+  }
+}
+</script>
+
+*آخر تحديث: 2026-07-30*

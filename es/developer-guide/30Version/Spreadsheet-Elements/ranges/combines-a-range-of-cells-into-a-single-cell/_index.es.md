@@ -1,74 +1,101 @@
-﻿---
-title: Combina un rango de Cells en una sola celda
-second_title: Documen
-linktitle: Fusión
-type: docs
-url: /es/ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
-keywords: Merge a range of cells into a single cell
-description: Aspose.Cells Cloud REST API permite combinar un rango de celdas en una sola celda en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Combina un rango de Cells en una sola celda
 ---
-Este REST API indica fusionar un rango de celdas en una sola celda en una hoja de cálculo Excel.
+title: "Aspose.Cells Cloud API: Fusionar rango de celdas"
+second_title: "Documento"
+linktitle: "Fusionar"
+type: docs
+url: /ranges/merge/
+aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+keywords: "Aspose.Cells, fusionar celdas, API de Excel, REST, SDK en la nube"
+description: "Fusiona un rango de celdas en una sola celda utilizando la API REST de Aspose.Cells Cloud. Aprenda sobre el formato de la solicitud, los parámetros y ejemplos de SDK para C#, Java, Python y más."
+weight: 20
+---
 
-## RSET API
+Esta API REST fusiona un rango de celdas en una sola celda en una hoja de cálculo de Excel.
+
+**Descripción general**: La fusión de un rango combina las celdas seleccionadas en una sola celda, preservando el valor de la celda superior izquierda y descartando el resto. Utilice esta operación cuando necesite crear un encabezado que abarque varias columnas o filas, o cuando desee simplificar la disposición de una hoja de cálculo.
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
 ```
 
-Los parámetros de la solicitud son:
+### **Parámetros de solicitud**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| nombre del libro de trabajo|
-| nombreHoja| cadena| camino| nombre de la hoja de trabajo|
-| rango|| cuerpo| rango en la hoja de cálculo|
-| carpeta| cadena| consulta| Carpeta de libro de trabajo.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción                                           |
+|----------------------|--------|-----------|-------------------------------------------------------|
+| **name**             | string | path      | Nombre del libro de trabajo.                         |
+| **sheetName**        | string | path      | Nombre de la hoja de cálculo.                        |
+| **range**            | object | body      | Objeto de rango que especifica las celdas a fusionar. |
+| **folder**           | string | query     | Carpeta donde se almacena el libro de trabajo.       |
+| **storageName**      | string | query     | Nombre del almacenamiento.                           |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMerge) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+#### Esquema del cuerpo de solicitud
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+El objeto **Range** debe contener los siguientes campos (todos los demás son opcionales):
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Propiedad       | Tipo    | Obligatorio | Descripción                                              |
+|-----------------|---------|-------------|----------------------------------------------------------|
+| **FirstRow**    | integer | Sí          | Índice de fila (base cero) de la primera fila del rango. |
+| **FirstColumn** | integer | Sí          | Índice de columna (base cero) de la primera columna del rango. |
+| **RowCount**    | integer | Sí          | Número de filas que se incluirán en el rango.            |
+| **ColumnCount** | integer | Sí          | Número de columnas que se incluirán en el rango.         |
+| **Name**        | string  | No          | Nombre opcional para el rango.                           |
+| **RefersTo**    | string  | No          | Fórmula a la que hace referencia el rango.               |
+| **Worksheet**   | string  | No          | Nombre de la hoja de cálculo (si difiere del parámetro de ruta). |
+| **RowHeight**   | number  | No          | Altura de las filas en el rango (en píxeles).            |
+| **ColumnWidth** | number  | No          | Ancho de las columnas en el rango (en píxeles).          |
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube mediante cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/merge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "FirstRow": 9,
+        "FirstColumn": 0,
+        "RowCount": 1,
+        "ColumnCount": 7
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+#### Detalles de la respuesta
+
+| Estado HTTP                   | Descripción                                                | JSON de ejemplo                                            |
+|-------------------------------|------------------------------------------------------------|------------------------------------------------------------|
+| **200 OK**                    | El rango se fusionó correctamente.                         | `{ "Code": 200, "Status": "OK" }`                          |
+| **400 Bad Request**           | Parámetros de rango no válidos (por ejemplo, índices fuera de rango). | `{ "Code": 400, "Message": "Invalid range." }`             |
+| **401 Unauthorized**          | Token JWT ausente o no válido.                             | `{ "Code": 401, "Message": "Authentication failed." }`     |
+| **404 Not Found**             | Libro de trabajo o hoja de cálculo no encontrados.         | `{ "Code": 404, "Message": "Resource not found." }`        |
+| **500 Internal Server Error** | Error interno inesperado del servidor.                     | `{ "Code": 500, "Message": "Internal server error." }`     |
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel para que usted pueda centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

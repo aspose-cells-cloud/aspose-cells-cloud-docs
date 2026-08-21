@@ -1,65 +1,84 @@
-﻿---
-title: Lista de objetos que eliminan duplicados
-second_title: Documen
-linktitle: Eliminar duplicados
-type: docs
-keywords: list object(table) remove duplicates 
-url: /es/list-objects/remove-duplicates/
-description:  Eliminar duplicados en el objeto de lista.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Objeto de lista eliminar duplicados
 ---
-Este REST API indica eliminar duplicados en el objeto de lista.
+title: "Eliminar filas duplicadas de un ListObject – Documentación de la API en la nube de Aspose.Cells"
+second_title: "Documento"
+linktitle: "Eliminar duplicados"
+type: docs
+keywords: "eliminar duplicados, listobject, API en la nube de Aspose.Cells, Excel, REST"
+url: /list-objects/remove-duplicates/
+description: "Aprenda cómo eliminar filas duplicadas de un ListObject en una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. Incluye el punto de conexión, parámetros, autenticación y ejemplos de solicitudes y respuestas."
+weight: 20
+---
 
-## RSET API
+Esta API REST elimina las filas duplicadas de un **ListObject** en una hoja de cálculo de Excel.
+
+## API REST
 
 ```bash
-
-POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
-
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
 ```
 
-Los parámetros de la solicitud son:
+### **Parámetros de la solicitud**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody| Descripción|
-|:- |:- |:- |:- |
-|nombre|Cadena|Camino||
-|nombreHoja|Cadena|Camino||
-|índice de objeto de lista|Entero|Camino||
-|carpeta|Cadena|Consulta||
-|nombreDeAlmacenamiento|Cadena|Consulta||
+| Nombre del parámetro | Tipo    | Ubicación | Descripción                                                  |
+|----------------------|---------|-----------|--------------------------------------------------------------|
+| **name**             | String  | Ruta      | El nombre del archivo de Excel.                              |
+| **sheetName**        | String  | Ruta      | El nombre de la hoja de cálculo que contiene el objeto de lista. |
+| **listObjectIndex**  | Integer | Ruta      | El índice basado en cero del objeto de lista a procesar.     |
+| **folder**           | String  | Consulta  | (Opcional) La ruta de la carpeta donde se almacena el archivo. |
+| **storageName**      | String  | Consulta  | (Opcional) El nombre del servicio de almacenamiento.         |
 
- El[Especificación OpenAPI](https://reference.aspose.cloud/cells/#/ListObjectsController/PostWorksheetListObjectRemoveDuplicates) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+### Solicitud de ejemplo (cURL)
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 {{< tab tabNum="1" >}}
 
-```powershell
-curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
-```powershell
-
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "DuplicateRowsRemoved": 12,
+  "Message": "Se eliminaron correctamente las filas duplicadas."
+}
 ```
 
 {{< /tab >}}
-
 {{< /tabs >}}
 
-## Familia de SDK en la nube
+### Respuesta
 
-Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el repositorio de GitHub para obtener una lista completa de Aspose.Cells SDK en la nube.
+En caso de éxito, el servicio devuelve un objeto JSON similar al ejemplo anterior. Los campos son:
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+- **Code** – Código de estado HTTP (`200` para éxito).
+- **Status** – Descripción textual del estado.
+- **DuplicateRowsRemoved** – Número de filas eliminadas.
+- **Message** – Información adicional sobre la operación.
+
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                                    |
+|--------|-----------------------------|----------------------------------------------------------------|
+| 200    | OK                          | Filtro aplicado correctamente; la respuesta contiene los detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros ausentes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT no válido o ausente.                                 |
+| 413    | Payload demasiado grande    | El archivo cargado excede el límite de tamaño.                 |
+| 500    | Error interno del servidor  | Error inesperado en el servidor.                               |
+
+## Familia de SDKs en la nube
+
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel, lo que le permite centrarse en las tareas de su proyecto. Consulte el repositorio de GitHub para obtener una lista completa de los SDKs de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells mediante diversos SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

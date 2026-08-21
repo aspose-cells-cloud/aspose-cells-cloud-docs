@@ -1,76 +1,92 @@
-﻿---
-title: Переместить рабочий лист Excel
-second_title: Documen
-linktitle: Мов
-type: docs
-url: /ru/worksheets/move/
-aliases: [/move-excel-worksheets/]
-keywords: Move an Excel worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API поддерживает перемещение листа Excel в книгу Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Перемещение листа Excel
 ---
-Этот REST API указывает на `move worksheet`.
- 
-## РСЕT API
- 
+title: "Перемещение листа Excel — Aspose.Cells Cloud API (v3.0)"
+second_title: "Документ"
+linktitle: "Переместить"
+type: docs
+url: /worksheets/move/
+aliases: [/move-excel-worksheets/]
+keywords: "Aspose.Cells Cloud, перемещение листа, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
+description: "Узнайте, как переместить лист Excel в новую позицию с помощью Aspose.Cells Cloud API (v3.0). Приведены endpoint, необходимые параметры, пример cURL и код SDK на C#, Java, Python и других языках."
+weight: 20
+ArticleTitle: "Как переместить лист Excel с помощью Aspose.Cells Cloud API v3.0"
+---
+
+Этот REST API позволяет перемещать лист внутри книги Excel.
+
+## REST API
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
 ```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| движущийся|| тело| с движущимися параметрами.|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
- 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### Параметры запроса
+
+| Имя параметра | Тип   | Расположение | Описание                                                                                                           |
+| ------------- | ----- | ------------ | ------------------------------------------------------------------------------------------------------------------ |
+| name          | string | путь        | Имя файла Excel.                                                                                                   |
+| sheetName     | string | путь        | Имя листа, который нужно переместить.                                                                              |
+| moving        | object | тело         | JSON-объект, задающий целевой лист (`DestinationWorksheet`) и относительную позицию (`Position`).                 |
+| folder        | string | query        | Путь к папке, где хранится рабочая книга.                                                                          |
+| storageName   | string | query        | Имя сервиса хранилища.                                                                                             |
+
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для вызова веб-сервисов Aspose.Cells. Пример ниже показывает, как переместить лист за один запрос.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--d '{"DestinationWorksheet":"Sheet5", "Position":"after"}' 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"DestinationWorksheet":"Sheet5","Position":"after"}'
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                                                      |
+|-----|-----------------------------|-------------------------------------------------------------------------------|
+| 200 | OK (ОК)                    | Фильтр применён успешно; ответ содержит детали операции.                     |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизовано) | Недопустимый или отсутствующий JWT-токен.                                    |
+| 413 | Payload Too Large (Слишком большой payload) | Загруженный файл превышает лимит размера.                                    |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                                               |
+
+**Пример ошибочного payload**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Missing required parameter 'moving'."
+}
+```
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Семейство облачных SDK
- 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
- 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
- 
- 
- 
+
+Использование SDK — это лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах вашего проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
+
+Следующие примеры кода демонстрируют, как вызывать веб-сервисы Aspose.Cells с помощью различных SDK:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

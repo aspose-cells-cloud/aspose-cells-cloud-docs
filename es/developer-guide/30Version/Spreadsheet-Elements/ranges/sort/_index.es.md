@@ -1,65 +1,62 @@
-﻿---
-title:  Ordenamiento por rango
-second_title: Documen
-linktitle: Sor
-type: docs
-keywords: Range Sort
-url: /es/ranges/sort/
-description:  Establece un borde de contorno alrededor de un rango de celdas.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Ordenamiento por rango
 ---
-Este REST API indica ordenación por rango.
+title: Ordenar rango
+second_title: "Documentación"
+linktype: "Ordenar"
+type: docs
+keywords: "Ordenar rango, Aspose.Cells Cloud, API REST, Hoja de cálculo, Excel, API"
+url: /ranges/sort/es/
+description: Proporciona una API para ordenar un rango de celdas dentro de un libro de trabajo utilizando Aspose.Cells Cloud.
+weight: 20
+---
 
-## RSET API
+Esta API REST ordena un rango específico de celdas.
+
+## API REST
 
 ```bash
-
-POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/sort
-
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/sort
 ```
 
 Los parámetros de la solicitud son:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody| Descripción|
-|:- |:- |:- |:- |
-|nombre|Cadena|Camino|El nombre del libro de trabajo.|
-|nombreHoja|Cadena|Camino|El nombre de la hoja de trabajo.|
-|rangoOperar|Clase|Cuerpo| Solicitud de ordenamiento por rango|
-|carpeta|Cadena|Consulta|Carpeta del libro de trabajo original.|
-|nombreDeAlmacenamiento|Cadena|Consulta|Nombre de almacenamiento.|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción                                      |
+|----------------------|--------|-----------|--------------------------------------------------|
+| name                 | String | Path      | Nombre del libro de trabajo.                     |
+| sheetName            | String | Path      | Nombre de la hoja de cálculo.                    |
+| rangeOperate         | Clase  | Body      | Objeto de solicitud para ordenar el rango.       |
+| folder               | String | Query     | Carpeta que contiene el libro de trabajo original. |
+| storageName          | String | Query     | Nombre del almacenamiento.                       |
 
- El[Especificación OpenAPI](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangeSort) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación OpenAPI](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangeSort) define una interfaz de programación accesible públicamente y permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube mediante cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 {{< tab tabNum="1" >}}
 
 ```powershell
 curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/sort" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
 ```powershell
-
+# (Ejemplo de respuesta se mostrará aquí)
 ```
 
 {{< /tab >}}
-
 {{< /tabs >}}
 
 ## Familia de SDK en la nube
 
-Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el repositorio de GitHub para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK maneja los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el repositorio de GitHub para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

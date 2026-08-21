@@ -1,90 +1,89 @@
-﻿---
-title: Excel 至 TIF
-second_title: Documen
-linketitle: Excel to Tif
+---
+title: "将 Excel 转换为 TIFF"
+second_title: "文档"
+linketitle: "Excel 转 TIFF"
 type: docs
 url: /zh/convert-excel-file-to-tiff-file/
-aliases: [/convert-excel-file-to-tiff-in-cloud/,/convert/excel-to-tiff/]
-keywords: Convert excel files to tiff files
-description: Aspose.Cells Cloud REST API 支持将 Excel 文件转换为 Tiff 文件。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+aliases: [/zh/convert-excel-file-to-tiff-in-cloud/, /zh/convert/excel-to-tiff/]
+keywords: "Aspose.Cells Cloud、Excel 转 TIFF 转换、REST API、cURL、SDK、.NET、Java、Python、图像导出"
+description: "了解如何使用 Aspose.Cells Cloud API 将 Excel 工作簿转换为高质量 TIFF 图像。包含详细的 cURL 命令、SDK 示例（C#、Java、Python 等）、身份验证步骤及错误处理说明。"
 weight: 90
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、Excel 至 TIFF
 ---
-此 REST API `saveas` excel 文件到 TIFF。
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API 可让您将 MS Excel 文件保存为具有附加设置的 TIFF 文件，并将结果保存到存储中。
+Aspose.Cells Cloud 的 **Convert**（转换）、**SaveAs**（另存为）和 **Export**（导出）接口可将 Excel 工作簿转换为 TIFF 图像。  
+您可以直接使用 **cURL** 调用这些接口，或通过支持的 SDK 进行调用。
 
-此 REST API `convert` excel 文件到 TIFF。
+## REST API
 
-[PUT /单元格/转换](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API 可让您使用附加设置将 MS Excel 文件转换为 TIFF 文件，并将结果保存到响应中。
+| **API**                | **方法** | **用途**                                                                                     | **Swagger 链接**                                                                            |
+| ---------------------- | -------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| `/cells/convert`       | PUT      | 将请求体中提供的工作簿转换为指定格式（TIFF）。                                               | [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) |
+| `/cells/{name}`        | GET      | 将指定名称的工作簿导出为其他格式（TIFF），并将结果以响应体形式返回。                         | [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)               |
+| `/cells/{name}/saveAs` | POST     | 将工作簿保存为指定格式（TIFF），并将结果存储至云端存储空间。                                 | [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)   |
 
-此 REST API `export` excel 文件到 TIFF。
+这些接口为公开访问接口，可直接从网页浏览器或任意 HTTP 客户端发起调用。
 
-[获取/单元格/{名称}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API 可让您使用附加设置将 MS Excel 文件转换为 TIFF 文件，并将结果保存到响应中。
+### cURL 示例
 
-## 休息 API
-
-|**API**|**类型**|**描述**|**Swagger 链接**|
-|:- |:- |:- |:- |
-|/单元格/转换|放|将工作簿从请求内容转换为某种格式|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
-|/单元格/{名称}|得到|将工作簿导出为其他格式。|[获取工作簿](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
-|/单元格/{名称}/saveAs|邮政|将工作簿导出为格式|[邮寄文件另存为](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
-
-这些 API 定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
-
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
-
-{{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export" >}}
+{{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export">}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/convert?format=tiff" \
--X PUT \
--d {"File":{}} \
--H "Content-Type:  multipart/form-data" \
--H "Accept:  multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
-
+     -X PUT \
+     -d '{"File":{"Name":"book1.xlsx","Data":"<base64‑content>"},"SaveFormat":"tiff"}' \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="12" >}}
 
 ```bash
-
 curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx/saveas?newfilename=book1.tiff" \
--X POST \
--d "{'SaveFormat':'tiff', 'ImageFormat': 'tiff'}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+     -X POST \
+     -d '{"SaveFormat":"tiff","ImageFormat":"tiff"}' \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="13" >}}
 
 ```bash
-
-curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=html" \
--X GET \
--d "{'SaveFormat':'tiff', 'ExportImagesAsBase64': 'true'}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=tiff" \
+     -X GET \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-## Cloud SDK 系列
+> **注意：**
+>
+> - **Convert** 接口的请求体必须包含文件（或已存储文件的引用）及所需的 `SaveFormat`。
+> - **Export** 接口无需请求体；格式通过查询字符串指定（`format=tiff`）。
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+## 错误处理
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+| **状态码** | **含义**       | **常见原因**                     |
+| ---------- | -------------- | -------------------------------- |
+| 200        | 成功           | 返回 TIFF 图像（二进制流）。     |
+| 400        | 请求错误       | 缺失或格式错误的参数。           |
+| 401        | 未授权         | JWT 令牌无效或缺失。             |
+| 404        | 未找到         | 指定的工作簿不存在。             |
+| 500        | 服务器内部错误 | 服务器端出现意外情况。           |
+
+发生错误时，API 将返回包含 `Code`（代码）、`Message`（消息），以及可选的 `Description`（描述）字段的 JSON 负载。
+
+## 云 SDK 家族
+
+使用 SDK 是最快捷的开发方式。SDK 将处理底层细节，使您能专注于项目本身。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例演示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

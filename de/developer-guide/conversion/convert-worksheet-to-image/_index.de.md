@@ -1,98 +1,153 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Konvertieren Sie ein Tabellenkalkulationsarbeitsblatt in ein Bild
-second_title: Documen
-ArticleTitle: Convert a Spreadsheet Worksheet to an Imag
-linktitle: Arbeitsblatt in Bild konvertieren
-type: docs
-url: /de/convert-worksheet-to-image/
-keywords: Aspose.Cells Cloud Web API, Convert Worksheet to Image, Cloud Conversion, Image Format Conversion, Excel to Image, RES
-description: Konvertieren Sie ein Tabellenkalkulationsblatt von einem lokalen Laufwerk effizient in verschiedene Bildformate mit Aspose.Cells API
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, Bildkonvertierung, SVG, PNG, TIFF, Cloud-Dienste, Konvertierung von lokal in die Cloud, Alle leeren Zellen in einem Excel-Arbeitsblatt abgleichen
 ---
-Konvertieren Sie ein lokales Tabellenkalkulations-/Excel-Arbeitsblatt in ein Bild.
+title: "Arbeitsblatt-Konvertierung – Aspose.Cells Cloud API-Dokumentation"
+second_title: "Dokument"
+ArticleTitle: "So konvertieren Sie lokales Arbeitsblatt-Daten aus Tabellenkalkulationen in eine Bilddatei: Schritt-für-Schritt-Anleitung"
+linktitle: "Arbeitsblatt in Bild konvertieren"
+type: docs
+url: /convert-worksheet-to-image/
+keywords: "Aspose.Cells Cloud, Arbeitsblatt in Bild konvertieren, Excel zu PNG, Excel zu SVG, Excel zu TIFF, Excel zu JPEG, Excel zu BMP, Bildkonvertierungs-API, REST-API, Tabellenkalkulations-Bildexport, SDK-Beispiele"
+description: "Schritt-für-Schritt-Anleitung zur Konvertierung eines Excel-Arbeitsblatts in Bildformate (PNG, SVG, TIFF, JPEG, BMP usw.) mithilfe der Aspose.Cells Cloud API, einschließlich Anforderungsparameter, Antwortdetails, Fehlercodes, Anwendungsszenarien und SDK-Codebeispielen."
+weight: 100
+---
 
-## **Arbeitsblatt in Bild konvertieren API**
+Exportieren Sie Daten aus einem Arbeitsblatt einer lokalen Excel-Datei in eine [Bilddatei](https://docs.fileformat.com/image/) mithilfe der Aspose.Cells Cloud API. Dieser Vorgang unterstützt mehrere Bildformate und eignet sich ideal, um visuelle Schnappschüsse von Tabellendaten zu erstellen.
+
+**UNTERSTÜTZTE BILDFORMATE**
+
+- [PNG](https://docs.fileformat.com/image/png/)
+- [SVG](https://docs.fileformat.com/page-description-language/svg/)
+- [TIFF](https://docs.fileformat.com/image/tiff/)
+- [JPEG](https://docs.fileformat.com/image/jpeg/)
+- [BMP](https://docs.fileformat.com/image/bmp/)
+
+## **Arbeitsblatt in Bild konvertieren – API**
+
+### Web-API
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/image
 ```
 
-### **Anforderungsparameter:**
+### **Sicherheit und Authentifizierung**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody| Beschreibung|
-|:- |:- |:- |:- |
-| Kalkulationstabelle| Datei| FormData| Laden Sie die Tabellenkalkulationsdatei hoch.|
-| Arbeitsblatt| Zeichenfolge| Abfrage| Name des Arbeitsblatts in der Tabelle.|
-| Format| Zeichenfolge| Abfrage| Gewünschtes Bildformat: svg, png, tiff usw.|
-| Ausgangspfad| Zeichenfolge| Abfrage| (Optional) Der Ordnerpfad, in dem die Arbeitsmappe gespeichert ist. Der Standardwert ist null.|
-|outStorageName| Zeichenfolge| Abfrage| Name des Ausgabedateispeichers.|
-| SchriftartenStandort| Zeichenfolge| Abfrage| Verwenden Sie benutzerdefinierte Schriftarten.|
-| Region| Zeichenfolge| Abfrage| Die Tabellenbereichseinstellung.|
-| Passwort| Zeichenfolge| Abfrage| Das Kennwort zum Öffnen der Tabellenkalkulationsdatei.|
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
+
+### **Anforderungsparameter**
+
+| Parametername     | Typ    | Pfad/Abfragezeichenfolge/HTTP-Body | Beschreibung                                                                                      |
+| :---------------- | :----- | :---------------------------------- | :------------------------------------------------------------------------------------------------ |
+| Spreadsheet       | Datei  | FormData                            | Hochladen der Tabellenkalkulationsdatei.                                                        |
+| worksheet         | String | Abfrage                             | Name des zu konvertierenden Arbeitsblatts.                                                       |
+| format            | String | Abfrage                             | Gewünschtes Bildformat (`svg`, `png`, `tiff`, `jpeg`, `bmp`, usw.).                             |
+| outPath           | String | Abfrage                             | _(Optional)_ Ordnerpfad, in dem das Ausgabebild gespeichert wird; Standardwert ist `null`.       |
+| outStorageName    | String | Abfrage                             | Name des Speicherorts für die Ausgabedatei.                                                      |
+| fontsLocation     | String | Abfrage                             | Pfad zu einem benutzerdefinierten Schriftartenordner, falls Schriftarten verwendet werden sollen, die nicht auf dem Server verfügbar sind. |
+| region            | String | Abfrage                             | Tabellenkalkulationsregionseinstellung (z. B. `de-DE`).                                          |
+| password          | String | Abfrage                             | Passwort zum Öffnen einer passwortgeschützten Tabellenkalkulationsdatei.                        |
 
 ### **Antwort**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Fehlercodes
+**HTTP-Statuscodes**
 
-- **400 Ungültige Anfrage**: Ungültige Apose.Cells Cloud API-URI.
-- **401 Nicht autorisiert**: Ungültiges Zugriffstoken. Oder ungültige Client-ID und ungültiges Geheimnis.
-- **404 Nicht gefunden**: Auf die Tabellenkalkulationsdatei kann nicht zugegriffen werden.
-- **500 Serverfehler**: Beim Abrufen der Berechnungsdaten ist in der Tabelle eine Anomalie aufgetreten.
+| Code | Bedeutung             | Beschreibung                                                           |
+| ---- | --------------------- | ---------------------------------------------------------------------- |
+| 200  | OK                    | Filter erfolgreich angewendet; Antwort enthält Vorgangsdetails.       |
+| 400  | Bad Request           | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized          | Ungültiges oder fehlendes JWT-Token.                                  |
+| 413  | Payload Too Large     | Die hochgeladene Datei überschreitet die Größenbeschränkung.          |
+| 500  | Internal Server Error | Unerwarteter Serverfehler.                                            |
 
-## Warum sollten Sie die Funktion „Tabelle in Bild konvertieren“ API verwenden?
+## **Wann sollte die Arbeitsblatt-in-Bild konvertieren API verwendet werden?**
 
-- Kein Cloud-Speicher erforderlich, wodurch die Belastung der Cloud-Ressourcen reduziert wird.
-- Die Entwicklung kann über das vorhandene SDK schnell abgeschlossen werden.
+- **Statische Berichtsschnappschüsse** – Konvertieren Sie Finanztabellen, Berechnungen oder andere Daten in Bilder, die in PDF-Berichte, PowerPoint-Folien oder gedruckte Dokumente eingebunden werden sollen, wo keine Bearbeitung erforderlich ist.
+- **Datenvisualisierung in Präsentationen** – Wandeln Sie komplexe Tabellentabellen (einschließlich bedingter Formatierungen oder einfacher Diagramme) in Bilder um, die in Präsentationen (PPTX, Google Slides) eingebettet werden können.
+- **Dokumentation und Schulungsmaterialien** – Erfassen Sie Tabellenkalkulationsbeispiele, -vorlagen oder Eingabeformulare als Bilder für Benutzerhandbücher, Tutorials oder Knowledge-Base-Artikel.
+- **Vorschaubilder (Thumbnails)** – Erstellen Sie kleine Bildvorschaubilder wichtiger Tabellensektionen für Dateibrowser, Dokumentenbibliotheken oder Suchergebnisse.
 
-## Wie verwende ich die Konvertierungstabelle in Bild API mit SDKs?
+## **Warum sollte man die Arbeitsblatt-in-Bild konvertieren API verwenden?**
 
-### Tabelle in Bild konvertieren API Spezifikation
+- **Entwicklerfreundlich** – Aspose.Cells Cloud bietet SDK-Bibliotheken für mehrere Programmiersprachen, was eine schnelle Entwicklung ermöglicht, und ist umfassend dokumentiert. Im Vergleich zur Erstellung einer benutzerdefinierten Diagramm-Rendering-Lösung reduziert dies den Entwicklungsaufwand erheblich.
+- **Kosteneffizient** – Sie können Tabellendaten konvertieren, ohne die Arbeitsmappe dauerhaft speichern zu müssen, was Speicherplatz spart und Kosten senkt.
+- **Pixelgenaue Wiedergabe** – Repliziert zuverlässig das Erscheinungsbild von Excel – einschließlich Zellformatierung, Formeln (als angezeigte Werte), Rahmen, Farben und bedingter Formatierung – im Ausgabebild.
+- **Universelle Kompatibilität** – Bildformate (PNG, JPEG, TIFF, BMP, SVG usw.) sind auf jedem Gerät oder Betriebssystem ohne spezielle Software darstellbar und gewährleisten so maximale Zugänglichkeit.
 
- Der[Tabelle in Bild konvertieren API Spezifikation](https://reference.aspose.cloud/cells/#/ConversionController/ConvertWorksheetToImage) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt von einem Webbrowser aus.
+## **Wie verwendet man die Arbeitsblatt-in-Bild konvertieren API mit SDKs?**
 
-### Verwenden Sie Aspose.Cells Cloud SDKs
+### Spezifikation der Arbeitsblatt-in-Bild konvertieren API
 
-Die Verwendung des SDK ist die schnellste Art der Entwicklung, da es die Details auf niedriger Ebene abstrahiert und es Ihnen ermöglicht, Tabellendaten einer Kalkulationstabelle mit einem kurzen Code in ein Bild zu konvertieren.
- Bitte schauen Sie sich die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die [Spezifikation der Arbeitsblatt-in-Bild konvertieren API](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertWorksheetToImage) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Sie können das cURL-Befehlszeilentool verwenden, um Aspose.Cells-Webdienste einfach aufzurufen. Das folgende Beispiel zeigt, wie Aufrufe an die Cloud-API mit cURL durchgeführt werden.
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertWorksheetToSvg.cs" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Anforderung" tabName12="Antwort" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/worksheet/image?format=png&worksheet=Sheet1" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@myWorkbook.xlsx" \
+  -o converted.png
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertWorksheetToSvg.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64-codiert)",
+  "contentType": "MIME-Typ",
+  "fileDownloadName": "optionaler Dateiname"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertWorksheetToSvg.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertWorksheetToSvg.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertWorksheetToSvg.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertWorksheetToSvg.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertWorksheetToSvg.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertWorksheetToSvg.go" >}}
-{{< /tab >}}
+
+{{< /tabs >}}
+
+### Verwendung von Aspose.Cells Cloud SDKs
+
+Die Verwendung eines SDKs ist der schnellste Weg zur Entwicklung, da sie Low-Level-Details abstrahiert und es ermöglicht, Arbeitsblattdaten mit minimalem Code in ein Bild zu konvertieren. Bitte besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
+
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mit verschiedenen SDKs aufgerufen werden:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertWorksheetToSvg.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertWorksheetToSvg.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertWorksheetToSvg.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertWorksheetToSvg.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertWorksheetToSvg.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertWorksheetToSvg.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertWorksheetToSvg.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertWorksheetToSvg.go" >}}
+{{</tab>}}
 {{< /tabs >}}

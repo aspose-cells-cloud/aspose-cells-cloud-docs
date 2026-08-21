@@ -1,37 +1,147 @@
-﻿---
-title: Holen Sie sich Cells Property
+---
+title: "Zellen-Eigenschaften abrufen"
 type: docs
 url: /de/get-cells-properties/
 weight: 130
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Get Cells Eigenschaften
+keywords: "Aspose Cells Cloud, REST API, Excel, Arbeitsblatt, Zelleneigenschaften, Zellen-Eigenschaften abrufen"
+description: "Erfahren Sie, wie Sie mit der Aspose.Cells Cloud REST API die Eigenschaften einer bestimmten Zelle oder vordefinierter Zellmethoden in einem Excel-Arbeitsblatt abrufen."
 ---
-Dieser REST API zeigt, wie `get a specific cell` in einer Excel-Datei verwendet wird.
 
-## RSET API
+Diese REST API demonstriert, wie eine bestimmte Zelle in einer Excel-Datei abgerufen wird.
+
+## REST API
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}
- 
 ```
 
-Die Anforderungsparameter sind:
+## Sicherheit und Authentifizierung
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Dokumentname.|
-| Blattname| Schnur| Weg| Arbeitsblattname.|
-| Zellen- oder Methodenname| Schnur| Weg|Der Name der Zelle oder Methode. (Wert des Methodennamens: firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn und cellName.)|
-| Ordner| Schnur| Abfrage| Ordner des Dokuments.|
-| Speichername| Schnur| Abfrage| Speichername.|
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine [JWT-Token-basierte Authentifizierung](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+### Anforderungsparameter
 
-### **Cloud SDK-Familie**
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+| Parametername        | Typ    | Ort     | Beschreibung                                                                                                                                                                                                 |
+| -------------------- | ------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **name**             | string | path    | Der Name der Excel-Datei.                                                                                                                                                                                    |
+| **sheetName**        | string | path    | Der Name des Arbeitsblatts, das die Zelle enthält.                                                                                                                                                           |
+| **cellOrMethodName** | string | path    | Der Zellenname oder ein vordefinierter Methodenname (z. B. `firstcell`, `endcell`, `maxrow`, `maxdatarow`, `maxcolumn`, `maxdatacolumn`, `minrow`, `mindatarow`, `mincolumn`, `mindatacolumn`).              |
+| **folder**           | string | query   | Der Ordner, in dem das Dokument gespeichert ist.                                                                                                                                                             |
+| **storageName**      | string | query   | Der Name des Speicherdienstes.                                                                                                                                                                               |
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+## **Antwort**
+
+Gibt die `CellResponse` zurück.
+
+- **Übersicht der Antwortfelder**
+
+| Feld            | Typ     | Beschreibung                                          |
+| --------------- | ------- | ----------------------------------------------------- |
+| `Name`          | string  | Adresse der Zelle (z. B. `F341`).                    |
+| `Row`           | integer | Nullbasierter Zeilenindex.                            |
+| `Column`        | integer | Nullbasierter Spaltenindex.                           |
+| `Value`         | string  | Der angezeigte Wert der Zelle.                        |
+| `Type`          | string  | Datentyp der Zelle (z. B. `IsString`).                |
+| `Formula`       | string  | Formeltext, falls die Zelle eine Formel enthält.     |
+| `IsFormula`     | bool    | Gibt an, ob die Zelle eine Formel enthält.            |
+| `IsMerged`      | bool    | Gibt an, ob die Zelle Teil eines zusammengeführten Bereichs ist. |
+| `IsArrayHeader` | bool    | Gibt an, ob die Zelle ein Array-Header ist.           |
+| `IsInArray`     | bool    | Gibt an, ob die Zelle Teil eines Arrays ist.          |
+| `IsErrorValue`  | bool    | Gibt an, ob die Zelle einen Fehlerwert enthält.       |
+| `IsInTable`     | bool    | Gibt an, ob sich die Zelle innerhalb einer Tabelle befindet. |
+| `IsStyleSet`    | bool    | Gibt an, ob ein Stil auf die Zelle angewendet wurde.  |
+| `HtmlString`    | string  | HTML-kodierte Darstellung des Zellenwerts.            |
+| `Style.link`    | object  | Hyperlink zur Stilressource.                          |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Cell":{
+    "Name":"A1",
+    "Row": 0,
+    "Column":0,
+    "Value": "Hello Aspose.Cells",
+    "Type":"String",
+    "Formula" : "",
+    ...
+  }
+}
+```
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                   | Beschreibung                                                                 |
+|------|-----------------------------|------------------------------------------------------------------------------|
+| 200  | OK                          | Filter erfolgreich angewendet; Antwort enthält Details zum Vorgang.         |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp).     |
+| 401  | Unauthorized                | Ungültiges oder fehlendes JWT-Token.                                        |
+| 413  | Payload Too Large           | Die hochgeladene Datei überschreitet die Größenbeschränkung.               |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler.                                                  |
+
+## Verwendung der GetWorksheetCell-API mit SDKs
+
+### GetWorksheetCell-API-Spezifikation
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht es Ihnen, REST-Interaktionen direkt aus einem Webbrowser heraus durchzuführen.
+
+Sie können das cURL-Befehlszeilentool nutzen, um Aspose.Cells-Webservices einfach aufzurufen. Das folgende Beispiel zeigt, wie ein Aufruf der Cloud-API mit cURL erfolgt.
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET" \
+     -H "Accept: application/json"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```json
+{
+  "Cell": {
+    "Name": "A3",
+    "Row": 2,
+    "Column": 0,
+    "Value": "Statistical",
+    "Type": "IsString",
+    "IsFormula": false,
+    "IsMerged": false,
+    "IsArrayHeader": false,
+    "IsInArray": false,
+    "IsErrorValue": false,
+    "IsInTable": false,
+    "IsStyleSet": false,
+    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">Statistical</Font>",
+    "Style": {
+      "link": {
+        "Href": "/style",
+        "Rel": "self"
+      }
+    },
+    "link": {
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3",
+      "Rel": "self"
+    }
+  },
+  "Code": "200",
+  "Status": "OK"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+### Verwendung von Aspose.Cells Cloud SDKs
+
+Die Verwendung eines SDKs ist der effizienteste Weg, die Entwicklung zu beschleunigen. Ein SDK abstractisiert Low-Level-Details, sodass Sie sich auf Ihre Projektaufgaben konzentrieren können. Besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs einzusehen.
+
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webservices mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -85,16 +195,16 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 
 {{< /tabs >}}
 
-### **So erhalten Sie eine bestimmte Zelle**
+### So rufen Sie eine bestimmte Zelle ab
 
-- [Abrufen von Zelldaten aus einem Arbeitsblatt](/cells/de/get-cell-data-from-a-worksheet/)
-- [Holen Sie sich die erste Zelle aus dem Arbeitsblatt Excel](/cells/de/get-first-cell-from-excel-worksheet/)
-- [Holen Sie sich die letzte Zelle des Arbeitsblatts Excel](/cells/de/get-last-cell-of-excel-worksheet/)
-- [Holen Sie sich MaxRow aus dem Arbeitsblatt Excel](/cells/de/get-maxrow-from-excel-worksheet/)
-- [Holen Sie sich MaxDataRow aus dem Arbeitsblatt Excel](/cells/de/get-maxdatarow-from-excel-worksheet/)
-- [Holen Sie sich MaxColumn aus dem Arbeitsblatt Excel](/cells/de/get-maxcolumn-from-excel-worksheet/)
-- [Holen Sie sich MaxDataColumn aus dem Arbeitsblatt Excel](/cells/de/get-maxdatacolumn-from-excel-worksheet/)
-- [Holen Sie sich MinRow aus dem Arbeitsblatt Excel](/cells/de/get-minrow-from-excel-worksheet/)
-- [Holen Sie sich MinDataRow aus dem Arbeitsblatt Excel](/cells/de/get-mindatarow-from-excel-worksheet/)
-- [Holen Sie sich MinColumn aus dem Arbeitsblatt Excel](/cells/de/get-mincolumn-from-excel-worksheet/)
-- [Holen Sie sich MinDataColumn aus dem Arbeitsblatt Excel](/cells/de/get-mindatacolumn-from-excel-worksheet/)
+- [Zelldaten aus einem Arbeitsblatt abrufen](/de/cells/get-cell-data-from-a-worksheet/)
+- [Erste Zelle aus Excel-Arbeitsblatt abrufen](/de/cells/get-first-cell-from-excel-worksheet/)
+- [Letzte Zelle des Excel-Arbeitsblatts abrufen](/de/cells/get-last-cell-of-excel-worksheet/)
+- [MaxRow aus Excel-Arbeitsblatt abrufen](/de/cells/get-maxrow-from-excel-worksheet/)
+- [MaxDataRow aus Excel-Arbeitsblatt abrufen](/de/cells/get-maxdatarow-from-excel-worksheet/)
+- [MaxColumn aus Excel-Arbeitsblatt abrufen](/de/cells/get-maxcolumn-from-excel-worksheet/)
+- [MaxDataColumn aus Excel-Arbeitsblatt abrufen](/de/cells/get-maxdatacolumn-from-excel-worksheet/)
+- [MinRow aus Excel-Arbeitsblatt abrufen](/de/cells/get-minrow-from-excel-worksheet/)
+- [MinDataRow aus Excel-Arbeitsblatt abrufen](/de/cells/get-mindatarow-from-excel-worksheet/)
+- [MinColumn aus Excel-Arbeitsblatt abrufen](/de/cells/get-mincolumn-from-excel-worksheet/)
+- [MinDataColumn aus Excel-Arbeitsblatt abrufen](/de/cells/get-mindatacolumn-from-excel-worksheet/)

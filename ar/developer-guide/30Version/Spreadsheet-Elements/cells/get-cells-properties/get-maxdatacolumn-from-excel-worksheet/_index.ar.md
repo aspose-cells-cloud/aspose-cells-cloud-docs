@@ -1,46 +1,77 @@
-﻿---
-title: احصل على MaxDataColumn من ورقة العمل Excel
+---
+title: "واجهة برمجة تطبيقات Aspose.Cells Cloud – الحصول على MaxDataColumn من ورقة عمل إكسل (الإصدار 3.0)"
 type: docs
 url: /ar/get-maxdatacolumn-from-excel-worksheet/
 weight: 70
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على MaxDataColumn من ورقة عمل Excel
+keywords: "Aspose.Cells Cloud, الحصول على MaxDataColumn, ورقة عمل إكسل, واجهة برمجة تطبيقات REST, الإصدار 3.0, حزمة تطوير البرامج (SDK)"
+description: "استرجِع أقصى فهرس لعمود يحتوي على بيانات في ورقة عمل معيّنة باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST (الإصدار 3.0). تتضمن تفاصيل الطلب، واستجابة تجريبية، وأمثلة لحزم تطوير البرامج (SDKs)."
+ArticleTitle: "واجهة برمجة تطبيقات Aspose.Cells Cloud – الحصول على MaxDataColumn من ورقة عمل إكسل (الإصدار 3.0)"
 ---
-يشير هذا REST API إلى الحصول على `maxdatacolumn` في ملف Excel عندما تكون المعلمة `cellOrMethodName` هي `maxdatacolumn`.
 
-- **cURL مثال**
+تُعيد هذه الواجهة برمجة التطبيقات (REST API) أقصى فهرس لعمود يحتوي على بيانات في ورقة عمل إكسل عندما يُعيّن المعامل `cellOrMethodName` إلى القيمة `maxdatacolumn`.
 
+## **مثال باستخدام cURL**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatacolumn" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatacolumn" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{} 
-
+```json
+{
+  "MaxDataColumn": 12
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **عائلة SDK السحابية**
+**تفاصيل الطلب**  
+- **طريقة HTTP:** `GET`  
+- **نمط نقطة النهاية (Endpoint):** `https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/maxdatacolumn`  
+- **المعاملات المسار (Path Parameters):**  
+  - `fileName` – اسم ملف إكسل (مثلًا: `myWorkbook.xlsx`).  
+  - `sheetName` – اسم ورقة العمل (مثلًا: `Sheet1`).  
+- **الرؤوس (Headers):**  
+  - `Authorization: Bearer <access_token>` (إلزامي)  
+  - `Accept: application/json` (مستحسن)  
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+**المعاملات**
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+| اسم المعامل | الموقع | النوع | الإلزامية | الوصف |
+|------------|--------|-------|-----------|-------|
+| `fileName` | في المسار | نص (string) | نعم | اسم ملف إكسل المخزّن في مساحة التخزين السحابية. |
+| `sheetName` | في المسار | نص (string) | نعم | ورقة العمل التي سيتم استرجاع أقصى عمود يحتوي بيانات منها. |
+| `cellOrMethodName` | في المسار | نص (string) | نعم | يجب تعيينها إلى `maxdatacolumn` لاستدعاء هذه العملية. |
 
+**الاستجابات**
 
+| رمز الحالة | الوصف | محتوى الاستجابة (Payload) |
+|------------|-------|--------------------------|
+| 200 | نجاح – يُعيد فهرس أقصى عمود يحتوي بيانات. | `{ "MaxDataColumn": 12 }` |
+| 401 | غير مصرّح – رمز وصول غير صالح أو مفقود. | `{ "error": "Invalid authentication." }` |
+| 404 | غير موجود – الملف أو ورقة العمل غير موجودين. | `{ "error": "Resource not found." }` |
+| 500 | خطأ داخلي في الخادم – حالة غير متوقعة. | `{ "error": "Server error." }` |
+
+**معالجة الأخطاء**  
+في حال فشل الطلب، راجع رمز الحالة (HTTP Status Code) والرسالة `error` في جسم الاستجابة. تأكّد من أن رمز الوصول (access token) ساري المفعول، وأن الملف وورقة العمل المحدّدان موجودان في مساحة التخزين السحابية الخاصة بحساب Aspose Cloud.
+
+- **استخدام حزم تطوير البرامج (SDKs) الخاصة بـ Aspose.Cells Cloud**
+
+استخدام حزمة تطوير البرامج (SDK) هو أكثر الطرق كفاءةً لتسريع عملية التطوير، إذ تتعامل الحزمة مع التفاصيل منخفضة المستوى، ما يتيح لك التركيز على مهام مشروعك. يُرجى زيارة <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للاطّلاع على قائمة كاملة بحزم تطوير البرامج (SDKs) الخاصة بـ Aspose.Cells Cloud.
+
+توضّح أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام حزم تطوير برامج مختلفة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -53,8 +84,6 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< tab tabNum="2" >}}
 
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-cells-GetMaxDataColumnWorksheet-get-max-data-column.java" >}}
-
-
 
 {{< /tab >}}
 
@@ -105,3 +134,4 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< /tabs >}}
+---

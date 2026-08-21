@@ -1,327 +1,363 @@
-﻿---
-title: Importa dati nei file Excel ed esporta dati dai file Excel
-second_title: Documen
-linktitle: Importazione ed esportazione dati
+---
+title: "Importare dati in file Excel ed esportare dati da file Excel"
+second_title: "Document"
+linktype: "Importazione ed esportazione dati"
 type: docs
 url: /it/data-import-and-export/
-keywords: Excel data import vs. Direct database access; Batch data import vs. Row-by-row data writing; Automated data export vs. Manual data extraction
-description: Genera nuovi documenti o report che possono includere grafici, tabelle e altri elementi di visualizzazione dei dati
+keywords: "Aspose.Cells Cloud, importazione dati, esportazione Excel, API, CSV, JSON, immagine, array"
+description: "Scopri come importare dati da CSV, JSON, array e immagini in file Excel ed esportare cartelle di lavoro, grafici e forme in PDF, PNG e altri formati utilizzando l'API Aspose.Cells Cloud (v3.0)."
 weight: 25
-kwords: Excel importazione dati vs. accesso diretto al database; importazione dati in batch vs. scrittura dati riga per riga; esportazione dati automatizzata vs. estrazione dati manuale.
 ---
-Aspose.Cells Cloud API supporta l'importazione di dati da diverse fonti di dati e può esportare dati da Excel, grafici e diagrammi in diversi formati, tra cui Excel, CSV, PDF, HTML, PNG, ecc. Ciò rende la gestione e la condivisione dei dati semplici ed efficienti.
 
-## Come importare dati da diverse fonti di dati
+L'API Aspose.Cells Cloud supporta l'importazione di dati da una vasta gamma di origini e consente di esportare cartelle di lavoro Excel, grafici e altri oggetti in diversi formati, tra cui **XLSX**, **CSV**, **PDF**, **HTML**, **PNG** e altri. Ciò rende la gestione e la condivisione dei dati semplici ed efficienti.
 
-Importare dati in un file Excel è un processo complesso. Molti fattori contribuiscono alla complessità e, pertanto, è necessario tenerne conto durante il processo di esportazione. La possibilità di importare diversi formati e tipologie di dati nel file con una qualità professionale e precisa è una delle caratteristiche principali di Aspose.Cells Cloud.
+**Versione API:** **v3.0** – Ultimo aggiornamento: **2024‑03‑15**
+
+### Guida rapida
+
+1. **Preparare il payload** – Costruire un corpo JSON che descriva le opzioni di importazione o esportazione (ad esempio `ImportCSVDataOption`, `ExportOptions`).
+2. **Inviare la richiesta** – Utilizzare `curl`, Postman o un SDK per chiamare l'endpoint appropriato (`POST /cells/import` o `POST /cells/export`).
+3. **Gestire la risposta** – In caso di successo, riceverai il file elaborato (binario o in Base64). In caso di errore, esamina il codice di stato HTTP e il messaggio di errore restituito nel corpo JSON.
+
+#### Prerequisiti
+
+- Un account Aspose Cloud attivo e un token JWT valido.
+- La cartella di lavoro di destinazione deve esistere nella posizione di archiviazione specificata (per le API basate su archiviazione).
+- Intestazioni `Content‑Type` corrette (`multipart/form-data` per il caricamento di file, `application/json` per i corpi JSON).
+
+## Come importare dati da varie fonti
+
+L'importazione di dati in un file Excel coinvolge diverse considerazioni che devono essere affrontate durante il processo. La capacità di importare molti formati e tipi di dati con qualità professionale è una caratteristica principale di Aspose.Cells Cloud.
 
 ### Informazioni sulle API di importazione dati
 
-Sono fornite le seguenti API per importare dati in un file Excel o in più file Excel:
+Le seguenti API sono fornite per importare dati in uno o più file Excel:
 
-|API|Descrizione|
-|:- |:- |
-|[POST /cells/import](https://apireference.aspose.cloud/cells/#/LightCells/PostImport)|Importa dati in file Excel senza utilizzare spazio di archiviazione.|
-|[POST /cells/{name}/importdata](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)|Importare i dati nel file Excel utilizzando l'archiviazione.|
+| API                                                                                                | Descrizione                                                      |
+| :------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- |
+| [POST /cells/import](https://apireference.aspose.cloud/cells/#/LightCells/PostImport)              | Importa dati in file Excel senza utilizzare l'archiviazione.    |
+| [POST /cells/{name}/importdata](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) | Importa dati in un file Excel archiviato nel cloud.             |
 
-### Parametri di richiesta
+### Parametri della richiesta
 
-#### Senza utilizzare lo spazio di archiviazione
+#### Senza utilizzare l'archiviazione
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| file| file| formData| File da caricare|
-| Opzione di importazione| Opzioni di importazione| HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| Nome parametro | Tipo          | Posizione | Descrizione                                                                                           |
+| :------------- | :------------ | :-------- | :---------------------------------------------------------------------------------------------------- |
+| file           | file          | formData  | File da caricare                                                                                      |
+| ImportOption   | ImportOptions | body      | Specifica il formato di importazione (IntArray, DoubleArray, StringArray, TwoDimensionIntArray, TwoDimensionDoubleArray, TwoDimensionStringArray, BatchData, csvData, Picture) |
 
-#### Con l'utilizzo dello storage
+#### Con utilizzo dell'archiviazione
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero||
-| cartella| corda| domanda||
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
-| importa dati|| corpo||
+| Nome parametro | Tipo          | Posizione | Descrizione            |
+| :------------- | :------------ | :-------- | :--------------------- |
+| name           | string        | path      | Nome del file Excel    |
+| folder         | string        | query     | Percorso della cartella nell'archiviazione |
+| storageName    | string        | query     | Nome dell'archiviazione |
+| importData     | ImportOptions | body      | Payload dei dati da importare |
 
-#### Parametro opzione importazione dati
+#### Parametri dell'opzione di importazione dati
 
-**I parametri importanti sono descritti nella tabella seguente**:
+**I parametri importanti sono descritti nelle seguenti tabelle:**
 
-{{< tabs tabTotal="11" tabID="1" tabName1="ImportBatchDataOption" tabName2="ImportCSVDataOption" tabName3="ImportPictureOption" tabName4="Import2DimensionIntArrayOption" tabName5="Import2DimensionDoubleArrayOption" tabName6="Import2DimensionStringArrayOption" tabName7="ImportIntegerArrayOption" tabName8="ImportDoubleArrayOption" tabName9="ImportStringArrayOption" tabName10="CellValue" tabName11="FileSource" >}}
+{{< tabs tabTotal="11" tabID="1" tabName1="ImportBatchDataOption"  tabName2="ImportCSVDataOption"   tabName3="ImportPictureOption" tabName4="Import2DimensionIntArrayOption" tabName5="Import2DimensionDoubleArrayOption" tabName6="Import2DimensionStringArrayOption" tabName7="ImportIntegerArrayOption" tabName8="ImportDoubleArrayOption" tabName9="ImportStringArrayOption" tabName10="CellValue" tabName11="FileSource" >}}
+
 {{< tab tabNum="1" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametro</th><th scope="col">Tipo</th> <th scope="col">Descrizione</th></tr>
+    <tr><th>Parametro</th><th>Tipo</th><th>Descrizione</th></tr>
   </thead>
   <tbody>
-    <tr> <td>Dati in batch</td><td>Lista<CellValue></td> <td>dati batch</td> </tr>
-    <tr> <td>Foglio di lavoro sulla destinazione</td><td> Corda</td><td> Nome del foglio di lavoro di destinazione.</td></tr>
-    <tr><td>ÈInserisci</td><td>Corda</td><td>vero/falso.</td></tr>
-    <tr><td>ImportDataType</td><td> Corda</td><td>TwoDimensionStringBatchDataArray</td></tr>
-    <tr> <td>Fonte</td><td> FileSource</td><td>Indica la posizione del file di dati quando il parametro BatchData è null.</td></tr>
+    <tr><td>BatchData</td><td>List&lt;CellValue&gt;</td><td>Dati in blocco da importare</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Nome del foglio di destinazione</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Indica se inserire i dati (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>TwoDimensionStringBatchDataArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>Posizione del file di dati quando BatchData è null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="2" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametro</th><th scope="col">Tipo</th> <th scope="col">Descrizione</th></tr>
+    <tr><th>Parametro</th><th>Tipo</th><th>Descrizione</th></tr>
   </thead>
   <tbody>
-    <tr> <td>ConvertiDatiNumerici</td><td>Corda</td> <td>vero/falso.</td> </tr>
-    <tr> <td>Prima fila</td><td>interno</td> <td></td> </tr>
-    <tr> <td>Prima colonna</td><td>interno</td><td></td></tr>
-    <tr><td>SeparatoreStringa</td><td> Corda</td> <td></td></tr>
-    <tr> <td>Foglio di lavoro sulla destinazione</td><td> Corda</td><td> Nome del foglio di lavoro di destinazione.</td></tr>
-    <tr><td>Parser personalizzati</td><td>Lista<CustomParserConfig></td><td></td></tr>
-    <tr><td>ImportDataType</td><td> Corda</td><td>Dati CSV</td></tr>
-    <tr> <td>Fonte</td><td> FileSource</td><td>Indica la posizione del file di dati quando il parametro BatchData è null.</td></tr>
+    <tr><td>ConvertNumericData</td><td>boolean</td><td>Indica se convertire i dati numerici (true/false)</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>Indice della prima riga</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>Indice della prima colonna</td></tr>
+    <tr><td>SeparatorString</td><td>string</td><td>Separatore di colonna</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Nome del foglio di destinazione</td></tr>
+    <tr><td>CustomParsers</td><td>List&lt;CustomParserConfig&gt;</td><td>Configurazioni dei parser personalizzati</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>CSVData</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>Posizione del file di dati quando BatchData è null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="3" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametro</th><th scope="col">Tipo</th> <th scope="col">Descrizione</th></tr>
+    <tr><th>Parametro</th><th>Tipo</th><th>Descrizione</th></tr>
   </thead>
   <tbody>
-    <tr> <td>Prima fila</td><td>interno</td> <td></td> </tr>
-    <tr> <td>Prima colonna</td><td>interno</td><td></td></tr>
-    <tr><td>IsVertical</td><td>Corda</td><td>vero/falso.</td></tr>
-    <tr><td>Dati</td><td> Corda[]</td> <td></td></tr>
-    <tr> <td>Foglio di lavoro sulla destinazione</td><td> Corda</td><td> Nome del foglio di lavoro di destinazione.</td></tr>
-    <tr><td>ÈInserisci</td><td>Corda</td><td>vero/falso.</td></tr>
-    <tr><td>ImportDataType</td><td> Corda</td><td>Immagine</td></tr>
-    <tr> <td>Fonte</td><td> FileSource</td><td>Indica la posizione del file di dati quando il parametro BatchData è null.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>Indice della prima riga</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>Indice della prima colonna</td></tr>
+    <tr><td>IsVertical</td><td>boolean</td><td>Indica se l'immagine è posizionata verticalmente (true/false)</td></tr>
+    <tr><td>Data</td><td>string[]</td><td>Dati immagine (stringhe in base64)</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Nome del foglio di destinazione</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Indica se inserire i dati (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>Picture</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>Posizione del file di dati quando BatchData è null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="4" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametro</th><th scope="col">Tipo</th> <th scope="col">Descrizione</th></tr>
+    <tr><th>Parametro</th><th>Tipo</th><th>Descrizione</th></tr>
   </thead>
   <tbody>
-    <tr> <td>Prima fila</td><td>interno</td> <td></td> </tr>
-    <tr> <td>Prima colonna</td><td>interno</td><td></td></tr>
-    <tr><td>Dati</td><td> Intero[,]</td> <td></td></tr>
-    <tr> <td>Foglio di lavoro sulla destinazione</td><td> Corda</td><td> Nome del foglio di lavoro di destinazione.</td></tr>
-    <tr><td>ÈInserisci</td><td>Corda</td><td>vero/falso.</td></tr>
-    <tr><td>ImportDataType</td><td> Corda</td><td>TwoDimensionIntArray</td></tr>
-    <tr> <td>Fonte</td><td> FileSource</td><td>Indica la posizione del file di dati quando il parametro BatchData è null.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>Indice della prima riga</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>Indice della prima colonna</td></tr>
+    <tr><td>Data</td><td>int[,] </td><td>Array bidimensionale di interi</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Nome del foglio di destinazione</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Indica se inserire i dati (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>TwoDimensionIntArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>Posizione del file di dati quando BatchData è null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="5" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametro</th><th scope="col">Tipo</th> <th scope="col">Descrizione</th></tr>
+    <tr><th>Parametro</th><th>Tipo</th><th>Descrizione</th></tr>
   </thead>
   <tbody>
-    <tr> <td>Prima fila</td><td>interno</td> <td></td> </tr>
-    <tr> <td>Prima colonna</td><td>interno</td><td></td></tr>
-    <tr><td>Dati</td><td> Raddoppiare[,]</td> <td></td></tr>
-    <tr> <td>Foglio di lavoro sulla destinazione</td><td> Corda</td><td> Nome del foglio di lavoro di destinazione.</td></tr>
-    <tr><td>ÈInserisci</td><td>Corda</td><td>vero/falso.</td></tr>
-    <tr><td>ImportDataType</td><td> Corda</td><td>TwoDimensionDoubleArray</td></tr>
-    <tr> <td>Fonte</td><td> FileSource</td><td>Indica la posizione del file di dati quando il parametro BatchData è null.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>Indice della prima riga</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>Indice della prima colonna</td></tr>
+    <tr><td>Data</td><td>double[,] </td><td>Array bidimensionale di numeri in virgola mobile</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Nome del foglio di destinazione</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Indica se inserire i dati (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>TwoDimensionDoubleArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>Posizione del file di dati quando BatchData è null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="6" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametro</th><th scope="col">Tipo</th> <th scope="col">Descrizione</th></tr>
+    <tr><th>Parametro</th><th>Tipo</th><th>Descrizione</th></tr>
   </thead>
   <tbody>
-    <tr> <td>Prima fila</td><td>interno</td> <td></td> </tr>
-    <tr> <td>Prima colonna</td><td>interno</td><td></td></tr>
-    <tr><td>Dati</td><td> Corda[,]</td> <td></td></tr>
-    <tr> <td>Foglio di lavoro sulla destinazione</td><td> Corda</td><td> Nome del foglio di lavoro di destinazione.</td></tr>
-    <tr><td>ÈInserisci</td><td>Corda</td><td>vero/falso.</td></tr>
-    <tr><td>ImportDataType</td><td> Corda</td><td>TwoDimensionStringArray</td></tr>
-    <tr> <td>Fonte</td><td> FileSource</td><td>Indica la posizione del file di dati quando il parametro BatchData è null.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>Indice della prima riga</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>Indice della prima colonna</td></tr>
+    <tr><td>Data</td><td>string[,] </td><td>Array bidimensionale di stringhe</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Nome del foglio di destinazione</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Indica se inserire i dati (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>TwoDimensionStringArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>Posizione del file di dati quando BatchData è null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="7" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametro</th><th scope="col">Tipo</th> <th scope="col">Descrizione</th></tr>
+    <tr><th>Parametro</th><th>Tipo</th><th>Descrizione</th></tr>
   </thead>
   <tbody>
-    <tr> <td>Prima fila</td><td>interno</td> <td></td> </tr>
-    <tr> <td>Prima colonna</td><td>interno</td><td></td></tr>
-    <tr><td>IsVertical</td><td>Corda</td><td>vero/falso.</td></tr>
-    <tr><td>Dati</td><td> Intero[]</td> <td></td></tr>
-    <tr> <td>Foglio di lavoro sulla destinazione</td><td> Corda</td><td> Nome del foglio di lavoro di destinazione.</td></tr>
-    <tr><td>ÈInserisci</td><td>Corda</td><td>vero/falso.</td></tr>
-    <tr><td>ImportDataType</td><td> Corda</td><td>IntegerArray</td></tr>
-    <tr> <td>Fonte</td><td> FileSource</td><td>Indica la posizione del file di dati quando il parametro BatchData è null.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>Indice della prima riga</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>Indice della prima colonna</td></tr>
+    <tr><td>IsVertical</td><td>boolean</td><td>Indica se l'array è verticale (true/false)</td></tr>
+    <tr><td>Data</td><td>int[] </td><td>Array unidimensionale di interi</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Nome del foglio di destinazione</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Indica se inserire i dati (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>IntegerArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>Posizione del file di dati quando BatchData è null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="8" >}}
 
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametro</th><th scope="col">Tipo</th> <th scope="col">Descrizione</th></tr>
+    <tr><th>Parametro</th><th>Tipo</th><th>Descrizione</th></tr>
   </thead>
   <tbody>
-    <tr> <td>Prima fila</td><td>interno</td> <td></td> </tr>
-    <tr> <td>Prima colonna</td><td>interno</td><td></td></tr>
-    <tr><td>IsVertical</td><td>Corda</td><td>vero/falso.</td></tr>
-    <tr><td>Dati</td><td> Raddoppiare[]</td> <td></td></tr>
-    <tr> <td>Foglio di lavoro sulla destinazione</td><td> Corda</td><td> Nome del foglio di lavoro di destinazione.</td></tr>
-    <tr><td>ÈInserisci</td><td>Corda</td><td>vero/falso.</td></tr>
-    <tr><td>ImportDataType</td><td> Corda</td><td>DoppioArray</td></tr>
-    <tr> <td>Fonte</td><td> FileSource</td><td>Indica la posizione del file di dati quando il parametro BatchData è null.</td></tr>
+    <tr><td>FirstRow</td><td>int</td><td>Indice della prima riga</td></tr>
+    <tr><td>FirstColumn</td><td>int</td><td>Indice della prima colonna</td></tr>
+    <tr><td>IsVertical</td><td>boolean</td><td>Indica se l'array è verticale (true/false)</td></tr>
+    <tr><td>Data</td><td>double[] </td><td>Array unidimensionale di numeri in virgola mobile</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Nome del foglio di destinazione</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Indica se inserire i dati (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>DoubleArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>Posizione del file di dati quando BatchData è null</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="9" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametro</th><th scope="col">Tipo</th> <th scope="col">Descrizione</th></tr>
+    <tr><th>Parametro</th><th>Tipo</th><th>Descrizione</th></tr>
   </thead>
   <tbody>
-    <tr> <td>Riga superiore sinistra</td><td>interno</td> <td></td> </tr>
-    <tr> <td>Colonna in alto a sinistra</td><td>interno</td><td></td></tr>
-    <tr> <td>Riga inferiore destra</td><td>interno</td> <td></td> </tr>
-    <tr> <td>Colonna inferiore destra</td><td>interno</td><td></td></tr>
-    <tr><td>Nome del file</td><td>Corda</td><td></td></tr>
-    <tr><td>Dati</td><td> Corda</td> <td></td></tr>
-    <tr> <td>Foglio di lavoro sulla destinazione</td><td> Corda</td><td> Nome del foglio di lavoro di destinazione.</td></tr>
-    <tr><td>ÈInserisci</td><td>Corda</td><td>vero/falso.</td></tr>
-    <tr><td>ImportDataType</td><td> Corda</td><td>StringArray</td></tr>
-    <tr> <td>Fonte</td><td> FileSource</td><td>Indica la posizione del file di dati quando il parametro BatchData è null.</td></tr>
+    <tr><td>UpperLeftRow</td><td>int</td><td>Indice della riga superiore sinistra</td></tr>
+    <tr><td>UpperLeftColumn</td><td>int</td><td>Indice della colonna superiore sinistra</td></tr>
+    <tr><td>LowerRightRow</td><td>int</td><td>Indice della riga inferiore destra</td></tr>
+    <tr><td>LowerRightColumn</td><td>int</td><td>Indice della colonna inferiore destra</td></tr>
+    <tr><td>Filename</td><td>string</td><td>Nome del file di origine</td></tr>
+    <tr><td>Data</td><td>string</td><td>Dati stringa da importare</td></tr>
+    <tr><td>DestinationWorksheet</td><td>string</td><td>Nome del foglio di destinazione</td></tr>
+    <tr><td>IsInsert</td><td>boolean</td><td>Indica se inserire i dati (true/false)</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>StringArray</td></tr>
+    <tr><td>Source</td><td>FileSource</td><td>Posizione del file di dati quando BatchData è null</td></tr>
   </tbody>
 </table>
 
 {{< /tab >}}
 {{< tab tabNum="10" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametro</th><th scope="col">Tipo</th> <th scope="col">Descrizione</th></tr>
+    <tr><th>Parametro</th><th>Tipo</th><th>Descrizione</th></tr>
   </thead>
   <tbody>
-    <tr><td>indice di riga</td><td>interno</td> <td></td> </tr>
-    <tr><td>indice di colonna</td><td>interno</td><td></td></tr>
-    <tr><td>tipo</td><td>Corda</td><td>tipo di dati</td></tr>
-    <tr><td>valore</td><td> Corda</td> <td></td></tr>
-    <tr><td>stile</td><td> Stile(oggetto)</td><td></td></tr>
+    <tr><td>rowIndex</td><td>int</td><td>Indice di riga della cella</td></tr>
+    <tr><td>columnIndex</td><td>int</td><td>Indice di colonna della cella</td></tr>
+    <tr><td>type</td><td>string</td><td>Tipo di dati del valore della cella</td></tr>
+    <tr><td>value</td><td>string</td><td>Valore della cella</td></tr>
+    <tr><td>style</td><td>Style (object)</td><td>Definizione dello stile della cella</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< tab tabNum="11" >}}
+
 <table class="table">
   <thead>
-    <tr><th scope="col">Parametro</th><th scope="col">Tipo</th> <th scope="col">Descrizione</th></tr>
+    <tr><th>Parametro</th><th>Tipo</th><th>Descrizione</th></tr>
   </thead>
   <tbody>
-    <tr><td>Tipo di origine file</td><td>Corda</td> <td>InMemoryFiles/CloudFileSystem/RequestFiles</td> </tr>
-    <tr><td>Percorso file</td><td>Corda</td><td> posizione del file</td></tr>
+    <tr><td>FileSourceType</td><td>string</td><td>InMemoryFiles, CloudFileSystem o RequestFiles</td></tr>
+    <tr><td>FilePath</td><td>string</td><td>Percorso del file di origine</td></tr>
   </tbody>
 </table>
+
 {{< /tab >}}
 {{< /tabs >}}
 
-## Come esportare gli oggetti Excel in vari formati di file
+## Come esportare oggetti Excel in diversi formati file
 
-Se hai originariamente creato un file Excel in un determinato formato, come[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , E[CSV](https://docs.fileformat.com/spreadsheet/csv/) volte potrebbe essere utile convertire il file Excel in un altro formato per sfruttare le funzionalità speciali offerte. Ad esempio, potresti voler esportare un file Excel in[PDF](https://docs.fileformat.com/pdf/) per proteggere i tuoi contenuti da modifiche non autorizzate e renderli facili da leggere e condividere contemporaneamente.
+Se hai creato inizialmente un file Excel in un formato come **XLS**, **XLSX**, **XLSB** o **CSV**, potresti volerlo convertire in un altro formato per sfruttare funzionalità specifiche. Ad esempio, esportando in **PDF** si protegge il contenuto da modifiche non autorizzate, rendendolo al contempo facile da leggere e condividere.
 
-L'esportazione di oggetti Excel è un processo complesso. Molti fattori contribuiscono alla complessità e, pertanto, è necessario tenerne conto durante il processo di esportazione. La possibilità di esportare oggetti Excel in un unico formato con una qualità professionale precisa è una delle principali caratteristiche di Aspose.Cells Cloud.
+L'esportazione di oggetti Excel comporta diverse considerazioni. Aspose.Cells Cloud fornisce un'alta qualità di esportazione di cartelle di lavoro, grafici, forme e immagini in una vasta gamma di formati:
 
- Funziona perfettamente per cartelle di lavoro, grafici, forme e immagini esportati da file Excel. È possibile esportare nei seguenti formati:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/) I formati di sola esportazione:[PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMERI](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+_Formati solo per esportazione_: PDF, OTS, XPS, DIF, PNG, JPEG, BMP, SVG, TIFF, EMF, NUMBERS, FODS.  
+_Formati sia per importazione che per esportazione_: XLS, XLSX, XLSB, CSV, TSV, XLSM, ODS, TXT.
 
-La richiesta è una richiesta HTTP con contenuto multiparte (vedere[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)O[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La prima parte del contenuto multiparte contiene il file di dati e la seconda contiene le opzioni di salvataggio.
+La richiesta utilizza contenuto multipart come definito in [RFC 2046] e [RFC 1341]. La prima parte contiene il file di dati; la seconda parte contiene le opzioni di salvataggio.
 
-La cartella di lavoro REST API `export` e gli oggetti interni in file di formato diverso.
-
-### Esporta API Informazioni
+### Informazioni sull'API di esportazione
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/export
-
 ```
 
-I parametri della richiesta sono:
+#### Parametri della richiesta
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| file| file| formData| File da caricare|
-| tipooggetto| corda| domanda| tipo di oggetto (cartella di lavoro/foglio di lavoro/grafico/forma/immagine/oggettoelenco/oggettoole)|
-| formato| corda| domanda|[Formato file](/cells/it/supported-file-formats/)  |
+| Nome parametro | Tipo   | Posizione | Descrizione                                                                                      |
+| :------------- | :----- | :-------- | :----------------------------------------------------------------------------------------------- |
+| file           | file   | formData  | File da caricare                                                                                 |
+| objectType     | string | query     | Tipo di oggetto (`workbook`, `worksheet`, `chart`, `shape`, `picture`, `listobject`, `oleobject`) |
+| format         | string | query     | Formato di output desiderato (vedi [Formati file supportati](/it/cells/supported-file-formats/)) |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definisce un'interfaccia di programmazione pubblicamente accessibile che consente di eseguire interazioni REST direttamente da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+Puoi utilizzare lo strumento a riga di comando cURL per chiamare l'API. L'esempio seguente mostra una richiesta e la relativa risposta JSON.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/export" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+curl -v "https://api.aspose.cloud/v3.0/cells/export" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'file1=@example1.xlsx' \
+  -F 'file2=@example2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "example1.pdf",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "example2.pdf",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
-
 {{< /tabs >}}
+
+#### Codici di stato HTTP comuni
+
+| Stato | Significato                                                     | Azione consigliata                           |
+| ----- | --------------------------------------------------------------- | -------------------------------------------- |
+| 200   | Successo – il file è stato esportato                           | Elaborare il/i file restituito/i            |
+| 400   | Richiesta non valida – parametri mancanti o non validi         | Verificare il payload della richiesta e le stringhe di query |
+| 401   | Non autorizzato – token JWT non valido o scaduto               | Aggiornare il token e riprovare              |
+| 404   | Non trovato – la cartella di lavoro o il foglio specificati non esistono | Verificare il nome del file e il percorso di archiviazione |
+| 500   | Errore interno del server – condizione imprevista sul server   | Contattare il supporto Aspose con l'ID della richiesta |
 
 ## Come chiamare le API di importazione ed esportazione
 
-Gli articoli seguenti spiegano in dettaglio come chiamare ogni API e contengono esempi di cURL e SDK per ogni API:
+I seguenti articoli spiegano dettagliatamente ciascuna API e contengono esempi cURL e SDK:
 
-- [Come importare dati in file Excel senza utilizzare spazio di archiviazione.](/cells/it/import/without-using-storage)
-- [Come importare dati in file Excel utilizzando l'archiviazione.](/cells/it/import/with-using-storage)
-- [Come importare dati batch nel foglio di lavoro Excel](/cells/it/import-batch-data-into-excel-worksheet/)
-- [Come importare dati CSV nel foglio di lavoro Excel](/cells/it/import-csv-data-into-excel-worksheet/)
-- [Come importare un'immagine nel foglio di lavoro Excel](/cells/it/import-picture-into-excel-worksheet/)
-- [Come importare un array di interi nel foglio di lavoro Excel](/cells/it/import-integer-array-into-excel-worksheet/)
-- [Come importare un array doppio nel foglio di lavoro Excel](/cells/it/import-double-array-into-excel-worksheet/)
-- [Come importare un array di stringhe nel foglio di lavoro Excel](/cells/it/import-string-array-into-excel-worksheet/)
-- [Come importare un array di interi bidimensionali nel foglio di lavoro Excel](/cells/it/import-a-2D-integer-array-into-excel-worksheet/)
-- [Come importare un array doppio a 2 dimensioni nel foglio di lavoro Excel](/cells/it/import-a-2D-double-array-into-excel-worksheet/)
-- [Come importare un array di stringhe bidimensionali nel foglio di lavoro Excel](/cells/it/import-a-2D-string-array-into-excel-worksheet/)
-- [Esporta il grafico Excel in un formato di file diverso](/cells/it/export-excel-chart-to-different-formats/)
-- [Esporta Excel list-object in un formato di file diverso](/cells/it/export-excel-listobject-to-different-formats/)
-- [Esporta Excel ole-object in un formato di file diverso](/cells/it/export-excel-ole-object/)
-- [Esporta l'immagine Excel in un formato di file diverso](/cells/it/export-excel-picture-to-different-formats/)
-- [Esporta la forma Excel in un formato di file diverso](/cells/it/export-excel-shape-to-different-formats/)
-- [Esporta la cartella di lavoro Excel in un formato di file diverso](/cells/it/export-excel-to-different-formats/)
-- [Esporta il foglio di lavoro Excel in un formato di file diverso](/cells/it/export-excel-worksheet-to-different-formats//)
+- [Come importare dati in file Excel senza utilizzare l'archiviazione.](/it/cells/import/without-using-storage)
+- [Come importare dati in file Excel con utilizzo dell'archiviazione.](/it/cells/import/with-using-storage)
+- [Come importare dati in blocco in un foglio Excel](/it/cells/import-batch-data-into-excel-worksheet/)
+- [Come importare dati CSV in un foglio Excel](/it/cells/import-CSV-data-into-excel-worksheet/)
+- [Come importare un'immagine in un foglio Excel](/it/cells/import-picture-into-excel-worksheet/)
+- [Come importare un array di interi in un foglio Excel](/it/cells/import-integer-array-into-excel-worksheet/)
+- [Come importare un array di numeri in virgola mobile in un foglio Excel](/it/cells/import-double-array-into-excel-worksheet/)
+- [Come importare un array di stringhe in un foglio Excel](/it/cells/import-string-array-into-excel-worksheet/)
+- [Come importare un array bidimensionale di interi in un foglio Excel](/it/cells/import-a-2D-integer-array-into-excel-worksheet/)
+- [Come importare un array bidimensionale di numeri in virgola mobile in un foglio Excel](/it/cells/import-a-2D-double-array-into-excel-worksheet/)
+- [Come importare un array bidimensionale di stringhe in un foglio Excel](/it/cells/import-a-2D-string-array-into-excel-worksheet/)
+- [Esportare un grafico Excel in un diverso formato file](/it/cells/export-excel-chart-to-different-formats/)
+- [Esportare un oggetto elenco Excel in un diverso formato file](/it/cells/export-excel-listobject-to-different-formats/)
+- [Esportare un oggetto OLE Excel in un diverso formato file](/it/cells/export-excel-ole-object/)
+- [Esportare un'immagine Excel in un diverso formato file](/it/cells/export-excel-picture-to-different-formats/)
+- [Esportare una forma Excel in un diverso formato file](/it/cells/export-excel-shape-to-different-formats/)
+- [Esportare una cartella di lavoro Excel in un diverso formato file](/it/cells/export-excel-to-different-formats/)
+- [Esportare un foglio Excel in un diverso formato file](/it/cells/export-excel-worksheet-to-different-formats/)
+
+---

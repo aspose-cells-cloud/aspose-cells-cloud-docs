@@ -1,74 +1,101 @@
-﻿---
-title: يجمع نطاق Cells في خلية واحدة
-second_title: Documen
-linktitle: ميرج
-type: docs
-url: /ar/ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
-keywords: Merge a range of cells into a single cell
-description: يدعم Cloud REST دمج نطاق من الخلايا في خلية واحدة في ورقة عمل. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، يجمع نطاقًا من Cells في خلية واحدة
 ---
-يشير هذا REST API إلى دمج نطاق من الخلايا في خلية واحدة على ورقة عمل Excel.
+title: "واجهة برمجة تطبيقات Aspose.Cells Cloud – دمج نطاق خلايا"
+second_title: "مستند"
+linktitle: "دمج"
+type: docs
+url: /ranges/merge/
+aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+keywords: "Aspose.Cells، دمج الخلايا، واجهة برمجة تطبيقات إكسل، REST، حزمة تطوير البرامج السحابية"
+description: "دمج نطاق من الخلايا في خلية واحدة باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. تعلّم تنسيق الطلب، المعلمات، وأمثلة حزم تطوير البرامج (SDK) بلغات C#، Java، Python، وغير ذلك."
+weight: 20
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية لـ REST بدمج نطاق من الخلايا في خلية واحدة داخل ورقة عمل إكسل.
+
+**نظرة عامة** – يؤدي دمج النطاق إلى دمج الخلايا المحددة في خلية واحدة، مع الاحتفاظ بقيمة الخلية العلوية اليسرى وتُهمل القيم المتبقية. استخدم هذه العملية عندما تحتاج إلى إنشاء رأس يمتد عبر أعمدة أو صفوف متعددة، أو عندما ترغب في تبسيط تخطيط ورقة العمل.
+
+## واجهة برمجة تطبيقات REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
 ```
 
-معلمات الطلب هي:
+### **معلمات الطلب**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل|
-| يتراوح|| جسم| النطاق في ورقة العمل|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعلمة    | النوع   | الموقع | الوصف                                               |
+| --------------- | ------ | ------ | --------------------------------------------------- |
+| **name**        | نص     | المسار | اسم ملف المصنف.                                     |
+| **sheetName**   | نص     | المسار | اسم ورقة العمل.                                     |
+| **range**       | كائن   | الجسم | كائن النطاق الذي يحدد الخلايا المراد دمجها.         |
+| **folder**      | نص     | الاستعلام | المجلد الذي يُخزَّن فيه المصنف.                    |
+| **storageName** | نص     | الاستعلام | اسم وحدة التخزين.                                  |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMerge) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+#### مخطط جسم الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يجب أن يحتوي كائن **النطاق** على الحقول التالية (جميع الحقول الأخرى اختيارية):
+
+| الخاصية         | النوع    | الإلزام | الوصف                                                |
+| --------------- | -------- | ------ | ---------------------------------------------------- |
+| **FirstRow**    | عدد صحيح | نعم     | مؤشر الصف الأول في النطاق (مبني على الصفر).         |
+| **FirstColumn** | عدد صحيح | نعم     | مؤشر العمود الأول في النطاق (مبني على الصفر).       |
+| **RowCount**    | عدد صحيح | نعم     | عدد الصفوف المُضمنة في النطاق.                      |
+| **ColumnCount** | عدد صحيح | نعم     | عدد الأعمدة المُضمنة في النطاق.                     |
+| **Name**        | نص      | لا      | اسم اختياري للنطاق.                                 |
+| **RefersTo**    | نص      | لا      | صيغة يشير إليها النطاق.                             |
+| **Worksheet**   | نص      | لا      | اسم ورقة العمل (إذا اختلف عن معلمة المسار).          |
+| **RowHeight**   | رقم     | لا      | ارتفاع الصفوف في النطاق (بالبكسل).                   |
+| **ColumnWidth** | رقم     | لا      | عرض الأعمدة في النطاق (بالبكسل).                     |
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب الخاصة بـ Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إجراء مكالمة إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/merge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "FirstRow": 9,
+        "FirstColumn": 0,
+        "RowCount": 1,
+        "ColumnCount": 7
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+#### تفاصيل الاستجابة
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| حالة HTTP                     | الوصف                                                  | JSON مثال                                              |
+| ----------------------------- | ------------------------------------------------------- | ------------------------------------------------------ |
+| **200 OK**                    | تم دمج النطاق بنجاح.                                    | `{ "Code": 200, "Status": "OK" }`                      |
+| **400 Bad Request**           | معلمات النطاق غير صالحة (مثل: مؤشرات خارج النطاق).      | `{ "Code": 400, "Message": "Invalid range." }`         |
+| **401 Unauthorized**          | رمز JWT مفقود أو غير صالح.                             | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404 Not Found**             | المصنف أو ورقة العمل غير موجودين.                      | `{ "Code": 404, "Message": "Resource not found." }`    |
+| **500 Internal Server Error** | خطأ في الخادم الداخلي غير متوقع.                      | `{ "Code": 500, "Message": "Internal server error." }` |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+## عائلة حزم تطوير البرامج السحابية
+
+استخدام حزمة تطوير البرامج (SDK) هو أفضل طريقة لتسريع عملية التطوير. وتتولى حزم التطوير تفاصيل المستوى المنخفض تلقائيًا، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم تطوير البرامج الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الرمز التالية كيفية استدعاء خدمات الويب الخاصة بـ Aspose.Cells باستخدام حزم تطوير البرامج المختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

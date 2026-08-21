@@ -1,76 +1,93 @@
-﻿---
-title: Uppdatera diagramtitel i arbetsbladet Excel
+---
+title: "Uppdatera diagramrubrik i Excel-ark"
 type: docs
-url: /sv/charts/title/update/
+url: /charts/title/update/
 aliases: [/update-chart-title-in-excel-worksheet/]
 weight: 160
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Uppdatera diagramrubrik i Excel-kalkylblad
+keywords: Excel, Aspose.Cells, REST API, Diagramrubrik, Uppdatera, Molntjänst SDK
+description: Lär dig hur du uppdaterar en diagramrubrik i ett Excel-ark med Aspose.Cells Cloud REST API, cURL och diverse SDK:er.
+ArticleTitle: "Uppdatera diagramrubrik i Excel-ark – Aspose.Cells Cloud-dokumentation"
 ---
-Denna REST API indikerar uppdatering av diagramtitel
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
- 
+
+Denna REST API uppdaterar diagramrubriken.
+
+**Förutsättningar:** Du måste ha ett giltigt Aspose Cloud-konto och en JWT-token för auktorisering. Typiska steg inkluderar:
+
+- Registrera dig för ett Aspose Cloud-konto.  
+- Generera en JWT-token via autentiseringsslutpunkten.  
+- Se till att målarbokshanteraren är lagrad i ett stödt molnlagringssystem (standard eller anpassad).
+
+## PostWorksheetChartTitle API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
- Begäranparametrarna är:
- 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsboksnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| diagramindex| heltal| väg| Diagramindexet.|
-| titel|| kropp| Diagramtitel|
-| mapp| sträng| fråga| Arbetsbokens mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
- 
-<br/>
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
- 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Alla API-anrop måste göras över **HTTPS** för att undvika varningar om blandat innehåll.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Säkerhet och auktorisering**
+
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad auktorisering</a>.
+
+### Begäranparametrar
+
+| Parameternamn | Typ    | Plats  | Beskrivning                          |
+| ------------- | ------ | ------ | ------------------------------------ |
+| name          | string | path   | Arbetsbokens namn.                   |
+| sheetName     | string | path   | Arkets namn.                         |
+| chartIndex    | integer | path  | Nollbaserat index för diagrammet.    |
+| title         | string | body  | Ny diagramrubrik.                    |
+| folder        | string | query | Mappen för arbetsboken.              |
+| storageName   | string | query | Lagringsnamn.                        |
+
+### Svarsstatuskoder
+
+| Kod | Beskrivning                                         |
+| --- | --------------------------------------------------- |
+| 200 | OK – Diagramrubriken uppdaterades framgångsrikt.   |
+| 400 | Bad Request – Saknade eller ogiltiga parametrar.   |
+| 401 | Unauthorized – Ogiltig eller saknad JWT-token.     |
+| 404 | Not Found – Arbetsbok, ark eller diagram hittades inte. |
+| 500 | Internal Server Error – Oväntat serverfel.         |
+
+**Obs:** `chartIndex` är nollbaserat; det första diagrammet i ett ark refereras med `0`.
+
+<a href="https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle" target="_blank" rel="noopener noreferrer">OpenAPI-specifikationen</a> definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v POST "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" 
--d '{"Text":"Stock exchange"}' 
--X POST \
+```bash
+curl -v POST "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
+-d '{"title":"Stock exchange"}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
-## Cloud SDK-familjen
- 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
- 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+
+## Molntjänst SDK-familj
+
+Att använda en SDK är det bästa sättet att snabba upp utvecklingen. En SDK hanterar detaljer på låg nivå och låter dig fokusera på dina projekts uppgifter. Kolla in <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub-förrådet</a> för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med hjälp av diverse SDK:er:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

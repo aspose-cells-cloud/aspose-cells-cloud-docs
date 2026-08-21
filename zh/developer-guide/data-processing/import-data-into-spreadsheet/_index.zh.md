@@ -1,107 +1,121 @@
-﻿---
-title: Aspose.Cells Cloud Web API - 将 Csv、JSON 或 XML 数据导入电子表格文件
-second_title: Documen
-ArticleTitle: Import Csv, JSON, or XML Data into a Spreadsheet file
-linktitle: 将数据导入电子表格
-type: docs
-url: /zh/import-data-into-spreadsheet/
-keywords: Import data, Aspose.Cells Cloud Web API, spreadsheet integration, CSV, JSON, XML, data handling, Aspose.Cell
-description: 使用 Aspose.Cells Cloud Web API 将数据从 CSV、JSON 和 XML 等受支持的格式高效导入电子表格
-weight: 100
-kwords: Aspose.Cells 云 Web API，导入数据，Office 云，REST，电子表格，CSV，JSON，XM
 ---
-将数据导入电子表格工作表。导入的数据文件支持以下格式：[XML](https://docs.fileformat.com/web/xml/), [JSON](https://docs.fileformat.com/web/json/)或者[CSV](https://docs.fileformat.com/spreadsheet/csv/).
+title: "Aspose.Cells Cloud 数据导入 API —— 用于将 CSV、JSON 和 XML 数据自动导入 Excel 工作表的云解决方案"
+second_title: "文档"
+articleTitle: "多源数据集成 Excel 平台 —— Aspose.Cells Cloud 自动化数据导入与转换 API"
+linktype: "导入数据到工作表"
+type: docs
+url: /import-data-into-spreadsheet/
+keywords: "Aspose Cells, 数据导入 API, CSV 转 Excel, JSON 转 Excel, XML 转 Excel, 云工作表, REST API"
+description: "使用 Aspose.Cells Cloud REST API 将 CSV、JSON 或 XML 数据导入 Excel 工作表。了解请求格式、参数、示例 SDK 代码和错误处理。"
+weight: 100
+---
 
-## **将数据导入电子表格 API**
+## 核心功能
+
+### 多格式数据支持
+
+- **<a href="https://docs.fileformat.com/spreadsheet/csv/" rel="noopener noreferrer">CSV</a> 数据导入**：支持多种分隔符，并自动检测编码。
+- **<a href="https://docs.fileformat.com/web/json/" rel="noopener noreferrer">JSON</a> 数据处理**：将复杂的 JSON 结构扁平化为 Excel 表格。
+- **<a href="https://docs.fileformat.com/web/xml/" rel="noopener noreferrer">XML</a> 文件转换**：将节点数据映射到 Excel 的行和列结构中。
+
+## 将数据导入工作表 API 描述
+
+### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/import/data
+PUT https://api.aspose.cloud/v4.0/cells/import/data
 ```
 
-### **请求参数：**
+### 安全与认证
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|数据文件|文件|表单数据|上传需要导入的数据文件。|
-|电子表格|文件|表单数据|上传目标电子表格文件。|
-|工作表|细绳|询问|指定导入数据的工作表。|
-|启动细胞|细绳|询问|指定导入数据的起始位置。|
-|插入|布尔值|询问|指示是否插入或覆盖指定的导入数据。|
-|转换数字数据|布尔值|询问|指定导入时是否转换数值数据。|
-|分离器|细绳|询问|指定 CSV 格式的分隔符。|
-|输出路径|细绳|询问| （可选）存储工作簿的文件夹路径。默认值为 null。|
-|输出存储名称|细绳|询问|指定输出文件存储名称。|
-|字体位置|细绳|询问|定义要使用的自定义字体。|
-|雷戈因|细绳|询问|设置电子表格区域配置。|
-|密码|细绳|询问|打开电子表格文件的密码。|
+Aspose.Cells Cloud API 具有安全性，需要基于 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT 令牌的身份验证</a>。
 
-### **回复**
+### 请求参数
+
+| 参数名             | 类型   | 位置         | 描述                                                                     |
+| ------------------ | ------ | ------------ | ------------------------------------------------------------------------ |
+| datafile           | File   | FormData     | 待导入的数据文件（CSV、JSON 或 XML）                                     |
+| spreadsheet        | File   | FormData     | 接收导入数据的目标工作簿                                                 |
+| worksheet          | string | Query        | 数据将被放置的工作表名称                                                 |
+| startCell          | string | Query        | 标记导入起始位置的左上角单元格（例如 `A1`）                             |
+| insert             | bool   | Query        | `true` 表示插入新行；`false` 表示覆盖已有数据                           |
+| convertNumericData | bool   | Query        | `true` 表示在导入过程中将数字字符串转换为数值                           |
+| splitter           | string | Query        | 单字符 CSV 分隔符（默认为 `,`）                                         |
+| outPath            | string | Query（可选） | 存储更新后工作簿的文件夹路径                                             |
+| outStorageName     | string | Query（可选） | 输出文件的存储位置名称                                                   |
+| fontsLocation      | string | Query（可选） | 自定义字体文件夹路径（如需要）                                           |
+| region             | string | Query（可选） | 工作表区域配置（例如 `zh-CN`）                                          |
+| password           | string | Query（可选） | 打开受保护工作簿所需的密码                                               |
+
+### 响应
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### 错误代码
+**HTTP 状态码**
 
-- **400 错误请求**：无效的 Apose.Cells Cloud API URI。
-- **401 未授权**：访问令牌无效。或者客户端 ID 和密钥无效。
-- **404 未找到**：电子表格文件无法访问。
-- **500 服务器错误**：电子表格在获取计算数据时遇到异常。
+| 状态码 | 含义         | 描述                                               |
+| ------ | ------------ | -------------------------------------------------- |
+| 200    | OK（成功）   | 成功应用筛选；响应包含操作详情                     |
+| 400    | Bad Request（请求错误） | 参数缺失或无效（例如，不支持的文件类型）           |
+| 401    | Unauthorized（未授权）  | JWT 令牌无效或缺失                                 |
+| 413    | Payload Too Large（载荷过大） | 上传文件超出大小限制                             |
+| 500    | Internal Server Error（内部服务器错误） | 发生意外服务器错误                         |
 
-## 我们应该在哪里使用“将数据导入电子表格 API”？
+## 为何应使用本 API
 
-- 将大量数据导入电子表格工作表。
-- 导入的数据文件格式为[XML](https://docs.fileformat.com/web/xml/), [JSON](https://docs.fileformat.com/web/json/)和[CSV](https://docs.fileformat.com/spreadsheet/csv/).
+- **高效数据加载**：支持批量导入大型数据集至工作簿，无需创建中间文件。
+- **广泛 SDK 支持**：提供 .NET、Java、PHP、Ruby、Node.js、Python、Go 和 Perl 的客户端库，简化集成。
+- **内存中处理**：在内存中执行转换，减少临时存储需求。
 
-## 为什么要使用“将数据导入电子表格 API”？
+## 如何通过 SDK 使用将数据导入工作表 API
 
-- 将大量数据导入电子表格。
-- 通过现有的SDK即可快速完成开发。
+**注意事项 / 限制**：单次导入最多支持 1,000,000 行数据。默认 CSV 分隔符仅支持逗号（`,`），其他单字符分隔符可通过 `splitter` 参数指定。大型 XML 文件可能增加处理时间。
 
-## 如何使用 SDK 将数据导入电子表格 API
+有关相关操作（如导出数据或转换工作簿格式），请参阅 **导出数据** 和 **转换工作簿** 文档。
 
-### 将数据导入电子表格 API 规范
+### 将数据导入工作表 API 规范
 
-这[将数据导入电子表格 API 规范](https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet)提供一个可公开访问的编程接口，允许直接从您的 Web 浏览器进行 REST 交互。
+<a href="https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet" rel="noopener noreferrer">将数据导入工作表 API 规范</a> 提供了一个公开可访问的编程接口，允许您直接从网页浏览器与 REST API 交互。
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用云 API。
 
-### 使用 Aspose.Cells 云 SDK
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
-使用 SDK 是最快的开发方式，因为它抽象了低级细节，允许您使用短代码将数据导入电子表格工作表。
-请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+{{< tab tabNum="11" >}}
 
-以下代码示例说明了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/import/data?worksheet=Sheet1&startCell=A1&insert=true" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "datafile=@/path/to/data.csv" \
+  -F "spreadsheet=@/path/to/workbook.xlsx"
+```
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ImportDataIntoSpreadsheet.cs" >}}
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ImportDataIntoSpreadsheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[]（Base64 编码）",
+  "contentType": "MIME 类型",
+  "fileDownloadName": "可选文件名"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ImportDataIntoSpreadsheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ImportDataIntoSpreadsheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ImportDataIntoSpreadsheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ImportDataIntoSpreadsheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ImportDataIntoSpreadsheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ImportDataIntoSpreadsheet.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### 使用 Aspose.Cells Cloud SDK
+
+使用 SDK 是最快捷的开发方式，它抽象了底层细节，使您能够用简短的代码将数据导入工作表工作表。请查看 <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub 仓库</a> 获取 Aspose.Cells Cloud SDK 的完整列表。

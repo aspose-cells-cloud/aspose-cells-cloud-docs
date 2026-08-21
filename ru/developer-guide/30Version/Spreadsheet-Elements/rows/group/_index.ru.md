@@ -1,76 +1,98 @@
-﻿---
-title: Группировка строк на рабочем листе Excel
-second_title: Documen
-linktitle: Гроу
+---
+title: "Группировка строк в рабочей тетради Excel"
+second_title: "Документ"
+linktype: "Группировка"
 type: docs
 url: /ru/rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
-keywords: Group rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает группировку строк на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+aliases: [/ru/group-rows-in-excel-worksheet/]
+keywords: "группировка строк, Excel, Aspose.Cells Cloud, REST API, SDK, рабочий лист, Excel API"
+description: "Группировка строк в рабочем листе Excel с использованием REST API Aspose.Cells Cloud. Поддерживает множество SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) для простой интеграции."
 weight: 60
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Группировка строк на листе Excel
+ArticleTitle: "Группировка строк в рабочем листе Excel с помощью API Aspose.Cells Cloud"
 ---
-Этот REST API указывает на группировку строк на листе Excel.
 
-## РСЕT API
+Этот REST API позволяет выполнить группировку строк в рабочем листе Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
- 
+**Необходимые условия:**  
+- В заголовке `Authorization` должен быть предоставлен действительный токен доступа OAuth 2.0 (Bearer JWT).  
+- Рабочая книга должна уже существовать в указанной `папке` выбранного `storageName` (или в хранилище по умолчанию) до отправки запроса.
+
+## API PostGroupWorksheetRows
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| firstIndex| целое число| запрос| Первый индекс строки, подлежащий обработке.|
-| lastIndex| целое число| запрос| Последний индекс строки, подлежащий обработке.|
-| скрывать| булев| запрос| состояние видимости строк|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификацию по токену JWT</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### **Параметры запроса**
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра | Тип    | Расположение | Описание                                                                     |
+|---------------|--------|-------------|------------------------------------------------------------------------------|
+| name          | string | path        | Имя файла рабочей книги.                                                     |
+| sheetName     | string | path        | Имя рабочего листа.                                                          |
+| firstIndex    | integer| query       | Нулевой индекс первой строки, включаемой в группу.                           |
+| lastIndex     | integer| query       | Нулевой индекс последней строки, включаемой в группу.                        |
+| hide          | boolean| query       | Указывает, должны ли быть скрыты сгруппированные строки (`true` или `false`).|
+| folder        | string | query       | Путь к папке, содержащей рабочую книгу.                                     |
+| storageName   | string | query       | Имя хранилища, в котором находится рабочая книга.                           |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) определяет публично доступное программное интерфейсное описание и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как выполнять вызовы в облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/group?firstIndex=1&lastIndex=2&hide=true" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**Коды HTTP-статуса**
+
+| Код  | Значение                    | Описание                                                                 |
+|------|-----------------------------|--------------------------------------------------------------------------|
+| 200  | OK (ОК)                     | Фильтр успешно применён; в ответе содержатся подробности операции.      |
+| 400  | Bad Request (Неверный запрос)| Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401  | Unauthorized (Неавторизован)| Недействительный или отсутствующий JWT-токен.                           |
+| 413  | Payload Too Large (Слишком большой payload)| Загружаемый файл превышает лимит размера.                          |
+| 500  | Internal Server Error (Внутренняя ошибка сервера)| Непредвиденная ошибка сервера.                                    |
+
+Типичные сообщения об ошибках:
+
+- **400 Bad Request** – убедитесь, что `firstIndex` и `lastIndex` являются допустимыми целыми числами и что `firstIndex` ≤ `lastIndex`.  
+- **401 Unauthorized** – проверьте, содержит ли заголовок `Authorization` актуальный JWT-токен.  
+- **404 Not Found** – убедитесь, что рабочая книга (`name`) и рабочий лист (`sheetName`) существуют в указанной `папке`/`storageName`.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Смотрите также:** [Разгруппировка строк в рабочем листе Excel](../rows/ungroup/ "Разгруппировка строк в рабочем листе Excel"), [Скрытие строк в рабочем листе Excel](../rows/hide/ "Скрытие строк в рабочем листе Excel"), [Показ строк в рабочем листе Excel](../rows/unhide/ "Показ строк в рабочем листе Excel").
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK берёт на себя обработку низкоуровневых деталей, позволяя вам сосредоточиться на задачах проекта. Полный список облачных SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

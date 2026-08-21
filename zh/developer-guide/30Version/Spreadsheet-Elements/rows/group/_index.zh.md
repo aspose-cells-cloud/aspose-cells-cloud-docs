@@ -1,76 +1,98 @@
-﻿---
-title: 在 Excel 工作表上对行进行分组
-second_title: Documen
-linktitle: 格鲁
-type: docs
-url: /zh/rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
-keywords: Group rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持在 Excel 工作表上对行进行分组。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 60
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、工作表上的分组行 Excel
 ---
-此 REST API 表示对 Excel 工作表上的行进行分组。
+title: "对 Excel 工作表中的行进行分组"
+second_title: "文档"
+linktype: "分组"
+type: docs
+url: /rows/group/
+aliases: [/group-rows-in-excel-worksheet/]
+keywords: "分组行, Excel, Aspose.Cells Cloud, REST API, SDK, 工作表, Excel API"
+description: "使用 Aspose.Cells Cloud REST API 对 Excel 工作表中的行进行分组。支持多种 SDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go），便于集成。"
+weight: 60
+ArticleTitle: "使用 Aspose.Cells Cloud API 在 Excel 工作表中分组行"
+---
 
-## 重新设置 API
+此 REST API 用于对 Excel 工作表中的行进行分组。
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
- 
+**前提条件：**  
+- 必须在 `Authorization` 请求头中提供有效的 OAuth 2.0 访问令牌（Bearer JWT）。  
+- 在发送请求之前，工作簿必须已存在于所选 `storageName`（或默认存储）的指定 `folder` 中。
+
+## PostGroupWorksheetRows API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
 ```
 
-请求参数为：
+### **安全与认证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|第一个索引|整数|询问|需要操作的第一行索引。|
-|最后一个索引|整数|询问|需要操作的最后一行索引。|
-|隐藏|布尔值|询问|行可见状态|
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 采用安全机制，需要<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的认证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### **请求参数**
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名         | 类型    | 位置   | 描述                                                       |
+| -------------- | ------- | ------ | ---------------------------------------------------------- |
+| name           | string  | 路径   | 工作簿文件的名称。                                         |
+| sheetName      | string  | 路径   | 工作表的名称。                                             |
+| firstIndex     | integer | 查询参数 | 要分组的第一行的从零开始的索引。                           |
+| lastIndex      | integer | 查询参数 | 要分组的最后一行的从零开始的索引。                         |
+| hide           | boolean | 查询参数 | 指示分组的行是否应被隐藏（`true` 或 `false`）。            |
+| folder         | string  | 查询参数 | 包含工作簿的文件夹路径。                                   |
+| storageName    | string  | 查询参数 | 工作簿所在的存储名称。                                     |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) 定义了一个公开可用的编程接口，可让您直接通过网页浏览器执行 REST 交互。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用云 API。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/group?firstIndex=1&lastIndex=2&hide=true" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**HTTP 状态码**
+
+| 状态码 | 含义           | 描述                                         |
+|------|----------------|----------------------------------------------|
+| 200  | OK（成功）     | 筛选器应用成功；响应包含操作详情。           |
+| 400  | Bad Request（错误请求） | 缺少或无效的参数（例如不支持的文件类型）。 |
+| 401  | Unauthorized（未授权） | JWT 令牌无效或缺失。                      |
+| 413  | Payload Too Large（请求实体过大） | 上传文件超过大小限制。                 |
+| 500  | Internal Server Error（内部服务器错误） | 发生意外服务器错误。                  |
+
+典型错误响应：
+
+- **400 Bad Request** – 请检查 `firstIndex` 和 `lastIndex` 是否为有效整数，并确保 `firstIndex` ≤ `lastIndex`。  
+- **401 Unauthorized** – 请确认 `Authorization` 请求头中包含有效的 JWT 令牌。  
+- **404 Not Found** – 请确保指定 `folder`/`storageName` 中存在工作簿（`name`）和工作表（`sheetName`）。
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+**另请参阅：** [对 Excel 工作表中的行取消分组](../rows/ungroup/ "对 Excel 工作表中的行取消分组"), [隐藏 Excel 工作表中的行](../rows/hide/ "隐藏 Excel 工作表中的行"), [取消隐藏 Excel 工作表中的行](../rows/unhide/ "取消隐藏 Excel 工作表中的行").
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+## 云 SDK 家族
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+使用 SDK 是加快开发速度的最佳方式。SDK 处理底层细节，使您可以专注于项目任务。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,76 +1,92 @@
-﻿---
-title: Flytta ett Excel-arbetsblad
-second_title: Documen
-linktitle: Flytta
-type: docs
-url: /sv/worksheets/move/
-aliases: [/move-excel-worksheets/]
-keywords: Move an Excel worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API stöder flytt av ett Excel-arbetsblad till en Excel-arbetsbok. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Flytta ett Excel-kalkylblad
 ---
-Denna REST API indikerar `move worksheet`.
- 
-## RSET API
- 
+title: "Flytta ett Excel-ark – Aspose.Cells Cloud API (v3.0)"
+second_title: "Dokument"
+linktitle: "Flytta"
+type: docs
+url: /worksheets/move/
+aliases: [/move-excel-worksheets/]
+keywords: "Aspose.Cells Cloud, Flytta ark, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
+description: "Lär dig hur du flyttar ett Excel-ark till en ny position med Aspose.Cells Cloud API (v3.0). Inkluderar slutpunkt, nödvändiga parametrar, cURL-exempel och SDK-kod i C#, Java, Python m.m."
+weight: 20
+ArticleTitle: "Hur man flyttar ett Excel-ark med Aspose.Cells Cloud API v3.0"
+---
+
+Denna REST API flyttar ett ark inom en Excel-arbetsbok.
+
+## REST API
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
 ```
- Begäranparametrarna är:
- 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| rörlig|| kropp| med rörliga parametrar.|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
- 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
- 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### Begärparametrar
+
+| Parameternamn | Typ    | Plats  | Beskrivning                                                                                                           |
+| ------------- | ------ | ------ | --------------------------------------------------------------------------------------------------------------------- |
+| name          | string | path   | Namn på Excel-filen.                                                                                                  |
+| sheetName     | string | path   | Namn på arket som ska flyttas.                                                                                        |
+| moving        | object | body   | JSON-objekt som anger målarket (`DestinationWorksheet`) och den relativa positionen (`Position`).                    |
+| folder        | string | query  | Mappväg där arbetsboken lagras.                                                                                       |
+| storageName   | string | query  | Namn på lagringstjänsten.                                                                                             |
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för att anropa Aspose.Cells-webbtjänster. Exemplet nedan visar hur du flyttar ett ark med en enskild begäran.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--d '{"DestinationWorksheet":"Sheet5", "Position":"after"}' 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"DestinationWorksheet":"Sheet5","Position":"after"}'
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                                           |
+|-----|-----------------------------|-----------------------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds).     |
+| 401 | Oautentiserad               | Ogiltigt eller saknat JWT-token.                                      |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen.                     |
+| 500 | Internt serverfel           | Oväntat serverfel.                                                    |
+
+**Exempel på felaktig svarsnyttolast**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Missing required parameter 'moving'."
+}
+```
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK-familjen
- 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
- 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
- 
- 
- 
+
+## SDK-familj för molnet
+
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på lågnivå så att du kan fokusera på dina projektuppgifter. Besök [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:n.
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:n:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -132,3 +148,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

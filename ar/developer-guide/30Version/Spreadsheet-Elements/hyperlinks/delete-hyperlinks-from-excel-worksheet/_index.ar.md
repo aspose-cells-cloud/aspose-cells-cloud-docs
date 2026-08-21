@@ -1,75 +1,79 @@
-﻿---
-title: كليا
-type: docs
-url: /ar/hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
-keywords: Clear hyperlinks from an Excel worksheet
-description: يدعم Cloud REST Aspose.Cells مسح الروابط التشعبية من ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 40
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، مسح
 ---
-يشير هذا REST API إلى `delete all hyperlinks` في ورقة العمل Excel.
+title: "مسح الروابط التشعبية"
+type: docs
+url: /hyperlinks/clear/
+aliases: [/add-hyperlinks-to-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, مسح الروابط التشعبية, حذف الروابط التشعبية, REST API, ورقة عمل, SDK"
+description: "تعرّف على كيفية إزالة جميع الروابط التشعبية من ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API أو أي SDK مدعوم (C#، Java، Python، Node.js، Go، PHP، Ruby، Perl، إلخ)."
+weight: 40
+ArticleTitle: "مسح الروابط التشعبية – وثائق واجهة برمجة تطبيقات Aspose.Cells Cloud"
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية لـ REST بحذف **جميع الروابط التشعبية** الموجودة في ورقة عمل Excel.
+
+## الأمان والمصادقة
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [المصادقة باستخدام رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## واجهة برمجة تطبيقات REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-معلمات الطلب هي:
+### معاملات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعامل | النوع | الموقع | الوصف |
+|-------------|--------|--------|--------|
+| name | string | path | اسم ملف Excel. |
+| sheetName | string | path | اسم ورقة العمل. |
+| folder | string | query | المجلد الذي يحتوي على المستند. |
+| storageName | string | query | اسم خدمة التخزين. |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/DeleteWorksheetHyperlinks) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### استجابات الأخطاء
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| كود HTTP | السبب | مثال على جسم الاستجابة |
+|----------|--------|------------------------|
+| **400** | طلب غير صالح – معاملات مفقودة أو غير صالحة. | `{ "Code":"400", "Message":"قيمة معامل غير صالحة." }` |
+| **401** | غير مُصرّح – رمز JWT مفقود أو غير صالح. | `{ "Code":"401", "Message":"رمز الوصول مفقود أو غير صالح." }` |
+| **404** | غير موجود – المصنف أو ورقة العمل غير موجودين. | `{ "Code":"404", "Message":"الملف غير موجود." }` |
+| **500** | خطأ داخلي في الخادم – فشل غير متوقع في الخادم. | `{ "Code":"500", "Message":"حدث خطأ غير متوقع." }` |
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Hyperlinks/DeleteWorksheetHyperlinks) واجهة برمجة تطبيقات متاحة للعامة، مما يسمح لك بإجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** لاستدعاء خدمات Aspose.Cells عبر الويب. يُظهر المثال التالي كيفية حذف جميع الروابط التشعبية من ورقة عمل.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test1.xlsx/worksheets/Sheet1/hyperlinks" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## عائلة SDK للحوسبة السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK يُسرّع التطوير من خلال معالجة التفاصيل منخفضة المستوى نيابةً عنك. للاطلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud، تفضل بزيارة [مستودع GitHub](https://github.com/aspose-cells-cloud).
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضّح أمثلة الكود التالية كيفية حذف الروابط التشعبية من ورقة العمل باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

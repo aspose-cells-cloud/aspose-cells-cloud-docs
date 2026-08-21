@@ -1,57 +1,57 @@
-﻿---
-title: احصل على جدول محوري في ورقة عمل Excel
-second_title: Documen
-linktitle: يحصل
-type: docs
-url: /ar/pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
-keywords: Get a pivot table in an Excel file
-description: يدعم Cloud REST Aspose.Cells الحصول على جدول محوري في ملف Excel. تدعم حزمة تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على جدول محوري في ورقة عمل Excel
 ---
-يشير هذا REST API إلى الحصول على معلومات ورقة العمل `pivottable` حسب الفهرس.
- 
-## RSET API
- 
+title: "الحصول على جدول محوري في ورقة عمل إكسل"
+second_title: "مستند"
+linktitle: الحصول
+type: docs
+url: /pivot-tables/get/
+aliases: [/get-worksheet-pivot-table-information-by-index/]
+keywords: "Aspose.Cells، الجدول المحوري، إكسل، واجهة برمجة تطبيقات REST، الحصول على الجدول المحوري في ورقة العمل"
+description: "استرجاع جدول محوري من ورقة عمل إكسل عبر واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمن بناء الجملة المطلوبة، المعلمات، المصادقة، مخطط الاستجابة، معالجة الأخطاء، وأمثلة لحزم تطوير البرمجيات (SDK)."
+weight: 10
+ArticleTitle: "الحصول على جدول محوري في ورقة عمل إكسل"
+---
+
+تُعيد هذه الواجهة البرمجية معلومات **الجدول المحوري** في ورقة العمل بناءً على مؤشره.
+
+### **الأمان والمصادقة**
+
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+## واجهة برمجة تطبيقات REST
+
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}
 ```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| فهرس الجدول المحوري| عدد صحيح| طريق||
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
- 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTable) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### معلمات الطلب
+
+| اسم المعلمة        | النوع   | الموقع | الوصف                                                    |
+| ------------------- | ------- | ------ | --------------------------------------------------------- |
+| **name**            | نص (string) | مسار   | اسم ملف إكسل.                                            |
+| **sheetName**       | نص (string) | مسار   | اسم ورقة العمل التي تحتوي على الجدول المحوري.            |
+| **pivottableIndex** | عدد صحيح (integer) | مسار   | المؤشر الصفري (zero-based) للجدول المحوري في ورقة العمل. |
+| **folder**          | نص (string) | استعلام | المجلد الذي يُخزَّن فيه المستند.                         |
+| **storageName**     | نص (string) | استعلام | اسم تخزين Aspose Cloud.                                  |
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول بسهولة إلى خدمات Aspose.Cells عبر الويب. يُظهر المثال التالي كيفية استدعاء الواجهة البرمجية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
   "Status": "string",
   "PivotFilters": [
@@ -69,9 +69,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
             "FilterType": "string",
             "MultipleFilters": {
               "MatchBlank": true,
-              "MultipleFilterList": [
-                {}
-              ]
+              "MultipleFilterList": [{}]
             },
             "ColorFilter": {
               "FilterByFillColor": "string",
@@ -140,7 +138,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
               "IsTop": true,
               "Items": 0
             },
-            "Visibledropdown": "string"
+            "VisibleDropdown": "string"
           }
         ],
         "Range": "string",
@@ -168,20 +166,43 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
     }
   ]
 }
- 
 ```
- 
+
+**مخطط الاستجابة**
+
+| الحقل          | النوع   | الوصف                                            |
+|----------------|---------|--------------------------------------------------|
+| Status         | نص (string) | حالة العملية كنص (مثال: "OK").                   |
+| PivotFilters   | مصفوفة (array) | مجموعة تعريفات مرشّحات الجدول المحوري.         |
+| └─ AutoFilter  | كائن (object) | تفاصيل التصفية التلقائية المطبّقة على الجدول المحوري. |
+|    └─ link     | كائن (object) | معلومات الارتباط التشعبي (hyperlink) الخاص بالمرشّح. |
+|    └─ FilterColumns | مصفوفة (array) | إعدادات المرشّح لكل عمود على حدة.          |
+|    └─ Range    | نص (string) | مدى الخلايا الذي يطبّق عليه المرشّح.                |
+|    └─ Sorter   | كائن (object) | إعدادات الترتيب للبيانات المُرشّحة.                 |
+| (تتّبع الحقول المتداخلة الإضافية نفس البنية الموضّحة في مثال JSON أعلاه) |
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
- 
- 
+
+### معالجة الأخطاء
+
+تتّبع الواجهة البرمجية رموز حالة HTTP القياسية. تشمل الاستجابات الشائعة ما يلي:
+
+| رمز الحالة | المعنى                                                          | مثال JSON (خطأ)                                   |
+| ----------- | ---------------------------------------------------------------- | ------------------------------------------------- |
+| 200         | نجاح – تم إرجاع الجدول المحوري                                  | —                                                 |
+| 401         | غير مصادَق – رمز غير صالح أو مفقود                             | `{"code":401,"message":"Invalid access token."}`  |
+| 404         | غير موجود – الملف أو ورقة العمل أو مؤشر الجدول المحوري غير موجود | `{"code":404,"message":"Pivot table not found."}` |
+| 500         | خطأ في الخادم – حالة غير متوقّعة                               | `{"code":500,"message":"Internal server error."}` |
+
+**ملاحظات:** تدعم الواجهة البرمجية ملفات إكسل حتى 150 ميغابايت، وتعمل مع صيغ إكسل من 2007 إلى 2021. تأكّد من أن اسم ورقة العمل حسّاس لحالة الأحرف.
+
+## عائلة حزم تطوير البرمجيات (SDK) السحابية
+
+استخدام حزمة تطوير برمجيات (SDK) هو أفضل طريقة لتسريع عملية التطوير. فحزمة SDK تُدار بالتفاصيل منخفضة المستوى، مما يمكّنك من التركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم تطوير البرمجيات لـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر الويب باستخدام حزم تطوير برمجيات مختلفة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Perl" tabName10="Go" >}}
 
@@ -240,3 +261,4 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
 {{< /tab >}}
 
 {{< /tabs >}}
+---

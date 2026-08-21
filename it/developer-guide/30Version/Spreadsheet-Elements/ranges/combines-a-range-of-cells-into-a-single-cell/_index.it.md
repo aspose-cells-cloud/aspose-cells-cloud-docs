@@ -1,74 +1,101 @@
-﻿---
-title: Combina un intervallo di Cells in una singola cella
-second_title: Documen
-linktitle: Fusione
-type: docs
-url: /it/ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
-keywords: Merge a range of cells into a single cell
-description: Aspose.Cells Cloud REST API supporta l'unione di un intervallo di celle in una singola cella su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Combina un intervallo di Cells in una singola cella
 ---
-Questo REST API indica di unire un intervallo di celle in un'unica cella su un foglio di lavoro Excel.
+title: "Aspose.Cells Cloud API – Unisci intervallo celle"
+second_title: "Documento"
+linktitle: "Unisci"
+type: docs
+url: /ranges/merge/
+aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+keywords: "Aspose.Cells, unisci celle, Excel API, REST, cloud SDK"
+description: "Unisci un intervallo di celle in una singola cella utilizzando Aspose.Cells Cloud REST API. Scopri il formato della richiesta, i parametri e gli esempi di SDK per C#, Java, Python e altri."
+weight: 20
+---
 
-## RSET API
+Questa API REST consente di unire un intervallo di celle in una singola cella su un foglio di calcolo Excel.
+
+**Panoramica** – L’unione di un intervallo combina le celle selezionate in una singola cella, preservando il valore della cella in alto a sinistra e scartando il resto. Utilizza questa operazione quando hai bisogno di creare un’intestazione che si estende su più colonne o righe, o quando desideri semplificare il layout di un foglio di calcolo.
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
 ```
 
-I parametri della richiesta sono:
+### **Parametri della richiesta**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| nome della cartella di lavoro|
-| Nome foglio| corda| sentiero| nome del foglio di lavoro|
-| allineare|| corpo| intervallo nel foglio di lavoro|
-| cartella| corda| domanda| Cartella della cartella di lavoro.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome parametro  | Tipo   | Posizione | Descrizione                                           |
+| --------------- | ------ | --------- | ----------------------------------------------------- |
+| **name**        | string | path      | Nome del file del foglio di calcolo (workbook).      |
+| **sheetName**   | string | path      | Nome del foglio di calcolo (worksheet).              |
+| **range**       | object | body      | Oggetto Range che specifica le celle da unire.       |
+| **folder**      | string | query     | Cartella in cui è salvato il foglio di calcolo.      |
+| **storageName** | string | query     | Nome dello storage.                                   |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMerge) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+#### Schema del corpo della richiesta
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+L’oggetto **Range** deve contenere i seguenti campi (tutti gli altri sono facoltativi):
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Proprietà       | Tipo    | Obbligatorio | Descrizione                                              |
+| --------------- | ------- | ------------ | -------------------------------------------------------- |
+| **FirstRow**    | integer | Sì           | Indice in base zero della prima riga nell’intervallo.   |
+| **FirstColumn** | integer | Sì           | Indice in base zero della prima colonna nell’intervallo.|
+| **RowCount**    | integer | Sì           | Numero di righe da includere nell’intervallo.           |
+| **ColumnCount** | integer | Sì           | Numero di colonne da includere nell’intervallo.         |
+| **Name**        | string  | No           | Nome facoltativo per l’intervallo.                      |
+| **RefersTo**    | string  | No           | Una formula a cui fa riferimento l’intervallo.          |
+| **Worksheet**   | string  | No           | Nome del foglio di calcolo (se diverso dal parametro path). |
+| **RowHeight**   | number  | No           | Altezza delle righe nell’intervallo (in pixel).         |
+| **ColumnWidth** | number  | No           | Larghezza delle colonne nell’intervallo (in pixel).     |
+
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L’esempio seguente mostra come effettuare una chiamata all’API Cloud tramite cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/merge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "FirstRow": 9,
+        "FirstColumn": 0,
+        "RowCount": 1,
+        "ColumnCount": 7
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+#### Dettagli della risposta
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+| Stato HTTP                    | Descrizione                                              | JSON di esempio                                         |
+| ----------------------------- | -------------------------------------------------------- | ------------------------------------------------------- |
+| **200 OK**                    | L’intervallo è stato unito correttamente.               | `{ "Code": 200, "Status": "OK" }`                       |
+| **400 Bad Request**           | Parametri dell’intervallo non validi (es. indici fuori limite). | `{ "Code": 400, "Message": "Intervallo non valido." }` |
+| **401 Unauthorized**          | Token JWT mancante o non valido.                         | `{ "Code": 401, "Message": "Autenticazione non riuscita." }` |
+| **404 Not Found**             | Foglio di calcolo o foglio non trovato.                 | `{ "Code": 404, "Message": "Risorsa non trovata." }`    |
+| **500 Internal Server Error** | Errore imprevisto del server.                           | `{ "Code": 500, "Message": "Errore interno del server." }` |
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+## Famiglia di SDK Cloud
+
+Utilizzare un SDK rappresenta il modo migliore per accelerare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

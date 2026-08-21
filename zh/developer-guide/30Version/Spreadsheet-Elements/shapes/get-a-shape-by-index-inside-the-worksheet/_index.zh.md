@@ -1,160 +1,134 @@
-﻿---
-title: 在 Excel 工作表上通过索引获取形状
-second_title: Documen
-linktitle: 葛
+---
+title: "从 Excel 工作表中按索引获取形状"
+second_title: "文档"
+linktitle: "获取"
 type: docs
 url: /zh/shapes/get/
-aliases: [/get-a-shape-by-index-inside-the-worksheet/]
-keywords: Get a shape on an Excel workshee
-description: Aspose.Cells Cloud REST API 支持在 Excel 工作表上获取形状。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+aliases: [/zh/get-a-shape-by-index-inside-the-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel 形状 API, 按索引获取形状, 工作表形状, REST API, 形状检索, Aspose.Cells SDK"
+description: "使用 Aspose.Cells Cloud REST API 从 Excel 工作表中按索引检索形状（包括其图像数据或元数据）。包含请求语法、参数、响应详情及 SDK 示例。"
 weight: 20
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、通过索引获取 Excel 工作表上的形状
+ArticleTitle: "从 Excel 工作表中按索引获取形状 – Aspose.Cells Cloud 文档"
 ---
-此 REST API 表示获取具有图像格式的形状或 Excel 工作表上的形状信息。
 
-## 重新设置 API
+此 REST API 用于从 Excel 工作表中检索形状（包括其图像数据或元数据）。
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
- 
+## GetWorksheetShape API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
 
-请求参数为：
+**前提条件**  
+- 有效的 Aspose Cloud 访问令牌（Bearer JWT）。  
+- 工作簿必须存储在您的 Aspose Cloud 存储中或指定的文件夹中。  
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|形状指数|整数|小路|工作表形状中的形状索引。|
-|文件夹|细绳|询问|文档的文件夹。|
-|存储名称|细绳|询问|存储名称。|
+### **安全与身份验证**
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShape)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+Aspose.Cells Cloud API 是安全的，需要<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+### **请求参数**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| 参数名         | 类型    | 位置 | 描述                                           |
+| -------------- | ------- | ---- | ---------------------------------------------- |
+| name           | string  | path | Excel 文档的名称。                             |
+| sheetName      | string  | path | 包含该形状的工作表名称。                       |
+| shapeindex     | integer | path | 形状在工作表中的从零开始的索引。               |
+| folder         | string  | query| 存储文档的文件夹路径。                         |
+| storageName    | string  | query| 存储服务的名称。                               |
+
+**注意：** `shapeindex` 为从零开始的索引，第一个形状的索引为 0。如果您未使用默认存储，请确保工作簿已存储在指定的 `folder` 和 `storageName` 中。
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShape)定义了一个公开可访问的编程接口，允许您直接从 Web 浏览器发起 REST 交互。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用云 API。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/autoshapes/1" \
+# 修正后的端点和路径
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/shapes/1" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 {
-
   "Status": "string",
-
   "Shape": {
-
     "link": {
-
       "Href": "string",
-
       "Rel": "string",
-
       "Title": "string",
-
       "Type": "string"
-
     },
-
     "Name": "string",
-
     "MsoDrawingType": "string",
-
     "AutoShapeType": "string",
-
     "Placement": "string",
-
     "UpperLeftRow": 0,
-
     "Top": 0,
-
     "UpperLeftColumn": 0,
-
     "Left": 0,
-
     "LowerRightRow": 0,
-
     "Bottom": 0,
-
     "LowerRightColumn": 0,
-
     "Right": 0,
-
     "Width": 0,
-
     "Height": 0,
-
     "X": 0,
-
     "Y": 0,
-
     "RotationAngle": 0,
-
     "HtmlText": "string",
-
     "Text": "string",
-
     "AlternativeText": "string",
-
     "TextHorizontalAlignment": "string",
-
     "TextHorizontalOverflow": "string",
-
     "TextOrientationType": "string",
-
     "TextVerticalAlignment": "string",
-
     "TextVerticalOverflow": "string",
-
     "IsGroup": true,
-
     "IsHidden": true,
-
     "IsLockAspectRatio": true,
-
     "IsLocked": true,
-
     "IsPrintable": true,
-
     "IsTextWrapped": true,
-
     "IsWordArt": true,
-
     "LinkedCell": "string",
-
     "ZOrderPosition": 0
-
   }
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+**可能的 HTTP 状态码**
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| 状态码 | 描述 |
+|--------|------|
+| **200 OK** | 成功检索到该形状。 |
+| **400 Bad Request** | 请求格式错误或缺少必需参数。 |
+| **401 Unauthorized** | 身份验证失败或令牌缺失/无效。 |
+| **404 Not Found** | 指定的工作簿、工作表或形状索引不存在。 |
+| **500 Internal Server Error** | 发生了意外的服务器错误。 |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+**常见错误：** 使用错误的基础域名（`api.aspose.com`）或已弃用的 `/autoshapes/` 路径段会导致 404 错误。请始终使用 `/shapes/` 路径段和 `api.aspose.cloud` 域名。
+
+## 云 SDK 开发工具包
+
+使用 SDK 是加快开发速度的最佳方式。SDK 会处理底层细节，让您专注于项目任务。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -207,3 +181,5 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4
 {{< /tab >}}
 
 {{< /tabs >}}
+
+有关相关操作，请参阅 **[添加形状](/zh/shapes/add/)** 和 **[更新形状](/zh/shapes/update/)** 的文档。

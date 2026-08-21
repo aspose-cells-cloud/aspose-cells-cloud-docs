@@ -1,36 +1,46 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Ersätt intervallinnehåll i fjärrkalkylblad
-second_title: Documen
-ArticleTitle: Replace Range Content in Remote a Spreadshee
-linktitle: Ersätt innehållet på fjärravståndet
-type: docs
-url: /sv/replace-content-in-remote-range/
-keywords: API, Excel API, Replace Content, Remote Spreadsheet, Cloud Storage, Text Replacement, REST AP
-description: Ersätt effektivt text inom angivna intervall i fjärrkalkylblad med hjälp av Aspose.Cells Cloud API
-weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, JSON, Markdown, Matcha alla tomma celler i ett Excel-kalkylblad, fjärrtextersättning, integration med molnlagring
 ---
-Ersätt effektivt specificerad text inom ett område i en fjärrkalkylbladsfil.
+title: "Aspose.Cells Cloud Ersättningswebb-API – Uppdatera text i fjärr-Excel-omfattning"
+secondtitle: "Dokument"
+ArtikelTitel: "Bulk-ersättning av text i omfattningar i moln-Excel-filer – Sök-och-ersätt-API"
+linktitle: "Ersätt innehåll i fjärr-omfattning"
+type: docs
+url: /replace-content-in-remote-range/
+keywords: "ersätt text i fjärr-Excel-omfattning, Aspose.Cells Cloud API, sök och ersätt Excel, redigera moln-kalkylark, uppdatera fjärr-Excel-filer"
+description: "Använd Aspose.Cells Cloud för att söka och ersätta text i en specifik omfattning i en fjärr-Excel-fil. Stödjer autentisering, felhantering och SDK:er för flera språk."
+weight: 100
+---
 
-## **Ersätt innehåll inom fjärrräckvidd API**
+Utför bulk-textersättning över fjärr-Excel-filer lagrade i molnet. Sök och uppdatera specifika textsträngar i utvalda omfattningar effektivt med Aspose.Cells Sök-och-ersätt-API.
+
+## **Ersätt innehåll i fjärr-omfattning – API**
+
+### Webb-API
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content
+PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content
 ```
 
-### **Begäranparametrar:**
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-text| Beskrivning|
-|:- |:- |:- |:- |
-| namn| Sträng| Väg| Namnet på den arbetsboksfil som ska ändras.|
-| söktext| Sträng| Fråga| Texten att söka efter i kalkylbladet.|
-| ersätt text| Sträng| Fråga| Texten som den sökta texten ska ersättas med.|
-| arbetsblad| Sträng| Väg| Namnet på kalkylbladet där ersättningen ska ske.|
-| cellArea| Sträng| Väg| Det specifika cellområdet för ersättningen.|
-| mapp| Sträng| Fråga| Mappsökvägen där arbetsboken lagras.|
-| lagringsnamn| Sträng| Fråga|(Valfritt) Namnet på lagringsutrymmet om anpassad molnlagring används. Använd standardlagring om det utelämnas.|
-| område| Sträng| Fråga| Inställningen för kalkylbladets region.|
-| lösenord| Sträng| Fråga| Lösenordet för att öppna kalkylbladsfilen.|
+Aspose.Cells Cloud-API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### **Parameter för begäran**
+
+| Parameternamn   | Typ    | Sökväg/Frågesträng/HTTP-kropp | Beskrivning                                                                                                                                            |
+| :-------------- | :----- | :---------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name            | String | Sökväg                        | Namnet på arbetsboken som finns lagrad i molnlagringen och som ska modifieras (t.ex. `"rapport.xlsx"`).                                               |
+| searchText      | String | Frågesträng                   | Den textsträng som ska sökas efter i det angivna kalkylbladet och den angivna cellomfattningen. Stöder exakt textmatchning.                          |
+| replaceText     | String | Frågesträng                   | Den textsträng som kommer att ersätta alla förekomster av `searchText` i den angivna omfattningen.                                                    |
+| worksheet       | String | Sökväg                        | Namnet på det kalkylblad där sök-och-ersätt-åtgärden ska utföras.                                                                                     |
+| cellArea        | String | Sökväg                        | Den specifika cellomfattningen (t.ex. `"A1:D20"`) där textsökning och ersättning ska ske.                                                             |
+| folder          | String | Frågesträng                   | Sökvägen till molnlagringsmappen där källarbetsboken finns.                                                                                           |
+| storageName     | String | Frågesträng                   | _(Valfritt)_ Namnet på den molnlagring där arbetsboken finns. Om utelämnas används standardmolnlagringen.                                             |
+| region          | String | Frågesträng                   | _(Valfritt)_ Ställer in lokalt språk för texthantering, vilket kan påverka skiftlägeskänslighet och teckenkodning i sökningar (t.ex. `"sv-SE"`, `"en-US"`). |
+| password        | String | Frågesträng                   | _(Valfritt)_ Om arbetsboken är lösenordsskyddad, ange lösenordet för att öppna och modifiera filen.                                                   |
 
 ### **Svar**
 
@@ -42,71 +52,111 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cel
     {
       "Name": "Code",
       "DataType": {
-        "Identifier": "Integer",
+        "Identifier": "Integer"
       }
     },
     {
       "Name": "Status",
       "DataType": {
-        "Identifier": "String",
+        "Identifier": "String"
       }
     }
   ]
 }
 ```
 
+Ett lyckat anrop returnerar följande konkreta JSON-svar:
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+
 ### Felkoder
 
-- **400 Felaktig begäran**Ogiltig Apose.Cells Cloud API URI.
-- **401 Obehörig**Ogiltig åtkomsttoken. Eller ogiltigt klient-ID och hemlighet.
-- **404 Hittades inte**Kalkylbladsfilen är inte tillgänglig.
-- **500 Serverfel**Kalkylbladet har stött på ett fel vid hämtning av beräkningsdata.
+| Kod | Meddelande   | När det inträffar                                       |
+| --- | ------------ | ------------------------------------------------------- |
+| 400 | Bad Request  | Begäran URI eller parametrar är felaktigt formaterade. |
+| 401 | Unauthorized | Saknar eller har ogiltig autentiseringstoken.          |
+| 404 | Not Found    | Den angivna arbetsboken kan inte hittas eller nås.     |
+| 500 | Server Error | Ett internt serverfel uppstod vid bearbetning av arbetsboken. |
 
-## Var ska vi använda Ersätt innehållet i intervallet i fjärrkalkylbladet API?
+## Var bör vi använda API:et för att ersätta innehåll i omfattning i fjärr-Excel-ark?
 
-När du behöver ersätta innehållet i ett intervall i ett fjärrkalkylblad kan du använda API.
+- **Batch-uppdatering av moln-filer**: Modifiera innehållet i flera Excel-filer lagrade i molnlagringar som AWS S3 och Azure Blob.
+- **Dynamisk ifyllnad av moln-mallar**: Batch-fyll i dynamiskt data för rapportmallar lagrade i molnet.
+- **Filöverensstämmelse över regioner**: Säkerställ konsistent innehåll i Excel-filer i molnlagring över olika geografiska regioner.
 
-## Varför ska du använda Ersätt innehållet i intervallet i fjärrkalkylbladet API?
+## Varför bör du använda API:et för att ersätta innehåll i omfattning i fjärr-Excel-ark?
 
-- Ersätt snabbt innehållet i Range i fjärrkalkylblad.
-- Utvecklingen kan snabbt slutföras via det befintliga SDK:t.
+- **Utvecklarvänlig**: Aspose.Cells Cloud erbjuder SDK-bibliotek för flera språk, vilket möjliggör snabb utveckling och omfattande dokumentation. Jämfört med att bygga egna lösningar minskas utvecklingsarbetet avsevärt.
+- **Lägre arbetskostnader**: Minskar behovet av speciella roller för dokumentkonsolidering.
+- **Betala per användning**: Inget förstakostnadskrav – du betalar endast för de API-anrop som faktiskt används.
+- **Inga underhållskostnader**: Inget behov av att underhålla servrar, uppdatera mjukvara eller hantera kompatibilitetsproblem.
+- **Bevarar komplex Excel-formatering** i ett universellt tillgängligt PDF-format.
 
-## Så här använder du Ersätt innehållet i ett intervall i fjärrkalkylbladet API med SDK:er
+## Hur används API:et för att ersätta innehåll i omfattning i fjärr-Excel-ark med SDK:er?
 
 ### OpenAPI-specifikation
 
- De[OpenAPI-specifikation](https://reference.aspose.cloud/cells/#/SearchControllor/ReplaceContentInRemoteRange) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceContentInRemoteRange) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
 ### Använd Aspose.Cells Cloud SDK:er
 
-Att använda SDK:et är det bästa sättet att påskynda utvecklingen. SDK:et hanterar de underliggande detaljerna, vilket gör att du enkelt kan implementera ersättning av innehåll i kalkylblad för celler med minimal kod.
- Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda SDK är det bästa sättet att påskynda utvecklingen. SDK:et hanterar underliggande detaljer, så att du enkelt kan implementera ersättning av innehåll i kalkylark med minimal kod. Kontrollera [GitHub-lagret](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med diverse SDK:er:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ReplaceTextInRemoteRange.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ReplaceTextInRemoteRange.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ReplaceTextInRemoteRange.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ReplaceTextInRemoteRange.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ReplaceTextInRemoteRange.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ReplaceTextInRemoteRange.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ReplaceTextInRemoteRange.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ReplaceTextInRemoteRange.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+
+```csharp
+```
+
+{{</tab>}}
+{{<tab tabNum="2" >}}
+
+```java
+```
+
+{{</tab>}}
+{{<tab tabNum="3" >}}
+
+```php
+```
+
+{{</tab>}}
+{{<tab tabNum="4" >}}
+
+```ruby
+```
+
+{{</tab>}}
+{{<tab tabNum="5" >}}
+
+```javascript
+```
+
+{{</tab>}}
+{{<tab tabNum="6" >}}
+
+```python
+```
+
+{{</tab>}}
+{{<tab tabNum="7" >}}
+
+```perl
+```
+
+{{</tab>}}
+{{<tab tabNum="8" >}}
+
+```go
+```
+
+{{</tab>}}
 {{< /tabs >}}

@@ -1,46 +1,74 @@
-﻿---
-title: Hämta MinRow från Excel-arbetsbladet
+---
+title: "Hämta MinRow från Excel-arbetsblad – Aspose.Cells Cloud API-referens"
 type: docs
 url: /sv/get-minrow-from-excel-worksheet/
 weight: 80
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta MinRow från Excel-arbetsblad
+keywords: "Aspose.Cells, GetMinRow, Excel-arbetsblad, REST API, minsta radindex, moln-SDK"
+description: "Lär dig hur du hämtar minsta radindex för ett arbetsblad med Aspose.Cells Cloud REST API (v3.0). Inkluderar fullständig cURL-begäran med autentisering, svarsschema och SDK-exempel för flera språk."
+ArticleTitle: "Hämta MinRow från Excel-arbetsblad – Aspose.Cells Cloud API-referens"
 ---
-Denna REST API indikerar att en `minrow` hämtas i en Excel-fil när parametern `cellOrMethodName` är `minrow`.
 
-- **cURL Exempel**
+Denna REST API returnerar det minsta radindexet i ett Excel-arbetsblad när parametern `cellOrMethodName` är inställd på `minrow`. slutpunkten kan användas för att fastställa den första icke-tomma raden (nollbaserad) i ett givet arbetsblad.
 
+- **cURL-exempel:**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/minrow" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/minrow" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MinRow": 0
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK-familjen**
+**Begäran**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+```
+GET https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/minrow
+```
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+| Egenskap          | Typ    | Obligatorisk | Beskrivning                                         |
+|-------------------|--------|--------------|-----------------------------------------------------|
+| `fileName`        | sträng | Ja           | Namn på arbetsboken (t.ex. `myWorkbook.xlsx`).      |
+| `sheetName`       | sträng | Ja           | Målarbetsblad (t.ex. `Sheet1`).                      |
+| `cellOrMethodName`| sträng | Ja           | Fixerat värde `minrow`.                              |
+| `folder`          | sträng | Nej          | Sökväg till mapp i molnlagring.                     |
+| `storageName`     | sträng | Nej          | Lagringsnamn om en icke-standardlagring används.   |
 
+**Svar**
 
+Tjänsten returnerar ett JSON-objekt som innehåller egenskapen `MinRow`, vilket anger indexet för den första icke-tomma raden (nollbaserad).
+
+| HTTP-status | Betydelse                                |
+|-------------|-------------------------------------------|
+| 200         | Lyckades – JSON-payload med `MinRow`.     |
+| 401         | Obehörig – ogiltig eller saknad token.    |
+| 404         | Arbetsbok eller arbetsblad hittades inte.|
+| 500         | Internt serverfel.                        |
+
+Värdet `MinRow` är användbart när du behöver snabbt hitta början på data i ett blad.
+
+- **Använd Aspose.Cells Cloud SDK:n**
+
+Att använda ett SDK är det snabbaste sättet att utveckla. Ett SDK hanterar detaljer på låg nivå så att du kan fokusera på ditt projekt. Kontrollera <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub-förvaret</a> för en komplett lista över Aspose.Cells Cloud SDK:n.
+
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:n:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

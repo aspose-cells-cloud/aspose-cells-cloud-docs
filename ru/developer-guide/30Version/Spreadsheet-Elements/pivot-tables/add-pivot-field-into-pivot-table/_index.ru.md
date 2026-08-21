@@ -1,78 +1,88 @@
-﻿---
-title: Добавить сводное поле в сводную таблицу
-second_title: Documen
-linktitle: Добавить опорное поле
+---
+title: "Добавление поля сводной таблицы в сводную таблицу"
+second_title: "Документ"
+linktype: "add-pivot-field"
 type: docs
 url: /ru/pivot-tables/add-pivot-field/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
-keywords: Add a pivot field in a pivot table
-description: Aspose.Cells Cloud REST API поддерживает добавление сводного поля в сводную таблицу. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+aliases: [/ru/add-a-pivot-table-in-a-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, сводная таблица, добавление поля сводной таблицы, REST API, SDK"
+description: "Добавление поля сводной таблицы в существующую сводную таблицу с помощью REST API Aspose.Cells Cloud. Включает сведения о запросе, пример cURL и фрагменты кода SDK."
 weight: 40
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Добавление сводного поля в сводную таблицу
+ArticleTitle: "Добавление поля сводной таблицы в сводную таблицу – Документация Aspose.Cells Cloud"
 ---
-Этот REST API указывает на поле `add`, которое должно быть включено в сводную таблицу.
- 
-## РСЕT API
- 
+
+Этот REST API **добавляет** поле в существующую сводную таблицу.
+
+> **Необходимое условие:** Для вызова этой конечной точки необходимо включить действующий JWT-токен аутентификации в заголовке `Authorization`, а также убедиться, что рабочая книга сохранена в указанной папке или в хранилище по умолчанию.
+
+## REST API
+
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
 ```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| pivotTableIndex| целое число| путь| Индекс сводной таблицы|
-| pivotFieldType| нить| запрос| Тип области полей.|
-| запрос|| тело| Dto, который содержит индексы полей|
-| нужноПересчитать| булев| запрос|ЛОЖЬ|
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
- 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### Параметры запроса
+
+| Имя параметра   | Тип     | Расположение | Описание                                                             |
+| ----------------|---------|--------------|----------------------------------------------------------------------|
+| name            | string  | path         | Имя документа.                                                       |
+| sheetName       | string  | path         | Имя листа.                                                           |
+| pivotTableIndex | integer | path         | Индекс сводной таблицы.                                              |
+| pivotFieldType  | string  | query        | Тип области полей (например, Row, Column).                           |
+| request         | object  | body         | DTO, содержащий индексы полей для добавления.                        |
+| needReCalculate | boolean | query        | Установите значение **true**, чтобы пересчитать сводную таблицу после операции. |
+| folder          | string  | query        | Папка, в которой сохранён документ.                                  |
+| storageName     | string  | query        | Имя хранилища.                                                       |
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) определяет общедоступное программное интерфейсное описание и позволяет выполнять взаимодействие по REST напрямую из веб-браузера.
+
+Вы можете использовать утилиту командной строки **cURL** для вызова веб-сервисов Aspose.Cells. В приведённом ниже примере показано, как добавить поле сводной таблицы с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row"  \
--X PUT \
--d '{"Data":[1,2]}'
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row" \
+  -X PUT \
+  -d '{"Data":[1,2]}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+При успешном выполнении возвращается JSON-объект с полями `Code` и `Status`. Пример схемы:
+
+```json
+{
+  "Code": 0,        // целое число, обозначающее код HTTP-статуса
+  "Status": "OK"    // строковое сообщение
+}
+```
+
+Возможные ошибочные ответы включают **400 Bad Request** (некорректные или отсутствующие параметры), **401 Unauthorized** (недействительный токен) и **500 Internal Server Error** (ошибки на стороне сервера).
+
 ## Семейство облачных SDK
- 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
- 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
- 
+
+Использование SDK — самый быстрый способ интеграции этой функциональности. SDK обрабатывают низкоуровневые детали, позволяя вам сосредоточиться на бизнес-логике. Полный список SDK Aspose.Cells Cloud приведён в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
+
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="Ruby" tabName4="Python" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -123,6 +133,6 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
 
 {{< /tabs >}}
 
-
-
-
+**См. также:**  
+- [Добавление сводной таблицы](https://docs.aspose.cloud/cells/ru/pivot-tables/add-pivot-table/)  
+- [Удаление поля сводной таблицы](https://docs.aspose.cloud/cells/ru/pivot-tables/delete-pivot-field/)

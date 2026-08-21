@@ -1,22 +1,26 @@
-﻿---
-title: Excel sütunuyla çalışma
-second_title: Documen
-linktitle: Kolon
-type: docs
-url: /tr/columns/
-aliases: [/working-with-columns/]
-keywords: REST API, columns, spreadsheets, exce
-description: "Cells. Excel için API Bulutu: Excel Çalışma Sayfasındaki sütunları gösterme"
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Sütunlar
 ---
-## Excel dosyasında Sütunlarla Çalışma
+title: "Excel sütunlarıyla çalışma"
+second_title: "Belge"
+linktitle: "Sütunlar"
+type: docs
+url: /columns/
+aliases: [/working-with-columns/]
+keywords: "Excel, sütunlar, Aspose.Cells Cloud, API, elektronik tablo, çalışma sayfası, REST API"
+description: "Excel çalışma sayfası sütunları ile ilgili Aspose.Cells Cloud API işlemleri için detaylı kılavuz; sütunların alınması, eklenmesi, kopyalanması, gizlenmesi, gösterilmesi, gruplanması, grup çıkartılması ve silinmesi işlemleri kapsanır."
+weight: 100
+ArticleTitle: "Excel sütunlarıyla çalışma – Aspose.Cells Cloud Dokümantasyonu"
+---
 
-- [Excel çalışma sayfasından sütun nasıl alınır.](/cells/tr/columns/get/)
-- [Excel çalışma sayfasına boş sütun nasıl eklenir.](/cells/tr/columns/add/)
-- [Excel çalışma sayfasındaki sütunlar nasıl kopyalanır.](/cells/tr/columns/copy/)
-- [Excel çalışma sayfasındaki sütunlar nasıl gizlenir.](/cells/tr/columns/hide/)
-- [Excel çalışma sayfasındaki sütunlar nasıl gösterilir?](/cells/tr/columns/unhide/)
-- [Excel çalışma sayfasında sütunlar nasıl gruplandırılır.](/cells/tr/columns/group/)
-- [Excel çalışma sayfasındaki sütunların gruplandırılması nasıl kaldırılır.](/cells/tr/columns/ungroup/)
-- [Excel çalışma sayfasındaki sütun nasıl silinir.](/cells/tr/columns/delete/)
+## Excel Dosyasında Sütunlar Üzerinde Çalışma
+
+Bu sayfa, Aspose.Cells Cloud API aracılığıyla mümkün olan temel sütunla ilgili işlemlerin kısa bir özetini sunar. Aşağıdaki bağlantıları kullanarak her eylem için detaylı dokümantasyona, istek parametrelerine, örnek kodlara ve örnek yanıt örneklerine ulaşabilirsiniz.
+
+- [Excel çalışma sayfasından bir sütun nasıl alınır?](/cells/columns/get/)
+- [Excel çalışma sayfasına boş bir sütun nasıl eklenir?](/cells/columns/add/)
+- [Excel çalışma sayfasında sütunlar nasıl kopyalanır?](/cells/columns/copy/)
+- [Excel çalışma sayfasında sütunlar nasıl gizlenir?](/cells/columns/hide/)
+- [Excel çalışma sayfasında gizli sütunlar nasıl gösterilir?](/cells/columns/unhide/)
+- [Excel çalışma sayfasında sütunlar nasıl gruplandırılır?](/cells/columns/group/)
+- [Excel çalışma sayfasında gruplandırılmış sütunlar nasıl grup dışına çıkarılır?](/cells/columns/ungroup/)
+- [Excel çalışma sayfasından bir sütun nasıl silinir?](/cells/columns/delete/)
+---

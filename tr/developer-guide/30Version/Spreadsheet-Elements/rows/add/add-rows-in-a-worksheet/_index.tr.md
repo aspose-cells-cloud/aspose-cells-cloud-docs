@@ -1,75 +1,93 @@
-﻿---
-title: Excel çalışma sayfasına birden fazla satır ekleyin
-second_title: Documen
-linktitle: Sıra
-type: docs
-url: /tr/rows/add/rows/
-keywords: Add multi rows on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasına birden fazla satır eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasına birden fazla satır ekleme
 ---
-Bu REST API, Excel çalışma sayfasına birkaç yeni çalışma sayfası satırı eklenmesini belirtir.
+title: "Excel çalışma sayfasına birden fazla satır ekleyin"
+ArticleTitle: "Aspose.Cells Cloud API kullanarak Excel çalışma sayfasına birden fazla satır ekleyin"
+second_title: "Belge"
+linktype: "Satırlar"
+type: docs
+url: /rows/add/rows/
+keywords: "Aspose.Cells Cloud, satır ekleme, Excel çalışma sayfası, REST API, SDK, birden fazla satır ekleme"
+description: "Aspose.Cells Cloud REST API'sini kullanarak bir Excel çalışma sayfasına birden fazla satır eklemenin nasıl yapıldığını öğrenin. Bu kılavuz, uç noktayı, istek parametrelerini, örnek cURL komutlarını ve SDK kullanım örneklerini kapsar."
+weight: 20
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasına birkaç yeni satır ekler.
 
-```bash
- 
+## PutInsertWorksheetRows API
+
+```http
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| başlangıç satırı| tam sayı| sorgu| İşlem yapılacak satırın başlangıç indeksi.|
-| toplamSatırlar| tam sayı| sorgu|1 |
-| güncellemeReferansı| Boolean| sorgu| Doğru|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **İstek Parametreleri**
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı   | Tür      | Konum  | Açıklama                                                                   |
+| ---------------- | -------- | ------ | --------------------------------------------------------------------------- |
+| name             | string   | path   | Çalışma kitabının adı.                                                     |
+| sheetName        | string   | path   | Çalışma sayfasının adı.                                                    |
+| startrow         | integer  | query  | Eklenecek ilk satırın indeksi (**0‑tabanlı**).                            |
+| totalRows        | integer  | query  | Eklenecek satır sayısı.                                                    |
+| updateReference  | boolean  | query  | Ekleme işleminden sonra hücre referanslarının güncellenip güncellenmeyeceği (`true` veya `false`). |
+| folder           | string   | query  | Belgeyi içeren klasör.                                                     |
+| storageName      | string   | query  | Depo adı.                                                                  |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Önkoşullar**  
+Bu işlemi çağırmadan önce çalışma kitabının belirtilen depoda (veya klasörde) zaten bulunması gerekir.
+
+**Kimlik Doğrulama**  
+API, geçerli bir JWT belirteci gerektirir. Aşağıdaki cURL örneğinde gösterildiği gibi, `Authorization` başlığına ekleyin.
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web servislerine kolayca ulaşmak için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, Cloud API’yi cURL ile nasıl çağıracağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=11&updateReference=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
+
+> **Not:** Bu `PUT` işlemi bir istek gövdesi gerektirmez; istemci kütüphanesi bir yük zorunlu kılar ise boş bir JSON nesnesi (`{}`) gönderilebilir.
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+*Olası yanıt kodları*  
+
+- **200 OK** – Satırlar başarıyla eklendi.  
+- **400 Bad Request** – Geçersiz parametreler (örneğin, negatif satır indeksi).  
+- **401 Unauthorized** – Eksik veya geçersiz JWT belirteci.  
+- **404 Not Found** – Belirtilen çalışma kitabı veya çalışma sayfası bulunamadı.  
+- **500 Internal Server Error** – Beklenmeyen sunucu hatası.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+Satırlarla ilgili diğer işlemler için ilgili sayfaları kontrol edin: **Satırları silme**, **Satırları alma** ve **Satırları kopyalama**.
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+## Bulut SDK Geliştirme Ailesi
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+SDK kullanmak, en hızlı geliştirme yoludur. SDK, düşük seviye detayları işler, böylece projenize odaklanabilirsiniz. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposunu](https://github.com/aspose-cells-cloud) kontrol edin.
+
+Aşağıdaki kod örnekleri, Aspose.Cells web servislerini çeşitli SDK'larla nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -99,7 +117,7 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
 
 {{< /tab >}}
 

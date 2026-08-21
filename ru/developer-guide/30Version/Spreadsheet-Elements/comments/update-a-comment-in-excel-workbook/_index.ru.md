@@ -1,78 +1,101 @@
-﻿---
-title: Обновление
-type: docs
-url: /ru/comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
-keywords: REST API, spreadsheets, excel, update commen
-description: "Cells.Cloud API для Excel работает: обновить комментарий"
-weight: 30
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Обновление
 ---
-Этот REST API указывает на обновление комментария к ячейке листа.
+title: "Обновить комментарий ячейки рабочего листа"
+type: docs
+url: /comments/update/
+aliases: [/update-a-comment-in-excel-workbook/]
+keywords: "Aspose.Cells Cloud, REST API, Excel, рабочий лист, комментарий ячейки, обновить комментарий рабочего листа, объект комментария"
+description: "Используйте REST API Aspose.Cells Cloud для обновления комментария ячейки в рабочем листе книги Excel, включая сведения о запросе, коды ответов и примеры SDK."
+weight: 30
+ArticleTitle: "Обновить комментарий ячейки рабочего листа – Aspose.Cells Cloud API"
+---
 
-## РСЕT API
+Этот REST API обновляет комментарий ячейки рабочего листа. Используйте этот конечный пункт для **обновления комментария рабочего листа** в файле Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
- 
+**Необходимые условия:**  
+- В заголовке `Authorization` должен присутствовать действительный токен OAuth/JWT.  
+- Книга должна быть сохранена в поддерживаемом облачном хранилище (укажите `folder` и, при необходимости, `storageName`).
+
+## API PostWorksheetComment
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| Имя_ячейки| нить| путь| Имя ячейки|
-| комментарий|| тело| Объект комментария|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+API Aspose.Cells Cloud являются защищенными и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе токена JWT</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### Параметры запроса
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра | Тип    | Местоположение | Описание                                                             |
+| ------------- | ------ | -------------- | -------------------------------------------------------------------- |
+| name          | string | path           | Имя документа Excel.                                                 |
+| sheetName     | string | path           | Имя рабочего листа, содержащего ячейку.                              |
+| cellName      | string | path           | Адрес ячейки (например, **A1**).                                     |
+| comment       | object | body           | Объект **Comment**, определяющий комментарий для добавления или обновления. |
+| folder        | string | query          | Папка, в которой хранится документ.                                  |
+| storageName   | string | query          | Имя сервиса хранилища.                                               |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) определяет публично доступное программное интерфейсное решение и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки **cURL** для простого доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как выполнить вызов облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/a1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--d "{ \"CellName\": \"a1\", \"Author\": \"test\", \"HtmlNote\": \"string\", \"Note\": \"this is a comment\", \"AutoSize\": true, \"IsVisible\": true, \"Width\": 10, \"Height\": 10}"
-
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "CellName": "a1",
+        "Author": "test",
+        "HtmlNote": "string",
+        "Note": "this is a comment",
+        "AutoSize": true,
+        "IsVisible": true,
+        "Width": 10,
+        "Height": 10
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Возможные коды состояния ответа:
+
+| Код  | Описание                                                     |
+|------|--------------------------------------------------------------|
+| 200  | Комментарий успешно обновлён.                                |
+| 400  | Неверный запрос — отсутствуют или некорректны параметры.     |
+| 401  | Неавторизован — аутентификация не удалась.                   |
+| 404  | Не найдено — книга, рабочий лист или комментарий не существуют. |
+| 500  | Внутренняя ошибка сервера.                                   |
+
+**Примечания / советы:**  
+- Максимальная длина комментария — 1024 символа.  
+- Поддерживаются символы UTF‑8; избегайте управляющих символов.
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это самый быстрый способ разработки с Aspose.Cells Cloud. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на вашем проекте. Ознакомьтесь со <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">репозиторием на GitHub</a> для получения полного списка SDK Aspose.Cells Cloud.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -125,3 +148,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 {{< /tab >}}
 
 {{< /tabs >}}
+
+См. также:  
+- [Получить комментарий рабочего листа](/comments/get/)  
+- [Добавить комментарий рабочего листа](/comments/add/)  
+- [Удалить комментарий рабочего листа](/comments/delete/)

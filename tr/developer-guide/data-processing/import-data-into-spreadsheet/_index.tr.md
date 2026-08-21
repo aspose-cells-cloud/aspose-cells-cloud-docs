@@ -1,107 +1,121 @@
-﻿---
-title: Aspose.Cells Cloud Web API - CSV, JSON veya XML Verilerini Bir Elektronik Tablo Dosyasına Aktarın
-second_title: Documen
-ArticleTitle: Import Csv, JSON, or XML Data into a Spreadsheet file
-linktitle: Verileri E-Tabloya Aktar
-type: docs
-url: /tr/import-data-into-spreadsheet/
-keywords: Import data, Aspose.Cells Cloud Web API, spreadsheet integration, CSV, JSON, XML, data handling, Aspose.Cell
-description: Aspose.Cells Cloud Web API'i kullanarak CSV, JSON ve XML gibi desteklenen formatlardan verileri bir elektronik tabloya verimli bir şekilde aktarın
-weight: 100
-kwords: Aspose.Cells Bulut Web API, Veri İçe Aktarma, Office Bulut, REST, Elektronik Tablo, CSV, JSON, XM
 ---
- Verileri bir elektronik tablo çalışma sayfasına aktarın. İçe aktarılan veri dosyasının desteklenen biçimi:[XML](https://docs.fileformat.com/web/xml/), [JSON](https://docs.fileformat.com/web/json/) veya[CSV](https://docs.fileformat.com/spreadsheet/csv/).
+title: "Aspose.Cells Cloud Veri İçe Aktarma API'si – CSV, JSON ve XML verilerini Excel elektronik tablolara otomatik olarak içe aktarmak için bulut tabanlı bir çözüm."
+second_title: "Belge"
+ArticleTitle: "Çok Kaynaklı Veri Entegrasyonu Excel Platformu – Aspose.Cells Cloud Otomatik Veri İçe Aktarma ve Dönüşüm API'si."
+linktitle: "Elektronik Tabloya Veri İçe Aktar"
+type: docs
+url: /import-data-into-spreadsheet/
+keywords: "Aspose Cells, veri içe aktarma API'si, CSV'den Excel'e, JSON'dan Excel'e, XML'den Excel'e, bulut tabanlı elektronik tablo, REST API"
+description: "Aspose.Cells Cloud REST API ile CSV, JSON veya XML verilerini Excel elektronik tablolara içe aktarın. İstek formatını, parametreleri, örnek SDK kodunu ve hata yönetimi hakkında bilgi edinin."
+weight: 100
+---
 
-## **Verileri Elektronik Tabloya Aktar API**
+## Temel Özellikler
+
+### Çoklu Format Veri Desteği
+
+- **<a href="https://docs.fileformat.com/spreadsheet/csv/" rel="noopener noreferrer">CSV</a> Veri İçe Aktarma**: Çeşitli ayırıcıları destekler ve kodlamayı otomatik olarak algılar.
+- **<a href="https://docs.fileformat.com/web/json/" rel="noopener noreferrer">JSON</a> Veri İşleme**: Karmaşık JSON yapılarını Excel tablolarına düzleştirir.
+- **<a href="https://docs.fileformat.com/web/xml/" rel="noopener noreferrer">XML</a> Dosya Dönüştürme**: Düğüm verilerini Excel satır ve sütun yapısına eşler.
+
+## **Elektronik Tabloya Veri İçe Aktarma API'si Açıklaması**
+
+### Web API'si
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/import/data
+PUT https://api.aspose.cloud/v4.0/cells/import/data
 ```
 
-### **İstek Parametreleri:**
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi| Tanım|
-|:- |:- |:- |:- |
-| veri dosyası| Dosya| FormVerileri| İçe aktarılacak veri dosyasını yükleyin.|
-| Elektronik tablo| Dosya| FormVerileri| Hedef elektronik tablo dosyasını yükleyin.|
-| çalışma sayfası| Sicim| Sorgu| Verileri içe aktarmak için çalışma sayfasını belirtin.|
-| başlangıç hücresi| Sicim| Sorgu|Verileri içe aktarmak için başlangıç konumunu belirtin.|
-| sokmak| Boolean| Sorgu| Belirtilen içe aktarma verilerinin eklenip eklenmeyeceğini veya üzerine yazılıp yazılmayacağını belirtir.|
-| SayısalVerileri dönüştür| Boolean| Sorgu| İçe aktarma sırasında sayısal verilerin dönüştürülüp dönüştürülmeyeceğini belirtin.|
-| ayırıcı| Sicim| Sorgu| CSV formatı için ayırıcıyı belirtin.|
-| çıkış yolu| Sicim| Sorgu| (İsteğe bağlı) Çalışma kitabının saklandığı klasör yolu. Varsayılan değer null'dır.|
-|outStorageName| Sicim| Sorgu| Çıktı dosyasının depolama adını belirtin.|
-| yazı tipleriKonum| Sicim| Sorgu| Kullanılacak özel yazı tiplerini tanımlayın.|
-| yeniden gitmek| Sicim| Sorgu| E-tablo bölgesi yapılandırmasını ayarlayın.|
-| şifre| Sicim| Sorgu| E-tablo dosyasını açmak için şifre.|
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-### **Cevap**
+### İstek Parametreleri
+
+| Parametre Adı      | Tür    | Konum             | Açıklama                                                                 |
+| ------------------ | ------ | ----------------- | ------------------------------------------------------------------------ |
+| datafile           | Dosya  | FormData          | İçe aktarılacak veri dosyası (CSV, JSON veya XML).                      |
+| spreadsheet        | Dosya  | FormData          | İçe aktarılan veriyi alacak hedef çalışma kitabı.                        |
+| worksheet          | string | Sorgu             | Verilerin yerleştirileceği çalışma sayfasının adı.                        |
+| startCell          | string | Sorgu             | İçe aktarmanın başlayacağı sol üst hücre (örn. `A1`).                    |
+| insert             | bool   | Sorgu             | Satırların eklenmesi için `true`; mevcut verilerin üzerine yazılması için `false`. |
+| convertNumericData | bool   | Sorgu             | İçe aktarma sırasında sayısal dizgelerin sayılara dönüştürülmesi için `true`. |
+| splitter           | string | Sorgu             | Tek karakterli CSV ayırıcısı (varsayılan: `,`).                         |
+| outPath            | string | Sorgu (isteğe bağlı) | Güncellenen çalışma kitabının depolanacağı klasör yolu.                  |
+| outStorageName     | string | Sorgu (isteğe bağlı) | Çıktı dosyası için depolama konumunun adı.                              |
+| fontsLocation      | string | Sorgu (isteğe bağlı) | Gerekirse özel yazı tipi klasörünün yolu.                               |
+| region             | string | Sorgu (isteğe bağlı) | Elektronik tablo bölge yapılandırması (örn. `tr-TR`).                   |
+| password           | string | Sorgu (isteğe bağlı) | Korumalı bir çalışma kitabının açılması için şifre.                      |
+
+### Yanıt
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Hata Kodları
+**HTTP Durum Kodları**
 
-- **400 Kötü İstek**: Geçersiz Apose.Cells Bulut API URI.
-- **401 Yetkisiz**: Geçersiz erişim belirteci. Veya geçersiz istemci kimliği ve sırrı.
-- **404 Bulunamadı**: E-tablo dosyasına erişilemiyor.
-- **500 Sunucu Hatası**: Hesaplama verilerinin alınmasında elektronik tabloda bir anormallik tespit edildi.
+| Kod | Anlamı                | Açıklama                                                          |
+| --- | --------------------- | ----------------------------------------------------------------- |
+| 200 | Tamam (OK)            | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir.    |
+| 400 | Geçersiz İstek        | Eksik veya geçersiz parametreler (örn. desteklenmeyen dosya türü). |
+| 401 | Yetkisiz              | Geçersiz veya eksik JWT belirteci.                                |
+| 413 | İçerik Çok Büyük      | Yüklenen dosya boyut sınırını aşıyor.                             |
+| 500 | Sunucu İç Hatası      | Beklenmeyen sunucu hatası.                                        |
 
-## API E-Tablosuna Veri Aktarma işlemini nerede kullanmalıyız?
+## Bu API'yi Neden Kullanmalısınız?
 
-- Büyük miktarda veriyi elektronik tablo çalışma sayfasına aktarma.
--  İçe aktarılan veri dosyası biçimi[XML](https://docs.fileformat.com/web/xml/), [JSON](https://docs.fileformat.com/web/json/) Ve[CSV](https://docs.fileformat.com/spreadsheet/csv/).
+- **Verimli veri yükleme** – Büyük veri kümelerinin ara dosyalar oluşturmadan doğrudan bir çalışma kitabına toplu olarak içe aktarılmasını sağlar.
+- **Geniş SDK desteği** – .NET, Java, PHP, Ruby, Node.js, Python, Go ve Perl için istemci kitaplıkları sağlar ve entegrasyonu basitleştirir.
+- **Bellek içi işleme** – Geçici depolama gereksinimlerini azaltmak için dönüşümleri bellek içinde gerçekleştirir.
 
-## API Elektronik Tablosuna Veri Aktarma'yı neden kullanmalısınız?
+## SDK’lar ile Elektronik Tabloya Veri İçe Aktarma API'sini Nasıl Kullanılır?
 
-- Büyük miktarda veriyi elektronik tablolara aktarma.
-- Mevcut SDK üzerinden geliştirme hızlı bir şekilde tamamlanabilir.
+**Notlar / Sınırlamalar:** API, içe aktarma başına en fazla 1 000 000 satırı destekler. Varsayılan CSV ayırıcısı yalnızca virgüldür; diğer tek karakterli ayırıcılar `splitter` parametresi aracılığıyla belirtilebilir. Büyük XML dosyaları işlemenin süresini artırabilir.
 
-## SDK'larla API E-Tablosuna Veri Aktarma Nasıl Kullanılır
+Veri dışa aktarma veya çalışma kitabı formatlarını dönüştürme gibi ilgili işlemler için **Veriyi Dışa Aktar** ve **Çalışma Kitabını Dönüştür** belgelerine bakın.
 
-### Verileri Elektronik Tabloya Aktarma API Spesifikasyonu
+### Elektronik Tabloya Veri İçe Aktarma API'si Spesifikasyonu
 
- The[Verileri Elektronik Tabloya Aktarma API Spesifikasyonu](https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet) web tarayıcınızdan doğrudan REST etkileşimlerine izin veren, herkese açık bir programlama arayüzü sağlar.
+<a href="https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet" rel="noopener noreferrer">Elektronik Tabloya Veri İçe Aktarma API Spesifikasyonu</a>, doğrudan web tarayıcınızdan REST etkileşimlerine izin veren herkese açık bir programlama arayüzü sağlar.
+Aspose.Cells web hizmetlerine kolayca ulaşmak için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sine nasıl istek gönderileceğini göstermektedir.
 
-### Aspose.Cells Bulut SDK'larını kullanın
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
-SDK'yı kullanmak, düşük seviyeli ayrıntıları soyutlayarak verileri kısa kodlarla bir elektronik tablo çalışma sayfasına aktarmanıza olanak tanıdığı için geliştirmenin en hızlı yoludur.
- Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+{{< tab tabNum="11" >}}
 
-Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web servislerinin nasıl çağrılacağını göstermektedir:
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/import/data?worksheet=Sheet1&startCell=A1&insert=true" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "datafile=@/path/to/data.csv" \
+  -F "spreadsheet=@/path/to/workbook.xlsx"
+```
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ImportDataIntoSpreadsheet.cs" >}}
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ImportDataIntoSpreadsheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 ile kodlanmış)",
+  "contentType": "MIME türü",
+  "fileDownloadName": "isteğe bağlı dosya adı"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ImportDataIntoSpreadsheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ImportDataIntoSpreadsheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ImportDataIntoSpreadsheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ImportDataIntoSpreadsheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ImportDataIntoSpreadsheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ImportDataIntoSpreadsheet.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### Aspose.Cells Cloud SDK’larını Kullanma
+
+SDK kullanımı, düşük seviyeli ayrıntıları soyutlayarak elektronik tablo çalışma sayfasına veri içe aktarmak için kısa kodla geliştirme yapmanın en hızlı yoludur. Aspose.Cells Cloud SDK’larının tam listesi için <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub deposuna</a> bakın.

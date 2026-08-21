@@ -1,106 +1,92 @@
-﻿---
-title: 对象存在
-second_title: Documen
-linktitle: 对象存在
-type: docs
-url: /zh/object-exists/
-keywords: Excel API, Object Exists, REST API, Aspose, File Management, Excel, Office Cloud, Spreadsheet, PDF, CSV, JSON, Markdow
-description: 对象存在 API 检查指定的文件或文件夹是否存在于 Aspose.Cells 云存储中
-weight: 100
-kwords: Excel API，对象存在，REST API，Aspose，Office 云，文件管理，电子表格，PDF，CSV，JSON，Markdown，检查 Excel 中的文件是否存在
 ---
-## **Excel API：对象存在**
+title: "Object Exists API — 检查 Aspose.Cells Cloud 中文件/文件夹是否存在"
+second_title: "文档"
+ArticleTitle: "Object Exists API — 验证 Aspose.Cells Cloud 中文件或文件夹是否存在"
+linktitle: "Object Exists"
+type: docs
+url: /object-exists/
+keywords: "Aspose.Cells, 云存储, 对象是否存在, 文件存在性, 文件夹存在性, API"
+description: "使用 Object Exists API 快速验证 Aspose.Cells Cloud 存储中是否存在特定文件或文件夹。支持可选的存储名称和版本 ID，且适用于启用了版本控制的对象。"
+weight: 100
+---
 
+**Object Exists API** 可帮助开发者判断 Aspose.Cells Cloud 存储中是否存在指定的文件或文件夹。该 API 返回一个布尔值，表示对象是否存在，以及该路径是否指向一个文件夹。
+
+## **Excel API：Object Exists**
+
+### Web API
+
+```http
+GET https://api.aspose.cloud/v5.0/cells/storage/exist/{path}
 ```
-GET http://api.aspose.cloud/v4.0/cells/storage/exist/{path}
-```
 
-### **功能描述**
+_`{path}`_ 为存储中文件或文件夹的完整路径。
 
-`objectExists` API 允许开发人员验证 Aspose.Cells 云存储中指定文件或文件夹的存在。
+### **安全性与身份验证**
 
-### 请求参数**对象存在**API 是
+Aspose.Cells Cloud API 具备安全性，需使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-|参数名称|类型|路径/查询字符串/HTTP 正文|描述|
-|:- |:- |:- |:- |
-|小路|细绳|小路|云存储中文件或文件夹的路径。|
-|存储名称|细绳|询问|文件所在存储的名称。|
-|版本号|细绳|询问|文件的版本 ID（如果适用）。|
+### 请求参数
 
-### **响应描述**
+| 参数名         | 类型   | 位置   | 必填 | 描述                                                           |
+| -------------- | ------ | ------ | ---- | -------------------------------------------------------------- |
+| `path`         | string | Path   | 是   | 文件或文件夹的完整路径。                                       |
+| `storageName`  | string | Query  | 否   | 存储名称；若省略，默认使用主存储。                             |
+| `versionId`    | string | Query  | 否   | 文件的特定版本标识符（若启用了版本控制功能）。                 |
+
+**HTTP 状态码**
+
+| HTTP 状态码 | HTTP 状态描述         | 描述                                                             |
+| ----------- | --------------------- | ---------------------------------------------------------------- |
+| 200         | OK（请求成功）        | Web API 调用成功；响应包含操作详情。                             |
+| 400         | Bad Request（请求错误） | 参数缺失或无效（例如不支持的文件类型）。                         |
+| 401         | Unauthorized（未授权）  | JWT 令牌无效或缺失。                                             |
+| 413         | Payload Too Large（请求体过大） | 上传的文件超出大小限制。                                       |
+| 500         | Internal Server Error（服务器内部错误） | 发生意外服务器错误。                                         |
+
+### **响应**
+
+成功调用后返回如下 JSON 数据体，包含两个字段：
 
 ```json
 {
-  "Name": "ObjectExist",
-  "Description": [
-    "Object exists"
-  ],
-  "Type": "Class",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "Exists",
-      "Description": [
-        "Indicates that the file or folder exists."
-      ],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Boolean",
-        "Name": "boolean"
-      }
-    },
-    {
-      "Name": "IsFolder",
-      "Description": [
-        "True if it is a folder, false if it is a file."
-      ],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Boolean",
-        "Name": "boolean"
-      }
-    }
-  ]
+  "Exists": true,
+  "IsFolder": false
 }
 ```
 
+- **Exists** — 若文件或文件夹存在则为 `true`，否则为 `false`。
+- **IsFolder** — 若路径指向文件夹则为 `true`，若指向文件则为 `false`。
+
 ## OpenAPI 规范
 
-这[OpenAPI 规范](https://reference.aspose.cloud/cells/#/StorageController/ObjectExists)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+[OpenAPI 规范](https://reference.aspose.cloud/cells/#/StorageController/ObjectExists) 定义了一个公开可访问的编程接口，支持您直接通过网页浏览器发起 REST 调用。
 
-## Excel API SDK
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何通过 cURL 调用 Cloud API。
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ObjectExists.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/exist/myFolder/subFolder" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ObjectExists.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ObjectExists.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ObjectExists.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ObjectExists.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ObjectExists.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ObjectExists.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ObjectExists.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务本身。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，查看 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何通过多种 SDK 调用 Aspose.Cells Web 服务。若 Gist 未加载成功，各标签页下方均提供静态示例。

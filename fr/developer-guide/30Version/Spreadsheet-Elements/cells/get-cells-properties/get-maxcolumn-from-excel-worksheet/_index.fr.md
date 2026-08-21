@@ -1,46 +1,48 @@
-﻿---
-title: Obtenez MaxColumn à partir de la feuille de calcul Excel
+---
+title: "Obtenir MaxColumn à partir d'une feuille Excel"
 type: docs
 url: /fr/get-maxcolumn-from-excel-worksheet/
 weight: 60
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir MaxColumn à partir de la feuille de calcul Excel
+keywords: "Aspose Cells API, maxcolumn, feuille Excel, REST, SDK"
+description: "Récupérer l'index de colonne maximal d'une feuille à l'aide de l'API Aspose.Cells Cloud. Inclut une requête cURL avec authentification, schéma de réponse, paramètres, codes d'erreur et exemples de SDK (C#, Java, Python, etc.)."
 ---
-Ce REST API indique que les émissions obtiennent un `maxcolumn` dans un fichier Excel lorsque le paramètre `cellOrMethodName` est `maxcolumn`.
 
-- **cURL Exemple**
+Cette API REST renvoie l'index de colonne maximal dans une feuille Excel lorsque le paramètre `cellOrMethodName` est défini sur `maxcolumn`.
 
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+- **Exemple cURL**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxcolumn"  -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxcolumn" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MaxColumn": 15
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Famille de SDK Cloud**
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+- **Utiliser les SDK Aspose.Cells Cloud**
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+L'utilisation d'un SDK constitue la méthode la plus rapide pour développer. Un SDK gère les détails de bas niveau, vous permettant ainsi de vous concentrer sur la logique de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-
+Les exemples de code suivants illustrent comment appeler les services web Aspose.Cells à l'aide de divers SDK :
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -87,6 +89,8 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
+<!-- Exemple Swift (actuellement non fourni) -->
 
 {{< /tab >}}
 

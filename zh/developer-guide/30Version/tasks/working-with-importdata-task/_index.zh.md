@@ -1,52 +1,112 @@
-﻿---
-title: 使用 ImportData 任务
-second_title: Documen
-type: docs
-url: /zh/tasks/importdata/
-aliases: [/working-with-importdata-task/]
-keywords: REST API, task, convert, spreadsheets, exce
-description: Cells.Cloud API 为 Excel 操作：任务支持将数据导入 excel 文件
-weight: 40
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 使用 ImportData 任务
 ---
-## 休息 API
+title: "ImportData 任务 – Aspose.Cells Cloud API 参考与 cURL 示例"  
+second_title: "文档"  
+type: docs  
+url: /tasks/importdata/  
+aliases: [/working-with-importdata-task/]  
+keywords: "Aspose.Cells, ImportData 任务, Excel API, REST, cURL, SDK"  
+description: "了解如何使用 Aspose.Cells Cloud 的 ImportData 任务将批量数据导入 Excel 工作簿。包含 cURL 语法、请求结构、SDK 示例（C#、PHP、Ruby、Node.js）以及错误处理。"  
+weight: 40  
+---  
 
-|**API**|**类型**|**描述**|**资源链接**|
-|:- |:- |:- |:- |
-|/单元格/任务/运行任务|邮政|运行任务|[运行后任务](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+## REST API  
 
+| **API** | **类型** | **描述** | **资源链接** |
+| :- | :- | :- | :- |
+| /cells/task/runtask | POST | 运行任务 | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) 定义了一个公开可访问的编程接口，支持直接从 Web 浏览器发起 REST 请求。  
 
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+您可以使用 **cURL** 命令行工具调用 Aspose.Cells Cloud 服务。以下示例展示了如何使用格式正确的 JSON 负载执行 **ImportData** 任务。
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" -H "accept: application/json" -H "Content-Type: application/json" -H "x-aspose-client: Containerize.Swagger" -d "{<Tasks> <TaskDescription> <TaskType>ImportData</TaskType> <ImportDataTaskParameter> <Workbook> <FileSourceType>CloudFileSystem</FileSourceType> <FilePath>TaskBook.xlsx</FilePath> </Workbook> <ImportBatchDataOption> <DestinationWorksheet>Sheet1</DestinationWorksheet> <IsInsert>true</IsInsert> <Source> <FileSourceType>RequestFiles</FileSourceType> <FilePath>Batch_data_xml.txt</FilePath> </Source> </ImportBatchDataOption> </ImportDataTaskParameter> </TaskDescription> <TaskDescription> <TaskType>ImportData</TaskType> <ImportDataTaskParameter> <Workbook> <FileSourceType>InMemoryFiles</FileSourceType> <FilePath>TaskBook.xlsx</FilePath> </Workbook> <ImportBatchDataOption> <DestinationWorksheet>Sheet2</DestinationWorksheet> <IsInsert>true</IsInsert> <Source> <FileSourceType>RequestFiles</FileSourceType> <FilePath>Batch_data_xml_2.txt</FilePath> </Source> </ImportBatchDataOption> </ImportDataTaskParameter> </TaskDescription> <TaskDescription> <TaskType>SaveResult</TaskType> <SaveResultTaskParameter> <ResultSource>InMemoryFiles</ResultSource> <ResultDestination> <DestinationType>CloudFileSystem</DestinationType> <InputFile>TaskBook.xlsx</InputFile> <OutputFile>ImpDataBook.xlsx</OutputFile> </ResultDestination> </SaveResultTaskParameter> </TaskDescription> </Tasks></TaskData>}"
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -d '{
+  "Tasks": [
+    {
+      "TaskDescription": {
+        "TaskType": "ImportData",
+        "ImportDataTaskParameter": {
+          "Workbook": {
+            "FileSourceType": "CloudFileSystem",
+            "FilePath": "TaskBook.xlsx"
+          },
+          "ImportBatchDataOption": {
+            "DestinationWorksheet": "Sheet1",
+            "IsInsert": true,
+            "Source": {
+              "FileSourceType": "RequestFiles",
+              "FilePath": "Batch_data_xml.txt"
+            }
+          }
+        }
+      }
+    },
+    {
+      "TaskDescription": {
+        "TaskType": "ImportData",
+        "ImportDataTaskParameter": {
+          "Workbook": {
+            "FileSourceType": "InMemoryFiles",
+            "FilePath": "TaskBook.xlsx"
+          },
+          "ImportBatchDataOption": {
+            "DestinationWorksheet": "Sheet2",
+            "IsInsert": true,
+            "Source": {
+              "FileSourceType": "RequestFiles",
+              "FilePath": "Batch_data_xml_2.txt"
+            }
+          }
+        }
+      }
+    },
+    {
+      "TaskDescription": {
+        "TaskType": "SaveResult",
+        "SaveResultTaskParameter": {
+          "ResultSource": "InMemoryFiles",
+          "ResultDestination": {
+            "DestinationType": "CloudFileSystem",
+            "InputFile": "TaskBook.xlsx",
+            "OutputFile": "ImpDataBook.xlsx"
+          }
+        }
+      }
+    }
+  ]
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
-HttpResponseMessage with the operation result.
-
+```json
+{
+  "Status": "OK",
+  "TaskId": "12345678",
+  "Result": {
+    "FilePath": "ImpDataBook.xlsx",
+    "DownloadUrl": "https://api.aspose.cloud/v3.0/cells/storage/file/ImpDataBook.xlsx"
+  }
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是将这些操作集成到应用程序中的最高效方式。SDK 负责处理身份验证、请求构建和响应解析，使您能够专注于业务逻辑。Aspose.Cells Cloud SDK 的完整列表，请参阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)。  
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="5" tabID="8" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Perl" >}}
 
@@ -81,4 +141,3 @@ HttpResponseMessage with the operation result.
 {{< /tab >}}
 
 {{< /tabs >}}
-

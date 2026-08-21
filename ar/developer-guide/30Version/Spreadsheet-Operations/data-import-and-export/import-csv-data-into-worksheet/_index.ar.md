@@ -1,85 +1,108 @@
-﻿---
-title: استيراد بيانات CSV إلى ورقة العمل Excel
-second_title: Documen
-linktitle: استيراد بيانات csv
-type: docs
-url: /ar/import-csv-data-into-excel/
-aliases: [/import-csv-data-into-worksheet/,/import-data/csv-data/,/import/csv-data/]
-keywords: Import csv data into Excel files
-description: يدعم Cloud REST استيراد بيانات csv إلى ملفات. تدعم حزمة SDK لغات تطوير متنوعة، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 19
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، استيراد بيانات CSV إلى ورقة عمل Excel
 ---
-هذه ورقة عمل REST API `import csv data` في Excel.
+title: "استيراد بيانات CSV إلى ورقة عمل Excel"
+second_title: "Document"
+linktitle: "استيراد بيانات CSV"
+type: docs
+url: /import-CSV-data-into-excel/
+aliases:
+  - /import-CSV-data-into-worksheet/
+  - /import-data/csv-data/
+  - /import/csv-data/
+keywords: "استيراد بيانات CSV، Excel، Aspose.Cells Cloud، REST API، جدول بيانات، استيراد CSV"
+description: "تتيح واجهة Aspose.Cells Cloud REST API استيراد بيانات CSV إلى أوراق عمل Excel. تشمل SDKs المدعومة: Android، .NET، Go، Java، Node.js، Perl، PHP، Python، Ruby، وSwift."
+weight: 19
+---
 
-الطلب عبارة عن طلب HTTP يحتوي على محتوى متعدد الأجزاء (انظر[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)أو[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)يحتوي الجزء الأول من المحتوى متعدد الأجزاء على بيانات ImportCSVDataOption ويحتوي الجزء الثاني على ملف بيانات.
+تُستخدم هذه الواجهة REST API **لاستيراد بيانات CSV** إلى ورقة عمل Excel.
 
-## RSET API
+الطلب عبارة عن طلب HTTP يحتوي على محتوى متعدد الأجزاء (انظر [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) أو [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). الجزء الأول من المحتوى المتعدد الأجزاء يحتوي على بيانات `ImportCSVDataOption`، بينما يحتوي الجزء الثاني على ملف CSV.
+
+## واجهة REST API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-يتم وصف المعلمات الهامة في الجدول التالي:
+### **الأمان والمصادقة**
 
-**خيار استيراد بيانات CSV**
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-| سلسلة فاصلة| خيط||
-| تحويل البيانات الرقمية| خيط|صواب/خطأ.|
-| الصف الأول| عدد صحيح||
-| العمود الأول| عدد صحيح||
-| ملف المصدر| خيط||
-| المحللات المخصصة|قائمة<CustomParserConfig> ||
+تُوضّح الجداول التالية المعلمات المهمة.
 
-**تكوين المحلل المخصص**
+### ImportCSVDataOption
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-| فهرس العمود| عدد صحيح||
-| طريقة التحليل| خيط||
-| نمط مخصص| خيط||
+| اسم المعلمة         | النوع                      | الوصف                                                                 |
+|---------------------|----------------------------|-----------------------------------------------------------------------|
+| SeparatorString     | string                     | الحرف المستخدم لفصل الحقول في ملف CSV (مثل `،` أو `؛`).              |
+| ConvertNumericData  | string (`true`/`false`)    | يُشير إلى ما إذا كان يجب تحويل السلاسل الرقمية إلى قيم عددية.        |
+| FirstRow            | int                        | المؤشر المبني على 1 لصف أول سطر سيتم وضع البيانات فيه.              |
+| FirstColumn         | int                        | المؤشر المبني على 1 لعمود أول عمود سيتم وضع البيانات فيه.           |
+| SourceFile          | string                     | اسم ملف CSV المصدر المراد استيراده.                                  |
+| CustomParsers       | List\<CustomParserConfig\> | مجموعة إعدادات محللات مخصصة لحقول محددة.                            |
+
+### CustomParserConfig
+
+| اسم المعلمة   | النوع  | الوصف                                                           |
+|---------------|--------|-----------------------------------------------------------------|
+| ColumnIndex   | int    | المؤشر المبني على الصفر للفهرس العمودي الذي يطبّق عليه المحلل المخصص. |
+| ParseMethod   | string | طريقة التحليل للعمود (مثل `ToString`، `ToDate`، `ToNumber`).     |
+| CustomStyle   | string | النمط المخصص (مثل تنسيق الأرقام) المطبّق على الخلايا المُحلّلة.   |
 
 **مثال**
 
 ```xml
+<ImportCSVDataOption>
+    <DestinationWorksheet>Sheet1</DestinationWorksheet>
+    <IsInsert>true</IsInsert>
+    <ImportDataType>CSVData</ImportDataType>
+    <SeparatorString>;</SeparatorString>
+    <ConvertNumericData>true</ConvertNumericData>
+    <FirstRow>1</FirstRow>
+    <FirstColumn>2</FirstColumn>
+    <SourceFile>TestImportDataCSV.CSV</SourceFile>
+    <CustomParsers>
+        <CustomParserConfig>
+            <ColumnIndex>0</ColumnIndex>
+            <ParseMethod>ToString</ParseMethod>
+            <CustomStyle>#</CustomStyle>
+        </CustomParserConfig>
+    </CustomParsers>
+</ImportCSVDataOption>
+```
+### الاستجابة
 
- <ImportCSVDataOption>
-     <DestinationWorksheet>Sheet1</DestinationWorksheet>
-     <IsInsert>true</IsInsert>
-     <ImportDataType>CSVData</ImportDataType>
-     <SeparatorString>;</SeparatorString>
-     <ConvertNumericData>true</ConvertNumericData>
-     <FirstRow>1</FirstRow>
-     <FirstColumn>2</FirstColumn>
-     <SourceFile>TestImportDataCSV.csv</SourceFile>
-     <CustomParsers>
-         <CustomParserConfig>
-             <ColumnIndex>0</ColumnIndex>
-             <ParseMethod>ToString</ParseMethod>
-             <CustomStyle>#</CustomStyle>
-         </CustomParserConfig>
-     </CustomParsers>
- </ImportCSVDataOption>
-
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
 ```
 
-## عائلة SDK السحابية
+**رموز حالة HTTP**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| الرمز | المعنى                      | الوصف                                                            |
+|-------|-----------------------------|------------------------------------------------------------------|
+| 200   | OK                          | تم تطبيق المرشح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.     |
+| 400   | Bad Request                 | معلمات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم).            |
+| 401   | Unauthorized                | رمز JWT غير صالح أو مفقود.                                      |
+| 413   | Payload Too Large           | حجم الملف المرفوع يتجاوز الحد المسموح به.                       |
+| 500   | Internal Server Error       | خطأ داخلي غير متوقع في الخادم.                                  |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+## كيفية استخدام واجهة PostImportData API باستخدام SDKs
+
+### مواصفات واجهة PostImportData API
+
+تُعرّف [مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData) واجهة برمجة تطبيقات عامة قابلة للوصول، تسمح لك بإجراء تفاعلات REST مباشرة من متصفح ويب.
+
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
+
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. فتقوم SDK بتجريد التفاصيل من المستوى المنخفض، مما يتيح لك التركيز على منطق تطبيقك التجاري. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+يوضح مثال الكود التالي كيفية استدعاء خدمة Aspose.Cells عبر الويب باستخدام SDK الخاص بـ PHP:
 
 {{< tabs tabTotal="1" tabID="1" tabName1="PHP" >}}
-
 {{< tab tabNum="1" >}}
-
 {{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-Workbook-PostImportCSVData.php" >}}
-
 {{< /tab >}}
-
 {{< /tabs >}}

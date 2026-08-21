@@ -1,70 +1,94 @@
-﻿---
-title: 从 Excel 工作表中获取所有工作表验证
-second_title: Documen
-linktitle: 获取全部
+---
+title: "从 Excel 工作表中获取所有验证规则"
+second_title: "文档"
+linktitle: "获取全部"
 type: docs
 url: /zh/validations/get-all/
-keywords: Get all worksheet validations from an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持从 Excel 工作表获取所有工作表验证。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+keywords: "Aspose.Cells Cloud, Excel, 工作表验证, REST API, 获取所有验证, SDK"
+description: "使用 Aspose.Cells Cloud REST API 从 Excel 工作表中检索所有验证规则。支持多种 SDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go），便于快速集成。"
 weight: 10
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表获取所有工作表验证
 ---
-此 REST API 表示获取 Excel 工作表上的所有工作表验证。
 
-## 重新设置 API
+工作表验证规则允许您定义限制可输入单元格的数据类型或范围的规则。它们通常用于强制执行数据完整性，例如将输入限制为值列表、特定范围内的日期或数值限制。
+
+此 REST API 可用于检索 Excel 工作表上的所有验证规则。
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 ```
 
-请求参数为：
+### **请求参数**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
+| 参数名称      | 类型   | 位置   | 描述                                   |
+| ------------- | ------ | ------ | -------------------------------------- |
+| name          | string | path   | Excel 文档的名称。                     |
+| sheetName     | string | path   | 工作表的名称。                         |
+| folder        | string | query  | 存放文档的文件夹路径。                 |
+| storageName   | string | query  | 存储服务的名称。                       |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+**响应状态码**
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 状态码 | 描述                                   |
+| ------ | -------------------------------------- |
+| 200    | 请求成功 — 验证规则列表                |
+| 401    | 未授权 — 无效或缺失的令牌              |
+| 404    | 未找到 — 文档或工作表不存在            |
+| 500    | 内部服务器错误                         |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations) 定义了一个公开可用的编程接口，可让您直接通过 Web 浏览器执行 REST 交互。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Cloud Web 服务。**前置条件：**您必须在 `Authorization` 请求头中包含有效的 JWT 令牌。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
-
- 
+```json
+{
+  "validations": [
+    {
+      "name": "Validation1",
+      "type": "WholeNumber",
+      "operator": "Between",
+      "formula1": "1",
+      "formula2": "100",
+      "showErrorMessage": true,
+      "errorMessage": "值必须介于 1 和 100 之间。"
+    },
+    {
+      "name": "Validation2",
+      "type": "List",
+      "formula1": "\"Option1,Option2,Option3\"",
+      "showErrorMessage": true,
+      "errorMessage": "请从列表中选择一个值。"
+    }
+  ]
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+## 云 SDK 家族
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是加速开发的最佳方式。SDK 会处理底层细节，让您专注于项目任务。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

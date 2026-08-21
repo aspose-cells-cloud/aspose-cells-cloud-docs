@@ -1,87 +1,121 @@
-﻿---
-title: Reparera Excel-filen
-second_title: Documen
-type: docs
-linktitle: Reparera Excel-filen
-url: /sv/repair-excel-files/
-keywords: Repair Excel, ODS, WPS, and so on files
-description: Reparera Excel-filer med hjälp av Aspose.Cells Cloud REST API. API stöder flera utvecklingsspråk inklusive Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift för snabb integration i dina projekt.
-weight: 39
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Reparation
 ---
-Denna REST API indikerar `repair` Excel filer.
+title: "Reparera Excel-filer"
+second_title: "Dokument"
+type: docs
+linktitle: "Reparera Excel-filer"
+url: /sv/repair-excel-files/
+keywords: "Aspose Cells, Excel-reparations-API, korrupt XLSX, återställning av kalkylark, moln-API"
+description: "Använd Aspose.Cells Cloud REST API för att reparera korrupta Excel-filer (XLS, XLSX, XLSM, XLSB, ODS). Ladda upp en eller flera filer, välj utdataformat och få tillbaka reparerade filer i Base64-format. Ingen installation krävs."
+weight: 39
+---
 
-- Reparera XLS, XLSX, XLSM, XLSB, ODS och så vidare.
-- Stöd för flera filer.
+Detta REST API låter dig **reparera** Excel-filer.
 
-Aspose.Cells Cloud Excel Repair återställer data från korrupta Excel-filer online utan installation. Korrupta Excel-filer kan vara ett problem eftersom du inte kommer att kunna öppna dem. Du kan prova Aspose.Cells Cloud Excel Repair-appen för att återställa data från korrupta Excel-filer.
+- Reparera XLS, XLSX, XLSM, XLSB, ODS och andra kalkylarksformat.  
+- Stöder uppladdning av flera filer i en enda begäran.
 
-## RSET API
+Aspose.Cells Cloud Excel-reparation återställer data från korrupta Excel-filer online utan någon installation. Korrupta Excel-filer är problematiska eftersom de inte kan öppnas. Du kan testa Aspose.Cells Cloud Excel-reparationsappen för att återställa data från sådana filer.
+
+## REST API
+
+Endpointen **Repair Excel Files** reparerar korrupta kalkylarksfiler och returnerar det reparerade innehållet.
+
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/repair
-
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| fil| fil| formulärData| Fil att ladda upp|
-| formatera| sträng| fråga| Utdataformat, standardvärdet är null, utdataformatet är lika med indatafilformatet.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begäransparametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Parameternamn | Typ   | Plats                        | Beskrivning |
+|---------------|-------|------------------------------|-------------|
+| file          | fil   | formData (multipart)         | Fil att ladda upp |
+| format        | sträng | frågeparameter                | Önskat utdataformat. Om den utelämnas (null) blir utdataformatet samma som indatafilens format. |
+
+### **Svar**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[sammanfogat filnamn]",
+    "Filesize" : [filstorlek],
+    "FileContent" : "[Base64-sträng]"
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                     |
+|-----|-----------------------------|-------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Bad Request                 | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Unauthorized                | Ogiltig eller saknad JWT-token. |
+| 413 | Payload Too Large           | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internal Server Error       | Oväntat serverfel. |
+## Hur man använder PostRepair API med SDK:er
+
+### PostRepair API-specifikation
+
+[OpenAPI-specifikationen](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för kommandoraden för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/repair" \
--X POST \
--H "Content-Type: multipart/form-data" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'
+curl -v "https://api.aspose.cloud/v3.0/cells/repair" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'file1=@file1.xlsx' \
+  -F 'file2=@file2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
+```json
 {
-    "Files":
-    [
-        {
-            "Filename":"xxxx1.xlsx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        {
-            "Filename":"xxxx2.xlsx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "file1.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64-sträng--------"
+    },
+    {
+      "Filename": "file2.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64-sträng--------"
+    }
+  ]
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+Vid lyckad åtgärd returnerar tjänsten HTTP 200 med en JSON-payload som innehåller en `Files`-array. Vid felaktiga situationer använder API:et standard HTTP-statuskoder:
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+- **400 Bad Request** – Ogiltiga parametrar eller fil som inte går att återställa.  
+- **401 Unauthorized** – Saknad eller ogiltig JWT-token.  
+- **413 Payload Too Large** – Den uppladdade filen överskrider den tillåtna storleken.  
+- **500 Internal Server Error** – Oväntat serverfel.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+## Moln-SDK-familj
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Kolla in [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

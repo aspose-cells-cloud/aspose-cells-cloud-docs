@@ -1,74 +1,69 @@
-﻿---
-title: Excel numaralı çalışma sayfasına bir çalışma sayfası doğrulaması ekleyin
-second_title: Documen
-linktitle: Reklam
+---
+title: "Bir Excel çalışma sayfasına bir doğrulama ekleyin"
+second_title: "Belge"
+linktitle: "Ekle"
 type: docs
 url: /tr/validations/add/
-keywords: Delete a worksheet validation on an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasına çalışma sayfası doğrulaması eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
+keywords: "Çalışma sayfası doğrulaması ekle, Excel, Aspose.Cells Cloud, REST API, Elektronik Tablo, Doğrulama kuralı"
+description: "Aspose.Cells Cloud REST API’sini kullanarak bir Excel dosyasına bir çalışma sayfası doğrulaması ekleyin. SDK’lar C#, Java, PHP, Ruby, Node.js, Python, Perl, Go ve Swift için mevcuttur."
 weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasına çalışma sayfası doğrulaması ekleme
 ---
-Bu REST API, Excel çalışma sayfasına bir çalışma sayfası doğrulaması eklenmesini belirtir.
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasına bir doğrulama ekler.
+
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
- 
 ```
 
-İstek parametreleri şunlardır:
+### **İstek parametreleri**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| menzil| sicim| sorgu| Belirtilen hücre alanı|
-| doğrulama|| vücut| doğrulama|
-| dosya| sicim| sorgu| Belgenin klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı | Tür     | Konum | Açıklama                                                         |
+|---------------|---------|-------|------------------------------------------------------------------|
+| name          | string  | path  | Excel belgesinin adı.                                            |
+| sheetName     | string  | path  | Çalışma sayfasının adı.                                          |
+| range         | string  | query | Doğrulamanın uygulanacağı hücre aralığı (örneğin, A1:B10).       |
+| validation    | object  | body  | Doğrulama kuralı tanımı.                                         |
+| folder        | string  | query | Belgenin bulunduğu klasör.                                       |
+| storageName   | string  | query | Depolama hizmetinin adı.                                         |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye istek nasıl yapıldığını göstermektedir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+## Bulut SDK Ortaklığı
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, düşük seviyeli ayrıntıları yöneterek size proje görevlerine odaklanma imkanı sunar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web servislerini çeşitli SDK’lar kullanarak nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -98,7 +93,7 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetValidation.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutWorksheetValidation.ts" >}}
 
 {{< /tab >}}
 

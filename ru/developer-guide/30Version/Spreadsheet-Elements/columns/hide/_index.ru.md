@@ -1,65 +1,70 @@
-﻿---
-title: Скрыть столбцы на листе Excel
-second_title: Documen
-linktitle: Спрятан
-type: docs
-url: /ru/columns/hide/
-aliases: [/hide-columns-in-excel-worksheet/,/hide-columns-in-an-excel-worksheet/]
-keywords: Hide column on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает скрытие столбцов на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 40
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Скрыть столбцы на листе Excel
 ---
-Этот REST API указывает на скрытие столбцов рабочего листа.
+title: "Скрытие столбцов в рабочей таблице Excel"
+second_title: "Документ"
+linktitle: "Скрыть"
+type: docs
+url: /columns/hide/
+aliases:
+  - /hide-columns-in-excel-worksheet/
+  - /hide-columns-in-an-excel-worksheet/
+keywords: "Aspose.Cells Cloud, API для скрытия столбцов, скрытие столбцов в Excel, REST API для скрытия столбцов, Aspose.Cells SDK, автоматизация электронных таблиц"
+description: "Узнайте, как скрыть один или несколько столбцов в рабочей таблице Excel с помощью REST API Aspose.Cells Cloud (версия 3.0). Включает описание конечной точки, параметры запроса, пример cURL, примеры кода SDK и обработку ошибок."
+weight: 40
+---
 
-## РСЕT API
+Этот REST API скрывает столбцы в рабочей таблице.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
 ```
 
-Параметры запроса:
+### Параметры запроса
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| startColumn| целое число| запрос| Начальный индекс столбца, подлежащего обработке.|
-| всего столбцов| целое число| запрос| Количество колонн, которые будут работать.|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра  | Тип    | Расположение | Описание                                                                 |
+| -------------- | ------ | ------------- | ------------------------------------------------------------------------ |
+| name           | string | path          | Имя файла рабочей книги.                                                 |
+| sheetName      | string | path          | Имя рабочей таблицы, в которой будут скрыты столбцы.                    |
+| startColumn    | integer | query       | Индекс первого скрываемого столбца (начинается с 0).                     |
+| totalColumns   | integer | query       | Количество последовательных столбцов для скрытия, начиная с **startColumn**. |
+| folder         | string | query         | Путь к папке, содержащей рабочую книгу.                                 |
+| storageName    | string | query         | Имя службы хранилища, в которой расположен файл.                        |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) определяет публично доступное программное интерфейсное решение и позволяет выполнять взаимодействие с REST напрямую из веб-браузера.
 
- Вы можете использовать**cURL** Инструмент командной строки для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать утилиту командной строки **cURL** для простого вызова веб-сервисов Aspose.Cells. Пример ниже показывает, как с помощью cURL скрыть столбец.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
- curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/hide?startColumn=1&totalColumns=1" -H "accept: application/json"
-
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/hide?startColumn=1&totalColumns=1" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
+
+**Возможные коды ответа**
+
+| HTTP-код | Значение                                 | Пример JSON (ошибка)                                |
+| -------- | ---------------------------------------- | --------------------------------------------------- |
+| 200      | Успех                                    | `{ "Code": 200, "Status": "OK" }`                   |
+| 400      | Неверный запрос (например, некорректные параметры) | `{ "Code": 400, "Message": "Недопустимый диапазон столбцов." }` |
+| 401      | Неавторизованный запрос (отсутствующий/некорректный токен) | `{ "Code": 401, "Message": "Некорректный токен доступа." }` |
+| 404      | Не найдено (рабочая книга или рабочая таблица) | `{ "Code": 404, "Message": "Файл не найден." }`     |
+| 500      | Внутренняя ошибка сервера                | `{ "Code": 500, "Message": "Непредвиденная ошибка." }` |
 
 {{< /tab >}}
 
@@ -67,9 +72,9 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ разработки. SDK абстрагирует низкоуровневые детали, позволяя вам сосредоточиться на бизнес-логике. Полный список облачных SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

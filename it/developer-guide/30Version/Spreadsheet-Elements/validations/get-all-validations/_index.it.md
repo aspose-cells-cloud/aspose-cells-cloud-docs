@@ -1,70 +1,94 @@
-﻿---
-title: Ottieni tutte le convalide del foglio di lavoro da un foglio di lavoro Excel
-second_title: Documen
-linktitle: Ottieni tutto
+---
+title: "Ottenere tutte le convalidhe del foglio da un foglio Excel"
+second_title: "Documenti"
+linktype: "it"
 type: docs
 url: /it/validations/get-all/
-keywords: Get all worksheet validations from an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'ottenimento di tutte le convalide del foglio di lavoro da un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+keywords: "Aspose.Cells Cloud, Excel, convalidhe dei fogli, API REST, ottenere tutte le convalidhe, SDK"
+description: "Recupera tutte le convalidhe dei fogli da un foglio Excel utilizzando l'API REST di Aspose.Cells Cloud. Supporta diversi SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) per un'integrazione rapida."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni tutte le convalide del foglio di lavoro da un foglio di lavoro Excel
 ---
-Questo REST API indica di ottenere tutte le convalide del foglio di lavoro su un foglio di lavoro Excel.
 
-## RSET API
+Le convalidhe dei fogli consentono di definire regole che limitano il tipo o l'intervallo di dati che possono essere inseriti nelle celle. Vengono comunemente utilizzate per garantire l'integrità dei dati, ad esempio limitando gli inserimenti a un elenco di valori, date entro un intervallo specifico o limiti numerici.
+
+Questa API REST recupera tutte le convalidhe presenti su un foglio Excel.
+
+## API REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 ```
 
-I parametri della richiesta sono:
+### **Parametri della richiesta**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome del documento.|
-| Nome foglio| corda| sentiero| Nome del foglio di lavoro.|
-| cartella| corda| domanda| Cartella documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome parametro | Tipo   | Posizione | Descrizione                                   |
+| -------------- | ------ | --------- | --------------------------------------------- |
+| name           | string | path      | Nome del documento Excel.                     |
+| sheetName      | string | path      | Nome del foglio di lavoro.                    |
+| folder         | string | query     | Percorso della cartella in cui è memorizzato il documento. |
+| storageName    | string | query     | Nome del servizio di archiviazione.           |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+**Codici di stato della risposta**
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Codice | Descrizione                              |
+|--------|------------------------------------------|
+| 200    | Richiesta riuscita – elenco delle convalidhe |
+| 401    | Non autorizzato – token non valido o mancante |
+| 404    | Non trovato – documento o foglio mancante |
+| 500    | Errore interno del server                 |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [specifica OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations) definisce un'interfaccia di programmazione pubblicamente accessibile e consente di effettuare interazioni REST direttamente da un browser web.
+
+È possibile utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells Cloud. **Prerequisito:** è necessario includere un token JWT valido nell'header `Authorization`.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
-
- 
+```json
+{
+  "validations": [
+    {
+      "name": "Validation1",
+      "type": "WholeNumber",
+      "operator": "Between",
+      "formula1": "1",
+      "formula2": "100",
+      "showErrorMessage": true,
+      "errorMessage": "Il valore deve essere compreso tra 1 e 100."
+    },
+    {
+      "name": "Validation2",
+      "type": "List",
+      "formula1": "\"Opzione1,Opzione2,Opzione3\"",
+      "showErrorMessage": true,
+      "errorMessage": "Selezionare un valore dall'elenco."
+    }
+  ]
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+## Famiglia di SDK nel cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'utilizzo di un SDK rappresenta il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli a basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice illustrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

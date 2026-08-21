@@ -1,72 +1,67 @@
-﻿---
-title: Limpia los objetos en el archivo Excel
-second_title: Documen
-linktitle: Limpiar
+---
+title: "Borrar objetos en un archivo de Excel"
+second_title: "Document"
+linktitle: "Borrar"
 type: docs
 url: /es/clear/
 aliases: [/clearobjects/]
-keywords: Clear internal objects of Excel files
-description: Aspose.Cells Cloud REST API admite la limpieza de objetos internos de archivos Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+keywords: "Aspose.Cells, Excel, Borrar objetos, API REST, SDK en la nube, Eliminar comentarios, Eliminar gráficos"
+description: "Utilice la API REST de Aspose.Cells en la nube para eliminar comentarios, gráficos, formas y otros objetos de un libro de Excel. Admite múltiples SDK y devuelve el archivo limpio en Base64."
 weight: 39
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Borrar
 ---
-Este REST API indica `clear` objeto de Excel en un archivo Excel.
 
-## RSET API
+Esta API REST borra los objetos en un archivo de Excel.
+
+## API REST
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/clearobjects
-
 ```
 
-Los parámetros de la solicitud son:
+### Parámetros de la solicitud
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| archivo| archivo| datos del formulario| Archivo para cargar|
-| tipo de objeto| cadena| consulta| filas duplicadas/columnas en blanco/filas en blanco/fórmula/contenido/estilo/gráfico/comentario/imagen/forma/objeto de lista/hipervínculo/objeto de hoja/tabla dinámica/validación/fondo|
+| Parámetro  | Tipo   | Ubicación  | Obligatorio | Valor por defecto | Valores permitidos                                                                                                                                                                                        | Descripción                                           |
+| ---------- | ------ | ---------- | ----------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| file       | archivo | form‑data  | Sí          | —                 | —                                                                                                                                                                                                         | El archivo de Excel que se va a cargar               |
+| objecttype | cadena | query      | No          | —                 | `duplicaterows`, `blankcolumns`, `blankrows`, `formula`, `content`, `style`, `chart`, `comment`, `picture`, `shape`, `listobject`, `hyperlink`, `oleobject`, `pivottable`, `validation`, `background` | Tipos de objetos a borrar (separados por comas)     |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects) define una interfaz de programación públicamente accesible y le permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube mediante cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+curl -v "https://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'xxxxx1=@xxxx1.xlsx' \
+  -F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "file1",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "file2",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
@@ -75,9 +70,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment" \
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK abstracta los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

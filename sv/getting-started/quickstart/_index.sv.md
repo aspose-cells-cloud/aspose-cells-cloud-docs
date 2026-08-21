@@ -1,90 +1,91 @@
-﻿---
-title: "Aspose.Cells Snabbstart för molnet: Skapa ett kalkylprogram på 5 minuter"
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Quickstar
-linktitle: Snabbstjärna
+---
+title: "Aspose.Cells Cloud Snabbstart: Skapa ett kalkylbladsprogram på 5 minuter"
+second_title: "Dokument"
+ArticleTitle: "Aspose.Cells Cloud Snabbstart"
+linktitle: "Snabbstart"
 type: docs
 url: /sv/quickstart/
-description: Aspose.Cells Molnet stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, hantera interna objekt och så vidare.
+description: "Aspose.Cells Cloud möjliggör skapande, konvertering, sammanfogning, delning, skyddning av Excel-filer samt objektinterna operationer bland många andra funktioner."
 weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Snabbstart
+keywords: "Aspose.Cells Cloud, Excel, Kalkylblad, API, Molntjänst SDK, REST API, PDF, CSV, JSON, Snabbstart"
 ---
-Dessa instruktioner vägleder dig genom att initialisera Aspose.Cells Cloud API och installera de nödvändiga biblioteken för kalkylbladsbearbetning.
 
-Du kan enkelt integrera funktioner för kalkylbladskonvertering, generering och redigering i program som körs på alla moderna operativsystem. De hjälper dig att läsa, redigera, sammanfoga, dela kalkylblad samt konvertera kalkylblad till olika filformat. Dessa programmeringsbibliotek låter dig arbeta med en komplett uppsättning kalkylbladskomponenter, såsom data, stilar, formler, tabeller, diagram, pivottabeller, sidhuvuden, sidfot, kommentarer, ritobjekt, hyperlänkar, vattenstämplar och mycket mer.
+Dessa instruktioner guidear dig genom att initiera Aspose.Cells Cloud API och installera de nödvändiga biblioteken för bearbetning av kalkylblad.
 
-## Skapa ett gratis konto
+Du kan enkelt integrera funktioner för konvertering, generering och redigering av kalkylblad i program som körs på vilket moderna operativsystem som helst. De möjliggör läsning, redigering, sammanfogning och delning av kalkylblad samt konvertering till olika filformat. Dessa programmeringsbibliotek låter dig arbeta med en komplett uppsättning kalkylbladskomponenter, såsom data, stilar, formler, tabeller, diagram, pivot-tabeller, sidhuvud, sidfot, kommentarer, ritobjekt, hyperlänkar, vattenstämplar och mycket mer.
 
-Aspose Cloud bygger på en tydlig och bekväm försäljningsmodell, så att du kan utvärdera och testa en produkt fullt ut innan du bestämmer dig för att köpa den.
+## Skapa ett kostnadsfritt konto
 
-Först måste du skapa ett gratis konto för att få tillgång till molninfrastrukturen:
+Aspose Cloud följer en tydlig och användarvänlig prismodell som låter dig fullständigt utvärdera och testa produkten innan du bestämmer dig för att köpa.
 
--  Gå till[Aspose Instrumentpanel](https://dashboard.aspose.cloud/#/) inloggningssida
--  För snabbare inloggning, klicka på**Logga in med GitHub** eller**Logga in med Google** knapp
-- Ange den information som krävs
+Först behöver du skapa ett kostnadsfritt konto för att få tillgång till molninfrastrukturen:
+
+- Gå till inloggningssidan för [Aspose Dashboard](https://dashboard.aspose.cloud/#/)
+- Klicka på knappen **Logga in med GitHub** eller **Logga in med Google** för snabbare inloggning
+- Fyll i den begärda informationen
 
 {{% alert style="info" %}}
 
-Grattis! Du har registrerat dig hos Aspose Cloud.
+Grattis! Du har registrerat dig framgångsrikt hos Aspose Cloud.
 
 {{% /alert %}}
 
 ## Visa och uppdatera dina kontouppgifter
 
-Därefter behöver du göra individuella justeringar av ditt konto:
+Därefter behöver du göra individuella justeringar till ditt konto:
 
--  Få åtkomst till din[Aspose Kontoinställningar](https://id.containerize.com/admin/) genom att klicka på ikonen i sidans övre högra hörn.
+- Öppna dina [Aspose-kontouppgifter](https://id.containerize.com/admin/) genom att klicka på ikonen i övre högra hörnet på sidan.
 
-![instrumentpanel.png](dashboard.png)
+![dashboard.png](dashboard.png)
 
--  Välj**Kontoinställningar** alternativet i menyraden. Kontrollera dina inställningar och klicka på**Spara ändringar** knappen för att bekräfta.
+- Välj **Kontouppgifter** från menyraden. Granska dina inställningar och klicka på **Spara ändringar** för att bekräfta.
 
-![inställningar.png](settings.png)
+![settings.png](settings.png)
 
-## Hämta dina säkerhetsuppgifter (klient-ID och hemlighet)
+## Hämta dina säkerhetsuppgifter (Client Id & Secret)
 
-Aspose lägger stor vikt vid säkerhetsfrågor. Vi använder JWT-token för autentisering och end-to-end HTTPS-kryptering för att säkra alla klient-server-interaktioner.
+Aspose tar säkerhetsfrågor på allvar. Vi använder JWT-token för autentisering samt end-to-end HTTPS-kryptering för att säkra alla klient-tjänst-interaktioner.
 
- En applikation är en uppsättning unika API-inloggningsuppgifter —**Klient-ID** och**Klienthemlighet** Du kan använda dem för att autentisera när du ringer vårt moln API. I de flesta fall behöver du bara en enda applikation. I vissa avancerade scenarier kanske du vill registrera och använda flera applikationer med separata**Klient-ID och hemlighet** referenser.
+En applikation är en uppsättning unika API-uppgifter — **Client Id** och **Client Secret**. Du kan använda dem för att autentisera vid anrop till vårt moln-API. I de flesta fall behöver du bara en enda applikation. I vissa avancerade scenerier kan du vilja registrera och använda flera applikationer med separata **Client Id & Secret**-uppgifter.
 
-För att få tillgång till information om dina applikationer, vänligen utför följande steg:
+För att få information om dina applikationer, följ dessa steg:
 
-1.  Logga in på[Aspose Instrumentpanel](https://dashboard.aspose.cloud/#/)
- 2. Klicka på vänster sida av sidan[Applikationer](https://dashboard.aspose.cloud/applications) flik.
+1. Logga in på [Aspose Dashboard](https://dashboard.aspose.cloud/#/)
+2. Klicka på fliken [Applikationer](https://dashboard.aspose.cloud/applications) till vänster på sidan.
 
-![applikationer.png](applications.png)
+![applications.png](applications.png)
 
-3. Scrolla ner till botten av sidan, där du hittar knappen Skapa ny applikation. Klicka på den för att skapa den.
+3. Bläddra ner till botten av sidan; du hittar en knapp **Skapa ny applikation**. Klicka på den för att skapa en ny applikation.
 
-![skapanyapplikation.png](createnewapplication.png)
+![createnewapplication.png](createnewapplication.png)
 
-4. Gå till skapandesidan, välj och ange namn, beskrivning och lagringsadress som du vill skapa och klicka på spara-knappen för att återgå till föregående sida efter att skapandet har lyckats.
+4. På skapandeposten anger du namn, beskrivning och lagringsadress som du vill, och klicka sedan på **Spara**-knappen för att återgå till föregående sida efter framgångsrik skapande.
 
-![applikationsinfo.png](applicationinfo.png)
+![applicationinfo.png](applicationinfo.png)
 
-5. Scrolla ner till botten av sidan. Du kommer att se rutan Programinformation som du just skapade. Klicka på den för att visa och uppdatera dina säkerhetsuppgifter.
+5. Bläddra ner till botten av sidan; du ser just nu skapade informationsrutan för applikationen. Klicka på den för att visa och uppdatera dina säkerhetsuppgifter.
 
 ![firstapp.png](firstapp.png)
 
 {{% alert style="info" %}}
 
-Grattis! Du har nu fått dina säkerhetsuppgifter för att autentisera Aspose.Cells API-samtal.
+Grattis! Du har framgångsrikt erhållit dina säkerhetsuppgifter för att autentisera Aspose.Cells API-anrop.
 
 {{% /alert %}}
 
 ## Välj och installera SDK
 
- Ta en stund för att bekanta dig med ett brett utbud av Aspose.Cells Cloud-produkter för att få en bättre förståelse för dina möjligheter. Dessa programvaruprodukter är byggda kring högpresterande[Moln API](https://apireference.aspose.com/), tillgänglig dygnet runt.
+Ta en stund och bekanta dig med Aspose.Cells Cloud-produkternas breda utbud för att bättre förstå dina möjligheter. Dessa programvaruprodukter är byggda kring en högpresterande [moln-API](https://apireference.aspose.com/), tillgänglig dygnet runt.
 
- För effektiv användning av Cloud API tillhandahåller vi en familj av kraftfulla[Cloud SDK:er](https://products.aspose.cloud/cells/family)för nästan alla större operativsystem (Windows, macOS, Linux, Android) och populära programmeringsspråk, inklusive[Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Rubin](https://products.aspose.cloud/cells/ruby) och[Snabb](https://products.aspose.cloud/cells/swift).
+För effektiv användning av moln-API tillhandahåller vi en familj kraftfulla [moln-SDK:er](https://products.aspose.cloud/cells/family) för nästan alla större operativsystem (Windows, macOS, Linux, Android) och populära programmeringsspråk, inklusive [Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Ruby](https://products.aspose.cloud/cells/ruby) och [Swift](https://products.aspose.cloud/cells/swift).
 
- Alla ovanstående SDK:er finns på[GitHub](https://github.com/aspose-cells-cloud/)Varje arkiv innehåller ett brett utbud av kodexempel för att illustrera dess användning.
+Alla ovanstående SDK:er är värdade på [GitHub](https://github.com/aspose-cells-cloud/). Varje förråd innehåller ett stort antal kodexempel för att illustrera användning.
 
 ## Kontrollera utvecklardokumentationen och kodexemplen
 
- Nu är ditt konto helt konfigurerat och utvecklarmiljön är installerad. Du kan börja skriva kod med det valda SDK:t. Se[Utvecklarguide](https://docs.aspose.cloud/cells/developer-guide/) för information om hur du enkelt använder molnet, ring API.
+Nu är ditt konto helt konfigurerat och utvecklarmiljön installerad. Du kan börja skriva kod med den valda SDK:n. Se [Utvecklarguiden](https://docs.aspose.cloud/cells/developer-guide/) för information om hur du använder moln-API:et enkelt.
 
-t.ex. konvertera en arbetsbok till andra format.
+Exempel: Konvertera ett arbetsbok till andra format.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -138,6 +139,6 @@ t.ex. konvertera en arbetsbok till andra format.
 
 {{< /tabs >}}
 
-## Be om hjälp, om det behövs
+## Be om hjälp vid behov
 
- Beskriv gärna dina problem och ställ frågor på vår[Molnforum](https://forum.aspose.cloud/c/cells/7)Aspose tekniska supportteam finns redo att hjälpa dig. Observera att Aspose inte erbjuder teknisk support via telefon. Telefonsupport är endast tillgänglig för frågor om försäljning och köp.
+Var god och beskriv dina problem och ställ frågor på våra [moln-forum](https://forum.aspose.cloud/c/cells/7). Asposes tekniska supportteam är redo att hjälpa dig. Observera att Aspose inte tillhandahåller telefonbaserad teknisk support; telefonstöd finns endast för frågor kring försäljning och inköp.

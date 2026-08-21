@@ -1,246 +1,280 @@
-﻿---
-title: البحث عن النص من الملف Excel
-second_title: Documen
-linktitle: البحث دون استخدام التخزين
-type: docs
-url: /ar/search/
-aliases: [/search-without-using-storage/,/search-without-storage/]
-keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: يدعم Cloud REST Aspose.Cells API العثور على نص من ملفات Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وSwift.
-weight: 50
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، البحث عن نص من ملفات Excel
 ---
-يشير هذا REST API إلى النص `search` من الملفات Excel.
-`## RSET API
+title: "البحث عن نص في ملفات Excel – واجهة برمجة التطبيقات السحابية Aspose.Cells"
+description: "ابحث عن نص محدد في ملفات Excel (XLS وXLSX وXLSM وXLSB) وملفات OpenDocument Spreadsheet (ODS) باستخدام واجهة برمجة التطبيقات السحابية Aspose.Cells. تتضمن تفاصيل الطلب وأمثلة باستخدام cURL وSDKs، بالإضافة إلى معالجة الأخطاء."
+keywords: "Aspose.Cells، Excel، بحث، API، REST"
+type: docs
+url: /cells/search/
+aliases:
+  - /search/
+  - /search-without-using-storage/
+  - /search-without-storage/
+weight: 50
+---
+
+# البحث عن نص في ملفات Excel – واجهة برمجة التطبيقات السحابية Aspose.Cells
+
+## نظرة عامة
+تقدم Aspose.Cells Cloud نقطة نهاية **POST** تتيح لك البحث عن سلسلة نصية محددة داخل كتب عمل Excel (XLS وXLSX وXLSM وXLSB) وملفات OpenDocument Spreadsheet (ODS). وتُعيد الواجهة الخلوية كل خلية تحتوي على النص المطلوب مع رابط يُشير إلى ورقة العمل التي تم العثور على التطابق فيها.
+
+> **حالات الاستخدام**  
+> - التحقق من وجود قيمة محددة في تقرير قبل معالجته بشكل إضافي.  
+> - بناء أداة سريعة للبحث والاستبدال (find-and-replace) تقوم أولاً بإدراج جميع الحالات.  
+> - إنشاء فهرس للمصطلحات المفتاحية عبر دفعة من جداول البيانات.
+
+---
+
+## المتطلبات الأساسية
+| المتطلب | التفاصيل |
+|---------|----------|
+| **المصادقة** | رمز JWT يُستحصل عبر تدفق OAuth في Aspose Cloud. يجب أن يتضمن الرمز النطاق **Cells**. |
+| **التنسيقات المدعومة** | XLS وXLSX وXLSM وXLSB وODS |
+| **أقصى حجم للملف** | 150 ميغابايت (مضغوط). الملفات الأكبر تُعيد الرمز **413 Payload Too Large**. |
+| **الرؤوس المطلوبة** | `Authorization: Bearer <jwt-token>`  <br> `Accept: application/json` |
+| **الصلاحيات** | يجب أن يمتلك الرمز صلاحية *قراءة* على وحدة التخزين المستهدفة (عند استخدام وحدة تخزين عن بُعد) – ولا يُطلب هذا عند رفع الملف كـ `multipart/form-data`. |
+
+*نصيحة:* استخدم نقطة النهاية **/connect/token** لتوليد رمز JWT. راجع [دليل المصادقة](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) للحصول على التفاصيل.
+
+---
+
+## نقطة النهاية
+
+| العنصر | القيمة |
+|--------|--------|
+| **طريقة HTTP** | `POST` |
+| **الرابط** | `https://api.aspose.cloud/v3.0/cells/search` |
+| **الغرض** | البحث عن نص محدد داخل كتاب عمل Excel تم رفعه. |
+| **الأمان** | رمز JWT (Bearer) – راجع *المتطلبات الأساسية* أعلاه. |
+
+---
+
+### **الأمان والمصادقة**
+
+تُعد واجهات برمجة التطبيقات السحابية Aspose.Cells آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">المصادقة باستخدام رمز JWT</a>.
+
+## معلمات الطلب
+
+| الاسم | النوع | الموقع | الإلزام | الوصف |
+|------|-------|--------|---------|--------|
+| `file` | **ملف** | `formData` (multipart) | **نعم** | ملف جدول البيانات المراد رفعه. |
+| `text` | **نص** | سلسلة الاستعلام | **نعم** | السلسلة النصية المراد البحث عنها. |
+| `password` | **نص** | سلسلة الاستعلام | لا | كلمة المرور لفتح كتاب عمل محمي، إن لزم الأمر. |
+| `sheetname` | **نص** | سلسلة الاستعلام | لا | اسم ورقة العمل التي تُحدُّ فيها عملية البحث. إن لم يُحدَّد، تُبحث جميع أوراق العمل. |
+| `checkExcelRestriction` | **منطقي** | سلسلة الاستعلام | لا (الافتراضي: `true`) | عند `true`، تتحقق الواجهة من القيود الخاصة بـ Excel (مثل الخلايا المقروءة فقط) قبل البحث. |
+
+---
+
+## مثال على الطلب (cURL)
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/search
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/search?text=Invoice&sheetname=Sheet1" \
+  -X POST \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>" \
+  -F "file=@InvoiceReport.xlsx"
 ```
 
-The request parameters are:
+*استبدل `<jwt-token>` برمز صالح وضبط معلمات الاستعلام حسب الحاجة.*
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| file | file | formData | File to upload |
-| text | string | query |   |
-| password | string | query |   |
-| sheetname | string | query |   |
+---
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## الاستجابة الناجحة
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+**HTTP 200 – نجح البحث؛ تحتوي الاستجابة على عناصر النص التي تم العثور عليها.**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/search?text=1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'  
+```json
+{
+  "Status": "OK",
+  "Code": 200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "Text": "Invoice #12345",
+        "link": {
+          "Href": "InvoiceReport.xlsx/worksheets/Sheet1",
+          "Rel": "parent",
+          "Title": "Sheet1",
+          "Type": "string"
+        }
+      },
+      {
+        "Text": "Invoice #12346",
+        "link": {
+          "Href": "InvoiceReport.xlsx/worksheets/Sheet1",
+          "Rel": "parent",
+          "Title": "Sheet1",
+          "Type": "string"
+        }
+      }
+    ]
+  }
+}
 ```
 
-{{< /tab >}}
+### حقول الاستجابة
 
-{{< tab tabNum="2" >}}
+| الحقل | النوع | الوصف |
+|-------|-------|--------|
+| `Status` | نص | حالة الطلب العامة (`OK` للنجاح). |
+| `Code` | عدد صحيح | رمز حالة HTTP (200). |
+| `TextItems.link` | كائن | رابط هايبرميديا لمجموعة الموارد. |
+| `TextItems.TextItemList` | مصفوفة | قائمة التطابقات. كل عنصر يحتوي على: |
+| `Text` | نص | قيمة الخلية التي طابقت نص البحث. |
+| `link` | كائن | رابط تشعبي إلى ورقة العمل التي تم العثور على التطابق فيها (`Href` يشير إلى `Workbook/worksheets/SheetName`). |
 
-```bash
-[{
- "Text": "12/31/1899 10:10:00 AM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 11:10:00 AM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 12:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 1:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 2:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 3:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 4:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 5:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 6:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 7:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 8:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 9:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 10:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 11:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}]
- 
+---
+
+## استجابات الأخطاء
+
+| كود HTTP | المعنى | السبب الشائع | مثال على الجسم |
+|-----------|---------|---------------|----------------|
+| **400** | طلب غير صحيح | معلمات مطلوبة مفقودة، أو نوع ملف غير مدعوم، أو قيم استعلام غير صالحة. | `{ "Status":"Error","Code":400,"Message":"The 'text' query parameter is required." }` |
+| **401** | غير مصادق عليه | رمز JWT مفقود أو غير صالح. | `{ "Status":"Error","Code":401,"Message":"Invalid or expired access token." }` |
+| **413** | حملة مفرطة الحجم | تجاوز حجم الملف المرفوع الحد المسموح به البالغ 150 ميغابايت. | `{ "Status":"Error","Code":413,"Message":"File size exceeds the allowed limit." }` |
+| **500** | خطأ داخلي في الخادم | مشكلة غير متوقعة من جانب الخادم. | `{ "Status":"Error","Code":500,"Message":"An unexpected error occurred." }` |
+
+---
+
+## أمثلة باستخدام SDKs
+
+فيما يلي مقاطع كود مبسطة لعملية **PostSearch** باستخدام واجهات برمجة التطبيقات الرسمية لـ Aspose.Cells Cloud SDKs. استبدل `YOUR_JWT_TOKEN` ومسار الملف بقيمك الخاصة.
+
+### C# (.NET)
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        var config = new Configuration
+        {
+            AccessToken = "YOUR_JWT_TOKEN",
+            BaseUrl = "https://api.aspose.cloud"
+        };
+        var cellsApi = new CellsApi(config);
+
+        using var stream = File.OpenRead("InvoiceReport.xlsx");
+        var result = cellsApi.PostSearch(
+            file: stream,
+            text: "Invoice",
+            sheetname: "Sheet1",
+            password: null,
+            checkExcelRestriction: true
+        );
+
+        foreach (var item in result.TextItems.TextItemList)
+        {
+            Console.WriteLine($"{item.Text}  ->  {item.Link.Href}");
+        }
+    }
+}
 ```
 
-{{< /tab >}}
+### Java
 
-{{< /tabs >}}
+```java
+import com.aspose.cells.cloud.sdk.api.CellsApi;
+import com.aspose.cells.cloud.sdk.model.*;
+import java.io.File;
 
-## Cloud SDK Family
+public class PostSearchDemo {
+    public static void main(String[] args) throws Exception {
+        CellsApi api = new CellsApi("YOUR_JWT_TOKEN");
+        File file = new File("InvoiceReport.xlsx");
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+        TextItemsResponse response = api.postSearch(
+                file,
+                "Invoice",
+                null,          // password
+                "Sheet1",      // sheetname
+                true           // checkExcelRestriction
+        );
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+        response.getTextItems().getTextItemList()
+                .forEach(item -> System.out.println(item.getText() + " -> " + item.getLink().getHref()));
+    }
+}
+```
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+### Python
 
-{{< tab tabNum="1" >}}
+```python
+import asposecellscloudsdk
+from asposecellscloudsdk import CellsApi, ApiException, Configuration
+from asposecellscloudsdk.models import TextItemsResponse
+import pathlib
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostSearch.cs" >}}
+config = Configuration()
+config.access_token = "YOUR_JWT_TOKEN"
+config.host = "https://api.aspose.cloud"
 
-{{< /tab >}}
+api_instance = CellsApi(configuration=config)
 
-{{< tab tabNum="2" >}}
+file_path = pathlib.Path("InvoiceReport.xlsx")
+with open(file_path, "rb") as f:
+    result: TextItemsResponse = api_instance.post_search(
+        file=f,
+        text="Invoice",
+        password=None,
+        sheetname="Sheet1",
+        check_excel_restriction=True
+    )
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostSearch.java" >}}
+for item in result.text_items.text_item_list:
+    print(f"{item.text} -> {item.link.href}")
+```
 
-{{< /tab >}}
+### Node.js (TypeScript)
 
-{{< tab tabNum="3" >}}
+```typescript
+import { CellsApi, Configuration } from "@asposecells-cloud/sdk";
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostSearch.php" >}}
+const config = new Configuration({
+    accessToken: "YOUR_JWT_TOKEN",
+    basePath: "https://api.aspose.cloud"
+});
 
-{{< /tab >}}
+const api = new CellsApi(config);
 
-{{< tab tabNum="4" >}}
+api.postSearch({
+    file: fs.createReadStream("InvoiceReport.xlsx"),
+    text: "Invoice",
+    sheetname: "Sheet1",
+    checkExcelRestriction: true
+}).then(response => {
+    response.textItems?.textItemList?.forEach(item => {
+        console.log(`${item.text} -> ${item.link?.href}`);
+    });
+}).catch(err => console.error(err));
+```
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostSearch.rb" >}}
+*(تتوفر SDKs للغات PHP وRuby وGo وPerl في [مستودع Aspose.Cells Cloud على GitHub](https://github.com/aspose-cells-cloud).)*
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="5" >}}
+## ملاحظات إضافية
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostSearch.ts" >}}
+- يُعد **`checkExcelRestriction`** افتراضيًا `true`. عيّنه على `false` فقط عندما تكون متأكدًا من أن كتاب العمل لا يحتوي على خلايا محمية قد تعيق عملية البحث.
+- تُعيد الواجهة **روابط هايبرميديا** (`Href`) يمكن استخدامها مع نقاط نهاية Aspose.Cells Cloud الأخرى (مثل تنزيل ورقة العمل أو استرجاع تنسيق الخلية).
+- عند البحث في كتب عمل كبيرة، فكّر في تضييق النطاق باستخدام معلمة `sheetname` لتحسين زمن الاستجابة.
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="6" >}}
+## روابط ذات صلة
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostSearch.py" >}}
+- **دليل المصادقة** – <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>
+- **مواصفات OpenAPI لـ PostSearch** – <https://apireference.aspose.cloud/cells/#/LightCells/PostSearch>
+- **واجهات برمجة التطبيقات SDK لـ Aspose.Cells Cloud** – <https://github.com/aspose-cells-cloud>
+- **الحدود المفروضة ومعدلات الحصص** – <https://docs.aspose.cloud/total/getting-started/limits/>
 
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostSearch.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostSearch.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
-`
+---

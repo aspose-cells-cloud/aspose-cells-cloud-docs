@@ -1,76 +1,101 @@
-﻿---
-title: أعمدة ملائمة تلقائيًا على ملف Excel
-second_title: Documen
-linktitle: عمود
-type: docs
-url: /ar/autofit-columns-on-an-excel-file/
-aliases: [/auto-fit-columns-in-excel-workbooks,/autofit-columns-in-excel-workbooks/,/columns/autofit/,/workbook/autofit/columns/]
-keywords: Autofit columns on an Excel workboo
-description: يدعم Cloud REST Aspose.Cells الضبط التلقائي للأعمدة في مصنف Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 90
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، ضبط تلقائي للأعمدة في مصنف Excel
 ---
-يشير هذا REST API إلى ملاءمة الأعمدة تلقائيًا في مصنف Excel.
+title: "ضبط تلقائي لأعمدة في ملف إكسل"
+second_title: "مستند"
+linktype: "أعمدة"
+type: docs
+url: /autofit-columns-on-an-excel-file/
+aliases:
+  [
+    /auto-fit-columns-in-excel-workbooks,
+    /autofit-columns-in-excel-workbooks/,
+    /columns/autofit/,
+    /workbook/autofit/columns/,
+  ]
+keywords: "ضبط تلقائي للأعمدة، إكسل، Aspose.Cells Cloud، REST API، SDK، cURL، API"
+description: "تعرّف على كيفية استخدام واجهة Aspose.Cells Cloud REST API لضبط الأعمدة تلقائيًا في ملف عمل إكسل. يشمل تفاصيل الطلب، مثالًا بـ cURL، وأكوادًا لعينات SDK بلغات برمجية متعددة."
+weight: 90
+---
 
-## RSET API
+تدعم هذه الواجهة البرمجية (REST API) إجراء الضبط التلقائي للأعمدة في ملف عمل إكسل.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
- 
+## واجهة PostAutofitWorkbookColumns
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
 ```
 
-معلمات الطلب هي:
+معطيات الطلب هي:
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-|[خيارات التجهيز التلقائي](/cells/ar/auto-fitter-options/) || جسم| خيارات التركيب التلقائي.|
-| عمود البداية| عدد صحيح| استفسار| عمود البداية.|
-| عمود النهاية| عدد صحيح| استفسار| العمود النهائي.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعطى              | النوع    | الموقع | الوصف                                              |
+| ---------------------- | -------- | ------ | -------------------------------------------------- |
+| **name**               | سلسلة نصية | مسار   | اسم ملف ملف العمل (Workbook).                     |
+| **autoFitterOptions**  | كائن     | جسم الطلب | خيارات تحكم في سلوك الضبط التلقائي.               |
+| **startColumn**        | عدد صحيح | استعلام | الفهرس (الصفر-الأساسي) للعمود الأول المراد ضبطه تلقائيًا. |
+| **endColumn**          | عدد صحيح | استعلام | الفهرس (الصفر-الأساسي) للعمود الأخير المراد ضبطه تلقائيًا. |
+| **folder**             | سلسلة نصية | استعلام | المجلد الذي يحتوي على ملف العمل.                 |
+| **storageName**        | سلسلة نصية | استعلام | اسم خدمة التخزين المستخدمة.                       |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+يُعرّف [مواصفة OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns){:rel="noopener noreferrer"} واجهة برمجة قابلة للوصول العام، ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح ويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات Aspose.Cells عبر الويب. يُظهر المثال التالي كيفية استدعاء واجهة Cloud API باستخدام cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -d '{"AutoFitMergedCells":true, "IgnoreHidden":true}'
- 
 ```
+
+> **ملاحظة:** استخدم دائمًا نقطة النهاية HTTPS في بيئة الإنتاج، واحتفظ برمز JWT الخاص بك في سرية تامة.
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### المتطلبات المسبقة
+قبل تنفيذ هذه العملية، تأكد من امتلاك مفتاح API صالح لـ Aspose Cloud، ورمز JWT تم توليده، ووجود ملف العمل المستهدف مسبقًا في موقع التخزين المحدد.
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | الوصف                                              |
+|------|-----------------------------|----------------------------------------------------|
+| 200  | ناجح (OK)                   | تمت تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صالح (Bad Request) | معطيات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم). |
+| 401  | غير مصرّح (Unauthorized)    | رمز JWT غير صالح أو مفقود.                         |
+| 413  | حجم البيانات كبير جدًا (Payload Too Large) | تجاوز حجم الملف المرفوع الحد المسموح به.         |
+| 500  | خطأ داخلي في الخادم (Internal Server Error) | حدث خطأ غير متوقع في الخادم.                      |
+
+يمكن أن تُعيد الواجهة البرمجية رموز الحالة التالية:
+
+| الرمز | الوصف |
+|------|-------|
+| 200  | نجاح – تم ضبط الأعمدة تلقائيًا |
+| 400  | طلب غير صالح – معطيات مفقودة أو غير صحيحة |
+| 401  | غير مصرّح – رمز JWT غير صالح أو منتهٍ |
+| 500  | خطأ في الخادم – فشل في المعالجة الداخلية |
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يعتبر استخدام SDK الطريقة الأكثر كفاءة لتسريع عملية التطوير، إذ يتولى SDK إدارة التفاصيل من المستوى المنخفض، ما يتيح لك التركيز على المنطق الخاص بمشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud){:rel="noopener noreferrer"} للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر الويب باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

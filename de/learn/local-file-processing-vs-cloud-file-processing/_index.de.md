@@ -1,85 +1,137 @@
-﻿---
-title: Was ist der Unterschied zwischen lokaler Dateiverarbeitung und Cloud-Dateiverarbeitung in Aspose.Cells Cloud
-second_title: Documen
-ArticleTitle: What is the difference between local file processing and cloud file processing in Aspose.Cells Cloud
-linktitle: Lokale Dateiverarbeitung vs. Cloud-Dateiverarbeitung
-type: docs
-url: /de/learn/local-file-processing-vs-cloud-file-processing/
-description: Was ist der Unterschied zwischen lokaler Dateiverarbeitung und Cloud-Dateiverarbeitung? Lokale Dateiverarbeitung und Cloud-Dateiverarbeitung sind zwei grundlegend unterschiedliche Datenverwaltungsparadigmen mit erheblichen Unterschieden in Speicherinfrastruktur, Geschäftsabwicklung, Zugriff, Kostenstruktur, Sicherheit und anwendbaren Szenarien.
-weight: 10
-kwords: Excel Cloud API, REST, Tabellenkalkulation, PDF, CSV, Json, Markdown, lokale Dateiverarbeitung vs. Cloud-Dateiverarbeitung
 ---
-Lokale und Cloud-Dateiverarbeitung sind unterschiedliche Datenverwaltungsparadigmen mit erheblichen Unterschieden in der Dateispeicherinfrastruktur, der Geschäftsabwicklung, dem Zugriff, der Kostenstruktur, der Sicherheit und den anwendbaren Szenarien. Die Hauptunterschiede zwischen den beiden sind:
+title: "Was ist der Unterschied zwischen lokaler Dateiverarbeitung und Cloud-Dateiverarbeitung in Aspose.Cells Cloud?"
+second_title: "Dokument"
+ArticleTitle: "Was ist der Unterschied zwischen lokaler Dateiverarbeitung und Cloud-Dateiverarbeitung in Aspose.Cells Cloud?"
+linktype: "docs"
+url: /learn/local-file-processing-vs-cloud-file-processing/
+description: "Vergleichen Sie die lokale und Cloud-basierte Dateiverarbeitung in Aspose.Cells Cloud hinsichtlich Speicher, Kosten, Sicherheit und typischer Anwendungsfälle. Ermitteln Sie, welche Herangehensweise am besten zu Ihrem Arbeitsablauf passt."
+keywords: "Aspose.Cells Cloud, lokale Dateiverarbeitung, Cloud-Dateiverarbeitung, Tabellenkalkulationskonvertierung, API"
+weight: 10
+---
 
-## 1. Dateispeicherort und Infrastruktur
+Lokale Dateiverarbeitung und Cloud-Dateiverarbeitung sind unterschiedliche Datenmanagementansätze mit wesentlichen Unterschieden hinsichtlich Speicherinfrastruktur, Geschäftsverarbeitung, Zugriff, Kostenstruktur, Sicherheit und geeigneter Anwendungsfälle. Die wichtigsten Unterschiede zwischen beiden sind:
+
+**Voraussetzungen:** Stellen Sie vor der Verwendung der Beispiele sicher, dass Sie über ein gültiges Aspose.Cells Cloud-Konto verfügen, die neueste SDK-Version installiert haben und Ihre Client-ID sowie Client-Secret für die Authentifizierung bereit haben.
+
+## 1. Speicherort und Infrastruktur der Dateien
 
 - Lokale Datei:
 
- Dateien werden auf physischen Geräten gespeichert, die dem Benutzer gehören oder von ihm verwaltet werden, z. B. auf der Festplatte eines PCs, auf internen Servern oder auf externen mobilen Festplatten. Auf diese Geräte kann direkt über den Cells Cloud-Client zugegriffen werden.
- - Der Kunde hat die vollständige physische Kontrolle über die Hardware.
- - Der Kauf, die Wartung, die Aktualisierung und die Außerbetriebnahme der Infrastruktur liegen in der Verantwortung des Benutzers oder seiner Organisation.
+  - Dateien werden auf physischen Geräten gespeichert, die vom Nutzer besessen oder verwaltet werden, z. B. auf der Festplatte eines persönlichen Computers, internen Servern oder externen Festplatten. **Sie können den Cells-Cloud-Client direkt auf eine Datei verweisen lassen, die sich auf einem beliebigen lokalen Speichergerät befindet.**
+  - Der Kunde hat die vollständige physische Kontrolle über die Hardware.
+  - Der Einkauf, die Wartung, Aktualisierung und Außerbetriebnahme der Infrastruktur liegt in der Verantwortung des Nutzers oder seiner Organisation.
 
-```Python
+```python
 from asposecellscloud.apis.cells_api import CellsApi
 from asposecellscloud.requests import ConvertSpreadsheetRequest
-# Initialize CellsApi
-api  = CellsApi('YourCellsCloudClientId','YourCellsCloudClientSecret')
-# Convert Local Excel file to PDF
-api.convert_spreadsheet( ConvertSpreadsheetRequest( 'D:\\Data\\BookSales.xlsx', "pdf" ) , local_outpath = "BookSales.pdf")
 
+# CellsApi initialisieren
+api = CellsApi('IhreCellsCloudClientId', 'IhreCellsCloudClientSecret')
+
+# Lokale Excel-Datei in PDF konvertieren
+api.convert_spreadsheet(
+    ConvertSpreadsheetRequest('D:\\Data\\BookSales.xlsx', "pdf"),
+    local_outpath="BookSales.pdf"
+)
 ```
+
+**API-Referenz – Konvertieren einer Tabellenkalkulation**
+
+| Methode                 | HTTP-Verb | Endpunkt             | Parameter (Schlüssel)                                  | Antworten                      |
+|-------------------------|-----------|----------------------|--------------------------------------------------------|--------------------------------|
+| `convert_spreadsheet`   | POST      | `/cells/convert`     | `inputFile` – Pfad zur Quelldatei<br>`format` – Zielformat (z. B. `pdf`) | `200 OK` – Konvertierung erfolgreich<br>`400 Bad Request` – ungültige Parameter<br>`401 Unauthorized` – Authentifizierungsfehler |
 
 - Cloud-Datei:
 
- - Dateien werden in entfernten Rechenzentren gespeichert, die von Drittanbietern von Cloud-Diensten betrieben werden (Aspose Cloud-Speicher, Dropbox, AWS, Google Cloud, Microsoft Azure). AWS, Dropbox, Google Cloud und Microsoft Azure können alle Personen mit Aspose Cloud-Speicher verbinden.
- - Kunden greifen über das Internet auf diese Dateien zu, unabhängig vom Standort und der Wartung der zugrunde liegenden Hardware.
- - Die Infrastruktur liegt in der Verantwortung des Cloud-Service-Anbieters und wird von den Benutzern nach Bedarf genutzt.
+  - Dateien werden in entfernten Rechenzentren gespeichert, die von externen Cloud-Dienstanbietern betrieben werden (Aspose Cloud-Speicher, Dropbox, AWS, Google Cloud, Microsoft Azure). **AWS, Dropbox, Google Cloud und Microsoft Azure können alle mit dem Aspose-Cloud-Speicher verbunden werden.**
+  - Kunden greifen auf diese Dateien über das Internet zu, unabhängig vom Standort und der Wartung der zugrunde liegenden Hardware.
+  - Die Infrastruktur liegt in der Verantwortung des Cloud-Dienstanbieters; Nutzer nutzen sie bedarfsgesteuert.
 
-```Python
+```python
 from asposecellscloud.apis.cells_api import CellsApi
-from asposecellscloud.requests import UploadFileRequest, ExportSpreadsheetAsFormatRequest, SaveSpreadsheetAsRequest
-# Initialize CellsApi
-api  = CellsApi('YourCellsCloudClientId','YourCellsCloudClientSecret')
-# Upload local file to cloud storage
-api.upload_file( UploadFileRequest("D:\\Data\\EmployeeSalesSummary.xlsx", "PythonSDK/EmployeeSalesSummary.xlsx"))
-# Export cloud file to specified format file to local storage
-api.export_spreadsheet_as_format( ExportSpreadsheetAsFormatRequest( "EmployeeSalesSummary.xlsx","pdf" ,folder= "PythonSDK"  ) , local_outpath="D:\\DataOutput\\EmployeeSalesSummary.pdf" )
-# Or Save an Excel file of Cells Cloud as another format file of Cells Cloud. 
-api.save_spreadsheet_as( SaveSpreadsheetAsRequest (  "EmployeeSalesSummary.xlsx","pdf" ,folder= RemoteFolder ) )
+from asposecellscloud.requests import (
+    UploadFileRequest,
+    ExportSpreadsheetAsFormatRequest,
+    SaveSpreadsheet_asRequest,
+)
 
+# CellsApi initialisieren
+api = CellsApi('IhreCellsCloudClientId', 'IhreCellsCloudClientSecret')
+
+# Lokale Datei in Cloud-Speicher hochladen
+api.upload_file(
+    UploadFileRequest(
+        "D:\\Data\\EmployeeSalesSummary.xlsx",
+        "PythonSDK/EmployeeSalesSummary.xlsx"
+    )
+)
+
+# Cloud-Datei in ein angegebenes Format exportieren und lokal speichern
+api.export_spreadsheet_as_format(
+    ExportSpreadsheetAsFormatRequest(
+        "EmployeeSalesSummary.xlsx",
+        "pdf",
+        folder="PythonSDK"
+    ),
+    local_outpath="D:\\DataOutput\\EmployeeSalesSummary.pdf"
+)
+
+# Remoten Ordner definieren (ggf. durch Ihren tatsächlichen Ordnernamen ersetzen)
+RemoteFolder = "PythonSDK"
+
+# Excel-Datei in Aspose.Cells Cloud als ein anderes Format in Aspose.Cells Cloud speichern
+api.save_spreadsheet_as(
+    SaveSpreadsheetAsRequest(
+        "EmployeeSalesSummary.xlsx",
+        "pdf",
+        folder=RemoteFolder
+    )
+)
 ```
 
-## 2. Geschäftsabwicklung
+**API-Referenz – Cloud-Dateioperationen**
 
-Unabhängig von der lokalen Dateiverarbeitung oder der Cloud-Dateiverarbeitung werden alle Geschäftsprozesse auf dem Cloud-Server Cells abgeschlossen.**daher ist Internetunterstützung erforderlich**.
+| Methode                        | HTTP-Verb | Endpunkt                       | Parameter (Schlüssel)                                                                                   | Antworten                                   |
+|--------------------------------|-----------|--------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| `upload_file`                  | PUT       | `/cells/storage/file`          | `localPath` – lokaler Dateipfad<br>`remotePath` – Zielort im Cloud-Speicher                           | `200 OK` – Upload erfolgreich<br>`401 Unauthorized` |
+| `export_spreadsheet_as_format` | POST      | `/cells/{name}/export`         | `name` – Cloud-Dateiname<br>`format` – Zielformat (z. B. `pdf`)<br>`folder` – optionaler Ordner        | `200 OK` – Export erfolgreich<br>`400 Bad Request` |
+| `save_spreadsheet_as`          | POST      | `/cells/{name}/saveas`         | `name` – Cloud-Dateiname<br>`format` – Zielformat<br>`folder` – Zielordner                             | `200 OK` – Speichern erfolgreich<br>`401 Unauthorized` |
+
+## 2. Geschäftsverarbeitung
+
+Unabhängig davon, ob die Verarbeitung lokal oder in der Cloud erfolgt, wird die gesamte Geschäftsverarbeitung auf dem Cells-Cloud-Server durchgeführt; **daher ist eine Internetverbindung erforderlich**.
 
 ## 3. Datenzugriff
 
 - Lokale Dateiverarbeitung:
 
- - Der Zugriff ist normalerweise auf das Gerät selbst beschränkt.
- - Die Zusammenarbeit mehrerer Personen ist schwierig.
- - Unannehmlichkeiten beim Wechseln der Ausrüstung oder des Standorts.
+  - Der Zugriff ist normalerweise auf das jeweilige Gerät selbst beschränkt.
+  - Eine Zusammenarbeit mehrerer Personen ist schwierig.
+  - Unbequem bei Geräte- oder Standortwechsel.
 
 - Cloud-Dateiverarbeitung:
 
- - Greifen Sie jederzeit und überall von jedem Gerät (Computer, Telefon, Tablet) auf Dateien zu, solange Sie über eine Internetverbindung verfügen.
- - Natürliche Unterstützung für die Echtzeit-Zusammenarbeit mehrerer Personen, mehrere Benutzer können gleichzeitig dasselbe Dokument bearbeiten, das System übernimmt automatisch die Versionskontrolle.
- - Hohe Mobilität, flexibler office-Support und Remote-Arbeit.
-  
+  - Zugriff auf Dateien von jedem Gerät (Computer, Smartphone, Tablet) jederzeit und überall, sofern eine Internetverbindung besteht.
+  - Natürliche Unterstützung für Echtzeit-Zusammenarbeit mehrerer Benutzer; mehrere Nutzer können dasselbe Dokument gleichzeitig bearbeiten, wobei das System automatisch die Versionsverwaltung übernimmt.
+  - Hohe Mobilität, flexible Büro-Unterstützung und Remote-Arbeit.
+
 ## 4. Kostenstruktur und Sicherheit
 
 - Lokale Datei:
-  
- - Hohe Kapitalausgaben in der Frühphase erfordern bestimmte Kosten für die Betriebsunterstützung in der späteren Phase.
- Sowohl die physische Sicherheit als auch die Netzwerksicherheit werden von den Benutzern selbst kontrolliert.
+
+  - In der Anfangsphase sind hohe Kapitalkosten erforderlich. Dies führt zu zusätzlichen Betriebskosten später.
+  - Physische und Netzwerksicherheit werden vollständig vom Nutzer selbst kontrolliert.
 
 - Cloud-Datei:
 
- - Geringe Vorabinvestition, hauptsächlich Betriebskosten, Zahlung auf Anfrage.
- - Sicherheit und Integrität liegen in der Verantwortung des Cloud-Dienstanbieters.
+  - Geringe Anfangsinvestition, hauptsächlich laufende Ausgaben, Pay-as-you-go.
+  - Sicherheit und Integrität liegen in der Verantwortung des Cloud-Dienstanbieters.
 
-## 5. Anwendbare Szenarien
+## 5. Geeignete Anwendungsfälle
 
-- Lokale Datei: Dateioperationen können nur lokal ausgeführt werden.
-- Cloud-Datei: Dateivorgänge können lokal oder in der Cloud durchgeführt werden.
+- Lokale Datei: Dateioperationen können ausschließlich lokal durchgeführt werden.  
+- Cloud-Datei: Dateioperationen können lokal oder in der Cloud durchgeführt werden.  
+
+**Hinweise / Einschränkungen:** Die API unterstützt Dateien bis zu 200 MB für die Cloud-Verarbeitung, und nur die in der Dokumentation aufgeführten Formate können konvertiert werden. Netzwerklatenz kann die Verarbeitungszeit für große Tabellenkalkulationen beeinträchtigen.
+
+_Zuletzt aktualisiert: 30. Juli 2026_

@@ -1,75 +1,100 @@
-﻿---
-title: 删除 Excel 工作表中的数据透视表
-second_title: Documen
+---
+title: "删除 Excel 工作表中的数据透视表"
+second_title: "文档"
 linktitle: 删除
 type: docs
-url: /zh/pivot-tables/delete/
+url: /pivot-tables/delete/
 aliases: [/delete-worksheet-pivot-table-by-index/]
-keywords: Delete a pivot table in an Excel file
-description: Aspose.Cells Cloud REST API 支持从 Excel 文件中删除数据透视表。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+keywords: "Aspose.Cells, 数据透视表, 删除, Excel, REST API"
+description: "使用 Aspose.Cells Cloud REST API（v3.0）从 Excel 工作表中删除数据透视表。包含请求格式、cURL 示例、错误代码以及 C#、Java、Python、Node.js 的 SDK 代码片段。"
 weight: 70
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、删除 Excel 工作表中的数据透视表
+ArticleTitle: "如何使用 Aspose.Cells Cloud 删除 Excel 工作表中的数据透视表"
 ---
-此 REST API 通过索引指示 `delete` 工作表数据透视表。
- 
-## 重新设置 API
- 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}
- 
+
+此 REST API 可按索引从工作表中删除数据透视表。
+
+**前提条件** – 您需拥有有效的 Aspose.Cells Cloud JWT 访问令牌，并且目标 Excel 文件已存储在受支持的存储位置中。调用 API 前，请确保文件名、工作表名称及存储信息均已正确指定。
+
+数据透视表是**Excel 工作表**中汇总数据的强大工具。借助 Aspose.Cells Cloud，您只需发送一条 HTTP DELETE 请求，即可程序化地删除不需要的数据透视表。该操作非常适合清理工作表、自动化报表生成，或将 Excel 处理功能集成到您的应用程序中。
+
+## DeleteWorksheetPivotTable API
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}
 ```
-请求参数为：
- 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|数据透视表索引|整数|小路|数据透视表索引|
-|文件夹|细绳|询问|文档的文件夹。|
-|存储名称|细绳|询问|存储名称。|
- 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
- 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **安全与身份验证**
+
+Aspose.Cells Cloud API 采用安全机制，需使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
+
+### **请求参数**
+
+| 参数名            | 类型     | 位置   | 描述                                       |
+| ----------------- | -------- | ------ | ------------------------------------------ |
+| name              | string   | path   | Excel 文档的名称。                         |
+| sheetName         | string   | path   | 包含目标数据透视表的工作表名称。           |
+| pivotTableIndex   | integer  | path   | 待删除数据透视表的从零开始的索引。         |
+| folder            | string   | query  | 文档所在文件夹的路径。                     |
+| storageName       | string   | query  | 存储服务的名称。                           |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable) 定义了一个公开可访问的编程接口，允许您直接通过 Web 浏览器发起 REST 调用。
+
+您可使用 **cURL 命令行工具**轻松访问 Aspose.Cells Web 服务。以下示例展示了如何通过 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+**响应示例**
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
+响应遵循简洁的 JSON 结构：
+
+```json
+{
+  "Code": integer,   // 操作的类 HTTP 状态码
+  "Status": string   // 文本描述，例如 "OK"
+}
+```
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK 系列
- 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
- 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
- 
- 
+
+### 错误处理
+
+常见响应状态码如下：
+
+| HTTP 状态码 | 描述                                       |
+| ----------- | ------------------------------------------ |
+| 400         | 请求错误 — 缺少或无效参数。                |
+| 401         | 未授权 — 无效或缺失 JWT 令牌。             |
+| 404         | 未找到 — 文件、工作表或数据透视表不存在。  |
+| 500         | 服务器内部错误 — 服务器发生意外情况。      |
+
+## 云 SDK 家族
+
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，使您能专注于项目核心任务。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -128,3 +153,4 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
 {{< /tab >}}
 
 {{< /tabs >}}
+---

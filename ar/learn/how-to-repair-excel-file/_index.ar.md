@@ -1,38 +1,39 @@
-﻿---
-title: كيفية إصلاح ملف Excel باستخدام Aspose.Cells Clou
-linktitle: كيفية إصلاح ملف Excel
-type: docs
-url: /ar/how-to-repair-excel-file
-description: كيفية إصلاح الملف Excel أو أي ملف جدول بيانات آخر باستخدام Aspose.Cells Cloud
-weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، كيفية إصلاح Excel أو ملف جدول بيانات آخر من خلال Aspose.Cells السحابة
 ---
-## مقدمة
+title: "كيفية إصلاح ملف Excel باستخدام Aspose.Cells Cloud"
+linktype: "كيفية إصلاح ملف Excel"
+type: docs
+url: /how-to-repair-excel-file
+description: "كيفية إصلاح ملف Excel أو ملف جدول بيانات آخر باستخدام Aspose.Cells Cloud."
+weight: 10
+kwords: Excel, Office Cloud, REST API, جدول بيانات, PDF, CSV, Json, Markdown, كيفية إصلاح ملف Excel أو ملف جدول بيانات آخر عبر Aspose.Cells Cloud
+---
 
-يُعدّ Aspose.Cells Cloud API حلاً سحابيًا فعالاً مُصمّمًا لإنشاء ملفات جداول البيانات وتحريرها وتحويلها. في هذه المقالة، سنشرح لك عملية استخدام Aspose.Cells Cloud API لإصلاح الملفات، بما في ذلك حالات الاستخدام النموذجية ومثال على الكود.
+## المقدمة
 
-## ملخص
+يُعد واجهة برمجة تطبيقات Aspose.Cells Cloud حلاً قويًّا مبنيًّا في السحابة، مُصمَّم خصّيصًا لإنشاء وتعديل وتحويل ملفات جداول البيانات. وفي هذه المقالة، سنُرشدك خطوة بخطوة عبر عملية استخدام واجهة برمجة تطبيقات Aspose.Cells Cloud لإصلاح الملفات، بما في ذلك حالات الاستخدام الشائعة ونماذج الكود.
 
-يوفر برنامج Cloud Aspose.Cells حلاً فعالاً لإصلاح الملف Excel أو أي ملف جدول بيانات آخر. باستخدام Cloud Aspose.Cells، يمكنك إصلاح الملف Excel أو أي ملف جدول بيانات آخر بسهولة، مما يلبي مجموعة متنوعة من المتطلبات.
+## نظرة عامة
 
-يتوفر الجهاز API لإصلاح الملفات، وهو متوافق عمومًا مع مختلف بيئات الإنترنت. فيما يلي وصف تفصيلي للجهاز API:
+تقدم واجهة برمجة تطبيقات Aspose.Cells Cloud واجهة برمجة قوية لإصلاح ملفات Excel أو ملفات جداول بيانات أخرى. وباستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud، يمكنك إصلاح ملفات Excel أو ملفات جداول بيانات أخرى بسهولة، لتلبية مجموعة متنوعة من المتطلبات.
 
-- **[إصلاح Excel أو ملف جدول بيانات آخر.](https://reference.aspose.cloud/cells/#/LightCells/PostRepair)** للحصول على إرشادات حول كيفية الاتصال بالرقم API، يرجى الرجوع إلى[دليل التطوير](https://docs.aspose.cloud/cells/repair/).
+وهي متاحة لإصلاح الملفات، وتوافق عمومًا مع مختلف البيئات عبر الإنترنت. وفيما يلي وصف مفصّل للواجهة:
 
-# كيفية إصلاح Excel أو جدول بيانات آخر من خلال Aspose.Cells Cloud
+- **[إصلاح ملف Excel أو ملف جدول بيانات آخر.](https://reference.aspose.cloud/cells/#/LightCells/PostRepair)**. لمعرفة كيفية استدعاء هذه الواجهة، يُرجى الرجوع إلى [دليل التطوير](https://docs.aspose.cloud/cells/repair/).
 
- توفر السحابة Aspose.Cells API[مجموعات تطوير البرامج المتعددة](https://github.com/aspose-cells-cloud)للغات البرمجة المختلفة. اختر حزمة تطوير البرامج (SDK) التي تتوافق مع لغة البرمجة المفضلة لديك، واتبع الوثائق المرفقة للتثبيت والتهيئة. أو يمكنك تصميم حزمة تطوير البرامج (SDK) الخاصة بك وفقًا لـ[API مرجع](https://reference.aspose.cloud/cells/)في هذا القسم، سنستخدم C# كمثال لتوضيح عملية إصلاح الملف.
+# كيفية إصلاح ملف Excel أو ملف جدول بيانات آخر عبر Aspose.Cells Cloud
+
+توفر واجهة برمجة تطبيقات Aspose.Cells Cloud [عدة حزم تطوير برمجيات (SDKs)](https://github.com/aspose-cells-cloud) تدعم لغات برمجة مختلفة. اختر الحزمة المناسبة للغة البرمجة التي تفضّلها، واتّبع الوثائق المرافقة لتثبيتها وتهيئتها. أو يمكنك إعداد حزمة SDK مخصّصة وفقًا لـ[مرجع الواجهة البرمجية](https://reference.aspose.cloud/cells/). وفي هذا القسم، سنستخدم لغة C# كمثال لتوضيح عملية إصلاح الملفات بالتفصيل.
 
 ## التسجيل والحصول على مفتاح API
 
- قبل البدء، عليك أن:[تسجيل حساب سحابي Aspose](https://id.containerize.com/signup) و[احصل على مفتاح API للمصادقة](https://dashboard.aspose.cloud/applications)من خلال تسجيل الدخول إلى موقع Aspose Cloud الرسمي، يمكنك إنشاء حساب مجاني والحصول على مفتاح API لأغراض المصادقة.
+قبل البدء، تحتاج إلى [تسجيل حساب على Aspose Cloud](https://id.containerize.com/signup) والحصول على [مفتاح API للمصادقة](https://dashboard.aspose.cloud/applications). وبتسجيل الدخول إلى الموقع الرسمي لـ Aspose Cloud، يمكنك إنشاء حساب مجاني والحصول على مفتاح API لأغراض المصادقة.
 
- لمزيد من التفاصيل حول العمليات، يرجى الرجوع إلى المستندات التالية:[البدء السريع مع Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
+للمزيد من العمليات المتقدمة، يُرجى الرجوع إلى الوثائق التالية: [البدء السريع مع Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
 
-## تثبيت وتكوين SDK السحابي Aspose.Cells
+## تثبيت وتهيئة حزمة Aspose.Cells Cloud SDK
 
-قم بتثبيت الحزمة Aspose.Cells-Cloud NuGet في مشروعك .NET، ويمكنك استخدام وحدة التحكم Package Manager NuGet أو Package Manager NuGet في Visual Studio.
-إليك كيفية تثبيت الحزمة باستخدام وحدة التحكم في إدارة الحزم:
+قم بتثبيت حزمة Aspose.Cells-Cloud NuGet في مشروع .NET الخاص بك، ويمكنك استخدام وحدة تحكم مدير حزم NuGet أو مدير الحزم NuGet في Visual Studio.  
+إليك كيفية تثبيت الحزمة باستخدام وحدة تحكم مدير الحزم:
 
 ```Powershell
 
@@ -40,7 +41,7 @@ Install-Package Aspose.Cells-Cloud
 
 ```
 
-يُنشئ مثيلًا جديدًا لفئة CellsApi، مع تهيئة مُعرّف العميل وسرّه. فيما يلي تفاصيل مقتطف الكود المذكور أعلاه:
+قم بإنشاء مثيل جديد للفئة CellsApi، وقم بتهيئته باستخدام معرّف العميل (Client ID) ومفتاح العميل (Client Secret). وفيما يلي تفاصيل مقتطف الكود المذكور أعلاه:
 
 ```CSharp
 
@@ -48,27 +49,27 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ```
 
-تأكد من استبدال الخاص بك_API_مفتاحك_برنامج_SID ومعرفك_برنامج_المفتاح مع المفتاح الفعلي API ومعرف تطبيق SID ومفتاح التطبيق.
+تأكد من استبدال YOUR_API_KEY وYOUR_APP_SID وYOUR_APP_KEY بمفتاح API الفعلي الخاص بك ومعرّف التطبيق (Application SID) ومفتاح التطبيق (Application Key).
 
-## إنشاء الطلب API والاتصال بالرقم API
+## بناء طلب الواجهة البرمجية واستدعائها
 
-يؤدي هذا إلى إنشاء مثيل جديد من PostRepairRequest، مع تهيئته بتنسيق الملف والملفات المطلوبة. ثم يستدعي عملية الإصلاح API مع طلب الإصلاح هذا. تدعم دالة repaired أيضًا معلمات الاستعلام الموسعة. فيما يلي تفاصيل مقتطف الكود المذكور أعلاه:
+يُنشئ هذا المقتطف مثيلًا جديدًا لفئة PostRepairRequest، ويُهيّئه بتنسيق الملف والملفات المطلوبة. ثم يستدعي واجهة إصلاح الملفات باستخدام طلب الإصلاح هذا. وتدعم دالة الإصلاح أيضًا معلمات الاستعلام الموسّعة. وفيما يلي تفاصيل مقتطف الكود المذكور أعلاه:
 
 ```CSharp
 
- CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
- Model.FilesResult result = cellsApi.PostRepair(new PostRepairRequest {  File = new Dictionary<string, Stream> { { "NeedRepairedExcel.xlsx", System.IO.File.OpenRead("NeedRepairedExcel.xlsx")} } });
- foreach (var file in result.Files)
- {
-     File.WriteAllBytes(file.Filename, Convert.FromBase64String(file.FileContent));
- }
+CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
+Model.FilesResult result = cellsApi.PostRepair(new PostRepairRequest {  File = new Dictionary<string, Stream> { { "NeedRepairedExcel.xlsx", System.IO.File.OpenRead("NeedRepairedExcel.xlsx")} } });
+foreach (var file in result.Files)
+{
+    File.WriteAllBytes(file.Filename, Convert.FromBase64String(file.FileContent));
+}
 
 ```
 
-## خاتمة
+## الخاتمة
 
-مع Aspose.Cells Cloud API، يمكنك بسهولة إصلاح الملف Excel أو أي ملف جدول بيانات آخر. بإجراء مكالمات بسيطة مع API وتعيين خيارات الإصلاح المناسبة، يمكنك تلبية متطلبات إصلاح الملفات المختلفة بكفاءة. دمج Aspose.Cells Cloud API في تطبيقاتك لتحسين الإنتاجية وتوفير وقت التطوير.
+باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud، يمكنك بسهولة إصلاح ملفات Excel أو ملفات جداول البيانات الأخرى. وبإجراء استدعاءات بسيطة لواجهة برمجة التطبيقات وضبط خيارات الإصلاح المناسبة، يمكنك الوفاء بكافة متطلبات إصلاح الملفات بكفاءة. ودمج واجهة برمجة تطبيقات Aspose.Cells Cloud في تطبيقاتك لتعزيز الإنتاجية وتوفير وقت التطوير.
 
- يرجى ملاحظة أن الكود المثال أعلاه هو لأغراض العرض التوضيحي فقط، وسيلزم استبداله ببيانات اعتماد مصادقة ومسارات ملفات صالحة عند استخدامه عمليًا. بالإضافة إلى ذلك، يوفر Aspose.Cells Cloud API العديد من الميزات الأخرى، مثل إنشاء جداول البيانات وتحريرها ومعالجتها ومعالجة البيانات. يمكنك الاطلاع على وثائق API التفصيلية والكود المثال على[دليل المطور للموقع الرسمي Aspose](/developer-guide/).
+يرجى ملاحظة أن كود المثال أعلاه للأغراض التوضيحية فقط، وسيتوجب عليك استبداله باعتماد صلاحيات مصادقة صحيحة ومسارات ملفات فعّالة عند الاستخدام الفعلي. بالإضافة إلى ذلك، توفر واجهة برمجة تطبيقات Aspose.Cells Cloud العديد من الميزات الأخرى، مثل إنشاء جداول البيانات وتعديلها وتعامل معها ومعالجة بياناتها. ويمكنك العثور على وثائق الواجهة البرمجية التفصيلية ونماذج الكود في [دليل المطور على الموقع الرسمي لـ Aspose](/developer-guide/).
 
-نأمل أن تساعدك هذه المقالة على فهم كيفية استخدام Aspose.Cells Cloud API لإصلاح الملفات. نتمنى لك التوفيق في التنفيذ!
+نأمل أن تساعدك هذه المقالة على فهم كيفية استخدام واجهة برمجة تطبيقات Aspose.Cells Cloud لإصلاح الملفات. نتمنى لك التوفيق في تنفيذك!

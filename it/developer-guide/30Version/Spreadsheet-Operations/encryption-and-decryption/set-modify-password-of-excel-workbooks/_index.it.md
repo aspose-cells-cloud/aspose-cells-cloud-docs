@@ -1,73 +1,104 @@
-﻿---
-title: Imposta la password di modifica di un workboo Excel
-second_title: Documen
-linktitle: Modificare la password del file Excel
-type: docs
-url: /it/workbook/password/modify/
-aliases: [/set-modify-password-of-excel-workbooks/,/workbook/modify-password/]
-keywords: Modify password for an Excel workbook
-description: Aspose.Cells Cloud REST API supporta la modifica della password per una cartella di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 100
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Imposta la password di modifica di una cartella di lavoro Excel
 ---
-Questo REST API indica di proteggere il documento dalle modifiche.
+---
+title: "Modifica la protezione tramite password di un foglio di lavoro Excel"
+second_title: "Documento"
+linktitle: "Modifica la password di un file Excel"
+type: docs
+url: /workbook/password/modify/
+aliases:
+  - /set-modify-password-of-excel-workbooks/
+  - /workbook/modify-password/
+keywords: "password Excel, Aspose.Cells Cloud, protezione in scrittura, API REST, modifica password foglio di lavoro"
+description: "Cambia la password di protezione in scrittura di un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include esempi in cURL e SDK."
+weight: 100
+ArticleTitle: "Modifica la protezione tramite password di un foglio di lavoro Excel – Aspose.Cells Cloud"
+---
 
-## RSET API
+Questa API REST **modifica la password di protezione in scrittura** di un foglio di lavoro Excel esistente.
+
+Aggiornare programmaticamente la password di protezione in scrittura consente di ruotare o sostituire le password senza scaricare il file. Questo approccio risulta particolarmente utile quando si gestiscono fogli di lavoro protetti memorizzati nello storage di Aspose.Cells Cloud.
+
+
+## API REST
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/writeProtection
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 ```
 
-I parametri della richiesta sono:
+### Sicurezza e autenticazione
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome del documento.|
-| password|| corpo| Password di modifica.|
-| cartella| corda| domanda| Cartella del documento.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'[autenticazione basata su token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutDocumentProtectFromChanges) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+### Parametri della richiesta
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Nome del parametro | Tipo   | Posizione    | Descrizione                                      |
+| ------------------ | ------ | ------------ | ------------------------------------------------ |
+| **name**           | string | path         | Nome del foglio di lavoro Excel (obbligatorio).  |
+| **password**       | string | body (JSON)  | Nuova password di protezione in scrittura da impostare (obbligatoria). |
+| **folder**         | string | query        | Cartella opzionale in cui è memorizzato il foglio di lavoro. |
+| **storageName**    | string | query        | Nome opzionale del servizio di storage.          |
+
+### Risposta
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Codici di stato HTTP**
+
+| Codice | Significato                 | Descrizione                                      |
+|--------|-----------------------------|--------------------------------------------------|
+| 200    | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida        | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401    | Non autorizzato             | Token JWT non valido o mancante. |
+| 413    | Payload troppo grande       | File caricato supera il limite di dimensione. |
+| 500    | Errore interno del server   | Errore imprevisto nel server. |
+
+## Come utilizzare l'API PutDocumentProtectFromChanges con gli SDK
+
+### Specifica dell'API PutDocumentProtectFromChanges
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutDocumentProtectFromChanges) definiscono l'interfaccia di programmazione accessibile pubblicamente che consente di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando **cURL** per accedere facilmente ai servizi web di Aspose.Cells. Il comando cURL riportato di seguito mostra come richiamare l'API Cloud.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtection" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d "{ \"Password\": \"aspose\"}" 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtection?folder=Samples&storageName=Default" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{ "Password": "aspose" }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+### Utilizzare gli SDK di Aspose.Cells Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'utilizzo di un SDK rappresenta il modo più rapido per sviluppare. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulla logica di business. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come richiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

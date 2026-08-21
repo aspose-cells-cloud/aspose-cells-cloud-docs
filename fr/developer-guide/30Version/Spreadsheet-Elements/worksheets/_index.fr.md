@@ -1,37 +1,39 @@
-﻿---
-title: Travailler avec la feuille de calcul Excel
-second_title: Documen
-linktitle: Feuille de travail
-type: docs
-url: /fr/worksheets/
-aliases: [/working-with-worksheets/]
-keywords: Working with worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API prend en charge l'utilisation de feuilles de calcul dans un classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 100
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Utilisation de la feuille de calcul Excel.
 ---
-Une feuille de calcul est un ensemble de cellules où sont stockées et manipulées des données. Chaque classeur Excel peut contenir plusieurs feuilles de calcul.
+title: "Travail avec des feuilles de calcul Excel"
+second_title: "Document"
+linktitle: "Feuilles de calcul"
+type: docs
+url: /worksheets/
+aliases: [/working-with-worksheets/]
+keywords: "feuille de calcul Excel, Aspose.Cells Cloud, API REST, classeur, classeur Excel, manipulation de données, automatisation Excel"
+description: "L’API REST Aspose.Cells Cloud permet de travailler avec des feuilles de calcul dans un classeur Excel. Le SDK prend en charge plusieurs langages de programmation, notamment Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby et Swift."
+weight: 100
+ArticleTitle: "Travail avec des feuilles de calcul Excel – Documentation Aspose.Cells Cloud"
+---
 
-**Feuille de travail Opération**
+Une feuille de calcul est un ensemble de cellules dans lesquelles vous stockez et manipulez des données. Chaque classeur Excel peut contenir plusieurs feuilles de calcul.
 
-- [Comment obtenir les feuilles de travail Excel.](/cells/fr/worksheets/get-all/)
-- [Comment obtenir la feuille de calcul Excel avec différents formats.](/cells/fr/worksheets/get/)
-- [Comment obtenir la zone de feuille de calcul Excel avec différents formats.](/cells/fr/worksheets/area-to-different-formats/)
-- [Comment obtenir la page de feuille de calcul Excel avec différents formats.](/cells/fr/get-worksheet-for-page-index/)
-- [Comment convertir la feuille de calcul Excel en image.](/cells/fr/worksheets/to-image/)
-- [Comment ajouter la feuille de calcul Excel.](/cells/fr/worksheets/add/)
-- [Comment ajouter l'arrière-plan de la feuille de calcul Excel.](/cells/fr/worksheets/background/add/)
-- [Comment trier les données de la feuille de calcul Excel.](/cells/fr/worksheets/sort-data/)
-- [Comment masquer la feuille de calcul Excel.](/cells/fr/worksheets/hide/)
-- [Comment afficher la feuille de calcul Excel.](/cells/fr/worksheets/unhide/)
-- [Feuille de travail Comment déplacer Excel.](/cells/fr/worksheets/move/)
-- [Comment calculer la formule Excel.](/cells/fr/worksheets/calculate-formula/)
-- [Comment copier la feuille de calcul Excel.](/cells/fr/worksheets/copy/)
-- [Comment renommer la feuille de calcul Excel.](/cells/fr/worksheets/rename/)
-- [Comment mettre à jour les propriétés de la feuille de calcul Excel.](/cells/fr/worksheets/update-properties/)
-- [Comment définir le zoom de la feuille de calcul Excel.](/cells/fr/worksheets/zoom/)
-- [Comment geler les volets de la feuille de calcul Excel.](/cells/fr/worksheets/freeze-panes/)
-- [Comment dégeler les volets de la feuille de calcul Excel.](/cells/fr/worksheets/unfreeze-panes/)
-- [Comment supprimer la feuille de calcul Excel.](/cells/fr/worksheets/delete/)
-- [Comment supprimer l'arrière-plan de la feuille de calcul Excel.](/cells/fr/worksheets/background/delete/)
-- [Comment travailler avec l'ajustement automatique d'un classeur Excel](/cells/fr/worksheets/autofit/)
+**Opérations sur les feuilles de calcul**
+
+- [Comment obtenir toutes les feuilles de calcul Excel](/cells/worksheets/get-all/)
+- [Comment obtenir une feuille de calcul Excel dans différents formats](/cells/worksheets/get/)
+- [Comment obtenir une zone de feuille de calcul Excel dans différents formats](/cells/worksheets/area-to-different-formats/)
+- [Comment obtenir une page de feuille de calcul Excel dans différents formats](/cells/get-worksheet-for-page-index/)
+- [Comment convertir une feuille de calcul Excel en image](/cells/worksheets/to-image/)
+- [Comment ajouter une feuille de calcul Excel](/cells/worksheets/add/)
+- [Comment ajouter une image d’arrière-plan à une feuille de calcul Excel](/cells/worksheets/background/add/)
+- [Comment trier les données dans une feuille de calcul Excel](/cells/worksheets/sort-data/)
+- [Comment masquer une feuille de calcul Excel](/cells/worksheets/hide/)
+- [Comment afficher une feuille de calcul Excel masquée](/cells/worksheets/unhide/)
+- [Comment déplacer une feuille de calcul Excel](/cells/worksheets/move/)
+- [Comment calculer une formule Excel](/cells/worksheets/calculate-formula/)
+- [Comment copier une feuille de calcul Excel](/cells/worksheets/copy/)
+- [Comment renommer une feuille de calcul Excel](/cells/worksheets/rename/)
+- [Comment mettre à jour les propriétés d’une feuille de calcul Excel](/cells/worksheets/update-properties/)
+- [Comment définir le zoom d’une feuille de calcul Excel](/cells/worksheets/zoom/)
+- [Comment figer les volets dans une feuille de calcul Excel](/cells/worksheets/freeze-panes/)
+- [Comment défiger les volets dans une feuille de calcul Excel](/cells/worksheets/unfreeze-panes/)
+- [Comment supprimer une feuille de calcul Excel](/cells/worksheets/delete/)
+- [Comment supprimer une image d’arrière-plan d’une feuille de calcul Excel](/cells/worksheets/background/delete/)
+- [Comment ajuster automatiquement la largeur des colonnes d’un classeur Excel](/cells/worksheets/autofit/)
+---

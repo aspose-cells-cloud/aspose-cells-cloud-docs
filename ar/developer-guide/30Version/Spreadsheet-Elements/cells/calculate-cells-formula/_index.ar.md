@@ -1,71 +1,106 @@
-﻿---
-title: احسب الصيغة Cells
-type: docs
-url: /ar/calculate-cells-formula/
-weight: 90
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حساب الصيغة Cells
 ---
-يشير هذا REST API إلى الحساب `cells formula` في ملف Excel.
+title: "حساب صيغة الخلية – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+type: docs
+url: /calculate-cells-formula/
+weight: 90
+keywords: "Aspose.Cells Cloud، حساب صيغة الخلية، واجهة برمجة تطبيقات Excel، واجهة برمجة تطبيقات REST، مكتبة SDK"
+description: "احسب صيغة خلية في ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API (الإصدار 3.0). تتضمن النقطة النهائية (endpoint)، والمعطيات، ومثال على cURL، وأكواد مقتطفات SDK."
+ArticleTitle: "حساب صيغة الخلية – وثائق واجهة برمجة تطبيقات Aspose.Cells Cloud"
+---
 
-## RSET API
+## واجهة برمجة تطبيقات REST
+
+تحسب هذه واجهة برمجة تطبيقات REST **صيغة الخلية** في ملف Excel.
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/calculate
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/calculate
 ```
 
-معلمات الطلب هي:
+## الأمان والمصادقة
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| اسم الخلية| خيط| طريق||
-| خيارات|| جسم||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [مصادقة مبنية على رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCellCalculate) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معطيات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعطى | النوع | موقع المعطى (path/query/body) | الوصف |
+|------------|--------|--------------------------------|--------|
+| name | string | path | اسم ملف Excel (مثال: `Book1.xlsx`). |
+| sheetName | string | path | اسم ورقة العمل التي تحتوي على الخلية. |
+| cellName | string | path | عنوان الخلية المراد حسابها (مثال: `A1`). |
+| options | object | body | كائن JSON يحتوي على خيارات الحساب (انظر جدول **كائن الخيارات**). |
+| folder | string | query | المجلد في التخزين حيث يوجد الملف. |
+| storageName | string | query | اسم مجلد تخزين Aspose Cloud. |
+
+#### كائن الخيارات
+
+| الحقل | النوع | الوصف | القيمة الافتراضية |
+|--------|--------|--------|------------------|
+| CalcStackSize | string | الحد الأقصى لحجم كومة الحساب. | `"1"` |
+| IgnoreError | boolean | إذا كانت القيمة `true`، يتم تجاهل أخطاء الحساب وتُضبط قيمة الخلية على `#N/A`. | `false` |
+| Recursive | boolean | يُفعّل الحساب التكراري للخلايا التابعة. | `false` |
+| Precision | string | عدد المنازل العشرية للنتائج الرقمية. | `"15"` |
+| UseThreading | boolean | يُفعّل الحساب متعدد الخيوط (multi-threaded). | `false` |
+
+### **الاستجابة**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى | الوصف |
+|-------|--------|--------|
+| 200 | نجاح (OK) | تم تطبيق الحساب بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | طلب غير صالح (Bad Request) | معطيات مفقودة أو غير صحيحة (مثال: نوع ملف غير مدعوم). |
+| 401 | غير مُصادق (Unauthorized) | رمز JWT غير صالح أو مفقود. |
+| 413 | حمل البيانات كبير جدًا (Payload Too Large) | حجم الملف المرفوع يتجاوز الحد المسموح. |
+| 500 | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام واجهة PostCellCalculate API باستخدام مكتبات SDK
+
+### مواصفات واجهة PostCellCalculate API
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCellCalculate) واجهة برمجة تطبيقات قابلة للوصول العام وتسمح لك بإجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells عبر الويب بسهولة. يُظهر المثال التالي كيفية استدعاء واجهة برمجة تطبيقات Cloud باستخدام cURL. **احصل أولًا على رمز JWT** عن طريق المصادقة ضد النقطة النهائية `/connect/token` واستبدل `<jwt token>` بقيمة الرمز.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/A1/calculate" \
--d '{"CalcStackSize": "1"}' \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/A1/calculate" \
+  -d '{"CalcStackSize":"1"}' \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام مكتبات SDK الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام مكتبة SDK هو أفضل طريقة لتسريع التطوير. فالمكتبة SDK تُجيزك من تفاصيل المستوى المنخفض وتركّز على مهام مشروعك. يُرجى الاطّلاع على <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر واجهة الويب باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

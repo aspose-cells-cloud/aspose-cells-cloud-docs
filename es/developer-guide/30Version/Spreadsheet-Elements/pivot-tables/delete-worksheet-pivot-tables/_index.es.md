@@ -1,128 +1,189 @@
-﻿---
-title: Eliminar todas las tablas dinámicas en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Claro
-type: docs
-url: /es/pivot-tables/clear/
-aliases: [/delete-worksheet-pivot-tables/]
-keywords: Delete all pivot tables in an Excel worksheet
-description: Aspose.Cells Cloud REST API permite eliminar todas las tablas dinámicas en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 80
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Eliminar todas las tablas dinámicas en una hoja de cálculo Excel
 ---
-Este REST API indica Eliminar tablas dinámicas de la hoja de cálculo
- 
-## RSET API
- 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
- 
+title: "Eliminar todas las tablas dinámicas en una hoja de cálculo de Excel"
+description: "Elimina todas las tablas dinámicas de una hoja de cálculo especificada utilizando la API REST de Aspose.Cells Cloud."
+keywords: "Aspose.Cells, tabla dinámica, eliminar, API REST, Excel"
+date: 2026-07-30
+api_version: "v3.0"
+---
+
+# Eliminar todas las tablas dinámicas en una hoja de cálculo de Excel
+
+## Descripción general
+Esta operación elimina **todas** las tablas dinámicas de una hoja de cálculo determinada en un archivo de Excel. Es útil cuando necesita restablecer el análisis de una hoja de cálculo o limpiar tablas dinámicas no utilizadas con una única llamada.
+
+## Requisitos previos
+Antes de llamar a la API, asegúrese de haber completado los siguientes pasos:
+
+1. **Cuenta de Aspose Cloud** – Regístrese en una cuenta de Aspose Cloud si aún no tiene una.  
+2. **Token JWT** – Genere un token JSON Web Token (JWT) para la autenticación. Consulte la [guía de autenticación](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) para obtener más detalles.  
+3. **Configuración del almacenamiento** – Cargue el archivo de Excel objetivo en el almacenamiento de Aspose Cloud o en un almacenamiento externo conectado. Tenga en cuenta la **carpeta** y el **nombre del almacenamiento** (si corresponde) donde se encuentra el archivo.
+
+## Autenticación
+Las API de Aspose.Cells Cloud requieren **autenticación basada en token JWT**. Incluya el token en el encabezado `Authorization` de cada solicitud:
+
 ```
- Los parámetros de la solicitud son:
- 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del documento.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| carpeta| cadena| consulta| Carpeta del documento.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
- 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTables) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
- 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
-{{< tab tabNum="1" >}}
- 
-```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+Authorization: Bearer <jwt token>
 ```
- 
-{{< /tab >}}
- 
-{{< tab tabNum="2" >}}
- 
+
+## Solicitud HTTP
+
+```
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
+```
+
+### Parámetros de ruta
+| Nombre | Tipo | Obligatorio | Descripción |
+|--------|------|-------------|-------------|
+| `name` | string | Sí | El nombre del archivo de Excel (por ejemplo, `Sample.xlsx`). |
+| `sheetName` | string | Sí | El nombre de la hoja de cálculo de la que se eliminarán todas las tablas dinámicas (por ejemplo, `Sheet1`). |
+
+### Parámetros de consulta
+| Nombre | Tipo | Obligatorio | Descripción |
+|--------|------|-------------|-------------|
+| `folder` | string | No | La carpeta que contiene el archivo. |
+| `storageName` | string | No | El nombre del almacenamiento que se utilizará (si el archivo no se encuentra en el almacenamiento predeterminado). |
+
+## Ejemplo de solicitud (cURL)
+
 ```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables?folder=SampleFolder&storageName=MyStorage" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
+```
+
+## Respuesta correcta
+El servicio devuelve un objeto estándar `CellsCloudResponse` que indica el estado de la operación.
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
-{{< /tab >}}
- 
-{{< /tabs >}}
- 
-## Familia de SDK en la nube
- 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
- 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
- 
- 
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
-{{< tab tabNum="1" >}}
+## Manejo de errores
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNET-CSharp-PivotTables-DeleteWorksheetPivotTable-1.cs" >}}
+| Estado HTTP | Significado | Ejemplo de carga útil |
+|-------------|-----------|------------------------|
+| **400** | Solicitud incorrecta: parámetros faltantes o no válidos | `{ "Code": 400, "Message": "Missing required parameter 'name'." }` |
+| **401** | No autorizado: token JWT no válido o caducado | `{ "Code": 401, "Message": "Invalid authentication token." }` |
+| **404** | No encontrado: el archivo o la hoja de cálculo no existen | `{ "Code": 404, "Message": "Worksheet not found." }` |
+| **500** | Error interno del servidor: fallo inesperado | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
 
-{{< /tab >}}
+## Ejemplos de SDK
 
-{{< tab tabNum="2" >}}
+Los fragmentos siguientes muestran cómo invocar la operación con varios SDK de Aspose.Cells Cloud.
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-pivottables-DeleteWorksheetPivotTable-delete-worksheet-pivot-table.java" >}}
+### C# (.NET)
 
-{{< /tab >}}
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
 
-{{< tab tabNum="3" >}}
+// Inicializar el cliente de la API
+var apiInstance = new CellsApi("<client-id>", "<client-secret>");
 
-{{< /tab >}}
+// Configurar los parámetros de la solicitud
+string name = "Sample_Pivot_Table_Example.xls";
+string sheetName = "Sheet2";
+string folder = "SampleFolder";
+string storageName = "MyStorage";
 
-{{< tab tabNum="4" >}}
+try
+{
+    var response = apiInstance.DeleteWorksheetPivotTables(name, sheetName, folder, storageName);
+    Console.WriteLine($"Response code: {response.Code}, status: {response.Status}");
+}
+catch (Exception e)
+{
+    Console.WriteLine("Exception when calling CellsApi.DeleteWorksheetPivotTables: " + e.Message);
+}
+```
 
-{{< /tab >}}
+### Java
 
-{{< tab tabNum="5" >}}
+```java
+import com.aspose.cells.cloud.api.CellsApi;
+import com.aspose.cells.cloud.model.*;
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "DeleteWorksheetPivotTables.py" >}}
+public class DeletePivotTables {
+    public static void main(String[] args) {
+        CellsApi api = new CellsApi("<client-id>", "<client-secret>");
+        String name = "Sample_Pivot_Table_Example.xls";
+        String sheetName = "Sheet2";
+        String folder = "SampleFolder";
+        String storageName = "MyStorage";
 
-{{< /tab >}}
+        try {
+            CellsCloudResponse result = api.deleteWorksheetPivotTables(name, sheetName, folder, storageName);
+            System.out.println("Code: " + result.getCode() + ", Status: " + result.getStatus());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
 
-{{< tab tabNum="6" >}}
+### Python
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-PivotTables-DeleteWorksheetPivotTable-1.js" >}}
+```python
+import asposecellscloud_sdk
+from asposecellscloud_sdk import CellsApi, ApiException
 
-{{< /tab >}}
+# Configurar el cliente de la API
+configuration = asposecellscloud_sdk.Configuration()
+configuration.api_key['client_id'] = '<client-id>'
+configuration.api_key['client_secret'] = '<client-secret>'
 
-{{< tab tabNum="7" >}}
+api_instance = CellsApi(asposecellscloud_sdk.ApiClient(configuration))
 
-{{< gist "aspose-cells-cloud-gists" "9d725d4678edaac53f95c5208e17783c" "Examples-Android-pivottables-DeleteWorksheetPivotTable-delete-worksheet-pivot-table.java" >}}
+name = 'Sample_Pivot_Table_Example.xls'
+sheet_name = 'Sheet2'
+folder = 'SampleFolder'
+storage_name = 'MyStorage'
 
-{{< /tab >}}
+try:
+    response = api_instance.delete_worksheet_pivot_tables(name, sheet_name, folder, storage_name)
+    print(f'Code: {response.code}, Status: {response.status}')
+except ApiException as e:
+    print("Exception when calling CellsApi->delete_worksheet_pivot_tables: %s\n" % e)
+```
 
-{{< tab tabNum="8" >}}
+### Node.js
 
-{{< /tab >}}
+```javascript
+const { CellsApi, Configuration } = require('asposecellscloud-sdk');
 
-{{< tab tabNum="9" >}}
+const config = new Configuration({
+    clientId: '<client-id>',
+    clientSecret: '<client-secret>'
+});
+const apiInstance = new CellsApi(config);
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-PivotTables-DeleteWorksheetPivotTable-1.pl" >}}
+const name = 'Sample_Pivot_Table_Example.xls';
+const sheetName = 'Sheet2';
+const folder = 'SampleFolder';
+const storageName = 'MyStorage';
 
-{{< /tab >}}
+apiInstance.deleteWorksheetPivotTables(name, sheetName, folder, storageName)
+    .then(result => {
+        console.log(`Code: ${result.code}, Status: ${result.status}`);
+    })
+    .catch(err => {
+        console.error('Error:', err);
+    });
+```
 
-{{< tab tabNum="10" >}}
+*Otros SDK (Go, PHP, Ruby, Swift, Perl, Android) están disponibles en el [repositorio de SDK de Aspose.Cells Cloud](https://github.com/aspose-cells-cloud).*
 
-{{< gist "aspose-cells-cloud-gists" "12f056c6733b4961979d35a32ef99e61" >}}
+## Consulte también
+- [Eliminar una tabla dinámica específica](https://docs.aspose.cloud/cells/pivot-tables/delete-specific/)
+- [Obtener todas las tablas dinámicas en una hoja de cálculo](https://docs.aspose.cloud/cells/pivot-tables/get-all/)
+- [Descripción general de la autenticación](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
+- [Especificación OpenAPI para DeleteWorksheetPivotTables](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTables)
 
-{{< /tab >}}
+---
 
-{{< /tabs >}}
+*Documento actualizado por última vez el 2026-07-30. Todo el contenido está codificado en UTF-8.*

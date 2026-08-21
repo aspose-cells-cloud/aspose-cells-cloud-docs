@@ -1,80 +1,124 @@
-﻿---
-title: Excel إلى باوربوينت
-second_title: Documen
-linktitle: Excel إلى باوربوينت
-type: docs
-url: /ar/convert-excel-file-to-pptx-file/
-keywords: Convert excel files to pptx files
-description: يدعم Cloud REST تحويل ملفات Excel إلى ملفات pptx. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 90
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، Excel إلى Pptx
 ---
-يشير هذا REST API إلى `convert` ملف جدول بيانات إلى ملف بتنسيق pptx.
+title: "تحويل ملف Excel إلى PPTX باستخدام واجهة Aspose.Cells Cloud API الإصدار 3.0"
+second_title: "مستند"
+linktitle: "Excel إلى PPTX"
+type: docs
+url: /convert-excel-file-to-pptx-file/
+keywords: "Aspose, Cells, Excel, PPTX, تحويل, REST API, سحابة"
+description: "تعرّف على كيفية تحويل كتب عمل Excel إلى عروض تقديمية بصيغة PPTX باستخدام واجهة Aspose.Cells Cloud REST API الإصدار 3.0. يتضمن طلب cURL، وأمثلة على كود SDK، والمصادقة، ومعالجة الأخطاء."
+weight: 90
+ArticleTitle: "تحويل ملف Excel إلى PPTX باستخدام واجهة Aspose.Cells Cloud API الإصدار 3.0"
+---
 
-**معلمة الاستعلام**
+تقوم هذه الواجهة البرمجية REST بتحويل ملف جدول بيانات إلى تنسيق PPTX.
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|كلمة المرور|خيط| كلمة المرور المطلوبة لفتح الملف Excel.|
-|اسم التخزين|خيط| اسم التخزين الذي يقع فيه الملف.|
-|التحقق من قيود Excel|منطقي| ما إذا كان من الممكن التحقق من تقييد ملف Excel عندما يقوم المستخدم بتعديل الكائنات المرتبطة بالخلايا.|
+## واجهة PostConvertWorkbookToPptx
 
-**معلمة نص الطلب**
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/pptx
+```
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|ملف البيانات| ملف البيانات|يتم حفظ ملف البيانات في الجزء الأول من المحتوى المتعدد الأجزاء.|
+### **الأمان والمصادقة**
 
-**إجابة**
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتحتاج إلى <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-[معلومات الملف](/cells/ar/file-info/)
+### معاملات الاستعلام
 
-## مواصفات REST API
+| اسم المعامل              | النوع   | الوصف                                                                                       |
+| ----------------------- | ------ | ----------------------------------------------------------------------------------------- |
+| `password`              | string | كلمة المرور المطلوبة لفتح كتاب عمل Excel.                                             |
+| `storageName`           | string | اسم وحدة التخزين التي يقع فيها الملف المصدر.                                     |
+| `checkExcelRestriction` | bool   | يُشير إلى ما إذا كان سيتم تطبيق قيود ملف Excel عند تعديل الكائنات المرتبطة بالخلية. |
 
-|**API**|**يكتب**|**وصف**|**رابط سواجر**|
-|:- |:- |:- |:- |
-|/خلايا/تحويل/pptx|بريد|تحويل جدول بيانات إلى ملف pptx.|[تحويل مصنف العمل إلى Pptx](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPptx)|
+### معامل نص الطلب
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPptx) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+| اسم المعامل | النوع      | الوصف                                                              |
+| -------------- | --------- | ------------------------------------------------------------------------ |
+| `datafile`     | ملف بيانات | ملف Excel المُضمَّن في الجزء الأول من نص الطلب متعدد الأجزاء. |
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+**مثال على نص طلب متعدد الأجزاء (مبسَّط):**
+
+```
+--boundary
+Content-Disposition: form-data; name="File"; filename="input.xlsx"
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+
+<المحتوى الثنائي لملف input.xlsx>
+--boundary
+Content-Disposition: form-data; name="password"
+
+MyPwd
+--boundary--
+```
+
+### الاستجابة
+
+ترجع الواجهة البرمجية كائن **FileInfo** يحتوي على ملف pptx المُولَّد.
+
+| الحقل           | النوع   | الوصف                                   |
+| --------------- | ------ | --------------------------------------------- |
+| **Filename**    | string | اسم ملف pptx (مثل `example.pptx`). |
+| **FileSize**    | int    | حجم الملف بالبايت.                    |
+| **FileContent** | string | محتوى ملف pptx مشفرًا بترميز Base64.      |
+
+[FileInfo](/cells/file-info/)
+
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | الوصف                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | ناجح (OK)                          | تم تطبيق المرشّح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صالح (Bad Request)                 | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401  | غير مصادق عليه (Unauthorized)                | رمز JWT غير صالح أو مفقود. |
+| 413  | حمل البيانات كبير جدًا (Payload Too Large)           | حجم الملف المرفَق يتجاوز الحد المسموح به. |
+| 500  | خطأ داخلي في الخادم (Internal Server Error)       | خطأ غير متوقَّع في الخادم. |
+
+*ملاحظات:* تدعم نقطة النهاية التنسيقات الشائعة لملفات Excel (`.xlsx`، `.xls`، `.xlsm`). يقتصر الحد الأقصى لحجم الملف على 50 ميغابايت. قد تُقيَّد عملية التحويل لكتب العمل التي تحتوي على ماكرو أو أوراق محمية ما لم تُزوَّد المعاملات المناسبة.
+
+## كيفية استخدام واجهة PostConvertWorkbookToPptx باستخدام مكتبات SDK
+
+### مواصفات واجهة PostConvertWorkbookToPptx
+
+تُعرِّف <a href="https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPptx" rel="noopener noreferrer">مواصفات OpenAPI</a> واجهة برمجة تطبيقات متاحة علنًا وتسمح لك بإجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول إلى خدمات Aspose.Cells بسهولة. يُظهر المثال التالي كيفية استدعاء واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pptx" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pptx?storageName=MyStorage" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -F "File=@/path/to/input.xlsx" \
+     -F "password=MyPwd"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
-  "Filename": "xxxxxx.pptx",
-  "FileSize": xxxx,
+  "Filename": "example.pptx",
+  "FileSize": 123456,
   "FileContent": "File Content: base64_encoded_string"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام مكتبات SDK الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام مكتبة SDK هو أسرع طريقة لتطوير التطبيقات. فتُجرِّدك المكتبة من تفاصيل البرمجة منخفضة المستوى لتتمكن من التركيز على مشروعك. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud" rel="noopener noreferrer") للحصول على قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام مكتبات SDK المختلفة:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -109,7 +153,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pptx"
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostConvertWorkbookToPptx.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1c" "Example_PostConvertWorkbookToPptx.py" >}}
 
 {{< /tab >}}
 
@@ -127,14 +171,8 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pptx"
 
 {{< /tabs >}}
 
-## تنفذ واجهات برمجة التطبيقات الأخرى هذه الوظيفة
+## واجهات برمجة تطبيقات أخرى تنفّذ هذه الوظيفة
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) يتيح لك البرنامج API حفظ ملف MS Excel كملف Docx مع إعدادات إضافية وحفظ النتيجة في وحدة التخزين.
-
-هذا الملف REST API `convert` excel إلى Docx.
-
-[وضع /الخلايا/تحويل](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) يتيح لك البرنامج API تحويل ملف MS Excel إلى ملف Docx مع إعدادات إضافية وحفظ النتيجة في الاستجابة.
-
-هذا الملف REST API `export` excel إلى Docx.
-
-[احصل على /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) يتيح لك البرنامج API تحويل ملف MS Excel إلى ملف Docx مع إعدادات إضافية وحفظ النتيجة في الاستجابة.
+- **[POST /cells/convert/pdf](https://apireference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPdf)** – تحويل ملف Excel إلى PDF.
+- **[POST /cells/convert/png](https://apireference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPng)** – تحويل ملف Excel إلى صور PNG.
+- **[POST /cells/convert/svg](https://apireference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSvg)** – تحويل ملف Excel إلى تنسيق SVG.

@@ -1,78 +1,86 @@
-﻿---
-title: Kopierar innehåll och format från ett annat kalkylblad
-second_title: Documen
-linktitle: Polis
-type: docs
-url: /sv/worksheets/copy/
-aliases: [/copy-excel-worksheet/]
-keywords: Copies contents and formats from another Excel worksheet
-description: Aspose.Cells Cloud REST API stöder kopiering av innehåll och format från ett annat Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Kopierar innehåll och format från ett annat kalkylblad.
 ---
-Denna REST API anger `copy a worksheet` och spara med nytt namn i samma arbetsbok
+title: "Kopiera innehåll och format från ett annat kalkylblad."
+second_title: "Document"
+linktitle: "Kopiera"
+type: docs
+url: /worksheets/copy/
+aliases: [/copy-excel-worksheet/]
+keywords: "Aspose Cells kopierings-API för kalkylblad, kopiera kalkylblad via REST API, Aspose Cloud SDK kopiera, kopiera kalkylark"
+description: "Lär dig hur du kopierar ett kalkylblad och dess format till ett nytt kalkylblad med Aspose.Cells Cloud REST API. Innehåller endpoint, parametrar, cURL-exempel och SDK-exempel för C#, Java, Python och mer."
+weight: 20
+---
 
-## RSET API
+Denna REST API kopierar ett kalkylblad och dess format till ett nytt kalkylblad inom samma arbetsbok.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/copy
- 
 ```
 
-Begäranparametrarna är:
+Följande parametrar används i begäran:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg||
-| arknamn| sträng| väg||
-| källark| sträng| fråga||
-| alternativ|| kropp||
-| källarbetsbok| sträng| fråga||
-| källmapp| sträng| fråga||
-| mapp| sträng| fråga||
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameter Name   | Typ    | Plats  | Beskrivning                                                              |
+| ---------------- | ------ | ------ | ------------------------------------------------------------------------ |
+| `name`           | string | path   | Namnet på arbetsboksfilen.                                               |
+| `sheetName`      | string | path   | Namnet på målkalkylbladet (det nya kalkylbladet).                        |
+| `sourceSheet`    | string | query  | Namnet på kalkylbladet som ska kopieras.                                 |
+| `options`        | object | body   | JSON-objekt som innehåller kopieringsalternativ (t.ex. kolumnbredd, formler). |
+| `sourceWorkbook` | string | query  | Namnet på källarbetsboken om den skiljer sig från den aktuella arbetsboken. |
+| `sourceFolder`   | string | query  | Mappbanan där källarbetsboken är lagrad.                                  |
+| `folder`         | string | query  | Mappbanan där målarbetsboken ska sparas.                                  |
+| `storageName`    | string | query  | Namnet på lagringstjänsten som ska användas.                             |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Exempel på begäran och svar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Du kan använda verktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/NewSheet/copy?sourceSheet=Sheet3X" \
--X POST \
--d "{ \"ColumnCharacterWidth\": true, \"CopyInvalidFormulasAsValues\": true, \"CopyNames\": true, \"ExtendToAdjacentRange\": true, \"ReferToDestinationSheet\": true, \"ReferToSheetWithSameName\": true}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -d '{ "ColumnCharacterWidth": true, "CopyInvalidFormulasAsValues": true, "CopyNames": true, "ExtendToAdjacentRange": true, "ReferToDestinationSheet": true, "ReferToSheetWithSameName": true}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Felhantering
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+API:et returnerar standard HTTP-statuskoder tillsammans med ett JSON-felmeddelande i brödtexten. Typiska svar inkluderar:
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+| HTTP-kod | Beskrivning                                                | Exempel på JSON-felbrödtext                                  |
+| -------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
+| 400      | Felaktig begäran – saknade eller ogiltiga parametrar.      | `{ "Code": 400, "Message": "Invalid request parameters." }`   |
+| 401      | Obehörig – saknad eller ogiltig token.                     | `{ "Code": 401, "Message": "Authentication failed." }`        |
+| 404      | Inte hittad – arbetsbok, kalkylblad eller mapp finns inte. | `{ "Code": 404, "Message": "Resource not found." }`           |
+| 500      | Internt serverfel – oväntat tillstånd.                     | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+
+## SDK-familj för molnet
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Se [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:n.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med hjälp av olika SDK:n:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

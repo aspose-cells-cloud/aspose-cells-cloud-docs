@@ -1,74 +1,95 @@
-﻿---
-title: Flytta vik
-second_title: Documen
-linktitle: Flytta vik
-type: docs
-url: /sv/move-folder/
-keywords: Move folder API, Excel API, Folder management, REST API, Aspose.Cells, Cloud storag
-description: Den här dokumentationen ger en omfattande guide till hur man använder Flytta mapp API för att hantera mappar inom molnlagringen Aspose.Cells.
-weight: 100
-kwords: Excel API, Flytta mapp API, Office Moln, REST API, Kalkylbladshantering, PDF, CSV, JSON, Markdown, Matcha alla tomma celler i ett Excel-kalkylblad
 ---
-## **Excel API: Flytta mapp**
+title: "Aspose.Cells Cloud Flyttmapp-API – Snabbt flytta mappar i molnet"
+secondtitle: "Dokument"
+ArticleTitle: "Molnbaserad Excel-filhantering – Snabbt flytta mappar i molnet"
+linktitle: "Flyttmapp"
+type: docs
+url: /move-folder/
+keywords: "Aspose.Cells, Flyttmapp, Molnlagring, Excel-API"
+description: "Lär dig hur du flyttar mappar i Aspose.Cells Cloud-lagring via REST-baserade Flyttmapp-API:et. Inkluderar slutpunkt, parametrar, exempel på cURL, felkoder och SDK-exempel för C#, Java, Python med mera."
+weight: 100
+---
 
+Detta API flyttar en mapp från en plats till en annan inom Aspose.Cells Cloud-lagring. Det hjälper till att organisera filer och hantera molnlagring effektivt.
+
+## **Excel-API: Flyttmapp**
+
+### Web API
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
 ```
-PUT http://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
+
+**Exempel på cURL-förfrågan**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/FolderA?destPath=FolderB" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
-### **Funktionsbeskrivning**
+### **Säkerhet och autentisering**
 
-Denna API låter användare flytta en mapp från en plats till en annan inom Aspose.Cells-molnlagringen. Det är viktigt för att organisera filer och hantera molnlagring effektivt.
+Aspose.Cells Cloud-API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-###  Begäranparametrarna för**flyttaMapp** API är
+### Begäranparametrarna för **moveFolder**-API:et är
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-text| Beskrivning|
-|----------------|--|------------------------|--------------------------------------------------------|
-| srcPath| Sträng| Väg| Källsökvägen för mappen som ska flyttas.|
-| destPath| Sträng| Fråga| Målsökvägen dit mappen ska flyttas.|
-| srcLagringsnamn| Sträng| Fråga| Namnet på källlagringen.|
-| destStorageName| Sträng| Fråga| Namnet på destinationslagringen.|
+| Parameter Name  | Type   | Location | Description                                                       |
+| --------------- | ------ | -------- | ----------------------------------------------------------------- |
+| srcPath         | string | Path     | Den fullständiga sökvägen till mappen som ska flyttas, t.ex. `FolderA/`. |
+| destPath        | string | Query    | Målsökvägen dit mappen ska flyttas, t.ex. `FolderB/`.            |
+| srcStorageName  | string | Query    | (Valfritt) Namn på källlagring.                                   |
+| destStorageName | string | Query    | (Valfritt) Namn på mållagring.                                    |
 
-### **Svarsbeskrivning**
+**Parameterbeskrivning**
 
-```json
-{
-Void
-}
-```
+- **srcPath** – obligatoriskt. Källmappens sökväg.
+- **destPath** – obligatoriskt. Målmappens sökväg.
+- **srcStorageName** – valfritt. Identifierare för källlagring.
+- **destStorageName** – valfritt. Identifierare för mållagring.
+
+### **Svar**
+
+Vid lyckad åtgärd returnerar API:et en tom svarskropp med HTTP-statuskod **200 OK**. Fel returneras som JSON-objekt som innehåller ett fält `error`.
+
+**HTTP-statuskoder**
+
+| HTTP Code | HTTP Status           | Description                                                       |
+| --------- | --------------------- | ----------------------------------------------------------------- |
+| 200       | OK                    | Web-API:et anropades utan problem; svaret innehåller åtgärd detaljer. |
+| 400       | Bad Request           | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401       | Unauthorized          | Ogiltig eller saknad JWT-token.                                   |
+| 413       | Payload Too Large     | Den uppladdade filen överskrider storleksgränsen.                 |
+| 500       | Internal Server Error | Oväntat serverfel.                                                |
 
 ## OpenAPI-specifikation
 
- De[OpenAPI-specifikation](https://reference.aspose.cloud/cells/#/FolderController/MoveFolder) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://reference.aspose.cloud/cells/#/FolderController/MoveFolder) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
-## Excel API SDK
+Du kan använda verktyget cURL för kommandoraden för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur du gör anrop till Cloud-API:et med cURL.
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+{{< tabs tabTotal="2" tabID="11" tabName11="Förfrågan" tabName12="Svar" >}}
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MoveFolder.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}?destPath={destPath}" \
+     -H "Authorization: Bearer {access_token}"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MoveFolder.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```json
+{}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MoveFolder.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MoveFolder.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MoveFolder.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MoveFolder.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MoveFolder.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MoveFolder.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Kolla in [GitHub-repositoriet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells webbtjänster med olika SDK:er:
+
+---

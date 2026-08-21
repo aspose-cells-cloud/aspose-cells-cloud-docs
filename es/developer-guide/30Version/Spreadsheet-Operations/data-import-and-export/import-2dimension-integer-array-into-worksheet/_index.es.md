@@ -1,63 +1,95 @@
-﻿---
-title: Importar una matriz de enteros de dos dimensiones a la hoja de trabajo Excel
-second_title: Documen
-linktitle: Importar matriz entera de 2 dimensiones
-type: docs
-url: /es/import-a-2D-integer-array-into-excel-worksheet/
-aliases: [/import-2dimension-integer-array-into-excel-worksheet/,/import-2dimension-integer-array-into-worksheet/, /import-data/2dimension-integer-array/, /import/2dimension-integer-array/]
-keywords: Import 2 dimension integer array data into Excel files
-description: Aspose.Cells Cloud REST API admite la importación de datos de matrices de enteros bidimensionales a archivos Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Importar matriz de enteros de 2 dimensiones a la hoja de cálculo Excel
 ---
-Esta hoja de trabajo REST API `import 2 dimension integer array data` en Excel.
+title: "Importar una matriz entera bidimensional en una hoja de cálculo de Excel"
+second_title: "Documento"
+linktitle: "Importar una matriz entera bidimensional"
+type: docs
+url: /import-a-2d-integer-array-into-excel-worksheet/
+aliases:
+  [
+    /import-2dimension-integer-array-into-excel-worksheet/,
+    /import-2dimension-integer-array-into-worksheet/,
+    /import-data/2dimension-integer-array/,
+    /import/2dimension-integer-array/,
+  ]
+keywords: "Aspose.Cells Cloud, importar matriz entera 2D, hoja de cálculo de Excel, API REST, SDK, Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
+description: "La API REST de Aspose.Cells Cloud permite importar matrices enteras bidimensionales en hojas de cálculo de Excel. Los SDKs están disponibles para Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby y Swift."
+weight: 20
+---
 
-La solicitud es una solicitud HTTP con contenido de varias partes (ver[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)o[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La primera parte del contenido multiparte contiene los datos de Import2DimensionIntegerArrayOption y la segunda contiene un archivo de datos.
+Esta **API REST importa una matriz entera bidimensional** en una hoja de cálculo de Excel.
+
+La solicitud es una solicitud HTTP con contenido multipart (consulte [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) o [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La primera parte del contenido multipart contiene los datos `Import2DimensionIntegerArrayOption`, y la segunda parte contiene el archivo de datos.
 
 Los parámetros importantes se describen en la siguiente tabla:
 
-## RSET API
+## API REST
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-**Importar2DimensionIntegerArrayOption**
+### **Seguridad y autenticación**
 
-|Nombre del parámetro|Tipo|Descripción|
-|:- |:- |:- |
-| Primera fila| entero||
-| Primera columna| entero||
-| Datos|Entero[,]||
-|Hoja de trabajo de destino| cadena| Nombre de la hoja de trabajo de destino.|
-| EsInsertar| cadena| verdadero/falso.|
-| Importar tipo de datos| cadena|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Fuente| Fuente del archivo| Indica la posición del archivo de datos cuando el parámetro BatchData es nulo.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
-**Ejemplo**
+### **Import2DimensionIntegerArrayOption**
+
+| Nombre del parámetro   | Tipo       | Descripción                                                                                                                                                                                  |
+| ---------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| FirstRow               | int        | Índice basado en 1 de la primera fila donde se colocarán los datos.                                                                                                                          |
+| FirstColumn            | int        | Índice basado en 1 de la primera columna donde se colocarán los datos.                                                                                                                       |
+| Data                   | Integer[,] | Matriz entera bidimensional que contiene los valores que se van a importar.                                                                                                                 |
+| DestinationWorksheet   | string     | Nombre de la hoja de cálculo de destino.                                                                                                                                                    |
+| IsInsert               | string     | `"true"` para insertar los datos (desplazando las celdas existentes), `"false"` para sobrescribir las celdas existentes.                                                                    |
+| ImportDataType         | string     | Especifica el formato de los datos. Valores admitidos: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
+| Source                 | FileSource | Indica la ubicación del archivo de datos cuando el parámetro `BatchData` es `null`.                                                                                                         |
+
+### **Ejemplo**
 
 ```json
 {
-    "Data": [
-        [1, 2],
-        [3, 4]
-    ],
-    "DestinationWorksheet": "Sheet2",
-    "FirstRow": 4,
-    "FirstColumn": 1,
-    "importDataType": "TwoDimensionIntArray"
+  "Data": [
+    [1, 2],
+    [3, 4]
+  ],
+  "DestinationWorksheet": "Sheet2",
+  "FirstRow": 4,
+  "FirstColumn": 1,
+  "ImportDataType": "TwoDimensionIntArray"
 }
-
 ```
 
-## Familia de SDK en la nube
+### Respuesta
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                                                 |
+|--------|-----------------------------|-----------------------------------------------------------------------------|
+| 200    | OK                          | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros faltantes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT inválido o faltante.                                              |
+| 413    | Carga útil demasiado grande | El archivo subido supera el límite de tamaño.                              |
+| 500    | Error interno del servidor  | Error inesperado en el servidor.                                            |
+
+## Cómo utilizar la API PostImportData con SDKs
+
+### Especificación de la API PostImportData
+
+La [Especificación OpenAPI](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData) define una interfaz de programación accesible públicamente que permite realizar interacciones REST directamente desde un navegador web.
+
+### Uso de los SDKs de Aspose.Cells Cloud
+
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK maneja los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDKs de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells mediante diversos SDKs:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

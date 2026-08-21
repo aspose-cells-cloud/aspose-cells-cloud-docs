@@ -1,77 +1,82 @@
-﻿---
-title: Fenster auf einem Arbeitsblatt Excel einfrieren
-second_title: Documen
-linktitle: Freez
-type: docs
-url: /de/worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/,/worksheets/freeze-panes/]
-keywords: Freeze panes on an Excel Worksheet
-description: Aspose.Cells Cloud REST API unterstützt das Einfrieren von Fenstern auf einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 190
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Fenster auf einem Excel Arbeitsblatt fixieren
 ---
-Dieser REST API gibt `set freeze panes` auf dem Arbeitsblatt Excel an.
- 
-## RSET API
- 
+title: "Einfrieren von Bereichen in einem Excel-Arbeitsblatt"
+second_title: "Dokument"
+linktitle: "Einfrieren"
+type: docs
+url: /worksheets/panes/freeze/
+aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+keywords: "Aspose.Cells Cloud, Einfrieren von Bereichen, Excel, REST API, Arbeitsblatt"
+description: "Erfahren Sie, wie Sie Zeilen und Spalten in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API einfrieren. Enthält die Endpunktsyntax, erforderliche Parameter, ein cURL-Beispiel, Anleitung zur Authentifizierung, Details zu Fehlerantworten und SDK-Codebeispiele für mehrere Sprachen."
+weight: 190
+---
+
+Diese REST API **setzt** eingefrorene Bereiche in einem Excel-Arbeitsblatt.
+
+## REST API
+
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
 ```
- Die Anforderungsparameter sind:
- 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg||
-| Blattname| Schnur| Weg||
-| Reihe| ganze Zahl| Abfrage||
-| Spalte| ganze Zahl| Abfrage||
-| eingefrorene Zeilen| ganze Zahl| Abfrage||
-| eingefrorene Spalten| ganze Zahl| Abfrage||
-| Ordner| Schnur| Abfrage||
-| Speichername| Schnur| Abfrage| Speichername.|
- 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetFreezePanes) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
- 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+Die Anforderungsparameter sind:
+
+| Parametername | Typ     | Ort     | Beschreibung                                            |
+| ------------- | ------- | ------- | ------------------------------------------------------- |
+| name          | string  | path    | Der Name der Arbeitsmappendatei.                        |
+| sheetName     | string  | path    | Der Name des Arbeitsblatts, in dem Bereiche eingefroren werden. |
+| row           | integer | query   | Nullbasierter Index der ersten **nicht eingefrorenen** Zeile. |
+| column        | integer | query   | Nullbasierter Index der ersten **nicht eingefrorenen** Spalte. |
+| frozenRows    | integer | query   | Anzahl der einzufrierenden Zeilen ab der obersten Zeile. |
+| frozenColumns | integer | query   | Anzahl der einzufrierenden Spalten ab der linken Spalte. |
+| folder        | string  | query   | Ordnerpfad im Speicher, in dem sich die Arbeitsmappe befindet. |
+| storageName   | string  | query   | Name des Speicherdienstes.                              |
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetFreezePanes) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
+
+Sie können das cURL-Befehlszeilentool verwenden, um Aspose.Cells-Webdienste problemlos aufzurufen. Das folgende Beispiel zeigt, wie Aufrufe an die Cloud-API mit cURL durchgeführt werden.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/freezepanes?row=1&column=1&freezedRows=1&freezedColumns=1" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/freezepanes?row=1&column=1&frozenRows=1&frozenColumns=1" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+### Fehlerantwort
+
+| HTTP-Status               | Code | Nachricht                       | Beispiel                                                  |
+| ------------------------- | ---- | ------------------------------- | --------------------------------------------------------- |
+| 400 Bad Request           | 400  | Ungültige Parameter             | `{ "Code": 400, "Message": "Ungültiger Wert für frozenRows" }` |
+| 401 Unauthorized          | 401  | Fehlender oder ungültiger JWT-Token | `{ "Code": 401, "Message": "Ungültiges Zugriffstoken" }` |
+| 404 Not Found             | 404  | Arbeitsmappe oder Arbeitsblatt nicht gefunden | `{ "Code": 404, "Message": "Datei nicht gefunden" }` |
+| 500 Internal Server Error | 500  | Unerwarteter Serverfehler       | `{ "Code": 500, "Message": "Interner Serverfehler" }`    |
+
 ## Cloud SDK-Familie
- 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
- 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
- 
+
+Die Verwendung eines SDK ist die beste Möglichkeit, die Entwicklungszeit zu verkürzen. Ein SDK übernimmt die Low-Level-Details, sodass Sie sich auf Ihre Projekt Aufgaben konzentrieren können. Besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
+
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste mithilfe verschiedener SDKs durchgeführt werden:
+
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}

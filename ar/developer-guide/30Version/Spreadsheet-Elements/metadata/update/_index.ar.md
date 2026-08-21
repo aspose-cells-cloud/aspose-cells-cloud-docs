@@ -1,73 +1,78 @@
-﻿---
-title: تحديث البيانات الوصفية
-second_title: Documen
-linktitle: التحديث دون استخدام التخزين
-type: docs
-url: /ar/metadata/update/
-keywords: Update metadata on excel files
-description: يدعم Cloud REST تحديث البيانات الوصفية في ملفات Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 35
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تحديث البيانات الوصفية
 ---
-يشير هذا REST API إلى تحديث `metadata` من ملفات Excel المتعددة.
+title: "تحديث البيانات الوصفية"
+second_title: "مستند"
+linktitle: "تحديث بدون استخدام التخزين"
+type: docs
+url: /metadata/update/
+keywords: "البيانات الوصفية، إكسل، Aspose.Cells Cloud، REST API، تحديث، جدول بيانات"
+description: "تتيح واجهة Aspose.Cells Cloud REST تحديث البيانات الوصفية في ملفات إكسل. وتدعم مجموعة واسعة من SDKs (C#، Java، Python، Ruby، Go، إلخ) لدمجٍ سلس عبر لغات البرمجة المختلفة."
+weight: 35
+ArticleTitle: "تحديث البيانات الوصفية – مستندات واجهة برمجة تطبيقات Aspose.Cells Cloud"
+---
 
-## RSET API
+تقوم هذه الواجهة REST بتحديث **البيانات الوصفية** في ملفات إكسل متعددة.
+
+**المتطلبات المسبقة:** حساب Aspose Cloud نشط، ورمز وصول JWT صالح، وملفات إكسل المراد رفعها.
+
+## واجهة برمجة التطبيقات REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/metadata/update
- 
+POST https://api.aspose.cloud/v3.0/cells/metadata/update
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| ملف| ملف| نموذج البيانات| الملف للتحميل|
-| خصائص المستند|| جسم| Cells وثيقة الملكية.|
+تُعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PostMetadata) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل         | النوع   | الموقع          | الوصف                                        |
+| ------------------ | ------ | --------------- | --------------------------------------------- |
+| file               | ملف    | formData        | ملف إكسل المراد رفعه.                         |
+| DocumentProperties | كائن   | جسم الطلب (JSON) | خصائص المستند المراد تعيينها لملف إكسل.     |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**ملاحظات:** يمكن رفع ما يصل إلى 10 ملفات في طلب واحد. التنسيقات المدعومة تشمل `.xlsx` و`.xls` و`.csv`. ولا يجوز أن يتجاوز حجم الطلب الإجمالي 100 ميغابايت.
+
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PostMetadata) واجهة برمجة تطبيقات عامة قابلة للوصول، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات لواجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/metadata/update" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'  \
--d '[{name="test",value="test"}]'
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/metadata/update" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'xxxxx1=@xxxx1.xlsx' \
+  -F 'xxxxx2=@xxxx2.xlsx' \
+  -d '[{ "name": "test", "value": "test" }]'
 ```
+
+يتطلب الطلب رأس **Authorization** يحتوي على رمز Bearer JWT. تأكد من توليد الرمز باستخدام بيانات اعتماد عميل Aspose Cloud الخاصة بك.
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
@@ -76,9 +81,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/metadata/update" \
 
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. فتتولى SDK معالجة التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs لـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات الويب Aspose.Cells باستخدام مكتبات SDK متنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -131,3 +136,8 @@ curl -v "http://api.aspose.cloud/v3.0/cells/metadata/update" \
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**انظر أيضًا:**  
+- [الحصول على البيانات الوصفية](/metadata/get/)  
+- [حذف البيانات الوصفية](/metadata/delete/)  
+---

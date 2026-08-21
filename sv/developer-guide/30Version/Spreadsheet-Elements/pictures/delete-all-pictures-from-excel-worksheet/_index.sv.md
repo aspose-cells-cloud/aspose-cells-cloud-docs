@@ -1,73 +1,90 @@
-﻿---
-title: Ta bort alla bilder i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Clea
+---
+title: "Ta bort alla bilder i ett Excel-arbetsblad"
+second_title: "Document"
+linktype: "Clear"
 type: docs
 url: /sv/pictures/clear/
-aliases: [/delete-all-pictures-from-excel-worksheet/]
-keywords: Delete all pictures in an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder borttagning av alla bilder i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+aliases: [/sv/delete-all-pictures-from-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, ta bort alla bilder, arbetsblad, REST API, rensa bilder"
+description: "Lär dig hur du tar bort alla bilder från ett Excel-arbetsblad med Aspose.Cells Cloud REST API, inklusive exempel med cURL och SDK:er."
 weight: 60
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ta bort alla bilder i ett Excel-kalkylblad
+ArticleTitle: "Hur man tar bort alla bilder i ett Excel-arbetsblad med Aspose.Cells Cloud"
 ---
-Denna REST API indikerar `delete` `all` bilder i arbetsbladet.
 
-## RSET API
+Denna REST API tar bort **alla** bilder från ett arbetsblad.
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
- 
+**Förutsättningar**  
+- Ett aktivt Aspose.Cells Cloud-konto med en giltig OAuth 2.0-åtkomsttoken.  
+- API-version 3.0 (eller senare) krävs; tidigare versioner är föråldrade.  
+- Den målsatta Excel-filen måste lagras i en stödd lagringsplats (standard eller anpassad).
+
+**Versionstillämplighet**  
+Slutpunkten följer Cells Cloud 3.0 API-specifikationen. Se till att dina klientbibliotek och begärande-URL:er riktar sig till `api.aspose.cloud/v3.0`.
+
+## DeleteWorksheetPictures API
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Begäranparametrar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameternamn | Typ   | Plats  | Beskrivning                                      |
+| ------------- | ----- | ------ | ------------------------------------------------ |
+| name          | string | Sökväg | Namn på Excel-filen.                             |
+| sheetName     | string | Sökväg | Namn på arbetsbladet som innehåller bilder.      |
+| folder        | string | Fråga  | Mapp där filen lagras.                           |
+| storageName   | string | Fråga  | Namn på lagringstjänsten.                        |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### Felrespons
+
+| HTTP-kod | Beskrivning                                                             |
+| -------- | ----------------------------------------------------------------------- |
+| 401      | Inte auktoriserad – token saknas eller är ogiltig.                     |
+| 404      | Hittades inte – den angivna filen, arbetsbladet eller sidbrytningsindexet finns inte. |
+| 400      | Felaktig begäran – felaktig syntax eller ogiltiga parametrar.          |
+| 500      | Internt serverfel – ett oväntat tillstånd uppstod.                     |
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man anropar API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetName}/pictures" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## Molnsdk-familj
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK hanterar detaljer på lågnivå så att du kan fokusera på din affärslogik. Se [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +137,10 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Anteckningar:** DELETE-åtgärden stöder inte paginering och är underliegande de vanliga rate limits för Aspose.Cells Cloud API (standard: 100 begäranden per minut). Justera din klientlogik därefter.
+
+**Se även**:  
+- [/pictures/delete/](../delete/) – Ta bort en specifik bild från ett arbetsblad.  
+- [/pictures/add/](../add/) – Lägg till en bild i ett arbetsblad.  
+---

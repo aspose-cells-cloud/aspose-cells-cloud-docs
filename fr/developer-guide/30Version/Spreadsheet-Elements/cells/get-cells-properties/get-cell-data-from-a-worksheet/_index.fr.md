@@ -1,99 +1,73 @@
-﻿---
-title: Obtenir des données cellulaires à partir d'une feuille de calcul
-type: docs
-url: /fr/get-cell-data-from-a-worksheet/
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Récupérer les données d'une cellule à partir d'une feuille de calcul
 ---
-Ce REST API indique qu'il faut obtenir un `cell` dans un fichier Excel lorsque le paramètre `cellOrMethodName` est le nom de la cellule.
+title: "Obtenir les données d'une cellule à partir d'une feuille de calcul"
+type: docs
+url: /get-cell-data-from-a-worksheet/
+weight: 10
+keywords: "Aspose.Cells Cloud, obtenir les données d'une cellule, API Excel, API REST, valeur de cellule, API feuille de calcul, exemple Aspose API"
+description: "Récupérer la valeur, le type et le style d'une cellule unique à partir d'une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut des exemples cURL et SDK, les paramètres et la gestion des erreurs."
+---
 
-- **cURL Exemple**
+Cet API REST récupère une cellule à partir d’une feuille de calcul Excel lorsque le paramètre **`cellOrMethodName`** spécifie un nom de cellule (une adresse au format A1, comme `A3`).
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+- **Exemple cURL**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?client_id=xxxx&client_secret=xxxx" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```shell
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+**Paramètres**
+
+| Paramètre          | Type   | Description                                               | Obligatoire |
+|--------------------|--------|-----------------------------------------------------------|-------------|
+| `cellOrMethodName` | chaîne | Doit être défini sur `firstcell` pour récupérer la première cellule. | Oui         |
+| `fileName`         | chaîne | Nom du fichier du classeur (par exemple, `myWorkbook.xlsx`). | Oui         |
+| `worksheet`        | chaîne | Nom de la feuille de calcul (par exemple, `Sheet1`).    | Oui         |
+| `Authorization`    | en-tête | Jeton Bearer pour l’authentification.                    | Oui         |
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "A3",
-
     "Row": 2,
-
     "Column": 0,
-
-    "Value": "Statistical",
-
+    "Value": "Catégorie",
     "Type": "IsString",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
-    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">Statistical</Font>",
-
+    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Catégorie</Font>",
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
-    },
-
-    "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3",
-
-      "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Famille de SDK Cloud**
-
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
-
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+- **Utiliser les SDK Aspose.Cells Cloud**
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -146,3 +120,5 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---

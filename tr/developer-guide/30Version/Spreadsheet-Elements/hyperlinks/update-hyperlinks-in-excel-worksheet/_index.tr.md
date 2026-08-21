@@ -1,126 +1,205 @@
-﻿---
-title: Güncelleme
-type: docs
-url: /tr/hyperlinks/update/
-aliases: [/update-hyperlinks-in-excel-worksheet/]
-keywords: Update a hyperlink in an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki bir köprüyü güncellemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 30
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Güncelleme
 ---
-Bu REST API, Excel çalışma sayfasında indeks yoluyla `update worksheet hyperlink`'i gösterir.
+title: "Bir Excel Çalışma Sayfasında Bağlantıyı Güncelle – Aspose.Cells Cloud API Kılavuzu"
+description: "Aspose.Cells Cloud REST API'sini (v3.0) kullanarak bir Excel çalışma sayfasındaki bir bağlantıyı nasıl güncelleyeceğinizi öğrenin. Uç nokta, parametreler, istek gövdesi şeması, cURL örneği, SDK kod parçacıkları, hata işleme, hız sınırlama ve ön koşullar içerir."
+keywords:
+  - "Aspose.Cells"
+  - "bağlantı güncelleme"
+  - "Excel API"
+  - "REST API"
+  - "bulut çalışma tablosu"
+  - "v3.0"
+weight: 30
+aliases:
+  - /hyperlinks/update/
+  - /update-hyperlinks-in-excel-worksheet/
+---
 
-## RSET API
+# Bir Excel Çalışma Sayfasında Bağlantıyı Güncelle  
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
- 
+**API sürümü:** v3.0  
+
+**PostWorksheetHyperlink** işlemi, sıfır tabanlı diziniyle belirtilen bir çalışma sayfasındaki mevcut bir bağlantıyı günceller.
+
+---
+
+## İçindekiler
+1. [Ön Koşullar](#ön-koşullar)  
+2. [Hız Sınırlama](#hız-sınırlama)  
+3. [Uç Nokta](#uç-nokta)  
+4. [Parametreler](#parametreler)  
+   - [Yol parametreleri](#yol-parametreleri)  
+   - [Sorgu parametreleri](#sorgu-parametreleri)  
+   - [İstek gövdesi şeması](#istek-gövdesi-şeması)  
+5. [Yanıtlar](#yanıtlar)  
+   - [Başarılı](#başarılı-yanıt)  
+   - [Hata yanıtları](#hata-yanıtları)  
+6. [cURL Örneği](#curl-örneği)  
+7. [SDK Kod Parçacıkları](#sdk-kod-parçacıkları)  
+8. [Ayrıca Bkz.](#ayrıca-bkz.)  
+
+---
+
+## Ön Koşullar <a name="ön-koşullar"></a>
+
+| Gereksinim | Açıklama |
+|------------|----------|
+| **Kimlik Doğrulama** | JWT belirteci tabanlı kimlik doğrulama. Belirteci almak için [Kimlik Doğrulama Kılavuzu](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) sayfasını inceleyin. |
+| **Depolama** | Çalışma kitabının desteklenen bir Aspose Cloud deposunda saklanmalıdır (varsayılan: **Default**). |
+| **İzinler** | JWT belirtecinin hedef çalışma kitabını okuma ve yazma iznine sahip olması gerekir. |
+| **Üst Bilgiler** | Tüm istekler için `Content-Type: application/json` ve `Accept: application/json` üst bilgileri gereklidir. |
+
+---
+
+## Hız Sınırlama <a name="hız-sınırlama"></a>
+
+Aspose.Cells Cloud, **her erişim belirteci başına maksimum 60 istek/dakika** sınırını uygular. Bu sınıra aşılması durumunda HTTP **429 Too Many Requests** (Çok Fazla İstek) hatası döndürülür. Sıkıştırma durumunda üstel geri dönüş stratejisi uygulayın veya `Retry-After` üstbilgisine uyun.
+
+---
+
+## Uç Nokta <a name="uç-nokta"></a>
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
 ```
 
-İstek parametreleri şunlardır:
+*`name` dosyasının `sheetName` çalışma sayfasındaki `hyperlinkIndex` dizinli bağlantıyı günceller.*
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| hiperlinkIndeks| tam sayı| yol| Bağlantının indeksi.|
-| hiper bağlantı|| vücut| Köprü nesnesi|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+---
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Hypelinks/PostWorksheetHyperlink) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+## Parametreler <a name="parametreler"></a>
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### Yol parametreleri <a name="yol-parametreleri"></a>
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Ad              | Tür    | Gerekli | Açıklama |
+|-----------------|--------|---------|----------|
+| `name`          | string | ✅ | Excel dosyasının adı (uzantısı dahil). |
+| `sheetName`     | string | ✅ | Bağlantının bulunduğu çalışma sayfasının adı. |
+| `hyperlinkIndex`| integer| ✅ | Güncellenecek bağlantının sıfır tabanlı dizini. |
 
-{{< tab tabNum="11" >}}
+### Sorgu parametreleri <a name="sorgu-parametreleri"></a>
 
-```java
+| Ad             | Tür    | Gerekli | Açıklama |
+|----------------|--------|---------|----------|
+| `folder`       | string | ❌ | Çalışma kitabının bulunduğu deponun klasör yolu. |
+| `storageName`  | string | ❌ | Depolama hizmetinin adı (örneğin, `Default`). |
 
-curl -v  "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks/1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"Hyperlink\": { \"Address\": \"https://www.msnbc.com/\", \"Area\": { \"EndColumn\": 6, \"EndRow\": 1, \"StartColumn\": 6, \"StartRow\": 1 }, \"ScreenTip\": null, \"TextToDisplay\": \"https://www.msnbc.com/\", \"link\": { \"Href\": \"/test.xlsx/worksheets/Sheet1/hyperlinks/4\", \"Rel\": \"self\", \"Title\": null, \"Type\": null } }, \"Code\": 200, \"Status\": \"OK\"}"
+### İstek gövdesi şeması <a name="istek-gövdesi-şeması"></a>
 
-```
+İstek gövdesi bir **`hyperlink`** nesnesi içermelidir. Değiştirmek istediğiniz alanları sağlamanız yeterlidir; atlanan isteğe bağlı alanlar mevcut değerlerini korur.
 
-{{< /tab >}}
+| Alan          | Tür    | Gerekli | Açıklama |
+|---------------|--------|---------|----------|
+| `Address`     | string | ✅ | Bağlantının hedef URL'si. |
+| `Area`        | object | ✅ | Bağlantının yerleştirildiği hücre aralığı. `StartRow`, `StartColumn`, `EndRow`, `EndColumn` (tümü tamsayı, sıfır tabanlı) içermelidir. |
+| `ScreenTip`   | string | ❌ | Fare imleci üzerine getirildiğinde gösterilen araç ipucu metni. |
+| `TextToDisplay`| string| ❌ | Hücre içinde gösterilen metin. |
+| `link`        | object| ❌ | Hiperlink bağlantıları (`Href`, `Rel`, `Title`, `Type`). Genellikle istek yüklerinde atlanır. |
 
-{{< tab tabNum="12" >}}
+**`Area` nesne tanımı**
 
-```java
+| Alt Alan      | Tür    | Gerekli | Açıklama |
+|---------------|--------|---------|----------|
+| `StartRow`    | integer| ✅ | Sıfır tabanlı başlangıç satır dizini. |
+| `StartColumn` | integer| ✅ | Sıfır tabanlı başlangıç sütun dizini. |
+| `EndRow`      | integer| ✅ | Sıfır tabanlı bitiş satır dizini. |
+| `EndColumn`   | integer| ✅ | Sıfır tabanlı bitiş sütun dizini. |
 
+---
+
+## Yanıtlar <a name="yanıtlar"></a>
+
+### Başarılı yanıt <a name="başarılı-yanıt"></a>
+
+| Alan    | Tür    | Açıklama |
+|---------|--------|----------|
+| `Code`  | integer| HTTP durum kodu (başarı için 200). |
+| `Status`| string | Metinsel durum (`OK`). |
+| `Hyperlink`| object (isteğe bağlı) | `link` alt nesnesi istendiğinde döndürülen güncellenmiş bağlantı nesnesi. |
+
+**Örnek JSON**
+
+```json
 {
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+### Hata yanıtları <a name="hata-yanıtları"></a>
 
-{{< /tabs >}}
+| HTTP Kodu | Neden | Örnek Gövde |
+|-----------|-------|-------------|
+| **400** | Hatalı İstek – eksik veya geçersiz parametreler. | `{ "Code":"400", "Message":"Geçersiz parametre değeri." }` |
+| **401** | Yetkisiz – eksik veya geçersiz JWT belirteci. | `{ "Code":"401", "Message":"Erişim belirteci eksik veya geçersiz." }` |
+| **404** | Bulunamadı – çalışma kitabısı, çalışma sayfası veya bağlantı mevcut değil. | `{ "Code":"404", "Message":"Dosya bulunamadı." }` |
+| **429** | Çok Fazla İstek – hız sınırı aşıldı. | `{ "Code":"429", "Message":"İstek sınırı aşıldı. Daha sonra tekrar deneyin." }` |
+| **500** | İç Sunucu Hatası – beklenmeyen sunucu hatası. | `{ "Code":"500", "Message":"Beklenmeyen bir hata oluştu." }` |
 
-## Bulut SDK Ailesi
+---
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+## cURL Örneği <a name="curl-örneği"></a>
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+```bash
+curl -L -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks/1" \
+  -H "Authorization: Bearer <YOUR_JWT_TOKEN>" \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -d '{
+        "hyperlink": {
+          "Address": "https://www.msnbc.com/",
+          "Area": {
+            "StartRow": 1,
+            "StartColumn": 6,
+            "EndRow": 1,
+            "EndColumn": 6
+          },
+          "ScreenTip": "MSNBC ana sayfa",
+          "TextToDisplay": "MSNBC"
+        },
+        "folder": "samples",
+        "storageName": "Default"
+      }'
+```
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+**Yanıt**
 
-{{< tab tabNum="1" >}}
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostWorksheetHyperlink.cs" >}}
+*İpucu:* JSON yükünü bir dosyaya (örneğin `payload.json`) kaydedip temiz kopyalama/yapıştırma için `--data @payload.json` kullanın.
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="2" >}}
+## SDK Kod Parçacıkları <a name="sdk-kod-parçacıkları"></a>
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostWorksheetHyperlink.java" >}}
+Aşağıdaki kod parçacıkları, resmi Aspose.Cells Cloud SDK’larını kullanarak **PostWorksheetHyperlink** işlemini nasıl çağıracağınızı göstermektedir. Yer tutucu değerleri (`<YOUR_JWT_TOKEN>`, `<FILE_NAME>` vb.) gerçek verilerle değiştirin.
 
-{{< /tab >}}
+| Dil | Örnek |
+|-----|-------|
+| **C#** | ```csharp\nvar api = new CellsApi("<client_id>", "<client_secret>");\nvar hyperlink = new Hyperlink {\n    Address = \"https://www.msnbc.com/\",\n    Area = new LinkArea { StartRow = 1, StartColumn = 6, EndRow = 1, EndColumn = 6 },\n    ScreenTip = \"MSNBC ana sayfa\",\n    TextToDisplay = \"MSNBC\"\n};\nvar response = api.PostWorksheetHyperlink(\"test.xlsx\", \"Sheet1\", 1, hyperlink, folder: \"samples\");\n``` |
+| **Java** | ```java\nCellsApi api = new CellsApi(clientId, clientSecret);\nHyperlink hyperlink = new Hyperlink();\nhyperlink.setAddress(\"https://www.msnbc.com/\");\nLinkArea area = new LinkArea();\narea.setStartRow(1);\narea.setStartColumn(6);\narea.setEndRow(1);\narea.setEndColumn(6);\nhyperlink.setArea(area);\nhyperlink.setScreenTip(\"MSNBC ana sayfa\");\nhyperlink.setTextToDisplay(\"MSNBC\");\nCellsCloudResponse resp = api.postWorksheetHyperlink(\"test.xlsx\", \"Sheet1\", 1, hyperlink, \"samples\", null);\n``` |
+| **Python** | ```python\nimport asposecellscloud\nfrom asposecellscloud.apis.cells_api import CellsApi\napi = CellsApi(client_id, client_secret)\nhyperlink = asposecellscloud.models.Hyperlink(\n    address=\"https://www.msnbc.com/\",\n    area=asposecellscloud.models.LinkArea(start_row=1, start_column=6, end_row=1, end_column=6),\n    screen_tip=\"MSNBC ana sayfa\",\n    text_to_display=\"MSNBC\"\n)\nresponse = api.post_worksheet_hyperlink(\"test.xlsx\", \"Sheet1\", 1, hyperlink, folder=\"samples\")\n``` |
+| **Node.js** | ```javascript\nconst { CellsApi, Hyperlink, LinkArea } = require('asposecellscloud');\nconst api = new CellsApi(clientId, clientSecret);\nlet hyperlink = new Hyperlink({\n  address: 'https://www.msnbc.com/',\n  area: new LinkArea({ startRow: 1, startColumn: 6, endRow: 1, endColumn: 6 }),\n  screenTip: 'MSNBC ana sayfa',\n  textToDisplay: 'MSNBC'\n});\napi.postWorksheetHyperlink('test.xlsx', 'Sheet1', 1, hyperlink, { folder: 'samples' })\n  .then(resp => console.log(resp));\n``` |
+| **Go** | ```go\nimport (\n    \"github.com/asposecellscloud/aspose-cells-cloud-go/v3\"\n    \"github.com/asposecellscloud/aspose-cells-cloud-go/v3/api\"\n)\nclient := api.NewCellsApiClient(clientId, clientSecret)\narea := asposecellscloud.LinkArea{StartRow: 1, StartColumn: 6, EndRow: 1, EndColumn: 6}\nhyperlink := asposecellscloud.Hyperlink{Address: \"https://www.msnbc.com/\", Area: &area, ScreenTip: \"MSNBC ana sayfa\", TextToDisplay: \"MSNBC\"}\nresp, _ := client.PostWorksheetHyperlink(\"test.xlsx\", \"Sheet1\", 1, hyperlink, \"samples\", \"\")\nfmt.Println(resp)\n``` |
+| **PHP** | ```php\n<?php\nrequire_once('vendor/autoload.php');\nuse Aspose\Cells\CellsApi;\n$api = new CellsApi($clientId, $clientSecret);\n$hyperlink = new \\Aspose\\Cells\\Model\\Hyperlink();\n$hyperlink->setAddress('https://www.msnbc.com/');\n$area = new \\Aspose\\Cells\\Model\\LinkArea();\n$area->setStartRow(1);\n$area->setStartColumn(6);\n$area->setEndRow(1);\n$area->setEndColumn(6);\n$hyperlink->setArea($area);\n$hyperlink->setScreenTip('MSNBC ana sayfa');\n$hyperlink->setTextToDisplay('MSNBC');\n$response = $api->postWorksheetHyperlink('test.xlsx', 'Sheet1', 1, $hyperlink, 'samples');\nprint_r($response);\n?>\n``` |
+| **Ruby** | ```ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::CellsApi.new(client_id: CLIENT_ID, client_secret: CLIENT_SECRET)\nhyperlink = AsposeCellsCloud::Hyperlink.new(\n  address: 'https://www.msnbc.com/',\n  area: AsposeCellsCloud::LinkArea.new(start_row: 1, start_column: 6, end_row: 1, end_column: 6),\n  screen_tip: 'MSNBC ana sayfa',\n  text_to_display: 'MSNBC'\n)\nresult = api.post_worksheet_hyperlink('test.xlsx', 'Sheet1', 1, hyperlink, folder: 'samples')\nputs result\n``` |
+| **Perl** | ```perl\nuse AsposeCellsCloud::CellsApi;\nmy $api = AsposeCellsCloud::CellsApi->new(client_id => $client_id, client_secret => $client_secret);\nmy $area = AsposeCellsCloud::LinkArea->new(startRow => 1, startColumn => 6, endRow => 1, endColumn => 6);\nmy $hyperlink = AsposeCellsCloud::Hyperlink->new(address => 'https://www.msnbc.com/', area => $area, screenTip => 'MSNBC ana sayfa', textToDisplay => 'MSNBC');\nmy $resp = $api->post_worksheet_hyperlink(name=>'test.xlsx', sheetName=>'Sheet1', hyperlinkIndex=>1, hyperlink=>$hyperlink, folder=>'samples');\nprint $resp->{Code}, \" \", $resp->{Status}, \"\\n\";\n``` |
 
-{{< tab tabNum="3" >}}
+*Tüm SDK’lar açık kaynaklıdır ve [Aspose.Cells Cloud GitHub deposunda](https://github.com/aspose-cells-cloud) bulunabilir.*
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostWorksheetHyperlink.php" >}}
+---
 
-{{< /tab >}}
+## Ayrıca Bkz. <a name="ayrıca-bkz."></a>
 
-{{< tab tabNum="4" >}}
+- **Kimlik Doğrulama** – [JWT belirteçleri ile başlangıç](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
+- **Depolama işlemleri** – [Bir dosya yükleme](https://apireference.aspose.cloud/cells/#/Storage/UploadFile)  
+- **Diğer bağlantı işlemleri** – [Bağlantı ekleme](https://apireference.aspose.cloud/cells/#/Hyperlinks/PostWorksheetHyperlink) | [Bağlantı silme](https://apireference.aspose.cloud/cells/#/Hyperlinks/DeleteWorksheetHyperlink)  
+- **OpenAPI Spesifikasyonu** – Uç noktanın tam tanımı: <https://apireference.aspose.cloud/cells/#/Hyperlinks/PostWorksheetHyperlink>  
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostWorksheetHyperlink.rb" >}}
+--- 
 
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostWorksheetHyperlink.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostWorksheetHyperlink.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostWorksheetHyperlink.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostWorksheetHyperlink.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+*Belge son güncelleme tarihi: 2026‑07‑30*

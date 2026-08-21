@@ -1,84 +1,93 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Sostituisci il contenuto del foglio di lavoro nel foglio di calcolo remoto
-second_title: Documen
-ArticleTitle: Replace Worksheet Content in Remote a Spreadshee
-linktitle: Sostituisci il contenuto del foglio di lavoro remoto
-type: docs
-url: /it/replace-content-in-remote-worksheet/
-keywords: Aspose.Cells Cloud Web API, Replace Content, Remote Worksheet, Cloud Spreadsheet, Text Replacement, Office Cloud Integratio
-description: Sostituisci in modo efficiente il testo nel foglio di lavoro di un foglio di calcolo remoto utilizzando Aspose.Cells API
-weight: 100
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, JSON, Markdown, Abbina tutte le celle vuote in un foglio di lavoro Excel, ReplaceContentInRemoteWorksheet
 ---
-Sostituisci in modo efficiente il testo specificato all'interno di un foglio di lavoro di un file di foglio di calcolo remoto.
+title: "Aspose.Cells Cloud Replace Web API – Aggiorna il testo in un foglio di calcolo remoto"
+second_title: "Documento"
+ArticleTitle: "Trova e sostituisci il testo in un foglio di calcolo remoto con l'API Aspose.Cells Cloud"
+linktitle: "Sostituisci il contenuto di un foglio di calcolo remoto"
+type: docs
+url: /replace-content-in-remote-worksheet/
+keywords: "Aspose.Cells, sostituisci testo, foglio di calcolo remoto, API Excel, foglio di calcolo cloud, trova e sostituisci, API REST"
+description: "Sostituisci il testo in un foglio di calcolo specifico di un file Excel archiviato su Aspose Cloud. Supporta cartelle di lavoro protette da password, ricerche sensibili alla regione e aggiornamenti in blocco."
+weight: 100
+---
 
-## **Sostituisci il contenuto nel foglio di lavoro remoto API**
+Sostituisci un determinato testo all'interno di un foglio di calcolo specifico di file Excel remoti. Aggiorna il contenuto in fogli di calcolo selezionati in modo efficiente utilizzando l'API di Aspose.Cells per la ricerca e sostituzione, per una modifica precisa dei fogli di calcolo.
 
+## **API per la sostituzione del contenuto in un foglio di calcolo remoto**
+
+### **API Web**
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/replace/content
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/replace/content
+
+### **Sicurezza e autenticazione**
+
+Le API di Aspose.Cells Cloud sono sicure e richiedono <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">l'autenticazione basata su token JWT</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
-### **Parametri di richiesta:**
+### **Parametri della richiesta**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP| Descrizione|
-|:- |:- |:- |:- |
-| nome| Corda| Sentiero| Nome del file della cartella di lavoro da modificare.|
-| foglio di lavoro| Corda| Sentiero| Specificare il foglio di lavoro per la sostituzione.|
-| testo di ricerca| Corda| Domanda| Il testo da cercare nel foglio di lavoro.|
-| sostituisciTesto| Corda| Domanda| Il testo con cui sostituire il testo cercato.|
-| cartella| Corda| Domanda| Percorso della cartella in cui è archiviata la cartella di lavoro.|
-| Nome di archiviazione| Corda| Domanda|(Facoltativo) Il nome dell'archivio se si utilizza un archivio cloud personalizzato. Se omesso, utilizzare l'archivio predefinito.|
-| regione| Corda| Domanda| Impostazione della regione del foglio di calcolo.|
-| password| Corda| Domanda| La password per aprire il file del foglio di calcolo.|
+| Nome parametro | Tipo   | Percorso/Query string/Corpo HTTP | Descrizione                                                                                                                                                              |
+| :------------- | :----- | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| name           | String | Percorso                       | Il nome del file della cartella di lavoro archiviato nell'archivio cloud da modificare (ad esempio, `"sales_report.xlsx"`, `"budget_2024.xls"`).                          |
+| worksheet      | String | Percorso                       | Il nome del foglio di calcolo specifico in cui verrà eseguita l'operazione di ricerca e sostituzione (ad esempio, `"Q1_Sales"`, `"Sheet1"`).                               |
+| searchText     | String | Query                      | La stringa di testo da cercare all'interno del foglio di calcolo specificato. La ricerca si applica a tutte le celle del foglio di calcolo, a meno che non venga ulteriormente limitata. |
+| replaceText    | String | Query                      | La stringa di testo che sostituirà tutte le occorrenze di `searchText` trovate all'interno del foglio di calcolo specificato.                                              |
+| folder         | String | Query                      | Il percorso della cartella nell'archivio cloud in cui si trova la cartella di lavoro di origine (ad esempio, `"/reports/monthly/"`, `"/finance/"`).                       |
+| storageName    | String | Query                      | _(Facoltativo)_ Il nome dell'archivio cloud personalizzato (ad esempio, `"CorporateS3"`, `"AzureArchive"`). Se omesso, verrà utilizzato l'archivio cloud predefinito del tuo account. |
+| region         | String | Query                      | _(Facoltativo)_ Imposta la localizzazione per la gestione del testo, che potrebbe influenzare la codifica dei caratteri e il comportamento della ricerca specifico della lingua all'interno del foglio di calcolo (ad esempio, `"en-GB"`, `"es-ES"`). |
+| password       | String | Query                      | _(Facoltativo)_ Se la cartella di lavoro è protetta da password, fornisci la password per aprirla e modificarla.                                                          |
+
+**Esempio di richiesta (cURL)**  
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/sales_report.xlsx/worksheets/Sheet1/replace/content?searchText=OldValue&replaceText=NewValue&folder=/reports" \
+     -H "Authorization: Bearer {access_token}"
+```
 
 ### **Risposta**
 
 ```json
 {
-  "Name": "CellsCloudResponse",
-  "Type": "Class",
-  "Properties": [
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
-    }
-  ]
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
-### Codici di errore
+### **Codici di errore**
 
-- **400 Richiesta non valida**: URI Apose.Cells Cloud API non valido.
-- **401 Non autorizzato**: Token di accesso non valido. Oppure ID client e segreto non validi.
-- **404 Non trovato**: Il file del foglio di calcolo non è accessibile.
-- **Errore del server 500**: Il foglio di calcolo ha riscontrato un'anomalia nell'ottenimento dei dati di calcolo.
+| Codice | Descrizione                              | Quando si verifica                                                   |
+|--------|------------------------------------------|-----------------------------------------------------------------------|
+| 400    | Richiesta non valida                     | L'URI della richiesta è malformato o mancano parametri obbligatori. |
+| 401    | Non autorizzato                          | Il token di accesso è mancante, non valido o le credenziali del client sono errate. |
+| 404    | Non trovato                              | La cartella di lavoro o il foglio di calcolo specificato non può essere trovato. |
+| 500    | Errore interno del server                | Si è verificato un errore imprevisto durante l'elaborazione della richiesta. |
 
-## Dove dovremmo usare il contenuto Sostituisci del foglio di lavoro nel foglio di calcolo remoto API?
+## Dove dovremmo utilizzare l'API per la sostituzione del contenuto del foglio di calcolo in un foglio di calcolo remoto?
 
-Quando è necessario sostituire il contenuto del foglio di lavoro in un foglio di calcolo remoto, è possibile utilizzare questo API.
+- **Aggiornamento batch di file cloud**: Modifica il contenuto di più file Excel archiviati in archiviazione cloud come AWS S3 e Azure Blob.
+- **Popolamento dinamico di modelli cloud**: Popola in blocco dati dinamici per modelli di report archiviati nel cloud.
+- **Sincronizzazione inter-regionale dei file**: Sincronizza la coerenza del contenuto di file Excel in archiviazione cloud tra diverse regioni geografiche.
 
-## Perché dovresti usare la funzione Sostituisci contenuto del foglio di lavoro nel foglio di calcolo remoto API?
+## Perché dovresti utilizzare l'API per la sostituzione del contenuto del foglio di calcolo in un foglio di calcolo remoto?
 
-- Sostituisci rapidamente il contenuto del foglio di lavoro nei fogli di calcolo remoti.
-- Lo sviluppo può essere completato rapidamente tramite l'SDK esistente.
+- **Facile da usare per gli sviluppatori**: Aspose.Cells Cloud offre librerie SDK in molteplici linguaggi, consentendo uno sviluppo rapido e disponendo di una documentazione completa. Rispetto alla creazione di soluzioni personalizzate per il rendering dei grafici, questo riduce notevolmente il carico di lavoro di sviluppo.
+- **Riduzione dei costi del personale**: Diminuisce la necessità di personale dedicato alla consulenza dei documenti.
+- **Pay-per-use (pagamento in base all'uso)**: Nessun investimento iniziale; paghi solo per le chiamate API effettivamente utilizzate.
+- **Costi di manutenzione zero**: Nessuna necessità di mantenere server, aggiornare software o gestire problemi di compatibilità.
 
-## Come utilizzare la funzione Sostituisci contenuto del foglio di lavoro in Remote Spreadsheet API con SDK
+## Come utilizzare l'API per la sostituzione del contenuto del foglio di calcolo in un foglio di calcolo remoto con gli SDK
 
-### Specifiche OpenAPI
+### Specifica OpenAPI
 
- IL[Specifiche OpenAPI](https://reference.aspose.cloud/cells/#/SearchControllor/ReplaceContentInRemoteWorksheet) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+La [Specifica OpenAPI](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceContentInRemoteRange) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di effettuare interazioni REST direttamente da un browser web.
 
-### Utilizzare gli SDK cloud Aspose.Cells
+### Utilizzare gli SDK di Aspose.Cells Cloud
 
-Utilizzare l'SDK è il modo migliore per accelerare lo sviluppo. L'SDK gestisce i dettagli sottostanti, consentendo di implementare in modo semplice la sostituzione del contenuto del foglio di lavoro nei fogli di calcolo per le celle con un codice minimo.
- Si prega di controllare il[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'utilizzo dell'SDK è il modo migliore per velocizzare lo sviluppo. L'SDK gestisce i dettagli sottostanti, consentendoti di implementare semplicemente la sostituzione del contenuto del foglio di calcolo in spreadsheet per celle con un codice minimo.  
+Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice illustrano come interagire con i servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice illustrano come interagire con i servizi web Aspose.Cells utilizzando vari SDK:

@@ -1,124 +1,131 @@
-﻿---
-title: تعيين ارتفاعات الصفوف داخل النطاق
-second_title: Documen
-linktitle: ارتفاع الصف
-type: docs
-url: /ar/ranges/update/row-height/
-aliases: [/change-heights-of-rows-inside-the-range/]
-keywords: Set row height for range on an Excel workshee
-description: يدعم Cloud REST Aspose.Cells ضبط ارتفاع الصف للنطاق في ورقة عمل Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 76
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تعيين ارتفاعات الصفوف داخل النطاق
 ---
-يشير هذا REST API إلى تعيين ارتفاع الصف للنطاق الموجود على ورقة العمل Excel.
+title: "ضبط ارتفاع الصفوف ل نطاق في إكسل – واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0)"
+description: "تغيير ارتفاع الصفوف ضمن نطاق محدّد في ورقة عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. تتضمّن عنوان URL للنقطة الطرفية، والمُعطَلات، ومثال cURL، وردود مرجعيّة، ومقتطفات رمزية لواجهات برمجة التطبيقات (SDKs) بلغات برمجة متعددة."
+keywords: "Aspose.Cells، ارتفاع الصفوف، النطاق، إكسل، واجهة REST API، الإصدار 3.0، SDK، cURL"
+date: 2026-07-30
+type: docs
+weight: 76
+aliases:
+  - /change-heights-of-rows-inside-the-range/
+---
 
-## RSET API
+# ضبط ارتفاع الصفوف ل نطاق في إكسل
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/rowHeight
- 
+تُحدّث هذه العملية ارتفاع الصفوف لِنطاق محدّد موجود في ورقة عمل مخزّنة في التخزين السحابي لـ Aspose Cloud.
+
+## الشروط المسبقة / المصادقة
+
+يجب عليك الحصول على رمز وصول JWT من خدمة المصادقة OAuth في Aspose Cloud مع النطاق **Cells.ReadWrite**.
+
+أدرج الرمز في رأس الطلب `Authorization` لكل طلب:
+
+```http
+Authorization: Bearer <jwt token>
 ```
 
-معلمات الطلب هي:
+إن لم يكن لديك رمز وصول، اتّبع **دليل مصادقة Aspose Cloud** لطلب رمز.
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| قيمة| رقم| استفسار||
-| يتراوح|| جسم||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+## طلب HTTP
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeRowHeight) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+| الطريقة | عنوان URI |
+|--------|-----------|
+| **POST** | `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/rowHeight` |
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### المُعطَلات المسار (Path Parameters)
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| الاسم | النوع | الوصف |
+|------|-------|--------|
+| `name` | `string` | **مطلوبة.** اسم ملف إكسل المخزّن في السحابة. |
+| `sheetName` | `string` | **مطلوبة.** اسم ورقة العمل التي تحتوي على النطاق المستهدف. |
 
-{{< tab tabNum="1" >}}
+### المُعطَلات الاستعلامية (Query Parameters)
 
-```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/rowHeight?value=15" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}"
-```
+| الاسم | النوع | المطلوب | الوصف |
+|------|-------|----------|--------|
+| `value` | `number` | **نعم** | ارتفاع الصف المطلوب تطبيقه على النطاق (بالنقاط). |
+| `folder` | `string` | لا | مسار المجلّد داخل التخزين حيث يقع الملف. |
+| `storageName` | `string` | لا | اسم خدمة التخزين (في حالة تكوين أكثر من تخزين). |
 
-{{< /tab >}}
+### جسم الطلب (JSON)
 
-{{< tab tabNum="2" >}}
+يجب أن يحتوي الجسم على كائن **Range** يُعرّف الصفوف التي سيتأثّر بها الارتفاع.
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "FirstRow": 0,
+  "RowCount": 1,
+  "FirstColumn": 0,
+  "ColumnCount": 0
 }
- 
 ```
 
-{{< /tab >}}
+#### مخطط كائن Range بصيغة JSON
 
-{{< /tabs >}}
+| الخاصية | النوع | المطلوب | الوصف |
+|----------|-------|----------|--------|
+| `FirstRow` | عدد صحيح | **مطلوبة** | الفهرس الصفرِي للصف الأول في النطاق. |
+| `RowCount` | عدد صحيح | **مطلوبة** | عدد الصفوف التي سيتم تطبيق الارتفاع عليها. |
+| `FirstColumn` | عدد صحيح | لا | الفهرس الصفرِي للعمود الأول (اختياري عند ضبط ارتفاع الصفوف فقط). |
+| `ColumnCount` | عدد صحيح | لا | عدد الأعمدة التي يغطيها النطاق (اختياري). |
 
-## عائلة SDK السحابية
+تُستخدم فقط الخصائص المذكورة أعلاه لعملية ضبط ارتفاع الصفوف؛ ويتم تجاهل أي حقول إضافية.
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+## مثال على الطلب
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/rowHeight?value=15&folder=Documents&storageName=MyStorage" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "FirstRow": 9,
+        "RowCount": 1
+      }'
+```
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+### مثال على الرد (ناجح)
 
-{{< tab tabNum="1" >}}
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostWorksheetCellsRangeRowHeight.cs" >}}
+**رموز حالة HTTP**
 
-{{< /tab >}}
+| الرمز | المعنى | الوصف |
+|-------|---------|--------|
+| 200 | OK | تمت تطبيق المرشّح بنجاح؛ ويحتوي الردّ على تفاصيل العملية. |
+| 400 | Bad Request | مُعطَلات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401 | Unauthorized | رمز JWT غير صالح أو مفقود. |
+| 413 | Payload Too Large | حجم الملف المرفوع يتجاوز الحد المسموح. |
+| 500 | Internal Server Error | خطأ داخلي غير متوقّع في الخادم. |
 
-{{< tab tabNum="2" >}}
+تحتوي جميع الردود على `Code` رقمي و`Status` قابل للقراءة (أو `Message` في حالات الأخطاء). قد تُقدّم `ErrorDetails` إضافية عند حدوث خطأ.
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostWorksheetCellsRangeRowHeight.java" >}}
+## أمثلة على واجهات برمجة التطبيقات (SDKs)
 
-{{< /tab >}}
+تُظهر المقتطفات التالية كيفية استدعاء **ضبط ارتفاع الصفوف ل نطاق** باستخدام واجهات برمجة التطبيقات الرسمية لـ Aspose.Cells Cloud SDK.
 
-{{< tab tabNum="3" >}}
+| اللغة | المثال |
+|-------|--------|
+| **C#** | <details><summary>إظهار الكود</summary>```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar api = new RangesApi(configuration);\nvar range = new Range { FirstRow = 9, RowCount = 1 };\nawait api.PostWorksheetCellsRangeRowHeightAsync("test.xlsx", "Sheet1", range, 15);\n```</details> |
+| **Java** | <details><summary>إظهار الكود</summary>```java\nimport com.aspose.cloud.cells.api.RangesApi;\nimport com.aspose.cloud.cells.model.Range;\n\nRangesApi api = new RangesApi(config);\nRange range = new Range().firstRow(9).rowCount(1);\napi.postWorksheetCellsRangeRowHeight("test.xlsx", "Sheet1", range, 15.0, null, null);\n```</details> |
+| **Python** | <details><summary>إظهار الكود</summary>```python\nfrom asposecellscloud import RangesApi, ApiClient, Configuration\n\nconfig = Configuration()\nconfig.access_token = '<jwt token>'\napi = RangesApi(ApiClient(config))\nrange = {'FirstRow': 9, 'RowCount': 1}\napi.post_worksheet_cells_range_row_height('test.xlsx', 'Sheet1', range, value=15)\n```</details> |
+| **Node.js** | <details><summary>إظهار الكود</summary>```javascript\nconst { RangesApi, Configuration } = require('asposecellscloud');\nconst config = new Configuration();\nconfig.accessToken = '<jwt token>';\nconst api = new RangesApi(config);\nconst range = { FirstRow: 9, RowCount: 1 };\napi.postWorksheetCellsRangeRowHeight('test.xlsx', 'Sheet1', range, 15)\n  .then(() => console.log('Row height set'))\n  .catch(err => console.error(err));\n```</details> |
+| **PHP** | <details><summary>إظهار الكود</summary>```php\nuse Aspose\Cells\Configuration;\nuse Aspose\Cells\Api\RangesApi;\n\n$config = new Configuration();\n$config->setAccessToken('<jwt token>');\n$api = new RangesApi($config);\n$range = ['FirstRow' => 9, 'RowCount' => 1];\n$api->postWorksheetCellsRangeRowHeight('test.xlsx', 'Sheet1', $range, 15);\n```</details> |
+| **Ruby** | <details><summary>إظهار الكود</summary>```ruby\nrequire 'aspose_cells_cloud'\nconfig = AsposeCellsCloud::Configuration.new\nconfig.access_token = '<jwt token>'\napi = AsposeCellsCloud::RangesApi.new\nrange = { 'FirstRow' => 9, 'RowCount' => 1 }\napi.post_worksheet_cells_range_row_height('test.xlsx', 'Sheet1', range, value: 15)\n```</details> |
+| **Go** | <details><summary>إظهار الكود</summary>```go\nimport (\n    "github.com/asposecellscloud/aspose-cells-cloud-go/v3"\n    "context"\n)\n\ncfg := asposecellscloud.NewConfiguration()\ncfg.AccessToken = "<jwt token>"\napi := asposecellscloud.NewRangesApi(cfg)\nrangeBody := map[string]interface{}{ "FirstRow": 9, "RowCount": 1 }\n_, err := api.PostWorksheetCellsRangeRowHeight(context.Background(), "test.xlsx", "Sheet1", rangeBody, 15, nil, nil)\nif err != nil { panic(err) }\n```</details> |
+| **Perl** | <details><summary>إظهار الكود</summary>```perl\nuse AsposeCellsCloud::Api::RangesApi;\nmy $api = AsposeCellsCloud::Api::RangesApi->new({ access_token => '<jwt token>' });\nmy $range = { FirstRow => 9, RowCount => 1 };\n$api->post_worksheet_cells_range_row_height('test.xlsx', 'Sheet1', $range, 15);\n```</details> |
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostWorksheetCellsRangeRowHeight.php" >}}
+> **ملاحظة:** تضيف جميع واجهات برمجة التطبيقات (SDKs) الرأس `Authorization: Bearer` تلقائيًا عند تكوين رمز الوصول.
 
-{{< /tab >}}
+## انظر أيضًا
 
-{{< tab tabNum="4" >}}
+- **مواصفات OpenAPI** – العقدة التفصيلية لهذه العملية: <https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeRowHeight>
+- **مستودع واجهات برمجة التطبيقات (SDKs) لـ Aspose.Cells Cloud** – الكود المصدري وروابط لغات برمجة إضافية: <https://github.com/aspose-cells-cloud>
+- **دليل المصادقة** – كيفية الحصول على رمز JWT: <https://docs.aspose.cloud/cells/authentication/>
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostWorksheetCellsRangeRowHeight.rb" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostWorksheetCellsRangeRowHeight.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostWorksheetCellsRangeRowHeight.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostWorksheetCellsRangeRowHeight.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostWorksheetCellsRangeRowHeight.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+---

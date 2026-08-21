@@ -1,56 +1,61 @@
-﻿---
-title: Koşullu Biçimlendirmeyi Alın
+---
+title: "Koşullu Biçimlendirmeyi Al"
 type: docs
 url: /tr/conditional-formattings/get/
-aliases: [/get-conditional-formatting/]
-keywords: REST API, spreadsheets, excel, get condition formattin
-description: "Cells. Excel için API Bulutu çalıştır: koşul biçimlendirmesini al"
+aliases: [/tr/get-conditional-formatting/]
+keywords: "Aspose.Cells Cloud, REST API, Koşullu Biçimlendirme, Excel, Elektronik Tablo"
+description: "Aspose.Cells Cloud REST API kullanarak bir çalışma sayfasından koşullu biçimlendirme kurallarını alın."
 weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Koşullu Biçimlendirmeyi Al
 ---
-Bu REST API, Koşullu biçimlendirmeyi al'ı gösterir
- 
-## RSET API
- 
+
+Bu REST API, bir çalışma sayfasından koşullu biçimlendirme kurallarını alır.
+
+## REST API
+
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
- 
 ```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| dizin| tam sayı| yol||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
- 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormatting) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
- 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+### İstek Parametreleri
+
+| Parametre Adı | Tür      | Konum  | Açıklama                                                  |
+| ------------- | -------- | ------ | --------------------------------------------------------- |
+| name          | string   | path   | Çalışma kitabının dosya adı.                              |
+| sheetName     | string   | path   | Biçimlendirmeyi içeren çalışma sayfasının adı.            |
+| index         | integer  | path   | Koşullu biçimlendirme kuralının sıfır tabanlı indeksi.   |
+| folder        | string   | query  | Çalışma kitabının bulunduğu klasör yolu.                  |
+| storageName   | string   | query  | Depolama hizmetinin adı.                                  |
+
+### Hata Yanıtları
+
+| HTTP Kodu | Neden                                            | Örnek Gövde                                                         |
+| --------- | ------------------------------------------------ | ------------------------------------------------------------------- |
+| **400**   | Geçersiz İstek – eksik veya geçersiz parametreler. | `{ "Code":"400", "Message":"Geçersiz parametre değeri." }`         |
+| **401**   | Yetkisiz – eksik veya geçersiz JWT belirteci.     | `{ "Code":"401", "Message":"Erişim belirteci eksik veya geçersiz." }` |
+| **404**   | Bulunamadı – çalışma kitabı veya çalışma sayfası yok. | `{ "Code":"404", "Message":"Dosya bulunamadı." }`                 |
+| **500**   | İç Sunucu Hatası – beklenmeyen sunucu hatası.     | `{ "Code":"500", "Message":"Beklenmeyen bir hata oluştu." }`       |
+
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormatting), herkese açık bir erişilebilir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize izin verir.
+
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'ye nasıl istek yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
   "Status": "string",
   "ConditionalFormatting": {
@@ -274,17 +279,16 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 {{< /tab >}}
 
 {{< /tabs >}}
-## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+
+## Bulut SDK Geliştirme Kiti
+
+Bir SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, düşük seviye detayları yöneterek projenizdeki görevlere odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, farklı SDK'lar kullanarak Aspose.Cells web servislerine nasıl istek yapıldığını göstermektedir:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-GetConditionalFormatting-1.cs" >}}
 
@@ -298,8 +302,6 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< tab tabNum="3" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
@@ -310,41 +312,29 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< tab tabNum="5" >}}
 
-
-
 {{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-GetConditionalFormatting-1.js" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-
-
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-GetConditionalFormatting-1.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "d1809f85075aaa2f4d954930e916d115" >}}
 

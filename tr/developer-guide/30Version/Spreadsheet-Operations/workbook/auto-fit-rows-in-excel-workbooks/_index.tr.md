@@ -1,79 +1,104 @@
-﻿---
-title: Excel workboo'da satırları otomatik olarak sığdır
-second_title: Documen
-linktitle: Sıra
-type: docs 
-url: /tr/autofit-rows-on-an-excel-file/
-aliases: [/auto-fit-rows-in-excel-workbooks/,/workbook/autofit/rows/]
-keywords: Autofit rows on an Excel workboo
-description: Aspose.Cells Cloud REST API, Excel çalışma kitabında satırların otomatik olarak sığdırılmasını destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 90
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma kitabında satırları otomatik olarak sığdırma
 ---
-Bu REST API, Excel çalışma kitabındaki satırların otomatik olarak sığdırılmasını belirtir.
+title: "Excel Çalışma Kitabında Satırları Otomatik Uygun Hale Getirme"
+second_title: "Belge"
+linktitle: "Satırlar"
+type: docs
+url: /autofit-rows-on-an-excel-file/
+aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
+keywords: "satırları otomatik uygun hale getirme, Excel çalışma kitabı, Aspose.Cells Cloud, REST API, otomatik uygunluk seçenekleri"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabında satır yüksekliklerini otomatik olarak ayarlamayı öğrenin. Endpoint, parametreler, cURL örneği ve C#, Java, Python ve diğerleri için SDK snippet'leri içerir."
+weight: 90
+ArticleTitle: "Excel Çalışma Kitabında Satırları Otomatik Uygun Hale Getirme – Aspose.Cells Cloud API"
+---
 
-## RSET API
+**Ön Gereksinimler**  
+API’yi çağırmadan önce Aspose kimlik doğrulama hizmetinden geçerli bir Bearer JWT belirteci edinin ve hedef çalışma kitabının desteklenen bir depolama konumunda (varsayılan depo veya yapılandırdığınız özel bir depo) olduğunu doğrulayın.
+
+Bu REST API, bir Excel çalışma kitabında **satırları otomatik olarak uygun hale getirmenizi** sağlar; yani veri eklendiğinde veya değiştirildiğinde satır yüksekliğini otomatik olarak ayarlar.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/autofitrows
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/autofitrows
 ```
 
 İstek parametreleri şunlardır:
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| autoFitterOptions|| vücut| Oto Montaj Seçenekleri.|
-| başlangıç satırı| tam sayı| sorgu| Başlangıç satırı dizini.|
-| endRow| tam sayı| sorgu| Satır sonu dizini.|
-| ilkSütun| tam sayı| sorgu| Birinci sütun dizini.|
-| sonSütun| tam sayı| sorgu| Son sütun dizini.|
-| sadeceOtomatik| Boolean| sorgu|YANLIŞ|
-| dosya| sicim| sorgu| Belgenin klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı     | Tür               | Konum   | Açıklama                                                                              |
+| ----------------- | ----------------- | ------- | ------------------------------------------------------------------------------------- |
+| name              | string            | path    | Çalışma kitabının dosya adı.                                                          |
+| autoFitterOptions | AutoFitterOptions | body    | Otomatik uygunluk davranışını kontrol eden seçenekler.                               |
+| startRow          | integer           | query   | Otomatik uygun hale getirilecek ilk satırın indeksi.                                |
+| endRow            | integer           | query   | Otomatik uygun hale getirilecek son satırın indeksi.                                |
+| firstColumn       | integer           | query   | Otomatik uygunluk için dikkate alınacak ilk sütunun indeksi.                         |
+| lastColumn        | integer           | query   | Otomatik uygunluk için dikkate alınacak son sütunun indeksi.                         |
+| onlyAuto          | boolean           | query   | **true** ise, yalnızca Otomatik Uygunluk bayrağı olan satırlar işlenir (varsayılan **false**). |
+| folder            | string            | query   | Çalışma kitabının depolandığı klasör yolu.                                           |
+| storageName       | string            | query   | Depolama hizmetinin adı.                                                              |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+**AutoFitterOptions**, otomatik uygunluk işleminin nasıl davranacağını belirleyen bir nesnedir (örneğin `AutoFitMergedCells`, `IgnoreHidden`).
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+**HTTP Durum Kodları**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Kod  | Anlam                       | Açıklama                                         |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | Başarılı (OK)               | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400  | Geçersiz İstek (Bad Request)| Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401  | Yetkisiz (Unauthorized)     | Geçersiz veya eksik JWT belirteci.               |
+| 413  | Yük Çok Büyük (Payload Too Large) | Yüklenen dosya boyut sınırlarını aşıyor. |
+| 500  | Sunucu İç Hatası (Internal Server Error) | Beklenmeyen sunucu hatası. |
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web hizmetlerini çağırmak için cURL komut satırı aracını kullanabilirsiniz. `<jwt token>` ifadesini Aspose kimlik doğrulama hizmetinden edindiğiniz geçerli bir Bearer JWT belirteci ile değiştirin.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/autofitrows" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"AutoFitMergedCells":true, "IgnoreHidden":true}'
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitrows" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"AutoFitMergedCells":true, "IgnoreHidden":true}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
+```
+
+*Örnek hata yanıtı (örneğin, çalışma kitabı eksikse):*
+
+```json
+{
+  "Code": 404,
+  "Status": "Bulunamadı",
+  "Message": "Belirtilen 'myWorkbook.xlsx' çalışma kitabı mevcut değil."
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+**Notlar**  
+- `AutoFitMergedCells` **true** olarak ayarlandığında, birleştirilmiş hücreler otomatik uygunluk işlemi sırasında tek bir varlık olarak dikkate alınır.  
+- `IgnoreHidden` değerini **true** yapmak, gizli satır ve sütunları atlayarak mevcut boyutlarını korur.
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+## Bulut SDK Kütüphanesi
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. SDK, düşük seviye detayları soyutlayarak projenize odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerini çeşitli SDK’lar kullanarak nasıl çağıracağınızı gösterir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

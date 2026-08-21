@@ -1,109 +1,184 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Tabelle als Formatdatei speichern
-second_title: Documen
-ArticleTitle: Save Spreadsheet as a Format fil
-linktitle: Tabelle speichern a
-type: docs
-url: /de/save-spreadsheet-as/
-keywords: spreadsheet conversion, Save as, Excel to PDF, Excel to CSV, RES
-description: Konvertieren Sie mühelos in der Cloud gespeicherte Tabellenkalkulationen in verschiedene Formate, einschließlich XLSX, PDF und CSV, mit unserem robusten API
-weight: 100
-kwords: Excel API, Office Cloud, REST, Tabellenkalkulation, PDF, CSV, JSON, Markdown, konvertieren Excel Dateien, Tabellenkalkulation speichern unter, Aspose.Cells Cloud Web AP
 ---
-Speichern Sie eine Cloud-Tabellenkalkulationsdatei/Excel als Formatdatei im Cloud-Speicher.
+title: "Tabellendokument in ein anderes Format speichern – Aspose.Cells Cloud API (v4.0)"
+second_title: "Dokument"
+ArticleTitle: "So speichern Sie ein Tabellendokument in einer anderen Formatdatei in der Cloud-Speicherung: Schritt-für-Schritt-Anleitung"
+linktitle: "Tabellendokument speichern als"
+type: docs
+url: /save-spreadsheet-as/
+keywords: "Aspose Cells, Tabellenkonvertierung, speichern als, API, XLSX zu PDF, Cloud-Speicherung, Excel zu PDF, CSV-Export, Cloud-Konvertierung"
+description: "Erfahren Sie, wie Sie ein in Aspose Cloud gespeichertes Tabellendokument in ein anderes Format (XLSX, PDF, CSV usw.) mit der Aspose.Cells Cloud Save Spreadsheet API speichern. Enthält Anforderungssyntax, Parameter, curl-Beispiel und SDK-Code."
+weight: 100
+---
 
-## **Tabelle speichern unter API**
+Speichern Sie eine Cloud-Tabellendatei oder Excel-Datei in einem anderen Format im Cloud-Speicher.
+
+## **Save Spreadsheet as API**
+
+### Web-API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
+PUT https://api.aspose.cloud/v4.0/cells/{name}/saveas
 ```
 
-### **Anforderungsparameter:**
+### **Sicherheit und Authentifizierung**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTP-Text| Beschreibung|
-|:- |:- |:- |:- |
-| Name| Zeichenfolge| Weg| (Erforderlich) Der Name der zu konvertierenden Arbeitsmappendatei.|
-| Format| Zeichenfolge| Abfrage| (Erforderlich) Das gewünschte Ausgabeformat (z. B. „Xlsx“, „Pdf“, „Csv“).|
-| saveOptionsData| Klasse| Körper| (Optional) Optionsdaten speichern. Der Standardwert ist null.|
-| Ordner| Zeichenfolge| Abfrage| (Optional) Der Ordnerpfad, in dem die Arbeitsmappe gespeichert ist. Der Standardwert ist null.|
-| Speichername| Zeichenfolge| Abfrage|(Optional) Der Name des Speichers, wenn benutzerdefinierter Cloud-Speicher verwendet wird. Wenn dieser Name weggelassen wird, verwenden Sie den Standardspeicher.|
-| Ausgangspfad| Zeichenfolge| Abfrage| (Optional) Der Ordnerpfad, in dem die Arbeitsmappe gespeichert ist. Der Standardwert ist null.|
-|outStorageName| Zeichenfolge| Abfrage| Speichername der Ausgabedatei.|
-| SchriftartenStandort| Zeichenfolge| Abfrage| Verwenden Sie benutzerdefinierte Schriftarten.|
-| Region| Zeichenfolge| Abfrage| Die Tabellenbereichseinstellung.|
-| Passwort| Zeichenfolge| Abfrage| Das Kennwort zum Öffnen der Tabellenkalkulationsdatei.|
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
+
+### **Anforderungsparameter**
+
+| Parametername     | Typ    | Ort    | Beschreibung                                                                                              |
+| :---------------- | :----- | :----- | :-------------------------------------------------------------------------------------------------------- |
+| name              | String | Path   | **Erforderlich.** Der Name der zu konvertierenden Arbeitsmappe.                                          |
+| format            | String | Query  | **Erforderlich.** Das gewünschte Ausgabeformat (z. B. `Xlsx`, `PDF`, `CSV`).                            |
+| saveOptionsData   | Klasse | Body   | Optionale Speicheroptionen. Falls weggelassen, wird `null` verwendet.                                    |
+| folder            | String | Query  | Optionales Verzeichnis, in dem sich die Quellarbeitsmappe befindet. Falls weggelassen, wird `null` verwendet. |
+| storageName       | String | Query  | Optionaler Name eines benutzerdefinierten Speichers. Falls weggelassen, wird der Standardspeicher verwendet. |
+| outPath           | String | Query  | Optionaler Ausgabepfad für die konvertierte Datei. Falls weggelassen, wird `null` verwendet.             |
+| outStorageName    | String | Query  | Optionaler Speichername für die Ausgabedatei.                                                            |
+| fontsLocation     | String | Query  | Optionaler benutzerdefinierter Schriftartenpfad.                                                         |
+| region            | String | Query  | Optionale Regionseinstellung für das Tabellendokument.                                                  |
+| password          | String | Query  | Optionales Passwort zum Öffnen der Tabellendokumentdatei.                                                |
+
+**Unterstützte Ausgabeformate**
+
+| Format   | Erweiterung                                      |
+| :------- | :----------------------------------------------- |
+| Xlsx     | .xlsx                                            |
+| Pdf      | .pdf                                             |
+| Csv      | .csv                                             |
+| Html     | .html                                            |
+| Ods      | .ods                                             |
+| Xls      | .xls                                             |
+| Txt      | .txt                                             |
+| Mhtml    | .mhtml                                           |
+| Tiff     | .tiff                                            |
+| Pptx     | .pptx                                            |
+| … (weitere) | Siehe API-Spezifikation für die vollständige Liste (über 20 Formate) |
 
 ### **Antwort**
 
 ```json
 {
-  "Name": "CellsCloudResponse",
-  "Type": "Class",
-  "Properties": [
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
-    }
-  ]
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
-### Fehlercodes
+**Beispiel für Fehlerantwort (400 Bad Request)**
 
-- **400 Ungültige Anfrage**: Ungültige Apose.Cells Cloud API-URI.
-- **401 Nicht autorisiert**: Ungültiges Zugriffstoken. Oder ungültige Client-ID und ungültiges Geheimnis.
-- **404 Nicht gefunden**: Auf die Tabellenkalkulationsdatei kann nicht zugegriffen werden.
-- **500 Serverfehler**: Beim Abrufen der Berechnungsdaten ist in der Tabelle eine Anomalie aufgetreten.
+```json
+{
+  "Code": 400,
+  "Message": "Ungültige Anforderungsparameter."
+}
+```
 
-## Warum sollten Sie den Save Spread API verwenden?
+**HTTP-Statuscodes**
 
-- Sie können Cloud-Dateien jederzeit und überall in verschiedene Formate konvertieren.
-- Die Entwicklung kann über das vorhandene SDK schnell abgeschlossen werden.
+| Code | Bedeutung             | Beschreibung                                                                 |
+| ---- | --------------------- | ---------------------------------------------------------------------------- |
+| 200  | OK                    | Filter erfolgreich angewendet; Antwort enthält Vorgangsdetails.             |
+| 400  | Bad Request           | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp).     |
+| 401  | Unauthorized          | Ungültiges oder fehlendes JWT-Token.                                        |
+| 413  | Payload Too Large     | Die hochgeladene Datei überschreitet das Größenlimit.                       |
+| 500  | Internal Server Error | Unerwarteter Serverfehler.                                                  |
 
-## Wie verwende ich die Konvertierungstabelle in JSON API mit SDKs?
+## Für welche Anwendungsfälle eignet sich die Save Spreadsheet API?
 
-### Tabelle als API-Spezifikation speichern
+### Enterprise-Dokumentenmanagement-System
 
- Der[Tabelle als API-Spezifikation speichern](https://reference.aspose.cloud/cells/#/ConversionController/SaveSpreadsheetAs) definiert eine öffentlich zugängliche Programmierschnittstelle, die es Ihnen ermöglicht, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
+- Speichern Sie Finanzberichte automatisch als PDF-Archive.
+- Sichern Sie Verkaufsdaten regelmäßig im CSV-Format.
+- Speichern Sie Projektpläne als schreibgeschützte Dateien, um unbeabsichtigte Änderungen zu verhindern.
+
+### Datenintegration und ETL-Prozesse
+
+- Exportieren Sie CRM-Systemdaten und speichern Sie sie als standardmäßige Excel-Vorlage.
+- Konvertieren Sie ERP-Daten in CSV zum Import in andere Systeme.
+- Speichern Sie Rohdaten als JSON für die Übertragung per API.
+
+### Entwicklungs- und Automatisierungsszenarien
+
+- Backend-Verarbeitung für Webanwendungen.
+- Automatisierte Berichtsgenerierungssysteme.
+- Cloud-Kollaborationsplattformen.
+- Integration in Genehmigungsprozesse.
+- Datensicherung und Migration.
+
+## Warum sollten Sie die Save Spreadsheet API verwenden?
+
+- **Entwicklerfreundlich** – Bietet SDKs für mehrere Sprachen mit detaillierter Dokumentation zur vereinfachten Integration.
+- **Arbeitseffizient** – Führt die Konvertierung auf dem Server durch und reduziert den Bedarf an benutzerdefiniertem Konvertierungscode.
+- **Nutzungsbasierte Preisgestaltung** – Berechnet nur die durchgeführten API-Aufrufe, ohne Anfangslizenzzahlungen.
+- **Kein Server-Management** – Der Dienst läuft in der Cloud, sodass keine Konvertierungsinfrastruktur verwaltet werden muss.
+- **Umfangreiche Formatunterstützung** – Unterstützt die Konvertierung zwischen mehr als 20 Tabellenformaten.
+- **Datengetreue Konvertierung** – Behält Layout, Formeln und Formatierung während der Konvertierung bei.
+
+## Wie verwenden Sie die Save Spreadsheet API mit SDKs?
+
+### Save Spreadsheet API-Spezifikation
+
+Die [Save Spreadsheet API-Spezifikation](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/SaveSpreadsheetAs) definiert eine öffentlich zugängliche Programmierschnittstelle, sodass Sie REST-Interaktionen direkt aus einem Webbrowser durchführen können.
+
+**Beispiel mit Anforderungstext und cURL**
+
+Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webservices zuzugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an die Cloud-API durchführen.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Anforderung" tabName12="Antwort" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/saveas?format=pdf&outPath=output.pdf" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -d '{"SaveOptions":{"SaveFormat":"pdf"}}'
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Verwenden Sie Aspose.Cells Cloud SDKs
 
-Die Verwendung des SDK ist die schnellste Art der Entwicklung, da es die Details auf niedriger Ebene abstrahiert und es Ihnen ermöglicht, eine Tabelle als Formatdatei mit kurzem Code zu speichern.
- Bitte schauen Sie sich die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der schnellste Weg zur Entwicklung, da sie niedrigstufige Details abstrahiert und es Ihnen ermöglicht, ein Tabellendokument mit minimalem Code in ein anderes Format zu speichern. Bitte besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webservices mit verschiedenen SDKs aufgerufen werden:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_WorkbookSaveAs.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_WorkbookSaveAs.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_WorkbookSaveAs.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_WorkbookSaveAs.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_WorkbookSaveAs.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_WorkbookSaveAs.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_WorkbookSaveAs.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_WorkbookSaveAs.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_WorkbookSaveAs.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_WorkbookSaveAs.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_WorkbookSaveAs.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_WorkbookSaveAs.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_WorkbookSaveAs.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_WorkbookSaveAs.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_WorkbookSaveAs.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_WorkbookSaveAs.go" >}}
+{{</tab>}}
 {{< /tabs >}}

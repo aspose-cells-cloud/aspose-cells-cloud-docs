@@ -1,449 +1,290 @@
-﻿---
-title: Получить данные ячеек на основе именованного диапазона
-second_title: Documen
-linktitle: Ценить
-type: docs
-url: /ru/ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
-keywords: Get cells data based on named range on an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает получение данных ячеек на основе именованного диапазона на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получение данных ячеек на основе именованного диапазона
 ---
-Этот REST API указывает на получение списка ячеек в диапазоне по имени диапазона или индексам строк и столбцов.
+title: "Получение данных ячеек по именованному диапазону"
+second_title: "Документ"
+linktitle: "Значения"
+type: docs
+url: /ranges/get/values/
+aliases: [/get-cells-data-based-on-named-range/]
+keywords: "Aspose.Cells, облако, REST API, Excel, именованный диапазон, значения ячеек, рабочий лист"
+description: "Получение значений ячеек из именованного диапазона в рабочем листе Excel с использованием REST API Aspose.Cells Cloud. Сервис доступен через множество SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) и работает на широком спектре платформ разработки."
+weight: 20
+ArticleTitle: "Получение данных ячеек по именованному диапазону — Aspose.Cells Cloud API"
+---
 
-## РСЕT API
+**Необходимые условия**
+
+- Действующий JWT-токен доступа с соответствующей областью действия.  
+- Книга должна быть загружена в облачное хранилище Aspose (или в указанную папку).  
+- При использовании нестандартного хранилища необходимо указать его имя.
+
+Этот REST API возвращает список ячеек в диапазоне, определяемом по именованному диапазону или по индексам строки и столбца.
+
+Эта операция позволяет разработчикам программно получать значения ячеек, принадлежащих конкретному именованному диапазону в рабочем листе Excel. При передаче идентификатора `namedRange` либо явных индексов строки и столбца API возвращает подробный список ячеек, включая их адрес, строку, столбец, значение, тип данных и информацию о форматировании. Ответ может использоваться для создания приложений, основанных на данных, генерации отчётов или выполнении дополнительных вычислений на стороне сервера. Сервис Aspose.Cells Cloud поддерживает множество языков программирования через SDK, обеспечивая беспрепятственную интеграцию независимо от платформы разработки. Использование HTTPS гарантирует защищённую передачу данных, а API соответствует принципам REST, возвращая стандартные коды состояния HTTP для успешных и ошибочных операций.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
 ```
 
-Параметры запроса:
+### **Параметры запроса**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| название рабочей книги|
-| Имя_листа| нить| путь| имя рабочего листа|
-| диапазон имен| нить| запрос| имя диапазона, например: «A1:B2» или «range_name1»|
-| firstRow| целое число| запрос| первый ряд диапазона|
-| первый столбец| целое число| запрос| первый столбец диапазона|
-| rowCount| целое число| запрос| количество строк в диапазоне|
-| Количество столбцов| целое число| запрос| количество столбцов в диапазоне|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип    | Расположение | Описание                                                                 |
+|---------------|--------|--------------|--------------------------------------------------------------------------|
+| name          | string | path         | Имя файла книги.                                                         |
+| sheetName     | string | path         | Имя рабочего листа внутри книги.                                        |
+| namedRange    | string | query        | Имя именованного диапазона для извлечения, например `A1:B2` или `range_name1`. |
+| firstRow      | integer | query       | Нулевой индекс первой строки диапазона (используется, если `namedRange` не задан). |
+| firstColumn   | integer | query       | Нулевой индекс первого столбца диапазона (используется, если `namedRange` не задан). |
+| rowCount      | integer | query       | Количество строк в диапазоне.                                            |
+| columnCount   | integer | query       | Количество столбцов в диапазоне.                                         |
+| folder        | string | query        | Папка, содержащая книгу.                                                 |
+| storageName   | string | query        | Имя облачного хранилища, в котором находится книга.                     |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[OpenAPI-спецификация](https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue) определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать утилиту командной строки cURL для вызова веб-сервисов Aspose.Cells. Ниже приведён пример запроса значений ячеек из именованного диапазона.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/value?namerange=data" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "CellsList": [
-
     {
-
       "Name": "B10",
-
       "Row": 9,
-
       "Column": 1,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "C10",
-
       "Row": 9,
-
       "Column": 2,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "D10",
-
       "Row": 9,
-
       "Column": 3,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "E10",
-
       "Row": 9,
-
       "Column": 4,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "F10",
-
       "Row": 9,
-
       "Column": 5,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "G10",
-
       "Row": 9,
-
       "Column": 6,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "H10",
-
       "Row": 9,
-
       "Column": 7,
-
       "Value": "a8",
-
       "Type": "IsString",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">a8</Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     }
-
   ],
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Примечание по безопасности:** Всегда используйте HTTPS при вызове API. Сервис не поддерживает незащищённый HTTP; использование HTTPS гарантирует шифрование запроса и соответствие лучшим практикам безопасности.
+
+**Коды HTTP-статусов**
+
+| Код | Значение                    | Описание                                             |
+|-----|-----------------------------|------------------------------------------------------|
+| 200 | OK (ОК)                     | Фильтр успешно применён; в ответе содержатся детали операции. |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизовано) | Недействительный или отсутствующий JWT-токен.       |
+| 413 | Payload Too Large (Слишком большой payload) | Загруженный файл превышает ограничение по размеру. |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                     |
+
+**Пример ответа об ошибке (400 Bad Request)**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Отсутствует или недопустим параметр 'namedRange'."
+}
+```
+
+> **Совет:** API использует нулевые индексы для `firstRow` и `firstColumn`. Например, первая строка рабочего листа имеет индекс `0`.
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — наиболее эффективный способ ускорения разработки. SDK абстрагирует низкоуровневые детали, позволяя сосредоточиться на бизнес-логике. Полный список SDK Aspose.Cells Cloud доступен на [GitHub-репозитории](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Приведённые ниже примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

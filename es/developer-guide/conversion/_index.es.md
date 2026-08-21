@@ -1,33 +1,65 @@
-﻿---
-title: "Aspose.Cells API web en la nube: convierte una hoja de cálculo a otro formato de archivo, incluidas hojas de trabajo, tablas, gráficos y rangos de datos"
-second_title: Documen
-ArticleTitle: Convert spreadsheets, worksheets, tables, and ranges to other format files
-linktitle: Conversión
+---
+title: "Aspose.Cells Cloud Web API: Solución integral de conversión de formatos de hojas de cálculo"
+second_title: "Documento"
+ArticleTitle: "API Web para conversión en línea de Excel"
+linktype: "Conversión"
 type: docs
 url: /es/conversion/
-keywords: Aspose.Cells Cloud Web APIs, Spreadsheet conversion, worksheet conversion, table conversion, range conversion,Excel Cloud APIs, RES
-description: Guía detallada sobre cómo convertir hojas de cálculo, hojas de trabajo, tablas y rangos a varios formatos, incluidos PDF, imagen, HTML, CSV, JSON y Markdown.
+keywords: "Aspose.Cells, API en la nube, conversión de hojas de cálculo, Excel a PDF, Excel a CSV, Excel a JSON, API REST, SDK"
+description: "Aprenda a convertir rangos, gráficos, tablas, hojas de cálculo o hojas de cálculo completas de Excel a PDF, imágenes, HTML, CSV, JSON, Markdown y XML mediante la API REST de Aspose.Cells Cloud. Solución rápida, segura y sin instalación, con SDK para .NET, Java, Python y más."
 weight: 20
-kwords: Aspose.Cells API en la nube, conversión de hojas de cálculo, conversión de hojas de trabajo, conversión de tablas, conversión de rangos, Excel API en la nube, RES
 ---
-- **[Convertir un gráfico de hoja de cálculo en una imagen.](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
-- **[Convertir un gráfico de hoja de cálculo a un archivo PDF.](https://docs.aspose.cloud/cells/convert-chart-to-pdf/)**
+
+## Kit de herramientas para conversión de hojas de cálculo
+
+Logre fácilmente la conversión de hojas de cálculo en múltiples formatos mediante la API de Aspose.Cells Cloud. Admite la exportación completa de formatos para hojas de cálculo, tablas, gráficos y rangos de datos, incluidos PDF, imágenes, CSV, JSON y más. Procesamiento basado en la nube, sin necesidad de instalación, con API REST y soporte de SDK.
+
+### Conversión de rango
+
 - **[Convertir un rango de hoja de cálculo a un archivo CSV.](https://docs.aspose.cloud/cells/convert-range-to-csv/)**
-- **[Convertir un rango de una hoja de cálculo en un archivo HTML.](https://docs.aspose.cloud/cells/convert-range-to-html/)**
-- **[Convertir un rango de una hoja de cálculo en una imagen.](https://docs.aspose.cloud/cells/convert-range-to-image/)**
-- **[Convertir un rango de hoja de cálculo en un archivo JSON.](https://docs.aspose.cloud/cells/convert-range-to-json/)**
-- **[Convertir un rango de una hoja de cálculo a un archivo PDF.](https://docs.aspose.cloud/cells/convert-range-to-pdf/)**
-- **[Convertir una hoja de cálculo a otro formato de archivo.](https://docs.aspose.cloud/cells/convert-spreadsheet/)**
+- **[Convertir un rango de hoja de cálculo a un archivo HTML.](https://docs.aspose.cloud/cells/convert-range-to-html/)**
+- **[Convertir un rango de hoja de cálculo a un archivo JSON.](https://docs.aspose.cloud/cells/convert-range-to-json/)**
+- **[Convertir un rango de hoja de cálculo a un archivo PDF.](https://docs.aspose.cloud/cells/convert-range-to-pdf/)**
+- **[Exportar un rango de hoja de cálculo como otro formato de archivo.](https://docs.aspose.cloud/cells/export-range-as-format/)**
+- **[Exportar una hoja de cálculo como otro formato de archivo.](https://docs.aspose.cloud/cells/export-spreadsheet-as-format/)**
+- **[Convertir un rango de hoja de cálculo a una imagen.](https://docs.aspose.cloud/cells/convert-range-to-image/)**
+
+### Conversión de gráficos
+
+- **[Convertir un gráfico de hoja de cálculo a una imagen.](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
+- **[Convertir un gráfico de hoja de cálculo a un archivo PDF.](https://docs.aspose.cloud/cells/convert-chart-to-pdf/)**
+- **[Exportar un gráfico de hoja de cálculo como otro formato de archivo.](https://docs.aspose.cloud/cells/export-chart-as-format/)**
+
+### Conversión de tablas
+
 - **[Convertir una tabla de hoja de cálculo a un archivo CSV.](https://docs.aspose.cloud/cells/convert-table-to-csv/)**
-- **[Convertir una tabla de hoja de cálculo en un archivo HTML.](https://docs.aspose.cloud/cells/convert-table-to-html/)**
-- **[Convertir una tabla de una hoja de cálculo en una imagen.](https://docs.aspose.cloud/cells/convert-table-to-image/)**
-- **[Convertir una tabla de hoja de cálculo en un archivo JSON.](https://docs.aspose.cloud/cells/convert-table-to-json/)**
-- **[Convertir una tabla de hoja de cálculo en un archivo PDF.](https://docs.aspose.cloud/cells/convert-table-to-pdf/)**
-- **[Convertir una hoja de cálculo en una imagen.](https://docs.aspose.cloud/cells/convert-worksheet-to-image/)**
+- **[Convertir una tabla de hoja de cálculo a un archivo HTML.](https://docs.aspose.cloud/cells/convert-table-to-html/)**
+- **[Convertir una tabla de hoja de cálculo a una imagen.](https://docs.aspose.cloud/cells/convert-table-to-image/)**
+- **[Convertir una tabla de hoja de cálculo a un archivo JSON.](https://docs.aspose.cloud/cells/convert-table-to-json/)**
+- **[Convertir una tabla de hoja de cálculo a un archivo PDF.](https://docs.aspose.cloud/cells/convert-table-to-pdf/)**
+- **[Exportar una tabla de hoja de cálculo como otro formato de archivo.](https://docs.aspose.cloud/cells/export-table-as-format/)**
+
+### Conversión de hojas de cálculo
+
+- **[Convertir una hoja de cálculo a una imagen.](https://docs.aspose.cloud/cells/convert-worksheet-to-image/)**
 - **[Convertir una hoja de cálculo a un archivo PDF.](https://docs.aspose.cloud/cells/convert-worksheet-to-pdf/)**
-- **[Exportar un gráfico de hoja de cálculo como otro archivo de formato.](https://docs.aspose.cloud/cells/export-chart-as-format/)**
-- **[Exportar un rango de hoja de cálculo como otro archivo de formato.](https://docs.aspose.cloud/cells/export-range-as-format/)**
-- **[Exportar un rango de hoja de cálculo como otro archivo de formato.](https://docs.aspose.cloud/cells/export-spreadsheet-as-format/)**
-- **[Exportar una tabla de hoja de cálculo como otro archivo de formato.](https://docs.aspose.cloud/cells/export-table-as-format/)**
-- **[Exportar una hoja de cálculo como otro archivo de formato.](https://docs.aspose.cloud/cells/export-worksheet-as-format/)**
+- **[Exportar una hoja de cálculo como otro formato de archivo.](https://docs.aspose.cloud/cells/export-worksheet-as-format/)**
+
+### Conversión de hojas de cálculo completas
+
 - **[Guardar una hoja de cálculo como otro formato de archivo.](https://docs.aspose.cloud/cells/save-spreadsheet-as/)**
+- **[Convertir una hoja de cálculo a otro formato de archivo.](https://docs.aspose.cloud/cells/convert-spreadsheet/)**
+
+## Matriz de soporte de formatos
+
+| Formato de destino | Rango | Gráfico | Tabla | Hoja de cálculo | Hoja de cálculo completa |
+| :---------------- | :---- | :------ | :---- | :------------ | :----------------------- |
+| **PDF**           | Sí    | Sí      | Sí    | Sí            | Sí                       |
+| **Imagen**        | Sí    | Sí      | Sí    | Sí            | Sí                       |
+| **HTML**          | Sí    | Sí      | Sí    | Sí            | Sí                       |
+| **CSV**           | Sí    | No      | Sí    | Sí            | Sí                       |
+| **JSON**          | Sí    | No      | Sí    | Sí            | Sí                       |
+| **Markdown**      | Sí    | No      | Sí    | Sí            | Sí                       |
+| **XML**           | Sí    | No      | Sí    | Sí            | Sí                       |
+
+---

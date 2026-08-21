@@ -1,79 +1,118 @@
-﻿---
-title: 从 Excel 工作表中获取工作表
-second_title: Documen
-linktitle: 工作表
-type: docs
-url: /zh/worksheets/get-worksheet/
-keywords: Get worksheet to different format from an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持将工作表转换为与 Excel 工作表不同的格式。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 10
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表获取工作表
 ---
-此 REST API 表示 `get worksheet description` 或 `export worksheet to kinds of format file`。
+title: "使用 Aspose.Cells Cloud API 导出工作表——支持格式、cURL 和 SDK 示例"
+second_title: "文档"
+linktype: "docs"
+url: /worksheets/get-worksheet/
+keywords: "Aspose.Cells Cloud 获取工作表、工作表导出、Excel API、REST、CSV、PDF、PNG、JPEG、GIF、BMP、TIFF、EMF、XPS、OTS、XLS、XLSX、XLSB、XLSM、ODS、FODS、Numbers、云 API"
+description: "了解如何使用 Aspose.Cells Cloud REST API 从 Excel 文件中导出单个工作表。内容包括端点、参数、修正后的 cURL 示例、身份验证详情、错误处理，以及 C#、Java、Python 等多种语言的 SDK 代码片段。"
+weight: 10
+ArticleTitle: "使用 Aspose.Cells Cloud API 导出工作表——支持格式、cURL 和 SDK 示例"
+---
 
-您可以导出以下格式：[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [消耗臭氧层物质](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [奥特斯](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [数字](https://docs.fileformat.com/spreadsheet/numbers/), [食物中毒](https://docs.fileformat.com/spreadsheet/fods/).
+此 REST API 可让您将 Excel 文件中的**单个工作表导出为多种不同文件格式**。
 
-## 重新设置 API
+**摘要**——使用 **Get Worksheet（获取工作表）** 端点，以您选择的格式下载工作簿中的单个工作表。
+
+支持导出的格式如下：
+
+| 格式    | 扩展名   | MIME 类型                                                         |
+| ------- | -------- | ----------------------------------------------------------------- |
+| XLS     | .xls     | application/vnd.ms-excel                                          |
+| XLSX    | .xlsx    | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet |
+| XLSB    | .xlsb    | application/vnd.ms-excel.sheet.binary.macroEnabled.12             |
+| CSV     | .csv     | text/csv                                                          |
+| TSV     | .tsv     | text/tab-separated-values                                         |
+| XLSM    | .xlsm    | application/vnd.ms-excel.sheet.macroEnabled.12                    |
+| ODS     | .ods     | application/vnd.oasis.opendocument.spreadsheet                    |
+| TXT     | .txt     | text/plain                                                        |
+| PDF     | .pdf     | application/pdf                                                   |
+| OTS     | .ots     | application/vnd.oasis.opendocument.spreadsheet-template           |
+| XPS     | .xps     | application/vnd.ms-xpsdocument                                    |
+| DIF     | .dif     | application/x-dif                                                 |
+| PNG     | .png     | image/png                                                         |
+| JPEG    | .jpeg    | image/jpeg                                                        |
+| GIF     | .gif     | image/gif                                                         |
+| BMP     | .bmp     | image/bmp                                                         |
+| WMF     | .wmf     | image/wmf                                                         |
+| TIFF    | .tiff    | image/tiff                                                        |
+| EMF     | .emf     | image/emf                                                         |
+| NUMBERS | .numbers | application/vnd.apple.numbers                                     |
+| FODS    | .fods    | application/vnd.oasis.opendocument.spreadsheet-flat-xml           |
+
+## 安全与身份验证  
+Aspose.Cells Cloud API 采用安全机制，需使用 [基于 JWT 令牌的身份验证](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)。
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
-请求参数为：
+### **请求参数**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|格式|细绳|询问|导出的文件格式。|
-|垂直分辨率|整数|询问|设置生成图像的垂直分辨率（以每英寸点数为单位）。|
-|水平分辨率|整数|询问|设置生成图像的水平分辨率（以每英寸点数为单位）。|
-|区域|细绳|询问|出口地区。|
-|页面索引|整数|询问|导出的页面索引。|
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
+| 参数名称                 | 类型    | 位置   | 描述                                                                 |
+| ------------------------ | ------- | ------ | -------------------------------------------------------------------- |
+| **name**                 | string  | path   | **必需。** Excel 文件名。                                           |
+| **sheetName**            | string  | path   | **必需。** 要导出的工作表名称。                                     |
+| **format**               | string  | query  | 导出工作表的目标文件格式（例如：`pdf`、`png`）。                    |
+| **verticalResolution**   | integer | query  | 图像格式（如 PNG、JPEG）的垂直分辨率（DPI）。                       |
+| **horizontalResolution** | integer | query  | 图像格式的水平分辨率（DPI）。                                       |
+| **area**                 | string  | query  | 要导出的单元格范围（例如：`A1:D10`）。                              |
+| **pageIndex**            | integer | query  | 工作表分页时要导出的页码索引。                                      |
+| **folder**               | string  | query  | 存储中源文件所在的文件夹路径。                                      |
+| **storageName**          | string  | query  | Aspose Cloud 存储空间的名称。                                       |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+<a href="https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet" target="_blank" rel="noopener noreferrer">OpenAPI 规范</a> 定义了一个公开可访问的编程接口，可让您直接通过网页浏览器执行 REST 调用。
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+您可使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用云 API。
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=gif" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=gif" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```http
+HTTP/1.1 200 OK
+Content-Type: image/gif
+Content-Disposition: attachment; filename="Sheet1.gif"
 
-{
-stream
-} 
-
+<二进制数据>
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+## 错误处理
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+API 返回标准 HTTP 状态码。常见响应如下：
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+| 状态码 | 含义                                         | 示例 JSON 响应体                           |
+| ------ | -------------------------------------------- | ------------------------------------------ |
+| **200** | 成功——返回工作表数据流。                     | `{ "stream": "..." }`                      |
+| **400** | 请求错误——缺少或参数无效。                   | `{ "error": "Invalid format parameter." }` |
+| **401** | 未授权——JWT 令牌无效或缺失。                 | `{ "error": "Authentication failed." }`    |
+| **404** | 未找到——指定的文件或工作表不存在。           | `{ "error": "Worksheet not found." }`      |
+| **500** | 服务器内部错误——服务器发生意外情况。         | `{ "error": "Unexpected error." }`         |
+
+请在客户端代码中正确处理这些响应，以向用户提供适当的反馈信息。
+
+## 云 SDK 家族
+
+使用 SDK 是加速开发的最佳方式。SDK 会处理底层细节，让您专注于项目任务。请查阅 <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>，获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

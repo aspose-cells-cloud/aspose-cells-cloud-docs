@@ -1,129 +1,111 @@
-﻿---
-title: Создайте пустую рабочую книгу Excel
-second_title: Documen
-linktitle: Пустая рабочая книга
-type: docs
-url: /ru/create-an-empty-excel-file/
-aliases: [/create-an-empty-excel-workbook/,/workbook/new/,/workbook/create/empty-workbook/]
-keywords: How to create an Excel workbook
-description: Aspose.Cells Cloud REST API как создать пустую рабочую книгу Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Создание пустой книги Excel
 ---
-Этот REST API указывает на создание `empty workbook`.
+title: "Создание пустой рабочей книги Excel"
+second_title: "Документ"
+linktitle: "Пустая рабочая книга"
+type: docs
+url: /create-an-empty-excel-file/
+aliases:
+  [
+    /create-an-empty-excel-workbook/,
+    /workbook/new/,
+    /workbook/create/empty-workbook/,
+  ]
+keywords: "Aspose.Cells, Cloud, Excel, пустая рабочая книга, REST API, SDK"
+description: "Узнайте, как создать пустую рабочую книгу Excel с помощью Aspose.Cells Cloud REST API. Примеры на cURL и SDK."
+weight: 20
+ArticleTitle: "Создание пустой рабочей книги Excel с помощью Aspose.Cells Cloud API"
+---
 
-**Параметр запроса**
+Этот REST API создает **пустую рабочую книгу**.
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|Файл_шаблона|нить||
-|dataFile|нить||
-|isWriteOver|нить| правда/ложь|
-|папка|нить|Оригинальная папка рабочей тетради.|
-|имя_хранилища|нить|Имя хранилища.|
+## API PutWorkbookCreate
 
-**Параметр тела запроса**
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}
+```
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|данные|файл||
+### **Безопасность и аутентификация**
 
-## ОТДЫХ API
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификацию на основе токена JWT</a>.
 
-|**API**|**Тип**|**Описание**|**Ссылка на ресурс**|
-|:- |:- |:- |:- |
-|/cells/{имя}|ПОМЕЩАТЬ|Создать пустую рабочую книгу|[PutWorkbookCreate](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate)|
+### Параметры запроса
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+| Имя параметра | Тип    | Описание                                                       |
+|---------------|--------|----------------------------------------------------------------|
+| templateFile  | string | Путь к шаблонной рабочей книге, используемой в качестве основы (необязательно). |
+| dataFile      | string | Путь к файлу данных для заполнения рабочей книги (необязательно). |
+| isWriteOver   | boolean | `true` — перезаписать существующий файл; `false` — иначе.      |
+| folder        | string | Папка назначения для созданной рабочей книги (необязательно).  |
+| storageName   | string | Имя используемого сервиса хранения.                            |
 
- Вы можете использовать**cURL** Инструмент командной строки для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+### Параметр тела запроса
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Имя параметра | Тип | Описание                                   |
+|---------------|-----|--------------------------------------------|
+| data          | file | Двоичное содержимое создаваемого файла рабочей книги. |
+
+### **Ответ**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Условие возврата                        |
+|-----|-----------------------------|-----------------------------------------|
+| 200 OK | Рабочая книга успешно создана | Нормальный сценарий выполнения           |
+| 201 Created | Рабочая книга создана (альтернативный ответ) | Когда API возвращает статус «создано» |
+| 400 Bad Request | Некорректные параметры | Ошибка со стороны клиента               |
+| 401 Unauthorized | Отсутствует или недействителен токен | Ошибка аутентификации                  |
+| 409 Conflict | Файл существует, а `isWriteOver=false` | Конфликт с существующим файлом         |
+
+## Как использовать API PutWorkbookCreate с SDK
+
+### Спецификация API PutWorkbookCreate
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) определяет общедоступное программное интерфейсное API и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки **cURL** для доступа к веб-сервисам Aspose.Cells. Добавьте заголовок `Authorization` с действительным токеном OAuth2/JWT. Для пустой рабочей книги тело запроса является необязательным; если необходимо загрузить файл, добавьте `--data-binary @empty.xlsx`, как показано ниже.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?isWriteOver=false" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
-
+```bash
+# Создать пустую рабочую книгу с именем newworkbook.xlsx
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?isWriteOver=false" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     --data-binary @empty.xlsx   # Пропустите эту строку для действительно пустой рабочей книги
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-  "Status": "string",
-  "Workbook": {
-    "FileName": "string",
-    "Links": [
-      {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    ],
-    "Worksheets": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "DefaultStyle": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "DocumentProperties": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Names": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Settings": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "IsWriteProtected": "string",
-    "IsProtected": "string",
-    "IsEncryption": "string",
-    "Password": "string"
-  }
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
-
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK абстрагирует низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

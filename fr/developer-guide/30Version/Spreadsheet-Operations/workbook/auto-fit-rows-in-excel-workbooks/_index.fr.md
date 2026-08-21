@@ -1,79 +1,104 @@
-﻿---
-title: Ajuster automatiquement les lignes sur un classeur Excel
-second_title: Documen
-linktitle: Rangée
-type: docs 
-url: /fr/autofit-rows-on-an-excel-file/
-aliases: [/auto-fit-rows-in-excel-workbooks/,/workbook/autofit/rows/]
-keywords: Autofit rows on an Excel workboo
-description: Aspose.Cells Cloud REST API prend en charge l'ajustement automatique des lignes dans un classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 90
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Ajustement automatique des lignes sur un classeur Excel
 ---
-Ce REST API indique d'ajuster automatiquement les lignes d'un classeur Excel.
+title: "Ajuster automatiquement les lignes dans un classeur Excel"
+second_title: "Document"
+linktitle: "Lignes"
+type: docs
+url: /fr/autofit-rows-on-an-excel-file/
+aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
+keywords: "ajuster automatiquement les lignes, classeur Excel, Aspose.Cells Cloud, API REST, options d’ajustement automatique"
+description: "Découvrez comment ajuster automatiquement la hauteur des lignes dans un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’URL du point de terminaison, les paramètres, un exemple cURL et des extraits de code pour les SDK C#, Java, Python, etc."
+weight: 90
+ArticleTitle: "Ajuster automatiquement les lignes dans un classeur Excel – Aspose.Cells Cloud API"
+---
 
-## RSET API
+**Conditions préalables**  
+Avant d’appeler l’API, obtenez un jeton JWT Bearer valide à partir du service d’authentification Aspose, et assurez-vous que le classeur cible est stocké dans un emplacement pris en charge (stockage par défaut ou un stockage personnalisé que vous avez configuré).
+
+Cette API REST vous permet d’**ajuster automatiquement les lignes** dans un classeur Excel, en modifiant automatiquement la hauteur des lignes après l’insertion ou la modification des données.
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/autofitrows
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/autofitrows
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont les suivants :
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| Options d'installation automatique|| corps| Options d'installation automatique.|
-| startRow| entier| requête| Index de la ligne de départ.|
-| fin de ligne| entier| requête| Index de fin de ligne.|
-| première colonne| entier| requête| Index de la première colonne.|
-| dernière colonne| entier| requête| Index de la dernière colonne.|
-| seulementAuto| booléen| requête|FAUX|
-| dossier| chaîne| requête| Dossier du document.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type              | Emplacement | Description                                                                 |
+|------------------|-------------------|-------------|-----------------------------------------------------------------------------|
+| name             | string            | path        | Nom du fichier du classeur.                                                 |
+| autoFitterOptions| AutoFitterOptions | body        | Options contrôlant le comportement de l’ajustement automatique.            |
+| startRow         | integer           | query       | Index de la première ligne à ajuster automatiquement.                       |
+| endRow           | integer           | query       | Index de la dernière ligne à ajuster automatiquement.                       |
+| firstColumn      | integer           | query       | Index de la première colonne prise en compte pour l’ajustement automatique. |
+| lastColumn       | integer           | query       | Index de la dernière colonne prise en compte pour l’ajustement automatique. |
+| onlyAuto         | boolean           | query       | Si **true**, seules les lignes marquées avec le drapeau AutoFit sont traitées (par défaut **false**). |
+| folder           | string            | query       | Chemin du dossier où le classeur est stocké.                                |
+| storageName      | string            | query       | Nom du service de stockage.                                                 |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+**AutoFitterOptions** est un objet qui spécifie comment l’opération d’ajustement automatique se comporte (par exemple, `AutoFitMergedCells`, `IgnoreHidden`).
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+**Codes de statut HTTP**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Code | Signification              | Description                                                   |
+|------|----------------------------|---------------------------------------------------------------|
+| 200  | OK                         | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte         | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé               | Jeton JWT invalide ou manquant.                               |
+| 413  | Charge utile trop grande    | Le fichier envoyé dépasse la limite de taille.               |
+| 500  | Erreur interne du serveur   | Erreur inattendue du serveur.                                 |
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour appeler les services web Aspose.Cells. Remplacez `<jwt token>` par un jeton JWT Bearer valide obtenu auprès du service d’authentification Aspose.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/autofitrows" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"AutoFitMergedCells":true, "IgnoreHidden":true}'
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitrows" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"AutoFitMergedCells":true, "IgnoreHidden":true}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
+```
+
+*Exemple de réponse d’erreur (par exemple, classeur manquant) :*
+
+```json
+{
+  "Code": 404,
+  "Status": "Not Found",
+  "Message": "Le classeur spécifié 'myWorkbook.xlsx' n’existe pas."
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Remarques**  
+- Lorsque `AutoFitMergedCells` est défini à **true**, les cellules fusionnées sont considérées comme une seule entité lors de l’opération d’ajustement automatique.  
+- Définir `IgnoreHidden` à **true** ignore les lignes et colonnes masquées, en conservant leurs dimensions actuelles.
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le moyen le plus rapide de développer. Un SDK abstracte les détails de bas niveau afin que vous puissiez vous concentrer sur votre projet. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

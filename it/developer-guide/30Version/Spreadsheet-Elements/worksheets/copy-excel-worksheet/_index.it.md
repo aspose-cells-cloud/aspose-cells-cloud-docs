@@ -1,78 +1,86 @@
-﻿---
-title: Copia contenuti e formati da un altro foglio di lavoro
-second_title: Documen
-linktitle: Poliziotto
+---
+title: "Copia il contenuto e i formati da un altro foglio di lavoro."
+second_title: "Document"
+linktitle: "Copia"
 type: docs
 url: /it/worksheets/copy/
-aliases: [/copy-excel-worksheet/]
-keywords: Copies contents and formats from another Excel worksheet
-description: Aspose.Cells Cloud REST API supporta la copia di contenuti e formati da un altro foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/copy-excel-worksheet/]
+keywords: "Aspose Cells API per copiare fogli di lavoro, REST API per copiare fogli Excel, Aspose Cloud SDK per copiare, copiare fogli di calcolo"
+description: "Scopri come copiare un foglio di lavoro e i relativi formati in un nuovo foglio utilizzando l'API REST di Aspose.Cells Cloud. Include endpoint, parametri, esempi cURL e SDK per C#, Java, Python e altri linguaggi."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Copia contenuti e formati da un altro foglio di lavoro.
 ---
-Questo REST API indica `copy a worksheet` e salva con un nuovo nome nella stessa cartella di lavoro
 
-## RSET API
+Questa REST API copia un foglio di lavoro e i suoi formati in un nuovo foglio all'interno dello stesso workbook.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/copy
- 
 ```
 
-I parametri della richiesta sono:
+I parametri della richiesta sono elencati di seguito:
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero||
-| Nome foglio| corda| sentiero||
-| foglio di origine| corda| domanda||
-| opzioni|| corpo||
-| sourceWorkbook| corda| domanda||
-| cartellaorigine| corda| domanda||
-| cartella| corda| domanda||
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome Parametro   | Tipo   | Posizione | Descrizione                                                              |
+| ---------------- | ------ | --------- | ------------------------------------------------------------------------ |
+| `name`           | string | path      | Il nome del file del workbook.                                           |
+| `sheetName`      | string | path      | Il nome del foglio di lavoro di destinazione (il nuovo foglio).         |
+| `sourceSheet`    | string | query     | Il nome del foglio di lavoro da copiare.                                |
+| `options`        | object | body      | Oggetto JSON contenente le opzioni di copia (es. larghezza colonne, formule). |
+| `sourceWorkbook` | string | query     | Il nome del workbook sorgente, se diverso dal workbook corrente.        |
+| `sourceFolder`   | string | query     | Il percorso della cartella in cui è memorizzato il workbook sorgente.   |
+| `folder`         | string | query     | Il percorso della cartella in cui verrà salvato il workbook di destinazione. |
+| `storageName`    | string | query     | Il nome del servizio di archiviazione da utilizzare.                    |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### Esempi di richiesta e risposta
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+La [specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet) definisce un'interfaccia di programmazione pubblicamente accessibile e consente di effettuare interazioni REST direttamente da un browser web.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/NewSheet/copy?sourceSheet=Sheet3X" \
--X POST \
--d "{ \"ColumnCharacterWidth\": true, \"CopyInvalidFormulasAsValues\": true, \"CopyNames\": true, \"ExtendToAdjacentRange\": true, \"ReferToDestinationSheet\": true, \"ReferToSheetWithSameName\": true}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -d '{ "ColumnCharacterWidth": true, "CopyInvalidFormulasAsValues": true, "CopyNames": true, "ExtendToAdjacentRange": true, "ReferToDestinationSheet": true, "ReferToSheetWithSameName": true}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+### Gestione degli errori
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'API restituisce i codici di stato HTTP standard insieme a un corpo di errore in formato JSON. Le risposte tipiche includono:
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+| Codice HTTP | Descrizione                                                | Esempio di corpo di errore JSON                               |
+| ----------- | ---------------------------------------------------------- | ------------------------------------------------------------- |
+| 400         | Richiesta non valida – parametri mancanti o non validi.    | `{ "Code": 400, "Message": "Parametri della richiesta non validi." }`   |
+| 401         | Non autorizzato – token mancante o non valido.             | `{ "Code": 401, "Message": "Autenticazione non riuscita." }`        |
+| 404         | Non trovato – il workbook, il foglio di lavoro o la cartella non esistono. | `{ "Code": 404, "Message": "Risorsa non trovata." }`           |
+| 500         | Errore interno del server – condizione imprevista.         | `{ "Code": 500, "Message": "Si è verificato un errore imprevisto." }` |
+
+## Famiglia di SDK Cloud
+
+L'utilizzo di un SDK rappresenta il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, permettendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come effettuare chiamate ai servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

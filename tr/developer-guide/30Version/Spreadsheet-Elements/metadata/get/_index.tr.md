@@ -1,58 +1,78 @@
-﻿---
-title: Excel dosyasından meta verileri al
-second_title: Documen
-linktitle: Depolama kullanmadan alın
-type: docs
-url: /tr/metadata/get/
-keywords: Get properties from Excel files
-description: Aspose.Cells Cloud REST API, Excel dosyalarından özellik almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 23
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel dosyalarından meta veri al
 ---
-Bu REST API, birden fazla Excel dosyasından `metadata`'i almayı gösterir.
+title: "Excel dosyalarından meta veri alın"
+second_title: "Belge"
+linktitle: "Depolama kullanmadan alın"
+type: docs
+url: /metadata/get/
+keywords: "Aspose.Cells, Excel, meta veri, REST API, bulut SDK"
+description: "Aspose.Cells Cloud REST API ile Excel çalışma kitaplarından yerleşik veya özel meta verileri alın. İstek formatını, parametreleri, örnek SDK kodunu ve hata işleme içerir."
+weight: 23
+ArticleTitle: "Excel dosyalarından meta veri alın - Aspose.Cells Cloud API"
+---
+
+Bu REST API, bir veya daha fazla Excel dosyasından **meta veri** alır.  
+İstek, OAuth 2.0 istemci kimlik bilgileri akışı aracılığıyla elde edilen `Authorization: Bearer <access_token>` başlığını içermelidir.
+
+**Önkoşullar**: Bu uç noktayı çağırmak için Aspose Cloud OAuth 2.0 belirteç uç noktasından alınan geçerli bir erişim belirteciniz olmalıdır. Belirteç almak için örnek curl isteği:
 
 ```bash
+curl -X POST "https://api.aspose.cloud/connect/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
+```
 
+## REST API
+
+```bash
 POST https://api.aspose.cloud/v3.0/cells/metadata/get
-
 ```
 
-- **Sorgu Parametresi**
+### Sorgu Parametresi
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-| tip| sicim| TÜMÜ/Yerleşik/Özel|
+| Parametre Adı | Tür   | Açıklama                                                                |
+| ------------- | ----- | ----------------------------------------------------------------------- |
+| type          | string | `ALL` / `BuiltIn` / `Custom` – Hangi meta veri gruplarının döndürüleceğini belirtir. |
 
-- **İstek Gövde Parametresi**
+### İstek Gövdesi Parametresi
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|excel dosyası| veri dosyası|Veri dosyası çok parçalı içeriğin ilk bölümüne kaydedilir.|
+| Parametre Adı | Tür       | Açıklama                                                       |
+| ------------- | --------- | -------------------------------------------------------------- |
+| Excel dosyası | veri dosyası | İsteğin çok parçalı kısmının ilk parçası olarak verilen Excel dosyası. |
 
-- **Cevap**
+### Yanıt
 
-```bash
-{
-    [
-        { 
-            "Name":"test1",
-            "Value":"test1",
-            ...
-        },
-        { 
-            "Name":"test2",
-            "Value":"test3",
-            ...
-        }
-    ]
-}
+```json
+[
+  {
+    "Name": "Author",
+    "Value": "John Doe",
+    "BuiltIn": true,
+    "IsReadOnly": false
+  },
+  {
+    "Name": "CustomProp1",
+    "Value": "Custom Value",
+    "BuiltIn": false,
+    "IsReadOnly": false
+  }
+]
 ```
 
-- **Bulut SDK Ailesi**
+| Kod | Anlam                   | Durum                                |
+|-----|-------------------------|--------------------------------------|
+| 200 | Başarılı                | Meta veri döndürüldü.                |
+| 400 | Hatalı İstek            | Dosya eksik veya sorgu geçersiz.     |
+| 401 | Yetkisiz                | Geçersiz veya eksik belirteç.        |
+| 404 | Bulunamadı              | Belirtilen dosya bulunamadı.         |
+| 500 | İç Sunucu Hatası        | Beklenmeyen sunucu hatası.           |
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+API, uygun durumlarda bu standart HTTP durum kodlarını ve bir hata yanıt JSON nesnesini birlikte döndürür.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+### Bulut SDK Ailesi
+
+Bir SDK kullanmak, düşük seviye ayrıntıları işleyerek geliştirme sürecini hızlandırır. Aspose.Cells Cloud SDK'larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, farklı SDK’larla Aspose.Cells web hizmetlerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

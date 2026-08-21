@@ -1,26 +1,34 @@
-﻿---
-title: Aspose.Cells نظرة عامة على السحابة
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud Overview: a REST-first, language-neutral API service that turns Excel operations into simple HTTPS calls—no local Office install, no platform"
-linktitle: نظرة عامة
-type: docs
-url: /ar/overview/
-description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك
-weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، نظرة عامة
 ---
- Aspose.Cells Cloud هو نظام REST API يُسهّل مجموعة واسعة من مهام معالجة المستندات، مثل إنشاء المستندات ومعالجتها وتحويلها وعرضها في السحابة. يمكنك تحويل المستندات بسهولة.[XLS](https://docs.fileformat.com/spreadsheet/xls/) و[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) الملفات إلى تنسيقات مختلفة مثل[PDF](https://docs.fileformat.com/view/pdf/), [HTML](https://docs.fileformat.com/web/html/), [المواد المستنفدة للأوزون](https://docs.fileformat.com/spreadsheet/ods/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [ملف CSV](https://docs.fileformat.com/spreadsheet/csv/)، وأكثر.
+title: "نظرة عامة على Aspose.Cells Cloud"
+second_title: "وثيقة"
+ArticleTitle: "نظرة عامة على Aspose.Cells Cloud: خدمة API مبنية أولًا على REST ومحايدة من حيث لغة البرمجة، تحوّل عمليات إكسل إلى مكالمات HTTPS بسيطة — دون الحاجة لتثبيت مكتب محلي أو الاعتماد على منصة معيّنة."
+linktype: "نظرة عامة"
+type: docs
+url: /overview/
+description: "استكشف Aspose.Cells Cloud — API مبنية أولًا على REST تتيح لك إنشاء الملفات وإدارتها وتحويلها وعرضها في السحابة، بما في ذلك تحويل ملفات إكسل (XLS/XLSX) إلى PDF وHTML وODS وXPS وCSV وغيرها من التنسيقات الشائعة. تتوفر نسخة تجريبية مجانية."
+keywords: "Aspose Cells، API سحابية، تحويل إكسل، PDF، HTML، ODS، XPS، CSV، SDK لجداول البيانات"
+weight: 10
+---
 
-## **مجموعات تطوير البرامج (SDKs)**
+يُعد Aspose.Cells Cloud واجهة برمجة تطبيقات مبنية على REST تتيح تنفيذ مجموعة واسعة من مهام معالجة الوثائق، مثل إنشاء ملفات إكسل وتعديلها وتحويلها وعرضها في السحابة. يمكنك بسهولة تحويل ملفات إكسل إلى تنسيقات متعددة، منها:
 
- يُسرّع استخدام مجموعة تطوير البرامج (SDK) (العميل API) عملية التطوير من خلال معالجة التفاصيل البسيطة المتعلقة بتقديم الطلبات وإدارة الردود، مما يسمح للمطورين بالتركيز على الكود الخاص بالمشروع. استكشف[مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على قائمة شاملة بمجموعات تطوير البرامج Aspose.Cells، مع أمثلة عملية لتسريع تطوير مشروعك. راجع "[مجموعات تطوير البرامج المتاحة](/cells/ar/available-sdks/) "مقالة لتعلم كيفية دمج SDK في مشروعك.
+- PDF  
+- HTML  
+- ODS  
+- XPS  
+- CSV  
+- وتنسيقات شائعة أخرى  
 
-## **API المستكشف**
+**المتطلبات المسبقة:** لاستخدام الخدمة، تحتاج إلى حساب Aspose Cloud ومفتاح API ساري المفعول. تُستخدم هذه البيانات الائتمانية في جميع الطلبات المُ-authenticated.
 
- ال[Aspose.Cells السحابة API مرجع](https://apireference.aspose.cloud/cells/) يُتيح لك هذا التطبيق تجربة واجهات برمجة التطبيقات (APIs) الخاصة بنا مباشرةً عبر متصفحك، مما يُتيح تفاعلاً سلسًا واختبارًا دقيقًا لكل عملية تُجريها واجهات برمجة التطبيقات.
+## **مكتبات SDK**
 
-## **الأمان والمصادقة**
+يُساعد استخدام SDK (عميل API) في تسريع عملية التطوير من خلال التعامل مع التفاصيل منخفضة المستوى لتقديم الطلبات وإدارة الاستجابات، مما يتيح للمطورين التركيز على كتابة الكود الخاص بمشاريعهم. يمكنك الاطّلاع على <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub الخاص بنا</a> للحصول على قائمة شاملة بـ SDKs الخاصة بـ Aspose.Cells، مع أمثلة عملية جاهزة لتسريع تطوير مشروعك. راجع مقالتنا "[المكتبات المتاحة](/cells/available-sdks/)" لمعرفة كيفية دمج SDK في مشروعك.
 
-تعطي Aspose.Cells لواجهات برمجة التطبيقات السحابية الأولوية للأمان وتتطلب المصادقة للوصول.
+## **مستكشف API**
 
-للحصول على معلومات مفصلة حول طلبات المصادقة، يرجى الرجوع إلى "[صفحة مصادقة طلبات API](/total/getting-started/rest-api-overview/authenticating-api-requests/)" صفحة
+يوفر <a href="https://apireference.aspose.cloud/cells/" rel="noopener noreferrer">مرجع Aspose.Cells Cloud API</a> وسيلة سهلة الاستخدام لتجربة الواجهات برمجة التطبيقات مباشرة من متصفحك. ويتيح لك هذا التفاعل السلس واختبار كل عملية تُقدّمها الخدمة. ولبدء الاستخدام بسرعة، يمكنك تجربة مثال "تحويل Workbook"، الذي يُظهر طلب POST بسيط لتحويل ملف إكسل إلى PDF.
+
+### **الأمان والمصادقة**
+
+تتميّز واجهات برمجة تطبيقات Aspose.Cells Cloud بالأمان، وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة مبنية على رمز JWT</a>.

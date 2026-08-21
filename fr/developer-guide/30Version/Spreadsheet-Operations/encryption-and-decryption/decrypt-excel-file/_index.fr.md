@@ -1,83 +1,139 @@
-﻿---
-title: Décrypter un classeur Excel
-second_title: Documen
-linktitle: Décrypter un fichier Excel
-type: docs
-url: /fr/excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/,/workbook/decrypt/]
-keywords: REST API, spreadsheets, excel, decryp
-description: "Cells.Cloud API pour Excel opération : décrypter un classeur Excel"
-weight: 50
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Décrypter un classeur Excel
 ---
-Ce REST API décrypte un Excel `workbook`.
+title: "Décrypter un classeur Excel"
+second_title: "Document"
+linktitle: "Décrypter un fichier Excel"
+type: docs
+url: /excel-file-decrypt/
+aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+keywords: "Aspose.Cells, décryptage Excel, API REST, SDK cloud"
+description: "Découvrez comment décrypter un classeur Excel à l'aide de l'API REST Aspose.Cells Cloud. Inclut les paramètres requis, un exemple cURL, des exemples de code SDK et des détails sur la gestion des erreurs."
+ArticleTitle: "Comment décrypter un classeur Excel à l'aide de l'API Aspose.Cells Cloud"
+weight: 50
+---
 
-**Paramètre de requête**
+**Conditions préalables**
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|dossier|chaîne|Classeur original.|
-|nom de stockage|chaîne|Nom de stockage.|
+- Un jeton d'accès JWT valide.
+- Le classeur doit être uploadé vers le stockage Aspose Cloud et son chemin spécifié dans le paramètre de requête `folder`.
 
-**Paramètre du corps de la requête**
+## API DeleteDecryptWorkbook
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|cryptage|Demande de chiffrement du classeur||
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/encryption
+```
 
-**Demande de chiffrement du classeur**
+### **Sécurité et authentification**
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|Type de cryptage|chaîne|XOR/Compatible/Fournisseur cryptographique amélioré V1/Fournisseur cryptographique fort|
-|Longueur de clé|entier||
-|Mot de passe|chaîne||
+Les API REST Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
-## RESTE API
+### Paramètres de requête
 
-|**API**|**Taper**|**Description**|**Lien Swagger**|
-|:- |:- |:- |:- |
-|/cellules/{nom}/cryptage|SUPPRIMER|Décrypter un document|[SupprimerDécrypterClasseur](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook)|
+| Nom du paramètre | Type   | Description                                           |
+| ---------------- | ------ | ----------------------------------------------------- |
+| folder           | string | Chemin du dossier contenant le classeur original.     |
+| storageName      | string | Nom du stockage dans lequel réside le classeur.       |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Paramètre du corps de la requête
 
- Vous pouvez utiliser**cURL** Outil en ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le cloud API avec cURL.
+| Nom du paramètre | Type                      | Description                                       |
+| ---------------- | ------------------------- | ------------------------------------------------- |
+| encryption       | WorkbookEncryptionRequest | Paramètres de chiffrement requis pour le décryptage. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### WorkbookEncryptionRequest
+
+| Nom du paramètre | Type    | Description                                                                                              |
+| ---------------- | ------- | -------------------------------------------------------------------------------------------------------- |
+| EncryptionType   | string  | Algorithme de chiffrement (`XOR`, `Compatible`, `EnhancedCryptographicProviderV1`, `StrongCryptographicProvider`). |
+| KeyLength        | integer | Longueur de la clé de chiffrement en bits.                                                               |
+| Password         | string  | Mot de passe utilisé pour le décryptage.                                                                 |
+
+### Réponse
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Exemples de réponses d’erreur**
+
+```json
+{
+  "Code": "400",
+  "Message": "Paramètres de requête invalides."
+}
+```
+
+```json
+{
+  "Code": "401",
+  "Message": "Échec de l'authentification. Jeton JWT invalide ou manquant."
+}
+```
+
+```json
+{
+  "Code": "413",
+  "Message": "Charge utile trop volumineuse. Le fichier uploadé dépasse la taille autorisée."
+}
+```
+
+```json
+{
+  "Code": "500",
+  "Message": "Erreur interne du serveur. Veuillez réessayer ultérieurement."
+}
+```
+
+**Codes de statut HTTP**
+
+| Code | Signification              | Description                                          |
+|------|----------------------------|------------------------------------------------------|
+| 200  | OK                         | Filtre appliqué avec succès ; la réponse contient les détails de l'opération. |
+| 400  | Demande incorrecte         | Paramètres manquants ou invalides (par ex. type de fichier non pris en charge). |
+| 401  | Non autorisé               | Jeton JWT invalide ou manquant.                      |
+| 413  | Charge utile trop volumineuse | Le fichier uploadé dépasse la limite de taille.    |
+| 500  | Erreur interne du serveur  | Erreur serveur inattendue.                           |
+
+## Comment utiliser l'API DeleteDecryptWorkbook avec les SDK
+
+### Spécification de l'API DeleteDecryptWorkbook
+
+La [Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) définit une interface de programmation publiquement accessible et vous permet d'effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser **cURL** pour accéder facilement aux services web Aspose.Cells. L'exemple suivant montre comment appeler l'API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "accept: application/json" -H "Content-Type: application/json" -H "x-aspose-client: Containerize.Swagger" -d "{ \"EncryptionType\": \"XOR\", \"KeyLength\": 1280, \"Password\": \"aspose\"}"
-
+```bash
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -d '{ "EncryptionType": "XOR", "KeyLength": 1280, "Password": "aspose"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
-  "Code":"200",
-
-  "Status":"OK"
-
+  "Code": "200",
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
-{{< /tabs >}}
+### Utiliser les SDK Aspose.Cells Cloud
 
-## Famille de SDK Cloud
+L'utilisation d'un SDK est le moyen optimal d'accélérer le développement. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
-
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l'aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

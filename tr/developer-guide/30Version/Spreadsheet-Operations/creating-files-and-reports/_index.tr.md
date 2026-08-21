@@ -1,20 +1,24 @@
-﻿---
-title: Excel Dosyaları Oluşturun veya Excel Raporları Oluşturun
-second_title: Documen
-type: docs
-url: /tr/creating-files-and-reports/
-aliases: [/workbook/create/]
-linktitle: Excel'i oluşturun ve raporlayın
-keywords: Create document, Generate report, Excel report, Dynamic repor
-description: Grafikler, tablolar ve diğer veri görselleştirme öğelerini içerebilen yeni belgeler veya raporlar oluşturun
-weight: 10
-kwords: Belge oluştur, Rapor oluştur, Excel raporu, Dinamik rapor
 ---
-Aspose.Cells Cloud API'i kullanarak, yeni Excel çalışma kitaplarını zahmetsizce oluşturabilir ve şablon dosyalarına dayalı özel Excel çalışma kitapları üretebilirsiniz. Ayrıca, çeşitli karmaşık veri işleme ve rapor oluşturma ihtiyaçlarını karşılayabilen SmartMarker özelliğiyle birlikte karmaşık Excel raporlarının oluşturulmasını da destekler.
+title: "Excel Dosyaları Oluşturun ve Excel Raporları Oluşturun"
+second_title: "Belge"
+type: docs
+url: /creating-files-and-reports/
+aliases: [/workbook/create/]
+linktitle: "Excel ve Rapor Oluşturun"
+keywords: "Aspose.Cells Cloud, Excel API, çalışma kitabı oluştur, Excel raporu, SmartMarker, şablon, rapor oluşturma"
+description: "Aspose.Cells Cloud API ile boş Excel çalışma kitapları nasıl oluşturulacağını, şablon dosyalarından dosyalar nasıl oluşturulacağını ve SmartMarker özellikli raporlar nasıl oluşturulacağını kod örnekleriyle öğrenin."
+weight: 10
+ArticleTitle: "Excel Dosyaları Oluşturun ve Excel Raporları Oluşturun – Aspose.Cells Cloud API"
+---
 
-## Excel dosyasını oluşturun ve rapor oluşturun
+Aspose.Cells Cloud API kullanarak yeni Excel çalışma kitaplarını kolayca oluşturabilir ve şablon dosyalarından çalışma kitapları oluşturabilirsiniz. Ayrıca, farklı veri işleme ve raporlama ihtiyaçlarını karşılayabilen gelişmiş Excel raporlarını SmartMarker özelliği ile oluşturmayı da destekler.
 
-- [Boş bir çalışma kitabı nasıl oluşturulur.](/cells/tr/create-an-empty-excel-file/)
-- [Şablon dosyasıyla Excel çalışma kitabı nasıl oluşturulur.](/cells/tr/create-an-excel-file-with-template-file/)
-- [Akıllı işaretleyici şablonuyla Excel raporu nasıl oluşturulur.](/cells/tr/build-report-with-smart-marker/)
-- [Excel raporunun oluşturulması için veriler nasıl bir araya getirilir.](/cells/tr/assembly-data-for-the-creation-of-an-excel-report/)
+**Ön Gereksinimler**: Başlamadan önce geçerli bir Aspose Cloud API anahtarına ve geliştirme diliniz için Aspose.Cells Cloud SDK’sının yüklü olduğundan emin olun.
+
+## Excel dosyası oluşturun ve rapor oluşturun
+
+- [Boş bir çalışma kitabı nasıl oluşturulur.](/cells/create-an-empty-excel-file/)
+- [Şablon dosyası ile bir Excel çalışma kitabı nasıl oluşturulur.](/cells/create-an-excel-file-with-template-file/)
+- [SmartMarker şablonu ile bir Excel raporu nasıl oluşturulur.](/cells/build-report-with-smart-marker/)
+- [Excel raporu oluşturma için veri nasıl derlenir.](/cells/assembly-data-for-the-creation-of-an-excel-report/)
+---

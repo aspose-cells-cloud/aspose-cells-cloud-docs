@@ -1,70 +1,78 @@
-﻿---
-title: Få sidantal från ett Excel-dokument
-second_title: Documen
-linktitle: Sida
-type: docs
-url: /sv/get-page-count-from-an-excel-file/
-aliases: [/workbook/page-count/,/workbook/get/page-count/]
-keywords: Getting pages count on an Excel workbook
-description: Aspose.Cells Cloud REST API stöder att hämta sidräkning i en Excel-arbetsbok. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta sidantal
 ---
-Denna REST API indikerar `get page count` för arbetsboken.
+title: "Hämta sidantal från en Excel-fil"
+second_title: "Dokument"
+linktitle: "Sidor"
+type: docs
+url: /get-page-count-from-an-excel-file/
+aliases: [/workbook/page-count/, /workbook/get/page-count/]
+keywords: "Aspose.Cells, moln-API, Excel-sidantal, arbetshandsboksformatering"
+description: "Hämta det totala antalet utskrivbara sidor i en Excel-arbetshandsbok via Aspose.Cells Cloud REST API (v3.0). Innehåller begäranformat, nödvändiga parametrar, cURL-exempel, svarschema, felhantering och SDK-utdrag för flera språk."
+weight: 10
+version: "v3.0"
+ArticleTitle: "Hämta sidantal från en Excel-fil med Aspose.Cells Cloud API"
+---
 
-## RSET API
+Denna REST API returnerar **sidantalet** för en arbetshandsbok.
+
+## Säkerhet och autentisering
+Aspose.Cells Cloud-API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/pagecount
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/pagecount
 ```
 
-Begäranparametrarna är:
+### Begäranparametrar
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameternamn | Typ   | Plats  | Nödvändig | Beskrivning                            |
+| ------------- | ----- | ------ | --------- | -------------------------------------- |
+| name          | string | path   | Ja        | Namnet på Excel-dokumentet.            |
+| folder        | string | query  | Nej       | Mappen som innehåller dokumentet.      |
+| storageName   | string | query  | Nej       | Namnet på den lagring som ska användas.|
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/GetPageCount) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Workbook/GetPageCount) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda verktyget cURL för kommandoraden för enkelt att komma åt Aspose.Cells REST API. Följande exempel visar hur du anropar slutpunkten med cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/pagecount" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/DinFil.xlsx/pagecount" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
+
+*Ersätt `DinFil.xlsx` med det faktiska namnet på den arbetshandsbok du vill fråga.*
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 13
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Svarschema
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| HTTP-status | Datatyp | Beskrivning                                              |
+| ----------- | ------- | -------------------------------------------------------- |
+| 200         | integer | Det totala antalet utskrivbara sidor i arbetshandsboken (t.ex. `13`). |
+| 4xx‑5xx     | JSON    | Felobjekt (se avsnittet *Felhantering*).                 |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+## Molnsdk-familj
+
+Att använda en sdk är det bästa sättet att påskynda utvecklingen. En sdk hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Se [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud sdks.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med olika sdks:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -94,7 +102,7 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetPageCount.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82deb2e4189bc27ae92abf73c36b4df0" "Example_GetPageCount.ts" >}}
 
 {{< /tab >}}
 
@@ -117,3 +125,12 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Felhantering
+
+| HTTP-status | Beskrivning                              | Exempel på JSON-kropp                                                                 |
+| ----------- | ---------------------------------------- | ------------------------------------------------------------------------------------ |
+| 401         | Ogiltig eller saknad JWT-token.          | `{ "Code": "InvalidAuthenticationToken", "Message": "Åtkomsttoken saknas eller är ogiltig." }` |
+| 404         | Den angivna arbetshandsboken kunde inte hittas. | `{ "Code": "FileNotFound", "Message": "Den begärda filen finns inte." }`            |
+| 400         | Felaktig begäran – nödvändiga parametrar saknas. | `{ "Code": "BadRequest", "Message": "Nödvändig parameter 'name' saknas." }`         |
+| 500         | Internt serverfel.                       | `{ "Code": "InternalError", "Message": "Ett oväntat fel uppstod." }`                 |

@@ -1,65 +1,78 @@
-﻿---
-title: Définir l'arrière-plan sur une feuille de calcul Excel
-second_title: Documen
-linktitle: Annonce
-type: docs
-url: /fr/worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
-keywords: Delete an Excel worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API prend en charge la suppression d'une feuille de calcul Excel dans un classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 180
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Définir l'arrière-plan sur une feuille de calcul Excel
 ---
-Ce REST API indique `add worksheet background image`.
+title: "Définir une image d’arrière-plan sur une feuille de calcul Excel"
+ArticleTitle: "Définir une image d’arrière-plan sur une feuille de calcul Excel – Guide de l’API Aspose.Cells Cloud"
+second_title: "Document"
+linktype: "docs"
+url: /worksheets/background/add/
+aliases: [/set-background-or-watermark-for-excel-worksheet/]
+keywords: "Aspose.Cells, Excel, feuille de calcul, arrière-plan, API REST, SDK, ajouter image"
+description: "Découvrez comment ajouter une image d’arrière-plan (PNG, JPEG, BMP) à une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’endpoint, les paramètres requis, les étapes d’authentification, un exemple cURL et des exemples de code SDK."
+weight: 180
+---
 
-## RSET API
+Cet API REST ajoute une image d’arrière-plan à une feuille de calcul.
+
+## Sécurité et authentification
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une [authentification basée sur un jeton JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
- 
 ```
 
-Les paramètres de la requête sont :
+### **Paramètres de la requête**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin||
-| nom de la feuille| chaîne| chemin||
-| png|| corps||
-| dossier| chaîne| requête||
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type   | Emplacement | Description                                                    |
+| ---------------- | ------ | ----------- | -------------------------------------------------------------- |
+| name             | string | path        | Nom du classeur Excel.                                         |
+| sheetName        | string | path        | Nom de la feuille de calcul à laquelle l’image est appliquée. |
+| imageFile        | file   | body        | Fichier image binaire (PNG, JPEG, BMP, etc.) à définir comme arrière-plan. |
+| folder           | string | query       | Dossier dans le stockage où se trouve le classeur.            |
+| storageName      | string | query       | Nom du stockage Aspose Cloud.                                  |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+**Formats pris en charge et limites**
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+- Extensions d’image acceptées : **PNG, JPEG, BMP, GIF**.
+- Taille maximale du fichier : **5 Mo**.
+- L’image est répétée (mosaïque) pour remplir l’ensemble de l’arrière-plan de la feuille de calcul.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer un appel à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/background" \
--X PUT \
--T Creative.jpg \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/background" \
+  -X PUT \
+  -F "imageFile=@Creative.jpg" \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+_Réponses d’erreur possibles_
+
+| Code HTTP | Description                                              |
+| --------- | -------------------------------------------------------- |
+| 400       | Requête incorrecte – paramètres manquants ou invalides.  |
+| 401       | Non autorisé – jeton JWT invalide ou expiré.             |
+| 404       | Non trouvé – le classeur ou la feuille de calcul n’existe pas. |
+| 500       | Erreur interne du serveur – condition inattendue sur le serveur. |
 
 {{< /tab >}}
 
@@ -67,9 +80,9 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/back
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le meilleur moyen d’accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

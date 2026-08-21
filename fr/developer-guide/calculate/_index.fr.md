@@ -1,14 +1,16 @@
-﻿---
-title: "Aspose.Cells Cloud Web API - Excel Calculer : somme, compter, moyenne, min., max., additionner, soustraire, multiplier, diviser, etc."
-second_title: Documen
-ArticleTitle: "Excel Calculation: Sum, Count, Average, Min, Max, Add, Subtract, Multiply, Divide, et"
-linktitle: Calculer
-type: docs
-url: /fr/calculate/
-keywords: Aspose.Cells Cloud REST API, Excel conversion, merge spreadsheets, split documents, protect Excel files, search and replace in Excel, transform spreadsheets, Office Excel 2016, Office Excel 2019, Office Excel 365
-description: Ce guide du développeur fournit des scénarios pratiques et des conseils pour utiliser efficacement les fonctionnalités Aspose.Cells for .NET, vous permettant d'obtenir des apparences de documents spécifiques Excel et de mettre en œuvre efficacement divers cas d'utilisation
-weight: 20
-kwords: Excel, Office Cloud, REST API, Manipulation de feuilles de calcul, Conversion PDF, Traitement CSV, Gestion JSON, Prise en charge Markdown, Guide du développeur, Fonctionnalité de calcul
 ---
-- **[Somme, nombre, valeur moyenne, etc. par couleur dans Spreadsheet/Excel](https://docs.aspose.cloud/cells/aggregate-cells-by-color/)**
-- **[Additionner, soustraire, multiplier, diviser et pourcentage dans une feuille de calcul/Excel](https://docs.aspose.cloud/cells/math-calculate/)**
+title: "Aspose.Cells Cloud Web API – Calculer SOMME, NOMBRES, MOYENNE, MIN, MAX et opérations mathématiques de base"
+second_title: "Document"
+ArticleTitle: "Améliorez vos compétences en données : découvrez les calculs Excel essentiels – Additionner, soustraire, multiplier, diviser et plus encore"
+linktitle: "Calculer"
+type: docs
+url: /calculate/
+keywords: "Aspose.Cells Cloud, API de calcul Excel, SOMME, NOMBRES, MOYENNE, MIN, MAX, opérations mathématiques de base, API REST, calculs de feuille de calcul"
+description: "Découvrez comment utiliser l’API REST Aspose.Cells Cloud pour calculer la SOMME, le NOMBRES, la MOYENNE, le MIN et le MAX, ainsi que des opérations arithmétiques de base sur des feuilles de calcul Excel. Inclut la syntaxe des requêtes, du code d’exemple, des réponses et la gestion des erreurs."
+weight: 20
+---
+
+Exécutez automatiquement des calculs tels que **SOMME**, **NOMBRES**, **MOYENNE**, **MIN** et **MAX** sur des feuilles de calcul Excel via l’API REST Aspose.Cells Cloud — aucune filtration manuelle ni logiciel de feuille de calcul local n’est requis. L’API est prise en charge dans **Aspose.Cells Cloud**, utilise une authentification standard (OAuth 2.0 ou JWT), renvoie les résultats au format JSON et fournit des codes d’erreur clairs pour les plages invalides ou les problèmes d’authentification. Pour la syntaxe détaillée des requêtes, consultez la documentation officielle de l’API REST.
+
+- **[Calculer par couleur de cellule](https://docs.aspose.cloud/cells/aggregate-cells-by-color/)** – Récupérez les totaux groupés par couleur de fond ou de police en une seule requête.
+- **[Calcule rapide de la feuille de calcul](https://docs.aspose.cloud/cells/math-calculate/)** – Effectuez instantanément les calculs SOMME, NOMBRES, MOYENNE, MIN, MAX (et les opérations arithmétiques de base) sur n’importe quelle plage.

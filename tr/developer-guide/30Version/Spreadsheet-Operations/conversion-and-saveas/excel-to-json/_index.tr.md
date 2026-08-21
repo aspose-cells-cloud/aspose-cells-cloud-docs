@@ -1,80 +1,141 @@
-﻿---
-title: Excel Jso'ya
-second_title: Documen
-linktitle: Excel Jso'ya
-type: docs
-url: /tr/convert-excel-file-to-json-file/
-keywords: Convert excel files to json files
-description: Aspose.Cells Cloud REST API, Excel dosyalarının JSON dosyalarına dönüştürülmesini destekler. SDK, Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift gibi çeşitli geliştirme dillerini destekler.
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel'den Json'a
 ---
-Bu REST API, `convert`'e bir elektronik tablo dosyasını json formatlı bir dosyaya dönüştürür.
+title: "Excel'den JSON'a"
+second_title: "Belge"
+linktitle: "Excel'den JSON'a"
+type: docs
+url: /convert-excel-file-to-json-file/
+keywords: "Aspose.Cells, Excel'den JSON'a, Bulut API'si, elektronik tablo dönüştürme, REST API"
+description: "Aspose.Cells Cloud REST API ile Excel elektronik tablolarını JSON dosyalarına nasıl dönüştüreceğinizi öğrenin. cURL örneği, SDK kod parçacıkları (C#, Java, Python), gerekli parametreler, kimlik doğrulama ve yanıt formatı içerir."
+weight: 100
+ArticleTitle: "Excel Dosyasını Aspose.Cells Cloud API ile JSON'a Dönüştürme – Hızlı Kılavuz"
+---
 
-**Sorgu Parametresi**
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|şifre|sicim| Excel dosyasını açmak için gereken şifre.|
-|depolamaAdı|sicim| Dosyanın bulunduğu depolama adı.|
-|checkExcelRestriction|bool| Kullanıcı hücrelerle ilgili nesneleri değiştirdiğinde Excel dosyasının kısıtlamasını kontrol edin.|
+## REST API
 
-**İstek Gövde Parametresi**
+Bu REST API, bir elektronik tablo dosyasını JSON formatlı bir dosyaya dönüştürür.
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|veri dosyası| veri dosyası|Veri dosyası çok parçalı içeriğin ilk bölümüne kaydedilir.|
 
-**Cevap**
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/json
+```
 
-[Dosya Bilgileri](/cells/tr/file-info/)
+### Güvenlik ve Kimlik Doğrulama
 
-## REST API Spesifikasyonu
+Aspose.Cells Cloud API’leri güvenlidir ve [JWT token tabanlı kimlik doğrulama](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) gerektirir.
 
-|**API**|**Tip**|**Tanım**|**Swagger Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/dönüştür/json|POSTALAMAK|Bir elektronik tabloyu pptx dosyasına dönüştürün.|[PostConvertWorkbookToJson](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToJson)|
+### İstek
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToJson) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+**Sorgu Parametreleri**
 
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı         | Tür   | Açıklama                                                           |
+| ----------------------- | ------ | --------------------------------------------------------------------- |
+| `password`              | string | Excel dosyasını açmak için gereken şifre (isteğe bağlı).                  |
+| `storageName`           | string | Dosyanın bulunduğu depo adı (isteğe bağlı).             |
+| `checkExcelRestriction` | bool   | Hücreleri düzenlerken Excel’e özel kısıtlamaları zorunlu kılar (isteğe bağlı). |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**İstek Gövdesi Parametresi**
+
+| Parametre Adı | Tür | Açıklama                                                                                       |
+| -------------- | ---- | ------------------------------------------------------------------------------------------------- |
+| `datafile`     | file | Yüklenecek Excel dosyası. `multipart/form-data` isteğiyle ilk parça olarak gönderilmelidir. |
+
+#### Örnek cURL Çağrısı
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/json" \
+     -H "Authorization: Bearer $ACCESS_TOKEN" \
+     -H "accept: application/json" \
+     -H "Content-Type: multipart/form-data" \
+     -F "File=@myWorkbook.xlsx"
+```
+
+### Yanıt
+
+Hizmet, bir **FileInfo** nesnesi döndürür. Önemli alanlar aşağıda açıklanmıştır:
+
+| Alan          | Tür    | Açıklama                                                                  |
+| ------------- | ------- | ---------------------------------------------------------------------------- |
+| `Filename`    | string  | Oluşturulan JSON dosyasının adı (örneğin, `myWorkbook.json`).                   |
+| `FileSize`    | integer | Oluşturulan dosyanın bayt cinsinden boyutu.                                         |
+| `FileContent` | string  | JSON dosyasının Base64 ile kodlanmış içeriği. Gerçek JSON içeriğini almak için kodunu çözün. |
+
+**Örnek yanıt**
+
+```json
+{
+  "Filename": "myWorkbook.json",
+  "FileSize": 8423,
+  "FileContent": "eyJmb3JtYXR0ZWRfZGF0YSI6IH ... (base64 string) ..."
+}
+```
+
+#### Hata Yönetimi
+
+İstek başarısız olursa, API aşağıdaki yapıya sahip bir hata nesnesi döndürür:
+
+| Alan      | Tür   | Açıklama                              |
+| --------- | ------ | ---------------------------------------- |
+| `Code`    | string | Makine tarafından okunabilir hata tanımlayıcısı.       |
+| `Message` | string | Hatanın insan tarafından okunabilir açıklaması. |
+
+Yaygın HTTP durum kodları:
+
+- **400** – Geçersiz istek (örneğin, eksik dosya, geçersiz parametreler).
+- **401** – Yetkisiz erişim (geçersiz veya eksik erişim belirteci).
+- **500** – İç sunucu hatası.
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | Tamam                        | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400  | Geçersiz İstek               | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401  | Yetkisiz Erişim              | Geçersiz veya eksik JWT belirteci. |
+| 413  | Yük Çok Büyük                | Yüklenecek dosya boyut sınırını aşıyor. |
+| 500  | İç Sunucu Hatası             | Beklenmeyen sunucu hatası. |
+## SDK ile PostConvertWorkbookToJson API Nasıl Kullanılır
+
+### PostConvertWorkbookToJson API Tanımı
+
+<a href="https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToJson" rel="noopener noreferrer" title="Aspose.Cells OpenAPI Tanımı – Çalışma Kitabını JSON'a Dönüştür">OpenAPI Tanımı</a>, herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sine nasıl çağrı yapılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/json" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/json" \
+     -H "Authorization: Bearer $ACCESS_TOKEN" \
+     -H "accept: application/json" \
+     -H "Content-Type: multipart/form-data" \
+     -F "File=@myWorkbook.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
-  "Filename": "xxxxxx.json",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
+  "Filename": "myWorkbook.json",
+  "FileSize": 8423,
+  "FileContent": "eyJmb3JtYXR0ZWRfZGF0YSI6IH... (base64 string)"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK'larını Kullanın
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoludur. SDK, düşük seviye ayrıntıları yöneterek size proje görevlerinize odaklanma imkanı sunar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer" title="GitHub'da Aspose.Cells Cloud SDK'ları">GitHub deposuna</a> bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapıldığını göstermektedir:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -127,14 +188,9 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< /tabs >}}
 
-## Diğer API'ler bu işlevi uygular
+## Benzer işlevselliği uygulayan diğer API’ler
 
-[POST /hücreler/{ad}/kaydet](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API, MS Excel dosyasını ek ayarlarla HTML dosyası olarak kaydetmenizi ve sonucu depolama alanına kaydetmenizi sağlar.
-
-Bu REST API `convert` excel dosyası HTML'e.
-
-[PUT /hücreler/dönüştür](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API, MS Excel dosyasını ek ayarlarla HTML dosyasına dönüştürmenizi ve sonucu yanıta kaydetmenizi sağlar.
-
-Bu REST API `export` excel dosyası HTML'e.
-
-[GET /hücreler/{isim}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API, MS Excel dosyasını ek ayarlarla HTML dosyasına dönüştürmenizi ve sonucu yanıta kaydetmenizi sağlar.
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Excel dosyasını ek ayarlarla HTML dosyası olarak kaydeder ve sonucu belirtilen depoya saklar.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Excel dosyasını ek ayarlarla HTML dosyasına dönüştürür ve sonucu yanıtta döndürür.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Excel dosyasını alır; dosyayı HTML formatında almak için sorgu parametreleriyle birlikte kullanılabilir.
+---

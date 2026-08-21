@@ -1,25 +1,37 @@
-﻿---
-title: Excel doğrulama ile çalışıyor
-second_title: Documen
-linktitle: Doğrulama
-type: docs
-url: /tr/validations/
-keywords: Working with validations on an Excel file
-description: Aspose.Cells Cloud REST API, Excel dosyasında doğrulamalarla çalışmayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Doğrulamalar
 ---
-Veri doğrulama, MS Excel'de bir kullanıcının Excel sayfasının bir hücresine ne girebileceğini kontrol etmek için kullanılan bir özelliktir. Örneğin, bir sayfadaki girişleri (örneğin, tarih aralığı veya yalnızca tam sayılar) kısıtlayabilirsiniz. Ayrıca, gereksiz alan tasarrufu sağlayan ve değerleri tek bir hücrede gösteren açılır menüler de oluşturabiliriz. Ayrıca, kullanıcıya yanlış bir değer veya yanlış bir biçim girdiğinde görünecek özelleştirilmiş bir mesaj da oluşturabiliriz.
+title: "Excel Veri Doğrulama ile Çalışmak"
+second_title: "Belge"
+linktype: "Doğrulamalar"
+type: docs
+url: /validations/
+keywords: "Excel veri doğrulama, Aspose.Cells Cloud, REST API, elektronik tablo, Office Cloud"
+description: "Aspose.Cells Cloud REST API ile Excel veri doğrulama kurallarını programlı olarak nasıl ekleyeceğinizi, alacağınızı, güncelleyeceğinizi, sileceğinizi ve temizleyeceğinizi öğrenin. .NET, Java, Python ve PHP için örnekler içerir."
+weight: 100
+ArticleTitle: "Excel Veri Doğrulama ile Çalışmak - Aspose.Cells Cloud API Dokümantasyonu"
+---
 
-Örneğin, bir kullanıcı sabah 9:00 ile akşam 6:00 arasında planlanmış bir toplantı belirleyebilir.
+Excel veri doğrulama, Microsoft Excel'de bir çalışma sayfası hücresine kullanıcı tarafından ne girilebileceğini kontrol etmek için kullanılan bir özelliktir. Girdileri belirli bir tarih aralığına, yalnızca tam sayılara veya hatta alanı tasarruf edip tek bir hücrede değerleri görüntüleyen açılır listelere kısıtlayabilir. Ayrıca, kullanıcı hatalı bir değer veya geçersiz bir biçim girdiğinde görünecek özel bir mesaj tanımlayabilirsiniz.
 
-Excel'de veri doğrulamayı kullanarak bir değerin pozitif bir sayı olduğundan, 15 ile 30 arasında bir tarih olduğundan, bir tarihin önümüzdeki 30 gün içinde olduğundan veya bir metin girişinin 25 karakterden az olduğundan emin olabiliriz.
+Örneğin, bir kullanıcı 9:00 ile 18:00 arasında gerçekleşen bir toplantı belirleyebilir.
 
-## Excel dosyasında doğrulamalarla çalışma
+Veri doğrulama, bir değerın pozitif bir sayı, bir ayın 15’i ile 30’u arasında bir tarih, sonraki 30 gün içinde gerçekleşen bir tarih veya 25 karakterden az içeren bir metin girdisi olduğundan emin olmak için kullanılabilir ve böylece devam eder.
 
-- [Excel çalışma sayfasından doğrulama bilgisi nasıl eklenir.](/cells/tr/validations/delete/)
-- [Excel çalışma sayfasından doğrulama bilgisi nasıl alınır.](/cells/tr/validations/get/)
-- [Excel çalışma sayfasından tüm doğrulama bilgileri nasıl alınır.](/cells/tr/validations/get-all/)
-- [Excel çalışma sayfasından doğrulama bilgisi nasıl silinir.](/cells/tr/validations/delete/)
-- [Excel çalışma sayfasından tüm doğrulama bilgileri nasıl temizlenir.](/cells/tr/validations/clear/)
-- [Excel çalışma sayfasındaki doğrulama bilgilerinin nasıl güncelleneceği.](/cells/tr/validations/update/)
+### API Özeti
+
+| İşlem | HTTP Yöntemi | Uç Nokta | Açıklama |
+|-------|--------------|----------|-----------|
+| Ekle | POST | `/cells/{file}/worksheets/{sheet}/validations` | Bir doğrulama kuralı oluştur |
+| Al | GET | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Belirli bir kuralı al |
+| Tümünü Al | GET | `/cells/{file}/worksheets/{sheet}/validations` | Tüm kuralları listele |
+| Güncelle | PUT | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Bir kuralı değiştir |
+| Sil | DELETE | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Bir kuralı kaldır |
+| Temizle | POST | `/cells/{file}/worksheets/{sheet}/validations/clear` | Tüm kuralları kaldır |
+
+## Excel dosyası üzerinde doğrulamalarla çalışma
+
+- [Excel çalışma sayfasına nasıl doğrulama kuralı eklenir](/cells/validations/add/)
+- [Excel çalışma sayfasından nasıl doğrulama kuralı alınır](/cells/validations/get/)
+- [Excel çalışma sayfasından tüm doğrulama kuralları nasıl alınır](/cells/validations/get-all/)
+- [Excel çalışma sayfasından nasıl doğrulama kuralı silinir](/cells/validations/delete/)
+- [Excel çalışma sayfasından tüm doğrulama kuralları nasıl temizlenir](/cells/validations/clear/)
+- [Excel çalışma sayfasında nasıl doğrulama kuralı güncellenir](/cells/validations/update/)

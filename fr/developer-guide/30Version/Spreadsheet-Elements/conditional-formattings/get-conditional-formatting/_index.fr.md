@@ -1,76 +1,81 @@
-﻿---
-title: Obtenir la mise en forme conditionnelle
-type: docs
-url: /fr/conditional-formattings/get/
-aliases: [/get-conditional-formatting/]
-keywords: REST API, spreadsheets, excel, get condition formattin
-description: "Cells.Cloud API pour Excel fonctionne : obtenir le formatage des conditions"
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir une mise en forme conditionnelle
 ---
-Ce REST API indique Obtenir une mise en forme conditionnelle
- 
-## RSET API
- 
+title: "Obtenir le formatage conditionnel"
+type: docs
+url: /conditional-formattings/get/
+aliases: [/get-conditional-formatting/]
+keywords: "Aspose.Cells Cloud, API REST, Formatage conditionnel, Excel, Tableur"
+description: "Récupérer les règles de formatage conditionnel à partir d'une feuille de calcul à l'aide de l'API REST Aspose.Cells Cloud."
+weight: 10
+---
+
+Cet API REST récupère les règles de formatage conditionnel à partir d'une feuille de calcul.
+
+## API REST
+
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
- 
 ```
- Les paramètres de la requête sont :
- 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin||
-| nom de la feuille| chaîne| chemin||
-| indice| entier| chemin||
-| dossier| chaîne| requête||
-| nom de stockage| chaîne| requête| nom de stockage.|
- 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormatting) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
- 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
- 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+### Paramètres de la requête
+
+| Nom du paramètre | Type    | Emplacement | Description                                             |
+| ---------------- | ------- | ----------- | ------------------------------------------------------- |
+| name             | string  | path        | Nom du fichier du classeur.                            |
+| sheetName        | string  | path        | Nom de la feuille de calcul contenant le formatage.    |
+| index            | integer | path        | Index à zéro de la règle de formatage conditionnel.    |
+| folder           | string  | query       | Chemin du dossier dans lequel le classeur est stocké.  |
+| storageName      | string  | query       | Nom du service de stockage.                            |
+
+### Réponses d’erreur
+
+| Code HTTP | Raison                                                    | Corps d’exemple                                                     |
+| --------- | --------------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**   | Mauvaise requête – paramètres manquants ou non valides.   | `{ "Code":"400", "Message":"Valeur de paramètre non valide." }`     |
+| **401**   | Non autorisé – jeton JWT manquant ou non valide.          | `{ "Code":"401", "Message":"Le jeton d'accès est manquant ou non valide." }` |
+| **404**   | Introuvable – le classeur ou la feuille de calcul n'existe pas. | `{ "Code":"404", "Message":"Fichier introuvable." }`                |
+| **500**   | Erreur interne du serveur – défaillance inattendue du serveur. | `{ "Code":"500", "Message":"Une erreur inattendue est survenue." }` |
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormatting) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer un appel à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-  "Status": "string",
+  "Status": "chaîne",
   "ConditionalFormatting": {
     "link": {
-      "Href": "string",
-      "Rel": "string",
-      "Title": "string",
-      "Type": "string"
+      "Href": "chaîne",
+      "Rel": "chaîne",
+      "Title": "chaîne",
+      "Type": "chaîne"
     },
-    "sqref": "string",
+    "sqref": "chaîne",
     "FormatConditions": [
       {
         "link": {
-          "Href": "string",
-          "Rel": "string",
-          "Title": "string",
-          "Type": "string"
+          "Href": "chaîne",
+          "Rel": "chaîne",
+          "Title": "chaîne",
+          "Type": "chaîne"
         },
         "Priority": 0,
-        "Type": "string",
+        "Type": "chaîne",
         "StopIfTrue": true,
         "AboveAverage": {
           "IsAboveAverage": true,
@@ -80,7 +85,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
         "ColorScale": {
           "MaxCfvo": {
             "IsGTE": true,
-            "Type": "string"
+            "Type": "chaîne"
           },
           "MaxColor": {
             "A": 0,
@@ -90,7 +95,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
           },
           "MidCfvo": {
             "IsGTE": true,
-            "Type": "string"
+            "Type": "chaîne"
           },
           "MidColor": {
             "A": 0,
@@ -100,7 +105,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
           },
           "MinCfvo": {
             "IsGTE": true,
-            "Type": "string"
+            "Type": "chaîne"
           },
           "MinColor": {
             "A": 0,
@@ -116,7 +121,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
             "G": 0,
             "B": 0
           },
-          "AxisPosition": "string",
+          "AxisPosition": "chaîne",
           "BarBorder": {
             "Color": {
               "A": 0,
@@ -124,24 +129,24 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
               "G": 0,
               "B": 0
             },
-            "Type": "string"
+            "Type": "chaîne"
           },
-          "BarFillType": "string",
+          "BarFillType": "chaîne",
           "Color": {
             "A": 0,
             "R": 0,
             "G": 0,
             "B": 0
           },
-          "Direction": "string",
+          "Direction": "chaîne",
           "MaxCfvo": {
             "IsGTE": true,
-            "Type": "string"
+            "Type": "chaîne"
           },
           "MaxLength": 0,
           "MinCfvo": {
             "IsGTE": true,
-            "Type": "string"
+            "Type": "chaîne"
           },
           "MinLength": 0,
           "NegativeBarFormat": {
@@ -151,45 +156,45 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
               "G": 0,
               "B": 0
             },
-            "BorderColorType": "string",
+            "BorderColorType": "chaîne",
             "Color": {
               "A": 0,
               "R": 0,
               "G": 0,
               "B": 0
             },
-            "ColorType": "string"
+            "ColorType": "chaîne"
           },
           "ShowValue": true
         },
-        "Formula1": "string",
-        "Formula2": "string",
+        "Formula1": "chaîne",
+        "Formula2": "chaîne",
         "IconSet": {
           "CfIcons": [
             {
-              "ImageData": "string",
+              "ImageData": "chaîne",
               "Index": 0,
-              "Type": "string"
+              "Type": "chaîne"
             }
           ],
           "Cfvos": [
             {
               "IsGTE": true,
-              "Type": "string"
+              "Type": "chaîne"
             }
           ],
           "IsCustom": true,
           "Reverse": true,
           "ShowValue": true,
-          "IconSetType": "string"
+          "IconSetType": "chaîne"
         },
-        "Operator": "string",
+        "Operator": "chaîne",
         "Style": {
           "link": {
-            "Href": "string",
-            "Rel": "string",
-            "Title": "string",
-            "Type": "string"
+            "Href": "chaîne",
+            "Rel": "chaîne",
+            "Title": "chaîne",
+            "Type": "chaîne"
           },
           "Font": {
             "Color": {
@@ -204,13 +209,13 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
             "IsStrikeout": true,
             "IsSubscript": true,
             "IsSuperscript": true,
-            "Name": "string",
+            "Name": "chaîne",
             "Size": 0,
-            "Underline": "string"
+            "Underline": "chaîne"
           },
-          "Name": "string",
-          "CultureCustom": "string",
-          "Custom": "string",
+          "Name": "chaîne",
+          "CultureCustom": "chaîne",
+          "Custom": "chaîne",
           "BackgroundColor": {
             "A": 0,
             "R": 0,
@@ -233,33 +238,33 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
           "IndentLevel": 0,
           "Number": 0,
           "RotationAngle": 0,
-          "Pattern": "string",
-          "TextDirection": "string",
-          "VerticalAlignment": "string",
-          "HorizontalAlignment": "string",
+          "Pattern": "chaîne",
+          "TextDirection": "chaîne",
+          "VerticalAlignment": "chaîne",
+          "HorizontalAlignment": "chaîne",
           "BorderCollection": [
             {
-              "LineStyle": "string",
+              "LineStyle": "chaîne",
               "Color": {
                 "A": 0,
                 "R": 0,
                 "G": 0,
                 "B": 0
               },
-              "BorderType": "string"
+              "BorderType": "chaîne"
             }
           ],
           "BackgroundThemeColor": {
-            "ColorType": "string",
+            "ColorType": "chaîne",
             "Tint": 0
           },
           "ForegroundThemeColor": {
-            "ColorType": "string",
+            "ColorType": "chaîne",
             "Tint": 0
           }
         },
-        "Text": "string",
-        "TimePeriod": "string",
+        "Text": "chaîne",
+        "TimePeriod": "chaîne",
         "Top10": {
           "IsBottom": true,
           "IsPercent": true,
@@ -274,17 +279,16 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 {{< /tab >}}
 
 {{< /tabs >}}
+
 ## Famille de SDK Cloud
- 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
- 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+
+L'utilisation d'un SDK est le moyen optimal d'accélérer le développement. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l'aide de divers SDK :
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-GetConditionalFormatting-1.cs" >}}
 
@@ -298,8 +302,6 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 
 {{< tab tabNum="3" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
@@ -310,33 +312,23 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 
 {{< tab tabNum="5" >}}
 
-
-
 {{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-GetConditionalFormatting-1.js" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-
-
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-GetConditionalFormatting-1.pl" >}}
 
@@ -344,10 +336,10 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 
 {{< tab tabNum="10" >}}
 
-
-
 {{< gist "aspose-cells-cloud-gists" "d1809f85075aaa2f4d954930e916d115" >}}
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---

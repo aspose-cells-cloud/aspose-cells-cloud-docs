@@ -1,53 +1,91 @@
-﻿---
-title: Çalışma sayfası sayfa düzeni
-second_title: Documen
-linktitle: Sayfa ayarı
-type: docs
-url: /tr/page-setup/
-keywords: An Excel worksheet page setup
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfası eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, An Excel çalışma sayfası sayfa düzeni
 ---
-# **sayfa kurulumu**
+---
+title: "Çalışma Sayfası Sayfa Ayarları"
+second_title: "Belge"
+linktitle: "Sayfa ayarları"
+type: docs
+url: /page-setup/
+keywords: "Aspose.Cells, pageSetup, çalışma sayfası, yazdırma ayarları, kenar boşlukları, yön, kağıt boyutu, başlık, altlık, ölçekleme"
+description: "Aspose.Cells Cloud’ın PageSetup nesnesi ile Excel çalışma sayfası yazdırma düzenini nasıl yapılandıracağınızı öğrenin. Özellik listesi, varsayılan değerler, aralıklar ve C#, Java ve Python için kod örneklerini içerir."
+weight: 20
+ArticleTitle: "Çalışma Sayfası Sayfa Ayarları – Aspose.Cells Cloud ile Yazdırma Düzenini Yapılandırma"
+---
 
-excel yazdırma sayfası ayarı
+# **PageSetup**
 
-## **Özellikler**
+Excel yazdırma sayfa ayarları
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|SiyahBeyaz|Boolean|doğru| YANLIŞ||Belgenin öğelerinin siyah beyaz olarak yazdırılıp yazdırılmayacağını gösterir.|
-|Alt Kenar Boşluğu|Yüzer|doğru| YANLIŞ||Alt kenar boşluğunun santimetre cinsinden boyutunu gösterir.|
-|Yatay Merkez|Boolean|doğru| YANLIŞ||Sayfanın yatay olarak ortalanarak yazdırılıp yazdırılmadığını gösterir.|
-|Orta Dikey|Boolean|doğru| YANLIŞ||Sayfanın dikey olarak ortalanarak yazdırılıp yazdırılmadığını gösterir.|
-|İlkSayfaNumarası|Tam sayı|doğru| YANLIŞ||Bu sayfa yazdırıldığında kullanılacak ilk sayfa numarasını temsil eder.|
-|SayfalaraUygunUzun|Tam sayı|doğru| YANLIŞ||Çalışma sayfası yazdırıldığında ölçeklendirilecek sayfa sayısını temsil eder. Varsayılan değer 1'dir.|
-|SayfalaraGenişlikUygunlaştır|Tam sayı|doğru| YANLIŞ||Çalışma sayfası yazdırıldığında ölçeklendirilecek sayfa genişliğini temsil eder. Varsayılan değer 1'dir.|
-|Altbilgi Kenar Boşluğu|Yüzer|doğru| YANLIŞ||Sayfanın alt kısmından alt bilgiye kadar olan mesafeyi santimetre cinsinden gösterir.|
-|Başlık Kenar Boşluğu|Yüzer|doğru| YANLIŞ||Sayfanın üst kısmından başlığa kadar olan mesafeyi santimetre cinsinden gösterir.|
-|IsAutoFirstPageNumber|Boolean|doğru| YANLIŞ||İlk sayfa numarasının otomatik olarak atanıp atanmadığını belirtir.|
-|IsHFAlignMargins|Boolean|doğru| YANLIŞ||Üstbilgi ve altbilgi kenar boşluklarının sayfa kenar boşluklarıyla hizalanıp hizalanmadığını belirtir. Bu özellik doğruysa, sol üstbilgi ve altbilgi sol kenar boşluğuyla, sağ üstbilgi ve altbilgi ise sağ kenar boşluğuyla hizalanır. Bu seçenek varsayılan olarak etkindir.|
-|IsHFDiffFirst|Boolean|doğru| YANLIŞ||True, ilk sayfanın üstbilgisinin/altbilgisinin diğer sayfalardan farklı olduğu anlamına gelir.|
-|IsHFDiffOddEven|Boolean|doğru| YANLIŞ||True, tek sayfaların üstbilgisinin/altbilgisinin tek sayfalardan farklı olduğu anlamına gelir.|
-|HFScaleWithDoc|Boolean|doğru| YANLIŞ||Üstbilgi ve altbilginin belge ölçeklemesiyle ölçeklenip ölçeklenmediğini belirtir. Yalnızca Excel 2007 için geçerlidir.|
-|YüzdeÖlçeği|Boolean|doğru| YANLIŞ||Bu özellik False ise, FitToPagesWide ve FitToPagesTall özellikleri çalışma sayfasının nasıl ölçekleneceğini kontrol eder.|
-|Sol Kenar Boşluğu|Yüzer|doğru| YANLIŞ||Sol kenar boşluğunun santimetre cinsinden boyutunu gösterir.|
-|Emir|Sicim|doğru| YANLIŞ||Microsoft Excel'in büyük bir çalışma sayfasını yazdırırken sayfaları numaralandırmak için kullandığı sırayı temsil eder.|
-|Oryantasyon|Sicim|doğru| YANLIŞ|| Sayfa yazdırma yönünü temsil eder. Yatay/Dikey|
-|Kağıt Boyutu|Sicim|doğru| YANLIŞ||Kağıdın boyutunu temsil eder.|
-|Yazdırma Alanı|Sicim|doğru| YANLIŞ||Yazdırılacak aralığı temsil eder.|
-|Yorumları Yazdır|Sicim|doğru| YANLIŞ||Yorumların sayfaya yazdırılma şeklini gösterir.|
-|Kopya Yazdır|Tam sayı|doğru| YANLIŞ||Yazdırılacak kopya sayısını alın ve ayarlayın.|
-|Taslak Yazdır|Boolean|doğru| YANLIŞ||Sayfanın grafiksiz olarak yazdırılıp yazdırılmayacağını gösterir.|
-|Yazdırma Hataları|Sicim|doğru| YANLIŞ||Görüntülenen yazdırma hatasının türünü belirtir.|
-|PrintGridlines|Boolean|doğru| YANLIŞ||Sayfada hücre kılavuz çizgilerinin yazdırılıp yazdırılmayacağını gösterir.|
-|Başlıkları Yazdır|Boolean|doğru| YANLIŞ||Bu sayfada satır ve sütun başlıklarının yazdırılıp yazdırılmayacağını gösterir.|
-|Baskı Kalitesi|Tam sayı|doğru| YANLIŞ||Baskı kalitesini temsil eder.|
-|PrintTitleColumns|Sicim|doğru| YANLIŞ||Her sayfanın sol tarafında tekrarlanacak hücreleri içeren sütunları temsil eder.|
-|PrintTitleRows|Sicim|doğru| YANLIŞ||Her sayfanın en üstünde tekrarlanacak hücreleri içeren satırları temsil eder.|
-|Sağ Kenar Boşluğu|Yüzer|doğru| YANLIŞ||Sağ kenar boşluğunun santimetre cinsinden boyutunu gösterir.|
-|Üst Marj|Yüzer|doğru| YANLIŞ||Üst kenar boşluğunun santimetre cinsinden boyutunu gösterir.|
-|Yakınlaştır|Tam sayı|doğru| YANLIŞ||Ölçekleme faktörünü yüzde cinsinden gösterir. 10 ile 400 arasında olmalıdır.|
-|Başlık|Konteyner|doğru| YANLIŞ||Sayfa başlığını temsil eder.|
-|Altbilgi|Konteyner|doğru| YANLIŞ||Sayfa alt bilgisini temsil eder.|
+## Genel Bakış
+
+**PageSetup** nesnesi, kenar boşlukları, yön, ölçekleme, başlıklar, altlıklar ve diğer yazdırma ile ilgili ayarlar gibi Excel çalışma sayfasının yazdırma düzeni seçeneklerini tanımlar. Bu özelliklerin yapılandırılması, geliştiricilerin istenilen görünüme ve sayfalama uygun yazdırılabilir defterler oluşturmasını sağlar.
+
+Aşağıda, Aspose.Cells Cloud SDK kullanılarak yaygın sayfa ayarı özelliklerinin nasıl ayarlanacağı gösterilen kısa bir C# örneği yer almaktadır:
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+
+// API istemcisini başlatın (kimlik bilgilerinizle değiştirin)
+var apiInstance = new CellsApi("YOUR_CLIENT_ID", "YOUR_CLIENT_SECRET");
+
+// PageSetup ayarlarını tanımlayın
+var pageSetup = new PageSetup()
+{
+    Orientation = "Landscape",
+    PaperSize = "A4",
+    CenterHorizontally = true,
+    CenterVertically = true,
+    Zoom = 100
+};
+
+// Ayarları defterin ilk çalışma sayfasına uygulayın
+apiInstance.PutWorksheetPageSetup("Sample.xlsx", "Sheet1", pageSetup);
+```
+
+Bu kod parçası, çalışma sayfasını yatay yöne (landscape) ayarlar, A4 kağıt boyutunu kullanır, içeriği ortalar ve %100 ölçeklendirme faktörünü uygular.
+
+## Özellikler
+
+| Özellik Adı           | Özellik Türü  |nullable| Okunur Olmayan | Varsayılan Değer | Açıklama                                                                     |
+| --------------------- | ------------- | ------ | ------------- | -------------- | ---------------------------------------------------------------------------- |
+| BlackAndWhite         | bool          | false  | false         | false          | Çalışma sayfasını siyah-beyaz modda yazdırır.                                |
+| BottomMargin          | float         | true   | false         | 2.54 cm        | Alt kenar boşluğunun santimetre cinsinden boyutu.                            |
+| CenterHorizontally    | bool          | false  | false         | false          | Yazdırırken sayfayı yatayda ortalama.                                        |
+| CenterVertically      | bool          | false  | false         | false          | Yazdırırken sayfayı dikeyde ortalama.                                        |
+| FirstPageNumber       | int           | true   | false         | 1              | Sayfa yazdırılırken kullanılan ilk sayfa numarası.                           |
+| FitToPagesTall        | int           | false  | false         | 1              | Çalışma sayfasının ölçekleneceği sayfa yüksekliği (sayfa sayısı).           |
+| FitToPagesWide        | int           | false  | false         | 1              | Çalışma sayfasının ölçekleneceği sayfa genişliği (sayfa sayısı).            |
+| FooterMargin          | float         | true   | false         | 2.54 cm        | Sayfanın altı ile altlığın arasındaki mesafe, santimetre cinsinden.         |
+| HeaderMargin          | float         | true   | false         | 2.54 cm        | Sayfanın üstü ile başlığın arasındaki mesafe, santimetre cinsinden.          |
+| IsAutoFirstPageNumber | bool          | false  | false         | false          | İlk sayfa numarasını otomatik olarak atar.                                   |
+| IsHFAlignMargins      | bool          | false  | false         | true           | true ise, başlık/altlık kenar boşlukları sayfa kenar boşluklarıyla hizalanır.|
+| IsHFDiffFirst         | bool          | false  | false         | false          | İlk sayfadaki başlığın/altlığın diğer sayfalardan farklı olduğunu belirtir.  |
+| IsHFDiffOddEven       | bool          | false  | false         | false          | Tek sayfalardaki başlığın/altlığın çift sayfalardan farklı olduğunu belirtir.|
+| IsHFScaleWithDoc      | bool          | false  | false         | false          | Başlığı ve altlığı belgeyle birlikte ölçekler (Excel 2007+).                |
+| IsPercentScale        | bool          | false  | false         | true           | false ise, `FitToPagesWide` ve `FitToPagesTall` ölçeklemeyi kontrol eder.   |
+| LeftMargin            | float         | true   | false         | 2.54 cm        | Sol kenar boşluğunun santimetre cinsinden boyutu.                            |
+| Order                 | string        | true   | false         | "DownThenOver" | Büyük bir çalışma sayfası yazdırılırken Excel’in sayfaları numaralandırma sırası. |
+| Orientation           | string        | false  | false         | "Portrait"     | Sayfa yönü: **Landscape** (yatay) veya **Portrait** (dikey).                |
+| PaperSize             | string        | true   | false         | "A4"           | Yazdırma için kullanılan kağıt boyutu.                                       |
+| PrintArea             | string        | true   | false         | (yok)          | Yazdırılacak hücre aralığı (örneğin, `"A1:D20"`).                            |
+| PrintComments         | string        | true   | false         | "NoComments"   | Sayfa ile birlikte yorumların nasıl yazdırılacağı.                           |
+| PrintCopies           | int           | true   | false         | 1              | Yazdırılacak kopya sayısı.                                                   |
+| PrintDraft            | bool          | false  | false         | false          | Çalışma sayfasını taslak modda yazdırır (grafikler olmadan).                 |
+| PrintErrors           | string        | true   | false         | "Display"      | Gösterilecek yazdırma hatası türü.                                           |
+| PrintGridlines        | bool          | false  | false         | false          | Hücre ızgarası çizgilerini yazdırır.                                         |
+| PrintHeadings         | bool          | false  | false         | false          | Satır ve sütun başlıklarını yazdırır.                                        |
+| PrintQuality          | int           | true   | false         | 600            | Yazdırma kalitesi ayarı (dots per inch - dpi).                               |
+| PrintTitleColumns     | string        | true   | false         | (yok)          | Her yazdırılan sayfanın sol tarafında tekrar edilecek sütunlar.             |
+| PrintTitleRows        | string        | true   | false         | (yok)          | Her yazdırılan sayfanın üst kısmında tekrar edilecek satırlar.              |
+| RightMargin           | float         | true   | false         | 2.54 cm        | Sağ kenar boşluğunun santimetre cinsinden boyutu.                            |
+| TopMargin             | float         | true   | false         | 2.54 cm        | Üst kenar boşluğunun santimetre cinsinden boyutu.                            |
+| Zoom                  | int           | false  | false         | 100            | Yüzde cinsinden ölçeklendirme faktörü (%10 – %400).                          |
+| Header                | object        | true   | false         | (yok)          | Sayfa başlığı yapılandırması.                                                |
+| Footer                | object        | true   | false         | (yok)          | Sayfa altlığı yapılandırması.                                                |
+
+## İlgili Nesneler
+
+- **Header** – Çalışma sayfası başlığını yapılandırır.  
+- **Footer** – Çalışma sayfası altlığını yapılandırır.  
+- **PrintOptions** – Sayfa kırılımları ve yazdırma alanı gibi ek yazdırma ile ilgili ayarlar.  
+---

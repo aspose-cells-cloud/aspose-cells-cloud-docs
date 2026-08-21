@@ -1,83 +1,129 @@
-﻿---
-title: Зашифровать рабочую книгу Excel
-second_title: Documen
-linktitle: Зашифровать файл Excel
-type: docs
-url: /ru/excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/,/workbook/encrypt/]
-keywords: Encrypt Excel workbook
-description: Aspose.Cells Cloud REST API поддерживает шифрование рабочей книги Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Шифрование рабочей книги Excel
 ---
-Этот REST API шифрует Excel `workbook`.
+title: "Шифрование рабочей тетради Excel с помощью API Aspose.Cells Cloud – примеры cURL и SDK"
+second_title: "Документ"
+linktype: "Шифрование файла Excel"
+type: docs
+url: /excel-file-encrypt/
+aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+keywords: "шифрование рабочей тетради Aspose Cells, API шифрования Excel, REST API, cURL, .NET, Java, Python, PHP, Ruby, Node.js, Go, Perl"
+description: "Узнайте, как зашифровать рабочую тетрадь Excel с помощью REST API Aspose.Cells Cloud (версия 3.0). Включает команду cURL, примеры кода SDK (C#, Java, Python и др.), необходимые параметры и обработку ошибок."
+weight: 20
+ArticleTitle: "Шифрование рабочей тетради Excel с помощью API Aspose.Cells Cloud – примеры cURL и SDK"
+---
 
-**Параметр запроса**
+Этот REST API шифрует **рабочую тетрадь** Excel.
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|папка|нить|Оригинальная папка рабочей тетради.|
-|имя_хранилища|нить|Имя хранилища.|
+**Необходимые условия:** Перед вызовом этой конечной точки у вас должен быть действительный JWT-токен и рабочая тетрадь, загруженная в хранилище.
 
-**Параметр тела запроса**
+## API PostEncryptDocument
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|шифрование|WorkbookEncryptionRequest||
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/encryption
+```
 
-**WorkbookEncryptionRequest**
+### **Безопасность и аутентификация**
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|Тип шифрования|нить|XOR/Совместимый/Улучшенный криптографический поставщик V1/Сильный криптографический поставщик|
-|Длина ключа|целое число||
-|Пароль|нить||
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
 
-## ОТДЫХ API
+### **Параметры запроса**
 
-|**API**|**Тип**|**Описание**|**Swagger Link**|
-|:- |:- |:- |:- |
-|/cells/{name}/шифрование|ПОЧТА|Зашифровать документ Excel|[PostEncryptDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument)|
+| Имя параметра | Тип   | Обязательный | Описание                                 |
+| ------------- | ----- | ----------- | ---------------------------------------- |
+| folder        | string | ✗          | Путь к папке с исходной рабочей тетрадью. |
+| storageName   | string | ✗          | Имя используемого хранилища.             |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### **Параметр тела запроса**
 
- Вы можете использовать**cURL** Инструмент командной строки для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра | Тип                        | Обязательный | Описание                            |
+| ------------- | -------------------------- | ----------- | ----------------------------------- |
+| encryption    | WorkbookEncryptionRequest | ✓           | Параметры шифрования рабочей тетради. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+#### **WorkbookEncryptionRequest**
+
+| Имя параметра | Тип     | Обязательный | Описание                                                                                   |
+| ------------- | ------- | ----------- | ------------------------------------------------------------------------------------------ |
+| EncryptionType | string  | ✓          | Алгоритм шифрования. См. таблицу ниже с поддерживаемыми значениями и их описанием.         |
+| KeyLength     | integer | ✗          | Длина ключа шифрования в битах (игнорируется для `XOR` и `Compatible`).                    |
+| Password      | string  | ✓          | Пароль, используемый для шифрования.                                                       |
+
+#### **Значения EncryptionType**
+
+| Значение                          | Описание                                       |
+| --------------------------------- | ---------------------------------------------- |
+| `XOR`                             | Простой алгоритм XOR (устаревший, низкая защита). |
+| `Compatible`                      | Совместимое шифрование Excel 97‑2003 (40 бит). |
+| `EnhancedCryptographicProviderV1` | AES‑128 с хэшем SHA‑1.                         |
+| `StrongCryptographicProvider`     | AES‑256 с хэшем SHA‑512 (самый надежный).      |
+
+### Ответ
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                                           |
+|-----|-----------------------------|--------------------------------------------------------------------|
+| 200 | OK                          | Фильтр успешно применён; ответ содержит сведения об операции.      |
+| 400 | Bad Request                 | Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized                | Некорректный или отсутствующий JWT-токен.                         |
+| 413 | Payload Too Large           | Загруженный файл превышает допустимый размер.                      |
+| 500 | Internal Server Error       | Непредвиденная ошибка сервера.                                     |
+
+## Как использовать API PostEncryptDocument с SDK
+
+### Спецификация API PostEncryptDocument
+
+<a href="https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument" rel="noopener noreferrer">Спецификация OpenAPI</a> определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать инструмент командной строки **cURL** для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как выполнить вызов облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"EncryptionType\": \"XOR\", \"KeyLength\": 128, \"Password\": \"mateen\"}"
-
+```bash
+# Зашифровать рабочую тетрадь "test.xlsx" с использованием алгоритма XOR (ключ 128 бит) и пароля "mateen".
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -d '{ "EncryptionType": "XOR", "KeyLength": 128, "Password": "mateen"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
-    "Code":"200",
-
-    "Status":"OK"
-
+  "Code": "200",
+  "Status": "OK"
 }
-
 ```
+
+**Возможные ответы об ошибках**
+
+| HTTP-статус | Код                 | Сообщение                                             |
+| ----------- | ------------------- | ----------------------------------------------------- |
+| 400         | BadRequest          | Отсутствуют или некорректны параметры.                |
+| 401         | Unauthorized        | Токен аутентификации отсутствует или некорректен.     |
+| 403         | Forbidden           | Недостаточно прав для доступа к хранилищу.            |
+| 500         | InternalServerError | Непредвиденная ошибка сервера.                        |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах вашего проекта. Полный список SDK Aspose.Cells Cloud см. в <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">репозитории GitHub</a>.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,348 +1,308 @@
-﻿---
-title: الحصول على نمط الخلية من ورقة العمل
+---
+title: "الحصول على تنسيق الخلية من ورقة عمل – واجهة برمجة تطبيقات Aspose.Cells Cloud"
 type: docs
 url: /ar/get-cell-style-from-a-worksheet/
 weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على نمط الخلية من ورقة عمل
+keywords: "Aspose.Cells, Excel, واجهة برمجة تطبيقات REST, تنسيق الخلية, جدول بيانات, واجهة برمجة التطبيقات السحابية, توثيق API"
+description: "تعرّف على كيفية استرداد تنسيق خلية محددة في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API الإصدار 3. يتضمن مثالًا باستخدام cURL ومخطط الاستجابة وأكواد الحالة ومقتطفات من كود SDK."
+ArticleTitle: "الحصول على تنسيق الخلية من ورقة عمل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud – دليل مفصّل"
 ---
-يشير هذا REST API إلى الحصول على الخلية `style` في ملف Excel.
 
-## RSET API
+استخدم هذه واجهة برمجة التطبيقات REST لاسترداد **تنسيق** خلية في ورقة عمل Excel.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
- 
+## واجهة GetWorksheetCellStyle API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| اسم الخلية| خيط| طريق| اسم الخلية.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCellStyle) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+
+| اسم المعامل | النوع | الموقع | الوصف |
+|------------|--------|--------|-----------------------------------|
+| name | string | path | اسم مستند Excel. |
+| sheetName | string | path | اسم ورقة العمل. |
+| cellName | string | path | عنوان الخلية (مثلًا A1). |
+| folder | string | query | المجلد الذي يحتوي على الملف. |
+| storageName | string | query | اسم التخزين المراد استخدامه. |
+
+
+### **الاستجابة**
+
+```json
+{
+  "Style": {
+    "Font": {
+      "Color": { "A": 255, "R": 5, "G": 99, "B": 193 },
+      "DoubleSize": 11,
+      "IsBold": false,
+      "IsItalic": false,
+      "IsStrikeout": false,
+      "IsSubscript": false,
+      "IsSuperscript": false,
+      "Name": "Calibri",
+      "Size": 11,
+      "Underline": "Single"
+    },
+    "Name": null,
+    "CultureCustom": "General",
+    "Custom": "",
+    "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+    "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+    "IsFormulaHidden": false,
+    "IsDateTime": false,
+    "IsTextWrapped": false,
+    "IsGradient": false,
+    "IsLocked": true,
+    "IsPercent": false,
+    "ShrinkToFit": false,
+    "IndentLevel": 0,
+    "Number": 0,
+    "RotationAngle": 0,
+    "Pattern": "None",
+    "TextDirection": "Context",
+    "VerticalAlignment": "Bottom",
+    "HorizontalAlignment": "General",
+    "BorderCollection": [
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "BottomBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "DiagonalDown"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "DiagonalUp"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "Horizontal"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "LeftBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "RightBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "TopBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "Vertical"
+      }
+    ],
+    "BackgroundThemeColor": null,
+    "ForegroundThemeColor": null,
+    "link": {
+      "Href": "/test.xlsx/worksheets/Sheet1/cells/a1/style",
+      "Rel": "self",
+      "Title": null,
+      "Type": null
+    }
+  },
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+**أكواد حالة HTTP**
+
+| الكود | المعنى | الوصف |
+|------|-----------------------------|--------------------------------------------------|
+| 200 | OK | تم تطبيق المرشّح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | Bad Request | معاملات مفقودة أو غير صالحة (مثلًا نوع ملف غير مدعوم). |
+| 401 | Unauthorized | رمز JWT غير صالح أو مفقود. |
+| 413 | Payload Too Large | حجم الملف المرفوع يتجاوز الحد المسموح. |
+| 500 | Internal Server Error | خطأ غير متوقع في الخادم. |
+
+**استجابات الخطأ**  
+تتبع حمولات الخطأ النموذجية لهذه النقطة الطرفية التنسيق القياسي لأخطاء Aspose.Cells. على سبيل المثال، يُعيد خطأ 400 Bad Request ما يلي:
+
+```json
+{
+  "Code": 400,
+  "Message": "Invalid parameter 'cellName'.",
+  "Description": "The cell name provided is not in a valid A1 format."
+}
+```
+
+وبالمثل، يُعيد خطأ 401 Unauthorized ما يلي:
+
+```json
+{
+  "Code": 401,
+  "Message": "Authentication failed.",
+  "Description": "The JWT token is missing or invalid."
+}
+```
+
+## كيفية استخدام واجهة GetWorksheetCellStyle API باستخدام حزم تطوير البرامج (SDKs)
+
+### مواصفات واجهة GetWorksheetCellStyle API
+
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCellStyle) واجهة برمجة تطبيقات عامة قابلة للوصول، وتتيح لك إجراء تفاعلات REST مباشرةً من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات ويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء استدعاء إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/a1/style" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-
   "Style": {
-
     "Font": {
-
-      "Color": {
-
-        "A": 255,
-
-        "R": 5,
-
-        "G": 99,
-
-        "B": 193
-
-      },
-
+      "Color": { "A": 255, "R": 5, "G": 99, "B": 193 },
       "DoubleSize": 11,
-
       "IsBold": false,
-
       "IsItalic": false,
-
       "IsStrikeout": false,
-
       "IsSubscript": false,
-
       "IsSuperscript": false,
-
       "Name": "Calibri",
-
       "Size": 11,
-
       "Underline": "Single"
-
     },
-
     "Name": null,
-
     "CultureCustom": "General",
-
     "Custom": "",
-
-    "BackgroundColor": {
-
-      "A": 0,
-
-      "R": 0,
-
-      "G": 0,
-
-      "B": 0
-
-    },
-
-    "ForegroundColor": {
-
-      "A": 0,
-
-      "R": 0,
-
-      "G": 0,
-
-      "B": 0
-
-    },
-
+    "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+    "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
     "IsFormulaHidden": false,
-
     "IsDateTime": false,
-
     "IsTextWrapped": false,
-
     "IsGradient": false,
-
     "IsLocked": true,
-
     "IsPercent": false,
-
     "ShrinkToFit": false,
-
     "IndentLevel": 0,
-
     "Number": 0,
-
     "RotationAngle": 0,
-
     "Pattern": "None",
-
     "TextDirection": "Context",
-
     "VerticalAlignment": "Bottom",
-
     "HorizontalAlignment": "General",
-
     "BorderCollection": [
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "BottomBorder"
-
       },
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "DiagonalDown"
-
       },
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "DiagonalUp"
-
       },
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "Horizontal"
-
       },
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "LeftBorder"
-
       },
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "RightBorder"
-
       },
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "TopBorder"
-
       },
-
       {
-
         "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
         "BorderType": "Vertical"
-
       }
-
     ],
-
     "BackgroundThemeColor": null,
-
     "ForegroundThemeColor": null,
-
     "link": {
-
       "Href": "/test.xlsx/worksheets/Sheet1/cells/a1/style",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## مخطط الاستجابة
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| الحقل | النوع | الوصف |
+| ------------------------ | ------- | ------------------------------------------------------------------------- |
+| **Style** | object | حاوية تحتوي على جميع خصائص التنسيق الخاصة بالخلية. |
+| Style.Font | object | إعدادات الخط (الاسم، الحجم، اللون، علامات التنسيق). |
+| Style.Font.Color | object | قيم لون RGBA لخط الخلية. |
+| Style.Font.IsBold | boolean | `true` إذا كان الخط عريضًا (Bold). |
+| Style.Font.IsItalic | boolean | `true` إذا كان الخط مائلًا (Italic). |
+| Style.Font.IsStrikeout | boolean | `true` إذا كان الخط مُشطوبًا (Strikeout). |
+| Style.Font.IsSubscript | boolean | `true` إذا كان الخط منخفضًا (Subscript). |
+| Style.Font.IsSuperscript | boolean | `true` إذا كان الخط مرتفعًا (Superscript). |
+| Style.Font.Name | string | اسم عائلة الخط (مثلًا **Calibri**). |
+| Style.Font.Size | number | حجم الخط بالنقاط. |
+| Style.Font.Underline | string | أسلوب التسطير (مثلًا **Single**). |
+| Style.IsLocked | boolean | يشير إلى ما إذا كانت الخلية مُحمية ضد التعديل. |
+| Style.IsTextWrapped | boolean | `true` إذا كان تغليف النص مفعّلًا. |
+| Style.IsGradient | boolean | `true` إذا تم تطبيق تعبئة متدرجة (Gradient). |
+| Style.Pattern | string | اسم نمط التعبئة (مثلًا **None**). |
+| Style.BorderCollection | array | قائمة كائنات الحدود التي تُعرّف أسلوب الخط، اللون، ونوع الحدود. |
+| Style.BackgroundColor | object | قيم RGBA لخلفية الخلية. |
+| Style.ForegroundColor | object | قيم RGBA لمقدمة الخلية. |
+| … | … | _(تتّبع الحقول الأخرى نفس النمط المُعرّف في مرجع API.)_ |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+### استخدام حزم تطوير البرامج (SDKs) الخاصة بـ Aspose.Cells Cloud
+
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. تتعامل حزم SDK مع التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم SDK الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام حزم SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -395,3 +355,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/a
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**انظر أيضًا**  
+- [ضبط تنسيق الخلية](https://apireference.aspose.cloud/cells/#/Cells/SetWorksheetCellStyle)  
+- [استرجاع قيمة الخلية](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell)
+---

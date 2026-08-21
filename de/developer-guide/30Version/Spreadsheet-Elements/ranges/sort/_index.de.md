@@ -1,65 +1,62 @@
-﻿---
-title:  Bereichssortierung
-second_title: Documen
-linktitle: Sor
-type: docs
-keywords: Range Sort
-url: /de/ranges/sort/
-description:  Legt einen Umrissrahmen um einen Zellbereich fest.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Bereichssortierung
 ---
-Dieser REST API zeigt eine Bereichssortierung an.
+title: Bereichssortierung
+second_title: "Dokument"
+linktitle: "Sortieren"
+type: docs
+keywords: "Bereichssortierung, Aspose.Cells Cloud, REST API, Tabellenkalkulation, Excel, API"
+url: /ranges/sort/de/
+description: Stellt eine API bereit, um einen Zellbereich in einer Arbeitsmappe mithilfe von Aspose.Cells Cloud zu sortieren.
+weight: 20
+---
 
-## RSET API
+Diese REST API sortiert einen angegebenen Zellbereich.
+
+## REST API
 
 ```bash
-
-POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/sort
-
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/sort
 ```
 
 Die Anforderungsparameter sind:
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody| Beschreibung|
-|:- |:- |:- |:- |
-|Name|Zeichenfolge|Weg|Der Name der Arbeitsmappe.|
-|Blattname|Zeichenfolge|Weg|Der Arbeitsblattname.|
-|rangeOperate|Klasse|Körper| Bereichssortierungsanforderung|
-|Ordner|Zeichenfolge|Abfrage|Original-Arbeitsmappenordner.|
-|Speichername|Zeichenfolge|Abfrage|Speichername.|
+| Parametername   | Typ    | Ort    | Beschreibung                                      |
+|-----------------|--------|--------|---------------------------------------------------|
+| name            | String | Path   | Der Name der Arbeitsmappe.                        |
+| sheetName       | String | Path   | Der Name des Arbeitsblatts.                       |
+| rangeOperate    | Klasse | Body   | Das Bereichssortierungsanforderungsobjekt.       |
+| folder          | String | Query  | Der Ordner, der die ursprüngliche Arbeitsmappe enthält. |
+| storageName     | String | Query  | Der Name des Speichers.                           |
 
- Der[OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangeSort) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+Die [OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangeSort) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht es Ihnen, REST-Interaktionen direkt aus einem Webbrowser durchzuführen.
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+Sie können das cURL-Befehlszeilentool verwenden, um problemlos auf Aspose.Cells-Webservices zuzugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an die Cloud-API durchführen.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
 {{< tab tabNum="1" >}}
 
 ```powershell
 curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/sort" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
 ```powershell
-
+# (Beispielantwort wird hier angezeigt)
 ```
 
 {{< /tab >}}
-
 {{< /tabs >}}
 
 ## Cloud SDK-Familie
 
-Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im GitHub-Repository.
+Die Verwendung eines SDK ist die beste Möglichkeit, die Entwicklung zu beschleunigen. Ein SDK übernimmt die Details auf niedriger Ebene und lässt Sie sich auf Ihre Projekt Aufgaben konzentrieren. Bitte überprüfen Sie das GitHub-Repository für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webservices mithilfe verschiedener SDKs durchgeführt werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

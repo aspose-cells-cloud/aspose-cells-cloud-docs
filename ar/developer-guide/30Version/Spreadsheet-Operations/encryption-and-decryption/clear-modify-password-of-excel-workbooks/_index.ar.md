@@ -1,72 +1,104 @@
-﻿---
-title: مسح تعديل كلمة المرور لمصنف العمل Excel
-second_title: Documen
-linktitle: مسح كلمة مرور الملفات Excel
-type: docs
-url: /ar/clear-excel-files-password/
-aliases: [/clear-modify-password-of-excel-workbooks/,/workbook/clear-modify-password/，/workbook/password/clear/]
-keywords: Delete password on an Excel workbook
-description: يدعم Cloud REST حذف كلمة المرور في مصنف Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 110
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، مسح تعديل كلمة المرور لدفاتر العمل Excel
 ---
-يشير هذا REST API إلى إلغاء حماية المستند من التغييرات.
+title: "إزالة حماية الكتابة (كلمة المرور) من ملف مصنف إكسل"
+second_title: "مستند"
+linktitle: "مسح كلمة مرور ملفات إكسل"
+type: docs
+url: /clear-excel-files-password/
+aliases:
+  [
+    /clear-modify-password-of-excel-workbooks/,
+    /workbook/clear-modify-password/،/workbook/password/clear/,
+  ]
+keywords: "Aspose.Cells، إكسل، إزالة كلمة المرور، حماية الكتابة، واجهة برمجة تطبيقات REST، أمثلة SDK"
+description: "تعلم كيفية حذف حماية الكتابة (كلمة المرور) من ملف مصنف إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. يتضمن مثالًا باستخدام cURL، خطوات المصادقة، وأكواد الأمثلة من SDKs."
+weight: 110
+ArticleTitle: "إزالة حماية الكتابة (كلمة المرور) من ملف مصنف إكسل"
+---
 
-## RSET API
+تقوم هذه واجهة برمجة تطبيقات REST بإزالة **حماية الكتابة (كلمة المرور)** من ملف مصنف إكسل، مما يتيح لك **إزالة حماية كلمة المرور** من ملفات إكسل برمجيًا.
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/writeProtection
- 
+**المتطلبات المسبقة:** احصل على رمز JWT صالح، وتأكد من أن المصنف مخزن في موقع دعم للتخزين، واستخدم إصدار API v3.0.
+
+لإضافة الحماية، راجع دليل [حماية إكسل](/cells/protect/).
+
+## DeleteDocumentUnprotectFromChanges API
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDocumentUnprotectFromChanges) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **متغيرات الطلب**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المتغير | النوع | الموقع | الوصف |
+| ------------ | ------ | -------- | ------------------------------------------------- |
+| `name` | string | path | اسم ملف مصنف إكسل. |
+| `folder` | string | query | المجلد الذي يحتوي على المصنف (اختياري). |
+| `storageName` | string | query | اسم خدمة التخزين (اختياري). |
+
+### الاستجابة
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**رموز حالة HTTP**
+
+| الكود | المعنى | الوصف |
+|------|-----------------------------|--------------------------------------------------|
+| 200 | OK | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | Bad Request | معطيات ناقصة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401 | Unauthorized | رمز JWT غير صالح أو ناقص. |
+| 413 | Payload Too Large | حجم الملف المرفوع يتجاوز الحد المسموح. |
+| 500 | Internal Server Error | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام DeleteDocumentUnprotectFromChanges API باستخدام SDKs
+
+### مواصفات DeleteDocumentUnprotectFromChanges API
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDocumentUnprotectFromChanges) واجهة برمجة تطبيقات عامة قابلة للاستخدام وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إجراء استدعاء إلى واجهة برمجة تطبيقات REST باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xlsx/writeProtection" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+### استخدام Aspose.Cells Cloud SDKs
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+استخدام SDKs هو أفضل طريقة لتسريع التطوير. تُدير SDKs التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مهام مشروعك. يُرجى مراجعة [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -96,7 +128,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xlsx/writeProtecti
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_DeleteDocumentUnprotectFromChanges.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_DeleteDocumentUnprotectFromChanges.ts" >}}
 
 {{< /tab >}}
 

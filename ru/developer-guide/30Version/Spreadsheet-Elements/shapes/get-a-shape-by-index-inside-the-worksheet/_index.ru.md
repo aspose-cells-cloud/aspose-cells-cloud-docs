@@ -1,160 +1,134 @@
-﻿---
-title: Получить форму по индексу на рабочем листе Excel
-second_title: Documen
-linktitle: Ге
-type: docs
-url: /ru/shapes/get/
-aliases: [/get-a-shape-by-index-inside-the-worksheet/]
-keywords: Get a shape on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает создание формы на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получение формы по индексу на листе Excel
 ---
-Этот REST API указывает на получение фигуры с форматом изображения или информации о фигуре на листе Excel.
+title: "Получение фигуры по индексу на листе Excel"
+second_title: "Документ"
+linktype: "Получить"
+type: docs
+url: /shapes/get/
+aliases: [/get-a-shape-by-index-inside-the-worksheet/]
+keywords: "Aspose.Cells Cloud, API фигур Excel, получение фигуры по индексу, фигура листа, REST API, извлечение фигур, Aspose.Cells SDK"
+description: "Извлечение фигуры по её индексу с листа Excel с помощью REST API Aspose.Cells Cloud. Включает синтаксис запроса, параметры, данные ответа и примеры SDK."
+weight: 20
+ArticleTitle: "Получение фигуры по индексу на листе Excel – Документация Aspose.Cells Cloud"
+---
 
-## РСЕT API
+Этот REST API извлекает фигуру (включая её растровые данные или метаданные) с листа Excel.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
- 
+## API GetWorksheetShape
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
 
-Параметры запроса:
+**Необходимые условия**  
+- Действующий маркер доступа Aspose Cloud (Bearer JWT).  
+- Рабочая книга должна находиться в вашем облачном хранилище Aspose Cloud или в указанной папке.  
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| название документа.|
-| Имя_листа| нить| путь| имя рабочего листа.|
-| индекс формы| целое число| путь| индекс формы в формах рабочего листа.|
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+### **Безопасность и аутентификация**
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShape) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе маркера JWT</a>.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+### **Параметры запроса**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Имя параметра | Тип    | Расположение | Описание                                            |
+|---------------|--------|-------------|-----------------------------------------------------|
+| name          | string | path        | Имя документа Excel.                                |
+| sheetName     | string | path        | Имя листа, содержащего фигуру.                      |
+| shapeindex    | integer| path        | Индекс фигуры на листе (начинается с 0).            |
+| folder        | string | query       | Путь к папке, где сохранён документ.                |
+| storageName   | string | query       | Имя сервиса хранилища.                              |
+
+**Примечание:** `shapeindex` — индексация начинается с 0; первая фигура имеет индекс 0. Убедитесь, что рабочая книга сохранена в указанной `folder` и `storageName`, если вы не используете хранилище по умолчанию.
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShape) определяет общедоступное программное интерфейсное описание и позволяет выполнять взаимодействие по REST напрямую из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как выполнить вызов облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/autoshapes/1" \
+# Исправленная конечная точка и путь
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/shapes/1" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 {
-
   "Status": "string",
-
   "Shape": {
-
     "link": {
-
       "Href": "string",
-
       "Rel": "string",
-
       "Title": "string",
-
       "Type": "string"
-
     },
-
     "Name": "string",
-
     "MsoDrawingType": "string",
-
     "AutoShapeType": "string",
-
     "Placement": "string",
-
     "UpperLeftRow": 0,
-
     "Top": 0,
-
     "UpperLeftColumn": 0,
-
     "Left": 0,
-
     "LowerRightRow": 0,
-
     "Bottom": 0,
-
     "LowerRightColumn": 0,
-
     "Right": 0,
-
     "Width": 0,
-
     "Height": 0,
-
     "X": 0,
-
     "Y": 0,
-
     "RotationAngle": 0,
-
     "HtmlText": "string",
-
     "Text": "string",
-
     "AlternativeText": "string",
-
     "TextHorizontalAlignment": "string",
-
     "TextHorizontalOverflow": "string",
-
     "TextOrientationType": "string",
-
     "TextVerticalAlignment": "string",
-
     "TextVerticalOverflow": "string",
-
     "IsGroup": true,
-
     "IsHidden": true,
-
     "IsLockAspectRatio": true,
-
     "IsLocked": true,
-
     "IsPrintable": true,
-
     "IsTextWrapped": true,
-
     "IsWordArt": true,
-
     "LinkedCell": "string",
-
     "ZOrderPosition": 0
-
   }
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Возможные коды HTTP-статуса**
+
+| Код | Описание |
+|------|-------------|
+| **200 OK** | Фигура успешно получена. |
+| **400 Bad Request** | Запрос имеет некорректный формат или отсутствуют обязательные параметры. |
+| **401 Unauthorized** | Аутентификация не удалась или маркер отсутствует/недействителен. |
+| **404 Not Found** | Указанная рабочая книга, лист или индекс фигуры не найдены. |
+| **500 Internal Server Error** | Произошла непредвиденная ошибка сервера. |
+
+**Типичные ошибки:** Использование некорректного домена верхнего уровня (`api.aspose.com`) или устаревшего сегмента `/autoshapes/` приведёт к ошибке 404. Всегда используйте сегмент `/shapes/` с доменом `api.aspose.cloud`.
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -207,3 +181,5 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4
 {{< /tab >}}
 
 {{< /tabs >}}
+
+См. также документацию по смежным операциям: **[Добавление фигуры](/shapes/add/)** и **[Обновление фигуры](/shapes/update/)**.

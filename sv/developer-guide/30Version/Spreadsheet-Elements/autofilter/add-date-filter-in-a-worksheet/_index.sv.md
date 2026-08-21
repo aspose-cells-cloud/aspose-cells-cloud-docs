@@ -1,84 +1,117 @@
-﻿---
-title: Lägg till datumfilter i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Lägg till datumfilter
-type: docs
-url: /sv/autofilter/add-date-filter/
-aliases: [/add-date-filter-in-a-worksheet/,/autofilter/add-a-date-filter/]
-keywords: Adds a date filter on an Excel worksheet
-description: "Aspose.Cells Cloud API stöder tillägg av ett datumfilter på ett Excel-arbetsblad. SDK:t stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
-weight: 65
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lägg till datumfilter i ett Excel-kalkylblad
 ---
-Denna REST API anger att `date filter` ska läggas till i ett Excel-arbetsblad.
+title: "Lägg till datumfilter i ett Excel-ark"
+second_title: "Dokument"
+linktitle: "Lägg till datumfilter"
+type: docs
+url: /autofilter/add-date-filter/
+aliases:
+  - /add-date-filter-in-a-worksheet/
+  - /autofilter/add-a-date-filter/
+description: "Lär dig hur du lägger till ett datumfilter i ett Excel-ark med Aspose.Cells Cloud REST API (v3.0). Inkluderar cURL-exempel, SDK-utdrag (C#, Java, Python m.m.), parametrar och felhantering."
+weight: 65
+ArticleTitle: "Lägg till datumfilter i ett Excel-ark | Aspose.Cells Cloud API"
+keywords: "Aspose.Cells, Excel-datumfilter, AutoFilter API, REST API, moln-SDK, cURL, kalkylarkautomation"
+---
 
-## RSET API
+Denna REST API lägger till ett **datumfilter** i ett Excel-ark.
 
-```bash
+**Förutsättningar:** Du måste ha ett giltigt JWT-token, och den mål-bok som ska filteras måste redan finnas på den angivna lagringsplatsen. Begäran kräver inte en JSON-kropp.
 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
+## PutWorksheetDateFilter API
 
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| Väg| Arbetsbokens namn.|
-| arknamn| sträng| Väg| Arbetsbladets namn.|
-|räckvidd|sträng| Fråga||
-|fältindex|heltal| Fråga||
-|datumTidGrupperingstyp|sträng| Fråga| Dag/Timme/Minut/Månad/Sekund/År|
-|år|heltal| Fråga||
-|månad|heltal| Fråga||
-|dag|heltal| Fråga||
-|timme|heltal| Fråga||
-|minut|heltal| Fråga||
-|andra|heltal| Fråga||
-|matchBlanks|sträng| Fråga|sant/falskt|
-|uppdatera|sträng| Fråga|sant/falskt|
-|mapp|sträng| Fråga|Original arbetsboksmapp.|
-|lagringsnamn|sträng| Fråga|Lagringsnamn.|
+Aspose.Cells Cloud API:n är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begärparametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Parameternamn            | Typ     | Position | Beskrivning                                                                                                                                                         |
+| ------------------------ | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**                 | string  | Sökväg   | Namnet på arbetsboken.                                                                                                                                              |
+| **sheetName**            | string  | Sökväg   | Namnet på arket.                                                                                                                                                    |
+| **range**                | string  | Fråga    | Excel-område som filtertillämpningen gäller för (t.ex. `A1:B1`).                                                                                                    |
+| **fieldIndex**           | integer | Fråga    | Nollbaserat index för kolumnen som ska filteras.                                                                                                                      |
+| **dateTimeGroupingType** | string  | Fråga    | Grupperingstyp för datum-/tidfiltret. Tillåtna värden är `Day`, `Hour`, `Minute`, `Month`, `Second`, `Year`. Värden är skiftlägeskänsliga; standardvärdet är `Day`. |
+| **year**                 | integer | Fråga    | Årsdel av filtervärdet.                                                                                                                                             |
+| **month**                | integer | Fråga    | Månadsdel av filtervärdet.                                                                                                                                          |
+| **day**                  | integer | Fråga    | Dagsdel av filtervärdet.                                                                                                                                            |
+| **hour**                 | integer | Fråga    | Timdel av filtervärdet.                                                                                                                                             |
+| **minute**               | integer | Fråga    | Minutdel av filtervärdet.                                                                                                                                           |
+| **second**               | integer | Fråga    | Sekunddel av filtervärdet.                                                                                                                                          |
+| **matchBlanks**          | boolean | Fråga    | Inkludera tomma celler (`true` eller `false`).                                                                                                                      |
+| **refresh**              | boolean | Fråga    | Uppdatera filtret efter tillämpning (`true` eller `false`).                                                                                                         |
+| **folder**               | string  | Fråga    | Sökvägen till mappen för den ursprungliga arbetsboken.                                                                                                              |
+| **storageName**          | string  | Fråga    | Namn på lagringstjänsten.                                                                                                                                           |
+
+*Begäran med PUT kräver inte en begärankropp; alla parametrar skickas via frågesträngen.*
+
+### **Svar**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                                                 |
+|-----|-----------------------------|-----------------------------------------------------------------------------|
+| 200 | OK                          | Filtret tillämpades framgångsrikt; svaret innehåller åtgärdsdetaljer.      |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds).           |
+| 401 | Obehörig                    | Ogiltigt eller saknat JWT-token.                                            |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen.                           |
+| 500 | Internt serverfel           | Oväntat serverfel.                                                          |
+
+## Hur du använder PutWorksheetDateFilter API med SDK:n
+
+### PutWorksheetDateFilter API-specificering
+
+
+<a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter" rel="noopener noreferrer">OpenAPI-specificeringen</a> definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör ett anrop till moln-API:n med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?range=A1:B1&fieldIndex=0&dateTimeGroupingType=Year&year=1920&refresh=true" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?range=A1:B1&fieldIndex=0&dateTimeGroupingType=Year&year=1920&refresh=true" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+### Använd Aspose.Cells Cloud SDK:n
+
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK hanterar detaljnivådetaljer så att du kan fokusera på dina projektuppgifter. Kontrollera <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub-förrådet</a> för en komplett lista över Aspose.Cells Cloud SDK:n.
+
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:n:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -108,7 +141,7 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDateFilter.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDateFilter.ts" >}}
 
 {{< /tab >}}
 

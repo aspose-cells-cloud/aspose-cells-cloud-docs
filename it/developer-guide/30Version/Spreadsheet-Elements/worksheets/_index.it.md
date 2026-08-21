@@ -1,37 +1,39 @@
-﻿---
-title: Lavorare con il foglio di lavoro Excel
-second_title: Documen
-linktitle: Foglio di lavoro
+---
+title: "Lavorare con i fogli di lavoro di Excel"
+second_title: "Documento"
+linktitle: "Fogli di lavoro"
 type: docs
 url: /it/worksheets/
-aliases: [/working-with-worksheets/]
-keywords: Working with worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API supporta l'utilizzo di fogli di lavoro su cartelle di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/working-with-worksheets/]
+keywords: "foglio di lavoro Excel, Aspose.Cells Cloud, API REST, foglio elettronico, cartella di lavoro, manipolazione dei dati, automazione Excel"
+description: "L'API REST di Aspose.Cells Cloud consente di lavorare con i fogli di lavoro in una cartella di lavoro Excel. L'SDK supporta numerosi linguaggi di programmazione, tra cui Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby e Swift."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Utilizzo del foglio di lavoro Excel.
+ArticleTitle: "Lavorare con i fogli di lavoro di Excel – Documentazione di Aspose.Cells Cloud"
 ---
-Un foglio di lavoro è un insieme di celle in cui si archiviano e si manipolano i dati. Ogni cartella di lavoro Excel può contenere più fogli di lavoro.
 
-**Foglio di lavoro Operate**
+Un foglio di lavoro è una raccolta di celle in cui è possibile archiviare e manipolare i dati. Ogni cartella di lavoro di Excel può contenere più fogli di lavoro.
 
-- [Come ottenere i fogli di lavoro Excel.](/cells/it/worksheets/get-all/)
-- [Come ottenere il foglio di lavoro Excel in diversi formati.](/cells/it/worksheets/get/)
-- [Come ottenere l'area del foglio di lavoro Excel con formati diversi.](/cells/it/worksheets/area-to-different-formats/)
-- [Come ottenere la pagina del foglio di lavoro Excel con formati diversi.](/cells/it/get-worksheet-for-page-index/)
-- [Come convertire il foglio di lavoro Excel in immagine.](/cells/it/worksheets/to-image/)
-- [Come aggiungere il foglio di lavoro Excel.](/cells/it/worksheets/add/)
-- [Come aggiungere lo sfondo al foglio di lavoro Excel.](/cells/it/worksheets/background/add/)
-- [Come ordinare i dati del foglio di lavoro Excel.](/cells/it/worksheets/sort-data/)
-- [Come nascondere il foglio di lavoro Excel.](/cells/it/worksheets/hide/)
-- [Come visualizzare il foglio di lavoro Excel.](/cells/it/worksheets/unhide/)
-- [Come spostare il foglio di lavoro Excel.](/cells/it/worksheets/move/)
-- [Come calcolare la formula Excel.](/cells/it/worksheets/calculate-formula/)
-- [Come copiare il foglio di lavoro Excel.](/cells/it/worksheets/copy/)
-- [Come rinominare il foglio di lavoro Excel.](/cells/it/worksheets/rename/)
-- [Come aggiornare le proprietà del foglio di lavoro Excel.](/cells/it/worksheets/update-properties/)
-- [Come impostare lo zoom del foglio di lavoro Excel.](/cells/it/worksheets/zoom/)
-- [Come bloccare i riquadri del foglio di lavoro Excel.](/cells/it/worksheets/freeze-panes/)
-- [Come sbloccare i riquadri del foglio di lavoro Excel.](/cells/it/worksheets/unfreeze-panes/)
-- [Come eliminare il foglio di lavoro Excel.](/cells/it/worksheets/delete/)
-- [Come eliminare lo sfondo del foglio di lavoro Excel.](/cells/it/worksheets/background/delete/)
-- [Come lavorare con l'adattamento automatico di una cartella di lavoro Excel](/cells/it/worksheets/autofit/)
+**Operazioni sui fogli di lavoro**
+
+- [Come ottenere i fogli di lavoro di Excel](/it/cells/worksheets/get-all/)
+- [Come ottenere un foglio di lavoro di Excel in formati diversi](/it/cells/worksheets/get/)
+- [Come ottenere un'area di un foglio di lavoro di Excel in formati diversi](/it/cells/worksheets/area-to-different-formats/)
+- [Come ottenere una pagina di un foglio di lavoro di Excel in formati diversi](/it/cells/get-worksheet-for-page-index/)
+- [Come convertire un foglio di lavoro di Excel in un'immagine](/it/cells/worksheets/to-image/)
+- [Come aggiungere un foglio di lavoro di Excel](/it/cells/worksheets/add/)
+- [Come aggiungere uno sfondo a un foglio di lavoro di Excel](/it/cells/worksheets/background/add/)
+- [Come ordinare i dati in un foglio di lavoro di Excel](/it/cells/worksheets/sort-data/)
+- [Come nascondere un foglio di lavoro di Excel](/it/cells/worksheets/hide/)
+- [Come mostrare un foglio di lavoro di Excel](/it/cells/worksheets/unhide/)
+- [Come spostare un foglio di lavoro di Excel](/it/cells/worksheets/move/)
+- [Come calcolare una formula Excel](/it/cells/worksheets/calculate-formula/)
+- [Come copiare un foglio di lavoro di Excel](/it/cells/worksheets/copy/)
+- [Come rinominare un foglio di lavoro di Excel](/it/cells/worksheets/rename/)
+- [Come aggiornare le proprietà di un foglio di lavoro di Excel](/it/cells/worksheets/update-properties/)
+- [Come impostare lo zoom di un foglio di lavoro di Excel](/it/cells/worksheets/zoom/)
+- [Come congelare i riquadri in un foglio di lavoro di Excel](/it/cells/worksheets/freeze-panes/)
+- [Come scongelare i riquadri in un foglio di lavoro di Excel](/it/cells/worksheets/unfreeze-panes/)
+- [Come eliminare un foglio di lavoro di Excel](/it/cells/worksheets/delete/)
+- [Come rimuovere uno sfondo da un foglio di lavoro di Excel](/it/cells/worksheets/background/delete/)
+- [Come adattare automaticamente la larghezza delle colonne in una cartella di lavoro di Excel](/it/cells/worksheets/autofit/)
+---

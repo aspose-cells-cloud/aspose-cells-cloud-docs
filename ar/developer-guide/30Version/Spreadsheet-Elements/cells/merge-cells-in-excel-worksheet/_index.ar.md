@@ -1,72 +1,106 @@
-﻿---
-title: دمج Cells في ورقة العمل Excel
-type: docs
-url: /ar/merge-cells-in-excel-worksheet/
-weight: 110
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، دمج Cells في ورقة عمل Excel
 ---
-يشير هذا REST API إلى `merge` خلية في ملف Excel.
+title: "كيفية دمج الخلايا في ورقة عمل Excel – واجهة Aspose.Cells Cloud API (الإصدار 3.0)"
+type: docs
+url: /merge-cells-in-excel-worksheet/
+weight: 110
+keywords: "دمج الخلايا، Aspose.Cells، واجهة Cloud API، Excel"
+description: "دليل لدمج الخلايا في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API مع أمثلة لـ cURL وSDKs."
+ArticleTitle: "كيفية دمج الخلايا في ورقة عمل Excel – واجهة Aspose.Cells Cloud API (الإصدار 3.0)"
+---
 
-## RSET API
+تقوم واجهة Aspose.Cells Cloud REST API بدمج كتلة مستطيلة من الخلايا في خلية واحدة تمتد عبر الصفوف والأعمدة المحددة.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merge
- 
+**المتطلبات المسبقة**  
+- رمز JWT صالح للمصادقة.  
+- يجب أن تكون المصنف موجودًا مسبقًا في مجلد التخزين المحدد.  
+- يجب إعداد إعدادات التخزين (اسم المجلد واسم التخزين) في حسابك على Aspose.Cloud.
+
+## واجهة PostWorksheetMerge
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merge
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| صف البداية| عدد صحيح| استفسار| صف البداية.|
-| عمود البداية| عدد صحيح| استفسار| عمود البداية.|
-| إجمالي الصفوف| عدد صحيح| استفسار| إجمالي الصفوف|
-| إجمالي الأعمدة| عدد صحيح| استفسار| مجموع الأعمدة.|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعتبر واجهات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetMerge) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| الاسم            | النوع     | الموقع   | الوصف                                                |
+|------------------|-----------|----------|--------------------------------------------------------|
+| name             | string    | path     | اسم المصنف.                                           |
+| sheetName        | string    | path     | اسم ورقة العمل.                                       |
+| startRow         | integer   | query    | الفهرس الصفر-based للصف الأول (0 = الصف الأول).      |
+| startColumn      | integer   | query    | الفهرس الصفر-based للعمود الأول (0 = العمود الأول).   |
+| totalRows        | integer   | query    | عدد الصفوف المراد دمجها.                              |
+| totalColumns     | integer   | query    | عدد الأعمدة المراد دمجها.                             |
+| folder           | string    | query    | المجلد الذي يحتوي على المصنف.                        |
+| storageName      | string    | query    | اسم التخزين.                                          |
+
+*لا يُطلب أي جسم للطلب في هذه العملية.*
+
+## **الاستجابة**
+
+ترجع كائن CellsCloudResponse.
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                        | الوصف                                                |
+|-------|-------------------------------|-------------------------------------------------------|
+| 200   | OK (نجاح)                     | تمت تطبيق التصفية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400   | Bad Request (طلب غير صالح)    | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401   | Unauthorized (غير مُخوّل)      | رمز JWT غير صالح أو مفقود.                           |
+| 413   | Payload Too Large (حمولة كبيرة جدًا) | تجاوز حجم الملف المرفوع الحد المسموح به.         |
+| 500   | Internal Server Error (خطأ داخلي في الخادم) | خطأ غير متوقع في الخادم.                        |
+
+## كيفية استخدام واجهة PostWorksheetMerge باستخدام SDKs
+
+### مواصفات واجهة PostWorksheetMerge
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetMerge) واجهة برمجة تطبيقات عامة قابلة للوصول، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة **cURL** سطر الأوامر للوصول بسهولة إلى خدمات Aspose.Cells عبر الويب. يوضح المثال التالي كيفية إجراء مكالمات إلى واجهة Cloud API باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/merge?startRow=10&startColumn=10&totalRows=10&totalColumns=10"  \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/merge?startRow=10&startColumn=10&totalRows=10&totalColumns=10" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعد استخدام SDK الطريقة الأفضل لتسريع عملية التطوير. فتتولى SDK إدارة التفاصيل من المستوى المنخفض، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية إجراء مكالمات إلى خدمات Aspose.Cells عبر SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

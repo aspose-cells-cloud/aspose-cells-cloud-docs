@@ -1,70 +1,78 @@
-﻿---
-title: احصل على نموذج عدد الصفحات على الرقم Excel
-second_title: Documen
-linktitle: صفحة
-type: docs
-url: /ar/get-page-count-from-an-excel-file/
-aliases: [/workbook/page-count/,/workbook/get/page-count/]
-keywords: Getting pages count on an Excel workbook
-description: يدعم Cloud REST Aspose.Cells API الحصول على عدد الصفحات في مصنف Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على عدد الصفحات
 ---
-يشير هذا REST API إلى `get page count` لدفتر العمل.
+title: "الحصول على عدد الصفحات من ملف إكسل"
+second_title: "مستند"
+linktype: "الصفحات"
+type: docs
+url: /get-page-count-from-an-excel-file/
+aliases: [/workbook/page-count/, /workbook/get/page-count/]
+keywords: "Aspose.Cells, واجهة برمجة التطبيقات السحابية، عدد صفحات إكسل، تقسيم الصفحات في المصنف"
+description: "استرجاع العدد الإجمالي للصفحات القابلة للطباعة في مصنف إكسل باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمن تنسيق الطلب، المعلمات المطلوبة، مثال باستخدام cURL، مخطط الاستجابة، معالجة الأخطاء، وأجزاء من أكواد SDK لعدة لغات برمجة."
+weight: 10
+version: "v3.0"
+ArticleTitle: "الحصول على عدد الصفحات من ملف إكسل باستخدام واجهة Aspose.Cells Cloud API"
+---
 
-## RSET API
+تُعيد هذه الواجهة البرمجية للـ REST **عدد الصفحات** للمصنف.
+
+## الأمان والمصادقة
+تُعدّ واجهات Aspose.Cells Cloud API آمنة وتتطلب [مصادقة تعتمد على رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## واجهة REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/pagecount
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/pagecount
 ```
 
-معلمات الطلب هي:
+### معلمات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعلمة | النوع | الموقع | مطلوب | الوصف |
+| ------------ | ------ | -------- | -------- | -------------------------------------- |
+| name | string | path | نعم | اسم ملف إكسل. |
+| folder | string | query | لا | المجلد الذي يحتوي على المستند. |
+| storageName | string | query | لا | اسم وحدة التخزين المراد استخدامها. |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetPageCount) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetPageCount) واجهة برمجة تطبيقات متاحة عمومًا وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى واجهة Aspose.Cells REST بسهولة. يوضح المثال التالي كيفية استدعاء نقطة النهاية باستخدام cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/pagecount" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/YourFile.xlsx/pagecount" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
+
+*استبدل `YourFile.xlsx` باسم المصنف الفعلي الذي ترغب في الاستعلام عنه.*
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 13
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### مخطط الاستجابة
+
+| حالة HTTP | نوع البيانات | الوصف |
+| ----------- | --------- | ----------------------------------------------------------------- |
+| 200 | integer | العدد الإجمالي للصفحات القابلة للطباعة في المصنف (مثل: `13`). |
+| 4xx‑5xx | JSON | كائن الخطأ (انظر قسم _معالجة الأخطاء_). |
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويسمح لك بالتركيز على مهام مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية إجراء مكالمات إلى خدمات Aspose.Cells عبر الويب باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -94,7 +102,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/pagecount" \
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetPageCount.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82deb2e4189bc27ae92abf73c36b4df0" "Example_GetPageCount.ts" >}}
 
 {{< /tab >}}
 
@@ -117,3 +125,13 @@ curl -v "http://api.aspose.cloud/v3.0/cells/pagecount" \
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## معالجة الأخطاء
+
+| حالة HTTP | الوصف | مثال على جسم JSON |
+| ----------- | ------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| 401 | رمز JWT غير صالح أو مفقود. | `{ "Code": "InvalidAuthenticationToken", "Message": "رمز الوصول مفقود أو غير صالح." }` |
+| 404 | تعذّر العثور على المصنف المحدد. | `{ "Code": "FileNotFound", "Message": "الملف المطلوب غير موجود." }` |
+| 400 | طلب غير صالح – معلمات مطلوبة مفقودة. | `{ "Code": "BadRequest", "Message": "المعلمة المطلوبة 'name' مفقودة." }` |
+| 500 | خطأ داخلي في الخادم. | `{ "Code": "InternalError", "Message": "حدث خطأ غير متوقع." }` |
+---

@@ -1,96 +1,92 @@
-﻿---
-title: Holen Sie sich die letzte Zelle des Arbeitsblatts Excel
+---
+title: "Letzte Zelle einer Excel-Arbeitsmappe abrufen – Aspose.Cells Cloud API (v4.0)"
 type: docs
 url: /de/get-last-cell-of-excel-worksheet/
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Letzte Zelle des Arbeitsblatts Excel abrufen
+keywords: "Aspose.Cells, Excel API, letzte Zelle abrufen, Tabellenkalkulation, Cloud"
+description: "Rufen Sie die Adresse der Endzelle einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API v4.0 ab. Enthält Anforderungsdetails, cURL-Beispiel, JSON-Antwort und SDK-Beispiele."
+ArticleTitle: "Endzelle einer Excel-Arbeitsmappe abrufen – Aspose.Cells Cloud API v4.0"
 ---
-Dieser REST API zeigt an, dass in einer Excel-Datei ein `endcell` abgerufen wird, wenn der `cellOrMethodName`-Parameter `endcell` ist.
 
-- **cURL Beispiel**
+Diese REST API gibt die **Endzelle** einer Excel-Arbeitsmappe zurück, wenn der Parameter `cellOrMethodName` auf `endcell` gesetzt ist.
 
+**Übersicht**  
+Der Vorgang **„Letzte Zelle abrufen“** gibt die Adresse der zuletzt verwendeten Zelle in einer angegebenen Arbeitsmappe zurück. Dies ist nützlich, um den effektiven Datenbereich eines Arbeitsblatts zu ermitteln, ohne das gesamte Dokument durchsuchen zu müssen.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+- **cURL-Beispiel.**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Anforderung" tabName12="Antwort" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/endcell" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/endcell" \
+     -H "Authorization: Bearer <your_access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "F341",
-
     "Row": 340,
-
     "Column": 5,
-
-    "Value": "<More Info>",
-
+    "Value": "<Weitere Informationen>",
     "Type": "IsString",
-
-    "Formula": "=HYPERLINK(SUBSTITUTE(HelpURLTemplate,\"xxxxxxxxxx\",[Help Topic]),\"<More Info>\")",
-
+    "Formula": "=HYPERLINK(SUBSTITUTE(HelpURLTemplate,\"xxxxxxxxxx\",[Help Topic]),\"<Weitere Informationen>\")",
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
-    "HtmlString": "<Font Style=\"TEXT-DECORATION: underline;FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">&lt;More Info&gt;</Font>",
-
+    "HtmlString": "<Font Style=\"TEXT-DECORATION: underline;FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">&lt;Weitere Informationen&gt;</Font>",
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Parameter
+| Parameter            | Type   | Erforderlich | Beschreibung |
+|----------------------|--------|--------------|--------------|
+| `fileName`           | string | Ja           | Name der Excel-Datei, die in der Cloud gespeichert ist. |
+| `worksheetName`      | string | Ja           | Name des Arbeitsblatts, aus dem die letzte Zelle abgerufen werden soll. |
+| `cellOrMethodName`   | string | Ja           | Muss auf **`endcell`** gesetzt sein, um diesen Vorgang auszulösen. |
+| `folder` *(optional)*| string | Nein         | Cloud-Ordnerpfad, in dem sich die Arbeitsmappe befindet. |
+| `storageName` *(optional)*| string | Nein    | Name des Speichers. Falls weggelassen, wird der Standardspeicher verwendet. |
 
-- **Cloud SDK-Familie**
+**HTTP-Statuscodes**
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+| Code | Bedeutung                   | Beschreibung                                     |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter erfolgreich angewendet; Antwort enthält Details zum Vorgang. |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized                | Ungültiges oder fehlendes JWT-Token. |
+| 413  | Payload Too Large           | Die hochgeladene Datei überschreitet die Größeinschränkung. |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler. |
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+- **Verwenden Sie Aspose.Cells Cloud SDKs**
 
+Die Verwendung eines SDKs ist die beste Möglichkeit, die Entwicklung zu beschleunigen. Ein SDK übernimmt die Details auf niedriger Ebene, sodass Sie sich auf die Aufgaben Ihres Projekts konzentrieren können. Besuchen Sie das <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub-Repository</a>, um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
+
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webservices mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -126,7 +122,7 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetLastCellWorksheet-1.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetLastCellWorksheet-1.js" >}}
 
 {{< /tab >}}
 
@@ -137,6 +133,8 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
+_Kommt bald._
 
 {{< /tab >}}
 
@@ -153,3 +151,5 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Weitere Vorgänge im Zusammenhang mit der Zellennavigation finden Sie in den Themen **[Erste Zelle abrufen](/de/get-first-cell-of-excel-worksheet/)** und **[Maximale Zeile abrufen](/de/get-max-row-of-worksheet/)**.

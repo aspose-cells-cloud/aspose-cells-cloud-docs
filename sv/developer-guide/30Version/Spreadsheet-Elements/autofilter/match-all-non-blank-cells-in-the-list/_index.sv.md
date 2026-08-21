@@ -1,78 +1,114 @@
-﻿---
-title: Matcha alla icke-tomma celler i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Matcha ingen tom cell
-type: docs
-url: /sv/autofilter/match-all-non-blank/
-aliases: [/match-all-non-blank-cells-in-the-list/]
-keywords: Match all not blank cells in the filter list on an Excel worksheet
-description: "Aspose.Cells Cloud API stöder matchning av alla celler som inte är tomma i filterlistan på ett Excel-arbetsblad. SDK:t stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
-weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Matcha alla icke-tomma celler i ett Excel-kalkylblad
 ---
-Denna REST API indikerar `match` alla `not blank cell` i listan på ett Excel-arbetsblad.
+title: "Matcha alla icke‑tomma celler i ett Excel-ark"
+second_title: "Dokument"
+linktitle: "Matcha alla icke‑tomma celler"
+type: docs
+url: /autofilter/match-all-non-blank/
+aliases: [/match-all-non-blank-cells-in-the-list/]
+keywords: "Aspose.Cells Cloud, matcha icke‑tomma celler, AutoFilter, Excel API"
+description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att matcha alla icke‑tomma celler i en AutoFilter-lista på ett Excel-ark. Innehåller endpoint, parametrar, autentisering, svarsschema, felkoder och SDK-exempel."
+ArticleTitle: "Matcha alla icke‑tomma celler i ett Excel-ark med Aspose.Cells Cloud API"
+weight: 100
+---
 
-## RSET API
+**Översikt**  
+Operationen *Matcha alla icke‑tomma celler* tillämpar en AutoFilter på ett ark och returnerar endast de rader där den angivna kolumnen innehåller data, och ignorerar tomma celler. Detta är användbart för att rensa datamängder, generera rapporter eller förbereda data för vidare analys.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchNonBlanks
- 
+**Förutsättningar**  
+- En giltig JWT-token för autentisering hos Aspose.Cells Cloud.  
+- Arbetsboken måste vara uppladdad till Aspose Cloud-lagring.  
+- Du behöver filnamnet, arkets namn och den nollbaserade kolumnindexpositionen (`fieldIndex`) du vill filtrera.
+
+Detta REST API matchar alla icke‑tomma celler i AutoFilter-listan på ett Excel-ark.
+
+## PostWorksheetMatchNonBlanks API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchNonBlanks
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg||
-| arknamn| sträng| väg||
-| fältindex| heltal| fråga||
-| mapp| sträng| fråga||
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchNonBlanks) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begärandeparametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameternamn   | Typ     | Plats  | Beskrivning                                                   |
+| --------------- | ------- | ------ | ------------------------------------------------------------- |
+| name            | string  | path   | Filnamnet på Excel-filen.                                     |
+| sheetName       | string  | path   | Namnet på arket som innehåller AutoFiltern.                   |
+| fieldIndex      | integer | query  | Nollbaserat index för den kolumn som filtert ska tillämpas på. |
+| folder          | string  | query  | _(Valfritt)_ Mappväg där filen lagras.                         |
+| storageName     | string  | query  | _(Valfritt)_ Namn på den lagringstjänst som ska användas.      |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Svar**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod  | Betydelse                   | Beskrivning                                            |
+|------|-----------------------------|--------------------------------------------------------|
+| 200  | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens information. |
+| 400  | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401  | Ej auktoriserad             | Ogiltig eller saknad JWT-token.                        |
+| 413  | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen.      |
+| 500  | Internt serverfel           | Oväntat serverfel.                                     |
+
+*Exempel på felaktigt svar (400)*  
+
+```json
+{
+  "Code": 400,
+  "Message": "Ogiltig parameter: fieldIndex måste vara ett icke‑negativt heltal."
+}
+```
+
+## Hur du använder PostWorksheetMatchNonBlanks API med SDK:er
+
+### PostWorksheetMatchNonBlanks API-specificering
+
+[OpenAPI-specificeringen](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchNonBlanks) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur du gör anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v  "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/matchNonBlanks?fieldIndex=0" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/matchNonBlanks?fieldIndex=0" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Kolla in [GitHub-repositoriet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du gör anrop till Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,70 +1,94 @@
-﻿---
-title: Tüm çalışma sayfası doğrulamalarını Excel numaralı çalışma sayfasından alın
-second_title: Documen
-linktitle: Al al
+---
+title: "Bir Excel Çalışma Sayfasından Tüm Çalışma Sayfası Doğrulamalarını Alın"
+second_title: "Belge"
+linktitle: "Tümünü Al"
 type: docs
 url: /tr/validations/get-all/
-keywords: Get all worksheet validations from an Excel worksheet
-description: Aspose.Cells Cloud REST API, tüm çalışma sayfası doğrulamalarını Excel çalışma sayfasından almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
+keywords: "Aspose.Cells Cloud, Excel, çalışma sayfası doğrulamaları, REST API, tüm doğrulamaları al, SDK'lar"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından tüm çalışma sayfası doğrulamalarını alın. Hızlı entegrasyon için birden fazla SDK'yi (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) destekler."
 weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasından tüm çalışma sayfası doğrulamalarını alın
 ---
-Bu REST API, Excel çalışma sayfasındaki tüm çalışma sayfası doğrulamalarını almayı gösterir.
 
-## RSET API
+Çalışma sayfası doğrulamaları, hücrelere girilebilecek veri türünü veya aralığını kısıtlamak için kurallar tanımlamanızı sağlar. Veri bütünlüğünü sağlamak için yaygın olarak kullanılırlar; örneğin girişleri belirli bir değer listesine, belirli bir tarih aralığına veya sayısal sınırlara kısıtlamak gibi.
+
+Bu REST API, bir Excel çalışma sayfasındaki tüm çalışma sayfası doğrulamalarını getirir.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 ```
 
-İstek parametreleri şunlardır:
+### **İstek Parametreleri**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı | Tür   | Konum | Açıklama                                |
+| -------------- | ------ | -------- | ----------------------------------------- |
+| name           | string | path     | Excel belgesinin adı.                    |
+| sheetName      | string | path     | Çalışma sayfasının adı.                   |
+| folder         | string | query    | Belgenin depolandığı klasör yolu.         |
+| storageName    | string | query    | Depolama hizmetinin adı.                  |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+**Yanıt durum kodları**
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Kod | Açıklama                                    |
+|------|---------------------------------------------|
+| 200  | Başarılı istek – doğrulamalar listesi      |
+| 401  | Yetkisiz – geçersiz veya eksik belirteç     |
+| 404  | Bulunamadı – belge veya çalışma sayfası eksik |
+| 500  | İç sunucu hatası                           |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells Cloud web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. **Önkoşul:** `Authorization` başlığına geçerli bir JWT belirteci eklemeniz gerekir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
-
- 
+```json
+{
+  "validations": [
+    {
+      "name": "Validation1",
+      "type": "WholeNumber",
+      "operator": "Between",
+      "formula1": "1",
+      "formula2": "100",
+      "showErrorMessage": true,
+      "errorMessage": "Değer 1 ile 100 arasında olmalıdır."
+    },
+    {
+      "name": "Validation2",
+      "type": "List",
+      "formula1": "\"Seçenek1,Seçenek2,Seçenek3\"",
+      "showErrorMessage": true,
+      "errorMessage": "Listeden bir değer seçin."
+    }
+  ]
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+## Bulut SDK Geliştirme Paketi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. SDK, düşük seviye detayları kendisi yöneterek sizin projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposunu](https://github.com/aspose-cells-cloud) kontrol edin.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanılarak Aspose.Cells web hizmetlerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -117,3 +141,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

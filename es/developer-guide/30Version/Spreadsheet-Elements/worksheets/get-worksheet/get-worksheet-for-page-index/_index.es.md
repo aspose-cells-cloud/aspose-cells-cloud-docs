@@ -1,56 +1,89 @@
-﻿---
-title: Exportar una página de una hoja de cálculo Excel
-second_title: Documen
-linktitle: Página
-type: docs
-url: /es/worksheets/page-to-different-formats/
-aliases: [/get-worksheet-for-page-index/]
-keywords: Get page to different format content from an Excel worksheet
-description: Aspose.Cells Cloud REST API permite obtener contenido de página en diferentes formatos desde una hoja de trabajo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 240
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Exportar una página de una hoja de cálculo Excel
 ---
-[OBTENER /celdas/{nombre}/hojasdetrabajo/{nombreDeHoja}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) La versión API permite convertir páginas de una hoja de cálculo a archivos de cualquier formato. Formatos compatibles:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [SAO](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OET](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [Diferencia](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NÚMEROS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+title: "Exportar una página de hoja de cálculo – Referencia de la API en la nube de Aspose.Cells"
+ArticleTitle: "Exportar una página de hoja de cálculo – Referencia de la API en la nube de Aspose.Cells"
+second_title: "Documento"
+linktitle: "Página"
+type: docs
+url: /worksheets/page-to-different-formats/
+aliases: [/get-worksheet-for-page-index/]
+keywords: "Aspose.Cells Cloud, exportación de página de hoja de cálculo, PDF, PNG, CSV, API REST, autenticación JWT, formatos de archivo"
+description: "Aprenda cómo exportar una página específica de una hoja de cálculo a PDF, PNG, CSV y otros formatos mediante la API REST de Aspose.Cells Cloud. Incluye solicitud cURL, guía de parámetros y ejemplos de SDK para múltiples lenguajes."
+weight: 240
+---
 
-## RESTO API
+Exportar una página específica de una hoja de cálculo resulta útil cuando necesita una instantánea imprimible de un informe, una imagen de gráfico o un extracto de datos, sin tener que descargar todo el libro de trabajo. Este endpoint le permite recuperar una única página en el formato que mejor se adapte a su flujo de trabajo posterior.
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorkshee) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La API [GET /cells/{name}/worksheets/{sheetName}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) le permite convertir una página específica de una hoja de cálculo en distintos formatos de archivo. Los formatos admitidos son: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+## API REST
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
+
+> **Requisitos previos** – Debe disponer de un token JWT de autenticación válido y del libro de trabajo almacenado en una carpeta en la nube que especifique mediante el parámetro `folder`.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube mediante cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1?format=png&verticalResolution=100&horizontalResolution=90&pageIndex=1&folder=DotnetFiles" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
+**Respuesta** – El servicio devuelve la página solicitada en el formato elegido. Para formatos de imagen (png, jpeg, gif, etc.), el cuerpo contiene la imagen binaria; para formatos de documento (pdf, xls, csv, etc.), el cuerpo contiene el contenido del archivo. Una llamada correcta devuelve HTTP 200.
 
-Converted Image 
+*Ejemplo de respuesta PNG (fragmento base64 truncado):*
 
+```text
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABG0lEQVR42mNkYGBg+M+ABbJw
+...
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Parámetros**
+
+| Parámetro              | Tipo    | Descripción                                                                 | Valor predeterminado |
+| ---------------------- | ------- | --------------------------------------------------------------------------- | -------------------- |
+| `format`               | string  | Formato del archivo de salida (por ejemplo, `pdf`, `png`, `csv`).           | `pdf`                |
+| `verticalResolution`   | integer | Resolución vertical (DPI) de la imagen renderizada.                         | `100`                |
+| `horizontalResolution` | integer | Resolución horizontal (DPI) de la imagen renderizada.                       | `100`                |
+| `pageIndex`            | integer | Índice de página (base cero) de la hoja de cálculo que se va a exportar (`0` = primera página). | `0`                  |
+| `folder`               | string  | Carpeta del almacenamiento en la nube donde se encuentra el libro de trabajo de origen. | —                    |
+
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                             |
+|--------|-----------------------------|---------------------------------------------------------|
+| 200    | Correcto                    | Filtro aplicado correctamente; la respuesta contiene los detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros faltantes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT no válido o ausente.                           |
+| 413    | Carga útil demasiado grande | El archivo cargado excede el límite de tamaño.          |
+| 500    | Error interno del servidor  | Error inesperado del servidor.                          |
+
+**Posibles errores**
+
+- **401 No autorizado** – Token JWT no válido o ausente.
+- **404 No encontrado** – El libro de trabajo o la hoja de cálculo especificados no existen.
+- **400 Solicitud incorrecta** – Valor de parámetro no válido (por ejemplo, `format` no admitido).
+- **500 Error interno del servidor** – Problema inesperado en el lado del servidor.
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel, lo que le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells utilizando diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

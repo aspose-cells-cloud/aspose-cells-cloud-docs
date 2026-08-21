@@ -1,73 +1,69 @@
-﻿---
-title: Dölj ett Excel-arbetsblad
-second_title: Documen
-linktitle: Gömd
-type: docs
-url: /sv/worksheets/hide/
-aliases: [/hide-excel-worksheets/]
-keywords: Hide an Excel Worksheet on an Excel Workbook
-description: Aspose.Cells Cloud REST API stöder döljning av ett Excel-arbetsblad i en Excel-arbetsbok. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 50
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Dölj ett Excel-kalkylblad
 ---
-Denna REST API indikerar `hide worksheet`.
- 
-## RSET API
- 
+title: "Dölja ett Excel-ark"
+second_title: "Dokument"
+linktitle: "Dölj"
+type: docs
+url: /worksheets/hide/
+aliases: [/hide-excel-worksheets/]
+keywords: "Aspose.Cells Cloud, Excel, dölj ark, REST API, kalkylark"
+description: "Steg-för-steg-guide för att dölja ett ark i en Excel-arbetsbok med Aspose.Cells Cloud REST API, inklusive begärandeinformation, ett cURL-exempel och SDK-kodfragment för flera språk."
+weight: 50
+---
+
+Denna REST API döljer ett ark.
+
+## REST API
+
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
- 
 ```
- Begäranparametrarna är:
- 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| ärSynlig| boolesk| fråga| Nytt synlighetsvärde för kalkylblad.|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
- 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
- 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Begäringsparametrar**
+
+| Parameternamn | Typ    | Plats  | Beskrivning                                                  |
+| ------------- | ------ | ------ | ------------------------------------------------------------ |
+| name          | string | path   | Namnet på Excel-arbetsbokfilen.                              |
+| sheetName     | string | path   | Namnet på arket som ska ändras.                              |
+| isVisible     | boolean | query | Synlighetsflagga (`true` för synligt, `false` för dolt).     |
+| folder        | string | query | Sökvägen till mappen där arbetsboken är lagrad.              |
+| storageName   | string | query | Namnet på lagringstjänsten.                                  |
+
+[OpenAPI-specificationen](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör ett anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/visible?isVisible=false" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK-familjen
- 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
- 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+
+## SDK-familj för molnet
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå så att du kan fokusera på dina projektuppgifter. Se [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med diverse SDK:er:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

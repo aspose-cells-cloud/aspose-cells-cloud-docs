@@ -1,99 +1,127 @@
-﻿---
-title: Aspose.Cells Cloud Web API — Удаление пустых строк в электронной таблице
-second_title: Documen
-ArticleTitle: Delete Blank Rows in a Spreadshee
-linktitle: Удалить пустую строку
-type: docs
-url: /ru/delete-spreadsheet-blank-rows/
-keywords: Delete blank rows, Excel API, Spreadsheet cleaning, Aspose.Cells Cloud Web API, Remove empty row
-description: Эффективно удаляйте все пустые строки в электронной таблице, не содержащие никаких данных или объектов, улучшая организацию данных.
-weight: 100
-kwords: Excel, REST, Электронная таблица, PDF, CSV, JSON, Markdown, Сопоставление всех пустых ячеек на листе Excel, Удаление пустых строк
 ---
-Удалите все пустые строки, не содержащие никаких данных или других объектов, из электронной таблицы Excel.
+title: "Aspose.Cells Cloud Web API — Автоматическое удаление пустых строк"
+second_title: "Документ"
+ArticleTitle: "Как удалить все пустые строки в Excel — Полное руководство по очистке данных"
+linktype: "docs"
+url: /delete-spreadsheet-blank-rows/
+keywords: "Aspose.Cells, Excel, пустые строки, удаление строк, очистка электронных таблиц, API"
+description: "Удаление всех пустых строк из файлов Excel с помощью Aspose.Cells Cloud API. Быстро, поддерживает пакетную обработку и полностью программируемо — смотрите примеры кода на C#, Java, Python и других языках."
+weight: 100
+---
 
-## **Удалить пустые строки таблицы AP**
+Автоматически удаляйте все пустые строки из электронных таблиц Excel с помощью Aspose.Cells Cloud API. Наш интеллектуальный API обнаруживает и удаляет строки, не содержащие данных, формул, комментариев или объектов, при этом сохраняя всё остальное содержимое. API поддерживает пакетную обработку, облачную автоматизацию и беспрепятственную интеграцию в корпоративные рабочие процессы очистки данных.
+
+## API DeleteSpreadsheetBlankRows
+
+### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/delete/blank-rows
+PUT https://api.aspose.cloud/v4.0/cells/delete/blank-rows
 ```
 
-### **Параметры запроса:**
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody| Описание|
-|:- |:- |:- |:- |
-|Электронная таблица|Файл|FormData|Загрузите файл электронной таблицы.|
-|outPath|Нить|Запрос|(Необязательно) Путь к папке, где хранится книга. Значение по умолчанию — null.|
-|outStorageName|Нить|Запрос|Имя хранилища выходных файлов.|
-|область|Нить|Запрос|Настройка региона электронной таблицы.|
-|пароль|Нить|Запрос|Пароль для открытия файла электронной таблицы.|
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе токена JWT</a>.
 
-### **Ответ**
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+
+### Параметры запроса
+
+| Имя параметра     | Тип    | Местоположение | Описание                                                                                                                                  |
+|-------------------|--------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| Spreadsheet       | File   | FormData       | Файл Excel (`.xlsx`, `.xls`, `.ods` и др.), подлежащий обработке.                                                                         |
+| outPath           | String | Query          | (Необязательно) Целевой каталог в вашем облачном хранилище для очищенной рабочей книги. Если не указан, файл сохраняется рядом с исходным. |
+| outStorageName    | String | Query          | Имя настроенного облачного хранилища (например, `MyDropbox`, `CorporateOneDrive`). Требуется, если выходной файл должен храниться в определённом хранилище. |
+| region            | String | Query          | Языковые параметры (например, `en-US`, `fr-FR`), применяемые во время обработки.                                                         |
+| password          | String | Query          | Пароль для открытия зашифрованной электронной таблицы. Пропустите, если файл не защищён.                                                  |
+
+**Аутентификация**  
+Все вызовы должны включать заголовок `Authorization: Bearer <access_token>`. Получите токен доступа через OAuth2-процесс Aspose Cloud, описанный в руководстве по аутентификации.
+
+**Необходимые условия и примечания**  
+- Убедитесь, что ваше облачное хранилище Aspose Cloud настроено, а исходная рабочая книга загружена перед вызовом API.  
+- Поддерживаемые форматы файлов: `.xlsx`, `.xls`, `.ods` и другие распространённые типы электронных таблиц.  
+- Максимальный размер файла — 150 МБ для одного запроса; более крупные файлы следует обрабатывать по частям.
+
+### Ответ
+
+API возвращает JSON-массив, содержащий ссылку на обработанный файл.
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
 ### Коды ошибок
 
-- **400 Неверный запрос**: Неверный URI Apose.Cells Cloud API.
-- **401 Неавторизованный**: Недействительный токен доступа. Или недействительный идентификатор клиента и секретный ключ.
-- **404 Не найдено**: Файл электронной таблицы недоступен.
-- **500 Ошибка сервера**: В электронной таблице обнаружена аномалия при получении расчетных данных.
+- **400 Bad Request** — Неверный URI Aspose.Cells Cloud API.
+- **401 Unauthorized** — Неверный токен доступа или учётные данные клиента.
+- **404 Not Found** — Не удаётся получить доступ к файлу электронной таблицы.
+- **500 Server Error** — Во время обработки файла произошла непредвиденная ошибка.
 
-## Где следует использовать функцию «Удалить пустые строки электронной таблицы» API?
+## Где следует использовать API Delete Spreadsheet Blank Rows?
 
-Если вам необходимо преобразовать данные, вы можете использовать этот код API.
+- **Потоки импорта данных и очистки** — Очистка концевых или структурных пустых строк сразу после импорта данных из CSV, баз данных или веб-API.
+- **Генерация отчётов и дашбордов** — Обеспечение профессионального внешнего вида путём удаления ненужных пустых строк перед завершением финансовых, торговых или операционных отчётов.
+- **Подготовка данных для анализа (ETL)** — Предварительная обработка данных Excel в ETL-конвейерах перед загрузкой в хранилища данных (Snowflake, BigQuery) или BI-инструменты (Tableau, Power BI).
+- **Интеграция систем и API-каналы** — Нормализация файлов Excel, получаемых от партнёрских систем, CRM или ERP, путём удаления неиспользуемых строк.
+- **Автоматизация документов и пакетная обработка** — Удаление строк-заглушек, сгенерированных шаблонными движками, перед распространением.
+- **Обработка пользовательского контента** — Стандартизация загруженных Excel-файлов с веб-порталов или приложений перед дальнейшей обработкой или хранением.
+- **Миграция устаревших данных** — Оптимизация архивов старых электронных таблиц путём удаления исторически пустых или заглушечных строк.
 
-## Почему следует использовать функцию удаления пустых строк электронной таблицы API?
+## Почему стоит использовать API Delete Spreadsheet Blank Rows?
 
-- Быстро удалите все пустые строки, не содержащие никаких данных или других объектов, из электронной таблицы Excel.
-- Разработку можно быстро завершить с помощью существующего SDK.
+- **Удобно для разработчиков** — SDK доступны для множества языков программирования, что снижает усилия по разработке по сравнению с созданием собственных решений.
+- **Снижение затрат на труд** — Устраняет необходимость в ручной очистке электронных таблиц или выделенных сотрудниках.
+- **Оплата по факту использования** — Вы платите только за фактически выполненные вызовы API.
+- **Нулевые затраты на обслуживание** — Нет необходимости управлять серверами, обновлять программное обеспечение или решать проблемы совместимости.
 
-## Как использовать функцию удаления пустых строк электронной таблицы API с SDK
+## Как использовать API Delete Spreadsheet Blank Rows с SDK
 
-### Удалить пустые строки электронной таблицы API Спецификация
+### Спецификация API Delete Spreadsheet Blank Rows
 
- The[Удалить пустые строки электронной таблицы API Спецификация](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankRows) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[Спецификация API Delete Spreadsheet Blank Rows](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankRows) определяет публично доступный программный интерфейс и позволяет выполнять REST-взаимодействия напрямую из веб-браузера.
 
-### Используйте облачные SDK Aspose.Cells
+### Использование SDK Aspose.Cells Cloud
 
-Использование SDK — самый быстрый способ разработки, поскольку он абстрагируется от низкоуровневых деталей и позволяет удалять пустые строки в электронных таблицах с помощью короткого кода.
- Пожалуйста, проверьте[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ разработки, поскольку он абстрагирует низкоуровневые детали и позволяет удалять пустые строки из электронных таблиц с помощью короткого кода.  
+Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteSpreadsheetBlankRows.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteSpreadsheetBlankRows.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteSpreadsheetBlankRows.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteSpreadsheetBlankRows.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteSpreadsheetBlankRows.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteSpreadsheetBlankRows.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteSpreadsheetBlankRows.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankRows.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}  
+{{<tab tabNum="1" >}}  
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteSpreadsheetBlankRows.cs" >}}  
+{{</tab>}}  
+{{<tab tabNum="2" >}}  
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteSpreadsheetBlankRows.java" >}}  
+{{</tab>}}  
+{{<tab tabNum="3" >}}  
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteSpreadsheetBlankRows.php" >}}  
+{{</tab>}}  
+{{<tab tabNum="4" >}}  
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteSpreadsheetBlankRows.rb" >}}  
+{{</tab>}}  
+{{<tab tabNum="5" >}}  
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteSpreadsheetBlankRows.ts" >}}  
+{{</tab>}}  
+{{<tab tabNum="6" >}}  
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteSpreadsheetBlankRows.py" >}}  
+{{</tab>}}  
+{{<tab tabNum="7" >}}  
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteSpreadsheetBlankRows.pl" >}}  
+{{</tab>}}  
+{{<tab tabNum="8" >}}  
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankRows.go" >}}  
+{{</tab>}}  
 {{< /tabs >}}

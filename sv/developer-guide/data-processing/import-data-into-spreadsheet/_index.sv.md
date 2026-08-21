@@ -1,107 +1,123 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Importera CSV-, JSON- eller XML-data till en kalkylbladsfil
-second_title: Documen
-ArticleTitle: Import Csv, JSON, or XML Data into a Spreadsheet file
-linktitle: Importera data till kalkylblad
-type: docs
-url: /sv/import-data-into-spreadsheet/
-keywords: Import data, Aspose.Cells Cloud Web API, spreadsheet integration, CSV, JSON, XML, data handling, Aspose.Cell
-description: Importera effektivt data till ett kalkylblad från format som stöds, som CSV, JSON och XML, med hjälp av Aspose.Cells Cloud Web API
-weight: 100
-kwords: Aspose.Cells Molnwebb API, Importera data, Office Moln, REST, Kalkylblad, CSV, JSON, XM
 ---
- Importera data till ett kalkylblad. Det format som stöds för den importerade datafilen är[XML](https://docs.fileformat.com/web/xml/), [JSON](https://docs.fileformat.com/web/json/) eller[CSV-fil](https://docs.fileformat.com/spreadsheet/csv/).
+title: "Aspose.Cells Cloud Data Import API – En molnlösning för automatisk import av CSV-, JSON- och XML-data till Excel-arbetsblad."
+second_title: "Dokument"
+ArticleTitle: "Excel-plattform för dataintegriering från flera källor – Aspose.Cells Clouds API för automatisk dataimport och -transformation."
+linktitle: "Importera data till kalkylblad"
+type: docs
+url: /import-data-into-spreadsheet/
+keywords: "Aspose Cells, dataimport-API, CSV till Excel, JSON till Excel, XML till Excel, molnbaserat kalkylblad, REST-API"
+description: "Importera CSV-, JSON- eller XML-data till Excel-arbetsblad med Aspose.Cells Clouds REST-API. Lär dig om begärandeformat, parametrar, exempel på SDK-kod och felhantering."
+weight: 100
+---
 
-## **Importera data till kalkylblad API**
+## Grundläggande funktioner
+
+### Stöd för flera dataformat
+
+- **<a href="https://docs.fileformat.com/spreadsheet/csv/" rel="noopener noreferrer">CSV</a>-dataimport**: Stöder flera avgränsare och identifierar automatiskt kodning.
+- **<a href="https://docs.fileformat.com/web/json/" rel="noopener noreferrer">JSON</a>-datahantering**: Flattar komplexa JSON-strukturer till Excel-tabeller.
+- **<a href="https://docs.fileformat.com/web/xml/" rel="noopener noreferrer">XML</a>-filkonvertering**: Knyter noddata till Excel-rad- och kolumnstruktur.
+
+## **Beskrivning av API:et för import av data till kalkylblad**
+
+### Webb-API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/import/data
+PUT https://api.aspose.cloud/v4.0/cells/import/data
 ```
 
-### **Begäranparametrar:**
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp| Beskrivning|
-|:- |:- |:- |:- |
-| datafil| Fil| FormulärData| Ladda upp datafilen som ska importeras.|
-| Kalkylblad| Fil| FormulärData| Ladda upp målkalkylbladsfilen.|
-| arbetsblad| Sträng| Fråga| Ange kalkylbladet för import av data.|
-| startcell| Sträng| Fråga|Ange startpositionen för import av data.|
-| infoga| Booleansk| Fråga| Anger om den angivna importdatan ska infogas eller skrivas över.|
-| konverteraNumeriskData| Booleansk| Fråga| Ange om numeriska data ska konverteras under importen.|
-| delare| Sträng| Fråga| Ange avgränsare för CSV-format.|
-| utväg| Sträng| Fråga| (Valfritt) Mappsökvägen där arbetsboken lagras. Standardvärdet är null.|
-|outStorageName| Sträng| Fråga| Ange namnet på utdatafilens lagringsplats.|
-| teckensnittPlats| Sträng| Fråga| Definiera anpassade teckensnitt som ska användas.|
-| återgå| Sträng| Fråga| Ställ in konfigurationen för kalkylbladsregionen.|
-| lösenord| Sträng| Fråga| Lösenordet för att öppna kalkylbladsfilen.|
+Aspose.Cells Cloud-API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-### **Svar**
+### Begärandeparametrar
+
+| ParameterNamn      | Typ    | Plats            | Beskrivning                                                               |
+| ------------------ | ------ | ---------------- | ------------------------------------------------------------------------- |
+| datafile           | Fil    | FormData         | Datafilen (CSV, JSON eller XML) som ska importeras.                      |
+| spreadsheet        | Fil    | FormData         | Målarbetsboken som ska ta emot den importerade datan.                     |
+| worksheet          | sträng | Query            | Namn på arbetsbladet där datan ska placeras.                              |
+| startCell          | sträng | Query            | Översta vänstra cellen (t.ex. `A1`) som markerar startpositionen för importen. |
+| insert             | bool   | Query            | `true` för att infoga rader; `false` för att skriva över befintlig data. |
+| convertNumericData | bool   | Query            | `true` för att konvertera numeriska strängar till siffror vid import.    |
+| splitter           | sträng | Query            | Enkeltecken för CSV-avgränsare (standard är `,`).                         |
+| outPath            | sträng | Query (valfritt) | Mappkväll för den uppdaterade arbetsboken.                               |
+| outStorageName     | sträng | Query (valfritt) | Namn på lagringsplatsen för utfil.                                        |
+| fontsLocation      | sträng | Query (valfritt) | Sökväg till en anpassad teckensnittsmapp, om sådan krävs.                |
+| region             | sträng | Query (valfritt) | Konfiguration av kalkylbladsregion (t.ex. `sv-SE`).                      |
+| password           | sträng | Query (valfritt) | Lösenord för att öppna en skyddad arbetsbok.                             |
+
+### Svar
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Felkoder
+**HTTP-statuskoder**
 
-- **400 Felaktig begäran**Ogiltig Apose.Cells Cloud API URI.
-- **401 Obehörig**Ogiltig åtkomsttoken. Eller ogiltigt klient-ID och hemlighet.
-- **404 Hittades inte**Kalkylbladsfilen är inte tillgänglig.
-- **500 Serverfel**Kalkylbladet har stött på ett fel vid hämtning av beräkningsdata.
+| Kod | Betydelse               | Beskrivning                                                     |
+| --- | ----------------------- | --------------------------------------------------------------- |
+| 200 | OK                      | Filter tillämpades framgångsrikt; svaret innehåller åtgärdsdetaljer. |
+| 400 | Felaktig begäran        | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Oauktoriserad           | Ogiltig eller saknad JWT-token.                                 |
+| 413 | Payload för stor        | Uppladdad fil överskrider storleksgränsen.                      |
+| 500 | Internt serverfel       | Oväntat serverfel.                                              |
 
-## Var ska vi använda importdata till kalkylblad API?
+## Varför du bör använda detta API
 
-- Importera stora mängder data till ett kalkylblad.
--  Det importerade datafilformatet är[XML](https://docs.fileformat.com/web/xml/), [JSON](https://docs.fileformat.com/web/json/) och[CSV-fil](https://docs.fileformat.com/spreadsheet/csv/).
+- **Effektiv dataladdning** – Möjliggör bulkimport av stora dataset direkt till en arbetsbok utan att skapa mellanliggande filer.
+- **Brett SDK-stöd** – Erhåller klientsbibliotek för .NET, Java, PHP, Ruby, Node.js, Python, Go och Perl, vilket förenklar integrationen.
+- **Bearbetning i minnet** – Utför transformationer i minnet, vilket minskar kraven på temporär lagring.
 
-## Varför ska du använda Importera data till kalkylblad API?
+## Hur du använder API:et för import av data till kalkylblad med SDK:er
 
-- Importera stora mängder data till kalkylblad.
-- Utvecklingen kan snabbt slutföras via det befintliga SDK:t.
+**Anteckningar / begränsningar:** API:et stöder upp till 1 000 000 rader per import. Komma är standardavgränsare för CSV; andra enkeltolkade avgränsare kan anges via parametern `splitter`. Stora XML-filer kan öka bearbetningstiden.
 
-## Hur man använder importdata till kalkylblad API med SDK:er
+För relaterade åtgärder såsom export av data eller konvertering av arbetsboksformat, se dokumentationen för **Export Data** och **Convert Workbook**.
 
-### Importera data till kalkylblad API Specifikation
+### API-specifikation för import av data till kalkylblad
 
- De[Importera data till kalkylblad API Specifikation](https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet) tillhandahåller ett offentligt tillgängligt programmeringsgränssnitt som möjliggör REST-interaktioner direkt från din webbläsare.
+<a href="https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet" rel="noopener noreferrer">API-specifikationen för import av data till kalkylblad</a> tillhandahåller ett offentligt tillgängligt programmeringsgränssnitt, vilket möjliggör REST-interaktioner direkt från din webbläsare.
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur du gör anrop till Cloud-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/import/data?worksheet=Sheet1&startCell=A1&insert=true" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "datafile=@/path/to/data.csv" \
+  -F "spreadsheet=@/path/to/workbook.xlsx"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64-kodad)",
+  "contentType": "MIME-typ",
+  "fileDownloadName": "valfritt filnamn"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Använd Aspose.Cells Cloud SDK:er
 
-Att använda SDK:t är det snabbaste sättet att utveckla, eftersom det abstraherar bort detaljer på låg nivå, vilket gör att du kan importera data till ett kalkylblad med kort kod.
- Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda SDK är det snabbaste sättet att utveckla, eftersom den döljer detaljer på låg nivå och låter dig importera data till ett kalkylblad med kort kod. Kolla in <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub-arkivet</a> för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel illustrerar hur man anropar Aspose.Cells-webbtjänster med hjälp av olika SDK:er:
-
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ImportDataIntoSpreadsheet.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ImportDataIntoSpreadsheet.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ImportDataIntoSpreadsheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ImportDataIntoSpreadsheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ImportDataIntoSpreadsheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ImportDataIntoSpreadsheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ImportDataIntoSpreadsheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ImportDataIntoSpreadsheet.go" >}}
-{{< /tab >}}
-{{< /tabs >}}
+---

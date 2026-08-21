@@ -1,20 +1,24 @@
-﻿---
-title: Créer des fichiers Excel ou générer des rapports Excel
-second_title: Documen
-type: docs
-url: /fr/creating-files-and-reports/
-aliases: [/workbook/create/]
-linktitle: Créer Excel et signaler
-keywords: Create document, Generate report, Excel report, Dynamic repor
-description: Générer de nouveaux documents ou rapports pouvant inclure des graphiques, des tableaux et d'autres éléments de visualisation de données
-weight: 10
-kwords: Créer un document, Générer un rapport, Rapport Excel, Rapport dynamique
 ---
-Grâce au Cloud Aspose.Cells et au Cloud API, vous pouvez facilement créer de nouveaux classeurs Excel et générer des classeurs spécifiques à partir de fichiers modèles. De plus, il prend en charge la création de rapports complexes Excel grâce à la fonctionnalité SmartMarker, qui répond à divers besoins complexes de traitement de données et de génération de rapports.
+title: "Créer des fichiers Excel et générer des rapports Excel"
+second_title: "Document"
+type: docs
+url: /creating-files-and-reports/
+aliases: [/workbook/create/]
+linktitle: "Créer des fichiers Excel et des rapports"
+keywords: "Aspose.Cells Cloud, API Excel, créer un classeur, rapport Excel, SmartMarker, modèle, génération de rapports"
+description: "Découvrez comment créer des classeurs Excel vides, générer des fichiers à partir de modèles et concevoir des rapports pilotés par SmartMarker à l’aide de l’API Aspose.Cells Cloud, avec des exemples de code."
+weight: 10
+ArticleTitle: "Créer des fichiers Excel et générer des rapports Excel – API Aspose.Cells Cloud"
+---
 
-## Créez un fichier Excel et générez un rapport
+À l’aide de l’API Aspose.Cells Cloud, vous pouvez facilement créer de nouveaux classeurs Excel et générer des classeurs à partir de fichiers modèles. L’API prend également en charge la création de rapports Excel avancés via la fonctionnalité SmartMarker, capable de répondre à divers besoins en traitement et en génération de rapports.
 
-- [Comment créer un classeur vide.](/cells/fr/create-an-empty-excel-file/)
-- [Comment créer un classeur Excel avec un fichier modèle.](/cells/fr/create-an-excel-file-with-template-file/)
-- [Comment créer un rapport Excel avec un modèle de marqueur intelligent.](/cells/fr/build-report-with-smart-marker/)
-- [Comment assembler des données pour la création d'un rapport Excel.](/cells/fr/assembly-data-for-the-creation-of-an-excel-report/)
+**Prérequis** : Avant de commencer, assurez-vous de disposer d’une clé API Aspose Cloud valide et du SDK Aspose.Cells Cloud installé pour votre langage de développement.
+
+## Créer un fichier Excel et générer un rapport
+
+- [Comment créer un classeur vide.](/cells/create-an-empty-excel-file/)
+- [Comment créer un classeur Excel à partir d’un fichier modèle.](/cells/create-an-excel-file-with-template-file/)
+- [Comment créer un rapport Excel à partir d’un modèle SmartMarker.](/cells/build-report-with-smart-marker/)
+- [Comment assembler les données nécessaires à la création d’un rapport Excel.](/cells/assembly-data-for-the-creation-of-an-excel-report/)
+---

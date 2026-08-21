@@ -1,56 +1,76 @@
-﻿---
-title: Çalışma sayfasını biçim türlerine dönüştürün
-second_title: Documen
-linktitle: Çalışma sayfasını dönüştür
-type: docs
-url: /tr/worksheets/conversion/
-aliases: [/convert-worksheet-to-image/,/worksheets/to-image/]
-keywords: Convert worksheet to image format from an Excel workbook
-description: Aspose.Cells Cloud REST API, Excel çalışma kitabından resim formatına dönüştürme çalışma sayfasını destekler. SDK, Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift gibi çeşitli geliştirme dillerini destekler.
-weight: 130
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Çalışma sayfasını çeşitli biçimlere dönüştürme
 ---
-[GET /hücreler/{ad}/çalışmasayfaları/{sayfaAdı}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) API, çalışma sayfalarını şu tür biçimlere dönüştürmenize olanak tanır:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/) Yalnızca dışa aktarılabilen biçimler:[PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [FARKLILIK](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [SAYILAR](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+title: "Çalışma Sayfasını PDF, PNG, CSV ve Daha Fazlasına Dönüştür – Aspose.Cells Cloud API"
+second_title: "Belge"
+linktitle: "Çalışma sayfasını dönüştür"
+type: docs
+url: /worksheets/conversion/
+aliases:
+  - /convert-worksheet-to-image/
+  - /worksheets/to-image/
+keywords: "Aspose.Cells, çalışma sayfası dönüştürme, REST API, cURL, SDK, PDF, PNG, CSV"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabındaki tek bir çalışma sayfasını PDF, PNG, CSV ve 15'ten fazla diğer forma dönüştürme yöntemini öğrenin. cURL örneği, SDK snippet'leri ve tam parametre referansını içerir."
+weight: 130
+ArticleTitle: "Çalışma Sayfasını PDF, PNG, CSV ve Daha Fazlasına Dönüştür – Aspose.Cells Cloud API"
+---
 
-## DİNLENME API
+**Çalışma Sayfası Dönüştürme API'si** – `GET /cells/{name}/worksheets/{sheetName}` uç noktası, bir Excel çalışma kitabının içindeki tek bir çalışma sayfasını (sheet) başka bir dosya türüne dönüştürür.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+> **Önkoşul:** Bu uç noktayı çağırmadan önce geçerli bir JWT belirteci sahip olmanız ve çalışma kitabının desteklenen Aspose Cloud depolama konumunda saklanmış olması gerekir.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Desteklenen **içe aktarılabilir** formatlar (çalışma sayfası okunabilir):
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+- XLS, XLSX, XLSB, CSV, TSV, XLSM, ODS, TXT
 
-{{< tab tabNum="1" >}}
+Desteklenen **yalnızca dışa aktarılabilir** formatlar (çalışma sayfası olarak kaydedilebilir):
 
-```java
+- PDF, OTS, XPS, DIF, PNG, JPEG, BMP, SVG, TIFF, EMF, NUMBERS, FODS
 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+## REST API
 
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat), herkese açık erişilebilir arayüzü açıklar.
+
+### **İstek Parametreleri**
+
+| Parametre                | Tür     | Gerekli | Varsayılan | İzin Verilen Değerler                                                  | Açıklama                                         |
+| ------------------------ | ------- | ------- | ---------- | --------------------------------------------------------------------- | ------------------------------------------------ |
+| **format**               | string  | Evet    | –          | pdf, png, jpeg, bmp, svg, tiff, emf, csv, txt, … (desteklenen listeye bakın) | Hedef çıktı formatı.                             |
+| **verticalResolution**   | integer | Hayır   | 96         | 72‑600                                                                | Görüntü çıktısı için dikey DPI değeri.           |
+| **horizontalResolution** | integer | Hayır   | 96         | 72‑600                                                                | Görüntü çıktısı için yatay DPI değeri.           |
+| **password**             | string  | Hayır   | –          | –                                                                     | Korumalı bir çalışma kitabını açmak için şifre.  |
+| **folder**               | string  | Hayır   | –          | –                                                                     | Kaynak çalışma kitabının bulunduğu bulut klasörü.|
+| **storage**              | string  | Hayır   | –          | –                                                                     | Depolama adı (örneğin, "Default").              |
+
+### Yanıt
+
+| Durum Kodu | Açıklama                                                         | Dönüş Türü                 |
+| ---------- | ---------------------------------------------------------------- | -------------------------- |
+| **200**    | Dönüştürme başarılı; dönüştürülen dosyanın ikili akışı döndürülür. | `application/octet-stream` |
+| **400**    | Geçersiz istek – eksik veya geçersiz parametreler.              | JSON hata nesnesi          |
+| **401**    | Yetkisiz erişim – geçersiz veya eksik JWT belirteci.            | JSON hata nesnesi          |
+| **404**    | Bulunamadı – çalışma kitabını veya çalışma sayfasını bulunamadı. | JSON hata nesnesi          |
+| **500**    | Sunucu iç hatası – beklenmeyen hata.                             | JSON hata nesnesi          |
+
+#### Örnek İstek (cURL)
+
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-
-Converted Image 
+#### Örnek Yanıt
 
 ```
-
-{{< /tab >}}
-
-{{< /tabs >}}
+Dönüştürülmüş Görüntü (ikili akış)
+```
 
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak geliştirmeyi en hızlı yoldur. SDK, düşük seviye ayrıntıları yöneterek size proje odaklanma imkanı verir. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanarak Aspose.Cells web hizmetlerini çağırma yöntemini göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -103,3 +123,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

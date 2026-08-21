@@ -1,144 +1,305 @@
-﻿---
-title: إضافة الشرط
-type: docs
-url: /ar/conditional-formattings/add-a-condition/
-aliases: [/add-a-condition-for-format-condition/]
-keywords: REST API, spreadsheets, excel, add conditiona
-description: "Cells.Cloud API لـ Excel التشغيل: إضافة شرط"
-weight: 40
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة شرط
 ---
-يشير هذا REST API إلى إضافة شرط لشرط التنسيق.
- 
-## RSET API
- 
+title: إضافة شرط إلى التنسيق الشرطي
+description: تعلّم كيفية إضافة شرط إلى تنسيق شرطي في ورقة عمل باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمّن عنوان URL للنقطة الطرفية، المُعلمات، المصادقة، مثال cURL، مقاطع كود SDK، ومعالجة الأخطاء.
+keywords: "Aspose.Cells Cloud، التنسيق الشرطي، إضافة شرط، واجهة REST API، Excel، ورقة العمل"
+type: docs
+url: /conditional-formattings/add-a-condition/
+aliases:
+  - /add-a-condition-for-format-condition/
+weight: 40
+---
+
+# إضافة شرط إلى التنسيق الشرطي
+
+أضف شرطًا إلى قاعدة تنسيق شرطي موجودة في ورقة عمل باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0).
+
+---
+
+## المتطلبات الأساسية
+
+| المتطلب | التفاصيل |
+|---------|----------|
+| **المصادقة** | رمز وصول JWT صالح (Bearer) تم الحصول عليه عبر تدفق OAuth 2.0. |
+| **إصدار الواجهة** | الإصدار 3.0 – يحتوي عنوان URL للنقطة الطرفية على `/v3.0/`. |
+| **المخزن | يجب أن يكون المصنف موجودًا في موقع مخزن يمكن الوصول إليه من قِبل Aspose.Cells Cloud (الافتراضي هو `Default`). |
+| **الأذونات** | إذن للقراءة والكتابة على المصنف المستهدف. |
+| **التنسيقات المدعومة** | أي تنسيق مصنف مدعوم من قِبل Aspose.Cells (مثل `.xlsx`، `.xls`، `.xlsm`). |
+
+---
+
+## النقطة الطرفية
+
+**طريقة HTTP:** `PUT`  
+**عنوان URL:**  
+
+```
+https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition
+```
+
+| المُعلمة | الموقع | النوع | الإلزام | الوصف |
+|---------|--------|-------|---------|--------|
+| `name` | المسار | نص | **نعم** | اسم ملف المصنف (مع الامتداد). |
+| `sheetName` | المسار | نص | **نعم** | اسم ورقة العمل التي تحتوي على التنسيق الشرطي. |
+| `index` | المسار | عدد صحيح | **نعم** | المؤشر البالغ الصفر (zero-based) لمجموعة التنسيق الشرطي المراد تعديلها. |
+| `type` | الاستعلام | نص | **نعم** | نوع الشرط. القيم المسموح بها: `CellValue`، `Expression`، `ColorScale`، `DataBar`، `IconSet`، `Top10`، `UniqueValues`، `DuplicateValues`، `ContainsText`، `NotContainsText`، `BeginsWith`، `EndsWith`، `ContainsBlanks`، `NotContainsBlanks`، `ContainsErrors`، `NotContainsErrors`، `TimePeriod`، `AboveAverage`. |
+| `operatorType` | الاستعلام | نص | **نعم** | العامل التشغيلي للشرط. القيم المسموح بها: `Between`، `Equal`، `GreaterThan`، `GreaterOrEqual`، `LessThan`، `None`، `NotBetween`، `NotEqual`. |
+| `formula1` | الاستعلام | نص | **نعم** | الصيغة أو القيمة الأولى المرتبطة بالشرط. |
+| `formula2` | الاستعلام | نص | لا | الصيغة أو القيمة الثانية (مطلوبة فقط للعوامل التي تتطلب قيمتين، مثل `Between`). |
+| `folder` | الاستعلام | نص | لا | المجلد الموجود فيه المصنف داخل المخزن. |
+| `storageName` | الاستعلام | نص | لا | اسم خدمة التخزين. |
+
+> **ملاحظة:** جميع المُعلمات المسار (`name`، `sheetName`، `index`) ومُعلمات الاستعلام `type`، `operatorType`، و`formula1` إلزامية. أما `formula2` و`folder` و`storageName` فهي اختيارية.
+
+---
+
+## مثال على الطلب (cURL)
+
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition
- 
-```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| فِهرِس| عدد صحيح| طريق||
-| يكتب| خيط| استفسار||
-| نوع المشغل| خيط| استفسار||
-| الصيغة 1| خيط| استفسار||
-| الصيغة 2| خيط| استفسار||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
- 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionCondition) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0/condition?type=CellValue&operatorType=Equal&formula1=v1&formula2=v2" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/conditionalFormattings/0/condition?type=CellValue&operatorType=Equal&formula1=v1&formula2=v2" \
+ -X PUT \
+ -H "Content-Type: application/json" \
+ -H "Accept: application/json" \
+ -H "Authorization: Bearer <jwt_token>"
 ```
 
-{{< /tab >}}
+*استبدل `<jwt_token>` برمز وصول صالح، وضبط القيم `name` و`sheetName` و`index` وقيم معلمات الاستعلام حسب الحاجة.*
 
-{{< tab tabNum="12" >}}
+---
 
-```java
+## الاستجابة الناجحة
 
+```json
 {
   "Code": "200",
   "Status": "OK"
 }
-
 ```
 
-{{< /tab >}}
+تشير الاستجابة إلى أن الشرط تمت إضافته بنجاح. تُعيد العملية كائنًا عامًّا من نوع `CellsCloudResponse` يحتوي على رمز حالة HTTP ورسالة حالة موجزة.
 
-{{< /tabs >}}
- 
-## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+---
 
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
+## استجابات الأخطاء
 
-{{< tab tabNum="1" >}}
+| رمز HTTP | السبب | مثال جسم الاستجابة |
+|----------|--------|-------------------|
+| **400** | طلب سيء – معلمات مفقودة أو غير صالحة. | `{ "Code":"400", "Message":"Invalid parameter value." }` |
+| **401** | غير مصرّح به – رمز JWT مفقود أو غير صالح. | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
+| **404** | غير موجود – المصنف أو ورقة العمل أو المؤشر الخاص بالتنسيق الشرطي غير موجود. | `{ "Code":"404", "Message":"File not found." }` |
+| **500** | خطأ داخلي في الخادم – فشل غير متوقع في الخادم. | `{ "Code":"500", "Message":"An unexpected error occurred." }` |
 
+---
 
+## ملاحظات ومتاهات شائعة
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-AddConditionforFormatCondition-1.cs" >}}
+* **ترميز المُعلمات** – قم بترميز الأحرف الخاصة في `formula1`/`formula2` داخل عنوان URL (مثل تحويل المسافات إلى `%20`).  
+* **توافق العوامل** – بعض العوامل (مثل `Between`) تتطلب كلًا من `formula1` و`formula2`. تجنّب استخدام `formula2` للعوامل التي تتطلب قيمة واحدة فقط.  
+* **مؤشر التنسيق الشرطي** – المؤشر يبدأ من الصفر (zero-based). استخدم النقطة الطرفية **Get Conditional Formattings** لاسترجاع المؤشر الصحيح إذا لم تكن متأكدًا.  
+* **مجلد التخزين** – إذا كان المصنف موجودًا في مجلد غير افتراضي، فزوّد المُعلمة `folder` في الاستعلام؛ وإلا ستفترض الواجهة أن المجلد الجذري هو المكان.  
+* **تقييد معدل الطلبات** – تطبّق Aspose.Cells Cloud حدودًا للطلبات لكل حساب. إذا حصلت على استجابة برمز 429، فقم بتأخير محاولتك اللاحقة لفترة قصيرة.  
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="2" >}}
+## أمثلة على SDK
 
+فيما يلي مقاطع جاهزة للتشغيل لأشهر SDKs. استبدل القيم العنصرية (`YOUR_FILE`، `YOUR_SHEET`، إلخ) ببياناتك الخاصة.
 
+### C# (.NET)
 
-{{< /tab >}}
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+using System;
 
-{{< tab tabNum="3" >}}
+class Program
+{
+    static void Main()
+    {
+        var apiInstance = new ConditionalFormattingsApi();
+        string name = "Book1.xlsx";
+        string sheetName = "Sheet1";
+        int index = 0;
+        string type = "CellValue";
+        string operatorType = "Equal";
+        string formula1 = "v1";
+        string formula2 = "v2";
+        string folder = null;          // اختياري
+        string storageName = null;     // اختياري
 
+        try
+        {
+            var response = apiInstance.PutWorksheetFormatConditionCondition(
+                name, sheetName, index, type, operatorType, formula1, formula2, folder, storageName);
+            Console.WriteLine($"Status: {response.Status}");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("Exception when calling ConditionalFormattingsApi.PutWorksheetFormatConditionCondition: " + e.Message);
+        }
+    }
+}
+```
 
+### Java
 
-{{< /tab >}}
+```java
+import com.aspose.cloud.cells.api.ConditionalFormattingsApi;
+import com.aspose.cloud.cells.model.CellsCloudResponse;
 
-{{< tab tabNum="4" >}}
+public class AddConditionExample {
+    public static void main(String[] args) {
+        ConditionalFormattingsApi api = new ConditionalFormattingsApi();
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Examples-Ruby-ConditionalFormatting-put_worksheet_format_condition_condition-.rb" >}}
+        String name = "Book1.xlsx";
+        String sheetName = "Sheet1";
+        int index = 0;
+        String type = "CellValue";
+        String operatorType = "Equal";
+        String formula1 = "v1";
+        String formula2 = "v2";
 
-{{< /tab >}}
+        try {
+            CellsCloudResponse resp = api.putWorksheetFormatConditionCondition(
+                    name, sheetName, index, type, operatorType, formula1, formula2, null, null);
+            System.out.println("Response: " + resp.getStatus());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
 
-{{< tab tabNum="5" >}}
+### Node.js
 
+```javascript
+const { ConditionalFormattingsApi, ApiClient } = require('asposecellscloud');
+const api = new ConditionalFormattingsApi();
 
+const name = "Book1.xlsx";
+const sheetName = "Sheet1";
+const index = 0;
+const type = "CellValue";
+const operatorType = "Equal";
+const formula1 = "v1";
+const formula2 = "v2";
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-AddConditionforFormatCondition-1.js" >}}
+api.putWorksheetFormatConditionCondition(
+    name,
+    sheetName,
+    index,
+    type,
+    operatorType,
+    formula1,
+    formula2,
+    null,
+    null
+).then((response) => {
+    console.log('Status:', response.body.Status);
+}).catch((err) => {
+    console.error(err);
+});
+```
 
-{{< /tab >}}
+### Ruby
 
-{{< tab tabNum="6" >}}
+```ruby
+require 'aspose_cells_cloud'
 
+api_instance = AsposeCellsCloud::ConditionalFormattingsApi.new
+name = 'Book1.xlsx'
+sheet_name = 'Sheet1'
+index = 0
+type = 'CellValue'
+operator_type = 'Equal'
+formula1 = 'v1'
+formula2 = 'v2'
 
+begin
+  result = api_instance.put_worksheet_format_condition_condition(
+    name, sheet_name, index, type, operator_type, formula1, formula2, nil, nil
+  )
+  puts "Status: #{result.status}"
+rescue AsposeCellsCloud::ApiError => e
+  puts "Exception when calling ConditionalFormattingsApi->put_worksheet_format_condition_condition: #{e}"
+end
+```
 
-{{< /tab >}}
+### Perl
 
-{{< tab tabNum="7" >}}
+```perl
+use AsposeCellsCloud::ConditionalFormattingsApi;
 
+my $api_instance = AsposeCellsCloud::ConditionalFormattingsApi->new();
 
+my $name         = 'Book1.xlsx';
+my $sheet_name   = 'Sheet1';
+my $index        = 0;
+my $type         = 'CellValue';
+my $operatorType = 'Equal';
+my $formula1     = 'v1';
+my $formula2     = 'v2';
 
-{{< /tab >}}
+eval {
+    my $result = $api_instance->put_worksheet_format_condition_condition(
+        name => $name,
+        sheet_name => $sheet_name,
+        index => $index,
+        type => $type,
+        operator_type => $operatorType,
+        formula1 => $formula1,
+        formula2 => $formula2,
+        folder => undef,
+        storage_name => undef
+    );
+    print "Status: " . $result->{status} . "\n";
+};
+if ($@) {
+    warn "Exception when calling ConditionalFormattingsApi->put_worksheet_format_condition_condition: $@\n";
+}
+```
 
-{{< tab tabNum="8" >}}
+### Go
 
+```go
+package main
 
+import (
+    "fmt"
+    "github.com/asposecellscloud/aspose-cells-cloud-go/v3/sdk"
+)
 
-{{< /tab >}}
+func main() {
+    cfg := sdk.NewConfiguration()
+    cfg.AccessToken = "YOUR_JWT_TOKEN"
+    api := sdk.NewConditionalFormattingsApi(cfg)
 
-{{< tab tabNum="9" >}}
+    name := "Book1.xlsx"
+    sheetName := "Sheet1"
+    index := int32(0)
+    condType := "CellValue"
+    operatorType := "Equal"
+    formula1 := "v1"
+    formula2 := "v2"
 
+    resp, _, err := api.PutWorksheetFormatConditionCondition(
+        name, sheetName, index, condType, operatorType, formula1, formula2, nil, nil,
+    )
+    if err != nil {
+        fmt.Printf("Error: %v\n", err)
+        return
+    }
+    fmt.Printf("Status: %s\n", resp.Status)
+}
+```
 
+> **SDKs المفقودة** – إذا كانت لغة تحتاجها غير مذكورة هنا، فراجع **مرجع API العام** وقم بإنشاء طلب HTTP يدويًا.
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-AddConditionforFormatCondition-1.pl" >}}
+---
 
-{{< /tab >}}
+## انظر أيضًا
 
-{{< tab tabNum="10" >}}
+- **[Get Conditional Formattings](https://docs.aspose.cloud/cells/conditional-formattings/get-conditional-formattings/)** – استرجاع قائمة قواعد التنسيق الشرطي لورقة العمل.  
+- **[Delete Conditional Formatting](https://docs.aspose.cloud/cells/conditional-formattings/delete-a-conditional-formatting/)** – حذف قاعدة تنسيق شرطي موجودة.  
+- **[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionCondition)** – التعريف الكامل قابل للقراءة بالآلة لهذه العملية.  
 
-{{< gist "aspose-cells-cloud-gists" "3f7bbe16993e8e2216dad2458f768b70" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+---

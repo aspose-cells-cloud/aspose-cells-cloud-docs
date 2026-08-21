@@ -1,80 +1,124 @@
-﻿---
-title: Excel Ppt'ye
-second_title: Documen
-linktitle: Excel Ppt'ye
-type: docs
-url: /tr/convert-excel-file-to-pptx-file/
-keywords: Convert excel files to pptx files
-description: Aspose.Cells Cloud REST API, Excel dosyalarının pptx dosyalarına dönüştürülmesini destekler. SDK, Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift gibi çeşitli geliştirme dillerini destekler.
-weight: 90
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel'den Pptx'e
 ---
-Bu REST API, `convert`'e bir elektronik tablo dosyasının pptx formatlı bir dosyaya dönüştürüldüğünü gösterir.
+title: "Aspose.Cells Cloud API v3.0 ile Excel Dosyasını PPTX'e Dönüştürme"
+second_title: "Belge"
+linktitle: "Excel'den PPTX'e"
+type: docs
+url: /convert-excel-file-to-pptx-file/
+keywords: "Aspose, Cells, Excel, PPTX, dönüştürme, REST API, bulut"
+description: "Aspose.Cells Cloud REST API v3.0 ile Excel çalışma kitaplarını PPTX sunumlara nasıl dönüştüreceğinizi öğrenin. cURL isteği, SDK kod örnekleri, kimlik doğrulama ve hata yönetimi içerir."
+weight: 90
+ArticleTitle: "Aspose.Cells Cloud API v3.0 ile Excel Dosyasını PPTX'e Dönüştürme"
+---
 
-**Sorgu Parametresi**
+Bu REST API, bir elektronik tablo dosyasını PPTX formatına dönüştürür.
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|şifre|sicim| Excel dosyasını açmak için gereken şifre.|
-|depolamaAdı|sicim| Dosyanın bulunduğu depolama adı.|
-|checkExcelRestriction|bool| Kullanıcı hücrelerle ilgili nesneleri değiştirdiğinde Excel dosyasının kısıtlamasını kontrol edin.|
+## PostConvertWorkbookToPptx API
 
-**İstek Gövde Parametresi**
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/pptx
+```
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|veri dosyası| veri dosyası|Veri dosyası çok parçalı içeriğin ilk bölümüne kaydedilir.|
+### **Güvenlik ve Kimlik Doğrulama**
 
-**Cevap**
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-[Dosya Bilgileri](/cells/tr/file-info/)
+### Sorgu Parametreleri
 
-## REST API Spesifikasyonu
+| Parametre Adı         | Tür    | Açıklama                                                                                   |
+| --------------------- | ------ | ------------------------------------------------------------------------------------------ |
+| `password`            | string | Excel çalışma kitabını açmak için gereken parola.                                           |
+| `storageName`         | string | Kaynak dosyanın bulunduğu depo adı.                                                        |
+| `checkExcelRestriction` | bool | Hücreyle ilgili nesneleri değiştirirken Excel dosyası kısıtlamalarının uygulanıp uygulanmayacağını belirtir. |
 
-|**API**|**Tip**|**Tanım**|**Swagger Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/dönüştür/pptx|POSTALAMAK|Bir elektronik tabloyu pptx dosyasına dönüştürün.|[PostConvertWorkbookToPptx](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPptx)|
+### İstek Gövdesi Parametresi
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPptx) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+| Parametre Adı | Tür       | Açıklama                                                          |
+| ------------- | --------- | ----------------------------------------------------------------- |
+| `datafile`    | veri dosyası | Çok parçalı istek gövdesinin ilk bölümünde yer alan Excel dosyası. |
 
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+**Örnek çok parçalı istek gövdesi (basitleştirilmiş):**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+```
+--boundary
+Content-Disposition: form-data; name="File"; filename="input.xlsx"
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+
+<input.xlsx dosyasının ikili içeriği>
+--boundary
+Content-Disposition: form-data; name="password"
+
+MyPwd
+--boundary--
+```
+
+### Yanıt
+
+API, oluşturulan pptx dosyasını içeren bir **FileInfo** nesnesi döndürür.
+
+| Alan            | Tür    | Açıklama                                        |
+| --------------- | ------ | ----------------------------------------------- |
+| **Filename**    | string | PPTX dosyasının adı (örn. `example.pptx`).      |
+| **FileSize**    | int    | Dosyanın bayt cinsinden boyutu.                 |
+| **FileContent** | string | PPTX dosyasının Base64 ile kodlanmış içeriği.   |
+
+[FileInfo](/cells/file-info/)
+
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                         |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | Tamam                       | Filtre başarıyla uygulandı; yanıt işlem detaylarını içerir. |
+| 400 | Geçersiz İstek              | Eksik veya geçersiz parametreler (örn., desteklenmeyen dosya türü). |
+| 401 | Yetkisiz                    | Geçersiz veya eksik JWT belirteci.              |
+| 413 | İçerik Çok Büyük            | Yüklenecek dosya boyut sınırını aşıyor.         |
+| 500 | İç Sunucu Hatası            | Beklenmeyen sunucu hatası.                      |
+
+*Notlar:* Uç nokta, yaygın Excel formatlarını (`.xlsx`, `.xls`, `.xlsm`) destekler. Maksimum dosya boyutu 50 MB ile sınırlıdır. Makrolar veya korumalı sayfalar içeren çalışma kitaplarında uygun parametreler sağlanmazsa dönüştürme kısıtlanabilir.
+
+## SDK’lar ile PostConvertWorkbookToPptx API’yi Nasıl Kullanılır
+
+### PostConvertWorkbookToPptx API Spesifikasyonu
+
+<a href="https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPptx" rel="noopener noreferrer">OpenAPI Spesifikasyonu</a>, herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+**cURL** komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’yi nasıl çağıracağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pptx" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pptx?storageName=MyStorage" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -F "File=@/path/to/input.xlsx" \
+     -F "password=MyPwd"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
-  "Filename": "xxxxxx.pptx",
-  "FileSize": xxxx,
+  "Filename": "example.pptx",
+  "FileSize": 123456,
   "FileContent": "File Content: base64_encoded_string"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. SDK, düşük seviye detayları soyutlayarak projenize odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud" rel="noopener noreferrer") bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanılarak Aspose.Cells web servislerinin nasıl çağrılacağını göstermektedir:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -109,7 +153,7 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostConvertWorkbookToPptx.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1c" "Example_PostConvertWorkbookToPptx.py" >}}
 
 {{< /tab >}}
 
@@ -127,14 +171,9 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< /tabs >}}
 
-## Diğer API'ler bu işlevi uygular
+## Bu İşlevi Gerçekleyen Diğer API’ler
 
-[POST /hücreler/{ad}/kaydet](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API, MS Excel dosyasını ek ayarlarla Docx dosyası olarak kaydetmenizi ve sonucu depolama alanına kaydetmenizi sağlar.
-
-Bu REST API `convert` excel dosyasını Docx'e dönüştürün.
-
-[PUT /hücreler/dönüştür](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API, MS Excel dosyasını ek ayarlarla Docx dosyasına dönüştürmenizi ve sonucu yanıta kaydetmenizi sağlar.
-
-Bu REST API `export` excel dosyasını Docx'e dönüştürün.
-
-[GET /hücreler/{isim}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API, MS Excel dosyasını ek ayarlarla Docx dosyasına dönüştürmenizi ve sonucu yanıta kaydetmenizi sağlar.
+- **[POST /cells/convert/pdf](https://apireference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPdf)** – Excel dosyasını PDF’e dönüştürür.
+- **[POST /cells/convert/png](https://apireference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPng)** – Excel dosyasını PNG görüntülere dönüştürür.
+- **[POST /cells/convert/svg](https://apireference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSvg)** – Excel dosyasını SVG formatına dönüştürür.
+---

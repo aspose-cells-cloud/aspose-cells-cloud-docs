@@ -1,73 +1,78 @@
-﻿---
-title: حذف التحقق من صحة ورقة العمل على ورقة العمل Excel
-second_title: Documen
-linktitle: حذف
-type: docs
-url: /ar/validations/delete/
-keywords: Delete a worksheet validation on an Excel worksheet
-description: يدعم Cloud REST حذف بيانات التحقق من صحة ورقة العمل. تدعم حزمة تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 10
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حذف التحقق من صحة ورقة العمل على ورقة عمل Excel
 ---
-يشير هذا REST API إلى حذف التحقق من صحة ورقة العمل بواسطة الفهرس على ورقة العمل Excel.
+title: "حذف التحقق من صحة ورقة العمل – Aspose.Cells Cloud"
+second_title: "مستند"
+linktitle: "حذف"
+type: docs
+url: /validations/delete/
+keywords: "حذف، التحقق من صحة ورقة العمل، Aspose.Cells Cloud، واجهة برمجة تطبيقات Excel"
+description: "تعرّف على كيفية حذف التحقق من صحة ورقة عمل من ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. يشمل ذلك نقطة النهاية، المُعلَمات، تفاصيل المصادقة، مثال باستخدام cURL، معالجة الأخطاء، ومقتطفات كود SDK."
+weight: 10
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية لـ REST بحذف التحقق من صحة ورقة العمل بناءً على فهرسه الصفر-based داخل ورقة عمل Excel.
+
+## واجهة برمجة تطبيقات REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
-معلمات الطلب هي:
+### **مُعلَمات الطلب**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مؤشر التحقق| عدد صحيح| طريق| مؤشر التحقق.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المُعلَمة   | النوع    | الموقع | الوصف                                                |
+|------------------|----------|--------|------------------------------------------------------|
+| name             | string   | path   | اسم ملف Excel.                                       |
+| sheetName        | string   | path   | اسم ورقة العمل.                                      |
+| validationIndex  | integer  | path   | الفهرس الصفر-based للتحقق من الصحة المراد حذفه.       |
+| folder           | string   | query  | المجلد الذي يحتوي على المستند.                       |
+| storageName      | string   | query  | اسم خدمة التخزين.                                    |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) واجهة برمجة تطبيقات عامة قابلة للوصول وتتيح لك إجراء تفاعلات REST مباشرةً من متصفح ويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL لاستدعاء خدمة Aspose.Cells الويبية. يُظهر المثال التالي كيفية حذف تحقق من الصحة باستخدام cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+**رموز حالات HTTP**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| الكود | المعنى                      | الوصف                                                       |
+|-------|-----------------------------|--------------------------------------------------------------|
+| 200   | OK                          | تطبيق التصفية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.    |
+| 400   | Bad Request                 | مُعلَمات ناقصة أو غير صالحة (مثل نوع ملف غير مدعوم).        |
+| 401   | Unauthorized                | رمز JWT غير صالح أو مفقود.                                   |
+| 413   | Payload Too Large           | حجم الملف المرفوع يتجاوز الحد المسموح.                        |
+| 500   | Internal Server Error       | خطأ غير متوقع في الخادم.                                      |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+## عائلة SDK للسحابة
+
+استخدام SDK هو أسرع طريقة لدمج هذه العملية في تطبيقك. تُدار تفاصيل المستوى المنخفض بواسطة SDKs، مما يتيح لك التركيز على المنطق التجاري. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية حذف التحقق من صحة ورقة العمل باستخدام SDKs متنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

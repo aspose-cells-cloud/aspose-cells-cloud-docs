@@ -1,64 +1,91 @@
-﻿---
-title: Importa array doppio bidimensionale nel foglio di lavoro Excel
-second_title: Documen
-linktitle: Importa arra doppia a 2 dimensioni
-type: docs
-url: /it/import-a-2D-double-array-into-excel-worksheet/
-aliases: [/import-2dimension-double-array-into-excel-worksheet/,/import-2dimension-double-array-into-worksheet/, /import-data/2dimension-double-array/, /import/2dimension-double-array/]
-keywords: Import 2 dimension double array data into Excel files
-description: Aspose.Cells Cloud REST API supporta l'importazione di dati di array bidimensionali doppi in file Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Importa array doppio a 2 dimensioni nel foglio di lavoro Excel
 ---
-Questo foglio di lavoro REST API `import 2 dimension double array data` in Excel.
+title: "Importa un array bidimensionale di doppi in un foglio di lavoro Excel"
+second_title: "Documento"
+linktype: "Importa un array bidimensionale di doppi"
+type: docs
+url: /import-a-2D-double-array-into-excel-worksheet/
+aliases:
+  [
+    "/import-2dimension-double-array-into-excel-worksheet/",
+    "/import-2dimension-double-array-into-worksheet/",
+    "/import-data/2dimension-double-array/",
+    "/import/2dimension-double-array/",
+  ]
+keywords: "Importa array bidimensionale di doppi, Excel, Aspose Cells Cloud, API REST, Foglio di calcolo, Importazione dati"
+description: "Scopri come importare un array bidimensionale di doppi in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud. Include il formato della richiesta, i parametri e esempi di codice SDK."
+weight: 20
+---
 
-La richiesta è una richiesta HTTP con contenuto multiparte (vedere[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)O[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La prima parte del contenuto multiparte contiene i dati Import2DimensionDoubleArrayOption e la seconda contiene un file di dati.
+Questa API REST **importa un array bidimensionale di doppi** in un foglio di lavoro Excel.
 
-## RSET API
+La richiesta è un HTTP `POST` con contenuto multipart (vedi [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) o [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La prima parte del corpo multipart contiene i dati **Import2DimensionDoubleArrayOption**, mentre la seconda parte contiene il file dei dati di origine.
+
+## API REST
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-I parametri importanti sono descritti nella seguente tabella:
+I parametri importanti sono descritti nella tabella seguente:
 
-**Import2DimensionDoubleArrayOption**
+### Import2DimensionDoubleArrayOption
 
-|Nome del parametro|Tipo|Descrizione|
-|:- |:- |:- |
-| Prima fila| interno||
-| Prima colonna| interno||
-| Dati|Raddoppiare[,]||
-|Foglio di lavoro sulla destinazione| corda| nome del foglio di lavoro di destinazione.|
-| ÈInserisci| corda| vero/falso.|
-| ImportDataType| corda|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Fonte| FileSource| Indica la posizione del file di dati quando il parametro BatchData è null.|
+| Nome parametro         | Tipo         | Descrizione                                                                                                             |
+| ---------------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| **FirstRow**           | `int`        | Indice di riga (1-based) in cui inizia l'importazione.                                                                  |
+| **FirstColumn**        | `int`        | Indice di colonna (1-based) in cui inizia l'importazione.                                                               |
+| **Data**               | `Double[,]`  | Array bidimensionale di valori doppi da importare.                                                                      |
+| **DestinationWorksheet**| `string`    | Nome del foglio di lavoro che riceverà i dati.                                                                          |
+| **IsInsert**           | `string`     | `"true"` per inserire righe, `"false"` per sovrascrivere le celle esistenti.                                            |
+| **ImportDataType**     | `string`     | Tipo di dati in fase di importazione (es. `IntArray`, `DoubleArray`, `TwoDimensionDoubleArray`, `BatchData`, `csvData`, ecc.). |
+| **Source**             | `FileSource` | Indica la posizione del file dati quando il parametro `BatchData` è null.                                               |
 
 **Esempio**
 
 ```json
-
 {
-    "Data": [
-        [1.0, 2.9, 3.1],
-        [2.0, 2.1, 3.1]
-    ],
-    "DestinationWorksheet": "Sheet2",
-    "FirstRow": 4,
-    "FirstColumn": 1,
-    "importDataType": "TwoDimensionDoubleArray"
+  "Data": [
+    [1.0, 2.9, 3.1],
+    [2.0, 2.1, 3.1]
+  ],
+  "DestinationWorksheet": "Sheet2",
+  "FirstRow": 4,
+  "FirstColumn": 1,
+  "importDataType": "TwoDimensionDoubleArray"
 }
-
 ```
 
-## Famiglia Cloud SDK
+### Risposta
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+**Codici di stato HTTP**
+
+| Codice | Significato                 | Descrizione                                                                 |
+|--------|-----------------------------|-----------------------------------------------------------------------------|
+| 200    | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida        | Parametri mancanti o non validi (es. tipo di file non supportato).         |
+| 401    | Non autorizzato             | Token JWT non valido o mancante.                                            |
+| 413    | Payload troppo grande       | Il file caricato supera il limite di dimensione.                           |
+| 500    | Errore interno del server   | Errore imprevisto sul server.                                               |
+
+## Come utilizzare l'API PostImportData con gli SDK
+
+### Specifica dell'API PostImportData
+
+La [Specifiche OpenAPI](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData) definiscono un'interfaccia di programmazione pubblicamente accessibile che consente di effettuare interazioni REST direttamente da un browser web.
+
+### Utilizzo degli SDK di Aspose.Cells Cloud
+
+L'utilizzo di un SDK è il modo più rapido per integrare questa funzionalità. Gli SDK gestiscono i dettagli di basso livello, permettendoti di concentrarti sulla logica di business. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

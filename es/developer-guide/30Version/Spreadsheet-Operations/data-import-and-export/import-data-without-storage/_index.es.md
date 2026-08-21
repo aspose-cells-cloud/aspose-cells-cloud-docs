@@ -1,88 +1,107 @@
-﻿---
-title: Importar datos sin usar almacenamiento
-second_title: Documen
-linktitle: Importar datos sin almacenamiento
-type: docs
-url: /es/import/without-using-storage/ 
-aliases: [/import-data-in-excel-worksheet-without-using-storage/]
-keywords: REST API,  spreadsheets, excel, Import
-description: Cells.Cloud API para la importación de archivos Excel
-weight: 10
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Importar datos sin usar almacenamiento
 ---
-La importación de datos de Excel es un proceso complejo. Muchos factores contribuyen a la complejidad y, por lo tanto, deben tenerse en cuenta durante el proceso de exportación. La capacidad de importar diversos formatos y tipos de datos al archivo con una calidad profesional es una característica destacada de Aspose.Cells Cloud.
+title: "Importar datos sin usar almacenamiento – Aspose.Cells Cloud API"
+second_title: "Documento"
+linktitle: "Importar datos sin almacenamiento"
+type: docs
+url: /import/without-using-storage/
+aliases: [/import-data-in-excel-worksheet-without-using-storage/]
+keywords: "Aspose.Cells, Cloud API, importar datos sin almacenamiento, API de importación de Excel, REST import"
+description: "Aprenda cómo importar datos sin usar almacenamiento en un libro de Excel mediante la API de Aspose.Cells Cloud. Incluye formato de solicitud, parámetros, ejemplo de cURL, código del SDK y manejo de errores."
+weight: 10
+ArticleTitle: "Importar datos sin usar almacenamiento – Aspose.Cells Cloud API"
+---
 
-Este REST API indica `import data` en un archivo Excel.
+La importación de datos en Excel puede ser compleja, ya que muchos factores influyen en el resultado. Todos estos factores deben considerarse durante el proceso de **importación**. Aspose.Cells Cloud facilita la importación de diversos formatos y tipos de datos en un archivo de Excel con calidad profesional.
 
-## RSET API
+Esta API REST importa **datos** en un archivo de Excel.
 
-```bash
+## API PostImportData
 
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-
 ```
 
-**Los parámetros de la solicitud son:**
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| archivo| archivo| datos del formulario| Archivo para cargar|
-| Opción de importación| Opciones de importación| Cuerpo HTTP| MatrizInt/MatrizDoble/MatrizDeCadenas/DosDimensionesMatrizInt/DosDimensionesMatrizDoble/DosDimensionesMatrizDeCadenas/DatosPorLote/DatosCSV/Imagen|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
-**Los parámetros de opciones de importación de datos** se describen en[el enlace de referencia](/cells/es/import/#import-data-option-parameter).
+### **Parámetros de solicitud:**
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+| Nombre del parámetro | Tipo          | Ubicación  | Descripción                                                                                                                                     |
+| -------------------- | ------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| file                 | archivo       | formData   | El archivo de Excel que se va a cargar.                                                                                                         |
+| ImportOption         | ImportOption  | cuerpo JSON | Objeto JSON que define los datos a importar, su tipo (por ejemplo, `IntArray`, `DoubleArray`, `StringArray`) y su ubicación dentro de la hoja de cálculo. |
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+Los parámetros **ImportOption** se describen en la **referencia de la opción ImportData** [/cells/import/#import-data-option-parameter](/cells/import/#import-data-option-parameter).
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Requisitos previos:**  
+Se debe generar previamente un token JWT válido, y el tamaño del archivo no debe superar el límite del servicio (normalmente 100 MB). Los formatos de archivo admitidos incluyen XLS, XLSX, CSV y ODS. Asegúrese de tener instalado el SDK correspondiente si prefiere el acceso programático.
+
+### Respuesta
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                                                 |
+|--------|-----------------------------|-----------------------------------------------------------------------------|
+| 200    | OK                          | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros ausentes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT no válido o ausente.                                              |
+| 413    | Carga útil demasiado grande | El archivo cargado supera el límite de tamaño.                             |
+| 500    | Error interno del servidor  | Error inesperado en el servidor.                                            |
+
+**Notas:**  
+Al enviar la solicitud, el encabezado `Content-Type: multipart/form-data` se establece automáticamente mediante la bandera `-F`. Para cargas útiles grandes, considere comprimir los datos antes de la importación e implementar lógica de reintento para errores transitorios.
+
+## Cómo usar la API PostImportData con SDK
+
+### Especificación de la API PostImportData
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) define una interfaz de programación accesible públicamente y permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube mediante cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/import" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' \
--F 'ImportOption={\"Data\":[1,2,4],\"DestinationWorksheet\":\"Sheet1\",\"FirstRow\":1,\"FirstColumn\":2,\"IsVertical\":true,\"IsInsert\":true,\"importDataType\":\"IntArray\"}'
+curl -v "https://api.aspose.cloud/v3.0/cells/import" \
+  -X POST \
+  -H "Authorization: Bearer <jwt_token>" \
+  -F "file=@file.xlsx" \
+  -F "ImportOption={\"Data\":[1,2,4],\"DestinationWorksheet\":\"Sheet1\",\"FirstRow\":1,\"FirstColumn\":2,\"IsVertical\":true,\"IsInsert\":true,\"ImportDataType\":\"IntArray\"}"
 ```
+
+*La bandera `-F` establece automáticamente `Content-Type: multipart/form-data`.*  
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Status":"OK",
+  "Code":200
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+### Uso de los SDK de Aspose.Cells Cloud
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -135,3 +154,4 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

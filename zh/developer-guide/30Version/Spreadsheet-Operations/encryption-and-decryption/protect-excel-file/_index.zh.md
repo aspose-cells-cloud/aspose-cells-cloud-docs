@@ -1,82 +1,101 @@
-﻿---
-title: 保护 Excel Workboo
-second_title: Documen
-linktitle: 保护 Excel Fil
+---
+title: "使用 Aspose.Cells Cloud API 保护 Excel 工作簿"
+second_title: "文档"
+linktitle: "保护 Excel 文件"
 type: docs
 url: /zh/protect-excel-file/
-aliases: [/protect-excel-workbooks/,/workbook/protect/]
-keywords: Protect Excel files
-description: Aspose.Cells Cloud REST API 支持保护 Excel 文件。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+aliases: [/protect-excel-workbooks/, /workbook/protect/]
+keywords: "Aspose.Cells, Excel 保护, API, REST, SDK"
+description: "了解如何通过 Aspose.Cells Cloud REST API 保护 Excel 工作簿。包含身份验证步骤、查询与请求体参数、cURL 请求示例，以及 C#、Java、PHP、Ruby、Node.js、Python、Perl 和 Go 的 SDK 代码示例。"
 weight: 30
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、保护 Excel 工作簿
+ArticleTitle: "使用 Aspose.Cells Cloud API 保护 Excel 工作簿"
 ---
-此 REST API 保护 Excel `workbook`。
 
-**查询参数**
+此 REST API **保护** Excel 工作簿，使您能够使用 Aspose.Cells Cloud 安全地以密码和保护选项保护 Excel 工作簿。
 
-|参数名称|类型|描述|
-|:- |:- |:- |
-|文件夹|细绳|原始工作簿文件夹。|
-|存储名称|细绳|存储名称。|
+## PostProtectDocument API
 
-**请求主体参数**
-
-|参数名称|类型|描述|
-|:- |:- |:- |
-|保护|工作簿保护请求||
-
-**工作簿保护请求**
-
-|参数名称|类型|描述|
-|:- |:- |:- |
-|保护类型|细绳|全部/内容/无/对象/场景/结构/窗口|
-|密码|细绳||
-
-## 休息 API
-
-|**API**|**类型**|**描述**|**Swagger 链接**|
-|:- |:- |:- |:- |
-|/细胞/{名称}/保护|邮政|保护文档|[后保护文档](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument)|
-
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
-
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"ProtectionType\": \"all\", \"Password\": \"aspose\"}"
-
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/protection
 ```
 
-{{< /tab >}}
+### **安全与身份验证**
 
-{{< tab tabNum="2" >}}
+Aspose.Cells Cloud API 是安全的，需要基于 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT 令牌的身份验证</a>。
 
-```java
+### 查询参数
 
+| 参数名         | 类型   | 描述                                         |
+| -------------- | ------ | -------------------------------------------- |
+| folder         | string | 包含源工作簿的文件夹。（可选）               |
+| storageName    | string | 存储位置的名称。（可选；默认值为 "Default"） |
+
+### 请求体参数
+
+| 参数名       | 类型                      | 描述                                |
+| ------------ | ------------------------- | ----------------------------------- |
+| protection   | WorkbookProtectionRequest | 定义工作簿保护设置的对象。          |
+
+#### WorkbookProtectionRequest
+
+| 参数名           | 类型   | 描述                                                                                                                                              |
+| ---------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ProtectionType   | string | 要应用的保护类型。允许的值（不区分大小写）：**ALL**、**CONTENTS**、**NONE**、**OBJECTS**、**SCENARIOS**、**STRUCTURE**、**WINDOWS**。             |
+| Password         | string | 用于设置保护的可选密码。                                                                                                                          |
+
+### 响应
+
+```json
 {
-
-  "Code":"200",
-
-  "Status":"OK"
-
+  "Status":"OK",
+  "Code":200
 }
-
 ```
 
-{{< /tab >}}
+**HTTP 状态码**
 
-{{< /tabs >}}
+| 状态码 | 含义             | 描述                                 |
+|--------|------------------|--------------------------------------|
+| 200    | OK（成功）       | 过滤器应用成功；响应包含操作详情。     |
+| 400    | Bad Request（错误请求） | 缺少或无效参数（例如不支持的文件类型）。 |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。                   |
+| 413    | Payload Too Large（请求实体过大） | 上传的文件超出大小限制。             |
+| 500    | Internal Server Error（内部服务器错误） | 发生意外服务器错误。                 |
 
-## Cloud SDK 系列
+## 如何使用 SDK 调用 PostProtectDocument API
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+### 前提条件
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+在调用 API 之前，请确保已完成以下步骤：
+
+- **获取 JWT 访问令牌**：按照“安全与身份验证”一节中描述的身份验证流程获取。  
+- **上传工作簿**：将工作簿上传至您的 Aspose Cloud 存储空间，或确认其已存在于目标文件夹中。  
+- **明确存储名称**（若未指定，默认为 `"Default"`）及您希望保护的文件名。
+
+### PostProtectDocument API 规范
+
+<a href="https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument" target="_blank" rel="noopener noreferrer">OpenAPI 规范</a> 定义了一个公开可访问的编程接口，允许您直接从 Web 浏览器发起 REST 调用。
+
+### 示例：使用 cURL 保护工作簿
+
+1. 按照**前提条件 / 身份验证**中的说明获取访问令牌。  
+2. 执行请求：
+
+   ```bash
+   curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=MyFolder&storageName=MyStorage" \
+        -H "accept: application/json" \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer <access_token>" \
+        -d '{ "ProtectionType": "ALL", "Password": "aspose" }'
+   ```
+
+   响应将包含一个状态对象，确认保护已成功应用。
+
+### 使用 Aspose.Cells Cloud SDK
+
+使用 SDK 是开发 Aspose.Cells Cloud 应用程序的最快方式。SDK 封装了底层细节，使您能够专注于业务逻辑。有关 Aspose.Cells Cloud SDK 的完整列表，请参阅 <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>。
+
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -129,3 +148,20 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection" -H "acce
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### 示例完整响应
+
+```json
+{
+  "Status": "OK",
+  "Code": 200,
+  "Workbook": {
+    "Name": "test.xlsx",
+    "Path": "/MyFolder/test.xlsx",
+    "Protection": {
+      "ProtectionType": "ALL",
+      "Password": true
+    }
+  }
+}
+```

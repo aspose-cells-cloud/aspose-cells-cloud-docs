@@ -1,77 +1,77 @@
-﻿---
-title: Aprende Aspose.Cells Nube
-type: docs
-url: /es/learn
-aliases: [/learn-aspose-cells-cloud]
-linktitle: Lear
-description: Bienvenido a aprender Aspose.Cells Nube
-weight: 15
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Bienvenido a aprender Aspose.Cells Nube
 ---
-# Bienvenido a Learn Aspose.Cells Cloud
+title: "Aprenda Aspose.Cells Cloud"
+type: docs
+url: /learn
+aliases: [/learn-aspose-cells-cloud]
+linktitle: "Aprenda"
+description: "Bienvenido a aprender Aspose.Cells Cloud."
+weight: 15
+kwords: Excel, Office Cloud, REST API, hoja de cálculo, PDF, CSV, JSON, Markdown, Bienvenido a aprender Aspose.Cells Cloud
+---
 
-Este sitio está dedicado a ayudar a los desarrolladores que quieran utilizar las API de desarrollo en la nube Aspose.Cells framework para crear aplicaciones.
+# Bienvenido a aprender Aspose.Cells Cloud
 
-## ¿Qué son las API en la nube Aspose.Cells?
+Este sitio está dedicado a ayudar a los desarrolladores que desean utilizar el marco de desarrollo de las API de Aspose.Cells Cloud para crear aplicaciones.
 
-Un servicio basado en REST para crear, editar, convertir y analizar hojas de cálculo programáticamente en la nube. Procesa archivos XLS, XLSX y CSV con API escalables via sin dependencias Microsoft y Excel.
+## ¿Qué son las API de Aspose.Cells Cloud?
 
-## ¿Quién debería utilizar las API en la nube Aspose.Cells?
+Un servicio basado en REST para crear, editar, convertir y analizar programáticamente hojas de cálculo en la nube. Procese archivos XLS, XLSX y CSV mediante API escalables sin depender de Microsoft Excel.
 
-Desarrolladores que crean soluciones de automatización de hojas de cálculo, desde principiantes hasta equipos empresariales. Cree, edite, convierta y analice archivos XLSX/CSV con las API REST via sin necesidad de instalaciones Excel.
+## ¿Quién debería usar las API de Aspose.Cells Cloud?
 
-## **Cómo utilizar Aspose.Cells Cloud API en dos pasos**
+Desarrolladores que crean soluciones de automatización de hojas de cálculo, desde principiantes hasta equipos empresariales. Cree, edite, convierta y analice archivos XLSX/CSV mediante API REST sin necesidad de instalar Excel.
 
-### *De cero a la automatización en 5 minutos*
+## **Cómo usar la API de Aspose.Cells Cloud en dos pasos**
 
-###  Paso 1:**Obtenga las credenciales API**
+### *De cero a automatización en 5 minutos*
 
-1. [Regístrate gratis](https://dashboard.aspose.cloud/signup)  
-2. [Crear aplicación](https://dashboard.aspose.cloud/applications) → Copia `Client ID` y `Client Secret`  
+### Paso 1: **Obtener credenciales de la API**
 
-###  Paso 2:**Ejecute su primera llamada al API**
+1. [Regístrese gratis](https://dashboard.aspose.cloud/signup)  
+2. [Crear aplicación](https://dashboard.aspose.cloud/applications) → Copie `Client ID` y `Client Secret`
+
+### Paso 2: **Ejecutar su primera llamada a la API**
 
 ```bash
-# Get access token via cURL
+# Obtener token de acceso mediante cURL
 curl -X POST "https://api.aspose.cloud/connect/token" \
 -H "Content-Type: application/x-www-form-urlencoded" \
--d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
+-d "grant_type=client_credentials&client_id=SU_ID_CLIENTE&client_secret=SU_SECRETO_CLIENTE"
 
-# Convert XLSX to PDF via cURL
+# Convertir XLSX a PDF mediante cURL
 curl -v "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet?format=PDF" \
 -X PUT \
 -H "Authorization: Bearer $ACCESS_TOKEN" \
 -H "Content-Type: multipart/form-data" \
--F "File=@input.xlsx"
+-F "File=@entrada.xlsx"
 ```
 
-### **Ejecutar la hoja de cálculo API usando el SDK**
+### **Ejecutar API de hojas de cálculo mediante SDK**
 
 ```python
-# Python SDK example
+# Ejemplo de SDK en Python
 from asposecellscloud.apis.cells_api import CellsApi
 from asposecellscloud.models import *
 from asposecellscloud.requests import *
 
-CellsCloudClientId ='....'  # get from https://dashboard.aspose.cloud/#/applications
-CellsCloudClientSecret='....'  # get from https://dashboard.aspose.cloud/#/applications
-instance  = CellsApi(CellsCloudClientId,CellsCloudClientSecret)
-response = instance.convert_spreadsheet(ConvertSpreadsheetRequest( 'EmployeeSalesSummary.xlsx', 'pdf') , local_outpath = "EmployeeSalesSummary.pdf")
-
+CellsCloudClientId = '....'  # Obtener de https://dashboard.aspose.cloud/#/applications
+CellsCloudClientSecret = '....'  # Obtener de https://dashboard.aspose.cloud/#/applications
+instance = CellsApi(CellsCloudClientId, CellsCloudClientSecret)
+response = instance.convert_spreadsheet(ConvertSpreadsheetRequest('EmployeeSalesSummary.xlsx', 'pdf'), local_outpath="EmployeeSalesSummary.pdf")
 ```
 
-## ¿Por qué debería utilizar las API en la nube Aspose.Cells?
+## ¿Por qué debería usar las API de Aspose.Cells Cloud?
 
-### El motor Excel de nivel empresarial para servicios en la nube
+### Motor Excel de nivel empresarial para servicios en la nube
 
-Aspose.Cells Cloud es un potente motor Excel para servicios en la nube. Ofrece una amplia gama de funciones para ayudarle a crear, editar, convertir y analizar hojas de cálculo.
+Aspose.Cells Cloud es un potente motor Excel para servicios en la nube. Proporciona una amplia gama de características para ayudarle a crear, editar, convertir y analizar hojas de cálculo.
 
-### Compatibilidad con SDK en varios idiomas
+### Soporte multi-lenguaje de SDK
 
 - **Cobertura completa: .NET/Java/Python/Node.js/PHP/Perl**
 - **Lenguajes emergentes: Go/Ruby**
 
-### Low Code: Impulsando el desarrollo rápido con codificación mínima
+### Bajo código: Empoderar el desarrollo rápido con mínima codificación
 
 ```C#
     CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("CellsCloudClientId"), Environment.GetEnvironmentVariable("CellsCloudClientSecret"));
@@ -80,7 +80,9 @@ Aspose.Cells Cloud es un potente motor Excel para servicios en la nube. Ofrece u
 
 ### Soporte técnico excepcional
 
-- [Aspose.Cells Documento del Centro de Desarrollo de la Nube](https://docs.aspose.cloud/cells/)
-- [Repositorios populares de GitHub](https://github.com/aspose-cells-cloud)
-- [Aspose.Cells Coud API Referencia](https://reference.aspose.cloud/cells)
-- [Aspose.Cells Foro de soporte gratuito Coud](https://forum.aspose.cloud/c/cells/7)
+- [Documentación del Centro de Desarrollo de Aspose.Cells Cloud](https://docs.aspose.cloud/cells/)
+- [Repositorios populares en GitHub](https://github.com/aspose-cells-cloud)
+- [Referencia de la API de Aspose.Cells Cloud](https://reference.aspose.cloud/cells)
+- [Foro gratuito de soporte de Aspose.Cells Cloud](https://forum.aspose.cloud/c/cells/7)
+
+---

@@ -1,79 +1,104 @@
-﻿---
-title: Adatta automaticamente le righe su una cartella di lavoro Excel
-second_title: Documen
-linktitle: Riga
-type: docs 
-url: /it/autofit-rows-on-an-excel-file/
-aliases: [/auto-fit-rows-in-excel-workbooks/,/workbook/autofit/rows/]
-keywords: Autofit rows on an Excel workboo
-description: Aspose.Cells Cloud REST API supporta l'adattamento automatico delle righe su una cartella di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 90
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Adatta automaticamente le righe su una cartella di lavoro Excel
 ---
-Questo REST API indica di adattare automaticamente le righe su una cartella di lavoro Excel.
+title: "Adattamento automatico delle righe in un workbook Excel"
+second_title: "Documento"
+linktitle: "Righe"
+type: docs
+url: /autofit-rows-on-an-excel-file/
+aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
+keywords: "adattamento automatico righe, workbook Excel, Aspose.Cells Cloud, REST API, opzioni di adattamento automatico"
+description: "Scopri come regolare automaticamente l’altezza delle righe in un workbook Excel utilizzando l’API REST di Aspose.Cells Cloud. Include endpoint, parametri, esempio cURL e frammenti di codice SDK per C#, Java, Python e altro."
+weight: 90
+ArticleTitle: "Adattamento automatico delle righe in un workbook Excel – Aspose.Cells Cloud API"
+---
 
-## RSET API
+**Prerequisiti**  
+Prima di chiamare l’API, ottieni un token Bearer JWT valido dal servizio di autenticazione Aspose e assicurati che il workbook di destinazione sia memorizzato in una posizione di archiviazione supportata (archiviazione predefinita o una personalizzata da te configurata).
+
+Questa API REST ti consente di **adattare automaticamente le righe** in un workbook Excel, regolando automaticamente l’altezza delle righe dopo l’inserimento o la modifica dei dati.
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/autofitrows
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/autofitrows
 ```
 
-I parametri della richiesta sono:
+I parametri della richiesta sono i seguenti:
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome del documento.|
-| autoFitterOptions|| corpo| Opzioni di installazione automatica.|
-| riga di inizio| intero| domanda| Indice della riga iniziale.|
-| fine riga| intero| domanda| Indice di riga finale.|
-| prima colonna| intero| domanda| Indice della prima colonna.|
-| ultima colonna| intero| domanda| Indice dell'ultima colonna.|
-| soloAuto| booleano| domanda|Falso|
-| cartella| corda| domanda| Cartella del documento.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome Parametro    | Tipo              | Posizione | Descrizione                                                                 |
+| ----------------- | ----------------- | -------- | --------------------------------------------------------------------------- |
+| name              | string            | path     | Nome del file del workbook.                                                 |
+| autoFitterOptions | AutoFitterOptions | body     | Opzioni che controllano il comportamento dell’adattamento automatico.      |
+| startRow          | integer           | query    | Indice della prima riga da adattare automaticamente.                        |
+| endRow            | integer           | query    | Indice dell’ultima riga da adattare automaticamente.                        |
+| firstColumn       | integer           | query    | Indice della prima colonna considerata per l’adattamento automatico.       |
+| lastColumn        | integer           | query    | Indice dell’ultima colonna considerata per l’adattamento automatico.       |
+| onlyAuto          | boolean           | query    | Se **true**, vengono elaborate solo le righe con il flag AutoFit (default **false**). |
+| folder            | string            | query    | Percorso della cartella in cui è memorizzato il workbook.                  |
+| storageName       | string            | query    | Nome del servizio di archiviazione.                                         |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+**AutoFitterOptions** è un oggetto che specifica come si comporta l’operazione di adattamento automatico (ad esempio, `AutoFitMergedCells`, `IgnoreHidden`).
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+**Codici di stato HTTP**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Codice | Significato                 | Descrizione                                                   |
+|--------|-----------------------------|---------------------------------------------------------------|
+| 200    | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell’operazione. |
+| 400    | Richiesta non valida        | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401    | Non autorizzato             | Token JWT non valido o mancante.                              |
+| 413    | Payload troppo grande       | Il file caricato supera il limite di dimensione.             |
+| 500    | Errore interno del server   | Errore imprevisto sul server.                                 |
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows) definiscono un’interfaccia di programmazione accessibile pubblicamente e consentono di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per chiamare i servizi web Aspose.Cells. Sostituisci `<jwt token>` con un token Bearer JWT valido ottenuto dal servizio di autenticazione Aspose.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/autofitrows" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"AutoFitMergedCells":true, "IgnoreHidden":true}'
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitrows" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"AutoFitMergedCells":true, "IgnoreHidden":true}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
+```
+
+*Esempio di risposta di errore (ad esempio, workbook mancante):*
+
+```json
+{
+  "Code": 404,
+  "Status": "Not Found",
+  "Message": "Il workbook specificato 'myWorkbook.xlsx' non esiste."
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+**Note**  
+- Quando `AutoFitMergedCells` è impostato su **true**, le celle unite vengono considerate come un’unica entità durante l’operazione di adattamento automatico.  
+- Impostando `IgnoreHidden` su **true**, vengono ignorate righe e colonne nascoste, preservandone le dimensioni attuali.
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+## Famiglia di SDK Cloud
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+L’utilizzo di un SDK rappresenta il metodo più rapido per lo sviluppo. Un SDK nasconde i dettagli a basso livello, consentendoti di concentrarti sul tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

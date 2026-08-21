@@ -1,86 +1,106 @@
-﻿---
-title: Excel çalışma sayfasına özel bir ölçüt ekleyin
-second_title: Documen
-linktitle: Özel filtre ekle
-type: docs
-url: /tr/autofilter/add-custom-filter/ 
-aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/ ]
-keywords: Adds a custom filter on an Excel worksheet
-description: Aspose.Cells Cloud API, Excel çalışma sayfasına özel bir filtre eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 65
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasına özel ölçüt ekleme
 ---
-Bu REST API, `custom criteria` ile bir listeyi filtrelemeyi gösterir.
+title: "Excel çalışma sayfasına özel bir kriter ekleme"
+second_title: "Belge"
+linktitle: "Özel filtre ekle"
+type: docs
+url: /tr/autofilter/add-custom-filter/
+aliases: [/tr/filter-a-list-with-a-custom-criteria/,/tr/autofilter/add-a-custom-filter/]
+keywords: "Excel, özel filtre, Aspose.Cells Cloud, REST API, otomatik filtre, çalışma sayfası, özel kriter"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasına özel bir filtre nasıl ekleyeceğinizi öğrenin. İstek detaylarını, cURL örneğini ve birden fazla programlama dilinde SDK kodu snippet’lerini içerir."
+weight: 65
+ArticleTitle: "Excel çalışma sayfasına özel bir kriter ekleme – Aspose.Cells Cloud API"
+---
 
-## RSET API
+Bu REST API, bir listeyi **özel kriter** kullanarak filtreler.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/custom
- 
+## PutWorksheetCustomFilter API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/custom
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Yetkilendirme**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| menzil| sicim| sorgu||
-| alanIndeksi| tam sayı| sorgu||
-| operatörTürü1| sicim| sorgu||
-| kriter1| sicim| sorgu||
-| ve| Boolean| sorgu||
-| operatörTürü2| sicim| sorgu||
-| kriter2| sicim| sorgu||
-| matchBlanks| Boolean| sorgu||
-| yenilemek| Boolean| sorgu||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/tr/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Parametreleri:
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı   | Tür      | Konum           | Açıklama                                                                     |
+|-----------------|----------|-----------------|------------------------------------------------------------------------------|
+| name            | string   | path            | Excel dosyasının adı.                                                       |
+| sheetName       | string   | path            | Filtrelenecek verileri içeren çalışma sayfasının adı.                       |
+| range           | string   | query           | Filtrenin uygulanacağı hücre aralığı (örn. `A1:B1`).                        |
+| fieldIndex      | integer  | query           | Filtrenin uygulanacağı sütunun sıfır tabanlı indeksi.                       |
+| operatorType1   | string   | query           | İlk karşılaştırma operatörü (örn. `LessOrEqual`, `Equal`).                  |
+| criteria1       | string   | query           | İlk filtre değeri veya ifadesi.                                             |
+| isAnd           | boolean  | query           | `true` ise, iki kriter **VE** ile birleştirilir; aksi halde **VEYA**.      |
+| operatorType2   | string   | query           | İkinci karşılaştırma operatörü (isteğe bağlı).                              |
+| criteria2       | string   | query           | İkinci filtre değeri veya ifadesi (isteğe bağlı).                           |
+| matchBlanks     | boolean  | query           | `true` ise, boş hücreler filtre sonuçlarına dahil edilir.                   |
+| refresh         | boolean  | query           | `true` ise, filtreyi uyguladıktan sonra çalışma sayfasını yenilemeyi zorlar.|
+| folder          | string   | query           | Dosyanın bulunduğu depolama dizin yolu.                                     |
+| storageName     | string   | query           | Depolama hizmetinin adı.                                                    |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Yanıt**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                             |
+|-----|-----------------------------|------------------------------------------------------|
+| 200 | OK                          | Filtre başarıyla uygulandı; yanıt işlem detaylarını içerir. |
+| 400 | Bad Request                 | Eksik veya geçersiz parametreler (örn. desteklenmeyen dosya türü). |
+| 401 | Unauthorized                | Geçersiz veya eksik JWT belirteci.                   |
+| 413 | Payload Too Large           | Yüklenen dosya boyut sınırını aşıyor.                |
+| 500 | Internal Server Error       | Beklenmeyen sunucu hatası.                           |
+
+## PutWorksheetCustomFilter API’yi SDK’larla Nasıl Kullanılır?
+
+### PutWorksheetCustomFilter API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web servislerine kolayca erişmek için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'ye nasıl istek atacağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/custom?range=A1:B1&fieldIndex=0&operatorType1=LessOrEqual&criteria1=1" \
--X PUT 
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/custom?range=A1:B1&fieldIndex=0&operatorType1=LessOrEqual&criteria1=1" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+### Aspose.Cells Cloud SDK’larını Kullanma
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. SDK, düşük seviye detayları yöneterek size proje mantığına odaklanma imkanı verir. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, Aspose.Cells web servislerini çeşitli SDK’lar kullanarak nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -133,3 +153,5 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Standart filtre veya tarih filtresi ekleme gibi diğer AutoFilter işlemleri için, ilgili belgeler sayfalarına bakın.

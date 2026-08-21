@@ -1,43 +1,44 @@
-﻿---
-title: تعلم Aspose.Cells كلاود
-type: docs
-url: /ar/learn
-aliases: [/learn-aspose-cells-cloud]
-linktitle: لير
-description: مرحبا بكم في تعلم Aspose.Cells السحابة
-weight: 15
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، مرحبًا بك في تعلم Aspose.Cells السحابة
 ---
-# مرحبا بكم في تعلم Aspose.Cells السحابة
+title: "تعلم Aspose.Cells Cloud"
+type: docs
+url: /learn
+aliases: [/learn-aspose-cells-cloud]
+linktitle: "تعلم"
+description: "مرحبًا بك في تعلم Aspose.Cells Cloud."
+weight: 15
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, مرحبًا بك في تعلم Aspose.Cells Cloud
+---
 
-هذا الموقع مخصص لمساعدة المطورين الذين يريدون استخدام تطوير واجهات برمجة التطبيقات السحابية Aspose.Cells framework لبناء التطبيقات.
+# مرحبًا بك في تعلم Aspose.Cells Cloud
 
-## ما هي واجهات برمجة التطبيقات السحابية Aspose.Cells؟
+يُكرّس هذا الموقع لمساعدة المطورين الراغبين في استخدام إطار عمل واجهات برمجة التطبيقات (APIs) الخاص بـ Aspose.Cells Cloud لبناء تطبيقاتهم.
 
-خدمة تعتمد على REST لإنشاء جداول البيانات وتحريرها وتحويلها وتحليلها برمجيًا في السحابة. معالجة ملفات XLS وXLSX وCSV باستخدام واجهات برمجة تطبيقات قابلة للتطوير بدون تبعيات.
+## ما هي واجهات برمجة التطبيقات (APIs) لـ Aspose.Cells Cloud؟
 
-## من ينبغي له استخدام واجهات برمجة التطبيقات السحابية Aspose.Cells؟
+خدمة قائمة على REST تتيح إنشاء وتعديل وتحويل وتحليل جداول البيانات في السحابة برمجيًا. يمكنك معالجة ملفات XLS وXLSX وCSV عبر واجهات برمجة قابلة للتوسّع دون الحاجة إلى تثبيت Microsoft Excel.
 
-مطورون يبنون حلول أتمتة جداول البيانات - من المبتدئين إلى فرق المؤسسات. أنشئ ملفات XLSX/CSV، وحرّرها، وحوِّلها، وحللها باستخدام واجهات برمجة تطبيقات REST via دون الحاجة إلى تثبيت Excel.
+## من يجب عليه استخدام واجهات برمجة التطبيقات (APIs) لـ Aspose.Cells Cloud؟
 
-## **كيفية استخدام Aspose.Cells Cloud API في خطوتين**
+المطورون الذين يبنون حلول أتمتة لجداول البيانات — من المبتدئين إلى فِرق المؤسسات. يمكنك إنشاء وتعديل وتحويل وتحليل ملفات XLSX/CSV عبر واجهات برمجة تطبيقات REST دون الحاجة إلى تثبيت Excel.
 
-### *من الصفر إلى الأتمتة في 5 دقائق*
+## **كيفية استخدام واجهة برمجة التطبيقات (API) لـ Aspose.Cells Cloud في خطوتين**  
 
-###  الخطوة 1:**احصل على بيانات اعتماد API**
+### *من الصفر إلى الأتمتة في 5 دقائق*  
 
-1. [سجل مجانا](https://dashboard.aspose.cloud/signup)  
-2. [إنشاء تطبيق](https://dashboard.aspose.cloud/applications) → نسخة `Client ID` و `Client Secret`  
+### الخطوة ١: **احصل على بيانات اعتماد واجهة برمجة التطبيقات (API Credentials)**  
 
-###  الخطوة 2:**قم بإجراء مكالمتك الأولى على الرقم API**
+1. [سجّل حسابًا مجانًا](https://dashboard.aspose.cloud/signup)  
+2. [أنشئ تطبيقًا](https://dashboard.aspose.cloud/applications) → انسخ `مُعرّف العميل (Client ID)` و `سر العميل (Client Secret)`  
+
+### الخطوة ٢: **قم بتنفيذ أول استدعاء لواجهة برمجة التطبيقات (API)**  
 
 ```bash
-# Get access token via cURL
+# احصل على رمز الوصول باستخدام cURL
 curl -X POST "https://api.aspose.cloud/connect/token" \
 -H "Content-Type: application/x-www-form-urlencoded" \
 -d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
 
-# Convert XLSX to PDF via cURL
+# حوّل ملف XLSX إلى PDF باستخدام cURL
 curl -v "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet?format=PDF" \
 -X PUT \
 -H "Authorization: Bearer $ACCESS_TOKEN" \
@@ -45,33 +46,33 @@ curl -v "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet?format=PDF" \
 -F "File=@input.xlsx"
 ```
 
-### **تنفيذ جدول البيانات API باستخدام SDK**
+### **نفّذ واجهة برمجة التطبيقات لجداول البيانات باستخدام SDK**  
 
 ```python
-# Python SDK example
+# مثال بلغة Python باستخدام SDK
 from asposecellscloud.apis.cells_api import CellsApi
 from asposecellscloud.models import *
 from asposecellscloud.requests import *
 
-CellsCloudClientId ='....'  # get from https://dashboard.aspose.cloud/#/applications
-CellsCloudClientSecret='....'  # get from https://dashboard.aspose.cloud/#/applications
+CellsCloudClientId ='....'  # احصل عليه من https://dashboard.aspose.cloud/#/applications
+CellsCloudClientSecret='....'  # احصل عليه من https://dashboard.aspose.cloud/#/applications
 instance  = CellsApi(CellsCloudClientId,CellsCloudClientSecret)
 response = instance.convert_spreadsheet(ConvertSpreadsheetRequest( 'EmployeeSalesSummary.xlsx', 'pdf') , local_outpath = "EmployeeSalesSummary.pdf")
 
 ```
 
-## لماذا يجب عليك استخدام واجهات برمجة التطبيقات السحابية Aspose.Cells؟
+## لماذا يجب عليك استخدام واجهات برمجة التطبيقات (APIs) لـ Aspose.Cells Cloud؟
 
-### محرك Excel من الدرجة المؤسسية للخدمات السحابية
+### محرك Excel من فئة المؤسسات للخدمات السحابية
 
-Aspose.Cells Cloud هو محرك قوي لخدمات السحابة. يوفر مجموعة واسعة من الميزات لمساعدتك في إنشاء جداول البيانات وتحريرها وتحويلها وتحليلها.
+Aspose.Cells Cloud هو محرك قوي لـ Excel مُصمم للخدمات السحابية. ويوفّر مجموعة واسعة من الميزات التي تساعدك في إنشاء وتعديل وتحويل وتحليل جداول البيانات.
 
-### دعم SDK متعدد اللغات
+### دعم SDK بلغات متعددة
 
-- **التغطية الكاملة: .NET/Java/Python/Node.js/PHP/Perl**
-- **اللغات الناشئة: Go/Ruby**
+- **تغطية كاملة: .NET/Java/Python/Node.js/PHP/Perl**
+- **لغات ناشئة: Go/Ruby**
 
-### كود منخفض: تمكين التطوير السريع باستخدام الحد الأدنى من البرمجة
+### قليل الكود: تمكين التطوير السريع بتقليل الكود إلى أدنى حد
 
 ```C#
     CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("CellsCloudClientId"), Environment.GetEnvironmentVariable("CellsCloudClientSecret"));
@@ -80,7 +81,9 @@ Aspose.Cells Cloud هو محرك قوي لخدمات السحابة. يوفر م
 
 ### دعم فني استثنائي
 
-- [Aspose.Cells وثيقة مركز تطوير السحابة](https://docs.aspose.cloud/cells/)
+- [مستندات مركز تطوير Aspose.Cells Cloud](https://docs.aspose.cloud/cells/)
 - [مستودعات GitHub الشهيرة](https://github.com/aspose-cells-cloud)
-- [Aspose.Cells كود API مرجع](https://reference.aspose.cloud/cells)
-- [Aspose.Cells منتدى الدعم المجاني Coud](https://forum.aspose.cloud/c/cells/7)
+- [مرجع واجهة برمجة التطبيقات (API) لـ Aspose.Cells Cloud](https://reference.aspose.cloud/cells)
+- [منتدى الدعم المجاني لـ Aspose.Cells Cloud](https://forum.aspose.cloud/c/cells/7)
+
+---

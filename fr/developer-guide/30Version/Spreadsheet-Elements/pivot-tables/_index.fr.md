@@ -1,27 +1,41 @@
-﻿---
-title: Travailler avec le tableau croisé dynamique Excel
-second_title: Documen
-linktitle: Tableau croisé dynamique
-type: docs
-url: /fr/pivottables/
-aliases: [/working-with-pivot-tables/]
-keywords: Working with pivot table on an Excel worksheet
-description: Comment utiliser les API REST Cloud Aspose.Cells avec un tableau croisé dynamique dans une feuille de calcul Excel ? Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Tableaux croisés dynamiques
 ---
-## Travailler avec des tableaux croisés dynamiques sur un fichier Excel
+title: "Travail avec les tableaux croisés dynamiques Excel"
+second_title: "Document"
+linktitle: "Tableaux croisés dynamiques"
+type: docs
+url: /pivottables/
+aliases: [/working-with-pivot-tables/]
+keywords: "Excel, tableau croisé dynamique, Aspose.Cells Cloud, API, feuille de calcul, analyse de données, API REST"
+description: "Guide complet pour utiliser les API REST d’Aspose.Cells Cloud afin de créer, récupérer, mettre à jour et supprimer des tableaux croisés dynamiques dans des feuilles de calcul Excel. Inclut des références aux SDK, des exemples d’appels et des notes de version."
+weight: 100
+ArticleTitle: "Travail avec les tableaux croisés dynamiques Excel – Documentation Aspose.Cells Cloud"
+---
 
-- [Comment obtenir des informations sur les tableaux croisés dynamiques à partir de la feuille de calcul Excel.](/cells/fr/pivot-tables/get-all/)
-- [Comment obtenir des informations de tableau croisé dynamique par index à partir de la feuille de calcul Excel.](/cells/fr/pivot-tables/get/)
-- [Comment ajouter un tableau croisé dynamique dans une feuille de calcul.](/cells/fr/pivot-tables/add/)
-- [Comment ajouter un champ pivot dans un tableau croisé dynamique.](/cells/fr/pivot-tables/add-pivot-field/)
-- [Comment supprimer tous les tableaux croisés dynamiques de la feuille de calcul Excel.](/cells/fr/pivot-tables/clear/)
-- [Comment supprimer le tableau croisé dynamique par index de la feuille de calcul Excel.](/cells/fr/pivot-tables/delete/)
-- [Comment mettre à jour le style de cellule pour un tableau croisé dynamique.](/cells/fr/pivot-tables/format/)
-- [Comment mettre à jour le style d'un tableau croisé dynamique.](/cells/fr/pivot-tables/format-all/)
-- [Comment ajouter des filtres croisés dynamiques pour un tableau croisé dynamique.](/cells/fr/pivot-tables/add-filters/)
-- [Comment masquer l'élément de champ pivot pour le tableau croisé dynamique.](/cells/fr/pivot-tables/hide-pivot-field-item/)
-- [Comment déplacer le tableau croisé dynamique sur la feuille de calcul Excel.](/cells/fr/pivot-tables/move/)
-- [Comment travailler avec la tâche CellsObjectOperate.](/cells/fr/working-with-pivot-table-using-cellsobjectoperate-task/)
-- [Comment convertir un objet de liste en tableau croisé dynamique.](/cells/fr/pivot-tables/convert-table-to-pivottable/)
+## Travail avec les tableaux croisés dynamiques dans un fichier Excel
+
+Les tableaux croisés dynamiques constituent des outils puissants d’agrégation de données dans Excel, permettant aux développeurs d’agréger, de filtrer et d’analyser dynamiquement de grands jeux de données. L’API Aspose.Cells Cloud fournit des points de terminaison permettant de créer, récupérer, modifier et supprimer des tableaux croisés dynamiques par programmation, facilitant ainsi leur intégration transparente dans vos applications.
+
+**Prérequis** – Vous devez disposer d’un jeton d’authentification valide pour Aspose.Cells Cloud ainsi que d’un SDK pris en charge (par exemple .NET, Java, Python, Go, Node.js, PHP, Ruby, Swift) installé dans votre projet.
+
+**Exemple d’appel d’API** – Pour récupérer tous les tableaux croisés dynamiques d’une feuille de calcul spécifique, envoyez une requête GET telle que :
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetName}/pivottables
+```
+
+**Remarques** – Ces opérations nécessitent Aspose.Cells Cloud version 3.0 ou ultérieure.
+
+- [Comment obtenir les informations d’un tableau croisé dynamique à partir d’une feuille de calcul Excel.](/cells/pivot-tables/get-all/)
+- [Comment obtenir les informations d’un tableau croisé dynamique par index à partir d’une feuille de calcul Excel.](/cells/pivot-tables/get/)
+- [Comment ajouter un tableau croisé dynamique dans une feuille de calcul.](/cells/pivot-tables/add/)
+- [Comment ajouter un champ de tableau croisé dynamique dans un tableau croisé dynamique.](/cells/pivot-tables/add-pivot-field/)
+- [Comment supprimer tous les tableaux croisés dynamiques d’une feuille de calcul Excel.](/cells/pivot-tables/clear/)
+- [Comment supprimer un tableau croisé dynamique par index à partir d’une feuille de calcul Excel.](/cells/pivot-tables/delete/)
+- [Comment mettre à jour le style des cellules d’un tableau croisé dynamique.](/cells/pivot-tables/format/)
+- [Comment mettre à jour le style de tous les tableaux croisés dynamiques.](/cells/pivot-tables/format-all/)
+- [Comment ajouter des filtres à un tableau croisé dynamique.](/cells/pivot-tables/add-filters/)
+- [Comment masquer un élément de champ de tableau croisé dynamique dans un tableau croisé dynamique.](/cells/pivot-tables/hide-pivot-field-item/)
+- [Comment déplacer un tableau croisé dynamique sur une feuille de calcul Excel.](/cells/pivot-tables/move/)
+- [Comment travailler avec la tâche CellsObjectOperate.](/cells/working-with-pivot-table-using-cellsobjectoperate-task/)
+- [Comment convertir un objet liste en tableau croisé dynamique.](/cells/pivot-tables/convert-table-to-pivottable/)
+---

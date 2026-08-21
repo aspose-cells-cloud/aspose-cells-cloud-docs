@@ -1,90 +1,91 @@
-﻿---
-title: "Aspose.Cells Cloud Quickstart : créez une application de feuille de calcul en 5 minutes"
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Quickstar
-linktitle: Quickstar
+---
+title: "Aspose.Cells Cloud – Démarrage rapide : Créer une application de feuille de calcul en 5 minutes"
+second_title: "Document"
+ArticleTitle: "Aspose.Cells Cloud – Démarrage rapide"
+linktype: "Démarrage rapide"
 type: docs
 url: /fr/quickstart/
-description: Aspose.Cells Cloud prend en charge Excel pour créer, convertir, fusionner, diviser, protéger, effectuer des opérations sur des objets internes, etc.
+description: "Aspose.Cells Cloud permet de créer, convertir, fusionner, découper, protéger des fichiers Excel, ainsi que d’effectuer des opérations internes sur les objets, entre de nombreuses autres fonctionnalités."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Démarrage rapide
+keywords: "Aspose.Cells Cloud, Excel, Feuille de calcul, API, SDK cloud, API REST, PDF, CSV, JSON, Démarrage rapide"
 ---
-Ces instructions vous guident dans l'initialisation de Aspose.Cells Cloud API et l'installation des bibliothèques de traitement de feuille de calcul requises.
 
-Vous pouvez facilement intégrer des fonctionnalités de conversion, de génération et d'édition de feuilles de calcul à des applications fonctionnant sur tout système d'exploitation moderne. Elles facilitent la lecture, l'édition, la fusion, le fractionnement et la conversion de feuilles de calcul vers différents formats de fichiers. Ces bibliothèques de programmation vous permettent d'utiliser un ensemble complet de composants de feuilles de calcul, tels que des données, des styles, des formules, des tableaux, des graphiques, des tableaux croisés dynamiques, des en-têtes, des pieds de page, des commentaires, des objets de dessin, des hyperliens, des filigranes, et bien plus encore.
+Ces instructions vous guident pas à pas pour initialiser l’API Aspose.Cells Cloud et installer les bibliothèques nécessaires au traitement des feuilles de calcul.
+
+Vous pouvez facilement intégrer des fonctionnalités de conversion, génération et édition de feuilles de calcul dans des applications s’exécutant sur n’importe quel système d’exploitation moderne. Elles vous permettent de lire, modifier, fusionner et découper des feuilles de calcul, ainsi que de les convertir vers divers formats de fichiers. Ces bibliothèques de programmation vous donnent accès à un ensemble complet de composants de feuille de calcul : données, styles, formules, tableaux, graphiques, tableaux croisés dynamiques, en-têtes, pieds de page, commentaires, objets graphiques, liens hypertexte, filigranes, et bien plus encore.
 
 ## Créer un compte gratuit
 
-Aspose Cloud s'appuie sur un modèle de vente clair et confortable, qui vous permet d'évaluer et de tester pleinement un produit avant de vous engager à l'acheter.
+Aspose Cloud repose sur un modèle de tarification clair et confortable, qui vous permet d’évaluer et de tester pleinement le produit avant de procéder à un achat.
 
-Tout d’abord, vous devez créer un compte gratuit pour avoir accès à l’infrastructure Cloud :
+Tout d’abord, vous devez créer un compte gratuit pour accéder à l’infrastructure cloud :
 
--  S'il vous plaît, allez à[Aspose Tableau de bord](https://dashboard.aspose.cloud/#/) page de connexion
--  Pour une connexion plus rapide, cliquez sur le**Connectez-vous avec GitHub** ou**Connectez-vous avec Google** bouton
-- Fournir les informations requises
+- Veuillez vous rendre sur la page de connexion du [Tableau de bord Aspose Cloud](https://dashboard.aspose.cloud/#/)
+- Pour une connexion plus rapide, cliquez sur le bouton **Se connecter avec GitHub** ou **Se connecter avec Google**
+- Fournissez les informations requises
 
 {{% alert style="info" %}}
 
-Félicitations ! Vous êtes désormais inscrit(e) au Aspose Cloud.
+Félicitations ! Vous vous êtes inscrit avec succès à Aspose Cloud.
 
 {{% /alert %}}
 
-## Afficher et mettre à jour les détails de votre compte
+## Consulter et mettre à jour vos informations de compte
 
-Ensuite, vous devez apporter des ajustements individuels à votre compte :
+Ensuite, vous devez effectuer des ajustements individuels sur votre compte :
 
--  Accédez à votre[Aspose Paramètres du compte](https://id.containerize.com/admin/) en cliquant sur l'icône dans le coin supérieur droit de la page.
+- Accédez à vos [Paramètres de compte Aspose](https://id.containerize.com/admin/) en cliquant sur l’icône située dans le coin supérieur droit de la page.
 
-![tableau de bord.png](dashboard.png)
+![dashboard.png](dashboard.png)
 
--  Sélectionnez le**Paramètres du compte** dans la barre de menu. Vérifiez vos paramètres et cliquez sur l'icône**Enregistrer les modifications** bouton pour confirmer.
+- Sélectionnez l’élément **Paramètres de compte** dans la barre de menu. Vérifiez vos paramètres, puis cliquez sur le bouton **Enregistrer les modifications** pour confirmer.
 
-![paramètres.png](settings.png)
+![settings.png](settings.png)
 
-## Obtenez vos informations d'identification de sécurité (identifiant client et secret)
+## Obtenir vos identifiants de sécurité (Client Id & Secret)
 
-Aspose accorde une grande importance à la sécurité. Nous utilisons le jeton JWT pour l'authentification et le chiffrement HTTPS de bout en bout afin de sécuriser toutes les interactions client-serveur.
+Aspose accorde une grande importance à la sécurité. Nous utilisons un jeton JWT pour l’authentification et un chiffrement HTTPS de bout en bout pour sécuriser toutes les interactions client-serveur.
 
- Une application est un ensemble d'informations d'identification uniques API —**Identifiant client** et**Secret client** Vous pouvez les utiliser pour vous authentifier lorsque vous appelez notre Cloud au API. Dans la plupart des cas, une seule application suffit. Dans certains cas plus complexes, vous souhaiterez peut-être enregistrer et utiliser plusieurs applications avec des comptes distincts.**Identifiant et secret du client** informations d'identification.
+Une **Application** est un ensemble d’identifiants API uniques : **Client Id** et **Client Secret**. Vous pouvez les utiliser pour vous authentifier lors de l’appel à notre API Cloud. Dans la plupart des cas, une seule Application suffit. Dans certains scénarios avancés, vous pouvez souhaiter enregistrer et utiliser plusieurs Applications dotées de credentials **Client Id** et **Client Secret** distincts.
 
-Pour accéder aux informations sur vos candidatures, veuillez suivre les étapes suivantes :
+Pour accéder aux informations relatives à vos Applications, procédez comme suit :
 
-1.  Connectez-vous à[Aspose Tableau de bord](https://dashboard.aspose.cloud/#/)
- 2. Sur le côté gauche de la page, cliquez sur le[Applications](https://dashboard.aspose.cloud/applications) languette.
+1. Connectez-vous au [Tableau de bord Aspose Cloud](https://dashboard.aspose.cloud/#/)
+2. Cliquez, sur le côté gauche de la page, sur l’onglet [Applications](https://dashboard.aspose.cloud/applications).
 
 ![applications.png](applications.png)
 
-3. Faites défiler vers le bas de la page, vous trouverez un bouton Créer une nouvelle application, cliquez dessus pour la créer.
+3. Faites défiler vers le bas de la page ; vous trouverez un bouton **Créer une nouvelle application**. Cliquez dessus pour créer une nouvelle application.
 
-![créerunenouvelleapplication.png](createnewapplication.png)
+![createnewapplication.png](createnewapplication.png)
 
-4. Accédez à la page de création, sélectionnez et saisissez le nom, la description et l'adresse de stockage que vous souhaitez créer, puis cliquez sur le bouton Enregistrer pour revenir à la page précédente après une création réussie.
+4. Sur la page de création, saisissez le nom, la description et l’adresse de stockage souhaités, puis cliquez sur le bouton **Enregistrer** pour revenir à la page précédente après la création réussie.
 
 ![applicationinfo.png](applicationinfo.png)
 
-5. Faites défiler vers le bas de la page, vous verrez la boîte d'informations sur l'application que vous venez de créer, cliquez dessus pour afficher et mettre à jour vos informations d'identification de sécurité.
+5. Faites à nouveau défiler vers le bas de la page ; vous verrez la boîte d’informations concernant l’Application que vous venez de créer. Cliquez dessus pour consulter et mettre à jour vos identifiants de sécurité.
 
-![premièreapplication.png](firstapp.png)
+![firstapp.png](firstapp.png)
 
 {{% alert style="info" %}}
 
-Félicitations ! Vous avez obtenu vos identifiants de sécurité pour authentifier les appels Aspose.Cells et API.
+Félicitations ! Vous avez obtenu avec succès vos identifiants de sécurité permettant d’authentifier vos appels à l’API Aspose.Cells.
 
 {{% /alert %}}
 
-## Choisir et installer le SDK
+## Choisir et installer un SDK
 
- Prenez le temps de vous familiariser avec la large gamme de produits Cloud Aspose.Cells afin de mieux comprendre vos possibilités. Ces logiciels sont conçus autour d'une architecture hautes performances.[Nuage API](https://apireference.aspose.com/), disponible 24h/24 et 7j/7.
+Veuillez prendre quelques instants pour vous familiariser avec la large gamme de produits Aspose.Cells Cloud, afin de mieux comprendre vos possibilités. Ces logiciels sont construits autour de l’[API Cloud](https://apireference.aspose.com/) haute performance, disponible 24h/24 et 7j/7.
 
- Pour une utilisation efficace du Cloud API, nous mettons à votre disposition une famille de puissants[SDK Cloud](https://products.aspose.cloud/cells/family)pour presque tous les principaux systèmes d'exploitation (Windows, macOS, Linux, Android) et langages de programmation populaires, y compris[Androïde](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Rubis](https://products.aspose.cloud/cells/ruby) , et[Rapide](https://products.aspose.cloud/cells/swift).
+Pour une utilisation efficace de l’API Cloud, nous proposons une famille d’[SDK Cloud](https://products.aspose.cloud/cells/family) puissants, adaptés à presque tous les principaux systèmes d’exploitation (Windows, macOS, Linux, Android) et aux langages de programmation les plus populaires, notamment [Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Ruby](https://products.aspose.cloud/cells/ruby) et [Swift](https://products.aspose.cloud/cells/swift).
 
- Tous les SDK ci-dessus sont hébergés sur[GitHub](https://github.com/aspose-cells-cloud/)Chaque référentiel contient une large gamme d’exemples de code pour illustrer son utilisation.
+Tous ces SDK sont hébergés sur [GitHub](https://github.com/aspose-cells-cloud/). Chaque dépôt contient une large variété d’exemples de code illustrant leur utilisation.
 
-## Consultez la documentation du développeur et les exemples de code
+## Consulter la documentation développeur et les exemples de code
 
- Votre compte est maintenant entièrement configuré et l'environnement de développement installé. Vous pouvez commencer à coder avec le SDK choisi. Veuillez consulter le[Guide du développeur](https://docs.aspose.cloud/cells/developer-guide/) pour des informations sur l'utilisation du Cloud API en toute simplicité.
+Votre compte est désormais entièrement configuré et votre environnement de développement installé. Vous pouvez désormais commencer à écrire du code à l’aide de l’SDK choisi. Veuillez consulter le [Guide du développeur](https://docs.aspose.cloud/cells/developer-guide/) pour obtenir des informations sur l’utilisation facile de l’API Cloud.
 
-par exemple Convertir un classeur vers d'autres formats.
+Par exemple : convertir un classeur vers d’autres formats.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -138,6 +139,6 @@ par exemple Convertir un classeur vers d'autres formats.
 
 {{< /tabs >}}
 
-## Demandez de l'aide, si nécessaire
+## Demander une assistance, si nécessaire
 
- N'hésitez pas à décrire vos problèmes et à poser des questions sur notre[Forums Cloud](https://forum.aspose.cloud/c/cells/7)L'équipe d'assistance technique du Aspose est là pour vous aider. Veuillez noter que le Aspose ne propose pas d'assistance technique par téléphone. L'assistance téléphonique est disponible uniquement pour les questions relatives aux ventes et aux achats.
+N’hésitez pas à décrire vos problèmes et à poser vos questions sur nos [Forums Cloud](https://forum.aspose.cloud/c/cells/7). L’équipe d’assistance technique d’Aspose est prête à vous aider. Notez qu’Aspose ne fournit pas de support technique par téléphone ; le support téléphonique est uniquement réservé aux questions relatives à la vente et à l’achat.

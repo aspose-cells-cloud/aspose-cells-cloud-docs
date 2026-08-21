@@ -1,87 +1,116 @@
-﻿---
-title: Lägg till ett diagram i ett arbetsblad
+---
+title: "Lägg till ett diagram i ett kalkylblad"
 type: docs
-url: /sv/charts/add/
+url: /charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lägg till ett diagram i ett kalkylblad
+description: "Lär dig hur du lägger till ett diagram i ett Excel-kalkylblad med Aspose.Cells Cloud API v3.0. Inkluderar slutpunkt, parametrar, cURL-exempel och SDK-utdrag."
+keywords:
+  - "lägg till diagram Aspose.Cells"
+  - "Aspose.Cells lägg till diagram API"
+  - "diagram API REST"
+  - "Aspose.Cells SDK-exempel"
+ArticleTitle: "Lägg till ett diagram i ett kalkylblad – Aspose.Cells Cloud API-guide"
 ---
-Denna REST API indikerar att ett nytt diagram ska läggas till i kalkylbladet.
- 
-## RSET API
- 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
- 
+
+Denna REST API lägger till ett nytt diagram i ett kalkylblad.
+
+**Förutsättningar**  
+Innan du anropar denna åtgärd, skaffa ett giltigt JWT-åtkomsttoken och se till att målarbokshändelsedokumentet lagras i den angivna mappen eller lagringsplatsen.
+
+## PutWorksheetAddChart API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ```
- Begäranparametrarna är:
- 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsboksnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| diagramtyp| sträng| fråga| Diagramtyp, se egenskapstyp i diagramresursen.|
-| övre vänsterrad| heltal| fråga|0 |
-| övre vänsterkolumn| heltal| fråga|0 |
-| nedre högerrad| heltal| fråga|0 |
-| nedre högerkolumn| heltal| fråga|0 |
-| område| sträng| fråga| Anger värden från vilka dataserien ska plottas.|
-| ärVertikal| boolesk| fråga| Sann|
-| kategoriData| sträng| fråga|Hämtar eller ställer in intervallet av kategoriaxelvärden. Det kan vara ett cellområde (t.ex. "d1:e10").|
-| ärAutoGetSeriellnamn| boolesk| fråga| Sann|
-| titel| sträng| fråga| Anger diagrammets titelnamn.|
-| mapp| sträng| fråga| Arbetsbokens mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
-| dataetiketter| boolesk| fråga| Sann|
-| dataEtiketterPosition| sträng| fråga| Ovan|
-| pivottabellArk| sträng| fråga||
-| pivottabellnamn| sträng| fråga||
- 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
- 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
 
+### **Säkerhet och autentisering**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
+
+### Begäransparametrar
+
+| Parameter Namn          | Typ     | Plats   | Beskrivning                                                                                                                                                                               |
+| ----------------------- | ------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**                | string  | path    | Arbetsbokens namn.                                                                                                                                                                        |
+| **sheetName**           | string  | path    | Kalkylbladets namn.                                                                                                                                                                       |
+| **chartType**           | string  | query   | Diagramtyp (se egenskapen **Type** i diagramresursen). Stödda diagramtyper inkluderar **Bar**, **Column**, **Line**, **Pie**, **Scatter**, **Area**, **Doughnut**, **Radar**, etc.      |
+| **upperLeftRow**        | integer | query   | Övre vänstra radindex för diagramområdet (0-baserat).                                                                                                                                     |
+| **upperLeftColumn**     | integer | query   | Övre vänstra kolumnindex för diagramområdet (0-baserat).                                                                                                                                  |
+| **lowerRightRow**       | integer | query   | Nedre högra radindex för diagramområdet (0-baserat).                                                                                                                                      |
+| **lowerRightColumn**    | integer | query   | Nedre högra kolumnindex för diagramområdet (0-baserat).                                                                                                                                   |
+| **area**                | string  | query   | Omfattning som innehåller värdena att plotta (t.ex. `A1:B5`).                                                                                                                             |
+| **isVertical**          | boolean | query   | Anger om diagrammets orientering är vertikal.                                                                                                                                             |
+| **categoryData**        | string  | query   | Omfattning för kategori-axelvärden (t.ex. `D1:E10`).                                                                                                                                      |
+| **isAutoGetSerialName** | boolean | query   | Om **true**, genereras serienamn automatiskt.                                                                                                                                             |
+| **title**               | string  | query   | Diagrammets rubrik.                                                                                                                                                                       |
+| **folder**              | string  | query   | Mappen som innehåller arbetsboken.                                                                                                                                                        |
+| **storageName**         | string  | query   | Namnet på lagringsplatsen.                                                                                                                                                                |
+| **dataLabels**          | boolean | query   | Visa dataetiketter när **true**.                                                                                                                                                         |
+| **dataLabelsPosition**  | string  | query   | Position för dataetiketter (t.ex. `Above`).                                                                                                                                              |
+| **pivotTableSheet**     | string  | query   | Namn på kalkylbladet som innehåller pivotdiagrammet.                                                                                                                                      |
+| **pivotTableName**      | string  | query   | Namn på pivotdiagrammet.                                                                                                                                                                  |
+
+### **Svar**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                                                 |
+|-----|-----------------------------|------------------------------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer.     |
+| 400 | Bad Request                 | Saknas eller ogiltiga parametrar (t.ex. filtyp som inte stöds).             |
+| 401 | Unauthorized                | Ogiltig eller saknad JWT-token.                                             |
+| 413 | Payload Too Large           | Den uppladdade filen överskrider storleksgränsen.                           |
+| 500 | Internal Server Error       | Oväntat serverfel.                                                          |
+
+## Hur du använder PutWorksheetAddChart API med SDK:er
+
+### PutWorksheetAddChart API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör ett anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl  -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/charts?chartType=Bar&area=B1:F2&title=SalesState" 
--X PUT
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/charts?chartType=Bar&area=B1:F2&title=SalesState" \
+-X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
+# Ingen begäranbråk krävs för denna åtgärd
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
- 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
- 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+### Använd Aspose.Cells Cloud SDK:er
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK abstraher bort detaljer på låg nivå och låter dig fokusera på dina projekttal. Se [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Perl" tabName9="Android" tabName10="Go" >}}
 
@@ -144,3 +173,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

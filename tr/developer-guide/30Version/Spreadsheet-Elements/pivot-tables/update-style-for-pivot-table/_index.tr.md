@@ -1,79 +1,91 @@
-﻿---
-title: Pivot tablo için stil güncellemesi
-second_title: Documen
-linktitle: Tümünü biçimlendir
-type: docs
-url: /tr/pivot-tables/format-all/
-aliases: [/update-style-for-pivot-table/]
-keywords: Update all cell style for a pivot table
-description: Aspose.Cells Cloud REST API, pivot tablolar için tüm hücre stillerinin güncellenmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Pivot tablo için stil güncellemesi
 ---
-Bu REST API, pivot tablo için `update` stilini gösterir
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/FormatAll
- 
+title: "Pivot tablosu için stil güncelleme"
+second_title: "Belge"
+linktype: "Biçimlendirme"
+type: docs
+url: /pivot-tables/format-all/
+aliases: [/update-style-for-pivot-table/]
+keywords: "pivot tablosu, stil güncelleme, Aspose.Cells Cloud, REST API, Excel, elektronik tablo, API, pivot tablo stili, tümünü biçimlendir"
+description: "Aspose.Cells Cloud REST API kullanarak bir pivot tablosunun tamamının stilini nasıl güncelleyeceğinizi öğrenin. İsteği detaylandıran bilgiler, cURL örneği ve birden fazla programlama dili için SDK kod parçacıkları içerir."
+weight: 100
+ArticleTitle: "Pivot tablosu için stil güncelleme - Aspose.Cells Cloud API"
+---
+
+Bu REST API, bir pivot tablosunun stilini günceller.
+
+## PostPivotTableStyle API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/FormatAll
 ```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| pivotTableIndex| tam sayı| yol| Pivot tablo dizini|
-| stil|| vücut| İstek gövdesinde stil dto.|
-| Yeniden Hesaplamayaihtiyacın Var| Boolean| sorgu|YANLIŞ|
-| dosya| sicim| sorgu| Belgenin klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
- 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableStyle) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+**Önkoşullar / Kimlik Doğrulama**  
+`Authorization` başlığındaki geçerli bir JWT erişim belirteci verilmelidir (örneğin, `Bearer <jwt token>`). Belirtecin belirtilen çalışma kitabına ve çalışma sayfasına erişim iznine sahip olduğundan emin olun.
+
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
+
+### **İstek parametreleri**
+
+| Parametre Adı   | Tür      | Konum | Açıklama                                                                                      |
+| ---------------- | -------- | ----- | ---------------------------------------------------------------------------------------------- |
+| name             | string   | path  | Çalışma kitabı dosyasının adı.                                                                 |
+| sheetName        | string   | path  | Pivot tabloyu içeren çalışma sayfası.                                                          |
+| pivotTableIndex  | integer  | path  | Biçimlendirilecek pivot tablonun sıfır tabanlı indeksi.                                        |
+| style            | object   | body  | Uygulanacak formatı tanımlayan bir stil DTO'su.                                               |
+| needReCalculate  | boolean  | query | Biçimlendirmeden sonra pivot tabloyu yeniden hesaplamak için **true** olarak ayarlayın; varsayılan **false**'tur. |
+| folder           | string   | query | Çalışma kitabının depolandığı klasör.                                                          |
+| storageName      | string   | query | Depolama hizmetinin adı.                                                                       |
+
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableStyle), erişilebilir bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'ye nasıl istek yapılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/FormatAll" \
--X POST \
--d '{"Font":{"Name":"Arial", "Size":10}}'
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/FormatAll" \
+  -X POST \
+  -d '{"Font":{"Name":"Arial","Size":10}}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                          |
+|-----|-----------------------------|---------------------------------------------------|
+| 200 | OK (Tamam)                  | Filtre başarıyla uygulandı; yanıt işlem detaylarını içerir. |
+| 400 | Bad Request (Hatalı İstek)  | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT belirteci. |
+| 413 | Payload Too Large (Çok Büyük Yük) | Yüklenecek dosya boyut sınırını aşıyor. |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası. |
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
- 
- 
- 
+
+## Bulut SDK Kütüphanesi
+
+SDK kullanmak, API’ye karşı en hızlı geliştirme yöntemidir. SDK, düşük seviye ayrıntıları soyutlayarak iş mantığınıza odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub deposuna</a> bakın.
+
+Aşağıdaki kod örneği, API’ye Go SDK kullanarak nasıl istekte bulunulacağını göstermektedir:
+
 {{< tabs tabTotal="1" tabID="4" tabName1="Go" >}}
 
 {{< tab tabNum="1" >}}

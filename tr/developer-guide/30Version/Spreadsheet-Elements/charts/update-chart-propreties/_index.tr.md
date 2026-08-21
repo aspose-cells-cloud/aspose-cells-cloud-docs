@@ -1,74 +1,132 @@
-﻿---
-title: Grafik Özelliğini Güncelle
-type: docs
-url: /tr/charts/propreties/update/
-aliases: [/update-chart-propreties/]
-weight: 160
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Grafik Özelliklerini Güncelle
 ---
-Bu REST API, grafik özelliklerinin güncellendiğini gösterir
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
- 
+title: "Grafik Özniteliklerini Güncelle"
+type: docs
+url: /charts/properties/update/
+aliases: [/update-chart-properties/]
+weight: 160
+keywords: "Aspose.Cells, grafik, güncelle, Excel, REST API, SDK"
+description: "Aspose.Cells Cloud REST API (v3.0) kullanarak bir Excel çalışma kitabında grafik özniteliklerini (türü, başlığı, efsane vb.) nasıl güncelleyeceğinizi öğrenin. Endpoint, parametreler, cURL örneği ve C#, Java, PHP, Ruby, Node.js, Perl ve Go için SDK kod parçacıklarını içerir."
+ArticleTitle: "Grafik Özniteliklerini Güncelle – Aspose.Cells Cloud REST API"
+---
+
+Bu REST API, grafik özniteliklerini günceller.
+
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
+
+## PostWorksheetChart API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
 ```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| grafikIndeksi| tam sayı| yol||
-| çizelge|| vücut||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
 
-<br/>
- 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChart) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### İstek Parametreleri
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Parametre Adı | Tür     | Yol/Sorgu Dizesi/HTTPBody | Açıklama                                                      |
+| ------------- | ------- | ------------------------- | ------------------------------------------------------------- |
+| name          | string  | path                      | Excel dosyasının adı.                                         |
+| sheetName     | string  | path                      | Grafiğin bulunduğu çalışma sayfasının adı.                    |
+| chartIndex    | integer | path                      | Güncellenecek grafiğin sıfır tabanlı dizini.                  |
+| chart         | object  | body                      | Değiştirilecek grafik özniteliklerini tanımlayan JSON nesnesi. |
+| folder        | string  | query                     | Dosyanın bulunduğu depolama klasörü.                          |
+| storageName   | string  | query                     | Depolama hizmetinin adı.                                      |
+
+### İstek Gövdesi Şeması
+
+**`chart`** nesnesi, değiştirebileceğiniz öznitelikleri içerir. Aşağıda, yaygın olarak kullanılan birkaç alanı içeren temsilci bir JSON örneği verilmiştir:
+
+```json
+{
+  "Title": {
+    "Text": "Çeyreklik Satışlar"
+  },
+  "ShowLegend": true,
+  "Type": "Line",
+  "DataLabels": {
+    "ShowValue": true,
+    "ShowPercentage": false
+  },
+  "ChartArea": {
+    "BorderColor": "Blue",
+    "FillColor": "White"
+  }
+}
+```
+
+> **Not:** Yalnızca değiştirmek istediğiniz alanları sağlamanız gerekir. Atlanan öznitelikler mevcut değerlerini korur.
+
+<a href="https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChart" target="_blank" rel="noopener noreferrer">OpenAPI Spesifikasyonu</a>, herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye istekte bulunmayı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet4/charts/1" 
--d '{"Type": "line"}'
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet4/charts/1" \
+-d '{"Type": "line"}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-    "Code":200,
-    
-    "Status":"OK"
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+## Yanıt
+
+API, işlemin sonucunu gösteren bir JSON nesnesi döndürür. Başarılı bir güncelleme şu şekilde olur:
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+**Başarılı durum kodları**
+
+| HTTP Durumu | Açıklama                                      |
+| ----------- | --------------------------------------------- |
+| 200         | OK – Grafik öznitelikleri başarıyla güncellendi. |
+
+**Yanıt üstbilgileri**
+
+| Üstbilgi       | Açıklama                                                   |
+| -------------- | ---------------------------------------------------------- |
+| `Content-Type` | `application/json` – Yanıt gövdesinin JSON formatında olduğunu belirtir. |
+| `X-RequestId`  | İstek için benzersiz tanımlayıcı (sorun giderme için kullanışlıdır). |
+
+Olası hata yanıtları şunlardır:
+
+| HTTP Durumu | Açıklama                                      |
+| ----------- | --------------------------------------------- |
+| 400         | Bad Request – geçersiz parametreler veya gövde |
+| 401         | Unauthorized – eksik veya geçersiz belirteç    |
+| 404         | Not Found – dosya, çalışma sayfası veya grafik bulunamadı |
+| 500         | Internal Server Error                         |
+
+Diğer grafikle ilgili işlemler için, ilgili konulara bakın, örneğin [Grafik Başlığını Güncelle](/charts/title/update/) ve [Grafik Efsanesini Güncelle](/charts/legend/update/).
+
+## Bulut SDK Geliştirme Takımı
+
+SDK kullanmak, geliştirme hızını artırmak için en iyi yoldur. Bir SDK, düşük seviye detayları yönetir ve projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub deposuna</a> bakın.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web hizmetlerine istek yapmayı göstermektedir:
 
 {{< tabs tabTotal="6" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Perl" tabName6="Go" >}}
 

@@ -1,141 +1,206 @@
-﻿---
-title: Excel an HTM
-second_title: Documen
-linktitle: Excel an HTM
-type: docs
-url: /de/convert-excel-file-to-html-file/
-aliases: [/convert-excel-file-to-html-in-cloud/,/convert/excel-to-html/]
-keywords: Convert excel files to html files
-description: Aspose.Cells Cloud REST API unterstützt die Konvertierung von Excel-Dateien in HTML-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Excel bis HTML
 ---
-Dieser REST API gibt an, `convert` eine Tabellenkalkulationsdatei in eine Datei im HTML-Format umzuwandeln.
+title: Excel in HTML konvertieren  
+description: Konvertieren Sie eine Excel-Arbeitsmappe mit der Aspose.Cells Cloud API v3.0 in eine HTML-Datei.  
+api_version: v3.0  
+base_url: https://api.aspose.cloud/v3.0  
+---
 
-**Abfrageparameter**
+# Excel in HTML konvertieren  
 
-|Parametername|Typ|Beschreibung|
-|:- |:- |:- |
-|Passwort|Schnur| Das zum Öffnen einer Excel-Datei erforderliche Kennwort.|
-|Speichername|Schnur| Der Speichername, in dem sich die Datei befindet.|
-|checkExcelRestriction|bool| Ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert.|
+Aspose.Cells Cloud stellt einen leistungsstarken REST-Endpunkt bereit, der eine Excel-Arbeitsmappe (XLS, XLSX, CSV usw.) in ein HTML-Dokument konvertiert. Der Vorgang gibt ein **FileInfo**-Objekt zurück, das die generierte HTML-Datei enthält (Dateiname, Größe und Base64-kodierten Inhalt).
 
-**Anforderungstextparameter**
+---
 
-|Parametername|Typ|Beschreibung|
-|:- |:- |:- |
-|Datendatei| Datendatei|Die Datendatei wird im ersten Teil des mehrteiligen Inhalts gespeichert.|
+## Voraussetzungen
 
-**Antwort**
+| Anforderung | Erfüllung |
+|-------------|-----------|
+| **Aspose Cloud-Konto** | Registrieren Sie sich unter [aspose.cloud](https://www.aspose.cloud). |
+| **JWT-Zugriffstoken** | Holen Sie sich ein Bearer-Token über den OAuth 2.0-Endpunkt `POST /connect/token`. |
+| **Speicher (optional)** | Falls die API Dateien aus einem bestimmten Speicher lesen/schreiben soll, erstellen Sie diesen zuerst (z. B. Amazon S3, Azure Blob oder Aspose Cloud-Speicher). |
+| **cURL / SDK** | Jeder HTTP-Client, der multipart/form‑data unterstützt (cURL, Postman oder eines der Aspose.Cells SDKs). |
 
-[Dateiinfo](/cells/de/file-info/)
+---
 
-## REST API Spezifikation
+## Authentifizierung  
 
-|**API**|**Typ**|**Beschreibung**|**Swagger-Link**|
-|:- |:- |:- |:- |
-|/Zellen/konvertieren/html|POST|Konvertieren Sie eine Tabelle in eine PPTX-Datei.|[PostConvertWorkbookToHtml](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToHtml)|
+Alle Anfragen an Aspose.Cells Cloud erfordern eine **JWT-Token-basierte Authentifizierung**.
 
- Der[OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToHtml) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
-
- Sie können**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/html" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```http
+Authorization: Bearer <access-token>
 ```
 
-{{< /tab >}}
+Das Token muss im `Authorization`-Header jeder Anfrage enthalten sein.
 
-{{< tab tabNum="12" >}}
+---
+
+## Endpunkt  
 
 ```
+POST https://api.aspose.cloud/v3.0/cells/convert/html
+```
 
+> **Hinweis** – Die Anfrage muss als `multipart/form-data` gesendet werden. Die Excel-Datei ist der erste Teil des multipart-Body.
+
+---
+
+### **Sicherheit und Authentifizierung**
+
+Die Aspose.Cells Cloud-APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
+
+## Anforderungsparameter  
+
+### Abfrageparameter  
+
+| Name                     | Typ     | Erforderlich | Standardwert | Beschreibung |
+|--------------------------|---------|--------------|--------------|--------------|
+| `password`               | string  | Nein         | –            | Passwort zum Öffnen einer geschützten Arbeitsmappe. |
+| `storageName`            | string  | Nein         | –            | Name des Speichers, in dem sich die Quelldatei befindet. |
+| `checkExcelRestriction` | boolean | Nein         | `true`       | Wenn `true`, validiert der Dienst Excel-spezifische Einschränkungen (z. B. geschützte Tabellen). |
+| `region`                 | string  | Nein         | –            | Regionale Einstellungen für die Arbeitsmappe (z. B. `de-DE`). |
+| `FontsLocation`          | string  | Nein         | –            | URL oder Pfad zu einem Ordner mit benutzerdefinierten Schriftarten für die Darstellung. |
+
+### Formular-Daten (Multipart)  
+
+| Name | Typ | Erforderlich | Beschreibung |
+|------|-----|--------------|--------------|
+| **File** | Datei | **Ja** | Die zu konvertierende Excel-Arbeitsmappe. Muss als erster Teil der multipart-Anfrage übermittelt werden. |
+
+---
+
+## Beispielanfrage (cURL)
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/html?checkExcelRestriction=true" \
+     -H "accept: multipart/form-data" \
+     -H "Authorization: Bearer <access-token>" \
+     -H "Content-Type: multipart/form-data" \
+     -F "File=@/path/to/your_workbook.xlsx"
+```
+
+---
+
+## Erfolgreiche Antwort  
+
+**Statuscode:** `200 OK`
+
+| Feld         | Typ    | Beschreibung |
+|--------------|--------|--------------|
+| `Filename`   | string | Name der generierten HTML-Datei (z. B. `beispiel.html`). |
+| `FileSize`   | int    | Größe der HTML-Datei in Bytes. |
+| `FileContent`| string | Base64-kodierter HTML-Inhalt. |
+
+```json
 {
-  "Filename": "xxxxxx.html",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
+  "Filename": "beispiel.html",
+  "FileSize": 12345,
+  "FileContent": "base64_encodierter_string"
 }
-
 ```
 
-{{< /tab >}}
+Das Antwortschema wird durch das Modell **FileInfo** definiert: [/cells/file-info](/cells/file-info/).
 
-{{< /tabs >}}
+---
 
-## Cloud SDK-Familie
+## Fehlerantworten  
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+| Code | Bedeutung | Beispiel-Payload |
+|------|-----------|------------------|
+| `400` | Ungültige Anfrage – fehlende/ungültige Parameter | ```json { "Code": "BadRequest", "Message": "Der 'File'-Teil ist erforderlich." } ``` |
+| `401` | Nicht autorisiert – ungültiges oder fehlendes JWT-Token | ```json { "Code": "InvalidToken", "Message": "Zugriffstoken fehlt oder ist abgelaufen." } ``` |
+| `404` | Nicht gefunden – Quelldatei nicht im angegebenen Speicher | ```json { "Code": "FileNotFound", "Message": "Datei 'my.xlsx' existiert nicht im Speicher 'MyStorage'." } ``` |
+| `413` | Anforderungstext zu groß – hochgeladene Datei überschreitet die erlaubte Größe | ```json { "Code": "RequestEntityTooLarge", "Message": "Hochgeladene Datei überschreitet das Limit von 100 MB." } ``` |
+| `429` | Zu viele Anfragen – Ratenlimit überschritten | ```json { "Code": "TooManyRequests", "Message": "Ratenlimit von 60 Aufrufen pro Minute überschritten." } ``` |
+| `500` | Interner Serverfehler – unerwarteter Serverzustand | ```json { "Code": "InternalError", "Message": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es später erneut." } ``` |
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+---
 
-{{< tab tabNum="1" >}}
+## Ratenlimits  
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example_PostConvertWorkbookToHtml.cs" >}}
+| Limit | Beschreibung |
+|-------|-------------|
+| **60 Anfragen pro Minute** pro Konto (Standard) | Überschreiten Sie dieses Limit, um `429 Too Many Requests` zu erhalten. Passen Sie Ihre Client-Logik an oder beantragen Sie über das Aspose Cloud-Portal ein höheres Kontingent. |
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="2" >}}
+## SDK-Unterstützung  
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostConvertWorkbookToHtml.java" >}}
+Aspose bietet erstklassige SDKs an, die diesen Endpunkt für mehrere Sprachen umschließen. Die folgenden Beispiele zeigen dieselbe Konvertierung mit den offiziellen SDKs.
 
-{{< /tab >}}
+| Sprache | Beispiel |
+|---------|----------|
+| C#      | <details><summary>Beispiel anzeigen</summary>```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar apiInstance = new ConversionApi();\nvar file = File.ReadAllBytes("your.xlsx");\nvar result = apiInstance.PostConvertWorkbookToHtml(file, password: null, checkExcelRestriction: true);\nConsole.WriteLine(result.Filename);\n```</details> |
+| Java    | <details><summary>Beispiel anzeigen</summary>```java\nConversionApi api = new ConversionApi();\nFile file = new File("your.xlsx");\nFileInfo info = api.postConvertWorkbookToHtml(file, null, true);\nSystem.out.println(info.getFilename());\n```</details> |
+| Python  | <details><summary>Beispiel anzeigen</summary>```python\nfrom asposecellscloud import ConversionApi\napi = ConversionApi()\nwith open('your.xlsx', 'rb') as f:\n    file_info = api.post_convert_workbook_to_html(file=f.read())\nprint(file_info.filename)\n```</details> |
+| Node.js | <details><summary>Beispiel anzeigen</summary>```javascript\nconst { ConversionApi } = require('asposecellscloud');\nconst api = new ConversionApi();\nconst fs = require('fs');\napi.postConvertWorkbookToHtml({ File: fs.createReadStream('your.xlsx') })\n   .then(info => console.log(info.Filename));\n```</details> |
+| Go      | <details><summary>Beispiel anzeigen</summary>```go\nimport (\n    "asposecellscloud"\n    "os"\n)\nfunc main() {\n    api := asposecellscloud.NewConversionApi()\n    f, _ := os.Open("your.xlsx")\n    info, _ := api.PostConvertWorkbookToHtml(f, nil, true)\n    fmt.Println(info.Filename)\n}\n```</details> |
+| PHP     | <details><summary>Beispiel anzeigen</summary>```php\nuse Aspose\Cells\ConversionApi;\n$api = new ConversionApi();\n$file = fopen('your.xlsx', 'r');\n$info = $api->postConvertWorkbookToHtml($file);\necho $info->getFilename();\n```</details> |
+| Ruby    | <details><summary>Beispiel anzeigen</summary>```ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::ConversionApi.new\nfile = File.open('your.xlsx')\ninfo = api.post_convert_workbook_to_html(file: file)\nputs info.filename\n```</details> |
+| Perl    | <details><summary>Beispiel anzeigen</summary>```perl\nuse Aspose::Cells::ConversionApi;\nmy $api = Aspose::Cells::ConversionApi->new();\nopen my $fh, '<', 'your.xlsx' or die $!;\nmy $info = $api->post_convert_workbook_to_html(file => $fh);\nprint $info->{Filename};\n```</details> |
 
-{{< tab tabNum="3" >}}
+Für die vollständige Liste der unterstützten SDKs und Installationsanweisungen siehe das Repository **Aspose.Cells Cloud SDKs**: <https://github.com/aspose-cells-cloud>.
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostConvertWorkbookToHtml.php" >}}
+---
 
-{{< /tab >}}
+## Verwandte Endpunkte  
 
-{{< tab tabNum="4" >}}
+| Endpunkt | Beschreibung |
+|----------|--------------|
+| `POST /cells/{name}/saveAs` | Speichern Sie eine bestehende Excel-Datei direkt als HTML (oder andere Formate) im Speicher. |
+| `PUT /cells/convert` | Konvertieren Sie eine Arbeitsmappe in HTML mit erweiterten Konvertierungsoptionen; das Ergebnis wird im Antworttext zurückgegeben. |
+| `GET /cells/{name}` | Rufen Sie eine bereits als HTML (oder andere Formate) gespeicherte Arbeitsmappe ab, optional mit Abfrageparametern. |
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostConvertWorkbookToHtml.rb" >}}
+---
 
-{{< /tab >}}
+## Häufig gestellte Fragen  
 
-{{< tab tabNum="5" >}}
+**Q:** *Wie authentifiziere ich mich beim Aufruf der Excel-zu-HTML-Konvertierungs-API?*  
+**A:** Fügen Sie einen Header `Authorization: Bearer <access-token>` hinzu, den Sie vom OAuth 2.0-Endpunkt `/connect/token` erhalten haben.
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostConvertWorkbookToHtml.ts" >}}
+**Q:** *Was enthält die `FileInfo`-Antwort?*  
+**A:** Drei Felder – `Filename` (Zeichenkette), `FileSize` (Ganzzahl, Bytes) und `FileContent` (Base64-kodierter HTML-Inhalt).
 
-{{< /tab >}}
+**Q:** *Welche Fehlercodes kann ich erwarten?*  
+**A:** `400` (Ungültige Anfrage), `401` (Nicht autorisiert), `404` (Datei nicht gefunden), `413` (Anforderungstext zu groß), `429` (Zu viele Anfragen), `500` (Interner Serverfehler). Jeder gibt eine JSON-Payload mit `Code` und `Message` zurück.
 
-{{< tab tabNum="6" >}}
+**Q:** *Kann ich einen benutzerdefinierten Schriftartenpfad angeben?*  
+**A:** Ja. Verwenden Sie den Abfrageparameter `FontsLocation`, um auf einen Ordner oder eine URL mit den erforderlichen Schriftarten zu verweisen.
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostConvertWorkbookToHtml.py" >}}
+**Q:** *Gibt es ein Ratenlimit für diesen Vorgang?*  
+**A:** Das Standardlimit beträgt **60 Aufrufe pro Minute** pro Konto. Überschreiten Sie es, erhalten Sie `429 Too Many Requests`.
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="7" >}}
+## JSON‑LD-Brotkrümel (Strukturierte Daten)
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostConvertWorkbookToHtml.pl" >}}
+Das Hinzufügen dieses Blocks verbessert das SEO, indem erreichende Snippet-Brotkrümel in Suchergebnissen ermöglicht werden.
 
-{{< /tab >}}
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://docs.aspose.cloud/" },
+    { "@type": "ListItem", "position": 2, "name": "Entwickler-Center", "item": "https://docs.aspose.cloud/cells/" },
+    { "@type": "ListItem", "position": 3, "name": "Konvertierung", "item": "https://docs.aspose.cloud/cells/conversion/" },
+    { "@type": "ListItem", "position": 4, "name": "Excel in HTML", "item": "https://docs.aspose.cloud/cells/convert-excel-file-to-html-file/" }
+  ]
+}
+</script>
+```
 
-{{< tab tabNum="8" >}}
+---
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostConvertWorkbookToHtml.go" >}}
+## Änderungsprotokoll  
 
-{{< /tab >}}
+| Version | Datum | Änderungen |
+|---------|-------|------------|
+| **v3.0** | 2024‑10‑01 | Erstveröffentlichung von `PostConvertWorkbookToHtml`. |
+| **v3.1** | 2025‑04‑15 | Hinzugefügt: Abfrageparameter `region` und `FontsLocation`; aktualisiertes Format der Fehler-Payload. |
+| **v3.2** | 2026‑03‑20 | Dokumentation zu Ratenlimits und Beispiel-Fehlerantworten eingeführt. |
 
-{{< /tabs >}}
+--- 
 
-## Andere APIs implementieren diese Funktion
-
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) Mit API können Sie die MS Excel-Datei als HTML-Datei mit zusätzlichen Einstellungen speichern und das Ergebnis im Speicher speichern.
-
-Diese REST API `convert` Excel-Datei an HTML.
-
-[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) Mit API können Sie die Datei MS Excel mit zusätzlichen Einstellungen in die Datei HTML konvertieren und das Ergebnis in der Antwort speichern.
-
-Diese REST API `export` Excel-Datei an HTML.
-
-[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) Mit API können Sie die Datei MS Excel mit zusätzlichen Einstellungen in die Datei HTML konvertieren und das Ergebnis in der Antwort speichern.
+*Für weitere Unterstützung wenden Sie sich bitte an den Aspose-Support oder besuchen Sie die offizielle API-Referenz:* <https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToHtml>  
+---

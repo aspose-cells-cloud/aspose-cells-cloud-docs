@@ -1,76 +1,118 @@
-﻿---
-title: Toplu Kilit Excel Dosyası
-second_title: Documen
-type: docs
-url: /tr/batch/lock
-keywords: Batch lock of multiple Excel files
-description: Aspose.Cells Cloud API, birden fazla Excel dosyasının toplu kilitlenmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Toplu Kilit
 ---
-Bu REST API, `batch lock`'e uygun dosyaları gösterir.
+title: "Excel Dosyalarını Toplu Kilitleyin"
+second_title: "Belge"
+type: docs
+url: /batch/lock
+keywords: "toplu kilit, Excel, Aspose.Cells, Bulut API'si, elektronik tablo, dosya koruma"
+description: "Aspose.Cells Cloud API, birden fazla Excel dosyasını toplu olarak kilitlemenizi sağlar. Dosyaları toplu kilitlemek için REST uç noktası veya desteklenen SDK'ların herhangi birini (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go vb.) kullanın."
+weight: 100
+---
 
-## RSET API
+Bu REST API, uygun Excel dosyalarının **toplu kilitlemesini** sağlar.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/lock
- 
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| Toplu Kilit İsteği|| vücut||
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-**BatchLockRequest Özellikleri**
 
-Adı | Türü | Açıklama | Notlar
------------- | ------------- | ------------- | -------------
- KaynakKlasör | dize | | [isteğe bağlı]EşleşmeKoşulu | EşleşmeKoşuluİsteği | | [isteğe bağlı]Parola | dize | | [isteğe bağlı]ÇıkışKlasörü | dize | | [isteğe bağlı]**MatchConditionRequest Özellikleri**
+### İstek Parametreleri
 
-Adı | Türü | Açıklama | Notlar
------------- | ------------- | ------------- | -------------
- RegexPattern | dize | | [isteğe bağlı]FullMatchConditions | dize[]| | [isteğe bağlı][OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/Batch/PostBatchLock) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+| Parametre Adı   | Tür               | Konum | Açıklama                                 |
+|------------------|--------------------|----------|---------------------------------------------|
+| BatchLockRequest | BatchLockRequest   | body     | Kilitleme parametrelerini içeren JSON gövdesi.      |
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+#### **BatchLockRequest** Özellikleri
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Ad              | Tür                     | Açıklama                                            | Notlar    |
+|-----------------|--------------------------|--------------------------------------------------------|----------|
+| SourceFolder    | string                   | Kaynak Excel dosyalarını içeren klasör.           | isteğe bağlı |
+| MatchCondition  | MatchConditionRequest    | Hangi dosyaların kilitleneceğini seçmek için kullanılan koşullar.         | isteğe bağlı |
+| Password        | string                   | Kilidili dosyalara uygulanacak şifre.                | isteğe bağlı |
+| OutFolder       | string                   | Kilidili dosyaların bulunacağı hedef klasör.              | isteğe bağlı |
+
+#### **MatchConditionRequest** Özellikleri
+
+| Ad                 | Tür      | Açıklama                                          | Notlar    |
+|--------------------|----------|------------------------------------------------------|----------|
+| RegexPattern       | string   | Dosya adlarını eşleştirmek için normal ifade deseni.      | isteğe bağlı |
+| FullMatchConditions| string[] | Kilitlemek için tam dosya adı eşleşmeleri.                 | isteğe bağlı |
+
+### İstek Gövdesi Parametresi
+
+| Parametre Adı | Tür | Açıklama                                    |
+| -------------- | ---- | ---------------------------------------------- |
+| data           | file | Oluşturulacak çalışma kitapğı dosyasının ikili içeriği. |
+  
+### **Yanıt**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlamı                     | Ne Zaman Döndürülür                           |
+|------|-----------------------------|-----------------------------------------|
+| 200 OK | Çalışma kitabı başarıyla oluşturuldu | Normal akış                              |
+| 201 Created | Çalışma kitabı oluşturuldu (alternatif yanıt) | API oluşturuldu durumunu döndürdüğünde |
+| 400 Bad Request | Geçersiz parametreler | İstemci tarafında hata                        |
+| 401 Unauthorized | Eksik veya geçersiz belirteç | Kimlik doğrulama hatası                    |
+| 409 Conflict | Dosya mevcut ve `isWriteOver=false` | Mevcut dosya ile çakışma    
+
+## SDK'lar ile PostBatchLock API'sini Nasıl Kullanılır
+
+### PostBatchLock API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/Batch/PostBatchLock), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sini nasıl çağıracağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/lock" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\"}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK'larını Kullanma
 
- Geliştirmeyi hızlandırmanın en iyi yolu bir SDK kullanmaktır. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve kilitleme görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. SDK, düşük seviyeli detayları soyutlayarak kilitleme görevlerinize odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK'lar kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +165,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

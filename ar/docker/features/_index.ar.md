@@ -1,45 +1,75 @@
-﻿---
-title: "Aspose.Cells وظيفة Cloud Docker الأساسية: تحويل جداول البيانات، ودمجها، وتقسيمها، وحمايتها، ومعالجة البيانات، والمزيد"
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Docker Core Functionalit
-linktitle: ميزة
-type: docs
-url: /ar/docker-container-features/
-description: Aspose.Cells Cloud Docker Container عبارة عن خدمة حاويات مقدمة من Aspose تعتمد على Docker، مما يسمح لك بنشر وظائف Aspose.Cells Cloud API في بيئات سحابية محلية أو خاصة دون الاعتماد على خدمات السحابة العامة Aspose
-weight: 30
-kwords: Excel حاوية Docker السحابية، حاوية Docker ذاتية السحابة، حاوية REST Docker، جدول بيانات، PDF، CSV، JSON، Markdown، صورة Docker، حاوية Docker
 ---
-## ما هو Aspose.Cells Cloud Docker Container؟
+title: "الوظائف الأساسية لحاوية Aspose.Cells Cloud Docker: تحويل الجداول الحسابية، دمجها، تقسيمها، حمايتها، معالجة البيانات، والمزيد."
+second_title: "وثيقة"
+ArticleTitle: "الوظائف الأساسية لحاوية Aspose.Cells Cloud Docker"
+linktitle: "الميزات"
+type: docs
+url: /docker-container-features/
+description: "تشغيل واجهة Aspose.Cells Cloud API محليًا باستخدام حاوية Aspose.Cells Cloud Docker — وهي خدمة مُحتَصرة مبنية على Docker وتوفّر معالجة كاملة للجداول الحسابية مع ضمان الخصوصية والقدرة على العمل دون اتصال بالإنترنت دون الاعتماد على السحابة العامة لـ Aspose."
+weight: 30
+keywords:
+  - Aspose.Cells
+  - Docker
+  - تحويل الجداول الحسابية
+  - معالجة Excel
+  - تصدير PDF
+  - التعامل مع CSV
+  - واجهة REST API
+  - خدمة مُحتَصرة
+  - سحابة خاصة
+  - معالجة دون اتصال بالإنترنت
+---
 
-Aspose.Cells Cloud Docker Container عبارة عن خدمة حاويات تقدمها Aspose وتعتمد على Docker، مما يسمح لك بنشر وظائف Aspose.Cells Cloud API في بيئات سحابية محلية أو خاصة دون الاعتماد على خدمات السحابة العامة Aspose.
+## ما هي حاوية Aspose.Cells Cloud Docker؟
 
-## لماذا تستخدم Aspose.Cells Cloud Docker Container؟
+حاوية Aspose.Cells Cloud Docker هي خدمة مُحتَصرة تُقدّمها Aspose وتستند إلى تقنية Docker، وتتيح لك نشر وظائف واجهة Aspose.Cells Cloud API في بيئات محلية أو سحابية خاصة دون الاعتماد على خدمات السحابة العامة لـ Aspose.
 
-Aspose.Cells Cloud Docker Container عبارة عن حاوية خدمات معالجة جداول بيانات قوية تدعم:
+## لماذا يجب استخدام حاوية Aspose.Cells Cloud Docker؟
+
+حاوية Aspose.Cells Cloud Docker هي خدمة مُحتَصرة قوية لمعالجة الجداول الحسابية وتُدعم بها ما يلي:
 
 ### الميزات الأساسية
 
-- قراءة وكتابة ملفات Excel (XLS، XLSX، CSV، ODS، وما إلى ذلك)
-- حسابات الصيغة، المخططات البيانية، التنسيق الشرطي، جدول المحور، المخطط البياني، وما إلى ذلك
-- تحويل التنسيق (مثل Excel إلى PDF، HTML، الصور، وما إلى ذلك)
-- عمليات الخلية، وإعدادات النمط، وإدارة أوراق العمل، وما إلى ذلك
+- قراءة وكتابة ملفات Excel (XLS و XLSX و CSV و ODS وما إلى ذلك)
+- حساب الصيغ، الرسوم البيانية، التنسيق الشرطي، الجداول المحورية، إلخ.
+- تحويل التنسيقات (مثل Excel إلى PDF و HTML والصور وما إلى ذلك)
+- عمليات الخلايا، إعدادات التنسيق، إدارة أوراق العمل، إلخ.
 
-يقوم Cloud Docker Container بتغليف هذه الميزات كـ RESTful ويجمعها في صورة Docker، مما يسمح لك بتشغيلها على البنية الأساسية الخاصة بك.
+تحتوي حاوية Aspose.Cells Cloud Docker على هذه الميزات كواجهة RESTful API وتُغلفها في صورة Docker، ما يسمح لك بتشغيلها على البنية التحتية الخاصة بك.
 
 ### المزايا الرئيسية
 
-| فوائد| وصف|
-|:- |:- |
-| خصوصية البيانات والأمان| يتم إجراء كافة عمليات معالجة الملفات داخل شبكتك الخاصة، ولا حاجة إلى تحميلها إلى سحابة تابعة لجهة خارجية.|
-| التوفر دون اتصال بالإنترنت| لا يعتمد على السحابة العامة Aspose، وهو مناسب للبيئات الداخلية أو المعزولة.|
-| قابلية التوسع| يمكنك بسهولة توسيع نطاق via Docker/Kubernetes.|
-| الموحد API| متوافق تمامًا مع Aspose.Cells Cloud public API، ولا يتطلب أي تغييرات في الكود.|
-| مراقبة التراخيص| يدعم نوعين من التصاريح، اختر النوع الذي يناسبك بناءً على وضعك الفعلي.|
+| المزايا                             | الوصف                                                                 |
+| ----------------------------------- | --------------------------------------------------------------------- |
+| خصوصية البيانات والأمان            | تتم جميع عمليات الملفات داخل شبكتك الخاصة؛ ولا يلزم رفعها إلى سحابة طرف ثالث. |
+| التوفّر دون اتصال بالإنترنت        | لا تعتمد على السحابة العامة لـ Aspose، مما يجعلها مناسبة للشبكات الداخلية أو البيئات المعزولة. |
+| القابلية للتوسّع                  | قابلة للتوسّع بسهولة عبر Docker/Kubernetes.                         |
+| واجهة برمجة تطبيقات موحدة         | متوافقة بالكامل مع واجهة Aspose.Cells Cloud API العامة؛ ولا يلزم إجراء أي تعديلات على الكود. |
+| التحكم في الترخيص                  | تدعم نوعين من التفويض؛ واختر ما يناسب وضعك.                          |
 
-## كيفية استخدام Aspose.Cells Cloud Docker Container
+## كيفية استخدام حاوية Aspose.Cells Cloud Docker
 
- راجع دليل المستخدم --[كيفية استخدام Aspose.Cells Cloud Docker Container](https://docs.aspose.cloud/cells/docker-developer-guide/#run-asposecells-cloud-docker-container).
+راجع دليل المستخدم — [كيفية استخدام حاوية Aspose.Cells Cloud Docker](https://docs.aspose.cloud/cells/docker-developer-guide/#run-asposecells-cloud-docker-container).
 
-## وثيقة مرجعية
+**المتطلبات المسبقة**
 
-- [كيفية تكوين تخزين حاوية Cloud Docker Aspose.Cells.](https://docs.aspose.cloud/cells/docker/storage/)
+- تثبيت محرك Docker الإصدار 20.10 أو أحدث على الجهاز المضيف.  
+- تخصيص 2 جيجابايت كحد أدنى من الذاكرة العشوائية (RAM) ونواتَيْ معالجة (CPU) للحاوية لتشغيل أعباء العمل النموذجية.  
+- وجود ملف ترخيص Aspose.Cells Cloud صالح (أو رمز وصول) مُخزّن في دليل سيتم تحميله داخل الحاوية.
+
+**بدء سريع**
+
+1. اسحب صورة Docker: `docker pull aspose/cells-cloud`.  
+2. شغّل الحاوية مع تحميل أدلة الترخيص والبيانات، على النحو التالي:  
+   ```bash
+   docker run -d -p 8080:80 \
+     -v /path/to/license:/app/license \
+     -v /path/to/data:/app/data \
+     aspose/cells-cloud
+   ```  
+3. اتصل بواجهة REST API عبر `http://localhost:8080/v3.0/`. للاطّلاع على استخدام مفصّل لواجهة API، راجع [مرجع واجهة Aspose.Cells Cloud API](https://docs.aspose.cloud/cells/api-reference/).
+
+## الوثائق المرجعية
+
+- [كيفية تكوين تخزين حاوية Aspose.Cells Cloud Docker.](https://docs.aspose.cloud/cells/docker/storage/)
+---

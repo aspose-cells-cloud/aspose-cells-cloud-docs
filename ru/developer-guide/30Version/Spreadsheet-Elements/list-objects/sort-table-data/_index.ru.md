@@ -1,66 +1,101 @@
-﻿---
-title: Сортировка данных объекта списка на рабочем листе Excel
-second_title: Documen
-linktitle: Сор
+---
+title: "Сортировка данных ListObject в рабочем листе Excel"
+second_title: "Документ"
+linktitle: "Сортировка"
 type: docs
 url: /ru/list-objects/sort-data/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/sort-data/]
-keywords: Sort a list object(table) in an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает сортировку списка объектов (таблиц) на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
+keywords: "Aspose.Cells Cloud, Excel, ListObject, Сортировка данных, REST API, Рабочий лист"
+description: "Узнайте, как сортировать данные ListObject (таблицы) в рабочем листе Excel с помощью REST API Aspose.Cells Cloud (версия 3.0). Приведены конечная точка, параметры, пример запроса cURL и примеры SDK."
 weight: 40
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Сортировка данных объекта списка на листе Excel
+ArticleTitle: "Сортировка данных ListObject в рабочем листе Excel – API Aspose.Cells Cloud"
 ---
-Этот REST API указывает `sort table's data` на рабочем листе Excel.
 
-## РСЕT API
+**Необходимые условия**  
+Для вызова этого API требуется действительный JWT-токен доступа Aspose Cloud, а также загруженная рабочая книга в облачное хранилище Aspose Cloud. В каждый запрос необходимо добавлять заголовок `Authorization: Bearer <jwt token>`.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/sort
- 
+Этот REST API выполняет сортировку данных таблицы в рабочем листе Excel.  
+Для использования этой операции укажите имя рабочей книги, имя рабочего листа и индекс целевого ListObject, а также JSON-тело `dataSorter`, определяющее критерии сортировки.
+
+## API PostWorksheetListObjectSortTable
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/sort
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь||
-| Имя_листа| нить| путь||
-| listObjectIndex| целое число| путь||
-| сортировщик данных|| тело||
-| папка| нить| запрос||
-| имя_хранилища| нить| запрос| имя хранилища.|
+API Aspose.Cells Cloud являются безопасными и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSortTable) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### **Параметры запроса**
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра  | Тип    | Путь / Строка запроса / HTTP-тело | Описание                                                                                                     |
+| --------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| name            | string  | path                       | Имя файла Excel, хранящегося в облачном хранилище Aspose Cloud.                                                      |
+| sheetName       | string  | path                       | Имя рабочего листа, содержащего ListObject.                                                         |
+| listObjectIndex | integer | path                       | Индекс ListObject (таблицы) в рабочем листе (начиная с нуля).                                                |
+| dataSorter      | object  | body                       | JSON-объект, определяющий параметры сортировки (например, `CaseSensitive`, `HasHeaders`, `KeyList`, `SortLeftToRight`). |
+| folder          | string  | query                      | Путь к папке в хранилище, где расположен файл Excel.                                                         |
+| storageName     | string  | query                      | Имя облачного хранилища Aspose Cloud.                                                                               |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Примечания**  
+Тело запроса должно быть допустимым JSON-объектом, соответствующим схеме `dataSorter`. Убедитесь, что рабочая книга, рабочий лист и ListObject существуют перед вызовом операции сортировки.
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSortTable) определяет публично доступное программное интерфейсное API и позволяет выполнять взаимодействие с REST напрямую из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как выполнять вызовы в облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet7/listobjects/1/sort" \
--X POST \
--d "{ \"CaseSensitive\": true, \"HasHeaders\": true, \"KeyList\": [ { \"Key\": 1, \"SortOrder\": \"Ascending\", \"CustomList\": \"string\" } ], \"SortLeftToRight\": true}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -d '{
+        "CaseSensitive": true,
+        "HasHeaders": true,
+        "KeyList": [
+          {
+            "Key": 1,
+            "SortOrder": "Ascending",
+            "CustomList": "string"
+          }
+        ],
+        "SortLeftToRight": true
+      }' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**Коды HTTP-статуса**
+
+| Код статуса | Описание                              |
+|------------|------------------------------------------|
+| 200        | OK – сортировка успешно завершена.    |
+| 400        | Bad Request – недопустимые параметры.       |
+| 401        | Unauthorized – ошибка аутентификации.    |
+| 404        | Not Found – рабочая книга, рабочий лист или ListObject не найдены. |
+| 500        | Internal Server Error – внутренняя проблема сервера.|
+
+**Параметры ответа**
+
+| Параметр | Тип    | Описание                                 |
+|-----------|---------|---------------------------------------------|
+| Code      | integer | HTTP-код статуса, возвращаемый API.       |
+| Status    | string  | Текстовое описание результата (например, "OK"). |
 
 {{< /tab >}}
 
@@ -68,9 +103,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet7/listob
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали и позволяет сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Приведённые ниже примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +158,5 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet7/listob
 {{< /tab >}}
 
 {{< /tabs >}}
+
+[Вернуться к обзору ListObjects](/ru/list-objects/)

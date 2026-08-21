@@ -1,74 +1,112 @@
-﻿---
-title: Définir la mise en page d'une feuille de calcul
-second_title: Documen
-linktitle: Définir les paramètres de page
+---
+title: "Définir la mise en page pour une feuille de calcul"
+second_title: "Document"
+linktype: "Définir la mise en page"
 type: docs
 url: /fr/set-page-setup/
-keywords: Set page setup for an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge l'ajout d'une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+keywords: "Aspose.Cells, Excel, mise en page, API REST, feuille de calcul, SDK cloud"
+description: "Découvrez comment définir la mise en page d'une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud. Inclut les détails de la requête, un exemple sécurisé en HTTPS utilisant cURL, les codes de statut de réponse et des extraits de code SDK pour plusieurs langages de programmation."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Définir la mise en page pour une feuille de calcul Excel
+ArticleTitle: "Définir la mise en page pour une feuille de calcul – Guide de l'API Aspose.Cells Cloud"
 ---
-Ce REST API indique `Set page setup for an Excel worksheet`.
 
-## RSET API
+Conditions préalables : Pour appeler cette API, vous devez disposer d’un jeton JWT (OAuth) valide, et le classeur doit se trouver dans un emplacement de stockage Aspose Cloud où vous avez les autorisations de lecture/écriture. Assurez-vous que le jeton est inclus dans l’en-tête **Authorization** et que votre compte dispose du quota API nécessaire.
+
+Cette API REST permet de définir la mise en page d’une feuille de calcul Excel.
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup
-
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Le nouveau nom de la feuille.|
-|[configuration de la page](/cells/fr/page-setup) | objet| corps| Description de la configuration de la page.|
-| dossier| chaîne| requête| Dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API REST d’Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://reference.aspose.cloud/cells/#/PageSetup/PostPageSetup) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### **Paramètres de la requête**
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom du paramètre | Type   | Emplacement | Description                   |
+| ---------------- | ------ | ----------- | ----------------------------- |
+| name             | string | path        | Nom du document.              |
+| sheetName        | string | path        | Nom de la feuille de calcul.  |
+| pageSetup        | object | body        | Description de la mise en page. |
+| folder           | string | query       | Dossier du document.          |
+| storageName      | string | query       | Nom du stockage.              |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Exemple de charge utile JSON pour l’objet `pageSetup`**
+
+```json
+{
+  "pageSetup": {
+    "orientation": "Portrait",
+    "paperSize": "A4",
+    "fitToPagesTall": 1,
+    "fitToPagesWide": 1,
+    "centerHorizontally": true,
+    "centerVertically": false
+  }
+}
+```
+
+La <a href="https://reference.aspose.cloud/cells/#/PageSetup/PostPageSetup" target="_blank" rel="noopener noreferrer">spécification OpenAPI</a> définit une interface de programmation publiquement accessible et permet d’effectuer directement des interactions REST depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web d’Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks/pagesetup" \
--X PUT \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks/pagesetup" \
+-X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d {pageSetup}
- 
+-H "Authorization: Bearer <jeton jwt>" \
+-d '{
+  "pageSetup": {
+    "orientation": "Portrait",
+    "paperSize": "A4",
+    "fitToPagesTall": 1,
+    "fitToPagesWide": 1,
+    "centerHorizontally": true,
+    "centerVertically": false
+  }
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+L’API renvoie un objet JSON indiquant le résultat de l’opération :
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Codes de statut de réponse possibles**
+
+| Code | Signification               | Cas                                                                 |
+|------|-----------------------------|---------------------------------------------------------------------|
+| 200  | OK                          | Mise à jour de la mise en page réussie                             |
+| 400  | Requête incorrecte          | Charge utile JSON invalide ou champs obligatoires manquants        |
+| 401  | Non autorisé                | Jeton JWT manquant ou invalide                                     |
+| 404  | Non trouvé                  | Le classeur ou le nom de la feuille de calcul n’existe pas         |
+| 500  | Erreur interne du serveur   | Échec inattendu du serveur                                         |
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le meilleur moyen d’accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK d’Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

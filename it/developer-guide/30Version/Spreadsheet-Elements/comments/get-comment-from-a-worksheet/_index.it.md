@@ -1,102 +1,119 @@
-﻿---
-title: Ge
-type: docs
-url: /it/comments/get/
-aliases: [/get-comment-from-a-worksheet/]
-keywords: REST API, spreadsheets, excel, get commen
-description: "Cells.Cloud API per Excel opera: ottieni commento"
-weight: 10
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni
 ---
-Questo REST API indica Ottieni commento del foglio di lavoro in base al nome della cella.
+title: "Ottieni il commento del foglio di calcolo – Documentazione API di Aspose.Cells Cloud"
+type: docs
+url: /comments/get/
+aliases: [/get-comment-from-a-worksheet/]
+keywords: "Aspose.Cells, commento del foglio di calcolo, API, GET, Excel"
+description: "Scopri come recuperare un commento di un foglio di calcolo per nome di cella utilizzando l'API di Aspose.Cells Cloud (v3.0). Include l'URL della richiesta, i parametri, un esempio cURL, i dettagli della risposta e frammenti di codice SDK."
+weight: 10
+ArticleTitle: "Ottieni il commento del foglio di calcolo – Documentazione API di Aspose.Cells Cloud"
+---
 
-## RSET API
+Questa REST API consente di recuperare un commento di un foglio di calcolo per nome di cella utilizzando **Aspose.Cells Cloud**.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
- 
+**Prerequisiti:** Per chiamare questa operazione, è necessario includere un token di accesso JWT valido nell'header `Authorization` (`Bearer <jwt token>`). I token possono essere ottenuti tramite il flusso di autenticazione di Aspose.Cells Cloud descritto nella [guida all'autenticazione](/cells/authentication/).
+
+## API GetWorksheetComment
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome del documento.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| nomecella| corda| sentiero| Il nome della cella|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetComment) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### Parametri della richiesta
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Nome parametro | Tipo   | Posizione (percorso URL / stringa di query) | Descrizione                                                          |
+| -------------- | ------ | ------------------------------------------- | -------------------------------------------------------------------- |
+| name           | string | Percorso URL                                | Nome del file Excel.                                                |
+| sheetName      | string | Percorso URL                                | Nome del foglio di calcolo contenente il commento.                  |
+| cellName       | string | Percorso URL                                | Indirizzo della cella (ad esempio **A1**) di cui recuperare il commento. |
+| folder         | string | Stringa di query                            | Percorso della cartella in cui è memorizzato il documento.          |
+| storageName    | string | Stringa di query                            | Nome del servizio di archiviazione.                                 |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+La <a href="https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetComment" rel="noopener noreferrer">specifiche OpenAPI</a> definiscono un'interfaccia di programmazione pubblicamente accessibile e consente di effettuare interazioni REST direttamente da un browser web.
+
+È possibile utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare una chiamata all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/A1" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-    "Comment":{
-
-    "CellName":"A1",
-
-    "Author":"roy.wang",
-
+  "Comment": {
+    "CellName": "A1",
+    "Author": "roy.wang",
     "HtmlNote": "",
-
     "Note": "Aspose.Cells Cloud.",
-
     "AutoSize": "True",
-
     "IsVisible": "True",
-
     "Width": 30,
-
     "Height": 10,
-
     "TextHorizontalAlignment": "Bottom",
-
     "TextOrientationType": "TopToBottom",
-
     "TextVerticalAlignment": "Bottom"
-
-    },
- 
-   "Code": 200,
-
-   "Status": "OK"
-
+  },
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+**Risposta:** L'API restituisce un oggetto JSON contenente un oggetto `Comment` con i seguenti campi:
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+| Campo                      | Tipo    | Descrizione                                                |
+| -------------------------- | ------- | ---------------------------------------------------------- |
+| `CellName`                 | string  | Indirizzo della cella (ad esempio **A1**).                 |
+| `Author`                   | string  | Nome dell'autore del commento.                             |
+| `HtmlNote`                 | string  | Contenuto del commento in formato HTML (se presente).      |
+| `Note`                     | string  | Versione in testo normale del commento.                    |
+| `AutoSize`                 | boolean | Indica se il riquadro del commento si ridimensiona automaticamente. |
+| `IsVisible`                | boolean | Determina se il commento è visibile.                       |
+| `Width`                    | integer | Larghezza del riquadro del commento (in caratteri).        |
+| `Height`                   | integer | Altezza del riquadro del commento (in caratteri).          |
+| `TextHorizontalAlignment` | string  | Allineamento orizzontale del testo (ad esempio **Bottom**). |
+| `TextOrientationType`      | string  | Orientamento del testo (ad esempio **TopToBottom**).       |
+| `TextVerticalAlignment`    | string  | Allineamento verticale del testo (ad esempio **Bottom**).  |
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+## Errori comuni
+
+- **401 Unauthorized** – Verificare che il token JWT sia valido, non scaduto e correttamente inserito nell'header `Authorization`.
+- **404 Not Found** – Assicurarsi che il nome del file, il nome del foglio e l'indirizzo della cella siano corretti e che il file esista nella cartella/archiviazione specificata.
+- **500 Internal Server Error** – Verificare la presenza di dati malformed nel payload della richiesta e confermare che il servizio sia operativo.
+
+**Codici di stato HTTP**
+
+| Codice | Significato              | Descrizione                                              |
+|--------|--------------------------|----------------------------------------------------------|
+| 200  | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400  | Richiesta non valida (Bad Request) | Parametri mancanti o non validi (ad esempio tipo di file non supportato). |
+| 401  | Non autorizzato (Unauthorized)     | Token JWT non valido o mancante. |
+| 413  | Payload troppo grande (Payload Too Large) | Il file caricato supera il limite di dimensione. |
+| 500  | Errore interno del server (Internal Server Error) | Errore imprevisto del server. |
+
+## Famiglia di SDK Cloud
+
+L'utilizzo di un SDK rappresenta il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">repository GitHub</a> per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come effettuare chiamate ai servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

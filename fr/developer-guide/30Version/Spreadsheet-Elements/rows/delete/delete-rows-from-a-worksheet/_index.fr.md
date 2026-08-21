@@ -1,75 +1,87 @@
-﻿---
-title: Supprimer plusieurs lignes sur une feuille de calcul Excel
-second_title: Documen
-linktitle: Rangée
-type: docs
-url: /fr/rows/delete/rows/
-keywords: Delete rows on an Excel workshee
-description: Aspose.Cells Cloud REST API prend en charge la suppression de lignes dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 80
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Supprimer plusieurs lignes sur une feuille de calcul Excel
 ---
-Ce REST API indique de supprimer plusieurs lignes sur une feuille de calcul Excel.
+title: "Supprimer plusieurs lignes à partir d’une feuille de calcul Excel"
+second_title: "Document"
+linktitle: "Lignes"
+type: docs
+url: /rows/delete/rows/
+keywords: "Aspose.Cells Cloud, supprimer des lignes, supprimer plusieurs lignes, feuille de calcul Excel, API REST, SDK"
+description: "Découvrez comment supprimer une ou plusieurs lignes à partir d’une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut les détails des points de terminaison, des paramètres, un exemple cURL et des exemples de code SDK pour divers langages."
+weight: 80
+ArticleTitle: "Supprimer plusieurs lignes d’une feuille de calcul Excel à l’aide de l’API Aspose.Cells Cloud"
+---
 
-## RSET API
+Cette API REST permet de supprimer plusieurs lignes **à partir** d’une feuille de calcul Excel.
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
+**Conditions préalables :** Pour appeler ce point de terminaison, vous devez disposer d’un jeton d’accès JWT valide obtenu via l’authentification Aspose Cloud ainsi que des autorisations de stockage appropriées pour le classeur.
+
+## API DeleteWorksheetRows
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Le nom du classeur.|
-| nom de la feuille| chaîne| chemin| La feuille de travail bame.|
-| ligne de départ| entier| requête| L'index de la ligne de début à exploiter.|
-| totalRows| entier| requête|1 |
-| mise à jourRéférence| booléen| requête| Vrai|
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### **Paramètres de la requête**
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom du paramètre | Type    | Chemin / Chaîne de requête / Corps HTTP | Description                                                                 |
+|------------------|---------|-----------------------------------------|-----------------------------------------------------------------------------|
+| name             | string  | chemin                                  | Le nom du classeur.                                                         |
+| sheetName        | string  | chemin                                  | Le nom de la feuille de calcul.                                             |
+| startrow         | integer | requête                                 | Indice de la première ligne à supprimer (à partir de zéro ; par ex. `0` = première ligne). |
+| totalRows        | integer | requête                                 | Le nombre de lignes à supprimer.                                            |
+| updateReference  | boolean | requête                                 | Indique s’il faut mettre à jour les références après la suppression (`true`/`false`). |
+| folder           | string  | requête                                 | Le dossier du document.                                                     |
+| storageName      | string  | requête                                 | Le nom du stockage.                                                         |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) définit une interface de programmation accessible publiquement et vous permet d’effectuer directement des interactions REST depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud via cURL. **Tous les points de terminaison exigent HTTPS ; HTTP est obsolète.**
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=1&updateReference=true" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+-H "Authorization: Bearer <jeton JWT>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Codes de réponse possibles**
+
+| Statut HTTP | Description |
+|-------------|-------------|
+| 200 | Lignes supprimées avec succès. |
+| 400 | Requête incorrecte – paramètres non valides. |
+| 401 | Non autorisé – jeton JWT manquant ou non valide. |
+| 404 | Introuvable – le classeur ou la feuille de calcul n’existe pas. |
+| 500 | Erreur interne du serveur – condition inattendue. |
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK constitue la meilleure méthode pour accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

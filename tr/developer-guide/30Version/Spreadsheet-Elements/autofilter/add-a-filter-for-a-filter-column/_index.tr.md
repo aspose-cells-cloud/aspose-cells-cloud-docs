@@ -1,62 +1,88 @@
-﻿---
-title: Excel çalışma sayfasına bir filtre ekleyin
-second_title: Documen
-linktitle: Filtre ekle
+---
+title: "Excel Çalışma Sayfasına Filtre Ekleyin"
+second_title: "Belge"
+linktitle: "Filtre ekle"
 type: docs
 url: /tr/autofilter/add-filter/
-aliases: [/add-a-filter-for-a-filter-column/]
-keywords: Adds a filter for a filter column on an Excel worksheet
-description: Aspose.Cells Cloud API, Excel çalışma sayfasındaki bir filtre sütununa filtre eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
+aliases: [/tr/add-a-filter-for-a-filter-column/]
+keywords: "Aspose.Cells, Bulut, Excel, Otomatik Filtre, Filtre Ekle, REST API, SDK"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki bir sütuna otomatik filtre nasıl ekleneceğini öğrenin. cURL, SDK örnekleri ve parametre kılavuzu içerir."
 weight: 60
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasına filtre ekleme
+ArticleTitle: "Aspose.Cells Cloud Kullanarak Excel Çalışma Sayfasına Filtre Ekleyin"
 ---
-Bu REST API, Excel Çalışma Sayfasındaki bir filtre sütunu için `a filter` eklenmesini belirtir.
 
-## RSET API
+**Ön Gereksinimler:** Bu API'yi çağırmadan önce geçerli bir JWT belirteci edinmelisiniz, hedef çalışma kitabının belirtilen depoya yüklü olduğundan emin olmalısınız ve dosyaya erişim için gerekli izinlere sahip olmalısınız. Komut satırı örnekleri için cURL'in son sürümünü (7.68 veya üzeri) kullanmanız önerilir.
 
-```bash
+Bu REST API, bir Excel çalışma sayfasındaki belirli bir sütun için bir filtre ekler.
 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
+## PutWorksheetFilter API
 
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Yetkilendirme**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| Yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| Yol| Çalışma sayfasının adı.|
-|menzil|sicim| Sorgu||
-|alanIndeksi|tam sayı| Sorgu||
-|kriterler|sicim| Sorgu||
-|matchBlanks|sicim| Sorgu|doğru/yanlış|
-|yenilemek|sicim| Sorgu|doğru/yanlış|
-|dosya|sicim| Sorgu|Orijinal çalışma kitabı klasörü.|
-|depolamaAdı|sicim| Sorgu|Depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı  | Tür     | Konum   | Açıklama |
+|----------------|---------|---------|----------|
+| name           | string  | Yol     | Çalışma kitabının adı. |
+| sheetName      | string  | Yol     | Çalışma sayfasının adı. |
+| range          | string  | Sorgu   | Filtreyi içeren hücre aralığı (örneğin, `A1:B1`). |
+| fieldIndex     | integer | Sorgu   | Filtrenin uygulanacağı sütunun sıfır tabanlı indeksi. |
+| criteria       | string  | Sorgu   | Filtre kriteri (örneğin, bir değer veya ifade). |
+| matchBlanks    | boolean | Sorgu   | Filtrede boş hücreleri dahil etmek için `true`, aksi takdirde `false`. |
+| refresh        | boolean | Sorgu   | Uygulamadan sonra filtreyi yenilemek için `true`, aksi takdirde `false`. |
+| folder         | string  | Sorgu   | Orijinal çalışma kitabının bulunduğu klasör. |
+| storageName    | string  | Sorgu   | Depolama hizmetinin adı. |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Yanıt**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                           |
+|-----|-----------------------------|----------------------------------------------------|
+| 200 | Tamam                       | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Geçersiz İstek              | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Yetkisiz                    | Geçersiz veya eksik JWT belirteci. |
+| 413 | Yük Çok Büyük               | Yüklenecek dosya boyut sınırnı aşıyor. |
+| 500 | Sunucu İç Hatası            | Beklenmeyen sunucu hatası. |
+
+## PutWorksheetFilter API’sini SDK’lar ile Nasıl Kullanılır
+
+### PutWorksheetFilter API Spesifikasyonu
+
+<a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter" target="_blank" rel="noopener noreferrer">OpenAPI Spesifikasyonu</a>, herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile API’yi nasıl çağıracağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?range=A1:B1&fieldIndex=0&criteria=Year" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?range=A1:B1&fieldIndex=0&criteria=Year" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
@@ -67,11 +93,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bir SDK kullanmak, geliştirmenin en hızlı yoludur. Bir SDK düşük seviye detayları ele aldığı için siz projenize odaklanabilirsiniz. Aspose.Cells Cloud SDK’larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub deposunu</a> kontrol edin.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak Aspose.Cells web hizmetlerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

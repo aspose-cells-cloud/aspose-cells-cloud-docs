@@ -1,122 +1,174 @@
-﻿---
-title: 在 Excel 工作表中将 OLE 对象转换为图像
-second_title: Documen
-linktitle: 转换
-type: docs
-url: /zh/oleobjects/convert/
-aliases: [/convert-oleobject-to-image/]
-keywords: Convert an OLE object to image in an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持将 OLE 对象转换为 Excel 工作表中的图像。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 40
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 工作表中将 OLE 对象转换为图像
 ---
-此 REST API 表示 `get OLE object`，其格式为 Excel 工作表。
+title: "将 OLE 对象转换为图像 – Aspose.Cells Cloud REST API"
+description: "从 Excel 工作表中提取嵌入的 OLE 对象，并使用 Aspose.Cells Cloud REST API 将其转换为 PNG、JPEG、TIFF、GIF、EMF 或 BMP 格式。"
+keywords:
+  - "将 OLE 对象转换为图像"
+  - "Aspose.Cells Cloud"
+  - "REST API"
+  - "Excel"
+  - "OLE"
+  - "图像转换"
+  - "PNG"
+  - "JPEG"
+  - "TIFF"
+  - "GIF"
+  - "EMF"
+  - "BMP"
+weight: 40
+---
 
-## 重新设置 API
+# 将 OLE 对象转换为图像
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
- 
+从工作表中提取嵌入的 OLE 对象，并以请求的图像格式返回。
+
+---
+
+## 前置条件
+
+调用此接口前，请确保已完成以下准备工作：
+
+1. **Aspose.Cells Cloud 账户** – 在 [Aspose Cloud 门户](https://dashboard.aspose.cloud/) 上注册账户。  
+2. **工作簿已上传至云存储** – 可使用 **上传文件** API 或 Aspose Cloud 界面完成上传。  
+3. **JWT 访问令牌** – 参照 [身份验证指南](/total/getting-started/rest-api-overview/authenticating-api-requests/) 获取令牌。  
+
+---
+
+## 安全性与身份验证
+
+所有 Aspose.Cells Cloud API 均要求使用 **基于 JWT 令牌的身份验证**。请将令牌置于 `Authorization` 请求头中：
+
+```http
+Authorization: Bearer <jwt-token>
 ```
 
-请求参数为：
+仅支持 HTTPS 接口；请勿使用 `http://`。
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|对象编号|整数|小路|物件數目。|
-|格式|细绳|询问|导出的对象格式。|
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
+---
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+## 请求
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+### HTTP 方法
+`GET`
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+### 接口地址
+```
+https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
 ```
 
-{{< /tab >}}
+### 路径参数
 
-{{< tab tabNum="2" >}}
+| 名称            | 类型   | 是否必填 | 描述                                      |
+|-----------------|--------|----------|-------------------------------------------|
+| `name`          | 字符串 | ✅       | 工作簿文件名称（例如：`Book1.xlsx`）。    |
+| `sheetName`     | 字符串 | ✅       | 包含 OLE 对象的工作表名称。               |
+| `objectNumber`  | 整数   | ✅       | OLE 对象的从零开始的索引。                |
+
+### 查询参数
+
+| 名称            | 类型   | 是否必填 | 描述                                                                 |
+|-----------------|--------|----------|----------------------------------------------------------------------|
+| `format`        | 字符串 | ❌       | 期望的图像格式（`png`、`jpeg`、`tiff`、`gif`、`emf`、`bmp`）。若省略，默认为 `png`。 |
+| `folder`        | 字符串 | ❌       | 工作簿所在文件夹的路径。                                             |
+| `storageName`   | 字符串 | ❌       | 存储服务名称（例如：`MyCloud`）。                                    |
+
+---
+
+## 请求示例（cURL）
 
 ```bash
-
-Image file
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
-{{< /tab >}}
+*请将 `<jwt-token>` 替换为有效的 JWT 令牌。*
 
-{{< /tabs >}}
+---
 
-## Cloud SDK 系列
+## 响应
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| 状态码 | 内容类型                   | 描述                               |
+|--------|----------------------------|------------------------------------|
+| `200`  | `image/png`（或请求的格式） | 代表 OLE 对象的二进制图像数据。     |
+| `400`  | `application/json`         | 请求参数无效。                      |
+| `401`  | `application/json`         | 身份验证失败（缺少或无效的 JWT）。 |
+| `404`  | `application/json`         | 指定的工作簿、工作表或 OLE 对象未找到。 |
+| `500`  | `application/json`         | 服务器端错误。                      |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+### 处理二进制响应体
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+API 返回原始图像字节数据，您可：
 
-{{< tab tabNum="1" >}}
+* **直接保存为文件**（Linux/macOS 示例）：
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleGetWorksheetOleObject.cs" >}}
+  ```bash
+  curl -o oleobject.png "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
+       -H "Authorization: Bearer <jwt-token>"
+  ```
 
-{{< /tab >}}
+* **编码为 Base64** 用于调试或嵌入 JSON：
 
-{{< tab tabNum="2" >}}
+  ```bash
+  curl -s "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
+       -H "Authorization: Bearer <jwt-token>" | base64
+  ```
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_GetWorksheetOleObject.java" >}}
+  *示例（截断）Base64 输出：*
 
-{{< /tab >}}
+  ```
+  iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABG0lEQVR42mNkY…
+  ```
 
-{{< tab tabNum="3" >}}
+---
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_GetWorksheetOleObject.php" >}}
+## 错误响应
 
-{{< /tab >}}
+| HTTP 状态码 | 错误码                 | 描述                         |
+|-------------|------------------------|------------------------------|
+| `400`       | `InvalidParameter`     | 一个或多个请求参数无效。      |
+| `401`       | `AuthenticationFailed` | 缺少或无效的 JWT 令牌。       |
+| `404`       | `PropertyNotFound`     | 请求的工作簿、工作表或 OLE 对象不存在。 |
+| `500`       | `InternalError`        | 服务器发生意外错误。          |
 
-{{< tab tabNum="4" >}}
+---
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetOleObject.rb" >}}
+## SDK 示例
 
-{{< /tab >}}
+以下代码片段展示了如何使用官方 SDK 调用该接口。请将 `YOUR_JWT_TOKEN` 及其他占位符替换为您的实际值。
 
-{{< tab tabNum="5" >}}
+| 语言      | 示例 |
+|-----------|------|
+| **C#** | <details><summary>显示代码</summary>```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model.Requests;\n\nvar config = new Configuration { AccessToken = "YOUR_JWT_TOKEN" };\nvar api = new OleObjectsApi(config);\nvar request = new GetWorksheetOleObjectRequest(\n    name: "Embedded_OleObject_Sample_Book1.xlsx",\n    sheetName: "Sheet1",\n    objectNumber: 0,\n    format: "png"\n);\nvar stream = api.GetWorksheetOleObject(request);\nusing var file = File.Create("oleobject.png");\nstream.CopyTo(file);\n```</details> |
+| **Java** | <details><summary>显示代码</summary>```java\nimport com.aspose.cells.cloud.ApiException;\nimport com.aspose.cells.cloud.api.OleObjectsApi;\nimport com.aspose.cells.cloud.model.*;\nimport com.aspose.cells.cloud.model.requests.*;\nimport java.io.FileOutputStream;\nimport java.io.InputStream;\n\nOleObjectsApi api = new OleObjectsApi();\napi.getApiClient().setAccessToken("YOUR_JWT_TOKEN");\nGetWorksheetOleObjectRequest req = new GetWorksheetOleObjectRequest(\n    "Embedded_OleObject_Sample_Book1.xlsx",\n    "Sheet1",\n    0,\n    "png",\n    null,\n    null\n);\nInputStream stream = api.getWorksheetOleObject(req);\ntry (FileOutputStream out = new FileOutputStream("oleobject.png")) {\n    stream.transferTo(out);\n}\n```</details> |
+| **Python** | <details><summary>显示代码</summary>```python\nfrom asposecellscloud import CellsApi, GetWorksheetOleObjectRequest\n\napi = CellsApi()\napi.api_client.configuration.access_token = "YOUR_JWT_TOKEN"\nrequest = GetWorksheetOleObjectRequest(\n    name="Embedded_OleObject_Sample_Book1.xlsx",\n    sheet_name="Sheet1",\n    object_number=0,\n    format="png"\n)\nstream = api.get_worksheet_ole_object(request)\nwith open('oleobject.png', 'wb') as f:\n    f.write(stream.read())\n```</details> |
+| **Node.js** | <details><summary>显示代码</summary>```javascript\nconst { CellsApi, GetWorksheetOleObjectRequest } = require('asposecellscloud');\n\nconst api = new CellsApi();\napi.apiClient.configuration.accessToken = 'YOUR_JWT_TOKEN';\n\nconst request = new GetWorksheetOleObjectRequest({\n    name: 'Embedded_OleObject_Sample_Book1.xlsx',\n    sheetName: 'Sheet1',\n    objectNumber: 0,\n    format: 'png'\n});\napi.getWorksheetOleObject(request).then(stream => {\n    const fs = require('fs');\n    const writeStream = fs.createWriteStream('oleobject.png');\n    stream.pipe(writeStream);\n});\n```</details> |
+| **Go** | <details><summary>显示代码</summary>```go\npackage main\nimport (\n    "io"\n    "os"\n    cells "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v3"\n)\nfunc main() {\n    cfg := cells.NewConfiguration()\n    cfg.AccessToken = "YOUR_JWT_TOKEN"\n    api := cells.NewOleObjectsApi(cfg)\n    req := cells.GetWorksheetOleObjectRequest{\n        Name:         "Embedded_OleObject_Sample_Book1.xlsx",\n        SheetName:    "Sheet1",\n        ObjectNumber: 0,\n        Format:       "png",\n    }\n    stream, _, err := api.GetWorksheetOleObject(req)\n    if err != nil { panic(err) }\n    out, _ := os.Create("oleobject.png")\n    defer out.Close()\n    io.Copy(out, stream)\n}\n```</details> |
+| **PHP** | <details><summary>显示代码</summary>```php\n<?php\nrequire_once 'vendor/autoload.php';\nuse Aspose\\Cells\\Cloud\\Api\\OleObjectsApi;\nuse Aspose\\Cells\\Cloud\\Model\\Requests\\GetWorksheetOleObjectRequest;\n\n$config = new \\Aspose\\Cells\\Cloud\\Configuration();\n$config->setAccessToken('YOUR_JWT_TOKEN');\n$apiInstance = new OleObjectsApi($config);\n$request = new GetWorksheetOleObjectRequest(\n    'Embedded_OleObject_Sample_Book1.xlsx',\n    'Sheet1',\n    0,\n    'png'\n);\n$stream = $apiInstance->getWorksheetOleObject($request);\nfile_put_contents('oleobject.png', $stream);\n?>\n```</details> |
+| **Ruby** | <details><summary>显示代码</summary>```ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::OleObjectsApi.new\napi.api_client.config.access_token = 'YOUR_JWT_TOKEN'\nrequest = AsposeCellsCloud::GetWorksheetOleObjectRequest.new(\n  name: 'Embedded_OleObject_Sample_Book1.xlsx',\n  sheet_name: 'Sheet1',\n  object_number: 0,\n  format: 'png'\n)\nstream = api.get_worksheet_ole_object(request)\nFile.open('oleobject.png', 'wb') { |f| f.write(stream) }\n```\n</details> |
+| **Perl** | <details><summary>显示代码</summary>```perl\nuse AsposeCellsCloud::Api::OleObjectsApi;\nuse AsposeCellsCloud::Object::GetWorksheetOleObjectRequest;\n\nmy $api = AsposeCellsCloud::Api::OleObjectsApi->new();\n$api->{api_client}->{config}->{access_token} = 'YOUR_JWT_TOKEN';\nmy $req = AsposeCellsCloud::Object::GetWorksheetOleObjectRequest->new(\n    name => 'Embedded_OleObject_Sample_Book1.xlsx',\n    sheet_name => 'Sheet1',\n    object_number => 0,\n    format => 'png'\n);\nmy $stream = $api->get_worksheet_ole_object(request => $req);\nopen my $fh, '>', 'oleobject.png' or die $!;\nbinmode $fh;\nprint $fh $stream;\nclose $fh;\n```</details> |
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetOleObject.ts" >}}
+*（完整 SDK 列表请参阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)。）*
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="6" >}}
+## 相关操作
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetOleObject.py" >}}
+- **添加 OLE 对象** – `POST /cells/{name}/worksheets/{sheetName}/oleobjects`
+- **更新 OLE 对象** – `PUT /cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}`
+- **删除 OLE 对象** – `DELETE /cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}`
+- **获取 OLE 对象列表** – `GET /cells/{name}/worksheets/{sheetName}/oleobjects`
 
-{{< /tab >}}
+详情请参阅对应的 API 参考页面。
 
-{{< tab tabNum="7" >}}
+---
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetOleObject.pl" >}}
+## 其他资源
 
-{{< /tab >}}
+- **OpenAPI 规范** – <https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject>
+- **身份验证指南** – <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>
+- **SDK 仓库** – <https://github.com/aspose-cells-cloud>
+- **性能与无障碍性** – 运行 Lighthouse 和 axe-core 审计，确保最佳加载速度并符合 WCAG 2.1 AA 无障碍标准。
 
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetOleObject.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+---

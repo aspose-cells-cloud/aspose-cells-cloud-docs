@@ -1,61 +1,64 @@
-﻿---
-title: استيراد بيانات الدفعة إلى ورقة العمل Excel
-second_title: Documen
-linktitle: استيراد بيانات الدفعة
-type: docs
-url: /ar/import-batch-data-into-excel/
-aliases: [/import-batch-data-into-worksheet/,/import-data/batch-data/,/import/batch-data/]
-keywords: Import batch data into Excel files
-description: يدعم Cloud REST استيراد بيانات الدفعات إلى ملفات SDK. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 19
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، استيراد بيانات الدفعة إلى ورقة عمل Excel
 ---
-هذه ورقة عمل REST API `import batch data` في Excel.
+title: "استيراد بيانات دُفعات إلى ورقة عمل Excel"
+second_title: "مستند"
+linktype: "استيراد بيانات دُفعات"
+type: docs
+url: /import-batch-data-into-excel/
+aliases:
+  - /import-batch-data-into-worksheet/
+  - /import-data/batch-data/
+  - /import/batch-data/
+keywords: "Aspose.Cells, API سحابية, استيراد بيانات دُفعات, Excel, CSV, JSON, XML, مصفوفات"
+description: "تعرّف على كيفية استيراد بيانات دُفعات (CSV و JSON و XML والمصفوفات) إلى ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. يشمل المصادقة وأمثلة على الطلبات والاستجابات وأجزاء من كود SDK والتعامل مع الأخطاء."
+weight: 19
+ArticleTitle: "استيراد بيانات دُفعات إلى ورقة عمل Excel – وثائق Aspose.Cells Cloud"
+---
 
-الطلب عبارة عن طلب HTTP يحتوي على محتوى متعدد الأجزاء (انظر[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)أو[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)يحتوي الجزء الأول من المحتوى متعدد الأجزاء على بيانات ImportBatchDataOption ويحتوي الجزء الثاني على ملف بيانات.
+تقوم هذه الواجهة البرمجية **استيراد بيانات دُفعات** إلى ورقة عمل Excel. وتتلقى طلبًا متعدد الأجزاء (multipart)، حيث يحتوي الجزء الأول على كائن **ImportBatchDataOption**، ويحتوي الجزء الثاني على ملف البيانات الفعلي (CSV أو JSON أو XML أو غيرها).
 
-## RSET API
+وتستخدم العملية طلب HTTP بمحتوى متعدد الأجزاء (انظر [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) أو [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).
 
-```bash
+## واجهة PostImportData
 
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-يتم وصف المعلمات الهامة في الجدول التالي:
+### **الأمان والمصادقة**
 
-**خيار استيراد بيانات الدفعة**
+تُعد واجهات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة مبنية على رمز JWT</a>.
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-| بيانات الدفعة|قائمة<CellValue> | بيانات الدفعة|
-|ورقة عمل الوجهة| خيط| اسم ورقة عمل الوجهة.|
-| هل تم إدراجه| خيط| صواب/خطأ.|
-| نوع بيانات الاستيراد| خيط|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| مصدر| مصدر الملف| يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData فارغة.|
+### ImportBatchDataOption
 
-**قيمة الخلية**
+| اسم المعلِمة          | النوع              | الوصف                                                                                                                                                                                                 |
+| --------------------- | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **BatchData**         | `List<CellValue>`  | مجموعة قيم الخلايا التي ستُكتب مباشرة.                                                                                                                                                                |
+| **DestinationWorksheet** | `string`         | اسم ورقة العمل التي ستُستورد إليها البيانات.                                                                                                                                                        |
+| **IsInsert**          | `bool`             | عندما تكون القيمة `true`، تُدرج البيانات وتُزاحَم الخلايا الموجودة؛ وعندما تكون القيمة `false`، تُستبدل البيانات الخلايا الموجودة.                                                                   |
+| **ImportDataType**    | `string`           | تنسيق البيانات المراد استيرادها. القيم المسموح بها: `IntArray`، `DoubleArray`، `StringArray`، `TwoDimensionIntArray`، `TwoDimensionDoubleArray`، `TwoDimensionStringArray`، `BatchData`، `csvData`. |
+| **Source**            | `FileSource`       | يحدد موقع ملف البيانات عندما تكون القيمة **BatchData** `null`.                                                                                                                                       |
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-| فهرس الصف| عدد صحيح||
-| فهرس العمود| عدد صحيح||
-| يكتب| خيط| نوع البيانات|
-| قيمة| خيط||
-| أسلوب| النمط (الكائن)||
+### CellValue
 
-**مصدر الملف**
+| اسم المعلِمة    | النوع    | الوصف                                                         |
+| --------------- | -------- | ------------------------------------------------------------- |
+| **rowIndex**    | `int`    | فهرس الصف (المرجعي من الصفر) للخلية المستهدفة.               |
+| **columnIndex** | `int`    | فهرس العمود (المرجعي من الصفر) للخلية المستهدفة.             |
+| **type**        | `string` | نوع البيانات للقيمة (مثل `int` أو `double` أو `string`).     |
+| **value**       | `string` | القيمة الفعلية التي ستُكتب في الخلية.                         |
+| **style**       | `Style`  | معلومات تنسيق اختيارية للخلية.                                |
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-| نوع مصدر الملف| خيط| ملفات في الذاكرة/نظام ملفات السحابة/ملفات الطلب|
-| مسار الملف| خيط| موضع الملف|
+### FileSource
 
-**مثال**
+| اسم المعلِمة       | النوع    | الوصف                                                                      |
+| ------------------ | -------- | -------------------------------------------------------------------------- |
+| **FileSourceType** | `string` | مصدر الملف: `InMemoryFiles` أو `CloudFileSystem` أو `RequestFiles`.       |
+| **FilePath**       | `string` | مسار الملف أو مُعرِّفه داخل المصدر المختار.                                |
+
+### مثال (XML)
 
 ```xml
-<ImportIntArrayOption>
+<ImportBatchDataOption>
     <DestinationWorksheet>Sheet1</DestinationWorksheet>
     <IsInsert>false</IsInsert>
     <ImportDataType>IntArray</ImportDataType>
@@ -66,15 +69,39 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
         <FileSourceType>CloudFileSystem</FileSourceType>
         <FilePath>Array_int_xml.txt</FilePath>
     </Source>
-</ImportIntArrayOption>
-
+</ImportBatchDataOption>
 ```
 
-## عائلة SDK السحابية
+### الاستجابة
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | الوصف                                                                 |
+|------|----------------------------|----------------------------------------------------------------------|
+| 200  | نجاح                       | تطبيق التصفية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.            |
+| 400  | طلب غير صالح              | معلمات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم).                 |
+| 401  | غير مصرّح به               | رمز JWT غير صالح أو مفقود.                                           |
+| 413  | حمل البيانات كبير جدًا      | حجم الملف المرفوع يتجاوز الحد المسموح.                               |
+| 500  | خطأ داخلي في الخادم        | خطأ غير متوقع في الخادم.                                             |
+
+## كيفية استخدام واجهة PostImportData مع حزم تطوير البرمجيات (SDKs)
+
+### مواصفات واجهة PostImportData
+
+تُعرّف [مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData) واجهة برمجية عامة يمكن استخدامها لإجراء تفاعلات REST مباشرة من متصفح الويب.
+
+### استخدام حزم تطوير البرمجيات (SDKs) لـ Aspose.Cells Cloud
+
+استخدام حزمة تطوير البرمجيات (SDK) هو أسرع طريقة لدمج هذه الوظيفة. فحزم SDK تتعامل مع التفاصيل منخفضة المستوى، مما يتيح لك التركيز على منطق عملك. يمكنك الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم Aspose.Cells Cloud SDK.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات الويب Aspose.Cells باستخدام حزم SDK مختلفة:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

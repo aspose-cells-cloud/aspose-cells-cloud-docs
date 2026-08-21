@@ -1,76 +1,118 @@
-﻿---
-title: ملف قفل الدفعة Excel
-second_title: Documen
-type: docs
-url: /ar/batch/lock
-keywords: Batch lock of multiple Excel files
-description: يدعم Aspose.Cells Cloud API قفل الدفعات لملفات إكسل المتعددة. تدعم مجموعة تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، قفل الدفعة
 ---
-يشير هذا REST API إلى `batch lock` من الملفات المؤهلة.
+title: "قفل دفعات من ملفات إكسل"
+second_title: "مستند"
+type: docs
+url: /batch/lock
+keywords: "قفل دفعات، إكسل، Aspose.Cells، واجهة برمجة التطبيقات السحابية، جدول بيانات، حماية الملف"
+description: "تتيح واجهة برمجة التطبيقات السحابية Aspose.Cells إمكانية قفل دفعات من ملفات إكسل متعددة. استخدم نقطة نهاية REST أو أيًا من حزم تطوير البرامج (SDKs) المدعومة (C#، Java، PHP، Ruby، Node.js، Python، Perl، Go، إلخ) لقفل الملفات دفعةً واحدةً."
+weight: 100
+---
 
-## RSET API
+تتيح واجهة برمجة التطبيقات هذه **قفل دفعات** من ملفات إكسل المؤهلة.
+
+## واجهة برمجة التطبيقات REST
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/lock
- 
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| طلب قفل الدفعة|| جسم||
+واجهات برمجة التطبيقات السحابية الخاصة بـ Aspose.Cells آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-**خصائص BatchLockRequest**
 
-الاسم | النوع | الوصف | الملاحظات
------------- | ------------- | ------------- | -------------
- مجلد المصدر | سلسلة نصية | | [اختياري] شرط المطابقة | طلب شرط المطابقة | | [اختياري] كلمة المرور | سلسلة نصية | | [اختياري] المجلد الخارجي | سلسلة نصية | | [اختياري]**خصائص MatchConditionRequest**
+### معاملات الطلب
 
-الاسم | النوع | الوصف | الملاحظات
------------- | ------------- | ------------- | -------------
- نمط التعبير العادي | سلسلة | | [اختياري]شروط المطابقة الكاملة | سلسلة[]| | [اختياري][مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/Batch/PostBatchLock) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+| اسم المعامل       | النوع               | الموقع | الوصف                                 |
+|------------------|--------------------|----------|---------------------------------------------|
+| BatchLockRequest | BatchLockRequest   | body     | جسم JSON يحتوي على معاملات القفل.      |
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+#### خصائص **BatchLockRequest**
+
+| الاسم          | النوع                     | الوصف                                            | الملاحظات    |
+|---------------|--------------------------|--------------------------------------------------------|----------|
+| SourceFolder  | string                   | المجلد الذي يحتوي على ملفات إكسل المصدر.           | اختياري |
+| MatchCondition| MatchConditionRequest    | الشروط المستخدمة لاختيار الملفات المراد قفلها.         | اختياري |
+| Password      | string                   | كلمة المرور المطلوب تطبيقها على الملفات المُقفلة.                | اختياري |
+| OutFolder     | string                   | المجلد الوجهة للملفات المُقفلة.              | اختياري |
+
+#### خصائص **MatchConditionRequest**
+
+| الاسم               | النوع      | الوصف                                          | الملاحظات    |
+|--------------------|-----------|------------------------------------------------------|----------|
+| RegexPattern       | string    | نمط تعبير عادي (regex) لمطابقة أسماء الملفات.      | اختياري |
+| FullMatchConditions| string[]  | أسماء ملفات مطابقة تامة لعملية القفل.                 | اختياري |
+
+### معامل جسم الطلب
+
+| اسم المعامل | النوع | الوصف                                    |
+| -------------- | ---- | ---------------------------------------------- |
+| data           | file | المحتوى الثنائي لملف المصنف المراد إنشاؤه. |
+  
+### **الاستجابة**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | وقت العودة                           |
+|------|-----------------------------|-----------------------------------------|
+| 200 OK | تم إنشاء المصنف بنجاح | التدفق الطبيعي                              |
+| 201 Created | تم إنشاء المصنف (استجابة بديلة) | عند عودة الواجهة بحالة "تم الإنشاء" |
+| 400 Bad Request | معاملات غير صالحة | خطأ من جانب العميل                        |
+| 401 Unauthorized | نقص أو وجود رمز غير صالح | خطأ في المصادقة                    |
+| 409 Conflict | وجود الملف بالفعل و `isWriteOver=false` | تضارب مع ملف موجود    
+
+## كيفية استخدام واجهة PostBatchLock API باستخدام حزم تطوير البرامج (SDKs)
+
+### مواصفات واجهة PostBatchLock API
+
+تعرّف [مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/Batch/PostBatchLock) واجهة برمجة تطبيقات قابلة للوصول علنًا وتتيح لك إجراء تفاعلات REST مباشرةً من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول بسهولة إلى خدمات الويب الخاصة بـ Aspose.Cells. يوضح المثال التالي كيفية استدعاء واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/lock" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\"}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام حزم تطوير البرامج (SDKs) الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام القفل. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام حزمة تطوير البرامج (SDK) هو أسرع طريقة للتطوير. فتقوم الحزمة بإخفاء التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مهام القفل الخاصة بك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم تطوير البرامج الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية استدعاء خدمات الويب الخاصة بـ Aspose.Cells باستخدام مكتبات مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +165,4 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/lock" \
 {{< /tab >}}
 
 {{< /tabs >}}
+---

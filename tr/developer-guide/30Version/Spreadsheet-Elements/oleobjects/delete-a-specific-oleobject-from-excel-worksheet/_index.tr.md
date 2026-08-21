@@ -1,74 +1,83 @@
-﻿---
-title: Excel çalışma sayfasındaki bir OLE nesnesini silin
-second_title: Documen
-linktitle: Sil
+---
+title: "Bir Excel çalışma sayfasından bir OLE nesnesini silin"
+second_title: "Belge"
+linktitle: "Sil"
 type: docs
 url: /tr/oleobjects/delete/
-aliases: [/delete-a-specific-oleobject-from-excel-worksheet/]
-keywords: Delete an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki bir OLE nesnesini silmeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
+aliases: [/tr/delete-a-specific-oleobject-from-excel-worksheet/]
+keywords: "Aspose.Cells, Bulut, Sil, OLE, Nesne, Excel, çalışma sayfası, REST, API, SDK"
+description: "Aspose.Cells Cloud REST API'sini (v4.0) kullanarak bir Excel çalışma sayfasından bir OLE nesnesini nasıl sileceğinizi öğrenin. HTTPS uç noktası, kimlik doğrulama adımları, cURL örneği, SDK kod parçacıkları, hata işleme yönergeleri ve sonraki adımlar için bağlantıları içerir."
 weight: 50
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki bir OLE nesnesini silme
+ArticleTitle: "Aspose.Cells Cloud API kullanılarak Excel Çalışma Sayfasından OLE Nesnesi Silme"
 ---
-Bu REST API, Excel çalışma sayfasındaki bir OLE nesnesini `delete` olarak gösterir.
 
-## RSET API
+Bu sayfa, bir Excel defterindeki bir çalışma sayfasından belirli bir OLE nesnesini **Aspose.Cells Cloud** kullanarak nasıl sileceğinizi açıklar. Bir OLE nesnesi, Excel'in ayrı bir varlık olarak depoladığı bağlı bir resim, grafik veya gömülü herhangi bir nesne olabilir.
+
+## Güvenlik ve Kimlik Doğrulama
+Aspose.Cells Cloud API'leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulama](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) gerektirir.
+
+## REST API
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
- 
+DELETE https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
 ```
 
-İstek parametreleri şunlardır:
+### İstek Parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma kağıdının adı.|
-| oleObjectIndex| tam sayı| yol| Ole nesne dizini|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre adı | Tür      | Konum | Açıklama                                            |
+| ------------- | -------- | ----- | --------------------------------------------------- |
+| name          | string   | path  | Defter adı.                                         |
+| sheetName     | string   | path  | Çalışma sayfası adı.                                |
+| oleObjectIndex| integer  | path  | Silinecek OLE nesnesinin dizini.                    |
+| folder        | string   | query | Defteri içeren klasör. (isteğe bağlı)              |
+| storageName   | string   | query | Depolama hizmetinin adı. (isteğe bağlı)            |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject), herkese açık erişilebilir bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells web hizmetlerine kolayca erişmek için **cURL komut satırı aracını** kullanabilirsiniz. Aşağıdaki örnek, cURL ile bu isteği nasıl yapacağınızı göstermektedir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v4.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Yanıt ayrıntıları
+
+| HTTP durumu          | Açıklama                                                          | Örnek JSON                                                         |
+| -------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------- |
+| **200 OK**           | OLE nesnesi başarıyla silindi.                                    | `{ "Code": 200, "Status": "OK" }`                                 |
+| **401 Unauthorized** | Eksik veya geçersiz JWT belirteci.                                | `{ "Code": 401, "Message": "Erişim belirteci eksik veya geçersiz." }` |
+| **404 Not Found**    | Belirtilen defter, çalışma sayfası veya OLE nesnesi dizini yok.   | `{ "Code": 404, "Message": "OLE nesnesi dizini aralık dışında." }` |
+| **400 Bad Request**  | Gerekli parametreler eksik veya hatalı.                           | `{ "Code": 400, "Message": "Geçersiz istek parametreleri." }`    |
+
+Uygulamanızda bu yanıtları, durum kodunu kontrol ederek ve eşlik eden mesajı göstererek ele alın.
+
 ## Bulut SDK Ailesi
+SDK kullanmak, geliştirme hızını artırmak için en iyi yoldur. Bir SDK, düşük seviye ayrıntıları işler böylece projenizdeki görevlere odaklanabilirsiniz. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
-
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

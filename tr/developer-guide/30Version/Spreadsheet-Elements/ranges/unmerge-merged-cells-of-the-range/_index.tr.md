@@ -1,74 +1,80 @@
-﻿---
-title: Aralığın birleştirilmiş hücrelerini ayır
-second_title: Documen
-linktitle: Birleştirmeyi kaldır
-type: docs
-url: /tr/ranges/unmerge/
-aliases: [/unmerge-merged-cells-of-the-range/]
-keywords: Unmerge merged cells of the range on an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki aralıktaki birleştirilmiş hücrelerin birleştirilmesini kaldırmayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Aralığın birleştirilmiş hücrelerinin birleştirilmesini kaldır
 ---
-Bu REST API, Excel çalışma sayfasında bu aralıktaki birleştirilmiş hücrelerin birleştirilmesinin kaldırılmasını belirtir.
+title: "Aralık İçindeki Hücreleri Birleştirmeyi Kaldır"
+second_title: "Belge"
+linktitle: "Birleştirmeyi Kaldır"
+type: docs
+url: /ranges/unmerge/
+aliases: [/unmerge-merged-cells-of-the-range/]
+keywords: "Aspose.Cells Cloud, hücreleri birleştirmeyi kaldır, Excel API, çalışma sayfası aralığı, REST API"
+description: "Aspose.Cells Cloud API'sini kullanarak belirli bir çalışma sayfası aralığındaki birleştirilmiş hücreleri nasıl kaldıracağınızı öğrenin. C#, Java, Python ve daha fazlası için uç nokta, parametreler, örnek cURL ve SDK kodu parçacıklarını içerir."
+weight: 20
+---  
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasında belirtilen bir aralık içindeki birleştirilmiş hücreleri birleştirmeyi kaldırır.
+
+## REST API  
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unmerge
- 
-```
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unmerge
+```  
 
-İstek parametreleri şunlardır:
+İstek parametreleri:
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| çalışma kitabı adı|
-| sayfaAdı| sicim| yol| çalışma sayfası adı|
-| menzil|| vücut| çalışma sayfasındaki aralık|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı | Tip    | Konum | Gerekli | Açıklama                                    |
+|---------------|--------|-------|---------|---------------------------------------------|
+| name          | string | path  | Evet    | Çalışma kitabının adı.                       |
+| sheetName     | string | path  | Evet    | Çalışma sayfasının adı.                      |
+| range         | object | body  | Evet    | Birleştirmeyi kaldırmak için hücreleri tanımlayan aralık nesnesi. |
+| folder        | string | query | Hayır   | Çalışma kitabının bulunduğu klasör.          |
+| storageName   | string | query | Hayır   | Depo adı.                                   |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnmerge) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnmerge), herkese açık bir erişilebilir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sine nasıl istekte bulunacağınızı göstermektedir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/unmerge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}" 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+    "ColumnCount": 7,
+    "ColumnWidth": 19,
+    "FirstColumn": 0,
+    "FirstRow": 9,
+    "Name": "string",
+    "RefersTo": "string",
+    "RowCount": 1,
+    "RowHeight": 15,
+    "Worksheet": "Sheet1"
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+## Bulut SDK Ailesi  
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoldur. Bir SDK, alt seviye detayları yöneterek size proje görevlerinize odaklanma imkanı verir. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerini çeşitli SDK’lar kullanarak nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

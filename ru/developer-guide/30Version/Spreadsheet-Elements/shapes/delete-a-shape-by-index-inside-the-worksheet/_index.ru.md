@@ -1,63 +1,58 @@
-﻿---
-title: Удалить фигуру по индексу на листе Excel
-second_title: Documen
-linktitle: Удалить
+---
+title: "Удаление фигуры по индексу на листе Excel"
+second_title: "Документ"
+linktitle: "Удалить"
 type: docs
 url: /ru/shapes/delete/
-aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
-keywords: Delete a shape on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает удаление фигур на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+aliases: [/ru/delete-a-shape-by-index-inside-the-worksheet/]
+keywords: "Aspose.Cells Cloud, удаление фигуры, индекс фигуры, лист Excel, REST API, SDK"
+description: "Используйте Aspose.Cells Cloud REST API для удаления фигуры по её индексу на листе Excel. API доступно через множество SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) и поддерживает различные варианты хранения."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Удаление фигуры по индексу на листе Excel
 ---
-Этот REST API указывает на удаление фигуры на листе Excel.
 
-## РСЕT API
+Этот REST API удаляет фигуру на листе Excel.
+
+## REST API
 
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
- 
 ```
 
-Параметры запроса:
+### **Параметры запроса**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| название документа.|
-| Имя_листа| нить| путь| имя рабочего листа.|
-| индекс формы| целое число| путь| индекс формы в формах рабочего листа.|
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип    | Расположение | Описание                                    |
+| ------------- | ------ | ------------ | ------------------------------------------- |
+| name          | string | path         | Имя файла рабочей книги.                    |
+| sheetName     | string | path         | Имя листа.                                  |
+| shapeindex    | integer| path         | Индекс фигуры в списке фигур листа.         |
+| folder        | string | query        | Папка, в которой хранится рабочая книга.   |
+| storageName   | string | query        | Имя хранилища.                              |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShape) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShape) определяет публично доступное программное интерфейсное решение и позволяет выполнять взаимодействие с REST напрямую из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать инструмент командной строки **cURL** для простого доступа к веб-сервисам Aspose.Cells. Приведённый ниже пример демонстрирует, как выполнить вызов облачного API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes/1" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -66,9 +61,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это самый быстрый способ разработки. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах вашего проекта. Полный список облачных SDK Aspose.Cells доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Приведённые ниже примеры кода показывают, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

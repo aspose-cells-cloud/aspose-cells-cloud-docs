@@ -1,265 +1,245 @@
-﻿---
-title: الحصول على أسطورة الرسم البياني من ورقة العمل
+---
+title: "الحصول على أسطورة الرسم البياني من ورقة عمل"
 type: docs
-url: /ar/charts/legend/get/
+url: /charts/legend/get/
 aliases: [/get-chart-legend-from-a-worksheet/]
 weight: 80
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على أسطورة الرسم البياني من ورقة عمل
+keywords: "Aspose.Cells, أسطورة الرسم البياني, واجهة برمجة التطبيقات REST, Excel, SDK السحابي, الحصول على أسطورة الرسم البياني, ورقة العمل, جدول بيانات"
+description: "استرجاع أسطورة الرسم البياني من ورقة عمل محددة في ملف Excel باستخدام واجهة برمجة التطبيقات السحابية Aspose.Cells REST API (الإصدار 3.0). تتضمن عنوان النهاية، المعلمات، مثال cURL، ومقتطفات SDK."
 ---
-يشير هذا REST API إلى الحصول على أسطورة الرسم البياني
- 
-## RSET API
- 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
- 
-```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مؤشر الرسم البياني| عدد صحيح| طريق| مؤشر الرسم البياني.|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
- 
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartLegend) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
- 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+تُعيد عملية **الحصول على أسطورة الرسم البياني** معلومات الأسطورة الخاصة برسم بياني موجود في ورقة عمل ضمن ملف Excel. يُعد هذا النهاية جزءًا من **واجهة برمجة التطبيقات Aspose.Cells Cloud API الإصدار 3.0**، ويمكن استخدامها عند الحاجة لقراءة خصائص الأسطورة مثل الموقع، الخط، الحجم، والتنسيق.
+
+## **واجهة برمجة التطبيقات REST**
+
+```bash
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
+```
+
+### الأمان والمصادقة
+
+تُعد واجهات برمجة التطبيقات السحابية Aspose.Cells آمنة وتتطلب [مصادقة تعتمد على رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+### معلمات الطلب
+
+| اسم المعلمة | النوع    | الموقع | الوصف                                |
+| ------------ | ------- | -------- | ------------------------------------- |
+| name         | string  | path     | اسم ملف المصنف.                       |
+| sheetName    | string  | path     | اسم ورقة العمل.                       |
+| chartIndex   | integer | path     | المؤشر الصفري (Zero-based) للرسم البياني. |
+| folder       | string  | query    | مسار المجلد الذي يُخزَّن فيه المصنف.  |
+| storageName  | string  | query    | اسم وحدة التخزين.                     |
+
+### **الاستجابة**
+
+```json
+{
+  "Legend": {
+    "Position": "Right",
+    "LegendEntries": {
+      "link": {
+        "Href": "/legendEntries",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Area": {
+      "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+      "FillFormat": {
+        "Type": "Automatic",
+        "SolidFill": null,
+        "PatternFill": null,
+        "TextureFill": null,
+        "GradientFill": null,
+        "ImageData": null
+      },
+      "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+      "Formatting": "Automatic",
+      "InvertIfNegative": false,
+      "Transparency": 0.0
+    },
+    "AutoScaleFont": true,
+    "BackgroundMode": "Automatic",
+    "Border": {
+      "BeginArrowLength": "Medium",
+      "BeginArrowWidth": "Medium",
+      "BeginType": "None",
+      "CapType": "Flat",
+      "Color": { "A": 0, "R": 0, "G": 0, "B": 0 },
+      "CompoundType": "Single",
+      "DashType": "Solid",
+      "EndArrowLength": "Medium",
+      "EndArrowWidth": "Medium",
+      "EndType": "None",
+      "GradientFill": null,
+      "IsAuto": true,
+      "IsAutomaticColor": true,
+      "IsVisible": true,
+      "JoinType": "Round",
+      "Style": "Solid",
+      "Transparency": 0.0,
+      "Weight": "HairLine",
+      "WeightPt": 0.0
+    },
+    "Font": {
+      "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+      "DoubleSize": 10.0,
+      "IsBold": false,
+      "IsItalic": false,
+      "IsStrikeout": false,
+      "IsSubscript": false,
+      "IsSuperscript": false,
+      "Name": "Arial",
+      "Size": 10,
+      "Underline": "None"
+    },
+    "IsAutomaticSize": true,
+    "IsInnerMode": null,
+    "Shadow": false,
+    "ShapeProperties": null,
+    "Width": 823,
+    "Height": 1043,
+    "X": 3125,
+    "Y": 1466,
+    "link": {
+      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend",
+      "Rel": "self",
+      "Title": null,
+      "Type": null
+    }
+  },
+  "Code": 0,
+  "Status": "0"
+}
+```
+
+**رموز حالة HTTP**
+
+| الكود | المعنى                      | الوصف                                            |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | نجح الطلب (OK)              | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صالح (Bad Request)  | معلمات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401  | غير مصرّح (Unauthorized)     | رمز JWT غير صالح أو مفقود.                      |
+| 413  | حجم الحمولة كبير جدًا (Payload Too Large) | تجاوز ملف المرفق الحد الأقصى للحجم.              |
+| 500  | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم.                         |
+
+## كيفية استخدام واجهة GetWorksheetChartLegend مع مكتبات SDK
+
+### مواصفات واجهة GetWorksheetChartLegend
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartLegend) واجهة برمجة تطبيقات قابلة للوصول العام، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر `cURL` للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية استدعاء واجهة برمجة التطبيقات السحابية باستخدام `cURL`.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" 
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Legend": {
-
     "Position": "Right",
-
     "LegendEntries": {
-
       "link": {
-
         "Href": "/legendEntries",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "Area": {
-
-      "BackgroundColor": {
-
-        "A": 0,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
       "FillFormat": {
-
         "Type": "Automatic",
-
         "SolidFill": null,
-
         "PatternFill": null,
-
         "TextureFill": null,
-
         "GradientFill": null,
-
         "ImageData": null
-
       },
-
-      "ForegroundColor": {
-
-        "A": 0,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
       "Formatting": "Automatic",
-
       "InvertIfNegative": false,
-
       "Transparency": 0.0
-
     },
-
     "AutoScaleFont": true,
-
     "BackgroundMode": "Automatic",
-
     "Border": {
-
       "BeginArrowLength": "Medium",
-
       "BeginArrowWidth": "Medium",
-
       "BeginType": "None",
-
       "CapType": "Flat",
-
-      "Color": {
-
-        "A": 0,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "Color": { "A": 0, "R": 0, "G": 0, "B": 0 },
       "CompoundType": "Single",
-
       "DashType": "Solid",
-
       "EndArrowLength": "Medium",
-
       "EndArrowWidth": "Medium",
-
       "EndType": "None",
-
       "GradientFill": null,
-
       "IsAuto": true,
-
       "IsAutomaticColor": true,
-
       "IsVisible": true,
-
       "JoinType": "Round",
-
       "Style": "Solid",
-
       "Transparency": 0.0,
-
       "Weight": "HairLine",
-
       "WeightPt": 0.0
-
     },
-
     "Font": {
-
-      "Color": {
-
-        "A": 255,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
       "DoubleSize": 10.0,
-
       "IsBold": false,
-
       "IsItalic": false,
-
       "IsStrikeout": false,
-
       "IsSubscript": false,
-
       "IsSuperscript": false,
-
       "Name": "Arial",
-
       "Size": 10,
-
       "Underline": "None"
-
     },
-
     "IsAutomaticSize": true,
-
     "IsInnerMode": null,
-
     "Shadow": false,
-
     "ShapeProperties": null,
-
     "Width": 823,
-
     "Height": 1043,
-
     "X": 3125,
-
     "Y": 1466,
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend",
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
-  "Code": 0,
-
-  "Status": "0"
-
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
- 
+### استخدام مكتبات SDK الخاصة بـ Aspose.Cells Cloud
+
+استخدام مكتبة SDK هو أفضل طريقة لتسريع عملية التطوير. فتتولى المكتبة تلقائيًا تفاصيل المستوى المنخفض، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الرمز التالية كيفية استدعاء خدمات Aspose.Cells باستخدام مكتبات SDK مختلفة:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

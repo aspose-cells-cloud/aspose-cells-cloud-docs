@@ -1,74 +1,122 @@
-﻿---
-title: 从工作表获取图表
+---
+title: "从工作表中获取图表"
 type: docs
-url: /zh/charts/get/
+url: /charts/get/
 aliases: [/get-chart-from-a-worksheet/]
 weight: 10
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从工作表获取图表
+keywords: "Aspose.Cells Cloud, 获取图表, 工作表, REST API, Excel, 图表 API, 图表检索, Excel 图表"
+description: "使用 Aspose.Cells Cloud REST API 从工作表中检索图表信息，包括元数据和导出格式。"
+ArticleTitle: "从工作表中获取图表 – Aspose.Cells Cloud API"
 ---
-此 REST API 表示获取图表信息。
- 
-## 重新设置 API
- 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}
- 
-```
-请求参数为：
- 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|图表编号|整数|小路|图表编号。|
-|格式|细绳|询问|导出的文件格式。|
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
- 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
- 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+此 REST API 用于检索图表信息。
+
+**前提条件** – 要调用此端点，您必须拥有有效的 Aspose.Cells Cloud 账户、一个活跃的存储位置以及一个 JWT 访问令牌。在发起任何 API 请求前，请按照[认证指南](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)中的说明获取令牌。
+
+## GetWorksheetChart API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}
+```
+
+### **安全与认证**
+
+Aspose.Cells Cloud API 是安全的，需要使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的认证</a>。
+
+### 请求参数
+
+| 参数名        | 类型   | 位置 | 描述                                 |
+| ------------- | ------ | ---- | ------------------------------------ |
+| name          | string | path | Excel 文件的名称。                   |
+| sheetName     | string | path | 包含图表的工作表名称。               |
+| chartNumber   | integer| path | 要检索的图表的零基索引。             |
+| format        | string | query| 所需的导出格式（例如：png、jpeg）。 |
+| folder        | string | query| 存放文档的文件夹路径。               |
+| storageName   | string | query| 存储服务的名称。                     |
+
+
+### **响应**
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "Chart": {
+    "Name": "Chart 1",
+    "Type": "Bar",
+    "Top": 50,
+    "Left": 100,
+    "Width": 400,
+    "Height": 300,
+    "DataRange": "A1:B5",
+    "ShowLegend": true,
+    "Format": "png"
+  }
+}
+```
+
+**HTTP 状态码**
+
+| 状态码 | 含义            | 描述                                           |
+|--------|-----------------|------------------------------------------------|
+| 200    | OK（成功）      | 过滤器应用成功；响应包含操作详情。             |
+| 400    | Bad Request（错误请求） | 参数缺失或无效（例如：不支持的文件类型）。 |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。                      |
+| 413    | Payload Too Large（请求实体过大） | 上传的文件超出大小限制。           |
+| 500    | Internal Server Error（内部服务器错误） | 发生意外服务器错误。          |
+
+## 如何使用 SDK 调用 GetWorksheetChart API
+
+### GetWorksheetChart API 规范
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart)定义了一个公开可访问的编程接口，可让您直接从 Web 浏览器发起 REST 交互。
+
+您可使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何通过 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" 
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
-  "Status": "OK"
-
+  "Status": "OK",
+  "Chart": {
+    "Name": "Chart 1",
+    "Type": "Bar",
+    "Top": 50,
+    "Left": 100,
+    "Width": 400,
+    "Height": 300,
+    "DataRange": "A1:B5",
+    "ShowLegend": true,
+    "Format": "png"
+  }
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
-## Cloud SDK 系列
- 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
- 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
- 
+
+### 使用 Aspose.Cells Cloud SDK
+
+使用 SDK 是加速开发的最佳方式。SDK 会处理底层细节，使您能专注于项目任务。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，查看 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

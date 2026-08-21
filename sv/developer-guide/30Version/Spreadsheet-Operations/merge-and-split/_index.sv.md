@@ -1,17 +1,20 @@
-﻿---
-title: Sammanfoga och dela Excel-filer
-second_title: Documen
-linktitle: Sammanfoga och dela
-type: docs
-url: /sv/merge-and-split/
-keywords: Merge Excel Files,Combine Excel Sheets,Join Excel Spreadsheets,Merge Multiple Excel Files,Split Excel File,Excel Sheet Separator,Excel Workbook Splitte
-description: Aspose.Cells Cloud REST API stöder arbete med sammanslagning och splitter på en Excel-fil. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 32
-kwords: Sammanfoga Excel-filer, Kombinera Excel-ark, Koppla ihop Excel-kalkylblad, Sammanfoga flera Excel-filer, Dela Excel-fil, Excel-arkseparator, Excel-arbetsboksdelare
 ---
+title: "Sammanfoga och dela Excel-filer"
+second_title: "Dokument"
+linktitle: "Sammanfoga och dela"
+type: docs
+url: /merge-and-split/
+keywords: "Aspose.Cells Cloud, sammanfoga Excel-filer, dela Excel-arbetsbok, Excel API"
+description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att sammanfoga flera Excel-arbetsböcker till en enda fil och dela en arbetsbok i separata filer. SDK:er finns tillgängliga för Android, .NET, Go, Java, Node.js, Perl, PHP, Python, Ruby och Swift."
+ArticleTitle: "Sammanfoga och dela Excel-filer – Aspose.Cells Cloud-dokumentation"
+---
+
 ## Sammanfoga och dela med Excel-filer
 
-- [Hur man sammanfogar flera Excel-filer till en Excel-fil.](/cells/sv/merge-multi-files-into-excel/)
-- [Hur man sammanfogar en Excel-arbetsbok med en annan Excel-fil.](/cells/sv/merge-an-excel-file-into-the-excel-file/)
-- [Hur man delar flera Excel-filer.](/cells/sv/split-multi-excel-files/)
-- [Hur man delar upp en Excel-arbetsbok till flera filer.](/cells/sv/split-an-excel-file-to-multi-files/)
+Följande guider visar hur du kombinerar flera Excel-arbetsböcker till en enda fil eller delar en arbetsbok i flera filer med Aspose.Cells Cloud.
+
+- **Sammanfoga flera filer:** [Hur man sammanfogar flera Excel-filer till en enda arbetsbok](/cells/merge-multi-files-into-excel/) – Kombinera flera arbetsböcker till en sammanfattande arbetsbok.  
+- **Sammanfoga till befintlig arbetsbok:** [Hur man sammanfogar en Excel-arbetsbok till en annan arbetsbok](/cells/merge-an-excel-file-into-the-excel-file/) – Lägg till innehållet från en arbetsbok till en befintlig arbetsbok.  
+- **Dela flera filer:** [Hur man delar flera Excel-filer](/cells/split-multi-excel-files/) – Separera en samling arbetsböcker till individuella filer.  
+- **Dela i flera filer:** [Hur man delar en Excel-arbetsbok i flera filer](/cells/split-an-excel-file-to-multi-files/) – Dela en enda arbetsbok i flera mindre arbetsböcker.
+---

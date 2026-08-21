@@ -1,65 +1,83 @@
-﻿---
-title: Listenobjekt, Duplikate entfernen
-second_title: Documen
-linktitle: Duplikat entfernen
-type: docs
-keywords: list object(table) remove duplicates 
-url: /de/list-objects/remove-duplicates/
-description:  Entfernen Sie Duplikate aus Listenobjekten.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Listenobjekt, Duplikate entfernen
 ---
-Dieser REST API gibt an, dass Duplikate aus dem Listenobjekt entfernt werden sollen.
+title: "Doppelte Zeilen aus einer ListObject entfernen – Aspose.Cells Cloud API-Dokumentation"
+second_title: "Dokument"
+linktitle: "Doppelte entfernen"
+type: docs
+keywords: "doppelte entfernen, listobject, aspose.cells cloud api, excel, rest"
+url: /list-objects/remove-duplicates/
+description: "Erfahren Sie, wie Sie doppelte Zeilen aus einem ListObject in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API entfernen. Enthält Endpunkt, Parameter, Authentifizierung sowie Beispielanfragen und -antworten."
+weight: 20
+---
 
-## RSET API
+Diese REST API entfernt doppelte Zeilen aus einem **ListObject** in einem Excel-Arbeitsblatt.
+
+## REST API
 
 ```bash
-
-POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
-
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
 ```
 
-Die Anforderungsparameter sind:
+### **Anforderungsparameter**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody| Beschreibung|
-|:- |:- |:- |:- |
-|Name|Zeichenfolge|Weg||
-|Blattname|Zeichenfolge|Weg||
-|listObjectIndex|Ganze Zahl|Weg||
-|Ordner|Zeichenfolge|Abfrage||
-|Speichername|Zeichenfolge|Abfrage||
+| Parametername       | Typ     | Ort     | Beschreibung                                           |
+| ------------------- | ------- | ------- | ------------------------------------------------------ |
+| **name**            | String  | Pfad    | Der Name der Excel-Datei.                              |
+| **sheetName**       | String  | Pfad    | Der Name des Arbeitsblatts, das das ListObject enthält. |
+| **listObjectIndex** | Integer | Pfad    | Der nullbasierte Index des zu verarbeitenden ListObjects. |
+| **folder**          | String  | Abfrage | (Optional) Der Ordnerpfad, in dem die Datei gespeichert ist. |
+| **storageName**     | String  | Abfrage | (Optional) Der Name des Speicherdienstes.             |
 
- Der[OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/ListObjectsController/PostWorksheetListObjectRemoveDuplicates) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+### Beispielanfrage (cURL)
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Anfrage" tabName2="Antwort" >}}
 {{< tab tabNum="1" >}}
 
-```powershell
-curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
-```powershell
-
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "DuplicateRowsRemoved": 12,
+  "Message": "Doppelte Zeilen wurden erfolgreich entfernt."
+}
 ```
 
 {{< /tab >}}
-
 {{< /tabs >}}
 
+### Antwort
+
+Im Erfolgsfall gibt der Dienst ein JSON-Objekt zurück, das dem obigen Beispiel ähnelt. Die Felder sind:
+
+- **Code** – HTTP-Statuscode (`200` bei Erfolg).
+- **Status** – Textuelle Beschreibung des Status.
+- **DuplicateRowsRemoved** – Anzahl der entfernten Zeilen.
+- **Message** – Zusätzliche Informationen zum Vorgang.
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                   | Beschreibung                                               |
+|------|-----------------------------|------------------------------------------------------------|
+| 200  | OK                          | Filter erfolgreich angewendet; Antwort enthält Vorgangsdetails. |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized                | Ungültiger oder fehlender JWT-Token.                      |
+| 413  | Payload Too Large           | Die hochgeladene Datei überschreitet das Größenlimit.     |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler.                                |
 ## Cloud SDK-Familie
 
-Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im GitHub-Repository.
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklungszeit zu verkürzen. Ein SDK übernimmt die Details auf niedriger Ebene, sodass Sie sich auf die Aufgaben Ihres Projekts konzentrieren können. Bitte prüfen Sie das GitHub-Repository für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webservices mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

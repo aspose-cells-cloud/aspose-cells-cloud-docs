@@ -1,75 +1,80 @@
-﻿---
-title: Nascondi colonne su un foglio di lavoro Excel
-second_title: Documen
-linktitle: Nascosto
+---
+title: "Nascondere colonne in un foglio di calcolo Excel"
+second_title: "Documento"
+linktitle: "Nascondi"
 type: docs
 url: /it/columns/hide/
-aliases: [/hide-columns-in-excel-worksheet/,/hide-columns-in-an-excel-worksheet/]
-keywords: Hide column on an Excel workshee
-description: Aspose.Cells Cloud REST API supporta l'occultamento di colonne in un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases:
+  - /it/hide-columns-in-excel-worksheet/
+  - /it/hide-columns-in-an-excel-worksheet/
+keywords: "Aspose.Cells Cloud, API per nascondere colonne, nascondere colonne Excel, REST API per nascondere colonne, Aspose.Cells SDK, automazione fogli di calcolo"
+description: "Scopri come nascondere una o più colonne in un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include endpoint, parametri, esempio cURL, esempi di codice SDK e gestione degli errori."
 weight: 40
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Nascondi colonne su un foglio di lavoro Excel
 ---
-Questo REST API indica di nascondere le colonne del foglio di lavoro.
 
-## RSET API
+Questa API REST nasconde colonne in un foglio di calcolo.
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
 ```
 
-I parametri della richiesta sono:
+### Parametri della richiesta
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome della cartella di lavoro.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| colonna di inizio| intero| domanda| Indice della colonna iniziale da utilizzare.|
-| colonne totali| intero| domanda| Numero di colonne da gestire.|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome Parametro | Tipo    | Posizione | Descrizione                                                                      |
+| -------------- | ------- | --------- | -------------------------------------------------------------------------------- |
+| name           | string  | path      | Nome del file del workbook.                                                      |
+| sheetName      | string  | path      | Nome del foglio di calcolo in cui verranno nascoste le colonne.                 |
+| startColumn    | integer | query     | Indice in base zero della prima colonna da nascondere.                          |
+| totalColumns   | integer | query     | Numero di colonne consecutive da nascondere, a partire da **startColumn**.      |
+| folder         | string  | query     | Percorso della cartella contenente il workbook.                                 |
+| storageName    | string  | query     | Nome del servizio di archiviazione in cui è ubicato il file.                    |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+La [Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) definisce un'interfaccia di programmazione pubblicamente accessibile e consente di effettuare interazioni REST direttamente da un browser web.
 
- Puoi usare**cURL** Strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+Puoi utilizzare lo strumento a riga di comando **cURL** per chiamare facilmente i servizi web di Aspose.Cells. L'esempio riportato di seguito mostra come nascondere una colonna con cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
- curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/hide?startColumn=1&totalColumns=1" -H "accept: application/json"
-
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/hide?startColumn=1&totalColumns=1" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
+
+**Codici di risposta possibili**
+
+| Codice HTTP | Significato                                         | JSON di esempio (errore)                              |
+| ----------- | --------------------------------------------------- | ----------------------------------------------------- |
+| 200         | Operazione riuscita                                 | `{ "Code": 200, "Status": "OK" }`                     |
+| 400         | Richiesta non valida (es. parametri non validi)     | `{ "Code": 400, "Message": "Intervallo colonne non valido." }` |
+| 401         | Non autorizzato (token mancante o non valido)       | `{ "Code": 401, "Message": "Token di accesso non valido." }` |
+| 404         | Non trovato (workbook o foglio di calcolo)         | `{ "Code": 404, "Message": "File non trovato." }`     |
+| 500         | Errore interno del server                           | `{ "Code": 500, "Message": "Errore imprevisto." }`    |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+## Famiglia di SDK per il Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'utilizzo di un SDK rappresenta il metodo più rapido per lo sviluppo. Un SDK astrae i dettagli di basso livello, consentendoti di concentrarti sulla logica di business. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

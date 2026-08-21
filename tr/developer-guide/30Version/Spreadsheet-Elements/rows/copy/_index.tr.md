@@ -1,126 +1,132 @@
-﻿---
-title: Excel çalışma sayfasındaki satırları kopyalayın
-second_title: Documen
-linktitle: Polis
-type: docs
-url: /tr/rows/copy/
-aliases: [/copy-rows-in-excel-worksheet/]
-keywords: Copy rows on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki satırların kopyalanmasını destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 30
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki satırları kopyala
 ---
-Bu REST API çalışma sayfası satırlarını kopyalamayı gösterir.
+title: "Excel Çalışma Sayfasında Satırları Kopyalama"
+description: "Aspose.Cells Cloud REST API'sini (v3.0) kullanarak bir Excel çalışma sayfasındaki belirli tüm satırlardan veri ve biçimleri kopyalayın. Kimlik doğrulama, istek/yanıt ayrıntıları, hata işleme ve SDK örneklerini içerir."
+api_version: "v3.0"
+endpoint: "/cells/{name}/worksheets/{sheetName}/cells/rows/copy"
+method: "POST"
+weight: 30
+---
 
-## RSET API
+# Excel Çalışma Sayfasında Satırları Kopyalama <span style="float:right;">v3.0</span>
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/copy
- 
+Bir çalışma sayfasından belirli tüm satırlardan veri ve biçimleri kopyalayın.
+
+---
+
+## Ön Gereksinimler
+
+| # | Gereksinim |
+|---|-------------|
+| 1 | Geçerli bir **JWT** belirteci. [Kimlik doğrulama kılavuzuna](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) bakınız. |
+| 2 | Çalışma kitabının (`{name}`) seçilen **klasör**/**depolar** içinde zaten mevcut olması gerekir. |
+| 3 | Hedef çalışma sayfasının (`{sheetName}`) çalışma kitabında mevcut olması gerekir. |
+| 4 | (İsteğe bağlı) Dosya varsayılan konumda değilse **klasör** ve **storageName** bilgilerini bilmek. |
+
+---
+
+## Uç Nokta
+
+```
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/copy
 ```
 
-İstek parametreleri şunlardır:
+*Tüm yol parametreleri büyük/küçük harfe duyarlıdır.*
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| kaynakSatırİndeksi| tam sayı| sorgu| Kaynak satır dizini|
-| hedefSatırİndeksi| tam sayı| sorgu| Hedef satır dizini|
-| satır numarası| tam sayı| sorgu| Kopyalanan satır numarası|
-| çalışma sayfası| sicim| sorgu| çalışma sayfası|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+### Yol Parametreleri
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetRows) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+| Parametre | Tür    | Gerekli | Açıklama |
+|-----------|--------|---------|----------|
+| `name`    | string | ✅ | Çalışma kitabının dosya adı (örn. `test.xlsx`). |
+| `sheetName` | string | ✅ | Çalışma sayfasının adı (örn. `Sheet1`). |
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### Sorgu Parametreleri
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Parametre            | Tür     | Gerekli | Açıklama |
+|----------------------|---------|---------|----------|
+| `sourceRowIndex`     | integer | ✅ | Kaynak satırın sıfır tabanlı indeksi. |
+| `destinationRowIndex`| integer | ✅ | Satırların yerleştirileceği sıfır tabanlı indeks. |
+| `rowNumber`          | integer | ✅ | Kopyalanacak satır sayısı. |
+| `worksheet`          | string  | ❌ | Çalışma sayfası tanımlayıcısı; genellikle **sheetName** ile aynıdır. |
+| `folder`             | string  | ❌ | Çalışma kitabını içeren klasörün yolu. |
+| `storageName`        | string  | ❌ | Depolama hizmetinin adı. |
 
-{{< tab tabNum="1" >}}
+---
+
+## İstek Örneği (cURL)
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/copy?sourceRowIndex=1&destinationRowIndex=12&rowNumber=10" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
+> **Not**  
+> `<jwt token>` ifadesini, kimlik doğrulama hizmetinden elde edilen geçerli bir JWT belirteci ile değiştirin.
 
-{{< tab tabNum="2" >}}
+---
 
-```bash
+## Başarılı Yanıt
+
+| Kod | Açıklama |
+|-----|----------|
+| **200** | Satırlar başarıyla kopyalandı. |
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
-{{< /tab >}}
+Yanıt gövdesi `CellsCloudResponse` türünden bir örnektir.
 
-{{< /tabs >}}
+---
 
-## Bulut SDK Ailesi
+## Hata İşleme
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| HTTP Kodu | Anlamı                               | Örnek Gövde |
+|-----------|--------------------------------------|-------------|
+| **400**   | Geçersiz İstek – eksik/geçersiz parametreler. | `{ "Code": 400, "Message": "Invalid sourceRowIndex." }` |
+| **401**   | Yetkisiz – geçersiz veya eksik JWT belirteci. | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404**   | Bulunamadı – çalışma kitabı veya çalışma sayfası mevcut değil. | `{ "Code": 404, "Message": "File not found." }` |
+| **500**   | Sunucu İç Hatası – beklenmeyen sunucu koşulu. | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+**İşleme yönergeleri**
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+* **400** – Gerekli tüm sorgu parametrelerinin mevcut ve doğru biçimlendirildiğinden emin olun.  
+* **401** – JWT belirtecini yeniden oluşturun veya yenileyin.  
+* **404** – Çalışma kitabı ve çalışma sayfası adlarını doğrulayın ve dosyanın belirtilen klasör/depolamada mevcut olduğundan emin olun.  
+* **500** – Kısa bir gecikmeden sonra yeniden deneyin; sorun devam ederse Aspose desteğiyle iletişime geçin.
 
-{{< tab tabNum="1" >}}
+---
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostCopyWorksheetRows.cs" >}}
+## SDK Örnekleri
 
-{{< /tab >}}
+Aşağıdaki kod parçacıkları, resmi Aspose.Cells Cloud SDK'larıyla **Satırları Kopyala** işlemini nasıl çağıracağınızı göstermektedir.
 
-{{< tab tabNum="2" >}}
+| Dil | Örnek |
+|-----|-------|
+| **C#**   | <details><summary>Kodu göster</summary>```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar api = new CellsApi("clientId", "clientSecret");\nawait api.PostCopyWorksheetRowsAsync(name: "test.xlsx", sheetName: "Sheet1", sourceRowIndex: 1, destinationRowIndex: 12, rowNumber: 10);\n```</details> |
+| **Java** | <details><summary>Kodu göster</summary>```java\nCellsApi api = new CellsApi("clientId", "clientSecret");\napi.postCopyWorksheetRows("test.xlsx", "Sheet1", 1, 12, 10, null, null, null);\n```</details> |
+| **Python** | <details><summary>Kodu göster</summary>```python\nfrom asposecellscloud import CellsApi\napi = CellsApi(client_id='clientId', client_secret='clientSecret')\napi.post_copy_worksheet_rows(name='test.xlsx', sheet_name='Sheet1', source_row_index=1, destination_row_index=12, row_number=10)\n```</details> |
+| **Node.js** | <details><summary>Kodu göster</summary>```javascript\nconst { CellsApi } = require('asposecellscloud');\nconst api = new CellsApi('clientId', 'clientSecret');\nawait api.postCopyWorksheetRows('test.xlsx', 'Sheet1', 1, 12, 10);\n```</details> |
+| **Go** | <details><summary>Kodu göster</summary>```go\nimport \"github.com/asposecellscloud/aspose-cells-cloud-go/v3\"\napi := cells.NewCellsApiClient(\"clientId\", \"clientSecret\")\n_, err := api.PostCopyWorksheetRows(context.Background(), \"test.xlsx\", \"Sheet1\", 1, 12, 10, nil, nil, nil)\n```</details> |
+| **PHP** | <details><summary>Kodu göster</summary>```php\nuse Aspose\Cells\CellsApi;\n$api = new CellsApi('clientId', 'clientSecret');\n$api->postCopyWorksheetRows('test.xlsx', 'Sheet1', 1, 12, 10);\n```</details> |
+| **Ruby** | <details><summary>Kodu göster</summary>```ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::CellsApi.new('clientId', 'clientSecret')\napi.post_copy_worksheet_rows('test.xlsx', 'Sheet1', 1, 12, 10)\n```</details> |
+| **Perl** | <details><summary>Kodu göster</summary>```perl\nuse Aspose::Cells::CellsApi;\nmy $api = Aspose::Cells::CellsApi->new('clientId', 'clientSecret');\n$api->postCopyWorksheetRows(name => 'test.xlsx', sheetName => 'Sheet1', sourceRowIndex => 1, destinationRowIndex => 12, rowNumber => 10);\n```</details> |
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostCopyWorksheetRows.java" >}}
+*Tüm kaynak dosyalar [Aspose‑Cells‑Cloud GitHub deposunda](https://github.com/aspose-cells-cloud) mevcuttur.*
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="3" >}}
+## Ayrıntılı Bilgi
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostCopyWorksheetRows.php" >}}
+- [Excel Çalışma Sayfasında Satır Ekle](/rows/add/)  
+- [Excel Çalışma Sayfasında Satır Sil](/rows/delete/)  
+- [Excel Çalışma Sayfasında Satır Güncelle](/rows/update/)  
 
-{{< /tab >}}
+--- 
 
-{{< tab tabNum="4" >}}
-
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostCopyWorksheetRows.rb" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostCopyWorksheetRows.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostCopyWorksheetRows.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostCopyWorksheetRows.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostCopyWorksheetRows.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+*Sayfa **{{DATE}}** tarihinde oluşturuldu. Bu API'nin en son sürümü için [OpenAPI spesifikasyonuna](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetRows) bakınız.*

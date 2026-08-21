@@ -1,74 +1,69 @@
-﻿---
-title: Elimina una forma tramite indice su un foglio di lavoro Excel
-second_title: Documen
-linktitle: Elimina
+---
+title: "Eliminare una forma per indice in un foglio di calcolo Excel"
+second_title: "Documento"
+linktitle: "Elimina"
 type: docs
 url: /it/shapes/delete/
-aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
-keywords: Delete a shape on an Excel workshee
-description: Aspose.Cells Cloud REST API supporta l'eliminazione di forme su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/delete-a-shape-by-index-inside-the-worksheet/]
+keywords: "Aspose.Cells Cloud, Elimina forma, Indice forma, Foglio di calcolo Excel, API REST, SDK"
+description: "Utilizza l'API REST di Aspose.Cells Cloud per eliminare una forma per indice in un foglio di calcolo Excel. L'API è disponibile tramite diversi SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) e supporta varie opzioni di archiviazione."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Elimina una forma tramite indice su un foglio di lavoro Excel
 ---
-Questo REST API indica di eliminare una forma su un foglio di lavoro Excel.
 
-## RSET API
+Questa API REST elimina una forma in un foglio di calcolo Excel.
+
+## API REST
 
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
- 
 ```
 
-I parametri della richiesta sono:
+### **Parametri della richiesta**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| nome del documento.|
-| Nome foglio| corda| sentiero| nome del foglio di lavoro.|
-| indice di forma| intero| sentiero| indice delle forme nelle forme del foglio di lavoro.|
-| cartella| corda| domanda| Cartella del documento.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome parametro | Tipo    | Posizione | Descrizione                                     |
+| -------------- | ------- | --------- | ----------------------------------------------- |
+| name           | string  | path      | Nome del file del foglio di calcolo.            |
+| sheetName      | string  | path      | Nome del foglio di calcolo.                     |
+| shapeindex     | integer | path      | Indice della forma all'interno delle forme del foglio. |
+| folder         | string  | query     | Cartella in cui è memorizzato il foglio di calcolo. |
+| storageName    | string  | query     | Nome dell'archiviazione.                        |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShape) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShape) definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di eseguire interazioni REST direttamente da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+Puoi utilizzare lo strumento a riga di comando **cURL** per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare una chiamata all'API Cloud tramite cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes/1" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+## Famiglia di SDK Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+Utilizzare un SDK è il modo più rapido per sviluppare. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

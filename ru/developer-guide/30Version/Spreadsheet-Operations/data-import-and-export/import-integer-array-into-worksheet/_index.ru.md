@@ -1,63 +1,95 @@
-﻿---
-title: Импорт целочисленного массива в рабочий лист Excel
-linktitle: Импорт целого числа arra
-type: docs
-url: /ru/import-integer-array-into-excel-worksheet/
-aliases: [/import-integer-array-into-excel-worksheet/,/import-integer-array-into-worksheet/,/import-data/integer-array/, /import/integer-array/]
-keywords: Import integer array data into Excel files
-description: Aspose.Cells Cloud REST API поддерживает импорт целочисленных массивов в файлы Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 30
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Импорт целочисленного массива в рабочий лист Excel
 ---
-Этот REST API `import int array data` в рабочий лист Excel.
+title: "Импорт целочисленного массива в рабочую тетрадь Excel"
+linktype: "import-integer-array"
+type: docs
+url: /import-integer-array-into-excel-worksheet/
+aliases:
+  - /import-integer-array-into-excel-worksheet/
+  - /import-integer-array-into-worksheet/
+  - /import-data/integer-array/
+  - /import/integer-array/
+keywords: "Aspose.Cells Cloud, Excel, импорт целочисленного массива, REST API, SDK, C#, PHP, Ruby, Java, Python"
+description: "Узнайте, как импортировать целочисленный массив в рабочую тетрадь Excel с помощью REST API Aspose.Cells Cloud. Включает синтаксис запроса, параметры, примеры кода для различных SDK и детали ответа."
+weight: 30
+ArticleTitle: "Импорт целочисленного массива в рабочую тетрадь Excel – API Aspose.Cells Cloud"
+---
 
-Запрос представляет собой HTTP-запрос с составным содержимым (см.[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)или[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Первая часть составного содержимого содержит данные ImportIntegerArrayOption, а вторая — файл данных.
+Этот REST API импортирует целочисленный массив в рабочую тетрадь Excel.
 
-## РСЕT API
+Запрос должен быть HTTP **POST** с многочастным содержимым (см. [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) или [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Первая часть многочастного тела содержит JSON-полезную нагрузку **ImportIntegerArrayOption**, а вторая часть — исходный файл данных (например, CSV-файл или двоичный файл Excel).
 
-```bash
+## API PostImportData
 
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-Важные параметры описаны в следующей таблице:
+Оба конечных пункта принимают одну и ту же многочастную полезную нагрузку. Первый конечный пункт выполняет общую операцию импорта, а второй нацелен на конкретную рабочую книгу, идентифицируемую по `{name}`.
 
-**ImportIntegerArrayOption**
+### **Безопасность и аутентификация**
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-| FirstRow| инт||
-| FirstColumn| инт||
-| IsVertical| нить| верно/ложно.|
-| Данные|Целое число[]||
-|Рабочий лист назначения| нить| имя конечного рабочего листа.|
-| IsInsert| нить| верно/ложно.|
-| ImportDataType| нить|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Источник| FileSource| Указывает позицию файла данных, если параметр BatchData равен нулю.|
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе маркера JWT</a>.
 
-**Пример**
+### **Параметры запроса**
 
-```JSON
+### ImportIntegerArrayOption
 
+| Имя параметра          | Тип       | Описание                                                                                                                                                                                        |
+| ---------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **FirstRow**           | int       | Индекс первой строки (начиная с нуля), в которую будут помещены данные.                                                                                                                         |
+| **FirstColumn**        | int       | Индекс первого столбца (начиная с нуля), в который будут помещены данные.                                                                                                                       |
+| **IsVertical**         | boolean   | `true`, чтобы вставить массив вертикально (вниз по столбцу); `false`, чтобы вставить его горизонтально (вдоль строки).                                                                        |
+| **Data**               | Integer[] | Целочисленный массив для импорта.                                                                                                                                                               |
+| **DestinationWorksheet** | string    | Имя рабочего листа, который получит данные.                                                                                                                                                    |
+| **IsInsert**           | boolean   | `true`, чтобы вставить строки/столбцы перед записью данных; `false`, чтобы перезаписать существующие ячейки.                                                                                  |
+| **ImportDataType**     | string    | Тип импортируемых данных. Допустимые значения: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
+| **Source**             | FileSource | Указывает расположение файла данных, когда параметр **BatchData** имеет значение `null`.                                                                                                      |
+
+#### Пример тела запроса
+
+```json
 {
-    "Data": [1, 2, 4],
-    "DestinationWorksheet": "Sheet1",
-    "FirstRow": 1,
-    "FirstColumn": 2,
-    "IsVertical": true,
-    "IsInsert": true,
-    "importDataType": "IntArray"
+  "Data": [1, 2, 4],
+  "DestinationWorksheet": "Sheet1",
+  "FirstRow": 1,
+  "FirstColumn": 2,
+  "IsVertical": true,
+  "IsInsert": true,
+  "ImportDataType": "IntArray"
 }
-
 ```
 
-## Семейство облачных SDK
+### Ответ
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Успешный запрос возвращает **HTTP 200** с JSON-полезной нагрузкой, подобной следующей:
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+Возможные коды состояния:
+
+| Код | Значение                                     |
+| --- | -------------------------------------------- |
+| 200 | Импорт успешно завершён                      |
+| 400 | Неверный запрос — отсутствующие или недопустимые данные |
+| 401 | Неавторизован — недопустимый или отсутствующий токен |
+| 500 | Внутренняя ошибка сервера                   |
+
+## Как использовать API PostImportData с SDK
+
+### Спецификация API PostImportData
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) определяет публично доступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK — самый быстрый способ интеграции этого функционала. SDK абстрагируют низкоуровневые детали, позволяя сосредоточиться на бизнес-логике. Полный список SDK Aspose.Cells Cloud см. в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
+
+Следующие примеры кода демонстрируют вызов веб-служб Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

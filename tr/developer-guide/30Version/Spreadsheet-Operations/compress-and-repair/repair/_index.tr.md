@@ -1,87 +1,122 @@
-﻿---
-title: Excel Dosyasını Onarın
-second_title: Documen
-type: docs
-linktitle: Excel Dosyasını Onarın
-url: /tr/repair-excel-files/
-keywords: Repair Excel, ODS, WPS, and so on files
-description: Excel dosyalarını Aspose.Cells Cloud REST API kullanarak onarın. API, projelerinize hızlı entegrasyon için Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift dahil olmak üzere birden fazla geliştirme dilini destekler.
-weight: 39
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Onarım
 ---
-Bu REST API, `repair` Excel dosyalarını gösterir.
+title: "Excel Dosyalarını Onar"
+second_title: "Belge"
+type: docs
+linktitle: "Excel Dosyalarını Onar"
+url: /repair-excel-files/
+keywords: "Aspose Cells, Excel onarım API'si, bozuk XLSX, elektronik tablo kurtarma, bulut API'si"
+description: "Aspose.Cells Cloud REST API'sini kullanarak bozuk Excel dosyalarını (XLS, XLSX, XLSM, XLSB, ODS) onarın. Bir veya daha fazla dosya yükleyin, çıktı formatını seçin ve onarılmış dosyaları Base64 olarak alın. Kurulum gerektirmez."
+weight: 39
+---
 
-- XLS, XLSX, XLSM, XLSB, ODS vb. onarımları.
-- Çoklu dosyaları destekler.
+Bu REST API, Excel dosyalarını **onarmanıza** olanak tanır.
 
-Aspose.Cells Cloud Excel Repair, bozuk Excel dosyalarından kurulum gerektirmeden çevrimiçi olarak veri kurtarır. Bozuk Excel dosyaları sorun olabilir çünkü onları açamazsınız. Bozuk Excel dosyalarından veri kurtarmak için Aspose.Cells Cloud Excel Repair Uygulamasını deneyebilirsiniz.
+- XLS, XLSX, XLSM, XLSB, ODS ve diğer elektronik tablo formatlarını onarın.  
+- Tek bir istekte birden fazla dosya yüklemeyi destekler.
 
-## RSET API
+Aspose.Cells Cloud Excel Onarımı, herhangi bir kurulum gerektirmeden bozuk Excel dosyalarından verileri çevrimiçi olarak kurtarır. Bozuk Excel dosyaları açılamadığı için sorunlidir. Bu tür dosyalardan veri kurtarmak için Aspose.Cells Cloud Excel Onarım uygulamasını deneyebilirsiniz.
+
+## REST API
+
+**Excel Dosyalarını Onar** uç noktası, bozuk elektronik tablo dosyalarını onarır ve onarılmış içeriği döndürür.
+
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/repair
-
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| dosya| dosya| formData| Yüklenecek dosya|
-| biçim| sicim| sorgu| Çıktı biçimi, Varsayılan değer null'dır, çıktı biçimi giriş dosya biçimine eşittir.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Parametre Adı | Tür   | Konum                        | Açıklama                    |
+|---------------|--------|------------------------------|-----------------------------|
+| file          | file   | formData (multipart)         | Yüklenecek dosya            |
+| format        | string | query                        | İstenen çıktı formatı. Atlanırsa (null), çıktı formatı varsayılan olarak giriş dosyasının formatıyla aynı olur. |
+
+### **Yanıt**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[birleştirilmiş dosya adı]",
+    "Filesize" : [dosya boyutu],
+    "FileContent" : "[Base64Dizisi]"
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                                |
+|-----|-----------------------------|---------------------------------------------------------|
+| 200 | OK (Tamam)                  | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request (Hatalı İstek)  | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT belirteci. |
+| 413 | Payload Too Large (Çok Büyük Yük) | Yüklenen dosya boyut sınırını aşıyor. |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası. |
+
+## SDK’lar ile PostRepair API’sini Nasıl Kullanılır
+
+### PostRepair API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/LightCells/PostRepair), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+cURL komut satırı aracını kullanarak Aspose.Cells web hizmetlerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’sine nasıl istekte bulunulacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/repair" \
--X POST \
--H "Content-Type: multipart/form-data" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'
+curl -v "https://api.aspose.cloud/v3.0/cells/repair" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt belirteci>" \
+  -F 'file1=@file1.xlsx' \
+  -F 'file2=@file2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
+```json
 {
-    "Files":
-    [
-        {
-            "Filename":"xxxx1.xlsx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        {
-            "Filename":"xxxx2.xlsx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "file1.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64Dizisi--------"
+    },
+    {
+      "Filename": "file2.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64Dizisi--------"
+    }
+  ]
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Başarılı olduğunda hizmet, `Files` dizisini içeren JSON yüküyle HTTP 200 döndürür. Hata durumlarında API standart HTTP durum kodlarını kullanır:
+
+- **400 Bad Request (Hatalı İstek)** – Geçersiz parametreler veya onarılamaz dosya.  
+- **401 Unauthorized (Yetkisiz)** – Eksik veya geçersiz JWT belirteci.  
+- **413 Payload Too Large (Çok Büyük Yük)** – Yüklenen dosya izin verilen boyutu aşıyor.  
+- **500 Internal Server Error (İç Sunucu Hatası)** – Beklenmeyen sunucu tarafı arızası.
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme hızını en çok artıracak en iyi yoldur. Bir SDK, düşük seviye detayları işler ve projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerini çeşitli SDK’lar kullanarak nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -134,3 +169,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

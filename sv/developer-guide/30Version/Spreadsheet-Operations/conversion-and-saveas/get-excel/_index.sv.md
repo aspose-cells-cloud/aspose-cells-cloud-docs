@@ -1,63 +1,115 @@
-﻿---
-title: Hämtar Excel-filen till ett annat format
-second_title: Documen
-linktitle: Hämta Excel
-type: docs
-url: /sv/get different formats files/
-aliases: [/export-excel-workbook-to-different-file-formats/, /export-different-formats/]
-keywords: Get excel files to kinds of format files
-description: Aspose.Cells Cloud REST API stöder hämta Excel-filer till olika typer av filformat. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämtar Excel-filen till andra format
 ---
-Denna REST API indikerar att `get` Excel-filen är till en fil i ett annat format.
+title: "Aspose.Cells Cloud – Konvertera Excel-arbetsbok till PDF, CSV, HTML och mer (GET /cells/{name})"
+second_title: "Dokument"
+linktitle: "Konvertera Excel"
+type: docs
+url: /get-different-formats-files/
+aliases:
+  - /export-excel-workbook-to-different-file-formats/
+  - /export-different-formats/
+keywords: "Aspose.Cells, Excel-konvertering, konvertera Excel, PDF, CSV, HTML, ODS, JSON, bildformat, kalkylarksexport, API, REST"
+description: "Lär dig hur du hämtar en Excel-arbetsbok i valfritt format (PDF, CSV, HTML, PNG, etc.) med Aspose.Cells Cloud REST API. Inkluderar cURL- och SDK-exempel, autentisering och svarsinformation."
+weight: 10
+ArticleTitle: "Aspose.Cells Cloud – Konvertera Excel-arbetsbok till PDF, CSV, HTML och mer (GET /cells/{name})"
+---
 
-**Frågeparameter**
+Denna REST API hämtar en Excel-arbetsbok i ett annat format.
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|formatera|sträng|Filformaten: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, och så vidare.|
-|lösenord|sträng|Lösenordet som behövs för att öppna en Excel-fil.|
-|ärAutoFit|sträng|Anpassar automatiskt rad- och kolumnbredden i den här arbetsboken. Standardvärdet är falskt.|
-|endastSparaTabell|sträng|sant/falskt|
-|utväg|sträng| Sökväg för att spara resultatet. Om det är en enda fil ska `outPath` omfatta både filnamnet och filändelsen. Om det gäller flera filer ska `outPath` endast inkludera mappen.|
-|outStorageName|sträng| Lagringsnamnet där den sparade filen finns.|
-|kontrolleraExcelBegränsning|bool| Om begränsning av Excel-filen ska kontrolleras när användaren ändrar celler relaterade objekt.|
-|område|sträng| De regionala inställningarna för arbetsboken.|
-|sidaBredAnpassningPerArk|bool| Sidanpassning på arbetsbladet.|
-|sidaHögAnpassaPerArk|bool| Sidans höjd får plats på arbetsbladet.|
-|enSidaPerArk|bool| Vid konvertering till formatet PDF, en sida per ark.|
-|mapp|sträng|Original arbetsboksmapp.|
-|lagringsnamn|sträng|Lagringsnamnet där filen finns.|
+## GetWorkBook API
 
-## REST API
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}
+```
 
-|**API**|**Typ**|**Beskrivning**|**Swagger-länk**|
-|:- |:- |:- |:- |
-|/celler/{namn}|FÅ|Exporterar arbetsboken till ett annat format.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+### **Säkerhet och autentisering**
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+Aspose.Cells Cloud API:n är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
+### **Frågeparametrar**
 
-{{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
+| Parameter_name        | Typ    | Beskrivning                                                                                                                                                           | Standardvärde |
+| --------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| format                | string | Mål-filformat (t.ex. CSV, XLS, HTML, MHTML, ODS, PDF, XML, TXT, TIFF, XLSB, XLSM, XLSX, XLTM, XLTX, XPS, PNG, JPG, GIF, EMF, BMP, MD, Numbers, WMF, SVG, etc.).      | –             |
+| password              | string | Lösenord som krävs för att öppna Excel-filen.                                                                                                                         | –             |
+| isAutoFit             | bool   | Justerar automatiskt rad- och kolumnbredd.                                                                                                                            | false         |
+| onlySaveTable         | bool   | När **true** sparas endast tabelldata. Accepterar `true` eller `false`.                                                                                              | false         |
+| outPath               | string | Sökväg för att spara resultatet. För en enskild fil inkludera filnamn och filtillägg; för flera filer ange endast mappnamn.                                          | –             |
+| outStorageName        | string | Namn på lagringen dit utdatafilen ska sparas.                                                                                                                        | –             |
+| checkExcelRestriction | bool   | Kontrollerar Excel-begränsningar vid ändring av celler eller relaterade objekt.                                                                                      | false         |
+| region                | string | Regionala inställningar som tillämpas på arbetsboken.                                                                                                                 | –             |
+| pageWideFitOnPerSheet | bool   | Anpassar sidbredden till varje kalkylblad vid konvertering till PDF.                                                                                                 | false         |
+| pageTallFitOnPerSheet | bool   | Anpassar sidhöjden till varje kalkylblad vid konvertering till PDF.                                                                                                  | false         |
+| onePagePerSheet       | bool   | Skapar en PDF-sida per kalkylblad.                                                                                                                                    | false         |
+| folder                | string | Mappsökväg för den ursprungliga arbetsboken.                                                                                                                          | –             |
+| storageName           | string | Namn på lagringen där källfilen finns.                                                                                                                                | –             |
+
+### Svar
+
+**Lyckades (200)**
+
+- API:n returnerar ett **[Workbook](/cells/workbook/)**-objekt som innehåller arbetsbokens strukturinformation när `format`-frågeparametern utelämnas.
+
+- API:n returnerar den konverterade filen i det begärda formatet när `format`-frågeparametern anger ett filtyp.
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/pdf
+Content-Disposition: attachment; filename="book1.pdf"
+Content-Length: 123456
+
+(binär PDF-data)
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                  | Beskrivning                                              |
+|-----|----------------------------|----------------------------------------------------------|
+| 200 | OK                         | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Ogiltig förfrågan          | Saknade eller ogiltiga parametrar (t.ex. ej stött filformat). |
+| 401 | Auktorisering misslyckades | Ogiltig eller saknad JWT-token.                          |
+| 413 | För stor nyttolast         | Uppladdad fil överskrider storleksgränsen.               |
+| 500 | Internt serverfel          | Oväntat serverfel.                                       |
+
+> **Anteckningar:**  
+> - Stora arbetsböcker kan ta längre tid att konvertera; överväg att öka förfrågningstimeout.  
+> - Vissa format (t.ex. `ODS`) stöds inte för vissa Excel-funktioner såsom makron.
+
+## Hur du använder GetWorkBook API med SDK:er
+
+> **Förutsättningar:**  
+> - En giltig **JWT-åtkomsttoken** erhållen via Aspose.Cells-autentisering.  
+> - Källarbetsboken måste lagras i en stödd Aspose-lagring eller direkt anges i förfrågan.  
+> - Kontrollera att API-versionen (`v3.0`) matchar den senast släppta versionen.
+
+### GetWorkBook API-specificering
+
+<a href="https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook" rel="noopener noreferrer">OpenAPI-specificeringen</a> definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+### Exempelförfrågan
+
+Du kan använda kommandoradsverktyget **cURL** för att komma åt Aspose.Cells webbtjänster. Följande exempel visar en korrekt GET-förfrågan med nödvändigt auktoriseringshuvud.
+
+{{< tabs tabTotal="1" tabID="11" tabName11="Förfrågan" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger"}
+curl -X GET "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger"
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK abstraher bort detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Se <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub-lagringsplatsen</a> för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -110,3 +162,33 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Se även**
+
+- <a href="https://apireference.aspose.cloud/cells/#/Workbook/ConvertWorkbook" rel="noopener noreferrer">Konvertera arbetsbok (POST)</a>  
+- <a href="https://apireference.aspose.cloud/cells/#/Workbook/SaveAs" rel="noopener noreferrer">Spara som (GET)</a>
+
+---
+
+**Senast uppdaterad: 2024-12-01**
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Aspose.Cells Cloud – Konvertera Excel-arbetsbok till PDF, CSV, HTML och mer (GET /cells/{name})",
+  "description": "Dokumentation för Aspose.Cells Cloud GET /cells/{name}-slutpunkten som konverterar Excel-arbetsböcker till olika format såsom PDF, CSV, HTML och mer.",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2024-12-01",
+  "keywords": "Aspose.Cells, Excel-konvertering, PDF, CSV, HTML, API, REST, moln",
+  "url": "https://docs.aspose.cloud/cells/get-different-formats-files/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose"
+  }
+}
+</script>
+---

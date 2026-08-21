@@ -1,81 +1,103 @@
-﻿---
-title: إضافة شكل إلى ورقة عمل Excel
-second_title: Documen
-linktitle: إعلان
+---
+title: "إضافة شكل إلى ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "إضافة"
 type: docs
 url: /ar/shapes/add/
 aliases: [/add-a-shape-inside-the-worksheet/]
-keywords: Add shape on an Excel workshee
-description: يدعم Cloud REST إضافة أشكال على ورقة عمل. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
+keywords: "Aspose.Cells، إضافة شكل، Excel، واجهة برمجة تطبيقات REST، SDK سحابي، shapeDTO، نوع الرسم"
+description: "تعرّف على كيفية إضافة أشكال (قوس، خط، مستطيل، إلخ) إلى ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API الإصدار 3.0. يتضمن بناء الجملة المطلوب، المَعلمات المطلوبة، خطوات المصادقة، وأكواد أمثلة لـ SDK."
 weight: 30
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة شكل إلى ورقة عمل Excel
+ArticleTitle: "إضافة شكل إلى ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud"
 ---
-يشير هذا REST API إلى إضافة شكل إلى ورقة عمل Excel.
 
-## RSET API
+تقوم هذه الواجهة البرمجية (REST API) بإضافة شكل إلى ورقة عمل Excel.  
+ينتمي نقطة النهاية إلى **إصدار الواجهة البرمجية v3.0**؛ لذا تأكد من استخدام رمز وصول JWT تم الحصول عليه عبر تدفق مصادقة Aspose Cloud OAuth2 (معرّف العميل/سر العميل)، وضمنه في الرأس `Authorization: Bearer <token>`.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
- 
+### **الأمان والمصادقة**
+
+تتطلب واجهات برمجة تطبيقات Aspose.Cells Cloud أمانًا عاليًا وتستخدم <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+## واجهة PutWorksheetShape برمجية
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
-معلمات الطلب هي:
+### **مَعلمات الطلب**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المستند.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| شكل دي تي أو|| جسم||
-|نوع الرسم| خيط| استفسار| شكل نوع الكائن|
-| الصف العلوي الأيسر| عدد صحيح| استفسار| مؤشر الصف العلوي الأيسر.|
-| العمود الأيسر العلوي| عدد صحيح| استفسار| فهرس العمود العلوي الأيسر.|
-| قمة| عدد صحيح| استفسار| يمثل الإزاحة الرأسية لـ Spinner من الصف الأيسر، بوحدة البكسل.|
-| غادر| عدد صحيح| استفسار| يمثل الإزاحة الأفقية لـSpinner من العمود الأيسر، بوحدة البكسل.|
-| عرض| عدد صحيح| استفسار| يمثل ارتفاع Spinner، بوحدة البكسل.|
-| ارتفاع| عدد صحيح| استفسار| يمثل عرض Spinner، بوحدة البكسل.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المَعلمة     | النوع   | الموقع | الوصف                                                                                             |
+| ----------------- | ------- | ------ | --------------------------------------------------------------------------------------------------- |
+| name              | string  | path   | اسم المستند.                                                                                       |
+| sheetName         | string  | path   | اسم ورقة العمل.                                                                                    |
+| shapeDTO          | object  | body   | كائن JSON يصف الشكل المراد إضافته (انظر مواصفة OpenAPI للحصول على المخطط الكامل).                |
+| drawingType       | string  | query  | نوع كائن الشكل (مثل `arc`، `line`، `rectangle`).                                                   |
+| upperLeftRow      | integer | query  | فهرس الصف العلوي الأيسر للشكل.                                                                     |
+| upperLeftColumn   | integer | query  | فهرس العمود العلوي الأيسر للشكل.                                                                   |
+| top               | integer | query  | الإزاحة العمودية للشكل من حافته العلوية، بوحدة البكسل.                                             |
+| left              | integer | query  | الإزاحة الأفقية للشكل من حافته اليسرى، بوحدة البكسل.                                               |
+| width             | integer | query  | عرض الشكل، بوحدة البكسل.                                                                           |
+| height            | integer | query  | ارتفاع الشكل، بوحدة البكسل.                                                                         |
+| folder            | string  | query  | المجلد الذي يحتوي على المستند.                                                                    |
+| storageName       | string  | query  | اسم وحدة التخزين.                                                                                  |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تُعرّف [مواصفة OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape) واجهة برمجة تطبيقات متاحة عمومًا، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات ويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء استدعاء لواجهة البرمجة السحابية باستخدام cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes?DrawingType=arc&upperLeftRow=1&upperLeftColumn=1&top=1&left=1&width=100&height=100" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK",
+  "ShapeId": 5
 }
- 
 ```
+
+_تُعيد الاستجابة الناجحة رمز الحالة HTTP، ونص الحالة النصي، ومعرّف الشكل الذي تم إنشاؤه حديثًا (`ShapeId`)._
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**رموز حالة HTTP**
+
+| الرمز | المعنى                      | الوصف                                                             |
+|-------|-----------------------------|-------------------------------------------------------------------|
+| 200   | OK                          | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.        |
+| 400   | Bad Request                 | مَعلمات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم).             |
+| 401   | Unauthorized                | رمز JWT غير صالح أو مفقود.                                       |
+| 413   | Payload Too Large           | حجم الملف المرفوع يتجاوز الحد المسموح به.                        |
+| 500   | Internal Server Error       | خطأ غير متوقع في الخادم.                                         |
+
+تتضمن الاستجابات الخاطئة الشائعة ما يلي:
+
+- **400 Bad Request** – مَعلمات مفقودة أو غير صالحة.  
+- **401 Unauthorized** – رمز JWT غير صالح أو مفقود.  
+- **404 Not Found** – ورقة العمل أو المستند المحدد غير موجود.
+
+يُعاد كل خطأ على هيئة كائن JSON يحتوي على حقلَي `Code` و `Message`.
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعد استخدام SDK أفضل طريقة لتسريع عملية التطوير، إذ تتعامل SDK مع التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى مراجعة [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

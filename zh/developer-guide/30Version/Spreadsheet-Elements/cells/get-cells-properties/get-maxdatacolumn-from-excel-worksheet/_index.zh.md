@@ -1,46 +1,77 @@
-﻿---
-title: 从 Excel 工作表中获取 MaxDataColumn
-type: docs
-url: /zh/get-maxdatacolumn-from-excel-worksheet/
-weight: 70
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表获取 MaxDataColumn
 ---
-此 REST API 表示当 `cellOrMethodName` 参数为 `maxdatacolumn` 时，在 Excel 文件中获取 `maxdatacolumn`。
+title: "Aspose.Cells Cloud API – 获取 Excel 工作表的最大数据列（v3.0）"
+type: docs
+url: /get-maxdatacolumn-from-excel-worksheet/
+weight: 70
+keywords: "Aspose.Cells Cloud、获取 MaxDataColumn、Excel 工作表、REST API、v3.0、SDK"
+description: "使用 Aspose.Cells Cloud REST API（v3.0）获取指定工作表中包含数据的最高列索引。包含请求详情、示例响应和 SDK 示例。"
+ArticleTitle: "Aspose.Cells Cloud API – 获取 Excel 工作表的最大数据列（v3.0）"
+---
 
-- **cURL 示例**
+当 `cellOrMethodName` 参数设置为 `maxdatacolumn` 时，此 REST API 返回 Excel 工作表中的最大数据列索引。
 
+## **cURL 示例**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatacolumn" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatacolumn" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{} 
-
+```json
+{
+  "MaxDataColumn": 12
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK 系列**
+**请求详情**  
+- **HTTP 方法：** `GET`  
+- **端点模式：** `https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/maxdatacolumn`  
+- **路径参数：**  
+  - `fileName` – Excel 文件名（例如 `myWorkbook.xlsx`）。  
+  - `sheetName` – 工作表名称（例如 `Sheet1`）。  
+- **请求头：**  
+  - `Authorization: Bearer <access_token>`（必填）  
+  - `Accept: application/json`（推荐）  
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+**参数**
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+| 参数名 | 位置 | 类型   | 是否必填 | 描述 |
+|--------|------|--------|----------|------|
+| `fileName` | 路径 | string | 是 | 位于云存储中的 Excel 文件名。 |
+| `sheetName` | 路径 | string | 是 | 要获取最大数据列的工作表名称。 |
+| `cellOrMethodName` | 路径 | string | 是 | 必须设置为 `maxdatacolumn` 以调用此操作。 |
 
+**响应**
 
+| 状态码 | 描述 | 示例负载 |
+|--------|------|----------|
+| 200 | 成功 — 返回最大数据列索引。 | `{ "MaxDataColumn": 12 }` |
+| 401 | 未授权 — 访问令牌无效或缺失。 | `{ "error": "Invalid authentication." }` |
+| 404 | 未找到 — 文件或工作表不存在。 | `{ "error": "Resource not found." }` |
+| 500 | 内部服务器错误 — 发生意外情况。 | `{ "error": "Server error." }` |
+
+**错误处理**  
+如果请求失败，请检查 HTTP 状态码以及响应体中的 `error` 消息。确保访问令牌有效，并且指定的文件和工作表存在于您的 Aspose Cloud 存储中。
+
+- **使用 Aspose.Cells Cloud SDK**
+
+使用 SDK 是加速开发的最高效方式。SDK 会处理底层细节，让您专注于项目任务。请查看 <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub 仓库</a> 获取完整的 Aspose.Cells Cloud SDK 列表。
+
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -53,8 +84,6 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< tab tabNum="2" >}}
 
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-cells-GetMaxDataColumnWorksheet-get-max-data-column.java" >}}
-
-
 
 {{< /tab >}}
 

@@ -1,72 +1,138 @@
-﻿---
-title: Imposta il valore di una cella in un foglio di lavoro
-type: docs
-url: /it/set-value-of-a-cell-in-a-worksheet/
-weight: 70
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Imposta il valore di una cella in un foglio di lavoro
 ---
-Questo REST API indica il set `cell value` in un file Excel.
+title: "Imposta il valore di una cella – Riferimento API di Aspose.Cells Cloud (v3.0)"  
+type: docs  
+url: /it/set-value-of-a-cell-in-a-worksheet/  
+weight: 70  
+keywords: "API Aspose Cells impostazione valore cella, aggiornamento cella Excel REST, esempio cURL Aspose.Cells Cloud"  
+description: "Scopri come impostare il valore di una cella specifica in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud. Include la sintassi della richiesta, i parametri, un esempio HTTPS cURL e codice di esempio con SDK."  
+---  
 
-## RSET API
+Questa API REST consente di impostare il **valore della cella** in un file Excel.
+
+## API REST  
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
+```  
+
+## Sicurezza e autenticazione
+
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'[autenticazione basata su token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+
+**Parametri della richiesta**
+
+| Nome            | Tipo   | Posizione | Descrizione                                           |
+|-----------------|--------|-----------|-------------------------------------------------------|
+| name            | string | path      | Nome del documento Excel (inclusa l'estensione).     |
+| sheetName       | string | path      | Nome del foglio di lavoro (distinzione tra maiuscole e minuscole). |
+| cellName        | string | path      | Indirizzo della cella in formato A1 (ad es. `A1`).   |
+| value           | string | query     | Valore da assegnare alla cella.                      |
+| type            | string | query     | Tipo di dati del valore (`int`, `string`, `float`, ecc.). |
+| formula         | string | query     | Formula da applicare alla cella (opzionale).         |
+| folder          | string | query     | Cartella contenente il documento (opzionale).        |
+| storageName     | string | query     | Nome dell'archiviazione in cui risiede il file (opzionale). |
+
+## **Risposta**
+
+Restituisce un oggetto `CellResponse`.
+
+- **Panoramica dei campi della risposta**
+
+| Campo             | Tipo    | Descrizione                                              |
+| ----------------- | ------- | -------------------------------------------------------- |
+| `Name`            | string  | Indirizzo della cella (ad es. `F341`).                  |
+| `Row`             | integer | Indice di riga in base zero.                             |
+| `Column`          | integer | Indice di colonna in base zero.                          |
+| `Value`           | string  | Valore visualizzato della cella.                        |
+| `Type`            | string  | Tipo di dati della cella (ad es. `IsString`).           |
+| `Formula`         | string  | Testo della formula, se la cella contiene una formula.  |
+| `IsFormula`       | bool    | Indica se la cella contiene una formula.                |
+| `IsMerged`        | bool    | Indica se la cella fa parte di un intervallo unito.     |
+| `IsArrayHeader`   | bool    | Indica se la cella è un'intestazione di matrice.        |
+| `IsInArray`       | bool    | Indica se la cella appartiene a una matrice.            |
+| `IsErrorValue`    | bool    | Indica se la cella contiene un valore di errore.        |
+| `IsInTable`       | bool    | Indica se la cella si trova all'interno di una tabella. |
+| `IsStyleSet`      | bool    | Indica se uno stile è applicato alla cella.             |
+| `HtmlString`      | string  | Rappresentazione HTML codificata del valore della cella.|
+| `Style.link`      | object  | Link ipertestuale alla risorsa di stile.                |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Cell":{
+    "Name":"A1",
+    "Row": 0,
+    "Column":0,
+    "Value": "",
+    "Type":"String",
+    "Formula" : "=Sum(A2:A15)",
+    ...
+  }
+}
 ```
 
-I parametri della richiesta sono:
+**Codici di stato HTTP**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome del documento.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| nomecella| corda| sentiero| Il nome della cella.|
-| valore| corda| domanda| Il valore della cella.|
-| tipo| corda| domanda| Il tipo di valore.|
-| formula| corda| domanda| Formula per la cellula|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Codice | Significato             | Descrizione                                             |
+|--------|-------------------------|---------------------------------------------------------|
+| 200    | OK                      | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida    | Parametri mancanti o non validi (ad es. tipo di file non supportato). |
+| 401    | Non autorizzato         | Token JWT non valido o mancante.                        |
+| 413    | Payload troppo grande   | Il file caricato supera il limite di dimensione.       |
+| 500    | Errore interno del server| Errore imprevisto sul server.                           |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+## Come utilizzare l'API PostWorksheetCellSetValue con gli SDK
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+### Specifica dell'API PostWorksheetCellSetValue
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) definiscono un'interfaccia di programmazione accessibile pubblicamente, che consente agli sviluppatori di richiamare direttamente gli endpoint REST da un browser o da qualsiasi client HTTP.
+
+Puoi utilizzare lo strumento a riga di comando **cURL** per chiamare i servizi web di Aspose.Cells. L'esempio seguente mostra come impostare il valore di una cella tramite cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?value=1234&type=int" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?value=1234&type=int" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK",
+  "Cell":{
+    "Name":"A3",
+    "Row": 2,
+    "Column":0,
+    "Value": "",
+    "Type":"String",
+    "Formula" : "=Sum(A2:A15)",
+    ...
+  }
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+### Utilizzo degli SDK di Aspose.Cells Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'utilizzo di un SDK accelera lo sviluppo gestendo i dettagli a basso livello, consentendoti di concentrarti sul tuo progetto. Consulta la [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

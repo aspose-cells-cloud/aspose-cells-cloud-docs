@@ -1,83 +1,139 @@
-﻿---
-title: Dekryptera en Excel-arbetsbok
-second_title: Documen
-linktitle: Dekryptera en Excel-fil
-type: docs
-url: /sv/excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/,/workbook/decrypt/]
-keywords: REST API, spreadsheets, excel, decryp
-description: "Cells.Cloud API för Excel-operation: dekryptera en Excel-arbetsbok"
-weight: 50
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Dekryptera en Excel-arbetsbok
 ---
-Denna REST API dekrypterar en Excel `workbook`.
+title: "Dekryptera en Excel-arbetsbok"
+second_title: "Dokument"
+linktitle: "Dekryptera en Excel-fil"
+type: docs
+url: /excel-file-decrypt/
+aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+keywords: "Aspose.Cells, Excel-dekryptering, REST API, moln-SDK"
+description: "Lär dig hur du dekrypterar en Excel-arbetsbok med Aspose.Cells Cloud REST API. Innehåller nödvändiga parametrar, cURL-exempel, SDK-kodexempel och detaljerad felhantering."
+ArticleTitle: "Så här dekrypterar du en Excel-arbetsbok med Aspose.Cells Cloud API"
+weight: 50
+---
 
-**Frågeparameter**
+**Förutsättningar**
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|mapp|sträng|Original arbetsboksmapp.|
-|lagringsnamn|sträng|Lagringsnamn.|
+- En giltig JWT-åtkomsttoken.
+- Arbetsboken måste vara uppladdad till Aspose Cloud-lagring och dess sökväg anges i frågeparametern `folder`.
 
-**Begäran om brödtextparameter**
+## DeleteDecryptWorkbook API
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|kryptering|Arbetsbokkrypteringsbegäran||
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/encryption
+```
 
-**Arbetsbokkrypteringsbegäran**
+### **Säkerhet och autentisering**
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|Krypteringstyp|sträng|XOR/Kompatibel/FörbättradKryptografiskProviderV1/StrongKryptografiskProvider|
-|Nyckellängd|heltal||
-|Lösenord|sträng||
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-## REST API
+### Frågeparametrar
 
-|**API**|**Typ**|**Beskrivning**|**Swagger-länk**|
-|:- |:- |:- |:- |
-|/celler/{namn}/kryptering|DELTE|Dekryptera ett dokument|[Ta bortDekrypteraArbetsbok](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook)|
+| Parameternamn   | Typ    | Beskrivning                                      |
+| --------------- | ------ | ------------------------------------------------ |
+| folder          | string | Sökvägen till mappen med den ursprungliga arbetsboken. |
+| storageName     | string | Namnet på lagringen där arbetsboken finns.      |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Request Body Parameter
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
+| Parameternamn | Typ                      | Beskrivning                                   |
+| ------------- | ------------------------ | --------------------------------------------- |
+| encryption    | WorkbookEncryptionRequest | Krypteringsinställningar som krävs för dekryptering. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### WorkbookEncryptionRequest
+
+| Parameternamn | Typ     | Beskrivning                                                                                                   |
+| ------------- | ------- | ------------------------------------------------------------------------------------------------------------- |
+| EncryptionType | string  | Krypteringsalgoritm (`XOR`, `Compatible`, `EnhancedCryptographicProviderV1`, `StrongCryptographicProvider`). |
+| KeyLength      | integer | Längden på krypteringsnyckeln i bitar.                                                                        |
+| Password       | string  | Lösenord som används för dekryptering.                                                                        |
+
+### Svar
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Exempel på felaktiga svar**
+
+```json
+{
+  "Code": "400",
+  "Message": "Ogiltiga begärparametrar."
+}
+```
+
+```json
+{
+  "Code": "401",
+  "Message": "Autentisering misslyckades. Ogiltig eller saknad JWT-token."
+}
+```
+
+```json
+{
+  "Code": "413",
+  "Message": "Nyttolast för stor. Den uppladdade filen överskrider den tillåtna storleken."
+}
+```
+
+```json
+{
+  "Code": "500",
+  "Message": "Internt serverfel. Försök igen senare."
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                       |
+|-----|-----------------------------|---------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Ogiltig begäran             | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Ej auktoriserad              | Ogiltig eller saknad JWT-token.                  |
+| 413 | Payload för stor            | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel            | Oväntat serverfel.                               |
+
+## Hur du använder DeleteDecryptWorkbook API med SDK:er
+
+### DeleteDecryptWorkbook API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda **cURL** för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du anropar Cloud API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "accept: application/json" -H "Content-Type: application/json" -H "x-aspose-client: Containerize.Swagger" -d "{ \"EncryptionType\": \"XOR\", \"KeyLength\": 1280, \"Password\": \"aspose\"}"
-
+```bash
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -d '{ "EncryptionType": "XOR", "KeyLength": 1280, "Password": "aspose"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
-  "Code":"200",
-
-  "Status":"OK"
-
+  "Code": "200",
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
-{{< /tabs >}}
+### Använd Aspose.Cells Cloud SDK:er
 
-## Cloud SDK-familjen
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projekts uppgifter. Ta en titt på [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
-
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med hjälp av olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

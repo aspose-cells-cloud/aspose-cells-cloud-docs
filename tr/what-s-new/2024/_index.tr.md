@@ -1,78 +1,79 @@
-﻿---
-title: 2024'te Aspose.Cells Cloud'daki yenilikler
-second_title: Documen
-linktitle: 202'deki yenilikler
+---
+title: Aspose.Cells Cloud 2024 Yenilikleri ve Geliştirmeleri
+second_title: "Belge"
+linktitle: "2024 Yeni Özellikler"
 type: docs
 weight: 20
-url: /tr/new-features/2024/
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: Bu sayfa, son sürümlerde tanıtılan en ilginç yeni Aspose.Cells Bulut özelliklerini açıklamaktadır
-kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Aspose.Cells Cloud'daki yenilikler
+url: /new-features/2024/
+keywords: "Aspose.Cells, Bulut, 2024, yeni özellikler, Çiftleri Kaldırma API'si, Metin Çıkarma API'si, veri dönüştürme, elektronik tablo, Excel, CSV, PDF, REST API"
+description: "Aspose.Cells Cloud için 2024 yılında tanıtılan yeni özellikler ve geliştirmelerin genel bakışı; bu özellikler arasında Çiftleri Kaldırma API'si, Metin Çıkarma API'si ve veri dönüştürme iyileştirmeleri yer alır."
+ArticleTitle: "Aspose.Cells Cloud 2024 Yenilikleri ve Geliştirmeleri"
 ---
-Aspose.Cells Cloud belgelerindeki yeniliklere hoş geldiniz. En son değişiklikleri hızlıca bulmak için bu sayfayı kullanın.
 
-## Sürüm 24.12'deki Geliştirmeler
+Aspose.Cells Cloud belgelerindeki yeniliklere hoş geldiniz. Bu sayfa, en son değişiklikleri hızlıca bulmanız için kullanılır. Bu değişiklik kaydı, 2024 yılında Aspose.Cells Cloud’un her sürümünde tanıtılan önemli geliştirmeleri, hata düzeltmelerini ve yeni API’leri özetler.
 
-- Yeni yinelenenleri kaldırma api'sini ekleyin.
-- Yeni alıntı metni API'i ekleyin.
-- Pivot filtre başarıyla oluşturulamadı.
+## 24.12 Sürümündeki Geliştirmeler
 
-## Sürüm 24.11'deki Geliştirmeler
+- Yeni **Çiftleri Kaldırma API’si** eklendi.  
+- Yeni **Metin Çıkarma API’si** eklendi.  
+- Bir piksel filtresi oluşturmanın başarısız olabileceği hata düzeltildi.
 
-- TextProcessingController'a metin dönüştürme özelliği eklendi.
+## 24.11 Sürümündeki Geliştirmeler
 
-## Sürüm 24.10'daki Geliştirmeler
+- `TextProcessingController` sınıfına metin dönüşüm özelliği eklendi.
 
-- TextProcessingController'daki karakterlerin kaldırılmasıyla ilgili yeni özelliği ekleyin.
+## 24.10 Sürümündeki Geliştirmeler
 
-## Sürüm 24.9'daki Geliştirmeler
+- `TextProcessingController` sınıfına karakter kaldırma özelliği eklendi.
 
-- TextProcessingController için kelime durumu fonksiyonunu ekleyin.
-- Çalışma sayfasının hücre adresi veya kimliği ile HTML'e aktarılmasını destekler.
+## 24.9 Sürümündeki Geliştirmeler
 
-## Sürüm 24.8'deki Geliştirmeler
+- `TextProcessingController` sınıfına kelime büyük/küçük harf dönüştürme işlevi eklendi.  
+- Bir çalışma sayfasını hücre adresleri veya kimlikleriyle HTML’e dışa aktarma desteği eklendi.
 
-- Cells Bulut Hizmetlerine metin kırpma özelliğini ekleyin.
+## 24.8 Sürümündeki Geliştirmeler
 
-## Sürüm 24.7'deki Geliştirmeler
+- Cells Cloud Servislerine metin kırpma (trim) özelliği eklendi.
 
-- Metin içeriği eklemeyle ilgili yeni bir özellik ekleyin.
-- İstemci kimliği ve istemci sırrı ile erişim belirtecini ekleyin.
+## 24.7 Sürümündeki Geliştirmeler
 
-## Sürüm 24.6.1'deki Geliştirmeler
+- Bir çalışma sayfasına rastgele metin eklemek için **AddTextContent** API’si tanıtıldı.  
+- İstemci kimliği ve istemci sırrı kullanarak erişim belirteci alma (access token) desteği eklendi.
 
-- API'ler için sorgu parametrelerini genişletin.
+## 24.6.1 Sürümündeki Geliştirmeler
 
-## Sürüm 24.6.0'daki Geliştirmeler
+- API’ler için genişletilmiş sorgu parametreleri düzeltildi.
 
-- Veri dönüştürmede uygulanan adımları optimize edin.
-- Veri dönüşümünün veri yükleme fonksiyonunu optimize edin.
-- Net425 ve netstandard2.0 desteğini artırın.
+## 24.6.0 Sürümündeki Geliştirmeler
 
-## Sürüm 24.5.1'deki Geliştirmeler
+- Veri dönüşüm adımları optimize edildi.  
+- Veri dönüştürme için veri yükleme işlevi optimize edildi.  
+- .NET Framework 4.2.5 ve .NET Standard 2.0 desteği artırıldı.
 
-- Veri dönüşümünün verilerini yüklemek için birleştirme sorguları yöntemini ekleyin.
-- Grafik veri modelini optimize edin.
-- Erişim belirteci adresinin alınması güncellendi.
+## 24.5.1 Sürümündeki Geliştirmeler
 
-## Sürüm 24.4'teki Geliştirmeler
+- Veri dönüştürme sırasında veri yüklemek için sorgu birleştirme (merge-queries) yöntemi eklendi.  
+- Grafik veri modeli optimize edildi.  
+- Erişim belirteci (access-token) uç noktası güncellendi.
 
-- Aspose.Cells Bulut Hizmetleri için veri dönüştürme işlevini destekleyin.
+## 24.4 Sürümündeki Geliştirmeler
 
-## Sürüm 24.3'teki Geliştirmeler
+- Aspose.Cells Cloud Servisleri için veri dönüştürme özelliği desteği eklendi.
 
-- Veri çoğaltılmasını destekler.
-- Veri doldurmayı destekleyin.
-- Eksik satırların silinmesi desteği.
-- Veri temizliğini destekleyin.
+## 24.3 Sürümündeki Geliştirmeler
 
-## Sürüm 24.2.1'deki Geliştirmeler
+- Veri tekrarlarını kaldırma desteği eklendi (geliştirilmiş).  
+- Veri doldurma desteği eklendi.  
+- Eksik satırları silme desteği eklendi.  
+- Veri temizleme desteği eklendi.
 
-- Veri çoğaltılmasını destekler.
+## 24.2.1 Sürümündeki Geliştirmeler
 
-## Sürüm 24.1.1'deki Geliştirmeler
+- Veri tekrarlarını kaldırma desteği (ilk destek, sonraki sürümlerde genişletildi).
 
-- Birkaç fonksiyon için yazım hataları düzeltildi.
-- Sayfa kurulum denetleyicisi için PostFitTallToPages metodunu ekleyin.
-- Sayfa kurulum denetleyicisi için PostFitWideToPages metodunu ekleyin.
-- Sayfalandırılmış kaydetme seçeneklerini optimize edin.
+## 24.1.1 Sürümündeki Geliştirmeler
+
+- Birkaç işlev için yazım hataları düzeltildi.  
+- PageSetupController sınıfına `PostFitTallToPages` yöntemi eklendi.  
+- PageSetupController sınıfına `PostFitWideToPages` yöntemi eklendi.  
+- Sayfalı kaydetme seçenekleri optimize edildi.

@@ -1,75 +1,138 @@
-﻿---
-title: "So führen Sie den Aspose.Cells Cloud Docker Container aus: Führen Sie den offiziellen Aspose.Cells Cloud Container in 3 Schritten aus: Pullen, Konfigurieren, Starten"
-second_title: Documen
-ArticleTitle: How to Run Aspose.Cells Cloud Docker Containe
-LinkTitle: Docker Containe
+---
+title: "Aspose.Cells Cloud Docker-Container ausführen – Pullen, Konfigurieren & Starten"
+second_title: "Dokument"
+ArticleTitle: "So führen Sie den Aspose.Cells Cloud Docker-Container aus"
+LinkTitle: "Docker-Container"
 type: docs
 url: /de/getting-started/how-to-run-docker-container/
-aliases: [/how-to-run-docker-container/]
-description: So führen Sie den Docker Aspose.Cells Cloud-Container aus. Aspose.Cells Cloud unterstützt Excel zum Erstellen, Konvertieren, Zusammenführen, Teilen, Schützen, für interne Objektvorgänge usw.
+aliases: [/de/how-to-run-docker-container/]
+description: "Erfahren Sie, wie Sie den Aspose.Cells Cloud Docker-Container unter Windows oder Linux pullen, konfigurieren und ausführen. Enthält Docker‑Compose YAML, Lizenzkonfiguration, Port-Mapping und Tipps zur Fehlerbehebung."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, So führen Sie einen Docker-Container aus
+keywords:
+  - "Aspose.Cells Cloud Docker"
+  - "Docker-Container"
+  - "Docker Compose"
+  - "Lizenzschlüssel"
+  - "Excel"
+  - "Tabellenkalkulation"
+  - "Cloud-API"
+  - "Docker"
+  - "Aspose Cells"
+  - "API"
 ---
- Der**Docker** Die Technologie ist darauf ausgelegt, die Bereitstellung der Anwendungen durch den Einsatz von leichtgewichtigen Containern zu automatisieren. Entwickler können einen**Docker-Container** um eine Anwendung mit allen ihren Bibliotheken und Abhängigkeiten zusammenzufassen und alles als einzelnes Paket bereitzustellen.
 
- Aspose.Cells Cloud-Team hat den Docker Container veröffentlicht auf[Docker Hub](https://hub.docker.com/r/aspose/cells-cloud) um Docker-Benutzern die Arbeit zu erleichtern. In den folgenden Abschnitten erfahren Sie, wie Sie Docker-Befehle ausführen oder eine Konfiguration in eine YAML-Datei für das Docker-Compose-Tool schreiben.
+Die Docker-Technologie wurde entwickelt, um den Bereitstellungsprozess von Anwendungen durch den Einsatz leichtgewichtiger Container zu automatisieren. Entwickler können mithilfe eines Docker-Containers eine Anwendung zusammen mit allen ihren Bibliotheken und Abhängigkeiten bündeln und alles als einzelnes Paket bereitstellen.
 
-## Containerkonfiguration
+Das Team von Aspose.Cells Cloud hat den Docker-Container auf <a href="https://hub.docker.com/r/aspose/cells-cloud" target="_blank" rel="noopener noreferrer">Docker Hub</a> veröffentlicht, um Docker-Nutzern die Arbeit zu erleichtern.
 
-### Erforderliche Mengen
+**Voraussetzungen** – Stellen Sie sicher, dass Docker Engine ≥ 20.x installiert ist und Ihr Betriebssystem (Windows 10/Server 2019/2022 oder eine unterstützte Linux-Distribution) die Anforderungen erfüllt. Optional kann ein Lizenzschlüssel bereitgestellt werden, um im lizenzierten Modus zu arbeiten.
 
-|Mount-Pfad im Container|Beschreibung|
-|:- |:- |
-|C:\Schriftarten|Ordner mit Schriftarten, die zum Rendern von Dokumenten verwendet werden|
-|C:\data|Dateispeicherordner|
+- Docker Engine ≥ 20.x installiert  
+- Unterstütztes Betriebssystem (Windows 10/Server 2019/2022 oder eine Linux-Distribution)  
+- Optionaler Lizenzschlüssel für den lizenzierten Modus  
+
+## Container-Konfiguration
+
+### Erforderliche Volumes
+
+| Mount-Pfad im Container | Beschreibung |
+| :--- | :--- |
+| C:\fonts | Ordner mit Schriftarten, die zur Darstellung von Dokumenten verwendet werden |
+| C:\data | Ordner für Dateispeicherung |
+
+**Alternative für Linux/macOS** – Verwenden Sie `/fonts` und `/data` im Container und ordnen Sie diese auf Host-Verzeichnisse wie `/home/user/fonts` und `/home/user/data` beim Ausführen des Containers ab.
 
 ### Parameter
 
-|Name|Beschreibung|
-|:- |:- |
-|LizenzPublicKey|Öffentlicher Schlüssel der Lizenz|
-|LizenzPrivater Schlüssel|Privater Schlüssel der Lizenz|
+| Name | Beschreibung |
+| :--- | :--- |
+| LicensePublicKey | Öffentlicher Schlüssel der Lizenz |
+| LicensePrivateKey | Privater Schlüssel der Lizenz |
 
-Wenn die Parameter „Lizenz“ weggelassen werden, funktioniert die App im Testmodus.
+Wenn die **License**-Parameter weggelassen werden, läuft die Anwendung im Testmodus.
 
-### 1. Ziehen Sie das Cloud-Image Aspose.Cells
+### 1. Aspose.Cells Cloud-Image pullen
 
 ```bash
-# Pull Aspose.Cells Cloud Image latest version
-docker pull aspose/cells-cloud:latest
+# Spezifische Version des Aspose.Cells Cloud-Images pullen
+docker pull aspose/cells-cloud:25.9.0
 ```
 
 ```powershell
-# Pull Aspose.Cells Cloud Image  version on windows server 2019
-docker pull aspose/cells-cloud:ltsc2019.25.9.0 
-# Pull Aspose.Cells Cloud Image  version on windows server 2022
-docker pull aspose/cells-cloud:ltsc2022.25.9.0 
+# Aspose.Cells Cloud-Image für Windows Server 2019 pullen
+docker pull aspose/cells-cloud:ltsc2019.25.9.0
 
-# Pull Aspose.Cells Cloud Image  version on windows 11
-docker pull aspose/cells-cloud:ltsc2019.25.9.0 
+# Aspose.Cells Cloud-Image für Windows Server 2022 pullen
+docker pull aspose/cells-cloud:ltsc2022.25.9.0
+
+# Aspose.Cells Cloud-Image für Windows 11 pullen
+docker pull aspose/cells-cloud:ltsc2022.25.9.0
 ```
 
-### 2. Konfigurationen für das Docker-Compose-Tool
+> **Hinweis:** Um immer die neueste Version zu erhalten, können Sie auch das Tag `latest` pullen: `docker pull aspose/cells-cloud:latest`.
 
-Sie können die folgenden Konfigurationen in Ihre YAML-Datei für das Docker-Compose-Tool schreiben:
+### 2. Konfiguration für das Docker‑Compose-Tool
 
-```JAVA
+Sie können die folgende Konfiguration in einer Datei **docker‑compose.yml** schreiben:
+
+```yaml
 AsposeCellsCloud:
-      image: aspose/cells-cloud
-      ports: ["5000:80"]
-      volumes: [
-        "C:/Windows/Fonts:C:/Windows/Fonts",
-        "c:/data:c:/data",
-      ]
-      environment:
-        "LicensePublicKey": "yourKeyHere"
-        "LicensePrivateKey": "yourKeyHere"
+  image: aspose/cells-cloud:25.9.0
+  ports: ["5000:80"]   # Host 5000 → Container 80
+  volumes:
+    - "C:/Windows/Fonts:C:/Windows/Fonts"
+    - "c:/data:c:/data"
+  environment:
+    LicensePublicKey: "yourPublicKey"
+    LicensePrivateKey: "yourPrivateKey"
 ```
 
-### 3. Führen Sie einen Docker-Container über die Befehlszeile aus
+> **Hinweis:** Die Port-Zuordnung `5000:80` bedeutet, dass die API unter `http://localhost:5000` erreichbar ist.
 
- Sie können einfach den folgenden Docker-Befehl ausführen, nachdem Sie den Container aus[Docker Hub](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
+### 3. Docker-Container über die Kommandozeile ausführen
 
-```JAVA
-docker run   -e "LicensePublicKey=public_key" -e "LicensePrivateKey=private_key" -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 80:5000   aspose/cells-cloud
+```bash
+docker run \
+  -e "LicensePublicKey=yourPublicKey" \
+  -e "LicensePrivateKey=yourPrivateKey" \
+  -v c:/data:c:/data \
+  -v C:/Windows/Fonts:C:/Windows/Fonts \
+  -p 5000:80 \
+  aspose/cells-cloud:25.9.0
+```
+
+**Fehlerbehebung:**  
+- **Portkonflikt:** Stellen Sie sicher, dass Port 5000 auf dem Host verfügbar ist, oder ändern Sie die Zuordnung auf einen ungenutzten Port.  
+- **Lizenzladefehler:** Überprüfen Sie, ob öffentlicher und privater Schlüssel korrekt als Umgebungsvariablen übergeben oder als Dateien eingebunden wurden.  
+- **Fehlende Schriftarten:** Wenn Dokumente mit falschen Schriftarten dargestellt werden, bestätigen Sie, dass das Schriftartenverzeichnis korrekt eingebunden ist und die erforderlichen Schriftartdateien enthält.
+
+**Verwandte Ressourcen:**  
+- <a href="/de/cells/api/">API-Referenz</a> | <a href="/de/cells/license/">Anleitung zur Lizenzaktivierung</a> | <a href="/de/cells/getting-started/">Übersicht „Erste Schritte“</a>
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Aspose.Cells Cloud Docker-Container ausführen",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "url": "#1-pull-asposecells-cloud-image",
+      "name": "Docker-Image pullen",
+      "text": "Führen Sie `docker pull aspose/cells-cloud:<version>` aus, um das erforderliche Image herunterzuladen."
+    },
+    {
+      "@type": "HowToStep",
+      "url": "#2-configurations-for-docker-compose-tool",
+      "name": "Docker-Compose-Datei erstellen",
+      "text": "Definieren Sie Image, Ports, Volumes und Lizenz-Umgebungsvariablen in `docker‑compose.yml`."
+    },
+    {
+      "@type": "HowToStep",
+      "url": "#3-run-a-docker-container-using-the-command-line",
+      "name": "Container ausführen",
+      "text": "Führen Sie `docker run` mit den entsprechenden Umgebungsvariablen, Volume-Mounts und Port-Zuordnungen aus."
+    }
+  ]
+}
 ```

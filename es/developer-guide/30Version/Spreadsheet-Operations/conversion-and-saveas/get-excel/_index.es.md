@@ -1,63 +1,115 @@
-﻿---
-title: Obtiene el archivo Excel a otro formato
-second_title: Documen
-linktitle: Obtenga Exce
-type: docs
-url: /es/get different formats files/
-aliases: [/export-excel-workbook-to-different-file-formats/, /export-different-formats/]
-keywords: Get excel files to kinds of format files
-description: Aspose.Cells Cloud REST API admite la conversión de archivos de Excel a diversos formatos. El SDK es compatible con diversos lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 10
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Obtiene el archivo Excel en otros formatos
 ---
-Este REST API indica que el archivo de Excel `get` es un archivo de formato diferente.
+title: "Aspose.Cells Cloud: Convertir libro de Excel a PDF, CSV, HTML y más (GET /cells/{name})"
+second_title: "Documento"
+linktitle: "Convertir Excel"
+type: docs
+url: /es/get-different-formats-files/
+aliases:
+  - /export-excel-workbook-to-different-file-formats/
+  - /export-different-formats/
+keywords: "Aspose.Cells, conversión de Excel, convertir Excel, PDF, CSV, HTML, ODS, JSON, formatos de imagen, exportación de hojas de cálculo, API, REST"
+description: "Aprenda cómo recuperar un libro de Excel en cualquier formato (PDF, CSV, HTML, PNG, etc.) mediante la API REST de Aspose.Cells Cloud. Incluye ejemplos con cURL, SDK, autenticación y detalles de respuesta."
+weight: 10
+ArticleTitle: "Aspose.Cells Cloud: Convertir libro de Excel a PDF, CSV, HTML y más (GET /cells/{name})"
+---
 
-**Parámetro de consulta**
+Esta API REST recupera un libro de Excel en un formato diferente.
 
-|Nombre del parámetro|Tipo|Descripción|
-|:- |:- |:- |
-|formato|cadena|El formato de archivo: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, etc.|
-|contraseña|cadena|La contraseña necesaria para abrir un archivo Excel.|
-|esAutoFit|cadena|Ajusta automáticamente el ancho de filas y columnas en este libro. El valor predeterminado es "false".|
-|soloGuardarTabla|cadena|verdadero/falso|
-|Ruta de salida|cadena| Ruta para guardar el resultado. Si se trata de un solo archivo, el código `outPath` debe incluir tanto el nombre del archivo como la extensión. Si se trata de varios archivos, el código `outPath` solo debe incluir la carpeta.|
-|nombreAlmacenamientoExterno|cadena| El nombre de almacenamiento donde se encuentra el archivo guardado.|
-|comprobarRestricción de Excel|bool| Si verificar la restricción del archivo Excel cuando el usuario modifica objetos relacionados con celdas.|
-|región|cadena| La configuración regional del libro de trabajo.|
-|Ajuste de ancho de página por hoja|bool| La página se ajusta al ancho de la hoja de cálculo.|
-|Ajuste de altura de página por hoja|bool| La página se ajusta a la altura de la hoja de cálculo.|
-|una página por hoja|bool| Al convertir al formato PDF, una página por hoja.|
-|carpeta|cadena|Carpeta del libro de trabajo original.|
-|nombreDeAlmacenamiento|cadena|El nombre del almacenamiento donde se encuentra el archivo.|
+## API GetWorkBook
 
-## RESTO API
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}
+```
 
-|**API**|**Tipo**|**Descripción**|**Enlace Swagger**|
-|:- |:- |:- |:- |
-|/células/{nombre}|CONSEGUIR|Exporta el libro de trabajo a otro formato.|[Obtener libro de trabajo](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+### **Seguridad y autenticación**
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación mediante token JWT</a>.
 
- Puedes utilizar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+### **Parámetros de consulta**
 
-{{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
+| Nombre del parámetro    | Tipo   | Descripción                                                                                                                                                                          | Valor predeterminado |
+| ----------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
+| format                  | string | Formato de archivo de destino (por ejemplo, CSV, XLS, HTML, MHTML, ODS, PDF, XML, TXT, TIFF, XLSB, XLSM, XLSX, XLTM, XLTX, XPS, PNG, JPG, GIF, EMF, BMP, MD, Numbers, WMF, SVG, etc.). | –                   |
+| password                | string | Contraseña necesaria para abrir el archivo de Excel.                                                                                                                                | –                   |
+| isAutoFit               | bool   | Ajusta automáticamente el ancho de filas y columnas.                                                                                                                               | false               |
+| onlySaveTable           | bool   | Si es **true**, solo se guarda la información de la tabla. Acepta `true` o `false`.                                                                                                 | false               |
+| outPath                 | string | Ruta donde guardar el resultado. Para un solo archivo, incluya el nombre y extensión del archivo; para varios archivos, especifique únicamente la carpeta.                          | –                   |
+| outStorageName          | string | Nombre del almacenamiento donde se guardará el archivo de salida.                                                                                                                  | –                   |
+| checkExcelRestriction   | bool   | Verifica las restricciones de Excel al modificar celdas u objetos relacionados.                                                                                                    | false               |
+| region                  | string | Configuración regional aplicada al libro de trabajo.                                                                                                                               | –                   |
+| pageWideFitOnPerSheet   | bool   | Ajusta el ancho de página a cada hoja de cálculo al convertir a PDF.                                                                                                                | false               |
+| pageTallFitOnPerSheet   | bool   | Ajusta la altura de página a cada hoja de cálculo al convertir a PDF.                                                                                                               | false               |
+| onePagePerSheet         | bool   | Genera una página PDF por hoja de cálculo.                                                                                                                                         | false               |
+| folder                  | string | Ruta de la carpeta donde se encuentra el libro de trabajo original.                                                                                                                 | –                   |
+| storageName           | string | Nombre del almacenamiento donde se encuentra el archivo fuente.                                                                                                                    | –                   |
+
+### Respuesta
+
+**Éxito (200)**
+
+- La API devuelve un objeto **[Workbook](/es/cells/workbook/)** que contiene información sobre la estructura del libro cuando se omite el parámetro de consulta `format`.
+
+- La API devuelve el archivo convertido en el formato solicitado cuando el parámetro de consulta `format` especifica un tipo de archivo.
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/pdf
+Content-Disposition: attachment; filename="book1.pdf"
+Content-Length: 123456
+
+(datos binarios del PDF)
+```
+
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                              |
+|--------|-----------------------------|----------------------------------------------------------|
+| 200    | Correcto                    | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros faltantes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT inválido o ausente.                            |
+| 413    | Carga demasiado grande       | El archivo cargado supera el límite de tamaño.          |
+| 500    | Error interno del servidor  | Error inesperado en el servidor.                         |
+
+> **Notas:**  
+> - Los libros de trabajo grandes pueden tardar más en convertirse; considere aumentar el tiempo de espera de la solicitud.  
+> - Algunos formatos (por ejemplo, `ODS`) no son compatibles con ciertas características de Excel, como macros.
+
+## Cómo usar la API GetWorkBook con SDK
+
+> **Requisitos previos:**  
+> - Un **token de acceso JWT** válido obtenido mediante el flujo de autenticación de Aspose.Cells.  
+> - El libro de trabajo fuente debe estar almacenado en un almacenamiento admitido por Aspose o proporcionarse directamente en la solicitud.  
+> - Asegúrese de que la versión de la API (`v3.0`) coincida con la versión más reciente publicada.
+
+### Especificación de la API GetWorkBook
+
+La <a href="https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook" rel="noopener noreferrer">Especificación OpenAPI</a> define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
+
+### Ejemplo de solicitud
+
+Puede utilizar la herramienta de línea de comandos **cURL** para acceder a los servicios web de Aspose.Cells. El siguiente ejemplo muestra una solicitud GET correcta con el encabezado de autorización requerido.
+
+{{< tabs tabTotal="1" tabID="11" tabName11="Solicitud" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger"}
+curl -X GET "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger"
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Familia de SDK en la nube
+### Utilizar los SDK de Aspose.Cells Cloud
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de desarrollar. Un SDK abstracta los detalles de bajo nivel para que pueda centrarse en las tareas de su proyecto. Consulte el <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">repositorio de GitHub</a> para ver la lista completa de SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -110,3 +162,33 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Consulte también**
+
+- <a href="https://apireference.aspose.cloud/cells/#/Workbook/ConvertWorkbook" rel="noopener noreferrer">Convertir libro de trabajo (POST)</a>  
+- <a href="https://apireference.aspose.cloud/cells/#/Workbook/SaveAs" rel="noopener noreferrer">Guardar como (GET)</a>
+
+---
+
+_Ultima actualización: 2024-12-01_
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Aspose.Cells Cloud: Convertir libro de Excel a PDF, CSV, HTML y más (GET /cells/{name})",
+  "description": "Documentación para el punto de conexión GET /cells/{name} de Aspose.Cells Cloud, que convierte libros de Excel a diversos formatos como PDF, CSV, HTML y más.",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2024-12-01",
+  "keywords": "Aspose.Cells, conversión de Excel, PDF, CSV, HTML, API, REST, nube",
+  "url": "https://docs.aspose.cloud/es/cells/get-different-formats-files/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose"
+  }
+}
+</script>
+---

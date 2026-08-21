@@ -1,71 +1,106 @@
-﻿---
-title: Berechnen Sie die Formel Cells
-type: docs
-url: /de/calculate-cells-formula/
-weight: 90
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Berechnen Cells Formel
 ---
-Dieser REST API gibt die Berechnung `cells formula` in einer Excel-Datei an.
+title: "Zellenformel berechnen – Aspose.Cells Cloud API"
+type: docs
+url: /calculate-cells-formula/
+weight: 90
+keywords: "Aspose.Cells Cloud, Zellenformel berechnen, Excel-API, REST-API, SDK"
+description: "Berechnen Sie eine Excel-Zellenformel über die Aspose.Cells Cloud REST-API (v3.0). Enthält Endpunkt, Parameter, cURL-Beispiel und SDK-Snippets."
+ArticleTitle: "Zellenformel berechnen – Aspose.Cells Cloud API-Dokumentation"
+---
 
-## RSET API
+## REST API
+
+Diese REST-API berechnet die **Zellenformel** in einer Excel-Arbeitsmappe.
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/calculate
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/calculate
 ```
 
-Die Anforderungsparameter sind:
+## Sicherheit und Authentifizierung
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg||
-| Blattname| Schnur| Weg||
-| Zellname| Schnur| Weg||
-| Optionen|| Körper||
-| Ordner| Schnur| Abfrage||
-| Speichername| Schnur| Abfrage| Speichername.|
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine [JWT-Token-basierte Authentifizierung](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PostCellCalculate) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+### Anforderungsparameter
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+| Parametername | Typ   | Parameterposition (Pfad/Abfrage/Textkörper) | Beschreibung                                                                 |
+| ------------- | ----- | -------------------------------------------- | ---------------------------------------------------------------------------- |
+| name          | string | Pfad                                        | Name der Excel-Datei (z. B. `Book1.xlsx`).                                   |
+| sheetName     | string | Pfad                                        | Name des Arbeitsblatts, das die Zelle enthält.                               |
+| cellName      | string | Pfad                                        | Adresse der zu berechnenden Zelle (z. B. `A1`).                              |
+| options       | object | Textkörper                                  | JSON-Objekt mit Berechnungsoptionen (siehe Tabelle **Options-Objekt**).     |
+| folder        | string | Abfrage                                     | Ordner im Speicher, in dem sich die Datei befindet.                          |
+| storageName   | string | Abfrage                                     | Name des Aspose Cloud-Speichers.                                             |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+#### Options-Objekt
+
+| Feld          | Typ     | Beschreibung                                                                      | Standardwert |
+| ------------- | ------- | --------------------------------------------------------------------------------- | ------------ |
+| CalcStackSize | string  | Maximale Größe des Berechnungsstapels.                                            | `"1"`        |
+| IgnoreError   | boolean | Wenn `true`, werden Berechnungsfehler ignoriert und der Zellwert wird auf `#N/A` gesetzt. | `false`      |
+| Recursive     | boolean | Aktiviert die rekursive Berechnung abhängiger Zellen.                             | `false`      |
+| Precision     | string  | Anzahl der Dezimalstellen für numerische Ergebnisse.                              | `"15"`       |
+| UseThreading  | boolean | Aktiviert die mehrthreadsige Berechnung.                                          | `false`      |
+
+### **Antwort**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                   | Beschreibung                                                         |
+|------|-----------------------------|----------------------------------------------------------------------|
+| 200  | OK                          | Filter erfolgreich angewendet; Antwort enthält Details zum Vorgang. |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized                | Ungültiges oder fehlendes JWT-Token.                                |
+| 413  | Payload Too Large           | Hochgeladene Datei überschreitet die Größeinschränkung.             |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler.                                          |
+
+## Verwendung der PostCellCalculate API mit SDKs
+
+### PostCellCalculate API-Spezifikation
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PostCellCalculate) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
+
+Sie können das cURL-Befehlszeilentool verwenden, um Aspose.Cells-Webdienste einfach aufzurufen. Das folgende Beispiel zeigt, wie die Cloud-API mit cURL aufgerufen wird. **Holen Sie sich zuerst ein JWT-Token**, indem Sie sich beim Endpunkt `/connect/token` authentifizieren, und ersetzen Sie `<jwt token>` durch den Tokenwert.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Anforderung" tabName12="Antwort" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/A1/calculate" \
--d '{"CalcStackSize": "1"}' \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/A1/calculate" \
+  -d '{"CalcStackSize":"1"}' \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-Familie
+### Verwenden der Aspose.Cells Cloud SDKs
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK abstractiert Low-Level-Details und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte besuchen Sie das <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub-Repository</a> für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mit verschiedenen SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

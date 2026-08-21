@@ -1,53 +1,99 @@
-﻿---
-title: Exportar objeto OLE
-second_title: Documen
-linktitle: Objeto OLE
-type: docs
-url: /es/export-excel-ole-object/
-aliases: [ /export/excel-ole-object/]
-keywords: Export Excel OLE object to kinds of format files
-description: Aspose.Cells Cloud REST API admite la exportación de objetos OLE Excel a diversos formatos de archivo. El SDK admite diversos lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Exportar objeto OLE
 ---
-- **RESTO API**
+title: "Exportar objeto OLE – Aspose.Cells Cloud API"
+second_title: "Documento"
+linktitle: "Objeto OLE"
+type: docs
+url: /export-excel-ole-object/
+aliases: [/export/excel-ole-object/]
+keywords: "Aspose.Cells, objeto OLE, exportación, Excel, API en la nube, PDF, PNG, DOCX, PPTX"
+description: "Exporte objetos OLE desde un libro de Excel utilizando Aspose.Cells Cloud API. Aprenda sobre el formato de solicitud, parámetros, ejemplo con cURL y manejo de errores."
+weight: 20
+ArticleTitle: "Exportar objeto OLE – Aspose.Cells Cloud API"
+---
 
-|**API**|**Tipo**|**Descripción**|**Enlace Swagger**|
-|:- |:- |:- |:- |
-|/células/exportar|CORREO|Exportar Excel desde el contenido de la solicitud a algún formato|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
-
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
-
- Puedes utilizar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
-
-- **Pedido**
+## **API REST**
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
-- **Respuesta**
+### **Seguridad y autenticación**
 
-```bash
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
+
+
+### Parámetros de solicitud
+
+| Parámetro       | Ubicación  | Tipo   | Obligatorio | Descripción                                                                    |
+| --------------- | --------- | ------ | ----------- | ------------------------------------------------------------------------------ |
+| `file`          | Datos del formulario | archivo | Sí          | El libro de Excel (`.xlsx`, `.xls`, etc.) que contiene los objetos OLE.      |
+| `outputFormat`  | Consulta     | cadena | Sí          | Formato de destino para los objetos exportados (`pdf`, `png`, `jpeg`, `docx`, `pptx`). |
+| `objectType`    | Consulta     | cadena | Sí          | Valor fijo `oleobject`.                                                       |
+
+
+### Respuesta
+
+Una solicitud correcta devuelve un objeto JSON que enumera los archivos exportados:
+
+```json
 {
-    "Files": [{
-        "Filename": "OLESlide.ppt",
-        "FileSize": 390,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "OLEDoc.docx",
-        "FileSize": 382,
-        "FileContent": "-----Base64String--------"
-    }]
+  "Files": [
+    {
+      "Filename": "OLESlide.ppt",
+      "FileSize": 390,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "OLEDoc.docx",
+      "FileSize": 382,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
-- **Familia de SDK en la nube**
+**Códigos de estado HTTP**
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+| Código | Significado                     | Descripción                                      |
+|--------|---------------------------------|--------------------------------------------------|
+| 200    | OK                              | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta            | Parámetros faltantes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado                   | Token JWT no válido o faltante. |
+| 413    | Carga demasiado grande           | El archivo cargado supera el límite de tamaño. |
+| 500    | Error interno del servidor      | Error inesperado del servidor. |
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+## Cómo utilizar la API PostExport con SDK
+
+### Especificación de la API PostExport
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos **cURL** para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube mediante cURL.
+
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject&format=pdf" \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -F "file=@MyWorkbook.xlsx" \
+  -F "outputFormat=pdf"
+```
+
+### ¿Qué es un objeto OLE?
+
+Un **objeto OLE (Object Linking and Embedding, o vinculación e incrustación de objetos)** incrusta contenido externo —como documentos de Word, diapositivas de PowerPoint, imágenes u otros archivos— dentro de un libro de Excel. Al exportar, el contenido incrustado se extrae y guarda en el formato de salida solicitado.
+
+### Descripción general del punto de conexión
+
+`POST https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject&format={outputFormat}`
+
+- `objectType` – Debe establecerse en `oleobject`.
+- `format` – Formato de salida deseado (por ejemplo, `pdf`, `png`, `jpeg`, `docx`, `pptx`).
+
+### Utilizar los SDK de Aspose.Cells Cloud
+
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK maneja los detalles de bajo nivel para que usted pueda centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código demuestran cómo llamar a los servicios web de Aspose.Cells utilizando diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

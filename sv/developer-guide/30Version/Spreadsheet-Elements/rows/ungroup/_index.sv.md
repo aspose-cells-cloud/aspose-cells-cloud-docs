@@ -1,76 +1,71 @@
-﻿---
-title: Dela upp rader i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Ungröna
+---
+title: "Avgruppera rader i ett Excel-ark"
+second_title: "Dokument"
+linktitle: "Avgruppera"
 type: docs
 url: /sv/rows/ungroup/
 aliases: [/ungroup-rows-in-excel-worksheet/]
-keywords: Ungroup rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder uppdelning av rader i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+keywords: "Avgruppera rader, Excel, Aspose.Cells Cloud, REST API, SDK, kalkylark"
+description: "Lär dig hur du avgrupperar rader i ett Excel-ark med Aspose.Cells Cloud REST API och SDK:er för olika programmeringsspråk."
 weight: 70
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Dela upp rader i ett Excel-kalkylblad
 ---
-Denna REST API anger att rader i ett Excel-arbetsblad ska delas upp.
 
-## RSET API
+Denna REST API avgrupperar rader i ett Excel-ark.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/ungroup
- 
 ```
 
-Begäranparametrarna är:
+### **Parametrar för begäran**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| första index| heltal| fråga| Det första radindexet som ska användas.|
-| sista index| heltal| fråga| Det sista radindexet som ska användas.|
-| ärAllt| boolesk| fråga| Ska alla rader användas|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameternamn | Typ      | Plats  | Beskrivning                                                   |
+| ------------- | -------- | ------ | ------------------------------------------------------------- |
+| name          | string   | path   | Namnet på arbetsboken.                                        |
+| sheetName     | string   | path   | Namnet på arket.                                              |
+| firstIndex    | integer  | query  | Det nollbaserade indexet för den första raden som ska avgrupperas. |
+| lastIndex     | integer  | query  | Det nollbaserade indexet för den sista raden som ska avgrupperas. |
+| isAll         | boolean  | query  | Om **true**, avgrupperas alla rader i det angivna intervallet. |
+| folder        | string   | query  | Mappen som innehåller arbetsboken.                            |
+| storageName   | string   | query  | Namnet på lagringsutrymmet där arbetsboken finns.             |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör att du kan utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du gör anrop till moln-API:et med cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/ungroup?firstIndex=1&lastIndex=5&isAll=true" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+ -X POST \
+ -H "Content-Type: application/json" \
+ -H "Accept: application/json" \
+ -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## SDK-familj för molnet
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Se [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

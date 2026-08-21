@@ -1,76 +1,98 @@
-﻿---
-title: تجميع الصفوف في ورقة العمل Excel
-second_title: Documen
-linktitle: جرو
-type: docs
-url: /ar/rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
-keywords: Group rows on an Excel worksheet
-description: يدعم Cloud REST تجميع الصفوف في ورقة عمل Aspose.Cells. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 60
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تجميع الصفوف في ورقة عمل Excel
 ---
-يشير هذا REST API إلى تجميع الصفوف في ورقة عمل Excel.
+title: "تجميع الصفوف في ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "تجميع"
+type: docs
+url: /rows/group/
+aliases: [/group-rows-in-excel-worksheet/]
+keywords: "تجميع الصفوف، Excel، Aspose.Cells Cloud، REST API، SDK، ورقة عمل، Excel API"
+description: "تجميع الصفوف في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. تدعم العديد من SDKs (C#، Java، PHP، Ruby، Node.js، Python، Perl، Go) لسهولة التكامل."
+weight: 60
+ArticleTitle: "تجميع الصفوف في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud"
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية REST بتجميع الصفوف في ورقة عمل Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
- 
+**المتطلبات المسبقة:**  
+- يجب تزويدها برمز وصول OAuth 2.0 صالح (Bearer JWT) في الرأس `Authorization`.  
+- يجب أن تكون المصنف موجودًا مسبقًا في المسار `folder` المُحدَّد ضمن `storageName` المختار (أو وحدة التخزين الافتراضية) قبل إرسال الطلب.
+
+## واجهة PostGroupWorksheetRows API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| الفهرس الأول| عدد صحيح| استفسار| مؤشر الصف الأول الذي سيتم تشغيله.|
-| الفهرس الأخير| عدد صحيح| استفسار| مؤشر الصف الأخير الذي سيتم تشغيله.|
-| يخفي| منطقي| استفسار| حالة الصفوف المرئية|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **معطيات الطلب**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعطى | النوع | الموقع | الوصف |
+| -------------- | ------- | -------- | ------------------------------------------------------------------------ |
+| name | string | path | اسم ملف المصنف. |
+| sheetName | string | path | اسم ورقة العمل. |
+| firstIndex | integer | query | المؤشر (بدءًا من الصفر) للصف الأول المطلوب تجميعه. |
+| lastIndex | integer | query | المؤشر (بدءًا من الصفر) للصف الأخير المطلوب تجميعه. |
+| hide | boolean | query | يُشير إلى ما إذا كان يجب إخفاء الصفوف المُجمّعة (`true` أو `false`). |
+| folder | string | query | المسار إلى المجلد الذي يحتوي على المصنف. |
+| storageName | string | query | اسم وحدة التخزين التي يوجد فيها المصنف. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) واجهة برمجة تطبيقات متاحة علنًا، ويتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات Aspose.Cells عبر الويب. يوضح المثال التالي كيفية إجراء المكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/group?firstIndex=1&lastIndex=2&hide=true" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**رموز حالة HTTP**
+
+| الكود | المعنى | الوصف |
+|------|-----------------------------|--------------------------------------------------|
+| 200 | ناجح (OK) | تمت تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | طلب غير صالح (Bad Request) | معطيات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم). |
+| 401 | غير مُصادَق (Unauthorized) | رمز JWT غير صالح أو مفقود. |
+| 413 | حملة البيانات كبيرة جدًا (Payload Too Large) | حجم الملف المرفوع يتجاوز الحد المسموح. |
+| 500 | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم. |
+
+استجابات الخطأ الشائعة:
+
+- **400 Bad Request** – تحقق من أن `firstIndex` و `lastIndex` أرقام صحيحة صالحة، وأن `firstIndex` ≤ `lastIndex`.  
+- **401 Unauthorized** – تحقق من أن رأس `Authorization` يحتوي على رمز JWT ساري المفعول.  
+- **404 Not Found** – تأكد من وجود المصنف (`name`) وورقة العمل (`sheetName`) في المسار `folder` / `storageName` المحددين.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**انظر أيضًا:** [فك تجميع الصفوف في ورقة عمل Excel](../rows/ungroup/ "فك تجميع الصفوف في ورقة عمل Excel")، [إخفاء الصفوف في ورقة عمل Excel](../rows/hide/ "إخفاء الصفوف في ورقة عمل Excel")، [إظهار الصفوف المُخفية في ورقة عمل Excel](../rows/unhide/ "إظهار الصفوف المُخفية في ورقة عمل Excel").
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. يتعامل SDK مع التفاصيل منخفضة المستوى، بحيث يمكنك التركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

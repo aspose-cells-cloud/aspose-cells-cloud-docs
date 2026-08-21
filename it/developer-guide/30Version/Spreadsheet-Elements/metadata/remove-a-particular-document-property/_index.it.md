@@ -1,78 +1,77 @@
-﻿---
-title: Elimina una proprietà specifica del documento
-second_title: Documen
-linktitle: Elimina
-type: docs
-url: /it/document-properties/delete/
-aliases: [/remove-a-particular-document-property/]
-keywords: Delete, and update properties from excel files
-description: Aspose.Cells Cloud REST API supporta l'eliminazione di proprietà dai file Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 50
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Elimina una proprietà particolare del documento
 ---
-Questo REST API indica la proprietà del documento `delete`.
+title: "Eliminare una proprietà specifica di un documento"
+second_title: "Documento"
+linktitle: "Elimina"
+type: docs
+url: /document-properties/delete/
+aliases: [/remove-a-particular-document-property/]
+keywords: "Aspose.Cells, eliminare proprietà documento, API metadati Excel, REST, SDK cloud, esempio cURL"
+description: "Elimina una proprietà specifica di un documento da un foglio di calcolo Excel utilizzando l'API REST Aspose.Cells Cloud v3.0. Include esempi cURL e SDK per C#, Java, Python e altri linguaggi."
+weight: 50
+---
 
-## RSET API
+Questa REST API elimina una proprietà di documento da un foglio di calcolo.
+
+## API REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
 ```
 
-I parametri della richiesta sono:
+### Parametri della richiesta
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome del documento.|
-| NomeProprietà| corda| sentiero| Il nome della proprietà.|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome parametro | Tipo   | Posizione | Obbligatorio | Descrizione                                      |
+| -------------- | ------ | --------- | ------------ | ------------------------------------------------ |
+| name           | string | path      | Sì           | Il nome del foglio di calcolo Excel.             |
+| propertyName   | string | path      | Sì           | Il nome della proprietà di documento da eliminare. |
+| folder         | string | query     | No           | Il percorso della cartella in cui è salvato il foglio di calcolo. |
+| storageName    | string | query     | No           | Il nome del servizio di archiviazione.           |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty) definiscono un'interfaccia di programmazione pubblicamente accessibile e consentono di effettuare interazioni REST direttamente da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API cloud con cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author"  \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author" \
+     -X DELETE \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-  
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+### Risposte di errore
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+| Stato HTTP | Descrizione                                                          | Esempio JSON                                                   |
+| ---------- | -------------------------------------------------------------------- | -------------------------------------------------------------- |
+| 400        | Richiesta non valida – parametri obbligatori mancanti o valori non validi. | `{"Code":400,"Message":"Parametro obbligatorio 'name' mancante."}` |
+| 401        | Non autorizzato – token JWT non valido o assente.                   | `{"Code":401,"Message":"Token di accesso non valido."}`        |
+| 404        | Non trovato – il foglio di calcolo o la proprietà specificata non esistono. | `{"Code":404,"Message":"Proprietà documento non trovata."}`    |
+| 500        | Errore interno del server – si è verificata una condizione imprevista. | `{"Code":500,"Message":"Si è verificato un errore imprevisto."}` |
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+## Famiglia di SDK cloud
+
+L'utilizzo di un SDK rappresenta il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK cloud di Aspose.Cells.
+
+I seguenti esempi di codice mostrano come effettuare chiamate ai servizi web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

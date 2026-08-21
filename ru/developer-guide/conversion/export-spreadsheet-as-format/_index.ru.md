@@ -1,99 +1,153 @@
-﻿---
-title: Aspose.Cells Cloud Web API — Экспорт электронной таблицы в виде файла формата
-second_title: Documen
-ArticleTitle: Export a Spreadsheet as a Format fil
-linktitle: Экспортировать электронную таблицу как Forma
-type: docs
-url: /ru/export-spreadsheet-as-format/
-keywords: Export spreadsheet, Aspose.Cells Cloud Web API, Convert spreadsheet, Spreadsheet formats, XLSX, PDF, CSV, JSON, Markdow
-description: Эффективно конвертирует электронные таблицы, хранящиеся в облачном хранилище, в различные форматы, такие как XLSX, PDF и CSV.
-weight: 100
-kwords: Excel, Office Облако, REST, преобразование электронных таблиц, PDF, CSV, JSON, Markdow
 ---
-Экспортируйте облачную таблицу/Excel в файл другого формата.
+title: "Aspose.Cells Cloud Web API — экспорт удалённого листа Excel в другие форматы — бесплатный онлайн-инструмент"
+second_title: "Документ"
+ArticleTitle: "Как экспортировать удалённый лист электронной таблицы в другие форматы: пошаговое руководство"
+linktitle: "Экспорт электронной таблицы в формат"
+type: docs
+url: /export-spreadsheet-as-format/
+keywords: "Aspose.Cells, преобразование электронных таблиц, API, экспорт, PDF, CSV, JSON, XLSX"
+description: "Преобразуйте книги Excel, хранящиеся в Aspose Cloud, в форматы PDF, XLSX, CSV, JSON или HTML через один REST-эндпоинт. Узнайте синтаксис запросов, параметры и примеры SDK на C#, Java, Python и других языках."
+weight: 100
+---
 
-## **Экспортировать электронную таблицу в формате API**
+Экспортируйте облачную электронную таблицу (Excel) в другой файловый формат.
+
+## **API экспорта электронной таблицы в формат**
+
+### Web API
 
 ```http
-GET http://api.aspose.cloud/v4.0/cells/{name}
+GET https://api.aspose.cloud/v4.0/cells/{name}?format={format}&folder={folder}&storageName={storageName}&outPath={outPath}&outStorageName={outStorageName}&fontsLocation={fontsLocation}&region={region}&password={password}
 ```
+
+### **Безопасность и аутентификация**
+
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
 ### **Параметры запроса:**
 
-| Имя параметра| Тип| Путь/Строка запроса/Тело HTTP| Описание|
-|:- |:- |:- |:- |
-| имя| Нить| Путь| (Обязательно) Имя файла рабочей книги, который требуется извлечь.|
-| формат| Нить| Запрос| (Обязательно) Желаемый формат вывода (например, «Xlsx», «Pdf», «Csv»).|
-| папка| Нить| Запрос| (Необязательно) Путь к папке, где хранится книга. Значение по умолчанию — null.|
-| имя_хранилища| Нить| Запрос|(Необязательно) Укажите имя хранилища, если используется пользовательское облачное хранилище. Если не указано, используйте хранилище по умолчанию.|
-| outPath| Нить| Запрос| (Необязательно) Путь к папке, в которой будет сохранена рабочая книга. Значение по умолчанию — null.|
-|outStorageName| Нить| Запрос| Имя хранилища выходного файла.|
-| шрифтыРасположение| Нить| Запрос| Используйте пользовательские шрифты.|
-| область| Нить| Запрос| Настройка региона электронной таблицы.|
-| пароль| Нить| Запрос| Пароль для открытия файла электронной таблицы.|
+| Имя параметра | Тип   | Путь/Строка запроса/HTTP-тело | Описание                                                                                                                                         |
+| :------------ | :---- | :--------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| name          | String | Путь                         | (Обязательный) Имя файла книги, который необходимо получить.                                                                                     |
+| format        | String | Строка запроса               | (Обязательный) Желаемый выходной формат (например, «Xlsx», «PDF», «CSV»).                                                                        |
+| folder        | String | Строка запроса               | (Необязательный) Путь к папке, где хранится книга. По умолчанию — null.                                                                          |
+| storageName   | String | Строка запроса               | (Необязательный) Имя хранилища при использовании пользовательского облачного хранилища. Если не указано — используется хранилище по умолчанию.  |
+| outPath       | String | Строка запроса               | (Необязательный) Путь к папке, куда будет сохранена книга. По умолчанию — null.                                                                  |
+| outStorageName| String | Строка запроса               | (Необязательный) Имя хранилища для выходного файла.                                                                                              |
+| fontsLocation | String | Строка запроса               | (Необязательный) Пользовательское расположение шрифтов.                                                                                           |
+| region        | String | Строка запроса               | (Необязательный) Настройка региона/языка электронной таблицы (например, `en-US`, `fr-FR`). Влияет на форматирование чисел, разбор дат и поведение, зависящее от локали. |
+| password      | String | Строка запроса               | (Необязательный) Пароль для открытия файла электронной таблицы.                                                                                  |
 
 ### **Ответ**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Коды ошибок
+Ответ содержит один объект, представляющий собой поток преобразованного файла.
 
-- **400 Неверный запрос**: Неверный URI Apose.Cells Cloud API.
-- **401 Неавторизованный**: Недействительный токен доступа. Или недействительный идентификатор клиента и секретный ключ.
-- **404 Не найдено**: Файл электронной таблицы недоступен.
-- **500 Ошибка сервера**: В электронной таблице обнаружена аномалия при получении расчетных данных.
+**Коды HTTP-статуса**
 
-## Почему следует использовать экспорт электронной таблицы в формате API?
+| Код | Значение                | Описание                                                           |
+| --- | ----------------------- | ------------------------------------------------------------------ |
+| 200 | OK (OK)                 | Фильтр успешно применён; ответ содержит детали операции.          |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизован) | Неверный или отсутствующий JWT-токен.                             |
+| 413 | Payload Too Large (Слишком большой полезный нагрузка) | Загруженный файл превышает лимит размера.                  |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                                  |
 
-- Вы можете конвертировать облачные файлы в различные форматы в любое время и в любом месте.
-- Разработку можно быстро завершить с помощью существующего SDK.
+## Где следует использовать API экспорта электронной таблицы в другой формат?
 
-## Как использовать экспортированную электронную таблицу в формате API с SDK?
+- **Миграция устаревших систем**: Преобразуйте тысячи устаревших файлов XLS в XLSX для современных систем.
+- **Стандартизация архивов**: Приведите различные форматы электронных таблиц (XLS, XLSM, ODS, CSV) к единому формату для архивирования.
+- **Взаимодействие с офисными пакетами**: Преобразуйте файлы Excel в форматы, совместимые с LibreOffice, Google Таблицами или Apple Numbers.
+- **Нормализация источников данных**: Преобразуйте различные форматы электронных таблиц в CSV или JSON для последующей загрузки в базы данных.
+- **Публикация в вебе**: Преобразуйте финансовые модели в HTML для отображения в вебе.
 
-### Экспортировать электронную таблицу в формате API. Спецификация
+## Почему следует использовать API экспорта электронной таблицы в другой формат?
 
- The[Экспортировать электронную таблицу в формате API. Спецификация](https://reference.aspose.cloud/cells/#/ConversionController/ExportSpreadsheetAsFormat) предоставляет общедоступный программный интерфейс для бесперебойного выполнения взаимодействий REST.
+- **Удобен для разработчиков**: Aspose.Cells Cloud предоставляет SDK-библиотеки на множестве языков программирования, что позволяет быстро разрабатывать решения, и сопровождается подробной документацией. По сравнению с созданием собственных решений для отрисовки графиков, это существенно снижает объём работ по разработке.
+- **Снижение трудозатрат**: Уменьшает необходимость выделять сотрудников на задачи по консолидации документов.
+- **Оплата по факту использования**: Нет необходимости в первоначальных инвестициях; вы платите только за фактически выполненные вызовы API.
+- **Отсутствие необходимости в обслуживании серверной стороны**: Не нужно управлять серверами, обновлять ПО или решать проблемы совместимости.
+- **Широкая поддержка форматов**: Поддерживается преобразование между более чем 20 форматами электронных таблиц.
+- **Сохранение точности данных и форматирования**: При преобразовании сохраняются исходная структура, формулы и стили.
 
-### Используйте облачные SDK Aspose.Cells
+## Как использовать API экспорта электронной таблицы в формат с помощью SDK?
 
-Использование SDK — самый быстрый способ разработки, поскольку он абстрагируется от низкоуровневых деталей и позволяет экспортировать электронную таблицу в файл формата с коротким кодом.
- Пожалуйста, проверьте[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+### Спецификация API экспорта электронной таблицы в формат
 
-Следующие примеры кода иллюстрируют, как взаимодействовать с Aspose.Cells веб-сервисами via различными SDK:
+<a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportSpreadsheetAsFormat" rel="noopener noreferrer">Спецификация API экспорта электронной таблицы в формат</a> предоставляет публично доступный программный интерфейс для беспрепятственного выполнения REST-взаимодействий.
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ExportSpreadsheetAsFormat.cs" >}}
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Пример ниже демонстрирует, как выполнять вызовы в облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets?format=pdf" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/octet-stream"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ExportSpreadsheetAsFormat.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 закодировано)",
+  "contentType": "MIME-тип",
+  "fileDownloadName": "необязательное имя файла"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExportSpreadsheetAsFormat.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ExportSpreadsheetAsFormat.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ExportSpreadsheetAsFormat.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ExportSpreadsheetAsFormat.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ExportSpreadsheetAsFormat.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportSpreadsheetAsFormat.go" >}}
-{{< /tab >}}
+
+{{< /tabs >}}
+
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK — самый быстрый способ разработки, поскольку он абстрагирует низкоуровневые детали, позволяя экспортировать электронную таблицу в файл нужного формата с помощью короткого кода.  
+Перед вызовом API получите OAuth 2.0-токен доступа и включите его в заголовок `Authorization: Bearer <token>`.
+
+Ознакомьтесь со <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">репозиторием на GitHub</a>, чтобы получить полный список SDK Aspose.Cells Cloud.
+
+Приведённые ниже примеры кода иллюстрируют взаимодействие с веб-сервисами Aspose.Cells через различные SDK:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ExportSpreadsheetAsFormat.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ExportSpreadsheetAsFormat.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExportSpreadsheetAsFormat.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ExportSpreadsheetAsFormat.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ExportSpreadsheetAsFormat.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ExportSpreadsheetAsFormat.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ExportSpreadsheetAsFormat.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportSpreadsheetAsFormat.go" >}}
+{{</tab>}}
 {{< /tabs >}}

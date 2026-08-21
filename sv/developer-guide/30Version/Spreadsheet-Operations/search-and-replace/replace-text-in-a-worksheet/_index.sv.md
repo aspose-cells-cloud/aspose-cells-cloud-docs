@@ -1,93 +1,215 @@
-﻿---
-title: Ersätt text i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Ersätt i arbetsbladet
-type: docs
-url: /sv/replace-text-in-a-worksheet/
-url: /sv/worksheets/replace-text/
-aliases: [/replace-text-in-a-workbook/]
-keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
-description: Aspose.Cells Cloud REST API stöder att hitta text från Excel-arbetsbladet. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 70
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ersätt text i ett Excel-kalkylblad
 ---
-Denna REST API indikerar `replace`-text i ett Excel-arbetsblad.
+title: "Ersätt text i ett Excel-arbetsark – Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Ersätt i arbetsark"
+type: docs
+url: /worksheets/replace-text/
+aliases: [/replace-text-in-a-workbook/]
+keywords: "Aspose.Cells, ersätt text, Excel, REST API, kalkylark, arbetsark"
+description: "Lär dig hur du ersätter text i ett Excel-arbetsark med Aspose.Cells Cloud API (v3.0). Inkluderar förutsättningar, autentisering, begärsyntax, cURL-exempel, SDK-kodexempel, svarsdetaljer och felhantering."
+ArticleTitle: "Ersätt text i ett Excel-arbetsark – Aspose.Cells Cloud API"
+weight: 70
+---
 
-## RSET API
+Denna REST API ersätter text i ett Excel-arbetsark med **Aspose.Cells ersättnings-API för text**.
+
+## Säkerhet och autentisering
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText
 ```
 
-Begäranparametrarna är:
+### Begärparametrar
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| gammalt värde| sträng| fråga|Den gamla texten som ska ersättas.|
-| nyttVärde| sträng| fråga| Den nya texten som ska ersättas med.|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| ParameterNamn   | Typ    | Plats  | Beskrivning                               |
+| ---------------- | ------ | ------ | ----------------------------------------- |
+| **name**         | string | path   | Namnet på Excel-arbetsboken.              |
+| **sheetName**    | string | path   | Namnet på arbetsarket.                    |
+| **oldValue**     | string | query  | Texten som ska ersättas.                  |
+| **newValue**     | string | query  | Ersättningstexten.                        |
+| **folder**       | string | query  | Mappen som innehåller filen.              |
+| **storageName**  | string | query  | Namnet på lagringstjänsten.               |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorsheetTextReplace) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Svar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+```json
+{
+    "Status":"OK",
+    "Code":200,
+      "Workbook": {
+    "FileName": "test.xlsx",
+    "Links": [
+      {
+        "Href": "/test.xlsx",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som CSV",
+        "Type": "text/csv"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som HTML",
+        "Type": "text/html"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som ODS",
+        "Type": "application/vnd.oasis.opendocument.spreadsheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som PDF",
+        "Type": "application/pdf"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som tabellavgränsat textformat",
+        "Type": "text/plain"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som TIFF",
+        "Type": "image/tiff"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som Microsoft Excel 2003",
+        "Type": "application/vnd.ms-excel"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som Microsoft Excel 2007",
+        "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som XPS",
+        "Type": "application/vnd.ms-xpsdocument"
+      }
+    ],
+    "Worksheets": {
+      "link": {
+        "Href": "/worksheets",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DefaultStyle": {
+      "link": {
+        "Href": "/defaultstyle",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DocumentProperties": {
+      "link": {
+        "Href": "/documentproperties",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Names": {
+      "link": {
+        "Href": "/names",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Settings": {
+      "link": {
+        "Href": "/settings",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "IsWriteProtected": "False",
+    "IsProtected": "False",
+    "IsEncryption": "false",
+    "Password": null
+  }
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                           |
+|-----|-----------------------------|-------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Auktorisering saknas        | Ogiltig eller saknad JWT-token.                      |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen.    |
+| 500 | Internt serverfel           | Oväntat serverfel.                                   |
+
+## Hur du använder PostWorksheetTextReplace API med SDK:er
+
+### PostWorksheetTextReplace API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextReplace) definierar detta offentligt tillgängliga gränssnitt.
+
+Du kan använda kommandoradsverktyget cURL för att anropa tjänsten:
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/replaceText?oldValue=b&newValue=b11" -H "accept: application/json"
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/replaceText?oldValue=b&newValue=b11" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Matches": 0,
-
   "Worksheet": {
-
     "link": {
-
       "Href": "/test.xlsx/worksheets/Sheet1",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+### Använd Aspose.Cells Cloud SDK:er
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektoppgifter. Se [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du anropar Aspose.Cells webbtjänster med olika SDK:er:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}

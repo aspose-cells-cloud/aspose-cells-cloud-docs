@@ -1,75 +1,96 @@
-﻿---
-title: Удалить заголовок диаграммы на рабочем листе
+---
+title: "Удаление заголовка диаграммы в рабочем листе"
 type: docs
-url: /ru/charts/delete-chart-title/
+url: /charts/delete-chart-title/
 aliases: [/delete-chart-title-in-a-worksheet/]
 weight: 150
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Удаление заголовка диаграммы на листе
+keywords: "Aspose.Cells, облачный API, удаление заголовка диаграммы, Excel, REST, SDK"
+description: "Узнайте, как удалить заголовок диаграммы из рабочего листа Excel с помощью облачного REST API Aspose.Cells (v4.0). Примеры кода для cURL и SDK, обработка ошибок."
 ---
-Этот REST API указывает скрыть заголовок в диаграмме
- 
-## РСЕT API
- 
+
+Этот REST API удаляет заголовок диаграммы.
+
+## REST API
+
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
- 
+DELETE https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей тетради.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| chartIndex| целое число| путь| Индекс диаграммы.|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
- 
-<br/>
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartTitle) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+### Безопасность и аутентификация
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Облачные API Aspose.Cells защищены и требуют [аутентификации с использованием токена JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+
+### Параметры запроса
+
+| Имя параметра | Тип    | Расположение | Описание                             |
+|---------------|--------|-------------|--------------------------------------|
+| name          | string | path        | Имя файла книги.                     |
+| sheetName     | string | path        | Имя рабочего листа.                  |
+| chartIndex    | integer| path        | Индекс диаграммы (начинается с 0).   |
+| folder        | string | query       | Папка, содержащая книгу.             |
+| storageName   | string | query       | Имя хранилища.                       |
+
+
+### **Ответ**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                          |
+|-----|-----------------------------|---------------------------------------------------|
+| 200 | OK (ОК)                    | Фильтр успешно применён; ответ содержит детали операции. |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизован) | Неверный или отсутствующий токен JWT. |
+| 413 | Payload Too Large (Слишком большой полезный груз) | Загруженный файл превышает допустимый размер. |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера. |
+
+## Как использовать API DeleteWorksheetChartTitle с SDK
+
+### Спецификация API DeleteWorksheetChartTitle
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartTitle) определяет общедоступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Для удобного доступа к веб-сервисам Aspose.Cells можно использовать утилиту командной строки cURL. Пример ниже показывает, как выполнить вызов, включая обязательный токен **Bearer JWT** для аутентификации.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title"
--X DELETE 
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+```bash
+curl -v "https://api.aspose.cloud/v4.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
- 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
- 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+### Использование SDK облачных сервисов Aspose.Cells
 
+Использование SDK — лучший способ ускорить разработку. SDK берёт на себя обработку низкоуровневых деталей, позволяя сосредоточиться на задачах проекта. Полный список SDK облачных сервисов Aspose.Cells доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
+
+В приведённых ниже примерах показано, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

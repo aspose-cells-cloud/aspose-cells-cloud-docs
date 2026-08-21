@@ -1,56 +1,61 @@
-﻿---
-title: الحصول على التنسيق الشرطي
-type: docs
-url: /ar/conditional-formattings/get/
-aliases: [/get-conditional-formatting/]
-keywords: REST API, spreadsheets, excel, get condition formattin
-description: "Cells.Cloud API لـ Excel يعمل: الحصول على تنسيق الشرط"
-weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على التنسيق الشرطي
 ---
-يشير هذا REST API إلى الحصول على التنسيق الشرطي
- 
-## RSET API
- 
+title: "الحصول على التنسيق الشرطي"
+type: docs
+url: /conditional-formattings/get/
+aliases: [/get-conditional-formatting/]
+keywords: "Aspose.Cells Cloud, REST API, التنسيق الشرطي, Excel, جداول البيانات"
+description: "استرجاع قواعد التنسيق الشرطي من ورقة عمل باستخدام واجهة Aspose.Cells Cloud REST API."
+weight: 10
+---
+
+تسترجع هذه الواجهة البرمجية لـ REST قواعد التنسيق الشرطي من ورقة عمل.
+
+## واجهة REST
+
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
- 
 ```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| فِهرِس| عدد صحيح| طريق||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
- 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormatting) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
- 
+
+### معلمات الطلب
+
+| اسم المعلمة | النوع | الموقع | الوصف |
+| ------------ | ------- | -------- | ---------------------------------------------------- |
+| name | string | path | اسم ملف المصنف. |
+| sheetName | string | path | اسم ورقة العمل التي تحتوي على التنسيق. |
+| index | integer | path | المؤشر (الصفر-مبني) لقاعدة التنسيق الشرطي. |
+| folder | string | query | مسار المجلد حيث يتم تخزين المصنف. |
+| storageName | string | query | اسم خدمة التخزين. |
+
+### استجابات الأخطاء
+
+| رمز HTTP | السبب | مثال على جسم الاستجابة |
+| --------- | -------------------------------------------------- | ------------------------------------------------------------------- |
+| **400** | طلب غير صالح – معلمات مفقودة أو غير صحيحة. | `{ "Code":"400", "Message":"Invalid parameter value." }` |
+| **401** | غير مصرح به – رمز JWT مفقود أو غير صحيح. | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
+| **404** | غير موجود – المصنف أو ورقة العمل غير موجودين. | `{ "Code":"404", "Message":"File not found." }` |
+| **500** | خطأ داخلي في الخادم – فشل غير متوقع في الخادم. | `{ "Code":"500", "Message":"An unexpected error occurred." }` |
+
+يعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormatting) واجهة برمجة تطبيقات عامة قابلة للوصول، وتمكنك من إجراء تفاعلات REST مباشرة من خلال متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات ويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء استدعاء لواجهة Cloud API باستخدام cURL.
+
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
   "Status": "string",
   "ConditionalFormatting": {
@@ -274,17 +279,16 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 {{< /tab >}}
 
 {{< /tabs >}}
-## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+
+## عائلة SDK للسحابة
+
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. يتعامل SDK مع التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-GetConditionalFormatting-1.cs" >}}
 
@@ -298,8 +302,6 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 
 {{< tab tabNum="3" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
@@ -310,41 +312,29 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 
 {{< tab tabNum="5" >}}
 
-
-
 {{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-GetConditionalFormatting-1.js" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-
-
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-GetConditionalFormatting-1.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "d1809f85075aaa2f4d954930e916d115" >}}
 

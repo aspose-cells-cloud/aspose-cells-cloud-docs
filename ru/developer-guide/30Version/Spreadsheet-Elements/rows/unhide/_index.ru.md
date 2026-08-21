@@ -1,76 +1,94 @@
-﻿---
-title: Отобразить строки на листе Excel
-second_title: Documen
-linktitle: Нескрытый
+---
+title: "Отменить скрытие строк на листе Excel"
+second_title: "Документ"
+linktitle: "Отменить скрытие"
 type: docs
 url: /ru/rows/unhide/
-aliases: [/unhide-rows-in-excel-worksheet/]
-keywords: Unhide rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает отображение строк на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+aliases: [/ru/unhide-rows-in-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, отменить скрытие строк, REST API, электронная таблица, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
+description: "Используйте Aspose.Cells Cloud REST API для отмены скрытия строк на листе Excel. API доступно через множество SDK, включая .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl и Swift."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Отображение строк на листе Excel
+ArticleTitle: "Отменить скрытие строк на листе Excel с помощью Aspose.Cells Cloud API"
 ---
-Этот REST API указывает на необходимость отобразить строки на листе Excel.
 
-## РСЕT API
+Этот REST API отменяет скрытие строк на листе Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide
- 
+**Необходимые условия:** Получите действительный JWT-токен доступа из службы аутентификации Aspose Cloud и убедитесь, что целевая рабочая книга загружена в поддерживаемое хранилище перед вызовом этой конечной точки.
+
+## API PostUnhideWorksheetRows
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| стартров| целое число| запрос| Начальный индекс строки, подлежащей обработке.|
-| totalRows| целое число| запрос| Количество обрабатываемых рядов.|
-| высота| число| запрос|15.0 |
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### **Параметры запроса**
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра | Тип    | Расположение | Описание                                          |
+| ------------- | ------ | ----------- | ------------------------------------------------- |
+| name          | string | path        | Имя рабочей книги.                                |
+| sheetName     | string | path        | Имя листа.                                        |
+| startrow      | integer | query      | Индекс первой строки (начиная с 0) для отмены скрытия. |
+| totalRows     | integer | query      | Количество строк для отмены скрытия.              |
+| height        | number | query       | Высота строки (по умолчанию 15.0).               |
+| folder        | string | query       | Папка документа.                                  |
+| storageName   | string | query       | Имя хранилища.                                    |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+<a href="https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows" rel="noopener noreferrer">Спецификация OpenAPI</a> определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+**Аутентификация**  
+Все запросы должны проходить аутентификацию с использованием JWT-токена доступа, полученного из службы аутентификации Aspose Cloud. Включите токен в заголовок `Authorization: Bearer <jwt token>`.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Следующий пример показывает, как выполнять вызовы в облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/unhide?startrow=1&totalRows=1&height=15" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+ -X POST \
+ -H "Content-Type: application/json" \
+ -H "Accept: application/json" \
+ -H "Authorization: Bearer <jwt token>"
+# Примечание: тело POST-запроса для этой конечной точки пусто
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                          |
+|-----|----------------------------|--------------------------------------------------|
+| 200 | OK (OK)                    | Фильтр успешно применён; ответ содержит подробности операции. |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизован) | Некорректный или отсутствующий JWT-токен.        |
+| 413 | Payload Too Large (Слишком большой полезный груз) | Загруженный файл превышает лимит размера. |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера. |
+
+Для подробной устранения неполадок см. [Руководство по обработке ошибок](/ru/error-handling/).
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах вашего проекта. Ознакомьтесь с полным списком SDK Aspose.Cells Cloud в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как выполнять вызовы в веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,6 +141,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 {{< /tab >}}
 
 {{< /tabs >}}
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}

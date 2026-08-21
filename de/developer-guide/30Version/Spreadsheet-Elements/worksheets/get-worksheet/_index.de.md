@@ -1,21 +1,20 @@
-﻿---
-title: So erhalten Sie unterschiedliche Inhalte aus einem Excel-Arbeitsblatt
-second_title: Documen
-linktitle: Ge
-type: docs
-url: /de/worksheets/get/
-keywords: How to get different content from an Excel worksheet
-description: Aspose.Cells Cloud REST API unterstützt das Abrufen unterschiedlicher Inhalte aus einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, So erhalten Sie unterschiedliche Inhalte aus einem Excel-Arbeitsblatt
 ---
-## Arbeiten mit dem Erhalt eines Arbeitsblatts Excel.
+title: "So erhalten Sie verschiedene Inhalte aus einer Excel-Arbeitsmappe"
+second_title: "Dokument"
+linktype: "Holen"
+type: docs
+url: /worksheets/get/
+keywords: "Excel, Arbeitsmappe, Aspose.Cells Cloud, REST API, Inhaltsextraktion, Formatumwandlung"
+description: "Erfahren Sie, wie Sie verschiedene Arten von Inhalten aus einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API abrufen können. Die Anleitung deckt unterstützte Formate ab und enthält Links zu verwandten Vorgängen."
+weight: 20
+---
 
-- [So erhalten Sie ein Excel-Arbeitsblatt mit verschiedenen Formaten.](/cells/de/worksheets/get-worksheet/) 
-    - [So konvertieren Sie das Arbeitsblatt Excel in ein Bild.](/cells/de/worksheets/to-image/)
-- [So erhalten Sie einen Arbeitsblattbereich Excel mit verschiedenen Formaten.](/cells/de/worksheets/area-to-different-formats/)
-- [So erhalten Sie eine Excel-Arbeitsblattseite mit verschiedenen Formaten.](/cells/de/get-worksheet-for-page-index/) 
-- [So ermitteln Sie die Seitenzahl eines Excel-Arbeitsblatts.](/cells/de/worksheets/page-count/) 
-- [So erhalten Sie die Beschreibung der Arbeitsblätter Excel.](/cells/de/worksheets/get-all/) 
+## Arbeiten mit dem Abrufen einer Excel-Arbeitsmappe
 
-
+- [So erhalten Sie eine Excel-Arbeitsmappe in verschiedenen Formaten](/cells/worksheets/get-worksheet/)  
+- [So wandeln Sie eine Excel-Arbeitsmappe in ein Bild um](/cells/worksheets/to-image/)  
+- [So erhalten Sie einen Bereich einer Excel-Arbeitsmappe in verschiedenen Formaten](/cells/worksheets/area-to-different-formats/)  
+- [So erhalten Sie eine Seite einer Excel-Arbeitsmappe in verschiedenen Formaten](/cells/get-worksheet-for-page-index/)  
+- [So ermitteln Sie die Seitenzahl einer Excel-Arbeitsmappe](/cells/worksheets/page-count/)  
+- [So rufen Sie Beschreibungen von Excel-Arbeitsmappen ab](/cells/worksheets/get-all/)  
+---

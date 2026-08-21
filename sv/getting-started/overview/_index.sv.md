@@ -1,26 +1,34 @@
-﻿---
-title: Aspose.Cells Molnöversikt
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud Overview: a REST-first, language-neutral API service that turns Excel operations into simple HTTPS calls—no local Office install, no platform"
-linktitle: Översikt
-type: docs
-url: /sv/overview/
-description: Aspose.Cells Molnet stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, hantera interna objekt och så vidare.
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Översikt
 ---
- Aspose.Cells Cloud är ett REST-system API som underlättar en mängd olika dokumentbehandlingsuppgifter, som att skapa, manipulera, konvertera och rendera Excel dokument i molnet. Du kan enkelt konvertera[XLS](https://docs.fileformat.com/spreadsheet/xls/) och[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) filer till olika format som[PDF](https://docs.fileformat.com/view/pdf/), [HTML](https://docs.fileformat.com/web/html/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [CSV-fil](https://docs.fileformat.com/spreadsheet/csv/), och mer.
+title: "Aspose.Cells Cloud – översikt"
+second_title: "Dokument"
+ArticleTitle: "Aspose.Cells Cloud – översikt: en REST-först, språknutral API-tjänst som gör Excel-åtgärder till enkla HTTPS-anrop – ingen lokal Office-installation krävs, ingen plattformsberoende."
+linktitle: "Översikt"
+type: docs
+url: /overview/
+description: "Utforska Aspose.Cells Cloud – en REST-först API som låter dig skapa, manipulera, konvertera, dela upp, skydda och rendera Excel-filer (XLS/XLSX) till PDF, HTML, ODS, XPS, CSV och mer.Gratis provperiod finns tillgänglig."
+keywords: "Aspose Cells, moln-API, Excel-konvertering, PDF, HTML, ODS, XPS, CSV, kalkylark-SDK"
+weight: 10
+---
+
+Aspose.Cells Cloud är ett REST-API som möjliggör ett brett utbud av dokumentbearbetningsuppgifter, såsom att skapa, manipulera, konvertera och rendera Excel-dokument i molnet. Du kan enkelt konvertera Excel-filer till olika format, inklusive:
+
+- PDF  
+- HTML  
+- ODS  
+- XPS  
+- CSV  
+- och andra vanliga format  
+
+**Förutsättningar:** För att använda tjänsten behöver du ett Aspose Cloud-konto och en giltig API-nyckel. Dessa autentiseringsuppgifter krävs för alla autentiserade förfrågningar.
 
 ## **SDK:er**
 
- Att använda ett SDK (API-klient) påskyndar utvecklingen genom att hantera detaljer på låg nivå för att göra förfrågningar och hantera svar, vilket gör att utvecklare kan fokusera på projektspecifik kod. Utforska vår[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en omfattande lista över Aspose.Cells SDK:er, komplett med fungerande exempel för att påskynda din projektutveckling. Se vår "[Tillgängliga SDK:er](/cells/sv/available-sdks/) "artikel för att lära dig hur du integrerar ett SDK i ditt projekt.
+Att använda en SDK (API-klient) påskyndar utvecklingen genom att hantera detaljer på låg nivå vid förfrågningar och hantering av svar, så att utvecklare kan fokusera på projekt-specifik kod. Utforska vårt <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub-arkiv</a> för en komplett lista över Aspose.Cells SDK:er, inklusive fungerande exempel för att snabbare påbörja din projektutveckling. Se vår artikel "[Tillgängliga SDK:er](/cells/available-sdks/)" för att lära dig hur du integrerar en SDK i ditt projekt.
 
-## **API Utforskare**
+## **API Explorer**
 
- De[Aspose.Cells Moln API Referens](https://apireference.aspose.cloud/cells/) ger ett användarvänligt sätt att experimentera med våra API:er direkt i din webbläsare! Det möjliggör sömlös interaktion och testning av varje operation som exponeras av våra API:er.
+<a href="https://apireference.aspose.cloud/cells/" rel="noopener noreferrer">Aspose.Cells Cloud API-referens</a> erbjuder ett användarvänligt sätt att testa API:erna direkt i din webbläsare. Den möjliggör sömlös interaktion och testning av alla operationer som tjänsten tillhandahåller. För en snabb start kan du prova exemplet "Konvertera kalkylblad", som visar ett enkelt POST-anrop för att konvertera en Excel-fil till PDF.
 
-## **Säkerhet och autentisering**
+### **Säkerhet och autentisering**
 
-Aspose.Cells för moln-API:er prioriterar säkerhet och kräver autentisering för åtkomst.
-
-För detaljerad information om autentisering av förfrågningar, se "[Autentisering av API-förfrågningssidan](/total/getting-started/rest-api-overview/authenticating-api-requests/)"sida
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.

@@ -1,75 +1,127 @@
-﻿---
-title: نسخ النطاق في ورقة عمل باستخدام خيار اللصق
-second_title: Documen
-linktitle: شرطي
-type: docs
-url: /ar/ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
-keywords: Copy a range in an Excel worksheet with paste options
-description: يدعم Cloud REST نسخ نطاق في ورقة عمل مع خيارات لصق. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، نسخ النطاق في ورقة عمل مع خيارات اللصق
 ---
-يشير هذا REST API إلى نسخ النطاق في ورقة العمل على ورقة العمل Excel.
+title: "نسخ نطاق في ورقة عمل مع خيارات اللصق"
+second_title: "مستند"
+linktitle: "نسخ"
+type: docs
+url: /ranges/copy/
+aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+keywords: "Aspose.Cells Cloud، واجهة برمجة تطبيقات REST، Excel، نسخ نطاق، ورقة عمل، خيارات اللصق"
+description: "استخدم واجهة برمجة تطبيقات Aspose.Cells Cloud REST لنسخ نطاق داخل ورقة عمل Excel مع دعم كامل لخيارات اللصق. يشمل أمثلة SDK لعدة لغات برمجة."
+weight: 20
+ArticleTitle: "نسخ نطاق في ورقة عمل مع خيارات اللصق – Aspose.Cells Cloud API"
+---
 
-## RSET API
+تقوم هذه واجهة برمجة تطبيقات REST بنسخ نطاق في ورقة عمل من ملف عمل Excel. وللحصول على العمليات ذات الصلة، راجع وثائق **الحصول على النطاق** و**تحديث النطاق**.
+
+**المتطلبات المسبقة:** لاستخدام هذه النقطة النهائية، يجب أن يكون لديك رمز OAuth 2.0 / JWT صالح، وأن تضمن توافق إصدار واجهة برمجة التطبيقات مع عنوان URL للطلب.
+
+## واجهة برمجة تطبيقات REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 ```
 
-معلمات الطلب هي:
+### **مُعاملات الطلب**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل|
-| نطاق التشغيل|| جسم| نسخ البيانات، نسخ النمط، نسخ إلى، قيمة النسخ|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المُعامل | النوع | الموقع | الوصف |
+| ------------ | ------ | -------- | ---------------------------------------------------------------------------- |
+| name | string | path | اسم ملف العمل. |
+| sheetName | string | path | اسم ورقة العمل. |
+| rangeOperate | string | body | العملية المراد تنفيذها: `copydata`، `copystyle`، `copyto`، أو `copyvalue`. |
+| folder | string | query | المجلد الذي يحتوي على ملف العمل. |
+| storageName | string | query | اسم خدمة التخزين. |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangesCopy) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+**ملاحظات:** يحدد الحقل `rangeOperate` ما سيتم نسخه. استخدم `copydata` لنسخ قيم الخلايا فقط، و`copystyle` للتنسيق، و`copyto` لكل من البيانات والتنسيق، و`copyvalue` لنسخ القيم دون الصيغ. تدعم واجهة برمجة التطبيقات النطاقات التي تصل إلى مليون خلية؛ وقد تؤدي النطاقات الأكبر إلى حدوث انتهاء للمهلة الزمنية.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangesCopy) واجهة برمجة تطبيقات قابلة للوصول العام، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إجراء المكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/ranges" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"Operate\": \"string\", \"Source\": { \"ColumnCount\": 0, \"ColumnWidth\": 0, \"FirstColumn\": 0, \"FirstRow\": 0, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 0, \"RowHeight\": 0, \"Worksheet\": \"string\" }, \"Target\": { \"ColumnCount\": 0, \"ColumnWidth\": 0, \"FirstColumn\": 0, \"FirstRow\": 0, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 0, \"RowHeight\": 0, \"Worksheet\": \"string\" }, \"PasteOptions\": { \"OnlyVisibleCells\": true, \"PasteType\": \"string\", \"SkipBlanks\": true, \"Transpose\": true }}"
-
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "Operate": "string",
+        "Source": {
+          "ColumnCount": 0,
+          "ColumnWidth": 0,
+          "FirstColumn": 0,
+          "FirstRow": 0,
+          "Name": "string",
+          "RefersTo": "string",
+          "RowCount": 0,
+          "RowHeight": 0,
+          "Worksheet": "string"
+        },
+        "Target": {
+          "ColumnCount": 0,
+          "ColumnWidth": 0,
+          "FirstColumn": 0,
+          "FirstRow": 0,
+          "Name": "string",
+          "RefersTo": "string",
+          "RowCount": 0,
+          "RowHeight": 0,
+          "Worksheet": "string"
+        },
+        "PasteOptions": {
+          "OnlyVisibleCells": true,
+          "PasteType": "string",
+          "SkipBlanks": true,
+          "Transpose": true
+        }
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+تعيد الاستجابة الناجحة حالة `200 OK`. وفي حالة حدوث خطأ، قد تُعيد واجهة برمجة التطبيقات أحمال مثل:
+
+```json
+{
+  "Code": 400,
+  "Message": "Bad Request – مُعلمات غير صالحة."
+}
+```
+
+أو
+
+```json
+{
+  "Code": 401,
+  "Message": "Unauthorized – رمز المصادقة مفقود أو غير صالح."
+}
+```
+
+تتضمن كائنات الخطأ هذه رمز حالة HTTP ورسالة وصفية تساعد في تشخيص المشكلات.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+يمكنك تنزيل ملف عمل تجريبي لاختبار عملية النسخ من [هنا](https://example.com/sample.xlsx).
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. فتتولى حزم SDK تفاصيل المستوى المنخفض، مما يمكّنك من التركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم SDK الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام حزم SDK المختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

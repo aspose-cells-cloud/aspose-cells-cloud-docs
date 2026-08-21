@@ -1,148 +1,103 @@
-﻿---
-title: احصل على جميع الأشكال في ورقة عمل Excel
-second_title: Documen
-linktitle: جيت-ال
-type: docs
-url: /ar/shapes/get-all/
-aliases: [/get-all-shapes-inside-the-worksheet/]
-keywords: Get all shapes on an Excel workshee
-description: يدعم Cloud REST Aspose.Cells الحصول على جميع الأشكال في ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 10
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على جميع الأشكال على ورقة عمل Excel
 ---
-يشير هذا REST API إلى الحصول على أشكال ورقة العمل
+title: "الحصول على جميع الأشكال الموجودة في ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "get-all"
+type: docs
+url: /shapes/get-all/
+aliases: [/get-all-shapes-inside-the-worksheet/]
+keywords: "Aspose.Cells، واجهة برمجة التطبيقات السحابية، أشكال Excel، الحصول على الأشكال، REST، SDK"
+description: "استرجاع جميع الأشكال (المخططات والصور ومربعات النص) من ورقة عمل باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن مثالًا باستخدام cURL، وأجزاء كود من SDK، وخطوات المصادقة، ومعالجة الأخطاء."
+ArticleTitle: "الحصول على جميع الأشكال الموجودة في ورقة عمل Excel"
+weight: 10
+---
 
-## RSET API
+تتيح هذه واجهة برمجة التطبيقات (REST API) استرجاع جميع الأشكال الموجودة في ورقة عمل Excel.
+
+## الأمان والمصادقة
+تُعد واجهات برمجة التطبيقات السحابية لـ Aspose.Cells آمنة وتتطلب [المصادقة باستخدام رمز مميز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## واجهة برمجة التطبيقات (REST API)
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
-معلمات الطلب هي:
+### معاملات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المستند.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعامل | النوع | الموقع | الوصف |
+| --- | --- | --- | --- |
+| **name** | نص (string) | مسار (path) | اسم ملف Excel. |
+| **sheetName** | نص (string) | مسار (path) | اسم ورقة العمل. |
+| **folder** | نص (string) | استعلام (query) | المجلد الذي يحتوي على المستند. |
+| **storageName** | نص (string) | استعلام (query) | اسم خدمة التخزين المراد استخدامها. |
+| **include** | نص (string) | استعلام (query) | ضع القيمة `details` لاسترجاع خصائص الشكل الكاملة؛ وإلا سيتم استرجاع كائنات `link` فقط. |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShapes) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+> **اختياري**: يمكن تجاهل `folder` و`storageName` و`include` عندما يكون الملف موجودًا في المجلد الجذر للتخزين.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات ويب Aspose.Cells. يوضح المثال التالي طلبًا يتضمن معاملات الاستعلام الاختيارية.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes?folder=Samples&storageName=MyStorage" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 {
-
-  "Shapes" : {
-
-    "ShapeList" : [
-
+  "Shapes": {
+    "ShapeList": [
       {
-
-        "link" : {
-
-          "Href" : "/0",
-
-          "Rel" : "self",
-
-          "Type" : null,
-
-          "Title" : null
-
+        "link": {
+          "Href": "/0",
+          "Rel": "self",
+          "Type": null,
+          "Title": null
         }
-
       },
-
       {
-
-        "link" : {
-
-          "Href" : "/1",
-
-          "Rel" : "self",
-
-          "Type" : null,
-
-          "Title" : null
-
+        "link": {
+          "Href": "/1",
+          "Rel": "self",
+          "Type": null,
+          "Title": null
         }
-
       },
-
       {
-
-        "link" : {
-
-          "Href" : "/2",
-
-          "Rel" : "self",
-
-          "Type" : null,
-
-          "Title" : null
-
+        "link": {
+          "Href": "/2",
+          "Rel": "self",
+          "Type": null,
+          "Title": null
         }
-
       },
-
       {
-
-        "link" : {
-
-          "Href" : "/3",
-
-          "Rel" : "self",
-
-          "Type" : null,
-
-          "Title" : null
-
+        "link": {
+          "Href": "/3",
+          "Rel": "self",
+          "Type": null,
+          "Title": null
         }
-
       }
-
     ],
-
-    "link" : {
-
-      "Href" : "http://api.aspose.com/v1.1/cells/sampleShapes.xlsx/worksheets/Sheet1/shapes",
-
-      "Rel" : "self",
-
-      "Type" : null,
-
-      "Title" : null
-
+    "link": {
+      "Href": "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes",
+      "Rel": "self",
+      "Type": null,
+      "Title": null
     }
-
   },
-
-  "Code" : 200,
-
-  "Status" : "OK"
-
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
@@ -150,11 +105,38 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 
 {{< /tabs >}}
 
+### حقول الاستجابة
+
+يحتوي كائن `Shapes` على قائمة من عناصر `Shape`. يشمل كل شكل الخصائص التالية (عند استخدام علامة `include=details`؛ وإلا سيتم استرجاع كائن `link` فقط).
+
+| الخاصية | النوع | الوصف |
+| --- | --- | --- |
+| **Name** | نص (string) | الاسم المُسنَد إلى الشكل (مثل "Chart 1"). |
+| **Type** | نص (string) | نوع الشكل (مثل `Chart` أو `Picture` أو `TextBox`). |
+| **Top** | رقم (number) | المسافة (بالنقاط) من الحافة العلوية لورقة العمل إلى الشكل. |
+| **Left** | رقم (number) | المسافة (بالنقاط) من الحافة اليسرى لورقة العمل إلى الشكل. |
+| **Width** | رقم (number) | عرض الشكل بالنقاط. |
+| **Height** | رقم (number) | ارتفاع الشكل بالنقاط. |
+| **Link** | كائن (object) | معلومات الارتباط التشعبي (`Href` و`Rel` و`Type` و`Title`). |
+
+## معالجة الأخطاء
+
+| حالة HTTP | الوصف | جسم الخطأ النموذجي |
+| --- | --- | --- |
+| **400** | طلب غير صالح – معاملات غير صحيحة. | `{ "Code": 400, "Message": "Invalid parameter value." }` |
+| **401** | غير مُصادَق – رمز مميز مفقود أو غير صالح. | `{ "Code": 401, "Message": "Access token is missing or invalid." }` |
+| **404** | غير موجود – المصنف أو ورقة العمل غير موجودين. | `{ "Code": 404, "Message": "File or worksheet not found." }` |
+| **500** | خطأ داخلي في الخادم – حالة غير متوقعة. | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+
+يعيد الطلب الناجح **HTTP 200** مع كائن `Shapes` يحتوي على قائمة الأشكال، كما هو موضح في مثال الاستجابة أعلاه.
+
+تفرض واجهة برمجة التطبيقات حدًا قدره **150 طلبًا في الدقيقة لكل رمز مميز JWT**. وعند تجاوز هذا الحد، تُعاد استجابة **HTTP 429** مع رأس `Retry-After` يُحدِّد متى يجب إعادة المحاولة.
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. فتتولى SDK معالجة التفاصيل منخفضة المستوى وتركز أنت على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية إجراء مكالمات إلى خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

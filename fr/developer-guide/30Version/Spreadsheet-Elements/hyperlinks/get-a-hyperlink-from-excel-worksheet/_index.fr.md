@@ -1,98 +1,87 @@
-﻿---
-title: Gé
-type: docs
-url: /fr/hyperlinks/get/
-keywords: Delete a hyperlink from an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge la suppression des hyperliens d'une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir
 ---
-Ce REST API indique `get worksheet hyperlink` par index sur une feuille de calcul Excel.
+title: "Obtenir le lien hypertexte de la feuille de calcul"
+type: docs
+url: /hyperlinks/get/
+keywords: "Aspose.Cells Cloud, Obtenir le lien hypertexte de la feuille de calcul, API Excel hyperlink, REST, authentification JWT, feuille de calcul Excel, point de terminaison API"
+description: "Récupérer un lien hypertexte spécifique à partir d'une feuille de calcul Excel à l'aide de l'API Aspose.Cells Cloud (v3.0). Inclut le point de terminaison, les paramètres, un exemple cURL, les détails d'authentification, la gestion des erreurs et des extraits de SDK."
+weight: 10
+ArticleTitle: "Aspose.Cells Cloud API – Obtenir le lien hypertexte de la feuille de calcul"
+---
 
-## RSET API
+Cette API REST permet de récupérer un **lien hypertexte** de feuille de calcul à l'aide de l'**API Aspose.Cells Get Hyperlink**.
+
+## Sécurité et authentification
+
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une [authentification basée sur un jeton JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).  
+Avant d’appeler le point de terminaison, obtenez un jeton d’accès JWT à l’aide de votre identifiant client et de votre secret, puis incluez-le dans l’en-tête `Authorization: Bearer <jeton JWT>`.
+
+## API REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
 ```
 
-Les paramètres de la requête sont :
+### Paramètres de la requête
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
-| hyperlienIndex| entier| chemin| L'index de l'hyperlien.|
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type    | Emplacement | Description                                          |
+| ---------------- | ------- | ----------- | ---------------------------------------------------- |
+| name             | string  | path        | Le nom du fichier Excel.                            |
+| sheetName        | string  | path        | Le nom de la feuille de calcul contenant le lien.   |
+| hyperlinkIndex   | integer | path        | Index de base zéro du lien hypertexte à récupérer.   |
+| folder           | string  | query       | Le dossier dans lequel le document est stocké.      |
+| storageName      | string  | query       | Le nom du service de stockage.                      |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/GetWorksheetHyperlink) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Réponses d’erreur
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Code HTTP | Raison                                                     | Corps d’exemple                                                              |
+| --------- | ---------------------------------------------------------- | --------------------------------------------------------------------------- |
+| **400**   | Mauvaise requête – paramètres manquants ou non valides.    | `{ "Code":"400", "Message":"Valeur de paramètre non valide." }`             |
+| **401**   | Non autorisé – jeton JWT manquant ou non valide.           | `{ "Code":"401", "Message":"Le jeton d’accès est manquant ou non valide." }` |
+| **404**   | Non trouvé – classeur ou feuille de calcul inexistants.    | `{ "Code":"404", "Message":"Fichier introuvable." }`                        |
+| **500**   | Erreur interne du serveur – défaillance inattendue du serveur. | `{ "Code":"500", "Message":"Une erreur inattendue s’est produite." }`       |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Hyperlinks/GetWorksheetHyperlink) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer un appel à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl  -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton JWT>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-{
-
   "Hyperlink": {
-
     "Address": "https://docs.aspose.cloud/display/cellscloud/Get+Hyperlink+from+Excel+Worksheet",
-
     "Area": {
-
       "EndColumn": 0,
-
       "EndRow": 1,
-
       "StartColumn": 0,
-
       "StartRow": 1
-
     },
-
     "ScreenTip": null,
-
     "TextToDisplay": "https://docs.aspose.cloud/display/cellscloud/Get+Hyperlink+from+Excel+Worksheet",
-
     "link": {
-
       "Href": "/test.xlsx/worksheets/Sheet1/hyperlinks/1",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-  
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -101,9 +90,9 @@ curl  -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperl
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le moyen le plus efficace d’accélérer le développement. Un SDK gère les détails de bas niveau, vous permettant de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

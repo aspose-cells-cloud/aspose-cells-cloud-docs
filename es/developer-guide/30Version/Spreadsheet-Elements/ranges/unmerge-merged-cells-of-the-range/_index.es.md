@@ -1,74 +1,80 @@
-﻿---
-title: Descomprimir celdas fusionadas del rango
-second_title: Documen
-linktitle: Desvincular
-type: docs
-url: /es/ranges/unmerge/
-aliases: [/unmerge-merged-cells-of-the-range/]
-keywords: Unmerge merged cells of the range on an Excel worksheet
-description: Aspose.Cells Cloud REST API permite separar celdas fusionadas del rango en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Separar celdas fusionadas del rango
 ---
-Este REST API indica que se deben descomponer las celdas combinadas de este rango en una hoja de cálculo Excel.
+title: "Descombinar celdas en un rango"  
+second_title: "Documentación"  
+linktitle: "Descombinar"  
+type: docs  
+url: /ranges/unmerge/  
+aliases: [/unmerge-merged-cells-of-the-range/]  
+keywords: "Aspose.Cells Cloud, descombinar celdas, API de Excel, rango de hoja de cálculo, API REST"  
+description: "Aprenda a utilizar la API de Aspose.Cells Cloud para descombinar celdas combinadas en un rango específico de una hoja de cálculo de Excel. Incluye el punto de conexión, parámetros, ejemplo de cURL y fragmentos de código SDK para C#, Java, Python y más."  
+weight: 20  
+---  
 
-## RSET API
+Esta API REST descombinará celdas combinadas dentro de un rango especificado en una hoja de cálculo de Excel.
+
+## API REST  
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unmerge
- 
-```
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unmerge
+```  
 
 Los parámetros de la solicitud son:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| nombre del libro de trabajo|
-| nombreHoja| cadena| camino| nombre de la hoja de trabajo|
-| rango|| cuerpo| rango en la hoja de cálculo|
-| carpeta| cadena| consulta| Carpeta de libro de trabajo.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo   | Ubicación | Obligatorio | Descripción                                   |
+|----------------------|--------|-----------|-------------|-----------------------------------------------|
+| name                 | string | path      | Sí          | Nombre del libro.                             |
+| sheetName            | string | path      | Sí          | Nombre de la hoja de cálculo.                 |
+| range                | object | body      | Sí          | Objeto de rango que define las celdas a descombinar. |
+| folder               | string | query     | No          | Carpeta que contiene el libro.                |
+| storageName          | string | query     | No          | Nombre del almacenamiento.                    |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnmerge) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnmerge) define una interfaz de programación accesible públicamente y permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube mediante cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/unmerge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}" 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+    "ColumnCount": 7,
+    "ColumnWidth": 19,
+    "FirstColumn": 0,
+    "FirstRow": 9,
+    "Name": "string",
+    "RefersTo": "string",
+    "RowCount": 1,
+    "RowHeight": 15,
+    "Worksheet": "Sheet1"
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Familia de SDK en la nube
+## Familia de SDK en la nube  
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor manera de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel, permitiéndole centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells mediante varios SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

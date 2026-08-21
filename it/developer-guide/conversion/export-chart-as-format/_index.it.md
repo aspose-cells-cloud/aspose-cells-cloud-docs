@@ -1,100 +1,104 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Esporta un grafico di foglio di calcolo come file di formato
-second_title: Documen
-ArticleTitle: Export a Spreadsheet Chart as a Format fil
-linktitle: Esporta grafico come formato
-type: docs
-url: /it/export-chart-as-format/
-keywords: Export Chart, Aspose.Cells Cloud Web API, Spreadsheet Conversion, PDF Export, Image Export, REST, Excel, CSV, JSO
-description: Converte in modo efficiente i grafici dai fogli di calcolo archiviati nel cloud in formati specifici come PDF o immagine direttamente senza scaricarli
-weight: 100
-kwords: Esporta grafico, REST, conversione foglio di calcolo, PDF, CSV, JSON, Markdown, Excel, formato immagine
 ---
-Esporta un grafico/foglio di calcolo cloud Excel in un altro file di formato con Aspose.Cells Cloud Web API.
+title: "Esporta grafico Excel – API di Aspose.Cells Cloud"
+second_title: "Documento"
+description: "Converti un grafico da un foglio di calcolo Excel archiviato nel cloud in PDF, PNG, SVG o altri formati con una singola chiamata REST."
+ArticleTitle: "Come convertire un foglio di lavoro di un foglio di calcolo locale in un file PDF: Guida passo-passo"
+linktitle: "Converti foglio di lavoro in PDF"
+type: docs
+url: /export-chart-as-format/
+keywords: "Aspose.Cells Cloud, esporta grafico, API, PDF, PNG, SVG, Excel, REST, conversione cloud"
+weight: 100
+---
 
-## **Esporta grafico come formato API**
+Converti un grafico presente in un foglio di calcolo archiviato in Aspose Cloud Storage in un formato file diverso (PDF, PNG, SVG, …) senza scaricare il file sorgente.
+
+## API ExportChartAsFormat
 
 ```http
-GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
+GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
 ```
 
-### **Parametri di richiesta:**
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP| Descrizione|
-|:- |:- |:- |:- |
-| nome| Corda| Sentiero| (Obbligatorio) Il nome del file della cartella di lavoro da recuperare.|
-| foglio di lavoro| Corda| Sentiero| Nome del foglio di lavoro|
-| graficoIndice| Intero| Sentiero| Indice del grafico|
-| formato| Corda| Domanda| (Obbligatorio) Il formato di output desiderato (ad esempio, "png", "pdf", "svg").|
-| cartella| Corda| Domanda| (Facoltativo) Percorso della cartella in cui è archiviata la cartella di lavoro; il valore predefinito è null.|
-| Nome di archiviazione| Corda| Domanda|(Facoltativo) Il nome dell'archiviazione se si utilizza un archivio cloud personalizzato; se omesso, utilizzare l'archiviazione predefinita.|
-| Percorso in uscita| Corda| Domanda| (Facoltativo) Percorso della cartella in cui è archiviata la cartella di lavoro; il valore predefinito è null.|
-|outStorageName| Corda| Domanda| Nome di archiviazione del file di output.|
-| fontPosizione| Corda| Domanda| Utilizza font personalizzati.|
-| regione| Corda| Domanda| Impostazione della regione del foglio di calcolo.|
-| password| Corda| Domanda| La password per aprire il file del foglio di calcolo.|
+Le API di Aspose.Cells Cloud sono sicure e richiedono l’<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
+
+### 📦 Parametri della richiesta
+
+| Nome               | Tipo    | Posizione | Obbligatorio | Descrizione                                                |
+| ------------------ | ------- | --------- | ------------ | ---------------------------------------------------------- |
+| **name**           | stringa | Percorso  | Sì           | Nome del file del foglio di calcolo.                       |
+| **worksheet**      | stringa | Percorso  | Sì           | Nome del foglio di lavoro contenente il grafico.           |
+| **chartIndex**     | intero  | Percorso  | Sì           | Indice in base zero del grafico da esportare.              |
+| **format**         | stringa | Query     | Sì           | Format di output desiderato (ad es. `png`, `pdf`, `svg`).  |
+| **folder**         | stringa | Query     | No           | Percorso della cartella in cui è archiviato il foglio di calcolo (impostazione predefinita: radice). |
+| **storageName**    | stringa | Query     | No           | Nome personalizzato dello storage; ometterlo per usare lo storage predefinito. |
+| **outPath**        | stringa | Query     | No           | Percorso della cartella in cui verrà salvato il file convertito. |
+| **outStorageName** | stringa | Query     | No           | Nome dello storage per il file di output.                  |
+| **fontsLocation**  | stringa | Query     | No           | Percorso di una cartella contenente caratteri personalizzati. |
+| **region**         | stringa | Query     | No           | Impostazione locale (ad es. `en-US`, `fr-FR`).             |
+| **password**       | stringa | Query     | No           | Password per aprire un foglio di calcolo protetto.         |
 
 ### **Risposta**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream",
+      "Name": "file"
     }
+  }
 ]
 ```
 
-### Codici di errore
+**Codici di stato HTTP**
 
-- **400 Richiesta non valida**: URI Apose.Cells Cloud API non valido.
-- **401 Non autorizzato**: Token di accesso non valido. Oppure ID client e segreto non validi.
-- **404 Non trovato**: Il file del foglio di calcolo non è accessibile.
-- **Errore del server 500**: Il foglio di calcolo ha riscontrato un'anomalia nell'ottenimento dei dati di calcolo.
+| Codice | Significato           | Descrizione                                                      |
+| ------ | --------------------- | ---------------------------------------------------------------- |
+| 200    | OK                    | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida  | Parametri mancanti o non validi (ad es. tipo di file non supportato). |
+| 401    | Non autorizzato       | Token JWT non valido o mancante.                                 |
+| 413    | Payload troppo grande | Il file caricato supera il limite di dimensione.                |
+| 500    | Errore interno del server | Errore imprevisto nel server.                                   |
 
-## Perché dovresti usare il grafico del foglio di calcolo di esportazione nel formato API?
+## Come usare l’API Esporta grafico in un formato con gli SDK?
 
-- Puoi convertire i file cloud in diversi formati sempre e ovunque.
-- Lo sviluppo può essere completato rapidamente tramite l'SDK esistente.
+### Specifica dell’API Esporta grafico in un formato
 
-## Come utilizzare il grafico del foglio di calcolo di esportazione nel formato API con gli SDK?
+La [Specifiche dell’API Esporta grafico in un formato](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportChartAsFormat) fornisce un'interfaccia di programmazione pubblicamente accessibile e consente interazioni REST direttamente da un browser web.
 
-### Esporta grafico come formato API Specifiche
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud con cURL.
 
- IL[Esporta grafico come formato API Specifiche](https://reference.aspose.cloud/cells/#/ConversionController/ExportChartAsFormat) definisce un'interfaccia di programmazione accessibile al pubblico, che consente di eseguire interazioni REST direttamente da un browser web.
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
-### Utilizzare gli SDK cloud Aspose.Cells
+{{< tab tabNum="11" >}}
 
-Utilizzare l'SDK è il modo più rapido per sviluppare, poiché astrae i dettagli di basso livello, consentendo di esportare i dati di un grafico di foglio di calcolo in un file di formato con codice breve.
- Si prega di controllare il[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}?format={format}" \
+  -H "Authorization: Bearer {access_token}"
+```
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ExportChartAsFormat.cs" >}}
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ExportChartAsFormat.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (codificato in Base64)",
+  "contentType": "tipo MIME",
+  "fileDownloadName": "nome file opzionale"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExportChartAsFormat.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ExportChartAsFormat.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ExportChartAsFormat.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ExportChartAsFormat.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ExportChartAsFormat.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportChartAsFormat.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### Utilizzare gli SDK di Aspose.Cells Cloud
+
+L'utilizzo di un SDK rappresenta il metodo più rapido per sviluppare, poiché nasconde i dettagli a basso livello, consentendoti di convertire i dati di una tabella di un foglio di calcolo in un file PDF con un codice minimo. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per l'elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:

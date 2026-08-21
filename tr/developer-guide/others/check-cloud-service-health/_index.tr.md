@@ -1,45 +1,78 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Bulut Hizmetinin Sağlığını Kontrol Edin
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Health Chec
-linktitle: Bulut Hizmetinin Sağlığını Kontrol Edin
-type: docs
-url: /tr/check-cloud-service-health/
-keywords: cloud service health, Aspose.Cells, API status check, service monitoring, Excel API, REST API, health metrics, system availabilit
-description: Aspose.Cells Bulut Hizmetinin sağlık durumunu gerçek zamanlı ölçümler ve operasyonel içgörülerle izleyin
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, sağlık durumu, hizmet kullanılabilirliği, performans ölçümü
 ---
-Aspose.Cells Bulut Hizmetleri Sağlık Durumunu Kontrol Edin.
+title: "Aspose.Cells Cloud – Hizmet Sağlığını Kontrol Et (API)"
+second_title: "Belge"
+ArticleTitle: "Aspose.Cells Cloud Sağlıktan Kontrolü"
+linktitle: "Bulut Hizmet Sağlığını Kontrol Et"
+type: docs
+url: /check-cloud-service-health/
+keywords: "Aspose.Cells Cloud, API sağlık kontrolü, REST durumu, bulut hizmeti izleme"
+description: "Aspose.Cells Cloud sağlığını gerçek zamanlı olarak izleyin. GET /v4.0/cells/status/check uç noktasını, parametrelerini, yanıt formatını ve SDK örneklerini öğrenin."
+weight: 100
+---
 
-### **Bulut Hizmetinin Sağlığını Kontrol Edin API**
+Aspose.Cells Cloud hizmetlerinin sağlığını kontrol edin.
 
+**Ön Gereksinimler**  
+Bu uç noktayı çağırmak için geçerli bir Aspose Cloud erişim belirteci (token) sahibi olmanız gerekir. Belirteci almak için Aspose Cloud Dashboard’da bir uygulama kaydedin ve istemci kimliği (client-id) ile istemci sırrı (client-secret) kullanarak OAuth2 belirteç uç noktasından Bearer belirteci isteyin. Belirteci aşağıdaki gibi `Authorization` başlığına ekleyin.
+
+## **Bulut Hizmet Sağlığını Kontrol Et**
+
+### **Web API**
+
+```http
+GET https://api.aspose.cloud/v4.0/cells/status/check
 ```
-GET http://api.aspose.cloud/v4.0/cells/status/check
-```
 
-### **İstek Parametreleri:**
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTP Gövdesi| Tanım|
-|:- |:- |:- |:- |
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulamayı</a> gerektirir.
 
-### **Cevap**
+### **İstek Parametreleri**
+
+| Parametre     | Tür     | Gerekli | Açıklama                                                       |
+| ------------- | ------- | ------- | -------------------------------------------------------------- |
+| Authorization | başlık  | Evet    | Kimlik doğrulama için Bearer belirteci (`Authorization: Bearer <token>`). |
+| detail        | sorgu   | Hayır   | Ayrıntılı bileşen bilgilerini dahil etmek için `true` olarak ayarlayın. |
+| Accept        | başlık  | Hayır   | İstenen yanıt formatı; varsayılan değer `application/json`.   |
+
+### **Yanıt**
+
+Hizmet, istek başarıyla tamamlandığında bir JSON yükü döndürür.
 
 ```json
 {
-String
+  "status": "OK",
+  "service": "Cells",
+  "timestamp": "{{timestamp}}",
+  "components": {
+    "api": "İşletimde",
+    "storage": "İşletimde",
+    "database": "İşletimde"
+  }
 }
 ```
 
-## Aspose.Cells Cloud Status API'in SDK'larla Nasıl Kullanılacağı
+**HTTP durum kodları**
+
+| Kod | Anlamı              | Açıklama                                                  |
+| --- | ------------------- | --------------------------------------------------------- |
+| 200 | OK (Tamam)          | Hizmet sağlıklı; yukarıdaki JSON örneğine bakın.           |
+| 401 | Yetkisiz            | Geçersiz veya eksik kimlik doğrulama belirteci.            |
+| 503 | Hizmet Kullanılamıyor | Hizmet şu anda sağlıklı değil veya bakım altında.          |
+| 4xx | İstemci hatası      | Yanlış istek parametreleri veya bozuk istek.               |
+| 5xx | Sunucu hatası       | Beklenmeyen sunucu hatası; daha sonra yeniden deneyin.     |
+
+## Aspose.Cells Cloud Durum API’sini SDK’larla Nasıl Kullanılır
 
 ### OpenAPI Spesifikasyonu
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/CellsStatusController/CheckCloudServiceHealth) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+<a href="https://reference.aspose.cloud/cells/#/CellsStatusController/CheckCloudServiceHealth" target="_blank" rel="noopener noreferrer">OpenAPI Spesifikasyonu</a>, herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
-### Aspose.Cells Bulut SDK'larını kullanın
+### Aspose.Cells Cloud SDK’larını Kullanın
 
-SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. SDK, temel ayrıntıları ele alarak, hücreler için bulut sağlık kontrolünü minimum kodla kolayca uygulamanıza olanak tanır.
- Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmak için en iyi yoldur. SDK, temel alınan ayrıntıları yöneterek Cells için minimum kodla bir bulut sağlığı kontrolü uygulamanızı sağlar.  
+Aspose.Cells Cloud SDK’larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub deposuna</a> göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıda, en yaygın SDK’larla sağlıktan kontrol uç noktasını nasıl çağıracağınızla ilgili örnek kod parçacıkları verilmiştir.
+
+---

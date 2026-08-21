@@ -1,78 +1,76 @@
-﻿---
-title: 在 Excel 工作表上自动调整多列
-second_title: Documen
-linktitle: 柱子
+---
+title: "在 Excel 工作表中自动调整多列列宽"
+second_title: "文档"
+linktitle: "列"
 type: docs
 url: /zh/worksheets/autofit/columns/
 aliases: [/autofit-multiple-columns-of-worksheet/]
-keywords: Autofit columns on an Excel workboo
-description: Aspose.Cells Cloud REST API 支持在 Excel 工作簿上自动调整列。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+keywords: "Aspose.Cells, 自动调整列宽, Excel API, 云电子表格, REST"
+description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）在 Excel 工作表中自动调整多列列宽。内容包括端点、参数、cURL 示例、错误处理以及 C#、Java、Python 等语言的 SDK 代码片段。"
 weight: 20
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 工作表上自动调整多列
 ---
-此 REST API 表示在 Excel 工作表上自动调整 `multiple columns`。
 
-## 重新设置 API
+此 REST API 可用于自动调整 Excel 工作表中的**多列**列宽。
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
 ```
 
-请求参数为：
+### **请求参数**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文件名。|
-|工作表名称|细绳|小路|工作表名称。|
-|第一列|整数|询问|起始列索引。|
-|最后一列|整数|询问|结束列索引。|
-|[自动装配选项](/cells/zh/auto-fitter-options/) ||身体|自动装配器选项。|
-|第一行|整数|询问||
-|最后一行|整数|询问||
-|文件夹|细绳|询问||
-|存储名称|细绳|询问|存储名称。|
+| 参数名称              | 类型    | 位置   | 描述                                                                                                                                   |
+| --------------------- | ------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| name                  | string  | path   | 文件名。                                                                                                                               |
+| sheetName             | string  | path   | 工作表名称。                                                                                                                           |
+| firstColumn           | integer | query  | 起始列索引。                                                                                                                           |
+| lastColumn            | integer | query  | 结束列索引。                                                                                                                           |
+| autoFitterOptions\*   | object  | body   | 自动调整选项（参见 [自动调整选项](/zh/cells/auto-fitter-options/)）。包含 `AutoFitMergedCells`（自动调整合并单元格）、`IgnoreHidden`（忽略隐藏行）和 `OnlyAuto`（仅自动调整）。 |
+| firstRow              | integer | query  | 自动调整的起始行索引（**可选**）。                                                                                                     |
+| lastRow               | integer | query  | 自动调整的结束行索引（**可选**）。                                                                                                     |
+| folder                | string  | query  | 存储中的文件夹路径（**可选**）。                                                                                                       |
+| storageName           | string  | query  | 存储名称（**可选**）。                                                                                                                 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+\* 参数名称显示为链接，指向相关文档。
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) 定义了一个公开可用的编程接口，可让您直接通过网页浏览器进行 REST 交互。
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?lastColumn=5&firstColumn=0" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"AutoFitMergedCells" : true, "IgnoreHidden" : true, "OnlyAuto" : true}' 
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?lastColumn=5&firstColumn=0" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"AutoFitMergedCells": true, "IgnoreHidden": true, "OnlyAuto": true}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+## 云 SDK 家族
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 会处理底层细节，使您能专注于项目任务。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

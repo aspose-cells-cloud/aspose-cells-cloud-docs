@@ -1,84 +1,116 @@
-﻿---
-title: إضافة مرشح التاريخ في ورقة عمل Excel
-second_title: Documen
-linktitle: إضافة فلتر التاريخ
+---
+title: "إضافة مرشح تواريخ إلى ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "إضافة مرشح تواريخ"
 type: docs
 url: /ar/autofilter/add-date-filter/
-aliases: [/add-date-filter-in-a-worksheet/,/autofilter/add-a-date-filter/]
-keywords: Adds a date filter on an Excel worksheet
-description: يدعم الإصدار Aspose.Cells Cloud API إضافة مرشح تاريخ إلى ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
+aliases:
+  - /ar/add-date-filter-in-a-worksheet/
+  - /ar/autofilter/add-a-date-filter/
+description: "تعرّف على كيفية إضافة مرشح تواريخ إلى ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API (النسخة 3.0). يتضمن مثالًا باستخدام cURL، ومقتطفات من أكواد SDK (C#، Java، Python، إلخ)، والمعلمات، وإدارة الأخطاء."
 weight: 65
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة مرشح التاريخ في ورقة عمل Excel
+ArticleTitle: "إضافة مرشح تواريخ إلى ورقة عمل Excel | واجهة Aspose.Cells Cloud API"
+keywords: "Aspose.Cells، مرشح تواريخ Excel، واجهة AutoFilter، واجهة REST API، SDK في السحابة، cURL، أتمتة جداول البيانات"
 ---
-يشير هذا REST API إلى إضافة `date filter` إلى ورقة عمل Excel.
 
-## RSET API
+تقوم هذه الواجهة REST بإضافة **مرشح تواريخ** إلى ورقة عمل Excel.
 
-```bash
+**المتطلبات المسبقة:** يجب أن يكون لديك رمز JWT صالح، وأن يكون الملف المطلوب موجودًا مسبقًا في موقع التخزين المحدّد. لا تتطلب الطلب إرسال جسم JSON.
 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
+## واجهة PutWorksheetDateFilter API
 
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-|يتراوح|خيط| استفسار||
-|فهرس الحقل|عدد صحيح| استفسار||
-|نوع المجموعة الزمنية والتاريخية|خيط| استفسار| اليوم/الساعة/الدقيقة/الشهر/الثانية/السنة|
-|سنة|عدد صحيح| استفسار||
-|شهر|عدد صحيح| استفسار||
-|يوم|عدد صحيح| استفسار||
-|ساعة|عدد صحيح| استفسار||
-|دقيقة|عدد صحيح| استفسار||
-|ثانية|عدد صحيح| استفسار||
-|مطابقة الفراغات|خيط| استفسار|صواب/خطأ|
-|ينعش|خيط| استفسار|صواب/خطأ|
-|مجلد|خيط| استفسار|مجلد المصنف الأصلي.|
-|اسم التخزين|خيط| استفسار|اسم التخزين.|
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">المصادقة باستخدام رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معلمات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+
+| اسم المعلمة             | النوع    | الموقع | الوصف                                                                                                                                                     |
+| ------------------------ | ------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**                 | string  | Path     | اسم ملف العمل.                                                                                                                                              |
+| **sheetName**            | string  | Path     | اسم ورقة العمل.                                                                                                                                             |
+| **range**                | string  | Query    | نطاق Excel الذي سيُطبّق عليه المرشح (مثل `A1:B1`).                                                                                                     |
+| **fieldIndex**           | integer | Query    | المؤشر الصفري-الأساسي للعمود المراد ترشيحه.                                                                                                                       |
+| **dateTimeGroupingType** | string  | Query    | نوع التجميع لمرشح التاريخ/الوقت. القيم المسموح بها هي `Day` و `Hour` و `Minute` و `Month` و `Second` و `Year`. القيم حساسة لحالة الأحرف؛ والقيمة الافتراضية هي `Day`. |
+| **year**                 | integer | Query    | مكوّن السنة في قيمة المرشح.                                                                                                                             |
+| **month**                | integer | Query    | مكوّن الشهر في قيمة المرشح.                                                                                                                            |
+| **day**                  | integer | Query    | مكوّن اليوم في قيمة المرشح.                                                                                                                              |
+| **hour**                 | integer | Query    | مكوّن الساعة في قيمة المرشح.                                                                                                                             |
+| **minute**               | integer | Query    | مكوّن الدقيقة في قيمة المرشح.                                                                                                                           |
+| **second**               | integer | Query    | مكوّن الثانية في قيمة المرشح.                                                                                                                           |
+| **matchBlanks**          | boolean | Query    | تضمين الخلايا الفارغة (`true` أو `false`).                                                                                                                        |
+| **refresh**              | boolean | Query    | تحديث المرشح بعد التطبيق (`true` أو `false`).                                                                                                          |
+| **folder**               | string  | Query    | مسار المجلد الذي يوجد فيه ملف العمل الأصلي.                                                                                                                           |
+| **storageName**          | string  | Query    | اسم خدمة التخزين.                                                                                                                                    |
+
+*لا يتطلب طلب PUT وجود جسم طلب؛ يتم تزويد جميع المعلمات عبر سلسلة الاستعلام.*
+
+### **الاستجابة**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**كود حالات HTTP**
+
+| الكود | المعنى                     | الوصف                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | ناجح                          | تم تطبيق المرشح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صحيح                 | معلمات ناقصة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401  | غير مصرّح به                | رمز JWT غير صالح أو مفقود. |
+| 413  | حجم الحمولة كبير جدًا           | حجم الملف المرفّع يتجاوز الحد المسموح به. |
+| 500  | خطأ داخلي في الخادم       | خطأ غير متوقع في الخادم. |
+## كيفية استخدام واجهة PutWorksheetDateFilter API باستخدام SDKs
+
+### مواصفات واجهة PutWorksheetDateFilter API
+
+
+تُعرّف <a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter" rel="noopener noreferrer">مواصفات OpenAPI</a> واجهة برمجة تطبيقات قابلة للوصول العام، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء الاتصال بواجهة Cloud API باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?range=A1:B1&fieldIndex=0&dateTimeGroupingType=Year&year=1920&refresh=true" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?range=A1:B1&fieldIndex=0&dateTimeGroupingType=Year&year=1920&refresh=true" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+### استخدام Aspose.Cells Cloud SDKs
+
+استخدام SDK هو أسرع طريقة للتطوير. تُHANDLE SDK التفاصيل منخفضة المستوى، مما يمكّنك من التركيز على مهام مشروعك. يُرجى زيارة <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للاطّلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -108,7 +140,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDateFilter.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDateFilter.ts" >}}
 
 {{< /tab >}}
 

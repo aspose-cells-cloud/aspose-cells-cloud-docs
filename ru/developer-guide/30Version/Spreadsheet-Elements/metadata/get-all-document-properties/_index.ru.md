@@ -1,470 +1,279 @@
-﻿---
-title: Получить все свойства документа
-second_title: Documen
-linktitle: Получить все
-type: docs
-url: /ru/document-properties/get-all/
-aliases: [/get-all-document-properties/]
-keywords: Get properties from excel files
-description: Aspose.Cells Cloud REST API поддерживает получение свойств из файлов Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 25
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получить все свойства документа
 ---
-Этот REST API указывает на необходимость чтения свойств документа.
+title: "Получить все свойства документа"
+second_title: "Документ"
+linktitle: "Получить все"
+type: docs
+url: /document-properties/get-all/
+aliases: [/get-all-document-properties/]
+keywords: "Получить все свойства документа, Aspose.Cells Cloud, свойства документов Excel, REST API, SDK, метаданные Excel"
+description: "Получение всех свойств документа из файла Excel с использованием REST API Aspose.Cells Cloud. Конечная точка работает со всеми поддерживаемыми SDK и языками программирования."
+ArticleTitle: "Получить все свойства документа – API Aspose.Cells Cloud"
+weight: 25
+---
 
-## РСЕT API
+Этот REST API считывает свойства документа.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
- 
+## API GetDocumentProperties
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### Параметры запроса
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра | Тип   | Расположение | Описание                    |
+|--------------|-------|-------------|-----------------------------|
+| name         | string | путь        | Имя файла Excel.            |
+| folder       | string | query       | Папка, содержащая файл.     |
+| storageName  | string | query       | Имя сервиса хранилища.      |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties) определяет общедоступное программное интерфейсное решение и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Для доступа к веб-сервисам Aspose.Cells можно использовать инструмент командной строки cURL. Пример ниже показывает, как вызвать облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "DocumentProperties": {
-
     "DocumentPropertyList": [
-
       {
-
         "Name": "Title",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Title",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Subject",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Subject",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Author",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Author",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Keywords",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Keywords",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Comments",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Comments",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "LastSavedBy",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/LastSavedBy",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "CreateTime",
-
         "Value": "6/5/2015 6:17:20 PM",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/CreateTime",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "LastSavedTime",
-
         "Value": "9/27/2019 9:09:43 PM",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/LastSavedTime",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Category",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Category",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "NameOfApplication",
-
         "Value": "Microsoft Excel",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/NameOfApplication",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Version",
-
         "Value": "16.0300",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Version",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Security",
-
         "Value": "0",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Security",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "ScaleCrop",
-
         "Value": "False",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/ScaleCrop",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Template",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Template",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Manager",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Manager",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Company",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Company",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "LinksUpToDate",
-
         "Value": "False",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/LinksUpToDate",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       }
-
     ],
-
     "link": {
-
       "Href": "/test.xlsx/documentproperties",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Коды HTTP-статусов**
+
+| Код | Значение                      | Описание                                                                 |
+|-----|-------------------------------|--------------------------------------------------------------------------|
+| 200 | OK (ОК)                       | Фильтр успешно применён; в ответе содержатся подробности операции.      |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизован)  | Недопустимый или отсутствующий JWT-токен.                               |
+| 413 | Payload Too Large (Слишком большой payload) | Загруженный файл превышает ограничение по размеру.                      |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                                          |
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали и позволяет сосредоточиться на задачах вашего проекта. Полный список облачных SDK Aspose.Cells Cloud представлен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,63 +1,124 @@
-﻿---
-title: Convertir un objet de liste en plage dans une feuille de calcul Excel
-second_title: Documen
-linktitle: Conversion
-type: docs
-url: /fr/list-objects/to-range/
-aliases: [/convert-list-object-or-table-to-range/,/tables/to-range/]
-keywords: Convert a list object(table) to range in an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge la conversion d'un objet liste (table) en plage dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 30
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Convertir un objet de liste en plage dans une feuille de calcul Excel
 ---
-Ce REST API indique `convert table or list object to range` dans une feuille de calcul Excel.
+title: "Convertir un objet liste en plage – Aspose.Cells Cloud API"
+ArticleTitle: "Convertir un objet liste en plage à l’aide de l’API Aspose.Cells Cloud"
+second_title: "Document"
+linktype: "Conversion"
+type: docs
+url: /list-objects/to-range/
+aliases:
+  - /convert-list-object-or-table-to-range/
+  - /tables/to-range/
+keywords: "API Aspose Cells, convertir un objet liste en plage, API REST Excel"
+description: "Découvrez comment convertir un ListObject (tableau) Excel en plage à l’aide de l’API REST Aspose.Cells Cloud. Inclut la syntaxe de la requête, les paramètres, un exemple cURL, le schéma de réponse, les détails d’authentification, les codes d’erreur et des exemples de SDK."
+weight: 30
+---
 
-## RSET API
+Cet API REST convertit un **ListObject (tableau)** en **plage** au sein d’une feuille de calcul Excel.
+
+**Prérequis :**  
+Avant d’appeler l’endpoint, assurez-vous que le classeur a été uploadé dans votre espace de stockage Aspose Cloud, que la feuille de calcul contient l’objet ListObject cible, et que vous utilisez un format de fichier pris en charge (par exemple, .xlsx, .xlsm).
+
+## API REST
+
+**Authentification**  
+Pour appeler cette opération, vous devez inclure un jeton JWT valide dans l’en-tête `Authorization`. Obtenez le jeton en envoyant une requête POST à l’endpoint OAuth 2.0 avec votre client ID et votre client secret. Le jeton doit inclure la portée `Cells.ReadWrite` et reste valable pendant la durée indiquée par le service de jetons.
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin||
-| nom de la feuille| chaîne| chemin||
-| index d'objets de liste| entier| chemin||
-| dossier| chaîne| requête||
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectConvertToRange) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Paramètres de la requête
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom                  | Type    | Emplacement | Obligatoire | Valeur par défaut | Description                                                 |
+| --------------------- | ------- | ----------- | ----------- | ---------------- | ------------------------------------------------------------ |
+| **name**             | string  | path        | Oui         | –                | Le nom du fichier Excel.                                    |
+| **sheetName**        | string  | path        | Oui         | –                | Le nom de la feuille de calcul contenant l’objet ListObject. |
+| **listObjectIndex**  | integer | path        | Oui         | –                | Index à base zéro de l’objet ListObject (tableau) à convertir. |
+| **folder**           | string  | query       | Non         | –                | Chemin du dossier dans lequel le fichier est stocké.        |
+| **storageName**      | string  | query       | Non         | –                | Nom du service de stockage.                                 |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+> **Remarque :** Cette opération ne fonctionne qu’avec les formats modernes d’Excel tels que **.xlsx** et **.xlsm**. L’objet ListObject ne doit pas être protégé. Pour plus d’informations sur les ListObjects, consultez la [vue d’ensemble des ListObjects](/list-objects/). Pour plus de détails sur la manipulation des plages, reportez-vous à la [documentation sur les plages](/ranges/).
+
+### Exemple cURL (requête)
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects/0/ConvertToRange" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <votre-jeton-jwt>"
 ```
 
 {{< /tab >}}
 
+#### Schéma de réponse
+
+L’API renvoie une réponse **200 OK** contenant les détails de la plage nouvellement créée.
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "RangeName": "A1:C10",
+  "Address": "Sheet1!A1:C10",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "RowCount": 10,
+  "ColumnCount": 3
+}
+```
+
+| Champ             | Type    | Description                                                |
+| ----------------- | ------- | ---------------------------------------------------------- |
+| **Code**          | integer | Code d’état similaire à HTTP (200 indique la réussite).    |
+| **Status**        | string  | Message d’état textuel.                                    |
+| **RangeName**     | string  | Nom attribué à la plage créée.                             |
+| **Address**       | string  | Adresse complète de la plage, incluant le nom de la feuille. |
+| **FirstRow**      | integer | Index à base zéro de la première ligne de la plage.        |
+| **FirstColumn**   | integer | Index à base zéro de la première colonne de la plage.      |
+| **RowCount**      | integer | Nombre de lignes dans la plage.                            |
+| **ColumnCount**   | integer | Nombre de colonnes dans la plage.                          |
+
+**Codes d’état HTTP**
+
+| Code | Signification               | Description                                                  |
+|------|-----------------------------|--------------------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant.                              |
+| 413  | Charge utile trop grande     | Le fichier uploadé dépasse la limite de taille.             |
+| 500  | Erreur interne du serveur   | Erreur serveur inattendue.                                   |
+
+**Schéma de réponse d’erreur (exemple) :**
+
+```json
+{
+  "Code": 400,
+  "Message": "listObjectIndex invalide. L'index doit être compris entre 0 et 5."
+}
+```
+
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK",
+  "RangeName": "A1:C10",
+  "Address": "Sheet1!A1:C10",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "RowCount": 10,
+  "ColumnCount": 3
 }
- 
 ```
 
 {{< /tab >}}
@@ -66,9 +127,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK constitue la meilleure méthode pour accélérer le développement. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -121,3 +182,4 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+---

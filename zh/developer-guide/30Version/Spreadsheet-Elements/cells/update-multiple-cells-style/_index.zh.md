@@ -1,71 +1,129 @@
-﻿---
-title: 更新多个 Cells 风格
-type: docs
-url: /zh/update-multiple-cells-style/
-weight: 20
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、更新多个 Cells 样式
 ---
-此 REST API 表示将 `cells style` 设置为 Excel 文件中的一个单元格。
+title: "更新多个单元格样式 – Aspose.Cells Cloud API 参考（v3.0）"
+type: docs
+url: /update-multiple-cells-style/
+weight: 20
+keywords: ["Aspose.Cells", "更新多个单元格样式", "Excel 单元格样式 API", "云 SDK", "REST API", "cURL 示例", "JSON 请求", "JWT 身份验证"]
+description: "了解如何使用 Aspose.Cells Cloud REST API v3.0 更新 Excel 工作簿中某范围单元格的样式。内容包括端点、HTTP 方法、参数、cURL 与 SDK 示例、身份验证、错误处理以及版本信息。"
+ArticleTitle: "更新多个单元格样式 – Aspose.Cells Cloud API 参考（v3.0）"
+---
 
-## 重新设置 API
+## REST API
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
- 
+此 REST API 用于为 Excel 工作簿中某范围单元格设置**样式**。
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
 ```
 
-请求参数为：
+## 安全性与身份验证
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|范围|细绳|询问|范围。|
-|风格||身体|更新样式设置。|
-|文件夹|细绳|询问|工作簿文件夹。|
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 是安全的，需使用 [基于 JWT 令牌的身份验证](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### 请求参数
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名称        | 类型   | 位置 | 描述                           |
+|----------------|--------|------|--------------------------------|
+| **name**       | string | path | 工作簿名称。                   |
+| **sheetName**  | string | path | 工作表名称。                   |
+| **range**      | string | query | 单元格范围（例如 `A1:A10`）。 |
+| **style**      | object | body | 定义要应用样式的 JSON 对象。   |
+| **folder**     | string | query | 包含该工作簿的文件夹。         |
+| **storageName**| string | query | 存储名称。                     |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+#### Style 对象
+`style` JSON 对象表示单元格格式设置，可包含以下任选属性：
+
+- **Font** – 字体设置（`Name`、`Size`、`IsBold`、`IsItalic`、`Color` 等）。  
+- **BackgroundColor** – 背景颜色，采用 ARGB 格式。  
+- **ForegroundColor** – 前景颜色，采用 ARGB 格式。  
+- **Name**、**CultureCustom**、**Custom** – 其他样式元数据。
+
+## **响应**
+
+返回 `CellCloudResponse`。
+
+- **响应字段概览**
+
+| 字段            | 类型    | 描述         |
+| --------------- | ------- | ------------ |
+| `Status`        | string  |              |
+| `Code`          | integer | 200, 400, 401, 500, ... |
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**HTTP 状态码**
+
+| 状态码 | 含义             | 描述                                         |
+|--------|------------------|----------------------------------------------|
+| 200    | OK（成功）       | 筛选成功应用；响应包含操作详细信息。         |
+| 400    | Bad Request（错误请求） | 缺少或参数无效（例如：不支持的文件类型）。 |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。                       |
+| 413    | Payload Too Large（请求实体过大） | 上传文件超过大小限制。                |
+| 500    | Internal Server Error（内部服务器错误） | 服务器发生意外错误。               |
+
+## 如何使用 PostUpdateWorksheetRangeStyle API（通过 SDK）
+
+### PostUpdateWorksheetRangeStyle API 规范
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle) 提供了完整模式。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何通过 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/style?range=a1%3Aa10" \
--X POST \
- -d "{ \"Font\": { \"Color\": { \"A\":255, \"R\": 255, \"G\": 255, \"B\": 0 }, \"DoubleSize\": 10, \"IsBold\": true, \"IsItalic\": true, \"IsStrikeout\": true, \"IsSubscript\": true, \"IsSuperscript\": true, \"Name\": \"Arial\", \"Size\": 22 }, \"Name\": \"string\", \"CultureCustom\": \"string\", \"Custom\": \"string\", \"BackgroundColor\": { \"A\": 10, \"R\": 10, \"G\": 10, \"B\": 10 }, \"ForegroundColor\": { \"A\": 255, \"R\": 255, \"G\": 255, \"B\": 0 } \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+cURL -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/style?range=a1%3Aa10" \
+  -X POST \
+  -d '{
+        "Font": {
+          "Color": { "A":255, "R":255, "G":255, "B":0 },
+          "Size": 22,
+          "IsBold": true,
+          "IsItalic": true,
+          "IsStrikeout": true,
+          "IsSubscript": true,
+          "IsSuperscript": true,
+          "Name": "Arial"
+        },
+        "Name": "string",
+        "CultureCustom": "string",
+        "Custom": "string",
+        "BackgroundColor": { "A":10, "R":10, "G":10, "B":10 },
+        "ForegroundColor": { "A":255, "R":255, "G":255, "B":0 }
+      }' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+### 使用 Aspose.Cells Cloud SDK
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务本身。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

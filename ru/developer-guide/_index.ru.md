@@ -1,30 +1,30 @@
-﻿---
-title: "Руководство разработчика: конвертация, объединение, разделение, защита, поиск, замена и преобразование — всё в облаке Cells"
-second_title: Documen
-linktitle: Руководство разработчика
-ArticleTitle: Convert, Merge, Split, Protect, Search, Replace & Transform — All in Cells Cloud
-type: docs
-url: /ru/developer-guide/
-aliases: [/developer-guide-v4.0/]
-keywords: How to use Aspose.Cells Cloud REST APIs.  Conversion, Merge, Split, Protect, Search, Replace, Transform. Office Excel 2016,  Office Excel 2019,office Excel 365
-description: В этом руководстве разработчика описываются практические сценарии и советы, которые помогут вам использовать определенные функции Aspose.Cells for .NET, добиться определенного внешнего вида документа Excel или реализовать вариант использования.
-weight: 20
-kwords: Excel, Office Облако, REST API, Преобразование/Объединение/Разделение/Защита, Электронная таблица, PDF, CSV, Json, Markdown, Руководство разработчика
 ---
-## **Основные характеристики**
+title: "Руководство разработчика: преобразование, объединение, разделение, защита, поиск, замена и преобразование — всё в облаке Cells."
+second_title: "Документ"
+linktype: "Руководство разработчика"
+ArticleTitle: "Преобразование, объединение, разделение, защита, поиск, замена и преобразование — всё в облаке Cells."
+type: docs
+url: /developer‑guide/
+aliases: [/developer‑guide‑v4.0/]
+keywords: "Aspose.Cells Cloud, REST API для Excel, преобразование электронных таблиц, объединение, разделение, защита, поиск и замена, трансформация данных, примеры SDK, Java, .NET, Python, Node.js, PHP, Go, Ruby, Perl"
+description: "Полное руководство разработчика для REST API Aspose.Cells Cloud, охватывающее преобразование, объединение, разделение, защиту, поиск и замену, а также трансформацию данных, со ссылками на примеры SDK для Java, .NET, Python, Node.js, PHP, Go, Ruby и Perl."
+weight: 20
+---
 
-### **Конверсия**
+## **Основные возможности**
 
-- **[Сохранить таблицу как](https://docs.aspose.cloud/cells/save-an-excel-file-as-other-formats-files/)**
-- **[Конвертировать электронную таблицу](https://docs.aspose.cloud/cells/convert-spreadsheet/)**
-- **[Преобразовать электронную таблицу в изображение](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
-- **[Преобразовать электронную таблицу в CSV](https://docs.aspose.cloud/cells/convert-table-to-csv/)**
-- **[Преобразовать таблицу Rage в Json](https://docs.aspose.cloud/cells/convert-range-to-json/)**
+### **Преобразование**
+
+- **[Сохранить электронную таблицу в другом формате](https://docs.aspose.cloud/cells/save-an-excel-file-as-other-formats-files/)**
+- **[Преобразовать электронную таблицу](https://docs.aspose.cloud/cells/convert-spreadsheet/)**
+- **[Преобразовать диаграмму электронной таблицы в изображение](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
+- **[Преобразовать таблицу электронной таблицы в CSV](https://docs.aspose.cloud/cells/convert-table-to-csv/)**
+- **[Преобразовать диапазон электронной таблицы в JSON](https://docs.aspose.cloud/cells/convert-range-to-json/)**
 
 ### **Обработка данных**
 
-- **[Объединение таблиц](https://docs.aspose.cloud/cells/merge-spreadsheets/)**
-- **[Разделение электронных таблиц](https://docs.aspose.cloud/cells/split-spreadsheet/)**
+- **[Объединить электронные таблицы](https://docs.aspose.cloud/cells/merge-spreadsheets/)**
+- **[Разделить электронную таблицу](https://docs.aspose.cloud/cells/split-spreadsheet/)**
 
 ### **Преобразование данных**
 
@@ -35,29 +35,31 @@ kwords: Excel, Office Облако, REST API, Преобразование/Об�
 ### **Управление**
 
 - **[Создать новую электронную таблицу](https://docs.aspose.cloud/cells/create-spreadsheet/)**
-- **[Добавить рабочий лист в электронную таблицу](https://docs.aspose.cloud/cells/add-worksheet-to-spreadsheet/)**
-- **[Удалить рабочий лист из электронной таблицы](https://docs.aspose.cloud/cells/delete-worksheet-from-spreadsheet/)**
-- **[Переименовать рабочий лист в электронной таблице](https://docs.aspose.cloud/cells/rename-worksheet-in-spreadsheet/)**
+- **[Добавить лист в электронную таблицу](https://docs.aspose.cloud/cells/add-worksheet-to-spreadsheet/)**
+- **[Удалить лист из электронной таблицы](https://docs.aspose.cloud/cells/delete-worksheet-from-spreadsheet/)**
+- **[Переименовать лист в электронной таблице](https://docs.aspose.cloud/cells/rename-worksheet-in-spreadsheet/)**
 
 ### **Поиск и замена**
 
-- **[Поиск содержимого в электронной таблице](https://docs.aspose.cloud/cells/search-spreadsheet-content/)**
-- **[Поиск неработающих ссылок в электронных таблицах](https://docs.aspose.cloud/cells/search-spreadsheet-broken-links/)**
-- **[Заменить содержимое в электронной таблице](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
+- **[Выполнить поиск содержимого в электронной таблице](https://docs.aspose.cloud/cells/search-spreadsheet-content/)**
+- **[Найти неработающие ссылки в электронной таблице](https://docs.aspose.cloud/cells/search-spreadsheet-broken-links/)**
+- **[Заменить содержимое электронной таблицы](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
 
 ### **Защита**
 
 - **[Защитить электронную таблицу](https://docs.aspose.cloud/cells/protect-spreadsheet/)**
 
-## **Код и пример**
+## **Код и примеры**
 
-Откройте для себя облачные SDK Cells на GitHub бесплатно. Получите доступ к открытому исходному коду и многочисленным примерам использования:
+Ознакомьтесь с SDK облака Cells на GitHub бесплатно. Получите доступ к исходному коду и обширным примерам использования:
 
-- [Java Примеры SDK на Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/tree/master/Examples)
-- [.NET Примеры SDK на Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/master/examples)
-- [Python Примеры SDK на Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/tree/master/examples)
-- [Примеры Node.js SDK на Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/tree/master/Examples)
-- [PHP Примеры SDK на Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/tree/master/examples)
-- [Примеры Go SDK на Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/tree/master/examples)
-- [Примеры Ruby SDK на Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/tree/master/examples)
-- [Perl Примеры SDK на Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/tree/master/examples)
+- [Примеры SDK для Java на GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/tree/master/Examples)
+- [Примеры SDK для .NET на GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/master/examples)
+- [Примеры SDK для Python на GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/tree/master/examples)
+- [Примеры SDK для Node.js на GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/tree/master/Examples)
+- [Примеры SDK для PHP на GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/tree/master/examples)
+- [Примеры SDK для Go на GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/tree/master/examples)
+- [Примеры SDK для Ruby на GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/tree/master/examples)
+- [Примеры SDK для Perl на GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/tree/master/examples)
+
+---

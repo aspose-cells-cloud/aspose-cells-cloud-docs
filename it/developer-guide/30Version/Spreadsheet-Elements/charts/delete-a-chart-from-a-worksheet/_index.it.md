@@ -1,72 +1,119 @@
-﻿---
-title: Eliminare un grafico da un foglio di lavoro
+---
+title: "Eliminare un grafico da un foglio di lavoro"
 type: docs
 url: /it/charts/delete/
-aliases: [/delete-a-chart-from-a-worksheet/]
+aliases: [/it/delete-a-chart-from-a-worksheet/]
 weight: 40
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Elimina un grafico da un foglio di lavoro
+keywords:
+  - "Aspose.Cells"
+  - "REST API"
+  - "Eliminazione grafico"
+  - "Foglio di lavoro"
+  - "Excel"
+  - "Cloud SDK"
+  - "Eliminazione grafico"
+  - "Riferimento API"
+description: "Elimina un grafico da un foglio di lavoro tramite il suo indice in base zero utilizzando l’API REST di Aspose.Cells Cloud."
+ArticleTitle: "Eliminare un grafico da un foglio di lavoro tramite l’API REST di Aspose.Cells Cloud"
 ---
-Questo REST API indica di eliminare il grafico del foglio di lavoro in base all'indice.
- 
-## RSET API
- 
+
+Questa REST API elimina un grafico da un foglio di lavoro tramite il suo indice.
+
+Per le operazioni correlate, consulta le pagine **[Aggiungi un grafico](#)** e **[Ottieni un grafico](#)**.
+
+## REST API
+
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
 ```
- I parametri della richiesta sono:
- 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome della cartella di lavoro.|
-| Nome foglio| corda| sentiero| Nome del foglio di lavoro.|
-| graficoIndice| intero| sentiero| L'indice del grafico.|
-| cartella| corda| domanda| La cartella della cartella di lavoro.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
- 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetDeleteChart) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
- 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+
+### Sicurezza e autenticazione
+
+Le API REST di Aspose.Cells Cloud sono sicure e richiedono l'[autenticazione basata su token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+### Parametri della richiesta
+
+| Nome parametro | Tipo    | Posizione | Descrizione                                           |
+| -------------- | ------- | --------- | ----------------------------------------------------- |
+| name           | string  | path      | Nome del workbook.                                    |
+| sheetName      | string  | path      | Nome del foglio di lavoro.                            |
+| chartIndex     | integer | path      | Indice in base zero del grafico da eliminare.         |
+| folder         | string  | query     | Cartella contenente il workbook.                      |
+| storageName    | string  | query     | Nome dello storage da utilizzare.                     |
 
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Risposta**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Codici di stato HTTP**
+
+| Codice | Significato                | Descrizione                                                           |
+|--------|----------------------------|-----------------------------------------------------------------------|
+| 200    | OK                         | Filtro applicato correttamente; la risposta contiene i dettagli dell’operazione. |
+| 400    | Richiesta non valida       | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401    | Non autorizzato            | Token JWT non valido o mancante.                                      |
+| 413    | Payload troppo grande      | Il file caricato supera il limite di dimensione.                     |
+| 500    | Errore interno del server  | Errore imprevisto del server.                                         |
+
+## Come utilizzare l’API PutWorksheetAddChart con gli SDK
+
+### Specifica dell’API PutWorksheetAddChart
+
+La [specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetDeleteChart) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di effettuare interazioni REST direttamente da un browser web.
+
+È possibile utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L’esempio seguente mostra come effettuare una chiamata all’API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" 
--X DELETE 
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" \
+-X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
-## Famiglia Cloud SDK
- 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
- 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
- 
+
+L’API restituisce i seguenti codici di stato:
+
+| Codice | Descrizione                                      |
+|--------|--------------------------------------------------|
+| 200    | Grafico eliminato correttamente                  |
+| 400    | Richiesta non valida (ad esempio, indice non valido) |
+| 401    | Non autorizzato (token JWT mancante o non valido) |
+| 404    | Workbook, foglio di lavoro o grafico non trovato |
+| 500    | Errore del server                                |
+
+**Gestione degli errori:** Per informazioni dettagliate sugli errori, fare riferimento al modello generico di errore nella specifica OpenAPI.
+
+### Utilizzo degli SDK di Aspose.Cells Cloud
+
+L’utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK astrae i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells mediante vari SDK:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

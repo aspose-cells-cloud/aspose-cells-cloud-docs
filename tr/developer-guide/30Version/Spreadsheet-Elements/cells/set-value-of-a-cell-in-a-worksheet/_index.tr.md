@@ -1,72 +1,137 @@
-﻿---
-title: Bir Çalışma Sayfasındaki Bir Hücrenin Değerini Ayarlama
-type: docs
-url: /tr/set-value-of-a-cell-in-a-worksheet/
-weight: 70
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Çalışma Sayfasındaki Bir Hücrenin Değerini Ayarlama
 ---
-Bu REST API, Excel dosyasında `cell value`'in ayarlandığını gösterir.
+title: "Hücre Değeri Belirleme – Aspose.Cells Cloud API Referansı (v3.0)"  
+type: docs  
+url: /tr/set-value-of-a-cell-in-a-worksheet/  
+weight: 70  
+keywords: "Aspose Cells API hücre değeri ayarlama, Excel hücre güncelleme REST, Aspose.Cells Cloud cURL örneği"  
+description: "Aspose.Cells Cloud REST API ile bir Excel çalışma sayfasındaki belirli bir hücrenin değerini nasıl ayarlayacağınızı öğrenin. İsteğin sözdizimi, parametreleri, HTTPS cURL örneği ve SDK kod örnekleri içerir."  
+---  
 
-## RSET API
+Bu REST API, bir Excel dosyasındaki **hücre değerini** ayarlar.
+
+## REST API  
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
+```  
+
+## Güvenlik ve Kimlik Doğrulama
+
+Aspose.Cells Cloud API’leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulamaya](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) ihtiyaç duyar.
+
+**İstek Parametreleri**
+
+| Ad            | Tür    | Konum | Açıklama                                           |
+|---------------|--------|-------|----------------------------------------------------|
+| name          | string | path  | Excel belgesinin adı (uzantı dahil).               |
+| sheetName     | string | path  | Çalışma sayfasının adı (büyük/küçük harfe duyarlı). |
+| cellName      | string | path  | Hedef hücrenin A1 tarzı adresi (örn. `A1`).        |
+| value         | string | query | Hücreye atanacak değer.                            |
+| type          | string | query | Değerin veri türü (`int`, `string`, `float`, vb.). |
+| formula       | string | query | Hücreye uygulanacak formül (isteğe bağlı).         |
+| folder        | string | query | Belgenin bulunduğu klasör (isteğe bağlı).          |
+| storageName   | string | query | Dosyanın bulunduğu depo adı (isteğe bağlı).        |
+
+## **Yanıt**
+
+CellResponse döner.
+
+- **Yanıt Alanları Genel Bakış**
+
+| Alan            | Tür     | Açıklama                                               |
+| --------------- | ------- | ------------------------------------------------------ |
+| `Name`          | string  | Hücrenin adresi (örn. `F341`).                         |
+| `Row`           | integer | Sıfır tabanlı satır indeksi.                           |
+| `Column`        | integer | Sıfır tabanlı sütun indeksi.                           |
+| `Value`         | string  | Hücrenin gösterilen değeri.                            |
+| `Type`          | string  | Hücrenin veri türü (örn. `IsString`).                 |
+| `Formula`       | string  | Hücre bir formül içeriyorsa formül metni.             |
+| `IsFormula`     | bool    | Hücrenin bir formül içerip içermediğini gösterir.      |
+| `IsMerged`      | bool    | Hücrenin birleştirilmiş bir aralıkta olup olmadığını gösterir. |
+| `IsArrayHeader` | bool    | Hücrenin bir dizi başlığı olup olmadığını gösterir.    |
+| `IsInArray`     | bool    | Hücrenin bir dizide olup olmadığını gösterir.         |
+| `IsErrorValue`  | bool    | Hücrenin bir hata değeri içerip içermediğini gösterir. |
+| `IsInTable`     | bool    | Hücrenin bir tablonun içinde olup olmadığını gösterir. |
+| `IsStyleSet`    | bool    | Hücreye bir stil uygulanıp uygulanmadığını gösterir.   |
+| `HtmlString`    | string  | Hücre değerinin HTML ile kodlanmış gösterimi.          |
+| `Style.link`    | object  | Stil kaynağına olan bağlantı.                         |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Cell":{
+    "Name":"A1",
+    "Row": 0,
+    "Column":0,
+    "Value": "",
+    "Type":"String",
+    "Formula" : "=Sum(A2:A15)",
+    ...
+  }
+}
 ```
 
-İstek parametreleri şunlardır:
+**HTTP Durum Kodları**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| hücreAdı| sicim| yol| Hücre adı.|
-| değer| sicim| sorgu| Hücre değeri.|
-| tip| sicim| sorgu| Değer türü.|
-| formül| sicim| sorgu| Hücre formülü|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Kod | Anlam                       | Açıklama                                              |
+|------|-----------------------------|-------------------------------------------------------|
+| 200  | OK (Tamam)                  | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400  | Bad Request (Hatalı İstek)  | Eksik veya geçersiz parametreler (örn. desteklenmeyen dosya türü). |
+| 401  | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT belirteci.                   |
+| 413  | Payload Too Large (Çok Büyük Yük) | Yüklenecek dosya boyut sınırını aşıyor.              |
+| 500  | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası.                         |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+## SDK’larla PostWorksheetCellSetValue API Nasıl Kullanılır
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### PostWorksheetCellSetValue API Spesifikasyonu
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue), geliştiricilerin REST uç noktalarına doğrudan tarayıcıdan veya herhangi bir HTTP istemcisinden erişmesine olanak tanıyan herkese açık bir programlama arayüzü tanımlar.
+
+Aspose.Cells web hizmetlerini çağırmak için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile bir hücre değerinin nasıl ayarlanacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?value=1234&type=int" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?value=1234&type=int" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK",
+  "Cell":{
+    "Name":"A3",
+    "Row": 2,
+    "Column":0,
+    "Value": "",
+    "Type":"String",
+    "Formula" : "=Sum(A2:A15)",
+    ...
+  }
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bir SDK kullanmak, düşük seviye ayrıntıları ele alarak projenize odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK’larla Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,75 +1,87 @@
-﻿---
-title: Удалить несколько строк на листе Excel
-second_title: Documen
-linktitle: Ряд
+---
+title: "Удаление нескольких строк из рабочего листа Excel"
+second_title: "Документ"
+linktitle: "Строки"
 type: docs
 url: /ru/rows/delete/rows/
-keywords: Delete rows on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает удаление строк на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+keywords: "Aspose.Cells Cloud, удаление строк, удаление нескольких строк, рабочий лист Excel, REST API, SDK"
+description: "Узнайте, как удалить одну или несколько строк из рабочего листа Excel с помощью REST API Aspose.Cells Cloud. Включает сведения об конечной точке, параметрах, пример cURL и примеры кода SDK для различных языков."
 weight: 80
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Удаление нескольких строк на листе Excel
+ArticleTitle: "Удаление нескольких строк из рабочего листа Excel с помощью API Aspose.Cells Cloud"
 ---
-Этот REST API указывает на удаление нескольких строк на листе Excel.
 
-## РСЕT API
+Этот REST API удаляет несколько строк **из** рабочего листа Excel.
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
+**Необходимые условия:** Для вызова этой конечной точки требуется действительный JWT-токен доступа, полученный из аутентификации Aspose Cloud, а также соответствующие разрешения на хранилище для данной книги.
+
+## API DeleteWorksheetRows
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Рабочий лист плохой.|
-| стартров| целое число| запрос| Начальный индекс строки, подлежащей обработке.|
-| totalRows| целое число| запрос|1 |
-| обновлениеСсылка| булев| запрос| Истинный|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### **Параметры запроса**
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра  | Тип    | Путь / Строка запроса / HTTP-тело | Описание                                                                 |
+| --------------- | ------- | --------------------------------- | ------------------------------------------------------------------------ |
+| name            | string  | path                              | Имя книги.                                                               |
+| sheetName       | string  | path                              | Имя рабочего листа.                                                      |
+| startrow        | integer | query                             | Индекс первой удаляемой строки (начинается с нуля), например, `0` — первая строка. |
+| totalRows       | integer | query                             | Количество удаляемых строк.                                              |
+| updateReference | boolean | query                             | Нужно ли обновлять ссылки после удаления (`true`/`false`).              |
+| folder          | string  | query                             | Папка документа.                                                         |
+| storageName     | string  | query                             | Имя хранилища.                                                           |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) определяет общедоступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Пример ниже демонстрирует, как выполнять вызовы в облачный API с помощью cURL. **Все конечные точки требуют HTTPS; HTTP устарел.**
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=1&updateReference=true" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Возможные коды ответа**
+
+| HTTP-статус | Описание                                      |
+|-------------|-----------------------------------------------|
+| 200         | Строки успешно удалены.                       |
+| 400         | Неверный запрос — некорректные параметры.     |
+| 401         | Неавторизовано — отсутствует или недействителен JWT-токен. |
+| 404         | Не найдено — книга или рабочий лист не существуют. |
+| 500         | Внутренняя ошибка сервера — непредвиденное условие. |
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Полный список облачных SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют, как выполнять вызовы в веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

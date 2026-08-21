@@ -1,80 +1,107 @@
-﻿---
-title: Excel till Dok
-second_title: Documen
-linktitle: Excel till Dok
-type: docs
-url: /svconvert-excel-file-to-docx-file/
-keywords: Convert excel files to docx files
-description: Aspose.Cells Cloud REST API stöder konvertering av Excel-filer till CSV-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 90
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Excel till Docx
 ---
-Denna REST API indikerar för `convert` en kalkylbladsfil till en docx-formatfil.
+title: "Excel till Docx"
+second_title: "Dokument"
+linktitle: "Excel till Docx"
+type: docs
+url: convert-excel-file-to-docx-file/
+keywords: "konvertering av Excel till Docx, Aspose.Cells Cloud, REST API, konvertering av kalkylark, dokumentgenerering"
+description: "Konvertera Excel-kalkylark till DOCX-dokument med Aspose.Cells Cloud REST API. Stöder flera SDK:er och programmeringsspråk för sömlös integration."
+weight: 90
+---
 
-**Frågeparameter**
+Detta REST API konverterar en kalkylarkfil till DOCX-format.
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|lösenord|sträng| Lösenordet som behövs för att öppna en Excel-fil.|
-|lagringsnamn|sträng| Lagringsnamnet där filen finns.|
-|kontrolleraExcelBegränsning|bool| Om begränsning av Excel-filen ska kontrolleras när användaren ändrar celler relaterade objekt.|
+## REST API
 
-**Begäran om brödtextparameter**
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/docx
+```
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|datafil| datafil|Datafilen sparas i den första delen av det flerdelade innehållet.|
+### **Säkerhet och autentisering**
+
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
+
+
+
+**Frågeparametrar**
+
+| Parameter Name        | Typ    | Beskrivning                                                                                           |
+| --------------------- | ------ | ----------------------------------------------------------------------------------------------------- |
+| password              | sträng | Lösenordet som krävs för att öppna Excel-filen.                                                      |
+| storageName           | sträng | Namnet på lagringen där filen finns.                                                                 |
+| checkExcelRestriction | bool   | Anger om restriktioner för Excel-filen ska kontrolleras när användaren redigerar cellrelaterade objekt. |
+
+**Parametrar för begärandetext**
+
+| Parameter Name | Typ       | Beskrivning                                                     |
+| -------------- | --------- | --------------------------------------------------------------- |
+| datafile       | datafil   | Datafilen som sparas i den första delen av begärandetexten.     |
 
 **Svar**
 
-[Filinfo](/cells/sv/file-info/)
+API:et returnerar ett **FileInfo**-objekt som innehåller den genererade Word-filen.
 
-## REST API Specifikation
+| Fält            | Typ    | Beskrivning                                    |
+| --------------- | ------ | ---------------------------------------------- |
+| **Filename**    | sträng | Namn på Word-filen (t.ex. `exempel.docx`).     |
+| **FileSize**    | int    | Filens storlek i byte.                         |
+| **FileContent** | sträng | Base64-kodat innehåll i Word-filen.            |
 
-|**API**|**Typ**|**Beskrivning**|**Swagger-länk**|
-|:- |:- |:- |:- |
-|/celler/konvertera/docx|POSTA|Konvertera ett kalkylblad till en docx-fil.|[KonverteraArbetsbokTillDocx](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToDocx)|
 
- De[OpenAPI-specifikation](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToDocx) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[FileInfo](/cells/file-info/)
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
+**HTTP-statuskoder**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Kod | Betyder                     | Beskrivning                                             |
+|-----|-----------------------------|---------------------------------------------------------|
+| 200 | OK                          | Filter applicerades framgångsrikt; svaret innehåller åtgärdsdetaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Obehörig                    | Ogiltig eller saknad JWT-token.                         |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen.       |
+| 500 | Internt serverfel           | Oväntat serverfel.                                      |
+
+## Hur man använder PostConvertWorkbookToDocx API med SDK:er
+
+### PostConvertWorkbookToDocx API-specifikation
+
+[OpenAPI-specifikationen](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToDocx) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/docx" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/docx" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: curl" \
+     -d '{"File":{}}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
-  "Filename": "xxxxxx.docx",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
+  "Filename": "exempel.docx",
+  "FileSize": 12345,
+  "FileContent": "Filinnehåll: base64_kodad_sträng"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Kontrollera [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:er:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -127,14 +154,12 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 
 {{< /tabs >}}
 
-## Andra API:er implementerar den här funktionen
+## Andra API:er som implementerar denna funktion
 
-[POST /celler/{namn}/sparaSom](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)API låter dig spara MS Excel-filen som en CSV-fil med ytterligare inställningar och spara resultatet till lagringsplatsen.
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Sparar en Excel-fil som DOCX-fil med ytterligare inställningar och lagrar resultatet i den angivna lagringen.
 
-Denna REST API `convert` Excel-fil till CSV.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Konverterar en Excel-fil till DOCX-fil med valfria inställningar och returnerar resultatet i svaret.
 
-[PUT /celler/konvertera](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API låter dig konvertera MS Excel-filen till CSV-filen med ytterligare inställningar och spara resultatet i svaret.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Hämtar ett Excel-arbetsboksdokument och konverterar det till DOCX-fil med valfria parametrar.
 
-Denna REST API `export` Excel-fil till CSV.
-
-[HÄMTA /celler/{namn}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API låter dig konvertera MS Excel-filen till CSV-filen med ytterligare inställningar och spara resultatet i svaret.
+---

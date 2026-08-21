@@ -1,74 +1,120 @@
-﻿---
-title: Aggiungi firma digitale per il libro di lavoro Excel
-second_title: Documen
-linktitle: Firma digitale
-type: docs
-url: /it/excel-digital-signature/
-aliases: [/protect/digital-signature/,/workbook/digital-signature/]
-keywords: Add digital signature for an Excel workbook
-description: Aspose.Cells Cloud REST API supporta l'aggiunta di una firma digitale per una cartella di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 35
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Aggiungi firma digitale per la cartella di lavoro Excel
 ---
-Questo REST API indica di aggiungere un `digital signature` per una cartella di lavoro Excel.
+title: "Aggiungi una firma digitale a un libro Excel"
+ArticleTitle: "Aggiungi una firma digitale a un libro Excel – Aspose.Cells Cloud API"
+second_title: "Documento"
+linktype: "firma digitale"
+type: docs
+url: /excel-digital-signature/
+aliases:
+  - /protect/digital-signature/
+  - /workbook/digital-signature/
+keywords: "Aspose.Cells Cloud, firma digitale, libro Excel, API REST, .pfx, JWT, API per firme"
+description: "Scopri come aggiungere una firma digitale a un libro Excel utilizzando l'API REST di Aspose.Cells Cloud (versione 4.0). Include endpoint, parametri, autenticazione, schema di risposta, gestione degli errori ed esempi di SDK per diversi linguaggi."
+weight: 35
+---
 
-## RSET API
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/digitalsignature
- 
+**Prerequisiti:**  
+Prima di chiamare questo endpoint, assicurati di disporre di:
+
+- Un token di accesso JWT valido ottenuto tramite l'autenticazione di Aspose Cloud.  
+- Il libro di destinazione caricato nello storage di Aspose Cloud.  
+- Un file di firma digitale in formato `.pfx` o `.p12` e la relativa password.
+
+Questa API REST aggiunge una **firma digitale** a un libro Excel.
+
+## API PostDigitalSignature
+
+```http
+POST https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome della cartella di lavoro.|
-| file di firma digitale| corda| domanda| Parametri del file di firma digitale.|
-| password| corda| domanda||
-| cartella| corda| domanda| Cartella della cartella di lavoro.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostDigitalSignature) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### Parametri della richiesta
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Nome del parametro        | Tipo   | Posizione               | Descrizione                                           |
+| ------------------------- | ------ | ----------------------- | ----------------------------------------------------- |
+| **name**                  | string | `<code>path</code>`     | Nome del libro.                                       |
+| **digitalsignaturefile**  | string | `<code>query</code>`    | Percorso del file di firma digitale (`.pfx` o `.p12`).|
+| **password**              | string | `<code>query</code>`    | Password del libro, se protetto.                      |
+| **folder**                | string | `<code>query</code>`    | Cartella in cui è memorizzato il libro.               |
+| **storageName**           | string | `<code>query</code>`    | Nome del servizio di storage da utilizzare.           |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+*Nota: Se il nome del file contiene caratteri speciali, effettua l'URL encoding prima di aggiungerlo alla stringa di query.*
+
+### Gestione degli errori
+
+| Stato HTTP | Significato                                              |
+| ---------- | -------------------------------------------------------- |
+| 200        | Firma applicata con successo.                            |
+| 400        | Richiesta non valida – parametri mancanti o non validi. |
+| 401        | Non autorizzato – token OAuth non valido o scaduto.     |
+| 403        | Accesso negato – autorizzazioni insufficienti.          |
+| 500        | Errore interno del server – errore imprevisto.          |
+
+### Risposte di errore con codice HTTP
+
+| Stato HTTP | Codice              | Descrizione                                                 |
+| ---------- | ------------------- | ----------------------------------------------------------- |
+| 400        | BadRequest          | Parametri mancanti o non validi.                            |
+| 401        | Unauthorized        | Token di accesso non valido o mancante.                     |
+| 404        | NotFound            | Libro specificato non trovato nella cartella/storage indicata. |
+| 500        | InternalServerError | Errore imprevisto del server.                               |
+
+
+## Come utilizzare l'API PostDigitalSignature con gli SDK
+
+### Specifica dell'API PostDigitalSignature
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Protection/PostDigitalSignature) definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per chiamare i servizi web di Aspose.Cells. L'esempio riportato di seguito mostra una richiesta all'API:
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature?digitalsignaturefile=signature.pfx&password=LaTuaPassword" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+**Schema della risposta**  
+L'API restituisce un oggetto JSON con i seguenti campi:
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+| Campo          | Tipo   | Descrizione                                              |
+| -------------- | ------ | -------------------------------------------------------- |
+| `Code`         | int    | Codice di stato simile a HTTP che indica il risultato.  |
+| `Status`       | string | Testo breve che descrive l'esito (ad esempio, `OK`).     |
+| `SignatureId`  | string | Identificativo della firma digitale applicata (opzionale).|
+| `Message`      | string | Informazioni aggiuntive o dettagli sull'errore (opzionale).|
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+### Utilizzare gli SDK di Aspose.Cells Cloud
+
+L'utilizzo di un SDK semplifica l'integrazione e riduce il codice ripetitivo. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -98,7 +144,7 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostDigitalSignature.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82a2de2e4189bc27ae92abf73c36b4df0" "Example_PostDigitalSignature.ts" >}}
 
 {{< /tab >}}
 

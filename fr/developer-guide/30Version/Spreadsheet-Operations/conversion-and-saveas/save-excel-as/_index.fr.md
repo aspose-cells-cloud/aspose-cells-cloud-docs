@@ -1,104 +1,155 @@
-﻿---
-title: Enregistrer sous Excel
-second_title: Documen
-linktitle: Enregistrer un
-type: docs
-url: /fr/save-an-excel-file-as-other-formats-files/
-aliases: [/convert-excel-workbook-to-different-file-formats/, /saveas-other-formats/]
-keywords: Save excel files as kinds of format files
-description: Aspose.Cells Cloud REST API prend en charge l'enregistrement de fichiers Excel sous différents formats. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 30
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Enregistrer sous Excel
 ---
-Ce REST API indique le fichier Excel `save` comme un fichier de format différent.
+title: "Enregistrer un classeur Excel – API Aspose.Cells Cloud"
+second_title: "Document"
+linktitle: "Enregistrer sous"
+type: docs
+url: /save-an-excel-file-as-other-formats-files/
+aliases:
+  - /convert-excel-workbook-to-different-file-formats/
+  - /saveas-other-formats/
+keywords: "Aspose Cells, Excel, Enregistrer sous, PDF, CSV, JSON, Markdown, API REST"
+description: "Enregistrez des classeurs Excel au format PDF, CSV, JSON, Markdown et d'autres formats à l'aide de l'API REST Aspose.Cells Cloud."
+weight: 30
+---
 
-**Paramètre de chemin**
+Cette API REST vous permet **d'enregistrer** un fichier Excel dans différents formats.  
+Avant d'appeler ce point de terminaison, assurez-vous de disposer d'un jeton d'accès OAuth 2.0 valide et que le classeur source est stocké dans votre espace de stockage Aspose Cloud.
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|nom|chaîne| Le nom du fichier.|
+**Prérequis**  
+1. Obtenez un jeton d'accès JWT et incluez-le dans l'en-tête `Authorization: Bearer <token>` de chaque requête.  
+2. Téléversez le classeur source vers l'espace de stockage Aspose Cloud (ou confirmez qu'il existe déjà).  
+3. Connaître le nom de l'espace de stockage et le chemin du dossier contenant le classeur.
 
-**Paramètre de requête**
+## API PostWorkbookSaveAs
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|nouveau nom de fichier|chaîne| nouveau nom de fichier|
-|isAutoFitRows|chaîne| Ajuste automatiquement toutes les lignes de ce classeur. La valeur par défaut est « false ».|
-|isAutoFitColumns|chaîne| Ajuste automatiquement la largeur des colonnes de ce classeur. La valeur par défaut est « false ».|
-|dossier|chaîne|Classeur original.|
-|nom de stockage|chaîne| Le nom du stockage où se trouve le fichier.|
-|outStorageName|chaîne| Le nom du stockage où se trouve le fichier enregistré.|
-|vérifierExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
-|région|chaîne| Les paramètres régionaux du classeur.|
-|pageWideFitOnPerSheet|booléen| La page s'adapte à la largeur de la feuille de calcul.|
-|pageTallFitOnPerSheet|booléen| La page haute tient sur la feuille de calcul.|
-|nom de la feuille|chaîne| Convertissez la feuille de calcul spécifiée.|
-|pageIndex|chaîne| Convertissez la page spécifiée de la feuille de calcul, sheetName est requis.|
-|une page par feuille|booléen| Lors de la conversion au format PDF, une page par feuille.|
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/saveAs
+```
 
-**Paramètre du corps de la requête**
+### **Sécurité et authentification**
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|Options de sauvegarde| Objet|Option d'enregistrement pour enregistrer dans la deuxième partie du contenu en plusieurs parties.|
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification par jeton JWT</a>.
 
-## RESTE API
+### **Paramètre de chemin**
 
-|**API**|**Taper**|**Description**|**Lien vers la ressource**|
-|:- |:- |:- |:- |
-|/cellules/{nom}/enregistrer sous|POSTE|Exporter le classeur au format|[PostDocumentEnregistrer sous](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+| Nom du paramètre | Type   | Description                           |
+| ---------------- | ------ | ------------------------------------- |
+| name             | string | Nom du fichier Excel.                 |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### **Paramètre de requête**
 
- Vous pouvez utiliser**cURL** Outil en ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le cloud API avec cURL.
+| Nom du paramètre      | Type   | Description                                                                                              |
+| --------------------- | ------ | -------------------------------------------------------------------------------------------------------- |
+| newfilename           | string | Nom du nouveau fichier à enregistrer.                                                                   |
+| isAutoFitRows         | string | Si `true`, ajuste automatiquement la hauteur de toutes les lignes du classeur. Par défaut : `false`.    |
+| isAutoFitColumns      | string | Si `true`, ajuste automatiquement la largeur des colonnes du classeur. Par défaut : `false`.            |
+| folder                | string | Dossier contenant le classeur original.                                                                  |
+| storageName           | string | Nom de l'espace de stockage où se trouve le fichier source.                                             |
+| outStorageName        | string | Nom de l'espace de stockage où le fichier de sortie sera enregistré.                                    |
+| checkExcelRestriction | bool   | Indique s’il faut appliquer les restrictions Excel lors de la modification des cellules ou des objets associés. |
+| region                | string | Paramètres régionaux appliqués au classeur.                                                             |
+| pageWideFitOnPerSheet | bool   | Ajuste la largeur de page à chaque feuille de calcul lors de la conversion.                             |
+| pageTallFitOnPerSheet | bool   | Ajuste la hauteur de page à chaque feuille de calcul lors de la conversion.                             |
+| sheetName             | string | Nom de la feuille de calcul à convertir.                                                                |
+| pageIndex             | string | Index de la page à convertir dans la feuille spécifiée (nécessite `sheetName`).                         |
+| onePagePerSheet       | bool   | Lors de la conversion au format PDF, génère une page par feuille de calcul.                             |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Paramètre du corps de la requête**
+
+| Nom du paramètre | Type   | Description                                                   |
+| ---------------- | ------ | ------------------------------------------------------------- |
+| SaveOptions      | Object | Options d'enregistrement fournies dans la deuxième partie de la requête multipart. |
+
+**Exemple de corps de requête (partie JSON de la requête multipart)**
+
+```json
+{
+  "SaveOptions": {
+    "SaveFormat": "pdf",
+    "CompressionLevel": 9
+  }
+}
+```
+
+### Réponse
+
+L'API renvoie un objet `SaveResponse`.
+
+```json
+{
+  "Status": "OK",
+  "Code": 200,
+  "SaveResult": {
+    "Documents": [
+      {
+        "Name": "sample.pdf",
+        "Size": 10240,
+        "Folder": "output",
+        "Storage": "MyStorage"
+      }
+    ]
+  }
+}
+```
+
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                                       |
+|------|-----------------------------|-------------------------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l'opération. |
+| 400  | Mauvaise requête            | Paramètres manquants ou invalides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant.                                   |
+| 413  | Charge utile trop grande     | Le fichier téléversé dépasse la taille maximale autorisée.       |
+| 500  | Erreur interne du serveur   | Erreur serveur inattendue.                                        |
+
+## Comment utiliser l'API PostWorkbookSaveAs avec les SDK
+
+### Spécification de l'API PostWorkbookSaveAs
+
+La [spécification OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostWorkbookSaveAs) définit une interface de programmation publiquement accessible et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser **cURL** pour accéder facilement aux services web Aspose.Cells. L'exemple ci-dessous montre comment appeler l'API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfilename=sample.pdf&isAutoFitRows=true&isAutoFitColumns=true" -H "accept: multipart/form-data" 
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfilename=sample.pdf&isAutoFitRows=true&isAutoFitColumns=true" \
+  -H "accept: multipart/form-data" \
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
   "SaveResult": {
-    "SourceDocument": {
-      "Href": "test.xlsx",
-      "Rel": null,
-      "Title": null,
-      "Type": null
-    },
-    "DestDocument": {
-      "Href": "test.pdf",
-      "Rel": null,
-      "Title": null,
-      "Type": null
-    },
-    "AdditionalItems": []
+    "Documents": [
+      {
+        "Name": "sample.pdf",
+        "Size": 10240,
+        "Folder": "output",
+        "Storage": "MyStorage"
+      }
+    ]
   },
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
+### Utiliser les SDK Aspose.Cells Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L'utilisation d'un SDK est le moyen le plus efficace d'accélérer le développement. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -151,3 +202,5 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Pour d'autres scénarios de conversion, consultez les guides [Convertir Excel en PDF](/convert-excel-to-pdf/) et [Exporter Excel en CSV](/export-excel-to-csv/).

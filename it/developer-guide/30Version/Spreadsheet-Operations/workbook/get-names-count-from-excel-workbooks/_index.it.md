@@ -1,56 +1,72 @@
-﻿---
-title: Ottieni i nomi da un libro di lavoro Excel
-second_title: Documen
-linktitle: Nome
-type: docs
-url: /it/get-names-from-an-excel-file/
-aliases: [/get-names-count-from-excel-workbooks/,/workbook/names/,/workbook/get/names/]
-keywords: Getting names on an Excel workbook
-description: Aspose.Cells Cloud REST API supporta l'acquisizione di nomi su una cartella di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 120
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni nomi da una cartella di lavoro Excel
 ---
-Questo REST API indica di ottenere i nomi da una cartella di lavoro Excel.
+title: "Ottenere i nomi da un workbook Excel"
+second_title: "Documento"
+linktitle: "Nomi"
+type: docs
+url: /get-names-from-an-excel-file/
+aliases:
+  [
+    /get-names-count-from-excel-workbooks/,
+    /workbook/names/,
+    /workbook/get/names/,
+  ]
+keywords: "Aspose.Cells, Cloud, Excel, Workbook, Nomi, REST API, SDK"
+description: "Recupera tutti i nomi definiti da un workbook Excel utilizzando l'API REST di Aspose.Cells Cloud. Include indicazioni sull'autenticazione, un esempio cURL, lo schema di risposta, la gestione degli errori e esempi di SDK."
+weight: 120
+ArticleTitle: "Ottenere i nomi da un workbook Excel – Aspose.Cells Cloud API"
+---
 
-## RSET API
+Questa API REST recupera i nomi definiti da un workbook Excel.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/names
- 
+### **Sicurezza e autenticazione**
+
+Le API di Aspose.Cells Cloud sono sicure e richiedono <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">l'autenticazione tramite token JWT</a>.
+
+## API GetWorkbookNames
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/names
 ```
 
 I parametri della richiesta sono:
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome della cartella di lavoro.|
-| cartella| corda| domanda| La cartella della cartella di lavoro.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome parametro | Tipo   | Posizione | Descrizione                             |
+| -------------- | ------ | --------- | --------------------------------------- |
+| name           | string | path      | Nome del file del workbook.             |
+| folder         | string | query     | Cartella contenente il workbook.        |
+| storageName    | string | query     | Nome dello storage da utilizzare.       |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookNames) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+La richiesta deve includere le seguenti intestazioni HTTP:
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Intestazione  | Tipo   | Descrizione                                   |
+|---------------|--------|-----------------------------------------------|
+| Authorization | string | Token bearer JWT (obbligatorio)               |
+| Accept        | string | `application/json`                            |
+| Content-Type  | string | `application/json` (per richieste con corpo) |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Autenticazione** – L'API richiede un token bearer OAuth2/JWT. Ottenere un token da `https://api.aspose.cloud/connect/token` utilizzando il proprio client‑id e client‑secret, quindi includere l'intestazione `Authorization: Bearer <jwt token>` in ogni richiesta.
+
+La [specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookNames) definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di effettuare interazioni REST direttamente da un browser web.
+
+È possibile utilizzare lo strumento a riga di comando cURL per accedere ai servizi web di Aspose.Cells. L'esempio seguente mostra come chiamare l'API Aspose.Cells Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/names" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
   "Status": "string",
   "Names": {
@@ -73,18 +89,32 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/names" \
     ]
   }
 }
- 
 ```
+
+_Campi della risposta_
+
+- **Status** _(string)_ – Messaggio di stato dell'operazione.
+- **Names.link** _(object)_ – Informazioni sull'hyperlink della raccolta.
+- **Names.Count** _(integer)_ – Numero totale di nomi definiti restituiti.
+- **Names.NameList** _(array)_ – Elenco di oggetti nome; ogni oggetto contiene un oggetto **link** con i dettagli di navigazione.
+
+**Gestione degli errori** – Il servizio può restituire i seguenti codici di stato HTTP:
+
+| Codice | Significato            | Azione consigliata                                           |
+| ------ | ---------------------- | ------------------------------------------------------------ |
+| 401    | Non autorizzato        | Verificare che sia stato fornito un token JWT valido.        |
+| 404    | Non trovato            | Verificare che il nome del workbook, la cartella e lo storage siano corretti. |
+| 500    | Errore interno del server | Riprovare più tardi o contattare il supporto Aspose se il problema persiste. |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+## Famiglia di SDK Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+Utilizzare un SDK è il modo più rapido per sviluppare. Un SDK gestisce i dettagli di basso livello, consentendovi di concentrarvi sul vostro progetto. Consultate il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come chiamare i servizi web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -137,3 +167,4 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

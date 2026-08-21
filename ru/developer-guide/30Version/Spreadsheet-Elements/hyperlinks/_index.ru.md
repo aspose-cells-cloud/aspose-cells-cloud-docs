@@ -1,22 +1,26 @@
-﻿---
-title: Работа с гиперссылкой Excel
-second_title: Documen
-type: docs
-linktitle: Гиперссылка
-url: /ru/hyperlinks/
-aliases: [/working-with-hyperlinks/,/working-with-hyperlink/]
-keywords: REST API, hyperlinks, spreadsheets, exce
-description: "Cells.Cloud API для работы Excel: работа с гиперссылками в файле Excel"
-weight: 100
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Гиперссылки
 ---
-&nbsp;&nbsp;&nbsp;&nbsp;Гиперссылки в коде Excel позволяют пользователям создавать ярлыки для быстрого доступа к любому листу, файлу, папке или веб-странице. Это помогает нам быстро переходить к любой папке или ссылке.
+title: "Работа с гиперссылками в Excel"
+ArticleTitle: "Работа с гиперссылками в Excel – Документация Aspose Cells Cloud"
+second_title: "Документ"
+type: docs
+linktitle: "Гиперссылки"
+url: /ru/hyperlinks/
+aliases: [/ru/working-with-hyperlinks/, /ru/working-with-hyperlink/]
+keywords: "Excel, гиперссылки, Cells.Cloud, API, Aspose.Cells, электронная таблица, ссылки, руководство"
+description: "Изучите, как получать, добавлять, обновлять и удалять гиперссылки в Excel с помощью API Aspose Cells Cloud."
+weight: 100
+---
+
+Гиперссылки в Excel позволяют пользователям создавать ярлыки для листов, файлов, папок или веб-страниц, обеспечивая быстрый переход к нужному месту.
+
+**Необходимые условия:** действительный токен API (см. [Руководство по аутентификации](/authentication/)) и установленный SDK Cells.Cloud.
 
 ## Работа с гиперссылками в файле Excel
 
-- [Как получить описание гиперссылки из рабочего листа Excel.](/cells/ru/hyperlinks/get/)
-- [Как получить описание всех гиперссылок из рабочего листа Excel.](/cells/ru/hyperlinks/get-all/)
-- [Как добавить гиперссылки на рабочий лист Excel](/cells/ru/hyperlinks/add/)
-- [Как обновить гиперссылки в рабочем листе Excel](/cells/ru/hyperlinks/update/)
-- [Как удалить все гиперссылки из рабочего листа Excel](/cells/ru//hyperlinks/clear/)
-- [Как удалить гиперссылку из рабочего листа Excel](/cells/ru//hyperlinks/delete/)
+- [Как получить описание гиперссылки из листа Excel.](/cells/hyperlinks/get/) – Получить сведения об одной гиперссылке, включая её адрес и отображаемый текст.  
+- [Как получить описание всех гиперссылок из листа Excel.](/cells/hyperlinks/get-all/) – Получить список всех гиперссылок, определённых на листе, с их соответствующими свойствами.  
+- [Как добавить гиперссылки в лист Excel](/cells/hyperlinks/add/) – Вставить новую гиперссылку в лист, указав целевой URL и диапазон ячеек.  
+- [Как обновить гиперссылки в листе Excel](/cells/hyperlinks/update/) – Изменить адрес, отображаемый текст или целевую ячейку существующей гиперссылки.  
+- [Как удалить все гиперссылки из листа Excel](/cells/hyperlinks/clear/) – Удалить все гиперссылки с листа за одну операцию.  
+- [Как удалить гиперссылку из листа Excel](/cells/hyperlinks/delete/) – Удалить конкретную гиперссылку, определяемую по индексу или ссылке на ячейку.  
+---

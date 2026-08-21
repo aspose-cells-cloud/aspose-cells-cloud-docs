@@ -1,449 +1,290 @@
-﻿---
-title: الحصول على بيانات الخلايا بناءً على النطاق المسمى
-second_title: Documen
-linktitle: قيمة
-type: docs
-url: /ar/ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
-keywords: Get cells data based on named range on an Excel worksheet
-description: يدعم Cloud REST Aspose.Cells الحصول على بيانات الخلايا بناءً على نطاق مُسمّى في ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على بيانات الخلايا بناءً على نطاق مسمى
 ---
-يشير هذا REST API إلى الحصول على قائمة الخلايا في نطاق حسب اسم النطاق أو فهرس الصفوف والأعمدة
+title: "الحصول على بيانات الخلايا بناءً على النطاق المسماة"
+second_title: "Document"
+linktitle: "Values"
+type: docs
+url: /ranges/get/values/
+aliases: [/get-cells-data-based-on-named-range/]
+keywords: "Aspose.Cells, Cloud, REST API, Excel, named range, cell values, worksheet"
+description: "استرجاع قيم الخلايا من نطاق مسمّى في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. تتوافر هذه الخدمة عبر عدة SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go)، وتعمل على نطاق واسع من منصات التطوير."
+weight: 20
+ArticleTitle: "الحصول على بيانات الخلايا بناءً على النطاق المسماة – Aspose.Cells Cloud API"
+---
 
-## RSET API
+**المتطلبات المسبقة**
+
+- رمز وصول JWT صالح مع النطاق (scope) المناسب.  
+- يجب تحميل ملف المصنف إلى مساحة التخزين في Aspose Cloud (أو إلى مجلد مُحدَّد).  
+- تأكد من تزويده باسم مساحة التخزين المستهدفة إذا كنت تستخدم مساحة تخزين غير افتراضية.
+
+تُعيد هذه الواجهة البرمجية REST قائمة خلايا ضمن النطاق المُعرَّف إما بواسطة نطاق مسمّى أو بواسطة مؤشّرات الصف والعمود.
+
+يتيح هذا الإجراء للمطوّرين استرجاع قيم الخلايا التي تنتمي إلى نطاق مسمّى معيّن في ورقة عمل Excel برمجيًا. وبتقديم مُعرَّف `namedRange` أو المؤشّران الصريحان للصف والعمود، تُعيد الواجهة البرمجية قائمة مفصّلة بالخلايا، بما في ذلك عنوانها، ورقم الصف، ورقم العمود، والقيمة، ونوع البيانات، ومعلومات التنسيق. ويمكن استخدام الاستجابة لتشغيل تطبيقات مبنية على البيانات، وإنشاء تقارير، أو إجراء عمليات حسابية إضافية على الخادم. تدعم خدمة Aspose.Cells Cloud لغات برمجة متعددة عبر SDKs الخاصة بها، مما يضمن دمجًا سلسًا بغض النظر عن منصة التطوير. ويضمن استخدام HTTPS نقل البيانات بشكل آمن، وتوافق الواجهة البرمجية مبادئ REST، حيث تُعيد رموز حالة HTTP القياسية لحالات النجاح والأخطاء.
+
+## واجهة REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
 ```
 
-معلمات الطلب هي:
+### **مُعاملات الطلب**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل|
-| نطاق الاسم| خيط| استفسار| اسم النطاق، على سبيل المثال: 'A1:B2' أو 'range_name1'|
-| الصف الأول| عدد صحيح| استفسار| الصف الأول من النطاق|
-| العمود الأول| عدد صحيح| استفسار| العمود الأول من النطاق|
-| عدد الصفوف| عدد صحيح| استفسار| عدد الصفوف في النطاق|
-| عدد الأعمدة| عدد صحيح| استفسار| عدد الأعمدة في النطاق|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المُعامل | النوع | الموقع | الوصف |
+|-------------|-------|--------|-------|
+| name | string | path | اسم ملف المصنف. |
+| sheetName | string | path | اسم ورقة العمل داخل المصنف. |
+| namedRange | string | query | النطاق المسماة المراد استرجاعه، مثال: `A1:B2` أو `range_name1`. |
+| firstRow | integer | query | المؤشر المُعدّ من الصفر لصف النطاق الأول (يُستخدم عند عدم تزويد `namedRange`). |
+| firstColumn | integer | query | المؤشر المُعدّ من الصفر لعمود النطاق الأول (يُستخدم عند عدم تزويد `namedRange`). |
+| rowCount | integer | query | عدد الصفوف المراد تضمينها في النطاق. |
+| columnCount | integer | query | عدد الأعمدة المراد تضمينها في النطاق. |
+| folder | string | query | المجلد الذي يحتوي على المصنف. |
+| storageName | string | query | اسم مساحة التخزين السحابية التي يوجد فيها المصنف. |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue) واجهة برمجة تفاعلية مُتاحة عمومًا، وتسمح لك بإجراء تفاعلات REST مباشرة من متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL لاستدعاء خدمات Aspose.Cells بسهولة. يُظهر المثال التالي كيفية طلب قيم الخلايا من نطاق مسمّى.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/value?namerange=data" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "CellsList": [
-
     {
-
       "Name": "B10",
-
       "Row": 9,
-
       "Column": 1,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "C10",
-
       "Row": 9,
-
       "Column": 2,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "D10",
-
       "Row": 9,
-
       "Column": 3,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "E10",
-
       "Row": 9,
-
       "Column": 4,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "F10",
-
       "Row": 9,
-
       "Column": 5,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "G10",
-
       "Row": 9,
-
       "Column": 6,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "H10",
-
       "Row": 9,
-
       "Column": 7,
-
       "Value": "a8",
-
       "Type": "IsString",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">a8</Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     }
-
   ],
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**ملاحظة أمنية:** استخدم HTTPS دائمًا عند استدعاء الواجهة البرمجية. لا تدعم الخدمة بروتوكول HTTP العادي؛ ويضمن استخدام HTTPS تشفير الطلب والامتثال لأفضل الممارسات الأمنية.
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى | الوصف |
+|-------|--------|-------|
+| 200 | OK | تم تطبيق المرشّح بنجاح؛ وتحتوي الاستجابة على تفاصيل العملية. |
+| 400 | Bad Request | مُعاملات مفقودة أو غير صالحة (مثل: نوع ملف غير مدعوم). |
+| 401 | Unauthorized | رمز JWT غير صالح أو مفقود. |
+| 413 | Payload Too Large | تجاوز حجم الملف المرفوع الحد المسموح به. |
+| 500 | Internal Server Error | خطأ غير متوقع في الخادم. |
+
+**مثال على استجابة خطأ (400 Bad Request)**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "المُعامل 'namedRange' مفقود أو غير صالح."
+}
+```
+
+> **نصيحة:** تستخدم الواجهة البرمجية مؤشّرات تبدأ من الصفر لـ `firstRow` و`firstColumn`. فمثالً، يُمثّل الصف الأول في ورقة العمل القيمة `0`.
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو الطريقة الأكثر كفاءة لتسريع عملية التطوير. وتُجرّد SDK التفاصيل منخفضة المستوى، مما يتيح لك التركيز على منطق الأعمال. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر SDKs متنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -496,3 +337,4 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 {{< /tab >}}
 
 {{< /tabs >}}
+---

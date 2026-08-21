@@ -1,73 +1,91 @@
-﻿---
-title: 删除 Excel 工作表上的所有工作表验证
-second_title: Documen
-linktitle: 克莱尔
-type: docs
-url: /zh/validations/clear/
-keywords: Delete all worksheet validations from an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持从 Excel 工作表中删除所有工作表验证。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 10
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、删除 Excel 工作表上的所有工作表验证
 ---
-此 REST API 表示删除 Excel 工作表上的所有工作表验证。
+title: "删除工作表中的所有数据验证规则 – Aspose.Cells Cloud API"
+second_title: "文档"
+linktitle: "删除"
+type: docs
+url: /validations/clear/
+keywords: "Aspose.Cells Cloud, 删除工作表数据验证规则, Excel, REST API, 电子表格验证, API"
+description: "使用 Aspose.Cells Cloud REST API 删除 Excel 文件中工作表的全部数据验证规则。内容包括身份验证步骤、请求详情、cURL 示例、响应模式、错误处理以及 SDK 代码片段。"
+weight: 10
+---
 
-## 重新设置 API
+**前提条件**
+
+- 有效的 Aspose Cloud 账户。
+- 通过 Aspose Cloud 身份验证 API（`/connect/token`）获取的 JWT 访问令牌。
+- 工作簿必须存储在您的 Aspose Cloud 存储中（或必须提供适当的 `folder` 和/或 `storageName` 查询参数）。
+
+此 REST API 用于删除 Excel 工作表中的所有数据验证规则。
+
+## REST API
 
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
- 
 ```
 
-请求参数为：
+### **请求参数**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|验证索引|整数|小路|验证索引。|
-|文件夹|细绳|询问|文档的文件夹。|
-|存储名称|细绳|询问|存储名称。|
+| 参数名称      | 类型   | 位置   | 描述                                   |
+| ------------- | ------ | ------ | -------------------------------------- |
+| name          | string | path   | Excel 文档的名称。                     |
+| sheetName     | string | path   | 包含数据验证规则的工作表名称。         |
+| folder        | string | query  | 文档所在的文件夹。                     |
+| storageName   | string | query  | 存储服务的名称。                       |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) 定义了一个公开可用的编程接口，允许您直接通过网页浏览器执行 REST 交互。
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了在获取 JWT 令牌后如何使用 cURL 调用该 API。
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+### 错误处理
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| HTTP 状态码 | 含义         | 描述                                       |
+| ----------- | ------------ | ------------------------------------------ |
+| 400         | 请求错误     | 请求格式错误或缺少必需参数。               |
+| 401         | 未授权       | JWT 令牌缺失、无效或已过期。               |
+| 404         | 未找到       | 指定的工作簿或工作表不存在。               |
+| 500         | 服务器内部错误 | 服务器端发生意外错误。                     |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+错误响应体遵循相同的 JSON 结构，包含 `Code` 和 `Message` 字段，例如：
+
+```json
+{
+  "Code": 401,
+  "Message": "Invalid or expired token."
+}
+```
+
+## 云 SDK 家族
+
+使用 SDK 是最快捷的开发方式。SDK 抽象了底层细节，让您专注于业务逻辑。如需了解 Aspose.Cells Cloud SDK 的完整列表，请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)。
+
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,53 +1,99 @@
-﻿---
-title: OLE Nesnesini Dışa Aktar
-second_title: Documen
-linktitle: OLE Nesnesi
-type: docs
-url: /tr/export-excel-ole-object/
-aliases: [ /export/excel-ole-object/]
-keywords: Export Excel OLE object to kinds of format files
-description: Aspose.Cells Cloud REST API, Excel OLE nesnesinin çeşitli biçim dosyalarına aktarılmasını destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, OLE Nesnesini Dışa Aktar
 ---
-- **DİNLENME API**
+title: "OLE Nesnesini Dışa Aktar – Aspose.Cells Cloud API"
+second_title: "Belge"
+linktitle: "OLE Nesnesi"
+type: docs
+url: /export-excel-ole-object/
+aliases: [/export/excel-ole-object/]
+keywords: "Aspose.Cells, OLE nesnesi, dışa aktar, Excel, bulut API, PDF, PNG, DOCX, PPTX"
+description: "Aspose.Cells Cloud API kullanarak bir Excel çalışma kitabından OLE nesnelerini dışa aktarın. İstek formatını, parametreleri, örnek cURL isteğini ve hata işleme yöntemlerini öğrenin."
+weight: 20
+ArticleTitle: "OLE Nesnesini Dışa Aktar – Aspose.Cells Cloud API"
+---
 
-|**API**|**Tip**|**Tanım**|**Swagger Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/dışa aktarma|POSTALAMAK|İstek içeriğinden Excel'i bir biçime aktarın|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
-
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
-
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-
-- **Rica etmek**
+## **REST API**
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
-- **Cevap**
+### **Güvenlik ve Kimlik Doğrulama**
 
-```bash
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
+
+
+### İstek Parametreleri
+
+| Parametre       | Konum      | Tür   | Gerekli | Açıklama                                                                 |
+| --------------- | ---------- | ----- | ------- | ------------------------------------------------------------------------ |
+| `file`          | Form‑data  | dosya | Evet    | OLE nesnelerini içeren Excel çalışma kitabı (`.xlsx`, `.xls`, vb.).     |
+| `outputFormat`  | Sorgu      | string | Evet    | Dışa aktarılan nesnelerin hedef formatı (`pdf`, `png`, `jpeg`, `docx`, `pptx`). |
+| `objectType`    | Sorgu      | string | Evet    | Sabit değer: `oleobject`.                                                |
+
+
+### Yanıt
+
+Başarılı bir istek, dışa aktarılan dosyaları listeleyen bir JSON nesnesi döndürür:
+
+```json
 {
-    "Files": [{
-        "Filename": "OLESlide.ppt",
-        "FileSize": 390,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "OLEDoc.docx",
-        "FileSize": 382,
-        "FileContent": "-----Base64String--------"
-    }]
+  "Files": [
+    {
+      "Filename": "OLESlide.ppt",
+      "FileSize": 390,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "OLEDoc.docx",
+      "FileSize": 382,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
-- **Bulut SDK Ailesi**
+**HTTP Durum Kodları**
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| Kod | Anlam                       | Açıklama                                                  |
+|-----|-----------------------------|-----------------------------------------------------------|
+| 200 | Tamam                       | Filtre başarıyla uygulandı; yanıt işlem detaylarını içerir. |
+| 400 | Hatalı İstek                | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Yetkisiz                    | Geçersiz veya eksik JWT belirteci.                        |
+| 413 | Yük Çok Büyük               | Yüklenen dosya boyut sınırını aşıyor.                     |
+| 500 | İç Sunucu Hatası            | Beklenmeyen sunucu hatası.                                |
+## SDK’lar ile PostExport API Nasıl Kullanılır
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+### PostExport API Spesifikasyonu
+
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostExport), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web servislerine kolayca erişmek için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye nasıl istek gönderileceğini göstermektedir.
+
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject&format=pdf" \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -F "file=@MyWorkbook.xlsx" \
+  -F "outputFormat=pdf"
+```
+
+### OLE Nesnesi Nedir?
+
+Bir **OLE (Object Linking and Embedding – Nesne Bağlama ve Gömme)** nesnesi, Word belgeleri, PowerPoint slaytları, resimler veya diğer dosyalar gibi harici içerikleri bir Excel çalışma kitabının içine gömer. Dışa aktarılırken, gömülü içerik çıkarılır ve istenen çıktı formatında kaydedilir.
+
+### Endpoint Genel Bakış
+
+`POST https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject&format={outputFormat}`
+
+- `objectType` – `oleobject` olarak ayarlanmalıdır.
+- `format` – İstenen çıktı formatı (örneğin, `pdf`, `png`, `jpeg`, `docx`, `pptx`).
+
+### Aspose.Cells Cloud SDK’larını Kullanın
+
+SDK kullanmak, geliştirme sürecini hızlandırmak için en iyi yoldur. SDK, düşük seviye detayları yöneterek projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web servislerine nasıl istek gönderileceğini göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -100,3 +146,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

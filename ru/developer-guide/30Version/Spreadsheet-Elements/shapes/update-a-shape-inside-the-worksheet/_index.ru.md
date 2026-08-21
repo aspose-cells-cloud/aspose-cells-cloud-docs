@@ -1,76 +1,165 @@
-﻿---
-title: Обновить форму на листе Excel
-second_title: Documen
-linktitle: Обновление
-type: docs
-url: /ru/shapes/update/
-aliases: [/update-a-shape-inside-the-worksheet/]
-keywords: Update a shape on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает обновление формы на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 31
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Обновление фигуры на листе Excel
 ---
-Этот REST API указывает на обновление фигуры на листе Excel.
+title: "Обновление фигуры на листе Excel"
+second_title: "Документ"
+linktype: "Обновление"
+type: docs
+url: /shapes/update/
+aliases: [/update-a-shape-inside-the-worksheet/]
+keywords: "обновление фигуры в Excel через API, Aspose.Cells Cloud, обновление фигуры Excel, REST API, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
+description: "Узнайте, как обновить фигуру на листе Excel с помощью REST API Aspose.Cells Cloud. Включает HTTPS-конечную точку, данные по аутентификации, схему DTO, пошаговое руководство, пример cURL и примеры кода SDK для различных языков."
+ArticleTitle: "Обновление фигуры на листе Excel — API Aspose.Cells Cloud"
+weight: 31
+---
 
-## РСЕT API
+Этот REST API обновляет фигуру на листе Excel.
+
+## Безопасность и аутентификация
+
+API Aspose.Cells Cloud защищены и требуют [аутентификации на основе JWT-токена](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
 
-Параметры запроса:
+### Параметры запроса
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| название документа.|
-| Имя_листа| нить| путь| имя рабочего листа.|
-| индекс формы| целое число| путь| индекс формы в формах рабочего листа.|
-| дто|| тело||
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра   | Тип     | Местоположение | Описание                                                                                      |
+| ---------------- | ------- | -------------- | ---------------------------------------------------------------------------------------------- |
+| **name**         | string  | path           | Имя файла рабочей книги.                                                                       |
+| **sheetName**    | string  | path           | Имя листа, содержащего фигуру.                                                                  |
+| **shapeindex**   | integer | path           | Индекс фигуры (начиная с нуля) на листе.                                                       |
+| **dto**          | object  | body           | Объект передачи данных фигуры, содержащий обновлённые свойства (см. _Схему DTO_ ниже).         |
+| **folder**       | string  | query          | Папка, в которой хранится рабочая книга.                                                       |
+| **storageName**  | string  | query          | Имя облачного хранилища Aspose Cloud.                                                           |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetShape) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### Схема DTO
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Объект `dto` содержит свойства, которые можно обновить. Все поля являются необязательными, если не указано иное.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Поле                | Тип     | Обязательное | Описание                                                                           |
+| -------------------- | ------- | ------------ | ---------------------------------------------------------------------------------- |
+| **Name**            | string  | Нет          | Новое имя фигуры.                                                                  |
+| **UpperLeftRow**    | integer | Нет          | Индекс строки верхнего левого угла фигуры.                                         |
+| **UpperLeftColumn** | integer | Нет          | Индекс столбца верхнего левого угла фигуры.                                        |
+| **Width**           | integer | Нет          | Ширина фигуры (в пунктах).                                                         |
+| **Height**          | integer | Нет          | Высота фигуры (в пунктах).                                                         |
+| **RotationAngle**   | integer | Нет          | Угол поворота в градусах.                                                          |
+| **IsHidden**        | boolean | Нет          | `true`, чтобы скрыть фигуру.                                                       |
+| **IsLocked**        | boolean | Нет          | `true`, чтобы заблокировать фигуру.                                                |
+| **Font**            | object  | Нет          | Параметры шрифта (см. OpenAPI-спецификацию для подсвойств).                        |
+| **...**             | …       | Нет          | Дополнительные свойства, такие как `HtmlText`, `AlternativeText`, `ZOrderPosition` и др. |
 
-{{< tab tabNum="1" >}}
+> Полный список доступен в официальной OpenAPI-спецификации: <https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetShape>.
 
-```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes/0?folder=Temp" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d "{ \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" }, \"Name\": \"string\", \"MsoDrawingType\": \"string\", \"AutoShapeType\": \"string\", \"Placement\": \"string\", \"UpperLeftRow\": 0, \"Top\": 0, \"UpperLeftColumn\": 0, \"Left\": 0, \"LowerRightRow\": 0, \"Bottom\": 0, \"LowerRightColumn\": 10, \"Right\": 0, \"Width\": 0, \"Height\": 0, \"X\": 0, \"Y\": 0, \"RotationAngle\": 0, \"HtmlText\": \"string\", \"Text\": \"string\", \"AlternativeText\": \"string\", \"TextHorizontalAlignment\": \"string\", \"TextHorizontalOverflow\": \"string\", \"TextOrientationType\": \"string\", \"TextVerticalAlignment\": \"string\", \"TextVerticalOverflow\": \"string\", \"IsGroup\": true, \"IsHidden\": true, \"IsLockAspectRatio\": true, \"IsLocked\": true, \"IsPrintable\": true, \"IsTextWrapped\": true, \"IsWordArt\": true, \"LinkedCell\": \"string\", \"ZOrderPosition\": 0, \"Font\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"DoubleSize\": 0, \"IsBold\": true, \"IsItalic\": true, \"IsStrikeout\": true, \"IsSubscript\": true, \"IsSuperscript\": true, \"Name\": \"string\", \"Size\": 0, \"Underline\": \"string\" }, \"Hyperlink\": \"string\"}"
- 
-```
+### Заголовки запроса
 
-{{< /tab >}}
+- `Content-Type: application/json`
+- `Accept: application/json`
+- `Authorization: Bearer <accessToken>` _(JWT-токен, полученный на этапе _Аутентификации_)_
 
-{{< tab tabNum="2" >}}
+### Тело запроса (пример)
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Name": "MyShape",
+  "UpperLeftRow": 2,
+  "UpperLeftColumn": 3,
+  "Width": 150,
+  "Height": 80,
+  "RotationAngle": 0,
+  "IsHidden": false,
+  "IsLocked": false,
+  "Font": {
+    "Name": "Calibri",
+    "Size": 12,
+    "IsBold": true,
+    "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }
+  }
 }
- 
 ```
 
-{{< /tab >}}
+## Пример с использованием cURL (инструмент командной строки)
 
-{{< /tabs >}}
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes/0?folder=Temp" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <accessToken>" \
+  -d '{
+        "Name": "UpdatedShape",
+        "UpperLeftRow": 1,
+        "UpperLeftColumn": 1,
+        "Width": 120,
+        "Height": 60,
+        "IsHidden": false,
+        "IsLocked": false
+      }'
+```
+
+### Ответ
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+**Обработка ошибок** – API может возвращать следующие коды состояния:
+
+| Код | Значение              | Типичная причина                                     |
+| ---- | --------------------- | ---------------------------------------------------- |
+| 400  | Bad Request           | Неверный JSON или отсутствуют обязательные поля.    |
+| 401  | Unauthorized          | Отсутствует или недействителен JWT-токен.           |
+| 404  | Not Found             | Рабочая книга, лист или индекс фигуры не найдены.    |
+| 500  | Internal Server Error | Непредвиденная ошибка на стороне сервера.            |
+
+**Примеры ответов об ошибках**
+
+*400 – Bad Request*
+
+```json
+{
+  "Code": 400,
+  "Message": "Неверный полезный запрос. Поле 'Name' превышает максимальную длину."
+}
+```
+
+*401 – Unauthorized*
+
+```json
+{
+  "Code": 401,
+  "Message": "Ошибка аутентификации. Недействительный или просроченный JWT-токен."
+}
+```
+
+*404 – Not Found*
+
+```json
+{
+  "Code": 404,
+  "Message": "Указанная рабочая книга, лист или индекс фигуры не найдены."
+}
+```
+
+*500 – Internal Server Error*
+
+```json
+{
+  "Code": 500,
+  "Message": "На сервере произошла непредвиденная ошибка."
+}
+```
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

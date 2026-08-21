@@ -1,17 +1,20 @@
-﻿---
-title: Объединение и разделение файлов Excel
-second_title: Documen
-linktitle: Объединение и разделение
+---
+title: "Объединение и разделение файлов Excel"
+second_title: "Документация"
+linktitle: "Объединение и разделение"
 type: docs
 url: /ru/merge-and-split/
-keywords: Merge Excel Files,Combine Excel Sheets,Join Excel Spreadsheets,Merge Multiple Excel Files,Split Excel File,Excel Sheet Separator,Excel Workbook Splitte
-description: Aspose.Cells Cloud REST API поддерживает работу со слиянием и разделением файлов Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 32
-kwords: Объединение файлов Excel, объединение листов Excel, объединение электронных таблиц Excel, объединение нескольких файлов Excel, разделение файлов Excel, разделитель листов Excel, разделитель рабочих книг Excel
+keywords: "Aspose.Cells Cloud, объединение файлов Excel, разделение рабочей книги Excel, API для Excel"
+description: "Узнайте, как использовать REST API Aspose.Cells Cloud для объединения нескольких рабочих книг в один файл и разделения рабочей книги на отдельные файлы. Доступны SDK для Android, .NET, Go, Java, Node.js, Perl, PHP, Python, Ruby и Swift."
+ArticleTitle: "Объединение и разделение файлов Excel – Документация Aspose.Cells Cloud"
 ---
-## Объединить и разделить с файлами Excel
 
-- [Как объединить несколько файлов Excel в файл Excel.](/cells/ru/merge-multi-files-into-excel/)
-- [Как объединить рабочие книги Excel с другими файлами Excel.](/cells/ru/merge-an-excel-file-into-the-excel-file/)
-- [Как разделить несколько файлов Excel.](/cells/ru/split-multi-excel-files/)
-- [Как разделить книгу Excel на несколько файлов.](/cells/ru/split-an-excel-file-to-multi-files/)
+## Объединение и разделение с файлами Excel
+
+В следующих руководствах описано, как объединить несколько рабочих книг Excel в один файл или разделить рабочую книгу на несколько файлов с помощью Aspose.Cells Cloud.
+
+- **Объединение нескольких файлов:** [Как объединить несколько файлов Excel в одну рабочую книгу](/ru/cells/merge-multi-files-into-excel/) – Объединить несколько рабочих книг в одну сводную рабочую книгу.  
+- **Объединение в существующую рабочую книгу:** [Как объединить рабочую книгу Excel с другой рабочей книгой](/ru/cells/merge-an-excel-file-into-the-excel-file/) – Добавить содержимое одной рабочей книги в уже существующую рабочую книгу.  
+- **Разделение нескольких файлов:** [Как разделить несколько файлов Excel](/ru/cells/split-multi-excel-files/) – Разделить набор рабочих книг на отдельные файлы.  
+- **Разделение на несколько файлов:** [Как разделить рабочую книгу Excel на несколько файлов](/ru/cells/split-an-excel-file-to-multi-files/) – Разделить одну рабочую книгу на несколько более мелких рабочих книг.
+---

@@ -1,26 +1,30 @@
-﻿---
-title: So legen Sie die Speicherposition für Aspose.Cells Cloud Docker Container-Speicher fest
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Docker Container Storage Configuratio
-linktitle: Containerlagerung
-type: docs
-url: /de/docker/storage/
-description: So legen Sie die Speicherposition für Aspose.Cells Cloud Docker Container-Speicher fest
-weight: 30
-kwords: Excel Cloud-Docker-Container, Self-Cloud-Docker-Container, REST-Docker-Container, Tabellenkalkulation, PDF, CSV, Json, Markdown, Docker-Image, Docker-Container ausführen
 ---
-## Standardspeicherkonfiguration ##
+title: "So legen Sie die Speicherposition für den Aspose.Cells Cloud Docker-Container fest"
+second_title: "Dokument"
+ArticleTitle: "Konfiguration des Aspose.Cells Cloud Docker-Container-Speichers"
+linktitle: "Container-Speicher"
+type: docs
+url: /docker/storage/de/
+description: "Konfigurieren Sie den Speicherort für Aspose.Cells Cloud Docker-Container mithilfe von JSON, PowerShell oder Bash."
+weight: 30
+keywords: "Aspose.Cells, Docker, Container-Speicher, JSON-Konfiguration, PowerShell, Bash"
+---
+
+**Zusammenfassung**: Dieser Leitfaden zeigt, wie Sie den Speicherort für Aspose.Cells Cloud Docker-Container unter Windows und Linux mithilfe von JSON-Konfigurationsdateien und Docker-`run`-Befehlen konfigurieren.
+
+## Standard-Speicherkonfiguration ##
+
+**Voraussetzungen**: Stellen Sie sicher, dass Docker Engine 20.10+ installiert ist, Sie über gültige Aspose.Cells Cloud-Lizenzschlüssel (`LicensePublicKey` und `LicensePrivateKey`) verfügen und der Host-Ordner, den Sie für den Speicher verwenden möchten (z. B. `c:/data` unter Windows oder `/data` unter Linux), mit entsprechenden Berechtigungen vorhanden ist.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
 {{< tab tabNum="1" >}}
 
-``` json
-
+```json
 {
   "Local": [
     {
-      "Name": "First Storage",
+      "Name": "Erster Speicher",
       "RootFolder": "c:/data"
     }
   ]
@@ -31,52 +35,66 @@ kwords: Excel Cloud-Docker-Container, Self-Cloud-Docker-Container, REST-Docker-C
 
 {{< tab tabNum="2" >}}
 
-``` json
-
+```json
 {
   "Local": [
     {
-      "Name": "First Storage",
+      "Name": "Erster Speicher",
       "RootFolder": "/data"
     }
   ]
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-##  Standardposition ##
+## Standardposition ##
 
-- **Fenster**
+- **Windows**
 
 ```powershell
-
 c:\app\storageResource.json
-
 ```
 
 - **Linux**
 
-```linux
-
+```bash
 /app/storageResource.json
-
-
 ```
 
-##  Benutzerdefinierte Speicherkonfiguration ##
+## Benutzerdefinierte Speicherkonfiguration ##
 
-Das Speicherprofil für die Cloud-Image-Datei Aspose.Cells muss neu angegeben werden, wenn der Kunde einen Speicherordner angeben muss.
+Geben Sie ein benutzerdefiniertes Speicherprofil an, wenn Sie einen anderen Ordner für Aspose.Cells Cloud-Daten verwenden möchten.
 
-``` powershell
-
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey  -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
-
+```bash
+docker run -d \
+  -v c:/data:c:/data \   # Host-Ordner als Container-Speicher einbinden
+  -p 47900:5000 \        # API-Port zuweisen
+  -e LicensePublicKey=IhrLicensePublicKey \
+  -e LicensePrivateKey=IhrLicensePrivateKey \
+  -e storagesCredentialsFilePath=c:/data/storageResource.json \
+  --name asposecellscloud \
+  aspose/cells-cloud:ltsc2019.22.9.0
 ```
 
-**Referenzdokument** :
+*Linux-Beispiel*:
 
-- [So führen Sie den Cloud Docker-Container Aspose.Cells aus.]( https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)
+```bash
+docker run -d \
+  -v /data:/data \       # Host-Ordner als Container-Speicher einbinden
+  -p 47900:5000 \        # API-Port zuweisen
+  -e LicensePublicKey=IhrLicensePublicKey \
+  -e LicensePrivateKey=IhrLicensePrivateKey \
+  -e storagesCredentialsFilePath=/data/storageResource.json \
+  --name asposecellscloud \
+  aspose/cells-cloud:ltsc2019.22.9.0
+```
+
+**Referenzdokumentation**:
+
+- [So führen Sie den Aspose.Cells Cloud Docker-Container aus.](https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)
+- [Funktionen des Docker-Containers](https://docs.aspose.cloud/cells/docker/container-features/)
+- [Herunterladen des Aspose.Cells Cloud Docker-Images](https://docs.aspose.cloud/cells/docker/download-image/)
+- [Verwalten von Container-Tags](https://docs.aspose.cloud/cells/docker/manage-tags/)

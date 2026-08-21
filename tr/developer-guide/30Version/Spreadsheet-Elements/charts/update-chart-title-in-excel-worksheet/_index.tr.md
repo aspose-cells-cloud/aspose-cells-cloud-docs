@@ -1,76 +1,93 @@
-﻿---
-title: Excel Çalışma Sayfasındaki Grafik Başlığını Güncelle
+---
+title: "Excel Çalışma Sayfasında Grafik Başlığını Güncelleme"
 type: docs
-url: /tr/charts/title/update/
+url: /charts/title/update/
 aliases: [/update-chart-title-in-excel-worksheet/]
 weight: 160
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel Çalışma Sayfasındaki Grafik Başlığını Güncelle
+keywords: Excel, Aspose.Cells, REST API, Grafik Başlığı, Güncelleme, Bulut SDK'sı
+description: Aspose.Cells Cloud REST API, cURL ve çeşitli SDK'lar kullanarak Excel çalışma sayfasında bir grafik başlığını nasıl güncelleyeceğinizi öğrenin.
+ArticleTitle: "Excel Çalışma Sayfasında Grafik Başlığını Güncelleme – Aspose.Cells Cloud Dokümantasyonu"
 ---
-Bu REST API, grafik başlığının güncellendiğini gösterir
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
- 
+
+Bu REST API, grafik başlığını günceller.
+
+**Ön Gereksinimler:** Geçerli bir Aspose Cloud hesabınız ve yetkilendirme için bir JWT jetonuna sahip olmalısınız. Tipik adımlar şunları içerir:
+
+- Aspose Cloud hesabına kaydolun.  
+- Kimlik doğrulama uç noktası aracılığıyla bir JWT jetonu oluşturun.  
+- Hedef çalışma kitabının desteklenen bir bulut depolama alanına (varsayılan veya özel) kaydedildiğinden emin olun.
+
+## PostWorksheetChartTitle API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabı adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| grafikIndeksi| tam sayı| yol| Grafik endeksi.|
-| başlık|| vücut| Grafik başlığı|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
- 
-<br/>
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Tüm API çağrıları, karışık içerik uyarılarını önlemek için **HTTPS** üzerinden yapılmalıdır.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT jeton tabanlı kimlik doğrulamayı</a> gerektirir.
+
+### İstek Parametreleri
+
+| Parametre Adı | Tür      | Konum  | Açıklama                               |
+| ------------- | -------- | ------ | -------------------------------------- |
+| name          | string   | path   | Çalışma kitabı adı.                    |
+| sheetName     | string   | path   | Çalışma sayfası adı.                   |
+| chartIndex    | integer  | path   | Grafik için sıfır tabanlı dizin.       |
+| title         | string   | body   | Yeni grafik başlığı.                   |
+| folder        | string   | query  | Çalışma kitabının bulunduğu klasör.    |
+| storageName   | string   | query  | Depo adı.                              |
+
+### Yanıt Durum Kodları
+
+| Kod  | Açıklama                                           |
+| ---- | -------------------------------------------------- |
+| 200  | Tamam – Grafik başlığı başarıyla güncellendi.     |
+| 400  | Hatalı İstek – Eksik veya geçersiz parametreler.  |
+| 401  | Yetkisiz – Geçersiz veya eksik JWT jetonu.        |
+| 404  | Bulunamadı – Çalışma kitabı, çalışma sayfası veya grafik bulunamadı. |
+| 500  | İç Sunucu Hatası – Beklenmeyen sunucu durumu.      |
+
+**Not:** `chartIndex` sıfır tabanlıdır; bir çalışma sayfasındaki ilk grafik `0` ile referans alınır.
+
+<a href="https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle" target="_blank" rel="noopener noreferrer">OpenAPI Spesifikasyonu</a>, herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından yapmanızı sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sine nasıl çağrı yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v POST "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" 
--d '{"Text":"Stock exchange"}' 
--X POST \
+```bash
+curl -v POST "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
+-d '{"title":"Borsa"}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
 ## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+
+SDK kullanmak, geliştirme hızını artırmak için en iyi yoldur. Bir SDK, düşük seviye detayları yönetir ve size proje görevlerinize odaklanma imkanı verir. Aspose.Cells Cloud SDK'larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub deposuna</a> göz atın.
+
+Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapıldığını göstermektedir:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -133,3 +150,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

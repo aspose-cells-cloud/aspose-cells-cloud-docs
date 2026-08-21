@@ -1,74 +1,101 @@
-﻿---
-title: Kombiniert einen Bereich von Cells in einer einzigen Zelle
-second_title: Documen
-linktitle: Merg
-type: docs
-url: /de/ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
-keywords: Merge a range of cells into a single cell
-description: Aspose.Cells Cloud REST API unterstützt das Zusammenführen eines Zellbereichs zu einer einzigen Zelle auf einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, kombiniert einen Bereich von Cells in einer einzelnen Zelle
 ---
-Dieser REST API gibt an, dass ein Zellbereich in einem Excel-Arbeitsblatt zu einer einzigen Zelle zusammengeführt werden soll.
+title: "Aspose.Cells Cloud API – Zellbereich zusammenführen"
+second_title: "Dokument"
+linktitle: "Zusammenführen"
+type: docs
+url: /ranges/merge/
+aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+keywords: "Aspose.Cells, Zellen zusammenführen, Excel-API, REST, Cloud-SDK"
+description: "Führen Sie einen Zellbereich mithilfe der Aspose.Cells Cloud REST API in einer einzigen Zelle zusammen. Erfahren Sie mehr über das Anfrageformat, die Parameter und SDK-Beispiele für C#, Java, Python und mehr."
+weight: 20
+---
 
-## RSET API
+Diese REST API führt einen Zellbereich in einer einzigen Zelle auf einem Excel-Arbeitsblatt zusammen.
+
+**Übersicht** – Beim Zusammenführen eines Bereichs werden die ausgewählten Zellen zu einer einzigen Zelle verschmolzen, wobei der Wert der oberen linken Zelle beibehalten und die übrigen verworfen werden. Verwenden Sie diesen Vorgang, wenn Sie eine Kopfzeile erstellen möchten, die mehrere Spalten oder Zeilen überspannt, oder wenn Sie das Layout eines Arbeitsblatts vereinfachen möchten.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
 ```
 
-Die Anforderungsparameter sind:
+### **Anfrageparameter**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Arbeitsmappenname|
-| Blattname| Schnur| Weg| Arbeitsblattname|
-| Reichweite|| Körper| Bereich im Arbeitsblatt|
-| Ordner| Schnur| Abfrage| Arbeitsmappenordner.|
-| Speichername| Schnur| Abfrage| Speichername.|
+| Parametername   | Typ    | Ort    | Beschreibung                                         |
+| --------------- | ------ | ------ | ---------------------------------------------------- |
+| **name**        | string | path   | Name der Arbeitsmappe.                               |
+| **sheetName**   | string | path   | Name des Arbeitsblatts.                             |
+| **range**       | object | body   | Bereichsobjekt, das die zusammenzuführenden Zellen angibt. |
+| **folder**      | string | query  | Ordner, in dem die Arbeitsmappe gespeichert ist.    |
+| **storageName** | string | query  | Name des Speichers.                                  |
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMerge) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+#### Schema des Anfragetexts
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+Das **Range**-Objekt muss die folgenden Felder enthalten (alle anderen sind optional):
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Eigenschaft     | Typ     | Erforderlich | Beschreibung                                         |
+| --------------- | ------- | ------------ | ---------------------------------------------------- |
+| **FirstRow**    | integer | Ja           | Nullbasierter Index der ersten Zeile im Bereich.    |
+| **FirstColumn** | integer | Ja           | Nullbasierter Index der ersten Spalte im Bereich.   |
+| **RowCount**    | integer | Ja           | Anzahl der im Bereich einzuschließenden Zeilen.      |
+| **ColumnCount** | integer | Ja           | Anzahl der im Bereich einzuschließenden Spalten.     |
+| **Name**        | string  | Nein         |OPTIONALER Name für den Bereich.                      |
+| **RefersTo**    | string  | Nein         | Eine Formel, auf die der Bereich verweist.           |
+| **Worksheet**   | string  | Nein         | Name des Arbeitsblatts (sofern unterschiedlich vom Pfadparameter). |
+| **RowHeight**   | number  | Nein         | Höhe der Zeilen im Bereich (Pixel).                  |
+| **ColumnWidth** | number  | Nein         | Breite der Spalten im Bereich (Pixel).               |
+
+Sie können das cURL-Befehlszeilentool verwenden, um einfach auf die Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie ein Aufruf an die Cloud API mit cURL durchgeführt wird.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anfrage" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/merge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "FirstRow": 9,
+        "FirstColumn": 0,
+        "RowCount": 1,
+        "ColumnCount": 7
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+#### Antwortdetails
+
+| HTTP-Status                   | Beschreibung                                            | Beispiel-JSON                                          |
+| ----------------------------- | ------------------------------------------------------- | ------------------------------------------------------ |
+| **200 OK**                    | Der Bereich wurde erfolgreich zusammengeführt.         | `{ "Code": 200, "Status": "OK" }`                      |
+| **400 Bad Request**           | Ungültige Bereichsparameter (z. B. Indices außerhalb des gültigen Bereichs). | `{ "Code": 400, "Message": "Ungültiger Bereich." }`   |
+| **401 Unauthorized**          | Fehlendes oder ungültiges JWT-Token.                   | `{ "Code": 401, "Message": "Authentifizierung fehlgeschlagen." }` |
+| **404 Not Found**             | Arbeitsmappe oder Arbeitsblatt nicht gefunden.         | `{ "Code": 404, "Message": "Ressource nicht gefunden." }` |
+| **500 Internal Server Error** | Unerwarteter Serverfehler.                             | `{ "Code": 500, "Message": "Interner Serverfehler." }` |
+
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK übernimmt die Details der unteren Schicht, sodass Sie sich auf Ihre Projekt Aufgaben konzentrieren können. Besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -121,3 +148,5 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---

@@ -1,67 +1,69 @@
-﻿---
-title: Aspose.Cells Cloud Web API — Поиск содержимого диапазона в удаленной электронной таблице
-second_title: Documen
-ArticleTitle: Search Range Content in Remote Spreadshee
-linktitle: Поиск содержимого в удаленном диапазоне
-type: docs
-url: /ru/search-content-in-remote-range/
-keywords: Excel API, Remote Spreadsheet Search, Cloud Storage, Data Retrieval, Spreadsheet Search, Text Search AP
-description: Эффективный поиск текста в указанном диапазоне удаленной электронной таблицы, хранящейся в облачном хранилище, с помощью Excel API
-weight: 100
-kwords: Excel, Office Облако, REST API, Электронная таблица, Текстовый поиск, JSON, CSV, PDF, Markdown, Сопоставление пустых значений Cells в Exce
 ---
-Поиск указанного текста в диапазоне удаленной электронной таблицы.
+title: "Aspose Cells Cloud API для поиска текста в Excel — поиск текста в удаленных диапазонах электронных таблиц"
+second_title: "Документ"
+ArticleTitle: "Поиск текста в удаленных файлах Excel — извлечение данных из конкретных диапазонов"
+linktype: "search-content-in-remote-range"
+type: docs
+url: /search-content-in-remote-range/
+keywords: "Aspose.Cells, Excel API, поиск текста, удаленный диапазон, облачная электронная таблица, REST API, обнаружение данных"
+description: "Поиск текста, чисел или формул в заданном диапазоне книги Excel, хранящейся в Aspose Cloud."
+weight: 100
+---
 
-## **Поиск контента в удаленном диапазоне API**
+## **Поиск содержимого в удаленном диапазоне**
+
+Программно ищите конкретный текст в любом диапазоне электронных таблиц Excel с помощью API Aspose.Cells Cloud. Находите текст, числа или формулы в файлах, хранящихся в облачном хранилище. RESTful API для автоматизированного обнаружения данных, анализа содержимого и выполнения процессов аудита электронных таблиц.
+
+
+### **Веб-API**
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/content
+PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/content
 ```
 
-### **Параметры запроса:**
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody| Описание|
-|:- |:- |:- |:- |
-|имя|Нить|Путь|Имя файла электронной таблицы.|
-|рабочий лист|Нить|Путь|Название рабочего листа.|
-|cellArea|Нить|Путь|Диапазон ячеек, в котором следует выполнить поиск.|
-|searchText|Нить|Запрос|Текст для поиска.|
-|игнорируяРегистр|Булевое значение|Запрос|Укажите, следует ли при поиске игнорировать регистр.|
-|папка|Нить|Запрос|Папка, в которой хранится файл.|
-|имя_хранилища|Нить|Запрос|(Необязательно) Имя хранилища, если используется пользовательское облачное хранилище. Если не указано, используйте хранилище по умолчанию.|
-|regoin|Нить|Запрос|Настройка региона электронной таблицы.|
-|пароль|Нить|Запрос|Пароль для открытия файла электронной таблицы.|
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
-### **Ответ**
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+
+**Пример cURL**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Orders_2024/ranges/B2:H100/search/content?searchText=Report&ignoreCase=true" \
+     -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+     -H "Content-Type: application/json"
+```
+
+### Параметры запроса
+
+| Имя параметра | Тип    | Путь/Запрос/Строка/HTTPBody | Описание                                                                                                                                              |
+| :------------ | :------ | :------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name          | String  | Path                       | **Обязательный**. Имя файла (с расширением) книги Excel, в которой необходимо выполнить поиск, например `customer_data.xlsx`.                         |
+| worksheet     | String  | Path                       | **Обязательный**. Точное имя листа внутри книги, в котором необходимо выполнить поиск, например `Orders_2024`.                                         |
+| cellArea      | String  | Path                       | **Обязательный**. Целевой диапазон ячеек для поиска, указанный в нотации A1 (например, `B2:H100`). Поиск ограничен этой областью.                     |
+| searchText    | String  | Query                      | **Обязательный**. Конкретная строка текста, число или фрагмент содержимого, который необходимо найти в заданном диапазоне ячеек.                        |
+| ignoreCase    | Boolean | Query                      | **Необязательный**. Если установлено значение `true`, поиск игнорирует регистр (например, «Report» соответствует «report»). По умолчанию — `false` (с учетом регистра). |
+| folder        | String  | Query                      | **Необязательный**. Путь к каталогу в вашем облачном хранилище, где находится книга. Если не указан, используется корневой каталог.                    |
+| storageName   | String  | Query                      | **Необязательный**. Идентификатор настраиваемой конфигурации облачного хранилища. Если не указан, используется хранилище по умолчанию для аккаунта.  |
+| region        | String  | Query                      | **Необязательный**. Настройки культуры/региона (например, `ru-RU`), которые могут повлиять на интерпретацию регионально-специфичных символов или форматов при поиске. |
+| password      | String  | Query                      | **Необязательный**. Пароль для расшифровки и доступа к защищенному паролем файлу электронной таблицы. Не указывайте, если файл не зашифрован.         |
+
+### Ответ
 
 ```json
 {
-  "Name": "BrokenLinksResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "Properties": [
+  "Code": 200,
+  "Status": "OK",
+  "TextItems": [
     {
-      "Name": "BrokenLinks",
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "BrokenLink",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "BrokenLink",
-        },
-      }
-    },
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
+      "Filename": "string",
+      "Worksheet": "string",
+      "Position": "string",
+      "Content": "string"
     }
   ]
 }
@@ -69,56 +71,60 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cel
 
 ### Коды ошибок
 
-- **400 Неверный запрос**: Неверный URI Apose.Cells Cloud API.
-- **401 Неавторизованный**: Недействительный токен доступа. Или недействительный идентификатор клиента и секретный ключ.
-- **404 Не найдено**: Файл электронной таблицы недоступен.
-- **500 Ошибка сервера**: В электронной таблице обнаружена аномалия при получении расчетных данных.
+- **400 Bad Request** — Неверный URI API Aspose.Cells Cloud.  
+- **401 Unauthorized** — Неверный токен доступа, client ID или client secret.  
+- **404 Not Found** — Файл электронной таблицы недоступен.  
+- **500 Server Error** — Непредвиденное состояние, препятствующее выполнению запроса сервером.
 
-## Где следует использовать содержимое поиска в диапазоне электронной таблицы API?
+## Где следует использовать API поиска содержимого в диапазоне электронной таблицы?
 
-Если вам необходимо выполнить поиск контента в диапазоне электронных таблиц, вы можете использовать этот код API.
+- **Масштабная проверка качества данных** — На этапе приемки в процессе ETL хранилища данных ищите отсутствующие описания полей, неопредленные сокращения или заполнители (например, `"TBD"` или `"NULL"`) в таблице сопоставления данных (`DataDictionary!B2:F1000`), чтобы выявить неполные определения данных.  
+- **Динамическая генерация отчетов и извлечение содержимого** — В автоматизированных системах формирования отчетов интеллектуально ищите и извлекайте блоки данных текущего периода, помеченные конкретными идентификаторами (например, `"[KPI]"`), из шаблонных листов с разнородными данными (`Monthly_Metrics!C10:G50`) для формирования окончательного отчета.  
+- **Анализ контрактных и юридических документов** — При проверке приложений к электронным таблицам, содержащих много условий, эффективно находите конкретные юридические термины (например, `"liability limit"`), названия сторон или даты в заданном диапазоне (`Contract_Terms!A:A`), чтобы ускорить процесс проверки.
 
-## Почему вам следует использовать поисковый контент в диапазоне Spreadsheet API?
+## Почему стоит использовать API поиска содержимого в диапазоне электронной таблицы?
 
-- С легкостью ищите контент в удаленных электронных таблицах с помощью API.
-- Разработку можно быстро завершить с помощью существующего SDK.
+- **Удобный для разработчиков** — Aspose.Cells Cloud предоставляет SDK-библиотеки на множестве языков программирования, что позволяет быстро разрабатывать решения при наличии подробной документации, значительно сокращая объем работы по сравнению с созданием собственных решений.  
+- **Снижение трудозатрат** — Устраняет необходимость в отдельных сотрудниках, отвечающих за консолидацию документов.  
+- **Платежи по факту использования** — Нет необходимости в первоначальных вложениях; вы платите только за фактически выполненные вызовы API.  
+- **Отсутствие затрат на обслуживание** — Нет необходимости в обслуживании серверов, обновлении программного обеспечения и решении проблем совместимости.
 
-## Как использовать поиск неработающих ссылок в диапазоне электронной таблицы API с SDK
+## Как использовать API поиска содержимого в диапазоне электронной таблицы с помощью SDK
 
 ### Спецификация OpenAPI
 
- The[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteRange) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteRange) определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия напрямую из веб-браузера.
 
-### Используйте облачные SDK Aspose.Cells
+### Использование SDK Aspose.Cells Cloud
 
-Использование SDK — лучший способ ускорить разработку. SDK берёт на себя все базовые детали, позволяя вам легко реализовать поиск по содержимому ячеек в различных электронных таблицах с минимальным количеством кода.
- Пожалуйста, проверьте[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK скрывает детали реализации, позволяя вам просто реализовать поиск содержимого в диапазоне ячеек с минимальным количеством кода. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-сервисов Aspose.Cells Cloud с использованием различных SDK:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchTextInRemoteRange.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchTextInRemoteRange.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchTextInRemoteRange.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchTextInRemoteRange.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchTextInRemoteRange.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchTextInRemoteRange.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchTextInRemoteRange.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchTextInRemoteRange.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchTextInRemoteRange.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchTextInRemoteRange.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchTextInRemoteRange.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchTextInRemoteRange.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchTextInRemoteRange.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchTextInRemoteRange.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchTextInRemoteRange.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchTextInRemoteRange.go" >}}
+{{</tab>}}
 {{< /tabs >}}
+---

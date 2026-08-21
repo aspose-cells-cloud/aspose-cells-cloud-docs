@@ -1,65 +1,62 @@
-﻿---
-title:  فرز النطاق
-second_title: Documen
-linktitle: سور
-type: docs
-keywords: Range Sort
-url: /ar/ranges/sort/
-description:  تعيين حدود تفصيلية حول نطاق من الخلايا.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، فرز النطاق
 ---
-يشير هذا REST API إلى فرز النطاق.
+title: ترتيب النطاق
+second_title: "Document"
+linktitle: "Sort"
+type: docs
+keywords: "ترتيب النطاق، Aspose.Cells Cloud، واجهة برمجة تطبيقات REST، ملف جدول بيانات، Excel، API"
+url: /ranges/sort/
+description: توفر واجهة برمجة تطبيقات لترتيب نطاق من الخلايا داخل ملف عمل باستخدام Aspose.Cells Cloud.
+weight: 20
+---
 
-## RSET API
+تهيء هذه واجهة برمجة تطبيقات REST ترتيب نطاق مُحدّد من الخلايا.
+
+## واجهة برمجة تطبيقات REST
 
 ```bash
-
-POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/sort
-
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/sort
 ```
 
-معلمات الطلب هي:
+المعاملات المطلوبة هي:
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-|اسم|خيط|طريق|اسم المصنف.|
-|اسم الورقة|خيط|طريق|اسم ورقة العمل.|
-|نطاق التشغيل|فصل|جسم| طلب فرز النطاق|
-|مجلد|خيط|استفسار|مجلد المصنف الأصلي.|
-|اسم التخزين|خيط|استفسار|اسم التخزين.|
+| اسم المعامل | النوع   | الموقع | الوصف                                           |
+|-------------|---------|--------|--------------------------------------------------|
+| name        | String  | Path   | اسم ملف العمل.                                   |
+| sheetName   | String  | Path   | اسم ورقة العمل.                                  |
+| rangeOperate| Class   | Body   | كائن طلب ترتيب النطاق.                            |
+| folder      | String  | Query  | المجلد الذي يحتوي على ملف العمل الأصلي.          |
+| storageName | String  | Query  | اسم وحدة التخزين.                                |
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangeSort) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+يُعرّف [مواصفة OpenAPI](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangeSort) واجهة برمجة تطبيقات متاحة عمومًا وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات ويب Aspose.Cells. يوضح المثال التالي كيفية إجراء المكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 {{< tab tabNum="1" >}}
 
 ```powershell
 curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/sort" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
 ```powershell
-
+# (سيتم عرض مثال للاستجابة هنا)
 ```
 
 {{< /tab >}}
-
 {{< /tabs >}}
 
 ## عائلة SDK السحابية
 
-يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى مراجعة مستودع GitHub للاطلاع على قائمة كاملة بمجموعات تطوير البرمجيات السحابية (Aspose.Cells).
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. وتتولى SDK معالجة التفاصيل منخفضة المستوى، وتسمح لك بالتركيز على مهام مشروعك. يُرجى مراجعة مستودع GitHub للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية إجراء المكالمات إلى خدمات ويب Aspose.Cells باستخدام مكتبات SDK متنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

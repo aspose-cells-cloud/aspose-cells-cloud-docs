@@ -1,99 +1,73 @@
-﻿---
-title: Ottieni dati di celle da un foglio di lavoro
+---
+title: "Ottenere i dati di una cella da un foglio di calcolo"
 type: docs
 url: /it/get-cell-data-from-a-worksheet/
 weight: 10
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni dati di celle da un foglio di lavoro
+keywords: "Aspose.Cells Cloud, ottenere dati cella, Excel API, REST API, valore cella, API foglio di calcolo, esempio Aspose API"
+description: "Recuperare valore, tipo e stile di una singola cella da un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include esempi cURL, SDK, parametri e gestione degli errori."
 ---
-Questo REST API indica che viene ottenuto un `cell` in un file Excel quando il parametro `cellOrMethodName` è il nome della cella.
 
-- **cURL Esempio**
+Questa REST API recupera una cella da un foglio di calcolo Excel quando il parametro **`cellOrMethodName`** specifica il nome di una cella (un indirizzo in stile A1 come `A3`).
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+- **Esempio cURL**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?client_id=xxxx&client_secret=xxxx" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```shell
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+**Parametri**
+
+| Parametro          | Tipo   | Descrizione                                                  | Obbligatorio |
+|--------------------|--------|--------------------------------------------------------------|--------------|
+| `cellOrMethodName` | string | Deve essere impostato su `firstcell` per recuperare la prima cella. | Sì           |
+| `fileName`         | string | Nome del file del workbook (ad esempio, `myWorkbook.xlsx`).  | Sì           |
+| `worksheet`        | string | Nome del foglio di calcolo (ad esempio, `Sheet1`).           | Sì           |
+| `Authorization`    | header | Token Bearer per l'autenticazione.                           | Sì           |
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "A3",
-
     "Row": 2,
-
     "Column": 0,
-
-    "Value": "Statistical",
-
+    "Value": "Categoria",
     "Type": "IsString",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
-    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">Statistical</Font>",
-
+    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Categoria</Font>",
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
-    },
-
-    "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3",
-
-      "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Famiglia Cloud SDK**
-
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
-
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+- **Utilizzare gli SDK di Aspose.Cells Cloud**
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

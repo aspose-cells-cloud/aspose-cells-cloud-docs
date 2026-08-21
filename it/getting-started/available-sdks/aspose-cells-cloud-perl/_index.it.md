@@ -1,47 +1,62 @@
-﻿---
-title: "Aspose.Cells Cloud SDK per Perl: converti, unisci, dividi, proteggi, cerca, sostituisci e altro ancora"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for Perl: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells Cloud SDK per Per
-type: docs
-url: /it/available-sdks/aspose-cells-cloud-perl/
-description: "Aspose.Cells Cloud SDK per Perl offre una vera potenza multipiattaforma: un'importazione fornisce agli sviluppatori Windows, Linux e macOS lo stesso fluente API per creare, convertire, unire, dividere, proteggere e manipolare ogni Excel oggetto, senza che sia richiesta alcuna installazione Office e senza modifiche specifiche della piattaforma."
-weight: 30
-kwords: Perl, Perl SDK, Excel SDK per Perl, Cloud SDK per Perl, REST, Grafico, Tabella pivot, Oggetto tabella/elenco, Converti foglio di calcolo, PDF, CSV, Json, Markdown, Unisci, Dividi, Proteggi, Cerca, Sostituisci
 ---
-L'SDK è open source e concesso in licenza con licenza MIT. È possibile accedervi[il codice sorgente della libreria Perl per Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl).
+title: "Aspose.Cells Cloud SDK per Perl – Convertire, Unire, Dividere, Proteggere e altro"
+second_title: "Documenti"
+ArticleTitle: "Aspose.Cells Cloud SDK per Perl – Convertire, Unire, Dividere, Proteggere e altro"
+linktype: "Aspose.Cells Cloud SDK per Perl"
+type: docs
+url: /available-sdks/aspose-cells-cloud-perl/
+description: "Esplora l'SDK Aspose.Cells Cloud per Perl – una libreria multipiattaforma per creare, convertire, unire, dividere, proteggere, cercare e sostituire file Excel senza aver bisogno di Office installato. Include guide di installazione, esempi di codice e riferimento API."
+weight: 30
+keywords: "Perl, Aspose.Cells Cloud, Excel SDK, conversione, PDF, API, manipolazione Excel, Perl SDK, elaborazione Excel su cloud"
+---
 
-# **Come utilizzare la libreria Perl di Aspose.Cells Cloud**
+_Ultimo aggiornamento: 30 luglio 2026_
 
-Aspose.Cells Cloud SDK per Perl è una potente libreria che consente agli sviluppatori di manipolare ed elaborare i file Microsoft e Excel utilizzando il linguaggio di programmazione Perl. Con questo SDK, puoi creare, modificare e convertire documenti Excel nel cloud, senza installare software aggiuntivo o dipendenze sul tuo computer locale.
+L'SDK è open-source e rilasciato sotto licenza MIT. Puoi accedere al codice sorgente della libreria Perl per Aspose.Cells Cloud [qui](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl).
 
-In questo articolo esploreremo come utilizzare Aspose.Cells Cloud SDK per Perl per eseguire alcune attività comuni, come la creazione di una nuova cartella di lavoro Excel, l'inserimento di dati nelle celle e il salvataggio della cartella di lavoro modificata nel cloud.
+# **Come usare la libreria Perl di Aspose.Cells Cloud**
 
-## Iniziare
+Aspose.Cells Cloud SDK per Perl è una potente libreria che consente agli sviluppatori di manipolare ed elaborare file Microsoft Excel utilizzando il linguaggio di programmazione Perl. Con questo SDK puoi creare, modificare e convertire documenti Excel nel cloud, senza dover installare software aggiuntivi o dipendenze sul proprio computer locale.
 
- Prima di poter iniziare a utilizzare Cloud SDK per Go Aspose.Cells, è necessario configurare l'ambiente di sviluppo e installare le dipendenze necessarie. Fare riferimento a[l'articolo](https://docs.aspose.cloud/cells/quickstart/) sul sito Aspose per ottenere il tuo ID cliente e il tuo segreto cliente.
+In questo articolo esploreremo come utilizzare Aspose.Cells Cloud SDK per Perl per svolgere alcune attività comuni, come la creazione di un nuovo foglio di calcolo Excel, l'inserimento di dati nelle celle e il salvataggio del workbook modificato nel cloud.
+
+## Prima di iniziare
+
+Prima di poter utilizzare Aspose.Cells Cloud SDK per **Perl**, devi configurare il tuo ambiente di sviluppo e installare le dipendenze necessarie. Consulta la **[Guida rapida di Aspose.Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)** sul sito di Aspose per ottenere il tuo client ID e client secret.
 
 ## Come installare il pacchetto Perl per Aspose.Cells Cloud
 
-Puoi installare Aspose.Cells Cloud SDK per Perl con il comando seguente:
+**Prerequisiti**  
+- Perl 5.10 o versione successiva  
+- CPAN (Comprehensive Perl Archive Network) installato  
+- Client ID e client secret validi di Aspose.Cells Cloud  
 
-```Powershell
+Puoi installare Aspose.Cells Cloud SDK per Perl tramite il comando seguente:
 
+```perl
 perl -MCPAN -e shell
-
 install AsposeCellsCloud::CellsApi
-
 ```
 
-## Come utilizzare il pacchetto Perl per convertire Xlsx in altri formati
+## Come usare il pacchetto Perl per convertire Xlsx in altri formati
 
-- Importa Aspose.Cells Cloud Library
- Per prima cosa, importa il pacchetto necessario dall'SDK Cloud Aspose.Cells nel tuo progetto.
-- Configurare il client API con credenziali
- Autentica il tuo cliente API con il tuo ID cliente univoco e il tuo segreto cliente.
-- Preparare i parametri di conversione
- Definire i parametri per l'attività di conversione, tra cui il nome del file sorgente, il formato di output desiderato e il percorso della cartella di archiviazione.
-- Esegui conversione cartella di lavoro
- Richiamare il processo di conversione utilizzando il metodo PostConvertWorkbook e gestire la risposta.
+- **Importare la libreria Aspose.Cells Cloud**  
+  Inizia importando il pacchetto necessario dell'SDK Perl di Aspose.Cells Cloud nel tuo progetto.
+
+- **Configurare il client API con le credenziali**  
+  Autentica il tuo client API con il tuo unico client ID e client secret.
+
+- **Preparare i parametri per la conversione**  
+  Definisci i parametri per l'attività di conversione, inclusi il nome del file sorgente, il formato di output desiderato e il percorso della cartella di archiviazione.
+
+- **Eseguire la conversione del workbook**  
+  Richiama il processo di conversione utilizzando il metodo `PostConvertWorkbook` e gestisci la risposta.
+
+Di seguito è riportato un breve riferimento per l'operazione `PostConvertWorkbook`:
+
+| Metodo HTTP | Endpoint                                 | Parametri obbligatori                               | Richiesta di esempio (Perl)                                                                                   | Risposta di esempio (JSON)                             | Codici di stato possibili       |
+|-------------|------------------------------------------|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|---------------------------------|
+| POST        | `/cells/convert`                         | `file` (workbook sorgente), `outputFormat`, `storage` | ```perl\nmy $result = $api_instance->post_convert_workbook({ file => 'Book1.xlsx', outputFormat => 'pdf', storage => 'MyStorage' });\n``` | `{ "File": "Book1.pdf", "Url": "https://.../Book1.pdf" }` | 200 OK, 400 Richiesta non valida, 401 Non autorizzato, 500 Errore del server |
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_AvailableSDKs.pl" >}}
+---

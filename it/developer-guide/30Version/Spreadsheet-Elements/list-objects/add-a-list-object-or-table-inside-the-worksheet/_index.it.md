@@ -1,79 +1,113 @@
-﻿---
-title: Aggiungere un oggetto elenco in un foglio di lavoro Excel
-second_title: Documen
-linktitle: A.D
+---
+title: "Aggiungi un oggetto elenco (tabella) a un foglio di lavoro Excel"
+second_title: "Documento"
+linktitle: "Aggiungi"
 type: docs
 url: /it/list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
-keywords: Add a list object(table) into an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'aggiunta di un oggetto elenco (tabella) in un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/add-a-list-object-or-table-inside-the-worksheet/, /it/tables/add/]
+keywords: "Aspose.Cells Cloud, Excel API, oggetto elenco, tabella, REST API, foglio di lavoro"
+description: "Scopri come aggiungere un oggetto elenco (tabella Excel) a un foglio di lavoro utilizzando l'API REST di Aspose.Cells Cloud. Include endpoint, parametri, passaggi di autenticazione, esempio cURL e codice di esempio per SDK."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Aggiungi un oggetto elenco in un foglio di lavoro Excel
+ArticleTitle: "Aggiungi un oggetto elenco (tabella) a un foglio di lavoro Excel – Documentazione di Aspose.Cells Cloud"
 ---
-Questo REST API indica `add a list object(table)` in un foglio di lavoro Excel.
 
-## RSET API
+Questa REST API aggiunge un **oggetto elenco (tabella)** a un foglio di lavoro Excel.
+
+Prima di utilizzare questo endpoint, assicurati di disporre di un token JWT valido, che il workbook sia memorizzato in un archivio cloud supportato e che il foglio di lavoro esista.
+
+## API REST
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 ```
 
-I parametri della richiesta sono:
+### Parametri della richiesta
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome del documento.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| riga di inizio| intero| domanda| Riga iniziale dell'intervallo dell'elenco.|
-| colonna di inizio| intero| domanda| Riga iniziale dell'intervallo dell'elenco.|
-| fine riga| intero| domanda| Riga iniziale dell'intervallo dell'elenco.|
-| colonna finale| intero| domanda| Riga iniziale dell'intervallo dell'elenco.|
-| ha intestazioni| booleano| domanda| VERO|
-| oggetto elenco|| corpo| Elenco oggetti|
-| cartella| corda| domanda| Cartella del documento.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome parametro  | Tipo    | Posizione | Descrizione                                                                  |
+| --------------- | ------- | --------- | ---------------------------------------------------------------------------- |
+| **name**        | string  | path      | Nome del file del workbook.                                                  |
+| **sheetName**   | string  | path      | Nome del foglio di lavoro.                                                   |
+| **startRow**    | integer | query     | Indice in base zero della prima riga dell'intervallo della tabella.         |
+| **startColumn** | integer | query     | Indice in base zero della prima colonna dell'intervallo della tabella.      |
+| **endRow**      | integer | query     | Indice in base zero dell'ultima riga dell'intervallo della tabella.         |
+| **endColumn**   | integer | query     | Indice in base zero dell'ultima colonna dell'intervallo della tabella.      |
+| **hasHeaders**  | boolean | query     | `true` se la prima riga contiene intestazioni di colonna; altrimenti `false`. |
+| **listObject**  | object  | body      | Definizione dell'oggetto elenco (vedere **Schema del corpo della richiesta**).|
+| **folder**      | string  | query     | Cartella contenente il workbook.                                             |
+| **storageName** | string  | query     | Nome dell'archivio.                                                          |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### Schema del corpo della richiesta
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+L'oggetto **listObject** descrive la tabella che verrà creata. Vengono mostrate solo le proprietà più comuni; per l'elenco completo consultare la specifica OpenAPI.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "displayName": "MiaTabella",
+  "showTotals": false,
+  "style": "TableStyleMedium2"
 }
- 
 ```
 
-{{< /tab >}}
+### Esempio di richiesta (cURL)
 
-{{< /tabs >}}
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "displayName": "MiaTabella",
+        "showTotals": false,
+        "style": "TableStyleMedium2"
+      }'
+```
 
-## Famiglia Cloud SDK
+### Risposta di esempio
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+### Codici di errore
+
+| Stato HTTP | Motivo             | Descrizione                                           |
+| ---------- | ------------------ | ----------------------------------------------------- |
+| **400**    | Richiesta non valida | Parametri di intervallo non validi o corpo JSON malformato. |
+| **401**    | Non autorizzato    | Token JWT mancante o scaduto.                         |
+| **404**    | Non trovato        | Il workbook o il foglio di lavoro specificato non esiste. |
+| **500**    | Errore interno del server |Errore imprevisto lato server.                      |
+
+**Esempio di risposta 400**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Parametri di intervallo non validi."
+}
+```
+
+**Esempio di risposta 401**
+
+```json
+{
+  "Code": 401,
+  "Status": "Unauthorized",
+  "Message": "Il token di autenticazione è mancante o scaduto."
+}
+```
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) forniscono il contratto completo per questa operazione.
+
+## Famiglia di SDK cloud
+
+L'utilizzo di un SDK rappresenta il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello e consente di concentrarsi sui compiti del proprio progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come effettuare chiamate ai servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,109 +1,148 @@
-﻿---
-title: تقسيم الدفعة
-second_title: Documen
-type: docs
-url: /ar/batch/split
-keywords: Batch split Excel file
-description: يدعم Cloud Aspose.Cells تقسيم الملفات دفعةً واحدة. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تقسيم الدفعة
 ---
-يشير هذا REST API إلى الملف المؤهل `batch split`.
+title: "التفريق بالدفعة"
+second_title: "مستند"
+type: docs
+url: /batch/split
+keywords: "التفريق بالدفعة، Aspose.Cells Cloud، REST API، Excel، PDF، CSV، JSON، Spreadsheet، Cloud SDK"
+description: "توثيق لواجهة برمجة تطبيقات التفريق بالدفعة في Aspose.Cells Cloud، والتي تقوم بتفريق ملفات الجداول الإلكترونية إلى تنسيقات متعددة مثل PDF وCSV أو JSON. ويشمل تفاصيل الطلب وأوامر cURL المثالية واستخدام SDK عبر لغات برمجة متنوعة."
+weight: 100
+---
 
-## RSET API
+تقوم هذه واجهة برمجة تطبيقات REST بتنفيذ **تفريق بالدفعة** للملفات المؤهلة.
+
+## واجهة برمجة تطبيقات REST
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/split
- 
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| طلب تقسيم الدفعة|| جسم||
+تُعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-**خصائص BatchSplitRequest**
+### معلمات الطلب
 
-الاسم | النوع | الوصف | الملاحظات
------------- | ------------- | ------------- | -------------
- مجلد المصدر | سلسلة نصية | | [اختياري]تخزين المصدر | سلسلة نصية | | [اختياري]شرط المطابقة | طلب شرط المطابقة | | [اختياري]التنسيق | سلسلة نصية | | [اختياري]من الفهرس | عدد صحيح | | [اختياري]إلى الفهرس | عدد صحيح | | [اختياري]مجلد الصادر | سلسلة نصية | | [اختياري]خيارات الحفظ | خيارات الحفظ | | [اختياري]**خصائص MatchConditionRequest**
+| اسم المعلمة      | النوع               | المسار/الاستعلام/النص/جسم HTTP | الوصف                                        |
+|------------------|--------------------|----------------------------|-----------------------------------------------|
+| BatchSplitRequest| BatchSplitRequest  | body                       | حمل الطلب الذي يحتوي على خيارات التفريق.     |
 
-الاسم | النوع | الوصف | الملاحظات
------------- | ------------- | ------------- | -------------
- نمط التعبير العادي | سلسلة | | [اختياري]شروط المطابقة الكاملة | سلسلة[]| | [اختياري][مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/Batch/PostBatchSplit) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **خصائص BatchSplitRequest**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| الاسم           | النوع                | الوصف                                      | الملاحظات      |
+|----------------|---------------------|---------------------------------------------|------------|
+| SourceFolder   | string              | المجلد الذي يحتوي على الملف المصدر.         | [اختياري]   |
+| SourceStorage  | string              | اسم التخزين الذي يوجد فيه الملف المصدر.      | [اختياري]   |
+| MatchCondition | MatchConditionRequest| الشروط المستخدمة لاختيار الملفات للتفريق.   | [اختياري]   |
+| Format         | string              | التنسيق المطلوب للإخراج (مثل: pdf، csv).    | [اختياري]   |
+| FromIndex      | integer             | الفهرس الابتدائي للصفحات المراد تفريزها.     | [اختياري]   |
+| ToIndex        | integer             | الفهرس النهائي للصفحات المراد تفريزها.       | [اختياري]   |
+| OutFolder      | string              | المجلد الوجهة لملفات التفريق.               | [اختياري]   |
+| SaveOptions    | SaveOptions         | خيارات إضافية لحفظ الإخراج.                 | [اختياري]   |
+
+### **خصائص MatchConditionRequest**
+
+| الاسم                 | النوع       | الوصف                                      | الملاحظات      |
+|----------------------|-------------|---------------------------------------------|------------|
+| RegexPattern         | string      | التعبير المنتظم لمطابقة أسماء الملفات.      | [اختياري]   |
+| FullMatchConditions  | string[]    | قائمة بشروط المطابقة الدقيقة.              | [اختياري]   |
+
+### معلمة جسم الطلب
+
+| اسم المعلمة | النوع | الوصف                                      |
+| ------------ | ---- | ------------------------------------------- |
+| data         | file | المحتوى الثنائي لملف كشف الحساب المراد إنشاؤه. |
+
+  
+### **الاستجابة**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**كودات حالة HTTP**
+
+| الكود | المعنى                      | وقت العودة                              |
+|------|-----------------------------|-----------------------------------------|
+| 200 OK | تم إنشاء ملف كشف الحساب بنجاح         | في التدفق الطبيعي                             |
+| 201 Created | تم إنشاء ملف كشف الحساب (استجابة بديلة) | عند عودة الواجهة بحالة تم الإنشاء |
+| 400 Bad Request | معلمات غير صالحة | خطأ من جانب العميل                        |
+| 401 Unauthorized | نقص أو عدم صلاحية الرمز | خطأ في المصادقة                    |
+| 409 Conflict | يوجد الملف وقيمة `isWriteOver=false` | تعارض مع الملف الموجود            |
+
+
+## كيفية استخدام واجهة PostBatchSplit API باستخدام SDKs
+
+### مواصفات واجهة PostBatchSplit API
+
+تُعرّف [مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/Batch/PostBatchSplit) واجهة برمجة تطبيقات قابلة للوصول العام، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب الخاصة بـ Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/split" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\"}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهامك المُقسّمة. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. وتتولى SDK معالجة التفاصيل من المستوى المنخفض، مما يتيح لك التركيز على مهام التفريق الخاصة بك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية إجراء مكالمات إلى خدمات الويب الخاصة بـ Aspose.Cells باستخدام SDKs متنوعة:
 
-{{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
+{{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js"  tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}

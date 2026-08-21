@@ -1,50 +1,84 @@
-﻿---
-title: Guía del desarrollador 3.
-second_title: Documen
-type: docs
-url: /es/developer-guide-3.0/
-aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
-keywords: How to use Aspose.Cells Cloud REST APIs. Office Excel 2013,  Office Excel 2016,  Office Excel 2019,office Excel 365
-description: Esta Guía para desarrolladores describe escenarios prácticos y consejos para ayudarlo a utilizar funciones específicas de Aspose.Cells for .NET, lograr una determinada apariencia de documento Excel o hacer posible un caso de uso.
-weight: 150
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Guía del desarrollador
 ---
-## Trabajar con las API REST de Cloud Aspose.Cells
+title: "Guía del desarrollador de Aspose.Cells Cloud 3.0"
+ArticleTitle: "Guía del desarrollador de la API REST de Aspose.Cells Cloud 3.0 – Creación, conversión y estilizado de libros de Excel"
+second_title: "Documentos"
+type: docs
+url: /developer-guide-3.0/
+aliases: [/developer-guide/v3.0/, /developer-guide-v3.0/]
+keywords: "Aspose.Cells Cloud, API REST de Excel, conversión de libros, API de gráficos, importación de datos, exportación, PDF, CSV, JSON, guía del desarrollador"
+description: "Aprenda a utilizar las API REST de Aspose.Cells Cloud 3.0 para la creación, conversión, estilizado, gráficos, tablas y mucho más de libros de Excel. Incluye ejemplos de código y consejos de buenas prácticas."
+weight: 150
+---
+
+## Trabajo con las API REST de Aspose.Cells Cloud
+
+La **Guía del desarrollador de Aspose.Cells Cloud 3.0** ofrece una visión general concisa y buscable de las operaciones más utilizadas de la API REST para libros y hojas de cálculo de Excel. Está dirigida a desarrolladores que necesitan crear, modificar, convertir y manipular archivos de Excel mediante programación. Utilice las secciones siguientes para localizar la operación que necesita; cada enlace lleva a una página detallada con la sintaxis de la solicitud, los parámetros y ejemplos. Esta página centraliza la referencia de la **API REST de Aspose.Cells Cloud**, facilitando la búsqueda de puntos de conexión relacionados con libros, gestión de gráficos, importación y funciones de exportación.
+
+**Prerrequisitos:** Antes de utilizar las API, asegúrese de tener una cuenta válida de Aspose Cloud, una clave API y un secreto, y los SDKs correspondientes instalados en su entorno de desarrollo.
+
+### Índice
+
+- [Operaciones de archivo](#file-operations)
+- [Inicio (Formato de celdas y gestión de filas/columnas)](#home-cell-formatting--rowcolumn-management)
+- [Insertar (Gráficos, tablas y objetos OLE)](#insert-charts-tables--ole-objects)
+- [Diseño de página (Saltos de página y configuración)](#page-layout-page-breaks--setup)
+- [Fórmulas (Cálculo y nombres)](#formulas-calculate--names)
+- [Datos (Esquema, filtro e importación)](#data-outline-filter--import)
+- [Revisar (Comentarios y protección)](#review-comments--protection)
+- [Ver (Controles de ventana y zoom)](#view-window--zoom-controls)
+
+### Resumen rápido de la API
+
+| Grupo de API          | Punto de conexión de ejemplo                           | Acción principal                                               |
+| --------------------- | ------------------------------------------------------ | -------------------------------------------------------------- |
+| **Crear libro**       | `POST /cells/workbook`                                 | Crear un nuevo libro de Excel vacío                            |
+| **Convertir libro**   | `PUT /cells/workbook/convert`                          | Convertir un archivo de Excel a PDF, CSV, JSON, etc.           |
+| **Agregar gráfico**   | `POST /cells/worksheets/{sheetName}/charts`            | Insertar un nuevo gráfico en una hoja de cálculo               |
+| **Gestionar tablas**  | `PUT /cells/worksheets/{sheetName}/tables/{tableName}` | Actualizar o eliminar un objeto de lista (tabla)               |
+| **Importar datos**    | `POST /cells/worksheets/{sheetName}/import`            | Importar CSV, JSON, imágenes o matrices en una hoja de cálculo |
+| **Calcular fórmulas** | `POST /cells/workbook/calculate`                       | Recalcular todas las fórmulas en un libro                      |
+| **Aplicar filtros**   | `POST /cells/worksheets/{sheetName}/filters`           | Agregar o eliminar criterios de filtro automático              |
+| **Proteger libro**    | `POST /cells/workbook/protect`                         | Aplicar protección con contraseña a un libro                   |
+
+Estas operaciones de alta frecuencia cubren la funcionalidad principal de la **API REST de Aspose.Cells Cloud para Excel** y enlazan directamente con páginas de documentación detalladas.
+
+Puede descargar una versión en PDF de la tabla de Resumen rápido de la API para referencia sin conexión.
 
 {{< tabs tabTotal="8" tabID="1" tabName1="File" tabName2="Home" tabName3="Insert" tabName4="Page Layout" tabName5="Formulas" tabName6="Data" tabName7="Review" tabName8="View" >}}
 {{< tab tabNum="1" >}}
+
 <div class="row">
     <div class="col-md-6">
-        <p>Libro de trabajo nuevo, convertir, guardar como</p>
+        <p>Libro: Nuevo, Convertir, Guardar como</p>
         <ul>
-            <li><a href="/cells/es/create-an-empty-excel-workbook/">Crea un libro de trabajo vacío Excel.</a></li>
-            <li><a href="/cells/es/create-excel-workbook-from-a-template-file/">Crea el libro de trabajo Excel a partir de un archivo de plantilla.</a></li>
-            <li><a href="/cells/es/create-excel-workbook-from-a-smartmarker-template/">Crea el libro de trabajo Excel a partir de una plantilla de marcador inteligente.</a></li>
-            <li><a href="/cells/es/convert/">Convierte el libro de trabajo Excel a diferentes formatos de archivo.</a></li>
-            <li><a href="/cells/es/saveas-other-formats/">Guarde el libro de trabajo Excel en diferentes formatos de archivo.</a></li>
+            <li><a href="/cells/create-an-empty-excel-workbook/" title="Crear un libro de Excel vacío mediante API" rel="noopener">Crear un libro de Excel vacío.</a></li>
+            <li><a href="/cells/create-excel-workbook-from-a-template-file/" title="Crear un libro a partir de un archivo de plantilla" rel="noopener">Crear un libro de Excel a partir de un archivo de plantilla.</a></li>
+            <li><a href="/cells/create-excel-workbook-from-a-smartmarker-template/" title="Crear un libro a partir de una plantilla de SmartMarker" rel="noopener">Crear un libro de Excel a partir de una plantilla de SmartMarker.</a></li>
+            <li><a href="/cells/convert/" title="Convertir un libro de Excel a otro formato" rel="noopener">Convertir un libro de Excel a distintos formatos de archivo.</a></li>
+            <li><a href="/cells/saveas-other-formats/" title="Guardar un libro de Excel en otro formato" rel="noopener">Guardar un libro de Excel en distintos formatos de archivo.</a></li>
         </ul>
-        <p>Buscar, reemplazar</p>
+        <p>Buscar, Reemplazar</p>
         <ul>
-            <li><a href="/cells/es/search/">Buscar texto en el formulario de archivos Excel.</a></li>
-            <li><a href="/cells/es/replace/">Reemplazar el valor antiguo por el nuevo valor en los archivos Excel.</a></li>
+            <li><a href="/cells/search/" title="Buscar texto en archivos de Excel" rel="noopener">Buscar texto en archivos de Excel.</a></li>
+            <li><a href="/cells/replace/" title="Reemplazar valores en archivos de Excel" rel="noopener">Reemplazar valores antiguos por nuevos en archivos de Excel.</a></li>
         </ul>
         <p>Comprimir</p>
         <ul>
-            <li><a href="/cells/es/compress/">Comprimir Excel archivos.</a></li>
+            <li><a href="/cells/compress/" title="Comprimir archivos de Excel" rel="noopener">Comprimir archivos de Excel.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
-        <p>Fusionar y dividir libros de trabajo</p>
+        <p>Libro: Combinar, Dividir</p>
         <ul>
-            <li><a href="/cells/es/merge/">Fusiona Excel libros de trabajo.</a></li>
-            <li><a href="/cells/es/split/">Divide Excel libros de trabajo.</a></li>
+            <li><a href="/cells/merge/" title="Combinar varios libros de Excel" rel="noopener">Combinar libros de Excel.</a></li>
+            <li><a href="/cells/split/" title="Dividir un libro de Excel en archivos independientes" rel="noopener">Dividir libros de Excel.</a></li>
         </ul>
         <p>Marcas de agua</p>
         <ul>
-            <li><a href="/cells/es/add-background-in-workbook/">Agrega fondo al libro de trabajo.</a></li>
-            <li><a href="/cells/es/delete-background-in-workbook/">Elimina el fondo del libro de trabajo.</a></li>
-            <li><a href="/cells/es/set-background-or-watermark-for-excel-worksheet/">Establece fondo o marca de agua en la hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-background-or-watermark-of-excel-worksheet/">Elimina el fondo o la marca de agua en la hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/add-background-in-workbook/" title="Agregar una imagen de fondo a un libro" rel="noopener">Agregar fondo a un libro.</a></li>
+            <li><a href="/cells/delete-background-in-workbook/" title="Eliminar una imagen de fondo de un libro" rel="noopener">Eliminar fondo de un libro.</a></li>
+            <li><a href="/cells/set-background-or-watermark-for-excel-worksheet/" title="Establecer un fondo o marca de agua en una hoja de cálculo" rel="noopener">Establecer fondo o marca de agua en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/delete-background-or-watermark-of-excel-worksheet/" title="Eliminar el fondo o la marca de agua de una hoja de cálculo" rel="noopener">Eliminar fondo o marca de agua de una hoja de cálculo de Excel.</a></li>
         </ul>
     </div>
 </div>
@@ -52,30 +86,30 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
 {{< tab tabNum="2" >}}
 <div class="row">
     <div class="col-md-6">
-        <p>Cells fuente, estilos, formato condicional y valor</p>
+        <p>Fuentes, estilos, formato condicional y valores de celdas</p>
         <ul>
-            <li><a href="/cells/es/get-cell-style-from-a-worksheet/">Obtiene el estilo de celda de una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/update-multiple-cells-style/">Actualiza el estilo de varias celdas en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/change-cell-style-in-excel-worksheet/">Actualiza el estilo de celda en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/apply-rich-text-formatting-to-a-cell/">Establece formato de texto enriquecido en una celda de la hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/clear-contents-and-styles-of-cells-in-excel-worksheet/">Borra el contenido y los estilos de las celdas en la hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/working-with-conditional-formatting/">Agrega, elimina y actualiza el formato condicional en la hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/set-value-of-a-cell-in-a-worksheet/">Establece el valor de una celda en una hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/get-cell-style-from-a-worksheet/" title="Recuperar un estilo de celda de una hoja de cálculo" rel="noopener">Obtener estilo de celda de una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/update-multiple-cells-style/" title="Actualizar estilos de varias celdas" rel="noopener">Actualizar estilo de varias celdas en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/change-cell-style-in-excel-worksheet/" title="Cambiar el estilo de una sola celda" rel="noopener">Actualizar estilo de celda en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/apply-rich-text-formatting-to-a-cell/" title="Aplicar formato de texto enriquecido a una celda" rel="noopener">Establecer formato de texto enriquecido para una celda en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/clear-contents-and-styles-of-cells-in-excel-worksheet/" title="Borrar contenido y estilos de celdas" rel="noopener">Borrar contenido y estilos de celdas en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/working-with-conditional-formatting/" title="Gestionar reglas de formato condicional" rel="noopener">Agregar, eliminar y actualizar formato condicional en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/set-value-of-a-cell-in-a-worksheet/" title="Establecer el valor de una celda" rel="noopener">Establecer valor de celda en una hoja de cálculo de Excel.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
-        <p>Insertar, eliminar, copiar, ocultar y ajustar automáticamente filas y columnas</p>
+        <p>Fila/Columna: Insertar, Eliminar, Copiar, Ocultar y Ajustar automáticamente</p>
         <ul>
-            <li><a href="/cells/es/add-an-empty-row-in-a-worksheet/">Agrega una fila vacía en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-row-from-a-worksheet/">Elimina una fila de una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/copy-rows-in-excel-worksheet/">Copia filas en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/hide-rows-in-excel-worksheet/">Ocultar filas en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/auto-fit-rows-in-excel-workbooks/">Ajustar filas automáticamente en un libro de trabajo Excel.</a></li>
-            <li><a href="/cells/es/columns/add/">Agrega una columna vacía en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/columns/delete/">Elimina la columna de una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/columns/copy/">Copia columnas en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/columns/hide/">Ocultar columnas en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/columns/autofit/">Ajustar automáticamente columnas en un libro de trabajo Excel.</a></li>
+            <li><a href="/cells/add-an-empty-row-in-a-worksheet/" title="Insertar una fila vacía en una hoja de cálculo" rel="noopener">Agregar una fila vacía en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/delete-row-from-a-worksheet/" title="Eliminar una fila de una hoja de cálculo" rel="noopener">Eliminar una fila de una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/copy-rows-in-excel-worksheet/" title="Copiar filas dentro de una hoja de cálculo" rel="noopener">Copiar filas en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/hide-rows-in-excel-worksheet/" title="Ocultar filas en una hoja de cálculo" rel="noopener">Ocultar filas en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/auto-fit-rows-in-excel-workbooks/" title="Ajustar automáticamente filas en un libro" rel="noopener">Ajustar automáticamente filas en un libro de Excel.</a></li>
+            <li><a href="/cells/columns/add/" title="Insertar una columna vacía en una hoja de cálculo" rel="noopener">Agregar una columna vacía en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/columns/delete/" title="Eliminar una columna de una hoja de cálculo" rel="noopener">Eliminar una columna de una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/columns/copy/" title="Copiar columnas dentro de una hoja de cálculo" rel="noopener">Copiar columnas en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/columns/hide/" title="Ocultar columnas en una hoja de cálculo" rel="noopener">Ocultar columnas en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/columns/autofit/" title="Ajustar automáticamente columnas en un libro" rel="noopener">Ajustar automáticamente columnas en un libro de Excel.</a></li>
         </ul>
     </div>
 </div>
@@ -83,49 +117,49 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
 {{< tab tabNum="3" >}}
 <div class="row">
     <div class="col-md-6">
-        <p>Cuadro</p>
+        <p>Gráfico</p>
         <ul>
-            <li><a href="/cells/es/add-a-chart-in-a-worksheet/">Agrega un gráfico en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-a-chart-from-a-worksheet/">Elimina un gráfico en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-all-charts-from-a-worksheet/">Elimina todos los gráficos en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/convert-chart-to-image/">Convierte el gráfico en imagen.</a></li>
-            <li><a href="/cells/es/hide-chart-legend-in-a-worksheet/">Oculta la leyenda del gráfico en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/update-chart-title-in-excel-worksheet/">Actualiza el título del gráfico en una hoja de trabajo Excel.</a></li>
-            <li><a href="/cells/es/delete-chart-title-in-a-worksheet/">Elimina el título del gráfico en una hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/add-a-chart-in-a-worksheet/" title="Agregar un gráfico a una hoja de cálculo" rel="noopener">Agregar un gráfico en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/delete-a-chart-from-a-worksheet/" title="Eliminar un gráfico de una hoja de cálculo" rel="noopener">Eliminar un gráfico en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/delete-all-charts-from-a-worksheet/" title="Eliminar todos los gráficos de una hoja de cálculo" rel="noopener">Eliminar todos los gráficos en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/convert-chart-to-image/" title="Convertir un gráfico a un archivo de imagen" rel="noopener">Convertir un gráfico a una imagen.</a></li>
+            <li><a href="/cells/hide-chart-legend-in-a-worksheet/" title="Ocultar la leyenda de un gráfico" rel="noopener">Ocultar leyenda de gráfico en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/update-chart-title-in-excel-worksheet/" title="Actualizar el título de un gráfico" rel="noopener">Actualizar título de gráfico en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/delete-chart-title-in-a-worksheet/" title="Eliminar el título de un gráfico" rel="noopener">Eliminar título de gráfico en una hoja de cálculo.</a></li>
         </ul>
-        <p>Mesa</p>
+        <p>Tabla</p>
         <ul>
-            <li><a href="/cells/es/add-a-list-object-or-table-inside-the-worksheet/">Agrega un objeto de lista en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/update-a-list-object-or-table-inside-the-worksheet/">Actualiza un objeto de lista en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/convert-list-object-or-table-to-range/">Convierte un objeto de lista en un rango.</a></li>
-            <li><a href="/cells/es/sort-table-data/">Ordena los datos de la tabla.</a></li>
+            <li><a href="/cells/add-a-list-object-or-table-inside-the-worksheet/" title="Agregar una tabla (objeto de lista) a una hoja de cálculo" rel="noopener">Agregar un objeto de lista en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/update-a-list-object-or-table-inside-the-worksheet/" title="Actualizar una tabla en una hoja de cálculo" rel="noopener">Actualizar un objeto de lista en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/convert-list-object-or-table-to-range/" title="Convertir una tabla en un rango" rel="noopener">Convertir un objeto de lista en un rango.</a></li>
+            <li><a href="/cells/sort-table-data/" title="Ordenar datos dentro de una tabla" rel="noopener">Ordenar datos de tabla.</a></li>
         </ul>
-        <p>OleObject</p>
+        <p>Objeto OLE</p>
         <ul>
-            <li><a href="/cells/es/add-oleobject-to-excel-worksheet/">Agrega un objeto Ole en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/update-a-specific-oleobject-from-excel-worksheet/">Actualiza un objeto Ole específico en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/convert-oleobject-to-image/">Convierte un objeto Ole en una imagen.</a></li>
-            <li><a href="/cells/es/delete-all-oleobjects-from-excel-worksheet/">Elimina todos los objetos Ole en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-a-specific-oleobject-from-excel-worksheet/">Elimina un objeto Ole específico en una hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/add-oleobject-to-excel-worksheet/" title="Agregar un objeto OLE a una hoja de cálculo" rel="noopener">Agregar objeto OLE en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/update-a-specific-oleobject-from-excel-worksheet/" title="Actualizar un objeto OLE específico" rel="noopener">Actualizar un objeto OLE específico en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/convert-oleobject-to-image/" title="Convertir un objeto OLE a una imagen" rel="noopener">Convertir objeto OLE a imagen.</a></li>
+            <li><a href="/cells/delete-all-oleobjects-from-excel-worksheet/" title="Eliminar todos los objetos OLE de una hoja de cálculo" rel="noopener">Eliminar todos los objetos OLE en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/delete-a-specific-oleobject-from-excel-worksheet/" title="Eliminar un objeto OLE específico" rel="noopener">Eliminar un objeto OLE específico en una hoja de cálculo de Excel.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
         <p>Forma</p>
         <ul>
-            <li><a href="/cells/es/add-a-shape-inside-the-worksheet/">Agrega una forma en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-all-shapes-inside-the-worksheet/">Elimina todas las formas en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-a-shape-by-index-inside-the-worksheet/">Elimina una forma por índice en una hoja de trabajo Excel.</a></li>
+            <li><a href="/cells/add-a-shape-inside-the-worksheet/" title="Agregar una forma a una hoja de cálculo" rel="noopener">Agregar una forma en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/delete-all-shapes-inside-the-worksheet/" title="Eliminar todas las formas de una hoja de cálculo" rel="noopener">Eliminar todas las formas en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/delete-a-shape-by-index-inside-the-worksheet/" title="Eliminar una forma por su índice" rel="noopener">Eliminar una forma por índice en una hoja de cálculo de Excel.</a></li>
         </ul>
         <p>Tabla dinámica</p>
         <ul>
-            <li><a href="/cells/es/add-a-pivot-table-in-a-worksheet/">Agrega una tabla dinámica en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-worksheet-pivot-tables/">Elimina en todas las tablas dinámicas una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-worksheet-pivot-table-by-index/">Elimina una tabla dinámica por índice en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/update-cell-style-for-pivot-table/">Actualiza el estilo de celda de la tabla dinámica en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/update-style-for-pivot-table/">Actualiza el estilo de la tabla dinámica en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/working-with-pivot-filters/">Trabajar con filtros pivote en una hoja de cálculo Excel</a></li>
-            <li><a href="/cells/es/hide-pivot-field-item/">Oculta el elemento del campo pivote en una hoja de cálculo Excel</a></li>
-            <li><a href="/cells/es/move-pivot-table/">Mueve la tabla dinámica en una hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/add-a-pivot-table-in-a-worksheet/" title="Agregar una tabla dinámica a una hoja de cálculo" rel="noopener">Agregar una tabla dinámica en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/delete-worksheet-pivot-tables/" title="Eliminar todas las tablas dinámicas de una hoja de cálculo" rel="noopener">Eliminar todas las tablas dinámicas en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/delete-worksheet-pivot-table-by-index/" title="Eliminar una tabla dinámica por su índice" rel="noopener">Eliminar una tabla dinámica por índice en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/update-cell-style-for-pivot-table/" title="Actualizar estilo de celda en una tabla dinámica" rel="noopener">Actualizar estilo de celda de una tabla dinámica en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/update-style-for-pivot-table/" title="Actualizar el estilo general de una tabla dinámica" rel="noopener">Actualizar estilo de una tabla dinámica en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/working-with-pivot-filters/" title="Trabajar con filtros de tablas dinámicas" rel="noopener">Trabajar con filtros de tablas dinámicas en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/hide-pivot-field-item/" title="Ocultar un elemento de campo de tabla dinámica" rel="noopener">Ocultar elementos de campo de tabla dinámica en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/move-pivot-table/" title="Mover una tabla dinámica dentro de una hoja de cálculo" rel="noopener">Mover una tabla dinámica en una hoja de cálculo de Excel.</a></li>
         </ul>
     </div>
 </div>
@@ -135,10 +169,10 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
     <div class="col-md-6">
         <p>Salto de página</p>
         <ul>
-            <li><a href="/cells/es/insert-horizontal-page-break-inside-worksheet/">Inserta un salto de página horizontal en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/insert-vertical-page-break-inside-worksheet/">Inserta un salto de página vertical en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-horizontal-page-break-inside-worksheet/">Elimina un salto de página horizontal en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-vertical-page-break-inside-worksheet/">Elimina un salto de página vertical en una hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/insert-horizontal-page-break-inside-worksheet/" title="Insertar un salto de página horizontal" rel="noopener">Insertar un salto de página horizontal en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/insert-vertical-page-break-inside-worksheet/" title="Insertar un salto de página vertical" rel="noopener">Insertar un salto de página vertical en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/delete-horizontal-page-break-inside-worksheet/" title="Eliminar un salto de página horizontal" rel="noopener">Eliminar un salto de página horizontal en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/delete-vertical-page-break-inside-worksheet/" title="Eliminar un salto de página vertical" rel="noopener">Eliminar un salto de página vertical en una hoja de cálculo de Excel.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
@@ -153,9 +187,9 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
     <div class="col-md-6">
         <p>Calcular</p>
         <ul>
-            <li><a href="/cells/es/calculate-all-formulas-in-a-workbook/">Calcula todas las fórmulas en un libro de trabajo Excel.</a></li>
-            <li><a href="/cells/es/calculate-cells-formula/">Calcula la fórmula de celdas en un libro de trabajo Excel.</a></li>
-            <li><a href="/cells/es/calculate-formula-in-a-worksheet/">Calcula la fórmula en una hoja de trabajo Excel.</a></li>
+            <li><a href="/cells/calculate-all-formulas-in-a-workbook/" title="Calcular todas las fórmulas en un libro" rel="noopener">Calcular todas las fórmulas en un libro de Excel.</a></li>
+            <li><a href="/cells/calculate-cells-formula/" title="Calcular la fórmula de una celda específica" rel="noopener">Calcular fórmulas de celdas en un libro de Excel.</a></li>
+            <li><a href="/cells/calculate-formula-in-a-worksheet/" title="Calcular una fórmula en una hoja de cálculo" rel="noopener">Calcular una fórmula en una hoja de cálculo de Excel.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
@@ -168,42 +202,42 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
 {{< tab tabNum="6" >}}
 <div class="row">
     <div class="col-md-6">
-        <p>Describir</p>
+        <p>Esquema</p>
         <ul>
-            <li><a href="/cells/es/group-rows-in-excel-worksheet/">Agrupa filas en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/ungroup-rows-in-excel-worksheet/">Desagrupa filas en una hoja de cálculo Excel</a></li>
+            <li><a href="/cells/group-rows-in-excel-worksheet/" title="Agrupar filas en una hoja de cálculo" rel="noopener">Agrupar filas en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/ungroup-rows-in-excel-worksheet/" title="Desagrupar filas en una hoja de cálculo" rel="noopener">Desagrupar filas en una hoja de cálculo de Excel.</a></li>
         </ul>
-        <p>Filtrar</p>
+        <p>Filtro</p>
         <ul>
-            <li><a href="/cells/es/add-a-filter-for-a-filter-column/">Agrega un filtro para una columna de filtro en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-a-filter-for-a-filter-column/">Elimina un filtro para una columna de filtro en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/remove-a-date-filter/">Elimina un filtro de fecha en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/add-an-icon-filter/">Agrega un filtro de ícono en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/add-date-filter-in-a-worksheet/">Agregue un filtro de fecha en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/filter-data-by-using-an-autofilter/">Filtra una lista con un criterio personalizado en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/filter-the-top-10-items-in-the-list/">Filtra los 10 elementos principales en la lista en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/match-all-blank-cells-in-the-list/">Coincide con todas las celdas en blanco de la lista en una hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/add-a-filter-for-a-filter-column/" title="Agregar un filtro a una columna" rel="noopener">Agregar un filtro para una columna en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/delete-a-filter-for-a-filter-column/" title="Eliminar un filtro de columna" rel="noopener">Eliminar un filtro para una columna en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/remove-a-date-filter/" title="Eliminar un filtro de fecha" rel="noopener">Eliminar un filtro de fecha en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/add-an-icon-filter/" title="Agregar un filtro por icono" rel="noopener">Agregar un filtro por icono en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/add-date-filter-in-a-worksheet/" title="Agregar un filtro de fecha" rel="noopener">Agregar un filtro de fecha en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/filter-data-by-using-an-autofilter/" title="Filtrar datos mediante Filtro automático" rel="noopener">Filtrar datos mediante Filtro automático en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/filter-the-top-10-items-in-the-list/" title="Filtrar los 10 primeros elementos" rel="noopener">Filtrar los 10 primeros elementos de la lista en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/match-all-blank-cells-in-the-list/" title="Coincidir todas las celdas en blanco" rel="noopener">Coincidir todas las celdas en blanco de la lista en una hoja de cálculo de Excel.</a></li>
         </ul>
-            <p>Clasificar</p>
+        <p>Ordenar</p>
         <ul>
-            <li><a href="/cells/es/sort-worksheet-data/">Ordena los datos de las celdas en una hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/sort-worksheet-data/" title="Ordenar datos de la hoja de cálculo" rel="noopener">Ordenar datos en una hoja de cálculo de Excel.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
         <p>Importar datos</p>
         <ul>
-            <li><a href="/cells/es/import/">Importa datos en archivos Excel.</a></li>
-            <li><a href="/cells/es/import-csv-data-into-worksheet/">Importa datos CSV a una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/import/picture/">Importa imagen a una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/import/double-array/">Importa una matriz doble en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/import/integer-array/">Importa una matriz de enteros a una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/import/string-array/">Importa una matriz de cadenas a una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/import/with-using-storage/">Importa datos a una hoja de cálculo Excel mediante el uso de almacenamiento.</a></li>
-            <li><a href="/cells/es/import/without-using-storage/">Importa datos a una hoja de cálculo Excel sin utilizar almacenamiento.</a></li>
+            <li><a href="/cells/import/" title="Importar datos a archivos de Excel" rel="noopener">Importar datos a archivos de Excel.</a></li>
+            <li><a href="/cells/import-CSV-data-into-worksheet/" title="Importar datos CSV a una hoja de cálculo" rel="noopener">Importar datos CSV a una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/import/picture/" title="Importar una imagen a una hoja de cálculo" rel="noopener">Importar una imagen a una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/import/double-array/" title="Importar una matriz doble a una hoja de cálculo" rel="noopener">Importar una matriz doble a una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/import/integer-array/" title="Importar una matriz entera a una hoja de cálculo" rel="noopener">Importar una matriz entera a una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/import/string-array/" title="Importar una matriz de cadenas a una hoja de cálculo" rel="noopener">Importar una matriz de cadenas a una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/import/with-using-storage/" title="Importar datos utilizando almacenamiento" rel="noopener">Importar datos a una hoja de cálculo de Excel utilizando almacenamiento.</a></li>
+            <li><a href="/cells/import/without-using-storage/" title="Importar datos sin utilizar almacenamiento" rel="noopener">Importar datos a una hoja de cálculo de Excel sin utilizar almacenamiento.</a></li>
         </ul>
-        <p>Asamblea</p>
+        <p>Ensamblado</p>
         <ul>
-            <li><a href="/cells/es/assembly/">Recopilar datos en archivos Excel.</a></li>
+            <li><a href="/cells/assembly/" title="Ensamblar datos en archivos de Excel" rel="noopener">Ensamblar datos en archivos de Excel.</a></li>
         </ul>
     </div>
 </div>
@@ -213,16 +247,16 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
     <div class="col-md-6">
         <p>Comentarios</p>
         <ul>
-            <li><a href="/cells/es/add-a-comment-to-a-cell-in-a-worksheet/">Agrega un comentario a una celda en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/update-a-comment-in-excel-workbook/">Actualiza un comentario en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-all-comments-in-a-worksheet/">Elimina todos los comentarios en una hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/add-a-comment-to-a-cell-in-a-worksheet/" title="Agregar un comentario a una celda" rel="noopener">Agregar un comentario a una celda en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/update-a-comment-in-excel-workbook/" title="Actualizar un comentario de celda" rel="noopener">Actualizar un comentario en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/delete-all-comments-in-a-worksheet/" title="Eliminar todos los comentarios en una hoja de cálculo" rel="noopener">Eliminar todos los comentarios en una hoja de cálculo de Excel.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
         <p>Cambios</p>
         <ul>
-            <li><a href="/cells/es/protect-excel-workbooks/">Protege un libro de trabajo Excel.</a></li>
-            <li><a href="/cells/es/unprotect-excel-workbooks/">Desprotege un libro de trabajo Excel.</a></li>
+            <li><a href="/cells/protect-excel-workbooks/" title="Proteger un libro de Excel" rel="noopener">Proteger un libro de Excel.</a></li>
+            <li><a href="/cells/unprotect-excel-workbooks/" title="Quitar protección a un libro de Excel" rel="noopener">Quitar protección a un libro de Excel.</a></li>
         </ul>
     </div>
 </div>
@@ -230,21 +264,21 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
 {{< tab tabNum="8" >}}
 <div class="row">
     <div class="col-md-6">
-        <p>Windows</p>
+        <p>Ventanas</p>
         <ul>
-            <li><a href="/cells/es/freeze-panes-in-excel-worksheet/">Congela los paneles en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/unfreeze-panes-in-excel-worksheet/">Descongela paneles en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/hide-excel-worksheets/">Oculta una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/unhide-excel-worksheets/">Elimina todos los comentarios en una hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/freeze-panes-in-excel-worksheet/" title="Congelar paneles en una hoja de cálculo" rel="noopener">Congelar paneles en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/unfreeze-panes-in-excel-worksheet/" title="Descongelar paneles en una hoja de cálculo" rel="noopener">Descongelar paneles en una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/hide-excel-worksheets/" title="Ocultar una hoja de cálculo" rel="noopener">Ocultar una hoja de cálculo de Excel.</a></li>
+            <li><a href="/cells/unhide-excel-worksheets/" title="Mostrar una hoja de cálculo" rel="noopener">Mostrar una hoja de cálculo de Excel.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
         <p>Zoom</p>
         <ul>
-            <li><a href="/cells/es/set-zoom-in-excel-worksheet/">Establece zoom en una hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/set-zoom-in-excel-worksheet/" title="Establecer nivel de zoom de la hoja de cálculo" rel="noopener">Establecer zoom en una hoja de cálculo de Excel.</a></li>
         </ul>
     </div>
 </div>
 {{< /tab >}}
 
-{{< /tabs >}}
+## {{< /tabs >}}

@@ -1,75 +1,87 @@
-﻿---
-title: Excel çalışma sayfasındaki birden fazla satırı silin
-second_title: Documen
-linktitle: Sıra
-type: docs
-url: /tr/rows/delete/rows/
-keywords: Delete rows on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki satırların silinmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 80
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki birden fazla satırı silme
 ---
-Bu REST API, Excel çalışma sayfasındaki birden fazla satırı silmeyi belirtir.
+title: "Bir Excel Çalışma Sayfasından Birden Fazla Satır Silme"
+second_title: "Belge"
+linktitle: "Satırlar"
+type: docs
+url: /rows/delete/rows/
+keywords: "Aspose.Cells Cloud, satırları sil, birden fazla satır sil, Excel çalışma sayfası, REST API, SDK"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından bir veya daha fazla satırı nasıl sileceğinizi öğrenin. Uç nokta ayrıntılarını, parametreleri, cURL örneğini ve çeşitli programlama dilleri için SDK kod örneklerini içerir."
+weight: 80
+ArticleTitle: "Aspose.Cells Cloud API ile Bir Excel Çalışma Sayfasından Birden Fazla Satır Silme"
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasından **birden fazla satırı siler**.
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
+**Gereksinimler:** Bu uç noktayı çağırmak için Aspose Cloud kimlik doğrulamasından alınan geçerli bir JWT erişim belirteci ve çalışma kitabına ilişkin uygun depolama izinlerine sahip olmanız gerekir.
+
+## DeleteWorksheetRows API
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma kağıdı bame.|
-| başlangıç satırı| tam sayı| sorgu| İşlem yapılacak satırın başlangıç indeksi.|
-| toplamSatırlar| tam sayı| sorgu|1 |
-| güncellemeReferansı| Boolean| sorgu| Doğru|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **İstek Parametreleri**
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı    | Tür      | Yol / Sorgu Dizesi / HTTP Gövdesi | Açıklama                                                                |
+| ---------------- | -------- | -------------------------------- | ----------------------------------------------------------------------- |
+| name             | string   | path                             | Çalışma kitabı adı.                                                     |
+| sheetName        | string   | path                             | Çalışma sayfası adı.                                                    |
+| startrow         | integer  | query                            | Silinecek ilk satırın sıfır tabanlı dizini (örneğin, `0` = ilk satır). |
+| totalRows        | integer  | query                            | Silinecek satır sayısı.                                                 |
+| updateReference  | boolean  | query                            | Silme işleminden sonra referansların güncellenip güncellenmeyeceği (`true`/`false`). |
+| folder           | string   | query                            | Belge klasörü.                                                          |
+| storageName      | string   | query                            | Depolama adı.                                                           |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows), herkese açık bir programlama arayüzü tanımlar ve web tarayıcınızdan doğrudan REST etkileşimlerinde bulunmanızı sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye istekte bulunmayı göstermektedir. **Tüm uç noktalar HTTPS gerektirir; HTTP kullanımdan kaldırılmıştır.**
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=1&updateReference=true" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+**Mümkün olan yanıt kodları**
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| HTTP Durumu | Açıklama                                |
+|-------------|-----------------------------------------|
+| 200         | Satırlar başarıyla silindi.             |
+| 400         | Geçersiz istek – geçersiz parametreler. |
+| 401         | Yetkisiz erişim – eksik veya geçersiz JWT belirteci. |
+| 404         | Bulunamadı – çalışma kitabı veya çalışma sayfası mevcut değil. |
+| 500         | İç sunucu hatası – beklenmeyen durum.   |
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+## Bulut SDK Kod Ailesi
+
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoludur. Bir SDK, düşük seviye ayrıntıları yönetir ve projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
+
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanılarak Aspose.Cells web hizmetlerine istekte bulunmayı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

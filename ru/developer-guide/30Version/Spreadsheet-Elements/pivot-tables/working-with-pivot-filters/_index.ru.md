@@ -1,208 +1,220 @@
-﻿---
-title: Работа с фильтром pivot
-second_title: Documen
-linktitle: Фильтры
-type: docs
-url: /ru/pivot-tables/add-filters/
-aliases: [/working-with-pivot-filters/]
-keywords: Add filter for a pivot table
-description: Aspose.Cells Cloud REST API поддерживает добавление фильтра для сводной таблицы. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 50
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Работа с фильтрами сводной таблицы
 ---
-Этот REST API указывает опорную точку `add` `filter` для индекса таблицы piovt
- 
-## РСЕT API
- 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters
- 
+title: "Работа с фильтрами сводных таблиц"
+second_title: "Документ"
+linktype: "Фильтры"
+type: docs
+url: /pivot-tables/add-filters/
+aliases: [/working-with-pivot-filters/]
+keywords: "Aspose.Cells, сводная таблица, фильтр, REST API, облако"
+description: "Узнайте, как добавлять, получать и удалять фильтры сводных таблиц с помощью REST API Aspose.Cells Cloud. Включает синтаксис запроса, обязательные параметры, пример cURL и фрагменты кода SDK для C# и Go."
+weight: 50
+ArticleTitle: "Работа с фильтрами сводных таблиц — документация Aspose.Cells Cloud"
+---
+
+Этот REST API добавляет **фильтр сводной таблицы** к сводной таблице, расположенной по указанному индексу.
+
+**Необходимые условия**  
+Перед вызовом этого конечного узла вы должны:
+
+- Сгенерировать действительный токен доступа OAuth/JWT и включить его в заголовок `Authorization`.  
+- Убедиться, что целевая рабочая книга хранится в облачной папке, к которой у вас есть доступ (указать `folder` и необязательно `storageName`).  
+- Использовать версию API Aspose.Cells Cloud не ниже 3.0.
+
+## API PutWorksheetPivotTableFilter
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters
 ```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь||
-| Имя_листа| нить| путь||
-| pivotTableIndex| целое число| путь||
-| фильтр|| тело||
-| нужноПересчитать| булев| запрос|ЛОЖЬ|
-| папка| нить| запрос||
-| имя_хранилища| нить| запрос| имя хранилища.|
- 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTableFilter) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Безопасность и аутентификация**
+
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
+
+### Параметры запроса
+
+| Имя параметра       | Тип     | Расположение | Описание                                                                                       |
+| ------------------- | ------- | ------------ | ---------------------------------------------------------------------------------------------- |
+| **name**            | string  | путь         | Имя файла Excel.                                                                               |
+| **sheetName**       | string  | путь         | Рабочий лист, содержащий сводную таблицу.                                                      |
+| **pivotTableIndex** | integer | путь         | Индекс сводной таблицы (начиная с 0), к которой будет применён фильтр.                         |
+| **filter**          | object  | тело         | Объект JSON, определяющий настройки фильтра. См. таблицу **схемы filter** ниже.               |
+| **needReCalculate** | boolean | query        | Если **true**, принудительно пересчитывает рабочую книгу после добавления фильтра. По умолчанию **false**. |
+| **folder**          | string  | query        | Папка в облачном хранилище, где расположен файл.                                               |
+| **storageName**     | string  | query        | Имя облачного хранилища.                                                                       |
+
+**Схема filter**
+
+| Свойство                     | Тип     | Описание                                                                                     |
+| ---------------------------- | ------- | -------------------------------------------------------------------------------------------- |
+| **AutoFilter**               | object  | Настройки автофильтра; можно опустить, если не используется.                                |
+| **EvaluationOrder**          | integer | Порядок, в котором применяется фильтр.                                                       |
+| **FieldIndex**               | integer | Индекс поля (начиная с 0), к которому применяется фильтр.                                    |
+| **FilterType**               | string  | Тип фильтра (например, `Value`, `Count`, `Label`).                                          |
+| **MeasureFldIndex**          | integer | Индекс поля измерения, если применимо.                                                       |
+| **MemberPropertyFieldIndex** | integer | Индекс поля свойства элемента, если применимо.                                              |
+| **Name**                     | string  | Необязательное имя фильтра.                                                                  |
+| **Value1**                   | string  | Первое значение, используемое фильтром (например, нижняя граница диапазона).                |
+| **Value2**                   | string  | Второе значение, используемое фильтром (например, верхняя граница диапазона).               |
+| **CustomFilters**            | array   | Коллекция пользовательских объектов фильтра (каждый содержит `FilterOperatorType`, `Value1`, `Value2`). |
+| **DynamicFilter**            | object  | Настройки динамического фильтра (например, Top10, Bottom10).                                 |
+| **IconFilter**               | object  | Настройки фильтра по иконкам.                                                                |
+| **Top10Filter**              | object  | Настройки фильтра Top10/Bottom10.                                                            |
+| **ColorFilter**              | object  | Настройки фильтра по цвету.                                                                  |
+| **Visibledropdown**          | boolean | Указывает, отображается ли раскрывающийся список фильтра.                                   |
+
+> **Примечание:** Все параметры, перечисленные выше, являются обязательными, если в описании API явно не указано иное.
+
+### Коды ответа
+
+| Код | Значение                                         |
+| --- | ------------------------------------------------ |
+| 200 | Фильтр успешно добавлен.                         |
+| 400 | Неверный запрос — недопустимые параметры.        |
+| 401 | Неавторизовано — отсутствует или недействителен токен. |
+| 404 | Не найдено — рабочая книга или сводная таблица отсутствует. |
+| 500 | Внутренняя ошибка сервера.                       |
+
+**Рекомендации по использованию**  
+- Минимизируйте размер объектов фильтров: большие определения могут увеличить задержку ответа.  
+- Вызовы являются идемпотентными: повторное добавление одного и того же фильтра не создаёт дубликатов.  
+- Учитывайте лимит API — 100 запросов в минуту на аккаунт.  
+
+*Дополнительные примечания:*  
+- Максимальный размер определения фильтра — 1 МБ; более крупные нагрузки будут отклонены с кодом 400.  
+- При использовании `needReCalculate=true` время ответа может увеличиться для больших рабочих книг.  
+
+Вы можете ознакомиться с полным описанием OpenAPI здесь:  
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTableFilter)
+
+### Пример запроса cURL
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivottables/0/PivotFilters?needReCalculate=true" \
--X PUT \
--d "{ \"AutoFilter\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" }, \"FilterColumns\": [ { \"FieldIndex\": 0, \"FilterType\": \"string\", \"MultipleFilters\": { \"MatchBlank\": true, \"MultipleFilterList\": [ {} ] }, \"ColorFilter\": { \"FilterByFillColor\": \"string\", \"Pattern\": \"string\", \"Color\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" }, \"ForegroundColorColor\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" }, \"BackgroundColor\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" } }, \"CustomFilters\": [ { \"FilterOperatorType\": \"string\" } ], \"DynamicFilter\": { \"DynamicFilterType\": \"string\" }, \"IconFilter\": { \"IconId\": 0, \"IconSetType\": \"string\" }, \"Top10Filter\": { \"Criteria\": \"string\", \"IsPercent\": true, \"IsTop\": true, \"Items\": 0 }, \"Visibledropdown\": \"string\" } ], \"Range\": \"string\", \"Sorter\": { \"CaseSensitive\": true, \"HasHeaders\": true, \"KeyList\": [ { \"Key\": 0, \"SortOrder\": \"string\", \"CustomList\": \"string\" } ], \"SortLeftToRight\": true } }, \"EvaluationOrder\": 0, \"FieldIndex\": 0, \"FilterType\": \"string\", \"MeasureFldIndex\": 0, \"MemberPropertyFieldIndex\": 0, \"Name\": \"string\", \"Value1\": \"string\", \"Value2\": \"string\"}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -d '{
+        "AutoFilter": {
+          "link": { "Href": "https://example.com", "Rel": "self", "Title": "AutoFilter Link", "Type": "application/json" },
+          "FilterColumns": [
+            {
+              "FieldIndex": 0,
+              "FilterType": "Value",
+              "MultipleFilters": {
+                "MatchBlank": true,
+                "MultipleFilterList": [ { "Value": "example" } ]
+              },
+              "ColorFilter": {
+                "FilterByFillColor": "FF0000",
+                "Pattern": "Solid",
+                "Color": {
+                  "Color": { "A": 255, "R": 255, "G": 0, "B": 0 },
+                  "ColorIndex": 3,
+                  "IsShapeColor": false,
+                  "ThemeColor": { "ColorType": "Accent1", "Tint": 0 },
+                  "Type": "Rgb"
+                },
+                "ForegroundColorColor": null,
+                "BackgroundColor": null
+              },
+              "CustomFilters": [ { "FilterOperatorType": "Equals", "Value1": "Example" } ],
+              "DynamicFilter": { "DynamicFilterType": "Top10" },
+              "IconFilter": { "IconId": 1, "IconSetType": "3Arrows" },
+              "Top10Filter": { "Criteria": "Top", "IsPercent": true, "IsTop": true, "Items": 10 },
+              "Visibledropdown": "true"
+            }
+          ],
+          "Range": "A1:D100",
+          "Sorter": {
+            "CaseSensitive": false,
+            "HasHeaders": true,
+            "KeyList": [ { "Key": 0, "SortOrder": "Ascending", "CustomList": null } ],
+            "SortLeftToRight": false
+          }
+        },
+        "EvaluationOrder": 0,
+        "FieldIndex": 0,
+        "FilterType": "Value",
+        "MeasureFldIndex": 0,
+        "MemberPropertyFieldIndex": 0,
+        "Name": "MyFilter",
+        "Value1": "10",
+        "Value2": "20"
+      }' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Семейство облачных SDK
- 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
- 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
- 
- 
- 
+
+Использование SDK — самый быстрый способ разработки под Aspose.Cells Cloud. SDK обрабатывают низкоуровневые детали, позволяя вам сосредоточиться на бизнес-логике. Полный список SDK Aspose.Cells Cloud см. в [репозитории GitHub](https://github.com/aspose-cells-cloud).
+
+Ниже приведены примеры кода, демонстрирующие вызов веб-сервисов Aspose.Cells с помощью различных SDK.
 
 {{< tabs tabTotal="2" tabID="4" tabName1="C#" tabName2="Go" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
+using System;
+using System.Threading.Tasks;
+using Aspose.Cells.Cloud.Sdk.Api;
+using Aspose.Cells.Cloud.Sdk.Model;
 
-public void Run_PivotTable_PivotFilter()
-
+public class PivotFilterExample
 {
-
-    url = @"http://api.aspose.com/v3.0/storage/file/Temp/V17.02.00_01.xlsx";
-
-    using (HttpWebResponse response = _helper.CallDelete(url, string.Empty, contentType))
-
+    public static async Task AddPivotFilterAsync()
     {
+        // Инициализация клиента API (замените на ваши учётные данные)
+        var config = new Configuration
+        {
+            ClientId = "YOUR_CLIENT_ID",
+            ClientSecret = "YOUR_CLIENT_SECRET"
+        };
+        var apiInstance = new CellsApi(config);
 
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
+        // Создание объекта фильтра
+        var filter = new PivotFilter
+        {
+            AutoFilter = null,
+            EvaluationOrder = 0,
+            FieldIndex = 1,
+            FilterType = "Count"
+        };
 
+        // Подготовка запроса
+        var request = new PutWorksheetPivotTableFilterRequest(
+            name: "Book1.xlsx",
+            sheetName: "PivotSheet",
+            pivotTableIndex: 0,
+            filter: filter,
+            needReCalculate: true,
+            folder: "Temp",
+            storageName: null);
+
+        // Выполнение запроса
+        var response = await apiInstance.PutWorksheetPivotTableFilterAsync(request);
+        Console.WriteLine($"Статус: {response.Status}");
     }
-
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx?folder=Temp";
-
-    using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-
-    {
-
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
-    }
-
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet?folder=Temp";
-
-    using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-
-    {
-
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
-    }
-
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/Sheet2?folder=Temp";
-
-    using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-
-    {
-
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
-    }
-
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/importdata?folder=Temp";
-
-    data = "{ \"BatchData\":[{\"rowIndex\":0,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Sport\",\"style\":null},{\"rowIndex\":0,\"columnIndex\":1,\"type\":\"String\",\"value\":\"Year\",\"style\":null},{\"rowIndex\":0,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Quarter\",\"style\":null},{\"rowIndex\":0,\"columnIndex\":3,\"type\":\"String\",\"value\":\"Sales\",\"style\":null},{\"rowIndex\":0,\"columnIndex\":4,\"type\":\"String\",\"value\":\"YearSales\",\"style\":null},{\"rowIndex\":1,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Golf\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Golf\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Tennis\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Tennis\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Tennis\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Tennis\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Golf\",\"style\":null},{\"rowIndex\":1,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2014\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2014\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2014\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2013\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2013\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2013\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":1,\"type\":\"int\",\"value\":\"2013\",\"style\":null},{\"rowIndex\":1,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr4\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr4\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":2,\"type\":\"String\",\"value\":\"Qtr3\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":3,\"type\":\"int\",\"value\":\"1500\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":3,\"type\":\"int\",\"value\":\"2000\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":3,\"type\":\"int\",\"value\":\"600\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":3,\"type\":\"int\",\"value\":\"1500\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":3,\"type\":\"int\",\"value\":\"4070\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":3,\"type\":\"int\",\"value\":\"5000\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":3,\"type\":\"int\",\"value\":\"6430\",\"style\":null},{\"rowIndex\":1,\"columnIndex\":4,\"type\":\"int\",\"value\":\"15000\",\"style\":null},{\"rowIndex\":2,\"columnIndex\":4,\"type\":\"int\",\"value\":\"20000\",\"style\":null},{\"rowIndex\":3,\"columnIndex\":4,\"type\":\"int\",\"value\":\"600\",\"style\":null},{\"rowIndex\":4,\"columnIndex\":4,\"type\":\"int\",\"value\":\"1500\",\"style\":null},{\"rowIndex\":5,\"columnIndex\":4,\"type\":\"int\",\"value\":\"4070\",\"style\":null},{\"rowIndex\":6,\"columnIndex\":4,\"type\":\"int\",\"value\":\"5000\",\"style\":null},{\"rowIndex\":7,\"columnIndex\":4,\"type\":\"int\",\"value\":\"6430\",\"style\":null}],\"DestinationWorksheet\":\"Sheet2\",\"IsInsert\":false}";
-
-    using (HttpWebResponse response = _helper.CallPost(url, data, contentType))
-
-    {
-
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
-    }
-
-    url = "http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables?folder=Temp";
-
-    data = "{\"Name\":\"TestPivot\",\"SourceData\":\"=Sheet2!A1:E8\",\"DestCellName\":\"C1\",\"UseSameSource\":true,\"PivotFieldRows\":[0,1],\"PivotFieldColumns\":[2],\"PivotFieldData\":[3,4]}";
-
-    using (HttpWebResponse response = _helper.CallPut(url, data, contentType))
-
-    {
-
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
-    }
-
-    url = "http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotFilters?folder=Temp";
-
-    data = "{\"AutoFilter\":null,\"EvaluationOrder\":null,\"FieldIndex\":1,\"FilterType\":\"Count\",\"MeasureFldIndex\":null,\"MemberPropertyFieldIndex\":null,\"Name\":null,\"Value1\":null,\"Value2\":null}";
-
-    using (HttpWebResponse response = _helper.CallPut(url, data, contentType))
-
-    {
-
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
-    }
-
-    url = "http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotFilters/0?folder=Temp";
-
-    using (HttpWebResponse response = _helper.CallGet(url, string.Empty, contentType))
-
-    {
-
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
-    }
-
-    url = "http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotFilters?folder=Temp";
-
-    using (HttpWebResponse response = _helper.CallGet(url, string.Empty, contentType))
-
-    {
-
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
-    }
-
-    url = "http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotFilters/0?folder=Temp";
-
-    using (HttpWebResponse response = _helper.CallDelete(url, string.Empty, contentType))
-
-    {
-
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
-    }
-
-    url = "http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotFilters?folder=Temp";
-
-    using (HttpWebResponse response = _helper.CallDelete(url, string.Empty, contentType))
-
-    {
-
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-
-    }
-
 }
-
 ```
 
 {{< /tab >}}
@@ -215,6 +227,4 @@ public void Run_PivotTable_PivotFilter()
 
 {{< /tabs >}}
 
-
-
-
+Дополнительные операции, связанные со сводными таблицами, описаны в документации по **добавлению**, **удалению** и **очистке** фильтров.

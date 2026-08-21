@@ -1,14 +1,16 @@
-﻿---
-title: "Aspose.Cells Molnwebb API - Excel Beräkna: Summa, räkna, medelvärde, min, max, addera, subtrahera, multiplicera, dividera, etc."
-second_title: Documen
-ArticleTitle: "Excel Calculation: Sum, Count, Average, Min, Max, Add, Subtract, Multiply, Divide, et"
-linktitle: Kalkyl
+---
+title: "Aspose.Cells Cloud Web API – Beräkna SUMMA, RÄKNA, MEDDELVÄRDE, MIN, MAX och grundläggande matematiska operationer"
+second_title: "Dokument"
+ArticleTitle: "Förbättra dina datafärdigheter: Lär dig nyckelberäkningar i Excel – Addera, Subtrahera, Multiplikera, Dividera och mer"
+linktitle: "Beräkna"
 type: docs
 url: /sv/calculate/
-keywords: Aspose.Cells Cloud REST API, Excel conversion, merge spreadsheets, split documents, protect Excel files, search and replace in Excel, transform spreadsheets, Office Excel 2016, Office Excel 2019, Office Excel 365
-description: Den här utvecklarguiden ger praktiska scenarier och tips för att effektivt använda Aspose.Cells for .NET-funktioner, så att du kan uppnå specifika Excel-dokumentutseenden och implementera olika användningsfall effektivt.
+keywords: "Aspose.Cells Cloud, Excel-beräknings-API, SUMMA, RÄKNA, MEDDELVÄRDE, MIN, MAX, grundläggande matematiska operationer, REST API, kalkylbladsberäkningar"
+description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att beräkna SUMMA, RÄKNA, MEDDELVÄRDE, MIN, MAX och grundläggande aritmetiska operationer på Excel-kalkylblad. Inkluderar begärsyntax, exempelkod, svar och felhantering."
 weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylbladsmanipulation, PDF Konvertering, CSV-bearbetning, JSON-hantering, Markdown-stöd, Utvecklarguide, Beräkningsfunktionalitet
 ---
-- **[Summa, antal, medelvärde etc. efter färg i Spreadsheet/Excel](https://docs.aspose.cloud/cells/aggregate-cells-by-color/)**
-- **[Addition, minus, multiplikation, dividering och procent i kalkylblad/Excel](https://docs.aspose.cloud/cells/math-calculate/)**
+
+Utför automatiskt beräkningar som **SUMMA**, **RÄKNA**, **MEDDELVÄRDE**, **MIN** och **MAX** på Excel-kalkylblad via Aspose.Cells Cloud REST API – ingen manuell filtrering eller lokal kalkylprogramvara krävs. API:t stöds i **Aspose.Cells Cloud**, använder standardautentisering (OAuth 2.0 eller JWT), returnerar resultat i JSON-format och tillhandahåller tydliga felkoder för ogiltiga intervall eller autentiseringsproblem. För detaljerad begärsyntax, se den officiella REST API-referensen.
+
+- **[Beräkna efter cellfärg](https://docs.aspose.cloud/cells/aggregate-cells-by-color/)** –hämta totalvärden grupperade efter bakgrundsfärg eller teckensnittsfärg i en enda begäran.
+- **[Snabbberäkning i kalkylblad](https://docs.aspose.cloud/cells/math-calculate/)** – beräkna SUMMA, RÄKNA, MEDDELVÄRDE, MIN, MAX (och grundläggande aritmetik) över valfritt intervall omedelbart.

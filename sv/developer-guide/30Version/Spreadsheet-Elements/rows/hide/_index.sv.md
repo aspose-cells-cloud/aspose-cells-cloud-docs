@@ -1,75 +1,91 @@
-﻿---
-title: Dölj rader i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Gömd
-type: docs
-url: /sv/rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
-keywords: Hide rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder döljning av rader i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 40
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Dölj rader i ett Excel-kalkylblad
 ---
-Denna REST API anger att rader i ett Excel-arbetsblad ska döljas.
+title: "Dölj rader i ett Excel-ark"
+second_title: "Dokument"
+linktitle: "Dölj"
+type: docs
+url: /rows/hide/
+aliases: [/hide-rows-in-excel-worksheet/]
+keywords: "dölj rader, Aspose.Cells Cloud, Excel API, REST, SDK"
+description: "Lär dig hur du döljer en eller flera rader i ett Excel-ark med Aspose.Cells Cloud REST API. Innehåller cURL-exempel, SDK-utdrag, parametrar, autentisering, svarsdetaljer och felhantering."
+weight: 40
+ArticleTitle: "Dölj rader i Excel-ark med Aspose.Cells Cloud API"
+---
 
-## RSET API
+Denna REST API döljer rader i ett Excel-ark.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
- 
+**Förutsättningar:** En giltig JWT Bearer-token från Aspose Cloud OAuth-slutpunkten, arbetsboken lagrad i Aspose Cloud-lagring och namnet på arket som innehåller de rader som ska döljas. API:et fungerar med Excel-filer i XLS, XLSX och andra format som stöds.
+
+## PostHideWorksheetRows API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| startrad| heltal| fråga| Indexet för den första raden som ska användas.|
-| totala rader| heltal| fråga| Antal rader som ska hanteras.|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begärparametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameter       | Typ     | Plats   | Beskrivning                                                         |
+| --------------- | ------- | ------- | ------------------------------------------------------------------- |
+| **name**        | string  | path    | Namnet på arbetsboksfilen.                                          |
+| **sheetName**   | string  | path    | Namnet på arket som innehåller de rader som ska döljas.            |
+| **startrow**    | integer | query   | Nollbaserat index för den första raden som ska döljas.             |
+| **totalRows**   | integer | query   | Antalet på varandra följande rader som ska döljas, börjande från **startrow**. |
+| **folder**      | string  | query   | Mappen i lagringen där arbetsboken finns.                          |
+| **storageName** | string  | query   | Namnet på lagringstjänsten.                                         |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) tillhandahåller ett offentligt tillgängligt programmeringsgränssnitt som låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för att anropa Aspose.Cells webbtjänster. API:et kräver en JWT Bearer-token från Aspose Cloud OAuth-slutpunkten; inkludera den i `Authorization`-headern. Exemplet nedan visar hur du döljer en rad med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/hide?startrow=1&totalRows=1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+**HTTP-statuskoder för svar**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Kod | Beskrivning |
+|-----|-------------|
+| 200 | Lyckades – rader dolda |
+| 400 | Felaktig begäran – ogiltiga parametrar |
+| 401 | Otillåten – saknad eller ogiltig JWT |
+| 404 | Inte hittad – arbetsbok eller ark finns inte |
+| 500 | Serverfel – internt bearbetningsfel |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Ett lyckat anrop returnerar ett JSON-objekt med fälten `Code` och `Status`. Vid fel inkluderar svaret ytterligare fält såsom `Message` och lämpliga HTTP-statuskoder (t.ex. 400, 401, 404, 500).
+
+**Notera:** Se till att `startrow`-värdet ligger inom arkets radintervall; annars returnerar API:et ett 400-fel. Radindex är nollbaserade, så `startrow=0` hänvisar till den första raden.
+
+## Molnsdks-familj
+
+Att använda ett SDK är det snabbaste sättet att integrera den här funktionaliteten i din applikation. SDK:er hanterar detaljer på lågnivå så att du kan fokusera på affärslogik. Se [GitHub-lagret](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man döljer rader med olika SDK:er. (Exempelfilnamnen hänvisar till "Unhide" på grund av äldre namngivning; koden i varje gist utför åtgärden **Dölj**.)
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

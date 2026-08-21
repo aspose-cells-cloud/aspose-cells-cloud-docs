@@ -1,65 +1,79 @@
-﻿---
-title: Establecer fondo en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Anuncio
-type: docs
-url: /es/worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
-keywords: Delete an Excel worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API permite eliminar una hoja de cálculo Excel en un libro Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 180
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Establecer fondo en una hoja de cálculo Excel
 ---
-Este REST API indica `add worksheet background image`.
+title: "Establecer fondo en una hoja de cálculo de Excel"
+ArticleTitle: "Establecer fondo en una hoja de cálculo de Excel – Guía de la API de Aspose.Cells Cloud"
+second_title: "Documentos"
+linktitle: "Agregar"
+type: docs
+url: /worksheets/background/add/
+aliases: [/set-background-or-watermark-for-excel-worksheet/]
+keywords: "Aspose.Cells, Excel, hoja de cálculo, fondo, API REST, SDK, agregar imagen"
+description: "Aprenda cómo agregar una imagen de fondo (PNG, JPEG, BMP) a una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye el punto de conexión, los parámetros obligatorios, los pasos de autenticación, un ejemplo con cURL y ejemplos de código del SDK."
+weight: 180
+---
 
-## RSET API
+Esta API REST agrega una imagen de fondo a una hoja de cálculo.
+
+## Seguridad y autenticación
+Las API de Aspose.Cells Cloud son seguras y requieren [autenticación basada en token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
- 
 ```
 
-Los parámetros de la solicitud son:
+### **Parámetros de la solicitud**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino||
-| nombreHoja| cadena| camino||
-| png|| cuerpo||
-| carpeta| cadena| consulta||
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción                                                     |
+| --------------------- | ------ | --------- | --------------------------------------------------------------- |
+| name                  | string | path      | Nombre del libro de Excel.                                      |
+| sheetName             | string | path      | Nombre de la hoja de cálculo a la que se aplica la imagen.      |
+| imageFile             | file   | body      | Archivo de imagen binario (PNG, JPEG, BMP, etc.) para establecer como fondo. |
+| folder                | string | query     | Carpeta en el almacenamiento donde se encuentra el libro.       |
+| storageName           | string | query     | Nombre del almacenamiento de Aspose Cloud.                      |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+**Formatos admitidos y límites**
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+- Extensiones de imagen aceptadas: **PNG, JPEG, BMP, GIF**.
+- Tamaño máximo de archivo: **5 MB**.
+- La imagen se repite (mosaico) para cubrir todo el fondo de la hoja de cálculo.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) define una interfaz de programación públicamente accesible y le permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/background" \
--X PUT \
--T Creative.jpg \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/background" \
+  -X PUT \
+  -F "imageFile=@Creative.jpg" \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+_Posibles respuestas de error_
+
+| Código HTTP | Descripción                                                  |
+| ----------- | ------------------------------------------------------------ |
+| 400         | Solicitud incorrecta: parámetros faltantes o no válidos.     |
+| 401         | No autorizado: token JWT inválido o caducado.                |
+| 404         | No encontrado: el libro o la hoja de cálculo no existen.     |
+| 500         | Error interno del servidor: condición inesperada en el servidor. |
 
 {{< /tab >}}
 
@@ -67,9 +81,9 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/back
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells utilizando varios SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

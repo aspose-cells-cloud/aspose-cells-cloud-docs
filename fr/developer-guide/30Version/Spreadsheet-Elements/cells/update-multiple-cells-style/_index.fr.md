@@ -1,71 +1,131 @@
-﻿---
-title: Mise à jour multiple Cells Styl
+---
+title: "Mettre à jour le style de plusieurs cellules – Référence de l’API Aspose.Cells Cloud (v3.0)"
 type: docs
 url: /fr/update-multiple-cells-style/
 weight: 20
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Mise à jour multiple Cells Style
+keywords: ["Aspose.Cells", "mettre à jour le style de plusieurs cellules", "API de style de cellule Excel", "SDK cloud", "API REST", "exemple cURL", "requête JSON", "authentification JWT"]
+description: "Découvrez comment mettre à jour le style d'une plage de cellules dans un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud v3.0. Inclut l’endpoint, la méthode HTTP, les paramètres, les exemples cURL et SDK, l’authentification, la gestion des erreurs et les informations de version."
+ArticleTitle: "Mettre à jour le style de plusieurs cellules – Référence de l’API Aspose.Cells Cloud (v3.0)"
 ---
-Ce REST API indique l'ensemble `cells style` sur une cellule dans un fichier Excel.
 
-## RSET API
+## API REST
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
- 
+Cette API REST définit le **style** pour une plage de cellules dans un classeur Excel.
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
 ```
 
-Les paramètres de la requête sont :
+## Sécurité et authentification
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du classeur.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
-| gamme| chaîne| requête| La gamme.|
-| style|| corps| avec les paramètres de style de mise à jour.|
-| dossier| chaîne| requête| Le dossier du classeur.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une [authentification basée sur un jeton JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+### Paramètres de la requête
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Nom du paramètre | Type   | Emplacement | Description |
+|------------------|--------|-------------|-------------|
+| **name**         | string | path        | Nom du classeur. |
+| **sheetName**    | string | path        | Nom de la feuille de calcul. |
+| **range**        | string | query       | Plage de cellules (par exemple, `A1:A10`). |
+| **style**        | object | body        | Objet JSON définissant le style à appliquer. |
+| **folder**       | string | query       | Dossier contenant le classeur. |
+| **storageName**  | string | query       | Nom du stockage. |
+
+#### Objet style
+L'objet JSON `style` représente le formatage des cellules. Il peut contenir l'une ou plusieurs des propriétés facultatives suivantes :
+
+- **Font** – Paramètres de police (`Name`, `Size`, `IsBold`, `IsItalic`, `Color`, etc.).  
+- **BackgroundColor** – Couleur d’arrière-plan au format ARGB.  
+- **ForegroundColor** – Couleur de premier plan au format ARGB.  
+- **Name**, **CultureCustom**, **Custom** – Métadonnées supplémentaires du style.
+
+## **Réponse**
+
+Renvoie un `CellCloudResponse`.
+
+- **Aperçu des champs de réponse**
+
+| Champ             | Type    | Description                                           |
+| ----------------- | ------- | ----------------------------------------------------- |
+| `Status`          | string  |                                                       |
+| `Code`            | integer | 200, 400, 401, 500, ...                               |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                         |
+|------|-----------------------------|-----------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT non valide ou manquant. |
+| 413  | Charge utile trop grande    | Le fichier téléchargé dépasse la taille limite. |
+| 500  | Erreur interne du serveur   | Erreur serveur inattendue. |
+## Comment utiliser l’API PostUpdateWorksheetRangeStyle avec les SDK
+
+### Spécification de l’API PostUpdateWorksheetRangeStyle
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle) fournit le schéma complet.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API cloud à l’aide de cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/style?range=a1%3Aa10" \
--X POST \
- -d "{ \"Font\": { \"Color\": { \"A\":255, \"R\": 255, \"G\": 255, \"B\": 0 }, \"DoubleSize\": 10, \"IsBold\": true, \"IsItalic\": true, \"IsStrikeout\": true, \"IsSubscript\": true, \"IsSuperscript\": true, \"Name\": \"Arial\", \"Size\": 22 }, \"Name\": \"string\", \"CultureCustom\": \"string\", \"Custom\": \"string\", \"BackgroundColor\": { \"A\": 10, \"R\": 10, \"G\": 10, \"B\": 10 }, \"ForegroundColor\": { \"A\": 255, \"R\": 255, \"G\": 255, \"B\": 0 } \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+cURL -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/style?range=a1%3Aa10" \
+  -X POST \
+  -d '{
+        "Font": {
+          "Color": { "A":255, "R":255, "G":255, "B":0 },
+          "Size": 22,
+          "IsBold": true,
+          "IsItalic": true,
+          "IsStrikeout": true,
+          "IsSubscript": true,
+          "IsSuperscript": true,
+          "Name": "Arial"
+        },
+        "Name": "string",
+        "CultureCustom": "string",
+        "Custom": "string",
+        "BackgroundColor": { "A":10, "R":10, "G":10, "B":10 },
+        "ForegroundColor": { "A":255, "R":255, "G":255, "B":0 }
+      }' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+### Utiliser les SDK Aspose.Cells Cloud
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+L'utilisation d'un SDK est le moyen le plus efficace d'accélérer le développement. Un SDK gère les détails de bas niveau, vous permettant de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants illustrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

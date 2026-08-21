@@ -1,362 +1,279 @@
-﻿---
-title: Bir Çalışma Sayfasından Grafik Başlığını Alın
+---
+title: "Çalışma Sayfasından Grafik Başlığını Alın"
 type: docs
-url: /tr/charts/title/get/
+url: /charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Çalışma Sayfasından Grafik Başlığını Alma
+keywords:
+  - "Aspose.Cells Cloud"
+  - "Grafik Başlığı"
+  - "Excel"
+  - "REST API"
+  - "Grafik Başlığını Al"
+  - "cURL"
+  - "SDK"
+  - "Excel grafik otomasyonu"
+  - "GRAFİK BAŞLIĞINI AL"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından bir grafik başlığını nasıl alacağınızı öğrenin. Uç nokta, parametreler, kimlik doğrulama, örnek cURL ve SDK kodunu içerir."
+ArticleTitle: "Çalışma Sayfasından Grafik Başlığını Alın"
 ---
-Bu REST API grafik başlığını al'ı gösterir
- 
-## RSET API
- 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
- 
+
+Bu REST API, bir Excel çalışma kitabının bir çalışma sayfasında depolanan bir grafik başlığını alır.
+
+**Önkoşullar**: Bu uç noktayı çağırmak için `Cells.Read` kapsamdaki geçerli bir Aspose.Cells Cloud OAuth2/JWT erişim belirteciniz olmalıdır. Çalışma kitabının zaten belirtilen depolama konumuna yüklenmiş olması gerekir.
+
+## GetWorksheetChartTitle API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabı adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| grafikIndeksi| tam sayı| yol| Grafik endeksi.|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
- 
-<br/>
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartTitle) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### **Güvenlik ve Kimlik Doğrulama**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
+
+### İstek parametreleri
+
+| Parametre Adı | Tür    | Konum | Açıklama                                      |
+| ------------- | ------ | ----- | --------------------------------------------- |
+| name          | string | path  | Çalışma kitaplığı dosyasının adı.             |
+| sheetName     | string | path  | Grafiği içeren çalışma sayfasının adı.        |
+| chartIndex    | integer | path | Grafiğin sıfır tabanlı dizini.                |
+| folder        | string | query | Çalışma kitabının depolandığı klasör yolu.    |
+| storageName   | string | query | Depolama hizmetinin adı.                      |
+
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartTitle), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye nasıl çağrı yapılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/charts/0/title" 
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/charts/0/title" \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
+```json
 {
-  "Status": "string",
   "Title": {
-    "link": {
-      "Href": "string",
-      "Rel": "string",
-      "Title": "string",
-      "Type": "string"
-    },
-    "Area": {
-      "BackgroundColor": {
-        "A": 0,
-        "R": 0,
-        "G": 0,
-        "B": 0
-      },
-      "FillFormat": {
-        "Type": "string",
-        "SolidFill": {
-          "Color": {
-            "A": 0,
-            "R": 0,
-            "G": 0,
-            "B": 0
-          },
-          "CellsColor": {
-            "Color": {
-              "A": 0,
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "ColorIndex": 0,
-            "IsShapeColor": true,
-            "ThemeColor": {
-              "ColorType": "string",
-              "Tint": 0
-            },
-            "Type": "string"
-          },
-          "Transparency": 0
-        },
-        "PatternFill": {
-          "Pattern": "string",
-          "BackgroundCellsColor": {
-            "Color": {
-              "A": 0,
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "ColorIndex": 0,
-            "IsShapeColor": true,
-            "ThemeColor": {
-              "ColorType": "string",
-              "Tint": 0
-            },
-            "Type": "string"
-          },
-          "ForegroundCellsColor": {
-            "Color": {
-              "A": 0,
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "ColorIndex": 0,
-            "IsShapeColor": true,
-            "ThemeColor": {
-              "ColorType": "string",
-              "Tint": 0
-            },
-            "Type": "string"
-          },
-          "ForegroundColor": {
-            "A": 0,
-            "R": 0,
-            "G": 0,
-            "B": 0
-          },
-          "BackgroundColor": {
-            "A": 0,
-            "R": 0,
-            "G": 0,
-            "B": 0
-          },
-          "BackTransparency": 0,
-          "ForeTransparency": 0
-        },
-        "TextureFill": {
-          "Type": "string",
-          "Transparency": 0,
-          "Scale": 0,
-          "TilePicOption": {
-            "OffsetX": 0,
-            "OffsetY": 0,
-            "ScaleX": 0,
-            "ScaleY": 0,
-            "AlignmentType": "string",
-            "MirrorType": "string"
-          },
-          "PicFormatOption": {
-            "Type": "string",
-            "Scale": 0,
-            "Left": 0,
-            "Right": 0,
-            "Top": 0,
-            "Bottom": 0
-          },
-          "Image": {
-            "link": {
-              "Href": "string",
-              "Rel": "string",
-              "Title": "string",
-              "Type": "string"
-            }
-          }
-        },
-        "GradientFill": {
-          "FillType": "string",
-          "DirectionType": "string",
-          "Angle": 0,
-          "GradientStops": [
-            {
-              "Color": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "Position": 0,
-              "Transparency": 0
-            }
-          ]
-        },
-        "ImageData": "string"
-      },
-      "ForegroundColor": {
-        "A": 0,
-        "R": 0,
-        "G": 0,
-        "B": 0
-      },
-      "Format": "string",
-      "InvertIfNegative": true,
-      "Transparency": 0
-    },
-    "AutoScaleFont": true,
-    "BackgroundMode": "string",
-    "Border": {
-      "BeginArrowLength": "string",
-      "BeginArrowWidth": "string",
-      "BeginType": "string",
-      "CapType": "string",
-      "Color": {
-        "A": 0,
-        "R": 0,
-        "G": 0,
-        "B": 0
-      },
-      "CompoundType": "string",
-      "DashType": "string",
-      "EndArrowLength": "string",
-      "EndArrowWidth": "string",
-      "EndType": "string",
-      "GradientFill": {
-        "FillType": "string",
-        "DirectionType": "string",
-        "Angle": 0,
-        "GradientStops": [
-          {
-            "Color": {
-              "A": 0,
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "Position": 0,
-            "Transparency": 0
-          }
-        ]
-      },
-      "IsAuto": true,
-      "IsAutomaticColor": true,
-      "IsVisible": true,
-      "JoinType": "string",
-      "Style": "string",
-      "Transparency": 0,
-      "Weight": "string",
-      "WeightPt": 0
-    },
+    "Text": "Sales Q1",
     "Font": {
-      "Color": {
-        "A": 0,
-        "R": 0,
-        "G": 0,
-        "B": 0
-      },
-      "DoubleSize": 0,
-      "IsBold": true,
-      "IsItalic": true,
-      "IsStrikeout": true,
-      "IsSubscript": true,
-      "IsSuperscript": true,
-      "Name": "string",
-      "Size": 0,
-      "Underline": "string"
-    },
-    "IsAutomaticSize": true,
-    "IsInnerMode": true,
-    "Shadow": true,
-    "ShapeProperties": [
-      {
-        "link": {
-          "Href": "string",
-          "Rel": "string",
-          "Title": "string",
-          "Type": "string"
-        }
-      }
-    ],
-    "Width": 0,
-    "Height": 0,
-    "X": 0,
-    "Y": 0,
-    "IsVisible": true,
-    "LinkedSource": "string",
-    "RotationAngle": 0,
-    "Text": "string",
-    "TextDirection": "string",
-    "TextHorizontalAlignment": "string",
-    "TextVerticalAlignment": "string"
+      "Name": "Arial",
+      "Size": 12,
+      "IsBold": true
+    }
   }
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Yanıt alanları**
+
+| Alan                | Açıklama                                         |
+| ------------------- | ------------------------------------------------ |
+| `Title.Text`        | Grafik başlığı olarak görüntülenen gerçek metin. |
+| `Title.Font.Name`   | Başlık için kullanılan yazı tipi ailesi (örn. _Arial_). |
+| `Title.Font.Size`   | Nokta cinsinden yazı tipi boyutu.                |
+| `Title.Font.IsBold` | Başlık metninin kalın olup olmadığını belirtir.   |
+
+**Yanıt durum kodları**
+
+| Kod | Açıklama |
+|-----|----------|
+| 200 OK | Grafik başlığı başarıyla alındı. |
+| 401 Unauthorized | Kimlik doğrulama başarısız oldu veya belirteç eksik/geçersiz. |
+| 404 Not Found | Belirtilen çalışma kitabısı, çalışma sayfası veya grafik mevcut değil. |
+| 500 Internal Server Error | Beklenmeyen bir sunucu hatası oluştu. |
+
+**Notlar**: Grafik dizini sıfır tabanlıdır; grafiğin mevcut olduğundan emin olun. Çalışma kitabısı yüklenmediyse, önce uygun API kullanılarak yüklenmelidir.
+
+**Komut dosyasında başlığı nasıl çıkaracağınız (jq kullanarak)**
+
+```bash
+# Yanıt JSON'unun response.json içinde kaydedildiğini varsayalım
+title=$(jq -r '.Title.Text' response.json)
+echo "Grafik başlığı: $title"
+```
+
 ## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
- 
+
+SDK kullanmak, geliştirme hızını en hızlı şekilde artıracaktır. SDK, alt seviye detayları yönetir, böylece projenizin görevlerine odaklanabilirsiniz. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını göstermektedir:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
 
-
+```csharp
+// C# örneği, Aspose.Cells Cloud SDK kullanılarak
+var config = new Configuration
+{
+    AccessToken = "<jwt token>",
+    BasePath = "https://api.aspose.cloud"
+};
+var api = new ChartsApi(config);
+var response = api.GetWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, folder: "", storageName: "");
+Console.WriteLine(response.Title.Text);
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-
+```java
+// Java örneği, Aspose.Cells Cloud SDK kullanılarak
+Configuration config = new Configuration();
+config.setAccessToken("<jwt token>");
+config.setBasePath("https://api.aspose.cloud");
+ChartsApi api = new ChartsApi(config);
+ChartTitleResponse response = api.getWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, "", "");
+System.out.println(response.getTitle().getText());
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-
+```php
+<?php
+// PHP örneği, Aspose.Cells Cloud SDK kullanılarak
+$config = new Aspose\Cells\Configuration();
+$config->setAccessToken('<jwt token>');
+$config->setHost('https://api.aspose.cloud');
+$apiInstance = new Aspose\Cells\Api\ChartsApi($config);
+$response = $apiInstance->getWorksheetChartTitle('Book1.xlsx', 'Sheet1', 0, '', '');
+echo $response->getTitle()->getText();
+?>
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
+```ruby
+# Ruby örneği, Aspose.Cells Cloud SDK kullanılarak
+require 'aspose_cells_cloud'
 
+config = AsposeCellsCloud::Configuration.new
+config.access_token = '<jwt token>'
+config.host = 'https://api.aspose.cloud'
+
+api_instance = AsposeCellsCloud::ChartsApi.new
+result = api_instance.get_worksheet_chart_title('Book1.xlsx', 'Sheet1', 0, '', '')
+puts result.title.text
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
+```python
+# Python örneği, Aspose.Cells Cloud SDK kullanılarak
+from asposecellscloud import ChartsApi, Configuration
 
+config = Configuration()
+config.access_token = "<jwt token>"
+config.host = "https://api.aspose.cloud"
+
+api_instance = ChartsApi(config)
+response = api_instance.get_worksheet_chart_title("Book1.xlsx", "Sheet1", 0, "", "")
+print(response.title.text)
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
+```javascript
+// Node.js örneği, Aspose.Cells Cloud SDK kullanılarak
+const { ChartsApi, Configuration } = require('asposecellscloud');
 
+let config = new Configuration();
+config.accessToken = "<jwt token>";
+config.basePath = "https://api.aspose.cloud";
+
+let apiInstance = new ChartsApi(config);
+apiInstance.getWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, "", "", (error, data) => {
+    if (error) console.error(error);
+    else console.log(data.title.text);
+});
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-
+```java
+// Android (Java) örneği, Aspose.Cells Cloud SDK kullanılarak
+Configuration config = new Configuration();
+config.setAccessToken("<jwt token>");
+config.setBasePath("https://api.aspose.cloud");
+ChartsApi api = new ChartsApi(config);
+ChartTitleResponse response = api.getWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, "", "");
+Log.d("ChartTitle", response.getTitle().getText());
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
+```swift
+// Swift örneği, Aspose.Cells Cloud SDK kullanılarak
+import AsposeCellsCloud
 
+let config = Configuration()
+config.accessToken = "<jwt token>"
+config.host = "https://api.aspose.cloud"
+
+let api = ChartsApi(configuration: config)
+api.getWorksheetChartTitle(name: "Book1.xlsx", sheetName: "Sheet1", chartIndex: 0, folder: "", storageName: "") { result, error in
+    if let title = result?.title?.text {
+        print("Grafik başlığı: \(title)")
+    }
+}
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
 
+```perl
+# Perl örneği, Aspose.Cells Cloud SDK kullanılarak
+use AsposeCellsCloud::ChartsApi;
+use AsposeCellsCloud::Configuration;
 
+my $config = AsposeCellsCloud::Configuration->new();
+$config->{access_token} = '<jwt token>';
+$config->{host} = 'https://api.aspose.cloud';
+
+my $api_instance = AsposeCellsCloud::ChartsApi->new($config);
+my $result = $api_instance->get_worksheet_chart_title('Book1.xlsx', 'Sheet1', 0, '', '');
+print $result->{title}{text}, "\n";
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "e1b22ed45ca780faa3231c3a8c60ddd4" >}}
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Gelişmiş senaryolar için (örneğin grafik başlığını güncelleme veya silme) ayrıca tekil SDK belgelerine de başvurabilirsiniz.
+
+**Ayrıca bakın**: [Grafik Başlığını Güncelle](/charts/title/put/), [Grafik Başlığını Sil](/charts/title/delete/).
+---

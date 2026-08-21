@@ -1,76 +1,89 @@
-﻿---
-title: Uppdatera bild i en Excel-fil
-second_title: Documen
-linktitle: Uppdatering
+---
+title: "Uppdatera bild i en Excel-fil"
+second_title: "Dokument"
+linktitle: "Uppdatera"
 type: docs
 url: /sv/pictures/update/
-aliases: [/update-a-specific-picture-from-excel-workshee/]
-keywords: Update a picture in an Excel file
-description: Aspose.Cells Cloud REST API stöder uppdatering av en bild i en Excel-fil. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+aliases: [/sv/update-a-specific-picture-from-excel-workshee/]
+keywords: "Aspose.Cells Cloud, Excel, Uppdatera bild, REST API, SDK"
+description: "Lär dig hur du uppdaterar en bild i ett Excel-arbetsblad med Aspose.Cells Cloud REST API. Innehåller begärandedetaljer, ett cURL-exempel och SDK-utdrag för flera språk."
+ArticleTitle: "Uppdatera bild i en Excel-fil med Aspose.Cells Cloud REST API"
 weight: 70
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Uppdatera bild i en Excel-fil
 ---
-Denna REST API indikerar `update` bild efter bildindex för ett Excel-arbetsblad.
 
-## RSET API
+Denna REST API uppdaterar en bild, identifierad med dess index, i ett Excel-arbetsblad.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
- 
+**Förutsättningar:** Du måste ha ett giltigt Aspose Cloud JWT-token, målfilen lagrad i din Aspose Cloud-lagring och använda API-version 3.0 eller senare.
+
+## PostWorksheetPicture API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| bildindex| heltal| väg| Bildens index.|
-| bild|| kropp| Bildobjekt|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:n är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Begäran parametrar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameternamn | Typ     | Plats  | Beskrivning                                                   |
+| ------------- | ------- | ------ | ------------------------------------------------------------- |
+| name          | string  | path   | Namnet på Excel-dokumentet.                                   |
+| sheetName     | string  | path   | Namnet på arbetsbladet som innehåller bilden.                 |
+| pictureIndex  | integer | path   | Nollbaserat index för den bild som ska uppdateras.            |
+| picture       | object  | body   | JSON-objekt som beskriver de bildegenskaper som ska uppdateras. |
+| folder        | string  | query  | Mappen där dokumentet är lagrat.                              |
+| storageName   | string  | query  | Namnet på lagringstjänsten.                                   |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Obs:** Bildindexet är nollbaserat. Stödda bildformat inkluderar JPEG, PNG, BMP och GIF. Den maximala bildstorleken är 10 MB.
+
+### Felresponser
+
+| HTTP-kod | Beskrivning                                                 |
+| -------- | ----------------------------------------------------------- |
+| 401      | Oauktoriserad – token saknas eller är ogiltig.              |
+| 404      | Inte hittad – den angivna filen, arbetsbladet eller bildindexet finns inte. |
+| 400      | Felaktig begäran – felaktig begäransyntax eller ogiltiga parametrar. |
+| 500      | Internt serverfel – ett oväntat tillstånd uppstod.          |
+
+<a href="https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture" rel="noopener noreferrer">OpenAPI-specifikationen</a> definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för kommandoraden för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör en anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" \
 -X POST \
 -d "{ \"UpperLeftRow\": 10, \"Top\": 0, \"UpperLeftColumn\": 1, \"Left\": 0, \"LowerRightRow\": 0, \"Bottom\": 0, \"LowerRightColumn\": 3, \"ImageFormat\": \"jpg\", \"SourceFullName\": \"download.jpg\"}" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## SDK-familj för molnet
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK hanterar detaljer på lågnivå så att du kan fokusera på dina projektuppgifter. Se <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub-lagringsplatsen</a> för en komplett lista över Aspose.Cells Cloud SDK:n.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:n:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +136,5 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+*Se även:* Lägg till bild, Ta bort bild, Hämta bild, Rensa bilder – andra bildrelaterade operationer i Aspose.Cells Cloud API.

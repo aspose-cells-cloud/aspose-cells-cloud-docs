@@ -1,74 +1,90 @@
-﻿---
-title: Excel dosyasındaki bir resmi sil
-second_title: Documen
-linktitle: Sil
-type: docs
-url: /tr/pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
-keywords: Delete a picture in an Excel file
-description: Aspose.Cells Cloud REST API, Excel dosyasındaki bir resmi silmeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 50
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel dosyasındaki bir resmi silme
 ---
-Bu REST API, `delete`'e Excel çalışma sayfasından bir resmi gösterir.
+title: "Bir Excel Çalışma Sayfasından Görsel Sil – Aspose.Cells Cloud API"
+second_title: "Belge"
+linktitle: "Sil"
+type: docs
+url: /pictures/delete/
+aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+keywords: "Aspose.Cells, Bulut API, görsel sil, Excel çalışma sayfası, REST"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından bir görseli silin. DELETE uç noktasını, gerekli parametreleri, kimlik doğrulamayı, hata kodlarını ve örnek kodu öğrenin."
+weight: 50
+ArticleTitle: "Bir Excel Çalışma Sayfasından Görsel Sil – Aspose.Cells Cloud API"
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasından bir görseli siler.
+
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulamayı</a> gerektirir.
+
+## REST API
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-İstek parametreleri şunlardır:
+### İstek Parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma kağıdının adı.|
-| resimIndeksi| tam sayı| yol| Resim dizini|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı  | Tür      | Konum  | Gerekli | Açıklama                                               |
+|----------------|----------|--------|---------|--------------------------------------------------------|
+| name           | string   | path   | Evet    | Çalışma kitabının dosya adı.                            |
+| sheetName      | string   | path   | Evet    | Görselin bulunduğu çalışma sayfasının adı.              |
+| pictureIndex   | integer  | path   | Evet    | Silinecek görselin sıfır tabanlı indeksi.               |
+| folder         | string   | query  | Hayır   | Çalışma kitabının bulunduğu klasör.                     |
+| storageName    | string   | query  | Hayır   | Depolama hizmetinin adı (isteğe bağlı).                 |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPicture) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile bu çağrının nasıl yapılacağını göstermektedir.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**Örnek Yanıt Başlıkları**
+
+| Başlık         | Değer                         |
+|----------------|-------------------------------|
+| Content-Type   | application/json              |
+| Content-Length | (değişir)                     |
+| Date           | (sunucu tarihi)               |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Hata Yönetimi
+
+| HTTP Kodu | Anlam                                                       | Örnek Hata Yükü                                                   |
+|-----------|-------------------------------------------------------------|-------------------------------------------------------------------|
+| 200       | Görsel başarıyla silindi.                                   | `{ "Code": 200, "Status": "OK" }`                                 |
+| 400       | Geçersiz istek – geçersiz parametreler.                     | `{ "Code": 400, "Message": "Geçersiz pictureIndex." }`           |
+| 401       | Yetkisiz erişim – eksik/geçersiz belirteç.                  | `{ "Code": 401, "Message": "Erişim belirteci eksik veya geçersiz." }` |
+| 404       | Bulunamadı – çalışma kitabısı, çalışma sayfası veya görsel mevcut değil. | `{ "Code": 404, "Message": "Kaynak bulunamadı." }`         |
+| 500       | İç sunucu hatası.                                           | `{ "Code": 500, "Message": "Beklenmeyen sunucu hatası." }`       |
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. Bir SDK, düşük seviye detayları yöneterek projenize odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanılarak Aspose.Cells web servislerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,84 +1,100 @@
-﻿---
-title: Unisci più file Excel in un file Excel
-second_title: Documen
-linktitle: Unisci file Multi Excel
-type: docs
-url: /it/merge-multi-files-into-excel/
-aliases: [ /merge/multi-files/]
-keywords: Merge multi Excel files into Excel file
-description: Aspose.Cells Cloud REST API supporta l'unione di più file Excel in un file Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 32
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Unisci più file Excel in un file Excel.
 ---
-Questo REST API indica di convertire più file `merge` in un file Excel.
+title: "Unire più file Excel in un unico libro di lavoro"
+second_title: "Documento"
+linktype: "Unire più file Excel"
+type: docs
+url: /merge-multi-files-into-excel/
+aliases: [/merge/multi-files/]
+keywords: "Aspose.Cells Cloud, unire più file Excel, API REST, unione fogli di calcolo, SDK cloud"
+description: "Scopri come unire più libri di lavoro Excel in un singolo file utilizzando l'API REST Aspose.Cells Cloud (v3.0). Include endpoint HTTPS, comando cURL, esempi di SDK, parametri obbligatori e dettagli sulla gestione degli errori."
+weight: 32
+---
 
-## RSET API
+## API REST
+
+Questa API REST unisce più file Excel in un unico libro di lavoro Excel.
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/merge
- 
+POST https://api.aspose.cloud/v3.0/cells/merge
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| file| file| formData| File da caricare|
-| formato| corda| domanda| xlsx|
-| mergeToOneSheet| booleano| domanda|Falso|
+Le API Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostMerge) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+### Parametri della richiesta
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Nome parametro  | Tipo    | Posizione | Descrizione                                                                                    | Obbligatorio |
+| ---------------- | ------- | --------- | ---------------------------------------------------------------------------------------------- | ------------ |
+| files[]          | file    | formData  | Uno o più libri di lavoro Excel da unire. Utilizzare `file1`, `file2`, … nella richiesta.     | Sì           |
+| format           | string  | query     | Formato di output desiderato (es. `xlsx`).                                                     | Sì           |
+| mergeToOneSheet  | boolean | query     | Impostare su `true` per combinare tutti i fogli in un singolo foglio; il valore predefinito è `false`. | No           |
+
+### **Risposta**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[nome file unito]",
+    "Filesize" : [dimensione file],
+    "FileContent" : "[Base64String]"
+}
+```
+
+**Codici di stato HTTP**
+
+| Codice | Significato                  | Descrizione                                             |
+|--------|------------------------------|---------------------------------------------------------|
+| 200    | OK                           | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida         | Parametri mancanti o non validi (es. tipo di file non supportato). |
+| 401    | Non autorizzato              | Token JWT non valido o mancante. |
+| 413    | Payload troppo grande        | Il file caricato supera il limite di dimensione. |
+| 500    | Errore interno del server    | Errore imprevisto del server. |
+## Come utilizzare l'API PostMerge con gli SDK
+
+### Specifica dell'API PostMerge
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostMerge) definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di effettuare direttamente interazioni REST da un browser web.
+
+È possibile utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/merge?format=xlsx" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'  
+curl -v "https://api.aspose.cloud/v3.0/cells/merge?format=xlsx" \
+  -X POST \
+  -H "Authorization: Bearer <jwt token>" \
+  -F "file1=@file1.xlsx" \
+  -F "file2=@file2.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  {
+    "Filename": "file1.xlsx",
+    "FileSize": 274022,
+    "FileContent": "-----Base64String--------"
+  }
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+### Utilizzare gli SDK Aspose.Cells Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come chiamare i servizi web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
 
@@ -90,35 +106,31 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 
 {{< tab tabNum="2" >}}
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example-Merge.java" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 {{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Merge.php" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
-
 {{< /tab >}}
-{{< tab tabNum="9" >}}
 
+{{< tab tabNum="9" >}}
 {{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsMerge.py" >}}
 {{< /tab >}}
+
 {{< /tabs >}}
+
+---

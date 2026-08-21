@@ -1,46 +1,80 @@
-﻿---
-title: Exportar un área desde una hoja de cálculo Excel
-second_title: Documen
-linktitle: Son
-type: docs
-url: /es/worksheets/area-to-different-formats/
-aliases: [/get-worksheet-for-area/]
-keywords: Get area to different format content from an Excel worksheet
-description: Aspose.Cells Cloud REST API admite la obtención de contenido en diferentes formatos desde una hoja de trabajo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 230
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Exportar un área desde una hoja de cálculo Excel
 ---
-[OBTENER /celdas/{nombre}/hojasdetrabajo/{nombreDeHoja}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet)La versión API permite convertir el área de la hoja de cálculo a diferentes formatos de archivo. Formatos compatibles:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [SAO](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OET](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [Diferencia](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NÚMEROS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+title: "Exportar un área de hoja de cálculo a PNG, PDF, CSV – Aspose.Cells Cloud API"
+second_title: "Documento"
+linktitle: "Área"
+type: docs
+url: /worksheets/area-to-different-formats/
+aliases: [/get-worksheet-for-area/]
+keywords: "Aspose.Cells, exportar área de hoja de cálculo, PNG, PDF, CSV, conversión de Excel, API REST, SDK"
+description: "Aprenda cómo exportar un rango específico de celdas de una hoja de cálculo de Excel a PNG, PDF, CSV y más de 20 formatos adicionales utilizando la API REST de Aspose.Cells Cloud o sus SDK (C#, Java, Python, …)."
+weight: 230
+ArticleTitle: "Exportar área de hoja de cálculo a PNG, PDF, CSV con la API de Aspose.Cells Cloud – Guía completa"
+---
 
-## RESTO API
+[GET /cells/{name}/worksheets/{sheetName}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) API permite convertir un área especificada de una hoja de cálculo en diversos formatos de archivo. Los formatos admitidos son: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+Esta guía muestra cómo exportar un **rango específico de celdas** de una hoja de cálculo de Excel a PNG, PDF, CSV y más de 20 formatos adicionales mediante la API de Aspose.Cells Cloud. Para operaciones relacionadas, como exportar una hoja de cálculo completa o convertir un libro entero, consulte las páginas **[Exportar hoja de cálculo completa](https://docs.aspose.cloud/cells/worksheets/worksheet-to-different-formats/)** y **[Convertir libro a PDF](https://docs.aspose.cloud/cells/workbook/convert-to-pdf/)**.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+## API REST
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) define una interfaz de programación públicamente accesible y le permite realizar interacciones REST directamente desde un navegador web.
+
+### Parámetros de solicitud
+
+| Parámetro             | Tipo   | Obligatorio | Descripción                                      |
+|-----------------------|--------|-------------|--------------------------------------------------|
+| `name`                | string | Sí          | Nombre del archivo del libro.                    |
+| `sheetName`           | string | Sí          | Nombre de la hoja de cálculo objetivo.           |
+| `format`              | string | Sí          | Formato de salida deseado (png, pdf, csv, …).    |
+| `area`                | string | No          | Rango de celdas a exportar (por ejemplo, `B3:K8`). |
+| `verticalResolution`  | int    | No          | Resolución vertical (DPI) para formatos de mapa de bits. |
+| `horizontalResolution`| int    | No          | Resolución horizontal (DPI) para formatos de mapa de bits. |
+| `folder`              | string | No          | Carpeta en el almacenamiento en la nube que contiene el archivo. |
+| `storage`             | string | No          | Nombre del servicio de almacenamiento.           |
+
+### Respuesta exitosa
+
+* **200 OK** – Devuelve el archivo solicitado en formato binario (PNG, PDF, CSV, etc.).
+
+### Respuestas de error
+
+| Código de estado | Descripción                                          |
+|------------------|------------------------------------------------------|
+| 400              | Solicitud incorrecta: faltan o son inválidos los parámetros. |
+| 401              | No autorizado: el token de autenticación falta o es inválido. |
+| 404              | No encontrado: el libro o la hoja de cálculo especificados no existen. |
+| 500              | Error interno del servidor: condición inesperada en el servidor. |
+
+**Ejemplo de carga de error**
+
+```json
+{
+  "error": {
+    "code": "InvalidParameter",
+    "message": "El parámetro 'area' tiene un formato incorrecto. Formato esperado: B3:K8."
+  }
+}
+```
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube mediante cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1?format=png&verticalResolution=100&horizontalResolution=90&area=B3%3AK8&folder=DotnetFiles" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
-Converted Image 
-
-```
+Imagen convertida (PNG binario)
 
 {{< /tab >}}
 
@@ -48,9 +82,9 @@ Converted Image 
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de desarrollar. Un SDK abstrae los detalles de bajo nivel, lo que le permite centrarse en la lógica de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

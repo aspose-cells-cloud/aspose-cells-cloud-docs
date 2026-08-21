@@ -1,46 +1,46 @@
-﻿---
-title: MaxRow'u Excel Workshee'den edinin
+---
+title: "Excel Çalışma Sayfasından MaxRow Değerini Alın"
 type: docs
 url: /tr/get-maxrow-from-excel-worksheet/
 weight: 40
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel Çalışma Sayfasından MaxRow'u Al
+ArticleTitle: "Excel Çalışma Sayfasında Maksimum Satır Numarasını Alın – Aspose.Cells Cloud API"
+keywords: "Aspose.Cells, Excel, MaxRow, REST API, Bulut SDK, Elektronik Tablo, Çalışma Sayfası, GetMaxRow"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel dosyasındaki çalışma sayfasının maksimum satır numarasını nasıl alacağınızı öğrenin. İsteğin sözdizimi, yanıt şeması, SDK örnekleri ve kullanım notlarını içerir."
 ---
-Bu REST API, `cellOrMethodName` parametresi `maxrow` olduğunda Excel dosyasında `maxrow` alındığını gösterir.
 
-- **cURL Örnek**
+Bu REST API, `cellOrMethodName` parametresi `maxrow` olarak ayarlandığında bir Excel çalışma sayfasındaki **maksimum satır numarasını** döndürür.
 
+- **cURL Örneği**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="İsteğin" tabName12="Yanıtın" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxrow" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxrow" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MaxRow": 1048576
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Bulut SDK Ailesi**
+- **Aspose.Cells Cloud SDK’larını Kullanın**
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en verimli yoldur. SDK, düşük seviye ayrıntıları yöneterek projenizin mantığına odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
-
-
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -103,3 +103,26 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**API Referansı**
+
+| Öğe | Detaylar |
+|------|---------|
+| **Metod** | `GET` |
+| **Uç Nokta** | `/cells/{fileName}/worksheets/{sheetName}/cells/maxrow` |
+| **Yol Parametreleri** | `fileName` – Excel dosyasının adı (zorunludur) <br> `sheetName` – çalışma sayfasının adı (zorunludur) |
+| **Sorgu Parametreleri** | `folder` – depoda bulunan klasör yolu (isteğe bağlı) <br> `storageName` – depo adı (isteğe bağlı) |
+| **Başarılı Yanıt** | `200 OK` <br> ```json { "MaxRow": integer } ``` |
+| **Hata Yanıtları** | `400 Bad Request` – geçersiz parametreler <br> `401 Unauthorized` – kimlik doğrulama hatası <br> `404 Not Found` – dosya veya çalışma sayfası bulunamadı |
+
+**Ön Gereksinimler**
+
+- Geçerli bir Aspose Cloud kimlik doğrulama belirteci.  
+- Hedef çalışma kitabının Aspose Cloud deposuna yüklenmiş olması veya herkese açık bir URL üzerinden erişilebilir olması gerekir.  
+
+**Notlar**
+
+- İşlem, API sürümünde **v3.0** ve sonraki sürümlerde kullanılabilir.  
+- Döndürülen `MaxRow` değeri, kullanılan en yüksek satır indeksine (1‑tabanlı) karşılık gelir. Boş bir çalışma sayfası için bu değer genellikle `1`’dir.  
+
+Aşağıdaki SDK örnekleri, farklı programlama dillerinde bu işlemi nasıl çağıracağınızı göstermektedir.

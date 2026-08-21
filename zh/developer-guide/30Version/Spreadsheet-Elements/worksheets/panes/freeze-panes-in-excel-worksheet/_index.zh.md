@@ -1,77 +1,82 @@
-﻿---
-title: 冻结 Excel 工作表上的窗格
-second_title: Documen
-linktitle: 弗里兹
-type: docs
-url: /zh/worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/,/worksheets/freeze-panes/]
-keywords: Freeze panes on an Excel Worksheet
-description: Aspose.Cells Cloud REST API 支持冻结工作表 Excel 上的窗格。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 190
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、冻结工作表上的窗格 Excel
 ---
-此 REST API 表示 Excel 工作表上的 `set freeze panes`。
- 
-## 重新设置 API
- 
+title: "冻结 Excel 工作表中的窗格"
+second_title: "文档"
+linktitle: "冻结"
+type: docs
+url: /worksheets/panes/freeze/
+aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+keywords: "Aspose.Cells Cloud, 冻结窗格, Excel, REST API, 工作表"
+description: "了解如何使用 Aspose.Cells Cloud REST API 在 Excel 工作表中冻结行和列。内容包括端点语法、必需参数、cURL 示例、身份验证指南、错误响应详情，以及多种编程语言的 SDK 代码示例。"
+weight: 190
+---
+
+此 REST API **设置** Excel 工作表中的冻结窗格。
+
+## REST API
+
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
 ```
-请求参数为：
- 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路||
-|工作表名称|细绳|小路||
-|排|整数|询问||
-|柱子|整数|询问||
-|冻结行|整数|询问||
-|冻结列|整数|询问||
-|文件夹|细绳|询问||
-|存储名称|细绳|询问|存储名称。|
- 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetFreezePanes)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
- 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+请求参数如下：
+
+| 参数名称       | 类型    | 位置   | 描述                                   |
+| -------------- | ------- | ------ | -------------------------------------- |
+| name           | string  | path   | 工作簿文件的名称。                     |
+| sheetName      | string  | path   | 要冻结窗格的工作表名称。               |
+| row            | integer | query  | 首个**未冻结**行的从零开始的索引。     |
+| column         | integer | query  | 首个**未冻结**列的从零开始的索引。     |
+| frozenRows     | integer | query  | 从顶部开始要冻结的行数。               |
+| frozenColumns  | integer | query  | 从左侧开始要冻结的列数。               |
+| folder         | string  | query  | 存储中工作簿所在的文件夹路径。         |
+| storageName    | string  | query  | 存储服务的名称。                       |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetFreezePanes) 定义了一个公开可用的编程接口，可让您直接从 Web 浏览器发起 REST 交互。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/freezepanes?row=1&column=1&freezedRows=1&freezedColumns=1" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/freezepanes?row=1&column=1&frozenRows=1&frozenColumns=1" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK 系列
- 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
- 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
- 
+
+### 错误响应
+
+| HTTP 状态码               | 代码 | 消息                        | 示例                                                       |
+| ------------------------- | ---- | --------------------------- | ---------------------------------------------------------- |
+| 400 Bad Request           | 400  | 参数无效                    | `{ "Code": 400, "Message": "Invalid frozenRows value" }`  |
+| 401 Unauthorized          | 401  | 缺失或无效的 JWT 令牌       | `{ "Code": 401, "Message": "Invalid access token" }`      |
+| 404 Not Found             | 404  | 工作簿或工作表未找到        | `{ "Code": 404, "Message": "File not found" }`            |
+| 500 Internal Server Error | 500  | 意外服务器错误              | `{ "Code": 500, "Message": "Internal server error" }`     |
+
+## 云 SDK 家族
+
+使用 SDK 是加速开发的最佳方式。SDK 处理底层细节，让您专注于项目任务。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
+
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}

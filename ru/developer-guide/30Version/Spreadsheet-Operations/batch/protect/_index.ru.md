@@ -1,76 +1,117 @@
-﻿---
-title: Пакетная защита файла Excel
-second_title: Documen
-type: docs
-url: /ru/batch/protect
-keywords: Batch protection of multiple Excel files
-description: Aspose.Cells Cloud API поддерживает пакетную защиту нескольких файлов Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 100
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Пакетная защита
 ---
-Этот REST API указывает на `batch protection` подходящих файлов.
+title: "Пакетная защита файлов Excel"
+second_title: "Документ"
+type: docs
+url: /batch/protect
+keywords: "Пакетная защита файлов Excel, Aspose Cells Cloud, REST API, защита Excel, пакетная защита"
+description: "Узнайте, как использовать REST API Aspose.Cells Cloud для пакетной защиты нескольких файлов Excel. Включает подробную информацию о запросе, пример cURL и примеры кода SDK для различных языков."
+weight: 100
+---
 
-## РСЕT API
+Это REST API позволяет выполнять **пакетную защиту** подходящих файлов Excel.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/protect
- 
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| batchProtectRequest|| тело||
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе токена JWT</a>.
 
-**Свойства BatchProtectRequest**
+### Параметры запроса
 
-Имя | Тип | Описание | Примечания
------------- | ------------- | ------------- | -------------
- SourceFolder | строка | | [необязательно]MatchCondition | MatchConditionRequest | | [необязательно]ProtectionType | строка | | [необязательно]Password | строка | | [необязательно]OutFolder | строка | | [необязательно]**Свойства MatchConditionRequest**
+| Имя параметра        | Тип                 | Местоположение | Описание                                                                                              |
+|----------------------|---------------------|----------------|----------------------------------------------------------------------------------------------------------|
+| batchProtectRequest  | BatchProtectRequest | body           | JSON-полезная нагрузка, определяющая исходную папку, условия отбора, тип защиты, пароль и выходную папку. |
 
-Имя | Тип | Описание | Примечания
------------- | ------------- | ------------- | -------------
- RegexPattern | string | | [необязательно]FullMatchConditions | string[]| | [необязательно]The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/PostProtectConvert) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### Свойства BatchProtectRequest
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя               | Тип                     | Описание                                                                                 | Примечания |
+|-------------------|--------------------------|---------------------------------------------------------------------------------------------|------------|
+| SourceFolder      | string                   | Папка, содержащая исходные файлы Excel.                                                   | необязательно |
+| MatchCondition    | MatchConditionRequest   | Критерии, используемые для отбора файлов для защиты.                                      | необязательно |
+| ProtectionType    | string                   | Тип применяемой защиты (например, `All`, `ReadOnly`).                                    | необязательно |
+| Password          | string                   | Пароль, устанавливаемый для защищённых файлов.                                            | необязательно |
+| OutFolder         | string                   | Папка назначения для защищённых файлов.                                                   | необязательно |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### Свойства MatchConditionRequest
+
+| Имя                 | Тип        | Описание                                    | Примечания |
+|---------------------|------------|---------------------------------------------|------------|
+| RegexPattern        | string     | Регулярное выражение, используемое для сопоставления имён файлов. | необязательно |
+| FullMatchConditions | string[]   | Список точных условий по имени файла.       | необязательно |
+
+### Параметр тела запроса
+
+| Имя параметра | Тип  | Описание                                    |
+|---------------|------|---------------------------------------------|
+| data          | file | Бинарное содержимое файла рабочей книги для создания. |
+
+### **Ответ**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+**Коды HTTP-статуса**
+
+| Код  | Значение                     | Когда возвращается                           |
+|------|------------------------------|----------------------------------------------|
+| 200 OK | Рабочая книга успешно создана | Нормальный сценарий выполнения               |
+| 201 Created | Рабочая книга создана (альтернативный ответ) | Когда API возвращает статус «создано» |
+| 400 Bad Request | Недопустимые параметры | Ошибка со стороны клиента                   |
+| 401 Unauthorized | Отсутствующий или недействительный токен | Ошибка аутентификации              |
+| 409 Conflict | Файл существует, а `isWriteOver=false` | Конфликт с существующим файлом |
+
+## Как использовать API PostProtectConvert с SDK
+
+### Спецификация API PostProtectConvert
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/PostProtectConvert) определяет общедоступное программное интерфейсное определение и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать инструмент командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как выполнить вызов облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/protect" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\",\"ProtectionType\":\"All\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\",\"ProtectionType\":\"All\"}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали и позволяет сосредоточиться на задачах вашего проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже показывают, как выполнять вызовы веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

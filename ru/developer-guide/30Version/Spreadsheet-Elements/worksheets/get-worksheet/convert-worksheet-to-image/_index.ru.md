@@ -1,56 +1,76 @@
-﻿---
-title: Преобразовать рабочий лист в различные форматы
-second_title: Documen
-linktitle: Преобразовать рабочий лист
-type: docs
-url: /ru/worksheets/conversion/
-aliases: [/convert-worksheet-to-image/,/worksheets/to-image/]
-keywords: Convert worksheet to image format from an Excel workbook
-description: Aspose.Cells Cloud REST API поддерживает преобразование рабочих листов в формат изображений из рабочих книг Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 130
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Преобразование рабочих листов в различные форматы
 ---
-[ПОЛУЧИТЬ /cells/{name}/worksheets/{sheetName}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) API позволяет преобразовывать рабочие листы в различные форматы, например[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [ТСВ](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ОРВ](https://docs.fileformat.com/spreadsheet/ods/), [ТЕКСТ](https://docs.fileformat.com/word-processing/txt/) Форматы, доступные только для экспорта:[PDF](https://docs.fileformat.com/pdf/), [ОТС](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [ДИФ](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [ЧИСЛА](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+title: "Преобразование листа в PDF, PNG, CSV и другие форматы – Aspose.Cells Cloud API"
+second_title: "Документ"
+linktitle: "Преобразование листа"
+type: docs
+url: /worksheets/conversion/
+aliases:
+  - /convert-worksheet-to-image/
+  - /worksheets/to-image/
+keywords: "Aspose.Cells, преобразование листа, REST API, cURL, SDK, PDF, PNG, CSV"
+description: "Узнайте, как преобразовать отдельный лист из рабочей книги Excel в PDF, PNG, CSV и более 15 других форматов с помощью Aspose.Cells Cloud REST API. Приведены примеры cURL, фрагменты кода SDK и полная справка по параметрам."
+weight: 130
+ArticleTitle: "Преобразование листа в PDF, PNG, CSV и другие форматы – Aspose.Cells Cloud API"
+---
 
-## ОТДЫХ API
+**API для преобразования листов** — конечная точка `GET /cells/{name}/worksheets/{sheetName}` преобразует отдельный лист (лист внутри рабочей книги Excel) в другой файловый формат.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+> **Необходимое условие:** Перед вызовом данной конечной точки у вас должен быть действительный JWT-токен и рабочая книга, сохранённая в поддерживаемом хранилище Aspose Cloud.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Поддерживаемые **импортируемые** форматы (из которых можно считать лист):
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+- XLS, XLSX, XLSB, CSV, TSV, XLSM, ODS, TXT
 
-{{< tab tabNum="1" >}}
+Поддерживаемые **только для экспорта** форматы (в которые можно сохранить лист):
 
-```java
+- PDF, OTS, XPS, DIF, PNG, JPEG, BMP, SVG, TIFF, EMF, NUMBERS, FODS
 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+## REST API
 
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) описывает публично доступный интерфейс.
+
+### **Параметры запроса**
+
+| Параметр                 | Тип     | Обязательный | Значение по умолчанию | Допустимые значения                                                  | Описание                                            |
+| ------------------------ | ------- | ------------ | --------------------- | -------------------------------------------------------------------- | --------------------------------------------------- |
+| **format**               | string  | Да           | –                     | pdf, png, jpeg, bmp, svg, tiff, emf, csv, txt, … (см. поддерживаемый список) | Целевой формат вывода.                              |
+| **verticalResolution**   | integer | Нет          | 96                    | 72‑600                                                               | Вертикальное разрешение (DPI) для вывода изображения. |
+| **horizontalResolution** | integer | Нет          | 96                    | 72‑600                                                               | Горизонтальное разрешение (DPI) для вывода изображения. |
+| **password**             | string  | Нет          | –                     | –                                                                    | Пароль для открытия защищённой рабочей книги.       |
+| **folder**               | string  | Нет          | –                     | –                                                                    | Облачная папка, в которой хранится исходная рабочая книга. |
+| **storage**              | string  | Нет          | –                     | –                                                                    | Имя хранилища (например, «Default»).                |
+
+### Ответ
+
+| Код статуса | Описание                                                                  | Тип возвращаемых данных    |
+| ----------- | ------------------------------------------------------------------------- | -------------------------- |
+| **200**     | Преобразование успешно завершено; возвращается двоичный поток преобразованного файла. | `application/octet-stream` |
+| **400**     | Неверный запрос — отсутствуют или недопустимы параметры.                 | Объект ошибки JSON         |
+| **401**     | Неавторизованный доступ — недействительный или отсутствующий JWT-токен. | Объект ошибки JSON         |
+| **404**     | Не найдено — рабочая книга или лист не существуют.                       | Объект ошибки JSON         |
+| **500**     | Внутренняя ошибка сервера — непредвиденное завершение.                   | Объект ошибки JSON         |
+
+#### Пример запроса (cURL)
+
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-
-Converted Image 
+#### Пример ответа
 
 ```
-
-{{< /tab >}}
-
-{{< /tabs >}}
+Преобразованное изображение (двоичный поток)
+```
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ разработки. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на вашем проекте. Полный список облачных SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Приведённые ниже примеры кода демонстрируют вызов веб-служб Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -103,3 +123,4 @@ Converted Image 
 {{< /tab >}}
 
 {{< /tabs >}}
+---

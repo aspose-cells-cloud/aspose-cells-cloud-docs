@@ -1,54 +1,79 @@
-﻿---
-title: Excel إلى PN
-second_title: Documen
-linktitle: Excel إلى PN
-type: docs
-url: /arconvert-excel-file-to-png-file/
-keywords: Convert excel files to png files
-description: يدعم Cloud REST تحويل ملفات Excel إلى ملفات CSV. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 90
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، Excel إلى CSV
 ---
-يشير هذا REST API إلى `convert` ملف جدول بيانات إلى ملف بتنسيق png.
+title: "Excel إلى PNG"
+second_title: "مستند"
+linktitle: "Excel إلى PNG"
+type: docs
+url: convert-excel-file-to-png-file/
+keywords: "Excel إلى PNG، Aspose.Cells Cloud، REST API، تحويل جداول البيانات، تنسيق PNG"
+description: "حوّل جداول بيانات Excel إلى صور PNG باستخدام واجهة Aspose.Cells Cloud REST API. تدعم واجهة برمجة التطبيقات هذه العديد من حزم تطوير البرمجيات (SDKs)، وتوفّر أمثلة مفصّلة بلغات برمجة مختلفة."
+weight: 90
+---
 
-**معلمة الاستعلام**
+تقوم هذه الواجهة البرمجية (REST API) بتحويل ملف جدول بيانات إلى تنسيق PNG.
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|كلمة المرور|خيط| كلمة المرور المطلوبة لفتح الملف Excel.|
-|اسم التخزين|خيط| اسم التخزين الذي يقع فيه الملف.|
-|التحقق من قيود Excel|منطقي| ما إذا كان من الممكن التحقق من تقييد ملف Excel عندما يقوم المستخدم بتعديل الكائنات المرتبطة بالخلايا.|
+## مواصفات واجهة برمجة التطبيقات (REST API)
 
-**معلمة نص الطلب**
+```
+POST https://api.aspose.cloud/v3.0/cells/convert/png
+```
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|ملف البيانات| ملف البيانات|يتم حفظ ملف البيانات في الجزء الأول من المحتوى المتعدد الأجزاء.|
+### **الأمان والمصادقة**
 
-**إجابة**
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-[معلومات الملف](/cells/ar/file-info/)
+### **معامل الاستعلام (Query Parameter)**
 
-## مواصفات REST API
+| اسم المعامل           | النوع  | الوصف                                                                                     |
+| --------------------- | ------ | ----------------------------------------------------------------------------------------- |
+| password              | string | كلمة المرور المطلوبة لفتح ملف Excel.                                                     |
+| storageName           | string | اسم وحدة التخزين التي يقع فيها الملف.                                                     |
+| checkExcelRestriction | bool   | يحدّد ما إذا كان سيتم التحقق من قيود ملف Excel عند تعديل الخلايا أو الكائنات ذات الصلة. |
 
-|**API**|**يكتب**|**وصف**|**رابط سواجر**|
-|:- |:- |:- |:- |
-|/خلايا/تحويل/png|بريد|تحويل جدول بيانات إلى ملف png.|[تحويل مصنف العمل إلى PNG](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG)|
+### **معامل جسم الطلب (Request Body Parameter)**
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+| اسم المعامل | النوع       | الوصف                                                      |
+| ------------ | ----------- | ---------------------------------------------------------- |
+| datafile     | data file   | ملف جدول البيانات المُضمَّن في الجزء الأول من الطلب المتعدد الأجزاء (multipart request). |
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### **الاستجابة**
+
+تُعيد الواجهة البرمجية كائن **FileInfo** يحتوي على ملف PNG المُولّد.
+
+| الحقل            | النوع  | الوصف                                        |
+| ----------------- | ------ | -------------------------------------------- |
+| **Filename**      | string | اسم ملف PNG (مثل `example.png`).            |
+| **FileSize**      | int    | حجم الملف بالبايت.                           |
+| **FileContent**   | string | محتوى ملف PNG المُشفّر بتشفير Base64.        |
+
+[FileInfo](/cells/file-info/)
+
+**رموز حالات HTTP (HTTP Status Codes)**
+
+| الرمز | الدلالة                    | الوصف                                                         |
+|------|----------------------------|---------------------------------------------------------------|
+| 200  | ناجح (OK)                  | تطبيق المرشّح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.   |
+| 400  | طلب غير صالح (Bad Request) | معاملات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم).        |
+| 401  | غير مُصرّح (Unauthorized)  | رمز JWT غير صالح أو مفقود.                                   |
+| 413  | حجم الحمولة كبير جدًّا (Payload Too Large) | تجاوز حجم الملف المرفوع الحد المسموح به.                 |
+| 500  | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقّع في الخادم.                                  |
+
+## كيفية استخدام PostConvertWorkbookToPNG API باستخدام حزم تطوير البرمجيات (SDKs)
+
+### مواصفات PostConvertWorkbookToPNG API
+
+يُعرّف [مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG) واجهة برمجة تطبيقات عامة يمكن الوصول إليها، ويتيح لك إجراء تفاعلات REST مباشرةً من متصفّح الويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول إلى خدمات الويب الخاصة بـ Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إرسال طلبات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/png" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/png" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: curl" \
      -d {"File":{}}
 ```
 
@@ -56,25 +81,24 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/png"
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
   "Filename": "xxxxxx.png",
   "FileSize": xxxx,
   "FileContent": "File Content: base64_encoded_string"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام حزم تطوير البرمجيات (SDKs) الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام حزمة تطوير البرمجيات (SDK) هو أفضل طريقة لتسريع عملية التطوير. وتتولّى حزمة تطوير البرمجيات إدارة التفاصيل من المستوى المنخفض، بحيث تتمكن من التركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم تطوير البرمجيات الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات الويب الخاصة بـ Aspose.Cells باستخدام حزم تطوير البرمجيات المختلفة:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -127,14 +151,8 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/png"
 
 {{< /tabs >}}
 
-## تنفذ واجهات برمجة التطبيقات الأخرى هذه الوظيفة
+## واجهات برمجة تطبيقات أخرى تُ实施 نفس الوظائف
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)يتيح لك البرنامج API حفظ ملف MS Excel كملف CSV مع إعدادات إضافية وحفظ النتيجة في وحدة التخزين.
-
-هذا الملف REST API `convert` excel إلى CSV.
-
-[وضع /الخلايا/تحويل](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) يتيح لك البرنامج API تحويل ملف MS Excel إلى ملف CSV بإعدادات إضافية وحفظ النتيجة في الاستجابة.
-
-هذا الملف REST API `export` excel إلى CSV.
-
-[احصل على /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) يتيح لك البرنامج API تحويل ملف MS Excel إلى ملف CSV بإعدادات إضافية وحفظ النتيجة في الاستجابة.
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – تحفظ ملف Excel كملف CSV (أو صيغ أخرى) مع إعدادات إضافية وتخزّن النتيجة.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – تحول ملف Excel إلى CSV (أو صيغ أخرى) باستخدام معاملات اختيارية وترجع النتيجة في الاستجابة.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – تسترجع ملف Excel وتحوله إلى CSV (أو صيغ أخرى) أثناء التنقّل (on the fly).

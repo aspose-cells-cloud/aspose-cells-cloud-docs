@@ -1,76 +1,143 @@
-﻿---
-title: Переместить именованный диапазон с помощью рабочего листа Excel
-second_title: Documen
-linktitle: Мов
-type: docs
-url: /ru/ranges/move/
-aliases: [/move-a-named-ranged-with-a-excel-worksheet/]
-keywords: Move a named ranged with an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает перемещение именованного диапазона с помощью листа Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Перемещение именованного диапазона с помощью листа Excel
 ---
-Этот REST API указывает на необходимость переместить текущий диапазон в диапазон назначения на листе Excel.
+title: "Перемещение именованного диапазона в рабочей книге Excel"
+second_title: "Документ"
+linktitle: "Переместить"
+type: docs
+url: /ranges/move/
+aliases: [/move-a-named-range-with-an-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, перемещение именованного диапазона, рабочая книга Excel, REST API, перемещение диапазона, примеры SDK"
+description: "Узнайте, как переместить именованный диапазон в пределах рабочей книги Excel с помощью REST API Aspose.Cells Cloud v3.0. Приведены сведения об эндпоинте, аутентификации, примеры и код SDK."
+weight: 20
+ArticleTitle: "Перемещение именованного диапазона в рабочей книге Excel с помощью API Aspose.Cells Cloud"
+---
 
-## РСЕT API
+Перемещение именованного диапазона — распространённая задача при необходимости программной переорганизации данных. В этом разделе описано, как переместить определённый диапазон на новую позицию в той же рабочей книге с использованием REST API Aspose.Cells Cloud.
+
+Этот REST API перемещает указанный диапазон в целевой диапазон на рабочей книге Excel.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/moveto
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/moveto
 ```
 
-Параметры запроса:
+### Аутентификация
+API требует **Bearer JWT-токена**, полученного через OAuth-процедуру Aspose Cloud. Включите токен в заголовок `Authorization`:
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| название рабочей книги|
-| Имя_листа| нить| путь| имя рабочего листа|
-| destRow| целое число| запрос| Начальная строка конечного диапазона.|
-| destColumn| целое число| запрос| Начальный столбец диапазона назначения.|
-| диапазон|| тело| диапазон на листе|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+```
+Authorization: Bearer <jwt token>
+```
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMoveTo) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+Токен должен иметь область доступа **Cells**.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+### Предварительные требования
+- Рабочая книга должна храниться в облачном хранилище Aspose Cloud.  
+- Укажите имя хранилища (`storageName`) и путь к папке (`folder`), если файл находится не в корневом каталоге.  
+- Используйте последнюю версию SDK Aspose.Cells Cloud, поддерживающую версию API **v3.0**.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **Безопасность и аутентификация**
+
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
+
+### Параметры запроса
+
+| Имя            | Тип    | Расположение | Описание |
+|----------------|--------|-------------|----------|
+| **name**       | string | path        | Имя файла рабочей книги |
+| **sheetName**  | string | path        | Имя рабочей книги |
+| **destRow**    | integer| query       | Индекс первой строки целевого диапазона (начиная с 0) |
+| **destColumn**| integer| query       | Индекс первого столбца целевого диапазона (начиная с 0) |
+| **range**      | object | body        | Описание исходного диапазона, который необходимо переместить |
+| **folder**     | string | query       | Путь к папке, где хранится рабочая книга |
+| **storageName**| string | query       | Имя облачного хранилища Aspose Cloud |
+
+### Тело запроса
+
+| Поле           | Тип    | Обязательное | Описание |
+|----------------|--------|-------------|----------|
+| **ColumnCount**| integer| Нет         | Количество столбцов в исходном диапазоне |
+| **ColumnWidth**| integer| Нет         | Ширина каждого столбца (в пунктах) |
+| **FirstColumn**| integer| Нет         | Индекс первого столбца исходного диапазона (начиная с 0) |
+| **FirstRow**   | integer| Нет         | Индекс первой строки исходного диапазона (начиная с 0) |
+| **Name**       | string | Нет         | Имя диапазона (если это именованный диапазон) |
+| **RefersTo**   | string | Нет         | Ссылка в стиле A1, определяющая диапазон |
+| **RowCount**   | integer| Нет         | Количество строк в исходном диапазоне |
+| **RowHeight**  | integer| Нет         | Высота каждой строки (в пунктах) |
+| **Worksheet**  | string | Нет         | Рабочая книга, содержащая исходный диапазон |
+
+### Порядок выполнения
+
+1. **Загрузите** рабочую книгу в облачное хранилище Aspose Cloud (если она ещё не загружена).  
+2. **Создайте** JWT-токен с помощью OAuth-эндпоинта.  
+3. **Сформируйте** JSON-полезную нагрузку, описывающую исходный диапазон.  
+4. **Вызовите** эндпоинт `moveto`, указав необходимые параметры пути, запроса и JSON-тело.  
+5. **Проверьте** ответ: при успешном вызове возвращается статус `200 OK`.
+
+### Пример запроса / ответа
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/moveto?destRow=20&destColumn=20" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-d '{ 
+  "ColumnCount": 7,
+  "ColumnWidth": 19,
+  "FirstColumn": 0,
+  "FirstRow": 9,
+  "Name": "MyRange",
+  "RefersTo": "A10:G10",
+  "RowCount": 1,
+  "RowHeight": 15,
+  "Worksheet": "Sheet1"
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+При возникновении ошибки в ответе присутствует необязательное поле `ErrorMessage`, содержащее дополнительные сведения об ошибке.
+
+**Коды HTTP-статуса**
+
+| Код  | Значение                    | Описание |
+|------|-----------------------------|----------|
+| 200  | OK (Успех)                  | Фильтр применён успешно; ответ содержит сведения об операции. |
+| 400  | Bad Request (Неверный запрос) | Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401  | Unauthorized (Неавторизован) | Некорректный или отсутствующий JWT-токен. |
+| 413  | Payload Too Large (Слишком большой payload) | Загружаемый файл превышает ограничение по размеру. |
+| 500  | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера. |
+
+**Схема ответа**
+
+| Поле | Тип | Описание |
+|------|-----|----------|
+| **Code** | integer | Код статуса HTTP-подобного ответа, возвращаемого API (например, 200) |
+| **Status** | string | Текстовое описание результата (например, "OK") |
+| **ErrorMessage** | string (необязательно) | Читаемые человеком сведения об ошибке при неудачном вызове |
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — оптимальный способ ускорить разработку. SDK скрывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">репозитории на GitHub</a>.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют, как вызывать веб-сервисы Aspose.Cells с помощью различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

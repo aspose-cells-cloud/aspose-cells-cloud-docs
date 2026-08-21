@@ -1,70 +1,84 @@
-﻿---
-title: Aspose.Cells Cloud WEb API - Öffentlichen Schlüssel erhalten
-second_title: Documen
-ArticleTitle: Get Public Ke
-linktitle: Holen Sie sich Public Ke
+---
+title: "Aspose.Cells Cloud API – Öffentlichen Schlüssel abrufen (v4.0) | REST-Dokumentation"
+second_title: "Dokument"
+ArticleTitle: "Öffentlichen Schlüssel abrufen"
+linktitle: "Öffentlichen Schlüssel abrufen"
 type: docs
 url: /de/get-public-key/
-keywords: asymmetric encryption, public key retrieval, REST API, Excel API, security, data encryption, API integratio
-description: Abrufen eines asymmetrischen öffentlichen Schlüssels zur sicheren Datenverschlüsselung
+keywords: "Aspose.Cells, Öffentlicher Schlüssel, RSA, API, Cloud"
+description: "Rufen Sie den RSA-öffentlichen Schlüssel ab, der für die Verschlüsselung von Daten mit Aspose.Cells Cloud verwendet wird. Enthält Endpunkt, Parameter, Beispielanfrage/-antwort, Statuscodes und SDK-Nutzungsbeispiele."
 weight: 100
-kwords: asymmetrische Verschlüsselung, öffentlicher Schlüssel, REST API, Excel API, Sicherheit, Datenverschlüsselung, API Integration, JSON, API Dokumentation
 ---
-Ruft den öffentlichen Schlüssel aus einem asymmetrischen Verschlüsselungsalgorithmus ab.
 
-## **Öffentlichen Schlüssel API erhalten**
+Diese API ruft den öffentlichen Schlüssel aus einem asymmetrischen Verschlüsselungsalgorithmus ab.
+
+**Kurze Zusammenfassung:** Verwenden Sie die Aspose.Cells API „Öffentlichen Schlüssel abrufen“, um den RSA-öffentlichen Schlüssel (2048 Bit) zu erhalten, der für die Verschlüsselung von Daten bei der Arbeit mit Excel-Dateien in der Cloud erforderlich ist. Der Endpunkt gibt den Schlüssel im JSON-Format zurück und ist mit OAuth 2.0 gesichert.
+
+## **API zum Abrufen des öffentlichen Schlüssels**
+
+**Voraussetzungen:**  
+Bevor Sie diesen Endpunkt aufrufen, müssen Sie ein gültiges OAuth 2.0-Zugriffstoken mit dem Bereich `Cells.Read` besitzen.
+
+### **Web-API**
 
 ```
-GET http://api.aspose.cloud/v4.0/cells/publickey
+GET https://api.aspose.cloud/v4.0/cells/publickey
 ```
+
+**Beispielanfrage (cURL)**
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/publickey" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
+### **Sicherheit und Authentifizierung**
+
+Die Aspose.Cells Cloud-APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
 ### **Anforderungsparameter:**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTP-Text| Beschreibung|
-|:- |:- |:- |:- |
-|||||
+| Parametername | Typ    | Speicherort | Beschreibung                                                                     |
+| ------------- | ------ | ----------- | -------------------------------------------------------------------------------- |
+| Authorization | string | Header      | Bearer-Token für OAuth2-Authentifizierung (erforderlich).                       |
+| Accept        | string | Header      | Gewünschtes Antwortformat, z. B. `application/json` (optional, Standard ist JSON). |
 
 ### **Antwort**
 
 ```json
 {
-  "Name": "CellsCloudPublicKeyResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "CellsCloudPublicKey",
-      "DataType": {
-        "Identifier": "Class",
-        "Reference": "CellsCloudPublicKey",
-      }
-    },
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
-    }
-  ]
+  "Code": 200,
+  "Status": "OK",
+  "CellsCloudPublicKey": {
+    "PublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr...",
+    "Algorithm": "RSA",
+    "KeySize": 2048
+  }
 }
 ```
 
-## So verwenden Sie den öffentlichen Schlüssel API mit SDKs
+**HTTP-Statuscodes**
+
+| Code | Bedeutung             | Beschreibung                                                      |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter erfolgreich angewendet; Antwort enthält Vorgangsdetails.  |
+| 400  | Bad Request           | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized          | Ungültiges oder fehlendes JWT-Token.                             |
+| 413  | Payload Too Large     | Hochgeladene Datei überschreitet die Größeinschränkung.          |
+| 500  | Internal Server Error | Unerwarteter Serverfehler.                                       |
+
+## So verwenden Sie die API „Öffentlichen Schlüssel abrufen“ mit SDKs
 
 ### OpenAPI-Spezifikation
 
- Der[OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/KeyController/GetPublicKey) definiert eine öffentlich zugängliche Programmierschnittstelle, die es Ihnen ermöglicht, REST-Interaktionen direkt von Ihrem Webbrowser aus durchzuführen.
+Die [OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/KeyController/GetPublicKey) definiert eine öffentlich zugängliche Programmierschnittstelle, mit der Sie REST-Interaktionen direkt aus Ihrem Webbrowser durchführen können.
 
-### Verwenden Sie Aspose.Cells Cloud SDKs
+### Verwenden der Aspose.Cells Cloud SDKs
 
-Die Verwendung des SDK beschleunigt die Entwicklung am besten. Das SDK übernimmt die zugrunde liegenden Details und ermöglicht Ihnen die Implementierung des öffentlichen Schlüssels für Zellen mit minimalem Code.
- Bitte schauen Sie sich die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist die beste Möglichkeit, die Entwicklung zu beschleunigen. Das SDK übernimmt die zugrunde liegenden Details, sodass Sie das Abrufen des öffentlichen Schlüssels für Cells mit minimalem Codeaufwand umsetzen können.  
+Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud).
 
-Die folgenden Codebeispiele veranschaulichen die Interaktion mit Aspose.Cells-Webdiensten mithilfe verschiedener SDKs:
+Nachfolgend finden Sie konkrete Beispiele für die gängigsten Sprachen:
+
+---

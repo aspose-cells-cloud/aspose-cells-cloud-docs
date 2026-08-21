@@ -1,90 +1,89 @@
-﻿---
-title: Excel إلى TIF
-second_title: Documen
-linketitle: Excel to Tif
-type: docs
-url: /ar/convert-excel-file-to-tiff-file/
-aliases: [/convert-excel-file-to-tiff-in-cloud/,/convert/excel-to-tiff/]
-keywords: Convert excel files to tiff files
-description: يدعم Cloud REST تحويل ملفات Excel إلى ملفات TIFF. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 90
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، من Excel إلى TIFF
 ---
-هذا الملف REST API `saveas` excel إلى TIFF.
+title: "تحويل Excel إلى TIFF"
+second_title: "مستند"
+linketitle: "تحويل Excel إلى TIFF"
+type: docs
+url: /convert-excel-file-to-tiff-file/
+aliases: [/convert-excel-file-to-tiff-in-cloud/, /convert/excel-to-tiff/]
+keywords: "Aspose.Cells Cloud، تحويل Excel إلى TIFF، واجهة برمجة التطبيقات REST، cURL، حزمة تطوير البرمجيات (SDK)، .NET، Java، Python، تصدير الصور"
+description: "تعرّف على كيفية تحويل كتب عمل Excel إلى صور TIFF عالية الجودة باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. أوامر cURL مفصّلة، أمثلة لحزم تطوير البرمجيات (SDK) (C#، Java، Python، إلخ)، خطوات المصادقة، ومعالجة الأخطاء."
+weight: 90
+---
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) يتيح لك API حفظ ملف MS Excel كملف TIFF مع إعدادات إضافية وحفظ النتيجة في وحدة التخزين.
+تتيح لك نقاط النهاية **Convert** (تحويل)، و **SaveAs** (حفظ باسم)، و **Export** (تصدير) في Aspose.Cells Cloud تحويل كتاب عمل Excel إلى صورة TIFF.  
+يمكنك استدعاء هذه نقاط النهاية مباشرة باستخدام **cURL** أو من خلال أحد حزم تطوير البرمجيات (SDKs) المدعومة.
 
-هذا الملف REST API `convert` excel إلى TIFF.
+## واجهة برمجة التطبيقات REST
 
-[وضع /الخلايا/تحويل](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) يتيح لك API تحويل ملف MS Excel إلى ملف TIFF بإعدادات إضافية وحفظ النتيجة في الاستجابة.
+| **واجهة برمجة التطبيقات** | **الطريقة** | **الغرض**                                                                                     | **رابط Swagger**                                                                            |
+| ------------------------ | ---------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `/cells/convert`         | PUT        | يحوّل كتاب العمل المُزوَّد في جسم الطلب إلى التنسيق المحدّد (TIFF).                            | [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) |
+| `/cells/{name}`          | GET        | يصدّر كتاب العمل المسمّى إلى تنسيق آخر (TIFF) ويُعيد النتيجة في الاستجابة.                     | [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)               |
+| `/cells/{name}/saveAs`   | POST       | يحفظ كتاب العمل بالتنسيق المختار (TIFF) ويحتفظ بالنتيجة في مساحة التخزين السحابية.            | [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)   |
 
-هذا الملف REST API `export` excel إلى TIFF.
+يمكن الوصول إلى نقاط النهاية هذه علنًا واستدعاؤها مباشرة من متصفح ويب أو أي عميل HTTP.
 
-[احصل على /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) يتيح لك API تحويل ملف MS Excel إلى ملف TIFF بإعدادات إضافية وحفظ النتيجة في الاستجابة.
+### أمثلة باستخدام cURL
 
-## الباقي API
-
-|**API**|**يكتب**|**وصف**|**رابط سواجر**|
-|:- |:- |:- |:- |
-|/خلايا/تحويل|يضع|تحويل المصنف من محتوى الطلب إلى تنسيق ما|[ضع كتاب العمل المحول](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
-|/الخلايا/{الاسم}|يحصل|تصدير المصنف إلى تنسيق آخر.|[احصل على كتاب العمل](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
-|/الخلايا/{الاسم}/حفظ باسم|بريد|تصدير المصنف إلى التنسيق|[حفظ المستند باسم](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
-
-تعرف واجهات برمجة التطبيقات هذه واجهة برمجة يمكن الوصول إليها بشكل عام وتتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
-
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
-
-{{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export" >}}
+{{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export">}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/convert?format=tiff" \
--X PUT \
--d {"File":{}} \
--H "Content-Type:  multipart/form-data" \
--H "Accept:  multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
-
+     -X PUT \
+     -d '{"File":{"Name":"book1.xlsx","Data":"<base64‑content>"},"SaveFormat":"tiff"}' \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="12" >}}
 
 ```bash
-
 curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx/saveas?newfilename=book1.tiff" \
--X POST \
--d "{'SaveFormat':'tiff', 'ImageFormat': 'tiff'}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+     -X POST \
+     -d '{"SaveFormat":"tiff","ImageFormat":"tiff"}' \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="13" >}}
 
 ```bash
-
-curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=html" \
--X GET \
--d "{'SaveFormat':'tiff', 'ExportImagesAsBase64': 'true'}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=tiff" \
+     -X GET \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+> **ملاحظة:**
+>
+> - يجب أن يحتوي جسم طلب **Convert** على الملف (أو مرجع إلى ملف مخزّن) وقيمة `SaveFormat` المرغوبة.
+> - لا يتطلب طلب **Export** جسم طلب؛ يتم تحديد التنسيق عبر سلسلة الاستعلام (`format=tiff`).
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+## معالجة الأخطاء
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+| **رمز الحالة** | **المعنى**           | **السبب الشائع**                           |
+| -------------- | -------------------- | ------------------------------------------ |
+| 200            | نجاح                 | يتم إعادة صورة TIFF (دفق ثنائي).         |
+| 400            | طلب غير صحيح         | معلمات مفقودة أو غير صحيحة صياغتها.       |
+| 401            | غير مُصادَق          | رمز JWT غير صالح أو مفقود.                |
+| 404            | غير موجود            | كتاب العمل المحدّد غير موجود.              |
+| 500            | خطأ داخلي في الخادم  | ظرف غير متوقع من جانب الخادم.              |
+
+عند حدوث خطأ، تُعيد واجهة برمجة التطبيقات حمولة JSON تحتوي على الحقول `Code` (الرمز)، و `Message` (الرسالة)، و`Description` (الوصف) اختياريًا.
+
+## عائلة حزم تطوير البرمجيات (SDKs) السحابية
+
+استخدام حزمة تطوير البرمجيات (SDK) هو أسرع طريقة لتطوير التطبيقات. فحزمة تطوير البرمجيات تُدير التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم تطوير البرمجيات (SDKs) لـ Aspose.Cells Cloud.
+
+تُظهر الأمثلة التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام حزم تطوير البرمجيات المختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,63 +1,58 @@
-﻿---
-title: Excel çalışma sayfasındaki bir şekli dizine göre silin
-second_title: Documen
-linktitle: Sil
-type: docs
-url: /tr/shapes/delete/
-aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
-keywords: Delete a shape on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki şeklin silinmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 50
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki bir şekli dizine göre silme
 ---
-Bu REST API, Excel çalışma sayfasındaki bir şeklin silinmesini belirtir.
+title: "Excel çalışma sayfasındaki bir şekli indeksine göre silme"
+second_title: "Belge"
+linktitle: "Sil"
+type: docs
+url: /shapes/delete/
+aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
+keywords: "Aspose.Cells Cloud, Şekil silme, Şekil indeksi, Excel çalışma sayfası, REST API, SDK"
+description: "Aspose.Cells Cloud REST API'sini kullanarak bir Excel çalışma sayfasındaki bir şekli indeksine göre silin. API, birden fazla SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) aracılığıyla kullanılabilir ve çeşitli depolama seçeneklerini destekler."
+weight: 50
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasındaki bir şekli siler.
+
+## REST API
 
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
- 
 ```
 
-İstek parametreleri şunlardır:
+### **İstek parametreleri**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| belge adı.|
-| sayfaAdı| sicim| yol| çalışma sayfası adı.|
-| şekil indeksi| tam sayı| yol| çalışma kağıdı şekillerinde şekil indeksi.|
-| dosya| sicim| sorgu| Belgenin klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı   | Tür      | Konum  | Açıklama                                     |
+| --------------- | -------- | ------ | -------------------------------------------- |
+| name            | string   | path   | Çalışma kitapğı dosyasının adı.              |
+| sheetName       | string   | path   | Çalışma sayfasının adı.                      |
+| shapeindex      | integer  | path   | Çalışma sayfasındaki şekiller içindeki indeks. |
+| folder          | string   | query  | Çalışma kitabının bulunduğu klasör.          |
+| storageName     | string   | query  | Depolama adı.                                |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShape) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShape), herkese açık erişilebilir bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells web servislerine kolayca erişmek için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'ye nasıl çağrı yapıldığını göstermektedir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes/1" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -66,9 +61,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bir SDK kullanmak, geliştirme yapmanın en hızlı yoludur. Bir SDK, düşük seviye detayları yöneterek projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposunu](https://github.com/aspose-cells-cloud) kontrol edin.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web servislerini çeşitli SDK’lar kullanarak nasıl çağırdığınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,84 +1,95 @@
-﻿---
-title: قفل الملف Excel
-second_title: Documen
-linktitle: قفل الملف Excel
-type: docs
-url: /ar/lock-excel-files/
-aliases: [/lock/without-storage/,/lock/,/lock/without-using-storage/]
-keywords: Lock Excel files
-description: يدعم Cloud REST قفل الملفات. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 70
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، القفل
 ---
-يشير هذا REST API إلى الملفات `lock` Excel.
+title: "قفل ملفات Excel"
+second_title: "مستند"
+linktitle: "قفل ملفات Excel"
+type: docs
+url: /lock-excel-files/
+aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+keywords: "قفل, Excel, API, Aspose.Cells, Cloud, REST, Workbook, Spreadsheet, SDK"
+description: "تعرّف على كيفية قفل كتب عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يشمل النهاية (Endpoint) عبر HTTPS، المصادقة، طلب cURL، مخطط الاستجابة، وأمثلة لرموز SDK بلغات C#، Java، Python، وغيرهما."
+ArticleTitle: "قفل ملفات Excel – مستندات واجهة Aspose.Cells Cloud API"
+weight: 70
+---
 
-## RSET API
+**إصدار API:** v3.0 (الإصدار الحالي)
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/lock
- 
+تقوم هذه **واجهة REST API** بقفل كتب عمل Excel.
+
+## واجهة PostLock API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/lock
 ```
 
-معلمات الطلب هي:
+**المتطلبات المسبقة** – يجب إرسال الطلب عبر بروتوكول **HTTPS**، ويتضمن رمز مميز (Bearer token) ساري المفعول من نوع OAuth 2.0 في رأس الطلب `Authorization`.
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| ملف| ملف| نموذج البيانات| الملف للتحميل|
-| كلمة المرور| خيط| استفسار||
+### معاملات الطلب
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostLock) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+| اسم المعامل | النوع   | الموقع                   | الوصف                                      |
+| ----------- | ------- | ------------------------ | ------------------------------------------ |
+| file        | ملف     | بيانات النموذج (multipart body) | كتاب عمل Excel المراد رفعه وقفله.          |
+| password    | نص (string) | سلسلة الاستعلام (query string) | كلمة المرور لكتاب العمل (اختيارية).         |
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+<a href="https://apireference.aspose.cloud/cells/#/LightCells/PostLock" target="_blank" rel="noopener noreferrer">مواصفات OpenAPI</a> تعرّف واجهة برمجة تطبيقات متاحة عمومًا، وتتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات Aspose.Cells عبر الويب. يوضح المثال التالي كيفية **استدعاء** واجهة Cloud API باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/lock?password=123456" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/lock?password=123456" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <access_token>" \
+  -F "file=@Sample.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Sample.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+*يمكنك تنزيل كتاب عمل تجريبي — [Sample.xlsx](https://example.com/Sample.xlsx) — لاختبار الطلب.*
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+**ملاحظة:** تدعم الواجهة ملفات بحجم يصل إلى 100 ميغابايت؛ قد تؤدي الحمول الأكبر إلى استجابة برمز الخطأ 413 (Payload Too Large / حمل البيانات كبير جدًا).
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+### **تفاصيل الاستجابة**
+
+| الحقل         | النوع            | الوصف                                              |
+| ------------- | ---------------- | -------------------------------------------------- |
+| Filename      | نص (string)       | اسم كتاب العمل المُقفل الذي تعيده الخدمة.          |
+| FileSize      | عدد صحيح (integer) | حجم الملف المقفل بالبايت.                           |
+| FileContent   | نص (Base64)      | كتاب العمل المقفل مشفرًا على هيئة سلسلة Base64.     |
+
+للحصول على كتاب العمل المقفل، قم بفك تشفير القيمة `FileContent` من تنسيق Base64 واحفظه باستخدام الاسم المحدد في الحقل `Filename` ضمن الاستجابة.
+
+### **معالجة الأخطاء**
+
+– تُعيد الواجهة رموز حالة HTTP القياسية (مثل `400 Bad Request`، `401 Unauthorized`، `500 Internal Server Error`) مع كائن خطأ بصيغة JSON يحتوي على حقلين: `Code` و `Message`.
+
+## عائلة SDK للحُوسبة السحابية
+
+استخدام SDK يُعدّ أفضل طريقة لتسريع عملية التطوير؛ إذ تُجرّدك SDK من التفاصيل التقنية منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى الاطّلاع على <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الرمز التالية كيفية إجراء استدعاءات لخدمات Aspose.Cells عبر الويب باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -131,4 +142,3 @@ curl -v "http://api.aspose.cloud/v3.0/cells/lock?password=123456" \
 {{< /tab >}}
 
 {{< /tabs >}}
-

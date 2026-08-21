@@ -1,74 +1,91 @@
-﻿---
-title: Обновить проверку рабочего листа Excel
-second_title: Documen
-linktitle: Обновление
-type: docs
-url: /ru/validations/update/
-keywords: Delete a worksheet validation on an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает удаление проверки листа на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 10
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Обновление проверки листа на листе Excel
 ---
-Этот REST API указывает на необходимость обновления проверки рабочего листа по индексу на рабочем листе Excel.
+title: "Обновление проверки данных на листе Excel"
+second_title: "Документ"
+linktitle: "Обновление"
+type: docs
+url: /validations/update/
+keywords: "Aspose.Cells Cloud, обновление проверки данных Excel, REST API, проверка данных на листе, Excel API"
+description: "Как обновить проверку данных на листе Excel с помощью REST API Aspose.Cells Cloud, включая примеры cURL и фрагменты кода SDK для различных языков программирования."
+weight: 10
+ArticleTitle: "Обновление проверки данных на листе с помощью API Aspose.Cells Cloud"
+---
 
-## РСЕT API
+Этот REST API обновляет проверку данных на листе Excel по её индексу.
+
+Перед вызовом этой конечной точки получите JWT-токен доступа с соответствующими областями действия (например, `Cells.ReadWrite`). Включите токен в заголовок `Authorization`, как показано в примерах.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
-Параметры запроса:
+### **Параметры запроса**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| индекс проверки| целое число| путь| Индекс проверки.|
-| проверка| объект| тело||
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра   | Тип     | Расположение | Описание                                                   |
+| ---------------- | ------- | ------------ | ---------------------------------------------------------- |
+| name             | string  | path         | Имя файла рабочей книги.                                   |
+| sheetName        | string  | path         | Имя листа, содержащего проверку данных.                   |
+| validationIndex  | integer | path         | Индекс обновляемой проверки данных (начинается с 0).      |
+| validation       | object  | body         | JSON-объект, определяющий новые параметры проверки данных. |
+| folder           | string  | query        | Папка в облачном хранилище, где расположена рабочая книга. |
+| storageName      | string  | query        | Имя службы хранилища (если используется пользовательская служба). |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PostWorksheetValidation) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+<a href="https://apireference.aspose.cloud/cells/#/WorksheetValidations/PostWorksheetValidation" target="_blank" rel="noopener noreferrer">Спецификация OpenAPI</a> определяет общедоступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать утилиту командной строки cURL для простого вызова веб-сервисов Aspose.Cells. Пример ниже показывает, как выполнить вызов облачного API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"AlertStyle\":\"Warning\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-d '{ "AlertStyle":"Warning" }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Возможные HTTP-коды состояния**
+
+| Код | Значение                               | Описание |
+|-----|----------------------------------------|----------|
+| 200 | OK (ОК)                                | Проверка данных успешно обновлена. |
+| 400 | Bad Request (Неверный запрос)          | Запрос синтаксически некорректен или отсутствуют обязательные параметры. |
+| 401 | Unauthorized (Неавторизован)           | Неверный или отсутствующий JWT-токен. |
+| 403 | Forbidden (Запрещено)                  | Токен не содержит необходимых областей действия. |
+| 404 | Not Found (Не найдено)                 | Указанная рабочая книга, лист или индекс проверки не существует. |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | На сервере произошла непредвиденная ошибка. |
+
+Дополнительные сведения об обработке ошибок см. в <a href="https://apireference.aspose.cloud/cells/#/Errors" target="_blank" rel="noopener noreferrer">документации Aspose.Cells Cloud по ошибкам</a>.
+
+Также вы можете ознакомиться с родственными операциями, такими как добавление новой проверки или удаление существующей:
+
+- [Добавление проверки данных на листе](https://docs.aspose.cloud/cells/validations/add/)
+- [Удаление проверки данных на листе](https://docs.aspose.cloud/cells/validations/delete/)
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ разработки. SDK скрывает детали низкого уровня, позволяя сосредоточиться на бизнес-логике. Ознакомьтесь с <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">репозиторием на GitHub</a>, чтобы увидеть полный список SDK Aspose.Cells Cloud.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,61 +1,64 @@
-﻿---
-title: Importer des données par lots dans la feuille de calcul Excel
-second_title: Documen
-linktitle: Importer des données par lots
-type: docs
-url: /fr/import-batch-data-into-excel/
-aliases: [/import-batch-data-into-worksheet/,/import-data/batch-data/,/import/batch-data/]
-keywords: Import batch data into Excel files
-description: Aspose.Cells Cloud REST API prend en charge l'importation de données par lots dans des fichiers Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 19
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Importer des données par lots dans la feuille de calcul Excel
 ---
-Cette feuille de travail REST API `import batch data` dans Excel.
+title: "Importer des données en lots dans une feuille de calcul Excel"
+second_title: "Document"
+linktitle: "Importer des données en lots"
+type: docs
+url: /import-batch-data-into-excel/
+aliases:
+  - /import-batch-data-into-worksheet/
+  - /import-data/batch-data/
+  - /import/batch-data/
+keywords: "Aspose.Cells, API cloud, importation de données en lots, Excel, CSV, JSON, XML, tableaux"
+description: "Découvrez comment importer des données en lots (CSV, JSON, XML, tableaux) dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’authentification, des exemples de requête/réponse, des extraits de code SDK et la gestion des erreurs."
+weight: 19
+ArticleTitle: "Importer des données en lots dans une feuille de calcul Excel – Documentation Aspose.Cells Cloud"
+---
 
-La requête est une requête HTTP avec un contenu en plusieurs parties (voir[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)ou[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La première partie du contenu en plusieurs parties contient les données ImportBatchDataOption et la seconde contient un fichier de données.
+Cet **API REST permet d’importer des données en lots** dans une feuille de calcul Excel. Elle accepte une requête multipart, dont la première partie contient l’objet **ImportBatchDataOption**, et la deuxième partie contient le fichier de données réel (CSV, JSON, XML, etc.).
 
-## RSET API
+L’opération utilise une requête HTTP avec contenu multipart (voir [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) ou [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).
 
-```bash
+## API PostImportData
 
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-Les paramètres importants sont décrits dans le tableau suivant :
+### **Sécurité et authentification**
 
-**ImporterBatchDataOption**
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-| Données par lots|Liste<CellValue> | données de lot|
-|Feuille de travail de destination| chaîne| nom de la feuille de travail de destination.|
-| EstInsérer| chaîne| vrai/faux.|
-| ImporterDataType| chaîne|IntArray/DoubleArray/StringArray/DeuxDimensionIntArray/DeuxDimensionDoubleArray/DeuxDimensionStringArray/BatchData/CSVData.|
-| Source| Source du fichier| Indique la position du fichier de données lorsque le paramètre BatchData est nul.|
+### ImportBatchDataOption
 
-**Valeur de la cellule**
+| Nom du paramètre         | Type              | Description                                                                                                                                                        |
+| ------------------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **BatchData**            | `List<CellValue>` | Collection de valeurs de cellules à écrire directement.                                                                                                            |
+| **DestinationWorksheet** | `string`          | Nom de la feuille de calcul dans laquelle les données seront importées.                                                                                            |
+| **IsInsert**             | `bool`            | Si `true`, les données sont insérées et les cellules existantes sont décalées ; si `false`, les données remplacent les cellules existantes.                        |
+| **ImportDataType**       | `string`          | Format des données à importer. Valeurs autorisées : `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
+| **Source**               | `FileSource`      | Spécifie l’emplacement du fichier de données lorsque **BatchData** est `null`.                                                                                     |
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-| index de ligne| int||
-| index de colonne| int||
-| taper| chaîne| type de données|
-| valeur| chaîne||
-| style| Style(objet)||
+### CellValue
 
-**Source du fichier**
+| Nom du paramètre | Type     | Description                                           |
+| ---------------- | -------- | ----------------------------------------------------- |
+| **rowIndex**     | `int`    | Index de ligne (à partir de 0) de la cellule cible.  |
+| **columnIndex**  | `int`    | Index de colonne (à partir de 0) de la cellule cible. |
+| **type**         | `string` | Type de données de la valeur (par ex. `int`, `double`, `string`). |
+| **value**        | `string` | Valeur réelle à écrire dans la cellule.              |
+| **style**        | `Style`  | Informations facultatives de style pour la cellule.  |
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-| Type de source de fichier| chaîne| Fichiers en mémoire/Système de fichiers cloud/Fichiers de requête|
-| Chemin du fichier| chaîne| position du fichier|
+### FileSource
 
-**Exemple**
+| Nom du paramètre   | Type     | Description                                                              |
+| ------------------ | -------- | ------------------------------------------------------------------------ |
+| **FileSourceType** | `string` | Source du fichier : `InMemoryFiles`, `CloudFileSystem` ou `RequestFiles`. |
+| **FilePath**       | `string` | Chemin ou identifiant du fichier dans la source choisie.                |
+
+### Exemple (XML)
 
 ```xml
-<ImportIntArrayOption>
+<ImportBatchDataOption>
     <DestinationWorksheet>Sheet1</DestinationWorksheet>
     <IsInsert>false</IsInsert>
     <ImportDataType>IntArray</ImportDataType>
@@ -66,15 +69,39 @@ Les paramètres importants sont décrits dans le tableau suivant :
         <FileSourceType>CloudFileSystem</FileSourceType>
         <FilePath>Array_int_xml.txt</FilePath>
     </Source>
-</ImportIntArrayOption>
-
+</ImportBatchDataOption>
 ```
 
-## Famille de SDK Cloud
+### Réponse
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                                               |
+|------|-----------------------------|---------------------------------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou non valides (par ex. type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant.                                           |
+| 413  | Charge utile trop grande    | Le fichier téléchargé dépasse la limite de taille.                       |
+| 500  | Erreur interne du serveur   | Erreur serveur inattendue.                                                |
+
+## Comment utiliser l’API PostImportData avec les SDK
+
+### Spécification de l’API PostImportData
+
+La [spécification OpenAPI](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData) définit une interface de programmation accessible publiquement qui vous permet d’effectuer directement des interactions REST depuis un navigateur web.
+
+### Utilisation des SDK Aspose.Cells Cloud
+
+L’utilisation d’un SDK est la méthode la plus rapide pour intégrer cette fonctionnalité. Les SDK gèrent les détails de bas niveau afin que vous puissiez vous concentrer sur votre logique métier. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de différents SDK :
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

@@ -1,72 +1,119 @@
-﻿---
-title: Ta bort ett diagram från ett kalkylblad
+---
+title: "Ta bort ett diagram från ett kalkylblad"
 type: docs
 url: /sv/charts/delete/
-aliases: [/delete-a-chart-from-a-worksheet/]
+aliases: [/sv/delete-a-chart-from-a-worksheet/]
 weight: 40
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ta bort ett diagram från ett kalkylblad
+keywords:
+  - "Aspose.Cells"
+  - "REST API"
+  - "Ta bort diagram"
+  - "Kalkylblad"
+  - "Excel"
+  - "Cloud SDK"
+  - "Diagramborttagning"
+  - "API-referens"
+description: "Tar bort ett diagram från ett kalkylblad med hjälp av dess nollbaserade index via Aspose.Cells Cloud REST API."
+ArticleTitle: "Ta bort ett diagram från ett kalkylblad med Aspose.Cells Cloud REST API"
 ---
-Denna REST API indikerar att kalkylbladsdiagrammet ska tas bort efter index.
- 
-## RSET API
- 
+
+Denna REST API tar bort ett diagram från ett kalkylblad med hjälp av dess index.
+
+Se **[Lägg till ett diagram](#)** och **[Hämta diagram](#)** för relaterade åtgärder.
+
+## REST API
+
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
 ```
- Begäranparametrarna är:
- 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsboksnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| diagramindex| heltal| väg| Diagramindexet.|
-| mapp| sträng| fråga| Arbetsbokens mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
- 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetDeleteChart) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
- 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+
+### Säkerhet och autentisering
+
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+### Begärandeparametrar
+
+| Parameternamn | Typ    | Plats  | Beskrivning                                     |
+| ------------- | ------ | ------ | ----------------------------------------------- |
+| name          | string | path   | Namnet på arbetsboken.                          |
+| sheetName     | string | path   | Namnet på kalkylbladet.                         |
+| chartIndex    | integer | path  | Det nollbaserade indexet för diagrammet som ska tas bort. |
+| folder        | string | query  | Mappen som innehåller arbetsboken.              |
+| storageName   | string | query  | Namnet på det lagringsutrymme som ska användas. |
 
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Svar**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                      |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Inte auktoriserad           | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
+
+## Hur man använder PutWorksheetAddChart API med SDK:er
+
+### PutWorksheetAddChart API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetDeleteChart) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör ett anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" 
--X DELETE 
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" \
+-X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
-## Cloud SDK-familjen
- 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
- 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
- 
+
+API:et returnerar följande statuskoder:
+
+| Kod | Beskrivning                                 |
+|-----|---------------------------------------------|
+| 200 | Diagrammet togs bort framgångsrikt          |
+| 400 | Felaktig begäran (t.ex. ogiltigt index)     |
+| 401 | Inte auktoriserad (saknad eller ogiltig JWT)|
+| 404 | Arbetsbok, kalkylblad eller diagram hittades inte |
+| 500 | Serverfel                                   |
+
+**Felhantering:** För detaljerad felinformation, se den generella felmodellen i OpenAPI-specifikationen.
+
+### Använd Aspose.Cells Cloud SDK:er
+
+Att använda en SDK är det bästa sättet att snabba upp utvecklingen. En SDK abstraher bort detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Kolla in [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med hjälp av olika SDK:er:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

@@ -1,73 +1,96 @@
-﻿---
-title: Rensa Cells-formatering i Excel-arbetsbladet
-type: docs
-url: /sv/clear-cells-formatting-in-excel-worksheet/
-weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Rensa Cells Formatering i Excel-kalkylblad
 ---
-Denna REST API indikerar `clear` celler `style` i en Excel-fil.
+title: "Rensa cellformatering i ett Excel-ark"
+type: docs
+url: /clear-cells-formatting-in-excel-worksheet/
+weight: 100
+keywords: "Aspose.Cells Cloud, Excel, Rensa cellformatering, REST API, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Använd Aspose.Cells Cloud REST API för att rensa cellformatering i ett Excel-ark. Innehåller begärandedetaljer, ett cURL-exempel och SDK-kodavsnitt för flera språk."
+ArticleTitle: "Rensa cellformatering i ett Excel-ark - Aspose.Cells Cloud API"
+---
 
-## RSET API
+**Obs:** Alla Aspose.Cells Cloud API-anrop måste göras över **HTTPS**. HTTP-slutpunkter är föråldrade och kan blockeras av webbläsare.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
- 
+- **Metod:** POST  
+- **Slutpunkt:** `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats`
+
+Denna REST API rensar cellformatering i en Excel-fil och är en del av Aspose.Cells Cloud-svitens funktioner för att rensa cellformatering i Excel-ark.
+
+## PostClearFormats API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsboksnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| räckvidd| sträng| fråga| Räckvidden.|
-| startrad| heltal| fråga| Startraden.|
-| startkolumn| heltal| fråga| Startkolumnen.|
-| slutrad| heltal| fråga| Slutraden.|
-| slutkolumn| heltal| fråga| Slutkolumnen.|
-| mapp| sträng| fråga| Arbetsbokens mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PostClearFormats) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Svar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Svarschema**
+
+| Fält   | Typ     | Beskrivning                                   |
+|--------|---------|-----------------------------------------------|
+| Code   | heltal  | HTTP-statuskod returnerad av API:et (t.ex. 200). |
+| Status | sträng  | Resultat av åtgärden (`OK` vid lyckad åtgärd).   |
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                      |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | OK                          | Filter har tillämpats framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Otillåten                   | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
+
+## Hur man använder PostClearFormats API med SDK:er
+
+### PostClearFormats API-specifikation
+
+<a href="https://apireference.aspose.cloud/cells/#/Cells/PostClearFormats" rel="noopener noreferrer">OpenAPI-specifikation</a> definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda cURL kommandoradsverktyget för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör ett anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/clearformats?range=a1%3Aa10&startRow=1&startColumn=1&endRow=10&endColumn=10" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda ett SDK är det snabbaste sättet att utveckla. Ett SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Kolla in [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +143,9 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Se även**
+
+- [Rensa cellinnehåll och -stilar](https://docs.aspose.cloud/cells/clear-contents-and-styles)  
+- [Ange cellstil](https://docs.aspose.cloud/cells/set-cell-style)
+---

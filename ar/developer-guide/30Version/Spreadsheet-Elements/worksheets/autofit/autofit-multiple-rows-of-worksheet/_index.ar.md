@@ -1,68 +1,90 @@
-﻿---
-title: التجهيز التلقائي لعدة صفوف في ورقة عمل Excel
-second_title: Documen
-linktitle: صف
-type: docs
-url: /ar/worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
-keywords: Autofit rows on an Excel workshee
-description: يدعم Cloud REST Aspose.Cells الضبط التلقائي للصفوف في ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 40
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، ملاءمة تلقائية لعدة صفوف في ورقة عمل Excel
 ---
-يشير هذا REST API إلى ملاءمة الصفوف تلقائيًا في ورقة العمل Excel.
+title: "ضبط ارتفاع صفوف متعددة في ورقة عمل Excel"
+second_title: "Document"
+linktitle: "Rows"
+type: docs
+url: /worksheets/autofit/rows/
+aliases: [/autofit-multiple-rows-of-worksheet/]
+keywords: "ضبط ارتفاع الصفوف، Excel، Aspose.Cells Cloud، REST API، ورقة عمل، جدول بيانات"
+description: "تعلم كيفية استخدام Aspose.Cells Cloud REST API لضبط ارتفاع صفوف متعددة في ورقة عمل Excel. يشمل بناء جملة الطلب، المعلمات، مثال cURL، مقاطع كود SDK، ومعالجة الأخطاء."
+weight: 40
+ArticleTitle: "ضبط ارتفاع صفوف متعددة في ورقة عمل Excel – وثائق API الخاصة بـ Aspose.Cells Cloud"
+---
 
-## RSET API
+يقوم هذا الـ REST API تلقائيًا بضبط ارتفاع الصفوف في ورقة عمل Excel.
+
+## الأمان والمصادقة
+تتطلب واجهات برمجة تطبيقات Aspose.Cells Cloud مصادقة مبنية على [رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) وتُعتبر آمنة.
+
+## واجهة برمجة التطبيقات (REST API)
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrows
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrows
 ```
 
-معلمات الطلب هي:
+### **معلمات الطلب**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| خيارات التجهيز التلقائي|| جسم| خيارات التركيب التلقائي.|
-| صف البداية| عدد صحيح| استفسار| صف البداية.|
-| صف النهاية| عدد صحيح| استفسار| الصف الأخير.|
-| فقط تلقائي| منطقي| استفسار|خطأ شنيع|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعلمة          | النوع    | الموقع | الوصف                                                                                                                              | الإلزام |
+| --------------------- | ------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| **name**              | string  | path   | اسم ملف Excel.                                                                                                                       | ✔       |
+| **sheetName**         | string  | path   | اسم ورقة العمل.                                                                                                                      | ✔       |
+| **autoFitterOptions** | object  | body   | خيارات تتحكم في طريقة ضبط ارتفاع الصفوف (مثل تجاهل الصفوف المخفية). راجع وصف الحقول الموجز أدناه.                                    | ✖       |
+| **startRow**          | integer | query  | الصف الأول المراد ضبط ارتفاعه (مؤشر يبدأ من 1).                                                                                     | ✔       |
+| **endRow**            | integer | query  | الصف الأخير المراد ضبط ارتفاعه (بما في ذلك).                                                                                        | ✔       |
+| **onlyAuto**          | boolean | query  | عند `true`، تقوم الواجهة بضبط ارتفاع الصفوف التي يتم حساب ارتفاعها تلقائيًا بواسطة Excel فقط. وعند `false`، يتم تنفيذ ضبط ارتفاع كامل. | ✖       |
+| **folder**            | string  | query  | المجلد الذي يحتوي على المستند.                                                                                                      | ✖       |
+| **storageName**       | string  | query  | اسم خدمة التخزين.                                                                                                                    | ✖       |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRows) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+حقل **autoFitterOptions** (اختياري جميعها):
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+- `AutoFitMergedCells` _(boolean)_ – إذا كانت القيمة `true`، فسيتم أخذ الخلايا المدمجة في الاعتبار عند حساب ارتفاع الصف.
+- `IgnoreHidden` _(boolean)_ – عند `true`، يتم تجاهل الصفوف المخفية أثناء عملية ضبط الارتفاع.
+- `OnlyAuto` _(boolean)_ – يُحاكي المعلمة الاستعلامية `onlyAuto`؛ وعند تحديدها، تُلغي القيمة القيمة المُحددة في الاستعلام.
+
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRows) واجهة برمجة تطبيقات متاحة عمومًا، ويتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب الخاصة بـ Aspose.Cells. يوضح المثال التالي كيفية استدعاء واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitrows?firstRow=1&lastColumn=10&lastRow=7&firstColumn=1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"AutoFitMergedCells" : true, "IgnoreHidden" : true, "OnlyAuto" : false}'
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitrows?startRow=1&endRow=7" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"AutoFitMergedCells": true, "IgnoreHidden": true, "OnlyAuto": false}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+تشمل استجابات الأخطاء الشائعة ما يلي:
+
+- **400 Bad Request** – قيم معلمات غير صالحة أو محتوى JSON معطّل.
+- **401 Unauthorized** – رمز JWT مفقود أو غير صالح.
+- **404 Not Found** – الملف أو ورقة العمل المحددة غير موجودة.
+- **500 Internal Server Error** – حدث خطأ غير متوقع في الخادم.
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | الوصف                                            |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | تمت تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | Bad Request                 | معلمات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401  | Unauthorized                | رمز JWT غير صالح أو مفقود. |
+| 413  | Payload Too Large           | حجم الملف المرفوع يتجاوز الحد المسموح به. |
+| 500  | Internal Server Error       | خطأ غير متوقع في الخادم. |
 
 {{< /tab >}}
 
@@ -70,9 +92,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1
 
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أسرع طريقة للتطوير. يعتني SDK بالتفاصيل منخفضة المستوى لتمكينك من التركيز على مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح مقاطع الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

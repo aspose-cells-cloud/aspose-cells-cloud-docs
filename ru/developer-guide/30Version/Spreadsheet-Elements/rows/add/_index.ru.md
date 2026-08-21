@@ -1,15 +1,87 @@
-﻿---
-title: Работа с добавлением строки на листе Excel
-second_title: Documen
-linktitle: Объявление
-type: docs
-url: /ru/rows/add/
-keywords: Working with adding row on an Excel worksheet. How to add rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает добавление строк на лист Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Работа с добавлением строк на лист Excel
 ---
-## Работа с удалением строки на листе Excel.
+title: "Как добавить строки в рабочий лист Excel"
+second_title: "Документ"
+linktitle: "Добавление"
+type: docs
+url: /rows/add/
+keywords: "Aspose.Cells, добавление строк, Excel API, REST, C#, Java, Python, Node.js"
+description: "Пошаговое руководство по добавлению одной или нескольких строк в рабочий лист Excel с использованием Aspose.Cells Cloud REST API, с примерами кода для C#, Java, Python и Node.js."
+weight: 20
+ArticleTitle: "Добавление строк в рабочий лист Excel с использованием Aspose.Cells Cloud API – Пошаговое руководство"
+---
 
-- [Как добавить пустую строку на лист Excel.](/cells/ru/rows/add/row/) 
-- [Как добавить несколько строк на лист Excel.](/cells/ru/rows/add/rows/) ) 
+## Как добавить строки в рабочий лист Excel
+
+В этой статье объясняется, как вставить одну пустую строку или несколько строк в существующий рабочий лист с помощью Aspose.Cells Cloud REST API. Перед началом убедитесь, что у вас есть действующий API-ключ и установлен и настроен соответствующий SDK.
+
+**Необходимые условия**  
+- [ ] Аккаунт Aspose.Cells Cloud с активной подпиской.  
+- [ ] API-ключ/токен доступа, созданный в панели управления Aspose Cloud.  
+- [ ] Один из поддерживаемых SDK (C#, Java, Python, Node.js), установленный и настроенный.  
+
+**Справочник по API**  
+- **HTTP-метод:** `POST`  
+- **Конечная точка:** `https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetName}/rows`  
+- **Обязательные параметры пути:**  
+  - `fileName` – Имя файла Excel, хранящегося в облаке.  
+  - `sheetName` – Имя рабочего листа, в который будут добавлены строки.  
+- **Параметры запроса:**  
+  - `startrow` – Индекс строки (начиная с 0), с которой начинается вставка.  
+  - `totalRows` – Количество добавляемых строк.  
+  - `folder` – (Необязательно) Путь к папке в облаке, где хранится файл.  
+  - `storage` – (Необязательно) Имя хранилища, если используется не хранилище по умолчанию.  
+- **Тело запроса (пример в формате JSON):**  
+
+  ```json
+  {
+    "startrow": 5,
+    "totalRows": 3
+  }
+  ```
+
+  **Пример cURL**
+
+  ```bash
+  curl -X POST "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/rows?startrow=5&totalRows=3&folder=MyFolder&storage=MyStorage" \
+      -H "Authorization: Bearer {access_token}" \
+      -H "Content-Type: application/json" \
+      -d '{"startrow":5,"totalRows":3}'
+  ```
+
+- **Успешный ответ (HTTP 200):** Возвращает обновлённую информацию о рабочем листе, включая новое количество строк.  
+
+  ```json
+  {
+    "Code": 200,
+    "Status": "OK",
+    "Worksheet": {
+      "Name": "Sheet1",
+      "RowsCount": 30
+    }
+  }
+  ```
+
+- **Пример ответа об ошибке (HTTP 400):**  
+
+  ```json
+  {
+    "Code": 400,
+    "Status": "Bad Request",
+    "Message": "Недопустимый параметр startrow. Он должен быть неотрицательным целым числом."
+  }
+  ```
+
+- **Коды состояния:**  
+
+  | Код | Значение                                 |
+  |-----|------------------------------------------|
+  | 200 | Строки успешно добавлены                 |
+  | 400 | Недопустимые параметры или некорректный JSON |
+  | 401 | Ошибка аутентификации                    |
+  | 404 | Файл или рабочий лист не найдены         |
+  | 500 | Ошибка сервера                           |
+
+Ниже приведены быстрые ссылки на подробные примеры добавления строк:
+
+- [Как добавить пустую строку в рабочий лист Excel](/cells/rows/add/row/)
+- [Как добавить несколько строк в рабочий лист Excel](/cells/rows/add/rows/)

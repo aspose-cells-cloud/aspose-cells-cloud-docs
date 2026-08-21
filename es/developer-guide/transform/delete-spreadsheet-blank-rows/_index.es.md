@@ -1,99 +1,129 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Eliminar filas en blanco en la hoja de cálculo
-second_title: Documen
-ArticleTitle: Delete Blank Rows in a Spreadshee
-linktitle: Eliminar fila en blanco
-type: docs
-url: /es/delete-spreadsheet-blank-rows/
-keywords: Delete blank rows, Excel API, Spreadsheet cleaning, Aspose.Cells Cloud Web API, Remove empty row
-description: Elimine de manera eficiente todas las filas en blanco en una hoja de cálculo que no contengan datos ni objetos, mejorando así la organización de los datos.
-weight: 100
-kwords: Excel, REST, Hoja de cálculo, PDF, CSV, JSON, Markdown, Coincidir con todas las celdas en blanco en una hoja de cálculo Excel, Eliminar filas vacías
 ---
-Eliminar todas las filas en blanco que no contengan datos u otros objetos de una hoja de cálculo Excel.
+title: "Aspose.Cells Cloud Web API: Eliminar automáticamente filas en blanco/vacías"
+second_title: "Documento"
+ArticleTitle: "Cómo eliminar todas las filas en blanco/vacías en Excel: Guía completa para limpieza de datos"
+linktitle: "Eliminar filas en blanco"
+type: docs
+url: /delete-spreadsheet-blank-rows/
+keywords: "Aspose.Cells, Excel, filas en blanco, eliminar filas, limpieza de hojas de cálculo, API"
+description: "Elimine todas las filas vacías de archivos de Excel mediante la API de Aspose.Cells Cloud. Rápida, lista para procesamiento por lotes y totalmente programable: vea ejemplos de código en C#, Java, Python y más."
+weight: 100
+---
 
-## **Eliminar filas en blanco de la hoja de cálculo AP**
+Elimine automáticamente todas las filas en blanco de hojas de cálculo de Excel mediante la API de Aspose.Cells Cloud. Nuestra API inteligente detecta y elimina filas que no contienen datos, fórmulas, comentarios u objetos, preservando todo demás contenido. Admite procesamiento por lotes, automatización en la nube e integración fluida para flujos de trabajo empresariales de limpieza de datos.
+
+## API DeleteSpreadsheetBlankRows
+
+### API web
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/delete/blank-rows
+PUT https://api.aspose.cloud/v4.0/cells/delete/blank-rows
 ```
 
-### **Parámetros de la solicitud:**
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody| Descripción|
-|:- |:- |:- |:- |
-|Hoja de cálculo|Archivo|Datos del formulario|Sube el archivo de hoja de cálculo.|
-|Ruta de salida|Cadena|Consulta|(Opcional) La ruta de la carpeta donde se almacena el libro. El valor predeterminado es nulo.|
-|nombreAlmacenamientoExterno|Cadena|Consulta|Nombre del almacenamiento del archivo de salida.|
-|región|Cadena|Consulta|La configuración de la región de la hoja de cálculo.|
-|contraseña|Cadena|Consulta|La contraseña para abrir el archivo de hoja de cálculo.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
-### **Respuesta**
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+
+### Parámetros de solicitud
+
+| Nombre del parámetro | Tipo   | Ubicación | Descripción                                                                                                                                    |
+| -------------------- | ------ | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet          | File   | FormData  | El archivo de Excel (`.xlsx`, `.xls`, `.ods`, etc.) que se procesará.                                                                         |
+| outPath              | String | Query     | (Opcional) Directorio de destino en su almacenamiento en la nube para el libro limpio. Si se omite, el archivo se guarda junto al archivo original. |
+| outStorageName       | String | Query     | Nombre del almacenamiento en la nube configurado (por ejemplo, `MyDropbox`, `CorporateOneDrive`). Obligatorio si desea que la salida se guarde en un almacenamiento específico. |
+| region               | String | Query     | Configuración regional (por ejemplo, `es-ES`, `fr-FR`) aplicada durante el procesamiento.                                                     |
+| password             | String | Query     | Contraseña para abrir una hoja de cálculo cifrada. Omita si el archivo no está protegido.                                                       |
+
+**Autenticación**  
+Todas las llamadas deben incluir el encabezado `Authorization: Bearer <access_token>`. Obtenga el token de acceso mediante el flujo OAuth2 de Aspose Cloud, descrito en la guía de autenticación.
+
+**Requisitos previos y notas**  
+- Asegúrese de que su almacenamiento de Aspose Cloud esté configurado y de que el libro original ya esté cargado antes de invocar la API.  
+- Los formatos de archivo admitidos incluyen `.xlsx`, `.xls`, `.ods` y otros tipos comunes de hojas de cálculo.  
+- El tamaño máximo de archivo por solicitud es de 150 MB; los archivos más grandes deben procesarse en fragmentos.  
+
+### Respuesta
+
+La API devuelve un array JSON que contiene una referencia al archivo procesado.
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
 ### Códigos de error
 
-- **400 Solicitud incorrecta**: URI de nube Apose.Cells no válido API.
-- **401 No autorizado**Token de acceso no válido. O ID de cliente y secreto no válidos.
-- **404 No encontrado**:El archivo de hoja de cálculo no es accesible.
-- **Error de servidor 500**:La hoja de cálculo ha encontrado una anomalía al obtener los datos de cálculo.
+- **400 Bad Request (Solicitud incorrecta)**: URI inválido para la API de Aspose.Cells Cloud.
+- **401 Unauthorized (No autorizado)**: Token de acceso o credenciales de cliente inválidos.
+- **404 Not Found (No encontrado)**: No se puede acceder al archivo de hoja de cálculo.
+- **500 Server Error (Error del servidor)**: Ocurrió un error inesperado durante el procesamiento del archivo.
 
-## ¿Dónde debemos utilizar la función Eliminar filas en blanco de la hoja de cálculo API?
+## ¿Dónde debe utilizarse la API para eliminar filas en blanco de hojas de cálculo?
 
-Cuando necesites transformar datos, puedes utilizar este API.
+- **Flujos de trabajo de importación y limpieza de datos**: Limpie filas en blanco finales o estructurales inmediatamente después de importar datos desde archivos CSV, bases de datos o API web.
+- **Generación de informes y paneles**: Asegure un diseño profesional eliminando filas vacías innecesarias antes de finalizar informes financieros, de ventas u operativos.
+- **Preparación de datos para análisis (ETL)**: Preprocese datos de Excel en pipelines ETL antes de cargarlos en almacenes de datos (Snowflake, BigQuery) o herramientas de BI (Tableau, Power BI).
+- **Integración de sistemas y feeds API**: Normalice archivos de Excel recibidos desde sistemas de socios, CRM o ERP eliminando filas no utilizadas.
+- **Automatización de documentos y procesamiento por lotes**: Elimine filas de marcador de posición generadas por motores de plantillas antes de distribuirlas.
+- **Procesamiento de contenido generado por usuarios**: Estandarice cargas de Excel desde portales web o aplicaciones antes de su procesamiento o almacenamiento adicional.
+- **Migración de datos heredados**: Simplifique archivos antiguos de hojas de cálculo eliminando filas históricamente vacías o de marcador de posición.
 
-## ¿Por qué debería utilizar la función Eliminar filas en blanco de la hoja de cálculo API?
+## ¿Por qué debería utilizar la API para eliminar filas en blanco de hojas de cálculo?
 
-- Elimine rápidamente todas las filas en blanco que no contengan datos u otros objetos de una hoja de cálculo Excel.
-- El desarrollo se puede completar rápidamente a través del SDK existente.
+- **Amigable para desarrolladores**: Los SDK están disponibles para múltiples lenguajes, reduciendo el esfuerzo de desarrollo comparado con la creación de soluciones personalizadas.
+- **Reducción de costos laborales**: Elimina la necesidad de limpieza manual de hojas de cálculo o personal dedicado.
+- **Pago por uso**: Solo paga por las llamadas a la API que realmente realice.
+- **Costos cero de mantenimiento**: Sin servidores que administrar, sin actualizaciones de software ni preocupaciones por compatibilidad.
 
-## Cómo usar la función Eliminar filas en blanco de la hoja de cálculo API con SDK
+## Cómo utilizar la API para eliminar filas en blanco de hojas de cálculo con SDK
 
-### Eliminar filas en blanco de la hoja de cálculo API Especificación
+### Especificación de la API Delete Spreadsheet Blank Rows
 
- El[Eliminar filas en blanco de la hoja de cálculo API Especificación](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankRows) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación de la API Delete Spreadsheet Blank Rows](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankRows) define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
 
-### Utilice los SDK de la nube Aspose.Cells
+### Utilice los SDK de Aspose.Cells Cloud
 
-Usar el SDK es la forma más rápida de desarrollar, ya que abstrae los detalles de bajo nivel y permite eliminar filas en blanco de la hoja de cálculo con un código corto.
- Por favor, consulte el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de desarrollar, ya que oculta los detalles de bajo nivel y le permite eliminar filas en blanco de hojas de cálculo con código breve.  
+Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells utilizando diversos SDK:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteSpreadsheetBlankRows.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteSpreadsheetBlankRows.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteSpreadsheetBlankRows.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteSpreadsheetBlankRows.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteSpreadsheetBlankRows.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteSpreadsheetBlankRows.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteSpreadsheetBlankRows.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankRows.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}  
+{{<tab tabNum="1" >}}  
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteSpreadsheetBlankRows.cs" >}}  
+{{</tab>}}  
+{{<tab tabNum="2" >}}  
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteSpreadsheetBlankRows.java" >}}  
+{{</tab>}}  
+{{<tab tabNum="3" >}}  
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteSpreadsheetBlankRows.php" >}}  
+{{</tab>}}  
+{{<tab tabNum="4" >}}  
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteSpreadsheetBlankRows.rb" >}}  
+{{</tab>}}  
+{{<tab tabNum="5" >}}  
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteSpreadsheetBlankRows.ts" >}}  
+{{</tab>}}  
+{{<tab tabNum="6" >}}  
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteSpreadsheetBlankRows.py" >}}  
+{{</tab>}}  
+{{<tab tabNum="7" >}}  
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteSpreadsheetBlankRows.pl" >}}  
+{{</tab>}}  
+{{<tab tabNum="8" >}}  
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankRows.go" >}}  
+{{</tab>}}  
 {{< /tabs >}}
+---

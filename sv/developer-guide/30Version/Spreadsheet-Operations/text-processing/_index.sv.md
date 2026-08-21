@@ -1,14 +1,15 @@
-﻿---
-title: "Excel Textbehandling: Lägg till text, ta bort tecken, trimma text, uppdatera versaler och mycket mer"
-second_title: Documen
-linktitle: Textbearbetning
+---
+title: "Excel-textbearbetning: Lägg till text, ta bort tecken, trimma text, uppdatera ordkapitalisering och mer"
+second_title: "Dokument"
+linktitle: "Textbearbetning"
 type: docs
 url: /sv/text-processing/
-keywords: "Excel Text Processing: Add Text, Remove Characters, Trim Text, Update Word Case, Convert Text, Split Text, Merge Text, Replace Text, Find Text, Count Text, Text to PDF, Text to CSV, Text to JSON, Text to Markdow"
-description: Aspose.Cells Cloud REST API stöder arbete med sammanslagning och splitter på en Excel-fil. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+keywords: "Excel-textbearbetning, lägg till text, ta bort tecken, trimma text, uppdatera ordkapitalisering, konvertera text, dela text, sammanfoga text, ersätt text, sök text, räkna text, text till PDF, text till CSV, text till JSON, text till Markdown, Aspose.Cells Cloud"
+description: "Utforska Aspose.Cells Cloud REST API för omfattande Excel-textbearbetningsuppgifter—including att lägga till text, ta bort tecken, trimma blanksteg, ändra ordkapitalisering, konvertera format och mer. SDK:er finns tillgängliga för Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby och Swift."
 weight: 20
 ---
-- **["Lägg till text till Excel: Infoga data effektivt med kalkylblad WEB API"](https://docs.aspose.cloud/cells/excel-add-text/)**
-- **["Ta bort tecken från Excel: Infoga data effektivt med kalkylblad WEB API"](https://docs.aspose.cloud/cells/excel-remove-characters/)**
-- **["Beskär innehåll: Åtgärda Excel Mellanslag och radbrytningar"](https://docs.aspose.cloud/cells/spreadsheet-trim-content/)**
-- **["Uppdatera Word Case"](https://docs.aspose.cloud/cells/post-update-word-case/)**
+
+- **[Lägg till text i Excel: Infoga data effektivt med Spreadsheet Web API](https://docs.aspose.cloud/cells/excel-add-text/)**
+- **[Ta bort tecken från Excel: Ta effektivt bort onödiga tecken med Spreadsheet Web API](https://docs.aspose.cloud/cells/excel-remove-characters/)**
+- **[Trimma innehåll: Ta bort blanksteg och radbrytningar i Excel](https://docs.aspose.cloud/cells/spreadsheet-trim-content/)**
+- **[Uppdatera ordkapitalisering](https://docs.aspose.cloud/cells/post-update-word-case/)**

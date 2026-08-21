@@ -1,506 +1,594 @@
-﻿---
-title: Option de conversion du classeur
-second_title: Documen
-linktitle: Option de conversion du classeur
-type: docs
-url: /fr/convert-workbook-options/
-keywords: ConvertWorkbookOptions
-description: Aspose.Cells Cloud REST API prend en charge l'extraction de fichiers Excel vers différents formats. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 79
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Options de conversion de classeur
 ---
+title: "Options de conversion de classeur"
+second_title: "Document"
+linktitle: "Options de conversion de classeur"
+type: docs
+url: /convert-workbook-options/
+keywords: "Aspose.Cells, ConvertWorkbookOptions, conversion Excel, PDF, CSV, API"
+description: "Options de conversion de classeur – configurez la conversion de classeur Excel en PDF, CSV, HTML et plus encore avec l'API Aspose.Cells Cloud."
+weight: 79
+ArticleTitle: "Options de conversion de classeur – API Aspose.Cells Cloud"
+---
+
 # Propriétés de ConvertWorkbookOptions
 
-Nom | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**Source de données** | **Objet** Source du fichier de données : CloudFileSystem , RequestFiles , HttpUri. |
-**[FileInfo](/cells/file-info/)** | **Objet** | Description des informations du fichier. Comprend le nom du fichier, la taille du fichier et le contenu du fichier (chaîne base64). |
-**[Mise en page](/cells/page-setup/)** | **Objet** | Propriétés de mise en page. |
-**Options de sauvegarde** | **Objet** | Options d'enregistrement : DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
-**Convertir le format** | **chaîne** | Le format de fichier : csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, etc. |
-**VérifierExcelRestriction** | **booléen** | Obtient et définit le type de texte enveloppé à ajustement automatique. |
+**Version de l'API :** 23.12 (2024‑03)
 
-## **Propriétés de fileSource**
+`ConvertWorkbookOptions` est le modèle de requête utilisé par l'API de conversion Aspose.Cells Cloud pour spécifier comment un classeur Excel doit être transformé dans un autre format (PDF, CSV, HTML, etc.). Il regroupe les informations sur le fichier source, le format cible, les paramètres de mise en page et les options de sauvegarde spécifiques au format.
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Type de source de fichier|Chaîne|vrai| FAUX||Une propriété nommée FileSourceType de type FileSourceType qui peut être consultée et modifiée. (CloudFileSystem/RequestFiles/HttpUri)|
-|Chemin du fichier|Chaîne|vrai| FAUX||Le chemin de position du fichier.|
+| Nom                                | Type        | Description                                                                                                   | Notes |
+| ----------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------- | ----- |
+| **DataSource**                      | **Object**  | Source du fichier de données : `CloudFileSystem`, `RequestFiles` ou `HttpUri`.                                |       |
+| **[FileInfo](/cells/file-info/)**   | **Object**  | Décrit le nom du fichier, sa taille et le contenu encodé en base64.                                           |       |
+| **[PageSetup](/cells/page-setup/)** | **Object**  | Propriétés de mise en page telles que les marges, l'orientation et l'échelle.                                 |       |
+| **SaveOptions**                     | **Object**  | Conteneur pour les objets d'options de sauvegarde spécifiques au format (par exemple, `PdfSaveOptions`, `HtmlSaveOptions`). |       |
+| **ConvertFormat**                   | **string**  | Format de fichier cible (par exemple, **PDF**, **CSV**, **HTML**, **XLSX**, **TIFF**, etc.).                    |       |
+| **CheckExcelRestriction**           | **boolean** | Obtient ou définit si les restrictions spécifiques à Excel (nombre maximal de lignes, de colonnes, longueur des noms de feuille, etc.) doivent être appliquées. |       |
 
-## **Propriétés DbfSaveOptions**
+**Conditions préalables**
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Exporter comme chaîne|Booléen|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+- Obtenir un jeton d’accès OAuth 2.0 valide pour Aspose.Cells Cloud.  
+- Vérifier que le fichier source est accessible via l’un des types `DataSource` pris en charge.
 
-## **Propriétés DifSaveOptions**
+**Exemple rapide**
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+```json
+{
+  "DataSource": {
+    "FileInfo": {
+      "FileName": "Exemple.xlsx",
+      "FileContent": "<contenu‑encodé‑en‑base64>"
+    }
+  },
+  "ConvertFormat": "pdf",
+  "SaveOptions": {
+    "PdfSaveOptions": {
+      "CompressImages": true,
+      "ImageQuality": 90
+    }
+  }
+}
+```
 
-## **Propriétés de DocxSaveOptions**
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -d @request.json \
+     -o Exemple.pdf
+```
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Police par défaut|Chaîne|vrai| FAUX|||
-|Vérifier la police par défaut du classeur|Booléen|vrai| FAUX|||
-|Vérifier la compatibilité des polices|Booléen|vrai| FAUX|||
-|Granularité de IsFontSubstitutionChar|Booléen|vrai| FAUX|||
-|Une page par feuille|Booléen|vrai| FAUX|||
-|Toutes les colonnes sur une page par feuille|Booléen|vrai| FAUX|||
-|Ignorer l'erreur|Booléen|vrai| FAUX|||
-|Sortie d'une page vierge lorsqu'il n'y a rien à imprimer|Booléen|vrai| FAUX|||
-|Index des pages|Entier|vrai| FAUX|||
-|Nombre de pages|Entier|vrai| FAUX|||
-|Type de page d'impression|Chaîne|vrai| FAUX|||
-|Type de ligne de grille|Chaîne|vrai| FAUX|||
-|TexteCrossType|Chaîne|vrai| FAUX|||
-|Langue d'édition par défaut|Chaîne|vrai| FAUX|||
-|Paramètre EmfRender|Chaîne|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+**Détails de la requête API**
 
-## **Propriétés HtmlSaveOptions**
+L’opération de conversion est exécutée via une requête **POST** vers le point de terminaison suivant :
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Exporter les en-têtes de page|Booléen|vrai| FAUX|||
-|Exporter les pieds de page|Booléen|vrai| FAUX|||
-|Exporter les en-têtes de lignes et de colonnes|Booléen|vrai| FAUX|||
-|Afficher toutes les feuilles|Booléen|vrai| FAUX|||
-|Options d'image|Classe|vrai| FAUX|||
-|Enregistrer sous un seul fichier|Booléen|vrai| FAUX|||
-|Exporter la feuille de travail masquée|Booléen|vrai| FAUX|||
-|Exporter les lignes de grille|Booléen|vrai| FAUX|||
-|Préférence de présentation|Booléen|vrai| FAUX|||
-|Préfixe CellCss|Chaîne|vrai| FAUX|||
-|ID CSS de la table|Chaîne|vrai| FAUX|||
-|IsFullPathLink|Booléen|vrai| FAUX|||
-|Exporter la feuille de calcul CSS séparément|Booléen|vrai| FAUX|||
-|Exporter un style de bordure similaire|Booléen|vrai| FAUX|||
-|FusionnerVideTdForcely|Booléen|vrai| FAUX|||
-|Exporter les coordonnées de la cellule|Booléen|vrai| FAUX|||
-|Exporter des titres supplémentaires|Booléen|vrai| FAUX|||
-|Exporter les en-têtes|Booléen|vrai| FAUX|||
-|Formule d'exportation|Booléen|vrai| FAUX|||
-|Ajouter un texte d'info-bulle|Booléen|vrai| FAUX|||
-|Exporter des données de ligne fictives|Booléen|vrai| FAUX|||
-|Exclure les styles inutilisés|Booléen|vrai| FAUX|||
-|ExportDocumentProperties|Booléen|vrai| FAUX|||
-|Exporter les propriétés de la feuille de calcul|Booléen|vrai| FAUX|||
-|Exporter les propriétés du classeur|Booléen|vrai| FAUX|||
-|Exporter les scripts et les propriétés du cadre|Booléen|vrai| FAUX|||
-|Répertoire des fichiers attachés|Chaîne|vrai| FAUX|||
-|Préfixe d'URL des fichiers attachés|Chaîne|vrai| FAUX|||
-|Codage|Chaîne|vrai| FAUX|||
-|ExporterActiveWorksheetOnly|Booléen|vrai| FAUX|||
-|ExportChartImageFormat|Chaîne|vrai| FAUX|||
-|Exporter les images en base 64|Booléen|vrai| FAUX|||
-|Type d'affichage caché|Chaîne|vrai| FAUX|||
-|Type d'affichage de ligne cachée|Chaîne|vrai| FAUX|||
-|Type de chaîne croisée HTML|Chaîne|vrai| FAUX|||
-|EstExpImageVersTempDir|Booléen|vrai| FAUX|||
-|Titre de la page|Chaîne|vrai| FAUX|||
-|AnalyserHtmlTagInCell|Booléen|vrai| FAUX|||
-|Attribut CellName|Chaîne|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+```
+https://api.aspose.cloud/v3.0/cells/convert
+```
 
-## **Propriétés ImageSaveOptions**
+En-têtes requis :
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Type d'image de graphique|Chaîne|vrai| FAUX|||
-|Nom de l'image intégrée dans SVG|Chaîne|vrai| FAUX|||
-|Résolution horizontale|Entier|vrai| FAUX|||
-|Format d'image|Chaîne|vrai| FAUX|||
-|Est-ce que CellAutoFit|Booléen|vrai| FAUX|||
-|Une page par feuille|Booléen|vrai| FAUX|||
-|Zone uniquement|Booléen|vrai| FAUX|||
-|Impression de la page|Chaîne|vrai| FAUX|||
-|ImprimerAvecDialogueD'état|Booléen|vrai| FAUX|||
-|Qualité|Entier|vrai| FAUX|||
-|Compression Tiff|Chaîne|vrai| FAUX|||
-|Résolution verticale|Entier|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+| En‑tête               | Valeur                              |
+|-----------------------|------------------------------------|
+| `Authorization`       | `Bearer {access_token}`            |
+| `Content-Type`        | `application/json`                |
 
-## **Propriétés JsonSaveOptions**
+Le corps de la requête doit être une représentation JSON de `ConvertWorkbookOptions` (voir l’exemple ci‑dessus). Toutes les propriétés sont facultatives, sauf si elles sont requises par le format `ConvertFormat` choisi.
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Zone d'exportation|Classe|vrai| FAUX|||
-|A une ligne d'en-tête|Booléen|vrai| FAUX|||
-|Exporter comme chaîne|Booléen|vrai| FAUX|||
-|Retrait|Chaîne|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+**Réponse de l'API**
 
-## **Propriétés MarkdownSaveOptions**
+Une conversion réussie renvoie **HTTP 200 OK** (ou **202 Accepted** pour un traitement asynchrone) avec le fichier converti diffusé dans le corps de la réponse. Lorsque la réponse est diffusée, l’en‑tête `Content-Disposition` contient le nom de fichier suggéré.
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Codage|Chaîne|vrai| FAUX|||
-|Stratégie de format|Chaîne|vrai| FAUX|||
-|Séparateur de ligne|Chaîne|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+Exemple de réponse JSON pour une requête asynchrone :
 
-## **Propriétés OoxmlSaveOptions**
+```json
+{
+  "JobId": "a1b2c3d4e5",
+  "Status": "InProgress",
+  "ResultUrl": "https://api.aspose.cloud/v3.0/cells/jobs/a1b2c3d4e5/result"
+}
+```
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Exporter le nom de la cellule|Booléen|vrai| FAUX|||
-|Mise à jourZoom|Booléen|vrai| FAUX|||
-|ActiverZip64|Booléen|vrai| FAUX|||
-|IntégrerOoxmlAsOleObject|Booléen|vrai| FAUX|||
-|Type de compression|Chaîne|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+**Codes de statut**
 
-## **Propriétés de PclSaveOptions**
+| Code | Signification                                 |
+|------|------------------------------------------|
+| 200  | Conversion terminée ; fichier renvoyé.     |
+| 202  | Conversion acceptée ; résultat disponible ultérieurement. |
+| 400  | Requête incorrecte – paramètres manquants ou non valides. |
+| 401  | Non autorisé – jeton non valide ou manquant. |
+| 403  | Accès refusé – autorisations insuffisantes.   |
+| 500  | Erreur interne du serveur.                   |
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|policeFullName|Chaîne|vrai| FAUX|||
-|policePclName|Chaîne|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+**Notes / Limitations**
 
-## **Propriétés de PdfSaveOptions**
+- Le drapeau `CheckExcelRestriction` applique les limites d’Excel, telles que le nombre maximal de lignes (1 048 576) et de colonnes (16 384).  
+- Toutes les propriétés `SaveOptions` ne sont pas prises en charge pour chaque format cible ; les options non prises en charge sont ignorées.  
+- Lors de l’utilisation de `HttpUri` comme source de données, l’URL doit être publiquement accessible sans authentification.  
+- Les informations sur la méthode et le point de terminaison de l’API ont été ajoutées pour améliorer la clarté pour les développeurs et réduire les erreurs d’intégration.
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Afficher le titre du document|Booléen|vrai| FAUX|||
-|Structure du document d'exportation|Booléen|vrai| FAUX|||
-|Paramètre EmfRender|Chaîne|vrai| FAUX|||
-|Exportation de propriétés personnalisées|Chaîne|vrai| FAUX|||
-|Type d'optimisation|Chaîne|vrai| FAUX|||
-|Producteur|Chaîne|vrai| FAUX|||
-|Compression PDF|Chaîne|vrai| FAUX|||
-|Encodage des polices|Chaîne|vrai| FAUX|||
-|Filigrane|Classe|vrai| FAUX|||
-|CalculerFormule|Booléen|vrai| FAUX|||
-|Vérifier la compatibilité des polices|Booléen|vrai| FAUX|||
-|Conformité|Chaîne|vrai| FAUX|||
-|Police par défaut|Chaîne|vrai| FAUX|||
-|Une page par feuille|Booléen|vrai| FAUX|||
-|Type de page d'impression|Chaîne|vrai| FAUX|||
-|Options de sécurité|Classe|vrai| FAUX|||
-|PPI souhaité|Entier|vrai| FAUX|||
-|Qualité jpeg|Entier|vrai| FAUX|||
-|Type d'image|Chaîne|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+## Propriétés de FileSource
 
-## **Propriétés de PptxSaveOptions**
+| Nom de la propriété | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                                               |
+| ------------------- | ----------------- | -------- | ---------------- | ----------------- | ------------------------------------------------------------------------- |
+| FileSourceType      | String            | true     | false            |                   | Indique le type de source (`CloudFileSystem`, `RequestFiles`, `HttpUri`). |
+| FilePath            | String            | true     | false            |                   | Emplacement du chemin du fichier.                                         |
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Ignorer les lignes cachées|Booléen|vrai| FAUX|||
-|Ajuster la taille de la police pour le type de ligne|Chaîne|vrai| FAUX|||
-|ExportViewType|Chaîne|vrai| FAUX|||
-|Police par défaut|Chaîne|vrai| FAUX|||
-|Vérifier la police par défaut du classeur|Booléen|vrai| FAUX|||
-|Vérifier la compatibilité des polices|Booléen|vrai| FAUX|||
-|Granularité de IsFontSubstitutionChar|Booléen|vrai| FAUX|||
-|Une page par feuille|Booléen|vrai| FAUX|||
-|Toutes les colonnes sur une page par feuille|Booléen|vrai| FAUX|||
-|Ignorer l'erreur|Booléen|vrai| FAUX|||
-|Sortie d'une page vierge lorsqu'il n'y a rien à imprimer|Booléen|vrai| FAUX|||
-|Index des pages|Entier|vrai| FAUX|||
-|Nombre de pages|Entier|vrai| FAUX|||
-|Type de page d'impression|Chaîne|vrai| FAUX|||
-|Type de ligne de grille|Chaîne|vrai| FAUX|||
-|TexteCrossType|Chaîne|vrai| FAUX|||
-|Langue d'édition par défaut|Chaîne|vrai| FAUX|||
-|Paramètre EmfRender|Chaîne|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+## Propriétés de DbfSaveOptions
 
-## **Propriétés de SqlScriptSaveOptions**
+| Nom de la propriété       | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                            |
+| ------------------------- | ----------------- | -------- | ---------------- | ----------------- | ------------------------------------------------------ |
+| ExportAsString            | Boolean           | true     | false            |                   | Si **true**, exporte les valeurs numériques en tant que chaînes. |
+| SaveFormat                | String            | true     | false            |                   | Identifiant de format pour les fichiers DBF.          |
+| CachedFileFolder          | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                 | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.     |
+| CreateDirectory           | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.               |
+| EnableHttpCompression     | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.            |
+| RefreshChartCache         | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                 | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.        |
+| ValidateMergedAreas       | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.           |
+| MergeAreas                | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.          |
+| SortExternalNames         | Boolean           | true     | false            |                   | Trie les références nommées externes.                   |
+| CheckExcelRestriction     | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| UpdateSmartArt            | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version. |
+| EncryptDocumentProperties | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Vérifier si la table existe|Booléen|vrai| FAUX|||
-|ColumnTypeMap|Chaîne|vrai| FAUX|||
-|Vérifier toutes les données pour le type de colonne|Booléen|vrai| FAUX|||
-|Ajouter une ligne vide entre les lignes|Booléen|vrai| FAUX|||
-|Séparateur|Chaîne|vrai| FAUX|||
-|Type d'opérateur|Chaîne|vrai| FAUX|||
-|Clé primaire|Entier|vrai| FAUX|||
-|Créer une table|Booléen|vrai| FAUX|||
-|Nom d'identification|Chaîne|vrai| FAUX|||
-|ID de démarrage|Entier|vrai| FAUX|||
-|Nom de la table|Chaîne|vrai| FAUX|||
-|Exporter comme chaîne|Booléen|vrai| FAUX|||
-|Zone d'exportation|Classe|vrai| FAUX|||
-|A une ligne d'en-tête|Booléen|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+## Propriétés de DifSaveOptions
 
-## **Propriétés de SvgSaveOptions**
+| Nom de la propriété       | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                            |
+| ------------------------- | ----------------- | -------- | ---------------- | ----------------- | ------------------------------------------------------ |
+| SaveFormat                | String            | true     | false            |                   | Identifiant de format pour les fichiers DIF.           |
+| CachedFileFolder          | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                 | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.     |
+| CreateDirectory           | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.               |
+| EnableHttpCompression     | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.            |
+| RefreshChartCache         | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                 | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.        |
+| ValidateMergedAreas       | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.           |
+| MergeAreas                | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.          |
+| SortExternalNames         | Boolean           | true     | false            |                   | Trie les références nommées externes.                   |
+| CheckExcelRestriction     | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| UpdateSmartArt            | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version. |
+| EncryptDocumentProperties | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Index des feuilles|Entier|vrai| FAUX|||
-|Type d'image de graphique|Chaîne|vrai| FAUX|||
-|Nom de l'image intégrée dans SVG|Chaîne|vrai| FAUX|||
-|Résolution horizontale|Entier|vrai| FAUX|||
-|Format d'image|Chaîne|vrai| FAUX|||
-|Est-ce que CellAutoFit|Booléen|vrai| FAUX|||
-|Une page par feuille|Booléen|vrai| FAUX|||
-|Zone uniquement|Booléen|vrai| FAUX|||
-|Impression de la page|Chaîne|vrai| FAUX|||
-|ImprimerAvecDialogueD'état|Booléen|vrai| FAUX|||
-|Qualité|Entier|vrai| FAUX|||
-|Compression Tiff|Chaîne|vrai| FAUX|||
-|Résolution verticale|Entier|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+## Propriétés de DocxSaveOptions
 
-## **Propriétés TxtSaveOptions**
+| Nom de la propriété               | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                             |
+| --------------------------------- | ----------------- | -------- | ---------------- | ----------------- | ------------------------------------------------------- |
+| DefaultFont                       | String            | true     | false            |                   | Police utilisée lorsqu’une police source n’est pas disponible. |
+| CheckWorkbookDefaultFont          | Boolean           | true     | false            |                   | Vérifie si la police par défaut du classeur est appliquée. |
+| CheckFontCompatibility            | Boolean           | true     | false            |                   | Valide la compatibilité des polices pour le format cible. |
+| IsFontSubstitutionCharGranularity | Boolean           | true     | false            |                   | Contrôle la substitution de police au niveau des caractères. |
+| OnePagePerSheet                   | Boolean           | true     | false            |                   | Force chaque feuille sur une page séparée.             |
+| AllColumnsInOnePagePerSheet       | Boolean           | true     | false            |                   | Adapte toutes les colonnes d’une feuille sur une seule page. |
+| IgnoreError                       | Boolean           | true     | false            |                   | Ignore les erreurs non critiques pendant la conversion. |
+| OutputBlankPageWhenNothingToPrint | Boolean           | true     | false            |                   | Génère une page vide s’il n’y a rien à rendre.          |
+| PageIndex                         | Integer           | true     | false            |                   | Index de la première page à exporter.                   |
+| PageCount                         | Integer           | true     | false            |                   | Nombre de pages à exporter.                             |
+| PrintingPageType                  | String            | true     | false            |                   | Spécifie le type de page pour l’impression.             |
+| GridlineType                      | String            | true     | false            |                   | Détermine le rendu des traits de grille.                |
+| TextCrossType                     | String            | true     | false            |                   | Définit le type de croisement pour le rendu du texte.   |
+| DefaultEditLanguage               | String            | true     | false            |                   | Langue par défaut pour l’édition de texte.              |
+| EmfRenderSetting                  | String            | true     | false            |                   | Paramètres de rendu EMF.                                |
+| MergeAreas                        | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.           |
+| SortExternalNames                 | Boolean           | true     | false            |                   | Trie les références nommées externes.                   |
+| UpdateSmartArt                    | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version. |
+| SaveFormat                        | String            | true     | false            |                   | Identifiant de format pour les fichiers DOCX.           |
+| CachedFileFolder                  | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                         | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.      |
+| CreateDirectory                   | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.                |
+| EnableHttpCompression             | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.             |
+| RefreshChartCache                 | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                         | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.         |
+| ValidateMergedAreas               | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.            |
+| CheckExcelRestriction             | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| EncryptDocumentProperties          | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Type de citation|Chaîne|vrai| FAUX|||
-|Séparateur|Chaîne|vrai| FAUX|||
-|Chaîne de séparation|Chaîne|vrai| FAUX|||
-|Toujours cité|Booléen|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+## Propriétés de HtmlSaveOptions
 
-## **Propriétés XlsSaveOptions et XlsbSaveOptions**
+| Nom de la propriété             | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                           |
+| ------------------------------- | ----------------- | -------- | ---------------- | ----------------- | ----------------------------------------------------- |
+| ExportPageHeaders               | Boolean           | true     | false            |                   | Inclut les en‑têtes de page dans la sortie HTML.      |
+| ExportPageFooters               | Boolean           | true     | false            |                   | Inclut les pieds de page dans la sortie HTML.         |
+| ExportRowColumnHeadings         | Boolean           | true     | false            |                   | Exporte les en‑têtes de lignes et de colonnes.        |
+| ShowAllSheets                   | Boolean           | true     | false            |                   | Affiche toutes les feuilles de calcul dans un seul fichier HTML. |
+| ImageOptions                    | Class             | true     | false            |                   | Paramètres contrôlant le rendu des images.            |
+| SaveAsSingleFile                | Boolean           | true     | false            |                   | Sauvegarde l’ensemble du classeur dans un seul fichier HTML. |
+| ExportHiddenWorksheet           | Boolean           | true     | false            |                   | Inclut les feuilles de calcul masquées dans l’export. |
+| ExportGridLines                 | Boolean           | true     | false            |                   | Rend les traits de grille dans la sortie HTML.        |
+| PresentationPreference          | Boolean           | true     | false            |                   | Optimise le HTML pour le mode présentation.           |
+| CellCssPrefix                   | String            | true     | false            |                   | Préfixe ajouté aux noms de classes CSS générées pour les cellules. |
+| TableCssId                      | String            | true     | false            |                   | Attribut ID pour le tableau HTML généré.              |
+| IsFullPathLink                  | Boolean           | true     | false            |                   | Génère des liens hypertexte avec chemin complet pour les ressources. |
+| ExportWorksheetCSSSeparately    | Boolean           | true     | false            |                   | Place le CSS de chaque feuille dans un fichier séparé. |
+| ExportSimilarBorderStyle        | Boolean           | true     | false            |                   | Fusionne les styles de bordure similaires pour réduire la taille du CSS. |
+| MergeEmptyTdForcely             | Boolean           | true     | false            |                   | Force la fusion des éléments `<td>` vides.             |
+| ExportCellCoordinate            | Boolean           | true     | false            |                   | Inclut les coordonnées des cellules (par exemple, A1) dans le HTML. |
+| ExportExtraHeadings             | Boolean           | true     | false            |                   | Ajoute des lignes/colonnes d’en‑tête supplémentaires si nécessaire. |
+| ExportHeadings                  | Boolean           | true     | false            |                   | Exporte les en‑têtes de lignes et de colonnes.         |
+| ExportFormula                   | Boolean           | true     | false            |                   | Affiche les formules au lieu des valeurs calculées.    |
+| AddTooltipText                  | Boolean           | true     | false            |                   | Ajoute des info‑bulles contenant les commentaires des cellules. |
+| ExportBogusRowData              | Boolean           | true     | false            |                   | Inclut des lignes de remplacement pour les données vides. |
+| ExcludeUnusedStyles             | Boolean           | true     | false            |                   | Supprime les styles CSS inutilisés.                    |
+| ExportDocumentProperties        | Boolean           | true     | false            |                   | Écrit les propriétés au niveau du document dans les balises méta HTML. |
+| ExportWorksheetProperties       | Boolean           | true     | false            |                   | Écrit les propriétés au niveau de la feuille dans le HTML. |
+| ExportWorkbookProperties        | Boolean           | true     | false            |                   | Écrit les propriétés au niveau du classeur dans le HTML. |
+| ExportFrameScriptsAndProperties | Boolean           | true     | false            |                   | Inclut les scripts et propriétés pour les cadres.      |
+| AttachedFilesDirectory          | String            | true     | false            |                   | Chemin du dossier pour les fichiers joints.            |
+| AttachedFilesUrlPrefix          | String            | true     | false            |                   | Préfixe d’URL pour les fichiers joints.                |
+| Encoding                        | String            | true     | false            |                   | Encodage des caractères pour le fichier HTML.          |
+| ExportActiveWorksheetOnly       | Boolean           | true     | false            |                   | Exporte uniquement la feuille de calcul active.        |
+| ExportChartImageFormat          | String            | true     | false            |                   | Format d’image utilisé pour les graphiques intégrés.   |
+| ExportImagesAsBase64            | Boolean           | true     | false            |                   | Encode les images en tant que chaînes Base64.          |
+| HiddenColDisplayType            | String            | true     | false            |                   | Mode d’affichage des colonnes masquées.                |
+| HiddenRowDisplayType            | String            | true     | false            |                   | Mode d’affichage des lignes masquées.                  |
+| HtmlCrossStringType             | String            | true     | false            |                   | Détermine le rendu des données inter‑chaînes.          |
+| IsExpImageToTempDir             | Boolean           | true     | false            |                   | Exporte les images vers un dossier temporaire.         |
+| PageTitle                       | String            | true     | false            |                   | Titre utilisé pour la page HTML générée.               |
+| ParseHtmlTagInCell              | Boolean           | true     | false            |                   | Analyse les balises HTML présentes dans les valeurs de cellule. |
+| CellNameAttribute               | String            | true     | false            |                   | Nom de l’attribut contenant la référence de la cellule. |
+| SaveFormat                      | String            | true     | false            |                   | Identifiant de format pour les fichiers HTML.          |
+| CachedFileFolder                | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                       | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.     |
+| CreateDirectory                 | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.               |
+| EnableHttpCompression           | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.            |
+| RefreshChartCache               | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                       | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.        |
+| ValidateMergedAreas             | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.           |
+| MergeAreas                      | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.          |
+| SortExternalNames               | Boolean           | true     | false            |                   | Trie les références nommées externes.                   |
+| CheckExcelRestriction           | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| UpdateSmartArt                  | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version. |
+| EncryptDocumentProperties       | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Correspondance des couleurs|Booléen|vrai| FAUX|||
-|Compatibilité Wps|Booléen|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+## Propriétés de ImageSaveOptions
 
-## **Propriétés XmlSaveOptions**
+| Nom de la propriété       | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                          |
+| ------------------------- | ----------------- | -------- | ---------------- | ----------------- | ---------------------------------------------------- |
+| ChartImageType            | String            | true     | false            |                   | Format d’image utilisé pour le rendu des graphiques. |
+| EmbeddedImageNameInSvg    | String            | true     | false            |                   | Nom attribué aux images intégrées dans la sortie SVG. |
+| HorizontalResolution      | Integer           | true     | false            |                   | Résolution horizontale (DPI) de l’image exportée.   |
+| ImageFormat               | String            | true     | false            |                   | Format d’image cible (PNG, JPG, etc.).              |
+| IsCellAutoFit             | Boolean           | true     | false            |                   | Ajuste automatiquement le contenu des cellules à la taille de l’image. |
+| OnePagePerSheet           | Boolean           | true     | false            |                   | Rend chaque feuille de calcul sur une page séparée. |
+| OnlyArea                  | Boolean           | true     | false            |                   | Exporte uniquement la zone définie de la feuille de calcul. |
+| PrintingPage              | String            | true     | false            |                   | Mise en page utilisée pour l’impression.            |
+| PrintWithStatusDialog     | Boolean           | true     | false            |                   | Affiche une boîte de dialogue d’état pendant l’impression. |
+| Quality                   | Integer           | true     | false            |                   | Qualité de compression pour les images JPEG (0‑100). |
+| TiffCompression           | String            | true     | false            |                   | Type de compression pour les images TIFF.           |
+| VerticalResolution        | Integer           | true     | false            |                   | Résolution verticale (DPI) de l’image exportée.     |
+| SaveFormat                | String            | true     | false            |                   | Identifiant de format pour les fichiers image.      |
+| CachedFileFolder          | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                 | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.   |
+| CreateDirectory           | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.             |
+| EnableHttpCompression     | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.          |
+| RefreshChartCache         | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                 | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.      |
+| ValidateMergedAreas       | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.         |
+| MergeAreas                | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.        |
+| SortExternalNames         | Boolean           | true     | false            |                   | Trie les références nommées externes.                 |
+| CheckExcelRestriction     | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| UpdateSmartArt            | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version. |
+| EncryptDocumentProperties | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Index des feuilles|Tableau|vrai| FAUX|||
-|Zone d'exportation|Classe|vrai| FAUX|||
-|A une ligne d'en-tête|Booléen|vrai| FAUX|||
-|Nom de la carte Xml|Chaîne|vrai| FAUX|||
-|Nom de la feuille comme nom d'élément|Booléen|vrai| FAUX|||
-|Données comme attribut|Booléen|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+## Propriétés de JsonSaveOptions
 
-## **Propriétés XpsSaveOptions**
+| Nom de la propriété       | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                               |
+| ------------------------- | ----------------- | -------- | ---------------- | ----------------- | --------------------------------------------------------- |
+| ExportArea                | Class             | true     | false            |                   | Définit la zone de feuille de calcul à exporter.          |
+| HasHeaderRow              | Boolean           | true     | false            |                   | Indique si la première ligne contient des en‑têtes de colonne. |
+| ExportAsString            | Boolean           | true     | false            |                   | Exporte toutes les valeurs sous forme de chaînes.         |
+| Indent                    | String            | true     | false            |                   | Chaîne utilisée pour l’indentation (par exemple, deux espaces). |
+| SaveFormat                | String            | true     | false            |                   | Identifiant de format pour les fichiers JSON.             |
+| CachedFileFolder          | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                 | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.        |
+| CreateDirectory           | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.                  |
+| EnableHttpCompression     | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.               |
+| RefreshChartCache         | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                 | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.           |
+| ValidateMergedAreas       | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.              |
+| MergeAreas                | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.             |
+| SortExternalNames         | Boolean           | true     | false            |                   | Trie les références nommées externes.                     |
+| CheckExcelRestriction     | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| UpdateSmartArt            | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version.  |
+| EncryptDocumentProperties | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
 
-| Nom de la propriété| Type de propriété| Nullable| Lecture seule| Valeur par défaut| Description|
-|:- |:- |:- |:- |:- |:- |
-|Police par défaut|Chaîne|vrai| FAUX|||
-|Vérifier la police par défaut du classeur|Booléen|vrai| FAUX|||
-|Vérifier la compatibilité des polices|Booléen|vrai| FAUX|||
-|Granularité de IsFontSubstitutionChar|Booléen|vrai| FAUX|||
-|Une page par feuille|Booléen|vrai| FAUX|||
-|Toutes les colonnes sur une page par feuille|Booléen|vrai| FAUX|||
-|Ignorer l'erreur|Booléen|vrai| FAUX|||
-|Sortie d'une page vierge lorsqu'il n'y a rien à imprimer|Booléen|vrai| FAUX|||
-|Index des pages|Entier|vrai| FAUX|||
-|Nombre de pages|Entier|vrai| FAUX|||
-|Type de page d'impression|Chaîne|vrai| FAUX|||
-|Type de ligne de grille|Chaîne|vrai| FAUX|||
-|TexteCrossType|Chaîne|vrai| FAUX|||
-|Langue d'édition par défaut|Chaîne|vrai| FAUX|||
-|Paramètre EmfRender|Chaîne|vrai| FAUX|||
-|Fusionner les zones|Booléen|vrai| FAUX|||
-|Trier les noms externes|Booléen|vrai| FAUX|||
-|Mettre à jourSmartArt|Booléen|vrai| FAUX|||
-|Enregistrer le format|Chaîne|vrai| FAUX|||
-|Dossier de fichiers mis en cache|Chaîne|vrai| FAUX|||
-|ClearData|Booléen|vrai| FAUX|||
-|Créer un répertoire|Booléen|vrai| FAUX|||
-|Activer la compression HTTP|Booléen|vrai| FAUX|||
-|Actualiser le cache du graphique|Booléen|vrai| FAUX|||
-|Trier les noms|Booléen|vrai| FAUX|||
-|Valider les zones fusionnées|Booléen|vrai| FAUX|||
-|VérifierExcelRestriction|Booléen|vrai| FAUX|||
-|Crypter les propriétés du document|Booléen|vrai| FAUX|||
+## Propriétés de MarkdownSaveOptions
+
+| Nom de la propriété       | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                                     |
+| ------------------------- | ----------------- | -------- | ---------------- | ----------------- | --------------------------------------------------------------- |
+| Encoding                  | String            | true     | false            |                   | Encodage des caractères pour le fichier markdown.               |
+| FormatStrategy            | String            | true     | false            |                   | Stratégie utilisée pour formater le markdown (par exemple, GitHub, CommonMark). |
+| LineSeparator             | String            | true     | false            |                   | Caractère(s) de saut de ligne à utiliser.                       |
+| SaveFormat                | String            | true     | false            |                   | Identifiant de format pour les fichiers markdown.               |
+| CachedFileFolder          | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache.     |
+| ClearData                 | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.              |
+| CreateDirectory           | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.                        |
+| EnableHttpCompression     | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.                     |
+| RefreshChartCache         | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                 | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.                 |
+| ValidateMergedAreas       | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.                    |
+| MergeAreas                | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.                   |
+| SortExternalNames         | Boolean           | true     | false            |                   | Trie les références nommées externes.                           |
+| CheckExcelRestriction     | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| UpdateSmartArt            | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version.        |
+| EncryptDocumentProperties | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie.   |
+
+## Propriétés de OoxmlSaveOptions
+
+| Nom de la propriété       | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                          |
+| ------------------------- | ----------------- | -------- | ---------------- | ----------------- | ---------------------------------------------------- |
+| ExportCellName            | Boolean           | true     | false            |                   | Inclut les noms de cellule dans le fichier exporté.  |
+| UpdateZoom                | Boolean           | true     | false            |                   | Met à jour le niveau de zoom dans le document de sortie. |
+| EnableZip64               | Boolean           | true     | false            |                   | Active les extensions ZIP64 pour les fichiers volumineux. |
+| EmbedOoxmlAsOleObject     | Boolean           | true     | false            |                   | Intègre l’OOXML en tant qu’objet OLE.                |
+| CompressionType           | String            | true     | false            |                   | Type de compression appliquée (par exemple, Normal, Maximum). |
+| SaveFormat                | String            | true     | false            |                   | Identifiant de format pour les fichiers OOXML.       |
+| CachedFileFolder          | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                 | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.   |
+| CreateDirectory           | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.             |
+| EnableHttpCompression     | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.          |
+| RefreshChartCache         | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                 | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.      |
+| ValidateMergedAreas       | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.         |
+| MergeAreas                | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.        |
+| SortExternalNames         | Boolean           | true     | false            |                   | Trie les références nommées externes.                 |
+| CheckExcelRestriction     | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| UpdateSmartArt            | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version. |
+| EncryptDocumentProperties | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
+
+## Propriétés de PclSaveOptions
+
+| Nom de la propriété       | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                          |
+| ------------------------- | ----------------- | -------- | ---------------- | ----------------- | ---------------------------------------------------- |
+| fontFullName              | String            | true     | false            |                   | Nom complet de la police à utiliser.                |
+| fontPclName               | String            | true     | false            |                   | Nom de police spécifique PCL.                       |
+| SaveFormat                | String            | true     | false            |                   | Identifiant de format pour les fichiers PCL.         |
+| CachedFileFolder          | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                 | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.   |
+| CreateDirectory           | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.             |
+| EnableHttpCompression     | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.          |
+| RefreshChartCache         | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                 | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.      |
+| ValidateMergedAreas       | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.         |
+| MergeAreas                | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.        |
+| SortExternalNames         | Boolean           | true     | false            |                   | Trie les références nommées externes.                 |
+| CheckExcelRestriction     | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| UpdateSmartArt            | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version. |
+| EncryptDocumentProperties | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
+
+## Propriétés de PDFSaveOptions
+
+| Nom de la propriété       | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                            |
+| ------------------------- | ----------------- | -------- | ---------------- | ----------------- | ------------------------------------------------------ |
+| DisplayDocTitle           | Boolean           | true     | false            |                   | Utilise le titre du document comme titre PDF.          |
+| ExportDocumentStructure   | Boolean           | true     | false            |                   | Préserve la structure logique du document.             |
+| EmfRenderSetting          | String            | true     | false            |                   | Paramètres de rendu des images EMF.                    |
+| CustomPropertiesExport    | String            | true     | false            |                   | Contrôle l’export des propriétés personnalisées du document. |
+| OptimizationType          | String            | true     | false            |                   | Type d’optimisation PDF (par exemple, Size, Speed).    |
+| Producer                  | String            | true     | false            |                   | Nom de l’application productrice du PDF.               |
+| PDFCompression            | String            | true     | false            |                   | Algorithme de compression pour les flux PDF.           |
+| FontEncoding              | String            | true     | false            |                   | Encodage utilisé pour les polices intégrées.           |
+| Watermark                 | Class             | true     | false            |                   | Paramètres de filigrane appliqués au PDF.              |
+| CalculateFormula          | Boolean           | true     | false            |                   | Calcule les formules avant l’export.                   |
+| CheckFontCompatibility    | Boolean           | true     | false            |                   | Valide la compatibilité des polices pour le rendu PDF. |
+| Compliance                | String            | true     | false            |                   | Niveau de conformité PDF/A ou PDF/X.                   |
+| DefaultFont               | String            | true     | false            |                   | Police utilisée lorsqu’une police source n’est pas disponible. |
+| OnePagePerSheet           | Boolean           | true     | false            |                   | Place chaque feuille de calcul sur une page PDF séparée. |
+| PrintingPageType          | String            | true     | false            |                   | Spécifie le type de page pour l’impression.            |
+| SecurityOptions           | Class             | true     | false            |                   | Paramètres de sécurité tels que mots de passe et autorisations. |
+| desiredPPI                | Integer           | true     | false            |                   | Résolution souhaitée en pixels par pouce (PPI).        |
+| jpegQuality               | Integer           | true     | false            |                   | Qualité d’image JPEG (0‑100).                          |
+| ImageType                 | String            | true     | false            |                   | Type d’image utilisé pour la rasterisation.            |
+| SaveFormat                | String            | true     | false            |                   | Identifiant de format pour les fichiers PDF.           |
+| CachedFileFolder          | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                 | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.     |
+| CreateDirectory           | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.               |
+| EnableHttpCompression     | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.            |
+| RefreshChartCache         | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                 | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.        |
+| ValidateMergedAreas       | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.           |
+| MergeAreas                | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.          |
+| SortExternalNames         | Boolean           | true     | false            |                   | Trie les références nommées externes.                   |
+| CheckExcelRestriction     | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| UpdateSmartArt            | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version. |
+| EncryptDocumentProperties | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
+
+## Propriétés de PptxSaveOptions
+
+| Nom de la propriété               | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                             |
+| --------------------------------- | ----------------- | -------- | ---------------- | ----------------- | ------------------------------------------------------- |
+| IgnoreHiddenRows                  | Boolean           | true     | false            |                   | Ignore les lignes masquées pendant l’export.            |
+| AdjustFontSizeForRowType          | String            | true     | false            |                   | Contrôle l’ajustement de la taille de police selon le type de ligne. |
+| ExportViewType                    | String            | true     | false            |                   | Détermine la vue à exporter (diapositive, notes).       |
+| DefaultFont                       | String            | true     | false            |                   | Police utilisée lorsqu’une police source n’est pas disponible. |
+| CheckWorkbookDefaultFont          | Boolean           | true     | false            |                   | Vérifie si la police par défaut du classeur est appliquée. |
+| CheckFontCompatibility            | Boolean           | true     | false            |                   | Valide la compatibilité des polices pour le format cible. |
+| IsFontSubstitutionCharGranularity | Boolean           | true     | false            |                   | Contrôle la substitution de police au niveau des caractères. |
+| OnePagePerSheet                   | Boolean           | true     | false            |                   | Place chaque feuille de calcul sur une diapositive séparée. |
+| AllColumnsInOnePagePerSheet       | Boolean           | true     | false            |                   | Adapte toutes les colonnes d’une feuille sur une seule diapositive. |
+| IgnoreError                       | Boolean           | true     | false            |                   | Ignore les erreurs non critiques pendant la conversion. |
+| OutputBlankPageWhenNothingToPrint | Boolean           | true     | false            |                   | Génère une diapositive vide s’il n’y a rien à rendre.    |
+| PageIndex                         | Integer           | true     | false            |                   | Index de la première diapositive à exporter.            |
+| PageCount                         | Integer           | true     | false            |                   | Nombre de diapositives à exporter.                      |
+| PrintingPageType                  | String            | true     | false            |                   | Spécifie le type de page pour l’impression.              |
+| GridlineType                      | String            | true     | false            |                   | Détermine le rendu des traits de grille.                 |
+| TextCrossType                     | String            | true     | false            |                   | Définit le type de croisement pour le rendu du texte.    |
+| DefaultEditLanguage               | String            | true     | false            |                   | Langue par défaut pour l’édition de texte.               |
+| EmfRenderSetting                  | String            | true     | false            |                   | Paramètres de rendu EMF.                                 |
+| MergeAreas                        | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.            |
+| SortExternalNames                 | Boolean           | true     | false            |                   | Trie les références nommées externes.                    |
+| UpdateSmartArt                    | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version. |
+| SaveFormat                        | String            | true     | false            |                   | Identifiant de format pour les fichiers PPTX.            |
+| CachedFileFolder                  | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                         | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.       |
+| CreateDirectory                   | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.                 |
+| EnableHttpCompression             | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.              |
+| RefreshChartCache                 | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                         | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.          |
+| ValidateMergedAreas               | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.             |
+| CheckExcelRestriction             | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| EncryptDocumentProperties         | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
+
+## Propriétés de SqlScriptSaveOptions
+
+| Nom de la propriété       | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                               |
+| ------------------------- | ----------------- | -------- | ---------------- | ----------------- | --------------------------------------------------------- |
+| CheckIfTableExists        | Boolean           | true     | false            |                   | Vérifie si la table cible existe déjà.                    |
+| ColumnTypeMap             | String            | true     | false            |                   | Mappage des noms de colonnes vers les types de données SQL. |
+| CheckAllDataForColumnType | Boolean           | true     | false            |                   | Analyse toutes les lignes pour déduire les types de colonnes. |
+| AddBlankLineBetweenRows   | Boolean           | true     | false            |                   | Insère une ligne vide entre les lignes générées.          |
+| Separator                 | String            | true     | false            |                   | Chaîne utilisée pour séparer les colonnes (par exemple, virgule, tabulation). |
+| OperatorType              | String            | true     | false            |                   | Opérateur SQL utilisé (INSERT, UPDATE, etc.).             |
+| PrimaryKey                | Integer           | true     | false            |                   | Index de colonne servant de clé primaire.                 |
+| CreateTable               | Boolean           | true     | false            |                   | Génère une instruction CREATE TABLE.                      |
+| IdName                    | String            | true     | false            |                   | Nom de la colonne d’identifiant.                          |
+| StartId                   | Integer           | true     | false            |                   | Valeur initiale pour les identifiants auto‑incrémentés.   |
+| TableName                 | String            | true     | false            |                   | Nom de la table de base de données cible.                 |
+| ExportAsString            | Boolean           | true     | false            |                   | Exporte toutes les valeurs sous forme de chaînes.         |
+| ExportArea                | Class             | true     | false            |                   | Définit la zone de feuille de calcul à exporter.          |
+| HasHeaderRow              | Boolean           | true     | false            |                   | Indique si la première ligne contient des en‑têtes de colonne. |
+| SaveFormat                | String            | true     | false            |                   | Identifiant de format pour les fichiers de script SQL.   |
+| CachedFileFolder          | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                 | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.        |
+| CreateDirectory           | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.                  |
+| EnableHttpCompression     | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.               |
+| RefreshChartCache         | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                 | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.           |
+| ValidateMergedAreas       | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.              |
+| MergeAreas                | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.             |
+| SortExternalNames         | Boolean           | true     | false            |                   | Trie les références nommées externes.                     |
+| CheckExcelRestriction     | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| UpdateSmartArt            | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version.  |
+| EncryptDocumentProperties | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
+
+## Propriétés de SvgSaveOptions
+
+| Nom de la propriété       | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                          |
+| ------------------------- | ----------------- | -------- | ---------------- | ----------------- | ---------------------------------------------------- |
+| SheetIndex                | Integer           | true     | false            |                   | Index de la feuille de calcul à exporter.           |
+| ChartImageType            | String            | true     | false            |                   | Format d’image utilisé pour le rendu des graphiques. |
+| EmbeddedImageNameInSvg    | String            | true     | false            |                   | Nom attribué aux images intégrées dans la sortie SVG. |
+| HorizontalResolution      | Integer           | true     | false            |                   | Résolution horizontale (DPI) du SVG exporté.        |
+| ImageFormat               | String            | true     | false            |                   | Format d’image cible pour les éléments rasterisés.  |
+| IsCellAutoFit             | Boolean           | true     | false            |                   | Ajuste automatiquement le contenu des cellules à la taille du SVG. |
+| OnePagePerSheet           | Boolean           | true     | false            |                   | Rend chaque feuille de calcul sur une page SVG séparée. |
+| OnlyArea                  | Boolean           | true     | false            |                   | Exporte uniquement la zone définie de la feuille de calcul. |
+| PrintingPage              | String            | true     | false            |                   | Mise en page utilisée pour l’impression.            |
+| PrintWithStatusDialog     | Boolean           | true     | false            |                   | Affiche une boîte de dialogue d’état pendant l’impression. |
+| Quality                   | Integer           | true     | false            |                   | Qualité de compression pour les images rasterisées. |
+| TiffCompression           | String            | true     | false            |                   | Type de compression pour les images TIFF intégrées dans le SVG. |
+| VerticalResolution        | Integer           | true     | false            |                   | Résolution verticale (DPI) du SVG exporté.          |
+| SaveFormat                | String            | true     | false            |                   | Identifiant de format pour les fichiers SVG.         |
+| CachedFileFolder          | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                 | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.   |
+| CreateDirectory           | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.             |
+| EnableHttpCompression     | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.          |
+| RefreshChartCache         | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                 | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.      |
+| ValidateMergedAreas       | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.         |
+| MergeAreas                | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.        |
+| SortExternalNames         | Boolean           | true     | false            |                   | Trie les références nommées externes.                 |
+| CheckExcelRestriction     | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| UpdateSmartArt            | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version. |
+| EncryptDocumentProperties | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
+
+## Propriétés de TxtSaveOptions
+
+| Nom de la propriété       | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                                              |
+| ------------------------- | ----------------- | -------- | ---------------- | ----------------- | ------------------------------------------------------------------------ |
+| QuoteType                 | String            | true     | false            |                   | Type de guillemet utilisé (par exemple, double, simple).                |
+| Separator                 | String            | true     | false            |                   | Caractère séparateur de colonnes (par exemple, virgule, tabulation).     |
+| SeparatorString           | String            | true     | false            |                   | Chaîne complète utilisée comme séparateur si plusieurs caractères sont nécessaires. |
+| AlwaysQuoted              | Boolean           | true     | false            |                   | Force tous les champs à être mis entre guillemets.                      |
+| SaveFormat                | String            | true     | false            |                   | Identifiant de format pour les fichiers TXT.                            |
+| CachedFileFolder          | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache.             |
+| ClearData                 | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.                      |
+| CreateDirectory           | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.                                |
+| EnableHttpCompression     | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.                             |
+| RefreshChartCache         | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                 | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.                         |
+| ValidateMergedAreas       | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.                            |
+| MergeAreas                | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.                           |
+| SortExternalNames         | Boolean           | true     | false            |                   | Trie les références nommées externes.                                    |
+| CheckExcelRestriction     | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion.         |
+| UpdateSmartArt            | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version.                |
+| EncryptDocumentProperties | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie.           |
+
+## Propriétés de XlsSaveOptions & XlsbSaveOptions
+
+| Nom de la propriété       | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                          |
+| ------------------------- | ----------------- | -------- | ---------------- | ----------------- | ---------------------------------------------------- |
+| MatchColor                | Boolean           | true     | false            |                   | Préserve les couleurs exactes des cellules pendant l’export. |
+| WpsCompatibility          | Boolean           | true     | false            |                   | Active la compatibilité avec WPS Office.            |
+| SaveFormat                | String            | true     | false            |                   | Identifiant de format pour les fichiers XLS/XLSB.    |
+| CachedFileFolder          | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                 | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.   |
+| CreateDirectory           | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.             |
+| EnableHttpCompression     | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.          |
+| RefreshChartCache         | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                 | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.      |
+| ValidateMergedAreas       | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.         |
+| MergeAreas                | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.        |
+| SortExternalNames         | Boolean           | true     | false            |                   | Trie les références nommées externes.                 |
+| CheckExcelRestriction     | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| UpdateSmartArt            | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version. |
+| EncryptDocumentProperties | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
+
+## Propriétés de XmlSaveOptions
+
+| Nom de la propriété       | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                               |
+| ------------------------- | ----------------- | -------- | ---------------- | ----------------- | --------------------------------------------------------- |
+| SheetIndexes              | Array             | true     | false            |                   | Liste des index de feuilles de calcul à inclure dans l’export. |
+| ExportArea                | Class             | true     | false            |                   | Définit la zone de feuille de calcul à exporter.          |
+| HasHeaderRow              | Boolean           | true     | false            |                   | Indique si la première ligne contient des en‑têtes de colonne. |
+| XmlMapName                | String            | true     | false            |                   | Nom de la carte XML appliquée à la feuille de calcul.     |
+| SheetNameAsElementName    | Boolean           | true     | false            |                   | Utilise le nom de la feuille comme nom d’élément XML.      |
+| DataAsAttribute           | Boolean           | true     | false            |                   | Exporte les données de cellule en tant qu’attributs XML au lieu d’éléments. |
+| SaveFormat                | String            | true     | false            |                   | Identifiant de format pour les fichiers XML.              |
+| CachedFileFolder          | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                 | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.        |
+| CreateDirectory           | String            | true     | false            |                   | Crée le dossier cible s’il n’existe pas.                  |
+| EnableHttpCompression     | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.               |
+| RefreshChartCache         | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                 | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.           |
+| ValidateMergedAreas       | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.              |
+| MergeAreas                | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.             |
+| SortExternalNames         | Boolean           | true     | false            |                   | Trie les références nommées externes.                     |
+| CheckExcelRestriction     | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| UpdateSmartArt            | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version.  |
+| EncryptDocumentProperties | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
+
+## Propriétés de XpsSaveOptions
+
+| Nom de la propriété               | Type de propriété | Nullable | En lecture seule | Valeur par défaut | Description                                             |
+| --------------------------------- | ----------------- | -------- | ---------------- | ----------------- | ------------------------------------------------------- |
+| DefaultFont                       | String            | true     | false            |                   | Police utilisée lorsqu’une police source n’est pas disponible. |
+| CheckWorkbookDefaultFont          | Boolean           | true     | false            |                   | Vérifie si la police par défaut du classeur est appliquée. |
+| CheckFontCompatibility            | Boolean           | true     | false            |                   | Valide la compatibilité des polices pour le format cible. |
+| IsFontSubstitutionCharGranularity | Boolean           | true     | false            |                   | Contrôle la substitution de police au niveau des caractères. |
+| OnePagePerSheet                   | Boolean           | true     | false            |                   | Place chaque feuille de calcul sur une page XPS séparée. |
+| AllColumnsInOnePagePerSheet       | Boolean           | true     | false            |                   | Adapte toutes les colonnes d’une feuille sur une seule page. |
+| IgnoreError                       | Boolean           | true     | false            |                   | Ignore les erreurs non critiques pendant la conversion. |
+| OutputBlankPageWhenNothingToPrint | Boolean           | true     | false            |                   | Génère une page vide s’il n’y a rien à rendre.           |
+| PageIndex                         | Integer           | true     | false            |                   | Index de la première page à exporter.                    |
+| PageCount                         | Integer           | true     | false            |                   | Nombre de pages à exporter.                              |
+| PrintingPageType                  | String            | true     | false            |                   | Spécifie le type de page pour l’impression.              |
+| GridlineType                      | String            | true     | false            |                   | Détermine le rendu des traits de grille.                 |
+| TextCrossType                     | String            | true     | false            |                   | Définit le type de croisement pour le rendu du texte.    |
+| DefaultEditLanguage               | String            | true     | false            |                   | Langue par défaut pour l’édition de texte.               |
+| EmfRenderSetting                  | String            | true     | false            |                   | Paramètres de rendu EMF.                                 |
+| MergeAreas                        | Boolean           | true     | false            |                   | Fusionne les cellules adjacentes si possible.            |
+| SortExternalNames                 | Boolean           | true     | false            |                   | Trie les références nommées externes.                    |
+| UpdateSmartArt                    | Boolean           | true     | false            |                   | Met à jour les objets SmartArt vers la dernière version. |
+| SaveFormat                        | String            | true     | false            |                   | Identifiant de format pour les fichiers XPS.             |
+| CachedFileFolder                  | String            | true     | false            |                   | Dossier utilisé pour les fichiers temporaires mis en cache. |
+| ClearData                         | Boolean           | true     | false            |                   | Efface les données existantes avant la sauvegarde.       |
+| CreateDirectory                   | Boolean           | true     | false            |                   | Crée le dossier cible s’il n’existe pas.                 |
+| EnableHttpCompression             | Boolean           | true     | false            |                   | Active la compression HTTP pour la réponse.              |
+| RefreshChartCache                 | Boolean           | true     | false            |                   | Actualise les données mises en cache des graphiques avant la sauvegarde. |
+| SortNames                         | Boolean           | true     | false            |                   | Trie les plages nommées par ordre alphabétique.          |
+| ValidateMergedAreas               | Boolean           | true     | false            |                   | Valide la cohérence des cellules fusionnées.             |
+| CheckExcelRestriction             | Boolean           | true     | false            |                   | Applique les limites spécifiques à Excel pendant la conversion. |
+| EncryptDocumentProperties         | Boolean           | true     | false            |                   | Chiffre les propriétés du document dans le fichier de sortie. |
+---

@@ -1,75 +1,87 @@
-﻿---
-title: Copier le fichier - Excel AP
-second_title: Documen
-linktitle: Copier le fichier
-type: docs
-url: /fr/copy-file/
-keywords: Excel API, Office Cloud, REST API, Spreadsheet Copy, PDF Conversion, CSV Export, JSON Handling, Markdown Support, Copy Excel File, Match Blank Cell
-description: Apprenez à utiliser CopyFile API pour Excel pour dupliquer efficacement des feuilles de calcul et gérer différents formats de fichiers
-weight: 100
-kwords: Excel API, Office Cloud, REST API, Copie de feuille de calcul, PDF Conversion, Export CSV, Gestion JSON, Prise en charge Markdown, Copie de fichier Excel, Correspondance de cellule vide
 ---
-## **Excel API : Copier le fichier**
+title: "API de copie de fichiers Aspose.Cells Cloud – Une interface pour la copie rapide et les opérations en lot de fichiers Excel dans le cloud"
+second_title: "Document"
+articleTitle: "Solution de gestion de fichiers Excel en cloud – Explication détaillée de la fonctionnalité de copie en lot de l’API Aspose.Cells Copy File"
+linktype: "docs"
+url: "/copy-file/"
+keywords: "Aspose.Cells, API CopyFile, copie de fichier Excel, stockage cloud, API REST"
+description: "Découvrez comment utiliser l’API CopyFile d’Aspose.Cells Cloud pour dupliquer efficacement des fichiers Excel et les gérer entre différents emplacements de stockage."
+weight: 100
+---
+
+L’**API copyFile** permet aux utilisateurs de dupliquer un fichier Excel depuis un chemin source vers un chemin de destination, en prenant en charge diverses options de stockage.
+
+## **API Excel : Copie de fichier**
+
+### API Web
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
+```
+
+### **Sécurité et authentification**
+
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
+
+### Paramètres de la requête de l’API **copyFile**
+
+| Nom du paramètre | Type   | Emplacement (Chemin / Chaîne de requête / Corps HTTP) | Description                                                    |
+| ---------------- | ------ | ----------------------------------------------------- | -------------------------------------------------------------- |
+| srcPath          | String | Chemin                                                | Le chemin source du fichier à copier.                          |
+| destPath         | String | Chaîne de requête                                     | Le chemin de destination où le fichier sera enregistré.       |
+| srcStorageName   | String | Chaîne de requête                                     | Le nom du stockage source.                                     |
+| destStorageName  | String | Chaîne de requête                                     | Le nom du stockage de destination.                             |
+| versionId        | String | Chaîne de requête                                     | ID de version facultatif du fichier à copier.                  |
+
+### **Réponse**
+
+L’opération ne renvoie aucun contenu en cas de succès. Les codes d’état HTTP typiques sont les suivants :
+
+**Codes d’état HTTP**
+
+| Code | Signification         | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Mauvaise requête      | Paramètres manquants ou non valides (par ex., type de fichier non pris en charge). |
+| 401  | Non autorisé          | Jeton JWT non valide ou manquant.                                |
+| 413  | Charge utile trop volumineuse | Le fichier téléchargé dépasse la limite de taille.          |
+| 500  | Erreur interne du serveur | Erreur serveur inattendue.                                    |
+
+## Comment utiliser l’API de copie de fichier avec les SDK ?
+
+### Spécification de l’API de copie de fichier
+
+La [spécification de l’API de copie de fichier](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/File/CopyFile) fournit une interface de programmation accessible publiquement pour réaliser des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/file/copy/MyFolder/Source.xlsx?destPath=MyFolder/Dest.xlsx&srcStorageName=MyStorage&destStorageName=MyStorage" \
+     -H "Authorization: Bearer VOTRE_JETON_D_ACCÈS" \
+     -H "Accept: application/json"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
-```
-
-### **Description de la fonction**
-
- Le**copier le fichier** API permet aux utilisateurs de dupliquer un fichier Excel d'un chemin source spécifié vers un chemin de destination, prenant en charge diverses options de stockage.
-
-###  Les paramètres de la requête de**copier le fichier** API sont
-
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|-------------- ||--------------------- |-------------------------------------- |
-| chemin source| Chaîne| Chemin| Le chemin source du fichier à copier.|
-| chemin de destination| Chaîne| Requête| Le chemin de destination où le fichier sera enregistré.|
-| srcStorageName| Chaîne| Requête| Le nom du stockage source.|
-| destStorageName| Chaîne| Requête| Le nom du stockage de destination.|
-| versionId| Chaîne| Requête| ID de version facultatif du fichier à copier.|
-
-### **Description de la réponse**
-
-```json
 {
-Void
 }
 ```
 
-## Spécification OpenAPI
+{{< /tab >}}
 
- Le[Spécification OpenAPI](https://reference.aspose.cloud/cells/#/FileController/CopyFile) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
-
-## Excel API Kit de développement logiciel
-
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau, vous permettant de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
-
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
-
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_CopyFile.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_CopyFile.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_CopyFile.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_CopyFile.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_CopyFile.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_CopyFile.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_CopyFile.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CopyFile.go" >}}
-{{< /tab >}}
 {{< /tabs >}}
+
+### Utiliser les SDK Aspose.Cells Cloud
+
+L’utilisation d’un SDK constitue la méthode la plus rapide pour développer, car elle masque les détails de bas niveau, vous permettant ainsi de convertir les données de tables de feuilles de calcul en images avec un minimum de code. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants illustrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
+
+---

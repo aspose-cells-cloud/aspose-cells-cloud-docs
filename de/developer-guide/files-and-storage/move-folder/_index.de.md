@@ -1,74 +1,95 @@
-﻿---
-title: Ordner verschieben
-second_title: Documen
-linktitle: Ordner verschieben
+---
+title: "Aspose.Cells Cloud Move Folder API – Ordner schnell in der Cloud verschieben"
+second_title: "Dokument"
+ArticleTitle: "Cloud-basiertes Excel-Dateimanagement – Ordner schnell in der Cloud verschieben"
+linktype: "Move Folder"
 type: docs
 url: /de/move-folder/
-keywords: Move folder API, Excel API, Folder management, REST API, Aspose.Cells, Cloud storag
-description: Diese Dokumentation bietet eine umfassende Anleitung zur Verwendung des Move Folder API zum Verwalten von Ordnern innerhalb des Aspose.Cells Cloud-Speichers
+keywords: "Aspose.Cells, Ordner verschieben, Cloud-Speicher, Excel-API"
+description: "Erfahren Sie, wie Sie Ordner im Aspose.Cells Cloud-Speicher über die REST-basierte Move Folder API verschieben können. Enthält Endpunkt, Parameter, Beispiel-cURL-Aufrufe, Fehlercodes und SDK-Beispiele für C#, Java, Python und mehr."
 weight: 100
-kwords: Excel API, Ordner verschieben API, Office Cloud, REST API, Tabellenkalkulationsverwaltung, PDF, CSV, JSON, Markdown, Alle leeren Zellen in einem Excel Arbeitsblatt abgleichen
 ---
-## **Excel API: Ordner verschieben**
 
+Diese API verschiebt einen Ordner von einem Speicherort zu einem anderen innerhalb des Aspose.Cells Cloud-Speichers. Sie hilft dabei, Dateien zu organisieren und den Cloud-Speicher effizient zu verwalten.
+
+## **Excel-API: Ordner verschieben**
+
+### Web-API
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
 ```
-PUT http://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
+
+**Beispiel-cURL-Anforderung**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/FolderA?destPath=FolderB" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
-### **Funktionsbeschreibung**
+### **Sicherheit und Authentifizierung**
 
-Mit diesem API können Benutzer einen Ordner innerhalb des Aspose.Cells-Cloud-Speichers von einem Ort an einen anderen verschieben. Dies ist für die Organisation von Dateien und die effektive Verwaltung des Cloud-Speichers unerlässlich.
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
-###  Die Anfrageparameter von**Ordner verschieben** API sind
+### Die Anforderungsparameter der **moveFolder** API sind:
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTP-Text| Beschreibung|
-|----------------|--|------------------------|--------------------------------------------------------|
-| Quellpfad| Zeichenfolge| Weg| Der Quellpfad des zu verschiebenden Ordners.|
-| Zielpfad| Zeichenfolge| Abfrage| Der Zielpfad, in den der Ordner verschoben werden soll.|
-| srcStorageName| Zeichenfolge| Abfrage| Der Name des Quellspeichers.|
-| Zielspeichername| Zeichenfolge| Abfrage| Der Name des Zielspeichers.|
+| Parametername     | Typ    | Ort    | Beschreibung                                                             |
+| ----------------- | ------ | ------ | ------------------------------------------------------------------------ |
+| srcPath           | string | Path   | Der vollständige Pfad des zu verschiebenden Ordners, z. B. `FolderA/`.   |
+| destPath          | string | Query  | Der Zielpfad, an den der Ordner verschoben wird, z. B. `FolderB/`.      |
+| srcStorageName    | string | Query  | (Optional) Name des Quellspeichers.                                      |
+| destStorageName   | string | Query  | (Optional) Name des Zielspeichers.                                       |
 
-### **Antwortbeschreibung**
+**Parameterdetails**
 
-```json
-{
-Void
-}
-```
+- **srcPath** – erforderlich. Der Pfad des Quellordners.
+- **destPath** – erforderlich. Der Pfad des Zielordners.
+- **srcStorageName** – optional. Bezeichner des Quellspeichers.
+- **destStorageName** – optional. Bezeichner des Zielspeichers.
+
+### **Antwort**
+
+Im Erfolgsfall gibt die API einen leeren Antworttext mit dem HTTP-Status **200 OK** zurück. Fehler werden als JSON-Objekte mit einem Feld `error` zurückgegeben.
+
+**HTTP-Statuscodes**
+
+| HTTP-Code | HTTP-Status           | Beschreibung                                                           |
+| --------- | --------------------- | ---------------------------------------------------------------------- |
+| 200       | OK                    | Web-API erfolgreich aufgerufen; Antwort enthält Operationsdetails.    |
+| 400       | Bad Request           | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp).|
+| 401       | Unauthorized          | Ungültiges oder fehlendes JWT-Token.                                  |
+| 413       | Payload Too Large     | Die hochgeladene Datei überschreitet die Größenbeschränkung.          |
+| 500       | Internal Server Error | Unerwarteter Serverfehler.                                            |
 
 ## OpenAPI-Spezifikation
 
- Der[OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/FolderController/MoveFolder) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+Die [OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/FolderController/MoveFolder) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
 
-## Excel API SDK
+Sie können das cURL-Befehlszeilentool verwenden, um problemlos auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie mithilfe von cURL Aufrufe an die Cloud-API durchführen.
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+{{< tabs tabTotal="2" tabID="11" tabName11="Anforderung" tabName12="Antwort" >}}
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MoveFolder.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}?destPath={destPath}" \
+     -H "Authorization: Bearer {access_token}"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MoveFolder.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```json
+{}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MoveFolder.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MoveFolder.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MoveFolder.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MoveFolder.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MoveFolder.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MoveFolder.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK übernimmt die Low-Level-Details und lässt Sie sich auf Ihre Projekt Aufgaben konzentrieren. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud).
+
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste mithilfe verschiedener SDKs durchgeführt werden:
+
+---

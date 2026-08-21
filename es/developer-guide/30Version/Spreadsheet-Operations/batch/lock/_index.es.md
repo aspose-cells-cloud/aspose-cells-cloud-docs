@@ -1,76 +1,118 @@
-﻿---
-title: Archivo de bloqueo por lotes Excel
-second_title: Documen
-type: docs
-url: /es/batch/lock
-keywords: Batch lock of multiple Excel files
-description: Aspose.Cells Cloud API admite el bloqueo por lotes de varios archivos de Excel. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 100
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Bloqueo por lotes
 ---
-Este REST API indica `batch lock` de archivos elegibles.
+title: "Bloqueo por lotes de archivos Excel"
+second_title: "Documento"
+type: docs
+url: /batch/lock
+keywords: "bloqueo por lotes, Excel, Aspose.Cells, API en la nube, hoja de cálculo, protección de archivos"
+description: "La API de Aspose.Cells en la nube permite el bloqueo por lotes de múltiples archivos Excel. Utilice el punto de conexión REST o cualquiera de los SDK admitidos (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, etc.) para bloquear archivos en masa."
+weight: 100
+---
 
-## RSET API
+Esta API REST permite el **bloqueo por lotes** de archivos Excel elegibles.
+
+## API REST
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/lock
- 
 ```
 
-Los parámetros de la solicitud son:
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| Solicitud de bloqueo de lote|| cuerpo||
+Las API de Aspose.Cells en la nube son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
-**Propiedades de BatchLockRequest**
 
-Nombre | Tipo | Descripción | Notas
------------- | ------------- | ------------- | -------------
- CarpetaOrigen | cadena | | [opcional]CondiciónDeCoincidencia | SolicitudDeCondiciónDeCoincidencia | | [opcional]Contraseña | cadena | | [opcional]CarpetaDeSalida | cadena | | [opcional]**Propiedades de MatchConditionRequest**
+### Parámetros de solicitud
 
-Nombre | Tipo | Descripción | Notas
------------- | ------------- | ------------- | -------------
- RegexPattern | cadena | | [opcional]FullMatchConditions | cadena[]| | [opcional]El[Especificación OpenAPI](https://reference.aspose.cloud/cells/#/Batch/PostBatchLock) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+| Nombre del parámetro | Tipo               | Ubicación | Descripción                                 |
+|----------------------|--------------------|-----------|---------------------------------------------|
+| BatchLockRequest     | BatchLockRequest   | body      | Cuerpo JSON que contiene los parámetros de bloqueo. |
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+#### Propiedades de **BatchLockRequest**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Nombre          | Tipo                     | Descripción                                            | Notas    |
+|-----------------|--------------------------|--------------------------------------------------------|----------|
+| SourceFolder    | string                   | Carpeta que contiene los archivos Excel de origen.     | opcional |
+| MatchCondition  | MatchConditionRequest    | Condiciones utilizadas para seleccionar los archivos que se bloquearán. | opcional |
+| Password        | string                   | Contraseña que se aplicará a los archivos bloqueados. | opcional |
+| OutFolder       | string                   | Carpeta de destino para los archivos bloqueados.      | opcional |
+
+#### Propiedades de **MatchConditionRequest**
+
+| Nombre             | Tipo      | Descripción                                          | Notas    |
+|--------------------|-----------|------------------------------------------------------|----------|
+| RegexPattern       | string    | Patrón de expresión regular para coincidir con nombres de archivos. | opcional |
+| FullMatchConditions| string[]  | Coincidencias exactas de nombres de archivos para bloqueo. | opcional |
+
+### Parámetro del cuerpo de solicitud
+
+| Nombre del parámetro | Tipo | Descripción                                    |
+| ------------------- | ---- | ---------------------------------------------- |
+| data                | file | Contenido binario del archivo de libro que se va a crear. |
+  
+### **Respuesta**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**Códigos de estado HTTP**
+
+| Código | Significado                     | Cuándo se devuelve                           |
+|--------|---------------------------------|----------------------------------------------|
+| 200 OK | Libro creado correctamente      | Flujo normal                                 |
+| 201 Created | Libro creado (respuesta alternativa) | Cuando la API devuelve un estado creado |
+| 400 Bad Request | Parámetros inválidos | Error del lado del cliente                   |
+| 401 Unauthorized | Token ausente o inválido | Error de autenticación                  |
+| 409 Conflict | El archivo existe y `isWriteOver=false` | Conflicto con un archivo existente    
+
+## Cómo utilizar la API PostBatchLock con SDK
+
+### Especificación de la API PostBatchLock
+
+La [Especificación OpenAPI](https://reference.aspose.cloud/cells/#/Batch/PostBatchLock) define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos **cURL** para acceder fácilmente a los servicios web de Aspose.Cells. El ejemplo siguiente muestra cómo llamar a la API en la nube mediante cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/lock" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\"}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Familia de SDK en la nube
+### Utilizar los SDK de Aspose.Cells Cloud
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y te permite concentrarte en las tareas de bloqueo. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de desarrollar. Un SDK abstracta los detalles de bajo nivel para que pueda centrarse en sus tareas de bloqueo. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells utilizando diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

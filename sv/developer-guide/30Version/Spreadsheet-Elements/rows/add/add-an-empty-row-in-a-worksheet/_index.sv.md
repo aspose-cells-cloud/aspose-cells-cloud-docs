@@ -1,74 +1,104 @@
-﻿---
-title: Lägg till en tom rad i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Ro
-type: docs
-url: /sv/rows/add/row/
-aliases: [/add-an-empty-row-in-a-worksheet/]
-keywords: Add an empty row on an Excel workshee
-description: Aspose.Cells Cloud REST API stöder tillägg av en tom rad i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lägg till en tom rad i ett Excel-kalkylblad
 ---
-Denna REST API anger att en ny rad i kalkylbladet ska läggas till i ett Excel-kalkylblad.
+title: "Lägg till en tom rad i ett Excel-ark"
+ArticleTitle: "Lägg till en tom rad i ett Excel-ark med Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Rad"
+type: docs
+url: /rows/add/row/
+aliases: [/add-an-empty-row-in-a-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, lägg till tom rad, kalkylark, REST API, infoga rad, molnspreadsheets"
+description: "Använd Aspose.Cells Cloud REST API för att infoga en tom rad i ett Excel-ark. Stöder flera SDK:er (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) för snabb utveckling."
+weight: 20
+---
 
-## RSET API
+Denna REST API lägger till en ny rad i ett Excel-ark. Den infogar en tom rad vid den angivna nollbaserade indexpositionen.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
- 
+**Förutsättningar:**  
+- Ett giltigt Aspose Cloud-åtkomsttoken (Bearer JWT) måste inkluderas i `Authorization`-headern.  
+- Den målarkivfil som ska bearbetas måste ha laddats upp till ditt Aspose Cloud-lagrum, och parametrarna `folder` och `storageName` ska peka på dess plats.
+
+**Anteckningar:**  
+- `rowIndex` är nollbaserat; infoga vid index 0 lägger till en rad högst upp i arket.  
+- Excel-ark har högst 1 048 576 rader; försök att infoga utanför denna gräns resulterar i
+
+## PutInsertWorksheetRow API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| radindex| heltal| väg| Det nya radindexet.|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud-API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRow) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Begärparametrar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameternamn | Typ    | Plats | Beskrivning                                            |
+| ------------- | ------ | ----- | ------------------------------------------------------ |
+| name          | string | path  | Filnamnet på arbetsboken.                              |
+| sheetName     | string | path  | Arkets namn.                                           |
+| rowIndex      | integer | path | Den nollbaserade indexpositionen där den nya raden ska infogas. |
+| folder        | string | query | Mappens sökväg i lagringen där arbetsboken finns.     |
+| storageName   | string | query | Namnet på Aspose Cloud-lagringen som ska användas.     |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRow) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/10" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
+
+> **Obs:** Alla Aspose.Cells Cloud-slutpunkter kräver HTTPS. Använd den säkra `https://`-schemat för produktionsanrop.
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+**HTTP-statuskoder**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Kod | Betydelse                   | Beskrivning                                      |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Bad Request                 | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Unauthorized                | Ogiltigt eller saknat JWT-token. |
+| 413 | Payload Too Large           | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internal Server Error       | Oväntat serverfel. |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+*Exempel på ett fel svar (t.ex. när radindexet överskrider arkets gräns):*
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Radindex utanför giltigt intervall. Maximalt antal tillåtna rader: 1048576."
+}
+```
+
+## Moln-SDK-familj
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK abstraher bort detaljer på lägre nivå och låter dig fokusera på dina projektuppgifter. Se <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub-arkivet</a> för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med hjälp av olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

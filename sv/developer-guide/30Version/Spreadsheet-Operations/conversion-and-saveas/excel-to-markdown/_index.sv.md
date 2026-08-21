@@ -1,80 +1,106 @@
-﻿---
-title: Excel till Markdow
-second_title: Documen
-linktitle: Excel till Markdow
-type: docs
-url: /sv/convert-excel-file-to-markdown-file/
-keywords: Convert excel files to markdown files
-description: Aspose.Cells Cloud REST API stöder konvertering av Excel-filer till Markdown-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Excel till Markdown
 ---
-Denna REST API indikerar för `convert` en kalkylbladsfil till en markdown-formatfil.
+title: "Konvertera Excel till Markdown"
+second_title: "Dokument"
+linktitle: "Excel till Markdown"
+type: docs
+url: /convert-excel-file-to-markdown-file/
+keywords: "Excel, Markdown, konvertering, Aspose.Cells Cloud, REST API, konvertering av Excel till Markdown, Aspose Cells Markdown API, export av Excel till Markdown"
+description: "Konvertera Excel-ark till Markdown med Aspose.Cells Cloud REST API – inkluderar cURL-exempel, SDK-utdrag, obligatoriska parametrar och autentiseringsinformation."
+weight: 100
+ArticleTitle: "Konvertera Excel till Markdown – Aspose.Cells Cloud API-dokumentation"
+---
 
-**Frågeparameter**
+Denna REST API konverterar en kalkylarksfil till en fil i Markdown-format.
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|lösenord|sträng| Lösenordet som behövs för att öppna en Excel-fil.|
-|lagringsnamn|sträng| Lagringsnamnet där filen finns.|
-|kontrolleraExcelBegränsning|bool| Om begränsning av Excel-filen ska kontrolleras när användaren ändrar celler relaterade objekt.|
+## Säkerhet och autentisering
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-**Begäran om brödtextparameter**
+## REST API
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|datafil| datafil|Datafilen sparas i den första delen av det flerdelade innehållet.|
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/markdown
+```
 
-**Svar**
+### **Säkerhet och autentisering**
 
-[Filinfo](/cells/sv/file-info/)
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-## REST API Specifikation
+### Frågeparametrar
 
-|**API**|**Typ**|**Beskrivning**|**Swagger-länk**|
-|:- |:- |:- |:- |
-|/celler/konvertera/markdown|POSTA|Konvertera ett kalkylblad till en pptx-fil.|[PostConvertWorkbookToMarkdown](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown)|
 
- De[OpenAPI-specifikation](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+| Parameternamn         | Typ    | Plats   | Beskrivning                                                                                      |
+| --------------------- | ------ | ------- | ------------------------------------------------------------------------------------------------ |
+| password              | string | query   | Lösenord som krävs för att öppna Excel-filen.                                                    |
+| storageName           | string | query   | Namn på lagringsplatsen där filen finns.                                                         |
+| checkExcelRestriction | bool   | query   | Anger om Excel-specifika restriktioner ska tillämpas vid ändring av celler eller relaterade objekt. |
+| datafile              | file   | body    | Excel-filen som ska laddas upp som första del av innehållet i multipart-formatet.              |
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
+### Respons
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+API:et returnerar ett JSON-objekt av typen **FileInfo**:
+
+- **FileInfo** – objekt som innehåller namn, storlek och base64-kodat innehåll i den genererade Markdown-filen.
+
+```json
+{
+  "Filename": "exempel.md",
+  "FileSize": 12345,
+  "FileContent": "base64_kodad_sträng"
+}
+```
+
+### Felrespons
+
+| HTTP-kod | Beskrivning                                                       | Exempel på JSON-kropp                        |
+| -------- | ----------------------------------------------------------------- | -------------------------------------------- |
+| 401      | Otillåten – saknat eller ogiltigt token.                         | `{"error":"Ogiltig åtkomsttoken."}`         |
+| 400      | Felaktig begäran – saknade obligatoriska parametrar eller ogiltigt filformat. | `{"error":"Fältet 'datafile' krävs."}` |
+| 500      | Internt serverfel – oväntat serverproblem.                        | `{"error":"Ett oväntat fel uppstod."}`       |
+
+
+
+## Hur du använder PostConvertWorkbookToMarkdown API med SDK:er
+
+### PostConvertWorkbookToMarkdown API-specifikation
+
+[OpenAPI-specifikationen](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells webbtjänster. Exemplet nedan visar hur du anropar Cloud API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Respons" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/markdown" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```shell
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/markdown" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "Authorization: Bearer <access_token>" \
+     -F "File=@din_excel_fil.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
-  "Filename": "xxxxxx.md",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
+  "Filename": "exempel.md",
+  "FileSize": 12345,
+  "FileContent": "base64_kodad_sträng"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK hanterar detaljer på lågnivå så att du kan fokusera på din affärslogik. Se [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du anropar Aspose.Cells webbtjänster med olika SDK:er:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -127,14 +153,9 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 
 {{< /tabs >}}
 
-## Andra API:er implementerar den här funktionen
+## Andra API:er som implementerar denna funktion
 
-[POST /celler/{namn}/sparaSom](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API låter dig spara MS Excel-filen som HTML-filen med ytterligare inställningar och spara resultatet till lagringsplatsen.
-
-Denna REST API `convert` Excel-fil till HTML.
-
-[PUT /celler/konvertera](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) Med API kan du konvertera MS Excel-filen till HTML-filen med ytterligare inställningar och spara resultatet i svaret.
-
-Denna REST API `export` Excel-fil till HTML.
-
-[HÄMTA /celler/{namn}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) Med API kan du konvertera MS Excel-filen till HTML-filen med ytterligare inställningar och spara resultatet i svaret.
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Sparar en Excel-fil som HTML med ytterligare inställningar och lagrar resultatet.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Konverterar en Excel-fil till HTML med extra alternativ och returnerar resultatet i svaret.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Hämtar en Excel-fil och kan konvertera den till HTML med valfria inställningar.
+---

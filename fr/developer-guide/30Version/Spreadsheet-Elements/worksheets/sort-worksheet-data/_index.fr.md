@@ -1,76 +1,93 @@
-﻿---
-title: Trier les données de plage sur une feuille de calcul Excel
-second_title: Documen
-linktitle: Sor
-type: docs
-url: /fr/worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
-keywords: Sort range data on an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge le tri des données de plage dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Trier les données de plage sur une feuille de calcul Excel
 ---
-Ce REST API indique `sort worksheet range data`.
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
- 
+title: "Trier les données d'une plage dans une feuille Excel"
+second_title: "Document"
+linktitle: "Trier"
+type: docs
+url: /worksheets/sort-data/
+aliases: [/sort-worksheet-data/]
+keywords: "Aspose.Cells Cloud, API de tri Excel, tri de plage de feuille de calcul, API REST, dataSorter"
+description: "Trier une plage spécifique dans une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’endpoint, les paramètres requis, les étapes d’authentification, la gestion des erreurs et des exemples de SDK."
+weight: 20
+---
+
+L’API REST permet de trier les données situées dans une plage spécifiée d’une feuille Excel.
+
+## API REST
+
+```shell
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
 ```
- Les paramètres de la requête sont :
- 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Le nom du classeur.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| zone de cellule| chaîne| requête| La gamme à trier.|
-| trieur de données|| corps| avec des paramètres de tri.|
-| dossier| chaîne| requête| Le dossier du classeur.|
-| nom de stockage| chaîne| requête| nom de stockage.|
- 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
- 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### Paramètres de la requête
+
+| Nom du paramètre | Type   | Emplacement | Obligatoire | Description                                                   |
+| ---------------- | ------ | ----------- | ----------- | ------------------------------------------------------------- |
+| name             | string | path        | Oui         | Le nom du classeur.                                           |
+| sheetName        | string | path        | Oui         | Le nom de la feuille de calcul.                               |
+| cellArea         | string | query       | Oui         | La plage de cellules à trier (par ex. `A5:A10`).              |
+| dataSorter       | object | body        | Oui         | Objet JSON définissant les paramètres de tri (voir le schéma ci-dessous). |
+| folder           | string | query       | Non         | Le dossier contenant le classeur.                             |
+| storageName      | string | query       | Non         | Le nom du stockage où se trouve le classeur.                 |
+
+**Schéma de l’objet `dataSorter`** – Le corps doit contenir un objet JSON doté des propriétés suivantes :
+
+- `CaseSensitive` _(boolean, obligatoire)_ – Détermine si le tri est sensible à la casse.
+- `HasHeaders` _(boolean, obligatoire)_ – Indique si la plage contient une ligne d’en-tête.
+- `KeyList` _(array, obligatoire)_ – Collection de clés de tri. Chaque objet clé comprend :
+  - `Key` _(integer)_ – Indice de colonne (indexé à partir de 0).
+  - `SortOrder` _(string)_ – `"ascending"` ou `"descending"`.
+- `SortLeftToRight` _(boolean, obligatoire)_ – Si `true`, le tri s’effectue de gauche à droite ; sinon, de haut en bas.
+- D’autres propriétés facultatives telles que `CaseOrder`, `SortLeftToRight`, peuvent également être fournies conformément à la spécification OpenAPI.
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort) définit une interface de programmation publiquement accessible et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web d’Aspose.Cells. L’exemple suivant montre comment effectuer un appel à l’API Cloud via cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
+
 {{< tab tabNum="1" >}}
- 
-```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/sort?cellArea=A5:A10" \
--X POST \
--d '{"CaseSensitive":false, "HasHeaders":false, "KeyList":[{"Key":0, "SortOrder":"descending"}], "SortLeftToRight":false}' \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+
+```shell
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/sort?cellArea=A5:A10" \
+  -X POST \
+  -d '{"CaseSensitive":false,"HasHeaders":false,"KeyList":[{"Key":0,"SortOrder":"descending"}],"SortLeftToRight":false}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton JWT>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+**Gestion des erreurs** – L’API peut renvoyer des codes d’erreur HTTP standard. Les réponses typiques incluent :
+
+| Statut HTTP | Code | Message                                                     |
+| ----------- | ---- | ----------------------------------------------------------- |
+| 400         | 400  | Mauvaise requête – paramètres manquants ou non valides.     |
+| 401         | 401  | Non autorisé – jeton JWT invalide ou absent.                |
+| 404         | 404  | Introuvable – le classeur ou la feuille de calcul n’existe pas. |
+| 500         | 500  | Erreur interne du serveur.                                  |
+
+Le corps de la réponse suit le format `{ "Code": <statut>, "Message": "<description>", "Status": "Error" }` dans les cas d’erreur.
+
 ## Famille de SDK Cloud
- 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
- 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
- 
+
+L’utilisation d’un SDK constitue la méthode la plus rapide pour développer. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur vos tâches de projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants illustrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

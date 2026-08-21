@@ -1,100 +1,121 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Bir Elektronik Tablo Aralığı Verisini Görüntüye Dönüştürme
-second_title: Documen
-ArticleTitle: Convert a Spreadsheet Range data to an Imag
-linktitle: Aralığı Görüntüye Dönüştür
-type: docs
-url: /tr/convert-range-to-image/
-keywords: Aspose.Cells Cloud Web API, Convert Range to Image, Spreadsheet to Image, Cloud Conversion, Image Format
-description: Yerel bir elektronik tablo/Excel dosyasındaki bir aralık verisini bir görüntü dosyasına dönüştürün
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, Görüntü Dönüştürme, PNG, SVG, TIFF, JSON, Markdown
 ---
-Yerel bir elektronik tablo/Excel dosyasındaki bir aralık verisini bir görüntü dosyasına dönüştürün. Desteklenir**GÖRÜNTÜ FORMATLARI:** [PNG](https://docs.fileformat.com/image/png/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/)
+title: "Excel Aralığını Görüntüye Dönüştür – Aspose.Cells Cloud API"
+description: "Aspose.Cells Cloud REST API aracılığıyla yerel bir Excel dosyasından belirli bir aralığı PNG, JPEG, SVG, TIFF veya BMP formatına dönüştürün – tüm çalışma kitabını yüklemenize gerek yoktur."
+keywords: "Aspose.Cells Cloud, Aralığı Görüntüye Dönüştür, Excel API, Görüntü Formatları, PNG, JPEG, SVG, TIFF, BMP"
+slug: convert-range-to-image
+api_version: "v4.0"
+date: 2026-07-30
+---
 
-## **Aralığı Görüntüye Dönüştür API**
+Çağrı, yerel bir elektronik tablo dosyasını okur, belirtilen aralığı dönüştürür ve görüntüyü ikili bir akış olarak döndürür.
+
+## Aralığı Görüntüye Dönüştürme Yöntemi
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
+PUT https://api.aspose.cloud/v4.0/cells/convert/range/image
 ```
 
-### **İstek Parametreleri:**
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi| Tanım|
-|:- |:- |:- |:- |
-|Elektronik tablo|Dosya|FormVerileri|Dönüştürme için elektronik tablo dosyasını yükleyin.|
-|çalışma sayfası|Sicim|Sorgu|Spreadsheet/Excel çalışma sayfasının adı|
-|menzil|Sicim|Sorgu|Dönüştürülecek hücre alanını tanımlayın (örneğin, A1:C10).|
-|biçim|Sicim|Sorgu|Çıktı dosya biçimini belirtin (örneğin, png, svg, tiff).|
-|Başlıkları yazdır|Boolean|Sorgu|Satır ve sütun başlıklarının yazdırılıp yazdırılmayacağını belirtin.|
-|çıkış yolu|Sicim|Sorgu|(İsteğe bağlı) Çalışma kitabının saklandığı klasör yolu; varsayılan değer null'dır.|
-|outStorageName|Sicim|Sorgu|Çıktı dosyasının depolama adı.|
-|yazı tipleriKonum|Sicim|Sorgu|Dönüştürme için kullanılacak özel yazı tipleri.|
-|yeniden gitmek|Sicim|Sorgu|E-tablo bölge ayarını tanımlayın.|
-|şifre|Sicim|Sorgu|Korumalıysa elektronik tablo dosyasını açmak için şifre.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-### **Cevap**
+## İstek Parametreleri
+
+| Adı                | Konum                              | Tür     | Gerekli  | Açıklama                                                                        |
+| ------------------ | ---------------------------------- | ------- | -------- | ------------------------------------------------------------------------------- |
+| **Spreadsheet**    | Form‑Verisi (`multipart/form-data`)| Dosya   | **Evet** | İşlenecek Excel dosyası.                                                        |
+| **worksheet**      | Sorgu                              | Dize    | **Evet** | Aralığın bulunduğu çalışma sayfası adı (örneğin `Sheet1`).                      |
+| **range**          | Sorgu                              | Dize    | **Evet** | Dönüştürülecek hücre alanı, örneğin `A1:C10`.                                   |
+| **format**         | Sorgu                              | Dize    | **Evet** | Çıkış görüntü formatı (`png`, `jpeg`, `svg`, `tiff`, `bmp`).                    |
+| **printHeadings**  | Sorgu                              | Boolean | Hayır    | Görüntüde satır/sütun başlıklarını dahil etmek için `true`.                     |
+| **outPath**        | Sorgu                              | Dize    | Hayır    | Dosyayı bulut depolama alanına kaydetmek istediğinizde kullanılacak klasör yolu.|
+| **outStorageName** | Sorgu                              | Dize    | Hayır    | Depolama hizmetinin adı (örneğin `MyStorage`).                                 |
+| **fontsLocation**  | Sorgu                              | Dize    | Hayır    | Dönüştürme sırasında kullanılan özel yazı tiplerinin URL’si veya yolu.          |
+| **region**         | Sorgu                              | Dize    | Hayır    | Yerel ayar tanımlayıcısı (örneğin `en-US`, `fr-FR`). Sayı ve tarih formatlamasını etkiler. |
+| **password**       | Sorgu                              | Dize    | Hayır    | Şifrelenmiş çalışma kitapları için şifre.                                       |
+| **AutoRowsFit**    | Sorgu                              | Boolean | Hayır    | İşlemeden önce satırları otomatik sığdır.                                       |
+| **AutoColumnsFit** | Sorgu                              | Boolean | Hayır    | İşlemeden önce sütunları otomatik sığdır.                                       |
+
+## Yanıt
+
+API, dönüştürülen HTML dosyasını **ikili akış** (`application/octet-stream`) olarak döndürür.
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Hata Kodları
+### Örnek Başarılı Yanıt (HTTP)
 
-- **400 Kötü İstek**: Geçersiz Apose.Cells Bulut API URI.
-- **401 Yetkisiz**: Geçersiz erişim belirteci. Veya geçersiz istemci kimliği ve sırrı.
-- **404 Bulunamadı**: E-tablo dosyasına erişilemiyor.
-- **500 Sunucu Hatası**: Hesaplama verilerinin alınmasında elektronik tabloda bir anormallik tespit edildi.
+```
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="report.png"
+Content-Length: 8423
+```
 
-## Neden Görüntüye Dönüştürme Aralığını API kullanmalısınız?
+Görüntülenen görüntüyü tarayıcıda görmek için yanıt gövdesini bir dosyaya (örneğin `report.png`) kaydedin.
 
-- Bulut depolamaya gerek kalmaz, bulut kaynakları üzerindeki yük azalır.
-- Mevcut SDK üzerinden geliştirme hızlı bir şekilde tamamlanabilir.
+---
 
-## SDK'larla API Görüntüsüne Dönüştürme Aralığı Nasıl Kullanılır?
+**HTTP Durum Kodları**
 
-### Aralığı Görüntüye Dönüştürme API Spesifikasyonu
+| Kod | Anlamı                | Açıklama                                                          |
+|-----|-----------------------|-------------------------------------------------------------------|
+| 200 | Tamam (OK)            | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir.    |
+| 400 | Geçersiz İstek        | Eksik veya geçersiz parametreler (örneğin desteklenmeyen dosya türü). |
+| 401 | Yetkisiz (Unauthorized)| Geçersiz veya eksik JWT belirteci.                               |
+| 413 | İçerik Çok Büyük      | Yüklenen dosya boyut sınırını aşıyor.                             |
+| 500 | İç Sunucu Hatası      | Beklenmeyen sunucu hatası.                                        |
 
- The[Aralığı Görüntüye Dönüştürme API Spesifikasyonu](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToImage) web tarayıcınızdan doğrudan REST etkileşimlerine olanak tanıyan, herkese açık bir programlama arayüzü sağlar.
+## Aralığı Görüntüye Dönüştür API’sini SDK’larla Nasıl Kullanılır?
 
-### Aspose.Cells Bulut SDK'larını kullanın
+### OpenAPI Spesifikasyonu
 
-SDK'yı kullanmak, düşük seviyeli ayrıntıları soyutlayarak, bir aralık verisini kısa kodla bir görüntüye dönüştürmenize olanak tanıdığı için geliştirmenin en hızlı yoludur.
- Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToImage), web tarayıcısından doğrudan REST etkileşimlerini mümkün kılan herkese açık bir API’yi tanımlar.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerinin nasıl çağrılacağını göstermektedir:
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’sine nasıl istek gönderileceğini göstermektedir.
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertRangeToImage.cs" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/image?format=png&worksheet=Sheet1&range=A1:C10&AutoRowsFit=true&AutoColumnsFit=true" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@Report.xlsx" \
+     -F "outPath=output/report.png"
+
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertRangeToImage.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="report.png"
+Content-Length: 8423
+
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertRangeToImage.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertRangeToImage.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertRangeToImage.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertRangeToImage.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertRangeToImage.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToImage.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+## Aspose.Cells Cloud SDK’larını Kullanın
+
+SDK kullanmak, düşük seviye ayrıntıları gizleyerek bir aralığı görüntü dosyasına dönüştürmek için minimum kodla geliştirme yapmanın en hızlı yoludur.  
+Aspose.Cells Cloud SDK’larının tam listesini [GitHub deposunda](https://github.com/aspose-cells-cloud) inceleyebilirsiniz.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını göstermektedir. Gist’ten yükleme engellenirse, örnekleri doğrudan depodan indirebilirsiniz.
+
+---

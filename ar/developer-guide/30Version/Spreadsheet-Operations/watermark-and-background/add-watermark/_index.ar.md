@@ -1,85 +1,125 @@
-﻿---
-title: أضف العلامة المائية إلى الملف Excel
-second_title: Documen
-linktitle: إضافة علامة مائية إلى الملف Excel
-type: docs
-url: /ar/add-watermark-into-excel-files/
-aliases: [ /watermark/]
-keywords: Add water marker for Excel files
-description: يدعم Cloud REST إضافة علامة مائية للملفات. تدعم مجموعة أدوات تطوير البرامج (SDK) لغات تطوير متنوعة، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 39
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، علامة مائية
 ---
-يشير هذا REST API إلى إضافة `watermark` على الملفات Excel.
+title: "إضافة علامة مائية إلى ملفات Excel"
+second_title: "مستند"
+linktype: "إضافة علامة مائية إلى ملفات Excel"
+type: docs
+url: /add-watermark-into-excel-files/
+aliases: [/watermark/]
+keywords: "إضافة علامة مائية إلى Excel، Aspose.Cells Cloud، REST API، SDK، C#، Java، PHP، Ruby، Node.js، Python، Perl، Go"
+description: "تعرّف على كيفية إضافة علامة مائية نصية إلى كتب عمل Excel باستخدام REST API الخاص بـ Aspose.Cells Cloud (الإصدار 3.0). يشمل مثال cURL، والمعاملات المطلوبة، وتفاصيل الاستجابة."
+weight: 39
+ArticleTitle: "إضافة علامة مائية إلى ملفات Excel – مستندات Aspose.Cells Cloud"
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية REST بإضافة **علامة مائية** إلى ملفات Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/watermark
- 
+**المتطلبات المسبقة:** يجب الحصول على رمز وصول JWT صالح، وتأكد من أن ملف Excel بصيغة مدعومة (مثل `.xlsx` أو `.xls`).  
+**الخلفية:** العلامة المائية هي طبقة نصية شبه شفافة تُطبّق على كل ورقة عمل للإشارة إلى الملكية أو السرية.
+
+## واجهة PostWatermark API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/watermark
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| ملف| ملف| نموذج البيانات| الملف للتحميل|
-| نص| خيط| استفسار||
-| لون| خيط| استفسار||
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتحتاج إلى <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة قائمة على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **معاملات الطلب**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل | النوع | الموقع | الوصف |
+|------------|-------|--------|--------|
+| `file` | ملف | formData (جسم multipart) | ملف Excel الذي سيتم تطبيق العلامة المائية عليه. |
+| `text` | نص | استعلام | النص المراد عرضه كعلامة مائية. |
+| `color` | نص | استعلام | لون العلامة المائية بصيغة سداسية ARGB (مثل `004433ff`). |
+
+### **الاستجابة**
+
+تحتوي الاستجابة JSON على مصفوفة **Files**. بالنسبة لكائن كل ملف:
+
+- **Filename** – اسم ملف الكتاب المعالَج.  
+- **FileSize** – حجم الملف بالبايت.  
+- **FileContent** – المحتوى المُرمّز بـ Base64 لملف Excel الذي يحتوي على العلامة المائية؛ قم بفك التشفير للحصول على الملف الفعلي.
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Files": [
+        {
+            "Filename" : "[اسم الملف1]",
+            "Filesize" : [حجم الملف],
+            "FileContent" : "[Base64String]"
+        },        {
+            "Filename" : "[اسم الملف2]",
+            "Filesize" : [حجم الملف],
+            "FileContent" : "[Base64String]"
+        },        {
+            "Filename" : "[اسم الملف3]",
+            "Filesize" : [حجم الملف],
+            "FileContent" : "[Base64String]"
+        }
+    ]
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى | الوصف |
+|-------|--------|--------|
+| 200 | OK (تم بنجاح) | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | Bad Request (طلب غير صالح) | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401 | Unauthorized (غير مصرّح) | رمز JWT غير صالح أو مفقود. |
+| 413 | Payload Too Large (حمولة كبيرة جداً) | حجم الملف المرفوع يتجاوز الحد المسموح. |
+| 500 | Internal Server Error (خطأ داخلي في الخادم) | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام واجهة PostWatermark API باستخدام SDKs
+
+### **مواصفات واجهة PostWatermark API**
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark) واجهة برمجة تطبيقات متاحة عموماً، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** لاستدعاء خدمات Aspose.Cells. يُظهر المثال التالي طلباً كاملاً، بما في ذلك رأس المصادقة المطلوب. استبدل `<your-jwt-token>` برمز وصول JWT صالح تم الحصول عليه من نقطة نهاية مصادقة Aspose.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&color=004433ff" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
-
+curl -v "https://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&color=004433ff" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your-jwt-token>" \
+  -F "file=@Sample.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Sample_watermarked.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### **استخدام SDKs الخاصة بـ Aspose.Cells Cloud**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أسرع طريقة للتطوير. تقوم SDK بتجريد التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على منطق أعمالك. يُرجى مراجعة [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -132,4 +172,3 @@ curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&co
 {{< /tab >}}
 
 {{< /tabs >}}
-

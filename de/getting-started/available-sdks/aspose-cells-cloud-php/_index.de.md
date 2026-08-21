@@ -1,29 +1,37 @@
-﻿---
-title: "Aspose.Cells Cloud SDK für PHP: Konvertieren, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen und mehr"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for PHP: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells Cloud SDK für PH
-type: docs
-url: /de/available-sdks/aspose-cells-cloud-php/
-description: "Aspose.Cells Cloud SDK für PHP bietet echte plattformübergreifende Leistung: Ein Import bietet Windows-, Linux- und macOS-Entwicklern die gleiche fließende API zum Erstellen, Konvertieren, Zusammenführen, Aufteilen, Schützen und Bearbeiten jedes Excel-Objekts – keine Office-Installation erforderlich und keine plattformspezifischen Anpassungen erforderlich"
-weight: 30
-kwords: PHP SDK, Excel SDK für PHP, Cloud SDK für PHP, REST, Diagramm, Pivot-Tabelle, Tabellen-/Listenobjekt, Tabellenkalkulation konvertieren, PDF, CSV, Json, Markdown, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen
 ---
-Das SDK ist Open Source und steht unter der MIT-Lizenz. Sie können darauf zugreifen[der PHP-Bibliotheksquellcode für Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php).
+title: "Aspose.Cells Cloud PHP SDK – Excel-Dateien konvertieren, zusammenführen, teilen, schützen"  
+second_title: "Dokument"  
+ArticleTitle: "Aspose.Cells Cloud PHP SDK – Excel-Dateien konvertieren, zusammenführen, teilen, schützen"  
+linktitle: "Aspose.Cells Cloud PHP SDK"  
+type: docs  
+url: /available-sdks/aspose-cells-cloud-php/  
+description: "Laden Sie das Aspose.Cells Cloud PHP SDK (v24.3) herunter. Erfahren Sie, wie Sie es über Composer installieren, authentifizieren, XLSX in PDF/CSV konvertieren, Arbeitsmappen zusammenführen, Blätter schützen und mehr – alles ohne Installation von Office."  
+keywords: "Aspose.Cells, Cloud, PHP, SDK, Excel, Konvertieren, Zusammenführen, Teilen, Schützen"  
+weight: 30  
+---  
 
-# **So verwenden Sie Aspose.Cells Cloud SDK für PHP**
+Das SDK ist Open Source und unter der MIT-Lizenz lizenziert. Den Quellcode der PHP-Bibliothek für Aspose.Cells Cloud finden Sie <a href="https://github.com/aspose-cells-cloud/aspose-cells-cloud-php" target="_blank" rel="noopener noreferrer">hier</a>.
 
-Aspose.Cells Cloud SDK für PHP ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, Microsoft Excel-Dateien mit der Programmiersprache Go zu bearbeiten und zu verarbeiten. Mit diesem SDK können Sie Excel-Dokumente in der Cloud erstellen, bearbeiten und konvertieren, ohne zusätzliche Software oder Abhängigkeiten auf Ihrem lokalen Computer installieren zu müssen.
+# **Verwendung des Aspose.Cells Cloud SDK für PHP**
 
-In diesem Artikel erfahren Sie, wie Sie mit dem Aspose.Cells Cloud SDK für PHP einige gängige Aufgaben ausführen, z. B. eine neue Excel-Arbeitsmappe erstellen, Daten in Zellen einfügen und die geänderte Arbeitsmappe in der Cloud speichern.
+Das Aspose.Cells Cloud SDK für PHP ist eine leistungsstarke Bibliothek, die Entwicklern ermöglicht, Microsoft Excel-Dateien mithilfe der **PHP-Programmiersprache** zu bearbeiten und zu verarbeiten. Mit diesem SDK können Sie Excel-Dokumente in der Cloud erstellen, bearbeiten und konvertieren, ohne zusätzliche Software oder Abhängigkeiten auf Ihrem lokalen Computer installieren zu müssen.
+
+In diesem Artikel zeigen wir Ihnen, wie Sie das Aspose.Cells Cloud SDK für PHP verwenden, um einige gängige Aufgaben auszuführen, wie etwa das Erstellen einer neuen Excel-Arbeitsmappe, das Einfügen von Daten in Zellen und das Speichern der bearbeiteten Arbeitsmappe in der Cloud.
 
 ## Erste Schritte
 
- Bevor Sie das Aspose.Cells Cloud SDK für Go verwenden können, müssen Sie Ihre Entwicklungsumgebung einrichten und die erforderlichen Abhängigkeiten installieren. Weitere Informationen finden Sie unter[der Artikel](https://docs.aspose.cloud/cells/quickstart/) auf der Website Aspose, um Ihre Client-ID und Ihr Client-Geheimnis zu erhalten.
+Bevor Sie mit der Verwendung des Aspose.Cells Cloud SDK für **PHP** beginnen können, müssen Sie Ihre Entwicklungsumgebung einrichten und die erforderlichen Abhängigkeiten installieren. Lesen Sie <a href="https://docs.aspose.cloud/cells/quickstart/" target="_blank" rel="noopener noreferrer">den Artikel</a> auf der Aspose-Website, um Ihre Client-ID und Ihren Client-Geheimschlüssel zu erhalten.
 
-## So installieren Sie das PHP-Paket für Aspose.Cells Cloud
+**Voraussetzungen**
 
-Sie können Aspose.Cells Cloud SDK für PHP installieren. Nachfolgend sind die Schritte aufgeführt:
+- PHP 7.4 oder höher  
+- Composer auf Ihrem Entwicklungsrechner installiert  
+- Gültige Aspose Cloud Client-ID und Client-Geheimschlüssel  
+- Zugriff auf einen Aspose Cloud-Speicherort (Standard oder benutzerdefiniert)  
+
+## Installation des PHP-Pakets für Aspose.Cells Cloud
+
+Sie können das Aspose.Cells Cloud SDK für PHP installieren. Die folgenden Schritte sind dafür notwendig:
 
 - Fügen Sie Aspose.Cells Cloud als Abhängigkeit zu Ihrer `composer.json`-Datei hinzu:
 
@@ -35,31 +43,58 @@ Sie können Aspose.Cells Cloud SDK für PHP installieren. Nachfolgend sind die S
    }
    ```
 
-- Führen Sie das Composer-Update aus, um das SDK zu installieren:
+- Führen Sie Composer Update aus, um das SDK zu installieren:
 
    ```bash
-
    composer install
-
    ```
 
-- Fügen Sie den Autoloader von Composer in Ihren PHP-Code ein:
+- Binden Sie den Autoloader von Composer in Ihren PHP-Code ein:
 
    ```php
-
    require 'vendor/autoload.php';
-
    ```
 
-## So verwenden Sie das Paket PHP zum Konvertieren von XLSX in andere Formate
+## Verwendung des PHP-Pakets zur Konvertierung von Xlsx in andere Formate
 
-- Importieren Sie Aspose.Cells Cloud-Bibliothek
- Beginnen Sie, indem Sie das erforderliche Paket aus dem Aspose.Cells Cloud PHP SDK in Ihr Projekt importieren.
-- Konfigurieren Sie den API-Client mit Anmeldeinformationen
- Authentifizieren Sie Ihren API-Client mit Ihrer eindeutigen Client-ID und Ihrem Client-Geheimnis.
-- Konvertierungsparameter vorbereiten
- Definieren Sie Parameter für die Konvertierungsaufgabe, einschließlich des Quelldateinamens, des gewünschten Ausgabeformats und des Speicherordnerpfads.
-- Arbeitsmappenkonvertierung ausführen
- Rufen Sie den Konvertierungsprozess mit der Methode PostConvertWorkbook auf und verarbeiten Sie die Antwort.
+- Importieren Sie die Aspose.Cells Cloud-Bibliothek  
+  Beginnen Sie damit, das erforderliche Paket aus dem Aspose.Cells Cloud PHP SDK in Ihr Projekt zu importieren.
+
+- Konfigurieren Sie den API-Client mit Anmeldeinformationen  
+  Authentifizieren Sie Ihren API-Client mit Ihrer eindeutigen Client-ID und Ihrem Client-Geheimschlüssel.
+
+- Bereiten Sie die Konvertierungsparameter vor  
+  Definieren Sie Parameter für die Konvertierungsaufgabe, einschließlich des Quelldateinamens, des gewünschten Ausgabeformats und des Speicherordnerpfads.
+
+- Führen Sie die Arbeitsmappenkonvertierung aus  
+  Rufen Sie den Konvertierungsvorgang mit der Methode `PostConvertWorkbook` auf und verarbeiten Sie die Antwort.
 
 {{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_AvailableSDKs.php" >}}
+
+### API-Referenz für `PostConvertWorkbook`
+
+| Parameter      | Beschreibung                                           | Typ    | Erforderlich |
+|----------------|--------------------------------------------------------|--------|--------------|
+| `file`         | Name der Quell-Excel-Datei (z. B. `sample.xlsx`).    | string | Ja           |
+| `format`       | Gewünschtes Ausgabeformat (`pdf`, `csv`, `png`, usw.).| string | Ja           |
+| `storage`      | Speichername oder Ordnerpfad, in dem sich die Quelldatei befindet. | string | Nein         |
+| `outPath`      | Optionaler Pfad, um die konvertierte Datei direkt im Speicher zu speichern. | string | Nein         |
+
+**HTTP-Methode:** POST  
+**Endpunkt:** `/cells/convert/{format}`  
+
+**Beispiel für Antwort (JSON)**  
+
+```json
+{
+  "status": "OK",
+  "url": "https://api.aspose.cloud/v3.0/cells/convert/output.pdf"
+}
+```
+
+**Statuscodes**
+
+- `200` – Konvertierung erfolgreich.  
+- `400` – Ungültige Anfrage (fehlende oder ungültige Parameter).  
+- `401` – Authentifizierung fehlgeschlagen.  
+- `500` – Serverfehler.

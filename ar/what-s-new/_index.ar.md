@@ -1,35 +1,35 @@
-﻿---
+---
 title: ما الجديد في Aspose.Cells Cloud
-second_title: Documen
-linktitle: ما هو الجديد
+second_title: "وثيقة"
+linktitle: "ما الجديد"
 type: docs
 weight: 9
-url: /ar/new-features/
+url: /new-features/
 aliases: [/what-s-new-in-aspose-cells-cloud/]
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: تصف هذه الصفحة الميزات السحابية الجديدة الأكثر إثارة للاهتمام Aspose.Cells التي تم تقديمها في الإصدارات الأخيرة
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، ما الجديد في Aspose.Cells Cloud
+keywords: "Aspose.Cells Cloud، الميزات الجديدة، Microsoft Office Excel، OpenOffice Spreadsheet، CSV، PDF، REST API، SDK، جدول بيانات، سحابة"
+description: "استكشف أحدث الميزات والتحسينات وإصلاحات الأخطاء في Aspose.Cells Cloud، بما في ذلك التحديثات الخاصة بـ Excel وOpenOffice وCSV وPDF."
+ArticleTitle: "ما الجديد في Aspose.Cells Cloud – أحدث الميزات والتحديثات"
 ---
-# الإصدار الأكثر أهمية
 
-- **الإصدار الأحدث من Aspose.Cells Cloud 4.0 متوفر الآن. أُعيد تصميم هذا الإصدار ليكون أكثر انسيابية وكفاءة، مما يضمن تجربة مستقرة وموثوقة.**
-- **يقوم أحدث SDK بدمج جميع واجهات برمجة التطبيقات من Aspose.Cells Cloud 3.0 و4.0، مما يعمل على تبسيط عملية التطوير وجعلها أكثر عملية وراحة.**
+# الإصدار الأهم
 
-# أحدث إصدار
+- **أصبح الإصدار الأحدث من Aspose.Cells Cloud 4.0 متاحًا الآن. وقد أُعيد تصميم هذا الإصدار ليكون أكثر تبسيطًا وكفاءة، مما يضمن تجربة مستقرة وموثوقة.**
+- **يُوحّد SDK الأحدث جميع واجهات برمجة التطبيقات من Aspose.Cells Cloud 3.0 و 4.0، مما يبسّط عملية التطوير ويجعلها أكثر عمليّة وراحة.**
 
-|**بطاقة تعريف**|**ملخص**|**فئة**|
-|:- |:- |:- |
-|56632 | تحديث اسم معلمة بيانات النموذج لمواصفات كود سحابة الخلايا على خدمات سحابة الخلايا 3.0.| تحسين|
-|56793 | إصلاح مشكلة StringEnumConverter على خدمات السحابة Aspose.Cells.| حشرة|
-|56866 | دعم تقليص محتوى جدول البيانات في Cells Cloud 4.0.| تحسين|
-|56867 | دعم نطاق محتوى ورقة عمل التشذيب في Cells Cloud 4.0.| تحسين|
-|56919 | حدث استثناء عند حفظ جدول البيانات كملف بتنسيق مختلف على سحابة الخلية.| حشرة|
-|56922 | عند تصدير النطاق/الجدول كملف HTML، يتم فقدان البيانات.| حشرة|
-|56936 | إصلاح بعض المشاكل المتعلقة بأخطاء الإملاء.| حشرة|
+# الإصدار الأحدث
 
-# الإصدارات التاريخية
+يقدّم الجدول التالي ملخصًا موجزًا لأهم بنود إصدار Aspose.Cells Cloud الأحدث.
 
-- [إصدار 2025](/cells/ar/new-features/2025/)
-- [إصدار 2024](/cells/ar/new-features/2024/)
-- [إصدار 2023](/cells/ar/new-features/2023/)
-- [إصدار 2022](/cells/ar/new-features/2022/)
+| **المُعرّف** | **الملخص**                                                     | **الفئة**     |
+|:-----------:|:--------------------------------------------------------------:|:-------------:|
+| 60858       | تنفيذ واجهة برمجة التطبيقات (Web API) لنقل البيانات (Data Transpose) على Aspose Cells Cloud. | ميزة جديدة |
+| 60912       | تنفيذ واجهة برمجة التطبيقات (Web API) لإعادة تجميع البيانات (Data Unpivot) على Aspose Cells Cloud. | ميزة جديدة |
+
+# الإصدارات السابقة
+
+- [إطلاق عام 2026](/cells/new-features/2026/)
+- [إطلاق عام 2025](/cells/new-features/2025/)
+- [إطلاق عام 2024](/cells/new-features/2024/)
+- [إطلاق عام 2023](/cells/new-features/2023/)
+- [إطلاق عام 2022](/cells/new-features/2022/)
+---

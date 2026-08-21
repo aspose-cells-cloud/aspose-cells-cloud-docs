@@ -1,64 +1,96 @@
-﻿---
-title: Importieren Sie ein 2-dimensionales String-Array in das Arbeitsblatt Excel
-second_title: Documen
-linktitle: Importieren Sie 2-dimensionale Zeichenfolgen-Arrays
-type: docs
-url: /de/import-a-2D-string-array-into-excel-worksheet/
-aliases: [/import-2dimension-string-array-into-excel-worksheet/,/import-2dimension-string-array-into-worksheet/,/import-data/-2dimension-string-array/,/import-data/2dimension-string-array/,/import/2dimension-string-array/ ]
-keywords: Import 2 dimension string array data into Excel files
-description: Aspose.Cells Cloud REST API unterstützt den Import von 2-dimensionalen String-Array-Daten in Excel-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, 2-dimensionales String-Array in Excel Arbeitsblatt importieren
 ---
-Dieses REST API `import 2 dimension string array data` in Excel Arbeitsblatt.
+title: "2D-Zeichenfolgenarray in Excel-Arbeitsblatt importieren"
+second_title: "Dokument"
+linktitle: "2D-Zeichenfolgenarray importieren"
+type: docs
+url: /import-a-2d-string-array-into-excel-worksheet/
+aliases:
+  [
+    "/import-2dimension-string-array-into-excel-worksheet/",
+    "/import-2dimension-string-array-into-worksheet/",
+    "/import-data/-2dimension-string-array/",
+    "/import-data/2dimension-string-array/",
+    "/import/2dimension-string-array/",
+  ]
+keywords: "Aspose.Cells Cloud, 2D-Zeichenfolgenarray importieren, Excel, REST-API, SDK"
+description: "Erfahren Sie, wie Sie mit der Aspose.Cells Cloud REST-API ein zweidimensionales Zeichenfolgenarray in ein Excel-Arbeitsblatt importieren. Enthält Anforderungsformat, Parameterdetails und SDK-Codebeispiele für C#, PHP und Ruby."
+weight: 20
+---
 
-Bei der Anfrage handelt es sich um eine HTTP-Anfrage mit mehrteiligem Inhalt (siehe[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)oder[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Der erste Teil des mehrteiligen Inhalts enthält die Import2DimensionStringArrayOption-Daten und der zweite enthält eine Datendatei.
+Diese REST-API **importiert ein zweidimensionales Zeichenfolgenarray** in ein Excel-Arbeitsblatt.
 
-## RSET API
+Die Anforderung ist eine HTTP-Anforderung mit multipart-Inhalt (siehe [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) oder [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Der erste Teil des multipart-Inhalts enthält die `Import2DimensionStringArrayOption`-Daten, der zweite Teil die Datendatei.
+
+## REST-API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-Die wichtigen Parameter sind in der folgenden Tabelle beschrieben:
+### **Sicherheit und Authentifizierung**
 
-**Import2DimensionStringArrayOption**
+Die Aspose.Cells Cloud-APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
-|Parametername|Typ|Beschreibung|
-|:- |:- |:- |
-| Erste Reihe| int||
-| Erste Spalte| int||
-| Daten|Zeichenfolge[,]||
-|ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
-| IsInsert| Schnur| wahr/falsch.|
-| ImportDataType| Schnur|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Quelle| Dateiquelle| Gibt die Datendateiposition an, wenn der BatchData-Parameter null ist.|
+Die wichtigsten Parameter sind in der folgenden Tabelle beschrieben:
 
-**Beispiel**
+### **Import2DimensionStringArrayOption**
+
+| Parametername         | Typ                 | Beschreibung                                                                 |
+| --------------------- | ------------------- | -----------------------------------------------------------------------------|
+| FirstRow             | int                 | Nullbasierter Index der Zeile, ab der der Import beginnt.                   |
+| FirstColumn          | int                 | Nullbasierter Index der Spalte, ab der der Import beginnt.                  |
+| Data                 | String[,]           | Zweidimensionales Array mit den zu importierenden Zeichenfolgenwerten.      |
+| DestinationWorksheet | string              | Name des Arbeitsblatts, in das die importierten Daten eingefügt werden.     |
+| IsInsert             | string (true/false) | Falls **true**, werden die Daten eingefügt und vorhandene Zellen entsprechend verschoben. |
+| ImportDataType       | string              | Gibt den Datentyp an; verwenden Sie für diesen Vorgang `TwoDimensionStringArray`. |
+| Source               | FileSource          | Gibt den Speicherort der Datendatei an, wenn der Parameter `BatchData` null ist. |
+
+### Beispiel für Anforderungstext
 
 ```json
-
 {
-    "Data": [
-        ["1.0", "2.9"],
-        ["2.0", "2.1"]
-    ],
-    "DestinationWorksheet": "Sheet2",
-    "FirstRow": 1,
-    "FirstColumn": 1,
-    "importDataType": "TwoDimensionStringArray"
+  "Data": [
+    ["1.0", "2.9"],
+    ["2.0", "2.1"]
+  ],
+  "DestinationWorksheet": "Sheet2",
+  "FirstRow": 1,
+  "FirstColumn": 1,
+  "ImportDataType": "TwoDimensionStringArray"
 }
-
 ```
 
-## Cloud SDK-Familie
+### Antwort
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                 | Beschreibung                                                                 |
+|------|---------------------------|------------------------------------------------------------------------------|
+| 200  | OK                        | Filter erfolgreich angewendet; Antwort enthält Details zum Vorgang.         |
+| 400  | Bad Request               | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp).     |
+| 401  | Unauthorized              | Ungültiges oder fehlendes JWT-Token.                                        |
+| 413  | Payload Too Large         | Die hochgeladene Datei überschreitet das Größenlimit.                       |
+| 500  | Internal Server Error     | Unerwarteter Serverfehler.                                                  |
+
+## Verwendung der PostImportData-API mit SDKs
+
+### PostImportData-API-Spezifikation
+
+Die [OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData) definiert eine öffentlich zugängliche Programmierschnittstelle, mit der Sie REST-Interaktionen direkt aus einem Webbrowser durchführen können.
+
+### Verwendung der Aspose.Cells Cloud SDKs
+
+Die Verwendung eines SDKs ist die schnellste Möglichkeit, diese Funktion zu integrieren. Ein SDK abstractisiert die Low-Level-Details, sodass Sie sich auf Ihre Geschäftslogik konzentrieren können. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud).
+
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webservices mit verschiedenen SDKs aufgerufen werden:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

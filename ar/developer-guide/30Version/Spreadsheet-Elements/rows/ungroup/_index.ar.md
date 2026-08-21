@@ -1,76 +1,71 @@
-﻿---
-title: إلغاء تجميع الصفوف في ورقة العمل Excel
-second_title: Documen
-linktitle: أونغرو
-type: docs
-url: /ar/rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
-keywords: Ungroup rows on an Excel worksheet
-description: يدعم Cloud REST فك تجميع الصفوف في ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 70
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، فك تجميع الصفوف في ورقة عمل Excel
 ---
-يشير هذا REST API إلى إلغاء تجميع الصفوف في ورقة العمل Excel.
+title: "إلغاء تجميع الصفوف في ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "إلغاء التجميع"
+type: docs
+url: /rows/ungroup/
+aliases: [/ungroup-rows-in-excel-worksheet/]
+keywords: "إلغاء تجميع الصفوف، Excel، Aspose.Cells Cloud، REST API، SDK، جدول بيانات"
+description: "تعلم كيفية إلغاء تجميع الصفوف في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API وSDKs للغات البرمجة المختلفة."
+weight: 70
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية REST بإلغاء تجميع الصفوف في ورقة عمل Excel.
+
+## واجهة برمجة التطبيقات REST
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/ungroup
- 
 ```
 
-معلمات الطلب هي:
+### **معاملات الطلب**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| الفهرس الأول| عدد صحيح| استفسار| مؤشر الصف الأول الذي سيتم تشغيله.|
-| الفهرس الأخير| عدد صحيح| استفسار| مؤشر الصف الأخير الذي سيتم تشغيله.|
-| هو الكل| منطقي| استفسار| هل سيتم تشغيل جميع الصفوف؟|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعامل | النوع    | الموقع | الوصف                                                                 |
+|-------------|----------|--------|------------------------------------------------------------------------|
+| name        | string   | path   | اسم ملف العمل (Workbook).                                              |
+| sheetName   | string   | path   | اسم ورقة العمل.                                                        |
+| firstIndex  | integer  | query  | الفهرس الصفر-based للصف الأول المراد إلغاء تجميعه.                    |
+| lastIndex   | integer  | query  | الفهرس الصفر-based للصف الأخير المراد إلغاء تجميعه.                   |
+| isAll       | boolean  | query  | إذا كانت القيمة **true**، سيتم إلغاء تجميع جميع الصفوف في النطاق المحدد. |
+| folder      | string   | query  | المجلد الذي يحتوي على ملف العمل.                                      |
+| storageName | string   | query  | اسم وحدة التخزين التي يقع فيها ملف العمل.                             |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows) على واجهة برمجة تطبيقات متاحة عمومًا وتتيح لك إجراء تفاعلات REST مباشرةً من متصفح ويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات ويب Aspose.Cells. يوضح المثال التالي كيفية إجراء المكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/ungroup?firstIndex=1&lastIndex=5&isAll=true" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+ -X POST \
+ -H "Content-Type: application/json" \
+ -H "Accept: application/json" \
+ -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## عائلة SDK للسحابة
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يتعامل SDK مع التفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+يوضح أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

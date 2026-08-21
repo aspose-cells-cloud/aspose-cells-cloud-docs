@@ -1,81 +1,110 @@
-﻿---
-title: İlk Cep Telefonu'nu Excel Worksheet'ten Alın
+---
+title: "Bir Excel Çalışma Sayfasından İlk Hücreyi (A1) Alın"
 type: docs
 url: /tr/get-first-cell-from-excel-worksheet/
 weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel'den İlk Hücreyi Alma Çalışma Sayfası
+keywords: "Aspose.Cells Cloud, Excel, REST API, İlk Hücreyi Al, Çalışma Sayfası, A1, API v3"
+description: "Aspose.Cells Cloud REST API v3.0 ile bir Excel çalışma sayfasının ilk hücresini (A1) nasıl alacağınızı öğrenin. C#, Java, PHP, Python ve diğerleri için cURL isteği, JSON yanıtı, hata örnekleri ve SDK örneklerini içerir."
+ArticleTitle: "Aspose.Cells Cloud API kullanarak bir Excel Çalışma Sayfasından İlk Hücreyi (A1) Alın"
 ---
-Bu REST API, `cellOrMethodName` parametresi `firstcell` olduğunda Excel dosyasında `firstcell` alındığını gösterir.
 
-- **cURL Örnek**
+Bu REST API, `cellOrMethodName` parametresi `firstcell` olarak ayarlandığında bir Excel dosyasındaki **ilk hücreyi** nasıl alacağınızı gösterir.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Uç Nokta**  
+`GET https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{worksheet}/cells/firstcell`
+
+- **cURL Örneği**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```shell
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+**Parametreler**
+
+| Parametre          | Tür     | Açıklama                                                     | Gerekli |
+|--------------------|---------|-------------------------------------------------------------|---------|
+| `cellOrMethodName` | string  | İlk hücreyi almak için `firstcell` olarak ayarlanmalıdır.  | Evet    |
+| `fileName`         | string  | Çalışma kitapası dosyasının adı (örneğin, `myWorkbook.xlsx`). | Evet    |
+| `worksheet`        | string  | Çalışma sayfasının adı (örneğin, `Sheet1`).                 | Evet    |
+| `Authorization`    | header  | Kimlik doğrulama için Bearer jetonu.                        | Evet    |
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "A1",
-
     "Row": 0,
-
     "Column": 0,
-
     "Value": "Category",
-
     "Type": "IsString",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
     "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Category</Font>",
-
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
+
+**Hata Yanıtları**
+
+- **401 Yetkisiz İstek**
+
+```json
+{
+  "Code": "401",
+  "Message": "Geçersiz erişim jetonu."
+}
+```
+
+- **404 Bulunamadı**
+
+```json
+{
+  "Code": "404",
+  "Message": "Belirtilen çalışma kitapası, çalışma sayfası veya hücre bulunamadı."
+}
+```
+
+- **500 Sunucu İç Hatası**
+
+```json
+{
+  "Code": "500",
+  "Message": "Sunucuda beklenmeyen bir hata oluştu."
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod  | Anlamı                      | Açıklama                                              |
+|------|-----------------------------|-------------------------------------------------------|
+| 200  | Başarılı (OK)               | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400  | Geçersiz İstek              | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401  | Yetkisiz İstek              | Geçersiz veya eksik JWT jetonu.                       |
+| 413  | Yük Çok Büyük               | Yüklenecek dosya boyut sınırını aşıyor.               |
+| 500  | Sunucu İç Hatası            | Beklenmeyen sunucu hatası.                            |
 
 {{< /tab >}}
 
@@ -83,15 +112,9 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 - **Bulut SDK Ailesi**
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoludur. SDK, düşük seviye detayları ele aldığı için projenizin görevlerine odaklanabilirsiniz. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
-
-- **Bulut SDK Ailesi**
-
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
-
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerini farklı SDK’lar kullanarak nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -144,3 +167,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

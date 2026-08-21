@@ -1,78 +1,77 @@
-﻿---
-title: Supprimer une propriété de document particulière
-second_title: Documen
-linktitle: Supprimer
-type: docs
-url: /fr/document-properties/delete/
-aliases: [/remove-a-particular-document-property/]
-keywords: Delete, and update properties from excel files
-description: Aspose.Cells Cloud REST API prend en charge la suppression de propriétés dans les fichiers Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 50
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Supprimer une propriété de document spécifique
 ---
-Ce REST API indique la propriété du document `delete`.
+title: "Supprimer une propriété de document spécifique"
+second_title: "Document"
+linktitle: "Supprimer"
+type: docs
+url: /document-properties/delete/
+aliases: [/remove-a-particular-document-property/]
+keywords: "Aspose.Cells, supprimer une propriété de document, API de métadonnées Excel, REST, SDK cloud, exemple cURL"
+description: "Supprimer une propriété de document spécifique d’un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud v3.0. Inclut des exemples cURL et des exemples de SDK pour C#, Java, Python, et plus encore."
+weight: 50
+---
 
-## RSET API
+Cette API REST supprime une propriété de document à partir d’un classeur.
+
+## API REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
 ```
 
-Les paramètres de la requête sont :
+### Paramètres de la requête
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Le nom du document.|
-| nom de la propriété| chaîne| chemin| Le nom de la propriété.|
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type   | Emplacement | Obligatoire | Description                                             |
+| ---------------- | ------ | ----------- | ----------- | ------------------------------------------------------- |
+| name             | string | path        | Oui         | Le nom du classeur Excel.                              |
+| propertyName     | string | path        | Oui         | Le nom de la propriété de document à supprimer.       |
+| folder           | string | query       | Non         | Le chemin du dossier dans lequel le classeur est stocké. |
+| storageName      | string | query       | Non         | Le nom du service de stockage.                         |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty) définit une interface de programmation accessible publiquement et vous permet d’effectuer des interactions REST directement depuis un navigateur web.
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API cloud à l’aide de cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author"  \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author" \
+     -X DELETE \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-  
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
+### Réponses d’erreur
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+| Statut HTTP | Description                                                              | Exemple JSON                                                       |
+| ----------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| 400         | Requête incorrecte – paramètres requis manquants ou valeurs invalides. | `{"Code":400,"Message":"Paramètre requis manquant : 'name'."}`    |
+| 401         | Non autorisé – jeton JWT invalide ou absent.                            | `{"Code":401,"Message":"Jeton d'accès invalide."}`                |
+| 404         | Introuvable – le classeur ou la propriété spécifiée n’existe pas.       | `{"Code":404,"Message":"Propriété de document introuvable."}`     |
+| 500         | Erreur interne du serveur – une condition inattendue s’est produite.   | `{"Code":500,"Message":"Une erreur inattendue s'est produite."}` |
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+## Famille de SDK cloud
+
+L’utilisation d’un SDK est le moyen le plus efficace d’accélérer le développement. Un SDK gère les détails de bas niveau, vous permettant ainsi de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK cloud Aspose.Cells.
+
+Les exemples de code suivants montrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

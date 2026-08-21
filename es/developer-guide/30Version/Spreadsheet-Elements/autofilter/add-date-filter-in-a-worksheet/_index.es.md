@@ -1,84 +1,116 @@
-﻿---
-title: Agregar filtro de fecha en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Añadir filtro de fecha
+---
+title: "Agregar filtro de fecha a una hoja de cálculo de Excel"
+second_title: "Document"
+linktype: "add-date-filter"
 type: docs
 url: /es/autofilter/add-date-filter/
-aliases: [/add-date-filter-in-a-worksheet/,/autofilter/add-a-date-filter/]
-keywords: Adds a date filter on an Excel worksheet
-description: El SDK Aspose.Cells Cloud API permite añadir un filtro de fecha a una hoja de cálculo Excel. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+aliases:
+  - /add-date-filter-in-a-worksheet/
+  - /autofilter/add-a-date-filter/
+description: "Aprenda cómo agregar un filtro de fecha a una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud (v3.0). Incluye un ejemplo con cURL, fragmentos de código para SDK (C#, Java, Python, etc.), parámetros y manejo de errores."
 weight: 65
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Agregar filtro de fecha en una hoja de cálculo Excel
+ArticleTitle: "Agregar filtro de fecha a una hoja de cálculo de Excel | Aspose.Cells Cloud API"
+keywords: "Aspose.Cells, filtro de fecha en Excel, API de AutoFilter, API REST, SDK en la nube, cURL, automatización de hojas de cálculo"
 ---
-Este REST API indica agregar un `date filter` en una hoja de trabajo Excel.
 
-## RSET API
+Esta API REST agrega un **filtro de fecha** a una hoja de cálculo de Excel.
 
-```bash
+**Requisitos previos:** Debe tener un token JWT válido y el libro de trabajo de destino ya debe existir en la ubicación de almacenamiento especificada. La solicitud no requiere un cuerpo JSON.
 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
+## API PutWorksheetDateFilter
 
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 ```
 
-Los parámetros de la solicitud son:
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| Camino| El nombre del libro de trabajo.|
-| nombreHoja| cadena| Camino| El nombre de la hoja de trabajo.|
-|rango|cadena| Consulta||
-|índice de campo|entero| Consulta||
-|Tipo de agrupación de fecha y hora|cadena| Consulta| Día/Hora/Minuto/Mes/Segundo/Año|
-|año|entero| Consulta||
-|mes|entero| Consulta||
-|día|entero| Consulta||
-|hora|entero| Consulta||
-|minuto|entero| Consulta||
-|segundo|entero| Consulta||
-|MatchBlanks|cadena| Consulta|verdadero/falso|
-|refrescar|cadena| Consulta|verdadero/falso|
-|carpeta|cadena| Consulta|Carpeta del libro de trabajo original.|
-|nombreDeAlmacenamiento|cadena| Consulta|Nombre de almacenamiento.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+### Parámetros de solicitud
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Nombre del parámetro       | Tipo    | Ubicación | Descripción                                                                                                                                                     |
+| -------------------------- | ------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**                   | string  | Ruta      | Nombre del libro de trabajo.                                                                                                                                   |
+| **sheetName**              | string  | Ruta      | Nombre de la hoja de cálculo.                                                                                                                                  |
+| **range**                  | string  | Consulta  | Rango de Excel al que se aplica el filtro (por ejemplo, `A1:B1`).                                                                                              |
+| **fieldIndex**             | integer | Consulta  | Índice de base cero de la columna que se va a filtrar.                                                                                                         |
+| **dateTimeGroupingType**   | string  | Consulta  | Tipo de agrupación para el filtro de fecha/hora. Los valores permitidos son `Day`, `Hour`, `Minute`, `Month`, `Second`, `Year`. Los valores distinguen mayúsculas y minúsculas; el valor predeterminado es `Day`. |
+| **year**                   | integer | Consulta  | Componente de año del valor del filtro.                                                                                                                        |
+| **month**                  | integer | Consulta  | Componente de mes del valor del filtro.                                                                                                                        |
+| **day**                    | integer | Consulta  | Componente de día del valor del filtro.                                                                                                                        |
+| **hour**                   | integer | Consulta  | Componente de hora del valor del filtro.                                                                                                                       |
+| **minute**                 | integer | Consulta  | Componente de minuto del valor del filtro.                                                                                                                     |
+| **second**                 | integer | Consulta  | Componente de segundo del valor del filtro.                                                                                                                    |
+| **matchBlanks**            | boolean | Consulta  | Incluir celdas en blanco (`true` o `false`).                                                                                                                  |
+| **refresh**                | boolean | Consulta  | Actualizar el filtro tras aplicarlo (`true` o `false`).                                                                                                        |
+| **folder**                 | string  | Consulta  | Ruta de la carpeta del libro de trabajo original.                                                                                                              |
+| **storageName**            | string  | Consulta  | Nombre del servicio de almacenamiento.                                                                                                                         |
+
+*La solicitud PUT no requiere un cuerpo de solicitud; todos los parámetros se suministran a través de la cadena de consulta.*
+
+### **Respuesta**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                                                 |
+|--------|-----------------------------|-----------------------------------------------------------------------------|
+| 200    | OK                          | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Bad Request                 | Parámetros faltantes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | Unauthorized                | Token JWT no válido o faltante.                                             |
+| 413    | Payload Too Large           | El archivo cargado excede el límite de tamaño.                             |
+| 500    | Internal Server Error       | Error inesperado del servidor.                                              |
+
+## Cómo usar la API PutWorksheetDateFilter con SDK
+
+### Especificación de la API PutWorksheetDateFilter
+
+La <a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter" rel="noopener noreferrer">Especificación OpenAPI</a> define una interfaz de programación pública accesible y permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos **cURL** para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?range=A1:B1&fieldIndex=0&dateTimeGroupingType=Year&year=1920&refresh=true" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?range=A1:B1&fieldIndex=0&dateTimeGroupingType=Year&year=1920&refresh=true" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+### Utilizar los SDK de Aspose.Cells Cloud
+
+Usar un SDK es la forma más rápida de desarrollar. Un SDK maneja los detalles de bajo nivel para que usted pueda centrarse en las tareas de su proyecto. Consulte el <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">repositorio de GitHub</a> para obtener una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells utilizando varios SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -108,7 +140,7 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDateFilter.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDateFilter.ts" >}}
 
 {{< /tab >}}
 

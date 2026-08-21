@@ -1,48 +1,90 @@
-﻿---
-title: Fil'i Taşı
-second_title: Documen
-linktitle: Fil'i Taşı
-type: docs
-url: /tr/move-file/
-keywords: Move file, Aspose.Cells API, File Management, Excel API, REST API, Cloud Storage, Spreadsheet Manipulatio
-description: Aspose.Cells bulut depolama alanındaki dosyaları yönetmek için MoveFile API'i nasıl kullanacağınızı öğrenin
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Dosya Taşıma, Dosya Yönetimi, Bulut Depolama
 ---
-## **Excel API: Dosyayı Taşı**
+title: "Aspose.Cells Cloud Move File API – Bulut Ortamında Dosyaların Hızlı Taşınması İçin Arayüz"
+second_title: "Belge"
+ArticleTitle: "Bulut Tabanlı Excel Dosyası Verimli Yönetim Çözümü – Bulut Ortamında Dosyaların Hızlı Taşınması İçin Arayüz"
+linktitle: "Dosya Taşı"
+type: docs
+url: /move-file/
+keywords: "Aspose.Cells, Dosya Taşı API, Bulut Depolama, Excel API, Dosya Yönetimi"
+description: "Aspose.Cells Cloud deposunda v4.0 Dosya Taşı API’si kullanarak klasörler arasında dosya taşıma yöntemi – uç nokta, parametreler, örnekler ve SDK bağlantıları."
+weight: 100
+---
 
+**moveFile** API’si, bir dosyayı Aspose.Cells Cloud deposunda bir konumdan diğerine taşır. Bu, dosyalarınızı düzenlemenize ve depolama alanını verimli şekilde yönetmenize yardımcı olur.
+
+## **Excel API: Dosya Taşı**
+
+### Web API’si
+
+```bash
+PUT https://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}
 ```
-PUT http://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}
+
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
-### **İşlev Açıklaması**
+### **moveFile** API’sinin İstek Parametreleri
 
- The**Dosyayı taşı** API, bir dosyayı Aspose.Cells bulut depolama alanı içinde bir konumdan diğerine taşımanıza olanak tanır. Bu, özellikle dosyaları düzenlemek ve depolama alanını etkili bir şekilde yönetmek için kullanışlıdır.
+| Parametre Adı   | Tür    | Yol/Sorgu Dizesi/HTTP Gövdesi | Açıklama                                          |
+|-----------------|--------|-------------------------------|---------------------------------------------------|
+| srcPath         | String | Yol                           | Taşınacak dosyanın kaynak yolu.                   |
+| destPath        | String | Sorgu                         | Dosyanın taşınacağı hedef yol.                    |
+| srcStorageName  | String | Sorgu                         | Uygulanabilirse kaynak depo adı.                  |
+| destStorageName | String | Sorgu                         | Uygulanabilirse hedef depo adı.                   |
+| versionId       | String | Sorgu                         | Uygulanabilirse dosyanın sürüm kimliği.           |
 
-###  İstek parametreleri**Dosyayı taşı** API
+### **Yanıt**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTP Gövdesi| Tanım|
-|---------------|--|------------------------|--------------------------------------|
-| srcPath| Sicim| Yol| Taşınacak dosyanın kaynak yolu.|
-| hedefYolu| Sicim| Sorgu| Dosyanın taşınacağı hedef yol.|
-| srcDepolamaAdı| Sicim| Sorgu| Varsa kaynak depolama adı.|
-| hedefDepolamaAdı| Sicim| Sorgu|Uygulanabilirse hedef depolama adı.|
-| sürüm kimliği| Sicim| Sorgu| Uygunsa dosyanın sürüm kimliği.|
-
-### **Yanıt Açıklaması**
+Başarılı bir istek, boş JSON gövdesiyle **HTTP 200 OK** döndürür.
 
 ```json
-{
-Void
-}
+{}
 ```
+
+**HTTP Durum Kodları**
+
+| HTTP Kodu | HTTP Durumu         | Açıklama                                                           |
+|-----------|---------------------|--------------------------------------------------------------------|
+| 200       | OK (Tamam)          | Web API’si başarıyla çağrıldı; yanıt işlem ayrıntılarını içerir.  |
+| 400       | Bad Request (Hatalı İstek) | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401       | Unauthorized (Yetkisiz)    | Geçersiz veya eksik JWT belirteci.                               |
+| 413       | Payload Too Large (Aşırı Büyük Yük) | Yüklenen dosya boyut limitini aşıyor.                          |
+| 500       | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası.                                    |
 
 ## OpenAPI Spesifikasyonu
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/FileController/MoveFile) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/FileController/MoveFile), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
-## Excel API SDK
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye nasıl istek gönderileceğini göstermektedir.
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}?destPath={destPath}" \
+     -H "Authorization: Bearer {access_token}"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```json
+{}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. SDK, düşük seviye detayları yöneterek projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak Aspose.Cells web hizmetlerine nasıl istek gönderileceğini göstermektedir:
+
+---

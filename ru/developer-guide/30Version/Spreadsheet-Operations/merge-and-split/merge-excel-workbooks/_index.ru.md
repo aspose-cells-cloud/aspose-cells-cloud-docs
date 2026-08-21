@@ -1,291 +1,318 @@
-﻿---
-title: Объединить рабочие книги Excel с другими книгами Excel
-second_title: Documen
-linktitle: Объединить файл Excel с файлом Excel
-type: docs
-url: /ru/merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
-keywords: Merge an Excel Workbooks into other Excel file
-description: Aspose.Cells Cloud REST API поддерживает объединение файлов Excel с другими файлами Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 50
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Объединение рабочих книг Excel с другими файлами Excel
 ---
-Этот REST API указывает на объединение книги Excel `workbook` с другой книгой Excel.
+title: "Объединение рабочей книги Excel в другую рабочую книгу"
+second_title: "Документ"
+linktitle: "Объединение рабочей книги Excel в другую рабочую книгу"
+type: docs
+url: /merge-an-excel-file-into-the-excel-file/
+aliases: [/merge-excel-workbooks/, /workbook/merge/]
+keywords: "объединение Excel, Aspose.Cells Cloud, API рабочей книги, REST API, объединение электронных таблиц, облачный SDK, аутентификация, mergeWith, пример cURL"
+description: "Пошаговое руководство по объединению одной рабочей книги Excel в другую с использованием REST API Aspose.Cells Cloud (версия 3.0). Включает аутентификацию, обязательный параметр mergeWith, пример cURL и фрагменты кода SDK."
+ArticleTitle: "Объединение рабочей книги Excel в другую рабочую книгу с использованием API Aspose.Cells Cloud"
+weight: 50
+---
 
-**Параметр запроса**
+## REST API
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|папка|нить|Оригинальная папка рабочей тетради.|
-|имя_хранилища|нить|Имя хранилища.|
+Этот REST API объединяет **рабочую книгу** Excel в другую рабочую книгу.
 
-## ОТДЫХ API
+```bash
+POST https://api.aspose.cloud/v3.0/cells/{name}/merge
+```
 
-|**API**|**Тип**|**Описание**|**Swagger Link**|
-|:- |:- |:- |:- |
-|/cells/{name}/merge|ПОЧТА|Объединение рабочих книг Excel|[PostWorkbooksMerge](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge)|
+### **Безопасность и аутентификация**
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе токена JWT</a>.
 
- Вы можете использовать**cURL** Инструмент командной строки для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **Параметр запроса**
+
+| Имя параметра | Тип   | Описание                                                        |
+| ------------- | ----- | --------------------------------------------------------------- |
+| folder        | string| Папка, содержащая исходную рабочую книгу.                       |
+| storageName   | string| Имя хранилища.                                                  |
+| **mergeWith** | string| Имя рабочей книги, которая будет объединена с целевой рабочей книгой. |
+
+### **Ответ**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+      "Workbook": {
+    "FileName": "test.xlsx",
+    "Links": [
+      {
+        "Href": "/test.xlsx",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Скачать как CSV",
+        "Type": "text/csv"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Скачать как HTML",
+        "Type": "text/html"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Скачать как ODS",
+        "Type": "application/vnd.oasis.opendocument.spreadsheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Скачать как PDF",
+        "Type": "application/pdf"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Скачать как текст в табличном формате с разделителями",
+        "Type": "text/plain"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Скачать как TIFF",
+        "Type": "image/tiff"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Скачать как Microsoft Excel 2003",
+        "Type": "application/vnd.ms-excel"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Скачать как Microsoft Excel 2007",
+        "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Скачать как XPS",
+        "Type": "application/vnd.ms-xpsdocument"
+      }
+    ],
+    "Worksheets": {
+      "link": {
+        "Href": "/worksheets",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DefaultStyle": {
+      "link": {
+        "Href": "/defaultstyle",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DocumentProperties": {
+      "link": {
+        "Href": "/documentproperties",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Names": {
+      "link": {
+        "Href": "/names",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Settings": {
+      "link": {
+        "Href": "/settings",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "IsWriteProtected": "False",
+    "IsProtected": "False",
+    "IsEncryption": "false",
+    "Password": null
+  }
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                                         |
+|-----|-----------------------------|------------------------------------------------------------------|
+| 200 | OK (OK)                     | Фильтр применён успешно; ответ содержит детали операции.        |
+| 400 | Bad Request (Неверный запрос)| Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизовано)| Недействительный или отсутствующий токен JWT.                   |
+| 413 | Payload Too Large (Слишком большой полезный груз)| Загруженный файл превышает лимит размера.               |
+| 500 | Internal Server Error (Внутренняя ошибка сервера)| Непредвиденная ошибка сервера.                             |
+
+## Как использовать API PostWorkbooksMerge с SDK
+
+### Спецификация API PostWorkbooksMerge
+
+[OpenAPI-спецификация](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) определяет общедоступное программное интерфейсное API, позволяющее выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки **cURL** для простого доступа к веб-сервисам Aspose.Cells. Следующий пример показывает, как выполнять вызовы в облачный API с помощью cURL, включая обязательный заголовок аутентификации.
+
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/merge?mergeWith=test2.xlsx" -H "accept: application/json"
-
+```bash
+# Объединить test2.xlsx в test.xlsx
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/merge?mergeWith=test2.xlsx" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access-token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Workbook": {
-
     "FileName": "test.xlsx",
-
     "Links": [
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As CSV",
-
+        "Title": "Скачать как CSV",
         "Type": "text/csv"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As HTML",
-
+        "Title": "Скачать как HTML",
         "Type": "text/html"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As ODS",
-
+        "Title": "Скачать как ODS",
         "Type": "application/vnd.oasis.opendocument.spreadsheet"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As PDF",
-
+        "Title": "Скачать как PDF",
         "Type": "application/pdf"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As Table Delimited Text Format",
-
+        "Title": "Скачать как текст в табличном формате с разделителями",
         "Type": "text/plain"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As TIFF",
-
+        "Title": "Скачать как TIFF",
         "Type": "image/tiff"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As Microsoft Excel 2003",
-
+        "Title": "Скачать как Microsoft Excel 2003",
         "Type": "application/vnd.ms-excel"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As Microsoft Excel 2007",
-
+        "Title": "Скачать как Microsoft Excel 2007",
         "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As XPS",
-
+        "Title": "Скачать как XPS",
         "Type": "application/vnd.ms-xpsdocument"
-
       }
-
     ],
-
     "Worksheets": {
-
       "link": {
-
         "Href": "/worksheets",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "DefaultStyle": {
-
       "link": {
-
         "Href": "/defaultstyle",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "DocumentProperties": {
-
       "link": {
-
         "Href": "/documentproperties",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "Names": {
-
       "link": {
-
         "Href": "/names",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "Settings": {
-
       "link": {
-
         "Href": "/settings",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "IsWriteProtected": "False",
-
     "IsProtected": "False",
-
     "IsEncryption": "false",
-
     "Password": null
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
-
-Response headers
-
-
 ```
+
+В ответе возвращается объект `Workbook`, содержащий метаданные объединённой рабочей книги, включая ссылки для скачивания результата в различных форматах (CSV, PDF, HTML и др.).
+
+Заголовки ответа
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK абстрагирует низкоуровневые детали и позволяет сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud см. в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как выполнять вызовы в веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

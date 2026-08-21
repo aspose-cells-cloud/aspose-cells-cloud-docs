@@ -1,81 +1,103 @@
-﻿---
-title: Agregar una forma en una hoja de trabajo Excel
-second_title: Documen
-linktitle: Anuncio
-type: docs
-url: /es/shapes/add/
-aliases: [/add-a-shape-inside-the-worksheet/]
-keywords: Add shape on an Excel workshee
-description: Aspose.Cells Cloud REST API permite agregar formas a una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 30
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Agregar una forma en una hoja de cálculo Excel
 ---
-Este REST API indica agregar una forma en una hoja de cálculo Excel.
+title: "Agregar una forma a una hoja de cálculo de Excel"
+second_title: "Document"
+linktype: "Add"
+type: docs
+url: /shapes/add/
+aliases: [/add-a-shape-inside-the-worksheet/]
+keywords: "Aspose.Cells, agregar forma, Excel, API REST, SDK en la nube, shapeDTO, tipo de dibujo"
+description: "Aprenda cómo agregar formas (arco, línea, rectángulo, etc.) a una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud v3.0. Incluye sintaxis de solicitud, parámetros obligatorios, pasos de autenticación y código de ejemplo del SDK."
+weight: 30
+ArticleTitle: "Agregar una forma a una hoja de cálculo de Excel mediante la API de Aspose.Cells Cloud"
+---
 
-## RSET API
+Esta API REST agrega una forma a una hoja de cálculo de Excel.  
+El punto de conexión pertenece a la **versión de la API v3.0**; asegúrese de utilizar un token de acceso JWT obtenido a través del flujo OAuth2 de Aspose Cloud (client-id/client-secret) e incluirlo en el encabezado `Authorization: Bearer <token>`.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
- 
+### **Seguridad y autenticación**
+
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
+
+## API PutWorksheetShape
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
-Los parámetros de la solicitud son:
+### **Parámetros de la solicitud**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| nombre del documento.|
-| nombreHoja| cadena| camino| Nombre de la hoja de trabajo.|
-| formaDTO|| cuerpo||
-|tipo de dibujo| cadena| consulta| tipo de objeto de forma|
-| fila superior izquierda| entero| consulta| Índice de la fila superior izquierda.|
-| columna superior izquierda| entero| consulta| Índice de la columna superior izquierda.|
-| arriba| entero| consulta| Representa el desplazamiento vertical de Spinner desde su fila izquierda, en unidades de píxeles.|
-| izquierda| entero| consulta| Representa el desplazamiento horizontal de Spinner desde su columna izquierda, en unidades de píxeles.|
-| ancho| entero| consulta| Representa la altura del Spinner, en unidades de píxel.|
-| altura| entero| consulta| Representa el ancho de Spinner, en unidades de píxeles.|
-| carpeta| cadena| consulta| Carpeta del documento.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo    | Ubicación | Descripción                                                                                           |
+| --------------------- | ------- | --------- | ----------------------------------------------------------------------------------------------------- |
+| name                  | string  | path      | Nombre del documento.                                                                                 |
+| sheetName             | string  | path      | Nombre de la hoja de cálculo.                                                                         |
+| shapeDTO              | object  | body      | Objeto JSON que describe la forma a agregar (consulte la especificación OpenAPI para el esquema completo). |
+| drawingType           | string  | query     | Tipo de objeto de forma (por ejemplo, `arc`, `line`, `rectangle`).                                   |
+| upperLeftRow          | integer | query     | Índice de fila superior izquierdo de la forma.                                                        |
+| upperLeftColumn       | integer | query     | Índice de columna superior izquierdo de la forma.                                                     |
+| top                   | integer | query     | Desplazamiento vertical de la forma desde su borde superior, en píxeles.                              |
+| left                  | integer | query     | Desplazamiento horizontal de la forma desde su borde izquierdo, en píxeles.                           |
+| width                 | integer | query     | Ancho de la forma, en píxeles.                                                                        |
+| height                | integer | query     | Alto de la forma, en píxeles.                                                                         |
+| folder                | string  | query     | Carpeta que contiene el documento.                                                                    |
+| storageName           | string  | query     | Nombre del almacenamiento.                                                                            |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape) define una interfaz de programación públicamente accesible y permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube con cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes?DrawingType=arc&upperLeftRow=1&upperLeftColumn=1&top=1&left=1&width=100&height=100" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK",
+  "ShapeId": 5
 }
- 
 ```
+
+_La respuesta correcta devuelve el código de estado HTTP, un texto de estado y el identificador de la forma recién creada (`ShapeId`)._
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                                  |
+|--------|-----------------------------|--------------------------------------------------------------|
+| 200    | OK                          | Filtro aplicado correctamente; la respuesta contiene los detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros ausentes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT no válido o ausente.                               |
+| 413    | Carga útil demasiado grande | El archivo subido excede el límite de tamaño.               |
+| 500    | Error interno del servidor  | Error inesperado del servidor.                               |
+
+Las respuestas de error típicas incluyen:
+
+- **400 Solicitud incorrecta** – parámetros ausentes o no válidos.  
+- **401 No autorizado** – token JWT no válido o ausente.  
+- **404 No encontrado** – la hoja de cálculo o el documento especificados no existen.
+
+Cada error se devuelve como un objeto JSON que contiene los campos `Code` y `Message`.
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor manera de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel para que usted pueda centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells mediante varios SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

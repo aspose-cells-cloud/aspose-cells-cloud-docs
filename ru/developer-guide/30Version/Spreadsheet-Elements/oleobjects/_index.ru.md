@@ -1,20 +1,63 @@
-﻿---
-title: Работа с объектом Ole Excel
-second_title: Documen
-linktitle: OleObject
+---
+title: "Работа с OLE-объектами в Excel"
+second_title: "Документ"
+linktitle: "OleObjects"
 type: docs
 url: /ru/oleobjects/
-aliases: [/working-with-oleobjects/]
-keywords: Get, add, delete, and update an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает получение, добавление, удаление и обновление OLE-объектов на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+aliases: [/ru/working-with-oleobjects/]
+keywords: "OLE, Excel, Aspose.Cells, API, Cloud"
+description: "Используйте Aspose.Cells Cloud REST API для извлечения, добавления, обновления, удаления и преобразования OLE-объектов в листах Excel. Доступны SDK для Java, .NET, Python, PHP, Ruby, Go, Node.js, Perl, Swift и Android."
 weight: 100
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, OleObjects
+ArticleTitle: "Работа с OLE-объектами в Excel – Руководство по извлечению, добавлению, обновлению, удалению и преобразованию OLE-объектов"
 ---
-**Как работать с объектами OLE на листе Excel**
 
-- [Как получить OLE-объект из рабочего листа Excel.](/cells/ru/oleobjects/get/)
-- [Как добавить объект OLE на лист ab Excel.](/cells/ru/oleobjects/add/)
-- [Как обновить определенный объект OLE на листе Excel.](/cells/ru/oleobjects/update/)
-- [Как преобразовать объект OLE в изображение на листе Excel.](/cells/ru/oleobjects/convert/)
-- [Как удалить все объекты OLE на листе Excel.](/cells/ru/oleobjects/clear/)
-- [Как удалить определенный объект OLE на листе Excel.](/cells/ru/oleobjects/delete/)
+**Как работать с OLE-объектами в листе Excel**
+
+Aspose.Cells Cloud REST API предоставляет полный набор операций для программного управления OLE-объектами. Ниже приведено краткое описание каждой операции, включая HTTP-метод, шаблон конечной точки, необходимые параметры и пример ответа.
+
+- [Как получить OLE-объект из листа Excel](/ru/cells/oleobjects/get/)
+  - **Метод:** `GET`  
+  - **Конечная точка:** `/cells/{fileName}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}`  
+  - **Параметры:** `fileName` (строка), `sheetName` (строка), `oleObjectIndex` (целое число)  
+  - **Пример ответа:**  
+    ```json
+    {
+      "OleObject": {
+        "Name": "Chart1",
+        "ContentType": "image/png",
+        "Width": 400,
+        "Height": 300
+      }
+    }
+    ```
+
+- [Как добавить OLE-объект в лист Excel](/ru/cells/oleobjects/add/)
+  - **Метод:** `POST`  
+  - **Конечная точка:** `/cells/{fileName}/worksheets/{sheetName}/oleobjects`  
+  - **Параметры:** `fileName`, `sheetName`, `oleObject` (двоичные данные или base64), `imageFormat` (необязательный)  
+  - **Пример тела запроса:** multipart/form‑data с потоком файла.  
+  - **Пример ответа:** `201 Created` с заголовком Location новой OLE-ссылки.
+
+- [Как обновить конкретный OLE-объект в листе Excel](/ru/cells/oleobjects/update/)
+  - **Метод:** `PUT`  
+  - **Конечная точка:** `/cells/{fileName}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}`  
+  - **Параметры:** `fileName`, `sheetName`, `oleObjectIndex`, `oleObject` (обновлённое содержимое)  
+  - **Пример ответа:** `200 OK` с метаданными обновлённого объекта.
+
+- [Как преобразовать OLE-объект в изображение в листе Excel](/ru/cells/oleobjects/convert/)
+  - **Метод:** `GET`  
+  - **Конечная точка:** `/cells/{fileName}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}/convert`  
+  - **Параметры:** `fileName`, `sheetName`, `oleObjectIndex`, `format` (например, `png`, `jpeg`)  
+  - **Пример ответа:** Двоичный поток изображения преобразованного OLE-объекта.
+
+- [Как удалить все OLE-объекты в листе Excel](/ru/cells/oleobjects/clear/)
+  - **Метод:** `DELETE`  
+  - **Конечная точка:** `/cells/{fileName}/worksheets/{sheetName}/oleobjects`  
+  - **Параметры:** `fileName`, `sheetName`  
+  - **Пример ответа:** `204 No Content`, указывающий, что все OLE-объекты были удалены.
+
+- [Как удалить конкретный OLE-объект в листе Excel](/ru/cells/oleobjects/delete/)
+  - **Метод:** `DELETE`  
+  - **Конечная точка:** `/cells/{fileName}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}`  
+  - **Параметры:** `fileName`, `sheetName`, `oleObjectIndex`  
+  - **Пример ответа:** `204 No Content`, подтверждающий удаление объекта.

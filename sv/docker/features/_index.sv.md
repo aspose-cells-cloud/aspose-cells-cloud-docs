@@ -1,45 +1,74 @@
-﻿---
-title: "Aspose.Cells Cloud Docker Core-funktionalitet: Konvertering av kalkylblad, sammanslagning, delning, skydd, databehandling med mera"
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Docker Core Functionalit
-linktitle: Särdrag
-type: docs
-url: /sv/docker-container-features/
-description: "Aspose.Cells Cloud Docker Container är en containerbaserad tjänst som tillhandahålls av Aspose och är baserad på Docker, vilket gör att du kan distribuera funktionerna i Aspose.Cells Cloud API i lokala eller privata molnmiljöer utan att förlita dig på Aspose:s publika molntjänster."
-weight: 30
-kwords: Excel Cloud Docker-behållare, Self-Cloud Docker-behållare, REST Docker-behållare, kalkylblad, PDF, CSV, JSON, Markdown, Docker-avbildning, Docker-behållare
 ---
-## Vad är Aspose.Cells Cloud Docker-containern?
+title: "Aspose.Cells Cloud Docker – Core-funktionalitet: Konvertering av kalkylark, sammanslagning, delning, skyddning, datahantering med mera."
+second_title: "Dokument"
+ArticleTitle: "Aspose.Cells Cloud Docker – Core-funktionalitet"
+linktitle: "Funktioner"
+type: docs
+url: /docker-container-features/
+description: "Kör Aspose.Cells Cloud API lokalt med Aspose.Cells Cloud Docker Container – en Docker-baserad, containerniserad tjänst som erbjuder fullständig bearbetning av kalkylark, sekretess och offline-funktionalitet utan att använda Asposes offentliga molntjänster."
+weight: 30
+keywords:
+  - Aspose.Cells
+  - Docker
+  - Konvertering av kalkylark
+  - Excel- bearbetning
+  - PDF-export
+  - CSV-hantering
+  - REST API
+  - Containeriserad tjänst
+  - Privat molntjänst
+  - Offlinebearbetning
+---
 
-Aspose.Cells Cloud Docker Container är en containerbaserad tjänst som tillhandahålls av Aspose och är baserad på Docker, vilket gör att du kan distribuera funktionerna i Aspose.Cells Cloud API i lokala eller privata molnmiljöer utan att förlita dig på Aspose:s publika molntjänster.
+## Vad är Aspose.Cells Cloud Docker Container?
 
-## Varför ska man använda Cloud Docker-containern Aspose.Cells?
+Aspose.Cells Cloud Docker Container är en containerniserad tjänst från Aspose som är baserad på Docker och som gör det möjligt att distribuera Aspose.Cells Cloud API-funktionalitet i lokala eller privata molnmiljöer utan att behöva använda Asposes offentliga molntjänster.
 
-Aspose.Cells Cloud Docker Container är en kraftfull container för kalkylbladsbehandling som stöder:
+## Varför använda Aspose.Cells Cloud Docker Container?
 
-### Kärnfunktioner
+Aspose.Cells Cloud Docker Container är en kraftfull containertjänst för kalkylarksbearbetning som stöder:
 
-- Läsa och skriva Excel-filer (XLS, XLSX, CSV, ODS, etc.)
-- Formelberäkningar, diagram, villkorsstyrd formatering, pivottabell, diagram etc.
-- Formatkonvertering (t.ex. Excel till PDF, HTML, bilder etc.)
-- Celloperationer, stilinställningar, kalkylbladshantering etc.
+### Core-funktioner
 
-Aspose.Cells Cloud Docker Container inkapslar dessa funktioner som en RESTful API och paketerar dem i en Docker-avbildning, så att du kan köra den på din egen infrastruktur.
+- Läsning och skrivning av Excel-filer (XLS, XLSX, CSV, ODS etc.)
+- Formelberäkningar, diagram, villkorsformatering, pivottabeller etc.
+- Filformatskonvertering (t.ex. Excel till PDF, HTML, bilder etc.)
+- Celloperationer, stilinställningar, arbetsblads hantering etc.
 
-### De viktigaste fördelarna
+Aspose.Cells Cloud Docker Container inkapslar dessa funktioner som ett RESTful API och paketerar dem till en Docker-image, så att du kan köra dem på din egen infrastruktur.
 
-| Fördelar| Beskrivning|
-|:- |:- |
-| Datasekretess och säkerhet| All filbehandling sker inom ditt privata nätverk, inget behov av att ladda upp till ett tredjepartsmoln.|
-| Offline-tillgänglighet| Förlitar sig inte på det publika molnet Aspose, lämplig för intranät eller isolerade miljöer.|
-| Skalbarhet| Skala enkelt ut via Docker/Kubernetes.|
-| Den enade API| Helt kompatibel med Aspose.Cells Cloud public API, inga kodändringar krävs.|
-| Licenskontroll| Stöder två typer av auktorisering, välj den som passar dig baserat på din faktiska situation.|
+### Huvudfördelar
 
-## Hur man använder Cloud Docker-behållaren Aspose.Cells
+| Fördelar                     | Beskrivning                                                                 |
+| ---------------------------- | --------------------------------------------------------------------------- |
+| Datasekretess och säkerhet   | All filbearbetning sker inom ditt privata nätverk; ingen behov av att ladda upp till en tredjeparts molntjänst. |
+| Offline-tillgänglighet        | Fungerar oberoende av Aspose offentliga molntjänster, lämplig för intranät eller isolerade miljöer. |
+| Skalbarhet                   | Enkel skalning uppåt via Docker/Kubernetes.                                |
+| Enhetligt API                | Fullständig kompatibilitet med Aspose.Cells Cloud offentliga API; inga kodändringar krävs. |
+| Licenstyrning                 | Stödjer två typer av auktorisering; välj den som passar din situation.     |
 
- Se användarmanualen --[hur man använder Aspose.Cells Cloud Docker-behållaren](https://docs.aspose.cloud/cells/docker-developer-guide/#run-asposecells-cloud-docker-container).
+## Hur man använder Aspose.Cells Cloud Docker Container
 
-## Referensdokument
+Se användarhandboken — [Hur man använder Aspose.Cells Cloud Docker Container](https://docs.aspose.cloud/cells/docker-developer-guide/#run-asposecells-cloud-docker-container).
 
-- [Så här konfigurerar du Aspose.Cells Cloud Docker Container-lagring.](https://docs.aspose.cloud/cells/docker/storage/)
+**Förutsättningar**
+
+- Docker Engine 20.10 eller senare installerat på värddatorn.  
+- Minst 2 GB RAM och 2 CPU-kärnor tilldelade till containern för typiska arbetsbelastningar.  
+- En giltig Aspose.Cells Cloud-licensfil (eller åtkomsttoken) placerad i en katalog som kommer att monteras i containern.
+
+**Snabbstart**
+
+1. Hämta Docker-image: `docker pull aspose/cells-cloud`.  
+2. Kör containern och montera licens- och datakataloger, t.ex.:  
+   ```bash
+   docker run -d -p 8080:80 \
+     -v /path/to/license:/app/license \
+     -v /path/to/data:/app/data \
+     aspose/cells-cloud
+   ```  
+3. Kom åt REST API via `http://localhost:8080/v3.0/`. För detaljerad API-användning, se [Aspose.Cells Cloud API-referens](https://docs.aspose.cloud/cells/api-reference/).
+
+## Referensdokumentation
+
+- [Hur man konfigurerar lagring för Aspose.Cells Cloud Docker Container.](https://docs.aspose.cloud/cells/docker/storage/)

@@ -1,65 +1,84 @@
-﻿---
-title: Supprimer les doublons de l'objet de la liste
-second_title: Documen
-linktitle: Supprimer les doublons
-type: docs
-keywords: list object(table) remove duplicates 
-url: /fr/list-objects/remove-duplicates/
-description:  Supprimer les doublons sur l'objet de liste.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Objet de liste Supprimer les doublons
 ---
-Ce REST API indique de supprimer les doublons sur l'objet de liste.
+title: "Supprimer les lignes en double d’un ListObject – Documentation de l’API Aspose.Cells Cloud"
+second_title: "Document"
+linktitle: "Supprimer les doublons"
+type: docs
+keywords: "supprimer les doublons, listobject, API Aspose.Cells Cloud, Excel, REST"
+url: /fr/list-objects/remove-duplicates/
+description: "Découvrez comment supprimer les lignes en double d’un ListObject dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’URL du point de terminaison, les paramètres, l’authentification, ainsi que des exemples de requêtes et de réponses."
+weight: 20
+---
 
-## RSET API
+Cet API REST supprime les lignes en double d’un **ListObject** dans une feuille de calcul Excel.
+
+## API REST
 
 ```bash
-
-POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
-
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
 ```
 
-Les paramètres de la requête sont :
+### **Paramètres de la requête**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP| Description|
-|:- |:- |:- |:- |
-|nom|Chaîne|Chemin||
-|nom de la feuille|Chaîne|Chemin||
-|index d'objets de liste|Entier|Chemin||
-|dossier|Chaîne|Requête||
-|nom de stockage|Chaîne|Requête||
+| Nom du paramètre    | Type    | Emplacement | Description                                                    |
+| ------------------- | ------- | ----------- | -------------------------------------------------------------- |
+| **name**            | String  | Path        | Le nom du fichier Excel.                                       |
+| **sheetName**       | String  | Path        | Le nom de la feuille de calcul contenant l’objet liste.       |
+| **listObjectIndex** | Integer | Path        | L’index de base zéro de l’objet liste à traiter.               |
+| **folder**          | String  | Query       | (Facultatif) Le chemin du dossier où le fichier est stocké.   |
+| **storageName**     | String  | Query       | (Facultatif) Le nom du service de stockage.                    |
 
- Le[Spécification OpenAPI](https://reference.aspose.cloud/cells/#/ListObjectsController/PostWorksheetListObjectRemoveDuplicates) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Exemple de requête (cURL)
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 {{< tab tabNum="1" >}}
 
-```powershell
-curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
-```powershell
-
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "DuplicateRowsRemoved": 12,
+  "Message": "Les lignes en double ont été supprimées avec succès."
+}
 ```
 
 {{< /tab >}}
-
 {{< /tabs >}}
+
+### Réponse
+
+En cas de succès, le service renvoie un objet JSON similaire à l’exemple ci-dessus. Les champs sont les suivants :
+
+- **Code** – Code d’état HTTP (`200` en cas de succès).
+- **Status** – Description textuelle de l’état.
+- **DuplicateRowsRemoved** – Nombre de lignes supprimées.
+- **Message** – Informations supplémentaires sur l’opération.
+
+**Codes d’état HTTP**
+
+| Code | Signification               | Description                                                    |
+|------|-----------------------------|----------------------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou invalides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant.                                |
+| 413  | Charge utile trop grande     | Le fichier téléchargé dépasse la taille limite.              |
+| 500  | Erreur interne du serveur   | Erreur serveur inattendue.                                     |
 
 ## Famille de SDK Cloud
 
-Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le dépôt GitHub pour obtenir la liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le moyen le plus efficace d’accélérer le développement. Un SDK gère les détails de bas niveau, vous permettant de vous concentrer sur les tâches de votre projet. Veuillez consulter le dépôt GitHub pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

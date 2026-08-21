@@ -1,85 +1,124 @@
-﻿---
-title: استبدال النص من الملف Excel
-second_title: Documen
-linktitle: استبدل دون استخدام التخزين
-type: docs
-url: /ar/replace/
-keywords: Replace old value by new value on Excel files
-description: يدعم Cloud REST استبدال القيم القديمة بالقيم الجديدة في ملفات Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 80
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، استبدال النص من ملفات Excel
 ---
-يشير هذا REST API إلى البيانات `replace` من الملفات Excel.
+title: "استبدال نصوص من ملفات Excel"
+second_title: "مستند"
+linktitle: "استبدال دون استخدام التخزين"
+type: docs
+url: /replace/
+keywords: "استبدال النصوص في Excel، Aspose.Cells Cloud، REST API، استبدال في جدول البيانات، API، استبدال النصوص في ملف Excel"
+description: "استخدم Aspose.Cells Cloud REST API لاستبدال النصوص الموجودة بقيم جديدة في ملفات Excel. يدعم SDKs لكل من C#، Java، Python، Node.js، PHP، Ruby، Go، و Perl."
+weight: 80
+---
 
-## RSET API
+## REST API
+
+يقوم هذا الـ REST API باستبدال البيانات في ملفات Excel.
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/replace
-
 ```
 
-معلمات الطلب هي:
+### الأمان والمصادقة
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| ملف| ملف| نموذج البيانات| الملف للتحميل|
-| نص| خيط| استفسار||
-| نص جديد| خيط| استفسار||
-| كلمة المرور| خيط| استفسار||
-| اسم الورقة| خيط| استفسار||
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتشترط [المصادقة باستخدام رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| اسم المعامل | النوع   | الموقع             | الوصف                                   |
+|------------|--------|--------------------|------------------------------------------|
+| **file**   | ملف    | formData (multipart) | ملف Excel المراد معالجته.                |
+| **text**   | نص    | query              | السلسلة النصية المراد استبدالها.         |
+| **newtext**| نص    | query              | النص البديل.                             |
+| **password**| نص    | query              | كلمة المرور لورقة عمل محمية (اختياري).   |
+| **sheetname**| نص   | query              | اسم ورقة العمل المستهدفة (اختياري).      |
+
+### **الاستجابة**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Files": [
+    {
+      "Filename" : "[اسم الملف1]",
+      "Filesize" : [حجم الملف],
+      "FileContent" : "[Base64String]"
+    },
+    {
+      "Filename" : "[اسم الملف2]",
+      "Filesize" : [حجم الملف],
+      "FileContent" : "[Base64String]"
+    },
+    {
+      "Filename" : "[اسم الملف3]",
+      "Filesize" : [حجم الملف],
+      "FileContent" : "[Base64String]"
+    }
+  ]
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                      | الوصف                                            |
+|-------|----------------------------|--------------------------------------------------|
+| 200   | نجاح (OK)                  | تمت عملية التصفية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400   | طلب غير صالح (Bad Request) | معاملات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم). |
+| 401   | غير مُصادَق (Unauthorized)  | رمز JWT غير صالح أو مفقود.                      |
+| 413   | حمل البيانات كبير جدًا (Payload Too Large) | حجم الملف المرفوع يتجاوز الحد المسموح به. |
+| 500   | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم.                         |
+
+## كيفية استخدام API PostReplace باستخدام حزم التطوير (SDKs)
+
+### مواصفات API PostReplace
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) واجهة برمجة تطبيقات مُتاحة للعامة وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب الخاصة بـ Aspose.Cells. يُظهر المثال التالي كيفية إجراء مكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.cloud" \
+curl -v "https://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.cloud" \
 -X POST \
 -H "Content-Type: multipart/form-data" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+-F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "xxxx1",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "xxxx2",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## عائلة حزم التطوير السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام حزمة التطوير (SDK) هو أفضل طريقة لتسريع عملية التطوير. فحزمة التطوير تُعالِج التفاصيل منخفضة المستوى وتركّز أنت على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطّلاع على قائمة كاملة بحزم تطوير Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+يوضح أمثلة الكود التالية كيفية إجراء مكالمات إلى خدمات الويب الخاصة بـ Aspose.Cells باستخدام حزم تطوير مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -132,3 +171,5 @@ curl -v "http://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---

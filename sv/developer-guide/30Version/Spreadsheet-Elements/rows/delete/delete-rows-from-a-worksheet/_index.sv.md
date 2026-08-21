@@ -1,75 +1,87 @@
-﻿---
-title: Ta bort flera rader i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Rad
+---
+title: "Ta bort flera rader från ett Excel-arbetsblad"
+second_title: "Dokument"
+linktitle: "Rader"
 type: docs
 url: /sv/rows/delete/rows/
-keywords: Delete rows on an Excel workshee
-description: Aspose.Cells Cloud REST API stöder borttagning av rader i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+keywords: "Aspose.Cells Cloud, ta bort rader, ta bort flera rader, Excel-arbetsblad, REST API, SDK"
+description: "Lär dig hur du tar bort en eller flera rader från ett Excel-arbetsblad med Aspose.Cells Cloud REST API. Innehåller detaljerad endpoint-info, parametrar, ett cURL-exempel och SDK-kodexempel för olika språk."
 weight: 80
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ta bort flera rader i ett Excel-kalkylblad
+ArticleTitle: "Ta bort flera rader från ett Excel-arbetsblad med Aspose.Cells Cloud API"
 ---
-Denna REST API anger att flera rader ska tas bort i ett Excel-arbetsblad.
 
-## RSET API
+Denna REST API tar bort flera rader **från** ett Excel-arbetsblad.
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
+**Förutsättningar:** För att kunna anropa denna endpoint måste du ha ett giltigt JWT-åtkomsttoken som du får genom Aspose Cloud-autentisering, samt lämpliga lagringsbehörigheter för arbetsboken.
+
+## DeleteWorksheetRows API
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| arknamn| sträng| väg| Arbetsbladet bame.|
-| startrad| heltal| fråga| Indexet för den första raden som ska användas.|
-| totala rader| heltal| fråga|1 |
-| uppdateringsreferens| boolesk| fråga| Sann|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Begärparametrar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameter Name  | Typ     | Sökväg / Frågesträng / HTTP-brödtext | Beskrivning                                                       |
+| --------------- | ------- | ------------------------------------ | ----------------------------------------------------------------- |
+| name            | sträng  | sökväg                               | Arbetsbokens namn.                                                |
+| sheetName       | sträng  | sökväg                               | Arbetsbladets namn.                                               |
+| startrow        | heltal  | fråga                                | Nollbaserat index för den första raden som ska tas bort (t.ex. `0` = första raden). |
+| totalRows       | heltal  | fråga                                | Antalet rader som ska tas bort.                                   |
+| updateReference | boolesk | fråga                                | Om referenser ska uppdateras efter borttagning (`true`/`false`). |
+| folder          | sträng  | fråga                                | Dokumentmappen.                                                   |
+| storageName     | sträng  | fråga                                | Lagringsnamnet.                                                   |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL. **Alla endpoints kräver HTTPS; HTTP är föråldrat.**
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=1&updateReference=true" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+**Möjliga svarsstatuskoder**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| HTTP-status | Beskrivning |
+|-------------|-------------|
+| 200 | Rader har tagits bort utan problem. |
+| 400 | Felaktig begäran – ogiltiga parametrar. |
+| 401 | Otillåten – saknat eller ogiltigt JWT-token. |
+| 404 | Inte hittad – arbetsbok eller arbetsblad finns inte. |
+| 500 | Internt serverfel – oväntat tillstånd. |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+## Cloud SDK-familj
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Ta en titt på [GitHub-repositoriet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

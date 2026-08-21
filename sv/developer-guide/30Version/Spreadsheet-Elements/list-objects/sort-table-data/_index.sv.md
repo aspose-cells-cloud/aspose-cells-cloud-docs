@@ -1,76 +1,111 @@
-﻿---
-title: Sortera lista över objektdata i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Sor
-type: docs
-url: /sv/list-objects/sort-data/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/sort-data/]
-keywords: Sort a list object(table) in an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder sortering av ett listobjekt (tabell) i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 40
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Sortera lista över objektdata i ett Excel-kalkylblad
 ---
-Denna REST API anger `sort table's data` i ett Excel-arbetsblad.
+title: "Sortera ListObject-data i ett Excel-ark"
+second_title: "Dokument"
+linktitle: "Sortera"
+type: docs
+url: /list-objects/sort-data/
+aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
+keywords: "Aspose.Cells Cloud, Excel, ListObject, Sortera data, REST API, Ark"
+description: "Lär dig hur du sorterar ListObject (tabell) data i ett Excel-ark med Aspose.Cells Cloud REST API (v3.0). Inkluderar endpoint, parametrar, exempel på cURL-förfrågan och SDK-exempel."
+weight: 40
+ArticleTitle: "Sortera ListObject-data i ett Excel-ark – Aspose.Cells Cloud API"
+---
 
-## RSET API
+**Förutsättningar**  
+För att anropa detta API måste du ha ett giltigt Aspose Cloud JWT-åtkomsttoken, och arbetsboken måste ha laddats upp till Aspose Cloud-lagring. Inkludera rubriken `Authorization: Bearer <jwt token>` i varje förfrågan.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/sort
- 
+Detta REST API sorterar en tabells data i ett Excel-ark.  
+För att använda denna åtgärd, ange arbetsbokens namn, arkets namn och indexet för det mål-ListObject, tillsammans med en JSON-kropp `dataSorter` som definierar sorteringskriterierna.
+
+## PostWorksheetListObjectSortTable API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/sort
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg||
-| arknamn| sträng| väg||
-| listaObjektindex| heltal| väg||
-| dataSortering|| kropp||
-| mapp| sträng| fråga||
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSortTable) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Förfrågningsparametrar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameternamn   | Typ     | Path/Query String/HTTPBody | Beskrivning                                                                                                     |
+| --------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| name            | string  | path                       | Namnet på Excel-filen som finns i Aspose Cloud-lagring.                                                         |
+| sheetName       | string  | path                       | Namnet på arket som innehåller ListObjectet.                                                                    |
+| listObjectIndex | integer | path                       | Nollbaserat index för ListObjectet (tabellen) i arket.                                                          |
+| dataSorter      | object  | body                       | JSON-objekt som anger sorteringsalternativ (t.ex. `CaseSensitive`, `HasHeaders`, `KeyList`, `SortLeftToRight`). |
+| folder          | string  | query                      | Mappväg i lagringen där Excel-filen finns.                                                                      |
+| storageName     | string  | query                      | Namnet på Aspose Cloud-lagringen.                                                                                |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Anteckningar**  
+Förfrågningskroppen måste vara ett giltigt JSON-objekt som matchar `dataSorter`-schemat. Se till att arbetsboken, arket och ListObjectet finns innan du utför sorteringsåtgärden.
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSortTable) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda cURL kommandoradsverktyget för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur du gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Förfrågan" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet7/listobjects/1/sort" \
--X POST \
--d "{ \"CaseSensitive\": true, \"HasHeaders\": true, \"KeyList\": [ { \"Key\": 1, \"SortOrder\": \"Ascending\", \"CustomList\": \"string\" } ], \"SortLeftToRight\": true}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -d '{
+        "CaseSensitive": true,
+        "HasHeaders": true,
+        "KeyList": [
+          {
+            "Key": 1,
+            "SortOrder": "Ascending",
+            "CustomList": "string"
+          }
+        ],
+        "SortLeftToRight": true
+      }' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**HTTP-statuskoder**
+
+| Statuskod | Beskrivning                                |
+|-----------|--------------------------------------------|
+| 200       | OK – sortering slutfördes framgångsrikt.  |
+| 400       | Felaktig förfrågan – ogiltiga parametrar. |
+| 401       | Obehörig – autentisering misslyckades.     |
+| 404       | Hittades inte – arbetsbok, ark eller ListObject hittades inte. |
+| 500       | Internt serverfel – serverseitigt problem.|
+
+**Svarsparametrar**
+
+| Parameter | Typ    | Beskrivning                               |
+|-----------|--------|-------------------------------------------|
+| Code      | integer | HTTP-statuskod som returneras av API:et.  |
+| Status    | string  | Textuell beskrivning av resultatet (t.ex. "OK"). |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## Moln-SDK-familj
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Se [GitHub-repositoriet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +158,5 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+[Tillbaka till ListObjects-översikten](/list-objects/)

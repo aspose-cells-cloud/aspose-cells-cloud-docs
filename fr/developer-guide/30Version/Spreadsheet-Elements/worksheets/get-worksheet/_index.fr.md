@@ -1,21 +1,20 @@
-﻿---
-title: Comment obtenir un contenu différent à partir d'une feuille de calcul Excel
-second_title: Documen
-linktitle: Gé
-type: docs
-url: /fr/worksheets/get/
-keywords: How to get different content from an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge l'obtention de contenu différent à partir d'une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Comment obtenir un contenu différent à partir d'une feuille de calcul Excel
 ---
-## Travailler avec l'obtention d'une feuille de travail Excel.
+title: "Comment obtenir différents contenus à partir d'une feuille de calcul Excel"
+second_title: "Document"
+linktitle: "Obtenir"
+type: docs
+url: /worksheets/get/
+keywords: "Excel, feuille de calcul, Aspose.Cells Cloud, API REST, extraction de contenu, conversion de format"
+description: "Découvrez comment extraire divers types de contenus à partir d'une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud. Ce guide présente les formats pris en charge et fournit des liens vers les opérations associées."
+weight: 20
+---
 
-- [Comment obtenir une feuille de calcul Excel avec différents formats.](/cells/fr/worksheets/get-worksheet/) 
-    - [Comment convertir la feuille de calcul Excel en image.](/cells/fr/worksheets/to-image/)
-- [Comment obtenir une zone de feuille de calcul Excel avec différents formats.](/cells/fr/worksheets/area-to-different-formats/)
-- [Comment obtenir une page de feuille de calcul Excel avec différents formats.](/cells/fr/get-worksheet-for-page-index/) 
-- [Comment obtenir le nombre de pages d'une feuille de calcul Excel.](/cells/fr/worksheets/page-count/) 
-- [Comment obtenir la description des feuilles de travail Excel.](/cells/fr/worksheets/get-all/) 
+## Travailler avec l'extraction du contenu d'une feuille de calcul Excel
 
-
+- [Comment obtenir une feuille de calcul Excel dans différents formats](/cells/worksheets/get-worksheet/)  
+- [Comment convertir une feuille de calcul Excel en image](/cells/worksheets/to-image/)  
+- [Comment obtenir une zone de feuille de calcul Excel dans différents formats](/cells/worksheets/area-to-different-formats/)  
+- [Comment obtenir une page de feuille de calcul Excel dans différents formats](/cells/get-worksheet-for-page-index/)  
+- [Comment obtenir le nombre de pages d'une feuille de calcul Excel](/cells/worksheets/page-count/)  
+- [Comment extraire les descriptions des feuilles de calcul Excel](/cells/worksheets/get-all/)  
+---

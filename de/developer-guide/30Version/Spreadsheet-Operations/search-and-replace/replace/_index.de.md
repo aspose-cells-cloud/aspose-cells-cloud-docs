@@ -1,74 +1,115 @@
-﻿---
-title: Ersetzen Sie Text aus der Datei Excel
-second_title: Documen
-linktitle: Ersetzen ohne Verwendung von Speicher
+---
+title: "Text aus Excel-Dateien ersetzen"
+second_title: "Dokument"
+linktitle: "Ersetzen ohne Speicherung"
 type: docs
 url: /de/replace/
-keywords: Replace old value by new value on Excel files
-description: Aspose.Cells Cloud REST API unterstützt das Ersetzen alter Werte durch neue Werte in Excel-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+keywords: "Excel-Text ersetzen, Aspose.Cells Cloud, REST-API, Tabellenkalkulation ersetzen, API, Textersetzung in Excel-Dateien"
+description: "Verwenden Sie die Aspose.Cells Cloud REST-API, um vorhandenen Text in Excel-Dateien durch neue Werte zu ersetzen. Unterstützt SDKs für C#, Java, Python, Node.js, PHP, Ruby, Go und Perl."
 weight: 80
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Text aus Excel-Dateien ersetzen
 ---
-Dieser REST API gibt an, `replace` Daten aus Excel Dateien zu erhalten.
 
-## RSET API
+
+## REST-API
+
+Diese REST-API ersetzt Daten in Excel-Dateien.
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/replace
-
 ```
 
-Die Anforderungsparameter sind:
+### Sicherheit und Authentifizierung
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Datei| Datei| formData| Hochzuladende Datei|
-| Text| Schnur| Abfrage||
-| neuer Text| Schnur| Abfrage||
-| Passwort| Schnur| Abfrage||
-| Blattname| Schnur| Abfrage||
+Die Aspose.Cells Cloud-APIs sind sicher und erfordern eine [JWT-Token-basierte Authentifizierung](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### Anforderungsparameter
+
+| Parametername | Typ   | Speicherort               | Beschreibung                                      |
+|---------------|-------|---------------------------|---------------------------------------------------|
+| **file**      | Datei | formData (multipart)      | Zu verarbeitende Excel-Datei.                    |
+| **text**      | Zeichenkette | query             | Zu ersetzender Textstring.                        |
+| **newtext**   | Zeichenkette | query             | Ersatztext.                                       |
+| **password**  | Zeichenkette | query             | Passwort für eine geschützte Arbeitsmappe (optional). |
+| **sheetname** | Zeichenkette | query             | Name des Ziel-Worksheets (optional).             |
+
+### **Antwort**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Files": [
+    {
+      "Filename" : "[Dateiname1]",
+      "Filesize" : [Dateigröße],
+      "FileContent" : "[Base64-Zeichenkette]"
+    },
+    {
+      "Filename" : "[Dateiname2]",
+      "Filesize" : [Dateigröße],
+      "FileContent" : "[Base64-Zeichenkette]"
+    },
+    {
+      "Filename" : "[Dateiname3]",
+      "Filesize" : [Dateigröße],
+      "FileContent" : "[Base64-Zeichenkette]"
+    }
+  ]
+}
+```
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                   | Beschreibung                                     |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter erfolgreich angewendet; Antwort enthält Details zum Vorgang. |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized                | Ungültiges oder fehlendes JWT-Token.            |
+| 413  | Payload Too Large           | Die hochgeladene Datei überschreitet das Größenlimit. |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler.                       |
+
+## So verwenden Sie die PostReplace-API mit SDKs
+
+### PostReplace-API-Spezifikation
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht es Ihnen, REST-Interaktionen direkt aus einem Webbrowser heraus durchzuführen.
+
+Sie können das cURL-Befehlszeilentool verwenden, um Aspose.Cells-Webdienste einfach aufzurufen. Das folgende Beispiel zeigt, wie Aufrufe an die Cloud-API mit cURL durchgeführt werden.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.cloud" \
+curl -v "https://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.cloud" \
 -X POST \
 -H "Content-Type: multipart/form-data" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+-F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "xxxx1",
+      "FileSize": 274022,
+      "FileContent": "-----Base64-Zeichenkette--------"
+    },
+    {
+      "Filename": "xxxx2",
+      "FileSize": 274022,
+      "FileContent": "-----Base64-Zeichenkette--------"
+    }
+  ]
 }
-
 ```
 
 {{< /tab >}}
@@ -77,9 +118,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist die beste Möglichkeit, die Entwicklung zu beschleunigen. Ein SDK übernimmt die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte überprüfen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste mit verschiedenen SDKs durchgeführt werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

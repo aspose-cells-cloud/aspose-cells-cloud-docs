@@ -1,46 +1,74 @@
-﻿---
-title: MinRow'u Excel Workshee'den alın
+---
+title: "Excel Çalışma Sayfasından MinRow Değerini Alın – Aspose.Cells Cloud API Referansı"
 type: docs
 url: /tr/get-minrow-from-excel-worksheet/
 weight: 80
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel Çalışma Sayfasından MinRow'u Al
+keywords: "Aspose.Cells, GetMinRow, Excel çalışma sayfası, REST API, minimum satır indeksi, bulut SDK'sı"
+description: "Aspose.Cells Cloud REST API’si (v3.0) ile bir çalışma sayfasının minimum satır indeksini nasıl alacağınızı öğrenin. Tam kimlik doğrulamalı cURL isteği, yanıt şeması ve birden fazla dil için SDK örnekleri içerir."
+ArticleTitle: "Excel Çalışma Sayfasından MinRow Değerini Alın – Aspose.Cells Cloud API Referansı"
 ---
-Bu REST API, `cellOrMethodName` parametresi `minrow` olduğunda Excel dosyasında `minrow` alındığını gösterir.
 
-- **cURL Örnek**
+Bu REST API, `cellOrMethodName` parametresi `minrow` olarak ayarlandığında bir Excel çalışma sayfasındaki minimum satır indeksini döndürür. Bu uç nokta, belirli bir çalışma sayfasındaki ilk dolu olmayan satırı (sıfır tabanlı) belirlemek için kullanılabilir.
 
+- **cURL Örneği:**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/minrow" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/minrow" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MinRow": 0
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Bulut SDK Ailesi**
+**İstek**
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+```
+GET https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/minrow
+```
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+| Özellik          | Tür    | Gerekli | Açıklama                                              |
+|-------------------|--------|---------|-------------------------------------------------------|
+| `fileName`        | string | Evet    | Çalışma kitabının adı (örneğin `myWorkbook.xlsx`).   |
+| `sheetName`       | string | Evet    | Hedef çalışma sayfası (örneğin `Sheet1`).            |
+| `cellOrMethodName`| string | Evet    | Sabit değer `minrow`.                                 |
+| `folder`          | string | Hayır   | Bulut depolama klasör yolu.                          |
+| `storageName`     | string | Hayır   | Varsayılan olmayan bir depo kullanılıyorsa depo adı.|
 
+**Yanıt**
 
+Hizmet, `MinRow` özelliğini içeren bir JSON nesnesi döndürür; bu özellik, ilk dolu olmayan satırın indeksini (sıfır tabanlı) gösterir.
+
+| HTTP Durum Kodu | Anlam                                   |
+|-----------------|------------------------------------------|
+| 200             | Başarılı – `MinRow` içeren JSON yükü.   |
+| 401             | Yetkisiz – geçersiz veya eksik belirteç.|
+| 404             | Çalışma kitabı veya çalışma sayfası bulunamadı. |
+| 500             | Sunucu iç hatası.                        |
+
+`MinRow` değeri, bir sayfadaki verilerin başlangıç noktasını hızlıca belirlemek gerektiğinde faydalıdır.
+
+- **Aspose.Cells Cloud SDK'larını Kullanın**
+
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. SDK, düşük seviye detayları yönetir, böylece projenize odaklanabilirsiniz. Aspose.Cells Cloud SDK'larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub deposunu</a> kontrol edin.
+
+Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -103,3 +131,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

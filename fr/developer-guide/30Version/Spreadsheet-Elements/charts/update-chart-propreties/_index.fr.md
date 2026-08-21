@@ -1,74 +1,132 @@
-﻿---
-title: Propriétés du graphique de mise à jour
-type: docs
-url: /fr/charts/propreties/update/
-aliases: [/update-chart-propreties/]
-weight: 160
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Mettre à jour les propriétés du graphique
 ---
-Ce REST API indique la mise à jour des propriétés du graphique
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
- 
+title: "Mettre à jour les propriétés d’un graphique"
+type: docs
+url: /charts/properties/update/
+aliases: [/update-chart-properties/]
+weight: 160
+keywords: "Aspose.Cells, graphique, mise à jour, Excel, API REST, SDK"
+description: "Découvrez comment mettre à jour les propriétés d’un graphique (type, titre, légende, etc.) dans un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut l’endpoint, les paramètres, un exemple cURL et des extraits de code SDK pour C#, Java, PHP, Ruby, Node.js, Perl et Go."
+ArticleTitle: "Mettre à jour les propriétés d’un graphique – Aspose.Cells Cloud REST API"
+---
+
+Cet API REST permet de mettre à jour les propriétés d’un graphique.
+
+### **Sécurité et authentification**
+
+Les API REST Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
+
+## API PostWorksheetChart
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
 ```
- Les paramètres de la requête sont :
- 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin||
-| nom de la feuille| chaîne| chemin||
-| index des graphiques| entier| chemin||
-| graphique|| corps||
-| dossier| chaîne| requête||
-| nom de stockage| chaîne| requête| nom de stockage.|
 
-<br/>
- 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChart) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
- 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+### Paramètres de la requête
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Nom du paramètre | Type    | Emplacement (chemin / chaîne de requête / corps HTTP) | Description                                                   |
+| ---------------- | ------- | ----------------------------------------------------- | ------------------------------------------------------------- |
+| name             | string  | path                                                  | Nom du fichier Excel.                                         |
+| sheetName        | string  | path                                                  | Nom de la feuille de calcul contenant le graphique.          |
+| chartIndex       | integer | path                                                  | Index (à zéro) du graphique à mettre à jour.                  |
+| chart            | object  | body                                                  | Objet JSON définissant les propriétés du graphique à modifier. |
+| folder           | string  | query                                                 | Dossier dans le stockage où le fichier est situé.             |
+| storageName      | string  | query                                                 | Nom du service de stockage.                                   |
+
+### Schéma du corps de la requête
+
+L’objet **`chart`** contient les propriétés que vous pouvez modifier. Voici un exemple JSON représentatif incluant plusieurs champs couramment utilisés :
+
+```json
+{
+  "Title": {
+    "Text": "Chiffre d'affaires trimestriel"
+  },
+  "ShowLegend": true,
+  "Type": "Line",
+  "DataLabels": {
+    "ShowValue": true,
+    "ShowPercentage": false
+  },
+  "ChartArea": {
+    "BorderColor": "Blue",
+    "FillColor": "White"
+  }
+}
+```
+
+> **Remarque :** Vous devez uniquement fournir les champs que vous souhaitez modifier. Les propriétés omises conservent leurs valeurs actuelles.
+
+La <a href="https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChart" target="_blank" rel="noopener noreferrer">spécification OpenAPI</a> définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud à l’aide de cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet4/charts/1" 
--d '{"Type": "line"}'
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet4/charts/1" \
+-d '{"Type": "line"}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+-H "Authorization: Bearer <jeton JWT>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-    "Code":200,
-    
-    "Status":"OK"
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+## Réponse
+
+L’API renvoie un objet JSON indiquant le résultat de l’opération. Une mise à jour réussie renvoie :
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+**Codes de statut en cas de succès**
+
+| Statut HTTP | Description                                            |
+| ----------- | ------------------------------------------------------ |
+| 200         | OK – les propriétés du graphique ont été mises à jour. |
+
+**En-têtes de réponse**
+
+| En-tête         | Description                                                                 |
+| --------------- | -------------------------------------------------------------------------- |
+| `Content-Type`  | `application/json` – indique que le corps de la réponse est au format JSON. |
+| `X-RequestId`   | Identifiant unique de la requête (utile pour le débogage).                |
+
+Les réponses d’erreur possibles incluent :
+
+| Statut HTTP | Description                                                |
+| ----------- | ---------------------------------------------------------- |
+| 400         | Requête incorrecte – paramètres ou corps invalide          |
+| 401         | Non autorisé – jeton manquant ou invalide                  |
+| 404         | Non trouvé – fichier, feuille de calcul ou graphique introuvable |
+| 500         | Erreur interne du serveur                                  |
+
+Pour d’autres opérations liées aux graphiques, voir les sujets connexes tels que [Mettre à jour le titre du graphique](/charts/title/update/) et [Mettre à jour la légende du graphique](/charts/legend/update/).
+
 ## Famille de SDK Cloud
- 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
- 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+
+L’utilisation d’un SDK est le moyen le plus efficace d’accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants montrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="6" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Perl" tabName6="Go" >}}
 

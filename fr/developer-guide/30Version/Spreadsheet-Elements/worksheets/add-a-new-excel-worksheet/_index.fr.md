@@ -1,75 +1,83 @@
-﻿---
-title: Ajouter une feuille de calcul Excel
-second_title: Documen
-linktitle: Annonce
+---
+title: "Ajouter une feuille Excel"
+ArticleTitle: "Ajouter une feuille Excel - Guide de l’API Aspose.Cells Cloud"
+second_title: "Document"
+linktype: "Ajouter"
 type: docs
 url: /fr/worksheets/add/
 aliases: [/add-a-new-excel-worksheet/]
-keywords: Add an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge l'ajout d'une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+keywords: "ajouter une feuille Excel, Aspose.Cells Cloud, API REST, PUT worksheet, classeur Excel, requête API"
+description: "Guide étape par étape pour ajouter une nouvelle feuille à un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud, incluant les détails de la requête, un exemple cURL et des extraits de code SDK pour plusieurs langages."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Ajouter une feuille de calcul Excel
 ---
-Ce REST API indique `add new worksheet`.
 
-## RSET API
+Cette API REST ajoute une nouvelle feuille à un classeur existant.
+
+**Conditions préalables** : Pour appeler ce point de terminaison, vous devez disposer d’un jeton d’authentification Aspose Cloud valide, le classeur cible doit être téléchargé dans le stockage Aspose Cloud, et vous devez connaître le nom du stockage (si vous utilisez un stockage personnalisé).
+
+## API REST
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
 ```
 
-Les paramètres de la requête sont :
+### **Paramètres de la requête**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Le nouveau nom de la feuille.|
-| position| entier| requête| La nouvelle position de la feuille.|
-| type de feuille| chaîne| requête| Le nouveau type de feuille.|
-| dossier| chaîne| requête| Dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type    | Emplacement | Description                                           |
+|------------------|---------|-------------|-------------------------------------------------------|
+| name             | string  | path        | Nom du fichier de classeur.                           |
+| sheetName        | string  | path        | Nom de la nouvelle feuille à créer.                   |
+| position         | integer | query       | Position d’insertion (index de base zéro).            |
+| sheettype        | string  | query       | Type de la nouvelle feuille (ex. : **Chart**, **Dialog**). |
+| folder           | string  | query       | Dossier contenant le classeur.                        |
+| storageName      | string  | query       | Nom du stockage Aspose Cloud.                         |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer un appel vers l’API Cloud avec cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+-H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Codes d’état de réponse possibles**
+
+| Code d’état | Description                                            |
+|-------------|--------------------------------------------------------|
+| 200         | Feuille ajoutée avec succès.                           |
+| 400         | Requête incorrecte – paramètres invalides.             |
+| 401         | Non autorisé – jeton d’authentification manquant ou invalide. |
+| 404         | Introuvable – le classeur ou le dossier n’existe pas.  |
+| 500         | Erreur interne du serveur – condition inattendue.      |
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est la méthode la plus rapide pour développer. Un SDK abstrait les détails de bas niveau, vous permettant de vous concentrer sur votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

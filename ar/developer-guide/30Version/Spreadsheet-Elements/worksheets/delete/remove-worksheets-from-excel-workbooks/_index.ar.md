@@ -1,73 +1,84 @@
-﻿---
-title: حذف ورقة العمل
-second_title: Documen
-linktitle: ورقة عمل واحدة
-type: docs
-url: /ar/worksheets/delete-worksheet/
-aliases: [/remove-worksheets-from-excel-workbooks/]
-keywords: Delete an Excel worksheet on an Excel workbook
-description: يدعم Cloud REST حذف ورقة عمل من مصنف. تدعم حزمة تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حذف ورقة العمل
 ---
-يشير هذا REST API إلى `delete worksheet`.
+title: "حذف ورقة عمل"
+second_title: "مستند"
+linktype: "ورقة عمل واحدة"
+type: docs
+url: /worksheets/delete-worksheet/
+aliases: [/remove-worksheets-from-excel-workbooks/]
+keywords: "Aspose.Cells Cloud، حذف ورقة عمل، Excel، Spreadsheet، REST API"
+description: "احذف ورقة عمل من ملف عمل Excel باستخدام REST API الخاص بـ Aspose.Cells Cloud. يدعم SDKs لـ C#، Java، PHP، Ruby، Node.js، Python، Perl، Go وcURL."
+weight: 20
+ArticleTitle: "حذف ورقة عمل – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية لـ REST بحذف ورقة عمل.  
+المتطلبات الأساسية: لاستدعاء هذه الواجهة، يجب أن تقدّم رمز مصادقة JWT صالحًا في رأس **Authorization**، ولديك صلاحيات الوصول إلى موقع التخزين الذي يوجد فيه ملف العمل.
+
+## واجهة برمجة التطبيقات (REST API)
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
-معلمات الطلب هي:
+*ملاحظة: تستخدم الواجهة الإصدار **v3.0**، وهو الإصدار المستقر الحالي. سيتم الإعلان عن أي تغييرات في الإصدارات مستقبلًا في ملاحظات الإصدار.*
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+### **مُعلمات الطلب**
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheet) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+| اسم المُعلمة | النوع | الموقع | الوصف |
+| ------------ | ------ | -------- | ------------------- |
+| name | string | path | اسم المستند. |
+| sheetName | string | path | اسم ورقة العمل. |
+| folder | string | query | مجلد المستند. |
+| storageName | string | query | اسم التخزين. |
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+ردود HTTP المحتملة:
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| رمز الحالة | الوصف |
+| ----------- | ----------- |
+| 200 OK | تم حذف ورقة العمل بنجاح. |
+| 400 Bad Request | مُعلمات طلب غير صالحة. |
+| 401 Unauthorized | فشلت المصادقة أو نقص الرمز المميز. |
+| 404 Not Found | ملف العمل أو ورقة العمل المحددة غير موجودة. |
+| 500 Internal Server Error | خطأ غير متوقع في الخادم. |
+
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheet) واجهة برمجة قابلة للوصول بشكل عام وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات ويب Aspose.Cells. يوضح المثال التالي كيفية إجراء المكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الرد" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet3" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet3" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
+
+*يجب إجراء جميع الطلبات عبر بروتوكول HTTPS؛ الواجهة لا تدعم الاتصالات غير المشفرة (TLS).*
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## عائلة SDK للخدمات السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. يتعامل SDK مع التفاصيل من المستوى المنخفض، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية إجراء مكالمات إلى خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

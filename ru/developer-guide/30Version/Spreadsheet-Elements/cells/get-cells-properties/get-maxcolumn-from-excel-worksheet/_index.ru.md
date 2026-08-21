@@ -1,46 +1,48 @@
-﻿---
-title: Получить MaxColumn из рабочей таблицы Excel
+---
+title: "Получение MaxColumn из рабочего листа Excel"
 type: docs
 url: /ru/get-maxcolumn-from-excel-worksheet/
 weight: 60
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получить MaxColumn из Excel Лист
+keywords: "Aspose Cells API, maxcolumn, рабочий лист Excel, REST, SDK"
+description: "Получение максимального индекса столбца рабочего листа с использованием облачного API Aspose.Cells. Включает запрос cURL с аутентификацией, схему ответа, параметры, коды ошибок и примеры SDK (C#, Java, Python и др.)."
 ---
-Этот REST API указывает на то, что шоу получает `maxcolumn` в файле Excel, когда параметр `cellOrMethodName` равен `maxcolumn`.
 
-- **cURL Пример**
+Этот REST API возвращает максимальный индекс столбца в рабочем листе Excel при установке параметра `cellOrMethodName` в значение `maxcolumn`.
 
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+- **Пример на cURL**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxcolumn"  -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxcolumn" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MaxColumn": 15
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Семейство облачных SDK**
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+- **Использование SDK облачной платформы Aspose.Cells**
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Использование SDK — это самый быстрый способ разработки. SDK берёт на себя работу с низкоуровневыми деталями, позволяя сосредоточиться на логике вашего проекта. Полный список SDK облачной платформы Aspose.Cells доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-
+Приведённые ниже примеры кода показывают, как вызывать веб-службы Aspose.Cells с помощью различных SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -87,6 +89,8 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
+<!-- Swift example (currently not provided) -->
 
 {{< /tab >}}
 

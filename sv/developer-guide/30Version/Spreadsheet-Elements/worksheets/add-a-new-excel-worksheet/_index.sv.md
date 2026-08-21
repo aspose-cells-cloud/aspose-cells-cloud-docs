@@ -1,75 +1,83 @@
-﻿---
-title: Lägg till ett Excel-arbetsblad
-second_title: Documen
-linktitle: Annons
-type: docs
-url: /sv/worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
-keywords: Add an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder tillägg av ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lägg till ett Excel-kalkylblad
 ---
-Denna REST API indikerar `add new worksheet`.
+title: "Lägg till ett Excel-ark"
+ArticleTitle: "Lägg till ett Excel-ark - Aspose.Cells Cloud API-guide"
+second_title: "Dokument"
+linktitle: "Lägg till"
+type: docs
+url: /worksheets/add/
+aliases: [/add-a-new-excel-worksheet/]
+keywords: "Lägg till Excel-ark, Aspose.Cells Cloud, REST API, PUT-ark, Excel-arbetsbok, API-förfrågan"
+description: "Steg-för-steg-guide för att lägga till ett nytt ark i en Excel-arbetsbok med Aspose.Cells Cloud REST API, inklusive förfrågningsdetaljer, ett cURL-exempel och SDK-kodfragment för flera språk."
+weight: 20
+---
 
-## RSET API
+Denna REST API lägger till ett nytt ark i en befintlig arbetsbok.
+
+**Förutsättningar**: För att anropa denna slutpunkt måste du ha en giltig Aspose Cloud-autentiseringstoken, målarbetsboken måste vara uppladdad till Aspose Cloud-lagring och du bör känna till lagringsnamnet (om du använder en anpassad lagring).
+
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
 ```
 
-Begäranparametrarna är:
+### **Förfrågningsparametrar**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Det nya namnet på arket.|
-| placera| heltal| fråga| Den nya arkpositionen.|
-| arktyp| sträng| fråga| Den nya arktypen.|
-| mapp| sträng| fråga| Dokumentmapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameternamn | Typ     | Plats  | Beskrivning                                            |
+| ------------- | ------- | ------ | ------------------------------------------------------ |
+| name          | string  | path   | Namn på arbetsboksfilen.                               |
+| sheetName     | string  | path   | Namn på det nya ark som ska skapas.                    |
+| position      | integer | query  | Position (nollbaserad) där arket ska infogas.         |
+| sheettype     | string  | query  | Typ av det nya arket (t.ex. **Chart**, **Dialog**).   |
+| folder        | string  | query  | Mapp som innehåller arbetsboken.                       |
+| storageName   | string  | query  | Namn på Aspose Cloud-lagringen.                        |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör en anrop till moln-API:et med cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Förfrågan" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+**Möjliga svarsstatuskoder**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Statuskod | Beskrivning                                         |
+|-----------|-----------------------------------------------------|
+| 200       | Arket lades framgångsrikt till.                    |
+| 400       | Felaktig förfrågan – ogiltiga parametrar.          |
+| 401       | Otillåten – autentiseringstoken saknas eller är ogiltig. |
+| 404       | Hittades inte – arbetsboken eller mappen finns inte. |
+| 500       | Internt serverfel – oväntat tillstånd.             |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+## Moln-SDK-familj
+
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK abstraher bort detaljer på låg nivå och låter dig fokusera på ditt projekt. Kolla in [GitHub-lagret](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med hjälp av olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

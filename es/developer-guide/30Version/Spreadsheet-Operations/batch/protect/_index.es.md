@@ -1,76 +1,117 @@
-﻿---
-title: Archivo Excel protegido por lotes
-second_title: Documen
-type: docs
-url: /es/batch/protect
-keywords: Batch protection of multiple Excel files
-description: Aspose.Cells Cloud API admite la protección por lotes de varios archivos de Excel. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 100
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Protección por lotes
 ---
-Este REST API indica `batch protection` de archivos elegibles.
+title: "Protección por lotes de archivos Excel"
+second_title: "Documento"
+type: docs
+url: /batch/protect
+keywords: "Protección por lotes de archivos Excel, Aspose Cells Cloud, API REST, protección de Excel, protección por lotes"
+description: "Aprenda a usar la API REST de Aspose.Cells Cloud para proteger por lotes múltiples archivos Excel. Incluye detalles de la solicitud, ejemplo de cURL y ejemplos de código SDK para varios lenguajes."
+weight: 100
+---
 
-## RSET API
+Esta API REST permite la **protección por lotes** de archivos Excel compatibles.
+
+## API REST
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/protect
- 
 ```
 
-Los parámetros de la solicitud son:
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| Solicitud de protección por lotes|| cuerpo||
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
-**Propiedades de BatchProtectRequest**
+### Parámetros de solicitud
 
-Nombre | Tipo | Descripción | Notas
------------- | ------------- | ------------- | -------------
- CarpetaOrigen | cadena | | [opcional]CondiciónDeCoincidencia | SolicitudDeCondiciónDeCoincidencia | | [opcional]TipoDeProtección | cadena | | [opcional]Contraseña | cadena | | [opcional]CarpetaDeSalida | cadena | | [opcional]**Propiedades de MatchConditionRequest**
+| Nombre del parámetro    | Tipo                | Ubicación | Descripción                                                                                              |
+|-------------------------|---------------------|-----------|----------------------------------------------------------------------------------------------------------|
+| batchProtectRequest     | BatchProtectRequest | body      | Payload JSON que especifica la carpeta de origen, las condiciones de coincidencia, el tipo de protección, la contraseña y la carpeta de salida. |
 
-Nombre | Tipo | Descripción | Notas
------------- | ------------- | ------------- | -------------
- RegexPattern | cadena | | [opcional]FullMatchConditions | cadena[]| | [opcional]El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/PostProtectConvert) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+### Propiedades de BatchProtectRequest
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+| Nombre            | Tipo                     | Descripción                                                                                 | Notas |
+|-------------------|--------------------------|---------------------------------------------------------------------------------------------|-------|
+| SourceFolder      | string                   | Carpeta que contiene los archivos Excel de origen.                                          | opcional |
+| MatchCondition    | MatchConditionRequest   | Criterios utilizados para seleccionar archivos que proteger.                                | opcional |
+| ProtectionType    | string                   | Tipo de protección que aplicar (por ejemplo, `All`, `ReadOnly`).                            | opcional |
+| Password          | string                   | Contraseña que establecer para los archivos protegidos.                                     | opcional |
+| OutFolder         | string                   | Carpeta de destino para los archivos protegidos.                                            | opcional |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### Propiedades de MatchConditionRequest
+
+| Nombre              | Tipo       | Descripción                                   | Notas |
+|---------------------|------------|-----------------------------------------------|-------|
+| RegexPattern        | string     | Expresión regular utilizada para coincidir con nombres de archivo. | opcional |
+| FullMatchConditions | string[]   | Lista de condiciones exactas de nombre de archivo. | opcional |
+
+### Parámetro del cuerpo de solicitud
+
+| Nombre del parámetro | Tipo | Descripción                                    |
+| ------------------- | ---- | ---------------------------------------------- |
+| data                | file | Contenido binario del archivo de libro que crear. |
+
+### **Respuesta**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Cuándo se devuelve                      |
+|--------|-----------------------------|-----------------------------------------|
+| 200 OK | Libro creado correctamente  | Flujo normal                            |
+| 201 Created | Libro creado (respuesta alternativa) | Cuando la API devuelve un estado de creado |
+| 400 Bad Request | Parámetros no válidos | Error del lado del cliente              |
+| 401 Unauthorized | Token ausente o no válido | Error de autenticación                 |
+| 409 Conflict | El archivo ya existe y `isWriteOver=false` | Conflicto con el archivo existente     |
+
+## Cómo usar la API PostProtectConvert con SDK
+
+### Especificación de la API PostProtectConvert
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/PostProtectConvert) define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/protect" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\",\"ProtectionType\":\"All\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\",\"ProtectionType\":\"All\"}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Familia de SDK en la nube
+### Utilizar los SDK de Aspose.Cells Cloud
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Usar un SDK es la mejor forma de acelerar el desarrollo. Un SDK maneja los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells utilizando diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +164,4 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

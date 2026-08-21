@@ -1,70 +1,82 @@
-﻿---
-title: Aspose.Cells Cloud WEb API — Получить публичный ключ
-second_title: Documen
-ArticleTitle: Get Public Ke
-linktitle: Получить публичный ключ
+---
+title: "Aspose.Cells Cloud API – Получение открытого ключа (v4.0) | Документация REST"
+second_title: "Документ"
+ArticleTitle: "Получение открытого ключа"
+linktitle: "Получение открытого ключа"
 type: docs
 url: /ru/get-public-key/
-keywords: asymmetric encryption, public key retrieval, REST API, Excel API, security, data encryption, API integratio
-description: Получите асимметричный открытый ключ для безопасного шифрования данных
+keywords: "Aspose.Cells, открытый ключ, RSA, API, облако"
+description: "Получите открытый ключ RSA, используемый для шифрования данных в Aspose.Cells Cloud. Включает конечную точку, параметры, примеры запроса/ответа, коды состояния и примеры использования SDK."
 weight: 100
-kwords: асимметричное шифрование, открытый ключ, REST API, Excel API, безопасность, шифрование данных, интеграция API, JSON, документация API
 ---
-Извлекает открытый ключ из асимметричного алгоритма шифрования.
 
-## **Получить открытый ключ API**
+Этот API извлекает открытый ключ из асимметричного алгоритма шифрования.
+
+**Краткое описание:** Используйте API Aspose.Cells для получения открытого ключа RSA (2048 бит), необходимого для шифрования данных при работе с файлами Excel в облаке. Конечная точка возвращает ключ в формате JSON и защищена с помощью OAuth 2.0.
+
+## **API получения открытого ключа**
+
+**Необходимые условия:**  
+Получите действительный токен доступа OAuth 2.0, включающий область `Cells.Read`, перед вызовом этой конечной точки.
+
+### **Web API**
 
 ```
-GET http://api.aspose.cloud/v4.0/cells/publickey
+GET https://api.aspose.cloud/v4.0/cells/publickey
 ```
+
+**Пример запроса (cURL)**
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/publickey" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
+### **Безопасность и аутентификация**
+
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
 
 ### **Параметры запроса:**
 
-| Имя параметра| Тип| Путь/Строка запроса/Тело HTTP| Описание|
-|:- |:- |:- |:- |
-|||||
+| Имя параметра | Тип   | Расположение | Описание                                                                 |
+| ------------- | ----- | ------------ | ------------------------------------------------------------------------ |
+| Authorization | string | Заголовок   | Токен типа Bearer для аутентификации OAuth2 (обязательный).              |
+| Accept        | string | Заголовок   | Желаемый формат ответа, например, `application/json` (необязательный, по умолчанию — JSON). |
 
 ### **Ответ**
 
 ```json
 {
-  "Name": "CellsCloudPublicKeyResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "CellsCloudPublicKey",
-      "DataType": {
-        "Identifier": "Class",
-        "Reference": "CellsCloudPublicKey",
-      }
-    },
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
-    }
-  ]
+  "Code": 200,
+  "Status": "OK",
+  "CellsCloudPublicKey": {
+    "PublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr...",
+    "Algorithm": "RSA",
+    "KeySize": 2048
+  }
 }
 ```
 
-## Как использовать открытый ключ Get API с SDK
+**Коды HTTP-статуса**
+
+| Код | Значение              | Описание                                                         |
+| --- | --------------------- | ---------------------------------------------------------------- |
+| 200 | OK (OK)               | Фильтр успешно применён; ответ содержит сведения об операции.   |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизован) | Недопустимый или отсутствующий токен JWT.                        |
+| 413 | Payload Too Large (Слишком большой полезный груз) | Загруженный файл превышает ограничение по размеру.               |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                                   |
+
+## Как использовать API получения открытого ключа с SDK
 
 ### Спецификация OpenAPI
 
- The[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/KeyController/GetPublicKey) определяет общедоступный программный интерфейс, позволяющий вам выполнять REST-взаимодействия непосредственно из вашего веб-браузера.
+[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/KeyController/GetPublicKey) определяет публично доступное программное интерфейсное описание, позволяющее выполнять взаимодействие REST напрямую из веб-браузера.
 
-### Используйте облачные SDK Aspose.Cells
+### Использование SDK Aspose.Cells Cloud
 
-Использование SDK — лучший способ ускорить разработку. SDK берёт на себя все базовые детали, позволяя вам легко реализовать получение открытого ключа для ячеек с минимальным количеством кода.
- Пожалуйста, проверьте[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK обрабатывает все низкоуровневые детали, позволяя просто реализовать получение открытого ключа для ячеек с минимальным объёмом кода.  
+Ознакомьтесь с [репозиторием на GitHub](https://github.com/aspose-cells-cloud) для получения полного списка SDK Aspose.Cells Cloud.
 
-Следующие примеры кода иллюстрируют, как взаимодействовать с веб-сервисами Aspose.Cells с использованием различных SDK:
+Ниже приведены конкретные примеры для наиболее распространённых языков:

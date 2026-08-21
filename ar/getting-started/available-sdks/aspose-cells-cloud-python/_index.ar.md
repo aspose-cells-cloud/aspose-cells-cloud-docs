@@ -1,29 +1,29 @@
-﻿---
-title: "Aspose.Cells Cloud SDK لـ Python: التحويل، الدمج، التقسيم، الحماية، البحث، الاستبدال، والمزيد"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for Python: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells مجموعة SDK السحابية لـ Pytho
-type: docs
-url: /ar/available-sdks/aspose-cells-cloud-python/
-description: "توفر مجموعة SDK السحابية Aspose.Cells لـ Python قوة حقيقية عبر الأنظمة الأساسية: يوفر استيراد واحد للمطورين Windows وLinux وmacOS نفس القدرة على إنشاء كل كائن وتحويله ودمجه وتقسيمه وحمايته ومعالجته - لا يلزم تثبيت Office ولا يلزم إجراء تعديلات خاصة بالمنصة"
-weight: 30
-kwords: مجموعة أدوات تطوير البرامج Python، مجموعة أدوات تطوير البرامج Excel لـ Python، مجموعة أدوات تطوير البرامج السحابية لـ Python، REST، مخطط، جدول محوري، كائن جدول/قائمة، تحويل جدول بيانات، PDF، CSV، JSON، Markdown، دمج، تقسيم، حماية، بحث، استبدال
 ---
-مجموعة تطوير البرامج مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا. يمكنك الوصول إليها[كود مصدر المكتبة Python لـ Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python).
+title: "Aspose.Cells Cloud SDK for Python: تحويل، دمج، تقسيم، حماية، بحث، استبدال، والمزيد."
+second_title: "وثيقة"
+ArticleTitle: "Aspose.Cells Cloud SDK for Python: تحويل، دمج، تقسيم، حماية، بحث، استبدال، والمزيد."
+linktype: "Aspose.Cells Cloud SDK for Python"
+type: docs
+url: /available-sdks/aspose-cells-cloud-python/
+description: "يوفر Aspose.Cells Cloud SDK for Python واجهة برمجة تطبيقات متعددة المنصات وسلسة لإنشاء وتحويل ودمج وتقسيم وحماية وبحث واستبدال وتعديل ملفات إكسل في السحابة دون الحاجة إلى تثبيت برامج مايكروسوفت أوفيس."
+weight: 30
+keywords: ["Aspose.Cells", "Python SDK", "Excel", "Cloud API", "Convert Excel to PDF", "Merge Excel", "Split Workbook", "Protect Worksheet", "Search and Replace", "REST API"]
+---
+يُعد SDK مفتوح المصدر ويتم ترخيصه بموجب رخصة MIT. يمكنك الوصول إلى كود مصدر مكتبة بايثون الخاصة بـ Aspose.Cells Cloud [هنا](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python).
 
-# **كيفية استخدام Aspose.Cells Cloud SDK لـ Python**
+# **كيفية استخدام Aspose.Cells Cloud SDK for Python**
 
-مجموعة تطوير البرامج السحابية Aspose.Cells لـ Python هي مكتبة فعّالة تُمكّن المطورين من التعامل مع ملفات Microsoft Excel ومعالجتها باستخدام لغة البرمجة Python. باستخدام هذه المجموعة، يُمكنك إنشاء مستندات Excel وتحريرها وتحويلها في السحابة، دون الحاجة إلى تثبيت برامج أو تبعيات إضافية على جهازك المحلي.
+يُعد Aspose.Cells Cloud SDK for Python مكتبة قوية تتيح للمطورين التعامل مع ملفات مايكروسوفت إكسل ومعالجتها باستخدام لغة البرمجة بايثون. وباستخدام هذا SDK، يمكنك إنشاء وتعديل وتحويل مستندات إكسل في السحابة، دون الحاجة إلى تثبيت برامج إضافية أو اعتماديات على جهازك المحلي.
 
-في هذه المقالة، سنستكشف كيفية استخدام Aspose.Cells Cloud SDK لـ Python لأداء بعض المهام الشائعة، مثل إنشاء مصنف Excel جديد، وإدراج البيانات في الخلايا، وحفظ المصنف المعدل في السحابة.
+في هذه المقالة، سنستكشف كيفية استخدام Aspose.Cells Cloud SDK for Python لأداء بعض المهام الشائعة، مثل إنشاء مصنف إكسل جديد، وإدراج بيانات في الخلايا، وحفظ المصنف المعدّل في السحابة.
 
-## ابدء
+## البدء
 
- قبل أن تتمكن من استخدام حزمة تطوير البرامج السحابية Aspose.Cells للغة Go، عليك إعداد بيئة التطوير وتثبيت التبعيات اللازمة. راجع[المقال](https://docs.aspose.cloud/cells/quickstart/) على موقع الويب Aspose للحصول على معرف العميل والسر الخاص بالعميل.
+قبل أن تبدأ باستخدام Aspose.Cells Cloud SDK for Go، تحتاج إلى إعداد بيئة التطوير وتثبيت الاعتماديات اللازمة. راجع [المقالة](https://docs.aspose.cloud/cells/quickstart/) على موقع Aspose للحصول على معرّف العميل (client ID) ومفتاح العميل السري (client secret).
 
-## كيفية تثبيت الحزمة Python لـ Aspose.Cells Cloud
+## كيفية تثبيت حزمة بايثون الخاصة بـ Aspose.Cells Cloud
 
-يمكنك تثبيت Aspose.Cells Cloud SDK لـ Python من خلال الأمر أدناه:
+يمكنك تثبيت Aspose.Cells Cloud SDK for Python باستخدام الأمر التالي:
 
 ```bash
 
@@ -31,15 +31,15 @@ kwords: مجموعة أدوات تطوير البرامج Python، مجموعة 
   
  ```
 
-## كيفية استخدام الحزمة Python لتحويل Xlsx إلى PDF
+## كيفية استخدام حزمة بايثون لتحويل ملف Xlsx إلى PDF
 
-- استيراد مكتبة السحابة Aspose.Cells
- ابدأ باستيراد الحزمة اللازمة من SDK Aspose.Cells Cloud Python إلى مشروعك.
-- تكوين العميل API باستخدام بيانات الاعتماد
- قم بمصادقة عميلك API باستخدام معرف العميل الفريد والسر الخاص بالعميل.
-- إعداد معلمات التحويل
- قم بتحديد المعلمات لمهمة التحويل، بما في ذلك اسم ملف المصدر، وتنسيق الإخراج المطلوب، ومسار مجلد التخزين.
-- تنفيذ تحويل المصنف
- استدعاء عملية التحويل باستخدام طريقة PostConvertWorkbook ومعالجة الاستجابة.
+- استيراد مكتبة Aspose.Cells Cloud  
+  ابدأ باستيراد الحزمة الضرورية من SDK الخاص بـ Aspose.Cells Cloud لبايثون في مشروعك.
+- تكوين عميل واجهة برمجة التطبيقات مع بيانات الاعتماد  
+  قم بمصادقة عميل واجهة برمجة التطبيقات باستخدام معرّف العميل ومفتاح العميل السري الفريدين الخاصين بك.
+- إعداد معلمات التحويل  
+  حدد المعلمات المطلوبة لمهمة التحويل، بما في ذلك اسم ملف المصدر، وتنسيق الإخراج المرغوب، ومسار مجلد التخزين.
+- تنفيذ عملية تحويل المصنف  
+  استدعِ عملية التحويل باستخدام الطريقة PostConvertWorkbook، وتعامل مع الاستجابة.
 
 {{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_AvailableSDKs.py" >}}

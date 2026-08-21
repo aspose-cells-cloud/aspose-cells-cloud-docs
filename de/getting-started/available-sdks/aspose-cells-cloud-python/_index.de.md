@@ -1,29 +1,29 @@
-﻿---
-title: "Aspose.Cells Cloud SDK für Python: Konvertieren, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen und mehr"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for Python: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells Cloud SDK für Python
-type: docs
-url: /de/available-sdks/aspose-cells-cloud-python/
-description: "Aspose.Cells Cloud SDK für Python bietet echte plattformübergreifende Leistung: Ein Import bietet Windows-, Linux- und macOS-Entwicklern die gleiche fließende API zum Erstellen, Konvertieren, Zusammenführen, Aufteilen, Schützen und Bearbeiten jedes Excel-Objekts – keine Office-Installation erforderlich und keine plattformspezifischen Anpassungen erforderlich"
-weight: 30
-kwords: Python SDK, Excel SDK für Python, Cloud SDK für Python, REST, Diagramm, Pivot-Tabelle, Tabellen-/Listenobjekt, Tabellenkalkulation konvertieren, PDF, CSV, Json, Markdown, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen
 ---
-Das SDK ist Open Source und steht unter der MIT-Lizenz. Sie können darauf zugreifen[der Python-Bibliotheksquellcode für Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python).
+title: "Aspose.Cells Cloud SDK für Python: Konvertieren, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen und mehr."
+second_title: "Dokument"
+ArticleTitle: "Aspose.Cells Cloud SDK für Python: Konvertieren, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen und mehr."
+linktitle: "Aspose.Cells Cloud SDK für Python"
+type: docs
+url: /available-sdks/aspose-cells-cloud-python/
+description: "Das Aspose.Cells Cloud SDK für Python bietet eine plattformübergreifende, fluide API zum Erstellen, Konvertieren, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen und Bearbeiten von Excel-Dateien in der Cloud, ohne Office-Installationen zu benötigen."
+weight: 30
+keywords: ["Aspose.Cells", "Python SDK", "Excel", "Cloud API", "Excel in PDF konvertieren", "Excel zusammenführen", "Arbeitsmappe teilen", "Arbeitsblatt schützen", "Suchen und Ersetzen", "REST API"]
+---
+Das SDK ist Open Source und unter der MIT-Lizenz lizenziert. Sie können den Quellcode der Python-Bibliothek für Aspose.Cells Cloud [hier](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python) abrufen.
 
-# **So verwenden Sie Aspose.Cells Cloud SDK für Python**
+# **So verwenden Sie das Aspose.Cells Cloud SDK für Python**
 
-Aspose.Cells Cloud SDK für Python ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, Microsoft Excel-Dateien mit der Programmiersprache Python zu bearbeiten und zu verarbeiten. Mit diesem SDK können Sie Excel-Dokumente in der Cloud erstellen, bearbeiten und konvertieren, ohne zusätzliche Software oder Abhängigkeiten auf Ihrem lokalen Computer installieren zu müssen.
+Das Aspose.Cells Cloud SDK für Python ist eine leistungsstarke Bibliothek, mit der Entwickler Microsoft-Excel-Dateien mithilfe der Python-Programmiersprache bearbeiten und verarbeiten können. Mit diesem SDK können Sie Excel-Dokumente in der Cloud erstellen, bearbeiten und konvertieren, ohne zusätzliche Software oder Abhängigkeiten auf Ihrem lokalen Computer installieren zu müssen.
 
-In diesem Artikel erfahren Sie, wie Sie mit dem Aspose.Cells Cloud SDK für Python einige gängige Aufgaben ausführen, z. B. eine neue Excel-Arbeitsmappe erstellen, Daten in Zellen einfügen und die geänderte Arbeitsmappe in der Cloud speichern.
+In diesem Artikel erläutern wir, wie Sie das Aspose.Cells Cloud SDK für Python verwenden, um einige gängige Aufgaben auszuführen, wie z. B. das Erstellen einer neuen Excel-Arbeitsmappe, das Einfügen von Daten in Zellen und das Speichern der bearbeiteten Arbeitsmappe in der Cloud.
 
 ## Erste Schritte
 
- Bevor Sie das Aspose.Cells Cloud SDK für Go verwenden können, müssen Sie Ihre Entwicklungsumgebung einrichten und die erforderlichen Abhängigkeiten installieren. Weitere Informationen finden Sie unter[der Artikel](https://docs.aspose.cloud/cells/quickstart/) auf der Website Aspose, um Ihre Client-ID und Ihr Client-Geheimnis zu erhalten.
+Bevor Sie mit der Verwendung des Aspose.Cells Cloud SDK für Python beginnen können, müssen Sie Ihre Entwicklungsumgebung einrichten und die erforderlichen Abhängigkeiten installieren. Weitere Informationen finden Sie im [Artikel](https://docs.aspose.cloud/cells/quickstart/) auf der Aspose-Website, um Ihre Client-ID und Ihr Client-Secret zu erhalten.
 
 ## So installieren Sie das Python-Paket für Aspose.Cells Cloud
 
-Sie können Aspose.Cells Cloud SDK für Python mit dem folgenden Befehl installieren:
+Sie können das Aspose.Cells Cloud SDK für Python mit dem folgenden Befehl installieren:
 
 ```bash
 
@@ -31,15 +31,15 @@ Sie können Aspose.Cells Cloud SDK für Python mit dem folgenden Befehl installi
   
  ```
 
-## So verwenden Sie das Paket Python, um Xlsx in PDF zu konvertieren
+## So verwenden Sie das Python-Paket zum Konvertieren von Xlsx in PDF
 
-- Importieren Sie Aspose.Cells Cloud-Bibliothek
- Beginnen Sie, indem Sie das erforderliche Paket aus dem Aspose.Cells Cloud Python SDK in Ihr Projekt importieren.
-- Konfigurieren Sie den API-Client mit Anmeldeinformationen
- Authentifizieren Sie Ihren API-Client mit Ihrer eindeutigen Client-ID und Ihrem Client-Geheimnis.
-- Konvertierungsparameter vorbereiten
- Definieren Sie Parameter für die Konvertierungsaufgabe, einschließlich des Quelldateinamens, des gewünschten Ausgabeformats und des Speicherordnerpfads.
-- Arbeitsmappenkonvertierung ausführen
- Rufen Sie den Konvertierungsprozess mit der Methode PostConvertWorkbook auf und verarbeiten Sie die Antwort.
+- Aspose.Cells Cloud-Bibliothek importieren  
+  Beginnen Sie damit, das erforderliche Paket aus dem Aspose.Cells Cloud Python SDK in Ihr Projekt zu importieren.
+- API-Client mit Anmeldeinformationen konfigurieren  
+  Authentifizieren Sie Ihren API-Client mit Ihrer eindeutigen Client-ID und Ihrem Client-Secret.
+- Konvertierungsparameter vorbereiten  
+  Definieren Sie Parameter für die Konvertierungsaufgabe, einschließlich des Quelldateinamens, des gewünschten Ausgabeformats und des Speicherordnerpfads.
+- Arbeitsmappenkonvertierung ausführen  
+  Rufen Sie den Konvertierungsprozess mit der Methode PostConvertWorkbook auf und verarbeiten Sie die Antwort.
 
 {{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_AvailableSDKs.py" >}}

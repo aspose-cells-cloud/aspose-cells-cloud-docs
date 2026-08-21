@@ -1,76 +1,120 @@
-﻿---
-title: Agrupar columnas en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Grupo
-type: docs
-url: /es/columns/group/
-aliases: [/group-columns-in-an-excel-worksheet/, /group-columns-in-excel-worksheet/]
-keywords: Group column on an Excel workshee
-description: Aspose.Cells Cloud REST API admite la columna de agrupación en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 60
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Agrupar columnas en una hoja de cálculo Excel
 ---
-Este REST API indica columnas de la hoja de cálculo del grupo.
+title: "Agrupar Columnas – Documentación de la API en la Nube Aspise.Cells"
+description: "Agrupar columnas de hoja de cálculo en una hoja de cálculo de Excel usando la API REST de Aspose.Cells Cloud (v3.0). Incluye sintaxis de solicitud, parámetros, ejemplos en cURL y SDK, y detalles de respuesta."
+keywords: "Aspose.Cells, agrupar columnas, API de Excel, REST, SDK en la nube"
+weight: 60
+type: docs
+aliases:
+  - /group-columns-in-an-excel-worksheet/
+  - /group-columns-in-excel-worksheet/
+---
 
-## RSET API
+# Agrupar Columnas en una Hoja de Cálculo de Excel
+
+**Versión de la API:** v3.0  
+**Operación:** `PostGroupWorksheetColumns` – Agrupa columnas de la hoja de cálculo en la hoja de cálculo.
+
+---
+
+## Descripción General
+
+Esta API REST le permite agrupar un rango de columnas en una hoja de cálculo. Las columnas agrupadas pueden mostrarse u ocultarse, lo que le permite crear secciones plegables similares a las de Microsoft Excel.
+
+---
+
+## Requisitos Previos
+
+- Un **token de acceso JWT** válido obtenido desde el servicio de autenticación de Aspose Cloud.  
+- El libro debe estar almacenado en una ubicación accesible para Aspose.Cells Cloud (almacén predeterminado o un nombre de almacenamiento personalizado).  
+- Versión necesaria del SDK (si se utiliza un SDK): la última versión que soporte la API versión **v3.0**.  
+
+---
+
+## Autenticación
+
+Todas las solicitudes requieren autenticación mediante **token Bearer**.
+
+```http
+Authorization: Bearer <access_token>
+```
+
+Para más detalles sobre cómo obtener un token, consulte la [guía de autenticación JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+---
+
+## Solicitud HTTP
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
+```
+
+| Parámetro | Ubicación | Obligatorio | Descripción |
+|-----------|-----------|-------------|-------------|
+| `name` | Ruta | Sí | Nombre del archivo del libro (por ejemplo, `test.xlsx`). |
+| `sheetName` | Ruta | Sí | Hoja de cálculo que contiene las columnas que se van a agrupar. |
+| `firstIndex` | Consulta | Sí | Índice de base cero de la primera columna que se incluirá en el grupo. |
+| `lastIndex` | Consulta | Sí | Índice de base cero de la última columna que se incluirá en el grupo. |
+| `hide` | Consulta | No | Si es `true`, las columnas agrupadas se ocultan; de lo contrario, permanecen visibles. |
+| `folder` | Consulta | No | Ruta de la carpeta que contiene el libro. |
+| `storageName` | Consulta | No | Nombre del servicio de almacenamiento donde se encuentra el archivo. |
+
+---
+
+## Ejemplo de Solicitud (cURL)
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
- 
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
 ```
 
-Los parámetros de la solicitud son:
+> **Nota:** La solicitud utiliza **HTTPS** para garantizar una comunicación cifrada.
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| El nombre del libro de trabajo.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| primerÍndice| entero| consulta|El primer índice de columna que se va a operar.|
-| últimoÍndice| entero| consulta| El último índice de columna que se va a operar.|
-| esconder| booleano| consulta| estado visible de las columnas|
-| carpeta| cadena| consulta| La carpeta de documentos.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+---
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+## Respuesta
 
- Puedes utilizar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+### Éxito (200)
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| `Code` | entero | Código de estado HTTP (`200`). |
+| `Status` | cadena | Estado textual de la operación (`OK`). |
 
-{{< tab tabNum="11" >}}
+**Ejemplo**
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" -H "accept: application/json"
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```java
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+### Error (por ejemplo, 400 Solicitud Incorrecta)
 
-{{< /tabs >}}
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| `Code` | entero | Código de estado HTTP (`400`, `401`, `404`, `500`, …). |
+| `Status` | cadena | Estado textual (`Error`). |
+| `ErrorMessage` | cadena | Descripción legible por humanos del problema. |
+| `ErrorCode` | cadena | Identificador programático del error. |
 
-## Familia de SDK en la nube
+**Ejemplo – Solicitud Incorrecta**
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+```json
+{
+  "Code": 400,
+  "Status": "Error",
+  "ErrorMessage": "Índice de columna no válido.",
+  "ErrorCode": "InvalidParameter"
+}
+```
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+---
+
+## Ejemplos de SDK
+
+Los fragmentos siguientes muestran cómo llamar a la operación **Agrupar Columnas de la Hoja de Cálculo** utilizando los SDK admitidos.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +167,27 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---
+
+## Observaciones
+
+- **Comportamiento de agrupación:** La API crea un grupo de columnas que puede expandirse o contraerse en Excel. Configurar `hide=true` contrae inmediatamente el grupo.  
+- **Indexación base cero:** Tanto `firstIndex` como `lastIndex` comienzan en **0**; la primera columna de una hoja de cálculo tiene el índice 0.  
+- **Consideraciones sobre almacenamiento:** Si el libro reside en un almacenamiento no predeterminado, proporcione ambos parámetros de consulta `folder` y `storageName`.  
+
+---
+
+## Consulte también
+
+- [Autenticación – Token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
+- [Especificación OpenAPI para Agrupar Columnas de la Hoja de Cálculo](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns)  
+- [SDK de Aspose.Cells Cloud (GitHub)](https://github.com/aspose-cells-cloud)  
+- [Agrupar Filas en una Hoja de Cálculo de Excel](/rows/group/)  
+
+---
+
+> *Ilustración:* ![Captura de pantalla que muestra columnas agrupadas en una hoja de cálculo de Excel](./images/group-columns.png){: .img-fluid alt="Captura de pantalla que muestra columnas agrupadas en una hoja de cálculo de Excel" }
+
+*La imagen de marcador de posición anterior debe reemplazarse por una captura de pantalla real que muestre el resultado visual de agrupar columnas.*
+---

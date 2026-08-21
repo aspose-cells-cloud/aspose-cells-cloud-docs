@@ -1,105 +1,115 @@
-﻿---
-title: Excel workboo'da Adlandırılmış Aralıkları Alın
-second_title: Documen
-linktitle: Nam
-type: docs
-url: /tr/ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
-keywords: Get cells data based on named range on an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki adlandırılmış aralığa göre hücre verilerini almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma kitabında Adlandırılmış Aralıkları Alma
 ---
-Bu REST API Çalışma sayfalarını oku aralıkları bilgisini gösterir.
+title: "Excel Çalışma Kitabından Adlandırılmış Aralıkları Alın"
+second_title: "Belge"
+linktype: "Ad"
+type: docs
+url: /ranges/get/name/
+aliases: [/get-named-ranges-inside-the-workbook/]
+keywords: "adlandırılmış aralıklar, Excel, Aspose.Cells, Bulut API, çalışma sayfaları"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabından adlandırılmış aralıkları alın. İsteği oluşturma detayları, örnek cURL komutları ve birden fazla programlama dilinde SDK örnekleri içerir."
+ArticleTitle: "Excel Çalışma Kitabından Adlandırılmış Aralıkları Alın – Aspose.Cells Cloud API"
+weight: 10
+---
 
-## RSET API
+Bu REST API, çalışma sayfaları içinde tanımlanmış adlandırılmış aralıklarla ilgili bilgileri döndürür.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
- 
+**Arka Plan** – *Adlandırılmış aralık*, bir çalışma sayfasında belirli bir hücreyi veya hücre bloğunu belirten kullanıcı tanımlı bir tanımlayıcıdır. Adlandırılmış aralıklar formül oluşturma işlemini basitleştirir, okunabilirliği artırır ve bir çalışma kitabında sık kullanılan bölgelere programlı erişimi sağlar.
+
+**Gereksinimler** – Aspose.Cells Cloud API'ye erişmek için geçerli bir JWT erişim jetonuna ihtiyaç vardır. Bu jetonu, Aspose Cloud istemci kimliğinizi ve istemci gizli anahtarınızı kullanarak OAuth 2.0 jeton uç noktasından kimlik doğrulaması yaparak edinin. Her istekte bu jetonu `Authorization: Bearer <jwt token>` başlığına ekleyin.
+
+## GetNamedRanges API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvendir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT jeton tabanlı kimlik doğrulamaya</a> ihtiyaç duyar.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı | Tür   | Konum         | Açıklama                                       |
+| -------------- | ------ | ------------ | -------------------------------------------- |
+| name           | string | Yol (Path)   | Excel belgesinin adı.                         |
+| folder         | string | Sorgu dizesi | Belgenin bulunduğu klasör.                    |
+| storageName    | string | Sorgu dizesi | Belgenin bulunduğu depo adı.                  |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                           |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | Başarılı (OK)               | Filtre başarıyla uygulandı; yanıt işlem detaylarını içerir. |
+| 400  | Hatalı İstek (Bad Request)  | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401  | Yetkisiz (Unauthorized)     | Geçersiz veya eksik JWT jetonu. |
+| 413  | Yük Çok Büyük (Payload Too Large) | Yüklenen dosya boyut sınırını aşıyor. |
+| 500  | Sunucu İç Hatası (Internal Server Error) | Beklenmeyen sunucu hatası. |
+
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges), web tarayıcınızdan doğrudan REST etkileşimlerinde bulunmanızı sağlayan herkese açık bir programlama arayüzü tanımlar.
+
+Aspose.Cells web hizmetlerini çağırmak için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL kullanarak adlandırılmış aralıkları nasıl alacağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/ranges" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Ranges": {
-
     "RangeList": [
-
       {
-
         "ColumnCount": 7,
-
         "ColumnWidth": 8.428571428571429,
-
         "FirstColumn": 1,
-
         "FirstRow": 9,
-
         "Name": "data",
-
         "RefersTo": "=Sheet1!$B$10:$H$10",
-
         "RowCount": 1,
-
         "RowHeight": 15,
-
         "Worksheet": "Sheet1"
-
       }
-
     ]
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Yanıt Modeli**
+
+| Alan           | Tür     | Açıklama                                             |
+|----------------|---------|------------------------------------------------------|
+| `ColumnCount`  | tamsayı | Aralıktaki sütun sayısı.                             |
+| `ColumnWidth`  | sayı    | Her sütunun genişliği (nokta cinsinden).             |
+| `FirstColumn`  | tamsayı | Aralıktaki ilk sütunun sıfır tabanlı indeksi.        |
+| `FirstRow`     | tamsayı | Aralıktaki ilk satırın sıfır tabanlı indeksi.        |
+| `Name`         | string  | Aralığın kullanıcı tanımlı adı.                      |
+| `RefersTo`     | string  | Hücre referansını tanımlayan formül (örneğin, `=Sheet1!$B$10:$H$10`). |
+| `RowCount`     | tamsayı | Aralıktaki satır sayısı.                             |
+| `RowHeight`    | sayı    | Her satırın yüksekliği (nokta cinsinden).            |
+| `Worksheet`    | string  | Aralığı içeren çalışma sayfasının adı.               |
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bu işlevselliği entegre etmenin en hızlı yolu, bir SDK kullanmaktır. SDK’lar düşük seviye detayları ele aldığı için iş mantığınıza odaklanabilirsiniz. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerini çeşitli SDK’lar kullanarak nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -152,3 +162,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

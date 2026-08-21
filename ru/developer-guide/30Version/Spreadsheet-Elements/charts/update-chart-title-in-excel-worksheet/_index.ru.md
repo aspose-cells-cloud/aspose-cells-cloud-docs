@@ -1,76 +1,93 @@
-﻿---
-title: Обновить заголовок диаграммы на рабочем листе Excel
+---
+title: "Обновить заголовок диаграммы в рабочей тетради Excel"
 type: docs
-url: /ru/charts/title/update/
+url: /charts/title/update/
 aliases: [/update-chart-title-in-excel-worksheet/]
 weight: 160
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Обновление заголовка диаграммы на листе Excel
+keywords: Excel, Aspose.Cells, REST API, заголовок диаграммы, обновление, облачный SDK
+description: Узнайте, как обновить заголовок диаграммы в рабочей тетради Excel с помощью Aspose.Cells Cloud REST API, cURL и различных SDK.
+ArticleTitle: "Обновить заголовок диаграммы в рабочей тетради Excel – документация Aspose.Cells Cloud"
 ---
-Этот REST API указывает заголовок обновленной диаграммы
- 
-## РСЕT API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
- 
+
+Этот REST API обновляет заголовок диаграммы.
+
+**Необходимые условия:** У вас должен быть действующий аккаунт Aspose Cloud и JWT-токен для авторизации. Типичные шаги включают:
+
+- Зарегистрироваться в аккаунте Aspose Cloud.  
+- Получить JWT-токен через endpoint аутентификации.  
+- Убедитесь, что целевая рабочая тетрадь сохранена в поддерживаемом облачном хранилище (по умолчанию или пользовательском).
+
+## API PostWorksheetChartTitle
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей тетради.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| chartIndex| целое число| путь| Индекс диаграммы.|
-| заголовок|| тело| Название диаграммы|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
- 
-<br/>
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Все вызовы API должны выполняться по протоколу **HTTPS**, чтобы избежать предупреждений о смешанном содержимом.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Безопасность и аутентификация**
+
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
+
+### Параметры запроса
+
+| Имя параметра | Тип    | Расположение | Описание                         |
+| ------------- | ------ | ------------ | -------------------------------- |
+| name          | string | path         | Имя рабочей тетради.             |
+| sheetName     | string | path         | Имя рабочего листа.              |
+| chartIndex    | integer| path         | Индекс диаграммы (начинается с 0)|
+| title         | string | body         | Новый заголовок диаграммы.       |
+| folder        | string | query        | Папка рабочей тетради.           |
+| storageName   | string | query        | Имя хранилища.                   |
+
+### Коды состояния ответа
+
+| Код | Описание                                              |
+| --- | ----------------------------------------------------- |
+| 200 | OK — заголовок диаграммы успешно обновлён.            |
+| 400 | Bad Request — отсутствуют или некорректны параметры. |
+| 401 | Unauthorized — недействительный или отсутствующий JWT-токен. |
+| 404 | Not Found — рабочая тетрадь, рабочий лист или диаграмма не найдены. |
+| 500 | Internal Server Error — непредвиденная ошибка сервера. |
+
+**Примечание:** Индекс диаграммы (`chartIndex`) начинается с 0; первая диаграмма на рабочем листе имеет индекс `0`.
+
+<a href="https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle" target="_blank" rel="noopener noreferrer">Спецификация OpenAPI</a> определяет публично доступное программное интерфейсное описание и позволяет выполнять взаимодействие по REST напрямую из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как выполнять вызовы облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v POST "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" 
--d '{"Text":"Stock exchange"}' 
--X POST \
+```bash
+curl -v POST "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
+-d '{"title":"Биржа ценных бумаг"}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
 ## Семейство облачных SDK
- 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
- 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+
+Использование SDK — лучший способ ускорить разработку. SDK берёт на себя обработку низкоуровневых деталей, позволяя сосредоточиться на задачах проекта. Ознакомьтесь со <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">репозиторием на GitHub</a> для получения полного списка SDK Aspose.Cells Cloud.
+
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

@@ -1,102 +1,130 @@
-﻿---
-title: Excel çalışma kitabını çoklu dosyaya bölün
-second_title: Documen
-linktitle: Split an Excel fil
-type: docs
-url: /tr/split-multi-excel-files/
-aliases: [ /split/multi-files/]
-keywords: Split an Excel workbook to multi-files
-description: Aspose.Cells Cloud REST API, Excel çalışma kitabının birden fazla dosyaya bölünmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 130
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Bir çalışma kitabını Excel çoklu dosyalara bölme
 ---
-Bu REST API, Excel `workbook`'i farklı formattaki çoklu dosyalara bölmeyi gösterir.
+title: "Bir Excel çalışma kitabını birden fazla dosyaya bölme"
+ArticleTitle: "Aspose.Cells Cloud API ile Bir Excel Çalışma Kitabını Birden Fazla Dosyaya Nasıl Bölersiniz?"
+second_title: "Belge"
+linktitle: "Bir Excel dosyasını bölme"
+type: docs
+url: /split-multi-excel-files/
+aliases: [/split/multi-files/]
+keywords: "Excel, Aspose.Cells Cloud, REST API, çalışma kitabını bölme, birden fazla dosya, JPEG, PNG, PDF, CSV, JSON"
+description: "Aspose.Cells Cloud REST API, bir Excel çalışma kitabını farklı formatlarda birden fazla dosyaya bölmenizi sağlar. Bu belgeler, C#, Java, PHP, Ruby, Node.js, Python, Perl ve Go gibi diller için istek parametrelerini, bir cURL örneğini ve SDK kod örneklerini içerir."
+weight: 130
+---
 
-**Sorgu Parametresi**
+Bu REST API, bir Excel **çalışma kitabını** farklı formatlarda birden fazla dosyaya böler.
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|biçim|sicim|Bölünmüş format.|
-|itibaren|tam sayı|Çalışma sayfası dizinini başlat.|
-|ile|tam sayı|Çalışma sayfası dizini sonu.|
-|yatayÇözünürlük|tam sayı|Görüntü yatay çözünürlüğü.|
-|dikeyÇözünürlük|tam sayı|Görüntünün dikey çözünürlüğü.|
-|outFolder|sicim|çıkış bölünmüş dosya konumu.|
-|splitNameRule|sicim||
-|dosya|sicim|Orijinal çalışma kitabı klasörü.|
-|depolamaAdı|sicim|Depolama adı.|
+> **Önkoşullar** – Bu API’yi kullanmak için geçerli bir JWT jetonuna sahip olmanız, desteklenen bir SDK sürümünü kullandığınızdan emin olmanız ve çalışma kitabınızın desteklenen bir depolama konumunda saklandığından emin olmanız gerekir. API, aynı zamanda platform yönergelerinde belgelenen dosya boyutu sınırlarını da uygular.
 
-## DİNLENME API
+## PostWorkbookSplit API
 
-|**API**|**Tip**|**Tanım**|**Swagger Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/{isim}/böl|POSTALAMAK|Excel Çalışma Kitabını Böl|[PostWorkbookSplit](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit)|
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/split
+```
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **Güvenlik ve Kimlik Doğrulama**
 
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT jeton tabanlı kimlik doğrulamayı</a> gerektirir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### İstek parametreleri
+
+| Parametre Adı        | Tür     | Konum     | Açıklama                                                                                   | Gerekli |
+| -------------------- | ------- | --------- | ------------------------------------------------------------------------------------------ | ------- |
+| files[]              | dosya   | formData  | **Bölünecek** bir veya daha fazla Excel çalışma kitabını belirtir. İstekte `file1`, `file2`, … kullanın. | Evet    |
+| format               | string  | Query     | Bölünen dosyalar için istenen çıktı formatı.                                              | Hayır   |
+| from                 | integer | Query     | Başlangıç sayfa dizini.                                                                     | Hayır   |
+| to                   | integer | Query     | Bitiş sayfa dizini.                                                                         | Hayır   |
+| horizontalResolution | integer | Query     | Görüntü yatay çözünürlüğü.                                                                  | Hayır   |
+| verticalResolution   | integer | Query     | Görüntü dikey çözünürlüğü.                                                                  | Hayır   |
+| outFolder            | string  | Query     | Bölünen dosyaların çıktı klasörü.                                                           | Hayır   |
+| splitNameRule        | string  | Query     | Bölünen dosyalara uygulanacak adlandırma kuralı.                                            | Hayır   |
+| folder               | string  | Query     | Orijinal çalışma kitabının bulunduğu klasör.                                                | Hayır   |
+| storageName          | string  | Query     | Kullanılacak depo adı.                                                                     | Hayır   |
+
+### **Yanıt**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+    "Files": [
+      {
+        "Filename" : "[file1 name]",
+        "Filesize" : [file size],
+        "FileContent" : "[Base64String]"
+      },
+      {
+        "Filename" : "[file2 name]",
+        "Filesize" : [file size],
+        "FileContent" : "[Base64String]"
+      },
+      {
+        "Filename" : "[file3 name]",
+        "Filesize" : [file size],
+        "FileContent" : "[Base64String]"
+      }
+    ]
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                         |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | OK (Tamam)                  | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request (Hatalı İstek)  | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT jetonu. |
+| 413 | Payload Too Large (Çok Büyük Yük) | Yüklenen dosya boyutu sınırını aşıyor. |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası. |
+
+## SDK’lar ile PostWorkbookSplit API Nasıl Kullanılır?
+
+### PostWorkbookSplit API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web servislerine kolayca erişmek için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye istek nasıl yapılır gösterir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/split?format=jpeg&from=1&to=1&horizontalResolution=0&verticalResolution=0" -H "accept: application/json"
-
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/split?format=jpeg&from=1&to=1&horizontalResolution=0&verticalResolution=0" -H "accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Result": {
-
     "Documents": [
-
       {
-
         "Id": 1,
-
         "link": {
-
           "Href": "413e3375-c163-4d5c-8b84-8f95f63902f6.png",
-
           "Rel": null,
-
           "Title": null,
-
           "Type": null
-
         }
-
       }
-
     ]
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bir SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, düşük seviye detayları yönetir böylece projenizin görevlerine odaklanabilirsiniz. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak Aspose.Cells web servislerine nasıl istek yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

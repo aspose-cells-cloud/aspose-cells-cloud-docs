@@ -1,76 +1,101 @@
-﻿---
-title: Ajustar automáticamente columnas en un archivo Excel
-second_title: Documen
-linktitle: Columna
-type: docs
-url: /es/autofit-columns-on-an-excel-file/
-aliases: [/auto-fit-columns-in-excel-workbooks,/autofit-columns-in-excel-workbooks/,/columns/autofit/,/workbook/autofit/columns/]
-keywords: Autofit columns on an Excel workboo
-description: Aspose.Cells Cloud REST API admite el ajuste automático de columnas en un libro de trabajo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 90
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Autoajustar columnas en un libro de trabajo Excel
 ---
-Este REST API indica que se deben ajustar automáticamente las columnas en un libro de trabajo Excel.
+title: "Ajustar automáticamente columnas en un archivo de Excel"
+second_title: "Documento"
+linktitle: "Columnas"
+type: docs
+url: /autofit-columns-on-an-excel-file/
+aliases:
+  [
+    /auto-fit-columns-in-excel-workbooks,
+    /autofit-columns-in-excel-workbooks/,
+    /columns/autofit/,
+    /workbook/autofit/columns/,
+  ]
+keywords: "Ajustar automáticamente columnas, Excel, Aspose.Cells Cloud, API REST, SDK, cURL, API"
+description: "Aprenda a utilizar la API REST de Aspose.Cells Cloud para ajustar automáticamente columnas en un libro de Excel. Incluye detalles de la solicitud, un ejemplo con cURL y ejemplos de código con SDK para múltiples lenguajes."
+weight: 90
+---
 
-## RSET API
+Esta API REST admite el ajuste automático de columnas en un libro de Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
- 
+## API PostAutofitWorkbookColumns
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
 ```
 
 Los parámetros de la solicitud son:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del documento.|
-|[Opciones de autoajuste](/cells/es/auto-fitter-options/) || cuerpo| Opciones de ajuste automático.|
-| columna de inicio| entero| consulta| Columna de inicio.|
-| columna final| entero| consulta| Columna final.|
-| carpeta| cadena| consulta| Carpeta del documento.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro    | Tipo    | Ubicación | Descripción                                         |
+| ----------------------- | ------- | --------- | --------------------------------------------------- |
+| **name**                | string  | path      | El nombre del archivo del libro.                    |
+| **autoFitterOptions**   | object  | body      | Opciones que controlan el comportamiento de ajuste. |
+| **startColumn**         | integer | query     | Índice de base cero de la primera columna a ajustar. |
+| **endColumn**           | integer | query     | Índice de base cero de la última columna a ajustar.  |
+| **folder**              | string  | query     | La carpeta que contiene el libro.                   |
+| **storageName**         | string  | query     | El nombre del servicio de almacenamiento.           |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación de OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns){:rel="noopener noreferrer"} define una interfaz de programación públicamente accesible y le permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo invocar la API en la nube con cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -d '{"AutoFitMergedCells":true, "IgnoreHidden":true}'
- 
 ```
+
+> **Nota:** Siempre utilice el punto final HTTPS en producción y mantenga su token JWT confidencial.
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Requisitos previos
+Antes de invocar esta operación, asegúrese de tener una clave válida de la API de Aspose Cloud, un token JWT generado y que el libro de destino ya exista en la ubicación de almacenamiento especificada.
+
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                                |
+|--------|-----------------------------|------------------------------------------------------------|
+| 200    | Correcto                    | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros ausentes o no válidos (p. ej., tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT no válido o ausente.                             |
+| 413    | Payload demasiado grande   | El archivo cargado excede el límite de tamaño.            |
+| 500    | Error interno del servidor  | Error inesperado del servidor.                             |
+
+La API puede devolver los siguientes códigos de estado HTTP:
+
+| Código | Descripción                                |
+|--------|--------------------------------------------|
+| 200    | Correcto – columnas ajustadas automáticamente |
+| 400    | Solicitud incorrecta – parámetros ausentes o no válidos |
+| 401    | No autorizado – JWT no válido o expirado   |
+| 500    | Error del servidor – fallo en el procesamiento interno |
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más eficiente de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel para que usted pueda centrarse en la lógica de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud){:rel="noopener noreferrer"} para ver una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells utilizando diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

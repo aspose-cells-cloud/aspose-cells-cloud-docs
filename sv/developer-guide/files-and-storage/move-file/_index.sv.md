@@ -1,48 +1,90 @@
-﻿---
-title: Flytta fil
-second_title: Documen
-linktitle: Flytta fil
+---
+title: "Aspose.Cells Cloud Move File API – Gränssnitt för snabb filflytt i molnet"
+second_title: "Dokument"
+ArticleTitle: "Effektiv molnbaserad Excel-filhanteringslösning – Gränssnitt för snabb filflytt i molnet"
+linktitle: "Flytta fil"
 type: docs
 url: /sv/move-file/
-keywords: Move file, Aspose.Cells API, File Management, Excel API, REST API, Cloud Storage, Spreadsheet Manipulatio
-description: Lär dig hur du använder MoveFile API för att hantera filer i molnlagring Aspose.Cells
+keywords: "Aspose.Cells, Move File API, Molnlagring, Excel API, Filhantering"
+description: "Hur man flyttar filer mellan mappar i Aspose.Cells Cloud-lagring med v4.0:s Move File API – slutpunkt, parametrar, exempel och SDK-länkar."
 weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Flytta fil, Filhantering, Molnlagring
 ---
+
+**moveFile**-API:et flyttar en fil från en plats till en annan inom Aspose.Cells Cloud-lagring. Det hjälper dig att organisera filer och hantera lagring effektivt.
+
 ## **Excel API: Flytta fil**
 
+### Webb-API
+
+```bash
+PUT https://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}
 ```
-PUT http://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}
+
+### **Säkerhet och autentisering**
+
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-token-baserad autentisering</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
-### **Funktionsbeskrivning**
+### Begäranparametrar för **moveFile**-API:et är
 
- De**flyttaFil** Med API kan du flytta en fil från en plats till en annan inom Aspose.Cells-molnlagringen. Detta är särskilt användbart för att organisera filer och hantera lagring effektivt.
+| Parameter Name  | Typ    | Sökväg/Frågesträng/HTTP-body | Beskrivning                                         |
+| --------------- | ------ | ---------------------------- | --------------------------------------------------- |
+| srcPath         | String | Sökväg                       | Källsökvägen för filen som ska flyttas.             |
+| destPath        | String | Frågesträng                  | Målsökvägen dit filen ska flyttas.                  |
+| srcStorageName  | String | Frågesträng                  | Källlagringsnamnet, om tillämpligt.                |
+| destStorageName | String | Frågesträng                  | Mållagringsnamnet, om tillämpligt.                 |
+| versionId       | String | Frågesträng                  | Filens versions-ID, om tillämpligt.                |
 
-###  Begäranparametrarna för**flyttaFil** API är
+### **Svar**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-text| Beskrivning|
-|---------------|--|------------------------|--------------------------------------|
-| srcPath| Sträng| Väg| Källsökvägen för filen som ska flyttas.|
-| destPath| Sträng| Fråga| Målsökvägen dit filen ska flyttas.|
-| srcLagringsnamn| Sträng| Fråga| Källlagringsnamnet om tillämpligt.|
-| destStorageName| Sträng| Fråga|Namnet på destinationslagringen, om tillämpligt.|
-| versions-ID| Sträng| Fråga| Filens versions-ID, om tillämpligt.|
-
-### **Svarsbeskrivning**
+Ett lyckat anrop returnerar **HTTP 200 OK** med en tom JSON-body.
 
 ```json
-{
-Void
-}
+{}
 ```
+
+**HTTP-statuskoder**
+
+| HTTP-kod | HTTP-status           | Beskrivning                                                        |
+| -------- | --------------------- | ------------------------------------------------------------------ |
+| 200      | OK                    | Webb-API:et anropades utan problem; svaret innehåller åtgärdens detaljer. |
+| 400      | Ogiltig begäran       | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds).  |
+| 401      | Oautentiserad         | Ogiltig eller saknad JWT-token.                                    |
+| 413      | För stor nyttolast    | Den uppladdade filen överskrider storleksgränsen.                  |
+| 500      | Internt serverfel     | Oväntat serverfel.                                                 |
 
 ## OpenAPI-specifikation
 
- De[OpenAPI-specifikation](https://reference.aspose.cloud/cells/#/FileController/MoveFile) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://reference.aspose.cloud/cells/#/FileController/MoveFile) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
 
-## Excel API SDK
+Du kan använda verktyget cURL för kommandoraden för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör anrop till moln-API:et med cURL.
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}?destPath={destPath}" \
+     -H "Authorization: Bearer {access_token}"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```json
+{}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Kolla in [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med olika SDK:er:
+
+---

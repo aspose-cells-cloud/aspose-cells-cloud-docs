@@ -1,76 +1,85 @@
-﻿---
-title: 取消隐藏 Excel 工作表上的列
-second_title: Documen
-linktitle: 未隐藏
-type: docs
-url: /zh/columns/unhide/
-aliases: [/unhide-columns-in-an-excel-worksheet/,/unhide-columns-in-excel-worksheet/]
-keywords: Unhide column on an Excel workshee
-description: Aspose.Cells Cloud REST API 支持在 Excel 工作表上取消隐藏列。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 50
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、取消隐藏 Excel 工作表上的列
 ---
-此 REST API 表示取消隐藏工作表列。
+title: "取消隐藏 Excel 工作表中的列"
+ArticleTitle: "取消隐藏 Excel 工作表中的列 - Aspose.Cells Cloud API"
+second_title: "文档"
+linktitle: "取消隐藏"
+type: docs
+url: /columns/unhide/
+aliases:
+  [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
+keywords: "Aspose.Cells, 云 API, 取消隐藏列, Excel, REST, SDK"
+description: "了解如何使用 Aspose.Cells Cloud REST API 取消隐藏 Excel 工作表中的列。包含请求详情、cURL 示例以及多种编程语言的 SDK 代码示例。"
+weight: 50
+---
 
-## 重新设置 API
+此 REST API 用于取消隐藏工作表中的列。
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/unhide
- 
+**前置条件** – 所有 Aspose.Cells Cloud 端点均需通过 HTTPS 访问，并提供有效的 OAuth 2.0 访问令牌。请确保您已获取访问令牌，并将其包含在请求的 `Authorization` 头中。
+
+## PostUnhideWorksheetColumns API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/unhide
 ```
 
-请求参数为：
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|起始列|整数|询问|需要操作的起始列索引。|
-|总列数|整数|询问|要操作的列数。|
-|宽度|数字|询问|50.0 |
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 采用安全机制，需进行 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### 请求参数
 
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名称       | 类型    | 位置   | 描述                                     |
+| -------------- | ------- | ------ | ---------------------------------------- |
+| name           | string  | path   | 工作簿名称。                             |
+| sheetName      | string  | path   | 工作表名称。                             |
+| startColumn    | integer | query  | 要处理的第一列的索引。                   |
+| totalColumns   | integer | query  | 要处理的列数。                           |
+| width          | number  | query  | 目标列宽（默认值 = 50.0）。              |
+| folder         | string  | query  | 包含文档的文件夹。                       |
+| storageName    | string  | query  | 存储服务的名称。                         |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+<a href="https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns" target="_blank" rel="noopener noreferrer">OpenAPI 规范</a> 定义了一个公开可访问的编程接口，允许您直接从 Web 浏览器发起 REST 请求。
+
+您可使用 **cURL** 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/unhide?startColumn=1&totalColumns=1&height=15" -H "accept: application/json"
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/unhide?startColumn=1&totalColumns=1&width=15" -H "accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+**典型 HTTP 状态码**
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| 状态码 | 描述                                     |
+|--------|------------------------------------------|
+| 200    | OK（成功）——列已成功取消隐藏。           |
+| 400    | Bad Request（错误请求）——参数无效。      |
+| 401    | Unauthorized（未授权）——缺少或令牌无效。 |
+| 404    | Not Found（未找到）——工作簿或工作表不存在。 |
+| 500    | Internal Server Error（内部服务器错误）——发生意外错误。 |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+## 云 SDK 开发工具包（SDK Family）
+
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，使您能专注于项目任务本身。请查看 <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub 仓库</a> 以获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

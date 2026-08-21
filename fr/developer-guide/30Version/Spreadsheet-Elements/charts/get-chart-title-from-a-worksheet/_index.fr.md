@@ -1,362 +1,279 @@
-﻿---
-title: Obtenir le titre du graphique à partir d'une feuille de calcul
+---
+title: "Obtenir le titre d'un graphique à partir d'une feuille de calcul"
 type: docs
 url: /fr/charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir le titre d'un graphique à partir d'une feuille de calcul
+keywords:
+  - "Aspose.Cells Cloud"
+  - "Titre de graphique"
+  - "Excel"
+  - "REST API"
+  - "Obtenir le titre du graphique"
+  - "cURL"
+  - "SDK"
+  - "Automatisation des graphiques Excel"
+  - "GET chart title"
+description: "Découvrez comment récupérer le titre d’un graphique à partir d’une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’endpoint, les paramètres, l’authentification, ainsi que des exemples de code cURL et SDK."
+ArticleTitle: "Obtenir le titre d'un graphique à partir d'une feuille de calcul"
 ---
-Ce REST API indique obtenir le titre du graphique
- 
-## RSET API
- 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
- 
+
+Cet API REST permet de récupérer le titre d’un graphique stocké dans une feuille de calcul d’un classeur Excel.
+
+**Prérequis** : Pour appeler cet endpoint, vous devez disposer d’un jeton d’accès OAuth2/JWT valide pour Aspose.Cells Cloud avec la portée `Cells.Read`. Le classeur doit déjà avoir été téléchargé dans l’emplacement de stockage spécifié.
+
+## API GetWorksheetChartTitle
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
- Les paramètres de la requête sont :
- 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du classeur.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
-| index des graphiques| entier| chemin| L'index des graphiques.|
-| dossier| chaîne| requête| Le dossier du classeur.|
-| nom de stockage| chaîne| requête| nom de stockage.|
- 
-<br/>
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartTitle) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
- 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+### **Sécurité et authentification**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
+
+### Paramètres de la requête
+
+| Nom du paramètre | Type    | Emplacement | Description                                           |
+| ---------------- | ------- | ----------- | ----------------------------------------------------- |
+| name             | string  | path        | Nom du fichier de classeur.                           |
+| sheetName        | string  | path        | Nom de la feuille de calcul contenant le graphique.  |
+| chartIndex       | integer | path        | Index du graphique (indexation à partir de zéro).     |
+| folder           | string  | query       | Chemin du dossier où le classeur est stocké.         |
+| storageName      | string  | query       | Nom du service de stockage.                           |
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartTitle) définit une interface de programmation accessible publiquement et vous permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande **cURL** pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer un appel à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/charts/0/title" 
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/charts/0/title" \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
+```json
 {
-  "Status": "string",
   "Title": {
-    "link": {
-      "Href": "string",
-      "Rel": "string",
-      "Title": "string",
-      "Type": "string"
-    },
-    "Area": {
-      "BackgroundColor": {
-        "A": 0,
-        "R": 0,
-        "G": 0,
-        "B": 0
-      },
-      "FillFormat": {
-        "Type": "string",
-        "SolidFill": {
-          "Color": {
-            "A": 0,
-            "R": 0,
-            "G": 0,
-            "B": 0
-          },
-          "CellsColor": {
-            "Color": {
-              "A": 0,
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "ColorIndex": 0,
-            "IsShapeColor": true,
-            "ThemeColor": {
-              "ColorType": "string",
-              "Tint": 0
-            },
-            "Type": "string"
-          },
-          "Transparency": 0
-        },
-        "PatternFill": {
-          "Pattern": "string",
-          "BackgroundCellsColor": {
-            "Color": {
-              "A": 0,
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "ColorIndex": 0,
-            "IsShapeColor": true,
-            "ThemeColor": {
-              "ColorType": "string",
-              "Tint": 0
-            },
-            "Type": "string"
-          },
-          "ForegroundCellsColor": {
-            "Color": {
-              "A": 0,
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "ColorIndex": 0,
-            "IsShapeColor": true,
-            "ThemeColor": {
-              "ColorType": "string",
-              "Tint": 0
-            },
-            "Type": "string"
-          },
-          "ForegroundColor": {
-            "A": 0,
-            "R": 0,
-            "G": 0,
-            "B": 0
-          },
-          "BackgroundColor": {
-            "A": 0,
-            "R": 0,
-            "G": 0,
-            "B": 0
-          },
-          "BackTransparency": 0,
-          "ForeTransparency": 0
-        },
-        "TextureFill": {
-          "Type": "string",
-          "Transparency": 0,
-          "Scale": 0,
-          "TilePicOption": {
-            "OffsetX": 0,
-            "OffsetY": 0,
-            "ScaleX": 0,
-            "ScaleY": 0,
-            "AlignmentType": "string",
-            "MirrorType": "string"
-          },
-          "PicFormatOption": {
-            "Type": "string",
-            "Scale": 0,
-            "Left": 0,
-            "Right": 0,
-            "Top": 0,
-            "Bottom": 0
-          },
-          "Image": {
-            "link": {
-              "Href": "string",
-              "Rel": "string",
-              "Title": "string",
-              "Type": "string"
-            }
-          }
-        },
-        "GradientFill": {
-          "FillType": "string",
-          "DirectionType": "string",
-          "Angle": 0,
-          "GradientStops": [
-            {
-              "Color": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "Position": 0,
-              "Transparency": 0
-            }
-          ]
-        },
-        "ImageData": "string"
-      },
-      "ForegroundColor": {
-        "A": 0,
-        "R": 0,
-        "G": 0,
-        "B": 0
-      },
-      "Format": "string",
-      "InvertIfNegative": true,
-      "Transparency": 0
-    },
-    "AutoScaleFont": true,
-    "BackgroundMode": "string",
-    "Border": {
-      "BeginArrowLength": "string",
-      "BeginArrowWidth": "string",
-      "BeginType": "string",
-      "CapType": "string",
-      "Color": {
-        "A": 0,
-        "R": 0,
-        "G": 0,
-        "B": 0
-      },
-      "CompoundType": "string",
-      "DashType": "string",
-      "EndArrowLength": "string",
-      "EndArrowWidth": "string",
-      "EndType": "string",
-      "GradientFill": {
-        "FillType": "string",
-        "DirectionType": "string",
-        "Angle": 0,
-        "GradientStops": [
-          {
-            "Color": {
-              "A": 0,
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "Position": 0,
-            "Transparency": 0
-          }
-        ]
-      },
-      "IsAuto": true,
-      "IsAutomaticColor": true,
-      "IsVisible": true,
-      "JoinType": "string",
-      "Style": "string",
-      "Transparency": 0,
-      "Weight": "string",
-      "WeightPt": 0
-    },
+    "Text": "Ventes T1",
     "Font": {
-      "Color": {
-        "A": 0,
-        "R": 0,
-        "G": 0,
-        "B": 0
-      },
-      "DoubleSize": 0,
-      "IsBold": true,
-      "IsItalic": true,
-      "IsStrikeout": true,
-      "IsSubscript": true,
-      "IsSuperscript": true,
-      "Name": "string",
-      "Size": 0,
-      "Underline": "string"
-    },
-    "IsAutomaticSize": true,
-    "IsInnerMode": true,
-    "Shadow": true,
-    "ShapeProperties": [
-      {
-        "link": {
-          "Href": "string",
-          "Rel": "string",
-          "Title": "string",
-          "Type": "string"
-        }
-      }
-    ],
-    "Width": 0,
-    "Height": 0,
-    "X": 0,
-    "Y": 0,
-    "IsVisible": true,
-    "LinkedSource": "string",
-    "RotationAngle": 0,
-    "Text": "string",
-    "TextDirection": "string",
-    "TextHorizontalAlignment": "string",
-    "TextVerticalAlignment": "string"
+      "Name": "Arial",
+      "Size": 12,
+      "IsBold": true
+    }
   }
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Champs de la réponse**
+
+| Champ                | Description                                        |
+| -------------------- | -------------------------------------------------- |
+| `Title.Text`         | Texte réel affiché comme titre du graphique.      |
+| `Title.Font.Name`    | Famille de police utilisée pour le titre (ex. _Arial_). |
+| `Title.Font.Size`    | Taille de la police en points.                     |
+| `Title.Font.IsBold`  | Indique si le texte du titre est en gras.         |
+
+**Codes d’état de la réponse**
+
+| Code | Description |
+|------|-------------|
+| 200 OK | Le titre du graphique a été récupéré avec succès. |
+| 401 Unauthorized | L’authentification a échoué ou le jeton est manquant/ invalide. |
+| 404 Not Found | Le classeur, la feuille de calcul ou le graphique spécifié n’existe pas. |
+| 500 Internal Server Error | Une erreur serveur inattendue s’est produite. |
+
+**Notes** : L’index du graphique est indexé à partir de zéro ; assurez-vous que le graphique existe bien. Si le classeur n’a pas encore été téléchargé, procédez d’abord à son téléchargement à l’aide de l’API appropriée.
+
+**Comment extraire le titre dans un script (à l’aide de `jq`)**
+
+```bash
+# En supposant que la réponse JSON est enregistrée dans response.json
+title=$(jq -r '.Title.Text' response.json)
+echo "Titre du graphique : $title"
+```
+
 ## Famille de SDK Cloud
- 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
- 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
- 
+
+L’utilisation d’un SDK est le meilleur moyen d’accélérer le développement. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants montrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
 
-
+```csharp
+// Exemple en C# utilisant le SDK Aspose.Cells Cloud
+var config = new Configuration
+{
+    AccessToken = "<jeton jwt>",
+    BasePath = "https://api.aspose.cloud"
+};
+var api = new ChartsApi(config);
+var response = api.GetWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, folder: "", storageName: "");
+Console.WriteLine(response.Title.Text);
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-
+```java
+// Exemple en Java utilisant le SDK Aspose.Cells Cloud
+Configuration config = new Configuration();
+config.setAccessToken("<jeton jwt>");
+config.setBasePath("https://api.aspose.cloud");
+ChartsApi api = new ChartsApi(config);
+ChartTitleResponse response = api.getWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, "", "");
+System.out.println(response.getTitle().getText());
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-
+```php
+<?php
+// Exemple en PHP utilisant le SDK Aspose.Cells Cloud
+$config = new Aspose\Cells\Configuration();
+$config->setAccessToken('<jeton jwt>');
+$config->setHost('https://api.aspose.cloud');
+$apiInstance = new Aspose\Cells\Api\ChartsApi($config);
+$response = $apiInstance->getWorksheetChartTitle('Book1.xlsx', 'Sheet1', 0, '', '');
+echo $response->getTitle()->getText();
+?>
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
+```ruby
+# Exemple en Ruby utilisant le SDK Aspose.Cells Cloud
+require 'aspose_cells_cloud'
 
+config = AsposeCellsCloud::Configuration.new
+config.access_token = '<jeton jwt>'
+config.host = 'https://api.aspose.cloud'
+
+api_instance = AsposeCellsCloud::ChartsApi.new
+result = api_instance.get_worksheet_chart_title('Book1.xlsx', 'Sheet1', 0, '', '')
+puts result.title.text
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
+```python
+# Exemple en Python utilisant le SDK Aspose.Cells Cloud
+from asposecellscloud import ChartsApi, Configuration
 
+config = Configuration()
+config.access_token = "<jeton jwt>"
+config.host = "https://api.aspose.cloud"
+
+api_instance = ChartsApi(config)
+response = api_instance.get_worksheet_chart_title("Book1.xlsx", "Sheet1", 0, "", "")
+print(response.title.text)
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
+```javascript
+// Exemple en Node.js utilisant le SDK Aspose.Cells Cloud
+const { ChartsApi, Configuration } = require('asposecellscloud');
 
+let config = new Configuration();
+config.accessToken = "<jeton jwt>";
+config.basePath = "https://api.aspose.cloud";
+
+let apiInstance = new ChartsApi(config);
+apiInstance.getWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, "", "", (error, data) => {
+    if (error) console.error(error);
+    else console.log(data.title.text);
+});
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-
+```java
+// Exemple pour Android (Java) utilisant le SDK Aspose.Cells Cloud
+Configuration config = new Configuration();
+config.setAccessToken("<jeton jwt>");
+config.setBasePath("https://api.aspose.cloud");
+ChartsApi api = new ChartsApi(config);
+ChartTitleResponse response = api.getWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, "", "");
+Log.d("ChartTitle", response.getTitle().getText());
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
+```swift
+// Exemple en Swift utilisant le SDK Aspose.Cells Cloud
+import AsposeCellsCloud
 
+let config = Configuration()
+config.accessToken = "<jeton jwt>"
+config.host = "https://api.aspose.cloud"
+
+let api = ChartsApi(configuration: config)
+api.getWorksheetChartTitle(name: "Book1.xlsx", sheetName: "Sheet1", chartIndex: 0, folder: "", storageName: "") { result, error in
+    if let title = result?.title?.text {
+        print("Titre du graphique : \(title)")
+    }
+}
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
 
+```perl
+# Exemple en Perl utilisant le SDK Aspose.Cells Cloud
+use AsposeCellsCloud::ChartsApi;
+use AsposeCellsCloud::Configuration;
 
+my $config = AsposeCellsCloud::Configuration->new();
+$config->{access_token} = '<jeton jwt>';
+$config->{host} = 'https://api.aspose.cloud';
+
+my $api_instance = AsposeCellsCloud::ChartsApi->new($config);
+my $result = $api_instance->get_worksheet_chart_title('Book1.xlsx', 'Sheet1', 0, '', '');
+print $result->{title}{text}, "\n";
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "e1b22ed45ca780faa3231c3a8c60ddd4" >}}
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Vous pouvez également consulter la documentation individuelle des SDK pour des scénarios plus avancés, tels que la mise à jour ou la suppression d’un titre de graphique.
+
+**Voir également** : [Mettre à jour le titre du graphique](/fr/charts/title/put/), [Supprimer le titre du graphique](/fr/charts/title/delete/).
+---

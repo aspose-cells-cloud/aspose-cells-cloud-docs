@@ -1,56 +1,76 @@
-﻿---
-title: تحويل ورقة العمل إلى أنواع من النماذج
-second_title: Documen
-linktitle: تحويل ورقة العمل
-type: docs
-url: /ar/worksheets/conversion/
-aliases: [/convert-worksheet-to-image/,/worksheets/to-image/]
-keywords: Convert worksheet to image format from an Excel workbook
-description: يدعم Cloud REST Aspose.Cells تحويل أوراق العمل إلى صيغة صورة من مصنف Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 130
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تحويل ورقة العمل إلى أنواع التنسيق
 ---
-[احصل على /cells/{name}/worksheets/{sheetName}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) يتيح لك API تحويل ورقة العمل إلى أنواع التنسيقات، مثل[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [إكس إل إس بي](https://docs.fileformat.com/spreadsheet/xlsb/), [ملف CSV](https://docs.fileformat.com/spreadsheet/csv/), [تي إس في](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [المواد المستنفدة للأوزون](https://docs.fileformat.com/spreadsheet/ods/), [رسالة قصيرة](https://docs.fileformat.com/word-processing/txt/) . تنسيقات التصدير فقط:[PDF](https://docs.fileformat.com/pdf/), [أو تي إس](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [ديف](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [أرقام](https://docs.fileformat.com/spreadsheet/numbers/), [فودز](https://docs.fileformat.com/spreadsheet/fods/).
+title: "تحويل ورقة عمل إلى PDF و PNG و CSV وأكثر – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+second_title: "وثيقة"
+linktitle: "تحويل ورقة العمل"
+type: docs
+url: /worksheets/conversion/
+aliases:
+  - /convert-worksheet-to-image/
+  - /worksheets/to-image/
+keywords: "Aspose.Cells، تحويل ورقة العمل، واجهة برمجة التطبيقات REST، cURL، SDK، PDF، PNG، CSV"
+description: "تعلم كيفية تحويل ورقة عمل واحدة من ملف Excel إلى PDF و PNG و CSV وأكثر من 15 صيغة أخرى باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمن مثالًا لـ cURL، وأجزاء كود SDK، ومرجع كامل للمعلمات."
+weight: 130
+ArticleTitle: "تحويل ورقة عمل إلى PDF و PNG و CSV وأكثر – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+---
 
-## الباقي API
+**واجهة برمجة تطبيقات تحويل ورقة العمل** – نقطة النهاية `GET /cells/{name}/worksheets/{sheetName}` تحوّل ورقة عمل واحدة (ورقة داخل ملف Excel) إلى نوع ملف آخر.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+> **الشرط المسبق:** يجب أن يكون لديك رمز JWT صالح وملف العمل مخزنًا في موقع مخزون Aspose Cloud المدعوم قبل استدعاء نقطة النهاية هذه.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+الصيغ **المُدخَلة** المدعومة (يمكن قراءة ورقة العمل منها):
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+- XLS، XLSX، XLSB، CSV، TSV، XLSM، ODS، TXT
 
-{{< tab tabNum="1" >}}
+الصيغ **المُخرَجة فقط** المدعومة (يمكن حفظ ورقة العمل بها):
 
-```java
+- PDF، OTS، XPS، DIF، PNG، JPEG، BMP، SVG، TIFF، EMF، NUMBERS، FODS
 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+## واجهة برمجة التطبيقات REST
 
+تُوضّح [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) الواجهة المتاحة علنًا.
+
+### **معطيات الطلب**
+
+| المعطى                   | النوع   | الإلزام | القيمة الافتراضية | القيم المسموح بها                                             | الوصف                                              |
+| ------------------------ | ------- | ------ | ----------------- | ------------------------------------------------------------- | --------------------------------------------------- |
+| **format**               | string  | نعم    | –                 | pdf، png، jpeg، bmp، svg، tiff، emf، csv، txt، … (انظر القائمة المدعومة) | صيغة الإخراج الهدف.                                 |
+| **verticalResolution**   | integer | لا     | 96                | 72‑600                                                         | الدقة العمودية للإخراج الصور.                       |
+| **horizontalResolution** | integer | لا     | 96                | 72‑600                                                         | الدقة الأفقية للإخراج الصور.                        |
+| **password**             | string  | لا     | –                 | –                                                              | كلمة المرور لفتح ملف عمل محمي.                      |
+| **folder**               | string  | لا     | –                 | –                                                              | مجلد السحابة حيث يتم تخزين ملف العمل المصدر.       |
+| **storage**              | string  | لا     | –                 | –                                                              | اسم المخزن (مثلًا “Default”).                       |
+
+### الاستجابة
+
+| رمز الحالة | الوصف                                                                   | نوع الإرجاع                 |
+| ----------- | ------------------------------------------------------------------------ | --------------------------- |
+| **200**     | نجح التحويل؛ يُعاد تيار ثنائي للملف المحول.                              | `application/octet-stream`  |
+| **400**     | طلب غير صالح – معطيات مفقودة أو غير صالحة.                             | كائن خطأ JSON               |
+| **401**     | غير مصرّح به – رمز JWT غير صالح أو مفقود.                              | كائن خطأ JSON               |
+| **404**     | غير موجود – ملف العمل أو ورقة العمل غير موجود.                         | كائن خطأ JSON               |
+| **500**     | خطأ داخلي في الخادم – فشل غير متوقع.                                   | كائن خطأ JSON               |
+
+#### مثال على الطلب (cURL)
+
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-
-Converted Image 
+#### مثال على الاستجابة
 
 ```
+الصورة المحولة (تيار ثنائي)
+```
 
-{{< /tab >}}
+## عائلة SDK للحوسبة السحابية
 
-{{< /tabs >}}
+استخدام SDK هو أسرع طريقة للتطوير. يُدار تفاصيل المستوى المنخفض تلقائيًا، ما يسمح لك بالتركيز على مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-## عائلة SDK السحابية
-
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
-
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -103,3 +123,4 @@ Converted Image 
 {{< /tab >}}
 
 {{< /tabs >}}
+---

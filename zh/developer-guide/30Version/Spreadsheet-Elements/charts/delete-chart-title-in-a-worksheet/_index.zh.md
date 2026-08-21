@@ -1,75 +1,94 @@
-﻿---
-title: 删除工作表中的图表标题
+---
+title: "删除工作表中的图表标题"
 type: docs
-url: /zh/charts/delete-chart-title/
+url: /zh-cn/charts/delete-chart-title/
 aliases: [/delete-chart-title-in-a-worksheet/]
 weight: 150
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、删除工作表中的图表标题
+keywords: "Aspose.Cells, 云 API, 删除图表标题, Excel, REST, SDK"
+description: "了解如何使用 Aspose.Cells Cloud REST API（v4.0）删除 Excel 工作表中的图表标题。包含 cURL、SDK 示例及错误处理。"
 ---
-此 REST API 表示隐藏图表中的标题
- 
-## 重新设置 API
- 
+
+此 REST API 用于删除图表的标题。
+
+## REST API
+
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
- 
+DELETE https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
-请求参数为：
- 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|图表索引|整数|小路|图表索引。|
-|文件夹|细绳|询问|工作簿文件夹。|
-|存储名称|细绳|询问|存储名称。|
- 
-<br/>
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartTitle)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
- 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+### 安全与身份验证
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Aspose.Cells Cloud API 安全可靠，需要基于 [JWT 令牌的身份验证](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)。
+
+### 请求参数
+
+| 参数名称     | 类型     | 位置   | 描述                       |
+| ------------ | -------- | ------ | -------------------------- |
+| name         | string   | path   | 工作簿文件名。             |
+| sheetName    | string   | path   | 工作表名称。               |
+| chartIndex   | integer  | path   | 图表的从零开始的索引。     |
+| folder       | string   | query  | 包含工作簿的文件夹。       |
+| storageName  | string   | query  | 存储名称。                 |
+
+### **响应**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP 状态码**
+
+| 状态码 | 含义             | 描述                                     |
+| ------ | ---------------- | ---------------------------------------- |
+| 200    | OK（成功）       | 成功应用筛选器；响应包含操作详情。       |
+| 400    | Bad Request（错误请求） | 缺少或无效的参数（例如，不支持的文件类型）。 |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。                     |
+| 413    | Payload Too Large（请求实体过大） | 上传的文件超过大小限制。                 |
+| 500    | Internal Server Error（内部服务器错误） | 服务器发生意外错误。                     |
+
+## 如何使用 SDK 调用 DeleteWorksheetChartTitle API
+
+### DeleteWorksheetChartTitle API 规范
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartTitle) 定义了一个公开可访问的编程接口，允许您直接通过网页浏览器进行 REST 交互。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 网络服务。以下示例展示了如何发起调用，包括用于身份验证所需的 **Bearer JWT** 令牌。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title"
--X DELETE 
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+```bash
+curl -v "https://api.aspose.cloud/v4.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
- 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
- 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+### 使用 Aspose.Cells Cloud SDK
 
+使用 SDK 是加速开发的最佳方式。SDK 可处理底层细节，让您专注于项目任务。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells 网络服务：
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

@@ -1,44 +1,69 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Suma, recuento, valor promedio, etc. por color en hoja de cálculo/Exce
-second_title: Documen
-ArticleTitle: Sum, Count, Average Value, etc by color in Spreadsheet/Exce
-LinkTitle: Aggregate Cells by Colo
-type: docs
-url: /es/aggregate-cells-by-color/
-keywords: Sum, Count, Average Value, Max Value, Min Value, Excel REST API, Spreadsheet Operations, Aspose.Cells, Excel Cloud AP
-description: La nube web Aspose.Cells Cloud Web API (Excel Cloud API) puede realizar cálculos de datos, sumas y promedios, y también puede encontrar los valores máximos y mínimos en una hoja de cálculo Excel según el relleno o el color de fuente de las celdas.
-weight: 100
-kwords: Suma, Conteo, Valor promedio, Valor máximo, Valor mínimo, Excel REST API, Operaciones de hoja de cálculo, Aspose.Cells, Excel Nube API
 ---
-El API puede realizar cálculos de datos, sumas y promedios, y también puede encontrar los valores máximos y mínimos en una hoja de cálculo Excel según el relleno o el color de fuente de las celdas.
+title: "Aspose.Cells Cloud Web API: Sumar y Contar por Color en Excel"
+second_title: "Documento"
+ArticleTitle: "Sumar, Contar, Promediar, Encontrar Valor Máximo y Mínimo por Color en Hoja de Cálculo/Excel"
+LinkTitle: "Agrupar Celdas por Color"
+type: docs
+url: /aggregate-cells-by-color/
+keywords: "Aspose, Cells, Excel, API, agrupar, color, sumar, contar, promediar, mínimo, máximo"
+description: "Agrupe celdas de Excel por color de fondo o de fuente (sumar, contar, promediar, mínimo, máximo) utilizando la API en la nube de Aspose.Cells. Aprenda sobre el punto de conexión, los parámetros, la autenticación y ejemplos de SDK."
+weight: 100
+---
 
-| Calcular operación| Descripción|
-|:- |:- |
-| Contar| Determinar el número de celdas con el mismo color.|
-| Suma| Calcula el valor total de celdas con el mismo color.|
-| Valor máximo| Identifica el valor más alto entre las celdas con el mismo color.|
-| Valor mínimo| Encuentra el valor más bajo entre las celdas con el mismo color.|
-|Valor promedio| Calcular el valor medio de las celdas con el mismo color.|
+## Descripción general
 
-## **Agregando Cells por Color API**
+La API puede realizar cálculos de datos basados en el **color** de las celdas. Permite sumar, contar, calcular promedios y también encontrar los valores máximo y mínimo en una hoja de cálculo de Excel según el color de relleno o de fuente de las celdas.
+
+| Operación de cálculo | Descripción                                                  |
+| :------------------ | :----------------------------------------------------------- |
+| Contar              | Determina el número de celdas con el mismo color.          |
+| Sumar               | Calcula el valor total de las celdas con el mismo color.   |
+| Valor máximo        | Identifica el valor más alto entre las celdas con el mismo color. |
+| Valor mínimo        | Encuentra el valor más bajo entre las celdas con el mismo color. |
+| Valor promedio      | Calcula el valor medio de las celdas con el mismo color.   |
+
+## API web
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/calculate/aggregate/color
+PUT https://api.aspose.cloud/v4.0/cells/calculate/aggregate/color
 ```
 
-### **Parámetros de la solicitud:**
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody| Descripción|
-|:- |:- |:- |:- |
-| Hoja de cálculo| Archivo| Datos del formulario| Subir archivo de hoja de cálculo.|
-| Hoja de trabajo| Cadena| Consulta| Especifica la hoja de trabajo.|
-| Rango| Cadena| Consulta| Especifica el rango.|
-| Operación| Cadena| Consulta| Especifique los métodos de operación de cálculo, incluidos Suma, Conteo, Promedio, Mínimo y Máximo.|
-| Posición del color| Cadena| Consulta| Indica el contenido a sumar y contar según el color de fondo y/o el color de fuente.|
-| Región| Cadena| Consulta| La configuración de la región de la hoja de cálculo.|
-| Contraseña| Cadena| Consulta| La contraseña para abrir el archivo de hoja de cálculo.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
-### **Respuesta**
+### Parámetros de la solicitud
+
+| Nombre del parámetro | Tipo   | Ubicación | Descripción                                                      |
+| :------------------- | :----- | :-------- | :--------------------------------------------------------------- |
+| Spreadsheet          | File   | FormData  | El libro de Excel que se va a procesar.                         |
+| Worksheet            | String | Query     | Nombre de la hoja de cálculo que contiene el rango.             |
+| Range                | String | Query     | Rango en estilo A‑1 (por ejemplo, `A1:B10`).                    |
+| Operation            | String | Query     | Método de cálculo: `Sum`, `Count`, `Average`, `Min` o `Max`.   |
+| ColorPosition        | String | Query     | Determina qué color evaluar: `Background` (fondo) o `Font` (fuente). |
+| Region               | String | Query     | Configuración de región de la hoja de cálculo (por ejemplo, `us-east-1`). |
+| Password             | String | Query     | Contraseña para abrir un libro protegido (opcional).            |
+
+#### Enumeraciones
+
+- **ColorPosition**
+
+  | Valor      | Significado                     |
+  | :--------- | :------------------------------ |
+  | Background | Usa el color de relleno de la celda. |
+  | Font       | Usa el color de fuente de la celda. |
+
+**Ejemplo de solicitud multipart/form‑data**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/calculate/aggregate/color?Worksheet=Sheet1&Range=A1:B10&Operation=Sum&ColorPosition=Background" \
+  -H "Authorization: Bearer <access_token>" \
+  -F "Spreadsheet=@/path/to/workbook.xlsx"
+```
+
+### Respuesta
+
+El esquema siguiente describe el objeto de respuesta. A continuación del esquema se muestra un ejemplo concreto.
 
 ```json
 {
@@ -59,73 +84,102 @@ PUT http://api.aspose.cloud/v4.0/cells/calculate/aggregate/color
     },
     {
       "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
+      "DataType": { "Identifier": "Integer" }
     },
     {
       "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
+      "DataType": { "Identifier": "String" }
     }
   ]
 }
 ```
 
-### Códigos de error
+**Ejemplo de respuesta (valores reales)**
 
-- **400 Solicitud incorrecta**: URI de nube Apose.Cells no válido API.
-- **401 No autorizado**Token de acceso no válido. O ID de cliente y secreto no válidos.
-- **404 No encontrado**:El archivo de hoja de cálculo no es accesible.
-- **Error de servidor 500**:La hoja de cálculo ha encontrado una anomalía al obtener los datos de cálculo.
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "AggregateResults": [
+    {
+      "Color": "#FF0000",
+      "Count": 12,
+      "Sum": 345.67,
+      "Average": 28.8,
+      "Min": 5.0,
+      "Max": 80.0
+    },
+    {
+      "Color": "#00FF00",
+      "Count": 7,
+      "Sum": 210.0,
+      "Average": 30.0,
+      "Min": 10.0,
+      "Max": 50.0
+    }
+  ]
+}
+```
 
-## ¿Donde debemos utilizar el Agregado por Color API?
+**Códigos de estado HTTP**
 
-En una hoja de cálculo, los datos de diferentes categorías se muestran en diferentes colores, lo que permite realizar operaciones como sumar, contar, calcular promedios y encontrar valores máximos y mínimos según el color.
+| Código | Significado           | Descripción                                                       |
+| ------ | --------------------- | ----------------------------------------------------------------- |
+| 200    | OK                    | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta  | Parámetros faltantes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado         | Token JWT inválido o faltante.                                    |
+| 413    | Carga demasiado grande | El archivo subido supera el límite de tamaño.                    |
+| 500    | Error interno del servidor | Error inesperado en el servidor.                                 |
 
-## ¿Por qué debería utilizar el Agregado por Color API?
+## ¿Dónde debemos usar la API de Agrupación por Color?
 
-- Proporcionar métodos para el análisis de datos de color.
-- Clasifique y calcule datos según el color para proporcionar datos fundamentales para el análisis de datos.
-- El desarrollo se puede completar rápidamente a través del SDK existente.
+En una hoja de cálculo, los datos de diferentes categorías suelen estar codificados por colores. Esta API le permite sumar, contar, promediar o encontrar los valores mínimo y máximo para cada grupo de colores, simplificando así el análisis de datos basado en color.
 
-## Cómo usar la función Agregado por color API con SDK
+## ¿Por qué debería utilizar la API de Agrupación por Color?
 
-### Agregado por color API Especificación
+La API proporciona una forma rápida y fiable de realizar cálculos basados en color sin tener que escribir lógica personalizada de análisis. Se integra perfectamente con los SDK de Aspose.Cells Cloud, lo que permite a los desarrolladores implementar la agrupación por color con tan solo unas pocas líneas de código.
 
- El[Agregado por color API Especificación](https://reference.aspose.cloud/cells/#/CalculateController/AggregateCellsByColor) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+## Cómo usar la API de Agrupación por Color con SDK
 
-### Utilice los SDK de la nube Aspose.Cells
+### Especificación de la API de Agrupación por Color
 
-Usar el SDK es la forma más rápida de desarrollar, ya que abstrae los detalles de bajo nivel y permite agregar cálculos por color de celda con solo un pequeño fragmento de código.
- Por favor, consulte el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+La <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Calculate/AggregateCellsByColor" rel="noopener noreferrer">especificación de la API de Agrupación por Color</a> define una interfaz de programación pública accesible y permite realizar interacciones REST directamente desde un navegador web.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+### Utilizar los SDK de Aspose.Cells Cloud
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_AggregateCellsByColor.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_AggregateCellsByColor.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_AggregateCellsByColor.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_AggregateCellsByColor.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_AggregateCellsByColor.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_AggregateCellsByColor.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_AggregateCellsByColor.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_AggregateCellsByColor.go" >}}
-{{< /tab >}}
+Utilizar los SDK es la forma más rápida de desarrollar, ya que oculta los detalles de bajo nivel, permitiendo agrupar cálculos por color de celda con tan solo un fragmento breve de código.  
+Consulte el <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">repositorio de GitHub</a> para obtener una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante diversos SDK:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_AggregateCellsByColor.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_AggregateCellsByColor.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_AggregateCellsByColor.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_AggregateCellsByColor.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_AggregateCellsByColor.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_AggregateCellsByColor.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_AggregateCellsByColor.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_AggregateCellsByColor.go" >}}
+{{</tab>}}
 {{< /tabs >}}
+
+**Notas:**
+
+- Al trabajar con libros protegidos, incluya el parámetro de consulta opcional `Password`; de lo contrario, la solicitud fallará con un error 401.
+- El tamaño máximo de solicitud para el archivo `Spreadsheet` es de 100 MB. Si necesita procesar archivos más grandes, considere subir primero el libro al almacenamiento en la nube de Aspose Cloud y hacer referencia a él mediante el parámetro `Path` (no se muestra aquí).

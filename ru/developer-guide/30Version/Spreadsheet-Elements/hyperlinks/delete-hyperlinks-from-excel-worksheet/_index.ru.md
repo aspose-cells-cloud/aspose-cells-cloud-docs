@@ -1,64 +1,68 @@
-﻿---
-title: Клеа
+---
+title: "Очистка гиперссылок"
 type: docs
 url: /ru/hyperlinks/clear/
 aliases: [/add-hyperlinks-to-excel-worksheet/]
-keywords: Clear hyperlinks from an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает удаление гиперссылок из листа Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+keywords: "Aspose.Cells Cloud, Excel, удаление гиперссылок, очистка гиперссылок, REST API, рабочий лист, SDK"
+description: "Узнайте, как удалить все гиперссылки из рабочего листа Excel с помощью Aspose.Cells Cloud REST API или любого поддерживаемого SDK (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl и др.)."
 weight: 40
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Очистить
+ArticleTitle: "Очистка гиперссылок – документация Aspose.Cells Cloud API"
 ---
-Этот REST API указывает на `delete all hyperlinks` на рабочем листе Excel.
 
-## РСЕT API
+Этот REST API удаляет **все гиперссылки** с рабочего листа Excel.
+
+## Безопасность и аутентификация
+Aspose.Cells Cloud API защищены и требуют [аутентификации на основе JWT-токена](https://docs.aspose.cloud/total/ru/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-Параметры запроса:
+### Параметры запроса
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип    | Местоположение | Описание                                     |
+| ------------- | ------ | -------------- | -------------------------------------------- |
+| name          | string | path           | Имя файла Excel.                             |
+| sheetName     | string | path           | Имя рабочего листа.                          |
+| folder        | string | query          | Папка, содержащая документ.                  |
+| storageName   | string | query          | Имя сервиса облачного хранилища.             |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/DeleteWorksheetHyperlinks) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### Коды ошибок
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| HTTP-код | Причина                                          | Пример тела ответа                                                    |
+| -------- | ------------------------------------------------ | --------------------------------------------------------------------- |
+| **400**  | Неверный запрос — отсутствуют или некорректны параметры. | `{ "Code":"400", "Message":"Некорректное значение параметра." }`      |
+| **401**  | Неавторизован — отсутствует или некорректен JWT-токен.   | `{ "Code":"401", "Message":"Токен доступа отсутствует или некорректен." }` |
+| **404**  | Не найдено — книга или рабочий лист не существуют.        | `{ "Code":"404", "Message":"Файл не найден." }`                       |
+| **500**  | Внутренняя ошибка сервера — непредвиденный сбой сервера. | `{ "Code":"500", "Message":"Произошла непредвиденная ошибка." }`      |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Hyperlinks/DeleteWorksheetHyperlinks) определяет общедоступное программное интерфейсное описание, позволяющее выполнять взаимодействие с REST API непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки **cURL** для вызова веб-сервисов Aspose.Cells. В приведённом ниже примере показано, как удалить все гиперссылки с рабочего листа.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test1.xlsx/worksheets/Sheet1/hyperlinks" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -67,9 +71,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test1.xlsx/worksheets/Sheet1/hyperl
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK ускоряет разработку, поскольку обрабатывает низкоуровневые детали за вас. Полный список SDK Aspose.Cells Cloud доступен на [GitHub-репозитории](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как удалить гиперссылки с рабочего листа с помощью различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,100 +1,143 @@
-﻿---
-title: Aspose.Cells Cloud Web API — Удаление листа из электронной таблицы
-second_title: Documen
-ArticleTitle: Delete a worksheet from the Spreadshee
-linktitle: Удалить рабочий лист из электронной таблицы
-type: docs
-url: /ru/delete-worksheet-from-spreadsheet/
-keywords: delete worksheet, spreadsheet management, Aspose.Cells Cloud Web API, REST API, workbook structure, remove worksheet
-description: Эта конечная точка API позволяет пользователям удалять указанный рабочий лист из рабочей книги, упрощая управление структурами рабочих книг за счет устранения ненужных или избыточных рабочих листов.
-weight: 100
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, JSON, Markdown, Управление рабочими листами Excel, Удаление ненужных рабочих листов
 ---
-Удалить рабочий лист из электронной таблицы.
+title: "Aspose.Cells Cloud Excel API удаления листа — программное удаление листов из рабочих книг"
+second_title: "Документ"
+ArticleTitle: "Как удалить листы из Excel — удаление листов из рабочих книг"
+linktitle: "Удалить лист из электронной таблицы"
+type: docs
+url: /delete-worksheet-from-spreadsheet/
+keywords: "Aspose Cells, API удаления листа, удаление листа Excel, облачная электронная таблица, REST API"
+description: "Узнайте, как удалить лист из файла Excel с помощью API Aspose.Cells Cloud. Включает URL-адрес конечной точки, параметры, пример cURL и примеры SDK."
+weight: 100
+---
 
-## **Удалить лист из таблицы API**
+Программно удаляйте листы из рабочих книг Excel с помощью API Aspose.Cells Cloud. Безопасно удаляйте один или несколько листов, очищайте структуру рабочей книги и автоматизируйте оптимизацию электронных таблиц. RESTful API для корпоративного уровня управления Excel и обработки документов.
+
+## API удаления листа из электронной таблицы
+
+### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/delete/worksheet
+PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/delete/worksheet?sheetName={sheetName}&outPath={outPath}&outStorageName={outStorageName}&region={region}&password={password}"
 ```
 
-### **Параметры запроса:**
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody| Описание|
-|:-               |:-     |:-                         |:-           |
-| Электронная таблица|Файл| FormData| Загрузите файл электронной таблицы.|
-| Имя_листа| Нить| Запрос| Указывает имя или идентификатор удаляемого листа. Этот параметр является обязательным и должен совпадать с именем существующего листа в книге.|
-| outPath| Нить| Запрос| (Необязательно) Путь к папке, где хранится книга. Значение по умолчанию — null.|
-| outStorageName| Нить| Запрос| Имя хранилища выходного файла.|
-| область| Нить| Запрос| Настройка региона электронной таблицы.|
-| пароль| Нить| Запрос| Пароль для открытия файла электронной таблицы.|
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
 
-### **Ответ**
+### Параметры запроса:
+
+| Имя параметра | Тип    | Расположение | Описание                                                                                                                                                                                                   |
+| :------------ | :----- | :---------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet   | Файл   | FormData    | **Обязательный.** Исходный файл рабочей книги Excel (.xlsx, .xls и т.д.), из которого будет удален лист.                                                                                                   |
+| sheetName     | Строка | Query       | **Обязательный.** Точное имя удаляемого листа (например, `Sheet1`, `TemporaryData`).                                                                                                                       |
+| outPath       | Строка | Query       | **Необязательный.** Путь к целевой папке в облачном хранилище, куда будет сохранена изменённая рабочая книга. Если не указан или равен `null`, книга сохраняется в том же месте, что и исходный файл, или в пути по умолчанию. |
+| outStorageName| Строка | Query       | **Необязательный.** Идентификатор облачного сервиса хранилища (например, `ProjectStorage`), куда будет записан выходной файл. Если не указан, используется хранилище по умолчанию.                          |
+| region        | Строка | Query       | **Необязательный.** Языковой стандарт (например, `ru-RU`), который может повлиять на регионально-зависимые формулы или данные при сохранении.                                                               |
+| password      | Строка | Query       | **Необязательный.** Пароль, необходимый для открытия и изменения защищённого паролем файла электронной таблицы. Пропустите, если файл не зашифрован.                                                         |
+
+### Ответ
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Коды ошибок
+**Коды HTTP-статуса**
 
-- **400 Неверный запрос**: Неверный URI Apose.Cells Cloud API.
-- **401 Неавторизованный**: Недействительный токен доступа. Или недействительный идентификатор клиента и секретный ключ.
-- **404 Не найдено**: Файл электронной таблицы недоступен.
-- **500 Ошибка сервера**: В электронной таблице обнаружена аномалия при получении расчетных данных.
+| Код | Значение                | Описание                                                       |
+| --- | ----------------------- | -------------------------------------------------------------- |
+| 200 | OK (ОК)                 | Фильтр успешно применён; ответ содержит детали операции.      |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизован) | Недействительный или отсутствующий JWT-токен.                 |
+| 413 | Payload Too Large (Слишком большой payload) | Загруженный файл превышает допустимый размер.                  |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                                 |
 
-## Где следует использовать функцию «Удалить лист из таблицы API»?
+## Где следует использовать API удаления листа из электронной таблицы?
 
-Если вам нужно удалить лист из электронных таблиц, вы можете использовать этот код API.
+- **Автоматическая постобработка отчётов** — После генерации окончательного финансового отчёта автоматически удалите промежуточные листы, использовавшиеся для временных расчётов, чтобы сохранить финальный файл чистым и профессиональным.
+- **Динамическая очистка шаблонов** — При генерации пользовательских документов (например, коммерческих предложений) из шаблона удалите необязательные страницы, которые не были выбраны.
+- **Оптимизация архивирования рабочих процессов** — После завершения проекта или аудита удалите черновые или совместные листы, оставив только финальную версию для архивирования и соответствия требованиям.
 
-## Почему вам следует использовать функцию удаления листа из таблицы API?
+## Почему следует использовать API удаления листа из электронной таблицы?
 
-- Быстро удаляйте рабочие листы из электронных таблиц.
-- Разработку можно быстро завершить с помощью существующего SDK.
+- **Удобный для разработчиков** — Aspose.Cells Cloud предоставляет SDK-библиотеки на множестве языков, что позволяет быстро разрабатывать решения и обеспечивает полную документацию.
+- **Снижение трудозатрат** — Исключает необходимость вручную объединять документы силами отдельного персонала.
+- **Оплата по факту использования** — Никаких предварительных инвестиций; вы платите только за фактически выполненные вызовы API.
+- **Нулевые затраты на обслуживание** — Нет необходимости обслуживать серверы, обновлять программное обеспечение или решать проблемы совместимости.
 
-## Как использовать функцию удаления листа из таблицы API с SDK
+## Как использовать API удаления листа из электронной таблицы с SDK
 
-### Удалить рабочий лист из спецификации электронной таблицы API
+### Спецификация API удаления листа из электронной таблицы
 
- The[Удалить рабочий лист из спецификации электронной таблицы API](https://reference.aspose.cloud/cells/#/ManagementController/DeleteWorksheetFromSpreadsheet) определяет общедоступный программный интерфейс, позволяющий осуществлять REST-взаимодействие непосредственно из веб-браузера.
+Спецификация <a href="https://reference.aspose.cloud/cells/#/ManagementController/DeleteWorksheetFromSpreadsheet" rel="noopener noreferrer">API удаления листа из электронной таблицы</a> определяет общедоступный программный интерфейс, позволяющий выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-### Используйте облачные SDK Aspose.Cells
+Вы можете использовать утилиту командной строки cURL для лёгкого доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как делать вызовы в облако через cURL.
 
-Использование SDK — самый быстрый способ разработки, поскольку он абстрагируется от низкоуровневых деталей и позволяет удалять рабочие листы из электронной таблицы с помощью короткого кода.
- Пожалуйста, проверьте[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
-В следующих примерах кода показано, как вызывать веб-службы Aspose.Cells с использованием различных SDK:
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteWorksheet.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/delete/worksheet?sheetName=Sheet1" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -F "Spreadsheet=@/path/to/input.xlsx"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteWorksheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (в Base64)",
+  "contentType": "MIME-тип",
+  "fileDownloadName": "необязательное имя файла"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteWorksheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteWorksheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteWorksheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteWorksheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteWorksheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteWorksheet.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK — самый быстрый способ разработки, поскольку он абстрагирует низкоуровневые детали и позволяет удалять лист с минимальным количеством кода. Полный список SDK Aspose.Cells Cloud доступен в <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">репозитории GitHub</a>.
+
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteWorksheet.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteWorksheet.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteWorksheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteWorksheet.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteWorksheet.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteWorksheet.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteWorksheet.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteWorksheet.go" >}}
+{{</tab>}}
+{{< /tabs >}}
+---

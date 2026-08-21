@@ -1,63 +1,95 @@
-﻿---
-title: Importer un tableau d'entiers dans la feuille de calcul Excel
-linktitle: Importer un tableau d'entiers
-type: docs
-url: /fr/import-integer-array-into-excel-worksheet/
-aliases: [/import-integer-array-into-excel-worksheet/,/import-integer-array-into-worksheet/,/import-data/integer-array/, /import/integer-array/]
-keywords: Import integer array data into Excel files
-description: Aspose.Cells Cloud REST API prend en charge l'importation de données de tableaux d'entiers dans des fichiers Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 30
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Importer un tableau d'entiers dans une feuille de calcul Excel
 ---
-Cette feuille de travail REST API `import int array data` dans Excel.
+title: "Importer un tableau d'entiers dans une feuille Excel"
+linktitle: "Importer un tableau d'entiers"
+type: docs
+url: /import-integer-array-into-excel-worksheet/
+aliases:
+  - /import-integer-array-into-excel-worksheet/
+  - /import-integer-array-into-worksheet/
+  - /import-data/integer-array/
+  - /import/integer-array/
+keywords: "Aspose.Cells Cloud, Excel, import de tableau d'entiers, API REST, SDK, C#, PHP, Ruby, Java, Python"
+description: "Découvrez comment importer un tableau d'entiers dans une feuille Excel à l'aide de l'API REST Aspose.Cells Cloud. Inclut la syntaxe de requête, les paramètres, des exemples de code pour plusieurs SDK et les détails de la réponse."
+weight: 30
+ArticleTitle: "Importer un tableau d'entiers dans une feuille Excel – API Aspose.Cells Cloud"
+---
 
-La requête est une requête HTTP avec un contenu en plusieurs parties (voir[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)ou[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La première partie du contenu en plusieurs parties contient les données ImportIntegerArrayOption et la seconde contient un fichier de données.
+Cette API REST importe un tableau d'entiers dans une feuille Excel.
 
-## RSET API
+La requête doit être une méthode HTTP **POST** avec un contenu multipart (voir [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) ou [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La première partie du corps multipart contient la charge utile JSON **ImportIntegerArrayOption**, et la deuxième partie contient le fichier de données source (par exemple, un fichier Excel CSV ou binaire).
 
-```bash
+## API PostImportData
 
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-Les paramètres importants sont décrits dans le tableau suivant :
+Les deux points de terminaison acceptent la même charge utile multipart. Le premier point de terminaison effectue une opération d'importation générique, tandis que le second cible un classeur spécifique identifié par `{name}`.
 
-**Importer une option de tableau entier**
+### **Sécurité et authentification**
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-| Première rangée| int||
-| Première colonne| int||
-| EstVertical| chaîne| vrai/faux.|
-| Données|Entier[]||
-|Feuille de travail de destination| chaîne| nom de la feuille de travail de destination.|
-| EstInsérer| chaîne| vrai/faux.|
-| ImporterDataType| chaîne|IntArray/DoubleArray/StringArray/DeuxDimensionIntArray/DeuxDimensionDoubleArray/DeuxDimensionStringArray/BatchData/CSVData.|
-| Source| Source du fichier| Indique la position du fichier de données lorsque le paramètre BatchData est nul.|
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
-**Exemple**
+### **Paramètres de la requête**
 
-```JSON
+### ImportIntegerArrayOption
 
+| Nom du paramètre         | Type       | Description                                                                                                                                                                                    |
+| ------------------------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **FirstRow**             | int        | Index de base zéro de la première ligne où les données seront placées.                                                                                                                        |
+| **FirstColumn**          | int        | Index de base zéro de la première colonne où les données seront placées.                                                                                                                      |
+| **IsVertical**           | boolean    | `true` pour insérer le tableau verticalement (vers le bas dans une colonne) ; `false` pour l’insérer horizontalement (sur une ligne).                                                         |
+| **Data**                 | Integer[]  | Le tableau d’entiers à importer.                                                                                                                                                              |
+| **DestinationWorksheet** | string     | Nom de la feuille de calcul qui recevra les données.                                                                                                                                          |
+| **IsInsert**             | boolean    | `true` pour insérer des lignes/colonnes avant d’écrire les données ; `false` pour écraser les cellules existantes.                                                                           |
+| **ImportDataType**       | string     | Type des données à importer. Valeurs valides : `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
+| **Source**               | FileSource | Indique la position du fichier de données lorsque le paramètre **BatchData** est `null`.                                                                                                      |
+
+#### Exemple de corps de requête
+
+```json
 {
-    "Data": [1, 2, 4],
-    "DestinationWorksheet": "Sheet1",
-    "FirstRow": 1,
-    "FirstColumn": 2,
-    "IsVertical": true,
-    "IsInsert": true,
-    "importDataType": "IntArray"
+  "Data": [1, 2, 4],
+  "DestinationWorksheet": "Sheet1",
+  "FirstRow": 1,
+  "FirstColumn": 2,
+  "IsVertical": true,
+  "IsInsert": true,
+  "ImportDataType": "IntArray"
 }
-
 ```
 
-## Famille de SDK Cloud
+### Réponse
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+Une requête réussie renvoie **HTTP 200** avec une charge utile JSON similaire à :
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+Codes d’état possibles :
+
+| Code | Signification                               |
+| ---- | ------------------------------------------- |
+| 200  | Importation réussie                         |
+| 400  | Requête incorrecte – données manquantes ou invalides |
+| 401  | Non autorisé – jeton invalide ou manquant  |
+| 500  | Erreur interne du serveur                   |
+
+## Comment utiliser l’API PostImportData avec les SDK
+
+### Spécification de l’API PostImportData
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+### Utiliser les SDK Aspose.Cells Cloud
+
+L’utilisation d’un SDK est la méthode la plus rapide pour intégrer cette fonctionnalité. Les SDK masquent les détails de bas niveau, vous permettant de vous concentrer sur votre logique métier. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

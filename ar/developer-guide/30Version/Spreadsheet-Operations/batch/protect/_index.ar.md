@@ -1,76 +1,117 @@
-﻿---
-title: ملف Batch Protect Excel
-second_title: Documen
-type: docs
-url: /ar/batch/protect
-keywords: Batch protection of multiple Excel files
-description: يدعم Aspose.Cells Cloud API الحماية الدفعية لملفات إكسل متعددة. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، Batch Protect
 ---
-يشير هذا REST API إلى `batch protection` من الملفات المؤهلة.
+title: "حماية دفعات من ملفات Excel"
+second_title: "مستند"
+type: docs
+url: /batch/protect
+keywords: "حماية دفعات من ملفات Excel، Aspose Cells Cloud، واجهة REST API، حماية ملفات Excel، الحماية الدفعية"
+description: "تعرّف على كيفية استخدام واجهة Aspose.Cells Cloud REST API لحماية دفعات من ملفات Excel متعددة. يشمل التفاصيل الخاصة بالطلب، مثالًا باستخدام cURL، وأكواد نموذجية لواجهات برمجة التطبيقات (SDKs) بلغات برمجة مختلفة."
+weight: 100
+---
 
-## RSET API
+تتيح واجهة REST هذه **الحماية الدفعية** لملفات Excel المؤهلة.
+
+## واجهة REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/protect
- 
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| طلب حماية الدفعة|| جسم||
+تُعدّ واجهات برمجة التطبيقات (APIs) الخاصة بـ Aspose.Cells Cloud آمنة وتحتاج إلى <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-**خصائص BatchProtectRequest**
+### معاملات الطلب
 
-الاسم | النوع | الوصف | الملاحظات
------------- | ------------- | ------------- | -------------
- مجلد المصدر | سلسلة نصية | | [اختياري] شرط المطابقة | طلب شرط المطابقة | | [اختياري] نوع الحماية | سلسلة نصية | | [اختياري] كلمة المرور | سلسلة نصية | | [اختياري] المجلد الخارجي | سلسلة نصية | | [اختياري]**خصائص MatchConditionRequest**
+| اسم المعامل            | النوع                | الموقع | الوصف                                                                                              |
+|-----------------------|---------------------|----------|----------------------------------------------------------------------------------------------------------|
+| batchProtectRequest   | BatchProtectRequest | body     | حمولة JSON تحدّد مجلد المصدر، شروط المطابقة، نوع الحماية، كلمة المرور ومجلد الإخراج. |
 
-الاسم | النوع | الوصف | الملاحظات
------------- | ------------- | ------------- | -------------
- نمط التعبير العادي | سلسلة | | [اختياري]شروط المطابقة الكاملة | سلسلة[]| | [اختياري][مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PostProtectConvert) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### خصائص BatchProtectRequest
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| الاسم            | النوع                     | الوصف                                                                                 | الملاحظات |
+|-----------------|--------------------------|---------------------------------------------------------------------------------------------|-------|
+| SourceFolder    | string                   | المجلد الذي يحتوي على ملفات Excel المصدر.                                                   | اختياري |
+| MatchCondition  | MatchConditionRequest   | المعايير المستخدمة لتحديد الملفات المراد حمايتها.                                               | اختياري |
+| ProtectionType  | string                   | نوع الحماية المراد تطبيقها (مثل `All` أو `ReadOnly`).                                      | اختياري |
+| Password        | string                   | كلمة المرور التي سيتم تعيينها للملفات المحمية.                                                    | اختياري |
+| OutFolder       | string                   | المجلد الوجهة للملفات المحمية.                                                 | اختياري |
+
+### خصائص MatchConditionRequest
+
+| الاسم                | النوع       | الوصف                                   | الملاحظات |
+|---------------------|------------|-----------------------------------------------|-------|
+| RegexPattern        | string     | التعبير النمطي المستخدم لمطابقة أسماء الملفات. | اختياري |
+| FullMatchConditions | string[]   | قائمة بشروط أسماء الملفات الدقيقة.          | اختياري |
+
+### معامل جسم الطلب
+
+| اسم المعامل | النوع | الوصف                                    |
+| -------------- | ---- | ---------------------------------------------- |
+| data           | file | المحتوى الثنائي لملف المصنّف المراد إنشاؤه. |
+
+### **الاستجابة**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | وقت الإرجاع                           |
+|------|-----------------------------|-----------------------------------------|
+| 200 OK | تم إنشاء المصنّف بنجاح | التدفق الطبيعي                              |
+| 201 Created | تم إنشاء المصنّف (استجابة بديلة) | عندما تُعيد واجهة API حالة الإنشاء |
+| 400 Bad Request | معاملات غير صالحة | خطأ من جانب العميل                        |
+| 401 Unauthorized | نقص أو عدم صلاحية الرمز | خطأ في المصادقة                    |
+| 409 Conflict | الملف موجود و`isWriteOver=false` | تضارب مع ملف موجود    
+
+## كيفية استخدام واجهة PostProtectConvert باستخدام واجهات برمجة التطبيقات (SDKs)
+
+### مواصفات واجهة PostProtectConvert
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PostProtectConvert) واجهة برمجة تطبيقات مفتوحة ومتاحة للعامة وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب الخاصة بـ Aspose.Cells. يوضح المثال التالي كيفية إجراء استدعاء إلى واجهة API السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/protect" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\",\"ProtectionType\":\"All\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\",\"ProtectionType\":\"All\"}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام واجهات برمجة التطبيقات (SDKs) الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام واجهات برمجة التطبيقات (SDKs) هو أفضل طريقة لتسريع التطوير. فتتولى واجهة SDK إدارة التفاصيل من المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطّلاع على قائمة كاملة بواجهات برمجة التطبيقات (SDKs) الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية إجراء استدعاءات إلى خدمات الويب الخاصة بـ Aspose.Cells باستخدام واجهات برمجة التطبيقات (SDKs) المختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

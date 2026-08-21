@@ -1,79 +1,119 @@
-﻿---
-title: Arbeitsblatt aus einem Excel-Arbeitsblatt abrufen
-second_title: Documen
-linktitle: Arbeitsblatt
-type: docs
-url: /de/worksheets/get-worksheet/
-keywords: Get worksheet to different format from an Excel worksheet
-description: Aspose.Cells Cloud REST API unterstützt das Konvertieren von Arbeitsblättern in andere Formate als ein Excel-Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Arbeitsblatt aus einem Excel-Arbeitsblatt abrufen
 ---
-Dieser REST API zeigt `get worksheet description` oder `export worksheet to kinds of format file` an.
+title: "Exportieren eines Arbeitsblatts mit der Aspose.Cells Cloud API – Formate, cURL- und SDK-Beispiele"
+second_title: "Dokument"
+linktitle: "Arbeitsblatt-Export"
+type: docs
+url: /worksheets/get-worksheet/
+keywords: "Aspose.Cells Cloud Get Worksheet, Arbeitsblatt exportieren, Excel-API, REST, CSV, PDF, PNG, JPEG, GIF, BMP, TIFF, EMF, XPS, OTS, XLS, XLSX, XLSB, XLSM, ODS, FODS, Numbers, Cloud-API"
+description: "Erfahren Sie, wie Sie ein einzelnes Arbeitsblatt aus einer Excel-Datei mithilfe der Aspose.Cells Cloud REST-API exportieren. Enthält Endpunkt, Parameter, ein korrigiertes cURL-Beispiel, Authentifizierungsdetails, Fehlerbehandlung und SDK-Snippets für C#, Java, Python und mehr."
+weight: 10
+ArticleTitle: "Exportieren eines Arbeitsblatts mit der Aspose.Cells Cloud API – Formate, cURL- und SDK-Beispiele"
+---
 
- Sie können folgende Formate exportieren:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [ZAHLEN](https://docs.fileformat.com/spreadsheet/numbers/), [Lebensmittel](https://docs.fileformat.com/spreadsheet/fods/).
+Diese REST-API ermöglicht es Ihnen, ein **Arbeitsblatt** aus einer Excel-Datei in viele verschiedene Dateiformate zu exportieren.
 
-## RSET API
+**Zusammenfassung** – Verwenden Sie den **Get Worksheet**-Endpunkt, um ein einzelnes Arbeitsblatt aus einer Arbeitsmappe im gewünschten Format herunterzuladen.
+
+Sie können in die folgenden Formate exportieren:
+
+| Format  | Erweiterung | MIME-Type                                                           |
+| ------- | ----------- | ------------------------------------------------------------------- |
+| XLS     | .xls        | application/vnd.ms-excel                                            |
+| XLSX    | .xlsx       | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet   |
+| XLSB    | .xlsb       | application/vnd.ms-excel.sheet.binary.macroEnabled.12               |
+| CSV     | .csv        | text/csv                                                            |
+| TSV     | .tsv        | text/tab-separated-values                                           |
+| XLSM    | .xlsm       | application/vnd.ms-excel.sheet.macroEnabled.12                      |
+| ODS     | .ods        | application/vnd.oasis.opendocument.spreadsheet                      |
+| TXT     | .txt        | text/plain                                                          |
+| PDF     | .pdf        | application/pdf                                                     |
+| OTS     | .ots        | application/vnd.oasis.opendocument.spreadsheet-template             |
+| XPS     | .xps        | application/vnd.ms-xpsdocument                                      |
+| DIF     | .dif        | application/x-dif                                                   |
+| PNG     | .png        | image/png                                                           |
+| JPEG    | .jpeg       | image/jpeg                                                          |
+| GIF     | .gif        | image/gif                                                           |
+| BMP     | .bmp        | image/bmp                                                           |
+| WMF     | .wmf        | image/wmf                                                           |
+| TIFF    | .tiff       | image/tiff                                                          |
+| EMF     | .emf        | image/emf                                                           |
+| NUMBERS | .numbers    | application/vnd.apple.numbers                                       |
+| FODS    | .fods       | application/vnd.oasis.opendocument.spreadsheet-flat-xml             |
+
+## Sicherheit und Authentifizierung
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine [JWT-Token-basierte Authentifizierung](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
-Die Anforderungsparameter sind:
+### **Anforderungsparameter**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Der Dokumentname.|
-| Blattname| Schnur| Weg| Der Arbeitsblattname.|
-| Format| Schnur| Abfrage|Das exportierte Dateiformat.|
-| vertikale Auflösung| ganze Zahl| Abfrage| Legt die vertikale Auflösung für generierte Bilder in Punkten pro Zoll fest.|
-| horizontale Auflösung| ganze Zahl| Abfrage| Legt die horizontale Auflösung für generierte Bilder in Punkten pro Zoll fest.|
-| Bereich| Schnur| Abfrage| Exportierter Bereich.|
-| Seitenindex| ganze Zahl| Abfrage| Exportierter Seitenindex.|
-| Ordner| Schnur| Abfrage| Der Dokumentenordner.|
-| Speichername| Schnur| Abfrage| Speichername.|
+| Parametername            | Typ     | Ort   | Beschreibung                                                                 |
+| ------------------------ | ------- | ----- | ---------------------------------------------------------------------------- |
+| **name**                 | string  | path  | **Erforderlich.** Name der Excel-Datei.                                     |
+| **sheetName**            | string  | path  | **Erforderlich.** Name des zu exportierenden Arbeitsblatts.                 |
+| **format**               | string  | query | Ziel-Dateiformat für das exportierte Arbeitsblatt (z. B. `pdf`, `png`).      |
+| **verticalResolution**   | integer | query | Bild-DPI für Formate mit unterstützter Auflösung (z. B. PNG, JPEG).          |
+| **horizontalResolution** | integer | query | Bild-DPI für Formate mit unterstützter Auflösung.                            |
+| **area**                 | string  | query | Zellbereich zum Exportieren (z. B. `A1:D10`).                                |
+| **pageIndex**            | integer | query | Seitenindex zum Exportieren, wenn das Arbeitsblatt seitenbasiert ist.        |
+| **folder**               | string  | query | Ordnerpfad im Speicher, in dem sich die Quelldatei befindet.                 |
+| **storageName**          | string  | query | Name des Aspose Cloud-Speichers.                                             |
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+Die <a href="https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet" target="_blank" rel="noopener noreferrer">OpenAPI-Spezifikation</a> definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+Sie können das cURL-Befehlszeilentool verwenden, um problemlos auf die Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie die Cloud-API mit cURL aufgerufen wird.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=gif" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=gif" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```http
+HTTP/1.1 200 OK
+Content-Type: image/gif
+Content-Disposition: attachment; filename="Sheet1.gif"
 
-{
-stream
-} 
-
+<binäre Daten>
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+## Fehlerbehandlung
+
+Die API gibt standardmäßige HTTP-Statuscodes zurück. Gängige Antworten sind:
+
+| Statuscode | Bedeutung                                                       | Beispiel-JSON-Body                         |
+| ---------- | --------------------------------------------------------------- | ------------------------------------------ |
+| **200**    | Erfolg – der Arbeitsblattstream wird zurückgegeben.             | `{ "stream": "..." }`                      |
+| **400**    | Ungültige Anforderung – fehlende oder ungültige Parameter.     | `{ "error": "Ungültiger Formatparameter." }` |
+| **401**    | Nicht autorisiert – ungültiges oder fehlendes JWT-Token.       | `{ "error": "Authentifizierung fehlgeschlagen." }` |
+| **404**    | Nicht gefunden – die angegebene Datei oder das angegebene Arbeitsblatt existiert nicht. | `{ "error": "Arbeitsblatt nicht gefunden." }` |
+| **500**    | Interner Serverfehler – unerwarteter Zustand auf dem Server.   | `{ "error": "Unerwarteter Fehler." }`      |
+
+Behandeln Sie diese Antworten in Ihrem Clientcode, um dem Benutzer eine geeignete Rückmeldung zu geben.
+
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist die beste Möglichkeit, die Entwicklung zu beschleunigen. Ein SDK übernimmt die Low-Level-Details und lässt Sie sich auf Ihre Projekt Aufgaben konzentrieren. Bitte besuchen Sie das <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub-Repository</a> für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aufrufe an die Aspose.Cells-Webdienste mit verschiedenen SDKs durchgeführt werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

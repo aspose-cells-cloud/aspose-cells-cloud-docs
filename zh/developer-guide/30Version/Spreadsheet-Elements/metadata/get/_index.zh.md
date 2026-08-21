@@ -1,58 +1,78 @@
-﻿---
-title: 从 Excel 文件获取元数据
-second_title: Documen
-linktitle: 无需使用存储
-type: docs
-url: /zh/metadata/get/
-keywords: Get properties from Excel files
-description: Aspose.Cells Cloud REST API 支持从 Excel 文件获取属性。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 23
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 文件获取元数据
 ---
-此 REST API 表示从多个 Excel 文件中获取 `metadata`。
+title: "从 Excel 文件获取元数据"
+second_title: "文档"
+linktitle: "无需使用存储服务获取"
+type: docs
+url: /metadata/get/
+keywords: "Aspose.Cells, Excel, 元数据, REST API, 云 SDK"
+description: "使用 Aspose.Cells Cloud REST API 从 Excel 工作簿中检索内置或自定义元数据。包含请求格式、参数、示例 SDK 代码及错误处理说明。"
+weight: 23
+ArticleTitle: "从 Excel 文件获取元数据 - Aspose.Cells Cloud API"
+---
+
+此 REST API 可从一个或多个 Excel 文件中检索**元数据**。  
+请求必须包含通过 OAuth 2.0 客户端凭证流程获取的 `Authorization: Bearer <access_token>` 标头。
+
+**前置条件**：调用此接口前，您必须已从 Aspose Cloud OAuth 2.0 令牌端点获取有效的访问令牌。以下为获取令牌的示例 curl 请求：
 
 ```bash
+curl -X POST "https://api.aspose.cloud/connect/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
+```
 
+## REST API
+
+```bash
 POST https://api.aspose.cloud/v3.0/cells/metadata/get
-
 ```
 
-- **查询参数**
+### 查询参数
 
-|参数名称|类型|描述|
-|:- |:- |:- |
-|类型|细绳|全部/内置/自定义|
+| 参数名称 | 类型   | 描述                                                                 |
+| -------- | ------ | -------------------------------------------------------------------- |
+| type     | string | `ALL` / `BuiltIn` / `Custom` —— 指定需返回的元数据组类型。         |
 
-- **请求主体参数**
+### 请求体参数
 
-|参数名称|类型|描述|
-|:- |:- |:- |
-|excel文件|数据文件|数据文件保存到多部分内容的第一部分。|
+| 参数名称 | 类型      | 描述                                               |
+| -------- | --------- | -------------------------------------------------- |
+| excel file | 数据文件 | 作为 multipart 请求第一部分上传的 Excel 文件。    |
 
-- **回复**
+### 响应
 
-```bash
-{
-    [
-        { 
-            "Name":"test1",
-            "Value":"test1",
-            ...
-        },
-        { 
-            "Name":"test2",
-            "Value":"test3",
-            ...
-        }
-    ]
-}
+```json
+[
+  {
+    "Name": "Author",
+    "Value": "John Doe",
+    "BuiltIn": true,
+    "IsReadOnly": false
+  },
+  {
+    "Name": "CustomProp1",
+    "Value": "Custom Value",
+    "BuiltIn": false,
+    "IsReadOnly": false
+  }
+]
 ```
 
-- **Cloud SDK 系列**
+| 状态码 | 含义               | 出现情况                          |
+|--------|--------------------|-----------------------------------|
+| 200    | 成功               | 已返回元数据。                    |
+| 400    | 请求错误           | 缺少文件或查询参数无效。          |
+| 401    | 未授权             | 令牌无效或缺失。                  |
+| 404    | 未找到             | 指定文件未找到。                  |
+| 500    | 服务器内部错误     | 服务器发生意外错误。              |
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+API 将返回这些标准 HTTP 状态码，并在适用时附带错误响应 JSON 对象。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+### 云 SDK 家族
+
+使用 SDK 可加快开发速度，自动处理底层细节。请参阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

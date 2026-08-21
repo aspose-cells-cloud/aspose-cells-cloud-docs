@@ -1,83 +1,139 @@
-﻿---
-title: 解密 Excel 工作簿
-second_title: Documen
-linktitle: 解密 Excel 文件
+---
+title: "解密 Excel 工作簿"
+second: "文档"
+linktitle: "解密 Excel 文件"
 type: docs
 url: /zh/excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/,/workbook/decrypt/]
-keywords: REST API, spreadsheets, excel, decryp
-description: Cells.Cloud API 用于 Excel 操作：解密 Excel 工作簿
+aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+keywords: "Aspose.Cells, Excel 解密, REST API, 云 SDK"
+description: "了解如何使用 Aspose.Cells Cloud REST API 解密 Excel 工作簿。包含必需参数、cURL 示例、SDK 代码示例以及错误处理详情。"
+ArticleTitle: "如何使用 Aspose.Cells Cloud API 解密 Excel 工作簿"
 weight: 50
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、解密 Excel 工作簿
 ---
-此 REST API 解密 Excel `workbook`。
 
-**查询参数**
+**前提条件**
 
-|参数名称|类型|描述|
-|:- |:- |:- |
-|文件夹|细绳|原始工作簿文件夹。|
-|存储名称|细绳|存储名称。|
+- 有效的 JWT 访问令牌。
+- 工作簿必须已上传至 Aspose Cloud 存储，并在 `folder` 查询参数中指定其路径。
 
-**请求主体参数**
+## DeleteDecryptWorkbook API
 
-|参数名称|类型|描述|
-|:- |:- |:- |
-|加密|工作簿加密请求||
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/encryption
+```
 
-**工作簿加密请求**
+### **安全与身份验证**
 
-|参数名称|类型|描述|
-|:- |:- |:- |
-|加密类型|细绳|XOR/兼容/EnhancedCryptographicProviderV1/StrongCryptographicProvider|
-|密钥长度|整数||
-|密码|细绳||
+Aspose.Cells Cloud API 采用安全机制，需要 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-## 休息 API
+### 查询参数
 
-|**API**|**类型**|**描述**|**Swagger 链接**|
-|:- |:- |:- |:- |
-|/单元格/{名称}/加密|删除|解密文档|[删除解密工作簿](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook)|
+| 参数名       | 类型   | 描述                         |
+| ------------ | ------ | ---------------------------- |
+| folder       | string | 原始工作簿所在的文件夹路径。 |
+| storageName  | string | 工作簿所在的存储名称。       |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### 请求体参数
 
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名     | 类型                      | 描述                         |
+| ---------- | ------------------------- | ---------------------------- |
+| encryption | WorkbookEncryptionRequest | 解密所需的加密设置。         |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### WorkbookEncryptionRequest
+
+| 参数名         | 类型    | 描述                                                                 |
+| -------------- | ------- | -------------------------------------------------------------------- |
+| EncryptionType | string  | 加密算法（`XOR`、`Compatible`、`EnhancedCryptographicProviderV1`、`StrongCryptographicProvider`）。 |
+| KeyLength      | integer | 加密密钥长度（单位：位）。                                           |
+| Password       | string  | 用于解密的密码。                                                     |
+
+### 响应
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**示例错误响应**
+
+```json
+{
+  "Code": "400",
+  "Message": "请求参数无效。"
+}
+```
+
+```json
+{
+  "Code": "401",
+  "Message": "身份验证失败。JWT 令牌无效或缺失。"
+}
+```
+
+```json
+{
+  "Code": "413",
+  "Message": "负载过大。上传的文件超过允许的大小。"
+}
+```
+
+```json
+{
+  "Code": "500",
+  "Message": "内部服务器错误。请稍后重试。"
+}
+```
+
+**HTTP 状态码**
+
+| 状态码 | 含义               | 描述                           |
+| ------ | ------------------ | ------------------------------ |
+| 200    | OK（成功）         | 过滤器应用成功；响应包含操作详情。 |
+| 400    | Bad Request（错误请求） | 缺少或无效的参数（例如不支持的文件类型）。 |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。           |
+| 413    | Payload Too Large（负载过大） | 上传的文件超过大小限制。       |
+| 500    | Internal Server Error（内部服务器错误） | 意外的服务器错误。             |
+
+## 如何使用 SDK 调用 DeleteDecryptWorkbook API
+
+### DeleteDecryptWorkbook API 规范
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) 定义了一个公开可访问的编程接口，允许您直接通过 Web 浏览器执行 REST 交互。
+
+您可以使用 **cURL** 轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用云 API。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "accept: application/json" -H "Content-Type: application/json" -H "x-aspose-client: Containerize.Swagger" -d "{ \"EncryptionType\": \"XOR\", \"KeyLength\": 1280, \"Password\": \"aspose\"}"
-
+```bash
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -d '{ "EncryptionType": "XOR", "KeyLength": 1280, "Password": "aspose"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
-  "Code":"200",
-
-  "Status":"OK"
-
+  "Code": "200",
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
-{{< /tabs >}}
+### 使用 Aspose.Cells Cloud SDK
 
-## Cloud SDK 系列
+使用 SDK 是加快开发速度的最佳方式。SDK 会处理底层细节，让您专注于项目任务。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
-
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

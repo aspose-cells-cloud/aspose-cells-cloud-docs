@@ -1,75 +1,80 @@
-﻿---
-title: إخفاء الأعمدة في ورقة العمل Excel
-second_title: Documen
-linktitle: اختبأ
+---
+title: "إخفاء أعمدة في ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "إخفاء"
 type: docs
 url: /ar/columns/hide/
-aliases: [/hide-columns-in-excel-worksheet/,/hide-columns-in-an-excel-worksheet/]
-keywords: Hide column on an Excel workshee
-description: يدعم Cloud REST إخفاء الأعمدة في ورقة عمل Aspose.Cells. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
+aliases:
+  - /hide-columns-in-excel-worksheet/
+  - /hide-columns-in-an-excel-worksheet/
+keywords: "Aspose.Cells Cloud, واجهة برمجة تطبيقات لإخفاء الأعمدة, إخفاء عمود في Excel, واجهة REST API لإخفاء الأعمدة, Aspose.Cells SDK, أتمتة جداول البيانات"
+description: "تعلم كيفية إخفاء عمود واحد أو أكثر في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). تتضمن النقطة النهائية (endpoint)، المعاملات، مثال باستخدام cURL، أمثلة لرموز SDK، وإجراءات معالجة الأخطاء."
 weight: 40
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إخفاء الأعمدة في ورقة عمل Excel
 ---
-يشير هذا REST API إلى إخفاء أعمدة ورقة العمل.
 
-## RSET API
+تقوم هذه الواجهة البرمجية (REST API) بإخفاء أعمدة في ورقة عمل.
+
+## واجهة REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
 ```
 
-معلمات الطلب هي:
+### معاملات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| عمود البداية| عدد صحيح| استفسار| مؤشر العمود الأولي الذي سيتم تشغيله.|
-| إجمالي الأعمدة| عدد صحيح| استفسار| عدد الأعمدة المطلوب تشغيلها.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعاملة | النوع     | الموقع    | الوصف                                                                 |
+|--------------|-----------|-----------|------------------------------------------------------------------------|
+| name         | string    | path      | اسم ملف المصنف (workbook).                                            |
+| sheetName    | string    | path      | اسم ورقة العمل التي سيتم إخفاء الأعمدة فيها.                         |
+| startColumn  | integer   | query     | المؤشر الصفري (zero-based) للعمود الأول الذي سيتم إخفاؤه.           |
+| totalColumns | integer   | query     | عدد الأعمدة المتتالية التي سيتم إخفاؤها، ابتداءً من **startColumn**. |
+| folder       | string    | query     | المسار إلى المجلد الذي يحتوي على المصنف.                             |
+| storageName  | string    | query     | اسم خدمة التخزين التي يوجد فيها الملف.                                |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+يعرّف [مواصفة OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) واجهة برمجة تطبيقات متاحة عمومًا، وتتيح لك إجراء تفاعلات REST مباشرةً من خلال متصفح ويب.
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر **cURL** لاستدعاء خدمات Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إخفاء عمود باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
- curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/hide?startColumn=1&totalColumns=1" -H "accept: application/json"
-
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/hide?startColumn=1&totalColumns=1" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
+
+**رموز الاستجابة المحتملة**
+
+| الرمز HTTP | المعنى                                   | مثال JSON (خطأ)                                      |
+|------------|-------------------------------------------|------------------------------------------------------|
+| 200        | نجاح                                      | `{ "Code": 200, "Status": "OK" }`                   |
+| 400        | طلب غير صالح (مثل: معاملات غير صحيحة)   | `{ "Code": 400, "Message": "نطاق أعمدة غير صالح." }` |
+| 401        | غير مصرّح (مفتاح وصول مفقود أو غير صالح) | `{ "Code": 401, "Message": "مفتاح وصول غير صالح." }` |
+| 404        | غير موجود (المصنف أو ورقة العمل)         | `{ "Code": 404, "Message": "الملف غير موجود." }`    |
+| 500        | خطأ داخلي في الخادم                       | `{ "Code": 500, "Message": "خطأ غير متوقع." }`      |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## عائلة SDK للسحابة
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أسرع طريقة لتطوير التطبيقات. فالـ SDK يُجرّدك من التفاصيل منخفضة المستوى، مما يمكّنك من التركيز على منطق أعمالك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الرمز التالية كيفية استدعاء خدمات Aspose.Cells باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,64 +1,96 @@
-﻿---
-title: استيراد مصفوفة سلسلة ثنائية الأبعاد إلى ورقة العمل Excel
-second_title: Documen
-linktitle: استيراد سلسلة ثنائية الأبعاد
-type: docs
-url: /ar/import-a-2D-string-array-into-excel-worksheet/
-aliases: [/import-2dimension-string-array-into-excel-worksheet/,/import-2dimension-string-array-into-worksheet/,/import-data/-2dimension-string-array/,/import-data/2dimension-string-array/,/import/2dimension-string-array/ ]
-keywords: Import 2 dimension string array data into Excel files
-description: يدعم Cloud REST استيراد بيانات مصفوفة نصية ثنائية الأبعاد إلى ملفات. تدعم حزمة SDK لغات تطوير متنوعة، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، استيراد مصفوفة سلسلة ثنائية الأبعاد إلى ورقة عمل Excel
 ---
-هذه ورقة عمل REST API `import 2 dimension string array data` في Excel.
+title: "استيراد مصفوفة سلاسل ثنائية الأبعاد إلى ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "استيراد مصفوفة سلاسل ثنائية الأبعاد"
+type: docs
+url: /import-a-2d-string-array-into-excel-worksheet/
+aliases:
+  [
+    /import-2dimension-string-array-into-excel-worksheet/,
+    /import-2dimension-string-array-into-worksheet/,
+    /import-data/-2dimension-string-array/,
+    /import-data/2dimension-string-array/,
+    /import/2dimension-string-array/,
+  ]
+keywords: "Aspose.Cells Cloud، استيراد مصفوفة سلاسل ثنائية الأبعاد، Excel، REST API، SDK"
+description: "تعرّف على كيفية استخدام واجهة Aspose.Cells Cloud REST API لاستيراد مصفوفة سلاسل ثنائية الأبعاد إلى ورقة عمل Excel. يشمل تنسيق الطلب، تفاصيل المعاملات، وأمثلة للكود باستخدام SDKs بلغات C# و PHP و Ruby."
+weight: 20
+---
 
-الطلب عبارة عن طلب HTTP يحتوي على محتوى متعدد الأجزاء (انظر[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)أو[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)يحتوي الجزء الأول من المحتوى متعدد الأجزاء على بيانات Import2DimensionStringArrayOption ويحتوي الجزء الثاني على ملف بيانات.
+تقوم هذه الواجهة **REST API باستيراد مصفوفة سلاسل ثنائية الأبعاد** إلى ورقة عمل Excel.
 
-## RSET API
+يُشكّل الطلب طلب HTTP يحتوي على محتوى متعدد الأجزاء (انظر [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) أو [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). يحتوي الجزء الأول من المحتوى متعدد الأجزاء على بيانات `Import2DimensionStringArrayOption`، ويحتوي الجزء الثاني على ملف البيانات.
+
+## واجهة REST API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-يتم وصف المعلمات الهامة في الجدول التالي:
+### **الأمان والمصادقة**
 
-**خيار استيراد مصفوفة سلسلة البعد الثاني**
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-| الصف الأول| عدد صحيح||
-| العمود الأول| عدد صحيح||
-| بيانات|خيط[،]||
-|ورقة عمل الوجهة| خيط| اسم ورقة عمل الوجهة.|
-| هل تم إدراجه| خيط| صواب/خطأ.|
-| نوع بيانات الاستيراد| خيط|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| مصدر| مصدر الملف| يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData فارغة.|
+يُوضّح الجدول التالي المعاملات المهمة:
 
-**مثال**
+### **Import2DimensionStringArrayOption**
+
+| اسم المعاملة          | النوع               | الوصف                                                                          |
+| --------------------- | ------------------- | ------------------------------------------------------------------------------ |
+| FirstRow             | int                 | الفهرس الصفري للصف الذي يبدأ منه الاستيراد.                                   |
+| FirstColumn          | int                 | الفهرس الصفري للعمود الذي يبدأ منه الاستيراد.                                 |
+| Data                 | String[,]           | مصفوفة ثنائية الأبعاد تحتوي على قيم السلاسل المراد استيرادها.                 |
+| DestinationWorksheet | string              | اسم ورقة العمل التي ستتلقّى البيانات المستوردة.                               |
+| IsInsert             | string (true/false) | إذا كانت القيمة **true**، تُدرج البيانات وتُزاحَم الخلايا الموجودة وفقًا لذلك. |
+| ImportDataType       | string              | يحدّد نوع البيانات؛ لاستخدام هذه العملية، اضبط القيمة على `TwoDimensionStringArray`. |
+| Source               | FileSource          | يشير إلى موقع ملف البيانات عند كون المعاملة `BatchData` تساوي null.           |
+
+### مثال على جسم الطلب
 
 ```json
-
 {
-    "Data": [
-        ["1.0", "2.9"],
-        ["2.0", "2.1"]
-    ],
-    "DestinationWorksheet": "Sheet2",
-    "FirstRow": 1,
-    "FirstColumn": 1,
-    "importDataType": "TwoDimensionStringArray"
+  "Data": [
+    ["1.0", "2.9"],
+    ["2.0", "2.1"]
+  ],
+  "DestinationWorksheet": "Sheet2",
+  "FirstRow": 1,
+  "FirstColumn": 1,
+  "ImportDataType": "TwoDimensionStringArray"
 }
-
 ```
 
-## عائلة SDK السحابية
+### الاستجابة
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+**رموز حالة HTTP**
+
+| الرمز | المعنى                      | الوصف                                                         |
+|-------|-----------------------------|---------------------------------------------------------------|
+| 200   | OK (تمت العملية بنجاح)     | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.   |
+| 400   | Bad Request (طلب غير صالح) | معاملات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم).         |
+| 401   | Unauthorized (غير مصادَق)   | رمز JWT غير صالح أو مفقود.                                   |
+| 413   | Payload Too Large (حمولة كبيرة جدًا) | تجاوز حجم الملف المرفوع الحد المسموح.            |
+| 500   | Internal Server Error (خطأ داخلي في الخادم) | خطأ غير متوقّع في الخادم.                              |
+
+## كيفية استخدام PostImportData API باستخدام SDKs
+
+### مواصفات PostImportData API
+
+تُعرّف [مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData) واجهة برمجة تطبيقات عامة قابلة للاستدعاء مباشرةً من متصفح الويب.
+
+### استخدام SDKs لـ Aspose.Cells Cloud
+
+يُعدّ استخدام SDK أسرع طريقة لدمج هذه الوظيفة. فتُجَسّد SDKs التفاصيل من المستوى المنخفض، مما يتيح لك التركيز على منطق أعمالك. يمكنك الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهِر أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

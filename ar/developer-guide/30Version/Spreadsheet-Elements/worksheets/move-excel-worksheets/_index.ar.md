@@ -1,76 +1,92 @@
-﻿---
-title: نقل ورقة عمل Excel
-second_title: Documen
-linktitle: موف
-type: docs
-url: /ar/worksheets/move/
-aliases: [/move-excel-worksheets/]
-keywords: Move an Excel worksheet on an Excel workbook
-description: يدعم Cloud REST نقل ورقة عمل Aspose.Cells إلى مصنف Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، نقل ورقة عمل Excel
 ---
-يشير هذا REST API إلى `move worksheet`.
- 
-## RSET API
- 
+title: "نقل ورقة عمل Excel – واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0)"
+second_title: "مستند"
+linktype: "move"
+type: docs
+url: /worksheets/move/
+aliases: [/move-excel-worksheets/]
+keywords: "Aspose.Cells Cloud، نقل ورقة عمل، Excel، واجهة برمجة تطبيقات REST، SDK، C#، Java، Python، Node.js، PHP، Ruby، Go، Android، Swift، Perl، الإصدار 3.0"
+description: "تعرّف على كيفية نقل ورقة عمل Excel إلى موقع جديد باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0). يتضمن عنوان النهاية (Endpoint)، المُعطَلات المطلوبة، مثال cURL، ورموز SDK بلغات C# وJava وPython وغيرها."
+weight: 20
+ArticleTitle: "كيفية نقل ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud الإصدار 3.0"
+---
+
+تقوم هذه الواجهة البرمجية لـ REST بنقل ورقة عمل داخل ملف Excel (Book).
+
+## واجهة برمجة تطبيقات REST
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
 ```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| متحرك|| جسم| مع المعلمات المتحركة.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
- 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### مُعطَلات الطلب (Request Parameters)
+
+| اسم المُعطَل         | النوع   | الموقع | الوصف                                                                                                      |
+|----------------------|---------|--------|-------------------------------------------------------------------------------------------------------------|
+| name                 | string  | path   | اسم ملف Excel.                                                                                              |
+| sheetName            | string  | path   | اسم ورقة العمل المراد نقلها.                                                                                |
+| moving               | object  | body   | كائن JSON يحدّد ورقة العمل الوجهة (`DestinationWorksheet`) والموقع النسبي (`Position`).                     |
+| folder               | string  | query  | مسار المجلد الذي يُخزَّن فيه ملف Workbook.                                                                 |
+| storageName          | string  | query  | اسم خدمة التخزين.                                                                                           |
+
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) واجهة برمجة تطبيقات متاحة عمومًا وتتيح لك إجراء تفاعلات REST مباشرةً من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر `cURL` لاستدعاء خدمات ويب Aspose.Cells. يوضح المثال التالي كيفية نقل ورقة عمل باستخدام طلب واحد.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--d '{"DestinationWorksheet":"Sheet5", "Position":"after"}' 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"DestinationWorksheet":"Sheet5","Position":"after"}'
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                   | الوصف                                                                 |
+|-------|---------------------------|------------------------------------------------------------------------|
+| 200   | OK (تم بنجاح)            | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.            |
+| 400   | Bad Request (طلب خاطئ)   | مُعطَلات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم).                |
+| 401   | Unauthorized (غير مصرّح)  | رمز JWT غير صالح أو مفقود.                                            |
+| 413   | Payload Too Large (حمولة كبيرة جدًا) | تجاوز حجم الملف المرفوع الحد المسموح.                          |
+| 500   | Internal Server Error (خطأ داخلي في الخادم) | حدث خطأ غير متوقع في الخادم.                                   |
+
+**نموذج حمولة خطأ**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "المُعطَل المطلوب 'moving' مفقود."
+}
+```
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
- 
- 
- 
+
+## مجموعة أدوات SDK للحاسوب السحابي
+
+يُعد استخدام SDK الطريقة الأفضل لتسريع عملية التطوير. فتتولى SDK التعامل مع التفاصيل منخفضة المستوى، ما يمكّنك من التركيز على مهام مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الرمز التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

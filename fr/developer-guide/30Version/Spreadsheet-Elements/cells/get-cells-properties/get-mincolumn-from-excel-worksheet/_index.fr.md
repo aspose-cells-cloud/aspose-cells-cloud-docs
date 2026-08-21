@@ -1,46 +1,72 @@
-﻿---
-title: Obtenez MinColumn à partir de la feuille de calcul Excel
-type: docs
-url: /fr/get-mincolumn-from-excel-worksheet/
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir la colonne minimale de la feuille de calcul Excel
 ---
-Ce REST API indique que les émissions obtiennent un `mincolumn` dans un fichier Excel lorsque le paramètre `cellOrMethodName` est `mincolumn`.
+title: "Obtenir MinColumn à partir d'une feuille Excel"
+type: docs
+url: /get-mincolumn-from-excel-worksheet/
+weight: 100
+keywords: Excel, Aspose.Cells Cloud, REST API, Get MinColumn, Worksheet, SDK, Cloud API
+description: Récupérer l'index minimal de colonne contenant des données dans une feuille d’un fichier Excel via l’API REST Aspose.Cells Cloud.
+ArticleTitle: "Obtenir MinColumn à partir d'une feuille Excel - Aspose.Cells Cloud API"
+---
 
-- **cURL Exemple**
+Cet API REST renvoie l'index minimal de colonne contenant des données dans une feuille Excel lorsque le paramètre `cellOrMethodName` est défini sur `mincolumn`.
 
+- **Exemple cURL**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" \
+     -H "Authorization: Bearer <VOTRE_JETON_D’ACCÈS>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MinColumn": 2
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Famille de SDK Cloud**
+**Détails de la requête**
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+| Paramètre | Type | Obligatoire | Description |
+|-----------|------|-------------|-------------|
+| `cellOrMethodName` | string | Oui | Valeur fixe `mincolumn` indiquant l’opération à effectuer. |
+| `folder` | string | Non | Chemin vers le dossier contenant le classeur (si différent de la racine). |
+| `storageName` | string | Non | Nom du stockage Aspose Cloud à utiliser. |
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+**Détails de la réponse**
 
+L’API renvoie un objet JSON contenant une seule propriété :
 
+```json
+{
+  "MinColumn": entier   // Index de la colonne la plus à gauche contenant des données (indexé à partir de zéro).
+}
+```
+
+Codes d’état HTTP typiques :
+
+- **200 OK** – Requête réussie, renvoie la valeur `MinColumn`.  
+- **401 Unauthorized** – Jeton d’authentification manquant ou invalide.  
+- **404 Not Found** – Le classeur, la feuille ou la plage de cellules spécifiée n’existe pas.  
+- **500 Internal Server Error** – Erreur serveur inattendue.
+
+- **Utiliser les SDK Aspose.Cells Cloud**
+
+L’utilisation d’un SDK constitue la méthode la plus efficace pour développer. Un SDK masque les détails de bas niveau, vous permettant de vous concentrer sur la logique métier de votre projet. Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

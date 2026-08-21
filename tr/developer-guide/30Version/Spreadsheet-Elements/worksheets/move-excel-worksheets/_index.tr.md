@@ -1,76 +1,92 @@
-﻿---
-title: Excel çalışma sayfasını taşıyın
-second_title: Documen
-linktitle: Hareket
-type: docs
-url: /tr/worksheets/move/
-aliases: [/move-excel-worksheets/]
-keywords: Move an Excel worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasının Excel çalışma kitabına taşınmasını destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasını taşı
 ---
-Bu REST API, `move worksheet`'i gösterir.
- 
-## RSET API
- 
+title: "Bir Excel Çalışma Sayfasını Taşı – Aspose.Cells Cloud API (v3.0)"
+second_title: "Belge"
+linktitle: "Taşı"
+type: docs
+url: /worksheets/move/
+aliases: [/move-excel-worksheets/]
+keywords: "Aspose.Cells Cloud, Çalışma Sayfası Taşı, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
+description: "Aspose.Cells Cloud API’si (v3.0) ile bir Excel çalışma sayfasını yeni bir konuma taşımayı öğrenin. Uç nokta, gerekli parametreler, cURL örneği ve C#, Java, Python ve diğerleri için SDK kodlarını içerir."
+weight: 20
+ArticleTitle: "Aspose.Cells Cloud API v3.0 ile Bir Excel Çalışma Sayfasını Nasıl Taşırız?"
+---
+
+Bu REST API, bir Excel çalışma kitabında bir çalışma sayfasını başka bir konuma taşır.
+
+## REST API
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
 ```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| hareket eden|| vücut| hareketli parametrelerle.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
- 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### İstek Parametreleri
+
+| Parametre Adı | Tür   | Konum | Açıklama                                                                                                           |
+| ------------- | ----- | ----- | ------------------------------------------------------------------------------------------------------------------ |
+| name          | string | path  | Excel dosyasının adı.                                                                                              |
+| sheetName     | string | path  | Taşınacak çalışma sayfasının adı.                                                                                  |
+| moving        | object | body  | Hedef çalışma sayfasını (`DestinationWorksheet`) ve göreli konumu (`Position`) belirten JSON nesnesi.              |
+| folder        | string | query | Çalışma kitabının depolandığı klasör yolu.                                                                         |
+| storageName   | string | query | Depolama hizmetinin adı.                                                                                           |
+
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web hizmetlerini çağırmak için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, tek bir istek ile bir çalışma sayfasını nasıl taşıyacağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--d '{"DestinationWorksheet":"Sheet5", "Position":"after"}' 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"DestinationWorksheet":"Sheet5","Position":"after"}'
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
+**HTTP Durum Kodları**
+
+| Kod | Anlamı                     | Açıklama                                      |
+|-----|----------------------------|-----------------------------------------------|
+| 200 | OK (Tamam)                 | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request (Hatalı İstek) | Eksik veya geçersiz parametreler (örn., desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)    | Geçersiz veya eksik JWT belirteci. |
+| 413 | Payload Too Large (Çok Büyük Yük) | Yükleme dosyası boyut sınırını aşıyor. |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası. |
+
+**Örnek Hata Yükü**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Gerekli parametre eksik: 'moving'."
+}
+```
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
- 
- 
- 
+
+Bir SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. SDK, düşük seviye detayları yönetir; böylece projenizin görevlerine odaklanabilirsiniz. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
+
+Aşağıdaki kod örnekleri, çeşitli SDK’ları kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

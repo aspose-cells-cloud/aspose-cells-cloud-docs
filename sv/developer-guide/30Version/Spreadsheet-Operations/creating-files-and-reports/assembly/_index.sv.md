@@ -1,71 +1,97 @@
-﻿---
-title: Sammanställa data för att skapa en Excel-rapport
-second_title: Documen
-linktitle: Monteringsdatum
-type: docs
-url: /sv/assembly-data-for-the-creation-of-an-excel-report/
-aliases: [/assembly/]
-keywords: Assemble data in Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: "Aspoe.Cells Cloud genererar rapporter i XLS-, XLSX-, XLSM-, XLSB- och ODS-filer med hjälp av mallen och databladet. Bearbeta smarta markörer i mallen för att fylla i data från ett annat datablad. SDK:n stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
-weight: 40
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Assembler
 ---
-Denna REST API indikerar `assembly`-data i en Excel-fil.
+title: "Sammanställning av data för skapande av en Excel-rapport"
+second_title: "Dokument"
+linktitle: "Sammanställningsdata"
+type: docs
+url: /assembly-data-for-the-creation-of-an-excel-report/
+aliases: [/assembly/]
+keywords: "Aspose.Cells, Excel-rapport, dataassemblage, molntjänst-API, REST, SDK, cURL, PDF, ODS"
+description: "Lär dig hur du använder Aspose.Cells Cloud:s Assembly API för att sammanfoga data till Excel-rapporter (XLSX, PDF, ODS). Innehåller slutpunkt, parametrar, cURL-exempel, SDK-kod, autentiseringsguide och felhantering."
+weight: 40
+---
 
-## RSET API
+Detta REST API sammanställer data **till** en Excel-fil.
+
+## REST API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/assembly
-
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| fil| fil| formulärData| Fil att ladda upp|
-| datakälla| sträng| fråga||
-| formatera| sträng| fråga| Xlsx|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostAssemble) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begärans parametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Parameter namn | Typ    | Plats                     | Beskrivning                                                           |
+| -------------- | ------ | ------------------------- | --------------------------------------------------------------------- |
+| file           | fil    | formData (multipart body) | Kalkylarkfilen som ska laddas upp.                                    |
+| DataSource     | sträng | frågesträng               | Identifierare för datakällan som tillhandahåller data för sammanställningen. |
+| format         | sträng | frågesträng               | Önskat utdataformat (t.ex. `xlsx`, `pdf`).                            |
+
+### **Svar**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[fil2 namn]",
+    "Filesize" : [filstorlek],
+    "FileContent" : "[Base64-sträng]"
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                         |
+|-----|-----------------------------|-----------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Inte auktoriserad           | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nytolast           | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
+## Hur du använder PostAssemble API med SDK:er
+
+### PostAssemble API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/LightCells/PostAssemble) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/assembly?datasource=ds&format=pdf" \
--X POST \
--H "Content-Type: multipart/form-data" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+curl -v "https://api.aspose.cloud/v3.0/cells/assembly?DataSource=ds&format=pdf" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'template=@template.xlsx' \
+  -F 'data=@data.json'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "report1",
+      "FileSize": 274022,
+      "FileContent": "-----Base64-sträng--------"
+    },
+    {
+      "Filename": "report2",
+      "FileSize": 274022,
+      "FileContent": "-----Base64-sträng--------"
+    }
+  ]
 }
 ```
 
@@ -73,11 +99,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/assembly?datasource=ds&format=pdf" \
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda ett SDK är det snabbaste sättet att utveckla mot API:et. Ett SDK abstraher bort detaljer på lågnivånivå och låter dig fokusera på din affärslogik. Kolla in [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

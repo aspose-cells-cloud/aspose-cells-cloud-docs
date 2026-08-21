@@ -1,88 +1,120 @@
-﻿---
-title: Verileri Excel dosyasında sıkıştırın
-second_title: Documen
-linktitle: Excel Dosyasını Sıkıştır
-type: docs
-url: /tr/compress-excel-files/
-aliases: [/compress/]
-keywords: Compress excel files
-description: Aspose.Cells Cloud REST API, Excel dosyalarını sıkıştırmayı destekler. SDK, Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift gibi çeşitli geliştirme dillerini destekler.
-weight: 39
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Sıkıştır
 ---
-Bu REST API, Excel dosyasındaki `compress` verisini gösterir.
+title: "Excel Dosyasındaki Verileri Sıkıştırın"
+ArticleTitle: "Excel Dosyasındaki Verileri Sıkıştırın – Aspose.Cells Cloud API"
+second_title: "Belge"
+linktitle: "Excel Dosyalarını Sıkıştırın"
+type: docs
+url: /compress-excel-files/
+aliases: [/compress/]
+keywords: "excel dosyası sıkıştırma, aspose cells cloud, excel sıkıştırma, elektronik tablo sıkıştırma, rest api, dosya sıkıştırma"
+description: "Aspose.Cells Cloud REST API ile Excel dosyalarını (XLS, XLSX, XLSM, XLSB, ODS) sıkıştırın. Sıkıştırma düzeyini ayarlayın, birden fazla dosyayı işleyin ve SDK’lar aracılığıyla entegrasyon sağlayın."
+weight: 39
+---
 
-- XLS, XLSX, XLSM, XLSB, ODS'yi sıkıştırın
-- Birden fazla Excel elektronik tablo dosyasını sıkıştırmanın hızlı yolu
-- Sıkıştırma seviyesini seçin
-- Çoklu dosyaları destekleyin
+## Aspose.Cells Cloud Web Servislerinin PostCompress API’si
 
-## RSET API
+**Ön Gereksinimler:**  
+- Kimlik doğrulama için geçerli bir JWT jetonu gerekir.  
+- Desteklenen dosya formatları: XLS, XLSX, XLSM, XLSB ve ODS’dir.  
+- Tek istekte izin verilen maksimum dosya boyutu 500 MB’dır (hizmet sınırlarına tabidir).
 
-```bash
+Bu REST API, bir Excel dosyasındaki verileri sıkıştırır.
 
+- XLS, XLSX, XLSM, XLSB, ODS dosyalarını sıkıştırın  
+- Birden fazla Excel elektronik tablo dosyasını hızlıca sıkıştırın  
+- Sıkıştırma düzeyini seçin  
+- Birden fazla dosyayı destekler  
+
+### Web API Uç Noktası
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/compress
-
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| dosya| dosya| formData| Yüklenecek dosya|
-| Sıkıştırma Seviyesi| tam sayı| sorgu||
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT jeton tabanlı kimlik doğrulamayı</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Parametre Adı | Tür    | Yol/Sorgu Dizisi/HTTP Gövdesi | Açıklama                                      |
+|---------------|--------|-------------------------------|-----------------------------------------------|
+| file          | dosya  | formData                      | Yüklenecek dosya                              |
+| CompressLevel | tamsayı | sorgu                         | Sıkıştırma düzeyi (0‑100); daha yüksek değerler daha güçlü sıkıştırma anlamına gelir |
+
+### İstek Gövdesi Parametresi
+
+| Parametre Adı | Tür | Açıklama                                     |
+|---------------|-----|----------------------------------------------|
+| data          | dosya | Sıkıştırılacak çalışma kitaplığı dosyasının ikili içeriği. |
+
+### **Yanıt**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[birleştirilmiş dosya adı]",
+    "Filesize" : [dosya boyutu],
+    "FileContent" : "[Base64Dizisi]"
+}
+```
+
+*Not:* `FileContent`, Base64 dizisi olarak kodlanmış sıkıştırılmış çalışma kitabını içerir. Dizgenin uzunluğu, sıkıştırılmış dosyanın boyutuna karşılık gelir; ikili Excel dosyasını geri almak için standart Base64 araçlarını kullanarak bu dizeyi çözebilirsiniz.
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                      | Açıklama                                          |
+|-----|----------------------------|---------------------------------------------------|
+| 200 | Tamam                      | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Hatalı İstek               | Eksik veya geçersiz parametreler (örn., desteklenmeyen dosya türü). |
+| 401 | Yetkisiz                   | Geçersiz veya eksik JWT jetonu. |
+| 413 | İstek Gövdesi Çok Büyük    | Yüklenen dosya boyut sınırlarını aşıyor. |
+| 500 | Sunucu İç Hatası           | Beklenmeyen sunucu hatası. |
+
+## PostCompress API’sini SDK’larla Nasıl Kullanılır
+
+### PostCompress API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye nasıl istekte bulunacağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/compress?CompressLevel=88" \
+# Güvenli bağlantı için HTTPS kullanın
+curl -v "https://api.aspose.cloud/v3.0/cells/compress?CompressLevel=88" \
 -X POST \
 -H "Content-Type: multipart/form-data" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+-F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanın
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en hızlı yoludur. Bir SDK, düşük seviye detayları soyutlayarak projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web servislerine nasıl istekte bulunacağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

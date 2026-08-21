@@ -1,73 +1,91 @@
-﻿---
-title: Удалить все проверки на листе Excel
-second_title: Documen
-linktitle: Клеа
-type: docs
-url: /ru/validations/clear/
-keywords: Delete all worksheet validations from an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает удаление всех валидаций из листа Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 10
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Удалить все проверки листа на листе Excel
 ---
-Этот REST API указывает на необходимость удаления всех проверок на листе Excel.
+title: "Удаление всех проверок данных листа — Aspose.Cells Cloud API"
+second_title: "Документация"
+linktitle: "Удалить"
+type: docs
+url: /validations/clear/
+keywords: "Aspose.Cells Cloud, удаление проверок данных листа, Excel, REST API, проверка электронной таблицы, API"
+description: "Удалите все правила проверки данных с листа в файле Excel с помощью Aspose.Cells Cloud REST API. Включает шаги аутентификации, детали запроса, пример cURL, схему ответа, обработку ошибок и фрагменты SDK."
+weight: 10
+---
 
-## РСЕT API
+**Необходимые условия**
+
+- Действующая учетная запись Aspose Cloud.
+- JWT-токен доступа, полученный через API аутентификации Aspose Cloud (`/connect/token`).
+- Рабочая книга должна храниться в вашем хранилище Aspose Cloud (или должны быть предоставлены соответствующие параметры запроса `folder`/`storageName`).
+
+Этот REST API удаляет все проверки данных листа в листе Excel.
+
+## REST API
 
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
- 
 ```
 
-Параметры запроса:
+### **Параметры запроса**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| индекс проверки| целое число| путь| Индекс проверки.|
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип    | Расположение | Описание                                          |
+| ------------- | ------ | ------------ | ------------------------------------------------- |
+| name          | string | path         | Имя документа Excel.                              |
+| sheetName     | string | path         | Имя листа, содержащего проверки данных.           |
+| folder        | string | query        | Папка, в которой хранится документ.               |
+| storageName   | string | query        | Имя сервиса хранилища.                            |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) определяет публично доступное программное интерфейсное решение и позволяет выполнять взаимодействие по REST напрямую из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать инструмент командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как вызвать API с помощью cURL после получения JWT-токена.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Обработка ошибок
+
+| HTTP-статус | Смысл ошибки       | Описание                                                  |
+| ----------- | ------------------ | --------------------------------------------------------- |
+| 400         | Bad Request        | Запрос некорректно сформирован или отсутствуют обязательные параметры. |
+| 401         | Unauthorized       | JWT-токен отсутствует, недействителен или истек.          |
+| 404         | Not Found          | Указанная рабочая книга или лист не существуют.           |
+| 500         | Internal Server Error | На стороне сервера произошла непредвиденная ошибка.      |
+
+Полезная нагрузка ошибки следует той же структуре JSON с полями `Code` и `Message`, например:
+
+```json
+{
+  "Code": 401,
+  "Message": "Invalid or expired token."
+}
+```
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ разработки. SDK скрывает детали низкоуровневой реализации, позволяя сосредоточиться на бизнес-логике. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,140 +1,215 @@
-﻿---
-title: Koşullu Biçimlendirmeyi Sil
-type: docs
-url: /tr/conditional-formattings/delete/
-aliases: [/remove-conditional-formatting/]
-keywords: REST API, spreadsheets, excel, delete cell area from condition formattin
-description: "Cells. Excel için API Bulutu: koşul biçimlendirmesinden hücre alanını sil"
-weight: 60
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Koşullu Biçimlendirmeyi Sil
 ---
-Bu REST API, Koşullu biçimlendirmeyi kaldır'ı gösterir
- 
-## RSET API
- 
+title: "Koşullu Biçimlendirmeyi Sil – Aspose.Cells Cloud API Referansı"
+type: docs
+url: /conditional-formattings/delete/
+aliases:
+  - /remove-conditional-formatting/
+keywords: "Aspose.Cells, Koşullu Biçimlendirme, Sil, API, Excel, Bulut"
+description: "Aspose.Cells Cloud REST API'sini kullanarak bir çalışma sayfasından koşullu biçimlendirme kuralını kaldırın. Parametreler, kimlik doğrulama, istek/yanıt örnekleri ve SDK kod parçacıklarını içerir."
+weight: 60
+---
+
+# Koşullu Biçimlendirmeyi Sil
+
+## Arkaplan
+Koşullu biçimlendirme, belirli bir kriteri karşılayan hücrelere görsel stiller uygulamanızı sağlar (örneğin, bir eşiğin üzerindeki değerleri vurgulayın). Otomasyon senaryolarında mevcut bir kuralı kaldırmanız gerekebilir. Bu uç nokta, Aspose Cloud deposunda depolanan bir Excel çalışma kitabının çalışma sayfasından bir koşullu biçimlendirme kuralını siler.
+
+## Gereksinimler
+- **Cells** ürününün etkinleştirildiği bir **Aspose Cloud** hesabı.  
+- OAuth 2.0 istemci kimlik bilgileri akışı ile oluşturulan **JWT erişim belirteci**.  
+- Çalışma kitabının (`{name}`) zaten belirtilen **klasörde** ve **depoda** (varsa) bulunuyor olması gerekir.  
+- Aşağıda gösterilen URL’lerde **v3.0** API sürümü (varsayılan) kullanılmaktadır.
+
+## Kimlik Doğrulama
+Tüm Aspose.Cells Cloud uç noktaları **JWT belirteci tabanlı kimlik doğrulama** gerektirir.
+
+```http
+Authorization: Bearer <access_token>
+```
+
+### Erişim belirteci edinin (cURL)
+
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
- 
-```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| dizin| tam sayı| yol||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
- 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormatting) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+curl -X POST "https://api.aspose.cloud/connect/token" \
+  -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>&scope=Cells"
 ```
 
-{{< /tab >}}
+**Yanıt**
 
-{{< tab tabNum="12" >}}
+```json
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "token_type": "Bearer",
+  "expires_in": 3600
+}
+```
 
-```java
+Döndürülen `access_token` değerini her istekte `Authorization` başlığında kullanın.
 
+## HTTP İsteği
+
+```
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
+```
+
+### Yol Parametreleri
+
+| Ad          | Tür      | Gerekli | Açıklama |
+|-------------|----------|---------|----------|
+| `name`      | string   | Evet    | Çalışma kitabının dosya adı (örneğin, `Book1.xlsx`). |
+| `sheetName` | string   | Evet    | Koşullu biçimlendirmeyi içeren çalışma sayfası. |
+| `index`     | integer  | Evet    | Silinecek koşullu biçimlendirme kuralının sıfır tabanlı indeksi. |
+
+### Sorgu Parametreleri
+
+| Ad             | Tür     | Gerekli | Açıklama |
+|----------------|---------|---------|----------|
+| `folder`       | string  | Hayır   | Çalışma kitabının bulunduğu bulut klasörü. |
+| `storageName`  | string  | Hayır   | Aspose Cloud depolama hizmetinin adı. |
+
+## İstek Örneği (cURL)
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/conditionalFormattings/0?folder=MyFolder&storageName=MyStorage" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
+```
+
+### Başarılı Yanıt
+
+```json
 {
   "Code": "200",
   "Status": "OK"
 }
-
 ```
 
-{{< /tab >}}
+**HTTP Durum Kodları**
 
-{{< /tabs >}}
- 
-## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+| Kod | Anlam                       | Açıklama |
+|-----|-----------------------------|----------|
+| 200 | OK                          | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request                 | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized                | Geçersiz veya eksik JWT belirteci. |
+| 413 | Payload Too Large           | Yüklenen dosya boyut sınırını aşıyor. |
+| 500 | Internal Server Error       | Beklenmeyen sunucu hatası. |
 
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
+## Hata Yanıtları
 
-{{< tab tabNum="1" >}}
+| HTTP Kodu | Neden | Örnek Gövde |
+|-----------|-------|-------------|
+| **400**   | Bad Request – eksik veya geçersiz parametreler. | `{ "Code":"400", "Message":"Geçersiz parametre değeri." }` |
+| **401**   | Unauthorized – eksik veya geçersiz JWT belirteci. | `{ "Code":"401", "Message":"Erişim belirteci eksik veya geçersiz." }` |
+| **404**   | Not Found – çalışma kitabının veya çalışma sayfasının bulunamaması. | `{ "Code":"404", "Message":"Dosya bulunamadı." }` |
+| **500**   | Internal Server Error – beklenmeyen sunucu hatası. | `{ "Code":"500", "Message":"Beklenmeyen bir hata oluştu." }` |
 
+## SDK Örnekleri
+Aşağıdaki kod parçacıkları, **Koşullu Biçimlendirmeyi Sil** işlemini resmi Aspose.Cells Cloud SDK'ları kullanarak nasıl çağıracağınızı göstermektedir.
 
+### C# (.NET)
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-RemoveConditionalFormatting-1.cs" >}}
+```csharp
+using Aspose.Cells.Cloud.SDK;
+using Aspose.Cells.Cloud.SDK.Requests;
 
-{{< /tab >}}
+// API istemcisini yapılandırın
+var config = new Configuration
+{
+    ClientId = "<your_client_id>",
+    ClientSecret = "<your_client_secret>"
+};
+var apiInstance = new ConditionalFormattingsApi(config);
 
-{{< tab tabNum="2" >}}
+// Koşullu biçimlendirmeyi silin
+var request = new DeleteWorksheetConditionalFormattingRequest(
+    name: "Book1.xlsx",
+    sheetName: "Sheet1",
+    index: 0,
+    folder: "MyFolder",
+    storageName: null
+);
+apiInstance.DeleteWorksheetConditionalFormatting(request);
+```
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-cells-remove-conditional-formatting.java" >}}
+### Java
 
-{{< /tab >}}
+```java
+import com.aspose.cells.cloud.sdk.api.*;
+import com.aspose.cells.cloud.sdk.model.*;
+import com.aspose.cells.cloud.sdk.requests.*;
 
-{{< tab tabNum="3" >}}
+ApiClient client = new ApiClient();
+client.setAppKey("<your_client_id>");
+client.setAppSid("<your_client_secret>");
 
+ConditionalFormattingsApi api = new ConditionalFormattingsApi(client);
 
+DeleteWorksheetConditionalFormattingRequest request = new DeleteWorksheetConditionalFormattingRequest(
+        "Book1.xlsx",
+        "Sheet1",
+        0,
+        "MyFolder",
+        null);
 
-{{< /tab >}}
+api.deleteWorksheetConditionalFormatting(request);
+```
 
-{{< tab tabNum="4" >}}
+### Node.js
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Examples-Ruby-ConditionalFormatting-delete_worksheet_conditional_formatting-.rb" >}}
+```javascript
+const { ConditionalFormattingsApi, DeleteWorksheetConditionalFormattingRequest } = require('asposecellscloud');
 
-{{< /tab >}}
+const config = {
+    clientId: "<your_client_id>",
+    clientSecret: "<your_client_secret>"
+};
 
-{{< tab tabNum="5" >}}
+const apiInstance = new ConditionalFormattingsApi(config);
 
+const request = new DeleteWorksheetConditionalFormattingRequest({
+    name: "Book1.xlsx",
+    sheetName: "Sheet1",
+    index: 0,
+    folder: "MyFolder",
+    storageName: null
+});
 
+apiInstance.deleteWorksheetConditionalFormatting(request)
+    .then(() => console.log('Koşullu biçimlendirme silindi.'))
+    .catch(err => console.error(err));
+```
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-RemoveConditionalFormatting-1.js" >}}
+### Python
 
-{{< /tab >}}
+```python
+from asposecellscloud import ConditionalFormattingsApi, DeleteWorksheetConditionalFormattingRequest, ApiClient
 
-{{< tab tabNum="6" >}}
+api_client = ApiClient(client_id="<your_client_id>", client_secret="<your_client_secret>")
+api = ConditionalFormattingsApi(api_client)
 
+request = DeleteWorksheetConditionalFormattingRequest(
+    name="Book1.xlsx",
+    sheetName="Sheet1",
+    index=0,
+    folder="MyFolder",
+    storageName=None
+)
 
+api.delete_worksheet_conditional_formatting(request)
+print("Koşullu biçimlendirme kaldırıldı.")
+```
 
-{{< /tab >}}
+*(Ruby, Go, Perl ve Swift için ek SDK kod parçacıkları [GitHub deposunda](https://github.com/aspose-cells-cloud) mevcuttur.)*
 
-{{< tab tabNum="7" >}}
+## Ayrıca Bakınız
+- **Kimlik Doğrulama Kılavuzu** – [JWT belirteci tabanlı kimlik doğrulama](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
+- **OpenAPI Specification** – Bu uç nokta için ayrıntılı şema (yeni sekmede açılır)  
+  `<a href="https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormatting" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a>`  
+- **Koşullu Biçimlendirme Genel Bakışı** – Biçimlendirme kurallarını nasıl oluşturabileceğinizi, güncelleyebileceğinizi ve listeleyebileceğinizi öğrenin.  
+- **Aspose.Cells Cloud SDK'ları** – Desteklenen tüm dillerin tam listesi [GitHub deposunda](https://github.com/aspose-cells-cloud).  
 
+---  
 
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-
-
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
-
-
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-RemoveConditionalFormatting-1.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="10" >}}
-
-{{< gist "aspose-cells-cloud-gists" "fa6aed4b68d309d8de12d91ff7c0111d" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+*Bu sayfa, standart Aspose.Cells Cloud API dokümantasyon şablonunu takip eder, Gereksinimler bölümünü içerir ve erişilebilirlik ve SEO en iyi uygulamalarına uygundur.*

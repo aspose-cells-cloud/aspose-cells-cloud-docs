@@ -1,76 +1,94 @@
-﻿---
-title: Mostrar filas en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Desoculto
-type: docs
-url: /es/rows/unhide/
-aliases: [/unhide-rows-in-excel-worksheet/]
-keywords: Unhide rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API permite mostrar filas ocultas en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 50
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Mostrar filas en una hoja de cálculo Excel
 ---
-Este REST API indica mostrar filas en una hoja de cálculo Excel.
+title: "Mostrar filas en una hoja de cálculo de Excel"
+second_title: "Documentos"
+linktype: "Mostrar"
+type: docs
+url: /rows/unhide/
+aliases: [/unhide-rows-in-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, mostrar filas, API REST, hoja de cálculo, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
+description: "Utilice la API REST de Aspose.Cells Cloud para mostrar filas en una hoja de cálculo de Excel. La API está disponible a través de múltiples SDK, como .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl y Swift."
+weight: 50
+ArticleTitle: "Mostrar filas en una hoja de cálculo de Excel mediante la API de Aspose.Cells Cloud"
+---
 
-## RSET API
+Esta API REST muestra filas en una hoja de cálculo de Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide
- 
+**Requisitos previos:** Obtenga un token de acceso JWT válido del servicio de autenticación de Aspose Cloud y asegúrese de que el libro de trabajo objetivo esté cargado en un almacenamiento compatible antes de invocar este punto de conexión.
+
+## API PostUnhideWorksheetRows
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide
 ```
 
-Los parámetros de la solicitud son:
+### **Seguridad y autenticación**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| El nombre del libro de trabajo.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| fila de salida| entero| consulta| El índice de la fila inicial que se va a operar.|
-| totalFilas| entero| consulta| Número de filas a operar.|
-| altura| número| consulta|15.0 |
-| carpeta| cadena| consulta| La carpeta de documentos.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+### **Parámetros de solicitud**
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+| Nombre del parámetro | Tipo    | Ubicación | Descripción                                           |
+|----------------------|---------|-----------|-------------------------------------------------------|
+| name                 | string  | path      | Nombre del libro de trabajo.                         |
+| sheetName            | string  | path      | Nombre de la hoja de cálculo.                        |
+| startrow             | integer | query     | Índice en base cero de la primera fila a mostrar.    |
+| totalRows            | integer | query     | Número de filas a mostrar.                           |
+| height               | number  | query     | Altura de la fila (por defecto: 15.0).               |
+| folder               | string  | query     | Carpeta del documento.                               |
+| storageName          | string  | query     | Nombre del almacenamiento.                           |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La <a href="https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows" rel="noopener noreferrer">Especificación OpenAPI</a> define una interfaz de programación públicamente accesible y permite realizar interacciones REST directamente desde un navegador web.
+
+**Autenticación**  
+Todas las solicitudes deben autenticarse mediante un token de acceso JWT obtenido del servicio de autenticación de Aspose Cloud. Incluya el token en el encabezado `Authorization: Bearer <jwt token>`.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube mediante cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/unhide?startrow=1&totalRows=1&height=15" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+ -X POST \
+ -H "Content-Type: application/json" \
+ -H "Accept: application/json" \
+ -H "Authorization: Bearer <jwt token>"
+# Nota: El cuerpo de la solicitud POST está vacío para este punto de conexión.
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                                  |
+|--------|-----------------------------|--------------------------------------------------------------|
+| 200    | OK                          | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros faltantes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT no válido o faltante.                              |
+| 413    | Carga útil demasiado grande | El archivo cargado supera el límite de tamaño.              |
+| 500    | Error interno del servidor  | Error inesperado en el servidor.                             |
+
+Para solucionar problemas detalladamente, consulte la [guía de manejo de errores](/error-handling/).
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel, lo que le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,6 +141,7 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -174,3 +193,4 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

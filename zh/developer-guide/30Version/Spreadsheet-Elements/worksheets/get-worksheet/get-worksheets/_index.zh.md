@@ -1,102 +1,75 @@
-﻿---
-title: 获取工作表
-second_title: Documen
-linktitle: 铝
-type: docs
-url: /zh/worksheets/get-all/
-aliases: [/get-worksheet-count/]
-keywords: Get worksheets description from an Excel workbook
-description: Aspose.Cells Cloud REST API 支持从 Excel 工作簿获取工作表描述。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 10
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 获取工作表
 ---
-此 REST API 表示 `get worksheets information`。
+title: "获取所有工作表"
+second_title: "文档"
+linktitle: "全部"
+type: docs
+url: /worksheets/get-all/
+aliases: [/get-worksheet-count/]
+keywords: "Aspose.Cells, 云 API, 获取工作表, Excel, REST, SDK"
+description: "通过 Aspose.Cells Cloud REST API（v3.0）检索 Excel 工作簿中的工作表列表。包含 cURL 示例、SDK 代码片段及响应格式说明。"
+weight: 10
+---
 
-## 重新设置 API
+此 REST API 返回工作簿中包含的工作表信息。
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 ```
 
-请求参数为：
+### **请求参数**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
+| 参数名称       | 类型   | 位置   | 描述                         |
+| -------------- | ------ | ------ | ---------------------------- |
+| name           | string | path   | Excel 文档的名称。           |
+| folder         | string | query  | 包含该文档的文件夹。         |
+| storageName    | string | query  | 要使用的存储空间的名称。     |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) 定义了一个公开可访问的编程接口，允许您直接通过网页浏览器发起 REST 请求。
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+您可以使用 cURL 命令行工具访问 Aspose.Cells Cloud 服务。以下示例展示了获取工作表列表的 GET 请求：
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Worksheets": {
-
     "WorksheetList": [
-
       {
-
         "link": {
-
           "Href": "/Sheet1",
-
           "Rel": "self"
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/Sheet2",
-
           "Rel": "self"
-
         }
-
       }
-
     ],
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets",
       "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
 ```
 
@@ -104,11 +77,31 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+## 错误处理
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+此端点返回的典型 HTTP 状态码如下：
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+| 状态码 | 含义         | 描述                         |
+| ------ | ------------ | ---------------------------- |
+| 400  | 请求错误     | 缺少必需参数（如 `name`）。  |
+| 401  | 未授权       | JWT 令牌无效或缺失。         |
+| 404  | 未找到       | 指定的工作簿不存在。         |
+| 500  | 服务器内部错误 | 服务器出现意外状况。         |
+
+错误响应以 JSON 格式返回，例如：
+
+```json
+{
+  "Code": "401",
+  "Message": "Invalid access token."
+}
+```
+
+## 云 SDK 家族
+
+使用 SDK 是加快开发速度的最佳方式。SDK 将处理底层细节，让您专注于项目任务。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

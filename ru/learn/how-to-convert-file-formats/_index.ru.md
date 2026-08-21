@@ -1,166 +1,190 @@
-﻿---
-title: Как конвертировать форматы файлов электронных таблиц с помощью Aspose.Cells Clou
-linktitle: Как преобразовать формат файла электронной таблицы
+---
+title: "Как конвертировать форматы файлов электронных таблиц с помощью Aspose.Cells Cloud"
+linktitle: "Как конвертировать форматы файлов электронных таблиц"
 type: docs
 url: /ru/how-to-convert-file-formats
-description: Как конвертировать форматы файлов с помощью Aspose.Cells Cloud
+description: "Как конвертировать форматы файлов с помощью Aspose.Cells Cloud."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Как преобразовать форматы файлов через Aspose.Cells Cloud
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, JSON, Markdown, как конвертировать форматы файлов с помощью Aspose.Cells Cloud
 ---
+
 ## Введение
 
-Облачная таблица Aspose.Cells. API предоставляет набор двухканальных интерфейсов для преобразования локальных и облачных файлов электронных таблиц. Поддерживает такие форматы, как Excel (XLS, XLSX), CSV, HTML и PDF, что упрощает преобразование для различных задач.
+API облачных электронных таблиц Aspose.Cells Cloud предоставляет набор двунаправленных интерфейсов для конвертации локальных и облачных файлов электронных таблиц. Поддерживаются форматы, такие как Excel (XLS, XLSX), CSV, HTML и PDF, что обеспечивает простоту конвертации для удовлетворения различных потребностей.
 
-### Три режима преобразования · Унифицированная объектная модель · Полный охват форматов
+### Три режима конвертации · Единая объектная модель · Полный охват форматов
 
-![Режимы преобразования](image.png)
+![Режимы конвертации](image.png)
 
-## **Основная матрица преобразования**
+## **Основная матрица конвертации**
 
-| Тип преобразования| Уровень объекта| Типичный API| Выходные форматы|
-|-----------------|-------------|---------------------------|--------------------------|
-|**Локальное преобразование**  | Рабочая тетрадь|`ConvertSpreadsheet`            | PDF/XLSX/JSON/.... 30+ форматов|
-|| Рабочий лист|`ConvertWorksheetToImage`       |PNG/JPEG/SVG                   |
-|||`ConvertWorksheetToPdf`         | PDF-файл|
-|| Стол|`ConvertTableToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertTableToPdf`             | PDF-файл|
-|||`ConvertTableToCsv`             | CSV-файл|
-|||`ConvertTableToHtml`            | HTML-код|
-|||`ConvertTableToJson`            | HTML-код|
-|| Диапазон|`ConvertRangeToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertRangeToPdf`             | PDF-файл|
-|||`ConvertRangeToCsv`             | CSV-файл|
-|||`ConvertRangeToHtml`            | HTML-код|
-|||`ConvertRangeToJson`            | JSON|
-||Диаграмма|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertChartToPdf`             |PDF                            |
-|**Облачное преобразование**  | Рабочая тетрадь|`ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... 30+ форматов|
-|| Рабочий лист|`ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... 30+ форматов|
-|| Стол|`ExportTableAsFormat`           | PDF/XLSX/JSON/.... 30+ форматов|
-|| Диапазон|`ExportRangeAsFormat`           | PDF/XLSX/JSON/.... 30+ форматов|
-||Диаграмма|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... 30+ форматов|
-|**Сохранить как в облаке**     | Рабочая тетрадь|`SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... 30+ форматов|
+| Тип конвертации       | Уровень объекта   | Типовой API                     | Выходные форматы              |
+|-----------------------|-------------------|---------------------------------|--------------------------------|
+| **Локальная конвертация** | Workbook          | `ConvertSpreadsheet`            | PDF/XLSX/JSON/.... более 30 форматов |
+|                       | Worksheet         | `ConvertWorksheetToImage`       | PNG/JPEG/SVG                   |
+|                       |                   | `ConvertWorksheetToPdf`         | PDF                            |
+|                       | Table             | `ConvertTableToImage`           | PNG/JPEG/SVG/....              |
+|                       |                   | `ConvertTableToPdf`             | PDF                            |
+|                       |                   | `ConvertTableToCsv`             | CSV                            |
+|                       |                   | `ConvertTableToHtml`            | HTML                           |
+|                       |                   | `ConvertTableToJson`            | JSON                           |
+|                       | Range             | `ConvertRangeToImage`           | PNG/JPEG/SVG/....              |
+|                       |                   | `ConvertRangeToPdf`             | PDF                            |
+|                       |                   | `ConvertRangeToCsv`             | CSV                            |
+|                       |                   | `ConvertRangeToHtml`            | HTML                           |
+|                       |                   | `ConvertRangeToJson`            | JSON                           |
+|                       | Chart             | `ConvertChartToImage`           | PNG/JPEG/SVG/....              |
+|                       |                   | `ConvertChartToPdf`             | PDF                            |
+| **Облачная конвертация** | Workbook          | `ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... более 30 форматов |
+|                       | Worksheet         | `ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... более 30 форматов |
+|                       | Table             | `ExportTableAsFormat`           | PDF/XLSX/JSON/.... более 30 форматов |
+|                       | Range             | `ExportRangeAsFormat`           | PDF/XLSX/JSON/.... более 30 форматов |
+|                       | Chart             | `ExportChartAsFormat`           | PDF/XLSX/JSON/.... более 30 форматов |
+| **Облачное сохранение как** | Workbook          | `SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... более 30 форматов |
 
-### **Локальное преобразование файлов**
+### **Конвертация локальных файлов**
 
 ```csharp
-// Get Cells Cloud API client
-CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
+// Получить клиент API Aspose.Cells Cloud
+CellsApi cellsApi = new CellsApi(
+    Environment.GetEnvironmentVariable("ProductClientId"), 
+    Environment.GetEnvironmentVariable("ProductClientSecret")
+);
 ```
 
-- **Excel Преобразование файлов**
+- **Конвертация файла Excel**
 
 ```c#
-// Convert local Excel to PDF
-cellsApi.ConvertSpreadsheet(new ConvertSpreadsheetRequest { Spreadsheet = "EmployeeSalesSummary.xlsx", format = "pdf" }, "EmployeeSalesSummary.pdf");
+// Конвертировать локальный Excel в PDF
+cellsApi.ConvertSpreadsheet(
+    new ConvertSpreadsheetRequest { 
+        Spreadsheet = "EmployeeSalesSummary.xlsx", 
+        format = "pdf" 
+    }, 
+    "EmployeeSalesSummary.pdf"
+);
 ```
 
-- **Конвертировать диаграмму Excel в файл SVG**
+- **Конвертация диаграммы Excel в SVG-файл**
 
 ```c#
-// Convert local Excel Chart to Svg
-cellsApi.ConvertChartToImage(new SDK.Request.ConvertChartToImageRequest
-{
-    Spreadsheet = "EmployeeSalesSummary.xlsx",
-    worksheet = "Sales",
-    chartIndex = 0,
-    format = "svg"
-}, "EmployeeSalesSummary.svg");
-
+// Конвертировать локальную диаграмму Excel в SVG
+cellsApi.ConvertChartToImage(
+    new SDK.Request.ConvertChartToImageRequest
+    {
+        Spreadsheet = "EmployeeSalesSummary.xlsx",
+        worksheet = "Sales",
+        chartIndex = 0,
+        format = "svg"
+    }, 
+    "EmployeeSalesSummary.svg"
+);
 ```
 
-- **Преобразовать таблицу в CSV-файл**
+- **Конвертация таблицы в CSV-файл**
 
-```C#
-# Convert the sale logs table of the Sales worksheet to csv
-result = api.ConvertTableToCsv( new SDK.Request.ConvertTableToCsvRequest
-{
-    Spreadsheet = "EmployeeSalesSummary.xlsx",
-    worksheet = "Sales",
-    tableName = "SaleLogs",
-    format = "csv"
-}, "EmployeeSalesLog.csv");
-
+```c#
+// Конвертировать таблицу журнала продаж листа Sales в CSV
+var result = api.ConvertTableToCsv(
+    new SDK.Request.ConvertTableToCsvRequest
+    {
+        Spreadsheet = "EmployeeSalesSummary.xlsx",
+        worksheet = "Sales",
+        tableName = "SaleLogs",
+        format = "csv"
+    }, 
+    "EmployeeSalesLog.csv"
+);
 ```
 
 ### **Конвертация облачных файлов**
 
-Также необходимо получить клиент Aspose Cells Cloud API.
+Также требуется получить клиент API Aspose.Cells Cloud.
 
 ```csharp
-// Get Cells Cloud API client
-CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
+// Получить клиент API Aspose.Cells Cloud
+CellsApi cellsApi = new CellsApi(
+    Environment.GetEnvironmentVariable("ProductClientId"), 
+    Environment.GetEnvironmentVariable("ProductClientSecret")
+);
 ```
 
-- **Преобразовать Excel в PDF**
+- **Конвертация Excel в PDF**
 
 ```csharp
-// Convert cloud Excel to PDF, Save to local file
-cellsApi.ExportSpreadsheetAsFormat( new SDK.Request.ExportSpreadsheetAsFormatRequest 
-{ 
-    name = "EmployeeSalesSummary.xlsx" ,
-    format = "pdf",
-    folder ="NetSDKData" 
-} , "EmployeeSalesSummary.pdf");   
+// Конвертировать облачный Excel в PDF и сохранить в локальный файл
+cellsApi.ExportSpreadsheetAsFormat(
+    new SDK.Request.ExportSpreadsheetAsFormatRequest 
+    { 
+        name = "EmployeeSalesSummary.xlsx",
+        format = "pdf",
+        folder = "NetSDKData" 
+    }, 
+    "EmployeeSalesSummary.pdf"
+);
 ```
 
-- **Конвертировать рабочий лист Excel в PDF**
+- **Конвертация листа Excel в PDF**
 
 ```csharp
-// Convert cloud Excel worksheet to PDF, Save to local file
-cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
-{ 
-    name = "EmployeeSalesSummary.xlsx",
-    worksheet = "Sales",
-    format = "pdf",
-    folder ="NetSDKData" 
-} , "EmployeeSalesSummary_Sales.pdf");   
+// Конвертировать облачный лист Excel в PDF и сохранить в локальный файл
+cellsApi.ExportWorksheetAsFormat(
+    new SDK.Request.ExportWorksheetAsFormatRequest 
+    { 
+        name = "EmployeeSalesSummary.xlsx",
+        worksheet = "Sales",
+        format = "pdf",
+        folder = "NetSDKData" 
+    }, 
+    "EmployeeSalesSummary_Sales.pdf"
+);
 ```
 
 ```csharp
-// Convert cloud Excel worksheet to PDF, Save to local file
-cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
-{ 
-    name = "EmployeeSalesSummary.xlsx",
-    worksheet = "Sales",
-    format = "pdf",
-    folder ="NetSDKData" 
-} , "EmployeeSalesSummary_Sales.pdf");   
+// Конвертировать облачный лист Excel в PDF и сохранить в локальный файл
+cellsApi.ExportWorksheetAsFormat(
+    new SDK.Request.ExportWorksheetAsFormatRequest 
+    { 
+        name = "EmployeeSalesSummary.xlsx",
+        worksheet = "Sales",
+        format = "pdf",
+        folder = "NetSDKData" 
+    }, 
+    "EmployeeSalesSummary_Sales.pdf"
+);
 ```
 
-## Установка и инициализация Cloud SDK Aspose.Cells
+## Установка и инициализация SDK Aspose.Cells Cloud
 
-Установите пакет Aspose.Cells-Cloud NuGet в свой проект .NET, вы можете использовать консоль менеджера пакетов NuGet или менеджер пакетов NuGet в Visual Studio.
-Вот как можно установить пакет с помощью консоли менеджера пакетов:
+Установите пакет Aspose.Cells-Cloud NuGet в вашем .NET-проекте. Это можно сделать с помощью консоли диспетчера пакетов NuGet или диспетчера пакетов NuGet в Visual Studio. Ниже приведен пример установки пакета через консоль диспетчера пакетов:
 
-```Powershell
-
+```powershell
 Install-Package Aspose.Cells-Cloud
-
 ```
 
-Создаёт новый экземпляр класса CellsApi, инициализируя его вашим идентификатором клиента и секретным ключом клиента. Ниже приведены подробности вышеупомянутого фрагмента кода:
+Создайте новый экземпляр класса CellsApi, инициализируя его идентификатором клиента и секретом клиента. Ниже приведены детали вышеуказанного фрагмента кода:
 
 ```CSharp
-
 CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
-
 ```
 
-Обязательно замените ВАШ_API_КЛЮЧ, ВАШ_ПРИЛОЖЕНИЕ_SID и ВАШ_ПРИЛОЖЕНИЕ_KEY с вашим реальным ключом API, SID приложения и ключом приложения.
+Убедитесь, что вы заменили YOUR_API_KEY, YOUR_APP_SID и YOUR_APP_KEY на ваш фактический ключ API, идентификатор приложения и ключ приложения.
 
-## **Примеры использования преобразования форматов файлов**
+## **Примеры использования конвертации форматов файлов**
 
- Aspose Cells Облако API обеспечивает корпоративный уровень**преобразование электронных таблиц** возможности для критических бизнес-сценариев:
+API Aspose.Cells Cloud предоставляет возможности **конвертации электронных таблиц** корпоративного уровня для решения критически важных бизнес-задач:
 
 1. **Excel → PDF**  
- Создавайте готовые к печати отчеты с сохраненным форматированием
+   Генерация готовых к печати отчётов с сохранением форматирования  
 2. **Электронные таблицы → HTML**  
- Встраивайте интерактивные таблицы в веб-приложения
+   Встраивание интерактивных таблиц в веб-приложения  
 3. **CSV → Excel (XLSX)**  
- Преобразуйте необработанные данные в пригодные для анализа рабочие книги
-4. **Транскодирование в пользовательском формате**  
- Конвертируйте между более чем 20 форматами (XLS, XLSB, ODS, FODS, TSV)
-![Преобразование из входных форматов в выходные форматы](image-1.png)
+   Преобразование необработанных данных в анализируемые рабочие книги  
+4. **Пользовательская транскодировка форматов**  
+   Конвертация между более чем 20 форматами (XLS, XLSB, ODS, FODS, TSV)  
 
-## **Заключение: оптимизируйте конверсии с помощью одного звонка API**
+![Преобразование входных форматов в выходные форматы](image-1.png)
+
+## **Заключение: Упростите конвертацию с помощью одного вызова API**  
+
+---

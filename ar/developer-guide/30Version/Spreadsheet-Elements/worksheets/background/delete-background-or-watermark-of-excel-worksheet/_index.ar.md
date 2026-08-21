@@ -1,73 +1,81 @@
-﻿---
-title: حذف الخلفية في ورقة العمل Excel
-second_title: Documen
-linktitle: حذف
-type: docs
-url: /ar/worksheets/background/delete/
-aliases: [/delete-background-or-watermark-of-excel-worksheet/]
-keywords: Delete background on an Excel worksheet
-description: يدعم Cloud REST حذف الخلفية في ورقة عمل Aspose.Cells. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 210
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حذف الخلفية في ورقة عمل Excel
 ---
-يشير هذا REST API إلى `delete worksheet background image`.
+title: "حذف الخلفية من ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "حذف"
+type: docs
+url: /worksheets/background/delete/
+aliases: [/delete-background-or-watermark-of-excel-worksheet/]
+keywords: "Aspose.Cells Cloud، حذف خلفية ورقة العمل، Excel، REST API، SDK، C#، Java، PHP، Ruby، Node.js، Python، Perl، Go"
+description: "استخدم Aspose.Cells Cloud REST API لحذف صورة الخلفية من ورقة عمل Excel. تتوفر SDKs لـ C#، Java، PHP، Ruby، Node.js، Python، Perl، و Go."
+weight: 210
+ArticleTitle: "حذف الخلفية من ورقة عمل Excel باستخدام Aspose.Cells Cloud API"
+---
 
-## RSET API
+يقوم هذا الـ REST API بحذف صورة الخلفية من ورقة عمل.
+
+**المتطلبات المسبقة:** يجب أن يكون الملف المصنف مخزنًا في مساحة تخزين Aspose Cloud، وأن تمتلك رمز وصول JWT صالحًا للمصادقة.
+
+## REST API
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
 ```
 
-معلمات الطلب هي:
+### **معلمة الطلب**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعلمة | النوع | الموقع | الوصف |
+| ------------ | ------ | -------- | ------------------------------------------------------ |
+| name | string | path | اسم ملف Excel. |
+| sheetName | string | path | اسم ورقة العمل التي سيتم حذف خلفيتها. |
+| folder | string | query | المجلد في مساحة التخزين حيث يقع الملف. |
+| storageName | string | query | اسم مساحة التخزين (إذا لم تكن مساحة التخزين الافتراضية). |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground) واجهة برمجة تطبيقات عامة قابلة للوصول، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة cURL سطر الأوامر للوصول إلى خدمات Aspose.Cells بسهولة. تتطلب جميع الطلبات رمز JWT صالحًا. احصل على الرمز عبر نقطة نهاية رمز OAuth2 كما هو موصوف في دليل المصادقة.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/WorkSheetBackground_Sample_Test_Book.xls/worksheets/Sheet1/background" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/WorkSheetBackground_Sample_Test_Book.xls/worksheets/Sheet1/background" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**كودات حالة HTTP**
+
+| الكود | المعنى | الوصف |
+|------|-----------------------------|--------------------------------------------------|
+| 200 | OK | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | Bad Request | معلمات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401 | Unauthorized | رمز JWT غير صالح أو مفقود. |
+| 413 | Payload Too Large | حجم الملف المرفوع يتجاوز الحد المسموح به. |
+| 500 | Internal Server Error | خطأ داخلي غير متوقع في الخادم. |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## عائلة SDK للسحابة
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. يتعامل الـ SDK مع التفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية إجراء مكالمات إلى خدمات Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

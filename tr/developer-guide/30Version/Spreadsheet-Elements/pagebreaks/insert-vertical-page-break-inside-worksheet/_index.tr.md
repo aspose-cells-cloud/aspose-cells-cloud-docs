@@ -1,78 +1,79 @@
-﻿---
-title: Dikey sayfa sonu ekle
-second_title: Documen
-linktitle: Dikey sayfa sonu ekle
-type: docs
-url: /tr/page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
-keywords: Add a page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasına sayfa sonu eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 40
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Dikey sayfa sonu ekle
 ---
-Bu REST API dikey sayfa sonu eklenmesi gerektiğini belirtir.
+title: "Dikey Sayfa Sonrası Ekle"
+second_title: "Belge"
+linktype: "Dikey Sayfa Sonrası Ekle"
+type: docs
+url: /page-breaks/add-vertical-page-break/
+aliases: [/insert-vertical-page-break-inside-worksheet/]
+keywords: "Aspose.Cells Cloud, dikey sayfa sonrası, REST API, Excel, SDK, cURL"
+description: "Aspose.Cells Cloud REST API (v3.0) kullanarak bir Excel çalışma sayfasına dikey sayfa sonrası nasıl ekleneceğini öğrenin. İstek söz dizimi, cURL örneği, SDK örnekleri, kimlik doğrulama kılavuzu ve hata işleme ayrıntılarını içerir."
+weight: 40
+ArticleTitle: "Dikey Sayfa Sonrası Ekle – Aspose.Cells Cloud API"
+---
 
-## RSET API
+Bu REST API, bir çalışma sayfasına dikey sayfa sonrası ekler.
+
+## Güvenlik ve Kimlik Doğrulama
+Aspose.Cells Cloud API'leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulamaya](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) gerek duyar.
+
+## REST API
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
 ```
 
-İstek parametreleri şunlardır:
+### İstek Parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| hücre adı| sicim| sorgu||
-| kolon| tam sayı| sorgu||
-| sıra| tam sayı| sorgu||
-| başlangıç satırı| tam sayı| sorgu||
-| endRow| tam sayı| sorgu||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı | Tür      | Konum  | Açıklama                                                                 |
+| ------------- | -------- | ------ | ------------------------------------------------------------------------ |
+| name          | string   | path   | Excel çalışma kitabının adı.                                             |
+| sheetName     | string   | path   | Sayfa sonrasının ekleneceği çalışma sayfasının adı.                      |
+| cellname      | string   | query  | Sayfa sonrası konumunu belirleyen hücre başvurusu (örn. **A1**).         |
+| column        | integer  | query  | Sayfa sonrasının başladığı sütunun sıfır tabanlı indeksi.               |
+| row           | integer  | query  | Sayfa sonrasının başladığı satırın sıfır tabanlı indeksi.               |
+| startRow      | integer  | query  | Sayfa sonrası aralığının ilk satırı.                                     |
+| endRow        | integer  | query  | Sayfa sonrası aralığının son satırı.                                     |
+| folder        | string   | query  | Çalışma kitabının bulunduğu depolama alanındaki klasör yolu.             |
+| storageName   | string   | query  | Depolama hizmetinin adı.                                                |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+**Gerekli parametreler** – `cellname` **veya** `column` parametrelerinden biri sağlanmalıdır. `column` kullanıldığında, bir aralık tanımlamak için `row`, `startRow` ve `endRow` parametrelerini de sağlayabilirsiniz. Diğer tüm alanlar isteğe bağlıdır.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
+### cURL Örneği
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks?column=9" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/SampleBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks?column=9" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
+#### Yanıt
 
-{{< tab tabNum="2" >}}
-
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
-{{< /tab >}}
+**HTTP Durum Kodları**
 
-{{< /tabs >}}
+| Kod | Anlam                       | Açıklama                                                    |
+|-----|-----------------------------|-------------------------------------------------------------|
+| 200 | OK                          | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request                 | Eksik veya geçersiz parametreler (örn. desteklenmeyen dosya türü). |
+| 401 | Unauthorized                | Geçersiz veya eksik JWT belirteci.                          |
+| 413 | Payload Too Large           | Yüklenen dosya boyut sınırını aşıyor.                       |
+| 500 | Internal Server Error       | Beklenmeyen sunucu hatası.                                  |
 
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme hızını en hızlı şekilde artıracak en iyi yoldur. Bir SDK, düşük seviye ayrıntıları yönetir ve size proje görevlerinize odaklanma imkanı sunar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK’ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -125,3 +126,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

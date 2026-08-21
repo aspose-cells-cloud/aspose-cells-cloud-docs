@@ -1,52 +1,60 @@
-﻿---
-title: Excel dosyasında bir resim alın
-second_title: Documen
-linktitle: Ge
-type: docs
-url: /tr/pictures/get/
-aliases: [/convert-picture-to-image/]
-keywords: Get a picture in an Excel file
-description: Aspose.Cells Cloud REST API, Excel dosyasından resim almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel dosyasında resim alma
 ---
-Bu REST API, Excel çalışma sayfasından `get` resim resim indeksini gösterir.
+title: "Aspose.Cells Cloud API – Çalışma Sayfasından Resim Alma"
+second_title: "Belge"
+linktitle: "Al"
+type: docs
+url: /pictures/get/
+aliases: [/convert-picture-to-image/]
+keywords: "Aspose.Cells, Resim Al, API, Excel, Bulut, REST"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından belirli bir resmi alın. Uç nokta, parametreler, kimlik doğrulama adımları, yanıt kodları ve kod örneklerini içerir."
+weight: 10
+ArticleTitle: "Aspose.Cells Cloud API – Çalışma Sayfasından Resim Alma"
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasından sıfır tabanlı indeksine göre bir resmi alır.
+
+## REST API
+
+Bu uç noktayı çağırmak için **Authorization** başlığına geçerli bir JWT erişim belirteci eklemeniz gerekir. Belirteçler, Aspose.Cells Cloud kimlik doğrulama akışı aracılığıyla elde edilir ve dosya erişimi için uygun kapsamlara sahip olmak gerekir. Belirteç alma hakkında ayrıntılı bilgi için genel **Kimlik Doğrulama** kılavuzuna bakın.
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-İstek parametreleri şunlardır:
+### İstek Parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| resimIndeksi| tam sayı| yol| Resim dizini.|
-| biçim| sicim| sorgu| Dışa aktarılan nesne biçimi.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı | Tür      | Konum | Açıklama                                                                                                             |
+| ------------- | -------- | ----- | -------------------------------------------------------------------------------------------------------------------- |
+| name          | string   | path  | Excel belgesinin adı.                                                                                                |
+| sheetName     | string   | path  | Çalışma sayfasının adı.                                                                                              |
+| pictureIndex  | integer  | path  | Resmin sıfır tabanlı indeksi.                                                                                        |
+| format        | string   | query | İstenen dışa aktarma formatı (örneğin, png, jpg, bmp, gif, tiff). Belirtilmezse, resim orijinal formatında döndürülür. |
+| folder        | string   | query | Belgeyi içeren klasör.                                                                                               |
+| storageName   | string   | query | Depolama konumunun adı.                                                                                              |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPicture) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### Hata Yanıtları
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| HTTP Kodu | Açıklama                                                                      |
+| --------- | ----------------------------------------------------------------------------- |
+| 401       | Yetkisiz – eksik veya geçersiz belirteç.                                      |
+| 404       | Bulunamadı – belirtilen dosya, çalışma sayfası veya sayfa sonu indeksi mevcut değil. |
+| 400       | Geçersiz İstek – hatalı istek sözdizimi veya geçersiz parametreler.           |
+| 500       | İç Sunucu Hatası – beklenmeyen bir koşulla karşılaşıldı.                       |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPicture), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sinin nasıl çağrılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1?format=png" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -54,20 +62,20 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 {{< tab tabNum="2" >}}
 
 ```bash
-
-<IMAGE DATA> 
-
+# Yanıt gövdesinde döndürülen ikili resim verisi (PNG).
+# Örnek: base64 ile kodlanmış alıntı
+iVBORw0KGgoAAAANSUhEUgAA...
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+## Bulut SDK Geliştirme Kiti
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirmenin en hızlı yoludur. Bir SDK, düşük seviye ayrıntıları işler ve projenize odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’ları kullanarak Aspose.Cells web hizmetlerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -91,31 +99,31 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetPictureWithFormat.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "ExampleGetWorksheetPictureWithFormat.rb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetPictureWithFormat.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "ExampleGetWorksheetPictureWithFormat.ts" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetPictureWithFormat.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "ExampleGetWorksheetPictureWithFormat.py" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetPictureWithFormat.pl" >}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "ExampleGetWorksheetPictureWithFormat.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetPictureWithFormat.go" >}}
+{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "ExampleGetWorksheetPictureWithFormat.go" >}}
 
 {{< /tab >}}
 

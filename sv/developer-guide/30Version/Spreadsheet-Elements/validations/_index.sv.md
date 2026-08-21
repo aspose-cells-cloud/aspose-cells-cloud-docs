@@ -1,25 +1,38 @@
-﻿---
-title: Arbetar med Excel-validering
-second_title: Documen
-linktitle: Godkännande
+---
+title: "Arbeta med Excel-datavalidering"
+second_title: "Dokument"
+linktitle: "Valideringar"
 type: docs
 url: /sv/validations/
-keywords: Working with validations on an Excel file
-description: Aspose.Cells Cloud REST API stöder arbete med valideringar på en Excel-fil. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+keywords: "Excel-datavalidering, Aspose.Cells Cloud, REST API, kalkylark, Office i molnet"
+description: "Lär dig hur du lägger till, hämtar, uppdaterar, raderar och rensar Excel-datavalideringsregler med Aspose.Cells Cloud REST API. Innehåller exempel för .NET, Java, Python och PHP."
 weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Valideringar
+ArticleTitle: "Arbeta med Excel-datavalidering - Aspose.Cells Cloud API-dokumentation"
 ---
-Datavalidering är en funktion i MS Excel som används för att kontrollera vad en användare kan ange i en cell i ett Excel-ark. Till exempel kan man begränsa poster i ett ark, till exempel ett datumintervall eller endast heltal. Vi kan till och med skapa rullgardinsmenyer, vilket sparar onödigt utrymme och visar värdena i en enda cell. Vi kan också skapa ett anpassat meddelande som visas när användaren infogar felaktiga värden eller ett felaktigt format.
 
-Som ett exempel kan en användare ange ett möte som är schemalagt mellan 9:00 och 18:00.
+Excel-datavalidering är en funktion i Microsoft Excel som används för att styra vad en användare kan ange i en cell i ett kalkylark. Den kan begränsa inmatningar till ett visst datumintervall, enbart heltal eller till och med skapa rullgardinslistor som sparar utrymme och visar värden i en enda cell. Du kan också definiera ett anpassat meddelande som visas när en användare anger ett felaktigt värde eller ett ogiltigt format.
 
-Precis som vi kan använda datavalidering i Excel för att säkerställa att ett värde är ett positivt tal, ett datum mellan 15 och 30, se till att ett datum infaller inom de närmaste 30 dagarna, eller se till att en textinmatning är kortare än 25 tecken etc.
+Exempelvis kan en användare ange ett möte som schemalagt mellan 09:00 och 18:00.
 
-## Arbeta med valideringar på en Excel-fil
+Datavalidering kan användas för att säkerställa att ett värde är ett positivt tal, ett datum mellan den 15:e och den 30:e i en månad, ett datum inom de nästa 30 dagarna eller ett textinlägg med färre än 25 tecken, och så vidare.
 
-- [Hur man lägger till valideringsinformation från ett Excel-arbetsblad.](/cells/sv/validations/delete/)
-- [Hur man hämtar valideringsinformation från ett Excel-arbetsblad.](/cells/sv/validations/get/)
-- [Hur man hämtar all valideringsinformation från ett Excel-arbetsblad.](/cells/sv/validations/get-all/)
-- [Hur man tar bort valideringsinformation från ett Excel-arbetsblad.](/cells/sv/validations/delete/)
-- [Så här rensar du all valideringsinformation från ett Excel-arbetsblad.](/cells/sv/validations/clear/)
-- [Hur man uppdaterar valideringsinformation på ett Excel-arbetsblad.](/cells/sv/validations/update/)
+### API-översikt
+
+| Åtgärd | HTTP-metod | Slutpunkt | Beskrivning |
+|--------|------------|-----------|-------------|
+| Lägg till | POST | `/cells/{file}/worksheets/{sheet}/validations` | Skapa en valideringsregel |
+| Hämta | GET | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Hämta en specifik regel |
+| Hämta alla | GET | `/cells/{file}/worksheets/{sheet}/validations` | Lista alla regler |
+| Uppdatera | PUT | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Ändra en regel |
+| Radera | DELETE | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Ta bort en regel |
+| Rensa | POST | `/cells/{file}/worksheets/{sheet}/validations/clear` | Ta bort alla regler |
+
+## Arbeta med valideringar i en Excel-fil
+
+- [Hur man lägger till en valideringsregel i ett Excel-kalkylark](/cells/validations/add/)
+- [Hur man hämtar en valideringsregel från ett Excel-kalkylark](/cells/validations/get/)
+- [Hur man hämtar alla valideringsregler från ett Excel-kalkylark](/cells/validations/get-all/)
+- [Hur man raderar en valideringsregel från ett Excel-kalkylark](/cells/validations/delete/)
+- [Hur man rensar alla valideringsregler från ett Excel-kalkylark](/cells/validations/clear/)
+- [Hur man uppdaterar en valideringsregel i ett Excel-kalkylark](/cells/validations/update/)
+---

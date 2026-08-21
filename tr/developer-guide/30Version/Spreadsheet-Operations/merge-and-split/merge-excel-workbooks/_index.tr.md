@@ -1,291 +1,317 @@
-﻿---
-title: Excel Çalışma Kitaplarını diğer Excel dosyasına birleştir
-second_title: Documen
-linktitle: Excel dosyasını Excel dosyasına birleştir
-type: docs
-url: /tr/merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
-keywords: Merge an Excel Workbooks into other Excel file
-description: Aspose.Cells Cloud REST API, Excel dosyalarının başka bir Excel dosyasıyla birleştirilmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 50
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel Çalışma Kitaplarını başka bir Excel dosyasına birleştirme
 ---
-Bu REST API, Excel `workbook`'in başka bir Excel çalışma kitabına birleştirilmesini belirtir.
+title: "Bir Excel Çalışma Kitabını Başka Bir Çalışma Kitabına Birleştirin"
+second_title: "Belge"
+linktitle: "Bir Excel çalışma kitabını başka bir çalışma kitabına birleştirin"
+type: docs
+url: /merge-an-excel-file-into-the-excel-file/
+aliases: [/merge-excel-workbooks/, /workbook/merge/]
+keywords: "Excel birleştirme, Aspose.Cells Cloud, çalışma kitab API'si, REST API, elektronik tablo birleştirme, bulut SDK'sı, kimlik doğrulama, mergeWith, cURL örneği"
+description: "Aspose.Cells Cloud REST API (v3.0) kullanarak bir Excel çalışma kitabını başka birine adım adım nasıl birleştireceğinizi gösteren kılavuz. Kimlik doğrulama, gerekli mergeWith parametresi, cURL örneği ve SDK kod snippet'leri içerir."
+ArticleTitle: "Aspose.Cells Cloud API'si Kullanarak Bir Excel Çalışma Kitabını Başka Bir Çalışma Kitabına Birleştirin"
+weight: 50
+---
 
-**Sorgu Parametresi**
+## REST API
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|dosya|sicim|Orijinal çalışma kitabı klasörü.|
-|depolamaAdı|sicim|Depolama adı.|
+Bu REST API, bir Excel **çalışma kitabını** başka bir çalışma kitabına birleştirir.
 
-## DİNLENME API
+```bash
+POST https://api.aspose.cloud/v3.0/cells/{name}/merge
+```
 
-|**API**|**Tip**|**Tanım**|**Swagger Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/{ad}/birleştir|POSTALAMAK|Excel Çalışma Kitaplarını Birleştir|[PostWorkbooksMerge](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge)|
+### **Güvenlik ve Kimlik Doğrulama**
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **Sorgu Parametresi**
+
+| Parametre Adı | Tür   | Açıklama                                                     |
+| -------------- | ------ | ------------------------------------------------------------ |
+| folder         | string | Orijinal çalışma kitabının bulunduğu klasör.                 |
+| storageName    | string | Depo adı.                                                    |
+| **mergeWith**  | string | Hedef çalışma kitabına birleştirilecek çalışma kitabının adı. |
+
+### **Yanıt**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+      "Workbook": {
+    "FileName": "test.xlsx",
+    "Links": [
+      {
+        "Href": "/test.xlsx",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "CSV Olarak İndir",
+        "Type": "text/csv"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "HTML Olarak İndir",
+        "Type": "text/html"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "ODS Olarak İndir",
+        "Type": "application/vnd.oasis.opendocument.spreadsheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "PDF Olarak İndir",
+        "Type": "application/pdf"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Tablo Sınırlı Metin Formatı Olarak İndir",
+        "Type": "text/plain"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "TIFF Olarak İndir",
+        "Type": "image/tiff"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Microsoft Excel 2003 Olarak İndir",
+        "Type": "application/vnd.ms-excel"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Microsoft Excel 2007 Olarak İndir",
+        "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "XPS Olarak İndir",
+        "Type": "application/vnd.ms-xpsdocument"
+      }
+    ],
+    "Worksheets": {
+      "link": {
+        "Href": "/worksheets",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DefaultStyle": {
+      "link": {
+        "Href": "/defaultstyle",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DocumentProperties": {
+      "link": {
+        "Href": "/documentproperties",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Names": {
+      "link": {
+        "Href": "/names",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Settings": {
+      "link": {
+        "Href": "/settings",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "IsWriteProtected": "False",
+    "IsProtected": "False",
+    "IsEncryption": "false",
+    "Password": null
+  }
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                         |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | Tamam                       | Filtre başarıyla uygulandı; yanıt işlem detaylarını içerir. |
+| 400  | Hatalı İstek                | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401  | Yetkisiz                    | Geçersiz veya eksik JWT belirteci. |
+| 413  | Yük Çok Büyük               | Yüklü dosya boyut sınırını aşıyor. |
+| 500  | İç Sunucu Hatası            | Beklenmeyen sunucu hatası. |
+## SDK'lar ile PostWorkbooksMerge API'sini Nasıl Kullanılır
+
+### PostWorkbooksMerge API Özellikleri
+
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge), herkese açık bir programlama arayüzü tanımlar ve API'nin doğrudan bir web tarayıcısından REST etkileşimlerini gerçekleştirmesine olanak tanır.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, gerekli kimlik doğrulama başlığı dahil olmak üzere cURL ile Bulut API'sine nasıl çağrı yapılacağını göstermektedir.
+
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/merge?mergeWith=test2.xlsx" -H "accept: application/json"
-
+```bash
+# test2.xlsx, test.xlsx'e birleştirin
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/merge?mergeWith=test2.xlsx" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access-token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Workbook": {
-
     "FileName": "test.xlsx",
-
     "Links": [
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As CSV",
-
+        "Title": "CSV Olarak İndir",
         "Type": "text/csv"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As HTML",
-
+        "Title": "HTML Olarak İndir",
         "Type": "text/html"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As ODS",
-
+        "Title": "ODS Olarak İndir",
         "Type": "application/vnd.oasis.opendocument.spreadsheet"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As PDF",
-
+        "Title": "PDF Olarak İndir",
         "Type": "application/pdf"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As Table Delimited Text Format",
-
+        "Title": "Tablo Sınırlı Metin Formatı Olarak İndir",
         "Type": "text/plain"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As TIFF",
-
+        "Title": "TIFF Olarak İndir",
         "Type": "image/tiff"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As Microsoft Excel 2003",
-
+        "Title": "Microsoft Excel 2003 Olarak İndir",
         "Type": "application/vnd.ms-excel"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As Microsoft Excel 2007",
-
+        "Title": "Microsoft Excel 2007 Olarak İndir",
         "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As XPS",
-
+        "Title": "XPS Olarak İndir",
         "Type": "application/vnd.ms-xpsdocument"
-
       }
-
     ],
-
     "Worksheets": {
-
       "link": {
-
         "Href": "/worksheets",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "DefaultStyle": {
-
       "link": {
-
         "Href": "/defaultstyle",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "DocumentProperties": {
-
       "link": {
-
         "Href": "/documentproperties",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "Names": {
-
       "link": {
-
         "Href": "/names",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "Settings": {
-
       "link": {
-
         "Href": "/settings",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "IsWriteProtected": "False",
-
     "IsProtected": "False",
-
     "IsEncryption": "false",
-
     "Password": null
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
-
-Response headers
-
-
 ```
+
+Yanıt, birleştirilmiş çalışma kitabına ilişkin meta verileri içeren bir `Workbook` nesnesi döndürür. Bu nesne, sonucun CSV, PDF, HTML vb. gibi çeşitli formatlarda indirilmesi için bağlantıları içerir.
+
+Yanıt başlıkları
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK'larını Kullanın
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme hızını en hızlı yoldan artırmak için en iyi yoldur. Bir SDK, düşük seviyeli ayrıntıları soyutlayarak size proje görevlerinize odaklanma imkanı sunar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -338,3 +364,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

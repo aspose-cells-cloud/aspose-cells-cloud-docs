@@ -1,42 +1,44 @@
-﻿---
-title: So führen Sie mehrere Tabellenkalkulationsdateien mit Aspose.Cells Clou zusammen
-linktitle: So führen Sie mehrere Tabellenkalkulationsdateien zusammen
-type: docs
-url: /de/how-to-merge-multiple-files
-description: So führen Sie mehrere Tabellenkalkulationsdateien mit Aspose.Cells Cloud zusammen
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, So führen Sie mehrere Dateien über Aspose.Cells Cloud zusammen
 ---
+title: "So verschmelzen Sie mehrere Tabellendateien mit Aspose.Cells Cloud"
+linktitle: "So verschmelzen Sie mehrere Tabellendateien"
+type: docs
+url: /how-to-merge-multiple-files
+description: "So verschmelzen Sie mehrere Tabellendateien mit Aspose.Cells Cloud."
+weight: 10
+kwords: Excel, Office Cloud, REST API, Tabellendatei, PDF, CSV, JSON, Markdown, So verschmelzen Sie mehrere Dateien über Aspose.Cells Cloud
+---
+
 ## Einführung
 
-Die Aspose.Cells Cloud API ist eine leistungsstarke Cloud-basierte Lösung zum Erstellen, Bearbeiten und Konvertieren von Tabellenkalkulationsdateien. In diesem Artikel führen wir Sie durch die Verwendung der Aspose.Cells Cloud API für die Zusammenführung von Dateiformaten, einschließlich typischer Anwendungsfälle und Beispielcode.
+Die Aspose.Cells Cloud API ist eine leistungsstarke cloudbasierte Lösung zur Erstellung, Bearbeitung und Konvertierung von Tabellendateien. In diesem Artikel führen wir Sie durch den Prozess zur Verwendung der Aspose.Cells Cloud API zum Verschmelzen von Dateien in verschiedenen Formaten, einschließlich typischer Anwendungsfälle und Beispielcode.
 
-## Überblick
+## Übersicht
 
- Die Aspose.Cells Cloud API bietet robuste APIs zum Zusammenführen mehrerer Tabellenkalkulationsdateien in einer Datei mit verschiedenen Formaten. Zu den unterstützten Formaten gehören**Excel** (XLS, XLSX),**CSV**, **HTML**, **PDF**und mehr. Durch die Nutzung der Aspose.Cells Cloud API können Sie mühelos mehrere Tabellenkalkulationsdateien in einer Datei mit weit verbreiteten Formaten zusammenführen und so eine Vielzahl von Anforderungen erfüllen.
+Die Aspose.Cells Cloud API bietet robuste APIs zum Verschmelzen mehrerer Tabellendateien in eine Datei eines beliebigen unterstützten Formats. Die unterstützten Formate umfassen **Excel** (XLS, XLSX), **CSV**, **HTML**, **PDF** und weitere. Mithilfe der Aspose.Cells Cloud API können Sie mühelos mehrere Tabellendateien in eine Datei in weit verbreiteten Formaten zusammenführen und so einer Vielzahl von Anforderungen gerecht werden.
 
-Für die Dateizusammenführung stehen zahlreiche APIs zur Verfügung, die in der Regel mit verschiedenen Online-Umgebungen kompatibel sind. Nachfolgend finden Sie eine detaillierte Beschreibung dieser APIs:
+Es stehen zahlreiche APIs zum Verschmelzen von Dateien zur Verfügung, die im Allgemeinen mit verschiedenen Online-Umgebungen kompatibel sind. Nachfolgend finden Sie eine detaillierte Beschreibung dieser APIs:
 
-| Funktion| Beschreibung| API Referenz|
-|:------------------------- |:------------------------- |:------------------------- |
-|**[Tabellen zusammenführen](https://docs.aspose.cloud/cells/merge-spreadsheets/)** | Führen Sie lokale Tabellenkalkulationsdateien in eine Datei im angegebenen Format zusammen.|[Tabellenkalkulationen zusammenführen](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets) |
-|**[MergeRemoteSpreadsheet](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)** | Führen Sie Tabellenkalkulationsdateien im Ordner des Cloud-Speichers in eine Datei im angegebenen Format zusammen.|[Remote-Tabelle zusammenführen](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeRemoteSpreadsheet) |
-|**[Tabellen im Remote-Ordner zusammenführen](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)** | Führen Sie Tabellenkalkulationsdateien im Ordner des Cloud-Speichers in eine Datei im angegebenen Format zusammen.|[Tabellenkalkulationen im Remote-Ordner zusammenführen](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder) |
+| Funktion | Beschreibung | API-Referenz |
+| :------------------------- | :------------------------- | :------------------------- |
+| **[MergeSpreadsheets](https://docs.aspose.cloud/cells/merge-spreadsheets/)** | Verschmilzt lokale Tabellendateien in eine Datei eines angegebenen Formats. | [MergeSpreadsheets](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets) |
+| **[MergeRemoteSpreadsheet](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)** | Verschmilzt Tabellendateien in einem Ordner der Cloud-Speicherung in eine Datei eines angegebenen Formats. | [Merge Remote Spreadsheet](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeRemoteSpreadsheet) |
+| **[Merge Spreadsheets In Remote Folder](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)** | Verschmilzt Tabellendateien in einem Ordner der Cloud-Speicherung in eine Datei eines angegebenen Formats. | [Merge Spreadsheets In Remote Folder](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder) |
 
-# So führen Sie mehrere Dateien über die Aspose.Cells Cloud zusammen
+# So verschmelzen Sie mehrere Dateien in eine Datei über Aspose.Cells Cloud
 
- Die Aspose.Cells Cloud API bietet[mehrere SDKs](https://github.com/aspose-cells-cloud)für verschiedene Programmiersprachen. Wählen Sie das SDK, das zu Ihrer bevorzugten Programmiersprache passt, und befolgen Sie die Anweisungen zur Installation und Initialisierung. Alternativ können Sie Ihr eigenes SDK gemäß den[API Referenz](https://reference.aspose.cloud/cells/)In diesem Abschnitt verwenden wir C# als Beispiel, um den Vorgang der Dateizusammenführung detailliert zu erläutern.
+Die Aspose.Cells Cloud API stellt [mehrere SDKs](https://github.com/aspose-cells-cloud) für verschiedene Programmiersprachen bereit. Wählen Sie das SDK aus, das Ihrer bevorzugten Programmiersprache entspricht, und befolgen Sie die zugehörige Dokumentation für Installation und Initialisierung. Alternativ können Sie Ihr eigenes SDK basierend auf der [API-Referenz](https://reference.aspose.cloud/cells/) erstellen. In diesem Abschnitt erläutern wir am Beispiel von C# den Ablauf des Dateiverschmelzens.
 
-## Registrierung und Erhalt des Schlüssels API
+## Registrierung und Beschaffung des API-Schlüssels
 
- Bevor Sie beginnen, müssen Sie[Registrieren Sie ein Aspose Cloud-Konto](https://id.containerize.com/signup) Und[einen API-Schlüssel zur Authentifizierung erhalten](https://dashboard.aspose.cloud/applications). Indem Sie sich auf der offiziellen Aspose Cloud-Website anmelden, können Sie ein kostenloses Konto erstellen und einen API-Schlüssel zur Authentifizierung erhalten.
+Bevor Sie beginnen, müssen Sie ein [Aspose Cloud-Konto registrieren](https://id.containerize.com/signup) und einen [API-Schlüssel für die Authentifizierung abrufen](https://dashboard.aspose.cloud/applications). Nach der Anmeldung auf der offiziellen Aspose Cloud-Website können Sie ein kostenloses Konto erstellen und einen API-Schlüssel für Authentifizierungszwecke erhalten.
 
- Ausführlichere Informationen zu den Vorgängen finden Sie in den folgenden Dokumenten:[Schnellstart mit Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
+Für detailliertere Vorgänge verweisen wir auf folgende Dokumente: [Schnellstart mit Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
 
-## Installieren und Initialisieren des Aspose.Cells Cloud SDK
+## Installation und Initialisierung des Aspose.Cells Cloud SDK
 
-Installieren Sie das Paket Aspose.Cells-Cloud NuGet in Ihrem Projekt .NET. Sie können die Package Manager Console NuGet oder den Package Manager NuGet in Visual Studio verwenden.
-So können Sie das Paket mithilfe der Package Manager-Konsole installieren:
+Installieren Sie das NuGet-Paket „Aspose.Cells-Cloud“ in Ihrem .NET-Projekt. Dazu können Sie die NuGet-Paket-Manager-Konsole oder den NuGet-Paket-Manager in Visual Studio verwenden.
+
+Hier ist, wie Sie das Paket mithilfe der Paket-Manager-Konsole installieren:
 
 ```Powershell
 
@@ -44,7 +46,7 @@ Install-Package Aspose.Cells-Cloud
 
 ```
 
-Erstellt eine neue Instanz der CellsApi-Klasse und initialisiert sie mit Ihrer Client-ID und Ihrem Client-Geheimnis. Nachfolgend finden Sie die Details des oben genannten Codeausschnitts:
+Erstellen Sie eine neue Instanz der Klasse `CellsApi` und initialisieren Sie sie mit Ihrer Client-ID und Ihrem Clientgeheimnis. Im Folgenden finden Sie die Details des obigen Codeausschnitts:
 
 ```CSharp
 
@@ -52,11 +54,11 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ```
 
-Stellen Sie sicher, dass Sie IHRE_API_SCHLÜSSEL, IHR_APP_SID und IHRE_APP_KEY durch Ihren tatsächlichen API-Schlüssel, Ihre Anwendungs-SID und Ihren Anwendungsschlüssel.
+Stellen Sie sicher, dass Sie YOUR_API_KEY, YOUR_APP_SID und YOUR_APP_KEY durch Ihre tatsächlichen API-Schlüssel, Anwendungs-SID und Anwendungs-Schlüssel ersetzen.
 
-## Erstellen Sie die Anfrage API und rufen Sie die API
+## Erstellen der API-Anforderung und Aufrufen der API
 
-### Nutzen Sie Cloud-Dienste, um lokale Tabellen zusammenzuführen und die konsolidierten Dateien – entweder als lokale Ausgaben oder In-Memory-Streams – in jedem gewünschten Format bereitzustellen.
+### Nutzen Sie Cloud-Dienste zum Verschmelzen lokaler Tabellendateien und liefern Sie die konsolidierten Dateien entweder als lokale Ausgaben oder als Speicherstreams in einem beliebigen erforderlichen Format aus
 
 ```CSharp
 
@@ -64,44 +66,44 @@ using System.Collections.Generic;
 
 var cellsApi = new Aspose.Cells.Cloud.SDK.Api.CellsApi(System.Environment.GetEnvironmentVariable("ProductClientId"), System.Environment.GetEnvironmentVariable("ProductClientSecret"));
 
-// Suild merged spreadsheet request
+// Anforderung zum Verschmelzen der Tabellendateien erstellen
 var request = new Aspose.Cells.Cloud.SDK.Request.MergeSpreadsheetsRequest();
-// Set need merged files.
+// Zu verschmelzende Dateien festlegen.
 IDictionary<string, System.IO.Stream> mapFiles = new Dictionary<string, System.IO.Stream>();
 mapFiles.Add("Book1.xlsx", File.OpenRead("Book1.xlsx"));
 mapFiles.Add("Book2.xlsx", File.OpenRead("Book2.xlsx"));
 request.Spreadsheet = mapFiles;
-// Set output format
+// Ausgabeformat festlegen
 request.outFormat = "pdf";
 
 cellsApi.MergeSpreadsheets(request, "MergedResultFile.pdf");
 
 ```
 
-### Führen Sie in der Cloud gespeicherte Tabellen zusammen und liefern Sie die konsolidierte Datei – lokal oder zurück in den Cloud-Speicher – in jedem gewünschten Format.
+### Verschmelzen Sie Cloud-Tabellendateien, die in der Cloud gespeichert sind, und liefern Sie die konsolidierte Datei lokal oder zurück an den Cloud-Speicher in einem beliebigen erforderlichen Format
 
 ```C#
-// Get your Client ID and Client Secret from https://dashboard.aspose.cloud (free registration is required).
+// Holen Sie sich Ihre Client-ID und Ihr Clientgeheimnis von https://dashboard.aspose.cloud (kostenlose Registrierung erforderlich).
 var cellsApi = new Aspose.Cells.Cloud.SDK.Api.CellsApi(System.Environment.GetEnvironmentVariable("ProductClientId"), System.Environment.GetEnvironmentVariable("ProductClientSecret"));
-// Build merge request parameters 
+// Parameter für die Verschmelzungsanforderung erstellen
 var request = new Aspose.Cells.Cloud.SDK.Request.MergeRemoteSpreadsheetRequest();
-// Set cloud main file
+// Hauptdatei in der Cloud festlegen
 request.name = "Book1.xlsx";
 request.folder = "RemoteFolder1";
-// Set cloud merged file
+// Zu verschmelzende Cloud-Datei festlegen
 request.mergedSpreadsheet = "RemoteFolder2/Book2.xlsx";
 request.outFormat = "pdf";
 cellsApi.MergeRemoteSpreadsheet(request, "MergedResultOutPutToLocalFile.pdf");
 ```
 
-### Führen Sie passende Dateien automatisch in einem Cloud-Verzeichnis zusammen, exportieren Sie das konsolidierte Ergebnis im angegebenen Format und liefern Sie es lokal oder zurück in den Cloud-Speicher.
+### Automatisches Verschmelzen übereinstimmender Dateien in einem Cloud-Verzeichnis, Exportieren des konsolidierten Ergebnisses im angegebenen Format und Bereitstellen lokal oder zurück an den Cloud-Speicher
 
 ```csharp
-// Get your Client ID and Client Secret from https://dashboard.aspose.cloud (free registration is required).
+// Holen Sie sich Ihre Client-ID und Ihr Clientgeheimnis von https://dashboard.aspose.cloud (kostenlose Registrierung erforderlich).
 var cellsApi = new Aspose.Cells.Cloud.SDK.Api.CellsApi(System.Environment.GetEnvironmentVariable("ProductClientId"), System.Environment.GetEnvironmentVariable("ProductClientSecret"));
-// Build merge request parameters 
+// Parameter für die Verschmelzungsanforderung erstellen
 var request = new Aspose.Cells.Cloud.SDK.Request.MergeSpreadsheetsInRemoteFolderRequest();
-// Storage directory that needs to merge files
+// Speicherverzeichnis, dessen Dateien verschmolzen werden sollen
 request.folder = "RemoteFolder";
 request.fileMatchExpression = "*xlsx$";
 request.outFormat = "pdf";
@@ -110,17 +112,19 @@ cellsApi.MergeSpreadsheetsInRemoteFolder(request, "MergedResultOutPutToLocalFile
 
 ## Anwendungsfälle
 
- Die mehreren Dateien**zusammengeführt** Die Funktion der Aspose.Cells Cloud API ist in verschiedenen praktischen Anwendungsfällen nützlich. Hier sind einige gängige Szenarien:
+Die Funktion zum Verschmelzen mehrerer Dateien der Aspose.Cells Cloud API ist in verschiedenen praktischen Anwendungsfällen nützlich. Hier einige häufige Szenarien:
 
-- **Mehrere Excel-Dateien zu einer Excel-Datei zusammenführen** zur Datenanalyse und -speicherung.
-- **Datendateien in eine Excel-Datei zusammenführen** zur Datenanalyse.
-- **Mehrere Bilddateien zu einer PDF-Datei zusammenführen** zum einfachen Teilen.
-- **Mehrere Dateien zu einer HTML-Datei zusammenführen** zur Anzeige und Einbettung in Webseiten.
+- **Verschmelzen mehrerer Excel-Dateien in eine Excel-Datei** zur Datenanalyse und Speicherung.
+- **Verschmelzen von Datendateien in eine Excel-Datei** zur Datenanalyse.
+- **Verschmelzen mehrerer Bilddateien in eine PDF-Datei** zum einfachen Teilen.
+- **Verschmelzen mehrerer Dateien in eine HTML-Datei** zur Darstellung und Einbettung in Webseiten.
 
-## Abschluss
+## Fazit
 
-Mit Aspose.Cells Cloud API können Sie mehrere Tabellenkalkulationsdateien problemlos zu einer Datei zusammenführen. Durch einfache API-Aufrufe und das Festlegen geeigneter Zusammenführungsoptionen können Sie verschiedene Anforderungen für die Dateizusammenführung effizient erfüllen. Integrieren Sie Aspose.Cells Cloud API in Ihre Anwendungen, um die Produktivität zu steigern und Entwicklungszeit zu sparen.
+Mit der Aspose.Cells Cloud API können Sie mühelos mehrere Tabellendateien in eine einzige Datei verschmelzen. Durch einfache API-Aufrufe und das Festlegen geeigneter Verschmelzungsoptionen können Sie verschiedene Dateiverschmelzungsanforderungen effizient erfüllen. Integrieren Sie die Aspose.Cells Cloud API in Ihre Anwendungen, um die Produktivität zu steigern und Entwicklungszeit zu sparen.
 
- Bitte beachten Sie, dass der obige Beispielcode nur zu Demonstrationszwecken dient und Sie ihn bei der praktischen Anwendung durch gültige Authentifizierungsdaten und Dateipfade ersetzen müssen. Darüber hinaus bietet Aspose.Cells Cloud API viele weitere Funktionen, wie z. B. die Erstellung, Bearbeitung, Manipulation und Datenverarbeitung von Tabellenkalkulationen. Eine ausführliche Dokumentation und Beispielcode zu API finden Sie unter[Entwicklerhandbuch der offiziellen Aspose-Website](/developer-guide/).
+Bitte beachten Sie, dass der obige Beispielcode nur zu Demonstrationszwecken dient. Bei der praktischen Verwendung müssen Sie ihn durch gültige Authentifizierungsdaten und Dateipfade ersetzen. Darüber hinaus bietet die Aspose.Cells Cloud API viele weitere Funktionen, wie z. B. die Erstellung, Bearbeitung, Manipulation und Datenverarbeitung von Tabellendateien. Detaillierte API-Dokumentation und Beispielcode finden Sie in der [Entwicklerdokumentation der offiziellen Aspose-Website](/developer-guide/).
 
-Wir hoffen, dieser Artikel hilft Ihnen zu verstehen, wie Sie Aspose.Cells Cloud API zum Zusammenführen von Dateien verwenden. Viel Erfolg bei Ihrer Implementierung!
+Wir hoffen, dass dieser Artikel Ihnen dabei hilft, die Verwendung der Aspose.Cells Cloud API zum Verschmelzen von Dateien zu verstehen. Viel Erfolg bei Ihrer Implementierung!
+
+---

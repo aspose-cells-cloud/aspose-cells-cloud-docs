@@ -1,63 +1,124 @@
-﻿---
-title: Konvertieren Sie ein Listenobjekt in einen Bereich in einem Excel-Arbeitsblatt
-second_title: Documen
-linktitle: Konvertierung
-type: docs
-url: /de/list-objects/to-range/
-aliases: [/convert-list-object-or-table-to-range/,/tables/to-range/]
-keywords: Convert a list object(table) to range in an Excel worksheet
-description: Aspose.Cells Cloud REST API unterstützt die Konvertierung eines Listenobjekts (Tabelle) in einen Bereich in einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 30
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Listenobjekt in Bereich in einem Excel-Arbeitsblatt konvertieren
 ---
-Dieser REST API gibt `convert table or list object to range` in einem Excel-Arbeitsblatt an.
+title: "Listobjekt in Bereich konvertieren – Aspose.Cells Cloud API"
+ArticleTitle: "Listobjekt mit Aspose.Cells Cloud API in Bereich konvertieren"
+second_title: "Dokument"
+linktitle: "Konvertierung"
+type: docs
+url: /list-objects/to-range/
+aliases:
+  - /convert-list-object-or-table-to-range/
+  - /tables/to-range/
+keywords: "Aspose Cells API, Listobjekt in Bereich konvertieren, Excel REST API"
+description: "Erfahren Sie, wie Sie ein Excel-ListObject (Tabelle) mithilfe der Aspose.Cells Cloud REST API in einen Bereich konvertieren. Enthält Anforderungssyntax, Parameter, Beispiel-cURL, Antwortschema, Authentifizierungsdetails, Fehlercodes und SDK-Beispiele."
+weight: 30
+---
 
-## RSET API
+Diese REST API konvertiert ein **ListObject (Tabelle)** innerhalb eines Excel-Arbeitsblatts in einen **Bereich**.
+
+**Voraussetzungen:**  
+Bevor Sie den Endpunkt aufrufen, stellen Sie sicher, dass die Arbeitsmappe in Ihrem Aspose Cloud-Speicher hochgeladen wurde, das Arbeitsblatt das Ziel-ListObject enthält und Sie ein unterstütztes Dateiformat verwenden (z. B. .xlsx, .xlsm).
+
+## REST API
+
+**Authentifizierung**  
+Um diesen Vorgang aufzurufen, müssen Sie ein gültiges JWT-Token im `Authorization`-Header übergeben. Holen Sie sich das Token, indem Sie eine POST-Anfrage an den OAuth 2.0-Tokenendpunkt mit Ihrer Client-ID und Ihrem Clientgeheimnis senden. Das Token muss den `Cells.ReadWrite`-Geltungsbereich enthalten und ist für die vom Tokendienst zurückgegebene Gültigkeitsdauer gültig.
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange
 ```
 
-Die Anforderungsparameter sind:
+### **Sicherheit und Authentifizierung**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg||
-| Blattname| Schnur| Weg||
-| listObjectIndex| ganze Zahl| Weg||
-| Ordner| Schnur| Abfrage||
-| Speichername| Schnur| Abfrage| Speichername.|
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectConvertToRange) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+### Anforderungsparameter
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+| Name                | Typ     | Ort     | Erforderlich | Standard | Beschreibung                                                |
+| ------------------- | ------- | ------- | ------------ | -------- | ----------------------------------------------------------- |
+| **name**            | string  | path    | Ja           | –        | Der Name der Excel-Datei.                                   |
+| **sheetName**       | string  | path    | Ja           | –        | Der Name des Arbeitsblatts, das das ListObject enthält.   |
+| **listObjectIndex** | integer | path    | Ja           | –        | Nullbasierter Index des zu konvertierenden ListObjects (Tabelle). |
+| **folder**          | string  | query   | Nein         | –        | Ordnerpfad, in dem die Datei gespeichert ist.              |
+| **storageName**     | string  | query   | Nein         | –        | Name des Speicherdiensts.                                   |
+
+> **Hinweis:** Dieser Vorgang funktioniert nur mit modernen Excel-Formaten wie **.xlsx** und **.xlsm**. Das ListObject darf nicht geschützt sein. Weitere Informationen zu ListObjects finden Sie in der [ListObjects-Übersicht](/list-objects/). Details zum Arbeiten mit Bereichen finden Sie in der [Dokumentation zu Bereichen](/ranges/).
+
+### cURL-Beispiel (Anforderung)
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects/0/ConvertToRange" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your-jwt-token>"
 ```
 
 {{< /tab >}}
 
+#### Antwortschema
+
+Die API gibt eine Antwort mit dem Status **200 OK** zurück, die Details des neu erstellten Bereichs enthält.
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "RangeName": "A1:C10",
+  "Address": "Sheet1!A1:C10",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "RowCount": 10,
+  "ColumnCount": 3
+}
+```
+
+| Feld            | Typ     | Beschreibung                                         |
+| --------------- | ------- | ---------------------------------------------------- |
+| **Code**        | integer | HTTP-ähnlicher Statuscode (200 bedeutet Erfolg).    |
+| **Status**      | string  | Textuelle Statusmeldung.                             |
+| **RangeName**   | string  | Dem erstellten Bereich zugewiesener Name.            |
+| **Address**     | string  | Vollständige Adresse des Bereichs inkl. Blattname.   |
+| **FirstRow**    | integer | Nullbasierter Index der ersten Zeile im Bereich.     |
+| **FirstColumn** | integer | Nullbasierter Index der ersten Spalte im Bereich.    |
+| **RowCount**    | integer | Anzahl der Zeilen im Bereich.                        |
+| **ColumnCount** | integer | Anzahl der Spalten im Bereich.                       |
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                   | Beschreibung                                           |
+|------|-----------------------------|--------------------------------------------------------|
+| 200  | OK                          | Filter erfolgreich angewendet; Antwort enthält Details des Vorgangs. |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized                | Ungültiges oder fehlendes JWT-Token.                  |
+| 413  | Payload Too Large           | Hochgeladene Datei überschreitet die Größenbeschränkung. |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler.                             |
+
+**Fehler-Antwortschema (Beispiel):**
+
+```json
+{
+  "Code": 400,
+  "Message": "Invalid listObjectIndex. Index must be between 0 and 5."
+}
+```
+
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK",
+  "RangeName": "A1:C10",
+  "Address": "Sheet1!A1:C10",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "RowCount": 10,
+  "ColumnCount": 3
 }
- 
 ```
 
 {{< /tab >}}
@@ -66,9 +127,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklungsgeschwindigkeit zu erhöhen. Ein SDK übernimmt die Details auf unterster Ebene, sodass Sie sich auf Ihre Projektaufgaben konzentrieren können. Besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste mit verschiedenen SDKs durchgeführt werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,291 +1,318 @@
-﻿---
-title: Sammanfoga en Excel-arbetsbok med en annan Excel-fil
-second_title: Documen
-linktitle: Sammanfoga en Excel-fil med Excel-filen
-type: docs
-url: /sv/merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
-keywords: Merge an Excel Workbooks into other Excel file
-description: "Aspose.Cells Cloud REST API stöder sammanfogning av Excel-filer till andra Excel-filer. SDK:n stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
-weight: 50
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Sammanfoga en Excel-arbetsbok med en annan Excel-fil
 ---
-Denna REST API indikerar att en Excel `workbook` ska sammanfogas med en annan Excel-arbetsbok.
+title: "Sammanfoga en Excel-arbetsbok i en annan arbetsbok"
+second_title: "Dokument"
+linktitle: "Sammanfoga en Excel-arbetsbok i en annan arbetsbok"
+type: docs
+url: /merge-an-excel-file-into-the-excel-file/
+aliases: [/merge-excel-workbooks/, /workbook/merge/]
+keywords: "Excel-sammanfogning, Aspose.Cells Cloud, arbetsboks-API, REST-API, kalkylbladssammanfogning, molntjänst, autentisering, mergeWith, cURL-exempel"
+description: "Steg-för-steg-guide för att sammanfoga en Excel-arbetsbok i en annan med Aspose.Cells Cloud REST API (v3.0). Inkluderar autentisering, nödvändig mergeWith-parameter, cURL-exempel och SDK-kodavsnitt."
+ArticleTitle: "Sammanfoga en Excel-arbetsbok i en annan arbetsbok med Aspose.Cells Cloud API"
+weight: 50
+---
 
-**Frågeparameter**
+## REST-API
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|mapp|sträng|Original arbetsboksmapp.|
-|lagringsnamn|sträng|Lagringsnamn.|
+Detta REST-API sammanfogar en Excel-**arbetsbok** i en annan arbetsbok.
 
-## REST API
+```bash
+POST https://api.aspose.cloud/v3.0/cells/{name}/merge
+```
 
-|**API**|**Typ**|**Beskrivning**|**Swagger-länk**|
-|:- |:- |:- |:- |
-|/celler/{namn}/sammanfoga|POSTA|Sammanfoga Excel-arbetsböcker|[PostWorkbooksMerge](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge)|
+### **Säkerhet och autentisering**
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+Aspose.Cells Cloud-API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **Frågeparameter**
+
+| Parameternamn   | Typ    | Beskrivning                                                   |
+| --------------- | ------ | ------------------------------------------------------------- |
+| folder          | string | Mapp som innehåller den ursprungliga arbetsboken.             |
+| storageName     | string | Namn på lagringsutrymmet.                                     |
+| **mergeWith**   | string | Namn på den arbetsbok som ska sammanfogas till målarbetsboken. |
+
+### **Svar**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+      "Workbook": {
+    "FileName": "test.xlsx",
+    "Links": [
+      {
+        "Href": "/test.xlsx",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som CSV",
+        "Type": "text/csv"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som HTML",
+        "Type": "text/html"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som ODS",
+        "Type": "application/vnd.oasis.opendocument.spreadsheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som PDF",
+        "Type": "application/pdf"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som tabellavgränsat textformat",
+        "Type": "text/plain"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som TIFF",
+        "Type": "image/tiff"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som Microsoft Excel 2003",
+        "Type": "application/vnd.ms-excel"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som Microsoft Excel 2007",
+        "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Ladda ner som XPS",
+        "Type": "application/vnd.ms-xpsdocument"
+      }
+    ],
+    "Worksheets": {
+      "link": {
+        "Href": "/worksheets",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DefaultStyle": {
+      "link": {
+        "Href": "/defaultstyle",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DocumentProperties": {
+      "link": {
+        "Href": "/documentproperties",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Names": {
+      "link": {
+        "Href": "/names",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Settings": {
+      "link": {
+        "Href": "/settings",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "IsWriteProtected": "False",
+    "IsProtected": "False",
+    "IsEncryption": "false",
+    "Password": null
+  }
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                         |
+|-----|-----------------------------|-----------------------------------------------------|
+| 200 | OK                          | Filter har tillämpats framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig förfrågan          | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Obehörig                    | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
+
+## Hur du använder PostWorkbooksMerge-API:et med SDK:er
+
+### PostWorkbooksMerge API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt för API:et att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du gör anrop till moln-API:et med cURL, inklusive nödvändiga autentiseringshuvuden.
+
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Förfrågan" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/merge?mergeWith=test2.xlsx" -H "accept: application/json"
-
+```bash
+# Sammanfoga test2.xlsx till test.xlsx
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/merge?mergeWith=test2.xlsx" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access-token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Workbook": {
-
     "FileName": "test.xlsx",
-
     "Links": [
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As CSV",
-
+        "Title": "Ladda ner som CSV",
         "Type": "text/csv"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As HTML",
-
+        "Title": "Ladda ner som HTML",
         "Type": "text/html"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As ODS",
-
+        "Title": "Ladda ner som ODS",
         "Type": "application/vnd.oasis.opendocument.spreadsheet"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As PDF",
-
+        "Title": "Ladda ner som PDF",
         "Type": "application/pdf"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As Table Delimited Text Format",
-
+        "Title": "Ladda ner som tabellavgränsat textformat",
         "Type": "text/plain"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As TIFF",
-
+        "Title": "Ladda ner som TIFF",
         "Type": "image/tiff"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As Microsoft Excel 2003",
-
+        "Title": "Ladda ner som Microsoft Excel 2003",
         "Type": "application/vnd.ms-excel"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As Microsoft Excel 2007",
-
+        "Title": "Ladda ner som Microsoft Excel 2007",
         "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
-        "Title": "Download As XPS",
-
+        "Title": "Ladda ner som XPS",
         "Type": "application/vnd.ms-xpsdocument"
-
       }
-
     ],
-
     "Worksheets": {
-
       "link": {
-
         "Href": "/worksheets",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "DefaultStyle": {
-
       "link": {
-
         "Href": "/defaultstyle",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "DocumentProperties": {
-
       "link": {
-
         "Href": "/documentproperties",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "Names": {
-
       "link": {
-
         "Href": "/names",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "Settings": {
-
       "link": {
-
         "Href": "/settings",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "IsWriteProtected": "False",
-
     "IsProtected": "False",
-
     "IsEncryption": "false",
-
     "Password": null
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
-
-Response headers
-
-
 ```
+
+Svaret returnerar ett `Workbook`-objekt som innehåller metadata om den sammanfogade arbetsboken, inklusive länkar för att ladda ner resultatet i olika format (CSV, PDF, HTML, etc.).
+
+Svarshuvuden
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK abstraher bort detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Besök [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du gör anrop till Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -338,3 +365,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

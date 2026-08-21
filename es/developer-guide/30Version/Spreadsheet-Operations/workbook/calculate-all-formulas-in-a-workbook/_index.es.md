@@ -1,122 +1,312 @@
-﻿---
-title: Calcular todas las fórmulas en un libro de trabajo Excel
-second_title: Documen
-linktitle: Calcular
-type: docs
-url: /es/calculate-all-formulas-on-an-excel-file/
-aliases: [/calculate-all-formulas-in-a-workbook/,/workbook/calculate-all-formulas/]
-keywords: Calculate all formulas on an Excel workbook
-description: Aspose.Cells Cloud REST API admite el cálculo de todas las fórmulas en un libro de trabajo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 140
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Calcular todas las fórmulas en un libro de trabajo Excel
 ---
-Este REST API indica `calculate all formulas` en un libro de trabajo Excel.
+title: "Calcular todas las fórmulas en un libro de Excel"
+second_title: "Documento"
+linktitle: "Calcular"
+type: docs
+url: /calculate-all-formulas-on-an-excel-file/
+aliases:
+  [/calculate-all-formulas-in-a-workbook/, /workbook/calculate-all-formulas/]
+keywords: "Aspose.Cells, calcular fórmulas, API de Excel, SDK en la nube"
+description: "Calcule todas las fórmulas de un libro de Excel mediante la API REST de Aspose.Cells Cloud. Incluye ejemplo de cURL, parámetros de solicitud, esquema de respuesta, requisitos previos y fragmentos de SDK para múltiples lenguajes."
+weight: 140
+ArticleTitle: "Calcular todas las fórmulas en un libro de Excel"
+---
 
-## RSET API
+Esta API REST calcula **todas las fórmulas** en un libro de Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/calculateformula
- 
+**Requisitos previos:** Antes de llamar a este punto de conexión, asegúrese de tener:
+- Un token de autenticación JWT válido. (Consulte la [Guía de autenticación](/authentication/).)  
+- Su ID de cliente y secreto de Aspose.Cells Cloud.  
+- El libro de trabajo objetivo cargado en la ubicación de almacenamiento designada. (Consulte la [Configuración de almacenamiento](/storage/).)
+
+## API PostWorkbookCalculateFormula
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/calculateformula
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de solicitud se enumeran a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del documento.|
-| opciones|| cuerpo|Opciones de cálculo.|
-| ignorarError| booleano| consulta| Ignorar error.|
-| carpeta| cadena| consulta| Carpeta del documento.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo               | Ubicación | Descripción                                                                     |
+| --------------------- | ------------------ | --------- | ------------------------------------------------------------------------------- |
+| **name**              | string             | path      | Nombre del archivo del libro de trabajo.                                        |
+| **options**           | CalculationOptions | body      | Objeto JSON que especifica la configuración de cálculo (p. ej., `CalcStackSize`, `IgnoreError`). |
+| **ignoreError**       | boolean            | query     | Si es `true`, se ignoran los errores encontrados durante el cálculo.           |
+| **folder**            | string             | query     | Ruta a la carpeta que contiene el libro de trabajo.                             |
+| **storageName**       | string             | query     | Nombre del servicio de almacenamiento donde se guarda el libro de trabajo.      |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookCalculateFormula) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookCalculateFormula) define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube mediante cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/calculateformula?ignoreError=true" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--d "{ \"CalcStackSize\": 1, \"IgnoreError\": true, \"PrecisionStrategy\": \"string\", \"Recursive\": true}" 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "CalcStackSize": 1,
+        "IgnoreError": true,
+        "PrecisionStrategy": "string",
+        "Recursive": true
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK",
+  "WorkbookUrl": "https://api.aspose.cloud/v3.0/storage/file/Book1.xlsx",
+  "ErrorMessage": null
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+#### Detalles de la respuesta
+
+| Campo            | Tipo   | Descripción                                                                 |
+| ---------------- | ------ | --------------------------------------------------------------------------- |
+| **Code**         | int    | Código de estado similar al HTTP (200 indica éxito).                       |
+| **Status**       | string | Descripción textual breve del resultado (por ejemplo, `OK`).               |
+| **WorkbookUrl**  | string | URL directa desde la cual se puede descargar el libro de trabajo actualizado. |
+| **ErrorMessage** | string | Información detallada del error cuando la solicitud falla; `null` en caso de éxito. |
+
+#### Próximos pasos / Errores comunes
+
+- **Manejar errores de cálculo**: establezca `ignoreError=false` para recibir una respuesta de error cuando una fórmula no pueda evaluarse.
+- **Conciencia de límites de tasa**: verifique el encabezado `X-RateLimit-Remaining`; si alcanza `0`, espere antes de volver a intentarlo.
+- **Orientación sobre códigos de estado HTTP**:
+  - `400`: Parámetros de solicitud no válidos.
+  - `401`: Error de autenticación (JWT inválido o caducado).
+  - `404`: Libro de trabajo no encontrado.
+  - `500`: Error del servidor; póngase en contacto con el soporte técnico de Aspose si persiste.
+
+| Código | Significado             | Cuando se devuelve                                           |
+|--------|-------------------------|--------------------------------------------------------------|
+| 400    | Solicitud incorrecta    | Parámetros de solicitud no válidos o JSON mal formado.      |
+| 401    | No autorizado           | Token JWT ausente, inválido o caducado.                      |
+| 404    | No encontrado           | El libro de trabajo especificado no existe en el almacenamiento. |
+| 500    | Error interno del servidor | Fallo inesperado del lado del servidor; contacte con el soporte de Aspose. |
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel para que usted pueda centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostWorkbookCalculateFormula.cs" >}}
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+
+var api = new CellsApi("<clientId>", "<clientSecret>");
+var request = new PostWorkbookCalculateFormulaRequest(
+    name: "Book1.xlsx",
+    folder: "",
+    storageName: "",
+    ignoreError: true,
+    options: new CalculationOptions { CalcStackSize = 1, IgnoreError = true });
+
+var response = api.PostWorkbookCalculateFormula(request);
+Console.WriteLine($"Status: {response.Status}");
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostWorkbookCalculateFormula.java" >}}
+```java
+import com.aspose.cells.cloud.api.CellsApi;
+import com.aspose.cells.cloud.model.*;
+
+CellsApi api = new CellsApi("<clientId>", "<clientSecret>");
+PostWorkbookCalculateFormulaRequest request = new PostWorkbookCalculateFormulaRequest()
+        .name("Book1.xlsx")
+        .ignoreError(true)
+        .options(new CalculationOptions().calcStackSize(1).ignoreError(true));
+
+WorkbookResponse result = api.postWorkbookCalculateFormula(request);
+System.out.println("Status: " + result.getStatus());
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostWorkbookCalculateFormula.php" >}}
+```php
+<?php
+require_once 'vendor/autoload.php';
+
+use Aspose\Cells\Cloud\Api\CellsApi;
+use Aspose\Cells\Cloud\Model\CalculationOptions;
+use Aspose\Cells\Cloud\Model\PostWorkbookCalculateFormulaRequest;
+
+$api = new CellsApi("<clientId>", "<clientSecret>");
+$options = new CalculationOptions([
+    "CalcStackSize" => 1,
+    "IgnoreError"   => true
+]);
+
+$request = new PostWorkbookCalculateFormulaRequest([
+    "name"    => "Book1.xlsx",
+    "ignoreError" => true,
+    "options" => $options
+]);
+
+$response = $api->postWorkbookCalculateFormula($request);
+echo "Status: " . $response->getStatus();
+?>
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostWorkbookCalculateFormula.rb" >}}
+```ruby
+require 'aspose_cells_cloud'
+
+api = AsposeCellsCloud::CellsApi.new("<clientId>", "<clientSecret>")
+options = AsposeCellsCloud::CalculationOptions.new(
+  calc_stack_size: 1,
+  ignore_error: true
+)
+
+request = AsposeCellsCloud::PostWorkbookCalculateFormulaRequest.new(
+  name: 'Book1.xlsx',
+  ignore_error: true,
+  options: options
+)
+
+response = api.post_workbook_calculate_formula(request)
+puts "Status: #{response.status}"
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostWorkbookCalculateFormula.ts" >}}
+```javascript
+const {
+  CellsApi,
+  PostWorkbookCalculateFormulaRequest,
+  CalculationOptions,
+} = require("asposecellscloud");
+
+const api = new CellsApi("<clientId>", "<clientSecret>");
+const options = new CalculationOptions({ CalcStackSize: 1, IgnoreError: true });
+
+const request = new PostWorkbookCalculateFormulaRequest({
+  name: "Book1.xlsx",
+  ignoreError: true,
+  options: options,
+});
+
+api.postWorkbookCalculateFormula(request).then((response) => {
+  console.log(`Status: ${response.status}`);
+});
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostWorkbookCalculateFormula.py" >}}
+```python
+from asposecellscloud import CellsApi, PostWorkbookCalculateFormulaRequest, CalculationOptions
+
+api = CellsApi("<clientId>", "<clientSecret>")
+options = CalculationOptions(calc_stack_size=1, ignore_error=True)
+
+request = PostWorkbookCalculateFormulaRequest(
+    name="Book1.xlsx",
+    ignore_error=True,
+    options=options
+)
+
+response = api.post_workbook_calculate_formula(request)
+print(f"Status: {response.status}")
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostWorkbookCalculateFormula.pl" >}}
+```perl
+use AsposeCellsCloud::CellsApi;
+use AsposeCellsCloud::Object::PostWorkbookCalculateFormulaRequest;
+use AsposeCellsCloud::Object::CalculationOptions;
+
+my $api = AsposeCellsCloud::CellsApi->new(
+    client_id     => '<clientId>',
+    client_secret => '<clientSecret>'
+);
+
+my $options = AsposeCellsCloud::Object::CalculationOptions->new(
+    CalcStackSize => 1,
+    IgnoreError   => JSON::true
+);
+
+my $request = AsposeCellsCloud::Object::PostWorkbookCalculateFormulaRequest->new(
+    name        => 'Book1.xlsx',
+    ignoreError => JSON::true,
+    options     => $options
+);
+
+my $response = $api->post_workbook_calculate_formula(request => $request);
+print "Status: " . $response->{Status} . "\n";
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostWorkbookCalculateFormula.go" >}}
+```go
+package main
+
+import (
+    "fmt"
+    "github.com/asposecellscloud/asposecellscloud-go/v3/api"
+    "github.com/asposecellscloud/asposecellscloud-go/v3/model"
+)
+
+func main() {
+    cfg := api.NewConfiguration()
+    cfg.AddDefaultHeader("client-id", "<clientId>")
+    cfg.AddDefaultHeader("client-secret", "<clientSecret>")
+    client := api.NewAPIClient(cfg)
+
+    opts := model.CalculationOptions{
+        CalcStackSize: 1,
+        IgnoreError:   true,
+    }
+
+    req := model.PostWorkbookCalculateFormulaRequest{
+        Name:        "Book1.xlsx",
+        IgnoreError: true,
+        Options:     &opts,
+    }
+
+    resp, _, err := client.CellsApi.PostWorkbookCalculateFormula(req)
+    if err != nil {
+        panic(err)
+    }
+    fmt.Printf("Status: %s\n", resp.Status)
+}
+```
 
 {{< /tab >}}
 

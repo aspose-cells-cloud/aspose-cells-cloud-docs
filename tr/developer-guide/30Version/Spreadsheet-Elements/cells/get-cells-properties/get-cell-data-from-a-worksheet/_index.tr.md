@@ -1,99 +1,73 @@
-﻿---
-title: Bir Çalışma Sayfasından Hücre Verilerini Alın
+---
+title: "Çalışma Sayfasından Hücre Verilerini Alın"
 type: docs
 url: /tr/get-cell-data-from-a-worksheet/
 weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Çalışma Sayfasından Hücre Verilerini Alma
+keywords: "Aspose.Cells Cloud, hücre verisi al, Excel API, REST API, hücre değeri, çalışma sayfası API, Aspose API örneği"
+description: "Aspose.Cells Cloud REST API’sini (v3.0) kullanarak bir Excel çalışma sayfasından tek bir hücrenin değerini, türünü ve stilini alın. cURL ve SDK örnekleri, parametreler ve hata işleme içerir."
 ---
-Bu REST API, `cellOrMethodName` parametresi hücre adı olduğunda Excel dosyasında `cell` alındığını gösterir.
 
-- **cURL Örnek**
+Bu REST API, **`cellOrMethodName`** parametresi bir hücre adını (örneğin `A3` gibi A1-stilinde bir adresi) belirttiğinde bir Excel çalışma sayfasından bir hücreyi getirir.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+- **cURL Örneği**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?client_id=xxxx&client_secret=xxxx" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```shell
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+**Parametreler**
+
+| Parametre          | Tür    | Açıklama                                                  | Gerekli |
+|--------------------|--------|-----------------------------------------------------------|---------|
+| `cellOrMethodName` | string | İlk hücreyi almak için `firstcell` olarak ayarlanmalıdır. | Evet    |
+| `fileName`         | string | Çalışma kitapası dosyasının adı (örneğin `myWorkbook.xlsx`). | Evet    |
+| `worksheet`        | string | Çalışma sayfasının adı (örneğin `Sheet1`).                | Evet    |
+| `Authorization`    | header | Kimlik doğrulama için Bearer jetonu.                      | Evet    |
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "A3",
-
     "Row": 2,
-
     "Column": 0,
-
-    "Value": "Statistical",
-
+    "Value": "Category",
     "Type": "IsString",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
-    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">Statistical</Font>",
-
+    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Category</Font>",
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
-    },
-
-    "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3",
-
-      "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Bulut SDK Ailesi**
-
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
-
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+- **Aspose.Cells Cloud SDK’larını Kullanma**
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

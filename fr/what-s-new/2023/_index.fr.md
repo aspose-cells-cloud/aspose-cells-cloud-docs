@@ -1,83 +1,88 @@
-﻿---
-title: Quoi de neuf dans Aspose.Cells Cloud en 2023
-second_title: Documen
-linktitle: Quoi de neuf dans 202
+---
+title: "Nouveautés d'Aspose.Cells Cloud en 2023 – Mises à jour des fonctionnalités et notes de version"
+second_title: "Document"
+linktype: "Nouveautés 2023"
 type: docs
 weight: 30
-url: /fr/new-features/2023/
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: Cette page décrit les nouvelles fonctionnalités les plus intéressantes du Cloud Aspose.Cells introduites dans les versions récentes
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Nouveautés de Aspose.Cells Cloud
+url: /new-features/2023/
+keywords: "Excel, Office Cloud, API REST, Classeur, PDF, CSV, JSON, Markdown, Aspose.Cells Cloud, mises à jour 2023"
+description: "Découvrez les nouvelles fonctionnalités d'Aspose.Cells Cloud en 2023, notamment les API de conversion sensibles à la région, la prise en charge des axes de graphiques, les signatures numériques et d'autres améliorations. Notes de version détaillées et exemples de code."
+ArticleTitle: "Nouveautés d'Aspose.Cells Cloud en 2023 – Mises à jour des fonctionnalités et notes de version"
 ---
-Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez cette page pour trouver rapidement les dernières modifications.
 
-## Améliorations de la version 23.12.0
+Bienvenue dans la documentation des nouveautés d'Aspose.Cells Cloud. Cette page met en avant les **nouvelles fonctionnalités d'Aspose.Cells Cloud en 2023** et vous permet de trouver rapidement les dernières modifications.
 
-- Les API de conversion ajoutent un paramètre de région.
-- Les API de protection ajoutent un paramètre de région.
-- L'assemblage des données API ajoute un paramètre de région.
-- La fusion des fichiers API ajoute le paramètre de région.
-- Les fichiers divisés API ajoutent un paramètre de région.
-- Les données d'importation API ajoutent le paramètre de région.
-- Le filigrane API ajoute un paramètre de région.
-- L'objet clair API ajoute un paramètre de région.
-- Les données inversées API ajoutent le paramètre de région.
-- La rotation des données API ajoute un paramètre de région.
+**Dernière mise à jour :** juillet 2026  
 
-## Améliorations de la version 23.11
+## Améliorations dans la version 23.12.0
 
-- Optimiser l'importation des données XML dans le fichier Excel.
-- Optimiser l'importation des données json dans le fichier Excel.
-- Supprimez les fonctions, les classes et les cas de test obsolètes.
+- Ajout du paramètre « region » à l’API de conversion.  
+- Ajout du paramètre « region » à l’API de protection.  
+- Ajout du paramètre « region » à l’API d’assemblage de données.  
+- Ajout du paramètre « region » à l’API de fusion de fichiers.  
+- Ajout du paramètre « region » à l’API de division de fichiers.  
+- Ajout du paramètre « region » à l’API d’importation de données.  
+- Ajout du paramètre « region » à l’API de filigrane.  
+- Ajout du paramètre « region » à l’API de nettoyage d’objets.  
+- Ajout du paramètre « region » à l’API d’inversion de données.  
+- Ajout du paramètre « region » à l’API de rotation de données.  
 
-## Améliorations de la version 23.10
+## Améliorations dans la version 23.11
 
-- Corriger la demande de protection du classeur.
-- Correction de la plage de copie API.
-- Optimiser la protection du classeur API.
+- Optimisation de l’importation de données XML dans des fichiers Excel.  
+- Optimisation de l’importation de données JSON dans des fichiers Excel.  
+- Suppression des fonctions, classes et cas de test obsolètes.  
 
-## Améliorations de la version 23.9
+## Améliorations dans la version 23.10
 
-- Prise en charge du tri des données sur le contrôleur de plage.
-- Prise en charge de la suppression des données en double sur l'objet de liste.
-- Prise en charge de l'insertion d'un slicer pour un objet de liste.
-- Optimiser l'objet de liste et les objets associés.
+- Correction de la demande de protection du classeur.  
+- Correction de l’API de copie de plages.  
+- Optimisation de l’API de protection du classeur.  
 
-## Améliorations de la version 23.8
+## Améliorations dans la version 23.9
 
-- Support pour verrouiller API.
-- Optimiser protéger API.
+- Ajout de la prise en charge du tri des données sur le contrôleur de plage.  
+- Ajout de la suppression des doublons pour les objets de liste.  
+- Ajout de l’insertion de filtres dynamiques pour les objets de liste.  
+- Optimisation des objets de liste et des composants associés.  
+
+## Améliorations dans la version 23.8
+
+- Ajout de la prise en charge de l’API de verrouillage.  
+- Optimisation de l’API de protection.  
 
 ## Aspose.Cells Cloud 23.7
 
-- Prise en charge de la réparation des fichiers.
-- Optimiser les fonctions de conversion.
+- Ajout de la prise en charge de la réparation de fichiers.  
+- Optimisation des fonctions de conversion.  
 
 ## Aspose.Cells Cloud 23.6
 
-- Prise en charge du verrouillage par lots de plusieurs fichiers.
-- Prise en charge du déverrouillage par lots de plusieurs fichiers.
-- Prise en charge de la protection par lots de plusieurs fichiers.
-- Prise en charge de la division par lots de plusieurs fichiers.
-- Correction de l'API de propriété du document.
+- Ajout du verrouillage par lots pour plusieurs fichiers.  
+- Ajout du déverrouillage par lots pour plusieurs fichiers.  
+- Ajout de la protection par lots pour plusieurs fichiers.  
+- Ajout de la division par lots pour plusieurs fichiers.  
+- Correction de l’API PUT de propriété de document.  
 
-## Aspose.Cells Cloud 23,5
+## Aspose.Cells Cloud 23.5
 
-- Corriger quelques méthodes mal orthographiées.
+- Correction des noms de méthodes mal orthographiés.  
 
-## Aspose.Cells Nuage 23.4
+## Aspose.Cells Cloud 23.4
 
-- Prise en charge de l'importation et de l'exportation de données XML.
+- Ajout de la prise en charge de l’importation et de l’exportation de données XML.  
 
 ## Aspose.Cells Cloud 23.3
 
-- Optimiser les propriétés des hyperliens.
+- Optimisation des propriétés des liens hypertexte.  
 
 ## Aspose.Cells Cloud 23.2
 
-- Optimiser remplacer API.
-- Optimiser l'interface utilisateur de Swagger.
+- Optimisation de l’API de remplacement.  
+- Optimisation de l’interface utilisateur Swagger.  
 
 ## Aspose.Cells Cloud 23.1
 
-- Corriger le bug pour la méthode PostCellCharacters.
+- Correction d’un bogue dans la méthode PostCellCharacters.  
+
+Pour plus d’informations détaillées, consultez les notes de version complètes pour chaque version ou visitez la documentation de référence de l’API Aspose.Cells Cloud.

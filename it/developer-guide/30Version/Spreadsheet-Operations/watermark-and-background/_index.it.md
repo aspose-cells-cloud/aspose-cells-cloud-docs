@@ -1,17 +1,21 @@
-﻿---
-title: Inserisci filigrane o imposta sfondi nei file Excel
-second_title: Documen
-linktitle: Filigrana e sfondo
+---
+title: "Inserire filigrane o impostare sfondi nei file Excel."
+second_title: "Documento"
+linktype: "Filigrana e sfondo"
 type: docs
 url: /it/watermark-and-background/
-aliases: [ /export/excel-chart-to-different-formats/，/workbook/background/]
-keywords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Watermark, Backgroun
-description: Aspose.Cells Cloud REST API supporta l'utilizzo in background su una cartella di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [ "/export/excel-chart-to-different-formats/", "/workbook/background/" ]
+keywords: "Aspose.Cells Cloud, Excel, Filigrana, Sfondo, REST API"
+description: "L'API REST Aspose.Cells Cloud consente agli sviluppatori di aggiungere, rimuovere e gestire sfondi e filigrane nei file Excel. I linguaggi supportati includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Filigrana, Sfondo
+ArticleTitle: "Inserire filigrane e impostare sfondi nei file Excel – Documentazione di Aspose.Cells Cloud"
 ---
-## Lavorare con lo sfondo su una cartella di lavoro Excel
 
-- [Come aggiungere uno sfondo a una cartella di lavoro Excel.](/cells/it/add-background-in-excel-file/)
-- [Come eliminare lo sfondo da una cartella di lavoro Excel.](/cells/it/delete-background-in-excel-file/)
-- [Come aggiungere filigrana a una cartella di lavoro Excel.](/cells/it/delete-background-in-excel-file/)
+## Lavorare con lo sfondo di un file Excel
+
+Questa pagina fornisce link rapidi a tutorial per la gestione degli sfondi e delle filigrane nei file Excel utilizzando Aspose.Cells Cloud.
+
+- [Come aggiungere uno sfondo a un file Excel.](/it/cells/add-background-in-excel-file/)
+- [Come rimuovere uno sfondo da un file Excel.](/it/cells/delete-background-in-excel-file/)
+- [Come aggiungere una filigrana a un file Excel.](/it/cells/add-watermark-into-excel-files/)
+---

@@ -1,76 +1,118 @@
-﻿---
-title: Batchlås Excel-fil
-second_title: Documen
-type: docs
-url: /sv/batch/lock
-keywords: Batch lock of multiple Excel files
-description: "Aspose.Cells Cloud API stöder batchlåsning av flera Excel-filer. SDK:n stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
-weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Batchlås
 ---
-Denna REST API indikerar till `batch lock` av kvalificerade filer.
+title: "Lås Excel-filer i batch"
+second_title: "Dokument"
+type: docs
+url: /batch/lock
+keywords: "batchlåsning, Excel, Aspose.Cells, molntjänst, kalkylark, filskydd"
+description: "Aspose.Cells molntjänst möjliggör batchlåsning av flera Excel-filer. Använd REST-slutpunkten eller någon av de stödda SDK:erna (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go etc.) för att låsa filer i batch."
+weight: 100
+---
 
-## RSET API
+Denna REST-tjänst tillåter **batchlåsning** av lämpliga Excel-filer.
+
+## REST-tjänst
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/lock
- 
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| BatchLockRequest|| kropp||
+Aspose.Cells molntjänster är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-**BatchLockRequest-egenskaper**
 
-Namn | Typ | Beskrivning | Anteckningar
------------- | ------------- | ------------- | -------------
- Källmapp | sträng | | [valfritt]Matchvillkor | Matchvillkorsbegäran | | [valfritt]Lösenord | sträng | | [valfritt]Utmapp | sträng | | [valfritt]**MatchConditionRequest-egenskaper**
+### Begärparametrar
 
-Namn | Typ | Beskrivning | Anteckningar
------------- | ------------- | ------------- | -------------
- RegexPattern | sträng | | [valfritt]FullMatchConditions | sträng[]| | [valfritt]The[OpenAPI-specifikation](https://reference.aspose.cloud/cells/#/Batch/PostBatchLock) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+| Parameternamn    | Typ                | Plats    | Beskrivning                               |
+|------------------|--------------------|----------|-------------------------------------------|
+| BatchLockRequest | BatchLockRequest   | body     | JSON-body som innehåller låsparametrar.  |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+#### **BatchLockRequest**-egenskaper
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Namn           | Typ                      | Beskrivning                                           | Noteringar    |
+|----------------|--------------------------|-------------------------------------------------------|---------------|
+| SourceFolder   | string                   | Mapp som innehåller käll-Excel-filerna.             | valfri        |
+| MatchCondition | MatchConditionRequest    | Villkor för att välja vilka filer som ska låsas.     | valfri        |
+| Password       | string                   | Lösenord som ska appliceras på de låsta filerna.     | valfri        |
+| OutFolder      | string                   | Målmap för de låsta filerna.                          | valfri        |
+
+#### **MatchConditionRequest**-egenskaper
+
+| Namn               | Typ       | Beskrivning                                          | Noteringar    |
+|--------------------|-----------|------------------------------------------------------|---------------|
+| RegexPattern       | string    | Mönster för reguljärt uttryck för att matcha filnamn.| valfri        |
+| FullMatchConditions| string[]  | Exakta matchningar av filnamn för låsning.          | valfri        |
+
+### Begärons body-parameter
+
+| Parameternamn | Typ  | Beskrivning                                   |
+| ------------- | ---- | --------------------------------------------- |
+| data          | file | Binärt innehåll i arbetsboken som ska skapas. |
+
+### **Svar**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod  | Betydelse                    | När returneras                        |
+|------|------------------------------|---------------------------------------|
+| 200 OK | Arbetsboken skapades framgångsrikt | Normalt flöde                        |
+| 201 Created | Arbetsboken skapades (alternativt svar) | När API:et returnerar statusen "created" |
+| 400 Bad Request | Ogiltiga parametrar | Klientsidorfel                        |
+| 401 Unauthorized | Saknas eller ogiltig token | Autentiseringsfel                    |
+| 409 Conflict | Filen finns och `isWriteOver=false` | Konflikt med existerande fil         |
+
+## Hur man använder PostBatchLock-API:et med SDK:er
+
+### PostBatchLock-API-specifikation
+
+[OpenAPI-specifikationen](https://reference.aspose.cloud/cells/#/Batch/PostBatchLock) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells webbtjänster. Exemplet nedan visar hur man anropar molntjänsten med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/lock" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\"}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina låsuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK abstraher bort detaljer på låg nivå så att du kan fokusera på dina låsuppgifter. Se [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

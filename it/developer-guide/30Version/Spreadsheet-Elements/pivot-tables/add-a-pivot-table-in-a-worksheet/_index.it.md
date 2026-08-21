@@ -1,78 +1,96 @@
-﻿---
-title: Aggiungere una tabella pivot in un foglio di lavoro Excel
-second_title: Documen
-linktitle: Aggiungere
+---
+title: "Aggiungi una tabella pivot in un foglio di lavoro Excel"
+second_title: "Documento"
+linktitle: Aggiungi
 type: docs
 url: /it/pivot-tables/add/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
-keywords: Add a pivot table in an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'aggiunta di una tabella pivot in un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/add-a-pivot-table-in-a-worksheet/]
+keywords: "Aggiungi tabella pivot, foglio di lavoro Excel, Aspose.Cells Cloud, REST API, SDK, tabella pivot Excel"
+description: "Utilizza l'API REST di Aspose.Cells Cloud per aggiungere una tabella pivot a un foglio di lavoro Excel. Disponibile tramite SDK per C#, Java, PHP, Python, Node.js, Android, Swift, Perl, Go."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Aggiungi una tabella pivot in un foglio di lavoro Excel
+ArticleTitle: "Come aggiungere una tabella pivot in un foglio di lavoro Excel usando Aspose.Cells Cloud"
 ---
-Questo REST API indica a `add` una tabella pivot nel foglio di lavoro.
- 
-## RSET API
- 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
- 
+
+Questa API REST aggiunge una tabella pivot in un foglio di lavoro.
+
+**Prerequisiti:**  
+- Un account Aspose.Cells Cloud con un token di accesso JWT valido.  
+- Il libro di lavoro di destinazione deve essere memorizzato in una posizione di archiviazione supportata (archiviazione predefinita o archiviazione specificata dall'utente).  
+- Il foglio di lavoro specificato da `sheetName` deve esistere nel libro di lavoro.  
+
+## API PutWorksheetPivotTable
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 ```
- I parametri della richiesta sono:
- 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome del documento.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| richiesta|| corpo| CreatePivotTableRequest dto nel corpo della richiesta.|
-| cartella| corda| domanda| Cartella del documento.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
-| dati di origine| corda| domanda| I dati per la nuova cache della tabella pivot.|
-|NomeCelladestinazione| corda| domanda| La cella nell'angolo in alto a sinistra dell'intervallo di destinazione del report di tabella pivot.|
-| nometabella| corda| domanda| Nome del nuovo rapporto di tabella pivot.|
-| usaSameSource| booleano| domanda| Indica se utilizzare la stessa origine dati quando un'altra tabella pivot esistente ha utilizzato questa origine dati. Se la proprietà è true, verrà risparmiata memoria.|
- 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
- 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Sicurezza e autenticazione**
+
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
+
+### **Parametri della richiesta**
+
+| Nome parametro | Tipo    | Posizione | Descrizione                                                                                                                         |
+| -------------- | ------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| name           | string  | path      | Il nome del documento Excel.                                                                                                     |
+| sheetName      | string  | path      | Il nome del foglio di lavoro in cui verrà creata la tabella pivot.                                                                    |
+| request        | object  | body      | DTO `CreatePivotTableRequest` contenente la definizione della tabella pivot.                                                                |
+| folder         | string  | query     | La cartella contenente il documento.                                                                                              |
+| storageName    | string  | query     | Il nome dell'archivio in cui è situato il documento.                                                                              |
+| sourceData     | string  | query     | L'intervallo che fornisce i dati di origine per la nuova cache della tabella pivot (ad esempio, `A5:E10`).                                             |
+| destCellName   | string  | query     | L'indirizzo della cella in alto a sinistra dell'intervallo di destinazione per il report della tabella pivot.                                             |
+| tableName      | string  | query     | Il nome assegnato alla nuova tabella pivot.                                                                                           |
+| useSameSource  | boolean | query     | Se `true`, la nuova tabella pivot riutilizza una fonte di dati esistente, risparmiando memoria se un’altra tabella pivot ha già utilizzato questa fonte. |
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando **cURL** per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come chiamare l'API Cloud con cURL.
+
+**Nota sulla sicurezza:** Utilizza sempre `https://` quando chiami l'API e mantieni il tuo token JWT confidenziale; trasmetterlo tramite HTTP non crittografato può esporlo al rischio di intercettazione.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/pivottables"
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/pivottables" \
 -X PUT \
--d '{"Name":"MyPivot", "SourceData":"A5:E10", "DestCellName":"H20", "UseSameSource":true, "PivotFieldRows":[1], "PivotFieldColumns":[1], "PivotFieldData ":[1]}'\
+-d '{"Name":"MyPivot","SourceData":"A5:E10","DestCellName":"H20","UseSameSource":true,"PivotFieldRows":[1],"PivotFieldColumns":[1],"PivotFieldData":[1]}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Famiglia Cloud SDK
- 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
- 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+
+**Codici di stato HTTP**
+
+| Codice | Significato                 | Descrizione                                      |
+|--------|-----------------------------|--------------------------------------------------|
+| 200    | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida        | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401    | Non autorizzato             | Token JWT non valido o mancante. |
+| 413    | Payload troppo grande       | Il file caricato supera il limite di dimensione. |
+| 500    | Errore interno del server   | Errore imprevisto del server. |
+
+## Famiglia di SDK Cloud
+
+L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -131,3 +149,5 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Per altre operazioni, consulta le pagine API correlate: **[Ottenere una tabella pivot](https://docs.aspose.cloud/cells/it/pivot-tables/get/)**, **[Eliminare una tabella pivot](https://docs.aspose.cloud/cells/it/pivot-tables/delete/)** e **[Aggiornare una tabella pivot](https://docs.aspose.cloud/cells/it/pivot-tables/update/)**.

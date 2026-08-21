@@ -1,74 +1,84 @@
-﻿---
-title: حذف كائن OLE في ورقة عمل Excel
-second_title: Documen
-linktitle: حذف
-type: docs
-url: /ar/oleobjects/delete/
-aliases: [/delete-a-specific-oleobject-from-excel-worksheet/]
-keywords: Delete an OLE object in an Excel worksheet
-description: يدعم Cloud REST حذف كائن OLE في ورقة عمل. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 50
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حذف كائن OLE في ورقة عمل Excel
 ---
-يشير هذا REST API إلى `delete` كائن OLE في ورقة عمل Excel.
+title: "حذف كائن OLE في ورقة عمل Excel"
+second_title: "المستند"
+linktitle: "حذف"
+type: docs
+url: /oleobjects/delete/
+aliases: [/delete-a-specific-oleobject-from-excel-worksheet/]
+keywords: "Aspose.Cells, Cloud, حذف, OLE, كائن, Excel, ورقة عمل, REST, API, SDK"
+description: "تعرّف على كيفية حذف كائن OLE من ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 4.0). يتضمن عنوان HTTPS، وخطوات المصادقة، ومثال باستخدام أداة cURL، وأكواد مقتطفات SDK، وإرشادات معالجة الأخطاء، وروابط خطوات ما بعد ذلك."
+weight: 50
+ArticleTitle: "حذف كائن OLE من ورقة عمل Excel باستخدام Aspose.Cells Cloud API"
+---
 
-## RSET API
+تشرح هذه الصفحة كيفية حذف كائن OLE محدّد من ورقة عمل في ملف Excel باستخدام **Aspose.Cells Cloud**. يمكن أن يكون كائن OLE صورة مُرتبطة، أو مخططًا، أو أي كائن مُضمن آخر تخزنه Excel ككيان منفصل.
+
+## الأمان والمصادقة
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [المصادقة باستخدام رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## واجهة برمجة تطبيقات REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
- 
+DELETE https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
 ```
 
-معلمات الطلب هي:
+### معاملات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم العبادة.|
-| فهرس كائن ole| عدد صحيح| طريق| مؤشر كائن Ole|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعامل | النوع    | الموقع | الوصف                                                |
+|------------|---------|--------|-------------------------------------------------------|
+| name       | string  | path   | اسم ملف العمل (workbook).                            |
+| sheetName  | string  | path   | اسم ورقة العمل.                                      |
+| oleObjectIndex | integer | path | فهرس كائن OLE المراد حذفه.                           |
+| folder     | string  | query  | المجلد الذي يحتوي على ملف العمل. (اختياري)         |
+| storageName| string  | query  | اسم خدمة التخزين. (اختياري)                         |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject) واجهة برمجة تطبيقات متاحة عمومًا وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول إلى خدمات ويب Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إجراء الطلب باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v4.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### تفاصيل الاستجابة
+
+| الحالة HTTP          | الوصف                                                                 | مثال JSON                                                          |
+|----------------------|-----------------------------------------------------------------------|--------------------------------------------------------------------|
+| **200 OK**           | تم حذف كائن OLE بنجاح.                                                | `{ "Code": 200, "Status": "OK" }`                                  |
+| **401 Unauthorized** | رمز JWT مفقود أو غير صالح.                                           | `{ "Code": 401, "Message": "Access token is missing or invalid." }` |
+| **404 Not Found**    | ملف العمل أو ورقة العمل أو فهرس كائن OLE المحدّد غير موجود.         | `{ "Code": 404, "Message": "OLE object index out of range." }`     |
+| **400 Bad Request**  | معاملات مطلوبة مفقودة أو بصيغة غير صحيحة.                           | `{ "Code": 400, "Message": "Invalid request parameters." }`       |
+
+تعامل مع هذه الاستجابات في تطبيقك من خلال التحقق من رمز الحالة (status code) وعرض الرسالة المرافقة.
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. تُعنى SDK بمعالجة التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs متنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,364 +1,415 @@
-﻿---
-title: 文件和存储
-second_title: Documen
-type: docs
-url: /zh/files-and-storage/
-aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
-keywords: Aspose Cells Cloud file storage, upload, download, delete, move, copy file
-description: 全面指导如何使用 Aspose Cells Cloud 进行文件存储操作，包括上传、下载和管理文件。SDK 支持各种编程语言，例如 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift
-weight: 100
-kwords: Aspose Cells，云存储，REST API，文件管理，Excel，PDF，CSV，JSON，Markdow
 ---
- Aspose.Cells Cloud 提供全面的辅助功能，可处理上传到 Aspose.Cells Cloud Storage 或您选择的任何其他云存储的文件。如需设置第三方存储的帮助，请参阅[Aspose 云 UI 帮助主题](https://docs.aspose.cloud/display/totalcloud/Aspose+Cloud+UI+Help+Topics).
+title: "Aspose.Cells Cloud API – 文件与文件夹管理（上传、下载、复制、移动）"
+second_title: "文档"
+ArticleTitle: "Excel 云文件管理 —— 高效、安全的 Excel 文件存储与智能组织解决方案"
+linktitle: "文件与存储"
+type: docs
+url: /files-and-storage/
+aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
+keywords: "Aspose.Cells Cloud, 文件存储 API, 上传 Excel 文件, 下载 Excel 文件, 复制文件, 移动文件, 删除文件, 文件夹管理, REST API, cURL 示例"
+description: "全面介绍如何在 Aspose.Cells Cloud 存储中管理 Excel 文件与文件夹。包含上传、下载、复制、移动、删除以及文件夹操作，并提供 cURL 示例、所需参数和身份验证说明。"
+weight: 100
+---
+
+Aspose.Cells Cloud 提供了一整套便捷功能，用于操作存储于 Aspose.Cells Cloud 存储或您所选择的任意第三方云存储中的文件。有关设置第三方存储的帮助，请参阅 [Aspose Cloud UI 帮助主题](https://docs.aspose.cloud/display/totalcloud/Aspose+Cloud+UI+Help+Topics)。
 
 **Aspose.Cells Cloud 提供一系列文件、文件夹和存储操作 API。**
+
+> **注意：** 所有 API 调用必须使用 **HTTPS**。获取 JWT 令牌的详细信息，请参阅 [身份验证指南](/cells/authentication/)。
+
+**前置条件：** 使用这些 API 前，您需拥有有效的 Aspose Cloud 账户，获取 JWT 访问令牌，并配置好存储位置（可为 Aspose Cloud 存储或已连接的第三方存储）。
+
+**最后更新日期：** 2024‑12‑01
 
 ## **如何上传文件**
 
 ### 上传文件 API 信息
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/file/{path}
+PUT https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 ```
 
-请求参数为：
+请求参数如下：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|小路|细绳|小路|上传文件的路径，包括文件名和扩展名（例如，/file.ext 或 /Folder 1/file.ext）。如果内容是多部分的，且路径不包含文件名，则会尝试从 Content-Disposition 标头中的 filename 参数中获取文件名。|
-|文件|文件|表单数据|要上传的文件|
-|存储名称|细绳|询问|存储名称|
+| 参数名       | 类型   | 位置 | 描述 |
+|--------------|--------|------|------|
+| path         | string | path | 上传文件的路径，包含文件名及扩展名（例如：`/folder1/Report.xlsx`）。 |
+| file         | file   | formData | 待上传的文件。 |
+| storageName  | string | query  | 使用的存储名称。 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/File/UploadFile)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互。
+**HTTP 响应码**
+
+| 状态码 | 描述 |
+|--------|------|
+| 200    | 文件上传成功。 |
+| 400    | 请求错误 — 缺少或无效参数。 |
+| 401    | 未授权 — JWT 令牌无效或缺失。 |
+| 404    | 未找到指定存储。 |
+| 500    | 服务器内部错误。 |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/File/UploadFile) 定义了一个公开可访问的编程接口，可直接通过 Web 浏览器发起 REST 调用。
 
 ### 上传文件示例
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 上传文件。
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/Book1.xlsx" \
--X PUT \
--H "accept: application/json" \
--H "Content-Type: multipart/form-data" \
--H "Authorization: Bearer <jwt token>" \
--d {"File":{}}
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MyFolder/Report.xlsx" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F "File=@Report.xlsx"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Uploaded": [
-    "string"
+    "MyFolder/Report.xlsx"
   ],
-  "Errors": [
-    {
-      "Code": "string",
-      "Message": "string",
-      "Description": "string",
-      "InnerError": {
-        "RequestId": "string",
-        "Date": "2021-12-02T03:21:11.704Z"
-      }
-    }
-  ]
-} 
+  "Errors": []
+}
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*注意：上传文件最大支持 100 MB。可能受速率限制。*
 
 ## **如何下载文件**
 
 ### 下载文件 API 信息
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/file/{path}
+GET https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 ```
 
-请求参数为：
+请求参数如下：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|小路|细绳|小路|文件路径（例如，“/folder/file.ext”）|
-|存储名称|细绳|询问|存储名称|
-|版本号|细绳|询问|要下载的文件版本ID|
+| 参数名       | 类型   | 位置 | 描述 |
+|--------------|--------|------|------|
+| path         | string | path | 文件路径（例如：`/folder/Report.xlsx`）。 |
+| storageName  | string | query  | 使用的存储名称。 |
+| versionId    | string | query  | 待下载的文件版本标识符（可选）。 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/File/DownloadFile)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互。
+**HTTP 响应码**
+
+| 状态码 | 描述 |
+|--------|------|
+| 200    | 文件下载成功；返回二进制流。 |
+| 400    | 请求错误 — 参数无效。 |
+| 401    | 未授权 — JWT 令牌缺失或无效。 |
+| 404    | 文件未找到。 |
+| 500    | 服务器内部错误。 |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/File/DownloadFile) 定义了一个公开可访问的编程接口，可直接通过 Web 浏览器发起 REST 调用。
 
 ### 下载文件示例
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
-
-{{< tabs tabTotal="2" tabID="13" tabName13="Request" tabName14="Response" >}}
+{{< tabs tabTotal="2" tabID="13" tabName13="请求" tabName14="响应" >}}
 {{< tab tabNum="13" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/Book1.xlsx" \
--X GET \
--H "Content-Type: application/json" \
--H "accept: multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MyFolder/Report.xlsx" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="14" >}}
 
-```bash
+```json
 {
-    Stream
+  "Stream": "<二进制数据>"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*注意：响应中包含文件的二进制流。使用 cURL 时请使用 `-o filename.xlsx` 将输出保存为文件。*
 
 ## **如何删除文件**
 
 ### 删除文件 API 信息
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/storage/file/{path}
+DELETE https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 ```
 
-请求参数为：
+请求参数如下：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|小路|细绳|小路|文件路径（例如，“/folder/file.ext”）|
-|存储名称|细绳|询问|存储名称|
-|版本号|细绳|询问|要删除的文件版本 ID|
+| 参数名       | 类型   | 位置 | 描述 |
+|--------------|--------|------|------|
+| path         | string | path | 文件路径（例如：`/folder/Report.xlsx`）。 |
+| storageName  | string | query  | 使用的存储名称。 |
+| versionId    | string | query  | 待删除的文件版本标识符（可选）。 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/File/DeleteFile)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互。
+**HTTP 响应码**
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 状态码 | 描述 |
+|--------|------|
+| 200    | 文件删除成功。 |
+| 400    | 请求错误 — 缺少或无效参数。 |
+| 401    | 未授权 — JWT 令牌无效。 |
+| 404    | 文件未找到。 |
+| 500    | 服务器内部错误。 |
 
-{{< tabs tabTotal="2" tabID="15" tabName15="Request" tabName16="Response" >}}
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/File/DeleteFile) 定义了一个公开可访问的编程接口，可直接通过 Web 浏览器发起 REST 调用。
+
+### 删除文件示例
+
+{{< tabs tabTotal="2" tabID="15" tabName15="请求" tabName16="响应" >}}
 {{< tab tabNum="15" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/book12.xlsx" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MyFolder/OldReport.xlsx" \
+  -X DELETE \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="16" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*注意：删除文件是永久性的；如有需要，请提前备份。*
 
 ## **如何复制文件**
 
 ### 复制文件 API 信息
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/file/copy/{srcPath}
+PUT https://api.aspose.cloud/v3.0/cells/storage/file/copy/{srcPath}
 ```
 
-请求参数为：
+请求参数如下：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|源路径|细绳|小路|源文件路径（例如，“/folder/file.ext”）|
-|目标路径|细绳|询问|目标文件路径|
-|源存储名称|细绳|询问|源存储名称|
-|目标存储名称|细绳|询问|目标存储名称|
-|版本号|细绳|询问|要复制的文件版本 ID|
+| 参数名           | 类型   | 位置 | 描述 |
+|------------------|--------|------|------|
+| srcPath          | string | path | 源文件路径（例如：`/folder/Source.xlsx`）。 |
+| destPath         | string | query  | 目标文件路径（例如：`/folder/Destination.xlsx`）。 |
+| srcStorageName   | string | query  | 源存储名称（可选）。 |
+| destStorageName  | string | query  | 目标存储名称（可选）。 |
+| versionId        | string | query  | 待复制的文件版本 ID（可选）。 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/File/CopyFile)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互。
+**HTTP 响应码**
+
+| 状态码 | 描述 |
+|--------|------|
+| 200    | 文件复制成功。 |
+| 400    | 请求错误 — 参数无效。 |
+| 401    | 未授权 — JWT 令牌缺失或无效。 |
+| 404    | 源文件未找到。 |
+| 500    | 服务器内部错误。 |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/File/CopyFile) 定义了一个公开可访问的编程接口，可直接通过 Web 浏览器发起 REST 调用。
 
 ### 复制文件示例
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
-
-{{< tabs tabTotal="2" tabID="17" tabName17="Request" tabName18="Response" >}}
-
+{{< tabs tabTotal="2" tabID="17" tabName17="请求" tabName18="响应" >}}
 {{< tab tabNum="17" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/copy/Book1.xlsx?destPath=Book2.xlsx" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/copy/MyFolder/Report.xlsx?destPath=MyFolder/ReportCopy.xlsx" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="18" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*注意：复制操作不会删除源文件。*
 
 ## **如何移动文件**
 
 ### 移动文件 API 信息
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/file/move/{srcPath}
+PUT https://api.aspose.cloud/v3.0/cells/storage/file/move/{srcPath}
 ```
 
-请求参数为：
+请求参数如下：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|源路径|细绳|小路|源文件路径（例如，“/src.ext”）|
-|目标路径|细绳|询问|目标文件路径（例如，“/dest.ext”）|
-|源存储名称|细绳|询问|源存储名称|
-|目标存储名称|细绳|询问|目标存储名称|
-|版本号|细绳|询问|要移动的文件版本 ID|
+| 参数名           | 类型   | 位置 | 描述 |
+|------------------|--------|------|------|
+| srcPath          | string | path | 源文件路径（例如：`/folder/Source.xlsx`）。 |
+| destPath         | string | query  | 目标文件路径（例如：`/folder/Destination.xlsx`）。 |
+| srcStorageName   | string | query  | 源存储名称（可选）。 |
+| destStorageName  | string | query  | 目标存储名称（可选）。 |
+| versionId        | string | query  | 待移动的文件版本 ID（可选）。 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/File/MoveFile)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互。
+**HTTP 响应码**
+
+| 状态码 | 描述 |
+|--------|------|
+| 200    | 文件移动成功。 |
+| 400    | 请求错误 — 参数无效。 |
+| 401    | 未授权 — JWT 令牌缺失或无效。 |
+| 404    | 源文件未找到。 |
+| 500    | 服务器内部错误。 |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/File/MoveFile) 定义了一个公开可访问的编程接口，可直接通过 Web 浏览器发起 REST 调用。
 
 ### 移动文件示例
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/move/Book2.xlsx?destPath=MoveBook2.xlsx" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/move/MyFolder/Report.xlsx?destPath=MyFolder/ReportMoved.xlsx" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*注意：移动文件会保留其版本历史。*
 
 ## **如何创建文件夹**
 
 ### 创建文件夹 API 信息
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
+PUT https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 ```
 
-请求参数为：
+请求参数如下：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|小路|细绳|小路|要创建的文件夹路径（例如，“文件夹_1/文件夹_2/') |
-|存储名称|细绳|询问|存储名称|
+| 参数名       | 类型   | 位置 | 描述 |
+|--------------|--------|------|------|
+| path         | string | path | 待创建的文件夹路径（例如：`folder1/folder2/`）。 |
+| storageName  | string | query  | 使用的存储名称。 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Folder/CreateFolder)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互。
+**HTTP 响应码**
+
+| 状态码 | 描述 |
+|--------|------|
+| 200    | 文件夹创建成功。 |
+| 400    | 请求错误 — 路径或参数无效。 |
+| 401    | 未授权 — JWT 令牌缺失或无效。 |
+| 500    | 服务器内部错误。 |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Folder/CreateFolder) 定义了一个公开可访问的编程接口，可直接通过 Web 浏览器发起 REST 调用。
 
 ### 创建文件夹示例
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
-
-{{< tabs tabTotal="2" tabID="3" tabName3="Request" tabName4="Response" >}}
+{{< tabs tabTotal="2" tabID="3" tabName3="请求" tabName4="响应" >}}
 {{< tab tabNum="3" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/newfolder" \
--X PUT \
--H "accept: application/json" \
--H "Content-Type: multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/newfolder" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="4" >}}
 
-```bash
+```json
 {
   "Uploaded": [
-    "string"
+    "newfolder"
   ],
-  "Errors": [
-    {
-      "Code": "string",
-      "Message": "string",
-      "Description": "string",
-      "InnerError": {
-        "RequestId": "string",
-        "Date": "2021-12-02T03:21:11.704Z"
-      }
-    }
-  ]
+  "Errors": []
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-## **如何获取文件夹中的文件**
+*注意：文件夹路径区分大小写。*
 
-### 获取文件 API 信息
+## **如何获取文件夹中的文件列表**
+
+### 获取文件列表 API 信息
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
+GET https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 ```
 
-请求参数为：
+请求参数如下：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|小路|细绳|小路|文件夹路径（例如“/folder”）|
-|存储名称|细绳|询问|存储名称|
+| 参数名       | 类型   | 位置 | 描述 |
+|--------------|--------|------|------|
+| path         | string | path | 文件夹路径（例如：`/folder`）。 |
+| storageName  | string | query  | 使用的存储名称。 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Folder/GetFilesList)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互。
+**HTTP 响应码**
 
-### 获取文件示例
+| 状态码 | 描述 |
+|--------|------|
+| 200    | 返回文件和子文件夹列表。 |
+| 400    | 请求错误 — 路径无效。 |
+| 401    | 未授权 — JWT 令牌缺失或无效。 |
+| 404    | 文件夹未找到。 |
+| 500    | 服务器内部错误。 |
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Folder/GetFilesList) 定义了一个公开可访问的编程接口，可直接通过 Web 浏览器发起 REST 调用。
 
-{{< tabs tabTotal="2" tabID="5" tabName5="Request" tabName6="Response" >}}
+### 获取文件列表示例
+
+{{< tabs tabTotal="2" tabID="5" tabName5="请求" tabName6="响应" >}}
 {{< tab tabNum="5" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
--X GET \
--H "Content-Type: application/json" \
--H "accept: multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="6" >}}
 
-```bash
+```json
 {
   "Value": [
     {
-      "Name": "string",
-      "IsFolder": true,
+      "Name": "Report.xlsx",
+      "IsFolder": false,
       "ModifiedDate": "2021-12-08T12:38:45.739Z",
-      "Size": 0,
-      "Path": "string"
+      "Size": 102400,
+      "Path": "/desfolder/Report.xlsx"
     }
   ]
 }
@@ -366,183 +417,217 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*注意：响应中列出指定路径下的文件及子文件夹。*
 
 ## **如何删除文件夹**
 
 ### 删除文件夹 API 信息
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
+DELETE https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 ```
 
-请求参数为：
+请求参数如下：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|小路|细绳|小路|文件夹路径（例如“/folder”）|
-|存储名称|细绳|询问|存储名称|
-|递归|布尔值|询问|错误的|
+| 参数名       | 类型    | 位置 | 描述 |
+|--------------|---------|------|------|
+| path         | string  | path | 文件夹路径（例如：`/folder`）。 |
+| storageName  | string  | query  | 使用的存储名称。 |
+| recursive    | boolean | query  | 设置为 `true` 表示递归删除文件夹及其内容。 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Folder/DeleteFolder)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互。
+**HTTP 响应码**
+
+| 状态码 | 描述 |
+|--------|------|
+| 200    | 文件夹删除成功。 |
+| 400    | 请求错误 — 参数无效。 |
+| 401    | 未授权 — JWT 令牌缺失或无效。 |
+| 404    | 文件夹未找到。 |
+| 500    | 服务器内部错误。 |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Folder/DeleteFolder) 定义了一个公开可访问的编程接口，可直接通过 Web 浏览器发起 REST 调用。
 
 ### 删除文件夹示例
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
-
-{{< tabs tabTotal="2" tabID="7" tabName7="Request" tabName8="Response" >}}
-
+{{< tabs tabTotal="2" tabID="7" tabName7="请求" tabName8="响应" >}}
 {{< tab tabNum="7" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
+  -X DELETE \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="8" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*注意：使用 `recursive=true` 删除文件夹会永久移除其全部内容。*
 
 ## **如何复制文件夹**
 
 ### 复制文件夹 API 信息
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/folder/copy/{srcPath}
+PUT https://api.aspose.cloud/v3.0/cells/storage/folder/copy/{srcPath}
 ```
 
-请求参数为：
+请求参数如下：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|源路径|细绳|小路|源文件夹路径（例如“/src”）|
-|目标路径|细绳|询问|目标文件夹路径（例如“/dst”）|
-|源存储名称|细绳|询问|源存储名称|
-|目标存储名称|细绳|询问|目标存储名称|
+| 参数名           | 类型   | 位置 | 描述 |
+|------------------|--------|------|------|
+| srcPath          | string | path | 源文件夹路径（例如：`/src`）。 |
+| destPath         | string | query  | 目标文件夹路径（例如：`/dst`）。 |
+| srcStorageName   | string | query  | 源存储名称（可选）。 |
+| destStorageName  | string | query  | 目标存储名称（可选）。 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Folder/CopyFolder)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互。
+**HTTP 响应码**
+
+| 状态码 | 描述 |
+|--------|------|
+| 200    | 文件夹复制成功。 |
+| 400    | 请求错误 — 参数无效。 |
+| 401    | 未授权 — JWT 令牌缺失或无效。 |
+| 404    | 源文件夹未找到。 |
+| 500    | 服务器内部错误。 |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Folder/CopyFolder) 定义了一个公开可访问的编程接口，可直接通过 Web 浏览器发起 REST 调用。
 
 ### 复制文件夹示例
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
-
-{{< tabs tabTotal="2" tabID="21" tabName21="Request" tabName22="Response" >}}
+{{< tabs tabTotal="2" tabID="21" tabName21="请求" tabName22="响应" >}}
 {{< tab tabNum="21" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/copy/srcfolder?destPath=desfolder" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/copy/srcfolder?destPath=desfolder" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="22" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*注意：复制操作会创建一个与源文件夹内容相同的新文件夹。*
 
 ## **如何移动文件夹**
 
 ### 移动文件夹 API 信息
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/folder/move/{srcPath}
+PUT https://api.aspose.cloud/v3.0/cells/storage/folder/move/{srcPath}
 ```
 
-请求参数为：
+请求参数如下：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|源路径|细绳|小路|要移动的文件夹路径（例如“/folder”）|
-|目标路径|细绳|询问|要移动到的目标文件夹路径（例如“/dst”）|
-|源存储名称|细绳|询问|源存储名称|
-|目标存储名称|细绳|询问|目标存储名称|
+| 参数名           | 类型   | 位置 | 描述 |
+|------------------|--------|------|------|
+| srcPath          | string | path | 源文件夹路径（例如：`/folder`）。 |
+| destPath         | string | query  | 目标文件夹路径（例如：`/dst`）。 |
+| srcStorageName   | string | query  | 源存储名称（可选）。 |
+| destStorageName  | string | query  | 目标存储名称（可选）。 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Folder/MoveFolder)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互。
+**HTTP 响应码**
+
+| 状态码 | 描述 |
+|--------|------|
+| 200    | 文件夹移动成功。 |
+| 400    | 请求错误 — 参数无效。 |
+| 401    | 未授权 — JWT 令牌缺失或无效。 |
+| 404    | 源文件夹未找到。 |
+| 500    | 服务器内部错误。 |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Folder/MoveFolder) 定义了一个公开可访问的编程接口，可直接通过 Web 浏览器发起 REST 调用。
 
 ### 移动文件夹示例
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
-
-{{< tabs tabTotal="2" tabID="23" tabName23="Request" tabName24="Response" >}}
+{{< tabs tabTotal="2" tabID="23" tabName23="请求" tabName24="响应" >}}
 {{< tab tabNum="23" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/move/desfolder" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/move/desfolder?destPath=destfolder" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
-{{< tab tabnum="24" >}}
+{{< tab tabNum="24" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
+*注意：移动文件夹会保留其内部结构及文件版本。*
+
 ## **如何检查存储是否存在**
 
-### 存储存在 API 信息
+### 存储存在性检查 API 信息
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/{storageName}/exist
+GET https://api.aspose.cloud/v3.0/cells/storage/{storageName}/exist
 ```
 
-请求参数为：
+请求参数如下：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|存储名称|细绳|小路|存储名称|
+| 参数名       | 类型   | 位置 | 描述 |
+|--------------|--------|------|------|
+| storageName  | string | path | 待检查的存储名称。 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Storage/StorageExists)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互。
+**HTTP 响应码**
 
-### 存储存在示例
+| 状态码 | 描述 |
+|--------|------|
+| 200    | 返回存储存在性（`true` 或 `false`）。 |
+| 401    | 未授权 — JWT 令牌缺失或无效。 |
+| 404    | 未找到存储。 |
+| 500    | 服务器内部错误。 |
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Storage/StorageExists) 定义了一个公开可访问的编程接口，可直接通过 Web 浏览器发起 REST 调用。
 
-{{< tabs tabTotal="2" tabID="33" tabName33="Request" tabName34="Response" >}}
+### 存储存在性检查示例
+
+{{< tabs tabTotal="2" tabID="33" tabName33="请求" tabName34="响应" >}}
 {{< tab tabNum="33" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/cellsstorage/exist" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/MyStorage/exist" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="34" >}}
 
-```bash
+```json
 {
   "Exists": true
 }
@@ -553,41 +638,47 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/cellsstorage/exist" \
 
 ## **如何检查文件或文件夹是否存在**
 
-### 对象存在 API 信息
+### 对象存在性检查 API 信息
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/exist/{path}
+GET https://api.aspose.cloud/v3.0/cells/storage/exist/{path}
 ```
 
-请求参数为：
+请求参数如下：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|小路|细绳|小路|文件或文件夹路径（例如，“/file.ext”或“/folder”）|
-|存储名称|细绳|询问|存储名称|
-|版本号|细绳|询问|文件版本 ID|
+| 参数名       | 类型   | 位置 | 描述 |
+|--------------|--------|------|------|
+| path         | string | path | 文件或文件夹路径（例如：`/file.xlsx` 或 `/folder`）。 |
+| storageName  | string | query  | 待检查的存储名称。 |
+| versionId    | string | query  | 文件版本标识符（可选）。 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Storage/ObjectExists)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互。
+**HTTP 响应码**
 
-### 对象存在示例
+| 状态码 | 描述 |
+|--------|------|
+| 200    | 返回存在性信息。 |
+| 401    | 未授权 — JWT 令牌缺失或无效。 |
+| 404    | 文件或文件夹未找到。 |
+| 500    | 服务器内部错误。 |
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Storage/ObjectExists) 定义了一个公开可访问的编程接口，可直接通过 Web 浏览器发起 REST 调用。
 
-{{< tabs tabTotal="2" tabID="37" tabName37="Request" tabName38="Response" >}}
+### 对象存在性检查示例
+
+{{< tabs tabTotal="2" tabID="37" tabName37="请求" tabName38="响应" >}}
 {{< tab tabNum="37" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/exist/Book1.xlsx" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/exist/Book1.xlsx" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="38" >}}
 
-```bash
+```json
 {
   "Exists": true,
   "IsFolder": false
@@ -602,95 +693,105 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/exist/Book1.xlsx" \
 ### 获取磁盘使用情况 API 信息
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/disc
+GET https://api.aspose.cloud/v3.0/cells/storage/disc
 ```
 
-请求参数为：
+请求参数如下：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|存储名称|细绳|询问|存储名称|
+| 参数名       | 类型   | 位置 | 描述 |
+|--------------|--------|------|------|
+| storageName  | string | query  | 待查询的存储名称。 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Storage/GetDiscUsage)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互。
+**HTTP 响应码**
+
+| 状态码 | 描述 |
+|--------|------|
+| 200    | 返回磁盘使用情况信息。 |
+| 401    | 未授权 — JWT 令牌缺失或无效。 |
+| 500    | 服务器内部错误。 |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Storage/GetDiscUsage) 定义了一个公开可访问的编程接口，可直接通过 Web 浏览器发起 REST 调用。
 
 ### 获取磁盘使用情况示例
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
-
-{{< tabs tabTotal="2" tabID="40" tabName40="Request" tabName41="Response" >}}
-
+{{< tabs tabTotal="2" tabID="40" tabName40="请求" tabName41="响应" >}}
 {{< tab tabNum="40" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/disc" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/disc?storageName=MyStorage" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="41" >}}
 
-```bash
+```json
 {
-  "UsedSize": 0,
-  "TotalSize": 0
+  "UsedSize": 12345678,
+  "TotalSize": 987654321
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-## **如何获取文件版本**
+## **如何获取文件版本列表**
 
 ### 获取文件版本 API 信息
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/version/{path}
+GET https://api.aspose.cloud/v3.0/cells/storage/version/{path}
 ```
 
-请求参数为：
+请求参数如下：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|小路|细绳|小路|文件路径（例如，“/file.ext”）|
-|存储名称|细绳|询问|存储名称|
+| 参数名       | 类型   | 位置 | 描述 |
+|--------------|--------|------|------|
+| path         | string | path | 文件路径（例如：`/file.xlsx`）。 |
+| storageName  | string | query  | 待查询的存储名称。 |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Storage/GetFileVersions)定义一个可公开访问的编程接口，可直接从 Web 浏览器实现 REST 交互。
+**HTTP 响应码**
+
+| 状态码 | 描述 |
+|--------|------|
+| 200    | 返回文件版本列表。 |
+| 401    | 未授权 — JWT 令牌缺失或无效。 |
+| 404    | 文件未找到。 |
+| 500    | 服务器内部错误。 |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Storage/GetFileVersions) 定义了一个公开可访问的编程接口，可直接通过 Web 浏览器发起 REST 调用。
 
 ### 获取文件版本示例
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
-
-{{< tabs tabTotal="2" tabID="46" tabName46="Request" tabName47="Response" >}}
+{{< tabs tabTotal="2" tabID="46" tabName46="请求" tabName47="响应" >}}
 {{< tab tabNum="46" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/cellsstorage/exist" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/version/Report.xlsx?storageName=MyStorage" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
-{{< tab tabnum="47" >}}
+{{< tab tabNum="47" >}}
 
-```bash
+```json
 {
   "Value": [
     {
-      "Name": "string",
-      "IsFolder": true,
+      "Name": "Report.xlsx",
+      "IsFolder": false,
       "ModifiedDate": "2021-12-08T18:57:46.128Z",
-      "Size": 0,
-      "Path": "string",
-      "VersionId": "string",
+      "Size": 102400,
+      "Path": "/Report.xlsx",
+      "VersionId": "1",
       "IsLatest": true
     }
   ]
-} 
+}
 ```
 
 {{< /tab >}}

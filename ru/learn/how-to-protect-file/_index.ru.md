@@ -1,59 +1,59 @@
-﻿---
-title: Как защитить файл с помощью Aspose.Cells Clou
-linktitle: Как защитить файл Excel
+---
+title: "Как защитить файл с помощью Aspose.Cells Cloud"
+linktitle: "Как защитить файл Excel"
 type: docs
 url: /ru/how-to-protect-file
-description: Как защитить файл Excel с помощью Aspose.Cells Cloud
+description: "Как защитить файл Excel с помощью Aspose.Cells Cloud."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Как защитить файл через Aspose.Cells Cloud
+kwords: Excel, Office Cloud, REST API, Таблица, PDF, CSV, JSON, Markdown, Как защитить файл с помощью Aspose.Cells Cloud
 ---
+
 ## Введение
 
-Облако Aspose.Cells (API) — это мощное облачное решение, разработанное для создания, редактирования и преобразования файлов электронных таблиц. В этой статье мы подробно расскажем вам о процессе использования Облака Aspose.Cells (API) для защиты файлов, включая типичные примеры использования и примеры кода.
+Aspose.Cells Cloud API — это мощное облачное решение, предназначенное для создания, редактирования и конвертации файлов электронных таблиц. В данной статье мы проведём вас через процесс использования Aspose.Cells Cloud API для защиты файлов, включая типичные сценарии использования и примеры кода.
 
 ## Обзор
 
-Облако Aspose.Cells API предоставляет множество надежных API для защиты файлов Excel или электронных таблиц. Используя облако Aspose.Cells API, вы можете легко защитить файлы Excel или другие электронные таблицы, удовлетворяя широкий спектр требований.
+Aspose.Cells Cloud API предоставляет множество надёжных API-интерфейсов для защиты файлов Excel или электронных таблиц. С его помощью вы можете легко защищать файлы Excel или другие электронные таблицы, удовлетворяя разнообразные требования.
 
 Для защиты файлов доступно множество API, как правило, совместимых с различными онлайн-средами. Ниже приведено подробное описание этих API:
 
-| Функция| Описание| API Ссылка|
-|:------------------------- |:------------------------- |:------------------------- |
-|**[Защитите электронную таблицу](https://docs.aspose.cloud/cells/protect-spreadsheet/)**  | Защитите электронную таблицу.|[PostProtect](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet) |
-|**[Снять защиту электронной таблицы](https://docs.aspose.cloud/cells/unprotect-spreadsheet/)**  | Снимите защиту с электронной таблицы.|[УдалитьСнять защиту](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/UnprotectSpreadsheet) |
+| Функция        | Описание      | Ссылка на API      |
+| :------------------------- | :------------------------- | :------------------------- |
+| **[Защита электронной таблицы](https://docs.aspose.cloud/cells/protect-spreadsheet/)**  | Защита электронной таблицы. | [PostProtect](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet) |
+| **[Снятие защиты с электронной таблицы](https://docs.aspose.cloud/cells/unprotect-spreadsheet/)**  | Снятие защиты с электронной таблицы. | [DeleteUnprotect](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/UnprotectSpreadsheet) |
 
-- Ниже показаны API-интерфейсы функций защиты версии 3.0.
+- Ниже перечислены API-функции защиты для версии 3.0.
 
-| Описание функции| Документ по разработке| API Функция|
-|-----------------|-------------|---------------------------|
-|**[Защитите MS Excel и таблицу OpenDocument, применив пароль.](https://reference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook)** |[Руководство по разработке](https://docs.aspose.cloud/cells/excel-file-encrypt/) |[PostEncryptWorkbook](https://reference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook) |
-|**[Защитите MS Excel и таблицу OpenDocument.](https://reference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook)** |[Руководство по разработке](https://docs.aspose.cloud/cells/protect-excel-file/) |[PostProtectWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook) |
-|**[Защитите MS Excel и таблицу OpenDocument без использования облачного хранилища.](https://reference.aspose.cloud/cells/#/LightCells/PostProtect)** |[Руководство по разработке](https://docs.aspose.cloud/cells/protect-excel-files/) |[PostProtect](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) |
-|**[MS Excel и цифровая подпись OpenDocument Spreadsheet.](https://reference.aspose.cloud/cells/#/Protection/PostDigitalSignature)** |[Руководство по разработке](https://docs.aspose.cloud/cells/workbook/digital-signature/) |[PostDigitalSignature](https://reference.aspose.cloud/cells/#/Protection/PostDigitalSignature) |
-|**[Пакетная защита файлов.](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect)** |[Руководство по разработке](https://docs.aspose.cloud/cells/batch/protect/) |[PostBatchProtect](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect) |
+| Описание функции       | Руководство по разработке      | Функция API |
+|-----------------------|-------------------|---------------------------------|
+| **[Защита MS Excel и OpenDocument Spreadsheet с помощью пароля.](https://reference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook)** | [Руководство по разработке](https://docs.aspose.cloud/cells/excel-file-encrypt/) | [PostEncryptWorkbook](https://reference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook) |
+| **[Защита MS Excel и OpenDocument Spreadsheet.](https://reference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook)** | [Руководство по разработке](https://docs.aspose.cloud/cells/protect-excel-file/) | [PostProtectWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook) |
+| **[Защита MS Excel и OpenDocument Spreadsheet без использования облачного хранилища.](https://reference.aspose.cloud/cells/#/LightCells/PostProtect)** | [Руководство по разработке](https://docs.aspose.cloud/cells/protect-excel-files/) | [PostProtect](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) |
+| **[Цифровая подпись для MS Excel и OpenDocument Spreadsheet.](https://reference.aspose.cloud/cells/#/Protection/PostDigitalSignature)** | [Руководство по разработке](https://docs.aspose.cloud/cells/workbook/digital-signature/) | [PostDigitalSignature](https://reference.aspose.cloud/cells/#/Protection/PostDigitalSignature) |
+| **[Пакетная защита файлов.](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect)** | [Руководство по разработке](https://docs.aspose.cloud/cells/batch/protect/) | [PostBatchProtect](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect) |
 
-# Как защитить файл Excel с помощью облака Aspose.Cells
+# Как защитить файл Excel с помощью Aspose.Cells Cloud
 
- Облако Aspose.Cells API обеспечивает[несколько SDK](https://github.com/aspose-cells-cloud) для разных языков программирования. Выберите SDK, соответствующий вашему предпочитаемому языку программирования, и следуйте прилагаемой документации по установке и инициализации. Вы также можете создать свой собственный SDK в соответствии с[API ссылка](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet)В этом разделе мы будем использовать C# в качестве примера для подробного описания процесса объединения файлов.
+Aspose.Cells Cloud API предоставляет [несколько SDK](https://github.com/aspose-cells-cloud) для различных языков программирования. Выберите SDK, соответствующий вашему предпочитаемому языку программирования, и следуйте инструкциям в сопроводительной документации для установки и инициализации. Альтернативно, вы можете создать собственное SDK в соответствии с [справочником по API](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet). В данном разделе в качестве примера мы используем C# и подробно рассмотрим процесс защиты файлов.
 
-## Регистрация и получение ключа API
+## Регистрация и получение API-ключа
 
-Прежде чем начать, вам необходимо[зарегистрируйте учетную запись Cloud Aspose](https://id.containerize.com/signup) и[получить ключ API для аутентификации](https://dashboard.aspose.cloud/applications). Зайдя на официальный сайт облака Aspose, вы можете создать бесплатную учетную запись и получить ключ API для аутентификации.
+Прежде чем приступить к работе, вам необходимо [зарегистрировать учётную запись Aspose Cloud](https://id.containerize.com/signup) и [получить API-ключ для аутентификации](https://dashboard.aspose.cloud/applications). Войдя на официальный сайт Aspose Cloud, вы можете создать бесплатную учётную запись и получить API-ключ для целей аутентификации.
 
- Более подробную информацию об операциях можно найти в следующих документах:[Быстрый старт с облаком Cells](https://docs.aspose.cloud/cells/quickstart/)
+Для более подробных действий обратитесь к следующим документам: [Быстрый старт с Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
 
-## Установка и инициализация Cloud SDK Aspose.Cells
+## Установка и инициализация SDK Aspose.Cells Cloud
 
-Установите пакет Aspose.Cells-Cloud NuGet в свой проект .NET, вы можете использовать консоль менеджера пакетов NuGet или менеджер пакетов NuGet в Visual Studio.
-Вот как можно установить пакет с помощью консоли менеджера пакетов:
+Установите пакет Aspose.Cells-Cloud NuGet в вашем .NET-проекте. Для этого можно использовать консоль менеджера пакетов NuGet или менеджер пакетов NuGet в Visual Studio.  
+Пример установки пакета через консоль менеджера пакетов:
 
 ```Powershell
 
 Install-Package Aspose.Cells-Cloud
-ww
 ```
 
-Создаёт новый экземпляр класса CellsApi, инициализируя его вашим идентификатором клиента и секретным ключом клиента. Ниже приведены подробности вышеупомянутого фрагмента кода:
+Создайте новый экземпляр класса `CellsApi`, инициализировав его вашим идентификатором клиента и секретным ключом клиента. Ниже приведены детали указанного фрагмента кода:
 
 ```CSharp
 
@@ -61,11 +61,11 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ```
 
-Обязательно замените ВАШ_API_КЛЮЧ, ВАШ_ПРИЛОЖЕНИЕ_SID и ВАШ_ПРИЛОЖЕНИЕ_KEY с вашим реальным ключом API, SID приложения и ключом приложения.
+Не забудьте заменить `YOUR_API_KEY`, `YOUR_APP_SID` и `YOUR_APP_KEY` на ваши реальные API-ключ, идентификатор приложения (Application SID) и ключ приложения (Application Key).
 
-## Создайте запрос API и позвоните по номеру API
+## Формирование запроса к API и вызов API
 
-Это создаёт новый экземпляр PostProtectRequest, инициализируя его необходимыми файлами и запросом на защиту Workbook. Затем он вызывает функцию protect API с этим запросом. Функция protect также поддерживает расширенные параметры запроса. Ниже приведены подробности вышеупомянутого фрагмента кода:
+Создаётся новый экземпляр `PostProtectRequest`, инициализированный выбранными файлами и запросом на защиту книги. Затем вызывается API-функция защиты с этим запросом. Функция защиты также поддерживает расширенные параметры запроса. Ниже приведены детали указанного фрагмента кода:
 
 ```CSharp
 
@@ -74,19 +74,19 @@ cellsApi.ProtectSpreadsheet(new ProtectSpreadsheetRequest { Spreadsheet = "Book1
 
 ```
 
-## Варианты использования
+## Сценарии использования
 
- The**защищать** Файл Excel или другая функция электронных таблиц в облаке Aspose.Cells Cloud API полезна в различных практических случаях. Вот несколько распространённых сценариев:
+Функция защиты файлов Excel или других электронных таблиц в Aspose.Cells Cloud API полезна во многих практических сценариях. Вот некоторые распространённые случаи:
 
--  Добавлять**несколько файлов цифровой подписи** для локальных файлов Excel или других файлов электронных таблиц.
--  Добавлять**защитить паролем** для локальных файлов Excel или других файлов электронных таблиц.
--  Набор**Всегда открыто только для чтения** для удобства обмена.
-- **Объединить несколько файлов в HTML-файл** для отображения и встраивания в веб-страницы.
+- Добавление **нескольких цифровых подписей** к локальным файлам Excel или другим файлам электронных таблиц.
+- Установка **парольной защиты** для локальных файлов Excel или других файлов электронных таблиц.
+- Настройка **всегда открывать только для чтения** для удобного обмена.
+- **Объединение нескольких файлов в один HTML-файл** для отображения и встраивания на веб-страницы.
 
 ## Заключение
 
-С помощью Aspose.Cells Cloud API вы можете легко создавать защищённые файлы Excel или другие электронные таблицы. Выполняя простые вызовы API и устанавливая соответствующие параметры защиты, вы можете эффективно выполнять различные требования к слиянию файлов. Интегрируйте Aspose.Cells Cloud API в свои приложения, чтобы повысить производительность и сократить время разработки.
+С помощью Aspose.Cells Cloud API вы можете легко защищать файлы Excel или другие файлы электронных таблиц. Выполняя простые вызовы API и задавая необходимые параметры защиты, вы сможете эффективно выполнять различные задачи по объединению и защите файлов. Интегрируйте Aspose.Cells Cloud API в ваши приложения, чтобы повысить производительность и сэкономить время разработки.
 
-Обратите внимание, что приведённый выше пример кода предназначен только для демонстрации, и при использовании на практике вам потребуется заменить его действительными учётными данными аутентификации и путями к файлам. Кроме того, Aspose.Cells Cloud API предлагает множество других функций, таких как создание, редактирование, изменение и обработка электронных таблиц. Подробную документацию и пример кода API можно найти на сайте[руководство разработчика официального сайта Aspose](/developer-guide/).
+Обратите внимание, что приведённый выше пример кода носит демонстрационный характер, и при практическом использовании вам потребуется заменить его на действительные учётные данные для аутентификации и пути к файлам. Кроме того, Aspose.Cells Cloud API предоставляет множество других возможностей, таких как создание, редактирование, обработка и анализ данных в электронных таблицах. Подробную документацию API и примеры кода можно найти на [разделе для разработчиков официального сайта Aspose](/developer-guide/).
 
-Надеемся, эта статья поможет вам разобраться, как использовать Cloud Aspose.Cells для защиты файлов. Удачи в реализации!
+Надеемся, что данная статья поможет вам понять, как использовать Aspose.Cells Cloud API для защиты файлов. Удачи в реализации!

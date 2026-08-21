@@ -1,28 +1,32 @@
-﻿---
-title: Lavora con Excel Cell
-second_title: Documen
-linktitle: Cella
+---
+title: "Lavorare con le celle Excel"
+ArticleTitle: "Lavorare con le celle Excel – Documentazione di Aspose.Cells Cloud"
+second_title: "Documento"
+linktitle: "Celle"
 type: docs
 url: /it/working-with-cells/
-aliases: [/working-with-worksheets/]
-keywords: REST API, spreadsheets, excel, cell
-description: "Cells.Cloud API per Excel operano: le celle operano"
+aliases: [/it/working-with-worksheets/]
+keywords: "Excel, Aspose.Cells, operazioni sulle celle, API per fogli di calcolo, API REST, formattazione celle, unione celle, calcolo formule"
+description: "Esplora l'API Aspose.Cells Cloud per le operazioni sulle celle Excel, tra cui impostazione di valori, applicazione di stili, unione/suddivisione celle e calcolo di formule."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Cells
 ---
-Cells è l'oggetto operativo di base di Aspose.Cells per il file Excel.
 
-## Mappa delle caratteristiche
+Le celle costituiscono l'oggetto operativo fondamentale di Aspose.Cells per i file Excel.
 
-{{< tabs tabTotal="3" tabID="1" tabName1="Data" tabName2="Style" tabName3="merge" >}}
+Gli sviluppatori utilizzano le operazioni sulle celle per leggere, scrivere, formattare, unire e calcolare dati all'interno di cartelle di lavoro Excel, abilitando potenti scenari di automazione e elaborazione dati.
+
+## Mappa delle funzionalità
+
+{{< tabs tabTotal="3" tabID="1" tabName1="Dati" tabName2="Stile" tabName3="Unione" >}}
 {{< tab tabNum="1" >}}
+
 <div class="row">
     <div class="col-md-6">
         <ul>
-            <li><a href="/cells/it/get-mergedcell-from-a-worksheet//">Ottieni MergedCell da un foglio di lavoro.</a></li>
-            <li><a href="/cells/it/set-value-of-a-cell-in-a-worksheet/">Imposta il valore di una cella in un foglio di lavoro Excel.</a></li>
-            <li><a href="/cells/it/set-formula-for-a-cell-in-excel-worksheets/">Imposta la formula per una cella nei fogli di lavoro Excel.</a></li>
-            <li><a href="/cells/it/calculate-cells-formula/">Calcola la formula Cells.</a></li>
+            <li><a href="/it/cells/get-mergedcell-from-a-worksheet//">Ottenere una cella unita da un foglio di lavoro.</a></li>
+            <li><a href="/it/cells/set-value-of-a-cell-in-a-worksheet/">Impostare il valore di una cella in un foglio di lavoro Excel.</a></li>
+            <li><a href="/it/cells/set-formula-for-a-cell-in-excel-worksheets/">Impostare una formula per una cella nei fogli di lavoro Excel.</a></li>
+            <li><a href="/it/cells/calculate-cells-formula/">Calcolare le formule delle celle.</a></li>
         </ul>
     </div>
 </div>
@@ -31,13 +35,13 @@ Cells è l'oggetto operativo di base di Aspose.Cells per il file Excel.
 <div class="row">
     <div class="col-md-6">
         <ul>
-            <li><a href="/cells/it/get-cell-style-from-a-worksheet/">Ottiene lo stile della cella da un foglio di lavoro Excel.</a></li>
-            <li><a href="/cells/it/clear-cells-formatting-in-excel-worksheet/">Cancella la formattazione Cells nel foglio di lavoro Excel.</a></li>
-            <li><a href="/cells/it/update-multiple-cells-style/">Aggiorna lo stile di più celle in un foglio di lavoro Excel.</a></li>
-            <li><a href="/cells/it/change-cell-style-in-excel-worksheet/">Aggiorna lo stile della cella in un foglio di lavoro Excel.</a></li>
-            <li><a href="/cells/it/apply-rich-text-formatting-to-a-cell/">Imposta la formattazione RTF su una cella del foglio di lavoro Excel.</a></li>
-            <li><a href="/cells/it/clear-contents-and-styles-of-cells-in-excel-worksheet/">Cancella il contenuto e gli stili delle celle nel foglio di lavoro Excel.</a></li>
-            <li><a href="/cells/it/working-with-conditional-formatting/">Aggiunge, elimina e aggiorna la formattazione condizionale nel foglio di lavoro Excel.</a></li>
+            <li><a href="/it/cells/get-cell-style-from-a-worksheet/">Ottenere lo stile di una cella da un foglio di lavoro Excel.</a></li>
+            <li><a href="/it/cells/clear-cells-formatting-in-excel-worksheet/">Cancellare la formattazione delle celle in un foglio di lavoro Excel.</a></li>
+            <li><a href="/it/cells/update-multiple-cells-style/">Aggiornare lo stile di più celle in un foglio di lavoro Excel.</a></li>
+            <li><a href="/it/cells/change-cell-style-in-excel-worksheet/">Modificare lo stile di una cella in un foglio di lavoro Excel.</a></li>
+            <li><a href="/it/cells/apply-rich-text-formatting-to-a-cell/">Applicare la formattazione RTF (Rich Text Format) a una cella in un foglio di lavoro Excel.</a></li>
+            <li><a href="/it/cells/clear-contents-and-styles-of-cells-in-excel-worksheet/">Cancellare contenuti e stili delle celle in un foglio di lavoro Excel.</a></li>
+            <li><a href="/it/cells/working-with-conditional-formatting/">Aggiungere, eliminare o aggiornare la formattazione condizionale in un foglio di lavoro Excel.</a></li>
         </ul>
     </div>
 </div>
@@ -46,10 +50,11 @@ Cells è l'oggetto operativo di base di Aspose.Cells per il file Excel.
 <div class="row">
     <div class="col-md-6">
         <ul>
-            <li><a href="/cells/it/merge-cells-in-excel-worksheet/">Unisci Cells nel foglio di lavoro Excel.</a></li>
-            <li><a href="/cells/it/Unmerge Cells in Excel Worksheet/">unisci-celle-in-un-foglio-di-lavoro-excel.</a></li>
-            <li><a href="/cells/it/get-cells-properties/">Ottieni Cells Proprietà.</a></li>
+            <li><a href="/it/cells/merge-cells-in-excel-worksheet/">Unire celle in un foglio di lavoro Excel.</a></li>
+            <li><a href="/it/cells/unmerge-cells-in-excel-worksheet/">Separare celle in un foglio di lavoro Excel.</a></li>
+            <li><a href="/it/cells/get-cells-properties/">Ottenere le proprietà delle celle.</a></li>
         </ul>
+    </div>
 </div>
 {{< /tab >}}
 

@@ -1,71 +1,107 @@
-﻿---
-title: Cells formülünü hesapla
-type: docs
-url: /tr/calculate-cells-formula/
-weight: 90
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Cells formülünü hesapla
 ---
-Bu REST API, Excel dosyasında `cells formula`'in hesaplanmasını gösterir.
+title: "Hücre Formülünü Hesapla – Aspose.Cells Cloud API"
+type: docs
+url: /calculate-cells-formula/
+weight: 90
+keywords: "Aspose.Cells Cloud, hücre formülünü hesapla, Excel API, REST API, SDK"
+description: "Aspose.Cells Cloud REST API’si (v3.0) ile bir Excel hücre formülünü hesaplayın. Uç nokta, parametreler, cURL örneği ve SDK kod snippet’lerini içerir."
+ArticleTitle: "Hücre Formülünü Hesapla – Aspose.Cells Cloud API Belgeleri"
+---
 
-## RSET API
+## REST API
+
+Bu REST API, bir Excel çalışma kitabındaki **hücre formülünü** hesaplar.
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/calculate
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/calculate
 ```
 
-İstek parametreleri şunlardır:
+## Güvenlik ve Kimlik Doğrulama
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| hücreAdı| sicim| yol||
-| seçenekler|| vücut||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulamaya](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) ihtiyaç duyar.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostCellCalculate) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı | Tür   | Parametre Konumu (path/query/body) | Açıklama                                                                 |
+|---------------|-------|------------------------------------|--------------------------------------------------------------------------|
+| name          | string | path                               | Excel dosyasının adı (örneğin, `Book1.xlsx`).                            |
+| sheetName     | string | path                               | Hücreyi içeren çalışma sayfasının adı.                                   |
+| cellName      | string | path                               | Hesaplanacak hücrenin adresi (örneğin, `A1`).                           |
+| options       | object | body                               | Hesaplama seçeneklerini içeren JSON nesnesi (bkz. **Options nesnesi** tablosu). |
+| folder        | string | query                              | Dosyanın bulunduğu depolama klasörü.                                     |
+| storageName   | string | query                              | Aspose Cloud deposunun adı.                                              |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+#### Options nesnesi
+
+| Alan             | Tür     | Açıklama                                                                        | Varsayılan |
+|------------------|---------|---------------------------------------------------------------------------------|------------|
+| CalcStackSize    | string  | Maksimum hesaplama yığını boyutu.                                               | `"1"`      |
+| IgnoreError      | boolean | `true` ise hesaplama hataları yoksayılır ve hücre değeri `#N/A` olarak ayarlanır. | `false`    |
+| Recursive        | boolean | Bağımlı hücrelerin özyinelemeli hesaplanmasını sağlar.                           | `false`    |
+| Precision        | string  | Sayısal sonuçlar için ondalık basamak sayısı.                                  | `"15"`     |
+| UseThreading     | boolean | Çoklu iş parçacıklı hesaplamayı sağlar.                                         | `false`    |
+
+
+### **Yanıt**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                                       |
+|-----|-----------------------------|----------------------------------------------------------------|
+| 200 | OK                          | Filtre başarıyla uygulandı; yanıt işlem detaylarını içerir.  |
+| 400 | Bad Request                 | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized                | Geçersiz veya eksik JWT belirteci.                             |
+| 413 | Payload Too Large           | Yüklenen dosya boyut sınırını aşıyor.                          |
+| 500 | Internal Server Error       | Beklenmeyen sunucu hatası.                                     |
+
+## PostCellCalculate API’yi SDK’larla Nasıl Kullanılır
+
+### PostCellCalculate API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostCellCalculate), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’yi nasıl çağıracağınızı göstermektedir. **Önce `/connect/token` uç noktasına kimlik doğrulayarak bir JWT belirteci edinin** ve `<jwt token>` ifadesini belirteç değeriyle değiştirin.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/A1/calculate" \
--d '{"CalcStackSize": "1"}' \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/A1/calculate" \
+  -d '{"CalcStackSize":"1"}' \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanın
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntıları soyutlayarak projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub deposunu</a> kontrol edin.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak Aspose.Cells web hizmetlerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

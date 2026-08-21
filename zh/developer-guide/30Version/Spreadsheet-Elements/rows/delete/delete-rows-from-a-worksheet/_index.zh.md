@@ -1,75 +1,87 @@
-﻿---
-title: 删除 Excel 工作表上的多行
-second_title: Documen
-linktitle: 排
-type: docs
-url: /zh/rows/delete/rows/
-keywords: Delete rows on an Excel workshee
-description: Aspose.Cells Cloud REST API 支持删除 Excel 工作表上的行。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 80
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、删除 Excel 工作表上的多行
 ---
-此 REST API 表示删除 Excel 工作表上的多行。
+title: "从 Excel 工作表中删除多行"
+second_title: "文档"
+linktitle: "行"
+type: docs
+url: /rows/delete/rows/
+keywords: "Aspose.Cells Cloud, 删除行, 删除多行, Excel 工作表, REST API, SDK"
+description: "了解如何使用 Aspose.Cells Cloud REST API 从 Excel 工作表中删除一行或多行。包括端点详情、参数说明、cURL 示例以及多种编程语言的 SDK 代码示例。"
+weight: 80
+ArticleTitle: "使用 Aspose.Cells Cloud API 从 Excel 工作表中删除多行"
+---
 
-## 重新设置 API
+此 REST API 用于从 Excel 工作表中删除多行。
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
+**前置条件**：调用此端点前，您必须已通过 Aspose Cloud 身份验证获取有效的 JWT 访问令牌，并对工作簿拥有适当的存储权限。
+
+## DeleteWorksheetRows API
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
 
-请求参数为：
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表 bame。|
-|起始行|整数|询问|需要操作的起始行索引。|
-|总行数|整数|询问|1 |
-|更新参考|布尔值|询问|真的|
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 是安全的，需要基于 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT 令牌的身份验证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### **请求参数**
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名          | 类型    | 路径 / 查询字符串 / HTTP 请求体 | 描述                                                         |
+| --------------- | ------- | ------------------------------- | ------------------------------------------------------------ |
+| name            | string  | path                            | 工作簿名称。                                                 |
+| sheetName       | string  | path                            | 工作表名称。                                                 |
+| startrow        | integer | query                           | 待删除首行的从零开始的索引（例如，`0` 表示第一行）。         |
+| totalRows       | integer | query                           | 待删除的行数。                                               |
+| updateReference | boolean | query                           | 删除后是否更新引用（`true`/`false`）。                       |
+| folder          | string  | query                           | 文档所在文件夹。                                             |
+| storageName     | string  | query                           | 存储名称。                                                   |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) 定义了一个公开可用的编程接口，可让您直接从 Web 浏览器发起 REST 请求。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。**所有端点均需使用 HTTPS；HTTP 已被弃用。**
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=1&updateReference=true" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+**可能的响应码**
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| HTTP 状态码 | 描述                         |
+|-------------|------------------------------|
+| 200         | 行删除成功。                 |
+| 400         | 请求错误 — 参数无效。         |
+| 401         | 未授权 — 缺少或无效的 JWT 令牌。 |
+| 404         | 未找到 — 工作簿或工作表不存在。 |
+| 500         | 服务器内部错误 — 发生意外情况。 |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+## 云 SDK 家族
+
+使用 SDK 是加快开发速度的最佳方式。SDK 可处理底层细节，让您专注于项目任务。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -122,3 +134,4 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 {{< /tab >}}
 
 {{< /tabs >}}
+---

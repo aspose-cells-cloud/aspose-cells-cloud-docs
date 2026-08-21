@@ -1,65 +1,95 @@
-﻿---
-title: Modifier la largeur des colonnes à l'intérieur de la rangée
-second_title: Documen
-linktitle: Largeur de colonne
-type: docs
-url: /fr/ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
-keywords: Set column width for range on an Excel workshee
-description: Aspose.Cells Cloud REST API prend en charge la définition de la largeur de colonne pour une plage dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 74
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Modifier la largeur des colonnes dans la plage
 ---
-Ce REST API indique Définir la largeur de colonne de la plage
+title: "Modifier les largeurs de colonnes dans une plage"
+ArticleTitle: "Modifier les largeurs de colonnes dans une plage – Aspose.Cells Cloud API"
+second_title: "Document"
+linktitle: "Largeur de colonne"
+type: docs
+url: /ranges/update/column-width/
+aliases: [/change-widths-of-columns-inside-the-range/]
+keywords: "Aspose.Cells, largeur de colonne, API REST, Excel, SDK, plage, cloud"
+description: "Découvrez comment modifier les largeurs de colonnes dans une plage à l’aide de l’API REST Aspose.Cells Cloud ou des SDK (C#, Java, Python, etc.). Inclut cURL, détails sur la requête/réponse et étapes d’authentification."
+weight: 74
+---
 
-## RSET API
+Cet API REST définit la largeur de colonne d'une plage.
+
+## Sécurité et authentification
+Les API REST Aspose.Cells Cloud sont sécurisées et exigent une [authentification basée sur un jeton JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth
- 
 ```
 
-Les paramètres de la requête sont :
+**Prérequis** – Avant d’appeler le point de terminaison, vous devez :
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin||
-| nom de la feuille| chaîne| chemin||
-| valeur| nombre| requête||
-| gamme|| corps||
-| dossier| chaîne| requête||
-| nom de stockage| chaîne| requête| nom de stockage.|
+1. Créer un compte Aspose Cloud et obtenir un *ID client* et un *secret client*.  
+2. Demander un jeton JWT en appelant le point de terminaison OAuth (`/connect/token`). Le jeton est retourné dans le champ `access_token`.  
+3. Télécharger le classeur cible vers votre stockage Aspose Cloud (ou vous assurer qu’il existe déjà dans le dossier spécifié).  
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeColumnWidth) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+Les paramètres de la requête sont les suivants :
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom du paramètre | Type   | Emplacement | Description |
+|------------------|--------|-------------|-------------|
+| name             | string | path        | Nom du fichier du classeur |
+| sheetName        | string | path        | Nom de la feuille de calcul |
+| value            | number | query       | Valeur souhaitée pour la largeur de colonne |
+| range            | object | body        | Objet plage définissant les cellules cibles |
+| folder           | string | query       | Chemin du dossier où le classeur est stocké |
+| storageName      | string | query       | Nom du service de stockage |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeColumnWidth) définit une interface de programmation accessible publiquement et vous permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
+<h3 id="request">Requête</h3>
+
 ```bash
- 
+# Appeler le point de terminaison columnWidth pour le classeur *test.xlsx*,
+# feuille *Sheet1*, en définissant la largeur des colonnes sélectionnées à 20 points.
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/columnWidth?value=20" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}" 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>" \
+  -d '{
+        "ColumnCount": 7,
+        "ColumnWidth": 19,
+        "FirstColumn": 0,
+        "FirstRow": 9,
+        "Name": "string",
+        "RefersTo": "string",
+        "RowCount": 1,
+        "RowHeight": 15,
+        "Worksheet": "Sheet1"
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+<h3 id="response">Réponse</h3>
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+*Réponses d’erreur possibles*  
+
+| Code HTTP | Description                               |
+|-----------|-------------------------------------------|
+| 400       | Requête incorrecte – JSON ou paramètres invalides |
+| 401       | Non autorisé – jeton manquant ou invalide |
+| 404       | Non trouvé – classeur ou feuille de calcul absent |
 
 {{< /tab >}}
 
@@ -67,9 +97,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK constitue la meilleure méthode pour accélérer le développement. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants illustrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -122,3 +152,25 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## FAQ
+
+**Q :** *Quel point de terminaison dois-je appeler pour définir la largeur de colonne d’une plage dans un classeur Excel ?*  
+**R :** `POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth`, où `{name}` est le nom du fichier du classeur et `{sheetName}` est le nom de la feuille de calcul cible.
+
+**Q :** *Comment authentifier la requête lors de l'utilisation de l'API de largeur de colonne ?*  
+**R :** Inclure l’en-tête `Authorization: Bearer <jeton jwt>`. Obtenez le jeton JWT via le flux OAuth Aspose Cloud (`/connect/token`) en utilisant votre ID client et votre secret client.
+
+**Q :** *Quel corps JSON dois-je envoyer pour modifier la largeur des colonnes A à C à 25 points ?*  
+**R :**  
+
+```json
+{
+  "FirstColumn": 0,
+  "ColumnCount": 3,
+  "FirstRow": 0,
+  "RowCount": 1
+}
+```
+
+Ajoutez le paramètre de requête `value=25` à l’URL de la requête.

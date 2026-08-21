@@ -1,121 +1,303 @@
-﻿---
-title: كليا
-type: docs
-url: /ar/comments/clear/
-aliases: [/delete-all-comments-in-a-worksheet/]
-keywords: REST API, spreadsheets, excel, clear comment
-description: "Cells.Cloud API لـ Excel يعمل: مسح التعليقات"
-weight: 50
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، مسح
 ---
-يشير هذا REST API إلى حذف جميع التعليقات الخاصة بورقة العمل.
+title: "حذف جميع تعليقات ورقة العمل"
+description: "احذف جميع التعليقات من ورقة عمل في ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. تعلّم عن نقطة النهاية DELETE، والمعطيات المطلوبة، والمصادقة، وطلب cURL النموذجي، وصيغة الاستجابة، وأكواد الأخطاء، وأمثلة SDK."
+keywords: "Aspose, Cells, حذف التعليقات, ورقة العمل, API, REST, Excel, cloud"
+url: /comments/clear/
+aliases:
+  - /delete-all-comments-in-a-worksheet/
+weight: 50
+---
 
-## RSET API
+# حذف جميع تعليقات ورقة العمل
+
+**إصدار الواجهة:** `v3.0`  
+**المورد:** `Worksheets` → `DeleteWorksheetComments`  
+
+تقدم Aspose.Cells Cloud نقطة نهاية REST قوية تُزيل **جميع** التعليقات من ورقة عمل مُحددة. هذه العملية غير قابلة للعكس؛ وبمجرد تنفيذها، لا يمكن استعادة التعليقات.
+
+---
+
+## المتطلبات المسبقة
+
+| المتطلب | التفاصيل |
+|----------|----------|
+| **المصادقة** | مطلوب رمز وصول JWT صالح في رأس `Authorization` (`Bearer <jwt token>`). احصل على الرمز عبر [عملية مصادقة OAuth2](https://docs.aspose.cloud/cells/authentication/). |
+| **المخزن** | يجب أن يكون الملف موجودًا في مخزن يمكن الوصول إليه من قِبل Aspose.Cells Cloud (يُستخدم المخزن الافتراضي إذا تم حذف `storageName`). |
+| **الأذونات** | يجب أن يمتلك الرمز إذن قراءة وكتابة الملف المستهدف. |
+| **حزم SDK (اختياري)** | تتوفر حزم SDK لـ .NET وJava وPHP وRuby وNode.js وPython وPerl وGo (انظر قسم **أمثلة SDK**). |
+
+---
+
+## طلب HTTP
+
+### نقطة النهاية
+
+```
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments
+```
+
+### معطيات المسار
+
+| الاسم        | النوع   | الوصف |
+|-------------|---------|--------|
+| `name`      | نص (string) | اسم ملف Excel (مثل `test.xlsx`). |
+| `sheetName` | نص (string) | اسم ورقة العمل (مثل `Sheet1`). |
+
+### معطيات الاستعلام
+
+| الاسم          | النوع   | الإلزام | الوصف |
+|----------------|---------|---------|--------|
+| `folder`       | نص (string) | اختياري | مسار المجلد الذي يحتوي على الملف. |
+| `storageName`  | نص (string) | اختياري | اسم المخزن الذي يوجد فيه الملف. |
+
+### رؤوس الطلب
+
+| الرأس                   | القيمة                              |
+|--------------------------|-------------------------------------|
+| `Authorization`          | `Bearer <jwt token>`                |
+| `Accept`                 | `application/json`                  |
+| `Content-Type`           | `application/json`                  |
+
+---
+
+## مثال على الطلب (cURL)
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments?folder=Documents&storageName=MyStorage" \
+  -X DELETE \
+  -H "Accept: application/json" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
-معلمات الطلب هي:
+*استبدل `test.xlsx` و`Sheet1` و`Documents` و`MyStorage` و`<jwt token>` بقيمك الفعلية.*
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+---
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComments) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+## الاستجابة
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### نجاح (200)
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```java
-
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```java
-
+```json
 {
-    "Code": 200,
-    "Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
-{{< /tab >}}
+يتوافق نص الاستجابة مع نموذج `CellsCloudResponse`.
 
-{{< /tabs >}}
+### استجابات الأخطاء
 
-## عائلة SDK السحابية
+| كود HTTP | المعنى                          | مثال على النص |
+|----------|----------------------------------|----------------|
+| **400**  | طلب خاطئ – معطيات غير صحيحة.   | `{ "Code": 400, "Message": "Invalid request." }` |
+| **401**  | عدم مصادقة – رمز JWT مفقود أو غير صالح. | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404**  | غير موجود – الملف أو ورقة العمل غير موجودة. | `{ "Code": 404, "Message": "Resource not found." }` |
+| **500**  | خطأ داخلي في الخادم.             | `{ "Code": 500, "Message": "Server error." }` |
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+---
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+## أمثلة باستخدام حزم SDK
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+توضح المقاطع التالية كيفية استدعاء نقطة النهاية باستخدام حزم SDK الرسمية لـ Aspose.Cells Cloud (الإصدار 3.13.0). استبدل القيم الوهمية (`<fileName>` و`<sheet>` و`<jwt token>`، إلخ) ببياناتك الخاصة.
 
-{{< tab tabNum="1" >}}
+### C#  
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleDeleteWorksheetComments.cs" >}}
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
 
-{{< /tab >}}
+var apiInstance = new WorksheetsApi();
+var name = "test.xlsx"; // string | اسم الملف.
+var sheetName = "Sheet1"; // string | اسم ورقة العمل.
+var folder = "Documents"; // string | مسار المجلد (اختياري)
+var storageName = "MyStorage"; // string | اسم المخزن (اختياري)
 
-{{< tab tabNum="2" >}}
+try
+{
+    var response = apiInstance.DeleteWorksheetComments(name, sheetName, folder, storageName);
+    Console.WriteLine(response.Status);
+}
+catch (Exception e)
+{
+    Console.WriteLine("Exception when calling WorksheetsApi.DeleteWorksheetComments: " + e.Message );
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_DeleteWorksheetComments.java" >}}
+### Java  
 
-{{< /tab >}}
+```java
+import com.aspose.cells.cloud.sdk.api.WorksheetsApi;
+import com.aspose.cells.cloud.sdk.model.*;
 
-{{< tab tabNum="3" >}}
+public class DeleteWorksheetComments {
+    public static void main(String[] args) {
+        WorksheetsApi api = new WorksheetsApi();
+        String name = "test.xlsx";
+        String sheetName = "Sheet1";
+        String folder = "Documents";
+        String storageName = "MyStorage";
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_DeleteWorksheetComments.php" >}}
+        try {
+            CellsCloudResponse resp = api.deleteWorksheetComments(name, sheetName, folder, storageName);
+            System.out.println(resp.getStatus());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
 
-{{< /tab >}}
+### PHP  
 
-{{< tab tabNum="4" >}}
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_DeleteWorksheetComments.rb" >}}
+use Aspose\Cells\Cloud\Api\WorksheetsApi;
 
-{{< /tab >}}
+$apiInstance = new WorksheetsApi();
+$name = "test.xlsx";
+$sheetName = "Sheet1";
+$folder = "Documents";
+$storageName = "MyStorage";
 
-{{< tab tabNum="5" >}}
+try {
+    $result = $apiInstance->deleteWorksheetComments($name, $sheetName, $folder, $storageName);
+    echo $result->getStatus();
+} catch (Exception $e) {
+    echo 'Exception when calling WorksheetsApi->deleteWorksheetComments: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_DeleteWorksheetComments.ts" >}}
+### Ruby  
 
-{{< /tab >}}
+```ruby
+require 'aspose_cells_cloud'
 
-{{< tab tabNum="6" >}}
+api_instance = AsposeCellsCloud::WorksheetsApi.new
+name = 'test.xlsx'
+sheet_name = 'Sheet1'
+folder = 'Documents'          # اختياري
+storage_name = 'MyStorage'    # اختياري
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_DeleteWorksheetComments.py" >}}
+begin
+  result = api_instance.delete_worksheet_comments(name, sheet_name, folder, storage_name)
+  puts result.status
+rescue AsposeCellsCloud::ApiError => e
+  puts "Exception when calling WorksheetsApi->delete_worksheet_comments: #{e}"
+end
+```
 
-{{< /tab >}}
+### Node.js (TypeScript)  
 
-{{< tab tabNum="7" >}}
+```typescript
+import { WorksheetsApi } from "@asposecloud/cells-sdk";
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_DeleteWorksheetComments.pl" >}}
+const api = new WorksheetsApi();
+const name = "test.xlsx";
+const sheetName = "Sheet1";
+const folder = "Documents";
+const storageName = "MyStorage";
 
-{{< /tab >}}
+api.deleteWorksheetComments(name, sheetName, folder, storageName)
+    .then((response) => console.log(response.status))
+    .catch((error) => console.error("Error:", error));
+```
 
-{{< tab tabNum="8" >}}
+### Python  
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_DeleteWorksheetComments.go" >}}
+```python
+from asposecellscloud import WorksheetsApi
 
-{{< /tab >}}
+api_instance = WorksheetsApi()
+name = "test.xlsx"
+sheet_name = "Sheet1"
+folder = "Documents"          # اختياري
+storage_name = "MyStorage"    # اختياري
 
-{{< /tabs >}}
+try:
+    response = api_instance.delete_worksheet_comments(name, sheet_name, folder, storage_name)
+    print(response.status)
+except Exception as e:
+    print("Exception when calling WorksheetsApi->delete_worksheet_comments:", e)
+```
+
+### Perl  
+
+```perl
+use AsposeCellsCloud::Api::WorksheetsApi;
+
+my $api_instance = AsposeCellsCloud::Api::WorksheetsApi->new();
+
+my $name = 'test.xlsx';
+my $sheet_name = 'Sheet1';
+my $folder = 'Documents';
+my $storage_name = 'MyStorage';
+
+eval {
+    my $result = $api_instance->delete_worksheet_comments(
+        name => $name,
+        sheet_name => $sheet_name,
+        folder => $folder,
+        storage_name => $storage_name
+    );
+    print $result->{status}, "\n";
+};
+if ($@) {
+    print "Exception when calling WorksheetsApi->delete_worksheet_comments: $@\n";
+}
+```
+
+### Go  
+
+```go
+package main
+
+import (
+    "fmt"
+    "github.com/asposecellscloud/aspose-cells-cloud-go/v3/sdk"
+)
+
+func main() {
+    cfg := sdk.NewConfiguration()
+    cfg.AddDefaultHeader("Authorization", "Bearer <jwt token>")
+    api := sdk.NewWorksheetsApi(cfg)
+
+    name := "test.xlsx"
+    sheetName := "Sheet1"
+    folder := "Documents"
+    storageName := "MyStorage"
+
+    resp, _, err := api.DeleteWorksheetComments(name, sheetName, folder, storageName)
+    if err != nil {
+        fmt.Printf("Error: %v\n", err)
+        return
+    }
+    fmt.Println(resp.Status)
+}
+```
+
+---
+
+## ملاحظات وقيود
+
+* تُحذف هذه العملية **جميع التعليقات** في ورقة العمل المحددة. استخدمها بحذر؛ لا توجد خاصية تراجع (Undo).
+* لا يقبل الطلب **نصًا للطلب**؛ وتُعبَّر جميع المعلومات المطلوبة عبر عنوان URL والرؤوس.
+* إذا كان الملف المستهدف **محميًا** أو كانت ورقة العمل **مقروءة فقط**، فستُعيد الواجهة خطأ `400` أو `401` حسب السبب الكامن وراء الخطأ.
+* تعمل نقطة النهاية مع الملفات المخزنة في **Aspose Cloud Storage**، وكذلك مع **Amazon S3** أو **Azure Blob** أو **Google Cloud Storage** عند الإشارة إليها بشكل صحيح عبر `storageName`.
+
+---
+
+## موارد ذات صلة
+
+* **مواصفات OpenAPI** – [DeleteWorksheetComments](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComments)
+* **دليل المصادقة** – [OAuth2 لـ Aspose.Cells Cloud](https://docs.aspose.cloud/cells/authentication/)
+* **مستودع SDK** – <https://github.com/aspose-cells-cloud>
+* **واجهة برمجة تطبيقات ورقات العمل العامة** – <https://docs.aspose.cloud/cells/worksheets/>
+
+---
+
+*آخر تحديث: 2026‑07‑30*

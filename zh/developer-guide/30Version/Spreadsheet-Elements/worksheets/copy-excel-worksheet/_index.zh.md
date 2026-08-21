@@ -1,78 +1,86 @@
-﻿---
-title: 从另一个工作表复制内容和格式
-second_title: Documen
-linktitle: 警察
-type: docs
-url: /zh/worksheets/copy/
-aliases: [/copy-excel-worksheet/]
-keywords: Copies contents and formats from another Excel worksheet
-description: Aspose.Cells Cloud REST API 支持从另一个 Excel 工作表复制内容和格式。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 20
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从另一个工作表复制内容和格式。
 ---
-此 REST API 表示 `copy a worksheet` 并以新名称保存在同一工作簿中
+title: "从另一张工作表复制内容和格式"
+second_title: "文档"
+linktitle: "复制"
+type: docs
+url: /worksheets/copy/
+aliases: [/copy-excel-worksheet/]
+keywords: "Aspose Cells 复制工作表 API、Excel 复制工作表 REST、Aspose Cloud SDK 复制、电子表格复制工作表"
+description: "了解如何使用 Aspose.Cells Cloud REST API 将工作表及其格式复制到新工作表中。包含端点、参数、cURL 和适用于 C#、Java、Python 等语言的 SDK 示例。"
+weight: 20
+---
 
-## 重新设置 API
+此 REST API 可将一张工作表及其格式复制到同一工作簿中的新工作表中。
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/copy
- 
 ```
 
-请求参数为：
+请求参数如下所示：
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路||
-|工作表名称|细绳|小路||
-|源表|细绳|询问||
-|选项||身体||
-|源工作簿|细绳|询问||
-|源文件夹|细绳|询问||
-|文件夹|细绳|询问||
-|存储名称|细绳|询问|存储名称。|
+| 参数名称         | 类型   | 位置 | 描述                                                       |
+| ---------------- | ------ | ---- | ---------------------------------------------------------- |
+| `name`           | string | path | 工作簿文件的名称。                                         |
+| `sheetName`      | string | path | 目标工作表（即新工作表）的名称。                           |
+| `sourceSheet`    | string | query | 要复制的工作表名称。                                       |
+| `options`        | object | body | 包含复制选项（如列宽、公式等）的 JSON 对象。              |
+| `sourceWorkbook` | string | query | 若源工作簿与当前工作簿不同，则指定其名称。                 |
+| `sourceFolder`   | string | query | 源工作簿所在的文件夹路径。                                 |
+| `folder`         | string | query | 目标工作簿将被保存到的文件夹路径。                         |
+| `storageName`    | string | query | 要使用的存储服务名称。                                     |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### 请求与响应示例
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet) 定义了一个公开可访问的编程接口，可让您直接通过网页浏览器进行 REST 交互。
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何通过 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/NewSheet/copy?sourceSheet=Sheet3X" \
--X POST \
--d "{ \"ColumnCharacterWidth\": true, \"CopyInvalidFormulasAsValues\": true, \"CopyNames\": true, \"ExtendToAdjacentRange\": true, \"ReferToDestinationSheet\": true, \"ReferToSheetWithSameName\": true}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -d '{ "ColumnCharacterWidth": true, "CopyInvalidFormulasAsValues": true, "CopyNames": true, "ExtendToAdjacentRange": true, "ReferToDestinationSheet": true, "ReferToSheetWithSameName": true}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+### 错误处理
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+API 返回标准 HTTP 状态码，并附带 JSON 格式的错误响应体。典型响应包括：
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+| HTTP 状态码 | 描述                                         | 示例 JSON 错误响应体                                         |
+| ----------- | -------------------------------------------- | ------------------------------------------------------------ |
+| 400         | 请求错误 — 缺少或无效的参数。                | `{ "Code": 400, "Message": "Invalid request parameters." }`   |
+| 401         | 未授权 — 缺少或无效的令牌。                  | `{ "Code": 401, "Message": "Authentication failed." }`        |
+| 404         | 未找到 — 工作簿、工作表或文件夹不存在。      | `{ "Code": 404, "Message": "Resource not found." }`           |
+| 500         | 服务器内部错误 — 意外情况发生。              | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+
+## 云 SDK 家族
+
+使用 SDK 是加速开发的最佳方式。SDK 会处理底层细节，让您专注于项目任务。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

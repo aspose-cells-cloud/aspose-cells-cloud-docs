@@ -1,74 +1,80 @@
-﻿---
-title: إلغاء دمج الخلايا المدمجة في النطاق
-second_title: Documen
-linktitle: إلغاء الدمج
-type: docs
-url: /ar/ranges/unmerge/
-aliases: [/unmerge-merged-cells-of-the-range/]
-keywords: Unmerge merged cells of the range on an Excel worksheet
-description: يدعم Cloud REST Aspose.Cells إلغاء دمج الخلايا المدمجة في النطاق في ورقة عمل Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إلغاء دمج الخلايا المدمجة في النطاق
 ---
-يشير هذا REST API إلى إلغاء دمج الخلايا المدمجة لهذا النطاق في ورقة العمل Excel.
+title: "إلغاء دمج الخلايا في نطاق"
+second_title: "مستند"
+linktitle: "إلغاء الدمج"
+type: docs
+url: /ranges/unmerge/
+aliases: [/unmerge-merged-cells-of-the-range/]
+keywords: "Aspose.Cells Cloud، إلغاء دمج الخلايا، واجهة برمجة تطبيقات إكسل، نطاق ورقة العمل، واجهة برمجة تطبيقات REST"
+description: "تعلم كيفية استخدام واجهة برمجة تطبيقات Aspose.Cells Cloud لإلغاء دمج الخلايا المدمجة داخل نطاق محدد في ورقة عمل إكسل. يتضمن عنوان النهاية (Endpoint)، المعاملات، مثال على cURL وأجزاء من كود SDK لـ C#، Java، Python، والمزيد."
+weight: 20
+---  
 
-## RSET API
+تقوم هذه الواجهة البرمجية لـ REST بإلغاء دمج الخلايا المدمجة داخل النطاق المحدد في ورقة عمل إكسل.
+
+## واجهة برمجة تطبيقات REST  
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unmerge
- 
-```
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unmerge
+```  
 
-معلمات الطلب هي:
+معاملات الطلب هي:
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل|
-| يتراوح|| جسم| النطاق في ورقة العمل|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعاملة | النوع | الموقع | مطلوبة | الوصف |
+|--------------|-------|--------|---------|--------|
+| name | سلسلة نصية | المسار | نعم | اسم ملف المصنف. |
+| sheetName | سلسلة نصية | المسار | نعم | اسم ورقة العمل. |
+| range | كائن | جسم الطلب | نعم | كائن النطاق الذي يُعرّف الخلايا المراد إلغاء دمجها. |
+| folder | سلسلة نصية | الاستعلام | لا | المجلد الذي يحتوي على المصنف. |
+| storageName | سلسلة نصية | الاستعلام | لا | اسم وحدة التخزين. |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnmerge) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnmerge) تُعرّف واجهة برمجة تطبيقات قابلة للوصول العام، وتتيح لك إجراء تفاعلات REST مباشرةً من خلال متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب الخاصة بـ Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء المكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/unmerge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}" 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+    "ColumnCount": 7,
+    "ColumnWidth": 19,
+    "FirstColumn": 0,
+    "FirstRow": 9,
+    "Name": "string",
+    "RefersTo": "string",
+    "RowCount": 1,
+    "RowHeight": 15,
+    "Worksheet": "Sheet1"
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## عائلة SDK السحابية  
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK يُعد الطريقة الأفضل لتسريع عملية التطوير، حيث يتعامل SDK مع التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات الويب الخاصة بـ Aspose.Cells باستخدام مكتبات SDK متنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

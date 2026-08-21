@@ -1,78 +1,98 @@
-﻿---
-title: Bir Çalışma Sayfasından Bir Grafik Alanının Doldurma Biçimini Alın
+---
+title: "Chart Alanı Doldurma Biçimini Al – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /tr/charts/chart-area/fill-format/get/
-aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
+aliases: [/tr/charts/chart-area/fill-format/get/]
 weight: 70
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Bir Çalışma Sayfasından Bir Grafik Alanının Doldurma Biçimini Alma
+keywords:
+  - "Aspose.Cells"
+  - "Chart Alanı"
+  - "Doldurma Biçimi"
+  - "REST API"
+  - "Excel"
+description: "Aspose.Cells Cloud API aracılığıyla bir Excel çalışma sayfasındaki bir grafik alanının doldurma biçimini (renk, desen, gradyan) alın. cURL örneği, SDK kod parçacıkları, kimlik doğrulama adımları ve yanıt detaylarını içerir."
+ArticleTitle: "Chart Alanı Doldurma Biçimini Al – Aspose.Cells Cloud API v3.0"
 ---
-Bu REST API, grafik alanı doldurma biçimi bilgisini al'ı gösterir.
- 
-## RSET API
- 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat
- 
-```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabı adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| grafikIndeksi| tam sayı| yol| Grafik endeksi.|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
- 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
- 
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Bu REST API, bir **Chart Alanı**'nın doldurma biçimi bilgilerini getirir.
+
+**Ön Koşullar**  
+Bu uç noktayı çağırmak için geçerli bir OAuth/JWT erişim belirteciniz olmalıdır. Belirteci, Aspose.Cells Cloud kimlik doğrulama akışını kullanarak edinin ve `Authorization` başlığına `Bearer <jwt token>` olarak ekleyin. SDK’lardan birini kullanıyorsanız, yöntemi çağırmadan önce SDK’nızın `client_id` ve `client_secret` ile yapılandırıldığını kontrol edin.
+
+## GetChartAreaFillFormat API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat
+```
+
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
+
+### İstek Parametreleri
+
+| Parametre Adı | Tür    | Konum | Açıklama                              |
+| ------------- | ------ | ----- | ------------------------------------- |
+| name          | string | path  | Çalışma kitabının adı.                |
+| sheetName     | string | path  | Çalışma sayfasının adı.               |
+| chartIndex    | integer| path  | Grafin indeksi.                       |
+| folder        | string | query | Çalışma kitabını içeren klasör.       |
+| storageName   | string | query | Depo adı.                             |
+
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web servislerine erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, API’yi cURL ile nasıl çağıracağınızı gösterir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea/fillFormat" 
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea/fillFormat" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "FillFormat": {
-
     "Type": "Automatic"
-
   },
-
-  "Code": "200",
-
+  "Code": 200,
   "Status": "OK"
-
 }
-
 ```
+
+**Notlar**  
+- Başarılı bir çağrı, HTTP 200 durum koduyla doldurma biçimi detaylarını döndürür.  
+- HTTP 401, kimlik doğrulama hatasını (geçersiz veya eksik belirteç) gösterir.  
+- HTTP 404, belirtilen çalışma kitabı, çalışma sayfası veya grafik indeksi bulunamadığında döner.  
+- HTTP 500, sunucu tarafında bir hata olduğunu belirtir; sorun devam ederse isteği yeniden deneyin veya destek ile iletişime geçin.
+
+| Kod | Anlam                                               |
+|-----|-----------------------------------------------------|
+| 200 | Başarılı – doldurma biçimi döndürüldü               |
+| 401 | Yetkisiz – geçersiz veya eksik belirteç             |
+| 404 | Bulunamadı – çalışma kitabı, çalışma sayfası veya grafik bulunamadı |
+| 500 | İç Sunucu Hatası                                    |
+
+İlgili işlemler için **Get Chart Area Border** ve **Get Chart Title** uç noktalarına bakın.
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
 ## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+
+SDK kullanmak, geliştirme hızını en iyi şekilde artırmak için en iyi yoldur. SDK, düşük seviye detayları yöneterek projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub deposuna</a> bakın.
+
+Aşağıdaki kod örnekleri, Aspose.Cells web servislerini çeşitli SDK’larla nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Perl" tabName10="Go" >}}
 

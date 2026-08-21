@@ -1,26 +1,31 @@
-﻿---
-title: Arbetar med Excel ringde
-second_title: Documen
-linktitle: Ringde
-type: docs
-url: /sv/ranges/
-aliases: [/working-with-ranges/]
-keywords: Working with ranges on an Excel fil
-description: "Hur man arbetar med intervall på en Excel-fil med hjälp av Aspose.Cells Cloud REST API. SDK:t stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
-weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Arbeta med intervall i en Excel-fil
 ---
-Representerar en cell, en rad, en kolumn, en markering av celler som innehåller ett eller flera sammanhängande cellblock eller ett 3D-område.
+title: "Arbeta med Excel-områden"
+second_title: "Document"
+linktitle: "Range"
+type: docs
+url: /ranges/
+aliases: [/working-with-ranges/]
+keywords: "Aspose.Cells, Excel-område, REST API, SDK, .NET, Java, Python, sammanfoga celler, kopiera område, ange områdets värde"
+description: "Lär dig hur du hämtar, ändrar, formaterar, sammanfogar, flyttar och kopierar Excel-områden med Aspose.Cells Cloud REST API. Inkluderar SDK-kodexempel för .NET, Java, Python och mer."
+weight: 100
+ArticleTitle: "Arbeta med Excel-områden – Aspose.Cells Cloud-dokumentation"
+---
 
-## Arbeta med intervall i en Excel-fil
+Ett **område** representerar en enskild cell, en hel rad, en hel kolumn, ett sammanhängande block av celler eller ett tredimensionellt (3‑D) område som sträcker sig över flera kalkylblad.
 
-- [Hämta namngivna områden i arbetsboken](/cells/sv/get-named-ranges-inside-the-workbook/)
-- [Hämta Cells-data baserat på namngivet område](/cells/sv/get-cells-data-based-on-named-range/)
-- [Ändra radhöjder inom intervallet](/cells/sv/cells/change-heights-of-rows-inside-the-range/)
-- [Ändra kolumnbredder inom området](/cells/sv/change-widths-of-columns-inside-the-range/)
-- [Kombinerar ett område på Cells till en enda cell](/cells/sv/combines-a-range-of-cells-into-a-single-cell/)
-- [Kopiera område i ett kalkylblad med inklistringsalternativ](/cells/sv/copy-range-in-a-worksheet-with-paste-options/)
-- [Ställ in stilen för intervallet](/cells/sv/set-the-style-of-the-range/)
-- [Avlägsna sammanslagning Sammanslagna Cells av intervallet](/cells/sv/unmerge-merged-cells-of-the-range/)
-- [Flytta ett namngivet intervall med ett Excel-arbetsblad](/cells/sv/move-a-named-ranged-with-a-excel-worksheet/)
-- [Ange intervallvärde i arbetsbladet Excel](/cells/sv/ranges/set-value/)
+## Arbeta med områden i en Excel-fil
+
+Aspose.Cells Cloud REST API tillhandahåller dedikerade slutpunkter för varje områdesåtgärd. Följande lista innehåller länkar till detaljerade användningsexempel samt motsvarande HTTP-metod och slutpunkt för snabbreferens.
+
+- [Hämta namngivna områden i arbetsboken](/cells/get-named-ranges-inside-the-workbook/) – Hämtar alla namngivna områden som definierats i en arbetsbok och returnerar deras adresser och omfattning. **API**: `GET /cells/{fileName}/worksheets/{sheetName}/namedranges`.
+- [Hämta celldata baserat på namngivet område](/cells/get-cells-data-based-on-named-range/) – Returnerar värdena för de celler som tillhör ett angivet namngivet område. **API**: `GET /cells/{fileName}/worksheets/{sheetName}/namedranges/{rangeName}/cells`.
+- [Ändra radhöjd i ett område](/cells/cells/change-heights-of-rows-inside-the-range/) – Justerar höjden för varje rad som ligger inom det angivna området. **API**: `PUT /cells/{fileName}/worksheets/{sheetName}/ranges/{rangeName}/rows/height`.
+- [Ändra kolumnbredd i ett område](/cells/cells/change-widths-of-columns-inside-the-range/) – Ändrar kolumnbredden för alla kolumner som skär området. **API**: `PUT /cells/{fileName}/worksheets/{sheetName}/ranges/{rangeName}/columns/width`.
+- [Sammanfoga ett cellområde till en enskild cell](/cells/combines-a-range-of-cells-into-a-single-cell/) – Sammanfogar de valda cellerna till en enda cell och bevarar värdet i övre vänstra hörnet. **API**: `POST /cells/{fileName}/worksheets/{sheetName}/ranges/{rangeName}/merge`.
+- [Kopiera ett område i ett kalkylblad med klistroptioner](/cells/copy-range-in-a-worksheet-with-paste-options/) – Kopierar ett källområde till ett målområde med valfria klistringstyper (värden, format, formler etc.). **API**: `POST /cells/{fileName}/worksheets/{sheetName}/ranges/{sourceRange}/copy?destCell={destRange}&pasteType={type}`.
+- [Ange områdets stil](/cells/set-the-style-of-the-range/) – Tillämpar typsnitt, fyllning, ram och justering till alla celler i området. **API**: `PUT /cells/{fileName}/worksheets/{sheetName}/ranges/{rangeName}/style`.
+- [Delsammanfoga celler i ett område](/cells/unmerge-merged-cells-of-the-range/) – Återställer en tidigare sammanfogningsåtgärd och återställer de ursprungliga enskilda cellerna. **API**: `POST /cells/{fileName}/worksheets/{sheetName}/ranges/{rangeName}/unmerge`.
+- [Flytta ett namngivet område tillsammans med ett Excel-kalkylblad](/cells/move-a-named-ranged-with-a-excel-worksheet/) – Flyttar ett namngivet område till en ny adress inom samma kalkylblad eller till ett annat kalkylblad. **API**: `PUT /cells/{fileName}/worksheets/{sheetName}/namedranges/{rangeName}/move`.
+- [Ange områdets värde i ett Excel-kalkylblad](/cells/ranges/set-value/) – Skriver ett enda värde eller en array av värden till det angivna området. **API**: `PUT /cells/{fileName}/worksheets/{sheetName}/ranges/{rangeName}/value`.
+
+Alla förfrågningar och svar är i JSON-format. Inkludera `Authorization`-headern med din åtkomsttoken för autentisering.

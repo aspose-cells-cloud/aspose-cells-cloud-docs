@@ -1,47 +1,62 @@
-﻿---
-title: Импорт строкового массива в рабочий лист Excel
-second_title: Documen
-linktitle: Импорт строки arra
-type: docs
-url: /ru/import-string-array-into-excel-worksheet/
-aliases: [/import-string-array-into-worksheet/,/import-data/string-array/,/import/string-array/]
-keywords: Import string array data into Excel files
-description: Aspose.Cells Cloud REST API поддерживает импорт строковых массивов данных в файлы Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 40
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Импорт строкового массива в рабочий лист Excel
 ---
-Этот REST API `import string array data` в рабочий лист Excel.
+title: "Импорт массива строк в рабочий лист Excel – Aspose.Cells Cloud"
+second_title: "Документ"
+linktitle: "Импорт массива строк"
+type: docs
+url: /import-string-array-into-excel-worksheet/
+aliases:
+  - /import-string-array-into-worksheet/
+  - /import-data/string-array/
+  - /import/string-array/
+keywords: "Aspose.Cells Cloud, импорт массива строк, REST API Excel, многокомпонентная загрузка, импорт данных в рабочий лист, облачный SDK"
+description: "Узнайте, как импортировать массив строк в рабочий лист Excel с помощью REST API Aspose.Cells Cloud (v3.0). Включает формат запроса, параметры и примеры SDK."
+weight: 40
+ArticleTitle: "Импорт массива строк в рабочий лист Excel – Aspose.Cells Cloud"
+---
 
-Запрос представляет собой HTTP-запрос с составным содержимым (см.[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)или[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Первая часть составного содержимого содержит данные ImportStringArrayOption, а вторая — файл данных.
+Импорт массива строк в рабочий лист Excel — распространённая задача при заполнении электронных таблиц данными в виде списков. Эта операция полезна, например, при загрузке значений конфигурации, передаче данных из внешних источников или инициализации рабочих листов заранее заданными наборами строк.
 
-## РСЕT API
+**Необходимые условия:**  
+- Действующий JWT-токен, полученный в рамках процедуры аутентификации Aspose.Cells Cloud.  
+- Существующая рабочая книга (или возможность её создания) в хранилище Aspose Cloud.  
+- Соответствующая версия SDK, поддерживающая модель `ImportStringArrayOption`.
 
-```bash
+Этот REST API позволяет импортировать данные в виде массива строк в рабочий лист Excel.
 
+## API PostImportData
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
+
+### **Безопасность и аутентификация**
+
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
+
+### **Параметры запроса**
+
+Запрос использует многокомпонентное HTTP-содержимое (см. [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) или [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
+Первая часть многокомпонентного тела содержит полезную нагрузку **ImportStringArrayOption**, а вторая — исходный файл с данными.
 
 Важные параметры описаны в следующей таблице:
 
-**ImportStringArrayOption**
+<caption>Параметры ImportStringArrayOption</caption>
+### **ImportStringArrayOption**
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-| FirstRow| инт||
-| FirstColumn| инт||
-| IsVertical| нить| верно/ложно.|
-| Данные|Нить[]||
-|Рабочий лист назначения| нить| имя конечного рабочего листа.|
-| IsInsert| нить| верно/ложно.|
-| ImportDataType| нить|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Источник| FileSource| Указывает позицию файла данных, если параметр BatchData равен нулю.|
+| Имя параметра        | Тип        | Описание                                                                                                                                                             |
+| --------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| FirstRow             | int        | Индекс начальной строки (с 1), куда будут помещены данные.                                                                                                            |
+| FirstColumn          | int        | Индекс начального столбца (с 1), куда будут помещены данные.                                                                                                         |
+| IsVertical           | boolean    | `true`, чтобы вставить данные вертикально; `false`, чтобы вставить горизонтально.                                                                                   |
+| Data                 | String[]   | Массив строк для импорта.                                                                                                                                             |
+| DestinationWorksheet | string     | Имя рабочего листа, в который будут импортированы данные.                                                                                                            |
+| IsInsert             | boolean    | `true`, чтобы вставить строки/столбцы (со смещением существующих ячеек); `false`, чтобы перезаписать существующие ячейки.                                            |
+| ImportDataType       | string     | Тип импортируемых данных (например, `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`). |
+| Source               | FileSource | Указывает местоположение файла с данными, когда **BatchData** равен null (например, `CloudFileSystem`, `LocalFile`). Обязателен, если `BatchData` не указан.          |
 
-**Пример**
+### Пример
 
 ```xml
-
 <ImportStringArrayOption>
     <DestinationWorksheet>Sheet1</DestinationWorksheet>
     <IsInsert>false</IsInsert>
@@ -54,14 +69,40 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
         <FilePath>Array_string_xml.txt</FilePath>
     </Source>
 </ImportStringArrayOption>
-
 ```
 
-## Семейство облачных SDK
+### Ответ
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Успешный запрос возвращает **HTTP 200** с JSON-полезной нагрузкой следующего вида:
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+Возможные коды состояния:
+
+| Код | Значение                                 |
+|-----|------------------------------------------|
+| 200 | Импорт успешно завершён                   |
+| 400 | Неверный запрос — отсутствуют или недопустимы данные |
+| 401 | Неавторизованный доступ — недействительный или отсутствующий токен |
+| 500 | Внутренняя ошибка сервера                 |
+
+
+## Как использовать API PostImportData с SDK
+
+### Спецификация API PostImportData
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) определяет публично доступное программное интерфейсное описание и позволяет выполнять взаимодействие с REST напрямую из веб-браузера.
+
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK — лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах вашего проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
+
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

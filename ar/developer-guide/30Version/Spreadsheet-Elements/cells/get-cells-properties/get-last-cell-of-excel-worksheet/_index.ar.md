@@ -1,96 +1,92 @@
-﻿---
-title: احصل على الخلية الأخيرة من ورقة العمل Excel
+---
+title: "الحصول على الخلية الأخيرة في ورقة عمل إكسل – واجهة Aspose.Cells Cloud API (الإصدار 4.0)"
 type: docs
 url: /ar/get-last-cell-of-excel-worksheet/
 weight: 30
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، JSON، Markdown، الحصول على آخر خلية من ورقة عمل Excel
+keywords: "Aspose.Cells, واجهة إكسل API, الحصول على الخلية الأخيرة, جدول بيانات, سحابة"
+description: "استرجاع عنوان الخلية الأخيرة في ورقة عمل إكسل باستخدام واجهة Aspose.Cells Cloud REST API الإصدار 4.0. يشمل تفاصيل الطلب، مثال باستخدام cURL، استجابة JSON، وأمثلة لواجهات برمجة التطبيقات (SDK)."
+ArticleTitle: "الحصول على الخلية الأخيرة في ورقة عمل إكسل – Aspose.Cells Cloud API الإصدار 4.0"
 ---
-يشير هذا REST API إلى الحصول على `endcell` في ملف Excel عندما تكون المعلمة `cellOrMethodName` هي `endcell`.
 
-- **cURL مثال**
+تُعيد هذه الواجهة **endcell** (الخلية الأخيرة) لورقة عمل إكسل عندما تُعيَّن قيمة المعامل `cellOrMethodName` إلى `endcell`.
 
+**نظرة عامة**  
+يعيد إجراء **الحصول على الخلية الأخيرة** عنوان آخر خلية مستخدمة في ورقة عمل مُحددة. ويُعد هذا الإجراء مفيدًا لتحديد النطاق الفعلي للبيانات في الورقة دون الحاجة إلى فحص整个 المصنف.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+- **مثال باستخدام cURL.**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/endcell" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/endcell" \
+     -H "Authorization: Bearer <your_access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "F341",
-
     "Row": 340,
-
     "Column": 5,
-
     "Value": "<More Info>",
-
     "Type": "IsString",
-
     "Formula": "=HYPERLINK(SUBSTITUTE(HelpURLTemplate,\"xxxxxxxxxx\",[Help Topic]),\"<More Info>\")",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
     "HtmlString": "<Font Style=\"TEXT-DECORATION: underline;FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">&lt;More Info&gt;</Font>",
-
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### المعاملات
+| المعامل            | النوع   | الإلزام | الوصف |
+|----------------------|--------|----------|-------------|
+| `fileName`           | نص (string) | نعم      | اسم ملف إكسل المحفوظ في السحابة. |
+| `worksheetName`      | نص (string) | نعم      | اسم ورقة العمل التي سيتم استرجاع الخلية الأخيرة منها. |
+| `cellOrMethodName`   | نص (string) | نعم      | يجب تعيينها إلى **`endcell`** لتشغيل هذا الإجراء. |
+| `folder` *(اختياري)* | نص (string) | لا       | مسار المجلد السحابي حيث يقع المصنف. |
+| `storageName` *(اختياري)*| نص (string) | لا   | اسم وحدة التخزين. إذا لم تُحدَّد، تُستخدم وحدة التخزين الافتراضية. |
 
-- **عائلة SDK السحابية**
+**رموز حالة HTTP**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| الرمز | المعنى                     | الوصف                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | ناجح (OK)                          | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صالح (Bad Request)                 | معاملات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم). |
+| 401  | غير مُصادَق (Unauthorized)                | رمز JWT غير صالح أو مفقود. |
+| 413  | حجم الحمولة كبير جدًا (Payload Too Large)           | حجم الملف المرفوع يتجاوز الحد المسموح. |
+| 500  | خطأ داخلي في الخادم (Internal Server Error)       | خطأ غير متوقع في الخادم. |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+- **استخدام واجهات برمجة التطبيقات (SDKs) لـ Aspose.Cells Cloud**
 
+يُعد استخدام SDKs الطريقة الأفضل لتسريع عملية التطوير. فتتولى SDKs معالجة التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بواجهات برمجة التطبيقات (SDKs) الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الرمز التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -126,7 +122,7 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetLastCellWorksheet-1.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetLastCellWorksheet-1.js" >}}
 
 {{< /tab >}}
 
@@ -137,6 +133,8 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
+_قريبًا._
 
 {{< /tab >}}
 
@@ -153,3 +151,5 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< /tabs >}}
+
+لعمليات إضافية تتعلق بتنقّل الخلايا، راجع الموضوعين **[الحصول على الخلية الأولى](/ar/get-first-cell-of-excel-worksheet/)** و **[الحصول على أكبر صف](/ar/get-max-row-of-worksheet/)**.

@@ -1,82 +1,101 @@
-﻿---
-title: Proteger un Workboo Excel
-second_title: Documen
-linktitle: Proteger un Excel Fil
-type: docs
-url: /es/protect-excel-file/
-aliases: [/protect-excel-workbooks/,/workbook/protect/]
-keywords: Protect Excel files
-description: Aspose.Cells Cloud REST API admite la protección de archivos Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 30
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Proteger un libro de trabajo Excel
 ---
-Este REST API protege un Excel `workbook`.
+title: "Proteger un libro de Excel con la API de Aspose.Cells Cloud"
+second_title: "Documento"
+linktitle: "Proteger un archivo de Excel"
+type: docs
+url: /protect-excel-file/
+aliases: [/protect-excel-workbooks/, /workbook/protect/]
+keywords: "Aspose.Cells, protección de Excel, API, REST, SDK"
+description: "Aprenda a proteger un libro de Excel mediante la API REST de Aspose.Cells Cloud. Incluye pasos de autenticación, parámetros de consulta y cuerpo, solicitud cURL y ejemplos de código SDK para C#, Java, PHP, Ruby, Node.js, Python, Perl y Go."
+weight: 30
+ArticleTitle: "Proteger un libro de Excel utilizando la API de Aspose.Cells Cloud"
+---
 
-**Parámetro de consulta**
+Esta API REST **protege** un libro de Excel, permitiéndole proteger de forma segura un libro de Excel con contraseña y opciones de protección mediante Aspose.Cells Cloud.
 
-|Nombre del parámetro|Tipo|Descripción|
-|:- |:- |:- |
-|carpeta|cadena|Carpeta del libro de trabajo original.|
-|nombreDeAlmacenamiento|cadena|Nombre de almacenamiento.|
+## API PostProtectDocument
 
-**Parámetro del cuerpo de la solicitud**
-
-|Nombre del parámetro|Tipo|Descripción|
-|:- |:- |:- |
-|protección|Solicitud de protección del libro de trabajo||
-
-**Solicitud de protección del libro de trabajo**
-
-|Nombre del parámetro|Tipo|Descripción|
-|:- |:- |:- |
-|Tipo de protección|cadena|TODO/CONTENIDO/NINGUNO/OBJETOS/ESCENARIOS/ESTRUCTURA/VENTANAS|
-|Contraseña|cadena||
-
-## RESTO API
-
-|**API**|**Tipo**|**Descripción**|**Enlace Swagger**|
-|:- |:- |:- |:- |
-|/células/{nombre}/protección|CORREO|Proteger un documento|[PostProtectDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument)|
-
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
-
- Puedes utilizar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"ProtectionType\": \"all\", \"Password\": \"aspose\"}"
-
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/protection
 ```
 
-{{< /tab >}}
+### **Seguridad y autenticación**
 
-{{< tab tabNum="2" >}}
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación basada en token JWT</a>.
 
-```java
+### Parámetros de consulta
 
+| Nombre del parámetro | Tipo   | Descripción                                                           |
+| -------------------- | ------ | --------------------------------------------------------------------- |
+| folder               | string | Carpeta que contiene el libro de origen. _(opcional)_                 |
+| storageName          | string | Nombre de la ubicación del almacenamiento. _(opcional; predeterminado = "Default")_ |
+
+### Parámetros del cuerpo de la solicitud
+
+| Nombre del parámetro | Tipo                      | Descripción                                                       |
+| -------------------- | ------------------------- | ----------------------------------------------------------------- |
+| protection           | WorkbookProtectionRequest | Objeto que define la configuración de protección para el libro. |
+
+#### WorkbookProtectionRequest
+
+| Nombre del parámetro | Tipo   | Descripción                                                                                                                                                 |
+| -------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ProtectionType       | string | Tipo de protección a aplicar. Valores permitidos (no sensibles a mayúsculas/minúsculas): **ALL**, **CONTENTS**, **NONE**, **OBJECTS**, **SCENARIOS**, **STRUCTURE**, **WINDOWS**. |
+| Password             | string | Contraseña opcional para establecer en la protección.                                                                                                       |
+
+### Respuesta
+
+```json
 {
-
-  "Code":"200",
-
-  "Status":"OK"
-
+  "Status":"OK",
+  "Code":200
 }
-
 ```
 
-{{< /tab >}}
+**Códigos de estado HTTP**
 
-{{< /tabs >}}
+| Código | Significado                 | Descripción                                                      |
+|--------|-----------------------------|------------------------------------------------------------------|
+| 200    | OK                          | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros faltantes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT inválido o faltante.                                   |
+| 413    | Payload demasiado grande     | El archivo subido supera el límite de tamaño.                   |
+| 500    | Error interno del servidor  | Error inesperado en el servidor.                                 |
 
-## Familia de SDK en la nube
+## Cómo usar la API PostProtectDocument con SDK
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+### Requisitos previos
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Antes de llamar a la API, asegúrese de haber completado los siguientes pasos:
+
+- **Obtener un token de acceso JWT** mediante el flujo de autenticación descrito en la sección de seguridad.  
+- **Subir el libro de Excel** a su almacenamiento de Aspose Cloud o confirmar que ya existe en la carpeta de destino.  
+- **Conocer el nombre del almacenamiento** (predeterminado es `"Default"` si no se especifica) y el nombre exacto del archivo que desea proteger.
+
+### Especificación de la API PostProtectDocument
+
+La <a href="https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument" target="_blank" rel="noopener noreferrer">Especificación OpenAPI</a> define una interfaz de programación públicamente accesible y le permite realizar interacciones REST directamente desde un navegador web.
+
+### Ejemplo: Proteger un libro con cURL
+
+1. Obtenga un token de acceso según se describe en **Requisitos previos / Autenticación**.  
+2. Ejecute la solicitud:
+
+   ```bash
+   curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=MyFolder&storageName=MyStorage" \
+        -H "accept: application/json" \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer <access_token>" \
+        -d '{ "ProtectionType": "ALL", "Password": "aspose" }'
+   ```
+
+   La respuesta incluirá un objeto de estado que confirma que la protección se realizó correctamente.
+
+### Utilizar los SDK de Aspose.Cells Cloud
+
+Utilizar un SDK es la forma más rápida de desarrollar con Aspose.Cells Cloud. Un SDK abstracta los detalles de bajo nivel, permitiéndole centrarse en su lógica de negocio. Consulte el <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">repositorio de GitHub</a> para ver una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells utilizando diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -129,3 +148,20 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Respuesta completa de ejemplo
+
+```json
+{
+  "Status": "OK",
+  "Code": 200,
+  "Workbook": {
+    "Name": "test.xlsx",
+    "Path": "/MyFolder/test.xlsx",
+    "Protection": {
+      "ProtectionType": "ALL",
+      "Password": true
+    }
+  }
+}
+```

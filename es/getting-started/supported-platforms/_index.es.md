@@ -1,12 +1,15 @@
-﻿---
-title: Aspose.Cells Plataforma compatible con la nube
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud Supported Platforms: Windows, Linux, and MacO"
-LinkTitle: Supported Platform
-type: docs
-url: /es/supported-platforms/
-description: Aspose.Cells Cloud admite Excel para crear, convertir, fusionar, dividir, proteger, realizar operaciones con objetos internos, etc.
-weight: 50
-kwords: Excel Nube, REST, Hoja de cálculo, PDF, CSV, JSON, Markdown, Plataformas compatibles Windows, MacOS, Linux
 ---
-Aspose.Cells La manipulación de documentos independiente de la plataforma API de Cloud es un verdadero REST API que se puede usar con cualquier lenguaje: Go, Java, .NET, NodeJS, Perl, PHP, Python, Ruby y muchos más. Puede usarlo con cualquier lenguaje o plataforma que admita REST. (Casi todas las plataformas e idiomas admiten REST y proporcionan clientes REST nativos para trabajar con API REST). No necesita preocuparse por las limitaciones del lenguaje o la plataforma. Puede usarlo con cualquier plataforma: web, escritorio, móvil y nube. El API se integra con otros servicios en la nube para brindarle la flexibilidad que necesita al procesar documentos. Es adecuado para cualquier tipo de negocio, documento o contenido.
+title: "Plataformas compatibles con Aspose.Cells Cloud"
+second_title: "Documento"
+ArticleTitle: "Plataformas compatibles con Aspose.Cells Cloud: Windows, Linux y macOS"
+LinkTitle: "Plataformas compatibles"
+type: docs
+url: /supported-platforms/
+description: "Conozca los sistemas operativos, SDK e imágenes de Docker compatibles con la API REST de Aspose.Cells Cloud en Windows, Linux y macOS."
+weight: 50
+keywords: "Aspose.Cells Cloud, API REST, Excel, hoja de cálculo, SDK, Docker, Windows, Linux, macOS"
+---
+
+Aspose.Cells Cloud proporciona una API REST verdaderamente independiente de la plataforma para la manipulación de documentos. Funciona con cualquier lenguaje que pueda enviar peticiones HTTP, como Go, Java, .NET, Node.js, Perl, PHP, Python, Ruby y muchos otros. Dado que el servicio se accede mediante llamadas REST estándar, no existen limitaciones específicas por lenguaje ni por plataforma. Puede invocar la API desde entornos web, de escritorio, móviles o en la nube. Asimismo, la API se integra con otros servicios en la nube, ofreciendo la flexibilidad necesaria para procesar formatos de documentos como Excel, PDF, CSV, JSON y muchos otros en todos los escenarios empresariales.
+
+El servicio admite las últimas versiones de Windows, las distribuciones más populares de Linux (Ubuntu, CentOS, Debian) y macOS. Los SDK están disponibles para .NET, Java, Python, PHP, Ruby, Go y Node.js, cada uno acompañado de ejemplos de código completos. Asimismo, se ofrecen imágenes de Docker para simplificar la implementación en entornos basados en contenedores, permitiéndole ejecutar la API localmente o en la nube con una configuración mínima.

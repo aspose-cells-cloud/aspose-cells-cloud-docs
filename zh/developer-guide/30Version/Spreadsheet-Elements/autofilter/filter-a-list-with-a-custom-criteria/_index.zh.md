@@ -1,86 +1,105 @@
-﻿---
-title: 在 Excel 工作表中添加自定义条件
-second_title: Documen
-linktitle: 添加自定义过滤器
-type: docs
-url: /zh/autofilter/add-custom-filter/ 
-aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/ ]
-keywords: Adds a custom filter on an Excel worksheet
-description: Aspose.Cells Cloud API 支持在 Excel 工作表上添加自定义筛选器。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 65
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 工作表中添加自定义条件
 ---
-此 REST API 表示使用 `custom criteria` 过滤列表。
+title: "在 Excel 工作表中添加自定义筛选条件"
+second_title: "文档"
+linktitle: "添加自定义筛选"
+type: docs
+url: /autofilter/add-custom-filter/
+aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/]
+keywords: "Excel, 自定义筛选, Aspose.Cells Cloud, REST API, 自动筛选, 工作表, 自定义条件"
+description: "了解如何使用 Aspose.Cells Cloud REST API 为 Excel 工作表添加自定义筛选条件。内容包括请求详情、cURL 示例以及多种编程语言的 SDK 代码片段。"
+weight: 65
+ArticleTitle: "在 Excel 工作表中添加自定义条件 – Aspose.Cells Cloud API"
+---
 
-## 重新设置 API
+此 REST API 使用**自定义条件**筛选列表。
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/custom
- 
+## PutWorksheetCustomFilter API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/custom
 ```
 
-请求参数为：
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路||
-|工作表名称|细绳|小路||
-|范围|细绳|询问||
-|字段索引|整数|询问||
-|运算符类型1|细绳|询问||
-|标准1|细绳|询问||
-|是并且|布尔值|询问||
-|运算符类型2|细绳|询问||
-|标准2|细绳|询问||
-|匹配空白|布尔值|询问||
-|刷新|布尔值|询问||
-|文件夹|细绳|询问||
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 是安全的，需要使用<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### 请求参数：
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名称       | 类型    | 位置     | 描述                                                                 |
+|----------------|---------|----------|----------------------------------------------------------------------|
+| name           | string  | path     | Excel 文件名称。                                                     |
+| sheetName      | string  | path     | 包含待筛选数据的工作表名称。                                         |
+| range          | string  | query    | 应用筛选的单元格区域（例如 `A1:B1`）。                              |
+| fieldIndex     | integer | query    | 应用筛选的列的从零开始的索引。                                       |
+| operatorType1  | string  | query    | 第一个比较运算符（例如 `LessOrEqual`、`Equal`）。                   |
+| criteria1      | string  | query    | 第一个筛选值或表达式。                                               |
+| isAnd          | boolean | query    | 若为 `true`，则使用 **AND** 连接两个条件；否则使用 **OR**。         |
+| operatorType2  | string  | query    | 第二个比较运算符（可选）。                                           |
+| criteria2      | string  | query    | 第二个筛选值或表达式（可选）。                                       |
+| matchBlanks    | boolean | query    | 若为 `true`，则在筛选结果中包含空白单元格。                         |
+| refresh        | boolean | query    | 若为 `true`，则在应用筛选后强制刷新工作表。                         |
+| folder         | string  | query    | 存储中文件所在的文件夹路径。                                         |
+| storageName    | string  | query    | 存储服务的名称。                                                     |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **响应**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP 状态码**
+
+| 状态码 | 含义             | 描述                                     |
+|--------|------------------|------------------------------------------|
+| 200    | OK（成功）       | 筛选成功应用；响应包含操作详情。         |
+| 400    | Bad Request（错误请求） | 参数缺失或无效（例如，不支持的文件类型）。 |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。                     |
+| 413    | Payload Too Large（请求实体过大） | 上传文件超过大小限制。                  |
+| 500    | Internal Server Error（内部服务器错误） | 发生意外的服务器错误。                 |
+
+## 如何使用 SDK 调用 PutWorksheetCustomFilter API
+
+### PutWorksheetCustomFilter API 规范
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter) 定义了一个公开可用的编程接口，可让您直接通过网页浏览器发起 REST 交互。
+
+您可以使用 **cURL** 命令行工具轻松访问 Aspose.Cells 网络服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/custom?range=A1:B1&fieldIndex=0&operatorType1=LessOrEqual&criteria1=1" \
--X PUT 
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/custom?range=A1:B1&fieldIndex=0&operatorType1=LessOrEqual&criteria1=1" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+### 使用 Aspose.Cells Cloud SDK
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是最快捷的开发方式。SDK 会处理底层细节，让您专注于项目逻辑。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells 网络服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -133,3 +152,5 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 {{< /tab >}}
 
 {{< /tabs >}}
+
+有关其他自动筛选操作（例如添加标准筛选或日期筛选），请参阅自动筛选章节中的相关文档页面。

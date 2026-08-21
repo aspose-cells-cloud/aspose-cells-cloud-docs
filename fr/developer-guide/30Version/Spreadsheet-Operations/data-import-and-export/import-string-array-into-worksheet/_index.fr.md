@@ -1,47 +1,62 @@
-﻿---
-title: Importer un tableau de chaînes dans la feuille de calcul Excel
-second_title: Documen
-linktitle: Importer un tableau de chaînes
-type: docs
-url: /fr/import-string-array-into-excel-worksheet/
-aliases: [/import-string-array-into-worksheet/,/import-data/string-array/,/import/string-array/]
-keywords: Import string array data into Excel files
-description: Aspose.Cells Cloud REST API prend en charge l'importation de données de tableaux de chaînes dans des fichiers Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 40
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Importer un tableau de chaînes dans la feuille de calcul Excel
 ---
-Cette feuille de travail REST API `import string array data` dans Excel.
+title: "Importer un tableau de chaînes dans une feuille de calcul Excel – Aspose.Cells Cloud"
+second_title: "Document"
+linktitle: "Importer un tableau de chaînes"
+type: docs
+url: /import-string-array-into-excel-worksheet/
+aliases:
+  - /import-string-array-into-worksheet/
+  - /import-data/string-array/
+  - /import/string-array/
+keywords: "Aspose.Cells Cloud, importer un tableau de chaînes, API REST Excel, téléchargement multipartite, import de données dans une feuille de calcul, SDK cloud"
+description: "Découvrez comment importer un tableau de chaînes dans une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud (v3.0). Inclut le format de la requête, les paramètres et des exemples de SDK."
+weight: 40
+ArticleTitle: "Importer un tableau de chaînes dans une feuille de calcul Excel – Aspose.Cells Cloud"
+---
 
-La requête est une requête HTTP avec un contenu en plusieurs parties (voir[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)ou[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La première partie du contenu en plusieurs parties contient les données ImportStringArrayOption et la seconde contient un fichier de données.
+Importer un tableau de chaînes dans une feuille de calcul Excel est une tâche courante lors de la remplissage de feuilles de calcul avec des données basées sur des listes. Cette opération est utile dans des scénarios tels que le chargement de valeurs de configuration, le transfert de données depuis des sources externes ou l'initialisation de feuilles de calcul avec des collections prédéfinies de chaînes.
 
-## RSET API
+**Prérequis :**  
+- Un jeton JWT valide obtenu via le mécanisme d’authentification d’Aspose.Cells Cloud.  
+- Un classeur existant (ou la possibilité d’en créer un) dans votre espace de stockage Aspose Cloud.  
+- La version appropriée du SDK prenant en charge le modèle `ImportStringArrayOption`.
 
-```bash
+Cette API REST permet d’importer des données de type tableau de chaînes dans une feuille de calcul Excel.
 
+## API PostImportData
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
+
+### **Sécurité et authentification**
+
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
+
+### **Paramètres de la requête**
+
+La requête utilise du contenu HTTP multipart (voir [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) ou [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
+La première partie du corps multipart contient une charge utile **ImportStringArrayOption** ; la deuxième partie contient le fichier source des données.
 
 Les paramètres importants sont décrits dans le tableau suivant :
 
-**Importer une option de tableau de chaînes**
+<caption>Paramètres de ImportStringArrayOption</caption>
+### **ImportStringArrayOption**
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-| Première rangée| int||
-| Première colonne| int||
-| EstVertical| chaîne| vrai/faux.|
-| Données|Chaîne[]||
-|Feuille de travail de destination| chaîne| nom de la feuille de travail de destination.|
-| EstInsérer| chaîne| vrai/faux.|
-| ImporterDataType| chaîne|IntArray/DoubleArray/StringArray/DeuxDimensionIntArray/DeuxDimensionDoubleArray/DeuxDimensionStringArray/BatchData/CSVData.|
-| Source| Source du fichier| Indique la position du fichier de données lorsque le paramètre BatchData est nul.|
+| Nom du paramètre     | Type       | Description                                                                                                                                                                         |
+| -------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| FirstRow             | int        | Index de ligne de départ (1‑basé) où les données seront placées.                                                                                                                   |
+| FirstColumn          | int        | Index de colonne de départ (1‑basé) où les données seront placées.                                                                                                                  |
+| IsVertical           | boolean    | `true` pour insérer les données verticalement ; `false` pour les insérer horizontalement.                                                                                         |
+| Data                 | String[]   | Le tableau de chaînes à importer.                                                                                                                                                   |
+| DestinationWorksheet | string     | Le nom de la feuille de calcul qui recevra les données.                                                                                                                            |
+| IsInsert             | boolean    | `true` pour insérer des lignes/colonnes (décalant les cellules existantes) ; `false` pour écraser les cellules existantes.                                                        |
+| ImportDataType       | string     | Type de données à importer (par exemple, `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`). |
+| Source               | FileSource | Indique l’emplacement du fichier de données lorsque **BatchData** est null (par exemple, `CloudFileSystem`, `LocalFile`). Obligatoire si `BatchData` n’est pas fourni.            |
 
-**Exemple**
+### Exemple
 
 ```xml
-
 <ImportStringArrayOption>
     <DestinationWorksheet>Sheet1</DestinationWorksheet>
     <IsInsert>false</IsInsert>
@@ -54,14 +69,40 @@ Les paramètres importants sont décrits dans le tableau suivant :
         <FilePath>Array_string_xml.txt</FilePath>
     </Source>
 </ImportStringArrayOption>
-
 ```
 
-## Famille de SDK Cloud
+### Réponse
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+Une requête réussie renvoie **HTTP 200** avec une charge utile JSON similaire à :
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+Codes d’état possibles :
+
+| Code | Signification                                     |
+| ---- | ------------------------------------------------- |
+| 200  | L’importation a réussi                           |
+| 400  | Requête incorrecte – données manquantes ou invalides |
+| 401  | Accès non autorisé – jeton invalide ou manquant  |
+| 500  | Erreur interne du serveur                         |
+
+
+## Comment utiliser l’API PostImportData avec les SDK
+
+### Spécification de l’API PostImportData
+
+La [Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) définit une interface de programmation publiquement accessible et permet d’effectuer directement des interactions REST depuis un navigateur web.
+
+### Utiliser les SDK Aspose.Cells Cloud
+
+L’utilisation d’un SDK est le moyen le plus efficace d’accélérer le développement. Un SDK gère les détails de bas niveau, vous permettant de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 
@@ -84,3 +125,4 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+---

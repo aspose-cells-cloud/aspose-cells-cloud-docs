@@ -1,449 +1,290 @@
-﻿---
-title: Ottieni i dati delle celle in base all'intervallo denominato
-second_title: Documen
-linktitle: Valore
-type: docs
-url: /it/ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
-keywords: Get cells data based on named range on an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'acquisizione di dati di celle in base a un intervallo denominato su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni dati di celle in base all'intervallo denominato
 ---
-Questo REST API indica Ottieni l'elenco delle celle in un intervallo in base al nome dell'intervallo o agli indici delle colonne di riga
+title: "Ottieni i dati delle celle in base a un intervallo denominato"
+second_title: "Documenti"
+linktype: "Valori"
+type: docs
+url: /ranges/get/values/
+aliases: [/get-cells-data-based-on-named-range/]
+keywords: "Aspose.Cells, Cloud, API REST, Excel, intervallo denominato, valori delle celle, foglio di lavoro"
+description: "Recupera i valori delle celle da un intervallo denominato in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud. Il servizio è disponibile tramite numerosi SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) e funziona su una vasta gamma di piattaforme di sviluppo."
+weight: 20
+ArticleTitle: "Ottieni i dati delle celle in base a un intervallo denominato – Aspose.Cells Cloud API"
+---
 
-## RSET API
+**Prerequisiti**
+
+- Un token di accesso JWT valido con l'ambito appropriato.  
+- Il workbook deve essere caricato nello storage di Aspose Cloud (o in una cartella specificata).  
+- Assicurati di fornire il nome dello storage di destinazione se utilizzi uno storage non predefinito.
+
+Questa API REST restituisce un elenco di celle all'interno di un intervallo identificato da un intervallo denominato o da indici riga-colonna.
+
+Questa operazione consente agli sviluppatori di recuperare programmaticamente i valori delle celle appartenenti a un intervallo denominato specifico in un foglio di lavoro Excel. Fornendo l'identificatore `namedRange` oppure gli indici espliciti di riga e colonna, l'API restituisce un elenco dettagliato delle celle, inclusi il relativo indirizzo, riga, colonna, valore, tipo di dati e informazioni sul formato. La risposta può essere utilizzata per alimentare applicazioni basate sui dati, generare report o eseguire ulteriori calcoli lato server. Il servizio Aspose.Cells Cloud supporta numerose lingue di programmazione tramite i relativi SDK, garantendo un'integrazione fluida indipendentemente dalla piattaforma di sviluppo. L'utilizzo di HTTPS garantisce la trasmissione sicura dei dati, e l'API rispetta i principi REST restituendo codici di stato HTTP standard per le condizioni di successo ed errore.
+
+## API REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
 ```
 
-I parametri della richiesta sono:
+### **Parametri della richiesta**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| nome della cartella di lavoro|
-| Nome foglio| corda| sentiero| nome del foglio di lavoro|
-| intervallo di nomi| corda| domanda| nome dell'intervallo, ad esempio: 'A1:B2' o 'range_name1'|
-| prima riga| intero| domanda| la prima riga dell'intervallo|
-| prima colonna| intero| domanda| la prima colonna dell'intervallo|
-| conteggio righe| intero| domanda| il conteggio delle righe nell'intervallo|
-| conteggio colonne| intero| domanda| il conteggio delle colonne nell'intervallo|
-| cartella| corda| domanda| Cartella della cartella di lavoro.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome parametro | Tipo    | Posizione | Descrizione                                                                                  |
+| -------------- | ------- | --------- | -------------------------------------------------------------------------------------------- |
+| name           | string  | path      | Nome del file workbook.                                                                      |
+| sheetName      | string  | path      | Nome del foglio di lavoro all'interno del workbook.                                          |
+| namedRange     | string  | query     | Intervallo denominato da recuperare, ad esempio `A1:B2` o `range_name1`.                     |
+| firstRow       | integer | query     | Indice in base zero della prima riga dell'intervallo (utilizzato quando `namedRange` non è fornito). |
+| firstColumn    | integer | query     | Indice in base zero della prima colonna dell'intervallo (utilizzato quando `namedRange` non è fornito). |
+| rowCount       | integer | query     | Numero di righe da includere nell'intervallo.                                                |
+| columnCount    | integer | query     | Numero di colonne da includere nell'intervallo.                                              |
+| folder         | string  | query     | Cartella contenente il workbook.                                                             |
+| storageName    | string  | query     | Nome dello storage cloud in cui risiede il workbook.                                         |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+La [Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue) definisce un'interfaccia di programmazione pubblicamente accessibile e consente di effettuare interazioni REST direttamente da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+Puoi utilizzare lo strumento a riga di comando cURL per chiamare facilmente i servizi web di Aspose.Cells. L'esempio seguente illustra come richiedere i valori delle celle da un intervallo denominato.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/value?namerange=data" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "CellsList": [
-
     {
-
       "Name": "B10",
-
       "Row": 9,
-
       "Column": 1,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "C10",
-
       "Row": 9,
-
       "Column": 2,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "D10",
-
       "Row": 9,
-
       "Column": 3,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "E10",
-
       "Row": 9,
-
       "Column": 4,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "F10",
-
       "Row": 9,
-
       "Column": 5,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "G10",
-
       "Row": 9,
-
       "Column": 6,
-
       "Value": null,
-
       "Type": "IsNull",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\"></Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     },
-
     {
-
       "Name": "H10",
-
       "Row": 9,
-
       "Column": 7,
-
       "Value": "a8",
-
       "Type": "IsString",
-
       "Formula": null,
-
       "IsFormula": false,
-
       "IsMerged": false,
-
       "IsArrayHeader": false,
-
       "IsInArray": false,
-
       "IsErrorValue": false,
-
       "IsInTable": false,
-
       "IsStyleSet": false,
-
       "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">a8</Font>",
-
       "Style": {
-
         "link": {
-
           "Href": "/style",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       "Worksheet": null,
-
       "link": null
-
     }
-
   ],
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+**Nota sulla sicurezza:** Utilizza sempre HTTPS quando chiami l'API. Il servizio non supporta HTTP in chiaro; l'uso di HTTPS garantisce che la richiesta sia crittografata e rispetti le best practice in materia di sicurezza.
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+**Codici di stato HTTP**
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+| Codice | Significato                 | Descrizione                                               |
+|--------|-----------------------------|-----------------------------------------------------------|
+| 200    | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida        | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401    | Non autorizzato             | Token JWT non valido o mancante.                          |
+| 413    | Payload troppo grande       | Il file caricato supera il limite di dimensione.         |
+| 500    | Errore interno del server   | Errore imprevisto sul server.                             |
+
+**Esempio di risposta di errore (400 Bad Request)**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Il parametro 'namedRange' è mancante o non valido."
+}
+```
+
+> **Suggerimento:** L'API utilizza indici in base zero per `firstRow` e `firstColumn`. Ad esempio, la prima riga del foglio di lavoro corrisponde a `0`.
+
+## Famiglia di SDK Cloud
+
+L'utilizzo di un SDK rappresenta il modo più efficiente per accelerare lo sviluppo. Un SDK astrae i dettagli di basso livello, consentendo di concentrarsi sulla logica di business. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+Gli esempi di codice seguenti illustrano come chiamare i servizi web di Aspose.Cells utilizzando diversi SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

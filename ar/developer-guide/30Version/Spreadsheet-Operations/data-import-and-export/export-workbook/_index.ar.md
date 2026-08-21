@@ -1,59 +1,91 @@
-﻿---
-title: تصدير دفتر العمل
-second_title: Documen
-linktitle: وركبو
-type: docs
-url: /ar/export-excel-to-different-formats/
-aliases: [ /export/excel-to-different-formats/]
-keywords: Export Excel file to kinds of format files
-description: يدعم Cloud REST تصدير الملفات بتنسيقات مختلفة. تدعم حزمة SDK لغات تطوير متنوعة، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تصدير مصنف
 ---
- يمكنك تصدير التنسيقات:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [إكس إل إس بي](https://docs.fileformat.com/spreadsheet/xlsb/), [ملف CSV](https://docs.fileformat.com/spreadsheet/csv/), [تي إس في](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [المواد المستنفدة للأوزون](https://docs.fileformat.com/spreadsheet/ods/), [رسالة قصيرة](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [أو تي إس](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [ديف](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [أرقام](https://docs.fileformat.com/spreadsheet/numbers/), [فودز](https://docs.fileformat.com/spreadsheet/fods/).
+title: "تصدير كُتيّب عمل"
+second_title: "مستند"
+linktitle: "كُتيّب عمل"
+type: docs
+url: /export-excel-to-different-formats/
+aliases: [/export/excel-to-different-formats/]
+keywords: "Aspose.Cells Cloud, تصدير Excel, تحويل كُتيّب العمل, PDF, CSV, JSON, تنسيقات الصور, واجهة برمجة تطبيقات جداول الحسابات, XLSX, ODS, PNG"
+description: "دليل خطوة بخطوة لتصدير كُتيّبات عمل Excel إلى صيغ متعددة، بما في ذلك PDF وCSV وJSON وأنواع الصور المختلفة، باستخدام واجهة Aspose.Cells Cloud REST API ومكتبات SDK."
+weight: 20
+---
 
-- **الباقي API**
+يمكنك تصدير كُتيّبات العمل إلى أيٍّ من الصيغ التالية: [XLS](https://docs.fileformat.com/spreadsheet/xls/)، [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)، [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)، [CSV](https://docs.fileformat.com/spreadsheet/csv/)، [TSV](https://docs.fileformat.com/spreadsheet/tsv/)، [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)، [ODS](https://docs.fileformat.com/spreadsheet/ods/)، [TXT](https://docs.fileformat.com/word-processing/txt/)، [PDF](https://docs.fileformat.com/pdf/)، [OTS](https://docs.fileformat.com/spreadsheet/ots/)، [XPS](https://docs.fileformat.com/page-description-language/xps/)، [DIF](https://docs.fileformat.com/spreadsheet/dif/)، [PNG](https://docs.fileformat.com/Image/png/)، [JPEG](https://docs.fileformat.com/image/jpeg/)، [BMP](https://docs.fileformat.com/image/bmp/)، [SVG](https://docs.fileformat.com/page-description-language/svg/)، [TIFF](https://docs.fileformat.com/image/tiff/)، [EMF](https://docs.fileformat.com/image/emf/)، [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/)، [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
-|**API**|**يكتب**|**وصف**|**رابط سواجر**|
-|:- |:- |:- |:- |
-|/الخلايا/التصدير|بريد|تصدير كائنات Excel من محتوى الطلب إلى بعض التنسيقات|[ما بعد التصدير](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+## واجهة برمجة التطبيقات REST
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
-
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
-
-- **طلب**
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=workbook&format=tiff" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
-- **إجابة**
+### **الأمان والمصادقة**
 
-```bash
+تتطلب واجهات برمجة تطبيقات Aspose.Cells Cloud أمانًا وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+
+### معاملات الطلب
+
+| اسم المعامل | النوع | المسار/سلسلة الاستعلام/جسم HTTP | مطلوب | الوصف |
+|-------------|-------|----------------------------------|--------|--------|
+| file | ملف | formData | نعم | الملف المراد رفعه |
+| objectType | نص | استعلام | نعم | نوع الكائن المراد تصديره. لتصدير المخططات، استخدم `chart`. القيم الممكنة الأخرى هي `worksheet` و`picture` وما إلى ذلك. |
+| format | نص | استعلام | نعم | الصيغة المطلوبة للإخراج. القيم المدعومة: `png`، `jpeg`، `gif`، `bmp`، `svg`، `tiff`، `emf`، `wmf`، `pdf`. |
+
+
+### **الاستجابة**
+
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"Book1_xlsx.tif",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"myDocument_xlsx.tif",
-            "FileSize":348126,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Book1_xlsx.tif",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx.tif",
+      "FileSize": 348126,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
-- **عائلة SDK السحابية**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+**رموز حالة HTTP**
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+| الرمز | المعنى | الوصف |
+|-------|--------|--------|
+| 200 | نجاح | تم تصدير الأشكال بنجاح؛ تحتوي الاستجابة على قائمة الملفات. |
+| 400 | طلب غير صالح | معاملات مفقودة أو غير صالحة. |
+| 401 | غير مُصرّح | رمز وصول غير صالح أو مفقود. |
+| 413 | حمل البيانات كبير جدًا | حجم الملف المرفوع يتجاوز الحد المسموح به. |
+| 500 | خطأ داخلي في الخادم | خطأ غير متوقع في الخادم. |
+
+
+## كيفية استخدام واجهة PostExport مع مكتبات SDK
+
+### مواصفات واجهة PostExport
+
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) واجهة برمجة تطبيقات عامة قابلة للوصول تتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول إلى خدمات الويب الخاصة بـ Aspose.Cells بسهولة. يُظهر المثال التالي كيفية استدعاء واجهة Cloud API باستخدام cURL.
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=workbook&format=tiff" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -d '{"File":{}}'
+```
+
+### استخدام مكتبات SDK الخاصة بـ Aspose.Cells Cloud
+
+يساعد استخدام مكتبة SDK في تسريع عملية التطوير من خلال التعامل مع التفاصيل منخفضة المستوى، بحيث يمكنك التركيز على منطق الأعمال. تتوفر قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud في [مستودع GitHub](https://github.com/aspose-cells-cloud).
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمة الويب الخاصة بـ Aspose.Cells باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,17 +1,17 @@
-﻿---
-title: كيفية العمل مع الأجزاء في ورقة العمل Excel
-second_title: Documen
-linktitle: لوحة
-type: docs
-url: /ar/worksheets/panes/
-keywords: How to work with panes on an Excel worksheet
-description: يدعم Cloud REST العمل مع الأجزاء على ورقة عمل. تدعم حزمة SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، كيفية العمل مع الأجزاء في ورقة عمل Excel
 ---
-## العمل مع الأجزاء في ورقة العمل Excel.
+---
+title: "كيفية العمل مع لوحات في ورقة عمل إكسل"
+second_title: "مستند"
+linktitle: "اللوحات"
+type: docs
+url: /worksheets/panes/
+keywords: "إكسل، لوحات، تجميد لوحات، إلغاء تجميد لوحات، Aspose.Cells Cloud، REST API"
+description: "تعلم كيفية العمل مع اللوحات في ورقة عمل إكسل باستخدام واجهة Aspose.Cells Cloud REST API، بما في ذلك الخطوات اللازمة لتجميد اللوحات وإلغاء تجميدها عبر لغات SDK المدعومة."
+weight: 20
+---
 
-- [كيفية تجميد الأجزاء الموجودة في ورقة العمل Excel.](/cells/ar/worksheets/panes/freeze/) 
-- [كيفية إلغاء تجميد الأجزاء الموجودة في ورقة العمل Excel.](/cells/ar/worksheets/panes/unfreeze/) 
+## العمل مع اللوحات في ورقة عمل إكسل
 
-
+- [كيفية تجميد اللوحات في ورقة عمل إكسل](/cells/worksheets/panes/freeze/)  
+- [كيفية إلغاء تجميد اللوحات في ورقة عمل إكسل](/cells/worksheets/panes/unfreeze/)
+---

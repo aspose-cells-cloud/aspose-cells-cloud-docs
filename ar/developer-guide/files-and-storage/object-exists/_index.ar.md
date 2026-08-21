@@ -1,106 +1,92 @@
-﻿---
-title: وجود الكائن
-second_title: Documen
-linktitle: وجود الكائن
+---
+title: "واجهة برمجة تطبيقات التحقق من وجود الكائن – التحقق من وجود ملف/مجلد في Aspose.Cells Cloud"
+second_title: "مستند"
+ArticleTitle: "واجهة برمجة تطبيقات التحقق من وجود الكائن – التحقق من وجود ملف أو مجلد في Aspose.Cells Cloud"
+linktitle: "التحقق من وجود الكائن"
 type: docs
 url: /ar/object-exists/
-keywords: Excel API, Object Exists, REST API, Aspose, File Management, Excel, Office Cloud, Spreadsheet, PDF, CSV, JSON, Markdow
-description: يتحقق الأمر The Object Exists API من وجود ملف أو مجلد محدد في وحدة التخزين السحابية Aspose.Cells
+keywords: "Aspose.Cells, التخزين السحابي, التحقق من وجود الكائن, وجود الملف, وجود المجلد, واجهة برمجة التطبيقات"
+description: "استخدم واجهة برمجة تطبيقات التحقق من وجود الكائن للتحقق بسرعة مما إذا كان ملف أو مجلد موجودًا في مساحة التخزين السحابية لـ Aspose.Cells. تدعم اسم التخزين ومعرّف الإصدار الاختياريين، وتعمل مع الكائنات المُصدرة."
 weight: 100
-kwords: Excel API، وجود الكائن، REST API، Aspose، Office السحابة، إدارة الملفات، جدول بيانات، PDF، CSV، JSON، Markdown، التحقق من وجود الملف في Excel
 ---
-## **Excel API: الكائن موجود**
 
+تتيح **واجهة برمجة تطبيقات التحقق من وجود الكائن** للمطورين تحديد ما إذا كان ملف أو مجلد معيّن موجودًا في مساحة التخزين السحابية لـ Aspose.Cells. وتُعيد قيمة منطقية بسيطة تشير إلى الوجود، وما إذا كانت المسار تشير إلى مجلد.
+
+## **واجهة برمجة تطبيقات Excel: التحقق من وجود الكائن**
+
+### واجهة برمجة التطبيقات عبر الويب
+
+```http
+GET https://api.aspose.cloud/v5.0/cells/storage/exist/{path}
 ```
-GET http://api.aspose.cloud/v4.0/cells/storage/exist/{path}
-```
 
-### **وصف الوظيفة**
+_`{path}`_ هو المسار الكامل إلى الملف أو المجلد داخل التخزين.
 
-يتيح `objectExists` API للمطورين التحقق من وجود ملف أو مجلد محدد ضمن التخزين السحابي Aspose.Cells.
+### **الأمان والمصادقة**
 
-###  معلمات الطلب**الكائن موجود** API هم
+تتطلب واجهات برمجة تطبيقات Aspose.Cells Cloud أمانًا عاليًا وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-|طريق|خيط|طريق|المسار إلى الملف أو المجلد في التخزين السحابي.|
-|اسم التخزين|خيط|استفسار|اسم التخزين الذي يوجد به الملف.|
-|معرف الإصدار|خيط|استفسار|معرف إصدار الملف (إن أمكن).|
+### معاملات الطلب
 
-### **وصف الاستجابة**
+| اسم المعامل | النوع | الموقع | مطلوب | الوصف |
+| ------------ | ------ | -------- | -------- | ------------------------------------------------------------------- |
+| `path` | string | Path | نعم | المسار الكامل إلى الملف أو المجلد. |
+| `storageName` | string | Query | لا | اسم التخزين؛ يُستخدم التخزين الأساسي افتراضيًا في حال حذفه. |
+| `versionId` | string | Query | لا | معرّف إصدار معيّن للملف (في حال تفعيل إصدارات الملفات). |
+
+**رموز حالة HTTP**
+
+| رمز HTTP | حالة HTTP | الوصف |
+| --------- | --------------------- | ----------------------------------------------------------------- |
+| 200 | OK (نجاح) | تم استدعاء واجهة برمجة التطبيقات بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | Bad Request (طلب غير صالح) | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401 | Unauthorized (غير مُصرّح له) | رمز JWT غير صالح أو مفقود. |
+| 413 | Payload Too Large (حمولة كبيرة جدًا) | حجم الملف المرفوع يتجاوز الحد المسموح. |
+| 500 | Internal Server Error (خطأ داخلي في الخادم) | خطأ غير متوقع في الخادم. |
+
+### **الاستجابة**
+
+يعيد الاتصال الناجح حُمولة JSON تحتوي على خاصيتين:
 
 ```json
 {
-  "Name": "ObjectExist",
-  "Description": [
-    "Object exists"
-  ],
-  "Type": "Class",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "Exists",
-      "Description": [
-        "Indicates that the file or folder exists."
-      ],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Boolean",
-        "Name": "boolean"
-      }
-    },
-    {
-      "Name": "IsFolder",
-      "Description": [
-        "True if it is a folder, false if it is a file."
-      ],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Boolean",
-        "Name": "boolean"
-      }
-    }
-  ]
+  "Exists": true,
+  "IsFolder": false
 }
 ```
 
+- **Exists** – `true` في حال وجود الملف أو المجلد؛ خلاف ذلك `false`.
+- **IsFolder** – `true` في حال كانت المسار تشير إلى مجلد؛ `false` في حال كانت تشير إلى ملف.
+
 ## مواصفات OpenAPI
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/StorageController/ObjectExists) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تُعرّف [مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/StorageController/ObjectExists) واجهة برمجة تطبيقات متاحة للعامة، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
 
-## Excel API مجموعة تطوير البرامج
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب الخاصة بـ Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ObjectExists.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/exist/myFolder/subFolder" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ObjectExists.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ObjectExists.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ObjectExists.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ObjectExists.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ObjectExists.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ObjectExists.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ObjectExists.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير، إذ تعتني SDK بمعالجة التفاصيل منخفضة المستوى، وتتيح لك التركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الرمز التالية كيفية إجراء مكالمات إلى خدمات الويب الخاصة بـ Aspose.Cells باستخدام SDKs مختلفة. في حال فشل تحميل Gist، يُقدَّم مثال ثابت تحت كل علامة تبويب.

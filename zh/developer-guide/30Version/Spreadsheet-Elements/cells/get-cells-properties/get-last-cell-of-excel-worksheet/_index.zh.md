@@ -1,96 +1,92 @@
-﻿---
-title: 获取 Excel 工作表的最后一个单元格
+---
+title: "获取 Excel 工作表的最后一个单元格 — Aspose.Cells Cloud API (v4.0)"
 type: docs
 url: /zh/get-last-cell-of-excel-worksheet/
 weight: 30
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、获取 Excel 工作表的最后一个单元格
+keywords: "Aspose.Cells, Excel API, 获取最后一个单元格, 电子表格, 云服务"
+description: "使用 Aspose.Cells Cloud REST API v4.0 获取 Excel 工作表的结束单元格地址。包含请求详情、cURL 示例、JSON 响应以及 SDK 示例代码。"
+ArticleTitle: "获取 Excel 工作表的结束单元格 — Aspose.Cells Cloud API v4.0"
 ---
-此 REST API 表示当 `cellOrMethodName` 参数为 `endcell` 时，在 Excel 文件中获取 `endcell`。
+
+此 REST API 在 `cellOrMethodName` 参数设置为 `endcell` 时，返回 Excel 工作表的**结束单元格（endcell）**。
+
+**概述**  
+**获取最后一个单元格** 操作返回指定工作表中最后一个已使用单元格的地址。该操作有助于确定工作表的有效数据范围，而无需扫描整个工作簿。
 
 - **cURL 示例**
 
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/endcell" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/endcell" \
+     -H "Authorization: Bearer <your_access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "F341",
-
     "Row": 340,
-
     "Column": 5,
-
-    "Value": "<More Info>",
-
+    "Value": "<更多详情>",
     "Type": "IsString",
-
-    "Formula": "=HYPERLINK(SUBSTITUTE(HelpURLTemplate,\"xxxxxxxxxx\",[Help Topic]),\"<More Info>\")",
-
+    "Formula": "=HYPERLINK(SUBSTITUTE(HelpURLTemplate,\"xxxxxxxxxx\",[Help Topic]),\"<更多详情>\")",
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
-    "HtmlString": "<Font Style=\"TEXT-DECORATION: underline;FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">&lt;More Info&gt;</Font>",
-
+    "HtmlString": "<Font Style=\"TEXT-DECORATION: underline;FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">&lt;更多详情&gt;</Font>",
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### 参数说明
+| 参数                 | 类型   | 必填项 | 描述 |
+|----------------------|--------|--------|------|
+| `fileName`           | string | 是     | 存储在云端的 Excel 文件名。 |
+| `worksheetName`      | string | 是     | 要从中获取最后一个单元格的工作表名称。 |
+| `cellOrMethodName`   | string | 是     | 必须设置为 **`endcell`** 以调用此操作。 |
+| `folder` *（可选）*   | string | 否     | 工作簿所在的云端文件夹路径。 |
+| `storageName` *（可选）*| string | 否   | 存储空间名称；若省略，则使用默认存储空间。 |
 
-- **Cloud SDK 系列**
+**HTTP 状态码**
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| 状态码 | 含义               | 描述 |
+|--------|--------------------|------|
+| 200    | OK（成功）         | 筛选操作成功；响应包含操作详情。 |
+| 400    | Bad Request（错误请求） | 缺少或参数无效（例如，不支持的文件类型）。 |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。 |
+| 413    | Payload Too Large（请求实体过大） | 上传文件超过大小限制。 |
+| 500    | Internal Server Error（内部服务器错误） | 服务器发生意外错误。 |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+- **使用 Aspose.Cells Cloud SDK**
 
+使用 SDK 是加速开发的最佳方式。SDK 处理底层细节，让您能专注于项目任务。请查阅 <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub 仓库</a> 获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例演示如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -126,7 +122,7 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetLastCellWorksheet-1.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetLastCellWorksheet-1.js" >}}
 
 {{< /tab >}}
 
@@ -137,6 +133,8 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
+_即将推出。_
 
 {{< /tab >}}
 
@@ -153,3 +151,5 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< /tabs >}}
+
+如需了解与单元格导航相关的其他操作，请参阅 **[获取首个单元格](/zh/get-first-cell-of-excel-worksheet/)** 和 **[获取最大行号](/zh/get-max-row-of-worksheet/)** 主题。

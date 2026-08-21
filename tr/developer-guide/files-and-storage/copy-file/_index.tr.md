@@ -1,75 +1,88 @@
-﻿---
-title: Dosyayı Kopyala - Excel AP
-second_title: Documen
-linktitle: Kopyala Dosyası
-type: docs
-url: /tr/copy-file/
-keywords: Excel API, Office Cloud, REST API, Spreadsheet Copy, PDF Conversion, CSV Export, JSON Handling, Markdown Support, Copy Excel File, Match Blank Cell
-description: Excel için CopyFile API'in elektronik tabloları verimli bir şekilde çoğaltmak ve çeşitli dosya biçimlerini işlemek için nasıl kullanılacağını öğrenin
-weight: 100
-kwords: Excel API, Office Bulut, REST API, Elektronik Tablo Kopyalama, PDF Dönüştürme, CSV Dışa Aktarma, JSON İşleme, Markdown Desteği, Excel Dosyasını Kopyalama, Boş Hücreyi Eşleştirme
 ---
-## **Excel API: Dosyayı Kopyala**
+title: "Aspose.Cells Cloud Dosya Kopyalama API'si - Bulutta Excel dosyalarının hızlı kopyalanması ve toplu işlemleri için bir arayüz"
+second_title: "Belge"
+ArticleTitle: "Bulut Tabanlı Excel Dosya Yönetimi Çözümü – Aspose.Cells Dosya Kopyalama API'sinin Toplu Kopyalama İşlevselliğinin Detaylı Açıklaması"
+linktitle: "Dosya Kopyala"
+type: docs
+url: /copy-file/
+keywords: "Aspose.Cells, CopyFile API, Excel dosyası kopyalama, Bulut depolama, REST API"
+description: "Aspose.Cells Cloud CopyFile API’sini kullanarak Excel dosyalarını verimli bir şekilde çoğaltmayı ve depolama konumları arasında yönetmeyi öğrenin."
+weight: 100
+---
+
+**copyFile** API'si, kullanıcıların bir Excel dosyasını belirtilen kaynak yolundan hedef yola kopyalamasını sağlar ve çeşitli depolama seçeneklerini destekler.
+
+## **Excel API’si: Dosya Kopyalama**
+
+### Web API’si
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
+```
+
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
+
+### **copyFile** API’sinin istek parametreleri
+
+| Parametre Adı     | Tür    | Yol/Sorgu Dizesi/HTTP Gövdesi | Açıklama                                              |
+| ----------------- | ------ | ---------------------------- | ----------------------------------------------------- |
+| srcPath           | String | Yol                          | Kopyalanacak dosyanın kaynak yolu.                    |
+| destPath          | String | Sorgu                        | Dosyanın kaydedileceği hedef yol.                     |
+| srcStorageName    | String | Sorgu                        | Kaynak depolamanın adı.                               |
+| destStorageName   | String | Sorgu                        | Hedef depolamanın adı.                                |
+| versionId         | String | Sorgu                        | Kopyalanacak dosyanın isteğe bağlı sürüm kimliği.     |
+
+### **Yanıt**
+
+İşlem başarı durumunda içerik döndürmez. Karşılanan tipik HTTP durum kodları:
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                 | Açıklama                                                       |
+| --- | --------------------- | -------------------------------------------------------------- |
+| 200 | OK (Tamam)            | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request (Hatalı İstek) | Eksik veya geçersiz parametreler (örn., desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)   | Geçersiz veya eksik JWT belirteci.                            |
+| 413 | Payload Too Large (İçerik Çok Büyük) | Yüklenen dosya boyut sınırını aşar.                         |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası.                                  |
+
+## SDK’lar ile Dosya Kopyalama API’si Nasıl Kullanılır?
+
+### Dosya Kopyalama API Spesifikasyonu
+
+[Dosya Kopyalama API Spesifikasyonu](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/File/CopyFile), web tarayıcısından doğrudan REST etkileşimlerini gerçekleştirmek için erişilebilir bir programlama arayüzü sağlar.
+
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye istekte bulunmayı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/file/copy/MyFolder/Source.xlsx?destPath=MyFolder/Dest.xlsx&srcStorageName=MyStorage&destStorageName=MyStorage" \
+     -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+     -H "Accept: application/json"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
-```
-
-### **İşlev Açıklaması**
-
- The**copyFile** API, kullanıcıların Excel dosyasını belirtilen bir kaynak yolundan bir hedef yoluna kopyalamasına olanak tanır ve çeşitli depolama seçeneklerini destekler.
-
-###  İstek parametreleri**copyFile** API
-
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|-------------- ||--------------------- |-------------------------------------- |
-| srcPath| Sicim| Yol| Kopyalanacak dosyanın kaynak yolu.|
-| hedefYolu| Sicim| Sorgu| Dosyanın kaydedileceği hedef yol.|
-| srcDepolamaAdı| Sicim| Sorgu| Kaynak depolamanın adı.|
-| hedefDepolamaAdı| Sicim| Sorgu| Hedef depolama alanının adı.|
-| sürüm kimliği| Sicim| Sorgu| Kopyalanacak dosyanın isteğe bağlı sürüm kimliği.|
-
-### **Yanıt Açıklaması**
-
-```json
 {
-Void
 }
 ```
 
-## OpenAPI Spesifikasyonu
+{{< /tab >}}
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/FileController/CopyFile) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
-
-## Excel API SDK
-
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntıları yöneterek proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
-
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
-
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_CopyFile.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_CopyFile.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_CopyFile.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_CopyFile.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_CopyFile.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_CopyFile.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_CopyFile.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CopyFile.go" >}}
-{{< /tab >}}
 {{< /tabs >}}
+
+### Aspose.Cells Cloud SDK’larını Kullanma
+
+SDK kullanmak, düşük seviye detayları soyutlayarak en hızlı geliştirme yoludur ve en az kod ile elektronik tablo verilerini görüntüye dönüştürmenizi sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub Deposu](https://github.com/aspose-cells-cloud)'na göz atın.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak Aspose.Cells web servislerinin nasıl çağrılacağını göstermektedir:
+
+---

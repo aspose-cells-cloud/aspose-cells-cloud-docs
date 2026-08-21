@@ -1,75 +1,89 @@
-﻿---
-title: Ställ in bakgrund på ett Excel-arbetsblad
-second_title: Documen
-linktitle: Annons
-type: docs
-url: /sv/worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
-keywords: Delete an Excel worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API stöder borttagning av ett Excel-arbetsblad i en Excel-arbetsbok. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 180
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ange bakgrund på ett Excel-kalkylblad
 ---
-Denna REST API indikerar `add worksheet background image`.
+title: "Ställ in bakgrund på ett Excel-ark"
+ArticleTitle: "Ställ in bakgrund på ett Excel-ark – Aspose.Cells Cloud API-guide"
+second_title: "Dokument"
+linktitle: "Lägg till"
+type: docs
+url: /worksheets/background/add/
+aliases: [/set-background-or-watermark-for-excel-worksheet/]
+keywords: "Aspose.Cells, Excel, ark, bakgrund, REST API, SDK, lägg till bild"
+description: "Lär dig hur du lägger till en bakgrundsbild (PNG, JPEG, BMP) till ett Excel-ark med Aspose.Cells Cloud REST API. Inkluderar slutpunkt, nödvändiga parametrar, autentiseringssteg, cURL-exempel och SDK-kodexempel."
+weight: 180
+---
 
-## RSET API
+Denna REST API lägger till en bakgrundsbild till ett ark.
+
+## Säkerhet och autentisering
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
- 
 ```
 
-Begäranparametrarna är:
+### **Begäran parametrar**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg||
-| arknamn| sträng| väg||
-| png|| kropp||
-| mapp| sträng| fråga||
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameter namn | Typ    | Plats  | Beskrivning                                                     |
+| -------------- | ------ | ------ | --------------------------------------------------------------- |
+| name           | string | path   | Namn på Excel-arbetsboken.                                      |
+| sheetName      | string | path   | Namn på det ark som bilden ska tillämpas på.                   |
+| imageFile      | file   | body   | Binär bildfil (PNG, JPEG, BMP, etc.) som ska användas som bakgrund. |
+| folder         | string | query  | Mapp i lagringen där arbetsboken finns.                         |
+| storageName    | string | query  | Namn på Aspose Cloud-lagringen.                                 |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+**Stödda format och begränsningar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+- Godkända bildändelser: **PNG, JPEG, BMP, GIF**.
+- Maximal filstorlek: **5 MB**.
+- Bilden är fylld i mönster för att fylla hela arkets bakgrund.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du gör ett anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/background" \
--X PUT \
--T Creative.jpg \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/background" \
+  -X PUT \
+  -F "imageFile=@Creative.jpg" \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+_Möjliga felsvar_
+
+| HTTP-kod | Beskrivning                                                  |
+| -------- | ------------------------------------------------------------ |
+| 400      | Felaktig begäran – saknade eller ogiltiga parametrar.        |
+| 401      | Auktoriseringsfel – ogiltig eller utgången JWT-token.         |
+| 404      | Inte hittad – arbetsboken eller arket finns inte.            |
+| 500      | Internt serverfel – oväntat tillstånd på servern.             |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## SDK-familj för molnet
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Se [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

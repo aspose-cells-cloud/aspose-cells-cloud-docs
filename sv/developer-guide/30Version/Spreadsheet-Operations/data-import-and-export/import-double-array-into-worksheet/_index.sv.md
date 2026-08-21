@@ -1,80 +1,127 @@
-﻿---
-title: Importera dubbel array till Excel-arbetsbladet
-second_title: Documen
-linktitle: Importera dubbel array
-type: docs
-url: /sv/import-double-array-into-excel-worksheet/
-aliases: [/import-double-array-into-worksheet/,/import-data/double-array/,/import/double-array/]
-keywords: Import double array data into Excel files
-description: Aspose.Cells Cloud REST API stöder import av dubbel arraydata till Excel-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Importera Double Array till Excel-arbetsblad
 ---
-Detta REST API `import double array data` till Excel-arbetsblad.
+title: "Importera dubbelarray till Excel-arket"
+second_title: "Dokument"
+linktitle: "Importera dubbelarray"
+type: docs
+url: /import-double-array-into-excel-worksheet/
+aliases:
+  - /import-double-array-into-worksheet/
+  - /import-data/double-array/
+  - /import/double-array/
+keywords: "Aspose.Cells, importera dubbelarray, Excel-API, moln-SDK"
+description: "Lär dig hur du importerar en dubbelarray till ett Excel-ark med Aspose.Cells Cloud REST API. Innehåller autentisering, begäranformat, parametrar, exempel på XML/JSON och detaljerad svarsinformation."
+weight: 20
+ArticleTitle: "Importera dubbelarray till Excel-ark – Aspose.Cells Cloud-guide"
+---
 
-Begäran är en HTTP-begäran med flerdelat innehåll (se[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)eller[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)Den första delen av flerdelat innehåll innehåller ImportDoubleArrayOption-data och den andra innehåller en datafil.
+Denna REST API **importerar dubbelarraydata** till ett Excel-ark.
 
-## RSET API
+> **Förutsättningar:** Du måste ha ett giltigt JWT-token innan du anropar detta API. Se autentiseringsguiden för mer information.
 
-```bash
+Du skickar en HTTP-begäran med **multipart**-innehåll (se [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) eller [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
+Den första delen av multipart-kroppen innehåller **ImportDoubleArrayOption**-data och den andra delen innehåller datafilen.
 
+## PostImportData API
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-De viktiga parametrarna beskrivs i följande tabell:
+### **Säkerhet och autentisering**
 
-**ImporteraDubbelArrayAlternativ**
+Aspose.Cells Cloud API:n är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-| Första raden| int||
-| Första kolumnen| int||
-| ÄrVertikal| sträng| sant/falskt.|
-| Data|Dubbel[]||
-|Destinationsarbetsblad| sträng| namn på destinationsarbetsblad.|
-| ÄrInfoga| sträng| sant/falskt.|
-| Importera datatyp| sträng|IntArray/DubbelArray/StringArray/TvåDimensionIntArray/TvåDimensionDubbelArray/TvåDimensionStringArray/BatchData/CSVData.|
-| Källa| Filkälla| Anger datafilens position när BatchData-parametern är null.|
+### Begärandeparametrar
 
-**Exempel**
+#### **ImportDoubleArrayOption**
+
+| Parameter Name       | Typ        | Beskrivning                                                                                               |
+| -------------------- | ---------- | --------------------------------------------------------------------------------------------------------- |
+| FirstRow             | int        | Nullbaserat index för den första raden där data ska placeras.                                            |
+| FirstColumn          | int        | Nullbaserat index för den första kolumnen där data ska placeras.                                         |
+| IsVertical           | boolean    | `true` / `false` – anger om arrayen infogas vertikalt (`true`) eller horisontellt (`false`).             |
+| Data                 | Double[]   | Array med dubbelvärden som ska importeras.                                                               |
+| DestinationWorksheet | string     | Namn på målarket.                                                                                         |
+| IsInsert             | boolean    | `true` / `false` – om `true`, infogas data; om `false`, skrivs befintliga celler över.                   |
+| ImportDataType       | string     | Typ av data som importeras (t.ex. `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`).     |
+| Source               | FileSource | Anger datafilens plats när parametern `BatchData` är null.                                                |
+
+#### Exempel (XML)
 
 ```xml
-
 <ImportDoubleArrayOption>
-    <DestinationWorksheet>Sheet1</DestinationWorksheet>
+    <DestinationWorksheet>Blad1</DestinationWorksheet>
     <IsInsert>false</IsInsert>
     <ImportDataType>DoubleArray</ImportDataType>
     <FirstRow>1</FirstRow>
     <FirstColumn>1</FirstColumn>
     <IsVertical>true</IsVertical>
+    <Data>1.99,1.9,2.0</Data>
     <Source>
         <FileSourceType>CloudFileSystem</FileSourceType>
         <FilePath>Array_double_xml.txt</FilePath>
     </Source>
 </ImportDoubleArrayOption>
-
 ```
+
+#### Exempel (JSON)
 
 ```json
 {
-    "Data": [1.99, 1.9, 2.0],
-    "DestinationWorksheet": "Sheet1",
-    "FirstRow": 0,
-    "FirstColumn": 0,
-    "IsVertical": false,
-    "IsInsert": true,
-    "importDataType": "DoubleArray"
+  "Data": [1.99, 1.9, 2.0],
+  "DestinationWorksheet": "Blad1",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "IsVertical": false,
+  "IsInsert": true,
+  "ImportDataType": "DoubleArray"
 }
-
 ```
 
-## Cloud SDK-familjen
+### Svar
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+En lyckad begäran returnerar **HTTP 200** med ett JSON-svar på följande form:
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+Möjliga statuskoder:
+
+| Kod | Betydelse                                    |
+| --- | -------------------------------------------- |
+| 200 | Importen lyckades                            |
+| 400 | Felaktig begäran – saknad eller ogiltig data |
+| 401 | Autentisering misslyckades – ogiltigt eller saknat token |
+| 500 | Internt serverfel                            |
+
+### Felhantering
+
+När ett fel uppstår returnerar API:t ett JSON-objekt som innehåller felkod och en beskrivande meddelandetext. Exempel för en oauktoriserad begäran:
+
+```json
+{
+  "Code": 401,
+  "Status": "Error"
+}
+```
+
+För mer information om relaterade importåtgärder, se dokumentationssidorna för “Importera 2-dimensionell dubbelarray” och “Importera heltalsarray”.
+
+## Hur du använder PostImportData API med SDK:er
+
+### PostImportData API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+### Använd Aspose.Cells Cloud SDK:er
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Ta en titt på [GitHub-repositoriet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

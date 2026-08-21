@@ -1,105 +1,115 @@
-﻿---
-title: Hämta namngivna intervall i en Excel-arbetsbok
-second_title: Documen
-linktitle: Nam
-type: docs
-url: /sv/ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
-keywords: Get cells data based on named range on an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder hämtning av celldata baserat på namngivet område på ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta namngivna områden i en Excel-arbetsbok
 ---
-Denna REST API indikerar information om intervall för Läs kalkylblad.
+title: "Hämta namngivna intervall i en Excel-arbetsbok"
+second_title: "Dokument"
+linktitle: "Namn"
+type: docs
+url: /ranges/get/name/
+aliases: [/get-named-ranges-inside-the-workbook/]
+keywords: "namngivna intervall, Excel, Aspose.Cells, moln-API, kalkylblad"
+description: "Hämta namngivna intervall från en Excel-arbetsbok med Aspose.Cells Cloud REST API. Innehåller begärandedetaljer, exempel på cURL-kommandon och SDK-exempel för flera programmeringsspråk."
+ArticleTitle: "Hämta namngivna intervall i en Excel-arbetsbok – Aspose.Cells Cloud API"
+weight: 10
+---
 
-## RSET API
+Denna REST API returnerar information om namngivna intervall som definierats i kalkylblad.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
- 
+**Bakgrund** – Ett *namngivet intervall* är en användardefinierad identifierare som pekar på en specifik cell eller cellgrupp i ett kalkylblad. Namngivna intervall förenklar formelskapande, förbättrar läsbarheten och möjliggör programmässig åtkomst till ofta använda områden i en arbetsbok.
+
+**Förutsättningar** – Åtkomst till Aspose.Cells Cloud API kräver en giltig JWT-åtkomsttoken. Skaffa token genom att autentisera med ditt Aspose Cloud-klient-ID och klienthemlighet via OAuth 2.0-tokenändpunkten. Inkludera token i `Authorization: Bearer <jwt token>`-huvudet i varje begäran.
+
+## GetNamedRanges API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| mapp| sträng| fråga| Dokumentmapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:n är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begärparametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameternamn   | Typ    | Plats        | Beskrivning                                   |
+| --------------- | ------ | ------------ | --------------------------------------------- |
+| name            | string | Sökväg       | Namnet på Excel-dokumentet.                   |
+| folder          | string | Frågesträng  | Mappen som innehåller dokumentet.             |
+| storageName     | string | Frågesträng  | Lagringsnamnet där dokumentet är lagrat.      |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**HTTP-statuskoder**
+
+| Kod  | Betydelse                   | Beskrivning                                             |
+|------|-----------------------------|---------------------------------------------------------|
+| 200  | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400  | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401  | Otillåten                   | Ogiltig eller saknad JWT-token.                          |
+| 413  | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen.        |
+| 500  | Internt serverfel           | Oväntat serverfel.                                       |
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) definierar ett offentligt tillgängligt programmeringsgränssnitt som gör att du kan utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för att anropa Aspose.Cells-webbtjänster. Exemplet nedan visar hur du hämtar namngivna intervall med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/ranges" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Ranges": {
-
     "RangeList": [
-
       {
-
         "ColumnCount": 7,
-
         "ColumnWidth": 8.428571428571429,
-
         "FirstColumn": 1,
-
         "FirstRow": 9,
-
         "Name": "data",
-
         "RefersTo": "=Sheet1!$B$10:$H$10",
-
         "RowCount": 1,
-
         "RowHeight": 15,
-
         "Worksheet": "Sheet1"
-
       }
-
     ]
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+**Svarsmodell**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Fält           | Typ     | Beskrivning                                              |
+|----------------|---------|----------------------------------------------------------|
+| `ColumnCount`  | heltal  | Antal kolumner i intervallet.                            |
+| `ColumnWidth`  | nummer  | Bredd på varje kolumn (i punkter).                       |
+| `FirstColumn`  | heltal  | Nollbaserat index för den första kolumnen i intervallet. |
+| `FirstRow`     | heltal  | Nollbaserat index för den första raden i intervallet.    |
+| `Name`         | sträng  | Den användardefinierade namn på intervallet.             |
+| `RefersTo`     | sträng  | En formel som definierar cellreferensen (t.ex. `=Sheet1!$B$10:$H$10`). |
+| `RowCount`     | heltal  | Antal rader i intervallet.                               |
+| `RowHeight`    | nummer  | Höjd på varje rad (i punkter).                           |
+| `Worksheet`    | sträng  | Namnet på kalkylbladet som innehåller intervallet.       |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+## Moln-SDK-familj
+
+Att använda en SDK är det snabbaste sättet att integrera denna funktionalitet. SDK:er hanterar detaljer på lågnivå så att du kan fokusera på din affärslogik. Se [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

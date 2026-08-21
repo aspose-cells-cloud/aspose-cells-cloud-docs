@@ -1,104 +1,155 @@
-﻿---
-title: حفظ باسم إكسل
-second_title: Documen
-linktitle: احفظ
-type: docs
-url: /ar/save-an-excel-file-as-other-formats-files/
-aliases: [/convert-excel-workbook-to-different-file-formats/, /saveas-other-formats/]
-keywords: Save excel files as kinds of format files
-description: يدعم Cloud REST حفظ ملفات Excel بصيغ مختلفة. تدعم مجموعة أدوات تطوير البرامج (SDK) لغات تطوير مختلفة، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 30
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حفظ باسم Excel
 ---
-يشير هذا REST API إلى ملف Excel `save` كملف بتنسيق مختلف.
+title: "حفظ ملف مصنف Excel – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+second_title: "مستند"
+linktitle: "حفظ كـ"
+type: docs
+url: /save-an-excel-file-as-other-formats-files/
+aliases:
+  - /convert-excel-workbook-to-different-file-formats/
+  - /saveas-other-formats/
+keywords: "Aspose Cells, Excel, حفظ كـ, PDF, CSV, JSON, Markdown, واجهة برمجة تطبيقات REST"
+description: "احفظ ملفات مصنفات Excel بصيغ PDF وCSV وJSON وMarkdown وصيغ أخرى باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST."
+weight: 30
+---
 
-**معلمة المسار**
+تتيح لك هذه واجهة برمجة التطبيقات **حفظ** ملف Excel بصيغ مختلفة.  
+قبل استدعاء هذه النقطة النهائية (endpoint)، تأكد من امتلاك رمز وصول OAuth 2.0 صالح، وأن ملف المصنف المصدر محفوظ في مساحة التخزين الخاصة بك في Aspose Cloud.
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|اسم|خيط| اسم الملف.|
+**المتطلبات الأساسية**  
+1. احصل على رمز وصول JWT وضمنه في رأس الطلب `Authorization: Bearer <token>` لكل طلب.  
+2. ارفع ملف المصنف المصدر إلى مساحة التخزين في Aspose Cloud (أو تأكد من وجوده مسبقًا).  
+3. اعرف اسم مساحة التخزين ومسار المجلد الذي يحتوي على ملف المصنف.
 
-**معلمة الاستعلام**
+## واجهة PostWorkbookSaveAs API
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|اسم الملف الجديد|خيط| اسم الملف الجديد|
-|isAutoFitRows|خيط| يُلائم جميع الصفوف في هذا المصنف تلقائيًا. القيمة الافتراضية هي خطأ.|
-|isAutoFitColumns|خيط| يُلائم عرض الأعمدة في هذا المصنف تلقائيًا. القيمة الافتراضية هي "خطأ".|
-|مجلد|خيط|مجلد المصنف الأصلي.|
-|اسم التخزين|خيط| اسم التخزين الذي يقع فيه الملف.|
-|اسم التخزين الخارجي|خيط| اسم التخزين الذي يقع فيه الملف المحفوظ.|
-|التحقق من قيود Excel|منطقي| ما إذا كان من الممكن التحقق من تقييد ملف Excel عندما يقوم المستخدم بتعديل الكائنات المرتبطة بالخلايا.|
-|منطقة|خيط| الإعدادات الإقليمية للمصنف.|
-|ملاءمة الصفحة العريضة لكل ورقة|منطقي| تناسب الصفحة العريضة مع ورقة العمل.|
-|طول الصفحة يتناسب مع كل ورقة|منطقي| الصفحة الطويلة تناسب ورقة العمل.|
-|اسم الورقة|خيط| تحويل ورقة العمل المحددة.|
-|فهرس الصفحة|خيط| تحويل الصفحة المحددة من ورقة العمل، مطلوب sheetName.|
-|صفحة واحدة لكل ورقة|منطقي| عند التحويل إلى تنسيق PDF، صفحة واحدة لكل ورقة.|
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/saveAs
+```
 
-**معلمة نص الطلب**
+### **الأمان والمصادقة**
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|حفظ الخيارات| هدف|خيار الحفظ حفظ في الجزء الثاني من المحتوى المتعدد الأجزاء.|
+تتطلب واجهات برمجة تطبيقات Aspose.Cells Cloud مصادقة قائمة على <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">رمز JWT</a>، وهي آمنة.
 
-## الباقي API
+### **معامل المسار (Path Parameter)**
 
-|**API**|**يكتب**|**وصف**|**رابط المورد**|
-|:- |:- |:- |:- |
-|/الخلايا/{الاسم}/حفظ باسم|بريد|تصدير المصنف إلى التنسيق|[حفظ المستند باسم](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+| اسم المعامل | النوع   | الوصف                                 |
+| -------------- | ------ | --------------------------------------- |
+| name           | string | اسم ملف Excel.                         |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **معامل الاستعلام (Query Parameter)**
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل           | النوع   | الوصف                                                                                      |
+| --------------------- | ------ | ------------------------------------------------------------------------------------------ |
+| newfilename           | string | اسم الملف الجديد للمستند المحفوظ.                                                          |
+| isAutoFitRows         | string | إذا كان `true`، تُضبط ارتفاعات الصفوف تلقائيًا في المصنف. القيمة الافتراضية هي `false`.     |
+| isAutoFitColumns      | string | إذا كان `true`، تُضبط عرض الأعمدة تلقائيًا في المصنف. القيمة الافتراضية هي `false`.        |
+| folder                | string | المجلد الذي يحتوي على المصنف الأصلي.                                                      |
+| storageName           | string | اسم مساحة التخزين التي يوجد فيها ملف المصدر.                                               |
+| outStorageName        | string | اسم مساحة التخزين التي سيتم حفظ ملف الإخراج فيها.                                          |
+| checkExcelRestriction | bool   | يحدد ما إذا كان يجب تطبيق قيود Excel عند تعديل الخلايا أو الكائنات ذات الصلة.             |
+| region                | string | الإعدادات الإقليمية المطبقة على المصنف.                                                    |
+| pageWideFitOnPerSheet | bool   | ضبط عرض الصفحة لتناسب كل ورقة عمل عند التحويل.                                             |
+| pageTallFitOnPerSheet | bool   | ضبط ارتفاع الصفحة ليناسب كل ورقة عمل عند التحويل.                                           |
+| sheetName             | string | اسم ورقة العمل المراد تحويلها.                                                             |
+| pageIndex             | string | فهرس الصفحة المراد تحويلها ضمن ورقة العمل المحددة (يتطلب `sheetName`).                    |
+| onePagePerSheet       | bool   | عند التحويل إلى PDF، أنشئ صفحة واحدة لكل ورقة عمل.                                         |
+
+### **معامل جسم الطلب (Request Body Parameter)**
+
+| اسم المعامل | النوع   | الوصف                                                         |
+| -------------- | ------ | --------------------------------------------------------------- |
+| SaveOptions    | Object | خيارات الحفظ المقدمة في الجزء الثاني من الطلب متعدد الأجزاء. |
+
+**مثال على جسم الطلب (الجزء JSON من الطلب متعدد الأجزاء)**
+
+```json
+{
+  "SaveOptions": {
+    "SaveFormat": "pdf",
+    "CompressionLevel": 9
+  }
+}
+```
+
+### الاستجابة
+
+تعيد واجهة برمجة التطبيقات كائن `SaveResponse`.
+
+```json
+{
+  "Status": "OK",
+  "Code": 200,
+  "SaveResult": {
+    "Documents": [
+      {
+        "Name": "sample.pdf",
+        "Size": 10240,
+        "Folder": "output",
+        "Storage": "MyStorage"
+      }
+    ]
+  }
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                        | الوصف                                                             |
+|------|-------------------------------|-------------------------------------------------------------------|
+| 200  | OK (نجاح)                     | تطبيق المرشح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.           |
+| 400  | Bad Request (طلب غير صالح)   | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم).             |
+| 401  | Unauthorized (غير مصدق)       | رمز JWT غير صالح أو مفقود.                                        |
+| 413  | Payload Too Large (حمولة كبيرة جدًا) | تجاوز حجم الملف المرفوع الحد المسموح به.                         |
+| 500  | Internal Server Error (خطأ داخلي في الخادم) | خطأ غير متوقع في الخادم.                                        |
+
+## كيفية استخدام واجهة PostWorkbookSaveAs API مع مكتبات SDK
+
+### مواصفات واجهة PostWorkbookSaveAs API
+
+تُعرّف <a href="https://reference.aspose.cloud/cells/#/Conversion/PostWorkbookSaveAs" target="_blank" rel="noopener noreferrer">مواصفات OpenAPI</a> واجهة برمجة تطبيقات عامة قابلة للوصول، وتسمح لك بإجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام **cURL** للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية استدعاء واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfilename=sample.pdf&isAutoFitRows=true&isAutoFitColumns=true" -H "accept: multipart/form-data" 
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfilename=sample.pdf&isAutoFitRows=true&isAutoFitColumns=true" \
+  -H "accept: multipart/form-data" \
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
   "SaveResult": {
-    "SourceDocument": {
-      "Href": "test.xlsx",
-      "Rel": null,
-      "Title": null,
-      "Type": null
-    },
-    "DestDocument": {
-      "Href": "test.pdf",
-      "Rel": null,
-      "Title": null,
-      "Type": null
-    },
-    "AdditionalItems": []
+    "Documents": [
+      {
+        "Name": "sample.pdf",
+        "Size": 10240,
+        "Folder": "output",
+        "Storage": "MyStorage"
+      }
+    ]
   },
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام مكتبات Aspose.Cells Cloud SDK
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام مكتبة SDK هو أفضل طريقة لتسريع عملية التطوير، حيث تتعامل المكتبة مع التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بمكتبات Aspose.Cells Cloud SDK.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الرمز التالية كيفية استدعاء خدمات Aspose.Cells باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -151,3 +202,5 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfile
 {{< /tab >}}
 
 {{< /tabs >}}
+
+للحصول على سيناريوهات تحويل أخرى، راجع الدليلين: [تحويل ملف Excel إلى PDF](/convert-excel-to-pdf/) و [تصدير ملف Excel إلى CSV](/export-excel-to-csv/).

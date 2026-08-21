@@ -1,137 +1,277 @@
-﻿---
-title: Obtenir des colonnes à partir d'une feuille de calcul Excel
-second_title: Documen
-linktitle: Gé
-type: docs
-url: /fr/columns/get/
-aliases: [/get-columns-from-an-excel-worksheet/,/get-columns-from-a-worksheet/,/get-column-from-a-worksheet/]
-keywords: Get columns on an Excel workshee
-description: Aspose.Cells Cloud REST API prend en charge l'extraction de colonnes dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 10
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Obtenir des colonnes d'une feuille de calcul Excel
 ---
-Ce REST API indique Lire les données de colonne de la feuille de calcul par index de colonne.
+title: Obtenir les détails de la colonne – Référence de l’API Aspose.Cells Cloud (v4.0)
+description: Récupérer des informations détaillées sur une colonne de feuille de calcul (index, largeur, style, état masqué) à l’aide de l’API REST Aspose.Cells Cloud.
+keywords: Aspose.Cells, API Cloud, colonne Excel, obtenir une colonne, API REST, JWT, feuille de calcul
+date: 2026-07-30
+---
 
-## RSET API
+# Obtenir les détails de la colonne  
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
- 
+Récupérez des informations détaillées sur une colonne spécifique d’une feuille de calcul (index, largeur, style, état masqué) à partir d’un classeur Excel stocké dans Aspose Cloud.
+
+## Table des matières
+1. [Conditions préalables](#prerequisites)  
+2. [Authentification](#authentication)  
+3. [Endpoint](#endpoint)  
+4. [Paramètres de la requête](#request-parameters)  
+5. [Exemple cURL](#curl-example)  
+6. [Exemple de réponse](#response-example)  
+7. [Schéma de réponse](#response-schema)  
+8. [Erreurs possibles](#possible-errors)  
+9. [Exemples de SDK](#sdk-examples)  
+10. [Ressources supplémentaires](#additional-resources)  
+
+---
+
+## Conditions préalables
+- Un **jeton d’accès JWT** valide obtenu via l’authentification Aspose Cloud.  
+- Le fichier du classeur doit être stocké dans le stockage Aspose Cloud (ou un autre stockage pris en charge), et le chemin du dossier (le cas échéant) doit être connu.  
+
+---
+
+## Authentification
+Toutes les API Aspose.Cells Cloud utilisent l’**authentification par jeton JWT**. Incluez le jeton dans l’en-tête `Authorization` :
+
+```http
+Authorization: Bearer <access_token>
 ```
 
-Les paramètres de la requête sont :
+Pour plus de détails sur l’obtention d’un jeton, consultez le [guide d’authentification](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Le nom du classeur.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| index de colonne| entier| chemin| L'index des colonnes.|
-| dossier| chaîne| requête| Le dossier du classeur.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+---
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
-
- Vous pouvez utiliser**cURL** Outil en ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le cloud API avec cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
-
-curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0" -H "accept: application/json"
-
+## Endpoint
+```
+GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
 ```
 
-{{< /tab >}}
+- **{name}** – nom du fichier du classeur (par exemple, `test.xlsx`).  
+- **{sheetName}** – nom de la feuille de calcul (par exemple, `Sheet1`).  
+- **{columnIndex}** – index de la colonne à récupérer (indexation à partir de zéro).
 
-{{< tab tabNum="12" >}}
+---
 
+### **Sécurité et authentification**
+
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent l’<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification par jeton JWT</a>.
+
+## Paramètres de la requête
+
+| Nom              | Emplacement | Type    | Obligatoire | Description |
+|------------------|-------------|---------|------------|-------------|
+| **name**         | path        | string  | Oui        | Nom du fichier du classeur. |
+| **sheetName**    | path        | string  | Oui        | Feuille de calcul contenant la colonne. |
+| **columnIndex**  | path        | integer | Oui        | Index (à partir de zéro) de la colonne à récupérer. |
+| **folder**       | query       | string  | Non        | Dossier de stockage où réside le classeur. |
+| **storageName**  | query       | string  | Non        | Nom du service de stockage (par exemple, Aspose Cloud Storage). |
+
+---
+
+## Exemple cURL
 ```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0?folder=MyFolder&storageName=MyStorage" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
+```
 
+---
+
+## Exemple de réponse
+```json
 {
-"Column": {
-  "GroupLevel": 0,
-  "Index": 10,
-  "IsHidden": false,
-  "Width": 8.5,
-  "Style": {
+  "Column": {
+    "GroupLevel": 0,
+    "Index": 0,
+    "IsHidden": false,
+    "Width": 8.5,
+    "Style": {
+      "link": {
+        "Href": "/style",
+        "Rel": "self"
+      }
+    },
     "link": {
-      "Href": "/style",
+      "Href": "https://api.aspose.cloud/v4.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0",
       "Rel": "self"
     }
   },
-  "link": {
-    "Href": "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0",
-    "Rel": "self"
-  }
-},
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
-
-
 ```
 
-{{< /tab >}}
+---
 
-{{< /tabs >}}
+## Schéma de réponse
+| Champ                 | Type    | Description |
+|-----------------------|---------|-------------|
+| `Column.GroupLevel`   | integer | Niveau de regroupement (outline) de la colonne (utilisé pour le groupement). |
+| `Column.Index`        | integer | Index de la colonne (à partir de zéro). |
+| `Column.IsHidden`     | boolean | `true` si la colonne est masquée ; sinon `false`. |
+| `Column.Width`        | number  | Largeur de la colonne exprimée en caractères. |
+| `Column.Style`        | object  | Contient un lien vers la ressource de style de la colonne. |
+| `Column.link`         | object  | Lien auto-référentiel vers la ressource de la colonne. |
+| `Code`                | integer | Code d’état HTTP de la réponse. |
+| `Status`              | string  | Description textuelle de l’état (par exemple, **OK**). |
 
-## Famille de SDK Cloud
+---
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+## Erreurs possibles
+| Statut HTTP | Code | Message                        | Situation |
+|-------------|------|--------------------------------|-----------|
+| 400         | 400  | Bad Request (Requête incorrecte) | Paramètres obligatoires manquants ou mal formés. |
+| 401         | 401  | Unauthorized (Non autorisé)      | En-tête `Authorization` manquant ou jeton invalide. |
+| 404         | 404  | Not Found (Introuvable)          | Le classeur, la feuille de calcul ou la colonne n’existe pas. |
+| 500         | 500  | Internal Server Error (Erreur interne du serveur) | Problème inattendu côté serveur. |
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+### Exemple – 404 Introuvable
+```json
+{
+  "Code": 404,
+  "Message": "L’index de colonne est hors de portée."
+}
+```
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+### Exemple – 401 Non autorisé
+```json
+{
+  "Code": 401,
+  "Message": "Jeton d’authentification invalide ou manquant."
+}
+```
 
-{{< tab tabNum="1" >}}
+---
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleGetWorksheetColumns.cs" >}}
+## Exemples de SDK
+Les extraits de code suivants montrent comment appeler l’opération **Get Worksheet Columns** à l’aide des SDK officiels Aspose.Cells Cloud. Si un Gist devient indisponible, le code d’exemple est fourni ci-dessous.
 
-{{< /tab >}}
+<details><summary>**C#**</summary>
 
-{{< tab tabNum="2" >}}
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+using System;
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_GetWorksheetColumns.java" >}}
+// Configuration du client API
+var apiInstance = new CellsApi("client_id", "client_secret");
 
-{{< /tab >}}
+// Définition des paramètres obligatoires
+string name = "test.xlsx";
+string sheetName = "Sheet1";
+int columnIndex = 0;
+string folder = "MyFolder";          // optionnel
+string storageName = "MyStorage";    // optionnel
 
-{{< tab tabNum="3" >}}
+try
+{
+    var response = apiInstance.GetWorksheetColumns(name, sheetName, columnIndex, folder, storageName);
+    Console.WriteLine("Index de la colonne : " + response.Column.Index);
+    Console.WriteLine("Largeur : " + response.Column.Width);
+}
+catch (Exception e)
+{
+    Console.WriteLine("Exception lors de l’appel à CellsApi.GetWorksheetColumns : " + e.Message );
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_GetWorksheetColumns.php" >}}
+</details>
 
-{{< /tab >}}
+<details><summary>**Java**</summary>
 
-{{< tab tabNum="4" >}}
+```java
+import com.aspose.cells.cloud.api.CellsApi;
+import com.aspose.cells.cloud.model.ColumnsResponse;
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetColumns.rb" >}}
+public class GetWorksheetColumnsExample {
+    public static void main(String[] args) {
+        CellsApi apiInstance = new CellsApi("client_id", "client_secret");
 
-{{< /tab >}}
+        String name = "test.xlsx";
+        String sheetName = "Sheet1";
+        Integer columnIndex = 0;
+        String folder = "MyFolder";          // optionnel
+        String storageName = "MyStorage";    // optionnel
 
-{{< tab tabNum="5" >}}
+        try {
+            ColumnsResponse result = apiInstance.getWorksheetColumns(name, sheetName, columnIndex, folder, storageName);
+            System.out.println("Index de la colonne : " + result.getColumn().getIndex());
+            System.out.println("Largeur : " + result.getColumn().getWidth());
+        } catch (Exception e) {
+            System.err.println("Exception lors de l’appel à CellsApi#getWorksheetColumns");
+            e.printStackTrace();
+        }
+    }
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetColumns.ts" >}}
+</details>
 
-{{< /tab >}}
+<details><summary>**Python**</summary>
 
-{{< tab tabNum="6" >}}
+```python
+import asposecellscloudsdk
+from asposecellscloudsdk import CellsApi, ApiClient, Configuration
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetColumns.py" >}}
+config = Configuration()
+config.client_id = "client_id"
+config.client_secret = "client_secret"
 
-{{< /tab >}}
+api_instance = CellsApi(ApiClient(config))
 
-{{< tab tabNum="7" >}}
+name = "test.xlsx"
+sheet_name = "Sheet1"
+column_index = 0
+folder = "MyFolder"       # optionnel
+storage_name = "MyStorage"  # optionnel
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetColumns.pl" >}}
+try:
+    response = api_instance.get_worksheet_columns(name, sheet_name, column_index, folder, storage_name)
+    print("Index de la colonne :", response.column.index)
+    print("Largeur :", response.column.width)
+except Exception as e:
+    print("Exception lors de l’appel à CellsApi->get_worksheet_columns :", e)
+```
 
-{{< /tab >}}
+</details>
 
-{{< tab tabNum="8" >}}
+<details><summary>**Node.js (TypeScript)**</summary>
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetColumns.go" >}}
+```typescript
+import { CellsApi, Configuration } from "@asposecloud/cells-sdk";
 
-{{< /tab >}}
+const config = new Configuration({
+    clientId: "client_id",
+    clientSecret: "client_secret"
+});
+const apiInstance = new CellsApi(config);
 
-{{< /tabs >}}
+const name = "test.xlsx";
+const sheetName = "Sheet1";
+const columnIndex = 0;
+const folder = "MyFolder";       // optionnel
+const storageName = "MyStorage"; // optionnel
+
+apiInstance.getWorksheetColumns(name, sheetName, columnIndex, folder, storageName)
+    .then((result) => {
+        console.log("Index de la colonne :", result.column?.index);
+        console.log("Largeur :", result.column?.width);
+    })
+    .catch((error) => {
+        console.error("Erreur lors de l’appel à getWorksheetColumns :", error);
+    });
+```
+
+</details>
+
+> **Remarque :** Tous les SDK gèrent automatiquement l’en-tête `Authorization` une fois que vous avez fourni `client_id` et `client_secret`.
+
+---
+
+## Ressources supplémentaires
+- **Spécification OpenAPI :** <https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns>  
+- **Guide d’authentification :** <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>  
+- **Dépôt GitHub (SDK et exemples) :** <https://github.com/aspose-cells-cloud>  
+
+--- 
+
+*Document mis à jour pour la dernière fois le 2026-07-30.*

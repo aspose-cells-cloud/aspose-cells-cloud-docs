@@ -1,58 +1,78 @@
-﻿---
-title: Obtener metadatos del archivo Excel
-second_title: Documen
-linktitle: Consíguelo sin usar almacenamiento
-type: docs
-url: /es/metadata/get/
-keywords: Get properties from Excel files
-description: Aspose.Cells Cloud REST API admite la obtención de propiedades de archivos de Excel. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 23
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Obtener metadatos de archivos Excel
 ---
-Este REST API indica obtener `metadata` de múltiples archivos Excel.
+title: "Obtener metadatos de archivos de Excel"
+second_title: "Documentos"
+linktype: "Obtener sin usar almacenamiento"
+type: docs
+url: /metadata/get/
+keywords: "Aspose.Cells, Excel, metadatos, API REST, SDK en la nube"
+description: "Recuperar metadatos integrados o personalizados de libros de Excel usando la API REST de Aspose.Cells Cloud. Incluye formato de solicitud, parámetros, código de ejemplo del SDK y manejo de errores."
+weight: 23
+ArticleTitle: "Obtener metadatos de archivos de Excel - API de Aspose.Cells Cloud"
+---
+
+Esta API REST recupera **metadatos** de uno o más archivos de Excel.  
+La solicitud debe incluir un encabezado `Authorization: Bearer <access_token>` obtenido mediante el flujo de credenciales de cliente de OAuth 2.0.
+
+**Requisitos previos**: Para llamar a este endpoint, debe tener un token de acceso válido obtenido del endpoint de tokens OAuth 2.0 de Aspose Cloud. Ejemplo de solicitud curl para adquirir un token:
 
 ```bash
+curl -X POST "https://api.aspose.cloud/connect/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
+```
 
+## API REST
+
+```bash
 POST https://api.aspose.cloud/v3.0/cells/metadata/get
-
 ```
 
-- **Parámetro de consulta**
+### Parámetro de consulta
 
-|Nombre del parámetro|Tipo|Descripción|
-|:- |:- |:- |
-| tipo| cadena| TODO/Integrado/Personalizado|
+| Nombre del parámetro | Tipo   | Descripción                                                                     |
+| -------------------- | ------ | ------------------------------------------------------------------------------- |
+| type                 | string | `ALL` / `BuiltIn` / `Custom` – especifica qué grupos de metadatos devolver.    |
 
-- **Parámetro del cuerpo de la solicitud**
+### Parámetro del cuerpo de la solicitud
 
-|Nombre del parámetro|Tipo|Descripción|
-|:- |:- |:- |
-|archivo de Excel| archivo de datos|El archivo de datos se guarda en la primera parte del contenido multiparte.|
+| Nombre del parámetro | Tipo      | Descripción                                                     |
+| -------------------- | --------- | --------------------------------------------------------------- |
+| archivo de Excel     | archivo de datos | El archivo de Excel proporcionado como la primera parte de la solicitud multipart. |
 
-- **Respuesta**
+### Respuesta
 
-```bash
-{
-    [
-        { 
-            "Name":"test1",
-            "Value":"test1",
-            ...
-        },
-        { 
-            "Name":"test2",
-            "Value":"test3",
-            ...
-        }
-    ]
-}
+```json
+[
+  {
+    "Name": "Author",
+    "Value": "John Doe",
+    "BuiltIn": true,
+    "IsReadOnly": false
+  },
+  {
+    "Name": "CustomProp1",
+    "Value": "Custom Value",
+    "BuiltIn": false,
+    "IsReadOnly": false
+  }
+]
 ```
 
-- **Familia de SDK en la nube**
+| Código | Significado                 | Cuándo                               |
+|--------|-----------------------------|--------------------------------------|
+| 200    | Correcto                    | Metadatos devueltos.                 |
+| 400    | Solicitud incorrecta        | Falta el archivo o la consulta es inválida. |
+| 401    | No autorizado               | Token inválido o ausente.             |
+| 404    | No encontrado               | El archivo especificado no se encontró. |
+| 500    | Error interno del servidor  | Falla inesperada del servidor.        |
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+La API devuelve estos códigos de estado HTTP estándar junto con un objeto JSON de respuesta de error cuando corresponda.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+### Familia de SDK en la nube
+
+El uso de un SDK acelera el desarrollo al manejar los detalles de bajo nivel. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells con varios SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -105,3 +125,4 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

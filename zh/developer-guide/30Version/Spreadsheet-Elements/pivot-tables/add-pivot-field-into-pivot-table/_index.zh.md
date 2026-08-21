@@ -1,78 +1,88 @@
-﻿---
-title: 在数据透视表中添加数据透视字段
-second_title: Documen
-linktitle: 添加数据透视字段
+---
+title: "向数据透视表添加数据透视字段"
+second_title: "Document"
+linktitle: "添加数据透视字段"
 type: docs
 url: /zh/pivot-tables/add-pivot-field/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
-keywords: Add a pivot field in a pivot table
-description: Aspose.Cells Cloud REST API 支持在数据透视表中添加数据透视字段。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+keywords: "Aspose.Cells Cloud, Excel, 数据透视表, 添加数据透视字段, REST API, SDK"
+description: "使用 Aspose.Cells Cloud REST API 向现有数据透视表添加数据透视字段。包含请求详情、cURL 示例和 SDK 代码片段。"
 weight: 40
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 在数据透视表中添加数据透视字段
+ArticleTitle: "向数据透视表添加数据透视字段 – Aspose.Cells Cloud 文档"
 ---
-此 REST API 指示将 `add` 数据透视字段放入数据透视表中
- 
-## 重新设置 API
- 
+
+此 REST API **添加**一个数据透视字段到现有的数据透视表中。
+
+> **前提条件：** 调用此接口前，您必须在 `Authorization` 请求头中包含有效的 JWT 认证令牌，并确保工作簿存储在指定文件夹或默认存储中。
+
+## REST API
+
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
 ```
-请求参数为：
- 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|数据透视表索引|整数|小路|数据透视表索引|
-|枢轴字段类型|细绳|询问|字段区域类型。|
-|要求||身体|包含字段索引的 DTO|
-|需要重新计算|布尔值|询问|错误的|
-|文件夹|细绳|询问|文档的文件夹。|
-|存储名称|细绳|询问|存储名称。|
- 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
- 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### 请求参数
+
+| 参数名称         | 类型     | 位置   | 描述                                           |
+| ---------------- | -------- | ------ | ---------------------------------------------- |
+| name             | string   | path   | 文档名称。                                     |
+| sheetName        | string   | path   | 工作表名称。                                   |
+| pivotTableIndex  | integer  | path   | 数据透视表的索引。                             |
+| pivotFieldType   | string   | query  | 字段区域类型（例如：Row、Column）。            |
+| request          | object   | body   | 包含待添加字段索引的 DTO 对象。                |
+| needReCalculate  | boolean  | query  | 设置为 **true** 以在操作后重新计算数据透视表。 |
+| folder           | string   | query  | 文档所在的文件夹。                             |
+| storageName      | string   | query  | 存储名称。                                     |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) 定义了一个公开可用的编程接口，可让您直接从 Web 浏览器执行 REST 交互。
+
+您可以使用 **cURL** 命令行工具调用 Aspose.Cells Web 服务。以下示例演示如何使用 cURL 添加数据透视字段。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row"  \
--X PUT \
--d '{"Data":[1,2]}'
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row" \
+  -X PUT \
+  -d '{"Data":[1,2]}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK 系列
- 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
- 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
- 
+
+成功响应将返回一个包含 `Code` 和 `Status` 字段的 JSON 对象。示例结构如下：
+
+```json
+{
+  "Code": 0,        // 整数，表示 HTTP 状态码
+  "Status": "OK"    // 字符串，表示状态消息
+}
+```
+
+可能的错误响应包括：**400 Bad Request**（缺少必要参数）、**401 Unauthorized**（令牌无效）以及 **500 Internal Server Error**（服务器端问题）。
+
+## 云 SDK 家族
+
+使用 SDK 是集成此功能的最快方式。SDK 封装了底层细节，使您能够专注于业务逻辑。有关 Aspose.Cells Cloud SDK 的完整列表，请参阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)。
+
+以下代码示例演示如何使用多种 SDK 调用 Aspose.Cells Web 服务：
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="Ruby" tabName4="Python" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -123,6 +133,6 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
 
 {{< /tabs >}}
 
-
-
-
+**另请参阅：**  
+- [添加数据透视表](https://docs.aspose.cloud/cells/zh/pivot-tables/add-pivot-table/)  
+- [删除数据透视字段](https://docs.aspose.cloud/cells/zh/pivot-tables/delete-pivot-field/)

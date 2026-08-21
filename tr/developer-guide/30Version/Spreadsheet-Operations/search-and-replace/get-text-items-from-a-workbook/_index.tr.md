@@ -1,52 +1,96 @@
-﻿---
-title: Excel workbook'tan metin öğelerini al
-second_title: Documen
-linktitle: İşe koyul
+---
+title: "Bir Excel çalışma kitabından metin öğelerini alın"
+ArticleTitle: "Aspose.Cells Cloud API kullanarak bir Excel Çalışma Kitabından Metin Öğelerini Alın"
+second_title: "Belge"
+linktitle: "Çalışma kitabından metin öğelerini al"
 type: docs
-url: /tr/workbook/get-text-items/
+url: /workbook/get-text-items/
 aliases: [/get-text-items-from-a-workbook/]
 weight: 10
-keywords: Get text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasından metin almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma kitabından metin öğelerini alma
+keywords: "Excel, Aspose.Cells Cloud, REST API, Elektronik Tablo, Metin Öğelerini Al, Çalışma Kitabı"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabından metin öğelerini alın. C#, Java, Python, PHP, Ruby, Go, Node.js, Perl ve Swift için SDK’lar aracılığıyla kullanılabilir."
 ---
-Bu REST API, `read` çalışma kitabının `text items`'ini Excel çalışma kitabında gösterir.
 
-## RSET API
+
+## REST API
+
+Bu REST API, bir Excel dosyasındaki bir çalışma kitabının **metin öğelerini** okur.
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/textItems
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/textItems
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookTextItems) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### İstek parametreleri
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Parametre Adı  | Tür    | Konum | Açıklama                                            |
+| -------------- | ------ | ----- | ---------------------------------------------------- |
+| name           | string | path  | Çalışma kitabının dosya adı.                         |
+| folder         | string | query | Çalışma kitabının bulunduğu depolama dizin yolu.     |
+| storageName    | string | query | Depolama hizmetinin adı.                            |
+
+### **Yanıt**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                                |
+|-----|-----------------------------|---------------------------------------------------------|
+| 200 | OK                          | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request                 | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized                | Geçersiz veya eksik JWT belirteci. |
+| 413 | Payload Too Large           | Yüklenen dosya boyut sınırını aşıyor. |
+| 500 | Internal Server Error       | Beklenmeyen sunucu hatası. |
+## SDK’lar ile GetWorkbookTextItems API’sini Nasıl Kullanılır
+
+### GetWorkbookTextItems API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookTextItems), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye bir çağrı nasıl yapılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/textItems" -H "accept: application/json"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
+```json
 {
   "Status": "string",
   "TextItems": {
@@ -69,18 +113,27 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/textItems" -H "accept
     ]
   }
 }
-       
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+Tipik HTTP yanıt kodları:
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| Kod | Açıklama                                     |
+|-----|----------------------------------------------|
+| 200 | İstek başarılı; metin öğeleri döndürülür.    |
+| 401 | Unauthorized – eksik veya geçersiz belirteç. |
+| 403 | Forbidden – yetersiz izinler.                |
+| 404 | Not Found – çalışma kitabı veya kaynak bulunamadı. |
+| 500 | Internal Server Error – beklenmeyen hata.    |
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+### Aspose.Cells Cloud SDK’larını Kullanma
+
+Bu örnek **v3.0** API sürümünü kullanır; yeni sürümler için değişiklik notlarına bakın. SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, düşük seviye detayları yönetir ve projenizdeki görevlere odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -133,3 +186,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

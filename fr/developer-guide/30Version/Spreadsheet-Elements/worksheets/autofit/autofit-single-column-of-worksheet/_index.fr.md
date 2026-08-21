@@ -1,68 +1,72 @@
-﻿---
-title: Ajuster automatiquement une colonne sur une feuille de calcul Excel
-second_title: Documen
-linktitle: Colonne
-type: docs
-url: /fr/worksheets/autofit/column/
-aliases: [/autofit-single-column-of-worksheet/]
-keywords: Autofit a column on an Excel workshee
-description: Aspose.Cells Cloud REST API prend en charge l'ajustement automatique d'une colonne dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 10
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Ajuster automatiquement une colonne sur une feuille de calcul Excel
 ---
-Ce REST API indique d'ajuster automatiquement une colonne sur une feuille de calcul Excel.
+title: "Ajuster automatiquement la largeur d'une colonne dans Excel à l’aide de l’API Aspose.Cells Cloud – Guide rapide"
+second_title: "Document"
+linktitle: "Colonne"
+type: docs
+url: /worksheets/autofit/column/
+aliases: [/autofit-single-column-of-worksheet/]
+keywords: "Aspose.Cells Cloud, ajustement automatique de colonne, API Excel, API REST, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Découvrez comment redimensionner automatiquement une colonne (ou une plage de colonnes) dans une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut des exemples cURL, des exemples de SDK (C#, Java, Python, etc.) et tous les détails complets de la requête/réponse."
+weight: 10
+---
 
-## RSET API
+Cette API REST ajuste automatiquement la largeur d'une colonne unique ou d'une plage contiguë de colonnes dans une feuille Excel.
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
 ```
 
-Les paramètres de la requête sont :
+### Paramètres de la requête
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Le nom du fichier.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| première colonne| entier| requête| Index de la première colonne.|
-| dernière colonne| entier| requête| Index de la dernière colonne.|
-|[Options d'installation automatique](/cells/fr/auto-filter-options) || corps| Options d'installation automatique.|
-| première rangée| entier| requête| Index de la première ligne.|
-| dernière ligne| entier| requête| Index de la dernière ligne.|
-| dossier| chaîne| requête| Le dossier.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type    | Emplacement | Description                                                                                      |
+| ----------------- | ------- | ----------- | ------------------------------------------------------------------------------------------------ |
+| name              | string  | chemin      | Le nom du fichier Excel.                                                                         |
+| sheetName         | string  | chemin      | Le nom de la feuille de calcul.                                                                  |
+| firstColumn       | integer | requête     | Index de base zéro de la première colonne à ajuster automatiquement.                             |
+| lastColumn        | integer | requête     | Index de base zéro de la dernière colonne à ajuster automatiquement.                             |
+| autoFitterOptions | object  | corps       | Options contrôlant le comportement d’ajustement automatique (voir [AutoFitterOptions](/cells/auto-filter-options)). |
+| firstRow          | integer | requête     | Index de base zéro de la première ligne prise en compte lors du calcul de la largeur de colonne. |
+| lastRow           | integer | requête     | Index de base zéro de la dernière ligne prise en compte lors du calcul de la largeur de colonne. |
+| folder            | string  | requête     | Le dossier dans le stockage où le fichier est situé.                                             |
+| storageName       | string  | requête     | Le nom du service de stockage.                                                                   |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Réponses d’erreur
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Statut HTTP | Signification                               | Corps JSON d’exemple                                         |
+| ----------- | ------------------------------------------- | ------------------------------------------------------------ |
+| 400         | Paramètre(s) invalide(s)                    | `{"Code":400,"Message":"Paramètre invalide 'firstColumn'."}` |
+| 401         | Non autorisé – token JWT manquant ou invalide | `{"Code":401,"Message":"Échec de l'authentification."}`      |
+| 404         | Fichier ou feuille non trouvé               | `{"Code":404,"Message":"Feuille 'Sheet1' introuvable."}`     |
+| 500         | Erreur interne du serveur                   | `{"Code":500,"Message":"Une erreur inattendue s'est produite."}` |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande **cURL** pour appeler les services Aspose.Cells Cloud. L’exemple ci-dessous montre comment invoquer le point de terminaison d’ajustement automatique de colonne.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?lastColumn=2&firstColumn=2" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"AutoFitMergedCells" : true, "IgnoreHidden" : true, "OnlyAuto" : true}' 
-
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?firstColumn=2&lastColumn=2" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton JWT>" \
+  -d '{"AutoFitMergedCells": true, "IgnoreHidden": true, "OnlyAuto": true}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -71,9 +75,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le moyen le plus rapide d’intégrer l’API dans votre application. Les SDK gèrent les détails de bas niveau afin que vous puissiez vous concentrer sur la logique métier. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants illustrent comment appeler le point de terminaison d’ajustement automatique de colonne à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

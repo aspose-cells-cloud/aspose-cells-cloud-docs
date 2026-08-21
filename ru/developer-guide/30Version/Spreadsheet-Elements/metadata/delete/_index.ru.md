@@ -1,82 +1,97 @@
-﻿---
-title: Удалить метаданные файлов Excel
-second_title: Documen
-linktitle: Удалить без использования хранилища
-type: docs
-url: /ru/metadata/delete/
-keywords: Deleting metadata from Excel files
-description: Aspose.Cells Cloud REST API поддерживает удаление метаданных из файлов Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 55
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Удалить метаданные из файлов Excel.
 ---
-Этот REST API указывает на удаление `metadata` из нескольких файлов Excel.
+title: "Удаление метаданных из файлов Excel"
+second_title: "Документ"
+linktitle: "Удаление без использования хранилища"
+type: docs
+url: /metadata/delete/
+keywords: "Aspose.Cells, удаление метаданных, Excel API, свойства рабочей книги"
+description: "Удаление метаданных рабочей книги (автор, заголовок, пользовательские данные) с помощью API Aspose.Cells Cloud. Включает конечную точку, аутентификацию, параметры, примеры cURL и SDK."
+weight: 55
+ArticleTitle: "Удаление метаданных из файлов Excel – документация Aspose.Cells Cloud"
+---
 
-## РСЕT API
+**Обзор**  
+Операция удаления метаданных безвозвратно удаляет все свойства рабочей книги (стандартные и пользовательские) из загруженных файлов Excel и возвращает обработанные файлы в ответе.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/metadata/delete
- 
+**Необходимые условия**  
+- Действующий JWT-токен Aspose.Cells Cloud (получаемый в рамках потока аутентификации OAuth 2.0).  
+- Версия API **v3.0** (конечная точка, используемая в данном примере).  
+- Для использования SDK установите соответствующий SDK Aspose.Cells Cloud для вашего языка программирования (например, через NuGet, Maven, npm, pip, CPAN или Go modules).
+
+Этот REST API удаляет **метаданные** из одного или нескольких файлов Excel. Он удаляет свойства рабочей книги, такие как автор, заголовок и пользовательские данные, и возвращает очищенные файлы.
+
+## API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/metadata/delete
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| файл| файл| formData| Файл для загрузки|
-| тип| нить| запрос| все|
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/DeleteMetadata) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### **Параметры запроса**
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра | Тип   | Расположение | Описание                                                |
+|---------------|-------|-------------|---------------------------------------------------------|
+| file          | файл  | formData    | Файл Excel для загрузки с целью удаления **метаданных** |
+| type          | строка| query       | Тип операции; установите значение **all**, чтобы удалить все **метаданные** |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+<a href="https://apireference.aspose.cloud/cells/#/DeleteMetadata" target="_blank" rel="noopener noreferrer">Спецификация OpenAPI</a> определяет общедоступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Для удобного доступа к веб-сервисам Aspose.Cells вы можете использовать утилиту командной строки cURL. В следующем примере показано, как выполнять вызовы в облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/metadata/delete" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'  
+curl -v "https://api.aspose.cloud/v3.0/cells/metadata/delete?type=all" \
+  -X POST \
+  -H "Authorization: Bearer <jwt token>" \
+  -F "file=@file1.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "file1.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Ответы об ошибках** могут включать:
+
+- **400 Bad Request** — отсутствует файл или указано недопустимое значение `type`.
+- **401 Unauthorized** — недействительный или отсутствующий JWT-токен.
+- **500 Internal Server Error** — ошибка обработки на стороне сервера.
+
+API возвращает JSON-объект, содержащий поле `Error` с деталями ошибки для каждого случая.
+
+| Код | Значение | Описание |
+|-----|----------|----------|
+| 200 | OK | Метаданные удалены, файл возвращён |
+| 400 | Bad Request | Отсутствует файл или недопустимое значение `type` |
+| 401 | Unauthorized | Недействительный или отсутствующий JWT |
+| 500 | Internal Server Error | Сбой обработки на стороне сервера |
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Ознакомьтесь с полным списком SDK Aspose.Cells Cloud в <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">репозитории GitHub</a>.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Приведённые ниже примеры кода демонстрируют, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

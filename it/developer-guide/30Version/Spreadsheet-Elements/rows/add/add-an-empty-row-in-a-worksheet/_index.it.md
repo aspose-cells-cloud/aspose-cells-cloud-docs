@@ -1,74 +1,104 @@
-﻿---
-title: Aggiungi una riga vuota su un foglio di lavoro Excel
-second_title: Documen
-linktitle: Ro
-type: docs
-url: /it/rows/add/row/
-aliases: [/add-an-empty-row-in-a-worksheet/]
-keywords: Add an empty row on an Excel workshee
-description: Aspose.Cells Cloud REST API supporta l'aggiunta di una riga vuota su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Aggiungi una riga vuota su un foglio di lavoro Excel
 ---
-Questo REST API indica di aggiungere una nuova riga del foglio di lavoro su un foglio di lavoro Excel.
+title: "Aggiungi una riga vuota in un foglio di lavoro Excel"
+ArticleTitle: "Aggiungi una riga vuota a un foglio di lavoro Excel utilizzando l'API Aspose.Cells Cloud"
+second_title: "Documenti"
+linktitle: "Riga"
+type: docs
+url: /rows/add/row/
+aliases: [/add-an-empty-row-in-a-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, aggiungi riga vuota, foglio di lavoro, REST API, inserisci riga, foglio di calcolo cloud"
+description: "Utilizza l'API REST Aspose.Cells Cloud per inserire una riga vuota in un foglio di lavoro Excel. Supporta numerosi SDK (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) per uno sviluppo rapido."
+weight: 20
+---
 
-## RSET API
+Questa API REST consente di aggiungere una nuova riga a un foglio di lavoro Excel. Essa inserisce una riga vuota all'indice zero-based specificato.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
- 
+**Prerequisiti:**  
+- È necessario includere un token di accesso Aspose Cloud valido (Bearer JWT) nell'header `Authorization`.  
+- Il libro di lavoro target deve essere caricato nello storage Aspose Cloud, e i parametri `folder` e `storageName` devono puntare alla sua posizione.
+
+**Note:**  
+- L'indice `rowIndex` è zero-based; inserire alla posizione 0 aggiunge una riga all'inizio del foglio di lavoro.  
+- I fogli di lavoro Excel hanno un massimo di 1.048.576 righe; tentare di inserire oltre questo limite comporterà un errore.
+
+## API PutInsertWorksheetRow
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome della cartella di lavoro.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| indice di riga| intero| sentiero| Il nuovo indice di riga.|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+Le API Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione tramite token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRow) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### **Parametri della richiesta**
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Nome parametro | Tipo    | Posizione | Descrizione                                                |
+|----------------|---------|-----------|------------------------------------------------------------|
+| name           | string  | path      | Nome del file del libro di lavoro.                         |
+| sheetName      | string  | path      | Nome del foglio di lavoro.                                 |
+| rowIndex       | integer | path      | Indice zero-based in cui verrà inserita la nuova riga.     |
+| folder         | string  | query     | Percorso della cartella nello storage contenente il libro. |
+| storageName    | string  | query     | Nome dello storage Aspose Cloud da utilizzare.             |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRow) definiscono un'interfaccia di programmazione pubblicamente accessibile e consentono di effettuare interazioni REST direttamente da un browser web.
+
+È possibile utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/10" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
+
+> **Nota:** Tutti gli endpoint Aspose.Cells Cloud richiedono HTTPS. Utilizzare lo schema sicuro `https://` per le chiamate in produzione.
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+**Codici di stato HTTP**
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+| Codice | Significato              | Descrizione                                               |
+|--------|--------------------------|-----------------------------------------------------------|
+| 200    | OK                       | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida     | Parametri mancanti o non validi (es. tipo di file non supportato). |
+| 401    | Non autorizzato          | Token JWT non valido o mancante.                          |
+| 413    | Payload troppo grande    | File caricato supera il limite di dimensione.             |
+| 500    | Errore interno del server | Errore imprevisto nel server.                            |
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+*Esempio di risposta di errore (es. quando l'indice della riga supera il limite del foglio di lavoro):*
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Indice riga fuori intervallo. Il numero massimo di righe consentito è 1048576."
+}
+```
+
+## Famiglia di SDK Cloud
+
+L'utilizzo di un SDK è il modo migliore per accelerare lo sviluppo. Un SDK astrae i dettagli a basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">repository GitHub</a> per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,73 +1,96 @@
-﻿---
-title: 清除 Excel 工作表中的 Cells 格式
+---
+title: "清除 Excel 工作表中的单元格格式"
 type: docs
 url: /zh/clear-cells-formatting-in-excel-worksheet/
 weight: 100
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、Clear Cells 格式化 Excel 工作表
+keywords: "Aspose.Cells Cloud, Excel, 清除单元格格式, REST API, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "使用 Aspose.Cells Cloud REST API 清除 Excel 工作表中的单元格格式。包含请求详情、cURL 示例以及多种语言的 SDK 代码片段。"
+ArticleTitle: "清除 Excel 工作表中的单元格格式 - Aspose.Cells Cloud API"
 ---
-此 REST API 表示 Excel 文件中的 `clear` 个单元格 `style`。
 
-## 重新设置 API
+**注意：** 所有 Aspose.Cells Cloud API 调用必须通过 **HTTPS** 进行。HTTP 接口已被弃用，可能被浏览器拦截。
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
- 
+- **方法：** POST  
+- **端点：** `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats`
+
+此 REST API 可清除 Excel 文件中的单元格格式，属于 Aspose.Cells Cloud 套件中用于清除 Excel 工作表单元格格式的功能模块。
+
+## PostClearFormats API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
 ```
 
-请求参数为：
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|范围|细绳|询问|范围。|
-|起始行|整数|询问|起始行。|
-|起始列|整数|询问|起始列。|
-|结束行|整数|询问|末行。|
-|结束列|整数|询问|结束列。|
-|文件夹|细绳|询问|工作簿文件夹。|
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 采用安全机制，需要 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/PostClearFormats)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### **响应**
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**响应架构**
+
+| 字段   | 类型    | 描述                                           |
+|--------|---------|------------------------------------------------|
+| Code   | integer | API 返回的 HTTP 状态码（例如：200）。             |
+| Status | string  | 操作结果（成功时为 `OK`）。                      |
+
+**HTTP 状态码**
+
+| 状态码 | 含义           | 描述                                           |
+|--------|----------------|------------------------------------------------|
+| 200    | OK             | 筛选器已成功应用；响应中包含操作详情。             |
+| 400    | Bad Request    | 缺少或无效的参数（例如：不支持的文件类型）。         |
+| 401    | Unauthorized   | JWT 令牌无效或缺失。                              |
+| 413    | Payload Too Large | 上传文件超出大小限制。                          |
+| 500    | Internal Server Error | 服务器内部意外错误。                          |
+
+## 如何结合 SDK 使用 PostClearFormats API
+
+### PostClearFormats API 规范
+
+<a href="https://apireference.aspose.cloud/cells/#/Cells/PostClearFormats" rel="noopener noreferrer">OpenAPI 规范</a> 定义了公开可访问的编程接口，使您能直接通过网页浏览器执行 REST 交互。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何通过 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/clearformats?range=a1%3Aa10&startRow=1&startColumn=1&endRow=10&endColumn=10" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+### 使用 Aspose.Cells Cloud SDK
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是最快捷的开发方式。SDK 会处理底层细节，让您专注于项目任务。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +143,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/c
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**另请参阅**
+
+- [清除单元格内容和样式](https://docs.aspose.cloud/cells/clear-contents-and-styles)  
+- [设置单元格样式](https://docs.aspose.cloud/cells/set-cell-style)

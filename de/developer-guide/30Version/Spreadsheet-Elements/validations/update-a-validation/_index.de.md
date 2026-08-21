@@ -1,74 +1,91 @@
-﻿---
-title: Aktualisieren Sie eine Arbeitsblattvalidierung auf einem Excel-Arbeitsblatt
-second_title: Documen
-linktitle: Aktualisieren
-type: docs
-url: /de/validations/update/
-keywords: Delete a worksheet validation on an Excel worksheet
-description: Aspose.Cells Cloud REST API unterstützt das Löschen einer Arbeitsblattvalidierung auf einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Aktualisieren einer Arbeitsblattvalidierung auf einem Excel-Arbeitsblatt
 ---
-Dieser REST API gibt an, dass die Arbeitsblattvalidierung nach Index auf einem Excel-Arbeitsblatt aktualisiert werden soll.
+title: "Aktualisieren einer Arbeitsblattvalidierung in einem Excel-Arbeitsblatt"
+second_title: "Dokument"
+linktitle: "Aktualisieren"
+type: docs
+url: /validations/update/
+keywords: "Aspose.Cells Cloud, Excel-Validierung aktualisieren, REST-API, Arbeitsblattvalidierung, Excel-API"
+description: "Wie Sie eine Arbeitsblattvalidierung in einer Excel-Datei mithilfe der Aspose.Cells Cloud REST-API aktualisieren, mit cURL-Beispielen und SDK-Codeausschnitten für mehrere Programmiersprachen."
+weight: 10
+ArticleTitle: "Arbeitsblattvalidierung mit der Aspose.Cells Cloud API aktualisieren"
+---
 
-## RSET API
+Diese REST-API aktualisiert eine Arbeitsblattvalidierung anhand ihres Index in einem Excel-Arbeitsblatt.
+
+Bevor Sie diesen Endpunkt aufrufen, beschaffen Sie ein JWT-Zugriffstoken mit den entsprechenden Berechtigungen (z. B. `Cells.ReadWrite`). Binden Sie das Token wie in den Beispielen gezeigt in den `Authorization`-Header ein.
+
+## REST-API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
-Die Anforderungsparameter sind:
+### **Anforderungsparameter**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Dokumentname.|
-| Blattname| Schnur| Weg| Arbeitsblattname.|
-| Validierungsindex| ganze Zahl| Weg| Der Validierungsindex.|
-| Validierung| Objekt| Körper||
-| Ordner| Schnur| Abfrage| Ordner des Dokuments.|
-| Speichername| Schnur| Abfrage| Speichername.|
+| Parametername   | Typ     | Ort     | Beschreibung                                                   |
+| --------------- | ------- | ------- | -------------------------------------------------------------- |
+| name            | string  | path    | Der Name der Arbeitsmappe (.xlsx-Datei).                       |
+| sheetName       | string  | path    | Der Name des Arbeitsblatts, das die Validierung enthält.      |
+| validationIndex | integer | path    | Der nullbasierte Index der zu aktualisierenden Validierung.   |
+| validation      | object  | body    | Ein JSON-Objekt, das die aktualisierten Validierungseinstellungen definiert. |
+| folder          | string  | query   | Der Ordner im Cloud-Speicher, in dem sich die Arbeitsmappe befindet. |
+| storageName     | string  | query   | Der Name des Speicherdienstes (falls ein benutzerdefinierter Speicher verwendet wird). |
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PostWorksheetValidation) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+Die <a href="https://apireference.aspose.cloud/cells/#/WorksheetValidations/PostWorksheetValidation" target="_blank" rel="noopener noreferrer">OpenAPI-Spezifikation</a> definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht es Ihnen, REST-Interaktionen direkt aus einem Webbrowser heraus durchzuführen.
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+Sie können das cURL-Befehlszeilentool verwenden, um Aspose.Cells-Webdienste einfach aufzurufen. Das folgende Beispiel zeigt, wie ein Aufruf der Cloud-API mit cURL erfolgt.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"AlertStyle\":\"Warning\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-d '{ "AlertStyle":"Warning" }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Mögliche HTTP-Statuscodes**
+
+| Code | Bedeutung                               | Beschreibung |
+|------|-----------------------------------------|-------------|
+| 200  | OK                                      | Die Validierung wurde erfolgreich aktualisiert. |
+| 400  | Bad Request (Ungültige Anfrage)         | Die Anfrage ist fehlerhaft oder es fehlen erforderliche Parameter. |
+| 401  | Unauthorized (Nicht autorisiert)        | Ungültiges oder fehlendes JWT-Token. |
+| 403  | Forbidden (Verweigert)                  | Das Token verfügt über nicht ausreichende Berechtigungen. |
+| 404  | Not Found (Nicht gefunden)              | Die angegebene Arbeitsmappe, das angegebene Arbeitsblatt oder der angegebene Validierungsindex existiert nicht. |
+| 500  | Internal Server Error (Interner Serverfehler) | Auf dem Server ist ein unerwarteter Fehler aufgetreten. |
+
+Weitere Informationen zur Fehlerbehandlung finden Sie in der <a href="https://apireference.aspose.cloud/cells/#/Errors" target="_blank" rel="noopener noreferrer">Aspose.Cells Cloud-Fehlerdokumentation</a>.
+
+Sie könnten auch an verwandten Vorgängen interessiert sein, z. B. dem Hinzufügen einer neuen Validierung oder dem Löschen einer bestehenden:
+
+- [Hinzufügen einer Arbeitsblattvalidierung](https://docs.aspose.cloud/cells/validations/add/)
+- [Löschen einer Arbeitsblattvalidierung](https://docs.aspose.cloud/cells/validations/delete/)
+
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDK ist die schnellste Möglichkeit zur Entwicklung. Ein SDK abstractiert niedrigere Details, sodass Sie sich auf Ihre Geschäftslogik konzentrieren können. Besuchen Sie das <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub-Repository</a>, um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -121,3 +138,4 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+---

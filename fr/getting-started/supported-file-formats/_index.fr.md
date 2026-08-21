@@ -1,53 +1,55 @@
-﻿---
-title: Aspose.Cells Format de fichier pris en charge par le cloud
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud Supported File Formats: Excel, Pdf, CSV, Json, Markdown, and mor"
-linktitle: Format de fichier pris en charge
-type: docs
-url: /fr/supported-file-formats/
-description: Aspose.Cells Cloud prend en charge Excel pour créer, convertir, fusionner, diviser, protéger, effectuer des opérations sur des objets internes, etc.
-weight: 40
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Formats de fichiers pris en charge
 ---
-|**Format**|**Description**|**Charger**|**Sauvegarder**|
-|:- |:- |:- |:- |
-|[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Excel 95/5.0 - 2003 Cahier d'exercices.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Le format de fichier Open XML SpreadsheetML Office.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)|Excel Classeur binaire.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|Excel Classeur prenant en charge les macros.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLT](https://docs.fileformat.com/spreadsheet/xlt/)|Excel 97 - Excel 2003 Modèle.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLTX](https://docs.fileformat.com/spreadsheet/xltx/)|Excel Modèle.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLTM](https://docs.fileformat.com/spreadsheet/xltm/)|Excel Modèle prenant en charge les macros.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLAM](https://docs.fileformat.com/spreadsheet/xlam/)|Un fichier complémentaire prenant en charge les macros Excel utilisé pour ajouter de nouvelles fonctions à Excel.||{{< emoticons/tick >}}|
-|[CSV](https://docs.fileformat.com/spreadsheet/csv/)|Fichier CSV (valeurs séparées par des virgules).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[TSV](https://docs.fileformat.com/spreadsheet/tsv/)|Fichier TSV (valeurs séparées par des tabulations).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+title: "Formats de fichiers pris en charge par Aspose.Cells Cloud"
+second_title: "Document"
+articleTitle: "Formats de fichiers pris en charge par Aspose.Cells Cloud : Excel, PDF, CSV, JSON, Markdown, et plus encore"
+linktitle: "Formats de fichiers pris en charge"
+type: docs
+url: /supported-file-formats/
+description: "Découvrez la liste complète des formats de fichiers pris en charge par Aspose.Cells Cloud : importation, exportation et conversion d’Excel, CSV, PDF, JSON, Markdown, ODS, et plus encore."
+weight: 40
+keywords: "Aspose.Cells Cloud, formats de fichiers pris en charge, Excel, XLSX, CSV, PDF, JSON, Markdown, ODS, formats d’image, formats de feuilles de calcul, conversion de documents"
+---
+
+|**Format**|**Description**|**Chargement**|**Enregistrement**|
+| :- | :- | :- | :- |
+|<a href="https://docs.fileformat.com/spreadsheet/xls/" rel="noopener noreferrer">XLS</a>|Classeur Excel 95/5.0 – 2003.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/xlsx/" rel="noopener noreferrer">XLSX</a>|Format de fichier SpreadsheetML Open Office XML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/xlsb/" rel="noopener noreferrer">XLSB</a>|Classeur binaire Excel.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/xlsm/" rel="noopener noreferrer">XLSM</a>|Classeur Excel avec macros activées.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/xlt/" rel="noopener noreferrer">XLT</a>|Modèle Excel 97 – Excel 2003.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/xltx/" rel="noopener noreferrer">XLTX</a>|Modèle Excel.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/xltm/" rel="noopener noreferrer">XLTM</a>|Modèle Excel avec macros activées.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/xlam/" rel="noopener noreferrer">XLAM</a>|Fichier complémentaire Excel avec macros activées, utilisé pour ajouter de nouvelles fonctions à Excel.|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/csv/" rel="noopener noreferrer">CSV</a>|Fichier CSV (valeur séparée par des virgules).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/tsv/" rel="noopener noreferrer">TSV</a>|Fichier TSV (valeur séparée par des tabulations).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |TabDelimited|Fichier texte délimité par des tabulations, identique au fichier TSV.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[SMS](https://docs.fileformat.com/word-processing/txt/)|Fichier texte brut délimité.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[HTML](https://docs.fileformat.com/web/html/)|Format HTML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[MHTML](https://docs.fileformat.com/web/mhtml/)|Fichier MHTML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[SAO](https://docs.fileformat.com/spreadsheet/ods/)|ODS (feuille de calcul OpenDocument).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|Feuille de calculML|Excel 2003 Fichier XML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Nombres](https://docs.fileformat.com/spreadsheet/numbers/)|Le document est créé par l'application « Numbers » d'Apple qui fait partie de la suite iWork office d'Apple, un ensemble d'applications qui s'exécutent sur les systèmes d'exploitation Mac OS X et iOS.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[JSON](https://docs.fileformat.com/web/json/)|Notation d'objet JavaScript|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[DIF](https://docs.fileformat.com/spreadsheet/dif/)|Format d'échange de données.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[DBF](https://docs.fileformat.com/database/dbf/)|Le fichier avec l'extension .dbf est un fichier de base de données utilisé par une application de système de gestion de base de données appelée dBASE.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[PDF](https://docs.fileformat.com/pdf/)|Format de document portable Adobe.||{{< emoticons/tick >}}|
-|[XPS](https://docs.fileformat.com/page-description-language/xps/)|Format de spécification de document XML.||{{< emoticons/tick >}}|
-|[SVG](https://docs.fileformat.com/page-description-language/svg/)|Format graphique vectoriel évolutif.||{{< emoticons/tick >}}|
-|[TIFF](https://docs.fileformat.com/image/tiff/)|Format de fichier d'image balisé||{{< emoticons/tick >}}|
-|[PNG](https://docs.fileformat.com/image/png/)|Format graphique réseau portable||{{< emoticons/tick >}}|
-|[BMP](https://docs.fileformat.com/image/bmp/)|Format d'image bitmap||{{< emoticons/tick >}}|
-|[EMF](https://docs.fileformat.com/image/emf/)|Format de métafichier amélioré||{{< emoticons/tick >}}|
-|[JPEG](https://docs.fileformat.com/image/jpeg/)|JPEG est un type de format d'image enregistré à l'aide de la méthode de compression avec perte.||{{< emoticons/tick >}}|
-|[GIF](https://docs.fileformat.com/image/gif/)|Format d'échange graphique||{{< emoticons/tick >}}|
-|[RÉDUCTION](https://docs.fileformat.com/word-processing/md/)|Représente un document Markdown.|{{< emoticons/tick >}} |{{< emoticons/tick >}}|
-|[SXC](https://docs.fileformat.com/spreadsheet/sxc/)|Un format basé sur XML utilisé par OpenOffice et StarOffice|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[FODS](https://docs.fileformat.com/spreadsheet/fods/)|Il s'agit d'un format de document ouvert stocké sous forme de XML plat.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[DOCX](https://docs.fileformat.com/word-processing/docx/)|Un format bien connu pour les documents Word Microsoft qui est une combinaison de fichiers XML et binaires.||{{< emoticons/tick >}}|
-|[PPTX](https://docs.fileformat.com/presentation/pptx/)|Le format PPTX est basé sur le format de fichier de présentation XML ouvert Microsoft PowerPoint.||{{< emoticons/tick >}}|
-|[SqlScript](https://docs.fileformat.com/database/sql/)|Langage de requête structuré.||{{< emoticons/tick >}}|
-|[XHtml](https://docs.fileformat.com/web/xhtml/)|Le XHTML est un format de fichier basé sur du texte avec un balisage XML, utilisant une reformulation de HTML 4.0.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Epub](https://docs.fileformat.com/ebook/epub/)|Les fichiers avec l'extension .epub sont un format de fichier de livre électronique qui fournit un format de publication numérique standard pour les éditeurs et les consommateurs.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XML](https://docs.fileformat.com/web/xml/)|XML signifie Extensible Markup Language, un langage similaire à HTML mais différent dans l'utilisation de balises pour définir des objets.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Ots](https://docs.fileformat.com/spreadsheet/ots/)|Ouvrir le fichier de modèle de document (OTS).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[AZW3](https://docs.fileformat.com/ebook/azw3/)|AZW est un format de fichier de livre électronique numérique développé par Amazon pour ses appareils Kindle. AZW3, également connu sous le nom de Kindle Format 8 (KF8).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/word-processing/txt/" rel="noopener noreferrer">TXT</a>|Fichier texte brut délimité.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/web/html/" rel="noopener noreferrer">HTML</a>|Format HTML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/web/mhtml/" rel="noopener noreferrer">MHTML</a>|Fichier MHTML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/ods/" rel="noopener noreferrer">ODS</a>|Feuille de calcul OpenDocument (ODS).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|SpreadsheetML|Fichier Excel 2003 XML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/numbers/" rel="noopener noreferrer">Numbers</a>|Document créé par l’application « Numbers » d’Apple, partie intégrante de la suite bureautique iWork d’Apple, qui s’exécute sur les systèmes d’exploitation macOS et iOS.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/web/json/" rel="noopener noreferrer">JSON</a>|Notation d’objet JavaScript (JavaScript Object Notation).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/dif/" rel="noopener noreferrer">DIF</a>|Format d’échange de données (Data Interchange Format).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/database/dbf/" rel="noopener noreferrer">DBF</a>|Fichier à extension .dbf, utilisé par un système de gestion de base de données appelé dBASE.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/pdf/" rel="noopener noreferrer">PDF</a>|Format de document portable Adobe (Adobe Portable Document Format).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/page-description-language/xps/" rel="noopener noreferrer">XPS</a>|Format de spécification de page XML (XML Paper Specification).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/page-description-language/svg/" rel="noopener noreferrer">SVG</a>|Format de graphiques vectoriels évolutifs (Scalable Vector Graphics).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/image/tiff/" rel="noopener noreferrer">TIFF</a>|Format de fichier d’image balisée (Tagged Image File Format).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/image/png/" rel="noopener noreferrer">PNG</a>|Format de graphiques réseau portable (Portable Network Graphics).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/image/bmp/" rel="noopener noreferrer">BMP</a>|Format d’image bitmap.|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/image/emf/" rel="noopener noreferrer">EMF</a>|Format de métafichier amélioré (Enhanced metafile).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/image/jpeg/" rel="noopener noreferrer">JPEG</a>|JPEG est un format d’image utilisant une compression avec perte.|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/image/gif/" rel="noopener noreferrer">GIF</a>|Format d’échange graphique (Graphical Interchange Format).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/word-processing/md/" rel="noopener noreferrer">MARKDOWN</a>|Fournit un document Markdown.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/sxc/" rel="noopener noreferrer">SXC</a>|Format basé sur XML utilisé par OpenOffice et StarOffice.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/fods/" rel="noopener noreferrer">FODS</a>|Format Open Document stocké sous forme de XML plat.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/word-processing/docx/" rel="noopener noreferrer">DOCX</a>|Format bien connu pour les documents Microsoft Word, combinant des fichiers XML et binaires.|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/presentation/pptx/" rel="noopener noreferrer">PPTX</a>|Format PPTX basé sur le format de fichier de présentation XML ouvert de Microsoft PowerPoint.|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/database/sql/" rel="noopener noreferrer">SqlScript</a>|Langage de requête structuré (Structured Query Language).|—|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/web/xhtml/" rel="noopener noreferrer">XHtml</a>|Format de fichier texte basé sur le balisage XML, reformulation du HTML 4.0.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/ebook/epub/" rel="noopener noreferrer">Epub</a>|Fichiers à extension .epub, format standardisé de livres numériques pour éditeurs et consommateurs.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/web/xml/" rel="noopener noreferrer">Xml</a>|XML (Extensible Markup Language), similaire à HTML mais utilisé pour définir des objets via des balises.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/spreadsheet/ots/" rel="noopener noreferrer">Ots</a>|Fichier de modèle de feuille de calcul Open Document (OTS).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|<a href="https://docs.fileformat.com/ebook/azw3/" rel="noopener noreferrer">AZW3</a>|Format de livre numérique AZW, développé par Amazon pour ses appareils Kindle. AZW3, également connu sous le nom de Kindle Format 8 (KF8).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+---

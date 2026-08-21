@@ -1,72 +1,137 @@
-﻿---
-title: تعيين قيمة خلية في ورقة عمل
-type: docs
-url: /ar/set-value-of-a-cell-in-a-worksheet/
-weight: 70
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، JSON، Markdown، تعيين قيمة خلية في ورقة عمل
 ---
-يشير هذا REST API إلى المجموعة `cell value` في ملف Excel.
+title: "تعيين قيمة الخلية – مرجع واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0)"  
+type: docs  
+url: /set-value-of-a-cell-in-a-worksheet/  
+weight: 70  
+keywords: "واجهة برمجة تطبيقات Aspose Cells تعيين قيمة الخلية، تحديث خلية إكسل عبر REST، مثال cURL لـ Aspose.Cells Cloud"  
+description: "تعرّف على كيفية تعيين قيمة خلية معيّنة في ورقة عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمن بنية الطلب، المعاملات، مثال cURL عبر HTTPS، وأمثلة لرموز SDK."  
+---  
 
-## RSET API
+تقوم هذه الواجهة البرمجية لواجهة برمجة التطبيقات (REST API) بتعيين **قيمة الخلية** في ملف إكسل.
+
+## واجهة برمجة التطبيقات (REST API)  
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
+```  
+
+## الأمان والمصادقة
+
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [مصادقة تعتمد على رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+**معاملات الطلب**
+
+| الاسم           | النوع   | الموقع | الوصف                                              |
+|----------------|---------|--------|----------------------------------------------------|
+| name           | نص (string) | مسار (path) | اسم مستند إكسل (مع امتداد الملف).                 |
+| sheetName      | نص (string) | مسار (path) | اسم ورقة العمل (مع مراعاة حالة الأحرف).           |
+| cellName       | نص (string) | مسار (path) | عنوان الخلية المستهدفة بنظام A1 (مثل `A1`).      |
+| value          | نص (string) | استعلام (query) | القيمة المراد تعيينها في الخلية.                   |
+| type           | نص (string) | استعلام (query) | نوع البيانات للقيمة (`int`، `string`، `float`، إلخ). |
+| formula        | نص (string) | استعلام (query) | الصيغة المراد تطبيقها على الخلية (اختيارية).       |
+| folder         | نص (string) | استعلام (query) | المجلد الذي يحتوي على المستند (اختياري).          |
+| storageName    | نص (string) | استعلام (query) | اسم وحدة التخزين التي يوجد فيها الملف (اختياري).   |
+
+## **الاستجابة**
+
+ترجع كائن `CellResponse`.
+
+- **نظرة عامة على حقول الاستجابة**
+
+| الحقل             | النوع    | الوصف                                                 |
+| ------------------ | -------- | ------------------------------------------------------ |
+| `Name`            | نص (string) | عنوان الخلية (مثل `F341`).                             |
+| `Row`             | عدد صحيح (integer) | فهرس الصف (بدءًا من الصفر).                             |
+| `Column`          | عدد صحيح (integer) | فهرس العمود (بدءًا من الصفر).                           |
+| `Value`           | نص (string) | القيمة المعروضة في الخلية.                             |
+| `Type`            | نص (string) | نوع بيانات الخلية (مثل `IsString`).                   |
+| `Formula`         | نص (string) | نص الصيغة إذا كانت الخلية تحتوي على صيغة.              |
+| `IsFormula`       | منطقي (bool) | يشير إلى ما إذا كانت الخلية تحتوي على صيغة.            |
+| `IsMerged`        | منطقي (bool) | يشير إلى ما إذا كانت الخلية جزءًا من نطاق مدمج.        |
+| `IsArrayHeader`   | منطقي (bool) | يشير إلى ما إذا كانت الخلية رأس مصفوفة.               |
+| `IsInArray`       | منطقي (bool) | يشير إلى ما إذا كانت الخلية تابعة لمصفوفة.            |
+| `IsErrorValue`    | منطقي (bool) | يشير إلى ما إذا كانت الخلية تحتوي على قيمة خطأ.        |
+| `IsInTable`       | منطقي (bool) | يشير إلى ما إذا كانت الخلية داخل جدول.                |
+| `IsStyleSet`      | منطقي (bool) | يشير إلى ما إذا تم تطبيق نمط على الخلية.              |
+| `HtmlString`      | نص (string) | تمثيل القيمة بالخلية بصيغة مشفرة بـ HTML.             |
+| `Style/link`      | كائن (object) | رابط تشعبي لموارد النمط.                              |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Cell":{
+    "Name":"A1",
+    "Row": 0,
+    "Column":0,
+    "Value": "",
+    "Type":"String",
+    "Formula" : "=Sum(A2:A15)",
+    ...
+  }
+}
 ```
 
-معلمات الطلب هي:
+**رموز حالة HTTP**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| اسم الخلية| خيط| طريق| اسم الخلية.|
-| قيمة| خيط| استفسار| قيمة الخلية.|
-| يكتب| خيط| استفسار| نوع القيمة.|
-| صيغة| خيط| استفسار| صيغة الخلية|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| الرمز | المعنى                      | الوصف                                               |
+|------|----------------------------|-----------------------------------------------------|
+| 200  | ناجح (OK)                  | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صالح (Bad Request) | معاملات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم). |
+| 401  | غير مُصادَق (Unauthorized)  | رمز JWT غير صالح أو مفقود.                         |
+| 413  | حجم البيانات كبير جدًا (Payload Too Large) | تجاوز حجم الملف المرفوع الحد المسموح به.           |
+| 500  | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم.                           |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+## كيفية استخدام واجهة PostWorksheetCellSetValue API مع مكتبات SDK
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### مواصفات واجهة PostWorksheetCellSetValue API
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) واجهة برمجة تطبيقات قابلة للوصول العام، ما يمكّن المطورين من استدعاء نقاط نهاية REST مباشرةً من المتصفح أو أي عميل HTTP.
+
+يمكنك استخدام أداة **cURL** سطر الأوامر لاستدعاء خدمات Aspose.Cells. يوضح المثال التالي كيفية تعيين قيمة خلية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?value=1234&type=int" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?value=1234&type=int" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK",
+  "Cell":{
+    "Name":"A3",
+    "Row": 2,
+    "Column":0,
+    "Value": "",
+    "Type":"String",
+    "Formula" : "=Sum(A2:A15)",
+    ...
+  }
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام مكتبات SDK الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام مكتبة SDK يُسرّع عملية التطوير من خلال التعامل مع التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مشروعك. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الرموز التالية كيفية استدعاء خدمات Aspose.Cells باستخدام مكتبات SDK المختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,75 +1,100 @@
-﻿---
-title: Ta bort en pivottabell i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Radera
-type: docs
-url: /sv/pivot-tables/delete/
-aliases: [/delete-worksheet-pivot-table-by-index/]
-keywords: Delete a pivot table in an Excel file
-description: Aspose.Cells Cloud REST API stöder borttagning av en pivottabell i en Excel-fil. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 70
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ta bort en pivottabell i ett Excel-kalkylblad
 ---
-Denna REST API indikerar pivottabellen för kalkylbladet `delete` efter index.
- 
-## RSET API
- 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}
- 
+title: "Ta bort en pivotdatabas i ett Excel-ark"
+second_title: "Document"
+linktitle: Delete
+type: docs
+url: /pivot-tables/delete/
+aliases: [/delete-worksheet-pivot-table-by-index/]
+keywords: "Aspose.Cells, pivotdatabas, ta bort, Excel, REST API"
+description: "Ta bort en pivotdatabas från ett Excel-ark med Aspose.Cells Cloud REST API (v3.0). Inkluderar begäranformat, cURL-exempel, felkoder och SDK-utdrag för C#, Java, Python och Node.js."
+weight: 70
+ArticleTitle: "Hur man tar bort en pivotdatabas i ett Excel-ark med Aspose.Cells Cloud"
+---
+
+Denna REST API tar bort en pivotdatabas från ett ark enligt dess index.
+
+**Förutsättningar** – Du måste ha en giltig JWT-åtkomsttoken för Aspose.Cells Cloud och den mål-Excel-filen lagrad på en stödd lagringsplats. Se till att filnamnet, arkets namn och lagringsuppgifter anges korrekt innan du anropar API:et.
+
+Pivotdatabaser är ett kraftfullt sätt att sammanfatta data i ett **Excel-ark**. Med Aspose.Cells Cloud kan du programmatiskt ta bort en onödig pivotdatabas med ett enda HTTP DELETE-anrop. Denna åtgärd är idealisk när du behöver rensa upp ark, automatisera rapportgenerering eller integrera Excel-manipulation i dina applikationer.
+
+## DeleteWorksheetPivotTable API
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}
 ```
- Begäranparametrarna är:
- 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| pivottabellindex| heltal| väg| Pivottabellindex|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
- 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
- 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Säkerhet och autentisering**
+
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
+
+### **Begäransparametrar**
+
+| Parameter Name  | Typ     | Position | Beskrivning                                            |
+| --------------- | ------- | -------- | ------------------------------------------------------ |
+| name            | sträng  | path     | Namn på Excel-dokumentet.                              |
+| sheetName       | sträng  | path     | Namn på arket som innehåller pivotdatabasen.           |
+| pivotTableIndex | heltal  | path     | Nollbaserat index för pivotdatabasen som ska tas bort. |
+| folder          | sträng  | query    | Sökväg till mappen där dokumentet lagras.              |
+| storageName     | sträng  | query    | Namn på lagringstjänsten.                              |
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable) definierar ett offentligt tillgängligt programmeringsgränssnitt och tillåter dig att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+**Exempel på svar**
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
+Svaret följer ett enkelt JSON-schema:
+
+```json
+{
+  "Code": heltal,    // HTTP-liknande statuskod för åtgärden
+  "Status": sträng   // Textuell beskrivning, t.ex. "OK"
+}
+```
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK-familjen
- 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
- 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
- 
- 
+
+### Felhantering
+
+Vanliga svarsstatuskoder är listade nedan:
+
+| HTTP-status | Beskrivning                                                             |
+| ----------- | ----------------------------------------------------------------------- |
+| 400         | Felaktig begäran – saknade eller ogiltiga parametrar.                  |
+| 401         | Otillåten – ogiltig eller saknad JWT-token.                             |
+| 404         | Inte hittad – filen, arket eller pivotdatabasen finns inte.            |
+| 500         | Internt serverfel – ett oväntat tillstånd inträffade på servern.       |
+
+## Cloud SDK-familj
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Besök [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells webbtjänster med diverse SDK:er:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

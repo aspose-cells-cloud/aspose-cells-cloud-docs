@@ -1,88 +1,120 @@
-﻿---
-title: ضغط البيانات في ملف Excel
-second_title: Documen
-linktitle: ضغط الملف Excel
-type: docs
-url: /ar/compress-excel-files/
-aliases: [/compress/]
-keywords: Compress excel files
-description: يدعم Cloud REST ضغط ملفات Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 39
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، ضغط
 ---
-يشير هذا REST API إلى البيانات `compress` في الملف Excel.
+title: "ضغط البيانات في ملف إكسل"
+ArticleTitle: "ضغط البيانات في ملف إكسل – واجهة Aspose.Cells Cloud API"
+second_title: "مستند"
+linktitle: "ضغط ملفات إكسل"
+type: docs
+url: /compress-excel-files/
+aliases: [/compress/]
+keywords: "ضغط ملف إكسل، aspose cells cloud، ضغط إكسل، ضغط جداول البيانات، واجهة rest api، ضغط الملفات"
+description: "اضغط ملفات إكسل (XLS و XLSX و XLSM و XLSB و ODS) باستخدام واجهة Aspose.Cells Cloud REST API. اضبط مستوى الضغط، وتعامل مع ملفات متعددة، وادمج عبر SDKs."
+weight: 39
+---
 
-- ضغط XLS، XLSX، XLSM، XLSB، المواد المستنفدة للأوزون
-- طريقة سريعة لضغط ملفات جدول بيانات Excel المتعددة
-- اختر مستوى الضغط
-- دعم ملفات متعددة
+## واجهة PostCompress API لخدمات الويب Aspose.Cells Cloud
 
-## RSET API
+**المتطلبات الأساسية:**  
+- مطلوب رمز JWT صالح للمصادقة.  
+- تنسيقات الملفات المدعومة هي: XLS و XLSX و XLSM و XLSB و ODS.  
+- أقصى حجم مسموح به للملف هو 500 ميغابايت لكل طلب (يخضع لقيود الخدمة).
 
-```bash
+تقوم هذه الواجهة REST بضغط بيانات ملف إكسل.
 
+- ضغط ملفات XLS و XLSX و XLSM و XLSB و ODS  
+- ضغط سريع لعدة ملفات جداول بيانات إكسل  
+- اختيار مستوى الضغط  
+- دعم ملفات متعددة  
+
+### نقطة نهاية واجهة الويب API
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/compress
-
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| ملف| ملف| نموذج البيانات| الملف للتحميل|
-| مستوى الضغط| عدد صحيح| استفسار||
+تُعد واجهات Aspose.Cells Cloud API آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### مُعَيَّنات الطلب (Request Parameters)
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| اسم المُعَيَّن | النوع | المسار / سلسلة الاستعلام / جسم HTTP | الوصف |
+|----------------|---------|-----------------------------|------------------------------------------------------------|
+| file | ملف | formData | الملف المراد رفعه |
+| CompressLevel | عدد صحيح | query | مستوى الضغط (0–100)، وكلما زادت القيمة زادت قوة الضغط |
+
+### مُعَيَّن جسم الطلب (Request Body Parameter)
+
+| اسم المُعَيَّن | النوع | الوصف |
+| -------------- | ---- | ---------------------------------------------- |
+| data | ملف | المحتوى الثنائي لملف المصنف المراد ضغطه. |
+
+### **الاستجابة**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[اسم الملف المدمج]",
+    "Filesize" : [حجم الملف],
+    "FileContent" : "[Base64String]"
+}
+```
+
+*ملاحظة:* يحتوي `FileContent` على المصنف المضغوط مُشفَّرًا كسلسلة Base64. ويعكس طول السلسلة حجم الملف المضغوط؛ يمكنك فك التشفير باستخدام أدوات Base64 القياسية لاسترجاع ملف إكسل ثنائي.
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى | الوصف |
+|------|-----------------------------|--------------------------------------------------|
+| 200 | OK (تم بنجاح) | تطبيق التصفية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | طلب غير صالح | مُعَيَّنات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401 | غير مصادَق | رمز JWT غير صالح أو مفقود. |
+| 413 | حمل البيانات كبير جدًا | تجاوز حجم الملف المرفوع الحد المسموح به. |
+| 500 | خطأ داخلي في الخادم | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام واجهة PostCompress API مع SDKs
+
+### مواصفات واجهة PostCompress API
+
+تُعرِّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) واجهة برمجة تطبيقات قابلة للوصول العام، وتسمح بإجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات ويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات لواجهة Cloud API باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/compress?CompressLevel=88" \
+# استخدم HTTPS لاتصال آمن
+curl -v "https://api.aspose.cloud/v3.0/cells/compress?CompressLevel=88" \
 -X POST \
 -H "Content-Type: multipart/form-data" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+-F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أسرع طريقة لتسريع عملية التطوير. فتقوم SDK بإخفاء التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs متنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

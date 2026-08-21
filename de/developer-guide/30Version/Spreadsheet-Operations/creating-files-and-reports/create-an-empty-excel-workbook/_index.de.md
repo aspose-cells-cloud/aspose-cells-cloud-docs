@@ -1,129 +1,111 @@
-﻿---
-title: Erstellen Sie ein leeres Excel Arbeitsbuch
-second_title: Documen
-linktitle: Leeres Arbeitsbuch
-type: docs
-url: /de/create-an-empty-excel-file/
-aliases: [/create-an-empty-excel-workbook/,/workbook/new/,/workbook/create/empty-workbook/]
-keywords: How to create an Excel workbook
-description: Aspose.Cells Cloud REST API So erstellen Sie eine leere Excel Arbeitsmappe. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Erstellen Sie eine leere Excel Arbeitsmappe
 ---
-Dieser REST API gibt an, dass ein `empty workbook` erstellt werden soll.
+title: "Erstellen einer leeren Excel-Arbeitsmappe"
+second_title: "Dokument"
+linktitle: "Leere Arbeitsmappe"
+type: docs
+url: /create-an-empty-excel-file/
+aliases:
+  [
+    /create-an-empty-excel-workbook/,
+    /workbook/new/,
+    /workbook/create/empty-workbook/,
+  ]
+keywords: "Aspose.Cells, Cloud, Excel, leere Arbeitsmappe, REST-API, SDK"
+description: "Erfahren Sie, wie Sie mithilfe der Aspose.Cells Cloud REST-API eine leere Excel-Arbeitsmappe erstellen. Enthält cURL- und SDK-Beispiele."
+weight: 20
+ArticleTitle: "Erstellen einer leeren Excel-Arbeitsmappe mit der Aspose.Cells Cloud API"
+---
 
-**Abfrageparameter**
+Diese REST-API erstellt eine **leere Arbeitsmappe**.
 
-|Parametername|Typ|Beschreibung|
-|:- |:- |:- |
-|Vorlagendatei|Schnur||
-|Datendatei|Schnur||
-|isWriteOver|Schnur| wahr/falsch|
-|Ordner|Schnur|Original-Arbeitsmappenordner.|
-|Speichername|Schnur|Speichername.|
+## PutWorkbookCreate API
 
-**Anforderungstextparameter**
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}
+```
 
-|Parametername|Typ|Beschreibung|
-|:- |:- |:- |
-|Daten|Datei||
+### **Sicherheit und Authentifizierung**
 
-## REST API
+Die Aspose.Cells Cloud-APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
-|**API**|**Typ**|**Beschreibung**|**Ressourcenlink**|
-|:- |:- |:- |:- |
-|/Zellen/{Name}|SETZEN|Erstellen einer leeren Arbeitsmappe|[PutWorkbookCreate](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate)|
+### Abfrageparameter
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+| Parametername     | Typ    | Beschreibung                                                    |
+| ----------------- | ------ | --------------------------------------------------------------- |
+| templateFile      | string | Pfad zu einer Vorlagenarbeitsmappe, die als Basis verwendet werden soll (optional). |
+| dataFile          | string | Pfad zu einer Datendatei zum Füllen der Arbeitsmappe (optional). |
+| isWriteOver       | boolean | `true`, um eine vorhandene Datei zu überschreiben; `false` andernfalls. |
+| folder            | string | Zielordner für die erstellte Arbeitsmappe (optional).           |
+| storageName       | string | Name des zu verwendenden Speicherdienstes.                      |
 
- Sie können**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+### Anforderungstextparameter
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Parametername | Typ | Beschreibung                                |
+| ------------- | --- | ------------------------------------------- |
+| data          | file | Binärinhalt der zu erstellenden Arbeitsmappe. |
+
+### **Antwort**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                           | Wann zurückgegeben                                      |
+|------|-------------------------------------|---------------------------------------------------------|
+| 200 OK | Arbeitsmappe erfolgreich erstellt   | Normaler Ablauf                                         |
+| 201 Created | Arbeitsmappe erstellt (alternativer Antwortstatus) | Wenn die API einen „Created“-Status zurückgibt |
+| 400 Bad Request | Ungültige Parameter             | Client-seitiger Fehler                                  |
+| 401 Unauthorized | Fehlendes oder ungültiges Token | Authentifizierungsfehler                              |
+| 409 Conflict | Datei existiert und `isWriteOver=false` | Konflikt mit vorhandener Datei                      |
+
+## Verwendung der PutWorkbookCreate API mit SDKs
+
+### PutWorkbookCreate API-Spezifikation
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
+
+Sie können das Kommandozeilentool **cURL** zur Nutzung der Aspose.Cells-Webservices verwenden. Fügen Sie den Header `Authorization` mit einem gültigen OAuth2-/JWT-Zugriffstoken hinzu. Für eine leere Arbeitsmappe ist der Anforderungstext optional; falls Sie eine Datei hochladen müssen, fügen Sie `--data-binary @empty.xlsx` wie unten gezeigt hinzu.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?isWriteOver=false" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
-
+```bash
+# Erstellen einer leeren Arbeitsmappe mit dem Namen newworkbook.xlsx
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?isWriteOver=false" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     --data-binary @empty.xlsx   # Diese Zeile für eine wirklich leere Arbeitsmappe weglassen
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-  "Status": "string",
-  "Workbook": {
-    "FileName": "string",
-    "Links": [
-      {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    ],
-    "Worksheets": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "DefaultStyle": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "DocumentProperties": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Names": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Settings": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "IsWriteProtected": "string",
-    "IsProtected": "string",
-    "IsEncryption": "string",
-    "Password": "string"
-  }
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
-
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-Familie
+### Verwenden der Aspose.Cells Cloud SDKs
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK abstractisiert Low-Level-Details, sodass Sie sich auf Ihre Projektinhalte konzentrieren können. Prüfen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webservices mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -176,3 +158,4 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+---

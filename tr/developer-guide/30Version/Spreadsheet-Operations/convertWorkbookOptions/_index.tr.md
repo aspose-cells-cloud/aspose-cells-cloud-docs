@@ -1,506 +1,594 @@
-﻿---
-title: Çalışma Kitabını Dönüştür Seçeneği
-second_title: Documen
-linktitle: Çalışma Kitabını Dönüştür Seçeneği
-type: docs
-url: /tr/convert-workbook-options/
-keywords: ConvertWorkbookOptions
-description: Aspose.Cells Cloud REST API, Excel dosyalarını çeşitli biçimlerde destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 79
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Çalışma Kitabı Seçeneklerini Dönüştür
 ---
+title: "Çalışma Kitabı Seçeneklerini Dönüştür"
+second_title: "Belge"
+linktitle: "Çalışma Kitabı Seçeneklerini Dönüştür"
+type: docs
+url: /convert-workbook-options/
+keywords: "Aspose.Cells, ConvertWorkbookOptions, Excel dönüştürme, PDF, CSV, API"
+description: "Çalışma Kitabı Seçeneklerini Dönüştür – Aspose.Cells Cloud API ile Excel çalışma kitabını PDF, CSV, HTML ve daha fazla forma dönüştürme ayarlarını yapın."
+weight: 79
+ArticleTitle: "Çalışma Kitabı Seçeneklerini Dönüştür – Aspose.Cells Cloud API"
+---
+
 # ConvertWorkbookOptions Özellikleri
 
-Adı | Türü | Açıklama | Notlar
------------- | ------------- | ------------- | -------------
-**Veri Kaynağı** | **Nesne** Veri dosyası kaynağı : CloudFileSystem ,RequestFiles , HttpUri. |
-**[DosyaBilgisi](/hücreler/dosya-bilgisi/)** | **Nesne** | Dosya bilgisi açıklaması. Dosya adı, dosya boyutu ve dosya içeriği (base64 dizesi) dahildir. |
-**[SayfaAyarları](/hücreler/sayfa-ayarları/)** | **Nesne** | Sayfa düzeni özellikleri. |
-**Kaydetme Seçenekleri** | **Nesne** | Kaydetme Seçenekleri: DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
-**DönüştürBiçimlendir** | **sicim** | Dosya biçimi: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, vb. |
-**CheckExcelRestriction** | **Boolean** | Otomatik olarak sarılan metnin türünü alır ve ayarlar. |
+**API sürümü:** 23.12 (2024‑03)
 
-## **fileSource Özellikleri**
+`ConvertWorkbookOptions`, Aspose.Cells Cloud dönüştürme API'sinin bir Excel çalışma kitabını başka bir forma (PDF, CSV, HTML vb.) dönüştürme yöntemini belirlemek için kullandığı istek modelidir. Kaynak dosya bilgilerini, hedef formatı, sayfa ayarı ayarlarını ve forma özel kaydetme seçeneklerini birleştirir.
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|DosyaKaynakTürü|Sicim|doğru| YANLIŞ||Erişilebilen ve değiştirilebilen FileSourceType türündeki FileSourceType adlı bir özellik.(CloudFileSystem/RequestFiles/HttpUri)|
-|DosyaYolu|Sicim|doğru| YANLIŞ||Dosya konum yolu.|
+| Adı                                 | Tür         | Açıklama                                                                                                    | Notlar |
+| ----------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------- | ----- |
+| **DataSource**                      | **Nesne**   | Veri dosyası kaynağı: `CloudFileSystem`, `RequestFiles` veya `HttpUri`.                                      |       |
+| **[FileInfo](/cells/file-info/)**   | **Nesne**   | Dosya adını, boyutunu ve base64 ile kodlanmış içeriği açıklar.                                                |       |
+| **[PageSetup](/cells/page-setup/)** | **Nesne**   | Kenar boşlukları, yön ve ölçekleme gibi sayfa ayarı özellikleri.                                             |       |
+| **SaveOptions**                     | **Nesne**   | Format-özel kaydetme seçenekleri nesneleri için bir kapsayıcıdır (örn. `PdfSaveOptions`, `HtmlSaveOptions`). |       |
+| **ConvertFormat**                   | **string**  | Hedef dosya formatı (örn. **PDF**, **CSV**, **HTML**, **XLSX**, **TIFF**, vb.).                              |       |
+| **CheckExcelRestriction**           | **boolean** | Excel’e özgü kısıtlamaları (maksimum satır, sütun, sayfa adı uzunluğu vb.) uygulayıp uygulanmayacağını alır veya ayarlar. |       |
 
-## **DbfSaveOptions Özellikleri**
+**Önkoşullar**
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|ExportAsString|Boolean|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+- Aspose.Cells Cloud için geçerli bir OAuth 2.0 erişim belirteci edinin.  
+- Kaynak dosyanın desteklenen `DataSource` türlerinden biri aracılığıyla erişilebilir olduğundan emin olun.
 
-## **DifSaveOptions Özellikleri**
+**Hızlı örnek**
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+```json
+{
+  "DataSource": {
+    "FileInfo": {
+      "FileName": "Örnek.xlsx",
+      "FileContent": "<base64‑ile‑kodlanmış‑içerik>"
+    }
+  },
+  "ConvertFormat": "pdf",
+  "SaveOptions": {
+    "PdfSaveOptions": {
+      "CompressImages": true,
+      "ImageQuality": 90
+    }
+  }
+}
+```
 
-## **DocxSaveOptions Özellikleri**
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -d @request.json \
+     -o Örnek.pdf
+```
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|Varsayılan Yazı Tipi|Sicim|doğru| YANLIŞ|||
-|CheckWorkbookDefaultFont|Boolean|doğru| YANLIŞ|||
-|Yazı Tipi Uyumluluğunu Kontrol Et|Boolean|doğru| YANLIŞ|||
-|IsFontSubstitutionCharGranularity|Boolean|doğru| YANLIŞ|||
-|Sayfa Başına Bir Sayfa|Boolean|doğru| YANLIŞ|||
-|Sayfa Başına Bir Sayfada Tüm Sütunlar|Boolean|doğru| YANLIŞ|||
-|Hatayı Yoksay|Boolean|doğru| YANLIŞ|||
-|YazdırılacakHiçbirŞeyOlmadığındaÇıktıBoşSayfa|Boolean|doğru| YANLIŞ|||
-|Sayfa Dizini|Tam sayı|doğru| YANLIŞ|||
-|Sayfa Sayısı|Tam sayı|doğru| YANLIŞ|||
-|YazdırmaSayfaTürü|Sicim|doğru| YANLIŞ|||
-|Kılavuz Çizgi Türü|Sicim|doğru| YANLIŞ|||
-|MetinÇapraz Tip|Sicim|doğru| YANLIŞ|||
-|VarsayılanDilDüzenle|Sicim|doğru| YANLIŞ|||
-|EmfRenderAyarları|Sicim|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+**API isteği ayrıntıları**
 
-## **HtmlSaveOptions Özellikleri**
+Dönüştürme işlemi şu uç noktaya bir **POST** isteği ile gerçekleştirilir:
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|ExportPageHeaders|Boolean|doğru| YANLIŞ|||
-|ExportPageFooters|Boolean|doğru| YANLIŞ|||
-|ExportRowColumnHeadings|Boolean|doğru| YANLIŞ|||
-|TümSayfalarıGöster|Boolean|doğru| YANLIŞ|||
-|GörüntüSeçenekleri|Sınıf|doğru| YANLIŞ|||
-|TekDosyaOlarakKaydet|Boolean|doğru| YANLIŞ|||
-|GizliÇalışma Sayfasını Dışa Aktar|Boolean|doğru| YANLIŞ|||
-|Izgara Çizgilerini Dışa Aktar|Boolean|doğru| YANLIŞ|||
-|SunumTercihi|Boolean|doğru| YANLIŞ|||
-|HücreCssÖneki|Sicim|doğru| YANLIŞ|||
-|TableCssId|Sicim|doğru| YANLIŞ|||
-|TamYolBağlantısı|Boolean|doğru| YANLIŞ|||
-|ExportWorksheetCSSSeparately|Boolean|doğru| YANLIŞ|||
-|BenzerSınırStili Dışa Aktar|Boolean|doğru| YANLIŞ|||
-|BoşTdZorla Birleştir|Boolean|doğru| YANLIŞ|||
-|Hücre Koordinatını Dışa Aktar|Boolean|doğru| YANLIŞ|||
-|Ekstra Başlıkları Dışa Aktar|Boolean|doğru| YANLIŞ|||
-|Başlıkları Dışa Aktar|Boolean|doğru| YANLIŞ|||
-|İhracatFormülü|Boolean|doğru| YANLIŞ|||
-|İpucu Metni Ekle|Boolean|doğru| YANLIŞ|||
-|Sahte Satır Verilerini Dışa Aktar|Boolean|doğru| YANLIŞ|||
-|Kullanılmayan Stilleri Hariç Tut|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Dışa Aktar|Boolean|doğru| YANLIŞ|||
-|ExportWorksheetProperties|Boolean|doğru| YANLIŞ|||
-|ExportWorkbookProperties|Boolean|doğru| YANLIŞ|||
-|ExportFrameScriptsAndProperties|Boolean|doğru| YANLIŞ|||
-|EkliDosyalarDizin|Sicim|doğru| YANLIŞ|||
-|EkliDosyalarUrlÖneki|Sicim|doğru| YANLIŞ|||
-|Kodlama|Sicim|doğru| YANLIŞ|||
-|YalnızcaActiveWorksheet'iDışa Aktar|Boolean|doğru| YANLIŞ|||
-|GrafikGörüntüBiçiminiDışaAktar|Sicim|doğru| YANLIŞ|||
-|ExportImagesAsBase64|Boolean|doğru| YANLIŞ|||
-|GizliSütunGörüntülemeTürü|Sicim|doğru| YANLIŞ|||
-|GizliSatırGörüntülemeTürü|Sicim|doğru| YANLIŞ|||
-|HtmlCrossStringType|Sicim|doğru| YANLIŞ|||
-|IsExpImageToTempDir|Boolean|doğru| YANLIŞ|||
-|Sayfa Başlığı|Sicim|doğru| YANLIŞ|||
-|ParseHtmlTagInCell|Boolean|doğru| YANLIŞ|||
-|HücreAdıÖzniteliği|Sicim|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+```
+https://api.aspose.cloud/v3.0/cells/convert
+```
 
-## **ImageSaveOptions Özellikleri**
+Gerekli başlıklar:
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|GrafikGörüntüTürü|Sicim|doğru| YANLIŞ|||
-|GömülüResimAdıSvg'de|Sicim|doğru| YANLIŞ|||
-|Yatay Çözünürlük|Tam sayı|doğru| YANLIŞ|||
-|GörüntüBiçimi|Sicim|doğru| YANLIŞ|||
-|IsCellAutoFit|Boolean|doğru| YANLIŞ|||
-|Sayfa Başına Bir Sayfa|Boolean|doğru| YANLIŞ|||
-|SadeceAlan|Boolean|doğru| YANLIŞ|||
-|Yazdırma Sayfası|Sicim|doğru| YANLIŞ|||
-|PrintWithStatusDialog|Boolean|doğru| YANLIŞ|||
-|Kalite|Tam sayı|doğru| YANLIŞ|||
-|Tiff Sıkıştırma|Sicim|doğru| YANLIŞ|||
-|Dikey Çözünürlük|Tam sayı|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+| Başlık                | Değer                              |
+|-----------------------|------------------------------------|
+| `Authorization`       | `Bearer {access_token}`            |
+| `Content-Type`        | `application/json`                |
 
-## **JsonSaveOptions Özellikleri**
+İstek gövdesi, `ConvertWorkbookOptions`’ın JSON temsili olmalıdır (yukarıdaki örneğe bakın). Tüm özellikler, seçilen `ConvertFormat` tarafından gerektirilmedikçe isteğe bağlıdır.
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|İhracatAlanı|Sınıf|doğru| YANLIŞ|||
-|BaşlıkSatırı Var|Boolean|doğru| YANLIŞ|||
-|ExportAsString|Boolean|doğru| YANLIŞ|||
-|Girinti|Sicim|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+**API yanıtı**
 
-## **MarkdownSaveOptions Özellikleri**
+Başarılı bir dönüştürme, dönüştürülen dosyayı yanıt gövdesinde akış olarak döndüren **HTTP 200 OK** (veya eşzamanlı işlem için **202 Accepted**) durum kodu döndürür. Yanıt akışla aktarıldığında, `Content-Disposition` başlığı önerilen dosya adını içerir.
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|Kodlama|Sicim|doğru| YANLIŞ|||
-|FormatStratejisi|Sicim|doğru| YANLIŞ|||
-|Satır Ayırıcı|Sicim|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+Asenkron istek için JSON yanıtı örneği:
 
-## **OoxmlSaveOptions Özellikleri**
+```json
+{
+  "JobId": "a1b2c3d4e5",
+  "Status": "InProgress",
+  "ResultUrl": "https://api.aspose.cloud/v3.0/cells/jobs/a1b2c3d4e5/result"
+}
+```
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|HücreAdıDışaAktar|Boolean|doğru| YANLIŞ|||
-|Yakınlaştırmayı Güncelle|Boolean|doğru| YANLIŞ|||
-|Zip64'ü Etkinleştir|Boolean|doğru| YANLIŞ|||
-|EmbedOoxmlAsOleObject|Boolean|doğru| YANLIŞ|||
-|Sıkıştırma Türü|Sicim|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+**Durum kodları**
 
-## **PclSaveOptions Özellikleri**
+| Kod | Anlam                                    |
+|------|------------------------------------------|
+| 200  | Dönüştürme tamamlandı; dosya döndürüldü.     |
+| 202  | Dönüştürme kabul edildi; sonuç daha sonra kullanılabilir. |
+| 400  | Hatalı istek – eksik veya geçersiz parametreler. |
+| 401  | Yetkisiz – geçersiz veya eksik belirteç. |
+| 403  | Yasak – yetersiz izinler.   |
+| 500  | İç sunucu hatası.                   |
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|fontFullName|Sicim|doğru| YANLIŞ|||
-|fontPclName|Sicim|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+**Notlar / Sınırlamalar**
 
-## **PDFSaveOptions Özellikleri**
+- `CheckExcelRestriction` bayrağı, maksimum satır (1.048.576) ve sütun (16.384) sayısını içeren Excel kısıtlamalarını uygular.  
+- Tüm hedef formatlar, her `SaveOptions` özelliğini desteklemez; desteklenmeyen seçenekler yoksayılır.  
+- Veri kaynağı olarak `HttpUri` kullanıldığında, URL kimlik doğrulama gerektirmeyen herkese açık olarak erişilebilir olmalıdır.  
+- API yöntemi ve uç nokta bilgileri, geliştirici netliğini artırmak ve entegrasyon hatalarını azaltmak için eklenmiştir.  
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|DisplayDocTitle|Boolean|doğru| YANLIŞ|||
-|ExportDocumentStructure|Boolean|doğru| YANLIŞ|||
-|EmfRenderAyarları|Sicim|doğru| YANLIŞ|||
-|ÖzelÖzelliklerDışa Aktarma|Sicim|doğru| YANLIŞ|||
-|Optimizasyon Türü|Sicim|doğru| YANLIŞ|||
-|Yapımcı|Sicim|doğru| YANLIŞ|||
-|PDF Sıkıştırma|Sicim|doğru| YANLIŞ|||
-|Font Kodlaması|Sicim|doğru| YANLIŞ|||
-|Filigran|Sınıf|doğru| YANLIŞ|||
-|Hesaplama Formülü|Boolean|doğru| YANLIŞ|||
-|Yazı Tipi Uyumluluğunu Kontrol Et|Boolean|doğru| YANLIŞ|||
-|Uyumluluk|Sicim|doğru| YANLIŞ|||
-|Varsayılan Yazı Tipi|Sicim|doğru| YANLIŞ|||
-|Sayfa Başına Bir Sayfa|Boolean|doğru| YANLIŞ|||
-|YazdırmaSayfaTürü|Sicim|doğru| YANLIŞ|||
-|Güvenlik Seçenekleri|Sınıf|doğru| YANLIŞ|||
-|istenenÜFE|Tam sayı|doğru| YANLIŞ|||
-|jpegKalitesi|Tam sayı|doğru| YANLIŞ|||
-|Resim Türü|Sicim|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+## FileSource Özellikleri
 
-## **PptxSaveOptions Özellikleri**
+| Özellik Adı    | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                                                |
+| -------------- | ------------- | -------- | -------- | ------------- | ------------------------------------------------------------------------- |
+| FileSourceType | String        | true     | false    |               | Kaynak türünü belirtir (`CloudFileSystem`, `RequestFiles`, `HttpUri`). |
+| FilePath       | String        | true     | false    |               | Dosya yolu konumu.                                                       |
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|Gizli Satırları Yoksay|Boolean|doğru| YANLIŞ|||
-|Satır Türü İçin Yazı Tipi Boyutunu Ayarla|Sicim|doğru| YANLIŞ|||
-|Dışa AktarmaGörünümTürü|Sicim|doğru| YANLIŞ|||
-|Varsayılan Yazı Tipi|Sicim|doğru| YANLIŞ|||
-|CheckWorkbookDefaultFont|Boolean|doğru| YANLIŞ|||
-|Yazı Tipi Uyumluluğunu Kontrol Et|Boolean|doğru| YANLIŞ|||
-|IsFontSubstitutionCharGranularity|Boolean|doğru| YANLIŞ|||
-|Sayfa Başına Bir Sayfa|Boolean|doğru| YANLIŞ|||
-|Sayfa Başına Bir Sayfada Tüm Sütunlar|Boolean|doğru| YANLIŞ|||
-|Hatayı Yoksay|Boolean|doğru| YANLIŞ|||
-|YazdırılacakHiçbirŞeyOlmadığındaÇıktıBoşSayfa|Boolean|doğru| YANLIŞ|||
-|Sayfa Dizini|Tam sayı|doğru| YANLIŞ|||
-|Sayfa Sayısı|Tam sayı|doğru| YANLIŞ|||
-|YazdırmaSayfaTürü|Sicim|doğru| YANLIŞ|||
-|Kılavuz Çizgi Türü|Sicim|doğru| YANLIŞ|||
-|MetinÇapraz Tip|Sicim|doğru| YANLIŞ|||
-|VarsayılanDilDüzenle|Sicim|doğru| YANLIŞ|||
-|EmfRenderAyarları|Sicim|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+## DbfSaveOptions Özellikleri
 
-## **SqlScriptSaveOptions Özellikleri**
+| Özellik Adı             | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                        |
+| ------------------------- | ------------- | -------- | -------- | ------------- | -------------------------------------------------- |
+| ExportAsString            | Boolean       | true     | false    |               | **true** ise, sayısal değerleri dizge olarak dışa aktarır.  |
+| SaveFormat                | String        | true     | false    |               | DBF dosyaları için format tanımlayıcısı.               |
+| CachedFileFolder          | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.            |
+| ClearData                 | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                |
+| CreateDirectory           | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur. |
+| EnableHttpCompression     | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.         |
+| RefreshChartCache         | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.         |
+| SortNames                 | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                 |
+| ValidateMergedAreas       | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.            |
+| MergeAreas                | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.               |
+| SortExternalNames         | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                   |
+| CheckExcelRestriction     | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.  |
+| UpdateSmartArt            | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.    |
+| EncryptDocumentProperties | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.   |
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|TabloVarsaKontrol Et|Boolean|doğru| YANLIŞ|||
-|SütunTürüHaritası|Sicim|doğru| YANLIŞ|||
-|Sütun TürüİçinTümVerileriKontrolEt|Boolean|doğru| YANLIŞ|||
-|SatırlarArasıBoşSatırEkle|Boolean|doğru| YANLIŞ|||
-|Ayırıcı|Sicim|doğru| YANLIŞ|||
-|Operatör Türü|Sicim|doğru| YANLIŞ|||
-|BirincilAnahtar|Tam sayı|doğru| YANLIŞ|||
-|Tablo Oluştur|Boolean|doğru| YANLIŞ|||
-|KimlikAdı|Sicim|doğru| YANLIŞ|||
-|Başlangıç Kimliği|Tam sayı|doğru| YANLIŞ|||
-|TabloAdı|Sicim|doğru| YANLIŞ|||
-|ExportAsString|Boolean|doğru| YANLIŞ|||
-|İhracatAlanı|Sınıf|doğru| YANLIŞ|||
-|BaşlıkSatırı Var|Boolean|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+## DifSaveOptions Özellikleri
 
-## **SvgSaveOptions Özellikleri**
+| Özellik Adı             | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                        |
+| ------------------------- | ------------- | -------- | -------- | ------------- | -------------------------------------------------- |
+| SaveFormat                | String        | true     | false    |               | DIF dosyaları için format tanımlayıcısı.               |
+| CachedFileFolder          | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.            |
+| ClearData                 | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                |
+| CreateDirectory           | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur. |
+| EnableHttpCompression     | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.         |
+| RefreshChartCache         | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.         |
+| SortNames                 | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                 |
+| ValidateMergedAreas       | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.            |
+| MergeAreas                | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.               |
+| SortExternalNames         | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                   |
+| CheckExcelRestriction     | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.  |
+| UpdateSmartArt            | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.    |
+| EncryptDocumentProperties | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.   |
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|Sayfa Dizini|Tam sayı|doğru| YANLIŞ|||
-|GrafikGörüntüTürü|Sicim|doğru| YANLIŞ|||
-|GömülüResimAdıSvg'de|Sicim|doğru| YANLIŞ|||
-|Yatay Çözünürlük|Tam sayı|doğru| YANLIŞ|||
-|GörüntüBiçimi|Sicim|doğru| YANLIŞ|||
-|IsCellAutoFit|Boolean|doğru| YANLIŞ|||
-|Sayfa Başına Bir Sayfa|Boolean|doğru| YANLIŞ|||
-|SadeceAlan|Boolean|doğru| YANLIŞ|||
-|Yazdırma Sayfası|Sicim|doğru| YANLIŞ|||
-|PrintWithStatusDialog|Boolean|doğru| YANLIŞ|||
-|Kalite|Tam sayı|doğru| YANLIŞ|||
-|Tiff Sıkıştırma|Sicim|doğru| YANLIŞ|||
-|Dikey Çözünürlük|Tam sayı|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+## DocxSaveOptions Özellikleri
 
-## **TxtSaveOptions Özellikleri**
+| Özellik Adı                     | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                           |
+| --------------------------------- | ------------- | -------- | -------- | ------------- | ----------------------------------------------------- |
+| DefaultFont                       | String        | true     | false    |               | Kaynak yazı tipi kullanılamadığında kullanılan yazı tipi.          |
+| CheckWorkbookDefaultFont          | Boolean       | true     | false    |               | Çalışma kitabının varsayılan yazı tipinin uygulanıp uygulanmadığını denetler.  |
+| CheckFontCompatibility            | Boolean       | true     | false    |               | Hedef format için yazı tipi uyumluluğunu doğrular.   |
+| IsFontSubstitutionCharGranularity | Boolean       | true     | false    |               | Karakter düzeyinde yazı tipi değiştirme kontrolünü sağlar.           |
+| OnePagePerSheet                   | Boolean       | true     | false    |               | Her sayfayı ayrı bir sayfaya zorlar.               |
+| AllColumnsInOnePagePerSheet       | Boolean       | true     | false    |               | Bir sayfanın tüm sütunlarını tek bir sayfaya sığdırır.            |
+| IgnoreError                       | Boolean       | true     | false    |               | Dönüştürme sırasında kritik olmayan hataları yoksayar.        |
+| OutputBlankPageWhenNothingToPrint | Boolean       | true     | false    |               | İşlenecek bir şey yoksa boş bir sayfa oluşturur. |
+| PageIndex                         | Integer       | true     | false    |               | Dışa aktarılacak ilk sayfanın dizini.                    |
+| PageCount                         | Integer       | true     | false    |               | Dışa aktarılacak sayfa sayısı.                            |
+| PrintingPageType                  | String        | true     | false    |               | Yazdırma için sayfa türünü belirtir.                 |
+| GridlineType                      | String        | true     | false    |               | Izgara çizgilerinin nasıl işlendiğini belirler.                |
+| TextCrossType                     | String        | true     | false    |               | Metin işleme için çapraz türü tanımlar.            |
+| DefaultEditLanguage               | String        | true     | false    |               | Metni düzenlemek için varsayılan dil.                    |
+| EmfRenderSetting                  | String        | true     | false    |               | EMF işleme ayarları.                           |
+| MergeAreas                        | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.                  |
+| SortExternalNames                 | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                      |
+| UpdateSmartArt                    | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.       |
+| SaveFormat                        | String        | true     | false    |               | DOCX dosyaları için format tanımlayıcısı.                 |
+| CachedFileFolder                  | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.               |
+| ClearData                         | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                   |
+| CreateDirectory                   | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur.    |
+| EnableHttpCompression             | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.           |
+| RefreshChartCache                 | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.           |
+| SortNames                         | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                   |
+| ValidateMergedAreas               | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.              |
+| CheckExcelRestriction             | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.    |
+| EncryptDocumentProperties          | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.      |
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|Alıntı Türü|Sicim|doğru| YANLIŞ|||
-|Ayırıcı|Sicim|doğru| YANLIŞ|||
-|AyırıcıDize|Sicim|doğru| YANLIŞ|||
-|Her Zaman Alıntılandı|Boolean|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+## HtmlSaveOptions Özellikleri
 
-## **XlsSaveOptions&XlsbSaveOptions Özellikleri**
+| Özellik Adı                   | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                          |
+| ------------------------------- | ------------- | -------- | -------- | ------------- | ---------------------------------------------------- |
+| ExportPageHeaders               | Boolean       | true     | false    |               | HTML çıktısına sayfa başlıklarını ekler.            |
+| ExportPageFooters               | Boolean       | true     | false    |               | HTML çıktısına sayfa altbilgilerini ekler.            |
+| ExportRowColumnHeadings         | Boolean       | true     | false    |               | Satır ve sütun başlıklarını dışa aktarır.                     |
+| ShowAllSheets                   | Boolean       | true     | false    |               | Tüm çalışma sayfalarını tek bir HTML dosyasında gösterir.          |
+| ImageOptions                    | Sınıf         | true     | false    |               | Görüntü işleme kontrol eden ayarlar.               |
+| SaveAsSingleFile                | Boolean       | true     | false    |               | Tüm çalışma kitabını tek bir HTML dosyası olarak kaydeder.          |
+| ExportHiddenWorksheet           | Boolean       | true     | false    |               | Gizli çalışma sayfalarını dışa aktarmaya ekler.            |
+| ExportGridLines                 | Boolean       | true     | false    |               | HTML çıktısında ızgara çizgilerini işler.               |
+| PresentationPreference          | Boolean       | true     | false    |               | HTML’yi sunum modu için optimize eder.                |
+| CellCssPrefix                   | String        | true     | false    |               | Hücreler için oluşturulan CSS sınıf adlarına eklenen önek. |
+| TableCssId                      | String        | true     | false    |               | Oluşturulan HTML tablosu için kimlik özniteliği.           |
+| IsFullPathLink                  | Boolean       | true     | false    |               | Kaynaklar için tam yol bağlantıları oluşturur.        |
+| ExportWorksheetCSSSeparately    | Boolean       | true     | false    |               | Her sayfanın CSS’ini ayrı bir dosyaya yerleştirir.      |
+| ExportSimilarBorderStyle        | Boolean       | true     | false    |               | Benzer kenarlık stillerini birleştirerek CSS boyutunu küçültür.     |
+| MergeEmptyTdForcely             | Boolean       | true     | false    |               | Boş `<td>` elementlerini birleştirmeye zorlar.             |
+| ExportCellCoordinate            | Boolean       | true     | false    |               | HTML’e hücre koordinatlarını (örn. A1) ekler.    |
+| ExportExtraHeadings             | Boolean       | true     | false    |               | Gerektiğinde ek başlık satırları/sütunları ekler.       |
+| ExportHeadings                  | Boolean       | true     | false    |               | Satır ve sütun başlıklarını dışa aktarır.                     |
+| ExportFormula                   | Boolean       | true     | false    |               | Hesaplanan değerler yerine formülleri gösterir.         |
+| AddTooltipText                  | Boolean       | true     | false    |               | Hücre yorumları ile araç ipuçları ekler.                   |
+| ExportBogusRowData              | Boolean       | true     | false    |               | Boş veriler için yer tutucu satırları ekler.            |
+| ExcludeUnusedStyles             | Boolean       | true     | false    |               | Kullanılmayan CSS stillerini kaldırır.                |
+| ExportDocumentProperties        | Boolean       | true     | false    |               | Belge düzeyi özelliklerini HTML meta etiketlerine yazar.  |
+| ExportWorksheetProperties       | Boolean       | true     | false    |               | Çalışma sayfası düzeyi özelliklerini HTML’e yazar.           |
+| ExportWorkbookProperties        | Boolean       | true     | false    |               | Çalışma kitabı düzeyi özelliklerini HTML’e yazar.            |
+| ExportFrameScriptsAndProperties | Boolean       | true     | false    |               | Çerçeveler için betikleri ve özellikleri ekler.          |
+| AttachedFilesDirectory          | String        | true     | false    |               | Ekli dosyalar için dizin yolu.                   |
+| AttachedFilesUrlPrefix          | String        | true     | false    |               | Ekli dosyalar için URL öneki.                       |
+| Encoding                        | String        | true     | false    |               | HTML dosyası için karakter kodlaması.                |
+| ExportActiveWorksheetOnly       | Boolean       | true     | false    |               | Yalnızca etkin çalışma sayfasını dışa aktarır.                   |
+| ExportChartImageFormat          | String        | true     | false    |               | Gömülü grafikler için kullanılan görüntü formatı.               |
+| ExportImagesAsBase64            | Boolean       | true     | false    |               | Görüntüleri Base64 dizgeleri olarak kodlar.                    |
+| HiddenColDisplayType            | String        | true     | false    |               | Gizli sütunların nasıl gösterileceği.                    |
+| HiddenRowDisplayType            | String        | true     | false    |               | Gizli satırların nasıl gösterileceği.                       |
+| HtmlCrossStringType             | String        | true     | false    |               | Çapraz dizge verilerinin nasıl işleneceğini belirler.        |
+| IsExpImageToTempDir             | Boolean       | true     | false    |               | Görüntüleri geçici bir dizine dışa aktarır.             |
+| PageTitle                       | String        | true     | false    |               | Oluşturulan HTML sayfası için başlık.              |
+| ParseHtmlTagInCell              | Boolean       | true     | false    |               | Hücre değerlerindeki HTML etiketlerini ayrıştırır.             |
+| CellNameAttribute               | String        | true     | false    |               | Hücre referansını tutan öznitelik adı.        |
+| SaveFormat                      | String        | true     | false    |               | HTML dosyaları için format tanımlayıcısı.                |
+| CachedFileFolder                | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.              |
+| ClearData                       | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                  |
+| CreateDirectory                 | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur.   |
+| EnableHttpCompression           | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.           |
+| RefreshChartCache               | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.           |
+| SortNames                       | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                   |
+| ValidateMergedAreas             | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.              |
+| MergeAreas                      | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.                 |
+| SortExternalNames               | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                     |
+| CheckExcelRestriction           | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.    |
+| UpdateSmartArt                  | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.      |
+| EncryptDocumentProperties       | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.     |
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|Renk Eşleştirme|Boolean|doğru| YANLIŞ|||
-|WpsUyumluluğu|Boolean|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+## ImageSaveOptions Özellikleri
 
-## **XmlSaveOptions Özellikleri**
+| Özellik Adı             | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                        |
+| ------------------------- | ------------- | -------- | -------- | ------------- | -------------------------------------------------- |
+| ChartImageType            | String        | true     | false    |               | Grafik işleme için kullanılan görüntü formatı.             |
+| EmbeddedImageNameInSvg    | String        | true     | false    |               | SVG çıktısında gömülü görüntülere atanan ad.    |
+| HorizontalResolution      | Integer       | true     | false    |               | Dışa aktarılan görüntünün yatay DPI’si.              |
+| ImageFormat               | String        | true     | false    |               | Hedef görüntü formatı (PNG, JPG, vb.).              |
+| IsCellAutoFit             | Boolean       | true     | false    |               | Hücre içeriğini görüntü boyutuna otomatik olarak sığdırır.         |
+| OnePagePerSheet           | Boolean       | true     | false    |               | Her çalışma sayfasını ayrı bir sayfada işler.         |
+| OnlyArea                  | Boolean       | true     | false    |               | Yalnızca çalışma sayfasının tanımlı alanını dışa aktarır.    |
+| PrintingPage              | String        | true     | false    |               | Yazdırma için kullanılan sayfa düzeni.                     |
+| PrintWithStatusDialog     | Boolean       | true     | false    |               | Yazdırma sırasında durum iletişim kutusu gösterir.             |
+| Quality                   | Integer       | true     | false    |               | JPEG görüntüleri için sıkıştırma kalitesi (0‑100).       |
+| TiffCompression           | String        | true     | false    |               | TIFF görüntüleri için sıkıştırma türü.                  |
+| VerticalResolution        | Integer       | true     | false    |               | Dışa aktarılan görüntünün dikey DPI’si.                |
+| SaveFormat                | String        | true     | false    |               | Görüntü dosyaları için format tanımlayıcısı.             |
+| CachedFileFolder          | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.            |
+| ClearData                 | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                |
+| CreateDirectory           | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur. |
+| EnableHttpCompression     | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.         |
+| RefreshChartCache         | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.         |
+| SortNames                 | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                 |
+| ValidateMergedAreas       | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.            |
+| MergeAreas                | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.               |
+| SortExternalNames         | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                   |
+| CheckExcelRestriction     | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.  |
+| UpdateSmartArt            | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.    |
+| EncryptDocumentProperties | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.   |
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|Sayfa Endeksleri|Sıralamak|doğru| YANLIŞ|||
-|İhracatAlanı|Sınıf|doğru| YANLIŞ|||
-|BaşlıkSatırı Var|Boolean|doğru| YANLIŞ|||
-|XmlHaritaAdı|Sicim|doğru| YANLIŞ|||
-|SayfaAdıÖğeAdıOlarak|Boolean|doğru| YANLIŞ|||
-|VeriÖznitelikOlarak|Boolean|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+## JsonSaveOptions Özellikleri
 
-## **XpsSaveOptions Özellikleri**
+| Özellik Adı             | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                              |
+| ------------------------- | ------------- | -------- | -------- | ------------- | -------------------------------------------------------- |
+| ExportArea                | Sınıf         | true     | false    |               | Dışa aktarılacak çalışma sayfası alanını tanımlar.                    |
+| HasHeaderRow              | Boolean       | true     | false    |               | İlk satırın sütun başlıklarını içerip içermediğini belirtir. |
+| ExportAsString            | Boolean       | true     | false    |               | Tüm değerleri dizge olarak dışa aktarır.                           |
+| Indent                    | String        | true     | false    |               | Girinti için kullanılan dizge (örn. iki boşluk).          |
+| SaveFormat                | String        | true     | false    |               | JSON dosyaları için format tanımlayıcısı.                    |
+| CachedFileFolder          | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.                  |
+| ClearData                 | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                      |
+| CreateDirectory           | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur.       |
+| EnableHttpCompression     | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.               |
+| RefreshChartCache         | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.               |
+| SortNames                 | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                       |
+| ValidateMergedAreas       | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.                  |
+| MergeAreas                | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.                     |
+| SortExternalNames         | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                         |
+| CheckExcelRestriction     | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.        |
+| UpdateSmartArt            | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.          |
+| EncryptDocumentProperties | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.         |
 
-| Mülk Adı| Emlak Türü| Boş bırakılabilir| Salt Okunur| VarsayılanDeğer| Tanım|
-|:- |:- |:- |:- |:- |:- |
-|Varsayılan Yazı Tipi|Sicim|doğru| YANLIŞ|||
-|CheckWorkbookDefaultFont|Boolean|doğru| YANLIŞ|||
-|Yazı Tipi Uyumluluğunu Kontrol Et|Boolean|doğru| YANLIŞ|||
-|IsFontSubstitutionCharGranularity|Boolean|doğru| YANLIŞ|||
-|Sayfa Başına Bir Sayfa|Boolean|doğru| YANLIŞ|||
-|Sayfa Başına Bir Sayfada Tüm Sütunlar|Boolean|doğru| YANLIŞ|||
-|Hatayı Yoksay|Boolean|doğru| YANLIŞ|||
-|YazdırılacakHiçbirŞeyOlmadığındaÇıktıBoşSayfa|Boolean|doğru| YANLIŞ|||
-|Sayfa Dizini|Tam sayı|doğru| YANLIŞ|||
-|Sayfa Sayısı|Tam sayı|doğru| YANLIŞ|||
-|YazdırmaSayfaTürü|Sicim|doğru| YANLIŞ|||
-|Kılavuz Çizgi Türü|Sicim|doğru| YANLIŞ|||
-|MetinÇapraz Tip|Sicim|doğru| YANLIŞ|||
-|VarsayılanDilDüzenle|Sicim|doğru| YANLIŞ|||
-|EmfRenderAyarları|Sicim|doğru| YANLIŞ|||
-|Birleştirme Alanları|Boolean|doğru| YANLIŞ|||
-|SıralaHariciAdlar|Boolean|doğru| YANLIŞ|||
-|AkıllıSanat'ı Güncelle|Boolean|doğru| YANLIŞ|||
-|SaveFormat|Sicim|doğru| YANLIŞ|||
-|Önbelleğe AlınmışDosyaKlasörü|Sicim|doğru| YANLIŞ|||
-|ClearData|Boolean|doğru| YANLIŞ|||
-|Dizin Oluştur|Boolean|doğru| YANLIŞ|||
-|HTTP Sıkıştırmayı Etkinleştir|Boolean|doğru| YANLIŞ|||
-|RefreshChartCache|Boolean|doğru| YANLIŞ|||
-|SıralamaAdları|Boolean|doğru| YANLIŞ|||
-|Birleştirilmiş Alanları Doğrula|Boolean|doğru| YANLIŞ|||
-|CheckExcelRestriction|Boolean|doğru| YANLIŞ|||
-|Belge Özelliklerini Şifrele|Boolean|doğru| YANLIŞ|||
+## MarkdownSaveOptions Özellikleri
+
+| Özellik Adı             | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                                  |
+| ------------------------- | ------------- | -------- | -------- | ------------- | ------------------------------------------------------------ |
+| Encoding                  | String        | true     | false    |               | Markdown dosyası için karakter kodlaması.                    |
+| FormatStrategy            | String        | true     | false    |               | Markdown formatlama için kullanılan strateji (örn. GitHub, CommonMark). |
+| LineSeparator             | String        | true     | false    |               | Kullanılacak satır sonu karakteri(leri).                              |
+| SaveFormat                | String        | true     | false    |               | Markdown dosyaları için format tanımlayıcısı.                    |
+| CachedFileFolder          | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.                      |
+| ClearData                 | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                          |
+| CreateDirectory           | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur.           |
+| EnableHttpCompression     | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.                   |
+| RefreshChartCache         | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.                   |
+| SortNames                 | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                           |
+| ValidateMergedAreas       | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.                      |
+| MergeAreas                | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.                         |
+| SortExternalNames         | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                             |
+| CheckExcelRestriction     | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.            |
+| UpdateSmartArt            | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.              |
+| EncryptDocumentProperties | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.             |
+
+## OoxmlSaveOptions Özellikleri
+
+| Özellik Adı             | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                          |
+| ------------------------- | ------------- | -------- | -------- | ------------- | ---------------------------------------------------- |
+| ExportCellName            | Boolean       | true     | false    |               | Dışa aktarılan dosyaya hücre adlarını ekler.            |
+| UpdateZoom                | Boolean       | true     | false    |               | Çıktı belgesinde yakınlaştırma düzeyini günceller.       |
+| EnableZip64               | Boolean       | true     | false    |               | Büyük dosyalar için ZIP64 uzantılarını etkinleştirir.            |
+| EmbedOoxmlAsOleObject     | Boolean       | true     | false    |               | OOXML’yi OLE nesnesi olarak gömer.                       |
+| CompressionType           | String        | true     | false    |               | Uygulanan sıkıştırma türü (örn. Normal, Maximum). |
+| SaveFormat                | String        | true     | false    |               | OOXML dosyaları için format tanımlayıcısı.               |
+| CachedFileFolder          | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.              |
+| ClearData                 | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                  |
+| CreateDirectory           | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur.   |
+| EnableHttpCompression     | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.           |
+| RefreshChartCache         | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.           |
+| SortNames                 | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                   |
+| ValidateMergedAreas       | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.              |
+| MergeAreas                | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.                 |
+| SortExternalNames         | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                     |
+| CheckExcelRestriction     | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.    |
+| UpdateSmartArt            | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.      |
+| EncryptDocumentProperties | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.     |
+
+## PclSaveOptions Özellikleri
+
+| Özellik Adı             | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                        |
+| ------------------------- | ------------- | -------- | -------- | ------------- | -------------------------------------------------- |
+| fontFullName              | String        | true     | false    |               | Kullanılacak tam yazı tipi adı.                      |
+| fontPclName               | String        | true     | false    |               | PCL’e özgü yazı tipi adı.                            |
+| SaveFormat                | String        | true     | false    |               | PCL dosyaları için format tanımlayıcısı.               |
+| CachedFileFolder          | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.            |
+| ClearData                 | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                |
+| CreateDirectory           | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur. |
+| EnableHttpCompression     | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.         |
+| RefreshChartCache         | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.         |
+| SortNames                 | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                 |
+| ValidateMergedAreas       | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.            |
+| MergeAreas                | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.               |
+| SortExternalNames         | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                   |
+| CheckExcelRestriction     | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.  |
+| UpdateSmartArt            | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.    |
+| EncryptDocumentProperties | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.   |
+
+## PDFSaveOptions Özellikleri
+
+| Özellik Adı             | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                          |
+| ------------------------- | ------------- | -------- | -------- | ------------- | ---------------------------------------------------- |
+| DisplayDocTitle           | Boolean       | true     | false    |               | Belge başlığını PDF başlığı olarak kullanır.            |
+| ExportDocumentStructure   | Boolean       | true     | false    |               | Belgenin mantıksal yapısını korur.     |
+| EmfRenderSetting          | String        | true     | false    |               | EMF görüntülerinin işlenmesi için ayarlar.                   |
+| CustomPropertiesExport    | String        | true     | false    |               | Özel belge özelliklerinin dışa aktarımını kontrol eder.       |
+| OptimizationType          | String        | true     | false    |               | PDF optimizasyon türü (örn. Size, Speed).        |
+| Producer                  | String        | true     | false    |               | PDF üretici uygulamasının adı.                |
+| PDFCompression            | String        | true     | false    |               | PDF akışları için sıkıştırma algoritması.               |
+| FontEncoding              | String        | true     | false    |               | Gömülü yazı tipleri için kodlama.                    |
+| Watermark                 | Sınıf         | true     | false    |               | PDF’e uygulanan su işareti ayarları.               |
+| CalculateFormula          | Boolean       | true     | false    |               | Dışa aktarmadan önce formülleri hesaplar.                   |
+| CheckFontCompatibility    | Boolean       | true     | false    |               | PDF işleme için yazı tipi uyumluluğunu doğrular.      |
+| Compliance                | String        | true     | false    |               | PDF/A veya PDF/X uyumluluk düzeyi.                     |
+| DefaultFont               | String        | true     | false    |               | Kaynak yazı tipi kullanılamadığında kullanılan yazı tipi.         |
+| OnePagePerSheet           | Boolean       | true     | false    |               | Her çalışma sayfasını ayrı bir PDF sayfasına yerleştirir.        |
+| PrintingPageType          | String        | true     | false    |               | Yazdırma için sayfa türünü belirtir.                |
+| SecurityOptions           | Sınıf         | true     | false    |               | Şifreler ve izinler gibi güvenlik ayarları. |
+| desiredPPI                | Integer       | true     | false    |               | İstenen piksel-birim-inch çözünürlüğü.                  |
+| jpegQuality               | Integer       | true     | false    |               | JPEG görüntü kalitesi (0‑100).                          |
+| ImageType                 | String        | true     | false    |               | Rasterleştirme için kullanılan görüntü türü.                   |
+| SaveFormat                | String        | true     | false    |               | PDF dosyaları için format tanımlayıcısı.                 |
+| CachedFileFolder          | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.              |
+| ClearData                 | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                  |
+| CreateDirectory           | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur.   |
+| EnableHttpCompression     | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.           |
+| RefreshChartCache         | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.           |
+| SortNames                 | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                   |
+| ValidateMergedAreas       | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.              |
+| MergeAreas                | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.                 |
+| SortExternalNames         | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                     |
+| CheckExcelRestriction     | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.    |
+| UpdateSmartArt            | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.      |
+| EncryptDocumentProperties | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.     |
+
+## PptxSaveOptions Özellikleri
+
+| Özellik Adı                     | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                            |
+| --------------------------------- | ------------- | -------- | -------- | ------------- | ------------------------------------------------------ |
+| IgnoreHiddenRows                  | Boolean       | true     | false    |               | Dışa aktarım sırasında gizli satırları atlar.                       |
+| AdjustFontSizeForRowType          | String        | true     | false    |               | Satır türüne göre yazı tipi boyutu ayarlamayı kontrol eder.       |
+| ExportViewType                    | String        | true     | false    |               | Hangi görünümün (slayt, notlar) dışa aktarılacağını belirler.        |
+| DefaultFont                       | String        | true     | false    |               | Kaynak yazı tipi kullanılamadığında kullanılan yazı tipi.           |
+| CheckWorkbookDefaultFont          | Boolean       | true     | false    |               | Çalışma kitabının varsayılan yazı tipinin uygulanıp uygulanmadığını denetler.   |
+| CheckFontCompatibility            | Boolean       | true     | false    |               | Hedef format için yazı tipi uyumluluğunu doğrular.    |
+| IsFontSubstitutionCharGranularity | Boolean       | true     | false    |               | Karakter düzeyinde yazı tipi değiştirme kontrolünü sağlar.            |
+| OnePagePerSheet                   | Boolean       | true     | false    |               | Her çalışma sayfasını ayrı bir slayda yerleştirir.             |
+| AllColumnsInOnePagePerSheet       | Boolean       | true     | false    |               | Bir sayfanın tüm sütunlarını tek bir slayda sığdırır.            |
+| IgnoreError                       | Boolean       | true     | false    |               | Dönüştürme sırasında kritik olmayan hataları yoksayar.         |
+| OutputBlankPageWhenNothingToPrint | Boolean       | true     | false    |               | İşlenecek bir şey yoksa boş bir slayt oluşturur. |
+| PageIndex                         | Integer       | true     | false    |               | Dışa aktarılacak ilk slaytın dizini.                    |
+| PageCount                         | Integer       | true     | false    |               | Dışa aktarılacak slayt sayısı.                            |
+| PrintingPageType                  | String        | true     | false    |               | Yazdırma için sayfa türünü belirtir.                  |
+| GridlineType                      | String        | true     | false    |               | Izgara çizgilerinin nasıl işlendiğini belirler.                 |
+| TextCrossType                     | String        | true     | false    |               | Metin işleme için çapraz türü tanımlar.             |
+| DefaultEditLanguage               | String        | true     | false    |               | Metni düzenlemek için varsayılan dil.                     |
+| EmfRenderSetting                  | String        | true     | false    |               | EMF işleme ayarları.                            |
+| MergeAreas                        | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.                   |
+| SortExternalNames                 | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                       |
+| UpdateSmartArt                    | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.        |
+| SaveFormat                        | String        | true     | false    |               | PPTX dosyaları için format tanımlayıcısı.                  |
+| CachedFileFolder                  | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.                |
+| ClearData                         | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                    |
+| CreateDirectory                   | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur.     |
+| EnableHttpCompression             | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.             |
+| RefreshChartCache                 | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.             |
+| SortNames                         | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                     |
+| ValidateMergedAreas               | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.                |
+| CheckExcelRestriction             | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.      |
+| EncryptDocumentProperties         | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.       |
+
+## SqlScriptSaveOptions Özellikleri
+
+| Özellik Adı             | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                              |
+| ------------------------- | ------------- | -------- | -------- | ------------- | -------------------------------------------------------- |
+| CheckIfTableExists        | Boolean       | true     | false    |               | Hedef tablonun zaten var olup olmadığını denetler.          |
+| ColumnTypeMap             | String        | true     | false    |               | Sütun adlarının SQL veri türlerine eşlenmesi.               |
+| CheckAllDataForColumnType | Boolean       | true     | false    |               | Sütun türlerini tahmin etmek için tüm satırları tarar.                    |
+| AddBlankLineBetweenRows   | Boolean       | true     | false    |               | Oluşturulan satırlar arasında boş satır ekler.             |
+| Separator                 | String        | true     | false    |               | Sütunları ayırmak için kullanılan dizge (örn. virgül, sekme).      |
+| OperatorType              | String        | true     | false    |               | Kullanılan SQL operatörü (INSERT, UPDATE, vb.).                |
+| PrimaryKey                | Integer       | true     | false    |               | Birincil anahtar olarak çalışan sütun dizini.               |
+| CreateTable               | Boolean       | true     | false    |               | CREATE TABLE ifadesi oluşturur.                      |
+| IdName                    | String        | true     | false    |               | Tanımlayıcı sütunun adı.                           |
+| StartId                   | Integer       | true     | false    |               | Otomatik artan kimlikler için başlangıç değeri.                 |
+| TableName                 | String        | true     | false    |               | Hedef veritabanı tablosunun adı.                       |
+| ExportAsString            | Boolean       | true     | false    |               | Tüm değerleri dizge olarak dışa aktarır.                           |
+| ExportArea                | Sınıf         | true     | false    |               | Dışa aktarılacak çalışma sayfası alanını tanımlar.                    |
+| HasHeaderRow              | Boolean       | true     | false    |               | İlk satırın sütun başlıklarını içerip içermediğini belirtir. |
+| SaveFormat                | String        | true     | false    |               | SQL betik dosyaları için format tanımlayıcısı.              |
+| CachedFileFolder          | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.                  |
+| ClearData                 | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                      |
+| CreateDirectory           | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur.       |
+| EnableHttpCompression     | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.               |
+| RefreshChartCache         | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.               |
+| SortNames                 | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                       |
+| ValidateMergedAreas       | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.                  |
+| MergeAreas                | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.                     |
+| SortExternalNames         | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                         |
+| CheckExcelRestriction     | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.        |
+| UpdateSmartArt            | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.          |
+| EncryptDocumentProperties | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.         |
+
+## SvgSaveOptions Özellikleri
+
+| Özellik Adı             | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                        |
+| ------------------------- | ------------- | -------- | -------- | ------------- | -------------------------------------------------- |
+| SheetIndex                | Integer       | true     | false    |               | Dışa aktarılacak çalışma sayfasının dizini.                  |
+| ChartImageType            | String        | true     | false    |               | Grafik işleme için kullanılan görüntü formatı.             |
+| EmbeddedImageNameInSvg    | String        | true     | false    |               | SVG çıktısında gömülü görüntülere atanan ad.    |
+| HorizontalResolution      | Integer       | true     | false    |               | Dışa aktarılan SVG’nin yatay DPI’si.                |
+| ImageFormat               | String        | true     | false    |               | Raster elementler için hedef görüntü formatı.           |
+| IsCellAutoFit             | Boolean       | true     | false    |               | Hücre içeriğini SVG boyutuna otomatik olarak sığdırır.           |
+| OnePagePerSheet           | Boolean       | true     | false    |               | Her çalışma sayfasını ayrı bir SVG sayfasında işler.     |
+| OnlyArea                  | Boolean       | true     | false    |               | Yalnızca çalışma sayfasının tanımlı alanını dışa aktarır.    |
+| PrintingPage              | String        | true     | false    |               | Yazdırma için kullanılan sayfa düzeni.                     |
+| PrintWithStatusDialog     | Boolean       | true     | false    |               | Yazdırma sırasında durum iletişim kutusu gösterir.             |
+| Quality                   | Integer       | true     | false    |               | Raster görüntüler için sıkıştırma kalitesi.             |
+| TiffCompression           | String        | true     | false    |               | SVG’ye gömülü TIFF görüntüler için sıkıştırma türü.  |
+| VerticalResolution        | Integer       | true     | false    |               | Dışa aktarılan SVG’nin dikey DPI’si.                  |
+| SaveFormat                | String        | true     | false    |               | SVG dosyaları için format tanımlayıcısı.               |
+| CachedFileFolder          | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.            |
+| ClearData                 | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                |
+| CreateDirectory           | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur. |
+| EnableHttpCompression     | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.         |
+| RefreshChartCache         | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.         |
+| SortNames                 | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                 |
+| ValidateMergedAreas       | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.            |
+| MergeAreas                | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.               |
+| SortExternalNames         | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                   |
+| CheckExcelRestriction     | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.  |
+| UpdateSmartArt            | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.    |
+| EncryptDocumentProperties | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.   |
+
+## TxtSaveOptions Özellikleri
+
+| Özellik Adı             | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                                             |
+| ------------------------- | ------------- | -------- | -------- | ------------- | ----------------------------------------------------------------------- |
+| QuoteType                 | String        | true     | false    |               | Kullanılan alıntı türü (örn. çift, tek).                            |
+| Separator                 | String        | true     | false    |               | Sütun ayırıcı karakteri (örn. virgül, sekme).                          |
+| SeparatorString           | String        | true     | false    |               | Birden fazla karakter gerekiyorsa ayırıcı olarak kullanılan tam dizge. |
+| AlwaysQuoted              | Boolean       | true     | false    |               | Tüm alanların alıntılanmasına zorlar.                                         |
+| SaveFormat                | String        | true     | false    |               | TXT dosyaları için format tanımlayıcısı.                                    |
+| CachedFileFolder          | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.                                 |
+| ClearData                 | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                                     |
+| CreateDirectory           | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur.                      |
+| EnableHttpCompression     | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.                              |
+| RefreshChartCache         | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.                              |
+| SortNames                 | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                                      |
+| ValidateMergedAreas       | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.                                 |
+| MergeAreas                | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.                                    |
+| SortExternalNames         | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                                        |
+| CheckExcelRestriction     | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.                       |
+| UpdateSmartArt            | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.                         |
+| EncryptDocumentProperties | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.                        |
+
+## XlsSaveOptions & XlsbSaveOptions Özellikleri
+
+| Özellik Adı             | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                        |
+| ------------------------- | ------------- | -------- | -------- | ------------- | -------------------------------------------------- |
+| MatchColor                | Boolean       | true     | false    |               | Dışa aktarım sırasında tam hücre renklerini korur.         |
+| WpsCompatibility          | Boolean       | true     | false    |               | WPS Office ile uyumluluğu etkinleştirir.             |
+| SaveFormat                | String        | true     | false    |               | XLS/XLSB dosyaları için format tanımlayıcısı.          |
+| CachedFileFolder          | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.            |
+| ClearData                 | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                |
+| CreateDirectory           | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur. |
+| EnableHttpCompression     | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.         |
+| RefreshChartCache         | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.         |
+| SortNames                 | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                 |
+| ValidateMergedAreas       | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.            |
+| MergeAreas                | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.               |
+| SortExternalNames         | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                   |
+| CheckExcelRestriction     | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.  |
+| UpdateSmartArt            | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.    |
+| EncryptDocumentProperties | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.   |
+
+## XmlSaveOptions Özellikleri
+
+| Özellik Adı             | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                              |
+| ------------------------- | ------------- | -------- | -------- | ------------- | -------------------------------------------------------- |
+| SheetIndexes              | Dizi         | true     | false    |               | Dışa aktarmaya dahil edilecek çalışma sayfası dizinlerinin listesi.      |
+| ExportArea                | Sınıf         | true     | false    |               | Dışa aktarılacak çalışma sayfası alanını tanımlar.                    |
+| HasHeaderRow              | Boolean       | true     | false    |               | İlk satırın sütun başlıklarını içerip içermediğini belirtir. |
+| XmlMapName                | String        | true     | false    |               | Çalışma sayfasına uygulanan XML haritasının adı.            |
+| SheetNameAsElementName    | Boolean       | true     | false    |               | Çalışma sayfası adını XML öğe adı olarak kullanır.             |
+| DataAsAttribute           | Boolean       | true     | false    |               | Hücre verilerini öğeler yerine XML öznitelikleri olarak dışa aktarır. |
+| SaveFormat                | String        | true     | false    |               | XML dosyaları için format tanımlayıcısı.                     |
+| CachedFileFolder          | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.                  |
+| ClearData                 | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                      |
+| CreateDirectory           | String        | true     | false    |               | Hedef klasör yoksa oluşturur.       |
+| EnableHttpCompression     | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.               |
+| RefreshChartCache         | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.               |
+| SortNames                 | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                       |
+| ValidateMergedAreas       | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.                  |
+| MergeAreas                | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.                     |
+| SortExternalNames         | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                         |
+| CheckExcelRestriction     | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.        |
+| UpdateSmartArt            | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.          |
+| EncryptDocumentProperties | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.         |
+
+## XpsSaveOptions Özellikleri
+
+| Özellik Adı                     | Özellik Türü | Boş Olabilir | Salt Okunur | Varsayılan Değer | Açıklama                                           |
+| --------------------------------- | ------------- | -------- | -------- | ------------- | ----------------------------------------------------- |
+| DefaultFont                       | String        | true     | false    |               | Kaynak yazı tipi kullanılamadığında kullanılan yazı tipi.          |
+| CheckWorkbookDefaultFont          | Boolean       | true     | false    |               | Çalışma kitabının varsayılan yazı tipinin uygulanıp uygulanmadığını denetler.  |
+| CheckFontCompatibility            | Boolean       | true     | false    |               | Hedef format için yazı tipi uyumluluğunu doğrular.   |
+| IsFontSubstitutionCharGranularity | Boolean       | true     | false    |               | Karakter düzeyinde yazı tipi değiştirme kontrolünü sağlar.           |
+| OnePagePerSheet                   | Boolean       | true     | false    |               | Her çalışma sayfasını ayrı bir XPS sayfasına yerleştirir.         |
+| AllColumnsInOnePagePerSheet       | Boolean       | true     | false    |               | Bir sayfanın tüm sütunlarını tek bir sayfaya sığdırır.            |
+| IgnoreError                       | Boolean       | true     | false    |               | Dönüştürme sırasında kritik olmayan hataları yoksayar.        |
+| OutputBlankPageWhenNothingToPrint | Boolean       | true     | false    |               | İşlenecek bir şey yoksa boş bir sayfa oluşturur. |
+| PageIndex                         | Integer       | true     | false    |               | Dışa aktarılacak ilk sayfanın dizini.                    |
+| PageCount                         | Integer       | true     | false    |               | Dışa aktarılacak sayfa sayısı.                            |
+| PrintingPageType                  | String        | true     | false    |               | Yazdırma için sayfa türünü belirtir.                 |
+| GridlineType                      | String        | true     | false    |               | Izgara çizgilerinin nasıl işlendiğini belirler.                |
+| TextCrossType                     | String        | true     | false    |               | Metin işleme için çapraz türü tanımlar.            |
+| DefaultEditLanguage               | String        | true     | false    |               | Metni düzenlemek için varsayılan dil.                    |
+| EmfRenderSetting                  | String        | true     | false    |               | EMF işleme ayarları.                           |
+| MergeAreas                        | Boolean       | true     | false    |               | Mümkün olduğunda bitişik hücreleri birleştirir.                  |
+| SortExternalNames                 | Boolean       | true     | false    |               | Harici adlandırılmış referansları sıralar.                      |
+| UpdateSmartArt                    | Boolean       | true     | false    |               | SmartArt nesnelerini en son sürüme günceller.       |
+| SaveFormat                        | String        | true     | false    |               | XPS dosyaları için format tanımlayıcısı.                  |
+| CachedFileFolder                  | String        | true     | false    |               | Geçici önbellek dosyaları için kullanılan klasör.               |
+| ClearData                         | Boolean       | true     | false    |               | Kaydetmeden önce mevcut verileri temizler.                   |
+| CreateDirectory                   | Boolean       | true     | false    |               | Hedef klasör yoksa oluşturur.    |
+| EnableHttpCompression             | Boolean       | true     | false    |               | Yanıt için HTTP sıkıştırmasını etkinleştirir.            |
+| RefreshChartCache                 | Boolean       | true     | false    |               | Kaydetmeden önce önbelleğe alınmış grafik verilerini yeniler.            |
+| SortNames                         | Boolean       | true     | false    |               | Adlandırılmış aralıkları alfabetik olarak sıralar.                    |
+| ValidateMergedAreas               | Boolean       | true     | false    |               | Birleştirilmiş hücreleri tutarlılık için doğrular.               |
+| CheckExcelRestriction             | Boolean       | true     | false    |               | Dönüştürme sırasında Excel’e özgü sınırları uygular.     |
+| EncryptDocumentProperties         | Boolean       | true     | false    |               | Çıktı dosyasındaki belge özelliklerini şifreler.      |
+---

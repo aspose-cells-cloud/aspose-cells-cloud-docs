@@ -1,74 +1,90 @@
-﻿---
-title: Ta bort en bild i en Excel-fil
-second_title: Documen
-linktitle: Ta bort
-type: docs
-url: /sv/pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
-keywords: Delete a picture in an Excel file
-description: "Aspose.Cells Cloud REST API stöder borttagning av bilder i en Excel-fil. SDK:n stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
-weight: 50
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ta bort en bild i en Excel-fil
 ---
-Denna REST API indikerar för `delete` en bild från ett Excel-arbetsblad.
+title: "Ta bort en bild från ett Excel-ark – Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Ta bort"
+type: docs
+url: /pictures/delete/
+aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+keywords: "Aspose.Cells, moln-API, ta bort bild, Excel-ark, REST"
+description: "Ta bort en bild från ett Excel-ark med Aspose.Cells Cloud REST API. Lär dig DELETE-slutpunkten, nödvändiga parametrar, autentisering, felkoder och exempelkod."
+weight: 50
+ArticleTitle: "Ta bort en bild från ett Excel-ark – Aspose.Cells Cloud API"
+---
 
-## RSET API
+Detta REST API tar bort en bild från ett Excel-ark.
+
+### **Säkerhet och autentisering**
+
+Aspose.Cells moln-API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
+
+## REST API
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-Begäranparametrarna är:
+### Begäran parametrar
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| arknamn| sträng| väg| Namnet på arbetsbladet.|
-| bildindex| heltal| väg| Bildindex|
-| mapp| sträng| fråga| Arbetsbokens mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameternamn   | Typ     | Plats  | Obligatorisk | Beskrivning                                          |
+| --------------- | ------- | ------ | ------------ | ---------------------------------------------------- |
+| name            | string  | path   | Ja           | Namnet på arbetsboksfilen.                          |
+| sheetName       | string  | path   | Ja           | Namnet på arket som innehåller bilden.              |
+| pictureIndex    | integer | path   | Ja           | Den nollbaserade indexpositionen för bilden som ska tas bort. |
+| folder          | string  | query  | Nej          | Mappen där arbetsboken lagras.                      |
+| storageName     | string  | query  | Nej          | Namnet på lagringstjänsten (valfritt).              |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPicture) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anropet med cURL.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**Exempel på svarshuvuden**
+
+| Huvud                | Värde                         |
+|----------------------|------------------------------|
+| Content-Type         | application/json             |
+| Content-Length       | (varierar)                   |
+| Date                 | (serverdatum)                |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Felhantering
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| HTTP-kod | Betydelse                                                       | Exempel på feldata                                              |
+| -------- | --------------------------------------------------------------- | -------------------------------------------------------------- |
+| 200      | Bilden har tagits bort utan problem.                            | `{ "Code": 200, "Status": "OK" }`                              |
+| 400      | Felaktig begäran – ogiltiga parametrar.                         | `{ "Code": 400, "Message": "Ogiltig pictureIndex." }`         |
+| 401      | Oauktorisering – saknas/ogiltig token.                          | `{ "Code": 401, "Message": "Åtkomsttoken saknas eller är ogiltig." }` |
+| 404      | Ej hittad – arbetsbok, ark eller bild finns inte.              | `{ "Code": 404, "Message": "Resursen hittades inte." }`        |
+| 500      | Internt serverfel.                                              | `{ "Code": 500, "Message": "Oväntat serverfel." }`             |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+## Moln SDK-familj
+
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK hanterar detaljer på lågnivå så att du kan fokusera på ditt projekt. Besök [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med diverse SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

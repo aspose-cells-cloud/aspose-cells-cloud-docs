@@ -1,58 +1,78 @@
-﻿---
-title: الحصول على البيانات الوصفية من الملف Excel
-second_title: Documen
-linktitle: احصل عليه بدون استخدام التخزين
-type: docs
-url: /ar/metadata/get/
-keywords: Get properties from Excel files
-description: يدعم Cloud REST Aspose.Cells الحصول على خصائص من ملفات Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 23
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على البيانات الوصفية من ملفات Excel
 ---
-يشير هذا REST API إلى الحصول على `metadata` من ملفات Excel المتعددة.
+title: "استرجاع البيانات الوصفية من ملفات Excel"
+second_title: "مستند"
+linktitle: "استرجاع دون استخدام التخزين"
+type: docs
+url: /metadata/get/
+keywords: "Aspose.Cells, Excel, البيانات الوصفية, REST API, SDK في السحابة"
+description: "استرجاع البيانات الوصفية المدمجة أو المخصصة من أوراق عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. يشمل تنسيق الطلب، المعلمات، كود مثال لـ SDK، ومعالجة الأخطاء."
+weight: 23
+ArticleTitle: "استرجاع البيانات الوصفية من ملفات Excel - واجهة Aspose.Cells Cloud API"
+---
+
+تقوم هذه الواجهة **REST API** باسترجاع **البيانات الوصفية** من ملف أو أكثر من ملفات Excel.  
+يجب أن يتضمّن الطلب رأس `Authorization: Bearer <access_token>` يُحصل عليه عبر تدفق بيانات اعتماد العميل OAuth 2.0.
+
+**المتطلبات المسبقة**: لاستدعاء هذه النهاية (endpoint)، يجب أن تمتلك رمز وصول (access token) ساري المفعول تم الحصول عليه من نقطة نهاية رموز OAuth 2.0 الخاصة بـ Aspose Cloud. مثال على طلب curl لاسترداد رمز وصول:
 
 ```bash
+curl -X POST "https://api.aspose.cloud/connect/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
+```
 
+## واجهة REST API
+
+```bash
 POST https://api.aspose.cloud/v3.0/cells/metadata/get
-
 ```
 
-- **معلمة الاستعلام**
+### معلمة الاستعلام (Query Parameter)
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-| يكتب| خيط| الكل/مدمج/مخصص|
+| اسم المعلمة | النوع   | الوصف                                                               |
+| ------------ | ------ | ------------------------------------------------------------------------- |
+| type        | string | `ALL` / `BuiltIn` / `Custom` – يحدّد مجموعات البيانات الوصفية المراد إعادتها. |
 
-- **معلمة نص الطلب**
+### معلمة جسم الطلب
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|ملف إكسل| ملف البيانات|يتم حفظ ملف البيانات في الجزء الأول من المحتوى المتعدد الأجزاء.|
+| اسم المعلمة | النوع      | الوصف                                                         |
+| ------------ | --------- | ------------------------------------------------------------------- |
+| ملف Excel    | ملف بيانات | ملف Excel المزوّد كجزء أول من الطلب متعدد الأجزاء (multipart request). |
 
-- **إجابة**
+### الاستجابة
 
-```bash
-{
-    [
-        { 
-            "Name":"test1",
-            "Value":"test1",
-            ...
-        },
-        { 
-            "Name":"test2",
-            "Value":"test3",
-            ...
-        }
-    ]
-}
+```json
+[
+  {
+    "Name": "Author",
+    "Value": "John Doe",
+    "BuiltIn": true,
+    "IsReadOnly": false
+  },
+  {
+    "Name": "CustomProp1",
+    "Value": "Custom Value",
+    "BuiltIn": false,
+    "IsReadOnly": false
+  }
+]
 ```
 
-- **عائلة SDK السحابية**
+| الرمز | المعنى                 | الحالة                          |
+|------|-------------------------|-----------------------------------|
+| 200  | نجاح                    | تم إرجاع البيانات الوصفية.                |
+| 400  | طلب غير صالح           | ملف مفقود أو استعلام غير صحيح.    |
+| 401  | غير مُصادَق عليه        | رمز وصول غير صالح أو مفقود.         |
+| 404  | غير موجود              | الملف المحدّد غير موجود.         |
+| 500  | خطأ داخلي في الخادم    | فشل غير متوقّع في الخادم.        |
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+تُعيد الواجهة هذه الرموز القياسية لحالة HTTP مع كائن JSON للاستجابة بالخطأ عند الضرورة.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+### عائلة SDK في السحابة
+
+استخدام SDK يُسرّع التطوير من خلال التعامل مع التفاصيل منخفضة المستوى. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطّلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKات مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

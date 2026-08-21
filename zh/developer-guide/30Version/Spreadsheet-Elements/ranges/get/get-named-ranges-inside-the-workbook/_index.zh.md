@@ -1,105 +1,115 @@
-﻿---
-title: 在 Excel 工作簿上获取命名范围
-second_title: Documen
-linktitle: 南
-type: docs
-url: /zh/ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
-keywords: Get cells data based on named range on an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持根据工作表 Excel 上的命名范围获取单元格数据。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 10
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 工作簿上获取命名范围
 ---
-此 REST API 表示读取工作表范围信息。
+title: "获取 Excel 工作簿中的命名区域"
+second_title: "文档"
+linktitle: "命名"
+type: docs
+url: /ranges/get/name/
+aliases: [/get-named-ranges-inside-the-workbook/]
+keywords: "命名区域, Excel, Aspose.Cells, 云 API, 工作表"
+description: "使用 Aspose.Cells Cloud REST API 从 Excel 工作簿中检索命名区域。包含请求详情、示例 cURL 命令以及多种编程语言的 SDK 示例。"
+ArticleTitle: "获取 Excel 工作簿中的命名区域 – Aspose.Cells Cloud API"
+weight: 10
+---
 
-## 重新设置 API
+此 REST API 返回工作表中定义的命名区域信息。
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
- 
+**背景知识** – *命名区域* 是用户自定义的标识符，用于引用工作表中的特定单元格或单元格区域。命名区域可简化公式创建、提升可读性，并支持以编程方式访问工作簿中频繁使用的区域。
+
+**前置条件** – 访问 Aspose.Cells Cloud API 需要有效的 JWT 访问令牌。您可通过 OAuth 2.0 令牌端点，使用您的 Aspose Cloud 客户端 ID 和客户端密钥进行身份验证来获取该令牌。在每个请求的 `Authorization: Bearer <jwt token>` 标头中包含该令牌。
+
+## GetNamedRanges API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
 ```
 
-请求参数为：
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 采用安全机制，要求进行 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### 请求参数
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名         | 类型   | 位置       | 描述                             |
+| -------------- | ------ | ---------- | -------------------------------- |
+| name           | string | 路径参数   | Excel 文档的名称。               |
+| folder         | string | 查询字符串 | 包含该文档的文件夹路径。         |
+| storageName    | string | 查询字符串 | 文档所在的存储空间名称。         |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**HTTP 状态码**
+
+| 状态码 | 含义                 | 描述                                     |
+|--------|----------------------|------------------------------------------|
+| 200    | OK（成功）           | 过滤器应用成功；响应包含操作详情。       |
+| 400    | Bad Request（错误请求） | 缺少或无效的参数（例如不支持的文件类型）。 |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。                      |
+| 413    | Payload Too Large（请求体过大） | 上传文件超过大小限制。                   |
+| 500    | Internal Server Error（服务器内部错误） | 服务器发生意外错误。                    |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) 定义了一个公开可访问的编程接口，允许您直接从 Web 浏览器执行 REST 交互。
+
+您可以使用 cURL 命令行工具调用 Aspose.Cells Web 服务。以下示例演示如何使用 cURL 获取命名区域。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/ranges" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Ranges": {
-
     "RangeList": [
-
       {
-
         "ColumnCount": 7,
-
         "ColumnWidth": 8.428571428571429,
-
         "FirstColumn": 1,
-
         "FirstRow": 9,
-
         "Name": "data",
-
         "RefersTo": "=Sheet1!$B$10:$H$10",
-
         "RowCount": 1,
-
         "RowHeight": 15,
-
         "Worksheet": "Sheet1"
-
       }
-
     ]
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+**响应模型**
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| 字段名         | 类型    | 描述                                         |
+|----------------|---------|----------------------------------------------|
+| `ColumnCount`  | integer | 区域中的列数。                               |
+| `ColumnWidth`  | number  | 每列的宽度（单位：点）。                     |
+| `FirstColumn`  | integer | 区域中第一列的从零开始索引。                 |
+| `FirstRow`     | integer | 区域中第一行的从零开始索引。                 |
+| `Name`         | string  | 区域的用户自定义名称。                       |
+| `RefersTo`     | string  | 定义单元格引用的公式（例如 `=Sheet1!$B$10:$H$10`）。 |
+| `RowCount`     | integer | 区域中的行数。                               |
+| `RowHeight`    | number  | 每行的高度（单位：点）。                     |
+| `Worksheet`    | string  | 包含该区域的工作表名称。                     |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+## 云 SDK 开发工具包家族
+
+使用 SDK 是集成该功能的最快方式。SDK 会处理底层细节，让您专注于业务逻辑。如需获取 Aspose.Cells Cloud SDK 的完整列表，请参阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)。
+
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

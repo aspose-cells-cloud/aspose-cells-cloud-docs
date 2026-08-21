@@ -1,29 +1,30 @@
-﻿---
-title: "Aspose.Cells Node.js için Cloud SDK: Dönüştürme, birleştirme, bölme, koruma, arama, değiştirme ve daha fazlası"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for Node.js: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells Node.j için Bulut SDK'sı
-type: docs
-url: /tr/available-sdks/aspose-cells-cloud-node/
-description: "Aspose.Cells Node.js için Cloud SDK, gerçek platformlar arası güç sunar: tek bir içe aktarma, Windows, Linux ve macOS geliştiricilerine her nesneyi oluşturma, dönüştürme, birleştirme, bölme, koruma ve düzenleme konusunda aynı akıcılığı sağlar; Excel kurulum gerekmez ve platforma özgü ayarlamalar gerekmez"
-weight: 30
-kwords: Node.js, Node.js SDK, Node.js için Excel SDK, Node.js için Cloud SDK, REST, Grafik, Pivot Tablo, Tablo/Liste Nesnesi, Elektronik Tablo Dönüştürme, PDF, CSV, Json, Markdown, Birleştirme, Bölme, Koruma, Arama, Değiştirme
 ---
-SDK açık kaynaklıdır ve MIT Lisansı kapsamında lisanslanmıştır. Erişim sağlayabilirsiniz[Aspose.Cells Cloud için Node kütüphanesi kaynak kodu](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
+title: "Aspose.Cells Cloud SDK for Node.js: Dönüştür, birleştir, böl, koru, ara, değiştir ve daha fazlası."
+second_title: "Belge"
+ArticleTitle: "Aspose.Cells Cloud SDK for Node.js: Dönüştür, birleştir, böl, koru, ara, değiştir ve daha fazlası."
+linktype: "Aspose.Cells Cloud SDK for Node.js"
+type: docs
+url: /available-sdks/aspose-cells-cloud-node/
+description: "Aspose.Cells Cloud SDK for Node.js, gerçek platformlar arası gücünü sunar: tek bir içe aktarma, Windows, Linux ve macOS geliştiricilerine aynı akıcı API’yi sağlar; böylece her Excel nesnesini oluşturabilir, dönüştürebilir, birleştirebilir, bölebilir, koruyabilir ve işlem yapabilir—Office kurulumuna gerek yoktur ve platforma özel ayarlara da ihtiyaç duyulmaz."
+weight: 30
+kwords: Node.js, Node.js SDK, Node.js için Excel SDK’sı, Node.js için Bulut SDK’sı, REST, Grafik, Pivot Tablo, Tablo/Liste Nesnesi, Elektronik Tabloyu Dönüştür, PDF, CSV, JSON, Markdown, Birleştir, Böl, Koru, Ara, Değiştir
+---
 
-# **Aspose.Cells Cloud'un Node kütüphanesi nasıl kullanılır?**
+SDK açık kaynaklıdır ve MIT Lisansı altında lisanslanmıştır. Aspose.Cells Cloud için Node kütüphanesi kaynak koduna [buradan](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node) ulaşabilirsiniz.
 
-Node için Aspose.Cells Cloud SDK, geliştiricilerin Node programlama dilini kullanarak Microsoft Excel dosyalarını düzenlemelerine ve işlemelerine olanak tanıyan güçlü bir kütüphanedir. Bu SDK ile, yerel makinenize ek yazılım veya bağımlılıklar yüklemeden bulutta Excel belgeleri oluşturabilir, düzenleyebilir ve dönüştürebilirsiniz.
+# **Aspose.Cells Cloud Node kütüphanesi nasıl kullanılır**
 
-Bu makalede, yeni bir Excel çalışma kitabı oluşturma, hücrelere veri ekleme ve değiştirilen çalışma kitabını buluta kaydetme gibi bazı genel görevleri gerçekleştirmek için Aspose.Cells Cloud SDK'nın Node için nasıl kullanılacağını inceleyeceğiz.
+Aspose.Cells Cloud SDK for Node, geliştiricilerin Microsoft Excel dosyalarını Node programlama dili kullanarak işlemesini ve işlemesini sağlayan güçlü bir kütüphanedir. Bu SDK ile yerel makinenize ek yazılım veya bağımlılıklar kurmadan Excel belgelerini bulutta oluşturabilir, düzenleyebilir ve dönüştürebilirsiniz.
+
+Bu makalede, Aspose.Cells Cloud SDK for Node ile bazı yaygın görevleri nasıl gerçekleştireceğimizi inceleyeceğiz: yeni bir Excel çalışma kitabının oluşturulması, hücrelere veri eklenmesi ve değiştirilen çalışma kitabının buluta kaydedilmesi gibi.
 
 ## Başlarken
 
- Aspose.Cells Cloud SDK for Go'yu kullanmaya başlamadan önce, geliştirme ortamınızı ayarlamanız ve gerekli bağımlılıkları yüklemeniz gerekir. Bkz.[makale](https://docs.aspose.cloud/cells/quickstart/) Müşteri ID'nizi ve müşteri sırrınızı almak için Aspose web sitesini ziyaret edin.
+Aspose.Cells Cloud SDK for Go kullanmaya başlamadan önce geliştirme ortamınızı kurmanız ve gerekli bağımlılıkları yüklemeniz gerekir. İstemci kimliğinizi ve istemci sırrınızı almak için Aspose web sitesindeki [bu makaleye](https://docs.aspose.cloud/cells/quickstart/) bakın.
 
-## Aspose.Cells Cloud için Node paketi nasıl kurulur?
+## Aspose.Cells Cloud için Node paketi nasıl yüklenir
 
-Aspose.Cells Cloud SDK'yı Node için npm kullanarak yükleyebilirsiniz. Aşağıda npm için adımlar yer almaktadır:
+Aspose.Cells Cloud SDK for Node’u npm ile yükleyebilirsiniz. Aşağıda npm için adımlar verilmiştir:
 
 ```Powershell
 
@@ -31,9 +32,9 @@ npm install asposecellscloud
 
 ```
 
-## Aspose.Cells Cloud için paket yapılandırmasına bağımlılıklar nasıl eklenir?
+## Aspose.Cells Cloud için paket yapılandırmasında bağımlılıklar nasıl eklenir
 
-düğüm yapılandırma dosyası: package.json
+node yapılandırma dosyası: package.json
 
 ```Node
 
@@ -54,15 +55,15 @@ düğüm yapılandırma dosyası: package.json
 
 ```
 
-## Xlsx'i diğer formatlara dönüştürmek için Node paketi nasıl kullanılır?
+## Node paketi ile Xlsx dosyasını diğer formatlara nasıl dönüştürülür
 
-- Aspose.Cells Bulut Kütüphanesini İçe Aktar
- Öncelikle Aspose.Cells Cloud NodeJS SDK'sından gerekli paketi projenize aktarın.
-- API İstemcisini Kimlik Bilgileriyle Yapılandırın
- API istemcinizi benzersiz istemci kimliğiniz ve istemci sırrınızla doğrulayın.
-- Dönüştürme Parametrelerini Hazırla
- Kaynak dosya adı, istenen çıktı biçimi ve depolama klasörü yolu dahil olmak üzere dönüştürme görevi için parametreleri tanımlayın.
-- Çalışma Kitabı Dönüşümünü Çalıştır
- Dönüştürme işlemini PostConvertWorkbook metodunu kullanarak çağırın ve yanıtı işleyin.
+- Aspose.Cells Cloud Kütüphanesini İçe Aktarın  
+  Öncelikle projenize Aspose.Cells Cloud NodeJS SDK’sından gerekli paketi içe aktarın.
+- Kimlik Bilgileriyle API İstemcisi Yapılandırın  
+  API istemcinizi benzersiz istemci kimliğiniz ve istemci sırrınızla doğrulayın.
+- Dönüştürme Parametrelerini Hazırlayın  
+  Dönüştürme görevi için kaynak dosya adı, istenen çıktı formatı ve depolama klasörü yolu dahil parametreleri tanımlayın.
+- Çalışma Kitabı Dönüştürmeyi Gerçekleştirin  
+  PostConvertWorkbook yöntemini kullanarak dönüştürme işlemini çağırın ve yanıtı işleyin.
 
 {{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_AvailableSDKs.ts" >}}

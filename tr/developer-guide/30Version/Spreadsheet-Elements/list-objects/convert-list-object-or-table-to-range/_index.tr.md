@@ -1,74 +1,135 @@
-﻿---
-title: Excel çalışma sayfasında liste nesnesini aralığa dönüştürün
-second_title: Documen
-linktitle: Dönüşüm
+---
+title: "Liste Nesnesini Aralığa Dönüştür – Aspose.Cells Cloud API"
+ArticleTitle: "Aspose.Cells Cloud API ile Liste Nesnesini Aralığa Dönüştür"
+second_title: "Belge"
+linktype: "Dönüştürme"
 type: docs
 url: /tr/list-objects/to-range/
-aliases: [/convert-list-object-or-table-to-range/,/tables/to-range/]
-keywords: Convert a list object(table) to range in an Excel worksheet
-description: Aspose.Cells Cloud REST API, bir liste nesnesini (tablo) bir çalışma sayfasındaki aralığa dönüştürmeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
+aliases:
+  - /convert-list-object-or-table-to-range/
+  - /tables/to-range/
+keywords: "Aspose Cells API, liste nesnesini aralığa dönüştür, Excel REST API"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel ListObject’ini (tabloyu) aralığa nasıl dönüştüreceğinizi öğrenin. İstek sözdizimi, parametreler, örnek cURL, yanıt şeması, kimlik doğrulama ayrıntıları, hata kodları ve SDK örneklerini içerir."
 weight: 30
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasında liste nesnesini aralığa dönüştürme
 ---
-Bu REST API, Excel çalışma sayfasında `convert table or list object to range`'i gösterir.
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfası içindeki bir **ListObject (tablo)** nesnesini bir **Aralık** nesnesine dönüştürür.
+
+**Ön Gereksinimler:**  
+Uç noktayı çağırmadan önce, çalışma kitabının Aspose Cloud deponuza yüklenmiş olması, çalışma sayfasının hedef ListObject’i içeriyor olması ve desteklenen dosya formatını kullandığınızdan emin olun (örneğin, .xlsx, .xlsm).
+
+## REST API
+
+**Kimlik Doğrulama**  
+Bu işlemi gerçekleştirmek için `Authorization` başlığında geçerli bir JWT jetonu bulundurmanız gerekir. Jetonu, istemci kimliğiniz ve istemci sırrınızla birlikte OAuth 2.0 jeton uç noktasına POST isteği göndererek edinin. Jeton, `Cells.ReadWrite` kapsamını içermeli ve jeton hizmeti tarafından döndürülen süre boyunca geçerlidir.
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| listeNesneİndeksi| tam sayı| yol||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT jeton tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectConvertToRange) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Ad                  | Tür      | Konum | Gerekli | Varsayılan | Açıklama                                                   |
+| ------------------- | -------- | ----- | ------- | ---------- | ----------------------------------------------------------- |
+| **name**            | string   | path  | Evet    | –          | Excel dosyasının adı.                                      |
+| **sheetName**       | string   | path  | Evet    | –          | ListObject’i içeren çalışma sayfasının adı.               |
+| **listObjectIndex** | integer  | path  | Evet    | –          | Dönüştürülecek ListObject’in (tablonun) sıfır tabanlı indeksi. |
+| **folder**          | string   | query | Hayır   | –          | Dosyanın bulunduğu klasör yolu.                            |
+| **storageName**     | string   | query | Hayır   | –          | Depolama hizmetinin adı.                                  |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+> **Not:** Bu işlem yalnızca **.xlsx** ve **.xlsm** gibi modern Excel formatlarıyla çalışır. ListObject korunmamış olmalıdır. ListObject’ler hakkında daha fazla bilgi için [ListObjects genel bakışına](/tr/list-objects/) bakın. Aralıklarla çalışma hakkında detaylı bilgi için [Aralıklar belgelerine](/tr/ranges/) başvurun.
+
+### cURL Örneği (İstek)
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects/0/ConvertToRange" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your-jwt-token>"
 ```
 
 {{< /tab >}}
 
+#### Yanıt Şeması
+
+API, yeni oluşturulan aralıkla ilgili ayrıntıları içeren **200 OK** yanıtını döndürür.
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "RangeName": "A1:C10",
+  "Address": "Sheet1!A1:C10",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "RowCount": 10,
+  "ColumnCount": 3
+}
+```
+
+| Alan            | Tür     | Açıklama                                          |
+| --------------- | ------- | ------------------------------------------------- |
+| **Code**        | integer | HTTP benzeri durum kodu (200, başarılı olduğunu gösterir). |
+| **Status**      | string  | Metinsel durum iletisi.                           |
+| **RangeName**   | string  | Oluşturulan aralığa atanan ad.                    |
+| **Address**     | string  | Çalışma sayfası adını içeren aralığın tam adresi.  |
+| **FirstRow**    | integer | Aralıktaki ilk satırın sıfır tabanlı indeksi.     |
+| **FirstColumn** | integer | Aralıktaki ilk sütunun sıfır tabanlı indeksi.     |
+| **RowCount**    | integer | Aralıktaki satır sayısı.                          |
+| **ColumnCount** | integer | Aralıktaki sütun sayısı.                          |
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                           |
+|-----|-----------------------------|----------------------------------------------------|
+| 200 | OK                          | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request                 | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized                | Geçersiz veya eksik JWT jetonu.                   |
+| 413 | Payload Too Large           | Yüklenen dosya boyut limitini aşıyor.             |
+| 500 | Internal Server Error       | Beklenmeyen sunucu hatası.                        |
+
+**Hata Yanıt Şeması (örnek):**
+
+```json
+{
+  "Code": 400,
+  "Message": "Geçersiz listObjectIndex. İndeks 0 ile 5 arasında olmalıdır."
+}
+```
+
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK",
+  "RangeName": "A1:C10",
+  "Address": "Sheet1!A1:C10",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "RowCount": 10,
+  "ColumnCount": 3
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+## Bulut SDK Geliştirme Paketi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmak için en iyi yoldur. Bir SDK, düşük seviye detayları yöneterek size proje görevlerinize odaklanma imkanı verir. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposunu](https://github.com/aspose-cells-cloud) kontrol edin.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak Aspose.Cells web servislerine nasıl istek atılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

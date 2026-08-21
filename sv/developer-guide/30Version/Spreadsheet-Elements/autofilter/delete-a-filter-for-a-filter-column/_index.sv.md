@@ -1,84 +1,106 @@
-﻿---
-title: Ta bort ett filter i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Ta bort filter
+---
+title: "Ta bort ett filter från ett Excel-ark – Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Ta bort filter"
 type: docs
 url: /sv/delete-filter/
-aliases: [/delete-a-filter-for-a-filter-column/,/delete-auto-filter/]
-keywords: Deletes a filter on an Excel worksheet
-description: "Aspose.Cells Cloud API stöder borttagning av filter på ett Excel-arbetsblad. SDK:n stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
+aliases: [/sv/delete-a-filter-for-a-filter-column/, /sv/delete-auto-filter/]
+keywords: "Aspose.Cells Cloud ta bort filter, Excel, REST API, SDK"
+description: "Lär dig hur du tar bort ett autofilter från ett Excel-ark med Aspose.Cells Cloud REST API, cURL och SDK:er (t.ex. C#, Java, Python etc.). Inkluderar slutpunkt, parametrar, autentisering och exempelkod."
 weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ta bort ett filter i ett Excel-kalkylblad
 ---
-Denna REST API anger att en `filter` ska tas bort från ett Excel-arbetsblad.
 
-## RSET API
+## REST API
+
+Detta REST API tar bort ett **autofilter** från ett Excel-ark.
 
 ```bash
-
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
-
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| Väg| Arbetsbokens namn.|
-| arknamn| sträng| Väg| Arbetsbladets namn.|
-|räckvidd|sträng| Fråga||
-|fältindex|heltal| Fråga||
-|datumTidGrupperingstyp|sträng| Fråga| Dag/Timme/Minut/Månad/Sekund/År|
-|år|heltal| Fråga||
-|månad|heltal| Fråga||
-|dag|heltal| Fråga||
-|timme|heltal| Fråga||
-|minut|heltal| Fråga||
-|andra|heltal| Fråga||
-|matchBlanks|sträng| Fråga|sant/falskt|
-|uppdatera|sträng| Fråga|sant/falskt|
-|mapp|sträng| Fråga|Original arbetsboksmapp.|
-|lagringsnamn|sträng| Fråga|Lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begärans parametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parametername            | Typ     | Plats  | Obligatorisk? | Beskrivning                                                                                     |
+| ------------------------ | ------- | ------ | ------------- | ----------------------------------------------------------------------------------------------- |
+| **name**                 | string  | Path   | Ja            | Namnet på arbetsboken.                                                                          |
+| **sheetName**            | string  | Path   | Ja            | Namnet på arket.                                                                                |
+| **range**                | string  | Query  | Nej           | Cellintervallet som filtret gäller (t.ex. `A1:C10`).                                          |
+| **fieldIndex**           | integer | Query  | Ja            | Nollbaserat index för kolumnen som filtret tillämpas på.                                       |
+| **dateTimeGroupingType** | string  | Query  | Nej           | Hur datum-/tidsvärden grupperas: `Day`, `Hour`, `Minute`, `Month`, `Second` eller `Year`.     |
+| **year**                 | integer | Query  | Nej           | Årskomponent för datumgruppering.                                                               |
+| **month**                | integer | Query  | Nej           | Månadskomponent för datumgruppering.                                                            |
+| **day**                  | integer | Query  | Nej           | Dagkomponent för datumgruppering.                                                               |
+| **hour**                 | integer | Query  | Nej           | Timkomponent för datumgruppering.                                                               |
+| **minute**               | integer | Query  | Nej           | Minutkomponent för datumgruppering.                                                             |
+| **second**               | integer | Query  | Nej           | Sekundkomponent för datumgruppering.                                                            |
+| **matchBlanks**          | boolean | Query  | Nej           | `true` / `false` – om tomma celler ska inkluderas i filtret.                                   |
+| **refresh**              | boolean | Query  | Nej           | `true` / `false` – om arket ska uppdateras efter borttagning.                                 |
+| **folder**               | string  | Query  | Nej           | ursprunglig mapp för arbetsboken.                                                               |
+| **storageName**          | string  | Query  | Nej           | Lagringsnamn.                                                                                   |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Svar**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                                                 |
+|-----|-----------------------------|-----------------------------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades korrekt; svaret innehåller åtgärdens detaljer.          |
+| 400 | Bad Request                 | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds).            |
+| 401 | Unauthorized                | Ogiltig eller saknad JWT-token.                                             |
+| 413 | Payload Too Large           | Den uppladdade filen överskrider storleksgränsen.                           |
+| 500 | Internal Server Error       | Oväntat serverfel.                                                          |
+
+## Hur du använder DeleteWorksheetFilter API med SDK:er
+
+### DeleteWorksheetFilter API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur du anropar Cloud API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?fieldIndex=0&criteria=Year" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?fieldIndex=0&dateTimeGroupingType=Year" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det mest effektiva sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektoppgifter. Kolla in [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,85 +1,140 @@
-﻿---
-title: Dela en Excel-fil till flera filer
-second_title: Documen
-linktitle: Dela Multi Excel-filen
-type: docs
-url: /sv/split-an-excel-file-to-multi-files/
-aliases: [/split-excel-workbooks/,/workbook/split/]
-keywords: Split multi Excel files
-description: Aspose.Cells Cloud REST API stöder delning av flera Excel-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 32
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Split
 ---
-Detta REST API indikerar flera `split`-filer till Excel.
+title: "Dela en Excel-fil i flera filer"
+second_title: "Dokument"
+linktitle: "Dela flera Excel-filer"
+type: docs
+url: /split-an-excel-file-to-multi-files/
+aliases: [/split-excel-workbooks/,/workbook/split/]
+keywords: "Aspose.Cells, moln, Excel, Dela, API, PDF, CSV, JSON"
+description: "Använd Aspose.Cells Cloud REST API för att dela flersidiga Excel-arbetsböcker i separata filer. Stöder utdataformat som PDF, CSV och JSON, och är tillgängligt via SDK:er för Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby och Swift."
+weight: 32
+ArticleTitle: "Dela en Excel-fil i flera filer - Aspose.Cells Cloud-dokumentation"
+---
 
-## RSET API
+Aspose.Cells Cloud REST API delar flersidiga Excel-arbetsböcker i separata filer.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/split
- 
+**Förutsättningar**  
+Innan du anropar API:et måste du skaffa en giltig JWT-token och inkludera den i `Authorization`-headern i varje begäran. Se [autentiseringshandboken](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) för detaljer.
+
+## PostSplit API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/split
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| fil| fil| formulärData| Fil att ladda upp|
-| formatera| sträng| fråga||
-| lösenord| sträng| fråga||
-| från| heltal| fråga||
-| till| heltal| fråga||
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostSplit) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begärandeparametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameternamn | Typ   | Plats     | Beskrivning                                                    |
+|---------------|-------|-----------|----------------------------------------------------------------|
+| file          | fil   | formData  | Den Excel-arbetsbok som ska laddas upp.                        |
+| format        | sträng| query     | Önskat utdataformat (t.ex. `pdf`, `csv`, `json`).              |
+| password      | sträng| query     | Lösenord för en krypterad arbetsbok (valfritt).                |
+| from          | heltal| query     | Index för första ark som ska inkluderas (1-baserat).           |
+| to            | heltal| query     | Index för sista ark som ska inkluderas (inklusive).           |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **Svar**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Files": [
+        {
+            "Filename" : "[fil1 namn]",
+            "Filesize" : [filstorlek],
+            "FileContent" : "[Base64-sträng]"
+        },
+        {
+            "Filename" : "[fil2 namn]",
+            "Filesize" : [filstorlek],
+            "FileContent" : "[Base64-sträng]"
+        },
+        {
+            "Filename" : "[fil3 namn]",
+            "Filesize" : [filstorlek],
+            "FileContent" : "[Base64-sträng]"
+        }
+    ]
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                                   |
+|-----|-----------------------------|---------------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Obehörig                    | Ogiltig eller saknad JWT-token.                               |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen.             |
+| 500 | Internt serverfel           | Oväntat serverfel inträffade.                                  |
+
+## Hur du använder PostSplit API med SDK:er
+
+### PostSplit API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/LightCells/PostSplit) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                     | Beskrivning                                                    |
+|-----|-------------------------------|----------------------------------------------------------------|
+| 200 | OK                            | Arbetsboken delades framgångsrikt och svaret innehåller fillistan. |
+| 400 | Felaktig begäran              | Saknade eller ogiltiga parametrar (t.ex. format som inte stöds). |
+| 401 | Obehörig                      | Ogiltig eller saknad JWT-token.                                |
+| 500 | Internt serverfel             | Ett oväntat fel inträffade på serversidan.                     |
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/split?format=pdf" \
+curl -v "https://api.aspose.cloud/v3.0/cells/split?format=pdf" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+-F 'xxxxx2=@xxxx2.xlsx' \
+# Ersätt xxxxx1.xlsx och xxxxx2.xlsx med sökvägarna till dina Excel-filer
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx_sheet1.pdf",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
+```json
+{
+    "Files": [
+        {
+            "Filename": "xxxxx_sheet1.pdf",
+            "FileSize": 274022,
+            "FileContent": "-----Base64-sträng--------"
         },
-        { 
-            "Filename":"xxxxx_sheet2.pdf",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
+        {
+            "Filename": "xxxxx_sheet2.pdf",
+            "FileSize": 274022,
+            "FileContent": "-----Base64-sträng--------"
         }
-        ....
+        …
     ]
- 
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda ett SDK är det bästa sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Kolla in [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

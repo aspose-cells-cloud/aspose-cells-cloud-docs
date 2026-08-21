@@ -1,81 +1,110 @@
-﻿---
-title: Получить первую ячейку из рабочего листа Excel
+---
+title: "Получить первую ячейку (A1) из рабочего листа Excel"
 type: docs
 url: /ru/get-first-cell-from-excel-worksheet/
 weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получить первую ячейку из листа Excel
+keywords: "Aspose.Cells Cloud, Excel, REST API, Получить первую ячейку, Рабочий лист, A1, API v3"
+description: "Узнайте, как получить первую ячейку (A1) рабочего листа Excel с помощью REST API Aspose.Cells Cloud v3.0. Включает запрос cURL, JSON-ответ, примеры ошибок и примеры SDK для C#, Java, PHP, Python и других языков."
+ArticleTitle: "Получить первую ячейку (A1) из рабочего листа Excel с помощью API Aspose.Cells Cloud"
 ---
-Этот REST API указывает на то, что шоу получает `firstcell` в файле Excel, когда параметр `cellOrMethodName` равен `firstcell`.
 
-- **cURL Пример**
+Этот REST API демонстрирует, как получить **первую ячейку** в файле Excel при значении параметра `cellOrMethodName`, равном `firstcell`.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Конечная точка**  
+`GET https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{worksheet}/cells/firstcell`
+
+- **Пример на cURL**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```shell
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+**Параметры**
+
+| Параметр           | Тип    | Описание                                                 | Обязательный |
+|--------------------|--------|----------------------------------------------------------|-------------|
+| `cellOrMethodName` | string | Должен быть установлен в значение `firstcell` для получения первой ячейки. | Да          |
+| `fileName`         | string | Имя файла рабочей книги (например, `myWorkbook.xlsx`).   | Да          |
+| `worksheet`        | string | Имя рабочего листа (например, `Sheet1`).                | Да          |
+| `Authorization`    | header | Bearer-токен для аутентификации.                         | Да          |
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "A1",
-
     "Row": 0,
-
     "Column": 0,
-
     "Value": "Category",
-
     "Type": "IsString",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
     "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Category</Font>",
-
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
+
+**Ответы об ошибках**
+
+- **401 Unauthorized (Неавторизован)**
+
+```json
+{
+  "Code": "401",
+  "Message": "Неверный токен доступа."
+}
+```
+
+- **404 Not Found (Не найдено)**
+
+```json
+{
+  "Code": "404",
+  "Message": "Указанная рабочая книга, рабочий лист или ячейка не существует."
+}
+```
+
+- **500 Internal Server Error (Внутренняя ошибка сервера)**
+
+```json
+{
+  "Code": "500",
+  "Message": "На сервере произошла непредвиденная ошибка."
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код  | Значение                    | Описание                                                  |
+|------|-----------------------------|-----------------------------------------------------------|
+| 200  | OK (ОК)                     | Фильтр применён успешно; ответ содержит сведения об операции. |
+| 400  | Bad Request (Неверный запрос) | Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401  | Unauthorized (Неавторизован) | Неверный или отсутствующий JWT-токен. |
+| 413  | Payload Too Large (Слишком большой полезный груз) | Загруженный файл превышает ограничение по размеру. |
+| 500  | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера. |
 
 {{< /tab >}}
 
@@ -83,15 +112,9 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 - **Семейство облачных SDK**
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK берёт на себя обработку низкоуровневых деталей, позволяя вам сосредоточиться на задачах вашего проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
-
-- **Семейство облачных SDK**
-
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
-
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже демонстрируют вызов веб-служб Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -144,3 +167,4 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< /tabs >}}
+---

@@ -1,71 +1,98 @@
-﻿---
-title: Raccolta dati per la creazione di un report Excel
-second_title: Documen
-linktitle: Data di assemblaggio
-type: docs
-url: /it/assembly-data-for-the-creation-of-an-excel-report/
-aliases: [/assembly/]
-keywords: Assemble data in Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: Aspoe.Cells Cloud genera report in file XLS, XLSX, XLSM, XLSB e ODS utilizzando il modello e il datasheet. Elabora marcatori intelligenti nel modello per inserire dati da un altro datasheet. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 40
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Assembly
 ---
-Questo REST API indica i dati `assembly` in un file Excel.
+title: "Assemblaggio dei dati per la creazione di un report Excel"
+second_title: "Documento"
+linktitle: "Assemblaggio dati"
+type: docs
+url: /assembly-data-for-the-creation-of-an-excel-report/
+aliases: [/assembly/]
+keywords: "Aspose.Cells, report Excel, assemblaggio dati, API cloud, REST, SDK, cURL, PDF, ODS"
+description: "Scopri come utilizzare l'API di assemblaggio di Aspose.Cells Cloud per unire dati in report Excel (XLSX, PDF, ODS). Include endpoint, parametri, esempio cURL, codice SDK, guida all'autenticazione e gestione degli errori."
+weight: 40
+---
 
-## RSET API
+Questa API REST assembla i dati **all'interno** di un file Excel.
+
+## API REST
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/assembly
-
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| file| file| formData| File da caricare|
-| fonte dati| corda| domanda||
-| formato| corda| domanda| Xlsx|
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione tramite token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostAssemble) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### Parametri della richiesta
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Nome parametro | Tipo   | Posizione                  | Descrizione                                                           |
+| ---------------- | ------ | ------------------------- | ---------------------------------------------------------------------- |
+| file             | file   | formData (corpo multipart) | Il file del foglio elettronico da caricare.                           |
+| DataSource       | string | query string              | Identificatore della fonte dati che fornisce i dati per l'assemblaggio. |
+| format           | string | query string              | Formato di output desiderato (ad esempio, `xlsx`, `pdf`).              |
+
+### **Risposta**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[nome file2]",
+    "Filesize" : [dimensione file],
+    "FileContent" : "[Base64String]"
+}
+```
+
+**Codici di stato HTTP**
+
+| Codice | Significato                 | Descrizione                                                |
+|--------|-----------------------------|------------------------------------------------------------|
+| 200    | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida        | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401    | Non autorizzato             | Token JWT non valido o mancante.                           |
+| 413    | Payload troppo grande       | Il file caricato supera il limite di dimensione.          |
+| 500    | Errore interno del server   | Errore imprevisto nel server.                              |
+
+## Come utilizzare l'API PostAssemble con gli SDK
+
+### Specifica dell'API PostAssemble
+
+La [specifica OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostAssemble) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/assembly?datasource=ds&format=pdf" \
--X POST \
--H "Content-Type: multipart/form-data" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+curl -v "https://api.aspose.cloud/v3.0/cells/assembly?DataSource=ds&format=pdf" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <token jwt>" \
+  -F 'template=@template.xlsx' \
+  -F 'data=@data.json'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "report1",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "report2",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
@@ -73,11 +100,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/assembly?datasource=ds&format=pdf" \
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+### Utilizzo degli SDK di Aspose.Cells Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'utilizzo di un SDK è il modo più rapido per sviluppare interfacce verso l'API. Un SDK astrae i dettagli di basso livello, consentendoti di concentrarti sulla logica aziendale. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

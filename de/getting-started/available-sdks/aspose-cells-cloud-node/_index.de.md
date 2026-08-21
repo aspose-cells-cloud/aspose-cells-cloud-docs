@@ -1,29 +1,30 @@
-﻿---
-title: "Aspose.Cells Cloud SDK für Node.js: Konvertieren, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen und mehr"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for Node.js: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells Cloud SDK für Node.j
-type: docs
-url: /de/available-sdks/aspose-cells-cloud-node/
-description: "Aspose.Cells Cloud SDK für Node.js bietet echte plattformübergreifende Leistung: Ein Import bietet Windows, Linux- und macOS-Entwicklern die gleiche fließende API zum Erstellen, Konvertieren, Zusammenführen, Aufteilen, Schützen und Bearbeiten jedes Excel Objekts – keine Office Installation erforderlich und keine plattformspezifischen Anpassungen erforderlich"
-weight: 30
-kwords: Node.js, Node.js SDK, Excel SDK für Node.js, Cloud SDK für Node.js, REST, Diagramm, Pivot-Tabelle, Tabellen-/Listenobjekt, Tabellenkalkulation konvertieren, PDF, CSV, Json, Markdown, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen
 ---
-Das SDK ist Open Source und steht unter der MIT-Lizenz. Sie können darauf zugreifen[der Quellcode der Node-Bibliothek für Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
+title: "Aspose.Cells Cloud SDK für Node.js: Konvertieren, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen und mehr."
+second_title: "Dokument"
+ArticleTitle: "Aspose.Cells Cloud SDK für Node.js: Konvertieren, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen und mehr."
+linktitle: "Aspose.Cells Cloud SDK für Node.js"
+type: docs
+url: /available-sdks/aspose-cells-cloud-node/
+description: "Das Aspose.Cells Cloud SDK für Node.js bietet echte plattformübergreifende Leistung: Ein einziger Import stellt Windows-, Linux- und macOS-Entwicklern dieselbe flüssige API zur Verfügung, um jedes Excel-Objekt zu erstellen, zu konvertieren, zusammenzuführen, zu teilen, zu schützen und zu bearbeiten – keine Office-Installation erforderlich und keine plattformspezifischen Anpassungen nötig."
+weight: 30
+kwords: Node.js, Node.js SDK, Excel SDK für Node.js, Cloud SDK für Node.js, REST, Diagramm, Pivot-Tabelle, Tabellen-/Listenobjekt, Tabellendokument konvertieren, PDF, CSV, JSON, Markdown, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen
+---
 
-# **So verwenden Sie die Node-Bibliothek der Aspose.Cells Cloud**
+Das SDK ist Open Source und unter der MIT-Lizenz lizenziert. Sie können den Quellcode der Node-Bibliothek für Aspose.Cells Cloud [hier](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node) abrufen.
 
-Aspose.Cells Cloud SDK für Node ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, Microsoft Excel-Dateien mit der Programmiersprache Node zu bearbeiten und zu verarbeiten. Mit diesem SDK können Sie Excel-Dokumente in der Cloud erstellen, bearbeiten und konvertieren, ohne zusätzliche Software oder Abhängigkeiten auf Ihrem lokalen Computer installieren zu müssen.
+# **So verwenden Sie die Node-Bibliothek von Aspose.Cells Cloud**
 
-In diesem Artikel erfahren Sie, wie Sie mit dem Aspose.Cells Cloud SDK für Node einige gängige Aufgaben ausführen, z. B. eine neue Excel-Arbeitsmappe erstellen, Daten in Zellen einfügen und die geänderte Arbeitsmappe in der Cloud speichern.
+Das Aspose.Cells Cloud SDK für Node ist eine leistungsstarke Bibliothek, mit der Entwickler Microsoft Excel-Dateien mithilfe der Node-Programmiersprache bearbeiten und verarbeiten können. Mit diesem SDK können Sie Excel-Dokumente in der Cloud erstellen, bearbeiten und konvertieren, ohne zusätzliche Software oder Abhängigkeiten auf Ihrem lokalen Computer installieren zu müssen.
+
+In diesem Artikel zeigen wir Ihnen, wie Sie das Aspose.Cells Cloud SDK für Node nutzen, um einige gängige Aufgaben auszuführen, wie z. B. das Erstellen einer neuen Excel-Arbeitsmappe, das Einfügen von Daten in Zellen und das Speichern der bearbeiteten Arbeitsmappe in der Cloud.
 
 ## Erste Schritte
 
- Bevor Sie das Aspose.Cells Cloud SDK für Go verwenden können, müssen Sie Ihre Entwicklungsumgebung einrichten und die erforderlichen Abhängigkeiten installieren. Weitere Informationen finden Sie unter[der Artikel](https://docs.aspose.cloud/cells/quickstart/) auf der Website Aspose, um Ihre Client-ID und Ihr Client-Geheimnis zu erhalten.
+Bevor Sie mit der Verwendung des Aspose.Cells Cloud SDK für Go beginnen können, müssen Sie Ihre Entwicklungsumgebung einrichten und die erforderlichen Abhängigkeiten installieren. Weitere Informationen finden Sie im [Artikel](https://docs.aspose.cloud/cells/quickstart/) auf der Aspose-Website, um Ihre Client-ID und Ihren Client-Secret zu erhalten.
 
 ## So installieren Sie das Node-Paket für Aspose.Cells Cloud
 
-Sie können das Aspose.Cells Cloud SDK für Node mit npm installieren. Nachfolgend finden Sie die Schritte für npm:
+Sie können das Aspose.Cells Cloud SDK für Node über npm installieren. Nachfolgend finden Sie die Schritte für npm:
 
 ```Powershell
 
@@ -31,9 +32,9 @@ npm install asposecellscloud
 
 ```
 
-## So fügen Sie Abhängigkeiten in der Paketkonfiguration für Aspose.Cells Cloud hinzu
+## So fügen Sie Abhängigkeiten in die Paketkonfiguration für Aspose.Cells Cloud hinzu
 
-Knotenkonfigurationsdatei: package.json
+Node-Konfigurationsdatei: package.json
 
 ```Node
 
@@ -54,15 +55,15 @@ Knotenkonfigurationsdatei: package.json
 
 ```
 
-## So verwenden Sie das Node-Paket zum Konvertieren von XLSX in andere Formate
+## So verwenden Sie das Node-Paket, um Xlsx in andere Formate zu konvertieren
 
-- Importieren Sie Aspose.Cells Cloud-Bibliothek
- Beginnen Sie, indem Sie das erforderliche Paket aus dem Aspose.Cells Cloud NodeJS SDK in Ihr Projekt importieren.
-- Konfigurieren Sie den API-Client mit Anmeldeinformationen
- Authentifizieren Sie Ihren API-Client mit Ihrer eindeutigen Client-ID und Ihrem Client-Geheimnis.
-- Konvertierungsparameter vorbereiten
- Definieren Sie Parameter für die Konvertierungsaufgabe, einschließlich des Quelldateinamens, des gewünschten Ausgabeformats und des Speicherordnerpfads.
-- Arbeitsmappenkonvertierung ausführen
- Rufen Sie den Konvertierungsprozess mit der Methode PostConvertWorkbook auf und verarbeiten Sie die Antwort.
+- Aspose.Cells Cloud-Bibliothek importieren  
+  Beginnen Sie damit, das erforderliche Paket aus dem Aspose.Cells Cloud NodeJS SDK in Ihr Projekt zu importieren.
+- API-Client mit Anmeldeinformationen konfigurieren  
+  Authentifizieren Sie Ihren API-Client mit Ihrer eindeutigen Client-ID und Ihrem Client-Secret.
+- Konvertierungsparameter vorbereiten  
+  Definieren Sie Parameter für die Konvertierungsaufgabe, einschließlich des Quelldateinamens, des gewünschten Ausgabeformats und des Speicherordnerpfads.
+- Arbeitsmappenkonvertierung ausführen  
+  Rufen Sie den Konvertierungsprozess mit der Methode PostConvertWorkbook auf und verarbeiten Sie die Antwort.
 
 {{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_AvailableSDKs.ts" >}}

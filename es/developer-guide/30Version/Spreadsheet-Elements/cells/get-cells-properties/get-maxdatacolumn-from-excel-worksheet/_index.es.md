@@ -1,46 +1,77 @@
-﻿---
-title: Obtener MaxDataColumn de la hoja de trabajo Excel
-type: docs
-url: /es/get-maxdatacolumn-from-excel-worksheet/
-weight: 70
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Obtener MaxDataColumn de la hoja de trabajo Excel
 ---
-Este REST API indica que se obtiene un `maxdatacolumn` en un archivo Excel cuando el parámetro `cellOrMethodName` es `maxdatacolumn`.
+title: "Aspose.Cells Cloud API – Obtener el MaxDataColumn de una hoja de cálculo de Excel (v3.0)"
+type: docs
+url: /get-maxdatacolumn-from-excel-worksheet/
+weight: 70
+keywords: "Aspose.Cells Cloud, Obtener MaxDataColumn, hoja de cálculo de Excel, API REST, v3.0, SDK"
+description: "Recuperar el índice de columna más alto que contiene datos en una hoja de cálculo especificada mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye detalles de la solicitud, respuesta de ejemplo y ejemplos de SDK."
+ArticleTitle: "Aspose.Cells Cloud API – Obtener el MaxDataColumn de una hoja de cálculo de Excel (v3.0)"
+---
 
-- **cURL Ejemplo**
+Esta API REST devuelve el índice máximo de columna de datos en una hoja de cálculo de Excel cuando el parámetro `cellOrMethodName` se establece en `maxdatacolumn`.
 
+## **Ejemplo con cURL**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatacolumn" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatacolumn" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{} 
-
+```json
+{
+  "MaxDataColumn": 12
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Familia de SDK en la nube**
+**Detalles de la solicitud**  
+- **Método HTTP:** `GET`  
+- **Patrón de punto final:** `https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/maxdatacolumn`  
+- **Parámetros de ruta:**  
+  - `fileName` – Nombre del archivo de Excel (por ejemplo, `myWorkbook.xlsx`).  
+  - `sheetName` – Nombre de la hoja de cálculo (por ejemplo, `Sheet1`).  
+- **Encabezados:**  
+  - `Authorization: Bearer <access_token>` (obligatorio)  
+  - `Accept: application/json` (recomendado)  
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+**Parámetros**
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+| Parámetro | Ubicación | Tipo   | Obligatorio | Descripción |
+|-----------|-----------|--------|-------------|-------------|
+| `fileName` | Ruta      | string | Sí          | El nombre del archivo de Excel almacenado en el almacenamiento en la nube. |
+| `sheetName` | Ruta    | string | Sí          | La hoja de cálculo de la que se desea obtener la columna de datos máxima. |
+| `cellOrMethodName` | Ruta | string | Sí | Debe establecerse en `maxdatacolumn` para invocar esta operación. |
 
+**Respuestas**
 
+| Código de estado | Descripción                                      | Ejemplo de carga útil |
+|------------------|--------------------------------------------------|------------------------|
+| 200              | Correcto – devuelve el índice de la columna de datos máxima. | `{ "MaxDataColumn": 12 }` |
+| 401              | No autorizado – token de acceso inválido o ausente. | `{ "error": "Invalid authentication." }` |
+| 404              | No encontrado – el archivo o la hoja de cálculo no existen. | `{ "error": "Resource not found." }` |
+| 500              | Error interno del servidor – condición inesperada. | `{ "error": "Server error." }` |
+
+**Control de errores**  
+Si la solicitud falla, revise el código de estado HTTP y el mensaje `error` en el cuerpo de la respuesta. Asegúrese de que el token de acceso sea válido y de que el archivo y la hoja de cálculo especificados existan en su almacenamiento de Aspose Cloud.
+
+- **Utilizar los SDK de Aspose.Cells Cloud**
+
+Utilizar un SDK es la forma más eficiente de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel, lo que le permite centrarse en las tareas de su proyecto. Consulte el <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">repositorio de GitHub</a> para obtener una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -53,8 +84,6 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< tab tabNum="2" >}}
 
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-cells-GetMaxDataColumnWorksheet-get-max-data-column.java" >}}
-
-
 
 {{< /tab >}}
 

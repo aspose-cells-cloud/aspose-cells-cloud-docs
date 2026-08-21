@@ -1,147 +1,186 @@
-﻿---
-title: Excel в ПД
-second_title: Documen
-linktitle: Excel в ПД
-type: docs
-url: /ru/convert-excel-file-to-pdf-file/
-aliases: [/convert-excel-file-to-pdf-in-cloud/,/convert/excel-to-pdf/]
-keywords: Convert excel files to pdf files
-description: Aspose.Cells Cloud REST API поддерживает преобразование файлов Excel в PDF. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 80
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Excel до PDF
 ---
-Этот REST API указывает `convert` на файл электронной таблицы в формате PDF.
+title: "Преобразование Excel в PDF — Aspose.Cells Cloud API"
+ArticleTitle: "Преобразование Excel в PDF — Aspose.Cells Cloud API"
+second_title: "Документ"
+linktitle: "Преобразование Excel в PDF"
+type: docs
+url: /convert-excel-file-to-pdf-file/
+aliases: [/convert-excel-file-to-pdf-in-cloud/, /convert/excel-to-pdf/]
+keywords: "Aspose, Cells, Excel, PDF, преобразование, Cloud API"
+description: "Узнайте, как преобразовать рабочие книги Excel в PDF с помощью REST API Aspose.Cells Cloud. Включает примеры cURL, SDK (C#, Java, Python) и руководство по аутентификации."
+weight: 80
+---
 
-**Параметр запроса**
+Этот REST API преобразует файл электронной таблицы в файл формата PDF. **Необходимые условия:** получите действительный JWT-токен доступа, убедитесь, что исходный файл Excel хранится в поддерживаемом хранилище, и обладайте соответствующими правами для вызова конечной точки преобразования.
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|пароль|нить| Пароль, необходимый для открытия файла Excel.|
-|имя_хранилища|нить| Имя хранилища, где находится файл.|
-|checkExcelRestriction|бул| Проверять ли ограничения файла Excel, когда пользователь изменяет ячейки, связанные с объектами.|
+## API PostConvertWorkbookToPDF
 
-**Параметр тела запроса**
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/pdf
+```
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-|файл данных| файл данных|Файл данных сохраняется в первой части многочастного контента.|
+### **Безопасность и аутентификация**
 
-**Ответ**
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе токена JWT</a>.
 
-[FileInfo](/cells/ru/file-info/)
+### **Параметр запроса (query parameter)**
 
-## REST API Спецификация
+| Имя параметра         | Тип    | Описание                                                                 |
+| :-------------------- | :----- | :------------------------------------------------------------------------ |
+| password              | string | Пароль для открытия файла Excel.                                         |
+| storageName           | string | Имя хранилища, в котором находится файл.                                 |
+| checkExcelRestriction | bool   | Следует ли применять ограничения файлов Excel при изменении объектов, связанных с ячейками. |
 
-|**API**|**Тип**|**Описание**|**Swagger Link**|
-|:- |:- |:- |:- |
-|/cells/convert/pdf|ПОЧТА|Преобразовать электронную таблицу в PDF-файл.|[PostConvertWorkbookToPDF](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPDF)|
+Если параметр `checkExcelRestriction` опущен, по умолчанию он принимает значение `false`.
 
- The[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPDF) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### **Параметр тела запроса**
 
- Вы можете использовать**cURL** Инструмент командной строки для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+| Имя параметра | Тип  | Описание                                                    |
+| :------------ | :--- | :----------------------------------------------------------- |
+| datafile      | file | Файл данных, сохраняемый в качестве первой части мультитекстового содержимого. |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Ответ**
+
+[FileInfo](/cells/file-info/)
+
+В ответе возвращается объект JSON с метаданными файла. Сам файл PDF можно загрузить, используя предоставленное поле `FileContent` (base64) или по ссылке из `FileInfo`. API возвращает объект JSON типа **FileInfo**:
+
+- **FileInfo** — объект, содержащий имя, размер и содержимое сгенерированного файла **PDF** в кодировке base64.
+
+```json
+{
+  "Filename": "example.pdf",
+  "FileSize": 12345,
+  "FileContent": "base64_encoded_string"
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                                  |
+|------|-----------------------------|-----------------------------------------------------------|
+| 200  | OK                          | Фильтр успешно применён; ответ содержит детали операции. |
+| 400  | Bad Request                 | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401  | Unauthorized                | Недействительный или отсутствующий JWT-токен.            |
+| 413  | Payload Too Large           | Загруженный файл превышает лимит размера.                 |
+| 500  | Internal Server Error       | Непредвиденная ошибка сервера.                            |
+
+## Как использовать API PostConvertWorkbookToPDF с SDK
+
+### Спецификация API PostConvertWorkbookToPDF
+
+[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPDF) определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+**Заголовки запроса**
+
+| Заголовок      | Тип    | Описание                                                |
+| :------------- | :----- | :------------------------------------------------------- |
+| Authorization  | string | Bearer-токен, полученный при аутентификации через JWT.  |
+| Content-Type   | string | Должен быть `multipart/form-data` для загрузки файла.  |
+| Accept         | string | `application/json` для получения метаданных ответа.     |
+
+Вы можете использовать утилиту командной строки **cURL** для простого доступа к веб-сервисам Aspose.Cells. Включите токен доступа в заголовок `Authorization`, затем выполните запрос ниже.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pdf" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pdf" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "Authorization: Bearer <access_token>" \
+     -F "datafile=@sample.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
-  "Filename": "xxxxxx.pdf”,
+  "Filename": "xxxxxx.pdf",
   "FileSize": xxxx,
   "FileContent": "File Content: base64_encoded_string"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+### Использование SDK Aspose.Cells Cloud
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Использование SDK упрощает разработку, скрывая низкоуровневые детали. Полный список SDK Aspose.Cells Cloud представлен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
+
+Примеры кода ниже демонстрируют вызовы веб-сервисов Aspose.Cells с использованием различных SDK:
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example_PostConvertWorkbookToPdf.cs" >}}
+{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example_PostConvertWorkbookToPDF.cs" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostConvertWorkbookToPdf.java" >}}
+{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostConvertWorkbookToPDF.java" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostConvertWorkbookToPdf.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostConvertWorkbookToPDF.php" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostConvertWorkbookToPdf.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostConvertWorkbookToPDF.rb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostConvertWorkbookToPdf.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostConvertWorkbookToPDF.ts" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostConvertWorkbookToPdf.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostConvertWorkbookToPDF.py" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostConvertWorkbookToPdf.pl" >}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostConvertWorkbookToPDF.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostConvertWorkbookToPdf.go" >}}
+{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostConvertWorkbookToPDF.go" >}}
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Другие API реализуют эту функцию
+## Другие API, реализующие эту функцию
 
-|**API**|**Тип**|**Описание**|**Swagger Link**|
-|:- |:- |:- |:- |
-|/клетки/конвертировать|ПОМЕЩАТЬ|Преобразует рабочую книгу из содержимого запроса в определенный формат|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
+| **API**        | **Тип** | **Описание**                                                     | **Ссылка Swagger**                                                                          |
+| :------------- | :------ | :--------------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
+| /cells/convert | PUT     | Преобразует рабочую книгу из содержимого запроса в указанный формат. | [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) |
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API позволяет сохранить файл MS Excel как файл PDF с дополнительными настройками и сохранить результат в хранилище.
+API [POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) позволяет сохранить файл MS Excel в формате PDF с дополнительными настройками и сохранить результат в хранилище.
 
-Этот файл REST API `convert` Excel в PDF.
+Этот REST API преобразует файл Excel в PDF.
 
-[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API позволяет преобразовать файл MS Excel в файл PDF с дополнительными настройками и сохранить результат в ответе.
+API [PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) позволяет преобразовать файл MS Excel в PDF с дополнительными настройками и вернуть результат в ответе.
 
-Этот файл REST API `export` Excel в PDF.
+API [GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) позволяет преобразовать файл MS Excel в PDF с дополнительными настройками и вернуть результат в ответе.
 
-[ПОЛУЧИТЬ /cells/{имя}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API позволяет преобразовать файл MS Excel в файл PDF с дополнительными настройками и сохранить результат в ответе.
+Эти API — [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook), [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) и [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) — определяют публично доступный программный интерфейс и позволяют выполнять REST-взаимодействия непосредственно из веб-браузера.
 
- Эти[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook), [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook), [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API определяют общедоступный программный интерфейс и позволяют осуществлять REST-взаимодействие непосредственно из веб-браузера.
+Дополнительные варианты преобразования доступны на странице [Параметры сохранения](/cells/save-options/).

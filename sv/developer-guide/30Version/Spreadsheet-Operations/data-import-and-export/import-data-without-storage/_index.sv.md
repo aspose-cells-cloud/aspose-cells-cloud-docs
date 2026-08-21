@@ -1,88 +1,107 @@
-﻿---
-title: Importera data utan att använda lagring
-second_title: Documen
-linktitle: Importera data utan lagring
-type: docs
-url: /sv/import/without-using-storage/ 
-aliases: [/import-data-in-excel-worksheet-without-using-storage/]
-keywords: REST API,  spreadsheets, excel, Import
-description: Cells.Cloud API för import av Excel-filer
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Importera data utan att använda lagringsutrymme
 ---
-Excel-dataimport är en komplex process. Många faktorer bidrar till komplexiteten och bör därför beaktas under exportprocessen. Möjligheten att importera olika format och datatyper till filen med exakt professionell kvalitet är en av de viktigaste funktionerna i Aspose.Cells Cloud.
+title: "Importera data utan att använda lagring – Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Importera data utan lagring"
+type: docs
+url: /import/without-using-storage/
+aliases: [/import-data-in-excel-worksheet-without-using-storage/]
+keywords: "Aspose.Cells, molntjänst, importera data utan lagring, Excel-import-API, REST-import"
+description: "Lär dig hur du importerar data till en Excel-arbetsbok utan att använda lagring med Aspose.Cells Cloud API. Inkluderar begärande format, parametrar, cURL-exempel, SDK-kod och felhantering."
+weight: 10
+ArticleTitle: "Importera data utan att använda lagring – Aspose.Cells Cloud API"
+---
 
-Denna REST API indikerar `import data` i en Excel-fil.
+Excel-dataimport kan vara komplex eftersom många faktorer påverkar resultatet. Alla dessa faktorer bör beaktas under **import**-processen. Aspose.Cells Cloud gör det enkelt att importera olika format och datatyper till en Excel-fil med kvalitet på professionellt nivå.
 
-## RSET API
+Detta REST-API importerar **data** till en Excel-fil.
 
-```bash
+## PostImportData API
 
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-
 ```
 
-**Begäranparametrarna är:**
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| fil| fil| formulärData| Fil att ladda upp|
-| Importalternativ| Importalternativ| HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-**Parametrarna för importdataalternativ** beskrivs i[referenslänken](/cells/sv/import/#import-data-option-parameter).
+### **Begärparametrar:**
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+| Parameter_name | Typ           | Plats      | Beskrivning                                                                                                                                      |
+| -------------- | ------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| file           | fil           | formData   | Den Excel-fil som ska laddas upp.                                                                                                                |
+| ImportOption   | ImportOption  | JSON-body  | JSON-objekt som definierar vilken data som ska importeras, dess typ (t.ex. `IntArray`, `DoubleArray`, `StringArray`) och placering i kalkylbladet. |
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+**ImportOption**-parametrarna beskrivs i referensen för **ImportData-alternativ** [/cells/import/#import-data-option-parameter](/cells/import/#import-data-option-parameter).
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Förutsättningar:**  
+En giltig JWT-token måste skapas på förhand, och filstorleken får inte överskrida tjänstens gräns (vanligtvis 100 MB). Stödda filformat inkluderar XLS, XLSX, CSV och ODS. Se till att lämpligt SDK är installerat om du föredrar programmatisk åtkomst.
+
+### Svar
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod  | Betydelse                   | Beskrivning                                                                 |
+|------|-----------------------------|-----------------------------------------------------------------------------|
+| 200  | OK                          | Filter har tillämpats framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400  | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds).           |
+| 401  | Auktorisering saknas        | Ogiltig eller saknad JWT-token.                                             |
+| 413  | För stor nyttoinformation   | Den uppladdade filen överskrider storleksgränsen.                          |
+| 500  | Internt serverfel           | Oväntat serverfel.                                                          |
+
+**Anteckningar:**  
+När du skickar begäran ställs `Content-Type: multipart/form-data` automatiskt in av `-F`-flaggan. För stora nyttolastar kan du överväga att komprimera data innan import och implementera återförsökslogik för tillfälliga fel.
+
+## Hur man använder PostImportData API med SDK:er
+
+### PostImportData API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/import" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' \
--F 'ImportOption={\"Data\":[1,2,4],\"DestinationWorksheet\":\"Sheet1\",\"FirstRow\":1,\"FirstColumn\":2,\"IsVertical\":true,\"IsInsert\":true,\"importDataType\":\"IntArray\"}'
+curl -v "https://api.aspose.cloud/v3.0/cells/import" \
+  -X POST \
+  -H "Authorization: Bearer <jwt_token>" \
+  -F "file=@file.xlsx" \
+  -F "ImportOption={\"Data\":[1,2,4],\"DestinationWorksheet\":\"Sheet1\",\"FirstRow\":1,\"FirstColumn\":2,\"IsVertical\":true,\"IsInsert\":true,\"ImportDataType\":\"IntArray\"}"
 ```
+
+*`-F`-flaggan ställer automatiskt in `Content-Type: multipart/form-data`.*  
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Status":"OK",
+  "Code":200
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+### Använd Aspose.Cells Cloud SDK:er
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå och låter dig fokusera på dina projektrapporter. Se i [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med hjälp av olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

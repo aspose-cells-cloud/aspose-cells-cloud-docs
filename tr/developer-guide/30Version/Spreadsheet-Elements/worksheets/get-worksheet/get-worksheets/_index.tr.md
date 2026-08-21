@@ -1,102 +1,75 @@
-﻿---
-title: Çalışma sayfasını al
-second_title: Documen
-linktitle: Al
-type: docs
-url: /tr/worksheets/get-all/
-aliases: [/get-worksheet-count/]
-keywords: Get worksheets description from an Excel workbook
-description: Aspose.Cells Cloud REST API, Excel çalışma kitabından çalışma sayfası açıklamalarını almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Çalışma sayfalarını al
 ---
-Bu REST API, `get worksheets information`'i gösterir.
+title: "Tüm Çalışma Sayfalarını Al"
+second_title: "Belge"
+linktitle: "Tümü"
+type: docs
+url: /worksheets/get-all/
+aliases: [/get-worksheet-count/]
+keywords: "Aspose.Cells, Bulut API, Çalışma Sayfalarını Al, Excel, REST, SDK"
+description: "Aspose.Cells Cloud REST API (v3.0) aracılığıyla bir Excel çalışma kitabındaki çalışma sayfalarının listesini alın. cURL örneği, SDK kod parçacıkları ve yanıt formatını içerir."
+weight: 10
+---
 
-## RSET API
+Bu REST API, bir çalışma kitabında bulunan çalışma sayfaları hakkında bilgi verir.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 ```
 
-İstek parametreleri şunlardır:
+### **İstek Parametreleri**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı  | Tür    | Konum | Açıklama                             |
+| -------------- | ------ | ----- | ------------------------------------ |
+| name           | string | path  | Excel belgesinin adı.                |
+| folder         | string | query | Belgeyi içeren klasör.               |
+| storageName    | string | query | Kullanılacak depo adı.               |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells Cloud hizmetlerine erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, çalışma sayfalarını almak için bir GET isteğini göstermektedir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Worksheets": {
-
     "WorksheetList": [
-
       {
-
         "link": {
-
           "Href": "/Sheet1",
-
           "Rel": "self"
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/Sheet2",
-
           "Rel": "self"
-
         }
-
       }
-
     ],
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets",
       "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
 ```
 
@@ -104,11 +77,31 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
 
 {{< /tabs >}}
 
+## Hata Yönetimi
+
+Bu uç noktanın döndürdüğü tipik HTTP durum kodları:
+
+| Kod  | Anlamı               | Açıklama                                  |
+| ---- | -------------------- | ----------------------------------------- |
+| 400  | Hatalı İstek         | Gerekli parametre eksik (örn. `name`).    |
+| 401  | Yetkisiz             | Geçersiz veya eksik JWT belirteci.        |
+| 404  | Bulunamadı           | Belirtilen çalışma kitabı mevcut değil.   |
+| 500  | Sunucu İç Hatası     | Beklenmeyen sunucu durumu.                |
+
+Hata yanıtları JSON formatında döndürülür; örneğin:
+
+```json
+{
+  "Code": "401",
+  "Message": "Geçersiz erişim belirteci."
+}
+```
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, düşük seviye ayrıntıları yöneterek projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposunu](https://github.com/aspose-cells-cloud) kontrol edin.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak Aspose.Cells web hizmetlerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

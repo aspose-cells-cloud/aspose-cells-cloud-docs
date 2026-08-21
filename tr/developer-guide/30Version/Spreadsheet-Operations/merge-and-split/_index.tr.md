@@ -1,17 +1,20 @@
-﻿---
-title: Excel dosyalarını birleştir ve böl
-second_title: Documen
-linktitle: Birleştir ve Böl
+---
+title: "Excel Dosyalarını Birleştir ve Bölümlere Ayır"
+second_title: "Dokümantasyon"
+linktype: "Birleştir ve Böl"
 type: docs
 url: /tr/merge-and-split/
-keywords: Merge Excel Files,Combine Excel Sheets,Join Excel Spreadsheets,Merge Multiple Excel Files,Split Excel File,Excel Sheet Separator,Excel Workbook Splitte
-description: Aspose.Cells Cloud REST API, Excel dosyasında birleştirme ve ayırma ile çalışmayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 32
-kwords: Excel Dosyayı Birleştir, Excel Sayfayı Birleştir, Excel Elektronik Tabloyu Birleştir, Birden Fazla Excel Dosyayı Birleştir, Excel Dosyasını Böl, Excel Sayfa Ayırıcı, Excel Çalışma Kitabı Ayırıcı
+keywords: "Aspose.Cells Cloud, Excel dosyalarını birleştir, Excel çalışma kitabını böl, Excel API"
+description: "Aspose.Cells Cloud REST API'sini kullanarak birden fazla Excel çalışma kitabını tek bir dosyada birleştirmenin ve bir çalışma kitabını ayrı dosyalara bölmenin nasıl yapıldığını öğrenin. SDK'lar Android, .NET, Go, Java, Node.js, Perl, PHP, Python, Ruby ve Swift için mevcuttur."
+ArticleTitle: "Excel Dosyalarını Birleştir ve Bölümlere Ayır – Aspose.Cells Cloud Dokümantasyonu"
 ---
-## Excel dosyalarıyla birleştir ve böl
 
-- [Birden fazla Excel dosyası nasıl bir Excel dosyasına birleştirilir.](/cells/tr/merge-multi-files-into-excel/)
-- [Excel Çalışma Kitaplarını başka bir Excel dosyasıyla nasıl birleştirebilirim?](/cells/tr/merge-an-excel-file-into-the-excel-file/)
-- [Çoklu Excel dosyaları nasıl bölünür.](/cells/tr/split-multi-excel-files/)
-- [Excel çalışma kitabını birden fazla dosyaya nasıl bölebilirim?](/cells/tr/split-an-excel-file-to-multi-files/)
+## Excel dosyalarıyla birleştirme ve bölme
+
+Aşağıdaki kılavuzlar, Aspose.Cells Cloud kullanarak birkaç Excel çalışma kitabını tek bir dosyada birleştirmenin veya bir çalışma kitabını birden fazla dosyaya bölmenin nasıl yapılacağını göstermektedir.
+
+- **Birden fazla dosyayı birleştir:** [Birden fazla Excel dosyasını tek bir çalışma kitabında nasıl birleştirebilirsiniz](/cells/merge-multi-files-into-excel/) – Birden fazla çalışma kitabını tek birleştirilmiş bir çalışma kitabında birleştirin.  
+- **Mevcut çalışma kitabına ekle:** [Bir Excel çalışma kitabını başka bir çalışma kitabına nasıl birleştirebilirsiniz](/cells/merge-an-excel-file-into-the-excel-file/) – Bir çalışma kitabının içeriğini mevcut bir çalışma kitabına ekleyin.  
+- **Birden fazla dosyayı böl:** [Birden fazla Excel dosyasını nasıl bölebilirsiniz](/cells/split-multi-excel-files/) – Bir dizi çalışma kitabını ayrı dosyalara ayırın.  
+- **Birden fazla dosyaya böl:** [Bir Excel çalışma kitabını birden fazla dosyaya nasıl bölebilirsiniz](/cells/split-an-excel-file-to-multi-files/) – Tek bir çalışma kitabını birkaç daha küçük çalışma kitabına bölün.  
+---

@@ -1,144 +1,128 @@
-﻿---
-title: احصل على جميع الصور في ورقة عمل Excel
-second_title: Documen
-linktitle: احصل على ال
-type: docs
-url: /ar/pictures/get-all/
-aliases: [/get-picture-from-a-worksheet/]
-keywords: Get all pictures in an Excel worksheet
-description: يدعم Cloud REST Aspose.Cells الحصول على جميع الصور في ورقة عمل Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 10
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، احصل على جميع الصور في ورقة عمل Excel
 ---
-يشير هذا REST API إلى `get` جميع معلومات الصور من ورقة عمل Excel.
+title: "الحصول على جميع الصور في ورقة عمل Excel"
+second_title: "مستند"
+linktitle: "الحصول على الكل"
+type: docs
+url: /pictures/get-all/
+aliases: [/get-picture-from-a-worksheet/]
+keywords: "Aspose.Cells Cloud، ورقة عمل Excel، واجهة برمجة تطبيقات الصور، الحصول على جميع الصور، واجهة برمجة التطبيقات عبر الويب، وحدات التطوير البرمجي"
+description: "استرجاع جميع كائنات الصور من ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud عبر الويب."
+ArticleTitle: "الحصول على جميع الصور في ورقة عمل Excel - واجهة برمجة تطبيقات Aspose.Cells Cloud"
+weight: 10
+---
 
-## RSET API
+تسترجع هذه واجهة برمجة التطبيقات REST جميع معلومات الصور من ورقة عمل Excel.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
- 
+**المتطلبات الأساسية**  
+قبل استدعاء هذه النقطة النهائية، تأكد من وجود ما يلي:
+
+- رمز وصول JWT صالح لـ Aspose Cloud.  
+- تحميل ملف Excel المستهدف إلى مساحة التخزين المحددة.  
+- اسم مساحة التخزين الصحيح (في حال استخدام مساحة تخزين مخصصة).  
+- اسم ورقة العمل التي تحتوي على الصور.
+
+## واجهة برمجة التطبيقات GetWorksheetPictures
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
-معلمات الطلب هي:
+**ملاحظة:** استخدم بروتوكول HTTPS (TLS 1.2 أو إصدار أحدث) عند استدعاء واجهة برمجة التطبيقات، وقم بتضمين رمز JWT صالح في رأس `Authorization`.
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+### **الأمان والمصادقة**
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPictures) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تُعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">المصادقة باستخدام رمز JWT</a>.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### **معلَمات الطلب**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| اسم المعلَمة | النوع | الموقع | الوصف |
+| ------------ | ------ | -------- | ---------------------------------------------- |
+| name | string | path | اسم ملف Excel. |
+| sheetName | string | path | اسم ورقة العمل التي تحتوي على الصور. |
+| folder | string | query | مسار المجلد الذي يخزن فيه الملف. |
+| storageName | string | query | اسم خدمة مساحة التخزين. |
+
+### استجابات الأخطاء
+
+| رمز HTTP | الوصف |
+| --------- | ------------------------------------------------------------------------------ |
+| 401 | غير مصرح به – نقص أو عدم صلاحية الرمز. |
+| 404 | غير موجود – الملف أو ورقة العمل أو فهرس قطع الصف المحددة غير موجودة. |
+| 400 | طلب خاطئ – بنية الطلب غير صحيحة أو المعلمات غير صالحة. |
+| 500 | خطأ داخلي في الخادم – واجهت الخدمة حالة غير متوقعة. |
+
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPictures) واجهة برمجة تطبيقات متاحة علنًا، ويتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات Aspose.Cells عبر الويب. يوضح المثال التالي كيفية إجراء المكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Pictures": {
-
     "PictureList": [
-
       {
-
         "link": {
-
           "Href": "/0",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/1",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/2",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       }
-
     ],
-
     "link": {
-
       "Href": "/test.xlsx/worksheets/Sheet2/pictures",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+**استجابة ناجحة** – تُعيّد المكالمة الناجحة رمز HTTP 200 مع حُملة JSON تحتوي على كائن `Pictures` يسرد رابط المورد لكل صورة.
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+## عائلة وحدات تطوير البرمجي السحابية
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+استخدام وحدات التطوير البرمجي (SDK) هو أفضل طريقة لتسريع عملية التطوير. تتعامل وحدات التطوير البرمجي مع التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بوحدات تطوير البرمجي الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الكود التالية كيفية إجراء المكالمات إلى خدمات Aspose.Cells عبر الويب باستخدام مختلف وحدات التطوير البرمجي:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -191,3 +175,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 {{< /tab >}}
 
 {{< /tabs >}}
+
+يمكنك تنزيل وحدات التطوير البرمجي مباشرةً من مديري الحزم الخاصة بها (مثل NuGet لـ .NET، وMaven Central لـ Java، وComposer لـ PHP، وnpm لـ Node.js، وPyPI لـ Python، وCPAN لـ Perl، وGo modules لـ Go).  
+
+*انظر أيضًا:* إضافة صورة، حذف صورة، تحديث خصائص الصورة.

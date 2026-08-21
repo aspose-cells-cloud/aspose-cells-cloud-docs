@@ -1,86 +1,118 @@
-﻿---
-title: Supprimer un filtre de date
-second_title: Documen
-linktitle: Supprimer le filtre de date
-type: docs
-url: /fr/autofilter/delete-date-filter/
-aliases: [/remove-a-date-filter/,/autofilter/delete-a-date-filter/]
-weight: 100
-keywords: Delete a date filter on an Excel worksheet
-description: Le Cloud Aspose.Cells et le Cloud API permettent de supprimer un filtre de date sur une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Supprimer un filtre de date
 ---
-Ce REST API indique de supprimer un filtre de date sur une feuille de calcul Excel.
+title: "Supprimer un filtre de date – Aspose.Cells Cloud"
+second_title: "Document"
+linktitle: "Supprimer un filtre de date"
+type: docs
+url: /autofilter/delete-date-filter/
+aliases:
+  - /remove-a-date-filter/
+  - /autofilter/delete-a-date-filter/
+weight: 100
+keywords: "Aspose.Cells, supprimer un filtre de date, filtre automatique Excel, API REST, SDK"
+description: "Découvrez comment supprimer un filtre de date à partir d'une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’endpoint, les paramètres, un exemple cURL HTTPS, la charge utile de réponse et des extraits de code SDK."
+ArticleTitle: "Supprimer un filtre de date – Documentation de l’API Aspose.Cells Cloud"
+---
 
-## RSET API
+Cette API REST supprime un filtre de date sur une feuille Excel.
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
- 
+**Prérequis :** Assurez-vous d’avoir un jeton JWT valide, que le classeur est stocké dans le stockage Aspose Cloud et que vous disposez des autorisations appropriées pour modifier la feuille.
+
+## API DeleteWorksheetDateFilter
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin||
-| nom de la feuille| chaîne| chemin||
-| index de champ| entier| requête||
-| Type de regroupement date/heure| chaîne| requête||
-| année| entier| requête|0 |
-| mois| entier| requête|0 |
-| jour| entier| requête|0 |
-| heure| entier| requête|0 |
-| minute| entier| requête|0 |
-| deuxième| entier| requête|0 |
-| dossier| chaîne| requête||
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API REST Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetDateFilter) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Paramètres de la requête
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom du paramètre     | Type    | Emplacement | Description                                                                                     |
+|----------------------|---------|-------------|-------------------------------------------------------------------------------------------------|
+| name                 | string  | chemin      | Nom du fichier Excel.                                                                          |
+| sheetName            | string  | chemin      | Nom de la feuille de calcul.                                                                   |
+| fieldIndex           | integer | requête     | Index à base zéro de la colonne à laquelle le filtre est appliqué.                             |
+| dateTimeGroupingType | string  | requête     | Type de regroupement pour le filtre de date (par exemple, Year, Month, Day).                   |
+| year                 | integer | requête     | Composante année du filtre (valeur par défaut : 0).                                             |
+| month                | integer | requête     | Composante mois du filtre (valeur par défaut : 0).                                              |
+| day                  | integer | requête     | Composante jour du filtre (valeur par défaut : 0).                                              |
+| hour                 | integer | requête     | Composante heure du filtre (valeur par défaut : 0).                                             |
+| minute               | integer | requête     | Composante minute du filtre (valeur par défaut : 0).                                            |
+| second               | integer | requête     | Composante seconde du filtre (valeur par défaut : 0).                                           |
+| folder               | string  | requête     | Chemin du dossier dans le stockage où le fichier est situé.                                     |
+| storageName          | string  | requête     | Nom du stockage Aspose Cloud.                                                                  |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Réponse**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                                                 |
+|------|-----------------------------|-----------------------------------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT non valide ou manquant.                                           |
+| 413  | Charge utile trop volumineuse | Le fichier téléchargé dépasse la limite de taille.                         |
+| 500  | Erreur interne du serveur   | Erreur serveur inattendue.                                                  |
+
+L’API renvoie des codes de statut HTTP standard indiquant le résultat de l’opération de suppression.
+
+| Code | Signification               | Description                                                                 |
+|------|-----------------------------|-----------------------------------------------------------------------------|
+| 200  | OK                          | Le filtre de date a été supprimé avec succès ; la réponse contient l’état de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT non valide ou manquant.                                           |
+| 413  | Charge utile trop volumineuse | Le fichier téléchargé dépasse la limite de taille.                         |
+| 500  | Erreur interne du serveur   | Erreur serveur inattendue.                                                  |
+
+## Comment utiliser l’API DeleteWorksheetDateFilter avec les SDK
+
+### Spécification de l’API DeleteWorksheetDateFilter
+
+La <a href="https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetDateFilter" rel="noopener noreferrer">spécification OpenAPI</a> définit une interface de programmation accessible publiquement et vous permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?fieldIndex=0&dateTimeGroupingType=Year&year=1920" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?fieldIndex=0&dateTimeGroupingType=Year&year=1920" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
+### Utiliser les SDK Aspose.Cells Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+Utiliser un SDK est la meilleure façon d’accélérer le développement. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

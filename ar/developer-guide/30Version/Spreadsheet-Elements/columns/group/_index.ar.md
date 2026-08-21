@@ -1,76 +1,120 @@
-﻿---
-title: تجميع الأعمدة في ورقة عمل Excel
-second_title: Documen
-linktitle: جرو
-type: docs
-url: /ar/columns/group/
-aliases: [/group-columns-in-an-excel-worksheet/, /group-columns-in-excel-worksheet/]
-keywords: Group column on an Excel workshee
-description: يدعم Cloud REST Aspose.Cells تجميع الأعمدة في ورقة عمل Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 60
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تجميع الأعمدة في ورقة عمل Excel
 ---
-يشير هذا REST API إلى أعمدة ورقة عمل المجموعة.
+title: "تجميع الأعمدة – وثائق واجهة Aspise.Cells Cloud API"
+description: "تجميع أعمدة ورقة عمل في ملف Excel باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يشمل بناء الجملة للطلب، المعلمات، أمثلة cURL و SDK، وتفاصيل الاستجابة."
+keywords: "Aspose.Cells، تجميع الأعمدة، واجهة Excel API، REST، SDK سحابي"
+weight: 60
+type: docs
+aliases:
+  - /group-columns-in-an-excel-worksheet/
+  - /group-columns-in-excel-worksheet/
+---
 
-## RSET API
+# تجميع الأعمدة في ورقة عمل Excel
+
+**إصدار API:** v3.0  
+**العملية:** `PostGroupWorksheetColumns` – تجميع أعمدة ورقة العمل داخل ورقة العمل.
+
+---
+
+## نظرة عامة
+
+تتيح لك هذه الواجهة البرمجية تجميع نطاق من الأعمدة داخل ورقة عمل. يمكن إظهار الأعمدة المجمّعة أو إخفاؤها، مما يمكّنك من إنشاء أقسام قابلة للطيّ تشبه تلك الموجودة في Microsoft Excel.
+
+---
+
+## المتطلبات الأساسية
+
+- **رمز وصول JWT** صالح تم الحصول عليه من خدمة مصادقة Aspose Cloud.  
+- يجب أن يكون ملف المصنف مخزنًا في مكان يمكن لـ Aspose.Cells Cloud الوصول إليه (التخزين الافتراضي أو اسم تخزين مخصص).  
+- إصدار SDK المطلوب (إذا كنت تستخدم SDK): أحدث إصدار يدعم إصدار API **v3.0**.  
+
+---
+
+## المصادقة
+
+تتطلب جميع الطلبات مصادقة باستخدام **رمزBearer**.
+
+```http
+Authorization: Bearer <access_token>
+```
+
+للحصول على تفاصيل حول كيفية الحصول على رمز، راجع [دليل مصادقة JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+---
+
+## طلب HTTP
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
+```
+
+| المعلمة | الموقع | الإجباري | الوصف |
+|----------|---------|----------|-------------|
+| `name` | المسار | نعم | اسم ملف المصنف (مثل `test.xlsx`). |
+| `sheetName` | المسار | نعم | اسم ورقة العمل التي تحتوي على الأعمدة المراد تجميعها. |
+| `firstIndex` | الاستعلام | نعم | المؤشر البادئ من الصفر (zero-based index) للعمود الأول المُراد تضمينه في المجموعة. |
+| `lastIndex` | الاستعلام | نعم | المؤشر البادئ من الصفر (zero-based index) للعمود الأخير المُراد تضمينه في المجموعة. |
+| `hide` | الاستعلام | لا | إذا كانت القيمة `true`، فستُخفى الأعمدة المجمّعة؛ وإلا ستظل ظاهرة. |
+| `folder` | الاستعلام | لا | المسار إلى المجلد الذي يحتوي على المصنف. |
+| `storageName` | الاستعلام | لا | اسم خدمة التخزين التي يوجد فيها الملف. |
+
+---
+
+## مثال على الطلب (cURL)
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
- 
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
 ```
 
-معلمات الطلب هي:
+> **ملاحظة:** يستخدم الطلب **HTTPS** لضمان تشفير الاتصال.
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| الفهرس الأول| عدد صحيح| استفسار|مؤشر العمود الأول الذي سيتم تشغيله.|
-| الفهرس الأخير| عدد صحيح| استفسار| آخر مؤشر العمود الذي سيتم تشغيله.|
-| يخفي| منطقي| استفسار| حالة الأعمدة المرئية|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+---
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+## الاستجابة
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### نجاح (200)
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| الحقل | النوع | الوصف |
+|--------|--------|-------------|
+| `Code` | عدد صحيح | رمز حالة HTTP (`200`). |
+| `Status` | نص | الحالة النصية للعملية (`OK`). |
 
-{{< tab tabNum="11" >}}
+**مثال**
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" -H "accept: application/json"
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```java
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+### خطأ (مثل 400 Bad Request)
 
-{{< /tabs >}}
+| الحقل | النوع | الوصف |
+|--------|--------|-------------|
+| `Code` | عدد صحيح | رمز حالة HTTP (`400`، `401`، `404`، `500`، …). |
+| `Status` | نص | الحالة النصية (`Error`). |
+| `ErrorMessage` | نص | وصف قابل للقراءة للخطأ. |
+| `ErrorCode` | نص | مُعرّف برمجي للخطأ. |
 
-## عائلة SDK السحابية
+**مثال – طلب غير صالح**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+```json
+{
+  "Code": 400,
+  "Status": "Error",
+  "ErrorMessage": "مؤشر عمود غير صالح.",
+  "ErrorCode": "InvalidParameter"
+}
+```
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+---
+
+## أمثلة باستخدام SDK
+
+تُظهر المقاطع التالية كيفية استدعاء عملية **تجميع أعمدة ورقة العمل** باستخدام SDKs المدعومة.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +167,27 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---
+
+## ملاحظات
+
+- **سلوك التجميع:** تُنشئ الواجهة مجموعة أعمدة يمكن توسيعها أو طيّها داخل Excel. وعند تعيين `hide=true`، تُطيّ المجموعة فورًا.  
+- **العدّ من الصفر (Zero-based indexing):** يبدأ كل من `firstIndex` و `lastIndex` من **0**؛ أول عمود في ورقة العمل يحمل المؤشر 0.  
+- **اعتبارات التخزين:** إذا كان المصنف موجودًا في تخزين غير افتراضي، فقم بتوفير معلمتَي الاستعلام `folder` و `storageName`.  
+
+---
+
+## انظر أيضًا
+
+- [المصادقة – باستخدام رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
+- [مواصفات OpenAPI لتجميع أعمدة ورقة العمل](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns)  
+- [SDKs لـ Aspose.Cells Cloud (GitHub)](https://github.com/aspose-cells-cloud)  
+- [تجميع الصفوف في ورقة عمل Excel](/rows/group/)  
+
+---
+
+> *الرسم التوضيحي:* ![لقطة شاشة تُظهر أعمدة مجمّعة في ورقة عمل Excel](./images/group-columns.png){: .img-fluid alt="لقطة شاشة تُظهر أعمدة مجمّعة في ورقة عمل Excel" }
+
+*يجب استبدال صورة النموذج أعلاه بلقطة شاشة فعلية تُظهر النتيجة البصرية لتجميع الأعمدة.*
+---

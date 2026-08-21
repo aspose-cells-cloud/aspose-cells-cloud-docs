@@ -1,350 +1,156 @@
-﻿---
-title: Excel Çalışma Sayfasında Hücre Stilini Değiştirme
-type: docs
-url: /tr/change-cell-style-in-excel-worksheet/
-weight: 30
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel Çalışma Sayfasında Hücre Stilini Değiştirme
 ---
-Bu REST API, Excel dosyasındaki `cell style` güncellemesini gösteriyor.
+title: "Excel Çalışma Sayfasında Hücre Stilini Değiştirme"
+type: docs
+url: /change-cell-style-in-excel-worksheet/
+weight: 30
+keywords:
+  - Aspose.Cells
+  - Aspose.Cells Cloud
+  - Excel
+  - Hücre Stili
+  - REST API
+  - Bulut SDK'sı
+  - cURL
+  - hücre stili güncelleme
+  - Excel API
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki belirli bir hücrenin stilini nasıl güncelleyeceğinizi öğrenin; örnek istekleri, yanıtları ve SDK kod parçacıklarını içerir."
+ArticleTitle: "Excel Çalışma Sayfasında Hücre Stilini Değiştirme – Aspose.Cells Cloud API Kılavuzu"
+---
 
-## RSET API
+Bu REST API, bir Excel dosyasının **hücre stili**ni günceller.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
- 
+## PostUpdateWorksheetCellStyle API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabı adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| hücreAdı| sicim| yol| Hücre adı.|
-| stil|| vücut| güncelleme stili ayarlarıyla.|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetCellStyle) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı | Tür   | Konum | Açıklama                                           |
+|---------------|-------|-------|----------------------------------------------------|
+| name          | string | path  | Çalışma kitabının dosya adı.                       |
+| sheetName     | string | path  | Çalışma sayfasının adı.                            |
+| cellName      | string | path  | Hedef hücre (örneğin **A1**).                      |
+| style         | object | body  | Hücreye uygulanacak stil ayarlarını tanımlayan JSON nesnesi. |
+| folder        | string | query | Çalışma kitabını içeren klasör.                    |
+| storageName   | string | query | Çalışma kitabının saklandığı depo adı.             |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Yanıt**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                           |
+|-----|-----------------------------|----------------------------------------------------|
+| 200 | Tamam (OK)                  | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Geçersiz İstek (Bad Request) | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Yetkisiz (Unauthorized)     | Geçersiz veya eksik JWT belirteci.                 |
+| 413 | İçerik Çok Büyük (Payload Too Large) | Yüklenecek dosya boyut sınırını aşıyor.            |
+| 500 | İç Sunucu Hatası (Internal Server Error) | Beklenmeyen sunucu hatası.                        |
+
+## PostUpdateWorksheetCellStyle API'sini SDK'larla Nasıl Kullanılır
+
+### PostUpdateWorksheetCellStyle API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetCellStyle), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için **cURL** komut satırı aracını kullanabilirsiniz. `<jwt token>` ifadesini, Aspose Cloud kimlik doğrulama uç noktasından elde edilen geçerli bir OAuth 2.0 erişim belirteciyle değiştirin.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/cells/A1/style" \
+curl -v "https://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/cells/A1/style" \
 -d '{ "BackgroundThemeColor": { "ColorType": "Text2", "Tint": 1 } }' \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-
   "Style": {
-
     "Font": {
-
-      "Color": {
-
-        "A": 255,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
       "DoubleSize": 11,
-
       "IsBold": false,
-
       "IsItalic": false,
-
       "IsStrikeout": false,
-
       "IsSubscript": false,
-
       "IsSuperscript": false,
-
       "Name": "Calibri",
-
       "Size": 11,
-
       "Underline": "None"
-
     },
-
     "Name": null,
-
     "CultureCustom": null,
-
     "Custom": "",
-
-    "BackgroundColor": {
-
-      "A": 0,
-
-      "R": 0,
-
-      "G": 0,
-
-      "B": 0
-
-    },
-
-    "ForegroundColor": {
-
-      "A": 0,
-
-      "R": 0,
-
-      "G": 0,
-
-      "B": 0
-
-    },
-
+    "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+    "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
     "IsFormulaHidden": false,
-
     "IsDateTime": false,
-
     "IsTextWrapped": false,
-
     "IsGradient": false,
-
     "IsLocked": true,
-
     "IsPercent": false,
-
     "ShrinkToFit": false,
-
     "IndentLevel": 0,
-
     "Number": 0,
-
     "RotationAngle": 0,
-
     "Pattern": "None",
-
     "TextDirection": "Context",
-
     "VerticalAlignment": "Bottom",
-
     "HorizontalAlignment": "General",
-
     "BorderCollection": [
-
-      {
-
-        "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
-        "BorderType": "BottomBorder"
-
-      },
-
-      {
-
-        "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
-        "BorderType": "DiagonalDown"
-
-      },
-
-      {
-
-        "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
-        "BorderType": "DiagonalUp"
-
-      },
-
-      {
-
-        "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
-        "BorderType": "Horizontal"
-
-      },
-
-      {
-
-        "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
-        "BorderType": "LeftBorder"
-
-      },
-
-      {
-
-        "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
-        "BorderType": "RightBorder"
-
-      },
-
-      {
-
-        "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
-        "BorderType": "TopBorder"
-
-      },
-
-      {
-
-        "LineStyle": "None",
-
-        "Color": {
-
-          "A": 255,
-
-          "R": 0,
-
-          "G": 0,
-
-          "B": 0
-
-        },
-
-        "BorderType": "Vertical"
-
-      }
-
+      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "BottomBorder" },
+      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "DiagonalDown" },
+      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "DiagonalUp" },
+      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "Horizontal" },
+      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "LeftBorder" },
+      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "RightBorder" },
+      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "TopBorder" },
+      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "Vertical" }
     ],
-
     "BackgroundThemeColor": null,
-
     "ForegroundThemeColor": null,
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/cells/A1/style",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/cells/A1/style",
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK'larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, API'ye karşı hızlıca geliştirme yapmanın en hızlı yoludur. SDK, düşük seviye detayları soyutlayarak iş mantığınıza odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK'lar kullanılarak Aspose.Cells web hizmetlerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -397,3 +203,8 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Ayrıca bakınız:**  
+- [Hücre Stilini Al](https://docs.aspose.cloud/cells/get-cell-style/) – Bir hücrenin mevcut stilini alın.  
+- [Birden Fazla Hücre Stilini Güncelle](https://docs.aspose.cloud/cells/update-multiple-cells-style/) – Tek bir istekte bir hücre aralığına stil uygulayın.  
+---

@@ -1,35 +1,36 @@
-﻿---
-title: "Aspose.Cells مجموعة SDK السحابية لنظام Go: التحويل، والدمج، والتقسيم، والحماية، والبحث، والاستبدال، والمزيد"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for Go: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells مجموعة تطوير البرامج السحابية لنظام G
-type: docs
-url: /ar/available-sdks/aspose-cells-cloud-go/
-description: "توفر مجموعة SDK السحابية Aspose.Cells لنظام Go قوة حقيقية عبر الأنظمة الأساسية: يوفر استيراد واحد للمطورين Windows وLinux وmacOS نفس القدرة على إنشاء وتحويل ودمج وتقسيم وحماية وحذف الصفوف/الأعمدة الفارغة والتلاعب بكل كائن Excel - لا يتطلب تثبيت Office ولا تعديلات خاصة بالمنصة"
-weight: 30
-kwords: مجموعة أدوات تطوير البرامج Go، مجموعة أدوات تطوير البرامج Excel لـ GoLang، مجموعة أدوات تطوير البرامج السحابية لـ Go، REST، مخطط، جدول محوري، كائن جدول/قائمة، تحويل جدول بيانات، PDF، CSV، JSON، Markdown، دمج، تقسيم، حماية، بحث، استبدال
 ---
-مجموعة تطوير البرامج مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا. يمكنك الوصول إليها[كود مصدر مكتبة Go لـ Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go).
+title: "Aspose.Cells Cloud SDK for Go: التحويل، الدمج، التجزئة، الحماية، البحث، الاستبدال، والمزيد"  
+second_title: "مستند"  
+ArticleTitle: "Aspose.Cells Cloud SDK for Go: التحويل، الدمج، التجزئة، الحماية، البحث، الاستبدال، والمزيد"  
+linktitle: "Aspose.Cells Cloud SDK for Go"  
+type: docs  
+url: /available-sdks/aspose-cells-cloud-go/  
+description: "تعرّف على كيفية تثبيت واستيراد واستخدام Aspose.Cells Cloud SDK for Go. دليل خطوة بخطوة مع أمثلة كود ومصادقة وأفضل الممارسات."  
+weight: 30  
+keywords: "Aspose.Cells Cloud Go SDK، Go Excel API، مثال Aspose Cells Go"  
+---  
 
-# **كيفية استخدام مكتبة Go من Aspose.Cells Cloud**
+الحزمة مفتوحة المصدر ومُرخَّصة بموجب ترخيص MIT. يمكنك الوصول إلى كود مصدر مكتبة Go الخاصة بـ Aspose.Cells Cloud [هنا](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go).
 
-مجموعة تطوير البرامج السحابية Aspose.Cells للغة Go هي مكتبة فعّالة تُمكّن المطورين من التعامل مع ملفات Microsoft Excel ومعالجتها باستخدام لغة برمجة Go. باستخدام هذه المجموعة، يُمكنك إنشاء مستندات Excel وتحريرها وتحويلها في السحابة، دون الحاجة إلى تثبيت برامج أو تبعيات إضافية على جهازك المحلي.
+# **كيفية استخدام مكتبة Aspose.Cells Cloud بلغة Go**
 
-في هذه المقالة، سنستكشف كيفية استخدام Aspose.Cells Cloud SDK for Go لأداء بعض المهام الشائعة، مثل إنشاء مصنف Excel جديد، وإدراج البيانات في الخلايا، وحفظ المصنف المعدل في السحابة.
+تُعتبر مكتبة Aspose.Cells Cloud SDK for Go مكتبة قوية تتيح للمطورين تنفيذ عمليات على ملفات مايكروسوفت إكسل وإدارتها باستخدام لغة برمجة Go. وباستخدام هذه الحزمة، يمكنك إنشاء وتعديل وتحويل مستندات إكسل في السحابة، دون الحاجة لتثبيت برامج أو تبعيات إضافية على جهازك المحلي.
 
-## **ابدء**
+في هذه المقالة، سنستعرض كيفية استخدام Aspose.Cells Cloud SDK for Go لأداء بعض المهام الشائعة، مثل إنشاء ملف إكسل جديد، وإدراج بيانات داخل الخلايا، وحفظ الملف المعدّل في السحابة.
 
- قبل أن تتمكن من استخدام حزمة تطوير البرامج السحابية Aspose.Cells للغة Go، عليك إعداد بيئة التطوير وتثبيت التبعيات اللازمة. راجع[المقال](https://docs.aspose.cloud/cells/quickstart/) على موقع الويب Aspose للحصول على معرف العميل والسر الخاص بالعميل.
+## **البدء**
 
-## كيفية تثبيت حزمة Go لـ Aspose.Cells Cloud
+قبل أن تبدأ باستخدام Aspose.Cells Cloud SDK for Go، تحتاج إلى إعداد بيئة التطوير الخاصة بك وتثبيت التبعيات الضرورية. راجع [المقالة](https://docs.aspose.cloud/cells/quickstart/) على موقع Aspose للحصول على معرّف العميل وسرّ العميل (client ID and client secret).
 
-يمكنك تثبيت حزمة تطوير البرامج السحابية Aspose.Cells لنظام Go باستخدام الأمر `go get`. افتح الطرفية أو موجه الأوامر وشغّل الأمر التالي:
+## كيفية تثبيت حزمة Go الخاصة بـ Aspose.Cells Cloud
+
+يمكنك تثبيت Aspose.Cells Cloud SDK for Go باستخدام الأمر `go get`. افتح الطرفية أو مُحرّر الأوامر ونفّذ الأمر التالي:
 
 ```bash
 go install github.com/aspose-cells-cloud/aspose-cells-cloud-go@latest
 ```
 
-سيؤدي هذا إلى تنزيل أحدث إصدار من SDK وتثبيته على مساحة عمل Go الخاصة بك.
+سيؤدي ذلك إلى تنزيل أحدث إصدار من الحزمة وتثبيته في مساحة عمل Go الخاصة بك.
 
 ## كيفية استيراد مكتبة Go إلى مشروعك
 
@@ -41,16 +42,16 @@ import (
 )
 ```
 
-## كيفية البدء باستخدام Aspose.Cells Cloud for Go، اتبع الخطوات التالية
+## خطوات البدء مع Aspose.Cells Cloud لـ Go
 
-- قم بإنشاء حساب على الرقم Aspose للسحابة واحصل على معرف عميل التطبيق والسر الخاص بك.
-- أنشئ دليلًا لمشروعك وملفًا رئيسيًا.go داخله. أضف الكود التالي إلى ملف main.go.
+- أنشئ حسابًا في Aspose for Cloud واحصل على معرّف العميل وسرّ العميل لتطبيقك.
+- أنشئ مجلدًا لمشروعك وملفًا رئيسيًا باسم `main.go` داخله. أضف الكود التالي إلى ملف `main.go`.
 
-### **رمز العينة**
+### **كود تجريبي**
 
 {{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_AvailableSDKs.go" >}}
 
-- قم بتشغيل المشروع go.mod، ثم قم بجلب التبعيات الخاصة بمشروعك، ثم قم بتشغيل التطبيق الذي قمت بإنشائه.
+- أنشئ ملف `go.mod` للمشروع، ثم اجلب تبعيات مشروعك، ثم شغّل التطبيق الذي أنشأته.
 
 ```bash
 go mod init main

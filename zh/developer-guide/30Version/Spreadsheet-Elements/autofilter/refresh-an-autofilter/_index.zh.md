@@ -1,78 +1,119 @@
-﻿---
-title: 刷新 Excel 工作表中的自动过滤器
-second_title: Documen
-linktitle: 刷新自动过滤器
+---
+title: "刷新 Excel 工作表中的自动筛选器"
+second_title: "文档"
+linktype: "refresh-auto-filter"
 type: docs
-url: /zh/autofilter/refresh/
+url: /autofilter/refresh/
 aliases: [/refresh-an-autofilter/]
 weight: 100
-keywords: Refresh auto filter on an Excel worksheet
-description: Aspose.Cells Cloud API 支持在 Excel 工作表上刷新自动筛选。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、刷新 Excel 工作表中的自动过滤器
+keywords: "Aspose.Cells, AutoFilter, 刷新, Excel, API, REST"
+description: "使用 Aspose.Cells Cloud REST API 刷新 Excel 工作表中现有的自动筛选器。包含 C#、Java、Python 等语言的 cURL 和 SDK 示例。"
+ArticleTitle: "刷新 Excel 工作表中的自动筛选器"
 ---
-此 REST API 表示在 Excel 工作表上自动过滤 `refresh`。
 
-## 重新设置 API
+### **刷新** 操作的作用是什么？
+
+调用该端点会在工作表数据发生更改后（例如添加或删除了行）重新应用当前的筛选条件。该操作不会修改筛选器的定义，仅更新视图显示并返回状态响应。
+
+### REST API
+
+此 REST API 用于刷新 Excel 工作表中的自动筛选器（API 版本为 **v3.0**）。
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh
 ```
 
-请求参数为：
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路||
-|工作表名称|细绳|小路||
-|文件夹|细绳|询问||
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 是安全的，需要使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetAutoFilterRefresh)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### **响应**
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**HTTP 状态码说明**
+
+| 状态码 | 含义              | 描述                                           |
+|--------|-------------------|------------------------------------------------|
+| 200    | OK（成功）        | 筛选器成功应用；响应中包含操作详情。             |
+| 400    | Bad Request（请求错误） | 参数缺失或无效（例如文件类型不支持）。           |
+| 401    | Unauthorized（未授权）  | JWT 令牌无效或缺失。                             |
+| 413    | Payload Too Large（载荷过大） | 上传的文件超过大小限制。                         |
+| 500    | Internal Server Error（服务器内部错误） | 服务器发生意外错误。                           |
+
+*示例错误响应*
+
+```json
+// 400 Bad Request（请求错误）
+{
+    "Code": 400,
+    "Message": "参数无效：未找到工作表名称 sheetName。"
+}
+
+// 401 Unauthorized（未授权）
+{
+    "Code": 401,
+    "Message": "身份验证失败。JWT 令牌缺失或无效。"
+}
+
+// 413 Payload Too Large（载荷过大）
+{
+    "Code": 413,
+    "Message": "上传的文件超过最大允许大小。"
+}
+
+// 500 Internal Server Error（服务器内部错误）
+{
+    "Code": 500,
+    "Message": "服务器上发生了意外错误。"
+}
+```
+
+## 如何使用 PostWorksheetAutoFilterRefresh API（结合 SDK）
+
+### PostWorksheetAutoFilterRefresh API 规范
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetAutoFilterRefresh) 定义了一个公开可访问的编程接口，允许您直接通过网页浏览器执行 REST 调用。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/refresh" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/refresh" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your-jwt-token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+### 使用 Aspose.Cells Cloud SDK
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud) 获取 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
-
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}

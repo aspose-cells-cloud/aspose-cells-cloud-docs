@@ -1,75 +1,93 @@
-﻿---
-title: Ajouter plusieurs lignes sur une feuille de calcul Excel
-second_title: Documen
-linktitle: Rangée
-type: docs
-url: /fr/rows/add/rows/
-keywords: Add multi rows on an Excel workshee
-description: Aspose.Cells Cloud REST API prend en charge l'ajout de plusieurs lignes dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Ajouter plusieurs lignes sur une feuille de calcul Excel
 ---
-Ce REST API indique d'ajouter plusieurs nouvelles lignes de feuille de calcul sur une feuille de calcul Excel.
+title: "Ajouter plusieurs lignes à une feuille de calcul Excel"
+ArticleTitle: "Ajouter plusieurs lignes à une feuille de calcul Excel à l’aide de l’API Aspose.Cells Cloud"
+second_title: "Document"
+linktype: "Lignes"
+type: docs
+url: /rows/add/rows/
+keywords: "Aspose.Cells Cloud, insérer des lignes, feuille de calcul Excel, API REST, SDK, ajouter plusieurs lignes"
+description: "Découvrez comment utiliser l’API REST Aspose.Cells Cloud pour insérer plusieurs lignes dans une feuille de calcul Excel. Ce guide couvre le point de terminaison, les paramètres de requête, les commandes cURL d’exemple et des exemples d’utilisation du SDK."
+weight: 20
+---
 
-## RSET API
+Cette API REST permet d’ajouter plusieurs nouvelles lignes à une feuille de calcul Excel.
 
-```bash
- 
+## API PutInsertWorksheetRows
+
+```http
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Le nom du classeur.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| ligne de départ| entier| requête| L'index de la ligne de début à exploiter.|
-| totalRows| entier| requête|1 |
-| mise à jourRéférence| booléen| requête| Vrai|
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### **Paramètres de la requête**
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom du paramètre | Type    | Emplacement | Description                                                              |
+|------------------|---------|-------------|--------------------------------------------------------------------------|
+| name             | string  | chemin      | Le nom du classeur.                                                      |
+| sheetName        | string  | chemin      | Le nom de la feuille de calcul.                                          |
+| startrow         | integer | requête     | L’index de la première ligne à insérer (**indexation à 0**).             |
+| totalRows        | integer | requête     | Le nombre de lignes à insérer.                                           |
+| updateReference  | boolean | requête     | Indique s’il faut mettre à jour les références de cellules après insertion (`true` ou `false`). |
+| folder           | string  | requête     | Le dossier contenant le document.                                        |
+| storageName      | string  | requête     | Le nom du stockage.                                                      |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Conditions préalables**  
+Le classeur doit déjà exister dans le stockage (ou dossier) spécifié avant d’invoquer cette opération.
+
+**Authentification**  
+L’API exige un jeton JWT valide. Incluez-le dans l’en-tête `Authorization`, comme indiqué dans l’exemple cURL ci-dessous.
+
+La [Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment appeler l’API Cloud à l’aide de cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=11&updateReference=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
+
+> **Remarque :** Cette opération `PUT` ne nécessite pas de corps de requête ; un objet JSON vide (`{}`) peut être envoyé si la bibliothèque client impose la présence d’un payload.
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+*Codes de réponse possibles*  
+
+- **200 OK** – Lignes insérées avec succès.  
+- **400 Bad Request** – Paramètres invalides (par exemple, index de ligne négatif).  
+- **401 Unauthorized** – Jeton JWT manquant ou invalide.  
+- **404 Not Found** – Le classeur ou la feuille de calcul spécifiés n’existent pas.  
+- **500 Internal Server Error** – Erreur serveur inattendue.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Pour d’autres opérations sur les lignes, consultez les pages associées : **Supprimer des lignes**, **Obtenir les lignes** et **Copier des lignes**.
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le moyen le plus rapide de développer. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -99,7 +117,7 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
 
 {{< /tab >}}
 

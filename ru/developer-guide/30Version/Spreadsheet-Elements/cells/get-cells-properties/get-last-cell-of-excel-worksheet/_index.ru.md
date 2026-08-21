@@ -1,96 +1,92 @@
-﻿---
-title: Получить последнюю ячейку рабочего листа Excel
+---
+title: "Получение последней ячейки листа Excel — Aspose.Cells Cloud API (v4.0)"
 type: docs
 url: /ru/get-last-cell-of-excel-worksheet/
 weight: 30
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получить последнюю ячейку листа Excel
+keywords: "Aspose.Cells, Excel API, получить последнюю ячейку, электронная таблица, облачные технологии"
+description: "Получите адрес последней использованной ячейки листа Excel с помощью облачного REST API Aspose.Cells Cloud v4.0. Включает подробности запроса, пример cURL, JSON-ответ и примеры SDK."
+ArticleTitle: "Получение последней ячейки листа Excel — Aspose.Cells Cloud API v4.0"
 ---
-Этот REST API указывает на то, что шоу получает `endcell` в файле Excel, когда параметр `cellOrMethodName` равен `endcell`.
 
-- **cURL Пример**
+Этот REST API возвращает **последнюю ячейку** листа Excel, когда параметр `cellOrMethodName` установлен в значение `endcell`.
 
+**Обзор**  
+Операция **Get Last Cell** («Получить последнюю ячейку») возвращает адрес последней использованной ячейки в указанном листе. Это полезно для определения фактического диапазона данных на листе без необходимости просмотра всей книги.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+- **Пример на cURL.**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/endcell" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/endcell" \
+     -H "Authorization: Bearer <your_access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "F341",
-
     "Row": 340,
-
     "Column": 5,
-
     "Value": "<More Info>",
-
     "Type": "IsString",
-
     "Formula": "=HYPERLINK(SUBSTITUTE(HelpURLTemplate,\"xxxxxxxxxx\",[Help Topic]),\"<More Info>\")",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
     "HtmlString": "<Font Style=\"TEXT-DECORATION: underline;FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">&lt;More Info&gt;</Font>",
-
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Параметры
+| Параметр             | Тип    | Обязательный | Описание |
+|----------------------|--------|--------------|----------|
+| `fileName`           | string | Да           | Имя файла Excel, хранящегося в облаке. |
+| `worksheetName`      | string | Да           | Имя листа, из которого требуется получить последнюю ячейку. |
+| `cellOrMethodName`   | string | Да           | Должен быть установлен в **`endcell`**, чтобы вызвать эту операцию. |
+| `folder` *(необязательно)* | string | Нет    | Путь к папке в облаке, где находится рабочая книга. |
+| `storageName` *(необязательно)* | string | Нет | Имя хранилища. Если не указано, используется хранилище по умолчанию. |
 
-- **Семейство облачных SDK**
+**Коды HTTP-статусов**
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+| Код  | Значение                    | Описание                                         |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK (ОК)                     | Фильтр успешно применён; ответ содержит детали операции. |
+| 400  | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401  | Unauthorized (Неавторизовано) | Недействительный или отсутствующий JWT-токен. |
+| 413  | Payload Too Large (Слишком большой полезный груз) | Загружаемый файл превышает лимит размера. |
+| 500  | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера. |
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+- **Использование SDK для Aspose.Cells Cloud**
 
+Использование SDK — оптимальный способ ускорить разработку. SDK берёт на себя обработку низкоуровневых деталей, позволяя сосредоточиться на задачах проекта. Полный список SDK для Aspose.Cells Cloud доступен в репозитории <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub</a>.
+
+Приведённые ниже примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -126,7 +122,7 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetLastCellWorksheet-1.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetLastCellWorksheet-1.js" >}}
 
 {{< /tab >}}
 
@@ -137,6 +133,8 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
+_Скоро._
 
 {{< /tab >}}
 
@@ -153,3 +151,5 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Дополнительные операции по навигации по ячейкам описаны в разделах **[Получить первую ячейку](/ru/get-first-cell-of-excel-worksheet/)** и **[Получить максимальный номер строки](/ru/get-max-row-of-worksheet/)**.

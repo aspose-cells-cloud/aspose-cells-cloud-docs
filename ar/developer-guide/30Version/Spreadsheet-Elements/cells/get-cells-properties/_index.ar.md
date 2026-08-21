@@ -1,37 +1,146 @@
-﻿---
-title: احصل على Cells عقار
+---
+title: "الحصول على خصائص الخلايا"
 type: docs
 url: /ar/get-cells-properties/
 weight: 130
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على خصائص Cells
+keywords: "Aspose Cells Cloud, REST API, Excel, Worksheet, Cell Properties, Get Cells Properties"
+description: "تعرّف على كيفية استخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST لاسترجاع خصائص خلية معيّنة أو استخدام الطرق المُعدّة مسبقًا للخلايا في ورقة عمل Excel."
 ---
-يوضح هذا REST API كيفية `get a specific cell` في ملف Excel.
 
-## RSET API
+يوضح هذا الـ REST API كيفية استرجاع خلية معيّنة في ملف Excel.
+
+## واجهة برمجة التطبيقات (REST API)
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}
- 
 ```
 
-معلمات الطلب هي:
+## الأمان والمصادقة
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| اسم الخلية أو الطريقة| خيط| طريق|اسم الخلية أو الطريقة. (قيمة اسم الطريقة: firstcell، endcell، maxrow، maxdatarow، maxcolumn، maxdatacolumn، minrow، mindatarow، mincolumn، mindatacolumn، cellName).|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتشترط [المصادقة باستخدام رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب
 
-### **عائلة SDK السحابية**
+| اسم المعامل           | النوع   | الموقع | الوصف                                                                                                                                                                                           |
+| --------------------- | ------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **name**              | نص (string) | المسار (path) | اسم ملف Excel.                                                                                                                                                                                   |
+| **sheetName**         | نص (string) | المسار (path) | اسم ورقة العمل التي تحتوي على الخلية.                                                                                                                                                             |
+| **cellOrMethodName**  | نص (string) | المسار (path) | اسم الخلية أو اسم طريقة مُعدّة مسبقًا (مثل: `firstcell`، `endcell`، `maxrow`، `maxdatarow`، `maxcolumn`، `maxdatacolumn`، `minrow`، `mindatarow`، `mincolumn`، `mindatacolumn`). |
+| **folder**            | نص (string) | الاستعلام (query) | المجلد الذي يُخزَّن فيه المستند.                                                                                                                                                                |
+| **storageName**       | نص (string) | الاستعلام (query) | اسم خدمة التخزين.                                                                                                                                                                                |
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+## **الاستجابة**
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُعيد الـ CellResponse.
+
+- **نظرة عامة على حقول الاستجابة**
+
+| الحقل            | النوع    | الوصف                                                 |
+| ----------------- | -------- | ------------------------------------------------------ |
+| `Name`            | نص (string) | عنوان الخلية (مثل: `F341`).                             |
+| `Row`             | عدد صحيح (integer) | فهرس الصف بصيغة تبدأ من الصفر.                           |
+| `Column`          | عدد صحيح (integer) | فهرس العمود بصيغة تبدأ من الصفر.                          |
+| `Value`           | نص (string) | القيمة المعروضة في الخلية.                              |
+| `Type`            | نص (string) | نوع البيانات في الخلية (مثل: `IsString`).               |
+| `Formula`         | نص (string) | نص الصيغة إن كانت الخلية تحتوي على صيغة.                 |
+| `IsFormula`       | منطقي (bool) | يُشير إلى ما إذا كانت الخلية تحتوي على صيغة.             |
+| `IsMerged`        | منطقي (bool) | يُشير إلى ما إذا كانت الخلية جزءًا من نطاق مُدمج.         |
+| `IsArrayHeader`   | منطقي (bool) | يُشير إلى ما إذا كانت الخلية رأس مصفوفة.                 |
+| `IsInArray`       | منطقي (bool) | يُشير إلى ما إذا كانت الخلية تنتمي إلى مصفوفة.           |
+| `IsErrorValue`    | منطقي (bool) | يُشير إلى ما إذا كانت الخلية تحتوي على قيمة خطأ.          |
+| `IsInTable`       | منطقي (bool) | يُشير إلى ما إذا كانت الخلية داخل جدول.                  |
+| `IsStyleSet`      | منطقي (bool) | يُشير إلى ما إذا تم تطبيق نمط على الخلية.                |
+| `HtmlString`      | نص (string) | التمثيل المشفر بـ HTML لقيمة الخلية.                     |
+| `Style.link`      | كائن (object) | رابط تشعبي لملف المورد الخاص بالنمط.                     |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Cell":{
+    "Name":"A1",
+    "Row": 0,
+    "Column":0,
+    "Value": "Hello Aspose.Cells",
+    "Type":"String",
+    "Formula" : "",
+    ...
+  }
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                      | الوصف                                                             |
+|-------|-----------------------------|--------------------------------------------------------------------|
+| 200   | ناجح (OK)                   | تمت تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.        |
+| 400   | طلب غير صالح (Bad Request)  | معاملات مفقودة أو غير صالحة (مثل: نوع ملف غير مدعوم).             |
+| 401   | غير مصادق عليه (Unauthorized) | رمز JWT غير صالح أو مفقود.                                       |
+| 413   | حجم الحمولة كبير جدًا (Payload Too Large) | تجاوز حجم الملف المرفوق الحد المسموح به.                         |
+| 500   | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم.                                        |
+
+## كيفية استخدام واجهة GetWorksheetCell API باستخدام مكتبات SDK
+
+### مواصفات واجهة GetWorksheetCell API
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) واجهة برمجة تطبيقات عامة قابلة للوصول وتتيح لك إجراء تفاعلات REST مباشرةً من متصفّح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب الخاصة بـ Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إجراء استدعاء إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET" \
+     -H "Accept: application/json"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```json
+{
+  "Cell": {
+    "Name": "A3",
+    "Row": 2,
+    "Column": 0,
+    "Value": "Statistical",
+    "Type": "IsString",
+    "IsFormula": false,
+    "IsMerged": false,
+    "IsArrayHeader": false,
+    "IsInArray": false,
+    "IsErrorValue": false,
+    "IsInTable": false,
+    "IsStyleSet": false,
+    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">Statistical</Font>",
+    "Style": {
+      "link": {
+        "Href": "/style",
+        "Rel": "self"
+      }
+    },
+    "link": {
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3",
+      "Rel": "self"
+    }
+  },
+  "Code": "200",
+  "Status": "OK"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+### استخدام مكتبات SDK الخاصة بـ Aspose.Cells Cloud
+
+استخدام مكتبة SDK هو أفضل طريقة لتسريع عملية التطوير. فالمكتبة SDK تُجسّد التفاصيل من المستوى المنخفض، مما يتيح لك التركيز على مهام مشروعك. يُرجى مراجعة [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud.
+
+توضّح أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -85,16 +194,16 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cell
 
 {{< /tabs >}}
 
-### **كيفية الحصول على خلية محددة**
+### كيفية استرجاع خلية معيّنة
 
-- [الحصول على بيانات الخلية من ورقة عمل](/cells/ar/get-cell-data-from-a-worksheet/)
-- [احصل على الخلية الأولى من ورقة العمل Excel](/cells/ar/get-first-cell-from-excel-worksheet/)
-- [احصل على الخلية الأخيرة من ورقة العمل Excel](/cells/ar/get-last-cell-of-excel-worksheet/)
-- [احصل على MaxRow من ورقة العمل Excel](/cells/ar/get-maxrow-from-excel-worksheet/)
-- [احصل على MaxDataRow من ورقة العمل Excel](/cells/ar/get-maxdatarow-from-excel-worksheet/)
-- [احصل على MaxColumn من ورقة العمل Excel](/cells/ar/get-maxcolumn-from-excel-worksheet/)
-- [احصل على MaxDataColumn من ورقة العمل Excel](/cells/ar/get-maxdatacolumn-from-excel-worksheet/)
-- [احصل على MinRow من ورقة العمل Excel](/cells/ar/get-minrow-from-excel-worksheet/)
-- [احصل على MinDataRow من ورقة العمل Excel](/cells/ar/get-mindatarow-from-excel-worksheet/)
-- [احصل على MinColumn من ورقة العمل Excel](/cells/ar/get-mincolumn-from-excel-worksheet/)
-- [احصل على MinDataColumn من ورقة العمل Excel](/cells/ar/get-mindatacolumn-from-excel-worksheet/)
+- [استرجاع بيانات الخلية من ورقة العمل](/ar/get-cell-data-from-a-worksheet/)
+- [استرجاع الخلية الأولى من ورقة عمل Excel](/ar/get-first-cell-from-excel-worksheet/)
+- [استرجاع الخلية الأخيرة من ورقة عمل Excel](/ar/get-last-cell-of-excel-worksheet/)
+- [استرجاع MaxRow من ورقة عمل Excel](/ar/get-maxrow-from-excel-worksheet/)
+- [استرجاع MaxDataRow من ورقة عمل Excel](/ar/get-maxdatarow-from-excel-worksheet/)
+- [استرجاع MaxColumn من ورقة عمل Excel](/ar/get-maxcolumn-from-excel-worksheet/)
+- [استرجاع MaxDataColumn من ورقة عمل Excel](/ar/get-maxdatacolumn-from-excel-worksheet/)
+- [استرجاع MinRow من ورقة عمل Excel](/ar/get-minrow-from-excel-worksheet/)
+- [استرجاع MinDataRow من ورقة عمل Excel](/ar/get-mindatarow-from-excel-worksheet/)
+- [استرجاع MinColumn من ورقة عمل Excel](/ar/get-mincolumn-from-excel-worksheet/)
+- [استرجاع MinDataColumn من ورقة عمل Excel](/ar/get-mindatacolumn-from-excel-worksheet/)

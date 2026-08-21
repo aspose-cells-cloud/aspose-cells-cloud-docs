@@ -1,106 +1,114 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Eşleşen elektronik tablo dosyalarını uzak bir Klasördeki bir dosyaya birleştirme
-second_title: Documen
-ArticleTitle: Merge matching spreadsheet files into a file in a remote Folder
-linktitle: Uzak Klasördeki Elektronik Tabloları Birleştirme
-type: docs
-url: /tr/merge-spreadsheets-in-remote-folder/
-keywords: Merge spreadsheets, cloud storage, Excel API, remote processing, spreadsheet formats, REST AP
-description: Bulut depolama alanında saklanan elektronik tablo dosyalarını tek bir dosyada birleştirin ve dosya biçimi, PDF, CSV, Json ve diğer yaygın biçimler gibi çıktı için 30 biçimi destekler
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, JSON, Markdown, Elektronik Tabloları Birleştir, Bulut İşleme, Uzaktan Dosya İşleme
 ---
-Eşleşen elektronik tablo dosyalarını uzak klasördeki dosyalarla birleştirin, çıktı dosya biçimi PDF, Csv, Json ve diğer yaygın biçimler gibi 30'dan fazla biçimi destekler.
+title: "Uzak Dizindeki Eşleşen Elektronik Tabloları Birleştir"
+description: "Aspose Cloud deposunda bulunan elektronik tablo dosyalarını tek bir dosyada birleştirin. PDF, CSV, JSON, XLSX, ODS, XPS ve daha fazlası olmak üzere 30'dan fazla çıktı formatını destekler."
+keywords: "Aspose.Cells, elektronik tablo birleştirme, uzak dizin, API, PDF, CSV, JSON, XLSX, ODS, XPS"
+weight: 100
+type: docs
+url: /merge-spreadsheets-in-remote-folder/
+---
 
+Uzak bir Aspose Cloud depo dizininde bulunan birden fazla elektronik tablo dosyasını tek bir çıktı dosyasında birleştirin. İşlem tamamen bulutta çalışır, bu da kaynak dosyaları yerel olarak indirmenize gerek kalmadan işlem yapılmasını sağlar. 30'dan fazla çıktı formatı desteklenir (PDF, CSV, JSON, XLSX, ODS, XPS, ...).
 
-## **Uzak Klasördeki Elektronik Tabloları Birleştirme API**
+## MergeSpreadsheetsInRemoteFolder API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
+PUT https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
 ```
 
-### **İstek Parametreleri:**
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi| Tanım|
-|:- |:- |:- |:- |
-| dosya| Sicim| Sorgu|Birleştirilen dosyaların saklanacağı klasör.|
-| dosyaEşleşmeİfadesi| Sicim| Sorgu| Birleştirilecek dosyaları eşleştirmek için ifade.|
-| outFormat| Sicim| Sorgu| İstenilen çıktı dosya biçimi.|
-| BirSayfadaBirleştir| Boolean| Sorgu| Tüm verilerin tek bir çalışma sayfasında birleştirilip birleştirilmeyeceğini belirtir.|
-| depolamaAdı| Sicim| Sorgu| (İsteğe bağlı) Özel bulut depolama alanının adı; atlanırsa varsayılan depolama alanı kullanılır.|
-| çıkış yolu| Sicim| Sorgu| (İsteğe bağlı) Çalışma kitabını depolamak için klasör yolu; varsayılan olarak null'dır.|
-|outStorageName| Sicim| Sorgu| Çıktı dosyasının depolanacağı yerin adı.|
-| yazı tipleriKonum| Sicim| Sorgu| Özel yazı tiplerini belirtir.|
-| bölge| Sicim| Sorgu| E-tablo bölgesini ayarlar.|
-| şifre| Sicim| Sorgu| E-tablo dosyasını açmak için şifre.|
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulamayı</a> gerektirir.
 
-## **Cevap**
+### İstek Parametreleri <a id="request-parameters"></a>
+
+| Ad                      | Tür      | Konum   | Gerekli | Açıklama                                                                                             |
+| ----------------------- | -------- | ------- | ------- | ---------------------------------------------------------------------------------------------------- |
+| **folder**              | string   | sorgu   | **Evet** | Kaynak elektronik tabloları içeren bulut depo dizini.                                               |
+| **fileMatchExpression** | string   | sorgu   | **Evet** | Dosyaları seçmek için desen (örneğin, `*rapor*.xlsx`). `*` ve `?` joker karakterlerini destekler.     |
+| **outFormat**           | string   | sorgu   | **Evet** | İstenen çıktı formatı (`PDF`, `CSV`, `JSON`, `XLSX`, `ODS`, `XPS`, ...).                            |
+| **mergeInOneSheet**     | boolean  | sorgu   | **Evet** | `true` – tüm veriler tek bir çalışma sayfasında birleştirilir. `false` – her kaynak dosya kendi çalışma sayfasını alır. |
+| **storageName**         | string   | sorgu   | Hayır   | Özel depo adı; atlanırsa birincil depo varsayılan olarak kullanılır.                                 |
+| **outPath**             | string   | sorgu   | Hayır   | Birleştirilmiş dosyanın kaydedileceği dizin. Atlanırsa dosya kaynak dizininde kaydedilir.             |
+| **outStorageName**      | string   | sorgu   | Hayır   | Birleştirilmiş dosyanın yazılacağı depo adı.                                                        |
+| **fontsLocation**       | string   | sorgu   | Hayır   | Özel yazı tiplerini içeren dizinin yolu (PDF/Görüntü dışa aktarma için gereklidir).                   |
+| **region**              | string   | sorgu   | Hayır   | Sayı, tarih ve para birimi formatlaması için yerel ayar (örneğin, `tr-TR`, `en-US`, `de-DE`).          |
+| **password**            | string   | sorgu   | Hayır   | Korumalı kaynak elektronik tablolardan herhangi birinin açılması için gerekli şifre.                  |
+
+## İstek Örneği (cURL) <a id="request-example"></a>
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets?folder=MyFolder&fileMatchExpression=*.xlsx&outFormat=PDF&mergeInOneSheet=true" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Accept: application/json"
+```
+
+### **Yanıt**
 
 ```json
-[
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-        }
-    }
-]
+{
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream"
+  }
+}
 ```
 
-### Hata Kodları
+Dosya doğrudan `FileUrl` adresinden indirilebilir veya `outPath` ile belirtilen konuma kaydedilebilir.
 
-- **400 Kötü İstek**: Geçersiz Apose.Cells Bulut API URI.
-- **401 Yetkisiz**: Geçersiz erişim belirteci. Veya geçersiz istemci kimliği ve sırrı.
-- **404 Bulunamadı**: E-tablo dosyasına erişilemiyor.
-- **500 Sunucu Hatası**: Hesaplama verilerinin alınmasında elektronik tabloda bir anormallik tespit edildi.
+**Başarılı yanıt detayları**
 
-## Uzak klasör API'de Birleştirme Tablosunu nerede kullanmalıyız?
+| Durum Kodu   | İçerik Türü                | Açıklama                                          |
+| ------------ | -------------------------- | ------------------------------------------------- |
+| 200 OK       | `application/octet-stream` | Birleştirilmiş çalışma kitaplığı dosyasının ikili akışı. |
+| 202 Accepted | `application/json`         | `FileUrl`, `FileName` vb. bilgileri içeren JSON. |
 
-Birden fazla veri dosyasını birleştirmeniz gerektiğinde API'i kullanabilirsiniz.
+**HTTP Durum Kodları**
 
-## Uzak klasör API'de Birleştirme Elektronik Tablosunu neden kullanmalısınız?
+| Kod | Anlamı                | Açıklama                                                           |
+| --- | --------------------- | ------------------------------------------------------------------ |
+| 200 | OK (Tamam)            | Filtre başarıyla uygulandı; yanıt işlem detaylarını içerir.       |
+| 400 | Bad Request (Hatalı İstek) | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)   | Geçersiz veya eksik JWT belirteci.                               |
+| 413 | Payload Too Large (İçerik Çok Büyük) | Yüklenen dosya boyut sınırını aşıyor.                             |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası.                                       |
 
-- Bulut depolama dosyalarının indirilmesine gerek yoktur ve doğrudan bulutta birleştirilebilirler.
-- Birden fazla elektronik tablo dosyasını toplu olarak birleştirin, Eşleşen ifadeleri destekleyin.
-- Mevcut SDK üzerinden geliştirme hızlı bir şekilde tamamlanabilir.
+## Nasıl SDK'lar ile Birleştir Elektronik Tablo API'si Kullanılır?
 
-## Uzak klasör API'de SDK'larla Birleştirme Elektronik Tablosunun Nasıl Kullanılacağı
+### OpenAPI Spesifikasyonu
 
-### Uzak klasördeki elektronik tabloyu birleştirme API Teknik Özellikleri
+<a href="https://reference.aspose.cloud/cells/#/DataProcessingController/MergeSpreadsheetsInRemoteFolder" rel="noopener noreferrer">OpenAPI Spesifikasyonu</a>, API'nin makine tarafından okunabilir bir açıklamasını sağlar ve doğrudan REST etkileşimlerinin yapılmasını mümkün kılar.
 
- The[Uzak klasördeki elektronik tabloyu birleştirme API Teknik Özellikleri](https://reference.aspose.cloud/cells/#/DataProcessingController/MergeSpreadsheetsInRemoteFolder) web tarayıcısından doğrudan REST etkileşimlerine izin veren, herkesin erişebileceği bir programlama arayüzü sağlar.
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sine istek nasıl atlanacağını göstermektedir.
 
-### Aspose.Cells Bulut SDK'larını kullanın
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
-SDK'yı kullanmak, düşük seviyeli ayrıntıları soyutlayarak eşleşen elektronik tablo dosyalarını kısa kodla uzak klasördeki dosyalarla birleştirmenize olanak sağladığı için geliştirmenin en hızlı yoludur.
- Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+{{< tab tabNum="11" >}}
 
-Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web servisleriyle nasıl etkileşim kurulacağını göstermektedir:
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MergeSpreadsheetsInRemoteFolder.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets?folder=MyFolder&fileMatchExpression=*.xlsx&outFormat=PDF&mergeInOneSheet=true" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/Book1.xlsx" \
+  -F "Spreadsheet=@/path/to/Book2.xlsx"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MergeSpreadsheetsInRemoteFolder.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 ile kodlanmış)",
+  "contentType": "MIME türü",
+  "fileDownloadName": "isteğe bağlı dosya adı"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MergeSpreadsheetsInRemoteFolder.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MergeSpreadsheetsInRemoteFolder.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MergeSpreadsheetsInRemoteFolder.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MergeSpreadsheetsInRemoteFolder.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MergeSpreadsheetsInRemoteFolder.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MergeSpreadsheetsInRemoteFolder.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### Aspose.Cells Cloud SDK'larını Kullanma
+
+SDK kullanmak, düşük seviye detayları soyutlayarak elektronik tablo çalışma sayfasına veri içe aktarmak için kısa kodla hızlıca geliştirme yapmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub deposuna</a> göz atın.

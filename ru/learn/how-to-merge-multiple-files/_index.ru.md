@@ -1,42 +1,43 @@
-﻿---
-title: Как объединить несколько файлов электронных таблиц с помощью Aspose.Cells Clou
-linktitle: Как объединить несколько файлов электронных таблиц
+---
+title: "Как объединить несколько файлов электронных таблиц с Aspose.Cells Cloud"
+linktitle: "Как объединить несколько файлов электронных таблиц"
 type: docs
 url: /ru/how-to-merge-multiple-files
-description: Как объединить несколько файлов электронных таблиц с помощью Aspose.Cells Cloud
+description: "Как объединить несколько файлов электронных таблиц с помощью Aspose.Cells Cloud."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Как объединить несколько файлов через Aspose.Cells Cloud
+kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, JSON, Markdown, Как объединить несколько файлов через Aspose.Cells Cloud
 ---
+
 ## Введение
 
-Облако Aspose.Cells (API) — это мощное облачное решение для создания, редактирования и преобразования файлов электронных таблиц. В этой статье мы подробно расскажем вам о процессе использования Облака Aspose.Cells (API) для объединения форматов файлов, включая типичные примеры использования и примеры кода.
+Aspose.Cells Cloud API — мощное облачное решение, предназначенное для создания, редактирования и преобразования файлов электронных таблиц. В этой статье мы проведём вас через процесс использования Aspose.Cells Cloud API для объединения файлов различных форматов, включая типичные сценарии использования и примеры кода.
 
 ## Обзор
 
- Облако Aspose.Cells (API) предоставляет надежные API для объединения нескольких электронных таблиц в один файл в различных форматах. Поддерживаемые форматы включают:**Excel** (XLS, XLSX),**CSV**, **HTML**, **PDF**и многое другое. Используя Cloud Aspose.Cells API, вы можете легко объединить несколько файлов электронных таблиц в один файл с использованием широко распространённых форматов, отвечающий самым разным требованиям.
+Aspose.Cells Cloud API предоставляет надёжные API для объединения нескольких файлов электронных таблиц в один файл одного из поддерживаемых форматов. Поддерживаемые форматы включают **Excel** (XLS, XLSX), **CSV**, **HTML**, **PDF** и другие. Благодаря Aspose.Cells Cloud API вы можете без труда объединять несколько файлов электронных таблиц в файл одного из широко используемых форматов, что позволяет удовлетворить разнообразные требования.
 
-Для объединения файлов доступно множество API, как правило, совместимых с различными онлайн-средами. Ниже приведено подробное описание этих API:
+Доступны различные API для объединения файлов, совместимые, как правило, с различными онлайн-средами. Ниже приведено подробное описание этих API:
 
-| Функция| Описание| API Ссылка|
-|:------------------------- |:------------------------- |:------------------------- |
-|**[MergeSpreadsheets](https://docs.aspose.cloud/cells/merge-spreadsheets/)** |Объединить локальные файлы электронных таблиц в файл указанного формата.|[MergeSpreadsheets](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets) |
-|**[MergeRemoteSpreadsheet](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)** | Объединить файлы электронных таблиц в папке облачного хранилища в файл указанного формата.|[Объединение удаленных электронных таблиц](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeRemoteSpreadsheet) |
-|**[Объединить таблицы в удаленной папке](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)** | Объединить файлы электронных таблиц в папке облачного хранилища в файл указанного формата.|[Объединение таблиц в удаленной папке](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder) |
+| Функция | Описание | Ссылка на API |
+| :------------------------- | :------------------------- | :------------------------- |
+| **[MergeSpreadsheets](https://docs.aspose.cloud/cells/merge-spreadsheets/)** | Объединяет локальные файлы электронных таблиц в файл заданного формата. | [MergeSpreadsheets](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets) |
+| **[MergeRemoteSpreadsheet](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)** | Объединяет файлы электронных таблиц, хранящиеся в папке облачного хранилища, в файл заданного формата. | [Merge Remote Spreadsheet](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeRemoteSpreadsheet) |
+| **[Merge Spreadsheets In Remote Folder](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)** | Объединяет файлы электронных таблиц, хранящиеся в папке облачного хранилища, в файл заданного формата. | [Merge Spreadsheets In Remote Folder](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder) |
 
-# Как объединить несколько файлов в один файл через облако Aspose.Cells
+# Как объединить несколько файлов в один с помощью Aspose.Cells Cloud
 
- Облако Aspose.Cells API обеспечивает[несколько SDK](https://github.com/aspose-cells-cloud) для разных языков программирования. Выберите SDK, соответствующий вашему предпочитаемому языку программирования, и следуйте прилагаемой документации по установке и инициализации. Вы также можете создать свой собственный SDK в соответствии с[API ссылка](https://reference.aspose.cloud/cells/)В этом разделе мы будем использовать C# в качестве примера для подробного описания процесса объединения файлов.
+Aspose.Cells Cloud API предоставляет [несколько SDK](https://github.com/aspose-cells-cloud) для различных языков программирования. Выберите SDK, соответствующий вашему предпочитаемому языку, и следуйте инструкциям в документации по его установке и инициализации. Альтернативно, вы можете создать собственное SDK на основе [справочника по API](https://reference.aspose.cloud/cells/). В этом разделе мы рассмотрим процесс объединения файлов на примере C#.
 
-## Регистрация и получение ключа API
+## Регистрация и получение API-ключа
 
-Прежде чем начать, вам необходимо[зарегистрируйте учетную запись Cloud Aspose](https://id.containerize.com/signup) и[получить ключ API для аутентификации](https://dashboard.aspose.cloud/applications). Зайдя на официальный сайт облака Aspose, вы можете создать бесплатную учетную запись и получить ключ API для аутентификации.
+Прежде чем приступить к работе, вам необходимо [зарегистрировать учётную запись Aspose Cloud](https://id.containerize.com/signup) и [получить API-ключ для аутентификации](https://dashboard.aspose.cloud/applications). Войдя на официальный сайт Aspose Cloud, вы можете создать бесплатную учётную запись и получить API-ключ для целей аутентификации.
 
- Более подробную информацию об операциях можно найти в следующих документах:[Быстрый старт с облаком Cells](https://docs.aspose.cloud/cells/quickstart/)
+Для более глубокого погружения обратитесь к следующим документам: [Быстрый старт с Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
 
-## Установка и инициализация Cloud SDK Aspose.Cells
+## Установка и инициализация SDK Aspose.Cells Cloud
 
-Установите пакет Aspose.Cells-Cloud NuGet в свой проект .NET, вы можете использовать консоль менеджера пакетов NuGet или менеджер пакетов NuGet в Visual Studio.
-Вот как можно установить пакет с помощью консоли менеджера пакетов:
+Установите пакет Aspose.Cells-Cloud NuGet в вашем .NET-проекте. Вы можете воспользоваться консолью менеджера пакетов NuGet или менеджером пакетов NuGet в Visual Studio.  
+Пример установки через консоль менеджера пакетов:
 
 ```Powershell
 
@@ -44,7 +45,7 @@ Install-Package Aspose.Cells-Cloud
 
 ```
 
-Создаёт новый экземпляр класса CellsApi, инициализируя его вашим идентификатором клиента и секретным ключом клиента. Ниже приведены подробности вышеупомянутого фрагмента кода:
+Создайте новый экземпляр класса `CellsApi`, инициализировав его вашим Client ID и Client Secret. Ниже приведены детали вышеупомянутого фрагмента кода:
 
 ```CSharp
 
@@ -52,11 +53,11 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ```
 
-Обязательно замените ВАШ_API_КЛЮЧ, ВАШ_ПРИЛОЖЕНИЕ_SID и ВАШ_ПРИЛОЖЕНИЕ_KEY с вашим реальным ключом API, SID приложения и ключом приложения.
+Не забудьте заменить `YOUR_API_KEY`, `YOUR_APP_SID` и `YOUR_APP_KEY` на ваши реальные API-ключ, SID приложения и ключ приложения.
 
-## Создайте запрос API и позвоните по номеру API
+## Формирование запроса к API и его вызов
 
-### Используйте облачные сервисы для объединения локальных электронных таблиц и доставки консолидированных файлов — либо в виде локальных выходных данных, либо в виде потоков в памяти — в любом необходимом формате.
+### Использование облачных сервисов для объединения локальных электронных таблиц и получения объединённых файлов — либо в виде локальных выходных данных, либо в виде потоков в памяти — в любом требуемом формате
 
 ```CSharp
 
@@ -64,63 +65,63 @@ using System.Collections.Generic;
 
 var cellsApi = new Aspose.Cells.Cloud.SDK.Api.CellsApi(System.Environment.GetEnvironmentVariable("ProductClientId"), System.Environment.GetEnvironmentVariable("ProductClientSecret"));
 
-// Suild merged spreadsheet request
+// Формируем запрос на объединение электронных таблиц
 var request = new Aspose.Cells.Cloud.SDK.Request.MergeSpreadsheetsRequest();
-// Set need merged files.
+// Задаём файлы, подлежащие объединению.
 IDictionary<string, System.IO.Stream> mapFiles = new Dictionary<string, System.IO.Stream>();
 mapFiles.Add("Book1.xlsx", File.OpenRead("Book1.xlsx"));
 mapFiles.Add("Book2.xlsx", File.OpenRead("Book2.xlsx"));
 request.Spreadsheet = mapFiles;
-// Set output format
+// Задаём выходной формат
 request.outFormat = "pdf";
 
 cellsApi.MergeSpreadsheets(request, "MergedResultFile.pdf");
 
 ```
 
-### Облачное объединение электронных таблиц, хранящихся в облаке, и отправка консолидированного файла — локально или обратно в облачное хранилище — в любом необходимом формате.
+### Объединение в облаке таблиц, хранящихся в облаке, с получением объединённого файла — локально или обратно в облачное хранилище — в любом требуемом формате
 
 ```C#
-// Get your Client ID and Client Secret from https://dashboard.aspose.cloud (free registration is required).
+// Получите ваш Client ID и Client Secret на https://dashboard.aspose.cloud (требуется бесплатная регистрация).
 var cellsApi = new Aspose.Cells.Cloud.SDK.Api.CellsApi(System.Environment.GetEnvironmentVariable("ProductClientId"), System.Environment.GetEnvironmentVariable("ProductClientSecret"));
-// Build merge request parameters 
+// Формируем параметры запроса на объединение
 var request = new Aspose.Cells.Cloud.SDK.Request.MergeRemoteSpreadsheetRequest();
-// Set cloud main file
+// Задаём основной файл в облаке
 request.name = "Book1.xlsx";
 request.folder = "RemoteFolder1";
-// Set cloud merged file
+// Задаём файл для объединения в облаке
 request.mergedSpreadsheet = "RemoteFolder2/Book2.xlsx";
 request.outFormat = "pdf";
 cellsApi.MergeRemoteSpreadsheet(request, "MergedResultOutPutToLocalFile.pdf");
 ```
 
-### Автоматически объединяйте соответствующие файлы в облачном каталоге, экспортируйте объединенный результат в указанном формате и доставляйте его локально или обратно в облачное хранилище.
+### Автоматическое объединение подходящих файлов в облачной директории, экспорт результата объединения в указанном формате и его доставка локально или обратно в облачное хранилище
 
 ```csharp
-// Get your Client ID and Client Secret from https://dashboard.aspose.cloud (free registration is required).
+// Получите ваш Client ID и Client Secret на https://dashboard.aspose.cloud (требуется бесплатная регистрация).
 var cellsApi = new Aspose.Cells.Cloud.SDK.Api.CellsApi(System.Environment.GetEnvironmentVariable("ProductClientId"), System.Environment.GetEnvironmentVariable("ProductClientSecret"));
-// Build merge request parameters 
+// Формируем параметры запроса на объединение
 var request = new Aspose.Cells.Cloud.SDK.Request.MergeSpreadsheetsInRemoteFolderRequest();
-// Storage directory that needs to merge files
+// Директория хранилища, в которой необходимо объединить файлы
 request.folder = "RemoteFolder";
 request.fileMatchExpression = "*xlsx$";
 request.outFormat = "pdf";
 cellsApi.MergeSpreadsheetsInRemoteFolder(request, "MergedResultOutPutToLocalFile.pdf");
 ```
 
-## Варианты использования
+## Применение
 
- Несколько файлов**объединены**Функция Cloud Aspose.Cells API полезна в различных практических ситуациях. Вот несколько распространённых сценариев:
+Функция **объединения нескольких файлов** API Aspose.Cells Cloud полезна в различных практических сценариях. Вот некоторые распространённые случаи использования:
 
-- **Объединить несколько файлов Excel в файл Excel** для анализа и хранения данных.
-- **Объединить файлы данных в файл Excel** для анализа данных.
-- **Объединить несколько файлов изображений в файл PDF** для удобства обмена.
-- **Объединить несколько файлов в HTML-файл** для отображения и встраивания в веб-страницы.
+- **Объединение нескольких файлов Excel в один файл Excel** для последующего анализа и хранения данных.
+- **Объединение файлов данных в один файл Excel** для анализа.
+- **Объединение нескольких файлов изображений в один файл PDF** для удобного обмена.
+- **Объединение нескольких файлов в один файл HTML** для отображения и встраивания на веб-страницы.
 
 ## Заключение
 
-С помощью Aspose.Cells Cloud API вы можете легко объединить в файл несколько электронных таблиц. Выполняя простые вызовы API и устанавливая соответствующие параметры объединения, вы можете эффективно выполнять различные требования к объединению файлов. Интегрируйте Aspose.Cells Cloud API в свои приложения, чтобы повысить производительность и сократить время разработки.
+С помощью Aspose.Cells Cloud API вы можете легко объединять несколько файлов электронных таблиц в один файл. Совершая простые вызовы API и задавая подходящие параметры объединения, вы можете эффективно удовлетворить разнообразные потребности в объединении файлов. Интегрируйте Aspose.Cells Cloud API в свои приложения, чтобы повысить производительность и сэкономить время разработки.
 
-Обратите внимание, что приведённый выше пример кода предназначен только для демонстрации, и при использовании на практике вам потребуется заменить его действительными учётными данными аутентификации и путями к файлам. Кроме того, Aspose.Cells Cloud API предлагает множество других функций, таких как создание, редактирование, изменение и обработка электронных таблиц. Подробную документацию и пример кода API можно найти на сайте[руководство разработчика официального сайта Aspose](/developer-guide/).
+Обратите внимание, что приведённый выше пример кода служит лишь демонстрационной целью, и при практическом использовании вам потребуется заменить его на действующие учётные данные для аутентификации и действительные пути к файлам. Кроме того, Aspose.Cells Cloud API предлагает множество других функций, таких как создание, редактирование, обработка и анализ данных в электронных таблицах. Подробную документацию по API и примеры кода можно найти на [руководстве разработчика на официальном сайте Aspose](/developer-guide/).
 
-Надеемся, эта статья поможет вам разобраться, как использовать Cloud Aspose.Cells для слияния файлов. Удачи в реализации!
+Надеемся, что эта статья помогла вам понять, как использовать Aspose.Cells Cloud API для объединения файлов. Удачи в реализации!

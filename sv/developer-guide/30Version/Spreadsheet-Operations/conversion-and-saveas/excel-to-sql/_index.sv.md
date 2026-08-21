@@ -1,80 +1,107 @@
-﻿---
-title: Excel till SQ
-second_title: Documen
-linktitle: Excel till SQ
-type: docs
-url: /sv/convert-excel-file-to-sql-file/
-keywords: Convert excel files to sql files
-description: Aspose.Cells Cloud REST API stöder konvertering av Excel-filer till SQL-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Excel till SQL
 ---
-Denna REST API indikerar för `convert` en kalkylbladsfil till en SQL-formatfil.
+title: "Excel till SQL"
+second_title: "Dokument"
+linktitle: "Excel till SQL"
+type: docs
+url: /convert-excel-file-to-sql-file/
+keywords: "Aspose.Cells, Excel till SQL, moln-API, kalkylbladkonvertering, REST"
+description: "Använd Aspose.Cells Cloud REST API för att konvertera Excel-kalkylblad till SQL-filer. Stöder flera SDK:er och programmeringsspråk för en sömlös integration i dina program."
+weight: 100
+ArticleTitle: "Konvertera Excel till SQL – Aspose.Cells Cloud API"
+---
 
-**Frågeparameter**
+Detta REST API konverterar en kalkylbladsfil till ett SQL-format.
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|lösenord|sträng| Lösenordet som behövs för att öppna en Excel-fil.|
-|lagringsnamn|sträng| Lagringsnamnet där filen finns.|
-|kontrolleraExcelBegränsning|bool| Om begränsning av Excel-filen ska kontrolleras när användaren ändrar celler relaterade objekt.|
+**Förutsättningar**  
+För att använda detta slutställe måste du ha ett giltigt JWT-token genererat enligt beskrivningen i <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>-guide. API:et stöder Excel-filer upp till storleksgränserna som definieras i service dokumentationen och kan hantera lösenordsskyddade arbetsböcker när `password`-frågeparametern tillhandahålls.
 
-**Begäran om brödtextparameter**
+## PostConvertWorkbookToSQL API
 
-|Parameternamn|Typ|Beskrivning|
-|:- |:- |:- |
-|datafil| datafil|Datafilen sparas i den första delen av det flerdelade innehållet.|
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/sql
+```
 
-**Svar**
+### **Säkerhet och autentisering**
 
-[Filinfo](/cells/sv/file-info/)
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-## REST API Specifikation
+### **Frågeparameter**
 
-|**API**|**Typ**|**Beskrivning**|**Swagger-länk**|
-|:- |:- |:- |:- |
-|/celler/konvertera/sql|POSTA|Konvertera ett kalkylblad till en SQL-fil.|[PostConvertWorkbookToSQL](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL)|
+| Parameternamn         | Typ    | Beskrivning                                                                 |
+| --------------------- | ------ | --------------------------------------------------------------------------- |
+| password              | string | Lösenord som krävs för att öppna Excel-filen.                               |
+| storageName           | string | Namn på lagringsplatsen där filen är lagrad.                                 |
+| checkExcelRestriction | bool   | Anger om Excel-filrestriktioner ska kontrolleras vid ändring av cellrelaterade objekt. |
 
- De[OpenAPI-specifikation](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Parametrar i begärandetexten**
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
+| Parameternamn | Typ       | Beskrivning                                                           |
+| ------------- | --------- | --------------------------------------------------------------------- |
+| datafile      | datafil   | Kalkylbladsfilen som ska konverteras, inkluderad som den första delen av begäran. |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### Svar
+
+API:et returnerar ett **FileInfo**-objekt som innehåller den genererade SQL-filen.
+
+| Fält            | Typ    | Beskrivning                                |
+| --------------- | ------ | ------------------------------------------ |
+| **Filename**    | string | Namn på SQL-filen (t.ex. `example.sql`).  |
+| **FileSize**    | int    | Filens storlek i byte.                     |
+| **FileContent** | string | Base64-kodat innehåll i SQL-filen.        |
+
+[FileInfo](/cells/file-info/)
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                                   |
+|-----|-----------------------------|---------------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Obehörig                    | Ogiltigt eller saknat JWT-token.                             |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen.            |
+| 500 | Internt serverfel           | Oväntat serverfel.                                           |
+
+## Hur du använder PostConvertWorkbookToSQL API med SDK:er
+
+### PostConvertWorkbookToSQL API-specifikation
+
+<a href="https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL" rel="noopener noreferrer">OpenAPI-specifikationen</a> definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/sql" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/sql" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: curl" \
+     -d '{"File":{}}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
-  "Filename": "xxxxxx.json",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
+  "Filename": "example.sql",
+  "FileSize": 1024,
+  "FileContent": "base64_kodad_sträng"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Se <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub-arkivet</a> för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -127,14 +154,18 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 
 {{< /tabs >}}
 
-## Andra API:er implementerar den här funktionen
+## Andra API som implementerar denna funktion
 
-[POST /celler/{namn}/sparaSom](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API låter dig spara MS Excel-filen som HTML-filen med ytterligare inställningar och spara resultatet till lagringsplatsen.
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Sparar en arbetsbok i ett annat format och lagrar resultatet i den angivna lagringsplatsen.
 
-Denna REST API `convert` Excel-fil till HTML.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Konverterar en arbetsbok till ett annat format med valfria inställningar och returnerar resultatet i svaret.
 
-[PUT /celler/konvertera](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) Med API kan du konvertera MS Excel-filen till HTML-filen med ytterligare inställningar och spara resultatet i svaret.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Hämtar en arbetsbok med valfria konverteringsinställningar.
 
-Denna REST API `export` Excel-fil till HTML.
+**Anteckningar**  
+- När du konverterar lösenordsskyddade Excel-filer, se till att `password`-frågeparametern tillhandahålls; annars kommer konverteringen att misslyckas med ett 400-fel.  
+- Tjänsten returnerar SQL-filens innehåll som Base64; avkoda det innan du sparar till en `.sql`-fil.  
 
-[HÄMTA /celler/{namn}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) Med API kan du konvertera MS Excel-filen till HTML-filen med ytterligare inställningar och spara resultatet i svaret.
+**Exempelfiler**  
+Ladda ner en exempelarbetsbok i Excel-format [här](https://example.com/sample.xlsx) och ett förgenererat SQL-resultat [här](https://example.com/sample.sql) för snabbt att testa API:et.  
+---

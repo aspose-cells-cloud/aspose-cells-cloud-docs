@@ -1,64 +1,68 @@
-﻿---
-title: Clea
-type: docs
-url: /de/hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
-keywords: Clear hyperlinks from an Excel worksheet
-description: Aspose.Cells Cloud REST API unterstützt das Löschen von Hyperlinks aus einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 40
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Löschen
 ---
-Dieser REST API weist auf einem Excel-Arbeitsblatt auf `delete all hyperlinks` hin.
+title: "Hyperlinks löschen"
+type: docs
+url: /hyperlinks/clear/
+aliases: [/add-hyperlinks-to-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, Hyperlinks löschen, Hyperlinks entfernen, REST API, Arbeitsblatt, SDK"
+description: "Erfahren Sie, wie Sie alle Hyperlinks in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API oder eines beliebigen unterstützten SDKs (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl usw.) entfernen."
+weight: 40
+ArticleTitle: "Hyperlinks löschen – Aspose.Cells Cloud API-Dokumentation"
+---
 
-## RSET API
+Diese REST API löscht **alle Hyperlinks** in einem Excel-Arbeitsblatt.
+
+## Sicherheit und Authentifizierung
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine [JWT-Token-basierte Authentifizierung](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-Die Anforderungsparameter sind:
+### Anforderungsparameter
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Dokumentname.|
-| Blattname| Schnur| Weg| Arbeitsblattname.|
-| Ordner| Schnur| Abfrage| Der Dokumentenordner.|
-| Speichername| Schnur| Abfrage| Speichername.|
+| Parametername | Typ    | Ort     | Beschreibung                               |
+| ------------- | ------ | ------- | ------------------------------------------ |
+| name          | string | path    | Der Name der Excel-Datei.                  |
+| sheetName     | string | path    | Der Name des Arbeitsblatts.                |
+| folder        | string | query   | Der Ordner, der das Dokument enthält.     |
+| storageName   | string | query   | Der Name des Speicherdienstes.             |
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Hypelinks/DeleteWorksheetHyperlinks) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+### Fehlerantworten
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+| HTTP-Code | Grund                                              | Beispiel-Body                                                       |
+| --------- | -------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**   | Bad Request – fehlende oder ungültige Parameter.  | `{ "Code":"400", "Message":"Ungültiger Parameterwert." }`          |
+| **401**   | Unauthorized – fehlender oder ungültiger JWT-Token. | `{ "Code":"401", "Message":"Zugriffstoken fehlt oder ist ungültig." }` |
+| **404**   | Not Found – Arbeitsmappe oder Arbeitsblatt existiert nicht. | `{ "Code":"404", "Message":"Datei nicht gefunden." }`              |
+| **500**   | Internal Server Error – unerwarteter Serverfehler. | `{ "Code":"500", "Message":"Ein unerwarteter Fehler ist aufgetreten." }` |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Hyperlinks/DeleteWorksheetHyperlinks) definiert eine öffentlich zugängliche Programmierschnittstelle, über die Sie REST-Interaktionen direkt aus einem Webbrowser durchführen können.
+
+Sie können das Kommandozeilentool **cURL** verwenden, um Aspose.Cells-Webservices aufzurufen. Das folgende Beispiel zeigt, wie Sie alle Hyperlinks aus einem Arbeitsblatt löschen.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Anfrage" tabName12="Antwort" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test1.xlsx/worksheets/Sheet1/hyperlinks" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -67,9 +71,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test1.xlsx/worksheets/Sheet1/hyperl
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDK beschleunigt die Entwicklung, da sie Ihnen die Low-Level-Details abnimmt. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud).
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Sie Arbeitsblatt-Hyperlinks mit verschiedenen SDKs löschen:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

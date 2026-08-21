@@ -1,101 +1,85 @@
-﻿---
-title: Arbeiten mit Excel AutoFilte
-second_title: Documen
-linktitle: AutoFilter
-type: docs
-url: /de/autofilter/
-aliases: [/working-with-autofilter/]
-keywords: Get, add, delete, and so on for auto filter on an Excel worksheet
-description: Die Aspose.Cells Cloud-APIs unterstützen das Abrufen, Hinzufügen, Löschen usw. für den automatischen Filter in einem Excel-Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, AutoFilter
 ---
-Mit dem Autofilter können Sie schnell und einfach nur die Elemente aus dem Arbeitsblatt auswählen, die Sie in einer Liste anzeigen möchten. Mit der Autofilterfunktion können Sie Elemente in einer Liste nach festgelegten Kriterien filtern. Filtern Sie nach Text, Zahlen oder Datum.
+title: "Arbeiten mit Excel-AutoFilter"
+second_title: "Dokument"
+linktitle: "AutoFilter"
+type: docs
+url: /autofilter/
+aliases: [/working-with-autofilter/]
+keywords: "AutoFilter, Aspose.Cells Cloud, Excel-Filter, Farbfilter, Datumsfilter, dynamischer Filter, Zahlenfilter, Textfilter, Leerzeichenfilter, benutzerdefinierter Filter"
+description: "Erfahren Sie, wie Sie Excel-AutoFilter (Farbe, Datum, dynamisch, Zahl, Text, Leerzeichen) mithilfe der Aspose.Cells Cloud APIs hinzufügen, bearbeiten und löschen. Codebeispiele in mehreren Sprachen."
+weight: 100
+ArticleTitle: "Arbeiten mit Excel-AutoFilter – Aspose.Cells Cloud-Dokumentation"
+---
+
+Mit dem AutoFilter können Sie schnell nur die gewünschten Elemente aus einem Arbeitsblatt anzeigen. Mit dieser Funktion können Benutzer eine Liste anhand bestimmter Kriterien filtern – nach Text, Zahlen oder Datumsangaben.
 
 **Verschiedene Filtertypen**
 
-Aspose.Cells Cloud bietet mehrere APIs zum Anwenden verschiedener Filtertypen wie Farbfilter, Datumsfilter, Zahlenfilter, Textfilter, leere Filter und keine leeren Filter.
+Aspose.Cells Cloud stellt mehrere APIs bereit, mit denen sich verschiedene Filtertypen anwenden lassen, darunter Farbfilter, Datumsfilter, Zahlenfilter, Textfilter, Leerzeichenfilter und Nicht-Leerzeichenfilter.
 
 <table class="table table-striped">
   <tr>
-  <td class="col-md-2"> <li>Füllfarbe</li> </td>
-  <td class="col-md-10">
-  <p>Aspose.Cells Cloud bietet
- <a href="/cells/de/autofilter/add-color-filter/">die API von Füllfarbfilter hinzufügen</a>
-um Daten basierend auf der Füllfarbeigenschaft der Zellen zu filtern.</p>
-  </td>
+    <td class="col-md-2"><strong>Füllfarbe</strong></td>
+    <td class="col-md-10">
+      <p>Aspose.Cells Cloud bietet <a href="/cells/autofilter/add-color-filter/">die API „Add Fill Color Filter“</a> an, um Daten basierend auf der Füllfarbeigenschaft von Zellen zu filtern.</p>
+    </td>
   </tr>
   <tr>
-    <td class="col-md-2"> <li>Datum</li> </td>
-  <td class="col-md-10">
-  <p>
- Es können verschiedene Arten von Datumsfiltern implementiert werden, beispielsweise das Filtern aller Zeilen mit Daten im Januar 2018.<a href="/cells/de/autofilter/add-date-filter/">die API von Datum hinzufügen Farbfilter</a> kann diese Funktionalität implementieren.
-</p>
-  </td>
+    <td class="col-md-2"><strong>Datum</strong></td>
+    <td class="col-md-10">
+      <p>Es können verschiedene Datumsfilter angewendet werden, z. B. das Filtern von Zeilen mit Datumsangaben im Januar 2018. Verwenden Sie <a href="/cells/autofilter/add-date-filter/">die API „Add Date Filter“</a>, um einen Datumsfilter hinzuzufügen.</p>
+    </td>
   </tr>
-    <tr>
-    <td class="col-md-2"> <li>Dynamisches Datum</li> </td>
-  <td class="col-md-10">
-  <p>
- Manchmal sind dynamische Filter basierend auf einem Datum erforderlich, beispielsweise alle Zellen mit Daten im Januar, unabhängig vom Jahr.<a href="/cells/de/autofilter/add-dynamic-filter/">die API des dynamischen Filters</a>  
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Dynamisches Datum</strong></td>
+    <td class="col-md-10">
+      <p>Mit dynamischen Datumsfiltern können Sie Zellen filtern, die zu einem bestimmten Monat gehören, unabhängig vom Jahr (z. B. alle Januar-Datumsangaben). Weitere Informationen finden Sie unter <a href="/cells/autofilter/add-dynamic-filter/">der API für dynamische Filter</a>.</p>
+    </td>
   </tr>
-      <tr>
-    <td class="col-md-2"> <li>Nummer</li> </td>
-  <td class="col-md-10">
-  <p>
-<a href="/cells/de/autofilter/add-filter/">Die benutzerdefinierten Filter API</a> kann mit Aspose.Cells angewendet werden, z. B. durch Auswählen von Zellen mit Zahlen innerhalb eines bestimmten Bereichs.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Zahl</strong></td>
+    <td class="col-md-10">
+      <p>Mit der <a href="/cells/autofilter/add-filter/">API „Custom Filters“</a> können Sie Zellen filtern, deren numerische Werte in einem bestimmten Bereich liegen.</p>
+    </td>
   </tr>
-        <tr>
-    <td class="col-md-2"> <li>Text</li> </td>
-  <td class="col-md-10">
-  <p>
- Wenn eine Spalte Text enthält und Zellen ausgewählt werden sollen, die bestimmten Text enthalten,<a href="/cells/de/autofilter/add-filter/"> Der Add-Filter API</a> verwendet werden.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Text</strong></td>
+    <td class="col-md-10">
+      <p>Für eine Spalte mit Textinhalten können Sie mithilfe von <a href="/cells/autofilter/add-filter/">der API „Add Filter“</a> Zellen auswählen, die einen bestimmten Zeichenfolgenwert enthalten.</p>
+    </td>
   </tr>
-          <tr>
-    <td class="col-md-2"> <li>Rohlinge</li> </td>
-  <td class="col-md-10">
-  <p>
-
- Wenn eine Spalte Text enthält, sodass nur wenige Zellen leer sind, und ein Filter erforderlich ist, um nur die Zeilen auszuwählen, in denen leere Zellen vorhanden sind,<a href="/cells/de/autofilter/match-all-blank/"> Die Übereinstimmung aller leeren Zellen API</a> kann verwendet werden
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Leerzeichen</strong></td>
+    <td class="col-md-10">
+      <p>Um Zeilen abzurufen, in denen eine Spalte leer ist, verwenden Sie <a href="/cells/autofilter/match-all-blank/">die API „Match All Blank Cells“</a>.</p>
+    </td>
   </tr>
-            <tr>
-    <td class="col-md-2"> <li>Keine Rohlinge</li> </td>
-  <td class="col-md-10">
-  <p>
-
- Wenn Zellen mit beliebigem Text gefiltert werden sollen,<a href="/cells/de/autofilter/match-all-blank/"> Die Übereinstimmung aller leeren Zellen API</a> kann verwendet werden
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Nicht-Leerzeichen</strong></td>
+    <td class="col-md-10">
+      <p>Um Zeilen zu filtern, in denen eine Spalte einen beliebigen Nicht-Leerzeichenwert enthält, verwenden Sie <a href="/cells/autofilter/match-all-non-blank/">die API „Match All Non‑Blank Cells“</a>.</p>
+    </td>
   </tr>
-              <tr>
-    <td class="col-md-2"> <li>Benutzerdefinierter Filter</li> </td>
-  <td class="col-md-10">
-  <p>
- Aspose.Cells Cloud bietet<a href="/cells/de/autofilter/add-dynamic-filter/"> benutzerdefinierte Filter API</a> wie Filterzeilen, die eine bestimmte Zeichenfolge enthalten, und Filterzeilen, die mit einer bestimmten Zeichenfolge beginnen oder enden.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Benutzerdefinierter Filter</strong></td>
+    <td class="col-md-10">
+      <p>Aspose.Cells Cloud stellt <a href="/cells/autofilter/add-custom-filter/">die API „Custom Filters“</a> für erweiterte Szenarien bereit, z. B. zum Filtern von Zeilen, die einen bestimmten Teilstring enthalten oder mit einer bestimmten Zeichenfolge beginnen/enden.</p>
+    </td>
   </tr>
 </table>
 
-**Automatischer Datenfilterbetrieb**
+**AutoFilter-Operationen**
 
-- [So fügen Sie einem Arbeitsblatt Excel einen Farbfilter hinzu.](/cells/de/autofilter/add-color-filter/)
-- [So fügen Sie einem Arbeitsblatt Excel einen benutzerdefinierten Filter hinzu.](/cells/de/autofilter/add-custom-filter/)
-- [So fügen Sie einem Arbeitsblatt Excel einen Datumsfilter hinzu.](/cells/de/autofilter/add-date-filter/)
-- [So fügen Sie einem Arbeitsblatt Excel einen dynamischen Filter hinzu.](/cells/de/autofilter/add-dynamic-filter/)
-- [So fügen Sie einem Arbeitsblatt Excel einen Filter hinzu.](/cells/de/autofilter/add-filter/)
-- [So fügen Sie einem Arbeitsblatt Excel einen Symbolfilter hinzu.](/cells/de/autofilter/add-icon-filter/)
-- [So löschen Sie einen Datumsfilter in einem Arbeitsblatt Excel.](/cells/de/autofilter/delete-a-date-filter/)
-- [So löschen Sie einen Filter in einem Excel-Arbeitsblatt.](/cells/de/delete-filter/)
-- [So erhalten Sie eine Autofilterbeschreibung aus einem Excel-Arbeitsblatt.](/cells/de/autofilter/get/)
-- [So ordnen Sie alle Leerzeichen in einem Arbeitsblatt Excel zu.](/cells/de/autofilter/match-all-blank/)
-- [So ordnen Sie alle nicht leeren Felder in einem Arbeitsblatt Excel zu.](/cells/de/autofilter/match-all-non-blank/)
-- [So aktualisieren Sie einen Autofilter in einem Excel-Arbeitsblatt.](/cells/de/autofilter/refresh/)
+- [Hinzufügen eines Farbfilters in einem Excel-Arbeitsblatt](/cells/autofilter/add-color-filter/) – **Methode:** POST, **Endpunkt:** `/cells/autofilter/add-color-filter/`
+- [Hinzufügen eines benutzerdefinierten Filters in einem Excel-Arbeitsblatt](/cells/autofilter/add-custom-filter/) – **Methode:** POST, **Endpunkt:** `/cells/autofilter/add-custom-filter/`
+- [Hinzufügen eines Datumsfilters in einem Excel-Arbeitsblatt](/cells/autofilter/add-date-filter/) – **Methode:** POST, **Endpunkt:** `/cells/autofilter/add-date-filter/`
+- [Hinzufügen eines dynamischen Filters in einem Excel-Arbeitsblatt](/cells/autofilter/add-dynamic-filter/) – **Methode:** POST, **Endpunkt:** `/cells/autofilter/add-dynamic-filter/`
+- [Hinzufügen eines Filters in einem Excel-Arbeitsblatt](/cells/autofilter/add-filter/) – **Methode:** POST, **Endpunkt:** `/cells/autofilter/add-filter/`
+- [Hinzufügen eines Symbolsfilters in einem Excel-Arbeitsblatt](/cells/autofilter/add-icon-filter/) – **Methode:** POST, **Endpunkt:** `/cells/autofilter/add-icon-filter/`
+- [Löschen eines Datumsfilters in einem Excel-Arbeitsblatt](/cells/autofilter/delete-a-date-filter/) – **Methode:** DELETE, **Endpunkt:** `/cells/autofilter/delete-a-date-filter/`
+- [Löschen eines Filters in einem Excel-Arbeitsblatt](/cells/delete-filter/) – **Methode:** DELETE, **Endpunkt:** `/cells/delete-filter/`
+- [Abrufen einer AutoFilter-Beschreibung aus einem Excel-Arbeitsblatt](/cells/autofilter/get/) – **Methode:** GET, **Endpunkt:** `/cells/autofilter/get/`
+- [Übereinstimmen aller Leerzeichen in einem Excel-Arbeitsblatt](/cells/autofilter/match-all-blank/) – **Methode:** POST, **Endpunkt:** `/cells/autofilter/match-all-blank/`
+- [Übereinstimmen aller Nicht-Leerzeichen in einem Excel-Arbeitsblatt](/cells/autofilter/match-all-non-blank/) – **Methode:** POST, **Endpunkt:** `/cells/autofilter/match-all-non-blank/`
+- [Aktualisieren eines AutoFilters in einem Excel-Arbeitsblatt](/cells/autofilter/refresh/) – **Methode:** POST, **Endpunkt:** `/cells/autofilter/refresh/`
+---

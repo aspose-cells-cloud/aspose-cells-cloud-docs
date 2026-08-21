@@ -1,86 +1,106 @@
-﻿---
-title: إضافة معايير مخصصة في ورقة عمل Excel
-second_title: Documen
-linktitle: إضافة مرشح مخصص
-type: docs
-url: /ar/autofilter/add-custom-filter/ 
-aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/ ]
-keywords: Adds a custom filter on an Excel worksheet
-description: يدعم الإصدار Aspose.Cells Cloud API إضافة مرشح مخصص على ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 65
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة معايير مخصصة في ورقة عمل Excel
 ---
-يشير هذا REST API إلى تصفية القائمة باستخدام `custom criteria`.
+title: "إضافة معيار مخصص في ورقة عمل إكسل"
+second_title: "وثيقة"
+linktitle: "إضافة تصفية مخصصة"
+type: docs
+url: /autofilter/add-custom-filter/
+aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/]
+keywords: "إكسل، تصفية مخصصة، Aspose.Cells Cloud، واجهة برمجة تطبيقات REST، تصفية تلقائية، ورقة عمل، معيار مخصص"
+description: "تعرّف على كيفية استخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST لإضافة تصفية مخصصة إلى ورقة عمل إكسل. يتضمّن تفاصيل الطلب، مثالًا باستخدام cURL، وأجزاء من كود SDK بلغات برمجة متعددة."
+weight: 65
+ArticleTitle: "إضافة معيار مخصص في ورقة عمل إكسل – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+---
 
-## RSET API
+تُطبّق هذه واجهة برمجة تطبيقات REST تصفيةً لقائمة باستخدام **معيار مخصص**.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/custom
- 
+## PutWorksheetCustomFilter API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/custom
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| يتراوح| خيط| استفسار||
-| فهرس الحقل| عدد صحيح| استفسار||
-| نوع المشغل 1| خيط| استفسار||
-| المعايير 1| خيط| استفسار||
-| هو و| منطقي| استفسار||
-| نوع المشغل 2| خيط| استفسار||
-| المعايير 2| خيط| استفسار||
-| مطابقة الفراغات| منطقي| استفسار||
-| ينعش| منطقي| استفسار||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب:
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل | النوع | الموقع | الوصف |
+|-------------|-------|--------|--------|
+| name | سلسلة نصية | المسار | اسم ملف إكسل. |
+| sheetName | سلسلة نصية | المسار | اسم ورقة العمل التي تحتوي على البيانات المراد تصفيتها. |
+| range | سلسلة نصية | الاستعلام | النطاق الخلوي الذي سيتم تطبيق التصفية عليه (مثال: `A1:B1`). |
+| fieldIndex | عدد صحيح | الاستعلام | المؤشر الصفر-based للعمود الذي تُطبّق عليه التصفية. |
+| operatorType1 | سلسلة نصية | الاستعلام | عامل المقارنة الأول (مثال: `LessOrEqual`، `Equal`). |
+| criteria1 | سلسلة نصية | الاستعلام | القيمة أو التعبير الأول للتصفية. |
+| isAnd | منطقي | الاستعلام | إذا كانت القيمة `true`، تُدمج المعياران باستخدام **AND**؛ وإلا باستخدام **OR**. |
+| operatorType2 | سلسلة نصية | الاستعلام | عامل المقارنة الثاني (اختياري). |
+| criteria2 | سلسلة نصية | الاستعلام | القيمة أو التعبير الثاني للتصفية (اختياري). |
+| matchBlanks | منطقي | الاستعلام | عند القيمة `true`، تُضمّن الخلايا الفارغة في نتائج التصفية. |
+| refresh | منطقي | الاستعلام | إذا كانت القيمة `true`، تُجبر ورقة العمل على التحديث بعد تطبيق التصفية. |
+| folder | سلسلة نصية | الاستعلام | مسار المجلد في التخزين حيث يقع الملف. |
+| storageName | سلسلة نصية | الاستعلام | اسم خدمة التخزين. |
+
+### **الاستجابة**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**كود حالات HTTP**
+
+| الكود | المعنى | الوصف |
+|-------|--------|--------|
+| 200 | OK (نجاح) | تم تطبيق التصفية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | Bad Request (طلب غير صالح) | معاملات مفقودة أو غير صحيحة (مثال: نوع ملف غير مدعوم). |
+| 401 | Unauthorized (غير مصادق) | رمز JWT غير صالح أو مفقود. |
+| 413 | Payload Too Large (حمولة كبيرة جدًا) | حجم الملف المرفوع يتجاوز الحد المسموح. |
+| 500 | Internal Server Error (خطأ داخلي في الخادم) | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام واجهة PutWorksheetCustomFilter API باستخدام SDKs
+
+### مواصفات واجهة PutWorksheetCustomFilter API
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter) واجهة برمجة تطبيقات عامة قابلة للاستدعاء، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول إلى خدمات Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إجراء استدعاء إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/custom?range=A1:B1&fieldIndex=0&operatorType1=LessOrEqual&criteria1=1" \
--X PUT 
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/custom?range=A1:B1&fieldIndex=0&operatorType1=LessOrEqual&criteria1=1" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+استخدام SDKs هو أسرع طريقة للتطوير. تُعالج SDKs التفاصيل منخفضة المستوى، مما يتيح لك التركيز على منطق مشروعك. يُرجى مراجعة [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -133,3 +153,5 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 {{< /tab >}}
 
 {{< /tabs >}}
+
+لعمليات التصفية التلقائية الأخرى، مثل إضافة تصفية قياسية أو تصفية تاريخ، راجع صفحات الوثائق ذات الصلة ضمن قسم التصفية التلقائية.

@@ -1,84 +1,116 @@
-﻿---
-title: Добавить фильтр по дате на рабочий лист Excel
-second_title: Documen
-linktitle: Добавить фильтр по дате
-type: docs
-url: /ru/autofilter/add-date-filter/
-aliases: [/add-date-filter-in-a-worksheet/,/autofilter/add-a-date-filter/]
-keywords: Adds a date filter on an Excel worksheet
-description: Облако Aspose.Cells API поддерживает добавление фильтра по дате на лист Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 65
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Добавить фильтр даты на лист Excel
 ---
-Этот REST API указывает на добавление `date filter` на рабочий лист Excel.
+title: "Добавление фильтра по дате в лист Excel"
+second_title: "Документ"
+linktitle: "Добавление фильтра по дате"
+type: docs
+url: /autofilter/add-date-filter/
+aliases:
+  - /add-date-filter-in-a-worksheet/
+  - /autofilter/add-a-date-filter/
+description: "Узнайте, как добавить фильтр по дате в лист Excel с помощью REST API Aspose.Cells Cloud (версия 3.0). Примеры cURL, фрагменты кода SDK (C#, Java, Python и др.), параметры и обработка ошибок."
+weight: 65
+ArticleTitle: "Добавление фильтра по дате в лист Excel | Aspose.Cells Cloud API"
+keywords: "Aspose.Cells, фильтр по дате в Excel, API автофильтра, REST API, облачный SDK, cURL, автоматизация электронных таблиц"
+---
 
-## РСЕT API
+Этот REST API добавляет **фильтр по дате** в лист Excel.
 
-```bash
+**Необходимые условия:** У вас должен быть действительный JWT-токен, а целевая рабочая книга уже должна существовать в указанном месте хранения. Запрос не требует JSON-тела.
 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
+## API PutWorksheetDateFilter
 
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| Путь| Название рабочей книги.|
-| Имя_листа| нить| Путь| Название рабочего листа.|
-|диапазон|нить| Запрос||
-|fieldIndex|целое число| Запрос||
-|dateTimeGroupingType|нить| Запрос| День/Час/Минута/Месяц/Секунда/Год|
-|год|целое число| Запрос||
-|месяц|целое число| Запрос||
-|день|целое число| Запрос||
-|час|целое число| Запрос||
-|минута|целое число| Запрос||
-|второй|целое число| Запрос||
-|matchBlanks|нить| Запрос|правда/ложь|
-|обновить|нить| Запрос|правда/ложь|
-|папка|нить| Запрос|Оригинальная папка рабочей тетради.|
-|имя_хранилища|нить| Запрос|Имя хранилища.|
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификацию по токену JWT</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### Параметры запроса
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Имя параметра          | Тип    | Расположение | Описание                                                                                                                                                              |
+| ---------------------- | ------ | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**               | string | Path         | Имя рабочей книги.                                                                                                                                                    |
+| **sheetName**          | string | Path         | Имя листа.                                                                                                                                                            |
+| **range**              | string | Query        | Диапазон Excel, к которому применяется фильтр (например, `A1:B1`).                                                                                                   |
+| **fieldIndex**         | integer| Query        | Индекс столбца для фильтрации (начиная с нуля).                                                                                                                       |
+| **dateTimeGroupingType**| string| Query        | Тип группировки даты/времени. Допустимые значения: `Day`, `Hour`, `Minute`, `Month`, `Second`, `Year`. Значения чувствительны к регистру; значение по умолчанию — `Day`. |
+| **year**               | integer| Query        | Компонент года фильтруемого значения.                                                                                                                                  |
+| **month**              | integer| Query        | Компонент месяца фильтруемого значения.                                                                                                                                |
+| **day**                | integer| Query        | Компонент дня фильтруемого значения.                                                                                                                                   |
+| **hour**               | integer| Query        | Компонент часа фильтруемого значения.                                                                                                                                  |
+| **minute**             | integer| Query        | Компонент минуты фильтруемого значения.                                                                                                                                |
+| **second**             | integer| Query        | Компонент секунды фильтруемого значения.                                                                                                                               |
+| **matchBlanks**        | boolean| Query        | Включать пустые ячейки (`true` или `false`).                                                                                                                          |
+| **refresh**            | boolean| Query        | Обновлять фильтр после применения (`true` или `false`).                                                                                                               |
+| **folder**             | string | Query        | Путь к папке исходной рабочей книги.                                                                                                                                  |
+| **storageName**        | string | Query        | Имя службы хранения.                                                                                                                                                  |
+
+*Запрос PUT не требует тела запроса; все параметры передаются через строку запроса.*
+
+### **Ответ**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                                                 |
+|-----|-----------------------------|--------------------------------------------------------------------------|
+| 200 | OK                          | Фильтр успешно применён; в ответе содержатся детали операции.            |
+| 400 | Bad Request                 | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized                | Недействительный или отсутствующий JWT-токен.                           |
+| 413 | Payload Too Large           | Загруженный файл превышает лимит размера.                               |
+| 500 | Internal Server Error       | Непредвиденная ошибка сервера.                                          |
+
+## Как использовать API PutWorksheetDateFilter с SDK
+
+### Спецификация API PutWorksheetDateFilter
+
+<a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter" rel="noopener noreferrer">Спецификация OpenAPI</a> определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки **cURL** для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как выполнить вызов облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?range=A1:B1&fieldIndex=0&dateTimeGroupingType=Year&year=1920&refresh=true" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?range=A1:B1&fieldIndex=0&dateTimeGroupingType=Year&year=1920&refresh=true" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK — самый быстрый способ разработки. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">репозитории GitHub</a>.
+
+Примеры кода ниже демонстрируют, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -108,7 +140,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDateFilter.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDateFilter.ts" >}}
 
 {{< /tab >}}
 

@@ -1,37 +1,39 @@
-﻿---
-title: Trabajando con la hoja de trabajo Excel
-second_title: Documen
-linktitle: Hoja de trabajo
-type: docs
-url: /es/worksheets/
-aliases: [/working-with-worksheets/]
-keywords: Working with worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API admite el trabajo con hojas de cálculo en un libro Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 100
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Trabajando con la hoja de cálculo Excel.
 ---
-Una hoja de cálculo es un conjunto de celdas donde se guardan y manipulan los datos. Cada libro Excel puede contener varias hojas de cálculo.
+title: "Trabajar con hojas de cálculo de Excel"
+second_title: "Documento"
+linktitle: "Hojas de cálculo"
+type: docs
+url: /worksheets/
+aliases: [/working-with-worksheets/]
+keywords: "hoja de cálculo de Excel, Aspose.Cells Cloud, API REST, hoja de cálculo, libro de cálculo, manipulación de datos, automatización de Excel"
+description: "La API REST de Aspose.Cells Cloud permite trabajar con hojas de cálculo en un libro de cálculo de Excel. El SDK admite múltiples lenguajes de programación, incluidos Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby y Swift."
+weight: 100
+ArticleTitle: "Trabajar con hojas de cálculo de Excel – Documentación de Aspose.Cells Cloud"
+---
 
-**Hoja de trabajo Operar**
+Una hoja de cálculo es una colección de celdas donde almacena y manipula datos. Cada libro de cálculo de Excel puede contener múltiples hojas de cálculo.
 
-- [Cómo obtener hojas de trabajo Excel.](/cells/es/worksheets/get-all/)
-- [Cómo obtener la hoja de trabajo Excel con diferentes formatos.](/cells/es/worksheets/get/)
-- [Cómo obtener el área de la hoja de trabajo Excel con diferentes formatos.](/cells/es/worksheets/area-to-different-formats/)
-- [Cómo obtener la página de la hoja de trabajo Excel con diferentes formatos.](/cells/es/get-worksheet-for-page-index/)
-- [Cómo convertir la hoja de cálculo Excel a imagen.](/cells/es/worksheets/to-image/)
-- [Cómo agregar la hoja de trabajo Excel.](/cells/es/worksheets/add/)
-- [Cómo agregar fondo a la hoja de cálculo Excel.](/cells/es/worksheets/background/add/)
-- [Cómo ordenar los datos de la hoja de trabajo Excel.](/cells/es/worksheets/sort-data/)
-- [Cómo ocultar la hoja de trabajo Excel.](/cells/es/worksheets/hide/)
-- [Cómo mostrar la hoja de trabajo Excel.](/cells/es/worksheets/unhide/)
-- [Cómo mover la hoja de trabajo Excel.](/cells/es/worksheets/move/)
-- [Cómo calcular la fórmula Excel.](/cells/es/worksheets/calculate-formula/)
-- [Cómo copiar la hoja de trabajo Excel.](/cells/es/worksheets/copy/)
-- [Cómo cambiar el nombre de la hoja de trabajo Excel.](/cells/es/worksheets/rename/)
-- [Cómo actualizar las propiedades de la hoja de cálculo Excel.](/cells/es/worksheets/update-properties/)
-- [Cómo configurar el zoom de la hoja de cálculo Excel.](/cells/es/worksheets/zoom/)
-- [Cómo congelar los paneles de la hoja de cálculo Excel.](/cells/es/worksheets/freeze-panes/)
-- [Cómo descongelar los paneles de la hoja de cálculo Excel.](/cells/es/worksheets/unfreeze-panes/)
-- [Cómo eliminar la hoja de trabajo Excel.](/cells/es/worksheets/delete/)
-- [Cómo eliminar el fondo de la hoja de cálculo Excel.](/cells/es/worksheets/background/delete/)
-- [Cómo trabajar con el ajuste automático de un libro de trabajo Excel](/cells/es/worksheets/autofit/)
+**Operaciones con hojas de cálculo**
+
+- [Cómo obtener las hojas de cálculo de un libro de Excel](/cells/worksheets/get-all/)
+- [Cómo obtener una hoja de cálculo de Excel en distintos formatos](/cells/worksheets/get/)
+- [Cómo obtener un área de hoja de cálculo de Excel en distintos formatos](/cells/worksheets/area-to-different-formats/)
+- [Cómo obtener una página de hoja de cálculo de Excel en distintos formatos](/cells/get-worksheet-for-page-index/)
+- [Cómo convertir una hoja de cálculo de Excel en una imagen](/cells/worksheets/to-image/)
+- [Cómo agregar una hoja de cálculo de Excel](/cells/worksheets/add/)
+- [Cómo agregar un fondo a una hoja de cálculo de Excel](/cells/worksheets/background/add/)
+- [Cómo ordenar datos en una hoja de cálculo de Excel](/cells/worksheets/sort-data/)
+- [Cómo ocultar una hoja de cálculo de Excel](/cells/worksheets/hide/)
+- [Cómo mostrar una hoja de cálculo de Excel previamente oculta](/cells/worksheets/unhide/)
+- [Cómo mover una hoja de cálculo de Excel](/cells/worksheets/move/)
+- [Cómo calcular una fórmula de Excel](/cells/worksheets/calculate-formula/)
+- [Cómo copiar una hoja de cálculo de Excel](/cells/worksheets/copy/)
+- [Cómo cambiar el nombre de una hoja de cálculo de Excel](/cells/worksheets/rename/)
+- [Cómo actualizar las propiedades de una hoja de cálculo de Excel](/cells/worksheets/update-properties/)
+- [Cómo establecer el zoom de una hoja de cálculo de Excel](/cells/worksheets/zoom/)
+- [Cómo congelar paneles en una hoja de cálculo de Excel](/cells/worksheets/freeze-panes/)
+- [Cómo descongelar paneles en una hoja de cálculo de Excel](/cells/worksheets/unfreeze-panes/)
+- [Cómo eliminar una hoja de cálculo de Excel](/cells/worksheets/delete/)
+- [Cómo eliminar un fondo de una hoja de cálculo de Excel](/cells/worksheets/background/delete/)
+- [Cómo ajustar automáticamente el ancho de columnas en un libro de Excel](/cells/worksheets/autofit/)
+---

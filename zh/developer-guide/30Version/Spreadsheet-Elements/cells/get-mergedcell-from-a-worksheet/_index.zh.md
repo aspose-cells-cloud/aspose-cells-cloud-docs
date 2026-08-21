@@ -1,89 +1,121 @@
-﻿---
-title: 从工作表获取 MergedCell
+---
+title: "从 Excel 工作表中获取合并单元格 — Aspose.Cells Cloud API"
 type: docs
 url: /zh/get-mergedcell-from-a-worksheet/
 weight: 60
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 从工作表获取合并单元格
+keywords: "Aspose.Cells Cloud, 合并单元格, Excel 工作表, REST API, Aspose.Cells SDK, Excel 合并单元格"
+description: "了解如何使用 Aspose.Cells Cloud API（v3.0）从 Excel 工作表中检索合并单元格范围。包含身份验证步骤、完整的 cURL 请求示例、响应模式、错误处理以及 C#、Java、Python 等多种语言的 SDK 示例。"
 ---
-此 REST API 表示在 Excel 文件中获取 `merged cell`。
 
-## 重新设置 API
+此 REST API 返回 Excel 工作表中**合并单元格**的信息。
+
+> **注意** —— API 对象名称为 **MergedCell**（单数形式）。在文本描述中，我们指的是“合并单元格”这一概念（复数）。
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
 ```
 
-请求参数为：
+## 安全性与身份验证
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作集名称。|
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 采用安全机制，需使用 [基于 JWT 令牌的身份验证](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### 请求参数
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名称       | 类型   | 位置   | 描述                           |
+|----------------|--------|--------|--------------------------------|
+| **name**       | string | path   | Excel 文件名。                 |
+| **sheetName**  | string | path   | 工作表名称。                   |
+| **folder**     | string | query  | 包含文档的文件夹。             |
+| **storageName**| string | query  | 要使用的存储空间名称。         |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+## **响应**
+
+返回 `MergedCellsResponse` 对象。
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "MergedCells":{
+    "Count": 0,
+    "MergedCellList":[
+      {
+        "Link":{
+          "Href":"",
+          "Rel":"",
+          "Type":"",
+          "Title":""
+        }
+      }
+    ]
+  }
+}
+```
+
+**HTTP 状态码**
+
+| 状态码 | 含义               | 描述                                       |
+|--------|--------------------|--------------------------------------------|
+| 200    | OK（成功）         | 合并单元格查询成功；响应包含操作详情。     |
+| 400    | Bad Request（错误请求） | 参数缺失或无效（例如：不支持的文件类型）。 |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。                       |
+| 413    | Payload Too Large（请求体过大） | 上传文件大小超出限制。                 |
+| 500    | Internal Server Error（内部服务器错误） | 服务器发生意外错误。                 |
+
+## 如何结合 SDK 使用 GetWorksheetMergedCells API
+
+### GetWorksheetMergedCells API 规范
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells) 定义了一个公开可访问的编程接口，允许您直接从 Web 浏览器发起 REST 调用。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例演示如何通过 cURL 调用 Cloud API：
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/mergedCells/0"  \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/mergedCells" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-  "MergedCell": {
-
-    "EndColumn": 7,
-
-    "EndRow": 1,
-
-    "StartColumn": 0,
-
-    "StartRow": 1,
-
-    "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/cells/mergedcells/0",
-
-      "Rel": "self"
-
-    }
-
+  "MergedCells": {
+    "Count": 1,
+    "MergedCells": [
+      {
+      "link": {
+            "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/cells/mergedcells/0",
+            "Rel": "self"
+          }
+      }
+    ]    
   },
-
   "Code": "200",
-
   "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+### 使用 Aspose.Cells Cloud SDK
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+使用 SDK 是对接 API 的最快开发方式。SDK 自动处理底层细节，使您能专注于业务逻辑。完整的 Aspose.Cells Cloud SDK 列表请参见 [GitHub 仓库](https://github.com/aspose-cells-cloud)。
+
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

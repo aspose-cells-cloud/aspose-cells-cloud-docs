@@ -1,265 +1,245 @@
-﻿---
-title: Ottieni la legenda del grafico da un foglio di lavoro
+---
+title: "Ottenere la legenda di un grafico da un foglio di lavoro"
 type: docs
 url: /it/charts/legend/get/
-aliases: [/get-chart-legend-from-a-worksheet/]
+aliases: [/it/get-chart-legend-from-a-worksheet/]
 weight: 80
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni la legenda del grafico da un foglio di lavoro
+keywords: "Aspose.Cells, legenda del grafico, REST API, Excel, SDK cloud, ottenere la legenda del grafico, foglio di lavoro, foglio elettronico"
+description: "Recupera la legenda di un grafico da un foglio di lavoro specifico in un file Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include endpoint, parametri, esempio cURL e frammenti di SDK."
 ---
-Questo REST API indica di ottenere la legenda del grafico
- 
-## RSET API
- 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
- 
-```
- I parametri della richiesta sono:
- 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Nome della cartella di lavoro.|
-| Nome foglio| corda| sentiero| Nome del foglio di lavoro.|
-| graficoIndice| intero| sentiero| L'indice del grafico.|
-| cartella| corda| domanda| La cartella della cartella di lavoro.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
- 
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartLegend) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
- 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
- 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+L'operazione **Get Chart Legend** restituisce le informazioni sulla legenda di un grafico presente in un foglio di lavoro di un file Excel. Questo endpoint fa parte dell'**Aspose.Cells Cloud API v3.0** e può essere utilizzato quando è necessario leggere le proprietà della legenda, come posizione, font, dimensioni e formattazione.
+
+## **API REST**
+
+```bash
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
+```
+
+### Sicurezza e autenticazione
+
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'[autenticazione basata su token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+### Parametri della richiesta
+
+| Nome parametro | Tipo    | Posizione | Descrizione                                   |
+| -------------- | ------- | -------- | --------------------------------------------- |
+| name           | string  | path     | Nome del file del libro di lavoro.            |
+| sheetName      | string  | path     | Nome del foglio di lavoro.                    |
+| chartIndex     | integer | path     | Indice in base zero del grafico.              |
+| folder         | string  | query    | Percorso della cartella in cui è memorizzato il libro di lavoro. |
+| storageName    | string  | query    | Nome dello storage.                           |
+
+### **Risposta**
+
+```json
+{
+  "Legend": {
+    "Position": "Right",
+    "LegendEntries": {
+      "link": {
+        "Href": "/legendEntries",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Area": {
+      "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+      "FillFormat": {
+        "Type": "Automatic",
+        "SolidFill": null,
+        "PatternFill": null,
+        "TextureFill": null,
+        "GradientFill": null,
+        "ImageData": null
+      },
+      "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+      "Formatting": "Automatic",
+      "InvertIfNegative": false,
+      "Transparency": 0.0
+    },
+    "AutoScaleFont": true,
+    "BackgroundMode": "Automatic",
+    "Border": {
+      "BeginArrowLength": "Medium",
+      "BeginArrowWidth": "Medium",
+      "BeginType": "None",
+      "CapType": "Flat",
+      "Color": { "A": 0, "R": 0, "G": 0, "B": 0 },
+      "CompoundType": "Single",
+      "DashType": "Solid",
+      "EndArrowLength": "Medium",
+      "EndArrowWidth": "Medium",
+      "EndType": "None",
+      "GradientFill": null,
+      "IsAuto": true,
+      "IsAutomaticColor": true,
+      "IsVisible": true,
+      "JoinType": "Round",
+      "Style": "Solid",
+      "Transparency": 0.0,
+      "Weight": "HairLine",
+      "WeightPt": 0.0
+    },
+    "Font": {
+      "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+      "DoubleSize": 10.0,
+      "IsBold": false,
+      "IsItalic": false,
+      "IsStrikeout": false,
+      "IsSubscript": false,
+      "IsSuperscript": false,
+      "Name": "Arial",
+      "Size": 10,
+      "Underline": "None"
+    },
+    "IsAutomaticSize": true,
+    "IsInnerMode": null,
+    "Shadow": false,
+    "ShapeProperties": null,
+    "Width": 823,
+    "Height": 1043,
+    "X": 3125,
+    "Y": 1466,
+    "link": {
+      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend",
+      "Rel": "self",
+      "Title": null,
+      "Type": null
+    }
+  },
+  "Code": 0,
+  "Status": "0"
+}
+```
+
+**Codici di stato HTTP**
+
+| Codice | Significato                 | Descrizione                                       |
+|--------|-----------------------------|---------------------------------------------------|
+| 200    | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida        | Parametri mancanti o non validi (ad es. tipo di file non supportato). |
+| 401    | Non autorizzato             | Token JWT non valido o mancante. |
+| 413    | Payload troppo grande       | Il file caricato supera il limite di dimensione. |
+| 500    | Errore interno del server   | Errore imprevisto nel server. |
+
+## Come utilizzare l'API GetWorksheetChartLegend con gli SDK
+
+### Specifica dell'API GetWorksheetChartLegend
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartLegend) definiscono un'interfaccia di programmazione accessibile pubblicamente e permettono di effettuare direttamente interazioni REST da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come richiamare l'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" 
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Legend": {
-
     "Position": "Right",
-
     "LegendEntries": {
-
       "link": {
-
         "Href": "/legendEntries",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "Area": {
-
-      "BackgroundColor": {
-
-        "A": 0,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
       "FillFormat": {
-
         "Type": "Automatic",
-
         "SolidFill": null,
-
         "PatternFill": null,
-
         "TextureFill": null,
-
         "GradientFill": null,
-
         "ImageData": null
-
       },
-
-      "ForegroundColor": {
-
-        "A": 0,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
       "Formatting": "Automatic",
-
       "InvertIfNegative": false,
-
       "Transparency": 0.0
-
     },
-
     "AutoScaleFont": true,
-
     "BackgroundMode": "Automatic",
-
     "Border": {
-
       "BeginArrowLength": "Medium",
-
       "BeginArrowWidth": "Medium",
-
       "BeginType": "None",
-
       "CapType": "Flat",
-
-      "Color": {
-
-        "A": 0,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "Color": { "A": 0, "R": 0, "G": 0, "B": 0 },
       "CompoundType": "Single",
-
       "DashType": "Solid",
-
       "EndArrowLength": "Medium",
-
       "EndArrowWidth": "Medium",
-
       "EndType": "None",
-
       "GradientFill": null,
-
       "IsAuto": true,
-
       "IsAutomaticColor": true,
-
       "IsVisible": true,
-
       "JoinType": "Round",
-
       "Style": "Solid",
-
       "Transparency": 0.0,
-
       "Weight": "HairLine",
-
       "WeightPt": 0.0
-
     },
-
     "Font": {
-
-      "Color": {
-
-        "A": 255,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
       "DoubleSize": 10.0,
-
       "IsBold": false,
-
       "IsItalic": false,
-
       "IsStrikeout": false,
-
       "IsSubscript": false,
-
       "IsSuperscript": false,
-
       "Name": "Arial",
-
       "Size": 10,
-
       "Underline": "None"
-
     },
-
     "IsAutomaticSize": true,
-
     "IsInnerMode": null,
-
     "Shadow": false,
-
     "ShapeProperties": null,
-
     "Width": 823,
-
     "Height": 1043,
-
     "X": 3125,
-
     "Y": 1466,
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend",
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
-  "Code": 0,
-
-  "Status": "0"
-
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
- 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
- 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
- 
+### Utilizzare gli SDK di Aspose.Cells Cloud
+
+L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello e ti permette di concentrarti sui compiti del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

@@ -1,78 +1,98 @@
-﻿---
-title: Obtenir le format de remplissage d'une zone de graphique à partir d'une feuille de calcul
+---
+title: "Obtenir le format de remplissage de la zone de graphique – API Aspose.Cells Cloud (v3.0)"
 type: docs
-url: /fr/charts/chart-area/fill-format/get/
+url: /charts/chart-area/fill-format/get/
 aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
 weight: 70
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir le format de remplissage d'une zone de graphique à partir d'une feuille de calcul
+keywords:
+  - "Aspose.Cells"
+  - "Zone de graphique"
+  - "Format de remplissage"
+  - "API REST"
+  - "Excel"
+description: "Récupérer le format de remplissage (couleur, motif, dégradé) d'une zone de graphique dans une feuille de calcul Excel via l'API Aspose.Cells Cloud. Inclut un exemple cURL, des extraits de code SDK, les étapes d'authentification et les détails de la réponse."
+ArticleTitle: "Obtenir le format de remplissage de la zone de graphique – API Aspose.Cells Cloud v3.0"
 ---
-Ce REST API indique comment obtenir des informations sur le format de remplissage de la zone de graphique.
- 
-## RSET API
- 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat
- 
-```
- Les paramètres de la requête sont :
- 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du classeur.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
-| index des graphiques| entier| chemin| L'index des graphiques.|
-| dossier| chaîne| requête| Dossier de classeur.|
-| nom de stockage| chaîne| requête| nom de stockage.|
- 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
- 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
- 
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Cet API REST permet de récupérer les informations de format de remplissage d'une **zone de graphique**.
+
+**Prérequis**  
+Pour appeler ce point de terminaison, vous devez disposer d’un jeton d’accès OAuth/JWT valide. Obtenez ce jeton en suivant le flux d’authentification d’Aspose.Cells Cloud, puis incluez-le dans l’en-tête `Authorization` sous la forme `Bearer <jeton jwt>`. Si vous utilisez l’un des SDK, assurez-vous que le SDK est configuré avec vos identifiants `client_id` et `client_secret` avant d’invoquer la méthode.
+
+## API GetChartAreaFillFormat
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat
+```
+
+### **Sécurité et authentification**
+
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
+
+### Paramètres de la requête
+
+| Nom du paramètre | Type    | Emplacement | Description                              |
+| ---------------- | ------- | ----------- | ---------------------------------------- |
+| name             | string  | path        | Nom du classeur.                         |
+| sheetName        | string  | path        | Nom de la feuille de calcul.             |
+| chartIndex       | integer | path        | Index du graphique.                      |
+| folder           | string  | query       | Dossier contenant le classeur.           |
+| storageName      | string  | query       | Nom du stockage.                         |
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat) définit une interface de programmation accessible publiquement et permet d’effectuer directement des interactions REST depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder aux services web Aspose.Cells. L’exemple ci-dessous montre comment appeler cette API à l’aide de cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea/fillFormat" 
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea/fillFormat" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "FillFormat": {
-
     "Type": "Automatic"
-
   },
-
-  "Code": "200",
-
+  "Code": 200,
   "Status": "OK"
-
 }
-
 ```
+
+**Remarques**  
+- Une requête réussie renvoie le code HTTP 200 accompagné des détails du format de remplissage.  
+- Le code HTTP 401 indique une défaillance d’authentification (jeton invalide ou manquant).  
+- Le code HTTP 404 est renvoyé si le classeur, la feuille de calcul ou l’index du graphique spécifié n’existe pas.  
+- Le code HTTP 500 signale une erreur côté serveur ; réessayez la requête ou contactez le support si le problème persiste.
+
+| Code | Signification                                           |
+|------|---------------------------------------------------------|
+| 200  | Succès – format de remplissage renvoyé                  |
+| 401  | Non autorisé – jeton invalide ou manquant               |
+| 404  | Non trouvé – classeur, feuille de calcul ou graphique introuvable |
+| 500  | Erreur interne du serveur                               |
+
+Pour des opérations connexes, consultez les points de terminaison **Get Chart Area Border** (Obtenir la bordure de la zone de graphique) et **Get Chart Title** (Obtenir le titre du graphique).
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
 ## Famille de SDK Cloud
- 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
- 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+
+L’utilisation d’un SDK constitue la méthode optimale pour accélérer le développement. Un SDK gère les détails de bas niveau, vous permettant ainsi de vous concentrer sur les tâches de votre projet. Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants illustrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Perl" tabName10="Go" >}}
 

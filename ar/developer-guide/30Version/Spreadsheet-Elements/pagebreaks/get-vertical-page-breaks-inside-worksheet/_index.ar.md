@@ -1,93 +1,71 @@
-﻿---
-title: الحصول على فاصل الصفحة العمودي
-second_title: Documen
-linktitle: الحصول على فاصل الصفحة العمودي
-type: docs
-url: /ar/page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
-keywords: Add a page break in an Excel worksheet
-description: يدعم Cloud REST إضافة فاصل صفحات في ورقة عمل. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على فواصل الصفحات الرأسية
 ---
-يشير هذا REST API إلى الحصول على فواصل الصفحات `vertical`.
+title: "الحصول على فواصل الصفحات العمودية"
+second_title: "مستند"
+linktitle: "الحصول على فواصل الصفحات العمودية"
+type: docs
+url: /page-breaks/get-vertical-page-breaks/
+aliases: [/get-vertical-page-breaks-inside-worksheet/]
+keywords: "Aspose.Cells، فواصل الصفحات العمودية، واجهة برمجة تطبيقات إكسل، جدول بيانات سحابي، واجهة برمجة تطبيقات REST"
+description: "استرجاع فواصل الصفحات العمودية من ورقة عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمن عنوان HTTPS، المعاملات المطلوبة، مثال cURL، تفاصيل الاستجابة، معالجة الأخطاء، وأمثلة لحزم تطوير البرمجيات (SDK)."
+weight: 20
+---
 
-## RSET API
+تسترجع هذه الواجهة البرمجية (REST API) **فواصل الصفحات العمودية** من ورقة عمل.
+
+## واجهة برمجة التطبيقات REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
 ```
 
-معلمات الطلب هي:
+### معاملات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعاملة | النوع | الموقع | الوصف | مطلوب |
+| ------------ | ------ | -------- | ---------------------------------------------------- | -------- |
+| `name` | string | path | اسم ملف إكسل. | نعم |
+| `sheetName` | string | path | اسم ورقة العمل التي سيتم استرجاع الفواصل منها. | نعم |
+| `folder` | string | query | المجلد الموجود به الملف في التخزين. | لا |
+| `storageName` | string | query | اسم تخزين Aspose Cloud المراد استخدامه. | لا |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PageBreaks/GetVerticalPageBreaks) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تُعرّف [مواصفة OpenAPI](https://apireference.aspose.cloud/cells/#/PageBreaks/GetVerticalPageBreaks) واجهة برمجة مفتوحة قابلة للاستخدام العام، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام **cURL** للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء استدعاء لواجهة برمجة التطبيقات السحابية باستخدام cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "VerticalPageBreaks": {
-
     "VerticalPageBreakList": [
-
       {
-
         "Column": 3,
-
         "EndRow": 1048575,
-
         "StartRow": 0
-
       }
-
     ],
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/VerticalPageBreaks",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/VerticalPageBreaks",
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
 ```
 
@@ -95,11 +73,34 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheet
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### تفاصيل الاستجابة
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| الحقل | النوع | الوصف |
+| ----------------------- | ------ | ----------------------------------------------------------------------------------- |
+| `VerticalPageBreakList` | array | مجموعة من كائنات فاصل الصفحات العمودي. |
+| `Column` | int | فهرس العمود (مبني على الصفر) حيث يحدث الفاصل. |
+| `StartRow` | int | الصف الأول في نطاق الفاصل (مبني على الصفر). |
+| `EndRow` | int | الصف الأخير في نطاق الفاصل (مبني على الصفر، عادةً `1048575` لآخر صف). |
+| `link.Href` | string | رابط ذاتي يشير إلى المورد (بروتوكول HTTPS). |
+| `Code` | int | رمز حالة HTTP المردود من الخدمة. |
+| `Status` | string | وصف نصي لحالة HTTP. |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+### معالجة الأخطاء
+
+| رمز HTTP | المعنى | السبب الشائع |
+| --------- | --------------------- | ------------------------------------------- |
+| 401 | غير مُصدق (Unauthorized) | رمز JWT مفقود أو غير صالح. |
+| 404 | غير موجود (Not Found) | الملف أو ورقة العمل المحددة غير موجودة. |
+| 400 | طلب غير صالح (Bad Request) | معاملات استعلام غير صالحة أو مشوّهة. |
+| 500 | خطأ داخلي في الخادم (Internal Server Error) | حالة غير متوقعة على جانب الخادم. |
+
+تحقق من الحقلين `Code` و `Status` في استجابة JSON للحصول على تفاصيل إضافية.
+
+## عائلة حزم تطوير البرمجيات (SDK) السحابية
+
+استخدام حزمة تطوير البرمجيات (SDK) هو أسرع طريقة لتطوير تطبيقات تتفاعل مع Aspose.Cells Cloud. تُجرّد SDK التفاصيل من المستوى المنخفض، مما يسمح لك بالتركيز على منطق عملك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على قائمة كاملة بحزم تطوير البرمجيات الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام حزم تطوير البرمجيات المختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -152,4 +153,3 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheet
 {{< /tab >}}
 
 {{< /tabs >}}
-

@@ -1,71 +1,132 @@
-﻿---
-title: Çoklu Güncelleme Cells Stil
+---
+title: "Birden Fazla Hücre Stilini Güncelle – Aspose.Cells Cloud API Referansı (v3.0)"
 type: docs
 url: /tr/update-multiple-cells-style/
 weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Çoklu Güncelleme Cells Stili
+keywords: ["Aspose.Cells", "birden fazla hücre stilini güncelle", "Excel hücre stili API’si", "bulut SDK", "REST API", "cURL örneği", "JSON isteği", "JWT kimlik doğrulama"]
+description: "Aspose.Cells Cloud REST API v3.0 kullanarak bir Excel çalışma kitabındaki hücre aralığının stilini nasıl güncelleyeceğinizi öğrenin. Endpoint, HTTP yöntemi, parametreler, cURL ve SDK örnekleri, kimlik doğrulama, hata işleme ve sürüm bilgilerini içerir."
+ArticleTitle: "Birden Fazla Hücre Stilini Güncelle – Aspose.Cells Cloud API Referansı (v3.0)"
 ---
-Bu REST API, Excel dosyasındaki bir hücreye `cells style`'in ayarlandığını gösterir.
 
-## RSET API
+## REST API
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
- 
+Bu REST API, bir Excel çalışma kitabındaki hücre aralığının **stilini** ayarlar.
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
 ```
 
-İstek parametreleri şunlardır:
+## Güvenlik ve Kimlik Doğrulama
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabı adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| menzil| sicim| sorgu| Menzil.|
-| stil|| vücut| güncelleme stili ayarlarıyla.|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulamaya](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) ihtiyaç duyar.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### İstek Parametreleri
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Parametre Adı | Tür   | Konum | Açıklama |
+|---------------|-------|-------|----------|
+| **name**      | string | path  | Çalışma kitabının adı. |
+| **sheetName** | string | path  | Çalışma sayfasının adı. |
+| **range**     | string | query | Hücre aralığı (örneğin, `A1:A10`). |
+| **style**     | object | body  | Uygulanacak stili tanımlayan JSON nesnesi. |
+| **folder**    | string | query | Çalışma kitabını içeren klasör. |
+| **storageName**| string | query | Depo adı. |
+
+#### Stil Nesnesi
+`style` JSON nesnesi hücre biçimlendirmesini temsil eder. Aşağıdaki isteğe bağlı özelliklerden herhangi birini içerebilir:
+
+- **Font** – Yazı tipi ayarları (`Name`, `Size`, `IsBold`, `IsItalic`, `Color`, vb.).  
+- **BackgroundColor** – ARGB formatında arka plan rengi.  
+- **ForegroundColor** – ARGB formatında ön plan rengi.  
+- **Name**, **CultureCustom**, **Custom** – Ek stil meta verileri.
+
+## **Yanıt**
+
+CellCloudResponse döndürür.
+
+- **Yanıt Alanları Genel Bakış**
+
+| Alan              | Tür     | Açıklama                                           |
+| ----------------- | ------- | -------------------------------------------------- |
+| `Status`          | string  |                                                    |
+| `Code`            | integer | 200,400,401,500,...                               |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlamı                     | Açıklama                                        |
+|-----|----------------------------|-------------------------------------------------|
+| 200 | OK                         | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request                | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized               | Geçersiz veya eksik JWT belirteci. |
+| 413 | Payload Too Large          | Yüklenen dosya boyut limitini aşıyor. |
+| 500 | Internal Server Error      | Beklenmeyen sunucu hatası. |
+
+## PostUpdateWorksheetRangeStyle API’sini SDK’larla Nasıl Kullanılır
+
+### PostUpdateWorksheetRangeStyle API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle), tam şemayı sağlar.
+
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, Cloud API’ye cURL ile nasıl istek gönderileceğini göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/style?range=a1%3Aa10" \
--X POST \
- -d "{ \"Font\": { \"Color\": { \"A\":255, \"R\": 255, \"G\": 255, \"B\": 0 }, \"DoubleSize\": 10, \"IsBold\": true, \"IsItalic\": true, \"IsStrikeout\": true, \"IsSubscript\": true, \"IsSuperscript\": true, \"Name\": \"Arial\", \"Size\": 22 }, \"Name\": \"string\", \"CultureCustom\": \"string\", \"Custom\": \"string\", \"BackgroundColor\": { \"A\": 10, \"R\": 10, \"G\": 10, \"B\": 10 }, \"ForegroundColor\": { \"A\": 255, \"R\": 255, \"G\": 255, \"B\": 0 } \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+cURL -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/style?range=a1%3Aa10" \
+  -X POST \
+  -d '{
+        "Font": {
+          "Color": { "A":255, "R":255, "G":255, "B":0 },
+          "Size": 22,
+          "IsBold": true,
+          "IsItalic": true,
+          "IsStrikeout": true,
+          "IsSubscript": true,
+          "IsSuperscript": true,
+          "Name": "Arial"
+        },
+        "Name": "string",
+        "CultureCustom": "string",
+        "Custom": "string",
+        "BackgroundColor": { "A":10, "R":10, "G":10, "B":10 },
+        "ForegroundColor": { "A":255, "R":255, "G":255, "B":0 }
+      }' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+### Aspose.Cells Cloud SDK’larını Kullanma
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+SDK kullanmak, geliştirme sürecini hızlandırmak için en iyi yoldur. Bir SDK, düşük seviye detayları işler ve projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web servislerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

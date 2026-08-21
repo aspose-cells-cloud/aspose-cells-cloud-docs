@@ -1,74 +1,132 @@
-﻿---
-title: Aggiorna proprietà grafico
-type: docs
-url: /it/charts/propreties/update/
-aliases: [/update-chart-propreties/]
-weight: 160
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Aggiorna proprietà grafico
 ---
-Questo REST API indica le proprietà del grafico di aggiornamento
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
- 
+title: "Aggiorna le proprietà del grafico"
+type: docs
+url: /charts/properties/update/
+aliases: [/update-chart-properties/]
+weight: 160
+keywords: "Aspose.Cells, grafico, aggiornamento, Excel, REST API, SDK"
+description: "Scopri come aggiornare le proprietà del grafico (tipo, titolo, legenda, ecc.) in un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include l'endpoint, i parametri, un esempio cURL e frammenti di codice per SDK in C#, Java, PHP, Ruby, Node.js, Perl e Go."
+ArticleTitle: "Aggiorna le proprietà del grafico – Aspose.Cells Cloud REST API"
+---
+
+Questa REST API aggiorna le proprietà del grafico.
+
+### **Sicurezza e autenticazione**
+
+Le API REST di Aspose.Cells Cloud sono sicure e richiedono <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">l'autenticazione basata su token JWT</a>.
+
+## API PostWorksheetChart
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
 ```
- I parametri della richiesta sono:
- 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero||
-| Nome foglio| corda| sentiero||
-| graficoIndice| intero| sentiero||
-| grafico|| corpo||
-| cartella| corda| domanda||
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
 
-<br/>
- 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChart) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
- 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+### Parametri della richiesta
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Nome parametro | Tipo    | Percorso/Query string/Corpo HTTP | Descrizione                                                   |
+| -------------- | ------- | -------------------------------- | ------------------------------------------------------------- |
+| name           | string  | percorso                         | Nome del file Excel.                                          |
+| sheetName      | string  | percorso                         | Nome del foglio di calcolo contenente il grafico.             |
+| chartIndex     | integer | percorso                         | Indice in base zero del grafico da aggiornare.                |
+| chart          | object  | corpo                            | Oggetto JSON che definisce le proprietà del grafico da modificare. |
+| folder         | string  | query                            | Cartella nello storage in cui si trova il file.               |
+| storageName    | string  | query                            | Nome del servizio di storage.                                 |
+
+### Schema del corpo della richiesta
+
+L'oggetto **`chart`** contiene le proprietà che è possibile modificare. Di seguito è riportato un esempio rappresentativo in JSON che include diversi campi comunemente utilizzati:
+
+```json
+{
+  "Title": {
+    "Text": "Vendite trimestrali"
+  },
+  "ShowLegend": true,
+  "Type": "Line",
+  "DataLabels": {
+    "ShowValue": true,
+    "ShowPercentage": false
+  },
+  "ChartArea": {
+    "BorderColor": "Blue",
+    "FillColor": "White"
+  }
+}
+```
+
+> **Nota:** È necessario fornire solo i campi che si desidera modificare. Le proprietà omesse mantengono i valori precedentemente impostati.
+
+La <a href="https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChart" target="_blank" rel="noopener noreferrer">Specifiche OpenAPI</a> definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud tramite cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet4/charts/1" 
--d '{"Type": "line"}'
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet4/charts/1" \
+-d '{"Type": "line"}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-    "Code":200,
-    
-    "Status":"OK"
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
- 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
- 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+## Risposta
+
+L'API restituisce un oggetto JSON che indica il risultato dell'operazione. Un aggiornamento riuscito restituisce:
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+**Codici di stato di successo**
+
+| Stato HTTP | Descrizione |
+| ---------- | ----------- |
+| 200        | OK – Le proprietà del grafico sono state aggiornate correttamente. |
+
+**Intestazioni della risposta**
+
+| Intestazione      | Descrizione |
+| ----------------- | ----------- |
+| `Content-Type`    | `application/json` – Indica che il corpo della risposta è in formato JSON. |
+| `X-RequestId`     | Identificatore univoco della richiesta (utile per la risoluzione dei problemi). |
+
+Le risposte di errore possibili includono:
+
+| Stato HTTP | Descrizione                                     |
+| ---------- | ----------------------------------------------- |
+| 400        | Richiesta non valida – parametri o corpo non validi |
+| 401        | Non autorizzato – token mancante o non valido   |
+| 404        | Non trovato – file, foglio di calcolo o grafico non trovato |
+| 500        | Errore interno del server                       |
+
+Per altre operazioni relative ai grafici, consulta gli argomenti correlati come [Aggiorna il titolo del grafico](/charts/title/update/) e [Aggiorna la legenda del grafico](/charts/legend/update/).
+
+## Famiglia di SDK Cloud
+
+L'utilizzo di un SDK rappresenta il modo più efficace per accelerare lo sviluppo. Un SDK gestisce i dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Consulta il <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">repository GitHub</a> per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come effettuare chiamate ai servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="6" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Perl" tabName6="Go" >}}
 

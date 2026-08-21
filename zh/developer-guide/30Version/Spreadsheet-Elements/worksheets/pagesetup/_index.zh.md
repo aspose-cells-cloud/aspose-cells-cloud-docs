@@ -1,53 +1,90 @@
-﻿---
-title: 工作表页面设置
-second_title: Documen
-linktitle: 页面设置
-type: docs
-url: /zh/page-setup/
-keywords: An Excel worksheet page setup
-description: Aspose.Cells Cloud REST API 支持添加 Excel 工作表。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 20
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、Excel 工作表页面设置
 ---
-# **页面设置**
+title: "工作表页面设置"
+second_title: "文档"
+linktitle: "页面设置"
+type: docs
+url: /page-setup/
+keywords: "Aspose.Cells, pageSetup, 工作表, 打印设置, 边距, 方向, 纸张大小, 页眉, 页脚, 缩放比例"
+description: "了解如何使用 Aspose.Cells Cloud 的 PageSetup 对象配置 Excel 工作表的打印布局。包含属性列表、默认值、取值范围以及 C#、Java 和 Python 的代码示例。"
+weight: 20
+ArticleTitle: "工作表页面设置 – 使用 Aspose.Cells Cloud 配置打印布局"
+---
 
-excel打印页面设置
+# **PageSetup（页面设置）**
 
-## **特性**
+Excel 打印页面设置
 
-|属性名称|房产类型|可为空|只读|默认值|描述|
-|:- |:- |:- |:- |:- |:- |
-|黑白|布尔值|真的|错误的||表示文档元素是否以黑白打印。|
-|下边距|漂浮的|真的|错误的||表示下边距的大小，单位为厘米。|
-|水平居中|布尔值|真的|错误的||表示纸张是否水平居中打印。|
-|垂直居中|布尔值|真的|错误的||表示纸张是否垂直居中打印。|
-|首页页码|整数|真的|错误的||表示打印此工作表时将使用的第一个页码。|
-|适合页面高度|整数|真的|错误的||表示工作表打印时将缩放到的页数。默认值为 1。|
-|适合页面宽度|整数|真的|错误的||表示工作表打印时将缩放到的页宽数。默认值为 1。|
-|页脚边距|漂浮的|真的|错误的||表示从页面底部到页脚的距离，以厘米为单位。|
-|页眉边距|漂浮的|真的|错误的||表示从页面顶部到页眉的距离，以厘米为单位。|
-|IsAutoFirstPageNumber|布尔值|真的|错误的||指示是否自动分配第一个页码。|
-|IsHFAlignMargins|布尔值|真的|错误的||指示页眉和页脚边距是否与页面边距对齐。如果此属性为 true，则左页眉和页脚将与左边距对齐，右页眉和页脚将与右边距对齐。此选项默认启用。|
-|IsHFDiffFirst|布尔值|真的|错误的||True 表示第一页的页眉/页脚与其他页面不同。|
-|IsHFDiff奇偶|布尔值|真的|错误的||True 表示奇数页的页眉/页脚与奇数页不同。|
-|IsHFScaleWithDoc|布尔值|真的|错误的||指示页眉和页脚是否随文档缩放而缩放。仅适用于 Excel 2007。|
-|IsPercentScale|布尔值|真的|错误的||如果此属性为 False，则 FitToPagesWide 和 FitToPagesTall 属性控制工作表的缩放方式。|
-|左边距|漂浮的|真的|错误的||表示左边距的大小，单位为厘米。|
-|命令|细绳|真的|错误的||表示 Microsoft Excel 在打印大型工作表时用于对页面进行编号的顺序。|
-|方向|细绳|真的|错误的||表示页面打印方向。横向/纵向|
-|纸张尺寸|细绳|真的|错误的||表示纸张的大小。|
-|打印区域|细绳|真的|错误的||代表要打印的范围。|
-|打印评论|细绳|真的|错误的||表示注释随工作表一起打印的方式。|
-|打印副本|整数|真的|错误的||获取并设置要打印的份数。|
-|打印草稿|布尔值|真的|错误的||表示是否打印不带图形的纸张。|
-|打印错误|细绳|真的|错误的||指定显示的打印错误类型。|
-|打印网格线|布尔值|真的|错误的||表示单元格网格线是否打印在页面上。|
-|打印标题|布尔值|真的|错误的||表示是否随此页面打印行标题和列标题。|
-|打印质量|整数|真的|错误的||代表打印质量。|
-|打印标题列|细绳|真的|错误的||表示包含要在每页左侧重复的单元格的列。|
-|打印标题行|细绳|真的|错误的||表示包含要在每页顶部重复的单元格的行。|
-|右边距|漂浮的|真的|错误的||表示右边距的大小，单位为厘米。|
-|上边距|漂浮的|真的|错误的||表示上边距的大小，以厘米为单位。|
-|飞涨|整数|真的|错误的||表示缩放因子（百分比）。该值应介于 10 到 400 之间。|
-|标题|容器|真的|错误的||代表页眉。|
-|页脚|容器|真的|错误的||代表页脚。|
+## 概述
+
+**PageSetup** 对象用于定义 Excel 工作表的打印布局选项，例如边距、页面方向、缩放比例、页眉、页脚以及其他与打印相关的设置。通过配置这些属性，开发者可生成符合预期外观和分页效果的可打印工作簿。
+
+以下是一个简短的 C# 示例，演示如何使用 Aspose.Cells Cloud SDK 设置常见的页面设置属性：
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+
+// 初始化 API 客户端（请替换为您的凭据）
+var apiInstance = new CellsApi("YOUR_CLIENT_ID", "YOUR_CLIENT_SECRET");
+
+// 定义 PageSetup（页面设置）参数
+var pageSetup = new PageSetup()
+{
+    Orientation = "Landscape",
+    PaperSize = "A4",
+    CenterHorizontally = true,
+    CenterVertically = true,
+    Zoom = 100
+};
+
+// 将设置应用于工作簿的第一个工作表
+apiInstance.PutWorksheetPageSetup("Sample.xlsx", "Sheet1", pageSetup);
+```
+
+该代码段将工作表设置为横向打印，使用 A4 纸张，内容水平和垂直居中，并应用 100% 的缩放比例。
+
+## 属性说明
+
+| 属性名称                | 属性类型 | 可为空 | 只读 | 默认值           | 描述                                                                         |
+| ----------------------- | -------- | ------ | ---- | ---------------- | ---------------------------------------------------------------------------- |
+| BlackAndWhite           | bool     | false  | false| false            | 以黑白模式打印工作表。                                                       |
+| BottomMargin            | float    | true   | false| 2.54 cm          | 底边距大小（单位：厘米）。                                                   |
+| CenterHorizontally      | bool     | false  | false| false            | 打印时使工作表在页面中水平居中。                                             |
+| CenterVertically        | bool     | false  | false| false            | 打印时使工作表在页面中垂直居中。                                             |
+| FirstPageNumber         | int      | true   | false| 1                | 打印工作表时使用的第一页页码。                                               |
+| FitToPagesTall          | int      | false  | false| 1                | 工作表在垂直方向上缩放至的页数。                                             |
+| FitToPagesWide          | int      | false  | false| 1                | 工作表在水平方向上缩放至的页数。                                             |
+| FooterMargin            | float    | true   | false| 2.54 cm          | 页脚底部到页面底部的距离（单位：厘米）。                                     |
+| HeaderMargin            | float    | true   | false| 2.54 cm          | 页眉顶部到页面顶部的距离（单位：厘米）。                                     |
+| IsAutoFirstPageNumber   | bool     | false  | false| false            | 是否自动分配第一页页码。                                                     |
+| IsHFAlignMargins        | bool     | false  | false| true             | 为 true 时，页眉/页脚边距与页面边距对齐。                                    |
+| IsHFDiffFirst           | bool     | false  | false| false            | 表示首页的页眉/页脚与其他页不同。                                            |
+| IsHFDiffOddEven         | bool     | false  | false| false            | 表示奇数页与偶数页的页眉/页脚不同。                                          |
+| IsHFScaleWithDoc        | bool     | false  | false| false            | 页眉和页脚随文档一起缩放（适用于 Excel 2007 及更高版本）。                   |
+| IsPercentScale          | bool     | false  | false| true             | 为 false 时，`FitToPagesWide` 和 `FitToPagesTall` 控制缩放比例。            |
+| LeftMargin              | float    | true   | false| 2.54 cm          | 左边距大小（单位：厘米）。                                                   |
+| Order                   | string   | true   | false| "DownThenOver"   | Excel 在打印大型工作表时对页面编号的顺序。                                   |
+| Orientation             | string   | false  | false| "Portrait"       | 页面方向：**Landscape（横向）** 或 **Portrait（纵向）**。                    |
+| PaperSize               | string   | true   | false| "A4"             | 打印所用的纸张大小。                                                         |
+| PrintArea               | string   | true   | false| （无）           | 需打印的单元格区域（例如 `"A1:D20"`）。                                     |
+| PrintComments           | string   | true   | false| "NoComments"     | 打印工作表时如何处理批注。                                                   |
+| PrintCopies             | int      | true   | false| 1                | 打印份数。                                                                   |
+| PrintDraft              | bool     | false  | false| false            | 以草稿模式打印工作表（不包含图形）。                                         |
+| PrintErrors           | string   | true   | false| "Display"        | 打印错误的显示类型。                                                         |
+| PrintGridlines          | bool     | false  | false| false            | 打印单元格网格线。                                                           |
+| PrintHeadings           | bool     | false  | false| false            | 打印行标题和列标题。                                                         |
+| PrintQuality            | int      | true   | false| 600              | 打印质量设置（单位：每英寸点数 DPI）。                                       |
+| PrintTitleColumns       | string   | true   | false| （无）           | 每页左侧重复打印的列范围。                                                   |
+| PrintTitleRows          | string   | true   | false| （无）           | 每页顶部重复打印的行范围。                                                   |
+| RightMargin             | float    | true   | false| 2.54 cm          | 右边距大小（单位：厘米）。                                                   |
+| TopMargin               | float    | true   | false| 2.54 cm          | 顶边距大小（单位：厘米）。                                                   |
+| Zoom                    | int      | false  | false| 100              | 缩放比例（百分比），取值范围为 10–400。                                      |
+| Header                  | object   | true   | false| （无）           | 页面页眉配置。                                                               |
+| Footer                  | object   | true   | false| （无）           | 页面页脚配置。                                                               |
+
+## 相关对象
+
+- **Header** – 用于配置工作表页眉。  
+- **Footer** – 用于配置工作表页脚。  
+- **PrintOptions** – 其他打印相关设置，例如分页符和打印区域。  
+---

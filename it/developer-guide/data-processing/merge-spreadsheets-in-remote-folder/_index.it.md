@@ -1,106 +1,114 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Unisci i file di foglio di calcolo corrispondenti in un file in una cartella remota
-second_title: Documen
-ArticleTitle: Merge matching spreadsheet files into a file in a remote Folder
-linktitle: Unisci fogli di calcolo in cartelle remote
-type: docs
-url: /it/merge-spreadsheets-in-remote-folder/
-keywords: Merge spreadsheets, cloud storage, Excel API, remote processing, spreadsheet formats, REST AP
-description: Combina i file del foglio di calcolo archiviati nell'archiviazione cloud in un unico file e il formato del file supporta 30 formati per l'output, come PDF, Csv, Json e altri formati comuni
-weight: 100
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, JSON, Markdown, Unisci fogli di calcolo, Elaborazione cloud, Gestione file remota
 ---
-Unisci i file di fogli di calcolo corrispondenti nei file nella cartella remota; il formato del file di output supporta oltre 30 formati, come PDF, Csv, Json e altri formati comuni.
+title: "Unisci Fogli di Calcolo Corrispondenti in una Cartella Remota"
+description: "Unisci file di fogli di calcolo memorizzati nell'archivio cloud di Aspose Cloud in un unico file. Supporta oltre 30 formati di output come PDF, CSV, JSON, XLSX, ODS, XPS e altri."
+keywords: "Aspose.Cells, unisci fogli di calcolo, cartella remota, API, PDF, CSV, JSON, XLSX, ODS, XPS"
+weight: 100
+type: docs
+url: /merge-spreadsheets-in-remote-folder/
+---
 
+Unisci più file di fogli di calcolo memorizzati in una cartella remota dell'archivio cloud di Aspose Cloud in un unico file di output. L'operazione viene eseguita interamente nel cloud, eliminando la necessità di scaricare i file sorgente localmente. Sono supportati oltre 30 formati di output (PDF, CSV, JSON, XLSX, ODS, XPS, …).
 
-## **Unisci fogli di calcolo nella cartella remota API**
+## API MergeSpreadsheetsInRemoteFolder
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
+PUT https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
 ```
 
-### **Parametri di richiesta:**
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP| Descrizione|
-|:- |:- |:- |:- |
-| cartella| Corda| Domanda|La cartella in cui verranno archiviati i file uniti.|
-| fileMatchExpression| Corda| Domanda| Espressione per abbinare i file da unire.|
-| outFormat| Corda| Domanda| Formato del file di output desiderato.|
-| mergeInOneSheet| Booleano| Domanda| Indica se combinare tutti i dati in un unico foglio di lavoro.|
-| Nome di archiviazione| Corda| Domanda| (Facoltativo) Nome dell'archiviazione cloud personalizzata; se omessa, per impostazione predefinita viene utilizzata l'archiviazione predefinita.|
-| Percorso in uscita| Corda| Domanda| (Facoltativo) Percorso della cartella in cui archiviare la cartella di lavoro; il valore predefinito è null.|
-|outStorageName| Corda| Domanda| Nome dell'archivio per il file di output.|
-| fontPosizione| Corda| Domanda| Specifica i font personalizzati.|
-| regione| Corda| Domanda| Imposta l'area del foglio di calcolo.|
-| password| Corda| Domanda| La password per aprire il file del foglio di calcolo.|
+Le API di Aspose.Cells Cloud sono sicure e richiedono <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">l'autenticazione basata su token JWT</a>.
 
-## **Risposta**
+### Parametri della richiesta <a id="request-parameters"></a>
+
+| Nome                    | Tipo    | Posizione | Obbligatorio | Descrizione                                                                                          |
+| ----------------------- | ------- | --------- | ------------ | ---------------------------------------------------------------------------------------------------- |
+| **folder**              | string  | query     | **Sì**       | Cartella dell'archivio cloud contenente i fogli di calcolo sorgente.                               |
+| **fileMatchExpression** | string  | query     | **Sì**       | Espressione per selezionare i file (es. `*report*.xlsx`). Supporta i caratteri jolly `*` e `?`.     |
+| **outFormat**           | string  | query     | **Sì**       | Format di output desiderato (`PDF`, `CSV`, `JSON`, `XLSX`, `ODS`, `XPS`, …).                        |
+| **mergeInOneSheet**     | boolean | query     | **Sì**       | `true` – tutti i dati vengono uniti in un'unica cartella di lavoro. `false` – ogni file sorgente ottiene la propria cartella di lavoro. |
+| **storageName**         | string  | query     | No           | Nome personalizzato dell'archivio; se omesso, viene utilizzato l'archivio principale.               |
+| **outPath**             | string  | query     | No           | Cartella di destinazione per il file unito. Se omesso, il file viene salvato nella cartella sorgente. |
+| **outStorageName**      | string  | query     | No           | Nome dell'archivio in cui verrà scritto il file unito.                                              |
+| **fontsLocation**       | string  | query     | No           | Percorso di una cartella contenente caratteri personalizzati (necessario per l'esportazione in PDF/immagini). |
+| **region**              | string  | query     | No           | Impostazioni locali per la formattazione di numeri, date e valute (es. `it-IT`, `en-US`).           |
+| **password**            | string  | query     | No           | Password necessaria per aprire eventuali fogli di calcolo protetti.                                 |
+
+## Esempio di richiesta (cURL) <a id="request-example"></a>
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets?folder=MyFolder&fileMatchExpression=*.xlsx&outFormat=PDF&mergeInOneSheet=true" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Accept: application/json"
+```
+
+### **Risposta**
 
 ```json
-[
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-        }
-    }
-]
+{
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream"
+  }
+}
 ```
 
-### Codici di errore
+Il file può essere scaricato direttamente dal campo `FileUrl` oppure salvato nella posizione specificata da `outPath`.
 
-- **400 Richiesta non valida**: URI Apose.Cells Cloud API non valido.
-- **401 Non autorizzato**: Token di accesso non valido. Oppure ID client e segreto non validi.
-- **404 Non trovato**: Il file del foglio di calcolo non è accessibile.
-- **Errore del server 500**: Il foglio di calcolo ha riscontrato un'anomalia nell'ottenimento dei dati di calcolo.
+**Dettagli della risposta in caso di successo**
 
-## Dove dovremmo utilizzare il foglio di calcolo Merge nella cartella remota API?
+| Codice di stato | Content‑Type               | Descrizione                                         |
+| --------------- | -------------------------- | --------------------------------------------------- |
+| 200 OK          | `application/octet-stream` | Flusso binario del file del foglio di calcolo unito. |
+| 202 Accepted    | `application/json`         | JSON contenente `FileUrl`, `FileName`, ecc.        |
 
-Quando è necessario unire più file di dati, è possibile utilizzare questo API.
+**Codici di stato HTTP**
 
-## Perché dovresti usare il foglio di calcolo Merge nella cartella remota API?
+| Codice | Significato           | Descrizione                                                       |
+| ------ | --------------------- | ----------------------------------------------------------------- |
+| 200    | OK                    | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida  | Parametri mancanti o non validi (es. tipo di file non supportato). |
+| 401    | Non autorizzato       | Token JWT non valido o mancante.                                  |
+| 413    | Payload troppo grande | Il file caricato supera il limite di dimensione.                 |
+| 500    | Errore interno del server | Errore imprevisto del server.                                   |
 
-- I file di archiviazione cloud non devono essere scaricati e possono essere uniti direttamente nel cloud.
-- Unisci in batch più file di fogli di calcolo, supporta l'espressione corrispondente.
-- Lo sviluppo può essere completato rapidamente tramite l'SDK esistente.
+## Come utilizzare l'API di unione dei fogli di calcolo con gli SDK
 
-## Come utilizzare il foglio di calcolo Merge nella cartella remota API con gli SDK
+### Specifica OpenAPI
 
-### Unisci foglio di calcolo nella cartella remota API Specifiche
+La <a href="https://reference.aspose.cloud/cells/#/DataProcessingController/MergeSpreadsheetsInRemoteFolder" rel="noopener noreferrer">Specifica OpenAPI</a> fornisce una descrizione leggibile automaticamente dell'API, consentendo interazioni REST dirette.
 
- IL[Unisci foglio di calcolo nella cartella remota API Specifiche](https://reference.aspose.cloud/cells/#/DataProcessingController/MergeSpreadsheetsInRemoteFolder) fornisce un'interfaccia di programmazione accessibile al pubblico che consente interazioni REST direttamente da un browser web.
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API cloud tramite cURL.
 
-### Utilizzare gli SDK cloud Aspose.Cells
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
-Utilizzare l'SDK è il modo più rapido per sviluppare, poiché astrae i dettagli di basso livello, consentendo di unire i file di foglio di calcolo corrispondenti nei file nella cartella remota tramite codice breve.
- Si prega di controllare il[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+{{< tab tabNum="11" >}}
 
-I seguenti esempi di codice illustrano come interagire con i servizi Web Aspose.Cells utilizzando vari SDK:
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MergeSpreadsheetsInRemoteFolder.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets?folder=MyFolder&fileMatchExpression=*.xlsx&outFormat=PDF&mergeInOneSheet=true" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/Book1.xlsx" \
+  -F "Spreadsheet=@/path/to/Book2.xlsx"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MergeSpreadsheetsInRemoteFolder.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (codificato in Base64)",
+  "contentType": "tipo MIME",
+  "fileDownloadName": "nome file facoltativo"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MergeSpreadsheetsInRemoteFolder.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MergeSpreadsheetsInRemoteFolder.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MergeSpreadsheetsInRemoteFolder.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MergeSpreadsheetsInRemoteFolder.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MergeSpreadsheetsInRemoteFolder.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MergeSpreadsheetsInRemoteFolder.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### Utilizzare gli SDK di Aspose.Cells Cloud
+
+L'utilizzo degli SDK rappresenta il modo più rapido per sviluppare, poiché astrae i dettagli a basso livello e consente di importare dati in una cartella di lavoro con codice breve. Consulta il <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">repository GitHub</a> per un elenco completo degli SDK di Aspose.Cells Cloud.

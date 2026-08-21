@@ -1,107 +1,182 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Fusionner une feuille de calcul dans une autre.
-second_title: Aspose.Cells Cloud"
-ArticleTitle: Merge one spreadsheet into anothe
-linktitle: Fusionner une feuille de calcul distante
-type: docs
-url: /fr/merge-remote-spreadsheet/
-keywords: Merge spreadsheets, cloud storage, Aspose.Cells Cloud Web API, spreadsheet merging, XLSX, CSV, PD
-description: Combinez un fichier de feuille de calcul stocké dans un stockage cloud dans une autre feuille de calcul et vous pouvez spécifier le format et l'emplacement de la sortie des données.
-weight: 100
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, JSON, Markdown, fusionner les cellules vides, traitement cloud
 ---
-Combinez un fichier de feuille de calcul stocké dans un stockage cloud dans une autre feuille de calcul et vous pouvez spécifier le format et l'emplacement de la sortie des données.
+title: "Aspose.Cells Cloud – Fusionner des fichiers Excel dans le cloud | Combiner des classeurs via l’API"
+second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Fusionner des fichiers Excel dans le cloud – Combiner des classeurs en ligne avec l’API Aspose.Cells Cloud"
+linktitle: "Fusionner un classeur distant"
+type: docs
+url: /merge-remote-spreadsheet/
+keywords: "Aspose.Cells, fusionner Excel, API cloud, combiner classeur"
+description: "Fusionner des classeurs Excel stockés dans le stockage cloud à l’aide de l’API Aspose.Cells Cloud. Spécifiez le format de sortie, le dossier cible et le mode de fusion en une seule requête HTTPS."
+weight: 100
+---
 
-## **Fusionner la feuille de calcul distante API**
+Fusionnez rapidement des fichiers Excel stockés dans le cloud avec d’autres classeurs à l’aide de l’API Aspose.Cells Cloud, et spécifiez le format de sortie ainsi que l’emplacement de stockage.
+
+## API de fusion de classeur distant
+
+Avant d’appeler cette opération, assurez-vous de disposer des éléments suivants :
+
+- D’un **jeton d’accès JWT** valide (voir le guide d’authentification).
+- Du classeur source et de tous les fichiers à fusionner uploadés dans votre stockage cloud.
+- Des permissions appropriées pour lire depuis le dossier source et écrire dans le dossier cible.
+
+### API Web
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
+PUT https://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
 ```
 
-### **Paramètres de la requête :**
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP| Description|
-|:- |:- |:- |:- |
-|nom|Chaîne|Chemin|Le nom du fichier de classeur à fusionner.|
-|feuille de calcul fusionnée|Chaîne|Requête|La liste des fichiers de feuille de calcul à fusionner.|
-|dossier|Chaîne|Requête|Le chemin du dossier dans lequel le classeur est stocké.|
-|format de sortie|Chaîne|Requête|Le format du fichier de sortie (par exemple, XLSX, PDF).|
-|fusionner dans une feuille|Booléen|Requête|S'il faut combiner toutes les données dans une seule feuille de calcul.|
-|nom de stockage|Chaîne|Requête|(Facultatif) Nom du stockage si vous utilisez un stockage cloud personnalisé. En cas d'omission, le stockage par défaut est utilisé.|
-|chemin de sortie|Chaîne|Requête|(Facultatif) Chemin d'accès au dossier du classeur fusionné. La valeur par défaut est null.|
-|outStorageName|Chaîne|Requête|Le nom du stockage pour le fichier de sortie.|
-|Emplacement des polices|Chaîne|Requête|Emplacement de police personnalisé.|
-|région|Chaîne|Requête|Le paramètre de région de la feuille de calcul.|
-|mot de passe|Chaîne|Requête|Le mot de passe pour accéder au fichier de feuille de calcul.|
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
-### **Réponse**
+### Paramètres de la requête :
+
+| Nom du paramètre  | Type    | Chemin / Chaîne de requête / Corps HTTP | Description                                                                                                                          |
+| :---------------- | :------ | :-------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| name              | String  | Chemin                                  | Le nom du fichier du classeur source à fusionner.                                                                                  |
+| mergedSpreadsheet | String  | Chaîne de requête                       | Une liste séparée par des virgules des noms des fichiers classeurs à fusionner dans le classeur source.                             |
+| folder            | String  | Chaîne de requête                       | Le chemin du dossier dans le stockage cloud contenant le classeur source.                                                          |
+| outFormat         | String  | Chaîne de requête                       | Le format souhaité pour le fichier de sortie fusionné (par exemple, `XLSX`, `PDF`, `CSV`).                                         |
+| mergeInOneSheet   | Boolean | Chaîne de requête                       | Définir sur `true` pour fusionner toutes les données sources dans une seule feuille de calcul ; `false` crée des feuilles séparées pour chaque fichier. |
+| storageName       | String  | Chaîne de requête                       | _(Facultatif)_ Le nom du stockage cloud où réside le classeur source. Si omis, le stockage par défaut est utilisé.                 |
+| outPath           | String  | Chaîne de requête                       | _(Facultatif)_ Le chemin du dossier cible dans le stockage cloud pour enregistrer le fichier fusionné. Si omis, le fichier est enregistré dans le dossier source. |
+| outStorageName    | String  | Chaîne de requête                       | Le nom du stockage cloud utilisé pour enregistrer le fichier de sortie.                                                            |
+| fontsLocation     | String  | Chaîne de requête                       | _(Facultatif)_ Chemin personnalisé du dossier contenant les fichiers de police utilisés lors de la conversion au format image/PDF. |
+| region            | String  | Chaîne de requête                       | _(Facultatif)_ Paramètres régionaux/locales pour la mise en forme des dates, nombres et devises dans le fichier de sortie (par exemple, `fr-FR`, `de-DE`). |
+| password          | String  | Chaîne de requête                       | _(Facultatif)_ Mot de passe requis pour ouvrir le classeur source s’il est protégé.                                                |
+
+### Réponse
+
+**Statut :** `200 OK`
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Codes d'erreur
+Le fichier peut être téléchargé directement ou enregistré à l’emplacement spécifié par `outPath`.
 
-- **400 Mauvaise requête**: URI Apose.Cells Cloud API non valide.
-- **401 Non autorisé**: Jeton d'accès non valide. Ou identifiant client et secret non valides.
-- **404 non trouvé**:Le fichier de feuille de calcul n'est pas accessible.
-- **Erreur de serveur 500**:La feuille de calcul a rencontré une anomalie lors de l'obtention des données de calcul.
+**Détails de la réponse en cas de succès**
 
-## Où devons-nous utiliser la feuille de calcul distante de fusion API ?
+| Code d’état | Content‑Type               | Description                                   |
+| ----------- | -------------------------- | --------------------------------------------- |
+| 200 OK      | `application/octet-stream` | Flux binaire du fichier classeur fusionné.   |
 
-- Lorsque vous devez fusionner plusieurs fichiers de données dans un stockage cloud.
+**Codes d’état HTTP**
 
+| Code | Signification           | Description                                                    |
+| ---- | ----------------------- | -------------------------------------------------------------- |
+| 200  | OK                      | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte      | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé            | Jeton JWT invalide ou manquant.                                |
+| 413  | Charge utile trop grande | Le fichier uploadé dépasse la taille maximale autorisée.     |
+| 500  | Erreur interne du serveur | Erreur inattendue du serveur.                                  |
 
-## Pourquoi devriez-vous utiliser la feuille de calcul Merge Remote API ?
+## Où utiliser l’API de fusion de classeur distant ?
 
-- Les fichiers de stockage cloud n'ont pas besoin d'être téléchargés et peuvent être fusionnés directement dans le cloud.
-- Le développement peut être rapidement réalisé grâce au SDK existant.
+### Intégration de données à l’échelle entreprise
 
-## Comment utiliser la feuille de calcul distante Merge API avec les SDK
+- **Consolidation des rapports multi-départements** – Consolider des rapports Excel séparés soumis par les équipes commerciales, marketing, finance, etc.
+- **Synthèse des données des succursales** – Résumer les données de performance de chaque succursale dans le monde entier.
+- **Consolidation des données partenaires** – Fusionner les soumissions de données de plusieurs partenaires dans un seul classeur.
 
-### Spécifications de la fusion de feuilles de calcul distantes API
+### Flux de travail de traitement de documents dans le cloud
 
- Le[Spécifications de la fusion de feuilles de calcul distantes API](https://reference.aspose.cloud/cells/#/DataProcessingController/MergeRemoteSpreadsheet) fournit une interface de programmation accessible au public pour exécuter des interactions REST directement à partir d'un navigateur Web.
+- **Traitement de fichiers dans le stockage cloud** – Fusionner directement des fichiers Excel stockés dans AWS S3, Azure Blob ou Google Cloud Storage.
+- **Consolidation multi-sources** – Combiner des fichiers provenant de différents emplacements cloud dans un seul classeur.
+- **Pipelines de données automatisés** – Intégrer l’API dans des processus ETL pour automatiser la fusion de fichiers.
 
-## Excel API Kit de développement logiciel
+### Automatisation de la gestion de documents
 
-### Utiliser les SDK Cloud Aspose.Cells
+- **Consolidation de versions** – Fusionner différentes versions d’un plan de projet ou d’un classeur budgétaire.
+- **Remplissage de modèles** – Insérer des fichiers de données dans des modèles de rapports standardisés.
+- **Génération automatique de rapports** – Automatiser la génération hebdomadaire, mensuelle et trimestrielle de rapports synthétiques.
 
-L'utilisation du SDK est le moyen le plus rapide de développer, car il fait abstraction des détails de bas niveau, vous permettant de fusionner une feuille de calcul dans une autre feuille de calcul avec un code court.
- Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
-Les exemples de code suivants montrent comment interagir avec les services Web Aspose.Cells à l'aide de divers SDK :
+### Collaboration multiplateforme
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MergeRemoteSpreadsheet.cs" >}}
+- **Collaboration d’équipes distantes** – Consolider le travail soumis par des membres d’équipe dispersés géographiquement.
+- **Organisation des données clients** – Fusionner des données de commande ou des retours clients provenant de plusieurs clients.
+- **Résumé des informations fournisseurs** – Combiner des devis ou des informations produit provenant de plusieurs fournisseurs.
+
+## Pourquoi utiliser l’API de fusion de classeur distant ?
+
+- **Facile à utiliser pour les développeurs** – Aspose.Cells Cloud fournit des SDK pour de nombreux langages, ce qui réduit le temps de développement et propose une documentation complète. Comparé à la construction d’une solution personnalisée, cela diminue considérablement la charge de travail.
+- **Réduction des coûts de main-d’œuvre** – Diminue la nécessité d’avoir du personnel dédié à la consolidation manuelle des documents.
+- **Paiement à l’usage** – Aucun investissement initial ; vous ne payez que pour les appels à l’API que vous utilisez réellement.
+- **Zéro coût de maintenance** – Aucun serveur à maintenir, aucune mise à jour logicielle à gérer, aucune préoccupation de compatibilité.
+
+## Comment utiliser l’API de fusion de classeur distant avec les SDK ?
+
+### Spécification de l’API de fusion de classeur distant
+
+La <a href="https://reference.aspose.cloud/cells/#/DataProcessingController/MergeRemoteSpreadsheet" target="_blank" rel="noopener noreferrer">spécification de l’API de fusion de classeur distant</a> décrit l’interface REST qui peut être appelée directement depuis n’importe quel client HTTP.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/merge/spreadsheet?mergedSpreadsheet=Report1.xlsx&outFormat=XLSX&mergeInOneSheet=true" \
+  -H "Authorization: Bearer {access_token}"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MergeRemoteSpreadsheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (encodé en Base64)",
+  "contentType": "type MIME",
+  "fileDownloadName": "nom de fichier optionnel"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MergeRemoteSpreadsheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MergeRemoteSpreadsheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MergeRemoteSpreadsheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MergeRemoteSpreadsheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MergeRemoteSpreadsheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MergeRemoteSpreadsheet.go" >}}
-{{< /tab >}}
+
+{{< /tabs >}}
+
+### Utiliser les SDK Aspose.Cells Cloud
+
+L’utilisation d’un SDK est la méthode la plus rapide pour développer, car elle abstractise les détails de bas niveau et vous permet de fusionner un classeur dans un autre à l’aide d’un court extrait de code.  
+Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants montrent comment interagir avec les services web Aspose.Cells à l’aide de divers SDK :
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MergeRemoteSpreadsheet.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MergeRemoteSpreadsheet.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MergeRemoteSpreadsheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MergeRemoteSpreadsheet.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MergeRemoteSpreadsheet.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MergeRemoteSpreadsheet.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MergeRemoteSpreadsheet.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MergeRemoteSpreadsheet.go" >}}
+{{</tab>}}
 {{< /tabs >}}

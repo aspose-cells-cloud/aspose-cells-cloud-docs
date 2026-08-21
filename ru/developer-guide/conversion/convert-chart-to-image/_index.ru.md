@@ -1,103 +1,132 @@
-﻿---
-title: Aspose.Cells Cloud Web API — Преобразование электронной таблицы в изображение
-second_title: Documen
-ArticleTitle: Convert a Spreadsheet Chart to an Imag
-linktitle: Преобразовать диаграмму в изображение
-type: docs
-url: /ru/convert-chart-to-image/
-keywords: convert chart to image, png, svg, tiff, jpg, bmp, convert a Spreadsheet chart to png,convert an Excel chart to svg, convert an Excel chart to jpg, convert a Spreadsheet chart to bmp, convert an Excel chart to tif
-description: Преобразуйте диаграмму из локальной электронной таблицы/файла Excel в файл изображения с помощью Cloud Web Aspose.Cells API
-weight: 100
-kwords: преобразовать диаграмму Excel в изображение, png, svg, tiff, jpg, bmp, электронную таблицу
 ---
-Преобразовать диаграмму из локальной электронной таблицы/файла Excel в файл формата изображения. Поддерживается.**ФОРМАТЫ ИЗОБРАЖЕНИЙ:** [PNG](https://docs.fileformat.com/image/png/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/)
+title: "Aspose.Cells Cloud Web API — Преобразование диаграммы Excel в изображение — Бесплатный онлайн-инструмент"
+second_title: "Документ"
+ArticleTitle: "Как преобразовать диаграмму электронной таблицы в изображение: Пошаговое руководство"
+linktitle: "Преобразование диаграммы в изображение"
+type: docs
+url: /convert-chart-to-image/
+keywords: "преобразование диаграммы в изображение, Aspose.Cells, экспорт диаграммы Excel, PNG, SVG, JPEG, BMP, TIFF"
+description: "Используйте Aspose.Cells Cloud Web API для прямого преобразования диаграммы Excel из файла электронной таблицы в изображения PNG, SVG, TIFF, JPEG или BMP."
+weight: 100
+---
 
-## **Преобразовать диаграмму в изображение API**
+Диаграммы Excel — это визуальное представление данных, которое может быть встроено в рабочие листы. Преобразование таких диаграмм в форматы изображений позволяет легко повторно использовать их в документах, веб-страницах и отчётах без необходимости наличия Excel.
+
+Преобразуйте диаграмму из локальной электронной таблицы или файла Excel в файл изображения. Поддерживаемые **ФОРМАТЫ ИЗОБРАЖЕНИЙ**: <a href="https://docs.fileformat.com/image/png/" rel="noopener noreferrer">PNG</a>, <a href="https://docs.fileformat.com/page-description-language/svg/" rel="noopener noreferrer">SVG</a>, <a href="https://docs.fileformat.com/image/tiff/" rel="noopener noreferrer">TIFF</a>, <a href="https://docs.fileformat.com/image/jpeg/" rel="noopener noreferrer">JPEG</a>, <a href="https://docs.fileformat.com/image/bmp/" rel="noopener noreferrer">BMP</a>
+
+## **API для преобразования диаграммы в изображение**
+
+### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/chart/image
+PUT https://api.aspose.cloud/v4.0/cells/convert/chart/image
 ```
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/chart/image?format=png&chartIndex=0" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@MyWorkbook.xlsx" \
+     -o chart.png
+```
+
+### **Безопасность и аутентификация**
+
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
 ### **Параметры запроса:**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody| Описание|
-|:- |:- |:- |:- |
-|Электронная таблица|Файл|FormData|Загрузите файл электронной таблицы, содержащий диаграмму.|
-|рабочий лист|Нить|Запрос|Укажите название рабочего листа, если применимо.|
-|chartIndex|Целое число|Запрос|Индекс диаграммы для преобразования.|
-|формат|Нить|Запрос|(Обязательно) Желаемый тип изображения (например, svg, png, jpg).|
-|outPath|Нить|Запрос|(Необязательно) Путь к папке, где хранится рабочая книга; по умолчанию — null.|
-|outStorageName|Нить|Запрос|Имя хранилища выходного файла.|
-|шрифтыРасположение|Нить|Запрос|При необходимости укажите пользовательские шрифты.|
-|область|Нить|Запрос|Установите область электронной таблицы.|
-|пароль|Нить|Запрос|Пароль для открытия файла электронной таблицы.|
+| Название параметра | Тип    | Путь/Строка запроса/HTTPBody | Описание                                                                                      | Обязательный |
+| :----------------- | :----- | :-------------------------- | :--------------------------------------------------------------------------------------------- | :----------- |
+| Spreadsheet        | File   | FormData                    | Загрузите файл электронной таблицы, содержащий диаграмму.                                     | Да           |
+| worksheet          | String | Query                       | Укажите имя рабочего листа, если применимо.                                                    | Нет          |
+| chartIndex         | Integer| Query                       | Индекс диаграммы для преобразования.                                                            | Да           |
+| format             | String | Query                       | (Обязательный) Желаемый тип изображения (например, svg, png, jpg).                            | Да           |
+| outPath            | String | Query                       | (Необязательный) Путь к папке, где будет сохранён выходной файл; по умолчанию null.           | Нет          |
+| outStorageName     | String | Query                       | Имя хранилища для выходного файла.                                                              | Нет          |
+| fontsLocation      | String | Query                       | Укажите пользовательские шрифты, если необходимо.                                              | Нет          |
+| region             | String | Query                       | Установите регион электронной таблицы.                                                          | Нет          |
+| password           | String | Query                       | Пароль для открытия файла электронной таблицы.                                                 | Нет          |
 
 ## **Ответ**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Коды ошибок
+**Коды HTTP-статуса**
 
-- **400 Неверный запрос**: Неверный URI Apose.Cells Cloud API.
-- **401 Неавторизованный**: Недействительный токен доступа. Или недействительный идентификатор клиента и секретный ключ.
-- **404 Не найдено**: Файл электронной таблицы недоступен.
-- **500 Ошибка сервера**: В электронной таблице обнаружена аномалия при получении расчетных данных.
+| Код | Значение                | Описание                                                           |
+| --- | ----------------------- | ------------------------------------------------------------------ |
+| 200 | OK (OK)                 | Фильтр успешно применён; ответ содержит детали операции.          |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизован) | Некорректный или отсутствующий JWT-токен.                         |
+| 413 | Payload Too Large (Слишком большой объём полезной нагрузки) | Загруженный файл превышает ограничение по размеру. |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера. |
 
-## Где следует использовать функцию «Преобразовать диаграмму в изображение» API?
+## Где следует использовать API для преобразования диаграммы в изображение?
 
-- Экспортируйте диаграммы из электронной таблицы как изображения.
+- **Генерация отчётов и информационные панели**: Автоматическое преобразование диаграмм из данных Excel в изображения (PNG, JPEG и др.) для встраивания в PDF-отчёты, веб-панели управления или презентации PowerPoint.
+- **Веб- и почтовые приложения**: Отображение изображений диаграмм непосредственно на веб-страницах или в электронных письмах без необходимости загрузки и открытия пользователем файлов Excel. Полезно для динамических инструментов отчётности, информационных бюллетеней или автоматических уведомлений.
+- **Рабочие процессы обработки документов**: Интеграция в автоматизированные конвейеры (например, выставление счётов, аналитика), где диаграммы из Excel должны быть вставлены в другие форматы (Word, PDF, HTML).
+- **Мобильные и настольные приложения**: Отображение диаграмм Excel в приложениях, где рендеринг всей электронной таблицы нежелателен или непрактичен.
+- **Архивирование и визуализация**: Сохранение диаграмм как отдельных изображений для долгосрочного хранения, создания эскизов или быстрого предварительного просмотра без зависимости от Excel.
 
-## Почему вам следует использовать функцию «Преобразовать диаграмму в изображение» API?
+## Почему стоит использовать API для преобразования диаграммы в изображение?
 
-- Нет необходимости в облачном хранилище, что снижает нагрузку на облачные ресурсы.
-- Разработку можно быстро завершить с помощью существующего SDK.
+- **Сохранение точного визуального оформления**: Сохраняет точное форматирование диаграммы (цвета, метки, масштаб), как в Excel, обеспечивая профессиональное качество выходных данных.
+- **Независимость от платформы**: Не требуется установка Excel. Работает на различных платформах (Windows, Linux, macOS) через REST API, подходит для облачных или серверных приложений.
+- **Автоматизация и масштабируемость**: Пакетное преобразование множества диаграмм или файлов программно, экономя время по сравнению с ручным экспортом. Эффективно обрабатывает большие объёмы в облаке.
+- **Гибкие форматы вывода**: Поддерживает популярные форматы изображений (PNG, JPG, BMP, SVG и др.), позволяя интегрироваться с разнообразными системами и носителями.
+- **Безопасность и надёжность**: Обработка файлов в облачной среде Aspose без раскрытия конфиденциальных данных клиентским инструментам. Высокая доступность и стабильная производительность.
+- **Удобство для разработчиков**: Aspose.Cells Cloud предоставляет SDK-библиотеки на нескольких языках, что позволяет быстро разрабатывать приложения, и сопровождается исчерпывающей документацией. По сравнению с созданием собственных решений для рендеринга диаграмм, это значительно снижает объём работы по разработке.
+- **Экономичность**: Можно преобразовывать диаграммы без предварительной загрузки всей книги, что экономит место в хранилище и снижает затраты.
 
-## Как использовать инструмент «Преобразовать диаграмму в изображение» API с SDK?
+## Как использовать API для преобразования диаграммы в изображение с помощью SDK?
 
-### Преобразовать диаграмму в изображение API Спецификация
+### Спецификация API для преобразования диаграммы в изображение
 
- The[Преобразовать диаграмму в изображение API Спецификация](https://reference.aspose.cloud/cells/#/ConversionController/ConvertChartToImage) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+Спецификация <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertChartToImage" rel="noopener noreferrer">API для преобразования диаграммы в изображение</a> определяет публично доступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-### Используйте облачные SDK Aspose.Cells
+### Использование SDK Aspose.Cells Cloud
 
-Использование SDK — самый быстрый способ разработки, поскольку он абстрагируется от низкоуровневых деталей и позволяет преобразовать диаграмму в изображение с помощью короткого кода.
- Пожалуйста, проверьте[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — самый быстрый способ разработки, так как он скрывает детали низкого уровня и позволяет преобразовать диаграмму в изображение с помощью короткого кода.  
+Ознакомьтесь с <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">репозиторием на GitHub</a>, чтобы получить полный список SDK Aspose.Cells Cloud.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-сервисов Aspose.Cells с использованием различных SDK:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertChartToImage.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertChartToImage.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertChartToImage.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertChartToImage.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertChartToImage.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertChartToImage.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertChartToImage.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertChartToImage.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertChartToImage.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertChartToImage.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertChartToImage.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertChartToImage.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertChartToImage.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertChartToImage.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertChartToImage.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertChartToImage.go" >}}
+{{</tab>}}
 {{< /tabs >}}
+
+---

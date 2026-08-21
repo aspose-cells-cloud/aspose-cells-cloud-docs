@@ -1,98 +1,99 @@
-﻿---
-title: Aspose.Cells Bulut Web API - Uzak Elektronik Tabloda Çalışma Sayfası İçeriğini Ara
-second_title: Documen
-ArticleTitle: Search Worksheet Content in Remote Spreadshee
-linktitle: Uzaktan Çalışma Sayfası İçeriğini Ara
-type: docs
-url: /tr/search-content-in-remote-worksheet/
-keywords: Excel API, Search Remote Worksheet, Cloud Spreadsheet, REST API, Search Text, Aspose.Cells, Document Search, Spreadsheet AP
-description: Bulutta depolanan uzak bir elektronik tablonun çalışma sayfasında metni verimli bir şekilde arayın
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, JSON, Markdown, Excel çalışma sayfasındaki tüm boş hücreleri eşleştir, Uzaktan Çalışma Sayfası Arama
 ---
-Bulut depolama alanında saklanan uzak bir elektronik tablonun çalışma sayfasında belirtilen metni arayın.
+title: "Aspose.Cells Cloud Excel Metin Arama Web API’si – Uzak Çalışma Kitabında Metin Bulma"
+second_title: "Doküman"
+ArticleTitle: "Uzak Excel Çalışma Kitabı Çalışma Sayfasında Metin Arama – Belirli Verileri Bulma"
+linktype: "İçerik Arama"
+type: docs
+url: /search-content-in-remote-worksheet/
+keywords: "Aspose Cells, Excel API, metin arama, uzak çalışma sayfası"
+description: "Aspose.Cells Cloud API kullanarak uzak bir Excel çalışma sayfasında metin, sayı veya formülleri arayın. Büyük/küçük harf duyarsız ve parolayla korumalı dosyaları destekler."
+weight: 100
+---
 
-## **Arayüz Ayrıntıları**
+## **Uzak Çalışma Sayfasında İçerik Arama**
 
-## **Uzaktan Çalışma Sayfasında İçerik Ara**
+Aspose.Cells Cloud API kullanarak herhangi bir Excel çalışma sayfasında belirli bir metni programatik olarak arayın. Hizmet, bulut depolama alanında saklanan uzak dosyalarda metin, sayı veya formülleri bulabilir; böylece otomatik veri keşfi, içerik analizi ve elektronik tablo denetimi iş akışlarını sağlar.
 
+### **Web API’si**
+
+```curl
+PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content
+
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
-### **İstek Parametreleri:**
+### **İstek Parametreleri**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi| Tanım|
-|:- |:- |:- |:- |
-|isim|Sicim|Yol|Aranacak çalışma kitabı dosyasının adı.|
-|çalışma sayfası|Sicim|Yol|Çalışma sayfasının adı.|
-|aramaMetni|Sicim|Sorgu|Aranacak metin.|
-|ignoringCase|Boolean|Sorgu|Arama sırasında büyük/küçük harf ayrımının dikkate alınıp alınmayacağını belirtir.|
-|dosya|Sicim|Sorgu|Çalışma kitabının saklandığı klasör yolu.|
-|depolamaAdı|Sicim|Sorgu|(İsteğe bağlı) Özel bulut depolama kullanılıyorsa depolama alanının adı. Belirtilmezse varsayılan depolama alanı kullanılır.|
-|bölge|Sicim|Sorgu|E-tablo bölge ayarı.|
-|şifre|Sicim|Sorgu|E-tablo dosyasını açmak için şifre.|
+| Parametre Adı | Tür    | Yol/Sorgu Dizesi/HTTP Gövdesi | Açıklama                                                                                       |
+| -------------- | ------- | --------------------------- | ------------------------------------------------------------------------------------------------- |
+| name           | String  | Yol                         | **Zorunlu.** Hedef çalışma kitabının dosya adı (örneğin, `yillik_rapor.xlsx`).                   |
+| worksheet      | String  | Yol                         | **Zorunlu.** Aramanın yapılacağı çalışma kitabındaki çalışma sayfası.                            |
+| searchText     | String  | Sorgu                       | **Zorunlu.** Bulunacak tam metin dizesi veya sayı.                                              |
+| ignoreCase     | Boolean | Sorgu                       | **İsteğe bağlı.** `true` olarak ayarlandığında arama büyük/küçük harf duyarlılığı yapmaz. Varsayılan değer `false`'tir. |
+| folder         | String  | Sorgu                       | **İsteğe bağlı.** Çalışma kitabının bulunduğu klasörün yolu. Atlanırsa kök klasör kullanılır.    |
+| storageName    | String  | Sorgu                       | **İsteğe bağlı.** Özelleştirilmiş yapılandırılmış bulut depolama adı. Atlanırsa varsayılan depo kullanılır. |
+| region         | String  | Sorgu                       | **İsteğe bağlı.** Metin karşılaştırmasını etkileyebilecek yerel ayar (örneğin, `ja-JP`).          |
+| password       | String  | Sorgu                       | **İsteğe bağlı.** Korumalı bir çalışma kitabının parolası. Dosya şifreli değilse atlayın.        |
 
-### **Cevap**
+### **Yanıt**
 
 ```json
 {
-  "Name": "BrokenLinksResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "Properties": [
+  "textItems": [
     {
-      "Name": "BrokenLinks",
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "BrokenLink",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "BrokenLink",
-        },
-      }
+      "cellName": "A1",
+      "text": "Toplam",
+      "occurrences": 1
     },
     {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
+      "cellName": "B5",
+      "text": "Toplam",
+      "occurrences": 2
     }
-  ]
+  ],
+  "code": 200,
+  "status": "OK"
 }
 ```
 
-### Hata Kodları
+- **textItems** – Eşleşmelerin dizisi. Her bir öğe, hücre adresini (`cellName`), eşleşen dizeyi (`text`) ve o hücrede kaç kez tekrar ettiğini (`occurrences`) içerir.
+- **code** – Hizmetin döndürdüğü HTTP durum kodu.
+- **status** – Sonucun metinsel açıklaması.
 
-- **400 Kötü İstek**: Geçersiz Apose.Cells Bulut API URI.
-- **401 Yetkisiz**: Geçersiz erişim belirteci. Veya geçersiz istemci kimliği ve sırrı.
-- **404 Bulunamadı**: E-tablo dosyasına erişilemiyor.
-- **500 Sunucu Hatası**: Hesaplama verilerinin alınmasında elektronik tabloda bir anormallik tespit edildi.
+### **Hata Kodları**
 
-## API nolu E-Tablonun çalışma sayfasında Arama içeriğini nerede kullanmalıyız?
+- **400 Bad Request (Bad Request)** – Geçersiz API URI’si veya hatalı parametreler.
+- **401 Unauthorized (Yetkisiz)** – Eksik veya geçersiz OAuth 2.0 belirteci.
+- **404 Not Found (Bulunamadı)** – Çalışma kitabına veya çalışma sayfasına ulaşılamıyor.
+- **500 Server Error (Sunucu Hatası)** – İstek işlenirken beklenmedik bir durum oluştu.
 
-E-tablonun çalışma sayfasında içerik araması yapmanız gerektiğinde API numarasını kullanabilirsiniz.
+## Elektronik Tablo API’sinin Çalışma Sayfası İçerik Araması Nerede Kullanılmalı?
 
-## API numaralı E-Tablonun çalışma sayfasındaki Arama içeriğini neden kullanmalısınız?
+- **Çalışma kitabı uyumluluk denetimi:** “Gizli” gibi hassas terimleri dosyanın tamamında hızlıca bulun.
+- **Çoklu sayfa veri ilişkilendirme:** Birden fazla sayfada geçen bir proje numarası veya müşteri adı bulun.
+- **Şablon doğrulama:** Rapor oluşturulduktan sonra `{{Tarih}}` gibi yer tutucuların değiştirildiğini doğrulayın.
+- **Tarihsel veri madenciliği:** Geçmiş iş mantığını anlamak için eski elektronik tablolarda belirli olay kodlarını arayın.
 
-- API ile uzaktan bir elektronik tablo çalışma sayfasındaki içeriği zahmetsizce arayın.
-- Mevcut SDK üzerinden geliştirme hızlı bir şekilde tamamlanabilir.
+## Elektronik Tablo API’sinin Çalışma Sayfası İçerik Araması Neden Kullanılmalı?
 
-## SDK'lar ile API E-Tablosunun Çalışma Sayfasında Bozuk Bağlantıları Arama Özelliğinin Nasıl Kullanılacağı
+- **Geliştirici dostu:** Birçok dil için SDK’lar, hızlı geliştirme sağlar ve tam olarak belgelenmiştir.
+- **Düşük iş gücü maliyeti:** Elle veri birleştirme göreviyle uğraşan personel ihtiyacını azaltır.
+- **Kullanım bedeli ödemeli:** Sadece gerçek olarak yaptığınız API çağrıları için ödeme yaparsınız.
+- **Sıfır bakım:** Yönetilecek sunucu yoktur, yazılım güncellemesi gerekmez ve uyumluluk sorunları yoktur.
+- **Sonuçları PDF veya diğer formatlara aktarırken karmaşık Excel formatlarını korur.**
+
+## Elektronik Tablo API’sinin Çalışma Sayfası İçerik Araması SDK’ları ile Nasıl Kullanılır
 
 ### OpenAPI Spesifikasyonu
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteWorksheet) herkesin erişebileceği bir programlama arayüzü tanımlar ve doğrudan bir web tarayıcısından REST etkileşimlerine olanak tanır.
+[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteWorksheet), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-### Aspose.Cells Bulut SDK'larını kullanın
+### Aspose.Cells Cloud SDK’larını Kullanma
 
-SDK'yı kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. SDK, temel ayrıntıları ele alarak, minimum kodla hücreler için çalışma sayfalarındaki veya elektronik tablolardaki içerik aramalarını kolayca gerçekleştirmenize olanak tanır.
- Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
-
-Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web servislerinin nasıl çağrılacağını göstermektedir:
+SDK kullanmak, geliştirme sürecini hızlandırmak için en iyi yoldur. SDK, temel alınan ayrıntıları işler; böylece elektronik tabloların çalışma sayfasında içerik arama işlemini en az kodla uygulamanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.

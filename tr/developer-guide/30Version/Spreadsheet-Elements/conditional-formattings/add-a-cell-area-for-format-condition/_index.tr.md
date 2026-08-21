@@ -1,144 +1,360 @@
-﻿---
-title: CellAre'ı ekle
-type: docs
-url: /tr/conditional-formattings/add-cell-area/
-aliases: [/add-a-cell-area-for-format-condition/]
-keywords: REST API, spreadsheets, excel, add cellarea for formatconditio
-description: "Cells.Cloud API Excel için çalıştır: yorum ekle"
-weight: 30
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Hücre Alanı Ekle
 ---
-Bu REST API, biçimlendirme koşulu için bir hücre alanı eklenmesini belirtir
-            
- 
-## RSET API
- 
+---
+title: Koşullu Biçimlendirmeye Hücre Alanı Ekle
+description: Aspose.Cells Cloud REST API'sini (v3.0) kullanarak bir Excel çalışma sayfasındaki bir koşullu biçimlendirme kuralına bir hücre alanı ekleyin. Endpoint, parametreler, cURL ve SDK örnekleri, yanıt şeması ve hata işleme içerir.
+keywords: Aspose.Cells, Koşullu Biçimlendirme, CellArea, REST API, Excel, Bulut SDK
+weight: 30
+aliases:
+  - /add-a-cell-area-for-format-condition/
+---
+
+# Koşullu Biçimlendirmeye Hücre Alanı Ekle
+
+**Özet** – Çalışma sayfasındaki mevcut bir koşullu biçimlendirme kuralına bir hücre alanı ekler.
+
+---
+
+## Önyüklemeler
+
+1. **Aspose.Cells Cloud hesabı** – **Uygulama SID'nizi** ve **Uygulama Anahtarınızı** edinin.  
+2. **JWT jetonu** – Uygulama SID/Anahtarını kullanarak bir JWT jetonu oluşturun (bakınız [Kimlik Doğrulama Kılavuzu](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)).  
+3. Hedef Excel dosyası, belirtilen depolama/klasörde zaten mevcut olmalıdır.
+
+---
+
+## Kimlik Doğrulama
+
+Tüm çağrılar **JWT jeton tabanlı kimlik doğrulama** gerektirir. Jetonu `Authorization` başlığına ekleyin:
+
+```http
+Authorization: Bearer <jwt token>
+```
+
+---
+
+## HTTP İsteği
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area
+```
+
+### Yol Parametreleri
+
+| Ad          | Tür    | Açıklama                                  |
+|-------------|--------|-------------------------------------------|
+| `name`      | string | Excel dosyası adı (örn. `Book1.xlsx`).    |
+| `sheetName` | string | Kuralı içeren çalışma sayfası (örn. `Sheet1`). |
+| `index`     | integer| Koşullu biçimlendirme kuralının sıfır tabanlı indeksi. |
+
+### Sorgu Parametreleri
+
+| Ad             | Tür    | Gerekli | Açıklama                                      |
+|----------------|--------|---------|-----------------------------------------------|
+| `cellArea`     | string | **Evet**| Eklenecek hücre aralığı, A1 gösterimiyle (örn. `A1:C3`). |
+| `folder`       | string | Hayır   | Dosyanın depolandığı klasör yolu.             |
+| `storageName`  | string | Hayır   | Depolama hizmeti adı.                         |
+
+---
+
+## İstek Örneği (cURL)
+
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area
- 
-```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| dizin| tam sayı| yol||
-| hücreAlanı| sicim| sorgu||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
- 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionArea) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0/area?cellArea=A1:C3" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/conditionalFormattings/0/area?cellArea=A1:C3" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
+### Beklenen Başarılı Yanıt
 
-{{< tab tabNum="12" >}}
-
-```java
-
+```json
 {
   "Code": "200",
-  "Status": "OK"
+  "Status": "OK",
+  "CellArea": {
+    "StartRow": 0,
+    "StartColumn": 0,
+    "EndRow": 2,
+    "EndColumn": 2
+  }
 }
-
 ```
 
-{{< /tab >}}
+**Yanıt şeması – `CellArea`**
 
-{{< /tabs >}}
+| Özellik        | Tür | Açıklama                              |
+|----------------|-----|---------------------------------------|
+| `StartRow`     | int | İlk satırın sıfır tabanlı indeksi.    |
+| `StartColumn`  | int | İlk sütunun sıfır tabanlı indeksi.    |
+| `EndRow`       | int | Son satırın sıfır tabanlı indeksi.    |
+| `EndColumn`    | int | Son sütunun sıfır tabanlı indeksi.    |
 
-## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+---
 
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
+**HTTP Durum Kodları**
 
-{{< tab tabNum="1" >}}
+| Kod | Anlam                     | Açıklama                                              |
+|-----|---------------------------|-------------------------------------------------------|
+| 200 | OK (Tamam)                | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request (Hatalı İstek)| Eksik veya geçersiz parametreler (örn. desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)   | Geçersiz veya eksik JWT jetonu.                       |
+| 413 | Payload Too Large (İçerik Çok Büyük)| Yüklenecek dosya boyut sınırını aşıyor.       |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası.                 |
+---
 
+## SDK Örnekleri
 
+Aşağıda en yaygın SDK'lar için kısa kod parçaları verilmiştir. `YOUR_APP_SID` ve `YOUR_APP_KEY` değerlerini kendi kimlik bilgilerinizle değiştirin ve gerektiği yerde oluşturulan JWT jetonunu ayarlayın.
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-FormatConditionArea-1.cs" >}}
+### C# (.NET)
 
-{{< /tab >}}
+```csharp
+using Aspose.Cells.Cloud.Sdk;
+using Aspose.Cells.Cloud.Sdk.Model;
 
-{{< tab tabNum="2" >}}
+var config = new Configuration
+{
+    AppSid = "YOUR_APP_SID",
+    AppKey = "YOUR_APP_KEY"
+};
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-cells-add-cells-area-for-format-condition.java" >}}
+var api = new ConditionalFormattingsApi(config);
+var result = api.PutWorksheetFormatConditionArea(
+    name: "Book1.xlsx",
+    sheetName: "Sheet1",
+    index: 0,
+    cellArea: "A1:C3",
+    folder: null,
+    storageName: null);
 
-{{< /tab >}}
+Console.WriteLine(result);
+```
 
-{{< tab tabNum="3" >}}
+### Java
 
+```java
+import com.aspose.cells.cloud.ApiClient;
+import com.aspose.cells.cloud.Configuration;
+import com.aspose.cells.cloud.api.ConditionalFormattingsApi;
 
+Configuration config = new Configuration();
+config.setAppSid("YOUR_APP_SID");
+config.setAppKey("YOUR_APP_KEY");
 
-{{< /tab >}}
+ConditionalFormattingsApi api = new ConditionalFormattingsApi(new ApiClient(config));
 
-{{< tab tabNum="4" >}}
+try {
+    com.aspose.cells.cloud.model.ResponseMessage resp = api.putWorksheetFormatConditionArea(
+        "Book1.xlsx", "Sheet1", 0, "A1:C3", null, null);
+    System.out.println(resp);
+} catch (Exception e) {
+    e.printStackTrace();
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Examples-Ruby-ConditionalFormatting-put_worksheet_format_condition_area-.rb" >}}
+### PHP
 
-{{< /tab >}}
+```php
+<?php
+require 'vendor/autoload.php';
 
-{{< tab tabNum="5" >}}
+use Aspose\Cells\Cloud\Sdk\Api\ConditionalFormattingsApi;
+use Aspose\Cells\Cloud\Sdk\Configuration;
 
+$config = new Configuration();
+$config->setAppSid('YOUR_APP_SID');
+$config->setAppKey('YOUR_APP_KEY');
 
+$api = new ConditionalFormattingsApi($config);
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-FormatConditionArea-1.js" >}}
+try {
+    $result = $api->putWorksheetFormatConditionArea(
+        'Book1.xlsx',
+        'Sheet1',
+        0,
+        'A1:C3',
+        null,
+        null
+    );
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Error: ', $e->getMessage();
+}
+?>
+```
 
-{{< /tab >}}
+### Ruby
 
-{{< tab tabNum="6" >}}
+```ruby
+require 'aspose_cells_cloud_sdk'
 
+config = AsposeCellsCloud::Configuration.new
+config.app_sid = 'YOUR_APP_SID'
+config.app_key = 'YOUR_APP_KEY'
 
+api_instance = AsposeCellsCloud::ConditionalFormattingsApi.new
+begin
+  result = api_instance.put_worksheet_format_condition_area(
+    'Book1.xlsx', 'Sheet1', 0, 'A1:C3')
+  puts result
+rescue StandardError => e
+  puts "Error: #{e}"
+end
+```
 
-{{< /tab >}}
+### Node.js
 
-{{< tab tabNum="7" >}}
+```javascript
+const { Configuration, ConditionalFormattingsApi } = require('asposecellscloudsdk');
 
+const config = new Configuration();
+config.appSid = 'YOUR_APP_SID';
+config.appKey = 'YOUR_APP_KEY';
 
+const api = new ConditionalFormattingsApi(config);
 
-{{< /tab >}}
+api.putWorksheetFormatConditionArea('Book1.xlsx', 'Sheet1', 0, 'A1:C3')
+   .then(res => console.log(res))
+   .catch(err => console.error('Error:', err));
+```
 
-{{< tab tabNum="8" >}}
+### Python
 
+```python
+import asposecellscloudsdk
+from asposecellscloudsdk.rest import ApiException
+from asposecellscloudsdk import Configuration, ApiClient
+from asposecellscloudsdk.api import conditional_formattings_api
 
+config = Configuration()
+config.app_sid = 'YOUR_APP_SID'
+config.app_key = 'YOUR_APP_KEY'
 
-{{< /tab >}}
+api_instance = conditional_formattings_api.ConditionalFormattingsApi(ApiClient(config))
 
-{{< tab tabNum="9" >}}
+try:
+    result = api_instance.put_worksheet_format_condition_area(
+        name='Book1.xlsx',
+        sheet_name='Sheet1',
+        index=0,
+        cell_area='A1:C3')
+    print(result)
+except ApiException as e:
+    print("Exception:", e)
+```
 
+### Android (Java)
 
+```java
+import com.aspose.cloud.cells.api.ConditionalFormattingsApi;
+import com.aspose.cloud.cells.client.ApiClient;
+import com.aspose.cloud.cells.client.Configuration;
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-FormatConditionArea-1.pl" >}}
+Configuration config = new Configuration();
+config.setAppSid("YOUR_APP_SID");
+config.setAppKey("YOUR_APP_KEY");
 
-{{< /tab >}}
+ConditionalFormattingsApi api = new ConditionalFormattingsApi(new ApiClient(config));
 
-{{< tab tabNum="10" >}}
+try {
+    com.aspose.cloud.cells.model.ResponseMessage resp = api.putWorksheetFormatConditionArea(
+        "Book1.xlsx", "Sheet1", 0, "A1:C3", null, null);
+    System.out.println(resp);
+} catch (Exception e) {
+    e.printStackTrace();
+}
+```
 
+### Swift
 
+```swift
+import AsposeCellsCloud
 
-{{< gist "aspose-cells-cloud-gists" "597f99e44a3ac676ca8273b28f088ad2" >}}
+let config = Configuration(appSid: "YOUR_APP_SID", appKey: "YOUR_APP_KEY")
+let api = ConditionalFormattingsApi(configuration: config)
 
-{{< /tab >}}
+api.putWorksheetFormatConditionArea(
+    name: "Book1.xlsx",
+    sheetName: "Sheet1",
+    index: 0,
+    cellArea: "A1:C3",
+    folder: nil,
+    storageName: nil) { result, error in
+        if let err = error {
+            print("Error:", err)
+        } else if let res = result {
+            print(res)
+        }
+}
+```
 
-{{< /tabs >}}
+### Perl
+
+```perl
+use AsposeCellsCloud::Api::ConditionalFormattingsApi;
+use AsposeCellsCloud::Configuration;
+
+my $config = AsposeCellsCloud::Configuration->new(
+    app_sid  => 'YOUR_APP_SID',
+    app_key  => 'YOUR_APP_KEY'
+);
+my $api = AsposeCellsCloud::Api::ConditionalFormattingsApi->new($config);
+
+my $result = $api->putWorksheetFormatConditionArea(
+    name      => 'Book1.xlsx',
+    sheetName => 'Sheet1',
+    index     => 0,
+    cellArea  => 'A1:C3'
+);
+print $result;
+```
+
+### Go
+
+```go
+package main
+
+import (
+    "fmt"
+    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v3/sdk"
+)
+
+func main() {
+    config := sdk.NewConfiguration()
+    config.AppSid = "YOUR_APP_SID"
+    config.AppKey = "YOUR_APP_KEY"
+
+    api := sdk.NewConditionalFormattingsApi(config)
+
+    resp, _, err := api.PutWorksheetFormatConditionArea(
+        "Book1.xlsx", "Sheet1", 0, "A1:C3", nil, nil)
+    if err != nil {
+        fmt.Println("Error:", err)
+        return
+    }
+    fmt.Println(resp)
+}
+```
+
+---
+
+## Notlar ve İpuçları
+
+- **Hücre Alanı biçimi** – Geçerli bir A1 aralığı olmalıdır (`A1`, `A1:C3`, `Sheet2!B2:D5`). Geçersiz biçimler **400 Hatalı İstek** döndürür.
+- **Örtüşen alanlar** – Aynı kuralın mevcut bir alanı ile örtüşen bir aralık eklemek **409 Çakışma** hatasına neden olur.
+- **Sıfır tabanlı indeksleme** – Yanıttaki satır/sütun indeksleri `0` ile başlar. Gerekirse Excel'in 1‑tabanlı gösterimine dönüştürün.
+- **Depolama** – `folder` ve `storageName` parametrelerini atlerseniz API varsayılan depolama/kök klasörü kullanır.
+
+---
+
+## İlgili İşlemler
+
+- **Hücre Alanını Sil** – `DELETE /cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area`
+- **Koşullu Biçimlendirmeye Koşul Ekle** – `POST /cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition`
+- **Koşullu Biçimlendirmeyi Al** – `GET /cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}`
+
+Bu işlemler bir araya getirilerek tam koşullu biçimlendirme iş akışları oluşturulabilir.
+
+---
+---

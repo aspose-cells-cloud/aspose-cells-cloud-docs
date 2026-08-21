@@ -1,65 +1,94 @@
-﻿---
-title: تغيير عرض الأعمدة داخل النطاق
-second_title: Documen
-linktitle: عرض العمود
-type: docs
-url: /ar/ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
-keywords: Set column width for range on an Excel workshee
-description: يدعم Cloud REST Aspose.Cells ضبط عرض العمود للنطاق في ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 74
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تغيير عرض الأعمدة داخل النطاق
 ---
-يشير هذا REST API إلى تعيين عرض العمود للنطاق
+title: "تغيير عرض الأعمدة داخل نطاق"
+ArticleTitle: "تغيير عرض الأعمدة داخل النطاق – واجهة Aspose.Cells Cloud API"
+second_title: "مستند"
+linktype: "docs"
+url: /ranges/update/column-width/
+aliases: [/change-widths-of-columns-inside-the-range/]
+keywords: "Aspose.Cells، عرض العمود، واجهة REST API، Excel، SDK، نطاق، سحابة"
+description: "تعلم كيفية تغيير عرض الأعمدة داخل النطاق باستخدام واجهة Aspose.Cells Cloud REST API أو SDKs (C#، Java، Python، إلخ). يتضمن تفاصيل cURL، والاستجابة، وخطوات المصادقة."
+weight: 74
+---
 
-## RSET API
+تقوم هذه الواجهة REST بتحديد عرض العمود لنطاق معين.
+
+## الأمان والمصادقة
+واجهات Aspose.Cells Cloud API آمنة وتحتاج إلى [مصادقة تعتمد على رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## واجهة REST
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth
- 
 ```
 
-معلمات الطلب هي:
+**المتطلبات المسبقة** – قبل استدعاء نقطة النهاية، يجب أن تقوم بما يلي:
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق||
-| اسم الورقة| خيط| طريق||
-| قيمة| رقم| استفسار||
-| يتراوح|| جسم||
-| مجلد| خيط| استفسار||
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+1. إنشاء حساب Aspose Cloud والحصول على *مُعرّف العميل* و*سر العميل*.  
+2. طلب رمز JWT من خلال استدعاء نقطة النهاية OAuth (`/connect/token`)؛ يُعاد الرمز في حقل `access_token`.  
+3. رفع ملف المصنف المستهدف إلى مساحة التخزين الخاصة بـ Aspose Cloud (أو التأكد من وجوده مسبقًا في المجلد المحدد).  
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeColumnWidth) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+معطيات الطلب هي:
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعطى | النوع | الموقع | الوصف |
+|------------|--------|----------|-------------|
+| name | نص | المسار | اسم ملف المصنف |
+| sheetName | نص | المسار | اسم ورقة العمل |
+| value | رقم | الاستعلام | القيمة المطلوبة لعرض العمود |
+| range | كائن | الجسم | كائن النطاق الذي يُعرّف الخلايا المستهدفة |
+| folder | نص | الاستعلام | مسار المجلد الذي يُخزّن فيه المصنف |
+| storageName | نص | الاستعلام | اسم خدمة التخزين |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeColumnWidth) واجهة برمجة تطبيقات قابلة للوصول العام وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات Aspose.Cells عبر الويب. يوضح المثال التالي كيفية إجراء مكالمات لواجهة Cloud API باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
+<h3 id="request">الطلب</h3>
+
 ```bash
- 
+# استدعاء نقطة النهاية لعرض العمود لمصنف *test.xlsx*،
+# ورقة العمل *Sheet1*، وضبط عرض الأعمدة المحددة على 20 نقطة.
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/columnWidth?value=20" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}" 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "ColumnCount": 7,
+        "ColumnWidth": 19,
+        "FirstColumn": 0,
+        "FirstRow": 9,
+        "Name": "string",
+        "RefersTo": "string",
+        "RowCount": 1,
+        "RowHeight": 15,
+        "Worksheet": "Sheet1"
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+<h3 id="response">الاستجابة</h3>
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+*ردود الأخطاء المحتملة*  
+
+| رمز HTTP | الوصف |
+|-----------|-------------------------------------------|
+| 400 | طلب غير صالح – JSON أو معطيات غير صحيحة |
+| 401 | غير مخوّل – نقص أو صلاحية رمز غير صحيحة |
+| 404 | غير موجود – غياب المصنف أو ورقة العمل |
 
 {{< /tab >}}
 
@@ -67,9 +96,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير؛ حيث يتعامل SDK مع التفاصيل منخفضة المستوى، مما يمكّنك من التركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -122,3 +151,25 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## الأسئلة الشائعة
+
+**س:** *ما نقطة النهاية التي يجب استدعاؤها لضبط عرض عمود في نطاق داخل ملف Excel؟*  
+**ج:** `POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth`، حيث يُشير `{name}` إلى اسم ملف المصنف، و`{sheetName}` إلى ورقة العمل المستهدفة.
+
+**س:** *كيف أُصادق الطلب عند استخدام واجهة ضبط عرض الأعمدة؟*  
+**ج:** تضمين رأس `Authorization: Bearer <jwt token>`؛ احصل على رمز JWT عبر تدفق OAuth لـ Aspose Cloud (`/connect/token`) باستخدام مُعرّف العميل وسر العميل.
+
+**س:** *ما محتوى JSON الذي يجب إرساله لتغيير عرض الأعمدة من A إلى C إلى 25 نقطة؟*  
+**ج:**  
+
+```json
+{
+  "FirstColumn": 0,
+  "ColumnCount": 3,
+  "FirstRow": 0,
+  "RowCount": 1
+}
+```
+
+أضف معطى الاستعلام `value=25` إلى عنوان URL للطلب.

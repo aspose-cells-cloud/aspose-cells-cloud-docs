@@ -1,75 +1,91 @@
-﻿---
-title: Nascondi le righe su un foglio di lavoro Excel
-second_title: Documen
-linktitle: Nascosto
-type: docs
-url: /it/rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
-keywords: Hide rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'occultamento delle righe in un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 40
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Nascondi righe su un foglio di lavoro Excel
 ---
-Questo REST API indica di nascondere le righe in un foglio di lavoro Excel.
+title: "Nascondere righe in un foglio di Excel"
+second_title: "Documento"
+linktitle: "Nascondi"
+type: docs
+url: /rows/hide/
+aliases: [/hide-rows-in-excel-worksheet/]
+keywords: "nascondere righe, Aspose.Cells Cloud, API Excel, REST, SDK"
+description: "Scopri come nascondere una o più righe in un foglio di Excel utilizzando l'API REST di Aspose.Cells Cloud. Include esempio cURL, frammenti di codice SDK, parametri, autenticazione, dettagli della risposta e gestione degli errori."
+weight: 40
+ArticleTitle: "Nascondere righe in un foglio di Excel utilizzando l'API Aspose.Cells Cloud"
+---
 
-## RSET API
+Questa API REST nasconde le righe in un foglio di Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
- 
+**Prerequisiti:** Un token JWT Bearer valido ottenuto dall'endpoint OAuth di Aspose Cloud, il foglio di calcolo memorizzato nell'archivio Aspose Cloud e il nome del foglio di lavoro contenente le righe da nascondere. L'API funziona con file Excel nei formati XLS, XLSX e altri formati supportati.
+
+## API PostHideWorksheetRows
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome della cartella di lavoro.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| riga di partenza| intero| domanda| Indice della riga iniziale su cui operare.|
-| righe totali| intero| domanda| Numero di righe da gestire.|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### Parametri della richiesta
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Parametro       | Tipo    | Posizione | Descrizione                                                         |
+| --------------- | ------- | -------- | ------------------------------------------------------------------- |
+| **name**        | string  | path     | Nome del file del foglio di calcolo.                                |
+| **sheetName**   | string  | path     | Nome del foglio di lavoro contenente le righe da nascondere.        |
+| **startrow**    | integer | query    | Indice in base zero della prima riga da nascondere.                 |
+| **totalRows**   | integer | query    | Numero di righe consecutive da nascondere, a partire da **startrow**. |
+| **folder**      | string  | query    | Cartella nell'archivio in cui si trova il foglio di calcolo.        |
+| **storageName** | string  | query    | Nome del servizio di archiviazione.                                 |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) fornisce un'interfaccia di programmazione pubblicamente accessibile che consente di effettuare interazioni REST direttamente da un browser web.
+
+È possibile utilizzare lo strumento a riga di comando **cURL** per chiamare i servizi web di Aspose.Cells. L'API richiede un token JWT Bearer ottenuto dall'endpoint OAuth di Aspose Cloud; tale token deve essere incluso nell'intestazione `Authorization`. L'esempio seguente mostra come nascondere una riga utilizzando cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/hide?startrow=1&totalRows=1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+**Codici di stato della risposta**
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+| Codice | Descrizione |
+|--------|-------------|
+| 200 | Successo – righe nascoste |
+| 400 | Richiesta non valida – parametri non validi |
+| 401 | Non autorizzato – token JWT mancante o non valido |
+| 404 | Non trovato – il foglio di calcolo o il foglio di lavoro non esiste |
+| 500 | Errore del server – fallimento durante l'elaborazione interna |
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+Una chiamata riuscita restituisce un oggetto JSON contenente i campi `Code` e `Status`. In caso di errore, la risposta include campi aggiuntivi come `Message` e i codici di stato HTTP appropriati (ad esempio 400, 401, 404, 500).
+
+**Note:** Assicurarsi che il valore di `startrow` rientri nell'intervallo di righe del foglio di lavoro; in caso contrario l'API restituirà un errore 400. Gli indici di riga sono in base zero, pertanto `startrow=0` si riferisce alla prima riga.
+
+## Famiglia di SDK Cloud
+
+L'utilizzo di un SDK rappresenta il modo più rapido per integrare questa funzionalità nella propria applicazione. Gli SDK gestiscono i dettagli di basso livello, consentendoti di concentrarti sulla logica di business. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come nascondere le righe utilizzando vari SDK. (I nomi dei file di esempio fanno riferimento a “Unhide” a causa di una convenzione di denominazione legacy; il codice contenuto in ogni gist esegue l'operazione **Hide**.)
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,101 +1,85 @@
-﻿---
-title: Excel AutoFilte ile çalışma
-second_title: Documen
-linktitle: Otomatik Filtreleme
-type: docs
-url: /tr/autofilter/
-aliases: [/working-with-autofilter/]
-keywords: Get, add, delete, and so on for auto filter on an Excel worksheet
-description: Aspose.Cells Cloud API'leri, Excel çalışma sayfasında otomatik filtreleme için alma, ekleme, silme vb. işlemleri destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Otomatik Filtre
 ---
-Otomatik filtreleme, çalışma sayfasından yalnızca listede görüntülemek istediğiniz öğeleri seçmenin en hızlı yoludur. Otomatik filtreleme özelliği, kullanıcıların bir listedeki öğeleri belirli bir ölçüte göre filtrelemesine olanak tanır. Metne, sayılara veya tarihlere göre filtreleme yapın.
+title: "Excel AutoFilter ile Çalışma"
+second_title: "Belge"
+linktitle: "AutoFilter"
+type: docs
+url: /autofilter/
+aliases: [/working-with-autofilter/]
+keywords: "AutoFilter, Aspose.Cells Cloud, Excel filtresi, renk filtresi, tarih filtresi, dinamik filtre, sayı filtresi, metin filtresi, boşluk filtresi, özel filtre"
+description: "Aspose.Cells Cloud API'lerini kullanarak Excel AutoFilter'ları (renk, tarih, dinamik, sayı, metin, boşluk) ekleme, düzenleme ve silme yöntemlerini öğrenin. Birden fazla programlama dilinde kod örnekleri."
+weight: 100
+ArticleTitle: "Excel AutoFilter ile Çalışma – Aspose.Cells Cloud Belgeleri"
+---
+
+AutoFilter, bir çalışma sayfasından yalnızca ihtiyacınız olan öğeleri görüntülemenin en hızlı yoludur. AutoFilter özelliği, kullanıcıların belirli kriterlere göre (metin, sayı veya tarihe göre) bir listeyi filtrelemesini sağlar.
 
 **Farklı Filtre Türleri**
 
-Aspose.Cells Cloud, Renk Filtresi, Tarih Filtresi, Sayı Filtresi, Metin Filtresi, Boş Filtreler ve Boş Olmayan Filtreler gibi farklı türde filtreleri uygulamak için birden fazla API sağlar.
+Aspose.Cells Cloud, Renk Filtresi, Tarih Filtresi, Sayı Filtresi, Metin Filtresi, Boşluk Filtresi ve Boş Olmayan Filtre gibi çeşitli filtre türlerini uygulamak için birden fazla API sağlar.
 
 <table class="table table-striped">
   <tr>
-  <td class="col-md-2"> <li>Dolgu Rengi</li> </td>
-  <td class="col-md-10">
-  <p>Aspose.Cells Bulut sağlar
- <a href="/cells/tr/autofilter/add-color-filter/">API numaralı dolgu rengi filtresini ekle</a>
-Hücrelerin dolgu rengi özelliğine göre verileri filtrelemek için.</p>
-  </td>
+    <td class="col-md-2"><strong>Dolu Renk</strong></td>
+    <td class="col-md-10">
+      <p>Aspose.Cells Cloud, hücrelerin dolgu rengi özelliğine göre veri filtrelemek için <a href="/cells/autofilter/add-color-filter/">Dolu Renk Filtresi Ekle API’sini</a> sunar.</p>
+    </td>
   </tr>
   <tr>
-    <td class="col-md-2"> <li>Tarih</li> </td>
-  <td class="col-md-10">
-  <p>
- Ocak 2018 tarihli tüm satırları filtrelemek gibi farklı türde tarih filtreleri uygulanabilir.<a href="/cells/tr/autofilter/add-date-filter/">API tarih renk filtresini ekle</a> Bu işlevselliği uygulayabilirsiniz.
-</p>
-  </td>
+    <td class="col-md-2"><strong>Tarih</strong></td>
+    <td class="col-md-10">
+      <p>Ocak 2018 tarihli satırları filtrelemek gibi çeşitli tarih filtreleri uygulanabilir. Tarih filtresi eklemek için <a href="/cells/autofilter/add-date-filter/">Tarih Filtresi Ekle API’sini</a> kullanın.</p>
+    </td>
   </tr>
-    <tr>
-    <td class="col-md-2"> <li>Dinamik Tarih</li> </td>
-  <td class="col-md-10">
-  <p>
- Bazen, yılın hangi döneminde olursa olsun, tüm hücrelerin Ocak ayında tarih içermesi gibi, tarihe bağlı olarak dinamik filtrelere ihtiyaç duyulur.<a href="/cells/tr/autofilter/add-dynamic-filter/">dinamik filtrenin API'i</a>  
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Dinamik Tarih</strong></td>
+    <td class="col-md-10">
+      <p>Dinamik tarih filtreleri, yıl fark etmeksizin belirli bir aydaki hücreleri filtrelemenizi sağlar (örneğin, tüm Ocak tarihleri). <a href="/cells/autofilter/add-dynamic-filter/">Dinamik Filtre API’sine</a> bakın.</p>
+    </td>
   </tr>
-      <tr>
-    <td class="col-md-2"> <li>Sayı</li> </td>
-  <td class="col-md-10">
-  <p>
-<a href="/cells/tr/autofilter/add-filter/">Özel filtreler API</a> Aspose.Cells kullanılarak, belirli bir aralıktaki sayıya sahip hücreleri seçmek gibi uygulanabilir.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Sayı</strong></td>
+    <td class="col-md-10">
+      <p><a href="/cells/autofilter/add-filter/">Özel Filtreler API’si</a>, sayısal değerleri belirli bir aralıkta olan hücreleri filtrelemenizi sağlar.</p>
+    </td>
   </tr>
-        <tr>
-    <td class="col-md-2"> <li>Metin</li> </td>
-  <td class="col-md-10">
-  <p>
- Bir sütun metin içeriyorsa ve belirli bir metni içeren hücreler seçilecekse,<a href="/cells/tr/autofilter/add-filter/"> Ekleme filtresi API</a> kullanılabilir.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Metin</strong></td>
+      <td class="col-md-10">
+      <p>Bir sütun metin içeriyorsa, belirli bir diziyi içeren hücreleri seçmek için <a href="/cells/autofilter/add-filter/">Filtre Ekle API’sini</a> kullanabilirsiniz.</p>
+    </td>
   </tr>
-          <tr>
-    <td class="col-md-2"> <li>Boşluklar</li> </td>
-  <td class="col-md-10">
-  <p>
-
- Bir sütun, birkaç hücresi boş olacak şekilde metin içeriyorsa ve yalnızca boş hücrelerin bulunduğu satırları seçmek için filtre gerekiyorsa,<a href="/cells/tr/autofilter/match-all-blank/"> Tüm boş hücreleri eşleştir API</a> kullanılabilir
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Boşluklar</strong></td>
+    <td class="col-md-10">
+      <p>Bir sütunun boş olduğu satırları almak için <a href="/cells/autofilter/match-all-blank/">Tüm Boş Hücreleri Eşle API’sini</a> kullanın.</p>
+    </td>
   </tr>
-            <tr>
-    <td class="col-md-2"> <li>Boşluk Olmayanlar</li> </td>
-  <td class="col-md-10">
-  <p>
-
- Herhangi bir metin içeren hücreler filtreleneceği zaman,<a href="/cells/tr/autofilter/match-all-blank/"> Tüm boş hücreleri eşleştir API</a> kullanılabilir
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Boş Olmayanlar</strong></td>
+    <td class="col-md-10">
+      <p>Bir sütunun boş olmayan herhangi bir değeri içeren satırları filtrelemek için <a href="/cells/autofilter/match-all-non-blank/">Tüm Boş Olmayan Hücreleri Eşle API’sini</a> kullanın.</p>
+    </td>
   </tr>
-              <tr>
-    <td class="col-md-2"> <li>Özel filtre</li> </td>
-  <td class="col-md-10">
-  <p>
- Aspose.Cells Bulut sağlar<a href="/cells/tr/autofilter/add-dynamic-filter/"> özel filtreler API</a> Belirli bir dizeyi içeren filtre satırları ve belirli bir dizeyle başlayan veya biten filtre satırları gibi.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Özel Filtre</strong></td>
+    <td class="col-md-10">
+      <p>Aspose.Cells Cloud, belirli bir alt diziyi içeren satırları filtrelemek veya belirli bir diziyle başlayan/biten satırları filtrelemek gibi gelişmiş senaryolar için <a href="/cells/autofilter/add-custom-filter/">Özel Filtreler API’sini</a> sunar.</p>
+    </td>
   </tr>
 </table>
 
-**Otomatik Filtre Verileri Çalıştır**
+**AutoFilter İşlemleri**
 
-- [Excel çalışma sayfasına renk filtresi nasıl eklenir.](/cells/tr/autofilter/add-color-filter/)
-- [Excel çalışma sayfasına özel filtre nasıl eklenir.](/cells/tr/autofilter/add-custom-filter/)
-- [Excel çalışma sayfasına tarih filtresi nasıl eklenir.](/cells/tr/autofilter/add-date-filter/)
-- [Excel çalışma sayfasına dinamik filtre nasıl eklenir.](/cells/tr/autofilter/add-dynamic-filter/)
-- [Excel çalışma sayfasına filtre nasıl eklenir.](/cells/tr/autofilter/add-filter/)
-- [Excel çalışma sayfasına simge filtresi nasıl eklenir.](/cells/tr/autofilter/add-icon-filter/)
-- [Excel çalışma sayfasındaki tarih filtresi nasıl silinir.](/cells/tr/autofilter/delete-a-date-filter/)
-- [Excel çalışma sayfasındaki bir filtre nasıl silinir.](/cells/tr/delete-filter/)
-- [Excel çalışma sayfasından otomatik filtre açıklaması nasıl alınır.](/cells/tr/autofilter/get/)
-- [Excel çalışma sayfasındaki tüm boşlukları nasıl eşleştirebilirim?](/cells/tr/autofilter/match-all-blank/)
-- [Excel çalışma sayfasındaki tüm boş olmayanları nasıl eşleştirebilirim?](/cells/tr/autofilter/match-all-non-blank/)
-- [Excel çalışma sayfasındaki otomatik filtre nasıl yenilenir.](/cells/tr/autofilter/refresh/)
+- [Excel çalışma sayfasına nasıl renk filtresi eklenir?](/cells/autofilter/add-color-filter/) – **Yöntem:** POST, **Uç Nokta:** `/cells/autofilter/add-color-filter/`
+- [Excel çalışma sayfasına nasıl özel filtre eklenir?](/cells/autofilter/add-custom-filter/) – **Yöntem:** POST, **Uç Nokta:** `/cells/autofilter/add-custom-filter/`
+- [Excel çalışma sayfasına nasıl tarih filtresi eklenir?](/cells/autofilter/add-date-filter/) – **Yöntem:** POST, **Uç Nokta:** `/cells/autofilter/add-date-filter/`
+- [Excel çalışma sayfasına nasıl dinamik filtre eklenir?](/cells/autofilter/add-dynamic-filter/) – **Yöntem:** POST, **Uç Nokta:** `/cells/autofilter/add-dynamic-filter/`
+- [Excel çalışma sayfasına nasıl filtre eklenir?](/cells/autofilter/add-filter/) – **Yöntem:** POST, **Uç Nokta:** `/cells/autofilter/add-filter/`
+- [Excel çalışma sayfasına nasıl simge filtresi eklenir?](/cells/autofilter/add-icon-filter/) – **Yöntem:** POST, **Uç Nokta:** `/cells/autofilter/add-icon-filter/`
+- [Excel çalışma sayfasından nasıl tarih filtresi silinir?](/cells/autofilter/delete-a-date-filter/) – **Yöntem:** DELETE, **Uç Nokta:** `/cells/autofilter/delete-a-date-filter/`
+- [Excel çalışma sayfasından nasıl filtre silinir?](/cells/delete-filter/) – **Yöntem:** DELETE, **Uç Nokta:** `/cells/delete-filter/`
+- [Excel çalışma sayfasından AutoFilter açıklaması nasıl alınır?](/cells/autofilter/get/) – **Yöntem:** GET, **Uç Nokta:** `/cells/autofilter/get/`
+- [Excel çalışma sayfasında tüm boş hücreler nasıl eşleştirilir?](/cells/autofilter/match-all-blank/) – **Yöntem:** POST, **Uç Nokta:** `/cells/autofilter/match-all-blank/`
+- [Excel çalışma sayfasında tüm boş olmayan hücreler nasıl eşleştirilir?](/cells/autofilter/match-all-non-blank/) – **Yöntem:** POST, **Uç Nokta:** `/cells/autofilter/match-all-non-blank/`
+- [Excel çalışma sayfasında AutoFilter nasıl yenilenir?](/cells/autofilter/refresh/) – **Yöntem:** POST, **Uç Nokta:** `/cells/autofilter/refresh/`
+---

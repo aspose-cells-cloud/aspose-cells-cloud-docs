@@ -1,73 +1,86 @@
-﻿---
-title: Afficher une feuille de calcul Excel
-second_title: Documen
-linktitle: Dévoilé
-type: docs
-url: /fr/worksheets/unhide/
-aliases: [/unhide-excel-worksheets/]
-keywords: Unhide an Excel Worksheet on an Excel Workbook
-description: Aspose.Cells Cloud REST API prend en charge l'affichage d'une feuille de calcul Excel dans un classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 60
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Afficher une feuille de calcul Excel
 ---
-Ce REST API indique `unhide worksheet`.
- 
-## RSET API
- 
+title: "Révéler une feuille Excel"
+second_title: "Document"
+linktitle: "Révéler"
+type: docs
+url: /worksheets/unhide/
+aliases: [/unhide-excel-worksheets/]
+keywords: "Aspose.Cells, révéler une feuille, API Excel, classeur cloud, REST, visibilité de feuille, classeur Excel"
+description: "Découvrez comment utiliser l’API REST Aspose.Cells Cloud pour révéler une feuille dans un classeur Excel. Inclut les détails de la requête, des exemples cURL et des extraits de code SDK pour plusieurs langages de programmation."
+weight: 60
+---
+
+Cette API REST fournit un point de terminaison pour **révéler une feuille** dans un classeur Excel.
+
+**Conditions préalables**  
+Avant d’appeler cette opération, vous devez disposer de :
+
+* Un jeton d’accès Aspose Cloud valide (JWT) inclus dans l’en-tête `Authorization`.  
+* Le classeur stocké dans un emplacement de stockage pris en charge que vous spécifiez à l’aide des paramètres de requête `folder` et `storageName`.  
+* Le classeur doit être au format pris en charge par Aspose.Cells (par exemple, `.xls`, `.xlsx`, `.xlsm`).  
+
+## API REST
+
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 ```
- Les paramètres de la requête sont :
- 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
-| est visible| booléen| requête| Nouvelle valeur de visibilité de la feuille de calcul.|
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
- 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
- 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Paramètres de la requête**
+
+| Nom du paramètre | Type    | Emplacement | Description                               |
+| ---------------- | ------- | ----------- | ----------------------------------------- |
+| name             | string  | path        | Nom du document.                          |
+| sheetName        | string  | path        | Nom de la feuille.                        |
+| isVisible        | boolean | query       | Nouvelle valeur de visibilité de la feuille (`true`). |
+| folder           | string  | query       | Dossier du document.                      |
+| storageName      | string  | query       | Nom du stockage.                          |
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) définit une interface de programmation accessible publiquement qui permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour appeler facilement les services web Aspose.Cells. L’exemple ci-dessous montre comment effectuer une requête avec cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/visible?isVisible=true" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/visible?isVisible=true" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+-H "Authorization: Bearer <jeton jwt>"   # remplacer <jeton jwt> par votre jeton d’accès
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
+**Codes de réponse possibles**
+
+| Code HTTP | Signification                                              | Corps d’exemple (le cas échéant)                           |
+|-----------|------------------------------------------------------------|-------------------------------------------------------------|
+| 200       | Visibilité de la feuille mise à jour avec succès         | `{ "Code": 200, "Status": "OK" }`                           |
+| 400       | Requête incorrecte – paramètres manquants ou non valides | `{ "Code": 400, "Message": "Paramètres de requête non valides." }` |
+| 401       | Non autorisé – jeton JWT manquant ou non valide          | `{ "Code": 401, "Message": "Échec de l’authentification." }` |
+| 404       | Non trouvé – classeur ou feuille inexistante             | `{ "Code": 404, "Message": "Fichier ou feuille non trouvé." }` |
+| 500       | Erreur interne du serveur                                 | `{ "Code": 500, "Message": "Une erreur inattendue s'est produite." }` |
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Famille de SDK Cloud
- 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
- 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+
+L’utilisation d’un SDK est le moyen le plus rapide de développer. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur votre projet. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code ci-dessous illustrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Perl" tabName8="Android" tabName9="Objective C" tabName10="Go" >}}
 

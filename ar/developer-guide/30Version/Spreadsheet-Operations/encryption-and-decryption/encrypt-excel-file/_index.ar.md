@@ -1,83 +1,129 @@
-﻿---
-title: تشفير كتاب العمل Excel
-second_title: Documen
-linktitle: تشفير ملف Excel
-type: docs
-url: /ar/excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/,/workbook/encrypt/]
-keywords: Encrypt Excel workbook
-description: يدعم Cloud REST تشفير مصنفات العمل. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تشفير مصنف Excel
 ---
-يقوم هذا REST API بتشفير Excel `workbook`.
+title: "تشفير مصنف Excel باستخدام واجهة Aspose.Cells Cloud API – أمثلة سريعة لـ cURL و SDK"
+second_title: "وثيقة"
+linktitle: "تشفير ملف Excel"
+type: docs
+url: /excel-file-encrypt/
+aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+keywords: "تشفير مصنف Aspose Cells، واجهة تشفير Excel، واجهة REST API، cURL، .NET، Java، Python، PHP، Ruby، Node.js، Go، Perl"
+description: "تعلم كيفية تشفير مصنف Excel باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يشمل مثالًا لأمر cURL، وأكواد مرجعية لـ SDK (C#، Java، Python، إلخ)، والمعلمات المطلوبة، وإدارة الأخطاء."
+weight: 20
+ArticleTitle: "تشفير مصنف Excel باستخدام واجهة Aspose.Cells Cloud API – أمثلة لـ cURL و SDK"
+---
 
-**معلمة الاستعلام**
+تقوم هذه الواجهة (REST API) بتشفير **مصنف** Excel.
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|مجلد|خيط|مجلد المصنف الأصلي.|
-|اسم التخزين|خيط|اسم التخزين.|
+**المتطلبات المسبقة:** يجب أن تمتلك رمز JWT صالحًا، وأن يكون المصنف مُرفَعًا في موقع تخزين قبل استدعاء هذه النقطة النهائية (endpoint).
 
-**معلمة نص الطلب**
+## واجهة PostEncryptDocument
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|التشفير|طلب تشفير المصنف||
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/encryption
+```
 
-**طلب تشفير المصنف**
+### **الأمان والمصادقة**
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|نوع التشفير|خيط|XOR/متوافق/موفر تشفير محسّن الإصدار 1/موفر تشفير قوي|
-|طول المفتاح|عدد صحيح||
-|كلمة المرور|خيط||
+تُعد واجهات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-## الباقي API
+### **معلمات الاستعلام (Query Parameters)**
 
-|**API**|**يكتب**|**وصف**|**رابط سواجر**|
-|:- |:- |:- |:- |
-|/الخلايا/{الاسم}/التشفير|بريد|تشفير المستند Excel|[وثيقة PostEncrypt](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument)|
+| اسم المعلمة | النوع   | مطلوبة | الوصف                                   |
+| ------------ | ------ | -------- | ---------------------------------------- |
+| folder       | string | ✗        | مسار المجلد الذي يحتوي على المصنف الأصلي. |
+| storageName  | string | ✗        | اسم وحدة التخزين المراد استخدامها.        |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **معلمة جسم الطلب (Request Body Parameter)**
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعلمة | النوع                      | مطلوبة | الوصف                              |
+| ------------ | -------------------------- | -------- | ----------------------------------- |
+| encryption   | WorkbookEncryptionRequest  | ✓        | إعدادات التشفير الخاصة بالمصنف.     |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+#### **WorkbookEncryptionRequest**
+
+| اسم المعلمة     | النوع   | مطلوبة | الوصف                                                                                   |
+| --------------- | ------- | -------- | ---------------------------------------------------------------------------------------- |
+| EncryptionType  | string  | ✓        | خوارزمية التشفير. انظر الجدول أدناه للاطلاع على القيم المدعومة ومقاصدها.                |
+| KeyLength       | integer | ✗        | طول مفتاح التشفير بالبتات (يُهمل لقيمتَي `XOR` و `Compatible`).                         |
+| Password        | string  | ✓        | كلمة المرور المستخدمة في التشفير.                                                       |
+
+#### **قيم EncryptionType**
+
+| القيمة                             | الوصف                                                      |
+| ---------------------------------- | ----------------------------------------------------------- |
+| `XOR`                              | خوارزمية XOR البسيطة (قديمة، أمان منخفض).                   |
+| `Compatible`                       | تشفير متوافق مع Excel 97‑2003 (بمفتاح 40‑بت).               |
+| `EnhancedCryptographicProviderV1` | AES‑128 مع تجزئة SHA‑1.                                     |
+| `StrongCryptographicProvider`     | AES‑256 مع تجزئة SHA‑512 (أقوى خوارزمية مدعومة).            |
+
+### الاستجابة (Response)
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**رموز حالة HTTP**
+
+| الكود | المعنى                     | الوصف                                                                 |
+|------|----------------------------|----------------------------------------------------------------------|
+| 200  | ناجح (OK)                  | تم تطبيق التشفير بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.         |
+| 400  | طلب غير صالح (Bad Request)| معلمات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم).                 |
+| 401  | غير مصادق عليه (Unauthorized)| رمز JWT غير صالح أو مفقود.                                           |
+| 413  | حجم الحمولة كبيرة جدًا (Payload Too Large)| تجاوز حجم الملف المرفوع الحد المسموح به.                         |
+| 500  | خطأ داخلي في الخادم (Internal Server Error)| حدث خطأ غير متوقع في الخادم.                                      |
+
+## كيفية استخدام واجهة PostEncryptDocument باستخدام SDKs
+
+### مواصفات واجهة PostEncryptDocument
+
+تُعرِّف <a href="https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument" rel="noopener noreferrer">مواصفات OpenAPI</a> واجهة برمجة تطبيقات عامة قابلة للوصول، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول بسهولة إلى خدمات Aspose.Cells عبر الويب. يُظهر المثال التالي كيفية إجراء استدعاء إلى واجهة Cloud API باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"EncryptionType\": \"XOR\", \"KeyLength\": 128, \"Password\": \"mateen\"}"
-
+```bash
+# تشفير المصنف "test.xlsx" باستخدام خوارزمية XOR (مفتاح 128‑بت) وكلمة المرور "mateen".
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer <access_token>" \
+     -d '{ "EncryptionType": "XOR", "KeyLength": 128, "Password": "mateen"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
-    "Code":"200",
-
-    "Status":"OK"
-
+  "Code": "200",
+  "Status": "OK"
 }
-
 ```
+
+**استجابات الأخطاء المحتملة**
+
+| حالة HTTP | الرمز                | الرسالة                                         |
+| --------- | -------------------- | ----------------------------------------------- |
+| 400       | BadRequest           | معلمات مفقودة أو غير صالحة.                    |
+| 401       | Unauthorized         | رمز المصادقة مفقود أو غير صالح.                |
+| 403       | Forbidden            | صلاحيات غير كافية للوصول إلى وحدة التخزين.      |
+| 500       | InternalServerError  | خطأ غير متوقع في الخادم.                        |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. وتتولى SDK إدارة التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر واجهة الويب باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

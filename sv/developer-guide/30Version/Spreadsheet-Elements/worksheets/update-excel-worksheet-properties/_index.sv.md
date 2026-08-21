@@ -1,74 +1,101 @@
-﻿---
-title: Uppdatera egenskaper på ett Excel-arbetsblad
-second_title: Documen
-linktitle: Uppdatering
+---
+title: "Uppdatera kalkylbladsegenskaper – Aspose.Cells Cloud API-referens (v3.0)"
+second_title: "Dokument"
+linktitle: "Uppdatera"
 type: docs
-url: /sv/worksheets/update-properties/
+url: /worksheets/update-properties/
 aliases: [/update-excel-worksheet-properties/]
 weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Uppdatera egenskaper på ett Excel-kalkylblad
+keywords:
+  [
+    "Aspose.Cells",
+    "Excel",
+    "kalkylblad",
+    "uppdatera egenskaper",
+    "REST API",
+    "moln",
+    "v3.0",
+  ]
+description: "Lär dig hur du uppdaterar grundläggande egenskaper (t.ex. visning av nollor, linjalens synlighet) för ett Excel-kalkylblad med Aspose.Cells Cloud REST API v3.0. Innehåller cURL-begäran, SDK-exempel, parametrar och felhantering."
+ArticleTitle: "Uppdatera kalkylbladsegenskaper – Aspose.Cells Cloud API-referens (v3.0)"
 ---
-Denna REST API indikerar `update worksheet base properties`.
- 
-## RSET API
- 
+
+Denna REST API uppdaterar kalkylbladets grundläggande egenskaper.
+
+## REST API
+
+**Förutsättningar:** Du måste ha ett giltigt Aspose Cloud-konto, skaffa ett JWT-åtkomsttoken och säkerställa att målarboksposten finns lagrad på en stödd lagringsplats. Alla förfrågningar ska göras via **HTTPS**.
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
- Begäranparametrarna är:
- 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg||
-| arknamn| sträng| väg||
-| ark|| kropp||
-| mapp| sträng| fråga||
-| lagringsnamn| sträng| fråga| lagringsnamn.|
- 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetProperty) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
- 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Begäranparametrar**
+
+| Parameternamn | Typ   | Sökväg/Frågesträng/HTTPBody | Beskrivning                                                                                          |
+| ------------- | ----- | --------------------------- | ---------------------------------------------------------------------------------------------------- |
+| name          | string | path                        | Arbetsbokens filnamn (inklusive tillägg).                                                           |
+| sheetName     | string | path                        | Namnet på det kalkylblad som ska uppdateras.                                                        |
+| sheet         | object | body                        | JSON-objekt som innehåller nyckel/värde-par för kalkylbladsegenskaper (t.ex. `DisplayZeros`, `IsRulerVisible`). |
+| folder        | string | query                       | Sökväg till mappen i lagringen där arbetsboken finns.                                               |
+| storageName   | string | query                       | Namnet på den lagring som ska användas.                                                             |
+
+Objektet **sheet** skickas i begärandetexten som JSON. Exempel på egenskaper som kan ändras är `DisplayZeros`, `IsRulerVisible`, `IsGridlinesVisible` och andra som definieras i API-specifikationen.
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetProperty) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL från kommandoraden för att enkelt komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1" \
 -X POST \
--d '{"DisplayZeros":"true","IsRulerVisible":"true"}'\
+-d '{"DisplayZeros":"true","IsRulerVisible":"true"}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK-familjen
- 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
- 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
- 
- 
+
+Typiska svarskoder:
+
+- **200** – Lyckades. Kalkylbladsegenskaperna uppdaterades.
+- **400** – Ogiltig begäran (t.ex. felaktigt formaterad JSON eller saknad obligatorisk parameter).
+- **401** – Otillåten åtkomst – saknad eller ogiltig JWT-token.
+- **404** – Arbetsbok eller kalkylblad hittades inte.
+- **500** – Internt serverfel.
+
+| Kod | Betydelse |
+|-----|-----------|
+| 200 | Lyckades – kalkylbladsegenskaperna uppdaterades. |
+| 400 | Felaktig begäran – felaktigt formaterad JSON eller saknad obligatorisk parameter. |
+| 401 | Otillåten åtkomst – saknad eller ogiltig JWT-token. |
+| 404 | Hittades inte – arbetsbok eller kalkylblad finns inte. |
+| 500 | Internt serverfel. |
+
+## Moln-SDK-familj
+
+Att använda en SDK är det snabbaste sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå så att du kan fokusera på dina projektuppgifter. Kolla in [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du gör anrop till Aspose.Cells-webbtjänster med hjälp av olika SDK:er:
+
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -80,7 +107,6 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< tab tabNum="2" >}}
 
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-worksheet-UpdateWorksheetProperties-update-worksheet-properties.java" >}}
-
 
 {{< /tab >}}
 

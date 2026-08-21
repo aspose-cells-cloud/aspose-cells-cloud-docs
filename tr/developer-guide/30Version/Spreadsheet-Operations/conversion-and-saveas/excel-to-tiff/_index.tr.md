@@ -1,90 +1,89 @@
-﻿---
-title: Excel TIF'e
-second_title: Documen
-linketitle: Excel to Tif
-type: docs
-url: /tr/convert-excel-file-to-tiff-file/
-aliases: [/convert-excel-file-to-tiff-in-cloud/,/convert/excel-to-tiff/]
-keywords: Convert excel files to tiff files
-description: Aspose.Cells Cloud REST API, Excel dosyalarının tiff dosyalarına dönüştürülmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 90
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel ila TIFF
 ---
-Bu REST API `saveas` excel dosyası TIFF'e.
+title: "Excel'den TIFF'e"
+second_title: "Belge"
+linketitle: "Excel'den TIFF'e"
+type: docs
+url: /convert-excel-file-to-tiff-file/
+aliases: [/convert-excel-file-to-tiff-in-cloud/, /convert/excel-to-tiff/]
+keywords: "Aspose.Cells Cloud, Excel'den TIFF'e dönüştürme, REST API, cURL, SDK, .NET, Java, Python, görüntü dışa aktarma"
+description: "Aspose.Cells Cloud API ile Excel çalışma kitaplarını yüksek kaliteli TIFF görüntülerine nasıl dönüştüreceğinizi öğrenin. Detaylı cURL komutları, SDK örnekleri (C#, Java, Python, vb.), kimlik doğrulama adımları ve hata işleme."
+weight: 90
+---
 
-[POST /hücreler/{ad}/kaydet](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API, MS Excel dosyasını ek ayarlarla TIFF dosyası olarak kaydetmenizi ve sonucu depolama alanına kaydetmenizi sağlar.
+**Aspose.Cells Cloud**’un **Dönüştür**, **Farklı Kaydet** ve **Dışa Aktar** uç noktaları, bir Excel çalışma kitabını TIFF görüntüsüne dönüştürmenizi sağlar.  
+Bu uç noktaları doğrudan **cURL** ile veya desteklenen SDK’lardan biri aracılığıyla çağırabilirsiniz.
 
-Bu REST API `convert` excel dosyası TIFF'e.
+## REST API
 
-[PUT /hücreler/dönüştür](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API, MS Excel dosyasını ek ayarlarla TIFF dosyasına dönüştürmenizi ve sonucu yanıta kaydetmenizi sağlar.
+| **API**                | **Yöntem** | **Amaç**                                                                                              | **Swagger Bağlantısı**                                                                      |
+| ---------------------- | ---------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| `/cells/convert`       | PUT        | İstek gövdesinde sağlanan çalışma kitabını belirtilen formata (TIFF) dönüştürür.                    | [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) |
+| `/cells/{name}`        | GET        | Adı belirtilen çalışma kitabını başka bir formata (TIFF) dışa aktarır ve sonucu yanıtta döndürür.    | [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)               |
+| `/cells/{name}/saveAs` | POST       | Çalışma kitabını seçilen formata (TIFF) kaydeder ve sonucu bulut depolamada saklar.                 | [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)   |
 
-Bu REST API `export` excel dosyası TIFF'e.
+Bu uç noktalar herkese açıktır ve doğrudan bir web tarayıcısından veya herhangi bir HTTP istemcisinden çağrılabilir.
 
-[GET /hücreler/{isim}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API, MS Excel dosyasını ek ayarlarla TIFF dosyasına dönüştürmenizi ve sonucu yanıta kaydetmenizi sağlar.
+### cURL Örnekleri
 
-## DİNLENME API
-
-|**API**|**Tip**|**Tanım**|**Swagger Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/dönüştür|KOYMAK|Çalışma kitabını istek içeriğinden bir biçime dönüştürür|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
-|/hücreler/{isim}|ELDE ETMEK|Çalışma kitabını başka bir biçime aktarır.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
-|/hücreler/{ad}/kaydet|POSTALAMAK|Çalışma kitabını Biçime Aktar|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
-
-Bu API'ler, herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
-
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-
-{{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export" >}}
+{{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export">}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/convert?format=tiff" \
--X PUT \
--d {"File":{}} \
--H "Content-Type:  multipart/form-data" \
--H "Accept:  multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
-
+     -X PUT \
+     -d '{"File":{"Name":"book1.xlsx","Data":"<base64-içerik>"},"SaveFormat":"tiff"}' \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt belirteci>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="12" >}}
 
 ```bash
-
 curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx/saveas?newfilename=book1.tiff" \
--X POST \
--d "{'SaveFormat':'tiff', 'ImageFormat': 'tiff'}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+     -X POST \
+     -d '{"SaveFormat":"tiff","ImageFormat":"tiff"}' \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt belirteci>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="13" >}}
 
 ```bash
-
-curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=html" \
--X GET \
--d "{'SaveFormat':'tiff', 'ExportImagesAsBase64': 'true'}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=tiff" \
+     -X GET \
+     -H "Authorization: Bearer <jwt belirteci>"
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
+> **Not:**
+>
+> - **Dönüştür** isteği gövdesi, dosyayı (veya depolanmış bir dosyaya bir referansı) ve istenen `SaveFormat` değerini içermelidir.
+> - **Dışa Aktar** isteği için istek gövdesi gerekmez; format, sorgu dizgisinde (`format=tiff`) belirtilir.
+
+## Hata İşleme
+
+| **Durum Kodu** | **Anlamı**            | **Olası Neden**                             |
+| --------------- | --------------------- | ------------------------------------------- |
+| 200             | Başarılı              | TIFF görüntüsü döndürülür (ikili akış).    |
+| 400             | Geçersiz İstek        | Eksik veya hatalı parametreler.             |
+| 401             | Yetkisiz              | Geçersiz veya eksik JWT belirteci.          |
+| 404             | Bulunamadı            | Belirtilen çalışma kitabı mevcut değil.    |
+| 500             | Sunucu İç Hatası      | Beklenmeyen sunucu tarafı durumu.          |
+
+Bir hata oluştuğunda API, `Code`, `Message` ve isteğe bağlı olarak `Description` alanlarını içeren bir JSON yükü döndürür.
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. SDK, düşük seviye detayları yöneterek projenize odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposunu](https://github.com/aspose-cells-cloud) kontrol edin.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web hizmetlerini çağırma yöntemlerini göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

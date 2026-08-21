@@ -1,78 +1,79 @@
-﻿---
-title: Lägg till vertikal sidbrytning
-second_title: Documen
-linktitle: Lägg till vertikal sidbrytning
-type: docs
-url: /sv/page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
-keywords: Add a page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder att lägga till en sidbrytning i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 40
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lägg till vertikal sidbrytning
 ---
-Denna REST API indikerar att en vertikal sidbrytning ska infogas.
+title: "Lägg till en vertikal sidbrytning"
+second_title: "Document"
+linktitle: "Lägg till en vertikal sidbrytning"
+type: docs
+url: /page-breaks/add-vertical-page-break/
+aliases: [/insert-vertical-page-break-inside-worksheet/]
+keywords: "Aspose.Cells Cloud, vertikal sidbrytning, REST API, Excel, SDK, cURL"
+description: "Lär dig hur du infogar en vertikal sidbrytning i ett Excel-ark med Aspose.Cells Cloud REST API (v3.0). Innehåller begärsyntax, cURL-exempel, SDK-exempel, autentiseringshandbok och detaljerad felhantering."
+weight: 40
+ArticleTitle: "Lägg till en vertikal sidbrytning – Aspose.Cells Cloud API"
+---
 
-## RSET API
+Denna REST API infogar en vertikal sidbrytning i ett kalkylblad.
+
+## Säkerhet och autentisering
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
 ```
 
-Begäranparametrarna är:
+### Begärparametrar
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg||
-| arknamn| sträng| väg||
-| cellnamn| sträng| fråga||
-| kolumn| heltal| fråga||
-| rad| heltal| fråga||
-| startrad| heltal| fråga||
-| slutrad| heltal| fråga||
-| mapp| sträng| fråga||
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameter Name | Typ     | Plats  | Beskrivning                                                                 |
+| -------------- | ------- | ------ | --------------------------------------------------------------------------- |
+| name           | string  | path   | Namnet på Excel-arbetsboken.                                                |
+| sheetName      | string  | path   | Namnet på kalkylbladet där sidbrytningen ska läggas till.                  |
+| cellname       | string  | query  | Cellreferensen (t.ex. **A1**) som definierar sidbrytningsplatsen.           |
+| column         | integer | query  | Det nollbaserade indexet för den kolumn där sidbrytningen börjar.          |
+| row            | integer | query  | Det nollbaserade indexet för den rad där sidbrytningen börjar.             |
+| startRow       | integer | query  | Den första raden i sidbrytningsintervallet.                                |
+| endRow         | integer | query  | Den sista raden i sidbrytningsintervallet.                                 |
+| folder         | string  | query  | Mappsökvägen i lagringen där arbetsboken finns.                            |
+| storageName    | string  | query  | Namnet på lagringstjänsten.                                                 |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+**Obligatoriska parametrar** – Antingen `cellname` **eller** `column` måste anges. När `column` används kan du även ange `row`, `startRow` och `endRow` för att definiera ett intervall. Alla andra fält är valfria.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
+### cURL-exempel
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks?column=9" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/SampleBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks?column=9" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
+#### Svar
 
-{{< tab tabNum="2" >}}
-
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
-{{< /tab >}}
+**HTTP-statuskoder**
 
-{{< /tabs >}}
+| Kod | Betydelse                   | Beskrivning                                                     |
+|-----|-----------------------------|-----------------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Bad Request (Felaktig begäran) | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Unauthorized (Ej auktoriserad) | Ogiltig eller saknad JWT-token.                               |
+| 413 | Payload Too Large (För stor payload) | Den uppladdade filen överskrider storleksgränsen.            |
+| 500 | Internal Server Error (Internt serverfel) | Oväntat serverfel.                                          |
 
-## Cloud SDK-familjen
+## Moln-SDK-familj
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Kolla in [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -125,3 +126,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

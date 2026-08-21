@@ -1,76 +1,127 @@
-﻿---
-title: Excel çalışma sayfasına Boş Sütun Ekleme
-second_title: Documen
-linktitle: Reklam
-type: docs
-url: /tr/columns/add/
-aliases: [/add-an-empty-column-in-an-excel-worksheet/,/add-an-empty-column-in-a-worksheet/]
-keywords: Add column on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasına sütun eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasına boş sütun ekleme
 ---
-Bu REST API çalışma sayfası sütunlarını ekle'yi gösterir.
+title: "Excel Çalışma Sayfasına Boş Bir Sütun Ekleyin - Aspose.Cells Cloud API"
+second_title: "Belge"
+linktitle: "Ekle"
+type: docs
+url: /columns/add/
+aliases:
+  - /add-an-empty-column-in-an-excel-worksheet/
+  - /add-an-empty-column-in-a-worksheet/
+keywords: "ekle, sütun, Excel, API, Aspose.Cells, Bulut, REST, ekleme"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel sayfasına yeni bir sütun eklemeyi öğrenin. İstek sözdizimi, cURL örneği ve SDK kod örneklerini içerir."
+weight: 20
+ArticleTitle: "Aspose.Cells Cloud API Kullanarak Excel Çalışma Sayfasına Boş Sütun Ekleyin"
+---
 
-## RSET API
+Bu REST API, bir çalışma sayfasına bir veya daha fazla sütun ekler.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}?totalColumns=1
- 
+**Önkoşullar**  
+Bu uç noktayı çağırmadan önce aşağıdaki adımları tamamladığınızdan emin olun:
+
+- Geçerli bir OAuth 2.0 erişim belirteci edinin ve bunu `Authorization` başlığında belirtin.  
+- Hedef çalışma kitabını seçili depolama alanına (varsayılan = “Default”) kaydedin veya uygun `folder` ve `storageName` parametrelerini belirtin.  
+- `sheetName` içinde belirtilen çalışma sayfası adının çalışma kitabında mevcut olduğunu doğrulayın.
+
+## PutInsertWorksheetColumns API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}?totalColumns=1
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| sütunIndeksi| tam sayı| yol| Sütun dizini.|
-| sütunlar| tam sayı| sorgu| Sütunlar.|
-| güncellemeReferansı| Boolean| sorgu| Doğru|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı       | Tür      | Konum  | Açıklama                                                          |
+| ------------------- | -------- | ------ | ----------------------------------------------------------------- |
+| **name**            | string   | path   | Çalışma kitabının dosya adı.                                       |
+| **sheetName**       | string   | path   | Çalışma sayfasının adı.                                            |
+| **columnIndex**     | integer  | path   | Eklemenin başlayacağı sütunun sıfır tabanlı indeksi.              |
+| **totalColumns**    | integer  | query  | Eklenecek sütun sayısı.                                            |
+| **updateReference** | boolean  | query  | **true** ise, hücre referansları ekleme işlemine göre güncellenir. |
+| **folder**          | string   | query  | Çalışma kitabının bulunduğu klasörün yolu.                         |
+| **storageName**     | string   | query  | Depolama hizmetinin adı.                                           |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Notlar**
+
+- `columnIndex`, çalışma sayfasındaki mevcut sütun sayısının 0 ile aralığında olmalıdır. Mevcut aralığın dışına ekleme yapmak, sayfanın otomatik olarak genişlemesine neden olur.  
+- Birden fazla sütun ekleme (`totalColumns` > 1), mevcut sütunları sağa kaydırır.  
+- `updateReference` bayrağının varsayılan değeri `false`tır; formülleri ve adlandırılmış aralıkları güncellemek için `true` olarak ayarlayın.
+
+[OpenAPI Specifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerini çağırmak için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, kimlik doğrulama ve doğru yol parametresini içeren tam bir isteği göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns?startcolumn=1&totalColumns=1&updateReference=true" -H "accept: application/json"
-
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/1?totalColumns=1&updateReference=true" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Yanıt kodları**
+
+| Kod  | Açıklama                                      |
+|------|-----------------------------------------------|
+| 200  | Sütun(lar) başarıyla eklendi.                 |
+| 400  | Geçersiz istek – eksik veya geçersiz parametreler. |
+| 401  | Yetkisiz – geçersiz veya eksik belirteç.      |
+| 404  | Çalışma kitabı veya çalışma sayfası bulunamadı. |
+| 500  | İç sunucu hatası.                             |
+
+**Örnek hata yanıtları**
+
+```json
+// 400 Bad Request – eksik veya geçersiz parametreler
+{
+  "Code": 400,
+  "Message": "Geçersiz parametre: totalColumns pozitif bir tamsayı olmalıdır."
+}
+
+// 401 Unauthorized – geçersiz veya eksik belirteç
+{
+  "Code": 401,
+  "Message": "Kimlik doğrulama başarısız. Erişim belirteci eksik veya geçersiz."
+}
+
+// 404 Not Found – çalışma kitabı veya çalışma sayfası mevcut değil
+{
+  "Code": 404,
+  "Message": "'test.xlsx' adlı çalışma kitabı bulunamadı."
+}
+
+// 500 Internal Server Error
+{
+  "Code": 500,
+  "Message": "Sunucuda beklenmeyen bir hata oluştu."
+}
+```
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirmenin en hızlı yoludur. Bir SDK, düşük seviye detayları yöneterek size proje mantığına odaklanma imkanı verir. Aspose.Cells Cloud SDK’larının tam listesi için <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub Deposu</a>'na bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerini farklı SDK’lar kullanarak nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

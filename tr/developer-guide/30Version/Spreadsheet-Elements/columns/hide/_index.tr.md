@@ -1,75 +1,80 @@
-﻿---
-title: Excel çalışma sayfasındaki sütunları gizle
-second_title: Documen
-linktitle: Saklandı
-type: docs
-url: /tr/columns/hide/
-aliases: [/hide-columns-in-excel-worksheet/,/hide-columns-in-an-excel-worksheet/]
-keywords: Hide column on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki sütun gizlemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 40
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki sütunları gizle
 ---
-Bu REST API çalışma sayfası sütunlarını gizle'yi gösterir.
+title: "Excel çalışma sayfasında sütunları gizle"
+second_title: "Belge"
+linktitle: "Gizle"
+type: docs
+url: /columns/hide/
+aliases:
+  - /hide-columns-in-excel-worksheet/
+  - /hide-columns-in-an-excel-worksheet/
+keywords: "Aspose.Cells Cloud, sütun gizleme API'si, Excel sütun gizleme, REST API ile sütun gizleme, Aspose.Cells SDK, hesap tablosu otomasyonu"
+description: "Aspose.Cells Cloud REST API'sini (v3.0) kullanarak bir Excel çalışma sayfasında bir veya daha fazla sütunu nasıl gizleyeceğinizi öğrenin. Endpoint, parametreler, cURL örneği, SDK kod örnekleri ve hata işleme içerir."
+weight: 40
+---
 
-## RSET API
+Bu REST API, bir çalışma sayfasında sütunları gizler.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
 ```
 
-İstek parametreleri şunlardır:
+### İstek parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| başlangıçSütunu| tam sayı| sorgu| İşlem yapılacak başlangıç sütun indeksi.|
-| toplamSütunlar| tam sayı| sorgu| İşlem yapılacak sütun sayısı.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı | Tür      | Konum  | Açıklama                                                                 |
+| ------------- | -------- | ------ | ------------------------------------------------------------------------ |
+| name          | string   | path   | Çalışma kitabının dosya adı.                                             |
+| sheetName     | string   | path   | Sütunların gizleneceği çalışma sayfasının adı.                          |
+| startColumn   | integer  | query  | Gizlenecek ilk sütunun sıfır tabanlı indeksi.                           |
+| totalColumns  | integer  | query  | **startColumn**'dan başlayarak ardışık olarak gizlenecek sütun sayısı.  |
+| folder        | string   | query  | Çalışma kitabını içeren klasörün yolu.                                  |
+| storageName   | string   | query  | Dosyanın bulunduğu depolama hizmetinin adı.                            |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+Aspose.Cells web servislerini kolayca çağırmak için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile bir sütunu nasıl gizleyeceğinizi göstermektedir.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
- curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/hide?startColumn=1&totalColumns=1" -H "accept: application/json"
-
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/hide?startColumn=1&totalColumns=1" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
+
+**Mümkün olan yanıt kodları**
+
+| HTTP Kodu | Anlamı                                    | Örnek JSON (hata)                                     |
+| --------- | ----------------------------------------- | ----------------------------------------------------- |
+| 200       | Başarılı                                   | `{ "Code": 200, "Status": "OK" }`                     |
+| 400       | Geçersiz istek (örneğin, geçersiz parametreler) | `{ "Code": 400, "Message": "Geçersiz sütun aralığı." }` |
+| 401       | Yetkisiz erişim (eksik/geçersiz belirteç)  | `{ "Code": 401, "Message": "Geçersiz erişim belirteci." }` |
+| 404       | Bulunamadı (çalışma kitabı veya çalışma sayfası) | `{ "Code": 404, "Message": "Dosya bulunamadı." }`       |
+| 500       | İç sunucu hatası                           | `{ "Code": 500, "Message": "Beklenmeyen hata." }`     |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+## Bulut SDK Geliştirme Kiti
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirmenin en hızlı yoludur. Bir SDK, düşük seviye ayrıntıları soyutlar ve iş mantığınıza odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK’ları kullanarak Aspose.Cells web servislerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

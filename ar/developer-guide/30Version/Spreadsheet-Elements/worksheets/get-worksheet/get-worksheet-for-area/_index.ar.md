@@ -1,56 +1,90 @@
-﻿---
-title: تصدير منطقة من ورقة عمل Excel
-second_title: Documen
-linktitle: نكون
-type: docs
-url: /ar/worksheets/area-to-different-formats/
-aliases: [/get-worksheet-for-area/]
-keywords: Get area to different format content from an Excel worksheet
-description: يدعم Cloud REST Aspose.Cells API الوصول إلى محتوى بتنسيقات مختلفة من ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 230
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تصدير منطقة من ورقة عمل Excel
 ---
-[احصل على /cells/{name}/worksheets/{sheetName}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet)يتيح لك API تحويل المساحة المحددة في ورقة العمل إلى أنواع مختلفة من تنسيقات الملفات. التنسيقات المدعومة:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [إكس إل إس بي](https://docs.fileformat.com/spreadsheet/xlsb/), [ملف CSV](https://docs.fileformat.com/spreadsheet/csv/), [تي إس في](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [المواد المستنفدة للأوزون](https://docs.fileformat.com/spreadsheet/ods/), [رسالة قصيرة](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [أو تي إس](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [ديف](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[صورة متحركة](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [مؤسسة ويكيميديا](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [أرقام](https://docs.fileformat.com/spreadsheet/numbers/), [فودز](https://docs.fileformat.com/spreadsheet/fods/).
+title: "تصدير منطقة ورقة عمل إلى PNG و PDF و CSV – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+second_title: "مستند"
+linktitle: "المنطقة"
+type: docs
+url: /worksheets/area-to-different-formats/
+aliases: [/get-worksheet-for-area/]
+keywords: "Aspose.Cells, تصدير منطقة ورقة العمل, PNG, PDF, CSV, تحويل Excel, واجهة برمجة تطبيقات REST, مكتبات SDK"
+description: "تعرّف على كيفية تصدير نطاق خلايا محدّد من ورقة عمل Excel إلى تنسيقات PNG و PDF و CSV وأكثر من 20 تنسيقًا آخر باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST أو مكتبات SDK (C# و Java و Python…)."
+weight: 230
+ArticleTitle: "تصدير منطقة ورقة العمل إلى PNG و PDF و CSV باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud – دليل شامل"
+---
 
-## الباقي API
+يتيح لك [GET /cells/{name}/worksheets/{sheetName}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) API تحويل منطقة محددة من ورقة العمل إلى تنسيقات ملفات متعددة. التنسيقات المدعومة: [XLS](https://docs.fileformat.com/spreadsheet/xls/)، [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)، [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)، [CSV](https://docs.fileformat.com/spreadsheet/csv/)، [TSV](https://docs.fileformat.com/spreadsheet/tsv/)، [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)، [ODS](https://docs.fileformat.com/spreadsheet/ods/)، [TXT](https://docs.fileformat.com/word-processing/txt/)، [PDF](https://docs.fileformat.com/pdf/)، [OTS](https://docs.fileformat.com/spreadsheet/ots/)، [XPS](https://docs.fileformat.com/page-description-language/xps/)، [DIF](https://docs.fileformat.com/spreadsheet/dif/)، [PNG](https://docs.fileformat.com/Image/png/)، [JPEG](https://docs.fileformat.com/image/jpeg/)، [GIF](https://docs.fileformat.com/image/gif/)، [BMP](https://docs.fileformat.com/image/bmp/)، [WMF](https://docs.fileformat.com/image/wmf/)، [TIFF](https://docs.fileformat.com/image/tiff/)، [EMF](https://docs.fileformat.com/image/emf/)، [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/)، [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+يُظهر هذا الدليل كيفية تصدير **نطاق خلايا محدّد** من ورقة عمل Excel إلى تنسيقات PNG و PDF و CSV وأكثر من 20 تنسيق إضافي باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. وللمهام ذات الصلة مثل تصدير ورقة العمل بالكامل أو تحويل ملف книга، راجع صفحات **[تصدير ورقة العمل بالكامل](https://docs.aspose.cloud/cells/worksheets/worksheet-to-different-formats/)** و **[تحويل ملف книга إلى PDF](https://docs.aspose.cloud/cells/workbook/convert-to-pdf/)**.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+## واجهة برمجة تطبيقات REST
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) واجهة برمجة تطبيقات قابلة للوصول العام وتتيح لك إجراء تفاعلات REST مباشرة من متصفّح ويب.
+
+### معاملات الطلب
+
+| المعامل             | النوع   | الإلزام | الوصف                                           |
+|---------------------|---------|---------|--------------------------------------------------|
+| `name`              | نص      | نعم     | اسم ملف книга.                                 |
+| `sheetName`         | نص      | نعم     | اسم ورقة العمل المستهدفة.                       |
+| `format`            | نص      | نعم     | تنسيق الإخراج المطلوب (png أو pdf أو csv…).     |
+| `area`              | نص      | لا      | نطاق الخلايا المراد تصديره (مثال: `B3:K8`).    |
+| `verticalResolution`| عدد صحيح| لا      | الدقة الرأسية للتنسيقات النقطية.               |
+| `horizontalResolution`| عدد صحيح| لا    | الدقة الأفقية للتنسيقات النقطية.               |
+| `folder`            | نص      | لا      | مجلد تخزين السحابة الذي يحتوي على الملف.       |
+| `storage`           | نص      | لا      | اسم خدمة التخزين.                               |
+
+### الاستجابة الناجحة
+
+* **200 OK** – يُعيد الملف المطلوب بصيغته الثنائية (PNG أو PDF أو CSV… إلخ).
+
+### استجابات الأخطاء
+
+| رمز الحالة | الوصف                                              |
+|------------|-----------------------------------------------------|
+| 400        | طلب خاطئ – معاملات مفقودة أو غير صالحة.          |
+| 401        | غير مُصادَق – رمز المصادقة مفقود أو غير صالح.     |
+| 404        | غير موجود – لم يُعثر على книга أو ورقة العمل المحدّدة. |
+| 500        | خطأ داخلي في الخادم – حالة غير متوقعة في الخادم.  |
+
+**مثال على حمولة خطأ**
+
+```json
+{
+  "error": {
+    "code": "InvalidParameter",
+    "message": "المعامل 'area' بصيغة غير صحيحة. الصيغة المتوقعة: B3:K8."
+  }
+}
+```
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات Aspose.Cells عبر الويب. يوضح المثال التالي كيفية إجراء استدعاء لواجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1?format=png&verticalResolution=100&horizontalResolution=90&area=B3%3AK8&folder=DotnetFiles" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
-Converted Image 
-
-```
+صورة محوّلة (PNG ثنائي)
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## عائلة مكتبات SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعد استخدام مكتبات SDK الطريقة الأسرع للتطوير. فتُجرّد مكتبات SDK التفاصيل من المستوى المنخفض، مما يسمح لك بالتركيز على منطق مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح الأمثلة التالية كيفية استدعاء خدمات Aspose.Cells عبر مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

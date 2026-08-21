@@ -1,78 +1,80 @@
-﻿---
-title: Novedades de Aspose.Cells Cloud en 2024
-second_title: Documen
-linktitle: Novedades en 202
+---
+title: Novedades en Aspose.Cells Cloud en 2024
+second_title: "Documento"
+linktitle: "Novedades en 2024"
 type: docs
 weight: 20
-url: /es/new-features/2024/
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: Esta página describe las nuevas funciones más interesantes de Aspose.Cells Cloud introducidas en versiones recientes
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Novedades en Aspose.Cells Nube
+url: /new-features/2024/
+keywords: "Aspose.Cells, Cloud, 2024, nuevas características, API de eliminación de duplicados, API de extracción de texto, transformación de datos, hoja de cálculo, Excel, CSV, PDF, API REST"
+description: "Resumen de las nuevas características y mejoras en Aspose.Cells Cloud para 2024, incluyendo la API de eliminación de duplicados, la API de extracción de texto y las mejoras en la transformación de datos."
+ArticleTitle: "Nuevas características y mejoras de Aspose.Cells Cloud en 2024"
 ---
-Bienvenido a las novedades de la documentación de la nube Aspose.Cells. Utilice esta página para encontrar rápidamente los últimos cambios.
+
+Bienvenido a las novedades de la documentación de Aspose.Cells Cloud. Utilice esta página para encontrar rápidamente los cambios más recientes. Este registro de cambios resume las principales mejoras, correcciones de errores y nuevas APIs introducidas en cada lanzamiento de Aspose.Cells Cloud durante 2024.
 
 ## Mejoras en la versión 24.12
 
-- Agregue la nueva API de eliminación de duplicados.
-- Añade el nuevo texto de extracto API.
-- No se pudo crear correctamente el filtro pivote.
+- Se agregó la nueva **API de eliminación de duplicados**.  
+- Se agregó la nueva **API de extracción de texto**.  
+- Se corrigió un error donde la creación de un filtro de tabla dinámica podría fallar.
 
 ## Mejoras en la versión 24.11
 
-- Agregue la función de conversión de texto en TextProcessingController.
+- Se agregó una función de conversión de texto a `TextProcessingController`.
 
 ## Mejoras en la versión 24.10
 
-- Agregue la nueva función sobre la eliminación de caracteres en TextProcessingController.
+- Se agregó una función de eliminación de caracteres a `TextProcessingController`.
 
 ## Mejoras en la versión 24.9
 
-- Agregar función de mayúsculas y minúsculas para TextProcessingController.
-- Soporte para exportar hoja de trabajo a HTML con dirección de celda o identificación.
+- Se agregó una función de cambio de mayúsculas/minúsculas a `TextProcessingController`.  
+- Se admitió la exportación de una hoja de cálculo a HTML con direcciones o identificadores de celdas.
 
 ## Mejoras en la versión 24.8
 
-- Agregue la función de recorte de texto en Cells Servicios en la nube.
+- Se agregó una función de recorte de texto a los servicios en la nube de Cells.
 
 ## Mejoras en la versión 24.7
 
-- Agregue una nueva función sobre cómo agregar contenido de texto.
-- Agregue el token de acceso obtenido por ID de cliente y secreto de cliente.
+- Se introdujo la **API AddTextContent** para insertar texto arbitrario en una hoja de cálculo.  
+- Se agregó la capacidad de obtener un token de acceso utilizando el ID de cliente y el secreto de cliente.
 
 ## Mejoras en la versión 24.6.1
 
-- Corregir parámetros de consulta extendidos para API.
+- Se corrigieron los parámetros de consulta extendidos para las APIs.
 
 ## Mejoras en la versión 24.6.0
 
-- Optimizar los pasos aplicados de conversión de datos.
-- Optimizar la función de carga de datos de transformación de datos.
-- Aumentar el soporte para net425 y netstandard2.0.
+- Se optimizaron los pasos de conversión de datos.  
+- Se optimizó la función de carga de datos para la transformación de datos.  
+- Se aumentó el soporte para .NET Framework 4.2.5 y .NET Standard 2.0.
 
 ## Mejoras en la versión 24.5.1
 
-- Agregar método de consultas de combinación para cargar datos de la transformación de datos.
-- Optimizar el modelo de datos del gráfico.
-- Actualizar la obtención de la dirección del token de acceso.
+- Se agregó un método de fusión de consultas para cargar datos en la transformación de datos.  
+- Se optimizó el modelo de datos de gráficos.  
+- Se actualizó el punto final del token de acceso.
 
 ## Mejoras en la versión 24.4
 
-- Admite la función de transformación de datos para los servicios en la nube Aspose.Cells.
+- Se admitió la función de transformación de datos para los servicios en la nube de Aspose.Cells.
 
 ## Mejoras en la versión 24.3
 
-- Admite deduplicación de datos.
-- Soporte de llenado de datos.
-- Soporte para eliminar filas incompletas.
-- Apoyar la limpieza de datos.
+- Se admitió la deduplicación de datos (mejorada).  
+- Se admitió el rellenado de datos.  
+- Se admitió la eliminación de filas incompletas.  
+- Se admitió la limpieza de datos.
 
 ## Mejoras en la versión 24.2.1
 
-- Admite deduplicación de datos.
+- Se admitió la deduplicación de datos (soporte inicial, ampliado en versiones posteriores).
 
 ## Mejoras en la versión 24.1.1
 
-- Se corrigieron errores ortográficos para varias funciones.
-- Agregue el método PostFitTallToPages para el controlador de configuración de página.
-- Agregue el método PostFitWideToPages para el controlador de configuración de página.
-- Optimizar las opciones de guardado acerca de paginado.
+- Se corrigieron errores ortográficos en varias funciones.  
+- Se agregó el método `PostFitTallToPages` a `PageSetupController`.  
+- Se agregó el método `PostFitWideToPages` a `PageSetupController`.  
+- Se optimizaron las opciones de guardado paginado.  
+---

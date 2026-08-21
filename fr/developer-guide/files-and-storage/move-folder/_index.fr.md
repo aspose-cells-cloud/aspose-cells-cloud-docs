@@ -1,74 +1,95 @@
-﻿---
-title: Déplacer le dossier
-second_title: Documen
-linktitle: Déplacer le dossier
+---
+title: "API Aspose.Cells Cloud Move Folder – Déplacer rapidement des dossiers dans le cloud"
+second_title: "Document"
+ArticleTitle: "Gestion des fichiers Excel basée sur le cloud – Déplacer rapidement des dossiers dans le cloud"
+linktitle: "Déplacer un dossier"
 type: docs
 url: /fr/move-folder/
-keywords: Move folder API, Excel API, Folder management, REST API, Aspose.Cells, Cloud storag
-description: Cette documentation fournit un guide complet sur l'utilisation du Move Folder API pour la gestion des dossiers dans le stockage cloud Aspose.Cells
+keywords: "Aspose.Cells, Déplacer un dossier, Stockage cloud, API Excel"
+description: "Découvrez comment déplacer des dossiers dans le stockage Aspose.Cells Cloud via l'API RESTful Move Folder. Inclut l'endpoint, les paramètres, un exemple cURL, les codes d’erreur et des exemples de SDK pour C#, Java, Python, etc."
 weight: 100
-kwords: Excel API, Déplacer le dossier API, Office Cloud, REST API, Gestion des feuilles de calcul, PDF, CSV, JSON, Markdown, Faire correspondre toutes les cellules vides dans une feuille de calcul Excel
 ---
-## **Excel API : Déplacer le dossier**
 
+Cette API permet de déplacer un dossier d’un emplacement à un autre dans le stockage Aspose.Cells Cloud. Elle facilite l’organisation des fichiers et la gestion efficace du stockage cloud.
+
+## **API Excel : Déplacer un dossier**
+
+### API Web
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
 ```
-PUT http://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
+
+**Exemple de requête cURL**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/FolderA?destPath=FolderB" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
-### **Description de la fonction**
+### **Sécurité et authentification**
 
-Ce fichier API permet aux utilisateurs de déplacer un dossier d'un emplacement à un autre dans le stockage cloud Aspose.Cells. Il est essentiel pour organiser les fichiers et gérer efficacement le stockage cloud.
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
-###  Les paramètres de la requête de**déplacer le dossier** API sont
+### Paramètres de la requête de l’API **moveFolder**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP| Description|
-|----------------|--|------------------------|--------------------------------------------------------|
-| chemin source| Chaîne| Chemin| Le chemin source du dossier à déplacer.|
-| chemin de destination| Chaîne| Requête| Le chemin de destination où le dossier doit être déplacé.|
-| srcStorageName| Chaîne| Requête| Le nom du stockage source.|
-| destStorageName| Chaîne| Requête| Le nom du stockage de destination.|
+| Nom du paramètre | Type   | Emplacement | Description                                                       |
+| ---------------- | ------ | ----------- | ----------------------------------------------------------------- |
+| srcPath          | string | Path        | Chemin complet du dossier à déplacer, par ex. `FolderA/`.        |
+| destPath         | string | Query       | Chemin cible vers lequel le dossier sera déplacé, par ex. `FolderB/`. |
+| srcStorageName   | string | Query       | (Facultatif) Nom du stockage source.                             |
+| destStorageName  | string | Query       | (Facultatif) Nom du stockage de destination.                     |
 
-### **Description de la réponse**
+**Détails des paramètres**
 
-```json
-{
-Void
-}
-```
+- **srcPath** – obligatoire. Chemin du dossier source.
+- **destPath** – obligatoire. Chemin du dossier de destination.
+- **srcStorageName** – facultatif. Identifiant du stockage source.
+- **destStorageName** – facultatif. Identifiant du stockage de destination.
+
+### **Réponse**
+
+En cas de succès, l’API renvoie un corps de réponse vide avec le code d’état HTTP **200 OK**. Les erreurs sont renvoyées sous forme d’objets JSON contenant un champ `error`.
+
+**Codes d’état HTTP**
+
+| Code HTTP | Statut HTTP           | Description                                                       |
+| --------- | --------------------- | ----------------------------------------------------------------- |
+| 200       | OK                    | L’API Web a été appelée avec succès ; la réponse contient les détails de l’opération. |
+| 400       | Mauvaise requête      | Paramètres manquants ou non valides (par ex. type de fichier non pris en charge). |
+| 401       | Non autorisé          | Jeton JWT non valide ou manquant.                                |
+| 413       | Charge utile trop volumineuse | Le fichier téléchargé dépasse la taille limite.           |
+| 500       | Erreur interne du serveur | Erreur serveur inattendue.                                      |
 
 ## Spécification OpenAPI
 
- Le[Spécification OpenAPI](https://reference.aspose.cloud/cells/#/FolderController/MoveFolder) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+La [Spécification OpenAPI](https://reference.aspose.cloud/cells/#/FolderController/MoveFolder) définit une interface de programmation accessible publiquement et vous permet d’effectuer des interactions REST directement depuis un navigateur web.
 
-## Excel API Kit de développement logiciel
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment passer des appels à l’API Cloud via cURL.
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MoveFolder.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}?destPath={destPath}" \
+     -H "Authorization: Bearer {access_token}"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MoveFolder.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```json
+{}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MoveFolder.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MoveFolder.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MoveFolder.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MoveFolder.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MoveFolder.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MoveFolder.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+L’utilisation d’un SDK constitue la meilleure façon d’accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants illustrent comment passer des appels aux services web Aspose.Cells à l’aide de divers SDK :
+
+---

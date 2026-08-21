@@ -1,74 +1,120 @@
-﻿---
-title: Excel workboo için dijital imza ekleyin
-second_title: Documen
-linktitle: Dijital imza
-type: docs
-url: /tr/excel-digital-signature/
-aliases: [/protect/digital-signature/,/workbook/digital-signature/]
-keywords: Add digital signature for an Excel workbook
-description: Aspose.Cells Cloud REST API, Excel çalışma kitabına dijital imza eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 35
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma kitabına dijital imza ekleme
 ---
-Bu REST API, Excel çalışma kitabına `digital signature` eklenmesini belirtir.
+title: "Excel Çalışma Kitabına Dijital İmza Ekleyin"
+ArticleTitle: "Excel Çalışma Kitabına Dijital İmza Ekleyin – Aspose.Cells Cloud API"
+second_title: "Belge"
+linktype: "dijital imza"
+type: docs
+url: /excel-digital-signature/
+aliases:
+  - /protect/digital-signature/
+  - /workbook/digital-signature/
+keywords: "Aspose.Cells Cloud, dijital imza, Excel çalışma kitabı, REST API, .pfx, JWT, imza API'si"
+description: "Aspose.Cells Cloud REST API'sini (v4.0) kullanarak bir Excel çalışma kitabına dijital imza nasıl ekleyeceğinizi öğrenin. Uç nokta, parametreler, kimlik doğrulama, yanıt şeması, hata yönetimi ve birden fazla dil için SDK örneklerini içerir."
+weight: 35
+---
 
-## RSET API
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/digitalsignature
- 
+**Önkoşullar:**  
+Bu uç noktayı çağırmadan önce şunlardan emin olun:
+
+- Aspose Cloud kimlik doğrulaması yoluyla geçerli bir JWT erişim belirteci edinmiş olmanız.  
+- Hedef çalışma kitabının Aspose Cloud depolama alanınıza yüklenmiş olması.  
+- `.pfx` veya `.p12` formatında bir dijital imza dosyasına ve şifresine sahip olmanız.
+
+Bu REST API, bir Excel çalışma kitabına **dijital imza** ekler.
+
+## PostDigitalSignature API
+
+```http
+POST https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabı adı.|
-| dijitalimza dosyası| sicim| sorgu| Dijital imza dosya parametreleri.|
-| şifre| sicim| sorgu||
-| dosya| sicim| sorgu| Çalışma kitabının klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostDigitalSignature) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı          | Tür    | Konum                 | Açıklama                                               |
+| ------------------------ | ------ | -------------------- | ------------------------------------------------------ |
+| **name**                 | string | `<code>path</code>`  | Çalışma kitabının adı.                                |
+| **digitalsignaturefile** | string | `<code>query</code>` | Dijital imza dosyasının yolu (`.pfx` veya `.p12`).    |
+| **password**             | string | `<code>query</code>` | Çalışma kitabının korunmuş olması durumunda şifresi.  |
+| **folder**               | string | `<code>query</code>` | Çalışma kitabının bulunduğu klasör.                   |
+| **storageName**          | string | `<code>query</code>` | Kullanılacak depolama hizmetinin adı.                |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+*Not: Dosya adı özel karakterler içeriyorsa, sorgu dizisine eklemeden önce URL kodlaması yapın.*
+
+### Hata Yönetimi
+
+| HTTP Durum Kodu | Anlam                                                  |
+| --------------- | ------------------------------------------------------ |
+| 200             | İmza başarıyla uygulandı.                             |
+| 400             | Geçersiz istek – eksik veya geçersiz parametreler.    |
+| 401             | Yetkisiz erişim – geçersiz veya süresi dolmuş OAuth belirteci. |
+| 403             | Yetki reddedildi – yetersiz izinler veya erişim engellendi. |
+| 500             | Sunucu iç hatası – beklenmeyen hata.                  |
+
+### HTTP Durum Kodu Hata Yanıtları
+
+| HTTP Durum Kodu | Kod                 | Açıklama                                                  |
+| --------------- | ------------------- | --------------------------------------------------------- |
+| 400             | BadRequest          | Eksik veya geçersiz parametreler.                         |
+| 401             | Unauthorized        | Geçersiz veya eksik erişim belirteci.                     |
+| 404             | NotFound            | Belirtilen çalışma kitabı belirtilen klasör/depolama alanında bulunamadı. |
+| 500             | InternalServerError | Beklenmeyen sunucu hatası.                                |
+
+
+## SDK’larla PostDigitalSignature API Nasıl Kullanılır
+
+### PostDigitalSignature API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Protection/PostDigitalSignature), genel olarak erişilebilir bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerini çağırmak için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, API'ye bir isteği göstermektedir:
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature?digitalsignaturefile=signature.pfx&password=YourPassword" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+**Yanıt Şeması**  
+API, aşağıdaki alanları içeren bir JSON nesnesi döndürür:
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| Alan         | Tür    | Açıklama                                             |
+| ------------ | ------ | ---------------------------------------------------- |
+| `Code`       | int    | Sonucu belirten HTTP benzeri durum kodu.             |
+| `Status`     | string | Sonucu açıklayan kısa metin (örneğin, `OK`).        |
+| `SignatureId`| string | Uygulanan dijital imzanın tanımlayıcısı (isteğe bağlı). |
+| `Message`    | string | Ek bilgiler veya hata detayları (isteğe bağlı).       |
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+### Aspose.Cells Cloud SDK'larını Kullanma
+
+Bir SDK kullanmak entegrasyonu basitleştirir ve tekrarlayan kod miktarını azaltır. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
+
+Aşağıdaki kod örnekleri, farklı SDK'lar kullanarak Aspose.Cells web hizmetlerini çağırma yöntemini göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -98,7 +144,7 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostDigitalSignature.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82a2de2e4189bc27ae92abf73c36b4df0" "Example_PostDigitalSignature.ts" >}}
 
 {{< /tab >}}
 

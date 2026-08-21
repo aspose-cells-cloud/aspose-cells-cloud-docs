@@ -1,54 +1,98 @@
-﻿---
-title: 在 Excel 工作簿中查找文本
-second_title: Documen
-linktitle: 在工作簿中查找
+---
+title: "在 Excel 工作簿中查找文本"
+second_title: "文档"
+linktitle: "在工作簿中查找"
 type: docs
-url: /zh/workbook/find-text/
+url: /workbook/find-text/
 aliases: [/find-text-in-a-workbook/]
 weight: 30
-keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) workbook
-description: Aspose.Cells Cloud REST API 支持从 Excel 工作簿中查找文本。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 工作簿中查找文本
+keywords: "Aspose.Cells, 查找文本, Excel API, 工作簿搜索"
+description: "了解如何使用 Aspose.Cells Cloud API 在 Excel 工作簿（XLS‑X、ODS）中**查找文本**。包含 cURL 示例、SDK 代码片段及响应模式。立即开始使用。"
+ArticleTitle: "使用 Aspose.Cells Cloud API 在 Excel 工作簿中查找文本"
 ---
-此 REST API 表示 Excel 文件中的 `search` 文本。
 
-## 重新设置 API
+此 REST API 用于在 Excel 工作簿中搜索文本。
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/findText
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/findText
 ```
 
-请求参数为：
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|文本|细绳|询问|文本示例。|
-|文件夹|细绳|询问|文档的文件夹。|
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 安全可靠，需采用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksTextSearch)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### 请求参数
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名称      | 类型   | 位置   | 描述                                           |
+| ------------- | ------ | ------ | ---------------------------------------------- |
+| name          | string | path   | Excel 工作簿的文件名。                         |
+| text          | string | query  | 待搜索的文本字符串。                           |
+| folder        | string | query  | 包含工作簿的文件夹路径（可选）。               |
+| storageName   | string | query  | 工作簿所在的存储空间名称（可选）。             |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **响应**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
+```
+
+**HTTP 状态码**
+
+| 状态码 | 含义             | 描述                                           |
+| ------ | ---------------- | ---------------------------------------------- |
+| 200    | OK（请求成功）   | 筛选操作成功执行；响应中包含操作详情。         |
+| 400    | Bad Request（错误请求） | 缺少或参数无效（例如不支持的文件类型）。       |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。                           |
+| 413    | Payload Too Large（载荷过大） | 上传文件超过大小限制。                         |
+| 500    | Internal Server Error（内部服务器错误） | 发生了意外的服务器错误。                       |
+
+## 如何使用 SDK 调用 PostWorkbooksTextSearch API
+
+### PostWorkbooksTextSearch API 规范
+
+<a href="https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksTextSearch" target="_blank" rel="noopener noreferrer">OpenAPI 规范</a> 定义了一个公开可访问的编程接口，支持您直接从 Web 浏览器发起 REST 请求。
+
+您可使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何通过 cURL 调用该 API。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/findText?text=a" -H "accept: application/json"
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/findText?text=a" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <your_access_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
   "Status": "string",
   "TextItems": {
@@ -71,18 +115,17 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/findText?text=a" -H 
     ]
   }
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+### 使用 Aspose.Cells Cloud SDK
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是最快捷的开发方式。SDK 负责处理底层细节，使您能专注于业务逻辑开发。请查阅 <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub 仓库</a> 获取 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -135,3 +178,4 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/findText?text=a" -H 
 {{< /tab >}}
 
 {{< /tabs >}}
+---

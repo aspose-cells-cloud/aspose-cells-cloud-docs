@@ -1,85 +1,139 @@
-﻿---
-title: Excel dosyasını çoklu dosyaya bölün
-second_title: Documen
-linktitle: Split Multi Excel dosyası
-type: docs
-url: /tr/split-an-excel-file-to-multi-files/
-aliases: [/split-excel-workbooks/,/workbook/split/]
-keywords: Split multi Excel files
-description: Aspose.Cells Cloud REST API, birden fazla Excel dosyasını bölmeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 32
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Bölme
 ---
-Bu REST Api `split` çoklu Excel dosyalarını gösterir.
+title: "Bir Excel dosyasını birden fazla dosyaya bölün"
+second_title: "Belge"
+linktype: "Bir Excel dosyasını birden fazla dosyaya bölün"
+type: docs
+url: /split-an-excel-file-to-multi-files/
+aliases: [/split-excel-workbooks/,/workbook/split/]
+keywords: "Aspose.Cells, Bulut, Excel, Böl, API, PDF, CSV, JSON"
+description: "Aspose.Cells Cloud REST API'sini kullanarak çok sayfalı Excel çalışma kitaplarını ayrı dosyalara bölün. Çıktı formatları olarak PDF, CSV ve JSON'u destekler ve Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby ve Swift için SDK'lar aracılığıyla kullanılabilir."
+weight: 32
+ArticleTitle: "Bir Excel dosyasını birden fazla dosyaya bölün - Aspose.Cells Cloud Dokümantasyonu"
+---
 
-## RSET API
+Aspose.Cells Cloud REST API'si, çok sayfalı Excel çalışma kitaplarını ayrı dosyalara böler.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/split
- 
+**Ön Gereksinimler**  
+API'yi çağırmadan önce geçerli bir JWT belirteci edinmeniz ve her isteğin `Authorization` başlığına dahil etmeniz gerekir. Ayrıntılar için [kimlik doğrulama kılavuzuna](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) bakın.
+
+## PostSplit API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/split
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| dosya| dosya| formData| Yüklenecek dosya|
-| biçim| sicim| sorgu||
-| şifre| sicim| sorgu||
-| itibaren| tam sayı| sorgu||
-| ile| tam sayı| sorgu||
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostSplit) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### İstek parametreleri
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Parametre Adı | Tür   | Konum     | Açıklama                                                         |
+|---------------|-------|-----------|------------------------------------------------------------------|
+| file          | dosya | formData  | Yüklenecek Excel çalışma kitabını belirtir.                      |
+| format        | string| query     | İstenen çıktı formatı (örneğin, `pdf`, `csv`, `json`).         |
+| password      | string| query     | Şifrelenmiş bir çalışma kitabının şifresi (isteğe bağlı).        |
+| from          | integer| query    | Dahil edilecek ilk sayfanın indeksi (1‑tabanlı).                |
+| to            | integer| query    | Dahil edilecek son sayfanın indeksi (dahil).                    |
+
+### **Yanıt**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Files": [
+        {
+            "Filename" : "[dosya1 adı]",
+            "Filesize" : [dosya boyutu],
+            "FileContent" : "[Base64Dizesi]"
+        },        {
+            "Filename" : "[dosya2 adı]",
+            "Filesize" : [dosya boyutu],
+            "FileContent" : "[Base64Dizesi]"
+        },        {
+            "Filename" : "[dosya3 adı]",
+            "Filesize" : [dosya boyutu],
+            "FileContent" : "[Base64Dizesi]"
+        }
+    ]
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                         | Açıklama                                                       |
+|-----|-------------------------------|----------------------------------------------------------------|
+| 200 | OK (Tamam)                    | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request (Hatalı İstek)    | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)       | Geçersiz veya eksik JWT belirteci. |
+| 413 | Payload Too Large (Çok Büyük Yük) | Yüklenen dosya boyut sınırını aşıyor. |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası. |
+
+## PostSplit API'sini SDK'larla Nasıl Kullanılır
+
+### PostSplit API Belirtimi
+
+[OpenAPI Belirtimi](https://apireference.aspose.cloud/cells/#/LightCells/PostSplit), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+**HTTP durum kodları**
+
+| Kod | Anlam                         | Açıklama                                                                          |
+|-----|-------------------------------|-----------------------------------------------------------------------------------|
+| 200 | OK (Tamam)                    | Çalışma kitabı başarıyla bölündü ve yanıt dosya listesini içerir.               |
+| 400 | Bad Request (Hatalı İstek)    | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen format).               |
+| 401 | Unauthorized (Yetkisiz)       | Geçersiz veya eksik JWT belirteci.                                                 |
+| 500 | Internal Server Error (İç Sunucu Hatası) | Sunucu tarafında beklenmeyen bir hata oluştu.                                   |
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sine nasıl istek yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/split?format=pdf" \
+curl -v "https://api.aspose.cloud/v3.0/cells/split?format=pdf" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+-F 'xxxxx2=@xxxx2.xlsx' \
+# xxxxx1.xlsx ve xxxxx2.xlsx dosya yollarını Excel dosyalarınızın yollarıyla değiştirin
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx_sheet1.pdf",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
+```json
+{
+    "Files": [
+        {
+            "Filename": "xxxxx_sheet1.pdf",
+            "FileSize": 274022,
+            "FileContent": "-----Base64Dizesi--------"
         },
-        { 
-            "Filename":"xxxxx_sheet2.pdf",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
+        {
+            "Filename": "xxxxx_sheet2.pdf",
+            "FileSize": 274022,
+            "FileContent": "-----Base64Dizesi--------"
         }
-        ....
+        …
     ]
- 
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK'larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme hızını artırmak için en iyi yoldur. Bir SDK, düşük seviye ayrıntıları yönetir ve proje görevlerinize odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl istek yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -132,3 +186,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

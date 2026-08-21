@@ -1,15 +1,38 @@
-﻿---
-title: Travailler avec la suppression de ligne sur une feuille de calcul Excel
-second_title: Documen
-linktitle: Supprimer
+---
+title: "Travail avec la suppression de lignes dans une feuille de calcul Excel"
+second_title: "Document"
+linktitle: "Supprimer"
 type: docs
 url: /fr/rows/delete/
-keywords: Working with deleting row on an Excel worksheet. How to add rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge la suppression de lignes dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+keywords: "Aspose.Cells, suppression de ligne, API Excel, REST, cloud, fichier de calcul, Excel, SDK"
+description: "Découvrez comment supprimer une ou plusieurs lignes dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut des exemples de code pour Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby et Swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Utilisation de la suppression de ligne dans une feuille de calcul Excel
+ArticleTitle: "Travail avec la suppression de lignes dans une feuille de calcul Excel – Guide de l’API Aspose.Cells Cloud"
 ---
-## Travailler avec la suppression de ligne sur une feuille de calcul Excel.
 
-- [Comment supprimer une ligne vide sur une feuille de calcul Excel.](/cells/fr/rows/delete/row/) 
-- [Comment supprimer plusieurs lignes sur une feuille de calcul Excel.](/cells/fr/rows/delete/rows/) ) 
+## Opérations de suppression disponibles
+
+Les exemples ci-dessous montrent comment supprimer une ligne vide unique ou plusieurs lignes dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud.
+
+- [Comment supprimer une ligne vide dans une feuille de calcul Excel](/fr/cells/rows/delete/row/)
+- [Comment supprimer plusieurs lignes dans une feuille de calcul Excel](/fr/cells/rows/delete/rows/)
+
+**Référence de l’API**
+
+| Élément                | Détails |
+|---------------------|---------------------------------------------------------------|
+| **Méthode HTTP**     | DELETE |
+| **Point de terminaison**        | `/cells/{fileName}/worksheets/{sheetName}/rows` |
+| **Paramètres de chemin**| `fileName` – nom du fichier Excel (obligatoire)<br>`sheetName` – nom de la feuille de calcul (obligatoire) |
+| **Paramètres de requête**| `startrow` – index de la première ligne à supprimer (obligatoire)<br>`totalRows` – nombre de lignes à supprimer (obligatoire)<br>`storage` – nom du stockage cloud (facultatif)<br>`folder` – chemin du dossier dans le stockage (facultatif) |
+| **Corps de la requête**    | *Aucun* |
+| **Exemple de réponse**| ```json<br>{<br>  "Code": 200,<br>  "Status": "OK",<br>  "RowsDeleted": 1<br>}<br>``` |
+| **Codes d’état possibles**| 200 OK – lignes supprimées avec succès<br>400 Bad Request – paramètres invalides<br>401 Unauthorized – échec d’authentification<br>404 Not Found – fichier ou feuille de calcul introuvable<br>500 Internal Server Error – problème côté serveur |
+
+**Voir aussi**
+
+- [Ajouter une ligne](/fr/cells/rows/add/)
+- [Obtenir une ligne](/fr/cells/rows/get/)
+- [Copier une ligne](/fr/cells/rows/copy/)
+- [Masquer une ligne](/fr/cells/rows/hide/)
+- [Vue d’ensemble des lignes](/fr/cells/rows/)

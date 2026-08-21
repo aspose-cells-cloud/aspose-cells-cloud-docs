@@ -1,85 +1,127 @@
-﻿---
-title: Fügen Sie der Datei Excel ein Wasserzeichen hinzu
-second_title: Documen
-linktitle: Wasserzeichen in die Datei Excel einfügen
+---
+title: "Wasserzeichen zu Excel-Dateien hinzufügen"
+second_title: "Dokument"
+linktitle: "Wasserzeichen zu Excel-Dateien hinzufügen"
 type: docs
 url: /de/add-watermark-into-excel-files/
-aliases: [ /watermark/]
-keywords: Add water marker for Excel files
-description: Aspose.Cells Cloud REST API unterstützt das Hinzufügen von Wasserzeichen für Excel Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+aliases: [/de/watermark/]
+keywords: "Wasserzeichen zu Excel hinzufügen, Aspose.Cells Cloud, REST-API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Erfahren Sie, wie Sie einen Textwasserzeichen mit der Aspose.Cells Cloud REST-API (v3.0) zu Excel-Arbeitsmappen hinzufügen. Enthält ein cURL-Beispiel, erforderliche Parameter und Antwortdetails."
 weight: 39
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Wasserzeichen
+ArticleTitle: "Wasserzeichen zu Excel-Dateien hinzufügen – Aspose.Cells Cloud-Dokumentation"
 ---
-Dieser REST API gibt an, `watermark` zu Excel-Dateien hinzuzufügen.
 
-## RSET API
+Diese REST-API fügt **Wasserzeichen** zu Excel-Dateien hinzu.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/watermark
- 
+**Voraussetzungen:** Sie müssen ein gültiges JWT-Access-Token erhalten und sicherstellen, dass die Excel-Datei in einem unterstützten Format vorliegt (z. B. `.xlsx`, `.xls`).  
+**Hintergrund:** Ein Wasserzeichen ist ein halbtransparenter Textüberlagerung, der auf jeder Arbeitsmappe angezeigt wird, um den Besitz oder die Vertraulichkeit kenntlich zu machen.
+
+## PostWatermark API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/watermark
 ```
 
-Die Anforderungsparameter sind:
+### **Sicherheit und Authentifizierung**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Datei| Datei| formData| Hochzuladende Datei|
-| Text| Schnur| Abfrage||
-| Farbe| Schnur| Abfrage||
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+### **Anforderungsparameter**
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+| Parametername   | Typ    | Speicherort                     | Beschreibung                                               |
+| --------------- | ------ | ------------------------------- | ---------------------------------------------------------- |
+| `file`          | file   | formData (multipart body)       | Die Excel-Datei, der das Wasserzeichen hinzugefügt werden soll. |
+| `text`          | string | query                           | Der anzuzeigende Wasserzeichen-Text.                      |
+| `color`         | string | query                           | Die Wasserzeichenfarbe im ARGB-Hex-Format (z. B. `004433ff`). |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **Antwort**
+
+Die JSON-Antwort enthält ein **Files**-Array. Für jedes Dateiobjekt:
+
+- **Filename** – Name der verarbeiteten Arbeitsmappe.  
+- **FileSize** – Dateigröße in Byte.  
+- **FileContent** – Base64-kodierter Inhalt der mit Wasserzeichen versehenen Excel-Datei; dekodieren Sie diesen, um die eigentliche Datei zu erhalten.
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Files": [
+        {
+            "Filename" : "[Dateiname1]",
+            "Filesize" : [Dateigröße],
+            "FileContent" : "[Base64String]"
+        },
+        {
+            "Filename" : "[Dateiname2]",
+            "Filesize" : [Dateigröße],
+            "FileContent" : "[Base64String]"
+        },
+        {
+            "Filename" : "[Dateiname3]",
+            "Filesize" : [Dateigröße],
+            "FileContent" : "[Base64String]"
+        }
+    ]
+}
+```
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                   | Beschreibung                                           |
+|------|-----------------------------|--------------------------------------------------------|
+| 200  | OK                          | Wasserzeichen erfolgreich angewendet; Antwort enthält Details zum Vorgang. |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized                | Ungültiges oder fehlendes JWT-Token.                   |
+| 413  | Payload Too Large           | Die hochgeladene Datei überschreitet das Größenlimit.  |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler.                             |
+
+## Verwendung der PostWatermark API mit SDKs
+
+### PostWatermark API-Spezifikation
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
+
+Sie können das Befehlszeilentool **cURL** verwenden, um Aspose.Cells-Webdienste aufzurufen. Das folgende Beispiel zeigt eine vollständige Anforderung einschließlich des erforderlichen Authentifizierungs-Headers. Ersetzen Sie `<your-jwt-token>` durch ein gültiges JWT-Access-Token, das Sie vom Aspose-Authentifizierungsendpunkt erhalten haben.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&color=004433ff" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
-
+curl -v "https://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&color=004433ff" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your-jwt-token>" \
+  -F "file=@Sample.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Sample_watermarked.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-Familie
+### Verwendung der Aspose.Cells Cloud SDKs
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der schnellste Weg zur Entwicklung. Ein SDK abstrahiert Low-Level-Details, sodass Sie sich auf Ihre Geschäftslogik konzentrieren können. Bitte besuchen Sie das [GitHub-Repository](https://github.com/aspose-cells-cloud), um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mit verschiedenen SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -132,4 +174,3 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
-

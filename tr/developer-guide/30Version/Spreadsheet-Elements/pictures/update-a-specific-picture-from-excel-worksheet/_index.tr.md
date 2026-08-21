@@ -1,65 +1,78 @@
-﻿---
-title: Excel dosyasındaki resmi güncelle
-second_title: Documen
-linktitle: Güncelleme
-type: docs
-url: /tr/pictures/update/
-aliases: [/update-a-specific-picture-from-excel-workshee/]
-keywords: Update a picture in an Excel file
-description: Aspose.Cells Cloud REST API, Excel dosyasındaki bir resmi güncellemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 70
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel dosyasındaki resmi güncelle
 ---
-Bu REST API, Excel çalışma sayfası için `update` resim-resim dizinini gösterir.
+title: "Excel dosyasında resim güncelleme"
+second_title: "Belge"
+linktitle: "Güncelle"
+type: docs
+url: /pictures/update/
+aliases: [/update-a-specific-picture-from-excel-workshee/]
+keywords: "Aspose.Cells Cloud, Excel, Resim güncelle, REST API, SDK"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında resim nasıl güncellenir öğrenin. İstek detaylarını, cURL örneğini ve birden fazla dil için SDK snippet'lerini içerir."
+ArticleTitle: "Aspose.Cells Cloud REST API kullanarak Excel dosyasında resim güncelleme"
+weight: 70
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasındaki belirli bir resmi, dizin numarası ile tanımlanarak günceller.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
- 
+**Önkoşullar:** Geçerli bir Aspose Cloud JWT jetonuna, hedef Excel dosyasının Aspose Cloud depolama alanınızda bulunmasına ve API sürümü 3.0 veya üstüne sahip olmanız gerekir.
+
+## PostWorksheetPicture API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| resimIndeksi| tam sayı| yol| Resmin indeksi.|
-| resim|| vücut| Resim nesnesi|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT jeton tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **İstek parametreleri**
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı | Tür      | Konum  | Açıklama                                                      |
+| ------------- | -------- | ------ | ------------------------------------------------------------- |
+| name          | string   | path   | Excel belgesinin adı.                                         |
+| sheetName     | string   | path   | Resmin bulunduğu çalışma sayfasının adı.                      |
+| pictureIndex  | integer  | path   | Güncellenecek resmin sıfır tabanlı dizini.                    |
+| picture       | object   | body   | Güncellenecek resim özelliklerini tanımlayan JSON nesnesi.    |
+| folder        | string   | query  | Belgenin bulunduğu klasör.                                    |
+| storageName   | string   | query  | Depolama hizmetinin adı.                                      |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Not:** Resim dizini sıfır tabanlıdır. Desteklenen resim formatları JPEG, PNG, BMP ve GIF'tir. Maksimum resim boyutu 10 MB'dir.
+
+### Hata Yanıtları
+
+| HTTP Kodu | Açıklama                                               |
+| --------- | ------------------------------------------------------ |
+| 401       | Yetkisiz – eksik veya geçersiz jeton.                  |
+| 404       | Bulunamadı – belirtilen dosya, çalışma sayfası veya resim dizini mevcut değil. |
+| 400       | Geçersiz İstek – hatalı istek söz dizimi veya geçersiz parametreler. |
+| 500       | Sunucu içi hatası – beklenmeyen bir durumla karşılaşıldı. |
+
+<a href="https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture" rel="noopener noreferrer">OpenAPI Spesifikasyonu</a>, herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından yapmanızı sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'ye istek nasıl atlanacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" \
 -X POST \
 -d "{ \"UpperLeftRow\": 10, \"Top\": 0, \"UpperLeftColumn\": 1, \"Left\": 0, \"LowerRightRow\": 0, \"Bottom\": 0, \"LowerRightColumn\": 3, \"ImageFormat\": \"jpg\", \"SourceFullName\": \"download.jpg\"}" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -68,9 +81,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirmenin en hızlı yoludur. SDK, düşük seviye detayları yöneterek size proje görevlerinize odaklanma imkanı verir. Aspose.Cells Cloud SDK'larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub deposunu</a> kontrol edin.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerini çeşitli SDK’lar kullanarak nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +136,5 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+*İlgili konular:* Resim ekleme, Resim silme, Resim alma, Resimleri temizleme – Aspose.Cells Cloud API'deki diğer resimle ilgili işlemler.

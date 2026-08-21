@@ -1,74 +1,104 @@
-﻿---
-title: إضافة صف فارغ إلى ورقة عمل Excel
-second_title: Documen
-linktitle: رو
-type: docs
-url: /ar/rows/add/row/
-aliases: [/add-an-empty-row-in-a-worksheet/]
-keywords: Add an empty row on an Excel workshee
-description: يدعم Cloud REST إضافة صف فارغ في ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة صف فارغ في ورقة عمل Excel
 ---
-يشير هذا REST API إلى إضافة صف ورقة عمل جديد على ورقة عمل Excel.
+title: "إضافة صف فارغ إلى ورقة عمل Excel"
+ArticleTitle: "إضافة صف فارغ إلى ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud"
+second_title: "الوثيقة"
+linktype: "صف"
+type: docs
+url: /rows/add/row/
+aliases: [/add-an-empty-row-in-a-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel, إضافة صف فارغ, ورقة عمل, REST API, إدراج صف, جدول بيانات سحابي"
+description: "استخدم واجهة برمجة تطبيقات Aspose.Cells Cloud REST لinsert صف فارغ في ورقة عمل Excel. يدعم العديد من SDKs (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) لتسريع عملية التطوير."
+weight: 20
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية REST بإضافة صف جديد إلى ورقة عمل Excel. وهي تُدرج صفًا فارغًا عند الفهرس المحدد الذي يبدأ من الصفر.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
- 
+**المتطلبات المسبقة:**  
+- يجب تضمين رمز وصول Aspose Cloud صالح (Bearer JWT) في رأس `Authorization`.  
+- يجب رفع ملف المصنف المستهدف إلى مساحة التخزين الخاصة بك في Aspose Cloud، ويجب أن تشير المعاملات `folder` و`storageName` إلى موقعه.
+
+**ملاحظات:**  
+- يكون الفهرس `rowIndex` ابتدائيًا من الصفر؛ وإدراج صف عند الفهرس 0 يضيف صفًا في أعلى ورقة العمل.  
+- تحتوي ورقات عمل Excel على 1,048,576 صفًّا كحد أقصى؛ ومحاولة الإدراج خارج هذا الحد ستؤدي إلى
+
+## PutInsertWorksheetRow API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| فهرس الصف| عدد صحيح| طريق| مؤشر الصف الجديد.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تتطلب واجهات برمجة تطبيقات Aspose.Cells Cloud أمانًا وتستخدم <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRow) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **معاملات الطلب**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل | النوع | الموقع | الوصف |
+|------------|------|--------|--------|
+| name | string | path | اسم ملف المصنف. |
+| sheetName | string | path | اسم ورقة العمل. |
+| rowIndex | integer | path | الفهرس الذي يبدأ من الصفر حيث سيتم إدراج الصف الجديد. |
+| folder | string | query | مسار المجلد في التخزين الذي يحتوي على المصنف. |
+| storageName | string | query | اسم مساحة التخزين في Aspose Cloud التي سيتم استخدامها. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+يُعرّف <a href="https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRow" rel="noopener noreferrer">مواصفات OpenAPI</a> واجهة برمجة تطبيقات متاحة للعامة، ويسمح لك بإجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات ويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء المكالمات إلى الواجهة البرمجية السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/10" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
+
+> **ملاحظة:** جميع مسارات Aspose.Cells Cloud تتطلب HTTPS. استخدم المخطط الآمن `https://` عند إجراء المكالمات في بيئة الإنتاج.
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**رموز حالة HTTP**
+
+| الكود | المعنى | الوصف |
+|-------|---------|--------|
+| 200 | OK | تم تطبيق المرشح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | Bad Request | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401 | Unauthorized | رمز JWT غير صالح أو مفقود. |
+| 413 | Payload Too Large | حجم الملف المرفوع يتجاوز الحد المسموح به. |
+| 500 | Internal Server Error | خطأ داخلي غير متوقع في الخادم. |
+
+*مثال على استجابة خطأ (مثلًا عندما يتجاوز الفهرس الحد المسموح به لعدد الصفوف):*
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "فهرس الصف خارج النطاق المسموح. الحد الأقصى لعدد الصفوف المسموح به: 1048576."
+}
+```
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. يُجرّد SDK التفاصيل من المستوى المنخفض، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى الاطّلاع على <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

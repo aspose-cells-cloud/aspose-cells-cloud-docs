@@ -1,102 +1,75 @@
-﻿---
-title: Hämta arbetsblad
-second_title: Documen
-linktitle: Al
-type: docs
-url: /sv/worksheets/get-all/
-aliases: [/get-worksheet-count/]
-keywords: Get worksheets description from an Excel workbook
-description: Aspose.Cells Cloud REST API stöder hämtning av arbetsbladsbeskrivningar från en Excel-arbetsbok. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta arbetsblad
 ---
-Denna REST API indikerar `get worksheets information`.
+title: "Hämta alla kalkylblad"
+second_title: "Document"
+linktitle: "Alla"
+type: docs
+url: /worksheets/get-all/
+aliases: [/get-worksheet-count/]
+keywords: "Aspose.Cells, molntjänst, hämta kalkylblad, Excel, REST, SDK"
+description: "Hämta listan över kalkylblad i en Excel-arbetsbok via Aspose.Cells Cloud REST API (v3.0). Inkluderar cURL-exempel, SDK-utdrag och svarsschema."
+weight: 10
+---
 
-## RSET API
+Denna REST API returnerar information om kalkylbladen som finns i en arbetsbok.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 ```
 
-Begäranparametrarna är:
+### **Förfrågningsparametrar**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| mapp| sträng| fråga| Dokumentmapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parametername   | Typ    | Plats  | Beskrivning                              |
+| --------------- | ------ | ------ | ---------------------------------------- |
+| name            | string | path   | Namnet på Excel-dokumentet.              |
+| folder          | string | query  | Mappen som innehåller dokumentet.        |
+| storageName     | string | query  | Namnet på den lagring som ska användas.  |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda kommandoradsverktyget cURL för att komma åt Aspose.Cells Cloud-tjänster. Exemplet nedan visar en GET-förfrågan för att hämta kalkylbladen.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Förfrågan" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Worksheets": {
-
     "WorksheetList": [
-
       {
-
         "link": {
-
           "Href": "/Sheet1",
-
           "Rel": "self"
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/Sheet2",
-
           "Rel": "self"
-
         }
-
       }
-
     ],
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets",
       "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
 ```
 
@@ -104,11 +77,31 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## Felhantering
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Typiska HTTP-statuskoder som returneras av detta slutställe:
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+| Kod | Betydelse              | Beskrivning                                |
+| --- | ---------------------- | ------------------------------------------ |
+| 400 | Felaktig förfrågan     | Saknar nödvändig parameter (t.ex. `name`). |
+| 401 | Auktorisering saknas   | Ogiltigt eller saknat JWT-token.           |
+| 404 | Hittades inte          | Angiven arbetsbok finns inte.              |
+| 500 | Internt serverfel      | Oväntat serverfel.                         |
+
+Felsvar returneras i JSON-format, till exempel:
+
+```json
+{
+  "Code": "401",
+  "Message": "Invalid access token."
+}
+```
+
+## Molnsdk-familj
+
+Att använda en SDK är det bästa sättet att snabba upp utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Ta en titt på [GitHub-repositoryt](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:n.
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:n:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

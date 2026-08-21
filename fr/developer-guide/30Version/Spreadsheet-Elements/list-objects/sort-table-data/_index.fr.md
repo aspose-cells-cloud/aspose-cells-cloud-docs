@@ -1,66 +1,101 @@
-﻿---
-title: Trier les données d'objets de liste dans une feuille de calcul Excel
-second_title: Documen
-linktitle: Sor
-type: docs
-url: /fr/list-objects/sort-data/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/sort-data/]
-keywords: Sort a list object(table) in an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge le tri d'un objet liste (table) dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 40
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Trier les données d'objet de liste dans une feuille de calcul Excel
 ---
-Ce REST API indique `sort table's data` dans une feuille de calcul Excel.
+title: "Trier les données d’un ListObject dans une feuille de calcul Excel"
+second_title: "Document"
+linktitle: "Trier"
+type: docs
+url: /list-objects/sort-data/
+aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
+keywords: "Aspose.Cells Cloud, Excel, ListObject, Trier les données, API REST, Feuille de calcul"
+description: "Découvrez comment trier les données d’un ListObject (tableau) dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut l’URL du point de terminaison, les paramètres, une requête cURL d’exemple et des exemples de SDK."
+weight: 40
+ArticleTitle: "Trier les données d’un ListObject dans une feuille de calcul Excel – API Aspose.Cells Cloud"
+---
 
-## RSET API
+**Conditions préalables**  
+Pour appeler cette API, vous devez disposer d’un jeton d’accès JWT valide pour Aspose Cloud, et le classeur doit avoir été chargé dans le stockage Aspose Cloud. Incluez l’en-tête `Authorization: Bearer <jeton JWT>` dans chaque requête.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/sort
- 
+Cette API REST permet de trier les données d’un tableau dans une feuille de calcul Excel.  
+Pour utiliser cette opération, fournissez le nom du classeur, le nom de la feuille de calcul et l’index du ListObject cible, ainsi qu’un corps JSON `dataSorter` définissant les critères de tri.
+
+## API PostWorksheetListObjectSortTable
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/sort
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin||
-| nom de la feuille| chaîne| chemin||
-| index d'objets de liste| entier| chemin||
-| trieur de données|| corps||
-| dossier| chaîne| requête||
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API REST Aspose.Cells Cloud sont sécurisées et nécessitent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification par jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSortTable) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### **Paramètres de la requête**
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom du paramètre | Type    | Emplacement (chemin / chaîne de requête / corps HTTP) | Description                                                                                                     |
+| ---------------- | ------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| name             | string  | path                                                   | Nom du fichier Excel stocké dans le stockage Aspose Cloud.                                                     |
+| sheetName        | string  | path                                                   | Nom de la feuille de calcul contenant le ListObject.                                                           |
+| listObjectIndex  | integer | path                                                   | Index de base zéro du ListObject (tableau) dans la feuille de calcul.                                          |
+| dataSorter       | object  | body                                                   | Objet JSON spécifiant les options de tri (par exemple, `CaseSensitive`, `HasHeaders`, `KeyList`, `SortLeftToRight`). |
+| folder           | string  | query                                                  | Chemin du dossier dans le stockage où se trouve le fichier Excel.                                              |
+| storageName      | string  | query                                                  | Nom du stockage Aspose Cloud.                                                                                   |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Remarques**  
+Le corps de la requête doit être un objet JSON valide conforme au schéma `dataSorter`. Assurez-vous que le classeur, la feuille de calcul et le ListObject existent avant d’appeler l’opération de tri.
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSortTable) définit une interface de programmation accessible publiquement et permet d’effectuer directement des interactions REST depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet7/listobjects/1/sort" \
--X POST \
--d "{ \"CaseSensitive\": true, \"HasHeaders\": true, \"KeyList\": [ { \"Key\": 1, \"SortOrder\": \"Ascending\", \"CustomList\": \"string\" } ], \"SortLeftToRight\": true}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -d '{
+        "CaseSensitive": true,
+        "HasHeaders": true,
+        "KeyList": [
+          {
+            "Key": 1,
+            "SortOrder": "Ascending",
+            "CustomList": "string"
+          }
+        ],
+        "SortLeftToRight": true
+      }' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton JWT>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**Codes de statut HTTP**
+
+| Code de statut | Description                                           |
+|----------------|-------------------------------------------------------|
+| 200            | OK – tri terminé avec succès.                        |
+| 400            | Requête incorrecte – paramètres invalides.          |
+| 401            | Non autorisé – échec de l’authentification.         |
+| 404            | Introuvable – classeur, feuille de calcul ou ListObject non trouvé(s). |
+| 500            | Erreur interne du serveur – problème côté serveur.  |
+
+**Paramètres de la réponse**
+
+| Paramètre | Type   | Description                                   |
+|-----------|--------|-----------------------------------------------|
+| Code      | integer| Code de statut HTTP renvoyé par l’API.        |
+| Status    | string | Description textuelle du résultat (par ex., "OK"). |
 
 {{< /tab >}}
 
@@ -68,9 +103,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet7/listob
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK constitue la méthode optimale pour accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code ci-dessous illustrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +158,5 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+
+[Retour à la vue d’ensemble des ListObjects](/list-objects/)

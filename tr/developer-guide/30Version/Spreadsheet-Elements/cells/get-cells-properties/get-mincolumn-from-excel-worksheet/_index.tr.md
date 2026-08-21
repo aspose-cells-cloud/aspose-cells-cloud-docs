@@ -1,46 +1,72 @@
-﻿---
-title: Excel Çalışma Sayfasından MinColumn'u Alın
+---
+title: "Excel Çalışma Sayfasından MinColumn Değerini Alın"
 type: docs
 url: /tr/get-mincolumn-from-excel-worksheet/
 weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel Çalışma Sayfasından MinColumn'u Al
+keywords: Excel, Aspose.Cells Cloud, REST API, MinColumn Al, Çalışma Sayfası, SDK, Bulut API
+description: Aspose.Cells Cloud REST API aracılığıyla bir Excel dosyasının çalışma sayfasında veri içeren minimum sütun indeksini alın.
+ArticleTitle: "Excel Çalışma Sayfasından MinColumn Değerini Alın - Aspose.Cells Cloud API"
 ---
-Bu REST API, `cellOrMethodName` parametresi `mincolumn` olduğunda Excel dosyasında `mincolumn` alındığını gösterir.
 
-- **cURL Örnek**
+Bu REST API, `cellOrMethodName` parametresi `mincolumn` olarak ayarlandığında bir Excel çalışma sayfasında veri içeren minimum sütun indeksini döndürür.
 
+- **cURL Örneği**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" \
+     -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MinColumn": 2
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Bulut SDK Ailesi**
+**İstek ayrıntıları**
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| Parametre | Tür | Gerekli | Açıklama |
+|-----------|------|----------|-------------|
+| `cellOrMethodName` | string | Evet | İşlemi belirtmek için sabit değer `mincolumn`. |
+| `folder` | string | Hayır | Çalışma kitabını içeren klasörün yolu (kök değilse). |
+| `storageName` | string | Hayır | Kullanılacak Aspose Cloud depo adı. |
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+**Yanıt ayrıntıları**
 
+API, tek bir özellik içeren bir JSON nesnesi döndürür:
 
+```json
+{
+  "MinColumn": tamsayı   // Veri içeren en soldaki sütunun sıfır tabanlı indeksi.
+}
+```
+
+Olası HTTP durum kodları:
+
+- **200 OK** – Başarılı istek, `MinColumn` değerini döndürür.  
+- **401 Yetkisiz** – Eksik veya geçersiz kimlik doğrulama jetonu.  
+- **404 Bulunamadı** – Belirtilen çalışma kitabı, çalışma sayfası veya hücre aralığı mevcut değil.  
+- **500 İç Sunucu Hatası** – Beklenmeyen sunucu hatası.
+
+- **Aspose.Cells Cloud SDK’larını Kullanın**
+
+SDK kullanmak, geliştirme yapmanın en verimli yoludur. SDK, düşük seviyeli ayrıntıları soyutlayarak projenizin mantığına odaklanmanıza olanak tanır. Aspose.Cells Cloud SDK’larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub deposunu</a> inceleyin.
+
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanarak Aspose.Cells web hizmetlerini çağırma yöntemlerini göstermektedir:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

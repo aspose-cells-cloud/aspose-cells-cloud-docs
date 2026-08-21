@@ -1,52 +1,96 @@
-﻿---
-title: Obtenir des éléments de texte à partir d'un classeur Excel
-second_title: Documen
-linktitle: Entrez dans le workbook
-type: docs
-url: /fr/workbook/get-text-items/
+---
+title: "Récupérer les éléments texte d’un classeur Excel"
+ArticleTitle: "Récupérer les éléments texte d’un classeur Excel à l’aide de l’API Aspose.Cells Cloud"
+second_title: "Document"
+linktype: "docs"
+url: /workbook/get-text-items/
 aliases: [/get-text-items-from-a-workbook/]
 weight: 10
-keywords: Get text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
-description: Aspose.Cells Cloud REST API prend en charge l'extraction de texte à partir de la feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Obtenir des éléments de texte à partir d'un classeur Excel
+keywords: "Excel, Aspose.Cells Cloud, API REST, Classeur, Récupérer les éléments texte"
+description: "Récupérez les éléments texte d’un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud. Disponible via les SDK pour C#, Java, Python, PHP, Ruby, Go, Node.js, Perl et Swift."
 ---
-Ce REST API indique le classeur `read` `text items` dans le classeur Excel.
 
-## RSET API
+
+## API REST
+
+Cette API REST lit les **éléments texte** d’un classeur dans un fichier Excel.
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/textItems
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/textItems
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Le nom du classeur.|
-| dossier| chaîne| requête| Le dossier du classeur.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookTextItems) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+### Paramètres de la requête
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Nom du paramètre | Type   | Emplacement | Description                                            |
+| ---------------- | ------ | ----------- | ------------------------------------------------------ |
+| name             | string | path        | Le nom du fichier du classeur.                         |
+| folder           | string | query       | Le chemin du dossier dans le stockage où réside le classeur. |
+| storageName      | string | query       | Le nom du service de stockage.                         |
+
+### **Réponse**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
+```
+
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                                   |
+|------|-----------------------------|---------------------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Requête incorrecte          | Paramètres manquants ou non valides (par exemple, type de fichier non pris en charge). |
+| 401  | Non autorisé                | Jeton JWT invalide ou manquant. |
+| 413  | Payload trop volumineux     | Le fichier téléchargé dépasse la limite de taille. |
+| 500  | Erreur interne du serveur   | Erreur inattendue sur le serveur. |
+
+## Comment utiliser l’API GetWorkbookTextItems avec les SDK
+
+### Spécification de l’API GetWorkbookTextItems
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookTextItems) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer un appel à l’API Cloud à l’aide de cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/textItems" -H "accept: application/json"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
+```json
 {
   "Status": "string",
   "TextItems": {
@@ -69,18 +113,27 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/textItems" -H "accept
     ]
   }
 }
-       
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
+Codes de réponse HTTP typiques :
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+| Code | Description                                           |
+|------|-------------------------------------------------------|
+| 200  | Requête réussie ; les éléments texte sont retournés. |
+| 401  | Non autorisé – jeton manquant ou non valide.         |
+| 403  | Interdit – permissions insuffisantes.                 |
+| 404  | Non trouvé – classeur ou ressource introuvable.       |
+| 500  | Erreur interne du serveur – échec inattendu.          |
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+### Utiliser les SDK Aspose.Cells Cloud
+
+Cet exemple utilise la version de l’API **v3.0** ; consultez le journal des modifications pour les versions plus récentes. L'utilisation d'un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l'aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,78 +1,80 @@
-﻿---
+---
 title: Was ist neu in Aspose.Cells Cloud im Jahr 2024
-second_title: Documen
-linktitle: Was ist neu in 202
+second_title: "Dokument"
+linktitle: "Was ist neu in 2024"
 type: docs
 weight: 20
-url: /de/new-features/2024/
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: Diese Seite beschreibt die interessantesten neuen Aspose.Cells Cloud-Funktionen, die in den letzten Versionen eingeführt wurden
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Was ist neu in Aspose.Cells Cloud
+url: /new-features/2024/
+keywords: "Aspose.Cells, Cloud, 2024, neue Funktionen, API zum Entfernen von Duplikaten, API zum Extrahieren von Text, Datenumwandlung, Tabellenkalkulation, Excel, CSV, PDF, REST-API"
+description: "Überblick über die neuen Funktionen und Verbesserungen in Aspose.Cells Cloud für 2024, einschließlich der API zum Entfernen von Duplikaten, der API zum Extrahieren von Text sowie weiterer Verbesserungen bei der Datenumwandlung."
+ArticleTitle: "Aspose.Cells Cloud 2024 – Neue Funktionen und Verbesserungen"
 ---
-Willkommen bei den Neuerungen in Aspose.Cells Cloud-Dokumenten. Auf dieser Seite finden Sie schnell die neuesten Änderungen.
+
+Willkommen bei „Was ist neu in Aspose.Cells Cloud“ in der Dokumentation. Nutzen Sie diese Seite, um schnell die neuesten Änderungen zu finden. Dieses Änderungsprotokoll fasst die wichtigsten Verbesserungen, Bugfixes und neuen APIs zusammen, die in jeder Veröffentlichung von Aspose.Cells Cloud im Jahr 2024 eingeführt wurden.
 
 ## Verbesserungen in Version 24.12
 
-- Fügen Sie die neue API zum Entfernen von Duplikaten hinzu.
-- Fügen Sie den neuen Auszugstext API hinzu.
-- Der Pivot-Filter konnte nicht erfolgreich erstellt werden.
+- Einführung der neuen **API zum Entfernen von Duplikaten**.  
+- Einführung der neuen **API zum Extrahieren von Text**.  
+- Behebung eines Fehlers, bei dem das Erstellen eines Pivot-Filters fehlschlagen konnte.
 
 ## Verbesserungen in Version 24.11
 
-- Fügen Sie dem TextProcessingController eine Funktion zum Konvertieren von Text hinzu.
+- Hinzufügen einer Textumwandlungsfunktion zu `TextProcessingController`.
 
 ## Verbesserungen in Version 24.10
 
-- Fügen Sie die neue Funktion zum Entfernen von Zeichen im TextProcessingController hinzu.
+- Hinzufügen einer Zeichenentfernungsfunktion zu `TextProcessingController`.
 
 ## Verbesserungen in Version 24.9
 
-- Fügen Sie eine Groß-/Kleinschreibungsfunktion für TextProcessingController hinzu.
-- Unterstützung für den Export von Arbeitsblättern nach HTML mit Zelladresse oder ID.
+- Hinzufügen einer Funktion zur Groß-/Kleinschreibung von Wörtern zu `TextProcessingController`.  
+- Unterstützung des Exportierens eines Arbeitsblatts in HTML mit Zelladressen oder --IDs.
 
 ## Verbesserungen in Version 24.8
 
-- Fügen Sie die Textzuschneidefunktion zu Cells Cloud Services hinzu.
+- Hinzufügen einer Texttrimmungsfunktion zu Cells Cloud Services.
 
 ## Verbesserungen in Version 24.7
 
-- Fügen Sie eine neue Funktion zum Hinzufügen von Textinhalten hinzu.
-- Fügen Sie ein Zugriffstoken per Client-ID und Client-Geheimnis hinzu.
+- Einführung der **AddTextContent**-API zum Einfügen beliebigen Textes in ein Arbeitsblatt.  
+- Hinzufügen der Möglichkeit, ein Zugriffstoken mithilfe von Client-ID und Client-Geheimnis zu erhalten.
 
 ## Verbesserungen in Version 24.6.1
 
-- Korrigieren Sie erweiterte Abfrageparameter für APIs.
+- Behebung erweiterter Abfrageparameter für APIs.
 
 ## Verbesserungen in Version 24.6.0
 
-- Optimieren Sie die angewendeten Schritte zur Datenkonvertierung.
-- Optimieren Sie die Ladedatenfunktion der Datentransformation.
-- Erhöhen Sie die Unterstützung für net425 und netstandard2.0.
+- Optimierung der Datenkonvertierungsschritte.  
+- Optimierung der Datenlade-Funktion für die Datenumwandlung.  
+- Erhöhte Unterstützung für .NET Framework 4.2.5 und .NET Standard 2.0.
 
 ## Verbesserungen in Version 24.5.1
 
-- Fügen Sie eine Methode zum Zusammenführen von Abfragen zum Laden von Daten der Datentransformation hinzu.
-- Optimieren Sie das Diagrammdatenmodell.
-- Aktualisieren Sie die Adresse zum Abrufen des Zugriffstokens.
+- Hinzufügen einer Methode zum Zusammenführen von Abfragen beim Laden von Daten in der Datenumwandlung.  
+- Optimierung des Diagrammdatenmodells.  
+- Aktualisierung des Zugriffstoken-Endpunkts.
 
 ## Verbesserungen in Version 24.4
 
-- Unterstützt die Datentransformationsfunktion für Aspose.Cells Cloud Services.
+- Unterstützung der Datenumwandlungsfunktion für Aspose.Cells Cloud Services.
 
 ## Verbesserungen in Version 24.3
 
-- Unterstützt die Datendeduplizierung.
-- Unterstützt das Ausfüllen von Daten.
-- Unterstützung zum Löschen unvollständiger Zeilen.
-- Unterstützt die Datenbereinigung.
+- Unterstützung der Datenduplikatbereinigung (verbessert).  
+- Unterstützung des automatischen Ausfüllens von Daten.  
+- Unterstützung zum Löschen unvollständiger Zeilen.  
+- Unterstützung der Datenbereinigung.
 
 ## Verbesserungen in Version 24.2.1
 
-- Unterstützt die Datendeduplizierung.
+- Unterstützung der Datenduplikatbereinigung (erste Unterstützung, weiter ausgebaut in späteren Versionen).
 
 ## Verbesserungen in Version 24.1.1
 
-- Rechtschreibfehler für mehrere Funktionen behoben.
-- Fügen Sie die Methode „PostFitTallToPages“ für den Seiteneinrichtungs-Controller hinzu.
-- Fügen Sie die Methode „PostFitWideToPages“ für den Seiteneinrichtungs-Controller hinzu.
-- Optimieren Sie die Speicheroptionen für die Paginierung.
+- Behebung von Rechtschreibfehlern in mehreren Funktionen.  
+- Hinzufügen der Methode `PostFitTallToPages` zu `PageSetupController`.  
+- Hinzufügen der Methode `PostFitWideToPages` zu `PageSetupController`.  
+- Optimierung der paginierten Speicheroptionen.
+---

@@ -1,79 +1,124 @@
-﻿---
-title: تصدير الأحرف
-second_title: Documen
-linktitle: شار
-type: docs
-url: /ar/export-excel-chart-to-different-formats/
-aliases: [ /export/excel-chart-to-different-formats/]
-keywords: Export Excel chart to kinds of format files
-description: يدعم Cloud REST تصدير المخططات إلى أنواع مختلفة من ملفات التنسيق. تدعم حزمة SDK لغات تطوير متنوعة، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تصدير الرسم البياني
 ---
- يمكنك تصدير التنسيقات:[PNG](https://docs.fileformat.com/Image/png/), [صورة متحركة](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/),  [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [مؤسسة ويكيميديا](https://docs.fileformat.com/image/Wmf/), [PDF](https://docs.fileformat.com/pdf/).
+title: "تصدير مخطط Excel"
+second_title: "مستند"
+linktype: "مخطط"
+type: docs
+url: /export-excel-chart-to-different-formats/
+aliases: [/export/excel-chart-to-different-formats/]
+description: "تصدير كائنات المخططات من ملفات Excel إلى تنسيقات شائعة مثل PNG و JPEG و PDF و SVG و TIFF و EMF و WMF والمزيد باستخدام واجهة Aspose.Cells Cloud REST API أو SDKs. يشمل المصادقة ومثال cURL وأمثلة على الأكواد بلغات برمجة متعددة."
+keywords: "Aspose.Cells, تصدير مخطط, تصدير مخطط Excel, REST API, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK, تنسيقات المخططات, Aspose Cells Cloud"
+weight: 20
+ArticleTitle: "تصدير مخطط Excel – مستند"
+---
 
-- **الباقي API**
+تصدير كائنات المخططات من ملفات Excel إلى تنسيقات مختلفة للصور والمستندات هو متطلب شائع في إعداد التقارير والنشر. توفر Aspose.Cells Cloud نقطة نهاية REST بسيطة تحول المخططات مباشرةً إلى تنسيقات شائعة مثل PNG و JPEG و PDF و SVG و TIFF و EMF و WMF والمزيد.
 
-|**API**|**يكتب**|**وصف**|**رابط سواجر**|
-|:- |:- |:- |:- |
-|/الخلايا/التصدير|بريد|تصدير كائنات Excel من محتوى الطلب إلى بعض التنسيقات|[ما بعد التصدير](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+يمكنك تصدير المخططات إلى التنسيقات التالية: [PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/), و [PDF](https://docs.fileformat.com/pdf/).
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+**متطلبات مسبقة:**  
+- حساب Aspose.Cells Cloud ساري المفعول مع اشتراك نشط.  
+- رمز مميز OAuth 2.0 Bearer (JWT) تم الحصول عليه عبر عملية المصادقة.  
+- ملف المصنف المراد تحميله (أقصى حجم < 50 ميجابايت).  
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
-
-- **طلب**
+## **واجهة REST API**
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format=tiff" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
-- **إجابة**
+### **الأمان والمصادقة**
 
-```bash
+تُعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+### معاملات الطلب
+
+| اسم المعامل | النوع | المسار / سلسلة الاستعلام / جسم HTTP | مطلوب | الوصف |
+|-------------|-------|------------------------------------|--------|--------|
+| file | ملف | formData | نعم | الملف المراد تحميله |
+| objectType | نص | استعلام | نعم | نوع الكائن المراد تصديره. لتصدير المخطط استخدم `chart`. القيم المحتملة الأخرى تشمل `worksheet` و `picture` وما إلى ذلك. |
+| format | نص | استعلام | نعم | التنسيق المطلوب للإخراج. القيم المدعومة: `png` و `jpeg` و `gif` و `bmp` و `svg` و `tiff` و `emf` و `wmf` و `pdf`. |
+
+### **الاستجابة**
+
+```json
 {
-    "Files": [{
-        "Filename": "Book1_xlsx_Sheet4_Charts_0.tif",
-        "FileSize": 10040,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Charts_1.tif",
-        "FileSize": 12978,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Charts_2.tif",
-        "FileSize": 7002,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Charts_3.tif",
-        "FileSize": 11532,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Charts_0.tif",
-        "FileSize": 8270,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet3_Charts_0.tif",
-        "FileSize": 42570,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet3_Charts_1.tif",
-        "FileSize": 12102,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet3_Charts_2.tif",
-        "FileSize": 8290,
-        "FileContent": "-----Base64String--------"
-    }]
+  "Files": [
+    {
+      "Filename": "Book1_xlsx_Sheet4_Charts_0.tif",
+      "FileSize": 10040,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet4_Charts_1.tif",
+      "FileSize": 12978,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet4_Charts_2.tif",
+      "FileSize": 7002,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet4_Charts_3.tif",
+      "FileSize": 11532,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet6_Charts_0.tif",
+      "FileSize": 8270,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet3_Charts_0.tif",
+      "FileSize": 42570,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet3_Charts_1.tif",
+      "FileSize": 12102,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet3_Charts_2.tif",
+      "FileSize": 8290,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
-- **عائلة SDK السحابية**
+**رموز حالة HTTP**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| الرمز | المعنى | الوصف |
+|-------|---------|--------|
+| 200 | نجاح | تم تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | طلب غير صالح | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401 | غير مخوّل | رمز JWT غير صالح أو مفقود. |
+| 413 | حملة البيانات كبيرة جدًا | تجاوز حجم الملف المرفوع الحد المسموح به. |
+| 500 | خطأ داخلي في الخادم | خطأ غير متوقع في الخادم. |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+## كيفية استخدام واجهة PostExport API باستخدام SDKs
+
+### مواصفات واجهة PostExport API
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) واجهة برمجة تطبيقات عامة قابلة للوصول وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يجب أن تتضمن جميع الطلبات رمز مميز OAuth 2.0 Bearer صالح في رأس `Authorization`. يُظهر المثال التالي كيفية استدعاء الواجهة باستخدام **cURL** وتحميل مصنف باستخدام multipart/form-data.
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format=tiff" \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Accept: multipart/form-data" \
+  -H "Content-Type: multipart/form-data" \
+  -H "x-aspose-client: Containerize.Swagger" \
+  -F "File=@/path/to/your/workbook.xlsx"
+```
+
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
+
+استخدام SDKs هو أفضل طريقة لتسريع عملية التطوير. تقوم SDKs بالتعامل مع التفاصيل منخفضة المستوى وتسمح لك بالتركيز على مهام مشروعك. يُرجى مراجعة [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية إجراء مكالمات لخدمات الويب Aspose.Cells باستخدام SDKs متنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -126,4 +171,3 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format
 {{< /tab >}}
 
 {{< /tabs >}}
-

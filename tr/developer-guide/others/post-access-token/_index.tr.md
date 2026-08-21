@@ -1,53 +1,90 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Erişim İzni Sonrası
-second_title: Documen
-ArticleTitle: Get Access Token with Client ID and Secre
-linktitle: Erişim İzni Sonrası
-type: docs
-url: /tr/post-access-token/
-keywords: Access Token, Aspose Cloud, API Authentication, OAuth, REST API, Excel, Office Cloud, Token Managemen
-description: Kullanıcı isteklerini Aspose Bulut kimlik doğrulama sunucusuna ileten bir proxy hizmeti gibi davranan ve ortaya çıkan erişim belirtecini istemciye güvenli bir şekilde döndüren Cells Bulut Alma Belirteci API'i kullanarak bir Erişim Belirteci alın.
-weight: 100
-kwords: Excel, Office Bulut, REST API, Kimlik Doğrulama, Jeton Yönetimi, Ara Yazılım Entegrasyonu, Güvenli API, Aspose Bulut
 ---
-Cells Cloud Get Token API'i İstemci Kimliği ve Gizli Anahtarı ile kullanarak bir Erişim Belirteci alın.
+title: "Aspose.Cells Cloud Web API - Post Erişim Belirteci"
+second_title: "Doküman"
+ArticleTitle: "İstemci Kimliği ve Gizli Anahtarı ile Erişim Belirteci Alın"
+linktitle: "Post Erişim Belirteci"
+type: docs
+url: /post-access-token/
+keywords: "Aspose.Cells, Bulut, Erişim Belirteci, OAuth2, API, Kimlik Doğrulama, REST, Excel, Office Bulut"
+description: "İstemci kimliğinizi ve gizli anahtarınızı kullanarak POST /cells/connect/token uç noktasını çağırarak Aspose.Cells Cloud için bir OAuth2 erişim belirteci alın."
+weight: 100
+---
 
-## **Posta Erişim Jetonu API**
+İstemci kimliği ve gizli anahtarı ile Cells Cloud Get Token API'sini kullanarak bir erişim belirteci alın.
+
+## Post Erişim Belirteci API
+
+Uç noktayı çağırmadan önce şunların olduğundan emin olun:
+
+* Kayıtlı bir Aspose Cloud hesabınız.  
+* Aspose Cloud portalında oluşturulan bir **İstemci Kimliği** ve **İstemci Gizli Anahtarı**.  
+
+### Web API
 
 ```
-POST http://api.aspose.cloud/v4.0/cells/connect/token
+POST https://api.aspose.cloud/v4.0/cells/connect/token
 ```
 
-### **İstek Parametreleri:**
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi| Tanım|
-|:- |:- |:- |:- |
-| İstemci Kimliği| sicim| sorgu| İstemci Kimliği|
-| Müşteri Sırrı| sicim| sorgu| Müşteri Sırrı|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-### **Cevap**
+### İstek Parametreleri
+
+| Parametre Adı | Tür   | Konum                         | Açıklama                                          |
+| ------------- | ----- | ----------------------------- | ------------------------------------------------- |
+| grant_type    | string | gövde (form‑url‑encoded)      | OAuth için gerekli sabit değer `client_credentials`. |
+| client_id     | string | gövde (form‑url‑encoded)      | size verilen istemci tanımlayıcısı.              |
+| client_secret | string | gövde (form‑url‑encoded)      | İstemci kimliğiyle ilişkili gizli anahtar.       |
+
+**Örnek istek (cURL)**  
+
+```bash
+curl -X POST "https://api.aspose.cloud/v4.0/cells/connect/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
+```
+
+### Yanıt
 
 ```json
- [
-        {
-          "Name": "String",
-          "DataType": {
-            "Identifier": "String",
-            "Name": "string"
-          }
-        }
-  ]
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "token_type": "Bearer",
+  "expires_in": 3600
+}
 ```
 
-## SDK'larla API genel anahtarını nasıl kullanırım?
+**HTTP Durum Kodları**
+
+| Kod | Anlam                        | Açıklama                                              |
+|-----|------------------------------|-------------------------------------------------------|
+| 200 | Tamam                        | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Hatalı İstek                 | Eksik veya geçersiz parametreler (örn., desteklenmeyen dosya türü). |
+| 401 | Yetkisiz                     | Geçersiz veya eksik JWT belirteci. |
+| 413 | Yük Çok Büyük                | Yüklenen dosya boyut sınırını aşıyor. |
+| 500 | Sunucu İç Hatası             | Beklenmeyen sunucu hatası. |
+
+**Hata işleme örneği**
+
+```json
+{
+  "error": "invalid_client",
+  "error_description": "İstemci kimlik doğrulaması başarısız oldu."
+}
+```
+
+## Get public key API'sini SDK’lar ile Nasıl Kullanılır
 
 ### OpenAPI Spesifikasyonu
 
- The[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken) web tarayıcısından doğrudan REST etkileşimleri gerçekleştirmenize olanak tanıyan, herkese açık bir programlama arayüzü tanımlar.
+[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken), bir web tarayıcısından doğrudan REST etkileşimlerinde bulunmanızı sağlayan herkese açık bir programlama arayüzü tanımlar.
 
-### Aspose.Cells Bulut SDK'larını kullanın
+### Aspose.Cells Cloud SDK’larını Kullanın
 
-SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. SDK, temel ayrıntıları yöneterek, hücreler için erişim belirtecini minimum kodla kolayca uygulamanıza olanak tanır.
- Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Cloud SDK'larının tam listesi için. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, başlamak için en hızlı yoldur. SDK, temel HTTP ayrıntılarını soyutlar ve minimum kodla Cells için bir erişim belirteci almanızı sağlar.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın. Bir SDK, alt seviye ayrıntıları yöneterek size proje görevlerinize odaklanmanızı sağlar.
+
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:  
+---

@@ -1,22 +1,26 @@
-﻿---
-title: Travailler avec la colonne Excel
-second_title: Documen
-linktitle: Colonne
-type: docs
-url: /fr/columns/
-aliases: [/working-with-columns/]
-keywords: REST API, columns, spreadsheets, exce
-description: "Cells.Cloud API pour Excel fonctionne : afficher les colonnes d'une feuille de calcul Excel"
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Colonnes
 ---
-## Travailler avec des colonnes sur un fichier Excel
+title: "Travail avec les colonnes Excel"
+second_title: "Document"
+linktitle: "Colonnes"
+type: docs
+url: /columns/
+aliases: [/working-with-columns/]
+keywords: "Excel, colonnes, Aspose.Cells Cloud, API, classeur, feuille de calcul, API REST"
+description: "Guide détaillé des opérations de l’API Aspose.Cells Cloud concernant les colonnes des feuilles de calcul Excel, couvrant la récupération, l’ajout, la copie, la masquage, le démasquage, le groupement, le dégroupement et la suppression."
+weight: 100
+ArticleTitle: "Travail avec les colonnes Excel – Documentation Aspose.Cells Cloud"
+---
 
-- [Comment obtenir une colonne à partir d'une feuille de calcul Excel.](/cells/fr/columns/get/)
-- [Comment ajouter une colonne vide sur une feuille de calcul Excel.](/cells/fr/columns/add/)
-- [Comment copier des colonnes sur une feuille de calcul Excel.](/cells/fr/columns/copy/)
-- [Comment masquer des colonnes sur une feuille de calcul Excel.](/cells/fr/columns/hide/)
-- [Comment afficher les colonnes sur une feuille de calcul Excel.](/cells/fr/columns/unhide/)
-- [Comment regrouper des colonnes sur une feuille de calcul Excel.](/cells/fr/columns/group/)
-- [Comment dissocier les colonnes d'une feuille de calcul Excel.](/cells/fr/columns/ungroup/)
-- [Comment supprimer une colonne sur une feuille de calcul Excel.](/cells/fr/columns/delete/)
+## Travail avec les colonnes dans un fichier Excel
+
+Cette page présente brièvement les opérations principales liées aux colonnes disponibles via l’API Aspose.Cells Cloud. Utilisez les liens ci-dessous pour accéder à la documentation détaillée de chaque action, incluant les paramètres de requête, les exemples de code et les réponses d’exemple.
+
+- [Comment obtenir une colonne à partir d’une feuille de calcul Excel.](/cells/columns/get/)
+- [Comment ajouter une colonne vide à une feuille de calcul Excel.](/cells/columns/add/)
+- [Comment copier des colonnes sur une feuille de calcul Excel.](/cells/columns/copy/)
+- [Comment masquer des colonnes sur une feuille de calcul Excel.](/cells/columns/hide/)
+- [Comment démasquer des colonnes sur une feuille de calcul Excel.](/cells/columns/unhide/)
+- [Comment grouper des colonnes sur une feuille de calcul Excel.](/cells/columns/group/)
+- [Comment dégrouper des colonnes sur une feuille de calcul Excel.](/cells/columns/ungroup/)
+- [Comment supprimer une colonne d’une feuille de calcul Excel.](/cells/columns/delete/)
+---

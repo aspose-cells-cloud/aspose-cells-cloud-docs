@@ -1,86 +1,132 @@
-﻿---
-title: حماية الملف Excel
-second_title: Documen
-linktitle: تشفير الملف Excel
-type: docs
-url: /ar/protect-excel-files/
-aliases: [/protect/without-storage/,/protect/without-using-storage/,/protect/without-using-storage/]
-keywords: Protect Excel files
-description: يدعم Cloud REST حماية الملفات. تدعم حزمة SDK لغات تطوير متنوعة، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 40
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حماية Excel الملفات دون استخدام مساحة التخزين
 ---
-يشير هذا REST API إلى الملفات `protect` Excel.
+title: "حماية ملفات Excel"
+second_title: "الوثيقة"
+linktype: "تشفير ملفات Excel"
+type: docs
+url: /protect-excel-files/
+aliases:
+  [
+    "/protect/without-storage/",
+    "/protect/without-using-storage/",
+    "/protect/without-using-storage/",
+  ]
+keywords: "Aspose.Cells، واجهة برمجة تطبيقات حماية Excel، تشفير مصنف Excel، أمان جداول البيانات في السحابة، واجهة برمجة تطبيقات REST"
+description: "استخدم واجهة برمجة تطبيقات Aspose.Cells Cloud REST لحماية ملفات Excel. يوضح هذا الدليل كيفية تشفير مصنفات عبر HTTP POST وcURL وSDKs بلغات برمجة متعددة، وذلك اعتبارًا من عام 2026."
+weight: 40
+---
 
-## RSET API
+تقوم هذه واجهة برمجة تطبيقات REST بحماية ملفات Excel.
+
+## واجهة برمجة تطبيقات REST
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/protect
- 
 ```
 
-معلمات الطلب هي:
+### الأمان والمصادقة
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| ملف| ملف| نموذج البيانات| الملف للتحميل|
-| كلمة المرور| خيط| استفسار||
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [المصادقة باستخدام رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل | النوع | الموقع | الوصف |
+| ----------- | ----- | ------ | ------ |
+| file | ملف | formData (body) | الملف المرفوع |
+| password | نص | سلسلة الاستعلام (`password`) | كلمة المرور المستخدمة لحماية المصنف |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### الاستجابة
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Files": [
+    {
+      "Filename": "اسم الملف المحمي: smaple1.xlsx",
+      "FileSize": الحجم,
+      "FileContent": "-----سلسلة Base64 لملف sample1-----"
+    },
+    {
+      "Filename": "اسم الملف المحمي: sample2.xlsx",
+      "FileSize": الحجم,
+      "FileContent": "-----سلسلة Base64 لملف sample2-----"
+    }
+  ]
+}
+```
+
+**رموز حالة HTTP**
+
+| الكود | المعنى | الوصف |
+| ----- | ------ | ------ |
+| 200 | نجاح | تم تطبيق الحماية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | طلب غير صالح | معاملات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم). |
+| 401 | غير مصرّح به | رمز JWT غير صالح أو مفقود. |
+| 413 | حمل البيانات كبير جدًا | تجاوز حجم الملف المرفوق الحد المسموح. |
+| 500 | خطأ داخلي في الخادم | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام واجهة PostProtect API مع SDKs
+
+### مواصفات واجهة PostProtect API
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) واجهة برمجة تطبيقات قابلة للوصول العام، وتتيح لك إجراء تفاعلات REST مباشرة من خلال متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب الخاصة بـ Aspose.Cells. يوضح المثال التالي كيفية استدعاء واجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/protect?password=123456" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
- 
+curl -v "http://api.aspose.cloud/v3.0/cells/protect?password=MySecretPwd" \
+  -X POST \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'file1=@sample1.xlsx' \
+  -F 'file2=@sample2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-{
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "sample1.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----سلسلة Base64 لملف sample1-----"
+    },
+    {
+      "Filename": "sample2.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----سلسلة Base64 لملف sample2-----"
+    }
+  ]
 }
-}
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### **معالجة الأخطاء**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+– يمكن أن تُعيد واجهة برمجة التطبيقات رموز الحالة التالية:
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+| رمز HTTP | المعنى | محتوى خطأ JSON مثال |
+| --------- | ------ | ------------------- |
+| 400 | طلب غير صالح (مثل ملف مفقود) | `{"Code":400,"Message":"الملف مطلوب."}` |
+| 401 | غير مصرّح به (رمز غير صالح أو مفقود) | `{"Code":401,"Message":"رمز الوصول غير صالح."}` |
+| 403 | ممنوع (صلاحيات غير كافية) | `{"Code":403,"Message":"تم رفض الوصول."}` |
+| 500 | خطأ داخلي في الخادم | `{"Code":500,"Message":"خطأ غير متوقع في الخادم."}` |
+
+### استخدام SDKs لـ Aspose.Cells Cloud
+
+استخدام SDKs هو أسرع طريقة لتطوير التطبيقات. فتتولى SDKs إدارة التفاصيل من المستوى المنخفض، ما يتيح لك التركيز على مهام مشروعك. يُرجى مراجعة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الرمز التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs متنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

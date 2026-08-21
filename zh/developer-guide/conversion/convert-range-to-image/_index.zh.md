@@ -1,100 +1,119 @@
-﻿---
-title: Aspose.Cells Cloud Web API - 将电子表格范围数据转换为图像
-second_title: Documen
-ArticleTitle: Convert a Spreadsheet Range data to an Imag
-linktitle: 将范围转换为图像
-type: docs
-url: /zh/convert-range-to-image/
-keywords: Aspose.Cells Cloud Web API, Convert Range to Image, Spreadsheet to Image, Cloud Conversion, Image Format
-description: 将范围数据从本地电子表格/Excel 文件转换为图像文件
-weight: 100
-kwords: Excel, Office 云, REST API, 电子表格, 图像转换, PNG, SVG, TIFF, JSON, Markdown
 ---
-将本地电子表格/Excel文件中的范围数据转换为图像文件。支持**图像格式：** [PNG](https://docs.fileformat.com/image/png/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/)
+title: "将 Excel 区域转换为图像 – Aspose.Cells Cloud API"
+description: "通过 Aspose.Cells Cloud REST API 将本地 Excel 文件中的指定区域转换为 PNG、JPEG、SVG、TIFF 或 BMP 格式图像——无需上传整个工作簿。"
+keywords: "Aspose.Cells Cloud、将区域转换为图像、Excel API、图像格式、PNG、JPEG、SVG、TIFF、BMP"
+slug: convert-range-to-image
+api_version: "v4.0"
+date: 2026-07-30
+---
 
-## **将范围转换为图像 API**
+该调用读取本地电子表格文件，转换指定区域，并以二进制流形式返回图像。
+
+## 将区域转换为图像的方法
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
+PUT https://api.aspose.cloud/v4.0/cells/convert/range/image
 ```
 
-### **请求参数：**
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|电子表格|文件|表单数据|上传电子表格文件进行转换。|
-|工作表|细绳|询问|电子表格/Excel的工作表名称|
-|范围|细绳|询问|定义要转换的单元格区域（例如，A1:C10）。|
-|格式|细绳|询问|指定输出文件格式（例如，png、svg、tiff）。|
-|打印标题|布尔值|询问|指示是否应打印行和列标题。|
-|输出路径|细绳|询问|（可选）存储工作簿的文件夹路径；默认值为空。|
-|输出存储名称|细绳|询问|输出文件存储的名称。|
-|字体位置|细绳|询问|用于转换的自定义字体。|
-|雷戈因|细绳|询问|定义电子表格区域设置。|
-|密码|细绳|询问|如果受保护，则打开电子表格文件的密码。|
+Aspose.Cells Cloud API 是安全的，需要使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-### **回复**
+## 请求参数
+
+| 名称               | 位置                              | 类型    | 必填项 | 描述                                                                 |
+| ------------------ | --------------------------------- | ------- | ------ | -------------------------------------------------------------------- |
+| **Spreadsheet**    | 表单数据 (`multipart/form-data`) | 文件    | 是     | 待处理的 Excel 文件。                                               |
+| **worksheet**      | 查询参数                          | 字符串  | 是     | 包含目标区域的工作表名称（例如 `Sheet1`）。                         |
+| **range**          | 查询参数                          | 字符串  | 是     | 待转换的单元格区域，例如 `A1:C10`。                                 |
+| **format**         | 查询参数                          | 字符串  | 是     | 输出图像格式（`png`、`jpeg`、`svg`、`tiff`、`bmp`）。                |
+| **printHeadings**  | 查询参数                          | 布尔值  | 否     | `true` 表示在图像中包含行/列标题。                                  |
+| **outPath**        | 查询参数                          | 字符串  | 否     | 若需将生成的文件存储于云存储中，则指定其文件夹路径。                 |
+| **outStorageName** | 查询参数                          | 字符串  | 否     | 存储服务的名称（例如 `MyStorage`）。                                 |
+| **fontsLocation**  | 查询参数                          | 字符串  | 否     | 转换过程中使用的自定义字体的 URL 或路径。                            |
+| **region**         | 查询参数                          | 字符串  | 否     | 区域标识符（例如 `en-US`、`fr-FR`），影响数字和日期的格式化方式。   |
+| **password**       | 查询参数                          | 字符串  | 否     | 加密工作簿的密码。                                                   |
+| **AutoRowsFit**    | 查询参数                          | 布尔值  | 否     | 渲染前自动调整行高。                                                 |
+| **AutoColumnsFit** | 查询参数                          | 布尔值  | 否     | 渲染前自动调整列宽。                                                 |
+
+## 响应
+
+API 将转换后的 HTML 文件作为**二进制流**（`application/octet-stream`）返回。
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### 错误代码
+### 成功响应示例（HTTP）
 
-- **400 错误请求**：无效的 Apose.Cells Cloud API URI。
-- **401 未授权**：访问令牌无效。或者客户端 ID 和密钥无效。
-- **404 未找到**：电子表格文件无法访问。
-- **500 服务器错误**：电子表格在获取计算数据时遇到异常。
+```
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="report.png"
+Content-Length: 8423
+```
 
-## 为什么要使用“将范围转换为图像 API”？
+将响应体保存为文件（例如 `report.png`），即可在浏览器中查看渲染后的图像。
 
-- 无需云存储，减少云资源负担。
-- 通过现有的SDK即可快速完成开发。
+---
 
-## 如何使用 SDK 将范围转换为图像 API？
+**HTTP 状态码说明**
 
-### 将范围转换为图像 API 规范
+| 状态码 | 含义             | 描述                                         |
+| ------ | ---------------- | -------------------------------------------- |
+| 200    | OK（成功）       | 过滤器已成功应用；响应包含操作详情。         |
+| 400    | Bad Request（错误请求） | 缺少或参数无效（例如不支持的文件类型）。     |
+| 401    | Unauthorized（未授权） | JWT 令牌无效或缺失。                         |
+| 413    | Payload Too Large（请求实体过大） | 上传的文件超出大小限制。                    |
+| 500    | Internal Server Error（服务器内部错误） | 发生意外服务器错误。                         |
 
-这[将范围转换为图像 API 规范](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToImage)提供一个可公开访问的编程接口，可直接从您的 Web 浏览器实现 REST 交互。
+## 如何使用 SDK 调用“将区域转换为图像” API？
 
-### 使用 Aspose.Cells 云 SDK
+### OpenAPI 规范
 
-使用 SDK 是最快的开发方式，因为它抽象了低级细节，允许您使用短代码将范围数据转换为图像。
-请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+[OpenAPI 规范](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToImage) 提供了一个公开可访问的 API，允许直接从 Web 浏览器发起 REST 请求。
 
-以下代码示例说明了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertRangeToImage.cs" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/image?format=png&worksheet=Sheet1&range=A1:C10&AutoRowsFit=true&AutoColumnsFit=true" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@Report.xlsx" \
+     -F "outPath=output/report.png"
+
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertRangeToImage.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="report.png"
+Content-Length: 8423
+
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertRangeToImage.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertRangeToImage.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertRangeToImage.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertRangeToImage.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertRangeToImage.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToImage.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+## 使用 Aspose.Cells Cloud SDK
+
+使用 SDK 是最快的开发方式，因为它抽象了底层细节，使您能以极少的代码将数据区域转换为图像文件。  
+请在我们的 [GitHub 仓库](https://github.com/aspose-cells-cloud) 中查看 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用 various SDK 调用 Aspose.Cells Web 服务。如果 Gist 加载被阻止，您可以直接从仓库下载示例文件。

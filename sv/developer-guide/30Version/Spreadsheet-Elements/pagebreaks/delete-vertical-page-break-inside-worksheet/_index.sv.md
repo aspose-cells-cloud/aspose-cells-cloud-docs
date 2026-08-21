@@ -1,123 +1,269 @@
-﻿---
-title: Ta bort vertikal sidbrytning
-second_title: Documen
-linktitle: Ta bort vertikal sidbrytning
-type: docs
-url: /sv/page-breaks/delete-vertical-page-break/
-aliases: [/delete-vertical-page-break-inside-worksheet/]
-keywords: Delete a page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder borttagning av sidbrytningar i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 60
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ta bort vertikal sidbrytning
 ---
-Denna REST API anger att en sidbrytning `vertical` ska tas bort.
+title: Ta bort vertikalt sidbrytning – Aspose.Cells Cloud REST API
+description: Ta bort ett vertikalt sidbrytning från ett Excel-ark med hjälp av Aspose.Cells Cloud REST API (v3.0). Inkluderar begärsyntax, parametrar, exempel, svarskoder och SDK-utdrag.
+keywords: ta bort vertikalt sidbrytning, Aspose.Cells Cloud, REST API
+slug: ta-bort-vertikalt-sidbrytning
+api_version: v3.0
+---
 
-## RSET API
+# Ta bort vertikalt sidbrytning
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index}
- 
+Ta bort ett vertikalt sidbrytning från ett ark i en Excel-fil med hjälp av Aspose.Cells Cloud REST API.
+
+---
+
+## Förutsättningar
+
+* Ett **JWT-autentiseringstoken** måste anges i `Authorization`-headern.  
+* Arbetsboken (`{name}`) måste finnas i den angivna **mappen** eller **lagringen** och vara tillgänglig för API-klienten.
+
+---
+
+## HTTP-begäran
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index}
 ```
 
-Begäranparametrarna är:
+| Parameter   | Typ     | Plats  | Obligatorisk | Beskrivning |
+|-------------|---------|--------|--------------|-------------|
+| **name**      | string | path   | Ja           | Namnet på Excel-filen. |
+| **sheetName** | string | path   | Ja           | Namnet på det ark som innehåller sidbrytningen. |
+| **index**     | integer| path   | Ja           | Nollbaserat index för det vertikala sidbrytningen som ska tas bort. |
+| **folder**    | string | query  | Nej          | Mappväg där filen är lagrad. |
+| **storageName**| string| query  | Nej          | Namn på lagringstjänsten. |
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg||
-| arknamn| sträng| väg||
-| index| heltal| väg||
-| mapp| sträng| fråga||
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+---
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteVerticalPageBreak) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
-
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
+## Exempel på begäran
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/verticalpagebreaks/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/verticalpagebreaks/0?folder=Docs&storageName=MyStorage" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt_token>"
 ```
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="2" >}}
+## Lyckad svars Kod
 
-```bash
+| Kod  | Beskrivning |
+|------|-------------|
+| **200** | Det vertikala sidbrytningen togs framgångsrikt bort. |
+
+**Exempel på nyttolast**
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
-{{< /tab >}}
+---
 
-{{< /tabs >}}
+## Felaktiga svar
 
-## Cloud SDK-familjen
+| HTTP-kod | Beskrivning |
+|----------|-------------|
+| **401** | Otillåten – saknat eller ogiltigt token. |
+| **404** | Ej hittad – den angivna filen, arbetsbladet eller sidbrytningsindexet finns inte. |
+| **400** | Felaktig begäran – felaktig begärsyntax eller ogiltiga parametrar. |
+| **500** | Internt serverfel – ett oväntat tillstånd upptäcktes. |
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+**Exempel på felaktiga nyttolaster**
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+*401 – Otillåten*
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+```json
+{
+  "Code": 401,
+  "Message": "Ogiltigt autentiseringstoken."
+}
+```
 
-{{< tab tabNum="1" >}}
+*404 – Ej hittad*
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleDeleteVerticalPageBreak.cs" >}}
+```json
+{
+  "Code": 404,
+  "Message": "Den angivna filen, arbetsbladet eller sidbrytningsindexet hittades inte."
+}
+```
 
-{{< /tab >}}
+*400 – Felaktig begäran*
 
-{{< tab tabNum="2" >}}
+```json
+{
+  "Code": 400,
+  "Message": "Begärans parametrar är ogiltiga eller felaktigt formaterade."
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_DeleteVerticalPageBreak.java" >}}
+*500 – Internt serverfel*
 
-{{< /tab >}}
+```json
+{
+  "Code": 500,
+  "Message": "Ett oväntat serverfel uppstod."
+}
+```
 
-{{< tab tabNum="3" >}}
+---
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_DeleteVerticalPageBreak.php" >}}
+## SDK-exempel
 
-{{< /tab >}}
+Följande exempel visar hur **DeleteVerticalPageBreak**-operationen anropas med olika Aspose.Cells Cloud SDK:n.
 
-{{< tab tabNum="4" >}}
+<details><summary>**C#**</summary>
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_DeleteVerticalPageBreak.rb" >}}
+```csharp
+// Install-Package Aspose.Cells-Cloud
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
 
-{{< /tab >}}
+var apiInstance = new CellsApi("client_id", "client_secret");
+string name = "Book1.xlsx";
+string sheetName = "Sheet1";
+int index = 0;
+string folder = "Docs";
+string storageName = "MyStorage";
 
-{{< tab tabNum="5" >}}
+try
+{
+    var response = apiInstance.DeleteVerticalPageBreak(name, sheetName, index, folder, storageName);
+    Console.WriteLine($"Status: {response.Status}");
+}
+catch (Exception e)
+{
+    Console.WriteLine("Exception when calling CellsApi.DeleteVerticalPageBreak: " + e.Message );
+}
+```
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_DeleteVerticalPageBreak.ts" >}}
+</details>
 
-{{< /tab >}}
+<details><summary>**Java**</summary>
 
-{{< tab tabNum="6" >}}
+```java
+import com.aspose.cloud.cells.api.CellsApi;
+import com.aspose.cloud.cells.model.CellsCloudResponse;
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_DeleteVerticalPageBreak.py" >}}
+public class DeleteVerticalPageBreak {
+    public static void main(String[] args) {
+        CellsApi api = new CellsApi("client_id", "client_secret");
+        String name = "Book1.xlsx";
+        String sheetName = "Sheet1";
+        int index = 0;
+        String folder = "Docs";
+        String storageName = "MyStorage";
 
-{{< /tab >}}
+        try {
+            CellsCloudResponse resp = api.deleteVerticalPageBreak(name, sheetName, index, folder, storageName);
+            System.out.println("Status: " + resp.getStatus());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
 
-{{< tab tabNum="7" >}}
+</details>
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_DeleteVerticalPageBreak.pl" >}}
+<details><summary>**Python**</summary>
 
-{{< /tab >}}
+```python
+from asposecellscloud import CellsApi, ApiClient, Configuration
 
-{{< tab tabNum="8" >}}
+config = Configuration()
+config.client_id = "client_id"
+config.client_secret = "client_secret"
+api_client = ApiClient(configuration=config)
+api = CellsApi(api_client)
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_DeleteVerticalPageBreak.go" >}}
+name = "Book1.xlsx"
+sheet_name = "Sheet1"
+index = 0
+folder = "Docs"
+storage_name = "MyStorage"
 
-{{< /tab >}}
+try:
+    response = api.delete_vertical_page_break(name, sheet_name, index, folder, storage_name)
+    print("Status:", response.status)
+except Exception as e:
+    print("Error:", e)
+```
 
-{{< /tabs >}}
+</details>
+
+<details><summary>**Node.js**</summary>
+
+```javascript
+const { CellsApi, ApiClient, Configuration } = require('asposecellscloud');
+
+const config = new Configuration();
+config.clientId = "client_id";
+config.clientSecret = "client_secret";
+
+const api = new CellsApi(new ApiClient(config));
+
+const name = "Book1.xlsx";
+const sheetName = "Sheet1";
+const index = 0;
+const folder = "Docs";
+const storageName = "MyStorage";
+
+api.deleteVerticalPageBreak(name, sheetName, index, folder, storageName)
+  .then(response => console.log('Status:', response.status))
+  .catch(error => console.error('Error:', error));
+```
+
+</details>
+
+<details><summary>**Go**</summary>
+
+```go
+package main
+
+import (
+    "fmt"
+    "github.com/asposecellscloud/aspose-cells-cloud-go/v3"
+)
+
+func main() {
+    config := asposecellscloud.NewConfiguration()
+    config.ClientId = "client_id"
+    config.ClientSecret = "client_secret"
+
+    api := asposecellscloud.NewAPIClient(config).CellsApi
+    name := "Book1.xlsx"
+    sheetName := "Sheet1"
+    index := int32(0)
+    folder := "Docs"
+    storageName := "MyStorage"
+
+    resp, _, err := api.DeleteVerticalPageBreak(name, sheetName, index, folder, storageName)
+    if err != nil {
+        fmt.Println("Error:", err)
+        return
+    }
+    fmt.Println("Status:", resp.Status)
+}
+```
+
+</details>
+
+*(SDK-utdrag för PHP, Ruby, Perl och andra språk följer samma mönster och finns tillgängliga i det officiella GitHub-arkivet.)*
+
+---
+
+## Relaterade resurser
+
+* **OpenAPI-specifikation** – [DeleteVerticalPageBreak](https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteVerticalPageBreak)  
+* **Aspose.Cells Cloud SDK:n** – <https://github.com/aspose-cells-cloud>  
+* **Autentiseringsguide** – <https://docs.aspose.cloud/cells/authentication/>  
+
+---
+
+*Dokumentet senast uppdaterat: 2026‑07‑30*

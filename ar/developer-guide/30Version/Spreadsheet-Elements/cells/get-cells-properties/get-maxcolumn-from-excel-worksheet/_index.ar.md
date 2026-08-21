@@ -1,46 +1,47 @@
-﻿---
-title: احصل على MaxColumn من ورقة العمل Excel
-type: docs
-url: /ar/get-maxcolumn-from-excel-worksheet/
-weight: 60
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على MaxColumn من ورقة عمل Excel
 ---
-يشير هذا REST API إلى الحصول على `maxcolumn` في ملف Excel عندما تكون المعلمة `cellOrMethodName` هي `maxcolumn`.
+title: "الحصول على MaxColumn من ورقة عمل Excel"
+type: docs
+url: /get-maxcolumn-from-excel-worksheet/
+weight: 60
+keywords: "Aspose Cells API, maxcolumn, ورقة عمل Excel, REST, SDK"
+description: "استرجاع مؤشر العمود الأقصى في ورقة عمل باستخدام واجهة Aspose.Cells Cloud API. يتضمن طلب cURL مع المصادقة، ومخطط الاستجابة، والمعلمات، وأكواد الأخطاء، وأمثلة SDK (C#، Java، Python، إلخ)."
+---
 
-- **cURL مثال**
+تُعيد هذه الواجهة REST مؤشر العمود الأقصى في ورقة عمل Excel عندما تكون المعلمة `cellOrMethodName` مضبوطة على `maxcolumn`.
 
+- **مثال باستخدام cURL**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxcolumn"  -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxcolumn" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MaxColumn": 15
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **عائلة SDK السحابية**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+- **استخدام SDKs لـ Aspose.Cells Cloud**
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+استخدام SDK هو أسرع طريقة للتطوير. تُدار التفاصيل منخفضة المستوى بواسطة الـ SDK، ما يسمح لك بالتركيز على منطق مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-
+توضح أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -87,6 +88,8 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
+<!-- مثال Swift (غير مُقدَّم حاليًا) -->
 
 {{< /tab >}}
 

@@ -1,74 +1,115 @@
-﻿---
-title: Заменить текст из файла Excel
-second_title: Documen
-linktitle: Заменить без использования хранилища
-type: docs
-url: /ru/replace/
-keywords: Replace old value by new value on Excel files
-description: Aspose.Cells Cloud REST API поддерживает замену старых значений новыми в файлах Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 80
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Замена текста из файлов Excel
 ---
-Этот REST API указывает на данные `replace` из файлов Excel.
+title: "Замена текста в файлах Excel"
+second_title: "Документ"
+linktitle: "Замена без использования хранилища"
+type: docs
+url: /replace/
+keywords: "замена текста в Excel, Aspose.Cells Cloud, REST API, замена в электронных таблицах, API, замена текста в файле Excel"
+description: "Используйте REST API Aspose.Cells Cloud для замены существующего текста новыми значениями в файлах Excel. Поддерживает SDK для C#, Java, Python, Node.js, PHP, Ruby, Go и Perl."
+weight: 80
+---
 
-## РСЕT API
+
+## REST API
+
+Этот REST API заменяет данные в файлах Excel.
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/replace
-
 ```
 
-Параметры запроса:
+### Безопасность и аутентификация
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| файл| файл| formData| Файл для загрузки|
-| текст| нить| запрос||
-| новый текст| нить| запрос||
-| пароль| нить| запрос||
-| имя_листа| нить| запрос||
+API Aspose.Cells Cloud безопасны и требуют [аутентификации на основе токена JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### Параметры запроса
+
+| Имя параметра | Тип   | Расположение         | Описание                                         |
+|--------------|-------|---------------------|--------------------------------------------------|
+| **file**     | файл  | formData (multipart) | Обрабатываемый файл Excel.                      |
+| **text**     | строка | query               | Текстовая строка, подлежащая замене.            |
+| **newtext**  | строка | query               | Текст замены.                                   |
+| **password** | строка | query               | Пароль для защищённой рабочей книги (необязательно). |
+| **sheetname**| строка | query               | Имя целевого листа (необязательно).             |
+
+### **Ответ**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Files": [
+    {
+      "Filename" : "[имя файла1]",
+      "Filesize" : [размер файла],
+      "FileContent" : "[Base64String]"
+    },
+    {
+      "Filename" : "[имя файла2]",
+      "Filesize" : [размер файла],
+      "FileContent" : "[Base64String]"
+    },
+    {
+      "Filename" : "[имя файла3]",
+      "Filesize" : [размер файла],
+      "FileContent" : "[Base64String]"
+    }
+  ]
+}
+```
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                             |
+|-----|-----------------------------|------------------------------------------------------|
+| 200 | OK (ОК)                    | Фильтр успешно применён; ответ содержит детали операции. |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизовано) | Недействительный или отсутствующий токен JWT. |
+| 413 | Payload Too Large (Слишком большой полезный груз) | Загруженный файл превышает лимит размера. |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера. |
+
+## Как использовать API PostReplace с SDK
+
+### Спецификация API PostReplace
+
+[OpenAPI-спецификация](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) определяет общедоступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Пример ниже показывает, как выполнять вызовы в облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.cloud" \
+curl -v "https://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.cloud" \
 -X POST \
 -H "Content-Type: multipart/form-data" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+-F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "xxxx1",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "xxxx2",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
-
 ```
 
 {{< /tab >}}
@@ -77,9 +118,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK берёт на себя обработку низкоуровневых деталей, позволяя сосредоточиться на задачах вашего проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как выполнять вызовы в веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -132,3 +173,5 @@ curl -v "http://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---

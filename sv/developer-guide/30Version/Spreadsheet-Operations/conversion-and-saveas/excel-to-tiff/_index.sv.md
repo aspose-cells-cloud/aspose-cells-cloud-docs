@@ -1,90 +1,89 @@
-﻿---
-title: Excel till TIF
-second_title: Documen
-linketitle: Excel to Tif
-type: docs
-url: /sv/convert-excel-file-to-tiff-file/
-aliases: [/convert-excel-file-to-tiff-in-cloud/,/convert/excel-to-tiff/]
-keywords: Convert excel files to tiff files
-description: Aspose.Cells Cloud REST API stöder konvertering av Excel-filer till TIFF-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 90
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Excel till TIFF
 ---
-Denna REST API `saveas` Excel-fil till TIFF.
+title: "Excel till TIFF"
+second_title: "Dokument"
+linketitle: "Excel till TIFF"
+type: docs
+url: /convert-excel-file-to-tiff-file/
+aliases: [/convert-excel-file-to-tiff-in-cloud/, /convert/excel-to-tiff/]
+keywords: "Aspose.Cells Cloud, konvertering av Excel till TIFF, REST API, cURL, SDK, .NET, Java, Python, bildexport"
+description: "Lär dig hur du konverterar Excel-arbetsböcker till TIFF-bilder med hög kvalitet med Aspose.Cells Cloud API. Detaljerade cURL-kommandon, SDK-exempel (C#, Java, Python, …), autentiseringssteg och felhantering."
+weight: 90
+---
 
-[POST /celler/{namn}/sparaSom](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API låter dig spara MS Excel-filen som TIFF-filen med ytterligare inställningar och spara resultatet till lagringsplatsen.
-
-Denna REST API `convert` Excel-fil till TIFF.
-
-[PUT /celler/konvertera](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) Med API kan du konvertera MS Excel-filen till TIFF-filen med ytterligare inställningar och spara resultatet i svaret.
-
-Denna REST API `export` Excel-fil till TIFF.
-
-[HÄMTA /celler/{namn}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) Med API kan du konvertera MS Excel-filen till TIFF-filen med ytterligare inställningar och spara resultatet i svaret.
+**Konvertera**, **Spara som** och **Exportera**-ändpunkterna i Aspose.Cells Cloud möjliggör för dig att omvandla en Excel-arbetsbok till en TIFF-bild.  
+Du kan anropa dessa ändpunkter direkt med **cURL** eller via någon av de SDK:er som stöds.
 
 ## REST API
 
-|**API**|**Typ**|**Beskrivning**|**Swagger-länk**|
-|:- |:- |:- |:- |
-|/celler/konvertera|SÄTTA|Konverterar arbetsboken från begäraninnehåll till något format|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
-|/celler/{namn}|FÅ|Exporterar arbetsboken till ett annat format.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
-|/celler/{namn}/sparaSom|POSTA|Exportera arbetsbok till format|[Spara dokument som](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+| **API**                | **Metod** | **Syfte**                                                                                     | **Swagger-länk**                                                                            |
+| ---------------------- | --------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| `/cells/convert`       | PUT       | Konverterar en arbetsbok som anges i begärandetexten till det angivna formatet (TIFF).         | [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) |
+| `/cells/{name}`        | GET       | Exporterar den namngivna arbetsboken till ett annat format (TIFF) och returnerar resultatet i svaret. | [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)               |
+| `/cells/{name}/saveAs` | POST      | Sparar arbetsboken i ett valt format (TIFF) och lagrar resultatet i molnlagringen.            | [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)   |
 
-Dessa API:er definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+Dessa ändpunkter är offentligt tillgängliga och kan anropas direkt från en webbläsare eller någon HTTP-klient.
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
+### cURL-exempel
 
-{{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export" >}}
+{{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export">}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/convert?format=tiff" \
--X PUT \
--d {"File":{}} \
--H "Content-Type:  multipart/form-data" \
--H "Accept:  multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
-
+     -X PUT \
+     -d '{"File":{"Name":"book1.xlsx","Data":"<base64‑content>"},"SaveFormat":"tiff"}' \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="12" >}}
 
 ```bash
-
 curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx/saveas?newfilename=book1.tiff" \
--X POST \
--d "{'SaveFormat':'tiff', 'ImageFormat': 'tiff'}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+     -X POST \
+     -d '{"SaveFormat":"tiff","ImageFormat":"tiff"}' \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="13" >}}
 
 ```bash
-
-curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=html" \
--X GET \
--d "{'SaveFormat':'tiff', 'ExportImagesAsBase64': 'true'}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=tiff" \
+     -X GET \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+> **Obs:**
+>
+> - Begärandetexten för **Konvertera** måste innehålla filen (eller en referens till en lagrad fil) samt önskat `SaveFormat`.
+> - Begäran för **Export** kräver inte någon begärandetext; formatet anges via fristrengen (`format=tiff`).
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+## Felhantering
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+| **Statuskod** | **Betydelse**        | **Vanlig orsak**                            |
+| ------------- | -------------------- | ------------------------------------------- |
+| 200           | Lyckades             | TIFF-bilden returneras (binär ström).      |
+| 400           | Felaktig begäran     | Saknade eller felaktiga parametrar.         |
+| 401           | Inte auktoriserad    | Ogiltigt eller saknat JWT-token.            |
+| 404           | Hittades inte        | Den angivna arbetsboken finns inte.         |
+| 500           | Internt serverfel    | Oväntat tillstånd på serversidan.           |
+
+När ett fel uppstår returnerar API:et en JSON-payload med `Code`, `Message` och eventuellt `Description`.
+
+## Moln-SDK-familj
+
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK hanterar detaljer på låg nivå så att du kan fokusera på ditt projekt. Kontrollera [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

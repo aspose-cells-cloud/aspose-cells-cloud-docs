@@ -1,46 +1,72 @@
-﻿---
-title: 从 Excel 工作表中获取 MinColumn
+---
+title: "从 Excel 工作表中获取最小列索引"
 type: docs
 url: /zh/get-mincolumn-from-excel-worksheet/
 weight: 100
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表获取最小列
+keywords: Excel, Aspose.Cells Cloud, REST API, 获取最小列索引 (MinColumn), 工作表, SDK, 云 API
+description: 通过 Aspose.Cells Cloud REST API 获取 Excel 文件工作表中包含数据的最小列索引。
+ArticleTitle: "从 Excel 工作表中获取最小列索引 - Aspose.Cells Cloud API"
 ---
-此 REST API 表示当 `cellOrMethodName` 参数为 `mincolumn` 时，在 Excel 文件中获取 `mincolumn`。
+
+此 REST API 在 `cellOrMethodName` 参数设置为 `mincolumn` 时，返回 Excel 工作表中包含数据的最小列索引。
 
 - **cURL 示例**
 
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" \
+     -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MinColumn": 2
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK 系列**
+**请求参数说明**
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| 参数 | 类型 | 必需 | 说明 |
+|-------|------|------|------|
+| `cellOrMethodName` | string | 是 | 固定值 `mincolumn`，表示操作类型。 |
+| `folder` | string | 否 | 工作簿所在文件夹的路径（若不在根目录下）。 |
+| `storageName` | string | 否 | 要使用的 Aspose Cloud 存储名称。 |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+**响应说明**
 
+API 返回一个包含单个属性的 JSON 对象：
 
+```json
+{
+  "MinColumn": integer   // 包含数据的最左侧列的从零开始的索引。
+}
+```
+
+常见的 HTTP 状态码：
+
+- **200 OK** – 请求成功，返回 `MinColumn` 值。  
+- **401 Unauthorized** – 缺少或无效的身份认证令牌。  
+- **404 Not Found** – 指定的工作簿、工作表或单元格区域不存在。  
+- **500 Internal Server Error** – 服务器内部意外错误。
+
+- **使用 Aspose.Cells Cloud SDK**
+
+使用 SDK 是最高效的开发方式。SDK 封装了底层细节，使您能够专注于项目逻辑。请访问 <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub 仓库</a> 查看 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

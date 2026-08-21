@@ -1,109 +1,98 @@
-﻿---
-title: جي
-type: docs
-url: /ar/hyperlinks/get/
-keywords: Delete a hyperlink from an Excel worksheet
-description: يدعم Cloud REST حذف الروابط التشعبية من ورقة عمل. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على
 ---
-يشير هذا REST API إلى `get worksheet hyperlink` حسب الفهرس الموجود في ورقة العمل Excel.
+title: "الحصول على رابط تشعبي في ورقة العمل"
+type: docs
+url: /hyperlinks/get/
+keywords: "Aspose.Cells Cloud, الحصول على رابط تشعبي في ورقة العمل, API للروابط التشعبية في Excel, REST, المصادقة بـ JWT, ورقة عمل Excel, نقطة نهاية API"
+description: "استرجاع رابط تشعبي محدد من ورقة عمل Excel باستخدام Aspose.Cells Cloud API (الإصدار 3.0). يتضمن نقطة النهاية، المعلمات، مثال باستخدام cURL، تفاصيل المصادقة، التعامل مع الأخطاء، وأكواد مقتطفات من SDKs."
+weight: 10
+ArticleTitle: "Aspose.Cells Cloud API – الحصول على رابط تشعبي في ورقة العمل"
+---
 
-## RSET API
+تسترجع هذه الواجهة البرمجية (REST API) **الرابط التشعبي** في ورقة العمل باستخدام **واجهة Aspose.Cells Get Hyperlink API**.
+
+## الأمان والمصادقة
+
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتحتاج إلى [مصادقة تعتمد على رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).  
+قبل استدعاء نقطة النهاية، احصل على رمز وصول JWT باستخدام مُعرِّف العميل (Client ID) وسر العميل (Client Secret)، ثم ضعه في رأس الطلب `Authorization: Bearer <jwt token>`.
+
+## واجهة برمجة التطبيقات (REST API)
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
 ```
 
-معلمات الطلب هي:
+### معلمات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| فهرس الارتباط التشعبي| عدد صحيح| طريق| فهرس الارتباط التشعبي.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعلمة | النوع | الموقع | الوصف |
+| ------------ | ------- | -------- | ---------------------------------------------- |
+| name | string | path | اسم ملف Excel. |
+| sheetName | string | path | اسم ورقة العمل التي تحتوي على الرابط. |
+| hyperlinkIndex | integer | path | الفهرس بصفر كبداية للرابط التشعبي المراد استرجاعه. |
+| folder | string | query | المجلد الذي يتم فيه تخزين المستند. |
+| storageName | string | query | اسم خدمة التخزين. |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/GetWorksheetHyperlink) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### استجابات الأخطاء
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| رمز HTTP | السبب | مثال على جسم الاستجابة |
+| --------- | -------------------------------------------------- | ------------------------------------------------------------------- |
+| **400** | طلب غير صالح – معلمات مفقودة أو غير صحيحة. | `{ "Code":"400", "Message":"Invalid parameter value." }` |
+| **401** | غير مصرّح به – رمز JWT مفقود أو غير صالح. | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
+| **404** | غير موجود – ملف العمل أو ورقة العمل غير موجودة. | `{ "Code":"404", "Message":"File not found." }` |
+| **500** | خطأ داخلي في الخادم – فشل غير متوقع في الخادم. | `{ "Code":"500", "Message":"An unexpected error occurred." }` |
+
+تُعرِّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Hyperlinks/GetWorksheetHyperlink) واجهة برمجة قابلة للوصول العام وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells عبر الويب بسهولة. يوضح المثال التالي كيفية إجراء استدعاء لواجهة Cloud API باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl  -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-{
-
   "Hyperlink": {
-
     "Address": "https://docs.aspose.cloud/display/cellscloud/Get+Hyperlink+from+Excel+Worksheet",
-
     "Area": {
-
       "EndColumn": 0,
-
       "EndRow": 1,
-
       "StartColumn": 0,
-
       "StartRow": 1
-
     },
-
     "ScreenTip": null,
-
     "TextToDisplay": "https://docs.aspose.cloud/display/cellscloud/Get+Hyperlink+from+Excel+Worksheet",
-
     "link": {
-
       "Href": "/test.xlsx/worksheets/Sheet1/hyperlinks/1",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-  
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## عائلة SDKs السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. يتعامل SDK مع التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى الاطلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر الويب باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

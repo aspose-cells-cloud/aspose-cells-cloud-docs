@@ -1,73 +1,90 @@
-﻿---
-title: 在 Excel 工作表中获取 OLE 对象
-second_title: Documen
-linktitle: 葛
+---
+title: "从 Excel 工作表获取 OLE 对象 – Aspose.Cells Cloud API"
+second_title: "文档"
+linktitle: "获取"
 type: docs
 url: /zh/oleobjects/get/
-aliases: [/get-oleobject-from-a-worksheet/]
-keywords: Get an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持在 Excel 工作表中获取 OLE 对象。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+aliases: [/zh/get-oleobject-from-a-worksheet/]
+keywords: "aspose, cells, ole object, excel, worksheet, get ole object, rest api"
+description: "使用 Aspose.Cells Cloud REST API 从工作表中检索 OLE 对象（图像、图表或嵌入文件）。包含 HTTPS 端点、必需参数、示例 cURL 以及多种语言的 SDK 代码。"
+ArticleTitle: "从 Excel 工作表获取 OLE 对象 – Aspose.Cells Cloud API"
 weight: 10
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 工作表中获取 OLE 对象
 ---
-此 REST API 指示 `get` 和 `OLE object`，其格式为 Excel 工作表。
 
-## 重新设置 API
+此 REST API 可从 Excel 工作表中检索 **OLE 对象**。
+
+## 安全与身份验证
+Aspose.Cells Cloud API 采用安全机制，需要 [基于 JWT 令牌的身份验证](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)。
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
 ```
 
-请求参数为：
+### 请求参数
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|对象编号|整数|小路|物件數目。|
-|格式|细绳|询问|导出的对象格式。|
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
+| 参数名         | 类型    | 位置   | 描述                                         |
+| -------------- | ------- | ------ | -------------------------------------------- |
+| name           | string  | path   | 文档名称。                                   |
+| sheetName      | string  | path   | 工作表名称。                                 |
+| objectNumber   | integer | path   | 工作表内的对象编号。                         |
+| format         | string  | query  | 对象导出的期望格式（例如 `png`、`jpeg`）。   |
+| folder         | string  | query  | 包含文档的文件夹。                           |
+| storageName    | string  | query  | 要使用的存储名称。                           |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### 存储选项
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+- **folder** – 指定工作簿所在的默认存储子文件夹。
+- **storageName** – 若工作簿存储在其他位置，则覆盖默认存储名称。
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject) 定义了一个公开可访问的编程接口，允许您直接从 Web 浏览器执行 REST 交互。
+
+您可以使用 **cURL** 命令行工具调用 Aspose.Cells Web 服务。以下示例演示如何请求将 OLE 对象作为 PNG 图像返回。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+### 二进制图像响应
 
-Image file
- 
+当 `format` 设置为图像类型（例如 `png`）时，API 返回二进制图像数据，并附带响应头：
+
+```
+Content-Type: image/png
 ```
 
-或者
+（图像文件将直接流式传输到客户端。）
 
-```bash
+### JSON 元数据响应
+
+若省略 `format` 或将其设置为 `json`，API 将返回一个 JSON 载荷，描述 OLE 对象信息：
+
+```json
 {
-    "Code": 200,
-    "Status": "OK",
-    "OLEObject":{
-    ......
-    } 
+  "Code": 200,
+  "Status": "OK",
+  "OLEObject": {
+    "Name": "Object1",
+    "Width": 200,
+    "Height": 150,
+    "Left": 10,
+    "Top": 20,
+    "IsLocked": false,
+    "FileFormat": "png"
+  }
 }
 ```
 
@@ -75,11 +92,30 @@ Image file
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+## 错误响应
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| HTTP 状态码 | 错误代码     | 描述                           |
+| ----------- | ------------ | ------------------------------ |
+| 400         | BadRequest   | 缺少或无效的参数。             |
+| 401         | Unauthorized | JWT 令牌无效或缺失。           |
+| 404         | NotFound     | 未找到工作簿、工作表或 OLE 对象。 |
+| 500         | ServerError  | 服务器意外错误。               |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+**示例 404 响应**
+
+```json
+{
+  "Code": 404,
+  "Status": "NotFound",
+  "Message": "未在工作表 'Sheet1' 中找到编号为 0 的请求 OLE 对象。"
+}
+```
+
+## 云 SDK 家族
+
+使用 SDK 是集成 API 的最快方式。SDK 处理底层细节，让您专注于业务逻辑。请参阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,78 +1,79 @@
-﻿---
-title: 2024 年云计算的新功能
-second_title: Documen
-linktitle: 202 中的新功能
+---
+title: Aspose.Cells Cloud 2024 年新功能与增强
+second_title: "文档"
+linktype: "新功能"
 type: docs
 weight: 20
-url: /zh/new-features/2024/
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: 本页介绍了最近版本中引入的最有趣的新 Aspose.Cells 云功能
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、Aspose.Cells 云中的新功能
+url: /new-features/2024/
+keywords: "Aspose.Cells, 云服务, 2024, 新功能, 去重 API, 提取文本 API, 数据转换, 电子表格, Excel, CSV, PDF, REST API"
+description: "概述 Aspose.Cells Cloud 2024 年的新功能与增强内容，包括去重 API、提取文本 API 以及数据转换方面的改进。"
+ArticleTitle: "Aspose.Cells Cloud 2024 年新功能与增强"
 ---
-欢迎了解 Aspose.Cells 云文档的新功能。使用此页面可以快速查找最新更改。
 
-## 24.12 版中的增强功能
+欢迎查阅 Aspose.Cells Cloud 文档中的“2024 年新功能”页面。您可在此快速查找最新变更内容。本更新日志汇总了 2024 年各版本中 Aspose.Cells Cloud 引入的主要增强功能、Bug 修复及新增 API。
 
-- 添加新的删除重复项 API。
-- 添加新的摘录文本 API。
-- 无法成功创建枢轴过滤器。
+## 24.12 版本增强内容
 
-## 版本 24.11 中的增强功能
+- 新增 **去重 API**。  
+- 新增 **提取文本 API**。  
+- 修复了创建数据透视图筛选条件可能失败的 Bug。
 
-- 在 TextProcessingController 上添加转换文本功能。
+## 24.11 版本增强内容
 
-## 版本 24.10 中的增强功能
+- 为 `TextProcessingController` 添加文本转换功能。
 
-- 在 TextProcessingController 上添加删除字符的新功能。
+## 24.10 版本增强内容
 
-## 24.9 版中的增强功能
+- 为 `TextProcessingController` 添加字符移除功能。
 
-- 为 TextProcessingController 添加单词大小写功能。
-- 支持将工作表导出到带有单元格地址或 ID 的 HTML。
+## 24.9 版本增强内容
 
-## 24.8 版中的增强功能
+- 为 `TextProcessingController` 添加单词大小写处理功能。  
+- 支持将工作表导出为 HTML 时使用单元格地址或 ID。
 
-- Cells云服务新增文本修剪功能。
+## 24.8 版本增强内容
 
-## 24.7 版中的增强功能
+- 为 Cells Cloud Services 添加文本修剪功能。
 
-- 添加关于添加文本内容的新功能。
-- 添加通过客户端 ID 和客户端密钥获取访问令牌。
+## 24.7 版本增强内容
 
-## 版本 24.6.1 中的增强功能
+- 引入 **AddTextContent API**，用于向工作表中插入任意文本。  
+- 新增使用客户端 ID 与客户端密钥获取访问令牌的功能。
 
-- 修复 API 的扩展查询参数。
+## 24.6.1 版本增强内容
 
-## 版本 24.6.0 中的增强功能
+- 修复 API 的扩展查询参数问题。
 
-- 优化数据转换应用步骤。
-- 优化数据转换的加载数据功能。
-- 增加对net425和netstandard2.0的支持。
+## 24.6.0 版本增强内容
 
-## 版本 24.5.1 中的增强功能
+- 优化数据转换流程步骤。  
+- 优化数据转换功能的数据加载逻辑。  
+- 增强对 .NET Framework 4.2.5 和 .NET Standard 2.0 的支持。
 
-- 添加合并查询方法用于数据转换的数据加载。
-- 优化图表数据模型。
-- 更新获取访问令牌的地址。
+## 24.5.1 版本增强内容
 
-## 24.4 版中的增强功能
+- 为数据转换中的数据加载功能新增合并查询方法。  
+- 优化图表数据模型。  
+- 更新访问令牌端点。
 
-- 支持Aspose.Cells云服务的数据转换功能。
+## 24.4 版本增强内容
 
-## 24.3 版中的增强功能
+- 为 Aspose.Cells Cloud Services 支持数据转换功能。
 
-- 支持重复数据删除。
-- 支持数据填充。
-- 支持删除不完整的行。
-- 支持数据清洗。
+## 24.3 版本增强内容
 
-## 版本 24.2.1 中的增强功能
+- 支持数据去重（增强版）。  
+- 支持数据填充。  
+- 支持删除不完整行。  
+- 支持数据清理。
 
-- 支持重复数据删除。
+## 24.2.1 版本增强内容
 
-## 版本 24.1.1 中的增强功能
+- 初步支持数据去重（后续版本中进一步扩展）。
 
-- 修复了几个功能的拼写错误。
-- 为页面设置控制器添加 PostFitTallToPages 方法。
-- 为页面设置控制器添加 PostFitWideToPages 方法。
+## 24.1.1 版本增强内容
+
+- 修正多个函数的拼写错误。  
+- 为 PageSetupController 新增 `PostFitTallToPages` 方法。  
+- 为 PageSetupController 新增 `PostFitWideToPages` 方法。  
 - 优化分页保存选项。

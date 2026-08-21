@@ -1,20 +1,27 @@
-﻿---
-title: Сторэг
-second_title: Aspose.Cells Cloud Documen
-type: docs
-url: /ru/docker/storage/
-description: Как настроить позицию хранилища Aspose.Cells Cloud for Docker
-weight: 30
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Хранилище
 ---
-##  Конфигурация хранилища по умолчанию ##
+---
+title: "Как настроить положение хранилища для контейнера Aspose.Cells Cloud"
+second_title: "Документ"
+ArticleTitle: "Настройка хранилища контейнера Aspose.Cells Cloud"
+linktitle: "Хранилище контейнера"
+type: docs
+url: /docker/storage/ru/
+description: "Настройка расположения хранилища для контейнеров Aspose.Cells Cloud с использованием JSON, PowerShell или Bash."
+weight: 30
+keywords: "Aspose.Cells, Docker, хранилище контейнера, конфигурация JSON, PowerShell, Bash"
+---
+
+**Краткое описание**: В данном руководстве показано, как настроить расположение хранилища для контейнеров Aspose.Cells Cloud на Windows и Linux с использованием файлов конфигурации JSON и команд Docker run.
+
+## Конфигурация хранилища по умолчанию ##
+
+**Необходимые условия**: Убедитесь, что установлен Docker Engine версии 20.10 или выше, у вас есть действующие ключи лицензии Aspose.Cells Cloud (`LicensePublicKey` и `LicensePrivateKey`), а также целевая папка хоста, которую вы планируете использовать в качестве хранилища (например, `c:/data` в Windows или `/data` в Linux), существует и имеет соответствующие права доступа.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
 {{< tab tabNum="1" >}}
 
-``` json
-
+```json
 {
   "Local": [
     {
@@ -29,8 +36,7 @@ kwords: Excel, Office Облако, REST API, Электронная табли�
 
 {{< tab tabNum="2" >}}
 
-``` json
-
+```json
 {
   "Local": [
     {
@@ -39,42 +45,57 @@ kwords: Excel, Office Облако, REST API, Электронная табли�
     }
   ]
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-##  Позиция по умолчанию ##
+## Расположение по умолчанию ##
 
-
-- **окна**
+- **Windows**
 
 ```powershell
-
 c:\app\storageResource.json
-
 ```
 
-- **линукс**
+- **Linux**
 
-```linux
-
+```bash
 /app/storageResource.json
-
-
 ```
 
-##  Пользовательская конфигурация хранилища ##
+## Настраиваемая конфигурация хранилища ##
 
-Необходимо повторно указать профиль хранения для файла образа облака Aspose.Cells, когда клиенту необходимо указать папку хранения.
+Укажите пользовательский профиль хранилища, если необходимо использовать другую папку для данных Aspose.Cells Cloud.
 
-``` powershell
-
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e LicensePrivateKey=yourLicensePrivateKey	 -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.2.0
-
+```bash
+docker run -d \
+  -v c:/data:c:/data \   # монтирование папки хоста в качестве хранилища контейнера
+  -p 47900:5000 \        # проброс порта API
+  -e LicensePublicKey=yourLicensePublicKey \
+  -e LicensePrivateKey=yourLicensePrivateKey \
+  -e storagesCredentialsFilePath=c:/data/storageResource.json \
+  --name asposecellscloud \
+  aspose/cells-cloud:ltsc2019.22.9.0
 ```
 
-**Справочный документ** : 
-  - [Docker Run]( https://docs.docker.com/engine/reference/commandline/run/)
+*Пример для Linux*:
+
+```bash
+docker run -d \
+  -v /data:/data \   # монтирование папки хоста в качестве хранилища контейнера
+  -p 47900:5000 \    # проброс порта API
+  -e LicensePublicKey=yourLicensePublicKey \
+  -e LicensePrivateKey=yourLicensePrivateKey \
+  -e storagesCredentialsFilePath=/data/storageResource.json \
+  --name asposecellscloud \
+  aspose/cells-cloud:ltsc2019.22.9.0
+```
+
+**Справочный документ**:
+
+- [Как запустить контейнер Aspose.Cells Cloud.](https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)
+- [Функции контейнера Docker](https://docs.aspose.cloud/cells/docker/container-features/)
+- [Загрузка образа Docker Aspose.Cells Cloud](https://docs.aspose.cloud/cells/docker/download-image/)
+- [Управление тегами контейнера](https://docs.aspose.cloud/cells/docker/manage-tags/)

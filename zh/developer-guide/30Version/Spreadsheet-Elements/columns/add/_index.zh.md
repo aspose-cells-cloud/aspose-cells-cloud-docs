@@ -1,76 +1,127 @@
-﻿---
-title: 在 Excel 工作表上添加一个空列
-second_title: Documen
-linktitle: 广告
-type: docs
-url: /zh/columns/add/
-aliases: [/add-an-empty-column-in-an-excel-worksheet/,/add-an-empty-column-in-a-worksheet/]
-keywords: Add column on an Excel workshee
-description: Aspose.Cells Cloud REST API 支持在 Excel 工作表上添加列。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 20
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 工作表上添加空列
 ---
-此 REST API 表示插入工作表列。
+title: "向 Excel 工作表添加空列 - Aspose.Cells Cloud API"
+second_title: "文档"
+linktitle: "添加"
+type: docs
+url: /columns/add/
+aliases:
+  - /add-an-empty-column-in-an-excel-worksheet/
+  - /add-an-empty-column-in-a-worksheet/
+keywords: "添加, 列, Excel, API, Aspose.Cells, 云, REST, 插入"
+description: "了解如何使用 Aspose.Cells Cloud REST API 向 Excel 工作表中插入新列。包含请求语法、cURL 示例和 SDK 代码示例。"
+weight: 20
+ArticleTitle: "使用 Aspose.Cells Cloud API 向 Excel 工作表添加空列"
+---
 
-## 重新设置 API
+此 REST API 可向工作表中插入一列或多列。
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}?totalColumns=1
- 
+**前提条件**  
+调用此接口前，请确保已完成以下步骤：
+
+- 获取有效的 OAuth 2.0 访问令牌，并将其包含在 `Authorization` 请求头中。  
+- 将目标工作簿存储在所选存储中（默认为 “Default”），或指定适当的 `folder` 和 `storageName` 参数。  
+- 确认 `sheetName` 参数中提供的工作表名称存在于工作簿中。
+
+## PutInsertWorksheetColumns API
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}?totalColumns=1
 ```
 
-请求参数为：
+### **安全与身份验证**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|列索引|整数|小路|列索引。|
-|列|整数|询问|列。|
-|更新参考|布尔值|询问|真的|
-|文件夹|细绳|询问|工作簿文件夹。|
-|存储名称|细绳|询问|存储名称。|
+Aspose.Cells Cloud API 是安全的，需要使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### 请求参数
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名              | 类型    | 位置   | 描述                                                           |
+| ------------------- | ------- | ------ | -------------------------------------------------------------- |
+| **name**            | string  | 路径   | 工作簿文件名。                                                 |
+| **sheetName**       | string  | 路径   | 工作表名称。                                                   |
+| **columnIndex**     | integer | 路径   | 插入起始列的从零开始的索引。                                   |
+| **totalColumns**    | integer | 查询   | 要插入的列数。                                                 |
+| **updateReference** | boolean | 查询   | 若为 **true**，单元格引用将更新以反映插入操作。               |
+| **folder**          | string  | 查询   | 包含工作簿的文件夹路径。                                       |
+| **storageName**     | string  | 查询   | 存储服务名称。                                                 |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**说明**
+
+- `columnIndex` 必须介于 0 与工作表当前列数之间；超出现有范围插入将自动扩展工作表。  
+- 插入多列（`totalColumns` > 1）会将现有列向右移动。  
+- `updateReference` 标志默认为 `false`；若需更新公式与命名区域，请设置为 `true`。
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns) 定义了一个公开可访问的编程接口，您可直接在 Web 浏览器中进行 REST 交互。
+
+您可使用 cURL 命令行工具调用 Aspose.Cells Web 服务。以下示例展示了一个完整的请求，包括身份验证与正确的路径参数。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns?startcolumn=1&totalColumns=1&updateReference=true" -H "accept: application/json"
-
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/1?totalColumns=1&updateReference=true" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+**响应码**
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| 状态码 | 描述                                 |
+|--------|--------------------------------------|
+| 200    | 列插入成功。                         |
+| 400    | 请求错误 — 缺少或无效的参数。        |
+| 401    | 未授权 — 令牌无效或缺失。            |
+| 404    | 工作簿或工作表未找到。               |
+| 500    | 服务器内部错误。                     |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+**示例错误响应**
+
+```json
+// 400 请求错误 — 缺少或无效的参数
+{
+  "Code": 400,
+  "Message": "无效参数：totalColumns 必须为正整数。"
+}
+
+// 401 未授权 — 令牌无效或缺失
+{
+  "Code": 401,
+  "Message": "身份验证失败。访问令牌缺失或无效。"
+}
+
+// 404 未找到 — 工作簿或工作表不存在
+{
+  "Code": 404,
+  "Message": "未找到工作簿 'test.xlsx'。"
+}
+
+// 500 服务器内部错误
+{
+  "Code": 500,
+  "Message": "服务器上发生意外错误。"
+}
+```
+
+## 云 SDK 家族
+
+使用 SDK 是最快捷的开发方式。SDK 处理底层细节，让您专注于项目逻辑。请查看 <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub 仓库</a> 获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +174,4 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cel
 {{< /tab >}}
 
 {{< /tabs >}}
+---

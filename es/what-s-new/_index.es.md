@@ -1,35 +1,36 @@
-﻿---
+---
 title: Novedades en Aspose.Cells Cloud
-second_title: Documen
-linktitle: ¿Qué hay?
+second_title: "Documento"
+linktitle: "Novedades"
 type: docs
 weight: 9
-url: /es/new-features/
+url: /new-features/
 aliases: [/what-s-new-in-aspose-cells-cloud/]
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: Esta página describe las nuevas funciones más interesantes de Aspose.Cells Cloud introducidas en versiones recientes
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Novedades en Aspose.Cells Nube
+keywords: "Aspose.Cells Cloud, nuevas funcionalidades, Microsoft Office Excel, hojas de cálculo de OpenOffice, CSV, PDF, API REST, SDK, hoja de cálculo, nube"
+description: "Descubre las últimas funcionalidades, mejoras y correcciones de errores en Aspose.Cells Cloud, incluyendo actualizaciones para Excel, OpenOffice, CSV y el manejo de PDF."
+ArticleTitle: "Novedades en Aspose.Cells Cloud – Últimas funcionalidades y actualizaciones"
 ---
-# Lanzamiento más importante
 
-- **La última versión de Aspose.Cells Cloud 4.0 ya está disponible. Esta versión se ha rediseñado para ser más ágil y eficiente, garantizando una experiencia estable y confiable.**
-- **El último SDK consolida todas las API de Aspose.Cells Cloud 3.0 y 4.0, agilizando el proceso de desarrollo y haciéndolo más práctico y conveniente.**
+# Versión más importante
 
-# Último lanzamiento
+- **La última versión de Aspose.Cells Cloud 4.0 ya está disponible. Esta versión ha sido rediseñada para ser más simplificada y eficiente, garantizando una experiencia estable y fiable.**
+- **El último SDK integra todas las API de Aspose.Cells Cloud 3.0 y 4.0, simplificando el proceso de desarrollo y haciendo que sea más práctico y conveniente.**
 
-|**IDENTIFICACIÓN**|**Resumen**|**Categoría**|
-|:- |:- |:- |
-|56632 | Actualice el nombre del parámetro de datos del formulario para la especificación del código de Cells Cloud en los servicios de Cells Cloud 3.0.| Mejora|
-|56793 | Solucione el problema de StringEnumConverter en Aspose.Cells Cloud Services.| Bicho|
-|56866 | Soporte para recortar contenido de hojas de cálculo en Cells Cloud 4.0.| Mejora|
-|56867 | Admite contenido de rango de hoja de cálculo de recorte en Cells Cloud 4.0.| Mejora|
-|56919 | Se produjo una excepción al guardar la hoja de cálculo como un archivo de formato diferente en la nube de celdas.| Bicho|
-|56922 | Al exportar el rango/tabla como un archivo HTML, se pierden datos.| Bicho|
-|56936 | Soluciona algunos problemas sobre errores ortográficos.| Bicho|
+# Última versión
 
-# Lanzamientos históricos
+La tabla siguiente ofrece un resumen conciso de los elementos más recientes de la versión de Aspose.Cells Cloud.
 
-- [Lanzamiento 2025](/cells/es/new-features/2025/)
-- [Lanzamiento 2024](/cells/es/new-features/2024/)
-- [Lanzamiento 2023](/cells/es/new-features/2023/)
-- [Lanzamiento 2022](/cells/es/new-features/2022/)
+| **ID** | **Resumen**                                                     | **Categoría** |
+|:-----:|:---------------------------------------------------------------:|:-------------:|
+| 60858 | Implementa la API web de transposición de datos en Aspose Cells Cloud. | Nueva funcionalidad |
+| 60912 | Implementa la API web de despivotado de datos en Aspose Cells Cloud.  | Nueva funcionalidad |
+
+
+# Versiones anteriores
+
+- [Lanzamiento de 2026](/cells/new-features/2026/)
+- [Lanzamiento de 2025](/cells/new-features/2025/)
+- [Lanzamiento de 2024](/cells/new-features/2024/)
+- [Lanzamiento de 2023](/cells/new-features/2023/)
+- [Lanzamiento de 2022](/cells/new-features/2022/)
+---

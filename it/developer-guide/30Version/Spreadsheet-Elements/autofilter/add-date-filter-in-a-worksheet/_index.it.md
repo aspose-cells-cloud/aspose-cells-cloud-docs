@@ -1,84 +1,116 @@
-﻿---
-title: Aggiungi filtro data in un foglio di lavoro Excel
-second_title: Documen
-linktitle: Aggiungi filtro data
+---
+title: "Aggiungi filtro data a un foglio di calcolo Excel"
+second_title: "Documento"
+linktitle: "Aggiungi filtro data"
 type: docs
 url: /it/autofilter/add-date-filter/
-aliases: [/add-date-filter-in-a-worksheet/,/autofilter/add-a-date-filter/]
-keywords: Adds a date filter on an Excel worksheet
-description: Il Cloud Aspose.Cells API supporta l'aggiunta di un filtro data su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases:
+  - /add-date-filter-in-a-worksheet/
+  - /autofilter/add-a-date-filter/
+description: "Scopri come aggiungere un filtro data a un foglio di calcolo Excel utilizzando l'API REST Aspose.Cells Cloud (v3.0). Include esempio cURL, frammenti di codice SDK (C#, Java, Python, ecc.), parametri e gestione degli errori."
 weight: 65
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Aggiungi filtro data in un foglio di lavoro Excel
+ArticleTitle: "Aggiungi filtro data a un foglio di calcolo Excel | Aspose.Cells Cloud API"
+keywords: "Aspose.Cells, filtro data Excel, API AutoFilter, API REST, SDK cloud, cURL, automazione fogli di calcolo"
 ---
-Questo REST API indica di aggiungere un `date filter` su un foglio di lavoro Excel.
 
-## RSET API
+Questa API REST aggiunge un **filtro data** a un foglio di calcolo Excel.
 
-```bash
+**Prerequisiti:** È necessario disporre di un token JWT valido e il workbook di destinazione deve già esistere nella posizione di archiviazione specificata. La richiesta non richiede un corpo JSON.
 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
+## API PutWorksheetDateFilter
 
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| Sentiero| Il nome della cartella di lavoro.|
-| Nome foglio| corda| Sentiero| Il nome del foglio di lavoro.|
-|allineare|corda| Domanda||
-|fieldIndex|intero| Domanda||
-|Tipo di raggruppamento data/ora|corda| Domanda| Giorno/Ora/Minuto/Mese/Secondo/Anno|
-|anno|intero| Domanda||
-|mese|intero| Domanda||
-|giorno|intero| Domanda||
-|ora|intero| Domanda||
-|minuto|intero| Domanda||
-|secondo|intero| Domanda||
-|matchBlanks|corda| Domanda|vero/falso|
-|aggiornare|corda| Domanda|vero/falso|
-|cartella|corda| Domanda|Cartella della cartella di lavoro originale.|
-|Nome di archiviazione|corda| Domanda|Nome dell'archivio.|
+Le API REST di Aspose.Cells Cloud sono sicure e richiedono <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">l'autenticazione basata su token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### Parametri della richiesta
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Nome parametro           | Tipo    | Posizione | Descrizione                                                                                                                                                     |
+| ------------------------ | ------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**                 | string  | Path      | Nome del workbook.                                                                                                                                              |
+| **sheetName**            | string  | Path      | Nome del foglio di calcolo.                                                                                                                                     |
+| **range**                | string  | Query     | Intervallo Excel a cui viene applicato il filtro (ad es. `A1:B1`).                                                                                                     |
+| **fieldIndex**           | integer | Query     | Indice in base zero della colonna da filtrare.                                                                                                                       |
+| **dateTimeGroupingType** | string  | Query     | Tipo di raggruppamento per il filtro data/ora. I valori ammessi sono `Day`, `Hour`, `Minute`, `Month`, `Second`, `Year`. I valori sono case-sensitive; il valore predefinito è `Day`. |
+| **year**                 | integer | Query     | Componente anno del valore filtro.                                                                                                                             |
+| **month**                | integer | Query     | Componente mese del valore filtro.                                                                                                                            |
+| **day**                  | integer | Query     | Componente giorno del valore filtro.                                                                                                                              |
+| **hour**                 | integer | Query     | Componente ora del valore filtro.                                                                                                                             |
+| **minute**               | integer | Query     | Componente minuto del valore filtro.                                                                                                                           |
+| **second**               | integer | Query     | Componente secondo del valore filtro.                                                                                                                           |
+| **matchBlanks**          | boolean | Query     | Includi celle vuote (`true` o `false`).                                                                                                                        |
+| **refresh**              | boolean | Query     | Aggiorna il filtro dopo l'applicazione (`true` o `false`).                                                                                                          |
+| **folder**               | string  | Query     | Percorso della cartella del workbook originale.                                                                                                                           |
+| **storageName**          | string  | Query     | Nome del servizio di archiviazione.                                                                                                                                    |
+
+*L'richiesta PUT non richiede un corpo di richiesta; tutti i parametri vengono forniti tramite stringa di query.*
+
+### **Risposta**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Codici di stato HTTP**
+
+| Codice | Significato                     | Descrizione                                      |
+|--------|----------------------------------|--------------------------------------------------|
+| 200    | OK                               | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida             | Parametri mancanti o non validi (ad es. tipo di file non supportato). |
+| 401    | Non autorizzato                  | Token JWT non valido o mancante. |
+| 413    | Payload troppo grande            | Il file caricato supera il limite di dimensione. |
+| 500    | Errore interno del server        | Errore imprevisto sul server. |
+
+## Come utilizzare l'API PutWorksheetDateFilter con gli SDK
+
+### Specifica dell'API PutWorksheetDateFilter
+
+La <a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter" rel="noopener noreferrer">Specifica OpenAPI</a> definisce un'interfaccia di programmazione pubblicamente accessibile e consente di eseguire interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando **cURL** per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare una chiamata all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?range=A1:B1&fieldIndex=0&dateTimeGroupingType=Year&year=1920&refresh=true" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?range=A1:B1&fieldIndex=0&dateTimeGroupingType=Year&year=1920&refresh=true" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+### Utilizzare gli SDK di Aspose.Cells Cloud
+
+Utilizzare un SDK è il modo più rapido per sviluppare. Un SDK gestisce i dettagli a basso livello in modo che tu possa concentrarti sulle attività del tuo progetto. Consulta il <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">repository GitHub</a> per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -108,7 +140,7 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDateFilter.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDateFilter.ts" >}}
 
 {{< /tab >}}
 

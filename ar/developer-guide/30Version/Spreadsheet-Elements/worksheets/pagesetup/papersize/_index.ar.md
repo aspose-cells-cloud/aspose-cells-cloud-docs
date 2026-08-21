@@ -1,134 +1,174 @@
-﻿---
-title: حجم الورق
-second_title: Documen
-linktitle: حجم الورق
+---
+title: "Aspose.Cells Cloud – القائمة الكاملة لثوابت أحجام الورق"
+second_title: "مستند"
+linktitle: "حجم الورق"
 type: docs
 url: /ar/paper-size/
-keywords: Paper Size
-description: يدعم Cloud REST Aspose.Cells ضبط حجم الورق. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
+keywords: "حجم الورق، Aspose.Cells Cloud، REST API، جدول بيانات، A4، Letter، ISO، JIS، PRC"
+description: "قائمة كاملة بثوابت أحجام الورق المدعومة من واجهة Aspose.Cells Cloud REST API، مع أبعادها وأمثلة على الاستخدام لإعداد أحجام مخصصة في جداول البيانات."
 weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حجم الورق
+ArticleTitle: "ثوابت حجم الورق في Aspose.Cells Cloud – مرجع كامل"
 ---
-## **قيم حجم الورق**
 
-| اسم| وصف|
-|:- |:- |
-| رسالة ورقية| حرف (8-1/2 بوصة × 11 بوصة)|
-| ورق رسالة صغير| حرف صغير (8-1/2 بوصة × 11 بوصة)|
-| صحيفة ورقية| صحيفة شعبية (11 بوصة × 17 بوصة)|
-| PaperLedger| دفتر الأستاذ (17 بوصة × 11 بوصة)|
-| ورق قانوني| قانوني (8-1/2 بوصة × 14 بوصة)|
-| بيان ورقي| بيان (5-1/2 بوصة × 8-1/2 بوصة)|
-| ورق تنفيذي| تنفيذي (7-1/4 بوصة × 10-1/2 بوصة)|
-| ورق A3| A3 (297 مم × 420 مم)|
-| ورق A4| A4 (210 مم × 297 مم)|
-| ورق A4 صغير| A4 صغير (210 مم × 297 مم)|
-| ورق A5| A5 (148 مم × 210 مم)|
-| ورق B4| JIS B4 (257 مم × 364 مم)|
-| ورقة B5|JIS B5 (182 مم × 257 مم)|
-| ورق فوليو| مجلد (8-1/2 بوصة × 13 بوصة)|
-| ورق كوارتو| ربع (215 مم × 275 مم)|
-| ورق 10x14| 10 بوصة × 14 بوصة|
-| ورق 11 × 17| 11 بوصة × 17 بوصة|
-| ورقة ملاحظة| ملاحظة (8-1/2 بوصة × 111 بوصة)|
-| مظروف ورقي 9| الظرف رقم 9 (3-7/8 بوصة 1 × 8-7/8 بوصة)|
-| مظروف ورقي 10| الظرف رقم 10 (4-1/8 بوصة × 9-1/2 بوصة)|
-| مظروف ورقي 11| الظرف رقم 11 (4-1/2 بوصة × 10-3/8 بوصة)|
-| مظروف ورقي 12| الظرف رقم 12 (4-1/2 بوصة × 11 بوصة)|
-| مظروف ورقي 14| الظرف رقم 14 (5 بوصة × 11-1/2 بوصة)|
-| ورقة CSheet| ورقة مقاس C|
-| ورقة دي شيت| ورقة مقاس D|
-| ورقة ESheet| ورقة مقاس E|
-| مغلف ورقيDL| ظرف DL (110 مم × 220 مم)|
-| مظروف ورقي C5| الظرف C5 (162 مم × 229 مم)|
-| مظروف ورقي C3| الظرف C3 (324 مم × 458 مم)|
-| مظروف ورقي C4| الظرف C4 (229 مم × 324 مم)|
-| مظروف ورقي C6| الظرف C6 (114 مم × 162 مم)|
-|مظروف ورقي C65| الظرف C65 (114 مم × 229 مم)|
-| مظروف ورقي B4| الظرف B4 (250 مم × 353 مم)|
-| مظروف ورقي B5| الظرف B5 (176 مم × 250 مم)|
-| مظروف ورقي B6| الظرف B6 (176 مم × 125 مم)|
-| PaperEnvelopeItaly| ظرف إيطاليا (110 مم × 230 مم)|
-| PaperEnvelopeMonarch| مظروف ملكي (3-7/8 بوصة × 7-1/2 بوصة)|
-| ورق مغلف شخصي| ظرف (3-5/8 بوصة × 6-1/2 بوصة)|
-| PaperFanfoldUS| مراوح قابلة للطي قياسية أمريكية (14-7/8 بوصة × 11 بوصة)|
-| PaperFanfoldStdGerman| مراوح قابلة للطي قياسية ألمانية (8-1/2 بوصة × 12 بوصة)|
-| PaperFanfoldLegalGerman| مجلّة قانونية ألمانية (8-1/2 بوصة × 13 بوصة)|
-| ورق ISOB4| B4 (ISO) 250 × 353 مم|
-| بطاقة بريدية ورقية يابانية| بطاقة بريدية يابانية (100 مم × 148 مم)|
-| ورق 9x11|9? × 11?0 |
-| ورق 10x11|10? × 11? |
-| ورق 15 × 11|15? × 11? |
-| دعوة مغلف ورقي| دعوة مغلفة (220 مم × 220 مم)|
-| PaperLetterExtra| US Letter Extra 9 \275 × 12 بوصة|
-| PaperLegalExtra|US Legal Extra 9 \275 × 15 بوصة|
-| PaperTabloidExtra| صحيفة التابلويد الأمريكية الإضافية 11.69 × 18 بوصة|
-| ورق A4 إضافي| A4 إضافي 9.27 × 12.69 بوصة|
-| ورق رسالة عرضية| حرف عرضي 8 \275 × 11 بوصة|
-| ورق A4 عرضي| A4 عرضي 210 × 297 مم|
-| رسالة ورقية إضافية| حرف إضافي عرضي 9\275 × 12 بوصة|
-| PaperSuperA| SuperA/SuperA/A4 227 × 356 مم|
-| ورق سوبر بي| SuperB/SuperB/A3 305 × 487 مم|
-| PaperLetterPlus| US Letter Plus 8.5 × 12.69 بوصة|
-| ورق A4 بلس| A4 بلس 210 × 330 مم|
-| ورق A5 عرضي| A5 عرضي 148 × 210 مم|
-| ورق JISB5 المستعرض| B5 (JIS) عرضي 182 × 257 مم|
-| ورق A3 إضافي| A3 إضافي 322 × 445 مم|
-| ورق A5 إضافي| A5 إضافي 174 × 235 مم|
-| ورق ISOB5Extra| B5 (ISO) إضافي 201 × 276 مم|
-| ورق A2| A2 420 × 594 مم|
-| ورق A3 عرضي| A3 عرضي 297 × 420 مم|
-| ورق A3 إضافي عرضي|A3 عرضي إضافي 322 × 445 مم|
-| ورق ياباني مزدوج| بطاقة بريدية يابانية مزدوجة 200 × 148 مم|
-| ورق A6| A6 105 × 148 مم|
-| ورق ياباني مظروف كاكو2| الظرف الياباني كاكو #2|
-| ورق ياباني مظروف كاكو 3| الظرف الياباني كاكو #3|
-| ورق ياباني مغلف Chou3| المغلف الياباني تشو #3|
-| ورق ياباني مغلف Chou4| مظروف ياباني تشو رقم 4|
-| تم تدوير الرسالة الورقية| 11 بوصة × 8.5 بوصة|
-| ورقة A3 مدورة| 420 مم × 297 مم|
-| ورق A4 مُدوّر| 297 مم × 210 مم|
-| ورق A5 مُدوّر| 210 مم × 148 مم|
-| PaperJISB4Rotated| B4 (JIS) مدور 364 × 257 مم|
-| PaperJISB5Rotated| B5 (JIS) مدور 257 × 182 مم|
-| ورق، بطاقة بريدية يابانية، مُدوّرة| بطاقة بريدية يابانية مستديرة 148 × 100 مم|
-| ورق ياباني مزدوج بطاقة بريدية مُدوّرة| بطاقة بريدية يابانية مزدوجة مقاس 148 × 200 مم|
-| ورقة A6 مُدوّرة| A6 مُستدير 148 × 105 مم|
-| ورق ياباني ظرف Kaku2 تم تدويره|الظرف الياباني كاكو رقم 2 مُدار|
-| ورق ياباني ظرف Kaku3 تم تدويره| الظرف الياباني كاكو رقم 3 مُدار|
-| ورق ياباني ظرف Chou3 تم تدويره| مظروف ياباني تشو رقم 3 مُدار|
-| ورق ياباني ظرف Chou4Rotated| مظروف ياباني تشو رقم 4 مُدار|
-| ورق JISB6| B6 (JIS) 128 × 182 مم|
-| PaperJISB6Rotated| B6 (JIS) مدور 182 × 128 مم|
-| ورق 12 × 11| 12 × 11 بوصة|
-| ورق ياباني مغلف You4| الظرف الياباني أنت #4|
-| ورق ياباني ظرف You4 مستدير| الظرف الياباني أنت #4 تم تدويره|
-| ورق PRC16K| جمهورية الصين الشعبية 16K 146 × 215 مم|
-| ورق PRC32K| PRC 32K 97 × 151 مم|
-| PaperPRCEnvelope1| مظروف جمهورية الصين الشعبية رقم 1 102 × 165 مم|
-| PaperPRCEnvelope2| مظروف جمهورية الصين الشعبية رقم 2 102 × 176 مم|
-| PaperPRCEnvelope3| مظروف جمهورية الصين الشعبية رقم 3 125 × 176 مم|
-| PaperPRCEnvelope4| مظروف جمهورية الصين الشعبية رقم 4 110 × 208 مم|
-| PaperPRCEnvelope5| مظروف جمهورية الصين الشعبية رقم 5 110 × 220 مم|
-| PaperPRCEnvelope6|مظروف جمهورية الصين الشعبية رقم 6 120 × 230 مم|
-| PaperPRCEnvelope7| مظروف جمهورية الصين الشعبية رقم 7 160 × 230 مم|
-| PaperPRCEnvelope8| مظروف جمهورية الصين الشعبية رقم 8 120 × 309 مم|
-| PaperPRCEnvelope9| مظروف جمهورية الصين الشعبية رقم 9 229 × 324 مم|
-| PaperPRCEnvelope10| مظروف جمهورية الصين الشعبية رقم 10، 324 × 458 مم|
-| ورق PRC16K مُدار| PRC 16K تم تدويرها|
-| ورق PRC32K مُدار| PRC 32K تم تدويرها|
-| PaperPRCBig32KRotated| PRC 32K (كبير) تم تدويره|
-| PaperPRCEnvelope1Rotated| مظروف جمهورية الصين الشعبية رقم 1 مدور 165 × 102 مم|
-| PaperPRCEnvelope2Rotated| مظروف جمهورية الصين الشعبية رقم 2 مدور 176 × 102 مم|
-| PaperPRCEnvelope3Rotated| مظروف جمهورية الصين الشعبية رقم 3 مدور 176 × 125 مم|
-| PaperPRCEnvelope4Rotated| مظروف جمهورية الصين الشعبية رقم 4 مدور 208 × 110 مم|
-| PaperPRCEnvelope5Rotated| مظروف جمهورية الصين الشعبية رقم 5 مدور 220 × 110 مم|
-| PaperPRCEnvelope6Rotated| مظروف جمهورية الصين الشعبية رقم 6 مدور 230 × 120 مم|
-| PaperPRCEnvelope7Rotated| مظروف جمهورية الصين الشعبية رقم 7 مدور 230 × 160 مم|
-| PaperPRCEnvelope8Rotated|مظروف جمهورية الصين الشعبية رقم 8 مدور 309 × 120 مم|
-| PaperPRCEnvelope9Rotated| مظروف جمهورية الصين الشعبية رقم 9 مدور 324 × 229 مم|
-| PaperPRCEnvelope10Rotated| مظروف جمهورية الصين الشعبية رقم 10 مدور 458 × 324 مم|
-| ورقة B3| المعتاد B3 (13.9 × 19.7 بوصة)|
-| بطاقة عمل ورقية| بطاقة عمل (90 مم × 55 مم)|
-| ورق حراري| حراري (3 × 11 بوصة)|
-| مخصص| يمثل حجم الورق المخصص.|
+## **قيم أحجام الورق**
+
+يستخدم المطورون هذه الثوابت مع واجهة `SetPageSetup` (أو الطريقة المكافئة في SDK) لتحديد أبعاد الصفحة لورقة عمل. يسرد الجدول التالي كل قيمة لحجم الورق المدعومة مع أبعادها المادية.
+
+<caption>ثوابت أحجام الورق المدعومة في Aspose.Cells Cloud</caption>
+
+| الاسم                              | الوصف                                              |
+| ---------------------------------- | -------------------------------------------------- |
+| PaperLetter                        | Letter (8½ بوصة × 11 بوصة)                         |
+| PaperLetterSmall                   | Letter Small (8½ بوصة × 11 بوصة) – نفسه مثل Letter |
+| PaperTabloid                       | Tabloid (11 بوصة × 17 بوصة)                        |
+| PaperLedger                        | Ledger (17 بوصة × 11 بوصة)                         |
+| PaperLegal                         | Legal (8½ بوصة × 14 بوصة)                          |
+| PaperStatement                     | Statement (5½ بوصة × 8½ بوصة)                       |
+| PaperExecutive                     | Executive (7¼ بوصة × 10½ بوصة)                      |
+| PaperA3                            | A3 (297 ملم × 420 ملم)                             |
+| PaperA4                            | A4 (210 ملم × 297 ملم)                             |
+| PaperA4Small                       | A4 Small (210 ملم × 297 ملم) – نفسه مثل A4         |
+| PaperA5                            | A5 (148 ملم × 210 ملم)                             |
+| PaperB4                            | JIS B4 (257 ملم × 364 ملم)                         |
+| PaperB5                            | JIS B5 (182 ملم × 257 ملم)                         |
+| PaperFolio                         | Folio (8½ بوصة × 13 بوصة)                          |
+| PaperQuarto                        | Quarto (215 ملم × 275 ملم)                         |
+| Paper10x14                         | 10 بوصة × 14 بوصة                                 |
+| Paper11x17                         | 11 بوصة × 17 بوصة                                 |
+| PaperNote                          | Note (8½ بوصة × 11 بوصة)                           |
+| PaperEnvelope9                     | Envelope #9 (3 7/8 بوصة × 8 7/8 بوصة)              |
+| PaperEnvelope10                    | Envelope #10 (4 1/8 بوصة × 9½ بوصة)                |
+| PaperEnvelope11                    | Envelope #11 (4½ بوصة × 10 3/8 بوصة)               |
+| PaperEnvelope12                    | Envelope #12 (4½ بوصة × 11 بوصة)                   |
+| PaperEnvelope14                    | Envelope #14 (5 بوصة × 11½ بوصة)                   |
+| PaperCSheet                        | ورقة مقاس C                                        |
+| PaperDSheet                        | ورقة مقاس D                                        |
+| PaperESheet                        | ورقة مقاس E                                        |
+| PaperEnvelopeDL                    | Envelope DL (110 ملم × 220 ملم)                    |
+| PaperEnvelopeC5                    | Envelope C5 (162 ملم × 229 ملم)                    |
+| PaperEnvelopeC3                    | Envelope C3 (324 ملم × 458 ملم)                    |
+| PaperEnvelopeC4                    | Envelope C4 (229 ملم × 324 ملم)                    |
+| PaperEnvelopeC6                    | Envelope C6 (114 ملم × 162 ملم)                    |
+| PaperEnvelopeC65                   | Envelope C65 (114 ملم × 229 ملم)                   |
+| PaperEnvelopeB4                    | Envelope B4 (250 ملم × 353 ملم)                    |
+| PaperEnvelopeB5                    | Envelope B5 (176 ملم × 250 ملم)                    |
+| PaperEnvelopeB6                    | Envelope B6 (176 ملم × 125 ملم)                    |
+| PaperEnvelopeItaly                 | Envelope Italy (110 ملم × 230 ملم)                 |
+| PaperEnvelopeMonarch               | Envelope Monarch (3 7/8 بوصة × 7 ½ بوصة)           |
+| PaperEnvelopePersonal              | Envelope (3 5/8 بوصة × 6 ½ بوصة)                   |
+| PaperFanfoldUS                     | U.S. Standard Fanfold (14 7/8 بوصة × 11 بوصة)      |
+| PaperFanfoldStdGerman              | German Standard Fanfold (8½ بوصة × 12 بوصة)        |
+| PaperFanfoldLegalGerman            | German Legal Fanfold (8½ بوصة × 13 بوصة)           |
+| PaperISOB4                         | B4 (ISO) 250 ملم × 353 ملم                         |
+| PaperJapanesePostcard              | بطاقة بريدية يابانية (100 ملم × 148 ملم)            |
+| Paper9x11                          | 9 بوصة × 11 بوصة                                 |
+| Paper10x11                         | 10 بوصة × 11 بوصة                                 |
+| Paper15x11                         | 15 بوصة × 11 بوصة                                 |
+| PaperEnvelopeInvite                | Envelope Invite (220 ملم × 220 ملم)                |
+| PaperLetterExtra                   | US Letter Extra (9¼ بوصة × 12 بوصة)                |
+| PaperLegalExtra                    | US Legal Extra (9¼ بوصة × 15 بوصة)                 |
+| PaperTabloidExtra                  | US Tabloid Extra (11.69 بوصة × 18 بوصة)            |
+| PaperA4Extra                       | A4 Extra (9.27 بوصة × 12.69 بوصة)                  |
+| PaperLetterTransverse              | Letter Transverse (8¼ بوصة × 11 بوصة)              |
+| PaperA4Transverse                  | A4 Transverse (210 ملم × 297 ملم)                  |
+| PaperLetterExtraTransverse         | Letter Extra Transverse (9¼ بوصة × 12 بوصة)        |
+| PaperSuperA                        | SuperA / SuperA / A4 (227 ملم × 356 ملم)           |
+| PaperSuperB                        | SuperB / SuperB / A3 (305 ملم × 487 ملم)           |
+| PaperLetterPlus                    | US Letter Plus (8.5 بوصة × 12.69 بوصة)             |
+| PaperA4Plus                        | A4 Plus (210 ملم × 330 ملم)                        |
+| PaperA5Transverse                  | A5 Transverse (148 ملم × 210 ملم)                  |
+| PaperJISB5Transverse               | B5 (JIS) Transverse (182 ملم × 257 ملم)            |
+| PaperA3Extra                       | A3 Extra (322 ملم × 445 ملم)                       |
+| PaperA5Extra                       | A5 Extra (174 ملم × 235 ملم)                       |
+| PaperISOB5Extra                    | B5 (ISO) Extra (201 ملم × 276 ملم)                 |
+| PaperA2                            | A2 (420 ملم × 594 ملم)                             |
+| PaperA3Transverse                  | A3 Transverse (297 ملم × 420 ملم)                  |
+| PaperA3ExtraTransverse             | A3 Extra Transverse (322 ملم × 445 ملم)            |
+| PaperJapaneseDoublePostcard        | بطاقة بريدية يابانية مزدوجة (200 ملم × 148 ملم)     |
+| PaperA6                            | A6 (105 ملم × 148 ملم)                             |
+| PaperJapaneseEnvelopeKaku2         | ظرف ياباني Kaku #2 (100 ملم × 148 ملم)             |
+| PaperJapaneseEnvelopeKaku3         | ظرف ياباني Kaku #3 (120 ملم × 235 ملم)             |
+| PaperJapaneseEnvelopeChou3         | ظرف ياباني Chou #3 (120 ملم × 235 ملم)             |
+| PaperJapaneseEnvelopeChou4         | ظرف ياباني Chou #4 (120 ملم × 235 ملم)             |
+| PaperLetterRotated                 | 11 بوصة × 8.5 بوصة                                |
+| PaperA3Rotated                     | 420 ملم × 297 ملم                                 |
+| PaperA4Rotated                     | 297 ملم × 210 ملم                                 |
+| PaperA5Rotated                     | 210 ملم × 148 ملم                                 |
+| PaperJISB4Rotated                  | B4 (JIS) Rotated (364 ملم × 257 ملم)               |
+| PaperJISB5Rotated                  | B5 (JIS) Rotated (257 ملم × 182 ملم)               |
+| PaperJapanesePostcardRotated       | بطاقة بريدية يابانية مُدوَّرة (148 ملم × 100 ملم)   |
+| PaperJapaneseDoublePostcardRotated | بطاقة بريدية يابانية مزدوجة مُدوَّرة (148 ملم × 200 ملم) |
+| PaperA6Rotated                     | A6 Rotated (148 ملم × 105 ملم)                     |
+| PaperJapaneseEnvelopeKaku2Rotated  | ظرف ياباني Kaku #2 مُدوَّر (148 ملم × 100 ملم)     |
+| PaperJapaneseEnvelopeKaku3Rotated  | ظرف ياباني Kaku #3 مُدوَّر (235 ملم × 120 ملم)     |
+| PaperJapaneseEnvelopeChou3Rotated  | ظرف ياباني Chou #3 مُدوَّر (235 ملم × 120 ملم)     |
+| PaperJapaneseEnvelopeChou4Rotated  | ظرف ياباني Chou #4 مُدوَّر (235 ملم × 120 ملم)     |
+| PaperJISB6                         | B6 (JIS) 128 ملم × 182 ملم                         |
+| PaperJISB6Rotated                  | B6 (JIS) Rotated (182 ملم × 128 ملم)               |
+| Paper12x11                         | 12 بوصة × 11 بوصة                                 |
+| PaperJapaneseEnvelopeYou4          | ظرف ياباني You #4 (100 ملم × 148 ملم)             |
+| PaperJapaneseEnvelopeYou4Rotated   | ظرف ياباني You #4 مُدوَّر (148 ملم × 100 ملم)      |
+| PaperPRC16K                        | PRC 16K (146 ملم × 215 ملم)                        |
+| PaperPRC32K                        | PRC 32K (97 ملم × 151 ملم)                         |
+| PaperPRCEnvelope1                  | PRC Envelope #1 (102 ملم × 165 ملم)                |
+| PaperPRCEnvelope2                  | PRC Envelope #2 (102 ملم × 176 ملم)                |
+| PaperPRCEnvelope3                  | PRC Envelope #3 (125 ملم × 176 ملم)                |
+| PaperPRCEnvelope4                  | PRC Envelope #4 (110 ملم × 208 ملم)                |
+| PaperPRCEnvelope5                  | PRC Envelope #5 (110 ملم × 220 ملم)                |
+| PaperPRCEnvelope6                  | PRC Envelope #6 (120 ملم × 230 ملم)                |
+| PaperPRCEnvelope7                  | PRC Envelope #7 (160 ملم × 230 ملم)                |
+| PaperPRCEnvelope8                  | PRC Envelope #8 (120 ملم × 309 ملم)                |
+| PaperPRCEnvelope9                  | PRC Envelope #9 (229 ملم × 324 ملم)                |
+| PaperPRCEnvelope10                 | PRC Envelope #10 (324 ملم × 458 ملم)               |
+| PaperPRC16KRotated                 | PRC 16K مُدوَّر                                    |
+| PaperPRC32KRotated                 | PRC 32K مُدوَّر                                    |
+| PaperPRCBig32KRotated              | PRC 32K (كبير) مُدوَّر                             |
+| PaperPRCEnvelope1Rotated           | PRC Envelope #1 مُدوَّر (165 ملم × 102 ملم)        |
+| PaperPRCEnvelope2Rotated           | PRC Envelope #2 مُدوَّر (176 ملم × 102 ملم)        |
+| PaperPRCEnvelope3Rotated           | PRC Envelope #3 مُدوَّر (176 ملم × 125 ملم)        |
+| PaperPRCEnvelope4Rotated           | PRC Envelope #4 مُدوَّر (208 ملم × 110 ملم)        |
+| PaperPRCEnvelope5Rotated           | PRC Envelope #5 مُدوَّر (220 ملم × 110 ملم)        |
+| PaperPRCEnvelope6Rotated           | PRC Envelope #6 مُدوَّر (230 ملم × 120 ملم)        |
+| PaperPRCEnvelope7Rotated           | PRC Envelope #7 مُدوَّر (230 ملم × 160 ملم)        |
+| PaperPRCEnvelope8Rotated           | PRC Envelope #8 مُدوَّر (309 ملم × 120 ملم)        |
+| PaperPRCEnvelope9Rotated           | PRC Envelope #9 مُدوَّر (324 ملم × 229 ملم)        |
+| PaperPRCEnvelope10Rotated          | PRC Envelope #10 مُدوَّر (458 ملم × 324 ملم)       |
+| PaperB3                            | Usual B3 (13.9 بوصة × 19.7 بوصة)                   |
+| PaperBusinessCard                  | بطاقة عمل (90 ملم × 55 ملم)                        |
+| PaperThermal                       | حراري (3 بوصة × 11 بوصة)                           |
+| Custom                             | يمثل حجم ورقة مخصص. استخدم القيمة المعدودة `Custom` مع قيم عرض وارتفاع صريحة بالنقاط. |
+
+**المتطلبات المسبقة**  
+يجب الحصول على رمز وصول نشط من Aspose Cloud يحتوي على الأذونات المناسبة وإصدار الواجهة (`v3.0`) قبل استدعاء نقطة النهاية.
+
+### كيفية ضبط حجم الورق باستخدام واجهة Aspose.Cells Cloud REST API
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/Workbook/worksheets/Sheet1/pageSetup" \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Content-Type: application/json" \
+  -d '{"PaperSize":"PaperA4"}'
+```
+
+**تفاصيل الطلب**  
+- **الطريقة:** `PUT`  
+- **نقطة النهاية:** `/cells/Workbook/worksheets/{sheetName}/pageSetup`  
+- **معلمات المسار:** `sheetName` – اسم ورقة العمل (سلسلة نصية، مطلوب).  
+- **جسم الطلب:** كائن JSON يحتوي على الخاصية `PaperSize`. يجب أن تكون القيمة واحدة من الثوابت المذكورة في الجدول أعلاه، مثل `"PaperA4"`.
+
+**الاستجابات**  
+- `200 OK` – تم تحديث إعدادات الصفحة بنجاح.  
+- `400 Bad Request` – قيمة `PaperSize` غير صالحة.  
+- `401 Unauthorized` – فشل المصادقة أو غياب الرمز.  
+- `404 Not Found` – ورقة العمل المحددة غير موجودة.
+
+**مثال باستخدام SDK (C#)**  
+```csharp
+var api = new CellsApi("client_id", "client_secret");
+var request = new PageSetup { PaperSize = PaperSizeEnum.PaperA4 };
+api.PutWorksheetPageSetup("Book1.xlsx", "Sheet1", request);
+```
+
+للحصول على تعريف OpenAPI الكامل، راجع <a href="https://api.aspose.cloud/v3.0/swagger.json" target="_blank" rel="noopener">مواصفات Aspose.Cells Cloud Swagger</a>.
+
+كما يمكنك الاطلاع على [توثيق إعدادات الصفحة](/ar/page-setup/) لضبط الهوامش، الاتجاه، واختيارات التنسيق الأخرى.

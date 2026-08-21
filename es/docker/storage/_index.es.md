@@ -1,26 +1,30 @@
-﻿---
-title: Cómo configurar la posición de almacenamiento para el contenedor de almacenamiento en la nube Aspose.Cells
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Docker Container Storage Configuratio
-linktitle: Almacenamiento en contenedores
-type: docs
-url: /es/docker/storage/
-description: Cómo configurar la posición de almacenamiento para el contenedor Docker en la nube Aspose.Cells
-weight: 30
-kwords: Excel Contenedor Docker en la nube, contenedor Docker en la nube propia, contenedor Docker REST, hoja de cálculo, PDF, CSV, JSON, Markdown, imagen Docker, ejecutar contenedor Docker
 ---
-## Configuración de almacenamiento predeterminada ##
+title: "Cómo configurar la posición de almacenamiento para el contenedor Docker de Aspose.Cells Cloud"
+second_title: "Documento"
+ArticleTitle: "Configuración del almacenamiento del contenedor Docker de Aspose.Cells Cloud"
+linktitle: "Almacenamiento del contenedor"
+type: docs
+url: /docker/storage/
+description: "Configure la ubicación de almacenamiento para contenedores Docker de Aspose.Cells Cloud mediante archivos JSON, PowerShell o Bash."
+weight: 30
+keywords: "Aspose.Cells, Docker, almacenamiento de contenedor, configuración JSON, PowerShell, Bash"
+---
+
+**Resumen**: Esta guía muestra cómo configurar la ubicación de almacenamiento para contenedores Docker de Aspose.Cells Cloud en Windows y Linux mediante archivos de configuración JSON y comandos `docker run`.
+
+## Configuración predeterminada del almacenamiento ##
+
+**Requisitos previos**: Asegúrese de tener instalado Docker Engine 20.10 o superior, contar con claves de licencia válidas de Aspose.Cells Cloud (`LicensePublicKey` y `LicensePrivateKey`), y que la carpeta del host que pretende utilizar como almacenamiento (por ejemplo, `c:/data` en Windows o `/data` en Linux) exista y tenga los permisos adecuados.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
 {{< tab tabNum="1" >}}
 
-``` json
-
+```json
 {
   "Local": [
     {
-      "Name": "First Storage",
+      "Name": "Primer almacenamiento",
       "RootFolder": "c:/data"
     }
   ]
@@ -31,52 +35,66 @@ kwords: Excel Contenedor Docker en la nube, contenedor Docker en la nube propia,
 
 {{< tab tabNum="2" >}}
 
-``` json
-
+```json
 {
   "Local": [
     {
-      "Name": "First Storage",
+      "Name": "Primer almacenamiento",
       "RootFolder": "/data"
     }
   ]
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-##  Posición predeterminada ##
+## Ubicación predeterminada ##
 
-- **ventanas**
+- **Windows**
 
 ```powershell
-
 c:\app\storageResource.json
-
 ```
 
 - **Linux**
 
-```linux
-
+```bash
 /app/storageResource.json
-
-
 ```
 
-##  Configuración de almacenamiento personalizada ##
+## Configuración personalizada del almacenamiento ##
 
-Es necesario volver a especificar el perfil de almacenamiento para el archivo de imagen en la nube Aspose.Cells cuando el cliente necesita especificar la carpeta de almacenamiento.
+Especifique un perfil de almacenamiento personalizado cuando necesite utilizar una carpeta distinta para los datos de Aspose.Cells Cloud.
 
-``` powershell
-
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey  -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
-
+```bash
+docker run -d \
+  -v c:/data:c:/data \   # montar carpeta del host como almacenamiento del contenedor
+  -p 47900:5000 \        # asignar puerto de la API
+  -e LicensePublicKey=suPublicKeyDeLicencia \
+  -e LicensePrivateKey=suPrivateKeyDeLicencia \
+  -e storagesCredentialsFilePath=c:/data/storageResource.json \
+  --name asposecellscloud \
+  aspose/cells-cloud:ltsc2019.22.9.0
 ```
 
-**Documento de referencia** :
+*Ejemplo para Linux*:
 
-- [Cómo ejecutar el contenedor Docker en la nube Aspose.Cells.]( https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)
+```bash
+docker run -d \
+  -v /data:/data \   # montar carpeta del host como almacenamiento del contenedor
+  -p 47900:5000 \    # asignar puerto de la API
+  -e LicensePublicKey=suPublicKeyDeLicencia \
+  -e LicensePrivateKey=suPrivateKeyDeLicencia \
+  -e storagesCredentialsFilePath=/data/storageResource.json \
+  --name asposecellscloud \
+  aspose/cells-cloud:ltsc2019.22.9.0
+```
+
+**Documento de referencia**:
+
+- [Cómo ejecutar el contenedor Docker de Aspose.Cells Cloud.](https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)
+- [Características del contenedor Docker](https://docs.aspose.cloud/cells/docker/container-features/)
+- [Descarga de la imagen Docker de Aspose.Cells Cloud](https://docs.aspose.cloud/cells/docker/download-image/)
+- [Gestión de etiquetas de contenedor](https://docs.aspose.cloud/cells/docker/manage-tags/)

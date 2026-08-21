@@ -1,76 +1,77 @@
-﻿---
-title: Excel çalışma sayfasındaki sütunları kopyalayın
-second_title: Documen
-linktitle: Polis
-type: docs
-url: /tr/columns/copy/
-aliases: [/copy-columns-in-excel-worksheet/,/copy-columns-in-an-excel-worksheet/]
-keywords: Copy column on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında sütun kopyalamayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 30
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki sütunları kopyala
 ---
-Bu REST API kopyası `columns`'i Excel Çalışma Kağıdında kopyalayın.
+title: "Excel Çalışma Sayfasında Sütunları Kopyalama"
+second_title: "Belge"
+linktitle: "Kopyala"
+type: docs
+url: /columns/copy/
+aliases:
+  [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
+keywords: "Aspose.Cells, sütunları kopyalama, Excel API, REST, Bulut SDK’sı, cURL, C#, Java, Python, Ruby, Node.js, Go, Perl"
+description: "Aspose.Cells Cloud REST API’sini (v3.0) kullanarak bir Excel çalışma sayfasında bir veya daha fazla sütunu nasıl kopyalayacağınızı öğrenin. İsteğin sözdizimi, gerekli parametreler, kimlik doğrulama ayrıntıları, hata işleme ve C#, Java, Python, Ruby, Node.js, Go, Perl ve daha fazlası dillerinde SDK örneklerini içerir."
+articleTitle: "Aspose.Cells Cloud API Kullanılarak Excel Çalışma Sayfasında Sütunların Kopyalanması"
+weight: 30
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasında **sütunları** kopyalar. **Sütunları Kopyala** işlemi, tek bir sütunu veya bir sütun aralığını kopyalamanıza ve kopyalanan sütunları aynı çalışma sayfası içinde belirli bir konuma eklemenize olanak tanır. Büyük elektronik tablolarda çalışırken sütunları verimli bir şekilde kopyalamak için bu uç noktayı kullanın ve ek sütun yönetim görevleri için [Sütun Ekle](/columns/add/) ve [Sütunu Gizle](/columns/hide/) gibi ilgili işlemlere bakın.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy
- 
-```
+## Güvenlik ve Kimlik Doğrulama
+Aspose.Cells Cloud API’leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulama](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) gerektirir.
 
-İstek parametreleri şunlardır:
-
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| kaynakSütunİndeksi| tam sayı| sorgu| Kaynak sütun dizini|
-| hedefSütunİndeksi| tam sayı| sorgu| Hedef sütun dizini|
-| sütunNumarası| tam sayı| sorgu| Kopyalanan sütun numarası|
-| çalışma sayfası| sicim| sorgu||
-| dosya| sicim| sorgu| Belge klasörü.|
-
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
-
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+## REST API
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&ColumnNumber=10" -H "accept: application/json" 
-
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy
 ```
 
-{{< /tab >}}
+### İstek Parametreleri
 
-{{< tab tabNum="12" >}}
+| Parametre Adı            | Tür      | Konum  | Açıklama                                                                              |
+| ------------------------- | -------- | ------ | ------------------------------------------------------------------------------------- |
+| **name**                  | string   | path   | Çalışma kitabının adı.                                                                |
+| **sheetName**             | string   | path   | Çalışma sayfasının adı.                                                               |
+| **sourceColumnIndex**     | integer  | query  | Kopyalanacak sütunun 0‑tabanlı indeksi.                                              |
+| **destinationColumnIndex**| integer  | query  | Kopyalanan sütun(lar)ın ekleneceği 0‑tabanlı indeks.                                 |
+| **columnNumber**          | integer  | query  | Kopyalanacak ardışık sütun sayısı.                                                    |
+| **worksheet**             | string   | query  | _(İsteğe bağlı)_ Çalışma sayfası adı yoldan farklıysa kullanılan çalışma sayfası tanımlayıcısı. |
+| **folder**                | string   | query  | Çalışma kitabının bulunduğu klasörün Aspose Cloud deposundaki yolu.                  |
 
-```java
+Bu işlem için tam sözleşmeyi [OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) belgeleri sağlar.
 
- {
+### cURL Örneği
 
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&columnNumber=10" \
+     -H "Authorization: Bearer $ASPOSE_TOKEN" \
+     -H "accept: application/json"
+```
+
+### Yanıt
+
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+## Hata İşleme
 
-{{< /tabs >}}
+API, hatayı açıklayan bir JSON yüküyle standart HTTP durum kodlarını döndürür.
+
+| Durum Kodu | Anlam                                           | Örnek JSON Gövdesi                                                  |
+| ---------- | ----------------------------------------------- | ------------------------------------------------------------------- |
+| **400**    | Geçersiz istek – geçersiz parametreler          | `{ "Code": 400, "Message": "Geçersiz sütun indeksi." }`             |
+| **401**    | Yetkisiz erişim – eksik veya geçersiz belirteç  | `{ "Code": 401, "Message": "Erişim belirteci geçersiz veya süresi dolmuş." }` |
+| **404**    | Bulunamadı – çalışma kitabı veya çalışma sayfası yok | `{ "Code": 404, "Message": "Çalışma kitabı bulunamadı." }`          |
+| **500**    | Sunucu iç hatası – beklenmedik durum            | `{ "Code": 500, "Message": "Beklenmeyen bir hata oluştu." }`       |
+
+> **Nasıl Sorun Giderilir:** Erişim belirtecinin güncel olduğundan, çalışma kitabı ve çalışma sayfası adlarının doğru olduğundan ve `sourceColumnIndex`, `destinationColumnIndex` ile `columnNumber` değerlerinin çalışma sayfasının sütun aralığı içinde olduğundan emin olun.
 
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, alt seviye ayrıntıları işler ve sizin projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanılarak Aspose.Cells web hizmetlerine nasıl istek yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +124,37 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Sütunları Kopyala API’sini çağırırken nasıl kimlik doğrulaması yaparım?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OAuth2 erişim belirtecini, istemci kimliğinizi ve sırrınızı kullanarak Aspose Cloud’dan edinin ve istek başlığına `Authorization: Bearer <access_token>` olarak ekleyin."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "`sourceColumnIndex` ile `destinationColumnIndex` arasındaki fark nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "`sourceColumnIndex`, kopyalamak istediğiniz sütunun 0‑tabanlı indeksidir. `destinationColumnIndex`, kopyalanan sütun(lar)ın ekleneceği 0‑tabanlı indekstir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kopyalama işlemi başarısız olursa hangi yanıt alırım?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "API, 200 olmayan bir durum kodu (örneğin, 400 geçersiz istek, 401 yetkisiz erişim) döndürür. Yanıt gövdesi, hatayı açıklayan `Code` ve `Message` alanlarını içeren bir JSON nesnesi içerir."
+      }
+    }
+  ]
+}
+</script>
+---

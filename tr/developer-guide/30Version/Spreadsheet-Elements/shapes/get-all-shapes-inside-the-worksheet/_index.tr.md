@@ -1,148 +1,103 @@
-﻿---
-title: Excel çalışma sayfasındaki tüm şekilleri alın
-second_title: Documen
-linktitle: Al-al
-type: docs
-url: /tr/shapes/get-all/
-aliases: [/get-all-shapes-inside-the-worksheet/]
-keywords: Get all shapes on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında tüm şekillerin alınmasını destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki tüm şekilleri alın
 ---
-Bu REST API, Çalışma sayfası şekillerini al'ı gösterir
+title: "Bir Excel Çalışma Sayfasındaki Tüm Şekilleri Al"
+second_title: "Belge"
+linktitle: "Tümünü-al"
+type: docs
+url: /shapes/get-all/
+aliases: [/get-all-shapes-inside-the-worksheet/]
+keywords: "Aspose.Cells, Bulut API, Excel şekilleri, şekilleri al, REST, SDK"
+description: "Aspose.Cells Cloud REST API kullanarak bir çalışma sayfasından tüm şekilleri (grafikler, resimler, metin kutuları) alma. cURL örneği, SDK kod parçacıkları, kimlik doğrulama adımları ve hata yönetimi içerir."
+ArticleTitle: "Bir Excel Çalışma Sayfasındaki Tüm Şekilleri Al"
+weight: 10
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasındaki tüm şekilleri alma işlemini sağlar.
+
+## Güvenlik ve Kimlik Doğrulama
+Aspose.Cells Cloud API’leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulama](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) gerektirir.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
-İstek parametreleri şunlardır:
+### İstek Parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| belge adı.|
-| sayfaAdı| sicim| yol| çalışma sayfası adı.|
-| dosya| sicim| sorgu| Belgenin klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı   | Tür     | Konum  | Açıklama                                                                                             |
+| ---------------- | ------- | ------ | ---------------------------------------------------------------------------------------------------- |
+| **name**         | string  | path   | Excel dosyasının adı.                                                                                |
+| **sheetName**    | string  | path   | Çalışma sayfasının adı.                                                                              |
+| **folder**       | string  | query  | Belgenin bulunduğu klasör.                                                                           |
+| **storageName**  | string  | query  | Kullanılacak depolama hizmetinin adı.                                                               |
+| **include**      | string  | query  | `details` olarak ayarlandığında tam şekil özelliklerini döndürür; aksi takdirde yalnızca `link` nesneleri döner. |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShapes) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+> **İsteğe Bağlı**: Dosya kök depolama alanında yer alıyorsa `folder`, `storageName` ve `include` parametreleri atlanabilir.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+cURL komut satırı aracını kullanarak Aspose.Cells web servislerine erişebilirsiniz. Aşağıdaki örnek, isteğe bağlı sorgu parametrelerini içeren bir istek göstermektedir.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes?folder=Samples&storageName=MyStorage" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 {
-
-  "Shapes" : {
-
-    "ShapeList" : [
-
+  "Shapes": {
+    "ShapeList": [
       {
-
-        "link" : {
-
-          "Href" : "/0",
-
-          "Rel" : "self",
-
-          "Type" : null,
-
-          "Title" : null
-
+        "link": {
+          "Href": "/0",
+          "Rel": "self",
+          "Type": null,
+          "Title": null
         }
-
       },
-
       {
-
-        "link" : {
-
-          "Href" : "/1",
-
-          "Rel" : "self",
-
-          "Type" : null,
-
-          "Title" : null
-
+        "link": {
+          "Href": "/1",
+          "Rel": "self",
+          "Type": null,
+          "Title": null
         }
-
       },
-
       {
-
-        "link" : {
-
-          "Href" : "/2",
-
-          "Rel" : "self",
-
-          "Type" : null,
-
-          "Title" : null
-
+        "link": {
+          "Href": "/2",
+          "Rel": "self",
+          "Type": null,
+          "Title": null
         }
-
       },
-
       {
-
-        "link" : {
-
-          "Href" : "/3",
-
-          "Rel" : "self",
-
-          "Type" : null,
-
-          "Title" : null
-
+        "link": {
+          "Href": "/3",
+          "Rel": "self",
+          "Type": null,
+          "Title": null
         }
-
       }
-
     ],
-
-    "link" : {
-
-      "Href" : "http://api.aspose.com/v1.1/cells/sampleShapes.xlsx/worksheets/Sheet1/shapes",
-
-      "Rel" : "self",
-
-      "Type" : null,
-
-      "Title" : null
-
+    "link": {
+      "Href": "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes",
+      "Rel": "self",
+      "Type": null,
+      "Title": null
     }
-
   },
-
-  "Code" : 200,
-
-  "Status" : "OK"
-
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
@@ -150,11 +105,38 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Yanıt Alanları
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+`Shapes` nesnesi, `Shape` ögelerinin bir listesini içerir. Her şekil, aşağıdaki özelliklere sahiptir (`include=details` bayrağı kullanıldığında); aksi takdirde yalnızca `link` nesnesi döner.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+| Özellik   | Tür     | Açıklama                                                                     |
+| ---------- | ------- | ---------------------------------------------------------------------------- |
+| **Name**   | string  | Şekile atanan ad (örn. “Chart 1”).                                           |
+| **Type**   | string  | Şekil türü (örn. `Chart`, `Picture`, `TextBox`).                            |
+| **Top**    | number  | Çalışma sayfasının üst kenarından şeye kadar olan uzaklık (nokta cinsinden). |
+| **Left**   | number  | Çalışma sayfasının sol kenarından şeye kadar olan uzaklık (nokta cinsinden). |
+| **Width**  | number  | Şeklin genişliği (nokta cinsinden).                                          |
+| **Height** | number  | Şeklin yüksekliği (nokta cinsinden).                                         |
+| **Link**   | object  | Hiperbağlantı bilgisi (`Href`, `Rel`, `Type`, `Title`).                     |
+
+## Hata Yönetimi
+
+| HTTP Durumu | Açıklama                                              | Örnek Hata Gövdesi                                                |
+| ----------- | ----------------------------------------------------- | ----------------------------------------------------------------- |
+| **400**     | Geçersiz istek – hatalı parametreler.                | `{ "Code": 400, "Message": "Geçersiz parametre değeri." }`       |
+| **401**     | Yetkisiz erişim – eksik veya geçersiz belirteç.      | `{ "Code": 401, "Message": "Erişim belirteci eksik veya geçersiz." }` |
+| **404**     | Bulunamadı – çalışma kitapçası veya çalışma sayfası yok. | `{ "Code": 404, "Message": "Dosya veya çalışma sayfası bulunamadı." }` |
+| **500**     | İç sunucu hatası – beklenmeyen durum.                | `{ "Code": 500, "Message": "Beklenmeyen bir hata oluştu." }`     |
+
+Başarılı bir istek, yukarıdaki yanıt örneğinde gösterildiği gibi, şekillerin listesini içeren bir `Shapes` nesnesi ile **HTTP 200** durum kodu döner.
+
+API, her JWT belirteci başına **dakikada 150 istek** sınırını uygular. Bu sınırı aşmak, yeniden deneme zamanını belirten bir `Retry-After` başlığı ile **HTTP 429** döndürür.
+
+## Bulut SDK Grubu
+
+SDK kullanmak, geliştirme hızını artırmak için en iyi yoldur. SDK, düşük seviye ayrıntıları yönetir ve size proje görevlerinize odaklanma imkanı verir. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web servislerine istek yapmayı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -207,3 +189,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

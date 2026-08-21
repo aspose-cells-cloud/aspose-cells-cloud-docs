@@ -1,131 +1,122 @@
-﻿---
-title: Hämta en validering av arbetsblad med index från ett Excel-arbetsblad
-second_title: Documen
-linktitle: Ge
+---
+title: "Hämta ett kalkylbladsvalidering med index från ett Excel-kalkylblad"
+second_title: "Document"
+linktype: "Hämta"
 type: docs
 url: /sv/validations/get/
-aliases: [/get-validation-from-a-worksheet/]
-keywords: Get a worksheet validation by index from an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder att hämta en kalkylbladsvalidering med index från ett Excel-kalkylblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+aliases: [/sv/get-validation-from-a-worksheet/]
+keywords: "Aspose.Cells Cloud, API för kalkylbladsvalidering, hämta validering med index, Excel REST API, Aspose.Cells SDK"
+description: "Hämta ett kalkylbladsvalidering med sitt nollbaserade index från en Excel-arbetsbok med Aspose.Cells Cloud API (v3.0). Inkluderar cURL-exempel, svarsschema, felkoder och SDK-utdrag för C#, Java, Python och mer."
 weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta en kalkylbladsvalidering med index från ett Excel-kalkylblad
 ---
-Denna REST API indikerar att en kalkylbladsvalidering ska hämtas med index på ett Excel-kalkylblad.
 
-## RSET API
+Denna REST API hämtar ett kalkylbladsvalidering med dess index från ett Excel-kalkylblad.  
+Innan du anropar slutpunkten, skaffa ett JWT-token via slutpunkten `/connect/token` och inkludera det i `Authorization`-headern som `Bearer <jwt token>`.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
-Begäranparametrarna är:
+### **Begärparametrar**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| valideringsindex| heltal| väg| Valideringsindexet.|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameternamn   | Typ     | Plats  | Beskrivning                                           |
+| --------------- | ------- | ------ | ----------------------------------------------------- |
+| name            | string  | path   | Namnet på arbetsboksfilen.                            |
+| sheetName       | string  | path   | Namnet på kalkylbladet.                               |
+| validationIndex | integer | path   | Nollbaserat index för valideringen som ska hämtas.    |
+| folder          | string  | query  | Mappen som innehåller arbetsboken.                    |
+| storageName     | string  | query  | Namn på lagringstjänsten.                             |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidation) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidation) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda verktyget cURL för kommandoraden för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du anropar API:et med cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Validation": {
-
     "AlertStyle": "Stop",
-
     "AreaList": [
-
       {
-
         "EndColumn": 0,
-
         "EndRow": 0,
-
         "StartColumn": 0,
-
         "StartRow": 0
-
       },
-
       {
-
         "EndColumn": 27,
-
         "EndRow": 0,
-
         "StartColumn": 26,
-
         "StartRow": 0
-
       }
-
     ],
-
     "IgnoreBlank": false,
-
     "InCellDropDown": false,
-
     "Operator": "None",
-
     "ShowError": false,
-
     "ShowInput": false,
-
     "Type": "AnyValue",
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/Validations/0",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/Validations/0",
       "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+**Svarsschema**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Fält           | Typ     | Beskrivning                                                              |
+| -------------- | ------- | ------------------------------------------------------------------------ |
+| AlertStyle     | string  | Stilen på den varning som visas till användaren (Stop, Warning, Information). |
+| AreaList       | array   | Samling av cellintervall som valideringen gäller för.                   |
+| IgnoreBlank    | boolean | Om `true`, ignoreras tomma celler vid validering.                        |
+| InCellDropDown | boolean | Om `true`, visas en rullgardinslista i cellen.                          |
+| Operator       | string  | Jämförelseoperator som används för valideringen (t.ex. `None`, `Between`). |
+| ShowError      | boolean | Bestämmer om ett felmeddelande visas när valideringen misslyckas.       |
+| ShowInput      | boolean | Bestämmer om ett inmatningsmeddelande visas när cellen väljs.           |
+| Type           | string  | Typ av validering (t.ex. `AnyValue`, `WholeNumber`, `Decimal`, etc.).   |
+| link.Href      | string  | Självreferens-URL till valideringsresursen.                              |
+| link.Rel       | string  | Relations typ (alltid `self`).                                           |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+**Möjliga felkoder**
+
+| HTTP-status | Betydelse                                                              |
+| ----------- | ---------------------------------------------------------------------- |
+| 200         | Validering hämtades framgångsrikt.                                    |
+| 400         | Felaktig begäran – saknade eller ogiltiga parametrar.                 |
+| 401         | Otillåten åtkomst – ogiltigt eller saknat JWT-token.                  |
+| 404         | Hittades inte – arbetsboken, kalkylbladet eller valideringsindexet finns inte. |
+| 500         | Internt serverfel – oväntat tillstånd.                                 |
+
+## Molnsdk-familj
+
+Att använda en SDK är det snabbaste sättet att utveckla mot Aspose.Cells Cloud. En SDK abstraher bort detaljer på lägre nivå så att du kan fokusera på din affärslogik. Se [GitHub-lagret](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

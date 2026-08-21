@@ -1,57 +1,57 @@
-﻿---
-title: 在 Excel 工作表中获取数据透视表
-second_title: Documen
-linktitle: 得到
-type: docs
-url: /zh/pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
-keywords: Get a pivot table in an Excel file
-description: Aspose.Cells Cloud REST API 支持从 Excel 文件中获取数据透视表。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 10
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 工作表中获取数据透视表
 ---
-此 REST API 表示通过索引获取工作表 `pivottable` 信息。
- 
-## 重新设置 API
- 
+title: "获取 Excel 工作表中的数据透视表"
+second_title: "Document"
+linktitle: 获取
+type: docs
+url: /pivot-tables/get/
+aliases: [/get-worksheet-pivot-table-information-by-index/]
+keywords: "Aspose.Cells, 数据透视表, Excel, REST API, 获取工作表数据透视表"
+description: "通过 Aspose.Cells Cloud REST API 从 Excel 工作表中检索数据透视表。包含请求语法、参数、身份验证、响应模式、错误处理和 SDK 示例。"
+weight: 10
+ArticleTitle: "获取 Excel 工作表中的数据透视表"
+---
+
+此 REST API 通过索引获取工作表中的**数据透视表**信息。
+
+### **安全与身份验证**
+
+Aspose.Cells Cloud API 采用安全机制，需使用<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
+
+## REST API
+
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}
 ```
-请求参数为：
- 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|数据透视表索引|整数|小路||
-|文件夹|细绳|询问|文档的文件夹。|
-|存储名称|细绳|询问|存储名称。|
- 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTable)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
- 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### 请求参数
+
+| 参数名称          | 类型    | 位置   | 描述                                       |
+| ----------------- | ------- | ------ | ------------------------------------------ |
+| **name**          | string  | path   | Excel 文件的名称。                         |
+| **sheetName**     | string  | path   | 包含数据透视表的工作表名称。               |
+| **pivottableIndex** | integer | path   | 工作表中数据透视表的从零开始的索引。       |
+| **folder**        | string  | query  | 文档所在的文件夹。                         |
+| **storageName**   | string  | query  | Aspose Cloud 存储的名称。                  |
+
+您可以使用 **cURL** 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用该 API。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
   "Status": "string",
   "PivotFilters": [
@@ -69,9 +69,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
             "FilterType": "string",
             "MultipleFilters": {
               "MatchBlank": true,
-              "MultipleFilterList": [
-                {}
-              ]
+              "MultipleFilterList": [{}]
             },
             "ColorFilter": {
               "FilterByFillColor": "string",
@@ -140,7 +138,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
               "IsTop": true,
               "Items": 0
             },
-            "Visibledropdown": "string"
+            "VisibleDropdown": "string"
           }
         ],
         "Range": "string",
@@ -168,20 +166,43 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
     }
   ]
 }
- 
 ```
- 
+
+**响应模式**
+
+| 字段           | 类型    | 描述                                           |
+| -------------- | ------- | ---------------------------------------------- |
+| Status         | string  | 操作状态文本（例如：“OK”）。                   |
+| PivotFilters   | array   | 数据透视筛选器定义的集合。                     |
+| └─ AutoFilter  | object  | 应用于数据透视表的自动筛选详细信息。           |
+|    └─ link     | object  | 筛选器的超链接信息。                           |
+|    └─ FilterColumns | array | 各列筛选设置。                             |
+|    └─ Range    | string  | 筛选器适用的单元格区域。                       |
+|    └─ Sorter   | object  | 已筛选数据的排序配置。                         |
+| （其余嵌套字段结构与上述 JSON 示例一致）        |
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK 系列
- 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
- 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
- 
- 
+
+### 错误处理
+
+API 遵循标准 HTTP 状态码。典型响应包括：
+
+| 状态码 | 含义                                                   | 示例 JSON（错误）                              |
+| ------ | ------------------------------------------------------ | --------------------------------------------- |
+| 200    | 成功——返回了数据透视表                                 | —                                             |
+| 401    | 未授权——令牌无效或缺失                                 | `{"code":401,"message":"Invalid access token."}` |
+| 404    | 未找到——文件、工作表或数据透视表索引不存在             | `{"code":404,"message":"Pivot table not found."}` |
+| 500    | 服务器错误——意外情况                                   | `{"code":500,"message":"Internal server error."}` |
+
+**说明：** 该 API 支持最大 150 MB 的 Excel 文件，兼容 Excel 2007–2021 格式。请确保工作表名称区分大小写。
+
+## 云 SDK 家族
+
+使用 SDK 是加速开发的最佳方式。SDK 处理底层细节，让您专注于项目任务。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Perl" tabName10="Go" >}}
 

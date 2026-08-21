@@ -1,73 +1,78 @@
-﻿---
-title: Eliminar una validación de hoja de cálculo en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Borrar
-type: docs
-url: /es/validations/delete/
-keywords: Delete a worksheet validation on an Excel worksheet
-description: Aspose.Cells Cloud REST API permite eliminar la validación de una hoja de cálculo en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 10
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Eliminar una validación de hoja de cálculo en una hoja de cálculo Excel
 ---
-Este REST API indica eliminar una validación de hoja de cálculo por índice en una hoja de cálculo Excel.
+title: "Eliminar validación de hoja de cálculo – Aspose.Cells Cloud"
+second_title: "Documento"
+linktitle: "Eliminar"
+type: docs
+url: /validations/delete/
+keywords: "Eliminar, validación de hoja de cálculo, Aspose.Cells Cloud, API de Excel"
+description: "Aprenda a eliminar una validación de hoja de cálculo de un archivo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye el punto de conexión, parámetros, detalles de autenticación, ejemplo con cURL, manejo de errores y fragmentos de código de SDK."
+weight: 10
+---
 
-## RSET API
+Esta API REST elimina una validación de hoja de cálculo mediante su índice basado en cero en una hoja de cálculo de Excel.
+
+## API REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
-Los parámetros de la solicitud son:
+### **Parámetros de la solicitud**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del documento.|
-| nombreHoja| cadena| camino| Nombre de la hoja de trabajo.|
-| índice de validación| entero| camino| El índice de validación.|
-| carpeta| cadena| consulta| Carpeta del documento.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo    | Ubicación | Descripción                                        |
+| --------------------- | ------- | --------- | -------------------------------------------------- |
+| name                  | string  | path      | El nombre del archivo de Excel.                   |
+| sheetName             | string  | path      | El nombre de la hoja de cálculo.                  |
+| validationIndex       | integer | path      | El índice basado en cero de la validación que se va a eliminar. |
+| folder                | string  | query     | La carpeta que contiene el documento.             |
+| storageName           | string  | query     | El nombre del servicio de almacenamiento.         |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) define una interfaz de programación públicamente accesible y le permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+Puede utilizar la herramienta de línea de comandos cURL para invocar el servicio web de Aspose.Cells. El ejemplo siguiente muestra cómo eliminar una validación con cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                      |
+|--------|-----------------------------|--------------------------------------------------|
+| 200    | Correcto                    | Filtro aplicado correctamente; la respuesta contiene los detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros ausentes o no válidos (p. ej., tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT no válido o ausente. |
+| 413    | Payload demasiado grande     | El archivo cargado supera el límite de tamaño. |
+| 500    | Error interno del servidor  | Error inesperado en el servidor. |
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la forma más rápida de integrar esta operación en su aplicación. Los SDK gestionan los detalles de bajo nivel para que usted se enfoque en la lógica de negocio. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo eliminar una validación de hoja de cálculo mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

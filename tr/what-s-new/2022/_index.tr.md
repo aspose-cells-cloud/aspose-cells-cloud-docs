@@ -1,64 +1,65 @@
-﻿---
-title: 2022'de Aspose.Cells Cloud'daki yenilikler
-second_title: Documen
-linktitle: 202'deki yenilikler
+---
+title: Aspose.Cells Cloud'da 2022 Yılında Yeni Gelenler
+second_title: "Belge"
+linktitle: "2022'de Yeni Gelenler"
 type: docs
 weight: 90
-url: /tr/new-features/2023/
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: Bu sayfa, son sürümlerde tanıtılan en ilginç yeni Aspose.Cells Bulut özelliklerini açıklamaktadır
-kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Aspose.Cells Cloud'daki yenilikler
+url: /new-features/2023/
+keywords: "Aspose.Cells Cloud'da yeni gelenler. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF."
+description: "Bu sayfa, son sürümlerde sunulan en ilginç yeni Aspose.Cells Cloud özellikleri hakkında bilgi verir."
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Aspose.Cells Cloud'da yeni gelenler
 ---
-Aspose.Cells Cloud belgelerindeki yeniliklere hoş geldiniz. En son değişiklikleri hızlıca bulmak için bu sayfayı kullanın.
 
-## Aspose.Cells Bulut 22.12
+Aspose.Cells Cloud belgelerinde yeni gelenler bölümüne hoş geldiniz. En son değişiklikleri hızlıca bulmak için bu sayfayı kullanın.
 
-- Grafik ekseninin çalışmasını destekler.
+## Aspose.Cells Cloud 22.12
 
-## Aspose.Cells Bulut 22.11
+- Grafik eksen işlemesi desteği eklendi.
 
-- Json'a dönüştürmek için yeni api ekleyin.
-- Sql'e dönüştürmek için yeni api ekleyin.
-- CVS'ye dönüştürmek için yeni API ekleyin.
+## Aspose.Cells Cloud 22.11
 
-## Aspose.Cells Bulut 22.10
+- JSON'a dönüştürme için yeni bir API eklendi.
+- SQL'e dönüştürme için yeni bir API eklendi.
+- CSV'ye dönüştürme için yeni bir API eklendi.
 
-- Pptx'e dönüştürmek için yeni api ekleyin.
-- Markdown'a dönüştürmek için yeni API ekleyin.
-- HTML'e dönüştürmek için yeni API ekleyin.
+## Aspose.Cells Cloud 22.10
 
-## Aspose.Cells Bulut 22.9
+- PPTX'e dönüştürme için yeni bir API eklendi.
+- Markdown'a dönüştürme için yeni bir API eklendi.
+- HTML'e dönüştürme için yeni bir API eklendi.
 
-- Sayfanın diğer format dosyasına aktarılmasını destekler.
-- PDF'e dönüştürmek için yeni API ekleyin.
-- PNG'ye dönüştürmek için yeni API ekleyin.
-- Docx'e dönüştürmek için yeni API ekleyin.
+## Aspose.Cells Cloud 22.9
 
-## Aspose.Cells Bulut 22.8
+- Sayfanın diğer formatlarda dışa aktarılması desteği eklendi.
+- PDF'e dönüştürme için yeni bir API eklendi.
+- PNG'e dönüştürme için yeni bir API eklendi.
+- DOCX'e dönüştürme için yeni bir API eklendi.
 
-- Excel Satırların Sütunlara aktarılması destekleniyor.
+## Aspose.Cells Cloud 22.8
 
-## Aspose.Cells Bulut 22.7
+- Excel satırlarının sütunlara dönüştürülmesi (ters çevirme) desteği eklendi.
 
-- İyileştirme API'i hücre bulut servislerinde kaydedin (dört kaydetme seçeneği ekleyin).
-- Hücre bulutunda LightCellsController optimize edildi.
+## Aspose.Cells Cloud 22.7
 
-## Aspose.Cells Bulut 22.6
+- Cells Cloud hizmetlerinde kaydetme API'sinde iyileştirme (dört kaydetme seçeneği eklendi).
+- Cells Cloud'daki LightCellsController optimize edildi.
 
-- [Cells Bulut API'leri için iyileştirme.](/cells/tr/aspose-cells-cloud-22-6-release-notes/)
-- Zip paketindeki dosyaların format türlerine dönüştürülmesi desteği.
+## Aspose.Cells Cloud 22.6
 
-## Aspose.Cells Bulut 22.5
+- [Cells Cloud API'leri için iyileştirme.](/cells/aspose-cells-cloud-22-6-release-notes/)
+- Zip paketindeki dosyaların farklı formatlara dönüştürülmesi desteği eklendi.
 
-- [API ihracatı için iyileştirme.](https://docs.aspose.cloud/cells/export/)
-- [API numaralı net için iyileştirme.](https://docs.aspose.cloud/cells/clear/)
+## Aspose.Cells Cloud 22.5
 
-## Aspose.Cells Bulut 22.4
+- [Dışa aktarma API'sinde iyileştirme.](https://docs.aspose.cloud/cells/export/)
+- [Temizleme API'sinde iyileştirme.](https://docs.aspose.cloud/cells/clear/)
 
-- Birkaç hatayı düzeltin.
-- [Swagger kullanıcı arayüzünde iyileştirme.](https://apireference.aspose.cloud/cells/)
+## Aspose.Cells Cloud 22.4
 
-## Aspose.Cells Bulut 22.3
+- Bazı hatalar düzeltildi.
+- [Swagger UI'de iyileştirme.](https://apireference.aspose.cloud/cells/)
 
-- [Yapı kodgen spesifikasyonu hakkında yeni API eklendi.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
-- [Aspose.Cells Bulut için dijital imza ekleme desteği.](/cells/tr/workbook/digital-signature/)
+## Aspose.Cells Cloud 22.3
+
+- [Yeni API kod üretimi (codegen) spesifikasyonu için eklendi.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
+- [Aspose.Cells Cloud için dijital imza ekleme desteği eklendi.](/cells/workbook/digital-signature/)

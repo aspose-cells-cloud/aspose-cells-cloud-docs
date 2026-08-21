@@ -1,66 +1,67 @@
-﻿---
-title: Обновить легенду диаграммы на рабочем листе
+---
+title: "Обновление легенды диаграммы в рабочем листе"
 type: docs
-url: /ru/charts/legend/update/
+url: /charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Обновление легенды диаграммы на листе
+keywords: "Aspose.Cells, облако, Excel, диаграмма, легенда, REST API, обновление, рабочий лист, cURL, SDK"
+description: "Как обновить легенду диаграммы в рабочем листе Excel с помощью Aspose.Cells Cloud REST API, включая примеры запросов cURL и фрагменты кода SDK для различных языков программирования."
+ArticleTitle: "Обновление легенды диаграммы в рабочем листе – руководство по API Aspose.Cells Cloud"
 ---
-Этот REST API указывает на обновление легенды диаграммы
- 
-## РСЕT API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
- 
+
+Этот REST API обновляет легенду диаграммы.
+
+**Необходимые условия:** Для использования этого endpoint’а необходимо иметь действительный JWT-токен Aspose Cloud, а целевая рабочая книга должна быть размещена в поддерживаемом хранилище (по умолчанию — хранилище Aspose Cloud). Убедитесь, что имя рабочей книги, имя рабочего листа и индекс диаграммы указаны корректно.
+
+Легенда диаграммы отображает названия и символы рядов данных диаграммы. Обновление легенды позволяет настроить её внешний вид, например, изменить начертание шрифта, цвет и тень.
+
+## API PostWorksheetChartLegend
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей тетради.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| chartIndex| целое число| путь| Индекс диаграммы.|
-| легенда|| тело||
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
 
- 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+### **Безопасность и аутентификация**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
+
+### Параметры запроса
+
+| Имя параметра | Тип    | Местоположение | Описание                                      |
+|---------------|--------|----------------|-----------------------------------------------|
+| name          | string | path           | Имя рабочей книги.                            |
+| sheetName     | string | path           | Имя рабочего листа.                           |
+| chartIndex    | integer| path           | Индекс диаграммы, подлежащей изменению.       |
+| legend        | object | body           | JSON-объект, определяющий параметры легенды. |
+| folder        | string | query          | Папка, содержащая рабочую книгу.             |
+| storageName   | string | query          | Имя хранилища.                                |
+
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend) определяет публично доступное программное интерфейсное решение и позволяет выполнять взаимодействие по REST напрямую из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как вызвать облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" 
--d '{"Font":{"Color":{"A":"1", "R":"255", "G":"0", "B":"0"}, "DoubleSize":10.0, "IsBold":true, "IsItalic":false, "IsStrikeout":false, "IsSubscript":false, "IsSuperscript":false, "Name":"Arial", "Size":15, "Underline":"None"}, "Shadow":true}' 
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
+-d '{"Font":{"Color":{"A":"1","R":"255","G":"0","B":"0"},"DoubleSize":10.0,"IsBold":true,"IsItalic":false,"IsStrikeout":false,"IsSubscript":false,"IsSuperscript":false,"Name":"Arial","Size":15,"Underline":"None"},"Shadow":true}' \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
 
 {{< /tab >}}
@@ -68,11 +69,10 @@ curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet
 {{< /tabs >}}
 
 ## Семейство облачных SDK
- 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
- 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
- 
+
+Использование SDK ускоряет разработку: SDK берёт на себя работу с низкоуровневыми деталями, позволяя сосредоточиться на задачах проекта. Полный список облачных SDK Aspose.Cells Cloud доступен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
+
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -135,3 +135,4 @@ curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet
 {{< /tab >}}
 
 {{< /tabs >}}
+---

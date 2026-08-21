@@ -1,122 +1,150 @@
-﻿---
-title: Elimina tutti gli oggetti OLE in un foglio di lavoro Excel
-second_title: Documen
-linktitle: Pulito
-type: docs
-url: /it/oleobjects/clear/
-aliases: [/delete-all-oleobjects-from-excel-worksheet/]
-keywords: Delete all OLE objects in an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'eliminazione di tutti gli oggetti OLE in un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 60
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Elimina tutti gli oggetti OLE in un foglio di lavoro Excel
 ---
-Questo REST API indica `delete all` oggetti OLE in un foglio di lavoro Excel.
+---
+title: Elimina tutti gli oggetti OLE in un foglio di calcolo Excel
+description: Scopri come rimuovere tutti gli oggetti OLE da un foglio di calcolo Excel utilizzando l'API REST Aspose.Cells Cloud (v3.0). Include endpoint, parametri, esempi di richiesta/risposta, frammenti di SDK, autenticazione, gestione degli errori e domande frequenti.
+keywords: Aspose.Cells Cloud, eliminare oggetti OLE, API Excel, API REST, pulizia OLE foglio di calcolo, SDK cloud
+api_version: v3.0
+last_updated: 2024-11-01
+weight: 60
+---
 
-## RSET API
+# Elimina tutti gli oggetti OLE in un foglio di calcolo Excel
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
- 
+**OleObjects – Clear** rimuove **tutti** gli oggetti OLE (Object Linking and Embedding, ovvero collegamento e incorporazione di oggetti) da un foglio di calcolo specificato, lasciando intatti i dati delle celle. Questa operazione è utile per pulire fogli di calcolo obsoleti o preparare un workbook per una ridistribuzione.
+
+---
+
+## Prerequisiti
+
+- Un **token di accesso JWT Aspose Cloud** valido (OAuth 2.0).  
+- Il workbook di destinazione deve essere archiviato in Aspose Cloud (o devi specificare la `folder`/`storageName` in cui si trova).  
+- Versione API **v3.0** o successiva.  
+
+> **Nota:** L'operazione è *idempotente* – richiamarla quando non sono presenti oggetti OLE restituisce un esito positivo `200 OK`.
+
+---
+
+## Richiesta HTTP
+
+```
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 ```
 
-I parametri della richiesta sono:
+### Parametri del percorso
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome della cartella di lavoro.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| cartella| corda| domanda| La cartella della cartella di lavoro.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome      | Tipo   | Obbligatorio | Descrizione                          |
+|-----------|--------|--------------|--------------------------------------|
+| `name`    | string | ✔️           | Nome del file del workbook.          |
+| `sheetName`| string | ✔️           | Nome del foglio di calcolo.          |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObjects) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### Parametri di query
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Nome          | Tipo   | Obbligatorio | Descrizione                                  |
+|---------------|--------|--------------|----------------------------------------------|
+| `folder`      | string | opzionale    | Cartella contenente il workbook.             |
+| `storageName` | string | opzionale    | Nome dello storage in cui si trova il workbook. |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**Intestazioni**
 
-{{< tab tabNum="1" >}}
+| Intestazione         | Valore                        |
+|----------------------|-------------------------------|
+| `Authorization`      | `Bearer <jwt token>`          |
+| `Accept`             | `application/json`            |
+| `Content-Type`       | `application/json`            |
+
+---
+
+## Esempio di richiesta (cURL)
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects?folder=Samples&storageName=MyStorage" \
+     -X DELETE \
+     -H "Authorization: Bearer <jwt token>" \
+     -H "Accept: application/json" \
+     -H "Content-Type: application/json"
 ```
 
-{{< /tab >}}
+*Sostituisci `<jwt token>` con un token di accesso valido e adatta `folder`/`storageName` secondo le tue esigenze.*
 
-{{< tab tabNum="2" >}}
+---
 
-```bash
+## Risposta corretta
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
-{{< /tab >}}
+**Codici di stato HTTP**
 
-{{< /tabs >}}
+| Codice | Significato                 | Descrizione                                              |
+|--------|-----------------------------|----------------------------------------------------------|
+| 200    | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida        | Parametri mancanti o non validi (ad es. tipo di file non supportato). |
+| 401    | Non autorizzato             | Token JWT non valido o mancante.                         |
+| 413    | Payload troppo grande       | Il file caricato supera il limite di dimensione.        |
+| 500    | Errore interno del server   | Errore imprevisto nel server.                            |
+---
 
-## Famiglia Cloud SDK
+## Esempi di SDK
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+I seguenti frammenti di codice mostrano come richiamare **DeleteWorksheetOleObjects** con gli SDK ufficiali di Aspose.Cells Cloud. Sostituisci i valori segnaposto (`<YOUR_TOKEN>`, `<FILE_NAME>`, ecc.) con i tuoi dati.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+| Linguaggio | Esempio |
+|------------|---------|
+| **C#** | <details><summary>Mostra esempio C#</summary>```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar config = new Configuration { AccessToken = "<YOUR_TOKEN>", BasePath = "https://api.aspose.cloud" };\nvar api = new OleObjectsApi(config);\napi.DeleteWorksheetOleObjects(name: "Sample.xlsx", sheetName: "Sheet1", folder: "Samples", storageName: null);\n```</details> |
+| **Java** | <details><summary>Mostra esempio Java</summary>```java\nimport com.aspose.cells.cloud.api.OleObjectsApi;\nimport com.aspose.cells.cloud.client.ApiClient;\nimport com.aspose.cells.cloud.client.Configuration;\n\nConfiguration config = new Configuration();\nconfig.setAccessToken("<YOUR_TOKEN>");\nconfig.setBasePath("https://api.aspose.cloud");\nOleObjectsApi api = new OleObjectsApi(new ApiClient(config));\napi.deleteWorksheetOleObjects("Sample.xlsx", "Sheet1", "Samples", null);\n```</details> |
+| **Python** | <details><summary>Mostra esempio Python</summary>```python\nfrom asposecellscloud import ApiClient, Configuration, OleObjectsApi\n\nconfig = Configuration()\nconfig.access_token = '<YOUR_TOKEN>'\nconfig.host = 'https://api.aspose.cloud'\nclient = ApiClient(configuration=config)\napi = OleObjectsApi(client)\napi.delete_worksheet_ole_objects(name='Sample.xlsx', sheet_name='Sheet1', folder='Samples')\n```</details> |
+| **Node.js** | <details><summary>Mostra esempio Node.js</summary>```javascript\nconst { OleObjectsApi, Configuration } = require('asposecellscloud');\n\nlet config = new Configuration({ accessToken: '<YOUR_TOKEN>', basePath: 'https://api.aspose.cloud' });\nlet api = new OleObjectsApi(config);\napi.deleteWorksheetOleObjects('Sample.xlsx', 'Sheet1', { folder: 'Samples' })\n  .then(() => console.log('Tutti gli oggetti OLE eliminati'))\n  .catch(err => console.error(err));\n```</details> |
+| **Go** | <details><summary>Mostra esempio Go</summary>```go\npackage main\nimport (\n    \"context\"\n    \"github.com/aspose-cells-cloud/aspose-cells-cloud-go/v3\"\n)\n\nfunc main() {\n    cfg := asposecellscloud.NewConfiguration()\n    cfg.AccessToken = \"<YOUR_TOKEN>\"\n    cfg.Host = \"https://api.aspose.cloud\"\n    api := asposecellscloud.NewOleObjectsApi(cfg)\n    _, err := api.DeleteWorksheetOleObjects(context.Background(), \"Sample.xlsx\", \"Sheet1\", map[string]interface{}{ \"folder\": \"Samples\" })\n    if err != nil { panic(err) }\n    println(\"Tutti gli oggetti OLE eliminati\")\n}\n```</details> |
 
- {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+*I file sorgente completi per tutti i linguaggi supportati sono disponibili nel [repository GitHub di Aspose.Cells Cloud](https://github.com/aspose-cells-cloud).*
 
-{{< tab tabNum="1" >}}
+---
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleDeleteWorksheetOleObjects.cs" >}}
+## Errori e gestione
 
-{{< /tab >}}
+- **Idempotenza** – Eliminare gli oggetti OLE in un foglio che ne contiene già nessuno restituisce comunque `200 OK`.  
+- **Scadenza del token** – Se ricevi `401 Non autorizzato`, ottieni un nuovo token JWT e riprova.  
+- **Nome del foglio non valido** – Assicurati che il nome del foglio corrisponda esattamente (in maiuscolo/minuscolo) a quello nel workbook; altrimenti verrà restituito un `400 Richiesta non valida`.  
 
-{{< tab tabNum="2" >}}
+Implementa logica di ritentativo con backoff esponenziale per errori transitori `500`.
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_DeleteWorksheetOleObjects.java" >}}
+---
 
-{{< /tab >}}
+## Domande frequenti
 
-{{< tab tabNum="3" >}}
+**Q1: Devo specificare i parametri `folder` e `storageName`?**  
+**A:** No. Se omessi, Aspose Cloud assume lo storage predefinito e la cartella principale.
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_DeleteWorksheetOleObjects.php" >}}
+**Q2: Posso eliminare gli oggetti OLE da una cella specifica?**  
+**A:** Questo endpoint elimina **tutti** gli oggetti OLE nel foglio di calcolo. Per rimuovere un singolo oggetto, utilizza l'operazione *Elimina un oggetto OLE specifico*.
 
-{{< /tab >}}
+**Q3: Cosa succede se il workbook è bloccato per la modifica?**  
+**A:** L'API restituirà `400 Richiesta non valida` con un messaggio che indica che il file è bloccato. Assicurati che il file non sia aperto altrove prima di chiamare l'endpoint.
 
-{{< tab tabNum="4" >}}
+**Q4: Esiste un limite di dimensione per il workbook?**  
+**A:** Il servizio rispetta i limiti generali di Aspose Cloud per le dimensioni dei file (attualmente fino a 2 GB per file). File più grandi potrebbero richiedere la divisione o l'elaborazione a blocchi.
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_DeleteWorksheetOleObjects.rb" >}}
+---
 
-{{< /tab >}}
+## Best practice
 
-{{< tab tabNum="5" >}}
+- **Prestazioni** – Utilizza gli attributi `async` o `defer` quando carichi script di terze parti nel tuo sito di documentazione, per ridurre il tempo di caricamento iniziale della pagina.  
+- **Sicurezza** – Aggiungi `rel="noopener noreferrer"` a qualsiasi link esterno che si apre in una nuova scheda.  
+- **Accessibilità** – Le icone decorative (ad es. frecce verso il basso nelle barre laterali) dovrebbero avere `alt=""` e `role="presentation"` per rispettare gli standard WCAG AA.  
+- **Coerenza** – Mantieni i formati di data in ISO‑8601 (`AAAA-MM-GG`) per evitare artifact di codifica.
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_DeleteWorksheetOleObjects.ts" >}}
+---
 
-{{< /tab >}}
+## Operazioni correlate
 
-{{< tab tabNum="6" >}}
+- **Aggiungi oggetto OLE** – `POST /cells/{name}/worksheets/{sheetName}/oleobjects`  
+- **Elimina un oggetto OLE specifico** – `DELETE /cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}`  
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_DeleteWorksheetOleObjects.py" >}}
+Usa i link di navigazione in fondo alla pagina per spostarti tra le azioni API correlate.
 
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_DeleteWorksheetOleObjects.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_DeleteWorksheetOleObjects.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+---
+---

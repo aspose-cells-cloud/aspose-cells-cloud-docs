@@ -1,101 +1,85 @@
-﻿---
-title: 使用 Excel AutoFilte
-second_title: Documen
-linktitle: 自动过滤
-type: docs
-url: /zh/autofilter/
-aliases: [/working-with-autofilter/]
-keywords: Get, add, delete, and so on for auto filter on an Excel worksheet
-description: Aspose.Cells 云 API 支持对 Excel 工作表进行自动筛选，执行获取、添加、删除等操作。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 100
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 自动筛选
 ---
-自动筛选是从工作表中仅选择要在列表中显示的项目的最快捷方法。自动筛选功能允许用户根据设定的条件筛选列表中的项目。筛选条件包括文本、数字或日期。
+title: "使用 Excel 自动筛选"
+second_title: "文档"
+linktitle: "自动筛选"
+type: docs
+url: /autofilter/
+aliases: [/working-with-autofilter/]
+keywords: "自动筛选, Aspose.Cells Cloud, Excel 筛选, 颜色筛选, 日期筛选, 动态筛选, 数值筛选, 文本筛选, 空白筛选, 自定义筛选"
+description: "了解如何使用 Aspose.Cells Cloud API 添加、编辑和删除 Excel 自动筛选（颜色、日期、动态、数值、文本、空白）。提供多种语言的代码示例。"
+weight: 100
+ArticleTitle: "使用 Excel 自动筛选 – Aspose.Cells Cloud 文档"
+---
 
-**不同类型的过滤器**
+自动筛选是仅显示工作表中所需项目的最快方式。自动筛选功能允许用户根据指定条件（如文本、数值或日期）对列表进行筛选。
 
-Aspose.Cells Cloud 提供多种 API 来应用不同类型的过滤器，如颜色过滤器、日期过滤器、数字过滤器、文本过滤器、空白过滤器和非空白过滤器。
+**不同类型的筛选器**
+
+Aspose.Cells Cloud 提供多种 API，用于应用各种筛选类型，例如颜色筛选、日期筛选、数值筛选、文本筛选、空白筛选和非空白筛选。
 
 <table class="table table-striped">
   <tr>
-  <td class="col-md-2"> <li>填充颜色</li> </td>
-  <td class="col-md-10">
-  <p>Aspose.Cells 云提供
- <a href="/cells/zh/autofilter/add-color-filter/">添加填充颜色滤镜的API</a>
-根据单元格的填充颜色属性过滤数据。</p>
-  </td>
+    <td class="col-md-2"><strong>填充颜色</strong></td>
+    <td class="col-md-10">
+      <p>Aspose.Cells Cloud 提供了 <a href="/cells/autofilter/add-color-filter/">添加填充颜色筛选 API</a>，用于根据单元格的填充颜色属性筛选数据。</p>
+    </td>
   </tr>
   <tr>
-    <td class="col-md-2"> <li>日期</li> </td>
-  <td class="col-md-10">
-  <p>
-可以实现不同类型的日期过滤器，例如过滤所有日期为 2018 年 1 月的行。<a href="/cells/zh/autofilter/add-date-filter/">添加日期颜色过滤器的 API</a>可以实现此功能。
-</p>
-  </td>
+    <td class="col-md-2"><strong>日期</strong></td>
+    <td class="col-md-10">
+      <p>可应用多种日期筛选，例如筛选出 2018 年 1 月的日期行。使用 <a href="/cells/autofilter/add-date-filter/">添加日期筛选 API</a> 添加日期筛选。</p>
+    </td>
   </tr>
-    <tr>
-    <td class="col-md-2"> <li>动态日期</li> </td>
-  <td class="col-md-10">
-  <p>
-有时需要根据日期进行动态过滤，例如所有单元格的日期都在一月份，而不管年份如何。<a href="/cells/zh/autofilter/add-dynamic-filter/">动态过滤器的API</a>  
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>动态日期</strong></td>
+    <td class="col-md-10">
+      <p>动态日期筛选允许您筛选出特定月份（不考虑年份）的单元格（例如所有 1 月的日期）。参见 <a href="/cells/autofilter/add-dynamic-filter/">动态筛选 API</a>。</p>
+    </td>
   </tr>
-      <tr>
-    <td class="col-md-2"> <li>数字</li> </td>
-  <td class="col-md-10">
-  <p>
-<a href="/cells/zh/autofilter/add-filter/">自定义过滤器 API</a>可以使用 Aspose.Cells 来应用，例如选择具有给定范围内的数字的单元格。
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>数值</strong></td>
+    <td class="col-md-10">
+      <p><a href="/cells/autofilter/add-filter/">自定义筛选 API</a> 允许筛选数值范围内的单元格。</p>
+    </td>
   </tr>
-        <tr>
-    <td class="col-md-2"> <li>文本</li> </td>
-  <td class="col-md-10">
-  <p>
-如果某列包含文本，并且要选择包含特定文本的单元格，<a href="/cells/zh/autofilter/add-filter/">添加过滤器 API</a>可以使用。
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>文本</strong></td>
+    <td class="col-md-10">
+      <p>如果某列包含文本，可使用 <a href="/cells/autofilter/add-filter/">添加筛选 API</a> 选择包含特定字符串的单元格。</p>
+    </td>
   </tr>
-          <tr>
-    <td class="col-md-2"> <li>空白</li> </td>
-  <td class="col-md-10">
-  <p>
-
-如果某列包含文本，且其中很少有空白单元格，并且需要过滤器来选择仅存在空白单元格的行，<a href="/cells/zh/autofilter/match-all-blank/">匹配所有空白单元格 API</a>可以使用
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>空白</strong></td>
+    <td class="col-md-10">
+      <p>要检索某列为空白的行，请使用 <a href="/cells/autofilter/match-all-blank/">匹配所有空白单元格 API</a>。</p>
+    </td>
   </tr>
-            <tr>
-    <td class="col-md-2"> <li>非空白</li> </td>
-  <td class="col-md-10">
-  <p>
-
-当要过滤包含任何文本的单元格时，<a href="/cells/zh/autofilter/match-all-blank/">匹配所有空白单元格 API</a>可以使用
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>非空白</strong></td>
+    <td class="col-md-10">
+      <p>要筛选某列包含任意非空白值的行，请使用 <a href="/cells/autofilter/match-all-non-blank/">匹配所有非空白单元格 API</a>。</p>
+    </td>
   </tr>
-              <tr>
-    <td class="col-md-2"> <li>自定义过滤器</li> </td>
-  <td class="col-md-10">
-  <p>
-Aspose.Cells 云提供<a href="/cells/zh/autofilter/add-dynamic-filter/">自定义过滤器 API</a>比如包含某些特定字符串的过滤行和以某些特定字符串开头或结尾的过滤行。
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>自定义筛选</strong></td>
+    <td class="col-md-10">
+      <p>Aspose.Cells Cloud 提供了 <a href="/cells/autofilter/add-custom-filter/">自定义筛选 API</a>，用于高级场景，例如筛选包含特定子字符串或以特定字符串开头/结尾的行。</p>
+    </td>
   </tr>
 </table>
 
-**自动过滤数据操作**
+**自动筛选操作**
 
-- [如何在 Excel 工作表中添加颜色过滤器。](/cells/zh/autofilter/add-color-filter/)
-- [如何在 Excel 工作表中添加自定义过滤器。](/cells/zh/autofilter/add-custom-filter/)
-- [如何在 Excel 工作表中添加日期过滤器。](/cells/zh/autofilter/add-date-filter/)
-- [如何在 Excel 工作表中添加动态过滤器。](/cells/zh/autofilter/add-dynamic-filter/)
-- [如何在 Excel 工作表中添加过滤器。](/cells/zh/autofilter/add-filter/)
-- [如何在 Excel 工作表中添加图标过滤器。](/cells/zh/autofilter/add-icon-filter/)
-- [如何删除 Excel 工作表中的日期过滤器。](/cells/zh/autofilter/delete-a-date-filter/)
-- [如何删除 Excel 工作表中的过滤器。](/cells/zh/delete-filter/)
-- [如何从 Excel 工作表中获取自动过滤器描述。](/cells/zh/autofilter/get/)
-- [如何匹配 Excel 工作表中的所有空白。](/cells/zh/autofilter/match-all-blank/)
-- [如何匹配 Excel 工作表中所有非空白。](/cells/zh/autofilter/match-all-non-blank/)
-- [如何刷新 Excel 工作表中的自动过滤器。](/cells/zh/autofilter/refresh/)
+- [如何在 Excel 工作表中添加颜色筛选](/cells/autofilter/add-color-filter/) – **方法：** POST，**端点：** `/cells/autofilter/add-color-filter/`
+- [如何在 Excel 工作表中添加自定义筛选](/cells/autofilter/add-custom-filter/) – **方法：** POST，**端点：** `/cells/autofilter/add-custom-filter/`
+- [如何在 Excel 工作表中添加日期筛选](/cells/autofilter/add-date-filter/) – **方法：** POST，**端点：** `/cells/autofilter/add-date-filter/`
+- [如何在 Excel 工作表中添加动态筛选](/cells/autofilter/add-dynamic-filter/) – **方法：** POST，**端点：** `/cells/autofilter/add-dynamic-filter/`
+- [如何在 Excel 工作表中添加筛选](/cells/autofilter/add-filter/) – **方法：** POST，**端点：** `/cells/autofilter/add-filter/`
+- [如何在 Excel 工作表中添加图标筛选](/cells/autofilter/add-icon-filter/) – **方法：** POST，**端点：** `/cells/autofilter/add-icon-filter/`
+- [如何在 Excel 工作表中删除日期筛选](/cells/autofilter/delete-a-date-filter/) – **方法：** DELETE，**端点：** `/cells/autofilter/delete-a-date-filter/`
+- [如何在 Excel 工作表中删除筛选](/cells/delete-filter/) – **方法：** DELETE，**端点：** `/cells/delete-filter/`
+- [如何获取 Excel 工作表中的自动筛选描述](/cells/autofilter/get/) – **方法：** GET，**端点：** `/cells/autofilter/get/`
+- [如何在 Excel 工作表中匹配所有空白单元格](/cells/autofilter/match-all-blank/) – **方法：** POST，**端点：** `/cells/autofilter/match-all-blank/`
+- [如何在 Excel 工作表中匹配所有非空白单元格](/cells/autofilter/match-all-non-blank/) – **方法：** POST，**端点：** `/cells/autofilter/match-all-non-blank/`
+- [如何刷新 Excel 工作表中的自动筛选](/cells/autofilter/refresh/) – **方法：** POST，**端点：** `/cells/autofilter/refresh/`
+---

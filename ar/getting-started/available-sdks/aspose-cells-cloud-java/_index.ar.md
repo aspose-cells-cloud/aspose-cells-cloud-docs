@@ -1,31 +1,33 @@
-﻿---
-title: "Aspose.Cells Cloud SDK for Java: التحويل، الدمج، التقسيم، الحماية، البحث، الاستبدال، والمزيد"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for Java: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells مجموعة SDK السحابية لـ Jav
-type: docs
-url: /ar/available-sdks/aspose-cells-cloud-java/
-description: "توفر مجموعة SDK السحابية Aspose.Cells قوة حقيقية عبر الأنظمة الأساسية: يوفر استيراد واحد للمطورين Windows وLinux وmacOS نفس القدرة على إنشاء كل كائن وتحويله ودمجه وتقسيمه وحمايته ومعالجته - لا يلزم تثبيت Office ولا يلزم إجراء تعديلات خاصة بالمنصة"
-weight: 30
-kwords: Java SDK، Excel SDK for Java، Cloud SDK for Java، REST، مخطط، جدول محوري، كائن جدول/قائمة، تحويل جدول بيانات، PDF، CSV، JSON، Markdown، دمج، تقسيم، حماية، بحث، استبدال
 ---
-مجموعة تطوير البرامج مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا. يمكنك الوصول إليها[كود مصدر المكتبة Java لـ Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
+title: "Aspose.Cells Cloud SDK for Java: تحويل، دمج، تقسيم، حماية، بحث، استبدال، وأكثر من ذلك"
+second_title: "Document"
+ArticleTitle: "Aspose.Cells Cloud SDK for Java: تحويل، دمج، تقسيم، حماية، بحث، استبدال، وأكثر من ذلك"
+linktitle: "Aspose.Cells Cloud SDK for Java"
+type: docs
+url: /available-sdks/aspose-cells-cloud-java/
+description: "استخدم Aspose.Cells Cloud Java SDK لإنشاء وتحويل ودمج وتقسيم وحماية وبحث واستبدال ملفات Excel دون الحاجة إلى تثبيت Office."
+weight: 30
+keywords: "Aspose Cells Java SDK، تحويل Excel بـ Java، واجهة برمجة تطبيقات جداول البيانات في السحابة، مكتبة Java لملفات Excel، Aspose.Cells Cloud Java"
+---
 
-# **كيفية استخدام مكتبة Java من Aspose.Cells Cloud**
 
-مجموعة أدوات تطوير البرامج السحابية Aspose.Cells هي مكتبة فعّالة تُمكّن المطورين من التعامل مع ملفات Microsoft Excel ومعالجتها باستخدام لغة البرمجة Java. باستخدام هذه المجموعة، يُمكنك إنشاء مستندات Excel وتحريرها وتحويلها في السحابة، دون الحاجة إلى تثبيت برامج أو تبعيات إضافية على جهازك المحلي.
+يُعد SDK مفتوح المصدر ومرخّص بموجب ترخيص MIT. يمكنك الاطّلاع على كود مكتبة Java لـ Aspose.Cells Cloud [هنا](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
 
-في هذه المقالة، سنستكشف كيفية استخدام Aspose.Cells Cloud SDK for Java لأداء بعض المهام الشائعة، مثل إنشاء مصنف Excel جديد، وإدراج البيانات في الخلايا، وحفظ المصنف المعدل في السحابة.
+# **كيفية استخدام مكتبة Aspose.Cells Cloud لـ Java**
 
-## ابدء
+تُعد مكتبة Aspose.Cells Cloud SDK for Java مكتبة قوية تتيح للمطورين تنسيق ومعالجة ملفات مايكروسوفت إكسل باستخدام لغة البرمجة جافا. وباستخدام هذا SDK، يمكنك إنشاء وتعديل وتحويل مستندات Excel في السحابة، دون الحاجة إلى تثبيت أي برامج إضافية أو تبعيات على جهازك المحلي.
 
- قبل أن تتمكن من استخدام حزمة تطوير البرامج السحابية Aspose.Cells للغة Go، عليك إعداد بيئة التطوير وتثبيت التبعيات اللازمة. راجع[المقال](https://docs.aspose.cloud/cells/quickstart/) على موقع الويب Aspose للحصول على معرف العميل والسر الخاص بالعميل.
+في هذه المقالة، سنستكشف كيفية استخدام Aspose.Cells Cloud SDK for Java لأداء بعض المهام الشائعة، مثل إنشاء ملف Excel جديد، وإدراج البيانات في الخلايا، وحفظ الملف المعدّل في السحابة.
 
-## كيفية استخدام Maven لإضافة التبعيات إلى Aspose.Cells Cloud
+## البدء
 
-في مشروعك Maven، أضف تبعيات لحزمة SDK السحابية Aspose.Cells. أدرج التبعيات التالية في ملف pom.xml:
+قبل أن تبدأ باستخدام Aspose.Cells Cloud SDK for Java، يجب إعداد بيئة التطوير وتثبيت التبعيات الضرورية. راجع [المقالة](https://docs.aspose.cloud/cells/quickstart/) على موقع Aspose للحصول على معرّف العميل وسر معرّف العميل.
 
-**Aspose Maven المستودع**
+## كيفية استخدام Maven لإضافة التبعيات الخاصة بـ Aspose.Cells Cloud
+
+في مشروع Maven الخاص بك، أضف التبعيات الخاصة بـ Aspose.Cells Cloud SDK. ضع التبعيات التالية في ملف pom.xml:
+
+**مستودع Aspose Maven**
 
 ```java
 
@@ -39,7 +41,7 @@ kwords: Java SDK، Excel SDK for Java، Cloud SDK for Java، REST، مخطط، �
 
 ```
 
-**Maven التبعية**
+**تبعية Maven**
 
 ```java
 
@@ -51,17 +53,17 @@ kwords: Java SDK، Excel SDK for Java، Cloud SDK for Java، REST، مخطط، �
 
 ```
 
-## كيفية استخدام الحزمة Java لتحويل Xlsx إلى PDF
+## كيفية استخدام حزمة Java لتحويل ملف Xlsx إلى PDF
 
-- استيراد مكتبة السحابة Aspose.Cells
- ابدأ باستيراد الحزمة اللازمة من SDK Aspose.Cells Cloud Java إلى مشروعك.
-- تكوين العميل API باستخدام بيانات الاعتماد
- قم بمصادقة عميلك API باستخدام معرف العميل الفريد والسر الخاص بالعميل.
-- إعداد معلمات التحويل
- قم بتحديد المعلمات لمهمة التحويل، بما في ذلك اسم ملف المصدر، وتنسيق الإخراج المطلوب، ومسار مجلد التخزين.
-- تنفيذ تحويل المصنف
- استدعاء عملية التحويل باستخدام طريقة PostConvertWorkbook ومعالجة الاستجابة.
+- استيراد مكتبة Aspose.Cells Cloud  
+  ابدأ باستيراد الحزمة الضرورية من Aspose.Cells Cloud Java SDK إلى مشروعك.
+- تهيئة عميل API باستخدام بيانات الاعتماد  
+  قم بمصادقة عميل API الخاص بك باستخدام معرّف العميل وسر معرّف العميل الفريدين الخاصين بك.
+- إعداد معاملات عملية التحويل  
+  حدد المعاملات اللازمة لمهمة التحويل، بما في ذلك اسم الملف المصدر، وتنسيق الإخراج المطلوب، ومسار مجلد التخزين.
+- تنفيذ عملية تحويل Workbook  
+  استدعِ عملية التحويل باستخدام الطريقة PostConvertWorkbook، وتعامل مع الاستجابة.
 
-### **رمز العينة**
+### **كود مثال**
 
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_AvailableSDKs.java" >}}

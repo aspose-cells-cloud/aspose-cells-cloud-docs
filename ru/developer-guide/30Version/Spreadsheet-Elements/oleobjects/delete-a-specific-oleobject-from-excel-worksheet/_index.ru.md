@@ -1,74 +1,84 @@
-﻿---
-title: Удалить объект OLE на листе Excel
-second_title: Documen
-linktitle: Удалить
+---
+title: "Удаление OLE-объекта из рабочего листа Excel"
+second_title: "Документ"
+linktitle: "Удаление"
 type: docs
 url: /ru/oleobjects/delete/
-aliases: [/delete-a-specific-oleobject-from-excel-worksheet/]
-keywords: Delete an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает удаление OLE-объекта на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+aliases: [/ru/delete-a-specific-oleobject-from-excel-worksheet/]
+keywords: "Aspose.Cells, Cloud, Удаление, OLE, Объект, Excel, Рабочий лист, REST, API, SDK"
+description: "Узнайте, как удалить OLE-объект из рабочего листа Excel с помощью REST API Aspose.Cells Cloud (v4.0). Включает HTTPS-Endpoint, шаги аутентификации, пример cURL, фрагменты SDK, рекомендации по обработке ошибок и ссылки на дальнейшие действия."
 weight: 50
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Удаление объекта OLE на листе Excel
+ArticleTitle: "Удаление OLE-объекта из рабочего листа Excel с помощью Aspose.Cells Cloud API"
 ---
-Этот REST API указывает `delete` на объект OLE на листе Excel.
 
-## РСЕT API
+На этой странице объясняется, как удалить конкретный OLE-объект из рабочего листа в файле Excel с использованием **Aspose.Cells Cloud**. OLE-объектом может быть связанное изображение, диаграмма или любой встроенный объект, который Excel хранит как отдельную сущность.
+
+## Безопасность и аутентификация
+Aspose.Cells Cloud API защищены и требуют [аутентификацию на основе токена JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
- 
+DELETE https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
 ```
 
-Параметры запроса:
+### Параметры запроса
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Имя рабочего листа.|
-| oleObjectIndex| целое число| путь| Индекс объектов Ole|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра   | Тип    | Местоположение | Описание                                               |
+|-----------------|--------|----------------|--------------------------------------------------------|
+| name            | string | path           | Имя файла рабочей книги.                               |
+| sheetName       | string | path           | Имя рабочего листа.                                    |
+| oleObjectIndex  | integer| path           | Индекс OLE-объекта, подлежащего удалению.              |
+| folder          | string | query          | Папка, содержащая рабочую книгу. (необязательно)       |
+| storageName     | string | query          | Имя сервиса хранилища. (необязательно)                 |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject) определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Вы можете использовать утилиту командной строки **cURL** для удобного доступа к веб-сервисам Aspose.Cells. Следующий пример демонстрирует, как выполнить вызов с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v4.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Подробности ответа
+
+| HTTP-статус          | Описание                                                                | Пример JSON                                                           |
+|----------------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| **200 OK**           | OLE-объект успешно удалён.                                              | `{ "Code": 200, "Status": "OK" }`                                     |
+| **401 Unauthorized** | Отсутствует или недействителен JWT-токен.                              | `{ "Code": 401, "Message": "Access token is missing or invalid." }`  |
+| **404 Not Found**    | Указанная рабочая книга, рабочий лист или индекс OLE-объекта не существует. | `{ "Code": 404, "Message": "OLE object index out of range." }`      |
+| **400 Bad Request**  | Обязательные параметры отсутствуют или имеют неверный формат.           | `{ "Code": 400, "Message": "Invalid request parameters." }`          |
+
+Обрабатывайте эти ответы в своём приложении, проверяя код статуса и отображая сопровождающее сообщение.
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK берёт на себя низкоуровневые детали, позволяя вам сосредоточиться на задачах проекта. Посетите [репозиторий GitHub](https://github.com/aspose-cells-cloud), чтобы ознакомиться со полным списком SDK Aspose.Cells Cloud.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

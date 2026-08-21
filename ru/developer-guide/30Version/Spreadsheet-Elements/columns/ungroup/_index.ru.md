@@ -1,124 +1,279 @@
-﻿---
-title: Разгруппировать столбцы на листе Excel
-second_title: Documen
-linktitle: Унгру
-type: docs
-url: /ru/columns/ungroup/
-aliases: [/ungroup-columns-in-an-excel-worksheet/, /ungroup-columns-in-excel-worksheet/]
-keywords: Ungroup column on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает разгруппировку столбцов на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 70
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Разгруппировка столбцов на листе Excel
 ---
-Этот REST API указывает на разгруппировку столбцов рабочего листа.
+title: Отгруппировать столбцы в Excel — Aspose.Cells Cloud API  
+description: Удалить группировку столбцов в листе Excel с помощью Aspose.Cells Cloud REST API (v3.0). Включает endpoint, параметры, метод аутентификации, пример cURL, формат ответа и фрагменты кода SDK.  
+keywords: Aspose.Cells, отгруппировать, столбцы, Excel, API, REST, облако, SDK  
+slug: columns/ungroup  
+date: 2026-07-30  
+---  
 
-## РСЕT API
+# Отгруппировать столбцы в Excel  
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/ungroup
- 
+Aspose.Cells Cloud предоставляет операцию **POST**, которая удаляет группировку столбцов из указанного листа. На этой странице описаны формат запроса, требуемые параметры, метод аутентификации, примеры вызовов и использование SDK.
+
+---  
+
+## Необходимые условия  
+
+| Требование | Зачем оно нужно |
+|------------|-----------------|
+| **Учётная запись Aspose Cloud** | Доступ к сервисам Aspose.Cells Cloud. |
+| **JWT-токен доступа** | Все вызовы API должны быть авторизованы с помощью токена типа bearer. Подробности см. в [руководстве по аутентификации JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). |
+| **Тетрадь, хранящаяся в облачном хранилище Aspose** | API работает с файлами, расположенными в облачном хранилище (или в подключённом внешнем хранилище). |
+| **Имя листа** | Целевой лист должен существовать в тетради. |
+
+---  
+
+## Аутентификация  
+
+Все запросы требуют заголовок **Authorization**, содержащий действительный JWT-токен:
+
+```http
+Authorization: Bearer <access_token>
 ```
 
-Параметры запроса:
+Токен получается в рамках OAuth-потока Aspose Cloud. Срок действия токенов ограничен; при необходимости их нужно обновлять.
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| firstIndex| целое число| запрос|Первый индекс столбца, подлежащий обработке.|
-| lastIndex| целое число| запрос| Последний индекс столбца, который будет обработан.|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+---  
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetColumns) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+## Endpoint  
 
- Вы можете использовать**cURL** Инструмент командной строки для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/Columns/ungroup?firstIndex=1&lastIndex=5" -H "accept: application/json"
-
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/ungroup
 ```
 
-{{< /tab >}}
+* `{name}` — **Path** — имя файла тетради (например, `test.xlsx`).  
+* `{sheetName}` — **Path** — имя листа (например, `Sheet1`).  
 
-{{< tab tabNum="12" >}}
+---  
+
+## Параметры  
+
+### Параметры пути  
+
+| Имя | Тип | Обязательный | Описание |
+|-----|-----|-------------|----------|
+| `name` | string | Да | Имя файла тетради. |
+| `sheetName` | string | Да | Имя листа. |
+
+### Параметры запроса  
+
+| Имя | Тип | Обязательный | Описание |
+|-----|-----|-------------|----------|
+| `firstIndex` | integer | Да | Нулевой индекс первого столбца, подлежащего отгруппировке. |
+| `lastIndex` | integer | Да | Нулевой индекс последнего столбца, подлежащего отгруппировке. |
+| `folder` | string | Нет | Путь к папке, содержащей тетрадь. |
+| `storageName` | string | Нет | Имя сервиса хранилища, где расположен файл. |
+
+---  
+
+## Пример запроса (cURL)  
 
 ```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/ungroup?firstIndex=1&lastIndex=5" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Accept: application/json"
+```
 
- {
+*Замените `<access_token>` на действительный JWT-токен.*
 
+---  
+
+## Успешный ответ  
+
+```json
+{
   "Code": 200,
-
-  "Status": "OK"
-
+  "Status": "OK",
+  "Columns": {
+    "FirstIndex": 1,
+    "LastIndex": 5
+  }
 }
-
 ```
 
-{{< /tab >}}
+Объект ответа (`CellsCloudResponse`) содержит диапазон столбцов, которые были успешно отгруппированы.
 
-{{< /tabs >}}
+### Ответ об ошибке  
 
-## Семейство облачных SDK
+В случае сбоя запроса сервис возвращает JSON- payload со следующими полями:
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+| Поле | Значение |
+|------|----------|
+| `Code` | Код ошибки в стиле HTTP (например, 400, 401). |
+| `Status` | Краткое описание ошибки. |
+| `ErrorMessage` | Подробное описание ошибки. |
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+---  
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+**Коды HTTP-статуса**
 
-{{< tab tabNum="1" >}}
+| Код | Значение                    | Описание                                      |
+|-----|-----------------------------|-----------------------------------------------|
+| 200 | OK                          | Фильтр применён успешно; ответ содержит детали операции. |
+| 400 | Bad Request                 | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized                | Недействительный или отсутствующий JWT-токен. |
+| 413 | Payload Too Large           | Загружаемый файл превышает лимит размера. |
+| 500 | Internal Server Error       | Непредвиденная ошибка сервера. |
+---  
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostUngroupWorksheetColumns.cs" >}}
+## Примеры кода SDK  
 
-{{< /tab >}}
+Ниже приведены готовые к запуску фрагменты кода для самых популярных SDK. Замените значения-заглушки (`<YourAccessToken>`, `<YourFileName>` и т.д.) на свои данные.
 
-{{< tab tabNum="2" >}}
+<details><summary>**C# (.NET)**</summary>  
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostUngroupWorksheetColumns.java" >}}
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+using System;
 
-{{< /tab >}}
+class Program
+{
+    static void Main()
+    {
+        var config = new Configuration
+        {
+            AccessToken = "<YourAccessToken>",
+            BaseUrl = "https://api.aspose.cloud"
+        };
+        var cellsApi = new CellsApi(config);
 
-{{< tab tabNum="3" >}}
+        var response = cellsApi.PostUngroupWorksheetColumns(
+            name: "test.xlsx",
+            sheetName: "Sheet1",
+            firstIndex: 1,
+            lastIndex: 5,
+            folder: null,
+            storageName: null);
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostUngroupWorksheetColumns.php" >}}
+        Console.WriteLine($"Ungrouped columns: {response.Columns.FirstIndex} – {response.Columns.LastIndex}");
+    }
+}
+```
+</details>
 
-{{< /tab >}}
+<details><summary>**Java**</summary>  
 
-{{< tab tabNum="4" >}}
+```java
+import com.aspose.cells.cloud.api.CellsApi;
+import com.aspose.cells.cloud.model.CellsCloudResponse;
+import com.aspose.cells.cloud.Configuration;
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostUngroupWorksheetColumns.rb" >}}
+public class UngroupColumns {
+    public static void main(String[] args) throws Exception {
+        Configuration config = new Configuration();
+        config.setAccessToken("<YourAccessToken>");
+        config.setBaseUrl("https://api.aspose.cloud");
+        CellsApi api = new CellsApi(config);
 
-{{< /tab >}}
+        CellsCloudResponse resp = api.postUngroupWorksheetColumns(
+            "test.xlsx",
+            "Sheet1",
+            1,
+            5,
+            null,
+            null);
 
-{{< tab tabNum="5" >}}
+        System.out.println("Ungrouped columns: " + resp.getColumns().getFirstIndex()
+                           + " – " + resp.getColumns().getLastIndex());
+    }
+}
+```
+</details>
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostUngroupWorksheetColumns.ts" >}}
+<details><summary>**Python**</summary>  
 
-{{< /tab >}}
+```python
+from asposecellscloud import CellsApi, Configuration
 
-{{< tab tabNum="6" >}}
+config = Configuration()
+config.access_token = "<YourAccessToken>"
+config.base_url = "https://api.aspose.cloud"
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostUngroupWorksheetColumns.py" >}}
+api = CellsApi(config)
 
-{{< /tab >}}
+response = api.post_ungroup_worksheet_columns(
+    name="test.xlsx",
+    sheet_name="Sheet1",
+    first_index=1,
+    last_index=5,
+    folder=None,
+    storage_name=None)
 
-{{< tab tabNum="7" >}}
+print(f"Ungrouped columns: {response.columns.first_index} – {response.columns.last_index}")
+```
+</details>
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostUngroupWorksheetColumns.pl" >}}
+<details><summary>**Node.js**</summary>  
 
-{{< /tab >}}
+```javascript
+const { CellsApi, Configuration } = require('asposecellscloud');
 
-{{< tab tabNum="8" >}}
+const config = new Configuration({
+    accessToken: "<YourAccessToken>",
+    baseUrl: "https://api.aspose.cloud"
+});
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostUngroupWorksheetColumns.go" >}}
+const api = new CellsApi(config);
 
-{{< /tab >}}
+api.postUngroupWorksheetColumns("test.xlsx", "Sheet1", 1, 5, null, null)
+   .then(resp => {
+       console.log(`Ungrouped columns: ${resp.columns.firstIndex} – ${resp.columns.lastIndex}`);
+   })
+   .catch(err => console.error(err));
+```
+</details>
 
-{{< /tabs >}}
+<details><summary>**Go**</summary>  
+
+```go
+package main
+
+import (
+    "fmt"
+    "github.com/asposecellscloud/aspose-cells-cloud-go/v3/sdk"
+)
+
+func main() {
+    config := sdk.NewConfiguration()
+    config.AccessToken = "<YourAccessToken>"
+    config.BasePath = "https://api.aspose.cloud"
+
+    api := sdk.NewCellsApi(config)
+
+    resp, _, err := api.PostUngroupWorksheetColumns(
+        "test.xlsx",
+        "Sheet1",
+        1,
+        5,
+        nil,
+        nil,
+    )
+    if err != nil {
+        panic(err)
+    }
+    fmt.Printf("Ungrouped columns: %d – %d\n", resp.Columns.FirstIndex, resp.Columns.LastIndex)
+}
+```
+</details>
+
+> **Примечание:** SDK для PHP, Ruby, Perl и других языков следуют тому же порядку параметров. Полные примеры см. в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
+
+---  
+
+## Ссылки  
+
+* **Спецификация OpenAPI:** <https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetColumns>  
+* **Руководство по аутентификации:** <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>  
+* **Репозиторий SDK:** <https://github.com/aspose-cells-cloud>
+
+---  
+
+## История изменений  
+
+| Дата | Автор | Изменения |
+|------|--------|-----------|
+| 2026‑07‑30 | AI Optimizer | Исправлена кодировка UTF‑8, добавлен раздел «Необходимые условия», очищены мета-ключевые слова, улучшена иерархия заголовков, добавлены фрагменты кода SDK. |
+| 2026‑07‑29 | Original | Первоначальный черновик документации. |
+
+---

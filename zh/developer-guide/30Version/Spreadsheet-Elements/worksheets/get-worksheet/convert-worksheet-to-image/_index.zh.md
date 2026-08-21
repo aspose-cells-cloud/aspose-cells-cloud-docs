@@ -1,56 +1,76 @@
-﻿---
-title: 将工作表转换为各种格式
-second_title: Documen
-linktitle: 转换工作表
-type: docs
-url: /zh/worksheets/conversion/
-aliases: [/convert-worksheet-to-image/,/worksheets/to-image/]
-keywords: Convert worksheet to image format from an Excel workbook
-description: Aspose.Cells Cloud REST API 支持将 Excel 工作簿中的工作表转换为图像格式。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 130
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 将工作表转换为各种格式
 ---
-[获取/单元格/{名称}/工作表/{工作表名称}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) API 可让您将工作表转换为各种格式，例如[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [消耗臭氧层物质](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/) . 仅导出格式：[PDF](https://docs.fileformat.com/pdf/), [奥特斯](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [数字](https://docs.fileformat.com/spreadsheet/numbers/), [食物中毒](https://docs.fileformat.com/spreadsheet/fods/).
+title: "将工作表转换为 PDF、PNG、CSV 等格式 — Aspose.Cells Cloud API"
+second_title: "文档"
+linktitle: "转换工作表"
+type: docs
+url: /worksheets/conversion/
+aliases:
+  - /convert-worksheet-to-image/
+  - /worksheets/to-image/
+keywords: "Aspose.Cells, 工作表转换, REST API, cURL, SDK, PDF, PNG, CSV"
+description: "了解如何使用 Aspose.Cells Cloud REST API 将 Excel 工作簿中的单个工作表转换为 PDF、PNG、CSV 以及超过 15 种其他格式。包含 cURL 示例、SDK 代码片段及完整的参数参考。"
+weight: 130
+ArticleTitle: "将工作表转换为 PDF、PNG、CSV 等格式 — Aspose.Cells Cloud API"
+---
 
-## 休息 API
+**工作表转换 API** – `GET /cells/{name}/worksheets/{sheetName}` 端点用于将 Excel 工作簿中的单个工作表（即工作表）转换为其他文件格式。
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+> **前置条件：** 调用此端点前，您必须已获取有效的 JWT 令牌，并将工作簿存储在支持的 Aspose Cloud 存储位置中。
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+支持的**可导入**格式（工作表可从中读取）：
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+- XLS、XLSX、XLSB、CSV、TSV、XLSM、ODS、TXT
 
-{{< tab tabNum="1" >}}
+支持的**仅导出**格式（工作表可保存为）：
 
-```java
+- PDF、OTS、XPS、DIF、PNG、JPEG、BMP、SVG、TIFF、EMF、NUMBERS、FODS
 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+## REST API
 
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) 描述了公开可用的接口。
+
+### **请求参数**
+
+| 参数名                   | 类型    | 必填 | 默认值 | 允许值                                                         | 描述                             |
+| ------------------------ | ------- | ---- | ------ | -------------------------------------------------------------- | -------------------------------- |
+| **format**               | string  | 是   | –      | pdf、png、jpeg、bmp、svg、tiff、emf、csv、txt、…（见支持列表） | 目标输出格式。                   |
+| **verticalResolution**   | integer | 否   | 96     | 72–600                                                         | 图像输出的垂直 DPI。             |
+| **horizontalResolution** | integer | 否   | 96     | 72–600                                                         | 图像输出的水平 DPI。             |
+| **password**             | string  | 否   | –      | –                                                              | 用于打开受密码保护的工作簿的密码。 |
+| **folder**               | string  | 否   | –      | –                                                              | 存放源工作簿的云文件夹。         |
+| **storage**              | string  | 否   | –      | –                                                              | 存储名称（例如 “Default”）。     |
+
+### 响应
+
+| 状态码 | 描述                                   | 返回类型                   |
+| ------ | -------------------------------------- | -------------------------- |
+| **200** | 转换成功；返回转换后文件的二进制流。    | `application/octet-stream` |
+| **400** | 请求错误 — 缺少或无效的参数。          | JSON 错误对象              |
+| **401** | 未授权 — 无效或缺失 JWT 令牌。         | JSON 错误对象              |
+| **404** | 未找到 — 工作簿或工作表不存在。        | JSON 错误对象              |
+| **500** | 服务器内部错误 — 意外失败。            | JSON 错误对象              |
+
+#### 示例请求（cURL）
+
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-
-Converted Image 
+#### 示例响应
 
 ```
+已转换的图像（二进制流）
+```
 
-{{< /tab >}}
+## 云 SDK 家族
 
-{{< /tabs >}}
+使用 SDK 是开发速度最快的方式。SDK 处理底层细节，使您能专注于项目本身。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud) 获取 Aspose.Cells Cloud SDK 的完整列表。
 
-## Cloud SDK 系列
-
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
-
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells 云服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

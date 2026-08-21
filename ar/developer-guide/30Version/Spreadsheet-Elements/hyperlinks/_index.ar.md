@@ -1,22 +1,26 @@
-﻿---
-title: العمل مع الرابط التشعبي Excel
-second_title: Documen
-type: docs
-linktitle: رابط تشعبي
-url: /ar/hyperlinks/
-aliases: [/working-with-hyperlinks/,/working-with-hyperlink/]
-keywords: REST API, hyperlinks, spreadsheets, exce
-description: "Cells.Cloud API لتشغيل Excel: العمل مع الروابط التشعبية على ملف Excel"
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الروابط التشعبية
 ---
-تتيح الروابط التشعبية في Excel للمستخدمين إنشاء اختصارات للوصول إلى أي ورقة عمل أو ملف أو مجلد أو صفحة ويب. فهي تساعدنا على الوصول إلى أي مجلد أو رابط محدد بسرعة.
+title: "العمل مع روابط الربط في Excel"
+ArticleTitle: "العمل مع روابط الربط في Excel – وثائق Aspose Cells Cloud"
+second_title: "وثيقة"
+type: docs
+linktitle: "روابط الربط"
+url: /ar/hyperlinks/
+aliases: [/ar/working-with-hyperlinks/, /ar/working-with-hyperlink/]
+keywords: "Excel, روابط الربط, Cells.Cloud, API, Aspose.Cells, جدول بيانات, روابط, دليل"
+description: "استكشف كيفية استرجاع روابط الربط وإضافتها وتحديثها وحذفها في ملفات Excel باستخدام واجهة برمجة تطبيقات Aspose Cells Cloud."
+weight: 100
+---
 
-## العمل مع الارتباطات التشعبية على ملف Excel
+تتيح روابط الربط في Excel للمستخدمين إنشاء اختصارات لورقات العمل أو الملفات أو المجلدات أو صفحات الويب، مما يسهّل التنقّل السريع إلى مواقع محددة.
 
-- [كيفية الحصول على وصف ارتباط تشعبي من ورقة العمل Excel.](/cells/ar/hyperlinks/get/)
-- [كيفية الحصول على وصف كافة الارتباطات التشعبية من ورقة العمل Excel.](/cells/ar/hyperlinks/get-all/)
-- [كيفية إضافة ارتباطات تشعبية إلى ورقة العمل Excel](/cells/ar/hyperlinks/add/)
-- [كيفية تحديث الارتباطات التشعبية في ورقة العمل Excel](/cells/ar/hyperlinks/update/)
-- [كيفية حذف جميع الروابط التشعبية من ورقة العمل Excel](/cells/ar//hyperlinks/clear/)
-- [كيفية حذف ارتباط تشعبي من ورقة العمل Excel](/cells/ar//hyperlinks/delete/)
+**متطلبات مسبقة:** رمز API صالح (انظر [دليل المصادقة](/ar/authentication/)) وتنصيب SDK الخاص بـ Cells.Cloud.
+
+## العمل مع روابط الربط في ملف Excel
+
+- [كيفية استرجاع وصف رابط الربط من ورقة عمل Excel.](/ar/cells/hyperlinks/get/) – استرجاع تفاصيل رابط ربط واحد، بما في ذلك عنوان الهدف والنص المعروض.  
+- [كيفية استرجاع وصف جميع روابط الربط من ورقة عمل Excel.](/ar/cells/hyperlinks/get-all/) – سرد كل رابط ربط معرّف في ورقة العمل مع خصائصه المقابلة.  
+- [كيفية إضافة روابط ربط إلى ورقة عمل Excel](/ar/cells/hyperlinks/add/) – إدخال رابط ربط جديد في ورقة العمل، مع تحديد عنوان URL الهدف ونطاق الخلية.  
+- [كيفية تحديث روابط الربط في ورقة عمل Excel](/ar/cells/hyperlinks/update/) – تعديل عنوان رابط الربط الحالي أو النص المعروض أو خلية الهدف.  
+- [كيفية حذف جميع روابط الربط من ورقة عمل Excel](/ar/cells/hyperlinks/clear/) – إزالة جميع روابط الربط من ورقة العمل في عملية واحدة.  
+- [كيفية حذف رابط ربط من ورقة عمل Excel](/ar/cells/hyperlinks/delete/) – حذف رابط ربط محدّد يُعرّف بواسطة فهرسه أو مرجع الخلية.  
+---

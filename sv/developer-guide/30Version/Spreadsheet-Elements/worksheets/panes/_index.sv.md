@@ -1,17 +1,16 @@
-﻿---
-title: Hur man arbetar med rutor på ett Excel-arbetsblad
-second_title: Documen
-linktitle: Ruta
-type: docs
-url: /sv/worksheets/panes/
-keywords: How to work with panes on an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder arbete med paneler på ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hur man arbetar med paneler i ett Excel-kalkylblad
 ---
-## Arbeta med rutor i ett Excel-arbetsblad.
+title: "Hur man arbetar med rutor i ett Excel-ark"
+second_title: "Dokument"
+linktitle: "Rutor"
+type: docs
+url: /worksheets/panes/
+keywords: "Excel, rutor, frysa rutor, avfrysa rutor, Aspose.Cells Cloud, REST API"
+description: "Lär dig hur du arbetar med rutor i ett Excel-ark med Aspose.Cells Cloud REST API, inklusive steg för att frysa och avfrysa rutor över stödda SDK-språk."
+weight: 20
+---
 
-- [Hur man fryser rutor på ett Excel-arbetsblad.](/cells/sv/worksheets/panes/freeze/) 
-- [Hur man avfryser rutor i ett Excel-arbetsblad.](/cells/sv/worksheets/panes/unfreeze/) 
+## Arbeta med rutor i ett Excel-ark
 
-
+- [Hur man fryser rutor i ett Excel-ark](/cells/worksheets/panes/freeze/) 
+- [Hur man avfryser rutor i ett Excel-ark](/cells/worksheets/panes/unfreeze/)
+---

@@ -1,79 +1,113 @@
-﻿---
-title: Agregar un objeto de lista en una hoja de trabajo Excel
-second_title: Documen
-linktitle: Anuncio
-type: docs
-url: /es/list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
-keywords: Add a list object(table) into an Excel worksheet
-description: Aspose.Cells Cloud REST API permite añadir un objeto de lista (tabla) a una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 10
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Agregar un objeto de lista en una hoja de cálculo Excel
 ---
-Este REST API indica `add a list object(table)` en una hoja de cálculo Excel.
+title: "Agregar un objeto de lista (tabla) a una hoja de cálculo de Excel"
+second_title: "Document"
+linktype: "add"
+type: docs
+url: /list-objects/add/
+aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+keywords: "Aspose.Cells Cloud, API de Excel, objeto de lista, tabla, API REST, hoja de cálculo"
+description: "Aprenda cómo agregar un objeto de lista (tabla de Excel) a una hoja de cálculo mediante la API REST de Aspose.Cells Cloud. Incluye el punto de conexión, los parámetros, los pasos de autenticación, un ejemplo con cURL y ejemplos de código en SDK."
+weight: 10
+ArticleTitle: "Agregar un objeto de lista (tabla) a una hoja de cálculo de Excel – Documentación de Aspose.Cells Cloud"
+---
 
-## RSET API
+Esta API REST agrega un **objeto de lista (tabla)** a una hoja de cálculo de Excel.
+
+Antes de usar este punto de conexión, asegúrese de tener un token JWT válido, de que el libro esté almacenado en un almacenamiento en la nube compatible y de que la hoja de cálculo exista.
+
+## API REST
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 ```
 
-Los parámetros de la solicitud son:
+### Parámetros de la solicitud
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del documento.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| startRow| entero| consulta| La fila de inicio del rango de lista.|
-| columna de inicio| entero| consulta| La fila de inicio del rango de lista.|
-| fin de fila| entero| consulta| La fila de inicio del rango de lista.|
-| columna final| entero| consulta| La fila de inicio del rango de lista.|
-| tiene encabezados| booleano| consulta| Verdadero|
-| listaObjeto|| cuerpo| Objeto de lista|
-| carpeta| cadena| consulta| Carpeta del documento.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo    | Ubicación | Descripción                                                                 |
+|----------------------|---------|-----------|-----------------------------------------------------------------------------|
+| **name**             | string  | path      | Nombre del archivo del libro.                                               |
+| **sheetName**        | string  | path      | Nombre de la hoja de cálculo.                                               |
+| **startRow**         | integer | query     | Índice de base cero de la primera fila del rango de la tabla.               |
+| **startColumn**      | integer | query     | Índice de base cero de la primera columna del rango de la tabla.            |
+| **endRow**           | integer | query     | Índice de base cero de la última fila del rango de la tabla.                |
+| **endColumn**        | integer | query     | Índice de base cero de la última columna del rango de la tabla.             |
+| **hasHeaders**       | boolean | query     | `true` si la primera fila contiene encabezados de columna; de lo contrario, `false`. |
+| **listObject**       | object  | body      | Definición del objeto de lista (véase **Esquema del cuerpo de la solicitud**). |
+| **folder**           | string  | query     | Carpeta que contiene el libro.                                              |
+| **storageName**      | string  | query     | Nombre del almacenamiento.                                                  |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+### Esquema del cuerpo de la solicitud
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+El objeto **listObject** describe la tabla que se creará. Solo se muestran las propiedades más comunes; consulte la especificación OpenAPI para obtener la lista completa.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "displayName": "MiTabla",
+  "showTotals": false,
+  "style": "TableStyleMedium2"
 }
- 
 ```
 
-{{< /tab >}}
+### Ejemplo de solicitud (cURL)
 
-{{< /tabs >}}
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "displayName": "MiTabla",
+        "showTotals": false,
+        "style": "TableStyleMedium2"
+      }'
+```
+
+### Ejemplo de respuesta
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+### Códigos de error
+
+| Estado HTTP | Razón                 | Descripción                                              |
+|-------------|-----------------------|----------------------------------------------------------|
+| **400**     | Solicitud incorrecta  | Parámetros de rango inválidos o cuerpo JSON mal formado. |
+| **401**     | No autorizado         | Token JWT ausente o caducado.                            |
+| **404**     | No encontrado         | El libro o la hoja de cálculo especificados no existen.  |
+| **500**     | Error interno del servidor | Fallo inesperado del lado del servidor.             |
+
+**Ejemplo de respuesta 400**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Invalid range parameters."
+}
+```
+
+**Ejemplo de respuesta 401**
+
+```json
+{
+  "Code": 401,
+  "Status": "Unauthorized",
+  "Message": "Authentication token is missing or expired."
+}
+```
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) proporciona el contrato completo para esta operación.
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK maneja los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

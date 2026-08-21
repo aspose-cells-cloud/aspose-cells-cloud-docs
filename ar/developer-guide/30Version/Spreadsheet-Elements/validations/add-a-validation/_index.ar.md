@@ -1,74 +1,69 @@
-﻿---
-title: إضافة التحقق من صحة ورقة العمل على ورقة العمل Excel
-second_title: Documen
-linktitle: إعلان
-type: docs
-url: /ar/validations/add/
-keywords: Delete a worksheet validation on an Excel worksheet
-description: يدعم Cloud REST إضافة التحقق من صحة ورقة العمل على ورقة العمل. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة التحقق من صحة ورقة العمل على ورقة عمل Excel
 ---
-يشير هذا REST API إلى إضافة التحقق من صحة ورقة العمل على ورقة العمل Excel.
+title: "إضافة تحقق من صحة ورقة عمل إلى ورقة عمل Excel"
+second_title: "Document"
+linktitle: "Add"
+type: docs
+url: /validations/add/
+keywords: "إضافة تحقق من صحة ورقة عمل، Excel، Aspose.Cells Cloud، REST API، Spreadsheet، Validation rule"
+description: "استخدم واجهة Aspose.Cells Cloud REST API لإضافة تحقق من صحة ورقة عمل إلى ملف Excel. توفر SDKs لغات البرمجة التالية: C#، Java، PHP، Ruby، Node.js، Python، Perl، Go، وSwift."
+weight: 10
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية REST بإضافة تحقق من صحة ورقة عمل إلى ورقة عمل Excel.
+
+## واجهة REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
- 
 ```
 
-معلمات الطلب هي:
+### **مُعلَمات الطلب**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| يتراوح| خيط| استفسار| منطقة الخلايا المحددة|
-| تصديق|| جسم| تصديق|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المُعلَمة | النوع | الموقع | الوصف |
+| -------------- | ------ | -------- | ---------------------------------------------------------- |
+| name | string | path | اسم مستند Excel. |
+| sheetName | string | path | اسم ورقة العمل. |
+| range | string | query | نطاق الخلايا الذي ينطبق عليه التحقق (مثال: A1:B10). |
+| validation | object | body | تعريف قاعدة التحقق. |
+| folder | string | query | المجلد الذي يحتوي على المستند. |
+| storageName | string | query | اسم خدمة التخزين. |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+يُعرِّف [مواصفة OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) واجهة برمجة تطبيقات متاحة عمومًا وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells عبر الويب بسهولة. يوضح المثال التالي كيفية إجراء مكالمات لواجهة Cloud API باستخدام cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## عائلة SDK للحوسبة السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعد استخدام مكتبة SDK (Software Development Kit) أفضل طريقة لتسريع عملية التطوير. فالمكتبة تُدير التفاصيل من المستوى المنخفض وتسمح لك بالتركيز على مهام مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر واجهات برمجة التطبيقات باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -98,7 +93,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/va
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetValidation.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutWorksheetValidation.ts" >}}
 
 {{< /tab >}}
 

@@ -1,46 +1,59 @@
-﻿---
-title: 从 Excel 工作表中获取 MinDataRow
-type: docs
-url: /zh/get-mindatarow-from-excel-worksheet/
-weight: 90
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表获取 MinDataRow
 ---
-此 REST API 表示当 `cellOrMethodName` 参数为 `mindatarow` 时，在 Excel 文件中获取 `mindatarow`。
+title: "从 Excel 工作表中获取 MinDataRow"
+type: docs
+url: /get-mindatarow-from-excel-worksheet/
+weight: 90
+keywords: "Aspose Cells, MinDataRow, Excel API, 云 SDK"
+description: "使用 Aspose.Cells Cloud API v3.0 获取工作表中包含数据的最小行索引。包含请求格式、参数说明、示例 cURL 命令、响应示例、HTTP 状态码及 SDK 代码片段。"
+ArticleTitle: "从 Excel 工作表中获取 MinDataRow – Aspose.Cells Cloud API"
+---
 
-- **cURL 示例**
+**Aspose.Cells Cloud API v3.0** 的 **Get MinDataRow** 接口用于返回指定工作表中第一个包含数据的行索引。该操作需要有效的访问令牌（使用 Bearer 认证方式），并且查询参数 `cellOrMethodName` 必须设置为 `mindatarow`。
 
+**API 版本：3.0**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### cURL 示例
 
-{{< tab tabNum="11" >}}
+请求使用 HTTP GET 方法。请将占位符 `{fileName}` 和 `{sheetName}` 替换为实际的工作簿和工作表名称。
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mindatarow" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/mindatarow?cellOrMethodName=mindatarow" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
-{{< /tab >}}
+**请求参数**
 
-{{< tab tabNum="12" >}}
+| 参数名             | 位置 | 类型   | 是否必需 | 描述                                           |
+|--------------------|------|--------|----------|------------------------------------------------|
+| `fileName`         | Path | string | 是       | Excel 工作簿的名称（包含文件扩展名）。         |
+| `sheetName`        | Path | string | 是       | 工作簿中工作表的名称。                         |
+| `cellOrMethodName` | Query| string | 是       | 必须设置为 `mindatarow` 以调用此操作。         |
 
-```java
+**响应示例**
 
-{}
-
+```json
+{
+  "MinDataRow": 5
+}
 ```
 
-{{< /tab >}}
+**HTTP 状态码**
 
-{{< /tabs >}}
+| 状态码 | 含义         | 描述                                     |
+|--------|--------------|------------------------------------------|
+| 200    | OK（成功）   | 筛选操作成功；响应包含操作详情。         |
+| 400    | Bad Request  | 缺少或无效的参数（如不支持的文件类型）。 |
+| 401    | Unauthorized | JWT 令牌无效或缺失。                     |
+| 413    | Payload Too Large | 上传文件超过大小限制。               |
+| 500    | Internal Server Error | 服务器内部错误。                   |
 
-- **Cloud SDK 系列**
+### SDK 示例
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是开发速度最快的方式。SDK 会自动处理底层细节，让您专注于业务逻辑。请访问 <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener">GitHub 仓库</a> 查看 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
-
-
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -103,3 +116,9 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**另请参阅**
+
+- [获取 MaxDataRow](https://docs.aspose.cloud/cells/get-maxdatarow-from-excel-worksheet/)
+- [获取 MinColumn](https://docs.aspose.cloud/cells/get-mincolumn-from-excel-worksheet/)
+- [获取 MaxColumn](https://docs.aspose.cloud/cells/get-maxcolumn-from-excel-worksheet/)

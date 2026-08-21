@@ -1,40 +1,114 @@
-﻿---
-title: Конвертируйте файл Excel в другой формат или сохраните его в другом формате.
-second_title: Documen
-linktitle: Конвертация и сохранение A
+---
+title: "Преобразование файла Excel в другой формат или сохранение его иным способом."
+second_title: "Документ"
+linktitle: "Преобразование и Сохранить как"
 type: docs
 url: /ru/conversion-and-save-as/
-aliases: [/convert-excel/,/convert/]
-keywords: File conversion, Format conversion, PDF export, Save file, Save Excel file
-description: Aspose.Cells Cloud REST API поддерживает преобразование файлов Excel в различные форматы. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+aliases: [/ru/convert-excel/, /ru/convert/]
+keywords: "Aspose.Cells, API для преобразования Excel, преобразование Excel в PDF, Excel в CSV, Excel в JSON, облачное преобразование электронных таблиц"
+description: "Узнайте, как с помощью Aspose.Cells Cloud REST API преобразовывать рабочие книги Excel в PDF, CSV, JSON, HTML и более 15 других форматов. Включает сведения об эндпоинтах, примеры команд cURL и фрагменты кода для Java, .NET, Python и других языков."
 weight: 30
-kwords: Преобразование файлов, преобразование форматов, экспорт PDF, сохранение файлов, сохранение файлов Excel, облако Office, REST API, электронная таблица, PDF, CSV, Json, Markdown, преобразование Excel в различные форматы
+ArticleTitle: "Преобразование файлов Excel в PDF, CSV, JSON и другие форматы с помощью Aspose.Cells Cloud"
 ---
-Если вы изначально создали файл Excel в определенном формате, например[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , и[CSV](https://docs.fileformat.com/spreadsheet/csv/) Иногда может возникнуть необходимость преобразовать файл Excel в другой формат, чтобы воспользоваться его специальными функциями. Например, вам может понадобиться преобразовать файл Excel в[PDF](https://docs.fileformat.com/pdf/) для защиты вашего контента от несанкционированных изменений и обеспечения удобства его чтения и распространения одновременно.
 
-Конвертация документов — сложный процесс. Сложность процесса обусловлена множеством факторов, поэтому их следует учитывать. Возможность конвертировать файлы Excel из одного формата в другой с профессиональным качеством — главная особенность Aspose.Cells Cloud.
+Если вы изначально создали файл Excel в определённом формате — например, [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) или [CSV](https://docs.fileformat.com/spreadsheet/csv/) — вам может пригодиться возможность преобразовать файл Excel в другой формат, чтобы использовать специальные функции. Например, преобразование Excel в [PDF](https://docs.fileformat.com/pdf/) защищает его содержимое от несанкционированных изменений и облегчает чтение и распространение.
 
- Он отлично подходит для конвертации документов любого формата. Вы можете импортировать и экспортировать документы:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [ТСВ](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ОРВ](https://docs.fileformat.com/spreadsheet/ods/), [ТЕКСТ](https://docs.fileformat.com/word-processing/txt/) Форматы, доступные только для экспорта:[PDF](https://docs.fileformat.com/pdf/), [ОТС](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [ДИФ](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [ЧИСЛА](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+**Необходимые условия**  
+Перед вызовом API для преобразования получите токен доступа OAuth 2.0 от Aspose Cloud и убедитесь, что рабочая книга хранится в облачном хранилище Aspose Cloud (или передаётся в теле запроса для эндпоинта преобразования PUT).
 
-Предоставляются следующие API для преобразования файла Excel в другие форматы файлов:
+Преобразование документов — сложный процесс. Множество факторов влияет на его сложность и должны учитываться при трансформации. Обеспечение точного и профессионального качества преобразования между форматами Excel — ключевая особенность Aspose.Cells Cloud.
 
-|API|Описание|
-|:- |:- |
-|[ПОЛУЧИТЬ /cells/{имя}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|Конвертирует файл Excel в другие форматы из облачного хранилища.|
-|[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|Конвертирует файл Excel в другие форматы из содержимого запроса.|
-|[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|Сохраняет файл Excel как файл других форматов в хранилище.|
+Сервис одинаково хорошо работает для преобразования документов любого формата. Вы можете как импортировать, так и экспортировать документы в следующих форматах:
 
-В следующих статьях подробно описывается каждая версия API и содержатся примеры cURL и SDK для каждой версии API:
+**Поддерживаемые форматы**  
+- Импорт/Экспорт: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/)
+- Только экспорт: [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/)
 
-- [Конвертировать файл Excel в файл другого формата.](/cells/ru/convert-an-excel-file-to-different-formats)
-- [Сохраните файл Excel как файл другого формата.](/cells/ru/save-an-excel-file-as-other-formats-files)
-- [Конвертировать файл Excel в файл CSV.](/cells/ru/convert-excel-file-to-csv-file)
-- [Конвертировать файл Excel в файл Docx.](/cells/ru/convert-excel-file-to-docx-file)
-- [Конвертировать файл Excel в файл Html.](/cells/ru/convert-excel-file-to-html-file)
-- [Конвертировать файл Excel в файл Json.](/cells/ru/convert-excel-file-to-json-file)
-- [Конвертировать файл Excel в файл Markdown.](/cells/ru/convert-excel-file-to-markdown-file)
-- [Конвертировать файл Excel в файл PDF.](/cells/ru/convert-excel-file-to-pdf-file)
-- [Конвертировать файл Excel в файл PNG.](/cells/ru/convert-excel-file-to-png-file)
-- [Конвертировать файл Excel в файл PPTX.](/cells/ru/convert-excel-file-to-pptx-file)
-- [Преобразовать файл Excel в файл SQL.](/cells/ru/convert-excel-file-to-sql-file)
-- [Конвертировать файл Excel в файл TIFF.](/cells/ru/convert-excel-file-to-tiff-file)
+### API для преобразования
+
+| API                         | Описание                                                                 |
+| :-------------------------- | :---------------------------------------------------------------------- |
+| `GET /cells/{name}`         | Извлекает рабочую книгу Excel из облачного хранилища и преобразует её в указанный формат. |
+| `PUT /cells/convert`        | Преобразует рабочую книгу Excel, переданную в теле запроса, в указанный выходной формат. |
+| `POST /cells/{name}/saveAs` | Сохраняет существующую рабочую книгу Excel в другом формате непосредственно в облачное хранилище. |
+
+**Детали API**
+
+- **GET /cells/{name}**  
+  - **Параметры пути:** `name` — имя файла рабочей книги (обязательный параметр).  
+  - **Параметры запроса:** `format` — целевой формат (например, pdf, csv, json); `storage` — имя облачного хранилища (необязательный); `folder` — путь к папке внутри хранилища (необязательный).  
+  - **Ответ:** Поток данных преобразованной рабочей книги; `Content-Type` соответствует целевому формату.  
+  - **Коды состояния:** 200 OK, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error.  
+
+- **PUT /cells/convert**  
+  - **Тело запроса:** multipart/form‑data, содержащее исходный файл рабочей книги (`file`) и обязательное поле `format`, указывающее желаемый выходной формат.  
+  - **Ответ:** Бинарный поток преобразованного файла.  
+  - **Коды состояния:** 200 OK, 400 Bad Request, 401 Unauthorized, 500 Internal Server Error.  
+
+- **POST /cells/{name}/saveAs**  
+  - **Параметры пути:** `name` — имя существующей рабочей книги.  
+  - **Параметры запроса:** `format` — целевой формат; `outPath` — путь назначения в облачном хранилище (необязательный); `storage` — имя хранилища (необязательный).  
+  - **Ответ:** Объект JSON с результатом операции и путём сохранённого файла. Пример ответа:  
+
+    ```json
+    {
+      "status": "OK",
+      "code": 200,
+      "message": "Файл успешно сохранён.",
+      "path": "Converted/MyWorkbook.pdf"
+    }
+    ```  
+
+  - **Коды состояния:** 200 OK, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error.  
+
+**Пример cURL для преобразования в PDF**
+
+```bash
+curl -X GET "https://api.aspose.cloud/v3.0/cells/MyWorkbook.xlsx?format=pdf" \
+  -H "Authorization: Bearer {access_token}" \
+  -o MyWorkbook.pdf
+```
+
+**Фрагмент кода SDK для Java (GET /cells/{name})**
+
+```java
+CellsApi apiInstance = new CellsApi();
+String name = "MyWorkbook.xlsx";
+String format = "pdf";
+File result = apiInstance.cellsGetWorkbook(name, format, null, null);
+result.renameTo(new File("MyWorkbook.pdf"));
+```
+
+**Фрагмент кода SDK для .NET (PUT /cells/convert)**
+
+```csharp
+var api = new CellsApi();
+var file = File.ReadAllBytes("MyWorkbook.xlsx");
+var format = "pdf";
+var result = api.ConvertWorkbook(new MemoryStream(file), format);
+File.WriteAllBytes("MyWorkbook.pdf", result);
+```
+
+**Фрагмент кода SDK для Python (POST /cells/{name}/saveAs)**
+
+```python
+import asposecellscloud
+api = asposecellscloud.CellsApi()
+api.post_save_as(name="MyWorkbook.xlsx", format="pdf", out_path="Converted/MyWorkbook.pdf")
+```
+
+В следующих статьях подробно описан каждый API и приведены дополнительные примеры cURL и SDK:
+
+- [Преобразование файла Excel в другой формат](/ru/cells/convert-an-excel-file-to-different-formats)
+- [Сохранение файла Excel в другом формате](/ru/cells/save-an-excel-file-as-other-formats-files)
+- [Преобразование файла Excel в файл CSV](/ru/cells/convert-excel-file-to-csv-file)
+- [Преобразование файла Excel в файл DOCX](/ru/cells/convert-excel-file-to-docx-file)
+- [Преобразование файла Excel в файл HTML](/ru/cells/convert-excel-file-to-html-file)
+- [Преобразование файла Excel в файл JSON](/ru/cells/convert-excel-file-to-json-file)
+- [Преобразование файла Excel в файл Markdown](/ru/cells/convert-excel-file-to-markdown-file)
+- [Преобразование файла Excel в файл PDF](/ru/cells/convert-excel-file-to-pdf-file)
+- [Преобразование файла Excel в файл PNG](/ru/cells/convert-excel-file-to-png-file)
+- [Преобразование файла Excel в файл PPTX](/ru/cells/convert-excel-file-to-pptx-file)
+- [Преобразование файла Excel в файл SQL](/ru/cells/convert-excel-file-to-sql-file)
+- [Преобразование файла Excel в файл TIFF](/ru/cells/convert-excel-file-to-tiff-file)
+---

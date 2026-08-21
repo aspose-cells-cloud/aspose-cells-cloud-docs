@@ -1,76 +1,101 @@
-﻿---
-title: Autoanpassa kolumner i en Excel-fil
-second_title: Documen
-linktitle: Kolumn
-type: docs
-url: /sv/autofit-columns-on-an-excel-file/
-aliases: [/auto-fit-columns-in-excel-workbooks,/autofit-columns-in-excel-workbooks/,/columns/autofit/,/workbook/autofit/columns/]
-keywords: Autofit columns on an Excel workboo
-description: Aspose.Cells Cloud REST API stöder autopassning av kolumner i en Excel-arbetsbok. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 90
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Autoanpassa kolumner i en Excel-arbetsbok
 ---
-Denna REST API anger att kolumner ska autoanpassas i en Excel-arbetsbok.
+title: "Automatisk anpassning av kolumner i en Excel-fil"
+second_title: "Dokument"
+linktitle: "Kolumner"
+type: docs
+url: /autofit-columns-on-an-excel-file/
+aliases:
+  [
+    /auto-fit-columns-in-excel-workbooks,
+    /autofit-columns-in-excel-workbooks/,
+    /columns/autofit/,
+    /workbook/autofit/columns/,
+  ]
+keywords: "Automatisk anpassning av kolumner, Excel, Aspose.Cells Cloud, REST API, SDK, cURL, API"
+description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att automatiskt anpassa kolumner i en Excel-arbetsbok. Inkluderar begärandedetaljer, ett cURL-exempel och SDK-kodexempel för flera språk."
+weight: 90
+---
 
-## RSET API
+Denna REST API stöder automatisk anpassning av kolumner i en Excel-arbetsbok.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
- 
+## PostAutofitWorkbookColumns API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
 ```
 
-Begäranparametrarna är:
+Begärandeparametrarna är:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-|[autoFitterAlternativ](/cells/sv/auto-fitter-options/) || kropp| Alternativ för automatisk montör.|
-| startkolumn| heltal| fråga| Startkolumn.|
-| slutkolumn| heltal| fråga| Slutkolumn.|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameternamn         | Typ     | Plats  | Beskrivning                                         |
+| --------------------- | ------- | ------ | --------------------------------------------------- |
+| **name**              | string  | path   | Namnet på arbetsboksfilen.                          |
+| **autoFitterOptions** | objekt  | body   | Alternativ som styr beteendet för automatisk anpassning. |
+| **startColumn**       | heltal  | query  | Nollbaserat index för den första kolumnen som ska automatiskt anpassas. |
+| **endColumn**         | heltal  | query  | Nollbaserat index för den sista kolumnen som ska automatiskt anpassas. |
+| **folder**            | string  | query  | Mappen som innehåller arbetsboken.                  |
+| **storageName**       | string  | query  | Namnet på lagringstjänsten.                         |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns){:rel="noopener noreferrer"} definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda cURL-kommandoradsverktyget för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du anropar Cloud-API:et med cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -d '{"AutoFitMergedCells":true, "IgnoreHidden":true}'
- 
 ```
+
+> **Obs:** Använd alltid HTTPS-slutpunkten i produktion och håll din JWT-token hemlig.
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Förutsättningar
+Innan du anropar denna åtgärd, se till att du har en giltig Aspose Cloud API-nyckel, en genererad JWT-token och att målarbetsboken redan finns på den angivna lagringsplatsen.
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+**HTTP-statuskoder**
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+| Kod | Betydelse                   | Beskrivning                                           |
+|-----|-----------------------------|-------------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Otillåten                   | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
+
+API:et kan returnera följande HTTP-statuskoder:
+
+| Kod | Beskrivning                                      |
+|-----|--------------------------------------------------|
+| 200 | Framgång – kolumner har automatiskt anpassats   |
+| 400 | Felaktig begäran – saknade eller ogiltiga parametrar |
+| 401 | Otillåten – ogiltig eller utgången JWT-token    |
+| 500 | Serverfel – internt bearbetningsfel              |
+
+## Moln-SDK-familj
+
+Att använda en SDK är det mest effektiva sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på din projekts logik. Ta en titt på [GitHub-lagret](https://github.com/aspose-cells-cloud){:rel="noopener noreferrer"} för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,74 +1,101 @@
-﻿---
-title: Объединяет диапазон Cells в один элемент
-second_title: Documen
-linktitle: Слияние
-type: docs
-url: /ru/ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
-keywords: Merge a range of cells into a single cell
-description: Aspose.Cells Cloud REST API поддерживает объединение диапазона ячеек в одну ячейку на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Объединяет диапазон Cells в одну ячейку
 ---
-Этот REST API указывает на объединение диапазона ячеек в одну ячейку на листе Excel.
+title: "Aspose.Cells Cloud API – Объединение диапазона ячеек"
+second title: "Документ"
+linktitle: "Объединение"
+type: docs
+url: /ranges/merge/
+aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+keywords: "Aspose.Cells, объединение ячеек, Excel API, REST, облачный SDK"
+description: "Объединить диапазон ячеек в одну ячейку с помощью Aspose.Cells Cloud REST API. Описан формат запроса, параметры и примеры SDK для C#, Java, Python и других языков."
+weight: 20
+---
 
-## РСЕT API
+Этот REST API объединяет диапазон ячеек в одну ячейку на листе Excel.
+
+**Обзор** – объединение диапазона объединяет выбранные ячейки в одну ячейку, сохраняя значение левой верхней ячейки и отбрасывая остальные. Используйте эту операцию, если вам нужно создать заголовок, охватывающий несколько столбцов или строк, или упростить структуру листа.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
 ```
 
-Параметры запроса:
+### **Параметры запроса**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| название рабочей книги|
-| Имя_листа| нить| путь| имя рабочего листа|
-| диапазон|| тело| диапазон на листе|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра  | Тип    | Местоположение | Описание                                              |
+| --------------- | ------ | -------------- | ----------------------------------------------------- |
+| **name**        | string | path           | Имя рабочей книги.                                    |
+| **sheetName**   | string | path           | Имя листа.                                            |
+| **range**       | object | body           | Объект диапазона, определяющий ячейки для объединения. |
+| **folder**      | string | query          | Папка, в которой хранится рабочая книга.             |
+| **storageName** | string | query          | Имя хранилища.                                        |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMerge) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+#### Схема тела запроса
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Объект **Range** должен содержать следующие поля (остальные — необязательны):
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Свойство        | Тип     | Обязательное | Описание                                                |
+| --------------- | ------- | ------------ | ------------------------------------------------------- |
+| **FirstRow**    | integer | Да           | Индекс первой строки в диапазоне (начинается с 0).      |
+| **FirstColumn** | integer | Да           | Индекс первого столбца в диапазоне (начинается с 0).    |
+| **RowCount**    | integer | Да           | Количество строк, включаемых в диапазон.                |
+| **ColumnCount** | integer | Да           | Количество столбцов, включаемых в диапазон.             |
+| **Name**        | string  | Нет          | Необязательное имя диапазона.                           |
+| **RefersTo**    | string  | Нет          | Формула, на которую ссылается диапазон.                 |
+| **Worksheet**   | string  | Нет          | Имя листа (если отличается от параметра пути).          |
+| **RowHeight**   | number  | Нет          | Высота строк в диапазоне (в пикселях).                  |
+| **ColumnWidth** | number  | Нет          | Ширина столбцов в диапазоне (в пикселях).               |
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Следующий пример демонстрирует вызов облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/merge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "FirstRow": 9,
+        "FirstColumn": 0,
+        "RowCount": 1,
+        "ColumnCount": 7
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+#### Подробности ответа
+
+| HTTP-статус                   | Описание                                                    | Пример JSON                                            |
+| ----------------------------- | ----------------------------------------------------------- | ------------------------------------------------------ |
+| **200 OK**                    | Диапазон успешно объединён.                                 | `{ "Code": 200, "Status": "OK" }`                      |
+| **400 Bad Request**           | Некорректные параметры диапазона (например, выход индексов за пределы). | `{ "Code": 400, "Message": "Invalid range." }`         |
+| **401 Unauthorized**          | Отсутствует или недействителен JWT-токен.                  | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404 Not Found**             | Рабочая книга или лист не найдены.                          | `{ "Code": 404, "Message": "Resource not found." }`    |
+| **500 Internal Server Error** | Непредвиденная ошибка сервера.                              | `{ "Code": 500, "Message": "Internal server error." }` |
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — оптимальный способ ускорить разработку. SDK берёт на себя работу с низкоуровневыми деталями, позволяя сосредоточиться на задачах проекта. Полный список облачных SDK Aspose.Cells представлен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Примеры кода ниже показывают, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

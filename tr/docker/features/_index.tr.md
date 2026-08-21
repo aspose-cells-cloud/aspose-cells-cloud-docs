@@ -1,45 +1,74 @@
-﻿---
-title: "Aspose.Cells Bulut Docker Temel İşlevleri: Elektronik tablo dönüştürme, birleştirme, bölme, koruma, veri işleme ve daha fazlası"
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Docker Core Functionalit
-linktitle: Özellik
-type: docs
-url: /tr/docker-container-features/
-description: Aspose.Cells Bulut Docker Konteyneri, Aspose tarafından sağlanan ve Docker tabanlı bir konteynerleştirilmiş hizmettir ve Aspose.Cells Bulut API'in işlevlerini, Aspose'in genel bulut hizmetlerine güvenmeden yerel veya özel bulut ortamlarında dağıtmanıza olanak tanır.
-weight: 30
-kwords: Excel Bulut Docker Konteyneri, Kendi Bulut Docker Konteyneri, REST Docker Konteyneri, Elektronik Tablo, PDF, CSV, Json, Markdown, Docker Görüntüsü, Docker Konteyneri
 ---
-## Aspose.Cells Cloud Docker Konteyneri Nedir?
+title: "Aspose.Cells Cloud Docker Temel İşlevselliği: Elektronik Tablo Dönüştürme, Birleştirme, Bölme, Koruma, Veri İşleme ve Daha Fazlası."
+second_title: "Belge"
+ArticleTitle: "Aspose.Cells Cloud Docker Temel İşlevselliği"
+linktype: "Özellikler"
+type: docs
+url: /docker-container-features/
+description: "Aspose.Cells Cloud API'sini yerel olarak çalıştırın; Aspose.Cells Cloud Docker Container ile birlikte, tam elektronik tablo işleme, gizlilik ve çevrimdışı özellik sunan, Docker tabanlı, konteynerleştirilmiş bir hizmeti kullanın; Aspose'un herkese açık bulutunu kullanmadan."
+weight: 30
+keywords:
+  - Aspose.Cells
+  - Docker
+  - Elektronik tablo dönüştürme
+  - Excel işleme
+  - PDF dışa aktarma
+  - CSV işleme
+  - REST API
+  - Konteynerleştirilmiş hizmet
+  - Özel bulut
+  - Çevrimdışı işleme
+---
 
-Aspose.Cells Cloud Docker Container, Aspose tarafından sağlanan, Docker tabanlı bir konteynerleştirilmiş hizmettir ve Aspose.Cells Cloud API'in işlevlerini, Aspose'in genel bulut hizmetlerine güvenmeden yerel veya özel bulut ortamlarında dağıtmanıza olanak tanır.
+## Aspose.Cells Cloud Docker Container Nedir?
 
-## Aspose.Cells Cloud Docker Konteynerini neden kullanmalısınız?
+Aspose.Cells Cloud Docker Container, Aspose tarafından sağlanan ve Docker'a dayalı konteynerleştirilmiş bir hizmettir; Aspose.Cells Cloud API'sinin işlevlerini Aspose'un herkese açık bulut hizmetlerine ihtiyaç duymadan yerel veya özel bulut ortamlarında dağıtmayı sağlar.
 
-Aspose.Cells Cloud Docker Container, aşağıdakileri destekleyen güçlü bir elektronik tablo işleme Hizmetleri Konteyneridir:
+## Neden Aspose.Cells Cloud Docker Container Kullanmalısınız?
+
+Aspose.Cells Cloud Docker Container, aşağıdaki özellikleri destekleyen güçlü bir elektronik tablo işleme hizmeti konteyneridir:
 
 ### Temel Özellikler
 
-- Excel dosyalarının (XLS, XLSX, CSV, ODS, vb.) okunması ve yazılması
-- Formül hesaplamaları, Grafikler, Koşullu biçimlendirme, Pivot tablo, Grafik vb.
-- Format dönüştürme (örneğin Excel - PDF, HTML, resimler vb.)
-- Hücre işlemleri, Stil ayarları, çalışma sayfası yönetimi vb.
+- Excel dosyalarını okuma ve yazma (XLS, XLSX, CSV, ODS vb.)
+- Formül hesaplamaları, grafikler, koşullu biçimlendirme, pivot tablolar vb.
+- Format dönüştürme (örneğin Excel'den PDF, HTML, resimlere vb.)
+- Hücre işlemleri, stil ayarları, çalışma sayfası yönetimi vb.
 
-Aspose.Cells Cloud Docker Container bu özellikleri RESTful API olarak kapsüller ve bunları bir Docker imajına paketler, böylece bunları kendi altyapınızda çalıştırmanıza olanak tanır.
+Aspose.Cells Cloud Docker Container, bu özellikleri RESTful bir API olarak sarmallar ve bir Docker görüntüsüne paketler; böylece kendi altyapınızda çalıştırabilirsiniz.
 
-### Başlıca avantajları
+### Ana Avantajlar
 
-| Faydalar| Tanım|
-|:- |:- |
-| Veri gizliliği ve güvenliği| Tüm dosya işlemleri özel ağınız içerisinde yapılır, üçüncü taraf bir buluta yükleme yapmanıza gerek yoktur.|
-| Çevrimdışı kullanılabilirlik| Aspose genel buluta dayanmaz, intranet veya izole ortamlar için uygundur.|
-| Ölçeklenebilirlik| via Docker/Kubernetes'i kolayca ölçeklendirin.|
-| Birleşik API| Aspose.Cells Cloud public API ile tam uyumludur, kod değişikliği gerektirmez.|
-| Lisans Kontrolü| İki tür yetkilendirmeyi destekler, gerçek durumunuza göre size uygun olanı seçin.|
+| Avantajlar             | Açıklama                                                                     |
+| ---------------------- | ---------------------------------------------------------------------------- |
+| Veri gizliliği ve güvenliği | Tüm dosya işleme özel ağınız içinde yapılır; üçüncü taraf bir buluta yükleme gerekmez. |
+| Çevrimdışı kullanılabilirlik | Aspose'un herkese açık bulutuna bağlı değildir; intranet veya izole ortamlar için uygundur. |
+| Ölçeklendirilebilirlik | Docker/Kubernetes aracılığıyla kolayca ölçeklendirilebilir.                   |
+| Birleşik API           | Aspose.Cells Cloud herkese açık API ile tam uyumludur; kod değişikliği gerekmez. |
+| Lisans kontrolü        | İki tür yetkilendirme destekler; durumunuza uygun olanı seçebilirsiniz.       |
 
-## Aspose.Cells Cloud Docker Konteyneri nasıl kullanılır?
+## Aspose.Cells Cloud Docker Container Nasıl Kullanılır?
 
- Kullanıcı kılavuzuna bakın --[Aspose.Cells Cloud Docker Konteyneri nasıl kullanılır](https://docs.aspose.cloud/cells/docker-developer-guide/#run-asposecells-cloud-docker-container).
+Kullanım kılavuzuna bakın — [Aspose.Cells Cloud Docker Container Nasıl Kullanılır](https://docs.aspose.cloud/cells/docker-developer-guide/#run-asposecells-cloud-docker-container).
+
+**Önkoşullar**
+
+- Ana makinede Docker Engine 20.10 veya üzeri sürüm yüklü olmalı.  
+- Tipik iş yükleri için konteynere en az 2 GB RAM ve 2 CPU çekirdeği ayrılmış olmalı.  
+- Geçerli bir Aspose.Cells Cloud lisans dosyası (veya erişim belirteci) konteynere bağlanacak bir dizine yerleştirilmeli.
+
+**Hızlı başlangıç**
+
+1. Docker görüntüsünü çekin: `docker pull aspose/cells-cloud`.  
+2. Lisans ve veri dizinlerini bağlayarak konteyneri çalıştırın, örneğin:  
+   ```bash
+   docker run -d -p 8080:80 \
+     -v /path/to/license:/app/license \
+     -v /path/to/data:/app/data \
+     aspose/cells-cloud
+   ```  
+3. REST API'ye `http://localhost:8080/v3.0/` adresinden erişin. API kullanımına ilişkin ayrıntılı bilgi için [Aspose.Cells Cloud API referansına](https://docs.aspose.cloud/cells/api-reference/) bakın.
 
 ## Referans Belgesi
 
-- [Aspose.Cells Cloud Docker Konteyner depolaması nasıl yapılandırılır.](https://docs.aspose.cloud/cells/docker/storage/)
+- [Aspose.Cells Cloud Docker Container depolama yapılandırması nasıl yapılır.](https://docs.aspose.cloud/cells/docker/storage/)

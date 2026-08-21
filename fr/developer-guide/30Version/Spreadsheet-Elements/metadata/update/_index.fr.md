@@ -1,73 +1,78 @@
-﻿---
-title: Mettre à jour les métadonnées
-second_title: Documen
-linktitle: Mettre à jour sans utiliser de stockage
-type: docs
-url: /fr/metadata/update/
-keywords: Update metadata on excel files
-description: Aspose.Cells Cloud REST API prend en charge la mise à jour des métadonnées des fichiers Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 35
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Mise à jour des métadonnées
 ---
-Ce REST API indique de mettre à jour `metadata` à partir de plusieurs fichiers Excel.
+title: "Mettre à jour les métadonnées"
+second_title: "Document"
+linktitle: "Mise à jour sans utiliser le stockage"
+type: docs
+url: /metadata/update/
+keywords: "métadonnées, Excel, Aspose.Cells Cloud, API REST, mise à jour, classeur"
+description: "L'API REST Aspose.Cells Cloud permet de mettre à jour les métadonnées dans des fichiers Excel. Elle prend en charge plusieurs SDK (C#, Java, Python, Ruby, Go, etc.) pour une intégration fluide dans divers langages de programmation."
+weight: 35
+ArticleTitle: "Mettre à jour les métadonnées – Documentation de l’API Aspose.Cells Cloud"
+---
 
-## RSET API
+Cette API REST permet de mettre à jour les **métadonnées** dans plusieurs fichiers Excel.
+
+**Prérequis :** Un compte Aspose Cloud actif, un jeton d’accès JWT valide et les fichiers Excel à télécharger.
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/metadata/update
- 
+POST https://api.aspose.cloud/v3.0/cells/metadata/update
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| déposer| déposer| données de formulaire| Fichier à télécharger|
-| Propriétés du document|| corps| Propriété du document Cells.|
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/PostMetadata) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Paramètres de la requête
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom du paramètre   | Type   | Emplacement       | Description                                            |
+| -------------------- | ------ | ----------------- | ------------------------------------------------------ |
+| file                 | fichier | formData          | Le fichier Excel à télécharger.                        |
+| DocumentProperties   | objet  | Corps HTTP (JSON) | Propriétés du document à définir pour le fichier Excel. |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**Remarques :** Jusqu’à 10 fichiers peuvent être téléchargés en une seule requête. Les formats pris en charge incluent `.xlsx`, `.xls` et `.csv`. La taille totale de la requête ne doit pas dépasser 100 Mo.
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/PostMetadata) définit une interface de programmation accessible publiquement et permet d’effectuer directement des interactions REST depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud à l’aide de cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/metadata/update" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'  \
--d '[{name="test",value="test"}]'
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/metadata/update" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>" \
+  -F 'xxxxx1=@xxxx1.xlsx' \
+  -F 'xxxxx2=@xxxx2.xlsx' \
+  -d '[{ "name": "test", "value": "test" }]'
 ```
+
+La requête nécessite un en-tête **Authorization** contenant un jeton JWT en mode Bearer. Assurez-vous que le jeton a été généré à l’aide de vos identifiants client Aspose Cloud.
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
@@ -76,9 +81,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/metadata/update" \
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le moyen le plus efficace d’accélérer le développement. Un SDK gère les détails de bas niveau, vous permettant ainsi de vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants illustrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -131,3 +136,8 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Voir aussi :**  
+- [Obtenir les métadonnées](/metadata/get/)  
+- [Supprimer les métadonnées](/metadata/delete/)  
+---

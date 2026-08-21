@@ -1,134 +1,174 @@
-﻿---
-title: Format du papier
-second_title: Documen
-linktitle: Format du papier
-type: docs
-url: /fr/paper-size/
-keywords: Paper Size
-description: Aspose.Cells Cloud REST API prend en charge le réglage du format de papier. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Format de papier
 ---
+title: "Aspose.Cells Cloud – Liste complète des constantes de format de papier"
+second_title: "Document"
+linktitle: "Format de papier"
+type: docs
+url: /paper-size/
+keywords: "format de papier, Aspose.Cells Cloud, API REST, feuille de calcul, A4, Letter, ISO, JIS, PRC"
+description: "Liste complète des constantes de format de papier prises en charge par l’API REST Aspose.Cells Cloud, incluant les dimensions et des exemples d’utilisation pour définir des formats personnalisés dans les feuilles de calcul."
+weight: 20
+ArticleTitle: "Constantes de format de papier Aspose.Cells Cloud – Référence complète"
+---
+
 ## **Valeurs de format de papier**
 
-| Nom| Description|
-|:- |:- |
-| Lettre en papier| Lettre (8-1/2 po x 11 po)|
-| PapierLettrePetit| Lettre petite (8-1/2 po x 11 po)|
-| PaperTabloid| Tabloïd (11 po x 17 po)|
-| PaperLedger| Grand livre (17 po x 11 po)|
-| Papier juridique| Légal (8-1/2 po x 14 po)|
-| Déclaration sur papier| Déclaration (5-1/2 po x 8-1/2 po)|
-| PaperExecutive| Exécutif (7-1/4 po x 10-1/2 po)|
-| Papier A3| A3 (297 mm x 420 mm)|
-| Papier A4| A4 (210 mm x 297 mm)|
-| Papier A4 Petit| A4 Petit (210 mm x 297 mm)|
-| Papier A5| A5 (148 mm x 210 mm)|
-| Papier B4| JIS B4 (257 mm x 364 mm)|
-| Papier B5|JIS B5 (182 mm x 257 mm)|
-| PaperFolio| Folio (8-1/2 po x 13 po)|
-| PaperQuarto| In-quarto (215 mm x 275 mm)|
-| Papier 10x14| 10 po x 14 po|
-| Papier 11x17| 11 po x 17 po|
-| PaperNote| Remarque (8-1/2 po x 111 po)|
-| PaperEnvelope9| Enveloppe n° 9 (3-7/8 po 1 x 8-7/8 po)|
-| Enveloppe en papier 10| Enveloppe n° 10 (4-1/8 po x 9-1/2 po)|
-| Enveloppe en papier11| Enveloppe n° 11 (4-1/2 po x 10-3/8 po)|
-| Enveloppe en papier 12| Enveloppe n° 12 (4-1/2 po x 11 po)|
-| Enveloppe en papier 14| Enveloppe n° 14 (5 po x 11-1/2 po)|
-| Feuille de papier| feuille de taille C|
-| Feuille de papier| Feuille de taille D|
-| Feuille de papier| Feuille de taille E|
-| Enveloppe en papier DL| Enveloppe DL (110 mm x 220 mm)|
-| Enveloppe en papier C5| Enveloppe C5 (162 mm x 229 mm)|
-| Enveloppe en papier C3| Enveloppe C3 (324 mm x 458 mm)|
-| Enveloppe en papier C4| Enveloppe C4 (229 mm x 324 mm)|
-| Enveloppe en papier C6| Enveloppe C6 (114 mm x 162 mm)|
-|Enveloppe en papier C65| Enveloppe C65 (114 mm x 229 mm)|
-| Enveloppe en papier B4| Enveloppe B4 (250 mm x 353 mm)|
-| Enveloppe en papier B5| Enveloppe B5 (176 mm x 250 mm)|
-| Enveloppe en papier B6| Enveloppe B6 (176 mm x 125 mm)|
-| Enveloppe en papierItalie| Enveloppe Italie (110 mm x 230 mm)|
-| Enveloppe en papier Monarch| Enveloppe Monarch (3-7/8 po x 7-1/2 po)|
-| Enveloppe en papier personnelle| Enveloppe (3-5/8 po x 6-1/2 po)|
-| Papier plié en éventailUS| Plié en accordéon standard américain (14-7/8 po x 11 po)|
-| Papier plié en accordéonStdAllemand| Pliage en accordéon standard allemand (8-1/2 po x 12 po)|
-| Papier plié en accordéonJuridiqueAllemand| Pliage en accordéon légal allemand (8-1/2 po x 13 po)|
-| PapierISOB4| B4 (ISO) 250 x 353 mm|
-| Carte postale japonaise en papier| Carte postale japonaise (100 mm × 148 mm)|
-| Papier 9x11|9? × 11?0 |
-| Papier 10x11|10? × 11? |
-| Papier 15x11|15? × 11? |
-| Enveloppe en papierInvitation| Enveloppe d'invitation (220 mm × 220 mm)|
-| PaperLetterExtra| Lettre US Extra 9 \275 x 12 po|
-| PaperLegalExtra|US Legal Extra 9 \275 x 15 pouces|
-| PaperTabloidExtra| Tabloïd américain Extra 11,69 x 18 pouces|
-| Papier A4 Extra| A4 Extra 9,27 x 12,69 pouces|
-| PapierLettreTransversale| Lettre transversale 8 \275 x 11 po|
-| Papier A4Transversal| A4 Transversal 210 x 297 mm|
-| PaperLetterExtraTransverse| Lettre extra transversale 9\275 x 12 po|
-| PapierSuperA| SuperA/SuperA/A4 227 x 356 mm|
-| PaperSuperB| SuperB/SuperB/A3 305 x 487 mm|
-| PaperLetterPlus| Lettre US Plus 8,5 x 12,69 pouces|
-| PapierA4Plus| A4 Plus 210 x 330 mm|
-| Papier A5Transversal| A5 Transversal 148 x 210 mm|
-| PaperJISB5Transverse| B5 (JIS) Transversal 182 x 257 mm|
-| Papier A3 Extra| A3 Extra 322 x 445 mm|
-| Papier A5 Extra| A5 Extra 174 x 235 mm|
-| PapierISOB5Extra| B5 (ISO) Extra 201 x 276 mm|
-| Papier A2| A2 420 x 594 mm|
-| Papier A3Transversal| A3 Transversal 297 x 420 mm|
-| Papier A3 ExtraTransversal|A3 Extra Transversal 322 x 445 mm|
-| Carte postale double en papier japonais| Carte postale japonaise double 200 x 148 mm|
-| Papier A6| A6 105 x 148 mm|
-| PapierJaponaisEnveloppeKaku2| Enveloppe japonaise Kaku #2|
-| PapierJaponaisEnveloppeKaku3| Enveloppe japonaise Kaku #3|
-| PapierJaponaisEnveloppeChou3| Enveloppe japonaise Chou #3|
-| PapierJaponaisEnveloppeChou4| Enveloppe japonaise Chou #4|
-| Lettre en papier tournée| 11 po × 8,5 po|
-| Papier A3 tourné| 420 mm × 297 mm|
-| Papier A4 tourné| 297 mm × 210 mm|
-| Papier A5 tourné| 210 mm × 148 mm|
-| PaperJISB4Rotated| B4 (JIS) tourné 364 x 257 mm|
-| PaperJISB5 tourné| B5 (JIS) tourné 257 x 182 mm|
-| Carte postale japonaise en papier tournée| Carte postale japonaise tournée 148 x 100 mm|
-| Carte postale double en papier japonais tournée| Carte postale japonaise double tournée 148 x 200 mm|
-| Papier A6 tourné| A6 tourné 148 x 105 mm|
-| PapierJaponaisEnveloppeKaku2Rotation|Enveloppe japonaise Kaku #2 tournée|
-| papierjaponaisenveloppekaku3rotation| Enveloppe japonaise Kaku #3 tournée|
-| PapierJaponaisEnveloppeChou3Rotation| Enveloppe japonaise Chou #3 tournée|
-| PapierJaponaisEnveloppeChou4Rotation| Enveloppe japonaise Chou #4 tournée|
-| PapierJISB6| B6 (JIS) 128 x 182 mm|
-| PaperJISB6 tourné| B6 (JIS) tourné 182 x 128 mm|
-| Papier 12x11| 12 x 11 pouces|
-| PapierJaponaisEnveloppeYou4| Enveloppe japonaise You #4|
-| PapierJaponaisEnveloppeYou4Rotated| Enveloppe japonaise You #4 tournée|
-| PapierPRC16K| PRC 16K 146 x 215 mm|
-| PapierPRC32K| PRC 32K 97 x 151 mm|
-| PapierPRCEnveloppe1| Enveloppe PRC n° 1 102 x 165 mm|
-| PapierPRCEnveloppe2| Enveloppe PRC n° 2 102 x 176 mm|
-| PapierPRCEnveloppe3| Enveloppe PRC n° 3 125 x 176 mm|
-| PapierPRCEnveloppe4| Enveloppe PRC n° 4 110 x 208 mm|
-| PapierPRCEnveloppe5| Enveloppe PRC n° 5 110 x 220 mm|
-| PapierPRCEnveloppe6|Enveloppe PRC n° 6 120 x 230 mm|
-| PapierPRCEnveloppe7| Enveloppe PRC n° 7 160 x 230 mm|
-| PapierPRCEnveloppe8| Enveloppe PRC n° 8 120 x 309 mm|
-| PapierPRCEnveloppe9| Enveloppe PRC n° 9 229 x 324 mm|
-| PapierPRCEnveloppe10| Enveloppe PRC n° 10 324 x 458 mm|
-| PapierPRC16KRotated| PRC 16K tourné|
-| PapierPRC32KRotated| PRC 32K tourné|
-| PapierPRCBig32KRotated| PRC 32K (grand) tourné|
-| PapierPRCEnveloppe1tourné| Enveloppe PRC n° 1 tournée 165 x 102 mm|
-| PapierPRCEnveloppe2tourné| Enveloppe PRC n° 2 tournée 176 x 102 mm|
-| PapierPRCEnveloppe3Tourné| Enveloppe PRC n° 3 tournée 176 x 125 mm|
-| PapierPRCEnveloppe4Rotated| Enveloppe PRC n° 4 tournée 208 x 110 mm|
-| PapierPRCEnveloppe5Tourné| Enveloppe PRC n° 5 tournée 220 x 110 mm|
-| PapierPRCEnveloppe6Tourné| Enveloppe PRC n° 6 tournée 230 x 120 mm|
-| PapierPRCEnveloppe7tourné| Enveloppe PRC n° 7 tournée 230 x 160 mm|
-| PapierPRCEnveloppe8Tourné|Enveloppe PRC n° 8 tournée 309 x 120 mm|
-| PapierPRCEnveloppe9tourné| Enveloppe PRC n° 9 tournée 324 x 229 mm|
-| PapierPRCEnveloppe10tourné| Enveloppe PRC n° 10 tournée 458 x 324 mm|
-| Papier B3| B3 habituel (13,9 x 19,7 pouces)|
-| Carte de visite en papier| Carte de visite (90 mm x 55 mm)|
-| Papier thermique| Thermique (3 x 11 pouces)|
-| Coutume| Représente le format de papier personnalisé.|
+Les développeurs utilisent ces constantes avec l’API `SetPageSetup` (ou la méthode équivalente dans le SDK) afin de définir les dimensions de page d’une feuille de calcul. Le tableau ci-dessous répertorie toutes les valeurs de format de papier prises en charge, accompagnées de leurs dimensions physiques.
+
+<caption>Constantes de format de papier prises en charge par Aspose.Cells Cloud</caption>
+
+| Nom                                | Description                                        |
+| ---------------------------------- | -------------------------------------------------- |
+| PaperLetter                        | Letter (8½ pouces × 11 pouces)                     |
+| PaperLetterSmall                   | Letter Small (8½ pouces × 11 pouces) – identique à Letter |
+| PaperTabloid                       | Tabloid (11 pouces × 17 pouces)                    |
+| PaperLedger                        | Ledger (17 pouces × 11 pouces)                     |
+| PaperLegal                         | Legal (8½ pouces × 14 pouces)                      |
+| PaperStatement                     | Statement (5½ pouces × 8½ pouces)                  |
+| PaperExecutive                     | Executive (7¼ pouces × 10½ pouces)                 |
+| PaperA3                            | A3 (297 mm × 420 mm)                               |
+| PaperA4                            | A4 (210 mm × 297 mm)                               |
+| PaperA4Small                       | A4 Small (210 mm × 297 mm) – identique à A4       |
+| PaperA5                            | A5 (148 mm × 210 mm)                               |
+| PaperB4                            | JIS B4 (257 mm × 364 mm)                           |
+| PaperB5                            | JIS B5 (182 mm × 257 mm)                           |
+| PaperFolio                         | Folio (8½ pouces × 13 pouces)                      |
+| PaperQuarto                        | Quarto (215 mm × 275 mm)                           |
+| Paper10x14                         | 10 pouces × 14 pouces                              |
+| Paper11x17                         | 11 pouces × 17 pouces                              |
+| PaperNote                          | Note (8½ pouces × 11 pouces)                       |
+| PaperEnvelope9                     | Enveloppe n°9 (3 7/8 pouces × 8 7/8 pouces)       |
+| PaperEnvelope10                    | Enveloppe n°10 (4 1/8 pouces × 9½ pouces)         |
+| PaperEnvelope11                    | Enveloppe n°11 (4½ pouces × 10 3/8 pouces)        |
+| PaperEnvelope12                    | Enveloppe n°12 (4½ pouces × 11 pouces)            |
+| PaperEnvelope14                    | Enveloppe n°14 (5 pouces × 11½ pouces)            |
+| PaperCSheet                        | Feuille format C                                  |
+| PaperDSheet                        | Feuille format D                                  |
+| PaperESheet                        | Feuille format E                                  |
+| PaperEnvelopeDL                    | Enveloppe DL (110 mm × 220 mm)                    |
+| PaperEnvelopeC5                    | Enveloppe C5 (162 mm × 229 mm)                    |
+| PaperEnvelopeC3                    | Enveloppe C3 (324 mm × 458 mm)                    |
+| PaperEnvelopeC4                    | Enveloppe C4 (229 mm × 324 mm)                    |
+| PaperEnvelopeC6                    | Enveloppe C6 (114 mm × 162 mm)                    |
+| PaperEnvelopeC65                   | Enveloppe C65 (114 mm × 229 mm)                   |
+| PaperEnvelopeB4                    | Enveloppe B4 (250 mm × 353 mm)                    |
+| PaperEnvelopeB5                    | Enveloppe B5 (176 mm × 250 mm)                    |
+| PaperEnvelopeB6                    | Enveloppe B6 (176 mm × 125 mm)                    |
+| PaperEnvelopeItaly                 | Enveloppe Italy (110 mm × 230 mm)                 |
+| PaperEnvelopeMonarch               | Enveloppe Monarch (3 7/8 pouces × 7 ½ pouces)     |
+| PaperEnvelopePersonal              | Enveloppe personnelle (3 5/8 pouces × 6 ½ pouces) |
+| PaperFanfoldUS                     | Fanfold standard américain (14 7/8 pouces × 11 pouces) |
+| PaperFanfoldStdGerman              | Fanfold standard allemand (8½ pouces × 12 pouces)  |
+| PaperFanfoldLegalGerman            | Fanfold juridique allemand (8½ pouces × 13 pouces) |
+| PaperISOB4                         | B4 (ISO) 250 mm × 353 mm                          |
+| PaperJapanesePostcard              | Carte postale japonaise (100 mm × 148 mm)         |
+| Paper9x11                          | 9 pouces × 11 pouces                              |
+| Paper10x11                         | 10 pouces × 11 pouces                             |
+| Paper15x11                         | 15 pouces × 11 pouces                             |
+| PaperEnvelopeInvite                | Enveloppe d’invitation (220 mm × 220 mm)          |
+| PaperLetterExtra                   | Letter Extra États-Unis (9¼ pouces × 12 pouces)    |
+| PaperLegalExtra                    | Legal Extra États-Unis (9¼ pouces × 15 pouces)     |
+| PaperTabloidExtra                  | Tabloid Extra États-Unis (11,69 pouces × 18 pouces) |
+| PaperA4Extra                       | A4 Extra (9,27 pouces × 12,69 pouces)              |
+| PaperLetterTransverse              | Letter transverse (8¼ pouces × 11 pouces)         |
+| PaperA4Transverse                  | A4 transverse (210 mm × 297 mm)                   |
+| PaperLetterExtraTransverse         | Letter Extra transverse (9¼ pouces × 12 pouces)   |
+| PaperSuperA                        | SuperA / SuperA / A4 (227 mm × 356 mm)            |
+| PaperSuperB                        | SuperB / SuperB / A3 (305 mm × 487 mm)            |
+| PaperLetterPlus                    | US Letter Plus (8,5 pouces × 12,69 pouces)        |
+| PaperA4Plus                        | A4 Plus (210 mm × 330 mm)                         |
+| PaperA5Transverse                  | A5 transverse (148 mm × 210 mm)                   |
+| PaperJISB5Transverse               | B5 (JIS) transverse (182 mm × 257 mm)             |
+| PaperA3Extra                       | A3 Extra (322 mm × 445 mm)                        |
+| PaperA5Extra                       | A5 Extra (174 mm × 235 mm)                        |
+| PaperISOB5Extra                    | B5 (ISO) Extra (201 mm × 276 mm)                  |
+| PaperA2                            | A2 (420 mm × 594 mm)                              |
+| PaperA3Transverse                  | A3 transverse (297 mm × 420 mm)                   |
+| PaperA3ExtraTransverse             | A3 Extra transverse (322 mm × 445 mm)             |
+| PaperJapaneseDoublePostcard        | Carte postale double japonaise (200 mm × 148 mm)  |
+| PaperA6                            | A6 (105 mm × 148 mm)                              |
+| PaperJapaneseEnvelopeKaku2         | Enveloppe japonaise Kaku n°2 (100 mm × 148 mm)   |
+| PaperJapaneseEnvelopeKaku3         | Enveloppe japonaise Kaku n°3 (120 mm × 235 mm)   |
+| PaperJapaneseEnvelopeChou3         | Enveloppe japonaise Chou n°3 (120 mm × 235 mm)   |
+| PaperJapaneseEnvelopeChou4         | Enveloppe japonaise Chou n°4 (120 mm × 235 mm)   |
+| PaperLetterRotated                 | 11 pouces × 8,5 pouces                            |
+| PaperA3Rotated                     | 420 mm × 297 mm                                   |
+| PaperA4Rotated                     | 297 mm × 210 mm                                   |
+| PaperA5Rotated                     | 210 mm × 148 mm                                   |
+| PaperJISB4Rotated                  | B4 (JIS) tourné (364 mm × 257 mm)                 |
+| PaperJISB5Rotated                  | B5 (JIS) tourné (257 mm × 182 mm)                 |
+| PaperJapanesePostcardRotated       | Carte postale japonaise tournée (148 mm × 100 mm) |
+| PaperJapaneseDoublePostcardRotated | Carte postale double japonaise tournée (148 mm × 200 mm) |
+| PaperA6Rotated                     | A6 tourné (148 mm × 105 mm)                       |
+| PaperJapaneseEnvelopeKaku2Rotated  | Enveloppe japonaise Kaku n°2 tournée (148 mm × 100 mm) |
+| PaperJapaneseEnvelopeKaku3Rotated  | Enveloppe japonaise Kaku n°3 tournée (235 mm × 120 mm) |
+| PaperJapaneseEnvelopeChou3Rotated  | Enveloppe japonaise Chou n°3 tournée (235 mm × 120 mm) |
+| PaperJapaneseEnvelopeChou4Rotated  | Enveloppe japonaise Chou n°4 tournée (235 mm × 120 mm) |
+| PaperJISB6                         | B6 (JIS) 128 mm × 182 mm                          |
+| PaperJISB6Rotated                  | B6 (JIS) tourné (182 mm × 128 mm)                 |
+| Paper12x11                         | 12 pouces × 11 pouces                             |
+| PaperJapaneseEnvelopeYou4          | Enveloppe japonaise You n°4 (100 mm × 148 mm)    |
+| PaperJapaneseEnvelopeYou4Rotated   | Enveloppe japonaise You n°4 tournée (148 mm × 100 mm) |
+| PaperPRC16K                        | PRC 16K (146 mm × 215 mm)                         |
+| PaperPRC32K                        | PRC 32K (97 mm × 151 mm)                          |
+| PaperPRCEnvelope1                  | Enveloppe PRC n°1 (102 mm × 165 mm)               |
+| PaperPRCEnvelope2                  | Enveloppe PRC n°2 (102 mm × 176 mm)               |
+| PaperPRCEnvelope3                  | Enveloppe PRC n°3 (125 mm × 176 mm)               |
+| PaperPRCEnvelope4                  | Enveloppe PRC n°4 (110 mm × 208 mm)               |
+| PaperPRCEnvelope5                  | Enveloppe PRC n°5 (110 mm × 220 mm)               |
+| PaperPRCEnvelope6                  | Enveloppe PRC n°6 (120 mm × 230 mm)               |
+| PaperPRCEnvelope7                  | Enveloppe PRC n°7 (160 mm × 230 mm)               |
+| PaperPRCEnvelope8                  | Enveloppe PRC n°8 (120 mm × 309 mm)               |
+| PaperPRCEnvelope9                  | Enveloppe PRC n°9 (229 mm × 324 mm)               |
+| PaperPRCEnvelope10                 | Enveloppe PRC n°10 (324 mm × 458 mm)              |
+| PaperPRC16KRotated                 | PRC 16K tourné                                     |
+| PaperPRC32KRotated                 | PRC 32K tourné                                     |
+| PaperPRCBig32KRotated              | PRC 32K (grand) tourné                            |
+| PaperPRCEnvelope1Rotated           | Enveloppe PRC n°1 tournée (165 mm × 102 mm)       |
+| PaperPRCEnvelope2Rotated           | Enveloppe PRC n°2 tournée (176 mm × 102 mm)       |
+| PaperPRCEnvelope3Rotated           | Enveloppe PRC n°3 tournée (176 mm × 125 mm)       |
+| PaperPRCEnvelope4Rotated           | Enveloppe PRC n°4 tournée (208 mm × 110 mm)       |
+| PaperPRCEnvelope5Rotated           | Enveloppe PRC n°5 tournée (220 mm × 110 mm)       |
+| PaperPRCEnvelope6Rotated           | Enveloppe PRC n°6 tournée (230 mm × 120 mm)       |
+| PaperPRCEnvelope7Rotated           | Enveloppe PRC n°7 tournée (230 mm × 160 mm)       |
+| PaperPRCEnvelope8Rotated           | Enveloppe PRC n°8 tournée (309 mm × 120 mm)       |
+| PaperPRCEnvelope9Rotated           | Enveloppe PRC n°9 tournée (324 mm × 229 mm)       |
+| PaperPRCEnvelope10Rotated          | Enveloppe PRC n°10 tournée (458 mm × 324 mm)      |
+| PaperB3                            | B3 standard (13,9 pouces × 19,7 pouces)            |
+| PaperBusinessCard                  | Carte de visite (90 mm × 55 mm)                   |
+| PaperThermal                       | Thermique (3 pouces × 11 pouces)                  |
+| Custom                             | Représente un format de papier personnalisé. Utilisez l’énumération `Custom` avec des valeurs explicites de largeur et hauteur en points.
+
+**Conditions préalables**  
+Un jeton d’accès Aspose Cloud valide, doté des permissions appropriées, ainsi que la version de l’API (`v3.0`) doivent être obtenus avant d’invoquer le point de terminaison.
+
+### Comment définir un format de papier avec l’API REST Aspose.Cells Cloud
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/Workbook/worksheets/Sheet1/pageSetup" \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Content-Type: application/json" \
+  -d '{"PaperSize":"PaperA4"}'
+```
+
+**Détails de la requête**  
+- **Méthode :** `PUT`  
+- **Point de terminaison :** `/cells/Workbook/worksheets/{sheetName}/pageSetup`  
+- **Paramètres de chemin :** `sheetName` – nom de la feuille de calcul (chaîne de caractères, obligatoire).  
+- **Corps de la requête :** objet JSON contenant la propriété `PaperSize`. La valeur doit correspondre à l’une des constantes listées dans le tableau ci-dessus, par exemple `"PaperA4"`.
+
+**Réponses**  
+- `200 OK` – Configuration de page mise à jour avec succès.  
+- `400 Bad Request` – Valeur `PaperSize` invalide.  
+- `401 Unauthorized` – Échec ou absence d’authentification.  
+- `404 Not Found` – La feuille de calcul spécifiée n’existe pas.
+
+**Exemple de SDK (C#)**  
+```csharp
+var api = new CellsApi("client_id", "client_secret");
+var request = new PageSetup { PaperSize = PaperSizeEnum.PaperA4 };
+api.PutWorksheetPageSetup("Book1.xlsx", "Sheet1", request);
+```
+
+Pour une définition OpenAPI complète, consultez la <a href="https://api.aspose.cloud/v3.0/swagger.json" target="_blank" rel="noopener">spécification Swagger d’Aspose.Cells Cloud</a>.
+
+Consultez également la [documentation sur la configuration de page](/page-setup/) pour configurer les marges, l’orientation et d’autres options de mise en page.

@@ -1,46 +1,60 @@
-﻿---
-title: Hämta MaxDataRow från arbetsbladet Excel
-type: docs
-url: /sv/get-maxdatarow-from-excel-worksheet/
-weight: 50
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta MaxDataRow från Excel-arbetsblad
 ---
-Denna REST API indikerar att en `maxdatarow` hämtas i en Excel-fil när parametern `cellOrMethodName` är `maxdatarow`.
+title: "Hämta MaxDataRow från Excel-arbetsblad"
+type: docs
+url: /get-maxdatarow-from-excel-worksheet/
+weight: 50
+keywords: "Excel, Aspose.Cells Cloud, REST API, Get MaxDataRow, Worksheet"
+description: "Hämtar indexet för den sista raden som innehåller data i ett angivet arbetsblad i en Excel-arbetsbok med hjälp av Aspose.Cells Cloud REST API."
+ArticleTitle: "Aspose.Cells Cloud API – Get MaxDataRow from Excel Worksheet"
+---
 
-- **cURL Exempel**
+Denna REST API returnerar indexet för den sista raden som innehåller data i en Excel-fil när parametern `cellOrMethodName` är inställd på `maxdatarow`.
 
+- **cURL-exempel**
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatarow" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatarow" \
+     -H "Authorization: Bearer <your_access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+*Obs! Begäran måste skickas över **HTTPS** och innehålla en giltig OAuth2-bärartoken.*
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-{}
-
+```json
+{
+  "MaxDataRow": 57
+}
 ```
+
+**Möjliga HTTP-statuskoder**
+
+| Kod | Beskrivning |
+|------|-------------|
+| 200 | Lyckades – returnerar indexet för den sista data raden. |
+| 401 | Auktorisering misslyckades – ogiltig eller saknad auktorisationstoken. |
+| 403 | Åtkomst nekad – otillräckliga behörigheter för att komma åt arbetsboken. |
+| 404 | Hittades inte – den angivna arbetsboken eller arbetsbladet finns inte. |
+| 500 | Internt serverfel – oväntat serverfel. |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK-familjen**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+- **Använd Aspose.Cells Cloud SDK:er**
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Att använda ett SDK är det mest effektiva sättet att påskynda utvecklingen. Ett SDK hanterar detaljer på lågnivå, så att du kan fokusera på dina projektuppgifter. Kolla in [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med hjälp av olika SDK:er:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -103,3 +117,40 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Se också**
+
+- <a href="https://docs.aspose.cloud/cells/get-maxrow-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">Get MaxRow from Excel Worksheet</a>  
+- <a href="https://docs.aspose.cloud/cells/get-maxcolumn-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">Get MaxColumn from Excel Worksheet</a>  
+- <a href="https://docs.aspose.cloud/cells/get-mindatarow-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">Get MinDataRow from Excel Worksheet</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "Aspose.Cells Cloud Get MaxDataRow",
+  "description": "Returnerar indexet för den sista rad som innehåller data i ett angivet arbetsblad.",
+  "url": "https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/maxdatarow",
+  "method": "GET",
+  "documentation": "https://docs.aspose.cloud/cells/get-maxdatarow-from-excel-worksheet/",
+  "input": [
+    {
+      "name": "fileName",
+      "valueRequired": true,
+      "description": "Namnet på Excel-arbetsboken."
+    },
+    {
+      "name": "sheetName",
+      "valueRequired": true,
+      "description": "Namnet på arbetsbladet."
+    }
+  ],
+  "output": {
+    "@type": "DataType",
+    "name": "MaxDataRow",
+    "description": "Nollbaserat index för den sista rad som innehåller data."
+  }
+}
+</script>
+
+*Senast uppdaterad: 2026-07-30*

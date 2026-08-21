@@ -1,107 +1,123 @@
-﻿---
-title: Aspose.Cells Cloud Web API - استيراد بيانات Csv أو JSON أو XML إلى ملف جدول بيانات
-second_title: Documen
-ArticleTitle: Import Csv, JSON, or XML Data into a Spreadsheet file
-linktitle: استيراد البيانات إلى جدول بيانات
-type: docs
-url: /ar/import-data-into-spreadsheet/
-keywords: Import data, Aspose.Cells Cloud Web API, spreadsheet integration, CSV, JSON, XML, data handling, Aspose.Cell
-description: استيراد البيانات بكفاءة إلى جدول بيانات من التنسيقات المدعومة مثل CSV وJSON وXML باستخدام Aspose.Cells Cloud Web API
-weight: 100
-kwords: Aspose.Cells Cloud Web API، استيراد البيانات، Office Cloud، REST، جدول بيانات، CSV، JSON، XM
 ---
- استيراد البيانات إلى جدول بيانات. التنسيق المدعوم لملف البيانات المستوردة هو[إكس إم إل](https://docs.fileformat.com/web/xml/), [JSON](https://docs.fileformat.com/web/json/) أو[ملف CSV](https://docs.fileformat.com/spreadsheet/csv/).
+title: "واجهة برمجة تطبيقات استيراد البيانات في Aspose.Cells Cloud – حل سحابي لاستيراد بيانات CSV وJSON وXML تلقائيًا إلى أوراق عمل Excel."
+second_title: "مستند"
+ArticleTitle: "منصة دمج البيانات من مصادر متعددة – واجهة برمجة تطبيقات Aspose.Cells Cloud للاستيراد والتحويل التلقائي للبيانات."
+linktitle: "استيراد البيانات إلى ورقة العمل"
+type: docs
+url: /import-data-into-spreadsheet/
+keywords: "Aspose Cells، واجهة برمجة تطبيقات استيراد البيانات، CSV إلى Excel، JSON إلى Excel، XML إلى Excel، ورقة عمل سحابية، واجهة برمجة تطبيقات REST"
+description: "استورد بيانات CSV أو JSON أو XML إلى أوراق عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. اكتشف تنسيق الطلب، والمتغيرات، وأكواد عينات SDK، وإدارة الأخطاء."
+weight: 100
+---
 
-## **استيراد البيانات إلى جدول بيانات API**
+## الميزات الأساسية
+
+### دعم تنسيقات البيانات المتعددة
+
+- **<a href="https://docs.fileformat.com/spreadsheet/csv/" rel="noopener noreferrer">CSV</a> استيراد البيانات**: يدعم فواصل متعددة ويكتشف الترميز تلقائيًا.
+- **<a href="https://docs.fileformat.com/web/json/" rel="noopener noreferrer">JSON</a> معالجة البيانات**: يُسطّح الهياكل المعقدة لملفات JSON في جداول Excel.
+- **<a href="https://docs.fileformat.com/web/xml/" rel="noopener noreferrer">XML</a> تحويل الملفات**: يُعيّن بيانات العقد إلى هيكل الصفوف والأعمدة في Excel.
+
+## **وصف واجهة برمجة تطبيقات استيراد البيانات إلى ورقة العمل**
+
+### واجهة برمجة التطبيقات عبر الويب
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/import/data
+PUT https://api.aspose.cloud/v4.0/cells/import/data
 ```
 
-### **معلمات الطلب:**
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-| ملف البيانات| ملف| بيانات النموذج| قم بتحميل ملف البيانات المراد استيراده.|
-| جدول بيانات| ملف| بيانات النموذج| قم بتحميل ملف جدول البيانات المستهدف.|
-| ورقة عمل| خيط| استفسار| حدد ورقة العمل لاستيراد البيانات.|
-| خلية البداية| خيط| استفسار|حدد موضع البداية لاستيراد البيانات.|
-| إدراج| منطقي| استفسار| يشير إلى ما إذا كان سيتم إدراج بيانات الاستيراد المحددة أو الكتابة فوقها.|
-| تحويل البيانات الرقمية| منطقي| استفسار| حدد ما إذا كان سيتم تحويل البيانات الرقمية أثناء الاستيراد.|
-| الفاصل| خيط| استفسار| حدد الفاصل لتنسيق CSV.|
-| المسار الخارجي| خيط| استفسار| (اختياري) مسار المجلد الذي يُخزَّن فيه المصنف. القيمة الافتراضية هي null.|
-|اسم التخزين الخارجي| خيط| استفسار| حدد اسم تخزين ملف الإخراج.|
-| الخطوطالموقع| خيط| استفسار| تحديد الخطوط المخصصة التي سيتم استخدامها.|
-| العودة| خيط| استفسار| تعيين تكوين منطقة جدول البيانات.|
-| كلمة المرور| خيط| استفسار| كلمة المرور لفتح ملف جدول البيانات.|
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-### **إجابة**
+### متغيرات الطلب
+
+| اسم المتغير      | النوع   | الموقع         | الوصف                                                                 |
+| ---------------- | ------- | -------------- | --------------------------------------------------------------------- |
+| datafile         | ملف     | FormData       | ملف البيانات (CSV أو JSON أو XML) المراد استيراده.                    |
+| spreadsheet      | ملف     | FormData       | المصنف المستهدف الذي سيتلقّى البيانات المستوردة.                     |
+| worksheet        | نص      | Query          | اسم ورقة العمل التي ستُوضع فيها البيانات.                             |
+| startCell        | نص      | Query          | الخلية العلوية اليسرى (مثل `A1`) التي تُحدّد نقطة البداية للاستيراد. |
+| insert           | منطقي   | Query          | `true` لإدراج صفوف؛ `false` لكتابة البيانات فوق البيانات الموجودة.   |
+| convertNumericData | منطقي | Query          | `true` لتحويل النصوص الرقمية إلى أرقام أثناء الاستيراد.              |
+| splitter         | نص      | Query          | فاصل CSV مكوّن من حرف واحد (الافتراضي هو `,`).                        |
+| outPath          | نص      | Query (اختياري) | مسار المجلد الذي سيتم فيه حفظ المصنف المحدّث.                         |
+| outStorageName   | نص      | Query (اختياري) | اسم موقع التخزين لملف الإخراج.                                        |
+| fontsLocation    | نص      | Query (اختياري) | مسار مجلد خطوط مخصّص، إن لزم الأمر.                                   |
+| region           | نص      | Query (اختياري) | إعدادات إقليم ورقة العمل (مثل `en-US`).                               |
+| password         | نص      | Query (اختياري) | كلمة المرور لفتح مصنف محمي.                                           |
+
+### الاستجابة
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### رموز الخطأ
+**رموز حالة HTTP**
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+| الرمز | المعنى                   | الوصف                                                               |
+| ----- | ------------------------ | ------------------------------------------------------------------- |
+| 200   | ناجح                     | تمت تطبيق المرشّح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.      |
+| 400   | طلب غير صالح             | مفقود أو غير صالح المتغيرات (مثل نوع ملف غير مدعوم).              |
+| 401   | غير مُصادَق عليه         | رمز JWT غير صالح أو مفقود.                                         |
+| 413   | حجم الحمولة كبير جدًا     | حجم الملف المرفوع يتجاوز الحد المسموح.                             |
+| 500   | خطأ داخلي في الخادم       | خطأ غير متوقّع في الخادم.                                           |
 
-## أين يجب علينا استخدام استيراد البيانات إلى جدول البيانات API؟
+## أسباب استخدام هذه الواجهة
 
-- استيراد كميات كبيرة من البيانات إلى ورقة عمل جدول البيانات.
--  تنسيق ملف البيانات المستوردة هو[إكس إم إل](https://docs.fileformat.com/web/xml/), [JSON](https://docs.fileformat.com/web/json/) و[ملف CSV](https://docs.fileformat.com/spreadsheet/csv/).
+- **تحميل بيانات فعّال** – يتيح الاستيراد الجُملي لمجموعات بيانات كبيرة مباشرةً إلى مصنف دون إنشاء ملفات وسيطة.
+- **دعم واسع لـ SDKs** – يوفّر مكتبات عميل لـ .NET وJava وPHP وRuby وNode.js وPython وGo وPerl، ما يبسّط التكامل.
+- **معالجة في الذاكرة** – يُجري التحويلات في الذاكرة، ما يقلّل متطلبات التخزين المؤقت.
 
-## لماذا يجب عليك استخدام استيراد البيانات إلى جدول البيانات API؟
+## كيفية استخدام واجهة برمجة تطبيقات استيراد البيانات إلى ورقة العمل باستخدام SDKs
 
-- استيراد كميات كبيرة من البيانات إلى جداول البيانات.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+**ملاحظات / قيود:** تدعم الواجهة ما يصل إلى 1,000,000 صف في كل استيراد. الفاصل الافتراضي لملفات CSV هو الفاصلة فقط؛ ويمكن تحديد فواصل حرفية أخرى عبر المتغير `splitter`. قد تزيد ملفات XML الكبيرة من وقت المعالجة.
 
-## كيفية استخدام استيراد البيانات إلى جدول بيانات API باستخدام حزم تطوير البرامج (SDKs)
+لعمليات مرتبطة مثل تصدير البيانات أو تحويل تنسيقات المصنفات، راجع مستندات **تصدير البيانات** و**تحويل المصنف**.
 
-### استيراد البيانات إلى جدول بيانات API المواصفات
+### مواصفات واجهة برمجة تطبيقات استيراد البيانات إلى ورقة العمل
 
- ال[استيراد البيانات إلى جدول بيانات API المواصفات](https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet) يوفر واجهة برمجة يمكن الوصول إليها بشكل عام، مما يسمح بالتفاعلات REST مباشرة من متصفح الويب الخاص بك.
+توفّر <a href="https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet" rel="noopener noreferrer">مواصفات واجهة برمجة تطبيقات استيراد البيانات إلى ورقة العمل</a> واجهة برمجة برمجية متاحة علنًا، ما يسمح بالتفاعل مع REST مباشرةً من متصفح الويب الخاص بك.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب الخاصة بـ Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إجراء مكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
-### استخدم Aspose.Cells Cloud SDKs
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
-يعد استخدام SDK أسرع طريقة للتطوير، حيث إنه يجرد التفاصيل منخفضة المستوى، مما يسمح لك باستيراد البيانات إلى جدول بيانات باستخدام رمز قصير.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+{{< tab tabNum="11" >}}
 
-توضح أمثلة التعليمات البرمجية التالية كيفية استدعاء خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج المختلفة:
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/import/data?worksheet=Sheet1&startCell=A1&insert=true" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "datafile=@/path/to/data.csv" \
+  -F "spreadsheet=@/path/to/workbook.xlsx"
+```
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ImportDataIntoSpreadsheet.cs" >}}
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ImportDataIntoSpreadsheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (مشفر بـ Base64)",
+  "contentType": "نوع MIME",
+  "fileDownloadName": "اسم ملف اختياري"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ImportDataIntoSpreadsheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ImportDataIntoSpreadsheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ImportDataIntoSpreadsheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ImportDataIntoSpreadsheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ImportDataIntoSpreadsheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ImportDataIntoSpreadsheet.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
+
+يُعد استخدام SDKs الطريقة الأسرع لتطوير التطبيقات، إذ يُجرّدك من التفاصيل منخفضة المستوى، مما يتيح لك استيراد البيانات إلى ورقة عمل باستخدام كود قصير. يُرجى مراجعة <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+---

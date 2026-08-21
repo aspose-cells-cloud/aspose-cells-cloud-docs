@@ -1,31 +1,33 @@
-﻿---
-title: "Aspose.Cells Cloud SDK for Java: converti, unisci, dividi, proteggi, cerca, sostituisci e altro ancora"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for Java: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells Cloud SDK per Java
-type: docs
-url: /it/available-sdks/aspose-cells-cloud-java/
-description: "Aspose.Cells Cloud SDK for Java offre una vera potenza multipiattaforma: un'importazione fornisce agli sviluppatori Windows, Linux e macOS la stessa fluidità API per creare, convertire, unire, dividere, proteggere e manipolare ogni Excel oggetto, senza che sia richiesta alcuna installazione Office e senza modifiche specifiche della piattaforma."
-weight: 30
-kwords: Java SDK, Excel SDK for Java, Cloud SDK for Java, REST, Grafico, Tabella pivot, Oggetto tabella/elenco, Converti foglio di calcolo, PDF, CSV, Json, Markdown, Unisci, Dividi, Proteggi, Cerca, Sostituisci
 ---
-L'SDK è open source e concesso in licenza con licenza MIT. È possibile accedervi[il codice sorgente della libreria Java per Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
+title: "Aspose.Cells Cloud SDK per Java: convertire, unire, dividere, proteggere, cercare, sostituire e molto altro"
+second_title: "Documenti"
+ArticleTitle: "Aspose.Cells Cloud SDK per Java: convertire, unire, dividere, proteggere, cercare, sostituire e molto altro"
+linktitle: "Aspose.Cells Cloud SDK per Java"
+type: docs
+url: /available-sdks/aspose-cells-cloud-java/
+description: "Utilizza Aspose.Cells Cloud SDK per Java per creare, convertire, unire, dividere, proteggere, cercare e sostituire file Excel senza aver bisogno di installare Office."
+weight: 30
+keywords: "Aspose Cells SDK Java, conversione Excel in Java, API foglio di calcolo cloud, libreria Java per Excel, Aspose.Cells Cloud Java"
+---
+
+
+L'SDK è open-source e rilasciato sotto licenza MIT. Puoi accedere al codice sorgente della libreria Java per Aspose.Cells Cloud [qui](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
 
 # **Come utilizzare la libreria Java di Aspose.Cells Cloud**
 
-Aspose.Cells Cloud SDK for Java è una potente libreria che consente agli sviluppatori di manipolare ed elaborare file Microsoft Excel utilizzando il linguaggio di programmazione Java. Con questo SDK, puoi creare, modificare e convertire documenti Excel nel cloud, senza installare software aggiuntivo o dipendenze sul tuo computer locale.
+Aspose.Cells Cloud SDK per Java è una potente libreria che consente agli sviluppatori di manipolare ed elaborare file di Microsoft Excel utilizzando il linguaggio di programmazione Java. Con questo SDK puoi creare, modificare e convertire documenti Excel nel cloud, senza dover installare software aggiuntivi o dipendenze sul tuo computer locale.
 
-In questo articolo esploreremo come utilizzare Aspose.Cells Cloud SDK for Java per eseguire alcune attività comuni, come la creazione di una nuova cartella di lavoro Excel, l'inserimento di dati nelle celle e il salvataggio della cartella di lavoro modificata nel cloud.
+In questo articolo esploreremo come utilizzare Aspose.Cells Cloud SDK per Java per eseguire alcune attività comuni, come la creazione di un nuovo libro Excel, l’inserimento di dati nelle celle e il salvataggio del libro modificato nel cloud.
 
-## Iniziare
+## Per iniziare
 
- Prima di poter iniziare a utilizzare Cloud SDK per Go Aspose.Cells, è necessario configurare l'ambiente di sviluppo e installare le dipendenze necessarie. Fare riferimento a[l'articolo](https://docs.aspose.cloud/cells/quickstart/) sul sito Aspose per ottenere il tuo ID cliente e il tuo segreto cliente.
+Prima di poter utilizzare Aspose.Cells Cloud SDK per Go, devi configurare il tuo ambiente di sviluppo e installare le dipendenze necessarie. Consulta [questo articolo](https://docs.aspose.cloud/cells/quickstart/) sul sito web di Aspose per ottenere il tuo ID client e segreto client.
 
-## Come utilizzare Maven per aggiungere dipendenze per Aspose.Cells Cloud
+## Come utilizzare Maven per aggiungere le dipendenze di Aspose.Cells Cloud
 
-Nel progetto Maven, aggiungi le dipendenze per il Cloud SDK Aspose.Cells. Includi le seguenti dipendenze nel file pom.xml:
+Nel tuo progetto Maven, aggiungi le dipendenze per Aspose.Cells Cloud SDK. Inserisci le seguenti dipendenze nel file pom.xml:
 
-**Aspose Maven Deposito**
+**Repository Aspose Maven**
 
 ```java
 
@@ -39,7 +41,7 @@ Nel progetto Maven, aggiungi le dipendenze per il Cloud SDK Aspose.Cells. Includ
 
 ```
 
-**Maven Dipendenza**
+**Dipendenza Maven**
 
 ```java
 
@@ -51,16 +53,16 @@ Nel progetto Maven, aggiungi le dipendenze per il Cloud SDK Aspose.Cells. Includ
 
 ```
 
-## Come usare il pacchetto Java per convertire Xlsx in PDF
+## Come utilizzare il pacchetto Java per convertire Xlsx in PDF
 
-- Importa Aspose.Cells Cloud Library
- Per prima cosa, importa il pacchetto necessario dall'SDK Cloud Aspose.Cells nel tuo progetto.
-- Configurare il client API con credenziali
- Autentica il tuo cliente API con il tuo ID cliente univoco e il tuo segreto cliente.
-- Preparare i parametri di conversione
- Definire i parametri per l'attività di conversione, tra cui il nome del file sorgente, il formato di output desiderato e il percorso della cartella di archiviazione.
-- Esegui conversione cartella di lavoro
- Richiamare il processo di conversione utilizzando il metodo PostConvertWorkbook e gestire la risposta.
+- Importa la libreria Aspose.Cells Cloud
+  Inizia importando il pacchetto necessario dell'SDK Java di Aspose.Cells Cloud nel tuo progetto.
+- Configura il client API con le credenziali
+  Autentica il tuo client API utilizzando il tuo ID client e segreto client univoci.
+- Prepara i parametri di conversione
+  Definisci i parametri per l’operazione di conversione, inclusi il nome del file di origine, il formato di output desiderato e il percorso della cartella di archiviazione.
+- Esegui la conversione del libro di lavoro
+  Richiama il processo di conversione utilizzando il metodo PostConvertWorkbook e gestisci la risposta.
 
 ### **Codice di esempio**
 

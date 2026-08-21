@@ -1,151 +1,124 @@
-﻿---
-title: احصل على ال
-type: docs
-url: /ar/hyperlinks/get-all/
-aliases: [/get-hyperlink-from-excel-worksheet/,/get-hyperlinks-from-excel-worksheet/]
-keywords: Get hyperlinks from an Excel worksheet
-description: يدعم Cloud REST Aspose.Cells الحصول على روابط تشعبية من ورقة عمل Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، احصل على الكل
 ---
-يشير هذا REST API إلى `get all hyperlinks` في ورقة العمل Excel.
+title: "الحصول على جميع الروابط التشعبية – واجهة Aspose.Cells Cloud REST API"
+type: docs
+url: /hyperlinks/get-all/
+aliases:
+  [/get-hyperlink-from-excel-worksheet/, /get-hyperlinks-from-excel-worksheet/]
+keywords: "Aspose.Cells، الحصول على جميع الروابط التشعبية، API للجداول المحسوبة، واجهة REST API، حزمة SDK للحوسبة السحابية، مثال باستخدام cURL، روابط تشعبية في الجداول المحسوبة"
+description: "استرجاع جميع الروابط التشعبية من ورقة عمل في ملف Excel باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمن عنوان HTTPS، المعلمات المطلوبة، مثال باستخدام cURL، مخطط الاستجابة، وأمثلة للكود باستخدام SDKs."
+weight: 10
+ArticleTitle: "الحصول على جميع الروابط التشعبية – وثائق Aspose.Cells Cloud REST API"
+---
 
-## RSET API
+تسترجع هذه الواجهة **جميع الروابط التشعبية** من ورقة عمل محددة في ملف Excel.
+
+## الأمان والمصادقة
+
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [مصادقة قائمة على رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## واجهة REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-معلمات الطلب هي:
+### معلمات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعلمة | النوع | الموقع | مطلوبة | القيمة الافتراضية | الوصف |
+|------------|-------|--------|--------|------------------|-------|
+| name | string | path | نعم | – | اسم ملف Excel. |
+| sheetName | string | path | نعم | – | اسم ورقة العمل. |
+| folder | string | query | لا | – | المجلد الذي يحتوي على الملف. |
+| storageName | string | query | لا | – | اسم خدمة التخزين المراد استخدامها. |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/GetWorksheetHyperlinks) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+يعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Hyperlinks/GetWorksheetHyperlinks) واجهة برمجة تطبيقات قابلة للوصول بشكل عام وتسمح لك بإجراء تفاعلات REST مباشرة من خلال متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية استدعاء الواجهة باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Hyperlinks": {
-
     "Count": 4,
-
     "HyperlinkList": [
-
       {
-
         "link": {
-
           "Href": "/0",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/1",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/2",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/3",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       }
-
     ],
-
     "link": null
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+تحتوي استجابة JSON على كائن `Hyperlinks`.
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+- **Count** – العدد الإجمالي للروابط التشعبية في ورقة العمل.
+- **HyperlinkList** – مصفوفة تحتوي كل عنصر فيها على كائن `link`. تحتوي الخاصية `Href` على عنوان الرابط التشعبي، بينما توفر الخاصيتان `Rel` و `Title` و `Type` معلومات وصفية إضافية (غالبًا تكون قيمتها `null` للروابط البسيطة).
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+### استجابات الخطأ
+
+| كود HTTP | السبب | مثال على جسم الاستجابة |
+|---------|-------|----------------------|
+| **400** | طلب غير صالح – معلمات مفقودة أو غير صالحة. | `{ "Code":"400", "Message":"Invalid parameter value." }` |
+| **401** | غير مصادق – رمز JWT مفقود أو غير صالح. | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
+| **404** | غير موجود – ملف Excel أو ورقة العمل غير موجودة. | `{ "Code":"404", "Message":"File not found." }` |
+| **500** | خطأ داخلي في الخادم – فشل غير متوقع في الخادم. | `{ "Code":"500", "Message":"An unexpected error occurred." }` |
+
+## عائلة حزم SDK للحوسبة السحابية
+
+استخدام حزمة SDK هو أسرع طريقة لدمج هذه الوظيفة. تقوم حزم SDK بإدارة التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على منطق تطبيقك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على القائمة الكاملة لحزم SDK الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام حزم SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,18 +1,31 @@
-﻿---
-title: Как обновить содержимое диапазона из рабочего листа Excel
-second_title: Documen
-linktitle: Обновление
-type: docs
-url: /ru/ranges/update/
-keywords: How to update range content from an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает обновление содержимого диапазона из листа Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Как обновить содержимое диапазона из листа Excel
 ---
-## Работа с обновлением содержимого диапазона на листе Excel.
+title: "Как обновить содержимое диапазона в листе Excel"
+second_title: "Документ"
+linktype: "Обновление"
+type: docs
+url: /ranges/update/
+keywords: "Excel, обновление диапазона, Aspose.Cells Cloud, REST API, электронная таблица, стиль диапазона, значения диапазона, высота строки, ширина столбца"
+description: "Обновление содержимого диапазона в листе Excel с помощью REST API Aspose.Cells Cloud. Изменение стилей, значений, высот строк и ширин столбцов с помощью поддерживаемых SDK."
+weight: 20
+ArticleTitle: "Как обновить содержимое диапазона в листе Excel – Документация Aspose.Cells Cloud"
+---
 
+## Работа с обновлением содержимого диапазона в листе Excel
 
-- [Как установить стиль диапазона на листе Excel.](/cells/ru/ranges/update/style/) 
-- [Как установить значения диапазона на листе Excel.](/cells/ru/ranges/update/values/) 
-- [Как установить высоту строк диапазона на листе Excel.](/cells/ru/ranges/update/row-height/) 
-- [Как установить ширину столбцов диапазона на листе Excel.](/cells/ru/ranges/update/column-width/) 
+Перед использованием операций обновления убедитесь, что у вас есть действительный токен API Aspose.Cells Cloud и что целевая рабочая книга хранится в вашем облачном хранилище. API доступен через SDK для Android, .NET, Go, Java, Node.js, Perl, PHP, Python, Ruby и Swift.
+
+Ниже приведено краткое резюме четырёх основных действий по обновлению. Эта таблица предоставляет разработчикам быструю справку по HTTP-методу, шаблону конечной точки, ключевым параметрам и типичному успешному ответу для каждой операции.
+
+| Действие             | HTTP-метод | Шаблон конечной точки                                                                             | Ключевые параметры          | Ответ 200‑OK                 |
+|----------------------|------------|---------------------------------------------------------------------------------------------------|-----------------------------|------------------------------|
+| Установка стиля      | PUT        | `/cells/{fileName}/worksheets/{sheetName}/ranges/{range}/style`                                  | Объект `style`              | Обновлённый стиль диапазона  |
+| Установка значений   | POST       | `/cells/{fileName}/worksheets/{sheetName}/ranges/{range}/values`                                | Массив `values`             | Обновлённые значения диапазона |
+| Высота строки        | PUT        | `/cells/{fileName}/worksheets/{sheetName}/ranges/{range}/rowheight`                             | Число `height`              | Обновлённая высота строки    |
+| Ширина столбца       | PUT        | `/cells/{fileName}/worksheets/{sheetName}/ranges/{range}/columnwidth`                           | Число `width`               | Обновлённая ширина столбца   |
+
+Эта страница предоставляет быстрый доступ к четырём основным действиям по обновлению: установке стиля диапазона, установке значений диапазона, изменению высоты строк и изменению ширины столбцов.
+
+- [Как установить стиль диапазона в листе Excel.](/cells/ranges/update/style/) 
+- [Как установить значения диапазона в листе Excel.](/cells/ranges/update/values/) 
+- [Как установить высоту строк диапазона в листе Excel.](/cells/ranges/update/row-height/) 
+- [Как установить ширину столбцов диапазона в листе Excel.](/cells/ranges/update/column-width/)

@@ -1,76 +1,93 @@
-﻿---
-title: Excel çalışma sayfasındaki aralık verilerini sıralayın
-second_title: Documen
-linktitle: Sor
-type: docs
-url: /tr/worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
-keywords: Sort range data on an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında aralık verilerini sıralamayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki aralık verilerini sıralama
 ---
-Bu REST API, `sort worksheet range data`'i gösterir.
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
- 
+title: "Excel Çalışma Sayfasında Bir Aralık Verisini Sırala"
+second_title: "Belge"
+linktitle: "Sırala"
+type: docs
+url: /worksheets/sort-data/
+aliases: [/sort-worksheet-data/]
+keywords: "Aspose.Cells Cloud, Excel sıralama API'si, çalışma sayfası aralığı sıralama, REST API, dataSorter"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında belirli bir aralığı sıralayın. Uç nokta, gerekli parametreler, kimlik doğrulama adımları, hata işleme ve SDK örnekleri içerir."
+weight: 20
+---
+
+REST API, bir Excel çalışma sayfasında belirtilen bir aralık içindeki verileri sıralar.
+
+## REST API
+
+```shell
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
 ```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| hücreAlanı| sicim| sorgu| Sıralanacak aralık.|
-| veriSorter|| vücut| sıralama ayarlarıyla.|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
- 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### İstek parametreleri
+
+| Parametre Adı | Tür     | Konum  | Gerekli | Açıklama                                                          |
+| ------------- | ------- | ------ | ------- | ----------------------------------------------------------------- |
+| name          | string  | path   | Evet    | Çalışma kitabının adı.                                             |
+| sheetName     | string  | path   | Evet    | Çalışma sayfasının adı.                                            |
+| cellArea      | string  | query  | Evet    | Sıralanacak hücre aralığı (örneğin, `A5:A10`).                    |
+| dataSorter    | object  | body   | Evet    | Sıralama ayarlarını tanımlayan JSON nesnesi (aşağıdaki şemaya bakın). |
+| folder        | string  | query  | Hayır   | Çalışma kitabının bulunduğu klasör.                               |
+| storageName   | string  | query  | Hayır   | Çalışma kitabının bulunduğu depo adı.                             |
+
+**`dataSorter` nesne şeması** – Gövde, aşağıdaki özelliklere sahip bir JSON nesnesi içermelidir:
+
+- `CaseSensitive` _(boolean, gerekli)_ – Sıralamanın büyük/küçük harf duyarlı olup olmayacağını belirler.
+- `HasHeaders` _(boolean, gerekli)_ – Aralığın bir başlık satırı içerip içermediğini belirtir.
+- `KeyList` _(array, gerekli)_ – Sıralama anahtarlarının koleksiyonu. Her anahtar nesnesi şunları içerir:
+  - `Key` _(integer)_ – Sıfırdan başlayarak sütun dizini.
+  - `SortOrder` _(string)_ – `"ascending"` (artan) veya `"descending"` (azalan).
+- `SortLeftToRight` _(boolean, gerekli)_ – `true` ise sıralama soldan sağa; aksi takdirde yukarıdan aşağıya yapılır.
+- _(İsteğe bağlı)_ `CaseOrder`, `SortLeftToRight` gibi ek özellikler OpenAPI spesifikasyonuna göre sağlanabilir.
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sine nasıl istek atılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
+
 {{< tab tabNum="1" >}}
- 
-```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/sort?cellArea=A5:A10" \
--X POST \
--d '{"CaseSensitive":false, "HasHeaders":false, "KeyList":[{"Key":0, "SortOrder":"descending"}], "SortLeftToRight":false}' \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+
+```shell
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/sort?cellArea=A5:A10" \
+  -X POST \
+  -d '{"CaseSensitive":false,"HasHeaders":false,"KeyList":[{"Key":0,"SortOrder":"descending"}],"SortLeftToRight":false}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
- 
+
+**Hata işleme** – API standart HTTP hata kodlarını döndürebilir. Tipik yanıtlar şunları içerir:
+
+| HTTP Durumu | Kod | Mesaj                                             |
+| ----------- | --- | ------------------------------------------------- |
+| 400         | 400 | Geçersiz istek – eksik veya geçersiz parametreler. |
+| 401         | 401 | Yetkisiz erişim – geçersiz veya eksik JWT belirteci. |
+| 404         | 404 | Bulunamadı – çalışma kitabı veya çalışma sayfası mevcut değil. |
+| 500         | 500 | Sunucu iç hatası.                                  |
+
+Hata durumlarında yanıt gövdesi `{ "Code": <durum>, "Message": "<açıklama>", "Status": "Error" }` şablonuna uyar.
+
+## Bulut SDK Çevresi
+
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. SDK, düşük seviye ayrıntıları işler ve projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub Deposu](https://github.com/aspose-cells-cloud) adresini kontrol edin.
+
+Aşağıdaki kod örnekleri, farklı SDK'lar kullanılarak Aspose.Cells web hizmetlerinin nasıl çağrılacağını göstermektedir:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

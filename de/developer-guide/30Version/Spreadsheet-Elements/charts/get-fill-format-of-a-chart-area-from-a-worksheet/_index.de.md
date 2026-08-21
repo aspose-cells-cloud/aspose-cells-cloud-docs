@@ -1,78 +1,98 @@
-﻿---
-title: Füllformat eines Diagrammbereichs aus einem Arbeitsblatt abrufen
+---
+title: "Formatierung des Diagrammbereichs abrufen – Aspose.Cells Cloud API (v3.0)"
 type: docs
-url: /de/charts/chart-area/fill-format/get/
+url: /charts/chart-area/fill-format/get/
 aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
 weight: 70
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Füllformat eines Diagrammbereichs aus einem Arbeitsblatt abrufen
+keywords:
+  - "Aspose.Cells"
+  - "Diagrammbereich"
+  - "Füllformat"
+  - "REST API"
+  - "Excel"
+description: "Rufen Sie das Füllformat (Farbe, Muster, Farbverlauf) eines Diagrammbereichs in einer Excel-Arbeitsmappe über die Aspose.Cells Cloud API ab. Enthält cURL-Beispiel, SDK-Code-Snippets, Authentifizierungsschritte und Antwortdetails."
+ArticleTitle: "Formatierung des Diagrammbereichs abrufen – Aspose.Cells Cloud API v3.0"
 ---
-Dieser REST API gibt an, Informationen zum Füllformat des Diagrammbereichs abzurufen.
- 
-## RSET API
- 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat
- 
-```
- Die Anforderungsparameter sind:
- 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Name der Arbeitsmappe.|
-| Blattname| Schnur| Weg| Arbeitsblattname.|
-| Diagrammindex| ganze Zahl| Weg| Der Diagrammindex.|
-| Ordner| Schnur| Abfrage| Arbeitsmappenordner.|
-| Speichername| Schnur| Abfrage| Speichername.|
- 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
- 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
- 
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Diese REST-API ruft die Füllformatinformationen eines **Diagrammbereichs** ab.
+
+**Voraussetzungen**  
+Um diesen Endpunkt aufzurufen, benötigen Sie ein gültiges OAuth/JWT-Zugriffstoken. Holen Sie sich das Token über den Authentifizierungsflow der Aspose.Cells Cloud und fügen Sie es in den `Authorization`-Header als `Bearer <jwt token>` ein. Falls Sie eines der SDKs verwenden, stellen Sie sicher, dass das SDK mit Ihren `client_id`- und `client_secret`-Werten konfiguriert ist, bevor Sie die Methode aufrufen.
+
+## GetChartAreaFillFormat API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat
+```
+
+### **Sicherheit und Authentifizierung**
+
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
+
+### Anforderungsparameter
+
+| Parametername | Typ    | Ort   | Beschreibung                         |
+| -------------- | ------- | ----- | ------------------------------------ |
+| name           | string  | path  | Name der Arbeitsmappe.               |
+| sheetName      | string  | path  | Name des Arbeitsblatts.              |
+| chartIndex     | integer | path  | Index des Diagramms.                 |
+| folder         | string  | query | Ordner, der die Arbeitsmappe enthält.|
+| storageName    | string  | query | Name des Speichers.                  |
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
+
+Sie können das cURL-Befehlszeilentool verwenden, um auf die Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie die API mit cURL aufgerufen wird.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Anforderung" tabName12="Antwort" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea/fillFormat" 
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea/fillFormat" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "FillFormat": {
-
     "Type": "Automatic"
-
   },
-
-  "Code": "200",
-
+  "Code": 200,
   "Status": "OK"
-
 }
-
 ```
+
+**Hinweise**  
+- Ein erfolgreicher Aufruf gibt HTTP 200 mit den Details des Füllformats zurück.  
+- HTTP 401 zeigt eine Authentifizierungsfehler an (ungültiges oder fehlendes Token).  
+- HTTP 404 wird zurückgegeben, wenn die angegebene Arbeitsmappe, das Arbeitsblatt oder der Diagrammindex nicht existiert.  
+- HTTP 500 kennzeichnet einen serverseitigen Fehler; wiederholen Sie die Anfrage oder kontaktieren Sie den Support, falls das Problem weiterhin besteht.
+
+| Code | Bedeutung                                           |
+|------|-----------------------------------------------------|
+| 200  | Erfolg – Füllformat zurückgegeben                   |
+| 401  | Nicht autorisiert – ungültiges oder fehlendes Token |
+| 404  | Nicht gefunden – Arbeitsmappe, Arbeitsblatt oder Diagramm nicht gefunden |
+| 500  | Interner Serverfehler                               |
+
+Weitere verwandte Vorgänge finden Sie in den Endpunkten **Get Chart Area Border** (Rand des Diagrammbereichs abrufen) und **Get Chart Title** (Titel des Diagramms abrufen).
 
 {{< /tab >}}
 
 {{< /tabs >}}
-## Cloud SDK-Familie
- 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
- 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+
+## Cloud SDK Family
+
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK übernimmt die Details der niedrigen Ebene, sodass Sie sich auf Ihre Projekt Aufgaben konzentrieren können. Besuchen Sie das <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub-Repository</a>, um eine vollständige Liste der Aspose.Cells Cloud SDKs zu erhalten.
+
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mit verschiedenen SDKs aufgerufen werden:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Perl" tabName10="Go" >}}
 

@@ -1,61 +1,64 @@
-﻿---
-title: Импорт пакетных данных в рабочий лист Excel
-second_title: Documen
-linktitle: Импорт данных партии
-type: docs
-url: /ru/import-batch-data-into-excel/
-aliases: [/import-batch-data-into-worksheet/,/import-data/batch-data/,/import/batch-data/]
-keywords: Import batch data into Excel files
-description: Aspose.Cells Cloud REST API поддерживает импорт пакетных данных в файлы Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 19
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Импорт пакетных данных в рабочий лист Excel
 ---
-Этот REST API `import batch data` в рабочий лист Excel.
+title: "Импорт пакетных данных в лист Excel"
+second_title: "Документ"
+linktitle: "Импорт пакетных данных"
+type: docs
+url: /import-batch-data-into-excel/
+aliases:
+  - /import-batch-data-into-worksheet/
+  - /import-data/batch-data/
+  - /import/batch-data/
+keywords: "Aspose.Cells, облачный API, импорт пакетных данных, Excel, CSV, JSON, XML, массивы"
+description: "Узнайте, как импортировать пакетные данные (CSV, JSON, XML, массивы) в лист Excel с помощью облачного REST API Aspose.Cells. Приведены примеры аутентификации, запросов и ответов, фрагменты кода SDK, а также обработка ошибок."
+weight: 19
+ArticleTitle: "Импорт пакетных данных в лист Excel — документация Aspose.Cells Cloud"
+---
 
-Запрос представляет собой HTTP-запрос с составным содержимым (см.[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)или[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Первая часть составного содержимого содержит данные ImportBatchDataOption, а вторая — файл данных.
+Этот REST API **импортирует пакетные данные** в лист Excel. Он принимает многокомпонентный запрос, в котором первая часть содержит объект **ImportBatchDataOption**, а вторая — фактический файл с данными (CSV, JSON, XML и т.д.).
 
-## РСЕT API
+Операция использует HTTP-запрос с многокомпонентным содержимым (см. [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) или [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).
 
-```bash
+## API PostImportData
 
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-Важные параметры описаны в следующей таблице:
+### **Безопасность и аутентификация**
 
-**ImportBatchDataOption**
+API облачной платформы Aspose.Cells защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе токена JWT</a>.
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-| Пакетные данные|Список<CellValue> | пакетные данные|
-|Рабочий лист назначения| нить| имя конечного рабочего листа.|
-| IsInsert| нить| верно/ложно.|
-| ImportDataType| нить|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Источник| FileSource| Указывает позицию файла данных, если параметр BatchData равен нулю.|
+### ImportBatchDataOption
 
-**CellValue**
+| Имя параметра          | Тип               | Описание                                                                                                                                                         |
+| ---------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **BatchData**          | `List<CellValue>` | Коллекция значений ячеек, которые будут записаны напрямую.                                                                                                       |
+| **DestinationWorksheet** | `string`          | Имя листа, в который будут импортированы данные.                                                                                                                 |
+| **IsInsert**           | `bool`            | Если `true`, данные вставляются, а существующие ячейки сдвигаются; если `false`, данные перезаписывают существующие ячейки.                                     |
+| **ImportDataType**     | `string`          | Формат импортируемых данных. Допустимые значения: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
+| **Source**             | `FileSource`      | Указывает местоположение файла с данными, если **BatchData** равен `null`.                                                                                      |
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-| rowIndex| инт||
-| columnIndex| инт||
-| тип| нить| тип данных|
-| ценить| нить||
-| стиль| Стиль(объект)||
+### CellValue
 
-**FileSource**
+| Имя параметра  | Тип      | Описание                                                |
+| -------------- | -------- | ------------------------------------------------------- |
+| **rowIndex**   | `int`    | Индекс строки целевой ячейки (начиная с 0).            |
+| **columnIndex**| `int`    | Индекс столбца целевой ячейки (начиная с 0).           |
+| **type**       | `string` | Тип данных значения (например, `int`, `double`, `string`). |
+| **value**      | `string` | Фактическое значение, которое будет записано в ячейку. |
+| **style**      | `Style`  | Необязательная информация о стиле ячейки.              |
 
-|Имя параметра|Тип|Описание|
-|:- |:- |:- |
-| FileSourceType| нить| InMemoryFiles/CloudFileSystem/RequestFiles|
-| FilePath| нить| положение файла|
+### FileSource
 
-**Пример**
+| Имя параметра      | Тип      | Описание                                                          |
+| ------------------ | -------- | ----------------------------------------------------------------- |
+| **FileSourceType** | `string` | Источник файла: `InMemoryFiles`, `CloudFileSystem` или `RequestFiles`. |
+| **FilePath**       | `string` | Путь или идентификатор файла в выбранном источнике.              |
+
+### Пример (XML)
 
 ```xml
-<ImportIntArrayOption>
+<ImportBatchDataOption>
     <DestinationWorksheet>Sheet1</DestinationWorksheet>
     <IsInsert>false</IsInsert>
     <ImportDataType>IntArray</ImportDataType>
@@ -66,15 +69,39 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
         <FileSourceType>CloudFileSystem</FileSourceType>
         <FilePath>Array_int_xml.txt</FilePath>
     </Source>
-</ImportIntArrayOption>
-
+</ImportBatchDataOption>
 ```
 
-## Семейство облачных SDK
+### Ответ
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+**Коды HTTP-статусов**
+
+| Код  | Значение                    | Описание                                                                      |
+|------|-----------------------------|-------------------------------------------------------------------------------|
+| 200  | OK                          | Фильтр успешно применён; ответ содержит информацию о выполнении операции.    |
+| 400  | Bad Request                 | Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401  | Unauthorized                | Неверный или отсутствующий токен JWT.                                         |
+| 413  | Payload Too Large           | Загруженный файл превышает допустимый размер.                                 |
+| 500  | Internal Server Error       | Непредвиденная ошибка сервера.                                                |
+
+## Как использовать API PostImportData с SDK
+
+### Спецификация API PostImportData
+
+[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData) определяет публичный программный интерфейс, позволяющий выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+### Использование SDK облачной платформы Aspose.Cells
+
+Использование SDK — самый быстрый способ интеграции этой функциональности. SDK обрабатывает низкоуровневые детали, позволяя вам сосредоточиться на бизнес-логике. Полный список SDK облачной платформы Aspose.Cells приведён в [репозитории GitHub](https://github.com/aspose-cells-cloud).
+
+Следующие примеры кода демонстрируют вызов веб-служб Aspose.Cells с помощью различных SDK:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

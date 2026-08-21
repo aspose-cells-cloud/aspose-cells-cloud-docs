@@ -1,59 +1,83 @@
-﻿---
-title: Holen Sie sich alle Arbeitsblattvalidierungen aus einem Excel-Arbeitsblatt
-second_title: Documen
-linktitle: Holen Sie sich al
-type: docs
-url: /de/validations/get-all/
-keywords: Get all worksheet validations from an Excel worksheet
-description: Aspose.Cells Cloud REST API unterstützt das Abrufen aller Arbeitsblattvalidierungen aus einem Excel-Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Alle Arbeitsblattvalidierungen aus einem Excel-Arbeitsblatt abrufen
 ---
-Dieser REST API gibt an, alle Arbeitsblattvalidierungen auf einem Excel-Arbeitsblatt abzurufen.
+title: "Alle Arbeitsblattvalidierungen aus einem Excel-Arbeitsblatt abrufen"
+second_title: "Dokument"
+linktitle: "Alle abrufen"
+type: docs
+url: /validations/get-all/
+keywords: "Aspose.Cells Cloud, Excel, Arbeitsblattvalidierungen, REST-API, Alle Validierungen abrufen, SDKs"
+description: "Rufen Sie alle Arbeitsblattvalidierungen aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST-API ab. Unterstützt mehrere SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) für eine schnelle Integration."
+weight: 10
+---
 
-## RSET API
+Mit Arbeitsblattvalidierungen können Sie Regeln definieren, die den Typ oder Bereich der in Zellen eingebaren Daten einschränken. Sie werden häufig verwendet, um die Datenintegrität sicherzustellen, z. B. durch Einschränkung der Eingaben auf eine Liste von Werten, Daten innerhalb eines bestimmten Bereichs oder numerische Grenzwerte.
+
+Diese REST-API ruft alle Arbeitsblattvalidierungen in einem Excel-Arbeitsblatt ab.
+
+## REST-API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 ```
 
-Die Anforderungsparameter sind:
+### **Anforderungsparameter**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Dokumentname.|
-| Blattname| Schnur| Weg| Arbeitsblattname.|
-| Ordner| Schnur| Abfrage| Dokumentenordner.|
-| Speichername| Schnur| Abfrage| Speichername.|
+| Parametername | Typ   | Ort     | Beschreibung                                      |
+| ------------- | ----- | ------- | ------------------------------------------------- |
+| name          | string | path    | Name der Excel-Datei.                             |
+| sheetName     | string | path    | Name des Arbeitsblatts.                           |
+| folder        | string | query   | Ordnerpfad, in dem das Dokument gespeichert ist.  |
+| storageName   | string | query   | Name des Speicherdienstes.                        |
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+**Antwortstatuscodes**
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+| Code | Beschreibung                                   |
+|------|------------------------------------------------|
+| 200  | Erfolgreiche Anforderung – Liste der Validierungen |
+| 401  | Nicht autorisiert – ungültiges oder fehlendes Token |
+| 404  | Nicht gefunden – Dokument oder Arbeitsblatt fehlt |
+| 500  | Interner Serverfehler                          |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt über einen Webbrowser.
+
+Sie können das cURL-Befehlszeilentool verwenden, um problemlos auf die Aspose.Cells Cloud-Webdienste zuzugreifen. **Voraussetzung:** Sie müssen ein gültiges JWT-Token im `Authorization`-Header angeben.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Anforderung" tabName2="Antwort" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
-
- 
+```json
+{
+  "validations": [
+    {
+      "name": "Validation1",
+      "type": "WholeNumber",
+      "operator": "Between",
+      "formula1": "1",
+      "formula2": "100",
+      "showErrorMessage": true,
+      "errorMessage": "Wert muss zwischen 1 und 100 liegen."
+    },
+    {
+      "name": "Validation2",
+      "type": "List",
+      "formula1": "\"Option1,Option2,Option3\"",
+      "showErrorMessage": true,
+      "errorMessage": "Wählen Sie einen Wert aus der Liste aus."
+    }
+  ]
+}
 ```
 
 {{< /tab >}}
@@ -62,9 +86,9 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/vali
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK übernimmt Low-Level-Details, sodass Sie sich auf die Aufgaben Ihres Projekts konzentrieren können. Weitere Informationen finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

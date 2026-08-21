@@ -1,31 +1,39 @@
-﻿---
-title: "Aspose.Cells Cloud SDK لـ PHP: التحويل، الدمج، التقسيم، الحماية، البحث، الاستبدال، والمزيد"
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud SDK for PHP: Convert, merge, split, protect, search, replace, and more"
-linktitle: Aspose.Cells مجموعة SDK السحابية للفلبين
-type: docs
-url: /ar/available-sdks/aspose-cells-cloud-php/
-description: "توفر مجموعة SDK السحابية Aspose.Cells لـ PHP قوة حقيقية عبر الأنظمة الأساسية: يوفر استيراد واحد للمطورين Windows وLinux وmacOS نفس القدرة على إنشاء كل كائن وتحويله ودمجه وتقسيمه وحمايته ومعالجته - لا يلزم تثبيت Office ولا يلزم إجراء تعديلات خاصة بالمنصة"
-weight: 30
-kwords: مجموعة أدوات تطوير البرامج PHP، مجموعة أدوات تطوير البرامج Excel لـ PHP، مجموعة أدوات تطوير البرامج السحابية لـ PHP، REST، مخطط، جدول محوري، كائن جدول/قائمة، تحويل جدول بيانات، PDF، CSV، JSON، Markdown، دمج، تقسيم، حماية، بحث، استبدال
 ---
-مجموعة تطوير البرامج مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا. يمكنك الوصول إليها[كود مصدر المكتبة PHP لـ Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php).
+title: "Aspose.Cells Cloud SDK لـ PHP – تحويل ودمج وتقسيم وحماية ملفات إكسل"  
+second_title: "وثيقة"  
+ArticleTitle: "Aspose.Cells Cloud SDK لـ PHP – تحويل ودمج وتقسيم وحماية ملفات إكسل"  
+linktitle: "Aspose.Cells Cloud SDK لـ PHP"  
+type: docs  
+url: /available-sdks/aspose-cells-cloud-php/  
+description: "حمّل Aspose.Cells Cloud SDK لـ PHP (الإصدار 24.3). تعلّم كيفية التثبيت عبر Composer، والمصادقة، وتحويل ملفات XLSX إلى PDF/CSV، ودمج ملفات العمل، وحماية الأوراق، وأكثر من ذلك – كل ذلك دون الحاجة لتثبيت Office."  
+keywords: "Aspose.Cells، السحابة، PHP، SDK، إكسل، تحويل، دمج، تقسيم، حماية"  
+weight: 30  
+---  
+
+يُعدّ SDK مفتوح المصدر ومرخّص بموجب ترخيص MIT. يمكنك الوصول إلى كود مكتبة PHP الخاصة بـ Aspose.Cells Cloud <a href="https://github.com/aspose-cells-cloud/aspose-cells-cloud-php" target="_blank" rel="noopener noreferrer">هنا</a>.
 
 # **كيفية استخدام Aspose.Cells Cloud SDK لـ PHP**
 
-مجموعة تطوير البرامج السحابية Aspose.Cells لـ PHP هي مكتبة فعّالة تُمكّن المطورين من التعامل مع ملفات Microsoft Excel ومعالجتها باستخدام لغة البرمجة Go. باستخدام هذه المجموعة، يُمكنك إنشاء مستندات Excel وتحريرها وتحويلها في السحابة، دون الحاجة إلى تثبيت برامج أو تبعيات إضافية على جهازك المحلي.
+تُعتبر مكتبة Aspose.Cells Cloud SDK لـ PHP مكتبة قوية تتيح للمطورين التعامل مع ملفات مايكروسوفت إكسل ومعالجتها باستخدام **لغة البرمجة PHP**. وباستخدام هذا SDK، يمكنك إنشاء وتحرير وتحويل مستندات إكسل في السحابة، دون الحاجة لتثبيت أي برامج إضافية أو اعتماديات على جهازك المحلي.
 
-في هذه المقالة، سنستكشف كيفية استخدام Aspose.Cells Cloud SDK لـ PHP لأداء بعض المهام الشائعة، مثل إنشاء مصنف Excel جديد، وإدراج البيانات في الخلايا، وحفظ المصنف المعدل في السحابة.
+في هذه المقالة، سنستعرض كيفية استخدام Aspose.Cells Cloud SDK لـ PHP لأداء بعض المهام الشائعة، مثل إنشاء ملف عمل إكسل جديد، وإدخال بيانات في الخلايا، وحفظ ملف العمل المعدّل في السحابة.
 
-## ابدء
+## البدء
 
- قبل أن تتمكن من استخدام حزمة تطوير البرامج السحابية Aspose.Cells للغة Go، عليك إعداد بيئة التطوير وتثبيت التبعيات اللازمة. راجع[المقال](https://docs.aspose.cloud/cells/quickstart/) على موقع الويب Aspose للحصول على معرف العميل والسر الخاص بالعميل.
+قبل أن تبدأ باستخدام Aspose.Cells Cloud SDK لـ **PHP**، تحتاج إلى إعداد بيئة التطوير وتثبيت الاعتماديات المطلوبة. راجع <a href="https://docs.aspose.cloud/cells/quickstart/" target="_blank" rel="noopener noreferrer">المقالة</a> على موقع Aspose للحصول على معرّف العميل (Client ID) وسرّ العميل (Client Secret).
 
-## كيفية تثبيت الحزمة PHP لـ Aspose.Cells Cloud
+**المتطلبات الأساسية**
 
-يمكنك تثبيت Aspose.Cells Cloud SDK لـ PHP. فيما يلي الخطوات:
+- PHP الإصدار 7.4 أو أحدث  
+- Composer مثبت على جهاز التطوير الخاص بك  
+- معرّف عميل وسرّ عميل ساري المفعول لـ Aspose Cloud  
+- وصول إلى موقع تخزين Aspose Cloud (افتراضي أو مخصص)  
 
-- أضف Aspose.Cells Cloud كتبعية لملف `composer.json` الخاص بك:
+## كيفية تثبيت حزمة PHP الخاصة بـ Aspose.Cells Cloud
+
+يمكنك تثبيت Aspose.Cells Cloud SDK لـ PHP. فيما يلي الخطوات المتبعة:
+
+- أضف Aspose.Cells Cloud كاعتمادية في ملف `composer.json`:
 
    ```json
    {
@@ -35,31 +43,59 @@ kwords: مجموعة أدوات تطوير البرامج PHP، مجموعة أ�
    }
    ```
 
-- قم بتشغيل تحديث Composer لتثبيت SDK:
+- نفّذ أمر تحديث Composer لتثبيت SDK:
 
    ```bash
-
    composer install
-
    ```
 
-- قم بتضمين أداة التحميل التلقائي الخاصة بـ Composer في الكود PHP الخاص بك:
+- أدرج مُحمّل التلقائي (Autoloader) الخاص بـ Composer في كود PHP الخاص بك:
 
    ```php
-
    require 'vendor/autoload.php';
-
    ```
 
-## كيفية استخدام الحزمة PHP لتحويل Xlsx إلى تنسيقات أخرى
+## كيفية استخدام حزمة PHP لتحويل ملفات Xlsx إلى صيغ أخرى
 
-- استيراد مكتبة السحابة Aspose.Cells
- ابدأ باستيراد الحزمة اللازمة من SDK Aspose.Cells Cloud PHP إلى مشروعك.
-- تكوين العميل API باستخدام بيانات الاعتماد
- قم بمصادقة عميلك API باستخدام معرف العميل الفريد والسر الخاص بالعميل.
-- إعداد معلمات التحويل
- قم بتحديد المعلمات لمهمة التحويل، بما في ذلك اسم ملف المصدر، وتنسيق الإخراج المطلوب، ومسار مجلد التخزين.
-- تنفيذ تحويل المصنف
- استدعاء عملية التحويل باستخدام طريقة PostConvertWorkbook ومعالجة الاستجابة.
+- استيراد مكتبة Aspose.Cells Cloud  
+  ابدأ باستيراد الحزمة الضرورية من Aspose.Cells Cloud SDK لـ PHP إلى مشروعك.
+
+- تهيئة عميل API凭 التأكّد من الهوية  
+  قم بمصادقة عميل API باستخدام معرّف العميل وسرّ العميل الفريد الخاص بك.
+
+- إعداد معلمات التحويل  
+  عرّف المعلمات المطلوبة لمهمة التحويل، بما في ذلك اسم الملف المصدر، وصيغة الإخراج المرغوبة، ومسار مجلد التخزين.
+
+- تنفيذ عملية تحويل ملف العمل  
+  استدعِ عملية التحويل باستخدام الدالة `PostConvertWorkbook` وتعامل مع الاستجابة.
 
 {{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_AvailableSDKs.php" >}}
+
+### المرجع البرمجي لـ `PostConvertWorkbook`
+
+| المعلمة       | الوصف                                         | النوع   | إجباري |
+|---------------|------------------------------------------------|---------|---------|
+| `file`        | اسم ملف إكسل المصدر (مثلًا: `sample.xlsx`).  | نص (string) | نعم |
+| `format`      | صيغة الإخراج المرغوبة (`pdf`، `csv`، `png`، إلخ). | نص (string) | نعم |
+| `storage`     | اسم مجلد التخزين أو مساره حيث يوجد الملف المصدر. | نص (string) | لا |
+| `outPath`     | مسار اختياري لحفظ الملف المحول مباشرة في التخزين. | نص (string) | لا |
+
+**طريقة HTTP:** POST  
+**نقطة النهاية:** `/cells/convert/{format}`  
+
+**مثال على الاستجابة (JSON)**  
+
+```json
+{
+  "status": "OK",
+  "url": "https://api.aspose.cloud/v3.0/cells/convert/output.pdf"
+}
+```
+
+**أكواد الحالة (Status Codes)**
+
+- `200` – تم التحويل بنجاح.  
+- `400` – طلب غير صالح (معلمات مفقودة أو غير صحيحة).  
+- `401` – فشلت المصادقة.  
+- `500` – خطأ في الخادم.  
+---

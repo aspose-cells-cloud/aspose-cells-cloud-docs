@@ -1,105 +1,115 @@
-﻿---
-title: الحصول على النطاقات المسماة على كتاب العمل Excel
-second_title: Documen
-linktitle: نام
-type: docs
-url: /ar/ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
-keywords: Get cells data based on named range on an Excel worksheet
-description: يدعم Cloud REST Aspose.Cells الحصول على بيانات الخلايا بناءً على نطاق مُسمّى في ورقة عمل Excel. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 10
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على النطاقات المسماة في مصنف Excel
 ---
-يشير هذا REST API إلى معلومات نطاقات أوراق العمل المقروءة.
+title: "الحصول على النطاقات المسماة في مصنف إكسل"
+second_title: "وثيقة"
+linktype: "اسم"
+type: docs
+url: /ranges/get/name/
+aliases: [/get-named-ranges-inside-the-workbook/]
+keywords: "النطاقات المسماة، إكسل، Aspose.Cells، واجهة برمجة التطبيقات السحابية، أوراق العمل"
+description: "استرجاع النطاقات المسماة من مصنف إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمن تفاصيل الطلب وأوامر cURL النموذجية وأمثلة لعدة لغات برمجة."
+ArticleTitle: "الحصول على النطاقات المسماة في مصنف إكسل – واجهة برمجة التطبيقات السحابية Aspose.Cells"
+weight: 10
+---
 
-## RSET API
+تُعيد هذه الواجهة البرمجية (REST API) معلومات حول النطاقات المسماة المُعرَّفة داخل أوراق العمل.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
- 
+**الخلفية** – يُعد *النطاق المسماة* مُعرِّفًا يُعرِّفه المستخدم ويُشير إلى خلية محددة أو مجموعة محددة من الخلايا في ورقة عمل. وتساعد النطاقات المسماة في تبسيط إنشاء الصيغ، وتحسين قابلية القراءة، وتمكين الوصول البرمجي إلى المناطق المستخدمة بشكل متكرر في المصنف.
+
+**المتطلبات الأساسية** – يتطلب الوصول إلى واجهة برمجة تطبيقات Aspose.Cells Cloud رمز وصول JWT صالح. احصل على الرمز المميز من خلال المصادقة باستخدام مُعرِّف العميل وسر العميل الخاصين بك على خدمة OAuth 2.0. وقم بتضمين الرمز المميز في رأس الطلب `Authorization: Bearer <jwt token>` في كل طلب.
+
+## واجهة GetNamedRanges البرمجية
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة مبنية على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل | النوع   | الموقع     | الوصف                                  |
+| -------------- | ------ | ------------ | -------------------------------------------- |
+| name           | string | Path         | اسم مستند إكسل.              |
+| folder         | string | Query string | المجلد الذي يحتوي على المستند.       |
+| storageName    | string | Query string | اسم وحدة التخزين التي يوجد فيها المستند. |
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | الوصف                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | ناجح                          | تم تطبيق الفلتر بنجاح؛ ويتضمن الاستجابة تفاصيل العملية. |
+| 400  | طلب غير صالح                 | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401  | غير مُصادَق                 | رمز JWT غير صالح أو مفقود. |
+| 413  | حجم البيانات أكبر من المسموح به           | حجم الملف المرفوع يتجاوز الحد المسموح به. |
+| 500  | خطأ داخلي في الخادم       | خطأ غير متوقع في الخادم. |
+
+تُعرِّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) واجهة برمجة تطبيقات عامة قابلة للوصول تتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL لاستدعاء خدمات Aspose.Cells عبر الويب. يوضح المثال التالي كيفية استرجاع النطاقات المسماة باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/ranges" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Ranges": {
-
     "RangeList": [
-
       {
-
         "ColumnCount": 7,
-
         "ColumnWidth": 8.428571428571429,
-
         "FirstColumn": 1,
-
         "FirstRow": 9,
-
         "Name": "data",
-
         "RefersTo": "=Sheet1!$B$10:$H$10",
-
         "RowCount": 1,
-
         "RowHeight": 15,
-
         "Worksheet": "Sheet1"
-
       }
-
     ]
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+**نموذج الاستجابة**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| الحقل          | النوع    | الوصف                                          |
+|----------------|---------|------------------------------------------------------|
+| `ColumnCount`  | integer | عدد الأعمدة في النطاق.                      |
+| `ColumnWidth`  | number  | عرض كل عمود (بالنقاط).                    |
+| `FirstColumn`  | integer | فهرس العمود الأول (مبني على الصفر) في النطاق.   |
+| `FirstRow`     | integer | فهرس الصف الأول (مبني على الصفر) في النطاق.      |
+| `Name`         | string  | الاسم المُعرَّف من قِبل المستخدم للنطاق.                  |
+| `RefersTo`     | string  | صيغة تُعرِّف مرجع الخلية (مثل `=Sheet1!$B$10:$H$10`). |
+| `RowCount`     | integer | عدد الصفوف في النطاق.                         |
+| `RowHeight`    | number  | ارتفاع كل صف (بالنقاط).                      |
+| `Worksheet`    | string  | اسم ورقة العمل التي يحتوي عليها النطاق.       |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+## مجموعة أدوات SDK السحابية
+
+يُعد استخدام حزمة SDK أسرع طريقة لدمج هذه الوظيفة. وتتولى حزم SDK تفاصيل المستوى المنخفض، مما يسمح لك بالتركيز على منطق أعمالك. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم SDK لـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر الويب باستخدام حزم SDK المختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,64 +1,68 @@
-﻿---
-title: Temiz
+---
+title: "Bağlantıları Temizle"
 type: docs
 url: /tr/hyperlinks/clear/
 aliases: [/add-hyperlinks-to-excel-worksheet/]
-keywords: Clear hyperlinks from an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki köprüleri temizlemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
+keywords: "Aspose.Cells Cloud, Excel, bağlantıları temizle, bağlantıları sil, REST API, çalışma sayfası, SDK"
+description: "Aspose.Cells Cloud REST API’si veya desteklenen SDK’lardan herhangi birini (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl vb.) kullanarak bir Excel çalışma sayfasından tüm bağlantıları nasıl kaldıracağınızı öğrenin."
 weight: 40
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Temizle
+ArticleTitle: "Bağlantıları Temizle – Aspose.Cells Cloud API Dokümantasyonu"
 ---
-Bu REST API, Excel çalışma sayfasında `delete all hyperlinks`'i gösterir.
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasındaki **tüm bağlantıları** siler.
+
+## Güvenlik ve Kimlik Doğrulama
+Aspose.Cells Cloud API’leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulama](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) gerektirir.
+
+## REST API
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-İstek parametreleri şunlardır:
+### İstek Parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı | Tür     | Konum  | Açıklama                              |
+| ------------- | ------- | ------ | ------------------------------------- |
+| name          | string  | path   | Excel dosyasının adı.                 |
+| sheetName     | string  | path   | Çalışma sayfasının adı.               |
+| folder        | string  | query  | Belgeyi içeren klasör.                |
+| storageName   | string  | query  | Depolama hizmetinin adı.              |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Hypelinks/DeleteWorksheetHyperlinks) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### Hata Yanıtları
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| HTTP Kodu | Neden                                              | Örnek Gövde                                                         |
+| --------- | -------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**   | Geçersiz İstek – eksik veya geçersiz parametreler. | `{ "Code":"400", "Message":"Geçersiz parametre değeri." }`          |
+| **401**   | Yetkisiz – eksik veya geçersiz JWT belirteci.     | `{ "Code":"401", "Message":"Erişim belirteci eksik veya geçersiz." }` |
+| **404**   | Bulunamadı – çalışma kitabı veya çalışma sayfası yok. | `{ "Code":"404", "Message":"Dosya bulunamadı." }`                  |
+| **500**   | Sunucu İç Hatası – beklenmeyen sunucu hatası.      | `{ "Code":"500", "Message":"Beklenmeyen bir hata oluştu." }`        |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Hyperlinks/DeleteWorksheetHyperlinks), bir web tarayıcısından doğrudan REST etkileşimlerinde bulunmanızı sağlayan herkese açık bir programlama arayüzü tanımlar.
+
+**cURL** komut satırı aracını Aspose.Cells web hizmetlerini çağırmak için kullanabilirsiniz. Aşağıdaki örnek, bir çalışma sayfasından tüm bağlantıları silmeyi göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test1.xlsx/worksheets/Sheet1/hyperlinks" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -66,10 +70,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test1.xlsx/worksheets/Sheet1/hyperl
 {{< /tabs >}}
 
 ## Bulut SDK Ailesi
+Bir SDK kullanmak, düşük seviye ayrıntıları sizin için yöneterek geliştirme sürecini hızlandırır. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
-
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’larla çalışma sayfası bağlantılarını nasıl sileceğinizi göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

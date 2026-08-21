@@ -1,102 +1,119 @@
-﻿---
-title: Ge
-type: docs
-url: /tr/comments/get/
-aliases: [/get-comment-from-a-worksheet/]
-keywords: REST API, spreadsheets, excel, get commen
-description: "Cells. Excel için API Bulutu çalıştırın: yorum alın"
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Get
 ---
-Bu REST API, Hücre adına göre çalışma sayfası yorumunu al'ı gösterir.
+title: "Çalışma Sayfası Yorumunu Al – Aspose.Cells Cloud API Dokümantasyonu"
+type: docs
+url: /comments/get/
+aliases: [/get-comment-from-a-worksheet/]
+keywords: "Aspose.Cells, çalışma sayfası yorumu, API, GET, Excel"
+description: "Aspose.Cells Cloud API’si (v3.0) kullanarak bir hücre adına göre çalışma sayfası yorumunu nasıl alacağınızı öğrenin. İstek URL’si, parametreler, cURL örneği, yanıt detayları ve SDK kod parçacıklarını içerir."
+weight: 10
+ArticleTitle: "Çalışma Sayfası Yorumunu Al – Aspose.Cells Cloud API Dokümantasyonu"
+---
 
-## RSET API
+Bu REST API, **Aspose.Cells Cloud** kullanarak bir hücre adına göre çalışma sayfası yorumunu getirir.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
- 
+**Önkoşullar:** Bu işlemi çağırmak için `Authorization` başlığına geçerli bir JWT erişim belirteci (`Bearer <jwt token>`) dahil etmelisiniz. Belirteçler, [Kimlik Doğrulama kılavuzunda](/cells/authentication/) açıklanan Aspose.Cells Cloud kimlik doğrulama akışıyla elde edilebilir.
+
+## GetWorksheetComment API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| hücreAdı| sicim| yol| Hücre adı|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulamayı</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetComment) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı | Tür    | Konum (URL Yolu / Sorgu Dizesi) | Açıklama                                                           |
+| ------------- | ------ | -------------------------------- | ------------------------------------------------------------------ |
+| name          | string | URL Yolu                         | Excel dosyasının adı.                                              |
+| sheetName     | string | URL Yolu                         | Yorumun bulunduğu çalışma sayfasının adı.                          |
+| cellName      | string | URL Yolu                         | Yorumu alınacak hücrenin adresi (örn. **A1**).                    |
+| folder        | string | Sorgu Dizesi                     | Belgenin depolandığı klasör yolu.                                  |
+| storageName   | string | Sorgu Dizesi                     | Depolama hizmetinin adı.                                           |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+<a href="https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetComment" rel="noopener noreferrer">OpenAPI Specification</a>, herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’ye bir istek nasıl yapılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/A1" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-    "Comment":{
-
-    "CellName":"A1",
-
-    "Author":"roy.wang",
-
+  "Comment": {
+    "CellName": "A1",
+    "Author": "roy.wang",
     "HtmlNote": "",
-
     "Note": "Aspose.Cells Cloud.",
-
     "AutoSize": "True",
-
     "IsVisible": "True",
-
     "Width": 30,
-
     "Height": 10,
-
     "TextHorizontalAlignment": "Bottom",
-
     "TextOrientationType": "TopToBottom",
-
     "TextVerticalAlignment": "Bottom"
-
-    },
- 
-   "Code": 200,
-
-   "Status": "OK"
-
+  },
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+**Yanıt:** API, aşağıdaki alanları içeren bir `Comment` nesnesi barındıran bir JSON nesnesi döndürür:
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| Alan                       | Tür     | Açıklama                                              |
+| -------------------------- | ------- | ----------------------------------------------------- |
+| `CellName`                 | string  | Hücrenin adresi (örn. **A1**).                        |
+| `Author`                   | string  | Yorumun yazarının adı.                                |
+| `HtmlNote`                 | string  | Yorum içeriği HTML formatında (varsa).               |
+| `Note`                     | string  | Yorumun düz metin versiyonu.                          |
+| `AutoSize`                 | boolean | Yorum kutusunun otomatik boyutlandırma yapılandırılıp yapılmadığını gösterir. |
+| `IsVisible`                | boolean | Yorumun görünürlüğünü belirler.                       |
+| `Width`                    | integer | Yorum kutusunun genişliği (karakter cinsinden).       |
+| `Height`                   | integer | Yorum kutusunun yüksekliği (karakter cinsinden).      |
+| `TextHorizontalAlignment` | string  | Metnin yatay hizalaması (örn. **Bottom**).            |
+| `TextOrientationType`      | string  | Metnin yönü (örn. **TopToBottom**).                   |
+| `TextVerticalAlignment`    | string  | Metnin dikey hizalaması (örn. **Bottom**).            |
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+## Yaygın Hatalar
+
+- **401 Yetkisiz** – JWT belirtecinin geçerli olduğunu, süresinin dolmadığını ve `Authorization` başlığında doğru yerleştirildiğini doğrulayın.
+- **404 Bulunamadı** – Dosya adı, çalışma sayfası adı ve hücre adresinin doğru olduğundan ve dosyanın belirtilen klasör/depolamada mevcut olduğundan emin olun.
+- **500 İç Sunucu Hatası** – İstek yükünde bozuk veri olup olmadığını kontrol edin ve hizmetin çalışır durumda olduğundan emin olun.
+
+**HTTP Durum Kodları**
+
+| Kod | Anlamı                      | Açıklama                                         |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | Tamam (OK)                  | Filtre başarıyla uygulandı; yanıt işlem detaylarını içerir. |
+| 400 | Geçersiz İstek              | Eksik veya geçersiz parametreler (örn. desteklenmeyen dosya türü). |
+| 401 | Yetkisiz                    | Geçersiz veya eksik JWT belirteci.               |
+| 413 | Yük Çok Büyük               | Yüklenen dosya boyut sınırlamasını aşıyor.       |
+| 500 | İç Sunucu Hatası            | Beklenmeyen sunucu hatası.                       |
+
+## Bulut SDK Grubu
+
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. SDK, düşük seviye detayları yönetir ve proje görevlerinize odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub deposuna</a> göz atın.
+
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanılarak Aspose.Cells web hizmetlerine istek nasıl yapılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

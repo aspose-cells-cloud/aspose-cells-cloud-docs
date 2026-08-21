@@ -1,98 +1,101 @@
-﻿---
-title: Получить список файлов - Aspose.Cells AP
-second_title: Developer Guide for Aspose.Cell
-linktitle: Получить список файлов
-type: docs
-url: /ru/get-files-list/
-keywords: Aspose.Cells API, Get Files List, REST API, Excel File Management, Cloud Storage, File Retrieval, Programming Interfac
-description: Узнайте, как получить список файлов из указанной папки с помощью Aspose.Cells API. В этом руководстве приведены подробные сведения о параметрах запроса, структуре ответа и примеры кода на различных языках программирования.
-weight: 100
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, JSON, Markdown, Управление файлами в облаке, Получение списка файлов
 ---
-## **Excel API: Получить список файлов**
+title: "Aspose.Cells Cloud API — Получение списка файлов (содержимое папки)"
+description: "Получение списка файлов и вложенных папок из указанной папки в облачном хранилище Aspose.Cells Cloud."
+keywords:
+  - Aspose.Cells
+  - API
+  - Получение списка файлов
+  - Облачное хранилище
+  - Excel
+  - REST
+type: docs
+weight: 100
+---
+
+Операция **Get Files List** возвращает коллекцию файлов и вложенных папок, хранящихся в указанной папке облачного хранилища Aspose.Cells Cloud.  
+Это основная точка входа для просмотра облачных книг Excel, архивов и других поддерживаемых типов файлов.
+
+## Aspose.Cells Cloud API — Получение списка файлов (содержимое папки)
 
 ```
-GET http://api.aspose.cloud/v4.0/cells/storage/folder/{path}
+GET https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
 
-### **Описание функции**
+### **Безопасность и аутентификация**
 
- The**получитьСписокФайлов**API позволяет пользователям получать полный список файлов и папок, содержащихся в указанном каталоге в облачном хранилище Aspose.Cells. Эта конечная точка критически важна для эффективного управления файлами и поддерживает различные форматы файлов.
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
 
-###  Параметры запроса**получитьСписокФайлов** API есть
+### Параметры запроса
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody| Описание|
-|:- |:- |:- |:- |
-| путь| Нить| Путь| Путь к папке в облачном хранилище, из которой следует извлечь список файлов.|
-| имя_хранилища| Нить| Запрос| Имя хранилища, к которому необходимо получить доступ.|
+| Название           | Местоположение | Тип     | Обязательный | Описание                                                                 |
+| ------------------ | -------------- | ------- | ------------ | ------------------------------------------------------------------------ |
+| **path**           | Path           | string  | Да           | Путь к папке в облачном хранилище.                                        |
+| **storageName**    | Query          | string  | Нет          | Имя используемого хранилища. Если не указано, используется хранилище по умолчанию. |
+| **pageSize**       | Query          | integer | Нет          | Максимальное количество возвращаемых элементов на странице (по умолчанию: 100). |
+| **pageNumber**     | Query          | integer | Нет          | Номер страницы для получения (начиная с 1, по умолчанию: 1).             |
 
-### **Описание ответа**
+- **Value** — Массив объектов `StorageFile`. Каждый объект содержит:
+  - `Name` — Имя файла или папки.
+  - `IsFolder` — `true`, если запись представляет собой папку.
+  - `Size` — Размер в байтах (для папок возвращается `0`).
+  - `ModifiedDate` — Временная метка последнего изменения (в формате ISO 8601).
+
+### **Ответ**
+
+**Коды состояния HTTP**
+
+| Код HTTP | Статус HTTP           | Описание                                                              |
+| -------- | --------------------- | --------------------------------------------------------------------- |
+| 200      | OK (Успех)            | Веб-API успешно вызван; ответ содержит детали операции.              |
+| 400      | Bad Request (Неверный запрос) | Отсутствуют или недопустимы параметры (например, неподдерживаемый тип файла). |
+| 401      | Unauthorized (Неавторизован) | Неверный или отсутствующий JWT-токен.                                |
+| 413      | Payload Too Large (Слишком большой полезный груз) | Загруженный файл превышает предельный размер.                         |
+| 500      | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                                        |
+
+## Спецификация OpenAPI
+
+[Спецификация OpenAPI](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Folder/GetFilesList) определяет публично доступное программное интерфейсное описание и позволяет выполнять взаимодействие по REST прямо из веб-браузера.
+
+Вы можете использовать инструмент командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как выполнять вызовы к облачному API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/folder/{path}?storageName=MyStorage&pageSize=100&pageNumber=1" \
+     -H "Authorization: Bearer <your_access_token>"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
 
 ```json
 {
-  "Name": "FilesList",
-  "Description": [
-    "Files list"
-  ],
-  "Type": "Class",
-  "IsAbstract": false,
-  "Properties": [
+  "Value": [
     {
-      "Name": "Value",
-      "Description": [
-        "Files and folders contained by the specified StorageFile."
-      ],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "StorageFile",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "StorageFile",
-          "Name": "class:storagefile"
-        },
-        "Name": "container"
-      }
+      "Name": "Report.xlsx",
+      "IsFolder": false,
+      "Size": 124578,
+      "ModifiedDate": "2024-03-10T12:34:56Z"
+    },
+    {
+      "Name": "Archives",
+      "IsFolder": true,
+      "Size": 0,
+      "ModifiedDate": "2024-02-01T08:00:00Z"
     }
   ]
 }
 ```
 
-## Спецификация OpenAPI
+{{< /tab >}}
 
- The[Спецификация OpenAPI](https://reference.aspose.cloud/cells/#/FolderController/GetFilesList) определяет общедоступный программный интерфейс, который позволяет взаимодействовать с REST непосредственно из веб-браузера, что упрощает интеграцию и тестирование.
-
-## Excel API SDK
-
- Использование SDK — оптимальный подход к ускорению процесса разработки. SDK управляет низкоуровневыми деталями, позволяя вам сосредоточиться на задачах проекта. Полный список облачных SDK Aspose.Cells можно найти на сайте[Репозиторий GitHub](https://github.com/aspose-cells-cloud).
-
-Следующие примеры кода иллюстрируют, как вызывать веб-службы Aspose.Cells с использованием различных SDK:
-
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_GetFilesList.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_GetFilesList.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_GetFilesList.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_GetFilesList.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_GetFilesList.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_GetFilesList.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_GetFilesList.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_GetFilesList.go" >}}
-{{< /tab >}}
 {{< /tabs >}}
+
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK — это лучший способ ускорить разработку. SDK управляет низкоуровневыми деталями, позволяя сосредоточиться на задачах вашего проекта. Ознакомьтесь со списком всех SDK Aspose.Cells Cloud в <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">репозитории на GitHub</a>.
+
+Приведенные ниже примеры кода демонстрируют, как выполнять вызовы к веб-сервисам Aspose.Cells с использованием различных SDK:

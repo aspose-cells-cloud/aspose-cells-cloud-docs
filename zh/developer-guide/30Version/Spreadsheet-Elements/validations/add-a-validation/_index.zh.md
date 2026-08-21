@@ -1,74 +1,69 @@
-﻿---
-title: 在 Excel 工作表上添加工作表验证
-second_title: Documen
-linktitle: 广告
-type: docs
-url: /zh/validations/add/
-keywords: Delete a worksheet validation on an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持在 Excel 工作表上添加工作表验证。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 10
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 工作表上添加工作表验证
 ---
-此 REST API 表示在 Excel 工作表上添加工作表验证。
+title: "向 Excel 工作表添加工作表验证"
+second_title: "文档"
+linktitle: "添加"
+type: docs
+url: /validations/add/
+keywords: "添加工作表验证, Excel, Aspose.Cells Cloud, REST API, 电子表格, 验证规则"
+description: "使用 Aspose.Cells Cloud REST API 向 Excel 文件添加工作表验证。支持 C#、Java、PHP、Ruby、Node.js、Python、Perl、Go 和 Swift 的 SDK 均已提供。"
+weight: 10
+---
 
-## 重新设置 API
+此 REST API 可向 Excel 工作表添加工作表验证。
+
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
- 
 ```
 
-请求参数为：
+### **请求参数**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|范围|细绳|询问|指定单元格区域|
-|验证||身体|验证|
-|文件夹|细绳|询问|文档的文件夹。|
-|存储名称|细绳|询问|存储名称。|
+| 参数名称      | 类型   | 位置   | 描述                                                 |
+| ------------- | ------ | ------ | ---------------------------------------------------- |
+| name          | string | path   | Excel 文档的名称。                                   |
+| sheetName     | string | path   | 工作表的名称。                                       |
+| range         | string | query  | 验证所适用的单元格区域（例如：A1:B10）。             |
+| validation    | object | body   | 验证规则定义。                                       |
+| folder        | string | query  | 包含文档的文件夹。                                   |
+| storageName   | string | query  | 存储服务的名称。                                     |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) 定义了一个公开可用的编程接口，可让您直接从 Web 浏览器发起 REST 交互。
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用云 API。
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+## 云 SDK 家族
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，使您能够专注于项目任务。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -98,7 +93,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/va
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetValidation.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutWorksheetValidation.ts" >}}
 
 {{< /tab >}}
 

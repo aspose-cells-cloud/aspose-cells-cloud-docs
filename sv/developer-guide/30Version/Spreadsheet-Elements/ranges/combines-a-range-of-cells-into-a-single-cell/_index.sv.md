@@ -1,74 +1,101 @@
-﻿---
-title: Kombinerar ett intervall på Cells till en enda cell
-second_title: Documen
-linktitle: Sammanslagning
-type: docs
-url: /sv/ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
-keywords: Merge a range of cells into a single cell
-description: Aspose.Cells Cloud REST API stöder sammanslagning av ett cellområde till en enda cell i ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Kombinerar ett område av Cells till en enda cell
 ---
-Denna REST API anger att ett cellområde ska sammanfogas till en enda cell i ett Excel-arbetsblad.
+title: "Aspose.Cells Cloud API – Sammanfoga cellintervall"
+secondtitle: "Dokument"
+linktitle: "Sammanfoga"
+type: docs
+url: /ranges/merge/
+aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+keywords: "Aspose.Cells, sammanfoga celler, Excel API, REST, molntjänst SDK"
+description: "Sammanfoga ett intervall av celler till en enda cell med Aspose.Cells Cloud REST API. Lär dig begäranformat, parametrar och SDK-exempel för C#, Java, Python med mera."
+weight: 20
+---
 
-## RSET API
+Detta REST API sammanfogar ett intervall av celler till en enda cell i ett Excel-ark.
+
+**Översikt** – Sammanfogning av ett intervall kombinerar de markerade cellerna till en enda cell, bevarar värdet i övre vänstra cellen och kastar bort de övriga. Använd denna åtgärd när du behöver skapa en rubrik som sträcker sig över flera kolumner eller rader, eller när du vill förenkla layouten i ett kalkylark.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
 ```
 
-Begäranparametrarna är:
+### **Begärparametrar**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| arbetsbokens namn|
-| arknamn| sträng| väg| arbetsbladets namn|
-| räckvidd|| kropp| intervall i kalkylbladet|
-| mapp| sträng| fråga| Arbetsboksmapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| ParameterNamn   | Typ    | Plats  | Beskrivning                                           |
+| --------------- | ------ | ------ | ----------------------------------------------------- |
+| **name**        | string | path   | Namn på arbetsboken.                                  |
+| **sheetName**   | string | path   | Namn på kalkylarket.                                  |
+| **range**       | object | body   | Intervallobjekt som anger de celler som ska sammanfogas. |
+| **folder**      | string | query  | Mapp där arbetsboken lagras.                          |
+| **storageName** | string | query  | Namn på lagringsutrymmet.                             |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMerge) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+#### Schema för begäran Körper
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+**Range**-objektet måste innehålla följande fält (alla andra är valfria):
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Egenskap        | Typ     | Krävs  | Beskrivning                                           |
+| --------------- | ------- | ------ | ----------------------------------------------------- |
+| **FirstRow**    | integer | Ja     | Nollbaserat index för första raden i intervallet.     |
+| **FirstColumn** | integer | Ja     | Nollbaserat index för första kolumnen i intervallet.  |
+| **RowCount**    | integer | Ja     | Antal rader som ska inkluderas i intervallet.         |
+| **ColumnCount** | integer | Ja     | Antal kolumner som ska inkluderas i intervallet.      |
+| **Name**        | string  | Nej    | Valfritt namn för intervallet.                        |
+| **RefersTo**    | string  | Nej    | En formel som intervallet hänvisar till.              |
+| **Worksheet**   | string  | Nej    | Namn på kalkylarket (om det skiljer sig från path-parametern). |
+| **RowHeight**   | number  | Nej    | Radhöjd i intervallet (i bildpunkter).                |
+| **ColumnWidth** | number  | Nej    | Kolumnbredd i intervallet (i bildpunkter).            |
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör ett anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/merge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "FirstRow": 9,
+        "FirstColumn": 0,
+        "RowCount": 1,
+        "ColumnCount": 7
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+#### Svarsdetaljer
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| HTTP-status                   | Beskrivning                                           | Exempel-JSON                                           |
+| ----------------------------- | ----------------------------------------------------- | ------------------------------------------------------ |
+| **200 OK**                    | Intervallet har sammanfogats framgångsrikt.         | `{ "Code": 200, "Status": "OK" }`                      |
+| **400 Bad Request**           | Ogiltiga intervallparametrar (t.ex. index utanför intervallet). | `{ "Code": 400, "Message": "Invalid range." }`         |
+| **401 Unauthorized**          | Saknas eller ogiltigt JWT-token.                    | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404 Not Found**             | Arbetsboken eller kalkylarket hittades inte.         | `{ "Code": 404, "Message": "Resource not found." }`    |
+| **500 Internal Server Error** | Oväntat serverfel.                                   | `{ "Code": 500, "Message": "Internal server error." }` |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+## SDK-familj för molnet
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Se [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

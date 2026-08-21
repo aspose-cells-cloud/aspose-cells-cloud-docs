@@ -1,63 +1,69 @@
-﻿---
-title: Hämta radbeskrivning från ett Excel-arbetsblad
-second_title: Documen
-linktitle: Ro
+---
+title: "Hämta radbeskrivning från ett Excel-arbetsblad"
+second_title: "Document"
+linktitle: "Row"
 type: docs
 url: /sv/rows/get/row/
-aliases: [/get-row-from-a-worksheet/]
-keywords: Get row info on an Excel workshee
-description: Aspose.Cells Cloud REST API stöder hämtning av radinformation på ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
+aliases: [/sv/get-row-from-a-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel-rad-API, Hämta arbetsbladsrad, REST-API, .NET SDK, Java SDK, Python SDK"
+description: "Hämta detaljerad information (höjd, stil, dolt tillstånd etc.) för en specifik rad i ett Excel-arbetsblad med Aspose.Cells Cloud REST API. Innehåller cURL-exempel, SDK-utdrag och felhantering."
 weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta radbeskrivning från ett Excel-kalkylblad
+ArticleTitle: "Hämta radbeskrivning från ett Excel-arbetsblad – Aspose.Cells Cloud API"
 ---
-Denna REST API anger att raddata ska hämtas efter radindex i ett Excel-arbetsblad.
 
-## RSET API
+**Förutsättningar:**  
+- Skaffa ett giltigt JWT-åtkomsttoken och inkludera det i `Authorization: Bearer <jwt token>`-headern.  
+- Se till att arbetsboken är lagrad i Aspose Cloud-lagring eller ange mapp sökvägen där den finns.  
+- Använd API-version **v3.0** som visas i slutpunkts-URL:en.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
- 
+Denna REST API hämtar raddata baserat på dess index i ett Excel-arbetsblad.
+
+## GetWorksheetRow API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| radindex| heltal| väg| Radindexet.|
-| mapp| sträng| fråga| Arbetsbokens mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### **Förfrågningsparametrar**
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameter_name | Typ     | Plats  | Beskrivning                                         |
+| -------------- | ------- | ------ | --------------------------------------------------- |
+| name           | string  | path   | Namnet på arbetsbokens fil.                         |
+| sheetName      | string  | path   | Namnet på arbetsbladet inom arbetsboken.            |
+| rowIndex       | integer | path   | Noll-baserat index för raden som ska hämtas.        |
+| folder         | string  | query  | Mappen som innehåller arbetsboken.                  |
+| storageName    | string  | query  | Namnet på lagringen där arbetsboken finns.          |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda verktyget cURL för kommandoraden för att enkelt komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL. Inkludera `Authorization: Bearer <jwt token>`-headern för att autentisera förfrågan.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Förfrågan" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
   "Row": {
     "GroupLevel": 0,
     "Height": 13.5,
-    "Index": 10,
+    "Index": 0,
     "IsBlank": false,
     "IsHeightMatched": true,
     "IsHidden": false,
@@ -68,25 +74,55 @@ curl -v "http://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/ro
       }
     },
     "link": {
-      "Href": "api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/rows/10",
+      "Href": "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/rows/0",
       "Rel": "self"
     }
   },
   "Code": 200,
   "Status": "OK"
 }
- 
 ```
+
+**Svarschema**
+
+| Egenskap          | Typ     | Beskrivning                                                          |
+|-------------------|---------|----------------------------------------------------------------------|
+| `GroupLevel`      | integer | Utdragsnivå för raden (används för gruppering).                      |
+| `Height`          | number  | Radhöjd i punkter.                                                   |
+| `Index`           | integer | Noll-baserat index för den returnerade raden.                        |
+| `IsBlank`         | boolean | Indikerar om raden innehåller någon data.                            |
+| `IsHeightMatched`| boolean | `true` om radhöjden matchar standardhöjden för rader.               |
+| `IsHidden`        | boolean | `true` om raden är dold.                                              |
+| `Style`           | object  | Objekt som innehåller stilinformation för raden.                    |
+| `link`            | object  | Hyperlänksreferens till radresursen.                                 |
+| `Code`            | integer | HTTP-statuskod för svaret.                                           |
+| `Status`          | string  | Textuell beskrivning av statusen (t.ex. “OK”).                      |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+**Anteckningar / Felhantering:** API:et kan returnera följande HTTP-statuskoder:
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+- **200** – Lyckades; raddata returneras.  
+- **401** – Inte auktoriserad; JWT-token saknas eller är ogiltig.  
+- **404** – Ej hittad; den angivna arbetsboken, arbetsbladet eller raden finns inte.  
+- **500** – Internt serverfel; ett oväntat tillstånd uppstod.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+| Kod  | Beskrivning                                   | Åtgärd                                    |
+|------|-----------------------------------------------|-------------------------------------------|
+| 200  | Lyckades – raddata returnerades.              | –                                         |
+| 401  | Inte auktoriserad – saknad eller ogiltig JWT-token. | tillhandahåll en giltig JWT-token.        |
+| 404  | Ej hittad – arbetsbok, arbetsblad eller rad saknas. | Kontrollera namn och radindex.           |
+| 500  | Internt serverfel – oväntat tillstånd.        | Kontakta Aspose-support.                  |
+
+För en komplett lista över felkoder, se Aspose.Cells Cloud [felkodsdokumentationen](https://docs.aspose.cloud/cells/).
+
+## Cloud SDK-familj
+
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK abstraher bort detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Kontrollera [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

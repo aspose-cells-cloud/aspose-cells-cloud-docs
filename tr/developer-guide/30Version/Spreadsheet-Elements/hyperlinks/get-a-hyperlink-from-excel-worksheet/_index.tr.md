@@ -1,109 +1,98 @@
-﻿---
-title: Ge
-type: docs
-url: /tr/hyperlinks/get/
-keywords: Delete a hyperlink from an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasından köprü metinlerinin silinmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Get
 ---
-Bu REST API, Excel çalışma sayfasında indeks yoluyla `get worksheet hyperlink`'i gösterir.
+title: "Çalışma Sayfası Bağlantısını Al"
+type: docs
+url: /hyperlinks/get/
+keywords: "Aspose.Cells Cloud, Çalışma Sayfası Bağlantısını Al, Excel bağlantı API'si, REST, JWT kimlik doğrulama, Excel çalışma sayfası, API uç noktası"
+description: "Aspose.Cells Cloud API'sini (v3.0) kullanarak bir Excel çalışma sayfasından belirli bir bağlantıyı alın. Uç nokta, parametreler, cURL örneği, kimlik doğrulama ayrıntıları, hata işleme ve SDK kod parçacıklarını içerir."
+weight: 10
+ArticleTitle: "Aspose.Cells Cloud API – Çalışma Sayfası Bağlantısını Al"
+---
 
-## RSET API
+Bu REST API, **Aspose.Cells Bağlantı Al API'sini** kullanarak bir çalışma sayfasının **bağlantısını** getirir.
+
+## Güvenlik ve Kimlik Doğrulama
+
+Aspose.Cells Cloud API'leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulamaya](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) gerek duyar.  
+Uç noktayı çağırmadan önce, istemci kimliğiniz ve gizli anahtarınızla bir JWT erişim belirteci edinin ve `Authorization: Bearer <jwt token>` başlığına ekleyin.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
 ```
 
-İstek parametreleri şunlardır:
+### İstek Parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| hiperlinkIndeks| tam sayı| yol| Bağlantının indeksi.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı    | Tür      | Konum  | Açıklama                                         |
+| ---------------- | -------- | ------ | ------------------------------------------------ |
+| name             | string   | path   | Excel dosyasının adı.                            |
+| sheetName        | string   | path   | Bağlantının bulunduğu çalışma sayfasının adı.    |
+| hyperlinkIndex   | integer  | path   | Alınacak bağlantının sıfır tabanlı indeksi.      |
+| folder           | string   | query  | Belgenin depolandığı klasör.                     |
+| storageName      | string   | query  | Depolama hizmetinin adı.                         |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Hypelinks/GetWorksheetHyperlink) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### Hata Yanıtları
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| HTTP Kodu | Neden                                                | Örnek Gövde                                                        |
+| --------- | ---------------------------------------------------- | ----------------------------------------------------------------- |
+| **400**   | Bad Request – eksik veya geçersiz parametreler.      | `{ "Code":"400", "Message":"Geçersiz parametre değeri." }`        |
+| **401**   | Unauthorized – eksik veya geçersiz JWT belirteci.    | `{ "Code":"401", "Message":"Erişim belirteci eksik veya geçersiz." }` |
+| **404**   | Not Found – çalışma kitapçası veya çalışma sayfası yok. | `{ "Code":"404", "Message":"Dosya bulunamadı." }`                |
+| **500**   | Internal Server Error – beklenmeyen sunucu hatası.   | `{ "Code":"500", "Message":"Beklenmeyen bir hata oluştu." }`      |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Hyperlinks/GetWorksheetHyperlink), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'ye nasıl çağrı yapılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl  -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-{
-
   "Hyperlink": {
-
     "Address": "https://docs.aspose.cloud/display/cellscloud/Get+Hyperlink+from+Excel+Worksheet",
-
     "Area": {
-
       "EndColumn": 0,
-
       "EndRow": 1,
-
       "StartColumn": 0,
-
       "StartRow": 1
-
     },
-
     "ScreenTip": null,
-
     "TextToDisplay": "https://docs.aspose.cloud/display/cellscloud/Get+Hyperlink+from+Excel+Worksheet",
-
     "link": {
-
       "Href": "/test.xlsx/worksheets/Sheet1/hyperlinks/1",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-  
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+## Bulut SDK Geliştirme Kiti
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bir SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, düşük seviye detayları yöneterek size proje görevlerinize odaklanma imkânı verir. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub Deposu](https://github.com/aspose-cells-cloud)'na bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerini çeşitli SDK'lar kullanarak nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

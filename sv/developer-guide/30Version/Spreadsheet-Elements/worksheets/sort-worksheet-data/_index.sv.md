@@ -1,76 +1,93 @@
-﻿---
-title: Sortera intervalldata i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Sor
-type: docs
-url: /sv/worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
-keywords: Sort range data on an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder sortering av intervalldata på ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Sortera intervalldata på ett Excel-kalkylblad
 ---
-Denna REST API indikerar `sort worksheet range data`.
- 
-## RSET API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
- 
+title: "Sortera data i ett intervall på ett Excel-ark"
+second_title: "Dokument"
+linktitle: "Sortera"
+type: docs
+url: /worksheets/sort-data/
+aliases: [/sort-worksheet-data/]
+keywords: "Aspose.Cells Cloud, Excel-sorterings-API, sortering av arkintervall, REST-API, dataSorter"
+description: "Sortera ett specifikt intervall i ett Excel-ark med Aspose.Cells Cloud REST API. Inkluderar slutpunkt, nödvändiga parametrar, autentiseringssteg, felhantering och SDK-exempel."
+weight: 20
+---
+
+REST-API:et sortera data inom ett angivet intervall i ett Excel-ark.
+
+## REST API
+
+```shell
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
 ```
- Begäranparametrarna är:
- 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| cellArea| sträng| fråga| Intervallet att sortera.|
-| dataSortering|| kropp| med sorteringsinställningar.|
-| mapp| sträng| fråga| Arbetsbokens mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
- 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
- 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### Begärparametrar
+
+| Parameternamn | Typ   | Plats  | Nödvändig | Beskrivning                                                       |
+| ------------- | ----- | ------ | --------- | ----------------------------------------------------------------- |
+| name          | string | path   | Ja        | Arbetsbokens namn.                                                |
+| sheetName     | string | path   | Ja        | Arkets namn.                                                      |
+| cellArea      | string | query  | Ja        | Det intervall som ska sorteras (t.ex. `A5:A10`).                 |
+| dataSorter    | object | body   | Ja        | JSON-objekt som definierar sorteringsinställningarna (se schema nedan). |
+| folder        | string | query  | Nej       | Mappen som innehåller arbetsboken.                               |
+| storageName   | string | query  | Nej       | Namnet på den lagring där arbetsboken finns.                     |
+
+**`dataSorter`-objektschema** – Brödtexten måste innehålla ett JSON-objekt med följande egenskaper:
+
+- `CaseSensitive` _(boolean, nödvändig)_ – Bestämmer om sorteringen är skiftlägeskänslig.
+- `HasHeaders` _(boolean, nödvändig)_ – Anger om intervallet innehåller en rubrikrad.
+- `KeyList` _(array, nödvändig)_ – En samling sorteringsnycklar. Varje nyckelobjekt innehåller:
+  - `Key` _(integer)_ – Nollbaserat kolumnindex.
+  - `SortOrder` _(string)_ – `"ascending"` eller `"descending"`.
+- `SortLeftToRight` _(boolean, nödvändig)_ – Om `true` sker sorteringen från vänster till höger; annars från topp till botten.
+- _(Valfritt)_ `CaseOrder`, `SortLeftToRight`, etc. kan också anges enligt OpenAPI-specifikationen.
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör ett anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
+
 {{< tab tabNum="1" >}}
- 
-```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/sort?cellArea=A5:A10" \
--X POST \
--d '{"CaseSensitive":false, "HasHeaders":false, "KeyList":[{"Key":0, "SortOrder":"descending"}], "SortLeftToRight":false}' \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+
+```shell
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/sort?cellArea=A5:A10" \
+  -X POST \
+  -d '{"CaseSensitive":false,"HasHeaders":false,"KeyList":[{"Key":0,"SortOrder":"descending"}],"SortLeftToRight":false}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK-familjen
- 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
- 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
- 
+
+**Felhantering** – API:et kan returnera standard-HTTP-felkoder. Vanliga svar inkluderar:
+
+| HTTP-status | Kod | Meddelande                                        |
+| ----------- | --- | ------------------------------------------------- |
+| 400         | 400 | Felaktig begäran – saknade eller ogiltiga parametrar. |
+| 401         | 401 | Obehörig – ogiltigt eller saknat JWT-token.        |
+| 404         | 404 | Hittades inte – arbetsboken eller arket finns inte. |
+| 500         | 500 | Internt serverfel.                               |
+
+Svarsbrödtexten följer mönstret `{ "Code": <status>, "Message": "<description>", "Status": "Error" }` i felfall.
+
+## Moln-SDK-familj
+
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK hanterar detaljer på lågnivå så att du kan fokusera på dina projektuppgifter. Kolla in [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:n.
+
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:n:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

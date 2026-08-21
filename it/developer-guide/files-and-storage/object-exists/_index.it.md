@@ -1,106 +1,92 @@
-﻿---
-title: Oggetto esistente
-second_title: Documen
-linktitle: Oggetto esistente
-type: docs
-url: /it/object-exists/
-keywords: Excel API, Object Exists, REST API, Aspose, File Management, Excel, Office Cloud, Spreadsheet, PDF, CSV, JSON, Markdow
-description: L'oggetto esiste API verifica se un file o una cartella specificati esistono nell'archiviazione cloud Aspose.Cells
-weight: 100
-kwords: Excel API, Oggetto esistente, REST API, Aspose, Office Cloud, Gestione file, Foglio di calcolo, PDF, CSV, JSON, Markdown, Verifica esistenza file in Excel
 ---
-## **Excel API: L'oggetto esiste**
+title: "API Object Exists – Verifica la presenza di file/cartelle in Aspose.Cells Cloud"
+second_title: "Documento"
+ArticleTitle: "API Object Exists – Verifica la presenza di file o cartelle in Aspose.Cells Cloud"
+linktitle: "Object Exists"
+type: docs
+url: /object-exists/
+keywords: "Aspose.Cells, archiviazione cloud, oggetto esistente, esistenza file, esistenza cartella, API"
+description: "Utilizza l'API Object Exists per verificare rapidamente se un file o una cartella esiste nell'archiviazione cloud di Aspose.Cells. Supporta il nome opzionale dello storage e l'ID di versione, e funziona con oggetti versionati."
+weight: 100
+---
 
+L'**API Object Exists** consente agli sviluppatori di determinare se un file o una cartella specifico è presente nell'archiviazione cloud di Aspose.Cells. Restituisce un semplice valore booleano che indica l'esistenza e se il percorso punta a una cartella.
+
+## **API Excel: Object Exists**
+
+### API Web
+
+```http
+GET https://api.aspose.cloud/v5.0/cells/storage/exist/{path}
 ```
-GET http://api.aspose.cloud/v4.0/cells/storage/exist/{path}
-```
 
-### **Descrizione della funzione**
+_`{path}`_ rappresenta il percorso completo del file o della cartella nello storage.
 
-`objectExists` API consente agli sviluppatori di verificare l'esistenza di un file o di una cartella specificati all'interno dell'archiviazione cloud Aspose.Cells.
+### **Sicurezza e autenticazione**
 
-###  I parametri di richiesta di**oggettoEsiste** API sono
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP| Descrizione|
-|:- |:- |:- |:- |
-|sentiero|Corda|Sentiero|Il percorso del file o della cartella nell'archiviazione cloud.|
-|Nome di archiviazione|Corda|Domanda|Nome dell'archivio in cui si trova il file.|
-|ID versione|Corda|Domanda|L'ID della versione del file (se applicabile).|
+### Parametri della richiesta
 
-### **Descrizione della risposta**
+| Nome parametro | Tipo   | Posizione | Obbligatorio | Descrizione                                                                 |
+| -------------- | ------ | --------- | ------------ | --------------------------------------------------------------------------- |
+| `path`         | string | Path      | Sì           | Percorso completo del file o della cartella.                               |
+| `storageName`  | string | Query     | No           | Nome dello storage; se omesso, assume lo storage primario come predefinito.|
+| `versionId`    | string | Query     | No           | Identificatore specifico della versione del file (se il controllo versioni è abilitato). |
+
+**Codici di stato HTTP**
+
+| Codice HTTP | Stato HTTP            | Descrizione                                                         |
+| ----------- | --------------------- | ------------------------------------------------------------------- |
+| 200         | OK                    | La chiamata API Web è andata a buon fine; la risposta contiene i dettagli dell'operazione. |
+| 400         | Bad Request           | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401         | Unauthorized          | Token JWT non valido o mancante.                                    |
+| 413         | Payload Too Large     | Il file caricato supera il limite di dimensione.                   |
+| 500       | Internal Server Error | Errore imprevisto del server.                                       |
+
+### **Risposta**
+
+Una chiamata riuscita restituisce un payload JSON con due proprietà:
 
 ```json
 {
-  "Name": "ObjectExist",
-  "Description": [
-    "Object exists"
-  ],
-  "Type": "Class",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "Exists",
-      "Description": [
-        "Indicates that the file or folder exists."
-      ],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Boolean",
-        "Name": "boolean"
-      }
-    },
-    {
-      "Name": "IsFolder",
-      "Description": [
-        "True if it is a folder, false if it is a file."
-      ],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Boolean",
-        "Name": "boolean"
-      }
-    }
-  ]
+  "Exists": true,
+  "IsFolder": false
 }
 ```
 
-## Specifiche OpenAPI
+- **Exists** – `true` se il file o la cartella esiste; altrimenti `false`.
+- **IsFolder** – `true` quando il percorso punta a una cartella; `false` per un file.
 
- IL[Specifiche OpenAPI](https://reference.aspose.cloud/cells/#/StorageController/ObjectExists) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+## Specifica OpenAPI
 
-## Excel API SDK
+La [Specifiche OpenAPI](https://reference.aspose.cloud/cells/#/StorageController/ObjectExists) definiscono un'interfaccia di programmazione pubblicamente accessibile e consentono di effettuare interazioni REST direttamente da un browser web.
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud tramite cURL.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ObjectExists.cs" >}}
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/exist/myFolder/subFolder" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ObjectExists.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ObjectExists.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ObjectExists.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ObjectExists.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ObjectExists.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ObjectExists.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ObjectExists.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+L'utilizzo di un SDK rappresenta il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come effettuare chiamate ai servizi web di Aspose.Cells utilizzando vari SDK. Se un Gist non si carica, viene fornito un esempio statico sotto ogni scheda.

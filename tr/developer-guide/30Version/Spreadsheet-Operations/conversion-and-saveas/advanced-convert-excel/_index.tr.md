@@ -1,25 +1,76 @@
-﻿---
-title: Advanced Convert Excel fil
-second_title: Documen
-linktitle: Gelişmiş Dönüştürücü
-type: docs
-url: /tr/advanced-convert-excel/
-keywords: Advanced Convert Excel file. Page setup , Save options, Page breaks, Page margins, Page orientation, Page size, Print area, Print titles, Print settings, Print worksheet, Print worksheet with page breaks, Print worksheet with page breaks and print titles, Print worksheet with page breaks and print titles and print area, Print worksheet with page breaks and print titles and print area and print settings, Print worksheet withpage breaks and print titles and print area and print settings and print orientation, Prin
-description: Aspose.Cells Cloud REST API, Excel dosyalarını çeşitli biçimlerdeki dosyalara dönüştürmeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 50
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Dönüştür Excel
 ---
-## Excel Dönüşümü için Gelişmiş Bulut API
+title: "Gelişmiş Excel Dosyası Dönüştürme"
+second_title: "Belge"
+linktype: "Gelişmiş Dönüştür"
+type: docs
+url: /advanced-convert-excel/
+keywords: "Aspose.Cells, Excel dönüştürme, Bulut API'si, SDK"
+description: "Aspose.Cells Cloud REST API, Excel çalışma kitaplarını PDF, HTML, CSV vb. bir dizi biçime dönüştürme, sayfa ayarlarını yapılandırma, kaydetme seçeneklerini ve yazdırma ayarlarını belirleme konusunda güçlü özellikler sunar. SDK'lar, Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby ve Swift için mevcuttur ve birden fazla platformda sorunsuz entegrasyon sağlar."
+weight: 50
+ArticleTitle: "Gelişmiş Excel Dosyası Dönüştürme – Aspose.Cells Cloud API Kılavuzu"
+---
 
-### Birden fazla veri kaynağından elektronik tablo dosyalarını yükleme yeteneği
+## Excel Dönüştürme İçin Gelişmiş Bulut API'si
 
-### Sayfa Yapısını Ayarla ve Seçenekleri Kaydet
+Gelişmiş Dönüştürme işlemi, bir Excel çalışma kitabını PDF, HTML, CSV vb. çeşitli çıktı biçimlerine dönüştürmenizi sağlarken, sayfa ayarı, kaydetme seçenekleri ve yazdırma ayarları konusunda ince ayar kontrolü sağlar.
+
+**Ön Koşullar / Yetkilendirme**  
+Bu uç noktayı kullanmak için Aspose.Cells Cloud'dan bir erişim belirteci almalı ve bunu `Authorization` başlığında Bearer token olarak eklemeniz gerekir.
+
+**API Referansı**  
+- **Yöntem:** `PUT`  
+- **Uç Nokta:** `/cells/convert`  
+- **Parametreler:**  
+  - `format` (string, gerekli) – İstenen çıktı formatı (örn. `pdf`, `html`).  
+  - `outPath` (string, isteğe bağlı) – Dönüştürülen dosyanın bulut depolama alanında kaydedileceği yol.  
+  - `options` (object, isteğe bağlı) – `pageSetup`, `saveOptions` ve `printSettings` gibi gelişmiş dönüştürme seçeneklerini içeren JSON nesnesi.  
+- **İstek Gövdesi Örneği:**  
+  ```json
+  {
+    "format": "pdf",
+    "outPath": "output/converted.pdf",
+    "options": {
+      "pageSetup": {
+        "orientation": "Landscape",
+        "paperSize": "A4"
+      },
+      "saveOptions": {
+        "compress": true
+      },
+      "printSettings": {
+        "printHeadings": false
+      }
+    }
+  }
+  ```  
+- **Yanıt:**  
+  - `200 OK` – Dönüştürme başarılı; yanıt, dönüştürülen dosya akışını veya kaydedilen dosyaya ilişkin referansı içerir.  
+  - `400 Bad Request` – Geçersiz parametreler veya bozuk istek gövdesi.  
+  - `401 Unauthorized` – Yetkilendirme başarısız oldu veya belirteç eksik.  
+  - `500 Internal Server Error` – Dönüştürme sırasında sunucu tarafında hata oluştu.  
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                         |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Süzgeç başarıyla uygulandı; yanıt işlem detaylarını içerir. |
+| 400  | Bad Request                 | Eksik veya geçersiz parametreler (örn. desteklenmeyen dosya türü). |
+| 401  | Unauthorized                | Geçersiz veya eksik JWT belirteci. |
+| 413  | Payload Too Large           | Yüklenen dosya boyut limitini aşıyor. |
+| 500  | Internal Server Error       | Beklenmeyen sunucu hatası. |
+
+**Notlar**  
+* Bazı çıktı biçimlerinin belirli sınırlamaları vardır (örn. HTML dönüştürmesi makroları korumaz). Detaylar için ilgili format belgelerini inceleyin.
+
+### Hesap tablosu dosyalarını birden fazla veri kaynağından yükleme yeteneği
+
+### Sayfa Ayarlarını ve Kaydetme Seçeneklerini Belirleme
 
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bir SDK kullanmak, düşük seviye ayrıntıları yöneterek projenizin görevlerine odaklanmanızı sağlar ve geliştirme sürecini hızlandırır. Aspose.Cells Cloud SDK'larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub deposuna</a> göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanarak Aspose.Cells web hizmetlerine nasıl istekte bulunulacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -72,3 +123,26 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebAPI",
+  "name":"Aspose.Cells Cloud Gelişmiş Dönüştürme",
+  "description":"Excel çalışma kitabını PDF/HTML/CSV'ye gelişmiş seçeneklerle dönüştürün.",
+  "url":"https://api.aspose.cloud/v3.0/cells/convert",
+  "documentation":"https://docs.aspose.cloud/cells/advanced-convert-excel/",
+  "endpointDescription":"PUT /cells/convert",
+  "input":{
+    "@type":"PropertyValueSpecification",
+    "valueRequired":true,
+    "valueName":"format",
+    "description":"İstenen çıktı formatı (pdf, html, csv, …)"
+  },
+  "target":{
+    "@type":"EntryPoint",
+    "urlTemplate":"https://api.aspose.cloud/v3.0/cells/convert?format={format}",
+    "httpMethod":"PUT"
+  }
+}
+</script>

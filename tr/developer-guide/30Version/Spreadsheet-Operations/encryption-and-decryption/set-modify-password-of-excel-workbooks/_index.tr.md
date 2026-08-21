@@ -1,73 +1,103 @@
-﻿---
-title: Excel çalışma kitabının şifresini değiştir
-second_title: Documen
-linktitle: Excel dosya şifresini değiştirin
-type: docs
-url: /tr/workbook/password/modify/
-aliases: [/set-modify-password-of-excel-workbooks/,/workbook/modify-password/]
-keywords: Modify password for an Excel workbook
-description: Aspose.Cells Cloud REST API, Excel çalışma kitabı için parola değiştirmeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma kitabının parolasını değiştirmeyi ayarla
 ---
-Bu REST API belgenin değişikliklere karşı korunmasını belirtir.
+title: "Bir Excel Çalışma Kitabının Şifre Korumasını Değiştirme"
+second_title: "Belge"
+linktitle: "Bir Excel dosyasının şifresini değiştirme"
+type: docs
+url: /workbook/password/modify/
+aliases:
+  - /set-modify-password-of-excel-workbooks/
+  - /workbook/modify-password/
+keywords: "Excel şifresi, Aspose.Cells Cloud, yazma koruması, REST API, çalışma kitabının şifresini değiştirme"
+description: "Aspose.Cells Cloud REST API’sini (v3.0) kullanarak bir Excel çalışma kitabının yazma koruma şifresini değiştirin. cURL ve SDK örneklerini içerir."
+weight: 100
+ArticleTitle: "Bir Excel Çalışma Kitabının Şifre Korumasını Değiştirme – Aspose.Cells Cloud"
+---
 
-## RSET API
+Bu REST API, mevcut bir Excel çalışma kitabının **yazma koruma şifresini değiştirir**.
+
+Yazma koruma şifresini programatik olarak güncellemek, dosyayı indirmenize gerek kalmadan şifreleri döndürmenizi veya değiştirmenizi sağlar. Özellikle Aspose.Cells Cloud depolama alanına kayıtlı korunmuş çalışma kitaplarını yönetirken oldukça işe yarar.
+
+
+## REST API
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/writeProtection
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 ```
 
-İstek parametreleri şunlardır:
+### Güvenlik ve Kimlik Doğrulama
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| şifre|| vücut| Değişiklik şifresi.|
-| dosya| sicim| sorgu| Belgenin klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulama](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PutDocumentProtectFromChanges) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### İstek Parametreleri
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Parametre Adı   | Tür    | Konum     | Açıklama                                            |
+| ---------------- | ------ | --------- | --------------------------------------------------- |
+| **name**         | string | path      | Excel çalışma kitabının adı (zorunludur).             |
+| **password**     | string | body (JSON) | Aylandırılacak yeni yazma koruma şifresi (zorunludur). |
+| **folder**       | string | query     | Çalışma kitabının bulunduğu isteğe bağlı klasör.      |
+| **storageName**  | string | query     | İsteğe bağlı depolama hizmetinin adı.                 |
+
+### Yanıt
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                            |
+|-----|-----------------------------|-----------------------------------------------------|
+| 200 | OK                          | Filtre başarıyla uygulandı; yanıt, işlem ayrıntılarını içerir. |
+| 400 | Bad Request                 | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized                | Geçersiz veya eksik JWT belirteci.                   |
+| 413 | Payload Too Large           | Yüklenen dosya boyut sınırını aşıyor.                |
+| 500 | Internal Server Error       | Beklenmeyen sunucu hatası.                           |
+
+## PutDocumentProtectFromChanges API'sini SDK'lar ile Nasıl Kullanılır
+
+### PutDocumentProtectFromChanges API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PutDocumentProtectFromChanges), web tarayıcınızdan doğrudan REST etkileşimlerinde bulunmanızı sağlayan herkese açık programlama arayüzünü tanımlar.
+
+Aspose.Cells web servislerine kolayca erişmek için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki cURL komutu Cloud API’ye nasıl çağrı yapılacağını gösterir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtection" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d "{ \"Password\": \"aspose\"}" 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtection?folder=Samples&storageName=Default" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{ "Password": "aspose" }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. Bir SDK, düşük seviye detayları yönetir, böylece iş mantığınıza odaklanabilirsiniz. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web servislerini çeşitli SDK’lar kullanarak nasıl çağıracağınızı gösterir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

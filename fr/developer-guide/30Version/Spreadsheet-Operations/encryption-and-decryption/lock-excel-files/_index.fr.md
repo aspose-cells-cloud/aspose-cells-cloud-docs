@@ -1,84 +1,95 @@
-﻿---
-title: Verrouiller le fichier Excel
-second_title: Documen
-linktitle: Verrouiller le fichier Excel
-type: docs
-url: /fr/lock-excel-files/
-aliases: [/lock/without-storage/,/lock/,/lock/without-using-storage/]
-keywords: Lock Excel files
-description: Aspose.Cells Cloud REST API prend en charge le verrouillage des fichiers Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 70
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Verrouillage
 ---
-Ce REST API indique les fichiers `lock` Excel.
+title: "Verrouiller des fichiers Excel"
+second_title: "Document"
+linktitle: "Verrouiller des fichiers Excel"
+type: docs
+url: /lock-excel-files/
+aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+keywords: "Verrouiller, Excel, API, Aspose.Cells, Cloud, REST, Classeur, Feuille de calcul, SDK"
+description: "Découvrez comment verrouiller des classeurs Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut le point de terminaison HTTPS, l’authentification, la requête cURL, le schéma de réponse et des exemples de code SDK pour C#, Java, Python et plus encore."
+ArticleTitle: "Verrouiller des fichiers Excel – Documentation de l’API Aspose.Cells Cloud"
+weight: 70
+---
 
-## RSET API
+**Version de l’API :** v3.0 (version actuelle)
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/lock
- 
+Cette API REST **verrouille** les classeurs Excel.
+
+## API PostLock
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/lock
 ```
 
-Les paramètres de la requête sont :
+**Prérequis** – La requête doit être envoyée via **HTTPS** et inclure un jeton Bearer OAuth 2.0 valide dans l’en-tête `Authorization`.
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| déposer| déposer| données de formulaire| Fichier à télécharger|
-| mot de passe| chaîne| requête||
+### Les paramètres de la requête sont les suivants :
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostLock) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+| Nom du paramètre | Type   | Emplacement                    | Description                                          |
+| ---------------- | ------ | ------------------------------ | ---------------------------------------------------- |
+| file             | fichier | données de formulaire (corps multipart) | Le classeur Excel à télécharger et verrouiller.   |
+| password         | chaîne  | chaîne de requête              | Mot de passe pour le classeur (facultatif).         |
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+La <a href="https://apireference.aspose.cloud/cells/#/LightCells/PostLock" target="_blank" rel="noopener noreferrer">Spécification OpenAPI</a> définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment **appeler** l’API Cloud à l’aide de cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/lock?password=123456" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/lock?password=123456" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <access_token>" \
+  -F "file=@Sample.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Sample.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+*Vous pouvez télécharger un classeur d’exemple — [Sample.xlsx](https://example.com/Sample.xlsx) — afin de tester la requête.*
+
+**Remarque :** L’API prend en charge des fichiers dont la taille maximale est de 100 Mo ; des charges utiles plus importantes peuvent entraîner une réponse HTTP 413 (Payload Too Large).
+
+### **Détails de la réponse**
+
+| Champ         | Type             | Description                                               |
+| ------------- | ---------------- | --------------------------------------------------------- |
+| Filename      | chaîne           | Nom du classeur verrouillé renvoyé par le service.       |
+| FileSize      | entier           | Taille du fichier verrouillé, en octets.                  |
+| FileContent   | chaîne (Base64)  | Le classeur verrouillé encodé en chaîne Base64.           |
+
+Pour récupérer le classeur verrouillé, décodez la valeur `FileContent` depuis Base64 et enregistrez-le en utilisant le `Filename` fourni dans la réponse.
+
+### **Gestion des erreurs**
+
+– L’API renvoie des codes d’état HTTP standard (par ex. `400 Bad Request`, `401 Unauthorized`, `500 Internal Server Error`) accompagnés d’un objet erreur JSON contenant les champs `Code` et `Message`.
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK constitue la meilleure façon d’accélérer le développement. Un SDK abstractise les détails de bas niveau, vous permettant de vous concentrer sur les tâches de votre projet. Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK Cloud Aspose.Cells.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants illustrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -131,4 +142,3 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
-

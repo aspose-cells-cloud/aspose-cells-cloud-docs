@@ -1,101 +1,85 @@
-﻿---
-title: Lavorare con Excel AutoFilte
-second_title: Documen
-linktitle: Filtro automatico
+---
+title: "Lavorare con il filtro automatico di Excel"
+second_title: "Documento"
+linktitle: "Filtro automatico"
 type: docs
 url: /it/autofilter/
-aliases: [/working-with-autofilter/]
-keywords: Get, add, delete, and so on for auto filter on an Excel worksheet
-description: Le API Cloud Aspose.Cells supportano le funzioni di acquisizione, aggiunta, eliminazione e così via per il filtro automatico su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/working-with-autofilter/]
+keywords: "Filtro automatico, Aspose.Cells Cloud, Filtro Excel, Filtro per colore, Filtro per data, Filtro dinamico, Filtro numerico, Filtro per testo, Filtro per celle vuote, Filtro personalizzato"
+description: "Scopri come aggiungere, modificare ed eliminare i filtri automatici di Excel (per colore, data, dinamico, numerico, testo, celle vuote) utilizzando le API di Aspose.Cells Cloud. Esempi di codice in più linguaggi."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Filtro automatico
+ArticleTitle: "Lavorare con il filtro automatico di Excel – Documentazione di Aspose.Cells Cloud"
 ---
-Il filtro automatico è il modo più rapido per selezionare dal foglio di lavoro solo gli elementi che si desidera visualizzare in un elenco. La funzione di filtro automatico consente agli utenti di filtrare gli elementi in un elenco in base a criteri impostati. È possibile filtrare in base a testo, numeri o date.
 
-**Diversi tipi di filtro**
+Il filtro automatico rappresenta il metodo più rapido per visualizzare solo gli elementi necessari in un foglio di calcolo. Questa funzionalità consente agli utenti di filtrare un elenco in base a criteri specifici, come testo, numeri o date.
 
-Aspose.Cells Cloud fornisce diverse API per applicare diversi tipi di filtri, come filtro colore, filtro data, filtro numero, filtro testo, filtri vuoti e nessun filtro vuoto.
+**Tipi diversi di filtri**
+
+Aspose.Cells Cloud fornisce numerose API per applicare vari tipi di filtri, tra cui: Filtro per colore, Filtro per data, Filtro numerico, Filtro per testo, Filtro per celle vuote e Filtro per celle non vuote.
 
 <table class="table table-striped">
   <tr>
-  <td class="col-md-2"> <li>Colore di riempimento</li> </td>
-  <td class="col-md-10">
-  <p>Aspose.Cells Cloud fornisce
- <a href="/cells/it/autofilter/add-color-filter/">il API di aggiungi filtro colore di riempimento</a>
-per filtrare i dati in base alla proprietà del colore di riempimento delle celle.</p>
-  </td>
+    <td class="col-md-2"><strong>Colore di riempimento</strong></td>
+    <td class="col-md-10">
+      <p>Aspose.Cells Cloud offre <a href="/it/cells/autofilter/add-color-filter/">l'API Aggiungi filtro per colore di riempimento</a> per filtrare i dati in base alla proprietà di riempimento delle celle.</p>
+    </td>
   </tr>
   <tr>
-    <td class="col-md-2"> <li>Data</li> </td>
-  <td class="col-md-10">
-  <p>
- È possibile implementare diversi tipi di filtri data, ad esempio filtrando tutte le righe con date risalenti a gennaio 2018.<a href="/cells/it/autofilter/add-date-filter/">il API di aggiungi filtro colore data</a> può implementare questa funzionalità.
-</p>
-  </td>
+    <td class="col-md-2"><strong>Data</strong></td>
+    <td class="col-md-10">
+      <p>Possono essere applicati vari filtri per data, come ad esempio filtrare le righe con date nel gennaio 2018. Utilizza <a href="/it/cells/autofilter/add-date-filter/">l'API Aggiungi filtro per data</a> per aggiungere un filtro per data.</p>
+    </td>
   </tr>
-    <tr>
-    <td class="col-md-2"> <li>Data dinamica</li> </td>
-  <td class="col-md-10">
-  <p>
- A volte sono necessari filtri dinamici basati su una data, ad esempio tutte le celle che hanno date a gennaio, indipendentemente dall'anno.<a href="/cells/it/autofilter/add-dynamic-filter/">il API del filtro dinamico</a>  
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Data dinamica</strong></td>
+    <td class="col-md-10">
+      <p>I filtri per data dinamica consentono di filtrare le celle appartenenti a un mese specifico, indipendentemente dall'anno (ad esempio, tutte le date di gennaio). Consulta <a href="/it/cells/autofilter/add-dynamic-filter/">l'API Filtro dinamico</a>.</p>
+    </td>
   </tr>
-      <tr>
-    <td class="col-md-2"> <li>Numero</li> </td>
-  <td class="col-md-10">
-  <p>
-<a href="/cells/it/autofilter/add-filter/">Filtri personalizzati API</a> può essere applicato utilizzando Aspose.Cells come la selezione di celle aventi un numero compreso in un intervallo dato.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Numero</strong></td>
+    <td class="col-md-10">
+      <p>L'<a href="/it/cells/autofilter/add-filter/">API Filtri personalizzati</a> consente di filtrare le celle i cui valori numerici rientrano in un intervallo specificato.</p>
+    </td>
   </tr>
-        <tr>
-    <td class="col-md-2"> <li>Testo</li> </td>
-  <td class="col-md-10">
-  <p>
- Se una colonna contiene testo e devono essere selezionate celle contenenti testo particolare,<a href="/cells/it/autofilter/add-filter/"> Aggiungi filtro API</a> può essere utilizzato.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Testo</strong></td>
+    <td class="col-md-10">
+      <p>Se una colonna contiene testo, è possibile selezionare le celle che contengono una stringa specifica utilizzando <a href="/it/cells/autofilter/add-filter/">l'API Aggiungi filtro</a>.</p>
+    </td>
   </tr>
-          <tr>
-    <td class="col-md-2"> <li>Spazi vuoti</li> </td>
-  <td class="col-md-10">
-  <p>
-
- Se una colonna contiene testo tale che poche celle sono vuote, ed è necessario un filtro per selezionare solo le righe in cui sono presenti celle vuote,<a href="/cells/it/autofilter/match-all-blank/"> Corrisponde a tutte le celle vuote API</a> può essere utilizzato
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Celle vuote</strong></td>
+    <td class="col-md-10">
+      <p>Per recuperare le righe in cui una colonna è vuota, utilizzare <a href="/it/cells/autofilter/match-all-blank/">l'API Esegui il matching di tutte le celle vuote</a>.</p>
+    </td>
   </tr>
-            <tr>
-    <td class="col-md-2"> <li>Non vuoti</li> </td>
-  <td class="col-md-10">
-  <p>
-
- Quando le celle contenenti testo devono essere filtrate,<a href="/cells/it/autofilter/match-all-blank/"> Corrisponde a tutte le celle vuote API</a> può essere utilizzato
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Celle non vuote</strong></td>
+    <td class="col-md-10">
+      <p>Per filtrare le righe in cui una colonna contiene qualsiasi valore non vuoto, utilizzare <a href="/it/cells/autofilter/match-all-non-blank/">l'API Esegui il matching di tutte le celle non vuote</a>.</p>
+    </td>
   </tr>
-              <tr>
-    <td class="col-md-2"> <li>Filtro personalizzato</li> </td>
-  <td class="col-md-10">
-  <p>
- Aspose.Cells Cloud fornisce<a href="/cells/it/autofilter/add-dynamic-filter/"> filtri personalizzati API</a> come le righe di filtro che contengono una stringa specifica e le righe di filtro che iniziano o terminano con una stringa specifica.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><strong>Filtro personalizzato</strong></td>
+    <td class="col-md-10">
+      <p>Aspose.Cells Cloud fornisce <a href="/it/cells/autofilter/add-custom-filter/">l'API Filtri personalizzati</a> per scenari avanzati, come il filtraggio delle righe che contengono una sottostringa specifica o che iniziano/finiscono con una determinata stringa.</p>
+    </td>
   </tr>
 </table>
 
-**Operazione di filtro automatico dei dati**
+**Operazioni sul filtro automatico**
 
-- [Come aggiungere un filtro colore in un foglio di lavoro Excel.](/cells/it/autofilter/add-color-filter/)
-- [Come aggiungere un filtro personalizzato in un foglio di lavoro Excel.](/cells/it/autofilter/add-custom-filter/)
-- [Come aggiungere un filtro data in un foglio di lavoro Excel.](/cells/it/autofilter/add-date-filter/)
-- [Come aggiungere un filtro dinamico in un foglio di lavoro Excel.](/cells/it/autofilter/add-dynamic-filter/)
-- [Come aggiungere un filtro in un foglio di lavoro Excel.](/cells/it/autofilter/add-filter/)
-- [Come aggiungere un filtro icona in un foglio di lavoro Excel.](/cells/it/autofilter/add-icon-filter/)
-- [Come eliminare un filtro data in un foglio di lavoro Excel.](/cells/it/autofilter/delete-a-date-filter/)
-- [Come eliminare un filtro in un foglio di lavoro Excel.](/cells/it/delete-filter/)
-- [Come ottenere una descrizione del filtro automatico da un foglio di lavoro Excel.](/cells/it/autofilter/get/)
-- [Come abbinare tutti gli spazi vuoti in un foglio di lavoro Excel.](/cells/it/autofilter/match-all-blank/)
-- [Come abbinare tutti gli elementi non vuoti in un foglio di lavoro Excel.](/cells/it/autofilter/match-all-non-blank/)
-- [Come aggiornare un filtro automatico in un foglio di lavoro Excel.](/cells/it/autofilter/refresh/)
+- [Come aggiungere un filtro per colore in un foglio di calcolo Excel](/it/cells/autofilter/add-color-filter/) – **Metodo:** POST, **Endpoint:** `/cells/autofilter/add-color-filter/`
+- [Come aggiungere un filtro personalizzato in un foglio di calcolo Excel](/it/cells/autofilter/add-custom-filter/) – **Metodo:** POST, **Endpoint:** `/cells/autofilter/add-custom-filter/`
+- [Come aggiungere un filtro per data in un foglio di calcolo Excel](/it/cells/autofilter/add-date-filter/) – **Metodo:** POST, **Endpoint:** `/cells/autofilter/add-date-filter/`
+- [Come aggiungere un filtro dinamico in un foglio di calcolo Excel](/it/cells/autofilter/add-dynamic-filter/) – **Metodo:** POST, **Endpoint:** `/cells/autofilter/add-dynamic-filter/`
+- [Come aggiungere un filtro in un foglio di calcolo Excel](/it/cells/autofilter/add-filter/) – **Metodo:** POST, **Endpoint:** `/cells/autofilter/add-filter/`
+- [Come aggiungere un filtro per icona in un foglio di calcolo Excel](/it/cells/autofilter/add-icon-filter/) – **Metodo:** POST, **Endpoint:** `/cells/autofilter/add-icon-filter/`
+- [Come eliminare un filtro per data in un foglio di calcolo Excel](/it/cells/autofilter/delete-a-date-filter/) – **Metodo:** DELETE, **Endpoint:** `/cells/autofilter/delete-a-date-filter/`
+- [Come eliminare un filtro in un foglio di calcolo Excel](/it/cells/delete-filter/) – **Metodo:** DELETE, **Endpoint:** `/cells/delete-filter/`
+- [Come ottenere la descrizione di un filtro automatico in un foglio di calcolo Excel](/it/cells/autofilter/get/) – **Metodo:** GET, **Endpoint:** `/cells/autofilter/get/`
+- [Come eseguire il matching di tutte le celle vuote in un foglio di calcolo Excel](/it/cells/autofilter/match-all-blank/) – **Metodo:** POST, **Endpoint:** `/cells/autofilter/match-all-blank/`
+- [Come eseguire il matching di tutte le celle non vuote in un foglio di calcolo Excel](/it/cells/autofilter/match-all-non-blank/) – **Metodo:** POST, **Endpoint:** `/cells/autofilter/match-all-non-blank/`
+- [Come aggiornare un filtro automatico in un foglio di calcolo Excel](/it/cells/autofilter/refresh/) – **Metodo:** POST, **Endpoint:** `/cells/autofilter/refresh/`
+---

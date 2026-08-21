@@ -1,17 +1,20 @@
-﻿---
-title: Unisci e dividi i file Excel
-second_title: Documen
-linktitle: Unisci e Sdoppia
+---
+title: "Unisci e Dividi File Excel"
+second_title: "Documento"
+linktype: "Unisci e Dividi"
 type: docs
 url: /it/merge-and-split/
-keywords: Merge Excel Files,Combine Excel Sheets,Join Excel Spreadsheets,Merge Multiple Excel Files,Split Excel File,Excel Sheet Separator,Excel Workbook Splitte
-description: Aspose.Cells Cloud REST API supporta l'utilizzo di merger e splitter su un file Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 32
-kwords: Unisci file Excel, combina fogli Excel, unisci fogli di calcolo Excel, unisci più file Excel, dividi file Excel, separatore di fogli Excel, divisore di cartelle di lavoro Excel
+keywords: "Aspose.Cells Cloud, unire file Excel, dividere cartella di lavoro Excel, API Excel"
+description: "Scopri come utilizzare l'API REST Aspose.Cells Cloud per unire più cartelle di lavoro Excel in un unico file e dividere una cartella di lavoro in file separati. Sono disponibili SDK per Android, .NET, Go, Java, Node.js, Perl, PHP, Python, Ruby e Swift."
+ArticleTitle: "Unire e Dividere File Excel – Documentazione Aspose.Cells Cloud"
 ---
-## Unisci e dividi con Excel file
 
-- [Come unire più file Excel in un unico file Excel.](/cells/it/merge-multi-files-into-excel/)
-- [Come unire un file Excel Workbooks in un altro file Excel.](/cells/it/merge-an-excel-file-into-the-excel-file/)
-- [Come dividere più file Excel.](/cells/it/split-multi-excel-files/)
-- [Come dividere una cartella di lavoro Excel in più file.](/cells/it/split-an-excel-file-to-multi-files/)
+## Unisci e dividi con i file Excel
+
+Le seguenti guide mostrano come combinare diverse cartelle di lavoro Excel in un unico file o suddividerne una in più file utilizzando Aspose.Cells Cloud.
+
+- **Unisci più file:** [Come unire più file Excel in un'unica cartella di lavoro](/it/cells/merge-multi-files-into-excel/) – Combina diverse cartelle di lavoro in un’unica cartella di lavoro unificata.  
+- **Unisci in una cartella di lavoro esistente:** [Come unire una cartella di lavoro Excel in un’altra cartella di lavoro](/it/cells/merge-an-excel-file-into-the-excel-file/) – Aggiungi il contenuto di una cartella di lavoro a una cartella di lavoro esistente.  
+- **Dividi più file:** [Come dividere più file Excel](/it/cells/split-multi-excel-files/) – Separa un insieme di cartelle di lavoro in file singoli.  
+- **Dividi in più file:** [Come dividere una cartella di lavoro Excel in più file](/it/cells/split-an-excel-file-to-multi-files/) – Suddividi una singola cartella di lavoro in più cartelle di lavoro più piccole.
+---

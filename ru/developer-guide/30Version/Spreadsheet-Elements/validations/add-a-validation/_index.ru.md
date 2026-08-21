@@ -1,63 +1,58 @@
-﻿---
-title: Добавить проверку рабочего листа на рабочий лист Excel
-second_title: Documen
-linktitle: Объявление
-type: docs
-url: /ru/validations/add/
-keywords: Delete a worksheet validation on an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает добавление проверки листа на лист Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 10
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Добавить проверку листа на лист Excel
 ---
-Этот REST API указывает на необходимость добавления проверки рабочего листа на рабочий лист Excel.
+title: "Добавление правила валидации листа в рабочую книгу Excel"
+second_title: "Документ"
+linktitle: "Добавление"
+type: docs
+url: /validations/add/ru/
+keywords: "Добавление правила валидации листа, Excel, Aspose.Cells Cloud, REST API, Таблица, Правило валидации"
+description: "Используйте REST API Aspose.Cells Cloud для добавления правила валидации листа в файл Excel. Доступны SDK для C#, Java, PHP, Ruby, Node.js, Python, Perl, Go и Swift."
+weight: 10
+---
 
-## РСЕT API
+Этот REST API добавляет правило валидации листа в рабочий лист Excel.
+
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
- 
 ```
 
-Параметры запроса:
+### **Параметры запроса**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| диапазон| нить| запрос| Указанная область ячеек|
-| проверка|| тело| проверка|
-| папка| нить| запрос| Папка документов.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип   | Расположение | Описание                                                   |
+| ------------- | ----- | ------------ | ---------------------------------------------------------- |
+| name          | string | path        | Имя документа Excel.                                       |
+| sheetName     | string | path        | Имя рабочего листа.                                        |
+| range         | string | query       | Диапазон ячеек, к которому применяется валидация (например, A1:B10). |
+| validation    | object | body        | Определение правила валидации.                             |
+| folder        | string | query       | Папка, содержащая документ.                                |
+| storageName   | string | query       | Имя службы хранения.                                       |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) определяет общедоступное программное интерфейсное решение и позволяет выполнять взаимодействие по протоколу REST непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+Для доступа к веб-сервисам Aspose.Cells можно легко использовать утилиту командной строки cURL. В следующем примере показано, как делать запросы к облачному API с помощью cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -66,9 +61,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/va
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали и позволяет сосредоточиться на задачах вашего проекта. Полный список облачных SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -98,7 +93,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/va
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetValidation.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutWorksheetValidation.ts" >}}
 
 {{< /tab >}}
 

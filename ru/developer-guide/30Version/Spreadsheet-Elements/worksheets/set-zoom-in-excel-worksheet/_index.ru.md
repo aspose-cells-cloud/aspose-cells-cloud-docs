@@ -1,74 +1,83 @@
-﻿---
-title: Установить масштаб для рабочего листа Excel
-second_title: Documen
-linktitle: Зоопарк
-type: docs
-url: /ru/worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
-keywords: Set zoom for an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает настройку масштаба для листа Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Установка масштаба для листа Excel
 ---
-Этот REST API указывает на `set the zoom value of Excel worksheet`.
- 
-## РСЕT API
- 
+title: "Установка масштаба для рабочего листа Excel – Aspose.Cells Cloud API v3.0"
+second_title: "Документ"
+linktitle: "Масштаб"
+type: docs
+url: /worksheets/zoom/
+aliases: [/set-zoom-in-excel-worksheet/]
+keywords: "Aspose.Cells, масштаб Excel, масштаб рабочего листа, REST API, облачный SDK, автоматизация Excel"
+description: "Узнайте, как установить масштаб рабочего листа (10–400 %) с помощью Aspose.Cells Cloud API v3.0. Примеры cURL и SDK, обработка ошибок."
+weight: 20
+ArticleTitle: "Установка масштаба для рабочего листа Excel – Aspose.Cells Cloud API v3.0"
+---
+
+Этот REST API устанавливает значение масштаба рабочего листа Excel. **Требуется аутентификация**; включайте действующий Bearer JWT-токен в заголовок `Authorization` каждого запроса.
+
+## Безопасность и аутентификация
+Aspose.Cells Cloud API защищены и требуют [аутентификации на основе JWT-токена](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom
 ```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь||
-| Имя_листа| нить| путь||
-| ценить| целое число| запрос||
-| папка| нить| запрос||
-| имя_хранилища| нить| запрос| имя хранилища.|
- 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Параметры запроса**
+
+| Параметр    | Тип    | Местоположение | Описание                                                         |
+| ----------- | ------ | -------------- | ---------------------------------------------------------------- |
+| name        | string | path           | Имя файла Excel (книги).                                         |
+| sheetName   | string | path           | Имя рабочего листа, который нужно изменить.                     |
+| value       | integer | query         | Процент масштаба (допустимый диапазон **10–400**, напр., `40` для 40 %). |
+| folder      | string | query          | Путь к папке, где хранится файл.                                 |
+| storageName | string | query          | Имя облачного хранилища.                                         |
+
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Для удобного доступа к веб-сервисам Aspose.Cells можно использовать утилиту командной строки cURL. В следующем примере показано, как выполнить вызов облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/zoom?value=40" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+**Информация в ответе об ошибках**  
+Возможные HTTP-коды состояния:
+
+- `400 Bad Request` – отсутствуют или некорректны параметры запроса.
+- `401 Unauthorized` – отсутствует или некорректен JWT-токен.
+- `404 Not Found` – указанный файл или рабочий лист не существует.
+- `500 Internal Server Error` – непредвиденная ошибка на стороне сервера.
+
+В каждом ответе об ошибке возвращается JSON-тело, содержащее поле `Code` и описательное поле `Message`.
+
 ## Семейство облачных SDK
- 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
- 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
- 
+
+Использование SDK — лучший способ ускорить разработку. SDK берёт на себя обработку низкоуровневых деталей, позволяя сосредоточиться на задачах проекта. Полный список облачных SDK Aspose.Cells доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
+
+Примеры кода ниже демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 

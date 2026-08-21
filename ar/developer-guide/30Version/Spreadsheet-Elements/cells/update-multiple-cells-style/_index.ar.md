@@ -1,71 +1,130 @@
-﻿---
-title: تحديث متعدد Cells ستايل
-type: docs
-url: /ar/update-multiple-cells-style/
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تحديث أنماط متعددة Cells
 ---
-يشير هذا REST API إلى المجموعة `cells style` في خلية في ملف Excel.
+title: "تحديث أسلوب خلايا متعددة – مرجع واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0)"
+type: docs
+url: /update-multiple-cells-style/
+weight: 20
+keywords: ["Aspose.Cells", "تحديث أسلوب خلايا متعددة", "واجهة برمجة تطبيقات تنسيق خلية إكسل", "حزمة تطوير برمجيات السحابة", "واجهة برمجة تطبيقات REST", "مثال باستخدام cURL", "طلب JSON", "مصادقة JWT"]
+description: "تعرّف على كيفية تحديث أسلوب مجموعة من الخلايا في ملف عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API الإصدار 3.0. يشمل الرابط، طريقة HTTP، المُعلَمات، أمثلة لـ cURL وحزم التطوير (SDKs)، المصادقة، معالجة الأخطاء، ومعلومات الإصدار."
+ArticleTitle: "تحديث أسلوب خلايا متعددة – مرجع واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0)"
+---
 
-## RSET API
+## واجهة برمجة تطبيقات REST
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
- 
+تقوم هذه واجهة برمجة تطبيقات REST بضبط **النمط** لمجموعة من الخلايا في ملف عمل إكسل.
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
 ```
 
-معلمات الطلب هي:
+## الأمان والمصادقة
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| يتراوح| خيط| استفسار| المدى.|
-| أسلوب|| جسم| مع إعدادات نمط التحديث.|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتحتاج إلى [مصادقة باستخدام رمز مميز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### مُعلَمات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المُعلَمة | النوع   | الموقع | الوصف |
+|----------------|--------|----------|-------------|
+| **name**       | نص (string) | المسار (path) | اسم ملف العمل. |
+| **sheetName**  | نص (string) | المسار (path) | اسم ورقة العمل. |
+| **range**      | نص (string) | الاستعلام (query) | نطاق الخلايا (مثل `A1:A10`). |
+| **style**      | كائن (object) | الجسم (body) | كائن JSON يُعرّف النمط المراد تطبيقه. |
+| **folder**     | نص (string) | الاستعلام (query) | المجلد الذي يحتوي على ملف العمل. |
+| **storageName**| نص (string) | الاستعلام (query) | اسم وحدة التخزين. |
+
+#### كائن النمط (Style object)
+يمثّل كائن JSON `style` تنسيق الخلايا، وقد يحتوي على أيٍّ من الخصائص الاختيارية التالية:
+
+- **Font** – إعدادات الخط (`Name`، `Size`، `IsBold`، `IsItalic`، `Color`، إلخ).  
+- **BackgroundColor** – لون الخلفية بصيغة ARGB.  
+- **ForegroundColor** – لون المقدّمة بصيغة ARGB.  
+- **Name**، **CultureCustom**، **Custom** – بيانات تعريف إضافية للنمط.
+
+## **الاستجابة**
+
+ترجع كائن `CellCloudResponse`.
+
+- **نظرة عامة على حقول الاستجابة**
+
+| الحقل           | النوع    | الوصف                                           |
+| --------------- | ------- | ----------------------------------------------------- |
+| `Status`          | نص (string)  |                    |
+| `Code`           | عدد صحيح (integer) | 200، 400، 401، 500، ...                                 |
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | الوصف                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | ناجح (OK)                          | تم تطبيق المرشّح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صالح (Bad Request)                 | مُعلَمات ناقصة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401  | غير مُصادَق (Unauthorized)                | رمز مُتَوَسِّط JWT غير صالح أو مفقود. |
+| 413  | حجم الحمولة كبير جدًا (Payload Too Large)           | حجم الملف المرفّع يتجاوز الحد المسموح به. |
+| 500  | خطأ داخلي في الخادم (Internal Server Error)       | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام واجهة برمجة تطبيقات PostUpdateWorksheetRangeStyle مع حزم تطوير البرمجيات (SDKs)
+
+### مواصفات واجهة برمجة تطبيقات PostUpdateWorksheetRangeStyle
+
+توفّر [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle) المخطط الكامل.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات Aspose.Cells السحابية. يُظهر المثال التالي كيفية إجراء مكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/style?range=a1%3Aa10" \
--X POST \
- -d "{ \"Font\": { \"Color\": { \"A\":255, \"R\": 255, \"G\": 255, \"B\": 0 }, \"DoubleSize\": 10, \"IsBold\": true, \"IsItalic\": true, \"IsStrikeout\": true, \"IsSubscript\": true, \"IsSuperscript\": true, \"Name\": \"Arial\", \"Size\": 22 }, \"Name\": \"string\", \"CultureCustom\": \"string\", \"Custom\": \"string\", \"BackgroundColor\": { \"A\": 10, \"R\": 10, \"G\": 10, \"B\": 10 }, \"ForegroundColor\": { \"A\": 255, \"R\": 255, \"G\": 255, \"B\": 0 } \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+cURL -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/style?range=a1%3Aa10" \
+  -X POST \
+  -d '{
+        "Font": {
+          "Color": { "A":255, "R":255, "G":255, "B":0 },
+          "Size": 22,
+          "IsBold": true,
+          "IsItalic": true,
+          "IsStrikeout": true,
+          "IsSubscript": true,
+          "IsSuperscript": true,
+          "Name": "Arial"
+        },
+        "Name": "string",
+        "CultureCustom": "string",
+        "Custom": "string",
+        "BackgroundColor": { "A":10, "R":10, "G":10, "B":10 },
+        "ForegroundColor": { "A":255, "R":255, "G":255, "B":0 }
+      }' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+### استخدام حزم تطوير البرمجيات (SDKs) الخاصة بـ Aspose.Cells Cloud
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+استخدام حزمة تطوير البرمجيات (SDK) هو أفضل طريقة لتسريع عملية التطوير، إذ تقوم SDK بمعالجة التفاصيل الدقيقة منخفضة المستوى، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بحزم تطوير البرمجيات الخاصة بـ Aspose.Cells Cloud.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells باستخدام حزم تطوير البرمجيات المختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

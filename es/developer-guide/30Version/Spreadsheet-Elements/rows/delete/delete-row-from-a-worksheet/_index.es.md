@@ -1,171 +1,125 @@
-﻿---
-title: Eliminar fila en una hoja de cálculo Excel
-second_title: Documen
-linktitle: Ro
-type: docs
-url: /es/rows/delete/row/
-aliases: [/delete-row-from-a-worksheet/]
-keywords: Delete rows on an Excel workshee
-description: Aspose.Cells Cloud REST API permite eliminar filas en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 80
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Eliminar fila en una hoja de cálculo Excel
 ---
-Este REST API indica eliminar una fila en una hoja de cálculo Excel.
+title: "Eliminar una fila en una hoja de cálculo de Excel"
+second_title: "Documento"
+linktitle: "Fila"
+type: docs
+url: /rows/delete/row/
+aliases: [/delete-row-from-a-worksheet/]
+description: "Utilice el punto de conexión DELETE /worksheets/{sheetName}/cells/rows/{rowIndex} para eliminar una fila específica de una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye comando cURL, ejemplos de SDK y referencia completa de parámetros."
+keywords: "Aspose.Cells, eliminar fila, Excel, API, REST, Cloud, SDK"
+weight: 80
+ArticleTitle: "Eliminar una fila en una hoja de cálculo de Excel – Guía de la API de Aspose.Cells Cloud"
+---
 
-## RSET API
+Esta API REST elimina una fila de una hoja de cálculo de Excel.
+
+**Prerrequisitos**  
+- Un token JWT válido de **autorización**.  
+- El libro debe estar almacenado en un repositorio compatible de Aspose Cloud (predeterminado o personalizado).  
+- La carpeta objetivo (si se especifica) debe existir en el repositorio elegido.
+
+## API REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
 ```
 
-Los parámetros de la solicitud son:
+### **Parámetros de la solicitud**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| El nombre del libro de trabajo.|
-| nombreHoja| cadena| camino| La hoja de trabajo bame.|
-| índice de fila| entero| camino| El índice de fila.|
-| carpeta| cadena| consulta| La carpeta de documentos.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo    | Ruta / Consulta | Obligatorio | Descripción                                                                                         |
+| ------------------- | ------- | --------------- | ----------- | --------------------------------------------------------------------------------------------------- |
+| **name**            | string  | ruta            | Sí          | Nombre del libro.                                                                                   |
+| **sheetName**       | string  | ruta            | Sí          | Nombre de la hoja de cálculo.                                                                       |
+| **rowIndex**        | integer | ruta            | Sí          | Índice de base cero de la fila que se va a eliminar.                                                |
+| **startrow**        | integer | consulta        | No          | Índice de la primera fila que se va a eliminar (normalmente el mismo que `rowIndex`).               |
+| **totalRows**       | integer | consulta        | No          | Número de filas consecutivas que se van a eliminar.                                                 |
+| **updateReference** | boolean | consulta        | No          | Cuando es `true` (valor predeterminado), se actualizan las fórmulas, los intervalos con nombre y otras referencias tras la eliminación. |
+| **folder**          | string  | consulta        | No          | Carpeta que contiene el libro.                                                                      |
+| **storageName**     | string  | consulta        | No          | Nombre del servicio de almacenamiento.                                                              |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación de OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow) define una interfaz de programación públicamente accesible y le permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra una llamada completa y ejecutable.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=1&updateReference=true" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
-}
- 
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-## Familia de SDK en la nube
-
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
-
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
-
-## **Introducción**
-
-Este ejemplo muestra cómo eliminar una fila de una hoja de cálculo Excel usando Aspose.Cells Cloud API en sus aplicaciones. Puede usar nuestro REST API con cualquier lenguaje: .NET, Java, PHP, Ruby, Rails, Python, jQuery y muchos más.
-
-## **API Información**
-
-|**API**|**Tipo**|**Descripción**|**Enlace de recursos**|
-|:- |:- |:- |:- |
-|/celdas/{nombre}/hojasdetrabajo/{nombreDeHoja}/celdas/filas|CORREO|Eliminar filas de una hoja de cálculo Excel|[Eliminar filas de la hoja de cálculo](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)|
-
-### **cURL Ejemplo**
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=1&updateReference=true" -H "accept: application/json"
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-
-{
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Códigos de respuesta HTTP posibles**
+
+| Código | Significado                            | Descripción                                                                 |
+|--------|----------------------------------------|-----------------------------------------------------------------------------|
+| 200    | OK                                     | La fila se eliminó correctamente.                                          |
+| 400    | Solicitud incorrecta                   | Parámetros faltantes o no válidos (por ejemplo, `rowIndex` no numérico).   |
+| 401    | No autorizado                          | Token JWT no válido o faltante.                                             |
+| 404    | No encontrado                          | El libro, la hoja de cálculo o la fila especificados no existen.           |
+| 500    | Error interno del servidor             | Error inesperado del servidor; consulte la respuesta de error para detalles. |
+
+**Ejemplo de respuesta de error**
+
+```json
+{
+  "Code": 400,
+  "Message": "Índice de fila no válido proporcionado."
+}
+```
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK abstracta los detalles de bajo nivel para que pueda centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante diversos SDK:
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleDeleteWorksheetRow.cs" >}}
+```bash
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=1&updateReference=true" \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_DeleteWorksheetRow.java" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_DeleteWorksheetRow.php" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_DeleteWorksheetRow.rb" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_DeleteWorksheetRow.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_DeleteWorksheetRow.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_DeleteWorksheetRow.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_DeleteWorksheetRow.go" >}}
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Operaciones relacionadas**  
+- [Agregar una fila](/cells/rows/add/row/)  
+- [Eliminar varias filas](/cells/rows/delete/rows/)  
+- [Obtener detalles de la fila](/cells/rows/get/row/)  
+---

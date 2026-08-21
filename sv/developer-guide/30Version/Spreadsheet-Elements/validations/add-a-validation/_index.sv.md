@@ -1,74 +1,69 @@
-﻿---
-title: Lägg till en kalkylbladsvalidering på ett Excel-kalkylblad
-second_title: Documen
-linktitle: Annons
-type: docs
-url: /sv/validations/add/
-keywords: Delete a worksheet validation on an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder tillägg av en kalkylbladsvalidering på ett Excel-kalkylblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lägg till en kalkylbladsvalidering på ett Excel-kalkylblad
 ---
-Denna REST API anger att en kalkylbladsvalidering ska läggas till på ett Excel-kalkylblad.
+title: "Lägg till ett kalkylbladsvalidering till ett Excel-kalkylblad"
+second_title: "Dokument"
+linktitle: "Lägg till"
+type: docs
+url: /validations/add/
+keywords: "Lägg till kalkylbladsvalidering, Excel, Aspose.Cells Cloud, REST API, Kalkylark, Valideringsregel"
+description: "Använd Aspose.Cells Cloud REST API för att lägga till en kalkylbladsvalidering till en Excel-fil. SDK:er finns tillgängliga för C#, Java, PHP, Ruby, Node.js, Python, Perl, Go och Swift."
+weight: 10
+---
 
-## RSET API
+Denna REST API lägger till en kalkylbladsvalidering till ett Excel-kalkylblad.
+
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
- 
 ```
 
-Begäranparametrarna är:
+### **Parametrar för begäran**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| räckvidd| sträng| fråga| Specificerat cellområde|
-| godkännande|| kropp| godkännande|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameter Namn | Typ    | Plats  | Beskrivning                                                |
+| -------------- | ------ | ------ | ---------------------------------------------------------- |
+| name           | string | path   | Namn på Excel-dokumentet.                                  |
+| sheetName      | string | path   | Namn på kalkylbladet.                                      |
+| range          | string | query  | Cellomfång till vilket valideringen tillämpas (t.ex. A1:B10). |
+| validation     | object | body   | Definition av valideringsregel.                            |
+| folder         | string | query  | Mapp som innehåller dokumentet.                            |
+| storageName    | string | query  | Namn på lagringstjänsten.                                  |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) definierar ett offentligt tillgängligt programmeringssnitt och möjliggör REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör anrop till moln-API:et med cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## Molnsdk-familj
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Ta en titt på [GitHub-repositoriet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -98,7 +93,7 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetValidation.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutWorksheetValidation.ts" >}}
 
 {{< /tab >}}
 

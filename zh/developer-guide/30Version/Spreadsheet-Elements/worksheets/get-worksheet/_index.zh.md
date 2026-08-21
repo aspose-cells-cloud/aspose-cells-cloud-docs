@@ -1,21 +1,20 @@
-﻿---
-title: 如何从 Excel 工作表中获取不同的内容
-second_title: Documen
-linktitle: 葛
-type: docs
-url: /zh/worksheets/get/
-keywords: How to get different content from an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持从 Excel 工作表中获取不同的内容。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 20
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、如何从 Excel 工作表中获取不同内容
 ---
-## 正在获取 Excel 工作表。
+title: "如何从 Excel 工作表中获取不同内容"
+second_title: "文档"
+linktitle: "获取"
+type: docs
+url: /worksheets/get/
+keywords: "Excel, 工作表, Aspose.Cells Cloud, REST API, 内容提取, 格式转换"
+description: "了解如何使用 Aspose.Cells Cloud REST API 从 Excel 工作表中检索各种类型的内容。本指南涵盖支持的格式，并提供相关操作的链接。"
+weight: 20
+---
 
-- [如何获取具有不同格式的 Excel 工作表。](/cells/zh/worksheets/get-worksheet/) 
-    - [如何将 Excel 工作表转换为图像。](/cells/zh/worksheets/to-image/)
-- [如何获取具有不同格式的 Excel 工作表区域。](/cells/zh/worksheets/area-to-different-formats/)
-- [如何获取具有不同格式的 Excel 工作表页面。](/cells/zh/get-worksheet-for-page-index/) 
-- [如何获取 Excel 工作表的页数。](/cells/zh/worksheets/page-count/) 
-- [如何获取 Excel 工作表说明。](/cells/zh/worksheets/get-all/) 
+## 操作：获取 Excel 工作表
 
-
+- [如何以不同格式获取 Excel 工作表](/cells/worksheets/get-worksheet/)  
+- [如何将 Excel 工作表转换为图像](/cells/worksheets/to-image/)  
+- [如何以不同格式获取 Excel 工作表区域](/cells/worksheets/area-to-different-formats/)  
+- [如何以不同格式获取 Excel 工作表页面](/cells/get-worksheet-for-page-index/)  
+- [如何获取 Excel 工作表的页数](/cells/worksheets/page-count/)  
+- [如何检索 Excel 工作表的描述信息](/cells/worksheets/get-all/)  
+---

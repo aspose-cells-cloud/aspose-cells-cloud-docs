@@ -1,84 +1,100 @@
-﻿---
-title: دمج ملفات متعددة Excel في ملف Excel
-second_title: Documen
-linktitle: دمج ملف متعدد Excel
-type: docs
-url: /ar/merge-multi-files-into-excel/
-aliases: [ /merge/multi-files/]
-keywords: Merge multi Excel files into Excel file
-description: يدعم Cloud REST دمج ملفات متعددة في ملف واحد. تدعم حزمة تطوير البرامج (SDK) لغات تطوير متنوعة، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 32
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، دمج ملفات متعددة Excel في ملف Excel.
 ---
-يشير هذا REST API إلى `merge` ملفات متعددة Excel في ملف Excel.
+title: "دمج ملفات إكسل متعددة في ملف عمل واحد"
+second_title: "مستند"
+linktitle: "دمج ملفات إكسل متعددة"
+type: docs
+url: /merge-multi-files-into-excel/
+aliases: [/merge/multi-files/]
+keywords: "Aspose.Cells Cloud، دمج ملفات إكسل متعددة، واجهة برمجة تطبيقات REST، دمج جداول البيانات، حزمة تطويرات سحابية"
+description: "تعرّف على كيفية دمج ملفات عمل إكسل متعددة في ملف واحد باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST (الإصدار 3.0). يتضمن عنوان HTTPS، أمر cURL، أمثلة SDK، المعلمات المطلوبة، وتفاصيل معالجة الأخطاء."
+weight: 32
+---
 
-## RSET API
+## واجهة برمجة تطبيقات REST
+
+تقوم هذه واجهة برمجة تطبيقات REST بدمج ملفات إكسل متعددة في ملف عمل إكسل واحد.
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/merge
- 
+POST https://api.aspose.cloud/v3.0/cells/merge
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| ملف| ملف| نموذج البيانات| الملف للتحميل|
-| شكل| خيط| استفسار| إكس إل إس إكس|
-| دمج في ورقة واحدة| منطقي| استفسار|خطأ شنيع|
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostMerge) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### المعلمات المطلوبة في الطلب
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| اسم المعلمة  | النوع    | الموقع | الوصف                                                                       | مطلوبة |
+| --------------- | ------- | -------- | --------------------------------------------------------------------------------- | -------- |
+| files[]         | ملف    | formData | ملف عمل إكسل واحد أو أكثر ليتم دمجها. استخدم `file1`، `file2`، … في الطلب. | نعم      |
+| format          | سلسلة نصية  | query    | التنسيق المطلوب للملف الناتج (مثل `xlsx`).                                             | نعم      |
+| mergeToOneSheet | منطقي | query    | عدّلها إلى `true` لدمج كل أوراق العمل في ورقة واحدة؛ القيمة الافتراضية هي `false`.  | لا       |
+
+### **الاستجابة**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[اسم الملف المدمج]",
+    "Filesize" : [حجم الملف],
+    "FileContent" : "[Base64String]"
+}
+```
+
+**رموز حالات HTTP**
+
+| الرمز | المعنى                     | الوصف                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | ناجح                          | تمت تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صالح                 | معلمات ناقصة أو غير صحيحة (مثل نوع ملف غير مدعوم). |
+| 401  | غير مصرّح به                | رمز JWT غير صالح أو ناقص. |
+| 413  | حمل البيانات كبير جدًا           | تجاوز حجم الملف المرفوع الحد المسموح. |
+| 500  | خطأ داخلي في الخادم       | خطأ غير متوقع في الخادم. |
+## كيفية استخدام واجهة PostMerge API باستخدام حزم تطوير البرامج (SDKs)
+
+### مواصفات واجهة PostMerge API
+
+تُعرّف <a href="https://apireference.aspose.cloud/cells/#/LightCells/PostMerge" rel="noopener noreferrer">مواصفة OpenAPI</a> واجهة برمجة تطبيقات قابلة للوصول العام، وتسمح لك بإجراء تفاعلات REST مباشرة من خلال متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء استدعاءات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/merge?format=xlsx" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'  
+curl -v "https://api.aspose.cloud/v3.0/cells/merge?format=xlsx" \
+  -X POST \
+  -H "Authorization: Bearer <jwt token>" \
+  -F "file1=@file1.xlsx" \
+  -F "file2=@file2.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  {
+    "Filename": "file1.xlsx",
+    "FileSize": 274022,
+    "FileContent": "-----Base64String--------"
+  }
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام حزم تطوير البرامج (SDKs) الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعد استخدام حزمة تطوير البرامج (SDK) أفضل طريقة لتسريع عملية التطوير. فحزم التطوير تتعامل مع التفاصيل الدقيقة من المستوى المنخفض، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطّلاع على <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للاطّلاع على قائمة كاملة بحزم تطوير البرامج (SDKs) الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الرمز التالية كيفية استدعاء خدمات الويب Aspose.Cells باستخدام حزم تطوير مختلفة:
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
 
@@ -90,35 +106,31 @@ curl -v "http://api.aspose.cloud/v3.0/cells/merge?format=xlsx" \
 
 {{< tab tabNum="2" >}}
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example-Merge.java" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 {{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Merge.php" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
-
 {{< /tab >}}
-{{< tab tabNum="9" >}}
 
+{{< tab tabNum="9" >}}
 {{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsMerge.py" >}}
 {{< /tab >}}
+
 {{< /tabs >}}
+
+---

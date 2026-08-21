@@ -1,99 +1,73 @@
-﻿---
-title: Получить данные ячеек из рабочего листа
+---
+title: "Получение данных ячейки из рабочего листа"
 type: docs
 url: /ru/get-cell-data-from-a-worksheet/
 weight: 10
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получение данных ячеек из рабочего листа
+keywords: "Aspose.Cells Cloud, получение данных ячейки, Excel API, REST API, значение ячейки, API рабочего листа, пример Aspose API"
+description: "Получение значения, типа и стиля отдельной ячейки из рабочего листа Excel с использованием REST API Aspose.Cells Cloud (версия 3.0). Включает примеры cURL и SDK, параметры и обработку ошибок."
 ---
-Этот REST API указывает на получение `cell` в файле Excel, когда параметр `cellOrMethodName` является именем ячейки.
 
-- **cURL Пример**
+Этот REST API извлекает ячейку из рабочего листа Excel, если параметр **`cellOrMethodName`** задаёт имя ячейки (адрес в формате A1, например `A3`).
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+- **Пример на cURL**
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?client_id=xxxx&client_secret=xxxx" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```shell
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+**Параметры**
+
+| Параметр           | Тип    | Описание                                                  | Обязательный |
+|--------------------|--------|-----------------------------------------------------------|--------------|
+| `cellOrMethodName` | string | Должен быть установлен в `firstcell` для получения первой ячейки. | Да           |
+| `fileName`         | string | Имя файла рабочей книги (например, `myWorkbook.xlsx`).     | Да           |
+| `worksheet`        | string | Имя рабочего листа (например, `Sheet1`).                  | Да           |
+| `Authorization`    | header | Bearer-токен для аутентификации.                          | Да           |
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "A3",
-
     "Row": 2,
-
     "Column": 0,
-
-    "Value": "Statistical",
-
+    "Value": "Категория",
     "Type": "IsString",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
-    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">Statistical</Font>",
-
+    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Категория</Font>",
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
-    },
-
-    "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3",
-
-      "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Семейство облачных SDK**
-
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
-
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+- **Использование SDK Aspose.Cells Cloud**
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

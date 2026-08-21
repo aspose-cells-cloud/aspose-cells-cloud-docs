@@ -1,78 +1,98 @@
-﻿---
-title: الحصول على تنسيق التعبئة لمنطقة الرسم البياني من ورقة العمل
+---
+title: "احصل على تنسيق ملء منطقة المخطط – واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0)"
 type: docs
-url: /ar/charts/chart-area/fill-format/get/
+url: /charts/chart-area/fill-format/get/
 aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
 weight: 70
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على تنسيق التعبئة لمنطقة الرسم البياني من ورقة عمل
+keywords:
+  - "Aspose.Cells"
+  - "Chart Area"
+  - "Fill Format"
+  - "REST API"
+  - "Excel"
+description: "استرداد تنسيق الملء (اللون، النمط، التدرج) لمنطقة مخطط داخل ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. يتضمن مثالًا باستخدام cURL، ومقتطفات كود SDK، وخطوات المصادقة، وتفاصيل الاستجابة."
+ArticleTitle: "احصل على تنسيق ملء منطقة المخطط باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud الإصدار 3.0"
 ---
-يشير هذا REST API إلى الحصول على معلومات تنسيق ملء منطقة الرسم البياني.
- 
-## RSET API
- 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat
- 
+
+تسترجع هذه الواجهة REST معلومات تنسيق الملء لمنطقة **Chart Area**.
+
+**المتطلبات المسبقة**  
+لاستدعاء هذه النقطة النهائية، يجب أن تمتلك رمز وصول OAuth/JWT ساري المفعول. احصل على الرمز باستخدام تدفق المصادقة الخاص بـ Aspose.Cells Cloud، ثم أدخله في رأس `Authorization` على النحو التالي: `Bearer <jwt token>`. وإذا كنت تستخدم أحد SDKs، فتأكد من إعداده بـ `client_id` و`client_secret` قبل استدعاء الدالة.
+
+## واجهة برمجة التطبيقات GetChartAreaFillFormat
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat
 ```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مؤشر الرسم البياني| عدد صحيح| طريق| مؤشر الرسم البياني.|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
- 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
- 
+
+### **الأمان والمصادقة**
+
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+### معاملات الطلب
+
+| اسم المعامل | النوع    | الموقع | الوصف                               |
+|-------------|----------|--------|---------------------------------------|
+| name        | string   | path   | اسم ملف العمل (Workbook).             |
+| sheetName   | string   | path   | اسم ورقة العمل.                       |
+| chartIndex  | integer  | path   | فهرس المخطط.                          |
+| folder      | string   | query  | المجلد الذي يحتوي على ملف العمل.      |
+| storageName | string   | query  | اسم وحدة التخزين.                     |
+
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat) واجهة برمجة تطبيقات قابلة للوصول العام، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات ويب Aspose.Cells. يُظهر المثال التالي كيفية استدعاء الواجهة باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea/fillFormat" 
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea/fillFormat" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "FillFormat": {
-
     "Type": "Automatic"
-
   },
-
-  "Code": "200",
-
+  "Code": 200,
   "Status": "OK"
-
 }
-
 ```
+
+**ملاحظات**  
+- يُرجع الطلب الناجح الرمز HTTP 200 مع تفاصيل تنسيق الملء.  
+- يشير الرمز HTTP 401 إلى فشل المصادقة (رمز غير صالح أو مفقود).  
+- يُرجع الرمز HTTP 404 عند عدم وجود ملف العمل أو ورقة العمل أو مؤشر المخطط المحدّد.  
+- يشير الرمز HTTP 500 إلى خطأ من جانب الخادم؛ حاول إعادة إرسال الطلب أو تواصل مع الدعم إذا استمرت المشكلة.
+
+| الرمز | المعنى                                              |
+|-------|------------------------------------------------------|
+| 200   | نجاح – تم إرجاع تنسيق الملء                         |
+| 401   | غير مُصرّح – رمز غير صالح أو مفقود                 |
+| 404   | غير موجود – ملف العمل أو ورقة العمل أو المخطط غير موجود |
+| 500   | خطأ داخلي في الخادم                                 |
+
+لعمليات ذات صلة، راجع طرفيّة **Get Chart Area Border** (احصل على حدود منطقة المخطط) و**Get Chart Title** (احصل على عنوان المخطط).
 
 {{< /tab >}}
 
 {{< /tabs >}}
-## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+
+## عائلة SDK للسحابة
+
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. يُتعامل SDK مع التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مهام مشروعك. يُرجى الاطّلاع على <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">مستودع GitHub</a> للاطّلاع على القائمة الكاملة لـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs متنوعة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Perl" tabName10="Go" >}}
 
@@ -135,3 +155,4 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 {{< /tab >}}
 
 {{< /tabs >}}
+---

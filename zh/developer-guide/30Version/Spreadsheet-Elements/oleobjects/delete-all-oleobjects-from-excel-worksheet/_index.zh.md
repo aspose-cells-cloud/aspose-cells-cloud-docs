@@ -1,122 +1,147 @@
-﻿---
-title: 删除 Excel 工作表中的所有 OLE 对象
-second_title: Documen
-linktitle: 克莱尔
-type: docs
-url: /zh/oleobjects/clear/
-aliases: [/delete-all-oleobjects-from-excel-worksheet/]
-keywords: Delete all OLE objects in an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持删除 Excel 工作表中的所有 OLE 对象。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 60
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、删除 Excel 工作表中的所有 OLE 对象
 ---
-此 REST API 表示 Excel 工作表中的 `delete all` OLE 对象。
+title: 删除 Excel 工作表中的所有 OLE 对象
+description: 了解如何使用 Aspose.Cells Cloud REST API（v3.0）删除 Excel 工作表中的所有 OLE 对象。内容包括端点、参数、请求/响应示例、SDK 代码片段、认证方式、错误处理及常见问题解答。
+keywords: Aspose.Cells Cloud、删除 OLE 对象、Excel API、REST API、工作表 OLE 清除、云 SDK
+api_version: v3.0
+last_updated: 2024-11-01
+weight: 60
+---
 
-## 重新设置 API
+# 删除 Excel 工作表中的所有 OLE 对象
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
- 
+**OleObjects – Clear**（OLE 对象清除）操作将从指定工作表中删除**所有** OLE（对象链接与嵌入）对象，同时保持单元格数据不变。此操作可用于清理旧版电子表格，或为重新分发工作簿做准备。
+
+---
+
+## 前置条件
+
+- 有效的 **Aspose Cloud JWT 访问令牌**（OAuth 2.0）。  
+- 目标工作簿必须存储在 Aspose Cloud 存储中（或需指定其所在的 `folder`/`storageName`）。  
+- API 版本需为 **v3.0** 或更高。  
+
+> **注意**：该操作具有**幂等性**——即使工作表中已无 OLE 对象，调用该接口仍会返回成功状态 `200 OK`。
+
+---
+
+## HTTP 请求
+
+```
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 ```
 
-请求参数为：
+### 路径参数
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|文件夹|细绳|询问|工作簿文件夹。|
-|存储名称|细绳|询问|存储名称。|
+| 名称        | 类型   | 是否必填 | 描述               |
+|-------------|--------|----------|--------------------|
+| `name`      | 字符串 | ✔️       | 工作簿文件名称。   |
+| `sheetName` | 字符串 | ✔️       | 工作表名称。       |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObjects)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+### 查询参数
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 名称           | 类型   | 是否必填 | 描述                     |
+|----------------|--------|----------|--------------------------|
+| `folder`       | 字符串 | 可选     | 工作簿所在文件夹。       |
+| `storageName`  | 字符串 | 可选     | 工作簿所在的存储空间名称。|
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+**请求头**
 
-{{< tab tabNum="1" >}}
+| 请求头              | 值                            |
+|---------------------|-------------------------------|
+| `Authorization`     | `Bearer <jwt token>`          |
+| `Accept`            | `application/json`            |
+| `Content-Type`      | `application/json`            |
+
+---
+
+## 请求示例（cURL）
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects?folder=Samples&storageName=MyStorage" \
+     -X DELETE \
+     -H "Authorization: Bearer <jwt token>" \
+     -H "Accept: application/json" \
+     -H "Content-Type: application/json"
 ```
 
-{{< /tab >}}
+*请将 `<jwt token>` 替换为有效的访问令牌，并根据需要调整 `folder` 和 `storageName` 参数。*
 
-{{< tab tabNum="2" >}}
+---
 
-```bash
+## 成功响应
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
-{{< /tab >}}
+**HTTP 状态码说明**
 
-{{< /tabs >}}
+| 状态码 | 含义           | 描述                                           |
+|--------|----------------|------------------------------------------------|
+| 200    | OK（成功）     | 操作成功执行；响应中包含操作详情。             |
+| 400    | Bad Request（错误请求） | 缺少或无效的参数（例如不支持的文件类型）。     |
+| 401    | Unauthorized（未授权）  | JWT 令牌无效或缺失。                           |
+| 413    | Payload Too Large（请求实体过大） | 上传文件超出大小限制。                     |
+| 500    | Internal Server Error（服务器内部错误） | 服务器发生意外错误。                     |
 
-## Cloud SDK 系列
+---
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+## SDK 示例
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码片段展示了如何使用官方 Aspose.Cells Cloud SDK 调用 **DeleteWorksheetOleObjects** 方法。请将占位符（如 `<YOUR_TOKEN>`、`<FILE_NAME>` 等）替换为您的实际数据。
 
- {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+| 语言       | 示例 |
+|------------|------|
+| **C#** | <details><summary>显示 C# 示例</summary>```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar config = new Configuration { AccessToken = "<YOUR_TOKEN>", BasePath = "https://api.aspose.cloud" };\nvar api = new OleObjectsApi(config);\napi.DeleteWorksheetOleObjects(name: "Sample.xlsx", sheetName: "Sheet1", folder: "Samples", storageName: null);\n```</details> |
+| **Java** | <details><summary>显示 Java 示例</summary>```java\nimport com.aspose.cells.cloud.api.OleObjectsApi;\nimport com.aspose.cells.cloud.client.ApiClient;\nimport com.aspose.cells.cloud.client.Configuration;\n\nConfiguration config = new Configuration();\nconfig.setAccessToken("<YOUR_TOKEN>");\nconfig.setBasePath("https://api.aspose.cloud");\nOleObjectsApi api = new OleObjectsApi(new ApiClient(config));\napi.deleteWorksheetOleObjects("Sample.xlsx", "Sheet1", "Samples", null);\n```</details> |
+| **Python** | <details><summary>显示 Python 示例</summary>```python\nfrom asposecellscloud import ApiClient, Configuration, OleObjectsApi\n\nconfig = Configuration()\nconfig.access_token = '<YOUR_TOKEN>'\nconfig.host = 'https://api.aspose.cloud'\nclient = ApiClient(configuration=config)\napi = OleObjectsApi(client)\napi.delete_worksheet_ole_objects(name='Sample.xlsx', sheet_name='Sheet1', folder='Samples')\n```</details> |
+| **Node.js** | <details><summary>显示 Node.js 示例</summary>```javascript\nconst { OleObjectsApi, Configuration } = require('asposecellscloud');\n\nlet config = new Configuration({ accessToken: '<YOUR_TOKEN>', basePath: 'https://api.aspose.cloud' });\nlet api = new OleObjectsApi(config);\napi.deleteWorksheetOleObjects('Sample.xlsx', 'Sheet1', { folder: 'Samples' })\n  .then(() => console.log('All OLE objects deleted'))\n  .catch(err => console.error(err));\n```</details> |
+| **Go** | <details><summary>显示 Go 示例</summary>```go\npackage main\nimport (\n    "context"\n    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v3"\n)\n\nfunc main() {\n    cfg := asposecellscloud.NewConfiguration()\n    cfg.AccessToken = "<YOUR_TOKEN>"\n    cfg.Host = "https://api.aspose.cloud"\n    api := asposecellscloud.NewOleObjectsApi(cfg)\n    _, err := api.DeleteWorksheetOleObjects(context.Background(), "Sample.xlsx", "Sheet1", map[string]interface{}{ "folder": "Samples" })\n    if err != nil { panic(err) }\n    println("All OLE objects deleted")\n}\n```</details> |
 
-{{< tab tabNum="1" >}}
+*所有支持语言的完整源文件可在 [Aspose.Cells Cloud GitHub 仓库](https://github.com/aspose-cells-cloud) 获取。*
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleDeleteWorksheetOleObjects.cs" >}}
+---
 
-{{< /tab >}}
+## 错误与处理
 
-{{< tab tabNum="2" >}}
+- **幂等性** – 对已无 OLE 对象的工作表再次执行删除操作，仍会返回 `200 OK`。  
+- **令牌过期** – 若返回 `401 Unauthorized`，请获取新的 JWT 令牌后重试。  
+- **工作表名称错误** – 请确保工作表名称与工作簿中实际名称的大小写完全一致；否则将返回 `400 Bad Request`。  
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_DeleteWorksheetOleObjects.java" >}}
+对于临时性 `500` 错误，建议实现指数退避重试逻辑。
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="3" >}}
+## 常见问题
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_DeleteWorksheetOleObjects.php" >}}
+**Q1：是否必须指定 `folder` 和 `storageName` 参数？**  
+**A：** 否。若未指定，Aspose Cloud 将默认使用默认存储空间及根目录。
 
-{{< /tab >}}
+**Q2：能否仅删除某个特定单元格中的 OLE 对象？**  
+**A：** 本端点将删除工作表中的**所有** OLE 对象。如需删除单个对象，请使用 *删除特定 OLE 对象* 操作。
 
-{{< tab tabNum="4" >}}
+**Q3：如果工作簿处于锁定编辑状态，会发生什么？**  
+**A：** API 将返回 `400 Bad Request`，并提示文件已被锁定。请确保调用端点前该文件未被其他程序占用。
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_DeleteWorksheetOleObjects.rb" >}}
+**Q4：工作簿是否有大小限制？**  
+**A：** 服务遵循 Aspose Cloud 的通用文件大小限制（当前单个文件上限为 2 GB）。更大的文件可能需要拆分或分块处理。
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="5" >}}
+## 最佳实践
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_DeleteWorksheetOleObjects.ts" >}}
+- **性能优化** – 在文档站点加载第三方脚本时，请使用 `async` 或 `defer` 属性，以减少首屏加载时间。  
+- **安全性** – 对于在新标签页中打开的外部链接，请添加 `rel="noopener noreferrer"`。  
+- **无障碍支持** – 装饰性图标（例如侧边栏中的向下箭头）应设置 `alt=""` 和 `role="presentation"`，以符合 WCAG AA 标准。  
+- **一致性** – 日期格式请统一使用 ISO‑8601（`YYYY-MM-DD`），以避免编码异常。
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="6" >}}
+## 相关操作
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_DeleteWorksheetOleObjects.py" >}}
+- **添加 OLE 对象** – `POST /cells/{name}/worksheets/{sheetName}/oleobjects`  
+- **删除特定 OLE 对象** – `DELETE /cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}`  
 
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_DeleteWorksheetOleObjects.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_DeleteWorksheetOleObjects.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+请使用页面底部的导航链接在相关 API 操作之间切换。

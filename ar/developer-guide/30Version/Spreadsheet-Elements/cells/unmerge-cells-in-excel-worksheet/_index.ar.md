@@ -1,72 +1,106 @@
-﻿---
-title: إلغاء دمج Cells في ورقة العمل Excel
-type: docs
-url: /ar/unmerge-cells-in-excel-worksheet/
-weight: 120
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إلغاء دمج Cells في ورقة عمل Excel
 ---
-يشير هذا REST API إلى `unmerge` خلية في ملف Excel.
+title: "إلغاء دمج الخلايا في ورقة عمل Excel"
+type: docs
+url: /unmerge-cells-in-excel-worksheet/
+weight: 120
+keywords: "Aspose.Cells, Excel, إلغاء دمج الخلايا, REST API, Cloud SDK"
+description: "تعرّف على كيفية استخدام Aspose.Cells Cloud REST API لإلغاء دمج الخلايا في ورقة عمل Excel، مع أمثلة على الطلبات، تنسيق الاستجابة، وأكواد عينات SDK لعدة لغات برمجة."
+ArticleTitle: "إلغاء دمج الخلايا في ورقة عمل Excel"
+---
 
-## RSET API
+يقوم هذا REST API بإلغاء دمج الخلايا في ملف Excel.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge
 ```
 
-معلمات الطلب هي:
+## الأمان والمصادقة
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| صف البداية| عدد صحيح| استفسار| صف البداية.|
-| عمود البداية| عدد صحيح| استفسار| عمود البداية.|
-| إجمالي الصفوف| عدد صحيح| استفسار| إجمالي الصفوف|
-| إجمالي الأعمدة| عدد صحيح| استفسار| مجموع الأعمدة.|
-| مجلد| خيط| استفسار| مجلد المصنف.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعدّ واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب [مصادقة قائمة على رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetUnmerge) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+**مُعلمات الطلب**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المُعلمة | النوع    | الموقع | الوصف                                             |
+|----------------|---------|----------|---------------------------------------------------------|
+| name           | string  | path     | اسم ملف المصنف.                              |
+| sheetName      | string  | path     | اسم ورقة العمل.                                  |
+| startRow       | integer | query    | المؤشر الصفري-الأساسي للصف الأول المراد إلغاء دمجه.           |
+| startColumn    | integer | query    | المؤشر الصفري-الأساسي للعمود الأول المراد إلغاء دمجه.        |
+| totalRows      | integer | query    | عدد الصفوف التي تُشمل في عملية إلغاء الدمج.    |
+| totalColumns   | integer | query    | عدد الأعمدة التي تُشمل في عملية إلغاء الدمج. |
+| folder         | string  | query    | مسار المجلد الذي يُخزَّن فيه المصنف.               |
+| storageName    | string  | query    | اسم خدمة التخزين.                            |
+
+## **الاستجابة**
+
+ترجع `CellCloudResponse`.
+
+- **نظرة عامة على حقول الاستجابة**
+
+| الحقل           | النوع    | الوصف                                           |
+| --------------- | ------- | ----------------------------------------------------- |
+| `Status`          | string  |                    |
+| `Code`           | integer | 200،400،401،500،...                                 |
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                     | الوصف                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | ناجح (OK)                          | تم تطبيق التصفية بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صحيح (Bad Request)                 | مُعلمات ناقصة أو غير صالحة (مثل نوع ملف غير مدعوم). |
+| 401  | غير مُصرّح له (Unauthorized)                | رمز JWT غير صالح أو ناقص. |
+| 413  | حمل البيانات كبير جدًا (Payload Too Large)           | حجم الملف المرفوع يتجاوز الحد المسموح. |
+| 500  | خطأ داخلي في الخادم (Internal Server Error)       | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام PostWorksheetUnmerge API باستخدام SDKs
+
+### مواصفات PostWorksheetUnmerge API
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetUnmerge) واجهة برمجة تطبيقات عامة قابلة للوصول وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر `cURL` للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء المكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام `cURL`.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/unmerge?startRow=10&startColumn=10&totalRows=10&totalColumns=10" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام Aspose.Cells Cloud SDKs
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. فتتولّى SDK معالجة التفاصيل منخفضة المستوى وتركز أنت على مهام مشروعك. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية إجراء المكالمات إلى خدمات الويب Aspose.Cells باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

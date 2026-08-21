@@ -1,83 +1,88 @@
-﻿---
-title: Novità di Aspose.Cells Cloud nel 2023
-second_title: Documen
-linktitle: Novità del 202
+---
+title: "Novità in Aspose.Cells Cloud 2023 – Aggiornamenti delle funzionalità e note di rilascio"
+second title: "Documenti"
+linktitle: "Novità nel 2023"
 type: docs
 weight: 30
-url: /it/new-features/2023/
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: Questa pagina descrive le nuove funzionalità Cloud Aspose.Cells più interessanti introdotte nelle versioni recenti
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Novità in Aspose.Cells Cloud
+url: /new-features/2023/
+keywords: "Excel, Office Cloud, REST API, foglio di calcolo, PDF, CSV, JSON, Markdown, Aspose.Cells Cloud, aggiornamenti 2023"
+description: "Scopri le nuove funzionalità di Aspose.Cells Cloud 2023, tra cui API di conversione sensibili alla regione, supporto per gli assi dei grafici, firme digitali e altri miglioramenti. Note di rilascio dettagliate ed esempi di codice."
+ArticleTitle: "Novità in Aspose.Cells Cloud 2023 – Aggiornamenti delle funzionalità e note di rilascio"
 ---
-Benvenuti alle novità di Aspose.Cells Cloud Docs. Utilizzate questa pagina per trovare rapidamente le ultime modifiche.
+
+Benvenuti alle novità nella documentazione di Aspose.Cells Cloud. Questa pagina evidenzia le **nuove funzionalità di Aspose.Cells Cloud 2023** e consente di individuare rapidamente le ultime modifiche.
+
+**Ultimo aggiornamento:** luglio 2026
 
 ## Miglioramenti nella versione 23.12.0
 
-- Le API di conversione aggiungono il parametro regione.
-- Le API di protezione aggiungono il parametro regione.
-- I dati di assemblaggio API aggiungono il parametro regione.
-- Unisci file API aggiunge il parametro regione.
-- I file divisi API aggiungono il parametro regione.
-- L'importazione dei dati API aggiunge il parametro regione.
-- La filigrana API aggiunge il parametro regione.
-- L'oggetto Clear API aggiunge il parametro regione.
-- I dati inversi API aggiungono il parametro regione.
-- Ruota i dati API e aggiunge il parametro regione.
+- Aggiunto il parametro region alla API di conversione.  
+- Aggiunto il parametro region alla API di protezione.  
+- Aggiunto il parametro region alla API di assemblaggio dati.  
+- Aggiunto il parametro region alla API di unione file.  
+- Aggiunto il parametro region alla API di divisione file.  
+- Aggiunto il parametro region alla API di importazione dati.  
+- Aggiunto il parametro region alla API di filigrana.  
+- Aggiunto il parametro region alla API di cancellazione oggetti.  
+- Aggiunto il parametro region alla API di inversione dati.  
+- Aggiunto il parametro region alla API di rotazione dati.  
 
 ## Miglioramenti nella versione 23.11
 
-- Ottimizza l'importazione dei dati XML nel file Excel.
-- Ottimizza l'importazione dei dati JSON nel file Excel.
-- Rimuovere le funzioni, le classi e i casi di test obsoleti.
+- Ottimizzata l'importazione di dati XML in file Excel.  
+- Ottimizzata l'importazione di dati JSON in file Excel.  
+- Rimosse funzioni, classi e casi di test deprecati.  
 
 ## Miglioramenti nella versione 23.10
 
-- Correggi la richiesta di protezione della cartella di lavoro.
-- Correggi la copia dell'intervallo API.
-- Ottimizza la protezione della cartella di lavoro API.
+- Risolto problema nella richiesta di protezione del workbook.  
+- Risolto problema nell'API di copia di intervalli.  
+- Ottimizzata l'API di protezione del workbook.  
 
 ## Miglioramenti nella versione 23.9
 
-- Supporto per l'ordinamento dei dati sul controller di intervallo.
-- Supporto per la rimozione dei dati duplicati nell'oggetto elenco.
-- Supporto per l'inserimento di un'affettatrice per l'oggetto elenco.
-- Ottimizza l'oggetto elenco e gli oggetti correlati.
+- Aggiunto supporto per l'ordinamento dei dati nel controller di intervallo.  
+- Aggiunta rimozione dei dati duplicati per oggetti elenco.  
+- Aggiunta inserimento di slicer per oggetti elenco.  
+- Ottimizzati oggetti elenco e componenti correlati.  
 
 ## Miglioramenti nella versione 23.8
 
-- Supporto per bloccare API.
-- Ottimizza proteggi API.
+- Aggiunto supporto per l'API di blocco.  
+- Ottimizzata l'API di protezione.  
 
-## Aspose.Cells Nuvola 23.7
+## Aspose.Cells Cloud 23.7
 
-- Supporto per la riparazione dei file.
-- Ottimizzare le funzioni di conversione.
+- Aggiunto supporto per la riparazione dei file.  
+- Ottimizzate le funzioni di conversione.  
 
-## Aspose.Cells Nuvola 23.6
+## Aspose.Cells Cloud 23.6
 
-- Supporto per il blocco batch di più file.
-- Supporto per lo sblocco in batch di più file.
-- Supporto per la protezione in batch di più file.
-- Supporto per la divisione in batch di più file.
-- Correggi l'API della proprietà del documento put.
+- Aggiunto blocco in batch per più file.  
+- Aggiunto sblocco in batch per più file.  
+- Aggiunta protezione in batch per più file.  
+- Aggiunta divisione in batch per più file.  
+- Risolto problema nell'API PUT delle proprietà del documento.  
 
-## Aspose.Cells Nuvola 23.5
+## Aspose.Cells Cloud 23.5
 
-- Correggi alcuni metodi scritti in modo errato.
+- Corretti nomi di metodi errati.  
 
-## Aspose.Cells Nuvola 23.4
+## Aspose.Cells Cloud 23.4
 
-- Supporta l'importazione e l'esportazione di dati XML.
+- Aggiunto supporto per importazione ed esportazione di dati XML.  
 
-## Aspose.Cells Nuvola 23.3
+## Aspose.Cells Cloud 23.3
 
-- Ottimizza le proprietà dei collegamenti ipertestuali.
+- Ottimizzate le proprietà dei collegamenti ipertestuali.  
 
-## Aspose.Cells Nuvola 23.2
+## Aspose.Cells Cloud 23.2
 
-- Ottimizzare sostituire API.
-- Ottimizza l'interfaccia utente di Swagger.
+- Ottimizzata l'API di sostituzione.  
+- Ottimizzata l'interfaccia utente Swagger UI.  
 
-## Aspose.Cells Nuvola 23.1
+## Aspose.Cells Cloud 23.1
 
-- Correggi il bug per il metodo PostCellCharacters.
+- Risolto bug nel metodo PostCellCharacters.  
+
+Per ulteriori informazioni dettagliate, consultare le note di rilascio complete per ciascuna versione o visitare il riferimento all'API Aspose.Cells Cloud.

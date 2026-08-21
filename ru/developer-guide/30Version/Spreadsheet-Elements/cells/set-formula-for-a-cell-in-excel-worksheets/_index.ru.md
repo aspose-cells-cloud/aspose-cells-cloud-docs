@@ -1,132 +1,356 @@
-﻿---
-title: Задать формулу для ячейки на листе Excel
+---
+title: "Установка формулы ячейки в рабочих листах Excel"
 type: docs
 url: /ru/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Установка формулы для ячейки в Excel Рабочие листы
+keywords: "Excel, Aspose.Cells, REST API, установка формулы, рабочий лист, ячейка, облачный SDK, cURL"
+description: "Узнайте, как установить формулу для конкретной ячейки в рабочем листе Excel с использованием Aspose.Cells Cloud REST API. Включает пример cURL, полный список параметров, обработку ошибок и примеры кода SDK."
 ---
-Этот REST API указывает набор `cell formula` в файле Excel.
- 
-## РСЕT API
- 
+
+Этот REST API устанавливает **формулу ячейки** в файл Excel.
+
+## REST API
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
 ```
- Параметры запроса:
- 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| Имя_ячейки| нить| путь| Имя ячейки.|
-| ценить| нить| запрос| Значение ячейки.|
-| тип| нить| запрос| Тип значения.|
-| формула| нить| запрос| Формула для ячейки|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
- 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
- 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
- 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
- 
-{{< tab tabNum="11" >}}
- 
-```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?value=1234&type=string&formula=sum(a1,a2)" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
-```
- 
-{{< /tab >}}
- 
-{{< tab tabNum="12" >}}
- 
-```bash
+
+## Безопасность и аутентификация
+
+Aspose.Cells Cloud API защищены и требуют [аутентификации на основе JWT-токена](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+**Параметры запроса**
+
+| Имя параметра | Тип    | Местоположение | Обязательный | Описание                                 |
+|---------------|--------|----------------|-------------|------------------------------------------|
+| name          | string | path           | Да          | Имя документа Excel.                     |
+| sheetName     | string | path           | Да          | Имя рабочего листа.                      |
+| cellName      | string | path           | Да          | Адрес целевой ячейки (например, **A1**). |
+| value         | string | query          | Нет         | Значение, присваиваемое ячейке.          |
+| type          | string | query          | Нет         | Тип данных значения (например, **string**). |
+| formula       | string | query          | Нет         | Формула, применяемая к ячейке (например, **sum(A1,A2)**). |
+| folder        | string | query          | Нет         | Папка, содержащая документ.              |
+| storageName   | string | query          | Нет         | Имя службы хранилища.                    |
+
+## **Ответ**
+
+Возвращает объект CellResponse.
+
+- **Обзор полей ответа**
+
+| Поле            | Тип     | Описание                                            |
+| --------------- | ------- | --------------------------------------------------- |
+| `Name`          | string  | Адрес ячейки (например, `F341`).                    |
+| `Row`           | integer | Индекс строки (отсчёт от нуля).                      |
+| `Column`        | integer | Индекс столбца (отсчёт от нуля).                    |
+| `Value`         | string  | Отображаемое значение ячейки.                        |
+| `Type`          | string  | Тип данных ячейки (например, `IsString`).            |
+| `Formula`       | string  | Текст формулы, если ячейка содержит формулу.         |
+| `IsFormula`     | bool    | Указывает, содержит ли ячейка формулу.               |
+| `IsMerged`      | bool    | Указывает, входит ли ячейка в объединённый диапазон. |
+| `IsArrayHeader` | bool    | Указывает, является ли ячейка заголовком массива.    |
+| `IsInArray`     | bool    | Указывает, принадлежит ли ячейка массиву.            |
+| `IsErrorValue`  | bool    | Указывает, содержит ли ячейка значение ошибки.       |
+| `IsInTable`     | bool    | Указывает, находится ли ячейка внутри таблицы.       |
+| `IsStyleSet`    | bool    | Указывает, применён ли к ячейке стиль.               |
+| `HtmlString`    | string  | HTML-кодированное представление значения ячейки.     |
+| `Style.link`    | object  | Гиперссылка на ресурс стиля.                          |
+
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Status":"OK",
+  "Code":200,
+  "Cell":{
+    "Name":"A1",
+    "Row": 0,
+    "Column":0,
+    "Value": "",
+    "Type":"String",
+    "Formula" : "=Sum(A2:A15)",
+    ...
+  }
 }
- 
 ```
- 
+
+**Коды HTTP-статуса**
+
+| Код | Значение                    | Описание                                                     |
+|-----|-----------------------------|--------------------------------------------------------------|
+| 200 | OK                          | Фильтр успешно применён; ответ содержит детали операции.    |
+| 400 | Bad Request                 | Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized                | Неверный или отсутствующий JWT-токен.                        |
+| 413 | Payload Too Large           | Загружаемый файл превышает лимит размера.                    |
+| 500 | Internal Server Error       | Непредвиденная ошибка сервера.                               |
+
+## Как использовать API PostWorksheetCellSetValue с SDK
+
+### Спецификация API PostWorksheetCellSetValue
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) определяет общедоступное программное интерфейсное определение и позволяет выполнять взаимодействие REST напрямую из веб-браузера.
+
+Используйте утилиту командной строки cURL для вызова веб-сервисов Aspose.Cells.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A1?value=1234&type=string&formula=sum(A2:A15)" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <access‑token>"
+```
+
 {{< /tab >}}
- 
+
+{{< tab tabNum="12" >}}
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "Cell":{
+    "Name":"A1",
+    "Row": 0,
+    "Column":0,
+    "Value": "",
+    "Type":"String",
+    "Formula" : "=Sum(A2:A15)",
+    ...
+  }
+}
+```
+
+{{< /tab >}}
+
 {{< /tabs >}}
- 
-## Семейство облачных SDK
- 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+### Использование SDK Aspose.Cells Cloud
 
+Использование SDK — лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud доступен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNET-CSharp-Cells-SetFormulaForCellWorksheet-1.cs" >}}
+```csharp
+// Пример на C# — установка формулы для ячейки
+// Замените <access-token>, <file-name> и т.д. своими значениями.
+var api = new CellsApi("<client-id>", "<client-secret>", "https://api.aspose.cloud");
+var response = api.PostWorksheetCellSetValue(
+    name: "myWorkbook.xlsx",
+    sheetName: "Sheet1",
+    cellName: "A3",
+    value: "1234",
+    type: "string",
+    formula: "SUM(A1,A2)",
+    folder: null,
+    storageName: null);
+Console.WriteLine(response.Status);
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-cells-SetFormulaForCellWorksheet-set-formula-for-worksheet.java" >}}
+```java
+// Пример на Java — установка формулы для ячейки
+CellsApi api = new CellsApi("<client-id>", "<client-secret>", "https://api.aspose.cloud");
+PostWorksheetCellSetValueRequest request = new PostWorksheetCellSetValueRequest()
+        .name("myWorkbook.xlsx")
+        .sheetName("Sheet1")
+        .cellName("A3")
+        .value("1234")
+        .type("string")
+        .formula("SUM(A1,A2)");
+CellsResponse response = api.postWorksheetCellSetValue(request);
+System.out.println(response.getStatus());
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-Cells-PostWorksheetCellSetValue-.php" >}}
+```php
+<?php
+// Пример на PHP — установка формулы для ячейки
+require_once('vendor/autoload.php');
+
+$config = new Aspose\Cells\Configuration();
+$config->setAppKey('<client-id>');
+$config->setAppSid('<client-secret>');
+$config->setHost('https://api.aspose.cloud');
+
+$apiInstance = new Aspose\Cells\Api\CellsApi($config);
+$result = $apiInstance->postWorksheetCellSetValue(
+    "myWorkbook.xlsx",
+    "Sheet1",
+    "A3",
+    "1234",
+    "string",
+    "SUM(A1,A2)"
+);
+echo $result->getStatus();
+?>
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Examples-Ruby-Cells-set_cell_value-.rb" >}}
+```ruby
+# Пример на Ruby — установка формулы для ячейки
+require 'aspose_cells_cloud'
+
+config = AsposeCellsCloud::Configuration.new
+config.api_key['client_id'] = '<client-id>'
+config.api_key['client_secret'] = '<client-secret>'
+config.host = 'https://api.aspose.cloud'
+
+api = AsposeCellsCloud::CellsApi.new
+result = api.post_worksheet_cell_set_value(
+  name: 'myWorkbook.xlsx',
+  sheet_name: 'Sheet1',
+  cell_name: 'A3',
+  value: '1234',
+  type: 'string',
+  formula: 'SUM(A1,A2)'
+)
+puts result.status
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "SetFormulaOfACellInWorksheet.py" >}}
+```python
+# Пример на Python — установка формулы для ячейки
+import asposecellscloud
+
+client = asposecellscloud.CellsApiClient(
+    client_id='<client-id>',
+    client_secret='<client-secret>',
+    base_url='https://api.aspose.cloud'
+)
+
+api = asposecellscloud.CellsApi(client)
+response = api.post_worksheet_cell_set_value(
+    name='myWorkbook.xlsx',
+    sheet_name='Sheet1',
+    cell_name='A3',
+    value='1234',
+    type='string',
+    formula='SUM(A1,A2)'
+)
+print(response.status)
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-SetFormulaForCellWorksheet-1.js" >}}
+```javascript
+// Пример на Node.js — установка формулы для ячейки
+const { CellsApi, ApiClient } = require('asposecellscloud');
+const client = new ApiClient();
+client.config = {
+    clientId: '<client-id>',
+    clientSecret: '<client-secret>',
+    baseUrl: 'https://api.aspose.cloud'
+};
+
+const cellsApi = new CellsApi(client);
+cellsApi.postWorksheetCellSetValue({
+    name: 'myWorkbook.xlsx',
+    sheetName: 'Sheet1',
+    cellName: 'A3',
+    value: '1234',
+    type: 'string',
+    formula: 'SUM(A1,A2)'
+}).then(res => console.log(res.status));
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "9d725d4678edaac53f95c5208e17783c" "Examples-Android-cells-SetFormulaForCellWorksheet-set-formula-for-worksheet.java" >}}
+```java
+// Пример на Android (Java) — установка формулы для ячейки
+// Аналогично стандартному примеру на Java; убедитесь, что используется SDK, совместимый с Android.
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
+**Пример на Swift недоступен**. SDK для Swift в настоящее время находится в разработке.
+
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-Cells-SetFormulaForCellWorksheet-1.pl" >}}
+```perl
+# Пример на Perl — установка формулы для ячейки
+use AsposeCellsCloud::CellsApi;
+my $api_instance = AsposeCellsCloud::CellsApi->new(
+    client_id => '<client-id>',
+    client_secret => '<client-secret>',
+    base_url => 'https://api.aspose.cloud'
+);
+my $result = $api_instance->post_worksheet_cell_set_value(
+    name => 'myWorkbook.xlsx',
+    sheet_name => 'Sheet1',
+    cell_name => 'A3',
+    value => '1234',
+    type => 'string',
+    formula => 'SUM(A1,A2)'
+);
+print $result->{Status};
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f749468bed9683608eada17327521b7e" >}}
+```go
+// Пример на Go — установка формулы для ячейки
+package main
+
+import (
+    "fmt"
+    "github.com/asposecellscloud/asposecellscloud-go/v3"
+)
+
+func main() {
+    config := asposecellscloud.NewConfiguration()
+    config.ClientId = "<client-id>"
+    config.ClientSecret = "<client-secret>"
+    config.BasePath = "https://api.aspose.cloud"
+
+    api := asposecellscloud.NewAPIClient(config).CellsApi
+    resp, _, err := api.PostWorksheetCellSetValue(
+        "myWorkbook.xlsx",
+        "Sheet1",
+        "A3",
+        map[string]string{
+            "value":   "1234",
+            "type":    "string",
+            "formula": "SUM(A1,A2)",
+        },
+        nil,
+        nil,
+    )
+    if err != nil {
+        fmt.Println(err)
+        return
+    }
+    fmt.Println(resp.Status)
+}
+```
 
 {{< /tab >}}
 

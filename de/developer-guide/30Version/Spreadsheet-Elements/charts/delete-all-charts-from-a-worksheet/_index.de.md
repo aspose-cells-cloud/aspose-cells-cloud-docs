@@ -1,72 +1,140 @@
-﻿---
-title: Löschen aller Diagramme aus einem Arbeitsblatt
+---
+title: "Alle Diagramme aus einem Arbeitsblatt löschen"
 type: docs
-url: /de/charts/clear/
+url: /charts/clear/
 aliases: [/delete-all-charts-from-a-worksheet/]
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Alle Diagramme aus einem Arbeitsblatt löschen
+keywords: "Aspose.Cells, Cloud, löschen, alle Diagramme, Arbeitsblatt, REST API, DELETE, SDK"
+description: "Erfahren Sie, wie Sie alle Diagramme in einem Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API (v3.0) löschen. Enthält Endpunkt, Parameter, cURL-Beispiel, SDK-Code-Snippets, Authentifizierungsschritte und Fehlerbehandlung."
+ArticleTitle: "Alle Diagramme aus einem Arbeitsblatt mit der Aspose.Cells Cloud API löschen"
 ---
-Dieser REST API zeigt klare Diagramme an.
- 
-## RSET API
- 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
- 
+
+Diese REST API löscht alle Diagramme aus dem angegebenen Arbeitsblatt.
+
+**Hintergrund** – Das Entfernen aller Diagramme aus einem Arbeitsblatt ist nützlich, wenn Sie das visuelle Layout einer Tabelle zurücksetzen, veraltete Visualisierungen ersetzen oder eine Arbeitsmappe für die erneute Verwendung vorbereiten möchten, ohne vorherige Diagrammdaten beizubehalten.
+
+Vor dem Aufrufen der API stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+
+- Ein gültiges JWT-Token steht für die Authentifizierung zur Verfügung.  
+- Die Arbeitsmappendatei existiert am angegebenen Speicherort und im angegebenen Ordner.  
+- Sie verwenden API-Version **v3.0**.
+
+## DeleteWorksheetClearCharts API
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ```
- Die Anforderungsparameter sind:
- 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
-|:- |:- |:- |:- |
-| Name| Schnur| Weg| Name der Arbeitsmappe.|
-| Blattname| Schnur| Weg| Der Arbeitsblattname.|
-| Ordner| Schnur| Abfrage| Der Arbeitsmappenordner.|
-| Speichername| Schnur| Abfrage| Speichername.|
- 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetClearCharts) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
- 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
- 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+### **Sicherheit und Authentifizierung**
+
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
+
+### Anforderungsparameter
+
+| Parametername   | Typ    | Ort   | Beschreibung                                |
+| --------------- | ------ | ----- | ------------------------------------------- |
+| name            | string | path  | Name der Arbeitsmappendatei.                |
+| sheetName       | string | path  | Name des Arbeitsblatts.                     |
+| folder          | string | query | Ordner, in dem die Arbeitsmappe gespeichert ist. |
+| storageName     | string | query | Name des Speichers.                         |
+
+**Anforderungsheader**
+
+| Header        | Beschreibung                     |
+|---------------|----------------------------------|
+| Authorization | Bearer `<jwt token>`             |
+| Accept        | `application/json`               |
+| Content-Type  | `application/json` (kein Body)   |
+
+**Anforderungstext**
+
+Der DELETE-Vorgang erfordert **keinen** Anforderungstext.
+
+**Antwort**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                   | Beschreibung                                               |
+|------|-----------------------------|------------------------------------------------------------|
+| 200  | OK                          | Filter erfolgreich angewendet; Antwort enthält Vorgangsdetails. |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized                | Ungültiges oder fehlendes JWT-Token. |
+| 413  | Payload Too Large           | Die hochgeladene Datei überschreitet die maximale Größe. |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler. |
+
+*Beispiel für Fehlerantworten*
+
+```json
+// 400 Bad Request
+{
+    "Code": 400,
+    "Message": "Ungültiger Parameter: 'sheetName' ist erforderlich."
+}
+
+// 401 Unauthorized
+{
+    "Code": 401,
+    "Message": "Authentifizierung fehlgeschlagen. Ungültiges JWT-Token."
+}
+
+// 413 Payload Too Large
+{
+    "Code": 413,
+    "Message": "Die Anforderungsnutzlast überschreitet die maximal zulässige Größe."
+}
+
+// 500 Internal Server Error
+{
+    "Code": 500,
+    "Message": "Auf dem Server ist ein unerwarteter Fehler aufgetreten."
+}
+```
+
+## Verwendung der DeleteWorksheetClearCharts API mit SDKs
+
+### DeleteWorksheetClearCharts API-Spezifikation
+
+Die [OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetClearCharts) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
+
+Sie können das cURL-Befehlszeilentool verwenden, um Aspose.Cells-Webdienste einfach aufzurufen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an die Cloud API durchführen.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Anforderung" tabName12="Antwort" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/charts" 
--X DELETE 
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/charts" \
+-X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
 ```
 
+
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+### Verwendung von Aspose.Cells Cloud SDKs
 
-{{< /tabs >}}
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklungszeit zu verkürzen, wenn Sie **alle Diagramme** aus einem Arbeitsblatt löschen müssen. Ein SDK übernimmt die Details auf niedriger Ebene und lässt Sie sich auf Ihre Projekt Aufgaben konzentrieren. Weitere Informationen finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-## Cloud SDK-Familie
- 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
- 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
- 
+Die folgenden Codebeispiele zeigen, wie Aufrufe an Aspose.Cells-Webdienste mit verschiedenen SDKs durchgeführt werden:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -128,3 +196,4 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+---

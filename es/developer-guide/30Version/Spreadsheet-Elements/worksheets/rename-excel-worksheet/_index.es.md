@@ -1,74 +1,70 @@
-﻿---
-title: Excel cambio de nombre de la hoja de trabajo
-second_title: Documen
-linktitle: Cambiar nombre
-type: docs
-url: /es/worksheets/rename/
-aliases: [/rename-excel-worksheet/]
-keywords: Rename an Excel worksheet name to new name on an Excel workbook
-description: Aspose.Cells Cloud REST API permite cambiar el nombre de una hoja de cálculo Excel a un nuevo nombre en un libro Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Excel cambio de nombre de hoja de cálculo
 ---
-Este REST API indica `worksheet rename`
- 
-## RSET API
- 
+title: "Renombrar hoja de cálculo de Excel"
+second_title: "Document"
+linktype: "Rename"
+type: docs
+url: /worksheets/rename/
+aliases: [/rename-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, renombrar hoja de cálculo de Excel, API REST, SDK de hojas de cálculo, renombrar hoja de cálculo, almacenamiento en la nube"
+description: "Renombrar una hoja de cálculo en un libro de Excel utilizando la API REST de Aspose.Cells Cloud. Los SDK están disponibles para Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby y Swift."
+weight: 20
+---
+
+Esta API REST renombra una hoja de cálculo de Excel.
+
+## API REST
+
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/rename
- 
 ```
- Los parámetros de la solicitud son:
- 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino||
-| nombreHoja| cadena| camino||
-| nuevo nombre| cadena| consulta||
-| carpeta| cadena| consulta||
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
- 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostRenameWorksheet) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
- 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Parámetros de la solicitud**
+
+| Nombre del parámetro | Tipo   | Ubicación | Descripción                                       |
+| -------------------- | ------ | --------- | ------------------------------------------------- |
+| name                 | string | path      | El nombre del archivo de Excel.                   |
+| sheetName            | string | path      | El nombre actual de la hoja de cálculo que se va a renombrar. |
+| newname              | string | query     | El nuevo nombre para la hoja de cálculo.          |
+| folder               | string | query     | Ruta de carpeta en el almacenamiento (opcional).  |
+| storageName          | string | query     | Nombre del almacenamiento (opcional).             |
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostRenameWorksheet) define una interfaz de programación accesible públicamente y permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la API en la nube con cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/rename?newname=newSheet" \
+curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/rename?newname=newSheet" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Familia de SDK en la nube
- 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
- 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
- 
+
+Utilizar un SDK es la mejor forma de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel para que usted pueda centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells utilizando diversos SDK:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

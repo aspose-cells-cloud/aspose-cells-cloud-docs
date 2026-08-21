@@ -1,102 +1,75 @@
-﻿---
-title: Obtener hoja de trabajo
-second_title: Documen
-linktitle: Alabama
-type: docs
-url: /es/worksheets/get-all/
-aliases: [/get-worksheet-count/]
-keywords: Get worksheets description from an Excel workbook
-description: Aspose.Cells Cloud REST API permite obtener la descripción de hojas de cálculo de un libro Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
-weight: 10
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Obtener hojas de trabajo
 ---
-Este REST API indica `get worksheets information`.
+title: "Obtener todas las hojas de cálculo"
+second_title: "Documento"
+linktitle: "Todas"
+type: docs
+url: /worksheets/get-all/
+aliases: [/get-worksheet-count/]
+keywords: "Aspose.Cells, API en la nube, Obtener hojas de cálculo, Excel, REST, SDK"
+description: "Recuperar la lista de hojas de cálculo en un libro de Excel mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye ejemplo de cURL, fragmentos de SDK y formato de respuesta."
+weight: 10
+---
 
-## RSET API
+Esta API REST devuelve información sobre las hojas de cálculo contenidas en un libro.
+
+## API REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 ```
 
-Los parámetros de la solicitud son:
+### **Parámetros de solicitud**
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del documento.|
-| carpeta| cadena| consulta| Carpeta de documentos.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción                              |
+| --------------------- | ------ | --------- | ---------------------------------------- |
+| name                  | string | path      | El nombre del documento de Excel.        |
+| folder                | string | query     | La carpeta que contiene el documento.    |
+| storageName           | string | query     | El nombre del almacenamiento a utilizar. |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+Puede utilizar la herramienta de línea de comandos cURL para acceder a los servicios de Aspose.Cells Cloud. El ejemplo siguiente muestra una solicitud GET para recuperar las hojas de cálculo.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Worksheets": {
-
     "WorksheetList": [
-
       {
-
         "link": {
-
           "Href": "/Sheet1",
-
           "Rel": "self"
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/Sheet2",
-
           "Rel": "self"
-
         }
-
       }
-
     ],
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets",
       "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
 ```
 
@@ -104,11 +77,31 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
 
 {{< /tabs >}}
 
+## Manejo de errores
+
+Códigos de estado HTTP típicos devueltos por este endpoint:
+
+| Código | Significado            | Descripción                               |
+| ------ | ---------------------- | ----------------------------------------- |
+| 400    | Solicitud incorrecta   | Falta un parámetro obligatorio (p. ej., `name`). |
+| 401    | No autorizado          | Token JWT inválido o ausente.             |
+| 404    | No encontrado          | El libro especificado no existe.          |
+| 500    | Error interno del servidor | Condición inesperada en el servidor.   |
+
+Las respuestas de error se devuelven en formato JSON, por ejemplo:
+
+```json
+{
+  "Code": "401",
+  "Message": "Token de acceso inválido."
+}
+```
+
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+Utilizar un SDK es la mejor manera de acelerar el desarrollo. Un SDK gestiona los detalles de bajo nivel para que usted pueda centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para ver una lista completa de los SDK de Aspose.Cells Cloud.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código muestran cómo llamar a los servicios web de Aspose.Cells utilizando diversos SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

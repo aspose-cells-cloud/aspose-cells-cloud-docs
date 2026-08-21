@@ -1,102 +1,75 @@
-﻿---
-title: احصل على ورقة العمل
-second_title: Documen
-linktitle: ال
-type: docs
-url: /ar/worksheets/get-all/
-aliases: [/get-worksheet-count/]
-keywords: Get worksheets description from an Excel workbook
-description: يدعم Cloud REST Aspose.Cells الحصول على وصف أوراق العمل من مصنف Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 10
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على أوراق العمل
 ---
-يشير هذا REST API إلى `get worksheets information`.
+title: "الحصول على جميع أوراق العمل"
+second_title: "Document"
+linktitle: "الكل"
+type: docs
+url: /worksheets/get-all/
+aliases: [/get-worksheet-count/]
+keywords: "Aspose.Cells، واجهة Cloud API، الحصول على أوراق العمل، Excel، REST، SDK"
+description: "استرجاع قائمة أوراق العمل الموجودة في ملف Excel عبر واجهة Aspose.Cells Cloud REST API (النسخة 3.0). يشمل مثالًا باستخدام cURL، وأجزاء من الشيفرة البرمجية باستخدام SDKs، وتنسيق الاستجابة."
+weight: 10
+---
 
-## RSET API
+تقدم هذه الواجهة (REST API) معلومات حول أوراق العمل الموجودة داخل ملف جدول بيانات.
+
+## واجهة REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 ```
 
-معلمات الطلب هي:
+### **معطيات الطلب**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعطى | النوع | الموقع | الوصف |
+|-----------|-------|--------|--------|
+| name | string | path | اسم ملف Excel. |
+| folder | string | query | المجلد الذي يحتوي على الملف. |
+| storageName | string | query | اسم وحدة التخزين المراد استخدامها. |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) واجهة برمجية قابلة للوصول العام، وتتيح لك إجراء تفاعلات REST مباشرة من خلال متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells Cloud. يُظهر المثال التالي طلب GET لاسترجاع أوراق العمل.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Worksheets": {
-
     "WorksheetList": [
-
       {
-
         "link": {
-
           "Href": "/Sheet1",
-
           "Rel": "self"
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/Sheet2",
-
           "Rel": "self"
-
         }
-
       }
-
     ],
-
     "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets",
-
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets",
       "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
 ```
 
@@ -104,11 +77,31 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+## معالجة الأخطاء
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+الأكواد الشائعة لحالات الحالة HTTP التي تُرجعها هذه الواجهة:
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+| الكود | المعنى | الوصف |
+|------|--------|-------|
+| 400 | Bad Request (طلب غير صالح) | معطى مطلوب مفقود (مثل `name`). |
+| 401 | Unauthorized (غير مصرّح) | رمز JWT غير صالح أو مفقود. |
+| 404 | Not Found (غير موجود) | ملف العمل المحدد غير موجود. |
+| 500 | Internal Server Error (خطأ داخلي في الخادم) | حالة غير متوقعة في الخادم. |
+
+تُعاد استجابات الأخطاء بصيغة JSON، مثال:
+
+```json
+{
+  "Code": "401",
+  "Message": "Invalid access token."
+}
+```
+
+## مجموعة أدوات SDK للسحابة
+
+استخدام SDK يُعدّ أفضل طريقة لتسريع عملية التطوير، حيث تُعالج SDKs التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مهام مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على القائمة الكاملة لـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الشيفرة البرمجية التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

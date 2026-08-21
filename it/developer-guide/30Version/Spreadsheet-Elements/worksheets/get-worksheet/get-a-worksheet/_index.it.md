@@ -1,79 +1,119 @@
-﻿---
-title: Ottieni il foglio di lavoro da un foglio di lavoro Excel
-second_title: Documen
-linktitle: Foglio di lavoro
+---
+title: "Esporta un foglio di calcolo con l'API Aspose.Cells Cloud – Formati, esempi cURL e SDK"
+second_title: "Documento"
+linktitle: "Esportazione foglio di calcolo"
 type: docs
 url: /it/worksheets/get-worksheet/
-keywords: Get worksheet to different format from an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'acquisizione di fogli di lavoro in formati diversi da un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+keywords: "Aspose.Cells Cloud Get Worksheet, esportazione foglio di calcolo, API Excel, REST, CSV, PDF, PNG, JPEG, GIF, BMP, TIFF, EMF, XPS, OTS, XLS, XLSX, XLSB, XLSM, ODS, FODS, Numbers, API cloud"
+description: "Scopri come esportare un singolo foglio di calcolo da un file Excel utilizzando l'API REST Aspose.Cells Cloud. Include endpoint, parametri, un esempio cURL corretto, dettagli sull'autenticazione, gestione degli errori e frammenti di codice SDK per C#, Java, Python e altro ancora."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ottieni un foglio di lavoro da un foglio di lavoro Excel
+ArticleTitle: "Esporta un foglio di calcolo con l'API Aspose.Cells Cloud – Formati, esempi cURL e SDK"
 ---
-Questo REST API indica `get worksheet description` o `export worksheet to kinds of format file`.
 
- È possibile esportare i formati:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMERI](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+Questa API REST consente di **esportare un foglio di calcolo** da un file Excel in molti formati diversi.
 
-## RSET API
+**Riepilogo** – Utilizza l'endpoint **Get Worksheet** per scaricare un singolo foglio di calcolo da un libro nel formato desiderato.
+
+Puoi esportare nei seguenti formati:
+
+| Formato | Estensione | Tipo MIME                                                       |
+| ------- | ---------- | --------------------------------------------------------------- |
+| XLS     | .xls       | application/vnd.ms-excel                                        |
+| XLSX    | .xlsx      | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet |
+| XLSB    | .xlsb      | application/vnd.ms-excel.sheet.binary.macroEnabled.12           |
+| CSV     | .csv       | text/csv                                                        |
+| TSV     | .tsv       | text/tab-separated-values                                       |
+| XLSM    | .xlsm      | application/vnd.ms-excel.sheet.macroEnabled.12                  |
+| ODS     | .ods       | application/vnd.oasis.opendocument.spreadsheet                  |
+| TXT     | .txt       | text/plain                                                      |
+| PDF     | .pdf       | application/pdf                                                 |
+| OTS     | .ots       | application/vnd.oasis.opendocument.spreadsheet-template         |
+| XPS     | .xps       | application/vnd.ms-xpsdocument                                  |
+| DIF     | .dif       | application/x-dif                                               |
+| PNG     | .png       | image/png                                                       |
+| JPEG    | .jpeg      | image/jpeg                                                      |
+| GIF     | .gif       | image/gif                                                       |
+| BMP     | .bmp       | image/bmp                                                       |
+| WMF     | .wmf       | image/wmf                                                       |
+| TIFF    | .tiff      | image/tiff                                                      |
+| EMF     | .emf       | image/emf                                                       |
+| NUMBERS | .numbers   | application/vnd.apple.numbers                                   |
+| FODS    | .fods      | application/vnd.oasis.opendocument.spreadsheet-flat-xml         |
+
+## Sicurezza e autenticazione
+Le API Aspose.Cells Cloud sono sicure e richiedono [autenticazione basata su token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
-I parametri della richiesta sono:
+### **Parametri della richiesta**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome del documento.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| formato| corda| domanda|Formato del file esportato.|
-| risoluzione verticale| intero| domanda| Imposta la risoluzione verticale delle immagini generate, in punti per pollice.|
-| risoluzione orizzontale| intero| domanda| Imposta la risoluzione orizzontale per le immagini generate, in punti per pollice.|
-| zona| corda| domanda| Area esportata.|
-| indice della pagina| intero| domanda| Indice della pagina esportato.|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+| Nome parametro           | Tipo    | Posizione | Descrizione                                                           |
+| ------------------------ | ------- | --------- | --------------------------------------------------------------------- |
+| **name**                 | string  | path      | **Obbligatorio.** Nome del file Excel.                                |
+| **sheetName**            | string  | path      | **Obbligatorio.** Nome del foglio di calcolo da esportare.           |
+| **format**               | string  | query     | Formato di destinazione per il foglio di calcolo esportato (es. `pdf`, `png`). |
+| **verticalResolution**   | integer | query     | Risoluzione DPI per i formati che lo supportano (es. PNG, JPEG).      |
+| **horizontalResolution** | integer | query     | Risoluzione DPI per i formati che lo supportano.                      |
+| **area**                 | string  | query     | Intervallo di celle da esportare (es. `A1:D10`).                      |
+| **pageIndex**            | integer | query     | Indice della pagina da esportare quando il foglio di calcolo è paginato. |
+| **folder**               | string  | query     | Percorso della cartella nello storage in cui si trova il file sorgente. |
+| **storageName**          | string  | query     | Nome dello storage Aspose Cloud.                                      |
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+La <a href="https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet" target="_blank" rel="noopener noreferrer">Specifiche OpenAPI</a> definiscono un'interfaccia di programmazione pubblicamente accessibile e consentono di effettuare direttamente interazioni REST da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come chiamare l'API Cloud con cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=gif" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=gif" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```http
+HTTP/1.1 200 OK
+Content-Type: image/gif
+Content-Disposition: attachment; filename="Sheet1.gif"
 
-{
-stream
-} 
-
+<dati binari>
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+## Gestione degli errori
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'API restituisce i codici di stato HTTP standard. Le risposte comuni includono:
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+| Codice di stato | Significato                                                     | Esempio di corpo JSON                          |
+| --------------- | --------------------------------------------------------------- | ---------------------------------------------- |
+| **200**         | Successo – il flusso del foglio di calcolo viene restituito.   | `{ "stream": "..." }`                          |
+| **400**         | Richiesta non valida – parametri mancanti o non validi.        | `{ "error": "Parametro format non valido." }` |
+| **401**         | Non autorizzato – token JWT non valido o mancante.             | `{ "error": "Autenticazione non riuscita." }` |
+| **404**         | Non trovato – il file o il foglio di calcolo specificato non esiste. | `{ "error": "Foglio di calcolo non trovato." }` |
+| **500**         | Errore interno del server – condizione imprevista sul server.  | `{ "error": "Errore imprevisto." }`           |
+
+Gestisci queste risposte nel tuo codice client per fornire feedback appropriati agli utenti.
+
+## Famiglia di SDK cloud
+
+Utilizzare un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Consulta il <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">repository GitHub</a> per un elenco completo degli SDK Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come effettuare chiamate ai servizi web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

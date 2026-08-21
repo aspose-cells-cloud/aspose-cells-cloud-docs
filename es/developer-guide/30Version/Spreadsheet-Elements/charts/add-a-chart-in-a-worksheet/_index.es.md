@@ -1,87 +1,116 @@
-﻿---
-title: Agregar un gráfico en una hoja de trabajo
+---
+title: "Agregar un gráfico a una hoja de cálculo"
 type: docs
-url: /es/charts/add/
+url: /charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Agregar un gráfico en una hoja de cálculo
+description: "Aprenda cómo agregar un gráfico a una hoja de cálculo de Excel mediante la API de Aspose.Cells Cloud v3.0. Incluye el punto de conexión, parámetros, ejemplo de cURL y fragmentos de SDK."
+keywords:
+  - "agregar gráfico Aspose.Cells"
+  - "API de Aspose.Cells para agregar gráfico"
+  - "API REST de gráficos"
+  - "ejemplos de SDK de Aspose.Cells"
+ArticleTitle: "Agregar un gráfico a una hoja de cálculo – Guía de la API de Aspose.Cells Cloud"
 ---
-Este REST API indica agregar un nuevo gráfico a la hoja de trabajo.
- 
-## RSET API
- 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
- 
+
+Esta API REST agrega un nuevo gráfico a una hoja de cálculo.
+
+**Prerrequisitos**  
+Antes de llamar a esta operación, obtenga un token de acceso JWT válido y asegúrese de que el libro de trabajo objetivo esté almacenado en la carpeta o ubicación de almacenamiento especificada.
+
+## API PutWorksheetAddChart
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ```
- Los parámetros de la solicitud son:
- 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del libro de trabajo.|
-| nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| tipo de gráfico| cadena| consulta| Tipo de gráfico, consulte la propiedad Tipo en el recurso de gráfico.|
-| fila superior izquierda| entero| consulta|0 |
-| columna superior izquierda| entero| consulta|0 |
-| fila inferior derecha| entero| consulta|0 |
-| columna inferior derecha| entero| consulta|0 |
-| área| cadena| consulta| Especifica valores a partir de los cuales se trazará la serie de datos.|
-| esVertical| booleano| consulta| Verdadero|
-| categoríaDatos| cadena| consulta|Obtiene o establece el rango de valores del eje de categorías. Puede ser un rango de celdas (por ejemplo, "d1:e10").|
-| esAutoGetSerialName| booleano| consulta| Verdadero|
-| título| cadena| consulta| Especifica el nombre del título del gráfico.|
-| carpeta| cadena| consulta| La carpeta del libro de trabajo.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
-| etiquetas de datos| booleano| consulta| Verdadero|
-| Posición de etiquetas de datos| cadena| consulta| Arriba|
-| Hoja de tabla dinámica| cadena| consulta||
-| nombreDeTablaPivotante| cadena| consulta||
- 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
- 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
+### **Seguridad y autenticación**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Las API de Aspose.Cells Cloud son seguras y requieren <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticación mediante token JWT</a>.
+
+### Parámetros de solicitud
+
+| Nombre del parámetro      | Tipo    | Ubicación | Descripción                                                                                                                                                                              |
+| ------------------------- | ------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**                  | string  | path      | Nombre del libro de trabajo.                                                                                                                                                           |
+| **sheetName**             | string  | path      | Nombre de la hoja de cálculo.                                                                                                                                                          |
+| **chartType**             | string  | query     | Tipo de gráfico (consulte la propiedad **Type** en el recurso de gráfico). Los tipos de gráfico admitidos incluyen **Bar**, **Column**, **Line**, **Pie**, **Scatter**, **Area**, **Doughnut**, **Radar**, etc. |
+| **upperLeftRow**          | integer | query     | Índice de fila superior izquierda del área del gráfico (basado en 0).                                                                                                                   |
+| **upperLeftColumn**       | integer | query     | Índice de columna superior izquierda del área del gráfico (basado en 0).                                                                                                                |
+| **lowerRightRow**         | integer | query     | Índice de fila inferior derecha del área del gráfico (basado en 0).                                                                                                                     |
+| **lowerRightColumn**      | integer | query     | Índice de columna inferior derecha del área del gráfico (basado en 0).                                                                                                                  |
+| **area**                  | string  | query     | Rango que proporciona los valores a representar (por ejemplo, `A1:B5`).                                                                                                                 |
+| **isVertical**            | boolean | query     | Indica si la orientación del gráfico es vertical.                                                                                                                                       |
+| **categoryData**          | string  | query     | Rango de valores del eje de categorías (por ejemplo, `D1:E10`).                                                                                                                         |
+| **isAutoGetSerialName**   | boolean | query     | Si es **true**, los nombres de las series se generan automáticamente.                                                                                                                  |
+| **title**                 | string  | query     | Título del gráfico.                                                                                                                                                                     |
+| **folder**                | string  | query     | Carpeta que contiene el libro de trabajo.                                                                                                                                              |
+| **storageName**           | string  | query     | Nombre del almacenamiento.                                                                                                                                                             |
+| **dataLabels**            | boolean | query     | Mostrar etiquetas de datos si es **true**.                                                                                                                                              |
+| **dataLabelsPosition**    | string  | query     | Posición de las etiquetas de datos (por ejemplo, `Above`).                                                                                                                              |
+| **pivotTableSheet**       | string  | query     | Nombre de la hoja que contiene la tabla dinámica.                                                                                                                                      |
+| **pivotTableName**        | string  | query     | Nombre de la tabla dinámica.                                                                                                                                                           |
+
+### **Respuesta**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Códigos de estado HTTP**
+
+| Código | Significado                 | Descripción                                                                 |
+|--------|-----------------------------|-----------------------------------------------------------------------------|
+| 200    | OK                          | Filtro aplicado correctamente; la respuesta contiene detalles de la operación. |
+| 400    | Bad Request                 | Parámetros faltantes o inválidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | Unauthorized                | Token JWT inválido o faltante.                                               |
+| 413    | Payload Too Large           | El archivo cargado excede el límite de tamaño.                              |
+| 500    | Internal Server Error       | Error inesperado del servidor.                                              |
+
+## Cómo usar la API PutWorksheetAddChart con SDK
+
+### Especificación de la API PutWorksheetAddChart
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) define una interfaz de programación accesible públicamente y le permite realizar interacciones REST directamente desde un navegador web.
+
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo realizar una llamada a la API en la nube mediante cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl  -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/charts?chartType=Bar&area=B1:F2&title=SalesState" 
--X PUT
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/charts?chartType=Bar&area=B1:F2&title=SalesState" \
+-X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
+# No se requiere cuerpo de solicitud para esta operación
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Familia de SDK en la nube
- 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
- 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+### Utilizar los SDK de Aspose.Cells Cloud
+
+Usar un SDK es la mejor forma de acelerar el desarrollo. Un SDK abstracta los detalles de bajo nivel y le permite centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo realizar llamadas a los servicios web de Aspose.Cells mediante diversos SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Perl" tabName9="Android" tabName10="Go" >}}
 

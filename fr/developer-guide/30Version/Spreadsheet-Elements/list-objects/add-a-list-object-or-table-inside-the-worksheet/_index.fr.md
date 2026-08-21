@@ -1,79 +1,113 @@
-﻿---
-title: Ajouter un objet de liste dans une feuille de calcul Excel
-second_title: Documen
-linktitle: Annonce
+---
+title: "Ajouter un objet liste (tableau) à une feuille de calcul Excel"
+second_title: "Document"
+linktitle: "Ajouter"
 type: docs
 url: /fr/list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
-keywords: Add a list object(table) into an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge l'ajout d'un objet liste (table) dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+keywords: "Aspose.Cells Cloud, API Excel, objet liste, tableau, API REST, feuille de calcul"
+description: "Découvrez comment ajouter un objet liste (tableau Excel) à une feuille de calcul à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’endpoint, les paramètres, les étapes d’authentification, un exemple cURL et des exemples de code SDK."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Ajouter un objet de liste dans une feuille de calcul Excel
+ArticleTitle: "Ajouter un objet liste (tableau) à une feuille de calcul Excel – Documentation Aspose.Cells Cloud"
 ---
-Ce REST API indique `add a list object(table)` dans une feuille de calcul Excel.
 
-## RSET API
+Cette API REST ajoute un **objet liste (tableau)** à une feuille de calcul Excel.
+
+Avant d'utiliser cet endpoint, assurez-vous d'avoir un jeton JWT valide, que le classeur soit stocké dans un stockage cloud pris en charge et que la feuille de calcul existe.
+
+## API REST
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 ```
 
-Les paramètres de la requête sont :
+### Paramètres de la requête
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| startRow| entier| requête| La ligne de départ de la plage de liste.|
-| colonne de démarrage| entier| requête| La ligne de départ de la plage de liste.|
-| fin de ligne| entier| requête| La ligne de départ de la plage de liste.|
-| fin de colonne| entier| requête| La ligne de départ de la plage de liste.|
-| a des en-têtes| booléen| requête| Vrai|
-| objet de liste|| corps| Liste d'objets|
-| dossier| chaîne| requête| Dossier du document.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type    | Emplacement | Description                                                           |
+| ---------------- | ------- | ----------- | --------------------------------------------------------------------- |
+| **name**         | string  | path        | Nom du fichier du classeur.                                           |
+| **sheetName**    | string  | path        | Nom de la feuille de calcul.                                          |
+| **startRow**     | integer | query       | Index de base zéro de la première ligne de la plage de table.        |
+| **startColumn**  | integer | query       | Index de base zéro de la première colonne de la plage de table.      |
+| **endRow**       | integer | query       | Index de base zéro de la dernière ligne de la plage de table.        |
+| **endColumn**    | integer | query       | Index de base zéro de la dernière colonne de la plage de table.      |
+| **hasHeaders**   | boolean | query       | `true` si la première ligne contient des en-têtes de colonne ; sinon `false`. |
+| **listObject**   | object  | body        | Définition de l'objet liste (voir **Schéma du corps de la requête**). |
+| **folder**       | string  | query       | Dossier contenant le classeur.                                        |
+| **storageName**  | string  | query       | Nom du stockage.                                                      |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Schéma du corps de la requête
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+L'objet **listObject** décrit le tableau qui sera créé. Seules les propriétés les plus courantes sont affichées ; reportez-vous à la spécification OpenAPI pour la liste complète.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "displayName": "MonTableau",
+  "showTotals": false,
+  "style": "TableStyleMedium2"
 }
- 
 ```
 
-{{< /tab >}}
+### Exemple de requête (cURL)
 
-{{< /tabs >}}
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>" \
+  -d '{
+        "displayName": "MonTableau",
+        "showTotals": false,
+        "style": "TableStyleMedium2"
+      }'
+```
+
+### Exemple de réponse
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+### Codes d’erreur
+
+| Statut HTTP | Raison             | Description                                                |
+| ----------- | ------------------ | ---------------------------------------------------------- |
+| **400**     | Demande incorrecte | Paramètres de plage invalides ou corps JSON mal formé.    |
+| **401**     | Non autorisé       | Jeton JWT manquant ou expiré.                              |
+| **404**     | Non trouvé         | Le classeur ou la feuille de calcul spécifié(s) n'existent pas. |
+| **500**     | Erreur interne du serveur | Échec inattendu côté serveur.                          |
+
+**Exemple de réponse 400**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Paramètres de plage invalides."
+}
+```
+
+**Exemple de réponse 401**
+
+```json
+{
+  "Code": 401,
+  "Status": "Unauthorized",
+  "Message": "Le jeton d'authentification est manquant ou expiré."
+}
+```
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) fournit le contrat complet pour cette opération.
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L'utilisation d'un SDK est le moyen optimal d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -126,3 +160,4 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< /tabs >}}
+---

@@ -1,81 +1,84 @@
-﻿---
-title: 广告
+---
+title: "向工作表添加超链接"
 type: docs
 url: /zh/hyperlinks/add/
 aliases: [/add-hyperlinks-to-excel-worksheet/]
-keywords: Add a hyperlink into an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持在 Excel 工作表中添加超链接。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+keywords: "Aspose.Cells, 添加超链接, Excel REST API, 云 SDK"
+description: "了解如何使用 Aspose.Cells Cloud v3.0 REST API 向 Excel 工作表添加超链接。包含端点、完整参数说明、cURL 示例以及 C#、Java、Python 等语言的 SDK 代码片段。"
 weight: 20
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 添加
 ---
-此 REST API 表示 Excel 工作表上的 `add a worksheet hyperlink`。
 
-## 重新设置 API
+此 REST API 用于向 Excel 工作表添加超链接。
+
+## REST API
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-请求参数为：
+### 请求参数
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|文档名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|第一行|整数|询问||
-|第一列|整数|询问||
-|总行数|整数|询问||
-|总列数|整数|询问||
-|地址|细绳|询问||
-|文件夹|细绳|询问|文件夹。|
-|存储名称|细绳|询问|存储名称。|
+| 参数名称       | 类型    | 位置   | 描述                                                         |
+| -------------- | ------- | ------ | ------------------------------------------------------------ |
+| name           | string  | path   | 文档名称。                                                   |
+| sheetName      | string  | path   | 工作表名称。                                                 |
+| firstRow       | integer | query  | 超链接所应用范围的起始行索引（从 0 开始）。                  |
+| firstColumn    | integer | query  | 超链接所应用范围的起始列索引（从 0 开始）。                  |
+| totalRows      | integer | query  | 超链接范围所跨越的行数。                                     |
+| totalColumns   | integer | query  | 超链接范围所跨越的列数。                                     |
+| address        | string  | query  | 超链接指向的目标 URL（需进行 URL 编码）。                    |
+| folder         | string  | query  | 文档所在文件夹。                                             |
+| storageName    | string  | query  | 存储名称。                                                   |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+请求体中也可包含相同的字段（`Address`、`FirstRow`、`FirstColumn`、`TotalRows`、`TotalColumns`）的 JSON 数据。当您更倾向于使用请求体而非查询参数时，可采用此方式。
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+### 错误响应
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| HTTP 状态码 | 原因                                       | 示例响应体                                                          |
+| ----------- | ------------------------------------------ | ------------------------------------------------------------------- |
+| **400**     | 请求错误 — 缺少或无效的参数。              | `{ "Code":"400", "Message":"Invalid parameter value." }`            |
+| **401**     | 未授权 — 缺少或无效的 JWT 令牌。           | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
+| **404**     | 未找到 — 工作簿或工作表不存在。            | `{ "Code":"404", "Message":"File not found." }`                     |
+| **500**     | 服务器内部错误 — 发生意外的服务器故障。    | `{ "Code":"500", "Message":"An unexpected error occurred." }`       |
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink) 定义了一个公开可访问的编程接口，您可直接在 Web 浏览器中发起 REST 请求。
+
+您可使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用云 API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks?firstRow=1&firstColumn=6&totalRows=1&totalColumns=1&address=https%3A%2F%2Fwww.msnbc.com%2F" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+若请求失败，API 将返回标准的 HTTP 错误状态码（如 400 请求错误、401 未授权、404 未找到、500 服务器内部错误），并附带包含错误信息和错误码的 JSON 响应体。
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+## 云 SDK 家族
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+使用 SDK 是开发速度最快的方式。SDK 负责处理底层细节，使您能专注于项目任务本身。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

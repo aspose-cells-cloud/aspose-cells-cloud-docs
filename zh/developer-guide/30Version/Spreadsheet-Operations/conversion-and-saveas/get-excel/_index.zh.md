@@ -1,63 +1,115 @@
-﻿---
-title: 将 Excel 文件转换为其他格式
-second_title: Documen
-linktitle: 获取 Exce
-type: docs
-url: /zh/get different formats files/
-aliases: [/export-excel-workbook-to-different-file-formats/, /export-different-formats/]
-keywords: Get excel files to kinds of format files
-description: Aspose.Cells Cloud REST API 支持将 Excel 文件转换为多种格式的文件。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 10
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、将 Excel 文件转换为其他格式
 ---
-此 REST API 指示将 `get` excel 文件转换为不同格式的文件。
+title: "Aspose.Cells Cloud – 将 Excel 工作簿转换为 PDF、CSV、HTML 等格式（GET /cells/{name}）"
+second_title: "文档"
+linktitle: "转换 Excel"
+type: docs
+url: /get-different-formats-files/
+aliases:
+  - /export-excel-workbook-to-different-file-formats/
+  - /export-different-formats/
+keywords: "Aspose.Cells, Excel 转换, Excel 转换, PDF, CSV, HTML, ODS, JSON, 图像格式, 电子表格导出, API, REST"
+description: "了解如何使用 Aspose.Cells Cloud REST API 以任意格式（PDF、CSV、HTML、PNG 等）检索 Excel 工作簿。包含 cURL、SDK 示例、身份验证和响应详情。"
+weight: 10
+ArticleTitle: "Aspose.Cells Cloud – 将 Excel 工作簿转换为 PDF、CSV、HTML 等格式（GET /cells/{name}）"
+---
 
-**查询参数**
+此 REST API 可将 Excel 工作簿以不同格式检索。
 
-|参数名称|类型|描述|
-|:- |:- |:- |
-|格式|细绳|文件格式：csv、xls、html、mhtml、ods、pdf、xml、txt、tiff、xlsb、xlsm、xlsx、xltm、xltx、xps、png、jpg、gif、emf、bmp、md、Numbers、wmf、svg等。|
-|密码|细绳|打开 Excel 文件所需的密码。|
-|是否自动调整|细绳|自动调整此工作簿的行宽和列宽。默认值为 false。|
-|仅保存表|细绳|正确/错误|
-|输出路径|细绳|保存结果的路径。如果是单个文件，`outPath` 应包含文件名和扩展名。如果是多个文件，`outPath` 应仅包含文件夹。|
-|输出存储名称|细绳|保存的文件所在的存储名称。|
-|检查Excel限制|布尔值|当用户修改单元格相关对象时是否检查Excel文件的限制。|
-|地区|细绳|工作簿的区域设置。|
-|页面宽度适合每张纸|布尔值|页面宽度适合工作表。|
-|页面高度适合每张纸|布尔值|页面高度适合工作表。|
-|每张纸一页|布尔值|转换为 PDF 格式时，每张纸一页。|
-|文件夹|细绳|原始工作簿文件夹。|
-|存储名称|细绳|文件所在的存储名称。|
+## GetWorkBook API
 
-## 休息 API
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}
+```
 
-|**API**|**类型**|**描述**|**Swagger 链接**|
-|:- |:- |:- |:- |
-|/单元格/{名称}|得到|将工作簿导出为其他格式。|[获取工作簿](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+### **安全与身份验证**
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+Aspose.Cells Cloud API 采用安全机制，需使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+### **查询参数**
+
+| 参数名称              | 类型   | 描述                                                                                                                                                          | 默认值 |
+| --------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| format                | string | 目标文件格式（例如 CSV、XLS、HTML、MHTML、ODS、PDF、XML、TXT、TIFF、XLSB、XLSM、XLSX、XLTM、XLTX、XPS、PNG、JPG、GIF、EMF、BMP、MD、Numbers、WMF、SVG 等）。 | –       |
+| password              | string | 打开 Excel 文件所需的密码。                                                                                                                            | –       |
+| isAutoFit             | bool   | 自动调整行高与列宽。                                                                                                                           | false   |
+| onlySaveTable         | bool   | 设置为 **true** 时，仅保存表格数据。接受 `true` 或 `false`。                                                                                                  | false   |
+| outPath               | string | 保存结果的路径。单个文件需包含文件名及扩展名；多个文件时仅指定文件夹。                                         | –       |
+| outStorageName        | string | 输出文件保存到的存储名称。                                                                                                             | –       |
+| checkExcelRestriction | bool   | 修改单元格或相关对象时检查 Excel 限制。                                                                                                   | false   |
+| region                | string | 应用于工作簿的区域设置。                                                                                                                           | –       |
+| pageWideFitOnPerSheet | bool   | 转换为 PDF 时，将页面宽度适配到每张工作表。                                                                                                        | false   |
+| pageTallFitOnPerSheet | bool   | 转换为 PDF 时，将页面高度适配到每张工作表。                                                                                                       | false   |
+| onePagePerSheet       | bool   | 每个工作表生成一个 PDF 页面。                                                                                                                                | false   |
+| folder                | string | 原始工作簿所在的文件夹路径。                                                                                                                                | –       |
+| storageName           | string | 源文件所在的存储名称。                                                                                                                | –       |
+
+### 响应
+
+**成功（200）**
+
+- 若省略 `format` 查询参数，API 返回包含工作簿结构信息的 **[Workbook](/cells/workbook/)** 对象。
+
+- 若 `format` 查询参数指定文件类型，API 返回所请求格式的已转换文件。
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/pdf
+Content-Disposition: attachment; filename="book1.pdf"
+Content-Length: 123456
+
+（二进制 PDF 数据）
+```
+
+**HTTP 状态码**
+
+| 状态码 | 含义           | 描述                                           |
+|------|----------------|----------------------------------------------|
+| 200  | OK（成功）       | 成功应用筛选条件；响应包含操作详情。 |
+| 400  | Bad Request（错误请求） | 缺少或参数无效（例如不支持的文件类型）。 |
+| 401  | Unauthorized（未授权） | JWT 令牌无效或缺失。 |
+| 413  | Payload Too Large（请求实体过大） | 上传文件超过大小限制。 |
+| 500  | Internal Server Error（内部服务器错误） | 意外服务器错误。 |
+
+> **注意事项：**  
+> - 大型工作簿转换可能耗时较长；建议增加请求超时时间。  
+> - 某些格式（例如 `ODS`）不支持某些 Excel 功能（例如宏）。
+
+## 如何通过 SDK 使用 GetWorkBook API
+
+> **前提条件：**  
+> - 通过 Aspose.Cells 身份验证流程获取有效的 **JWT 访问令牌**。  
+> - 源工作簿需存储在受支持的 Aspose 存储中，或直接在请求中提供。  
+> - 确保 API 版本（`v3.0`）与最新发布的版本一致。
+
+### GetWorkBook API 规范
+
+<a href="https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook" rel="noopener noreferrer">OpenAPI 规范</a> 定义了一个公开可访问的编程接口，可让您直接从 Web 浏览器执行 REST 交互。
+
+### 示例请求
+
+您可使用 **cURL** 命令行工具访问 Aspose.Cells Web 服务。以下示例展示了一个包含必需授权标头的正确 GET 请求。
 
 {{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger"}
+curl -X GET "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger"
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+### 使用 Aspose.Cells Cloud SDK
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是最快捷的开发方式。SDK 抽象了底层细节，使您能专注于项目任务。请查看 <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub 仓库</a>，获取 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例演示如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -110,3 +162,32 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" -H "acce
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**另请参阅**
+
+- <a href="https://apireference.aspose.cloud/cells/#/Workbook/ConvertWorkbook" rel="noopener noreferrer">转换工作簿（POST）</a>  
+- <a href="https://apireference.aspose.cloud/cells/#/Workbook/SaveAs" rel="noopener noreferrer">另存为（GET）</a>
+
+---
+
+_最后更新时间：2024-12-01_
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Aspose.Cells Cloud – 将 Excel 工作簿转换为 PDF、CSV、HTML 等格式（GET /cells/{name}）",
+  "description": "Aspose.Cells Cloud GET /cells/{name} 端点的文档，用于将 Excel 工作簿转换为 PDF、CSV、HTML 等多种格式。",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2024-12-01",
+  "keywords": "Aspose.Cells, Excel 转换, PDF, CSV, HTML, API, REST, 云",
+  "url": "https://docs.aspose.cloud/cells/get-different-formats-files/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose"
+  }
+}
+</script>

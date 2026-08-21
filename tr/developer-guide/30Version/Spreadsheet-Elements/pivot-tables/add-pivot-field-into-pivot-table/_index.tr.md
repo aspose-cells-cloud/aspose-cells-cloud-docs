@@ -1,78 +1,88 @@
-﻿---
-title: Pivot tabloya bir pivot alanı ekleyin
-second_title: Documen
-linktitle: Pivot alanı ekle
+---
+title: "Bir Pivot Tabloya Pivot Alanı Ekle"
+second_title: "Belge"
+linktitle: "Pivot Alanı Ekle"
 type: docs
 url: /tr/pivot-tables/add-pivot-field/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
-keywords: Add a pivot field in a pivot table
-description: Aspose.Cells Cloud REST API, pivot tabloya pivot alanı eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
+keywords: "Aspose.Cells Cloud, Excel, pivot tablo, pivot alanı ekle, REST API, SDK"
+description: "Aspose.Cells Cloud REST API kullanarak mevcut bir pivot tabloya bir pivot alanı ekleyin. İstek ayrıntılarını, cURL örneğini ve SDK kod parçacıklarını içerir."
 weight: 40
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Pivot tabloya pivot alanı ekleme
+ArticleTitle: "Bir Pivot Tabloya Pivot Alanı Ekle – Aspose.Cells Cloud Belgelendirmesi"
 ---
-Bu REST API, `add` pivot alanının pivot tabloya dahil edildiğini gösterir.
- 
-## RSET API
- 
+
+Bu REST API, **mevcut bir pivot tabloya bir pivot alanı ekler**.
+
+> **Önkoşul:** Bu uç noktayı çağırmak için `Authorization` başlığına geçerli bir JWT kimlik doğrulama belirteci eklemeniz ve çalışma kitabının belirtilen klasörde veya varsayılan depolama alanına kayıtlı olduğundan emin olmanız gerekir.
+
+## REST API
+
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
 ```
- İstek parametreleri şunlardır:
- 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| pivotTableIndex| tam sayı| yol| Pivot tablo dizini|
-| pivotAlanTürü| sicim| sorgu| Alanların alan türü.|
-| rica etmek|| vücut| Alan dizinlerini içeren Dto|
-| Yeniden Hesaplamayaihtiyacın Var| Boolean| sorgu|YANLIŞ|
-| dosya| sicim| sorgu| Belgenin klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
- 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
- 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### İstek parametreleri
+
+| Parametre Adı   | Tür     | Konum | Açıklama                                                            |
+| ---------------- | ------- | ----- | ------------------------------------------------------------------- |
+| name             | string  | path  | Belge adı.                                                          |
+| sheetName        | string  | path  | Çalışma sayfası adı.                                                |
+| pivotTableIndex  | integer | path  | Pivot tablonun dizini.                                              |
+| pivotFieldType   | string  | query | Alanlar alanı türü (örneğin, Row, Column).                         |
+| request          | object  | body  | Eklemek için alan indekslerini içeren DTO.                         |
+| needReCalculate  | boolean | query | İşlem sonrası pivot tabloyu yeniden hesaplamak için **true** olarak ayarlayın. |
+| folder           | string  | query | Belgenin bulunduğu klasör.                                          |
+| storageName      | string  | query | Depolama alanı adı.                                                 |
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerini çağırmak için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL kullanarak bir pivot alanı nasıl ekleyeceğinizi göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row"  \
--X PUT \
--d '{"Data":[1,2]}'
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row" \
+  -X PUT \
+  -d '{"Data":[1,2]}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+Başarılı yanıt, `Code` ve `Status` alanlarını içeren bir JSON nesnesi döndürür. Örnek şema:
+
+```json
+{
+  "Code": 0,        // HTTP durum kodunu gösteren tamsayı
+  "Status": "OK"    // Dize mesajı
+}
+```
+
+Olası hata yanıtları arasında eksik parametreler için **400 Bad Request**, geçersiz belirteç için **401 Unauthorized** ve sunucu tarafındaki sorunlar için **500 Internal Server Error** yer alır.
+
 ## Bulut SDK Ailesi
- 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
- 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
- 
+
+Bu işlevselliği entegre etmenin en hızlı yolu, bir SDK kullanmaktır. SDK’lar düşük seviye ayrıntıları yönetir, böylece iş mantığınıza odaklanabilirsiniz. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="Ruby" tabName4="Python" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -123,6 +133,6 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 {{< /tabs >}}
 
-
-
-
+**Ayrıca bakınız:**  
+- [Pivot Tablo Ekle](https://docs.aspose.cloud/cells/pivot-tables/add-pivot-table/)  
+- [Pivot Alanı Sil](https://docs.aspose.cloud/cells/pivot-tables/delete-pivot-field/)

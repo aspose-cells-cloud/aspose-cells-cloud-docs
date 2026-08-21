@@ -1,121 +1,133 @@
-﻿---
-title: Aspose.Cells Cloud Web API - البحث عن الروابط المعطلة لورقة العمل في جدول بيانات بعيد
-second_title: Documen
-ArticleTitle: Search Broken Links of Worksheet in Remote Spreadshee
-linktitle: البحث عن ورقة عمل عن بعد رابط معطل
-type: docs
-url: /ar/search-broken-links-in-remote-worksheet/
-keywords: broken links, Excel API, cloud spreadsheet, REST API, hyperlink validation, remote workshee
-description: ابحث بسهولة عن الروابط المعطلة داخل جدول بيانات بعيد باستخدام Excel API
-weight: 100
-kwords: Excel API، Office السحابة، REST API، جدول بيانات، PDF، CSV، JSON، Markdown، الروابط المعطلة، عناوين URL الميتة، التحقق من صحة الارتباط التشعبي
 ---
-البحث عن الروابط المعطلة داخل ورقة عمل جدول بيانات عن بعد.
+title: "Aspose.Cells Cloud – API كشف الروابط التالفة في Excel – مسح وتحقق من روابط جداول العمل عن بُعد"
+second_title: "وثيقة"
+ArticleTitle: "إيجاد وإصلاح الروابط التالفة في جدول عمل Excel عن بُعد – أداة فحص روابط جداول العمل السحابية"
+linktitle: "البحث عن الروابط التالفة في جدول العمل عن بُعد"
+type: docs
+url: /search-broken-links-in-remote-worksheet/
+keywords: "Aspose Cells، الروابط التالفة، API Excel، جدول عمل سحابي، التحقق من الروابط"
+description: "اكتشاف وإصلاح الروابط الخارجية التالفة في جداول عمل Excel المخزنة في التخزين السحابي. استخدم واجهة برمجة تطبيقات Aspose.Cells Cloud لمسح النطاقات وعرض تفاصيل الروابط وتشغيل فحوصات الجودة تلقائيًا."
+weight: 100
+---
 
-## **البحث عن الروابط المعطلة في ورقة العمل عن بُعد API**
+## **البحث عن الروابط التالفة في جدول العمل عن بُعد عبر API**
+
+اكتشف الروابط التالفة تلقائيًا في جدول عمل Excel مخزن في التخزين السحابي. تُجري واجهة برمجة التطبيقات هذه مسحًا للنطاقات المحددة للعثور على المراجع الخارجية التالفة، والصيغ غير الصالحة، ومصادر البيانات المفقودة. تدعم مراجعة جداول العمل عن بُعد، وتشغيل فحوصات الجودة تلقائيًا، والتكامل مع موفري التخزين السحابي. واجهة برمجة تطبيقات RESTful لتشغيل أتمتة سير العمل المؤسسي.
+
+### **واجهة برمجة التطبيقات عبر الويب**
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/broken-links
+PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/broken-links
+```
+
+### **الأمان والمصادقة**
+
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### **معلمات الطلب:**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-|اسم|خيط|طريق|اسم ملف المصنف الذي سيتم البحث فيه.|
-|ورقة عمل|خيط|طريق|حدد ورقة العمل للبحث.|
-|مجلد|خيط|استفسار|مسار المجلد الذي يتم تخزين المصنف فيه.|
-|اسم التخزين|خيط|استفسار|(اختياري) اسم وحدة التخزين إذا كنت تستخدم تخزينًا سحابيًا مخصصًا. استخدم وحدة التخزين الافتراضية إذا تم حذفها.|
-|منطقة|خيط|استفسار|إعداد منطقة جدول البيانات.|
-|كلمة المرور|خيط|استفسار|كلمة المرور لفتح ملف جدول البيانات.|
+| اسم المعلمة | النوع | المسار / سلسلة الاستعلام / جسم الطلب HTTP | الوصف |
+| :----------- | :----- | :------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name | String | المسار | **مطلوبة.** اسم الملف (مع الامتداد) لملف Excel الذي سيتم البحث فيه عن الروابط التالفة (مثل: `Annual_Report.xlsx`). |
+| worksheet | String | المسار | **مطلوبة.** الاسم الدقيق لجدول العمل الذي سيتم تنفيذ عملية مسح الروابط فيه (مثل: `DataSheet1`). |
+| folder | String | سلسلة الاستعلام | **اختياري.** مسار الدليل داخل التخزين السحابي الخاص بك حيث يقع ملف جدول العمل المستهدف. في حال حذف هذه المعلمة، يُستخدم المجلد الجذري. |
+| storageName | String | سلسلة الاستعلام | **اختياري.** معرّف التخزين السحابي المُعدّ مسبقًا حسب تخصيصك. في حال عدم تحديده، تستخدم واجهة برمجة التطبيقات وحدة التخزين الافتراضية للحساب. |
+| region | String | سلسلة الاستعلام | **اختياري.** إعدادات الترجمة المحلية (Locale) التي سيتم تطبيقها أثناء البحث (مثل: `fr-FR`). قد تؤثر هذه القيمة على تفسير بعض الصيغ أو تنسيقات البيانات الإقليمية. _تتضمن رموز الترجمة المحلية المدعومة: `en-US`، `fr-FR`، `de-DE`، `es-ES`، إلخ._ |
+| password | String | سلسلة الاستعلام | **اختياري.** كلمة المرور اللازمة لفك تشفير جدول العمل المحمي بكلمة مرور. تُترك فارغة في حال لم يكن الملف مشفرًا. |
 
-### **إجابة**
+**مثال على طلب cURL**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/Annual_Report.xlsx/worksheets/DataSheet1/search/broken-links?folder=Reports&storageName=MyStorage" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
+### **الاستجابة**
 
 ```json
 {
-  "Name": "BrokenLinksResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "Properties": [
+  "Code": 200,
+  "Status": "OK",
+  "BrokenLinks": [
     {
-      "Name": "BrokenLinks",
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "BrokenLink",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "BrokenLink",
-        },
-      }
-    },
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
+      "Address": "='C:\\Data\\Source.xlsx'!A1",
+      "ErrorCode": "404",
+      "ErrorMessage": "Source file not found"
     }
   ]
 }
 ```
 
-### رموز الخطأ
+كائن الاستجابة من نوع **BrokenLinksResponse** ويتضمّن:
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+- **BrokenLinks** – مجموعة من عناصر `BrokenLink`، تصف كل منها المرجع المشكل (العنوان، رمز الخطأ، والرسالة).
+- **Code** – رمز الحالة الرقمي المُعاد من الخدمة.
+- **Status** – وصف نصي للنتيجة.
 
-## أين يجب أن نستخدم البحث عن الروابط المكسورة ضمن ورقة العمل الخاصة بالجدول الإلكتروني API؟
+**ملاحظات**: لا تدعم واجهة برمجة التطبيقات تقسيم النتائج إلى صفحات. يمكن إرجاع ما يصل إلى 10,000 رابط تالف في كل طلب. الحد الأقصى لعدد الطلبات هو 100 طلب في الدقيقة لكل حساب.
 
-عندما تحتاج إلى البحث عن الروابط المكسورة داخل ورقة عمل جدول البيانات، يمكنك استخدام هذا API.
+### رموز الأخطاء
 
-## لماذا يجب عليك استخدام البحث عن الروابط المكسورة ضمن ورقة العمل الخاصة بجدول البيانات API؟
+- **400 Bad Request** – عنوان URI لواجهة برمجة تطبيقات Aspose.Cells Cloud غير صالح.
+- **401 Unauthorized** – رمز الوصول غير صالح أو مفقود.
+- **404 Not Found** – ملف جدول العمل غير قابل للوصول.
+- **500 Server Error** – حدث خطأ أثناء جلب بيانات الحساب.
 
-- ابحث بسهولة عن الروابط المكسورة داخل جدول بيانات بعيد باستخدام API.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+## أين يجب استخدام البحث عن الروابط التالفة داخل جدول العمل عبر واجهة برمجة تطبيقات جداول العمل؟
 
-## كيفية استخدام البحث عن الروابط المعطلة داخل ورقة عمل جدول البيانات API باستخدام مجموعات أدوات تطوير البرامج (SDKs)
+- **مراجعة دورية للنماذج المالية الكبيرة**: قبل إصدار التقارير الشهرية أو الفصلية، قم بمسح مناطق الحسابات الرئيسية (مثل `Dashboard!B5:K50`) التي تحتوي على مراجع كثيرة لبيانات خارجية، للتأكد من أن جميع الروابط تشير إلى ملفات مصدر صحيحة.
+- **دمج البيانات في عمليات الاندماج والاستحواذ**: عند دمج ملفات جداول عمل متعددة تمثّل وحدات الأعمال، امسح جدول العمل "Overview" بعد عملية الدمج لتحديد الروابط التي أصبحت غير صالحة بسبب تغيّر مسارات ملفات المصدر أو مشاكل الصلاحيات.
+- **إعداد حزم بيانات المستثمرين**: قبل إنهاء المواد التقديمية التي تحتوي على مخططات وجداول مرتبطة بقواعد بيانات خارجية أو مصادر بيانات سوق، تحقق من صلاحية جميع الروابط.
+
+## لماذا يجب استخدام البحث عن الروابط التالفة داخل جدول العمل عبر واجهة برمجة تطبيقات جداول العمل؟
+
+- **سهل الاستخدام للمطورين**: تقدّم Aspose.Cells Cloud مكتبات SDK بلغات برمجة متعددة، ما يتيح تطويرًا سريعًا ويُرفق معها وثائق شاملة. مقارنةً ببناء حلول مخصصة لعرض الرسوم البيانية، فإن هذا يقلل بشكل كبير من جهد التطوير.
+- **خفض تكاليف العمالة**: يقلل الحاجة إلى موظفين متخصصين في دمج المستندات يدويًا والتحقق من صحة الروابط.
+- **دفع مقابل الاستخدام فقط**: لا يتطلب استثمارًا مبدئيًا؛ تدفع مقابل مكالمات واجهة برمجة التطبيقات التي تستخدمها فقط.
+- **لا تكاليف صيانة**: لا حاجة لصيانة خوادم، ولا تحديثات برمجيات، ولا مشاكل توافق.
+- **الحفاظ على تنسيقات Excel المعقدة** بصيغة PDF يمكن الوصول إليها عالميًا.
+
+## كيفية استخدام البحث عن الروابط التالفة داخل جدول العمل عبر واجهة برمجة تطبيقات جداول العمل باستخدام مكتبات SDK
 
 ### مواصفات OpenAPI
 
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/SearchControllor/SearchBrokenLinksInRemoteWorksheet) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تعرّف [مواصفات OpenAPI](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceContentInRemoteWorksheet) واجهة برمجة تطبيقات قابلة للوصول بشكل عام وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
 
-### استخدم Aspose.Cells Cloud SDKs
+### استخدام مكتبات SDK الخاصة بـ Aspose.Cells Cloud
 
-يُعد استخدام حزمة تطوير البرامج (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل الأساسية، مما يسمح لك بسهولة تنفيذ البحث المُجزأ داخل جداول البيانات للخلايا باستخدام الحد الأدنى من التعليمات البرمجية.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. تتعامل مكتبة SDK مع التفاصيل الأساسية، مما يتيح لك تنفيذ البحث عن الروابط التالفة داخل جداول العمل بحد أدنى من الكود. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح الأمثلة التالية كيفية إجراء مكالمات لخدمات ويب Aspose.Cells باستخدام مكتبات SDK المختلفة:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchBrokenLinksInRemoteWorksheet.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchBrokenLinksInRemoteWorksheet.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchBrokenLinksInRemoteWorksheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchBrokenLinksInRemoteWorksheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchBrokenLinksInRemoteWorksheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchBrokenLinksInRemoteWorksheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchBrokenLinksInRemoteWorksheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchBrokenLinksInRemoteWorksheet.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchBrokenLinksInRemoteWorksheet.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchBrokenLinksInRemoteWorksheet.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchBrokenLinksInRemoteWorksheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchBrokenLinksInRemoteWorksheet.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchBrokenLinksInRemoteWorksheet.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchBrokenLinksInRemoteWorksheet.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchBrokenLinksInRemoteWorksheet.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchBrokenLinksInRemoteWorksheet.go" >}}
+{{</tab>}}
 {{< /tabs >}}
+---

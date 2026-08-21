@@ -1,81 +1,84 @@
-﻿---
-title: إعلان
+---
+title: "إضافة رابط تشعبي إلى ورقة عمل"
 type: docs
 url: /ar/hyperlinks/add/
 aliases: [/add-hyperlinks-to-excel-worksheet/]
-keywords: Add a hyperlink into an Excel worksheet
-description: يدعم Cloud REST إضافة رابط تشعبي إلى ورقة عمل. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
+keywords: "Aspose.Cells, إضافة رابط تشعبي, Excel REST API, SDK سحابي"
+description: "تعرّف على كيفية إضافة رابط تشعبي إلى ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API الإصدار 3.0. تتضمن الرابط، دليلاً كاملاً للمعاملات، مثالًا باستخدام cURL، وأكواد مقتطفة للغات C# وJava وPython وغير ذلك."
 weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة
 ---
-يشير هذا REST API إلى `add a worksheet hyperlink` في ورقة العمل Excel.
 
-## RSET API
+تقوم هذه الواجهة البرمجية للواجهة (REST API) بإضافة رابط تشعبي إلى ورقة عمل Excel.
+
+## واجهة برمجة التطبيقات REST
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-معلمات الطلب هي:
+### معاملات الطلب
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| الصف الأول| عدد صحيح| استفسار||
-| العمود الأول| عدد صحيح| استفسار||
-| إجمالي الصفوف| عدد صحيح| استفسار||
-| إجمالي الأعمدة| عدد صحيح| استفسار||
-| عنوان| خيط| استفسار||
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المعامل | النوع  | الموقع | الوصف                                                                                     |
+|-------------|--------|--------|-------------------------------------------------------------------------------------------|
+| name        | string | path   | اسم المستند.                                                                              |
+| sheetName   | string | path   | اسم ورقة العمل.                                                                           |
+| firstRow    | integer | query | المؤشر المبدئي (من الصفر) للصف الأول في النطاق الذي سيُطبّق عليه الرابط التشعبي.        |
+| firstColumn | integer | query | المؤشر المبدئي (من الصفر) للعمود الأول في النطاق الذي سيُطبّق عليه الرابط التشعبي.      |
+| totalRows   | integer | query | عدد الصفوف التي يغطيها نطاق الرابط التشعبي.                                              |
+| totalColumns| integer | query | عدد الأعمدة التي يغطيها نطاق الرابط التشعبي.                                             |
+| address     | string | query | عنوان URL الهدف الذي يشير إليه الرابط التشعبي (مُشفّر بتنسيق URL).                       |
+| folder      | string | query | مجلد المستند.                                                                             |
+| storageName | string | query | اسم وحدة التخزين.                                                                         |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+يمكن أن يتضمّن الطلب أيضًا جسمًا JSON يحتوي على نفس الحقول (`Address`, `FirstRow`, `FirstColumn`, `TotalRows`, `TotalColumns`). يُفضّل تزويد الجسم عند تفضيل استخدام حمولة البيانات (payload) على معاملات سلسلة الاستعلام.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### استجابات الأخطاء
+
+| الكود HTTP | السبب                                                  | مثال على الجسم                                                           |
+|------------|--------------------------------------------------------|---------------------------------------------------------------------------|
+| **400**    | طلب غير صالح – معاملات مفقودة أو غير صالحة.          | `{ "Code":"400", "Message":"Invalid parameter value." }`                 |
+| **401**    | غير مُصادَق – رمز JWT مفقود أو غير صالح.             | `{ "Code":"401", "Message":"Access token is missing or invalid." }`      |
+| **404**    | غير موجود – المستند أو ورقة العمل غير موجودة.         | `{ "Code":"404", "Message":"File not found." }`                          |
+| **500**    | خطأ داخلي في الخادم – فشل غير متوقع في الخادم.       | `{ "Code":"500", "Message":"An unexpected error occurred." }`            |
+
+يُعرّف [مواصفة OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink) واجهة برمجة تطبيقات عامة قابلة للوصول، وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells عبر الويب بسهولة. يُظهر المثال التالي كيفية إجراء استدعاءات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks?firstRow=1&firstColumn=6&totalRows=1&totalColumns=1&address=https%3A%2F%2Fwww.msnbc.com%2F" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+في حال فشل الطلب، تُعيد الواجهة أكواد HTTP الأخطائية القياسية (مثل 400 Bad Request، 401 Unauthorized، 404 Not Found، 500 Internal Server Error)، مُرفقةً بحمولة JSON تحتوي على رسالة ورمز الخطأ.
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعد استخدام SDK أسرع طريقة لتطوير التطبيقات. فتتولى SDK التعامل مع التفاصيل منخفضة المستوى، مما يمكّنك من التركيز على مهام مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

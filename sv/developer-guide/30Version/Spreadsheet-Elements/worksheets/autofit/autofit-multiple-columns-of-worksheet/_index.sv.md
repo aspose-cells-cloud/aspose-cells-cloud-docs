@@ -1,78 +1,76 @@
-﻿---
-title: Autoanpassa flera kolumner i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Kolumn
-type: docs
-url: /sv/worksheets/autofit/columns/
-aliases: [/autofit-multiple-columns-of-worksheet/]
-keywords: Autofit columns on an Excel workboo
-description: Aspose.Cells Cloud REST API stöder autopassning av kolumner i en Excel-arbetsbok. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Autoanpassa flera kolumner i ett Excel-kalkylblad
 ---
-Denna REST API indikerar att `multiple columns` ska autoanpassas på ett Excel-arbetsblad.
+title: "Autojustera flera kolumner i ett Excel-arbetsark"
+second_title: "Document"
+linktitle: "Kolumner"
+type: docs
+url: /worksheets/autofit/columns/
+aliases: [/autofit-multiple-columns-of-worksheet/]
+keywords: "Aspose.Cells, autojustera kolumner, Excel API, molnspreadsheat, REST"
+description: "Lär dig hur du autojusterar flera kolumner i ett Excel-arbetsark med Aspose.Cells Cloud REST API (v3.0). Innehåller endpoint, parametrar, cURL-exempel, felhantering och SDK-kodsnuttar för C#, Java, Python och mer."
+weight: 20
+---
 
-## RSET API
+Denna REST API autojusterar **flera kolumner** i ett Excel-arbetsark.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
 ```
 
-Begäranparametrarna är:
+### **Begäranparametrar**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Filnamnet.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| förstaKolumnen| heltal| fråga| Startkolumnens index.|
-| sista kolumnen| heltal| fråga| Indexet för den sista kolumnen.|
-|[autoFitterAlternativ](/cells/sv/auto-fitter-options/) || kropp| Alternativ för automatisk montör.|
-| första raden| heltal| fråga||
-| sista raden| heltal| fråga||
-| mapp| sträng| fråga||
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameter Name      | Typ     | Plats  | Beskrivning                                                                                                                                 |
+| ------------------- | ------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| name                | string  | path   | Filnamnet.                                                                                                                                  |
+| sheetName           | string  | path   | Arbetsarkets namn.                                                                                                                          |
+| firstColumn         | integer | query  | Startkolumnindexet.                                                                                                                         |
+| lastColumn          | integer | query  | Slutkolumnindexet.                                                                                                                          |
+| autoFitterOptions\* | object  | body   | Autojusteringsalternativ (se [Autojusteringsalternativ](/cells/auto-fitter-options/)). Innehåller `AutoFitMergedCells`, `IgnoreHidden` och `OnlyAuto`. |
+| firstRow            | integer | query  | Startradindex för autojustering (**valfritt**).                                                                                             |
+| lastRow             | integer | query  | Slutradindex för autojustering (**valfritt**).                                                                                              |
+| folder              | string  | query  | Mappväg i lagring (**valfritt**).                                                                                                           |
+| storageName         | string  | query  | Lagringsnamn (**valfritt**).                                                                                                                |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+\*Parameternamnet visas som en länk till den relaterade dokumentationen.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Du kan använda verktyget cURL för kommandoraden för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?lastColumn=5&firstColumn=0" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"AutoFitMergedCells" : true, "IgnoreHidden" : true, "OnlyAuto" : true}' 
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?lastColumn=5&firstColumn=0" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"AutoFitMergedCells": true, "IgnoreHidden": true, "OnlyAuto": true}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## SDK-familj för molnet
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Kolla in [GitHub-lagret](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man gör anrop till Aspose.Cells-webbtjänster med diverse SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

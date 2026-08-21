@@ -1,78 +1,86 @@
-﻿---
-title: Başka bir çalışma sayfasından içerikleri ve biçimleri kopyalar
-second_title: Documen
-linktitle: Polis
-type: docs
-url: /tr/worksheets/copy/
-aliases: [/copy-excel-worksheet/]
-keywords: Copies contents and formats from another Excel worksheet
-description: Aspose.Cells Cloud REST API, başka bir çalışma sayfasından içerik ve format kopyalamayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Başka bir çalışma sayfasından içerik ve biçimleri kopyalar.
 ---
-Bu REST API, `copy a worksheet`'i gösterir ve aynı çalışma kitabında yeni bir adla kaydedilir
+title: "Bir diğer çalışma sayfasından içeriği ve formatları kopyala."
+second_title: "Belge"
+linktitle: "Kopyala"
+type: docs
+url: /worksheets/copy/
+aliases: [/copy-excel-worksheet/]
+keywords: "Aspose Cells kopyalama çalışma sayfası API'si, Excel sayfa kopyalama REST API'si, Aspose Cloud SDK kopyalama, elektronik tablo kopyalama çalışma sayfası"
+description: "Aspose.Cells Cloud REST API kullanarak bir çalışma sayfasını ve formatlarını yeni bir sayfaya nasıl kopyalayacağınızı öğrenin. C#, Java, Python ve diğerleri için uç nokta, parametreler, cURL ve SDK örneklerini içerir."
+weight: 20
+---
 
-## RSET API
+Bu REST API, bir çalışma sayfasını ve formatlarını aynı çalışma kitabında yeni bir sayfaya kopyalar.
+
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/copy
- 
 ```
 
-İstek parametreleri şunlardır:
+İstek parametreleri aşağıda listelenmiştir:
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| kaynakSayfası| sicim| sorgu||
-| seçenekler|| vücut||
-| kaynakÇalışma Kitabı| sicim| sorgu||
-| kaynakKlasörü| sicim| sorgu||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı    | Tür    | Konum  | Açıklama                                                                 |
+| ---------------- | ------ | ------ | ------------------------------------------------------------------------ |
+| `name`           | string | path   | Çalışma kitabı dosyasının adı.                                           |
+| `sheetName`      | string | path   | Hedef çalışma sayfasının (yeni sayfanın) adı.                            |
+| `sourceSheet`    | string | query  | Kopyalanacak çalışma sayfasının adı.                                     |
+| `options`        | object | body   | Kopyalama seçeneklerini içeren JSON nesnesi (örn., sütun genişliği, formüller). |
+| `sourceWorkbook` | string | query  | Kaynak çalışma kitabının adı, mevcut çalışma kitabından farklıysa.      |
+| `sourceFolder`   | string | query  | Kaynak çalışma kitabının bulunduğu klasör yolu.                          |
+| `folder`         | string | query  | Hedef çalışma kitabının kaydedileceği klasör yolu.                       |
+| `storageName`    | string | query  | Kullanılacak depolama hizmetinin adı.                                    |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek ve Yanıt Örnekleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API'sine nasıl istek yapıldığını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/NewSheet/copy?sourceSheet=Sheet3X" \
--X POST \
--d "{ \"ColumnCharacterWidth\": true, \"CopyInvalidFormulasAsValues\": true, \"CopyNames\": true, \"ExtendToAdjacentRange\": true, \"ReferToDestinationSheet\": true, \"ReferToSheetWithSameName\": true}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -d '{ "ColumnCharacterWidth": true, "CopyInvalidFormulasAsValues": true, "CopyNames": true, "ExtendToAdjacentRange": true, "ReferToDestinationSheet": true, "ReferToSheetWithSameName": true}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Hata Yönetimi
+
+API, standart HTTP durum kodlarını ve JSON hata gövdesini döndürür. Typik yanıtlar şunları içerir:
+
+| HTTP Kodu | Açıklama                                                       | Örnek JSON Hata Gövdesi                                        |
+| --------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| 400       | Hatalı istek – eksik veya geçersiz parametreler.               | `{ "Code": 400, "Message": "Geçersiz istek parametreleri." }`   |
+| 401       | Yetkisiz erişim – eksik veya geçersiz belirteç.                | `{ "Code": 401, "Message": "Kimlik doğrulama başarısız." }`     |
+| 404       | Bulunamadı – çalışma kitabı, çalışma sayfası veya klasör mevcut değil. | `{ "Code": 404, "Message": "Kaynak bulunamadı." }`           |
+| 500       | İç sunucu hatası – beklenmeyen durum.                          | `{ "Code": 500, "Message": "Beklenmeyen bir hata oluştu." }`   |
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme hızını en çok artıracak en iyi yoldur. SDK, düşük seviye ayrıntıları yöneterek projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerine çeşitli SDK'lar kullanılarak nasıl istek yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

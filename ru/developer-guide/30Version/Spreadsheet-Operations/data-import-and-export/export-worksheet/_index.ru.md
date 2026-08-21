@@ -1,91 +1,170 @@
-﻿---
-title: Экспорт рабочего листа
-second_title: Documen
-linktitle: Рабочий лист
-type: docs
-url: /ru/export-excel-worksheet-to-different-formats/
-aliases: [ /export/excel-worksheet-to-different-formats/]
-keywords: Export Excel worksheet to kinds of format files
-description: Aspose.Cells Cloud REST API поддерживает экспорт листов Excel в файлы различных форматов. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Экспорт рабочего листа
 ---
- Вы можете экспортировать в следующие форматы:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [ТСВ](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ОРВ](https://docs.fileformat.com/spreadsheet/ods/), [ТЕКСТ](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [ОТС](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [ДИФ](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [ЧИСЛА](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/)..
+title: "Экспорт рабочего листа – Aspose.Cells Cloud"
+second_title: "Документ"
+linktitle: "Рабочий лист"
+type: docs
+url: /export-excel-worksheet-to-different-formats/
+aliases: [/export/excel-worksheet-to-different-formats/]
+keywords: "Aspose.Cells, экспорт рабочего листа, Excel API, PDF, CSV, TIFF, ODS, форматы изображений"
+description: "Узнайте, как экспортировать рабочий лист Excel в форматы PDF, CSV, TIFF и другие с помощью REST API Aspose.Cells Cloud. Пример cURL, необходимая аутентификация, детали параметров и обработка ответов."
+weight: 20
+ArticleTitle: "Экспорт рабочего листа Excel в различные форматы – Aspose.Cells Cloud"
+---
 
-- **ОТДЫХ API**
+Вы можете экспортировать рабочий лист в следующие форматы:
 
-|**API**|**Тип**|**Описание**|**Swagger Link**|
-|:- |:- |:- |:- |
-|/cells/export|ПОЧТА|Экспортировать Excel из содержимого запроса в какой-либо формат|[ПостЭкспорт](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+- **XLS** – [Сведения о формате XLS](https://docs.fileformat.com/spreadsheet/xls/)
+- **XLSX** – [Сведения о формате XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)
+- **XLSB** – [Сведения о формате XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)
+- **CSV** – [Сведения о формате CSV](https://docs.fileformat.com/spreadsheet/csv/)
+- **TSV** – [Сведения о формате TSV](https://docs.fileformat.com/spreadsheet/tsv/)
+- **XLSM** – [Сведения о формате XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)
+- **ODS** – [Сведения о формате ODS](https://docs.fileformat.com/spreadsheet/ods/)
+- **TXT** – [Сведения о формате TXT](https://docs.fileformat.com/word-processing/txt/)
+- **PDF** – [Сведения о формате PDF](https://docs.fileformat.com/pdf/)
+- **OTS** – [Сведения о формате OTS](https://docs.fileformat.com/spreadsheet/ots/)
+- **XPS** – [Сведения о формате XPS](https://docs.fileformat.com/page-description-language/xps/)
+- **DIF** – [Сведения о формате DIF](https://docs.fileformat.com/spreadsheet/dif/)
+- **PNG** – [Сведения о формате PNG](https://docs.fileformat.com/Image/png/)
+- **JPEG** – [Сведения о формате JPEG](https://docs.fileformat.com/image/jpeg/)
+- **BMP** – [Сведения о формате BMP](https://docs.fileformat.com/image/bmp/)
+- **SVG** – [Сведения о формате SVG](https://docs.fileformat.com/page-description-language/svg/)
+- **TIFF** – [Сведения о формате TIFF](https://docs.fileformat.com/image/tiff/)
+- **EMF** – [Сведения о формате EMF](https://docs.fileformat.com/image/emf/)
+- **NUMBERS** – [Сведения о формате Numbers](https://docs.fileformat.com/spreadsheet/numbers/)
+- **FODS** – [Сведения о формате FODS](https://docs.fileformat.com/spreadsheet/fods/)
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[Ознакомьтесь с другими операциями экспорта, например, экспортом всей книги или диаграммы.](https://docs.aspose.cloud/cells/export-excel-workbook-to-different-formats/)
 
- Вы можете использовать**cURL** Инструмент командной строки для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+## API PostExport
 
-- **Запрос**
-
-```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=worksheet&format=tiff" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+```http
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
-- **Ответ**
+### **Безопасность и аутентификация**
 
-```bash
+API Aspose.Cells Cloud защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации на основе JWT-токена</a>.
+
+### Параметры запроса
+
+| Имя параметра | Тип    | Путь/Строка запроса/HTTP-тело | Обязательный | Описание                                                                 |
+|---------------|--------|-------------------------------|-------------|--------------------------------------------------------------------------|
+| file          | file   | formData                      | Да          | Файл для загрузки                                                        |
+| objectType    | string | query                         | Да          | Тип объекта для экспорта. Для экспорта диаграммы используйте `chart`. Другие возможные значения: `worksheet`, `picture` и т.д. |
+| format        | string | query                         | Да          | Желаемый выходной формат. Поддерживаемые значения: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`. |
+
+### Ответ
+
+```json
 {
-    "Files": [{
-        "Filename": "Book1_xlsx_Sheet1.tif",
-        "FileSize": 390,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet2.tif",
-        "FileSize": 10040,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet3.tif",
-        "FileSize": 2824,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4.tif",
-        "FileSize": 1350,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet5.tif",
-        "FileSize": 12978,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6.tif",
-        "FileSize": 7002,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet7.tif",
-        "FileSize": 11532,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet1.tif",
-        "FileSize": 382,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet2.tif",
-        "FileSize": 382,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet3.tif",
-        "FileSize": 130084,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet4.tif",
-        "FileSize": 120062,
-        "FileContent": "-----Base64String--------"
-    }]
+  "Files": [
+    {
+      "Filename": "Book1_xlsx_Sheet1.tif",
+      "FileSize": 390,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet2.tif",
+      "FileSize": 10040,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet3.tif",
+      "FileSize": 2824,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet4.tif",
+      "FileSize": 1350,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet5.tif",
+      "FileSize": 12978,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet6.tif",
+      "FileSize": 7002,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet7.tif",
+      "FileSize": 11532,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet1.tif",
+      "FileSize": 382,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet2.tif",
+      "FileSize": 382,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet3.tif",
+      "FileSize": 130084,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet4.tif",
+      "FileSize": 120062,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
-- **Семейство облачных SDK**
+### **Обработка ошибок**
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+В случае ошибки запроса API возвращает объект JSON с ошибкой, содержащий поля, такие как `Code` и `Message`. Типичные HTTP-коды состояния включают **401 Unauthorized** (отсутствующий или недействительный токен) и **400 Bad Request** (некорректные параметры).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+**HTTP-коды состояния**
+
+| Код | Значение                    | Описание                                                  |
+|-----|-----------------------------|-----------------------------------------------------------|
+| 200 | OK (OK)                     | Фильтр успешно применён; ответ содержит данные операции. |
+| 400 | Bad Request (Неверный запрос) | Отсутствующие или некорректные параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизовано) | Неверный или отсутствующий JWT-токен.                     |
+| 413 | Payload Too Large (Слишком большой полезный груз) | Загруженный файл превышает ограничение по размеру.        |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера.                            |
+
+**Примечания**
+
+- Максимальный размер файла для загрузки: 50 МБ.  
+- API поддерживает экспорт нескольких рабочих листов в одном запросе; каждый рабочий лист возвращается как отдельный файл в массиве `Files`.  
+- Для больших книг доступна асинхронная обработка; используйте ответ `202 Accepted` для опроса статуса операции.
+
+## Как использовать API PostExport с SDK
+
+### Предварительные требования
+
+Перед вызовом API получите действительный JWT-токен доступа, используя процесс аутентификации Aspose.Cells Cloud. Убедитесь, что токен включён в заголовок `Authorization` каждого запроса. SDK автоматически обрабатывают получение токена при настройке с вашими учётными данными клиента.
+
+### Спецификация API PostExport
+
+[OpenAPI-спецификация](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия напрямую из веб-браузера.
+
+Вы можете использовать инструмент командной строки **cURL** для простого доступа к веб-сервисам Aspose.Cells. Следующий пример демонстрирует вызов Cloud API с помощью cURL.
+
+```bash
+# Экспорт рабочего листа в формат TIFF
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=worksheet&format=tiff" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -F "File=@MyWorkbook.xlsx"
+```
+
+### Использование SDK Aspose.Cells Cloud
+
+Использование SDK — самый быстрый способ разработки под Aspose.Cells Cloud. SDK абстрагирует низкоуровневые детали, позволяя сосредоточиться на бизнес-логике. Полный список поддерживаемых SDK доступен на [репозитории GitHub](https://github.com/aspose-cells-cloud).
+
+Следующие примеры кода демонстрируют вызов веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

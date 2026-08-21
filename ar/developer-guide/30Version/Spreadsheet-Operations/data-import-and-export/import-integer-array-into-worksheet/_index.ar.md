@@ -1,63 +1,95 @@
-﻿---
-title: استيراد مصفوفة الأعداد الصحيحة إلى ورقة العمل Excel
-linktitle: استيراد عدد صحيح
-type: docs
-url: /ar/import-integer-array-into-excel-worksheet/
-aliases: [/import-integer-array-into-excel-worksheet/,/import-integer-array-into-worksheet/,/import-data/integer-array/, /import/integer-array/]
-keywords: Import integer array data into Excel files
-description: يدعم Cloud REST استيراد بيانات مصفوفة الأعداد الصحيحة إلى ملفات. تدعم حزمة تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 30
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، استيراد مصفوفة عدد صحيح إلى ورقة عمل Excel
 ---
-هذه ورقة عمل REST API `import int array data` في Excel.
+title: "استيراد مصفوفة أعداد صحيحة إلى ورقة عمل إكسل"
+linktype: "استيراد مصفوفة أعداد صحيحة"
+type: docs
+url: /import-integer-array-into-excel-worksheet/
+aliases:
+  - /import-integer-array-into-excel-worksheet/
+  - /import-integer-array-into-worksheet/
+  - /import-data/integer-array/
+  - /import/integer-array/
+keywords: "Aspose.Cells Cloud, إكسل, استيراد مصفوفة أعداد صحيحة, REST API, SDK, C#, PHP, Ruby, Java, Python"
+description: "تعلم كيفية استيراد مصفوفة أعداد صحيحة إلى ورقة عمل إكسل باستخدام Aspose.Cells Cloud REST API. يشمل بنية الطلب، المعلمات، أمثلة للكود بعدة لغات برمجة، وتفاصيل الاستجابة."
+weight: 30
+ArticleTitle: "استيراد مصفوفة أعداد صحيحة إلى ورقة عمل إكسل – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+---
 
-الطلب عبارة عن طلب HTTP يحتوي على محتوى متعدد الأجزاء (انظر[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)أو[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)يحتوي الجزء الأول من المحتوى متعدد الأجزاء على بيانات ImportIntegerArrayOption ويحتوي الجزء الثاني على ملف بيانات.
+تقوم هذه الواجهة البرمجية REST باستيراد مصفوفة أعداد صحيحة إلى ورقة عمل إكسل.
 
-## RSET API
+يجب أن يكون الطلب طلب <b>POST</b> عبر HTTP مع محتوى متعدد الأجزاء (انظر [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) أو [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). الجزء الأول من جسم الطلب المتعدد يحتوي على حمولة JSON لـ **ImportIntegerArrayOption**، والجزء الثاني يحتوي على ملف البيانات المصدر (مثل ملف CSV أو ملف إكسل ثنائي).
 
-```bash
+## واجهة PostImportData API
 
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-يتم وصف المعلمات الهامة في الجدول التالي:
+يقبل كلا_endpoint_ين نفس الحمولة المتعددة الأجزاء. يقوم الـ endpoint الأول بتنفيذ عملية استيراد عامة، بينما يستهدف الـ endpoint الثاني مصنفًا محددًا عبر اسمه `{name}`.
 
-**خيار استيراد مجموعة صحيحة**
+### **الأمان والمصادقة**
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-| الصف الأول| عدد صحيح||
-| العمود الأول| عدد صحيح||
-| عمودي| خيط| صواب/خطأ.|
-| بيانات|عدد صحيح[]||
-|ورقة عمل الوجهة| خيط| اسم ورقة عمل الوجهة.|
-| هل تم إدراجه| خيط| صواب/خطأ.|
-| نوع بيانات الاستيراد| خيط|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| مصدر| مصدر الملف| يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData فارغة.|
+تُعتبر واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة باستخدام رمز JWT</a>.
 
-**مثال**
+### **معلمات الطلب**
 
-```JSON
+### ImportIntegerArrayOption
 
+| اسم المعلمة              | النوع      | الوصف                                                                                                                                                                                    |
+| ------------------------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **FirstRow**             | int        | المؤشر المُبدَأ من الصفر لصف أول خلية سيتم وضع البيانات فيها.                                                                                                                               |
+| **FirstColumn**          | int        | المؤشر المُبدَأ من الصفر لعمود أول خلية سيتم وضع البيانات فيها.                                                                                                                            |
+| **IsVertical**           | boolean    | `true` لإدخال المصفوفة عموديًّا (لأسفل عمود واحد)؛ `false` لإدخالها أفقيًّا (عبر صف واحد).                                                                                       |
+| **Data**                 | Integer[]  | المصفوفة الصحيحة المراد استيرادها.                                                                                                                                                              |
+| **DestinationWorksheet** | string     | اسم ورقة العمل التي ستستقبل البيانات.                                                                                                                                              |
+| **IsInsert**             | boolean    | `true` لإدراج صفوف/أعمدة قبل كتابة البيانات؛ `false` لكتابة البيانات فوق الخلايا الموجودة.                                                                                                    |
+| **ImportDataType**       | string     | نوع البيانات المراد استيرادها. القيم المقبولة: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
+| **Source**               | FileSource | يُحدد موقع ملف البيانات عندما تكون قيمة المعامل **BatchData** `null`.                                                                                                            |
+
+#### مثال على جسم الطلب
+
+```json
 {
-    "Data": [1, 2, 4],
-    "DestinationWorksheet": "Sheet1",
-    "FirstRow": 1,
-    "FirstColumn": 2,
-    "IsVertical": true,
-    "IsInsert": true,
-    "importDataType": "IntArray"
+  "Data": [1, 2, 4],
+  "DestinationWorksheet": "Sheet1",
+  "FirstRow": 1,
+  "FirstColumn": 2,
+  "IsVertical": true,
+  "IsInsert": true,
+  "ImportDataType": "IntArray"
 }
-
 ```
 
-## عائلة SDK السحابية
+### الاستجابة
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعيد الطلب الناجح رمز الحالة **HTTP 200** مع جسم JSON على الشكل التالي:
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+رموز الحالة الممكنة:
+
+| الرمز | المعنى                                 |
+| ---- | --------------------------------------- |
+| 200  | نجح الاستيراد                        |
+| 400  | طلب غير صالح – بيانات ناقصة أو خاطئة   |
+| 401  | عدم مصادقة – رمز غير صالح أو مفقود |
+| 500  | خطأ داخلي في الخادم                   |
+
+## كيفية استخدام واجهة PostImportData API باستخدام مكتبات SDK
+
+### مواصفات واجهة PostImportData API
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) واجهة برمجة قابلة للوصول بشكل عام وتتيح إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+### استخدام مكتبات Aspose.Cells Cloud SDK
+
+استخدام مكتبة SDK هو أسرع طريقة لدمج هذه الوظيفة. فالمكتبات تُجرّد التفاصيل منخفضة المستوى، مما يتيح لك التركيز على منطق تطبيقك. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بمكتبات Aspose.Cells Cloud SDK.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر مكتبات مختلفة:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 
@@ -80,3 +112,4 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 {{< /tab >}}
 
 {{< /tabs >}}
+---

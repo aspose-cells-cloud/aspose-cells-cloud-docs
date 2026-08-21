@@ -1,12 +1,15 @@
-﻿---
-title: Aspose.Cells Molnstödd plattform
-second_title: Documen
-ArticleTitle: "Aspose.Cells Cloud Supported Platforms: Windows, Linux, and MacO"
-LinkTitle: Supported Platform
+---
+title: "Aspose.Cells Cloud: Stödda plattformar"
+secondtitle: "Dokument"
+ArtikelTitel: "Aspose.Cells Cloud: Stödda plattformar – Windows, Linux och macOS"
+LinkTitel: "Stödda plattformar"
 type: docs
 url: /sv/supported-platforms/
-description: Aspose.Cells Molnet stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, hantera interna objekt och så vidare.
+description: "Lär dig mer om de operativsystem, SDK:er och Docker-avbildningar som stöds av Aspose.Cells Cloud REST API på Windows, Linux och macOS."
 weight: 50
-kwords: Excel Moln, REST, Kalkylblad, PDF, CSV, Json, Markdown, Plattformar som stöds Windows, MacOS, Linux
+keywords: "Aspose.Cells Cloud, REST API, Excel, Kalkylark, SDK, Docker, Windows, Linux, macOS"
 ---
-Aspose.Cells Clouds plattformsoberoende dokumenthantering API är en äkta REST API som kan användas med alla språk: Go, Java, .NET, NodeJS, Perl, PHP, Python, Ruby och många fler. Du kan använda den med alla språk eller plattformar som stöder REST. (Nästan alla plattformar och språk stöder REST och tillhandahåller inbyggda REST-klienter för att arbeta med REST API:er). Du behöver inte oroa dig för språk- eller plattformsbegränsningar. Du kan använda den med alla plattformar – webb, dator, mobil och moln. API integreras med andra molntjänster för att ge dig den flexibilitet du behöver när du bearbetar dokument. Den är lämplig för alla typer av företag, dokument eller innehåll.
+
+Aspose.Cells Cloud tillhandahåller en plattformsoberoende, riktigt REST-baserad API för dokumentmanipulation. Den fungerar med alla språk som kan skicka HTTP-begäranden, såsom Go, Java, .NET, Node.js, Perl, PHP, Python, Ruby och många andra. Eftersom tjänsten anropas via standard-REST-anrop finns det inga språk- eller plattformspecifika begränsningar. Du kan anropa API:et från webb-, desktop-, mobil- eller molnmiljöer. API:et integrerar också med andra molntjänster och erbjuder den flexibilitet som krävs för att bearbeta Excel-, PDF-, CSV-, JSON- och andra dokumentformat i alla affärsscenarier.
+
+Tjänsten stöder de senaste versionerna av Windows, populära Linux-distributioner (Ubuntu, CentOS, Debian) och macOS. SDK:er finns tillgängliga för .NET, Java, Python, PHP, Ruby, Go och Node.js, varje SDK inkluderar omfattande kodexempel. Docker-avbildningar tillhandahålls för att förenkla distribution i containernas miljöer, vilket gör att du kan köra API:et lokalt eller i molnet med minimal konfiguration.

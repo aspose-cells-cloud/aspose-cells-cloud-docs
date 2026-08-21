@@ -1,74 +1,80 @@
-﻿---
-title: Dela upp sammanslagna celler i intervallet
-second_title: Documen
-linktitle: Avsammanslagning
-type: docs
-url: /sv/ranges/unmerge/
-aliases: [/unmerge-merged-cells-of-the-range/]
-keywords: Unmerge merged cells of the range on an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder uppdelning av sammanslagna celler i intervallet på ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Dela upp sammanslagna celler i intervallet
 ---
-Denna REST API anger att sammanslagna celler i detta område ska delas upp i ett Excel-arbetsblad.
+title: "Dela upp celler i ett intervall"
+second_title: "Dokument"
+linktitle: "Dela upp"
+type: docs
+url: /ranges/unmerge/
+aliases: [/unmerge-merged-cells-of-the-range/]
+keywords: "Aspose.Cells Cloud, dela upp celler, Excel API, arbetsbladintervall, REST API"
+description: "Lär dig hur du använder Aspose.Cells Cloud API för att dela upp sammanfogade celler i ett specifikt arbetsbladsintervall. Innehåller endpoint, parametrar, exempel med cURL och SDK-kodsnuttar för C#, Java, Python m.fl."
+weight: 20
+---  
 
-## RSET API
+Detta REST API delar upp sammanfogade celler inom ett angivet intervall på ett Excel-arbetsblad.
+
+## REST API  
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unmerge
- 
-```
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unmerge
+```  
 
-Begäranparametrarna är:
+Följande begäranparametrar används:
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| arbetsbokens namn|
-| arknamn| sträng| väg| arbetsbladets namn|
-| räckvidd|| kropp| intervall i kalkylbladet|
-| mapp| sträng| fråga| Arbetsboksmapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameternamn  | Typ    | Plats   | Krävs  | Beskrivning                                  |
+|----------------|--------|---------|--------|----------------------------------------------|
+| name           | string | path    | Ja     | Arbetsboksnamn.                              |
+| sheetName      | string | path    | Ja     | Arbetsbladsnamn.                             |
+| range          | object | body    | Ja     | Intervallobjekt som definierar de celler som ska delas upp. |
+| folder         | string | query   | Nej    | Mapp som innehåller arbetsboken.             |
+| storageName    | string | query   | Nej    | Lagringsnamn.                                |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnmerge) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnmerge) definierar ett offentligt tillgängligt programmeringsgränssnitt och möjliggör REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda verktyget cURL för att enkelt komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du gör anrop till moln-API:t med cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/unmerge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}" 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+    "ColumnCount": 7,
+    "ColumnWidth": 19,
+    "FirstColumn": 0,
+    "FirstRow": 9,
+    "Name": "string",
+    "RefersTo": "string",
+    "RowCount": 1,
+    "RowHeight": 15,
+    "Worksheet": "Sheet1"
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## SDK-familj för molnet  
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå så att du kan fokusera på dina projektuppgifter. Ta en titt på [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

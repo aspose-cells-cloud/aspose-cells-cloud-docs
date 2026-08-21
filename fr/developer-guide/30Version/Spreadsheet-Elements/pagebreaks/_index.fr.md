@@ -1,20 +1,24 @@
-﻿---
-title: Travailler avec la page Excel brea
-second_title: Documen
-linktitle: Saut de page
-type: docs
-url: /fr/working-with-pagebreaks/
-aliases: [/working-with-pagebreaks/]
-keywords: Get, add, delete, and update page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge l'obtention, l'ajout, la suppression et la mise à jour des sauts de page dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Sauts de page
 ---
-## Comment utiliser les sauts de page dans une feuille de calcul Excel
+title: "Travail avec les sauts de page Excel"
+second_title: "Document"
+linktitle: "SautsDePage"
+type: docs
+url: /working-with-pagebreaks/
+aliases: [/working-with-pagebreaks/]
+keywords: "Excel, saut de page, Aspose.Cells Cloud, API REST, feuille de calcul, ajouter, supprimer, obtenir, mettre à jour, sauts de page"
+description: "Découvrez comment ajouter, récupérer et supprimer des sauts de page dans des feuilles de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut des exemples pour les sauts verticaux et horizontaux."
+weight: 100
+ArticleTitle: "Travail avec les sauts de page Excel – Documentation Aspose.Cells Cloud"
+---
 
-- [Comment ajouter un saut de page vertical dans une feuille de calcul Excel.](/cells/fr/page-breaks/add-vertical-page-break/)
-- [Comment ajouter un saut de page horizontal dans une feuille de calcul Excel.](/cells/fr/page-breaks/add-horizontal-page-break/)
-- [Comment supprimer un saut de page vertical dans une feuille de calcul Excel.](/cells/fr/page-breaks/delete-vertical-page-break/)
-- [Comment supprimer un saut de page horizontal dans une feuille de calcul Excel.](/cells/fr/page-breaks/delete-vertical-page-break/)
-- [Comment obtenir des sauts de page verticaux dans une feuille de calcul Excel.](/cells/fr/page-breaks/get-vertical-page-breaks/)
-- [Comment obtenir des sauts de page horizontaux dans une feuille de calcul Excel.](/cells/fr/page-breaks/get-vertical-page-breaks/)
+## Comment travailler avec les sauts de page dans une feuille de calcul Excel
+
+Ce guide offre un accès rapide aux opérations d’API permettant de gérer les sauts de page verticaux et horizontaux dans une feuille de calcul Excel à l’aide d’Aspose.Cells Cloud.
+
+- [Comment ajouter un saut de page vertical dans une feuille de calcul Excel.](/cells/page-breaks/add-vertical-page-break/)
+- [Comment ajouter un saut de page horizontal dans une feuille de calcul Excel.](/cells/page-breaks/add-horizontal-page-break/)
+- [Comment supprimer un saut de page vertical dans une feuille de calcul Excel.](/cells/page-breaks/delete-vertical-page-break/)
+- [Comment supprimer un saut de page horizontal dans une feuille de calcul Excel.](/cells/page-breaks/delete-horizontal-page-break/)
+- [Comment obtenir les sauts de page verticaux dans une feuille de calcul Excel.](/cells/page-breaks/get-vertical-page-breaks/)
+- [Comment obtenir les sauts de page horizontaux dans une feuille de calcul Excel.](/cells/page-breaks/get-horizontal-page-breaks/)
+---

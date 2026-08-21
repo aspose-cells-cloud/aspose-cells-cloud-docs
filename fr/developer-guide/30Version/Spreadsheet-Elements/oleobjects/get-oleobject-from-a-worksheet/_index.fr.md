@@ -1,73 +1,90 @@
-﻿---
-title: Obtenir un objet OLE dans une feuille de calcul Excel
-second_title: Documen
-linktitle: Gé
+---
+title: "Récupérer un objet OLE à partir d'une feuille Excel – Aspose.Cells Cloud API"
+second_title: "Documentation"
+linktype: "Récupérer"
 type: docs
 url: /fr/oleobjects/get/
 aliases: [/get-oleobject-from-a-worksheet/]
-keywords: Get an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge l'obtention d'un objet OLE dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+keywords: "aspose, cells, objet OLE, excel, feuille de calcul, récupérer un objet OLE, API REST"
+description: "Récupérez un objet OLE (image, graphique ou fichier intégré) à partir d’une feuille de calcul à l’aide de l’API REST Aspose.Cells Cloud. Inclut le point de terminaison HTTPS, les paramètres requis, un exemple cURL et du code SDK dans plusieurs langues."
+ArticleTitle: "Récupérer un objet OLE à partir d'une feuille Excel – Aspose.Cells Cloud API"
 weight: 10
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Obtenir un objet OLE dans une feuille de calcul Excel
 ---
-Ce REST API indique à `get` un `OLE object` avec format dans une feuille de calcul Excel.
 
-## RSET API
+Cette API REST permet de récupérer un **objet OLE** à partir d'une feuille de calcul Excel.
+
+## Sécurité et authentification
+Les API Aspose.Cells Cloud sont sécurisées et nécessitent une [authentification basée sur un jeton JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
 ```
 
-Les paramètres de la requête sont :
+### Paramètres de la requête
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
-| numéro d'objet| entier| chemin| Le numéro de l'objet.|
-| format| chaîne| requête| Le format de l'objet exporté.|
-| dossier| chaîne| requête| Le dossier de documents.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type    | Emplacement | Description                                                  |
+| ---------------- | ------- | ----------- | ------------------------------------------------------------ |
+| name             | string  | path        | Nom du document.                                             |
+| sheetName        | string  | path        | Nom de la feuille de calcul.                                 |
+| objectNumber     | integer | path        | Numéro de l'objet dans la feuille de calcul.                 |
+| format           | string  | query       | Format d’export souhaité pour l’objet (par ex. `png`, `jpeg`). |
+| folder           | string  | query       | Dossier contenant le document.                               |
+| storageName      | string  | query       | Nom du stockage à utiliser.                                  |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Options de stockage
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+- **folder** – spécifie le sous-dossier dans le stockage par défaut où se trouve le classeur.
+- **storageName** – remplace le nom du stockage par défaut si le classeur est stocké ailleurs.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+La [Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject) définit une interface de programmation accessible publiquement et permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande **cURL** pour appeler le service web Aspose.Cells. L’exemple ci-dessous montre comment demander un objet OLE sous forme d’image PNG.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+### Réponse binaire (image)
 
-Image file
- 
+Lorsque le paramètre `format` est défini sur un type d’image (par ex. `png`), l’API renvoie les données binaires de l’image avec l’en-tête :
+
+```
+Content-Type: image/png
 ```
 
-OU
+_(Le fichier image est transmis en flux direct au client.)_
 
-```bash
+### Réponse JSON (méta-données)
+
+Si `format` est omis ou défini sur `json`, l’API renvoie une charge utile JSON décrivant l’objet OLE :
+
+```json
 {
-    "Code": 200,
-    "Status": "OK",
-    "OLEObject":{
-    ......
-    } 
+  "Code": 200,
+  "Status": "OK",
+  "OLEObject": {
+    "Name": "Object1",
+    "Width": 200,
+    "Height": 150,
+    "Left": 10,
+    "Top": 20,
+    "IsLocked": false,
+    "FileFormat": "png"
+  }
 }
 ```
 
@@ -75,11 +92,30 @@ OU
 
 {{< /tabs >}}
 
+## Réponses d’erreur
+
+| Statut HTTP | Code d’erreur | Description                                      |
+| ----------- | ------------- | ------------------------------------------------ |
+| 400         | BadRequest    | Paramètres manquants ou non valides.             |
+| 401         | Unauthorized  | Jeton JWT invalide ou manquant.                  |
+| 404         | NotFound      | Classeur, feuille de calcul ou objet OLE introuvable. |
+| 500         | ServerError   | Erreur serveur inattendue.                       |
+
+**Exemple de réponse 404**
+
+```json
+{
+  "Code": 404,
+  "Status": "NotFound",
+  "Message": "L'objet OLE numéro 0 n'a pas été trouvé dans la feuille 'Sheet1'."
+}
+```
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+Utiliser un SDK est la méthode la plus rapide pour intégrer l’API. Les SDK gèrent les détails de bas niveau afin que vous puissiez vous concentrer sur votre logique métier. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

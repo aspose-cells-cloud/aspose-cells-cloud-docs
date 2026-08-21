@@ -1,73 +1,96 @@
-﻿---
-title: Очистить содержимое и стили Cells в рабочем листе Excel
+---
+title: "Очистка содержимого и стилей ячеек в листе Excel"
 type: docs
 url: /ru/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Очистить содержимое и стили Cells в рабочем листе Excel
+keywords:
+  - Aspose.Cells
+  - Excel API
+  - очистка содержимого ячейки
+  - очистка стилей ячейки
+  - облачная электронная таблица
+  - REST API
+description: "Узнайте, как с помощью Aspose.Cells Cloud REST API очистить содержимое и стили ячеек в листе Excel, включая примеры cURL и фрагменты кода SDK."
+ArticleTitle: "Очистка содержимого и стилей ячеек в листе Excel – Aspose.Cells Cloud API"
 ---
-Этот REST API указывает на ячейки `clear` `content` в файле Excel.
 
-## РСЕT API
+Перед использованием конечной точки **Clear Contents and Styles** убедитесь, что у вас есть:
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
- 
+* Действительный **JWT-токен**, полученный в процессе аутентификации Aspose.Cells Cloud.  
+* Загруженная рабочая книга в выбранное место хранения (или доступная через параметр `folder`).  
+* Установленная необходимая версия SDK, если вы предпочитаете работать с одной из языко-специфичных клиентских библиотек.
+
+Этот REST API очищает содержимое ячеек в файле Excel.
+
+## API PostClearContents
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
 ```
 
-Параметры запроса:
+### **Безопасность и аутентификация**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей тетради.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| диапазон| нить| запрос| Ассортимент.|
-| startRow| целое число| запрос| Стартовый ряд.|
-| startColumn| целое число| запрос| Начальная колонка.|
-| конец строки| целое число| запрос| Последний ряд.|
-| конец столбца| целое число| запрос| Конечная колонка.|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+Aspose.Cells Cloud API защищены и требуют <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">аутентификации по токену JWT</a>.
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+### **Ответ**
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**HTTP-коды состояния**
+
+| Код | Значение                    | Описание                                         |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | OK (OK)                     | Фильтр успешно применён; ответ содержит сведения об операции. |
+| 400 | Bad Request (Неверный запрос) | Отсутствуют или некорректны параметры (например, неподдерживаемый тип файла). |
+| 401 | Unauthorized (Неавторизовано) | Неверный или отсутствующий JWT-токен. |
+| 413 | Payload Too Large (Слишком большой объём полезной нагрузки) | Загруженный файл превышает допустимый размер. |
+| 500 | Internal Server Error (Внутренняя ошибка сервера) | Непредвиденная ошибка сервера. |
+
+## Как использовать API PostClearContents с SDK
+
+### Спецификация API PostClearContents
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. Приведённый ниже пример демонстрирует, как выполнять вызовы облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Семейство облачных SDK
+### Использование SDK Aspose.Cells Cloud
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя сосредоточиться на задачах проекта. Полный список SDK Aspose.Cells Cloud см. в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Приведённые ниже примеры кода демонстрируют, как выполнять вызовы веб-сервисов Aspose.Cells с помощью различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +143,28 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cell
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Очистка содержимого и стилей ячеек в листе Excel",
+  "description": "Как использовать Aspose.Cells Cloud REST API для очистки содержимого и стилей ячеек в листе Excel.",
+  "url": "https://docs.aspose.cloud/cells/ru/clear-contents-and-styles-of-cells-in-excel-worksheet/",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2023-07-08",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://docs.aspose.cloud/cells/images/Aspose-image-for-open-graph.jpg",
+      "caption": "Aspose.Cells Cloud – Очистка содержимого и стилей ячеек"
+    }
+  },
+  "keywords": "Aspose.Cells, Excel API, очистка содержимого ячейки, очистка стилей ячейки, REST API, облачная электронная таблица"
+}
+</script>

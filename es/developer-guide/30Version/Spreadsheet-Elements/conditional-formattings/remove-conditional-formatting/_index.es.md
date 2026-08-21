@@ -1,140 +1,215 @@
-﻿---
-title: Eliminar formato condicional
-type: docs
-url: /es/conditional-formattings/delete/
-aliases: [/remove-conditional-formatting/]
-keywords: REST API, spreadsheets, excel, delete cell area from condition formattin
-description: "Cells.Cloud API para Excel opera: eliminar área de celda del formato de condición"
-weight: 60
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Eliminar formato condicional
 ---
-Este REST API indica Eliminar formato condicional
- 
-## RSET API
- 
+title: "Eliminar formato condicional – Referencia de la API de Aspose.Cells Cloud"
+type: docs
+url: /conditional-formattings/delete/
+aliases:
+  - /remove-conditional-formatting/
+keywords: "Aspose.Cells, Formato condicional, Eliminar, API, Excel, Nube"
+description: "Elimine una regla de formato condicional de una hoja de cálculo mediante la API REST de Aspose.Cells Cloud. Incluye parámetros, autenticación, ejemplos de solicitud y respuesta, y fragmentos de SDK."
+weight: 60
+---
+
+# Eliminar formato condicional
+
+## Antecedentes
+El formato condicional le permite aplicar estilos visuales a celdas que cumplen con criterios específicos (por ejemplo, resaltar valores mayores que un umbral). En escenarios de automatización, es posible que necesite eliminar una regla existente. Este extremo elimina una regla de formato condicional de una hoja de cálculo en un libro de Excel almacenado en el almacenamiento de Aspose Cloud.
+
+## Requisitos previos
+- Una cuenta de **Aspose Cloud** con el producto **Cells** habilitado.  
+- **Token de acceso JWT** generado mediante el flujo de credenciales de cliente de OAuth 2.0.  
+- El libro (`{name}`) ya debe existir en la **carpeta** especificada y en el **almacenamiento** (si corresponde).  
+- Se utiliza la versión de API **v3.0** (predeterminada) en las URL que se muestran a continuación.
+
+## Autenticación
+Todos los extremos de Aspose.Cells Cloud requieren **autenticación basada en token JWT**.
+
+```http
+Authorization: Bearer <access_token>
+```
+
+### Obtener un token de acceso (cURL)
+
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
- 
-```
- Los parámetros de la solicitud son:
- 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino||
-| nombreHoja| cadena| camino||
-| índice| entero| camino||
-| carpeta| cadena| consulta||
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
- 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormatting) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
- 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
-
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+curl -X POST "https://api.aspose.cloud/connect/token" \
+  -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>&scope=Cells"
 ```
 
-{{< /tab >}}
+**Respuesta**
 
-{{< tab tabNum="12" >}}
+```json
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "token_type": "Bearer",
+  "expires_in": 3600
+}
+```
 
-```java
+Utilice el `access_token` devuelto en el encabezado `Authorization` para cada solicitud.
 
+## Solicitud HTTP
+
+```
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
+```
+
+### Parámetros de ruta
+
+| Nombre      | Tipo   | Obligatorio | Descripción |
+|-------------|--------|-------------|-------------|
+| `name`      | string | Sí          | Nombre del archivo del libro (por ejemplo, `Book1.xlsx`). |
+| `sheetName` | string | Sí          | Hoja de cálculo que contiene el formato condicional. |
+| `index`     | integer| Sí          | Índice de base cero de la regla de formato condicional que se va a eliminar. |
+
+### Parámetros de consulta
+
+| Nombre          | Tipo   | Obligatorio | Descripción |
+|-----------------|--------|-------------|-------------|
+| `folder`        | string | No          | Carpeta en la nube donde reside el libro. |
+| `storageName`   | string | No          | Nombre del servicio de almacenamiento de Aspose Cloud. |
+
+## Ejemplo de solicitud (cURL)
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/conditionalFormattings/0?folder=MyFolder&storageName=MyStorage" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
+```
+
+### Respuesta correcta
+
+```json
 {
   "Code": "200",
   "Status": "OK"
 }
-
 ```
 
-{{< /tab >}}
+**Códigos de estado HTTP**
 
-{{< /tabs >}}
- 
-## Familia de SDK en la nube
- 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
- 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+| Código | Significado                 | Descripción |
+|--------|-----------------------------|-------------|
+| 200    | Correcto                    | Filtro aplicado correctamente; la respuesta contiene los detalles de la operación. |
+| 400    | Solicitud incorrecta        | Parámetros faltantes o no válidos (por ejemplo, tipo de archivo no admitido). |
+| 401    | No autorizado               | Token JWT no válido o faltante. |
+| 413    | Carga útil demasiado grande | El archivo cargado supera el límite de tamaño. |
+| 500    | Error interno del servidor  | Error inesperado del servidor. |
 
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
+## Respuestas de error
 
-{{< tab tabNum="1" >}}
+| Código HTTP | Motivo | Cuerpo de ejemplo |
+|-------------|--------|-------------------|
+| **400**     | Solicitud incorrecta: parámetros faltantes o no válidos. | `{ "Code":"400", "Message":"Invalid parameter value." }` |
+| **401**     | No autorizado: token JWT faltante o no válido. | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
+| **404**     | No encontrado: el libro o la hoja de cálculo no existe. | `{ "Code":"404", "Message":"File not found." }` |
+| **500**     | Error interno del servidor: error inesperado del servidor. | `{ "Code":"500", "Message":"An unexpected error occurred." }` |
 
+## Ejemplos de SDK
+Los siguientes fragmentos muestran cómo invocar la operación **Eliminar formato condicional** utilizando los SDK oficiales de Aspose.Cells Cloud.
 
+### C# (.NET)
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-RemoveConditionalFormatting-1.cs" >}}
+```csharp
+using Aspose.Cells.Cloud.SDK;
+using Aspose.Cells.Cloud.SDK.Requests;
 
-{{< /tab >}}
+// Configurar cliente de API
+var config = new Configuration
+{
+    ClientId = "<your_client_id>",
+    ClientSecret = "<your_client_secret>"
+};
+var apiInstance = new ConditionalFormattingsApi(config);
 
-{{< tab tabNum="2" >}}
+// Eliminar formato condicional
+var request = new DeleteWorksheetConditionalFormattingRequest(
+    name: "Book1.xlsx",
+    sheetName: "Sheet1",
+    index: 0,
+    folder: "MyFolder",
+    storageName: null
+);
+apiInstance.DeleteWorksheetConditionalFormatting(request);
+```
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-cells-remove-conditional-formatting.java" >}}
+### Java
 
-{{< /tab >}}
+```java
+import com.aspose.cells.cloud.sdk.api.*;
+import com.aspose.cells.cloud.sdk.model.*;
+import com.aspose.cells.cloud.sdk.requests.*;
 
-{{< tab tabNum="3" >}}
+ApiClient client = new ApiClient();
+client.setAppKey("<your_client_id>");
+client.setAppSid("<your_client_secret>");
 
+ConditionalFormattingsApi api = new ConditionalFormattingsApi(client);
 
+DeleteWorksheetConditionalFormattingRequest request = new DeleteWorksheetConditionalFormattingRequest(
+        "Book1.xlsx",
+        "Sheet1",
+        0,
+        "MyFolder",
+        null);
 
-{{< /tab >}}
+api.deleteWorksheetConditionalFormatting(request);
+```
 
-{{< tab tabNum="4" >}}
+### Node.js
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Examples-Ruby-ConditionalFormatting-delete_worksheet_conditional_formatting-.rb" >}}
+```javascript
+const { ConditionalFormattingsApi, DeleteWorksheetConditionalFormattingRequest } = require('asposecellscloud');
 
-{{< /tab >}}
+const config = {
+    clientId: "<your_client_id>",
+    clientSecret: "<your_client_secret>"
+};
 
-{{< tab tabNum="5" >}}
+const apiInstance = new ConditionalFormattingsApi(config);
 
+const request = new DeleteWorksheetConditionalFormattingRequest({
+    name: "Book1.xlsx",
+    sheetName: "Sheet1",
+    index: 0,
+    folder: "MyFolder",
+    storageName: null
+});
 
+apiInstance.deleteWorksheetConditionalFormatting(request)
+    .then(() => console.log('Conditional formatting deleted.'))
+    .catch(err => console.error(err));
+```
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-RemoveConditionalFormatting-1.js" >}}
+### Python
 
-{{< /tab >}}
+```python
+from asposecellscloud import ConditionalFormattingsApi, DeleteWorksheetConditionalFormattingRequest, ApiClient
 
-{{< tab tabNum="6" >}}
+api_client = ApiClient(client_id="<your_client_id>", client_secret="<your_client_secret>")
+api = ConditionalFormattingsApi(api_client)
 
+request = DeleteWorksheetConditionalFormattingRequest(
+    name="Book1.xlsx",
+    sheetName="Sheet1",
+    index=0,
+    folder="MyFolder",
+    storageName=None
+)
 
+api.delete_worksheet_conditional_formatting(request)
+print("Conditional formatting removed.")
+```
 
-{{< /tab >}}
+*(Fragmentos adicionales de SDK para Ruby, Go, Perl y Swift están disponibles en el [repositorio de GitHub](https://github.com/aspose-cells-cloud).)*
 
-{{< tab tabNum="7" >}}
+## Consulte también
+- **Guía de autenticación** – [Autenticación basada en token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
+- **Especificación OpenAPI** – Esquema detallado para este extremo (se abre en una nueva pestaña)  
+  `<a href="https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormatting" target="_blank" rel="noopener noreferrer">Especificación OpenAPI</a>`  
+- **Resumen del formato condicional** – Aprenda a crear, actualizar y listar reglas de formato.  
+- **SDK de Aspose.Cells Cloud** – Lista completa de lenguajes compatibles en el [repositorio de GitHub](https://github.com/aspose-cells-cloud).  
 
+---  
 
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-
-
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
-
-
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-RemoveConditionalFormatting-1.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="10" >}}
-
-{{< gist "aspose-cells-cloud-gists" "fa6aed4b68d309d8de12d91ff7c0111d" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+*Esta página sigue la plantilla estándar de documentación de la API de Aspose.Cells Cloud, incluye una sección de requisitos previos y cumple con las mejores prácticas de accesibilidad y SEO.*

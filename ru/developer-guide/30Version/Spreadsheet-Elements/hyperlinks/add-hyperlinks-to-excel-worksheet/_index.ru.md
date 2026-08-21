@@ -1,81 +1,84 @@
-﻿---
-title: Объявление
+---
+title: "Добавление гиперссылки в рабочий лист"
 type: docs
 url: /ru/hyperlinks/add/
 aliases: [/add-hyperlinks-to-excel-worksheet/]
-keywords: Add a hyperlink into an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает добавление гиперссылки в рабочий лист Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+keywords: "Aspose.Cells, добавить гиперссылку, Excel REST API, облачный SDK"
+description: "Узнайте, как добавить гиперссылку в рабочий лист Excel с помощью Aspose.Cells Cloud REST API v3.0. Включает адрес конечной точки, полное руководство по параметрам, пример cURL и фрагменты кода SDK для C#, Java, Python и других языков."
 weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Добавить
 ---
-Этот REST API указывает на `add a worksheet hyperlink` на рабочем листе Excel.
 
-## РСЕT API
+Этот REST API добавляет гиперссылку в рабочий лист Excel.
+
+## REST API
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-Параметры запроса:
+### Параметры запроса
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_листа| нить| путь| Название рабочего листа.|
-| firstRow| целое число| запрос||
-| первый столбец| целое число| запрос||
-| totalRows| целое число| запрос||
-| всего столбцов| целое число| запрос||
-| адрес| нить| запрос||
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра | Тип    | Расположение | Описание                                                                                       |
+| ------------- | ------ | ------------ | ---------------------------------------------------------------------------------------------- |
+| name          | string | path         | Имя документа.                                                                                 |
+| sheetName     | string | path         | Имя рабочего листа.                                                                            |
+| firstRow      | integer | query       | Индекс первой строки диапазона (отсчитывается от нуля), к которому будет применена гиперссылка. |
+| firstColumn   | integer | query       | Индекс первого столбца диапазона (отсчитывается от нуля), к которому будет применена гиперссылка. |
+| totalRows     | integer | query       | Количество строк, охватываемых диапазоном гиперссылки.                                         |
+| totalColumns  | integer | query       | Количество столбцов, охватываемых диапазоном гиперссылки.                                      |
+| address       | string | query        | Целевой URL, на который указывает гиперссылка (в URL-кодировке).                              |
+| folder        | string | query        | Папка документа.                                                                               |
+| storageName   | string | query        | Имя хранилища.                                                                                 |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+Запрос также может включать JSON-тело, содержащее те же поля (`Address`, `FirstRow`, `FirstColumn`, `TotalRows`, `TotalColumns`). Указание тела полезно, если вы предпочитаете передавать параметры через полезную нагрузку, а не через строку запроса.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+### Ответы об ошибках
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| HTTP-код | Причина                                               | Пример тела ответа                                                 |
+| -------- | ----------------------------------------------------- | ------------------------------------------------------------------ |
+| **400**  | Неверный запрос — отсутствуют или некорректны параметры. | `{ "Code":"400", "Message":"Invalid parameter value." }`          |
+| **401**  | Неавторизован — отсутствует или недействителен JWT-токен. | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
+| **404**  | Не найдено — рабочая книга или рабочий лист не существуют. | `{ "Code":"404", "Message":"File not found." }`                   |
+| **500**  | Внутренняя ошибка сервера — непредвиденная ошибка сервера. | `{ "Code":"500", "Message":"An unexpected error occurred." }`     |
+
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink) определяет публично доступное программное интерфейсное описание и позволяет выполнять взаимодействие с REST API напрямую из веб-браузера.
+
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как выполнять вызовы облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks?firstRow=1&firstColumn=6&totalRows=1&totalColumns=1&address=https%3A%2F%2Fwww.msnbc.com%2F" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Если запрос завершается с ошибкой, API возвращает стандартные HTTP-коды ошибок (например, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error), а также JSON-тело, содержащее сообщение об ошибке и её код.
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это самый быстрый способ разработки. SDK берёт на себя обработку низкоуровневых деталей, позволяя вам сосредоточиться на задачах вашего проекта. Полный список облачных SDK Aspose.Cells представлен в [репозитории GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

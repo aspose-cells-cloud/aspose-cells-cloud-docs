@@ -1,98 +1,113 @@
-﻿---
-title: Hämta en specifik dokumentegenskap
-second_title: Documen
-linktitle: Ge
-type: docs
-url: /sv/document-properties/get/
-aliases: [/get-a-particular-document-property/]
-keywords: Get properties from excel files
-description: Aspose.Cells Cloud REST API stöder hämtning av egenskaper från Excel-filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta en specifik dokumentegenskap
 ---
-Denna REST API anger att dokumentegenskapen ska läsas efter namn.
+title: "Hämta en specifik dokumentegenskap"
+second_title: "Dokument"
+linktitle: "Hämta"
+type: docs
+url: /document-properties/get/
+aliases: [/get-a-particular-document-property/]
+keywords: "Aspose.Cells, molntjänst, hämta dokumentegenskap, Excel-metadata, REST GET, SDK-exempel"
+description: "Hämta en namngiven dokumentegenskap (t.ex. författare, titel) från en Excel-fil med Aspose.Cells Cloud REST API. Innehåller cURL-exempel, SDK-utdrag och svarsschema."
+weight: 20
+---
 
-## RSET API
+Denna REST API läser en dokumentegenskap med namn.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
 ```
 
-Begäranparametrarna är:
+### Parametrar för begäran
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamnet.|
-| egenskapsnamn| sträng| väg| Fastighetens namn.|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| ParameterNamn   | Typ    | Plats  | Beskrivning                                      |
+| --------------- | ------ | ------ | ------------------------------------------------ |
+| name            | string | path   | Namnet på Excel-filen.                           |
+| propertyName    | string | path   | Namnet på den dokumentegenskap som ska hämtas.   |
+| folder          | string | query  | Mappen som innehåller filen (valfritt).          |
+| storageName     | string | query  | Lagringsnamnet (valfritt).                       |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Du kan använda **cURL kommandoradsverktyget** för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till molntjänsten med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "DocumentProperty": {
-
     "Name": "Author",
-
     "Value": "",
-
     "BuiltIn": "True",
-
     "link": {
-
       "Href": "/test.xlsx/documentproperties/Author",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Detaljer för svar
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+JSON-objektet som returneras av API:et innehåller följande fält:
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+| Fält                            | Typ     | Beskrivning                                                   |
+| ------------------------------- | ------- | ------------------------------------------------------------- |
+| **DocumentProperty.Name**       | string  | Namnet på egenskapen (t.ex. `Author`).                        |
+| **DocumentProperty.Value**      | string  | Värdet för egenskapen. Kan vara tomt om inte angivet.         |
+| **DocumentProperty.BuiltIn**    | boolean | Anger om egenskapen är en inbyggd Excel-egenskap.             |
+| **DocumentProperty.link.Href**  | string  | Relativ URL till egenskapsresursen.                            |
+| **DocumentProperty.link.Rel**   | string  | Relations typ, vanligtvis `self`.                             |
+| **DocumentProperty.link.Title** | string  | Mänsklig läsbar titel (kan vara `null`).                      |
+| **DocumentProperty.link.Type**  | string  | MIME-typ för den länkade resursen (kan vara `null`).          |
+| **Code**                        | integer | HTTP-statuskod som returnerats av tjänsten.                   |
+| **Status**                      | string  | Textuell beskrivning av statusen (t.ex. `OK`).                |
+
+### Felaktiga svar
+
+| HTTP-status | Kod                    | Beskrivning                                         |
+| ----------- | ---------------------- | --------------------------------------------------- |
+| 400         | `InvalidParameter`     | En eller flera begäransparametrar är ogiltiga.     |
+| 401         | `AuthenticationFailed` | Saknas eller ogiltigt JWT-token.                   |
+| 404         | `PropertyNotFound`     | Den angivna dokumentegenskapen finns inte.         |
+| 500         | `InternalError`        | Ett oväntat fel uppstod på servern.                 |
+
+Ett typiskt felmeddelande ser ut så här:
+
+```json
+{
+  "Code": 404,
+  "Status": "Property not found"
+}
+```
+
+## Molnsdk-familj
+
+Att använda en sdk är det bästa sättet att påskynda utvecklingen. En sdk hanterar detaljer på låg nivå så att du kan fokusera på dina projektuppgifter. Kontrollera [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:n.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells webbtjänster med olika SDK:n:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -145,3 +160,24 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Terminologi
+
+| Term                  | Definition                                                                                          |
+| --------------------- | --------------------------------------------------------------------------------------------------- |
+| **Document Property** | En bit metadata kopplad till en Excel-arbetsbok (t.ex. författare, titel, skapat).                |
+| **Metadata**          | Generellt uttryck för data som beskriver annan data; i detta sammanhang avses dokumentegenskaper. |
+| **Custom Property**   | En användardefinierad egenskap som inte ingår i den inbyggda uppsättningen.                        |
+
+### Vanliga frågor
+
+**Fråga:** _Hur kan jag hämta författaregenskapen för en Excel-fil som lagras i Aspose Cloud?_  
+**Svar:** Skicka en GET-begäran till `https://api.aspose.cloud/v3.0/cells/{fileName}/documentproperties/author` med ett giltigt Bearer-token. SVaret JSON innehåller `DocumentProperty.Name = "Author"` och dess `Value`.
+
+**Fråga:** _Vilket fel returneras om den begärda egenskapen inte finns?_  
+**Svar:** API:et returnerar HTTP 404 med ett JSON-svar innehållande `Code: 404` och `Status: "Property not found"`.
+
+**Fråga:** _Måste jag ange `storageName` när filen finns i standardlagringen?_  
+**Svar:** Nej. Parametern `storageName` är valfri; utelämna den för att använda standardlagringen som konfigurerats för ditt konto.
+
+---

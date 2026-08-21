@@ -1,84 +1,106 @@
-﻿---
-title: Excel çalışma sayfasındaki bir filtreyi silin
-second_title: Documen
-linktitle: Filtreyi sil
-type: docs
-url: /tr/delete-filter/
-aliases: [/delete-a-filter-for-a-filter-column/,/delete-auto-filter/]
-keywords: Deletes a filter on an Excel worksheet
-description: Aspose.Cells Cloud API, Excel çalışma sayfasındaki bir filtrenin silinmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 100
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki bir filtreyi silme
 ---
-Bu REST API, Excel Çalışma Sayfasındaki `filter`'i silmeyi gösterir.
+title: "Bir Excel Çalışma Sayfasından Bir Filtre Silme – Aspose.Cells Cloud API"
+second_title: "Belge"
+linktitle: "Filtreyi sil"
+type: docs
+url: /delete-filter/
+aliases: [/delete-a-filter-for-a-filter-column/, /delete-auto-filter/]
+keywords: "Aspose.Cells Cloud filtre silme, Excel, REST API, SDK"
+description: "Aspose.Cells Cloud REST API, cURL ve SDK’lar (C#, Java, Python vb.) kullanarak bir Excel çalışma sayfasından Otomatik Filtre’yi nasıl sileceğinizi öğrenin.uç nokta, parametreler, kimlik doğrulama ve örnek kod içerir."
+weight: 100
+---
 
-## RSET API
+## REST API
+
+Bu REST API, bir Excel çalışma sayfasındaki bir **Otomatik Filtre**'yi siler.
 
 ```bash
-
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
-
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| Yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| Yol| Çalışma sayfasının adı.|
-|menzil|sicim| Sorgu||
-|alanIndeksi|tam sayı| Sorgu||
-|tarihZamanGruplamaTürü|sicim| Sorgu| Gün/Saat/Dakika/Ay/Saniye/Yıl|
-|yıl|tam sayı| Sorgu||
-|ay|tam sayı| Sorgu||
-|gün|tam sayı| Sorgu||
-|saat|tam sayı| Sorgu||
-|dakika|tam sayı| Sorgu||
-|ikinci|tam sayı| Sorgu||
-|matchBlanks|sicim| Sorgu|doğru/yanlış|
-|yenilemek|sicim| Sorgu|doğru/yanlış|
-|dosya|sicim| Sorgu|Orijinal çalışma kitabı klasörü.|
-|depolamaAdı|sicim| Sorgu|Depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı          | Tür      | Konum | Gerekli mi? | Açıklama                                                                                 |
+| ---------------------- | -------- | ----- | ----------- | ---------------------------------------------------------------------------------------- |
+| **name**               | string   | Yol   | Evet        | Çalışma kitabının adı.                                                                   |
+| **sheetName**          | string   | Yol   | Evet        | Çalışma sayfasının adı.                                                                  |
+| **range**              | string   | Sorgu | Hayır       | Filtrenin uygulanacağı hücre aralığı (örneğin, `A1:C10`).                               |
+| **fieldIndex**         | integer  | Sorgu | Evet        | Filtrenin uygulandığı sütunun sıfır tabanlı indeksi.                                    |
+| **dateTimeGroupingType** | string | Sorgu | Hayır       | Tarih/saat değerlerinin nasıl gruplandığı: `Day`, `Hour`, `Minute`, `Month`, `Second`, `Year`. |
+| **year**               | integer  | Sorgu | Hayır       | Tarih gruplaması için yıl bileşeni.                                                      |
+| **month**              | integer  | Sorgu | Hayır       | Tarih gruplaması için ay bileşeni.                                                       |
+| **day**                | integer  | Sorgu | Hayır       | Tarih gruplaması için gün bileşeni.                                                      |
+| **hour**               | integer  | Sorgu | Hayır       | Tarih gruplaması için saat bileşeni.                                                     |
+| **minute**             | integer  | Sorgu | Hayır       | Tarih gruplaması için dakika bileşeni.                                                   |
+| **second**             | integer  | Sorgu | Hayır       | Tarih gruplaması için saniye bileşeni.                                                   |
+| **matchBlanks**        | boolean  | Sorgu | Hayır       | `true` / `false` – Boş hücrelerin filtrede dahil edilip edilmeyeceği.                   |
+| **refresh**            | boolean  | Sorgu | Hayır       | `true` / `false` – Silme işleminden sonra çalışma sayfasının yenilenip yenilenmeyeceği. |
+| **folder**             | string   | Sorgu | Hayır       | Orijinal çalışma kitabının klasörü.                                                      |
+| **storageName**        | string   | Sorgu | Hayır       | Depo adı.                                                                                |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Yanıt**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlamı                      | Açıklama                                             |
+|-----|-----------------------------|------------------------------------------------------|
+| 200 | OK                          | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request                 | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized                | Geçersiz veya eksik JWT belirteci.                   |
+| 413 | Payload Too Large           | Yüklenen dosya boyut sınırını aşıyor.                |
+| 500 | Internal Server Error       | Beklenmeyen sunucu hatası.                           |
+
+## SDK’larla DeleteWorksheetFilter API’yi Nasıl Kullanılır
+
+### DeleteWorksheetFilter API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenizi sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL kullanarak Cloud API’yi nasıl çağıracağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?fieldIndex=0&criteria=Year" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?fieldIndex=0&dateTimeGroupingType=Year" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanın
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirmeyi hızlandırmanın en etkili yoludur. Bir SDK, düşük seviye detayları yöneterek size proje görevlerinize odaklanma imkânı sunar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerine çeşitli SDK’lar kullanarak nasıl istekte bulunulacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

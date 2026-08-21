@@ -1,82 +1,97 @@
-﻿---
-title: حذف البيانات الوصفية على ملفات Excel
-second_title: Documen
-linktitle: حذف بدون استخدام التخزين
-type: docs
-url: /ar/metadata/delete/
-keywords: Deleting metadata from Excel files
-description: يدعم Cloud REST حذف البيانات الوصفية من ملفات Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 55
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حذف البيانات الوصفية على ملفات Excel.
 ---
-يشير هذا REST API إلى حذف `metadata` من ملفات Excel المتعددة.
+title: "حذف البيانات الوصفية من ملفات Excel"
+second_title: "مستند"
+linktitle: "حذف دون استخدام التخزين"
+type: docs
+url: /metadata/delete/
+keywords: "Aspose.Cells, حذف البيانات الوصفية, واجهة برمجة تطبيقات Excel, خصائص المصنف"
+description: "احذف البيانات الوصفية للمصنف (المؤلف، العنوان، البيانات المخصصة) عبر واجهة برمجة تطبيقات Aspose.Cells Cloud. يتضمن نقطة النهاية، المصادقة، المُعلمات، وأمثلة لـ cURL وSDK."
+weight: 55
+ArticleTitle: "حذف البيانات الوصفية من ملفات Excel – مستندات Aspose.Cells Cloud"
+---
 
-## RSET API
+**نظرة عامة**  
+تقوم عملية حذف البيانات الوصفية بإزالة جميع خصائص المصنف (القياسية والمخصصة) بشكل دائم من ملف(ات) Excel المرفوع وتعيد الملف(ات) المعالَج(ة) في الاستجابة.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/metadata/delete
- 
+**المتطلبات المسبقة**  
+- رمز JWT صالح لـ Aspose.Cells Cloud (يمكن الحصول عليه عبر تدفق مصادقة OAuth 2.0).  
+- إصدار واجهة برمجة التطبيقات **v3.0** (نقطة النهاية المستخدمة في هذا المثال).  
+- لاستخدام SDKs، ثبّت SDK المناسب لـ Aspose.Cells Cloud بلغة برمجتك (مثلًا عبر NuGet أو Maven أو npm أو pip أو CPAN أو وحدات Go).
+
+تقوم هذه واجهة برمجة تطبيقات REST بحذف **البيانات الوصفية** من ملف(ات) Excel واحدة أو أكثر. وتزيل خصائص المصنف مثل المؤلف والعنوان والبيانات المخصصة، ثم تعيد الملفات النظيفة.
+
+## واجهة برمجة التطبيقات
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/metadata/delete
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| ملف| ملف| نموذج البيانات| الملف للتحميل|
-| يكتب| خيط| استفسار| الجميع|
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة مبنية على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/DeleteMetadata) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **معاملات الطلب**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل | النوع | الموقع | الوصف |
+|------------|-------|--------|--------|
+| file | ملف | formData | ملف Excel المراد رفعه لحذف **البيانات الوصفية** |
+| type | نص | استعلام | نوع العملية؛ ضعها على **all** لحذف جميع **البيانات الوصفية** |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+يُعرّف <a href="https://apireference.aspose.cloud/cells/#/DeleteMetadata" target="_blank" rel="noopener noreferrer">مواصفات OpenAPI</a> واجهة برمجة تطبيقات قابلة للوصول عامًا وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات ويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات لواجهة برمجة التطبيقات السحابية باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="الطلب" tabName12="الاستجابة" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/metadata/delete" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'  
+curl -v "https://api.aspose.cloud/v3.0/cells/metadata/delete?type=all" \
+  -X POST \
+  -H "Authorization: Bearer <jwt token>" \
+  -F "file=@file1.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "file1.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+قد تشمل **استجابات الخطأ** ما يلي:
+
+- **400 طلب غير صالح** – ملف مفقود أو قيمة `type` غير صحيحة.
+- **401 غير مخوّل** – رمز JWT غير صالح أو مفقود.
+- **500 خطأ داخلي في الخادم** – خطأ في معالجة الخادم من الجهة الخلفية.
+
+تعيد واجهة برمجة التطبيقات كائن JSON يحتوي على حقل `Error` يحتوي على التفاصيل لكل حالة.
+
+| الرمز | المعنى | الوصف |
+|-------|--------|--------|
+| 200 | نجاح | تم حذف البيانات الوصفية، وتم إعادة الملف |
+| 400 | طلب غير صالح | ملف مفقود أو `type` غير صالح |
+| 401 | غير مخوّل | رمز JWT غير صالح أو مفقود |
+| 500 | خطأ داخلي في الخادم | فشل في معالجة الخادم |
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. يتعامل SDK مع التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى الاطلاع على <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">مستودع GitHub</a> للاطّلاع على قائمة كاملة بـ SDKs لـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+توضح أمثلة الرمز التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

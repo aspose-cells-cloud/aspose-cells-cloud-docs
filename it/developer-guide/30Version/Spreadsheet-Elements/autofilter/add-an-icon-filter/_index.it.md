@@ -1,79 +1,115 @@
-﻿---
-title: Aggiungere un filtro icona in un foglio di lavoro Excel
-second_title: Documen
-linktitle: Aggiungi filtro icona
+---
+title: "Aggiungi un filtro a icone a un foglio di lavoro Excel"
+second_title: "Documento"
+linktitle: "Aggiungi filtro a icone"
 type: docs
 url: /it/autofilter/add-icon-filter/
-aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
-keywords: Adds an icon filter on an Excel worksheet
-description: Il Cloud Aspose.Cells API supporta l'aggiunta di un filtro icona su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
+aliases: [/it/add-an-icon-filter/,/it/autofilter/add-an-icon-filter/]
+keywords: "Aspose.Cells Cloud, Excel, Filtro a icone, Filtro automatico, API REST"
+description: "Scopri come aggiungere un filtro a icone a un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud, con i dettagli della richiesta, un esempio cURL, campioni di codice SDK e gestione degli errori."
 weight: 65
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Aggiungi un filtro icona in un foglio di lavoro Excel
+ArticleTitle: "Aggiungi un filtro a icone a un foglio di lavoro Excel – Documentazione Aspose.Cells Cloud"
 ---
-Questo REST API indica di aggiungere un `icon filter` su un foglio di lavoro Excel.
 
-## RSET API
+## API REST
+
+Questa API REST aggiunge un **filtro a icone** a un foglio di lavoro Excel utilizzando l'**API REST di Aspose.Cells Cloud**.
+
+**Contesto:** Un filtro a icone applica un insieme visivo di icone alle celle in base ai loro valori, consentendo un'analisi rapida dei trend dei dati tramite rappresentazione visiva. I casi d'uso più comuni includono l'evidenziazione di metriche di prestazione, indicatori di stato o la categorizzazione dei valori con icone a semaforo direttamente all'interno dei fogli di lavoro Excel.
+
 
 ```bash
-
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter
-
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| Sentiero| Il nome della cartella di lavoro.|
-| Nome foglio| corda| Sentiero| Il nome del foglio di lavoro.|
-|allineare|corda| Domanda||
-|fieldIndex|intero| Domanda||
-|iconSetType|corda| Domanda| Frecce3/FrecceGrigie3/Bandiere3/Segnali3/Simboli3/Simboli32/Semafori31/Semafori32/Frecce4/FrecceGrigie4/Valutazione4/Rosso-Nero4/Semafori4/Frecce5/FrecceGrigie5/Quarti5/Valutazione5/Stelle3/Caselle5/Triangoli3/Nessuno/Set Personalizzato/Emoticon3/Emoticon Colorate3|
-|ID icona|intero| Domanda||
-|matchBlanks|corda| Domanda|vero/falso|
-|aggiornare|corda| Domanda|vero/falso|
-|cartella|corda| Domanda|Cartella della cartella di lavoro originale.|
-|Nome di archiviazione| Domanda|corda|Nome dell'archivio.|
+Le API di Aspose.Cells Cloud sono sicure e richiedono <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">l'autenticazione basata su token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+### Parametri della richiesta:
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Nome parametro | Tipo    | Posizione | Descrizione |
+|----------------|---------|-----------|-------------|
+| name           | string  | Path      | Nome del workbook. |
+| sheetName      | string  | Path      | Nome del foglio di lavoro. |
+| range          | string  | Query     | Intervallo di celle (ad esempio, `A1:B1`) a cui verrà applicato il filtro. |
+| fieldIndex     | integer | Query     | Indice in base zero della colonna interessata dal filtro. |
+| iconSetType    | string  | Query     | Insieme di icone da utilizzare. Valori ammessi: `Arrows3`, `ArrowsGray3`, `Flags3`, `Signs3`, `Symbols3`, `Symbols32`, `TrafficLights31`, `TrafficLights32`, `Arrows4`, `ArrowsGray4`, `Rating4`, `RedToBlack4`, `TrafficLights4`, `Arrows5`, `ArrowsGray5`, `Quarters5`, `Rating5`, `Stars3`, `Boxes5`, `Triangles3`, `None`, `CustomSet`, `Smilies3`, `ColorSmilies3`. |
+| iconId         | integer | Query     | Identificatore dell'icona specifica all'interno dell'insieme selezionato. |
+| matchBlanks    | boolean | Query     | Determina se le celle vuote vengono incluse (`true` o `false`). |
+| refresh        | boolean | Query     | Indica se il filtro deve essere aggiornato dopo l'applicazione (`true` o `false`). |
+| folder         | string  | Query     | Cartella contenente il workbook originale. |
+| storageName    | string  | Query     | Nome dello storage in cui risiede il workbook. |
+
+### **Risposta**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Codici di stato HTTP**
+
+| Codice | Significato                 | Descrizione                                      |
+|--------|-----------------------------|--------------------------------------------------|
+| 200    | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida        | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401    | Non autorizzato             | Token JWT non valido o mancante. |
+| 413    | Payload troppo grande       | Il file caricato supera il limite di dimensione. |
+| 500    | Errore interno del server   | Errore imprevisto del server. |
+
+## Come utilizzare l'API PutWorksheetIconFilter con gli SDK
+
+### Specifica dell'API PutWorksheetIconFilter
+
+La [Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) definiscono un'interfaccia di programmazione pubblicamente accessibile e consentono di effettuare interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web di Aspose.Cells. L'esempio seguente mostra come effettuare una chiamata all'API Cloud con cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Richiesta" tabName12="Risposta" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/iconFilter?range=A1:B1&fieldIndex=0&iconSetType=ArrowsGray3&iconId=1" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/iconFilter?range=A1:B1&fieldindex=0&iconsettype=ArrowsGray3&iconid=1" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
+Possibili codici di stato della risposta:
+
+| Codice | Descrizione |
+|--------|-------------|
+| 200    | Filtro applicato correttamente. |
+| 400    | Richiesta non valida – parametri mancanti o non validi. |
+| 401    | Non autorizzato – token di autenticazione non valido o mancante. |
+| 404    | Workbook, foglio di lavoro o intervallo specificato non trovato. |
+| 500    | Errore interno del server. |
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+### Utilizzare gli SDK di Aspose.Cells Cloud
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+L'utilizzo di un SDK rappresenta il modo migliore per velocizzare lo sviluppo. Un SDK gestisce i dettagli di basso livello, consentendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice mostrano come chiamare i servizi web di Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -126,3 +162,5 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Per ulteriori funzionalità di AutoFilter, consulta la documentazione su **[Aggiungi filtro per colore](/it/autofilter/add-color-filter/)**, **[Aggiungi filtro per data](/it/autofilter/add-date-filter/)** e **[Rimuovi filtro automatico](/it/autofilter/clear-autofilter/)**.

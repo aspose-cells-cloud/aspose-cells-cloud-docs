@@ -1,64 +1,65 @@
-﻿---
-title: Nyheter i Aspose.Cells Cloud år 2022
-second_title: Documen
-linktitle: Vad är nytt i 202
+---
+title: Vad är nytt i Aspose.Cells Cloud 2022
+second_title: "Dokument"
+linktitle: "Vad är nytt 2022"
 type: docs
 weight: 90
-url: /sv/new-features/2023/
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: Den här sidan beskriver de mest intressanta nya Aspose.Cells Cloud-funktionerna som introducerats i de senaste utgåvorna.
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Nyheter i Aspose.Cells Moln
+url: /new-features/2023/
+keywords: "Vad är nytt i Aspose.Cells Cloud. Microsoft Office Excel, Open Office-kalkylark, CSV, PDF."
+description: "Denna sida beskriver de mest intressanta nya funktionerna i Aspose.Cells Cloud som introducerats i de senaste utgåvorna."
+kwords: Excel, Office Cloud, REST API, Kalkylark, PDF, CSV, Json, Markdown, Vad är nytt i Aspose.Cells Cloud
 ---
-Välkommen till nyheterna i Aspose.Cells Cloud-dokument. Använd den här sidan för att snabbt hitta de senaste ändringarna.
 
-## Aspose.Cells Moln 22.12
+Välkommen till dokumentationen för vad som är nytt i Aspose.Cells Cloud. Använd den här sidan för snabbt att hitta de senaste ändringarna.
 
-- Stöd för diagramaxeloperation.
+## Aspose.Cells Cloud 22.12
 
-## Aspose.Cells Moln 22.11
+- Stöd för diagramaxeloperationer.
 
-- Lägg till nytt API för konvertering till json.
-- Lägg till nytt API för konvertering till SQL.
-- Lägg till nytt API för att konvertera till CVS.
+## Aspose.Cells Cloud 22.11
 
-## Aspose.Cells Moln 22.10
+- Nytt API för konvertering till JSON.
+- Nytt API för konvertering till SQL.
+- Nytt API för konvertering till CSV.
 
-- Lägg till nytt API för att konvertera till pptx.
-- Lägg till nytt API för att konvertera till markdown.
-- Lägg till nytt API för konvertering till html.
+## Aspose.Cells Cloud 22.10
 
-## Aspose.Cells Moln 22.9
+- Nytt API för konvertering till PPTX.
+- Nytt API för konvertering till Markdown.
+- Nytt API för konvertering till HTML.
 
-- Stöd för export av sidor till andra filformat.
-- Lägg till ett nytt API för att konvertera till pdf.
-- Lägg till nytt API för att konvertera till png.
-- Lägg till nytt API för konvertering till docx.
+## Aspose.Cells Cloud 22.9
 
-## Aspose.Cells Moln 22.8
+- Stöd för export av sida till andra filformat.
+- Nytt API för konvertering till PDF.
+- Nytt API för konvertering till PNG.
+- Nytt API för konvertering till DOCX.
 
-- Stöder transponering av Excel rader till kolumner.
+## Aspose.Cells Cloud 22.8
 
-## Aspose.Cells Moln 22.7
+- Stöd för att transponera Excel-rader till kolumner.
 
-- Förbättrad Spara API på Cells molntjänster (lägg till fyra sparalternativ).
-- Optimerad LightCellsController på cells cloud.
+## Aspose.Cells Cloud 22.7
 
-## Aspose.Cells Moln 22.6
+- Förbättring av Save-API på Cells Cloud-tjänster (lägger till fyra sparningsoptioner).
+- Optimerad LightCellsController i Cells Cloud.
 
-- [Förbättring för Cells Cloud API:er.](/cells/sv/aspose-cells-cloud-22-6-release-notes/)
-- Stöd för att konvertera filer i zip-paketet till olika format.
+## Aspose.Cells Cloud 22.6
 
-## Aspose.Cells Moln 22.5
+- [Förbättring av Cells Cloud-API:er.](/cells/aspose-cells-cloud-22-6-release-notes/)
+- Stöd för att konvertera filer i ZIP-paket till olika format.
 
-- [Förbättring för export API.](https://docs.aspose.cloud/cells/export/)
-- [Förbättring för tydlig API.](https://docs.aspose.cloud/cells/clear/)
+## Aspose.Cells Cloud 22.5
 
-## Aspose.Cells Moln 22.4
+- [Förbättring av export-API.](https://docs.aspose.cloud/cells/export/)
+- [Förbättring av clear-API.](https://docs.aspose.cloud/cells/clear/)
 
-- Fixa några buggar.
-- [Förbättring för Swagger-gränssnittet.](https://apireference.aspose.cloud/cells/)
+## Aspose.Cells Cloud 22.4
 
-## Aspose.Cells Moln 22.3
+- Åtgärdade några buggar.
+- [Förbättring av Swagger UI.](https://apireference.aspose.cloud/cells/)
 
-- [Lägg till ny API om specifikation för byggkodgenerering.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
-- [Stöd för att lägga till digital signatur för Aspose.Cells Cloud.](/cells/sv/workbook/digital-signature/)
+## Aspose.Cells Cloud 22.3
+
+- [Nytt API för att bygga kodgenereringsspecifikationer.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
+- [Stöd för att lägga till digital signatur i Aspose.Cells Cloud.](/cells/workbook/digital-signature/)

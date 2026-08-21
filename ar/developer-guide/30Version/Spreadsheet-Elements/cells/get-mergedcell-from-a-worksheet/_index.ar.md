@@ -1,89 +1,121 @@
-﻿---
-title: الحصول على MergedCell من ورقة عمل
-type: docs
-url: /ar/get-mergedcell-from-a-worksheet/
-weight: 60
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على MergedCell من ورقة عمل
 ---
-يشير هذا REST API إلى الحصول على `merged cell` في ملف Excel.
+title: "الحصول على الخلايا المدمجة من ورقة عمل Excel – واجهة برمجة تطبيقات Aspose.Cells Cloud"
+type: docs
+url: /get-mergedcell-from-a-worksheet/
+weight: 60
+keywords: "Aspose.Cells Cloud، الخلايا المدمجة، ورقة عمل Excel، واجهة برمجة تطبيقات REST، Aspose.Cells SDK، الخلايا المدمجة في Excel"
+description: "تعرّف على كيفية استرداد نطاقات الخلايا المدمجة من ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0). يشمل خطوات المصادقة، طلب cURL الكامل، مخطط الاستجابة، معالجة الأخطاء، وأمثلة SDK بلغات C# وJava وPython وغيرها."
+---
 
-## RSET API
+تُعيد هذه الواجهة البرمجية لمخدمات REST معلومات حول **الخلايا المدمجة** في ورقة عمل Excel.
+
+> **ملاحظة** – يُسمى كائن الواجهة البرمجية **MergedCell** (مفرد). أما في النصوص التفسيرية فنُشير إلى *المفهوم* العام للخلايا المدمجة (جمع).
+
+## واجهة برمجة التطبيقات (REST API)
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
 ```
 
-معلمات الطلب هي:
+## الأمان والمصادقة
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم مجموعة العمل.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تتطلب واجهات برمجة تطبيقات Aspose.Cells Cloud مصادقةً مبنية على [رمز JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)، وهي آمنة.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل | النوع   | الموقع | الوصف                              |
+|-------------|---------|--------|--------------------------------------|
+| **name**    | نص (string) | المسار (path) | اسم ملف Excel.                      |
+| **sheetName** | نص (string) | المسار (path) | اسم ورقة العمل.                     |
+| **folder**  | نص (string) | الاستعلام (query) | المجلد الذي يحتوي على المستند.     |
+| **storageName** | نص (string) | الاستعلام (query) | اسم وحدة التخزين المراد استخدامها. |
+
+## **الاستجابة**
+
+ترجع استجابة من نوع `MergedCellsResponse`.
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "MergedCells":{
+    "Count": 0,
+    "MergedCellList":[
+      {
+        "Link":{
+          "Href":"",
+          "Rel":"",
+          "Type":"",
+          "Title":""
+        }
+      }
+    ]
+  }
+}
+```
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى                         | الوصف                                              |
+|-------|--------------------------------|------------------------------------------------------|
+| 200   | نجاح (OK)                      | تمت تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400   | طلب غير صالح (Bad Request)     | معاملات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم). |
+| 401   | غير مخوّل (Unauthorized)       | رمز JWT غير صالح أو مفقود.                           |
+| 413   | حجم الحمولة كبير جدًا (Payload Too Large) | تجاوز حجم الملف المرفوع الحد المسموح به.          |
+| 500   | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم.                           |
+
+## كيفية استخدام واجهة GetWorksheetMergedCells مع مكتبات SDK
+
+### مواصفات واجهة GetWorksheetMergedCells
+
+تعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells) على واجهة برمجة تطبيقات عامة قابلة للاستدعاء وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر `cURL` للوصول بسهولة إلى خدمات الويب الخاصة بـ Aspose.Cells. يوضح المثال التالي كيفية إجراء استدعاء إلى واجهة برمجة تطبيقات السحابة باستخدام `cURL`.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/mergedCells/0"  \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/mergedCells" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-  "MergedCell": {
-
-    "EndColumn": 7,
-
-    "EndRow": 1,
-
-    "StartColumn": 0,
-
-    "StartRow": 1,
-
-    "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/cells/mergedcells/0",
-
-      "Rel": "self"
-
-    }
-
+  "MergedCells": {
+    "Count": 1,
+    "MergedCells": [
+      {
+      "link": {
+            "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/cells/mergedcells/0",
+            "Rel": "self"
+          }
+      }
+    ]    
   },
-
   "Code": "200",
-
   "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+### استخدام مكتبات SDK الخاصة بـ Aspose.Cells Cloud
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+يُعد استخدام مكتبات SDK أسرع طريقة لتطوير التطبيقات مقابل الواجهة البرمجية. فتتولى المكتبات معالجة التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على منطق عملك. راجع [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بمكتبات SDK الخاصة بـ Aspose.Cells Cloud.
+
+ تعرض أمثلة الكود التالية كيفية استدعاء خدمات الويب الخاصة بـ Aspose.Cells باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

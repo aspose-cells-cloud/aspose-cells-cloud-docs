@@ -1,74 +1,83 @@
-﻿---
-title: Ställ in zoom för ett Excel-arbetsblad
-second_title: Documen
-linktitle: Zoo
-type: docs
-url: /sv/worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
-keywords: Set zoom for an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder zoominställning för ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ställ in zoom för ett Excel-kalkylblad
 ---
-Denna REST API indikerar `set the zoom value of Excel worksheet`.
- 
-## RSET API
- 
+title: "Ställ in zoom för ett Excel-ark – Aspose.Cells Cloud API v3.0"
+second_title: "Dokument"
+linktitle: "Zoom"
+type: docs
+url: /worksheets/zoom/
+aliases: [/set-zoom-in-excel-worksheet/]
+keywords: "Aspose.Cells, Excel-zoom, ark-zoom, REST API, molntjänst, Excel-automatisering"
+description: "Lär dig hur du ställer in arkzoom (10–400 %) med Aspose.Cells Cloud API v3.0. Inkluderar cURL- och SDK-exempel samt felhantering."
+weight: 20
+ArticleTitle: "Ställ in zoom för ett Excel-ark – Aspose.Cells Cloud API v3.0"
+---
+
+Denna REST API ställer in zoomvärdet för ett Excel-ark. **Autentisering** krävs; inkludera en giltig Bearer JWT-token i `Authorization`-huvudet för varje förfrågan.
+
+## Säkerhet och autentisering
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom
 ```
- Begäranparametrarna är:
- 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg||
-| arknamn| sträng| väg||
-| värde| heltal| fråga||
-| mapp| sträng| fråga||
-| lagringsnamn| sträng| fråga| lagringsnamn.|
- 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
- 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
- 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
+### **Förfrågningsparametrar**
+
+| Parameter   | Typ     | Plats  | Beskrivning                                                       |
+| ----------- | ------- | ------ | ----------------------------------------------------------------- |
+| name        | string  | path   | Namn på Excel-filen (arbetsboken).                                |
+| sheetName   | string  | path   | Namn på arket som ska ändras.                                     |
+| value       | integer | query  | Zoomprocent (tillåtet intervall **10–400**, t.ex. `40` för 40 %). |
+| folder      | string  | query  | Mappväg där filen är lagrad.                                      |
+| storageName | string  | query  | Namn på lagringstjänsten.                                         |
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur man gör en förfrågan till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Förfrågan" tabName2="Svar" >}}
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/zoom?value=40" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <ditt_jwt_token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
-## Cloud SDK-familjen
- 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
- 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
- 
+
+**Information om felresponser**  
+Möjliga HTTP-statuskoder inkluderar:
+
+- `400 Bad Request` – saknade eller ogiltiga parametrar.
+- `401 Unauthorized` – saknad eller ogiltig JWT-token.
+- `404 Not Found` – angiven fil eller ark finns inte.
+- `500 Internal Server Error` – oväntat serverfel.
+
+Varje felrespons returnerar en JSON-kropp med en `Code` och en beskrivande `Message`.
+
+## Moln-SDK-familj
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lågnivå och låter dig fokusera på dina projektuppgifter. Se [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en fullständig lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man gör förfrågningar till Aspose.Cells-webbtjänster med diverse SDK:er:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 

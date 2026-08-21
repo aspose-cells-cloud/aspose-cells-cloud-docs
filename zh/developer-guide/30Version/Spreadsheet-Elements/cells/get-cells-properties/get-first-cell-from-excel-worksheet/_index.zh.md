@@ -1,97 +1,120 @@
-﻿---
-title: 从 Excel 工作表中获取第一个单元格
+---
+title: "从 Excel 工作表中获取第一个单元格 (A1)"
 type: docs
 url: /zh/get-first-cell-from-excel-worksheet/
 weight: 20
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表获取第一个单元格
+keywords: "Aspose.Cells Cloud, Excel, REST API, 获取第一个单元格, 工作表, A1, API v3"
+description: "了解如何使用 Aspose.Cells Cloud REST API v3.0 获取 Excel 工作表中的第一个单元格 (A1)。包含 cURL 请求示例、JSON 响应示例、错误示例以及 C#、Java、PHP、Python 等语言的 SDK 示例。"
+ArticleTitle: "使用 Aspose.Cells Cloud API 从 Excel 工作表中获取第一个单元格 (A1)"
 ---
-此 REST API 表示当 `cellOrMethodName` 参数为 `firstcell` 时，在 Excel 文件中获取 `firstcell`。
+
+本 REST API 演示了当 `cellOrMethodName` 参数设置为 `firstcell` 时，如何获取 Excel 文件中的**第一个单元格**。
+
+**端点**  
+`GET https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{worksheet}/cells/firstcell`
 
 - **cURL 示例**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```shell
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+**参数**
+
+| 参数名               | 类型   | 描述                                               | 必填 |
+|----------------------|--------|----------------------------------------------------|------|
+| `cellOrMethodName`   | string | 必须设置为 `firstcell` 以获取第一个单元格。       | 是   |
+| `fileName`           | string | 工作簿文件名（例如 `myWorkbook.xlsx`）。           | 是   |
+| `worksheet`          | string | 工作表名称（例如 `Sheet1`）。                      | 是   |
+| `Authorization`      | header | 用于身份验证的 Bearer 令牌。                       | 是   |
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "A1",
-
     "Row": 0,
-
     "Column": 0,
-
     "Value": "Category",
-
     "Type": "IsString",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
     "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Category</Font>",
-
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
+
+**错误响应**
+
+- **401 未授权**
+
+```json
+{
+  "Code": "401",
+  "Message": "无效的访问令牌。"
+}
+```
+
+- **404 未找到**
+
+```json
+{
+  "Code": "404",
+  "Message": "指定的工作簿、工作表或单元格不存在。"
+}
+```
+
+- **500 内部服务器错误**
+
+```json
+{
+  "Code": "500",
+  "Message": "服务器上发生意外错误。"
+}
+```
+
+**HTTP 状态码**
+
+| 状态码 | 含义               | 描述                                       |
+|--------|--------------------|--------------------------------------------|
+| 200    | OK（成功）         | 过滤器应用成功；响应包含操作详情。         |
+| 400    | Bad Request（错误请求） | 缺少或无效参数（例如不支持的文件类型）。  |
+| 401    | Unauthorized（未授权） | 无效或缺失 JWT 令牌。                     |
+| 413    | Payload Too Large（载荷过大） | 上传文件超出大小限制。                  |
+| 500    | Internal Server Error（内部服务器错误） | 服务器发生意外错误。                 |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK 系列**
+- **云 SDK 开发工具包系列**
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是加速开发的最佳方式。SDK 处理底层细节，让您专注于项目任务。请访问 [GitHub 仓库](https://github.com/aspose-cells-cloud) 查看 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
-
-- **Cloud SDK 系列**
-
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
-
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

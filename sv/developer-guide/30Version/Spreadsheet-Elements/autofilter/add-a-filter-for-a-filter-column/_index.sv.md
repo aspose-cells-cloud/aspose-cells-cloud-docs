@@ -1,62 +1,88 @@
-﻿---
-title: Lägg till ett filter i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Lägg till filter
-type: docs
-url: /sv/autofilter/add-filter/
-aliases: [/add-a-filter-for-a-filter-column/]
-keywords: Adds a filter for a filter column on an Excel worksheet
-description: "Aspose.Cells Cloud API har stöd för att lägga till ett filter för en filterkolumn på ett Excel-arbetsblad. SDK:n stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
-weight: 60
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lägg till ett filter i ett Excel-kalkylblad
 ---
-Denna REST API anger att `a filter` ska läggas till för en filterkolumn i ett Excel-arbetsblad.
+title: "Lägg till ett filter i ett Excel-ark"
+second_title: "Dokument"
+linktitle: "Lägg till filter"
+type: docs
+url: /autofilter/add-filter/
+aliases: [/add-a-filter-for-a-filter-column/]
+keywords: "Aspose.Cells, moln, Excel, AutoFilter, lägg till filter, REST API, SDK"
+description: "Lär dig hur du lägger till ett autofilter i en kolumn i ett Excel-ark med Aspose.Cells Cloud REST API. Innehåller cURL-exempel, SDK-exempel och parameterguide."
+weight: 60
+ArticleTitle: "Lägg till ett filter i ett Excel-ark med Aspose.Cells Cloud"
+---
 
-## RSET API
+**Förutsättningar:** Innan du anropar detta API måste du hämta en giltig JWT-token, se till att målarboksen är uppladdad till det angivna lagringsutrymmet och ha de nödvändiga behörigheterna för att komma åt filen. En nyare version av cURL (7.68 eller senare) rekommenderas för kommandoradsexempel.
 
-```bash
+Detta REST API lägger till ett filter för en specifik kolumn i ett Excel-ark.
 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
+## PutWorksheetFilter API
 
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
 ```
 
-Begäranparametrarna är:
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| Väg| Arbetsbokens namn.|
-| arknamn| sträng| Väg| Arbetsbladets namn.|
-|räckvidd|sträng| Fråga||
-|fältindex|heltal| Fråga||
-|kriterier|sträng| Fråga||
-|matchBlanks|sträng| Fråga|sant/falskt|
-|uppdatera|sträng| Fråga|sant/falskt|
-|mapp|sträng| Fråga|Original arbetsboksmapp.|
-|lagringsnamn|sträng| Fråga|Lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+### Begäranens parametrar
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+| Parameter_name | Typ     | Plats  | Beskrivning |
+|----------------|---------|--------|-------------|
+| name           | string  | Path   | Namnet på arbetsboken. |
+| sheetName      | string  | Path   | Namnet på arket. |
+| range          | string  | Query  | Cellområdet som innehåller filtret (t.ex. `A1:B1`). |
+| fieldIndex     | integer | Query  | Nollbaserat index för kolumnen som filtret ska tillämpas på. |
+| criteria       | string  | Query  | Filterkriterierna (t.ex. ett värde eller en uttryck). |
+| matchBlanks    | boolean | Query  | Sätt till `true` för att inkludera tomma celler i filtret; annars `false`. |
+| refresh        | boolean | Query  | Sätt till `true` för att uppdatera filtret efter tillämpning; annars `false`. |
+| folder         | string  | Query  | Mappen där den ursprungliga arbetsboken lagras. |
+| storageName    | string  | Query  | Namnet på lagringstjänsten. |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Svar**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betydelse                   | Beskrivning                                      |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens information. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Obehörig                    | Ogiltig eller saknad JWT-token. |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
+
+## Hur du använder PutWorksheetFilter API med SDK:er
+
+### PutWorksheetFilter API-specificering
+
+<a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter" target="_blank" rel="noopener noreferrer">OpenAPI-specificeringen</a> definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur du anropar API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?range=A1:B1&fieldIndex=0&criteria=Year" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?range=A1:B1&fieldIndex=0&criteria=Year" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Code": 200,
   "Status": "OK"
@@ -67,11 +93,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda en SDK är det snabbaste sättet att utveckla. En SDK hanterar detaljer på låg nivå så att du kan fokusera på ditt projekt. Kontrollera <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub-förrådet</a> för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur du anropar Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

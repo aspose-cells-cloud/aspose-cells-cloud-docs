@@ -1,74 +1,91 @@
-﻿---
-title: Mettre à jour la validation d'une feuille de calcul sur une feuille de calcul Excel
-second_title: Documen
-linktitle: Mise à jour
-type: docs
-url: /fr/validations/update/
-keywords: Delete a worksheet validation on an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge la suppression d'une validation de feuille de calcul sur une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 10
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Mettre à jour la validation d'une feuille de calcul sur une feuille de calcul Excel
 ---
-Ce REST API indique de mettre à jour la validation de la feuille de calcul par index sur une feuille de calcul Excel.
+title: "Mettre à jour une validation de feuille de calcul dans une feuille de calcul Excel"
+second_title: "Document"
+linktitle: "Mettre à jour"
+type: docs
+url: /validations/update/
+keywords: "Aspose.Cells Cloud, mise à jour de la validation Excel, API REST, validation de feuille de calcul, API Excel"
+description: "Comment mettre à jour une validation de feuille de calcul dans un fichier Excel à l’aide de l’API REST Aspose.Cells Cloud, avec des exemples cURL et des extraits de code SDK pour plusieurs langages de programmation."
+weight: 10
+ArticleTitle: "Mettre à jour la validation de feuille de calcul à l’aide de l’API Aspose.Cells Cloud"
+---
 
-## RSET API
+Cette API REST met à jour une validation de feuille de calcul à partir de son index dans une feuille de calcul Excel.
+
+Avant d’appeler ce point de terminaison, obtenez un jeton d’accès JWT avec les portées appropriées (par exemple, `Cells.ReadWrite`). Incluez le jeton dans l’en-tête `Authorization`, comme indiqué dans les exemples.
+
+## API REST
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
-Les paramètres de la requête sont :
+### **Paramètres de la requête**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
-| validationIndex| entier| chemin| L'indice de validation.|
-| validation| objet| corps||
-| dossier| chaîne| requête| Dossier du document.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+| Nom du paramètre | Type    | Emplacement | Description                                                    |
+| ---------------- | ------- | ----------- | -------------------------------------------------------------- |
+| name             | string  | path        | Le nom du fichier du classeur.                                 |
+| sheetName        | string  | path        | Le nom de la feuille de calcul contenant la validation.       |
+| validationIndex  | integer | path        | L’index de base zéro de la validation à mettre à jour.        |
+| validation       | object  | body        | Un objet JSON définissant les paramètres mis à jour de la validation. |
+| folder           | string  | query       | Le dossier dans le stockage cloud où se trouve le classeur.   |
+| storageName      | string  | query       | Le nom du service de stockage (si un stockage personnalisé est utilisé). |
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PostWorksheetValidation) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+La <a href="https://apireference.aspose.cloud/cells/#/WorksheetValidations/PostWorksheetValidation" target="_blank" rel="noopener noreferrer">Spécification OpenAPI</a> définit une interface de programmation accessible publiquement et vous permet d’effectuer des interactions REST directement depuis un navigateur web.
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+Vous pouvez utiliser l’outil en ligne de commande cURL pour appeler facilement les services web Aspose.Cells. L’exemple suivant montre comment effectuer un appel vers l’API Cloud avec cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"AlertStyle\":\"Warning\"}" 
+-H "Authorization: Bearer <jeton jwt>" \
+-d '{ "AlertStyle":"Warning" }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Codes d’état HTTP possibles**
+
+| Code | Signification                             | Description |
+|------|-------------------------------------------|-------------|
+| 200  | OK                                        | La validation a été mise à jour avec succès. |
+| 400  | Requête incorrecte                        | La requête est mal formée ou des paramètres obligatoires sont manquants. |
+| 401  | Non autorisé                              | Le jeton JWT est invalide ou manquant. |
+| 403  | Interdit                                  | Le jeton ne dispose pas des portées suffisantes. |
+| 404  | Non trouvé                                | Le classeur, la feuille de calcul ou l’index de validation spécifié n’existe pas. |
+| 500  | Erreur interne du serveur                 | Une erreur inattendue s’est produite sur le serveur. |
+
+Pour plus de détails sur la gestion des erreurs, reportez-vous à la <a href="https://apireference.aspose.cloud/cells/#/Errors" target="_blank" rel="noopener noreferrer">documentation d’erreurs Aspose.Cells Cloud</a>.
+
+Vous souhaiterez peut-être également explorer des opérations associées, telles que l’ajout d’une nouvelle validation ou la suppression d’une validation existante :
+
+- [Ajouter une validation de feuille de calcul](https://docs.aspose.cloud/cells/validations/add/)
+- [Supprimer une validation de feuille de calcul](https://docs.aspose.cloud/cells/validations/delete/)
+
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+Utiliser un SDK est le moyen le plus rapide de développer. Un SDK masque les détails de bas niveau, vous permettant de vous concentrer sur votre logique métier. Veuillez consulter le <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">dépôt GitHub</a> pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

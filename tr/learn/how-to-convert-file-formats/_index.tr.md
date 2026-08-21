@@ -1,64 +1,65 @@
-﻿---
-title: Aspose.Cells Clou ile elektronik tablo dosya biçimleri nasıl dönüştürülür
-linktitle: E-tablo dosya biçimi nasıl dönüştürülür
-type: docs
-url: /tr/how-to-convert-file-formats
-description: Aspose.Cells Cloud ile dosya formatları nasıl dönüştürülür?
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Aspose.Cells Bulut aracılığıyla dosya formatlarını nasıl dönüştürebilirim?
 ---
-## giriiş
+title: "Aspose.Cells Cloud ile elektronik tablo dosyası biçimlerini nasıl dönüştüreceğiniz"
+linktitle: "Elektronik tablo dosya biçimlerini nasıl dönüştüreceğiniz"
+type: docs
+url: /how-to-convert-file-formats
+description: "Aspose.Cells Cloud ile dosya biçimlerini nasıl dönüştüreceğiniz."
+weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, JSON, Markdown, Aspose.Cells Cloud ile dosya biçimlerini nasıl dönüştüreceğiniz
+---
 
-Aspose.Cells Bulut E-Tablosu API, yerel ve bulut tabanlı e-tablo dosyalarını dönüştürmek için bir dizi çift kanallı arayüz sağlar. Excel (XLS, XLSX), CSV, HTML ve PDF gibi formatları destekleyerek, çeşitli ihtiyaçları karşılamak için dönüştürmeyi zahmetsiz hale getirir.
+## Giriş
 
-### Üç Dönüştürme Modu · Birleşik Nesne Modeli · Tam Biçim Kapsamı
+Aspose.Cells Cloud Elektronik Tablo API’si, yerel ve bulut tabanlı elektronik tablo dosyalarını dönüştürmek için çift kanallı bir arayüz seti sunar. Excel (XLS, XLSX), CSV, HTML ve PDF gibi biçimleri destekler; böylece çeşitli ihtiyaçlara kolayca uygun dönüşümler yapmanızı sağlar.
+
+### Üç Dönüşüm Modu · Tek Bir Nesne Modeli · Tüm Biçim Kapsamı
 
 ![Dönüşüm Modları](image.png)
 
-## **Çekirdek Dönüşüm Matrisi**
+## **Temel Dönüşüm Matrisi**
 
-| Dönüşüm Türü| Nesne Düzeyi| Tipik API| Çıktı Biçimleri|
-|-----------------|-------------|---------------------------|--------------------------|
-|**Yerel Dönüşüm**  | Çalışma kitabı|`ConvertSpreadsheet`            | PDF/XLSX/JSON/.... 30+ format|
-|| Çalışma sayfası|`ConvertWorksheetToImage`       |PNG/JPEG/SVG                   |
-|||`ConvertWorksheetToPdf`         | PDF|
-|| Masa|`ConvertTableToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertTableToPdf`             | PDF|
-|||`ConvertTableToCsv`             | CSV|
-|||`ConvertTableToHtml`            | HTML|
-|||`ConvertTableToJson`            | HTML|
-|| Menzil|`ConvertRangeToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertRangeToPdf`             | PDF|
-|||`ConvertRangeToCsv`             | CSV|
-|||`ConvertRangeToHtml`            | HTML|
-|||`ConvertRangeToJson`            | JSON|
-|| Çizelge|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
-|||`ConvertChartToPdf`             |PDF                            |
-|**Bulut Dönüşümü**  | Çalışma kitabı|`ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... 30+ format|
-|| Çalışma sayfası|`ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... 30+ format|
-|| Masa|`ExportTableAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
-|| Menzil|`ExportRangeAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
-|| Çizelge|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
-|**Bulut Farklı Kaydet**     | Çalışma kitabı|`SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... 30+ format|
+| Dönüşüm Türü          | Nesne Seviyesi    | Tipik API                       | Çıkış Biçimleri                |
+|-----------------------|-------------------|---------------------------------|--------------------------------|
+| **Yerel Dönüşüm**     | Çalışma Kitabı    | `ConvertSpreadsheet`            | PDF/XLSX/JSON/.... 30+ biçim  |
+|                       | Çalışma Sayfası   | `ConvertWorksheetToImage`       | PNG/JPEG/SVG                   |
+|                       |                   | `ConvertWorksheetToPdf`         | PDF                            |
+|                       | Tablo             | `ConvertTableToImage`           | PNG/JPEG/SVG/....              |
+|                       |                   | `ConvertTableToPdf`             | PDF                            |
+|                       |                   | `ConvertTableToCsv`             | CSV                            |
+|                       |                   | `ConvertTableToHtml`            | HTML                           |
+|                       |                   | `ConvertTableToJson`            | JSON                           |
+|                       | Aralık            | `ConvertRangeToImage`           | PNG/JPEG/SVG/....              |
+|                       |                   | `ConvertRangeToPdf`             | PDF                            |
+|                       |                   | `ConvertRangeToCsv`             | CSV                            |
+|                       |                   | `ConvertRangeToHtml`            | HTML                           |
+|                       |                   | `ConvertRangeToJson`            | JSON                           |
+|                       | Grafik            | `ConvertChartToImage`           | PNG/JPEG/SVG/....              |
+|                       |                   | `ConvertChartToPdf`             | PDF                            |
+| **Bulut Dönüşümü**    | Çalışma Kitabı    | `ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... 30+ biçim  |
+|                       | Çalışma Sayfası   | `ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... 30+ biçim  |
+|                       | Tablo             | `ExportTableAsFormat`           | PDF/XLSX/JSON/.... 30+ biçim  |
+|                       | Aralık            | `ExportRangeAsFormat`           | PDF/XLSX/JSON/.... 30+ biçim  |
+|                       | Grafik            | `ExportChartAsFormat`           | PDF/XLSX/JSON/.... 30+ biçim  |
+| **Bulut Farklı Kaydet**| Çalışma Kitabı    | `SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... 30+ biçim  |
 
-### **Yerel Dosya Dönüştürme**
+### **Yerel Dosya Dönüşümü**
 
 ```csharp
-// Get Cells Cloud API client
+// Cells Cloud API istemcisini alın
 CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
 ```
 
-- **Excel Dosya Dönüştürme**
+- **Excel Dosyasını Başka Bir Biçime Dönüştürme**
 
 ```c#
-// Convert local Excel to PDF
+// Yerel Excel dosyasını PDF'e dönüştür
 cellsApi.ConvertSpreadsheet(new ConvertSpreadsheetRequest { Spreadsheet = "EmployeeSalesSummary.xlsx", format = "pdf" }, "EmployeeSalesSummary.pdf");
 ```
 
-- **Excel Tablosunu SVG dosyasına dönüştürün**
+- **Excel Grafiğini SVG Dosyasına Dönüştürme**
 
 ```c#
-// Convert local Excel Chart to Svg
+// Yerel Excel grafiğini SVG'ye dönüştür
 cellsApi.ConvertChartToImage(new SDK.Request.ConvertChartToImageRequest
 {
     Spreadsheet = "EmployeeSalesSummary.xlsx",
@@ -69,10 +70,10 @@ cellsApi.ConvertChartToImage(new SDK.Request.ConvertChartToImageRequest
 
 ```
 
-- **Tabloyu CSV dosyasına dönüştür**
+- **Tabloyu CSV Dosyasına Dönüştürme**
 
 ```C#
-# Convert the sale logs table of the Sales worksheet to csv
+// Sales çalışma sayfasının SaleLogs tablosunu CSV'ye dönüştür
 result = api.ConvertTableToCsv( new SDK.Request.ConvertTableToCsvRequest
 {
     Spreadsheet = "EmployeeSalesSummary.xlsx",
@@ -83,19 +84,19 @@ result = api.ConvertTableToCsv( new SDK.Request.ConvertTableToCsvRequest
 
 ```
 
-### **Bulut Dosya Dönüştürme**
+### **Bulut Dosya Dönüşümü**
 
-Ayrıca Aspose Cells Cloud API istemcisini de edinmeniz gerekiyor.
+Aspose Cells Cloud API istemcisini elde etmeniz gerekir.
 
 ```csharp
-// Get Cells Cloud API client
+// Cells Cloud API istemcisini alın
 CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
 ```
 
-- **Excel'i PDF'e dönüştürün**
+- **Excel Dosyasını PDF'e Dönüştürme**
 
 ```csharp
-// Convert cloud Excel to PDF, Save to local file
+// Buluttaki Excel dosyasını PDF'e dönüştür ve yerel dosyaya kaydet
 cellsApi.ExportSpreadsheetAsFormat( new SDK.Request.ExportSpreadsheetAsFormatRequest 
 { 
     name = "EmployeeSalesSummary.xlsx" ,
@@ -104,10 +105,10 @@ cellsApi.ExportSpreadsheetAsFormat( new SDK.Request.ExportSpreadsheetAsFormatReq
 } , "EmployeeSalesSummary.pdf");   
 ```
 
-- **Excel çalışma sayfasını PDF'ye dönüştürün**
+- **Excel Çalışma Sayfasını PDF'e Dönüştürme**
 
 ```csharp
-// Convert cloud Excel worksheet to PDF, Save to local file
+// Buluttaki Excel çalışma sayfasını PDF'e dönüştür ve yerel dosyaya kaydet
 cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
 { 
     name = "EmployeeSalesSummary.xlsx",
@@ -118,7 +119,7 @@ cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest
 ```
 
 ```csharp
-// Convert cloud Excel worksheet to PDF, Save to local file
+// Buluttaki Excel çalışma sayfasını PDF'e dönüştür ve yerel dosyaya kaydet
 cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
 { 
     name = "EmployeeSalesSummary.xlsx",
@@ -128,10 +129,9 @@ cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest
 } , "EmployeeSalesSummary_Sales.pdf");   
 ```
 
-## Aspose.Cells Cloud SDK'sını Yükleme ve Başlatma
+## Aspose.Cells Cloud SDK’nın Kurulması ve Başlatılması
 
-.NET projenize Aspose.Cells-Cloud NuGet paketini kurun, NuGet Paket Yöneticisi Konsolunu veya Visual Studio'deki NuGet Paket Yöneticisini kullanabilirsiniz.
-Paketi Paket Yöneticisi Konsolu'nu kullanarak nasıl kurabileceğiniz aşağıda açıklanmıştır:
+.NET projenize Aspose.Cells-Cloud NuGet paketini yükleyin; bunu NuGet Paket Yöneticisi Konsolu veya Visual Studio’daki NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz. Paketin Konsol üzerinden nasıl yükleneceği aşağıdadır:
 
 ```powershell
 
@@ -139,7 +139,7 @@ Install-Package Aspose.Cells-Cloud
 
 ```
 
-CellsApi sınıfının yeni bir örneğini oluşturur ve istemci kimliğiniz ve istemci sırrınızla başlatır. Yukarıda belirtilen kod parçacığının ayrıntıları aşağıdadır:
+Aşağıdaki kod parçasında, `CellsApi` sınıfının yeni bir örneği oluşturulur ve istemci kimliğiniz ile istemci gizli anahtarınızla başlatılır:
 
 ```CSharp
 
@@ -147,20 +147,22 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ```
 
-KENDİ'nizi değiştirdiğinizden emin olun_API_ANAHTAR, SENİN_UYGULAMA_SID ve SİZİN_UYGULAMA_Gerçek API anahtarınız, uygulama SID'niz ve uygulama anahtarınızla KEY.
+Lütfen `YOUR_API_KEY`, `YOUR_APP_SID` ve `YOUR_APP_KEY` alanlarını gerçek API anahtarınız, uygulama SID’niz ve uygulama anahtarınız ile değiştirin.
 
-## **Dosya Biçimi Dönüştürme Kullanım Örnekleri**
+## **Dosya Biçimi Dönüşümü Kullanım Alanları**
 
- Aspose Cells Bulut API kurumsal düzeyde hizmet sunar**elektronik tablo dönüşümü** Kritik iş senaryoları için yetenekler:
+Aspose Cells Cloud API, kritik iş senaryoları için kurumsal düzeyde **elektronik tablo dönüştürme** yetenekleri sunar:
 
 1. **Excel → PDF**  
- Korunmuş biçimlendirmeyle baskıya hazır raporlar oluşturun
+   Biçimi korunarak yazdırılmaya uygun raporlar oluşturun  
 2. **Elektronik Tablolar → HTML**  
- Etkileşimli tabloları web uygulamalarına yerleştirin
+   Etkileşimli tabloları web uygulamalarına gömün  
 3. **CSV → Excel (XLSX)**  
- Ham verileri analiz edilebilir çalışma kitaplarına dönüştürün
-4. **Özel Format Kod Dönüştürme**  
- 20'den fazla format arasında dönüştürme yapın (XLS, XLSB, ODS, FODS, TSV)
-![Giriş formatlarından çıktı formatlarına dönüştürme](image-1.png)
+   Ham verileri analiz edilebilir çalışma kitaplarına dönüştürün  
+4. **Özel Biçim Dönüştürme**  
+   20+ biçim arasında dönüşüm yapın (XLS, XLSB, ODS, FODS, TSV)  
+![Giriş biçimlerinden çıkış biçimlerine dönüşüm](image-1.png)
 
-## **Sonuç: Tek Bir API Çağrısıyla Dönüşümleri Kolaylaştırın**
+## **Sonuç: Tek API Çağrısıyla Dönüşümleri Basitleştirin**  
+
+---

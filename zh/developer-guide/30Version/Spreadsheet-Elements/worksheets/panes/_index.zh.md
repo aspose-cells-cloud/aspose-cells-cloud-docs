@@ -1,17 +1,15 @@
-﻿---
-title: 如何使用 Excel 工作表上的窗格
-second_title: Documen
-linktitle: 窗格
-type: docs
-url: /zh/worksheets/panes/
-keywords: How to work with panes on an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持在 Excel 工作表上使用窗格。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 20
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、如何在 Excel 工作表上使用窗格
 ---
-## 使用 Excel 工作表上的窗格。
+title: "如何在 Excel 工作表中使用窗格"
+second_title: "文档"
+linktitle: "窗格"
+type: docs
+url: /worksheets/panes/
+keywords: "Excel, 窗格, 冻结窗格, 解冻窗格, Aspose.Cells Cloud, REST API"
+description: "了解如何使用 Aspose.Cells Cloud REST API 在 Excel 工作表中操作窗格，包括在支持的 SDK 语言中冻结和解冻窗格的步骤。"
+weight: 20
+---
 
-- [如何冻结 Excel 工作表上的窗格。](/cells/zh/worksheets/panes/freeze/) 
-- [如何解冻 Excel 工作表上的窗格。](/cells/zh/worksheets/panes/unfreeze/) 
+## 在 Excel 工作表中操作窗格
 
-
+- [如何在 Excel 工作表中冻结窗格](/cells/worksheets/panes/freeze/)  
+- [如何在 Excel 工作表中解冻窗格](/cells/worksheets/panes/unfreeze/)

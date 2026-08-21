@@ -1,75 +1,100 @@
-﻿---
-title: حذف جدول محوري في ورقة عمل Excel
-second_title: Documen
-linktitle: يمسح
+---
+title: "حذف جدول محوري في ورقة عمل Excel"
+second_title: "Document"
+linktitle: Delete
 type: docs
 url: /ar/pivot-tables/delete/
-aliases: [/delete-worksheet-pivot-table-by-index/]
-keywords: Delete a pivot table in an Excel file
-description: يدعم Cloud REST حذف جدول محوري في ملف. تدعم حزمة تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
+aliases: [/ar/delete-worksheet-pivot-table-by-index/]
+keywords: "Aspose.Cells, جدول محوري, حذف, Excel, REST API"
+description: "حذف جدول محوري من ورقة عمل Excel باستخدام Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمن تنسيق الطلب، مثال على cURL، رموز الأخطاء، وأجزاء كود SDK بلغات C#، Java، Python، وNode.js."
 weight: 70
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حذف جدول محوري في ورقة عمل Excel
+ArticleTitle: "كيف تحذف جدولًا محوريًا في ورقة عمل Excel باستخدام Aspose.Cells Cloud"
 ---
-يشير هذا REST API إلى جدول محوري لورقة العمل `delete` حسب الفهرس.
- 
-## RSET API
- 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}
- 
+
+يقوم هذا الـ REST API بحذف جدول محوري من ورقة عمل باستخدام فهرسه.
+
+**المتطلبات المسبقة** – يجب أن يكون لديك رمز وصول JWT صالح لـ Aspose.Cells Cloud، وأن يكون ملف Excel المستهدف مخزنًا في موقع مدعوم للتخزين. تأكد من تحديد اسم الملف، واسم الورقة، وتفاصيل التخزين بشكل صحيح قبل استدعاء الـ API.
+
+تعتبر الجداول المحورية وسيلة قوية لتلخيص البيانات في **ورقة عمل Excel**. باستخدام Aspose.Cells Cloud، يمكنك حذف جدول محوري غير مرغوب فيه برمجيًا باستخدام طلب HTTP DELETE واحد. وتُعد هذه العملية مثالية عند الحاجة إلى تنظيف ورقات العمل، أو أتمتة توليد التقارير، أو دمج تعديل ملفات Excel في تطبيقاتك.
+
+## API DeleteWorksheetPivotTable
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}
 ```
- معلمات الطلب هي:
- 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| فهرس الجدول المحوري| عدد صحيح| طريق| مؤشر جدول المحور|
-| مجلد| خيط| استفسار| مجلد المستند.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
- 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
- 
+
+### **الأمان والمصادقة**
+
+تُعد واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
+
+### **مُعلمات الطلب**
+
+| اسم المُعلمة       | النوع    | الموقع   | الوصف                                              |
+| ------------------ | -------- | -------- | --------------------------------------------------- |
+| name               | string   | path     | اسم مستند Excel.                                   |
+| sheetName          | string   | path     | اسم ورقة العمل التي تحتوي على الجدول المحوري.      |
+| pivotTableIndex    | integer  | path     | الفهرس الصفري (zero-based) للجدول المحوري المراد حذفه. |
+| folder             | string   | query    | المسار إلى المجلد الذي يحتوي على المستند.         |
+| storageName        | string   | query    | اسم خدمة التخزين.                                  |
+
+يُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable) واجهة برمجة تطبيقات متاحة عمومًا، مما يسمح لك بإجراء تفاعلات REST مباشرة من متصفح ويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول إلى خدمات ويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى الـ API السحابي باستخدام cURL.
+
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+**مثال على الاستجابة**
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
+تتبع الاستجابة مخطط JSON بسيط:
+
+```json
+{
+  "Code": integer,   // رمز الحالة المشابه لـ HTTP لعملية الحذف
+  "Status": string   // وصف نصي، مثل "OK"
+}
+```
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
+### معالجة الأخطاء
+
+تُدرج أدناه رموز حالة الاستجابة الشائعة:
+
+| حالة HTTP | الوصف                                                        |
+|----------|-------------------------------------------------------------|
+| 400      | طلب غير صالح – مُعلمات مفقودة أو غير صالحة.                 |
+| 401      | غير مصرح به – رمز JWT غير صالح أو مفقود.                    |
+| 404      | غير موجود – الملف أو الورقة أو الجدول المحوري غير موجود.     |
+| 500      | خطأ داخلي في الخادم – حدثت حالة غير متوقعة على الخادم.      |
+
 ## عائلة SDK السحابية
- 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
- 
- 
+
+يُعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. فتتولى SDK معالجة التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مهام مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الكود التالية كيفية إجراء مكالمات إلى خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -128,3 +153,4 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
 {{< /tab >}}
 
 {{< /tabs >}}
+---

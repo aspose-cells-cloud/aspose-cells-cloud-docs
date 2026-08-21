@@ -1,56 +1,138 @@
-﻿---
-title: Как запустить Docker-контейнер
-second_title: Aspose.Cells Cloud Documen
-type: docs
-url: /ru/getting-started/how-to-run-docker-container/
-aliases: [/how-to-run-docker-container/]
-description: Как запустить контейнер Docker Cloud Aspose.Cells. Cloud Aspose.Cells поддерживает Excel для создания, преобразования, слияния, разделения, защиты, внутренних операций с объектами и т. д.
-weight: 100
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Как запустить Docker-контейнер
 ---
- The**Докер** Технология предназначена для автоматизации развертывания приложений с помощью легковесных контейнеров. Разработчики могут использовать**Docker-контейнер** для упаковки приложения со всеми его библиотеками и зависимостями и развертывания всего как единого пакета.
+title: "Запуск контейнера Aspose.Cells Cloud Docker — извлечение, настройка и запуск"
+second_title: "Документ"
+ArticleTitle: "Как запустить контейнер Aspose.Cells Cloud Docker"
+LinkTitle: "Контейнер Docker"
+type: docs
+url: /getting-started/how-to-run-docker-container/
+aliases: [/how-to-run-docker-container/]
+description: "Узнайте, как извлечь, настроить и запустить контейнер Aspose.Cells Cloud Docker в Windows или Linux. Включает YAML-файл Docker‑Compose, настройку лицензии, сопоставление портов и советы по устранению неполадок."
+weight: 100
+keywords:
+  - "Aspose.Cells Cloud Docker"
+  - "Docker-контейнер"
+  - "Docker Compose"
+  - "ключ лицензии"
+  - "Excel"
+  - "электронная таблица"
+  - "облачный API"
+  - "Docker"
+  - "Aspose Cells"
+  - "API"
+---
 
- Aspose.Cells Команда Cloud опубликовала Docker-контейнер на[Докер-хаб](https://hub.docker.com/r/aspose/cells-cloud)Для удобства пользователей Docker. В следующих разделах вы узнаете, как выполнять команды Docker или записывать конфигурацию в файл Yaml для инструмента Docker Compose.
+Технология Docker предназначена для автоматизации развёртывания приложений с использованием лёгких контейнеров. Разработчики могут использовать Docker-контейнер для упаковки приложения со всеми его библиотеками и зависимостями и развернуть всё как единый пакет.
 
-## Конфигурация контейнера
+Команда Aspose.Cells Cloud опубликовала Docker-контейнер на <a href="https://hub.docker.com/r/aspose/cells-cloud" target="_blank" rel="noopener noreferrer">Docker Hub</a>, чтобы облегчить его использование пользователям Docker.
 
-### Требуемые объемы
+**Предварительные требования** — убедитесь, что установлен Docker Engine ≥ 20.x, и что ваша операционная система (Windows 10/Server 2019/2022 или поддерживаемый дистрибутив Linux) соответствует требованиям. Дополнительно можно указать ключ лицензии для запуска в лицензионном режиме.
 
-|Путь монтирования в контейнере|Описание|
-|:- |:- |
-|C:\fonts|Папка со шрифтами, которые будут использоваться для рендеринга документов|
-|C:\data|Папка для хранения файлов|
+- Docker Engine ≥ 20.x установлен  
+- Поддерживаемая ОС (Windows 10/Server 2019/2022 или дистрибутив Linux)  
+- Дополнительно: ключ лицензии для лицензионного режима  
+
+## Настройка контейнера
+
+### Обязательные тома
+
+| Путь монтирования в контейнере | Описание |
+| :--- | :--- |
+| C:\fonts | Папка с шрифтами, которые будут использоваться при рендеринге документов |
+| C:\data | Папка для хранения файлов |
+
+**Альтернатива для Linux/macOS** — используйте `/fonts` и `/data` внутри контейнера и сопоставьте их с каталогами на хосте, например `/home/user/fonts` и `/home/user/data`, при запуске контейнера.
 
 ### Параметры
 
-|Имя|Описание|
-|:- |:- |
-|LicensePublicKey|Открытый ключ лицензии|
-|LicensePrivateKey|Закрытый ключ лицензии|
+| Имя | Описание |
+| :--- | :--- |
+| LicensePublicKey | Публичный ключ лицензии |
+| LicensePrivateKey | Приватный ключ лицензии |
 
-Если параметры «Лицензия» не указаны, приложение будет работать в пробном режиме.
+Если параметры **License** опущены, приложение запускается в пробном режиме.
 
-### Запуск Docker-контейнера с помощью командной строки
+### 1. Извлечение образа Aspose.Cells Cloud
 
- Вы можете просто запустить следующую команду Docker после извлечения контейнера из[Докер-хаб](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
-
-```JAVA
-docker run   -e "LicensePublicKey=public_key" -e "LicensePrivateKey=private_key" -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 80:5000   aspose/cells-cloud
+```bash
+# Извлечь конкретную версию образа Aspose.Cells Cloud
+docker pull aspose/cells-cloud:25.9.0
 ```
 
-### Конфигурации для инструмента Docker-Compose
+```powershell
+# Извлечь образ Aspose.Cells Cloud для Windows Server 2019
+docker pull aspose/cells-cloud:ltsc2019.25.9.0
 
-Вы можете прописать следующие конфигурации в файле yaml для инструмента Docker-Compose:
+# Извлечь образ Aspose.Cells Cloud для Windows Server 2022
+docker pull aspose/cells-cloud:ltsc2022.25.9.0
 
-```JAVA
+# Извлечь образ Aspose.Cells Cloud для Windows 11
+docker pull aspose/cells-cloud:ltsc2022.25.9.0
+```
+
+> **Примечание:** Чтобы всегда получить последнюю версию, вы также можете извлечь тег `latest`: `docker pull aspose/cells-cloud:latest`.
+
+### 2. Конфигурация с использованием инструмента Docker‑Compose
+
+Вы можете записать следующую конфигурацию в файл **docker‑compose.yml**:
+
+```yaml
 AsposeCellsCloud:
-      image: aspose/cells-cloud
-      ports: ["5000:80"]
-      volumes: [
-        "C:/Windows/Fonts:C:/Windows/Fonts",
-        "c:/data:c:/data",
-      ]
-      environment:
-        "LicensePublicKey": "yourKeyHere"
-        "LicensePrivateKey": "yourKeyHere"
+  image: aspose/cells-cloud:25.9.0
+  ports: ["5000:80"]   # хост 5000 → контейнер 80
+  volumes:
+    - "C:/Windows/Fonts:C:/Windows/Fonts"
+    - "c:/data:c:/data"
+  environment:
+    LicensePublicKey: "yourPublicKey"
+    LicensePrivateKey: "yourPrivateKey"
+```
+
+> **Примечание:** Сопоставление портов `5000:80` означает, что API будет доступен по адресу `http://localhost:5000`.
+
+### 3. Запуск Docker-контейнера через командную строку
+
+```bash
+docker run \
+  -e "LicensePublicKey=yourPublicKey" \
+  -e "LicensePrivateKey=yourPrivateKey" \
+  -v c:/data:c:/data \
+  -v C:/Windows/Fonts:C:/Windows/Fonts \
+  -p 5000:80 \
+  aspose/cells-cloud:25.9.0
+```
+
+**Устранение неполадок:**  
+- **Конфликт портов:** Убедитесь, что порт 5000 на хосте свободен, либо измените сопоставление на свободный порт.  
+- **Ошибка загрузки лицензии:** Проверьте, что публичный и приватный ключи корректно переданы как переменные окружения или смонтированы как файлы.  
+- **Отсутствующие шрифты:** Если документы рендерятся с неправильными шрифтами, убедитесь, что каталог шрифтов смонтирован корректно и содержит необходимые файлы шрифтов.
+
+**См. также:**  
+- <a href="/cells/api/">Справочник по API</a> | <a href="/cells/license/">Руководство по активации лицензии</a> | <a href="/cells/getting-started/">Обзор начала работы</a>
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Run Aspose.Cells Cloud Docker Container",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "url": "#1-pull-asposecells-cloud-image",
+      "name": "Извлечь Docker-образ",
+      "text": "Выполните `docker pull aspose/cells-cloud:<version>` для загрузки требуемого образа."
+    },
+    {
+      "@type": "HowToStep",
+      "url": "#2-configurations-for-docker-compose-tool",
+      "name": "Создать файл docker‑compose",
+      "text": "Определите образ, порты, тома и переменные окружения лицензии в файле `docker‑compose.yml`."
+    },
+    {
+      "@type": "HowToStep",
+      "url": "#3-run-a-docker-container-using-the-command-line",
+      "name": "Запустить контейнер",
+      "text": "Выполните `docker run` с соответствующими переменными окружения, монтированием томов и сопоставлением портов."
+    }
+  ]
+}
 ```

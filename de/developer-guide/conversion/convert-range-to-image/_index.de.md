@@ -1,100 +1,121 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Konvertieren Sie einen Tabellenbereichsdatensatz in ein Bild
-second_title: Documen
-ArticleTitle: Convert a Spreadsheet Range data to an Imag
-linktitle: Bereich in Bild konvertieren
-type: docs
-url: /de/convert-range-to-image/
-keywords: Aspose.Cells Cloud Web API, Convert Range to Image, Spreadsheet to Image, Cloud Conversion, Image Format
-description: Konvertieren Sie Bereichsdaten aus einer lokalen Tabellenkalkulations-/Excel-Datei in eine Bilddatei
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, Bildkonvertierung, PNG, SVG, TIFF, JSON, Markdown
 ---
-Konvertieren Sie Bereichsdaten aus einer lokalen Tabellenkalkulations-/Excel-Datei in eine Bilddatei. Unterstützt**BILDFORMATE:** [PNG](https://docs.fileformat.com/image/png/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/)
+title: "Excel-Bereich in Bild konvertieren – Aspose.Cells Cloud API"
+description: "Konvertieren Sie einen bestimmten Bereich aus einer lokalen Excel-Datei in PNG, JPEG, SVG, TIFF oder BMP über die Aspose.Cells Cloud REST API – es ist kein vollständiger Upload der Arbeitsmappe erforderlich."
+keywords: "Aspose.Cells Cloud, Bereich in Bild konvertieren, Excel API, Bildformate, PNG, JPEG, SVG, TIFF, BMP"
+slug: bereich-in-bild-konvertieren
+api_version: "v4.0"
+date: 2026-07-30
+---
 
-## **Bereich in Bild konvertieren API**
+Der Aufruf liest eine lokale Tabellendatei, konvertiert den angegebenen Bereich und gibt das Bild als binären Stream zurück.
+
+## Methode zum Konvertieren eines Bereichs in ein Bild
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
+PUT https://api.aspose.cloud/v4.0/cells/convert/range/image
 ```
 
-### **Anforderungsparameter:**
+### **Sicherheit und Authentifizierung**
 
-| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody| Beschreibung|
-|:- |:- |:- |:- |
-|Kalkulationstabelle|Datei|FormData|Laden Sie die Tabellenkalkulationsdatei zur Konvertierung hoch.|
-|Arbeitsblatt|Zeichenfolge|Abfrage|Der Arbeitsblattname von Spreadsheet/Excel|
-|Reichweite|Zeichenfolge|Abfrage|Definieren Sie den zu konvertierenden Zellbereich (z. B. A1:C10).|
-|Format|Zeichenfolge|Abfrage|Geben Sie das Ausgabedateiformat an (z. B. PNG, SVG, TIFF).|
-|Überschriften drucken|Boolescher Wert|Abfrage|Geben Sie an, ob Zeilen- und Spaltenüberschriften gedruckt werden sollen.|
-|Ausgangspfad|Zeichenfolge|Abfrage|(Optional) Der Ordnerpfad, in dem die Arbeitsmappe gespeichert ist; der Standardwert ist null.|
-|outStorageName|Zeichenfolge|Abfrage|Name des Ausgabedateispeichers.|
-|SchriftartenStandort|Zeichenfolge|Abfrage|Benutzerdefinierte Schriftarten zur Verwendung bei der Konvertierung.|
-|regoin|Zeichenfolge|Abfrage|Definieren Sie die Einstellung für den Tabellenbereich.|
-|Passwort|Zeichenfolge|Abfrage|Kennwort zum Öffnen der Tabellenkalkulationsdatei, falls geschützt.|
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
-### **Antwort**
+## Anforderungsparameter
+
+| Name               | Ort                               | Typ     | Erforderlich | Beschreibung                                                                                       |
+|--------------------|-----------------------------------|---------|--------------|----------------------------------------------------------------------------------------------------|
+| **Spreadsheet**    | Formular‑Daten (`multipart/form-data`) | Datei   | **Ja**       | Die zu verarbeitende Excel-Datei.                                                                 |
+| **worksheet**      | Abfrageparameter                  | String  | **Ja**       | Name des Arbeitsblatts, das den Bereich enthält (z. B. `Tabelle1`).                              |
+| **range**          | Abfrageparameter                  | String  | **Ja**       | Zellbereich zur Konvertierung, z. B. `A1:C10`.                                                    |
+| **format**         | Abfrageparameter                  | String  | **Ja**       | Ausgabe-Bildformat (`png`, `jpeg`, `svg`, `tiff`, `bmp`).                                         |
+| **printHeadings**  | Abfrageparameter                  | Boolean | Nein         | `true`, um Zeilen-/Spaltenüberschriften im Bild einzuschließen.                                  |
+| **outPath**        | Abfrageparameter                  | String  | Nein         | Ordnerpfad für die erzeugte Datei, falls Sie diese im Cloud-Speicher speichern möchten.          |
+| **outStorageName** | Abfrageparameter                  | String  | Nein         | Name des Speicherdienstes (z. B. `MeinSpeicher`).                                                 |
+| **fontsLocation**  | Abfrageparameter                  | String  | Nein         | URL oder Pfad zu benutzerdefinierten Schriftarten, die während der Konvertierung verwendet werden. |
+| **region**         | Abfrageparameter                  | String  | Nein         | Gebietsschema-ID (z. B. `de-DE`, `fr-FR`). Beeinflusst die Formatierung von Zahlen und Daten.    |
+| **password**       | Abfrageparameter                  | String  | Nein         | Passwort für verschlüsselte Arbeitsmappen.                                                        |
+| **AutoRowsFit**    | Abfrageparameter                  | Boolean | Nein         | Zeilen vor dem Rendern automatisch anpassen.                                                      |
+| **AutoColumnsFit** | Abfrageparameter                  | Boolean | Nein         | Spalten vor dem Rendern automatisch anpassen.                                                     |
+
+## Antwort
+
+Die API gibt die konvertierte HTML-Datei als **binären Stream** (`application/octet-stream`) zurück.
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Fehlercodes
+### Beispiel für eine erfolgreiche Antwort (HTTP)
 
-- **400 Ungültige Anfrage**: Ungültige Apose.Cells Cloud API-URI.
-- **401 Nicht autorisiert**: Ungültiges Zugriffstoken. Oder ungültige Client-ID und ungültiges Geheimnis.
-- **404 Nicht gefunden**: Auf die Tabellenkalkulationsdatei kann nicht zugegriffen werden.
-- **500 Serverfehler**: Beim Abrufen der Berechnungsdaten ist in der Tabelle eine Anomalie aufgetreten.
+```
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="bericht.png"
+Content-Length: 8423
+```
 
-## Warum sollten Sie den Bereich in Bild API konvertieren?
+Speichern Sie den Antworttext in einer Datei (z. B. `bericht.png`), um das gerenderte Bild in einem Browser anzuzeigen.
 
-- Kein Cloud-Speicher erforderlich, wodurch die Belastung der Cloud-Ressourcen reduziert wird.
-- Die Entwicklung kann über das vorhandene SDK schnell abgeschlossen werden.
+---
 
-## Wie verwende ich den Konvertierungsbereich in Bild API mit SDKs?
+**HTTP-Statuscodes**
 
-### Bereich in Bild konvertieren API Spezifikation
+| Code | Bedeutung             | Beschreibung                                                     |
+|------|-----------------------|------------------------------------------------------------------|
+| 200  | OK                    | Filter erfolgreich angewendet; Antwort enthält Vorgangsdetails. |
+| 400  | Bad Request           | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp). |
+| 401  | Unauthorized          | Ungültiges oder fehlendes JWT-Token.                            |
+| 413  | Payload Too Large     | Die hochgeladene Datei überschreitet die Größeinschränkung.     |
+| 500  | Internal Server Error | Unerwarteter Serverfehler.                                      |
 
- Der[Bereich in Bild konvertieren API Spezifikation](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToImage) bietet eine öffentlich zugängliche Programmierschnittstelle, die REST-Interaktionen direkt von Ihrem Webbrowser aus ermöglicht.
+## Wie verwendet man die „Bereich in Bild konvertieren“-API mit SDKs?
 
-### Verwenden Sie Aspose.Cells Cloud SDKs
+### OpenAPI-Spezifikation
 
-Die Verwendung des SDK ist die schnellste Art der Entwicklung, da es die Details auf niedriger Ebene abstrahiert und es Ihnen ermöglicht, einen Datenbereich mit einem kurzen Code in ein Bild zu konvertieren.
- Bitte schauen Sie sich die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die [OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToImage) beschreibt eine öffentlich zugängliche API, die REST-basierte Interaktionen direkt aus einem Webbrowser ermöglicht.
 
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Sie können das cURL-Befehlszeilentool nutzen, um problemlos auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an die Cloud-API durchführen.
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertRangeToImage.cs" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Anforderung" tabName12="Antwort" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/image?format=png&worksheet=Tabelle1&range=A1:C10&AutoRowsFit=true&AutoColumnsFit=true" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@Bericht.xlsx" \
+     -F "outPath=output/bericht.png"
+
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertRangeToImage.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="bericht.png"
+Content-Length: 8423
+
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertRangeToImage.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertRangeToImage.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertRangeToImage.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertRangeToImage.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertRangeToImage.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToImage.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+## Aspose.Cells Cloud SDKs verwenden
+
+Die Verwendung eines SDK ist der schnellste Weg zur Entwicklung, da sie die Details auf niedriger Ebene abstrahieren und es Ihnen ermöglichen, einen Datenbereich mit minimalem Code in eine Bilddatei zu konvertieren.  
+Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie in unserem [GitHub-Repository](https://github.com/aspose-cells-cloud).
+
+Die folgenden Codebeispiele zeigen, wie Sie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufrufen. Falls das Laden aus Gist blockiert ist, können Sie die Beispiele direkt aus dem Repository herunterladen.
+
+---

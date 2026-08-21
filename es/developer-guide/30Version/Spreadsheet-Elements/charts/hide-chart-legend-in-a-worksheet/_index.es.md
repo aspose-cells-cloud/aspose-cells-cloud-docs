@@ -1,78 +1,96 @@
-﻿---
-title: Ocultar la leyenda del gráfico en una hoja de trabajo
+---
+title: "Ocultar la leyenda de un gráfico en una hoja de cálculo de Excel – API de Aspose.Cells Cloud"
 type: docs
-url: /es/charts/legend/hide/
+url: /charts/legend/hide/
 aliases: [/hide-chart-legend-in-a-worksheet/]
 weight: 110
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Ocultar leyenda de gráfico en una hoja de cálculo
+keywords: "Aspose.Cells, Excel, ocultar leyenda de gráfico, API REST, SDK en la nube, leyenda de gráfico"
+description: "Aprenda cómo ocultar la leyenda de un gráfico en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye el endpoint HTTPS, autenticación requerida, sintaxis de solicitud, detalles de respuesta, manejo de errores y ejemplos de SDK."
 ---
-Este REST API indica ocultar leyenda en gráfico
- 
-## RSET API
- 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
- 
+
+Esta API REST oculta la leyenda de un gráfico. Una **leyenda de gráfico** es el cuadro que identifica las series de datos representadas en el gráfico.
+
+La API requiere un token JWT válido de Aspose Cloud, el libro de cálculo debe cargarse en el almacenamiento de Aspose Cloud y la versión de la API utilizada es **v3.0**.
+
+## Seguridad y autenticación  
+Las API de Aspose.Cells Cloud son seguras y requieren [autenticación basada en token JWT](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## API REST
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
- Los parámetros de la solicitud son:
- 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombre| cadena| camino| Nombre del libro de trabajo.|
-| nombreHoja| cadena| camino| Nombre de la hoja de trabajo.|
-| Índice de gráficos| entero| camino| El índice del gráfico.|
-| carpeta| cadena| consulta| La carpeta del libro de trabajo.|
-| nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
 
+### Parámetros de solicitud
 
-<br/>
+| Nombre del parámetro | Tipo    | Ubicación | Descripción                     |
+| --------------------- | ------- | --------- | ------------------------------- |
+| **name**             | string  | path      | Nombre del libro de cálculo.    |
+| **sheetName**        | string  | path      | Nombre de la hoja de cálculo.   |
+| **chartIndex**       | integer | path      | Índice del gráfico.             |
+| **folder**           | string  | query     | Carpeta del libro de cálculo (opcional). |
+| **storageName**      | string  | query     | Nombre del almacenamiento (opcional).    |
 
- 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartLegend) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
- 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartLegend) define esta interfaz de programación accesible públicamente.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Puede utilizar la herramienta de línea de comandos cURL para invocar fácilmente la API. El siguiente ejemplo muestra una solicitud que oculta la leyenda del gráfico 0 en *Sample_Test_Book.xls*.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" 
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Respuestas
+
+| Estado HTTP                   | Descripción                                               | JSON de ejemplo                                               |
+| ----------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| **200 OK**                    | Leyenda ocultada correctamente.                          | `{ "Code": 200, "Status": "OK" }`                             |
+| **401 Unauthorized**          | Token JWT ausente o inválido.                             | `{ "Code": 401, "Message": "Invalid access token." }`         |
+| **404 Not Found**             | El libro de cálculo, la hoja de cálculo o el gráfico no existen. | `{ "Code": 404, "Message": "Chart not found." }`              |
+| **500 Internal Server Error** | Error inesperado en el servidor.                         | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+
+## Preguntas frecuentes (FAQ)
+
+**P:** _¿Cómo oculto la leyenda de un gráfico usando Aspose.Cells Cloud?_  
+**R:** Envíe una solicitud `DELETE` a `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend` con un token JWT válido en el encabezado `Authorization`. Una respuesta `200 OK` indica que la operación se realizó correctamente.
+
+**P:** _¿Qué autenticación se requiere para la API de ocultación de leyenda de gráfico?_  
+**R:** Incluya el encabezado `Authorization: Bearer <jwt token>`. Obtenga el token mediante el flujo OAuth de Aspose Cloud.
+
+**P:** _¿Qué respuesta de error recibiré si el índice del gráfico no es válido?_  
+**R:** El servicio devuelve `404 Not Found` con un cuerpo JSON que contiene `Code: 404` y un mensaje que describe el gráfico ausente.
+
+**P:** _¿Puedo utilizar HTTP en lugar de HTTPS?_  
+**R:** No. Todos los puntos de conexión de Aspose Cloud requieren HTTPS por motivos de seguridad.
+
 ## Familia de SDK en la nube
- 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
- 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
- 
+
+Utilizar un SDK es la forma más rápida de desarrollar. Un SDK oculta los detalles de bajo nivel para que pueda centrarse en las tareas de su proyecto. Consulte el [repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de los SDK de Aspose.Cells Cloud.
+
+Los siguientes ejemplos de código muestran cómo invocar los servicios web de Aspose.Cells mediante diversos SDK:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -118,7 +136,7 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
-
+**Próximamente** – El ejemplo del SDK de Swift se agregará en breve.  
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
@@ -134,3 +152,22 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Ocultar la leyenda de un gráfico en una hoja de cálculo de Excel – API de Aspose.Cells Cloud",
+  "description": "Guía paso a paso para ocultar la leyenda de un gráfico en una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. Incluye el endpoint HTTPS, autenticación, sintaxis de solicitud, detalles de respuesta, manejo de errores y ejemplos de SDK.",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://docs.aspose.cloud/" },
+      { "@type": "ListItem", "position": 2, "name": "Cells", "item": "https://docs.aspose.cloud/cells/" },
+      { "@type": "ListItem", "position": 3, "name": "Gráficos", "item": "https://docs.aspose.cloud/cells/charts/" },
+      { "@type": "ListItem", "position": 4, "name": "Ocultar leyenda de gráfico", "item": "https://docs.aspose.cloud/cells/charts/legend/hide/" }
+    ]
+  },
+  "about": "Ocultar la leyenda del gráfico usando la API de Aspose.Cells Cloud"
+}
+</script>

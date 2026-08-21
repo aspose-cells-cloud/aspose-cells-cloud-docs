@@ -1,20 +1,25 @@
-﻿---
-title: Arbeiten mit Excel shap
-second_title: Documen
-linktitle: Form
+---
+title: "Arbeiten mit Excel-Formen"
+second_title: "Dokument"
+linktitle: "Formen"
 type: docs
 url: /de/shapes/
-aliases: [/working-with-shapes/,/working-with-images/]
-keywords: Working with shape on an Excel workshee
-description: So arbeiten Sie mit Formen auf einem Arbeitsblatt Excel. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+aliases: ["/de/working-with-shapes/", "/de/working-with-images/"]
+keywords: "Excel-Formen, Aspose.Cells Cloud, API, Arbeitsblatt, Formularoperationen"
+description: "Erfahren Sie, wie Sie Excel-Formen über die Aspose.Cells Cloud API verwalten – Formen abrufen, hinzufügen, löschen und konvertieren, unterstützt durch SDKs."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Arbeiten mit Formen auf einem Excel-Arbeitsblatt
+ArticleTitle: "Arbeiten mit Excel-Formen – Aspose.Cells Cloud-Dokumentation"
 ---
+
 ## Arbeiten mit Formen in einer Excel-Datei
 
-- [So erhalten Sie alle Formen auf einem Arbeitsblatt Excel.](/cells/de/shapes/get-all/)
-- [So erhalten Sie eine Form per Index innerhalb eines Arbeitsblatts Excel.](/cells/de/shapes/get/)
-- [So fügen Sie einem Arbeitsblatt Excel eine Form hinzu.](/cells/de/shapes/add/)
-- [So löschen Sie alle Formen auf einem Arbeitsblatt Excel.](/cells/de/shapes/clear/)
-- [So löschen Sie eine Form nach Index auf einem Arbeitsblatt Excel.](/cells/de/shapes/delete/)
-- [So konvertieren Sie eine Form in ein Bild auf einem Arbeitsblatt Excel.](/cells/de/shapes/conversion/)
+Formen stellen Zeichenobjekte wie Linien, Rechtecke, Textfelder und Bilder dar, die in ein Excel-Arbeitsblatt eingefügt werden können. Sie sind nützlich, um Daten visuell darzustellen, Anmerkungen hinzuzufügen oder interaktive Elemente innerhalb einer Tabelle zu erstellen. Diese Seite enthält Quicklinks zu den häufigsten Form-bezogenen Operationen, jeweils mit einer kurzen Beschreibung.
+
+**Voraussetzungen:** Um die Formularoperationen nutzen zu können, benötigen Sie einen gültigen Aspose.Cells Cloud API-Schlüssel sowie eine bereits in der Cloud hochgeladene Arbeitsmappe.
+
+- [So rufen Sie alle Formen auf einem Excel-Arbeitsblatt ab.](/de/cells/shapes/get-all/) – Ruft eine vollständige Sammlung aller im Arbeitsblatt vorhandenen Formen ab.
+- [So rufen Sie eine Form nach Index auf einem Excel-Arbeitsblatt ab.](/de/cells/shapes/get/) – Gibt die Form zurück, die sich am angegebenen Index befindet.
+- [So fügen Sie eine Form auf einem Excel-Arbeitsblatt hinzu.](/de/cells/shapes/add/) – Fügt eine neue Form (z. B. Rechteck, Linie oder Bild) in das Arbeitsblatt ein.
+- [So löschen Sie alle Formen auf einem Excel-Arbeitsblatt.](/de/cells/shapes/clear/) – Entfernt alle Formen aus dem Arbeitsblatt in einem einzigen Vorgang.
+- [So löschen Sie eine Form nach Index auf einem Excel-Arbeitsblatt.](/de/cells/shapes/delete/) – Löscht die Form am angegebenen Index.
+- [So konvertieren Sie eine Form auf einem Excel-Arbeitsblatt in ein Bild.](/de/cells/shapes/conversion/) – Konvertiert eine ausgewählte Form in eine Bilddatei (PNG, JPEG usw.) für die externe Verwendung.

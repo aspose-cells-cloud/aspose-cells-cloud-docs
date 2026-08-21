@@ -1,100 +1,142 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Skapa ett nytt kalkylblad med en kalkylbladsmall
-second_title: Documen
-ArticleTitle: Build a new Spreadsheet with a spreadsheet template - Timeline WorkPlan Table, Sales Data Comparison, etc
-linktitle: Skapa kalkylblad
-type: docs
-url: /sv/create-spreadsheet/
-keywords: Spreadsheet Creation, Excel API, REST API, Office Cloud, Template Support, Productivity Enhancemen
-description: Excel API låter användare skapa ett nytt kalkylblad med ett angivet namn, stöder valfria mallar för fördefinierat innehåll eller formatering, vilket förbättrar användarproduktiviteten.
-weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, JSON, Markdown, Matcha alla tomma celler i ett Excel-kalkylblad, Skapa kalkylblad, Mallstöd, Produktivitetsförbättring
 ---
-Skapa ett nytt kalkylblad, som kan vara antingen ett tomt kalkylblad eller ett användbart kalkylblad som skapats baserat på den angivna mallen.
+title: "Skapa Spreadsheet API – Aspose.Cells Cloud (v5.0) | Generera Excel-filer"
+second_title: "Dokument"
+ArticleTitle: "Hur man skapar nya Excel-kalkylark – Generera tomma eller mallbaserade filer"
+linktitle: "Skapa kalkylark"
+type: docs
+url: /create-spreadsheet/
+keywords: "Aspose.Cells, spreadsheet API, skapa Excel, moln, XLSX, ODS, CSV, mall, SDK, automatisering"
+description: "Lär dig hur du skapar tomma eller mallbaserade Excel-arbetsböcker med Aspose.Cells Cloud API (v5.0). Inkluderar slutpunkt, parametrar, felkoder, autentiseringssteg och SDK-exempel."
+weight: 100
+---
 
-## **Skapa kalkylblad API**
+Skapa nya Excel-kalkylark programmvis med Aspose.Cells Cloud API. Generera tomma arbetsböcker eller instansiera filer från anpassade mallar. Den REST-baserade API:en möjliggör automatiserad skapande av Excel-filer, vilket är perfekt för rapportgenerering, dokumentautomatisering och datahanteringsarbetsflöden.
+
+## **Skapa Spreadsheet API**
+
+### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/create
+PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/create
 ```
 
-### **Begäranparametrar:**
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-text| Beskrivning|
-|---------- ||----------------------- |----- |
-|formatera| Sträng| Fråga| Anger namnet på det nya kalkylarket. Detta namn kommer att användas för att identifiera kalkylarket i systemet.|
-| mall| Sträng| Fråga| Valfritt. Om det anges skapas det nya kalkylarket baserat på den angivna mallen. Detta kan vara användbart för att tillämpa fördefinierade layouter och stilar.|
-| utväg| Sträng| Fråga| (Valfritt) Mappsökvägen där arbetsboken lagras. Standardvärdet är null.|
-| outStorageName| Sträng| Fråga| Lagringsnamn för utdatafil.|
-| område| Sträng| Fråga| Inställningen för kalkylbladets region.|
-| lösenord| Sträng| Fråga| Lösenordet för att öppna kalkylbladsfilen.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
 
-### **Svar**
+### Begäranparametrar
+
+| Parameter Name     | Typ    | Plats  | Beskrivning                                                                                                                                         |
+| ------------------ | ------ | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **format**         | Sträng | Fråga  | **Obligatoriskt**. Filformat för det nya kalkylarket (t.ex. `XLSX`, `XLS`, `ODS`, `CSV`).                                                          |
+| **template**       | Sträng | Fråga  | **Valfritt**. Namn på en mallfil som är lagrad i ditt molnlagring (t.ex. `invoice_template.xlsx`). Om utelämnas skapas en tom arbetsbok.             |
+| **outPath**        | Sträng | Fråga  | **Valfritt**. Målmappens sökväg i molnlagring för den genererade filen. Om `null` eller utelämnas sparas kalkylarket till standardplatsen.          |
+| **outStorageName** | Sträng | Fråga  | **Obligatoriskt**. Identifierare för den konfigurerade molnlagringen (t.ex. `MyDrive`).                                                            |
+| **region**         | Sträng | Fråga  | **Valfritt**. Språkinställning (t.ex. `sv-SE`) som bestämmer standardformat för datum, tal och valuta.                                             |
+| **password**       | Sträng | Fråga  | **Valfritt**. Lösenord för en krypterad mallfil. Lämna tomt om mallen inte är skyddad.                                                               |
+
+### Svar
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Felkoder
+**HTTP-statuskoder**
 
-- **400 Felaktig begäran**Ogiltig Apose.Cells Cloud API URI.
-- **401 Obehörig**Ogiltig åtkomsttoken. Eller ogiltigt klient-ID och hemlighet.
-- **404 Hittades inte**Kalkylbladsfilen är inte tillgänglig.
-- **500 Serverfel**Kalkylbladet har stött på ett fel vid hämtning av beräkningsdata.
+| Kod | Betydelse             | Beskrivning                                                       |
+| --- | --------------------- | ----------------------------------------------------------------- |
+| 200 | OK                    | Filtrering lyckades; svaret innehåller åtgärdens detaljer.       |
+| 400 | Felaktig begäran      | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds).  |
+| 401 | Obehörig              | Ogiltig eller saknad JWT-token.                                   |
+| 413 | För stor nyttolast    | Den uppladdade filen överskrider storleksgränsen.                 |
+| 500 | Internt serverfel     | Oväntat serverfel.                                                |
 
-## Var ska vi använda Skapa kalkylblad API?
+## Var bör vi använda Skapa Spreadsheet API?
 
-När du behöver skapa ett nytt kalkylblad kan du använda API.
+- **Initialisering av automatiskt rapporteringssystem** – Skapa en ny tom arbetsbok eller generera en rapportfil från en standardmall i början av varje daglig/veckovis automatiseringscykel.
+- **Kundens egen serviceportal** – Låt kunder välja en mall (offert, projektplan, etc.) och omedelbart ladda ner en anpassad Excel-fil.
+- **Batch-dataexport och distribution** – Skapa separata arbetsböcker med ett enhetligt format för varje exporterat dataset, vilket förenklar vidare distribution och bearbetning.
 
-## Varför ska du använda Skapa kalkylblad API?
+För efterföljande åtgärder såsom lägg till kalkylblad eller fyll i celler, se **Lägg till kalkylblad API**, **Uppdatera cell API** och **Exportera arbetsbok API**.
 
-- Du kan inte bara skapa ett tomt kalkylblad, utan du kan också skapa ett specifikt kalkylblad baserat på en mall.
-- Utvecklingen kan snabbt slutföras via det befintliga SDK:t.
+## Varför bör du använda Skapa Spreadsheet API?
 
-## Så här använder du Skapa kalkylblad API med SDK:er
+- **Utvecklarvänligt** – Erbjuder SDK-bibliotek för flera språk och omfattande dokumentation, vilket förenklar integration jämfört med att bygga egna lösningar.
+- **Arbetseffektivitet** – Möjliggör automatisering av dokumentkonsolidering, vilket minskar manuellt arbete.
+- **Betala per användning** – Avgifterna baseras på API-användning utan förvalda licensavgifter.
+- **Hanterad tjänst** – API:et är helt värdt, vilket innebär att du slipper underhåll av lokala servrar eller programuppdateringar.
 
-### Skapa kalkylblad API Specifikation
+## Hur man använder Skapa Spreadsheet API med SDK:er
 
- De[Skapa kalkylblad API Specifikation](https://reference.aspose.cloud/cells/#/ManagementController/CreateSpreadsheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och möjliggör REST-interaktioner direkt från en webbläsare.
+### Skapa Spreadsheet API-specifikation
+
+[Skapa Spreadsheet API-specifikationen](https://reference.aspose.cloud/cells/#/ManagementController/CreateSpreadsheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och möjliggör REST-interaktioner direkt från en webbläsare.
+
+Du kan använda cURL kommandoradsverktyget för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till moln-API:et med cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/create?format=XLSX&outStorageName=MyStorage" \
+  -H "Authorization: Bearer {access_token}"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64-kodad)",
+  "contentType": "MIME-typ",
+  "fileDownloadName": "valfritt filnamn"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Använd Aspose.Cells Cloud SDK:er
 
-Att använda SDK:t är det snabbaste sättet att utveckla, eftersom det abstraherar bort detaljer på låg nivå, vilket gör att du kan bygga kalkylarket med kort kod.
- Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Användning av ett SDK är det snabbaste sättet att utveckla, eftersom det abstraherar lågnivådetaljer och låter dig bygga kalkylarket med koncist kod. Ta en titt på [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med olika SDK:er:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_CreateSpreadsheet.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_CreateSpreadsheet.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_CreateSpreadsheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_CreateSpreadsheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_CreateSpreadsheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_CreateSpreadsheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_CreateSpreadsheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CreateSpreadsheet.go" >}}
-{{< /tab >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_CreateSpreadsheet.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_CreateSpreadsheet.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_CreateSpreadsheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_CreateSpreadsheet.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_CreateSpreadsheet.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_CreateSpreadsheet.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_CreateSpreadsheet.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CreateSpreadsheet.go" >}}
+{{</tab>}}
 {{< /tabs >}}

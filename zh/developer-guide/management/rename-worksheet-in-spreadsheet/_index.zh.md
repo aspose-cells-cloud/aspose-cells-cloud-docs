@@ -1,101 +1,156 @@
-﻿---
-title: Aspose.Cells Cloud Web API - 在电子表格中重命名工作表
-second_title: Documen
-ArticleTitle: Rename worksheet in Spreadshee
-linktitle: 在电子表格中重命名工作表
-type: docs
-url: /zh/rename-worksheet-in-spreadsheet/
-keywords: Excel API, Rename Worksheet, Workbook Management, REST API, Spreadsheet Organizatio
-description: Web API 端点允许用户重命名工作簿中的指定工作表，从而增强组织性和可读性
-weight: 100
-kwords: Excel API、重命名工作表、工作簿管理、REST API、电子表格、PDF、CSV、JSON、Markdown、匹配 Excel 工作表中的所有空白单元格
 ---
-重命名电子表格中的工作表名称。
+title: "重命名 Excel 工作表 – Aspose.Cells Cloud API"
+second_title: "文档"
+articleTitle: "如何重命名 Excel 工作表 – 修改工作表名称"
+linktitle: "重命名电子表格中的工作表"
+type: docs
+url: /rename-worksheet-in-spreadsheet/
+keywords: "重命名工作表, Aspose.Cells Cloud, Excel API, 电子表格, SDK, REST API"
+description: "通过 Aspose.Cells Cloud API 轻松重命名 Excel 工作表。了解所需参数、查看 cURL 示例，并获取 C#、Java、Python 等语言的 SDK 代码。"
+weight: 100
+---
 
-## **在电子表格中重命名工作表名称 API**
+使用 Aspose.Cells Cloud API 以编程方式重命名 Excel 工作簿中的工作表。更改工作表名称、动态更新标签页名称，并通过 RESTful API 调用自动化电子表格组织流程。适用于文档标准化和工作流自动化。
+
+## 电子表格 API 中重命名工作表名称
+
+### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet
+PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet?sourceName={sourceName}&targetName={targetName}&outPath={outPath}&outStorageName={outStorageName}&region={region}&password={password}
 ```
 
-### **请求参数：**
+**cURL 示例**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|电子表格|文件|表单数据|上传电子表格文件。|
-|源名称|细绳|询问|要重命名的工作表的当前名称。|
-|目标名称|细绳|询问|工作表的新名称。|
-|输出路径|细绳|询问|（可选）存储工作簿的文件夹路径。默认为 null。|
-|输出存储名称|细绳|询问|输出文件存储名称。|
-|地区|细绳|询问|电子表格区域设置。|
-|密码|细绳|询问|打开电子表格文件的密码。|
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet?sourceName=Sheet1&targetName=Report_Q1" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "spreadsheet=@myWorkbook.xlsx"
+```
 
-### **回复**
+### **安全与身份验证**
+
+Aspose.Cells Cloud API 是安全的，需要基于 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT 令牌的身份验证</a>。
+
+### 请求参数
+
+| 参数名称           | 类型   | 位置   | 描述                                                                                                                                                                                                 |
+|--------------------|--------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Spreadsheet**    | 文件   | FormData | **必填**。包含待重命名工作表的 Excel 工作簿文件（.xlsx、.xls 等）。                                                                                                                                |
+| **sourceName**     | 字符串 | Query    | **必填**。您希望重命名的工作表当前名称。                                                                                                                                                           |
+| **targetName**     | 字符串 | Query    | **必填**。分配给工作表的新名称。必须遵循 Excel 命名规则（不能包含 `:`、`\`、`?`、`*`、`[`、`]`），且在工作簿中必须唯一。                                                                           |
+| **outPath**        | 字符串 | Query    | **可选**。重命名后的工作簿将保存到的云存储目标文件夹路径。若为 `null` 或省略，则服务会将文件保存到与源工作簿相同的文件夹（或默认路径）。                                                            |
+| **outStorageName** | 字符串 | Query    | **可选**。您已配置的云存储服务的名称标识符（例如 `ArchiveStorage`）。若省略，则使用默认存储。                                                                                                       |
+| **region**         | 字符串 | Query    | **可选**。区域设置（例如 `zh-CN`），可能影响字符编码或区域命名规范。                                                                                                                               |
+| **password**       | 字符串 | Query    | **可选**。打开和修改密码保护的工作簿所需的解密密码。若文件未加密则省略。                                                                                                                           |
+
+**说明**：工作表名称最多为 31 个字符，且不能包含字符 `:`、`\`、`?`、`*`、`[` 或 `]`。
+
+### 响应
+
+成功请求将返回一个包含状态信息及重命名文件链接的 JSON 对象。
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### 错误代码
+**HTTP 状态码**
 
-- **400 错误请求**：无效的 Apose.Cells Cloud API URI。
-- **401 未授权**：访问令牌无效。或者客户端 ID 和密钥无效。
-- **404 未找到**：电子表格文件无法访问。
-- **500 服务器错误**：电子表格在获取计算数据时遇到异常。
+| 状态码 | 含义             | 描述                                       |
+|--------|------------------|--------------------------------------------|
+| 200    | 成功 (OK)        | 操作成功；响应包含操作详情。               |
+| 400    | 请求错误 (Bad Request) | 参数缺失或无效（例如不支持的文件类型）。   |
+| 401    | 未授权 (Unauthorized) | JWT 令牌无效或缺失。                      |
+| 413    | 负载过大 (Payload Too Large) | 上传文件超出大小限制。                    |
+| 500    | 内部服务器错误 (Internal Server Error) | 服务器发生意外错误。                      |
 
-## 我们应该在哪里使用电子表格 API 中的重命名工作表？
+## 应在何处使用电子表格 API 中的重命名工作表功能？
 
-当您需要在电子表格中重命名工作表时，可以使用此 API。
+- **报告生成与品牌标准化**——在自动生成客户报告时，将通用工作表名称（例如 `Sheet1`）重命名为客户专属名称（例如 `AcmeCorp_Q1_Summary`），确保交付成果专业规范。
+- **数据处理流程标准化**——在 ETL 工作流中，将导出时名称不规范的工作表重命名为标准化名称（例如 `Raw_Data` 或 `Cleaned_Data`），以满足下游分析需求。
+- **多语言内容交付**——根据用户语言偏好，在文件交付前将工作表名称本地化（例如 `数据` 或 `Data`），提供个性化体验。
 
-## 为什么要使用电子表格 API 中的重命名工作表？
+## 为何应使用电子表格 API 中的重命名工作表功能？
 
-- 从电子表格快速重命名工作表。
-- 通过现有的SDK即可快速完成开发。
+- **开发者友好**——提供多种语言的 SDK 及详尽文档，简化集成过程，相较于自建方案更高效。
+- **降低人工成本**——自动化重命名工作表，减少人工操作。
+- **按需付费模式**——仅对 API 调用收费，无需预付许可费用。
+- **无需服务器维护**——作为云服务，无需自行部署和维护服务器，也不用更新软件。
+- **支持自动化**——助力工作流中实现文档标准化自动化。
 
-## 如何使用 SDKs 在电子表格 API 中使用重命名工作表
+## 如何通过 SDK 使用电子表格 API 中的重命名工作表功能
 
 ### OpenAPI 规范
 
-这[OpenAPI 规范](https://reference.aspose.cloud/cells/#/ManagementController/RenameWorksheetInSpreadsheet)详细介绍了一个可公开访问的编程接口，允许直接从 Web 浏览器进行 REST 交互。
+<a href="https://reference.aspose.cloud/cells/#/ManagementController/RenameWorksheetInSpreadsheet" target="_blank" rel="noopener noreferrer">OpenAPI 规范</a> 提供了公开可访问的编程接口，允许直接通过网页浏览器发起 REST 调用。
 
-### 使用 Aspose.Cells 云 SDK
+您可使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
 
-使用 SDK 是加速开发的最佳方式。SDK 处理底层细节，让您能够以最少的代码轻松实现电子表格中单元格工作表名称的重命名。
-请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
-以下代码示例说明了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+{{< tab tabNum="11" >}}
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_RenameWorksheet.cs" >}}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet?sheetName=Sheet1&destName=NewSheetName" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -F "Spreadsheet=@/path/to/input.xlsx"
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_RenameWorksheet.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 编码)",
+  "contentType": "MIME 类型",
+  "fileDownloadName": "可选文件名"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_RenameWorksheet.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_RenameWorksheet.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_RenameWorksheet.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_RenameWorksheet.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_RenameWorksheet.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_RenameWorksheet.go" >}}
-{{< /tab >}}
+
+{{< /tabs >}}
+
+### 使用 Aspose.Cells Cloud SDK
+
+使用 SDK 是加速开发的最快方式。SDK 抽象了底层 HTTP 细节，使您能以最少代码完成工作表重命名。请参阅 GitHub 仓库以获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例演示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_RenameWorksheet.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_RenameWorksheet.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_RenameWorksheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_RenameWorksheet.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_RenameWorksheet.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_RenameWorksheet.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_RenameWorksheet.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_RenameWorksheet.go" >}}
+{{</tab>}}
 {{< /tabs >}}

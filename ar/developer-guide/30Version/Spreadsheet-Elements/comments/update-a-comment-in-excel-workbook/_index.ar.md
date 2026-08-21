@@ -1,78 +1,101 @@
-﻿---
-title: تحديث
-type: docs
-url: /ar/comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
-keywords: REST API, spreadsheets, excel, update commen
-description: "Cells.Cloud API لتشغيل Excel: تحديث التعليق"
-weight: 30
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تحديث
 ---
-يشير هذا REST API إلى تحديث تعليق الخلية في ورقة العمل.
+title: "تحديث تعليق خلية في ورقة عمل"
+type: docs
+url: /comments/update/
+aliases: [/update-a-comment-in-excel-workbook/]
+keywords: "Aspose.Cells Cloud, REST API, Excel, ورقة عمل, تعليق خلية, تحديث تعليق ورقة العمل, كائن التعليق"
+description: "استخدم واجهة Aspose.Cells Cloud REST API لتحديث تعليق خلية في ورقة عمل ضمن ملف Excel، بما في ذلك تفاصيل الطلب، رموز الاستجابة، وأمثلة لSDKs."
+weight: 30
+ArticleTitle: "تحديث تعليق خلية في ورقة العمل – واجهة Aspose.Cells Cloud API"
+---
 
-## RSET API
+تقوم هذه الواجهة REST بتحديث تعليق على خلية في ورقة عمل. استخدم هذه النقطة النهائية لتحديث **تعليق ورقة عمل** في ملف Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
- 
+**المتطلبات المسبقة:**
+- يجب تضمين رمز وصول OAuth/JWT صالح في رأس `Authorization`.
+- يجب تخزين ملف Workbook في موقع داعم لخدمة التخزين السحابي (حدد `folder` واختياريًا `storageName`).
+
+## واجهة PostWorksheetComment
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| اسم الخلية| خيط| طريق| اسم الخلية|
-| تعليق|| جسم| كائن التعليق|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تُعتبر واجهات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل | النوع   | الموقع | الوصف                                                                |
+|-------------|---------|--------|-----------------------------------------------------------------------|
+| name        | string  | path   | اسم مستند Excel.                                                     |
+| sheetName   | string  | path   | اسم ورقة العمل التي تحتوي على الخلية.                                |
+| cellName    | string  | path   | عنوان الخلية (مثل **A1**).                                           |
+| comment     | object  | body   | كائن **Comment** يُعرّف التعليق المراد إضافته أو تحديثه.             |
+| folder      | string  | query  | المجلد الذي يتم فيه تخزين المستند.                                  |
+| storageName | string  | query  | اسم خدمة التخزين.                                                    |
+
+يُعرّف [مواصفة OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) واجهة برمجة تطبيقات متاحة علنًا وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول بسهولة إلى خدمات Aspose.Cells عبر الويب. يوضح المثال التالي كيفية إجراء مكالمة إلى واجهة Cloud API باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/a1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--d "{ \"CellName\": \"a1\", \"Author\": \"test\", \"HtmlNote\": \"string\", \"Note\": \"this is a comment\", \"AutoSize\": true, \"IsVisible\": true, \"Width\": 10, \"Height\": 10}"
-
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "CellName": "a1",
+        "Author": "test",
+        "HtmlNote": "string",
+        "Note": "this is a comment",
+        "AutoSize": true,
+        "IsVisible": true,
+        "Width": 10,
+        "Height": 10
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+رموز حالات الاستجابة المحتملة:
+
+| الرمز | الوصف                                             |
+|-------|----------------------------------------------------|
+| 200   | تم تحديث التعليق بنجاح.                          |
+| 400   | طلب غير صالح – معاملات مفقودة أو غير صحيحة.     |
+| 401   | غير مصرّح به – فشلت المصادقة.                     |
+| 404   | غير موجود – ملف Workbook أو ورقة العمل أو التعليق غير موجود. |
+| 500   | خطأ داخلي في الخادم.                             |
+
+**ملاحظات / نصائح:**
+- أقصى طول للتعليق هو 1024 حرفًا.
+- الأحرف المدعومة هي UTF‑8؛ يُفضَّل تجنّب الأحرف التحكمية.
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أسرع طريقة لتطوير التطبيقات مع Aspose.Cells Cloud. يتعامل SDK مع التفاصيل منخفضة المستوى، مما يمكّنك من التركيز على مشروعك. يُرجى الاطّلاع على <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر الأمثلة التالية كيفية استدعاء خدمات Aspose.Cells عبر واجهات SDK المختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -125,3 +148,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 {{< /tab >}}
 
 {{< /tabs >}}
+
+العمليات ذات الصلة:
+- [الحصول على تعليق ورقة العمل](/comments/get/)
+- [إضافة تعليق ورقة عمل](/comments/add/)
+- [حذف تعليق ورقة العمل](/comments/delete/)

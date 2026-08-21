@@ -1,73 +1,96 @@
-﻿---
-title: Excel Çalışma Sayfasındaki Cells'in Net İçerikleri ve Stilleri
-type: docs
-url: /tr/clear-contents-and-styles-of-cells-in-excel-worksheet/
-weight: 50
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel Çalışma Sayfasındaki Cells İçeriğini ve Stillerini Temizle
 ---
-Bu REST API, Excel dosyasındaki `content` numaralı `clear` hücrelerini gösterir.
+title: "Bir Excel Çalışma Sayfasındaki Hücre İçeriğini ve Stillerini Temizleme"
+type: docs
+url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+weight: 50
+keywords:
+  - Aspose.Cells
+  - Excel API
+  - hücre içeriğini temizleme
+  - hücre stillerini temizleme
+  - bulut hesap tablosu
+  - REST API
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki hücre içeriğini ve stillerini nasıl temizleyeceğinizi öğrenin; cURL örnekleri ve SDK kodu parçacıkları ile."
+ArticleTitle: "Bir Excel Çalışma Sayfasındaki Hücre İçeriğini ve Stillerini Temizleme – Aspose.Cells Cloud API"
+---
 
-## RSET API
+**İçerik ve Stilleri Temizle** uç noktasını kullanmadan önce şunların sağlandığından emin olun:
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
- 
+* Aspose.Cells Cloud kimlik doğrulama akışından elde edilmiş geçerli bir **JWT belirteci**.  
+* Çalışma kitabının seçtiğiniz depolama konumuna yüklenmiş olması (veya `folder` parametresi aracılığıyla erişilebilir olması).  
+* Dil‑özel istemci kütüphanelerinden biriyle çalışmayı tercih ediyorsanız gerekli SDK sürümünün yüklü olması.
+
+Bu REST API, bir Excel dosyasındaki hücre içeriklerini temizler.
+
+## PostClearContents API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabı adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| menzil| sicim| sorgu| Menzil.|
-| başlangıç satırı| tam sayı| sorgu| Başlangıç sırası.|
-| başlangıçSütunu| tam sayı| sorgu| Başlangıç sütunu.|
-| endRow| tam sayı| sorgu| Son sıra.|
-| son sütun| tam sayı| sorgu| Son sütun.|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **Yanıt**
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**HTTP Durum Kodları**
+
+| Kod | Anlamı                      | Açıklama                                         |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | Tamam                       | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | İstek Hatalı                | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Yetkisiz                    | Geçersiz veya eksik JWT belirteci. |
+| 413 | Yük Çok Büyük               | Yüklenen dosya boyut sınırlarını aşıyor. |
+| 500 | Sunucu İç Hatası            | Beklenmeyen sunucu hatası. |
+
+## SDK’larla PostClearContents API Nasıl Kullanılır?
+
+### PostClearContents API Belirtimi
+
+[OpenAPI Belirtimi](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’sine nasıl çağrı yapılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. SDK, düşük seviye ayrıntıları yönetir ve proje görevlerinize odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub Deposu](https://github.com/aspose-cells-cloud)'na bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanılarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +143,29 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Bir Excel Çalışma Sayfasındaki Hücre İçeriğini ve Stillerini Temizleme",
+  "description": "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki hücre içeriğini ve stillerini temizleme.",
+  "url": "https://docs.aspose.cloud/cells/clear-contents-and-styles-of-cells-in-excel-worksheet/",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2023-07-08",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://docs.aspose.cloud/cells/images/Aspose-image-for-open-graph.jpg",
+      "caption": "Aspose.Cells Cloud – Hücre İçeriğini ve Stillerini Temizleme"
+    }
+  },
+  "keywords": "Aspose.Cells, Excel API, hücre içeriğini temizleme, hücre stillerini temizleme, REST API, bulut hesap tablosu"
+}
+</script>
+---

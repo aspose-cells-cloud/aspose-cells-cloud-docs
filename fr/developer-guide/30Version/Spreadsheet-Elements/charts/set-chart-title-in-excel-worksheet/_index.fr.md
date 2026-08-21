@@ -1,77 +1,83 @@
-﻿---
-title: Définir le titre du graphique dans la feuille de calcul Excel
+---
+title: "Aspose.Cells Cloud API – Définir le titre d’un graphique dans une feuille Excel"
 type: docs
-url: /fr/chart/title/add/
+url: /chart/title/add/
 aliases: [/set-chart-title-in-excel-worksheet/]
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Définir le titre du graphique dans la feuille de calcul Excel
+keywords: "Aspose.Cells Cloud, API de titre de graphique, titre de graphique Excel, API REST, exemples de SDK"
+description: "Découvrez comment ajouter ou mettre à jour le titre d’un graphique dans une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut des exemples cURL et SDK, les paramètres requis, les étapes d’authentification et la gestion des erreurs."
 ---
-Ce REST API indique d'ajouter un titre de graphique / de définir un titre de graphique visible
- 
-## RSET API
- 
-```bash
- 
+
+Ajoute un titre de graphique ou rend visible un titre existant.
+
+## API PutWorksheetChartTitle
+
+```http
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
- 
 ```
- Les paramètres de la requête sont :
- 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du classeur.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
-| index des graphiques| entier| chemin| L'index des graphiques.|
-| titre|| corps| Titre du graphique.|
-| dossier| chaîne| requête| Le dossier du classeur.|
-| nom de stockage| chaîne| requête| nom de stockage.|
 
-<br/>
- 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartTitle) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
- 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+### **Sécurité et authentification**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
+
+### Paramètres de la requête
+
+| Nom du paramètre | Type   | Emplacement | Description                              |
+| ---------------- | ------ | ----------- | ---------------------------------------- |
+| name             | string | path        | Nom du classeur.                         |
+| sheetName        | string | path        | Nom de la feuille de calcul.             |
+| chartIndex       | integer| path        | Index du graphique.                      |
+| title            | string | body        | Texte du titre du graphique.             |
+| folder           | string | query       | Dossier contenant le classeur.           |
+| storageName      | string | query       | Nom du stockage.                         |
+
+La [Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartTitle) définit une interface de programmation accessible publiquement et vous permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer un appel à l’API Cloud avec cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" 
--d '{"Text":"Sales Chart"}'
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+```bash
+curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
+  -d '{"Text":"Sales Chart"}' \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Réponses d’erreur**
+
+| Code HTTP | Charge utile d’exemple                                                           | Description                                                    |
+| --------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| 400       | `{ "Code": "400", "Message": "Charge utile de requête invalide." }`             | Le corps de la requête est mal formé ou des champs obligatoires sont absents. |
+| 401       | `{ "Code": "401", "Message": "Échec de l’authentification. Jeton JWT invalide ou expiré." }` | Le jeton bearer est manquant, invalide ou expiré.              |
+| 404       | `{ "Code": "404", "Message": "Classeur, feuille de calcul ou graphique introuvable." }` | La ressource spécifiée n’existe pas.                            |
+| 500       | `{ "Code": "500", "Message": "Erreur interne du serveur." }`                    | Une erreur inattendue s’est produite sur le serveur.           |
+
 ## Famille de SDK Cloud
- 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
- 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+
+L’utilisation d’un SDK est la méthode la plus rapide pour développer. Un SDK abstrait les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -81,8 +87,6 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-chart-SetChartTitle-set-chart-title.java" >}}
 

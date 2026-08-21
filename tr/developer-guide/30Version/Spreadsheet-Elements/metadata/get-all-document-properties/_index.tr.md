@@ -1,470 +1,279 @@
-﻿---
-title: Tüm Belge Özelliklerini Al
-second_title: Documen
-linktitle: Al al
-type: docs
-url: /tr/document-properties/get-all/
-aliases: [/get-all-document-properties/]
-keywords: Get properties from excel files
-description: Aspose.Cells Cloud REST API, Excel dosyalarından özellik almayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 25
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Tüm Belge Özelliklerini Al
 ---
-Bu REST API belge özelliklerinin okunmasını belirtir.
+title: "Tüm Belge Özelliklerini Al"
+second_title: "Belge"
+linktitle: "Tümünü al"
+type: docs
+url: /document-properties/get-all/
+aliases: [/get-all-document-properties/]
+keywords: "Tüm Belge Özelliklerini Al, Aspose.Cells Cloud, Excel belge özellikleri, REST API, SDK, Excel meta verisi"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel dosyasından tüm belge özelliklerini alın. Uç nokta, desteklenen tüm SDK'lar ve programlama dilleri ile çalışır."
+ArticleTitle: "Tüm Belge Özelliklerini Al – Aspose.Cells Cloud API"
+weight: 25
+---
 
-## RSET API
+Bu REST API, belge özelliklerini okur.
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
- 
+## GetDocumentProperties API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek Parametreleri
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı  | Tür    | Konum | Açıklama                         |
+| -------------- | ------ | ----- | -------------------------------- |
+| name           | string | path  | Excel dosyasının adı.            |
+| folder         | string | query | Dosyayı içeren klasör.           |
+| storageName    | string | query | Depolama hizmetinin adı.         |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties), herkese açık bir programlama arayüzü tanımlar ve web tarayıcınızdan doğrudan REST etkileşimlerinde bulunmanızı sağlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API’yi nasıl çağıracağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "DocumentProperties": {
-
     "DocumentPropertyList": [
-
       {
-
         "Name": "Title",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Title",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Subject",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Subject",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Author",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Author",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Keywords",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Keywords",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Comments",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Comments",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "LastSavedBy",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/LastSavedBy",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "CreateTime",
-
         "Value": "6/5/2015 6:17:20 PM",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/CreateTime",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "LastSavedTime",
-
         "Value": "9/27/2019 9:09:43 PM",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/LastSavedTime",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Category",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Category",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "NameOfApplication",
-
         "Value": "Microsoft Excel",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/NameOfApplication",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Version",
-
         "Value": "16.0300",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Version",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Security",
-
         "Value": "0",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Security",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "ScaleCrop",
-
         "Value": "False",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/ScaleCrop",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Template",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Template",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Manager",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Manager",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Company",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Company",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "LinksUpToDate",
-
         "Value": "False",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/LinksUpToDate",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       }
-
     ],
-
     "link": {
-
       "Href": "/test.xlsx/documentproperties",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**HTTP Durum Kodları**
+
+| Kod  | Anlam                       | Açıklama                                             |
+|------|-----------------------------|------------------------------------------------------|
+| 200  | OK (Tamam)                  | Filtre başarıyla uygulandı; yanıt işlem detaylarını içerir. |
+| 400  | Bad Request (Hatalı İstek)  | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401  | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT belirteci.                   |
+| 413  | Payload Too Large (Aşırı Büyük Yük) | Yüklenen dosya boyut sınırını aşıyor.               |
+| 500  | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu hatası.                         |
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bir SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. Bir SDK, düşük seviye detayları yönetir ve sizin projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerini çeşitli SDK’lar kullanarak nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

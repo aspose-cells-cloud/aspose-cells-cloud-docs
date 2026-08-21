@@ -1,73 +1,102 @@
-﻿---
-title: Ange ändringslösenord för en Excel-arbetsbok
-second_title: Documen
-linktitle: Ändra lösenordet för en Excel-fil
-type: docs
-url: /sv/workbook/password/modify/
-aliases: [/set-modify-password-of-excel-workbooks/,/workbook/modify-password/]
-keywords: Modify password for an Excel workbook
-description: Aspose.Cells Cloud REST API stöder ändring av lösenord för en Excel-arbetsbok. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 100
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ange/ändra lösenord för en Excel-arbetsbok
 ---
-Denna REST API anger att dokumentet ska skyddas från ändringar.
+title: "Ändra lösenordsskydd för en Excel-arbetsbok"
+second_title: "Dokument"
+linktitle: "Ändra lösenord för en Excel-fil"
+type: docs
+url: /workbook/password/modify/
+aliases:
+  - /set-modify-password-of-excel-workbooks/
+  - /workbook/modify-password/
+keywords: "Excel-lösenord, Aspose.Cells Cloud, skrivskydd, REST API, ändra arbetsbokslösenord"
+description: "Ändra skrivskyddslösenordet för en Excel-arbetsbok med Aspose.Cells Cloud REST API (v3.0). Innehåller exempel med cURL och SDK."
+weight: 100
+ArticleTitle: "Ändra lösenordsskydd för en Excel-arbetsbok – Aspose.Cells Cloud"
+---
 
-## RSET API
+Denna REST API **ändrar skrivskyddslösenordet** för en befintlig Excel-arbetsbok.
+
+Att uppdatera skrivskyddslösenordet programmatically möjliggör lösenordsbyte eller ersättning utan att behöva ladda ner filen. Det är särskilt praktiskt vid hantering av säkerhetsförsegelade arbetsböcker lagrade i Aspose.Cells Cloud-lagring.
+
+
+## REST API
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/writeProtection
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 ```
 
-Begäranparametrarna är:
+### Säkerhet och autentisering
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamn.|
-| lösenord|| kropp| Ändring av lösenord.|
-| mapp| sträng| fråga| Dokumentets mapp.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/PutDocumentProtectFromChanges) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+### Begärparametrar
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Parameternamn   | Typ    | Position    | Beskrivning                                       |
+| --------------- | ------ | ----------- | ------------------------------------------------- |
+| **name**        | string | path        | Namn på Excel-arbetsboken (obligatoriskt).         |
+| **password**    | string | body (JSON) | Nytt skrivskyddslösenord att ange (obligatoriskt). |
+| **folder**      | string | query       | Valfri mapp där arbetsboken är lagrad.             |
+| **storageName** | string | query       | Valfritt namn på lagringstjänsten.                 |
+
+### Svar
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**HTTP-statuskoder**
+
+| Kod | Betyder                     | Beskrivning                                        |
+|-----|-----------------------------|----------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran            | Saknas eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Ej auktoriserad             | Ogiltigt eller saknat JWT-token. |
+| 413 | För stor nyttolast          | Den uppladdade filen överskrider storleksgränsen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
+## Hur du använder PutDocumentProtectFromChanges API med SDK:er
+
+### PutDocumentProtectFromChanges API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/Workbook/PutDocumentProtectFromChanges) definierar det offentligt tillgängliga programmeringsgränssnittet som låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Du kan använda kommandoradsverktyget **cURL** för enkelt att komma åt Aspose.Cells-webbtjänster. cURL-kommandot nedan visar hur man anropar Cloud API:et.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtection" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d "{ \"Password\": \"aspose\"}" 
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtection?folder=Samples&storageName=Default" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{ "Password": "aspose" }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+### Använd Aspose.Cells Cloud SDK:er
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+Att använda ett SDK är det snabbaste sättet att utveckla. Ett SDK hanterar detaljer på låg nivå och låter dig fokusera på din affärslogik. Kontrollera [GitHub-förrådet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Följande kodexempel visar hur man anropar Aspose.Cells-webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -120,3 +149,4 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+---

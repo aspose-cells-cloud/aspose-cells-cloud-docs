@@ -1,76 +1,93 @@
-﻿---
-title: 更新 Excel 工作表中的图表标题
+---
+title: "更新 Excel 工作表中的图表标题"
 type: docs
 url: /zh/charts/title/update/
-aliases: [/update-chart-title-in-excel-worksheet/]
+aliases: [/zh/update-chart-title-in-excel-worksheet/]
 weight: 160
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、更新 Excel 工作表中的图表标题
+keywords: Excel, Aspose.Cells, REST API, 图表标题, 更新, 云 SDK
+description: 了解如何使用 Aspose.Cells Cloud REST API、cURL 和 various SDK 更新 Excel 工作表中的图表标题。
+ArticleTitle: "更新 Excel 工作表中的图表标题 – Aspose.Cells Cloud 文档"
 ---
-此 REST API 表示更新图表标题
- 
-## 重新设置 API
- 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
- 
+
+此 REST API 用于更新图表标题。
+
+**前提条件：** 您必须拥有有效的 Aspose Cloud 账户，并获取用于身份验证的 JWT 令牌。典型步骤包括：
+
+- 注册 Aspose Cloud 账户。  
+- 通过身份验证端点生成 JWT 令牌。  
+- 确保目标工作簿存储在受支持的云存储中（默认或自定义存储）。
+
+## PostWorksheetChartTitle API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
-请求参数为：
- 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|图表索引|整数|小路|图表索引。|
-|标题||身体|图表标题|
-|文件夹|细绳|询问|工作簿文件夹。|
-|存储名称|细绳|询问|存储名称。|
- 
-<br/>
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
- 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+所有 API 调用必须通过 **HTTPS** 发起，以避免混合内容警告。
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **安全与身份验证**
+
+Aspose.Cells Cloud API 是安全的，需要基于 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT 令牌的身份验证</a>。
+
+### 请求参数
+
+| 参数名称     | 类型     | 位置   | 描述                       |
+| ------------ | -------- | ------ | -------------------------- |
+| name         | string   | path   | 工作簿名称。               |
+| sheetName    | string   | path   | 工作表名称。               |
+| chartIndex   | integer  | path   | 图表的从零开始的索引。     |
+| title        | string   | body   | 新的图表标题。             |
+| folder       | string   | query  | 工作簿所在文件夹。         |
+| storageName  | string   | query  | 存储名称。                 |
+
+### 响应状态码
+
+| 状态码 | 描述                                           |
+| ------ | ---------------------------------------------- |
+| 200    | 成功 – 图表标题已成功更新。                    |
+| 400    | 请求错误 – 缺少或参数无效。                    |
+| 401    | 未授权 – JWT 令牌无效或缺失。                  |
+| 404    | 未找到 – 未找到工作簿、工作表或图表。          |
+| 500    | 服务器内部错误 – 出现意外的服务器状态。        |
+
+**注意：** `chartIndex` 为从零开始的索引；工作表上的第一个图表通过 `0` 引用。
+
+<a href="https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle" target="_blank" rel="noopener noreferrer">OpenAPI 规范</a> 定义了一个公开可访问的编程接口，可让您直接通过 Web 浏览器进行 REST 交互。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用云 API。
+
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v POST "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" 
--d '{"Text":"Stock exchange"}' 
--X POST \
+```bash
+curl -v POST "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
+-d '{"title":"Stock exchange"}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
-## Cloud SDK 系列
- 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
- 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+
+## 云 SDK 家族
+
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看 <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>，获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

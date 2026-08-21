@@ -1,83 +1,78 @@
-﻿---
-title: 清除 Excel 文件中的对象
-second_title: Documen
-linktitle: 克莱尔
-type: docs
-url: /zh/clear/
-aliases: [/clearobjects/]
-keywords: Clear internal objects of Excel files
-description: Aspose.Cells Cloud REST API 支持清除 Excel 文件的内部对象。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 39
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 清除
 ---
-此 REST API 表示 Excel 文件中的 `clear` excel 对象。
+title: "清除 Excel 文件中的对象"
+second_title: "文档"
+linktitle: "清除"
+type: docs
+url: /clear/
+aliases: [/clearobjects/]
+keywords: "Aspose.Cells, Excel, 清除对象, REST API, 云 SDK, 删除注释, 删除图表"
+description: "使用 Aspose.Cells Cloud REST API 从 Excel 工作簿中删除注释、图表、形状及其他对象。支持多种 SDK，并以 Base64 格式返回已清理的文件。"
+weight: 39
+---
 
-## 重新设置 API
+此 REST API 可清除 Excel 文件中的对象。
+
+## REST API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/clearobjects
-
 ```
 
-请求参数为：
+### 请求参数
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|文件|文件|表单数据|要上传的文件|
-|对象类型|细绳|询问|重复行/空白列/空白行/公式/内容/样式/图表/评论/图片/形状/列表对象/超链接/oleobject/数据透视表/验证/背景|
+| 参数名     | 类型   | 位置       | 是否必需 | 默认值 | 可选值                                                                                                                                                                                                 | 描述                                 |
+| ---------- | ------ | ---------- | -------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------ |
+| file       | 文件   | form‑data  | 是       | —      | —                                                                                                                                                                                                      | 要上传的 Excel 文件                  |
+| objecttype | 字符串 | query      | 否       | —      | `duplicaterows`, `blankcolumns`, `blankrows`, `formula`, `content`, `style`, `chart`, `comment`, `picture`, `shape`, `listobject`, `hyperlink`, `oleobject`, `pivottable`, `validation`, `background` | 要清除的对象类型（以逗号分隔）       |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects) 定义了一个公开可访问的编程接口，可让您直接通过网页浏览器执行 REST 交互。
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何通过 cURL 调用云 API。
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+curl -v "https://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'xxxxx1=@xxxx1.xlsx' \
+  -F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "file1",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "file2",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+## 云 SDK 家族
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 封装了底层细节，使您可以专注于项目任务。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

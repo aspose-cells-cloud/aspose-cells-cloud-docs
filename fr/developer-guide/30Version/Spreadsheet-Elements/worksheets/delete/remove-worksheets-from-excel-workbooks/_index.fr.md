@@ -1,62 +1,73 @@
-﻿---
-title: Supprimer la feuille de travail
-second_title: Documen
-linktitle: Une feuille de travail
-type: docs
-url: /fr/worksheets/delete-worksheet/
-aliases: [/remove-worksheets-from-excel-workbooks/]
-keywords: Delete an Excel worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API prend en charge la suppression d'une feuille de calcul Excel dans un classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Supprimer la feuille de calcul
 ---
-Ce REST API indique `delete worksheet`.
+title: "Supprimer une feuille de calcul"
+second_title: "Document"
+linktype: "Une feuille de calcul"
+type: docs
+url: /worksheets/delete-worksheet/
+aliases: [/remove-worksheets-from-excel-workbooks/]
+keywords: "Aspose.Cells Cloud, Supprimer une feuille de calcul, Excel, Classeur, API REST"
+description: "Supprimer une feuille de calcul d’un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud. Prend en charge les SDK pour C#, Java, PHP, Ruby, Node.js, Python, Perl, Go et cURL."
+weight: 20
+ArticleTitle: "Supprimer une feuille de calcul – API Aspose.Cells Cloud"
+---
 
-## RSET API
+Cette API REST permet de supprimer une feuille de calcul.  
+Prérequis : Pour appeler cette API, vous devez fournir un jeton d’authentification JWT valide dans l’en-tête **Authorization** et avoir accès à l’emplacement de stockage où se trouve le classeur.
+
+## API REST
 
 ```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
-Les paramètres de la requête sont :
+*Remarque : L’API utilise la version **v3.0**, qui est la version stable actuelle. Toute évolution future de la version sera annoncée dans les notes de version.*
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| dossier| chaîne| requête| Dossier du document.|
-| nom de stockage| chaîne| requête| nom de stockage.|
+### **Paramètres de la requête**
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheet) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+| Nom du paramètre | Type   | Emplacement | Description              |
+| ---------------- | ------ | ----------- | ------------------------ |
+| name             | string | path        | Nom du document.         |
+| sheetName        | string | path        | Nom de la feuille de calcul. |
+| folder           | string | query       | Dossier du document.     |
+| storageName      | string | query       | Nom du stockage.         |
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+Réponses HTTP possibles :
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| Code d’état | Description |
+| ----------- | ----------- |
+| 200 OK | Feuille de calcul supprimée avec succès. |
+| 400 Bad Request | Paramètres de requête invalides. |
+| 401 Unauthorized | Échec de l’authentification ou jeton manquant. |
+| 404 Not Found | Le classeur ou la feuille de calcul spécifié n’existe pas. |
+| 500 Internal Server Error | Erreur inattendue du serveur. |
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheet) définit une interface de programmation accessible publiquement et vous permet d’effectuer des interactions REST directement depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment effectuer des appels à l’API Cloud à l’aide de cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Requête" tabName2="Réponse" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet3" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet3" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
+
+*Toutes les requêtes doivent être effectuées via HTTPS ; l’API ne prend pas en charge les connexions non TLS.*
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -65,9 +76,9 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet3" \
 
 ## Famille de SDK Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est le meilleur moyen d’accélérer le développement. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur les tâches de votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment effectuer des appels aux services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

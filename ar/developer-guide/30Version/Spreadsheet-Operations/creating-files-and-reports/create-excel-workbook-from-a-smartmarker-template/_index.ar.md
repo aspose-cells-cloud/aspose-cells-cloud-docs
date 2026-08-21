@@ -1,73 +1,145 @@
-﻿---
-title: كيفية إنشاء تقرير Excel باستخدام قالب علامة ذكية
-second_title: Documen
-linktitle: سمارت مارك
-type: docs
-url: /ar/build-report-with-smart-marker/
-aliases: [/create-excel-workbook-from-a-smartmarker-template/,/workbook/smartmarker/,/workbook/create/smartmarker/]
-keywords: How to create an Excel workbook with a smart marker template
-description: Aspose.Cells Cloud REST API كيفية إنشاء مصنف Excel باستخدام قالب علامة ذكية. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 40
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، كيفية إنشاء مصنف Excel باستخدام قالب علامة ذكية
 ---
-يشير هذا REST API إلى إنشاء `workbook` مع `smart marker`.
+title: "بناء تقارير إكسل باستخدام قوالب العلامات الذكية"
+second_title: "وثيقة"
+linktype: "العلامات الذكية"
+type: docs
+url: /build-report-with-smart-marker/
+aliases:
+  - /create-excel-workbook-from-a-smartmarker-template/
+  - /workbook/smartmarker/
+  - /workbook/create/smartmarker/
+keywords: "إكسل، العلامات الذكية، Aspose.Cells Cloud، REST API، ملف عمل، مكتبة برمجيات (SDK)، واجهة برمجة تطبيقات، توليد التقارير"
+description: "تعرّف على كيفية إنشاء ملفات عمل إكسل من قوالب العلامات الذكية باستخدام واجهة Aspose.Cells Cloud REST API. يشمل تفاصيل الطلب والاستجابة، مثال cURL، المتطلبات المسبقة، الملاحظات، وأكواد أمثلة SDK."
+weight: 40
+ArticleTitle: "بناء تقارير إكسل باستخدام قوالب العلامات الذكية – دليل واجهة Aspose.Cells Cloud API"
+---
 
-**معلمة الاستعلام**
+تُنشئ هذه الواجهة البرمجية (REST API) ملف عمل باستخدام قالب علامة ذكية.
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|ملف xml|خيط||
-|المسار الخارجي|خيط||
-|مجلد|خيط|مجلد المصنف الأصلي.|
-|اسم التخزين|خيط|اسم التخزين.|
+## واجهة برمجة تطبيقات العلامات الذكية لملف العمل
 
-**معلمة نص الطلب**
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/smartmarker
+```
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|ملف xml|ملف||
+### **الأمان والمصادقة**
 
-## الباقي API
+تُعد واجهات Aspose.Cells Cloud آمنة وتشترط <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">المصادقة القائمة على رمز JWT</a>.
 
-|**API**|**يكتب**|**وصف**|**رابط سواجر**|
-|:- |:- |:- |:- |
-|/الخلايا/{الاسم}/العلامة الذكية|بريد|إنشاء مصنف جديد Excel من ملف قالب SmartMarker|[PostWorkbookGetSmartMarkerResult](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult)|
+### **ما هي العلامة الذكية؟**
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+العلامة الذكية هي بنية موضعية تُستخدم لربط حقول البيانات في ملف XML (أو JSON) بخلايا في قالب إكسل. وفي وقت التشغيل، تستبدل مكتبة Aspose.Cells هذه العلامات بالبيانات المقابلة، مما يسمح لك بإنشاء تقارير مُعبّأة بالكامل برمجيًا.
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+### **متغيرات الاستعلام (Query Parameters)**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| اسم المتغير | النوع | الوصف |
+| ------------ | ------ | ------------------------------------------------------------ |
+| outPath | string | المسار الوجهة حيث سيُحفظ ملف العمل الذي تم إنشاؤه. |
+| folder | string | المجلد الذي يحتوي على ملف العمل الأصلي. |
+| storageName | string | اسم خدمة التخزين المراد استخدامها. |
+
+### **متغير جسم الطلب**
+
+| اسم المتغير | النوع | الوصف |
+| ------------ | ---- | ----------------------------------------------------- |
+| xmlFile | file | ملف بيانات العلامات الذكية XML المرفوع مع الطلب. |
+
+### **الاستجابة**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**ملاحظات / قيود:**  
+- تدعم الواجهة البرمجية ملفات إكسل بحجم يصل إلى **50 ميغابايت**.  
+- التنسيقات المقبولة هي **.xlsx** و**.xlsm** و**.xlsb** فقط.  
+- تُطبّق قيودًا على معدل الطلبات بمقدار **20 طلبًا في الثانية** لكل حساب.
+
+**رموز حالة HTTP**
+
+| الرمز | المعنى | الوصف |
+|------|-----------------------------|--------------------------------------------------|
+| 200 | ناجح (OK) | تمت تطبيق المرشح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400 | طلب غير صالح (Bad Request) | معلمات مفقودة أو غير صحيحة (مثل نوع ملف غير مدعوم). |
+| 401 | غير مُعتمد (Unauthorized) | رمز JWT غير صالح أو مفقود. |
+| 413 | حجم الحمولة كبير جدًا (Payload Too Large) | تجاوز حجم الملف المرفوع الحد المسموح به. |
+| 500 | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم. |
+
+## كيفية استخدام واجهة برمجة تطبيقات العلامات الذكية لملف العمل
+
+### مواصفات واجهة برمجة تطبيقات العلامات الذكية لملف العمل
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) واجهة برمجة برمجية عامة قابلة للوصول وتتيح لك إجراء تفاعلات REST مباشرة من متصفح ويب.
+
+### استخدام مكتبات Aspose.Cells Cloud SDK
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول بسهولة إلى خدمات Aspose.Cells عبر الويب. يوضح المثال التالي كيفية إجراء مكالمات لواجهة Cloud API باستخدام cURL.
+
+**مثال سريع مكوّن من سطر واحد**
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/{name}/smartmarker?outPath={outPath}" -H "Authorization: Bearer {access_token}" -F "xmlFile=@Sample_SmartMarker_Data.xml"
+```
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/newworkbook_14.xlsx/smartmarker?xmlFile=Sample_SmartMarker_Data.xml" -H "accept: multipart/form-data" -H "x-aspose-client: Containerize.Swagger"
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/newworkbook_14.xlsx/smartmarker?outPath=GeneratedReport.xlsx" \
+    -H "accept: multipart/form-data" \
+    -H "x-aspose-client: Containerize.Swagger" \
+    -F "xmlFile=@Sample_SmartMarker_Data.xml"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
+```text
+HTTP/1.1 200 OK
+Content-Type: application/json
 
-HttpResponseMessage with the processing result in content.
-
+{
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### **معالجة الأخطاء**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| حالة HTTP | الوصف | السبب الشائع |
+| ----------- | --------------------- | ------------------------------------------------------- |
+| 400 | طلب غير صالح (Bad Request) | ملف القالب مفقود أو ملف XML معطوب أو معلمات غير صحيحة. |
+| 401 | غير مُعتمد (Unauthorized) | رمز مصادقة غير صالح أو مفقود. |
+| 404 | غير موجود (Not Found) | ملف العمل أو موقع التخزين المحدد غير موجود. |
+| 500 | خطأ داخلي في الخادم (Internal Server Error) | فشل غير متوقع من جانب الخادم. |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+**مثال على استجابة خطأ (400)**
+
+```json
+{
+  "Code": 400,
+  "Message": "ملف بيانات XML مفقود أو معطوب."
+}
+```
+
+## عائلة مكتبات SDK السحابية
+
+يُعد استخدام مكتبة SDK هو أفضل طريقة لتسريع عملية التطوير. فتتولى المكتبة معالجة التفاصيل من المستوى المنخفض، مما يسمح لك بالتركيز على مهام مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطّلاع على قائمة كاملة بمكتبات Aspose.Cells Cloud SDK.
+
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات Aspose.Cells عبر واجهات برمجة التطبيقات باستخدام مكتبات SDK مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

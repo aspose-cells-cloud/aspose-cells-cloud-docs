@@ -1,17 +1,17 @@
-﻿---
-title: Excel çalışma sayfasında bölmelerle nasıl çalışılır
-second_title: Documen
-linktitle: Bölme
-type: docs
-url: /tr/worksheets/panes/
-keywords: How to work with panes on an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel Çalışma Sayfasında bölmelerle çalışmayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki bölmelerle nasıl çalışılır
 ---
-## Excel çalışma sayfasında bölmelerle çalışma.
+---
+title: "Excel çalışma sayfasında bölümlerle nasıl çalışılır"
+second_title: "Belge"
+linktitle: "Bölümler"
+type: docs
+url: /worksheets/panes/
+keywords: "Excel, bölümler, bölümleri dondur, bölümleri çöz, Aspose.Cells Cloud, REST API"
+description: "Aspose.Cells Cloud REST API kullanarak Excel çalışma sayfasında bölümlerle nasıl çalışacağınızı öğrenin; desteklenen SDK dillerinde bölümleri dondurma ve çözme adımlarını içerir."
+weight: 20
+---
 
-- [Excel çalışma sayfasındaki bölmeler nasıl dondurulur.](/cells/tr/worksheets/panes/freeze/) 
-- [Excel çalışma sayfasındaki bölmeler nasıl çözülür.](/cells/tr/worksheets/panes/unfreeze/) 
+## Excel çalışma sayfasında bölümlerle çalışma
 
-
+- [Excel çalışma sayfasında bölümleri nasıl dondurulur](/cells/worksheets/panes/freeze/)  
+- [Excel çalışma sayfasında bölümleri nasıl çözülür](/cells/worksheets/panes/unfreeze/)
+---

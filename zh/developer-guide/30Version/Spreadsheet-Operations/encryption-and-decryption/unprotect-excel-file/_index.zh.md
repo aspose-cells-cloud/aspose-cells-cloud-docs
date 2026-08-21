@@ -1,82 +1,97 @@
-﻿---
-title: 取消保护 Excel 工作簿
-second_title: Documen
-linktitle: 取消保护 Excel fil
-type: docs
-url: /zh/excel-file-unprotect/
-aliases: [/unprotect-excel-workbooks/, /workbook/unprotect/]
-keywords: REST API, spreadsheets, excel, merg
-description: Cells.Cloud API 用于 Excel 操作：保护 Excel 工作簿
-weight: 60
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、取消保护 Excel 工作簿
 ---
-此 REST API 取消保护 Excel `workbook`。
+title: "取消保护 Excel 工作簿 – Aspose.Cells Cloud API"
+second_title: "文档"
+linktitle: "取消保护 Excel 文件"
+type: docs
+url: /excel-file-unprotect/
+aliases:
+  - /unprotect-excel-workbooks/
+  - /workbook/unprotect/
+keywords: "Aspose Cells, Excel 取消保护 API, 移除工作簿保护, REST API, 云电子表格"
+description: "了解如何使用 Aspose.Cells Cloud REST API 取消 Excel 工作簿的保护。包含请求语法、参数说明、cURL 示例以及多种编程语言的 SDK 代码示例。"
+weight: 60
+ArticleTitle: "取消保护 Excel 工作簿 – Aspose.Cells Cloud API"
+---
 
-**查询参数**
+使用此 REST API 取消 Excel 工作簿的保护。
 
-|参数名称|类型|描述|
-|:- |:- |:- |
-|文件夹|细绳|原始工作簿文件夹。|
-|存储名称|细绳|存储名称。|
+## DeleteUnProtectWorkbook API
 
-**请求主体参数**
-
-|参数名称|类型|描述|
-|:- |:- |:- |
-|保护|工作簿保护请求||
-
-**工作簿保护请求**
-
-|参数名称|类型|描述|
-|:- |:- |:- |
-|保护类型|细绳|全部/内容/无/对象/场景/结构/窗口|
-|密码|细绳||
-
-## 休息 API
-
-|**API**|**类型**|**描述**|**Swagger 链接**|
-|:- |:- |:- |:- |
-|/细胞/{名称}/保护|删除|取消文档保护|[删除取消保护工作簿](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectWorkbook)|
-
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectWorkbook)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
-
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection" -H "accept: application/json"  -H "Content-Type: application/json" -d "{ \"ProtectionType\": \"all\", \"Password\": \"aspose\"}"
-
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/protection
 ```
 
-{{< /tab >}}
+### **安全与身份验证**
 
-{{< tab tabNum="2" >}}
+Aspose.Cells Cloud API 采用安全机制，需使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份验证</a>。
 
-```java
+### 路径参数
 
+| 参数名   | 类型   | 描述                                 | 必填 |
+| -------- | ------ | ------------------------------------ | ---- |
+| **name** | string | 工作簿文件名（包含文件扩展名）。     | 是   |
+
+### 查询参数
+
+| 参数名       | 类型   | 描述                             |
+| ------------ | ------ | -------------------------------- |
+| folder       | string | 包含原始工作簿的文件夹路径。     |
+| storageName  | string | 工作簿所在的存储服务名称。       |
+
+### 请求体参数
+
+| 参数名       | 类型                      | 描述                             |
+| ------------ | ------------------------- | -------------------------------- |
+| protection   | WorkbookProtectionRequest | 指定需移除的保护设置的对象。     |
+
+#### WorkbookProtectionRequest
+
+| 参数名         | 类型   | 描述                                                                 |
+| -------------- | ------ | -------------------------------------------------------------------- |
+| ProtectionType | string | 需移除的保护类型（`ALL`、`CONTENTS`、`NONE`、`OBJECTS`、`SCENARIOS`、`STRUCTURE`、`WINDOWS`）。 |
+| Password       | string | 移除保护所需的密码（可选）。                                         |
+
+#### cURL 示例
+
+```bash
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=MyFolder&storageName=MyStorage" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -d '{ "ProtectionType": "ALL", "Password": "aspose"}'
+```
+
+#### 响应（成功）
+
+```json
 {
-
-  "Code":"200",
-
-  "Status":"OK"
-
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
-{{< /tab >}}
+### HTTPS 状态错误响应
 
-{{< /tabs >}}
+| HTTP 状态 | 错误码                | 描述                                         |
+| --------- | --------------------- | -------------------------------------------- |
+| 400       | BadRequest            | 缺少或无效的参数。                           |
+| 401       | Unauthorized          | 无效或缺失的访问令牌。                       |
+| 404       | NotFound              | 在指定文件夹或存储中未找到指定的工作簿。     |
+| 500       | InternalServerError   | 服务器发生意外错误。                         |
 
-## Cloud SDK 系列
+## 如何结合 SDK 使用 DeleteUnProtectWorkbook API
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+### DeleteUnProtectWorkbook API 规范
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Protection/DeleteUnProtectWorkbook) 定义了一个公开可访问的编程接口，允许您直接从 Web 浏览器发起 REST 交互。
+
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何通过 cURL 调用 Cloud API。
+
+### 使用 Aspose.Cells Cloud SDK
+
+使用 SDK 可简化集成过程并减少样板代码。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud)，获取 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用多种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

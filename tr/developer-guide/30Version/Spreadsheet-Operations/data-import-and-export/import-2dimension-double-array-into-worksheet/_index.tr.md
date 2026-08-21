@@ -1,64 +1,91 @@
-﻿---
-title: 2 Boyutlu Çift Diziyi Excel Çalışma Sayfasına Aktar
-second_title: Documen
-linktitle: 2 boyutlu çift diziyi içe aktar
-type: docs
-url: /tr/import-a-2D-double-array-into-excel-worksheet/
-aliases: [/import-2dimension-double-array-into-excel-worksheet/,/import-2dimension-double-array-into-worksheet/, /import-data/2dimension-double-array/, /import/2dimension-double-array/]
-keywords: Import 2 dimension double array data into Excel files
-description: Aspose.Cells Cloud REST API, 2 boyutlu çift dizi verilerinin Excel dosyalarına aktarılmasını destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, 2 Boyutlu Çift Diziyi Excel Çalışma Sayfasına Aktar
 ---
-Bu REST API `import 2 dimension double array data`'i Excel çalışma sayfasına dönüştürün.
+title: "İkili Boyutlu Çift Diziyi Excel Çalışma Sayfasına İçe Aktar"
+second_title: "Belge"
+linktype: "İçerik"
+type: docs
+url: /import-a-2d-double-array-into-excel-worksheet/
+aliases:
+  [
+    /import-2dimension-double-array-into-excel-worksheet/,
+    /import-2dimension-double-array-into-worksheet/,
+    /import-data/2dimension-double-array/,
+    /import/2dimension-double-array/,
+  ]
+keywords: "İkili Boyutlu Çift Dizi İçe Aktar, Excel, Aspose Cells Cloud, REST API, Elektronik Tablo, Veri İçe Aktarma"
+description: "Aspose.Cells Cloud REST API kullanarak iki boyutlu bir çift diziyi Excel çalışma sayfasına nasıl içe aktaracağınızı öğrenin. İstek formatı, parametreler ve SDK kod örneklerini içerir."
+weight: 20
+---
 
-İstek, çok parçalı içeriğe sahip bir HTTP isteğidir (bkz.[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)veya[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Çok parçalı içeriğin ilk kısmı Import2DimensionDoubleArrayOption verilerini, ikinci kısmı ise bir veri dosyasını içerir.
+Bu REST API, **iki boyutlu bir çift diziyi** Excel çalışma sayfasına **içe aktarır**.
 
-## RSET API
+İsteğin içeriği HTTP `POST` ve çok parçalı (multipart) içerikten oluşur (bkz. [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) veya [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Çok parçalı gövdenin ilk parçası **Import2DimensionDoubleArrayOption** verisini, ikinci parçası ise kaynak veri dosyasını içerir.
+
+## REST API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
 Önemli parametreler aşağıdaki tabloda açıklanmıştır:
 
-**Import2DimensionDoubleArrayOption**
+### Import2DimensionDoubleArrayOption
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-| İlk Sıra| int||
-| İlkSütun| int||
-| Veri|Çift[,]||
-|Hedef Çalışma Sayfası| sicim| hedef çalışma sayfası adı.|
-| IsInsert| sicim| doğru/yanlış.|
-| Veri Türünü İçe Aktar| sicim|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Kaynak| Dosya Kaynağı| BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.|
+| Parametre Adı          | Tür         | Açıklama                                                                                                            |
+| ---------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------- |
+| **FirstRow**           | `int`       | İçe aktarmanın başlayacağı satır indeksi (1‑tabanlı).                                                               |
+| **FirstColumn**        | `int`       | İçe aktarmanın başlayacağı sütun indeksi (1‑tabanlı).                                                               |
+| **Data**               | `Double[,]` | İçe aktarılacak çift değerlerden oluşan iki boyutlu dizi.                                                          |
+| **DestinationWorksheet**| `string`   | Verinin aktarılacağı çalışma sayfasının adı.                                                                        |
+| **IsInsert**           | `string`    | Satırların eklenmesi için `"true"`, mevcut hücrelerin üzerine yazılması için `"false"`.                             |
+| **ImportDataType**     | `string`    | İçe aktarılan veri türü (örn. `IntArray`, `DoubleArray`, `TwoDimensionDoubleArray`, `BatchData`, `csvData`, vb.). |
+| **Source**             | `FileSource`| `BatchData` parametresi null olduğunda veri dosyasının konumunu belirtir.                                          |
 
 **Örnek**
 
 ```json
-
 {
-    "Data": [
-        [1.0, 2.9, 3.1],
-        [2.0, 2.1, 3.1]
-    ],
-    "DestinationWorksheet": "Sheet2",
-    "FirstRow": 4,
-    "FirstColumn": 1,
-    "importDataType": "TwoDimensionDoubleArray"
+  "Data": [
+    [1.0, 2.9, 3.1],
+    [2.0, 2.1, 3.1]
+  ],
+  "DestinationWorksheet": "Sheet2",
+  "FirstRow": 4,
+  "FirstColumn": 1,
+  "importDataType": "TwoDimensionDoubleArray"
 }
-
 ```
 
-## Bulut SDK Ailesi
+### Yanıt
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+**HTTP Durum Kodları**
+
+| Kod | Anlamı                      | Açıklama                                         |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | OK (Tamam)                  | Sü bộ filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request (Hatalı İstek)  | Eksik veya geçersiz parametreler (örn., desteklenmeyen dosya türü). |
+| 401 | Unauthorized (Yetkisiz)     | Geçersiz veya eksik JWT belirteci.              |
+| 413 | Payload Too Large (Çok Büyük Yük) | Yüklenecek dosya boyut sınırnı aşıyor.        |
+| 500 | Internal Server Error (Sunucu İç Hatası) | Beklenmeyen sunucu hatası.                 |
+
+## SDK’larla PostImportData API’sini Nasıl Kullanırız?
+
+### PostImportData API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData), web tarayıcınızdan doğrudan REST etkileşimlerinde bulunmanıza olanak tanıyan herkese açık bir programlama arayüzü tanımlar.
+
+### Aspose.Cells Cloud SDK’larını Kullanma
+
+SDK kullanmak, bu işlevselliği entegre etmenin en hızlı yoludur. SDK’lar düşük seviye detayları ele alır, böylece iş mantığınıza odaklanabilirsiniz. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, çeşitli SDK’lar kullanılarak Aspose.Cells web servislerinin nasıl çağrılacağını göstermektedir:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

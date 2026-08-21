@@ -1,79 +1,113 @@
-﻿---
-title: Excel çalışma sayfasına bir liste nesnesi ekleyin
-second_title: Documen
-linktitle: Reklam
-type: docs
-url: /tr/list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
-keywords: Add a list object(table) into an Excel worksheet
-description: Aspose.Cells Cloud REST API, bir çalışma sayfasına liste nesnesi (tablo) eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 10
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasına liste nesnesi ekleme
 ---
-Bu REST API, Excel çalışma sayfasında `add a list object(table)`'i gösterir.
+title: "Bir Excel Çalışma Sayfasına Bir Liste Objesi (Tablo) Ekleyin"
+second_title: "Belge"
+linktitle: "Ekle"
+type: docs
+url: /list-objects/add/
+aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+keywords: "Aspose.Cells Cloud, Excel API, liste objesi, tablo, REST API, çalışma sayfası"
+description: "Aspose.Cells Cloud REST API kullanarak bir çalışma sayfasına bir liste objesi (Excel tablosu) nasıl ekleyeceğinizi öğrenin. Uç nokta, parametreler, kimlik doğrulama adımları, cURL örneği ve SDK kod örneklerini içerir."
+weight: 10
+ArticleTitle: "Bir Excel Çalışma Sayfasına Bir Liste Objesi (Tablo) Ekleyin – Aspose.Cells Cloud Dokümantasyonu"
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasına bir **liste objesini (tabloyu)** ekler.
+
+Bu uç noktayı kullanmadan önce geçerli bir JWT jetonuna sahip olduğunuzdan, çalışma kitabının desteklenen bir bulut depolama alanında tutulduğundan ve çalışma sayfasının mevcut olduğundan emin olun.
+
+## REST API
 
 ```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
- 
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 ```
 
-İstek parametreleri şunlardır:
+### İstek parametreleri
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| başlangıç satırı| tam sayı| sorgu| Liste aralığının başlangıç satırı.|
-| başlangıçSütunu| tam sayı| sorgu| Liste aralığının başlangıç satırı.|
-| endRow| tam sayı| sorgu| Liste aralığının başlangıç satırı.|
-| son sütun| tam sayı| sorgu| Liste aralığının başlangıç satırı.|
-| hasHeaders| Boolean| sorgu| Doğru|
-| listeNesnesi|| vücut| Liste Nesnesi|
-| dosya| sicim| sorgu| Belgenin klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı   | Tür     | Konum  | Açıklama                                                             |
+| ---------------- | ------- | ------ | -------------------------------------------------------------------- |
+| **name**         | string  | path   | Çalışma kitabı dosya adı.                                            |
+| **sheetName**    | string  | path   | Çalışma sayfası adı.                                                 |
+| **startRow**     | integer | query  | Tablo aralığının ilk satırının sıfır tabanlı indeksi.               |
+| **startColumn**  | integer | query  | Tablo aralığının ilk sütununun sıfır tabanlı indeksi.              |
+| **endRow**       | integer | query  | Tablo aralığının son satırının sıfır tabanlı indeksi.               |
+| **endColumn**    | integer | query  | Tablo aralığının son sütununun sıfır tabanlı indeksi.              |
+| **hasHeaders**   | boolean | query  | İlk satırda sütun başlıkları varsa `true`, aksi halde `false`.      |
+| **listObject**   | object  | body   | Liste objesinin tanımı (bkz. **İstek gövdesi şeması**).             |
+| **folder**       | string  | query  | Çalışma kitabını içeren klasör.                                      |
+| **storageName**  | string  | query  | Depolama adı.                                                        |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### İstek gövdesi şeması
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+**listObject** nesnesi, oluşturulacak tabloyu tanımlar. En yaygın özellikleri gösterilmiştir; tam liste için OpenAPI spesifikasyonuna bakın.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "displayName": "MyTable",
+  "showTotals": false,
+  "style": "TableStyleMedium2"
 }
- 
 ```
 
-{{< /tab >}}
+### Örnek istek (cURL)
 
-{{< /tabs >}}
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "displayName": "MyTable",
+        "showTotals": false,
+        "style": "TableStyleMedium2"
+      }'
+```
+
+### Örnek yanıt
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+### Hata kodları
+
+| HTTP Durumu | Neden                 | Açıklama                                          |
+| ----------- | --------------------- | ------------------------------------------------- |
+| **400**     | Bad Request (Geçersiz İstek) | Geçersiz aralık parametreleri veya bozuk JSON gövdesi. |
+| **401**     | Unauthorized (Yetkisiz)      | Eksik veya süresi dolmuş JWT jetonu.              |
+| **404**     | Not Found (Bulunamadı)       | Belirtilen çalışma kitabını veya çalışma sayfasını bulamadı. |
+| **500**     | Internal Server Error (İç Sunucu Hatası) | Beklenmeyen sunucu tarafı hatası.             |
+
+**Örnek 400 yanıtı**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Invalid range parameters."
+}
+```
+
+**Örnek 401 yanıtı**
+
+```json
+{
+  "Code": 401,
+  "Status": "Unauthorized",
+  "Message": "Authentication token is missing or expired."
+}
+```
+
+Bu işlem için tamcontract’ı [OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) sağlar.
 
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme hızını en hızlı şekilde artıracaktır. Bir SDK, düşük seviye detayları işler ve projenizdeki görevlere odaklanmanıza olanak tanır. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub Deposu](https://github.com/aspose-cells-cloud)na bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web servislerine istek yapmayı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

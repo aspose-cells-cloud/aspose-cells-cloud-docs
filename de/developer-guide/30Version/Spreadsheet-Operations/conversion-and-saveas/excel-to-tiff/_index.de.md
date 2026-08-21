@@ -1,90 +1,89 @@
-﻿---
-title: Excel bis TIF
-second_title: Documen
-linketitle: Excel to Tif
-type: docs
-url: /de/convert-excel-file-to-tiff-file/
-aliases: [/convert-excel-file-to-tiff-in-cloud/,/convert/excel-to-tiff/]
-keywords: Convert excel files to tiff files
-description: Aspose.Cells Cloud REST API unterstützt die Konvertierung von Excel-Dateien in TIFF-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 90
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Excel bis TIFF
 ---
-Diese REST API `saveas` Excel-Datei an TIFF.
+title: "Excel zu TIFF"
+second_title: "Dokument"
+linketitle: "Excel zu TIFF"
+type: docs
+url: /convert-excel-file-to-tiff-file/
+aliases: [/convert-excel-file-to-tiff-in-cloud/, /convert/excel-to-tiff/]
+keywords: "Aspose.Cells Cloud, Excel-zu-TIFF-Konvertierung, REST API, cURL, SDK, .NET, Java, Python, Bildexport"
+description: "Erfahren Sie, wie Sie Excel-Arbeitsmappen mithilfe der Aspose.Cells Cloud API in hochwertige TIFF-Bilder konvertieren können. Detaillierte cURL-Befehle, SDK-Beispiele (C#, Java, Python, …), Authentifizierungsschritte und Fehlerbehandlung."
+weight: 90
+---
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) Mit API können Sie die MS Excel-Datei als TIFF-Datei mit zusätzlichen Einstellungen speichern und das Ergebnis im Speicher speichern.
-
-Diese REST API `convert` Excel-Datei an TIFF.
-
-[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) Mit API können Sie die Datei MS Excel mit zusätzlichen Einstellungen in die Datei TIFF konvertieren und das Ergebnis in der Antwort speichern.
-
-Diese REST API `export` Excel-Datei an TIFF.
-
-[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) Mit API können Sie die Datei MS Excel mit zusätzlichen Einstellungen in die Datei TIFF konvertieren und das Ergebnis in der Antwort speichern.
+Die **Convert**-, **SaveAs**- und **Export**-Endpunkte von Aspose.Cells Cloud ermöglichen es Ihnen, eine Excel-Arbeitsmappe in ein TIFF-Bild umzuwandeln.  
+Sie können diese Endpunkte direkt mit **cURL** oder über eines der unterstützten SDKs aufrufen.
 
 ## REST API
 
-|**API**|**Typ**|**Beschreibung**|**Swagger-Link**|
-|:- |:- |:- |:- |
-|/Zellen/Konvertieren|SETZEN|Konvertiert die Arbeitsmappe vom Anforderungsinhalt in ein anderes Format|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
-|/Zellen/{Name}|ERHALTEN|Exportiert die Arbeitsmappe in ein anderes Format.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
-|/Zellen/{Name}/saveAs|POST|Arbeitsmappe in Format exportieren|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+| **API**                | **Methode** | **Zweck**                                                                                                      | **Swagger-Link**                                                                            |
+| ---------------------- | ----------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| `/cells/convert`       | PUT         | Wandelt die in der Anforderungsnachricht übergebene Arbeitsmappe in das angegebene Format (TIFF) um.           | [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) |
+| `/cells/{name}`        | GET         | Exportiert die benannte Arbeitsmappe in ein anderes Format (TIFF) und gibt das Ergebnis in der Antwort zurück. | [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)               |
+| `/cells/{name}/saveAs` | POST        | Speichert die Arbeitsmappe in einem gewählten Format (TIFF) und speichert das Ergebnis im Cloud-Speicher.      | [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)   |
 
-Diese APIs definieren eine öffentlich zugängliche Programmierschnittstelle und ermöglichen Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+Diese Endpunkte sind öffentlich zugänglich und können direkt aus einem Webbrowser oder beliebigen HTTP-Clients aufgerufen werden.
 
- Sie können**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+### cURL-Beispiele
 
-{{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export" >}}
+{{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export">}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/convert?format=tiff" \
--X PUT \
--d {"File":{}} \
--H "Content-Type:  multipart/form-data" \
--H "Accept:  multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
-
+     -X PUT \
+     -d '{"File":{"Name":"book1.xlsx","Data":"<base64‑content>"},"SaveFormat":"tiff"}' \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="12" >}}
 
 ```bash
-
 curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx/saveas?newfilename=book1.tiff" \
--X POST \
--d "{'SaveFormat':'tiff', 'ImageFormat': 'tiff'}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+     -X POST \
+     -d '{"SaveFormat":"tiff","ImageFormat":"tiff"}' \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="13" >}}
 
 ```bash
-
-curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=html" \
--X GET \
--d "{'SaveFormat':'tiff', 'ExportImagesAsBase64': 'true'}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=tiff" \
+     -X GET \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
+> **Hinweis:**
+>
+> - Der **Convert**-Anforderungstext muss die Datei (oder einen Verweis auf eine gespeicherte Datei) sowie das gewünschte `SaveFormat` enthalten.
+> - Bei der **Export**-Anforderung ist kein Anforderungstext erforderlich; das Format wird über die Abfragezeichenfolge (`format=tiff`) übergeben.
+
+## Fehlerbehandlung
+
+| **Statuscode** | **Bedeutung**         | **Typische Ursache**                        |
+| -------------- | --------------------- | ------------------------------------------- |
+| 200            | Erfolg                | Das TIFF-Bild wird zurückgegeben (Binärstream). |
+| 400            | Ungültige Anfrage     | Fehlende oder fehlerhafte Parameter.        |
+| 401            | Nicht autorisiert     | Ungültiges oder fehlendes JWT-Token.        |
+| 404            | Nicht gefunden        | Die angegebene Arbeitsmappe existiert nicht. |
+| 500            | Interner Serverfehler | Unerwarteter Serverzustand.                 |
+
+Im Fehlerfall gibt die API eine JSON-Nutzlast mit den Feldern `Code`, `Message` und optional `Description` zurück.
+
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der schnellste Weg zur Entwicklung. Ein SDK übernimmt die niederwertigen Details, sodass Sie sich auf Ihr Projekt konzentrieren können. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im [GitHub-Repository](https://github.com/aspose-cells-cloud).
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webservices mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,58 +1,78 @@
-﻿---
-title: Obtenir les métadonnées du fichier Excel
-second_title: Documen
-linktitle: Obtenez sans utiliser de stockage
-type: docs
-url: /fr/metadata/get/
-keywords: Get properties from Excel files
-description: Aspose.Cells Cloud REST API prend en charge l'obtention de propriétés à partir de fichiers Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 23
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Obtenir des métadonnées à partir de fichiers Excel
 ---
-Ce REST API indique d'obtenir `metadata` à partir de plusieurs fichiers Excel.
+title: "Récupérer les métadonnées à partir de fichiers Excel"
+second_title: "Document"
+linktitle: "Récupération sans utiliser le stockage"
+type: docs
+url: /metadata/get/
+keywords: "Aspose.Cells, Excel, métadonnées, REST API, SDK cloud"
+description: "Récupérer les métadonnées intégrées ou personnalisées à partir de classeurs Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut le format de la requête, les paramètres, le code d’exemple des SDK et la gestion des erreurs."
+weight: 23
+ArticleTitle: "Récupérer les métadonnées à partir de fichiers Excel – API Aspose.Cells Cloud"
+---
+
+Cette API REST permet de récupérer des **métadonnées** à partir d’un ou plusieurs fichiers Excel.  
+La requête doit inclure un en‑tête `Authorization: Bearer <jeton_d’accès>` obtenu via le flux d’octroi d’accès OAuth 2.0 (client_credentials).
+
+**Conditions préalables** : Pour appeler ce point de terminaison, vous devez disposer d’un jeton d’accès valide obtenu auprès du point de terminaison de jetons OAuth 2.0 d’Aspose Cloud. Exemple de requête curl permettant d’obtenir un jeton :
 
 ```bash
+curl -X POST "https://api.aspose.cloud/connect/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=<votre_id_client>&client_secret=<votre_secret_client>"
+```
 
+## API REST
+
+```bash
 POST https://api.aspose.cloud/v3.0/cells/metadata/get
-
 ```
 
-- **Paramètre de requête**
+### Paramètre de requête
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-| taper| chaîne| TOUT/Intégré/Personnalisé|
+| Nom du paramètre | Type   | Description                                                                 |
+| ---------------- | ------ | --------------------------------------------------------------------------- |
+| type             | string | `ALL` / `BuiltIn` / `Custom` – spécifie quels groupes de métadonnées doivent être retournés. |
 
-- **Paramètre du corps de la requête**
+### Paramètre du corps de la requête
 
-|Nom du paramètre|Taper|Description|
-|:- |:- |:- |
-|fichier Excel| fichier de données|Le fichier de données est enregistré dans la première partie du contenu en plusieurs parties.|
+| Nom du paramètre | Type      | Description                                                        |
+| ---------------- | --------- | ------------------------------------------------------------------ |
+| fichier Excel    | fichier de données | Le fichier Excel fourni en tant que première partie de la requête multipart. |
 
-- **Réponse**
+### Réponse
 
-```bash
-{
-    [
-        { 
-            "Name":"test1",
-            "Value":"test1",
-            ...
-        },
-        { 
-            "Name":"test2",
-            "Value":"test3",
-            ...
-        }
-    ]
-}
+```json
+[
+  {
+    "Name": "Author",
+    "Value": "Jean Dupont",
+    "BuiltIn": true,
+    "IsReadOnly": false
+  },
+  {
+    "Name": "CustomProp1",
+    "Value": "Valeur personnalisée",
+    "BuiltIn": false,
+    "IsReadOnly": false
+  }
+]
 ```
 
-- **Famille de SDK Cloud**
+| Code | Signification                 | Quand                                           |
+| ---- | ----------------------------- | ----------------------------------------------- |
+| 200  | Succès                        | Métadonnées retournées.                         |
+| 400  | Requête incorrecte            | Fichier manquant ou requête invalide.           |
+| 401  | Non autorisé                  | Jeton invalide ou manquant.                     |
+| 404  | Non trouvé                    | Fichier spécifié introuvable.                   |
+| 500  | Erreur interne du serveur     | Échec inattendu du serveur.                     |
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’API renvoie ces codes de statut HTTP standard accompagnés, le cas échéant, d’un objet JSON de réponse d’erreur.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+### Famille de SDK Cloud
+
+L’utilisation d’un SDK accélère le développement en gérant les détails de bas niveau. Consultez le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
+
+Les exemples de code suivants illustrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

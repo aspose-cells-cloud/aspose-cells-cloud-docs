@@ -1,99 +1,73 @@
-﻿---
-title: 从工作表获取单元格数据
+---
+title: "从工作表中获取单元格数据"
 type: docs
 url: /zh/get-cell-data-from-a-worksheet/
 weight: 10
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从工作表获取单元格数据
+keywords: "Aspose.Cells Cloud, 获取单元格数据, Excel API, REST API, 单元格值, 工作表 API, Aspose API 示例"
+description: "使用 Aspose.Cells Cloud REST API（v3.0）从 Excel 工作表中检索单个单元格的值、类型和样式。包含 cURL、SDK 示例、参数说明及错误处理。"
 ---
-此 REST API 表示当 `cellOrMethodName` 参数为单元格名称时，在 Excel 文件中获取 `cell`。
+
+此 REST API 在 **`cellOrMethodName`** 参数指定单元格名称（A1 样式地址，例如 `A3`）时，可从 Excel 工作表中检索该单元格。
 
 - **cURL 示例**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="请求" tabName12="响应" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?client_id=xxxx&client_secret=xxxx" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```shell
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+**参数说明**
+
+| 参数               | 类型   | 描述                                               | 是否必需 |
+|--------------------|--------|---------------------------------------------------|----------|
+| `cellOrMethodName` | string | 必须设为 `firstcell` 以检索首个单元格。            | 是       |
+| `fileName`         | string | 工作簿文件名（例如 `myWorkbook.xlsx`）。           | 是       |
+| `worksheet`        | string | 工作表名称（例如 `Sheet1`）。                      | 是       |
+| `Authorization`    | header | 用于身份验证的 Bearer 令牌。                       | 是       |
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Cell": {
-
     "Name": "A3",
-
     "Row": 2,
-
     "Column": 0,
-
-    "Value": "Statistical",
-
+    "Value": "Category",
     "Type": "IsString",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
-    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">Statistical</Font>",
-
+    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Category</Font>",
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
-    },
-
-    "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3",
-
-      "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK 系列**
-
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
-
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+- **使用 Aspose.Cells Cloud SDK**
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

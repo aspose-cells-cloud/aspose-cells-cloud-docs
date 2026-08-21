@@ -1,25 +1,38 @@
-﻿---
-title: Travailler avec la validation Excel
-second_title: Documen
-linktitle: Validation
-type: docs
-url: /fr/validations/
-keywords: Working with validations on an Excel file
-description: Aspose.Cells Cloud REST API prend en charge les validations sur un fichier Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 100
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Validations
 ---
-La validation des données est une fonctionnalité de MS Excel permettant de contrôler les données saisies dans une cellule d'une feuille Excel. Par exemple, elle permet de limiter les entrées, comme une plage de dates ou des nombres entiers. Il est même possible de créer des listes déroulantes, ce qui permet de gagner de la place et d'afficher les valeurs dans une seule cellule. Il est également possible de créer un message personnalisé qui s'affichera lorsque l'utilisateur saisira une valeur ou un format incorrect.
+title: "Travail avec la validation de données Excel"
+second_title: "Document"
+linktype: "Validations"
+type: docs
+url: /validations/fr/
+keywords: "validation de données Excel, Aspose.Cells Cloud, API REST, feuille de calcul, cloud bureautique"
+description: "Découvrez comment ajouter, récupérer, mettre à jour, supprimer et effacer des règles de validation de données Excel de manière programmatique à l’aide de l’API REST Aspose.Cells Cloud. Inclut des exemples pour .NET, Java, Python et PHP."
+weight: 100
+ArticleTitle: "Travail avec la validation de données Excel - Documentation de l’API Aspose.Cells Cloud"
+---
 
-À titre d’exemple, un utilisateur peut spécifier une réunion planifiée entre 9h00 et 18h00.
+La validation de données Excel est une fonctionnalité de Microsoft Excel permettant de contrôler ce qu’un utilisateur peut saisir dans une cellule d’une feuille de calcul. Elle permet par exemple de limiter les entrées à une plage de dates spécifique, à des nombres entiers uniquement, ou encore de créer des listes déroulantes permettant d’économiser de l’espace et d’afficher des valeurs dans une seule cellule. Vous pouvez également définir un message personnalisé s’affichant lorsqu’un utilisateur saisit une valeur incorrecte ou un format non valide.
 
-Comme nous pouvons utiliser la validation des données dans Excel pour nous assurer qu'une valeur est un nombre positif, une date comprise entre 15 et 30, nous assurer qu'une date se produit dans les 30 prochains jours ou nous assurer qu'une entrée de texte comporte moins de 25 caractères, etc.
+Par exemple, un utilisateur peut spécifier une réunion prévue entre 9 h 00 et 18 h 00.
 
-## Travailler avec des validations sur un fichier Excel
+La validation de données peut être utilisée pour garantir qu’une valeur est un nombre positif, une date comprise entre le 15 et le 30 d’un mois, une date survenant dans les 30 jours à venir, ou encore une entrée textuelle contenant moins de 25 caractères, etc.
 
-- [Comment ajouter une information de validation à partir d'une feuille de calcul Excel.](/cells/fr/validations/delete/)
-- [Comment obtenir des informations de validation à partir d'une feuille de calcul Excel.](/cells/fr/validations/get/)
-- [Comment obtenir toutes les informations de validation d'une feuille de calcul Excel.](/cells/fr/validations/get-all/)
-- [Comment supprimer une information de validation d'une feuille de calcul Excel.](/cells/fr/validations/delete/)
-- [Comment effacer toutes les informations de validation d'une feuille de calcul Excel.](/cells/fr/validations/clear/)
-- [Comment mettre à jour une information de validation sur une feuille de calcul Excel.](/cells/fr/validations/update/)
+### Résumé de l’API
+
+| Opération | Méthode HTTP | Endpoint | Description |
+|-----------|-------------|----------|-------------|
+| Ajout | POST | `/cells/{file}/worksheets/{sheet}/validations` | Créer une règle de validation |
+| Récupération | GET | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Récupérer une règle spécifique |
+| Tout récupérer | GET | `/cells/{file}/worksheets/{sheet}/validations` | Lister toutes les règles |
+| Mise à jour | PUT | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Modifier une règle |
+| Suppression | DELETE | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Supprimer une règle |
+| Effacer | POST | `/cells/{file}/worksheets/{sheet}/validations/clear` | Supprimer toutes les règles |
+
+## Travail avec les validations sur un fichier Excel
+
+- [Comment ajouter une règle de validation à une feuille de calcul Excel](/cells/validations/add/fr/)
+- [Comment récupérer une règle de validation à partir d’une feuille de calcul Excel](/cells/validations/get/fr/)
+- [Comment récupérer toutes les règles de validation à partir d’une feuille de calcul Excel](/cells/validations/get-all/fr/)
+- [Comment supprimer une règle de validation à partir d’une feuille de calcul Excel](/cells/validations/delete/fr/)
+- [Comment effacer toutes les règles de validation à partir d’une feuille de calcul Excel](/cells/validations/clear/fr/)
+- [Comment mettre à jour une règle de validation sur une feuille de calcul Excel](/cells/validations/update/fr/)
+---

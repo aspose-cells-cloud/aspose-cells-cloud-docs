@@ -1,246 +1,280 @@
-﻿---
-title: Text aus der Datei Excel suchen
-second_title: Documen
-linktitle: Suchen ohne Speicher
-type: docs
-url: /de/search/
-aliases: [/search-without-using-storage/,/search-without-storage/]
-keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: Aspose.Cells Cloud REST API unterstützt das Suchen von Text aus Excel Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 50
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Text aus Excel-Dateien suchen
 ---
-Dieser REST API zeigt `search` Text aus Excel Dateien an.
-`## RSET API
+title: "Text in Excel-Dateien suchen – Aspose.Cells Cloud API"
+description: "Suchen Sie nach spezifischem Text in Excel-Dateien (XLS, XLSX, XLSM, XLSB) und ODS-Dateien mit der Aspose.Cells Cloud API. Enthält Anforderungsdetails, cURL- und SDK-Beispiele sowie Fehlerbehandlung."
+keywords: "Aspose.Cells, Excel, Suche, API, REST"
+type: docs
+url: /cells/search/
+aliases:
+  - /search/
+  - /search-without-using-storage/
+  - /search-without-storage/
+weight: 50
+---
+
+# Text in Excel-Dateien suchen – Aspose.Cells Cloud API
+
+## Übersicht
+Aspose.Cells Cloud bietet einen **POST**-Endpunkt, der einen angegebenen Textstring in Excel-Arbeitsmappen (XLS, XLSX, XLSM, XLSB) und OpenDocument-Tabellendokumenten (ODS) durchsucht. Die API gibt jede Zelle zurück, die den gesuchten Text enthält, zusammen mit einem Link zur Arbeitsmappe, in der der Treffer gefunden wurde.
+
+> **Anwendungsfälle**  
+> - Überprüfen Sie, ob ein bestimmter Wert in einem Bericht vorhanden ist, bevor mit der weiteren Verarbeitung fortgefahren wird.  
+> - Erstellen Sie ein schnelles „Suchen und Ersetzen“-Tool, das zunächst alle Vorkommen auflistet.  
+> - Generieren Sie einen Index von Schlüsselbegriffen über mehrere Tabellenkalkulationen hinweg.
+
+---
+
+## Voraussetzungen
+| Anforderung | Details |
+|-------------|---------|
+| **Authentifizierung** | JWT-Token, das über den Aspose Cloud OAuth-Flow erhalten wurde. Das Token muss den Bereich **Cells** enthalten. |
+| **Unterstützte Formate** | XLS, XLSX, XLSM, XLSB, ODS |
+| **Maximale Dateigröße** | 150 MB (komprimiert). Größere Dateien führen zu **413 Payload Too Large**. |
+| **Erforderliche Header** | `Authorization: Bearer <jwt-token>`  <br> `Accept: application/json` |
+| **Berechtigungen** | Das Token muss *Lese*-Berechtigung für den Ziel-Speicher besitzen (sofern ein Remote-Speicher verwendet wird) – nicht erforderlich, wenn die Datei als `multipart/form-data` hochgeladen wird. |
+
+*Tipp:* Verwenden Sie den **/connect/token**-Endpunkt, um ein JWT-Token zu generieren. Details finden Sie im [Authentifizierungsleitfaden](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+---
+
+## Endpunkt
+
+| Element | Wert |
+|---------|------|
+| **HTTP-Methode** | `POST` |
+| **URL** | `https://api.aspose.cloud/v3.0/cells/search` |
+| **Zweck** | Suchen Sie nach einem angegebenen Text in einer hochgeladenen Excel-Arbeitsmappe. |
+| **Sicherheit** | JWT-Token (Bearer) – siehe *Voraussetzungen* oben. |
+
+---
+
+### **Sicherheit und Authentifizierung**
+
+Die Aspose.Cells Cloud APIs sind sicher und erfordern <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
+
+## Anforderungsparameter
+
+| Name | Typ | Ort | Erforderlich | Beschreibung |
+|------|-----|-----|--------------|-------------|
+| `file` | **Datei** | `formData` (multipart) | **Ja** | Die hochzuladende Tabellendatei. |
+| `text` | **Zeichenkette** | Abfragezeichenfolge | **Ja** | Der zu suchende Textstring. |
+| `password` | **Zeichenkette** | Abfragezeichenfolge | Nein | Passwort zum Öffnen einer passwortgeschützten Arbeitsmappe, falls erforderlich. |
+| `sheetname` | **Zeichenkette** | Abfragezeichenfolge | Nein | Name des Arbeitsblatts, auf das die Suche beschränkt werden soll. Falls weggelassen, werden alle Arbeitsblätter durchsucht. |
+| `checkExcelRestriction` | **boolean** | Abfragezeichenfolge | Nein (Standard: `true`) | Wenn `true`, validiert die API Excel-spezifische Einschränkungen (z. B. schreibgeschützte Zellen) vor der Suche. |
+
+---
+
+## Anforderungsbeispiel (cURL)
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/search
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/search?text=Rechnung&sheetname=Blatt1" \
+  -X POST \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>" \
+  -F "file=@Rechnungsbericht.xlsx"
 ```
 
-The request parameters are:
+*Ersetzen Sie `<jwt-token>` durch ein gültiges Token und passen Sie die Abfrageparameter nach Bedarf an.*
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| file | file | formData | File to upload |
-| text | string | query |   |
-| password | string | query |   |
-| sheetname | string | query |   |
+---
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## Erfolgreiche Antwort
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+**HTTP 200 – Suche erfolgreich; Antwort enthält gefundene Textelemente.**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/search?text=1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'  
+```json
+{
+  "Status": "OK",
+  "Code": 200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "Text": "Rechnung #12345",
+        "link": {
+          "Href": "Rechnungsbericht.xlsx/worksheets/Blatt1",
+          "Rel": "parent",
+          "Title": "Blatt1",
+          "Type": "string"
+        }
+      },
+      {
+        "Text": "Rechnung #12346",
+        "link": {
+          "Href": "Rechnungsbericht.xlsx/worksheets/Blatt1",
+          "Rel": "parent",
+          "Title": "Blatt1",
+          "Type": "string"
+        }
+      }
+    ]
+  }
+}
 ```
 
-{{< /tab >}}
+### Antwortfelder
 
-{{< tab tabNum="2" >}}
+| Feld | Typ | Beschreibung |
+|------|-----|-------------|
+| `Status` | Zeichenkette | Gesamtstatus der Anforderung (`OK` bei Erfolg). |
+| `Code` | Ganzzahl | HTTP-Statuscode (200). |
+| `TextItems.link` | Objekt | Hypermedia-Link zur Sammlungsressource. |
+| `TextItems.TextItemList` | Array | Liste der Treffer. Jedes Element enthält: |
+| `Text` | Zeichenkette | Der Zellwert, der mit dem Suchtext übereinstimmt. |
+| `link` | Objekt | Hyperlink zum Arbeitsblatt, in dem der Treffer gefunden wurde (`Href` verweist auf `Workbook/worksheets/SheetName`). |
 
-```bash
-[{
- "Text": "12/31/1899 10:10:00 AM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 11:10:00 AM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 12:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 1:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 2:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 3:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 4:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 5:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 6:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 7:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 8:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 9:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 10:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 11:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}]
- 
+---
+
+## Fehlerantworten
+
+| HTTP-Code | Bedeutung | Typische Ursache | Beispiel-Body |
+|-----------|-----------|------------------|---------------|
+| **400** | Bad Request | Fehlende erforderliche Parameter, nicht unterstützter Dateityp oder ungültige Abfragewerte. | `{ "Status":"Error","Code":400,"Message":"Der Abfrageparameter 'text' ist erforderlich." }` |
+| **401** | Unauthorized | Fehlendes oder ungültiges JWT-Token. | `{ "Status":"Error","Code":401,"Message":"Ungültiges oder abgelaufenes Zugriffstoken." }` |
+| **413** | Payload Too Large | Die hochgeladene Datei überschreitet das 150 MB-Limit. | `{ "Status":"Error","Code":413,"Message":"Die Dateigröße überschreitet das zulässige Limit." }` |
+| **500** | Internal Server Error | Unerwartetes serverseitiges Problem. | `{ "Status":"Error","Code":500,"Message":"Ein unerwarteter Fehler ist aufgetreten." }` |
+
+---
+
+## SDK-Beispiele
+
+Im Folgenden finden Sie minimale Code-Snippets für den **PostSearch**-Vorgang mit den offiziellen Aspose.Cells Cloud SDKs. Ersetzen Sie `YOUR_JWT_TOKEN` und den Dateipfad durch Ihre eigenen Werte.
+
+### C# (.NET)
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        var config = new Configuration
+        {
+            AccessToken = "YOUR_JWT_TOKEN",
+            BaseUrl = "https://api.aspose.cloud"
+        };
+        var cellsApi = new CellsApi(config);
+
+        using var stream = File.OpenRead("Rechnungsbericht.xlsx");
+        var result = cellsApi.PostSearch(
+            file: stream,
+            text: "Rechnung",
+            sheetname: "Blatt1",
+            password: null,
+            checkExcelRestriction: true
+        );
+
+        foreach (var item in result.TextItems.TextItemList)
+        {
+            Console.WriteLine($"{item.Text}  ->  {item.Link.Href}");
+        }
+    }
+}
 ```
 
-{{< /tab >}}
+### Java
 
-{{< /tabs >}}
+```java
+import com.aspose.cells.cloud.sdk.api.CellsApi;
+import com.aspose.cells.cloud.sdk.model.*;
+import java.io.File;
 
-## Cloud SDK Family
+public class PostSearchDemo {
+    public static void main(String[] args) throws Exception {
+        CellsApi api = new CellsApi("YOUR_JWT_TOKEN");
+        File file = new File("Rechnungsbericht.xlsx");
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+        TextItemsResponse response = api.postSearch(
+                file,
+                "Rechnung",
+                null,          // password
+                "Blatt1",      // sheetname
+                true           // checkExcelRestriction
+        );
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+        response.getTextItems().getTextItemList()
+                .forEach(item -> System.out.println(item.getText() + " -> " + item.getLink().getHref()));
+    }
+}
+```
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+### Python
 
-{{< tab tabNum="1" >}}
+```python
+import asposecellscloudsdk
+from asposecellscloudsdk import CellsApi, ApiException, Configuration
+from asposecellscloudsdk.models import TextItemsResponse
+import pathlib
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostSearch.cs" >}}
+config = Configuration()
+config.access_token = "YOUR_JWT_TOKEN"
+config.host = "https://api.aspose.cloud"
 
-{{< /tab >}}
+api_instance = CellsApi(configuration=config)
 
-{{< tab tabNum="2" >}}
+file_path = pathlib.Path("Rechnungsbericht.xlsx")
+with open(file_path, "rb") as f:
+    result: TextItemsResponse = api_instance.post_search(
+        file=f,
+        text="Rechnung",
+        password=None,
+        sheetname="Blatt1",
+        check_excel_restriction=True
+    )
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostSearch.java" >}}
+for item in result.text_items.text_item_list:
+    print(f"{item.text} -> {item.link.href}")
+```
 
-{{< /tab >}}
+### Node.js (TypeScript)
 
-{{< tab tabNum="3" >}}
+```typescript
+import { CellsApi, Configuration } from "@asposecells-cloud/sdk";
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostSearch.php" >}}
+const config = new Configuration({
+    accessToken: "YOUR_JWT_TOKEN",
+    basePath: "https://api.aspose.cloud"
+});
 
-{{< /tab >}}
+const api = new CellsApi(config);
 
-{{< tab tabNum="4" >}}
+api.postSearch({
+    file: fs.createReadStream("Rechnungsbericht.xlsx"),
+    text: "Rechnung",
+    sheetname: "Blatt1",
+    checkExcelRestriction: true
+}).then(response => {
+    response.textItems?.textItemList?.forEach(item => {
+        console.log(`${item.text} -> ${item.link?.href}`);
+    });
+}).catch(err => console.error(err));
+```
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostSearch.rb" >}}
+*(SDKs für PHP, Ruby, Go und Perl sind im [Aspose.Cells Cloud GitHub-Repository](https://github.com/aspose-cells-cloud) verfügbar.)*
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="5" >}}
+## Zusätzliche Hinweise
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostSearch.ts" >}}
+- **`checkExcelRestriction`** ist standardmäßig auf `true` gesetzt. Setzen Sie diesen Wert nur dann auf `false`, wenn Sie sicher sind, dass die Arbeitsmappe keine schützten Zellen enthält, die die Suche beeinträchtigen könnten.
+- Die API gibt **Hypermedia-Links** (`Href`) zurück, die mit anderen Aspose.Cells Cloud-Endpunkten verwendet werden können (z. B. zum Herunterladen des Arbeitsblatts oder zum Abrufen der Zellformatierung).
+- Bei der Suche in großen Arbeitsmappen sollten Sie den Suchbereich mit dem `sheetname`-Parameter einschränken, um die Antwortzeit zu verbessern.
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="6" >}}
+## Verwandte Links
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostSearch.py" >}}
+- **Authentifizierungsleitfaden** – <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>
+- **OpenAPI-Spezifikation für PostSearch** – <https://apireference.aspose.cloud/cells/#/LightCells/PostSearch>
+- **Aspose.Cells Cloud SDKs** – <https://github.com/aspose-cells-cloud>
+- **Ratenlimits und Quoten** – <https://docs.aspose.cloud/total/getting-started/limits/>
 
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostSearch.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostSearch.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
-`
+---

@@ -1,78 +1,100 @@
-﻿---
-title: Excel çalışma sayfasına birden fazla satırı otomatik olarak sığdır
-second_title: Documen
-linktitle: Sıra
-type: docs
-url: /tr/worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
-keywords: Autofit rows on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında satırların otomatik olarak sığdırılmasını destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 40
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasına birden fazla satırı otomatik sığdırma
 ---
-Bu REST API, Excel çalışma sayfasında satırların otomatik olarak sığdırılmasını gösterir.
+title: "Bir Excel Çalışma Sayfasında Birden Fazla Satırı Otomatik Uygun Hale Getirme"
+second_title: "Belge"
+linktitle: "Satırlar"
+type: docs
+url: /worksheets/autofit/rows/
+aliases: [/autofit-multiple-rows-of-worksheet/]
+keywords: "satırları otomatik uygun hale getirme, Excel, Aspose.Cells Cloud, REST API, çalışma sayfası, elektronik tablo"
+description: "Aspose.Cells Cloud REST API'sini kullanarak bir Excel çalışma sayfasında birden fazla satırı otomatik uygun hale getirmeyi öğrenin. İstek sözdizimi, parametreler, cURL örneği, SDK kod parçacıkları ve hata işleme içerir."
+weight: 40
+ArticleTitle: "Bir Excel Çalışma Sayfasında Birden Fazla Satırı Otomatik Uygun Hale Getirme – Aspose.Cells Cloud API Belgelendirmesi"
+---
 
-## RSET API
+Bu REST API, bir Excel çalışma sayfasındaki satırların yüksekliğini otomatik olarak ayarlar.
+
+## Güvenlik ve Kimlik Doğrulama
+Aspose.Cells Cloud API'leri güvenlidir ve [JWT belirteci tabanlı kimlik doğrulama](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) gerektirir.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrows
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrows
 ```
 
-İstek parametreleri şunlardır:
+### **İstek parametreleri**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Belge adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| autoFitterOptions|| vücut| Oto Montaj Seçenekleri.|
-| başlangıç satırı| tam sayı| sorgu| Satırı başlat.|
-| endRow| tam sayı| sorgu| Son sıra.|
-| sadeceOtomatik| Boolean| sorgu|YANLIŞ|
-| dosya| sicim| sorgu| Belgenin klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+| Parametre Adı         | Tür      | Konum | Açıklama                                                                                                                              | Gerekli |
+| --------------------- | -------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| **name**              | string   | path  | Excel dosyasının adı.                                                                                                                 | ✔       |
+| **sheetName**         | string   | path  | Çalışma sayfasının adı.                                                                                                               | ✔       |
+| **autoFitterOptions** | object   | body  | Satırların nasıl otomatik uygun hale getirileceğini denetleyen seçenekler (örneğin, gizli satırların yoksayılması). Aşağıdaki kısa alan açıklamasına bakın. | ✖       |
+| **startRow**          | integer  | query | Otomatik uygun hale getirilecek ilk satır (1 tabanlı indeks).                                                                        | ✔       |
+| **endRow**            | integer  | query | Otomatik uygun hale getirilecek son satır (dahil).                                                                                   | ✔       |
+| **onlyAuto**          | boolean  | query | `true` ise, API yalnızca yüksekliği Excel tarafından otomatik olarak hesaplanan satırları ayarlar. `false` ise tam bir otomatik uygun hale getirme yapılır. | ✖       |
+| **folder**            | string   | query | Belgeyi içeren klasör.                                                                                                                | ✖       |
+| **storageName**       | string   | query | Depolama hizmetinin adı.                                                                                                              | ✖       |
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRows) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+**autoFitterOptions** alanları (tümü isteğe bağlıdır):
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+- `AutoFitMergedCells` _(boolean)_ – `true` ise, satır yüksekliği hesaplanırken birleştirilmiş hücreler dikkate alınır.
+- `IgnoreHidden` _(boolean)_ – `true` ise, otomatik uygun hale getirme işlemi sırasında gizli satırlar yoksayılır.
+- `OnlyAuto` _(boolean)_ – Sorgu parametresi `onlyAuto` ile aynı işlevi görür; ayarlandığında, sorgu değerini geçersiz kılar.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRows), herkese açık bir erişilebilir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize izin verir.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'yi nasıl çağıracağınızı göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitrows?firstRow=1&lastColumn=10&lastRow=7&firstColumn=1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"AutoFitMergedCells" : true, "IgnoreHidden" : true, "OnlyAuto" : false}'
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitrows?startRow=1&endRow=7" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"AutoFitMergedCells": true, "IgnoreHidden": true, "OnlyAuto": false}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+Typical error responses include:
+
+- **400 Bad Request** – Geçersiz parametre değerleri veya bozuk JSON gövdesi.
+- **401 Unauthorized** – Eksik veya geçersiz JWT belirteci.
+- **404 Not Found** – Belirtilen dosya veya çalışma sayfası mevcut değil.
+- **500 Internal Server Error** – Beklenmeyen bir sunucu hatası oluştu.
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                          |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | OK                          | Sü 필터 başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request                 | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Unauthorized                | Geçersiz veya eksik JWT belirteci. |
+| 413 | Payload Too Large           | Yüklenen dosya boyut sınırını aşıyor. |
+| 500 | Internal Server Error       | Beklenmeyen sunucu hatası. |
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+## Bulut SDK Ortaklığı
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. Bir SDK, düşük seviye detayları işler böylece projenize odaklanabilirsiniz. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,53 +1,98 @@
-﻿---
-title: 从 Excel 工作表中获取文本项
-second_title: Documen
-linktitle: 进入工作表
+---
+title: "从 Excel 工作表中获取文本项"
+second_title: "文档"
+linktitle: "在工作表中获取文本项"
 type: docs
-url: /zh/worksheets/get-text-items/
+url: /worksheets/get-text-items/
 aliases: [/get-text-items-from-a-worksheet/]
 weight: 20
-keywords: Get text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
-description: Aspose.Cells Cloud REST API 支持从 Excel 工作表获取文本。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表中获取文本项
+keywords: "Aspose.Cells, 云 API, Excel, 工作表, 文本项, REST"
+description: "使用 Aspose.Cells Cloud REST API 从 Excel 文件的特定工作表中检索所有文本项。包含 cURL 示例、SDK 代码、身份验证步骤及响应模式。"
+ArticleTitle: "从 Excel 工作表中获取文本项"
 ---
-此 REST API 表示 Excel 工作表中的 `read` 工作表的 `text items`。
 
-## 重新设置 API
+## REST API
 
-```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/textItems
- 
+此 REST API 用于读取 Excel 文件中工作表的文本项。
+
+```
+https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{worksheet}/textItems
 ```
 
-请求参数为：
+### 安全与身份验证
+Aspose.Cells Cloud API 采用安全机制，需使用 [基于 JWT 令牌的身份验证](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)。
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表名称。|
-|文件夹|细绳|询问|工作簿的文件夹。|
-|存储名称|细绳|询问|存储名称。|
+### 请求参数
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetTextItems)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+| 参数名称     | 类型   | 位置   | 必填 | 描述                                |
+|------------|------|------|----|-----------------------------------|
+| name       | string | path | 是  | 工作簿文件名。                         |
+| sheetName  | string | path | 是  | 工作表名称。                           |
+| folder     | string | query| 否  | 包含该工作簿的文件夹路径。                  |
+| storageName| string | query| 否  | Aspose Cloud 存储空间名称。               |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **响应**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
+```
+
+**HTTP 状态码**
+
+| 状态码 | 含义               | 描述                                         |
+|-------|------------------|--------------------------------------------|
+| 200   | OK（成功）         | 成功应用筛选；响应包含操作详情。                   |
+| 400   | Bad Request（错误请求） | 缺少或参数无效（例如：不支持的文件类型）。             |
+| 401   | Unauthorized（未授权）   | JWT 令牌无效或缺失。                            |
+| 413   | Payload Too Large（载荷过大） | 上传的文件超过大小限制。                         |
+| 500   | Internal Server Error（内部服务器错误） | 意外的服务器错误。                        |
+
+## 如何结合 SDK 使用 GetWorksheetTextItems API
+
+### GetWorksheetTextItems API 规范
+
+[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetTextItems){:target="_blank" rel="noopener noreferrer"} 定义了一个公开可访问的编程接口，允许您直接从 Web 浏览器发起 REST 交互。
+
+您可使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何通过 cURL 调用 Cloud API。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/sheet1/textItems" -H "accept: application/json"
-
+```bash
+curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/sheet1/textItems" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
+```json
 {
   "Status": "string",
   "TextItems": {
@@ -70,18 +115,17 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/sheet1/tex
     ]
   }
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+### 使用 Aspose.Cells Cloud SDK
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+SDK 可简化集成过程，通过处理底层细节，使您专注于项目任务本身。请查看 [GitHub 仓库](https://github.com/aspose-cells-cloud){:target="_blank" rel="noopener noreferrer"} 获取 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -134,3 +178,5 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/sheet1/tex
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---

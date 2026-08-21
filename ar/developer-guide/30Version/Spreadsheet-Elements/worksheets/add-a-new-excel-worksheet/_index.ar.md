@@ -1,75 +1,83 @@
-﻿---
-title: أضف ورقة عمل Excel
-second_title: Documen
-linktitle: إعلان
-type: docs
-url: /ar/worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
-keywords: Add an Excel worksheet
-description: يدعم Cloud REST إضافة ورقة عمل. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 20
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إضافة ورقة عمل Excel
 ---
-يشير هذا REST API إلى `add new worksheet`.
+title: "إضافة ورقة عمل Excel"
+ArticleTitle: "إضافة ورقة عمل Excel - دليل واجهة برمجة تطبيقات Aspose.Cells Cloud"
+second_title: "وثيقة"
+linktype: "إضافة"
+type: docs
+url: /worksheets/add/
+aliases: [/add-a-new-excel-worksheet/]
+keywords: "إضافة ورقة عمل Excel، Aspose.Cells Cloud، واجهة برمجة تطبيقات REST، إضافة ورقة عمل عبر PUT، ملف Excel، طلب واجهة برمجة التطبيقات"
+description: "دليل خطوة بخطوة لإضافة ورقة عمل جديدة إلى ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST، ويتضمن تفاصيل الطلب، ومثال باستخدام cURL، وأجزاء من كود SDK لعدة لغات برمجة."
+weight: 20
+---
 
-## RSET API
+تُضيف هذه الواجهة البرمجية ورقة عمل جديدة إلى ملف عمل موجود.
+
+**المتطلبات الأساسية**: لاستدعاء هذه النقطة النهائية، يجب أن يكون لديك رمز مصادقة صالح لـ Aspose Cloud، ويجب أن يكون ملف العمل المستهدف قد تم رفعه إلى مساحة التخزين في Aspose Cloud، ويجب أن تعرف اسم مساحة التخزين (إن كنت تستخدم مساحة تخزين مخصصة).
+
+## واجهة برمجة التطبيقات REST
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
 ```
 
-معلمات الطلب هي:
+### **مُعطَلات الطلب**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم الوثيقة.|
-| اسم الورقة| خيط| طريق| اسم الورقة الجديدة.|
-| موضع| عدد صحيح| استفسار| موضع الورقة الجديد.|
-| نوع الورقة| خيط| استفسار| نوع الورقة الجديد.|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| اسم المُعطَل | النوع    | الموقع | الوصف                                              |
+|--------------|----------|--------|-----------------------------------------------------|
+| name         | string   | path   | اسم ملف ملف العمل.                                 |
+| sheetName    | string   | path   | اسم ورقة العمل الجديدة المراد إنشاؤها.              |
+| position     | integer  | query  | الموقع الصِّفرِي المُرَتَّب الذي تُدرج فيه الورقة.  |
+| sheettype    | string   | query  | نوع الورقة الجديدة (مثل **Chart**، **Dialog**).    |
+| folder       | string   | query  | المجلد الذي يحتوي على ملف العمل.                   |
+| storageName  | string   | query  | اسم مساحة التخزين في Aspose Cloud.                 |
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) واجهة برمجة تطبيقات قابلة للوصول العام، وتمكّنك من إجراء تفاعلات REST مباشرة من متصفح الويب.
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب الخاصة بـ Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إجراء استدعاء لواجهة برمجة التطبيقات السحابية باستخدام cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**رموز حالات الاستجابة الممكنة**
+
+| رمز الحالة | الوصف                                               |
+|------------|------------------------------------------------------|
+| 200        | تمت إضافة ورقة العمل بنجاح.                         |
+| 400        | طلب غير صالح – مُعطَلات غير صحيحة.                 |
+| 401        | غير مخوّل – رمز المصادقة مفقود أو غير صالح.        |
+| 404        | غير موجود – ملف العمل أو المجلد غير موجود.         |
+| 500        | خطأ داخلي في الخادم – حالة غير متوقعة.             |
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أسرع طريقة لتطوير التطبيقات. فالمكتبة (SDK) تُجرّدك من التفاصيل منخفضة المستوى، مما يسمح لك بالتركيز على مشروعك. يُرجى زيارة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على القائمة الكاملة لـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

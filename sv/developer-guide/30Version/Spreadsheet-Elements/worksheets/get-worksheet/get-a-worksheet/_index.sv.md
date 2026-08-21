@@ -1,79 +1,119 @@
-﻿---
-title: Hämta arbetsblad från ett Excel-arbetsblad
-second_title: Documen
-linktitle: Arbetsblad
-type: docs
-url: /sv/worksheets/get-worksheet/
-keywords: Get worksheet to different format from an Excel worksheet
-description: Aspose.Cells Cloud REST API stöder att hämta kalkylblad till olika format från ett Excel-kalkylblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 10
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hämta kalkylblad från ett Excel-kalkylblad
 ---
-Denna REST API indikerar `get worksheet description` eller `export worksheet to kinds of format file`.
+title: "Exportera ett kalkylblad med Aspose.Cells Cloud API – format, cURL- och SDK-exempel"
+second_title: "Dokument"
+linktitle: "Exportera kalkylblad"
+type: docs
+url: /worksheets/get-worksheet/
+keywords: "Aspose.Cells Cloud Get Worksheet, exportera kalkylblad, Excel API, REST, CSV, PDF, PNG, JPEG, GIF, BMP, TIFF, EMF, XPS, OTS, XLS, XLSX, XLSB, XLSM, ODS, FODS, Numbers, moln-API"
+description: "Lär dig hur du exporterar ett enskilt kalkylblad från en Excel-fil med Aspose.Cells Cloud REST API. Inkluderar endpoint, parametrar, ett korregerat cURL-exempel, autentiseringsinformation, felhantering och SDK-utdrag för C#, Java, Python och mer."
+weight: 10
+ArticleTitle: "Exportera ett kalkylblad med Aspose.Cells Cloud API – format, cURL- och SDK-exempel"
+---
 
- Du kan exportera format:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV-fil](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [Textmeddelande](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [TAL](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+Detta REST API gör det möjligt att **exportera ett kalkylblad** från en Excel-fil till många olika filformat.
 
-## RSET API
+**Sammanfattning** – Använd endpointet **Get Worksheet** för att ladda ner ett enskilt kalkylblad från en arbetsbok i det format du önskar.
+
+Du kan exportera till följande format:
+
+| Format  | Filändelse | MIME-typ                                                          |
+| ------- | ---------- | ----------------------------------------------------------------- |
+| XLS     | .xls       | application/vnd.ms-excel                                          |
+| XLSX    | .xlsx      | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet |
+| XLSB    | .xlsb      | application/vnd.ms-excel.sheet.binary.macroEnabled.12             |
+| CSV     | .csv       | text/csv                                                          |
+| TSV     | .tsv       | text/tab-separated-values                                         |
+| XLSM    | .xlsm      | application/vnd.ms-excel.sheet.macroEnabled.12                    |
+| ODS     | .ods       | application/vnd.oasis.opendocument.spreadsheet                    |
+| TXT     | .txt       | text/plain                                                        |
+| PDF     | .pdf       | application/pdf                                                   |
+| OTS     | .ots       | application/vnd.oasis.opendocument.spreadsheet-template           |
+| XPS     | .xps       | application/vnd.ms-xpsdocument                                    |
+| DIF     | .dif       | application/x-dif                                                 |
+| PNG     | .png       | image/png                                                         |
+| JPEG    | .jpeg      | image/jpeg                                                        |
+| GIF     | .gif       | image/gif                                                         |
+| BMP     | .bmp       | image/bmp                                                         |
+| WMF     | .wmf       | image/wmf                                                         |
+| TIFF    | .tiff      | image/tiff                                                        |
+| EMF     | .emf       | image/emf                                                         |
+| NUMBERS | .numbers   | application/vnd.apple.numbers                                     |
+| FODS    | .fods      | application/vnd.oasis.opendocument.spreadsheet-flat-xml           |
+
+## Säkerhet och autentisering
+Aspose.Cells Cloud API:er är säkra och kräver [JWT-tokenbaserad autentisering](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
-Begäranparametrarna är:
+### **Begärparametrar**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Dokumentnamnet.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| formatera| sträng| fråga|Det exporterade filformatet.|
-| vertikal upplösning| heltal| fråga| Ställer in den vertikala upplösningen för genererade bilder, i punkter per tum.|
-| horisontell upplösning| heltal| fråga| Ställer in den horisontella upplösningen för genererade bilder, i punkter per tum.|
-| område| sträng| fråga| Exporterat område.|
-| sidaIndex| heltal| fråga| Exporterat sidindex.|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+| Parameternamn            | Typ     | Plats  | Beskrivning                                                         |
+| ------------------------ | ------- | ------ | ------------------------------------------------------------------- |
+| **name**                 | string  | path   | **Obligatoriskt.** Namn på Excel-filen.                             |
+| **sheetName**            | string  | path   | **Obligatoriskt.** Namn på det kalkylblad som ska exporteras.      |
+| **format**               | string  | query  | Målfilformat för det exporterade kalkylbladet (t.ex. `pdf`, `png`). |
+| **verticalResolution**   | integer | query  | Bild-DPI för format som stöder upplösning (t.ex. PNG, JPEG).        |
+| **horizontalResolution** | integer | query  | Bild-DPI för format som stöder upplösning.                          |
+| **area**                 | string  | query  | Cellområde som ska exporteras (t.ex. `A1:D10`).                     |
+| **pageIndex**            | integer | query  | Sidindex för den sida som ska exporteras när kalkylbladet är uppdelat i sidor. |
+| **folder**               | string  | query  | Mappväg i lagringen där källfilen finns.                           |
+| **storageName**          | string  | query  | Namn på Aspose Cloud-lagringen.                                     |
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+<a href="https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet" target="_blank" rel="noopener noreferrer">OpenAPI-specifikationen</a> definierar ett offentligt tillgängligt programmeringsgränssnitt och gör det möjligt att utföra REST-interaktioner direkt från en webbläsare.
 
-Du kan använda kommandoradsverktyget cURL för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man gör anrop till Cloud API med cURL.
+Du kan använda kommandoradsverktyget cURL för enkelt att komma åt Aspose.Cells webbtjänster. Följande exempel visar hur du anropar moln-API:et med cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="Begäran" tabName2="Svar" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=gif" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=gif" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```http
+HTTP/1.1 200 OK
+Content-Type: image/gif
+Content-Disposition: attachment; filename="Sheet1.gif"
 
-{
-stream
-} 
-
+<binär data>
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-familjen
+## Felhantering
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+API:et returnerar standard-HTTP-statuskoder. Vanliga svar inkluderar:
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+| Statuskod | Betydelse                                                    | Exempel på JSON-svartext             |
+| --------- | ------------------------------------------------------------ | ------------------------------------ |
+| **200**   | Lyckades – kalkylbladsströmmen returneras.                   | `{ "stream": "..." }`                |
+| **400**   | Ogiltig begäran – saknade eller ogiltiga parametrar.         | `{ "error": "Invalid format parameter." }` |
+| **401**   | Autentisering misslyckades – ogiltig eller saknad JWT-token. | `{ "error": "Authentication failed." }`    |
+| **404**   | Hittades inte – den angivna filen eller det angivna kalkylbladet finns inte. | `{ "error": "Worksheet not found." }`      |
+| **500**   | Internt serverfel – oväntat tillstånd på servern.            | `{ "error": "Unexpected error." }`   |
+
+Hantera dessa svar i din klientkod för att ge lämplig återkoppling till användarna.
+
+## Moln-SDK-familj
+
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK hanterar detaljer på lägre nivå och låter dig fokusera på dina projektuppgifter. Kolla in <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub-förrådet</a> för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur du gör anrop till Aspose.Cells webbtjänster med olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

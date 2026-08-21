@@ -1,78 +1,119 @@
-﻿---
-title: Excel çalışma sayfasındaki Otomatik Filtreyi Yenile
-second_title: Documen
-linktitle: Otomatik filtreyi yenile
+---
+title: "Excel Çalışma Sayfasında Otomatik Filtreyi Yenile"
+second_title: "Belge"
+linktitle: "Otomatik filtreyi yenile"
 type: docs
 url: /tr/autofilter/refresh/
-aliases: [/refresh-an-autofilter/]
+aliases: [/tr/refresh-an-autofilter/]
 weight: 100
-keywords: Refresh auto filter on an Excel worksheet
-description: Aspose.Cells Cloud API, Excel çalışma sayfasında otomatik yenileme filtresini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki Otomatik Filtreyi Yenile
+keywords: "Aspose.Cells, AutoFilter, yenile, Excel, API, REST"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki mevcut Otomatik Filtreyi yenileyin. C#, Java, Python ve daha fazlası için cURL ve SDK örnekleri içerir."
+ArticleTitle: "Excel Çalışma Sayfasında Otomatik Filtreyi Yenile"
 ---
-Bu REST API, Excel çalışma sayfasında `refresh` otomatik filtrelemesini gösterir.
 
-## RSET API
+### **Yenile** işlemi ne yapar?
+
+Uç noktayı çağırmak, çalışma sayfası verileri değiştiğinde (örneğin satır eklendiğinde veya silindiğinde) geçerli filtre kriterlerini tekrar uygular. İşlem, filtre tanımını değiştirmez; yalnızca görünümü günceller ve bir durum yanıtı döndürür.
+
+### REST API
+
+Bu REST API, bir Excel çalışma sayfasındaki otomatik filtreyi yeniler (API sürümü **v3.0**).
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh
 ```
 
-İstek parametreleri şunlardır:
+### **Güvenlik ve Kimlik Doğrulama**
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol||
-| sayfaAdı| sicim| yol||
-| dosya| sicim| sorgu||
-| depolamaAdı| sicim| sorgu| depolama adı.|
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetAutoFilterRefresh) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### **Yanıt**
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+**HTTP Durum Kodları**
+
+| Kod | Anlamı                      | Açıklama                                         |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | Tamam                       | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Geçersiz İstek              | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Yetkisiz                    | Geçersiz veya eksik JWT belirteci. |
+| 413 | Yük Çok Büyük               | Yüklenecek dosya boyut sınırını aşıyor. |
+| 500 | İç Sunucu Hatası            | Beklenmeyen sunucu hatası. |
+
+*Örnek hata yanıtları*  
+
+```json
+// 400 Geçersiz İstek
+{
+    "Code": 400,
+    "Message": "Geçersiz parametre: sheetName bulunamadı."
+}
+
+// 401 Yetkisiz
+{
+    "Code": 401,
+    "Message": "Kimlik doğrulama başarısız. JWT belirteci eksik veya geçersiz."
+}
+
+// 413 Yük Çok Büyük
+{
+    "Code": 413,
+    "Message": "Yüklenen dosya maksimum izin verilen boyutu aşıyor."
+}
+
+// 500 İç Sunucu Hatası
+{
+    "Code": 500,
+    "Message": "Sunucuda beklenmeyen bir hata oluştu."
+}
+```
+
+## SDK’lar ile PostWorksheetAutoFilterRefresh API’sini Nasıl Kullanılır
+
+### PostWorksheetAutoFilterRefresh API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetAutoFilterRefresh), herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’sine istek nasıl yapılacağını göstermektedir.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="İstek" tabName12="Yanıt" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/refresh" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/refresh" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your-jwt-token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
+### Aspose.Cells Cloud SDK’larını Kullanma
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+Bir SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoludur. Bir SDK, düşük seviye ayrıntıları yönetir ve size proje görevlerinize odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen [GitHub deposuna](https://github.com/aspose-cells-cloud) göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
-
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanılarak Aspose.Cells web hizmetlerine istek nasıl yapılacağını göstermektedir:
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -124,3 +165,4 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
+---

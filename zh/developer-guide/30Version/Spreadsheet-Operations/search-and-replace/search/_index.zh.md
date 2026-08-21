@@ -1,246 +1,278 @@
-﻿---
-title: 从 Excel 文件中查找文本
-second_title: Documen
-linktitle: 不使用存储查找
-type: docs
-url: /zh/search/
-aliases: [/search-without-using-storage/,/search-without-storage/]
-keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: Aspose.Cells Cloud REST API 支持从 Excel 文件中查找文本。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 50
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 文件中查找文本
 ---
-此 REST API 表示来自 Excel 文件的 `search` 文本。
-`## RSET API
+title: "在 Excel 文件中查找文本 – Aspose.Cells Cloud API"
+description: "使用 Aspose.Cells Cloud API 在 Excel 文件（XLS、XLSX、XLSM、XLSB）和 ODS 文件中搜索特定文本。包含请求详情、cURL 与 SDK 示例及错误处理。"
+keywords: "Aspose.Cells, Excel, 搜索, API, REST"
+type: docs
+url: /cells/search/
+aliases:
+  - /search/
+  - /search-without-using-storage/
+  - /search-without-storage/
+weight: 50
+---
+
+# 在 Excel 文件中查找文本 – Aspose.Cells Cloud API
+
+## 概述
+Aspose.Cells Cloud 提供了一个 **POST** 接口，用于在 Excel 工作簿（XLS、XLSX、XLSM、XLSB）和 OpenDocument 表格（ODS）文件中搜索指定文本字符串。API 将返回所有包含所请求文本的单元格，并附带指向匹配单元格所在工作表的链接。
+
+> **使用场景**  
+> - 在进一步处理前验证报告中是否存在特定值。  
+> - 构建一个快速的“查找与替换”工具，首先列出所有匹配项。  
+> - 为一批电子表格生成关键词索引。
+
+---
+
+## 前置条件
+| 要求 | 详情 |
+|------|------|
+| **身份认证** | 通过 Aspose Cloud OAuth 流程获取的 JWT 令牌，该令牌必须包含 **Cells** 范围。 |
+| **支持的格式** | XLS、XLSX、XLSM、XLSB、ODS |
+| **最大文件大小** | 150 MB（压缩后）。超过该限制将返回 **413 Payload Too Large** 错误。 |
+| **必需请求头** | `Authorization: Bearer <jwt-token>`  <br> `Accept: application/json` |
+| **权限要求** | 若使用远程存储，令牌必须具有目标存储的 *读取* 权限；当文件以 `multipart/form-data` 形式上传时则无需此权限。 |
+
+*提示：* 使用 **/connect/token** 接口生成 JWT 令牌。详情请参阅 [身份认证指南](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)。
+
+---
+
+## 接口地址
+
+| 项目 | 值 |
+|------|-----|
+| **HTTP 方法** | `POST` |
+| **URL** | `https://api.aspose.cloud/v3.0/cells/search` |
+| **用途** | 在已上传的 Excel 工作簿中搜索指定文本。 |
+| **安全性** | JWT 令牌（Bearer）——详见上方 *前置条件*。 |
+
+---
+
+### **安全与身份认证**
+
+Aspose.Cells Cloud 接口采用安全机制，需使用 <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">基于 JWT 令牌的身份认证</a>。
+
+## 请求参数
+
+| 名称 | 类型 | 位置 | 必填 | 描述 |
+|------|------|------|------|------|
+| `file` | **文件** | `formData`（multipart） | **是** | 要上传的电子表格文件。 |
+| `text` | **字符串** | 查询字符串 | **是** | 要搜索的文本字符串。 |
+| `password` | **字符串** | 查询字符串 | 否 | 打开受保护工作簿所需的密码（如适用）。 |
+| `sheetname` | **字符串** | 查询字符串 | 否 | 限定搜索范围的工作表名称；若省略，则搜索所有工作表。 |
+| `checkExcelRestriction` | **布尔值** | 查询字符串 | 否（默认值：`true`） | 当为 `true` 时，API 在搜索前会验证 Excel 特定限制（如只读单元格）。 |
+
+---
+
+## 请求示例（cURL）
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/search
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/search?text=Invoice&sheetname=Sheet1" \
+  -X POST \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>" \
+  -F "file=@InvoiceReport.xlsx"
 ```
 
-The request parameters are:
+*请将 `<jwt-token>` 替换为有效令牌，并根据需要调整查询参数。*
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| file | file | formData | File to upload |
-| text | string | query |   |
-| password | string | query |   |
-| sheetname | string | query |   |
+---
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## 成功响应
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+**HTTP 200 – 搜索成功；响应中包含匹配文本项。**
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/search?text=1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"\
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'  
+```json
+{
+  "Status": "OK",
+  "Code": 200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "Text": "Invoice #12345",
+        "link": {
+          "Href": "InvoiceReport.xlsx/worksheets/Sheet1",
+          "Rel": "parent",
+          "Title": "Sheet1",
+          "Type": "string"
+        }
+      },
+      {
+        "Text": "Invoice #12346",
+        "link": {
+          "Href": "InvoiceReport.xlsx/worksheets/Sheet1",
+          "Rel": "parent",
+          "Title": "Sheet1",
+          "Type": "string"
+        }
+      }
+    ]
+  }
+}
 ```
 
-{{< /tab >}}
+### 响应字段说明
 
-{{< tab tabNum="2" >}}
+| 字段 | 类型 | 描述 |
+|------|------|------|
+| `Status` | string | 请求总体状态（成功时为 `OK`）。 |
+| `Code` | integer | HTTP 状态码（200）。 |
+| `TextItems.link` | object | 指向集合资源的超媒体链接。 |
+| `TextItems.TextItemList` | array | 匹配项列表。每项包含： |
+| `Text` | string | 与搜索文本匹配的单元格值。 |
+| `link` | object | 指向匹配项所在工作表的超链接（`Href` 指向 `Workbook/worksheets/SheetName`）。 |
 
-```bash
-[{
- "Text": "12/31/1899 10:10:00 AM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 11:10:00 AM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 12:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 1:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 2:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 3:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 4:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 5:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 6:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 7:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 8:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 9:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 10:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "12/31/1899 11:10:00 PM",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet5",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}, {
- "Text": "18",
- "link": {
-  "Href": "Book1.xlsx/worksheets/Sheet7",
-  "Rel": "parent"
- }
-}]
- 
+---
+
+## 错误响应
+
+| HTTP 状态码 | 含义 | 常见原因 | 示例响应体 |
+|-------------|------|----------|------------|
+| **400** | 请求错误 | 缺少必需参数、不支持的文件类型或无效查询值。 | `{ "Status":"Error","Code":400,"Message":"The 'text' query parameter is required." }` |
+| **401** | 未授权 | 缺失或无效的 JWT 令牌。 | `{ "Status":"Error","Code":401,"Message":"Invalid or expired access token." }` |
+| **413** | 载荷过大 | 上传文件超过 150 MB 限制。 | `{ "Status":"Error","Code":413,"Message":"File size exceeds the allowed limit." }` |
+| **500** | 服务器内部错误 | 服务器端发生意外问题。 | `{ "Status":"Error","Code":500,"Message":"An unexpected error occurred." }` |
+
+---
+
+## SDK 示例
+
+以下为使用官方 Aspose.Cells Cloud SDK 执行 **PostSearch** 操作的最小化代码片段。请将 `YOUR_JWT_TOKEN` 与文件路径替换为您的实际值。
+
+### C# (.NET)
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        var config = new Configuration
+        {
+            AccessToken = "YOUR_JWT_TOKEN",
+            BaseUrl = "https://api.aspose.cloud"
+        };
+        var cellsApi = new CellsApi(config);
+
+        using var stream = File.OpenRead("InvoiceReport.xlsx");
+        var result = cellsApi.PostSearch(
+            file: stream,
+            text: "Invoice",
+            sheetname: "Sheet1",
+            password: null,
+            checkExcelRestriction: true
+        );
+
+        foreach (var item in result.TextItems.TextItemList)
+        {
+            Console.WriteLine($"{item.Text}  ->  {item.Link.Href}");
+        }
+    }
+}
 ```
 
-{{< /tab >}}
+### Java
 
-{{< /tabs >}}
+```java
+import com.aspose.cells.cloud.sdk.api.CellsApi;
+import com.aspose.cells.cloud.sdk.model.*;
+import java.io.File;
 
-## Cloud SDK Family
+public class PostSearchDemo {
+    public static void main(String[] args) throws Exception {
+        CellsApi api = new CellsApi("YOUR_JWT_TOKEN");
+        File file = new File("InvoiceReport.xlsx");
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+        TextItemsResponse response = api.postSearch(
+                file,
+                "Invoice",
+                null,          // password
+                "Sheet1",      // sheetname
+                true           // checkExcelRestriction
+        );
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+        response.getTextItems().getTextItemList()
+                .forEach(item -> System.out.println(item.getText() + " -> " + item.getLink().getHref()));
+    }
+}
+```
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+### Python
 
-{{< tab tabNum="1" >}}
+```python
+import asposecellscloudsdk
+from asposecellscloudsdk import CellsApi, ApiException, Configuration
+from asposecellscloudsdk.models import TextItemsResponse
+import pathlib
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostSearch.cs" >}}
+config = Configuration()
+config.access_token = "YOUR_JWT_TOKEN"
+config.host = "https://api.aspose.cloud"
 
-{{< /tab >}}
+api_instance = CellsApi(configuration=config)
 
-{{< tab tabNum="2" >}}
+file_path = pathlib.Path("InvoiceReport.xlsx")
+with open(file_path, "rb") as f:
+    result: TextItemsResponse = api_instance.post_search(
+        file=f,
+        text="Invoice",
+        password=None,
+        sheetname="Sheet1",
+        check_excel_restriction=True
+    )
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostSearch.java" >}}
+for item in result.text_items.text_item_list:
+    print(f"{item.text} -> {item.link.href}")
+```
 
-{{< /tab >}}
+### Node.js (TypeScript)
 
-{{< tab tabNum="3" >}}
+```typescript
+import { CellsApi, Configuration } from "@asposecells-cloud/sdk";
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostSearch.php" >}}
+const config = new Configuration({
+    accessToken: "YOUR_JWT_TOKEN",
+    basePath: "https://api.aspose.cloud"
+});
 
-{{< /tab >}}
+const api = new CellsApi(config);
 
-{{< tab tabNum="4" >}}
+api.postSearch({
+    file: fs.createReadStream("InvoiceReport.xlsx"),
+    text: "Invoice",
+    sheetname: "Sheet1",
+    checkExcelRestriction: true
+}).then(response => {
+    response.textItems?.textItemList?.forEach(item => {
+        console.log(`${item.text} -> ${item.link?.href}`);
+    });
+}).catch(err => console.error(err));
+```
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostSearch.rb" >}}
+*（PHP、Ruby、Go 和 Perl 的 SDK 可在 [Aspose.Cells Cloud GitHub 仓库](https://github.com/aspose-cells-cloud) 获取。）*
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="5" >}}
+## 附加说明
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostSearch.ts" >}}
+- **`checkExcelRestriction`** 默认为 `true`。仅当确认工作簿中不包含可能干扰搜索的受保护单元格时，才应将其设为 `false`。
+- API 返回的 **超媒体链接**（`Href`）可与其他 Aspose.Cells 接口配合使用（例如下载工作表或获取单元格格式）。
+- 搜索大型工作簿时，建议通过 `sheetname` 参数缩小搜索范围，以提升响应速度。
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="6" >}}
+## 相关链接
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostSearch.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostSearch.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostSearch.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
-`
+- **身份认证指南** – <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>
+- **PostSearch 接口的 OpenAPI 规范** – <https://apireference.aspose.cloud/cells/#/LightCells/PostSearch>
+- **Aspose.Cells Cloud SDK** – <https://github.com/aspose-cells-cloud>
+- **速率限制与配额** – <https://docs.aspose.cloud/total/getting-started/limits/>

@@ -1,76 +1,108 @@
-﻿---
-title: Workboo'da Arka Plan Ekleme
-second_title: Documen
-linktitle: Reklam
-type: docs
-url: /tr/add-background-in-excel-file/
-aliases: [/add-background-in-workbook/,/workbook/add-background/,/workbook/background/add/]
-keywords: Add background on an Excel workbook
-description: Aspose.Cells Cloud REST API, Excel çalışma kitabına Excel dosyasında arka plan eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 160
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Çalışma Kitabına Arka Plan Ekleme
 ---
-Bu REST API, Excel çalışma kitabına `background` eklenmesini belirtir.
+title: "Çalışma Kitabına Arka Plan Resmi Ekle"
+second_title: "Belge"
+linktype: "Ekle"
+type: docs
+url: /add-background-in-excel-file/
+aliases:
+  - /add-background-in-workbook/
+  - /workbook/add-background/
+  - /workbook/background/add/
+keywords: "Aspose.Cells, arka plan resmi ekle, Excel API, REST, bulut SDK, cURL, çalışma kitabı arka planı"
+description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabına arka plan resmi nasıl ekleneceğini öğrenin. Gerekli parametreler, kimlik doğrulama ayrıntıları, tam bir cURL örneği ve hata işleme bilgilerini içerir."
+weight: 160
+---
 
-**Sorgu Parametresi**
+## REST API
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|picPath|sicim|resim pozisyonu.|
-|dosya|sicim|Orijinal çalışma kitabı klasörü.|
-|depolamaAdı|sicim|Depolama adı.|
+Bu REST API, bir Excel çalışma kitabına bir **arka plan resmi** ekler.
 
-**İstek Gövde Parametresi**
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/background
+```
 
-|Parametre Adı|Tip|Tanım|
-|:- |:- |:- |
-|veri dosyası| veri dosyası|Veri dosyası istek gövdesine kaydedilir.|
+### **Güvenlik ve Kimlik Doğrulama**
 
-## DİNLENME API
+Aspose.Cells Cloud API’leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulama</a> gerektirir.
 
-|**API**|**Tip**|**Tanım**|**Kaynak Bağlantısı**|
-|:- |:- |:- |:- |
-|/hücreler/{isim}/arka plan|KOYMAK|Excel dosyasına arka plan ekleyin|[PutWorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)|
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+### Sorgu Parametreleri
 
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+| Parametre Adı | Tür   | Açıklama                                                   |
+| ------------- | ----- | ---------------------------------------------------------- |
+| `picPath`     | string | Arka plan olarak kullanılacak resim dosyasının yolu.      |
+| `folder`      | string | Orijinal çalışma kitabının bulunduğu klasör.               |
+| `storageName` | string | Dosyanın bulunduğu depo adı.                               |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### İstek Gövdesi Parametresi
+
+| Parametre Adı | Tür  | Açıklama                                                |
+| ------------- | ---- | ------------------------------------------------------- |
+| `datafile`    | file | Arka planın uygulanacağı çalışma kitabının dosyası.     |
+
+**Yol Parametresi** – URL'deki `{name}`, **çalışma kitabının dosya adını** temsil eder (örneğin, `Book1.xlsx`).
+
+
+### **Yanıt**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200
+}
+```
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                                    |
+|-----|-----------------------------|-------------------------------------------------------------|
+| 200 | Tamam                       | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Yanlış İstek                | Eksik veya geçersiz parametreler (örneğin, desteklenmeyen dosya türü). |
+| 401 | Yetkisiz                    | Geçersiz veya eksik JWT belirteci.                           |
+| 413 | Yük Çok Büyük               | Yüklenen dosya boyut sınırını aşıyor.                        |
+| 500 | İç Sunucu Hatası            | Beklenmeyen sunucu hatası.                                   |
+
+## PutWorkbookBackground API’sini SDK’larla Nasıl Kullanılır?
+
+### PutWorkbookBackground API Spesifikasyonu
+
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground), web tarayıcınızdan doğrudan REST etkileşimlerini gerçekleştirmenizi sağlayan herkese açık bir programlama arayüzü tanımlar.
+
+Aspose.Cells web hizmetlerine kolayca erişmek için **cURL** komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, multipart dosya yükleme bayrağı ve gerekli kimlik doğrulama başlığıyla birlikte tam bir isteği göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=DotnetFiles%2FWaterMark.png&folder=DotnetFiles" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger"
-
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=DotnetFiles%2FWaterMark.png&folder=DotnetFiles" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -F "datafile=@/path/to/Book1.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
- "Code": 200,
-
+  "Code": 200,
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+### Aspose.Cells Cloud SDK’larını Kullanın
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+SDK kullanmak, geliştirme yapmanın en hızlı yoludur. Bir SDK, düşük seviyeli ayrıntıları soyutlayarak iş mantığınıza odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakın.
+
+Aşağıdaki kod örnekleri, farklı SDK’lar kullanarak Aspose.Cells web hizmetlerini nasıl çağıracağınızı göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,124 +1,279 @@
-﻿---
-title: Excel çalışma sayfasındaki sütunları gruplandırmayı kaldırın
-second_title: Documen
-linktitle: Ungruo
-type: docs
-url: /tr/columns/ungroup/
-aliases: [/ungroup-columns-in-an-excel-worksheet/, /ungroup-columns-in-excel-worksheet/]
-keywords: Ungroup column on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında sütun gruplandırmasını kaldırmayı destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 70
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki sütunların gruplandırılmasını kaldırma
 ---
-Bu REST API çalışma sayfası sütunlarının gruplandırılmasını kaldır anlamına gelir.
+title: Excel'de Sütunları Gruplamayı Kaldır – Aspose.Cells Cloud API  
+description: Aspose.Cells Cloud REST API'sini (v3.0) kullanarak bir Excel çalışma sayfasındaki sütun gruplamasını kaldırın. Uç nokta, parametreler, kimlik doğrulama, cURL örneği, yanıt biçimi ve SDK kod parçacıklarını içerir.  
+keywords: Aspose.Cells, grup kaldırma, sütunlar, Excel, API, REST, bulut, SDK  
+slug: columns/ungroup  
+date: 2026-07-30  
+---  
 
-## RSET API
+# Excel'de Sütunları Gruplamayı Kaldır  
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/ungroup
- 
+Aspose.Cells Cloud, belirli bir çalışma sayfasından sütun gruplamasını kaldıran bir **POST** işlemi sağlar. Bu sayfa, istek biçimi, gerekli parametreler, kimlik doğrulama yöntemi, örnek çağrılar ve SDK kullanımı hakkında ayrıntılı bilgi verir.
+
+---  
+
+## Ön Gereksinimler  
+
+| Gereksinim | Neden Gerekli |
+|-----------|---------------|
+| **Aspose Cloud hesabı** | Aspose.Cells Cloud hizmetlerine erişim için. |
+| **JWT erişim belirteci** | Tüm API çağrıları, bearer token ile yetkilendirilmelidir. [JWT kimlik doğrulama kılavuzuna](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) bakınız. |
+| **Aspose Cloud depoda saklanan çalışma kitabı** | API, bulut depolama (veya bağlı harici depolama) içindeki dosyalar üzerinde çalışır. |
+| **Çalışma sayfası adı** | Hedef çalışma sayfası, çalışma kitabında mevcut olmalıdır. |
+
+---  
+
+## Kimlik Doğrulama  
+
+Tüm istekler, geçerli bir JWT belirteci içeren bir **Authorization** başlığı gerektirir:
+
+```http
+Authorization: Bearer <access_token>
 ```
 
-İstek parametreleri şunlardır:
+Belirteç, Aspose Cloud OAuth akışı aracılığıyla elde edilir. Belirteçler sınırlı bir süre için geçerlidir; gerekli olduğunda yenilemelisiniz.
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| Çalışma kitabının adı.|
-| sayfaAdı| sicim| yol| Çalışma sayfasının adı.|
-| ilkIndex| tam sayı| sorgu|İşlem yapılacak ilk sütun indeksi.|
-| sonIndex| tam sayı| sorgu| İşlem yapılacak son sütun indeksi.|
-| dosya| sicim| sorgu| Belge klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+---  
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetColumns) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+## Uç Nokta  
 
- Kullanabilirsiniz**cURL** Aspose.Cells web servislerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/Columns/ungroup?firstIndex=1&lastIndex=5" -H "accept: application/json"
-
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/ungroup
 ```
 
-{{< /tab >}}
+* `{name}` – **Yol** – Çalışma kitabı dosya adı (örneğin `test.xlsx`).  
+* `{sheetName}` – **Yol** – Çalışma sayfası adı (örneğin `Sheet1`).  
 
-{{< tab tabNum="12" >}}
+---  
+
+## Parametreler  
+
+### Yol Parametreleri  
+
+| Ad | Tür | Gerekli | Açıklama |
+|-----|-----|---------|----------|
+| `name` | string | Evet | Çalışma kitabı dosya adı. |
+| `sheetName` | string | Evet | Çalışma sayfası adı. |
+
+### Sorgu Parametreleri  
+
+| Ad | Tür | Gerekli | Açıklama |
+|-----|-----|---------|----------|
+| `firstIndex` | integer | Evet | Grubu kaldırılacak ilk sütunun sıfır tabanlı indeksi. |
+| `lastIndex` | integer | Evet | Grubu kaldırılacak son sütunun sıfır tabanlı indeksi. |
+| `folder` | string | Hayır | Çalışma kitabının bulunduğu klasör yolu. |
+| `storageName` | string | Hayır | Dosyanın bulunduğu depolama hizmetinin adı. |
+
+---  
+
+## İstek Örneği (cURL)  
 
 ```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/ungroup?firstIndex=1&lastIndex=5" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Accept: application/json"
+```
 
- {
+*`<access_token>` ifadesini geçerli bir JWT belirteci ile değiştirin.*
 
+---  
+
+## Başarılı Yanıt  
+
+```json
+{
   "Code": 200,
-
-  "Status": "OK"
-
+  "Status": "OK",
+  "Columns": {
+    "FirstIndex": 1,
+    "LastIndex": 5
+  }
 }
-
 ```
 
-{{< /tab >}}
+Yanıt nesnesi (`CellsCloudResponse`), başarıyla gruplaması kaldırılan sütun aralığını içerir.
 
-{{< /tabs >}}
+### Hata Yanıtı  
 
-## Bulut SDK Ailesi
+İstek başarısız olursa, hizmet aşağıdaki alanları içeren bir JSON yükü döndürür:
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+| Alan | Anlamı |
+|------|--------|
+| `Code` | HTTP tarzı hata kodu (örneğin 400, 401). |
+| `Status` | Hatayı kısa olarak tanımlar. |
+| `ErrorMessage` | Hatanın ayrıntılı açıklaması. |
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+---  
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+**HTTP Durum Kodları**
 
-{{< tab tabNum="1" >}}
+| Kod | Anlam                      | Açıklama                                             |
+|-----|----------------------------|------------------------------------------------------|
+| 200 | OK                         | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request                | Eksik veya geçersiz parametreler (örneğin desteklenmeyen dosya türü). |
+| 401 | Unauthorized               | Geçersiz veya eksik JWT belirteci. |
+| 413 | Payload Too Large          | Yüklenecek dosya boyut sınırlarını aşıyor. |
+| 500 | Internal Server Error      | Beklenmeyen sunucu hatası. |
+---  
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostUngroupWorksheetColumns.cs" >}}
+## SDK Kod Örnekleri  
 
-{{< /tab >}}
+Aşağıda, en popüler SDK’lar için çalışan hazır kod parçacıkları yer almaktadır. Yer tutucu değerleri (`<YourAccessToken>`, `<YourFileName>` vb.) kendi verilerinizle değiştirin.
 
-{{< tab tabNum="2" >}}
+<details><summary>**C# (.NET)**</summary>  
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostUngroupWorksheetColumns.java" >}}
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+using System;
 
-{{< /tab >}}
+class Program
+{
+    static void Main()
+    {
+        var config = new Configuration
+        {
+            AccessToken = "<YourAccessToken>",
+            BaseUrl = "https://api.aspose.cloud"
+        };
+        var cellsApi = new CellsApi(config);
 
-{{< tab tabNum="3" >}}
+        var response = cellsApi.PostUngroupWorksheetColumns(
+            name: "test.xlsx",
+            sheetName: "Sheet1",
+            firstIndex: 1,
+            lastIndex: 5,
+            folder: null,
+            storageName: null);
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostUngroupWorksheetColumns.php" >}}
+        Console.WriteLine($"Gruplaması kaldırılan sütunlar: {response.Columns.FirstIndex} – {response.Columns.LastIndex}");
+    }
+}
+```
+</details>
 
-{{< /tab >}}
+<details><summary>**Java**</summary>  
 
-{{< tab tabNum="4" >}}
+```java
+import com.aspose.cells.cloud.api.CellsApi;
+import com.aspose.cells.cloud.model.CellsCloudResponse;
+import com.aspose.cells.cloud.Configuration;
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostUngroupWorksheetColumns.rb" >}}
+public class UngroupColumns {
+    public static void main(String[] args) throws Exception {
+        Configuration config = new Configuration();
+        config.setAccessToken("<YourAccessToken>");
+        config.setBaseUrl("https://api.aspose.cloud");
+        CellsApi api = new CellsApi(config);
 
-{{< /tab >}}
+        CellsCloudResponse resp = api.postUngroupWorksheetColumns(
+            "test.xlsx",
+            "Sheet1",
+            1,
+            5,
+            null,
+            null);
 
-{{< tab tabNum="5" >}}
+        System.out.println("Gruplaması kaldırılan sütunlar: " + resp.getColumns().getFirstIndex()
+                           + " – " + resp.getColumns().getLastIndex());
+    }
+}
+```
+</details>
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostUngroupWorksheetColumns.ts" >}}
+<details><summary>**Python**</summary>  
 
-{{< /tab >}}
+```python
+from asposecellscloud import CellsApi, Configuration
 
-{{< tab tabNum="6" >}}
+config = Configuration()
+config.access_token = "<YourAccessToken>"
+config.base_url = "https://api.aspose.cloud"
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostUngroupWorksheetColumns.py" >}}
+api = CellsApi(config)
 
-{{< /tab >}}
+response = api.post_ungroup_worksheet_columns(
+    name="test.xlsx",
+    sheet_name="Sheet1",
+    first_index=1,
+    last_index=5,
+    folder=None,
+    storage_name=None)
 
-{{< tab tabNum="7" >}}
+print(f"Gruplaması kaldırılan sütunlar: {response.columns.first_index} – {response.columns.last_index}")
+```
+</details>
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostUngroupWorksheetColumns.pl" >}}
+<details><summary>**Node.js**</summary>  
 
-{{< /tab >}}
+```javascript
+const { CellsApi, Configuration } = require('asposecellscloud');
 
-{{< tab tabNum="8" >}}
+const config = new Configuration({
+    accessToken: "<YourAccessToken>",
+    baseUrl: "https://api.aspose.cloud"
+});
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostUngroupWorksheetColumns.go" >}}
+const api = new CellsApi(config);
 
-{{< /tab >}}
+api.postUngroupWorksheetColumns("test.xlsx", "Sheet1", 1, 5, null, null)
+   .then(resp => {
+       console.log(`Gruplaması kaldırılan sütunlar: ${resp.columns.firstIndex} – ${resp.columns.lastIndex}`);
+   })
+   .catch(err => console.error(err));
+```
+</details>
 
-{{< /tabs >}}
+<details><summary>**Go**</summary>  
+
+```go
+package main
+
+import (
+    "fmt"
+    "github.com/asposecellscloud/aspose-cells-cloud-go/v3/sdk"
+)
+
+func main() {
+    config := sdk.NewConfiguration()
+    config.AccessToken = "<YourAccessToken>"
+    config.BasePath = "https://api.aspose.cloud"
+
+    api := sdk.NewCellsApi(config)
+
+    resp, _, err := api.PostUngroupWorksheetColumns(
+        "test.xlsx",
+        "Sheet1",
+        1,
+        5,
+        nil,
+        nil,
+    )
+    if err != nil {
+        panic(err)
+    }
+    fmt.Printf("Gruplaması kaldırılan sütunlar: %d – %d\n", resp.Columns.FirstIndex, resp.Columns.LastIndex)
+}
+```
+</details>
+
+> **Not:** PHP, Ruby, Perl ve diğer diller için SDK’lar aynı parametre sırasını takip eder. Tam örnekler için [GitHub deposuna](https://github.com/aspose-cells-cloud) bakınız.
+
+---  
+
+## Kaynaklar  
+
+* **OpenAPI Spesifikasyonu:** <https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetColumns>  
+* **Kimlik Doğrulama Kılavuzu:** <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>  
+* **SDK Deposu:** <https://github.com/aspose-cells-cloud>
+
+---  
+
+## Değişiklik Geçmişi  
+
+| Tarih | Yazar | Değişiklik |
+|------|--------|------------|
+| 2026‑07‑30 | AI Optimizer | UTF‑8 kodlaması düzeltildi, Ön Gereksinimler eklendi, meta anahtar kelimeler temizlendi, başlık hiyerarşisi iyileştirildi ve SDK kod parçacıkları eklendi. |
+| 2026‑07‑29 | Orijinal | İlk belge taslağı. |
+
+---

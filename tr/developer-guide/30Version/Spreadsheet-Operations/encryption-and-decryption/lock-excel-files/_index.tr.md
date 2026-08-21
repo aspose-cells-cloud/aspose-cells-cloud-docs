@@ -1,84 +1,95 @@
-﻿---
-title: Excel dosyasını kilitle
-second_title: Documen
-linktitle: Excel dosyasını kilitle
-type: docs
-url: /tr/lock-excel-files/
-aliases: [/lock/without-storage/,/lock/,/lock/without-using-storage/]
-keywords: Lock Excel files
-description: Aspose.Cells Cloud REST API, Excel dosyalarının kilitlenmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 70
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Kilit
 ---
-Bu REST API, `lock` Excel dosyalarını gösterir.
+title: "Excel Dosyalarını Kilitle"
+second_title: "Belge"
+linktitle: "Excel dosyalarını kilitle"
+type: docs
+url: /lock-excel-files/
+aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+keywords: "Kilitle, Excel, API, Aspose.Cells, Bulut, REST, Çalışma Kitabı, Elektronik Tablo, SDK"
+description: "Aspose.Cells Cloud REST API’sini (v3.0) kullanarak Excel çalışma kitaplarını nasıl kilitleyeceğinizi öğrenin. HTTPS uç noktası, kimlik doğrulama, cURL isteği, yanıt şeması ve C#, Java, Python ve diğerleri için SDK kod örnekleri içerir."
+ArticleTitle: "Excel Dosyalarını Kilitle – Aspose.Cells Cloud API Dokümantasyonu"
+weight: 70
+---
 
-## RSET API
+**API Sürümü:** v3.0 (geçerli)
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/lock
- 
+Bu REST API, Excel çalışma kitaplarını **kilitler**.
+
+## PostLock API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/lock
 ```
 
-İstek parametreleri şunlardır:
+**Gereksinimler** – İstek, **HTTPS** üzerinden gönderilir ve `Authorization` başlığında geçerli bir OAuth 2.0 Bearer belirteci içerir.
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| dosya| dosya| formData| Yüklenecek dosya|
-| şifre| sicim| sorgu||
+### İstek parametreleri şunlardır
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostLock) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+| Parametre Adı | Tür   | Konum                     | Açıklama                                      |
+| ------------- | ----- | ------------------------- | --------------------------------------------- |
+| file          | dosya | form‑data (çok parçalı gövde) | Yüklenip kilitlenecek Excel çalışma kitabını belirtir. |
+| password      | string | sorgu dizisi            | Çalışma kitabının parolası (isteğe bağlı).    |
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+<a href="https://apireference.aspose.cloud/cells/#/LightCells/PostLock" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a>, herkese açık bir programlama arayüzü tanımlar ve web tarayıcınızdan doğrudan REST etkileşimlerini gerçekleştirmenizi sağlar.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Bulut API’sini **çağırma** yöntemini göstermektedir.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/lock?password=123456" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/lock?password=123456" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <access_token>" \
+  -F "file=@Sample.xlsx"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Sample.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+*İsteği test etmek için bir örnek çalışma kitabını indirebilirsiniz — [Sample.xlsx](https://example.com/Sample.xlsx).*
+
+**Not:** API, 100 MB’a kadar olan dosyaları destekler; daha büyük yükler 413 (Yük Çok Büyük) yanıtıyla sonuçlanabilir.
+
+### **Yanıt detayları**
+
+| Alan        | Tür             | Açıklama                                          |
+| ----------- | --------------- | ------------------------------------------------- |
+| Filename    | string          | Hizmet tarafından döndürülen kilitli çalışma kitabının adı. |
+| FileSize    | integer         | Kilitli dosyanın bayt cinsinden boyutu.          |
+| FileContent | string (Base64) | Base64 dizisi olarak kodlanmış kilitli çalışma kitabının içeriği. |
+
+Kilitli çalışma kitabını almak için `FileContent` değerini Base64’ten çözün ve yanıtta sağlanan `Filename` kullanarak kaydedin.
+
+### **Hata işleme**
+
+– API, standart HTTP durum kodlarını (`400 Bad Request`, `401 Unauthorized`, `500 Internal Server Error` gibi) ve `Code` ile `Message` alanlarını içeren bir JSON hata nesnesini döndürür.
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme sürecini hızlandırmanın en iyi yoldur. SDK, düşük seviye ayrıntıları soyutlayarak projenizin görevlerine odaklanmanızı sağlar. Aspose.Cells Cloud SDK’larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub deposuna</a> göz atın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, Aspose.Cells web hizmetlerine çeşitli SDK’lar kullanılarak nasıl istek yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -131,4 +142,3 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 {{< /tab >}}
 
 {{< /tabs >}}
-

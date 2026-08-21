@@ -1,76 +1,98 @@
-﻿---
-title: Raggruppa le righe su un foglio di lavoro Excel
-second_title: Documen
-linktitle: Gruppo
-type: docs
-url: /it/rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
-keywords: Group rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta il raggruppamento di righe su un foglio di lavoro Excel. L'SDK supporta diversi linguaggi di sviluppo, tra cui Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift.
-weight: 60
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Raggruppa righe su un foglio di lavoro Excel
 ---
-Questo REST API indica di raggruppare le righe su un foglio di lavoro Excel.
+title: "Raggruppa righe in un foglio di lavoro Excel"
+second_title: "Document"
+linktype: "Raggruppa"
+type: docs
+url: /rows/group/
+aliases: [/group-rows-in-excel-worksheet/]
+keywords: "raggruppa righe, Excel, Aspose.Cells Cloud, REST API, SDK, foglio di lavoro, Excel API"
+description: "Raggruppa righe in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud. Supporta diversi SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) per un'integrazione semplice."
+weight: 60
+ArticleTitle: "Raggruppa righe in un foglio di lavoro Excel con l'API Aspose.Cells Cloud"
+---
 
-## RSET API
+Questa API REST consente di raggruppare righe in un foglio di lavoro Excel.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
- 
+**Prerequisiti:**  
+- È necessario fornire un token di accesso OAuth 2.0 valido (Bearer JWT) nell'intestazione `Authorization`.  
+- Il workbook deve già esistere nella cartella specificata `folder` dello `storageName` scelto (o nello storage predefinito) prima di effettuare la richiesta.
+
+## API PostGroupWorksheetRows
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
 ```
 
-I parametri della richiesta sono:
+### **Sicurezza e autenticazione**
 
-| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
-|:- |:- |:- |:- |
-| nome| corda| sentiero| Il nome della cartella di lavoro.|
-| Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| primoIndice| intero| domanda| Il primo indice di riga da utilizzare.|
-| ultimoIndice| intero| domanda| L'ultimo indice di riga su cui operare.|
-| nascondere| booleano| domanda| stato visibile delle righe|
-| cartella| corda| domanda| La cartella dei documenti.|
-| Nome di archiviazione| corda| domanda| nome di archiviazione.|
+Le API di Aspose.Cells Cloud sono sicure e richiedono l'<a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">autenticazione basata su token JWT</a>.
 
- IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
+### **Parametri della richiesta**
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate al Cloud API con cURL.
+| Nome Parametro | Tipo    | Posizione | Descrizione                                                              |
+| -------------- | ------- | -------- | ------------------------------------------------------------------------ |
+| name           | string  | path     | Nome del file del workbook.                                              |
+| sheetName      | string  | path     | Nome del foglio di lavoro.                                               |
+| firstIndex     | integer | query    | Indice in base zero della prima riga da raggruppare.                    |
+| lastIndex      | integer | query    | Indice in base zero dell'ultima riga da raggruppare.                    |
+| hide           | boolean | query    | Indica se le righe raggruppate debbano essere nascoste (`true` o `false`). |
+| folder         | string  | query    | Percorso della cartella contenente il workbook.                          |
+| storageName    | string  | query    | Nome dello storage in cui si trova il workbook.                          |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Lo [Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+
+Puoi utilizzare lo strumento a riga di comando cURL per accedere facilmente ai servizi web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate all'API Cloud tramite cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Richiesta" tabName2="Risposta" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/group?firstIndex=1&lastIndex=2&hide=true" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+**Codici di stato HTTP**
+
+| Codice | Significato                 | Descrizione                                      |
+|--------|-----------------------------|--------------------------------------------------|
+| 200    | OK                          | Filtro applicato correttamente; la risposta contiene i dettagli dell'operazione. |
+| 400    | Richiesta non valida        | Parametri mancanti o non validi (ad esempio, tipo di file non supportato). |
+| 401    | Non autorizzato             | Token JWT non valido o mancante. |
+| 413    | Payload troppo grande       | Il file caricato supera il limite di dimensione. |
+| 500    | Errore interno del server   | Errore imprevisto sul server. |
+
+Risposte di errore tipiche:
+
+- **400 Richiesta non valida** – verificare che `firstIndex` e `lastIndex` siano interi validi e che `firstIndex` ≤ `lastIndex`.  
+- **401 Non autorizzato** – verificare che l'intestazione `Authorization` contenga un token JWT valido e non scaduto.  
+- **404 Non trovato** – assicurarsi che il workbook (`name`) e il foglio di lavoro (`sheetName`) esistano nella cartella (`folder`) e nello storage (`storageName`) specificati.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famiglia Cloud SDK
+**Vedi anche:** [Annulla il raggruppamento delle righe in un foglio di lavoro Excel](../rows/ungroup/ "Annulla il raggruppamento delle righe in un foglio di lavoro Excel"), [Nascondi righe in un foglio di lavoro Excel](../rows/hide/ "Nascondi righe in un foglio di lavoro Excel"), [Mostra righe in un foglio di lavoro Excel](../rows/unhide/ "Mostra righe in un foglio di lavoro Excel").
 
- Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del progetto. Dai un'occhiata a[Repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+## Famiglia di SDK Cloud
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+Utilizzare un SDK rappresenta il modo più efficace per velocizzare lo sviluppo. Un SDK gestisce i dettagli a basso livello, permettendoti di concentrarti sulle attività del tuo progetto. Consulta il [repository GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK di Aspose.Cells Cloud.
+
+I seguenti esempi di codice mostrano come chiamare i servizi web Aspose.Cells mediante vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

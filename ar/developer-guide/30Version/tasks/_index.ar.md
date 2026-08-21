@@ -1,21 +1,27 @@
-﻿---
-title: مهمة
-second_title: Documen
-type: docs
-url: /ar/tasks/
-aliases: [/working-with-tasks/]
-keywords: REST API, task, spreadsheets, exce
-description: "Cells.Cloud API لـ Excel التشغيل: تشغيل Excel بالمهام"
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، المهام
 ---
-## العمل مع المهام.
+title: "المهام"
+second_title: "مستند"
+type: docs
+url: /tasks/
+aliases: [/working-with-tasks/]
+keywords: "Aspose Cells، واجهة برمجة تطبيقات السحابة، مهام Excel، مهمة التحويل، مهمة ImportData، SmartMarker، SaveResult، واجهة برمجة تطبيقات REST، أتمتة جداول الحساب"
+description: "استكشف مجموعة المهام الكاملة لواجهة برمجة تطبيقات Aspose.Cells Cloud: التحويل، ImportData، SaveResult، SmartMarker، وأكثر من ذلك. تعلّم كيفية الاستخدام، والمعامِلات، وأمثلة الكود لأتمتة Excel."
+weight: 100
+ArticleTitle: "واجهة برمجة تطبيقات Aspose.Cells Cloud للمهام"
+---
 
+## العمل مع المهام
 
-- [ملف طلب الدعم في المهمة API](/cells/ar/support-request-file-in-task-api/)
-- [العمل مع مهمة CellsObjectOperate](/cells/ar/working-with-cellsobjectoperate-task/)
-- [العمل مع تحويل المهمة](/cells/ar/working-with-convert-task/)
-- [العمل مع مهمة ImportData](/cells/ar/working-with-importdata-task/)
-- [العمل مع مهمة SaveResult](/cells/ar/working-with-saveresult-task/)
-- [العمل مع مهمة SmartMarker](/cells/ar/working-with-smartmarker-task/)
-- [العمل مع WorksheetOperates في المهمة API](/cells/ar/working-with-worksheetoperates-in-task-api/)
+توفر Aspose.Cells Cloud **واجهة برمجة تطبيقات المهام (Task API)** التي تُمكّن المطورين من أداء مجموعة متنوعة من العمليات على كتب عمل Excel، مثل تحويل التنسيقات، واستيراد البيانات، وتنفيذ قوالب SmartMarker، وحفظ النتائج. تُنفَّذ المهام بشكل غير متزامن: تُنشئ المهمة، ثم تُشغِّلها، ثم تسترد النتيجة.
+
+**متطلبات مسبقة:** حساب Aspose Cloud مُفعّل ومُزوَّد بمفتاح API صالح، وتنسيقات ملفات Excel المدعومة، وأحدث إصدار لواجهة برمجة تطبيقات Cells (الإصدار 3.0 وما بعده).
+
+- [طلب ملف مدعوم في واجهة برمجة تطبيقات المهام](/cells/support-request-file-in-task-api/) – تتيح لك رفع ملف إلى مساحة التخزين السحابية ومرجعه في المهام اللاحقة، لضمان توافر الملف لعمليات المعالجة.
+- [العمل مع مهمة CellsObjectOperate](/cells/working-with-cellsobjectoperate-task/) – تنفّذ عمليات على كائنات الخلايا (مثل الصفوف والأعمدة) داخل كتاب عمل، مثل إضافة أو حذف أو تحديث قيم الخلايا.
+- [العمل مع مهمة التحويل](/cells/working-with-convert-task/) – تحويل كتاب العمل إلى تنسيقات PDF أو HTML أو CSV أو JSON، مع خيارات لنطاق الصفحات، وحماية بكلمة المرور، وإعدادات تحويل مخصصة.
+- [العمل مع مهمة ImportData](/cells/working-with-importdata-task/) – استيراد البيانات من ملفات CSV أو JSON أو XML إلى ورقة عمل، مع ربط الأعمدة بالخلايا وتحديد إختياري لصف وعمود البدء.
+- [العمل مع مهمة SaveResult](/cells/working-with-saveresult-task/) – حفظ نتيجة مهمة سابقة (مثل ملف مُحوَّل) مرة أخرى في مساحة التخزين السحابية أو إعادتها في الاستجابة.
+- [العمل مع مهمة SmartMarker](/cells/working-with-smartmarker-task/) – معالجة كتاب عمل يحتوي على علامات SmartMarker (مثل `{{Customer.Name}}`) باستخدام مصدر بيانات JSON لإنشاء تقرير مُملوء.
+- [العمل مع عمليات أوراق العمل في واجهة برمجة تطبيقات المهام](/cells/working-with-worksheetoperates-in-task-api/) – تنفيذ عمليات على مستوى ورقة العمل مثل إضافة أو حذف أو إعادة تسمية أوراق العمل ضمن تدفق عمل المهمة.
+
+للاطّلاع على مواصفات الأساليب الكاملة—بما في ذلك أفعال HTTP، وعناوين URLs للنقاط الطرفية، ومخططات الطلبات والاستجابات، وجداول المعامِلات، وأحمال الأمثلة—راجع الصفحات الفردية للمهمة المذكورة أعلاه. ويساعد هذا المرجع المفصّل للمُعلَمة المطورين على دمج واجهة برمجة تطبيقات المهام بسرعة وموثوقية.

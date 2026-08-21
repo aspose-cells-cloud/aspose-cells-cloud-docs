@@ -1,97 +1,113 @@
-﻿---
-title: Aspose.Cells Cloud Web API - تحويل بيانات جدول بيانات إلى ملف HTML
-second_title: Documen
-ArticleTitle: Convert a Spreadsheet Table data to a Html fil
-linktitle: تحويل الجدول إلى HTM
-type: docs
-url: /ar/convert-table-to-html/
-keywords: Excel Table to HTML, Spreadsheet Conversion, Aspose.Cells Cloud Web API, REST, Convert Excel to HTML, Table to HTML, Document Conversion, Cloud Service
-description: يمكنك بسهولة تحويل الجداول من ملفات جداول البيانات المحلية إلى تنسيق HTML باستخدام نظامنا السحابي API
-weight: 100
-kwords: Excel، Office السحابة، REST API، جدول بيانات، HTML، PDF، CSV، JSON، Markdown، مطابقة الخلايا الفارغة في Excel
 ---
-تحويل جدول بيانات محلي/Excel إلى ملف HTML.
+title: "Aspose.Cells Cloud – تحويل الجدول إلى HTML"
+description: "حوّل جداول Excel إلى HTML بسرعة باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud – آمنة، تحافظ على التنسيق، وسهلة التكامل."
+keywords: "Aspose.Cells، تحويل Excel إلى HTML، تحويل الجدول إلى HTML، واجهة برمجة تطبيقات سحابية، تحويل جداول بيانات"
+weight: 100
+date: 2026-07-30
+last_updated: 2026-07-30
+version: "v4.0"
+url: /convert-table-to-html/
+type: docs
+---
 
-## **تحويل الجدول إلى HTML API**
+**ملخص سريع** – تقرأ هذه النقطة الطرفية ملف Excel محليًا، وتستخرج **الجدول** المحدّد، وتحوّله إلى ملف **HTML**، ثم تعيد النتيجة كدفق قابل للتنزيل. ولا يُطلب رفع الملف مبدئيًا إلى مساحة التخزين السحابية لـ Aspose Cloud.
+
+## واجهة برمجة تطبيقات ConvertTableToHTML
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/table/html
+PUT https://api.aspose.cloud/v4.0/cells/convert/table/html
 ```
 
-### **معلمات الطلب:**
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP| وصف|
-|:- |:- |:- |:- |
-| جدول بيانات| ملف| بيانات النموذج| قم بتحميل ملف جدول البيانات المراد تحويله.|
-| ورقة عمل| خيط| استفسار| اسم ورقة العمل Spreadsheet/Excel|
-| اسم الجدول| خيط| استفسار| اسم الجدول المراد تحويله.|
-| المسار الخارجي| خيط| استفسار| (اختياري) مسار المجلد الذي سيتم تخزين الملف المُحوَّل فيه. القيمة الافتراضية هي null.|
-|اسم التخزين الخارجي| خيط| استفسار| اسم التخزين المخصص لملف الإخراج.|
-| الخطوطالموقع| خيط| استفسار| حدد الخطوط المخصصة للتحويل.|
-| منطقة| خيط| استفسار| تحديد إعدادات منطقة جدول البيانات.|
-| كلمة المرور| خيط| استفسار| كلمة المرور المطلوبة للوصول إلى ملف جدول البيانات.|
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة مبنية على رمز JWT</a>.
 
-### **إجابة**
+### معاملات الطلب
+
+| الاسم                 | الموقع      | النوع      | مطلوب   | الوصف                                                                              |
+| --------------------- | ----------- | ---------- | ------- | ---------------------------------------------------------------------------------- |
+| **Spreadsheet**       | Form‑Data   | `File`     | **نعم** | ملف Excel الذي يحتوي على الجدول المراد تحويله.                                      |
+| **worksheet**         | Query       | `String`   | **نعم** | اسم ورقة العمل التي يحتوي عليها الجدول.                                            |
+| **tableName**         | Query       | `String`   | **نعم** | الاسم الدقيق للجدول المراد تحويله.                                                 |
+| **outPath**           | Query       | `String`   | لا       | مسار المجلد في مساحة تخزين Aspose Cloud التي سيتم حفظ ملف HTML فيها (اختياري).     |
+| **outStorageName**    | Query       | `String`   | لا       | اسم مساحة التخزين الخاصة بالملف الناتج (اختياري).                                 |
+| **fontsLocation**     | Query       | `String`   | لا       | مسار مجلد يحتوي على خطوط مخصصة مطلوبة للتحويل.                                    |
+| **region**            | Query       | `String`   | لا       | معرّف المنطقة (مثل `en-US`، `fr-FR`). يؤثّر على تنسيق الأرقام/التاريخ.             |
+| **password**          | Query       | `String`   | لا       | كلمة المرور لفتح ملف Excel المحمي.                                                 |
+| **AutoRowsFit**       | Query       | `Boolean`  | لا       | ضبط ارتفاع جميع الصفوف تلقائيًا في ورقة العمل (`true`/`false`).                    |
+| **AutoColumnsFit**    | Query       | `Boolean`  | لا       | ضبط عرض جميع الأعمدة تلقائيًا في ورقة العمل (`true`/`false`).                      |
+
+### **الاستجابة**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### رموز الخطأ
+**رموز حالة HTTP**
 
-- **400 طلب سيء**:عنوان URI الخاص بـ Apose.Cells Cloud API غير صالح.
-- **401 غير مصرح به**رمز وصول غير صالح. أو معرف عميل وسر غير صالحين.
-- **404 غير موجود**:ملف جدول البيانات غير قابل للوصول.
-- **خطأ الخادم 500**:واجهت جدول البيانات خللاً في الحصول على بيانات الحساب.
+| الرمز | المعنى                 | الوصف                                                              |
+| ----- | ---------------------- | ------------------------------------------------------------------ |
+| 200   | OK (نجاح)             | تطبيق المرشّح بنجاح؛ تحتوي الاستجابة على تفاصيل العملية.          |
+| 400   | Bad Request (طلب خاطئ) | معاملات مفقودة أو غير صالحة (مثل نوع ملف غير مدعوم).             |
+| 401   | Unauthorized (غير مصرّح) | رمز JWT غير صالح أو مفقود.                                        |
+| 413   | Payload Too Large (حِمْل كبير جدًا) | حجم الملف المرفَع يتجاوز الحد المسموح.                         |
+| 500   | Internal Server Error (خطأ داخلي في الخادم) | خطأ غير متوقّع في الخادم.                                   |
 
-## لماذا يجب عليك استخدام تحويل الجدول إلى HTML API؟
+## متى تستخدم واجهة برمجة تطبيقات تحويل الجدول إلى HTML؟
 
-- لا حاجة للتخزين السحابي، مما يقلل العبء على موارد السحابة.
-- يمكن إكمال التطوير بسرعة من خلال مجموعة أدوات التطوير البرمجية الموجودة.
+- **محتوى ويب ديناميكي** – أدمج جداول الأسعار أو الجداول الزمنية أو قوائم المنتجات مباشرةً في صفحات الويب أو أنظمة إدارة المحتوى (CMS).
+- **قوالب البريد الإلكتروني** – أنشئ مقاطع HTML لملخّصات الطلبات أو التقارير التي تُعرَض بشكل متسق عبر برامج البريد الإلكتروني المختلفة.
+- **لوحات التحكم وأدوات التقارير** – عرض بيانات جداول البيانات الحية دون تحميل ملف Excel بالكامل أو استخدام مكوّنات جداول بيانات ثقيلة.
+- **معاينة المستندات** – قدم معاينات سريعة وتحتفظ بالتنسيق لمُقتطفات محددة من جداول البيانات.
 
-## كيفية استخدام تحويل الجدول إلى HTML API مع SDKs؟
+## كيف تستخدم واجهة برمجة تطبيقات تحويل الجدول إلى HTML باستخدام مكتبات SDK؟
 
-### تحويل الجدول إلى مواصفات HTML API
+### مواصفات واجهة برمجة تطبيقات تحويل الجدول إلى HTML
 
- ال[تحويل الجدول إلى مواصفات HTML API](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToHtml) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام، مما يسمح لك بإجراء تفاعلات REST مباشرة من متصفح الويب الخاص بك.
+توفر [مواصفات واجهة برمجة تطبيقات تحويل الجدول إلى HTML](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToHTML) واجهة برمجة تطبيقات برمجية متاحة علنًا، مما يتيح التفاعل مع REST مباشرةً من متصفح الويب.
 
-### استخدم Aspose.Cells Cloud SDKs
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات Aspose.Cells عبر الويب بسهولة. يُظهر المثال التالي كيفية إجراء المكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
-يعد استخدام SDK أسرع طريقة للتطوير، حيث يقوم بتجريد التفاصيل منخفضة المستوى، مما يسمح لك بتحويل بيانات جدول بيانات إلى ملف HTML باستخدام رمز قصير.
- يرجى التحقق من[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
-توضح أمثلة التعليمات البرمجية التالية كيفية التفاعل مع خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج المختلفة:
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertTableToHtml.cs" >}}
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/html?worksheet=Sheet1&tableName=Table1" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@myWorkbook.xlsx" \
+  -o converted.html
+```
+
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertTableToHtml.java" >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (مشفرة بـ Base64)",
+  "contentType": "نوع MIME",
+  "fileDownloadName": "اسم ملف اختياري"
+}
+```
+
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertTableToHtml.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertTableToHtml.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertTableToHtml.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertTableToHtml.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertTableToHtml.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertTableToHtml.go" >}}
-{{< /tab >}}
+
 {{< /tabs >}}
+
+### استخدام مكتبات Aspose.Cells Cloud SDK
+
+يُعد استخدام مكتبة SDK أسرع طريقة للتطوير، حيث تُجرّدك من تفاصيل المستوى المنخفض، مما يتيح لك تحويل بيانات جدول جدول البيانات إلى ملف CSV باستخدام كود محدود. يُرجى الاطّلاع على [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بمكتبات Aspose.Cells Cloud SDK.
+
+توضّح أمثلة الكود التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مكتبات SDK مختلفة:
+
+---

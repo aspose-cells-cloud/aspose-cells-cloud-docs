@@ -1,79 +1,124 @@
-﻿---
-title: Exportera tecken
-second_title: Documen
-linktitle: Röding
-type: docs
-url: /sv/export-excel-chart-to-different-formats/
-aliases: [ /export/excel-chart-to-different-formats/]
-keywords: Export Excel chart to kinds of format files
-description: Aspose.Cells Cloud REST API stöder export av Excel-diagram till olika typer av filer. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 20
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Exportera diagram
 ---
- Du kan exportera format:[PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/),  [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/), [PDF](https://docs.fileformat.com/pdf/).
+title: "Exportera Excel-diagram"
+second_title: "Dokument"
+linktitle: "Diagram"
+type: docs
+url: /export-excel-chart-to-different-formats/
+aliases: [/export/excel-chart-to-different-formats/]
+description: "Exportera Excel-diagramobjekt till populära format som PNG, JPEG, PDF, SVG, TIFF, EMF, WMF och mer med Aspose.Cells Cloud REST API eller SDK:er. Inkluderar autentisering, ett cURL-exempel och kodexempel för flera språk."
+keywords: "Aspose.Cells, exportera diagram, export av Excel-diagram, REST API, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK, diagramformat, Aspose Cells Cloud"
+weight: 20
+ArticleTitle: "Exportera Excel-diagram – Dokument"
+---
 
-- **REST API**
+Att exportera diagramobjekt från en Excel-arbetsbok till olika bild- och dokumentformat är ett vanligt krav för rapportering och publicering. Aspose.Cells Cloud tillhandahåller en enkel REST-slutpunkt som konverterar diagram direkt till populära format som PNG, JPEG, PDF, SVG, TIFF, EMF, WMF och mer.
 
-|**API**|**Typ**|**Beskrivning**|**Swagger-länk**|
-|:- |:- |:- |:- |
-|/celler/exportera|POSTA|Exportera Excel-objekt från begäran till något format|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+Du kan exportera diagram till följande format: [PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/), och [PDF](https://docs.fileformat.com/pdf/).
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+**Förutsättningar:**  
+- Ett giltigt Aspose.Cells Cloud-konto med en aktiv prenumeration.  
+- En OAuth 2.0 Bearer-token (JWT) som erhållits via autentiseringsflödet.  
+- Arbetsboksfilen som ska laddas upp (högsta tillåtna storlek < 50 MB).  
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
-
-- **Begäran**
+## **REST API**
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format=tiff" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
-- **Svar**
+### **Säkerhet och autentisering**
 
-```bash
+Aspose.Cells Cloud-API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
+
+### Parametrar för begäran
+
+| Parameternamn | Typ   | Sökväg/Frågesträng/HTTP-kropp | Obligatorisk | Beskrivning                                                                                                                     |
+|---------------|-------|-------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------|
+| file          | fil   | formData                      | Ja           | Fil som ska laddas upp                                                                                                          |
+| objectType    | sträng | fråga                         | Ja           | Typen av objekt som ska exporteras. Använd `chart` för diagramexport. Andra möjliga värden är `worksheet`, `picture`, etc.     |
+| format        | sträng | fråga                         | Ja           | Önskat utdataformat. Stödda värden: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.                          |
+
+### **Svar**
+
+```json
 {
-    "Files": [{
-        "Filename": "Book1_xlsx_Sheet4_Charts_0.tif",
-        "FileSize": 10040,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Charts_1.tif",
-        "FileSize": 12978,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Charts_2.tif",
-        "FileSize": 7002,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet4_Charts_3.tif",
-        "FileSize": 11532,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "Book1_xlsx_Sheet6_Charts_0.tif",
-        "FileSize": 8270,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet3_Charts_0.tif",
-        "FileSize": 42570,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet3_Charts_1.tif",
-        "FileSize": 12102,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "myDocument_xlsx_Sheet3_Charts_2.tif",
-        "FileSize": 8290,
-        "FileContent": "-----Base64String--------"
-    }]
+  "Files": [
+    {
+      "Filename": "Book1_xlsx_Sheet4_Charts_0.tif",
+      "FileSize": 10040,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet4_Charts_1.tif",
+      "FileSize": 12978,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet4_Charts_2.tif",
+      "FileSize": 7002,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet4_Charts_3.tif",
+      "FileSize": 11532,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet6_Charts_0.tif",
+      "FileSize": 8270,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet3_Charts_0.tif",
+      "FileSize": 42570,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet3_Charts_1.tif",
+      "FileSize": 12102,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet3_Charts_2.tif",
+      "FileSize": 8290,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
-- **Cloud SDK-familjen**
+**HTTP-statuskoder**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+| Kod | Beteende                    | Beskrivning                                      |
+|-----|-----------------------------|--------------------------------------------------|
+| 200 | OK                          | Filter tillämpades framgångsrikt; svaret innehåller åtgärdens information. |
+| 400 | Felaktig begäran            | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Inte auktoriserad           | Ogiltig eller saknad JWT-token. |
+| 413 | Payload för stor            | Den uppladdade filen överskrider storleksbegränsningen. |
+| 500 | Internt serverfel           | Oväntat serverfel. |
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+## Hur man använder PostExport-API:et med SDK:er
+
+### PostExport API-specifikation
+
+[OpenAPI-specifikationen](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+
+Alla begäranden måste innehålla en giltig OAuth 2.0 Bearer-token i `Authorization`-headern. Exemplet nedan visar hur man anropar API:et med **cURL** och laddar upp en arbetsbok med multipart/form‑data.
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format=tiff" \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Accept: multipart/form-data" \
+  -H "Content-Type: multipart/form-data" \
+  -H "x-aspose-client: Containerize.Swagger" \
+  -F "File=@/path/to/your/workbook.xlsx"
+```
+
+### Använd Aspose.Cells Cloud SDK:er
+
+Att använda en SDK är det bästa sättet att snabba upp utvecklingen. En SDK hanterar detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Se [GitHub-lagret](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+
+Följande kodexempel visar hur man gör anrop till Aspose.Cells webbtjänster med hjälp av olika SDK:er:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -126,4 +171,3 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
-

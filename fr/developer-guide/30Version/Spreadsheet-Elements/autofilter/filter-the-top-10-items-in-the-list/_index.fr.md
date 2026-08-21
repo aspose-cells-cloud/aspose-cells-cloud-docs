@@ -1,84 +1,139 @@
-﻿---
-title: Ajoutez les 10 principaux éléments dans une feuille de calcul Excel
-second_title: Documen
-linktitle: Ajouter le top 10 des filtres
-type: docs
-url: /fr/autofilter/add-top-10-filter/ 
-aliases: [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/ ]
-keywords: Adds a top10 filter on an Excel worksheet
-description: Le Cloud Aspose.Cells API permet d'ajouter un filtre top10 à une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
-weight: 65
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Ajouter les 10 premiers éléments dans une feuille de calcul Excel
 ---
-Ce REST API indique de filtrer l'élément `top 10` dans la liste
+title: "Ajouter un filtre Top 10 à une feuille de calcul Excel (Aspose.Cells Cloud)"
+ArticleTitle: "Ajouter un filtre Top 10 à une feuille de calcul Excel – Aspose.Cells Cloud"
+second_title: "Document"
+linktitle: "Ajouter un filtre Top 10"
+type: docs
+url: /autofilter/add-top-10-filter/
+aliases:
+  [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
+keywords: "Aspose.Cells, AutoFilter, filtre Top 10, API Excel"
+description: "Découvrez comment appliquer un filtre AutoFilter Top 10 à une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’endpoint, les paramètres, un exemple HTTPS cURL, les détails d’authentification, la gestion des erreurs et des extraits de code SDK pour C#, Java, Python, et plus encore."
+weight: 65
+---
 
-## RSET API
+Cet API REST permet de filtrer les **Top 10** éléments d’une liste.
 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10
- 
+> **Prérequis**  
+> • Obtenir un jeton JWT valide à l’aide de l’authentification Aspose.Cells Cloud.  
+> • Téléverser le classeur Excel vers votre stockage Aspose Cloud (ou spécifier le stockage/dossier dans lequel il se trouve).  
+> • Connaître le nom de la feuille de calcul et la plage de cellules à filtrer.
+
+## API PutWorksheetFilterTop10
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10
 ```
 
-Les paramètres de la requête sont :
+### **Sécurité et authentification**
 
-| Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
-|:- |:- |:- |:- |
-| nom| chaîne| chemin||
-| nom de la feuille| chaîne| chemin||
-| gamme| chaîne| requête||
-| index de champ| entier| requête||
-| estTop| booléen| requête||
-| estPourcentage| booléen| requête||
-| nombre d'articles| entier| requête||
-| matchBlanks| booléen| requête||
-| rafraîchir| booléen| requête||
-| dossier| chaîne| requête||
-| nom de stockage| chaîne| requête| nom de stockage.|
+Les API Aspose.Cells Cloud sont sécurisées et exigent une <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentification basée sur un jeton JWT</a>.
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
+### Paramètres de la requête
 
-Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment appeler le Cloud API avec cURL.
+| Nom du paramètre | Type    | Emplacement | Obligatoire | Valeur par défaut | Description                                                                 |
+| ---------------- | ------- | ----------- | ----------- | ---------------- | --------------------------------------------------------------------------- |
+| **name**         | string  | chemin      | Oui         | —                | Le nom du fichier Excel.                                                    |
+| **sheetName**    | string  | chemin      | Oui         | —                | Le nom de la feuille de calcul contenant les données.                       |
+| **range**        | string  | requête     | Oui         | —                | La plage de cellules à laquelle le filtre est appliqué (par ex., `A1:B10`). |
+| **fieldIndex**   | integer | requête     | Oui         | —                | Index de colonne à zéro de départ sur lequel le filtre est appliqué.        |
+| **isTop**        | boolean | requête     | Oui         | `true`           | `true` pour filtrer les éléments les plus élevés ; `false` pour les plus faibles. |
+| **isPercent**    | boolean | requête     | Non         | `false`          | `true` pour traiter `itemCount` comme un pourcentage ; `false` pour un nombre absolu. |
+| **itemCount**    | integer | requête     | Non         | `10`             | Nombre d’éléments à inclure dans le filtre.                                 |
+| **matchBlanks**  | boolean | requête     | Non         | `false`          | `true` pour inclure les cellules vides dans les résultats du filtre.        |
+| **refresh**      | boolean | requête     | Non         | `false`          | `true` pour actualiser le filtre après l’avoir appliqué.                    |
+| **folder**       | string  | requête     | Non         | —                | Le dossier, dans le stockage, où se trouve le fichier Excel.                |
+| **storageName**  | string  | requête     | Non         | —                | Le nom du stockage Aspose Cloud.                                             |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Réponse**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Réponses d’erreur typiques**
+
+```json
+{
+    "Code":400,
+    "Message":"Bad Request – paramètres manquants ou non valides."
+}
+```
+
+```json
+{
+    "Code":401,
+    "Message":"Unauthorized – jeton JWT non valide ou manquant."
+}
+```
+
+```json
+{
+    "Code":413,
+    "Message":"Payload Too Large – le fichier téléversé dépasse la taille autorisée."
+}
+```
+
+```json
+{
+    "Code":500,
+    "Message":"Internal Server Error – erreur inattendue du serveur."
+}
+```
+
+**Codes de statut HTTP**
+
+| Code | Signification               | Description                                                  |
+|------|-----------------------------|--------------------------------------------------------------|
+| 200  | OK                          | Filtre appliqué avec succès ; la réponse contient les détails de l’opération. |
+| 400  | Bad Request                 | Paramètres manquants ou non valides (par ex., type de fichier non pris en charge). |
+| 401  | Unauthorized                | Jeton JWT non valide ou manquant.                            |
+| 413  | Payload Too Large           | Le fichier téléversé dépasse la limite de taille.            |
+| 500  | Internal Server Error       | Erreur serveur inattendue.                                   |
+
+## Comment utiliser l’API PutWorksheetFilterTop10 avec les SDK
+
+### Spécification de l’API PutWorksheetFilterTop10
+
+La [spécification OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10) définit une interface de programmation accessible publiquement et permet d’effectuer directement des interactions REST depuis un navigateur web.
+
+Vous pouvez utiliser l’outil en ligne de commande cURL pour accéder facilement aux services web Aspose.Cells. L’exemple suivant montre comment appeler l’API avec cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Requête" tabName12="Réponse" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filterTop10?range=A1:B1&fieldIndex=0&isTop=true&itemCount=1&isPercent=true&matchBlanks=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filterTop10?range=A1:B10&fieldIndex=0&isTop=true&itemCount=10" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jeton jwt>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Famille de SDK Cloud
+### Utiliser les SDK Aspose.Cells Cloud
 
- Utiliser un SDK est le meilleur moyen d'accélérer le développement. Un SDK gère les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Consultez le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+L’utilisation d’un SDK est la méthode la plus rapide pour développer. Un SDK gère les détails de bas niveau afin que vous puissiez vous concentrer sur votre projet. Veuillez consulter le [dépôt GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Aspose.Cells Cloud.
 
-Les exemples de code suivants montrent comment effectuer des appels aux services Web Aspose.Cells à l'aide de divers SDK :
+Les exemples de code suivants montrent comment appeler les services web Aspose.Cells à l’aide de divers SDK :
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

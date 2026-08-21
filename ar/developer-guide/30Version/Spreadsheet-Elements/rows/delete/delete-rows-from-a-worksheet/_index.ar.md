@@ -1,75 +1,87 @@
-﻿---
-title: حذف صفوف متعددة في ورقة عمل Excel
-second_title: Documen
-linktitle: صف
-type: docs
-url: /ar/rows/delete/rows/
-keywords: Delete rows on an Excel workshee
-description: يدعم Cloud REST حذف الصفوف في ورقة عمل Aspose.Cells. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 80
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، حذف صفوف متعددة في ورقة عمل Excel
 ---
-يشير هذا REST API إلى حذف صفوف متعددة في ورقة العمل Excel.
+title: "حذف صفوف متعددة من ورقة عمل Excel"
+second_title: "وثيقة"
+linktitle: "الصفوف"
+type: docs
+url: /rows/delete/rows/
+keywords: "Aspose.Cells Cloud, حذف الصفوف, حذف صفوف متعددة, ورقة عمل Excel, واجهة REST API, SDK"
+description: "تعرّف على كيفية حذف صف واحد أو أكثر من ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. يتضمّن تفاصيل نقطة النهاية، والمُعاملات، ومثالًا باستخدام cURL، وأمثلة للكود باستخدام SDKs بلغات برمجة متنوعة."
+weight: 80
+ArticleTitle: "حذف صفوف متعددة من ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud API"
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية لـ REST بحذف صفوف متعددة **من** ورقة عمل Excel.
 
-```bash
- 
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
+**المتطلبات المسبقة:** لاستدعاء هذه نقطة النهاية، يجب أن يكون لديك رمز وصول JWT صالح تم الحصول عليه من عملية مصادقة Aspose Cloud، وامتلاك صلاحيات تخزين مناسبة للملف المُستند.
+
+## API DeleteWorksheetRows
+
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| ورقة عمل بام.|
-| صف البداية| عدد صحيح| استفسار| مؤشر الصف الأول الذي سيتم تشغيله.|
-| إجمالي الصفوف| عدد صحيح| استفسار|1 |
-| تحديث المرجع| منطقي| استفسار| حقيقي|
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+تتطلب واجهات برمجة تطبيقات Aspose.Cells Cloud أمانًا عاليًا وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **معاملات الطلب**
 
-يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل  | النوع    | المسار / سلسلة الاستعلام / جسم HTTP | الوصف                                                                 |
+|-------------|---------|-----------------------------------|------------------------------------------------------------------------|
+| name        | string  | path                              | اسم الملف المُستند (workbook).                                         |
+| sheetName   | string  | path                              | اسم ورقة العمل (worksheet).                                           |
+| startrow    | integer | query                             | المؤشر الصفر-based للصف الأول المراد حذفه (مثال: `0` = الصف الأول). |
+| totalRows   | integer | query                             | عدد الصفوف المراد حذفها.                                              |
+| updateReference | boolean | query                         | ما إذا كان سيتم تحديث الإشارات المرجعية بعد الحذف (`true`/`false`). |
+| folder      | string  | query                             | مجلد المستند.                                                         |
+| storageName | string  | query                             | اسم وحدة التخزين.                                                     |
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+يُعرّف [مواصفة OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) واجهة برمجة تطبيقات متاحة عمومًا وتتيح لك إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب الخاصة بـ Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء المكالمات إلى واجهة Cloud API باستخدام cURL. **تتطلب جميع نقاط النهاية استخدام بروتوكول HTTPS؛ وتم إيقاف دعم بروتوكول HTTP.**
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=1&updateReference=true" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+**رموز الاستجابة المحتملة**
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+| حالة HTTP | الوصف |
+|-----------|--------|
+| 200 | تم حذف الصفوف بنجاح. |
+| 400 | طلب غير صالح – معاملات غير صحيحة. |
+| 401 | غير مُصادق – رمز JWT مفقود أو غير صالح. |
+| 404 | غير موجود – الملف أو ورقة العمل غير موجودين. |
+| 500 | خطأ داخلي في الخادم – حدثت حالة غير متوقعة. |
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+## عائلة SDK للسحابة
+
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. فتتولى SDK إدارة التفاصيل من المستوى المنخفض، وتُمكّنك من التركيز على مهام مشروعك. يُرجى مراجعة [مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
+
+توضح أمثلة الكود التالية كيفية إجراء المكالمات إلى خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,364 +1,415 @@
-﻿---
-title: Archivos y almacenamiento
-second_title: Documen
+---
+title: "Aspose.Cells Cloud API – Gestión de archivos y carpetas (cargar, descargar, copiar, mover)"
+second_title: "Documento"
+ArticleTitle: "Gestión de archivos en la nube para Excel – Una solución eficiente y segura para el almacenamiento y la organización inteligente de archivos de Excel"
+linktitle: "Archivos y almacenamiento"
 type: docs
 url: /es/files-and-storage/
-aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
-keywords: Aspose Cells Cloud file storage, upload, download, delete, move, copy file
-description: Guía completa sobre el uso de Aspose Cells Cloud para operaciones de almacenamiento de archivos, incluyendo la carga, descarga y gestión de archivos. SDK compatible con diversos lenguajes de programación como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+aliases: [/es/working-with-files-and-storage-using-aspose-cells-cloud/]
+keywords: "Aspose.Cells Cloud, API de almacenamiento de archivos, cargar archivo de Excel, descargar archivo de Excel, copiar archivo, mover archivo, eliminar archivo, gestión de carpetas, API REST, ejemplos de cURL"
+description: "Guía completa sobre cómo gestionar archivos y carpetas en el almacenamiento de Aspose.Cells Cloud. Incluye operaciones de carga, descarga, copia, movimiento, eliminación y gestión de carpetas, con ejemplos en cURL, parámetros necesarios y notas sobre autenticación."
 weight: 100
-kwords: Aspose Cells, Almacenamiento en la nube, REST API, Gestión de archivos, Excel, PDF, CSV, JSON, Markdow
 ---
- Aspose.Cells Cloud ofrece funciones de ayuda completas para trabajar con archivos subidos a Aspose.Cells Cloud Storage o a cualquier otro almacenamiento en la nube de su elección. Para obtener ayuda con la configuración de almacenamiento de terceros, consulte[Aspose Temas de ayuda de la interfaz de usuario en la nube](https://docs.aspose.cloud/display/totalcloud/Aspose+Cloud+UI+Help+Topics).
 
-**Aspose.Cells Cloud ofrece una gama de API de operaciones de archivos, carpetas y almacenamiento.**
+Aspose.Cells Cloud proporciona un conjunto completo de funciones auxiliares para trabajar con archivos almacenados en el almacenamiento de Aspose.Cells Cloud o en cualquier almacenamiento en la nube de terceros de su elección. Para obtener ayuda sobre la configuración de almacenamiento de terceros, consulte [Temas de ayuda de la interfaz de usuario de Aspose Cloud](https://docs.aspose.cloud/display/totalcloud/Aspose+Cloud+UI+Help+Topics).
 
-## **Cómo subir un archivo**
+**Aspose.Cells Cloud ofrece una amplia gama de API para operaciones sobre archivos, carpetas y almacenamiento.**
 
-### Subir archivo API Información
+> **Nota:** Todas las llamadas a la API deben utilizar **HTTPS**. Consulte la [Guía de autenticación](/cells/authentication/) para obtener detalles sobre cómo obtener un token JWT.
+
+**Requisitos previos:** Para utilizar estas API, debe tener una cuenta válida de Aspose Cloud, obtener un token de acceso JWT y tener configurada una ubicación de almacenamiento (ya sea el almacenamiento de Aspose Cloud o un almacenamiento de terceros conectado).
+
+**Última actualización:** 2024-12-01
+
+## **Cómo cargar un archivo**
+
+### Información de la API para cargar un archivo
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/file/{path}
+PUT https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de la solicitud se indican a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| camino| cadena| camino|Ruta para subir el archivo, incluyendo el nombre y la extensión (p. ej., /file.ext o /Folder 1/file.ext). Si el contenido es multiparte y la ruta no contiene el nombre del archivo, se intenta recuperarlo del parámetro filename en el encabezado Content-Disposition.|
-| archivo| Archivo| datos del formulario| Archivo para cargar|
-| nombreDeAlmacenamiento| cadena| consulta| Nombre de almacenamiento|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción |
+|----------------------|--------|-----------|-------------|
+| path                 | string | path      | Ruta donde se cargará el archivo, incluyendo el nombre y la extensión del archivo (por ejemplo, `/carpeta1/Informe.xlsx`). |
+| file                 | file   | formData  | El archivo que se va a cargar. |
+| storageName          | string | query     | Nombre del almacenamiento que se va a utilizar. |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/File/UploadFile) define una interfaz de programación de acceso público, que permite interacciones REST directamente desde un navegador web.
+**Respuestas HTTP**
+
+| Código | Descripción                               |
+|--------|-------------------------------------------|
+| 200    | Archivo cargado correctamente.            |
+| 400    | Solicitud incorrecta: faltan o son inválidos los parámetros. |
+| 401    | No autorizado: token JWT inválido o faltante. |
+| 404    | Almacenamiento no encontrado.             |
+| 500    | Error interno del servidor.               |
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/File/UploadFile) define una interfaz de programación públicamente accesible que permite interacciones REST directamente desde un navegador web.
 
 ### Ejemplo de carga de archivo
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la nube API con cURL.
+Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web de Aspose.Cells. El siguiente ejemplo muestra cómo cargar un archivo con cURL.
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Solicitud" tabName12="Respuesta" >}}
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/Book1.xlsx" \
--X PUT \
--H "accept: application/json" \
--H "Content-Type: multipart/form-data" \
--H "Authorization: Bearer <jwt token>" \
--d {"File":{}}
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MiCarpeta/Informe.xlsx" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <token jwt>" \
+  -F "File=@Informe.xlsx"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "Uploaded": [
-    "string"
+    "MiCarpeta/Informe.xlsx"
   ],
-  "Errors": [
-    {
-      "Code": "string",
-      "Message": "string",
-      "Description": "string",
-      "InnerError": {
-        "RequestId": "string",
-        "Date": "2021-12-02T03:21:11.704Z"
-      }
-    }
-  ]
-} 
+  "Errors": []
+}
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
+*Nota: El tamaño máximo de archivo para cargar es de 100 MB. Podrían aplicarse límites de tasa.*
+
 ## **Cómo descargar un archivo**
 
-### Descargar Archivo API Información
+### Información de la API para descargar un archivo
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/file/{path}
+GET https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de la solicitud se indican a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| camino| cadena| camino| Ruta del archivo (por ejemplo, '/carpeta/archivo.ext')|
-| nombreDeAlmacenamiento| cadena| consulta| Nombre de almacenamiento|
-| ID de versión| cadena| consulta| ID de la versión del archivo para descargar|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción |
+|----------------------|--------|-----------|-------------|
+| path                 | string | path      | Ruta del archivo (por ejemplo, `/carpeta/Informe.xlsx`). |
+| storageName          | string | query     | Nombre del almacenamiento que se va a utilizar. |
+| versionId            | string | query     | Identificador de la versión del archivo que se va a descargar (opcional). |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/File/DownloadFile) define una interfaz de programación de acceso público, que permite interacciones REST directamente desde un navegador web.
+**Respuestas HTTP**
 
-### Ejemplo de archivo de descarga
+| Código | Descripción                               |
+|--------|-------------------------------------------|
+| 200    | Archivo descargado; se devuelve una secuencia binaria. |
+| 400    | Solicitud incorrecta: parámetros inválidos. |
+| 401    | No autorizado: token JWT inválido o faltante. |
+| 404    | Archivo no encontrado.                    |
+| 500    | Error interno del servidor.               |
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la nube API con cURL.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/File/DownloadFile) define una interfaz de programación públicamente accesible que permite interacciones REST directamente desde un navegador web.
 
-{{< tabs tabTotal="2" tabID="13" tabName13="Request" tabName14="Response" >}}
+### Ejemplo de descarga de archivo
+
+{{< tabs tabTotal="2" tabID="13" tabName13="Solicitud" tabName14="Respuesta" >}}
 {{< tab tabNum="13" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/Book1.xlsx" \
--X GET \
--H "Content-Type: application/json" \
--H "accept: multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MiCarpeta/Informe.xlsx" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <token jwt>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="14" >}}
 
-```bash
+```json
 {
-    Stream
+  "Stream": "<datos binarios>"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
+*Nota: La respuesta contiene la secuencia binaria del archivo. Guarde la salida en un archivo al utilizar cURL (`-o nombre_archivo.xlsx`).*
+
 ## **Cómo eliminar un archivo**
 
-### Eliminar archivo API Información
+### Información de la API para eliminar un archivo
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/storage/file/{path}
+DELETE https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de la solicitud se indican a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| camino| cadena| camino| Ruta del archivo (por ejemplo, '/carpeta/archivo.ext')|
-| nombreDeAlmacenamiento| cadena| consulta| Nombre de almacenamiento|
-| ID de versión| cadena| consulta| ID de la versión del archivo a eliminar|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción |
+|----------------------|--------|-----------|-------------|
+| path                 | string | path      | Ruta del archivo (por ejemplo, `/carpeta/Informe.xlsx`). |
+| storageName          | string | query     | Nombre del almacenamiento que se va a utilizar. |
+| versionId            | string | query     | Identificador de la versión del archivo que se va a eliminar (opcional). |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/File/DeleteFile) define una interfaz de programación de acceso público, que permite interacciones REST directamente desde un navegador web.
+**Respuestas HTTP**
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la nube API con cURL.
+| Código | Descripción                               |
+|--------|-------------------------------------------|
+| 200    | Archivo eliminado correctamente.          |
+| 400    | Solicitud incorrecta: faltan o son inválidos los parámetros. |
+| 401    | No autorizado: token JWT inválido.        |
+| 404    | Archivo no encontrado.                    |
+| 500    | Error interno del servidor.               |
 
-{{< tabs tabTotal="2" tabID="15" tabName15="Request" tabName16="Response" >}}
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/File/DeleteFile) define una interfaz de programación públicamente accesible que permite interacciones REST directamente desde un navegador web.
+
+### Ejemplo de eliminación de archivo
+
+{{< tabs tabTotal="2" tabID="15" tabName15="Solicitud" tabName16="Respuesta" >}}
 {{< tab tabNum="15" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/book12.xlsx" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MiCarpeta/ViejoInforme.xlsx" \
+  -X DELETE \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <token jwt>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="16" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
+*Nota: La eliminación de un archivo es permanente; asegúrese de tener una copia de seguridad si es necesario.*
+
 ## **Cómo copiar un archivo**
 
-### Copiar Archivo API Información
+### Información de la API para copiar un archivo
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/file/copy/{srcPath}
+PUT https://api.aspose.cloud/v3.0/cells/storage/file/copy/{srcPath}
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de la solicitud se indican a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| ruta de origen| cadena| camino| Ruta del archivo de origen (por ejemplo, '/carpeta/archivo.ext')|
-|ruta de destino| cadena| consulta| Ruta del archivo de destino|
-| nombreDeAlmacenamientoOrigen| cadena| consulta| Nombre del almacenamiento de origen|
-| nombreDeAlmacenamientoDeDestino| cadena| consulta| Nombre del almacenamiento de destino|
-| ID de versión| cadena| consulta| ID de la versión del archivo a copiar|
+| Nombre del parámetro   | Tipo   | Ubicación | Descripción |
+|------------------------|--------|-----------|-------------|
+| srcPath                | string | path      | Ruta del archivo de origen (por ejemplo, `/carpeta/Origen.xlsx`). |
+| destPath               | string | query     | Ruta del archivo de destino (por ejemplo, `/carpeta/Destino.xlsx`). |
+| srcStorageName         | string | query     | Nombre del almacenamiento de origen (opcional). |
+| destStorageName        | string | query     | Nombre del almacenamiento de destino (opcional). |
+| versionId              | string | query     | ID de versión del archivo que se va a copiar (opcional). |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/File/CopyFile) define una interfaz de programación de acceso público, que permite interacciones REST directamente desde un navegador web.
+**Respuestas HTTP**
+
+| Código | Descripción                               |
+|--------|-------------------------------------------|
+| 200    | Archivo copiado correctamente.            |
+| 400    | Solicitud incorrecta: parámetros inválidos. |
+| 401    | No autorizado: token JWT inválido o faltante. |
+| 404    | Archivo de origen no encontrado.          |
+| 500    | Error interno del servidor.               |
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/File/CopyFile) define una interfaz de programación públicamente accesible que permite interacciones REST directamente desde un navegador web.
 
 ### Ejemplo de copia de archivo
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la nube API con cURL.
-
-{{< tabs tabTotal="2" tabID="17" tabName17="Request" tabName18="Response" >}}
-
+{{< tabs tabTotal="2" tabID="17" tabName17="Solicitud" tabName18="Respuesta" >}}
 {{< tab tabNum="17" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/copy/Book1.xlsx?destPath=Book2.xlsx" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/copy/MiCarpeta/Informe.xlsx?destPath=MiCarpeta/InformeCopia.xlsx" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <token jwt>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="18" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
+*Nota: La operación de copia no elimina el archivo de origen.*
+
 ## **Cómo mover un archivo**
 
-### Mover archivo API Información
+### Información de la API para mover un archivo
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/file/move/{srcPath}
+PUT https://api.aspose.cloud/v3.0/cells/storage/file/move/{srcPath}
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de la solicitud se indican a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| ruta de origen| cadena| camino| Ruta del archivo de origen (por ejemplo, '/src.ext')|
-|ruta de destino| cadena| consulta| Ruta del archivo de destino (por ejemplo, '/dest.ext')|
-| nombreDeAlmacenamientoOrigen| cadena| consulta| Nombre del almacenamiento de origen|
-| nombreDeAlmacenamientoDeDestino| cadena| consulta| Nombre del almacenamiento de destino|
-| ID de versión| cadena| consulta| ID de la versión del archivo a mover|
+| Nombre del parámetro   | Tipo   | Ubicación | Descripción |
+|------------------------|--------|-----------|-------------|
+| srcPath                | string | path      | Ruta del archivo de origen (por ejemplo, `/carpeta/Origen.xlsx`). |
+| destPath               | string | query     | Ruta del archivo de destino (por ejemplo, `/carpeta/Destino.xlsx`). |
+| srcStorageName         | string | query     | Nombre del almacenamiento de origen (opcional). |
+| destStorageName        | string | query     | Nombre del almacenamiento de destino (opcional). |
+| versionId              | string | query     | ID de versión del archivo que se va a mover (opcional). |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/File/MoveFile) define una interfaz de programación de acceso público, que permite interacciones REST directamente desde un navegador web.
+**Respuestas HTTP**
 
-### Ejemplo de mover archivo
+| Código | Descripción                               |
+|--------|-------------------------------------------|
+| 200    | Archivo movido correctamente.             |
+| 400    | Solicitud incorrecta: parámetros inválidos. |
+| 401    | No autorizado: token JWT inválido o faltante. |
+| 404    | Archivo de origen no encontrado.          |
+| 500    | Error interno del servidor.               |
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la nube API con cURL.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/File/MoveFile) define una interfaz de programación públicamente accesible que permite interacciones REST directamente desde un navegador web.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### Ejemplo de movimiento de archivo
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Solicitud" tabName2="Respuesta" >}}
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/move/Book2.xlsx?destPath=MoveBook2.xlsx" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/move/MiCarpeta/Informe.xlsx?destPath=MiCarpeta/InformeMovido.xlsx" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <token jwt>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
+*Nota: Al mover un archivo se conserva su historial de versiones.*
+
 ## **Cómo crear una carpeta**
 
-### Crear carpeta API Información
+### Información de la API para crear una carpeta
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
+PUT https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de la solicitud se indican a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| camino| cadena| camino|Ruta de la carpeta a crear (por ejemplo, 'carpeta_1/carpeta_2/') |
-| nombreDeAlmacenamiento| cadena| consulta| Nombre de almacenamiento|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción |
+|----------------------|--------|-----------|-------------|
+| path                 | string | path      | Ruta de la carpeta que se va a crear (por ejemplo, `carpeta1/carpeta2/`). |
+| storageName          | string | query     | Nombre del almacenamiento que se va a utilizar. |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Folder/CreateFolder) define una interfaz de programación de acceso público, que permite interacciones REST directamente desde un navegador web.
+**Respuestas HTTP**
+
+| Código | Descripción                               |
+|--------|-------------------------------------------|
+| 200    | Carpeta creada correctamente.             |
+| 400    | Solicitud incorrecta: ruta o parámetros inválidos. |
+| 401    | No autorizado: token JWT inválido o faltante. |
+| 500    | Error interno del servidor.               |
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Folder/CreateFolder) define una interfaz de programación públicamente accesible que permite interacciones REST directamente desde un navegador web.
 
 ### Ejemplo de creación de carpeta
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la nube API con cURL.
-
-{{< tabs tabTotal="2" tabID="3" tabName3="Request" tabName4="Response" >}}
+{{< tabs tabTotal="2" tabID="3" tabName3="Solicitud" tabName4="Respuesta" >}}
 {{< tab tabNum="3" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/newfolder" \
--X PUT \
--H "accept: application/json" \
--H "Content-Type: multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/nuevacarpeta" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <token jwt>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="4" >}}
 
-```bash
+```json
 {
   "Uploaded": [
-    "string"
+    "nuevacarpeta"
   ],
-  "Errors": [
-    {
-      "Code": "string",
-      "Message": "string",
-      "Description": "string",
-      "InnerError": {
-        "RequestId": "string",
-        "Date": "2021-12-02T03:21:11.704Z"
-      }
-    }
-  ]
+  "Errors": []
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-## **Cómo obtener archivos en una carpeta**
+*Nota: Las rutas de carpetas distinguen mayúsculas y minúsculas.*
 
-### Obtener archivos API Información
+## **Cómo obtener los archivos de una carpeta**
+
+### Información de la API para obtener archivos
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
+GET https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de la solicitud se indican a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| camino| cadena| camino| Ruta de la carpeta (por ejemplo, '/carpeta')|
-| nombreDeAlmacenamiento| cadena| consulta| Nombre de almacenamiento|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción |
+|----------------------|--------|-----------|-------------|
+| path                 | string | path      | Ruta de la carpeta (por ejemplo, `/carpeta`). |
+| storageName          | string | query     | Nombre del almacenamiento que se va a utilizar. |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Folder/GetFilesList) define una interfaz de programación de acceso público, que permite interacciones REST directamente desde un navegador web.
+**Respuestas HTTP**
+
+| Código | Descripción                               |
+|--------|-------------------------------------------|
+| 200    | Lista de archivos y subcarpetas devuelta. |
+| 400    | Solicitud incorrecta: ruta inválida.      |
+| 401    | No autorizado: token JWT inválido o faltante. |
+| 404    | Carpeta no encontrada.                    |
+| 500    | Error interno del servidor.               |
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Folder/GetFilesList) define una interfaz de programación públicamente accesible que permite interacciones REST directamente desde un navegador web.
 
 ### Ejemplo de obtención de archivos
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la nube API con cURL.
-
-{{< tabs tabTotal="2" tabID="5" tabName5="Request" tabName6="Response" >}}
+{{< tabs tabTotal="2" tabID="5" tabName5="Solicitud" tabName6="Respuesta" >}}
 {{< tab tabNum="5" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
--X GET \
--H "Content-Type: application/json" \
--H "accept: multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/carpeta1" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <token jwt>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="6" >}}
 
-```bash
+```json
 {
   "Value": [
     {
-      "Name": "string",
-      "IsFolder": true,
+      "Name": "Informe.xlsx",
+      "IsFolder": false,
       "ModifiedDate": "2021-12-08T12:38:45.739Z",
-      "Size": 0,
-      "Path": "string"
+      "Size": 102400,
+      "Path": "/carpeta1/Informe.xlsx"
     }
   ]
 }
@@ -367,182 +418,216 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
 {{< /tab >}}
 {{< /tabs >}}
 
+*Nota: La respuesta enumera tanto archivos como subcarpetas dentro de la ruta especificada.*
+
 ## **Cómo eliminar una carpeta**
 
-### Eliminar carpeta API Información
+### Información de la API para eliminar una carpeta
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
+DELETE https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de la solicitud se indican a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| camino| cadena| camino| Ruta de la carpeta (por ejemplo, '/carpeta')|
-| nombreDeAlmacenamiento| cadena| consulta| Nombre de almacenamiento|
-| recursivo| booleano| consulta|FALSO|
+| Nombre del parámetro | Tipo    | Ubicación | Descripción |
+|----------------------|---------|-----------|-------------|
+| path                 | string  | path      | Ruta de la carpeta (por ejemplo, `/carpeta`). |
+| storageName          | string  | query     | Nombre del almacenamiento que se va a utilizar. |
+| recursive            | boolean | query     | Establezca en `true` para eliminar la carpeta recursivamente. |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Folder/DeleteFolder) define una interfaz de programación de acceso público, que permite interacciones REST directamente desde un navegador web.
+**Respuestas HTTP**
 
-### Ejemplo de eliminar carpeta
+| Código | Descripción                               |
+|--------|-------------------------------------------|
+| 200    | Carpeta eliminada correctamente.          |
+| 400    | Solicitud incorrecta: parámetros inválidos. |
+| 401    | No autorizado: token JWT inválido o faltante. |
+| 404    | Carpeta no encontrada.                    |
+| 500    | Error interno del servidor.               |
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la nube API con cURL.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Folder/DeleteFolder) define una interfaz de programación públicamente accesible que permite interacciones REST directamente desde un navegador web.
 
-{{< tabs tabTotal="2" tabID="7" tabName7="Request" tabName8="Response" >}}
+### Ejemplo de eliminación de carpeta
 
+{{< tabs tabTotal="2" tabID="7" tabName7="Solicitud" tabName8="Respuesta" >}}
 {{< tab tabNum="7" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/carpeta1" \
+  -X DELETE \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <token jwt>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="8" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
+*Nota: La eliminación de una carpeta con `recursive=true` elimina permanentemente todo su contenido.*
+
 ## **Cómo copiar una carpeta**
 
-### Copiar Carpeta API Información
+### Información de la API para copiar una carpeta
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/folder/copy/{srcPath}
+PUT https://api.aspose.cloud/v3.0/cells/storage/folder/copy/{srcPath}
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de la solicitud se indican a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| ruta de origen| cadena| camino| Ruta de la carpeta de origen (por ejemplo, '/src')|
-|ruta de destino| cadena| consulta| Ruta de la carpeta de destino (por ejemplo, '/dst')|
-| nombreDeAlmacenamientoOrigen| cadena| consulta| Nombre del almacenamiento de origen|
-| nombreDeAlmacenamientoDeDestino| cadena| consulta| Nombre del almacenamiento de destino|
+| Nombre del parámetro   | Tipo   | Ubicación | Descripción |
+|------------------------|--------|-----------|-------------|
+| srcPath                | string | path      | Ruta de la carpeta de origen (por ejemplo, `/origen`). |
+| destPath               | string | query     | Ruta de la carpeta de destino (por ejemplo, `/destino`). |
+| srcStorageName         | string | query     | Nombre del almacenamiento de origen (opcional). |
+| destStorageName        | string | query     | Nombre del almacenamiento de destino (opcional). |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Folder/CopyFolder) define una interfaz de programación de acceso público, que permite interacciones REST directamente desde un navegador web.
+**Respuestas HTTP**
+
+| Código | Descripción                               |
+|--------|-------------------------------------------|
+| 200    | Carpeta copiada correctamente.            |
+| 400    | Solicitud incorrecta: parámetros inválidos. |
+| 401    | No autorizado: token JWT inválido o faltante. |
+| 404    | Carpeta de origen no encontrada.          |
+| 500    | Error interno del servidor.               |
+
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Folder/CopyFolder) define una interfaz de programación públicamente accesible que permite interacciones REST directamente desde un navegador web.
 
 ### Ejemplo de copia de carpeta
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la nube API con cURL.
-
-{{< tabs tabTotal="2" tabID="21" tabName21="Request" tabName22="Response" >}}
+{{< tabs tabTotal="2" tabID="21" tabName21="Solicitud" tabName22="Respuesta" >}}
 {{< tab tabNum="21" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/copy/srcfolder?destPath=desfolder" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/carpetaorigen?destPath=carpetadestino" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <token jwt>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="22" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*Nota: La operación de copia crea una nueva carpeta con el mismo contenido que la carpeta de origen.*
 
 ## **Cómo mover una carpeta**
 
-### Mover carpeta API Información
+### Información de la API para mover una carpeta
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/storage/folder/move/{srcPath}
+PUT https://api.aspose.cloud/v3.0/cells/storage/folder/move/{srcPath}
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de la solicitud se indican a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| ruta de origen| cadena| camino| Ruta de la carpeta a mover (por ejemplo, '/carpeta')|
-|ruta de destino| cadena| consulta| Ruta de la carpeta de destino a la que moverse (por ejemplo, '/dst')|
-| nombreDeAlmacenamientoOrigen| cadena| consulta| Nombre del almacenamiento de origen|
-| nombreDeAlmacenamientoDeDestino| cadena| consulta| Nombre del almacenamiento de destino|
+| Nombre del parámetro   | Tipo   | Ubicación | Descripción |
+|------------------------|--------|-----------|-------------|
+| srcPath                | string | path      | Ruta de la carpeta de origen (por ejemplo, `/carpeta`). |
+| destPath               | string | query     | Ruta de la carpeta de destino (por ejemplo, `/destino`). |
+| srcStorageName         | string | query     | Nombre del almacenamiento de origen (opcional). |
+| destStorageName        | string | query     | Nombre del almacenamiento de destino (opcional). |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Folder/MoveFolder) define una interfaz de programación de acceso público, que permite interacciones REST directamente desde un navegador web.
+**Respuestas HTTP**
 
-### Ejemplo de mover carpeta
+| Código | Descripción                               |
+|--------|-------------------------------------------|
+| 200    | Carpeta movida correctamente.             |
+| 400    | Solicitud incorrecta: parámetros inválidos. |
+| 401    | No autorizado: token JWT inválido o faltante. |
+| 404    | Carpeta de origen no encontrada.          |
+| 500    | Error interno del servidor.               |
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la nube API con cURL.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Folder/MoveFolder) define una interfaz de programación públicamente accesible que permite interacciones REST directamente desde un navegador web.
 
-{{< tabs tabTotal="2" tabID="23" tabName23="Request" tabName24="Response" >}}
+### Ejemplo de movimiento de carpeta
+
+{{< tabs tabTotal="2" tabID="23" tabName23="Solicitud" tabName24="Respuesta" >}}
 {{< tab tabNum="23" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/move/desfolder" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/move/carpeta1?destPath=carpeta2" \
+  -X PUT \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <token jwt>"
 ```
 
 {{< /tab >}}
-{{< tab tabnum="24" >}}
+{{< tab tabNum="24" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-## **Cómo comprobar si existe almacenamiento**
+*Nota: Al mover una carpeta se conserva su estructura interna y las versiones de sus archivos.*
 
-### Existe almacenamiento API Información
+## **Cómo comprobar si existe un almacenamiento**
+
+### Información de la API para comprobar la existencia de un almacenamiento
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/{storageName}/exist
+GET https://api.aspose.cloud/v3.0/cells/storage/{storageName}/exist
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de la solicitud se indican a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombreDeAlmacenamiento| cadena| camino| Nombre de almacenamiento|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción |
+|----------------------|--------|-----------|-------------|
+| storageName          | string | path      | Nombre del almacenamiento que se va a comprobar. |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Storage/StorageExists) define una interfaz de programación de acceso público, que permite interacciones REST directamente desde un navegador web.
+**Respuestas HTTP**
 
-### Ejemplo de existencia de almacenamiento
+| Código | Descripción                               |
+|--------|-------------------------------------------|
+| 200    | Se devuelve la existencia del almacenamiento (`true` o `false`). |
+| 401    | No autorizado: token JWT inválido o faltante. |
+| 404    | Almacenamiento no encontrado.             |
+| 500    | Error interno del servidor.               |
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la nube API con cURL.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Storage/StorageExists) define una interfaz de programación públicamente accesible que permite interacciones REST directamente desde un navegador web.
 
-{{< tabs tabTotal="2" tabID="33" tabName33="Request" tabName34="Response" >}}
+### Ejemplo de comprobación de existencia de almacenamiento
+
+{{< tabs tabTotal="2" tabID="33" tabName33="Solicitud" tabName34="Respuesta" >}}
 {{< tab tabNum="33" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/cellsstorage/exist" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/MiAlmacenamiento/exist" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <token jwt>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="34" >}}
 
-```bash
+```json
 {
   "Exists": true
 }
@@ -553,41 +638,47 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/cellsstorage/exist" \
 
 ## **Cómo comprobar si existe un archivo o una carpeta**
 
-### El objeto existe API Información
+### Información de la API para comprobar la existencia de un objeto
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/exist/{path}
+GET https://api.aspose.cloud/v3.0/cells/storage/exist/{path}
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de la solicitud se indican a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| camino| cadena| camino| Ruta de archivo o carpeta (por ejemplo, '/file.ext' o '/folder')|
-| nombreDeAlmacenamiento| cadena| consulta| Nombre de almacenamiento|
-| ID de versión| cadena| consulta| ID de la versión del archivo|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción |
+|----------------------|--------|-----------|-------------|
+| path                 | string | path      | Ruta del archivo o carpeta (por ejemplo, `/archivo.xlsx` o `/carpeta`). |
+| storageName          | string | query     | Nombre del almacenamiento que se va a comprobar. |
+| versionId            | string | query     | Identificador de la versión del archivo (opcional). |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Storage/ObjectExists) define una interfaz de programación de acceso público, que permite interacciones REST directamente desde un navegador web.
+**Respuestas HTTP**
 
-### Ejemplo de objeto existente
+| Código | Descripción                               |
+|--------|-------------------------------------------|
+| 200    | Se devuelve la información de existencia. |
+| 401    | No autorizado: token JWT inválido o faltante. |
+| 404    | Archivo o carpeta no encontrados.         |
+| 500    | Error interno del servidor.               |
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la nube API con cURL.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Storage/ObjectExists) define una interfaz de programación públicamente accesible que permite interacciones REST directamente desde un navegador web.
 
-{{< tabs tabTotal="2" tabID="37" tabName37="Request" tabName38="Response" >}}
+### Ejemplo de comprobación de existencia de un objeto
+
+{{< tabs tabTotal="2" tabID="37" tabName37="Solicitud" tabName38="Respuesta" >}}
 {{< tab tabNum="37" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/exist/Book1.xlsx" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/exist/Libro1.xlsx" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <token jwt>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="38" >}}
 
-```bash
+```json
 {
   "Exists": true,
   "IsFolder": false
@@ -599,98 +690,108 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/exist/Book1.xlsx" \
 
 ## **Cómo obtener el uso del disco**
 
-### Obtener información sobre el uso del disco API
+### Información de la API para obtener el uso del disco
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/disc
+GET https://api.aspose.cloud/v3.0/cells/storage/disc
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de la solicitud se indican a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| nombreDeAlmacenamiento| cadena| consulta| Nombre de almacenamiento|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción |
+|----------------------|--------|-----------|-------------|
+| storageName          | string | query     | Nombre del almacenamiento que se va a consultar. |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Storage/GetDiscUsage) define una interfaz de programación de acceso público, que permite interacciones REST directamente desde un navegador web.
+**Respuestas HTTP**
 
-### Obtener ejemplo de uso del disco
+| Código | Descripción                               |
+|--------|-------------------------------------------|
+| 200    | Se devuelve la información de uso del disco. |
+| 401    | No autorizado: token JWT inválido o faltante. |
+| 500    | Error interno del servidor.               |
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la nube API con cURL.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Storage/GetDiscUsage) define una interfaz de programación públicamente accesible que permite interacciones REST directamente desde un navegador web.
 
-{{< tabs tabTotal="2" tabID="40" tabName40="Request" tabName41="Response" >}}
+### Ejemplo de obtención del uso del disco
 
+{{< tabs tabTotal="2" tabID="40" tabName40="Solicitud" tabName41="Respuesta" >}}
 {{< tab tabNum="40" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/disc" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/disc?storageName=MiAlmacenamiento" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <token jwt>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="41" >}}
 
-```bash
+```json
 {
-  "UsedSize": 0,
-  "TotalSize": 0
+  "UsedSize": 12345678,
+  "TotalSize": 987654321
 }
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-## **Cómo obtener versiones de archivos**
+## **Cómo obtener las versiones de un archivo**
 
-### Obtener información de las versiones del archivo API
+### Información de la API para obtener las versiones de un archivo
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/storage/version/{path}
+GET https://api.aspose.cloud/v3.0/cells/storage/version/{path}
 ```
 
-Los parámetros de la solicitud son:
+Los parámetros de la solicitud se indican a continuación:
 
-| Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
-|:- |:- |:- |:- |
-| camino| cadena| camino| Ruta del archivo (por ejemplo, '/file.ext')|
-| nombreDeAlmacenamiento| cadena| consulta| Nombre de almacenamiento|
+| Nombre del parámetro | Tipo   | Ubicación | Descripción |
+|----------------------|--------|-----------|-------------|
+| path                 | string | path      | Ruta del archivo (por ejemplo, `/archivo.xlsx`). |
+| storageName          | string | query     | Nombre del almacenamiento que se va a consultar. |
 
- El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Storage/GetFileVersions) define una interfaz de programación de acceso público, que permite interacciones REST directamente desde un navegador web.
+**Respuestas HTTP**
 
-### Ejemplo de obtención de versiones de archivos
+| Código | Descripción                               |
+|--------|-------------------------------------------|
+| 200    | Lista de versiones del archivo devuelta.  |
+| 401    | No autorizado: token JWT inválido o faltante. |
+| 404    | Archivo no encontrado.                    |
+| 500    | Error interno del servidor.               |
 
-Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a la nube API con cURL.
+La [Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Storage/GetFileVersions) define una interfaz de programación públicamente accesible que permite interacciones REST directamente desde un navegador web.
 
-{{< tabs tabTotal="2" tabID="46" tabName46="Request" tabName47="Response" >}}
+### Ejemplo de obtención de versiones de un archivo
+
+{{< tabs tabTotal="2" tabID="46" tabName46="Solicitud" tabName47="Respuesta" >}}
 {{< tab tabNum="46" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/cellsstorage/exist" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/storage/version/Informe.xlsx?storageName=MiAlmacenamiento" \
+  -X GET \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <token jwt>"
 ```
 
 {{< /tab >}}
-{{< tab tabnum="47" >}}
+{{< tab tabNum="47" >}}
 
-```bash
+```json
 {
   "Value": [
     {
-      "Name": "string",
-      "IsFolder": true,
+      "Name": "Informe.xlsx",
+      "IsFolder": false,
       "ModifiedDate": "2021-12-08T18:57:46.128Z",
-      "Size": 0,
-      "Path": "string",
-      "VersionId": "string",
+      "Size": 102400,
+      "Path": "/Informe.xlsx",
+      "VersionId": "1",
       "IsLatest": true
     }
   ]
-} 
+}
 ```
 
 {{< /tab >}}

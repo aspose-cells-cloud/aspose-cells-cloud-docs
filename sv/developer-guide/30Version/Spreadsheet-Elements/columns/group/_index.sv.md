@@ -1,76 +1,120 @@
-﻿---
-title: Gruppera kolumner i ett Excel-arbetsblad
-second_title: Documen
-linktitle: Grou
-type: docs
-url: /sv/columns/group/
-aliases: [/group-columns-in-an-excel-worksheet/, /group-columns-in-excel-worksheet/]
-keywords: Group column on an Excel workshee
-description: Aspose.Cells Cloud REST API stöder grupperingskolumnen på ett Excel-arbetsblad. SDK stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift.
-weight: 60
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Gruppera kolumner i ett Excel-kalkylblad
 ---
-Denna REST API anger kolumner i grupperingsarket.
+title: "Gruppera kolumner – Aspise.Cells Molntjänst-API-dokumentation"
+description: "Gruppera kolumner i ett kalkylblad i Excel med Aspose.Cells Cloud REST API (v3.0). Innehåller begäran syntax, parametrar, cURL- och SDK-exempel samt svarsinformation."
+keywords: "Aspose.Cells, gruppera kolumner, Excel-API, REST, moln-SDK"
+weight: 60
+type: docs
+aliases:
+  - /group-columns-in-an-excel-worksheet/
+  - /group-columns-in-excel-worksheet/
+---
 
-## RSET API
+# Gruppera kolumner i ett Excel-kalkylblad
+
+**API-version:** v3.0  
+**Åtgärd:** `PostGroupWorksheetColumns` – Gruppera kolumner i ett kalkylblad.
+
+---
+
+## Översikt
+
+Detta REST API låter dig gruppera ett intervall av kolumner i ett kalkylblad. Grupperade kolumner kan visas eller döljas, vilket möjliggör skapandet av collapsebara sektioner, liknande de i Microsoft Excel.
+
+---
+
+## Förutsättningar
+
+- En giltig **JWT-åtkomsttoken** som hämtats från Aspose Cloud:s autentiseringstjänst.  
+- Arbetshandboken måste lagras på en plats som Aspose.Cells Cloud har tillgång till (standardlagring eller ett anpassat lagringsnamn).  
+- Nödvändig SDK-version (om en SDK används): den senaste utgåvan som stöder API-version **v3.0**.  
+
+---
+
+## Autentisering
+
+Alla begäranden kräver **Bearer token**-autentisering.
+
+```http
+Authorization: Bearer <access_token>
+```
+
+För detaljer om hur du hämtar en token, se [JWT-autentiseringsguide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+---
+
+## HTTP-begäran
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
+```
+
+| Parameter | Plats | Krävs | Beskrivning |
+|-----------|-------|-------|-------------|
+| `name` | Sökväg | Ja | Arbetshandbokens filnamn (t.ex. `test.xlsx`). |
+| `sheetName` | Sökväg | Ja | Kalkylbladet som innehåller de kolumner som ska grupperas. |
+| `firstIndex` | Frågeparameter | Ja | Nollbaserat index för den första kolumnen som ska ingå i gruppen. |
+| `lastIndex` | Frågeparameter | Ja | Nollbaserat index för den sista kolumnen som ska ingå i gruppen. |
+| `hide` | Frågeparameter | Nej | Om `true` döljs de grupperade kolumnerna; annars förblir de synliga. |
+| `folder` | Frågeparameter | Nej | Sökväg till mappen som innehåller arbetshandboken. |
+| `storageName` | Frågeparameter | Nej | Namn på lagringstjänsten där filen finns. |
+
+---
+
+## Exempel på begäran (cURL)
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
- 
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
 ```
 
-Begäranparametrarna är:
+> **Obs:** Begäran använder **HTTPS** för att säkerställa krypterad kommunikation.
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp|Beskrivning|
-|:- |:- |:- |:- |
-| namn| sträng| väg| Arbetsbokens namn.|
-| arknamn| sträng| väg| Arbetsbladets namn.|
-| första index| heltal| fråga|Det första kolumnindexet som ska användas.|
-| sista index| heltal| fråga| Det sista kolumnindexet som ska användas.|
-| dölja| boolesk| fråga| kolumnernas synliga tillstånd|
-| mapp| sträng| fråga| Dokumentmappen.|
-| lagringsnamn| sträng| fråga| lagringsnamn.|
+---
 
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) definierar ett offentligt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+## Svar
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt webbtjänsterna Aspose.Cells. Följande exempel visar hur man anropar Cloud API med cURL.
+### Lyckad (200)
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Fält | Typ | Beskrivning |
+|------|-----|-------------|
+| `Code` | heltal | HTTP-statuskod (`200`). |
+| `Status` | sträng | Textuell status för åtgärden (`OK`). |
 
-{{< tab tabNum="11" >}}
+**Exempel**
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" -H "accept: application/json"
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```java
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
-{{< /tab >}}
+### Fel (t.ex. 400 Bad Request)
 
-{{< /tabs >}}
+| Fält | Typ | Beskrivning |
+|------|-----|-------------|
+| `Code` | heltal | HTTP-statuskod (`400`, `401`, `404`, `500`, …). |
+| `Status` | sträng | Textuell status (`Error`). |
+| `ErrorMessage` | sträng | Människoläsbar beskrivning av problemet. |
+| `ErrorCode` | sträng | Programmatiskt identifieringsnamn för felet. |
 
-## Cloud SDK-familjen
+**Exempel – Bad Request**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+```json
+{
+  "Code": 400,
+  "Status": "Error",
+  "ErrorMessage": "Ogiltigt kolumnindex.",
+  "ErrorCode": "InvalidParameter"
+}
+```
 
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+---
+
+## SDK-exempel
+
+Följande kodsnuttar visar hur man anropar operationen **Gruppera kolumner i kalkylblad** med de SDK:er som stöds.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +167,26 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---
+
+## Anmärkningar
+
+- **Grupperingsbeteende:** API:t skapar en kolumngrupp som kan expanderas eller kollapsas i Excel. Om `hide=true` sätts kollapsas gruppen omedelbart.  
+- **Nollbaserad indexerings:** Både `firstIndex` och `lastIndex` börjar på **0**; den första kolumnen i ett kalkylblad har index 0.  
+- **Lagringsöverväganden:** Om arbetshandboken finns i en icke-standardlagring måste du ange både `folder` och `storageName` som frågeparametrar.  
+
+---
+
+## Se även
+
+- [Autentisering – JWT-tokenbaserad](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
+- [OpenAPI-specifikation för Gruppera kolumner i kalkylblad](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns)  
+- [Aspose.Cells Cloud SDK:er (GitHub)](https://github.com/aspose-cells-cloud)  
+- [Gruppera rader i ett Excel-kalkylblad](/rows/group/)  
+
+---
+
+> *Illustration:* ![Skärmbild som visar grupperade kolumner i ett Excel-kalkylblad](./images/group-columns.png){: .img-fluid alt="Skärmbild som visar grupperade kolumner i ett Excel-kalkylblad" }
+
+*Ovanstående platsinnehålls-bild bör ersättas med en faktisk skärmbild som visar det visuella resultatet av att gruppera kolumner.*

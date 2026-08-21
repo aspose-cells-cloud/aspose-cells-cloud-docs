@@ -1,102 +1,130 @@
-﻿---
-title: تقسيم مصنف Excel إلى ملفات متعددة
-second_title: Documen
-linktitle: تقسيم Excel فيل
-type: docs
-url: /ar/split-multi-excel-files/
-aliases: [ /split/multi-files/]
-keywords: Split an Excel workbook to multi-files
-description: يدعم Cloud REST تقسيم مصنف إلى ملفات متعددة. تدعم مجموعة أدوات تطوير البرامج (SDK) أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 130
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تقسيم مصنف Excel إلى ملفات متعددة
 ---
-يشير هذا REST API إلى تقسيم Excel `workbook` إلى ملفات متعددة بتنسيق مختلف.
+title: "تقسيم ملف Excel إلى ملفات متعددة"
+ArticleTitle: "كيفية تقسيم ملف Excel إلى ملفات متعددة باستخدام واجهة Aspose.Cells Cloud API"
+second_title: "المستند"
+linktype: "تقسيم ملف Excel"
+type: docs
+url: /split-multi-excel-files/
+aliases: [/split/multi-files/]
+keywords: "Excel، Aspose.Cells Cloud، REST API، تقسيم المصنف، ملفات متعددة، JPEG، PNG، PDF، CSV، JSON"
+description: "تتيح واجهة Aspose.Cells Cloud REST API تقسيم ملف Excel (المصنف) إلى ملفات متعددة بصيغ مختلفة. توفر هذه الوثائق معلمات الطلب، ومثالًا باستخدام cURL، وأكواد أمثلة لعدة لغات برمجة مثل C#، Java، PHP، Ruby، Node.js، Python، Perl، و Go."
+weight: 130
+---
 
-**معلمة الاستعلام**
+تقوم هذه الواجهة (REST API) بتقسيم **مصنف Excel** إلى ملفات متعددة بصيغ مختلفة.
 
-|اسم المعلمة|يكتب|وصف|
-|:- |:- |:- |
-|شكل|خيط|تنسيق مقسم.|
-|من|عدد صحيح|بدء فهرس ورقة العمل.|
-|ل|عدد صحيح|نهاية فهرس ورقة العمل.|
-|الدقة الأفقية|عدد صحيح|الدقة الأفقية للصورة.|
-|الدقة العمودية|عدد صحيح|الدقة الرأسية للصورة.|
-|المجلد الخارجي|خيط|موضع ملف الانقسام الناتج.|
-|تقسيم الاسم القاعدة|خيط||
-|مجلد|خيط|مجلد المصنف الأصلي.|
-|اسم التخزين|خيط|اسم التخزين.|
+> **المتطلبات الأساسية** – لاستخدام هذه الواجهة، يجب الحصول على رمز JWT صالح، والتأكد من استخدام إصدار مدعوم من SDK، وتحقق من أن مصنفك مخزن في موقع تخزين مدعوم. كما تفرض الواجهة حدودًا لحجم الملفات مُوثَّقة في إرشادات المنصة.
 
-## الباقي API
+## واجهة PostWorkbookSplit
 
-|**API**|**يكتب**|**وصف**|**رابط سواجر**|
-|:- |:- |:- |:- |
-|/الخلايا/{الاسم}/تقسيم|بريد|تقسيم مصنف Excel|[PostWorkbookSplit](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit)|
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/split
+```
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### **الأمان والمصادقة**
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+تُعتبر واجهات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">مصادقة تعتمد على رمز JWT</a>.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### معلمات الطلب
+
+| اسم المعلمة         | النوع     | الموقع       | الوصف                                                                                         | إلزامي |
+| -------------------- | -------- | ------------ | ---------------------------------------------------------------------------------------------- | ------ |
+| files[]              | ملف      | formData     | ملف Excel واحد أو أكثر لـ **تقسيمه**. استخدم `file1`, `file2`, … في الطلب.                   | نعم    |
+| format               | سلسلة   | Query        | الصيغة المطلوبة للملفات الناتجة بعد التقسيم.                                                 | لا     |
+| from                 | عدد صحيح | Query        | فهرس ورقة العمل الابتدائي.                                                                    | لا     |
+| to                   | عدد صحيح | Query        | فهرس ورقة العمل النهائي.                                                                      | لا     |
+| horizontalResolution | عدد صحيح | Query        | الدقة الأفقية للصورة.                                                                         | لا     |
+| verticalResolution   | عدد صحيح | Query        | الدقة العمودية للصورة.                                                                        | لا     |
+| outFolder            | سلسلة   | Query        | المجلد الذي ستُخزَّن فيه الملفات المُقسَّمة.                                                 | لا     |
+| splitNameRule        | سلسلة   | Query        | قاعدة تسمية الملفات المُقسَّمة.                                                               | لا     |
+| folder               | سلسلة   | Query        | المجلد الذي يحتوي على المصنف الأصلي.                                                          | لا     |
+| storageName          | سلسلة   | Query        | اسم مساحة التخزين المراد استخدامها.                                                           | لا     |
+
+### **الاستجابة**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+    "Files": [
+      {
+        "Filename" : "[اسم الملف1]",
+        "Filesize" : [حجم الملف],
+        "FileContent" : "[Base64String]"
+      },
+      {
+        "Filename" : "[اسم الملف2]",
+        "Filesize" : [حجم الملف],
+        "FileContent" : "[Base64String]"
+      },
+      {
+        "Filename" : "[اسم الملف3]",
+        "Filesize" : [حجم الملف],
+        "FileContent" : "[Base64String]"
+      }
+    ]
+}
+```
+
+**رموز حالة HTTP**
+
+| الكود | المعنى                      | الوصف                                               |
+|------|-----------------------------|------------------------------------------------------|
+| 200  | ناجح (OK)                  | تطبيق الفلتر بنجاح؛ تحتوي الاستجابة على تفاصيل العملية. |
+| 400  | طلب غير صالح (Bad Request) | معلمات ناقصة أو غير صالحة (مثل نوع ملف غير مدعوم).    |
+| 401  | غير مصرّح (Unauthorized)    | رمز JWT غير صالح أو مفقود.                            |
+| 413  | حمل البيانات كبير جدًا (Payload Too Large) | تجاوز حجم الملف المرفوع الحد المسموح به.            |
+| 500  | خطأ داخلي في الخادم (Internal Server Error) | خطأ غير متوقع في الخادم.                            |
+
+## كيفية استخدام واجهة PostWorkbookSplit باستخدام SDKs
+
+### مواصفات واجهة PostWorkbookSplit
+
+تُعرّف [مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) واجهة برمجة تطبيقات عامة قابلة للوصول، وتتيح إجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول إلى خدمات Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات لواجهة Cloud API باستخدام cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="الطلب" tabName2="الاستجابة" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/split?format=jpeg&from=1&to=1&horizontalResolution=0&verticalResolution=0" -H "accept: application/json"
-
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/split?format=jpeg&from=1&to=1&horizontalResolution=0&verticalResolution=0" -H "accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Result": {
-
     "Documents": [
-
       {
-
         "Id": 1,
-
         "link": {
-
           "Href": "413e3375-c163-4d5c-8b84-8f95f63902f6.png",
-
           "Rel": null,
-
           "Title": null,
-
           "Type": null
-
         }
-
       }
-
     ]
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## عائلة SDK السحابية
+### استخدام SDKs الخاصة بـ Aspose.Cells Cloud
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+يُعد استخدام SDKs أفضل طريقة لتسريع عملية التطوير، إذ تقوم SDKs بإدارة التفاصيل منخفضة المستوى، مما يتيح لك التركيز على مهام مشروعك. يُرجى مراجعة [مستودع GitHub](https://github.com/aspose-cells-cloud) للاطلاع على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية إجراء مكالمات لخدمات Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

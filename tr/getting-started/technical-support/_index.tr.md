@@ -1,20 +1,22 @@
-﻿---
-title: Aspose.Cells Bulut Teknik Desteği
-second_title: Documen
-ArticleTitle: Aspose.Cells Cloud Technical Suppor
-LinkTitle: Technical Suppor
-type: docs
-url: /tr/technical-support/
-description: Aspose.Cells Bulut, Excel'in oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemleri vb. işlemlerini destekler
-weight: 80
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Teknik Destek
 ---
-## **Aspose.Cloud Teknik Destek**
+title: "Aspose.Cells Cloud Teknik Desteği"
+second_title: "Belge"
+ArticleTitle: "Aspose.Cells Cloud Teknik Desteği"
+LinkTitle: "Teknik Desteği"
+type: docs
+url: /technical-support/
+description: "Aspose.Cells Cloud için ücretsiz teknik destek alın. Aspose Cloud Forum'u kullanarak sorularınızı paylaşın, SSS'leri inceleyin ve hızlı yardımcı olmak için geliştirme ekibimizle nasıl iletişim kurabileceğinizi öğrenin."
+keywords: "Aspose Cells Cloud desteği, teknik destek, Aspose Cloud Forum, API desteği, Aspose Cells Cloud SSS"
+weight: 80
+---
 
-Aspose, tüm ürünleri için sınırsız ve ücretsiz teknik destek sağlar. Destek, değerlendirme de dahil olmak üzere tüm kullanıcılara açıktır.
+## Aspose.Cells Cloud Teknik Desteği
 
-Aspose Cells Cloud ile ilgili yardıma ihtiyacınız varsa, aşağıdakileri göz önünde bulundurun:
+Aspose, tüm ürünlerinin ücretsiz sınırsız teknik desteğini sağlar. Desteğe, hizmeti test eden kullanıcılar da dahil olmak üzere tüm kullanıcılar erişebilir.
 
--  Destek için ana yol şudur:[Aspose Forum](http://forum.aspose.cloud/) Sorunuzu şuraya gönderin:[Aspose Cells Forum](https://forum.aspose.cloud/c/cells) ve birkaç saat içinde cevaplanacaktır. Sorularınız doğrudan Aspose Cells Bulut geliştirme ekibi tarafından yanıtlanmaktadır.
-- Lütfen dikkat: Aspose telefonla teknik destek sağlamamaktadır. Telefon desteği yalnızca satış ve satın alma soruları için mevcuttur.
-- Forumlarda yanıt beklerken lütfen saat dilimi farklarını göz önünde bulundurun.
+Aspose.Cells Cloud ile ilgili yardıma ihtiyacınız varsa aşağıdaki kaynakları kullanabilirsiniz:
+
+- Birincil destek kanalı [Aspose Cloud Forum](https://forum.aspose.cloud/)tur. Sorunuzu [Aspose Cells Cloud Forum](https://forum.aspose.cloud/c/cells)'da paylaşın; Aspose.Cells Cloud geliştirme ekibi birkaç saat içinde cevap verecektir.  
+- Lütfen telefon desteği yalnızca satış ve satın alma soruları için sınırlı olduğunu unutmayın; teknik sorunlar forum üzerinden çözümlenmelidir.  
+- Forumdan cevap beklerken saat dilimi farklarını göz önünde bulundurun.  
+---

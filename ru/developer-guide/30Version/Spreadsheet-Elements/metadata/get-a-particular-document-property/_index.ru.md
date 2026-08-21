@@ -1,98 +1,113 @@
-﻿---
-title: Получить определенное свойство документа
-second_title: Documen
-linktitle: Ге
-type: docs
-url: /ru/document-properties/get/
-aliases: [/get-a-particular-document-property/]
-keywords: Get properties from excel files
-description: Aspose.Cells Cloud REST API поддерживает получение свойств из файлов Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получение определенного свойства документа
 ---
-Этот REST API указывает на чтение свойства документа по имени.
+title: "Получение конкретного свойства документа"
+second_title: "Документ"
+linktitle: "Получить"
+type: docs
+url: /document-properties/get/
+aliases: [/get-a-particular-document-property/]
+keywords: "Aspose.Cells, облачный API, получение свойства документа, метаданные Excel, REST GET, примеры SDK"
+description: "Получение именованного свойства документа (например, Автор, Заголовок) из файла Excel с использованием облачного REST API Aspose.Cells. Включает пример cURL, фрагменты кода SDK и схему ответа."
+weight: 20
+---
 
-## РСЕT API
+Этот REST API позволяет получить свойство документа по его имени.
+
+## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
 ```
 
-Параметры запроса:
+### Параметры запроса
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| Название документа.|
-| Имя_свойства| нить| путь| Имя объекта.|
-| папка| нить| запрос| Папка с документами.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Имя параметра  | Тип    | Расположение | Описание                                           |
+| -------------- | ------ | ------------ | -------------------------------------------------- |
+| name           | string | path         | Имя файла Excel.                                   |
+| propertyName   | string | path         | Имя свойства документа, которое необходимо получить. |
+| folder         | string | query        | Папка, содержащая файл (необязательно).            |
+| storageName    | string | query        | Имя хранилища (необязательно).                     |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty) определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+Вы можете использовать утилиту командной строки **cURL** для простого доступа к веб-сервисам Aspose.Cells. Следующий пример демонстрирует, как выполнять вызовы облачного API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Запрос" tabName12="Ответ" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "DocumentProperty": {
-
     "Name": "Author",
-
     "Value": "",
-
     "BuiltIn": "True",
-
     "link": {
-
       "Href": "/test.xlsx/documentproperties/Author",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+### Подробности ответа
+
+JSON-объект, возвращаемый API, содержит следующие поля:
+
+| Поле                            | Тип     | Описание                                                     |
+| ------------------------------- | ------- | ------------------------------------------------------------ |
+| **DocumentProperty.Name**       | string  | Имя свойства (например, `Author`).                            |
+| **DocumentProperty.Value**      | string  | Значение свойства. Может быть пустым, если оно не задано.     |
+| **DocumentProperty.BuiltIn**    | boolean | Указывает, является ли свойство встроенным свойством Excel.  |
+| **DocumentProperty.link.Href**  | string  | Относительный URL ресурса свойства.                           |
+| **DocumentProperty.link.Rel**   | string  | Тип связи, обычно `self`.                                     |
+| **DocumentProperty.link.Title** | string  | Человекочитаемое название (может быть `null`).               |
+| **DocumentProperty.link.Type**  | string  | MIME-тип связанного ресурса (может быть `null`).             |
+| **Code**                        | integer | Код HTTP-статуса, возвращаемый сервисом.                      |
+| **Status**                      | string  | Текстовое описание статуса (например, `OK`).                  |
+
+### Ответы об ошибках
+
+| HTTP-статус | Код                    | Описание                                                   |
+| ----------- | ---------------------- | ---------------------------------------------------------- |
+| 400         | `InvalidParameter`     | Один или несколько параметров запроса недопустимы.        |
+| 401         | `AuthenticationFailed` | Отсутствует или недействителен JWT-токен.                 |
+| 404         | `PropertyNotFound`     | Указанное свойство документа не существует.                |
+| 500         | `InternalError`        | На сервере произошла непредвиденная ошибка.                |
+
+Типовое тело ошибки выглядит следующим образом:
+
+```json
+{
+  "Code": 404,
+  "Status": "Property not found"
+}
+```
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — это лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя вам сосредоточиться на задачах вашего проекта. Полный список облачных SDK Aspose.Cells представлен в [репозитории на GitHub](https://github.com/aspose-cells-cloud).
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-сервисов Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -145,3 +160,22 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Терминология
+
+| Термин                | Определение                                                                                     |
+| --------------------- | ----------------------------------------------------------------------------------------------- |
+| **Свойство документа** | Часть метаданных, связанная с рабочей книгой Excel (например, Автор, Заголовок, Создано).      |
+| **Метаданные**        | Общий термин для данных, описывающих другие данные; в данном контексте означает свойства документа. |
+| **Пользовательское свойство** | Свойство, определённое пользователем и не входящее в набор встроенных свойств.              |
+
+### Часто задаваемые вопросы
+
+**В:** _Как получить свойство Автор файла Excel, хранящегося в Aspose Cloud?_  
+**О:** Отправьте GET-запрос по адресу `https://api.aspose.cloud/v3.0/cells/{fileName}/documentproperties/author` с действующим Bearer-токеном. JSON-ответ будет содержать `DocumentProperty.Name = "Author"` и его `Value`.
+
+**В:** _Какая ошибка возвращается, если запрошенное свойство не существует?_  
+**О:** API возвращает HTTP 404 с JSON-телом, содержащим `Code: 404` и `Status: "Property not found"`.
+
+**В:** _Нужно ли указывать `storageName`, если файл находится в хранилище по умолчанию?_  
+**О:** Нет. Параметр запроса `storageName` является необязательным; пропустите его, чтобы использовать хранилище по умолчанию, настроенное для вашей учётной записи.

@@ -1,74 +1,101 @@
-﻿---
-title: 将 Cells 的范围合并为单个单元格
-second_title: Documen
-linktitle: 合并
-type: docs
-url: /zh/ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
-keywords: Merge a range of cells into a single cell
-description: Aspose.Cells Cloud REST API 支持将工作表 Excel 上的多个单元格合并为一个单元格。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
-weight: 20
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、将 Cells 的范围合并到单个单元格中
 ---
-此 REST API 表示将 Excel 工作表上的一系列单元格合并到单个单元格中。
+title: "Aspose.Cells Cloud API – 合并单元格区域"
+second_title: "文档"
+linktitle: "合并"
+type: docs
+url: /ranges/merge/
+aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+keywords: "Aspose.Cells, 合并单元格, Excel API, REST, 云 SDK"
+description: "使用 Aspose.Cells Cloud REST API 将单元格区域合并为单个单元格。了解请求格式、参数以及 C#、Java、Python 等语言的 SDK 示例。"
+weight: 20
+---
 
-## 重新设置 API
+此 REST API 可将 Excel 工作表中的单元格区域合并为单个单元格。
+
+**概述**：合并区域会将所选单元格合并为一个单元格，保留左上角单元格的值，并丢弃其余单元格。当您需要创建跨多列或多行的标题，或希望简化工作表布局时，可使用此操作。
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
 ```
 
-请求参数为：
+### **请求参数**
 
-|参数名称|类型|路径/查询字符串/HTTPBody|描述|
-|:- |:- |:- |:- |
-|姓名|细绳|小路|工作簿名称|
-|工作表名称|细绳|小路|工作表名称|
-|范围||身体|工作表中的范围|
-|文件夹|细绳|询问|工作簿文件夹。|
-|存储名称|细绳|询问|存储名称。|
+| 参数名称       | 类型   | 位置 | 描述                                   |
+| -------------- | ------ | ---- | -------------------------------------- |
+| **name**       | string | path | 工作簿名称。                           |
+| **sheetName**  | string | path | 工作表名称。                           |
+| **range**      | object | body | 指定待合并单元格的区域对象。           |
+| **folder**     | string | query| 存储工作簿的文件夹。                   |
+| **storageName**| string | query| 存储名称。                             |
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMerge)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+#### 请求体架构
 
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
+**Range** 对象必须包含以下字段（其余字段均为可选）：
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+| 属性          | 类型    | 必需 | 描述                                   |
+| ------------- | ------- | ---- | -------------------------------------- |
+| **FirstRow**  | integer | 是   | 区域中首行的从零开始的索引。           |
+| **FirstColumn**| integer | 是   | 区域中首列的从零开始的索引。           |
+| **RowCount**  | integer | 是   | 区域中包含的行数。                     |
+| **ColumnCount**| integer | 是   | 区域中包含的列数。                     |
+| **Name**      | string  | 否   | 区域的可选名称。                       |
+| **RefersTo**  | string  | 否   | 区域所引用的公式。                     |
+| **Worksheet** | string  | 否   | 工作表名称（若与路径参数不同）。       |
+| **RowHeight** | number  | 否   | 区域内行高（像素）。                   |
+| **ColumnWidth**| number | 否   | 区域内列宽（像素）。                   |
+
+您可使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示了如何使用 cURL 调用云 API。
+
+{{< tabs tabTotal="2" tabID="1" tabName1="请求" tabName2="响应" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/merge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "FirstRow": 9,
+        "FirstColumn": 0,
+        "RowCount": 1,
+        "ColumnCount": 7
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK 系列
+#### 响应详情
 
-使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
+| HTTP 状态码                   | 描述                                           | 示例 JSON                                              |
+| ----------------------------- | ---------------------------------------------- | ------------------------------------------------------ |
+| **200 OK**                    | 区域已成功合并。                               | `{ "Code": 200, "Status": "OK" }`                      |
+| **400 Bad Request**           | 区域参数无效（例如索引越界）。                 | `{ "Code": 400, "Message": "Invalid range." }`         |
+| **401 Unauthorized**          | 缺少或无效的 JWT 令牌。                        | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404 Not Found**             | 工作簿或工作表未找到。                         | `{ "Code": 404, "Message": "Resource not found." }`    |
+| **500 Internal Server Error** | 服务器内部错误。                               | `{ "Code": 500, "Message": "Internal server error." }` |
 
-以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+## 云 SDK 开发工具包
+
+使用 SDK 是加速开发的最佳方式。SDK 可处理底层细节，让您专注于项目任务。请查阅 [GitHub 仓库](https://github.com/aspose-cells-cloud)，了解 Aspose.Cells Cloud SDK 的完整列表。
+
+以下代码示例展示了如何使用不同 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,83 +1,88 @@
-﻿---
-title: Nyheter i Aspose.Cells Cloud år 2023
-second_title: Documen
-linktitle: Vad är nytt i 202
+---
+title: "Vad är nytt i Aspose.Cells Cloud 2023 – Funktionstillägg och utgivningsnoteringar"
+second_title: "Dokument"
+linktitle: "Vad är nytt i 2023"
 type: docs
 weight: 30
-url: /sv/new-features/2023/
-keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF
-description: Den här sidan beskriver de mest intressanta nya Aspose.Cells Cloud-funktionerna som introducerats i de senaste utgåvorna.
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Nyheter i Aspose.Cells Moln
+url: /new-features/2023/
+keywords: "Excel, Office Cloud, REST API, kalkylark, PDF, CSV, JSON, Markdown, Aspose.Cells Cloud, uppdateringar 2023"
+description: "Upptäck Aspose.Cells Clouds nya funktioner 2023, inklusive regionberoende konverterings-API:er, stöd för diagramaxlar, digitala signaturer och andra förbättringar. Detaljerade utgivningsnoteringar och kodexempel."
+ArticleTitle: "Vad är nytt i Aspose.Cells Cloud 2023 – Funktionstillägg och utgivningsnoteringar"
 ---
-Välkommen till nyheterna i Aspose.Cells Cloud-dokument. Använd den här sidan för att snabbt hitta de senaste ändringarna.
+
+Välkommen till dokumentationen för vad som är nytt i Aspose.Cells Cloud. Den här sidan lyfter fram **Aspose.Cells Clouds nya funktioner för 2023** och låter dig snabbt hitta de senaste ändringarna.
+
+**Senast uppdaterad:** juli 2026  
 
 ## Förbättringar i version 23.12.0
 
-- Konverterings-API:er lägger till regionparameter.
-- Skydds-API:er lägger till regionparameter.
-- Assemble-data API lägger till regionparametern.
-- Sammanfoga filer API lägger till regionparameter.
-- Dela filer API lägger till regionparameter.
-- Importdata API lägger till regionparameter.
-- Vattenstämpel API lägger till regionparameter.
-- Rensa objekt API lägger till regionparameter.
-- Omvänd data API lägger till regionparameter.
-- Rotera data API lägger till regionparameter.
+- Lade till parameter för region till konverterings-API.  
+- Lade till parameter för region till skydd-API.  
+- Lade till parameter för region till samlingsdata-API.  
+- Lade till parameter för region till sammanfognings-API.  
+- Lade till parameter för region till delnings-API.  
+- Lade till parameter för region till importdata-API.  
+- Lade till parameter för region till vattenmärkes-API.  
+- Lade till parameter för region till rensningsobjekt-API.  
+- Lade till parameter för region till omvänd data-API.  
+- Lade till parameter för region till roteringsdata-API.  
 
 ## Förbättringar i version 23.11
 
-- Optimera import av XML-data till Excel-filen.
-- Optimera import av JSON-data till filen Excel.
-- Ta bort föråldrade funktioner, klasser och testfall.
+- Optimerade XML-dataimport till Excel-filer.  
+- Optimerade JSON-dataimport till Excel-filer.  
+- Tog bort föråldrade funktioner, klasser och testfall.  
 
 ## Förbättringar i version 23.10
 
-- Åtgärda begäran om att skydda arbetsboken.
-- Åtgärda intervallkopia API.
-- Optimera arbetsboksskydd API.
+- Fixade begäran om att skydda kalkylark.  
+- Fixade API för omfångskopiering.  
+- Optimerade API för kalkylarksskydd.  
 
 ## Förbättringar i version 23.9
 
-- Stöd för datasortering på intervallkontroller.
-- Stöd för att ta bort dubbletter av data på listobjekt.
-- Stöd för att infoga utsnitt för listobjekt.
-- Optimera listobjekt och relaterade objekt.
+- Lade till stöd för dataskickning i omfångsstyrenhet.  
+- Lade till borttagning av dubblettdatum för listobjekt.  
+- Lade till infogningsstöd för slicers för listobjekt.  
+- Optimerade listobjekt och relaterade komponenter.  
 
 ## Förbättringar i version 23.8
 
-- Stöd för att låsa API.
-- Optimera skydd API.
+- Lade till stöd för lås-API.  
+- Optimerade skydd-API.  
 
-## Aspose.Cells Moln 23.7
+## Aspose.Cells Cloud 23.7
 
-- Support för att reparera filen.
-- Optimera konverteringsfunktioner.
+- Lade till stöd för filreparation.  
+- Optimerade konverteringsfunktioner.  
 
-## Aspose.Cells Moln 23.6
+## Aspose.Cells Cloud 23.6
 
-- Stöd för att batchlåsa flera filer.
-- Stöd för att batchupplåsa flera filer.
-- Stöd för att batchskydda flera filer.
-- Stöd för att dela flera filer i batch.
-- Åtgärda API:et för put document-egenskapen.
+- Lade till batchlås för flera filer.  
+- Lade till batchupplåsning för flera filer.  
+- Lade till batchskydd för flera filer.  
+- Lade till batchdelning för flera filer.  
+- Fixade PUT-dokumentegenskaps-API.  
 
-## Aspose.Cells Moln 23.5
+## Aspose.Cells Cloud 23.5
 
-- Åtgärda några metoder som är felstavade.
+- Korregerade felstavade metodnamn.  
 
-## Aspose.Cells Moln 23.4
+## Aspose.Cells Cloud 23.4
 
-- Stöd för import och export av XML-data.
+- Lade till stöd för XML-dataimport och -export.  
 
-## Aspose.Cells Moln 23.3
+## Aspose.Cells Cloud 23.3
 
-- Optimera hyperlänkegenskaper.
+- Optimerade hyperlänksegenskaper.  
 
-## Aspose.Cells Moln 23.2
+## Aspose.Cells Cloud 23.2
 
-- Optimera, ersätt API.
-- Optimera Swagger-gränssnittet.
+- Optimerade ersättnings-API.  
+- Optimerade Swagger UI.  
 
-## Aspose.Cells Moln 23.1
+## Aspose.Cells Cloud 23.1
 
-- Åtgärdade felet för PostCellCharacters-metoden.
+- Fixade bugg i metoden PostCellCharacters.  
+
+För mer detaljerad information, se de fullständiga utgivningsnoteringarna för varje version eller besök Aspose.Cells Cloud API-referensen.

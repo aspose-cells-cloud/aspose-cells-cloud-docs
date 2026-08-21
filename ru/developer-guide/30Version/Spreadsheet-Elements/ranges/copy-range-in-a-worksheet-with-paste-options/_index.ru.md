@@ -1,75 +1,127 @@
-﻿---
-title: Копировать диапазон на лист с возможностью вставки
-second_title: Documen
-linktitle: Коп
-type: docs
-url: /ru/ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
-keywords: Copy a range in an Excel worksheet with paste options
-description: Aspose.Cells Cloud REST API поддерживает копирование диапазона на листе Excel с возможностью вставки. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
-weight: 20
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Копирование диапазона на лист с возможностью вставки
 ---
-Этот REST API указывает на копирование диапазона на листе Excel.
+title: "Копирование диапазона в листе с параметрами вставки"
+second_title: "Документ"
+linktitle: "Копировать"
+type: docs
+url: /ranges/copy/
+aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+keywords: "Aspose.Cells Cloud, REST API, Excel, копирование диапазона, лист, параметры вставки"
+description: "Используйте Aspose.Cells Cloud REST API для копирования диапазона в пределах листа Excel с полной поддержкой параметров вставки. Включает примеры SDK для нескольких языков программирования."
+weight: 20
+ArticleTitle: "Копирование диапазона в листе с параметрами вставки – Aspose.Cells Cloud API"
+---
 
-## РСЕT API
+Этот REST API копирует диапазон в листе книги Excel. Для смежных операций см. документацию **Получить диапазон** и **Обновить диапазон**.
+
+**Необходимые условия:** Для использования этого конечного узла необходимо иметь действительный маркер OAuth 2.0 / JWT и убедиться, что версия API соответствует URL запроса.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 ```
 
-Параметры запроса:
+### **Параметры запроса**
 
-| Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
-|:- |:- |:- |:- |
-| имя| нить| путь| название рабочей книги|
-| Имя_листа| нить| путь| имя рабочего листа|
-| диапазонОперация|| тело| копирование данных, стиль копирования, копирование, значение копирования|
-| папка| нить| запрос| Папка с рабочей тетрадью.|
-| имя_хранилища| нить| запрос| имя хранилища.|
+| Название параметра | Тип    | Расположение | Описание                                                                 |
+| ------------------ | ------ | ------------ | ------------------------------------------------------------------------ |
+| name               | string | path         | Имя книги.                                                              |
+| sheetName          | string | path         | Имя листа.                                                              |
+| rangeOperate       | string | body         | Выполняемая операция: `copydata`, `copystyle`, `copyto` или `copyvalue`. |
+| folder             | string | query        | Папка, содержащая книгу.                                                |
+| storageName        | string | query        | Имя сервиса хранения.                                                   |
 
- The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangesCopy) определяет общедоступный программный интерфейс и позволяет осуществлять REST-взаимодействие непосредственно из веб-браузера.
+**Примечания:** Поле `rangeOperate` определяет, что именно копируется. Используйте `copydata` для копирования только значений ячеек, `copystyle` — для форматирования, `copyto` — для копирования и данных, и форматирования, и `copyvalue` — для копирования значений без формул. API поддерживает диапазоны до 1 миллиона ячеек; более крупные диапазоны могут привести к тайм-ауту.
 
-Вы можете использовать командную строку cURL для лёгкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangesCopyCopy) определяет публично доступное программное интерфейсное описание и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+Вы можете использовать утилиту командной строки cURL для простого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как делать вызовы в облачный API с помощью cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Запрос" tabName2="Ответ" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/ranges" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"Operate\": \"string\", \"Source\": { \"ColumnCount\": 0, \"ColumnWidth\": 0, \"FirstColumn\": 0, \"FirstRow\": 0, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 0, \"RowHeight\": 0, \"Worksheet\": \"string\" }, \"Target\": { \"ColumnCount\": 0, \"ColumnWidth\": 0, \"FirstColumn\": 0, \"FirstRow\": 0, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 0, \"RowHeight\": 0, \"Worksheet\": \"string\" }, \"PasteOptions\": { \"OnlyVisibleCells\": true, \"PasteType\": \"string\", \"SkipBlanks\": true, \"Transpose\": true }}"
-
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "Operate": "string",
+        "Source": {
+          "ColumnCount": 0,
+          "ColumnWidth": 0,
+          "FirstColumn": 0,
+          "FirstRow": 0,
+          "Name": "string",
+          "RefersTo": "string",
+          "RowCount": 0,
+          "RowHeight": 0,
+          "Worksheet": "string"
+        },
+        "Target": {
+          "ColumnCount": 0,
+          "ColumnWidth": 0,
+          "FirstColumn": 0,
+          "FirstRow": 0,
+          "Name": "string",
+          "RefersTo": "string",
+          "RowCount": 0,
+          "RowHeight": 0,
+          "Worksheet": "string"
+        },
+        "PasteOptions": {
+          "OnlyVisibleCells": true,
+          "PasteType": "string",
+          "SkipBlanks": true,
+          "Transpose": true
+        }
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
+
+При успешном выполнении возвращается статус `200 OK`. В случае ошибки API может вернуть payloads следующего вида:
+
+```json
+{
+  "Code": 400,
+  "Message": "Bad Request – недопустимые параметры."
+}
+```
+
+или
+
+```json
+{
+  "Code": 401,
+  "Message": "Unauthorized – отсутствующий или недействительный маркер аутентификации."
+}
+```
+
+Объекты ошибок содержат HTTP-код статуса и описательное сообщение для диагностики проблем.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Вы можете загрузить образец книги для тестирования операции копирования [здесь](https://example.com/sample.xlsx).
+
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK берёт на себя решение низкоуровневых задач и позволяет вам сосредоточиться на задачах проекта. Ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
+Использование SDK — лучший способ ускорить разработку. SDK обрабатывает низкоуровневые детали, позволяя вам сосредоточиться на задачах проекта. Ознакомьтесь с [репозиторием на GitHub](https://github.com/aspose-cells-cloud), чтобы увидеть полный список облачных SDK Aspose.Cells.
 
-В следующих примерах кода показано, как совершать вызовы веб-служб Aspose.Cells с использованием различных SDK:
+Следующие примеры кода демонстрируют, как вызывать веб-сервисы Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

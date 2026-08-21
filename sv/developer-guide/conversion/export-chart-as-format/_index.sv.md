@@ -1,100 +1,104 @@
-﻿---
-title: Aspose.Cells Cloud Web API - Exportera ett kalkylbladsdiagram som en formatfil
-second_title: Documen
-ArticleTitle: Export a Spreadsheet Chart as a Format fil
-linktitle: Exportera diagram som format
-type: docs
-url: /sv/export-chart-as-format/
-keywords: Export Chart, Aspose.Cells Cloud Web API, Spreadsheet Conversion, PDF Export, Image Export, REST, Excel, CSV, JSO
-description: Konverterar effektivt diagram från kalkylblad lagrade i molnet till specifika format som PDF eller bilder direkt utan nedladdning
-weight: 100
-kwords: Exportera diagram, REST, Kalkylbladskonvertering, PDF, CSV, JSON, Markdown, Excel, Bildformat
 ---
-Exportera ett molnbaserat kalkylblad/Excel-diagram till en fil i ett annat format med Aspose.Cells Cloud Web API.
+title: "Exportera Excel-diagram – Aspose.Cells Cloud API"
+second_title: "Dokument"
+description: "Konvertera ett diagram från en Excel-arbetsbok som finns lagrad i molnet till PDF, PNG, SVG eller andra format med ett enda REST-anrop."
+ArticleTitle: "Så här konverterar du ett lokalt kalkylblad till en PDF-fil: Steg-för-steg-guide"
+linktitle: "Konvertera kalkylblad till PDF"
+type: docs
+url: /export-chart-as-format/
+keywords: "Aspose.Cells Cloud, exportera diagram, API, PDF, PNG, SVG, Excel, REST, molnkonvertering"
+weight: 100
+---
 
-## **Exportera diagram som format API**
+Exportera ett diagram som finns i en arbetsbok som lagras i Aspose Cloud Storage till ett annat filformat (PDF, PNG, SVG, …) utan att ladda ner källfilen.
+
+## ExportChartAsFormat API
 
 ```http
-GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
+GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
 ```
 
-### **Begäranparametrar:**
+### **Säkerhet och autentisering**
 
-| Parameternamn| Typ| Sökväg/Frågesträng/HTTP-kropp| Beskrivning|
-|:- |:- |:- |:- |
-| namn| Sträng| Väg| (Obligatoriskt) Namnet på den arbetsboksfil som ska hämtas.|
-| arbetsblad| Sträng| Väg| Arbetsbladets namn|
-| diagramindex| Heltal| Väg| Diagramindex|
-| formatera| Sträng| Fråga| (Obligatoriskt) Önskat utdataformat (t.ex. "png", "pdf", "svg").|
-| mapp| Sträng| Fråga| (Valfritt) Mappsökvägen där arbetsboken lagras; standardvärdet är null.|
-| lagringsnamn| Sträng| Fråga|(Valfritt) Namnet på lagringsutrymmet om anpassad molnlagring används; använd standardlagring om den utelämnas.|
-| utväg| Sträng| Fråga| (Valfritt) Mappsökvägen där arbetsboken lagras; standardvärdet är null.|
-|outStorageName| Sträng| Fråga| Namn på utdatafilens lagringsplats.|
-| teckensnittPlats| Sträng| Fråga| Använd anpassade teckensnitt.|
-| område| Sträng| Fråga| Inställningen för kalkylbladets region.|
-| lösenord| Sträng| Fråga| Lösenordet för att öppna kalkylbladsfilen.|
+Aspose.Cells Cloud API:er är säkra och kräver <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-tokenbaserad autentisering</a>.
+
+### 📦 Parametrar för begäran
+
+| Namn               | Typ     | Plats  | Obligatorisk | Beskrivning                                                  |
+| ------------------ | ------- | ------ | ------------ | ------------------------------------------------------------ |
+| **name**           | sträng  | Sökväg | Ja           | Filnamn för arbetsboken.                                     |
+| **worksheet**      | sträng  | Sökväg | Ja           | Kalkylbladsnamn som innehåller diagrammet.                   |
+| **chartIndex**     | heltal  | Sökväg | Ja           | Nollbaserat index för diagrammet som ska exporteras.         |
+| **format**         | sträng  | Fråga  | Ja           | Önskat utdataformat (t.ex. `png`, `pdf`, `svg`).             |
+| **folder**         | sträng  | Fråga  | Nej          | Sökväg till mappen där arbetsboken finns lagrad (standard: rot). |
+| **storageName**    | sträng  | Fråga  | Nej          | Anpassat lagringsnamn; utelämna för att använda standardlagring. |
+| **outPath**        | sträng  | Fråga  | Nej          | Sökväg till mappen där den konverterade filen ska sparas.    |
+| **outStorageName** | sträng  | Fråga  | Nej          | Lagringsnamn för utdatafilen.                                |
+| **fontsLocation**  | sträng  | Fråga  | Nej          | Sökväg till en mapp som innehåller anpassade typsnitt.       |
+| **region**         | sträng  | Fråga  | Nej          | Lokalt inställningsvärde (t.ex. `sv-SE`, `en-US`, `fr-FR`).  |
+| **password**       | sträng  | Fråga  | Nej          | Lösenord för att öppna en skyddad arbetsbok.                 |
 
 ### **Svar**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream",
+      "Name": "file"
     }
+  }
 ]
 ```
 
-### Felkoder
+**HTTP-statuskoder**
 
-- **400 Felaktig begäran**Ogiltig Apose.Cells Cloud API URI.
-- **401 Obehörig**Ogiltig åtkomsttoken. Eller ogiltigt klient-ID och hemlighet.
-- **404 Hittades inte**Kalkylbladsfilen är inte tillgänglig.
-- **500 Serverfel**Kalkylbladet har stött på ett fel vid hämtning av beräkningsdata.
+| Kod | Betydelse                | Beskrivning                                                    |
+| --- | ------------------------ | -------------------------------------------------------------- |
+| 200 | OK                       | Filter har tillämpats framgångsrikt; svaret innehåller åtgärdens detaljer. |
+| 400 | Felaktig begäran         | Saknade eller ogiltiga parametrar (t.ex. filtyp som inte stöds). |
+| 401 | Ej auktoriserad           | Ogiltig eller saknad JWT-token.                                |
+| 413 | För stor nyttolast        | Den uppladdade filen överskrider storleksgränsen.              |
+| 500 | Internt serverfel         | Oväntat serverfel.                                             |
 
-## Varför ska du använda Exportera kalkylbladsdiagram som format API?
+## Hur använder man API:et för att exportera diagram som format med SDK:er?
 
-- Du kan konvertera molnfiler till olika format när som helst och var som helst.
-- Utvecklingen kan snabbt slutföras via det befintliga SDK:t.
+### Export Chart as Format API-specifikation
 
-## Hur använder man exportkalkylbladsdiagrammet som format API med SDK:er?
+[Export Chart as Format API-specifikationen](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportChartAsFormat) tillhandahåller ett offentligt tillgängligt programmeringsgränssnitt och möjliggör REST-interaktioner direkt från en webbläsare.
 
-### Exportera diagram som format API Specifikation
+Du kan använda verktyget cURL för kommandoraden för enkelt att komma åt Aspose.Cells-webbtjänster. Följande exempel visar hur du gör anrop till moln-API:et med cURL.
 
- De[Exportera diagram som format API Specifikation](https://reference.aspose.cloud/cells/#/ConversionController/ExportChartAsFormat) definierar ett offentligt tillgängligt programmeringsgränssnitt, vilket gör att du kan utföra REST-interaktioner direkt från en webbläsare.
+{{< tabs tabTotal="2" tabID="11" tabName11="Begäran" tabName12="Svar" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}?format={format}" \
+  -H "Authorization: Bearer {access_token}"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64-kodad)",
+  "contentType": "MIME-typ",
+  "fileDownloadName": "valfritt filnamn"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Använd Aspose.Cells Cloud SDK:er
 
-Att använda SDK:t är det snabbaste sättet att utveckla, eftersom det abstraherar detaljer på låg nivå, vilket gör att du kan exportera ett kalkylbladsdiagramdata till en formatfil med kort kod.
- Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
-Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
+Att använda en SDK är det snabbaste sättet att utveckla, eftersom den abstraher bort detaljer på låg nivå och låter dig konvertera kalkylbladsdatatabeller till en PDF-fil med minimal kod. Se [GitHub-lagringsplatsen](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ExportChartAsFormat.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ExportChartAsFormat.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExportChartAsFormat.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ExportChartAsFormat.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ExportChartAsFormat.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ExportChartAsFormat.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ExportChartAsFormat.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportChartAsFormat.go" >}}
-{{< /tab >}}
-{{< /tabs >}}
+Följande kodexempel illustrerar hur du anropar Aspose.Cells-webbtjänster med olika SDK:er:

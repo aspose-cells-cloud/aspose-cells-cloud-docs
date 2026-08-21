@@ -1,76 +1,85 @@
-﻿---
-title: إظهار الأعمدة في ورقة العمل Excel
-second_title: Documen
-linktitle: غير مخفي
-type: docs
-url: /ar/columns/unhide/
-aliases: [/unhide-columns-in-an-excel-worksheet/,/unhide-columns-in-excel-worksheet/]
-keywords: Unhide column on an Excel workshee
-description: يدعم Cloud REST Aspose.Cells API إظهار العمود في ورقة عمل Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
-weight: 50
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، إظهار الأعمدة في ورقة عمل Excel
 ---
-يشير هذا REST API إلى إظهار أعمدة ورقة العمل.
+title: "إظهار أعمدة مخفية في ورقة عمل Excel"
+ArticleTitle: "إظهار أعمدة مخفية في ورقة عمل Excel - واجهة برمجة تطبيقات Aspose.Cells Cloud"
+second_title: "مستند"
+linktype: "إظهار"
+type: docs
+url: /columns/unhide/
+aliases:
+  [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
+keywords: "Aspose.Cells، واجهة برمجة تطبيقات سحابية، إظهار الأعمدة، Excel، REST، SDK"
+description: "تعرّف على كيفية استخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API لإظهار الأعمدة المخفية في ورقة عمل Excel. يشمل التفاصيل الكاملة للطلب، مثالًا باستخدام cURL، وأكواد أمثلة للعديد من لغات البرمجة."
+weight: 50
+---
 
-## RSET API
+تقوم هذه الواجهة البرمجية REST بإظهار الأعمدة المخفية في أوراق العمل.
 
-```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/unhide
- 
+**المتطلبات المسبقة** – جميع نقاط نهاية Aspose.Cells Cloud تتطلب استخدام بروتوكول HTTPS ورمز وصول OAuth 2.0 صالح. تأكد من امتلاكك لرمز وصول وإدراجه في رأس `Authorization` لطلباتك.
+
+## واجهة PostUnhideWorksheetColumns API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/unhide
 ```
 
-معلمات الطلب هي:
+### **الأمان والمصادقة**
 
-| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
-|:- |:- |:- |:- |
-| اسم| خيط| طريق| اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| عمود البداية| عدد صحيح| استفسار| مؤشر العمود الأولي الذي سيتم تشغيله.|
-| إجمالي الأعمدة| عدد صحيح| استفسار| عدد الأعمدة المطلوب تشغيلها.|
-| عرض| رقم| استفسار|50.0 |
-| مجلد| خيط| استفسار| مجلد المستندات.|
-| اسم التخزين| خيط| استفسار| اسم التخزين.|
+واجهات برمجة تطبيقات Aspose.Cells Cloud آمنة وتتطلب <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">المصادقة باستخدام رمز JWT</a>.
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
+### معاملات الطلب
 
- يمكنك استخدام**cURL** أداة سطر أوامر للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
+| اسم المعامل | النوع    | الموقع | الوصف                                          |
+|------------|---------|--------|------------------------------------------------|
+| name       | string  | path   | اسم ملف المصنف.                                |
+| sheetName  | string  | path   | اسم ورقة العمل.                                |
+| startColumn| integer | query  | فهرس العمود الأول المراد معالجته.              |
+| totalColumns| integer| query  | عدد الأعمدة المراد معالجتها.                   |
+| width      | number  | query  | العرض المطلوب للأعمدة (الافتراضي = 50.0).     |
+| folder     | string  | query  | المجلد الذي يحتوي على المستند.                |
+| storageName| string  | query  | اسم خدمة التخزين.                              |
+
+<a href="https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns" target="_blank" rel="noopener noreferrer">مواصفات OpenAPI</a> تُعرّف واجهة برمجة تطبيقات متاحة للعامة وتسمح لك بإجراء تفاعلات REST مباشرة من متصفح الويب.
+
+يمكنك استخدام أداة سطر الأوامر **cURL** للوصول إلى خدمات ويب Aspose.Cells بسهولة. يُظهر المثال التالي كيفية إجراء المكالمات إلى واجهة برمجة التطبيقات السحابية باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/unhide?startColumn=1&totalColumns=1&height=15" -H "accept: application/json"
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/unhide?startColumn=1&totalColumns=1&width=15" -H "accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**رموز حالة HTTP الشائعة**
+
+| الرمز | الوصف                                          |
+|-------|------------------------------------------------|
+| 200   | نجاح – تم إظهار الأعمدة بنجاح.                 |
+| 400   | طلب غير صالح – معاملات غير صحيحة.             |
+| 401   | غير مُصادق – نقص أو فساد في الرمز.             |
+| 404   | غير موجود – لم يتم العثور على المصنف أو ورقة العمل. |
+| 500   | خطأ داخلي في الخادم – فشل غير متوقع.           |
+
 ## عائلة SDK السحابية
 
- يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+استخدام SDK هو أفضل طريقة لتسريع عملية التطوير. يتعامل SDK مع التفاصيل الدقيقة من المستوى المنخفض حتى تتمكن من التركيز على مهام مشروعك. يُرجى الاطّلاع على <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">مستودع GitHub</a> للحصول على قائمة كاملة بـ SDKs الخاصة بـ Aspose.Cells Cloud.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
+تُظهر أمثلة الكود التالية كيفية استدعاء خدمات ويب Aspose.Cells باستخدام SDKs مختلفة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -123,3 +132,4 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 {{< /tab >}}
 
 {{< /tabs >}}
+---

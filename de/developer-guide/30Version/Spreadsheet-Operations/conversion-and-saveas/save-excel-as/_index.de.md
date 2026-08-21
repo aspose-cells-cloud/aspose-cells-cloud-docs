@@ -1,104 +1,155 @@
-﻿---
-title: Speichern unter Exce
-second_title: Documen
-linktitle: Speichern Sie eine
-type: docs
-url: /de/save-an-excel-file-as-other-formats-files/
-aliases: [/convert-excel-workbook-to-different-file-formats/, /saveas-other-formats/]
-keywords: Save excel files as kinds of format files
-description: Aspose.Cells Cloud REST API unterstützt das Speichern von Excel-Dateien in verschiedenen Formatdateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
-weight: 30
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, SaveAs Excel
 ---
-Dieses REST API zeigt die Excel-Datei `save` als Datei in einem anderen Format an.
+title: "Excel-Arbeitsmappe speichern – Aspose.Cells Cloud API"
+second_title: "Dokument"
+linktitle: "Speichern als"
+type: docs
+url: /save-an-excel-file-as-other-formats-files/
+aliases:
+  - /convert-excel-workbook-to-different-file-formats/
+  - /saveas-other-formats/
+keywords: "Aspose Cells, Excel, Speichern als, PDF, CSV, JSON, Markdown, REST API"
+description: "Speichern Sie Excel-Arbeitsmappen in PDF, CSV, JSON, Markdown und anderen Formaten mithilfe der Aspose.Cells Cloud REST API."
+weight: 30
+---
 
-**Pfadparameter**
+Diese REST API ermöglicht es Ihnen, **eine Excel-Datei in verschiedenen Formaten zu speichern**.  
+Bevor Sie diesen Endpunkt aufrufen, stellen Sie sicher, dass Sie über ein gültiges OAuth 2.0-Access-Token verfügen und sich die Quell-Arbeitsmappe in Ihrem Aspose Cloud-Speicher befindet.
 
-|Parametername|Typ|Beschreibung|
-|:- |:- |:- |
-|Name|Schnur| Der Dateiname.|
+**Voraussetzungen**  
+1. Beschaffen Sie ein JWT-Access-Token und fügen Sie es in den `Authorization: Bearer <token>`-Header jeder Anfrage ein.  
+2. Laden Sie die Quell-Arbeitsmappe in den Aspose Cloud-Speicher hoch (oder bestätigen Sie, dass sie bereits vorhanden ist).  
+3. Kennen Sie den Speichernamen und den Ordnerpfad, in dem sich die Arbeitsmappe befindet.
 
-**Abfrageparameter**
+## PostWorkbookSaveAs API
 
-|Parametername|Typ|Beschreibung|
-|:- |:- |:- |
-|neuerDateiname|Schnur| neuer Dateiname|
-|isAutoFitRows|Schnur| Passt alle Zeilen in dieser Arbeitsmappe automatisch an. Der Standardwert ist „false“.|
-|isAutoFitColumns|Schnur| Passt die Spaltenbreite in dieser Arbeitsmappe automatisch an. Der Standardwert ist „false“.|
-|Ordner|Schnur|Original-Arbeitsmappenordner.|
-|Speichername|Schnur| Der Speichername, in dem sich die Datei befindet.|
-|outStorageName|Schnur| Der Speichername, in dem sich die gespeicherte Datei befindet.|
-|checkExcelRestriction|bool| Ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert.|
-|Region|Schnur| Die regionalen Einstellungen für die Arbeitsmappe.|
-|SeitenbreiteAnpassungAufProBlatt|bool| Die Seitenbreite passt auf das Arbeitsblatt.|
-|pageTallFitOnPerSheet|bool| Die Seitenhöhe passt auf das Arbeitsblatt.|
-|Blattname|Schnur| Konvertieren Sie das angegebene Arbeitsblatt.|
-|Seitenindex|Schnur| Konvertieren Sie die angegebene Seite des Arbeitsblatts. Der Blattname ist erforderlich.|
-|eineSeiteProBlatt|bool| Bei der Konvertierung in das Format PDF eine Seite pro Blatt.|
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/saveAs
+```
 
-**Anforderungstextparameter**
+### **Sicherheit und Authentifizierung**
 
-|Parametername|Typ|Beschreibung|
-|:- |:- |:- |
-|Speicheroptionen| Objekt|Mit der Speicheroption wird im zweiten Teil des mehrteiligen Inhalts gespeichert.|
+Die Aspose.Cells Cloud APIs sind sicher und erfordern eine <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT-Token-basierte Authentifizierung</a>.
 
-## REST API
+### **Pfadparameter**
 
-|**API**|**Typ**|**Beschreibung**|**Ressourcenlink**|
-|:- |:- |:- |:- |
-|/Zellen/{Name}/saveAs|POST|Arbeitsmappe in Format exportieren|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+| Parametername | Typ    | Beschreibung                        |
+| ------------- | ------ | ----------------------------------- |
+| name          | string | Der Name der Excel-Datei.           |
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
+### **Abfrageparameter**
 
- Sie können**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie mit cURL Aufrufe an Cloud API tätigen.
+| Parametername         | Typ    | Beschreibung                                                                                     |
+| --------------------- | ------ | ------------------------------------------------------------------------------------------------ |
+| newfilename           | string | Neuer Dateiname für das gespeicherte Dokument.                                                  |
+| isAutoFitRows         | string | Wenn `true`, werden alle Zeilen in der Arbeitsmappe automatisch angepasst. Standard ist `false`. |
+| isAutoFitColumns      | string | Wenn `true`, werden die Spaltenbreiten in der Arbeitsmappe automatisch angepasst. Standard ist `false`. |
+| folder                | string | Ordner, der die ursprüngliche Arbeitsmappe enthält.                                             |
+| storageName           | string | Name des Speichers, in dem sich die Quelldatei befindet.                                        |
+| outStorageName        | string | Name des Speichers, in dem die Ausgabedatei gespeichert wird.                                   |
+| checkExcelRestriction | bool   | Gibt an, ob Excel-Einschränkungen beim Ändern von Zellen oder zugehörigen Objekten erzwungen werden sollen. |
+| region                | string | Regionale Einstellungen, die auf die Arbeitsmappe angewendet werden.                            |
+| pageWideFitOnPerSheet | bool   | Passt die Seitenbreite an jedes Arbeitsblatt an, wenn konvertiert wird.                         |
+| pageTallFitOnPerSheet | bool   | Passt die Seitenhöhe an jedes Arbeitsblatt an, wenn konvertiert wird.                           |
+| sheetName             | string | Name des Arbeitsblatts, das konvertiert werden soll.                                            |
+| pageIndex             | string | Index der Seite, die innerhalb des angegebenen Arbeitsblatts konvertiert werden soll (erfordert `sheetName`). |
+| onePagePerSheet       | bool   | Generiert beim Konvertieren in PDF eine Seite pro Arbeitsblatt.                                 |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### **Anforderungstextparameter**
+
+| Parametername | Typ    | Beschreibung                                                       |
+| ------------- | ------ | ------------------------------------------------------------------ |
+| SaveOptions   | Object | Speicheroptionen, die im zweiten Teil der Multipart-Anfrage übergeben werden. |
+
+**Beispiel für Anforderungstext (JSON-Teil der Multipart-Anfrage)**
+
+```json
+{
+  "SaveOptions": {
+    "SaveFormat": "pdf",
+    "CompressionLevel": 9
+  }
+}
+```
+
+### Antwort
+
+Die API gibt ein `SaveResponse`-Objekt zurück.
+
+```json
+{
+  "Status": "OK",
+  "Code": 200,
+  "SaveResult": {
+    "Documents": [
+      {
+        "Name": "sample.pdf",
+        "Size": 10240,
+        "Folder": "output",
+        "Storage": "MyStorage"
+      }
+    ]
+  }
+}
+```
+
+**HTTP-Statuscodes**
+
+| Code | Bedeutung                   | Beschreibung                                                                 |
+|------|-----------------------------|------------------------------------------------------------------------------|
+| 200  | OK                          | Filter erfolgreich angewendet; Antwort enthält Details zum Vorgang.        |
+| 400  | Bad Request                 | Fehlende oder ungültige Parameter (z. B. nicht unterstützter Dateityp).     |
+| 401  | Unauthorized                | Ungültiges oder fehlendes JWT-Token.                                        |
+| 413  | Payload Too Large           | Die hochgeladene Datei überschreitet das Größenlimit.                       |
+| 500  | Internal Server Error       | Unerwarteter Serverfehler.                                                   |
+
+## Verwendung der PostWorkbookSaveAs API mit SDKs
+
+### PostWorkbookSaveAs API-Spezifikation
+
+Die [OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/Conversion/PostWorkbookSaveAs) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht REST-Interaktionen direkt aus einem Webbrowser.
+
+Sie können **cURL** verwenden, um problemlos auf Aspose.Cells-Webservices zuzugreifen. Das folgende Beispiel zeigt, wie die Cloud-API mit cURL aufgerufen wird.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Anforderung" tabName12="Antwort" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfilename=sample.pdf&isAutoFitRows=true&isAutoFitColumns=true" -H "accept: multipart/form-data" 
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfilename=sample.pdf&isAutoFitRows=true&isAutoFitColumns=true" \
+  -H "accept: multipart/form-data" \
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
   "SaveResult": {
-    "SourceDocument": {
-      "Href": "test.xlsx",
-      "Rel": null,
-      "Title": null,
-      "Type": null
-    },
-    "DestDocument": {
-      "Href": "test.pdf",
-      "Rel": null,
-      "Title": null,
-      "Type": null
-    },
-    "AdditionalItems": []
+    "Documents": [
+      {
+        "Name": "sample.pdf",
+        "Size": 10240,
+        "Folder": "output",
+        "Storage": "MyStorage"
+      }
+    ]
   },
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK-Familie
+### Verwendung der Aspose.Cells Cloud SDKs
 
- Die Verwendung eines SDKs beschleunigt die Entwicklung am besten. Ein SDK kümmert sich um die Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte beachten Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+Die Verwendung eines SDKs ist der beste Weg, die Entwicklungszeit zu verkürzen. Ein SDK übernimmt die Low-Level-Details, sodass Sie sich auf Ihre Projekt-Aufgaben konzentrieren können. Schauen Sie sich das <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub-Repository</a> für eine vollständige Liste der Aspose.Cells Cloud SDKs an.
 
-Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele zeigen, wie Aspose.Cells-Webservices mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -151,3 +202,5 @@ Die folgenden Codebeispiele zeigen, wie Sie mithilfe verschiedener SDKs Aufrufe 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Weitere Konvertierungsszenarien finden Sie in den Anleitungen [Konvertieren von Excel in PDF](/convert-excel-to-pdf/) und [Exportieren von Excel in CSV](/export-excel-to-csv/).

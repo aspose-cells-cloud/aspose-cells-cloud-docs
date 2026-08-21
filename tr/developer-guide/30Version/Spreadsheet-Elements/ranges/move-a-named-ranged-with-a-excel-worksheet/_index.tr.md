@@ -1,76 +1,143 @@
-﻿---
-title: Excel çalışma sayfasıyla adlandırılmış bir aralığı taşıyın
-second_title: Documen
-linktitle: Hareket
-type: docs
-url: /tr/ranges/move/
-aliases: [/move-a-named-ranged-with-a-excel-worksheet/]
-keywords: Move a named ranged with an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasıyla adlandırılmış aralıklı bir nesnenin taşınmasını destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
-weight: 20
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Adlandırılmış aralıklı bir çalışma sayfasını Excel çalışma sayfasıyla taşıma
 ---
-Bu REST API, Excel çalışma sayfasındaki mevcut aralığı hedef aralığa taşımayı belirtir.
+title: "Excel çalışma sayfası ile adlandırılmış bir aralığı taşıma"
+second_title: "Belge"
+linktitle: "Taşı"
+type: docs
+url: /ranges/move/
+aliases: [/move-a-named-range-with-an-excel-worksheet/]
+keywords: "Aspose.Cells Cloud, adlandırılmış aralığı taşı, Excel çalışma sayfası, REST API, aralık taşıma, SDK örnekleri"
+description: "Aspose.Cells Cloud REST API v3.0 kullanarak bir Excel çalışma sayfasında adlandırılmış bir aralığı nasıl taşıyacağınızı öğrenin. Uç nokta ayrıntıları, kimlik doğrulama, örnekler ve SDK kod örnekleri içerir."
+weight: 20
+ArticleTitle: "Aspose.Cells Cloud API kullanarak Excel çalışma sayfası ile adlandırılmış bir aralığı taşıma"
+---
 
-## RSET API
+Adlandırılmış bir aralığı taşımak, verileri programlı olarak yeniden düzenlemeniz gerektiğinde yaygın olarak karşılaşılan bir görevdir. Bu bölüm, bir tanımlanmış aralığı aynı çalışma sayfası üzerinde yeni bir konuma taşımayı Aspose.Cells Cloud REST API ile nasıl yapacağınızı açıklar.
+
+Bu REST API, belirli bir aralığı bir Excel çalışma sayfasındaki hedef aralığa taşır.
+
+## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/moveto
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/moveto
 ```
 
-İstek parametreleri şunlardır:
+### Kimlik Doğrulama
+API, Aspose Cloud OAuth akışı aracılığıyla elde edilen bir **Bearer JWT belirteci** gerektirir. Belirteci `Authorization` başlığına ekleyin:
 
-| Parametre Adı| Tip| Yol/Sorgu Dizesi/HTTPGövdesi|Tanım|
-|:- |:- |:- |:- |
-| isim| sicim| yol| çalışma kitabı adı|
-| sayfaAdı| sicim| yol| çalışma sayfası adı|
-| hedefSatır| tam sayı| sorgu| Hedef aralığının başlangıç satırı.|
-| hedefSütun| tam sayı| sorgu| Hedef aralığının başlangıç sütunu.|
-| menzil|| vücut| çalışma sayfasındaki aralık|
-| dosya| sicim| sorgu| Çalışma kitabı klasörü.|
-| depolamaAdı| sicim| sorgu| depolama adı.|
+```
+Authorization: Bearer <jwt token>
+```
 
- The[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMoveTo) herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+Belirtecin **Cells** kapsamına sahip olması gerekir.
 
-cURL komut satırı aracını kullanarak Aspose.Cells web servislerine kolayca erişebilirsiniz. Aşağıdaki örnek, cURL ile API Cloud'a nasıl çağrı yapılacağını göstermektedir.
+### Ön Gereksinimler
+- Çalışma kitabının Aspose Cloud deposunda depolanmış olması gerekir.  
+- Dosya kök dizinde değilse depo adını (`storageName`) ve klasör yolunu (`folder`) sağlayın.  
+- API sürümünü **v3.0** destekleyen en son Aspose.Cells Cloud SDK sürümünü kullanın.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+### **Güvenlik ve Kimlik Doğrulama**
+
+Aspose.Cells Cloud API'leri güvenlidir ve <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT belirteci tabanlı kimlik doğrulamayı</a> gerektirir.
+
+### İstek Parametreleri
+
+| Ad             | Tür    | Konum  | Açıklama |
+|----------------|--------|--------|----------|
+| **name**       | string | path   | Çalışma kitabının dosya adı |
+| **sheetName**  | string | path   | Çalışma sayfasının adı |
+| **destRow**    | integer| query  | Hedef aralığın başlangıç satır indeksi (0‑tabanlı) |
+| **destColumn**| integer| query  | Hedef aralığın başlangıç sütun indeksi (0‑tabanlı) |
+| **range**      | object | body   | Taşınacak kaynak aralığın tanımı |
+| **folder**     | string | query  | Çalışma kitabının depolandığı klasör yolu |
+| **storageName**| string | query  | Aspose Cloud deposunun adı |
+
+### İstek Gövdesi
+
+| Alan           | Tür    | Gerekli | Açıklama |
+|----------------|--------|---------|----------|
+| **ColumnCount**| integer| Hayır | Kaynak aralıktaki sütun sayısı |
+| **ColumnWidth**| integer| Hayır | Her sütunun genişliği (nokta cinsinden) |
+| **FirstColumn**| integer| Hayır | Kaynak aralığın ilk sütununun sıfır tabanlı indeksi |
+| **FirstRow**   | integer| Hayır | Kaynak aralığın ilk satırının sıfır tabanlı indeksi |
+| **Name**       | string | Hayır | Aralığın adı (adlandırılmış aralık ise) |
+| **RefersTo**   | string | Hayır | Aralığı tanımlayan A‑1 stili başvuru |
+| **RowCount**   | integer| Hayır | Kaynak aralıktaki satır sayısı |
+| **RowHeight**  | integer| Hayır | Her satırın yüksekliği (nokta cinsinden) |
+| **Worksheet**  | string | Hayır | Kaynak aralığı içeren çalışma sayfası |
+
+### İş Akışı
+
+1. Çalışma kitabını Aspose Cloud deposuna **yükleme** (zaten mevcut değilse).  
+2. OAuth uç noktası kullanarak bir JWT belirteci **oluşturma**.  
+3. Kaynak aralığı tanımlayan JSON yükünü **oluşturma**.  
+4. Gerekli yol, sorgu parametreleri ve JSON gövdesi ile `moveto` uç noktasını **çağırma**.  
+5. Yanıtı **doğrulama**; başarılı çağrı `200 OK` durum kodunu döndürür.
+
+### Örnek İstek / Yanıt
+
+{{< tabs tabTotal="2" tabID="1" tabName1="İstek" tabName2="Yanıt" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/moveto?destRow=20&destColumn=20" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-d '{ 
+  "ColumnCount": 7,
+  "ColumnWidth": 19,
+  "FirstColumn": 0,
+  "FirstRow": 9,
+  "Name": "MyRange",
+  "RefersTo": "A10:G10",
+  "RowCount": 1,
+  "RowHeight": 15,
+  "Worksheet": "Sheet1"
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+Hata oluşursa, yanıt başarısızlıkla ilgili ek ayrıntılar sağlayan isteğe bağlı bir `ErrorMessage` alanı içerir.
+
+**HTTP Durum Kodları**
+
+| Kod | Anlam                       | Açıklama                                        |
+|-----|-----------------------------|-------------------------------------------------|
+| 200 | OK                          | Filtre başarıyla uygulandı; yanıt işlem ayrıntılarını içerir. |
+| 400 | Bad Request                 | Eksik veya geçersiz parametreler (örn., desteklenmeyen dosya türü). |
+| 401 | Unauthorized                | Geçersiz veya eksik JWT belirteci. |
+| 413 | Payload Too Large           | Yüklenen dosya boyut sınırını aşıyor. |
+| 500 | Internal Server Error       | Beklenmeyen sunucu hatası. |
+
+**Yanıt Şeması**
+
+| Alan | Tür    | Açıklama |
+|------|--------|----------|
+| **Code** | integer | API tarafından döndürülen HTTP benzeri durum kodu (örn., 200) |
+| **Status** | string | Sonucun metinsel açıklaması (örn., "OK") |
+| **ErrorMessage** | string (isteğe bağlı) | Çağrı başarısız olduğunda insan okuyabilir hata ayrıntıları |
+
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük seviyeli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirme hızını en hızlı şekilde artırmak için en iyi yoldur. Bir SDK, düşük seviye ayrıntıları yöneterek proje görevlerinize odaklanmanızı sağlar. Aspose.Cells Cloud SDK'larının tam listesi için lütfen <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub Deposu</a>'na bakın.
 
-Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web servislerine nasıl çağrı yapılacağını göstermektedir:
+Aşağıdaki kod örnekleri, farklı SDK'lar kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapıldığını göstermektedir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
