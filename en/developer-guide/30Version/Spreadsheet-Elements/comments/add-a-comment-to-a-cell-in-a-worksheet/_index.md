@@ -1,5 +1,7 @@
 ---
 title: "Add Worksheet Comment"
+url: /comments/add/
+aliases: [/add-a-comment-to-a-cell-in-a-worksheet/]
 description: "Add a comment to a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API (PUT /v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName})."
 keywords: "Aspose.Cells, Cloud API, Add Worksheet Comment, Excel, Spreadsheet, Cell Comment"
 weight: 20
@@ -14,15 +16,15 @@ Add a comment to a specific cell in a worksheet of an Excel workbook using the A
 
 ## Prerequisites / Authentication
 
-* A **Bearer JWT token** is required for every request.  
-  *Obtain a token* via the **/connect/token** endpoint (see the [Authentication guide](/cells/authentication/)).  
-* Include the token in the `Authorization` header:
+- A **Bearer JWT token** is required for every request.  
+  _Obtain a token_ via the **/connect/token** endpoint (see the [Authentication guide](/cells/authentication/)).
+- Include the token in the `Authorization` header:
 
 ```http
 Authorization: Bearer <jwt token>
 ```
 
-* All calls must be made over **HTTPS** to protect the token and data.
+- All calls must be made over **HTTPS** to protect the token and data.
 
 ---
 
@@ -34,17 +36,17 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{
 
 ### Path Parameters
 
-| Name      | Type   | Required | Description |
-|-----------|--------|----------|-------------|
-| `name`    | string | ✔️ | The workbook file name (e.g., `test.xlsx`). |
-| `sheetName` | string | ✔️ | The worksheet name (e.g., `Sheet1`). |
-| `cellName` | string | ✔️ | The address of the target cell (e.g., `A1`). |
+| Name        | Type   | Required | Description                                  |
+| ----------- | ------ | -------- | -------------------------------------------- |
+| `name`      | string | ✔️       | The workbook file name (e.g., `test.xlsx`).  |
+| `sheetName` | string | ✔️       | The worksheet name (e.g., `Sheet1`).         |
+| `cellName`  | string | ✔️       | The address of the target cell (e.g., `A1`). |
 
 ### Query Parameters
 
-| Name        | Type   | Required | Description |
-|-------------|--------|----------|-------------|
-| `folder`    | string | optional | The folder that contains the workbook. |
+| Name          | Type   | Required | Description                                         |
+| ------------- | ------ | -------- | --------------------------------------------------- |
+| `folder`      | string | optional | The folder that contains the workbook.              |
 | `storageName` | string | optional | The storage service name where the file is located. |
 
 ### Request Body
@@ -69,18 +71,18 @@ The body must contain a **Comment** object in JSON format.
 
 **Comment Object Fields**
 
-| Field                     | Type    | Required | Description |
-|---------------------------|---------|----------|-------------|
-| `CellName`                | string  | ✔️ | Cell address (must match the `{cellName}` path value). |
-| `Author`                  | string  | optional | Name of the comment author. |
-| `HtmlNote`                | string  | optional | HTML‑formatted comment text. |
-| `Note`                    | string  | optional | Plain‑text comment. |
-| `AutoSize`                | boolean | optional | Auto‑size the comment box. |
-| `IsVisible`               | boolean | optional | Show the comment by default. |
-| `Width` / `Height`        | number  | optional | Size of the comment box (points). |
-| `TextHorizontalAlignment`| string  | optional | Horizontal alignment (`Left`, `Center`, `Right`). |
-| `TextOrientationType`     | string  | optional | Text rotation (`NoRotation`, `Rotate90`, …). |
-| `TextVerticalAlignment`  | string  | optional | Vertical alignment (`Top`, `Center`, `Bottom`). |
+| Field                     | Type    | Required | Description                                            |
+| ------------------------- | ------- | -------- | ------------------------------------------------------ |
+| `CellName`                | string  | ✔️       | Cell address (must match the `{cellName}` path value). |
+| `Author`                  | string  | optional | Name of the comment author.                            |
+| `HtmlNote`                | string  | optional | HTML‑formatted comment text.                           |
+| `Note`                    | string  | optional | Plain‑text comment.                                    |
+| `AutoSize`                | boolean | optional | Auto‑size the comment box.                             |
+| `IsVisible`               | boolean | optional | Show the comment by default.                           |
+| `Width` / `Height`        | number  | optional | Size of the comment box (points).                      |
+| `TextHorizontalAlignment` | string  | optional | Horizontal alignment (`Left`, `Center`, `Right`).      |
+| `TextOrientationType`     | string  | optional | Text rotation (`NoRotation`, `Rotate90`, …).           |
+| `TextVerticalAlignment`   | string  | optional | Vertical alignment (`Top`, `Center`, `Bottom`).        |
 
 ---
 
@@ -111,20 +113,20 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 ## Response Schema
 
-| Field   | Type   | Description |
-|---------|--------|-------------|
-| `Comment` | object | The created comment object (see **Comment Object Fields** above, plus link metadata). |
-| `Code`   | integer | HTTP status code returned by the API (e.g., `200`). |
-| `Status` | string  | Textual status message (e.g., `"OK"`). |
+| Field     | Type    | Description                                                                           |
+| --------- | ------- | ------------------------------------------------------------------------------------- |
+| `Comment` | object  | The created comment object (see **Comment Object Fields** above, plus link metadata). |
+| `Code`    | integer | HTTP status code returned by the API (e.g., `200`).                                   |
+| `Status`  | string  | Textual status message (e.g., `"OK"`).                                                |
 
 The `Comment` object also contains a **link** sub‑object:
 
-| Sub‑field | Type   | Description |
-|-----------|--------|-------------|
+| Sub‑field | Type   | Description                                  |
+| --------- | ------ | -------------------------------------------- |
 | `Href`    | string | Self‑reference URL for the comment resource. |
-| `Rel`     | string | Relationship type (`self`). |
-| `Title`   | string | Optional title (may be `null`). |
-| `Type`    | string | Optional MIME type (may be `null`). |
+| `Rel`     | string | Relationship type (`self`).                  |
+| `Title`   | string | Optional title (may be `null`).              |
+| `Type`    | string | Optional MIME type (may be `null`).          |
 
 ---
 
@@ -160,12 +162,12 @@ The `Comment` object also contains a **link** sub‑object:
 
 ## Error Responses
 
-| HTTP Code | Description | Example |
-|-----------|-------------|---------|
-| **400**   | Bad request – missing or invalid parameters. | `{ "Error": { "Code": "InvalidParameter", "Message": "The 'cellName' parameter is missing or malformed." }, "Code": 400, "Status": "Bad Request" }` |
-| **401**   | Unauthorized – token missing or invalid. | `{ "Error": { "Code": "InvalidToken", "Message": "Authentication failed." }, "Code": 401, "Status": "Unauthorized" }` |
-| **404**   | Not found – workbook, worksheet, or cell does not exist. | `{ "Error": { "Code": "FileNotFound", "Message": "Workbook 'test.xlsx' not found." }, "Code": 404, "Status": "Not Found" }` |
-| **500**   | Internal server error – unexpected condition on the server. | `{ "Error": { "Code": "ServerError", "Message": "An unexpected error occurred." }, "Code": 500, "Status": "Internal Server Error" }` |
+| HTTP Code | Description                                                 | Example                                                                                                                                             |
+| --------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **400**   | Bad request – missing or invalid parameters.                | `{ "Error": { "Code": "InvalidParameter", "Message": "The 'cellName' parameter is missing or malformed." }, "Code": 400, "Status": "Bad Request" }` |
+| **401**   | Unauthorized – token missing or invalid.                    | `{ "Error": { "Code": "InvalidToken", "Message": "Authentication failed." }, "Code": 401, "Status": "Unauthorized" }`                               |
+| **404**   | Not found – workbook, worksheet, or cell does not exist.    | `{ "Error": { "Code": "FileNotFound", "Message": "Workbook 'test.xlsx' not found." }, "Code": 404, "Status": "Not Found" }`                         |
+| **500**   | Internal server error – unexpected condition on the server. | `{ "Error": { "Code": "ServerError", "Message": "An unexpected error occurred." }, "Code": 500, "Status": "Internal Server Error" }`                |
 
 ---
 
@@ -319,28 +321,29 @@ end
 {{< tab tabNum="5" >}}
 
 ```javascript
-const { WorksheetsApi, Configuration, Comment } = require('asposecellscloud');
+const { WorksheetsApi, Configuration, Comment } = require("asposecellscloud");
 
 let config = new Configuration();
-config.clientId = '<your_client_id>';
-config.clientSecret = '<your_client_secret>';
+config.clientId = "<your_client_id>";
+config.clientSecret = "<your_client_secret>";
 
 let api = new WorksheetsApi(config);
 
 let comment = new Comment({
-  CellName: 'A1',
-  Author: 'test',
-  Note: 'this is a comment',
+  CellName: "A1",
+  Author: "test",
+  Note: "this is a comment",
   HtmlNote: '<font style="font-weight:bold;">this is a comment</font>',
   AutoSize: true,
   IsVisible: true,
   Width: 10,
-  Height: 10
+  Height: 10,
 });
 
-api.putWorksheetComment('test.xlsx', 'Sheet1', 'A1', comment)
-  .then(response => console.log(response))
-  .catch(err => console.error(err));
+api
+  .putWorksheetComment("test.xlsx", "Sheet1", "A1", comment)
+  .then((response) => console.log(response))
+  .catch((err) => console.error(err));
 ```
 
 {{< /tab >}}
@@ -464,17 +467,17 @@ func main() {
 
 ## See Also
 
-* **Get Worksheet Comment** – `GET /cells/{name}/worksheets/{sheetName}/comments/{cellName}`  
-* **Update Worksheet Comment** – `POST /cells/{name}/worksheets/{sheetName}/comments/{cellName}`  
-* **Delete Worksheet Comment** – `DELETE /cells/{name}/worksheets/{sheetName}/comments/{cellName}`  
-* **Clear All Comments** – `DELETE /cells/{name}/worksheets/{sheetName}/comments`  
+- **Get Worksheet Comment** – `GET /cells/{name}/worksheets/{sheetName}/comments/{cellName}`
+- **Update Worksheet Comment** – `POST /cells/{name}/worksheets/{sheetName}/comments/{cellName}`
+- **Delete Worksheet Comment** – `DELETE /cells/{name}/worksheets/{sheetName}/comments/{cellName}`
+- **Clear All Comments** – `DELETE /cells/{name}/worksheets/{sheetName}/comments`
 
 ---
 
 ## Additional Notes
 
-* The endpoint path includes **v3.0**. A newer version (**v3.1**) is available; update the base URL accordingly if you need the latest features.  
-* For the full OpenAPI definition, visit the [Aspose.Cells Cloud API reference](/cells/#/Worksheets/PutWorksheetComment).  
-* Remember to handle rate‑limiting (HTTP 429) and retry according to the API guidelines.  
+- The endpoint path includes **v3.0**. A newer version (**v3.1**) is available; update the base URL accordingly if you need the latest features.
+- For the full OpenAPI definition, visit the [Aspose.Cells Cloud API reference](/cells/#/Worksheets/PutWorksheetComment).
+- Remember to handle rate‑limiting (HTTP 429) and retry according to the API guidelines.
 
 ---

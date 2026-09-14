@@ -1,5 +1,9 @@
 ---
 title: "Convert Excel Range to Image – Aspose.Cells Cloud API"
+second_title: "Developer Guide"
+linktitle: "Convert range to image"
+type: docs
+url: /convert-range-to-image/
 description: "Convert a specific range from a local Excel file to PNG, JPEG, SVG, TIFF, or BMP via Aspose.Cells Cloud REST API – no full workbook upload required."
 keywords: "Aspose.Cells Cloud, Convert Range to Image, Excel API, Image Formats, PNG, JPEG, SVG, TIFF, BMP"
 slug: convert-range-to-image

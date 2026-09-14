@@ -1,5 +1,7 @@
 ---
 title: Add CellArea to Conditional Formatting
+type: docs
+url: /conditional-formattings/add-cell-area/
 description: Add a cell area to a conditional formatting rule in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL, SDK examples, response schema, and error handling.
 keywords: Aspose.Cells, Conditional Formatting, CellArea, REST API, Excel, Cloud SDK
 weight: 30
@@ -15,8 +17,8 @@ aliases:
 
 ## Prerequisites
 
-1. **Aspose.Cells Cloud account** – obtain your **App SID** and **App Key**.  
-2. **JWT token** – generate a JWT token using the App SID/Key (see the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)).  
+1. **Aspose.Cells Cloud account** – obtain your **App SID** and **App Key**.
+2. **JWT token** – generate a JWT token using the App SID/Key (see the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)).
 3. The target Excel file must already exist in the specified storage/folder.
 
 ---
@@ -39,19 +41,19 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditiona
 
 ### Path Parameters
 
-| Name      | Type   | Description                     |
-|-----------|--------|---------------------------------|
-| `name`    | string | Excel file name (e.g., `Book1.xlsx`). |
-| `sheetName`| string| Worksheet that contains the rule (e.g., `Sheet1`). |
-| `index`   | integer| Zero‑based index of the conditional‑formatting rule. |
+| Name        | Type    | Description                                          |
+| ----------- | ------- | ---------------------------------------------------- |
+| `name`      | string  | Excel file name (e.g., `Book1.xlsx`).                |
+| `sheetName` | string  | Worksheet that contains the rule (e.g., `Sheet1`).   |
+| `index`     | integer | Zero‑based index of the conditional‑formatting rule. |
 
 ### Query Parameters
 
-| Name        | Type   | Required | Description |
-|-------------|--------|----------|-------------|
-| `cellArea`  | string | **Yes**  | Cell range to add, in A1 notation (e.g., `A1:C3`). |
-| `folder`    | string | No       | Folder path where the file is stored. |
-| `storageName`| string| No       | Storage service name. |
+| Name          | Type   | Required | Description                                        |
+| ------------- | ------ | -------- | -------------------------------------------------- |
+| `cellArea`    | string | **Yes**  | Cell range to add, in A1 notation (e.g., `A1:C3`). |
+| `folder`      | string | No       | Folder path where the file is stored.              |
+| `storageName` | string | No       | Storage service name.                              |
 
 ---
 
@@ -82,24 +84,25 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/condit
 
 **Response schema – `CellArea`**
 
-| Property   | Type | Description |
-|------------|------|-------------|
-| `StartRow` | int  | Zero‑based index of the first row. |
-| `StartColumn`| int| Zero‑based index of the first column. |
-| `EndRow`   | int  | Zero‑based index of the last row. |
-| `EndColumn`| int  | Zero‑based index of the last column. |
+| Property      | Type | Description                           |
+| ------------- | ---- | ------------------------------------- |
+| `StartRow`    | int  | Zero‑based index of the first row.    |
+| `StartColumn` | int  | Zero‑based index of the first column. |
+| `EndRow`      | int  | Zero‑based index of the last row.     |
+| `EndColumn`   | int  | Zero‑based index of the last column.  |
 
 ---
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ---
 
 ## SDK Examples
@@ -205,17 +208,21 @@ end
 ### Node.js
 
 ```javascript
-const { Configuration, ConditionalFormattingsApi } = require('asposecellscloudsdk');
+const {
+  Configuration,
+  ConditionalFormattingsApi,
+} = require("asposecellscloudsdk");
 
 const config = new Configuration();
-config.appSid = 'YOUR_APP_SID';
-config.appKey = 'YOUR_APP_KEY';
+config.appSid = "YOUR_APP_SID";
+config.appKey = "YOUR_APP_KEY";
 
 const api = new ConditionalFormattingsApi(config);
 
-api.putWorksheetFormatConditionArea('Book1.xlsx', 'Sheet1', 0, 'A1:C3')
-   .then(res => console.log(res))
-   .catch(err => console.error('Error:', err));
+api
+  .putWorksheetFormatConditionArea("Book1.xlsx", "Sheet1", 0, "A1:C3")
+  .then((res) => console.log(res))
+  .catch((err) => console.error("Error:", err));
 ```
 
 ### Python

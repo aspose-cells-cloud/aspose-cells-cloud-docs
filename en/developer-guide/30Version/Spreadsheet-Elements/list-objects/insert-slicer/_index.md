@@ -1,8 +1,9 @@
 ---
 title: "Insert a Slicer into an Excel ListObject – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Aspose.Cells Cloud Document"
 linktitle: "Insert slicer"
 type: docs
+url: /list-objects/insert-slicer/
 keywords: "Aspose.Cells, Excel slicer, ListObject, REST API, cloud SDK"
 description: "Learn how to add a slicer to an Excel ListObject using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, sample cURL request, and response JSON."
 weight: 20
@@ -66,13 +67,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ### Error Handling
 
 When an error occurs, the API returns a JSON object with an `ErrorMessage` field that describes the problem. Inspect the HTTP status code and the `ErrorMessage` to determine the corrective action.

@@ -1,7 +1,12 @@
 ---
 title: Add a dynamic filter in an Excel worksheet using Aspose.Cells Cloud API
 description: Learn how to apply a dynamic filter (e.g., BelowAverage, Tomorrow, LastMonth) to an Excel worksheet with the Aspose.Cells Cloud REST API. Includes authentication, request syntax, parameters, response handling, and SDK examples for multiple languages.
+url: /autofilter/add-dynamic-filter/
+aliases:
+  [/filter-a-list-using-dynamic-filter/, /autofilter/add-a-dynamic-filter/]
 keywords: Aspose.Cells, dynamic filter, Excel API, REST, auto filter, cloud SDK
+weight: 65
+linktitle: "Add color filter"
 slug: add-dynamic-filter
 api_version: v3.0
 ---
@@ -13,12 +18,12 @@ Dynamic filters automatically evaluate values such as dates, averages, or blanks
 
 ## Prerequisites
 
-| Requirement | Details |
-|-------------|---------|
-| **Authentication** | A valid JWT token obtained from the `/connect/token` endpoint. Include it in the `Authorization: Bearer <token>` header. |
-| **Storage** | The workbook must reside in an Aspose Cloud storage location (default or a custom storage). |
-| **Supported file formats** | `.xlsx`, `.xls`, `.xlsm`, `.xlsb`, `.csv`, etc. |
-| **Permissions** | Read/write access to the target folder/file. |
+| Requirement                | Details                                                                                                                  |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Authentication**         | A valid JWT token obtained from the `/connect/token` endpoint. Include it in the `Authorization: Bearer <token>` header. |
+| **Storage**                | The workbook must reside in an Aspose Cloud storage location (default or a custom storage).                              |
+| **Supported file formats** | `.xlsx`, `.xls`, `.xlsm`, `.xlsb`, `.csv`, etc.                                                                          |
+| **Permissions**            | Read/write access to the target folder/file.                                                                             |
 
 ## HTTP Request
 
@@ -28,22 +33,22 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
 
 ### Path Parameters
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `name` | string | ✅ | The name of the Excel workbook (e.g., `Book1.xlsx`). |
-| `sheetName` | string | ✅ | The name of the worksheet that contains the range to be filtered. |
+| Parameter   | Type   | Required | Description                                                       |
+| ----------- | ------ | -------- | ----------------------------------------------------------------- |
+| `name`      | string | ✅       | The name of the Excel workbook (e.g., `Book1.xlsx`).              |
+| `sheetName` | string | ✅       | The name of the worksheet that contains the range to be filtered. |
 
 ### Query Parameters
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `range` | string | ✅ | The cell range on which the filter is applied (e.g., `A1:B1`). |
-| `fieldIndex` | integer | ✅ | Zero‑based index of the column inside the range to which the dynamic filter is applied. |
-| `dynamicFilterType` | string | ✅ | Type of dynamic filter to apply (see **Supported Dynamic Filter Types**). |
-| `matchBlanks` | boolean | ❌ | If `true`, blank cells are included in the filter results. Default: `false`. |
-| `refresh` | boolean | ❌ | If `true`, the auto‑filter is refreshed after applying the filter. |
-| `folder` | string | ❌ | Path to the folder in storage where the workbook is located. |
-| `storageName` | string | ❌ | Name of the Aspose Cloud storage to use. |
+| Parameter           | Type    | Required | Description                                                                             |
+| ------------------- | ------- | -------- | --------------------------------------------------------------------------------------- |
+| `range`             | string  | ✅       | The cell range on which the filter is applied (e.g., `A1:B1`).                          |
+| `fieldIndex`        | integer | ✅       | Zero‑based index of the column inside the range to which the dynamic filter is applied. |
+| `dynamicFilterType` | string  | ✅       | Type of dynamic filter to apply (see **Supported Dynamic Filter Types**).               |
+| `matchBlanks`       | boolean | ❌       | If `true`, blank cells are included in the filter results. Default: `false`.            |
+| `refresh`           | boolean | ❌       | If `true`, the auto‑filter is refreshed after applying the filter.                      |
+| `folder`            | string  | ❌       | Path to the folder in storage where the workbook is located.                            |
+| `storageName`       | string  | ❌       | Name of the Aspose Cloud storage to use.                                                |
 
 ### Request Body
 
@@ -55,15 +60,15 @@ The request body is an empty JSON object:
 
 ## Supported Dynamic Filter Types
 
-| Value | Meaning |
-|-------|----------|
-| `BelowAverage` | Rows whose value is below the column’s average. |
-| `AboveAverage` | Rows whose value is above the column’s average. |
-| `Tomorrow` | Rows with dates equal to tomorrow’s date. |
-| `Yesterday` | Rows with dates equal to yesterday’s date. |
-| `NextWeek` | Rows with dates falling in the next calendar week. |
-| `LastMonth` | Rows with dates from the previous month. |
-| `ThisYear` | Rows with dates occurring in the current year. |
+| Value          | Meaning                                            |
+| -------------- | -------------------------------------------------- |
+| `BelowAverage` | Rows whose value is below the column’s average.    |
+| `AboveAverage` | Rows whose value is above the column’s average.    |
+| `Tomorrow`     | Rows with dates equal to tomorrow’s date.          |
+| `Yesterday`    | Rows with dates equal to yesterday’s date.         |
+| `NextWeek`     | Rows with dates falling in the next calendar week. |
+| `LastMonth`    | Rows with dates from the previous month.           |
+| `ThisYear`     | Rows with dates occurring in the current year.     |
 
 ## Example Request (cURL)
 
@@ -80,26 +85,27 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 
 ```json
 {
-    "Code": 200,
-    "Status": "OK",
-    "Message": "Dynamic filter applied successfully."
+  "Code": 200,
+  "Status": "OK",
+  "Message": "Dynamic filter applied successfully."
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## SDK Examples
 
 Below are ready‑to‑run snippets for the most popular SDKs. Replace `YOUR_JWT_TOKEN`, `YOUR_FILE_NAME`, and other placeholders with your actual values.
 
-### C#  
+### C#
 
 ```csharp
 using Aspose.Cells.Cloud.SDK.Api;
@@ -128,7 +134,7 @@ catch (Exception e)
 }
 ```
 
-### Java  
+### Java
 
 ```java
 import com.aspose.cloud.cells.api.AutoFilterApi;
@@ -158,7 +164,7 @@ public class PutWorksheetDynamicFilterExample {
 }
 ```
 
-### Python  
+### Python
 
 ```python
 from asposecellscloud import AutoFilterApi, ApiClient, Configuration
@@ -193,49 +199,53 @@ response = api.put_worksheet_dynamic_filter(
 print(response.status)
 ```
 
-### Node.js (TypeScript)  
+### Node.js (TypeScript)
 
 ```typescript
-import { AutoFilterApi, Configuration, CellsCloudResponse } from "@asposecloud/cells-sdk";
+import {
+  AutoFilterApi,
+  Configuration,
+  CellsCloudResponse,
+} from "@asposecloud/cells-sdk";
 
 const config = new Configuration({
-    accessToken: "<jwt token>"
+  accessToken: "<jwt token>",
 });
 const api = new AutoFilterApi(config);
 
 (async () => {
-    try {
-        const resp: CellsCloudResponse = await api.putWorksheetDynamicFilter(
-            "Book1.xlsx",          // name
-            "Sheet1",              // sheetName
-            "A1:B1",               // range
-            0,                     // fieldIndex
-            "BelowAverage",        // dynamicFilterType
-            true,                  // matchBlanks
-            true,                  // refresh
-            "myFolder",            // folder (optional)
-            undefined              // storageName (optional)
-        );
-        console.log(resp.status);
-    } catch (error) {
-        console.error(error);
-    }
+  try {
+    const resp: CellsCloudResponse = await api.putWorksheetDynamicFilter(
+      "Book1.xlsx", // name
+      "Sheet1", // sheetName
+      "A1:B1", // range
+      0, // fieldIndex
+      "BelowAverage", // dynamicFilterType
+      true, // matchBlanks
+      true, // refresh
+      "myFolder", // folder (optional)
+      undefined, // storageName (optional)
+    );
+    console.log(resp.status);
+  } catch (error) {
+    console.error(error);
+  }
 })();
 ```
 
-*(Similar snippets are available for Ruby, PHP, Go, and Perl in the official SDK repository.)*
+_(Similar snippets are available for Ruby, PHP, Go, and Perl in the official SDK repository.)_
 
 ## Related Topics
 
-- **Add a standard AutoFilter** – [Add a standard filter](/autofilter/add-filter)  
-- **Add a date filter** – [Add a date filter](/autofilter/add-date-filter)  
-- **Delete an AutoFilter** – [Delete auto filter](/autofilter/delete-filter)  
+- **Add a standard AutoFilter** – [Add a standard filter](/autofilter/add-filter)
+- **Add a date filter** – [Add a date filter](/autofilter/add-date-filter)
+- **Delete an AutoFilter** – [Delete auto filter](/autofilter/delete-filter)
 - **Working with worksheets** – [Worksheet API overview](/worksheets/)
 
 ## Notes
 
-* All images used in the original documentation have been reviewed for accessibility. Decorative icons are marked with `alt=""` and `role="presentation"`; functional icons retain descriptive `alt` text.  
-* Meta keywords have been cleaned to remove empty entries and duplicates.  
-* The page now follows a clear heading hierarchy (single H1 in front‑matter, H2 for major sections, H3/H4 for subsections) to improve SEO and screen‑reader navigation.  
+- All images used in the original documentation have been reviewed for accessibility. Decorative icons are marked with `alt=""` and `role="presentation"`; functional icons retain descriptive `alt` text.
+- Meta keywords have been cleaned to remove empty entries and duplicates.
+- The page now follows a clear heading hierarchy (single H1 in front‑matter, H2 for major sections, H3/H4 for subsections) to improve SEO and screen‑reader navigation.
 
 ---

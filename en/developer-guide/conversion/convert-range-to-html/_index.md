@@ -1,5 +1,9 @@
 ---
 title: "Aspose.Cells Cloud – Convert Excel Range to HTML"
+second_title: "Developer Guide"
+linktitle: "Convert range to html"
+type: docs
+url: /convert-range-to-html/
 description: "Convert a specific range of an Excel file (e.g., A1:C10) to an HTML file using Aspose.Cells Cloud REST API. Includes authentication, request examples, response handling, SDK snippets, and error codes."
 keywords: "Aspose.Cells, Excel to HTML, range conversion, cloud API, spreadsheet"
 slug: convert-range-to-html

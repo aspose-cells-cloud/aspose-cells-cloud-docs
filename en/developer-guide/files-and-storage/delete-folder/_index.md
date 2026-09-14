@@ -1,5 +1,9 @@
 ---
 title: "Delete Folder – Aspose.Cells Cloud API | Remove Folders via REST"
+second_title: "Developer Guide"
+linktitle: "Delete folder"
+type: docs
+url: /delete-folder/
 description: "Learn how to delete a folder (optionally recursively) from Aspose.Cells Cloud storage using the DELETE /v4.0/cells/storage/folder/{path} endpoint. Includes request syntax, parameters, authentication, sample code, and error handling."
 keywords: "Aspose.Cells, delete folder, cloud storage, API, REST, Excel, file management"
 slug: delete-folder
@@ -25,15 +29,15 @@ You can delete an empty folder or, by setting the `recursive` flag to `true`, de
 DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
 
-*`{path}`* – the full path of the folder to delete (URL‑encoded).
+_`{path}`_ – the full path of the folder to delete (URL‑encoded).
 
 ### Required HTTP Headers
 
-| Header            | Value                              | Description                              |
-|-------------------|------------------------------------|------------------------------------------|
-| `Authorization`   | `Bearer {access_token}`            | JWT token obtained from the auth service. |
-| `Accept`          | `application/json`                | Expected response format.                |
-| `Content-Type`    | `application/json` *(optional)*   | Not required for DELETE, but may be sent. |
+| Header          | Value                           | Description                               |
+| --------------- | ------------------------------- | ----------------------------------------- |
+| `Authorization` | `Bearer {access_token}`         | JWT token obtained from the auth service. |
+| `Accept`        | `application/json`              | Expected response format.                 |
+| `Content-Type`  | `application/json` _(optional)_ | Not required for DELETE, but may be sent. |
 
 ---
 
@@ -50,11 +54,11 @@ Obtain an access token via the [authentication endpoint](/authentication/) and
 
 ## Parameters
 
-| Name          | Type    | Location | Required | Description                                                               |
-|---------------|---------|----------|----------|---------------------------------------------------------------------------|
-| `path`        | string  | Path     | Yes      | Path of the folder to delete (URL‑encoded).                               |
+| Name          | Type    | Location | Required | Description                                                                            |
+| ------------- | ------- | -------- | -------- | -------------------------------------------------------------------------------------- |
+| `path`        | string  | Path     | Yes      | Path of the folder to delete (URL‑encoded).                                            |
 | `storageName` | string  | Query    | No       | Name of the storage that contains the folder. If omitted, the default storage is used. |
-| `recursive`   | boolean | Query    | No       | `true` → delete the folder **and all of its contents**. Default is `false`. |
+| `recursive`   | boolean | Query    | No       | `true` → delete the folder **and all of its contents**. Default is `false`.            |
 
 **Example query string**
 
@@ -88,13 +92,13 @@ No additional payload is provided because the operation’s result is binary –
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 When an error occurs, the body contains a JSON object with `code` and `message` fields describing the problem.
 
@@ -130,6 +134,7 @@ var request = new DeleteFolderRequest
 
 folderApi.DeleteFolder(request);
 ```
+
 </details>
 
 <details><summary>🟨 Java</summary>
@@ -149,6 +154,7 @@ DeleteFolderRequest request = new DeleteFolderRequest()
 
 folderApi.deleteFolder(request);
 ```
+
 </details>
 
 <details><summary>🟪 PHP</summary>
@@ -176,6 +182,7 @@ try {
 }
 ?>
 ```
+
 </details>
 
 <details><summary>🟧 Ruby</summary>
@@ -196,30 +203,33 @@ rescue AsposeCellsCloud::ApiError => e
   puts "Error: #{e.message}"
 end
 ```
+
 </details>
 
 <details><summary>🟢 Node.js (TypeScript)</summary>
 
 ```ts
-import { FolderApi, DeleteFolderRequest } from '@asposecloud/cells-sdk';
+import { FolderApi, DeleteFolderRequest } from "@asposecloud/cells-sdk";
 
 const config = {
-    accessToken: '{access_token}',
-    basePath: 'https://api.aspose.cloud'
+  accessToken: "{access_token}",
+  basePath: "https://api.aspose.cloud",
 };
 
 const folderApi = new FolderApi(config);
 
 const request: DeleteFolderRequest = {
-    path: 'MyFolder',
-    storageName: 'MyStorage',
-    recursive: true
+  path: "MyFolder",
+  storageName: "MyStorage",
+  recursive: true,
 };
 
-folderApi.deleteFolder(request)
-    .then(() => console.log('Folder deleted'))
-    .catch(err => console.error('Error:', err));
+folderApi
+  .deleteFolder(request)
+  .then(() => console.log("Folder deleted"))
+  .catch((err) => console.error("Error:", err));
 ```
+
 </details>
 
 <details><summary>🐍 Python</summary>
@@ -242,6 +252,7 @@ request = DeleteFolderRequest(
 folder_api.delete_folder(request)
 print("Folder deleted")
 ```
+
 </details>
 
 <details><summary>🦪 Perl</summary>
@@ -269,6 +280,7 @@ if ($@) {
     warn "Error deleting folder: $@";
 }
 ```
+
 </details>
 
 <details><summary>🦑 Go</summary>
@@ -303,27 +315,28 @@ func main() {
     fmt.Println("Folder deleted")
 }
 ```
+
 </details>
 
 ---
 
 ## See Also
 
-- **[Create Folder](/create-folder/)** – Create a new folder in cloud storage.  
-- **[Copy Folder](/copy-folder/)** – Duplicate a folder and its contents.  
-- **[Move Folder](/move-folder/)** – Relocate a folder to a different path.  
+- **[Create Folder](/create-folder/)** – Create a new folder in cloud storage.
+- **[Copy Folder](/copy-folder/)** – Duplicate a folder and its contents.
+- **[Move Folder](/move-folder/)** – Relocate a folder to a different path.
 - **[OpenAPI Specification]** – <a href="https://reference.aspose.cloud/cells/#/FolderController/DeleteFolder" rel="noopener noreferrer">DeleteFolder operation</a> (interactive API explorer).
 
 ---
 
 ## SEO & Accessibility Checklist (internal)
 
-- **Title & H1** use the correct en‑dash (`–`) and contain the primary keyword *Delete Folder*.  
-- All headings follow a logical hierarchy (`H1 → H2 → H3`).  
-- No UTF‑8 encoding artifacts remain.  
-- Meta keywords consolidated into a single, clean list (or omitted if preferred).  
-- External links include `rel="noopener noreferrer"` for security.  
-- UI icons and language flags (if rendered on the page) should carry `aria-label`/`alt` attributes (e.g., `aria-label="English (US)"`).  
+- **Title & H1** use the correct en‑dash (`–`) and contain the primary keyword _Delete Folder_.
+- All headings follow a logical hierarchy (`H1 → H2 → H3`).
+- No UTF‑8 encoding artifacts remain.
+- Meta keywords consolidated into a single, clean list (or omitted if preferred).
+- External links include `rel="noopener noreferrer"` for security.
+- UI icons and language flags (if rendered on the page) should carry `aria-label`/`alt` attributes (e.g., `aria-label="English (US)"`).
 - `<link rel="alternate" hreflang="xx" href="…">` tags are recommended in the page head for each language version.
 
 ---

@@ -1,5 +1,9 @@
 ---
 title: "Aspose.Cells Cloud API – Get Files List (Folder Contents)"
+second_title: "Developer Guide"
+linktitle: "Get files list"
+type: docs
+url: /get-files-list/
 description: "Retrieve a list of files and sub‑folders from a specific folder in Aspose.Cells Cloud storage."
 keywords:
   - Aspose.Cells
@@ -8,7 +12,6 @@ keywords:
   - Cloud Storage
   - Excel
   - REST
-type: docs
 weight: 100
 ---
 
@@ -51,7 +54,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | 401       | Unauthorized          | Invalid or missing JWT token.                                     |
 | 413       | Payload Too Large     | Uploaded file exceeds size limit.                                 |
 | 500       | Internal Server Error | Unexpected server error.                                          |
-|  |
+|           |
 
 ## OpenAPI Specification
 

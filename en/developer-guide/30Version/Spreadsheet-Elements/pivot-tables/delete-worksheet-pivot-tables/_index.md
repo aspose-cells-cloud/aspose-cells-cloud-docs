@@ -1,5 +1,10 @@
 ---
 title: "Delete All Pivot Tables in an Excel Worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: Clear
+type: docs
+url: /pivot-tables/clear/
+aliases: [/delete-worksheet-pivot-tables/]
 description: "Deletes every pivot table from a specified worksheet using the Aspose.Cells Cloud REST API."
 keywords: "Aspose.Cells, Pivot Table, Delete, REST API, Excel"
 date: 2026-07-30
@@ -9,16 +14,19 @@ api_version: "v3.0"
 # Delete All Pivot Tables in an Excel Worksheet
 
 ## Overview
+
 This operation removes **all** pivot tables from a given worksheet in an Excel file. It is useful when you need to reset a worksheet’s analysis or clean up unused pivot tables in a single call.
 
 ## Prerequisites
+
 Before calling the API, ensure you have completed the following steps:
 
-1. **Aspose Cloud Account** – Sign up for an Aspose Cloud account if you do not already have one.  
-2. **JWT Token** – Generate a JSON Web Token (JWT) for authentication. See the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.  
+1. **Aspose Cloud Account** – Sign up for an Aspose Cloud account if you do not already have one.
+2. **JWT Token** – Generate a JSON Web Token (JWT) for authentication. See the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 3. **Storage Setup** – Upload the target Excel file to Aspose Cloud storage or to a connected external storage. Note the **folder** and **storage name** (if applicable) where the file resides.
 
 ## Authentication
+
 The Aspose.Cells Cloud APIs require **JWT token‑based authentication**. Include the token in the `Authorization` header of each request:
 
 ```
@@ -32,16 +40,18 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivotta
 ```
 
 ### Path Parameters
-| Name | Type   | Required | Description |
-|------|--------|----------|-------------|
-| `name` | string | Yes | The name of the Excel file (e.g., `Sample.xlsx`). |
-| `sheetName` | string | Yes | The name of the worksheet from which all pivot tables will be removed (e.g., `Sheet1`). |
+
+| Name        | Type   | Required | Description                                                                             |
+| ----------- | ------ | -------- | --------------------------------------------------------------------------------------- |
+| `name`      | string | Yes      | The name of the Excel file (e.g., `Sample.xlsx`).                                       |
+| `sheetName` | string | Yes      | The name of the worksheet from which all pivot tables will be removed (e.g., `Sheet1`). |
 
 ### Query Parameters
-| Name | Type   | Required | Description |
-|------|--------|----------|-------------|
-| `folder` | string | No | The folder that contains the file. |
-| `storageName` | string | No | The storage name to use (if the file is not in the default storage). |
+
+| Name          | Type   | Required | Description                                                          |
+| ------------- | ------ | -------- | -------------------------------------------------------------------- |
+| `folder`      | string | No       | The folder that contains the file.                                   |
+| `storageName` | string | No       | The storage name to use (if the file is not in the default storage). |
 
 ## Request Example (cURL)
 
@@ -54,6 +64,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 ```
 
 ## Successful Response
+
 The service returns a standard `CellsCloudResponse` object indicating the operation status.
 
 ```json
@@ -65,12 +76,12 @@ The service returns a standard `CellsCloudResponse` object indicating the operat
 
 ## Error Handling
 
-| HTTP Status | Meaning | Example Payload |
-|-------------|---------|-----------------|
-| **400** | Bad Request – missing or invalid parameters | `{ "Code": 400, "Message": "Missing required parameter 'name'." }` |
-| **401** | Unauthorized – invalid or expired JWT | `{ "Code": 401, "Message": "Invalid authentication token." }` |
-| **404** | Not Found – file or worksheet does not exist | `{ "Code": 404, "Message": "Worksheet not found." }` |
-| **500** | Internal Server Error – unexpected failure | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+| HTTP Status | Meaning                                      | Example Payload                                                    |
+| ----------- | -------------------------------------------- | ------------------------------------------------------------------ |
+| **400**     | Bad Request – missing or invalid parameters  | `{ "Code": 400, "Message": "Missing required parameter 'name'." }` |
+| **401**     | Unauthorized – invalid or expired JWT        | `{ "Code": 401, "Message": "Invalid authentication token." }`      |
+| **404**     | Not Found – file or worksheet does not exist | `{ "Code": 404, "Message": "Worksheet not found." }`               |
+| **500**     | Internal Server Error – unexpected failure   | `{ "Code": 500, "Message": "An unexpected error occurred." }`      |
 
 ## SDK Examples
 
@@ -154,36 +165,38 @@ except ApiException as e:
 ### Node.js
 
 ```javascript
-const { CellsApi, Configuration } = require('asposecellscloud-sdk');
+const { CellsApi, Configuration } = require("asposecellscloud-sdk");
 
 const config = new Configuration({
-    clientId: '<client-id>',
-    clientSecret: '<client-secret>'
+  clientId: "<client-id>",
+  clientSecret: "<client-secret>",
 });
 const apiInstance = new CellsApi(config);
 
-const name = 'Sample_Pivot_Table_Example.xls';
-const sheetName = 'Sheet2';
-const folder = 'SampleFolder';
-const storageName = 'MyStorage';
+const name = "Sample_Pivot_Table_Example.xls";
+const sheetName = "Sheet2";
+const folder = "SampleFolder";
+const storageName = "MyStorage";
 
-apiInstance.deleteWorksheetPivotTables(name, sheetName, folder, storageName)
-    .then(result => {
-        console.log(`Code: ${result.code}, Status: ${result.status}`);
-    })
-    .catch(err => {
-        console.error('Error:', err);
-    });
+apiInstance
+  .deleteWorksheetPivotTables(name, sheetName, folder, storageName)
+  .then((result) => {
+    console.log(`Code: ${result.code}, Status: ${result.status}`);
+  })
+  .catch((err) => {
+    console.error("Error:", err);
+  });
 ```
 
-*Additional SDKs (Go, PHP, Ruby, Swift, Perl, Android) are available in the [Aspose.Cells Cloud SDK repository](https://github.com/aspose-cells-cloud).*
+_Additional SDKs (Go, PHP, Ruby, Swift, Perl, Android) are available in the [Aspose.Cells Cloud SDK repository](https://github.com/aspose-cells-cloud)._
 
 ## See Also
+
 - [Delete a Specific Pivot Table](https://docs.aspose.cloud/cells/pivot-tables/delete-specific/)
 - [Get All Pivot Tables in a Worksheet](https://docs.aspose.cloud/cells/pivot-tables/get-all/)
 - [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
 - [OpenAPI Specification for DeleteWorksheetPivotTables](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTables)
 
---- 
+---
 
-*Document last updated on 2026-07-30. All content is UTF‑8 encoded.*
+_Document last updated on 2026-07-30. All content is UTF‑8 encoded._

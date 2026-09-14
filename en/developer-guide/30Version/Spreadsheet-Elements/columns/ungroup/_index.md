@@ -1,29 +1,39 @@
----  
-title: Ungroup Columns in Excel – Aspose.Cells Cloud API  
-description: Remove column grouping in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, cURL example, response format, and SDK snippets.  
-keywords: Aspose.Cells, ungroup, columns, Excel, API, REST, cloud, SDK  
-slug: columns/ungroup  
-date: 2026-07-30  
----  
+---
+title: Ungroup Columns in Excel – Aspose.Cells Cloud API
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Ungroup"
+type: docs
+url: /columns/ungroup/
+aliases:
+  [
+    /ungroup-columns-in-an-excel-worksheet/,
+    /ungroup-columns-in-excel-worksheet/,
+  ]
+description: Remove column grouping in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, cURL example, response format, and SDK snippets.
+keywords: Aspose.Cells, ungroup, columns, Excel, API, REST, cloud, SDK
+slug: columns/ungroup
+date: 2026-07-30
+weight: 70
+---
 
-# Ungroup Columns in Excel  
+# Ungroup Columns in Excel
 
 Aspose.Cells Cloud provides a **POST** operation that removes column grouping from a specified worksheet. This page details the request format, required parameters, authentication method, example calls, and SDK usage.
 
----  
+---
 
-## Prerequisites  
+## Prerequisites
 
-| Requirement | Why It’s Needed |
-|------------|-----------------|
-| **Aspose Cloud account** | Access to the Aspose.Cells Cloud services. |
-| **JWT access token** | All API calls must be authorized with a bearer token. See the [JWT authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). |
-| **Workbook stored in Aspose Cloud Storage** | The API works on files located in the cloud storage (or a connected external storage). |
-| **Worksheet name** | The target worksheet must exist in the workbook. |
+| Requirement                                 | Why It’s Needed                                                                                                                                                                           |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Aspose Cloud account**                    | Access to the Aspose.Cells Cloud services.                                                                                                                                                |
+| **JWT access token**                        | All API calls must be authorized with a bearer token. See the [JWT authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). |
+| **Workbook stored in Aspose Cloud Storage** | The API works on files located in the cloud storage (or a connected external storage).                                                                                                    |
+| **Worksheet name**                          | The target worksheet must exist in the workbook.                                                                                                                                          |
 
----  
+---
 
-## Authentication  
+## Authentication
 
 All requests require an **Authorization** header containing a valid JWT token:
 
@@ -33,40 +43,40 @@ Authorization: Bearer <access_token>
 
 The token is obtained via the Aspose Cloud OAuth flow. Tokens are valid for a limited period; refresh as needed.
 
----  
+---
 
-## Endpoint  
+## Endpoint
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/ungroup
 ```
 
-* `{name}` – **Path** – Workbook file name (e.g., `test.xlsx`).  
-* `{sheetName}` – **Path** – Worksheet name (e.g., `Sheet1`).  
+- `{name}` – **Path** – Workbook file name (e.g., `test.xlsx`).
+- `{sheetName}` – **Path** – Worksheet name (e.g., `Sheet1`).
 
----  
+---
 
-## Parameters  
+## Parameters
 
-### Path Parameters  
+### Path Parameters
 
-| Name | Type | Required | Description |
-|------|------|----------|-------------|
-| `name` | string | Yes | The workbook file name. |
-| `sheetName` | string | Yes | The worksheet name. |
+| Name        | Type   | Required | Description             |
+| ----------- | ------ | -------- | ----------------------- |
+| `name`      | string | Yes      | The workbook file name. |
+| `sheetName` | string | Yes      | The worksheet name.     |
 
-### Query Parameters  
+### Query Parameters
 
-| Name | Type | Required | Description |
-|------|------|----------|-------------|
-| `firstIndex` | integer | Yes | Zero‑based index of the first column to ungroup. |
-| `lastIndex` | integer | Yes | Zero‑based index of the last column to ungroup. |
-| `folder` | string | No | Folder path that contains the workbook. |
-| `storageName` | string | No | Name of the storage service where the file resides. |
+| Name          | Type    | Required | Description                                         |
+| ------------- | ------- | -------- | --------------------------------------------------- |
+| `firstIndex`  | integer | Yes      | Zero‑based index of the first column to ungroup.    |
+| `lastIndex`   | integer | Yes      | Zero‑based index of the last column to ungroup.     |
+| `folder`      | string  | No       | Folder path that contains the workbook.             |
+| `storageName` | string  | No       | Name of the storage service where the file resides. |
 
----  
+---
 
-## Request Example (cURL)  
+## Request Example (cURL)
 
 ```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/ungroup?firstIndex=1&lastIndex=5" \
@@ -74,11 +84,11 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
      -H "Accept: application/json"
 ```
 
-*Replace `<access_token>` with a valid JWT token.*
+_Replace `<access_token>` with a valid JWT token._
 
----  
+---
 
-## Successful Response  
+## Successful Response
 
 ```json
 {
@@ -93,34 +103,35 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 
 The response object (`CellsCloudResponse`) contains the range of columns that were successfully ungrouped.
 
-### Error Response  
+### Error Response
 
 When the request fails, the service returns a JSON payload with the following fields:
 
-| Field | Meaning |
-|-------|---------|
-| `Code` | HTTP‑style error code (e.g., 400, 401). |
-| `Status` | Short description of the error. |
-| `ErrorMessage` | Detailed error description. |
+| Field          | Meaning                                 |
+| -------------- | --------------------------------------- |
+| `Code`         | HTTP‑style error code (e.g., 400, 401). |
+| `Status`       | Short description of the error.         |
+| `ErrorMessage` | Detailed error description.             |
 
----  
+---
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
----  
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
-## SDK Code Samples  
+---
+
+## SDK Code Samples
 
 Below are ready‑to‑run snippets for the most popular SDKs. Replace placeholder values (`<YourAccessToken>`, `<YourFileName>`, etc.) with your own data.
 
-<details><summary>**C# (.NET)**</summary>  
+<details><summary>**C# (.NET)**</summary>
 
 ```csharp
 using Aspose.Cells.Cloud.SDK.Api;
@@ -150,9 +161,10 @@ class Program
     }
 }
 ```
+
 </details>
 
-<details><summary>**Java**</summary>  
+<details><summary>**Java**</summary>
 
 ```java
 import com.aspose.cells.cloud.api.CellsApi;
@@ -179,9 +191,10 @@ public class UngroupColumns {
     }
 }
 ```
+
 </details>
 
-<details><summary>**Python**</summary>  
+<details><summary>**Python**</summary>
 
 ```python
 from asposecellscloud import CellsApi, Configuration
@@ -202,29 +215,34 @@ response = api.post_ungroup_worksheet_columns(
 
 print(f"Ungrouped columns: {response.columns.first_index} – {response.columns.last_index}")
 ```
+
 </details>
 
-<details><summary>**Node.js**</summary>  
+<details><summary>**Node.js**</summary>
 
 ```javascript
-const { CellsApi, Configuration } = require('asposecellscloud');
+const { CellsApi, Configuration } = require("asposecellscloud");
 
 const config = new Configuration({
-    accessToken: "<YourAccessToken>",
-    baseUrl: "https://api.aspose.cloud"
+  accessToken: "<YourAccessToken>",
+  baseUrl: "https://api.aspose.cloud",
 });
 
 const api = new CellsApi(config);
 
-api.postUngroupWorksheetColumns("test.xlsx", "Sheet1", 1, 5, null, null)
-   .then(resp => {
-       console.log(`Ungrouped columns: ${resp.columns.firstIndex} – ${resp.columns.lastIndex}`);
-   })
-   .catch(err => console.error(err));
+api
+  .postUngroupWorksheetColumns("test.xlsx", "Sheet1", 1, 5, null, null)
+  .then((resp) => {
+    console.log(
+      `Ungrouped columns: ${resp.columns.firstIndex} – ${resp.columns.lastIndex}`,
+    );
+  })
+  .catch((err) => console.error(err));
 ```
+
 </details>
 
-<details><summary>**Go**</summary>  
+<details><summary>**Go**</summary>
 
 ```go
 package main
@@ -255,25 +273,26 @@ func main() {
     fmt.Printf("Ungrouped columns: %d – %d\n", resp.Columns.FirstIndex, resp.Columns.LastIndex)
 }
 ```
+
 </details>
 
 > **Note:** SDKs for PHP, Ruby, Perl, and other languages follow the same parameter order. Refer to the [GitHub repository](https://github.com/aspose-cells-cloud) for complete examples.
 
----  
+---
 
-## References  
+## References
 
-* **OpenAPI Specification:** <https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetColumns>  
-* **Authentication guide:** <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>  
-* **SDK repository:** <https://github.com/aspose-cells-cloud>
+- **OpenAPI Specification:** <https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetColumns>
+- **Authentication guide:** <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>
+- **SDK repository:** <https://github.com/aspose-cells-cloud>
 
----  
+---
 
-## Revision History  
+## Revision History
 
-| Date | Author | Change |
-|------|--------|--------|
+| Date       | Author       | Change                                                                                                                   |
+| ---------- | ------------ | ------------------------------------------------------------------------------------------------------------------------ |
 | 2026‑07‑30 | AI Optimizer | Fixed UTF‑8 encoding, added Prerequisites, cleaned meta keywords, improved heading hierarchy, and inserted SDK snippets. |
-| 2026‑07‑29 | Original | Initial documentation draft. |
+| 2026‑07‑29 | Original     | Initial documentation draft.                                                                                             |
 
----  
+---

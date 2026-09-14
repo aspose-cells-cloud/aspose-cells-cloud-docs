@@ -1,5 +1,10 @@
 ---
 title: Delete Vertical Page Break – Aspose.Cells Cloud REST API
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Delete vertical page break"
+type: docs
+url: /page-breaks/delete-vertical-page-break/
+aliases: [/delete-vertical-page-break-inside-worksheet/]
 description: Remove a vertical page break from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, parameters, examples, response codes, and SDK snippets.
 keywords: delete vertical page break, Aspose.Cells Cloud, REST API
 slug: delete-vertical-page-break
@@ -14,8 +19,8 @@ Delete a vertical page break from a worksheet in an Excel workbook using the Asp
 
 ## Prerequisites
 
-* A **JWT authentication token** must be supplied in the `Authorization` header.  
-* The workbook (`{name}`) must be stored in the specified **folder** or **storage** and be accessible to the API client.
+- A **JWT authentication token** must be supplied in the `Authorization` header.
+- The workbook (`{name}`) must be stored in the specified **folder** or **storage** and be accessible to the API client.
 
 ---
 
@@ -25,13 +30,13 @@ Delete a vertical page break from a worksheet in an Excel workbook using the Asp
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index}
 ```
 
-| Parameter | Type   | Location | Required | Description |
-|-----------|--------|----------|----------|-------------|
-| **name**      | string | path   | Yes | The name of the Excel file. |
-| **sheetName** | string | path   | Yes | The name of the worksheet that contains the page break. |
-| **index**     | integer| path   | Yes | Zero‑based index of the vertical page break to delete. |
-| **folder**    | string | query  | No  | Folder path where the file is stored. |
-| **storageName**| string| query  | No  | Name of the storage service. |
+| Parameter       | Type    | Location | Required | Description                                             |
+| --------------- | ------- | -------- | -------- | ------------------------------------------------------- |
+| **name**        | string  | path     | Yes      | The name of the Excel file.                             |
+| **sheetName**   | string  | path     | Yes      | The name of the worksheet that contains the page break. |
+| **index**       | integer | path     | Yes      | Zero‑based index of the vertical page break to delete.  |
+| **folder**      | string  | query    | No       | Folder path where the file is stored.                   |
+| **storageName** | string  | query    | No       | Name of the storage service.                            |
 
 ---
 
@@ -49,8 +54,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/vertic
 
 ## Success Response
 
-| Code | Description |
-|------|-------------|
+| Code    | Description                                       |
+| ------- | ------------------------------------------------- |
 | **200** | The vertical page break was deleted successfully. |
 
 **Example payload**
@@ -66,16 +71,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/vertic
 
 ## Error Responses
 
-| HTTP Code | Description |
-|-----------|-------------|
-| **401** | Unauthorized – missing or invalid token. |
-| **404** | Not Found – the specified file, worksheet, or page‑break index does not exist. |
-| **400** | Bad Request – malformed request syntax or invalid parameters. |
-| **500** | Internal Server Error – an unexpected condition was encountered. |
+| HTTP Code | Description                                                                    |
+| --------- | ------------------------------------------------------------------------------ |
+| **401**   | Unauthorized – missing or invalid token.                                       |
+| **404**   | Not Found – the specified file, worksheet, or page‑break index does not exist. |
+| **400**   | Bad Request – malformed request syntax or invalid parameters.                  |
+| **500**   | Internal Server Error – an unexpected condition was encountered.               |
 
 **Sample error payloads**
 
-*401 – Unauthorized*
+_401 – Unauthorized_
 
 ```json
 {
@@ -84,7 +89,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/vertic
 }
 ```
 
-*404 – Not Found*
+_404 – Not Found_
 
 ```json
 {
@@ -93,7 +98,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/vertic
 }
 ```
 
-*400 – Bad Request*
+_400 – Bad Request_
 
 ```json
 {
@@ -102,7 +107,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/vertic
 }
 ```
 
-*500 – Internal Server Error*
+_500 – Internal Server Error_
 
 ```json
 {
@@ -200,7 +205,7 @@ except Exception as e:
 <details><summary>**Node.js**</summary>
 
 ```javascript
-const { CellsApi, ApiClient, Configuration } = require('asposecellscloud');
+const { CellsApi, ApiClient, Configuration } = require("asposecellscloud");
 
 const config = new Configuration();
 config.clientId = "client_id";
@@ -214,9 +219,10 @@ const index = 0;
 const folder = "Docs";
 const storageName = "MyStorage";
 
-api.deleteVerticalPageBreak(name, sheetName, index, folder, storageName)
-  .then(response => console.log('Status:', response.status))
-  .catch(error => console.error('Error:', error));
+api
+  .deleteVerticalPageBreak(name, sheetName, index, folder, storageName)
+  .then((response) => console.log("Status:", response.status))
+  .catch((error) => console.error("Error:", error));
 ```
 
 </details>
@@ -254,16 +260,16 @@ func main() {
 
 </details>
 
-*(SDK snippets for PHP, Ruby, Perl, and other languages follow the same pattern and are available in the official GitHub repository.)*
+_(SDK snippets for PHP, Ruby, Perl, and other languages follow the same pattern and are available in the official GitHub repository.)_
 
 ---
 
 ## Related Resources
 
-* **OpenAPI Specification** – [DeleteVerticalPageBreak](https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteVerticalPageBreak)  
-* **Aspose.Cells Cloud SDKs** – <https://github.com/aspose-cells-cloud>  
-* **Authentication Guide** – <https://docs.aspose.cloud/cells/authentication/>  
+- **OpenAPI Specification** – [DeleteVerticalPageBreak](https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteVerticalPageBreak)
+- **Aspose.Cells Cloud SDKs** – <https://github.com/aspose-cells-cloud>
+- **Authentication Guide** – <https://docs.aspose.cloud/cells/authentication/>
 
---- 
+---
 
-*Document last updated: 2026‑07‑30*
+_Document last updated: 2026‑07‑30_
