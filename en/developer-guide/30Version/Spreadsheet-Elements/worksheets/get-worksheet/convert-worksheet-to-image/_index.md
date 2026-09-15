@@ -1,125 +1,358 @@
 ---
-title: "Convert Worksheet to PDF, PNG, CSV & More – Aspose.Cells Cloud API"
-second_title: "Document"
-linktitle: "Convert worksheet"
+title: "Convert Worksheet to PDF, PNG, JPEG, SVG, TIFF & More – Aspose.Cells Cloud API"
+description: "Convert Excel worksheets to PDF, PNG, JPEG, SVG, TIFF, BMP, EMF, or other formats using the Aspose.Cells Cloud REST API. Includes cURL, SDK examples (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl), parameter reference, and best practices."
+keywords: "worksheet conversion, Excel to image, Aspose.Cells Cloud API, convert worksheet to PNG, Excel to PDF, REST API export, SDK examples"
+date: 2024-06-15
 type: docs
-url: /worksheets/conversion/
+url: /cells/convert-worksheet/
 aliases:
-  - /convert-worksheet-to-image/
-  - /worksheets/to-image/
-keywords: "Aspose.Cells, worksheet conversion, REST API, cURL, SDK, PDF, PNG, CSV"
-description: "Learn how to convert a single worksheet from an Excel workbook to PDF, PNG, CSV, and more than 15 other formats using the Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, and a full parameter reference."
+  - /cells/convert-worksheet-to-image/
+  - /worksheets/conversion/
 weight: 130
-ArticleTitle: "Convert Worksheet to PDF, PNG, CSV & More – Aspose.Cells Cloud API"
 ---
 
-**Worksheet conversion API** – The `GET /cells/{name}/worksheets/{sheetName}` endpoint converts a single worksheet (a sheet inside an Excel workbook) to another file type.
+## Overview
 
-> **Prerequisite:** You must have a valid JWT token and the workbook stored in a supported Aspose Cloud storage location before invoking this endpoint.
+Aspose.Cells Cloud’s `GetWorksheetWithFormat` API enables you to convert a single worksheet from an Excel workbook (XLS, XLSX, XLSB, CSV, etc.) into over 15 output formats — including high-fidelity images (PNG, JPEG, SVG, TIFF, BMP, EMF), PDF, and document formats (CSV, TXT, XPS, OTS, NUMBERS, FODS).
 
-Supported **importable** formats (the worksheet can be read from):
+This API is ideal for:
+- Generating report snapshots (e.g., dashboards → PNG for web embedding)
+- Archiving specific sheets as PDF for compliance
+- Converting financial data to CSV for downstream processing
+- Exporting charts or tables as scalable vector graphics (SVG) for responsive UIs
 
-- XLS, XLSX, XLSB, CSV, TSV, XLSM, ODS, TXT
+> **Prerequisites**  
+> - An active [Aspose.Cells Cloud account](https://purchase.aspose.cloud/trial)  
+> - Valid `Client ID` and `Client Secret` (see [Getting Started](https://docs.aspose.cloud/total/getting-started/))  
+> - Workbook uploaded to Aspose Cloud storage (e.g., `Default` storage)  
+> - JWT access token for authentication (see [Authenticating Requests](https://docs.aspose.cloud/total/quick-start/authenticating-requests/))
 
-Supported **export‑only** formats (the worksheet can be saved as):
+---
 
-- PDF, OTS, XPS, DIF, PNG, JPEG, BMP, SVG, TIFF, EMF, NUMBERS, FODS
+## Supported Formats
 
-## REST API
+| Category       | Formats                                                                 |
+|----------------|-------------------------------------------------------------------------|
+| **Input (Read)** | XLS, XLSX, XLSB, CSV, TSV, XLSM, ODS, TXT                              |
+| **Output (Write)** | PDF, OTS, XPS, DIF, PNG, JPEG, BMP, SVG, TIFF, EMF, NUMBERS, FODS, CSV, TXT |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) describes the publicly accessible interface.
+> 💡 **Note**:  
+> - For image formats (PNG, JPEG, SVG, etc.), resolution can be controlled via `verticalResolution`/`horizontalResolution`.  
+> - SVG is an *image* format (vector), **not** a page description language.
 
-### **Request parameters**
+---
 
-| Parameter                | Type    | Required | Default | Allowed Values                                                        | Description                                       |
-| ------------------------ | ------- | -------- | ------- | --------------------------------------------------------------------- | ------------------------------------------------- |
-| **format**               | string  | Yes      | –       | pdf, png, jpeg, bmp, svg, tiff, emf, csv, txt, … (see supported list) | Target output format.                             |
-| **verticalResolution**   | integer | No       | 96      | 72‑600                                                                | Vertical DPI for image output.                    |
-| **horizontalResolution** | integer | No       | 96      | 72‑600                                                                | Horizontal DPI for image output.                  |
-| **password**             | string  | No       | –       | –                                                                     | Password for opening a protected workbook.        |
-| **folder**               | string  | No       | –       | –                                                                     | Cloud folder where the source workbook is stored. |
-| **storage**              | string  | No       | –       | –                                                                     | Name of the storage (e.g., “Default”).            |
+## REST API Endpoint
+
+### Request
+
+`GET /cells/{name}/worksheets/{sheetName}`
+
+#### Path Parameters
+
+| Parameter | Type   | Required | Description               |
+|-----------|--------|----------|---------------------------|
+| `name`    | string | Yes      | The Excel workbook filename (e.g., `report.xlsx`). |
+| `sheetName` | string | Yes    | The worksheet name (e.g., `Sheet1`). |
+
+#### Query Parameters
+
+| Parameter                | Type    | Required | Default | Allowed Values              | Description                                                                 |
+|--------------------------|---------|----------|---------|-----------------------------|-----------------------------------------------------------------------------|
+| `format`                 | string  | No       | —       | pdf, png, jpeg, bmp, svg, tiff, emf, csv, txt, numbers, fods, ots, xps, dif | Target output format.                                                       |
+| `verticalResolution`     | integer | No       | 0 (auto) | 72–600                      | Vertical DPI for image output. Set to `0` for default Excel rendering.     |
+| `horizontalResolution`   | integer | No       | 0 (auto) | 72–600                      | Horizontal DPI for image output. Set to `0` for default Excel rendering.   |
+| `area`                   | string  | No       | —       | e.g., `"A1:D10"`            | Cell range to convert (e.g., `"B2:E20"`).                                  |
+| `pageIndex`              | integer | No       | 0       | ≥0                          | Page index for multi-page output (e.g., PDF).                              |
+| `onePagePerSheet`        | boolean | No       | false   | `true`/`false`              | If `true`, renders each sheet on one page (PDF only).                      |
+| `printHeadings`          | boolean | No       | false   | `true`/`false`              | Include row/column headings in output.                                     |
+| `folder`                 | string  | No       | —       | —                           | Cloud folder containing the workbook (e.g., `/Reports/Q2`).               |
+| `storageName`            | string  | No       | `"Default"` | —                         | Storage name (e.g., `"MyCloudStorage"`).                                   |
+
+> ⚠️ **Important**:  
+> - For image formats, set `verticalResolution` and `horizontalResolution` to ≥96 for high-quality output.  
+> - Omitting `format` defaults to the workbook’s original format (e.g., XLSX).  
+> - `pageIndex` and `onePagePerSheet` only apply to page-based formats (PDF, XPS, TIFF).
+
+---
+
+### Example Request (cURL)
+
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=150&horizontalResolution=150" \
+  -X GET \
+  -H "Authorization: Bearer <your_jwt_token>" \
+  -H "Accept: application/octet-stream" \
+  -o "converted_sheet.png"
+```
+
+> ✅ **Tip**: Use `-H "Accept: application/octet-stream"` to ensure the binary image is saved directly.
+
+---
 
 ### Response
 
-| Status Code | Description                                                            | Return Type                |
-| ----------- | ---------------------------------------------------------------------- | -------------------------- |
-| **200**     | Conversion succeeded; binary stream of the converted file is returned. | `application/octet-stream` |
-| **400**     | Bad request – missing or invalid parameters.                           | JSON error object          |
-| **401**     | Unauthorized – invalid or missing JWT token.                           | JSON error object          |
-| **404**     | Not found – workbook or worksheet does not exist.                      | JSON error object          |
-| **500**     | Internal server error – unexpected failure.                            | JSON error object          |
+| Status Code | Description                                      | Return Type                |
+|-------------|--------------------------------------------------|----------------------------|
+| **200**     | Conversion succeeded; binary output returned.    | `application/octet-stream` |
+| **400**     | Invalid parameters (e.g., unsupported format).   | JSON error object          |
+| **401**     | Missing/invalid JWT token.                       | JSON error object          |
+| **404**     | Workbook or worksheet not found.                 | JSON error object          |
+| **500**     | Server-side processing failure.                  | JSON error object          |
 
-#### Example Request (cURL)
-
-```bash
-curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
-  -X GET \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
+#### Sample Response (HTTP 200)
+```
+[Binary PNG stream — save to file as `converted_sheet.png`]
 ```
 
-#### Example Response
+---
 
-```
-Converted Image (binary stream)
-```
+## SDK Examples
 
-## Cloud SDK Family
-
-Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
-The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+Aspose.Cells Cloud provides SDKs for 8+ languages. All SDKs handle authentication, serialization, and error handling automatically.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleGetWorksheetWithFormat.cs" >}}
-
+```csharp
+// Install-Package Aspose.Cells.Cloud.Sdk -Version 23.5.0
+var config = new Configuration { ClientId = "YOUR_CLIENT_ID", ClientSecret = "YOUR_CLIENT_SECRET" };
+var cellsApi = new CellsApi(config);
+var result = cellsApi.GetWorksheetWithFormat(
+    name: "myWorkbook.xlsx",
+    sheetName: "Sheet1",
+    format: "png",
+    verticalResolution: 150,
+    horizontalResolution: 150,
+    folder: "input",
+    storage: "Default"
+);
+File.WriteAllBytes("output.png", result);
+```
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_GetWorksheetWithFormat.java" >}}
+```java
+// Add dependency: com.aspose:aspose-cells-cloud:23.5.0
+Configuration config = new Configuration();
+config.setClientId("YOUR_CLIENT_ID");
+config.setClientSecret("YOUR_CLIENT_SECRET");
+CellsApi cellsApi = new CellsApi(config);
 
+File result = cellsApi.getWorksheetWithFormat(
+    "myWorkbook.xlsx", 
+    "Sheet1", 
+    "png", 
+    150, 
+    150, 
+    null, 
+    null, 
+    null, 
+    null, 
+    "input", 
+    "Default"
+);
+System.out.println("Saved to: " + result.getAbsolutePath());
+```
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_GetWorksheetWithFormat.php" >}}
+```php
+// composer require aspose-cells-cloud/aspose-cells-cloud-php
+$config = new Configuration();
+$config->setClientId("YOUR_CLIENT_ID")->setClientSecret("YOUR_CLIENT_SECRET");
+$cellsApi = new CellsApi($config);
 
+$result = $cellsApi->getWorksheetWithFormat(
+    "myWorkbook.xlsx",
+    "Sheet1",
+    "png",
+    150,
+    150,
+    null,
+    null,
+    null,
+    null,
+    "input",
+    "Default"
+);
+file_put_contents("output.png", $result);
+```
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetWithFormat.rb" >}}
+```ruby
+# gem 'aspose_cells_cloud'
+require 'aspose_cells_cloud'
 
+config = AsposeCellsCloud::Configuration.new
+config.client_id = "YOUR_CLIENT_ID"
+config.client_secret = "YOUR_CLIENT_SECRET"
+api = AsposeCellsCloud::CellsApi.new(config)
+
+result = api.get_worksheet_with_format(
+  name: "myWorkbook.xlsx",
+  sheet_name: "Sheet1",
+  format: "png",
+  vertical_resolution: 150,
+  horizontal_resolution: 150,
+  folder: "input",
+  storage_name: "Default"
+)
+File.write("output.png", result)
+```
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetWithFormat.ts" >}}
+```typescript
+// npm install @aspose/cells-cloud
+import { CellsApi, Configuration } from "@aspose/cells-cloud";
 
+const config = new Configuration({
+  clientId: "YOUR_CLIENT_ID",
+  clientSecret: "YOUR_CLIENT_SECRET"
+});
+const cellsApi = new CellsApi(config);
+
+const result = await cellsApi.getWorksheetWithFormat(
+  "myWorkbook.xlsx",
+  "Sheet1",
+  "png",
+  150,
+  150,
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  "input",
+  "Default"
+);
+require('fs').writeFileSync("output.png", Buffer.from(result as Uint8Array));
+```
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetWithFormat.py" >}}
+```python
+# pip install asposecellscloud
+from asposecellscloud.api import CellsApi
+from asposecellscloud.models import *
 
+config = Configuration()
+config.client_id = "YOUR_CLIENT_ID"
+config.client_secret = "YOUR_CLIENT_SECRET"
+api = CellsApi(config)
+
+result = api.get_worksheet_with_format(
+    name="myWorkbook.xlsx",
+    sheet_name="Sheet1",
+    format="png",
+    vertical_resolution=150,
+    horizontal_resolution=150,
+    folder="input",
+    storage_name="Default"
+)
+with open("output.png", "wb") as f:
+    f.write(result)
+```
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetWithFormat.pl" >}}
+```perl
+# cpan install AsposeCellsCloud
+use AsposeCellsCloud::Configuration;
+use AsposeCellsCloud::CellsApi;
 
+my $config = AsposeCellsCloud::Configuration->new(
+  client_id => "YOUR_CLIENT_ID",
+  client_secret => "YOUR_CLIENT_SECRET"
+);
+my $api = AsposeCellsCloud::CellsApi->new(config => $config);
+
+my $result = $api->get_worksheet_with_format(
+  name => "myWorkbook.xlsx",
+  sheet_name => "Sheet1",
+  format => "png",
+  vertical_resolution => 150,
+  horizontal_resolution => 150,
+  folder => "input",
+  storage_name => "Default"
+);
+open my $fh, '>', 'output.png';
+binmode $fh;
+print $fh $result;
+close $fh;
+```
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetWithFormat.go" >}}
+```go
+// go get github.com/aspose-cells-cloud/aspose-cells-cloud-go
+import (
+  "context"
+  "os"
+  "github.com/aspose-cells-cloud/aspose-cells-cloud-go"
+)
 
+config := cells.NewConfiguration()
+config.ClientId = "YOUR_CLIENT_ID"
+config.ClientSecret = "YOUR_CLIENT_SECRET"
+api := cells.NewCellsApiClient(config)
+
+opt := &cells.GetWorksheetWithFormatOptions{
+  Format:          cells.String("png"),
+  VerticalResolution: cells.Int(150),
+  HorizontalResolution: cells.Int(150),
+  Folder:          cells.String("input"),
+  StorageName:     cells.String("Default"),
+}
+
+result, _, err := api.GetWorksheetWithFormat(
+  context.Background(),
+  "myWorkbook.xlsx",
+  "Sheet1",
+  opt,
+)
+if err != nil { panic(err) }
+os.WriteFile("output.png", result, 0644)
+```
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---
+
+## Best Practices & Troubleshooting
+
+### ✅ Recommendations
+- **For high-quality images**: Use `verticalResolution=300` and `horizontalResolution=300` for print-ready outputs.
+- **Preserve formatting**: Set `printHeadings=true` to include row/column labels in PDF/image exports.
+- **Limit output range**: Use `area="A1:D50"` to avoid converting empty columns/rows.
+- **Error handling**: Always validate JWT tokens and storage paths before conversion.
+
+### ⚠️ Common Issues
+| Issue | Solution |
+|-------|----------|
+| **400: Invalid format** | Check `format` against [supported values](#supported-formats). |
+| **404: Worksheet not found** | Verify `sheetName` matches exactly (case-sensitive). |
+| **401: Unauthorized** | Regenerate JWT token; ensure scopes include `write:storage` and `read:document`. |
+| **Distorted output** | Set explicit `verticalResolution`/`horizontalResolution`; avoid `0` for images. |
+
+---
+
+## Related Resources
+
+- [Convert Entire Workbook to PDF](/cells/convert-workbook-to-pdf/)  
+- [Export Chart to Image](/cells/export-chart/)  
+- [Aspose.Cells Cloud SDK Documentation](https://github.com/aspose-cells-cloud)  
+- [Free Online Worksheet Converter](https://products.aspose.cloud/cells/conversion/)  
+
+> 💬 **Need help?**  
+> Contact support at [support@aspose.cloud](mailto:support@aspose.cloud) or post in our [community forum](https://forum.aspose.cloud/).

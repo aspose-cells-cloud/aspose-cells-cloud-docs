@@ -1,142 +1,166 @@
 ---
-title: "Aspose.Cells Cloud Excel Unprotect Web API – Programmatically Remove Open & Modify Passwords"
-second_title: "Document"
-ArticleTitle: "Remove Excel Password Protection – Unlock Open & Modify Passwords Instantly"
-linktitle: "Unprotect Spreadsheet"
-type: docs
-url: /unprotect-spreadsheet/
-keywords: "unprotect, spreadsheet, Aspose.Cells, API, Excel, password removal"
-description: "Remove open and modify passwords from Excel files programmatically with the Aspose.Cells Cloud Unprotect Spreadsheet API. Supports .xlsx/.xls, OAuth2 authentication, and batch processing."
+title: "Aspose.Cells Cloud Unprotect Spreadsheet API"
+description: "Programmatically remove open and modify passwords from Excel files (.xlsx, .xls) using Aspose.Cells Cloud API. Supports OAuth2 authentication, batch processing, and secure cloud-based unprotection."
+date: 2024-03-20T00:00:00Z
+lastmod: 2024-06-15T00:00:00Z
+draft: false
+tags: ["unprotect", "excel", "password", "security", "rest-api", "oauth2", "batch-processing"]
+categories: ["aspose.cells.cloud", "api-reference"]
 weight: 100
+api_version: "4.0"
 ---
 
-The Unprotect Spreadsheet API removes open‑ and modify‑password protection from Excel files in a single call. It is ideal for data pipelines, document‑management systems, and migration workflows.
+# Aspose.Cells Cloud Unprotect Spreadsheet API
 
-## **Unprotect Spreadsheet API**
+Remove both open and modify password protection from Excel workbooks programmatically with the Aspose.Cells Cloud Unprotect Spreadsheet API. This secure, server-side operation enables automated unlocking of protected files in data pipelines, document management systems, and migration workflows—without exposing sensitive passwords client-side.
 
-### **Web API**
+## API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet
 ```
 
-### **Security and Authentication**
+> **Note**: This API is part of Aspose.Cells Cloud v4.0. Verify compatibility if migrating from earlier versions. Aspose.Cells Cloud v5.0 may introduce breaking changes—see [API Versioning Guide](https://docs.aspose.cloud/total/getting-started/overview/api-versioning/) for details.
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+---
+
+## Authentication
+
+All requests require a valid JWT access token issued via OAuth2. For implementation guidance, see [Authentication Overview](https://docs.aspose.cloud/total/security/authenticating-requests/).
 
 ```bash
 -H "Authorization: Bearer {access_token}"
 ```
 
-### **Request Parameters**
+---
 
-| Parameter Name | Type   | Location | Description                                                                          |
-| -------------- | ------ | -------- | ------------------------------------------------------------------------------------ |
-| Spreadsheet    | File   | FormData | The Excel file to be unprotected.                                                    |
-| password       | String | Query    | The password that protects the file for opening.                                     |
-| modifyPassword | String | Query    | The password required to modify the file (optional if only an open password is set). |
-| outPath        | String | Query    | (Optional) Folder path where the unprotected workbook will be saved.                 |
-| outStorageName | String | Query    | (Optional) Name of the storage where the output file will be written.                |
-| region         | String | Query    | (Optional) Spreadsheet region settings.                                              |
+## Request Parameters
 
-### **Response**
+| Parameter Name   | Type   | Location   | Required | Description |
+|------------------|--------|------------|----------|-------------|
+| `Spreadsheet`    | File   | FormData   | ✅ Yes   | The Excel file to unprotect. Supported formats: `.xlsx`, `.xls`, `.xlsm`, `.xlsb`. |
+| `password`       | String | Query      | ✅ Yes   | Password required to open the workbook. Omit only if no open password is set. |
+| `modifyPassword` | String | Query      | ✅ Yes   | Password required to modify the workbook (e.g., edit, format, insert rows). |
+| `outPath`        | String | Query      | ❌ No    | Full path (including filename) where the unprotected file will be saved (e.g., `/output/unprotected.xlsx`). Defaults to response stream if omitted. |
+| `outStorageName` | String | Query      | ❌ No    | Name of the cloud storage (e.g., `First Aspose Cloud Storage`). Required if `outPath` is specified. |
+| `region`         | String | Query      | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`). Affects date/number formatting. Default: `en-US`. |
 
-```json
-[
-  {
-    "Name": "ResponseFile",
-    "DataType": {
-      "Identifier": "File",
-      "Reference": "Stream",
-      "Name": "file"
-    }
-  }
-]
+> **Best Practice**: Always specify `outPath` and `outStorageName` for production workflows to avoid large response payloads. Store unprotected files directly in your cloud storage.
+
+---
+
+## Response
+
+On success, returns the unprotected workbook as a file stream. The response payload contains the file content in binary format.
+
+### Sample Response (Success: 200 OK)
+
+```
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+Content-Disposition: attachment; filename="unprotected.xlsx"
+[Binary Excel content]
 ```
 
-A successful response returns the unprotected file as a stream. The file can be saved to the location specified by `outPath`/`outStorageName` or retrieved directly from the response payload.
+### HTTP Status Codes
 
-**HTTP Status Codes**
+| Code | Meaning             | Description |
+|------|---------------------|-------------|
+| 200  | OK                  | Unprotection successful. File returned in response body. |
+| 400  | Bad Request         | Missing/invalid parameters (e.g., unsupported file format, malformed password). |
+| 401  | Unauthorized        | Invalid, expired, or missing JWT token. |
+| 404  | Not Found           | Source file not found in storage (if referenced). |
+| 413  | Payload Too Large   | Uploaded file exceeds 2 GB limit. |
+| 500  | Internal Server Error | Server error during processing (e.g., corrupted file, resource exhaustion). |
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+---
 
-## When should you use the Unprotect Spreadsheet API?
+## Key Features & Benefits
 
-- **Restore Access to Locked Workbooks** – Quickly remove forgotten open or modify passwords without manual intervention.
-- **Automate Bulk Unlocking** – Process large numbers of files in data‑migration or archival projects.
-- **Integrate with Existing Workflows** – Combine with storage or conversion APIs to create end‑to‑end pipelines (e.g., upload → unprotect → convert to PDF).
-- **Maintain Data Security** – The operation occurs on the server side, keeping the original files secure while the unprotected version is stored in your cloud storage.
+- **Dual-Layer Protection Removal**: Strip both open and modify passwords in a single API call.
+- **Secure Processing**: Passwords are processed server-side and never exposed in logs or responses.
+- **Batch Support**: Integrate with storage APIs to process hundreds of files via automation.
+- **Flexible Output**: Retrieve files directly or save to cloud storage for downstream use.
+- **Cross-Platform SDKs**: Pre-built wrappers for C#, Java, Python, Node.js, PHP, Ruby, Perl, and Go.
 
-## How to use the Unprotect Spreadsheet API with SDKs
+---
 
-### OpenAPI Specification
+## Usage Examples
 
-The [UnProtect Spreadsheet API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet) provides a publicly accessible programming interface to facilitate direct REST interactions from a web browser.
-
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+### cURL Command
 
 ```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet?password=OldPass&modifyPassword=ModPass" \
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet?password=OldPass&modifyPassword=ModPass&outPath=/output/unprotected.xlsx&outStorageName=First Aspose Cloud Storage" \
      -H "Authorization: Bearer {access_token}" \
      -F "Spreadsheet=@myfile.xlsx"
 ```
 
-{{< /tab >}}
+> **Tip**: Replace `{access_token}` with your JWT token. Ensure `myfile.xlsx` contains both passwords set.
 
-{{< tab tabNum="12" >}}
+### Aspose.Cells Cloud SDK (C#)
 
-```
+```csharp
+using Aspose.Cells.Cloud.Sdk;
+
+var configuration = new Configuration
 {
-  "type": "FileContentResult",
-  "fileContents": "byte[] (Base64 encoded)",
-  "contentType": "MIME type",
-  "fileDownloadName": "optional file name"
-}
+    AppSid = "your_app_sid",
+    AppKey = "your_app_key"
+};
+
+var cellsApi = new CellsApi(configuration);
+
+// Upload file to cloud storage first (if needed)
+var fileStream = File.OpenRead("protected.xlsx");
+cellsApi.UploadFile("protected.xlsx", fileStream);
+
+// Unprotect and save
+var response = cellsApi.CellsUnprotectSpreadsheet(
+    name: "protected.xlsx",
+    password: "OldPass",
+    modifyPassword: "ModPass",
+    outPath: "/output/unprotected.xlsx",
+    storage: "First Aspose Cloud Storage"
+);
+
+Console.WriteLine($"Unprotected file saved to: {response.Path}");
 ```
 
-{{< /tab >}}
+> **SDK Support**: See [Aspose.Cells Cloud SDKs](https://github.com/aspose-cells-cloud) for language-specific implementations. All SDKs handle JWT token management and request/response serialization.
 
-{{< /tabs >}}
+---
 
-### Use Aspose.Cells Cloud SDKs
+## Error Handling
 
-Using an SDK simplifies the call by handling authentication, request construction, and response parsing. The SDKs are available for many languages and include ready‑made methods for unprotecting spreadsheets.
+### Common Scenarios & Fixes
 
-The following code examples illustrate how to call the Unprotect Spreadsheet API using various SDKs:
+| Error | Cause | Resolution |
+|-------|-------|------------|
+| `400 Bad Request` | Missing `password` or `modifyPassword` | Provide both passwords—even if one is empty, pass an empty string `""`. |
+| `400 Bad Request` | Unsupported file format | Ensure input is `.xlsx`, `.xls`, `.xlsm`, or `.xlsb`. |
+| `404 Not Found` | Source file missing | Verify `name` matches an existing file in storage. |
+| `413 Payload Too Large` | File > 2 GB | Split large files or use chunked upload + storage APIs first. |
+| `500 Server Error` | Corrupted file | Validate file integrity before upload. |
 
-{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_UnprotectSpreadsheet.cs" >}}
-{{</tab>}}
-{{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_UnprotectSpreadsheet.java" >}}
-{{</tab>}}
-{{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_UnprotectSpreadsheet.php" >}}
-{{</tab>}}
-{{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_UnprotectSpreadsheet.rb" >}}
-{{</tab>}}
-{{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_UnprotectSpreadsheet.ts" >}}
-{{</tab>}}
-{{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_UnprotectSpreadsheet.py" >}}
-{{</tab>}}
-{{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_UnprotectSpreadsheet.pl" >}}
-{{</tab>}}
-{{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_UnprotectSpreadsheet.go" >}}
-{{</tab>}}
-{{< /tabs >}}
+---
+
+## Best Practices
+
+1. **Store Passwords Securely**: Never hardcode passwords in client code. Use environment variables or secret managers (e.g., HashiCorp Vault).
+2. **Use Output Paths**: For production, specify `outPath` and `outStorageName` to avoid large base64-encoded responses.
+3. **Validate Files**: Check file integrity and format *before* calling the API to reduce unnecessary server load.
+4. **Handle Region Settings**: Specify `region` explicitly for workbooks with locale-sensitive data (e.g., dates, currencies).
+5. **Audit Access**: Log unprotection events for compliance—especially in regulated industries.
+
+---
+
+## Related Resources
+
+- [Convert Excel to PDF](https://docs.aspose.cloud/cells/convert-excel-to-pdf/)
+- [Cloud Storage API](https://docs.aspose.cloud/cells/storage/)
+- [Batch Processing Guide](https://docs.aspose.cloud/cells/batch-processing/)
+- [Aspose.Cells Cloud SDKs](https://github.com/aspose-cells-cloud)
+- [OpenAPI Specification (v4.0)](https://reference.aspose.cloud/cells/v4.0/cells.openapi.json)
+
+---
+
+*Last updated: 2024-06-15*

@@ -1,16 +1,17 @@
 ---
-title: "Aspose.Cells Cloud Web API – Set / Modify Open Password for Excel Files"
+title: "Protect Excel Workbooks with Passwords"
 second_title: "Comprehensive Developer Guide"
 ArticleTitle: "Spreadsheet Protection – Set Open Password and Modify Password"
 linktitle: "Protection"
+date: 2024-03-15
 type: docs
 url: /protection/
-keywords: "Aspose.Cells, Cloud, API, Spreadsheet, Protection, Open Password, Read‑Write Password, Excel"
-description: "Learn how to protect an Excel workbook with an open or read‑write password using Aspose.Cells Cloud REST API. Includes request syntax, code samples, and error handling."
+keywords: "Aspose.Cells, Cloud, API, Spreadsheet, Protection, Open Password, Read-Write Password, Excel"
+description: "Learn how to secure Excel workbooks using Aspose.Cells Cloud REST API — set open, read/write passwords, and remove protection via code samples in C#, Python, and curl."
 weight: 60
 ---
 
-In this guide you will learn how to set, modify, and remove both the **open password** and the **read‑write password** for spreadsheets using the Aspose.Cells Cloud Web API. These features help protect sensitive data in your Excel workbooks.
+In this guide you will learn how to set, modify, and remove both the **open password** and the **read-write password** for spreadsheets using the Aspose.Cells Cloud Web API. These features help protect sensitive data in your Excel workbooks.
 
 **Prerequisites**  
 - An active Aspose.Cells Cloud account with a valid API key and SID.  
@@ -20,7 +21,7 @@ In this guide you will learn how to set, modify, and remove both the **open pass
 
 | **HTTP Method** | **Endpoint** | **Query / Path Parameters** | **Description** |
 |-----------------|--------------|----------------------------|-----------------|
-| `PUT` | `/cells/{fileName}/protection` | `fileName` (path) – name of the workbook<br>`openPassword` (query, optional) – password required to open the file<br>`readWritePassword` (query, optional) – password required to modify the file | Sets or updates the open and/or read‑write passwords for the specified workbook. |
+| `PUT` | `/cells/{fileName}/protection` | `fileName` (path) – name of the workbook<br>`openPassword` (query, optional) – password required to open the file<br>`readWritePassword` (query, optional) – password required to modify the file | Sets or updates the open and/or read-write passwords for the specified workbook. |
 | `DELETE` | `/cells/{fileName}/protection` | `fileName` (path) – name of the workbook | Removes any passwords protecting the workbook. |
 
 **Request Body Example (JSON)**  
@@ -46,7 +47,7 @@ In this guide you will learn how to set, modify, and remove both the **open pass
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 200  | OK                          | Protection applied successfully; workbook now secured. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
@@ -85,10 +86,22 @@ request = SetWorkbookProtectionRequest(
 api.set_workbook_protection(request)
 ```
 
+*Bash (cURL)*  
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/MyFile.xlsx/protection?openPassword=MyOpenPwd123&readWritePassword=MyEditPwd456" \
+     -H "Authorization: Bearer <access_token>"
+```
+
 **Error Handling**  
 When an error occurs, the API returns a JSON payload containing `Code`, `Message`, and optionally `Description`. Check the status code and handle it accordingly in your application logic.
 
+**Best Practices**  
+- Use strong, unique passwords for workbook protection.  
+- Store credentials securely—avoid hardcoding secrets in source code.  
+- Rotate passwords periodically for sensitive workbooks.  
+
 **Related Topics**  
 
-- **[How to protect a spreadsheet with a password using Aspose.Cells Cloud](https://docs.aspose.cloud/cells/protect-spreadsheet/).**  
-- **[How to unprotect a spreadsheet with a password using Aspose.Cells Cloud](https://docs.aspose.cloud/cells/unprotect-spreadsheet/).**  
+- **{{% relref "cells/protect-spreadsheet" %}}**  
+- **{{% relref "cells/unprotect-spreadsheet" %}}**

@@ -2,104 +2,75 @@
 title: "Get Cells Properties"
 type: docs
 url: /get-cells-properties/
+date: 2024-06-15
 weight: 130
 keywords: "Aspose Cells Cloud, REST API, Excel, Worksheet, Cell Properties, Get Cells Properties"
-description: "Learn how to use the Aspose.Cells Cloud REST API to retrieve properties of a specific cell or predefined cell methods in an Excel worksheet."
+description: "Use Aspose.Cells Cloud REST API to retrieve detailed cell properties—including value, formula, type, and style—from Excel worksheets. Supports both cell references (e.g., A1) and predefined method names (e.g., firstcell, maxrow)."
 ---
 
-This REST API demonstrates how to retrieve a specific cell in an Excel file.
+This REST API demonstrates how to retrieve properties of a specific cell or a predefined method (such as `firstcell`, `maxrow`, or `maxdatacolumn`) in an Excel worksheet using Aspose.Cells Cloud.
 
-## REST API
+## Prerequisites
 
-```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}
+Before using this API, ensure you have:
+- An active [Aspose Cloud account](https://dashboard.aspose.cloud/)
+- Valid `Client ID` and `Client Secret` obtained from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/)
+- An Excel file uploaded to your cloud storage
+
+Authentication is performed using [JWT tokens](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## REST API Endpoint
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}
 ```
-
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### Request Parameters
 
+| Parameter Name       | Type   | Location | Required | Description                                                                                                                                                                           |
+|----------------------|--------|----------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **name**             | string | path     | Yes      | The name of the Excel document.                                                                                                                                                       |
+| **sheetName**        | string | path     | Yes      | The name of the worksheet containing the cell.                                                                                                                                        |
+| **cellOrMethodName** | string | path     | Yes      | The cell address (e.g., `A1`, `F341`) or a predefined method name (`firstcell`, `endcell`, `maxrow`, `maxdatarow`, `maxcolumn`, `maxdatacolumn`, `minrow`, `mindatarow`, `mincolumn`, `mindatacolumn`). |
+| **folder**           | string | query    | No       | The folder where the document is stored.                                                                                                                                              |
+| **storageName**      | string | query    | No       | The name of the storage service.                                                                                                                                                      |
 
-| Parameter Name       | Type   | Location | Description                                                                                                                                                                           |
-| -------------------- | ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **name**             | string | path     | The name of the Excel document.                                                                                                                                                       |
-| **sheetName**        | string | path     | The name of the worksheet containing the cell.                                                                                                                                        |
-| **cellOrMethodName** | string | path     | The cell name or a predefined method name (e.g., `firstcell`, `endcell`, `maxrow`, `maxdatarow`, `maxcolumn`, `maxdatacolumn`, `minrow`, `mindatarow`, `mincolumn`, `mindatacolumn`). |
-| **folder**           | string | query    | The folder where the document is stored.                                                                                                                                              |
-| **storageName**      | string | query    | The name of the storage service.                                                                                                                                                      |
-
-## **Response**
-
-Return the CellResponse.
-
-- **Response Fields Overview**
-
-| Field           | Type    | Description                                           |
-| --------------- | ------- | ----------------------------------------------------- |
-| `Name`          | string  | Address of the cell (e.g., `F341`).                   |
-| `Row`           | integer | Zero‑based row index.                                 |
-| `Column`        | integer | Zero‑based column index.                              |
-| `Value`         | string  | The cell’s displayed value.                           |
-| `Type`          | string  | Data type of the cell (e.g., `IsString`).             |
-| `Formula`       | string  | Formula text if the cell contains a formula.          |
-| `IsFormula`     | bool    | Indicates whether the cell contains a formula.        |
-| `IsMerged`      | bool    | Indicates whether the cell is part of a merged range. |
-| `IsArrayHeader` | bool    | Indicates whether the cell is an array header.        |
-| `IsInArray`     | bool    | Indicates whether the cell belongs to an array.       |
-| `IsErrorValue`  | bool    | Indicates whether the cell contains an error value.   |
-| `IsInTable`     | bool    | Indicates whether the cell is inside a table.         |
-| `IsStyleSet`    | bool    | Indicates whether a style is applied to the cell.     |
-| `HtmlString`    | string  | HTML‑encoded representation of the cell’s value.      |
-| `Style.link`    | object  | Hyperlink to the style resource.                      |
-
-
-```json
-{
-  "Status":"OK",
-  "Code":200,
-  "Cell":{
-    "Name":"A1",
-    "Row": 0,
-    "Column":0,
-    "Value": "Hello Aspose.Cells",
-    "Type":"String",
-    "Formula" : "",
-    ...
-  }
-}
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-## How to Use the GetWorksheetCell API with SDKs
-
-### GetWorksheetCell API Specification
-
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+### cURL Example
 
 ```bash
-curl -X GET "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET" \
+curl -X GET "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?folder=&storageName=" \
+     -H "Authorization: Bearer <JWT_TOKEN>" \
      -H "Accept: application/json"
 ```
 
-{{< /tab >}}
+> **Note**: Replace `<JWT_TOKEN>` with a valid access token. Use the `/oauth2/token` endpoint to obtain one.
 
-{{< tab tabNum="12" >}}
+## Response
+
+Returns a `CellResponse` containing the requested cell’s properties.
+
+### Cell Response Fields
+
+| Field           | Type    | Description                                           |
+|-----------------|---------|-------------------------------------------------------|
+| `Name`          | string  | Cell address (e.g., `A3`).                            |
+| `Row`           | integer | Zero-based row index.                                 |
+| `Column`        | integer | Zero-based column index.                              |
+| `Value`         | string  | Displayed cell value (formatted as text).             |
+| `Type`          | string  | Data type (e.g., `String`, `Double`, `Bool`).         |
+| `Formula`       | string  | Formula text (e.g., `=SUM(A1:A10)`), or empty.        |
+| `IsFormula`     | boolean | `true` if the cell contains a formula.                |
+| `IsMerged`      | boolean | `true` if the cell is part of a merged range.         |
+| `IsArrayHeader` | boolean | `true` if the cell is the header of an array formula. |
+| `IsInArray`     | boolean | `true` if the cell belongs to an array formula.       |
+| `IsErrorValue`  | boolean | `true` if the cell contains an error (e.g., `#N/A`).  |
+| `IsInTable`     | boolean | `true` if the cell is inside an Excel table.          |
+| `IsStyleSet`    | boolean | `true` if a custom style is applied.                  |
+| `HtmlString`    | string  | HTML-encoded representation of the cell value.        |
+| `Style.link`    | object  | Hyperlink to the style resource.                      |
+| `link`          | object  | Self-referencing link to the cell.                    |
+
+### Example Response (200 OK)
 
 ```json
 {
@@ -108,14 +79,15 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Shee
     "Row": 2,
     "Column": 0,
     "Value": "Statistical",
-    "Type": "IsString",
+    "Type": "String",
+    "Formula": "",
     "IsFormula": false,
     "IsMerged": false,
     "IsArrayHeader": false,
     "IsInArray": false,
     "IsErrorValue": false,
     "IsInTable": false,
-    "IsStyleSet": false,
+    "IsStyleSet": true,
     "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">Statistical</Font>",
     "Style": {
       "link": {
@@ -128,74 +100,133 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Shee
       "Rel": "self"
     }
   },
-  "Code": "200",
+  "Code": 200,
   "Status": "OK"
 }
+```
+
+### HTTP Status Codes
+
+| Code | Meaning               | Description                                      |
+|------|-----------------------|--------------------------------------------------|
+| 200  | OK                    | Cell retrieved successfully; response contains cell data. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type, invalid cell name). |
+| 401  | Unauthorized          | Invalid, expired, or missing JWT token.         |
+| 404  | Not Found             | Document, worksheet, or cell not found.         |
+| 413  | Payload Too Large     | Request exceeds size limits.                    |
+| 500  | Internal Server Error | Unexpected server error during processing.      |
+
+## SDK Examples
+
+Using an SDK is the most efficient way to integrate the API. SDKs handle authentication, serialization, and error handling automatically.
+
+{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+// Example: C#
+var cellsApi = new CellsApi(clientId, clientSecret);
+var result = cellsApi.GetWorksheetCell(name, sheetName, "A3", folder: folder, storage: storageName);
+Console.WriteLine($"Cell Value: {result.Cell.Value}");
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+// Example: Java
+CellsApi cellsApi = new CellsApi(clientId, clientSecret);
+CellResponse response = cellsApi.getWorksheetCell(name, sheetName, "A3", folder, storageName, null);
+System.out.println("Cell Value: " + response.getCell().getValue());
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```php
+// Example: PHP
+$cellsApi = new CellsApi($clientId, $clientSecret);
+$response = $cellsApi->GetWorksheetCell($name, $sheetName, "A3", $folder, $storageName);
+echo "Cell Value: " . $response->getCell()->getValue();
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+# Example: Ruby
+cells_api = AsposeCellsCloud::CellsApi.new(client_id, client_secret)
+response = cells_api.get_worksheet_cell(name, sheet_name, 'A3', folder: folder, storage_name: storage_name)
+puts "Cell Value: #{response.cell.value}"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+// Example: Node.js (TypeScript)
+const cellsApi = new CellsApi(clientId, clientSecret);
+const response = await cellsApi.getWorksheetCell(name, sheetName, "A3", folder, storageName);
+console.log(`Cell Value: ${response.body.cell.value}`);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```python
+# Example: Python
+from asposecellscloud.api import CellsApi
+cells_api = CellsApi(client_id, client_secret)
+response = cells_api.get_worksheet_cell(name, sheet_name, "A3", folder=folder, storage_name=storage_name)
+print(f"Cell Value: {response.cell.value}")
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+```perl
+# Example: Perl
+my $cells_api = AsposeCellsCloud::API->new(
+    client_id => $client_id,
+    client_secret => $client_secret,
+);
+my $response = $cells_api->GetWorksheetCell(
+    name => $name,
+    sheet_name => $sheet_name,
+    cell_or_method_name => "A3",
+    folder => $folder,
+    storage_name => $storage_name
+);
+print "Cell Value: " . $response->{cell}->{value} . "\n";
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+```go
+// Example: Go
+cellsApi, err := NewCellsApi(clientId, clientSecret)
+if err != nil { log.Fatal(err) }
+resp, _, err := cellsApi.GetWorksheetCell(context.Background(), name, sheetName, "A3", folder, storageName)
+if err != nil { log.Fatal(err) }
+fmt.Printf("Cell Value: %s\n", resp.Cell.Value)
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-### Use Aspose.Cells Cloud SDKs
+See the full SDK list in the [Aspose.Cells Cloud GitHub repository](https://github.com/aspose-cells-cloud).
 
-Using an SDK is the most efficient way to accelerate development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
-The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
-
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-
-{{< tab tabNum="1" >}}
-
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleGetWorksheetCell.cs" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_GetWorksheetCell.java" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_GetWorksheetCell.php" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetCell.rb" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetCell.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetCell.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetCell.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetCell.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-### How to retrieve a specific cell
+## Related Operations
 
 - [Get Cell Data from a Worksheet](/cells/get-cell-data-from-a-worksheet/)
 - [Get First Cell from Excel Worksheet](/cells/get-first-cell-from-excel-worksheet/)
@@ -208,3 +239,9 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 - [Get MinDataRow from Excel Worksheet](/cells/get-mindatarow-from-excel-worksheet/)
 - [Get MinColumn from Excel Worksheet](/cells/get-mincolumn-from-excel-worksheet/)
 - [Get MinDataColumn from Excel Worksheet](/cells/get-mindatacolumn-from-excel-worksheet/)
+
+## See Also
+
+- [Set Cell Data](/cells/put-worksheet-cell/)
+- [Get Worksheet Cells](/cells/get-worksheet-cells/)
+- [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)

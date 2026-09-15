@@ -5,8 +5,8 @@ linktitle: "Pictures"
 type: docs
 url: /pictures/
 aliases: [/working-with-pictures/]
-keywords: "Excel, picture, Aspose.Cells Cloud, REST API, image handling, Excel pictures"
-description: "Learn how to retrieve, add, update, and delete pictures in Excel worksheets using Aspose.Cells Cloud REST API. Includes code samples for C#, Java, Python, and more."
+keywords: "Excel pictures, Aspose.Cells Cloud, REST API, image handling, picture operations, Excel image manipulation"
+description: "Comprehensive guide to retrieving, adding, updating, and deleting pictures in Excel worksheets using Aspose.Cells Cloud REST API, with C# and Python examples."
 weight: 100
 ArticleTitle: "Working with Excel pictures – Aspose.Cells Cloud Documentation"
 ---
@@ -65,9 +65,9 @@ This guide explains how to work with **pictures** (also called images) in Excel 
 **Related topics**
 
 Explore other image‑related operations in Aspose.Cells Cloud:  
-- [Working with Shapes](/cells/shapes/) – add, edit, and delete drawing shapes.  
-- [Working with Charts](/cells/charts/) – create and manipulate chart objects.  
-- [Working with Images in Worksheets](/cells/images/) – embed and manage raw image files.
+- [Add, edit, and delete drawing shapes](/cells/shapes/) – add, edit, and delete drawing shapes.  
+- [Create and manipulate chart objects](/cells/charts/) – create and manipulate chart objects.  
+- [Embed and manage raw image files](/cells/images/) – embed and manage raw image files.
 
 ---
 
@@ -86,11 +86,11 @@ Explore other image‑related operations in Aspose.Cells Cloud:
     "name": "Aspose",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://cms.admin.containerize.com/templates/asposecloud/images/logo.png"
+      "url": "https://cms.admin.containerize.com/templates/asposecloud/images/logo.png",
+      "alt": "Aspose logo"
     }
   },
-  "datePublished": "2026-07-30",
-  "keywords": "Excel pictures, Aspose.Cells Cloud, REST API, image handling",
-  "url": "https://docs.aspose.cloud/cells/pictures/"
+  "datePublished": "2023-11-15",
+  "keywords": "Excel pictures, Aspose.Cells Cloud, REST API, image handling"
 }
 </script>

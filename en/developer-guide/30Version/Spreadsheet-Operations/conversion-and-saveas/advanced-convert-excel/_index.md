@@ -1,18 +1,18 @@
 ---
-title: "Advanced Convert Excel File"
+title: "Advanced Convert Excel File – Aspose.Cells Cloud API Guide"
 second_title: "Document"
 linktitle: "Advanced Convert"
 type: docs
 url: /advanced-convert-excel/
-keywords: "Aspose.Cells, Excel conversion, Cloud API, SDK"
-description: "The Aspose.Cells Cloud REST API provides powerful features for converting Excel workbooks to a wide range of formats, configuring page setup, save options, and print settings. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift, enabling seamless integration across multiple platforms."
+date: 2024-06-15
+keywords: "Aspose.Cells, Excel conversion, Cloud API, SDK, convert Excel to PDF, Excel to HTML, page setup Excel"
+description: "Use Aspose.Cells Cloud API to convert Excel workbooks to PDF, HTML, CSV, and more — with support for page setup, save options, and print settings via PUT /cells/convert."
 weight: 50
-ArticleTitle: "Advanced Convert Excel File – Aspose.Cells Cloud API Guide"
 ---
 
 ## Advanced Cloud API for Excel Conversion
 
-The Advanced Convert operation enables you to transform an Excel workbook into various output formats (PDF, HTML, CSV, etc.) while giving you fine‑grained control over page setup, save options, and print settings.  
+The Advanced Convert operation enables you to transform an Excel workbook into various output formats (PDF, HTML, CSV, etc.) while giving you fine-grained control over page setup, save options, and print settings.  
 
 **Prerequisites / Authentication**  
 To use this endpoint you must obtain an access token from Aspose.Cells Cloud and include it in the `Authorization` header as a Bearer token.  
@@ -47,20 +47,19 @@ To use this endpoint you must obtain an access token from Aspose.Cells Cloud and
   - `200 OK` – Conversion succeeded; response contains the converted file stream or a reference to the saved file.  
   - `400 Bad Request` – Invalid parameters or malformed request body.  
   - `401 Unauthorized` – Authentication failed or token missing.  
-  - `500 Internal Server Error` – Server‑side error during conversion.  
+  - `500 Internal Server Error` – Server-side error during conversion.  
 
 **HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 200  | OK                          | Conversion succeeded; response contains the converted file stream or a reference to the saved file. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
 
 **Notes**  
-* Some output formats have specific limitations (e.g., HTML conversion does not preserve macros). Review the format‑specific documentation for details.  
+* Some output formats have specific limitations (e.g., HTML conversion strips macros and ActiveX controls). Review the format-specific documentation for details.  
 
 ### The ability to load spreadsheet files from multiple data sources
 
@@ -68,7 +67,7 @@ To use this endpoint you must obtain an access token from Aspose.Cells Cloud and
 
 ## Cloud SDK Family
 
-Using an SDK helps accelerate development by handling low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK helps accelerate development by handling low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
@@ -133,6 +132,18 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
   "url":"https://api.aspose.cloud/v3.0/cells/convert",
   "documentation":"https://docs.aspose.cloud/cells/advanced-convert-excel/",
   "endpointDescription":"PUT /cells/convert",
+  "featureList": [
+    "Convert Excel to PDF",
+    "Convert Excel to HTML",
+    "Convert Excel to CSV",
+    "Set page setup (orientation, paper size)",
+    "Configure save options (compression, image quality)",
+    "Customize print settings (headings, gridlines)"
+  ],
+  "provider": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
   "input":{
     "@type":"PropertyValueSpecification",
     "valueRequired":true,

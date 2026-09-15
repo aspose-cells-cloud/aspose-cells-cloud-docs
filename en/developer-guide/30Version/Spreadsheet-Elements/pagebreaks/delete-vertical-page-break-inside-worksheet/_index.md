@@ -1,12 +1,17 @@
 ---
-title: Delete Vertical Page Break – Aspose.Cells Cloud REST API
-second_title: "Aspose.Cells Cloud Document"
-linktitle: "Delete vertical page break"
-type: docs
-url: /page-breaks/delete-vertical-page-break/
-aliases: [/delete-vertical-page-break-inside-worksheet/]
-description: Remove a vertical page break from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, parameters, examples, response codes, and SDK snippets.
-keywords: delete vertical page break, Aspose.Cells Cloud, REST API
+title: "Delete Vertical Page Break | Aspose.Cells Cloud REST API"
+date: 2024-03-15
+lastmod: 2024-03-15
+description: "Learn how to delete a vertical page break from an Excel worksheet using the Aspose.Cells Cloud REST API v3.0. Includes cURL examples, error codes, and SDK snippets in C#, Java, Python, Node.js, and Go."
+tags:
+  - "page-break"
+  - "excel-api"
+  - "rest-api"
+categories:
+  - "cells"
+  - "api-reference"
+weight: 10
+draft: false
 slug: delete-vertical-page-break
 api_version: v3.0
 ---
@@ -15,12 +20,16 @@ api_version: v3.0
 
 Delete a vertical page break from a worksheet in an Excel workbook using the Aspose.Cells Cloud REST API.
 
+> 💡 **Tip**: Replace `client_id` and `client_secret` with valid credentials from your [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/). For JWT token generation, see our [Authentication Guide](/cells/authentication/).
+
 ---
 
 ## Prerequisites
 
 - A **JWT authentication token** must be supplied in the `Authorization` header.
 - The workbook (`{name}`) must be stored in the specified **folder** or **storage** and be accessible to the API client.
+
+> 🔗 **Related**: [Get Vertical Page Breaks](/cells/get-vertical-page-breaks/) to list existing breaks before deletion.
 
 ---
 
@@ -260,16 +269,23 @@ func main() {
 
 </details>
 
-_(SDK snippets for PHP, Ruby, Perl, and other languages follow the same pattern and are available in the official GitHub repository.)_
+> 📦 **SDKs for other languages** (PHP, Ruby, Perl, etc.) are available in the [Aspose.Cells Cloud GitHub repository](https://github.com/aspose-cells-cloud).
 
 ---
 
 ## Related Resources
 
-- **OpenAPI Specification** – [DeleteVerticalPageBreak](https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteVerticalPageBreak)
-- **Aspose.Cells Cloud SDKs** – <https://github.com/aspose-cells-cloud>
-- **Authentication Guide** – <https://docs.aspose.cloud/cells/authentication/>
+- **OpenAPI Specification (Swagger)** – [Download JSON](https://raw.githubusercontent.com/aspose-cells-cloud/aspose-cells-cloud-go/master/docs/openapi.yaml)  
+- **Aspose.Cells Cloud SDKs** – <https://github.com/aspose-cells-cloud>  
+- **Authentication Guide** – <https://docs.aspose.cloud/cells/authentication/>  
 
 ---
 
-_Document last updated: 2026‑07‑30_
+Was this page helpful?  
+✅ Yes  |  ❌ No  
+
+*(Feedback helps us improve our documentation.)*
+
+---
+
+_Document last updated: 2024-03-15_

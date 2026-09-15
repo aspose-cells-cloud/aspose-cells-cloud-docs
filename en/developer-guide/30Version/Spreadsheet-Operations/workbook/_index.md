@@ -1,12 +1,15 @@
 ---
-title: "Working with Excel files: Formula Calculation, Auto‑fit, Clear Objects, etc."
+title: "Working with Excel files: Formula Calculation, Auto-fit, Clear Objects, etc."
 second_title: "Document"
 linktitle: "Excel Common Operations"
 type: docs
 url: /workbook/
 aliases: [/working-with-workbook/]
-keywords: "Aspose.Cells, Excel API, workbook operations, calculate formulas, auto‑fit"
-description: "Learn how to work with Excel workbooks using Aspose.Cells Cloud REST API. Step‑by‑step guides cover formula calculation, auto‑fitting rows/columns, clearing objects, and retrieving workbook metadata. SDKs for Python, .NET, Java, and more."
+keywords: "Aspose.Cells, Excel API, workbook operations, calculate formulas, autofit"
+description: "Comprehensive guide to Excel workbook operations via Aspose.Cells Cloud REST API: calculate formulas, auto-fit rows/columns, retrieve metadata, and more — with SDK examples for Python, .NET, Java, and more."
+tags: ["excel", "workbook", "automation", "rest-api"]
+categories: ["productivity", "cloud"]
+lastmod: 2024-06-15
 weight: 20
 ---
 
@@ -17,8 +20,8 @@ Aspose.Cells Cloud provides a comprehensive set of REST endpoints for managing E
 - [How to calculate formulas on an Excel file.](/cells/workbook/calculate-all-formulas/)
 - [How to create an Excel file.](/cells/workbook/create/)
 - [How to get an Excel file.](/cells/workbook/get/)
-- [How to auto‑fit columns on an Excel file.](/cells/autofit-columns-on-an-excel-file/)
-- [How to auto‑fit rows on an Excel file.](/cells/autofit-rows-on-an-excel-file/)
+- [How to auto-fit columns on an Excel file.](/cells/autofit-columns-on-an-excel-file/)
+- [How to auto-fit rows on an Excel file.](/cells/autofit-rows-on-an-excel-file/)
 - [How to get the page count on an Excel file.](/cells/get-page-count-from-an-excel-file/)
 - [How to get names from an Excel file.](/cells/get-names-from-an-excel-file/)
 
@@ -39,6 +42,7 @@ Aspose.Cells Cloud provides a comprehensive set of REST endpoints for managing E
   "@type": "WebPage",
   "name": "Excel Workbook Operations – Aspose.Cells Cloud",
   "description": "Step‑by‑step guides for calculating formulas, auto‑fitting rows/columns, clearing objects, and more using Aspose.Cells Cloud.",
+  "url": "https://docs.aspose.cloud/cells/workbook/",
   "breadcrumb": {
     "@type": "ItemList",
     "itemListElement": [
@@ -62,7 +66,7 @@ Aspose.Cells Cloud provides a comprehensive set of REST endpoints for managing E
       }
     ]
   },
-  "datePublished": "2026-03-30",
+  "datePublished": "2024-03-30",
   "publisher": {
     "@type": "Organization",
     "name": "Aspose",

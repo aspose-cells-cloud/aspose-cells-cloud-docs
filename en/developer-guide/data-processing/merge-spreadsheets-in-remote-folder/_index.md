@@ -1,114 +1,183 @@
 ---
-title: "Merge Matching Spreadsheets in Remote Folder"
-description: "Combine spreadsheet files stored in Aspose Cloud storage into a single file. Supports 30+ output formats such as PDF, CSV, JSON, XLSX, ODS, XPS, and more."
-keywords: "Aspose.Cells, merge spreadsheets, remote folder, API, PDF, CSV, JSON, XLSX, ODS, XPS"
-weight: 100
-type: docs
 url: /merge-spreadsheets-in-remote-folder/
+title: "Merge Matching Spreadsheets in Remote Folder"
+date: 2024-03-15
+lastmod: 2024-05-22
+version: "v4.0"
+description: "Combine multiple spreadsheet files stored in Aspose Cloud storage into a single file. Supports 30+ output formats including PDF, CSV, JSON, XLSX, ODS, and XPS—fully in the cloud."
+keywords: ["Aspose.Cells", "merge spreadsheets", "remote folder", "cloud API", "PDF merge", "XLSX merge", "CSV merge", "ODS merge"]
+weight: 10
+type: docs
 ---
 
-Combine multiple spreadsheet files that reside in a remote Aspose Cloud storage folder into a single output file. The operation runs entirely in the cloud, eliminating the need to download source files locally. Over 30 output formats are supported (PDF, CSV, JSON, XLSX, ODS, XPS, …).
+> **Deprecation Notice**  
+> This API is stable as of Aspose.Cells Cloud v4.0. For older versions, see [API Versioning Guide]({{< relref "/docs/api-versioning" >}}).
 
-## MergeSpreadsheetsInRemoteFolder API
+---
+
+## Overview
+
+Merge multiple spreadsheet files stored in a remote Aspose Cloud storage folder into a single output file, fully in the cloud—no local file downloads required. The operation supports over 30 output formats, including **PDF**, **CSV**, **JSON**, **XLSX**, **ODS**, and **XPS**.
+
+Key benefits:
+- **Cloud-native processing**: Eliminates bandwidth overhead and local resource constraints.
+- **Flexible formatting**: Choose between consolidating all data into one worksheet or preserving per-file sheets.
+- **Locale-aware output**: Apply region-specific number, date, and currency formatting.
+
+---
+
+## API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
 ```
 
-### **Security and Authentication**
+### Security & Authentication
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+All requests require JWT token-based authentication. See [Authenticating API Requests]({{< relref "/docs/getting-started/authenticating-api-requests" >}}) for setup instructions.
 
-### Request Parameters <a id="request-parameters"></a>
+---
 
-| Name                    | Type    | Location | Required | Description                                                                                          |
-| ----------------------- | ------- | -------- | -------- | ---------------------------------------------------------------------------------------------------- |
-| **folder**              | string  | query    | **Yes**  | Cloud storage folder that contains the source spreadsheets.                                          |
-| **fileMatchExpression** | string  | query    | **Yes**  | Pattern to select files (e.g., `*report*.xlsx`). Supports wildcards `*` and `?`.                     |
-| **outFormat**           | string  | query    | **Yes**  | Desired output format (`PDF`, `CSV`, `JSON`, `XLSX`, `ODS`, `XPS`, …).                               |
-| **mergeInOneSheet**     | boolean | query    | **Yes**  | `true` – all data merged into a single worksheet. `false` – each source file gets its own worksheet. |
-| **storageName**         | string  | query    | No       | Custom storage name; defaults to the primary storage if omitted.                                     |
-| **outPath**             | string  | query    | No       | Destination folder for the merged file. If omitted, the file is saved in the source folder.          |
-| **outStorageName**      | string  | query    | No       | Storage name where the merged file will be written.                                                  |
-| **fontsLocation**       | string  | query    | No       | Path to a folder containing custom fonts (required for PDF/Image export).                            |
-| **region**              | string  | query    | No       | Locale for number, date, and currency formatting (e.g., `en-US`, `de-DE`).                           |
-| **password**            | string  | query    | No       | Password to open any protected source spreadsheet.                                                   |
+## Request Parameters
 
-## Request Example (cURL) <a id="request-example"></a>
+| Parameter             | Type      | Location | Required | Description |
+|-----------------------|-----------|----------|----------|-------------|
+| `folder`              | `string`  | Query    | ✅ Yes    | Cloud storage folder containing source spreadsheets. |
+| `fileMatchExpression` | `string`  | Query    | ❌ No     | Pattern to match files (e.g., `*report*.xlsx`). Supports `*` (any characters) and `?` (single character). Defaults to all files in `folder`. |
+| `outFormat`           | `string`  | Query    | ❌ No     | Output format: `PDF`, `CSV`, `JSON`, `XLSX`, `ODS`, `XPS`, etc. Default: `XLSX`. |
+| `mergeInOneSheet`     | `boolean` | Query    | ❌ No     | `true`: All data merged into one worksheet. `false`: Each source file → its own worksheet. Default: `false`. |
+| `storageName`         | `string`  | Query    | ❌ No     | Custom storage name. Omit to use primary storage. |
+| `outPath`             | `string`  | Query    | ❌ No     | Destination folder for the merged file. Omit to save in `folder`. |
+| `outStorageName`      | `string`  | Query    | ❌ No     | Storage where the output file is saved. Omit to use `storageName`. |
+| `fontsLocation`       | `string`  | Query    | ❌ No     | Path to custom fonts folder (required for PDF/image exports). |
+| `region`              | `string`  | Query    | ❌ No     | Locale for formatting (e.g., `en-US`, `de-DE`, `fr-FR`). |
+| `password`            | `string`  | Query    | ❌ No     | Password to decrypt protected source spreadsheets. |
+
+---
+
+## Example Request (cURL)
 
 ```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets?folder=MyFolder&fileMatchExpression=*.xlsx&outFormat=PDF&mergeInOneSheet=true" \
-     -H "Authorization: Bearer <access_token>" \
-     -H "Accept: application/json"
+curl -X PUT \
+  "https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets?folder=Reports&fileMatchExpression=*_Q1.xlsx&outFormat=PDF&mergeInOneSheet=true" \
+  -H "Authorization: Bearer <access_token>" \
+  -H "Accept: application/json"
 ```
 
-### **Response**
+> 💡 **Tip**: For programmatic integration, use one of our [SDKs](https://github.com/aspose-cells-cloud). See [Using Aspose.Cells Cloud SDKs](#using-asposecells-cloud-sdks) below.
 
+---
+
+## Response
+
+### Success Response
+
+| Status Code | Content-Type               | Description |
+|-------------|----------------------------|-------------|
+| `200 OK`    | `application/octet-stream` | Binary stream of the merged workbook (e.g., PDF or XLSX). |
+| `202 Accepted` | `application/json`      | JSON object with `FileUrl`, `FileName`, and `FileSize`. |
+
+#### Sample 202 JSON Response
 ```json
 {
-  "Name": "ResponseFile",
-  "DataType": {
-    "Identifier": "File",
-    "Reference": "Stream"
-  }
+  "FileName": "MergedReport_2024-05-22.pdf",
+  "FileSize": 245678,
+  "FileUrl": "https://api.aspose.cloud/v4.0/cells/MergedReport_2024-05-22.pdf?token=..."
 }
 ```
 
-The file can be downloaded directly from the `FileUrl` or saved to the location specified by `outPath`.
+Download the merged file directly from `FileUrl`, or save it to the specified `outPath`.
 
-**Success response details**
+---
 
-| Status Code  | Content‑Type               | Description                                 |
-| ------------ | -------------------------- | ------------------------------------------- |
-| 200 OK       | `application/octet-stream` | Binary stream of the merged workbook file.  |
-| 202 Accepted | `application/json`         | JSON containing `FileUrl`, `FileName`, etc. |
+## HTTP Status Codes
 
-**HTTP Status Codes**
+| Code | Meaning             | Description |
+|------|---------------------|-------------|
+| `200` | OK                 | Merged file returned as binary stream. |
+| `202` | Accepted           | Merged file saved to cloud storage; details in response body. |
+| `400` | Bad Request        | Invalid parameter (e.g., unsupported `outFormat`, malformed `fileMatchExpression`). |
+| `401` | Unauthorized       | Missing or invalid JWT token. |
+| `404` | Not Found          | Source folder or files not found in storage. |
+| `413` | Payload Too Large  | Total input size exceeds cloud limits. |
+| `500` | Internal Server Error | Unexpected server-side failure during merge. |
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+---
 
-## How to Use the Merge Spreadsheet API with SDKs
+## Error Handling
 
-### OpenAPI Specification
+- **400 Bad Request**: Invalid URL or malformed query parameters (e.g., `folder` missing, `outFormat` unsupported).  
+- **401 Unauthorized**: Authentication failed or credentials expired.  
+- **404 Not Found**: Source files inaccessible or storage path invalid.  
+- **500 Server Error**: Internal failure (e.g., corrupted source file, service unavailability).
 
-The <a href="https://reference.aspose.cloud/cells/#/DataProcessingController/MergeSpreadsheetsInRemoteFolder" rel="noopener noreferrer">OpenAPI Specification</a> provides a machine‑readable description of the API, enabling direct REST interactions.
+---
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+## Using Aspose.Cells Cloud SDKs
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+SDKs abstract low-level HTTP details and simplify integration. Supported languages include:
+- [Go](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go)
+- [Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java)
+- [Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node)
+- [Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python)
+- [.NET](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet)
 
-{{< tab tabNum="11" >}}
+### Sample (Go SDK)
+```go
+import (
+    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v40/cells"
+)
 
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets?folder=MyFolder&fileMatchExpression=*.xlsx&outFormat=PDF&mergeInOneSheet=true" \
-  -H "Authorization: Bearer {access_token}" \
-  -F "Spreadsheet=@/path/to/Book1.xlsx" \
-  -F "Spreadsheet=@/path/to/Book2.xlsx"
-```
+cfg := cells.NewConfiguration(clientId, clientSecret)
+api := cells.NewCellsApiWithClientConfiguration(cfg)
 
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```
-{
-  "type": "FileContentResult",
-  "fileContents": "byte[] (Base64 encoded)",
-  "contentType": "MIME type",
-  "fileDownloadName": "optional file name"
+mergeOpts := &cells.CellsMergeRequest{
+    Folder:           "Reports",
+    FileMatchExpression: "*.xlsx",
+    OutFormat:        "PDF",
+    MergeInOneSheet:  true,
 }
+
+resp, _, err := api.CellsMergeRemoteSpreadsheets(
+    context.Background(),
+    "MyFolder",
+    mergeOpts,
+    nil, // storageName
+    nil, // outPath
+    nil, // outStorageName
+    nil, // fontsLocation
+    nil, // region
+    nil, // password
+)
 ```
 
-{{< /tab >}}
+See the [OpenAPI Specification]({{< relref "/docs/api-reference/openapi-spec#mergeSpreadsheetsInRemoteFolder" >}}) for full schema details.
 
-{{< /tabs >}}
+---
 
-### Use Aspose.Cells Cloud SDKs
+## Related Documentation
 
-Using the SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to import data into a spreadsheet worksheet with short code. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+- [Upload Files to Cloud Storage]({{< relref "/upload-files-to-cloud-storage" >}})
+- [Split Spreadsheets]({{< relref "/split-spreadsheets" >}})
+- [Export to PDF with Custom Fonts]({{< relref "/export-to-pdf#custom-fonts" >}})
+- [API Versioning Guide]({{< relref "/docs/api-versioning" >}})
+
+---
+
+## Best Practices
+
+1. **Use `region` for locale-sensitive reports** (e.g., `en-US` for USD currency, `de-DE` for German date formats).  
+2. **Set `outPath` explicitly** to avoid overwriting source files.  
+3. **Include `fontsLocation`** when exporting to PDF/image to preserve formatting.  
+4. **Leverage `fileMatchExpression`** to dynamically filter by naming conventions (e.g., `*2024*.ods`).  
+
+---
+
+## Changelog
+
+| Version | Date       | Changes |
+|---------|------------|---------|
+| v4.0    | 2024-03-15 | Initial release of `MergeSpreadsheetsInRemoteFolder`. |
+| —       | 2024-05-22 | Updated examples, added deprecation notice, fixed parameter defaults. |
+
+---

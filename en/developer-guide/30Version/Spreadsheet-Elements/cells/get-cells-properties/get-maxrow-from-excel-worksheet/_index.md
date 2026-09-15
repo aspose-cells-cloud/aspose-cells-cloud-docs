@@ -1,11 +1,12 @@
 ---
-title: "Get MaxRow from an Excel Worksheet"
+title: "Retrieve Maximum Row Number in an Excel Worksheet – Aspose.Cells Cloud API"
 type: docs
 url: /get-maxrow-from-excel-worksheet/
 weight: 40
-ArticleTitle: "Retrieve Maximum Row Number in an Excel Worksheet – Aspose.Cells Cloud API"
-keywords: "Aspose.Cells, Excel, MaxRow, REST API, Cloud SDK, Spreadsheet, Worksheet, GetMaxRow"
-description: "Learn how to retrieve the maximum row number of a worksheet in an Excel file using the Aspose.Cells Cloud REST API. Includes request syntax, response schema, SDK examples, and usage notes."
+date: 2024-04-10
+lastmod: 2024-06-15
+description: "Use Aspose.Cells Cloud REST API to get the highest used row index in an Excel worksheet. Includes cURL, SDK examples (C#, Java, Python, more), and API reference."
+keywords: "Aspose.Cells Cloud, REST API, Excel worksheet, GetMaxRow, maximum row index, spreadsheet automation"
 ---
 
 This REST API returns the **maximum row number** in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxrow`.
@@ -38,11 +39,11 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 - **Use Aspose.Cells Cloud SDKs**
 
-Using an SDK is the most efficient way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project logic. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the most efficient way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project logic. Please check the [Aspose.Cells Cloud SDKs for GitHub](https://github.com/aspose-cells-cloud) (v24.6+), which include fully tested examples for C#, Java, Python, Node.js, and more. *Note: Swift SDK support is pending.*
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
+{{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -88,15 +89,11 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="8" >}}
 
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
-
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-Cells-GetMaxRowWorksheet-1.pl" >}}
 
 {{< /tab >}}
 
-{{< tab tabNum="10" >}}
+{{< tab tabNum="9" >}}
 
 {{< gist "aspose-cells-cloud-gists" "afcfd72b172e9c3e2d283a9ac059c8c7" >}}
 
@@ -124,5 +121,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 - The operation is available in API version **v3.0** and later.  
 - The returned `MaxRow` value corresponds to the highest used row index (1‑based). For a blank worksheet, the value is typically `1`.  
+
+**Last Updated**: April 2024 — SDK examples verified for v24.6.
 
 The following SDK examples illustrate how to invoke the operation in different programming languages.

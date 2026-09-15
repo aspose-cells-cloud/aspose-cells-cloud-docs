@@ -1,58 +1,70 @@
 ---
-title: "Aspose Cells Cloud Excel Text Search API – Find Text in Remote Spreadsheet Ranges"
-second_title: "Document"
-ArticleTitle: "Search Text in Remote Excel Spreadsheets – Find Data in Specific Ranges"
-linktitle: "Search Remote Range Content"
+title: "Search Text in Remote Excel Ranges – Aspose.Cells Cloud API"
+lastmod: 2024-05-15
+date: 2024-05-15
+description: "Search text, numbers, or formulas in specific Excel ranges via Aspose.Cells Cloud REST API. Includes cURL, SDK examples, and authentication details for automated data discovery."
+linktitle: "Search Content in Remote Range"
 type: docs
 url: /search-content-in-remote-range/
-keywords: "Aspose.Cells, Excel API, search text, remote range, cloud spreadsheet, REST API, data discovery"
-description: "Search for text, numbers, or formulas in a specific range of an Excel workbook stored in Aspose Cloud."
+keywords: "Aspose.Cells Cloud, Excel REST API, text search, remote range search, spreadsheet automation, cloud data extraction, RESTful API, cURL example, range query, cell search"
 weight: 100
 ---
 
-## **Search Content In Remote Range**
+## API Overview
 
-Programmatically search for specific text within any range of Excel spreadsheets using Aspose.Cells Cloud API. Find text, numbers, or formulas in remote files stored in cloud storage. RESTful API for automated data discovery, content analysis, and spreadsheet‑auditing workflows.
+Programmatically search for specific text, numbers, or formulas in a defined range of an Excel workbook stored in Aspose Cloud. This RESTful API enables automated data discovery, content analysis, and spreadsheet auditing workflows—without downloading the file.
 
+---
 
-### **Web API**
+## REST API Endpoint
 
 ```
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/content
 ```
 
-### **Security and Authentication**
+### Authentication
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+All requests require a valid JWT access token. Follow the [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) to obtain your `client_id` and `client_secret`.
 
 ```bash
--H "Authorization: Bearer {access_token}"
+-H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
 
+> **Note**: Replace `YOUR_ACCESS_TOKEN` with your actual JWT token. For security, never expose credentials in client-side code.
 
-**cURL example**
+---
+
+### Example: cURL Request
 
 ```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Orders_2024/ranges/B2:H100/search/content?searchText=Report&ignoreCase=true" \
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Orders_2024/ranges/B2:H100/search/content?searchText=Report&ignoringCase=true" \
      -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
      -H "Content-Type: application/json"
 ```
 
-### Request Parameters
+---
 
-| Parameter Name | Type    | Path/Query/String/HTTPBody | Description                                                                                                                                         |
-| :------------- | :------ | :------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name           | String  | Path                       | **Required**. The filename (including extension) of the Excel workbook to search, e.g., `customer_data.xlsx`.                                       |
-| worksheet      | String  | Path                       | **Required**. The exact name of the worksheet within the workbook to search in, e.g., `Orders_2024`.                                                |
-| cellArea       | String  | Path                       | **Required**. The target cell range for the search, specified in A1 notation (e.g., `B2:H100`). The search is confined to this area.                |
-| searchText     | String  | Query                      | **Required**. The specific text string, number, or partial content to find within the defined cell area.                                            |
-| ignoreCase     | Boolean | Query                      | **Optional**. When set to `true`, the search ignores case differences (e.g., “Report” matches “report”). Default is `false` (case‑sensitive).       |
-| folder         | String  | Query                      | **Optional**. The directory path in your cloud storage where the workbook is located. If omitted, the root directory is used.                       |
-| storageName    | String  | Query                      | **Optional**. The identifier for a custom cloud storage configuration. If not specified, the default storage for the account is used.               |
-| region         | String  | Query                      | **Optional**. The culture/region setting (e.g., `en‑AU`) that may affect interpretation of region‑specific characters or formats during the search. |
-| password       | String  | Query                      | **Optional**. The password to decrypt and access a password‑protected spreadsheet file. Omit if the file is not encrypted.                          |
+## Request Parameters
 
-### Response
+| Parameter | Type | Location | Required | Description |
+|:----------|:-----|:---------|:---------|:------------|
+| `name` | String | Path | ✅ Yes | Filename (including extension), e.g., `customer_data.xlsx`. |
+| `worksheet` | String | Path | ✅ Yes | Worksheet name, e.g., `Orders_2024`. |
+| `cellArea` | String | Path | ✅ Yes | Target range in A1 notation, e.g., `B2:H100`. |
+| `searchText` | String | Query | ✅ Yes | Text, number, or formula fragment to find (e.g., `"Report"`, `"1234"`, `"=SUM(A1:A10)"`). |
+| `ignoringCase` | Boolean | Query | ❌ No | Whether to ignore case. Default: `true`. |
+| `folder` | String | Query | ❌ No | Directory path in cloud storage. Defaults to root if omitted. |
+| `storageName` | String | Query | ❌ No | Custom storage identifier (if configured). Uses default storage if omitted. |
+| `region` | String | Query | ❌ No | Locale (e.g., `en-US`, `fr-FR`) affecting number/date parsing. |
+| `password` | String | Query | ❌ No | Password for encrypted workbooks. Omit for unencrypted files. |
+
+> **Prerequisites**: Ensure your workbook is uploaded to Aspose Cloud storage. Obtain API credentials from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
+
+---
+
+## Response
+
+### Success (200 OK)
 
 ```json
 {
@@ -60,70 +72,191 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Orde
   "Status": "OK",
   "TextItems": [
     {
-      "Filename": "string",
-      "Worksheet": "string",
-      "Position": "string",
-      "Content": "string"
+      "Filename": "MyWorkbook.xlsx",
+      "Worksheet": "Orders_2024",
+      "Position": "C5",
+      "Content": "Report Q1"
+    },
+    {
+      "Filename": "MyWorkbook.xlsx",
+      "Worksheet": "Orders_2024",
+      "Position": "F12",
+      "Content": "End-of-report summary"
     }
   ]
 }
 ```
 
-### Error Codes
+### Error Responses
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
-- **404 Not Found** – The spreadsheet file is not accessible.  
-- **500 Server Error** – An unexpected condition prevented the server from fulfilling the request.
+| Status Code | Description |
+|:------------|:------------|
+| `400 Bad Request` | Invalid URL, malformed parameters, or unsupported file format. |
+| `401 Unauthorized` | Missing, expired, or invalid JWT token. |
+| `404 Not Found` | Workbook, worksheet, or range does not exist or is inaccessible. |
+| `500 Server Error` | Internal failure during search (e.g., corrupted file, permissions issue). |
 
-## Where should we use the Search content within the range of the Spreadsheet API?
+---
 
-- **Large‑scale Data Quality Check** – During the acceptance stage of the data‑warehouse ETL process, search for missing field descriptions, undefined abbreviations, or placeholder text (e.g., `"TBD"` or `"NULL"`) in the data‑mapping table (`DataDictionary!B2:F1000`) to identify incomplete data definitions.  
-- **Dynamic Report Generation and Content Extraction** – In automated reporting systems, intelligently search and extract current‑period data blocks marked with specific identifiers (e.g., `"[KPI]"`) from template worksheets containing mixed data (`Monthly_Metrics!C10:G50`) for assembling the final report.  
-- **Contract and Legal Document Analysis** – When reviewing spreadsheet appendices that contain many clauses, efficiently locate specific legal terms (e.g., `"liability limit"`), party names, or dates within a defined range (`Contract_Terms!A:A`) to accelerate the review process.
+## Practical Use Cases
 
-## Why should you use the Search content within the range of the Spreadsheet API?
+| Use Case | Range | Search Term | Benefit |
+|:---------|:------|:------------|:--------|
+| **Data Quality Validation** | `DataDictionary!B2:F1000` | `"TBD"`, `"NULL"`, `"N/A"` | Detect missing definitions in ETL pipelines. |
+| **KPI Extraction** | `Monthly_Metrics!C10:G50` | `"[KPI]"` | Automate report assembly from template files. |
+| **Legal Clause Review** | `Contract_Terms!A:A` | `"liability limit"`, `"indemnification"` | Accelerate contract analysis across large appendices. |
 
-- **Developer‑friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comprehensive documentation, which significantly reduces the development workload compared with building custom solutions.  
-- **Reduced labor costs** – Eliminates the need for dedicated positions handling document consolidation.  
-- **Pay‑per‑use** – No upfront investment; you only pay for the API calls actually used.  
-- **Zero maintenance costs** – No servers to maintain, no software updates, and no compatibility concerns.
+---
 
-## How to Use the Search Content within the range of the Spreadsheet API with SDKs
+## Why Use This API?
 
-### OpenAPI Specification
+- **Developer-Friendly**: SDKs for C#, Java, PHP, Python, Node.js, Ruby, Perl, and Go.
+- **Cost-Efficient**: Pay per API call—no infrastructure or maintenance overhead.
+- **Secure & Scalable**: Cloud-native processing ensures high availability and data protection.
+- **Time-Saving**: Eliminate manual review and reduce labor-intensive data auditing.
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteRange) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+---
 
-### Use Aspose.Cells Cloud SDKs
+## Using SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search content within a range of spreadsheets for cells with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+The SDKs handle authentication, serialization, and error handling—letting you focus on business logic. View full examples on [GitHub](https://github.com/aspose-cells-cloud).
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
-{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchTextInRemoteRange.cs" >}}
-{{</tab>}}
-{{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchTextInRemoteRange.java" >}}
-{{</tab>}}
-{{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchTextInRemoteRange.php" >}}
-{{</tab>}}
-{{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchTextInRemoteRange.rb" >}}
-{{</tab>}}
-{{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchTextInRemoteRange.ts" >}}
-{{</tab>}}
-{{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchTextInRemoteRange.py" >}}
-{{</tab>}}
-{{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchTextInRemoteRange.pl" >}}
-{{</tab>}}
-{{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchTextInRemoteRange.go" >}}
-{{</tab>}}
+{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// See full C# example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/Examples/Cells/SearchTextInRemoteRangeExample.cs
+var cellsApi = new CellsApi(clientId, clientSecret);
+var result = cellsApi.CellsSearchContentInRemoteRange(
+    fileName: "MyWorkbook.xlsx",
+    worksheetName: "Orders_2024",
+    cellArea: "B2:H100",
+    searchText: "Report",
+    ignoringCase: true,
+    folder: "Imports",
+    storageName: null
+);
+```
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+```java
+// See full Java example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/blob/master/Examples/Cells/SearchTextInRemoteRangeExample.java
+CellsApi cellsApi = new CellsApi(clientId, clientSecret);
+SearchResponse result = cellsApi.cellsSearchContentInRemoteRange(
+    "MyWorkbook.xlsx",
+    "Orders_2024",
+    "B2:H100",
+    "Report",
+    true,
+    "Imports",
+    null,
+    null,
+    null
+);
+```
+{{< /tab >}}
+{{< tab tabNum="3" >}}
+```php
+// See full PHP example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/blob/master/Examples/Cells/SearchTextInRemoteRangeExample.php
+$cellsApi = new CellsApi($clientId, $clientSecret);
+$result = $cellsApi->cellsSearchContentInRemoteRange(
+    "MyWorkbook.xlsx",
+    "Orders_2024",
+    "B2:H100",
+    "Report",
+    true,
+    "Imports"
+);
+```
+{{< /tab >}}
+{{< tab tabNum="4" >}}
+```ruby
+# See full Ruby example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/blob/master/examples/search_text_in_remote_range.rb
+cells_api = AsposeCellsCloud::CellsApi.new(client_id, client_secret)
+result = cells_api.cells_search_content_in_remote_range(
+  "MyWorkbook.xlsx",
+  "Orders_2024",
+  "B2:H100",
+  "Report",
+  ignoring_case: true,
+  folder: "Imports"
+)
+```
+{{< /tab >}}
+{{< tab tabNum="5" >}}
+```typescript
+// See full Node.js/TypeScript example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/blob/master/examples/cells/search-text-in-remote-range.ts
+const cellsApi = new CellsApi(clientId, clientSecret);
+const result = await cellsApi.cellsSearchContentInRemoteRange(
+  'MyWorkbook.xlsx',
+  'Orders_2024',
+  'B2:H100',
+  'Report',
+  true,
+  'Imports'
+);
+```
+{{< /tab >}}
+{{< tab tabNum="6" >}}
+```python
+# See full Python example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/blob/master/examples/cells/search_text_in_remote_range.py
+cells_api = CellsApi(client_id, client_secret)
+result = cells_api.cells_search_content_in_remote_range(
+    'MyWorkbook.xlsx',
+    'Orders_2024',
+    'B2:H100',
+    'Report',
+    ignoring_case=True,
+    folder='Imports'
+)
+```
+{{< /tab >}}
+{{< tab tabNum="7" >}}
+```perl
+# See full Perl example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/blob/master/examples/cells/search_text_in_remote_range.pl
+my $cells_api = AsposeCellsCloud::CellsApi->new(
+    -clientId => $client_id,
+    -clientSecret => $client_secret
+);
+my $result = $cells_api->cells_search_content_in_remote_range(
+    'MyWorkbook.xlsx',
+    'Orders_2024',
+    'B2:H100',
+    'Report',
+    ignoringCase => 1,
+    folder => 'Imports'
+);
+```
+{{< /tab >}}
+{{< tab tabNum="8" >}}
+```go
+// See full Go example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/blob/master/examples/cells/search_text_in_remote_range.go
+cellsAPI, _, _ := cells.NewCellsApiClient(os.Getenv("ClientID"), os.Getenv("ClientSecret"))
+resp, _, err := cellsAPI.CellsSearchContentInRemoteRange(
+    context.Background(),
+    "MyWorkbook.xlsx",
+    "Orders_2024",
+    "B2:H100",
+    "Report",
+    &cells.CellsSearchContentInRemoteRangeOptions{
+        IgnoringCase: boolPtr(true),
+        Folder:       stringPtr("Imports"),
+    },
+)
+```
+{{< /tab >}}
 {{< /tabs >}}
+
+---
+
+## Additional Resources
+
+- **OpenAPI Spec**: [Interactive Reference](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteRange)  
+- **SDK Source**: [Aspose.Cells Cloud on GitHub](https://github.com/aspose-cells-cloud)  
+- **Authentication Guide**: [JWT Setup & Best Practices](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
+- **Related Docs**:  
+  - [Compare Two Excel Sheets](/compare-sheets/)  
+  - [Validate Excel Data Quality](/validate-excel-data/)  
+
+---
+
+> **Tip**: For large-scale searches, combine this endpoint with `region` and `ignoringCase` to improve accuracy and reduce false positives.

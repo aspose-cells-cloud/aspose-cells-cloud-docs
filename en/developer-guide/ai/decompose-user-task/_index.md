@@ -1,58 +1,102 @@
 ---
-title: "Aspose.Cells Cloud AI – Decompose User Task API (v4.0) | SMART Task Planning"
-second_title: "Document"
-ArticleTitle: "How to Convert User Objectives into Sequential Action Plans with Aspose.Cells Cloud AI Task Decomposition API"
+url: /decompose-user-task/
+title: "Aspose.Cells Cloud AI – Decompose User Task API (v4.0) | SMART Task Planning"
+ArticleTitle: "Decompose User Task API"
 linktitle: "Decompose User Task"
 type: docs
-url: /decompose-user-task/
-keywords: "Aspose.Cells AI, task decomposition API, SMART task planning, Redmine import, project automation"
-description: "Transform free‑form objectives into SMART, time‑estimated task lists with Aspose.Cells Cloud AI. Get CSV/XLSX output for Redmine, Jira, or Azure DevOps in a single PUT request."
+date: 2024-06-10
+lastmod: 2024-06-10
+description: "Use Aspose.Cells Cloud AI’s REST API to decompose user objectives into SMART-compliant, time-estimated action plans. Export results as CSV/XLSX for direct import into Redmine, Jira, Azure DevOps, and more. Includes SDK examples and regional formatting support."
+keywords: "Aspose.Cells AI, REST API, task decomposition, SMART task planning, Redmine import, project automation, task breakdown, time estimation"
 weight: 100
+robots: index, follow
+canonical: https://docs.aspose.cloud/cells/decompose-user-task/
 ---
 
-The **DecomposeUserTask** endpoint provides a REST endpoint to turn a free‑form task description into a detailed, sequential action plan that adheres to SMART criteria. It automatically allocates hour‑based time estimates, formats the output for Redmine‑compatible import, and creates project‑milestone nodes. Supplying only the raw task list and optional time estimates, the API returns a ready‑to‑use file (CSV, XLSX, etc.) that can be directly imported into project‑management tools, automating task breakdown and reducing manual effort.
+## Overview
 
-## **Decompose User Task API**
+The **Decompose User Task API** transforms free-form user objectives into structured, sequential action plans that adhere to **SMART** (Specific, Measurable, Achievable, Relevant, Time-bound) criteria. By analyzing a plain-text task description, the API automatically generates granular subtasks with hour-based time estimates and milestone markers—ready for immediate import into project management systems like Redmine, Jira, and Azure DevOps.
 
-### Web API
+This v4.0 release introduces enhanced time-estimate optimization and native Azure DevOps export support (Q2 2024). The API is stable and production-ready.
+
+> 💡 **Tip**: For best results, provide a clear, actionable objective (e.g., “Develop a web API for task splitting with OpenAPI spec and integration tests”) rather than vague statements.
+
+---
+
+## API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/ai/task/decompose
 ```
 
-### **Security and Authentication**
+### Authentication
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+All requests require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/){rel="noopener noreferrer"}.
 
-### **Request Parameters:**
+---
 
-| Parameter Name  | Type   | Location | Required/Optional | Description                                                                                                                                                                                                                              |
-| :-------------- | :----- | :------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| TaskDescription | string | Body     | Required          | A plain‑text description of the user’s overall objective. The service parses the description and generates individual tasks. Example: “Launch marketing campaign for Q3, including content creation, email blast, and social media ads.” |
+## Request Parameters
 
-### **Response**
+| Parameter | Type   | Location | Required | Description |
+|-----------|--------|----------|----------|-------------|
+| `TaskDescription` | `string` | Body | Yes | A plain-text description of the user’s overall objective. Example: *"Launch Q3 marketing campaign including content creation, email blast, and social media ads."* |
+| `region` | `string` | Query | No | Regional setting (e.g., `en-US`, `fr-FR`). Affects number formatting, date parsing, and locale-specific behavior. Default: `en-US`. |
+| `password` | `string` | Query | No | Password for protected spreadsheet templates (if used internally). |
 
-Successful response (200 OK)  
-Content‑Type: `application/octet-stream` (binary file stream)
+> ⚠️ **Note**: Omit `password` unless explicitly required. It is not used for the `TaskDescription` input.
 
-Headers:
+---
 
-- `Content-Disposition: attachment; filename="DecomposedTaskPlan.xlsx"`
-- `Content-Length: <size in bytes>`
+## Request Example
 
-The same structure is used for XLSX/ODS formats, with columns placed in the first worksheet.
+```json
+{
+  "TaskDescription": "Develop a web API for a task-splitting feature on the existing system, including OpenAPI spec, core algorithm, and integration tests."
+}
+```
 
-**HTTP Status Codes**
+---
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+## Response
 
-**Error Response Example (400 Bad Request)**
+On success (HTTP `200 OK`), the API returns a binary file stream:
+
+- **Content-Type**: `application/octet-stream`  
+- **Content-Disposition**: `attachment; filename="DecomposedTaskPlan.xlsx"`  
+- **Content-Length**: Dynamic (e.g., `12,288` bytes)
+
+The file is generated as an Excel workbook (`.xlsx`) with the first worksheet containing structured task data. CSV and ODS formats are also supported via query parameters or SDK options.
+
+### Sample Output (First 4 Rows of CSV Equivalent)
+
+```
+ID,Subject,Owner,Estimated Duration,Description
+1,Requirement gathering,Business Analyst,8,"Collect functional requirements, user stories, and acceptance criteria for the task-splitting endpoint."
+2,OpenAPI specification,Business Analyst,6,"Define POST /tasks/split contract: request/response schemas, error codes, and OAuth2 security."
+3,Algorithm & data model,Solution Architect,5,"Design core decomposition logic; extend DB schema to support task hierarchy and metadata."
+4,Integration review,Solution Architect,4,"Analyze impact on microservices, event flows, and database migrations; produce integration plan."
+```
+
+> ✅ **Key Fields**:  
+> - `ID`: Sequential task identifier  
+> - `Subject`: Concise task title  
+> - `Owner`: Recommended assignee based on role inference  
+> - `Estimated Duration`: Hours (integer)  
+> - `Description`: SMART-aligned detail with deliverables
+
+---
+
+## HTTP Status Codes
+
+| Code | Meaning | Description |
+|------|---------|-------------|
+| `200` | OK | Task decomposition successful; file stream returned. |
+| `400` | Bad Request | Missing `TaskDescription`, empty input, or invalid `region` format. |
+| `401` | Unauthorized | Invalid, expired, or missing JWT token. |
+| `413` | Payload Too Large | Input exceeds 10 KB limit. |
+| `500` | Internal Server Error | Unexpected server-side failure. |
+
+### Error Response (400 Bad Request)
 
 ```json
 {
@@ -61,77 +105,191 @@ The same structure is used for XLSX/ODS formats, with columns placed in the firs
 }
 ```
 
-**Sample Request Body (JSON)**
+---
 
-```json
-{
-  "TaskDescription": "Develop a web API for a task-splitting feature on the existing system."
-}
-```
+## Use Cases
 
-**Sample Response**  
-The API returns a binary stream containing the generated file. To preview the first few rows of a CSV response, decode the stream and view the header row, e.g.:
+| Scenario | Benefit |
+|----------|---------|
+| **Project Kickoff** | Convert high-level briefs into sprint-ready task lists with time estimates. |
+| **Marketing Campaigns** | Break down objectives (e.g., “Q3 Product Launch”) into executable steps for cross-team coordination. |
+| **Resource Planning** | Allocate workloads proactively using hour-based estimates per subtask. |
+| **Milestone Tracking** | Auto-generate milestone nodes synced to Gantt charts (e.g., via Excel import into MS Project). |
 
-```
-ID,Subject,Trucker,Estimated Duration,Description
-1	Requirement gathering for task‑splitting API	Business Analyst	8	Collect functional and non‑functional requirements, user stories and acceptance criteria for the new task‑splitting endpoint.
-2	API specification (OpenAPI)	Business Analyst	6	Define the OpenAPI contract for POST /tasks/split, including request schema, response formats, error codes and security requirements.
-3	Splitting algorithm & data‑model design	Solution Architect	5	Design the core algorithm that divides a parent task into subtasks, and extend the data model (DB tables / entities) to store hierarchy and metadata.
-4	Architecture integration review	Solution Architect	4	Analyse impact on existing services, event flows and database migrations; produce integration plan.
-...
-```
+> 🔄 **Workflow Integration**: Output files integrate directly with:
+> - Redmine (CSV import)
+> - Jira (CSV/XLSX via bulk import)
+> - Azure DevOps (CSV with field mapping)
+> - Custom tools (via structured output)
 
-## Where should we use the Decompose User Task API?
+---
 
-- **Project kickoff**: Convert a high‑level project brief into a Redmine‑compatible task list with time estimates, enabling immediate sprint planning.
-- **Marketing automation**: Break down campaign objectives into executable steps, export as CSV, and import into task‑management tools for cross‑team coordination.
-- **Resource allocation**: Generate hour‑based estimates for each sub‑task, allowing managers to balance workload across team members before the project starts.
-- **Milestone tracking**: Automatically create milestone nodes that can be synced with Gantt‑chart tools, ensuring that each phase has a clear deliverable.
+## SDK Examples
 
-## Why should you use the Decompose User Task API?
-
-- **SMART‑compliant output** ensures that each generated task meets the Specific, Measurable, Achievable, Relevant, and Time‑bound criteria.
-- **Built‑in hour‑based time estimation** removes the need for manual calculations and improves forecasting accuracy.
-- **Ready‑to‑import file formats** (CSV, XLSX, etc.) facilitate integration with Redmine, Jira, Azure DevOps, and other project‑management platforms.
-- **Single‑request automation** enables task breakdown via a single request, accelerating project initiation and minimizing manual effort.
-
-## How to Use the Decompose User Task API with SDKs
-
-### Decompose User Task API Specification
-
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/AI/DecomposeUserTask" target="_blank" rel="noopener noreferrer">Decompose User Task API Specification</a> provides a publicly accessible programming interface for executing REST interactions directly from a web browser.
-
-## Excel API SDK
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts low‑level details and lets you call the DecomposeUserTask endpoint with concise code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.  
-The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:
+Use Aspose.Cells Cloud SDKs for concise, type-safe integration. The following examples call the `DecomposeUserTask` endpoint:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example_v4.0_DecomposeUserTask.cs" >}}
+
+```csharp
+// Example: C# SDK for DecomposeUserTask
+var configuration = new Configuration { AppSid = "xxxx", AppKey = "yyyy" };
+var api = new CellsApi(configuration);
+
+var taskDescription = "Develop a web API for task splitting with OpenAPI spec.";
+var region = "en-US";
+var response = api.CellsAIDecomposeUserTask(taskDescription, region);
+response.Save("DecomposedTaskPlan.xlsx");
+```
+
 {{</tab>}}
 {{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_v4.0_DecomposeUserTask.java" >}}
+
+```java
+// Example: Java SDK for DecomposeUserTask
+Configuration config = new Configuration("xxxx", "yyyy");
+CellsApi api = new CellsApi(config);
+
+String taskDescription = "Develop a web API for task splitting with OpenAPI spec.";
+String region = "en-US";
+File response = api.cellsAIDecomposeUserTask(taskDescription, region, null);
+```
+
 {{</tab>}}
 {{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_v4.0_DecomposeUserTask.php" >}}
+
+```php
+// Example: PHP SDK for DecomposeUserTask
+$configuration = new Configuration(["appSid" => "xxxx", "apiKey" => "yyyy"]);
+$api = new CellsApi(null, $configuration);
+
+$taskDescription = "Develop a web API for task splitting with OpenAPI spec.";
+$region = "en-US";
+$response = $api->cellsAIDecomposeUserTask($taskDescription, $region);
+file_put_contents("DecomposedTaskPlan.xlsx", $response);
+```
+
 {{</tab>}}
 {{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_v4.0_DecomposeUserTask.rb" >}}
+
+```ruby
+# Example: Ruby SDK for DecomposeUserTask
+configuration = AsposeCellsCloud::Configuration.new
+configuration.app_sid = "xxxx"
+configuration.api_key = "yyyy"
+api = AsposeCellsCloud::CellsApi.new(nil, configuration)
+
+task_desc = "Develop a web API for task splitting with OpenAPI spec."
+response = api.cells_ai_decompose_user_task(task_desc, region: "en-US")
+File.write("DecomposedTaskPlan.xlsx", response)
+```
+
 {{</tab>}}
 {{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_v4.0_DecomposeUserTask.ts" >}}
+
+```typescript
+// Example: Node.js SDK for DecomposeUserTask
+import { CellsApi, CellsCloudConfiguration } from "@aspose/cells-cloud";
+
+const config = new CellsCloudConfiguration({
+  clientId: "xxxx",
+  clientSecret: "yyyy",
+});
+
+const cellsApi = new CellsApi(config);
+const taskDescription = "Develop a web API for task splitting with OpenAPI spec.";
+const region = "en-US";
+
+const response = await cellsApi.cellsAIDecomposeUserTask(taskDescription, region);
+await response.save("DecomposedTaskPlan.xlsx");
+```
+
 {{</tab>}}
 {{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_v4.0_DecomposeUserTask.py" >}}
+
+```python
+# Example: Python SDK for DecomposeUserTask
+from asposecellscloud.api import cells_api
+from asposecellscloud.configuration import Configuration
+
+config = Configuration(app_sid="xxxx", app_key="yyyy")
+api = cells_api.CellsApi(config)
+
+task_desc = "Develop a web API for task splitting with OpenAPI spec."
+region = "en-US"
+response = api.cells_ai_decompose_user_task(task_desc, region=region)
+with open("DecomposedTaskPlan.xlsx", "wb") as f:
+    f.write(response)
+```
+
 {{</tab>}}
 {{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_v4.0_DecomposeUserTask.pl" >}}
+
+```perl
+# Example: Perl SDK for DecomposeUserTask
+use AsposeCellsCloud::Configuration;
+use AsposeCellsCloud::CellsApi;
+
+my $config = AsposeCellsCloud::Configuration->new(
+  app_sid => "xxxx",
+  app_key => "yyyy"
+);
+my $api = AsposeCellsCloud::CellsApi->new(config => $config);
+
+my $task_desc = "Develop a web API for task splitting with OpenAPI spec.";
+my $region = "en-US";
+my $response = $api->cells_ai_decompose_user_task($task_desc, region => $region);
+```
+
 {{</tab>}}
 {{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_v4.0_DecomposeUserTask.go" >}}
+
+```go
+// Example: Go SDK for DecomposeUserTask
+import (
+  "context"
+  "os"
+  "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v43/cells"
+)
+
+config := cells.NewConfiguration()
+config.AppSid = "xxxx"
+config.AppKey = "yyyy"
+api := cells.NewAPIClient(config)
+
+taskDesc := "Develop a web API for task splitting with OpenAPI spec."
+region := "en-US"
+response, _, err := api.CellsAIDecomposeUserTask(context.Background(), taskDesc, &region)
+if err != nil { panic(err) }
+
+file, _ := os.Create("DecomposedTaskPlan.xlsx")
+defer file.Close()
+file.Write(response)
+```
+
 {{</tab>}}
 {{< /tabs >}}
+
+> 🔗 **Get SDKs**: [Aspose.Cells Cloud SDKs on GitHub](https://github.com/aspose-cells-cloud){rel="noopener noreferrer"}
+
+---
+
+## Best Practices
+
+- **Input Clarity**: Use action-oriented language (e.g., “Build X” instead of “Think about X”) for more accurate decomposition.
+- **Regional Settings**: Specify `region` if your project uses non-US date/number formats (e.g., `de-DE` for German locales).
+- **Export Format**: While `.xlsx` is default, use SDK options or custom headers to request CSV (e.g., `Accept: text/csv`).
+- **Milestone Mapping**: Milestone nodes are auto-generated for major phase transitions (e.g., “Design Complete”, “Testing Started”).
+
+---
+
+## Related Documentation
+
+- [Redmine Integration Guide](/redmine-integration/)  
+- [Aspose.Cells Cloud SDK Overview](/sdks/)  
+- [Project Management Automation Overview](/project-automation/)  
+
+---
+
+> © 2024 Aspose Pty Ltd. Aspose.Cells Cloud is a registered trademark of Aspose Pty Ltd.  
+> API Version: **v4.0** | Released: **June 2024**

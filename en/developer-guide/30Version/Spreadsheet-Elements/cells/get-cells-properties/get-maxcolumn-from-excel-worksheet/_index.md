@@ -3,8 +3,11 @@ title: "Get MaxColumn from Excel Worksheet"
 type: docs
 url: /get-maxcolumn-from-excel-worksheet/
 weight: 60
-keywords: "Aspose Cells API, maxcolumn, Excel worksheet, REST, SDK"
-description: "Retrieve the maximum column index of a worksheet using Aspose.Cells Cloud API. Includes cURL request with authentication, response schema, parameters, error codes, and SDK examples (C#, Java, Python, etc.)."
+keywords: "Aspose.Cells API, maxcolumn, Excel worksheet, REST API, SDK"
+description: "Use Aspose.Cells Cloud API to get the max column index in an Excel worksheet. cURL, JSON, and SDK examples (C#, Java, Python, etc.)."
+date: 2023-11-15
+draft: false
+canonical: https://docs.aspose.com/cells-cloud/get-maxcolumn-from-excel-worksheet/
 ---
 
 This REST API returns the maximum column index in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxcolumn`.
@@ -40,7 +43,7 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 - **Use Aspose.Cells Cloud SDKs**
 
-Using an SDK is the fastest way to develop. An SDK handles low‑level details, allowing you to focus on your project logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK handles low‑level details, allowing you to focus on your project logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud){: rel="noopener noreferrer" target="_blank"} for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
@@ -90,7 +93,9 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="8" >}}
 
-<!-- Swift example (currently not provided) -->
+{{< alert title="Coming Soon" color="warning" >}}
+Swift SDK support for this endpoint is pending. In the meantime, use the cURL example above.
+{{< /alert >}}
 
 {{< /tab >}}
 
@@ -107,4 +112,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-

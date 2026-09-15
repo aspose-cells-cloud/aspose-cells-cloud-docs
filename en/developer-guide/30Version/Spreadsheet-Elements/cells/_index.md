@@ -11,9 +11,9 @@ description: "Explore the Aspose.Cells Cloud API for Excel cell operations, incl
 weight: 100
 ---
 
-Cells is the basic operational object of Aspose.Cells for Excel files.
+Cells are the fundamental operational units in Aspose.Cells for working with Excel files.
 
-Developers use cell operations to read, write, style, merge, and calculate data within Excel workbooks, enabling powerful automation and data‑processing scenarios.
+Developers use cell operations to read, write, style, merge, and calculate data within Excel workbooks, enabling powerful automation and data-processing scenarios.
 
 ## Feature Map
 
@@ -39,7 +39,7 @@ Developers use cell operations to read, write, style, merge, and calculate data 
             <li><a href="/cells/clear-cells-formatting-in-excel-worksheet/">Clear cells formatting in an Excel worksheet.</a></li>
             <li><a href="/cells/update-multiple-cells-style/">Update multiple cells' style on an Excel worksheet.</a></li>
             <li><a href="/cells/change-cell-style-in-excel-worksheet/">Change cell style in an Excel worksheet.</a></li>
-            <li><a href="/cells/apply-rich-text-formatting-to-a-cell/">Apply rich‑text formatting to a cell in an Excel worksheet.</a></li>
+            <li><a href="/cells/apply-rich-text-formatting-to-a-cell/">Apply rich-text formatting to a cell in an Excel worksheet.</a></li>
             <li><a href="/cells/clear-contents-and-styles-of-cells-in-excel-worksheet/">Clear contents and styles of cells in an Excel worksheet.</a></li>
             <li><a href="/cells/working-with-conditional-formatting/">Add, delete, or update conditional formatting on an Excel worksheet.</a></li>
         </ul>
@@ -51,7 +51,7 @@ Developers use cell operations to read, write, style, merge, and calculate data 
     <div class="col-md-6">
         <ul>
             <li><a href="/cells/merge-cells-in-excel-worksheet/">Merge cells in an Excel worksheet.</a></li>
-            <li><a href="/cells/unmerge-cells-in-excel-worksheet/">Unmerge Cells in an Excel worksheet.</a></li>
+            <li><a href="/cells/unmerge-cells-in-excel-worksheet/">Unmerge cells in an Excel worksheet.</a></li>
             <li><a href="/cells/get-cells-properties/">Get cells properties.</a></li>
         </ul>
     </div>

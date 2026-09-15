@@ -4,8 +4,10 @@ type: docs
 url: /get-maxdatarow-from-excel-worksheet/
 weight: 50
 keywords: "Excel, Aspose.Cells Cloud, REST API, Get MaxDataRow, Worksheet"
-description: "Retrieves the index of the last row that contains data in a specified worksheet of an Excel workbook using the Aspose.Cells Cloud REST API."
+description: "Learn how to retrieve the last row index with data in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL and SDK examples (C#, Java, Python, more)."
 ArticleTitle: "Aspose.Cells Cloud API – Get MaxDataRow from Excel Worksheet"
+date: 2024-05-15
+lastmod: 2024-05-18
 ---
 
 This REST API returns the maximum data row index in an Excel file when the `cellOrMethodName` parameter is set to `maxdatarow`.
@@ -60,43 +62,43 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNET-CSharp-Cells-GetMaxDataRowWorksheet-1.cs" >}}
+{{< gist "8a5b324fdf3e574dbd747c1a1e24b05d" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-cells-GetMaxDataRowWorksheet-get-max-data-row.java" >}}
+{{< gist "c59aa5c02f735466a5e34751cee73f5f" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-Cells-GetWorksheetMaxDataRow.php" >}}
+{{< gist "84283c8ba766ed815f47e6dfb0891152" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Examples-Ruby-Cells-get_worksheet_max_data_row.rb" >}}
+{{< gist "36ed8b8727561b92692939513d365fca" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "GetMaxDataRowFromExcelWorksheet.py" >}}
+{{< gist "61e922de11e6e7144db88adcad6501c1" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetMaxDataRowWorksheet-1.js" >}}
+{{< gist "e82de2e4189bc27ae92abf73c36b4df0" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "9d725d4678edaac53f95c5208e17783c" "Examples-Android-cells-GetMaxDataRowWorksheet-get-max-data-row.java" >}}
+{{< gist "9d725d4678edaac53f95c5208e17783c" >}}
 
 {{< /tab >}}
 
@@ -106,13 +108,13 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-Cells-GetMaxDataRowWorksheet-1.pl" >}}
+{{< gist "f82a3a00251e34ff8766116282c8c9ca" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
 
-{{< gist "aspose-cells-cloud-gists" "7b834250a25feb5b8a30500cf62cf7a9" >}}
+{{< gist "7b834250a25feb5b8a30500cf62cf7a9" >}}
 
 {{< /tab >}}
 
@@ -120,8 +122,8 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 **See also**
 
-- <a href="https://docs.aspose.cloud/cells/get-maxrow-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">Get MaxRow from Excel Worksheet</a>  
-- <a href="https://docs.aspose.cloud/cells/get-maxcolumn-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">Get MaxColumn from Excel Worksheet</a>  
+- <a href="https://docs.aspose.cloud/cells/get-maxdatarow-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">Get MaxDataRow from Excel Worksheet</a>  
+- <a href="https://docs.aspose.cloud/cells/get-maxdatacolumn-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">Get MaxDataColumn from Excel Worksheet</a>  
 - <a href="https://docs.aspose.cloud/cells/get-mindatarow-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">Get MinDataRow from Excel Worksheet</a>
 
 <script type="application/ld+json">
@@ -153,4 +155,4 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 }
 </script>
 
-*Last updated: 2026-07-30*
+*Last updated: 2024-05-18*

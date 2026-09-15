@@ -3,8 +3,11 @@ title: "Get Cell Data from a Worksheet"
 type: docs
 url: /get-cell-data-from-a-worksheet/
 weight: 10
+date: 2024-06-15
+api_version: "3.0"
 keywords: "Aspose.Cells Cloud, get cell data, Excel API, REST API, cell value, worksheet API, Aspose API example"
-description: "Retrieve a single cell’s value, type, and style from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL, SDK examples, parameters, and error handling."
+description: "Retrieve a single cell’s value, type, and style from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL, SDK examples, parameters, and error handling. This guide shows how to retrieve cell metadata — including value, type, and formatting — from an Excel worksheet via Aspose.Cells Cloud REST API v3.0, with working cURL and SDK examples."
+ArticleTitle: "Get Cell Data from a Worksheet"
 ---
 
 This REST API retrieves a cell from an Excel worksheet when the **`cellOrMethodName`** parameter specifies a cell name (an A1‑style address such as `A3`).
@@ -17,19 +20,19 @@ This REST API retrieves a cell from an Excel worksheet when the **`cellOrMethodN
 
 ```shell
 curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3" \
-     -H "Authorization: Bearer <access_token>" \
+     -H "Authorization: Bearer <access_token>¹" \
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
 ```
 
 **Parameters**
 
-| Parameter          | Type   | Description                                               | Required |
-|--------------------|--------|-----------------------------------------------------------|----------|
-| `cellOrMethodName` | string | Must be set to `firstcell` to retrieve the first cell.   | Yes      |
-| `fileName`         | string | Name of the workbook file (e.g., `myWorkbook.xlsx`).      | Yes      |
-| `worksheet`        | string | Name of the worksheet (e.g., `Sheet1`).                  | Yes      |
-| `Authorization`    | header | Bearer token for authentication.                         | Yes      |
+| Parameter          | Type   | Description                                                                 | Required |
+|--------------------|--------|-----------------------------------------------------------------------------|----------|
+| `cellOrMethodName` | string | Must match the cell address (e.g., `A3`) or method (e.g., `firstcell`, `lastcell`). | Yes      |
+| `fileName`         | string | Name of the workbook file (e.g., `myWorkbook.xlsx`).                       | Yes      |
+| `worksheet`        | string | Name of the worksheet (e.g., `Sheet1`).                                    | Yes      |
+| `Authorization`    | header | Bearer token for authentication.                                            | Yes      |
 
 {{< /tab >}}
 
@@ -49,7 +52,6 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
     "IsInArray": false,
     "IsErrorValue": false,
     "IsInTable": false,
-    "IsStyleSet": false,
     "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Category</Font>",
     "Style": {
       "link": {
@@ -63,13 +65,15 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 }
 ```
 
+> *Note: `IsStyleSet` is deprecated in v3.1+; use `Style` object instead.*
+
 {{< /tab >}}
 
 {{< /tabs >}}
 
 - **Use Aspose.Cells Cloud SDKs**
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="TypeScript" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -120,3 +124,5 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 {{< /tab >}}
 
 {{< /tabs >}}
+
+¹ Obtain your access token via [OAuth 2.0 authentication](/oauth2-authentication/).

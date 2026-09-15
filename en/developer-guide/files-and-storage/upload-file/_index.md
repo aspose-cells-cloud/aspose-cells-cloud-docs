@@ -1,164 +1,221 @@
 ---
-title: "Aspose.Cells Cloud Upload File API – An Interface for Fast Uploading of Files in the Cloud"
-second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud Upload File API – An Interface for Fast Uploading of Files in the Cloud"
+title: "Upload File to Cloud Storage"
+url: /cells/upload-file/
 linktitle: "Upload File"
+description: "Securely upload Excel files to cloud storage using Aspose.Cells Cloud REST API. Includes cURL examples, JWT authentication, request parameters, and SDK support for C#, Java, Python, and more."
+keywords: "Aspose.Cells Cloud upload API, Excel file upload REST API, cloud storage upload, multipart/form-data, JWT authentication"
 type: docs
-url: /upload-file/
-keywords: "Aspose.Cells, file upload, Excel API, cloud storage, REST API"
-description: "Guide to uploading files with Aspose.Cells Cloud API, covering request parameters, HTTP status codes, error handling, and code examples."
 weight: 100
+last_updated: 2024-06-20
+tags:
+  - upload
+  - cloud
+  - excel
+  - rest-api
 ---
 
-The **uploadFile** API enables developers to upload files directly to cloud storage for processing with Aspose Cells.
+The **Upload File** API enables developers to upload Excel and other supported files directly to cloud storage for subsequent processing with Aspose.Cells Cloud services. Files are transmitted via `multipart/form-data`, and the API supports overwrite operations with optional storage targeting via `storageName`. This guide covers authentication, request structure, response format, error handling, and practical usage examples.
 
-## **Aspose Cells API: Upload File**
+## **Aspose.Cells Cloud Upload File API**
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/storage/file/{path}
+PUT https://api.aspose.cloud/v4.0/cells/storage/file/{path}
 ```
 
-### **Security and Authentication**
+### **Prerequisites**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+- An active [Aspose Cloud account](https://dashboard.aspose.cloud/)
+- Valid App SID and App Key (used to generate JWT tokens)
+- File size ≤ 2 GB (per API limit)
+- Supported formats: XLS, XLSX, XLSB, XLSM, CSV, TSV, ODS, and more
+
+---
+
+### **Authentication**
+
+All requests require a [JWT token](https://docs.aspose.cloud/cells/getting-started/rest-api-overview/authenticating-api-requests/) issued via OAuth 2.0.
 
 ```bash
 -H "Authorization: Bearer {access_token}"
 ```
 
-### The request parameters of the **uploadFile** API are
+> 🔒 **Security Note**: Tokens expire after 24 hours. Refresh tokens are required for long-running integrations.
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                    |
-| :------------- | :----- | :-------------------------- | :--------------------------------------------------------------------------------------------- |
-| UploadFiles    | File   | FormData                    | Upload files to cloud storage.                                                                 |
-| path           | String | Path                        | The destination path in the cloud storage. Specify the path where the file should be uploaded. |
-| storageName    | String | Query                       | The name of the storage where the file will be uploaded.                                       |
+---
 
-### **Response**
+### **Request Parameters**
 
-```json
-{
-  "Name": "FilesUploadResult",
-  "Description": ["File upload result"],
-  "Type": "Class",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "Uploaded",
-      "Description": ["List of uploaded file names"],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "String",
-        "ElementDataType": {
-          "Identifier": "String",
-          "Name": "string"
-        },
-        "Name": "container"
-      }
-    },
-    {
-      "Name": "Errors",
-      "Description": ["List of errors."],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "Error",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "Error",
-          "Name": "class:error"
-        },
-        "Name": "container"
-      }
-    }
-  ]
-}
-```
+| Parameter    | Type   | Location | Required | Description                                                                 |
+|--------------|--------|----------|----------|-----------------------------------------------------------------------------|
+| `UploadFiles`| File   | FormData | Yes      | The file to upload (multipart/form-data field name: `UploadFiles`)        |
+| `path`       | String | Path     | Yes      | Destination path in cloud storage (e.g., `input/Report.xlsx`)              |
+| `storageName`| String | Query    | No       | Name of the cloud storage (defaults to first configured storage if omitted) |
 
-The API returns the following HTTP status codes:
+---
 
-| Status Code                   | Description                                         |
-| ----------------------------- | --------------------------------------------------- |
-| **200 OK**                    | File uploaded successfully.                         |
-| **400 Bad Request**           | Invalid parameters or malformed request.            |
-| **401 Unauthorized**          | Missing or invalid authentication token.            |
-| **403 Forbidden**             | Insufficient permissions for the specified storage. |
-| **500 Internal Server Error** | Unexpected server error.                            |
+### **Response Format**
 
-## How to Use the upload file API with SDKs?
-
-### OpenAPI Specification
-
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/UploadFile) provides a detailed description of the API, enabling developers to interact with it directly via a web browser.
-
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/file/Folder/Book1.xlsx" \
-  -H "Authorization: Bearer {access_token}" \
-  -F "UploadFiles=@/path/to/Book1.xlsx" \
-  -F "path=Folder/Book1.xlsx"
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
+On success, the API returns a `FilesUploadResult` object:
 
 ```json
 {
-  "Uploaded": ["Book1.xlsx"],
+  "Uploaded": ["Report.xlsx"],
   "Errors": []
 }
 ```
 
+| Field     | Type       | Description                                  |
+|-----------|------------|----------------------------------------------|
+| `Uploaded`| `string[]` | List of successfully uploaded file names    |
+| `Errors`  | `Error[]`  | List of errors (empty on success)            |
+
+#### HTTP Status Codes
+
+| Code | Description |
+|------|-------------|
+| `200 OK` | File uploaded successfully |
+| `400 Bad Request` | Invalid `path`, malformed request, or missing `UploadFiles` |
+| `401 Unauthorized` | Missing, expired, or invalid JWT token |
+| `403 Forbidden` | Insufficient permissions for target storage |
+| `500 Internal Server Error` | Unexpected server-side failure |
+
+---
+
+### **How to Use the Upload File API**
+
+#### **cURL Example**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/file/input/Report.xlsx?storageName=MyStorage" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." \
+  -H "Content-Type: multipart/form-data" \
+  -F "UploadFiles=@/local/path/Report.xlsx"
+```
+
+#### **Response Example**
+
+```json
+{
+  "Uploaded": ["Report.xlsx"],
+  "Errors": []
+}
+```
+
+---
+
+### **SDK Examples**
+
+Using Aspose.Cells Cloud SDKs simplifies authentication, error handling, and request construction.
+
+{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// Aspose.Cells Cloud SDK for C# v24.6.0
+var cellsApi = new CellsApi(clientId, clientSecret);
+using var fileStream = File.OpenRead("Report.xlsx");
+var response = await cellsApi.UploadFile("input/Report.xlsx", fileStream, "MyStorage");
+Console.WriteLine($"Uploaded: {string.Join(", ", response.Uploaded)}");
+```
 {{< /tab >}}
-
+{{< tab tabNum="2" >}}
+```java
+// Aspose.Cells Cloud SDK for Java v24.6
+CellsApi cellsApi = new CellsApi(clientId, clientSecret);
+File file = new File("Report.xlsx");
+FilesUploadResult result = cellsApi.uploadFile("input/Report.xlsx", file, "MyStorage");
+System.out.println("Uploaded: " + result.getUploaded());
+```
+{{< /tab >}}
+{{< tab tabNum="3" >}}
+```php
+// Aspose.Cells Cloud SDK for PHP v24.6
+$cellsApi = new CellsApi($clientId, $clientSecret);
+$file = fopen("Report.xlsx", "r");
+$result = $cellsApi->uploadFile("input/Report.xlsx", $file, "MyStorage");
+echo "Uploaded: " . implode(", ", $result->Uploaded);
+```
+{{< /tab >}}
+{{< tab tabNum="4" >}}
+```ruby
+# Aspose.Cells Cloud SDK for Ruby v24.6
+cells_api = AsposeCellsCloud::CellsApi.new(client_id, client_secret)
+file = File.open("Report.xlsx", "rb")
+result = cells_api.upload_file("input/Report.xlsx", file, storage_name: "MyStorage")
+puts "Uploaded: #{result.uploaded.join(', ')}"
+```
+{{< /tab >}}
+{{< tab tabNum="5" >}}
+```typescript
+// Aspose.Cells Cloud SDK for Node.js v24.6
+const cellsApi = new CellsApi(clientId, clientSecret);
+const fileStream = fs.createReadStream("Report.xlsx");
+const response = await cellsApi.uploadFile("input/Report.xlsx", fileStream, "MyStorage");
+console.log(`Uploaded: ${response.body.uploaded.join(', ')}`);
+```
+{{< /tab >}}
+{{< tab tabNum="6" >}}
+```python
+# Aspose.Cells Cloud SDK for Python v24.6
+api = CellsApi(client_id, client_secret)
+with open("Report.xlsx", "rb") as f:
+    response = api.upload_file("input/Report.xlsx", f, storage_name="MyStorage")
+print(f"Uploaded: {', '.join(response.uploaded)}")
+```
+{{< /tab >}}
+{{< tab tabNum="7" >}}
+```perl
+# Aspose.Cells Cloud SDK for Perl v24.6
+my $cells_api = AsposeCellsCloud::API::CellsApi->new(
+    client_id => $client_id,
+    client_secret => $client_secret
+);
+my $file = IO::File->new("Report.xlsx", "r");
+my $result = $cells_api->upload_file("input/Report.xlsx", $file, storage_name => "MyStorage");
+print "Uploaded: " . join(", ", @{$result->uploaded});
+```
+{{< /tab >}}
+{{< tab tabNum="8" >}}
+```go
+// Aspose.Cells Cloud SDK for Go v24.6
+api := cells.NewCellsApi(clientId, clientSecret)
+file, _ := os.Open("Report.xlsx")
+defer file.Close()
+result, _, err := api.UploadFile("input/Report.xlsx", file, "MyStorage")
+fmt.Printf("Uploaded: %v\n", result.Uploaded)
+```
+{{< /tab >}}
 {{< /tabs >}}
 
-### Use Aspose.Cells Cloud SDKs
+> ℹ️ **Note**: All SDK examples above assume v24.6.0. Update to the latest version via [GitHub](https://github.com/aspose-cells-cloud).
 
-Utilizing an SDK enhances development efficiency by managing low‑level details, allowing developers to concentrate on project tasks. Visit the [GitHub repository](https://github.com/aspose-cells-cloud) for a comprehensive list of Aspose.Cells Cloud SDKs.
+---
 
-The following code examples illustrate how to call Aspose.Cells web services using various SDKs:
+### **Advanced Notes**
 
-{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_UploadFile.cs" >}}
-{{</tab>}}
-{{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_UploadFile.java" >}}
-{{</tab>}}
-{{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_UploadFile.php" >}}
-{{</tab>}}
-{{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_UploadFile.rb" >}}
-{{</tab>}}
-{{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_UploadFile.ts" >}}
-{{</tab>}}
-{{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_UploadFile.py" >}}
-{{</tab>}}
-{{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_UploadFile.pl" >}}
-{{</tab>}}
-{{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_UploadFile.go" >}}
-{{</tab>}}
-{{< /tabs >}}
+- **Overwrite Behavior**: Existing files at the target path are silently overwritten. To avoid accidental overwrites, use unique paths or check file existence first.
+- **Multipart Handling**: Ensure your client sends `Content-Type: multipart/form-data` with the file as field `UploadFiles`.
+- **Storage Selection**: Specify `storageName` to target a specific cloud storage (e.g., `MyStorage`) instead of the default.
+- **Error Handling**: Inspect the `Errors` array in the response for partial failures (e.g., multi-file uploads).
 
-**See also**
+---
 
-- [Download File API](/download-file/) – Retrieve a file from cloud storage.
-- [Copy File API](/copy-file/) – Duplicate a file within cloud storage.
-- [Delete File API](/delete-file/) – Remove a file from cloud storage.
+### **Visual Overview**
+
+![Upload File Flow](https://docs.aspose.cloud/cells/upload-flow.svg)  
+*Client → JWT Auth → UploadFile Endpoint → Cloud Storage*
+
+---
+
+### **See Also**
+
+- [Download File API](https://docs.aspose.cloud/cells/download-file/)  
+- [Copy File API](https://docs.aspose.cloud/cells/copy-file/)  
+- [Delete File API](https://docs.aspose.cloud/cells/delete-file/)  
+- [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/UploadFile)  
+- [Authentication Guide](https://docs.aspose.cloud/cells/getting-started/rest-api-overview/authenticating-api-requests/)  
+
+---
+
+> 📝 **Last Updated**: 2024-06-20  
+> ⚙️ **API Version**: v4.0  
+> 🛠️ **SDK Version**: 24.6.0

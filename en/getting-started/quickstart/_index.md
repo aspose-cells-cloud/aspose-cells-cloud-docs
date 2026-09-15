@@ -1,13 +1,15 @@
 ---
 title: "Aspose.Cells Cloud Quickstart: Create a spreadsheet application in 5 minutes"
 second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud Quickstart"
-linktitle: "Quickstart"
-type: docs
-url: /quickstart/
-description: "Aspose.Cells Cloud enables creating, converting, merging, splitting, protecting Excel files and performing inner‑object operations, among many other features."
+ArticleTitle: "Aspose.Cells Cloud Quickstart: Build an Excel Spreadsheet App in 5 Minutes"
+linktype: "docs"
+url: "/quickstart/"
+description: "Build an Excel spreadsheet app in 5 minutes with Aspose.Cells Cloud: REST API setup, free account creation, security credentials, and SDK installation for Python, Java, C#, and more."
+date: 2024-02-15
+lastmod: 2024-03-28
+last_reviewed: 2024-03-28
 weight: 20
-keywords: "Aspose.Cells Cloud, Excel, Spreadsheet, API, Cloud SDK, REST API, PDF, CSV, JSON, Quickstart"
+keywords: "Aspose.Cells Cloud, Excel, Spreadsheet, API, Cloud SDK, REST API, PDF, CSV, JSON, Quickstart, Python, Java, C#, Node.js, Go, Ruby, Perl, PHP, Swift"
 ---
 
 These instructions guide you through initializing the Aspose.Cells Cloud API and installing the required spreadsheet‑processing libraries.
@@ -17,6 +19,8 @@ You can easily integrate spreadsheet conversion, generation, and editing feature
 ## Create a Free Account
 
 Aspose Cloud relies on a clear and comfortable pricing model that lets you fully evaluate and test the product before committing to a purchase.
+
+Free accounts include 1,000 monthly API calls and 250 MB storage. Upgrade anytime for production use.
 
 First, you need to create a free account to have access to Cloud infrastructure:
 
@@ -34,13 +38,14 @@ Congratulations! You have successfully signed up with Aspose Cloud.
 
 Next, you need to make individual adjustments to your account:
 
-- Access your [Aspose Account Settings](https://id.containerize.com/admin/) by clicking the icon in the upper‑right corner of the page.
+- Access your [Aspose Account Settings](https://id.containerize.com/admin/) by clicking the icon in the upper‑right corner of the page.  
+  *Aspose uses Containerize SSO for secure authentication. Learn more about our security model [here](https://aspose.cloud/security).*
 
-![dashboard.png](dashboard.png)
+![dashboard.png](/images/dashboard.png)
 
 - Select the **Account Settings** item from the menu bar. Check your settings and click the **Save Changes** button to confirm.
 
-![settings.png](settings.png)
+![settings.png](/images/settings.png)
 
 ## Get Your Security Credentials (Client Id & Secret)
 
@@ -50,22 +55,30 @@ An Application is a set of unique API credentials — **Client Id** and **Client
 
 To access information about your Applications, please perform the following steps:
 
+### Step 1: Navigate to Applications
+
 1. Log in to [Aspose Dashboard](https://dashboard.aspose.cloud/#/)
 2. On the left side of the page click the [Applications](https://dashboard.aspose.cloud/applications) tab.
 
-![applications.png](applications.png)
+![applications.png](/images/applications.png)
+
+### Step 2: Create a New Application
 
 3. Scroll down to the bottom of the page; you will find a **Create New Application** button. Click it to create a new application.
 
-![createnewapplication.png](createnewapplication.png)
+![createnewapplication.png](/images/createnewapplication.png)
+
+### Step 3: Configure Application Details
 
 4. On the creation page, enter the name, description, and storage address you want, then click the **Save** button to return to the previous page after successful creation.
 
-![applicationinfo.png](applicationinfo.png)
+![applicationinfo.png](/images/applicationinfo.png)
+
+### Step 4: View Security Credentials
 
 5. Scroll down to the bottom of the page; you will see the Application information box you just created. Click it to view and update your security credentials.
 
-![firstapp.png](firstapp.png)
+![firstapp.png](/images/firstapp.png)
 
 {{% alert style="info" %}}
 
@@ -81,9 +94,15 @@ For the effective use of Cloud API, we provide a family of powerful [Cloud SDKs]
 
  All of the above SDKs are hosted on [GitHub](https://github.com/aspose-cells-cloud/). Each repository contains a wide range of code examples to illustrate its usage.
 
+{{% alert style="warning" %}}
+
+⚠️ **Deprecation Notice**: Perl and Ruby SDKs are archived and no longer actively maintained. For new projects, use Aspose.Cells Cloud REST API directly or adopt our actively maintained SDKs (Python, Java, C#, Go, Node.js). See the [SDK Status Dashboard](https://github.com/aspose-cells-cloud/) for activity updates.
+
+{{% /alert %}}
+
 ## Check the Developer Documentation and Code Examples
 
-Now your account is fully configured and the developer environment is installed. You can start writing code with the chosen SDK. Please refer to the [Developer Guide](https://docs.aspose.cloud/cells/developer-guide/) for information on using the Cloud API easily.
+Now your account is fully configured and the developer environment is installed. You can start writing code with the chosen SDK. Please refer to the [Aspose.Cells Developer Guide: Cloud API Authentication & Workflow](https://docs.aspose.cloud/cells/developer-guide/) for information on using the Cloud API easily.
 
 e.g. Convert a Workbook to other formats.
 

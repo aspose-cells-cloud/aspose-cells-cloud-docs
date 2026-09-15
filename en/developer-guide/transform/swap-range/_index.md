@@ -1,130 +1,159 @@
 ---
-title: "Aspose.Cells Cloud – Swap Columns, Rows & Ranges (v4.0)"
-second_title: "Document"
-ArticleTitle: "Swap/Exchange Data Between Columns, Rows, and Cells in Excel"
-linktitle: "Swap Range"
-type: docs
+title: "Swap Ranges in Excel – Aspose.Cells Cloud API v4.0"
+description: "Use Aspose.Cells Cloud API v4.0 to swap columns, rows, or ranges in Excel files while preserving formatting, formulas, and cell references."
+keywords: "excel swap range, cloud spreadsheet api, aspose.cells cloud, exchange cells"
 url: /swap-range/
-keywords: "Aspose Cells, Excel API, Swap Range, Cloud Spreadsheet"
-description: "Swap columns, rows or ranges in Excel files with Aspose.Cells Cloud API. Preserve formatting, formulas, and cell references in a single request."
+linktitle: "Swap Ranges"
+type: docs
+date: 2024-05-15
 weight: 100
+tags: ["cells", "spreadsheet", "api", "transform"]
+categories: ["api-reference", "cloud"]
+summary: "Effortlessly exchange data between two columns, rows, or ranges in Excel files using Aspose.Cells Cloud API v4.0—ideal for financial modeling, ETL, and error correction."
 ---
 
-Automatically exchange data between any two columns, rows, ranges, or cells in Excel files using Aspose.Cells Cloud API. The Swap Range API enables precise data swapping while preserving all formatting, formulas, and cell references. It supports complex data re‑organization, batch processing, and seamless cloud integration for enterprise workflows.
+{{% alert color="primary" %}}
+**Prerequisites**  
+- Valid Aspose Cloud account and API credentials (client ID and client secret).  
+- Uploaded workbook to cloud storage (or include via `Spreadsheet` FormData).  
+- See [Authentication](/authentication/) and [File Upload](/upload/) for setup guidance.
+{{% /alert %}}
 
-## **Swap Range API**
+## Overview
 
-### Web API
+The **Swap Ranges API** enables precise, one-step exchange of data between two ranges—columns, rows, or cell blocks—in Excel workbooks (.xlsx, .xls). It preserves formatting, formulas, conditional formatting, and cell references, making it ideal for dynamic data reorganization without manual intervention.
+
+> **Key Benefits**  
+> - ✅ **Formatting & formula integrity**: No broken references after swap.  
+> - ✅ **Flexible scope**: Swap columns, rows, or arbitrary ranges (e.g., `A1:D10` ↔ `F1:I10`).  
+> - ✅ **Batch-ready**: Integrate into automated ETL or data-cleaning pipelines.  
+> - ✅ **Pay-per-use**: No fixed infrastructure costs.
+
+## API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/swap/range
 ```
 
-### **Security and Authentication**
+## Authentication
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+All requests require a [JWT access token](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ```bash
 -H "Authorization: Bearer {access_token}"
 ```
 
-### **Request Parameters**
+## Request Parameters
 
-| Parameter Name     | Type   | Location | Description                                                                                                                                   |
-| ------------------ | ------ | -------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Spreadsheet**    | File   | FormData | **Required.** The source Excel workbook file (`.xlsx`, `.xls`).                                                                               |
-| **worksheet1**     | String | Query    | **Required.** Name of the worksheet that contains the first data area.                                                                        |
-| **range1**         | String | Query    | **Required.** Cell range (e.g., `A1:D10`) in `worksheet1` to be swapped.                                                                      |
-| **worksheet2**     | String | Query    | **Required.** Name of the worksheet that contains the second data area (can be the same as `worksheet1`).                                     |
-| **range2**         | String | Query    | **Required.** Cell range (e.g., `F1:I10`) in `worksheet2` to be swapped. **Important:** `range1` and `range2` must have identical dimensions. |
-| **outPath**        | String | Query    | **Optional.** Cloud storage folder where the modified workbook will be saved.                                                                 |
-| **outStorageName** | String | Query    | **Required.** Name of the configured cloud storage service (e.g., `MyCompanyStorage`).                                                        |
-| **region**         | String | Query    | **Optional.** Locale setting (e.g., `en-US`, `ja-JP`) that may affect formatting.                                                             |
-| **password**       | String | Query    | **Optional.** Password to decrypt a protected spreadsheet. Omit if not encrypted.                                                             |
+| Parameter Name     | Type   | Location   | Required | Description |
+|--------------------|--------|------------|----------|-------------|
+| `Spreadsheet`      | File   | FormData   | ✅ Yes   | The source Excel workbook (`.xlsx`, `.xls`). |
+| `worksheet1`       | String | Query      | ✅ Yes   | Name of the worksheet containing the first range. |
+| `range1`           | String | Query      | ✅ Yes   | First range to swap (e.g., `A1:D10`). |
+| `worksheet2`       | String | Query      | ✅ Yes   | Name of the worksheet containing the second range (may equal `worksheet1`). |
+| `range2`           | String | Query      | ✅ Yes   | Second range to swap (e.g., `F1:I10`). **Must match `range1` in dimensions**. |
+| `outPath`          | String | Query      | ❌ No    | Cloud storage path to save the modified workbook (e.g., `/output/result.xlsx`). |
+| `outStorageName`   | String | Query      | ❌ No    | Name of the configured cloud storage (e.g., `MyCompanyStorage`). **Required only if `outPath` is specified**. |
+| `region`           | String | Query      | ❌ No    | Locale (e.g., `en-US`, `fr-FR`) for formatting and date/number parsing. |
+| `password`         | String | Query      | ❌ No    | Password for encrypted workbooks. Omit if unencrypted. |
 
-**Sample Request (cURL)**  
+### Notes on Parameters
+- `range1` and `range2` **must have identical dimensions** (e.g., both 5 rows × 4 columns). Mismatched ranges return `400 Bad Request`.
+- `outStorageName` is only required when `outPath` is provided. If omitted, the response returns the modified file as a stream.
+- If `region` is omitted, the server uses `en-US` by default.
+
+### Example Request (cURL)
 
 ```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/swap/range?worksheet1=Sheet1&range1=A1:D10&worksheet2=Sheet2&range2=F1:I10&outStorageName=MyCompanyStorage" \
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/swap/range?worksheet1=Sheet1&range1=A1:D10&worksheet2=Sheet1&range2=F1:I10&region=en-US" \
      -H "Authorization: Bearer {access_token}" \
      -F "Spreadsheet=@/path/to/workbook.xlsx"
 ```
 
-### **Response**
+> 💡 **Tip**: To save directly to cloud storage, add `outPath=/results/swapped.xlsx&outStorageName=MyCompanyStorage`.
+
+## Response
+
+The API returns the modified Excel file as a binary stream.
 
 ```json
-[
-  {
-    "Name": "ResponseFile",
-    "DataType": {
-      "Identifier": "File",
-      "Reference": "Stream"
-    }
+{
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream"
   }
-]
+}
 ```
 
-**Notes:**  
-- The API returns the modified workbook as a file stream. If `outPath` is specified, the file is also saved to the given cloud storage location.  
-- Mismatched range dimensions will result in a **400 Bad Request** error.
+- If `outPath` is specified, the file is saved to cloud storage *and* returned in the response.
+- If omitted, only the file stream is returned.
 
-### Error Codes
+## Error Handling
 
-| Code                 | Description                                                        |
-| -------------------- | ------------------------------------------------------------------ |
-| **400 Bad Request**  | Invalid request URI or mismatched range dimensions.                |
-| **401 Unauthorized** | Invalid or expired access token; client‑id or secret is incorrect. |
-| **404 Not Found**    | The specified spreadsheet file cannot be accessed.                 |
-| **500 Server Error** | An internal error occurred while processing the workbook.          |
+| HTTP Code | Description |
+|-----------|-------------|
+| `400 Bad Request` | Invalid range dimensions, malformed parameters, or missing required fields. |
+| `401 Unauthorized` | Missing, invalid, or expired JWT token. |
+| `404 Not Found` | Source workbook not found in cloud storage or path. |
+| `500 Server Error` | Internal processing failure (e.g., workbook corruption). |
 
-## Where Should We Use the Swap Range API?
+## Use Cases
 
-- **Financial Model Restructuring** – Re‑organize data blocks (e.g., move Q3 forecast to Q4) while preserving formulas and conditional formatting.
-- **Data Pipeline & ETL Processes** – Swap raw‑data ranges with cleaned ranges in a staging worksheet before final output.
-- **Error Correction & Data Recovery** – Quickly correct misplaced data without manual copy‑pasting.
+| Use Case | Description |
+|----------|-------------|
+| **Financial Model Restructuring** | Swap quarterly forecast blocks while preserving formulas and formatting. |
+| **ETL Data Staging** | Exchange raw data ranges with cleaned/transformed ranges in a staging sheet. |
+| **Error Correction** | Fix misaligned data imports by swapping misplaced ranges in bulk. |
 
-## Why Use the Swap Range API?
+## SDK Integration
 
-- **Developer‑Friendly** – SDKs are available for multiple languages, reducing development effort compared with building custom solutions.
-- **Reduces Labor Costs** – Automates data reshuffling, decreasing the need for manual consolidation.
-- **Pay‑per‑Use** – You only pay for the API calls you actually make.
-- **Zero Maintenance** – No servers to manage, no software updates, and no compatibility concerns.
+Aspose.Cells Cloud provides SDKs for major languages. The following examples swap `A1:D10` and `F1:I10` on `Sheet1`:
 
-## How to Use the Swap Range API with SDKs
-
-### Swap Range API Specification
-
-The [Swap Range API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Transform/SwapRange) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-### Use Aspose.Cells Cloud SDKs
-
-Using an SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to swap ranges with concise code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
-{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SwapRange.cs" >}}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go">}}
+{{<tab tabNum="1">}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SwapRange.cs">}}
 {{</tab>}}
-{{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SwapRange.java" >}}
+{{<tab tabNum="2">}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SwapRange.java">}}
 {{</tab>}}
-{{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SwapRange.php" >}}
+{{<tab tabNum="3">}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SwapRange.php">}}
 {{</tab>}}
-{{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SwapRange.rb" >}}
+{{<tab tabNum="4">}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SwapRange.rb">}}
 {{</tab>}}
-{{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SwapRange.ts" >}}
+{{<tab tabNum="5">}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SwapRange.ts">}}
 {{</tab>}}
-{{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SwapRange.py" >}}
+{{<tab tabNum="6">}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SwapRange.py">}}
 {{</tab>}}
-{{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SwapRange.pl" >}}
+{{<tab tabNum="7">}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SwapRange.pl">}}
 {{</tab>}}
-{{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SwapRange.go" >}}
+{{<tab tabNum="8">}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SwapRange.go">}}
 {{</tab>}}
 {{< /tabs >}}
+
+> 💡 **Pro Tip**: Use SDKs to avoid manual cURL handling and benefit from built-in error handling, retries, and type safety.
+
+## API Specification
+
+- [Swagger/OpenAPI Spec (Interactive)](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Transform/SwapRange)  
+- [GitHub SDK Repositories](https://github.com/aspose-cells-cloud){rel="noopener noreferrer"}
+
+## See Also
+
+- [Copy Ranges](/copy-range/)  
+- [Merge Ranges](/merge-range/)  
+- [Move Ranges](/move-range/)  
+- [Batch Transform Operations](/batch-transform/)
+
+---
+
+{{% alert color="info" %}}
+**Version Note**: This API is part of Aspose.Cells Cloud v4.0. For deprecation policies, see [API Versioning](/api-versioning/).  
+**Last Updated**: May 15, 2024  
+{{% /alert %}}

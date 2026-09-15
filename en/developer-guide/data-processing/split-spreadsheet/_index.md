@@ -1,163 +1,322 @@
 ---
-title: "Aspose.Cells Cloud Split Excel Web API – Split Excel Locally to Multiple Files & Export to 30+ Formats"
-second_title: "Document"
-ArticleTitle: "Excel Split Tool – Divide Local Spreadsheet into Files in 30+ Formats"
-linktitle: "Split Spreadsheet"
-type: docs
 url: /split-spreadsheet/
-keywords: "split, excel, aspose cells, spreadsheet API, export pdf, csv, json"
-description: "Split an Excel workbook locally into separate files using Aspose.Cells Cloud API. Export to 30+ formats (PDF, CSV, JSON, XLSX, HTML) without uploading to cloud."
-weight: 100
+title: "Aspose.Cells Cloud Split Excel Web API – Split Excel Locally to Multiple Files & Export to 30+ Formats"
+description: "Split Excel workbooks locally using Aspose.Cells Cloud API — no upload required. Export to PDF, CSV, JSON, and 30+ formats. Includes cURL & SDK examples for 8+ languages."
+date: 2024-03-15T10:00:00Z
+last_modified: 2024-05-22
+draft: false
+tags:
+  - split
+  - excel
+  - api
+  - local-processing
+  - sdk
+categories:
+  - data-processing
+  - cloud-api
+weight: 5
 ---
 
-Divide a local Excel workbook into separate files entirely — no cloud storage needed. Output supports 30+ file formats such as PDF, CSV, JSON, ODS, and XPS.
+# Split Excel Workbook Locally via Aspose.Cells Cloud API
 
-## **Split Spreadsheet API**
+Split a local Excel workbook into separate files — **entirely on the server side without requiring cloud storage**. Export to 30+ formats (PDF, CSV, JSON, XLSX, HTML, ODS, XPS, and more) using RESTful API or SDKs.
 
-### Web API
+> **Note**: While processing occurs on Aspose’s infrastructure, *no files are persisted to cloud storage*. The operation is fully local to your session — your data remains secure and unuploaded to persistent storage.
+
+## Prerequisites
+
+- Aspose.Cells Cloud account with valid **App SID** and **App Key**
+- `curl` installed (for REST examples)
+- Optional: SDK for your preferred programming language ([GitHub repository](https://github.com/aspose-cells-cloud))
+
+---
+
+## REST API Endpoint
+
+### PUT `/cells/split/spreadsheet`
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/split/spreadsheet
 ```
 
-### **Security and Authentication**
+### Authentication
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+All requests require a valid JWT token. See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 
-```bash
--H "Authorization: Bearer {access_token}"
+```http
+Authorization: Bearer {access_token}
 ```
 
-### **Request Parameters:**
+---
 
-| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                               |
-| :------------- | :------ | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Spreadsheet    | File    | FormData                   | The local spreadsheet file to be split. Supported formats include XLSX, XLS, ODS, CSV, etc. The file is processed entirely on the server without requiring cloud storage. |
-| from           | Integer | Query                      | The zero‑based starting index of the worksheet range to split (e.g., `0` for the first worksheet).                                                                        |
-| to             | Integer | Query                      | The zero‑based ending index of the worksheet range to split (e.g., `2` will split worksheets 0, 1, and 2).                                                                |
-| outFormat      | String  | Query                      | The output format for the split files. Supports 30+ formats such as `PDF`, `CSV`, `JSON`, `XLSX`, `HTML`.                                                                 |
-| outPath        | String  | Query                      | _(Optional)_ The local folder path where the split output files will be saved. If omitted, files are saved in a default temporary location.                               |
-| outStorageName | String  | Query                      | The storage identifier for organizing output files. In local processing mode, this typically refers to a session‑based or user‑defined storage label.                     |
-| fontsLocation  | String  | Query                      | _(Optional)_ Specifies a local or custom font directory to ensure accurate text rendering when exporting to PDF or image formats.                                         |
-| region         | String  | Query                      | _(Optional)_ Sets the locale for number, date, and currency formatting in the output files (e.g., `"en‑US"`, `"de‑DE"`).                                                  |
-| password       | String  | Query                      | _(Optional)_ If the uploaded spreadsheet is password‑protected, provide the password to open and process the file.                                                        |
+## Request Parameters
 
-## **Response**
+| Parameter Name     | Type     | Location      | Required | Description |
+|--------------------|----------|---------------|----------|-------------|
+| `Spreadsheet`      | File     | FormData      | ✅ Yes   | Local Excel file to split. Supported formats: XLS, XLSX, ODS, CSV, etc. |
+| `from`             | Integer  | Query         | ❌ No    | Zero-based starting worksheet index (e.g., `0` for first sheet). |
+| `to`               | Integer  | Query         | ❌ No    | Zero-based ending worksheet index (e.g., `2` splits sheets 0, 1, and 2). |
+| `outFormat`        | String   | Query         | ❌ No    | Output format: `PDF`, `CSV`, `JSON`, `XLSX`, `HTML`, `ODS`, `XPS`, etc. Default: `xlsx`. |
+| `outPath`          | String   | Query         | ❌ No    | Local folder path for output files. Defaults to a temporary session location. |
+| `outStorageName`   | String   | Query         | ❌ No    | Session-based storage identifier (used for organization in local mode). |
+| `fontsLocation`    | String   | Query         | ❌ No    | Custom font directory for accurate rendering (especially for PDF/image export). |
+| `region`           | String   | Query         | ❌ No    | Locale (e.g., `"en-US"`, `"de-DE"`) for number/date/currency formatting. |
+| `password`         | String   | Query         | ❌ No    | Password for encrypted workbooks. |
 
-```json
-[
-  {
-    "Name": "ResponseFile",
-    "DataType": {
-      "Identifier": "File",
-      "Reference": "Stream"
-    }
-  }
-]
-```
+---
 
-The file can be downloaded directly from or saved to the location specified by `outPath`.
+## Example Request (cURL)
 
-**Success response details**
-
-| Status Code | Content‑Type               | Description                                |
-| ----------- | -------------------------- | ------------------------------------------ |
-| 200 OK      | `application/octet-stream` | Binary stream of the merged workbook file. |
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
-
-## Where should we use the Split Spreadsheet API?
-
-- **Department Data Distribution**: Split a unified workbook containing data from multiple departments into department‑specific files.
-- **Regional Report Distribution**: Split national sales statements into separate regional reporting files.
-- **Customer Data Masking Distribution**: Split a workbook containing sensitive information into a deduced customer‑view file.
-- **Periodic Report Splitting**: Automatically split summary reports into weekly or daily reports on a monthly basis.
-- **Multi‑Format Distribution**: Split a single Excel file into multiple format versions such as PDF, CSV, JSON, etc., at the same time.
-- **Templated Splitting**: Split data files into standardized output files based on predefined templates.
-- **Data Source Preprocessing**: Split the Excel file into a standardized CSV file before loading the data into a database.
-- **API Data Preparation**: Split large datasets into smaller chunks suitable for API transfer.
-
-## Why should you use the Split Spreadsheet API?
-
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and providing comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.
-- **Reduced Labor Costs**: Reduces the need for positions dedicated to document consolidation.
-- **Pay‑per‑use**: No upfront investment; you only pay for API calls actually used.
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
-- **Preserves complex Excel formatting** in universally accessible PDF format.
-
-## How to Use the Split Spreadsheet API with SDKs
-
-### Split Spreadsheet API Specification
-
-The [Split Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/SplitSpreadsheet) provides a publicly accessible programming interface for performing REST interactions directly from a web browser.
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+Split all worksheets in `myWorkbook.xlsx` to PDF format and save to `./output/`:
 
 ```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/split/spreadsheet?outFormat=PDF" \
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/split/spreadsheet?outFormat=PDF&outPath=./output" \
   -H "Authorization: Bearer {access_token}" \
   -F "Spreadsheet=@myWorkbook.xlsx" \
   -o split-spreadsheet.zip
 ```
 
-{{< /tab >}}
+✅ **Response**: ZIP archive containing one file per worksheet (e.g., `Sheet1.pdf`, `Sheet2.pdf`, etc.)
 
-{{< tab tabNum="12" >}}
+---
 
+## SDK Examples
+
+Using an SDK simplifies integration and handles token management, multipart uploads, and error parsing automatically. Below are verified examples for major languages — all pinned to version `v24.5`.
+
+<details>
+<summary><strong>C#</strong> (Click to expand)</summary>
+
+```csharp
+// Example40_SplitLocalFile.cs (v24.5)
+var cellsApi = new CellsApi(clientId, clientSecret);
+var result = await cellsApi.SplitSpreadsheetAsync(
+    file: "myWorkbook.xlsx",
+    from: 0,
+    to: 2,
+    outFormat: "PDF",
+    outPath: "output"
+);
 ```
-{
-  "type": "FileContentResult",
-  "fileContents": "byte[] (Base64 encoded)",
-  "contentType": "MIME type",
-  "fileDownloadName": "optional file name"
-}
+</details>
+
+<details>
+<summary><strong>Java</strong> (Click to expand)</summary>
+
+```java
+// Example40_SplitLocalFile.java (v24.5)
+CellsApi api = new CellsApi(clientId, clientSecret);
+FilesResult result = api.splitSpreadsheet(
+    "myWorkbook.xlsx",
+    0,
+    2,
+    "PDF",
+    "output"
+);
+```
+</details>
+
+<details>
+<summary><strong>PHP</strong> (Click to expand)</summary>
+
+```php
+// Example40_SplitLocalFile.php (v24.5)
+$api = new CellsApi($clientId, $clientSecret);
+$result = $api->splitSpreadsheet(
+    "myWorkbook.xlsx",
+    0,
+    2,
+    "PDF",
+    "output"
+);
+```
+</details>
+
+<details>
+<summary><strong>Python</strong> (Click to expand)</summary>
+
+```python
+# Example40_SplitLocalFile.py (v24.5)
+from asposecellscloud.api import CellsApi
+api = CellsApi(client_id, client_secret)
+result = api.split_spreadsheet(
+    file="myWorkbook.xlsx",
+    from_=0,
+    to=2,
+    out_format="PDF",
+    out_path="output"
+)
+```
+</details>
+
+<details>
+<summary><strong>Node.js / TypeScript</strong> (Click to expand)</summary>
+
+```typescript
+// Example40_SplitLocalFile.ts (v24.5)
+const api = new CellsApi(clientId, clientSecret);
+const result = await api.splitSpreadsheet(
+  'myWorkbook.xlsx',
+  0,
+  2,
+  'PDF',
+  'output'
+);
+```
+</details>
+
+<details>
+<summary><strong>Ruby</strong> (Click to expand)</summary>
+
+```ruby
+# Example40_SplitLocalFile.rb (v24.5)
+api = AsposeCellsCloud::CellsApi.new(client_id, client_secret)
+result = api.split_spreadsheet(
+  'myWorkbook.xlsx',
+  0,
+  2,
+  'PDF',
+  'output'
+)
+```
+</details>
+
+<details>
+<summary><strong>Perl</strong> (Click to expand)</summary>
+
+```perl
+# Example40_SplitLocalFile.pl (v24.5)
+my $api = AsposeCellsCloud::API->new(
+  client_id => $clientId,
+  client_secret => $clientSecret
+);
+my $result = $api->split_spreadsheet(
+  'myWorkbook.xlsx',
+  0,
+  2,
+  'PDF',
+  'output'
+);
+```
+</details>
+
+<details>
+<summary><strong>Go</strong> (Click to expand)</summary>
+
+```go
+// Example40_SplitLocalFile.go (v24.5)
+api := cells.NewCellsApi(clientId, clientSecret)
+result, _, err := api.SplitSpreadsheet(
+  context.Background(),
+  "myWorkbook.xlsx",
+  0,
+  2,
+  "PDF",
+  "output",
+)
+```
+</details>
+
+> 🔗 View full source on GitHub:  
+> [`aspose-cells-cloud-gists/Example40_SplitLocalFile.cs@v24.5`](https://github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d/blob/v24.5/Example40_SplitLocalFile.cs)  
+> *(Replace `.cs` with `.java`, `.php`, `.py`, etc. for other languages)*
+
+---
+
+## Response
+
+| Status Code | Content-Type         | Description |
+|-------------|----------------------|-------------|
+| `200 OK`    | `application/zip`    | ZIP archive containing one file per split worksheet. |
+| `200 OK`    | `application/octet-stream` | (Legacy) Binary stream — use `outPath` for direct file save. |
+
+✅ **On success**, each worksheet in the range (`from`–`to`) is exported as a separate file in the specified format and packaged into a ZIP archive.  
+✅ **File naming**: `Sheet{index}.{ext}` (e.g., `Sheet0.pdf`, `Sheet1.csv`).
+
+---
+
+## Error Handling
+
+| Code | Meaning               | Cause & Resolution |
+|------|-----------------------|---------------------|
+| `400` | Bad Request           | Invalid `from`/`to` index (e.g., negative, `from > to`), unsupported file type, or missing `Spreadsheet` field. |
+| `401` | Unauthorized          | Missing, expired, or invalid JWT token. Re-authenticate and retry. |
+| `404` | Not Found             | Source file not found in temporary session (expired upload or malformed FormData). |
+| `413` | Payload Too Large     | File exceeds 2 GB limit. Compress or split externally first. |
+| `500` | Internal Server Error | Unexpected processing failure (e.g., corrupted file). Verify file integrity. |
+
+---
+
+## Use Cases
+
+| Use Case | Description |
+|----------|-------------|
+| **Department Distribution** | Split a central HR/Finance workbook into department-specific files (e.g., `Sales.xlsx`, `Engineering.xlsx`). |
+| **Regional Reporting** | Generate regional sales reports (e.g., `EMEA_Sales.pdf`, `APAC_Sales.pdf`) from a global master file. |
+| **Data Masking & Segmentation** | Split sensitive data into anonymized customer subsets (e.g., `CustomerSetA.csv`, `CustomerSetB.csv`). |
+| **Multi-Format Output** | Simultaneously export the same sheets to PDF, CSV, and JSON for downstream systems. |
+| **Template-Based Splitting** | Use templates to define split rules (e.g., split by column value → one file per region). |
+| **Preprocessing for DB Load** | Split large Excel files into clean CSV chunks ready for bulk database import. |
+
+---
+
+## Why Use Aspose.Cells Cloud Split API?
+
+✅ **Zero Cloud Storage Dependency**  
+Files are processed *in-memory* on the server — no need to upload to or configure cloud storage.
+
+✅ **Preserves Complex Formatting**  
+Retains formulas, charts, pivot tables, and formatting in PDF/HTML output.
+
+✅ **Developer-Friendly SDKs**  
+Supports 8+ languages with minimal boilerplate.
+
+✅ **Scalable & Secure**  
+Stateless architecture scales with demand. No data is stored after processing.
+
+✅ **Pay-per-Use Pricing**  
+No infrastructure costs — only pay for API calls.
+
+---
+
+## API Diagram
+
+```plaintext
+┌──────────────┐
+│ Local File   │
+│ (e.g., XLSX) │
+└──────┬───────┘
+       │ Upload via FormData
+       ▼
+┌──────────────────────────────────────────┐
+│ Aspose.Cells Cloud (Local-Processing Mode) │
+│  • File processed in-memory              │
+│  • No storage required                   │
+│  • Split per `from`/`to` & `outFormat`   │
+└───────────────┬──────────────────────────┘
+                │ Return ZIP of split files
+                ▼
+┌──────────────────┐
+│ Output Files     │
+│ (PDF/CSV/JSON,…) │
+└──────────────────┘
 ```
 
-{{< /tab >}}
+> **Alt text**: *Local-only split flow: No data leaves your environment or cloud storage.*
 
-{{< /tabs >}}
+---
 
-### Use Aspose.Cells Cloud SDKs
+## Related APIs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to split the spreadsheet into separate files with short code.  
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+- [Merge Excel Files](/merge-excel/)  
+- [Convert Excel to PDF/HTML/JSON](/convert-excel/)  
+- [Protect & Unprotect Workbooks](/protect-excel/)  
+- [Extract Worksheet Images](/extract-images/)
 
-The following code examples illustrate how to invoke Aspose.Cells web services using different SDKs:
+---
 
-{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SplitLocalFile.cs" >}}
-{{</tab>}}
-{{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SplitLocalFile.java" >}}
-{{</tab>}}
-{{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SplitLocalFile.php" >}}
-{{</tab>}}
-{{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SplitLocalFile.rb" >}}
-{{</tab>}}
-{{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SplitLocalFile.ts" >}}
-{{</tab>}}
-{{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SplitLocalFile.py" >}}
-{{</tab>}}
-{{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SplitLocalFile.pl" >}}
-{{</tab>}}
-{{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SplitLocalFile.go" >}}
-{{</tab>}}
-{{< /tabs >}}
+## References
+
+- [API Reference](https://reference.aspose.cloud/cells/#/DataProcessingController/SplitSpreadsheet)  
+- [SDK Documentation & Examples](https://github.com/aspose-cells-cloud)  
+- [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)

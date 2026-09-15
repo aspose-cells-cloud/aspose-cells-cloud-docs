@@ -1,18 +1,20 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert Local Excel Table Data to a PDF File - Free Online Tool"
+title: "Convert Excel Table to PDF via Aspose.Cells Cloud API"
 second_title: "Document"
 ArticleTitle: "How to Convert Local Spreadsheet Table Data to a PDF File: Step‑by‑Step Guide"
 linktitle: "Convert Table to PDF"
+date: 2024-06-15
+lastmod: 2024-05-20
 type: docs
 url: /convert-table-to-pdf/
-keywords: "Aspose.Cells, Excel to PDF, Table conversion, Cloud API"
-description: "Convert a local Excel table to a PDF file quickly using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells Cloud, Excel to PDF, table export API, REST API convert table to PDF, free online tool, Excel table extraction"
+description: "Use Aspose.Cells Cloud REST API to convert Excel table data (e.g., balance sheets, KPIs) to PDF in minutes. Free, secure, and preserves formatting. SDKs for 8+ languages including C#, Java, Python, Node.js, and more."
 weight: 100
 ---
 
 Export table data from a local Excel file to a PDF file using the Cloud API.
 
-## **Convert Table to PDF API**
+## **Convert Table to PDF via REST API**
 
 ### Web API
 
@@ -22,7 +24,7 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/table/pdf
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### **Request Parameters:**
 
@@ -64,7 +66,7 @@ Content-Length: 124578
 
 | Code | Meaning               | Description                                                       |
 | ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 200  | OK                    | Conversion successful; PDF returned as binary stream.             |
 | 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
 | 401  | Unauthorized          | Invalid or missing JWT token.                                     |
 | 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
@@ -100,7 +102,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 
 ```bash
 curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/pdf?worksheet=Sheet1&tableName=Table1" \
-  -H "Authorization: Bearer {access_token}" \
+  -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
   -F "Spreadsheet=@myWorkbook.xlsx" \
   -o converted.pdf
 ```
@@ -113,8 +115,8 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/pdf?worksheet=She
 {
   "type": "FileContentResult",
   "fileContents": "byte[] (Base64 encoded)",
-  "contentType": "MIME type",
-  "fileDownloadName": "optional file name"
+  "contentType": "application/pdf",
+  "fileDownloadName": "ConvertedTable.pdf"
 }
 ```
 

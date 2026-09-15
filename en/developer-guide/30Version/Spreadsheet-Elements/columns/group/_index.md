@@ -1,49 +1,42 @@
 ---
-title: "Group Columns – Aspise.Cells Cloud API Documentation"
-second_title: "Aspose.Cells Cloud Document"
-linktitle: "Group"
-url: /columns/group/
-description: "Group worksheet columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, parameters, cURL and SDK examples, and response details."
-keywords: "Aspose.Cells, group columns, Excel API, REST, cloud SDK"
-weight: 60
+title: "Group Columns on an Excel Worksheet"
+secondtitle: "Aspose.Cells Cloud API Documentation"
+linktitle: "Group Columns"
+url: /cells/group-columns/
+description: "Group Excel worksheet columns programmatically using Aspose.Cells Cloud REST API v3.0. Includes cURL and SDK examples, authentication guidance, and collapsible section support to reduce manual effort and enhance Excel-like interactivity."
+keywords: ["Excel grouping", "column grouping API", "Aspose.Cells Cloud", "REST API", "collapsible columns", "Excel automation", "worksheet grouping"]
+weight: 10
 type: docs
+date: 2023-11-15
 aliases:
-  - /group-columns-in-an-excel-worksheet/
-  - /group-columns-in-excel-worksheet/
+  - /cells/group-columns/
+  - /excel/group-columns/
 ---
 
 # Group Columns on an Excel Worksheet
 
-**API version:** v3.0  
-**Operation:** `PostGroupWorksheetColumns` – Group worksheet columns in the worksheet.
+**API Version:** v3.0  
+**Operation:** `PostGroupWorksheetColumns` – Group worksheet columns in a worksheet.
 
----
+## Introduction
 
-## Overview
-
-This REST API lets you group a range of columns in a worksheet. Grouped columns can be shown or hidden, enabling you to create collapsible sections similar to those in Microsoft Excel.
-
----
+Grouping columns in Excel enables you to create collapsible sections, improving data readability and user interaction. With Aspose.Cells Cloud, you can programmatically group ranges of columns—ideal for automating dashboard generation, report formatting, or interactive workbook creation. This API supports immediate visibility control (e.g., collapse/expand on creation), ensuring your Excel workflows mirror native Excel behavior.
 
 ## Prerequisites
 
-- A valid **JWT access token** obtained from the Aspose Cloud authentication service.
-- The workbook must be stored in a location accessible to Aspose.Cells Cloud (default storage or a custom storage name).
-- Required SDK version (if using an SDK): the latest release that supports API version **v3.0**.
-
----
+- A valid **JWT access token** from Aspose Cloud authentication.  
+- The workbook must reside in Aspose.Cells Cloud’s default storage or a named custom storage.  
+- Use SDKs compatible with API version **v3.0** (latest releases recommended).
 
 ## Authentication
 
-All requests require **Bearer token** authentication.
+All requests require a **Bearer token**:
 
 ```http
 Authorization: Bearer <access_token>
 ```
 
-For details on obtaining a token, see the [JWT authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
----
+For detailed token acquisition steps, see the [JWT Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## HTTP Request
 
@@ -52,40 +45,39 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/col
 ```
 
 | Parameter     | Location | Required | Description                                                               |
-| ------------- | -------- | -------- | ------------------------------------------------------------------------- |
-| `name`        | Path     | Yes      | The workbook file name (e.g., `test.xlsx`).                               |
-| `sheetName`   | Path     | Yes      | The worksheet that contains the columns to group.                         |
-| `firstIndex`  | Query    | Yes      | Zero‑based index of the first column to include in the group.             |
-| `lastIndex`   | Query    | Yes      | Zero‑based index of the last column to include in the group.              |
-| `hide`        | Query    | No       | If `true`, the grouped columns are hidden; otherwise they remain visible. |
-| `folder`      | Query    | No       | Path to the folder that contains the workbook.                            |
-| `storageName` | Query    | No       | Name of the storage service where the file is located.                    |
+|---------------|----------|----------|---------------------------------------------------------------------------|
+| `name`        | Path     | Yes      | Workbook filename (e.g., `report.xlsx`).                                 |
+| `sheetName`   | Path     | Yes      | Worksheet name containing the columns to group.                          |
+| `firstIndex`  | Query    | Yes      | Zero-based index of the first column in the group.                       |
+| `lastIndex`   | Query    | Yes      | Zero-based index of the last column in the group.                        |
+| `hide`        | Query    | No       | If `true`, the grouped columns are hidden (collapsed) upon grouping.     |
+| `folder`      | Query    | No       | Folder path containing the workbook (if not in default storage).         |
+| `storageName` | Query    | No       | Custom storage name (if applicable).                                     |
 
----
+### Notes
+- Column indices are **zero-based** (e.g., column A = index `0`, column B = index `1`).
+- Setting `hide=true` immediately collapses the group, matching Excel’s UI behavior.
 
 ## Request Example (cURL)
 
 ```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" \
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=3&hide=true" \
      -H "accept: application/json" \
      -H "Authorization: Bearer <access_token>"
 ```
 
-> **Note:** The request uses **HTTPS** to ensure encrypted communication.
-
----
+> **Security Note:** All requests use **HTTPS** for encrypted communication.
 
 ## Response
 
-### Success (200)
+### Success (200 OK)
 
 | Field    | Type    | Description                             |
-| -------- | ------- | --------------------------------------- |
+|----------|---------|-----------------------------------------|
 | `Code`   | integer | HTTP status code (`200`).               |
-| `Status` | string  | Textual status of the operation (`OK`). |
+| `Status` | string  | Operation status (`OK`).                |
 
-**Example**
-
+**Example Response:**
 ```json
 {
   "Code": 200,
@@ -93,31 +85,26 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 }
 ```
 
-### Error (e.g., 400 Bad Request)
+### Error Responses
 
 | Field          | Type    | Description                                       |
-| -------------- | ------- | ------------------------------------------------- |
-| `Code`         | integer | HTTP status code (`400`, `401`, `404`, `500`, …). |
-| `Status`       | string  | Textual status (`Error`).                         |
-| `ErrorMessage` | string  | Human‑readable description of the problem.        |
-| `ErrorCode`    | string  | Programmatic identifier for the error.            |
+|----------------|---------|---------------------------------------------------|
+| `Code`         | integer | HTTP error code (`400`, `401`, `404`, `500`, etc.) |
+| `Status`       | string  | Error status (`Error`).                           |
+| `ErrorMessage` | string  | Human-readable error description.                 |
+| `ErrorCode`    | string  | Programmatic error identifier (e.g., `InvalidParameter`). |
 
-**Example – Bad Request**
-
+**Example – Bad Request (400):**
 ```json
 {
   "Code": 400,
   "Status": "Error",
-  "ErrorMessage": "Invalid column index.",
+  "ErrorMessage": "Invalid column index: lastIndex must be greater than or equal to firstIndex.",
   "ErrorCode": "InvalidParameter"
 }
 ```
 
----
-
 ## SDK Examples
-
-The following snippets demonstrate how to call the **Group Worksheet Columns** operation using the supported SDKs.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -171,25 +158,21 @@ The following snippets demonstrate how to call the **Group Worksheet Columns** o
 
 {{< /tabs >}}
 
----
+## Usage Tips
 
-## Remarks
-
-- **Grouping behavior:** The API creates a column group that can be expanded or collapsed in Excel. Setting `hide=true` collapses the group immediately.
-- **Zero‑based indexing:** Both `firstIndex` and `lastIndex` start at **0**; the first column in a worksheet is index 0.
-- **Storage considerations:** If the workbook resides in a non‑default storage, provide both `folder` and `storageName` query parameters.
-
----
+- **Collapsible Sections**: Use `hide=true` to collapse groups immediately; users can later expand them in Excel.
+- **Index Validation**: Ensure `firstIndex ≤ lastIndex` and both indices are within valid column bounds (e.g., ≤ 16,383 for modern Excel).
+- **Storage Paths**: For non-default storage, provide both `folder` and `storageName` query parameters.
 
 ## See Also
 
-- [Authentication – JWT token based](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
-- [OpenAPI Specification for Group Worksheet Columns](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns)
-- [Aspose.Cells Cloud SDKs (GitHub)](https://github.com/aspose-cells-cloud)
-- [Group Rows on an Excel Worksheet](/rows/group/)
+- [JWT Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
+- [OpenAPI Reference: PostGroupWorksheetColumns](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns)
+- [Aspose.Cells Cloud SDKs (GitHub)](https://github.com/aspose-cells-cloud){: rel="noopener noreferrer"}
+- [Group Rows on an Excel Worksheet](/cells/group-rows/)
+
+![Collapsed grouped columns in Excel showing the +/– expand/collapse indicator.](/images/group-columns.png)
+
+> *Figure: Collapsed column group in Excel, with the +/- toggle visible.*
 
 ---
-
-> _Illustration:_ ![Screenshot showing grouped columns in an Excel worksheet](./images/group-columns.png){: .img-fluid alt="Screenshot showing grouped columns in an Excel worksheet" }
-
-_The above placeholder image should be replaced with an actual screenshot that demonstrates the visual result of grouping columns._

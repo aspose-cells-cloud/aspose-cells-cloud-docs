@@ -1,11 +1,11 @@
 ---
 title: "Aspose.Cells Cloud API – Get MaxDataColumn of an Excel Worksheet (v3.0)"
+date: 2023-11-15T10:00:00Z
 type: docs
 url: /get-maxdatacolumn-from-excel-worksheet/
 weight: 70
-keywords: "Aspose.Cells Cloud, Get MaxDataColumn, Excel worksheet, REST API, v3.0, SDK"
-description: "Retrieve the highest column index that contains data in a specified worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes request details, sample response, and SDK examples."
-ArticleTitle: "Aspose.Cells Cloud API – Get MaxDataColumn of an Excel Worksheet (v3.0)"
+keywords: "Aspose.Cells Cloud, Get MaxDataColumn, Excel worksheet, REST API, v3.0, SDK, cloud API"
+description: "Call the Aspose.Cells Cloud REST API v3.0 to retrieve the highest column index containing data in an Excel worksheet — with cURL, C#, Java, Python, Node.js, and more SDK examples."
 ---
 
 This REST API returns the maximum data‑column index in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxdatacolumn`.
@@ -17,7 +17,7 @@ This REST API returns the maximum data‑column index in an Excel worksheet when
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatacolumn" \
+curl -X GET "https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/maxdatacolumn" \
      -H "Authorization: Bearer <access_token>" \
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
@@ -41,8 +41,8 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 - **HTTP Method:** `GET`  
 - **Endpoint pattern:** `https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/maxdatacolumn`  
 - **Path parameters:**  
-  - `fileName` – Name of the Excel file (e.g., `myWorkbook.xlsx`).  
-  - `sheetName` – Name of the worksheet (e.g., `Sheet1`).  
+  - `fileName` – Name of the Excel file (e.g., `{fileName}`).  
+  - `sheetName` – Name of the worksheet (e.g., `{sheetName}`).  
 - **Headers:**  
   - `Authorization: Bearer <access_token>` (required)  
   - `Accept: application/json` (recommended)  
@@ -69,11 +69,11 @@ If the request fails, inspect the HTTP status code and the `error` message in th
 
 - **Use Aspose.Cells Cloud SDKs**
 
-Using an SDK is the most efficient way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the most efficient way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">Aspose.Cells Cloud SDK source code and examples on GitHub</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
+{{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -114,10 +114,6 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< tab tabNum="7" >}}
 
 {{< gist "aspose-cells-cloud-gists" "9d725d4678edaac53f95c5208e17783c" "Examples-Android-cells-GetMaxDataColumnWorksheet-get-max-data-column.java" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
 
 {{< /tab >}}
 

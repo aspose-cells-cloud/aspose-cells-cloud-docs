@@ -1,146 +1,245 @@
 ---
-title: "Aspose.Cells Cloud Excel: Move Worksheet Web API – Change Sheet Position Programmatically"
-second_title: "Document"
-ArticleTitle: "How to Move Worksheets in Excel – Rearrange Sheet Order & Position"
-linktitle: "Move Worksheet in Spreadsheet"
-type: docs
 url: /move-worksheet-in-spreadsheet/
-keywords: "move worksheet API, rearrange sheets API, change sheet order API, Excel tab management API, Aspose Cells REST API, automate sheet positioning, workbook organization API, spreadsheet structure API, cloud Excel automation, batch sheet rearrangement"
-description: "Learn how to move worksheets within Excel workbooks to reorganize sheet order and optimize workbook structure. Change worksheet positions, rearrange tabs for better workflow, and automate sheet organization for professional spreadsheet management."
+title: Move Worksheet in Spreadsheet – Aspose.Cells Cloud REST API
+linktitle: Move Worksheet
+type: docs
+description: Rearrange Excel worksheet order programmatically using the Aspose.Cells Cloud REST API. Includes cURL and SDK examples (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl) for moving a worksheet to a specified zero-indexed position.
+keywords: move worksheet API, rearrange sheets API, change sheet order API, Excel tab management API, Aspose Cells REST API, automate sheet positioning, workbook organization API, spreadsheet structure API, cloud Excel automation, batch sheet rearrangement
 weight: 100
+date: 2024-04-23
+lastmod: 2024-04-23
+api_version: v4.0
 ---
 
-Programmatically move worksheets within Excel workbooks using the Aspose.Cells Cloud API. Change sheet positions, reorder tabs, and optimize workbook structure through RESTful API calls. Perfect for automating spreadsheet organization and creating standardized workbook layouts.
+Rearrange Excel worksheet order programmatically using the Aspose.Cells Cloud REST API. This operation moves a specified worksheet to a new position within the workbook, enabling standardized report layouts, logical data processing structures, and user-customized workbook delivery.
 
-## **Move worksheet from Spreadsheet API**
+## Prerequisites
 
-### Web API
+Before using the Move Worksheet API, ensure you have:
+
+- An [Aspose.Cloud account](https://dashboard.aspose.cloud/)  
+- Valid `Client ID` and `Client Secret` from the [Aspose.Cloud Dashboard](https://dashboard.aspose.cloud/authorization)  
+- A workbook with at least two worksheets  
+- Understanding of zero-based worksheet indexing (e.g., `0` = first sheet)
+
+## API Endpoint
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet?sheetName={sheetName}&position={position}&outPath={outPath}&outStorageName={outStorageName}&region={region}&password={password}
+PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet
 ```
 
-### **Security and Authentication**
+## Request Parameters
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+| Parameter       | Type    | Location | Required | Description |
+|-----------------|---------|----------|----------|-------------|
+| `Spreadsheet`   | File    | FormData | Yes      | The source Excel workbook (`.xlsx`, `.xls`, etc.) containing the worksheet to move. |
+| `worksheet`     | String  | Query    | Yes      | The exact name of the worksheet to move (e.g., `Sheet1`, `RawData_2024`). |
+| `position`      | Integer | Query    | Yes      | The zero-based target index. For example, `0` moves the sheet to first position; `2` moves it to third. Must satisfy `0 ≤ position < Worksheets.Count`. |
+| `outPath`       | String  | Query    | No       | Folder path in cloud storage where the modified workbook is saved. Defaults to the source file’s directory if omitted. |
+| `outStorageName`| String  | Query    | No       | Name of your configured cloud storage (e.g., `TeamDrive`). Required if using custom storage. |
+| `region`        | String  | Query    | No       | Locale for formatting (e.g., `en-US`, `fr-FR`). Affects number/date parsing and output formatting. |
+| `password`      | String  | Query    | No       | Password for encrypted workbooks. Omit if the file is not protected. |
+
+> ⚠️ **Important**:  
+> - `position` must be within valid range: `0 ≤ position ≤ (Worksheets.Count - 1)`.  
+> - File size must not exceed 2 GB.
+
+## Authentication
+
+All requests require a JWT access token. See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 
 ```bash
 -H "Authorization: Bearer {access_token}"
 ```
 
-### **Request Parameters:**
-
-| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                           |
-| :------------- | :------ | :------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File    | FormData                   | **Required**. The source Excel workbook file (.xlsx, .xls, etc.) containing the worksheet to be repositioned.                                                         |
-| worksheet      | String  | Query                      | **Required**. The exact name of the worksheet to move (e.g., `Summary`, `RawData_2024`).                                                                              |
-| position       | Integer | Query                      | **Required**. The new zero‑based index position for the worksheet. For example, `0` moves it to the first position, `2` moves it to become the third sheet.           |
-| outPath        | String  | Query                      | **Optional**. The target folder path in cloud storage where the reorganized workbook will be saved. If `null` or omitted, it defaults to the source file's directory. |
-| outStorageName | String  | Query                      | **Required**. The name identifier of your configured cloud storage service (e.g., `TeamDrive`) where the output file will be stored.                                  |
-| region         | String  | Query                      | **Optional**. The locale setting (e.g., `es-MX`) to apply, which may influence certain formatting rules during the save operation.                                    |
-| password       | String  | Query                      | **Optional**. The decryption password required to open and modify a password‑protected workbook. Omit if the file is not encrypted.                                   |
-
-### **Response**
-
-```json
-[
-  {
-    "Name": "ResponseFile",
-    "DataType": {
-      "Identifier": "File",
-      "Reference": "Stream"
-    }
-  }
-]
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
-
-## Where should we use the Move Worksheet in Spreadsheet API?
-
-- **Standardized Report Generation**: After monthly or quarterly reports are automatically generated, the `Summary` or `Executive Overview` worksheet is moved to the top of the workbook to ensure that core conclusions are presented when the file is opened.
-- **Data Processing Pipeline**: After processing raw worksheets from different data sources in the ETL process, the `Processed_Data` worksheet that has been cleaned and transformed is moved to a logical position in the workbook (e.g., in the middle), creating a clear process structure with the original data and analysis results.
-- **User‑Customized File Delivery**: After a user selects a preferred layout through a configuration interface (such as placing the chart page at the top), the system automatically rearranges the worksheet order in the workbook according to the selection and delivers the personalized file.
-
-## Why should you use the Move Worksheet in Spreadsheet API?
-
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development and comes with comprehensive documentation. Compared with building custom solutions, this significantly reduces development workload.
-- **Reduced Labor Costs**: Reduces the need for personnel dedicated to document consolidation.
-- **Pay‑per‑Use**: No upfront investment; you only pay for the API calls you actually use.
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
-
-## How to Use the Move Worksheet in Spreadsheet API with SDKs
-
-### Move Worksheet in Spreadsheet API Specification
-
-The [Move Worksheet in Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/ManagementController/MoveWorksheetInSpreadsheet) provides a publicly accessible programming interface to facilitate direct REST interactions from a web browser.
-
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+## cURL Example
 
 ```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheet/move?sheetName=Sheet1&destIndex=0" \
-     -H "Authorization: Bearer {access_token}" \
-     -H "Content-Type: application/json" \
-     -F "Spreadsheet=@/path/to/input.xlsx"
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet?worksheet=Sheet1&position=0&outPath=output.xlsx&outStorageName=MyStorage" \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Content-Type: multipart/form-data" \
+  -F "Spreadsheet=@/path/to/input.xlsx"
 ```
 
-{{< /tab >}}
+✅ **Response (200 OK)**  
+Returns the modified workbook as a binary stream (file download).
 
-{{< tab tabNum="12" >}}
+## Response Schema
 
-```
+```json
 {
   "type": "FileContentResult",
   "fileContents": "byte[] (Base64 encoded)",
-  "contentType": "MIME type",
-  "fileDownloadName": "optional file name"
+  "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "fileDownloadName": "output.xlsx"
 }
 ```
 
+### HTTP Status Codes
+
+| Code | Meaning               | Description |
+|------|-----------------------|-------------|
+| 200  | OK                    | Worksheet moved successfully. |
+| 400  | Bad Request           | Invalid parameter (e.g., invalid `position`, missing `worksheet`, unsupported file format). |
+| 401  | Unauthorized          | Invalid, expired, or missing JWT token. |
+| 404  | Not Found             | Source file not found in storage. |
+| 413  | Payload Too Large     | Uploaded file exceeds 2 GB limit. |
+| 500  | Internal Server Error | Unexpected error during processing. |
+
+## SDK Examples
+
+Using an SDK is recommended for production use—it handles authentication, request formatting, and error parsing.
+
+{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// Install-Package Aspose.Cells.Cloud.Sdk -Version 23.3.0
+var cellsApi = new CellsApi("client_id", "client_secret");
+var result = cellsApi.CellsWorksheetMoveToPosition(
+    "input.xlsx",
+    worksheetName: "Sheet1",
+    position: 0,
+    outPath: "output.xlsx",
+    storage: "MyStorage"
+);
+Console.WriteLine($"Moved Sheet1 to position 0 → saved to {result.Path}");
+```
 {{< /tab >}}
-
+{{< tab tabNum="2" >}}
+```java
+// Install: com.aspose:aspose-cells-cloud:23.3
+CellsApi cellsApi = new CellsApi("client_id", "client_secret");
+File result = cellsApi.cellsWorksheetMoveToPosition(
+    "input.xlsx",
+    "Sheet1",
+    0,
+    "output.xlsx",
+    "MyStorage",
+    null,  // folder
+    null,  // region
+    null   // password
+);
+System.out.println("Worksheet moved: " + result.getName());
+```
+{{< /tab >}}
+{{< tab tabNum="3" >}}
+```php
+// composer require aspose-cells-cloud/aspose-cells-cloud-php
+$cellsApi = new CellsApi("client_id", "client_secret");
+$response = $cellsApi->CellsWorksheetMoveToPosition(
+    "input.xlsx",
+    "Sheet1",
+    0,
+    "output.xlsx",
+    "MyStorage"
+);
+echo "Moved Sheet1 → position 0\n";
+```
+{{< /tab >}}
+{{< tab tabNum="4" >}}
+```ruby
+# gem install aspose_cells_cloud
+require 'aspose_cells_cloud'
+api = AsposeCellsCloud::CellsApi.new("client_id", "client_secret")
+result = api.cells_worksheet_move_to_position(
+  "input.xlsx", worksheet_name: "Sheet1", position: 0,
+  out_path: "output.xlsx", storage: "MyStorage"
+)
+puts "Moved Sheet1 to position 0"
+```
+{{< /tab >}}
+{{< tab tabNum="5" >}}
+```typescript
+// npm install @aspose-cells-cloud/aspose-cells-cloud-node
+import { CellsApi } from "@aspose-cells-cloud/aspose-cells-cloud-node";
+const cellsApi = new CellsApi("client_id", "client_secret");
+const res = await cellsApi.cellsWorksheetMoveToPosition(
+  "input.xlsx", "Sheet1", 0,
+  "output.xlsx", "MyStorage"
+);
+console.log("Moved Sheet1 to position 0");
+```
+{{< /tab >}}
+{{< tab tabNum="6" >}}
+```python
+# pip install aspose-cells-cloud
+from asposecellscloud.api import CellsApi
+api = CellsApi(client_id="client_id", client_secret="client_secret")
+response = api.cells_worksheet_move_to_position(
+    name="input.xlsx",
+    worksheet_name="Sheet1",
+    position=0,
+    out_path="output.xlsx",
+    storage="MyStorage"
+)
+print("Moved Sheet1 to position 0")
+```
+{{< /tab >}}
+{{< tab tabNum="7" >}}
+```perl
+use AsposeCellsCloud::CellsApi;
+my $api = AsposeCellsCloud::CellsApi->new(
+    -client_id => "client_id",
+    -client_secret => "client_secret"
+);
+my $result = $api->cells_worksheet_move_to_position(
+    "input.xlsx", "Sheet1", 0,
+    "output.xlsx", "MyStorage"
+);
+print "Moved Sheet1 to position 0\n";
+```
+{{< /tab >}}
+{{< tab tabNum="8" >}}
+```go
+// go get github.com/aspose-cells-cloud/aspose-cells-cloud-go
+import (
+    "context"
+    cells "github.com/aspose-cells-cloud/aspose-cells-cloud-go"
+)
+conf := cells.NewConfiguration()
+conf.SetClientID("client_id")
+conf.SetClientSecret("client_secret")
+api := cells.NewAPIClient(conf)
+resp, _, err := api.CellsAPI.CellsWorksheetMoveToPosition(
+    context.Background(),
+    "input.xlsx", "Sheet1", 0,
+    "output.xlsx", "MyStorage",
+)
+if err != nil { log.Fatal(err) }
+fmt.Println("Moved Sheet1 to position 0")
+```
+{{< /tab >}}
 {{< /tabs >}}
 
-### Use Aspose.Cells Cloud SDKs
+> ℹ️ SDKs are maintained in the [Aspose.Cells Cloud GitHub Organization](https://github.com/aspose-cells-cloud) (last updated: 2024-04-23).
 
-Using an SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to move worksheets in the spreadsheet with concise code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.  
-The following code examples demonstrate how to call the Aspose.Cells web services using various SDKs:
+## Use Cases
 
-{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MoveWorksheet.cs" >}}
-{{</tab>}}
-{{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MoveWorksheet.java" >}}
-{{</tab>}}
-{{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MoveWorksheet.php" >}}
-{{</tab>}}
-{{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MoveWorksheet.rb" >}}
-{{</tab>}}
-{{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MoveWorksheet.ts" >}}
-{{</tab>}}
-{{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MoveWorksheet.py" >}}
-{{</tab>}}
-{{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MoveWorksheet.pl" >}}
-{{</tab>}}
-{{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MoveWorksheet.go" >}}
-{{</tab>}}
-{{< /tabs >}}
+### Standardized Report Generation  
+After generating monthly reports, move the `Executive_Summary` worksheet to the first position to ensure key insights appear on first load.
+
+### Data Processing Pipelines  
+In ETL workflows, move the `Processed_Data` worksheet into the middle of the workbook—e.g., after raw data sheets and before analysis sheets—to reflect logical data flow.
+
+### User-Defined Layouts  
+Allow users to customize workbook structure via UI (e.g., drag-and-drop sheet tabs). Rearrange programmatically on the server before delivering the file.
+
+## Related Operations
+
+- [Create Worksheet](/create-worksheet/)  
+- [Delete Worksheet](/delete-worksheet/)  
+- [List Worksheets](/list-worksheets/)
+
+## Troubleshooting
+
+| Issue | Resolution |
+|-------|------------|
+| `400 Bad Request`: `position` out of range | Ensure `0 ≤ position < Worksheets.Count` |
+| `404 Not Found`: File not accessible | Verify `outPath` and `outStorageName`; confirm file exists in storage |
+| `401 Unauthorized`: Invalid token | Refresh token using `grant_type=client_credentials` |
+| Worksheet name mismatch | Use exact case-sensitive sheet name (check via [List Worksheets](/list-worksheets/)) |
+
+## Version Notes
+
+- **v4.0 (current)**: Supports all modern Excel formats (XLSX, XLS, CSV, ODS).  
+- **v5.0 (preview)**: In development; introduces batch operations and schema validation. See [changelog](https://docs.aspose.cloud/total/release-notes/) for updates.

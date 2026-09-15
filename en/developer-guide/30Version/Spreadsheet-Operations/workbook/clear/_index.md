@@ -1,127 +1,195 @@
 ---
 title: "Clear Objects in an Excel File"
-second_title: "Document"
+second_title: "Aspose.Cells Cloud"
+date: 2023-11-15T10:00:00Z
+lastmod: 2024-06-15T14:30:00Z
+version: "v3.0"
 linktitle: "Clear"
-type: docs
 url: /clear/
 aliases: [/clearobjects/]
-keywords: "Aspose.Cells, Excel, Clear Objects, REST API, Cloud SDK, Remove Comments, Delete Charts"
-description: "Use Aspose.Cells Cloud REST API to delete comments, charts, shapes and other objects from an Excel workbook. Supports multiple SDKs and returns the cleaned file as Base64."
+keywords: ["clear objects", "Excel API", "remove comments", "Aspose.Cells Cloud", "REST API clear charts", "delete shapes Excel", "clear pivot tables Cloud"]
+description: "Use Aspose.Cells Cloud REST API to delete comments, charts, shapes, list objects, hyperlinks, OLE objects, pivot tables, validations, and background elements from Excel workbooks. Includes cURL examples and SDK code snippets in 8 programming languages."
 weight: 39
 ---
 
-This REST API clears the objects in an Excel file.
+This REST API clears internal elements (such as comments, charts, shapes, and more) from Excel files and returns the cleaned workbook in your preferred output format.
 
-## REST API
+## Prerequisites
+
+- Aspose.Cells Cloud API key and app SID (see [Get Your API Keys](/get-your-api-keys/))
+- A local Excel file (e.g., `sample.xlsx`)
+- For authenticated requests: JWT token or `appSid` + `apiKey` pair
+- Max file size per request: **2 GB**
+
+> **Note**: The `objecttype` parameter supports multiple values (comma-separated) for bulk operations. Clarification for ambiguous types (e.g., `background`) is provided in the parameter table below.
+
+---
+
+## REST API Endpoint
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/clearobjects
 ```
 
-### The request parameters
+### Request Parameters
 
-| Parameter  | Type   | Location  | Required | Default | Allowed Values                                                                                                                                                                                        | Description                                 |
-| ---------- | ------ | --------- | -------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| file       | file   | form‑data | Yes      | —       | —                                                                                                                                                                                                     | The Excel file to upload                    |
-| objecttype | string | query     | No       | —       | `duplicaterows`, `blankcolumns`, `blankrows`, `formula`, `content`, `style`, `chart`, `comment`, `picture`, `shape`, `listobject`, `hyperlink`, `oleobject`, `pivottable`, `validation`, `background` | Types of objects to clear (comma‑separated) |
+| Parameter | Type | Location | Required | Default | Allowed Values | Description |
+|-----------|------|----------|----------|---------|----------------|-------------|
+| `File` | file | form-data | Yes | — | — | The Excel file(s) to upload (supports multipart uploads) |
+| `objecttype` | string | query | Yes (if no default behavior intended) | — | `duplicaterows`, `blankcolumns`, `blankrows`, `formula`, `content`, `style`, `chart`, `comment`, `picture`, `shape`, `listobject`, `hyperlink`, `oleobject`, `pivottable`, `validation`, `background` | Types of objects to clear. **Note**: `background` clears background images or fill colors (not text background). |
+| `sheetname` | string | query | No | — | — | Scope the deletion to a specific worksheet by name. |
+| `outFormat` | string | query | No | Original file format | `CSV`, `XLS`, `HTML`, `MHTML`, `ODS`, `PDF`, `XML`, `TXT`, `TIFF`, `XLSB`, `XLSM`, `XLSX`, `XLTM`, `XLTX`, `XPS`, `PNG`, `JPG`, `JPEG`, `GIF`, `EMF`, `BMP`, `MD`, `Numbers` | Output format of the processed file. |
+| `password` | string | query | No | — | — | Password required to open the encrypted Excel file. |
+| `checkExcelRestriction` | boolean | query | No | `true` | `true`, `false` | Whether to enforce Excel editing restrictions when modifying cells related to the cleared objects. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+> **Note**: While `File` and `objecttype` are both marked as required in the API spec, `objecttype` may be optional if you intend to clear *all* supported objects (behavior depends on backend defaults). For clarity and predictability, always specify `objecttype`.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+---
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+### Example Request (cURL)
 
 ```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment" \
+curl -v "https://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment,chart&outFormat=XLSX" \
   -X POST \
-  -H "Content-Type: application/json" \
+  -H "Content-Type: multipart/form-data" \
   -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>" \
-  -F 'xxxxx1=@xxxx1.xlsx' \
-  -F 'xxxxx2=@xxxx2.xlsx'
+  -H "Authorization: Bearer <your_jwt_token>" \
+  -F "File=@sample.xlsx"
 ```
 
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
+### Example Response
 
 ```json
 {
   "Files": [
     {
-      "Filename": "file1",
+      "Filename": "sample.xlsx",
       "FileSize": 274022,
-      "FileContent": "-----Base64String--------"
-    },
-    {
-      "Filename": "file2",
-      "FileSize": 274022,
-      "FileContent": "-----Base64String--------"
+      "FileContent": "UEsDBBQABgAIAAAAIQDf... (truncated Base64)"
     }
   ]
 }
+```
+
+> **Note**: The response returns Base64-encoded content for all processed files. For large files, consider using the `disk` or `folder` parameters (if supported in future versions) or streaming the response.
+
+---
+
+## Cloud SDK Family
+
+Using an SDK is the recommended approach to accelerate development. SDKs abstract low-level details (e.g., authentication, multipart handling, Base64 decoding) and improve code maintainability.
+
+For the full list of SDKs and source code, see the [Aspose.Cells Cloud GitHub Repository](https://github.com/aspose-cells-cloud).
+
+### Code Examples
+
+{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+
+{{< tab tabNum="1" >}}
+
+> **Figure 1**: C# SDK example for clearing comments and charts from an Excel file.  
+```csharp
+// See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet
+var config = new Configuration { ClientId = "xxxx", ClientSecret = "xxxx" };
+var cellsApi = new CellsApi(config);
+var response = cellsApi.PostClearObjects("sample.xlsx", objecttype: "comment,chart", outFormat: "XLSX");
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+> **Figure 2**: Java SDK example for clearing comments and charts.  
+```java
+// See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-java
+CellsApi cellsApi = new CellsApi(System.getenv("CellsCloudClientID"), System.getenv("CellsCloudClientSecret"));
+FilesResult response = cellsApi.postClearObjects("sample.xlsx", "comment,chart", "XLSX", null, null, null, null, null);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+> **Figure 3**: PHP SDK example for clearing comments and charts.  
+```php
+// See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-php
+$apiInstance = new CellsApi(getenv("CellsCloudClientID"), getenv("CellsCloudClientSecret"));
+$response = $apiInstance->postClearObjects("sample.xlsx", "comment,chart", "XLSX");
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+> **Figure 4**: Ruby SDK example for clearing comments and charts.  
+```ruby
+# See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby
+cells_api = AsposeCellsCloud::LightCellsApi.new('client_id', 'client_secret')
+response = cells_api.post_clear_objects('sample.xlsx', objecttype: 'comment,chart', out_format: 'XLSX')
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+> **Figure 5**: Node.js SDK example for clearing comments and charts.  
+```typescript
+// See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-node
+const cellsApi = new CellsApi(process.env.CLIENT_ID, process.env.CLIENT_SECRET);
+const res = await cellsApi.postClearObjects('sample.xlsx', 'comment,chart', 'XLSX');
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+> **Figure 6**: Python SDK example for clearing comments and charts.  
+```python
+# See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-python
+api = CellsApi(os.environ['CLIENT_ID'], os.environ['CLIENT_SECRET'])
+response = api.post_clear_objects('sample.xlsx', objecttype='comment,chart', out_format='XLSX')
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+> **Figure 7**: Perl SDK example for clearing comments and charts.  
+```perl
+# See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl
+my $config = AsposeCellsCloud::Configuration->new(
+  client_id => 'xxxx',
+  client_secret => 'xxxx'
+);
+my $api = AsposeCellsCloud::LightCellsApi->new(config => $config);
+my $res = $api->post_clear_objects('sample.xlsx', 'comment,chart', 'XLSX');
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+> **Figure 8**: Go SDK example for clearing comments and charts.  
+```go
+// See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-go
+cfg := cells.NewConfiguration(os.Getenv("CLIENT_ID"), os.Getenv("CLIENT_SECRET"))
+api := cells.NewLightCellsApi(cfg)
+resp, _, err := api.PostClearObjects(context.Background(), "sample.xlsx", "comment,chart", "XLSX")
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+---
 
-Using an SDK is the best way to speed up development. An SDK abstracts low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+## See Also
 
-The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+- [Encrypt Excel Files](/encrypt/)  
+- [Protect Workbooks](/protect/)  
+- [Delete Worksheets](/delete-worksheets/)  
+- [Merge Excel Files](/merge/)  
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+---
 
-{{< tab tabNum="1" >}}
-
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostClearObjects.cs" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostClearObjects.java" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostClearObjects.php" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostClearObjects.rb" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostClearObjects.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostClearObjects.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostClearObjects.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostClearObjects.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+> **Version Note**: This documentation reflects API version `v3.0`. For the latest changes, see the [Aspose.Cells Cloud Release Notes](https://docs.aspose.cloud/cells/release-notes/).

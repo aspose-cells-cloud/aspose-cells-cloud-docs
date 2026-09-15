@@ -1,20 +1,21 @@
 ---
-title: "Aspose.Cells Cloud Web API – Automatically Delete Blank/Empty Rows"
-second_title: "Document"
+title: "Delete Blank Rows in Excel | Aspose.Cells Cloud API"
+secondtitle: "Document"
 ArticleTitle: "How to Delete All Blank/Empty Rows in Excel – Complete Data Cleanup Guide"
 linktitle: "Delete Blank Rows"
+date: 2024-05-22
 type: docs
 url: /delete-spreadsheet-blank-rows/
-keywords: "Aspose.Cells, Excel, blank rows, delete rows, spreadsheet cleanup, API"
-description: "Remove all empty rows from Excel files via Aspose.Cells Cloud API. Fast, batch‑ready, and fully programmable – see code examples in C#, Java, Python, and more."
+keywords: ["Aspose.Cells", "Excel API", "delete blank rows"]
+description: "Use Aspose.Cells Cloud API to automatically remove empty rows from Excel files. Includes SDK examples in C#, Java, Python & more."
 weight: 100
 ---
 
 Automatically delete all blank rows from Excel spreadsheets using Aspose.Cells Cloud API. Our intelligent API detects and removes rows that contain no data, formulas, comments, or objects while preserving all other content. It supports batch processing, cloud automation, and seamless integration for enterprise data‑cleaning workflows.
 
-## DeleteSpreadsheetBlankRows API
+## Web API Endpoint
 
-### Web API
+The `DeleteSpreadsheetBlankRows` operation is exposed via the following REST endpoint:
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/delete/blank-rows
@@ -22,7 +23,7 @@ PUT https://api.aspose.cloud/v4.0/cells/delete/blank-rows
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.com/cells-cloud/authentication/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ```bash
 -H "Authorization: Bearer {access_token}"
@@ -41,6 +42,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Authentication**  
 All calls must include the `Authorization: Bearer <access_token>` header. Obtain the access token via the Aspose Cloud OAuth2 flow described in the authentication guide.
+
+> [!NOTE]  
+> Before calling this API, ensure:  
+> 1. Your Aspose Cloud account is active  
+> 2. The workbook is uploaded to cloud storage  
+> 3. You have a valid OAuth2 access token  
 
 **Prerequisites & Notes**  
 - Ensure your Aspose Cloud storage is configured and the source workbook is uploaded before invoking the API.  
@@ -97,6 +104,8 @@ The [Delete Spreadsheet Blank Rows API Specification](https://reference.aspose.c
 
 Using an SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to delete spreadsheet blank rows with short code.  
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+All SDK examples assume `Aspose.Cells.Cloud.Client` is initialized with client ID/secret.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

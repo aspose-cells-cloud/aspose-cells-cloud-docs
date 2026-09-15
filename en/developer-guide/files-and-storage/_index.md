@@ -6,8 +6,8 @@ linktitle: "Files and Storage"
 type: docs
 url: /files-and-storage/
 aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
-keywords: "Aspose.Cells Cloud, file storage API, upload Excel file, download Excel file, copy file, move file, delete file, folder management, REST API, cURL examples"
-description: "Comprehensive guide to managing Excel files and folders in Aspose.Cells Cloud storage. Includes upload, download, copy, move, delete, and folder operations with cURL examples, required parameters, and authentication notes."
+keywords: "Aspose.Cells Cloud, file storage API, Excel file upload, download, copy, move, delete, folder management, REST API, cURL examples, cloud storage"
+description: "Step-by-step guide to managing Excel files and folders in Aspose.Cells Cloud: upload, download, copy, move, delete files, and organize folders via REST API with cURL examples and authentication."
 weight: 100
 ---
 
@@ -19,7 +19,7 @@ Aspose.Cells Cloud provides a comprehensive set of helper functions for working 
 
 **Prerequisites:** To use these APIs you must have a valid Aspose Cloud account, obtain a JWT access token, and have a storage location configured (either Aspose Cloud Storage or a connected third‑party storage).
 
-**Last updated:** 2024‑12‑01
+**Last updated:** 2024-12-01
 
 ## **How to Upload a File**
 
@@ -573,7 +573,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/move/desfolder?destP
 ```
 
 {{< /tab >}}
-{{< tab tabnum="24" >}}
+{{< tab tabNum="24" >}}
 
 ```json
 {
@@ -776,7 +776,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/version/Report.xlsx?storage
 ```
 
 {{< /tab >}}
-{{< tab tabnum="47" >}}
+{{< tab tabNum="47" >}}
 
 ```json
 {

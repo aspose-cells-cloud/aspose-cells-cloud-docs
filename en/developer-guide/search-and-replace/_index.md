@@ -1,11 +1,18 @@
 ---
 title: "Search & Replace in Aspose.Cells Cloud API – Excel Spreadsheet Manipulation"
 second_title: "Document"
-ArticleTitle: "Search and Replace in Spreadsheet – Aspose.Cells Cloud API"
+ArticleTitle: "Search and Replace Text in Excel Files using Aspose.Cells Cloud API"
 linktitle: "Search and Replace"
 type: docs
 url: /search-replace/
-keywords: "Aspose.Cells, Cloud API, Search and Replace, Excel, REST, API, spreadsheet automation, find and replace, Excel cloud"
+date: 2024-02-15
+lastmod: 2024-06-10
+keywords:
+  - "Aspose.Cells Cloud"
+  - "Excel"
+  - "search and replace"
+  - "REST API"
+  - "text operations"
 description: "Learn how to use the Aspose.Cells Cloud **Search & Replace** API to find and replace text, formulas, or links in Excel workbooks. Includes endpoint details, request parameters, response examples, status codes, and code snippets for C#, Java, and Python."
 weight: 50
 ---
@@ -24,3 +31,6 @@ The **Search & Replace** feature of Aspose.Cells Cloud API enables developers to
 - **[Search Spreadsheet Broken Links](https://docs.aspose.cloud/cells/search-spreadsheet-broken-links/)** – Provides a comprehensive list of broken links across a spreadsheet.  
 - **[Search Spreadsheet Content](https://docs.aspose.cloud/cells/search-spreadsheet-content/)** – General content search across the entire spreadsheet.  
 - **[Search Worksheet Content in Remote Spreadsheet](https://docs.aspose.cloud/cells/search-content-in-remote-worksheet/)** – Searches for content within a particular worksheet.  
+
+Before proceeding, ensure you’ve [configured your OAuth credentials](/cells/getting-started/authentication/).  
+See [supported file formats](/cells/conversion/supported-formats/) for full compatibility.

@@ -1,17 +1,20 @@
 ---
 title: "Import Data into Excel Files and Export Data from Excel Files"
-second_title: "Document"
+second_title: "Data Handling"
 linktitle: "Import and Export Data"
 type: docs
 url: /data-import-and-export/
-keywords: "Aspose.Cells Cloud, import data, export Excel, API, CSV, JSON, picture, array"
-description: "Learn how to import data from CSV, JSON, arrays, and pictures into Excel files and export workbooks, charts, and shapes to PDF, PNG, and more using Aspose.Cells Cloud API (v3.0)."
+keywords: "Aspose.Cells Cloud, import data, export Excel, API, CSV, JSON, picture, array, data import, data export, Excel cloud API"
+description: "Learn to import CSV, JSON, arrays, and pictures into Excel files, and export workbooks, charts, and shapes to PDF, PNG, and more using Aspose.Cells Cloud API v3.0."
 weight: 25
+robots: "index, follow"
+aliases:
+  - "/data/import-export/"
 ---
 
 Aspose.Cells Cloud API supports importing data from a variety of sources and can export Excel workbooks, charts, and other objects to different formats, including **XLSX**, **CSV**, **PDF**, **HTML**, **PNG**, and more. This makes data management and sharing simple and efficient.
 
-**API version:** **v3.0** – Last updated: **2024‑03‑15**
+**API version:** **v3.0** – Last updated: **2024-03-15**
 
 ### Quick‑Start Guide
 
@@ -72,7 +75,7 @@ The following APIs are provided to import data into one or multiple Excel files:
     <tr><td>BatchData</td><td>List&lt;CellValue&gt;</td><td>Batch data to import</td></tr>
     <tr><td>DestinationWorksheet</td><td>string</td><td>Destination worksheet name</td></tr>
     <tr><td>IsInsert</td><td>boolean</td><td>Whether to insert data (true/false)</td></tr>
-    <tr><td>ImportDataType</td><td>string</td><td>TwoDimensionStringBatchDataArray</td></tr>
+    <tr><td>ImportDataType</td><td>string</td><td>TwoDimensionStringArray</td></tr>
     <tr><td>Source</td><td>FileSource</td><td>Data file location when BatchData is null</td></tr>
   </tbody>
 </table>
@@ -341,8 +344,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/export" \
 
 The following articles explain each API in detail and contain cURL and SDK examples:
 
-- [How to import data into Excel files without using storage.](/cells/import/without-using-storage)
-- [How to import data into Excel files with using storage.](/cells/import/with-using-storage)
+- [Import CSV data into Excel worksheet using Aspose.Cells Cloud API](/cells/import/without-using-storage)
+- [Import data into Excel files with storage](/cells/import/with-using-storage)
 - [How to import Batch Data into Excel Worksheet](/cells/import-batch-data-into-excel-worksheet/)
 - [How to import CSV Data into Excel Worksheet](/cells/import-CSV-data-into-excel-worksheet/)
 - [How to import picture into Excel Worksheet](/cells/import-picture-into-excel-worksheet/)
@@ -353,8 +356,8 @@ The following articles explain each API in detail and contain cURL and SDK examp
 - [How to import 2 Dimension Double Array into Excel Worksheet](/cells/import-a-2D-double-array-into-excel-worksheet/)
 - [How to import 2 Dimension String Array into Excel Worksheet](/cells/import-a-2D-string-array-into-excel-worksheet/)
 - [Export Excel chart to different file format](/cells/export-excel-chart-to-different-formats/)
-- [Export Excel list‑object to different file format](/cells/export-excel-listobject-to-different-formats/)
-- [Export Excel ole‑object to different file format](/cells/export-excel-ole-object/)
+- [Export Excel list object to different file format](/cells/export-excel-listobject-to-different-formats/)
+- [Export Excel OLE object to different file format](/cells/export-excel-ole-object/)
 - [Export Excel picture to different file format](/cells/export-excel-picture-to-different-formats/)
 - [Export Excel shape to different file format](/cells/export-excel-shape-to-different-formats/)
 - [Export Excel workbook to different file format](/cells/export-excel-to-different-formats/)

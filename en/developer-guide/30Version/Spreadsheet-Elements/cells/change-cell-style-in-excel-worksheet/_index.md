@@ -1,8 +1,11 @@
 ---
-title: "Change Cell Style in Excel Worksheet"
+date: 2023-11-15T08:30:00Z
+lastmod: 2024-05-22T14:10:00Z
+title: "Change Cell Style in Excel Worksheet – Aspose.Cells Cloud API Guide"
 type: docs
 url: /change-cell-style-in-excel-worksheet/
 weight: 30
+api_version: "v3.0"
 keywords:
   - Aspose.Cells
   - Aspose.Cells Cloud
@@ -13,196 +16,202 @@ keywords:
   - cURL
   - cell style update
   - Excel API
-description: "Learn how to update the style of a specific cell in an Excel worksheet using the Aspose.Cells Cloud REST API, including example requests, responses, and SDK code snippets."
-ArticleTitle: "Change Cell Style in Excel Worksheet – Aspose.Cells Cloud API Guide"
+description: "Step-by-step guide to update Excel cell style using Aspose.Cells Cloud REST API (v3.0), including cURL, SDK examples (C#, Java, Python), and security best practices."
+tags:
+  - cell-style
+  - excel-api
+  - rest
+  - cloud
+  - aspose.cells
+categories:
+  - cells
+  - api-reference
+article_title: "Change Cell Style in Excel Worksheet – Aspose.Cells Cloud API Guide"
 ---
 
-This REST API updates the **cell style** of an Excel file.
+This guide explains how to update the **cell style** of a specific cell in an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). You will learn how to apply styles via `cURL`, SDKs (C#, Java, Python, PHP, Node.js, Ruby, Perl, and Go), and understand authentication, request structure, and response handling.
 
-## PostUpdateWorksheetCellStyle API
+## Prerequisites
+
+- An Aspose Cloud account ([sign up free](https://dashboard.aspose.cloud/)).
+- A workbook uploaded to Aspose Cloud Storage (or use the sample `test_cells.xlsx`).
+- Your `Client ID` and `Client Secret` from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
+
+> **Tip**: For quick testing, use the preloaded `test_cells.xlsx` workbook included in our examples.
+
+## Use cURL to Update Cell Style
+
+The `PostUpdateWorksheetCellStyle` API endpoint allows you to update the style of a single cell. Here’s how to use it with `cURL`.
+
+### Endpoint
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
 ```
 
-### **Security and Authentication**
-
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                    |
-|----------------|--------|----------|------------------------------------------------|
-| name           | string | path     | The workbook file name.                        |
-| sheetName      | string | path     | The worksheet name.                            |
-| cellName       | string | path     | The target cell (e.g., **A1**).                |
-| style          | object | body     | JSON object that defines the style settings to apply to the cell. |
-| folder         | string | query    | The folder that contains the workbook.         |
-| storageName    | string | query    | The storage name where the workbook is stored. |
+| Parameter | Type   | Location | Required | Description |
+|-----------|--------|----------|----------|-------------|
+| `name` | string | path | ✅ Yes | Workbook file name (e.g., `test_cells.xlsx`). |
+| `sheetName` | string | path | ✅ Yes | Worksheet name (e.g., `Sheet3`). |
+| `cellName` | string | path | ✅ Yes | Target cell (e.g., `A1`). |
+| `style` | object | body | ✅ Yes | JSON object specifying style properties to update (e.g., background, font). |
+| `folder` | string | query | ❌ No | Folder containing the workbook (e.g., `input`). |
+| `storageName` | string | query | ❌ No | Storage name (default: `First Storage`). |
 
-### **Response**
+### Authentication
 
-```json
-{
-    "Status":"OK",
-    "Code":200
-}
+First, obtain a JWT access token:
+
+```bash
+JWT_TOKEN=$(curl -s "https://api.aspose.cloud/connect/token" \
+  -d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET" \
+  | jq -r '.access_token')
 ```
 
-**HTTP Status Codes**
+> Replace `YOUR_CLIENT_ID` and `YOUR_CLIENT_SECRET` with your credentials from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-## How to Use the PostUpdateWorksheetCellStyle API with SDKs
-
-### PostUpdateWorksheetCellStyle API Specification
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetCellStyle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. Replace `<jwt token>` with a valid OAuth 2.0 access token obtained from the Aspose Cloud authentication endpoint.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+### Example Request: Apply Background Theme Color
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/cells/A1/style" \
--d '{ "BackgroundThemeColor": { "ColorType": "Text2", "Tint": 1 } }' \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer ${JWT_TOKEN}" \
+  -d '{
+    "BackgroundThemeColor": {
+      "ColorType": "Text2",
+      "Tint": 0.2
+    }
+  }'
 ```
 
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
+### Example Response
 
 ```json
 {
+  "Code": 200,
+  "Status": "OK",
   "Style": {
     "Font": {
-      "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
-      "DoubleSize": 11,
-      "IsBold": false,
-      "IsItalic": false,
-      "IsStrikeout": false,
-      "IsSubscript": false,
-      "IsSuperscript": false,
       "Name": "Calibri",
       "Size": 11,
-      "Underline": "None"
+      "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }
     },
-    "Name": null,
-    "CultureCustom": null,
-    "Custom": "",
-    "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
-    "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
-    "IsFormulaHidden": false,
-    "IsDateTime": false,
-    "IsTextWrapped": false,
-    "IsGradient": false,
+    "BackgroundThemeColor": {
+      "ColorType": "Text2",
+      "Tint": 0.2
+    },
     "IsLocked": true,
-    "IsPercent": false,
-    "ShrinkToFit": false,
-    "IndentLevel": 0,
-    "Number": 0,
-    "RotationAngle": 0,
-    "Pattern": "None",
-    "TextDirection": "Context",
-    "VerticalAlignment": "Bottom",
-    "HorizontalAlignment": "General",
-    "BorderCollection": [
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "BottomBorder" },
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "DiagonalDown" },
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "DiagonalUp" },
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "Horizontal" },
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "LeftBorder" },
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "RightBorder" },
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "TopBorder" },
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "Vertical" }
-    ],
-    "BackgroundThemeColor": null,
-    "ForegroundThemeColor": null,
     "link": {
       "Href": "https://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/cells/A1/style",
-      "Rel": "self",
-      "Title": null,
-      "Type": null
+      "Rel": "self"
     }
-  },
-  "Code": 200,
-  "Status": "OK"
+  }
 }
 ```
 
-{{< /tab >}}
+### HTTP Status Codes
 
-{{< /tabs >}}
+| Code | Meaning | Description |
+|------|---------|-------------|
+| `200` | OK | Style updated successfully. |
+| `400` | Bad Request | Invalid cell name, malformed JSON, or unsupported file type. |
+| `401` | Unauthorized | Invalid or missing JWT token. |
+| `413` | Payload Too Large | Request body exceeds 50 MB limit. |
+| `500` | Internal Server Error | Unexpected server error. |
 
-### Use Aspose.Cells Cloud SDKs
+> **Note**: The `Style` object in the response reflects the *current* state after applying the update.
 
-Using an SDK is the fastest way to develop against the API. An SDK abstracts low‑level details so you can focus on your business logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+## Use Aspose.Cells Cloud SDKs
 
-The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+SDKs abstract low-level HTTP details and simplify integration. All official SDKs are open-source on [GitHub](https://github.com/aspose-cells-cloud).
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+### Available SDKs
 
-{{< tab tabNum="1" >}}
+- [C# (.NET)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet)
+- [Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java)
+- [PHP](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php)
+- [Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python)
+- [Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node)
+- [Ruby](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby)
+- [Perl](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl)
+- [Go](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go)
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostUpdateWorksheetCellStyle.cs" >}}
+### Code Examples
 
-{{< /tab >}}
+#### C# (.NET)
 
-{{< tab tabNum="2" >}}
+```csharp
+// Install-Package Aspose.Cells.Cloud -Version 23.11.0
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostUpdateWorksheetCellStyle.java" >}}
+var config = new Configuration
+{
+    ClientId = "YOUR_CLIENT_ID",
+    ClientSecret = "YOUR_CLIENT_SECRET"
+};
+var cellsApi = new CellsApi(config);
+var style = new Style
+{
+    BackgroundThemeColor = new ThemeColor
+    {
+        ColorType = "Text2",
+        Tint = 0.2
+    }
+};
+var response = cellsApi.PostUpdateWorksheetCellStyle(
+    "test_cells.xlsx", "Sheet3", "A1", style);
+Console.WriteLine(response.Status);
+```
 
-{{< /tab >}}
+#### Java
 
-{{< tab tabNum="3" >}}
+```java
+// implementation, please see: 
+// https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/blob/master/Examples/src/main/java/com/aspose/cells/examples/styles/UpdateCellStyle.java
+```
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostUpdateWorksheetCellStyle.php" >}}
+#### Python
 
-{{< /tab >}}
+```python
+# pip install asposecellscloud
 
-{{< tab tabNum="4" >}}
+from asposecellscloud.configuration import Configuration
+from asposecellscloud.api.cells_api import CellsApi
+from asposecellscloud.models.style import Style
+from asposecellscloud.models.theme_color import ThemeColor
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostUpdateWorksheetCellStyle.rb" >}}
+config = Configuration(client_id="YOUR_CLIENT_ID", client_secret="YOUR_CLIENT_SECRET")
+api = CellsApi(config)
 
-{{< /tab >}}
+style = Style()
+style.background_theme_color = ThemeColor(color_type="Text2", tint=0.2)
 
-{{< tab tabNum="5" >}}
+response = api.post_update_worksheet_cell_style(
+    "test_cells.xlsx", "Sheet3", "A1", style)
+print(response.status)
+```
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostUpdateWorksheetCellStyle.ts" >}}
+> 🔗 Explore full SDK examples, changelogs, and issue reporting on [GitHub](https://github.com/aspose-cells-cloud).
 
-{{< /tab >}}
+## Related Operations
 
-{{< tab tabNum="6" >}}
+- [Get Cell Style](/get-cell-style/) – Retrieve current style of a cell.  
+- [Update Multiple Cells Style](/update-multiple-cells-style/) – Apply style to a cell range (e.g., `A1:C10`).  
+- [Read Cell Value](/read-cell-value/) – Extract cell data (number, formula, text).  
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostUpdateWorksheetCellStyle.py" >}}
+## API Reference
 
-{{< /tab >}}
+- [OpenAPI Spec (v3.0)](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetCellStyle)  
+- [REST API Overview](https://docs.aspose.cloud/cells/getting-started/rest-api-overview/)  
+- [Authentication Guide](https://docs.aspose.cloud/cells/getting-started/authentication/)
 
-{{< tab tabNum="7" >}}
+## Was this article helpful?
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostUpdateWorksheetCellStyle.pl" >}}
+{{< feedback-widget >}}
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostUpdateWorksheetCellStyle.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-**See also:**  
-- [Get Cell Style](https://docs.aspose.cloud/cells/get-cell-style/) – Retrieve the current style of a cell.  
-- [Update Multiple Cells Style](https://docs.aspose.cloud/cells/update-multiple-cells-style/) – Apply a style to a range of cells in one request.  
+*Last updated: 22 May 2024*  
+*Aspose.Cells Cloud API v3.0*

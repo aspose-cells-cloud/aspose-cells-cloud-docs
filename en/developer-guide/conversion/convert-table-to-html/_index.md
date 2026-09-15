@@ -1,13 +1,14 @@
 ---
-title: "Aspose.Cells Cloud – Convert Table to HTML"
-description: "Convert Excel tables to HTML quickly with Aspose.Cells Cloud API – secure, format‑preserving, and easy to integrate."
-keywords: "Aspose.Cells, Excel to HTML, convert table to HTML, cloud API, spreadsheet conversion"
+title: "Convert Excel Table to HTML | Aspose.Cells Cloud"
+description: "Aspose.Cells Cloud API v3: Convert Excel tables to HTML via REST. Secure, format-preserving, and SDK-ready. No upload required."
+keywords: "Aspose.Cells Cloud, Excel table to HTML, convert table to HTML, cloud API, spreadsheet conversion"
 weight: 100
-date: 2026-07-30
-last_updated: 2026-07-30
-version: "v4.0"
+date: 2024-05-10
+last_updated: 2024-05-10
+version: "v3.0"
 url: /convert-table-to-html/
 type: docs
+aliases: ["/api/convert-table-to-html", "/docs/cells/convert/table/html"]
 ---
 
 **Quick summary** – This endpoint reads a local Excel workbook, extracts the specified **table**, converts it to an **HTML** file, and returns the result as a downloadable stream. No intermediate upload to Aspose Cloud storage is required.
@@ -20,7 +21,8 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/table/html
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/authentication/" rel="noopener noreferrer">JWT token-based authentication</a>.  
+*Replace `{YOUR_ACCESS_TOKEN}` in examples with a valid JWT token obtained from the Aspose Cloud dashboard.*
 
 ### Request Parameters
 
@@ -67,6 +69,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - **Email templates** – Generate HTML snippets for order summaries or reports that render consistently across email clients.
 - **Dashboards & reporting tools** – Show live spreadsheet data without loading the full workbook or using heavy grid components.
 - **Document previews** – Provide quick, format‑preserving previews of specific spreadsheet sections.
+- **Avoid using for large workbooks (>10k rows)** — consider pagination or streaming endpoints to ensure reliability and performance.
 
 ## How to Use the Convert Table to HTML API with SDKs?
 
@@ -82,7 +85,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 
 ```bash
 curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/html?worksheet=Sheet1&tableName=Table1" \
-  -H "Authorization: Bearer {access_token}" \
+  -H "Authorization: Bearer {YOUR_ACCESS_TOKEN}" \
   -F "Spreadsheet=@myWorkbook.xlsx" \
   -o converted.html
 ```
@@ -106,6 +109,39 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/html?worksheet=Sh
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to convert spreadsheet table data to a CSV file with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to convert spreadsheet table data to HTML with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to make calls to Aspose.Cells web services using various SDKs:
+
+#### C# Example
+
+```csharp
+var config = new Configuration { ClientId = "xxx", ClientSecret = "yyy" };
+var cellsApi = new CellsApi(config);
+var response = cellsApi.CellsTablePostTableToHtml(
+    worksheet: "Sheet1",
+    tableName: "Table1",
+    filename: "myWorkbook.xlsx"
+);
+```
+
+#### Python Example
+
+```python
+from asposecellscloud.configuration import Configuration
+from asposecellscloud.apis.cells_api import CellsApi
+
+config = Configuration()
+config.client_id = "xxx"
+config.client_secret = "yyy"
+cells_api = CellsApi(config)
+
+response = cells_api.cells_table_post_table_to_html(
+    worksheet="Sheet1",
+    table_name="Table1",
+    filename="myWorkbook.xlsx"
+)
+```
+
+> **Note**: For full workbook conversion (not just tables), see [Convert Workbook to HTML](/convert-workbook-to-html/).  
+> For a comparison of table vs. range conversion, refer to [Table vs. Range Conversion](/docs/comparison/table-vs-range).

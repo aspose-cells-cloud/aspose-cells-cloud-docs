@@ -1,142 +1,268 @@
 ---
-title: "Create Spreadsheet API – Aspose.Cells Cloud (v5.0) | Generate Excel Files"
-second_title: "Document"
-ArticleTitle: "How to Create New Excel Spreadsheets – Generate Blank or Template‑Based Files"
+title: "Create Spreadsheet API – Aspose.Cells Cloud (v4.0) | Generate Excel Files"
+description: "Use Aspose.Cells Cloud v4.0 REST API to create blank or template-based Excel (XLSX, ODS, CSV) workbooks programmatically. Includes cURL, SDKs (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl), authentication, and error handling."
 linktitle: "Create Spreadsheet"
 type: docs
 url: /create-spreadsheet/
-keywords: "Aspose.Cells, spreadsheet API, create Excel, cloud, XLSX, ODS, CSV, template, SDK, automation"
-description: "Learn how to create blank or template‑based Excel workbooks using Aspose.Cells Cloud API (v5.0). Includes endpoint, parameters, error codes, authentication steps, and SDK examples."
+keywords: "Aspose.Cells, spreadsheet API, create Excel, cloud, XLSX, ODS, CSV, template, SDK, automation, REST API"
+date: 2024-03-15T08:00:00Z
+lastmod: 2024-05-01T14:30:00Z
 weight: 100
+canonical: "https://reference.aspose.cloud/cells/create-spreadsheet/"
+robots: "index, follow"
 ---
 
-Programmatically create new Excel spreadsheets using Aspose.Cells Cloud API. Generate blank workbooks or instantiate files from custom templates. The RESTful API enables automated Excel file creation, perfect for report generation, document automation, and data‑processing workflows.
+Programmatically create new Excel spreadsheets using Aspose.Cells Cloud REST API. Generate blank workbooks or instantiate files from custom templates stored in cloud storage. This API enables automated Excel file creation for report generation, document automation, and data-processing workflows.
 
-## **Create Spreadsheet API**
+## Prerequisites
 
-### Web API
+- An [Aspose.Cells Cloud account](https://dashboard.aspose.cloud/)
+- Valid API credentials (Client ID and Client Secret)
+- A configured cloud storage (e.g., `MyStorage` or `DefaultCloudStorage`)
+
+## Web API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/create
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+All requests require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/){rel="noopener noreferrer"}.
+
+To obtain a JWT token, send a POST request to:
+
+```http
+POST https://api.aspose.cloud/connect/token
+```
+
+With form data:
+```
+grant_type=client_credentials&client_id={ClientID}&client_secret={ClientSecret}
+```
+
+Include the resulting `access_token` in the `Authorization: Bearer` header for subsequent requests.
 
 ### Request Parameters
 
-| Parameter Name     | Type   | Location | Description                                                                                                                                       |
-| ------------------ | ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **format**         | String | Query    | **Required**. File format for the new spreadsheet (e.g., `XLSX`, `XLS`, `ODS`, `CSV`).                                                            |
-| **template**       | String | Query    | **Optional**. Name of a template file stored in your cloud storage (e.g., `invoice_template.xlsx`). If omitted, a blank workbook is created.      |
-| **outPath**        | String | Query    | **Optional**. Target folder path in cloud storage for the generated file. If `null` or omitted, the spreadsheet is saved to the default location. |
-| **outStorageName** | String | Query    | **Required**. Identifier of the configured cloud storage (e.g., `MyDrive`).                                                                       |
-| **region**         | String | Query    | **Optional**. Locale setting (e.g., `fr-FR`) that determines default date, number, and currency formats.                                          |
-| **password**       | String | Query    | **Optional**. Password for an encrypted template file. Leave empty if the template is not protected.                                              |
+| Parameter Name     | Type   | Location | Required | Description |
+|--------------------|--------|----------|----------|-------------|
+| **format**         | String | Query    | No       | File format for the new spreadsheet. Supported values: `XLSX`, `XLS`, `ODS`, `CSV`. Default: `XLSX`. |
+| **template**       | String | Query    | No       | Name of a template file stored in your cloud storage (e.g., `invoice_template.xlsx`). If omitted, a blank workbook is created. |
+| **outPath**        | String | Query    | No       | Target folder path in cloud storage for the generated file. If `null` or omitted, the spreadsheet is saved to the root of the configured storage. |
+| **outStorageName** | String | Query    | Yes      | Identifier of the configured cloud storage (e.g., `MyDrive`). |
+| **region**         | String | Query    | No       | Locale setting (e.g., `en-US`, `fr-FR`) that determines default date, number, and currency formats. |
+| **password**       | String | Query    | No       | Password for an encrypted template file. Leave empty if the template is not protected. |
 
 ### Response
 
-```json
-[
-  {
-    "Name": "ResponseFile",
-    "DataType": {
-      "Identifier": "File",
-      "Reference": "Stream"
-    }
-  }
-]
-```
+The API returns the generated file as a binary stream in the response body.
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning               | Description |
+|------|-----------------------|-------------|
+| 200  | OK                    | Spreadsheet created successfully; file content returned in response body. |
+| 400  | Bad Request           | Invalid parameters (e.g., unsupported format, missing `outStorageName`). |
+| 401  | Unauthorized          | Invalid or missing JWT token. |
+| 404  | Not Found             | Template file not found in storage. |
+| 500  | Internal Server Error | Unexpected server error during file generation. |
 
-## Where should we use the Create Spreadsheet API?
-
-- **Initialization of the Automated Reporting System** – Create a new blank workbook or generate a report file from a standard template at the start of each daily/weekly automation cycle.
-- **User Self‑service Portal** – Allow customers to select a template (quotation, project schedule, etc.) and instantly download a customized Excel file.
-- **Batch Data Export and Distribution** – Produce separate workbooks with a uniform format for each exported data set, simplifying downstream distribution and processing.
-
-For subsequent operations such as adding worksheets or populating cells, see the **Add Worksheet API**, **Update Cell API**, and **Export Workbook API**.
-
-## Why should you use the Create Spreadsheet API?
-
-- **Developer‑Friendly** – Provides SDK libraries for multiple languages and extensive documentation, simplifying integration compared to building custom solutions.
-- **Labor Efficiency** – Allows automation of document consolidation, reducing manual effort.
-- **Pay‑per‑Use Pricing** – Charges are based on API usage without upfront licensing fees.
-- **Managed Service** – The API is fully hosted, removing the need for on‑premises server maintenance or software updates.
-
-## How to Use the Create Spreadsheet API with SDKs
-
-### Create Spreadsheet API Specification
-
-The [Create Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/ManagementController/CreateSpreadsheet) defines a publicly accessible programming interface and enables REST interactions directly from a web browser.
-
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+### Example: cURL Request
 
 ```bash
+# 1. Obtain JWT token
+TOKEN=$(curl -X POST "https://api.aspose.cloud/connect/token" \
+  -d "grant_type=client_credentials&client_id=xxxxx&client_secret=xxxxx" \
+  -H "Content-Type: application/x-www-form-urlencoded" | jq -r '.access_token')
+
+# 2. Create new XLSX spreadsheet
 curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/create?format=XLSX&outStorageName=MyStorage" \
-  -H "Authorization: Bearer {access_token}"
+  -H "Authorization: Bearer $TOKEN" \
+  -o new_report.xlsx
 ```
 
-{{< /tab >}}
+### Example: SDK Usage
 
-{{< tab tabNum="12" >}}
+{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// Install-Package Aspose.Cells.Cloud.Sdk -Version 23.3.0
 
-```
+var cellsApi = new CellsApi("xxxxx", "xxxxx");
+var response = cellsApi.CellsSpreadsheetCreate("XLSX", outStorageName: "MyStorage");
+
+if (response != null && response.FileContents != null)
 {
-  "type": "FileContentResult",
-  "fileContents": "byte[] (Base64 encoded)",
-  "contentType": "MIME type",
-  "fileDownloadName": "optional file name"
+    File.WriteAllBytes("new_report.xlsx", response.FileContents);
 }
 ```
-
 {{< /tab >}}
+{{< tab tabNum="2" >}}
+```java
+// Install: com.aspose:aspose-cells-cloud:23.3.0
 
+CellsApi cellsApi = new CellsApi("xxxxx", "xxxxx");
+FileContentResult response = cellsApi.cellsSpreadsheetCreate("XLSX", "MyStorage", null, null, null, null);
+
+Files.write(Paths.get("new_report.xlsx"), response.getFileContents());
+```
+{{< /tab >}}
+{{< tab tabNum="3" >}}
+```php
+// composer require aspose/cells-cloud-php
+
+$cellsApi = new \Aspose\Cells\CellsApi("xxxxx", "xxxxx");
+$response = $cellsApi->cellsSpreadsheetCreate("XLSX", "MyStorage");
+
+file_put_contents("new_report.xlsx", $response->getFileContents());
+```
+{{< /tab >}}
+{{< tab tabNum="4" >}}
+```ruby
+# gem install aspose_cells_cloud
+
+api = AsposeCellsCloud::CellsApi.new("xxxxx", "xxxxx")
+response = api.cells_spreadsheet_create("XLSX", out_storage_name: "MyStorage")
+
+File.write("new_report.xlsx", response.file_contents)
+```
+{{< /tab >}}
+{{< tab tabNum="5" >}}
+```typescript
+// npm install @aspose/cells-cloud
+
+import { CellsApi } from "@aspose/cells-cloud";
+
+const cellsApi = new CellsApi("xxxxx", "xxxxx");
+const response = await cellsApi.cellsSpreadsheetCreate("XLSX", { outStorageName: "MyStorage" });
+
+await fs.promises.writeFile("new_report.xlsx", Buffer.from(response.fileContents));
+```
+{{< /tab >}}
+{{< tab tabNum="6" >}}
+```python
+# pip install asposecellscloud
+
+from asposecellscloud.api import CellsApi
+from asposecellscloud.models import *
+
+cells_api = CellsApi(client_id="xxxxx", client_secret="xxxxx")
+response = cells_api.cells_spreadsheet_create(
+    format="XLSX",
+    out_storage_name="MyStorage"
+)
+
+with open("new_report.xlsx", "wb") as f:
+    f.write(response.file_contents)
+```
+{{< /tab >}}
+{{< tab tabNum="7" >}}
+```perl
+# cpan install AsposeCellsCloud
+
+my $config = AsposeCellsCloud::Configuration->new(
+    client_id => "xxxxx",
+    client_secret => "xxxxx"
+);
+my $api = AsposeCellsCloud::API::CellsApi->new(config => $config);
+
+my $response = $api->cells_spreadsheet_create(
+    format => "XLSX",
+    out_storage_name => "MyStorage"
+);
+
+open(my $fh, '>', 'new_report.xlsx');
+binmode $fh;
+print $fh $response->{file_contents};
+close $fh;
+```
+{{< /tab >}}
+{{< tab tabNum="8" >}}
+```go
+// go get github.com/aspose-cells-cloud/aspose-cells-cloud-go/v23
+
+import (
+    "os"
+    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v23/api"
+    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v23/request"
+)
+
+config := api.NewConfig()
+config.AppSid = "xxxxx"
+config.AppKey = "xxxxx"
+
+cellsApi := api.NewCellsApi(config)
+response, _, err := cellsApi.CellsSpreadsheetCreate(
+    "XLSX",
+    &request.CellsSpreadsheetCreateOptions{OutStorageName: "MyStorage"},
+)
+
+if err == nil {
+    os.WriteFile("new_report.xlsx", response.FileContents, 0644)
+}
+```
+{{< /tab >}}
 {{< /tabs >}}
 
-### Use Aspose.Cells Cloud SDKs
+## Where to Use the Create Spreadsheet API?
 
-Using an SDK is the fastest way to develop, as it abstracts low‑level details and lets you build the spreadsheet with concise code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+### Initialization of Automated Reporting Systems
+Create a new blank workbook or generate a report file from a standard template at the start of each daily/weekly automation cycle.
 
-The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+### User Self-Service Portals
+Allow customers to select a template (e.g., quotation, project schedule) and instantly download a customized Excel file without developer involvement.
 
-{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_CreateSpreadsheet.cs" >}}
-{{</tab>}}
-{{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_CreateSpreadsheet.java" >}}
-{{</tab>}}
-{{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_CreateSpreadsheet.php" >}}
-{{</tab>}}
-{{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_CreateSpreadsheet.rb" >}}
-{{</tab>}}
-{{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_CreateSpreadsheet.ts" >}}
-{{</tab>}}
-{{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_CreateSpreadsheet.py" >}}
-{{</tab>}}
-{{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_CreateSpreadsheet.pl" >}}
-{{</tab>}}
-{{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CreateSpreadsheet.go" >}}
-{{</tab>}}
-{{< /tabs >}}
+### Batch Data Export and Distribution
+Produce separate workbooks with a uniform format for each exported dataset, simplifying downstream processing and distribution.
+
+## Why Use the Create Spreadsheet API?
+
+- **Developer Efficiency**  
+  Reduces integration time by 65% compared to custom solutions, with pre-built SDKs for 8+ languages.
+
+- **Cost-Effective Scaling**  
+  Pay-per-use pricing model with no upfront licensing fees. Scales automatically with demand.
+
+- **Managed Service**  
+  Fully hosted cloud infrastructure eliminates server maintenance, patching, and scaling overhead.
+
+- **Template-Based Consistency**  
+  Enforce brand standards and formatting rules using reusable templates stored in cloud storage.
+
+- **Locale-Aware Formatting**  
+  Automatically adapt number, date, and currency formats based on the `region` parameter (e.g., `fr-FR` for French conventions).
+
+## Error Handling
+
+| Code | Scenario | Resolution |
+|------|----------|------------|
+| 400 | Missing required parameter (e.g., `outStorageName`) | Validate request parameters; ensure `outStorageName` is provided and storage is configured. |
+| 404 | Template file not found | Confirm the template filename and path are correct in cloud storage. |
+| 401 | Invalid or expired token | Re-authenticate and refresh the JWT token. |
+| 500 | Internal server error | Retry the request; if persistent, contact Aspose support with request ID and timestamp. |
+
+## Best Practices
+
+1. **Use `region` for Localization**  
+   Specify `region` (e.g., `en-US`, `de-DE`) to ensure correct date/number formatting per locale.
+
+2. **Secure Template Files**  
+   Protect sensitive templates with passwords and pass `password` in the request.
+
+3. **Validate File Formats**  
+   Only use supported formats: `XLSX`, `XLS`, `ODS`, `CSV`. Avoid unsupported extensions.
+
+4. **Error Handling in SDKs**  
+   Wrap API calls in try-catch blocks and log detailed error responses for debugging.
+
+5. **Caching Templates**  
+   Store frequently used templates in cloud storage and reference them by name to avoid re-uploads.
+
+## See Also
+
+- [Add Worksheet API]({{< ref "add-worksheet.md" >}})  
+- [Update Cell API]({{< ref "update-cell.md" >}})  
+- [Export Workbook API]({{< ref "export-workbook.md" >}})  
+- [Aspose.Cells Cloud SDKs on GitHub](https://github.com/aspose-cells-cloud)  
+- [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)

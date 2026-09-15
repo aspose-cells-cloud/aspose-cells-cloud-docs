@@ -1,20 +1,20 @@
 ---
 title: "Aspose.Cells Cloud Web API – Convert a Local Excel Worksheet to a PDF File – Free Online Tool"
-second_title: "Document"
-ArticleTitle: "How to Convert a Local Spreadsheet Worksheet to a PDF File: Step‑by‑Step Guide"
+date: 2024-03-15T10:00:00Z
+ArticleTitle: "How to Convert a Local Spreadsheet Worksheet to a PDF File: Step-by-Step Guide"
 linktitle: "Convert Worksheet to PDF"
 type: docs
 url: /convert-worksheet-to-pdf/
-keywords: "Aspose.Cells, Excel to PDF, worksheet conversion, REST API, cloud conversion, spreadsheet PDF, API endpoint, PDF generation"
-description: "Use Aspose.Cells Cloud API to convert a worksheet from a local Excel file into a PDF document quickly and securely."
+keywords: "Aspose.Cells, Excel to PDF, worksheet conversion, REST API, cloud conversion, spreadsheet PDF, API endpoint, PDF generation, Excel to PDF API, cloud-based conversion, secure worksheet export"
+description: "Use Aspose.Cells Cloud API v4 to convert an Excel worksheet to PDF programmatically via REST. Includes cURL, SDK examples (C#, Java, Python, Go, and more), authentication, and error codes."
 weight: 100
 ---
 
 Export a worksheet from a local Excel file to a [PDF](https://docs.fileformat.com/pdf/) file using the Cloud API.
 
-## **Convert Worksheet to PDF API**
+## Convert a Worksheet to PDF
 
-### Web API
+### API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
@@ -22,7 +22,7 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### **Request Parameters:**
 
@@ -91,10 +91,11 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/worksheet/json?worksheet=Sheet1" \
-  -H "Authorization: Bearer {access_token}" \
+# First obtain a JWT token (see authentication docs)
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf?worksheet=Sheet1" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." \
   -F "Spreadsheet=@myWorkbook.xlsx" \
-  -o converted.json
+  -o output.pdf
 ```
 
 {{< /tab >}}

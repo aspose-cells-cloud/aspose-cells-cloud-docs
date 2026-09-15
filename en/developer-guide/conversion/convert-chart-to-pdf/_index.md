@@ -1,16 +1,20 @@
 ---
 title: "Aspose.Cells Cloud API – Convert Excel Chart to PDF"
 second_title: "Document"
-ArticleTitle: "How to Convert a Local Spreadsheet Chart to a PDF File: Step‑by‑Step Guide"
+ArticleTitle: "How to Convert a Local Spreadsheet Chart to a PDF File"
 linktitle: "Convert Chart to PDF"
 type: docs
 url: /convert-chart-to-pdf/
-keywords: "Aspose Cells, chart, PDF, Excel, conversion, cloud API"
-description: "Export charts from local Excel files to PDF format using the Aspose.Cells Cloud REST API. Supports XLSX and XLS files."
+keywords: "Aspose.Cells, chart, PDF, Excel, conversion, cloud API, export chart"
+description: "Use Aspose.Cells Cloud REST API to convert Excel charts (XLSX/XLS) to PDF without uploading full workbooks. Includes SDK samples in 8 languages."
 weight: 100
+date: 2024-05-10T00:00:00Z
+lastmod: 2024-06-10T14:30:00Z
+robots: index,follow
+canonical: "/convert-chart-to-pdf/"
 ---
 
-Export charts from a local Excel file to [PDF](https://docs.fileformat.com/pdf/) format using the Cloud API.
+Export charts from a local Excel file to [PDF (Portable Document Format)](https://www.iso.org/standard/51502.html) using the Cloud API.
 
 ## **Convert Chart to PDF Web API**
 
@@ -22,7 +26,7 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer nofollow">JWT token-based authentication</a>.
 
 ### **Request Parameters:**
 
@@ -116,7 +120,8 @@ The [Convert Chart to PDF API Specification](https://reference.aspose.cloud/cell
 ## Use Aspose.Cells Cloud SDKs
 
 Using the SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to convert a chart to a PDF file with minimal code.  
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs.  
+Code examples are pinned to SDK v1.2.0 (released 2024-05).
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}

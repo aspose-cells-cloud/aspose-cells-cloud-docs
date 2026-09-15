@@ -1,55 +1,66 @@
 ---
-title: "Search Text in Remote Excel Spreadsheets – Aspose.Cells Cloud API"
-second_title: "Document"
-ArticleTitle: "Search Text in Remote Excel Spreadsheets – Find Specific Data"
-linktitle: "Search Remote Spreadsheet Content"
-type: docs
 url: /search-content-in-remote-spreadsheet/
+title: "Search Text in Remote Excel Spreadsheets – Aspose.Cells Cloud API"
+second_title: "Search Content in Remote Spreadsheet API"
+linktitle: "Search Remote Spreadsheet Content"
+date: 2024-03-15T09:00:00Z
+lastmod: 2024-05-20T14:30:00Z
+description: "Learn how to programmatically search text, numbers, or formulas in Excel files stored in cloud storage using Aspose.Cells Cloud REST API — with case-insensitive matching, folder support, and password handling."
 keywords: "Aspose.Cells, Excel search API, cloud spreadsheet, text search, REST"
-description: "Search for text, numbers, or formulas in Excel files stored in cloud storage using Aspose.Cells Cloud. Supports case‑insensitive queries, folder selection, and password‑protected workbooks."
 weight: 100
 ---
 
-### **Search Content in Remote Spreadsheet API**
+## Search Content in Remote Spreadsheet API
 
-Programmatically search for specific text within any Excel spreadsheet using the Aspose.Cells Cloud API. Find text, numbers, or formulas in files stored in cloud storage. This RESTful API enables automated data discovery, content analysis, and spreadsheet‑auditing workflows.
+Programmatically search for specific text, numbers, or formulas in Excel workbooks stored in cloud storage using the Aspose.Cells Cloud REST API. This operation scans all worksheets and cells remotely—no file download required—and returns precise locations of matches, enabling automated data discovery, compliance auditing, and template validation workflows.
 
-### **Web API**
+## Prerequisites
+
+Before using this API, ensure you have:
+
+- An active [Aspose.Cells Cloud account](https://dashboard.aspose.cloud/)  
+- Your **Client ID** and **Client Secret** from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/)  
+- A workbook uploaded to your cloud storage (see [Upload Files to Cloud Storage](/cloud-storage/upload-file/))  
+- SDK or HTTP client configured for JWT authentication  
+
+## Web API Endpoint
 
 ```bash
 PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content
 ```
 
-### **Security and Authentication**
+## Authentication
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+All requests require a valid JWT Bearer token. See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 
-```bash
--H "Authorization: Bearer {access_token}"
+```http
+Authorization: Bearer {access_token}
 ```
 
-### **Request Parameters:**
+## Request Parameters
 
-| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                      |
-| :------------- | :------ | :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name           | String  | Path                       | **Required**. The filename of the Excel workbook (including extension) where the text search will be performed, e.g., `sales_data.xlsx`.                         |
-| searchText     | String  | Query                      | **Required**. The exact string, number, or partial content to locate across the entire workbook or worksheet(s).                                                 |
-| ignoringCase   | Boolean | Query                      | **Optional**. Determines case‑sensitivity. Set to `true` for case‑insensitive matching (e.g., “Report” matches “REPORT”); default is `false`.                    |
-| folder         | String  | Query                      | **Optional**. The directory path within your cloud storage that contains the target workbook. If omitted, the root folder is assumed.                            |
-| storageName    | String  | Query                      | **Optional**. The name identifier for a custom‑configured cloud storage service. If not specified, the API uses the default storage associated with the account. |
-| region         | String  | Query                      | **Optional**. The locale setting (e.g., `es-ES`) applied during the search, which may affect text normalization or collation rules.                              |
-| password       | String  | Query                      | **Optional**. The decryption password required to access a password‑protected Excel file. Omit this parameter if the file is not encrypted.                      |
+| Parameter     | Type    | Location | Required | Description |
+|---------------|---------|----------|----------|-------------|
+| `name`        | string  | Path     | ✅ Yes   | Filename of the Excel workbook (e.g., `sales_data.xlsx`). |
+| `searchText`  | string  | Query    | ✅ Yes   | Text, number, or partial string to locate. |
+| `ignoringCase`| boolean | Query    | ❌ No    | `true` for case-insensitive matching (default: `true`). |
+| `folder`      | string  | Query    | ❌ No    | Directory path in cloud storage (default: root). |
+| `storageName` | string  | Query    | ❌ No    | Custom storage identifier (default: configured account storage). |
+| `region`      | string  | Query    | ❌ No    | Locale (e.g., `en-US`, `fr-FR`) affecting number/date parsing and text collation. |
+| `password`    | string  | Query    | ❌ No    | Decryption password for password-protected files. Omit if not encrypted. |
 
-**Glossary**
+## Example Request (cURL)
 
-- **searchText** – The exact string to locate; can be a partial match.
-- **ignoringCase** – `true` makes the search case‑insensitive; `false` enforces case‑sensitivity.
-- **folder** – Path to the directory that holds the workbook.
-- **storageName** – Identifier of a custom storage configuration.
-- **region** – Locale code that influences text comparison rules.
-- **password** – Decryption password for protected workbooks.
+```bash
+curl -X PUT \
+  "https://api.aspose.cloud/v4.0/cells/sales_data.xlsx/search/content?searchText=Q3&ignoringCase=true&folder=Reports" \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Content-Type: application/json"
+```
 
-### **Response**
+## Response
+
+Returns a `SearchResponse` object with HTTP status `200 OK`, containing an array of match results.
 
 ```json
 {
@@ -57,86 +68,219 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
   "Status": "OK",
   "TextItems": [
     {
-      "Filename": "string",
-      "Worksheet": "string",
-      "Position": "string",
-      "Content": "string"
+      "Filename": "sales_data.xlsx",
+      "Worksheet": "Q3_Summary",
+      "Position": "B5",
+      "Content": "Q3 Revenue: $1.2M"
+    },
+    {
+      "Filename": "sales_data.xlsx",
+      "Worksheet": "Notes",
+      "Position": "D12",
+      "Content": "Q3 launch target met"
     }
   ]
 }
 ```
 
-The response contains a list of cells (`CellName`) where the searched text was found, together with the worksheet name and the matching text. If no matches are found, the `Cells` array is empty and the request still returns HTTP 200 OK.
+### Response Fields
 
-### Error Codes
+| Field      | Type   | Description |
+|------------|--------|-------------|
+| `Filename` | string | Source workbook name. |
+| `Worksheet`| string | Worksheet containing the match. |
+| `Position` | string | Cell address (e.g., `B5`) of the match. |
+| `Content`  | string | Full cell value where the match occurred. |
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-  ```json
-  {"code":400,"message":"Invalid request URI"}
-  ```
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
-  ```json
-  {"code":401,"message":"Invalid access token"}
-  ```
-- **404 Not Found** – The spreadsheet file is not accessible.  
-  ```json
-  {"code":404,"message":"File not found"}
-  ```
-- **500 Server Error** – An unexpected condition prevented the API from completing the request.  
-  ```json
-  {"code":500,"message":"Internal server error"}
-  ```
+> ⚠️ If no matches are found, `TextItems` is an empty array (`[]`), but the request still returns HTTP `200 OK`.
 
-## Where should we use the Search content within the Spreadsheet API?
+## Error Handling
 
-- **Comprehensive workbook compliance audit** – Quickly scan the entire Excel file to identify all sensitive terms (e.g., “Confidential Clause”, “Internal Data”) for enterprise data‑security and compliance checks.
-- **Cross‑sheet data association query** – When project information is scattered across multiple worksheets, search for a specific project number or customer name and instantly locate all related data.
-- **Batch template content verification** – After automated report generation, scan multiple Excel files in batches to confirm that all preset placeholders (such as `{{Date}}`) have been correctly replaced, ensuring report completeness and accuracy.
-- **Historical data archiving and mining** – Analyse legacy files, search for specific event codes or business terms, and quickly understand historical business logic for data archaeology.
+| Status Code | Error Code | Description |
+|-------------|------------|-------------|
+| `400` | `Invalid request URI` | Malformed URL or invalid parameter. |
+| `401` | `Invalid access token` | Missing, expired, or invalid JWT token. |
+| `404` | `File not found` | Workbook does not exist or path is incorrect. |
+| `500` | `Internal server error` | Unexpected server-side failure (e.g., unsupported file format). |
 
-## Why should you use the Search content within the Spreadsheet API?
+## Use Cases
 
-- **Developer‑friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development with comprehensive documentation. Compared with building custom solutions, this significantly reduces development effort.
-- **Reduced labor costs** – Automates repetitive search tasks, freeing developers from manual data‑extraction work.
-- **Pay‑per‑use** – No upfront investment; you only pay for the API calls you actually use.
-- **No maintenance required** – Aspose manages servers, updates, and compatibility, so you can focus on your application logic.
-- **Preserves complex Excel formatting** – Results can be exported to universally accessible PDF format while retaining original styling.
+### Compliance & Security Auditing
+Scan entire workbooks for sensitive terms (e.g., `"Confidential"`, `"PII"`, `"GDPR"`) to enforce data governance and detect policy violations.
 
-## How to Use the Search for broken links within the range of the Spreadsheet API with SDKs
+### Cross-Worksheet Data Linking
+Locate project IDs, customer names, or SKUs across multiple sheets to validate data consistency and trace dependencies.
 
-### OpenAPI Specification
+### Template Validation
+After report automation, verify placeholder replacement (e.g., `{{Date}}`) across hundreds of files to ensure output integrity.
 
-<a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteSpreadsheet" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+### Historical Data Mining
+Search legacy archives for event codes (e.g., `"Bankruptcy"`, `"Merger"`) to extract business logic and support legacy system migration.
 
-### Use Aspose.Cells Cloud SDKs
+## Benefits
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search content within spreadsheets for cells with minimal code. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+- **Developer-Friendly** – SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go accelerate integration  
+- **Zero Infrastructure** – Fully managed cloud service; no servers, updates, or compatibility overhead  
+- **Cost-Effective** – Pay-per-use pricing model with no upfront investment  
+- **Format Preservation** – Search results retain original Excel formatting; export to PDF or other formats if needed  
 
-The following code examples illustrate how to invoke Aspose.Cells web services using various SDKs:
+## Code Examples
 
-{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchTextInRemoteSpreadsheet.cs" >}}
-{{</tab>}}
-{{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchTextInRemoteSpreadsheet.java" >}}
-{{</tab>}}
-{{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchTextInRemoteSpreadsheet.php" >}}
-{{</tab>}}
-{{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchTextInRemoteSpreadsheet.rb" >}}
-{{</tab>}}
-{{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchTextInRemoteSpreadsheet.ts" >}}
-{{</tab>}}
-{{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchTextInRemoteSpreadsheet.py" >}}
-{{</tab>}}
-{{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchTextInRemoteSpreadsheet.pl" >}}
-{{</tab>}}
-{{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchTextInRemoteSpreadsheet.go" >}}
-{{</tab>}}
+Using Aspose.Cells Cloud SDKs is the recommended approach for development. Below are minimal examples in each supported language.
+
+{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+
+{{< tab tabNum="1" >}}
+```csharp
+// See full example at: 
+// https://github.com/aspose-cells-cloud/aspose-cells-cloud-csharp/blob/master/Examples/Cells/SearchTextInRemoteSpreadsheet.cs
+
+var cellsApi = new CellsApi(clientId, clientSecret);
+var result = await cellsApi.SearchContentInRemoteSpreadsheet(
+    name: "sales_data.xlsx",
+    searchText: "Q3",
+    ignoringCase: true,
+    folder: "Reports"
+);
+Console.WriteLine($"Found {result.TextItems?.Count ?? 0} matches.");
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```java
+// Full example: 
+// https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/blob/master/Examples/src/main/java/com/aspose/cells/cloud/examples/Cells/SearchTextInRemoteSpreadsheet.java
+
+CellsApi cellsApi = new CellsApi(clientId, clientSecret);
+SearchResponse result = cellsApi.searchContentInRemoteSpreadsheet(
+    "sales_data.xlsx",
+    "Q3",
+    true,
+    "Reports",
+    null,
+    null,
+    null
+);
+System.out.println("Matches found: " + result.getTextItems().size());
+```
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+```php
+// Full example: 
+// https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/blob/master/examples/Cells/SearchTextInRemoteSpreadsheet.php
+
+$cellsApi = new CellsApi($clientId, $clientSecret);
+$result = $cellsApi->SearchContentInRemoteSpreadsheet(
+    "sales_data.xlsx",
+    "Q3",
+    true,
+    "Reports"
+);
+echo "Matches: " . count($result->getTextItems());
+```
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+```ruby
+# Full example: 
+# https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/blob/master/examples/cells/search_text_in_remote_spreadsheet.rb
+
+cells_api = AsposeCellsCloud::CellsApi.new(client_id: client_id, client_secret: client_secret)
+result = cells_api.search_content_in_remote_spreadsheet(
+  name: 'sales_data.xlsx',
+  search_text: 'Q3',
+  ignoring_case: true,
+  folder: 'Reports'
+)
+puts "Found #{result.text_items.length} matches"
+```
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+```typescript
+// Full example: 
+// https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/blob/master/examples/cells/searchTextInRemoteSpreadsheet.ts
+
+const cellsApi = new CellsApi(clientId, clientSecret);
+const result = await cellsApi.searchContentInRemoteSpreadsheet(
+  'sales_data.xlsx',
+  'Q3',
+  true,
+  'Reports'
+);
+console.log(`Matches: ${result.body.textItems?.length ?? 0}`);
+```
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+```python
+# Full example: 
+# https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/blob/master/examples/cells/search_text_in_remote_spreadsheet.py
+
+cells_api = CellsApi(client_id, client_secret)
+result = cells_api.search_content_in_remote_spreadsheet(
+    'sales_data.xlsx',
+    'Q3',
+    ignoring_case=True,
+    folder='Reports'
+)
+print(f"Matches: {len(result.body.text_items or [])}")
+```
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+```perl
+# Full example: 
+# https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/blob/master/examples/Cells/SearchTextInRemoteSpreadsheet.pl
+
+my $cells_api = AsposeCellsCloud::CellsApi->new(
+    -client_id => $client_id,
+    -client_secret => $client_secret
+);
+my $result = $cells_api->search_content_in_remote_spreadsheet(
+    'sales_data.xlsx',
+    'Q3',
+    1,
+    'Reports'
+);
+print "Matches: " . scalar(@{$result->{TextItems}}) . "\n";
+```
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+```go
+// Full example: 
+// https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/blob/master/examples/cells/search_text_in_remote_spreadsheet.go
+
+cellsAPI, _, _ := cells.NewCellsApiClient(clientID, clientSecret)
+result, _, err := cellsAPI.SearchContentInRemoteSpreadsheet(
+    context.Background(),
+    "sales_data.xlsx",
+    &cells.SearchContentInRemoteSpreadsheetOptions{
+        SearchText:   to.String("Q3"),
+        IgnoringCase: to.Bool(true),
+        Folder:       to.String("Reports"),
+    },
+)
+fmt.Printf("Matches: %d\n", len(*result.TextItems))
+```
+{{< /tab >}}
+
 {{< /tabs >}}
+
+> 💡 **Note**: All examples use SDK v23.5+ and require valid credentials. Replace placeholder values (`clientId`, `clientSecret`, `name`, `searchText`, `folder`) with your own.
+
+## OpenAPI Reference
+
+Explore the full API specification and test directly in your browser:  
+[Aspose.Cells Cloud API Reference – SearchContentInRemoteSpreadsheet](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteSpreadsheet)
+
+## See Also
+
+- [Upload Files to Cloud Storage](/cloud-storage/upload-file/)  
+- [Convert Excel to PDF](/convert-excel/)  
+- [Save As Options](/save-as/)  
+- [Excel File Security Best Practices](/security/)  
+
+<!-- alt="Search API workflow: Developer → Auth Token → PUT /cells/{name}/search/content → Cloud Storage → Response with TextItems array" -->

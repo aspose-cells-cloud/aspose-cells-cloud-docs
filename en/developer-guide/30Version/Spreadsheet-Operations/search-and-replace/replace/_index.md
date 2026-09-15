@@ -1,18 +1,27 @@
 ---
-title: "Replace text from Excel files"
+title: Replace Text in Excel Files
 second_title: "Document"
-linktitle: "Replace without using storage"
+linktitle: "Replace text without using storage"
 type: docs
 url: /replace/
-keywords: "Excel replace text, Aspose.Cells Cloud, REST API, spreadsheet replace, API, Excel file text replacement"
-description: "Use Aspose.Cells Cloud REST API to replace existing text with new values in Excel files. Supports SDKs for C#, Java, Python, Node.js, PHP, Ruby, Go, and Perl."
+keywords: "excel text replacement, aspose.cells cloud api, rest api example, c# excel automation, spreadsheet text find replace, replace text in excel"
+description: "Replace specified text with new text in Excel files using Aspose.Cells Cloud REST API. Supports cURL, SDKs for C#, Java, Python, Node.js, PHP, Ruby, Go, and Perl. Secure JWT-authenticated processing with optional worksheet targeting."
+date: 2024-03-15T10:00:00Z
+lastmod: 2024-05-20T14:30:00Z
 weight: 80
 ---
 
+## Replace Text in Excel Files
 
-## REST API
+Replace specified text with new text in Excel files using Aspose.Cells Cloud REST API. This operation supports multiple files in a single request, optional worksheet targeting, and password-protected workbooks. All API calls require JWT token-based authentication.
 
-This REST API replaces data in Excel files.
+{{< figure
+  src="https://docs.aspose.cloud/cells/images/sdk-icon.png"
+  alt="Aspose.Cells Cloud SDK for Excel logo"
+  caption="Aspose.Cells Cloud text replacement workflow"
+>}}
+
+## REST API Endpoint
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/replace
@@ -20,95 +29,266 @@ POST https://api.aspose.cloud/v3.0/cells/replace
 
 ### Security and Authentication
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+All Aspose.Cells Cloud APIs require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Ensure your request includes a valid `Authorization: Bearer <jwt_token>` header.
 
+---
 
-### Request Parameter
+## Request Parameters
 
-| Parameter Name | Type   | Location             | Description                                   |
-| -------------- | ------ | -------------------- | --------------------------------------------- |
-| **file**       | file   | formData (multipart) | Excel file to be processed.                   |
-| **text**       | string | query                | Text string to be replaced.                   |
-| **newtext**    | string | query                | Replacement text.                             |
-| **password**   | string | query                | Password for a protected workbook (optional). |
-| **sheetname**  | string | query                | Name of the worksheet to target (optional).   |
+| Parameter Name          | Type    | Location             | Required | Description                                                                 |
+|-------------------------|---------|----------------------|----------|-----------------------------------------------------------------------------|
+| **file**                | file    | formData (multipart) | Yes      | Excel file(s) to process. Multiple files can be uploaded in one request.   |
+| **text**                | string  | query                | Yes      | Text string to locate and replace.                                          |
+| **newtext**             | string  | query                | Yes      | Replacement text.                                                           |
+| **password**            | string  | query                | No       | Password for protected workbooks (optional).                               |
+| **sheetname**           | string  | query                | No       | Target worksheet name. If omitted, search occurs across all visible sheets.|
+| **checkExcelRestriction**| boolean| query                | No       | Whether to enforce Excel cell modification restrictions. Default: `true`.  |
 
-### **Response**
+---
+
+## Response Format
+
+The API returns a `FilesResult` object containing the processed files:
 
 ```json
 {
-  "Status":"OK",
-  "Code":200,
   "Files": [
     {
-      "Filename" : "[file1 name]",
-      "Filesize" : [file size],
-      "FileContent" : "[Base64String]"
-    },
-    {
-      "Filename" : "[file2 name]",
-      "Filesize" : [file size],
-      "FileContent" : "[Base64String]"
-    },
-    {
-      "Filename" : "[file3 name]",
-      "Filesize" : [file size],
-      "FileContent" : "[Base64String]"
+      "Filename": "[filename].xlsx",
+      "FileSize": 274022,
+      "FileContent": "UEsDBBQABgAIAAAAIQDf...[Base64-encoded XLSX content]..."
     }
-  ]
+  ],
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-## How to Use the PostReplace API with SDKs
+| Code | Meaning               | Description                                                                 |
+|------|-----------------------|-----------------------------------------------------------------------------|
+| 200  | OK                    | Replacement completed successfully. Response includes updated file(s).      |
+| 400  | Bad Request           | Missing required parameters, invalid file format, or malformed request.    |
+| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                     |
+| 413  | Payload Too Large     | Total uploaded file size exceeds the 2 GB limit.                            |
+| 500  | Internal Server Error | Unexpected server-side failure during processing.                           |
 
-### PostReplace API Specification
+---
 
+## Using the API
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### cURL Example
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
+Replace "1" with "aspose.cells.cloud" in two Excel files:
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.cloud" \
--X POST \
--H "Content-Type: multipart/form-data" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <valid_jwt_token>" \
+  -F 'file1=@/path/to/file1.xlsx' \
+  -F 'file2=@/path/to/file2.xlsx'
+```
+
+### SDK Integration
+
+Aspose.Cells Cloud SDKs reduce boilerplate code for authentication, request signing, and response parsing. Below are code examples for major languages. All examples use **v24.5** of the respective SDKs.
+
+{{< tabs tabTotal="8" tabID="sdk-tabs" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+// Aspose.Cells Cloud SDK for .NET v24.5
+// Example: Replace text in Excel files
+
+var config = new Configuration { ClientId = "your_client_id", ClientSecret = "your_client_secret" };
+var cellsApi = new CellsApi(config);
+
+// Replace "1" with "aspose.cells.cloud" in file1.xlsx
+var response = cellsApi.PostReplace("file1.xlsx", "1", "aspose.cells.cloud");
+Console.WriteLine($"Replaced text in {response.Files[0].Filename}");
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```json
-{
-  "Files": [
-    {
-      "Filename": "xxxx1",
-      "FileSize": 274022,
-      "FileContent": "-----Base64String--------"
-    },
-    {
-      "Filename": "xxxx2",
-      "FileSize": 274022,
-      "FileContent": "-----Base64String--------"
-    }
-  ]
+```java
+// Aspose.Cells Cloud SDK for Java v24.5
+// Example: Replace text in Excel files
+
+ApiClient client = new ApiClient("your_client_id", "your_client_secret", null);
+CellsApi cellsApi = new CellsApi(client);
+
+String filename = "file1.xlsx";
+String text = "1";
+String newtext = "aspose.cells.cloud";
+
+FilesResult result = cellsApi.postReplace(filename, text, newtext, null, null, null);
+System.out.println("Replaced text in: " + result.getFiles().get(0).getFilename());
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```php
+<?php
+// Aspose.Cells Cloud SDK for PHP v24.5
+// Example: Replace text in Excel files
+
+require_once("vendor/autoload.php");
+
+use Aspose\Cells\CellsApi;
+use Aspose\Cells\ApiClient;
+
+$clientId = "your_client_id";
+$clientSecret = "your_client_secret";
+$apiKey = "your_api_key";
+
+$cellsApi = new CellsApi($clientId, $clientSecret);
+
+$response = $cellsApi->postReplace("file1.xlsx", "1", "aspose.cells.cloud");
+echo "Replaced text in: " . $response->getFiles()[0]->getFilename() . "\n";
+?>
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+# Aspose.Cells Cloud SDK for Ruby v24.5
+# Example: Replace text in Excel files
+
+require 'aspose_cells_cloud'
+
+configure do |config|
+  config.client_id = 'your_client_id'
+  config.client_secret = 'your_client_secret'
+end
+
+api_instance = AsposeCellsCloud::CellsApi.new
+filename = 'file1.xlsx'
+text = '1'
+newtext = 'aspose.cells.cloud'
+
+response = api_instance.post_replace(filename, text, newtext)
+puts "Replaced text in: #{response.files.first.filename}"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+// Aspose.Cells Cloud SDK for Node.js v24.5
+// Example: Replace text in Excel files
+
+import { CellsApi, Configuration } from '@aspose/cells-cloud';
+
+const config = new Configuration({
+  clientId: 'your_client_id',
+  clientSecret: 'your_client_secret'
+});
+const cellsApi = new CellsApi(config);
+
+const response = await cellsApi.postReplace('file1.xlsx', '1', 'aspose.cells.cloud');
+console.log(`Replaced text in: ${response.data.files[0].filename}`);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```python
+# Aspose.Cells Cloud SDK for Python v24.5
+# Example: Replace text in Excel files
+
+from asposecellscloud.api import cells_api
+from asposecellscloud.configuration import Configuration
+
+config = Configuration()
+config.client_id = "your_client_id"
+config.client_secret = "your_client_secret"
+
+api = cells_api.CellsApi(config)
+response = api.post_replace(
+    name="file1.xlsx",
+    text="1",
+    new_text="aspose.cells.cloud"
+)
+print(f"Replaced text in: {response.files[0].filename}")
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+```perl
+# Aspose.Cells Cloud SDK for Perl v24.5
+# Example: Replace text in Excel files
+
+use AsposeCellsCloud::Configuration;
+use AsposeCellsCloud::CellsApi;
+
+my $config = AsposeCellsCloud::Configuration->new(
+  client_id => 'your_client_id',
+  client_secret => 'your_client_secret'
+);
+my $api = AsposeCellsCloud::CellsApi->new(config => $config);
+
+my $filename = 'file1.xlsx';
+my $text = '1';
+my $newtext = 'aspose.cells.cloud';
+
+my $response = $api->post_replace(
+  name => $filename,
+  text => $text,
+  newtext => $newtext
+);
+print "Replaced text in: " . $response->{files}[0]{filename} . "\n";
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+```go
+// Aspose.Cells Cloud SDK for Go v24.5
+// Example: Replace text in Excel files
+
+package main
+
+import (
+  "context"
+  "fmt"
+  "os"
+  "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v24.5/api"
+  "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v24.5/client"
+)
+
+func main() {
+  cfg := client.NewConfiguration()
+  cfg.AppKey = "your_client_id"
+  cfg.AppSid = "your_client_secret"
+  
+  api := api.NewCellsApiWithClientConfiguration(cfg)
+  
+  fileName := "file1.xlsx"
+  text := "1"
+  newText := "aspose.cells.cloud"
+  
+  resp, _, err := api.PostReplace(context.Background(), fileName, text, newText, nil, nil, nil)
+  if err != nil {
+    fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+    os.Exit(1)
+  }
+  
+  fmt.Printf("Replaced text in: %s\n", *resp.Files[0].Filename)
 }
 ```
 
@@ -116,60 +296,21 @@ curl -v "https://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+For full SDK examples and documentation, visit the [Aspose.Cells Cloud GitHub Repository](https://github.com/aspose-cells-cloud).
 
-Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+---
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+## Best Practices
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+- **Use specific `sheetname`** to avoid unintended replacements across multiple sheets.
+- **Test in a non-production environment** first—especially when `checkExcelRestriction` is `false`.
+- **Validate `newtext` length**—extremely long replacements may alter cell formatting unexpectedly.
+- **Include `checkExcelRestriction=true`** unless you explicitly need to bypass Excel’s cell protection rules.
 
-{{< tab tabNum="1" >}}
+---
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostReplace.cs" >}}
+## Related Resources
 
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostReplace.java" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostReplace.php" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostReplace.rb" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostReplace.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostReplace.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostReplace.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostReplace.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+- [Aspose.Cells Cloud SDKs Overview](https://docs.aspose.cloud/total/sdk/)
+- [OpenAPI Specification for PostReplace](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace)
+- [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)

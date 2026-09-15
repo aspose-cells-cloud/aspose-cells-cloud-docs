@@ -3,8 +3,9 @@ title: "Get MinRow from Excel Worksheet – Aspose.Cells Cloud API Reference"
 type: docs
 url: /get-minrow-from-excel-worksheet/
 weight: 80
+date: 2023-11-15
+description: "Retrieve the first non-empty row index from an Excel worksheet using Aspose.Cells Cloud REST API v3.0 — includes cURL, SDK examples (C#, Java, Python, Go, and more), and error codes."
 keywords: "Aspose.Cells, GetMinRow, Excel worksheet, REST API, min row index, cloud SDK"
-description: "Learn how to retrieve the minimum row index of a worksheet using Aspose.Cells Cloud REST API (v3.0). Includes full cURL request with authentication, response schema, and SDK examples for multiple languages."
 ArticleTitle: "Get MinRow from Excel Worksheet – Aspose.Cells Cloud API Reference"
 ---
 
@@ -12,7 +13,7 @@ This REST API returns the minimum row index in an Excel worksheet when the `cell
 
 - **cURL Example:**
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tabs tabTotal="9" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
@@ -22,6 +23,8 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
 ```
+
+> _“Replace `<access_token>` with a valid OAuth 2.0 access token. Generate one via the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).”_
 
 {{< /tab >}}
 
@@ -70,7 +73,7 @@ Using an SDK is the fastest way to develop. An SDK handles low‑level details s
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
+{{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -116,18 +119,18 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="8" >}}
 
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
-
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-Cells-GetMinRowWorksheet-1.pl" >}}
 
 {{< /tab >}}
 
-{{< tab tabNum="10" >}}
+{{< tab tabNum="9" >}}
 
 {{< gist "aspose-cells-cloud-gists" "d9497c39cde5cecb6709ff5feb2ab2b8" >}}
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+> _**Note:** This endpoint uses Aspose.Cells Cloud API v3.0. We recommend migrating to [v4.0](/v4-apis) for improved performance and features._
+
+> _Related APIs: [Get MaxRow](/get-maxrow-from-excel-worksheet/), [Get Cell](/get-cell-from-excel-worksheet/). For SDK setup guidance, see [Set Up SDKs](/setup-sdk/)._

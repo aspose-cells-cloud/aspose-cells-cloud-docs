@@ -4,8 +4,10 @@ second_title: "Document"
 linktitle: "Save options"
 type: docs
 url: /save-options/
-keywords: "Aspose.Cells Cloud, SaveOptions, Excel, Workbook, REST API, File Formats, PDF, CSV, JSON, HTTP Compression, Chart Cache, Named Ranges, Directory Creation"
-description: "Describes the SaveOptions properties of the Aspose.Cells Cloud REST API, enabling developers to configure workbook‑saving behavior across multiple file formats and options such as HTTP compression, chart cache refresh, and automatic directory creation."
+date: 2024-03-15T10:00:00Z
+lastmod: 2024-05-22T14:30:00Z
+keywords: "Aspose.Cells Cloud, SaveOptions, REST API, Excel save, PDF export, HTTP compression"
+description: "Configure workbook saving behavior in Aspose.Cells Cloud REST API using SaveOptions — including HTTP compression, chart refresh, and directory creation. Full parameter reference with examples."
 weight: 79
 ArticleTitle: "Save Options – Aspose.Cells Cloud REST API Documentation"
 ---
@@ -15,8 +17,8 @@ ArticleTitle: "Save Options – Aspose.Cells Cloud REST API Documentation"
 SaveOptions allow you to control how a workbook is saved when using the Aspose.Cells Cloud REST API. By configuring these options you can enable HTTP compression, specify the output format, manage temporary storage, and control additional behaviors such as chart cache refresh and automatic directory creation.
 
 **Prerequisites**  
-- An authenticated Aspose.Cells Cloud session (OAuth 2.0 or JWT).  
-- The target workbook must be loaded or created via the API prior to saving.
+- An authenticated Aspose.Cells Cloud session ([OAuth 2.0 setup](/oauth-setup)).  
+- The target workbook must be loaded or created via the API prior to saving ([Create or load workbook via API](/workbook-operations)).
 
 | Name                      | Type       | Description                                                                                        | Notes      |
 | ------------------------- | ---------- | -------------------------------------------------------------------------------------------------- | ---------- |
@@ -58,6 +60,5 @@ SaveOptions allow you to control how a workbook is saved when using the Aspose.C
 
 **Notes / Remarks**  
 - When **CreateDirectory** is set to `true`, the API will automatically create the target folder if it does not already exist.  
-- Enabling **EnableHTTPCompression** can reduce payload size for large workbooks, but the client must support gzip/deflate decoding.  
-- **RefreshChartCache** should be used when charts rely on dynamic data that may have changed since the workbook was generated.
-
+- Enabling **EnableHTTPCompression** can reduce payload size for large workbooks, but the client must support gzip/deflate decoding ([RFC 7694](https://datatracker.ietf.org/doc/html/rfc7694)).  
+- **RefreshChartCache** should be used when charts rely on dynamic data that may have changed since the workbook was generated. For more information, see [Learn more about file formats](/supported-formats).

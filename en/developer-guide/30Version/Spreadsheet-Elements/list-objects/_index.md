@@ -9,8 +9,9 @@ aliases:
   - /working-with-list-objects/
   - /working-with-list-object-or-table/
 keywords: "Aspose.Cells, Excel ListObject, Excel table API, add table, update table, delete table, convert table to range, sort Excel table"
-description: "Learn how to add, update, delete, retrieve, sort, and convert Excel ListObjects (tables) using Aspose.Cells Cloud REST API. Includes code samples for C#, Java, Python, and more."
+description: "Add, update, sort, and convert Excel ListObjects (tables) using Aspose.Cells Cloud REST API. Includes C#, Java, Python, and Node.js code examples."
 weight: 100
+date: 2023-11-15
 ---
 
 Excel ListObjects (tables) provide a structured way to organize data sets. They include features such as automatic data arrangement, header rows, built‑in filters, and optional total rows. Master these capabilities to analyze your data quickly and efficiently.
@@ -27,7 +28,7 @@ Excel ListObjects (tables) provide a structured way to organize data sets. They 
 - [How to insert a slicer for a table](/cells/list-objects/insert-slicer/)
 
 **API Reference (overview):**  
-The Aspose.Cells Cloud REST API exposes ListObject operations through endpoints such as `GET /cells/{fileName}/worksheets/{sheetName}/listobjects`, `POST /cells/{fileName}/worksheets/{sheetName}/listobjects`, `PUT /cells/{fileName}/worksheets/{sheetName}/listobjects/{listObjectIndex}`, and `DELETE /cells/{fileName}/worksheets/{sheetName}/listobjects/{listObjectIndex}`. Required query parameters include `folder` and `storage`. Request bodies are JSON objects describing the table’s properties (name, showHeaderRow, showTotalRow, etc.), and responses return JSON payloads with the created or modified ListObject details.
+The Aspose.Cells Cloud REST API exposes ListObject operations through endpoints such as `GET /cells/{fileName}/worksheets/{sheetName}/listobjects`, `POST /cells/{fileName}/worksheets/{sheetName}/listobjects`, `PUT /cells/{fileName}/worksheets/{sheetName}/listobjects/{listObjectIndex}`, and `DELETE /cells/{fileName}/worksheets/{sheetName}/listobjects/{listObjectIndex}`. Required query parameters include `folder` (required) and `storage` (optional). Request bodies are JSON objects describing the table’s properties (name, showHeaderRow, showTotalRow, etc.), and responses return JSON payloads with the created or modified ListObject details.
 
 **Prerequisites:**  
 - A valid Aspose.Cells Cloud authentication token.  
@@ -93,4 +94,5 @@ api.deleteWorksheetListObject("Book1.xlsx", "Sheet1", 0, { folder: "" })
 - The API supports pagination via `offset` and `limit` query parameters (not shown in the table) for large worksheets.  
 - Rate limits: 100 requests per minute per account; exceeding this returns **429 Too Many Requests**.
 
-By incorporating the term **Excel ListObject** several times throughout the page, the content aligns with the target keywords “Excel ListObject”, “Aspose.Cells Cloud”, and “Excel table API”, improving SEO while remaining natural for readers.
+By leveraging ListObjects, developers can automate structured data management in Excel worksheets, enabling scalable reporting and data analysis workflows via the Aspose.Cells Cloud API. For more information on Excel table standards, see Microsoft’s official [Overview of Excel Tables](https://support.microsoft.com/en-us/office/overview-of-excel-tables-7ab0bb7d-3a9e-4b56-a3c9-3e1f242c063c). You may also want to explore [PivotTables](/cells/pivottables/) and [worksheet formatting options](/cells/formatting/) for enhanced data analysis.
+---

@@ -3,14 +3,14 @@ title: "Get MinDataRow from Excel Worksheet"
 type: docs
 url: /get-mindatarow-from-excel-worksheet/
 weight: 90
-keywords: "Aspose Cells, MinDataRow, Excel API, Cloud SDK"
-description: "Retrieve the minimum data row index of a worksheet using Aspose.Cells Cloud API v3.0. Includes request pattern, parameters, sample cURL, response example, status codes, and SDK snippets."
+keywords: "Aspose.Cells, MinDataRow, Excel API, Cloud SDK, retrieve first data row, worksheet data range"
+description: "Use Aspose.Cells Cloud API v3.0 to retrieve the first row with data in an Excel worksheet via the GetMinDataRow endpoint. Includes cURL, SDKs (C#, Java, Python, Go, etc.), and sample responses. v3.0 (latest stable); v4.0 in preview — see migration guide."
 ArticleTitle: "Get MinDataRow from Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
 The **Get MinDataRow** endpoint of **Aspose.Cells Cloud API v3.0** returns the index of the first row that contains data in a specified worksheet. The operation requires a valid access token (Bearer authentication) and the query parameter `cellOrMethodName` set to `mindatarow`.
 
-**API version: 3.0**
+**API version: 3.0** (latest stable); v4.0 in preview — see [migration guide](https://docs.aspose.cloud/cells/migration/).
 
 ### cURL Example
 
@@ -29,7 +29,7 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetNam
 |--------------------|----------|--------|----------|---------------------------------------------------------------|
 | `fileName`         | Path     | string | Yes      | Name of the Excel workbook (including extension).            |
 | `sheetName`        | Path     | string | Yes      | Name of the worksheet within the workbook.                    |
-| `cellOrMethodName` | Query    | string | Yes      | Must be set to `mindatarow` to invoke this operation.        |
+| `cellOrMethodName` | Query    | string | Yes      | Must be set to `mindatarow`. Other values are not supported. |
 
 **Response Example**
 
@@ -99,6 +99,8 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
+*Swift SDK support coming soon. Meanwhile, use the REST API or other SDKs.*
 
 {{< /tab >}}
 

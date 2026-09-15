@@ -6,36 +6,37 @@ linktitle: "Rows"
 type: docs
 url: /rows/
 aliases: [/working-with-rows/]
-keywords: "Aspose.Cells, Excel rows, REST API, spreadsheet manipulation"
-description: "Manipulate rows in Excel files using Aspose.Cells Cloud REST API. Supports Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: ["Excel row API", "cloud spreadsheet manipulation", "REST API rows", "Aspose.Cells row operations", "programmatically hide rows"]
+description: "Use Aspose.Cells Cloud REST API to programmatically manage Excel rows—get, add, copy, hide, group, ungroup, and delete rows in worksheets."
 weight: 100
+lastmod: 2024-06-15
 ---
 
 ## Working with rows on an Excel file
 
-**Last updated: July 2026**
+**Last updated: June 2024**
 
-- [How to get row information on an Excel worksheet.](/cells/rows/get/row/)
-- [How to add an empty row on an Excel worksheet.](/cells/rows/add/row/)
-- [How to copy rows on an Excel worksheet.](/cells/rows/copy/)
-- [How to hide rows in an Excel worksheet.](/cells/rows/hide/)
-- [How to unhide rows in an Excel worksheet.](/cells/rows/unhide/)
-- [How to group rows in an Excel worksheet.](/cells/rows/group/)
-- [How to ungroup rows in an Excel worksheet.](/cells/rows/ungroup/)
-- [How to delete a row from a worksheet](/cells/rows/delete/)
+- Get row information
+- Add an empty row
+- Copy rows
+- Hide rows
+- Unhide rows
+- Group rows
+- Ungroup rows
+- Delete a row
 
 Quick API reference for common row operations:
 
 | Operation   | HTTP Method | Endpoint                                                               | Key Parameters                         |
 |-------------|-------------|------------------------------------------------------------------------|----------------------------------------|
-| [Get Row](https://docs.aspose.cloud/cells/rows/get/row/)     | GET         | `/cells/{fileName}/worksheets/{sheetName}/rows/{rowIndex}`            | `fileName`, `sheetName`, `rowIndex`    |
-| [Add Row](https://docs.aspose.cloud/cells/rows/add/row/)     | POST        | `/cells/{fileName}/worksheets/{sheetName}/rows`                       | `rowIndex`, `height`                   |
-| [Copy Rows](https://docs.aspose.cloud/cells/rows/copy/)      | POST        | `/cells/{fileName}/worksheets/{sheetName}/rows/copy`                  | `sourceIndex`, `destinationIndex`, `rowCount` |
-| [Delete Row](https://docs.aspose.cloud/cells/rows/delete/)   | DELETE      | `/cells/{fileName}/worksheets/{sheetName}/rows/{rowIndex}`            | `fileName`, `sheetName`, `rowIndex`    |
-| [Hide Rows](https://docs.aspose.cloud/cells/rows/hide/)      | POST        | `/cells/{fileName}/worksheets/{sheetName}/rows/hide`                  | `startIndex`, `endIndex`               |
-| [Unhide Rows](https://docs.aspose.cloud/cells/rows/unhide/)  | POST        | `/cells/{fileName}/worksheets/{sheetName}/rows/unhide`                | `startIndex`, `endIndex`               |
-| [Group Rows](https://docs.aspose.cloud/cells/rows/group/)    | POST        | `/cells/{fileName}/worksheets/{sheetName}/rows/group`                 | `startIndex`, `endIndex`               |
-| [Ungroup Rows](https://docs.aspose.cloud/cells/rows/ungroup/)| POST        | `/cells/{fileName}/worksheets/{sheetName}/rows/ungroup`               | `startIndex`, `endIndex`               |
+| [Get Row](/cells/rows/get/row/)     | GET         | `/cells/{fileName}/worksheets/{sheetName}/rows/{rowIndex}`            | `fileName`, `sheetName`, `rowIndex`    |
+| [Add Row](/cells/rows/add/row/)     | POST        | `/cells/{fileName}/worksheets/{sheetName}/rows`                       | `rowIndex`, `height`                   |
+| [Copy Rows](/cells/rows/copy/)      | POST        | `/cells/{fileName}/worksheets/{sheetName}/rows/copy`                  | `sourceIndex`, `destinationIndex`, `rowCount` |
+| [Delete Row](/cells/rows/delete/)   | DELETE      | `/cells/{fileName}/worksheets/{sheetName}/rows/{rowIndex}`            | `fileName`, `sheetName`, `rowIndex`    |
+| [Hide Rows](/cells/rows/hide/)      | POST        | `/cells/{fileName}/worksheets/{sheetName}/rows/hide`                  | `startIndex`, `endIndex`               |
+| [Unhide Rows](/cells/rows/unhide/)  | POST        | `/cells/{fileName}/worksheets/{sheetName}/rows/unhide`                | `startIndex`, `endIndex`               |
+| [Group Rows](/cells/rows/group/)    | POST        | `/cells/{fileName}/worksheets/{sheetName}/rows/group`                 | `startIndex`, `endIndex`               |
+| [Ungroup Rows](/cells/rows/ungroup/)| POST        | `/cells/{fileName}/worksheets/{sheetName}/rows/ungroup`               | `startIndex`, `endIndex`               |
 
 **Request / Response details**
 
@@ -103,6 +104,4 @@ Quick API reference for common row operations:
 
 - **Ungroup Rows** – same payload as *Hide Rows*; response status “Rows ungrouped”.
 
-All operations require a valid OAuth 2.0/JWT access token and appropriate SDK version.  
-
----
+All operations require a valid OAuth 2.0/JWT access token and appropriate SDK version.

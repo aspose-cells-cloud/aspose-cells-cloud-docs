@@ -1,142 +1,307 @@
 ---
-title: "Aspose.Cells Cloud Web API – Convert Spreadsheet to JSON"
-second_title: "Document"
-ArticleTitle: "How to Convert a Local Spreadsheet to JSON Using Aspose.Cells Cloud API"
+title: "Convert Spreadsheet to JSON Using Aspose.Cells Cloud API"
+date: 2024-06-15
+last_modified_date: 2024-06-15
 linktitle: "Convert Spreadsheet to JSON"
-type: docs
-url: /convert-spreadsheet-to-json/
-keywords: "Aspose Cells Cloud, Convert Spreadsheet to JSON, Excel to JSON API, Aspose.Cells Cloud API, REST API, spreadsheet conversion"
-description: "Learn how to convert local Excel files to JSON with Aspose.Cells Cloud API. Includes endpoint, parameters, sample code, and error handling for seamless integration."
+url: "/convert-spreadsheet-to-json/"
+keywords: ["Aspose.Cells Cloud", "convert Excel to JSON", "spreadsheet to JSON API", "REST API conversion", "Excel to JSON example", "JSON export from spreadsheet"]
+description: "Securely convert local Excel/CSV files to JSON format using Aspose.Cells Cloud API. Includes cURL, SDK examples (Python, Node.js, Java, C#, PHP, Ruby, Perl, Go), query parameter options (password, region, fonts), and best practices for server-side conversion."
+api_version: "v4.0"
 weight: 100
 ---
 
-The **ConvertSpreadsheetToJson** endpoint converts a spreadsheet stored on a local drive into a JSON file entirely on the Aspose.Cells Cloud server. By sending the spreadsheet as `multipart/form-data`, the service returns a JSON stream ready for download or further processing. This cloud‑native conversion eliminates the need to upload the file to storage first, reduces storage costs, and simplifies the workflow for applications that require spreadsheet data in JSON format for analytics, reporting, or data exchange.
+Convert local spreadsheets (`.xls`, `.xlsx`, `.xlsm`) directly to JSON on Aspose.Cells Cloud without storing files in cloud storage first. This cloud-native conversion eliminates intermediate steps, reduces latency and storage costs, and simplifies integration for data pipelines, web/mobile apps, and serverless functions.
 
-**Prerequisites**: You must have an Aspose Cloud account, a valid JWT access token, and the Aspose.Cells Cloud SDK or API key configured.
+## Prerequisites
 
-**Background**: Converting spreadsheets to JSON is a common step when integrating Excel data with web services, NoSQL databases, or client‑side JavaScript applications. The Convert Spreadsheet to JSON API provides a fast, server‑side conversion without the need to store the original file.
+- Aspose Cloud account with valid **JWT access token**  
+- Supported spreadsheet format (`.xls`, `.xlsx`, `.xlsm`, `.xlsb`, `.ods`)  
+- For password-protected files: the correct password  
+- *(Optional)* Custom fonts folder if workbook uses non-default fonts  
 
-## Convert Spreadsheet to JSON API
+> 💡 **Tip**: Generate a free JWT token via the [Cloud Dashboard](https://dashboard.aspose.cloud/).
+
+## API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json
 ```
 
-### **Security and Authentication**
+## Authentication
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+All requests require a valid JWT access token in the `Authorization` header:
 
-### Request Parameters
-
-| Parameter Name | Type                       | Location | Required/Optional | Description                                                                                                                                                                     |
-| :------------- | :------------------------- | :------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Spreadsheet    | File (multipart/form-data) | FormData | Required          | The source spreadsheet file (e.g., .xls, .xlsx, .xlsm). Example: `curl -F "Spreadsheet=@myfile.xlsx"`                                                                           |
-| outPath        | String                     | Query    | Optional          | Target folder path on cloud storage where the converted JSON file will be saved. If omitted, the JSON is returned directly in the response stream. Example: `outPath=/output/`. |
-| outStorageName | String                     | Query    | Optional          | Name of the cloud storage (e.g., Amazon S3, Azure Blob) where the output file should be written. Required only when `outPath` is used with a non‑default storage.               |
-| fontsLocation  | String                     | Query    | Optional          | Path to a custom fonts folder on the server. Use this when the spreadsheet references fonts that are not available in the default library.                                      |
-| region         | String                     | Query    | Optional          | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number, date, and currency formatting during conversion.                                               |
-| password       | String                     | Query    | Optional          | Password to open a password‑protected spreadsheet. Omit for unprotected files.                                                                                                  |
-
-### Response
-
-```json
-[
-  {
-    "Name": "ResponseFile",
-    "DataType": {
-      "Identifier": "File",
-      "Reference": "Stream"
-    }
-  }
-]
+```http
+Authorization: Bearer <your_jwt_token>
 ```
 
-**HTTP Status Codes**
+See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+## Request Parameters
 
-## Where should we use the Convert Spreadsheet to JSON API?
+| Parameter        | Type     | Location | Required | Description |
+|------------------|----------|----------|----------|-------------|
+| `Spreadsheet`    | File     | FormData | Yes      | Local spreadsheet file to convert (e.g., `myfile.xlsx`). Use `curl -F "Spreadsheet=@file.xlsx"`. |
+| `outPath`        | String   | Query    | No       | Path to save the output JSON in cloud storage (e.g., `/output/result.json`). Omit to return JSON in response stream. |
+| `outStorageName` | String   | Query    | No       | Cloud storage name (e.g., `AmazonS3`, `AzureBlob`). Required only if `outPath` uses non-default storage. |
+| `fontsLocation`  | String   | Query    | No       | Custom fonts folder path (e.g., `/fonts`) if workbook uses non-default fonts. |
+| `region`         | String   | Query    | No       | Locale (e.g., `en-US`, `fr-FR`, `de-DE`). Affects date/number/currency formatting. |
+| `password`       | String   | Query    | No       | Password for protected workbooks. Omit for unprotected files. |
+| `AutoRowsFit`    | Boolean  | Query    | No       | `true` to autofit all rows in worksheets before conversion. Default: `false`. |
+| `AutoColumnsFit` | Boolean  | Query    | No       | `true` to autofit all columns before conversion. Default: `false`. |
 
-- **Data migration pipelines** – Convert legacy Excel reports into JSON for ingestion into modern NoSQL databases or data lakes.
-- **Mobile or web applications** – Quickly transform user‑uploaded spreadsheets into JSON for client‑side rendering without storing the original file in the cloud.
-- **Automated reporting** – Generate JSON payloads for downstream analytics services (e.g., Power BI, Tableau) directly from spreadsheet inputs.
-- **Serverless functions** – Use the API within AWS Lambda or Azure Functions to perform on‑the‑fly conversions without managing temporary storage.
-
-## Why should you use the Convert Spreadsheet to JSON API?
-
-- Cloud‑native conversion removes the need to upload large files to storage before processing, reducing latency and storage costs.
-- Single‑request workflow: upload the spreadsheet and receive JSON in the same HTTP call, simplifying integration logic.
-- Supports password‑protected and region‑specific spreadsheets, ensuring accurate data representation across locales.
-- Scalable on Aspose’s infrastructure – handles large workbooks and complex formulas without impacting your own server resources.
-
-## How to Use the Convert Spreadsheet to JSON API with SDKs
-
-### Convert Spreadsheet to JSON API Specification
-
-The [Convert Spreadsheet to JSON API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertSpreadsheetToJson) provides a publicly accessible programming interface for executing REST interactions directly from a web browser.
-
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+### Example Request (cURL)
 
 ```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json?outPath=/output/result.json" \
-     -H "Authorization: Bearer {access_token}" \
-     -F "Spreadsheet=@myWorkbook.xlsx"
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json?outPath=/output/result.json&region=en-US" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." \
+  -F "Spreadsheet=@MyWorkbook.xlsx"
 ```
 
+### Example Request (cURL — Direct Stream Response)
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json" \
+  -H "Authorization: Bearer <your_token>" \
+  -F "Spreadsheet=@MyWorkbook.xlsx" \
+  --output result.json
+```
+
+## Response
+
+The API returns the converted JSON as a file stream (or saves it to storage if `outPath` is provided).
+
+**Success (200 OK)**  
+- Body: JSON content (as `application/json` stream)  
+- Status: `"Conversion successful; JSON returned in response stream."`
+
+**Error Responses**
+
+| Code | Meaning              | Description |
+|------|----------------------|-------------|
+| 400  | Bad Request          | Invalid parameters (e.g., unsupported file type, missing file) |
+| 401  | Unauthorized         | Invalid, expired, or missing JWT token |
+| 404  | Not Found            | Source file inaccessible or path invalid |
+| 413  | Payload Too Large    | File exceeds 2 GB upload limit |
+| 500  | Internal Server Error| Unexpected error during conversion |
+
+## Use Cases
+
+- ✅ **Data Migration** – Convert legacy Excel reports to JSON for ingestion into MongoDB, DynamoDB, or data lakes.  
+- ✅ **Web/Mobile Apps** – Allow users to upload spreadsheets; convert to JSON client-ready format *without* storing originals.  
+- ✅ **Automated Reporting** – Feed JSON payloads to BI tools (Power BI, Tableau, Looker) or analytics pipelines.  
+- ✅ **Serverless Functions** – Use in AWS Lambda/Azure Functions for on-demand conversions with zero storage overhead.
+
+## Why Use This API?
+
+- **Cloud-native processing** — No local resource usage; conversion happens entirely on Aspose’s servers.  
+- **Single-step workflow** — Upload and receive JSON in one request (no intermediate storage).  
+- **Full locale & format support** — Handle password-protected, region-specific, and complex workbooks.  
+- **Scalable & reliable** — Handles large files and formula recalculation efficiently.
+
+## SDK Examples
+
+Use our official SDKs to simplify integration. All SDKs include type safety, automatic retries, and error handling.
+
+{{< tabs tabTotal="8" tabID="sdk-tabs" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// Install-Package Aspose.Cells-Cloud -Version 22.8.0
+
+var cellsApi = new CellsApi(clientId: "your_client_id", clientSecret: "your_client_secret");
+using var file = File.OpenRead("MyWorkbook.xlsx");
+var response = await cellsApi.CellsWorkbookPutConvertWorkbookAsync(
+    file: file,
+    format: "json",
+    outPath: "output/result.json"
+);
+Console.WriteLine($"Conversion succeeded: {response.StatusCode}");
+```
 {{< /tab >}}
+{{< tab tabNum="2" >}}
+```java
+// compile: javac -cp "aspose-cells-cloud-22.8.0.jar" Example.java
 
-{{< tab tabNum="12" >}}
+import com.aspose.cells.cloud.*;
 
-```
-{
-  "Code": 200,
-  "Status": "OK"
+public class Example {
+    public static void main(String[] args) {
+        try {
+            CellsApi api = new CellsApi(System.getenv("CELLS_CLOUD_CLIENT_ID"), 
+                                        System.getenv("CELLS_CLOUD_CLIENT_SECRET"));
+            File file = new File("MyWorkbook.xlsx");
+            SpreadsheetDocumentResponse result = api.cellsWorkbookPutConvertWorkbook(
+                file, "json", "output/result.json", null, null, null);
+            System.out.println("Conversion successful: " + result.getCode());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
 ```
-
 {{< /tab >}}
+{{< tab tabNum="3" >}}
+```php
+<?php
+require_once("vendor/autoload.php");
 
+use Aspose\Cells\CellsApi;
+use GuzzleHttp\Client;
+
+$client = new Client([
+    'headers' => ['Content-Type' => 'multipart/form-data']
+]);
+
+$cellsApi = new CellsApi(getenv("CELLS_CLOUD_CLIENT_ID"), getenv("CELLS_CLOUD_CLIENT_SECRET"));
+$file = realpath("MyWorkbook.xlsx");
+
+try {
+    $response = $cellsApi->cellsWorkbookPutConvertWorkbook(
+        $file, 'json', null, 'output/result.json'
+    );
+    echo "Converted JSON saved to: " . $response->getHref();
+} catch (Exception $e) {
+    echo "Error: " . $e->getMessage();
+}
+```
+{{< /tab >}}
+{{< tab tabNum="4" >}}
+```ruby
+# gem install aspose_cells_cloud
+
+require 'aspose_cells_cloud'
+
+AsposeCellsCloud.configure do |config|
+  config.client_data['ClientSecret'] = ENV['CELLS_CLOUD_CLIENT_SECRET']
+  config.client_data['ClientId']     = ENV['CELLS_CLOUD_CLIENT_ID']
+end
+
+api_instance = AsposeCellsCloud::CellsApi.new
+file = 'MyWorkbook.xlsx'
+
+begin
+  result = api_instance.cells_workbook_put_convert_workbook(
+    file, format: 'json', out_path: 'output/result.json'
+  )
+  puts "Success: #{result.code}"
+rescue => e
+  puts "Error: #{e.message}"
+end
+```
+{{< /tab >}}
+{{< tab tabNum="5" >}}
+```typescript
+// npm install @aspose-cells-cloud
+
+import { CellsApi } from "@aspose-cells-cloud";
+
+const cellsApi = new CellsApi(
+  process.env.CELLS_CLOUD_CLIENT_ID!,
+  process.env.CELLS_CLOUD_CLIENT_SECRET!
+);
+
+const file = require("fs").createReadStream("MyWorkbook.xlsx");
+
+try {
+  const res = await cellsApi.cellsWorkbookPutConvertWorkbook(
+    file, "json", undefined, "output/result.json"
+  );
+  console.log("Conversion completed:", res.status);
+} catch (err) {
+  console.error("Error:", err);
+}
+```
+{{< /tab >}}
+{{< tab tabNum="6" >}}
+```python
+# pip install asposecellscloud
+
+from asposecellscloud.api import CellsApi
+from asposecellscloud.models import ConvertDocumentRequest
+
+api = CellsApi(
+    client_id= "your_client_id",
+    client_secret= "your_client_secret"
+)
+
+with open("MyWorkbook.xlsx", "rb") as f:
+    response = api.cells_workbook_put_convert_workbook(
+        file=f, format="json", out_path="output/result.json"
+    )
+    print(f"Success: {response.status_code}")
+```
+{{< /tab >}}
+{{< tab tabNum="7" >}}
+```perl
+use AsposeCellsCloud::Client::CellsApi;
+use File::Slurper qw(read_binary);
+
+my $api = AsposeCellsCloud::Client::CellsApi->new(
+    -client_id => $ENV{CELLS_CLOUD_CLIENT_ID},
+    -client_secret => $ENV{CELLS_CLOUD_CLIENT_SECRET}
+);
+
+my $file = read_binary('MyWorkbook.xlsx');
+
+eval {
+  my $result = $api->cells_workbook_put_convert_workbook(
+    { file => $file, format => 'json', out_path => 'output/result.json' }
+  );
+  print "Converted: " . $result->{Code};
+};
+die "Error: $@" if $@;
+```
+{{< /tab >}}
+{{< tab tabNum="8" >}}
+```go
+// go get github.com/aspose-cells-cloud/aspose-cells-cloud-go
+
+package main
+
+import (
+	"os"
+	"fmt"
+	"github.com/aspose-cells-cloud/aspose-cells-cloud-go/v22"
+)
+
+func main() {
+	client := cells.NewCellsService(
+		os.Getenv("CELLS_CLOUD_CLIENT_ID"),
+		os.Getenv("CELLS_CLOUD_CLIENT_SECRET"),
+	)
+
+	file, err := os.Open("MyWorkbook.xlsx")
+	if err != nil { panic(err) }
+	defer file.Close()
+
+	resp, err := client.CellsWorkbookPutConvertWorkbook(
+		file, "json", nil, "output/result.json")
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
+	fmt.Printf("Success: %d\n", resp.StatusCode)
+}
+```
+{{< /tab >}}
 {{< /tabs >}}
 
-### Use Aspose.Cells Cloud SDKs
+> 📦 **All SDKs**: [GitHub Organization](https://github.com/aspose-cells-cloud)  
+> 🔧 **Live Demo**: [API Explorer](https://products.aspose.cloud/cells/parser/) — test conversions directly in browser.
 
-Using the SDK is the fastest way to develop, as it abstracts away low‑level details and lets you convert a spreadsheet to JSON with a few lines of code.  
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.  
-The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:
+## Related Resources
 
-{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example_v40_ConvertSpreadsheetToJson.cs" >}}
-{{</tab>}}
-{{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_v40_ConvertSpreadsheetToJson.java" >}}
-{{</tab>}}
-{{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_v40_ConvertSpreadsheetToJson.php" >}}
-{{</tab>}}
-{{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_v40_ConvertSpreadsheetToJson.rb" >}}
-{{</tab>}}
-{{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_v40_ConvertSpreadsheetToJson.ts" >}}
-{{</tab>}}
-{{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_v40_ConvertSpreadsheetToJson.py" >}}
-{{</tab>}}
-{{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_v40_ConvertSpreadsheetToJson.pl" >}}
-{{</tab>}}
-{{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_v40_ConvertSpreadsheetToJson.go" >}}
-{{</tab>}}
-{{< /tabs >}}
+- [Convert JSON to Excel](/convert-json-to-excel/)  
+- [Handle Password-Protected Spreadsheets](/password-protected-files/)  
+- [Supported File Formats](/supported-file-formats/)  
+- [Optimize Large Workbook Conversion](/optimizing-large-file-conversions/)  
+
+## Changelog
+
+| Version | Date       | Notes |
+|---------|------------|-------|
+| v4.0    | 2024-06-15 | Added `AutoRowsFit`, `AutoColumnsFit` parameters; updated error handling; clarified `outPath` behavior. |
+
+---
+
+> ⚠️ **Note**: This endpoint requires the source file to be provided via `multipart/form-data`. It does *not* read files from cloud storage — use [UploadFile](/upload-file/) first if you prefer cloud-based workflows.

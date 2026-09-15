@@ -1,14 +1,18 @@
 ---
 title: "Get MinDataColumn – Aspose.Cells Cloud API Reference (v3.0)"
+date: 2023-11-15
+lastmod: 2024-05-22
 type: docs
 url: /get-mindatacolumn-from-excel-worksheet/
 weight: 110
-keywords: "Aspose.Cells Cloud, MinDataColumn, Excel worksheet, REST API, API reference, v3.0, data column, cloud API"
-description: "Retrieve the leftmost column that contains data in an Excel worksheet via Aspose.Cells Cloud REST API (v3.0). Includes authentication details, request syntax, JSON response example, error codes, and SDK snippets."
+description: >-
+  Reference for the /mindatacolumn endpoint in Aspose.Cells Cloud REST API v3.0.
+  Learn how to retrieve the leftmost data column index in an Excel worksheet via cURL, SDKs, and JSON responses.
 ArticleTitle: "Get MinDataColumn – Aspose.Cells Cloud API Reference (v3.0)"
+keywords: "mindatacolumn, leftmost data column, Excel API, REST API, Aspose.Cells, cloud spreadsheet, zero-based index, Aspose.Cells Cloud API v3.0"
 ---
 
-The **`mindatacolumn`** endpoint returns the zero‑based index of the leftmost column that contains any cell data in a specified worksheet.  
+The **`mindatacolumn`** endpoint returns the zero-based index of the leftmost column that contains any cell data in a specified worksheet.  
 In other words, it tells you which column is the first one that actually holds data.
 
 > **Definition** – `mindatacolumn`: the index (starting at 0) of the first column that contains data in the worksheet.
@@ -17,7 +21,7 @@ In other words, it tells you which column is the first one that actually holds d
 - A valid OAuth2 access token is required.  
 - The Excel file must be uploaded to Aspose Cloud storage.
 
-**Request Parameters**
+## Request Parameters
 
 | Parameter      | Type   | Required | Description                                 |
 |----------------|--------|----------|---------------------------------------------|
@@ -59,20 +63,21 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 {{< /tabs >}}
 
-**HTTP Status Codes**
+## HTTP Status Codes
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 200  | OK                          | Request successful; response contains the `MinDataColumn` (zero-based index). |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
+| 403  | Forbidden                   | Invalid OAuth2 scope or insufficient permissions. |
+| 404  | Not Found                   | File or worksheet not found. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
----
 
 - Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project logic. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project logic. Please check the [Aspose.Cells Cloud SDKs GitHub organization](https://github.com/aspose-cells-cloud), where each SDK repo includes versioned examples, changelogs, and issue templates.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

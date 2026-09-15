@@ -4,10 +4,13 @@ second_title: "Aspose.Cells Cloud Document"
 linktitle: "Insert slicer"
 type: docs
 url: /list-objects/insert-slicer/
-keywords: "Aspose.Cells, Excel slicer, ListObject, REST API, cloud SDK"
-description: "Learn how to add a slicer to an Excel ListObject using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, sample cURL request, and response JSON."
+keywords: "slicer, ListObject, Excel, REST API, Aspose.Cells Cloud, cloud SDK"
+description: "Add a slicer to an Excel ListObject via Aspose.Cells Cloud REST API v3.0. Full cURL & SDK examples for C#, Java, Python, Node.js, and more."
 weight: 20
 ArticleTitle: "Insert a Slicer into an Excel ListObject – Aspose.Cells Cloud API"
+date: 2023-11-15
+categories: ["cloud-api", "excel"]
+tags: ["slicer", "listobject", "rest-api"]
 ---
 
 This REST API inserts a slicer for a list object on an Excel worksheet.
@@ -69,7 +72,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
 
 | Code | Meaning               | Description                                                       |
 | ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 200  | OK                    | Slicer inserted successfully; response contains metadata (name, column index, position). |
 | 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
 | 401  | Unauthorized          | Invalid or missing JWT token.                                     |
 | 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |

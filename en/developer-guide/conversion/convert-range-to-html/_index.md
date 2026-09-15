@@ -1,18 +1,23 @@
 ---
 title: "Aspose.Cells Cloud – Convert Excel Range to HTML"
-second_title: "Developer Guide"
+secondtitle: "Developer Guide"
 linktitle: "Convert range to html"
 type: docs
 url: /convert-range-to-html/
-description: "Convert a specific range of an Excel file (e.g., A1:C10) to an HTML file using Aspose.Cells Cloud REST API. Includes authentication, request examples, response handling, SDK snippets, and error codes."
-keywords: "Aspose.Cells, Excel to HTML, range conversion, cloud API, spreadsheet"
+description: "Convert Excel ranges (e.g., A1:C10) to HTML via Aspose.Cells Cloud REST API—no local Excel needed. Includes cURL, SDK, and auth examples."
+summary: "Quickly convert Excel ranges (e.g., A1:C10) to HTML via Aspose.Cells Cloud REST API—no local Excel needed. Includes cURL, SDK, and auth examples."
 slug: convert-range-to-html
-date: 2026-07-30
-type: docs
+date: 2024-03-15
+lastmod: 2024-06-15
 weight: 100
 ---
 
 Convert a selected range of a local Excel workbook to an HTML file directly through Aspose.Cells Cloud. The conversion happens entirely on the cloud server, so you never need to upload the whole workbook or have Excel installed locally.
+
+### Prerequisites
+
+- An active Aspose.Cells Cloud account.
+- A valid JWT access token obtained via OAuth 2.0.
 
 ## Convert Range to HTML API
 
@@ -24,7 +29,7 @@ The request body is `multipart/form-data` containing the spreadsheet file. All o
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" target="_blank" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 
@@ -40,9 +45,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | **AutoColumnsFit** | Boolean | Query    | No       | Automatically fit all columns in the worksheet.                              |
 | **region**         | String  | Query    | No       | Locale identifier (e.g., `en-US`, `fr-FR`). Affects number/date formatting.  |
 | **password**       | String  | Query    | No       | Password for opening a protected workbook.                                   |
-| **fontsLocation**  | String  | Query    | No       | Custom fonts location.                                                       |
-| **region**         | String  | Query    | No       | Spreadsheet region/language setting.                                         |
-| **password**       | String  | Query    | No       | Password for opening the spreadsheet file.                                   |
 
 ## Response
 
@@ -83,11 +85,16 @@ Save the response body to a file (e.g., `report.html`) to view the rendered tabl
 
 | Code | Meaning               | Description                                                       |
 | ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 200  | OK                    | Success: HTML file generated and returned as binary stream.      |
 | 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
 | 401  | Unauthorized          | Invalid or missing JWT token.                                     |
 | 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
 | 500  | Internal Server Error | Unexpected server error.                                          |
+
+### Common Errors
+
+- **413 Payload Too Large**: Split large workbooks into smaller files or compress them before upload.
+- **400 Bad Request**: Verify all required parameters (`worksheet`, `range`, `Spreadsheet`) are provided and correctly formatted.
 
 ## How to Use the Convert Range to Html API with SDKs?
 
@@ -103,11 +110,12 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 
 ```bash
 curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/html?worksheet=Sheet1&range=A1:C10&AutoRowsFit=true&AutoColumnsFit=true" \
-     -H "Authorization: Bearer {access_token}" \
+     -H "Authorization: Bearer YOUR_ACCESS_TOKEN_HERE" \
      -F "Spreadsheet=@Report.xlsx" \
      -F "outPath=output/report.html"
-
 ```
+
+> **Note**: Replace `YOUR_ACCESS_TOKEN_HERE` with a valid JWT obtained via OAuth 2.0.
 
 {{< /tab >}}
 

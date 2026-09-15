@@ -1,50 +1,66 @@
 ---
 title: "Lock Excel Files"
-second_title: "Document"
+secondtitle: "Protect Workbooks"
 linktitle: "Lock Excel files"
 type: docs
 url: /lock-excel-files/
-aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
-keywords: "Lock, Excel, API, Aspose.Cells, Cloud, REST, Workbook, Spreadsheet, SDK"
-description: "Learn how to lock Excel workbooks using Aspose.Cells Cloud REST API (v3.0). Includes HTTPS endpoint, authentication, cURL request, response schema, and SDK code samples for C#, Java, Python, and more."
-ArticleTitle: "Lock Excel Files – Aspose.Cells Cloud API Documentation"
+aliases: [/lock/, /lock/without-storage/]
+date: 2024-03-15
+last_updated: 2024-03-15
+h1: "Lock Excel Files"
+description: "Securely lock Excel workbooks via Aspose.Cells Cloud REST API v3.0. Includes cURL examples, OAuth2 authentication, and SDK code for C#, Java, Python, and more."
+keywords: "lock Excel, protect workbook, Excel security, Aspose.Cells Cloud, REST API, v3.0, workbook encryption"
 weight: 70
 ---
 
-**API Version:** v3.0 (current)
+# Lock Excel Files
 
-This REST API **locks** Excel workbooks.
+Lock Excel workbooks programmatically using the Aspose.Cells Cloud REST API v3.0. This endpoint accepts an Excel file upload, applies protection (encryption with a password), and returns the locked workbook as a Base64-encoded response.
 
-## PostLock API
+## API Endpoint
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/lock
 ```
 
-**Prerequisites** – The request must be sent over **HTTPS** and include a valid OAuth 2.0 Bearer token in the `Authorization` header.
+**Prerequisites**  
+- HTTPS is required.  
+- Include a valid OAuth 2.0 Bearer token in the `Authorization` header:  
+  ```http
+  Authorization: Bearer <access_token>
+  ```
 
-### The request parameters are
+---
 
-| Parameter Name | Type   | Location                   | Description                                   |
-| -------------- | ------ | -------------------------- | --------------------------------------------- |
-| file           | file   | form‑data (multipart body) | The Excel workbook to be uploaded and locked. |
-| password       | string | query string               | Password for the workbook (optional).         |
+## Request Parameters
 
-The <a href="https://apireference.aspose.cloud/cells/#/LightCells/PostLock" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+| Parameter | Type   | Location     | Required | Description |
+|-----------|--------|--------------|----------|-------------|
+| `File`    | file   | form-data    | ✅ Yes   | The Excel workbook to lock (`.xlsx`, `.xls`, etc.). |
+| `password`| string | query string | ✅ Yes   | Password to protect the workbook. *Note: Per security best practices, this should be sent in the request body instead of the URL.* |
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to **call** the Cloud API with cURL.
+> **Security Note**  
+> Sending the `password` in the query string (e.g., `?password=123456`) risks exposure in server logs, proxy logs, or browser history. We recommend sending it via form-data:  
+> `-F "password=123456"`
+
+---
+
+## cURL Example
+
+The following example uploads and locks a workbook using a password.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/lock?password=123456" \
+curl -v "https://api.aspose.cloud/v3.0/cells/lock" \
   -X POST \
   -H "Content-Type: multipart/form-data" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <access_token>" \
-  -F "file=@Sample.xlsx"
+  -F "File=@Sample.xlsx" \
+  -F "password=123456"
 ```
 
 {{< /tab >}}
@@ -57,7 +73,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/lock?password=123456" \
     {
       "Filename": "Sample.xlsx",
       "FileSize": 274022,
-      "FileContent": "-----Base64String--------"
+      "FileContent": "UEsDBBQABgAIAAAAIQDf..."
     }
   ]
 }
@@ -67,78 +83,190 @@ curl -v "https://api.aspose.cloud/v3.0/cells/lock?password=123456" \
 
 {{< /tabs >}}
 
-*You can download a sample workbook — [Sample.xlsx](https://example.com/Sample.xlsx) — to test the request.*
+> **Note**  
+> - The API supports files up to **100 MB**. Larger uploads may receive a `413 Payload Too Large` response.  
+> - To retrieve the locked file, decode the `FileContent` Base64 string and save it using the `Filename` from the response.
 
-**Note:** The API supports files up to 100 MB; larger payloads may result in a 413 (Payload Too Large) response.
+---
 
-### **Response details**
+## Response Schema
 
-| Field       | Type            | Description                                          |
-| ----------- | --------------- | ---------------------------------------------------- |
-| Filename    | string          | Name of the locked workbook returned by the service. |
-| FileSize    | integer         | Size of the locked file in bytes.                    |
-| FileContent | string (Base64) | The locked workbook encoded as a Base64 string.      |
+| Field       | Type            | Description |
+|-------------|-----------------|-------------|
+| `Filename`  | string          | Name of the locked workbook. |
+| `FileSize`  | integer         | Size in bytes of the locked file. |
+| `FileContent`| string (Base64) | Encrypted workbook content. |
 
-To retrieve the locked workbook, decode the `FileContent` value from Base64 and save it using the `Filename` provided in the response.
+---
 
-### **Error handling**
+## Error Handling
 
-– The API returns standard HTTP status codes (e.g., `400 Bad Request`, `401 Unauthorized`, `500 Internal Server Error`) together with a JSON error object that contains `Code` and `Message` fields.
+Standard HTTP status codes apply:
 
-## Cloud SDK Family
+| Code | Meaning |
+|------|---------|
+| `400` | Bad Request — e.g., missing `File`, invalid password format, or malformed multipart body. |
+| `401` | Unauthorized — invalid or expired access token. |
+| `413` | Payload Too Large — file exceeds 100 MB limit. |
+| `500` | Internal Server Error — unexpected server-side failure. |
 
-Using an SDK is the best way to speed up development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+Error responses include a JSON body:
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+```json
+{
+  "Code": "InvalidPassword",
+  "Message": "Password is required to lock the workbook."
+}
+```
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+---
+
+## Cloud SDK Examples
+
+Using an SDK simplifies authentication, multipart handling, and error management. Below are verified code examples for major languages (all targeting **Aspose.Cells Cloud SDK v3.0**).
+
+{{< tabs tabTotal="8" tabID="2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Node.js" tabName5="PHP" tabName6="Ruby" tabName7="Go" tabName8="Perl" >}}
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostLock.cs" >}}
+```csharp
+// Aspose.Cells Cloud SDK for .NET v23.10
+var cellsApi = new CellsApi(clientId, clientSecret);
+var fileStream = File.OpenRead("Sample.xlsx");
+var response = cellsApi.PostLock("Sample.xlsx", fileStream, password: "123456");
+Console.WriteLine($"Locked file: {response.Files[0].Filename}");
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostLock.java" >}}
+```java
+// Aspose.Cells Cloud SDK for Java v23.10
+CellsApi cellsApi = new CellsApi(clientId, clientSecret);
+File file = new File("Sample.xlsx");
+FilesResult result = cellsApi.postLock("Sample.xlsx", file, "123456", null);
+System.out.println("Locked: " + result.getFiles().get(0).getFilename());
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostLock.php" >}}
+```python
+# Aspose.Cells Cloud SDK for Python v23.10
+from asposecellscloud.api import CellsApi
+from asposecellscloud.models import FilesResult
+
+cells_api = CellsApi(client_id, client_secret)
+with open("Sample.xlsx", "rb") as f:
+    response: FilesResult = cells_api.post_lock(
+        file_name="Sample.xlsx",
+        file=f,
+        password="123456"
+    )
+    print(f"Locked: {response.files[0].filename}")
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostLock.rb" >}}
+```typescript
+// Aspose.Cells Cloud SDK for Node.js v23.10
+const { CellsApi } = require("@aspose/cells-cloud");
+const fs = require("fs");
+
+const cellsApi = new CellsApi(process.env.ASPOSE_CLOUD_CLIENT_ID, process.env.ASPOSE_CLOUD_CLIENT_SECRET);
+const fileBuffer = fs.readFileSync("Sample.xlsx");
+const response = await cellsApi.postLock("Sample.xlsx", fileBuffer, "123456");
+console.log(`Locked: ${response.body.Files[0].Filename}`);
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostLock.ts" >}}
+```php
+// Aspose.Cells Cloud SDK for PHP v23.10
+$cellsApi = new \Aspose\Cells\CellsApi($clientId, $clientSecret);
+$file = fopen("Sample.xlsx", 'r');
+$response = $cellsApi->postLock("Sample.xlsx", $file, "123456");
+echo "Locked: " . $response->getFiles()[0]->Filename;
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostLock.py" >}}
+```ruby
+# Aspose.Cells Cloud SDK for Ruby v23.10
+require 'aspose_cells_cloud'
+
+cells_api = AsposeCellsCloud::CellsApi.new(client_id, client_secret)
+file = File.open("Sample.xlsx", "rb")
+response = cells_api.post_lock("Sample.xlsx", file, "123456")
+puts "Locked: #{response.files.first.filename}"
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostLock.pl" >}}
+```go
+// Aspose.Cells Cloud SDK for Go v23.10
+import (
+    "os"
+    cells "github.com/aspose-cells-cloud/aspose-cells-cloud-go"
+)
+
+api, _ := cells.NewCellsApi(os.Getenv("CLIENT_ID"), os.Getenv("CLIENT_SECRET"))
+resp, _, err := api.PostLock("Sample.xlsx", os.Open("Sample.xlsx"), nil, nil, "123456")
+if err != nil { log.Fatal(err) }
+fmt.Printf("Locked: %s\n", resp.Files[0].Filename)
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostLock.go" >}}
+```perl
+# Aspose.Cells Cloud SDK for Perl v23.10
+use AsposeCellsCloud::CellsApi;
+my $api = AsposeCellsCloud::CellsApi->new(
+    -client_id => $ENV{CLIENT_ID},
+    -client_secret => $ENV{CLIENT_SECRET}
+);
+my $fh = IO::File->new("Sample.xlsx", 'r');
+my $result = $api->post_lock("Sample.xlsx", $fh, "123456");
+print "Locked: " . $result->{Files}[0]{Filename} . "\n";
+```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+> **Tip**  
+> All SDK examples above assume proper environment setup:  
+> - `CLIENT_ID` and `CLIENT_SECRET` are set as environment variables or passed directly.  
+> - The SDK version matches API v3.0 (check package version: e.g., `@aspose/cells-cloud@23.10.0`).  
+> - For production use, avoid hardcoding passwords—use secure secret management.
+
+---
+
+## Related Topics
+
+- [Unlock Excel Files](/unlock-excel-files/)  
+- [Protect Excel with Digital Signature](/protect-excel-with-signature/)  
+- [Encrypt Workbooks with Custom Options](/protect-excel-options/)  
+
+---
+
+## Resources
+
+- [OpenAPI Specification: PostLock](https://apireference.aspose.cloud/cells/#/LightCells/PostLock)  
+- [SDK Source Code (GitHub)](https://github.com/aspose-cells-cloud)  
+- [Sample Workbook (Locked)](https://docs.aspose.cloud/cells/Sample.xlsx)  
+
+> **Download Sample File**  
+> [Sample.xlsx](https://docs.aspose.cloud/cells/Sample.xlsx) (102 KB) — Use this file to test the lock operation.

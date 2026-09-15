@@ -1,110 +1,101 @@
 ---
 title: "Aspose.Cells Cloud – Math Calculate API (Add, Subtract, Multiply, Divide, %)"
 second_title: "Document"
-ArticleTitle: "Add, Subtract, Multiply, Divide, and Percentage in Spreadsheets/Excel"
+ArticleTitle: "Math Calculate API"
 linktitle: "Math Calculate"
+date: 2024-03-15
+lastmod: 2024-03-15
+description: "Use Aspose.Cells Cloud Math Calculate API to perform bulk Excel operations—including addition, subtraction, multiplication, division, and percentage calculations—via REST API. Includes request format, SDK examples, and error codes."
+keywords: "Math Calculate API, Aspose.Cells Cloud, Excel calculations, Add, Subtract, Multiply, Divide, Percentage, Bulk Excel processing, REST API"
 type: docs
 url: /math-calculate/
-keywords: "Math Calculate API, Aspose.Cells Cloud, Excel calculations, Add, Subtract, Multiply, Divide, Percentage, Bulk Excel processing, REST API"
-description: "Learn how to use Aspose.Cells Cloud Math Calculate API to bulk‑apply add, subtract, multiply, divide or percentage operations on Excel ranges. Includes request format, sample code and error handling."
 weight: 100
 ---
 
-## **Introduction**: Spreadsheet Quick Calculate – Add, Multiply, Subtract, Divide & Percent Formulas in One Running API
+## Introduction
 
-_Perform bulk calculations across entire columns, rows, or tables without writing a formula._
+Perform bulk calculations across entire columns, rows, or tables without writing formulas or using VBA.
 
-- **Basic math**: add, subtract, multiply or divide every cell in a range by any number
-- **Percentages**: increase/decrease by %, or find % of a number (e.g. +15%, -8%, 20% of…)
-- **Bulk**: apply to thousands of cells instantly—no drag‑fill, no array formula, no VBA
+- **Basic math**: add, subtract, multiply, or divide every cell in a range by a numeric value  
+- **Percentages**: increase/decrease values by a percentage or compute a percentage of a number (e.g., +15%, −8%, 20% of)  
+- **Bulk processing**: instantly apply operations to thousands of cells—no drag-fill, no array formulas  
 
-| **Calculate Operation** | Description |
-| :---------------------- | :---------- |
-| **Add**                 | +           |
-| **Subtract**            | -           |
-| **Multiply**            | \*          |
-| **Divide**              | /           |
-| **Percentage**          | %           |
+| Calculate Operation | Description |
+|---------------------|-------------|
+| `Add`               | Addition (`+`) |
+| `Subtract`          | Subtraction (`-`) |
+| `Multiply`          | Multiplication (`*`) |
+| `Divide`            | Division (`/`) |
+| `Percentage`        | Percentage calculation (`%`) |
 
-## **Math Calculate API**
+## Math Calculate API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/calculate/math
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+Aspose.Cells Cloud APIs use [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/){: rel="noopener noreferrer"}.
 
-### **Request Parameters:**
+### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                              |
-| :------------- | :----- | :-------------------------- | :--------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                    | Upload the spreadsheet file for processing.                                              |
-| operation      | String | Query                       | The mathematical operation to perform (Add, Subtract, Multiply, Divide, and Percentage). |
-| value          | String | Query                       | A value to use in the calculation, if applicable.                                        |
-| worksheet      | String | Query                       | The name of the worksheet to operate on.                                                 |
-| range          | String | Query                       | The range of cells to include in the calculation.                                        |
-| region         | String | Query                       | The spreadsheet region setting.                                                          |
-| password       | String | Query                       | The password for opening the spreadsheet file, if protected.                             |
+| Parameter Name | Type   | Location           | Description |
+|----------------|--------|--------------------|-------------|
+| `Spreadsheet`  | File   | FormData           | Upload the spreadsheet file for processing. |
+| `operation`    | String | Query              | Mathematical operation: `Add`, `Subtract`, `Multiply`, `Divide`, or `Percentage`. |
+| `value`        | String | Query              | Numeric value used in the calculation (e.g., `13` for +13%, or `2.2046` for unit conversion). |
+| `worksheet`    | String | Query              | Name of the worksheet to operate on. |
+| `range`        | String | Query              | Cell range (e.g., `A1:B10`). Must be a valid Excel address. |
+| `region`       | String | Query              | Locale setting (e.g., `en-US`, `fr-FR`). Affects number and date formatting. |
+| `password`     | String | Query              | Password for protected workbooks. |
 
-### **Response**
+> **Note**: The `value` parameter is required for all operations except `Percentage`, where it may represent the base value (e.g., `20% of 100`). For percentage changes (e.g., +15%), use `value` as the percentage amount.
 
-```json
-[
-  {
-    "Name": "ResponseFile",
-    "DataType": {
-      "Identifier": "File",
-      "Reference": "Stream",
-      "Name": "file"
-    }
-  }
-]
-```
+### Response
 
-**HTTP Status Codes**
+The API returns the updated spreadsheet as a downloadable binary stream.
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Response Name | Data Type | Reference |
+|---------------|-----------|-----------|
+| `ResponseFile` | File      | Stream    |
 
-## Where should we use the Math Calculate API?
+#### HTTP Status Codes
 
-- Finance: add 13% VAT to an entire column of purchase prices.
-- Inventory: multiply kg column by 2.2046 to bulk‑convert to pounds.
-- Payroll: add a flat bonus of 1,000 to the bonus column for all staff.
-- FX conversion: divide sales column by live exchange rate to get USD amounts.
-- Grading: subtract 5 points from every student score for attendance penalty.
-- E‑commerce: apply a 15% promotional discount by reducing product prices in one click.
+| Code | Meaning               | Description |
+|------|-----------------------|-------------|
+| `200` | OK                    | Calculation applied successfully; response contains updated spreadsheet. |
+| `400` | Bad Request           | Invalid or missing parameters (e.g., unsupported file type, invalid range). |
+| `401` | Unauthorized          | Missing or invalid JWT token. |
+| `413` | Payload Too Large     | Uploaded file exceeds 200 MB limit. |
+| `500` | Internal Server Error | Unexpected server-side failure. |
 
-## Why should you use the Math Calculate API?
+## Use Cases
 
-- **Fast Excel calculations** – finish month‑end reports in seconds.
-- **Bulk percentage increase Excel** – update prices, forecasts, commissions in one click.
-- **Add same number to entire column** – inventory, currency conversion, unit conversion.
-- **Excel without formulas** – non‑technical users love the simplicity.
-- Development can be quickly completed through the existing SDK.
+- **Finance**: Add 13% VAT to purchase prices across an entire column.  
+- **Inventory**: Multiply weight (kg) column by `2.2046` to convert to pounds.  
+- **Payroll**: Add a flat bonus (`1000`) to all employees’ bonus columns.  
+- **FX Conversion**: Divide sales column by a live exchange rate to compute USD values.  
+- **Grading**: Subtract 5 points from all student scores for attendance penalties.  
+- **E‑commerce**: Apply a 15% promotional discount by reducing product prices.
 
-**Notes**  
-The maximum file size supported is 200 MB. The `range` parameter must be a valid Excel address (e.g., A1:B10). Very large worksheets may require additional processing time.
+## Why Use the Math Calculate API?
+
+- ⚡ **Fast calculations** – generate month-end reports in seconds.  
+- 📈 **Bulk percentage changes** – update prices, forecasts, or commissions in one request.  
+- 📊 **Consistent operations** – apply identical logic across large datasets.  
+- 🧑‍💼 **Non-technical friendly** – no Excel formula or VBA knowledge required.  
+- 🛠️ **Rapid development** – integrate quickly using our SDKs.
+
+> **Limitations**: Maximum file size is 200 MB. Very large worksheets may require additional processing time. The `range` must be a valid Excel cell address (e.g., `A1:B10`).
 
 ## How to Use the Math Calculate API with SDKs
 
-### Math Calculate API Specification
+The [Math Calculate API specification](https://reference.aspose.cloud/cells/#/CalculateController/MathCalculate) defines the public REST interface. For streamlined integration, use one of the Aspose.Cells Cloud SDKs.
 
-The [Math Calculate Specification](https://reference.aspose.cloud/cells/#/CalculateController/MathCalculate) defines a publicly accessible programming interface, allowing developers to interact with the API directly from a web browser.
+View the [Aspose.Cells Cloud SDKs on GitHub](https://github.com/aspose-cells-cloud){: rel="noopener noreferrer"}.
 
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to perform math calculations by cell with just a short code.  
-Please check out the [Aspose.Cells Cloud SDKs on GitHub](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following examples demonstrate how to call the API using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -132,3 +123,5 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MathCalculate.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+> **Tip**: Ensure your SDK is initialized with valid `ClientID` and `ClientSecret`. Refer to the [Getting Started guide](https://docs.aspose.cloud/total/getting-started/) for setup instructions.

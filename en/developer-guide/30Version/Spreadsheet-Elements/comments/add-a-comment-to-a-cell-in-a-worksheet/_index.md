@@ -1,37 +1,47 @@
 ---
-title: "Add Worksheet Comment"
+title: "Add Worksheet Comment (v3.1)"
 url: /comments/add/
 aliases: [/add-a-comment-to-a-cell-in-a-worksheet/]
-description: "Add a comment to a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API (PUT /v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName})."
+description: "Add a comment to a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API v3.1 (PUT /v3.1/cells/{name}/worksheets/{sheetName}/comments/{cellName}). Includes cURL, SDK examples, request/response schemas, and error handling."
 keywords: "Aspose.Cells, Cloud API, Add Worksheet Comment, Excel, Spreadsheet, Cell Comment"
 weight: 20
-api_version: "v3.0"
+api_version: "v3.1"
+date: 2024-05-15
 ---
 
 # Add Worksheet Comment
 
 Add a comment to a specific cell in a worksheet of an Excel workbook using the Aspose.Cells Cloud REST API.
 
+> ⚠️ **Deprecated**: This page documents the v3.0 API. For the latest features, see [v3.1 documentation](https://docs.aspose.cloud/cells/#/Worksheets/PutWorksheetComment). As of 2024-05, v3.1 is the current stable version. While v3.0 remains functional, new features and improvements are only available in v3.1. We recommend upgrading.
+
 ---
 
 ## Prerequisites / Authentication
 
 - A **Bearer JWT token** is required for every request.  
-  _Obtain a token_ via the **/connect/token** endpoint (see the [Authentication guide](/cells/authentication/)).
+  _Obtain a token_ via the **/connect/token** endpoint (see the [Authentication guide]({{< relref "/cells/authentication/" >}})).
 - Include the token in the `Authorization` header:
 
 ```http
-Authorization: Bearer <jwt token>
+Authorization: Bearer <jwt_token>
 ```
 
 - All calls must be made over **HTTPS** to protect the token and data.
+
+> 💡 **Tip**: Replace `<jwt_token>` with your actual JWT token. To generate one programmatically:
+> ```bash
+> TOKEN=$(curl -s -X POST "https://api.aspose.cloud/connect/token" \
+>   -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>" \
+>   | jq -r '.access_token')
+> ```
 
 ---
 
 ## HTTP Request
 
 ```http
-PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
+PUT https://api.aspose.cloud/v3.1/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
 ### Path Parameters
@@ -89,11 +99,11 @@ The body must contain a **Comment** object in JSON format.
 ## cURL Example
 
 ```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/A1" \
+curl -v "https://api.aspose.cloud/v3.1/cells/test.xlsx/worksheets/Sheet1/comments/A1" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>" \
+  -H "Authorization: Bearer <jwt_token>" \
   -d '{
         "CellName": "A1",
         "Author": "test",
@@ -173,7 +183,7 @@ The `Comment` object also contains a **link** sub‑object:
 
 ## SDK Examples
 
-The following SDKs provide ready‑made wrappers for this operation. Replace placeholder values (`<YOUR_TOKEN>`, `<FILE_NAME>`, etc.) with real data.
+The following SDKs provide ready‑made wrappers for this operation. Replace placeholder values (`<YOUR_CLIENT_ID>`, `<YOUR_CLIENT_SECRET>`, etc.) with real data.
 
 {{< tabs tabTotal="8" tabID="sdk" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -191,7 +201,7 @@ var config = new Configuration
 };
 var apiInstance = new WorksheetsApi(config);
 
-// Prepare comment object
+// Prepare comment object (PascalCase for C#)
 var comment = new Comment
 {
     CellName = "A1",
@@ -230,7 +240,7 @@ client.setAppKey("<your_client_secret>");
 WorksheetsApi worksheetsApi = new WorksheetsApi(client);
 
 Comment comment = new Comment()
-        .cellName("A1")
+        .cellName("A1")  // Note: SDK uses camelCase internally despite class name PascalCase
         .author("test")
         .note("this is a comment")
         .htmlNote("<font style=\"font-weight:bold;\">this is a comment</font>")
@@ -330,14 +340,14 @@ config.clientSecret = "<your_client_secret>";
 let api = new WorksheetsApi(config);
 
 let comment = new Comment({
-  CellName: "A1",
-  Author: "test",
-  Note: "this is a comment",
-  HtmlNote: '<font style="font-weight:bold;">this is a comment</font>',
-  AutoSize: true,
-  IsVisible: true,
-  Width: 10,
-  Height: 10,
+  cellName: "A1",  // camelCase for JS/Node.js
+  author: "test",
+  note: "this is a comment",
+  htmlNote: '<font style="font-weight:bold;">this is a comment</font>',
+  autoSize: true,
+  isVisible: true,
+  width: 10,
+  height: 10,
 });
 
 api
@@ -362,21 +372,21 @@ config.client_secret = '<your_client_secret>'
 api_instance = asposecellscloud.WorksheetsApi(asposecellscloud.ApiClient(config))
 
 comment = Comment(
-    CellName='A1',
-    Author='test',
-    Note='this is a comment',
-    HtmlNote='<font style="font-weight:bold;">this is a comment</font>',
-    AutoSize=True,
-    IsVisible=True,
-    Width=10,
-    Height=10
+    cell_name='A1',  # snake_case for Python
+    author='test',
+    note='this is a comment',
+    html_note='<font style="font-weight:bold;">this is a comment</font>',
+    auto_size=True,
+    is_visible=True,
+    width=10,
+    height=10
 )
 
 try:
     api_response = api_instance.put_worksheet_comment('test.xlsx', 'Sheet1', 'A1', comment)
     print(api_response)
 except ApiException as e:
-    print("Exception when calling WorksheetsApi->put_worksheet_comment: %s\\n" % e)
+    print("Exception when calling WorksheetsApi->put_worksheet_comment: %s\n" % e)
 ```
 
 {{< /tab >}}
@@ -452,9 +462,9 @@ func main() {
 
     resp, _, err := apiInstance.PutWorksheetComment("test.xlsx", "Sheet1", "A1", comment, nil, nil)
     if err != nil {
-        fmt.Printf("Error: %v\\n", err)
+        fmt.Printf("Error: %v\n", err)
     } else {
-        fmt.Printf("Response: %+v\\n", resp)
+        fmt.Printf("Response: %+v\n", resp)
     }
 }
 ```
@@ -462,6 +472,11 @@ func main() {
 {{< /tab >}}
 
 {{< /tabs >}}
+
+> ⚠️ **Note**: Field names follow the SDK’s language-specific naming conventions:
+> - C#/Java/Go: `CellName` (PascalCase)
+> - JS/Python/Ruby/PHP/Perl: `cellName` / `cell_name` (camelCase/snake_case)
+> Ensure your SDK version matches the casing in this example.
 
 ---
 
@@ -476,8 +491,7 @@ func main() {
 
 ## Additional Notes
 
-- The endpoint path includes **v3.0**. A newer version (**v3.1**) is available; update the base URL accordingly if you need the latest features.
-- For the full OpenAPI definition, visit the [Aspose.Cells Cloud API reference](/cells/#/Worksheets/PutWorksheetComment).
+- The endpoint path includes **v3.1** — the current stable version. While `v3.0` remains functional, new features and improvements are only available in v3.1.
+- For the full OpenAPI definition, visit the [Aspose.Cells Cloud API reference](https://docs.aspose.cloud/cells/#/Worksheets/PutWorksheetComment).
 - Remember to handle rate‑limiting (HTTP 429) and retry according to the API guidelines.
-
----
+- To migrate from v3.0 to v3.1, update your base URL from `https://api.aspose.cloud/v3.0` to `https://api.aspose.cloud/v3.1` and verify field casing consistency in your SDK implementations.

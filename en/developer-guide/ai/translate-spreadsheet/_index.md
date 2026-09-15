@@ -1,108 +1,199 @@
 ---
+url: /translate-spreadsheet/
 title: "Aspose.Cells Cloud Web API – Translate Spreadsheet to Target Language"
-second_title: "Document"
-ArticleTitle: "How to Translate an Entire Spreadsheet Using Aspose.Cells Cloud AI Translation API"
 linktitle: "Translate Spreadsheet"
 type: docs
-url: /translate-spreadsheet/
-keywords: "Aspose.Cells Cloud, Translate Spreadsheet API, AI translation, spreadsheet translation, targetLanguage, multi‑sheet translation, cloud spreadsheet processing, Aspose.Cells Cloud translation"
-description: "Translate an entire Excel workbook with Aspose.Cells Cloud AI. Preserve formulas, charts, and formatting while converting text to any supported language. Learn endpoint, parameters, SDK examples, limits, and error handling."
+description: "Use Aspose.Cells Cloud AI to translate Excel workbooks (XLSX, CSV, etc.) to any language. Preserve formulas, charts, and multi-sheet structure. Includes API spec, SDK examples, and error codes."
+keywords: "Aspose.Cells Cloud, translate spreadsheet API, AI translation, spreadsheet translation, multi-sheet translation, cloud spreadsheet processing, targetLanguage, neural translation"
+date: 2024-03-15T00:00:00Z
+lastmod: 2024-05-22T14:30:00Z
+robots: index, follow
+canonical: https://docs.aspose.com/cells-cloud/translate-spreadsheet/
 weight: 100
 ---
 
-The **TranslateSpreadsheet** endpoint, part of the **Translate Spreadsheet API**, reads every text element in a workbook, sends the content to an AI‑powered translation service, and returns a new spreadsheet file where all textual data is rendered in the specified **targetLanguage**. The operation keeps the original layout, cell styles, formulas, and **the** multi‑sheet structure intact, making it ideal for globalizing reports, dashboards, and data‑driven documents. Supported file formats include XLS, XLSX, XLSM, CSV, and ODS. Errors are returned for invalid language codes, authentication failures, or translation‑service outages.
+The **TranslateSpreadsheet** endpoint translates all textual content in an Excel workbook to a specified target language using AI-powered neural translation models. It preserves cell formatting, formulas, charts, pivot tables, conditional formatting, and multi-sheet structure—making it ideal for globalizing financial reports, dashboards, and compliance documents. Supported input formats include XLS, XLSX, XLSM, CSV, and ODS.
 
-## **Translate Spreadsheet API**
+> **Note:** This API is available in Aspose.Cells Cloud v4.0+, released in March 2024.
 
-### Web API
+## Prerequisites
+
+Before calling the API, ensure you have:
+
+- A valid Aspose.Cells Cloud account and API credentials (`Client ID` and `Client Secret`)
+- A personal access token (JWT) generated using your credentials  
+  *(See [Authentication Guide](https://docs.aspose.com/cells-cloud/Authentication/) for setup instructions.)*
+
+## Translate Spreadsheet API
+
+### Web API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/ai/translate/spreadsheet
 ```
 
-### **Request Parameters:**
+### Request Parameters
 
-| Parameter Name | Type   | Location | Required/Optional | Description                                                                                                                                                                                                 |
-| :------------- | :----- | :------- | :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | Required | FormData          | The Excel workbook to be translated. Acceptable extensions: .xls, .xlsx, .xlsm, .csv, .ods. Maximum file size: 50 MB. Example: `budget.xlsx`.                                                               |
-| targetLanguage | string | Required | Query             | ISO 639‑1 language code for the desired output language (e.g., "es" for Spanish, "fr" for French, "de" for German). Must be a language supported by the underlying AI service.                              |
-| region         | string | Optional | Query             | Spreadsheet region identifier that influences locale‑specific formatting such as dates, numbers, and currency. Common values: "US", "EU", "CN". If omitted, the workbook’s original region setting is used. |
-| password       | string | Optional | Query             | Password for opening a protected workbook. Leave blank when the file is not password‑protected.                                                                                                             |
+| Parameter Name | Type   | Location | Required | Description |
+|:---------------|:-------|:---------|:---------|:------------|
+| `Spreadsheet`  | File   | FormData | Yes      | The Excel workbook to translate. Supported formats: `.xls`, `.xlsx`, `.xlsm`, `.csv`, `.ods`. Maximum size: **50 MB**. |
+| `targetLanguage` | string | Query | Yes | ISO 639-1 language code for the output language (e.g., `"es"` for Spanish, `"fr"` for French, `"de"` for German). Must be supported by the underlying translation service. |
+| `region` | string | Query | No | Locale identifier (e.g., `"US"`, `"EU"`, `"CN"`, `"en-US"`) influencing date/number/currency formatting. If omitted, the original workbook region is retained. |
+| `password` | string | Query | No | Password for protected workbooks. Omit if the file is not encrypted. |
 
-### **Response**
+### Response
 
-Successful response (200 OK)  
-Headers:  
-Content‑Type: application/octet-stream // or text/csv when CSV output is requested  
-Content‑Disposition: attachment; filename="translated.xlsx"  
-Content‑Length: <size in bytes>
+**Successful Response (200 OK)**  
+- **Headers**  
+  `Content-Type: application/octet-stream` (or `text/csv` for CSV input/output)  
+  `Content-Disposition: attachment; filename="translated.xlsx"`  
+  `Content-Length: <size_in_bytes>`  
+- **Body**  
+  Binary stream of the translated spreadsheet file.
 
-Body:  
-<binary stream containing the translated spreadsheet file>
+**Error Responses (JSON format)**  
+Standard Aspose.Cells Cloud error model:
+```json
+{
+  "code": "400",
+  "message": "Bad Request",
+  "details": ["Invalid targetLanguage parameter"]
+}
+```
 
-Error responses follow the standard Aspose.Cells Cloud error model (application/json) with fields `code`, `message`, and optional `details`.
+| Status Code | Meaning               | Description |
+|:------------|:----------------------|:------------|
+| `200`       | OK                    | Translation completed successfully. |
+| `400`       | Bad Request           | Invalid or missing parameters (e.g., unsupported file type, invalid language code). |
+| `401`       | Unauthorized          | Invalid or expired JWT token. |
+| `413`       | Payload Too Large     | Uploaded file exceeds 50 MB limit. |
+| `500`       | Internal Server Error | Translation service unavailable or internal processing error. |
 
-**HTTP Status Codes**
+## Use Cases
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Industry | Application |
+|:---------|:------------|
+| **Finance** | Convert quarterly reports into localized versions for regional headquarters while preserving complex formulas and audit trails. |
+| **Marketing** | Generate multilingual campaign performance dashboards for global teams with consistent chart layouts. |
+| **Education** | Translate gradebooks and assignment sheets into student-native languages without manual reformatting. |
+| **Regulatory** | Produce country-specific compliance spreadsheets (e.g., GDPR, SOX) with validated rules and language compliance. |
 
-## Where should we use the Translate Spreadsheet API?
+## Key Features
 
-- **International Financial Reporting** – Convert quarterly Excel reports into multiple languages for regional offices while preserving formulas and chart layouts.
-- **Multi‑language Marketing Dashboards** – Automatically generate localized versions of sales performance dashboards for global teams.
-- **Educational Content Distribution** – Translate grade‑books, assignment sheets, or curriculum spreadsheets for students in different countries without manual copy‑pasting.
-- **Regulatory Compliance** – Produce language‑specific compliance spreadsheets that retain validation rules and data‑validation lists.
+- **AI-Powered Neural Translation** – Context-aware translation using state-of-the-art models for accuracy and natural phrasing.  
+- **Zero Layout Disruption** – Formulas, charts, pivot tables, conditional formatting, and worksheet order remain intact.  
+- **Multi-Sheet Automation** – Processes all worksheets in a single request—no per-sheet loops required.  
+- **Cloud-Native Integration** – Seamlessly embeds into CI/CD pipelines, serverless functions (e.g., AWS Lambda), or enterprise back-ends via REST or SDK.
 
-## Why should you use the Translate Spreadsheet API?
+## SDK Integration
 
-- **AI‑driven accuracy** – Leverages state‑of‑the‑art neural translation models for context‑aware, high‑quality language conversion.
-- **Zero layout disruption** – Keeps cell formulas, conditional formatting, charts, and worksheet ordering exactly as in the source file.
-- **Single‑call multi‑sheet processing** – Translates every worksheet in one request, eliminating the need for per‑sheet loops.
-- **Seamless cloud integration** – Works with Aspose.Cells Cloud authentication, enabling automated pipelines in CI/CD, serverless functions, or enterprise back‑ends.
+### Using Aspose.Cells Cloud SDKs
 
-## How to Use the Translate Spreadsheet API with SDKs
+SDKs abstract low-level HTTP details and simplify authentication, file handling, and error parsing. Choose from the following language-specific implementations:
 
-### Translate Spreadsheet API Specification
+- [.NET](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/releases/tag/v24.6)  
+- [Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/releases/tag/v22.9)  
+- [PHP](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/releases/tag/v23.3)  
+- [Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/releases/tag/v22.10)  
+- [Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/releases/tag/v24.2)  
+- [Ruby](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/releases/tag/v22.5)  
+- [Perl](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/releases/tag/v22.4)  
+- [Go](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/releases/tag/v24.1)
 
-The [Translate Spreadsheet API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/AI/TranslateSpreadsheet) provides a publicly accessible programming interface for executing REST interactions directly from a web browser.
-
-## Excel API SDK
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to merge a spreadsheet into another spreadsheet with short code.  
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.  
-The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:
+> **Tip:** Always link to a specific SDK version (e.g., `v24.6`) to avoid breaking changes.
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}  
 {{<tab tabNum="1" >}}  
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example_v4.0_TranslateSpreadsheet.cs" >}}  
+{{<highlight csharp>}}
+// Example: C# SDK v24.6
+var cellsApi = new CellsApi(clientId, clientSecret);
+var response = cellsApi.TranslateSpreadsheet("input.xlsx", targetLanguage: "es", region: "US");
+File.WriteAllBytes("translated.xlsx", response);
+{{</highlight>}}  
 {{</tab>}}  
 {{<tab tabNum="2" >}}  
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_v4.0_TranslateSpreadsheet.java" >}}  
+{{<highlight java>}}
+// Example: Java SDK v22.9
+CellsApi cellsApi = new CellsApi(clientId, clientSecret);
+File response = cellsApi.cellsAiTranslateSpreadsheet("input.xlsx", "es", "US", null);
+Files.write(Paths.get("translated.xlsx"), response);
+{{</highlight>}}  
 {{</tab>}}  
 {{<tab tabNum="3" >}}  
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_v4.0_TranslateSpreadsheet.php" >}}  
+{{<highlight php>}}
+// Example: PHP SDK v23.3
+$cellsApi = new CellsApi($clientId, $clientSecret);
+$response = $cellsApi->cellsAiTranslateSpreadsheet("input.xlsx", "es", "US");
+file_put_contents("translated.xlsx", $response);
+{{</highlight>}}  
 {{</tab>}}  
 {{<tab tabNum="4" >}}  
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_v4.0_TranslateSpreadsheet.rb" >}}  
+{{<highlight ruby>}}
+# Example: Ruby SDK v22.5
+cells_api = AsposeCellsCloud::API::CellsApi.new(client_id, client_secret)
+response = cells_api.cells_ai_translate_spreadsheet("input.xlsx", target_language: "es", region: "US")
+File.write("translated.xlsx", response)
+{{</highlight>}}  
 {{</tab>}}  
 {{<tab tabNum="5" >}}  
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_v4.0_TranslateSpreadsheet.ts" >}}  
+{{<highlight typescript>}}
+// Example: Node.js SDK v24.2
+const { CellsApi } = require("@aspose/cells-cloud");
+const cellsApi = new CellsApi(process.env.CLIENT_ID, process.env.CLIENT_SECRET);
+const response = await cellsApi.cellsAiTranslateSpreadsheet("input.xlsx", "es", "US");
+await fs.promises.writeFile("translated.xlsx", response);
+{{</highlight>}}  
 {{</tab>}}  
 {{<tab tabNum="6" >}}  
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_v4.0_TranslateSpreadsheet.py" >}}  
+{{<highlight python>}}
+# Example: Python SDK v22.10
+from asposecellscloud.api import CellsApi
+cells_api = CellsApi(client_id, client_secret)
+response = cells_api.cells_ai_translate_spreadsheet("input.xlsx", target_language="es", region="US")
+with open("translated.xlsx", "wb") as f:
+    f.write(response)
+{{</highlight>}}  
 {{</tab>}}  
 {{<tab tabNum="7" >}}  
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_v4.0_TranslateSpreadsheet.pl" >}}  
+{{<highlight perl>}}
+# Example: Perl SDK v22.4
+my $api = AsposeCellsCloud::API::CellsApi->new(
+    -client_id => $client_id,
+    -client_secret => $client_secret
+);
+my $response = $api->cells_ai_translate_spreadsheet("input.xlsx", "es", "US");
+open my $fh, '>', "translated.xlsx";
+print $fh $$response;
+close $fh;
+{{</highlight>}}  
 {{</tab>}}  
 {{<tab tabNum="8" >}}  
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_v4.0_TranslateSpreadsheet.go" >}}  
+{{<highlight go>}}
+// Example: Go SDK v24.1
+api := cells.NewCellsApi(os.Getenv("CLIENT_ID"), os.Getenv("CLIENT_SECRET"))
+response, _, err := api.CellsAiTranslateSpreadsheet(context.Background(), "input.xlsx", "es", "US", nil)
+os.WriteFile("translated.xlsx", response, 0644)
+{{</highlight>}}  
 {{</tab>}}  
 {{< /tabs >}}
+
+## API Specification & Testing
+
+- **Interactive Swagger UI**: Test the API directly in your browser using the [Translate Spreadsheet OpenAPI spec](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/AI/TranslateSpreadsheet).  
+- **Postman Collection**: Import the [Aspose.Cells Cloud Postman collection](https://github.com/aspose-cells-cloud/aspose-cells-cloud-postman) for reusable request templates.
+
+## Related Documentation
+
+- [How to Save Excel to PDF](/save-as/)  
+- [Merge Multiple Spreadsheets](/merge-spreadsheets/)  
+- [Compare Two Excel Files](/compare/)  
+- [Cloud Authentication Guide](https://docs.aspose.com/cells-cloud/Authentication/)
+
+## Troubleshooting
+
+| Issue | Resolution |
+|:------|:-----------|
+| `400 Bad Request` with "Invalid targetLanguage" | Verify language code against [supported languages](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/language-support). |
+| `401 Unauthorized` | Regenerate JWT token using valid `Client ID`/`Secret` and ensure it hasn’t expired (typically 24h). |
+| `500 Internal Server Error` | Check [Service Health Dashboard](https://status.aspose.cloud/) for translation service outages. |
+| Formatted numbers/dates misaligned | Specify `region` parameter (e.g., `"US"` or `"EU"`) to enforce locale-aware formatting. |

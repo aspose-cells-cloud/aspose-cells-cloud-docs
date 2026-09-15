@@ -1,7 +1,6 @@
 ---
-title: "Aspose.Cells Cloud API – Update Chart Value Axis (POST /valueaxis)"
-description: "Update the value axis of a chart in an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, request‑body schema, examples (cURL and SDKs), responses, and error handling."
-url: /charts/value-axis/update/
+title: "Aspose.Cells Cloud API - Update Chart Value Axis (POST /valueaxis)"
+description: "Learn how to update the value axis of an Excel chart using Aspose.Cells Cloud REST API — including cURL, SDK examples (C#, Java, Python, Node.js), and error codes."
 keywords:
   - Aspose.Cells Cloud
   - Update Chart Value Axis
@@ -12,24 +11,20 @@ keywords:
   - SDK
   - JSON payload
   - chart axis settings
-last_updated: 2026-07-30
+last_updated: 2024-05-28
 weight: 160
 ---
 
-# Update Chart Value Axis (POST /valueaxis)
+# Update Chart Value Axis (POST /valueaxis)
 
 **Summary:**  
-Modify the value axis of a specific chart in an Excel workbook stored in Aspose Cloud. You can set bounds, tick units, logarithmic scaling and other axis properties in a single request.
-
----
+Modify the value axis of a specific chart in an Excel workbook stored in Aspose Cloud. You can set bounds, tick units, logarithmic scaling, and other axis properties in a single request.
 
 ## Prerequisites
 
-1. **JWT access token** – obtain a token as described in the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+1. **JWT access token** – Obtain a token as described in the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 2. The target **workbook** must already be uploaded to Aspose Cloud storage (or the default storage).
-3. Know the **worksheet name** and the **zero‑based chart index** you wish to modify.
-
----
+3. Know the **worksheet name** and the **zero-based chart index** you wish to modify.
 
 ## Endpoint
 
@@ -37,29 +32,21 @@ Modify the value axis of a specific chart in an Excel workbook stored in Aspose 
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis
 ```
 
-_Replace the placeholders with your actual values._
+Replace the placeholders with your actual values.
 
 | Placeholder    | Description                                         |
 | -------------- | --------------------------------------------------- |
 | `{name}`       | Name of the Excel file (e.g., `Book1.xlsx`).        |
 | `{sheetName}`  | Worksheet that contains the chart (e.g., `Sheet1`). |
-| `{chartIndex}` | Zero‑based index of the chart (e.g., `0`).          |
-
----
+| `{chartIndex}` | Zero-based index of the chart (e.g., `0`).          |
 
 ## Authentication
 
-The API uses **JWT token‑based authentication**. Include the token in the `Authorization` header:
+The API uses **JWT token-based authentication**. Include the token in the `Authorization` header:
 
 ```
 Authorization: Bearer <jwt token>
 ```
-
----
-
-### **Security and Authentication**
-
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ## Request Parameters
 
@@ -67,12 +54,10 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | --------------- | -------- | ------ | -------- | ------------------------------------------ |
 | **name**        | Path     | string | Yes      | Excel file name stored in the cloud.       |
 | **sheetName**   | Path     | string | Yes      | Worksheet that holds the chart.            |
-| **chartIndex**  | Path     | int    | Yes      | Zero‑based index of the chart to update.   |
+| **chartIndex**  | Path     | int    | Yes      | Zero-based index of the chart to update.   |
 | **axis**        | Body     | object | Yes      | Axis settings (see _Request Body Schema_). |
 | **folder**      | Query    | string | No       | Cloud folder path where the file resides.  |
 | **storageName** | Query    | string | No       | Name of the storage service to use.        |
-
----
 
 ## Request Body Schema (`axis` object)
 
@@ -106,14 +91,12 @@ Only the properties you need to change have to be present.
 }
 ```
 
----
-
 ## Example Requests
 
 ### cURL
 
 ```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/<code class=\"placeholder\">{name}</code>/worksheets/<code class=\"placeholder\">{sheetName}</code>/charts/<code class=\"placeholder\">{chartIndex}</code>/valueaxis?folder=<code class=\"placeholder\">{folder}</code>&storageName=<code class=\"placeholder\">{storageName}</code>" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/charts/0/valueaxis?folder=&storageName=" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -329,7 +312,7 @@ axis.crossAt = 0
 
 api.postChartValueAxis(name: "Book1.xlsx", sheetName: "Sheet1", chartIndex: 0, axis: axis) { result, error in
     if let error = error {
-        print("Error: \\(error)")
+        print("Error: \(error)")
     } else {
         print("Value axis updated.")
     }
@@ -406,8 +389,6 @@ func main() {
 
 {{< /tabs >}}
 
----
-
 ## Responses
 
 ### Success (200)
@@ -425,13 +406,11 @@ The response type is `CellsCloudResponse`.
 
 | Code | Meaning               | Description                                                       |
 | ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 200  | OK                    | Axis updated successfully.                                        |
 | 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
 | 401  | Unauthorized          | Invalid or missing JWT token.                                     |
 | 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
 | 500  | Internal Server Error | Unexpected server error.                                          |
-
----
 
 ## Additional Resources
 

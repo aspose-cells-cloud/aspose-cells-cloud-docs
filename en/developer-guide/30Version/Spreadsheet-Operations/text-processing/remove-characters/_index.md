@@ -1,117 +1,219 @@
 ---
-title: "Remove Characters from Excel – Aspose.Cells Cloud API (POST /cells/removecharacters)"
-second_title: "Document"
-linktitle: "Remove Characters"
-type: docs
 url: /excel-remove-characters/
+title: Remove Characters from Excel – Aspose.Cells Cloud API (POST /cells/removecharacters)
+description: Clean Excel data by removing custom characters, character sets, or substrings via Aspose.Cells Cloud API. Supports bulk removal, substrings, and case-insensitive processing.
+date: 2024-06-15
+lastmod: 2024-06-15
+tags:
+  - excel
+  - text-processing
+  - api
 keywords: "remove characters, Aspose.Cells, Excel API, text processing, cloud"
-description: "Learn how to remove characters, character sets, or substrings from Excel worksheets using Aspose.Cells Cloud API. Includes request schema, cURL example, SDK code, and error handling."
+aliases:
+  - /text-processing/remove-characters/
 weight: 100
-ArticleTitle: "Remove Characters from Excel – Aspose.Cells Cloud API (POST /cells/removecharacters)"
 ---
 
-## Remove Characters from Excel Web API
+## Overview
 
-A comprehensive set of tools for cleaning text content within selected cells. The API removes specific characters, predefined character sets, or substrings, ensuring that worksheet text is standardized and free from unwanted symbols.
+The **Remove Characters** API enables you to clean and standardize text content in Excel worksheets by removing specific characters, predefined character sets, or substrings. This operation helps eliminate unwanted symbols, formatting artifacts, or inconsistent text patterns — ideal for data preprocessing, validation, and automation workflows.
 
-**Prerequisites**
+> **Note**: This operation modifies cell values *in-place* and returns the updated workbook as a base64-encoded string in the response.
 
-- An active Aspose Cloud account.  
-- A valid JWT access token obtained as described in the authentication guide.  
-- The Excel file must be uploaded to storage before calling this endpoint.  
-- Supported file formats include `.xlsx`, `.xls`, `.xlsm`, and other common Excel types.
+## Prerequisites
+
+- An active [Aspose Cloud account](https://dashboard.aspose.cloud/).
+- A valid JWT access token (see [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/){rel="noopener noreferrer"}).
+- Your Excel file uploaded to Aspose Cloud storage (`.xlsx`, `.xls`, `.xlsm`, or other supported formats).
+- An API client or SDK (e.g., cURL, Python, .NET, Java, Node.js). See [SDKs on GitHub](https://github.com/aspose-cells-cloud){rel="noopener noreferrer"}.
+
+## API Endpoint
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/removecharacters
 ```
 
-### **Security and Authentication**
+### Request Headers
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+| Header | Value |
+|--------|-------|
+| `Authorization` | Bearer `{access_token}` |
+| `Content-Type` | `application/json` |
 
-### Function Description
+---
 
-- **Remove custom characters** – Specify any characters you want to delete. Enter each character in the _Remove custom characters_ field; the API will delete every occurrence of those characters in the selected cells.  
-- **Remove character sets** – Choose from the predefined sets:  
-  - **Non‑printing characters** – Deletes line‑breaks and the first 32 non‑printing ASCII characters (0‑31) plus additional codes (127, 129, 141, 143, 144, 157).  
-  - **Text characters** – Removes all letters.  
-  - **Numeric characters** – Deletes all digits.  
-  - **Symbols** – Removes mathematical, geometric, technical, currency symbols and letter‑like symbols such as “?”, “1”, and “™”.  
-  - **Punctuation marks** – Eliminates all punctuation.  
-- **Remove a substring** – Deletes any specified substring (e.g., a word) from the selected cells.
+## Request Parameters
 
-### Request Parameters
+| Parameter | Type | Location | Required | Description |
+|-----------|------|----------|----------|-------------|
+| `removeCharactersOptions` | `RemoveCharactersOptions` | Body | Yes | Object defining the scope and type of characters to remove. |
 
-| Parameter Name          | Type  | Location | Description                                                                    |
-| ----------------------- | ----- | -------- | ------------------------------------------------------------------------------ |
-| removeCharactersOptions | Class | Body     | Options that define which characters, character sets, or substrings to remove. |
+### `RemoveCharactersOptions` Schema
 
-**Schema of `removeCharactersOptions`**
+| Property | Type | Required | Description |
+|----------|------|----------|-------------|
+| `Range` | string | Yes | A1-style range (e.g., `"A1:C10"`) or named range to process. |
+| `CustomCharacters` | string | No | String of characters to remove (e.g., `"@#$"`). Each character is treated individually. |
+| `CharacterSet` | string | No | Predefined set: `"NonPrinting"`, `"Text"`, `"Numeric"`, `"Symbols"`, or `"Punctuation"`. |
+| `Substring` | string | No | Exact substring to remove (e.g., `"USD"`, `"°C"`). |
+| `IgnoreCase` | boolean | No | If `true`, substring and text-character removal is case-insensitive. Default: `false`. |
 
-| Property         | Type    | Required | Description                                                                                                    |
-| ---------------- | ------- | -------- | -------------------------------------------------------------------------------------------------------------- |
-| Range            | string  | Yes      | A‑1 notation or named range that identifies the cells to process (e.g., `"A1:C10"`).                           |
-| CustomCharacters | string  | No       | A string containing each custom character to delete (e.g., `"@#$"`).                                           |
-| CharacterSet     | string  | No       | Enum value specifying a predefined set (`"NonPrinting"`, `"Text"`, `"Numeric"`, `"Symbols"`, `"Punctuation"`). |
-| Substring        | string  | No       | The exact substring to remove (e.g., `"USD"`).                                                                 |
-| IgnoreCase       | boolean | No       | When `true`, character removal is case‑insensitive.                                                            |
+> **Tip**: Only one of `CustomCharacters`, `CharacterSet`, or `Substring` should be specified per request to avoid ambiguous behavior.
 
-**Example JSON request body**
+### Example Request Body
 
 ```json
 {
   "Range": "A1:B20",
-  "CustomCharacters": "@#$",
+  "CustomCharacters": "@#$%",
   "CharacterSet": "NonPrinting",
   "Substring": "USD",
   "IgnoreCase": true
 }
 ```
 
-**Sample cURL request**
+### Example cURL Request
 
 ```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/removecharacters" \
-     -H "Authorization: Bearer {access_token}" \
-     -H "Content-Type: application/json" \
-     -d '{
-           "Range": "A1:B20",
-           "CustomCharacters": "@#$",
-           "CharacterSet": "NonPrinting",
-           "Substring": "USD",
-           "IgnoreCase": true
-         }'
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." \
+  -H "Content-Type: application/json" \
+  -d '{
+    "Range": "A1:B20",
+    "CustomCharacters": "@#$",
+    "Substring": "USD",
+    "IgnoreCase": true
+  }'
 ```
 
-### **Response**
+---
+
+## Response
+
+On success, the API returns a `FileInfo` object containing metadata and the updated file content.
+
+### Success Response (200 OK)
 
 ```json
 {
-    "Status" : "OK",
-    "Code" : 200,
-    "Filename" : "[merged filename]",
-    "Filesize" : [file size],
-    "FileContent" : "[Base64String]"
+  "Code": 200,
+  "Status": "OK",
+  "Filename": "cleaned_report.xlsx",
+  "Filesize": 45892,
+  "FileContent": "UEsDBBQABgAIAAAAIQDf...[base64-encoded .xlsx content]"
 }
 ```
 
-**HTTP Status Codes**
+| Field | Description |
+|-------|-------------|
+| `Code` | HTTP status code (200 for success). |
+| `Status` | Operation result (`"OK"`). |
+| `Filename` | Name of the modified file. |
+| `Filesize` | Size of the updated file in bytes. |
+| `FileContent` | Base64-encoded binary content of the updated Excel file. |
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-## How to Use the PostRemoveCharacters API with SDKs
+### Error Responses
 
-### PostRemoveCharacters API Specification
+| Status Code | Error | Description |
+|-------------|-------|-------------|
+| `400` | `Bad Request` | Invalid `Range`, missing/invalid parameters, or unsupported file type. |
+| `401` | `Unauthorized` | Invalid, expired, or missing JWT token. |
+| `413` | `Payload Too Large` | Input file exceeds the 2 GB limit. |
+| `500` | `Internal Server Error` | Unexpected server-side failure. |
 
-The <a href="https://reference.aspose.cloud/cells/#/TextProcessingController/PostRemoveCharacters" rel="noopener noreferrer">Full OpenAPI spec for PostRemoveCharacters endpoint</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+---
 
-### Use Aspose.Cells Cloud SDKs
+## Supported Character Sets
 
-Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+| Set | Characters Removed | Use Case |
+|-----|-------------------|----------|
+| `NonPrinting` | ASCII 0–31, 127, 129, 141, 143, 144, 157 | Remove hidden line breaks, control chars, and formatting artifacts. |
+| `Text` | All letters (A–Z, a–z) | Strip alphabetic characters (e.g., to extract pure numbers). |
+| `Numeric` | All digits (0–9) | Remove numbers, leaving text or symbols. |
+| `Symbols` | Math (`+`, `×`, `π`), currency (`€`, `¥`), punctuation-like (™, №) | Standardize technical or financial data. |
+| `Punctuation` | `.,;:!?'"()[]{}-` | Clean natural-language text for NLP or indexing. |
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+---
+
+## SDK Code Examples
+
+### Python (aspose-cells-cloud)
+
+```python
+import os
+import asposecellscloud
+from asposecellscloud.apis.text_processing_api import TextProcessingApi
+from asposecellscloud.models.remove_characters_options import RemoveCharactersOptions
+
+# Initialize API
+client_id = "your_client_id"
+client_secret = "your_client_secret"
+api = TextProcessingApi(client_id, client_secret)
+
+# Prepare request
+options = RemoveCharactersOptions(
+    range="A1:B20",
+    custom_characters="@#$",
+    substring="USD",
+    ignore_case=True
+)
+
+# Call API
+response = api.post_remove_characters(
+    remove_characters_options=options,
+    file="input.xlsx"
+)
+
+# Save result
+with open("output.xlsx", "wb") as f:
+    f.write(response.file_content.encode('utf-8'))
+```
+
+### .NET (C#)
+
+```csharp
+using Aspose.Cells.Cloud.Sdk;
+using Aspose.Cells.Cloud.Sdk.Model;
+
+var configuration = new Configuration
+{
+    ClientId = "your_client_id",
+    ClientSecret = "your_client_secret"
+};
+var api = new TextProcessingApi(configuration);
+
+var options = new RemoveCharactersOptions
+{
+    Range = "A1:B20",
+    CustomCharacters = "@#$",
+    Substring = "USD",
+    IgnoreCase = true
+};
+
+var response = api.PostRemoveCharacters(options, "input.xlsx");
+File.WriteAllBytes("output.xlsx", Convert.FromBase64String(response.FileContent));
+```
+
+> For more SDKs (Java, PHP, Node.js, Ruby, etc.), visit the [Aspose.Cells Cloud GitHub repository](https://github.com/aspose-cells-cloud){rel="noopener noreferrer"}.
+
+---
+
+## Best Practices
+
+1. **Test on a copy**: Always verify the impact on a non-production file first.
+2. **Combine with other tools**: Use in conjunction with `PostCleanObjects` or `PostRemoveBlankRows` for full data cleanup.
+3. **Use `IgnoreCase` carefully**: Set `IgnoreCase = true` only when case-insensitive removal is intended (e.g., for user-facing substrings like `"USD"` or `"°C"`).
+4. **Avoid overlapping operations**: Do not specify both `CustomCharacters` and `Substring` in the same request.
+
+---
+
+## Related Resources
+
+- [Aspose.Cells Cloud Documentation](https://docs.aspose.cloud/cells/)
+- [Full OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/PostRemoveCharacters)
+- [SDK Examples on GitHub](https://github.com/aspose-cells-cloud)
+- [API Pricing & Free Trial](https://purchase.aspose.cloud/pricing)
+
+---
+
+> **Tip**: Need to remove characters *based on position* (e.g., first 3 chars)? Use the [`PostCellsTrimText`](/excel-trim-text/) API instead.

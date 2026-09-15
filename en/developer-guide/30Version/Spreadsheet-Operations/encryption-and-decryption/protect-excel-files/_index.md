@@ -2,181 +2,192 @@
 title: "Protect Excel Files"
 second_title: "Document"
 linktitle: "Encrypt Excel files"
+date: 2024-05-22
+lastmod: 2024-05-22
 type: docs
 url: /protect-excel-files/
 aliases:
   [
-    /protect/without-storage/,
-    /protect/without-using-storage/,
-    /protect/without-using-storage/,
+    /protect/without-storage/
   ]
 keywords: "Aspose.Cells, Excel protection API, encrypt Excel workbook, cloud spreadsheet security, REST API"
-description: "Use Aspose.Cells Cloud REST API to protect Excel files. This guide shows how to encrypt workbooks via HTTP POST, cURL, and SDKs for multiple programming languages, as of 2026."
+description: "Encrypt and protect Excel workbooks using Aspose.Cells Cloud REST API with JWT authentication. Includes cURL, SDK examples, and error codes."
 weight: 40
 ---
 
-This REST API protects Excel files.
+Use Aspose.Cells Cloud REST API to encrypt and protect Excel workbooks. This guide demonstrates how to apply password protection via the `POST /cells/protect` endpoint using HTTP requests, cURL, and SDKs for multiple programming languages.
 
-## REST API
+## REST API Endpoint
 
-```bash
-POST http://api.aspose.cloud/v3.0/cells/protect
+```http
+POST https://api.aspose.cloud/v3.0/cells/protect
 ```
 
-### Security and Authentication
+> **Security Note**: This endpoint requires HTTPS. Using HTTP exposes credentials to interception.
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+### Authentication
 
+All requests must include a valid [JWT token](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).  
+Include the token in the `Authorization` header:
 
-### Request parameters
+```http
+Authorization: Bearer <your_jwt_token>
+```
 
-| Parameter Name | Type   | Location                  | Description                           |
-| -------------- | ------ | ------------------------- | ------------------------------------- |
-| file           | file   | formData (body)           | File to upload                        |
-| password       | string | query string (`password`) | Password used to protect the workbook |
+### Request Parameters
+
+| Parameter Name         | Type   | Location | Description                                      | Required |
+|------------------------|--------|----------|--------------------------------------------------|----------|
+| `file`                 | file   | formData | Excel file(s) to protect                         | Yes      |
+| `password`             | string | query    | Password to encrypt the workbook                 | No       |
+| `protectWorkbookRequest` | object | body     | Optional structured request payload (e.g., encryption options) | No       |
+
+> **Note**: If `password` is provided in the query string, it takes precedence over any password in the request body.
+
+### Request Example (cURL)
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/protect?password=MySecretPwd" \
+  -X POST \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your_jwt_token>" \
+  -F 'file=@sample.xlsx'
+```
 
 ### Response
 
+On success (`200 OK`), the API returns a `FilesResult` object containing the protected file(s) as Base64-encoded content.
 
 ```json
 {
-  "Status":"OK",
-  "Code":200,
   "Files": [
     {
-      "Filename": "protected filename: smaple1.xlsx",
-      "FileSize": size,
-      "FileContent": "-----Base64String of sample1-----"
-    },
-    {
-      "Filename": "protected filename: sample2.xlsx",
-      "FileSize": size,
-      "FileContent": "-----Base64String of sample2-----"
+      "Filename": "sample.xlsx",
+      "FileSize": 274022,
+      "FileContent": "[base64-encoded protected workbook]"
     }
   ]
 }
 ```
 
-**HTTP Status Codes**
+#### HTTP Status Codes
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-## How to Use the PostProtect API with SDKs
+| 200  | OK                          | Protection applied successfully.                 |
+| 400  | Bad Request                 | Missing file, invalid password, or unsupported format. |
+| 401  | Unauthorized                | Invalid or missing JWT token.                    |
+| 403  | Forbidden                   | Insufficient permissions or account restrictions. |
+| 413  | Payload Too Large           | File exceeds maximum upload size (1 GB).         |
+| 500  | Internal Server Error       | Unexpected server-side error.                    |
 
-### PostProtect API Specification
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
-
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/protect?password=MySecretPwd" \
-  -X POST \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>" \
-  -F 'file1=@sample1.xlsx' \
-  -F 'file2=@sample2.xlsx'
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
+#### Example Error Response
 
 ```json
 {
-  "Files": [
-    {
-      "Filename": "sample1.xlsx",
-      "FileSize": 274022,
-      "FileContent": "-----Base64String of sample1-----"
-    },
-    {
-      "Filename": "sample2.xlsx",
-      "FileSize": 274022,
-      "FileContent": "-----Base64String of sample2-----"
-    }
-  ]
+  "Code": 400,
+  "Message": "File is required."
 }
 ```
 
-{{< /tab >}}
+## SDK Examples
 
-{{< /tabs >}}
+Using an SDK simplifies authentication, request construction, and response parsing. The Aspose.Cells Cloud SDKs are open-source and available on [GitHub](https://github.com/aspose-cells-cloud).
 
-### **Error handling**
+### Node.js (JavaScript)
 
-– The API can return the following status codes:
+```javascript
+// Aspose.Cells Cloud SDK for Node.js v22.5.0
+const { CellsApi, PostProtectRequest } = require('aspose-cells-cloud');
 
-| HTTP Code | Meaning                                 | Example JSON error payload                          |
-| --------- | --------------------------------------- | --------------------------------------------------- |
-| 400       | Bad request (e.g., missing file)        | `{"Code":400,"Message":"File is required."}`        |
-| 401       | Unauthorized (invalid or missing token) | `{"Code":401,"Message":"Invalid access token."}`    |
-| 403       | Forbidden (insufficient permissions)    | `{"Code":403,"Message":"Access denied."}`           |
-| 500       | Internal server error                   | `{"Code":500,"Message":"Unexpected server error."}` |
+const clientId = process.env['CELLS_CLOUD_CLIENT_ID'];
+const clientSecret = process.env['CELLS_CLOUD_CLIENT_SECRET'];
 
-### Use Aspose.Cells Cloud SDKs
+const cellsApi = new CellsApi(clientId, clientSecret);
 
-Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+const fileName = 'sample.xlsx';
+const password = 'MySecretPwd';
 
-The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+const request = new PostProtectRequest({
+  file: fileName,
+  password: password
+});
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+cellsApi.postProtect(request)
+  .then((response) => {
+    console.log('Protected workbook downloaded.');
+    // Handle response.files[0].fileContent (Base64)
+  })
+  .catch((error) => console.error('Error:', error));
+```
 
-{{< tab tabNum="1" >}}
+### Java
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostProtect.cs" >}}
+```java
+// Aspose.Cells Cloud SDK for Java v24.1.0
+import com.aspose.cells.cloud.*;
+import java.io.File;
 
-{{< /tab >}}
+public class ExamplePostProtect {
+    public static void main(String[] args) {
+        String clientId = "your_client_id";
+        String clientSecret = "your_client_secret";
+        
+        CellsApi cellsApi = new CellsApi(clientId, clientSecret);
+        
+        try {
+            File file = new File("sample.xlsx");
+            String password = "MySecretPwd";
+            
+            FilesResult result = cellsApi.postProtect(file, password, null, null);
+            System.out.println("Protected workbook saved.");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
 
-{{< tab tabNum="2" >}}
+### Python
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostProtect.java" >}}
+```python
+# Aspose.Cells Cloud SDK for Python v22.9.0
+import asposecellscloud
+from asposecellscloud.api import CellsApi
+from asposecellscloud.models import PostProtectRequest
 
-{{< /tab >}}
+api_client = asposecellscloud.ApiClient(
+    api_base_url='https://api.aspose.cloud',
+    auth_credentials={
+        'client_id': 'your_client_id',
+        'client_secret': 'your_client_secret'
+    }
+)
 
-{{< tab tabNum="3" >}}
+cells_api = CellsApi(api_client)
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostProtect.php" >}}
+with open('sample.xlsx', 'rb') as f:
+    file_content = f.read()
 
-{{< /tab >}}
+request = PostProtectRequest(
+    file='sample.xlsx',
+    password='MySecretPwd'
+)
 
-{{< tab tabNum="4" >}}
+result = cells_api.post_protect(request)
+print("Protected workbook retrieved.")
+```
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostProtect.rb" >}}
+> See [GitHub](https://github.com/aspose-cells-cloud) for complete examples in C#, PHP, Ruby, Perl, and Go.
 
-{{< /tab >}}
+## Best Practices
 
-{{< tab tabNum="5" >}}
+- **Use HTTPS only** — Never send passwords over unencrypted connections.  
+- **Store passwords securely** — Use environment variables or secret managers (e.g., AWS Secrets Manager).  
+- **Validate file types** — Ensure uploaded files are valid Excel workbooks (`.xlsx`, `.xls`, `.xlsm`).  
+- **Handle Base64 content** — Decode the `FileContent` field before saving to disk.  
+- **Update SDKs** — Use the latest SDK versions for security patches and feature support.
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostProtect.ts" >}}
+---
 
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostProtect.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostProtect.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostProtect.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+_Last updated: 2024-05-22_

@@ -1,157 +1,279 @@
 ---
 title: "Aspose.Cells Cloud – Change Word Case (Upper, Lower, Proper, Sentence)"
-ArticleTitle: "Excel Case Converter – Uppercase, Lowercase, Proper Case & Sentence Case"
+articleTitle: "Excel Case Converter – Uppercase, Lowercase, Proper Case & Sentence Case"
 linktitle: "Word Case"
 type: docs
 url: /change-word-case/
-keywords: "change word case API, Aspose.Cells, Excel case conversion, uppercase, lowercase, proper case, sentence case, text formatting"
-description: "Easily convert text case in Excel files using Aspise.Cells Cloud API. Supports Uppercase, Lowercase, Proper Case, and Sentence Case. Get code samples in C#, Java, Python & more."
+keywords: "Aspose.Cells change word case API, Excel case conversion, uppercase, lowercase, proper case, sentence case, text formatting"
+description: "Use the Aspose.Cells Cloud API to convert Excel text case (uppercase, lowercase, proper, sentence) via REST. Includes C#, Java, Python, Go SDK examples and authentication guide."
+date: 2024-04-15
 weight: 100
+canonical: /change-word-case/
 ---
 
-## **Change Word Case**
+## Overview
 
-Use the Aspose.Cells Cloud Web API to instantly convert text case in your spreadsheet—switch between uppercase, lowercase, proper case (capitalize each word), or sentence case (capitalize the first letter of each sentence) across a selected range. Only string cells are affected; numbers, booleans, errors, and blanks are ignored. Formulas, formatting, and data validation remain untouched.
+Use the Aspose.Cells Cloud API to instantly convert text case in Excel files via a REST endpoint. The service supports four case types—**UpperCase**, **LowerCase**, **ProperCase**, and **SentenceCase**—and processes only string-type cells while preserving formulas, formatting, and data validation.
 
-- **UpperCase** – every character capitalized.
-- **LowerCase** – every character lower‑cased.
-- **ProperCase** – first letter of each word upper‑cased, the remainder lower‑cased.
-- **SentenceCase** – first letter of each sentence upper‑cased, the remainder lower‑cased.
+- **UpperCase** – All characters converted to uppercase.
+- **LowerCase** – All characters converted to lowercase.
+- **ProperCase** – First letter of each word capitalized; remaining letters lowercased.
+- **SentenceCase** – First letter of each sentence capitalized; remaining letters lowercased.
 
-<img src="images/result.png" alt="Before/After case conversion screenshot" width="800" height="450" />
+> **Note**: Numbers, booleans, errors, and blank cells are skipped during conversion.
 
-### Web API
+![Before and after case conversion: sample Excel sheet showing standardized text formatting.](images/result.png)
+
+## API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/wordcase
 ```
 
+### Authentication
 
-### **Security and Authentication**
+All requests require a valid JWT access token. See [JWT Authentication](/cells/authentication/) for implementation details.
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
-```bash
--H "Authorization: Bearer {access_token}"
+```http
+Authorization: Bearer {access_token}
 ```
-### Request Parameters for **UpdateWordCase** API
 
-| Parameter Name | Type   | Location | Description                                                                                                                                                           |
-| :------------- | :----- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| spreadsheet    | File   | FormData | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                                             |
-| wordCaseType   | String | Query    | Specifies the text‑case conversion type: `UpperCase`, `LowerCase`, `ProperCase`, or `SentenceCase`.                                                                   |
-| worksheet      | String | Query    | _(Optional)_ The name of the worksheet where case conversion will be applied. If omitted, the operation applies to the first worksheet of the workbook.               |
-| range          | String | Query    | _(Optional)_ The cell range where case conversion will be applied (e.g., `"A1:C10"`). If omitted, the operation applies to all used cells in the specified worksheet. |
-| outPath        | String | Query    | _(Optional)_ The cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder.                            |
-| outStorageName | String | Query    | The name of the cloud storage where the output file will be stored.                                                                                                   |
-| region         | String | Query    | _(Optional)_ Sets the locale for text‑case conversion rules, particularly relevant for language‑specific capitalization (e.g., `"en-US"`, `"tr-TR"`).                 |
-| password       | String | Query    | _(Optional)_ If the uploaded spreadsheet is password‑protected, provide the password to open and process the file.                                                    |
+### Request Parameters
+
+| Parameter Name   | Type   | Location   | Required | Description |
+|------------------|--------|------------|----------|-------------|
+| `spreadsheet`    | File   | FormData   | ✅ Yes   | Upload the Excel file (supports XLSX, XLS, ODS, CSV, and more). |
+| `wordCaseType`   | String | Query      | ✅ Yes   | Target case: `UpperCase`, `LowerCase`, `ProperCase`, or `SentenceCase`. |
+| `worksheet`      | String | Query      | ❌ No    | Name of the worksheet to process. Defaults to the first worksheet. |
+| `range`          | String | Query      | ❌ No    | Cell range (e.g., `"A1:C10"`). Defaults to all used cells in the worksheet. |
+| `outPath`        | String | Query      | ❌ No    | Cloud storage path for the output file. Defaults to the source folder. |
+| `outStorageName` | String | Query      | ❌ No    | Name of the cloud storage for saving the output. |
+| `region`         | String | Query      | ❌ No    | Locale setting (e.g., `"en-US"`, `"tr-TR"`). Affects language-specific capitalization rules. |
+| `password`       | String | Query      | ❌ No    | Password for protected workbooks. |
 
 ### Response
 
-On success the service returns **200 OK** (or **202 Accepted**) with a JSON payload containing the binary stream of the processed workbook.
+On success, returns **200 OK** (or **202 Accepted**) with a binary stream containing the updated workbook:
 
 ```json
-[
-  {
-    "Name": "ResponseFile",
-    "DataType": {
-      "Identifier": "File",
-      "Reference": "Stream"
-    }
+{
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream"
   }
-]
+}
 ```
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token or incorrect client credentials.
-- **404 Not Found** – The spreadsheet file is not accessible.
-- **500 Server Error** – The spreadsheet encountered an internal processing anomaly.
+| Code | Description |
+|------|-------------|
+| `400` | Invalid request URI or parameter value. |
+| `401` | Invalid or expired JWT token. |
+| `404` | File not found or inaccessible. |
+| `500` | Internal server error during processing. |
 
-## Where should we use the change word case API?
+## Use Cases
 
-### Data Cleaning and Standardization
+### Data Cleaning & Standardization
+- **Customer Data Management**: Normalize names and addresses (e.g., `john doe` → `John Doe`).  
+- **Product Catalogs**: Standardize titles and descriptions (e.g., `IPHONE 15 PRO` → `iPhone 15 Pro`).  
+- **Financial Reports**: Ensure consistent formatting in item descriptions.
 
-- **Customer Data Management** – Standardize the capitalization of customer names and address information (e.g., `john doe` → `John Doe`).
-- **Product Catalog Processing** – Standardize product titles and description texts (e.g., `IPHONE 15 PRO` → `iPhone 15 Pro`).
-- **Financial Report Generation** – Normalize item names and description fields in financial statements.
+### Multi-Source Integration
+- **ETL Pipelines**: Harmonize text case when ingesting data from heterogeneous sources.  
+- **API Responses**: Process inconsistent casing from external APIs.  
+- **Cross-Team Reports**: Align formatting across departmental Excel exports.
 
-### Multi‑source Data Integration
+### Content Management
+- **Newsletters & Press Releases**: Enforce title capitalization standards.  
+- **Documentation**: Maintain uniform terminology in technical guides.  
+- **Knowledge Bases**: Standardize FAQ headings and answers.
 
-- **Data Warehouse ETL** – Standardize text format when loading data from various systems.
-- **API Data Reception** – Handle data with inconsistent capitalization returned by external APIs.
-- **Cross‑department Data Merging** – Standardize text format in Excel reports from different departments.
+### Enterprise Systems
+- **CRM Integration**: Auto-format names and company fields during data sync.  
+- **ERP Workflows**: Normalize material descriptions and supplier entries.  
+- **HR Systems**: Standardize employee names and job titles.
 
-### Content Management System
+### Batch & Real-Time Processing
+- **Legal Document Automation**: Batch-process clause formatting.  
+- **Marketing Campaigns**: Pre-format email copy and ad text.  
+- **Form Submissions**: Apply real-time formatting to user input.
 
-- **Automated News Releases** – Automatically format news headlines and content (capitalization rules for titles).
-- **Product Documentation Generation** – Ensure consistency in the formatting of technical documentation terms.
-- **Knowledge Base Maintenance** – Standardize the text format of FAQs and help documents.
+### Internationalization
+- **Multilingual Content**: Handle language-specific casing rules (e.g., Turkish dotted/dotless `i`).  
+- **Localization Prep**: Prepare text for translation with consistent formatting.  
+- **Post-Translation Validation**: Ensure output adheres to target-language capitalization norms.
 
-### Enterprise Application Integration
+## Benefits
 
-- **CRM System Integration** – Automatically format names and company information during import/export of customer data.
-- **ERP Data Processing** – Standardize key fields such as material descriptions and supplier names.
-- **HR Management System** – Standardize employee information and job titles.
+- **Developer-Friendly**: Aspose.Cells Cloud SDKs (C#, Java, Python, Go, Node.js, PHP, Perl, Ruby) abstract HTTP boilerplate and handle authentication, retries, and error parsing.
+- **Efficient Workflow**: Process files directly in cloud storage—no need to download and re-upload.
+- **Precision & Safety**: Only string cells are modified; formulas, formatting, and validation remain intact.
 
-### Batch Document Processing
+## SDK Examples
 
-- **Legal Document Preparation** – Batch processing of clause formats in contracts and agreements.
-- **Marketing Materials Generation** – Standardize text formats of advertising copy and email templates.
-- **Academic Paper Formatting** – Standardize format requirements for references and titles.
-
-### Real‑time Data Processing
-
-- **User Input Validation** – Real‑time formatting of form data submitted by users.
-- **Chatbot Responses** – Standardization of text format for automatically generated responses.
-- **Instant Report Generation** – Dynamic creation of uniformly formatted business reports.
-
-### Internationalization and Localization
-
-- **Multilingual Data Processing** – Handle differences in capitalization rules for texts in various languages.
-- **Localization Content Preparation** – Prepare formatted local content for different regions.
-- **Translation Project Management** – Ensure consistency in text format before and after translation.
-
-## Why should you use the change word case API?
-
-- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comprehensive documentation. Compared to building custom solutions, this significantly reduces development workload.
-- **Cost‑Effective** – You can change word case without first uploading the workbook, which saves storage space and reduces costs.
-
-## OpenAPI Specification
-
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/UpdateWordCase) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement **UpdateWordCase** for cells with minimal code. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
-
-The following code examples illustrate how to make calls to Aspose.Cells web services using various SDKs:
+Using an SDK is the recommended way to integrate the API. Below are minimal examples for major languages. For full, versioned code samples, see the [Aspose.Cells Cloud GitHub repository](https://github.com/aspose-cells-cloud).
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_UpdateWordCase.cs" >}}
+```csharp
+// Requires Aspose.Cells Cloud SDK for .NET v23.12+
+var cellsApi = new CellsApi(clientId, clientSecret);
+var response = cellsApi.CellsUpdateWordCase(
+    file: "input.xlsx",
+    wordCaseType: "ProperCase",
+    worksheet: "Sheet1",
+    range: "A1:A10",
+    outPath: "/output/normalized.xlsx",
+    outStorageName: "MyStorage",
+    region: "en-US"
+);
+```
 {{</tab>}}
 {{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_UpdateWordCase.java" >}}
+```java
+// Requires Aspose.Cells Cloud SDK for Java v23.12+
+CellsApi cellsApi = new CellsApi(clientId, clientSecret);
+File response = cellsApi.cellsUpdateWordCase(
+    "input.xlsx",
+    "ProperCase",
+    "Sheet1",
+    "A1:A10",
+    "/output/normalized.xlsx",
+    "MyStorage",
+    "en-US",
+    null
+);
+```
 {{</tab>}}
 {{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_UpdateWordCase.php" >}}
+```php
+// Requires Aspose.Cells Cloud SDK for PHP v23.12+
+$cellsApi = new CellsApi($clientId, $clientSecret);
+$response = $cellsApi->cellsUpdateWordCase(
+    "input.xlsx",
+    "ProperCase",
+    "Sheet1",
+    "A1:A10",
+    "/output/normalized.xlsx",
+    "MyStorage",
+    "en-US"
+);
+```
 {{</tab>}}
 {{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_UpdateWordCase.rb" >}}
+```ruby
+# Requires Aspose.Cells Cloud SDK for Ruby v23.12+
+cells_api = AsposeCellsCloud::CellsApi.new(client_id, client_secret)
+response = cells_api.cells_update_word_case(
+  "input.xlsx",
+  "ProperCase",
+  "Sheet1",
+  "A1:A10",
+  "/output/normalized.xlsx",
+  "MyStorage",
+  "en-US"
+)
+```
 {{</tab>}}
 {{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_UpdateWordCase.ts" >}}
+```typescript
+// Requires Aspose.Cells Cloud SDK for Node.js v23.12+
+const cellsApi = new CellsApi(clientId, clientSecret);
+const response = await cellsApi.cellsUpdateWordCase(
+  "input.xlsx",
+  "ProperCase",
+  "Sheet1",
+  "A1:A10",
+  "/output/normalized.xlsx",
+  "MyStorage",
+  "en-US"
+);
+```
 {{</tab>}}
 {{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_UpdateWordCase.py" >}}
+```python
+# Requires Aspose.Cells Cloud SDK for Python v23.12+
+cells_api = CellsApi(client_id, client_secret)
+response = cells_api.cells_update_word_case(
+    "input.xlsx",
+    "ProperCase",
+    "Sheet1",
+    "A1:A10",
+    "/output/normalized.xlsx",
+    "MyStorage",
+    "en-US"
+)
+```
 {{</tab>}}
 {{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_UpdateWordCase.pl" >}}
+```perl
+# Requires Aspose.Cells Cloud SDK for Perl v23.12+
+my $cells_api = AsposeCellsCloud::API::CellsApi->new(
+    -client_id => $client_id,
+    -client_secret => $client_secret
+);
+my $response = $cells_api->cells_update_word_case(
+    "input.xlsx",
+    "ProperCase",
+    "Sheet1",
+    "A1:A10",
+    "/output/normalized.xlsx",
+    "MyStorage",
+    "en-US"
+);
+```
 {{</tab>}}
 {{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_UpdateWordCase.go" >}}
+```go
+// Requires Aspose.Cells Cloud SDK for Go v23.12+
+cellsApi, _, _ := NewClient(ctx, clientId, clientSecret)
+response, _, _ := cellsApi.CellsUpdateWordCase(
+    context.Background(),
+    "input.xlsx",
+    "ProperCase",
+    "Sheet1",
+    "A1:A10",
+    "/output/normalized.xlsx",
+    "MyStorage",
+    "en-US",
+    nil,
+)
+```
 {{</tab>}}
-{{< /tabs >}}
+{{</tabs>}}
+
+## OpenAPI Specification
+
+View and test the endpoint interactively in the [Swagger UI](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/UpdateWordCase).
+
+## Best Practices
+
+- **Use `region` for localization**: Specify locale (e.g., `tr-TR`) when handling languages with special casing rules.  
+- **Limit `range` for performance**: Specify explicit cell ranges instead of entire sheets for large workbooks.  
+- **Validate file types**: Upload only supported formats (XLSX, XLS, ODS, CSV, etc.) to avoid parsing errors.  
+- **Store output securely**: Use `outPath` and `outStorageName` to manage access-controlled output locations.
+
+## FAQ
+
+**Q: Does this API modify formulas?**  
+A: No. Only the *values* of string-type cells are changed; formulas, formatting, and data validation are preserved.
+
+**Q: Can I convert case in protected worksheets?**  
+A: Yes—if the workbook is unlocked with the correct password via the `password` parameter.
+
+**Q: What happens to blank or numeric cells?**  
+A: They are skipped—only text cells are processed.
+
+**Q: Is `region` required for English text?**  
+A: Not strictly, but specifying `en-US` ensures consistent capitalization rules, especially for sentence detection.
+
+**Q: How can I track how many cells were updated?**  
+A: The API returns the full workbook; use the SDK’s response metadata or post-process the file to count changes.
+
+---
+
+*Updated: April 2024*  
+{{< /noindex >}}

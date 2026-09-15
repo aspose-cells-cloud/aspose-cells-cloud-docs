@@ -1,38 +1,60 @@
 ---
-title: "Working with Excel worksheets."
-second_title: "Document"
+title: "Working with Excel Worksheets – Aspose.Cells Cloud Documentation"
 linktitle: "Worksheets"
 type: docs
-url: /worksheets/
-aliases: [/working-with-worksheets/]
-keywords: "Excel worksheet, Aspose.Cells Cloud, REST API, spreadsheet, workbook, data manipulation, Excel automation"
-description: "Aspose.Cells Cloud REST API enables working with worksheets in an Excel workbook. The SDK supports multiple programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+url: /cells/worksheets/
+aliases: [/cells/worksheets/, /working-with-worksheets/]
+keywords: "REST API endpoint, Aspose.Cells Cloud SDK Python, Excel worksheet automation, HCL formula calculation, Excel worksheet operations, workbook manipulation, Aspose.Cells Cloud REST API"
+description: "Comprehensive guide to Excel worksheet operations using Aspose.Cells Cloud REST API. Learn to add, delete, rename, hide, freeze panes, and export worksheets via SDKs."
+date: 2024-03-15T10:00:00Z
 weight: 100
 ArticleTitle: "Working with Excel Worksheets – Aspose.Cells Cloud Documentation"
 ---
 
 A worksheet is a collection of cells where you store and manipulate data. Each Excel workbook can contain multiple worksheets.
 
-**Worksheet Operations**
+## Prerequisites
 
-- [How to get Excel worksheets](/cells/worksheets/get-all/)
-- [How to get an Excel worksheet in different formats](/cells/worksheets/get/)
-- [How to get an Excel worksheet area in different formats](/cells/worksheets/area-to-different-formats/)
-- [How to get an Excel worksheet page in different formats](/cells/get-worksheet-for-page-index/)
-- [How to convert an Excel worksheet to an image](/cells/worksheets/to-image/)
-- [How to add an Excel worksheet](/cells/worksheets/add/)
-- [How to add a background to an Excel worksheet](/cells/worksheets/background/add/)
-- [How to sort data in an Excel worksheet](/cells/worksheets/sort-data/)
-- [How to hide an Excel worksheet](/cells/worksheets/hide/)
-- [How to unhide an Excel worksheet](/cells/worksheets/unhide/)
-- [How to move an Excel worksheet](/cells/worksheets/move/)
-- [How to calculate an Excel formula](/cells/worksheets/calculate-formula/)
-- [How to copy an Excel worksheet](/cells/worksheets/copy/)
-- [How to rename an Excel worksheet](/cells/worksheets/rename/)
-- [How to update Excel worksheet properties](/cells/worksheets/update-properties/)
-- [How to set Excel worksheet zoom](/cells/worksheets/zoom/)
-- [How to freeze panes in an Excel worksheet](/cells/worksheets/freeze-panes/)
-- [How to unfreeze panes in an Excel worksheet](/cells/worksheets/unfreeze-panes/)
-- [How to delete an Excel worksheet](/cells/worksheets/delete/)
-- [How to delete a background from an Excel worksheet](/cells/worksheets/background/delete/)
-- [How to autofit an Excel workbook](/cells/worksheets/autofit/)
+- An Aspose.Cells Cloud API key and SID (see [Get Your API Keys](https://docs.aspose.cloud/cells/getting-started/)).  
+- Supported SDK languages: Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift.
+
+All operations described below are performed via the Aspose.Cells Cloud REST API. SDK wrappers simplify integration across supported programming languages.
+
+## Retrieve & Export
+
+- [List all worksheets in a workbook](/cells/worksheets/get-all/)  
+- [Retrieve a specific worksheet by name](/cells/worksheets/get/)  
+- [Export worksheet area to image](/cells/worksheets/to-image/)  
+- [Export worksheet area to different formats](/cells/worksheets/area-to-different-formats/)  
+- [Export a specific worksheet page to different formats](/cells/get-worksheet-for-page-index/)  
+
+## Modify
+
+- [Add a worksheet](/cells/worksheets/add/)  
+- [Add a background to a worksheet](/cells/worksheets/background/add/)  
+- [Rename a worksheet](/cells/worksheets/rename/)  
+- [Copy a worksheet](/cells/worksheets/copy/)  
+- [Move a worksheet within the workbook](/cells/worksheets/move/)  
+- [Delete a worksheet](/cells/worksheets/delete/)  
+- [Remove background from a worksheet](/cells/worksheets/background/delete/)  
+
+## Formatting & Layout
+
+- [Freeze panes in a worksheet](/cells/worksheets/freeze-panes/)  
+- [Unfreeze panes in a worksheet](/cells/worksheets/unfreeze-panes/)  
+- [Hide a worksheet](/cells/worksheets/hide/)  
+- [Unhide a worksheet](/cells/worksheets/unhide/)  
+- [Set zoom level for a worksheet](/cells/worksheets/zoom/)  
+- [Autofit workbook rows and columns](/cells/worksheets/autofit/)  
+
+## Data Operations
+
+- [Sort data in a worksheet](/cells/worksheets/sort-data/)  
+- [Calculate formulas in a worksheet](/cells/worksheets/calculate-formula/)  
+- [Update worksheet properties](/cells/worksheets/update-properties/)  
+
+## See Also
+
+- [Working with Excel workbooks](/cells/workbooks/)  
+- [Working with cells and ranges](/cells/cells/)  
+- [Aspose.Cells Cloud SDKs repository](https://github.com/aspose-cells-cloud)

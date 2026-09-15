@@ -3,9 +3,11 @@ title: "Get MinColumn from Excel Worksheet"
 type: docs
 url: /get-mincolumn-from-excel-worksheet/
 weight: 100
-keywords: Excel, Aspose.Cells Cloud, REST API, Get MinColumn, Worksheet, SDK, Cloud API
-description: Retrieve the minimum column index containing data in a worksheet of an Excel file via the Aspose.Cells Cloud REST API.
+date: 2024-05-10
+keywords: "Excel API, REST API tutorial, cloud spreadsheet SDK, Aspose.Cells Cloud, Get MinColumn, Worksheet, SDK, Cloud API"
+description: "Learn how to programmatically retrieve the minimum column index with data in an Excel worksheet using Aspose.Cells Cloud REST API, including cURL and SDK examples."
 ArticleTitle: "Get MinColumn from Excel Worksheet - Aspose.Cells Cloud API"
+robots: index, follow
 ---
 
 This REST API returns the minimum column index that contains data in an Excel worksheet when the `cellOrMethodName` parameter is set to `mincolumn`.
@@ -18,7 +20,7 @@ This REST API returns the minimum column index that contains data in an Excel wo
 
 ```bash
 curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" \
-     -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>" \
+     -H "Authorization: Bearer `YOUR_ACCESS_TOKEN`" \
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
 ```
@@ -64,7 +66,9 @@ Typical HTTP status codes:
 
 - **Use Aspose.Cells Cloud SDKs**
 
-Using an SDK is the most efficient way to develop. An SDK abstracts low‑level details, allowing you to focus on your project logic. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the most efficient way to develop. An SDK abstracts low‑level details, allowing you to focus on your project logic. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer" target="_blank">Aspose.Cells Cloud SDKs on GitHub</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+> All SDK examples are compatible with the latest stable release (v23.12+). For older versions, consult the [version matrix](#).
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
@@ -113,6 +117,8 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
+{{< note >}}Swift example coming soon.{{< /note >}}
 
 {{< /tab >}}
 
