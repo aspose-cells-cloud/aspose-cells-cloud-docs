@@ -14,22 +14,23 @@ ArticleTitle: "Add or Delete Worksheet Background Image with Aspose.Cells Cloud 
 
 **Overview:** A worksheet background is an image that appears behind the cells of a worksheet, useful for branding or visual cues. Aspose.Cells Cloud API lets you add or delete this background image programmatically.
 
-**Prerequisites:**  
-- Valid Aspose.Cells Cloud access token (OAuth 2.0).  
-- An Excel workbook stored in the cloud.  
+**Prerequisites:**
+
+- Valid Aspose.Cells Cloud access token (OAuth 2.0).
+- An Excel workbook stored in the cloud.
 - An image file (PNG, JPEG, BMP) for the background.
 
-- **Add background** – Set a background image on a worksheet. See the detailed guide [How to set background on an Excel worksheet](/cells/worksheets/background/add/).  
+- **Add background** – Set a background image on a worksheet. See the detailed guide [How to set background on an Excel worksheet](/cells/worksheets/background/add/).
 - **Delete background** – Remove an existing background image from a worksheet. See the detailed guide [How to delete background on an Excel worksheet](/cells/worksheets/background/delete/).
 
 Using a worksheet background can improve branding, highlight important sections, or provide visual cues for end‑users. The Aspose.Cells Cloud API makes it straightforward to set or clear this background image directly from your application.
 
 ### API reference
 
-| Operation | HTTP Method | Endpoint | Path parameters | Request body | Success response |
-|-----------|-------------|----------|----------------|--------------|------------------|
-| Add background | PUT | `/cells/{name}/worksheets/{sheetName}/background` | `name` – workbook file name<br>`sheetName` – target worksheet | Image file (PNG, JPEG, BMP) as multipart/form‑data | `200 OK` – background applied |
-| Delete background | DELETE | `/cells/{name}/worksheets/{sheetName}/background` | `name` – workbook file name<br>`sheetName` – target worksheet | *none* | `200 OK` – background removed |
+| Operation         | HTTP Method | Endpoint                                          | Path parameters                                               | Request body                                       | Success response              |
+| ----------------- | ----------- | ------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------- | ----------------------------- |
+| Add background    | PUT         | `/cells/{name}/worksheets/{sheetName}/background` | `name` – workbook file name<br>`sheetName` – target worksheet | Image file (PNG, JPEG, BMP) as multipart/form‑data | `200 OK` – background applied |
+| Delete background | DELETE      | `/cells/{name}/worksheets/{sheetName}/background` | `name` – workbook file name<br>`sheetName` – target worksheet | _none_                                             | `200 OK` – background removed |
 
 #### Example (Java SDK)
 
@@ -59,7 +60,8 @@ api.delete_worksheet_background("Book1.xlsx", "Sheet1")
 
 For additional language examples (C#, PHP, Ruby), refer to the SDK documentation.
 
-**Related topics**  
-- Learn more about managing worksheets in general: [Worksheets overview](/cells/worksheets/).  
-- Understand how to authenticate with Aspose.Cells Cloud: [API authentication guide](/cells/authentication/).  
+**Related topics**
+
+- Learn more about managing worksheets in general: [Worksheets overview](/cells/worksheets/).
+- Understand how to authenticate with Aspose.Cells Cloud: [API authentication guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）.
 - Explore other spreadsheet elements such as charts, tables, and formulas: [Spreadsheet elements index](/cells/elements/).

@@ -17,12 +17,12 @@ Aspose.Cells Cloud provides a robust REST endpoint that converts Excel workbooks
 
 ## Prerequisites
 
-| Requirement              | How to satisfy                                                                                                                           |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| **Aspose Cloud account** | Sign‑up at [aspose.cloud](https://www.aspose.cloud)                                                                                      |
-| **JWT access token**     | Obtain a bearer token via the OAuth 2.0 `POST /connect/token` endpoint. See [Authentication](/cells/authentication/) for details.      |
-| **Storage (optional)**   | If you want the API to read/write files from a specific storage, create it first (e.g., Amazon S3, Azure Blob, or Aspose Cloud storage). |
-| **cURL / SDK**           | Any HTTP client capable of multipart/form-data (cURL, Postman, or one of the Aspose.Cells SDKs).                                        |
+| Requirement              | How to satisfy                                                                                                                                                                                              |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Aspose Cloud account** | Sign‑up at [aspose.cloud](https://www.aspose.cloud)                                                                                                                                                         |
+| **JWT access token**     | Obtain a bearer token via the OAuth 2.0 `POST /connect/token` endpoint. See [Authentication]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/） for details. |
+| **Storage (optional)**   | If you want the API to read/write files from a specific storage, create it first (e.g., Amazon S3, Azure Blob, or Aspose Cloud storage).                                                                    |
+| **cURL / SDK**           | Any HTTP client capable of multipart/form-data (cURL, Postman, or one of the Aspose.Cells SDKs).                                                                                                            |
 
 ## Authentication
 
@@ -74,16 +74,16 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/html?checkExcelRestric
 
 ### SDK Examples
 
-| Language | Code |
-|----------|------|
-| **C#** | ```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar apiInstance = new ConversionApi();\nvar file = File.ReadAllBytes("your.xlsx");\nvar result = apiInstance.PostConvertWorkbookToHtml(\n    file, \n    password: null, \n    checkExcelRestriction: true,\n    region: "en-US",\n    fontsLocation: "/fonts"\n);\nConsole.WriteLine(result.Filename);\n``` |
-| **Java** | ```java\nConversionApi api = new ConversionApi();\nFile file = new File("your.xlsx");\nFileInfo info = api.postConvertWorkbookToHtml(\n    file, \n    null, \n    true,\n    "en-US",\n    "/fonts"\n);\nSystem.out.println(info.getFilename());\n``` |
-| **Python** | ```python\nfrom asposecellscloud import ConversionApi\napi = ConversionApi()\nwith open('your.xlsx', 'rb') as f:\n    file_info = api.post_convert_workbook_to_html(\n        file=f.read(),\n        password=None,\n        check_excel_restriction=True,\n        region="en-US",\n        fonts_location="/fonts"\n    )\nprint(file_info.filename)\n``` |
-| **Node.js** | ```javascript\nconst { ConversionApi } = require('asposecellscloud');\nconst api = new ConversionApi();\nconst fs = require('fs');\napi.postConvertWorkbookToHtml({\n  File: fs.createReadStream('your.xlsx'),\n  password: null,\n  checkExcelRestriction: true,\n  region: 'en-US',\n  fontsLocation: '/fonts'\n}).then(info => console.log(info.Filename));\n``` |
-| **Go** | ```go\nimport (\n    "asposecellscloud"\n    "os"\n)\nfunc main() {\n    api := asposecellscloud.NewConversionApi()\n    f, _ := os.Open("your.xlsx")\n    info, _ := api.PostConvertWorkbookToHtml(\n        f, \n        nil, \n        true,\n        "en-US",\n        "/fonts"\n    )\n    fmt.Println(info.Filename)\n}\n``` |
-| **PHP** | ```php\nuse Aspose\Cells\ConversionApi;\n$api = new ConversionApi();\n$file = fopen('your.xlsx', 'r');\n$info = $api->postConvertWorkbookToHtml(\n    $file,\n    null,\n    true,\n    "en-US",\n    "/fonts"\n);\necho $info->getFilename();\n``` |
-| **Ruby** | ```ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::ConversionApi.new\nfile = File.open('your.xlsx')\ninfo = api.post_convert_workbook_to_html(\n  file: file,\n  password: nil,\n  check_excel_restriction: true,\n  region: 'en-US',\n  fonts_location: '/fonts'\n)\nputs info.filename\n``` |
-| **Perl** | ```perl\nuse Aspose::Cells::ConversionApi;\nmy $api = Aspose::Cells::ConversionApi->new();\nopen my $fh, '<', 'your.xlsx' or die $!;\nmy $info = $api->post_convert_workbook_to_html(\n  file => $fh,\n  password => undef,\n  check_excel_restriction => 1,\n  region => 'en-US',\n  fonts_location => '/fonts'\n);\nprint $info->{Filename};\n``` |
+| Language    | Code                                                                                                                                                                                                                                                                                                                                                                                          |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **C#**      | `csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar apiInstance = new ConversionApi();\nvar file = File.ReadAllBytes("your.xlsx");\nvar result = apiInstance.PostConvertWorkbookToHtml(\n    file, \n    password: null, \n    checkExcelRestriction: true,\n    region: "en-US",\n    fontsLocation: "/fonts"\n);\nConsole.WriteLine(result.Filename);\n` |
+| **Java**    | `java\nConversionApi api = new ConversionApi();\nFile file = new File("your.xlsx");\nFileInfo info = api.postConvertWorkbookToHtml(\n    file, \n    null, \n    true,\n    "en-US",\n    "/fonts"\n);\nSystem.out.println(info.getFilename());\n`                                                                                                                                            |
+| **Python**  | `python\nfrom asposecellscloud import ConversionApi\napi = ConversionApi()\nwith open('your.xlsx', 'rb') as f:\n    file_info = api.post_convert_workbook_to_html(\n        file=f.read(),\n        password=None,\n        check_excel_restriction=True,\n        region="en-US",\n        fonts_location="/fonts"\n    )\nprint(file_info.filename)\n`                                      |
+| **Node.js** | `javascript\nconst { ConversionApi } = require('asposecellscloud');\nconst api = new ConversionApi();\nconst fs = require('fs');\napi.postConvertWorkbookToHtml({\n  File: fs.createReadStream('your.xlsx'),\n  password: null,\n  checkExcelRestriction: true,\n  region: 'en-US',\n  fontsLocation: '/fonts'\n}).then(info => console.log(info.Filename));\n`                               |
+| **Go**      | `go\nimport (\n    "asposecellscloud"\n    "os"\n)\nfunc main() {\n    api := asposecellscloud.NewConversionApi()\n    f, _ := os.Open("your.xlsx")\n    info, _ := api.PostConvertWorkbookToHtml(\n        f, \n        nil, \n        true,\n        "en-US",\n        "/fonts"\n    )\n    fmt.Println(info.Filename)\n}\n`                                                                |
+| **PHP**     | `php\nuse Aspose\Cells\ConversionApi;\n$api = new ConversionApi();\n$file = fopen('your.xlsx', 'r');\n$info = $api->postConvertWorkbookToHtml(\n    $file,\n    null,\n    true,\n    "en-US",\n    "/fonts"\n);\necho $info->getFilename();\n`                                                                                                                                               |
+| **Ruby**    | `ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::ConversionApi.new\nfile = File.open('your.xlsx')\ninfo = api.post_convert_workbook_to_html(\n  file: file,\n  password: nil,\n  check_excel_restriction: true,\n  region: 'en-US',\n  fonts_location: '/fonts'\n)\nputs info.filename\n`                                                                                         |
+| **Perl**    | `perl\nuse Aspose::Cells::ConversionApi;\nmy $api = Aspose::Cells::ConversionApi->new();\nopen my $fh, '<', 'your.xlsx' or die $!;\nmy $info = $api->post_convert_workbook_to_html(\n  file => $fh,\n  password => undef,\n  check_excel_restriction => 1,\n  region => 'en-US',\n  fonts_location => '/fonts'\n);\nprint $info->{Filename};\n`                                               |
 
 > **Tip**: For full SDK installation instructions, see the [Aspose.Cells Cloud SDKs repository](https://github.com/aspose-cells-cloud).
 
@@ -109,14 +109,14 @@ The response schema is defined by the **FileInfo** model: [/cells/file-info](/ce
 
 ## Error Responses
 
-| Code  | Meaning                                                    | Example Payload                                                                                         |
-| ----- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `400` | Bad Request – missing/invalid parameters                   | `{ "Code": "BadRequest", "Message": "The 'File' part is required." }`                                  |
-| `401` | Unauthorized – invalid or missing JWT token                | `{ "Code": "InvalidToken", "Message": "Access token is missing or expired." }`                         |
-| `404` | Not Found – source file not found in the specified storage | `{ "Code": "FileNotFound", "Message": "File 'my.xlsx' does not exist in storage 'MyStorage'." }`       |
-| `413` | Payload Too Large – uploaded file exceeds the allowed size | `{ "Code": "RequestEntityTooLarge", "Message": "Uploaded file exceeds the 100 MB limit." }`            |
-| `429` | Too Many Requests – rate limit exceeded                    | `{ "Code": "TooManyRequests", "Message": "Rate limit of 60 calls per minute exceeded." }`              |
-| `500` | Internal Server Error – unexpected server condition        | `{ "Code": "InternalError", "Message": "An unexpected error occurred. Please try again later." }`      |
+| Code  | Meaning                                                    | Example Payload                                                                                   |
+| ----- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `400` | Bad Request – missing/invalid parameters                   | `{ "Code": "BadRequest", "Message": "The 'File' part is required." }`                             |
+| `401` | Unauthorized – invalid or missing JWT token                | `{ "Code": "InvalidToken", "Message": "Access token is missing or expired." }`                    |
+| `404` | Not Found – source file not found in the specified storage | `{ "Code": "FileNotFound", "Message": "File 'my.xlsx' does not exist in storage 'MyStorage'." }`  |
+| `413` | Payload Too Large – uploaded file exceeds the allowed size | `{ "Code": "RequestEntityTooLarge", "Message": "Uploaded file exceeds the 100 MB limit." }`       |
+| `429` | Too Many Requests – rate limit exceeded                    | `{ "Code": "TooManyRequests", "Message": "Rate limit of 60 calls per minute exceeded." }`         |
+| `500` | Internal Server Error – unexpected server condition        | `{ "Code": "InternalError", "Message": "An unexpected error occurred. Please try again later." }` |
 
 ## Rate Limits
 
@@ -132,26 +132,26 @@ The response schema is defined by the **FileInfo** model: [/cells/file-info](/ce
 
 ## Related Endpoints
 
-| Endpoint                    | Description                                                                                             |
-| --------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `POST /cells/{name}/saveAs` | Save an existing Excel file as HTML (or other formats) directly to storage.                             |
-| `GET /cells/{name}`         | Retrieve a workbook already stored as HTML (or other formats) with optional query parameters.           |
+| Endpoint                    | Description                                                                                   |
+| --------------------------- | --------------------------------------------------------------------------------------------- |
+| `POST /cells/{name}/saveAs` | Save an existing Excel file as HTML (or other formats) directly to storage.                   |
+| `GET /cells/{name}`         | Retrieve a workbook already stored as HTML (or other formats) with optional query parameters. |
 
 ## Frequently Asked Questions
 
-**Q:** *How do I authenticate when calling the Excel‑to‑HTML conversion API?*  
+**Q:** _How do I authenticate when calling the Excel‑to‑HTML conversion API?_  
 **A:** Include an `Authorization: Bearer <access-token>` header obtained from the OAuth 2.0 `/connect/token` endpoint.
 
-**Q:** *What does the `FileInfo` response contain?*  
+**Q:** _What does the `FileInfo` response contain?_  
 **A:** Three fields – `Filename` (string), `FileSize` (integer, bytes), and `FileContent` (Base64‑encoded HTML content).
 
-**Q:** *Which error codes might I encounter?*  
+**Q:** _Which error codes might I encounter?_  
 **A:** `400` (Bad Request), `401` (Unauthorized), `404` (File Not Found), `413` (Payload Too Large), `429` (Too Many Requests), `500` (Internal Server Error). Each returns a JSON payload with `Code` and `Message`.
 
-**Q:** *Can I specify a custom font location?*  
+**Q:** _Can I specify a custom font location?_  
 **A:** Yes. Use the `FontsLocation` query parameter to point to a folder or URL that contains the required fonts.
 
-**Q:** *Is there a rate‑limit for this operation?*  
+**Q:** _Is there a rate‑limit for this operation?_  
 **A:** The default limit is **60 calls per minute** per account. Exceeding it returns `429 Too Many Requests`.
 
 ## Change Log

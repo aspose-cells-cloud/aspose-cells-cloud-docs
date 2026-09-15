@@ -41,11 +41,11 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 **Request details**
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `cellOrMethodName` | string | Yes | Fixed value `mincolumn` to indicate the operation. |
-| `folder` | string | No | Path to the folder containing the workbook (if not the root). |
-| `storageName` | string | No | Name of the Aspose Cloud storage to use. |
+| Parameter          | Type   | Required | Description                                                   |
+| ------------------ | ------ | -------- | ------------------------------------------------------------- |
+| `cellOrMethodName` | string | Yes      | Fixed value `mincolumn` to indicate the operation.            |
+| `folder`           | string | No       | Path to the folder containing the workbook (if not the root). |
+| `storageName`      | string | No       | Name of the Aspose Cloud storage to use.                      |
 
 **Response details**
 
@@ -59,9 +59,9 @@ The API returns a JSON object with a single property:
 
 Typical HTTP status codes:
 
-- **200 OK** – Successful request, returns the `MinColumn` value.  
-- **401 Unauthorized** – Missing or invalid authentication token.  
-- **404 Not Found** – The specified workbook, worksheet, or cell range does not exist.  
+- **200 OK** – Successful request, returns the `MinColumn` value.
+- **401 Unauthorized** – Missing or invalid authentication token.
+- **404 Not Found** – The specified workbook, worksheet, or cell range does not exist.
 - **500 Internal Server Error** – Unexpected server error.
 
 - **Use Aspose.Cells Cloud SDKs**
@@ -118,7 +118,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="8" >}}
 
-{{< note >}}Swift example coming soon.{{< /note >}}
+Swift example coming soon.
 
 {{< /tab >}}
 

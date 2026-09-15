@@ -11,7 +11,7 @@ weight: 50
 # Delete All Worksheet Comments
 
 **API version:** `v3.0`  
-**Resource:** `Worksheets` → `DeleteWorksheetComments`  
+**Resource:** `Worksheets` → `DeleteWorksheetComments`
 
 Aspose.Cells Cloud provides a robust REST endpoint that removes **all** comments from a specified worksheet. This operation is irreversible; once executed, the comments cannot be recovered.
 
@@ -19,12 +19,12 @@ Aspose.Cells Cloud provides a robust REST endpoint that removes **all** comments
 
 ## Prerequisites
 
-| Requirement | Details |
-|-------------|---------|
-| **Authentication** | A valid JWT access token is required in the `Authorization` header (`Bearer <jwt token>`). Obtain the token via the [OAuth2 authentication flow](https://docs.aspose.cloud/cells/authentication/). |
-| **Storage** | The file must reside in a storage that is accessible to Aspose.Cells Cloud (default storage is used if `storageName` is omitted). |
-| **Permissions** | The token must have permission to read and write the target file. |
-| **SDKs (optional)** | SDKs are available for .NET, Java, PHP, Ruby, Node.js, Python, Perl, and Go (see **SDK Examples** section). |
+| Requirement         | Details                                                                                                                                                                                                                                             |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Authentication**  | A valid JWT access token is required in the `Authorization` header (`Bearer <jwt token>`). Obtain the token via the [OAuth2 authentication flow]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）. |
+| **Storage**         | The file must reside in a storage that is accessible to Aspose.Cells Cloud (default storage is used if `storageName` is omitted).                                                                                                                   |
+| **Permissions**     | The token must have permission to read and write the target file.                                                                                                                                                                                   |
+| **SDKs (optional)** | SDKs are available for .NET, Java, PHP, Ruby, Node.js, Python, Perl, and Go (see **SDK Examples** section).                                                                                                                                         |
 
 ---
 
@@ -38,25 +38,25 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comment
 
 ### Path Parameters
 
-| Name      | Type   | Description |
-|-----------|--------|-------------|
-| `name`    | string | Name of the Excel file (e.g., `test.xlsx`). |
-| `sheetName` | string | Name of the worksheet (e.g., `Sheet1`). |
+| Name        | Type   | Description                                 |
+| ----------- | ------ | ------------------------------------------- |
+| `name`      | string | Name of the Excel file (e.g., `test.xlsx`). |
+| `sheetName` | string | Name of the worksheet (e.g., `Sheet1`).     |
 
 ### Query Parameters
 
-| Name        | Type   | Required | Description |
-|-------------|--------|----------|-------------|
-| `folder`    | string | optional | Path to the folder that contains the file. |
+| Name          | Type   | Required | Description                                    |
+| ------------- | ------ | -------- | ---------------------------------------------- |
+| `folder`      | string | optional | Path to the folder that contains the file.     |
 | `storageName` | string | optional | Name of the storage where the file is located. |
 
 ### Request Headers
 
-| Header                | Value                              |
-|-----------------------|------------------------------------|
-| `Authorization`       | `Bearer <jwt token>`               |
-| `Accept`              | `application/json`                |
-| `Content-Type`        | `application/json`                |
+| Header          | Value                |
+| --------------- | -------------------- |
+| `Authorization` | `Bearer <jwt token>` |
+| `Accept`        | `application/json`   |
+| `Content-Type`  | `application/json`   |
 
 ---
 
@@ -70,7 +70,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
   -H "Authorization: Bearer <jwt token>"
 ```
 
-*Replace `test.xlsx`, `Sheet1`, `Documents`, `MyStorage`, and `<jwt token>` with your actual values.*
+_Replace `test.xlsx`, `Sheet1`, `Documents`, `MyStorage`, and `<jwt token>` with your actual values._
 
 ---
 
@@ -89,12 +89,12 @@ The response body conforms to the `CellsCloudResponse` model.
 
 ### Error Responses
 
-| HTTP Code | Meaning                     | Example Body |
-|-----------|----------------------------|--------------|
-| **400**   | Bad request – invalid parameters. | `{ "Code": 400, "Message": "Invalid request." }` |
-| **401**   | Unauthorized – missing/invalid JWT token. | `{ "Code": 401, "Message": "Authentication failed." }` |
-| **404**   | Not found – file or worksheet does not exist. | `{ "Code": 404, "Message": "Resource not found." }` |
-| **500**   | Internal server error. | `{ "Code": 500, "Message": "Server error." }` |
+| HTTP Code | Meaning                                       | Example Body                                           |
+| --------- | --------------------------------------------- | ------------------------------------------------------ |
+| **400**   | Bad request – invalid parameters.             | `{ "Code": 400, "Message": "Invalid request." }`       |
+| **401**   | Unauthorized – missing/invalid JWT token.     | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404**   | Not found – file or worksheet does not exist. | `{ "Code": 404, "Message": "Resource not found." }`    |
+| **500**   | Internal server error.                        | `{ "Code": 500, "Message": "Server error." }`          |
 
 ---
 
@@ -102,7 +102,7 @@ The response body conforms to the `CellsCloudResponse` model.
 
 The following snippets demonstrate how to call the endpoint with the official Aspose.Cells Cloud SDKs (version 3.13.0). Replace placeholder values (`<fileName>`, `<sheet>`, `<jwt token>`, etc.) with your own data.
 
-### C#  
+### C#
 
 ```csharp
 using Aspose.Cells.Cloud.SDK.Api;
@@ -125,7 +125,7 @@ catch (Exception e)
 }
 ```
 
-### Java  
+### Java
 
 ```java
 import com.aspose.cells.cloud.sdk.api.WorksheetsApi;
@@ -149,7 +149,7 @@ public class DeleteWorksheetComments {
 }
 ```
 
-### PHP  
+### PHP
 
 ```php
 <?php
@@ -172,7 +172,7 @@ try {
 ?>
 ```
 
-### Ruby  
+### Ruby
 
 ```ruby
 require 'aspose_cells_cloud'
@@ -191,7 +191,7 @@ rescue AsposeCellsCloud::ApiError => e
 end
 ```
 
-### Node.js (TypeScript)  
+### Node.js (TypeScript)
 
 ```typescript
 import { WorksheetsApi } from "@asposecloud/cells-sdk";
@@ -202,12 +202,13 @@ const sheetName = "Sheet1";
 const folder = "Documents";
 const storageName = "MyStorage";
 
-api.deleteWorksheetComments(name, sheetName, folder, storageName)
-    .then((response) => console.log(response.status))
-    .catch((error) => console.error("Error:", error));
+api
+  .deleteWorksheetComments(name, sheetName, folder, storageName)
+  .then((response) => console.log(response.status))
+  .catch((error) => console.error("Error:", error));
 ```
 
-### Python  
+### Python
 
 ```python
 from asposecellscloud import WorksheetsApi
@@ -225,7 +226,7 @@ except Exception as e:
     print("Exception when calling WorksheetsApi->delete_worksheet_comments:", e)
 ```
 
-### Perl  
+### Perl
 
 ```perl
 use AsposeCellsCloud::Api::WorksheetsApi;
@@ -251,7 +252,7 @@ if ($@) {
 }
 ```
 
-### Go  
+### Go
 
 ```go
 package main
@@ -284,20 +285,20 @@ func main() {
 
 ## Notes & Limitations
 
-* This operation **deletes every comment** in the specified worksheet. Use it with caution—there is no undo.
-* The request does **not** accept a request body; all required information is conveyed via the URL and headers.
-* If the target file is **protected** or the worksheet is **read‑only**, the API will return a `400` or `401` error depending on the underlying cause.
-* The endpoint works with files stored in **Aspose Cloud Storage** as well as with **Amazon S3**, **Azure Blob**, or **Google Cloud Storage** when correctly referenced via `storageName`.
+- This operation **deletes every comment** in the specified worksheet. Use it with caution—there is no undo.
+- The request does **not** accept a request body; all required information is conveyed via the URL and headers.
+- If the target file is **protected** or the worksheet is **read‑only**, the API will return a `400` or `401` error depending on the underlying cause.
+- The endpoint works with files stored in **Aspose Cloud Storage** as well as with **Amazon S3**, **Azure Blob**, or **Google Cloud Storage** when correctly referenced via `storageName`.
 
 ---
 
 ## Related Resources
 
-* **OpenAPI Specification** – [DeleteWorksheetComments](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComments)
-* **Authentication Guide** – [OAuth2 for Aspose.Cells Cloud](https://docs.aspose.cloud/cells/authentication/)
-* **SDK Repository** – <https://github.com/aspose-cells-cloud>
-* **General Worksheets API** – <https://docs.aspose.cloud/cells/worksheets/>
+- **OpenAPI Specification** – [DeleteWorksheetComments](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComments)
+- **Authentication Guide** – [OAuth2 for Aspose.Cells Cloud]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）
+- **SDK Repository** – <https://github.com/aspose-cells-cloud>
+- **General Worksheets API** – <https://docs.aspose.cloud/cells/worksheets/>
 
 ---
 
-*Last updated: 2026‑07‑30*
+_Last updated: 2026‑07‑30_

@@ -25,9 +25,6 @@ Convert Excel table data to **JSON** in a single API call using Aspose.Cells Clo
 PUT https://api.aspose.cloud/v4.0/cells/convert/table/json
 ```
 
-{{< badge type="info" text="API v4.0 (Stable)" >}}  
-*Introduced March 2024. v3.x endpoints are deprecated.*
-
 ## **Authentication**
 
 All requests require a valid [JWT access token](https://docs.aspose.cloud/total/getting-started/). Obtain your `Client ID` and `Client Secret` from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/), then generate a token using the [OAuth 2.0 flow](https://docs.aspose.cloud/total/getting-started/quickstart/).
@@ -36,18 +33,18 @@ All requests require a valid [JWT access token](https://docs.aspose.cloud/total/
 
 ## **Request Parameters**
 
-| Parameter         | Type   | Location   | Required | Description |
-|-------------------|--------|------------|----------|-------------|
-| `Spreadsheet`     | File   | FormData   | ✅ Yes   | The local Excel file containing the table. |
-| `worksheet`       | String | Query      | ✅ Yes   | Name of the worksheet that contains the target table. |
-| `tableName`       | String | Query      | ✅ Yes   | Name of the table (e.g., `Table1`, `MyTable`). |
-| `outPath`         | String | Query      | ❌ No    | Folder path where the resulting JSON file will be stored in cloud storage. Defaults to `null`. |
-| `outStorageName`  | String | Query      | ❌ No    | Name of the cloud storage to use for output. Defaults to internal storage. |
-| `fontsLocation`   | String | Query      | ❌ No    | Custom font folder path for rendering. |
-| `region`          | String | Query      | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`). Affects number/date formatting. |
-| `password`        | String | Query      | ❌ No    | Password for protected workbooks. |
-| `AutoRowsFit`     | Boolean| Query      | ❌ No    | Auto-fit rows in the worksheet during conversion. |
-| `AutoColumnsFit`  | Boolean| Query      | ❌ No    | Auto-fit columns in the worksheet during conversion. |
+| Parameter        | Type    | Location | Required | Description                                                                                    |
+| ---------------- | ------- | -------- | -------- | ---------------------------------------------------------------------------------------------- |
+| `Spreadsheet`    | File    | FormData | ✅ Yes   | The local Excel file containing the table.                                                     |
+| `worksheet`      | String  | Query    | ✅ Yes   | Name of the worksheet that contains the target table.                                          |
+| `tableName`      | String  | Query    | ✅ Yes   | Name of the table (e.g., `Table1`, `MyTable`).                                                 |
+| `outPath`        | String  | Query    | ❌ No    | Folder path where the resulting JSON file will be stored in cloud storage. Defaults to `null`. |
+| `outStorageName` | String  | Query    | ❌ No    | Name of the cloud storage to use for output. Defaults to internal storage.                     |
+| `fontsLocation`  | String  | Query    | ❌ No    | Custom font folder path for rendering.                                                         |
+| `region`         | String  | Query    | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`). Affects number/date formatting.                       |
+| `password`       | String  | Query    | ❌ No    | Password for protected workbooks.                                                              |
+| `AutoRowsFit`    | Boolean | Query    | ❌ No    | Auto-fit rows in the worksheet during conversion.                                              |
+| `AutoColumnsFit` | Boolean | Query    | ❌ No    | Auto-fit columns in the worksheet during conversion.                                           |
 
 ## **Response**
 
@@ -64,14 +61,14 @@ Returns a JSON object containing the converted file content:
 
 ### **HTTP Status Codes**
 
-| Code | Meaning               | Description |
-|------|-----------------------|-------------|
-| `200`| OK                    | Conversion successful. Response body contains Base64-encoded JSON. |
-| `400`| Bad Request           | Missing or invalid parameters (e.g., unsupported file format, missing `worksheet`/`tableName`). |
-| `401`| Unauthorized          | Invalid or missing JWT token. |
-| `404`| Not Found             | Source file inaccessible or table/worksheet not found. |
-| `413`| Payload Too Large     | File exceeds 2 GB limit. |
-| `500`| Internal Server Error | Unexpected server error during conversion. |
+| Code  | Meaning               | Description                                                                                     |
+| ----- | --------------------- | ----------------------------------------------------------------------------------------------- |
+| `200` | OK                    | Conversion successful. Response body contains Base64-encoded JSON.                              |
+| `400` | Bad Request           | Missing or invalid parameters (e.g., unsupported file format, missing `worksheet`/`tableName`). |
+| `401` | Unauthorized          | Invalid or missing JWT token.                                                                   |
+| `404` | Not Found             | Source file inaccessible or table/worksheet not found.                                          |
+| `413` | Payload Too Large     | File exceeds 2 GB limit.                                                                        |
+| `500` | Internal Server Error | Unexpected server error during conversion.                                                      |
 
 ## **How to Use the API**
 
@@ -125,15 +122,15 @@ The following code snippets demonstrate conversion using Aspose.Cells Cloud SDKs
 
 ## **Use Cases**
 
-- **Real-time Dashboards** – Feed JSON to Chart.js, D3.js, or Plotly from live Excel data.  
-- **Microservices Integration** – Expose Excel tables as JSON endpoints for internal services.  
-- **Webhook Payloads** – Transform spreadsheet data into JSON for event-driven workflows.  
-- **Data Prototyping** – Rapidly convert cleaned Excel data for Python/R analysis.  
-- **ML Pipelines** – Preprocess training data stored in business spreadsheets.  
-- **E-commerce Sync** – Update product catalogs or pricing on websites via JSON APIs.  
-- **Reporting Automation** – Generate JSON feeds from financial models.  
-- **App Configuration** – Manage feature flags/settings in Excel → JSON.  
-- **i18n Support** – Convert localization spreadsheets to JSON for i18n libraries.  
+- **Real-time Dashboards** – Feed JSON to Chart.js, D3.js, or Plotly from live Excel data.
+- **Microservices Integration** – Expose Excel tables as JSON endpoints for internal services.
+- **Webhook Payloads** – Transform spreadsheet data into JSON for event-driven workflows.
+- **Data Prototyping** – Rapidly convert cleaned Excel data for Python/R analysis.
+- **ML Pipelines** – Preprocess training data stored in business spreadsheets.
+- **E-commerce Sync** – Update product catalogs or pricing on websites via JSON APIs.
+- **Reporting Automation** – Generate JSON feeds from financial models.
+- **App Configuration** – Manage feature flags/settings in Excel → JSON.
+- **i18n Support** – Convert localization spreadsheets to JSON for i18n libraries.
 - **Dynamic Menus** – Store navigation structures in Excel and deploy as JSON.
 
 ## **Key Benefits**
@@ -147,9 +144,10 @@ Save cloud storage space by avoiding file uploads.
 ✅ **Modern Data Format**  
 JSON is native to web/mobile stacks (React, Vue, Angular, Flutter, etc.).
 
-✅ **Smart Data Handling**  
-- First row → JSON keys  
-- Preserves numbers, dates, booleans (not just strings)  
+✅ **Smart Data Handling**
+
+- First row → JSON keys
+- Preserves numbers, dates, booleans (not just strings)
 - Automatic structure detection (arrays/objects)
 
 ✅ **Secure & Compliant**  
@@ -157,17 +155,8 @@ All processing occurs in EU/US data centers (GDPR/ISO 27001 compliant).
 
 ## **Related APIs**
 
-| API | Description |
-|-----|-------------|
-| [Convert Workbook to JSON](/conversion/convert-workbook-to-json/) | Convert entire workbook to JSON. |
-| [Convert Range to JSON](/conversion/convert-range-to-json/) | Convert a specific cell range to JSON. |
-| [Export Chart to JSON](/conversion/export-chart-to-json/) | Extract chart data as JSON for visualization. |
-
-## **Migration Guide**
-
-Migrating from **v3.x**? See the [v3 → v4 Migration Guide](/migration/v3-to-v4/) for endpoint changes, parameter updates, and code adjustments.
-
----
-
-*Last Updated: March 15, 2024*  
-*For API reference and interactive testing, visit the [Convert Table to JSON Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToJson)*
+| API                                                               | Description                                   |
+| ----------------------------------------------------------------- | --------------------------------------------- |
+| [Convert Workbook to JSON](/conversion/convert-workbook-to-json/) | Convert entire workbook to JSON.              |
+| [Convert Range to JSON](/conversion/convert-range-to-json/)       | Convert a specific cell range to JSON.        |
+| [Export Chart to JSON](/conversion/export-chart-to-json/)         | Extract chart data as JSON for visualization. |

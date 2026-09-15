@@ -11,7 +11,7 @@ ArticleTitle: "Get Worksheet Comment – Aspose.Cells Cloud API Documentation"
 
 This REST API retrieves a worksheet comment by cell name using **Aspose.Cells Cloud**.
 
-**Prerequisites:** To call this operation you must include a valid JWT access token in the `Authorization` header (`Bearer <jwt token>`). Tokens can be obtained via the Aspose.Cells Cloud authentication flow described in the [Authentication guide](/cells/authentication/).
+**Prerequisites:** To call this operation you must include a valid JWT access token in the `Authorization` header (`Bearer <jwt token>`). Tokens can be obtained via the Aspose.Cells Cloud authentication flow described in the [Authentication guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）.
 
 ## GetWorksheetComment API
 
@@ -79,19 +79,19 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 **Response:** The API returns a JSON object containing a `Comment` object with the following fields:
 
-| Field                      | Type    | Description                                            |
-| -------------------------- | ------- | ------------------------------------------------------ |
-| `CellName`                 | string  | Address of the cell (e.g., **A1**).                    |
-| `Author`                   | string  | Name of the comment’s author.                          |
-| `HtmlNote`                 | string  | Comment content in HTML format (if any).               |
-| `Note`                     | string  | Plain‑text version of the comment.                     |
-| `AutoSize`                 | boolean | Indicates whether the comment box auto‑sizes.          |
-| `IsVisible`                | boolean | Determines if the comment is visible.                 |
-| `Width`                    | integer | Width of the comment box (in characters).              |
-| `Height`                   | integer | Height of the comment box (in characters).             |
-| `TextHorizontalAlignment` | string  | Horizontal alignment of the text (e.g., **Bottom**).   |
-| `TextOrientationType`      | string  | Orientation of the text (e.g., **TopToBottom**).       |
-| `TextVerticalAlignment`    | string  | Vertical alignment of the text (e.g., **Bottom**).     |
+| Field                     | Type    | Description                                          |
+| ------------------------- | ------- | ---------------------------------------------------- |
+| `CellName`                | string  | Address of the cell (e.g., **A1**).                  |
+| `Author`                  | string  | Name of the comment’s author.                        |
+| `HtmlNote`                | string  | Comment content in HTML format (if any).             |
+| `Note`                    | string  | Plain‑text version of the comment.                   |
+| `AutoSize`                | boolean | Indicates whether the comment box auto‑sizes.        |
+| `IsVisible`               | boolean | Determines if the comment is visible.                |
+| `Width`                   | integer | Width of the comment box (in characters).            |
+| `Height`                  | integer | Height of the comment box (in characters).           |
+| `TextHorizontalAlignment` | string  | Horizontal alignment of the text (e.g., **Bottom**). |
+| `TextOrientationType`     | string  | Orientation of the text (e.g., **TopToBottom**).     |
+| `TextVerticalAlignment`   | string  | Vertical alignment of the text (e.g., **Bottom**).   |
 
 ## Common Errors
 
@@ -101,13 +101,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

@@ -1,6 +1,4 @@
 ---
-date: 2023-11-15T08:30:00Z
-lastmod: 2024-05-22T14:10:00Z
 title: "Change Cell Style in Excel Worksheet – Aspose.Cells Cloud API Guide"
 type: docs
 url: /change-cell-style-in-excel-worksheet/
@@ -51,14 +49,14 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{ce
 
 ### Request Parameters
 
-| Parameter | Type   | Location | Required | Description |
-|-----------|--------|----------|----------|-------------|
-| `name` | string | path | ✅ Yes | Workbook file name (e.g., `test_cells.xlsx`). |
-| `sheetName` | string | path | ✅ Yes | Worksheet name (e.g., `Sheet3`). |
-| `cellName` | string | path | ✅ Yes | Target cell (e.g., `A1`). |
-| `style` | object | body | ✅ Yes | JSON object specifying style properties to update (e.g., background, font). |
-| `folder` | string | query | ❌ No | Folder containing the workbook (e.g., `input`). |
-| `storageName` | string | query | ❌ No | Storage name (default: `First Storage`). |
+| Parameter     | Type   | Location | Required | Description                                                                 |
+| ------------- | ------ | -------- | -------- | --------------------------------------------------------------------------- |
+| `name`        | string | path     | ✅ Yes   | Workbook file name (e.g., `test_cells.xlsx`).                               |
+| `sheetName`   | string | path     | ✅ Yes   | Worksheet name (e.g., `Sheet3`).                                            |
+| `cellName`    | string | path     | ✅ Yes   | Target cell (e.g., `A1`).                                                   |
+| `style`       | object | body     | ✅ Yes   | JSON object specifying style properties to update (e.g., background, font). |
+| `folder`      | string | query    | ❌ No    | Folder containing the workbook (e.g., `input`).                             |
+| `storageName` | string | query    | ❌ No    | Storage name (default: `First Storage`).                                    |
 
 ### Authentication
 
@@ -114,15 +112,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/c
 
 ### HTTP Status Codes
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| `200` | OK | Style updated successfully. |
-| `400` | Bad Request | Invalid cell name, malformed JSON, or unsupported file type. |
-| `401` | Unauthorized | Invalid or missing JWT token. |
-| `413` | Payload Too Large | Request body exceeds 50 MB limit. |
-| `500` | Internal Server Error | Unexpected server error. |
+| Code  | Meaning               | Description                                                  |
+| ----- | --------------------- | ------------------------------------------------------------ |
+| `200` | OK                    | Style updated successfully.                                  |
+| `400` | Bad Request           | Invalid cell name, malformed JSON, or unsupported file type. |
+| `401` | Unauthorized          | Invalid or missing JWT token.                                |
+| `413` | Payload Too Large     | Request body exceeds 50 MB limit.                            |
+| `500` | Internal Server Error | Unexpected server error.                                     |
 
-> **Note**: The `Style` object in the response reflects the *current* state after applying the update.
+> **Note**: The `Style` object in the response reflects the _current_ state after applying the update.
 
 ## Use Aspose.Cells Cloud SDKs
 
@@ -168,7 +166,7 @@ Console.WriteLine(response.Status);
 #### Java
 
 ```java
-// implementation, please see: 
+// implementation, please see:
 // https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/blob/master/Examples/src/main/java/com/aspose/cells/examples/styles/UpdateCellStyle.java
 ```
 
@@ -194,24 +192,3 @@ print(response.status)
 ```
 
 > 🔗 Explore full SDK examples, changelogs, and issue reporting on [GitHub](https://github.com/aspose-cells-cloud).
-
-## Related Operations
-
-- [Get Cell Style](/get-cell-style/) – Retrieve current style of a cell.  
-- [Update Multiple Cells Style](/update-multiple-cells-style/) – Apply style to a cell range (e.g., `A1:C10`).  
-- [Read Cell Value](/read-cell-value/) – Extract cell data (number, formula, text).  
-
-## API Reference
-
-- [OpenAPI Spec (v3.0)](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetCellStyle)  
-- [REST API Overview](https://docs.aspose.cloud/cells/getting-started/rest-api-overview/)  
-- [Authentication Guide](https://docs.aspose.cloud/cells/getting-started/authentication/)
-
-## Was this article helpful?
-
-{{< feedback-widget >}}
-
----
-
-*Last updated: 22 May 2024*  
-*Aspose.Cells Cloud API v3.0*

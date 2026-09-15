@@ -15,7 +15,7 @@ weight: 20
 
 Easily achieve multi-format spreadsheet conversion using Aspose.Cells Cloud API. Supports comprehensive format export for worksheets, tables, charts, and data ranges—including PDF, images, CSV, JSON, HTML, Markdown, and XML. Cloud-based processing with no installation required, backed by REST API and SDKs for .NET, Java, Python, and more.
 
-For authentication setup, see [**Authentication Overview**]({{< relref "/cells/authentication" >}}). Sample code for SDK integration is available in our [**Quickstart Guide**]({{< relref "/cells/quickstart" >}}).
+For authentication setup, see [**Authentication Overview**](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Sample code for SDK integration is available in our [**Quickstart Guide**](https://docs.aspose.cloud/cells/quickstart/).
 
 ### Range Conversion
 
@@ -63,8 +63,8 @@ For authentication setup, see [**Authentication Overview**]({{< relref "/cells/a
 
 ## Format Support Matrix
 
-| Target Format | Range | Chart | Table | Worksheet | Spreadsheet |
-| :------------ | :---- | :---- | :---- | :-------- | :---------- |
+| Target Format | Range  | Chart  | Table  | Worksheet | Spreadsheet |
+| :------------ | :----- | :----- | :----- | :-------- | :---------- |
 | **PDF**       | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes    | ✅ Yes      |
 | **Image**     | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes    | ✅ Yes      |
 | **HTML**      | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes    | ✅ Yes      |
@@ -73,6 +73,7 @@ For authentication setup, see [**Authentication Overview**]({{< relref "/cells/a
 | **Markdown**  | ✅ Yes | ❌ No  | ✅ Yes | ✅ Yes    | ✅ Yes      |
 | **XML**       | ✅ Yes | ❌ No  | ✅ Yes | ✅ Yes    | ✅ Yes      |
 
-> **Footnotes**:  
-> * CSV/JSON/XML export does not preserve merged cells, embedded charts, or pivot tables.  
-> * Image export supports PNG, JPEG, BMP, GIF, and TIFF formats via API parameters.
+> **Footnotes**:
+>
+> - CSV/JSON/XML export does not preserve merged cells, embedded charts, or pivot tables.
+> - Image export supports PNG, JPEG, BMP, GIF, and TIFF formats via API parameters.

@@ -14,10 +14,6 @@ weight: 100
 
 The **DownloadFile** API enables you to retrieve files stored in Aspose.Cells Cloud storage. Use this endpoint to download Excel spreadsheets, PDFs, CSVs, and other supported formats directly from the cloud.
 
-> {{% notice note %}}  
-> *Last updated: June 14, 2024. SDK examples verified against Aspose.Cells Cloud SDK v23.5.*  
-> {{% /notice %}}
-
 ## Excel API: Download File
 
 ### Web API
@@ -28,7 +24,7 @@ GET https://api.aspose.cloud/v4.0/cells/storage/file/{path}
 
 ### Security and Authentication
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/){:target="_blank" rel="noopener noreferrer"}.
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/){:target="\_blank" rel="noopener noreferrer"}.
 
 Include your access token in the `Authorization` header:
 
@@ -38,11 +34,11 @@ Include your access token in the `Authorization` header:
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Required | Description |
-|----------------|--------|----------|----------|-------------|
-| `path` | `string` | Path | ✅ Yes | The virtual path to the file in cloud storage (e.g., `input/Report.xlsx`). |
-| `storageName` | `string` | Query | ❌ No | The name of the storage (e.g., `MyStorage`). Defaults to the first configured storage if omitted. |
-| `versionId` | `string` | Query | ❌ No | Optional version identifier for versioned storage (e.g., `v1.2`). Use only when multiple file versions exist in enterprise storage. |
+| Parameter Name | Type     | Location | Required | Description                                                                                                                         |
+| -------------- | -------- | -------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `path`         | `string` | Path     | ✅ Yes   | The virtual path to the file in cloud storage (e.g., `input/Report.xlsx`).                                                          |
+| `storageName`  | `string` | Query    | ❌ No    | The name of the storage (e.g., `MyStorage`). Defaults to the first configured storage if omitted.                                   |
+| `versionId`    | `string` | Query    | ❌ No    | Optional version identifier for versioned storage (e.g., `v1.2`). Use only when multiple file versions exist in enterprise storage. |
 
 ### Response
 
@@ -50,14 +46,14 @@ The API returns a **binary file stream**. The `Content-Type` header matches the 
 
 #### HTTP Status Codes
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| `200` | OK | File downloaded successfully; response body contains the binary file stream. |
-| `400` | Bad Request | Missing or invalid parameters (e.g., unsupported file type, malformed `path`). |
-| `401` | Unauthorized | Invalid, expired, or missing JWT token. |
-| `404` | Not Found | File not found at the specified `path` or `storageName` does not exist. |
-| `413` | Payload Too Large | Requested file exceeds maximum download size (1 GB). |
-| `500` | Internal Server Error | Unexpected server error. |
+| Code  | Meaning               | Description                                                                    |
+| ----- | --------------------- | ------------------------------------------------------------------------------ |
+| `200` | OK                    | File downloaded successfully; response body contains the binary file stream.   |
+| `400` | Bad Request           | Missing or invalid parameters (e.g., unsupported file type, malformed `path`). |
+| `401` | Unauthorized          | Invalid, expired, or missing JWT token.                                        |
+| `404` | Not Found             | File not found at the specified `path` or `storageName` does not exist.        |
+| `413` | Payload Too Large     | Requested file exceeds maximum download size (1 GB).                           |
+| `500` | Internal Server Error | Unexpected server error.                                                       |
 
 ### Example: cURL Command
 
@@ -76,12 +72,13 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/file/input/Report.xlsx?
 
 Using an SDK is the best way to speed up development. SDKs handle low-level details like authentication, request formatting, and error handling, enabling you to focus on business logic.
 
-Check out the [GitHub repository](https://github.com/aspose-cells-cloud){:target="_blank" rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
+Check out the [GitHub repository](https://github.com/aspose-cells-cloud){:target="\_blank" rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to download a file using various SDKs:
 
 {{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // Aspose.Cells Cloud SDK v23.5 for .NET
 var config = new Configuration { ClientId = "your_client_id", ClientSecret = "your_client_secret" };
@@ -94,8 +91,10 @@ var response = apiInstance.DownloadFile(path, storageName: storageName);
 // Save to local file
 System.IO.File.WriteAllBytes("Report.xlsx", response);
 ```
+
 {{< /tab >}}
 {{< tab tabNum="2" >}}
+
 ```java
 // Aspose.Cells Cloud SDK v23.5 for Java
 Configuration config = new Configuration("your_client_id", "your_client_secret");
@@ -107,8 +106,10 @@ String storageName = "MyStorage";
 File response = api.downloadFile(path, storageName, null, null);
 System.out.println("File downloaded to: " + response.getAbsolutePath());
 ```
+
 {{< /tab >}}
 {{< tab tabNum="3" >}}
+
 ```php
 // Aspose.Cells Cloud SDK v23.5 for PHP
 $config = new Configuration();
@@ -122,8 +123,10 @@ $storageName = "MyStorage";
 $response = $api->downloadFile($path, $storageName);
 file_put_contents("Report.xlsx", $response);
 ```
+
 {{< /tab >}}
 {{< tab tabNum="4" >}}
+
 ```ruby
 # Aspose.Cells Cloud SDK v23.5 for Ruby
 require 'aspose_cells_cloud'
@@ -139,28 +142,32 @@ storage_name = 'MyStorage'
 response = api_instance.download_file(path, storage_name: storage_name)
 File.write('Report.xlsx', response)
 ```
+
 {{< /tab >}}
 {{< tab tabNum="5" >}}
+
 ```typescript
 // Aspose.Cells Cloud SDK v23.5 for Node.js (TypeScript)
-import { FileApi } from '@aspose/cells-cloud';
-import { Configuration } from '@aspose/cells-cloud';
+import { FileApi } from "@aspose/cells-cloud";
+import { Configuration } from "@aspose/cells-cloud";
 
 const config = new Configuration({
-  clientId: 'your_client_id',
-  clientSecret: 'your_client_secret'
+  clientId: "your_client_id",
+  clientSecret: "your_client_secret",
 });
 const api = new FileApi(config);
 
-const path = 'input/Report.xlsx';
-const storageName = 'MyStorage';
+const path = "input/Report.xlsx";
+const storageName = "MyStorage";
 
 const response = await api.downloadFile(path, storageName);
-import * as fs from 'fs';
-fs.writeFileSync('Report.xlsx', Buffer.from(response.data as string));
+import * as fs from "fs";
+fs.writeFileSync("Report.xlsx", Buffer.from(response.data as string));
 ```
+
 {{< /tab >}}
 {{< tab tabNum="6" >}}
+
 ```python
 # Aspose.Cells Cloud SDK v23.5 for Python
 from asposecellscloud.configuration import Configuration
@@ -179,8 +186,10 @@ response = api.download_file(path, storage_name=storage_name)
 with open("Report.xlsx", "wb") as f:
     f.write(response.content)
 ```
+
 {{< /tab >}}
 {{< tab tabNum="7" >}}
+
 ```perl
 # Aspose.Cells Cloud SDK v23.5 for Perl
 use AsposeCellsCloud::Configuration;
@@ -200,8 +209,10 @@ open(my $fh, '>', 'Report.xlsx') or die "Could not open file: $!";
 print $fh $$response;
 close $fh;
 ```
+
 {{< /tab >}}
 {{< tab tabNum="8" >}}
+
 ```go
 // Aspose.Cells Cloud SDK v23.5 for Go
 import (
@@ -230,14 +241,9 @@ f, _ := os.Create("Report.xlsx")
 defer f.Close()
 io.Copy(f, response)
 ```
+
 {{< /tab >}}
 {{< /tabs >}}
-
-> {{% notice tip %}}  
-> 🔗 **See also**: [Upload File API](/upload-file/)  
-> {{% /notice %}}
-
----
 
 ### OpenAPI Specification
 
@@ -250,5 +256,3 @@ You can interact directly with the API using tools like Postman or Swagger UI.
 ### Architecture Overview
 
 ![Aspose.Cells Cloud file download architecture](https://docs.aspose.cloud/download/flow-download.png){:width="600" alt="Architecture diagram: Client → API Gateway → Cloud Storage → Binary File Stream"}
-
-*Fig. 1: File download flow in Aspose.Cells Cloud*

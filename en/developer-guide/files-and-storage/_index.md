@@ -15,7 +15,7 @@ Aspose.Cells Cloud provides a comprehensive set of helper functions for working 
 
 **Aspose.Cells Cloud offers a range of file, folder, and storage operation APIs.**
 
-> **Note:** All API calls must use **HTTPS**. See the [Authentication Guide](/cells/authentication/) for details on obtaining a JWT token.
+> **Note:** All API calls must use **HTTPS**. See the [Authentication Guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/） for details on obtaining a JWT token.
 
 **Prerequisites:** To use these APIs you must have a valid Aspose Cloud account, obtain a JWT access token, and have a storage location configured (either Aspose Cloud Storage or a connected third‑party storage).
 
@@ -31,21 +31,21 @@ PUT https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 
 The request parameters are listed below:
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
+| Parameter Name | Type   | Location | Description                                                                                   |
+| -------------- | ------ | -------- | --------------------------------------------------------------------------------------------- |
 | path           | string | path     | Path to upload the file, including the filename and extension (e.g., `/folder1/Report.xlsx`). |
-| file           | file   | formData | The file to upload. |
-| storageName    | string | query    | Name of the storage to use. |
+| file           | file   | formData | The file to upload.                                                                           |
+| storageName    | string | query    | Name of the storage to use.                                                                   |
 
 **HTTP Responses**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | File uploaded successfully.              |
+| Code | Description                                  |
+| ---- | -------------------------------------------- |
+| 200  | File uploaded successfully.                  |
 | 400  | Bad request – missing or invalid parameters. |
 | 401  | Unauthorized – invalid or missing JWT token. |
-| 404  | Storage not found.                       |
-| 500  | Internal server error.                   |
+| 404  | Storage not found.                           |
+| 500  | Internal server error.                       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/File/UploadFile) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -69,9 +69,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MyFolder/Report.xlsx" 
 
 ```json
 {
-  "Uploaded": [
-    "MyFolder/Report.xlsx"
-  ],
+  "Uploaded": ["MyFolder/Report.xlsx"],
   "Errors": []
 }
 ```
@@ -79,7 +77,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MyFolder/Report.xlsx" 
 {{< /tab >}}
 {{< /tabs >}}
 
-*Note: The maximum file size for upload is 100 MB. Rate limits may apply.*
+_Note: The maximum file size for upload is 100 MB. Rate limits may apply._
 
 ## **How to Download a File**
 
@@ -91,16 +89,16 @@ GET https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 
 The request parameters are listed below:
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| path           | string | path     | File path (e.g., `/folder/Report.xlsx`). |
-| storageName    | string | query    | Name of the storage to use. |
+| Parameter Name | Type   | Location | Description                                            |
+| -------------- | ------ | -------- | ------------------------------------------------------ |
+| path           | string | path     | File path (e.g., `/folder/Report.xlsx`).               |
+| storageName    | string | query    | Name of the storage to use.                            |
 | versionId      | string | query    | Identifier of the file version to download (optional). |
 
 **HTTP Responses**
 
 | Code | Description                              |
-|------|------------------------------------------|
+| ---- | ---------------------------------------- |
 | 200  | File downloaded; binary stream returned. |
 | 400  | Bad request – invalid parameters.        |
 | 401  | Unauthorized – missing or invalid JWT.   |
@@ -133,7 +131,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MyFolder/Report.xlsx" 
 {{< /tab >}}
 {{< /tabs >}}
 
-*Note: The response contains the file’s binary stream. Save the output to a file when using cURL (`-o filename.xlsx`).*
+_Note: The response contains the file’s binary stream. Save the output to a file when using cURL (`-o filename.xlsx`)._
 
 ## **How to Delete a File**
 
@@ -145,21 +143,21 @@ DELETE https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 
 The request parameters are listed below:
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| path           | string | path     | File path (e.g., `/folder/Report.xlsx`). |
-| storageName    | string | query    | Name of the storage to use. |
+| Parameter Name | Type   | Location | Description                                          |
+| -------------- | ------ | -------- | ---------------------------------------------------- |
+| path           | string | path     | File path (e.g., `/folder/Report.xlsx`).             |
+| storageName    | string | query    | Name of the storage to use.                          |
 | versionId      | string | query    | Identifier of the file version to delete (optional). |
 
 **HTTP Responses**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | File deleted successfully.               |
+| Code | Description                                  |
+| ---- | -------------------------------------------- |
+| 200  | File deleted successfully.                   |
 | 400  | Bad request – missing or invalid parameters. |
-| 401  | Unauthorized – invalid JWT token.        |
-| 404  | File not found.                          |
-| 500  | Internal server error.                   |
+| 401  | Unauthorized – invalid JWT token.            |
+| 404  | File not found.                              |
+| 500  | Internal server error.                       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/File/DeleteFile) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -188,7 +186,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MyFolder/OldReport.xls
 {{< /tab >}}
 {{< /tabs >}}
 
-*Note: Deleting a file is permanent; ensure you have a backup if needed.*
+_Note: Deleting a file is permanent; ensure you have a backup if needed._
 
 ## **How to Copy a File**
 
@@ -200,23 +198,23 @@ PUT https://api.aspose.cloud/v3.0/cells/storage/file/copy/{srcPath}
 
 The request parameters are listed below:
 
-| Parameter Name   | Type   | Location | Description |
-|------------------|--------|----------|-------------|
-| srcPath          | string | path     | Source file path (e.g., `/folder/Source.xlsx`). |
-| destPath         | string | query    | Destination file path (e.g., `/folder/Destination.xlsx`). |
-| srcStorageName   | string | query    | Source storage name (optional). |
-| destStorageName  | string | query    | Destination storage name (optional). |
-| versionId        | string | query    | File version ID to copy (optional). |
+| Parameter Name  | Type   | Location | Description                                               |
+| --------------- | ------ | -------- | --------------------------------------------------------- |
+| srcPath         | string | path     | Source file path (e.g., `/folder/Source.xlsx`).           |
+| destPath        | string | query    | Destination file path (e.g., `/folder/Destination.xlsx`). |
+| srcStorageName  | string | query    | Source storage name (optional).                           |
+| destStorageName | string | query    | Destination storage name (optional).                      |
+| versionId       | string | query    | File version ID to copy (optional).                       |
 
 **HTTP Responses**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | File copied successfully.                |
-| 400  | Bad request – invalid parameters.        |
-| 401  | Unauthorized – missing or invalid JWT.   |
-| 404  | Source file not found.                   |
-| 500  | Internal server error.                   |
+| Code | Description                            |
+| ---- | -------------------------------------- |
+| 200  | File copied successfully.              |
+| 400  | Bad request – invalid parameters.      |
+| 401  | Unauthorized – missing or invalid JWT. |
+| 404  | Source file not found.                 |
+| 500  | Internal server error.                 |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/File/CopyFile) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -245,7 +243,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/copy/MyFolder/Report.x
 {{< /tab >}}
 {{< /tabs >}}
 
-*Note: The copy operation does not remove the source file.*
+_Note: The copy operation does not remove the source file._
 
 ## **How to Move a File**
 
@@ -257,23 +255,23 @@ PUT https://api.aspose.cloud/v3.0/cells/storage/file/move/{srcPath}
 
 The request parameters are listed below:
 
-| Parameter Name   | Type   | Location | Description |
-|------------------|--------|----------|-------------|
-| srcPath          | string | path     | Source file path (e.g., `/folder/Source.xlsx`). |
-| destPath         | string | query    | Destination file path (e.g., `/folder/Destination.xlsx`). |
-| srcStorageName   | string | query    | Source storage name (optional). |
-| destStorageName  | string | query    | Destination storage name (optional). |
-| versionId        | string | query    | File version ID to move (optional). |
+| Parameter Name  | Type   | Location | Description                                               |
+| --------------- | ------ | -------- | --------------------------------------------------------- |
+| srcPath         | string | path     | Source file path (e.g., `/folder/Source.xlsx`).           |
+| destPath        | string | query    | Destination file path (e.g., `/folder/Destination.xlsx`). |
+| srcStorageName  | string | query    | Source storage name (optional).                           |
+| destStorageName | string | query    | Destination storage name (optional).                      |
+| versionId       | string | query    | File version ID to move (optional).                       |
 
 **HTTP Responses**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | File moved successfully.                 |
-| 400  | Bad request – invalid parameters.        |
-| 401  | Unauthorized – missing or invalid JWT.   |
-| 404  | Source file not found.                   |
-| 500  | Internal server error.                   |
+| Code | Description                            |
+| ---- | -------------------------------------- |
+| 200  | File moved successfully.               |
+| 400  | Bad request – invalid parameters.      |
+| 401  | Unauthorized – missing or invalid JWT. |
+| 404  | Source file not found.                 |
+| 500  | Internal server error.                 |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/File/MoveFile) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -302,7 +300,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/move/MyFolder/Report.x
 {{< /tab >}}
 {{< /tabs >}}
 
-*Note: Moving a file retains the file’s version history.*
+_Note: Moving a file retains the file’s version history._
 
 ## **How to Create a Folder**
 
@@ -314,19 +312,19 @@ PUT https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 
 The request parameters are listed below:
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
+| Parameter Name | Type   | Location | Description                                       |
+| -------------- | ------ | -------- | ------------------------------------------------- |
 | path           | string | path     | Folder path to create (e.g., `folder1/folder2/`). |
-| storageName    | string | query    | Name of the storage to use. |
+| storageName    | string | query    | Name of the storage to use.                       |
 
 **HTTP Responses**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | Folder created successfully.             |
+| Code | Description                               |
+| ---- | ----------------------------------------- |
+| 200  | Folder created successfully.              |
 | 400  | Bad request – invalid path or parameters. |
-| 401  | Unauthorized – missing or invalid JWT.   |
-| 500  | Internal server error.                   |
+| 401  | Unauthorized – missing or invalid JWT.    |
+| 500  | Internal server error.                    |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Folder/CreateFolder) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -347,9 +345,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/newfolder" \
 
 ```json
 {
-  "Uploaded": [
-    "newfolder"
-  ],
+  "Uploaded": ["newfolder"],
   "Errors": []
 }
 ```
@@ -357,7 +353,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/newfolder" \
 {{< /tab >}}
 {{< /tabs >}}
 
-*Note: Folder paths are case‑sensitive.*
+_Note: Folder paths are case‑sensitive._
 
 ## **How to Get Files in a Folder**
 
@@ -369,20 +365,20 @@ GET https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 
 The request parameters are listed below:
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
+| Parameter Name | Type   | Location | Description                    |
+| -------------- | ------ | -------- | ------------------------------ |
 | path           | string | path     | Folder path (e.g., `/folder`). |
-| storageName    | string | query    | Name of the storage to use. |
+| storageName    | string | query    | Name of the storage to use.    |
 
 **HTTP Responses**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | List of files and sub‑folders returned.  |
-| 400  | Bad request – invalid path.              |
-| 401  | Unauthorized – missing or invalid JWT.   |
-| 404  | Folder not found.                        |
-| 500  | Internal server error.                   |
+| Code | Description                             |
+| ---- | --------------------------------------- |
+| 200  | List of files and sub‑folders returned. |
+| 400  | Bad request – invalid path.             |
+| 401  | Unauthorized – missing or invalid JWT.  |
+| 404  | Folder not found.                       |
+| 500  | Internal server error.                  |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Folder/GetFilesList) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -418,7 +414,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
 {{< /tab >}}
 {{< /tabs >}}
 
-*Note: The response lists both files and sub‑folders within the specified path.*
+_Note: The response lists both files and sub‑folders within the specified path._
 
 ## **How to Delete a Folder**
 
@@ -430,21 +426,21 @@ DELETE https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 
 The request parameters are listed below:
 
-| Parameter Name | Type    | Location | Description |
-|----------------|---------|----------|-------------|
-| path           | string  | path     | Folder path (e.g., `/folder`). |
-| storageName    | string  | query    | Name of the storage to use. |
+| Parameter Name | Type    | Location | Description                                     |
+| -------------- | ------- | -------- | ----------------------------------------------- |
+| path           | string  | path     | Folder path (e.g., `/folder`).                  |
+| storageName    | string  | query    | Name of the storage to use.                     |
 | recursive      | boolean | query    | Set to `true` to delete the folder recursively. |
 
 **HTTP Responses**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | Folder deleted successfully.             |
-| 400  | Bad request – invalid parameters.        |
-| 401  | Unauthorized – missing or invalid JWT.   |
-| 404  | Folder not found.                        |
-| 500  | Internal server error.                   |
+| Code | Description                            |
+| ---- | -------------------------------------- |
+| 200  | Folder deleted successfully.           |
+| 400  | Bad request – invalid parameters.      |
+| 401  | Unauthorized – missing or invalid JWT. |
+| 404  | Folder not found.                      |
+| 500  | Internal server error.                 |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Folder/DeleteFolder) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -473,7 +469,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
 {{< /tab >}}
 {{< /tabs >}}
 
-*Note: Deleting a folder with `recursive=true` removes all its contents permanently.*
+_Note: Deleting a folder with `recursive=true` removes all its contents permanently._
 
 ## **How to Copy a Folder**
 
@@ -485,22 +481,22 @@ PUT https://api.aspose.cloud/v3.0/cells/storage/folder/copy/{srcPath}
 
 The request parameters are listed below:
 
-| Parameter Name   | Type   | Location | Description |
-|------------------|--------|----------|-------------|
-| srcPath          | string | path     | Source folder path (e.g., `/src`). |
-| destPath         | string | query    | Destination folder path (e.g., `/dst`). |
-| srcStorageName   | string | query    | Source storage name (optional). |
-| destStorageName  | string | query    | Destination storage name (optional). |
+| Parameter Name  | Type   | Location | Description                             |
+| --------------- | ------ | -------- | --------------------------------------- |
+| srcPath         | string | path     | Source folder path (e.g., `/src`).      |
+| destPath        | string | query    | Destination folder path (e.g., `/dst`). |
+| srcStorageName  | string | query    | Source storage name (optional).         |
+| destStorageName | string | query    | Destination storage name (optional).    |
 
 **HTTP Responses**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | Folder copied successfully.              |
-| 400  | Bad request – invalid parameters.        |
-| 401  | Unauthorized – missing or invalid JWT.   |
-| 404  | Source folder not found.                 |
-| 500  | Internal server error.                   |
+| Code | Description                            |
+| ---- | -------------------------------------- |
+| 200  | Folder copied successfully.            |
+| 400  | Bad request – invalid parameters.      |
+| 401  | Unauthorized – missing or invalid JWT. |
+| 404  | Source folder not found.               |
+| 500  | Internal server error.                 |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Folder/CopyFolder) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -529,7 +525,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/copy/srcfolder?destP
 {{< /tab >}}
 {{< /tabs >}}
 
-*Note: The copy operation creates a new folder with the same contents as the source.*
+_Note: The copy operation creates a new folder with the same contents as the source._
 
 ## **How to Move a Folder**
 
@@ -541,22 +537,22 @@ PUT https://api.aspose.cloud/v3.0/cells/storage/folder/move/{srcPath}
 
 The request parameters are listed below:
 
-| Parameter Name   | Type   | Location | Description |
-|------------------|--------|----------|-------------|
-| srcPath          | string | path     | Source folder path (e.g., `/folder`). |
-| destPath         | string | query    | Destination folder path (e.g., `/dst`). |
-| srcStorageName   | string | query    | Source storage name (optional). |
-| destStorageName  | string | query    | Destination storage name (optional). |
+| Parameter Name  | Type   | Location | Description                             |
+| --------------- | ------ | -------- | --------------------------------------- |
+| srcPath         | string | path     | Source folder path (e.g., `/folder`).   |
+| destPath        | string | query    | Destination folder path (e.g., `/dst`). |
+| srcStorageName  | string | query    | Source storage name (optional).         |
+| destStorageName | string | query    | Destination storage name (optional).    |
 
 **HTTP Responses**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | Folder moved successfully.               |
-| 400  | Bad request – invalid parameters.        |
-| 401  | Unauthorized – missing or invalid JWT.   |
-| 404  | Source folder not found.                 |
-| 500  | Internal server error.                   |
+| Code | Description                            |
+| ---- | -------------------------------------- |
+| 200  | Folder moved successfully.             |
+| 400  | Bad request – invalid parameters.      |
+| 401  | Unauthorized – missing or invalid JWT. |
+| 404  | Source folder not found.               |
+| 500  | Internal server error.                 |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Folder/MoveFolder) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -585,7 +581,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/move/desfolder?destP
 {{< /tab >}}
 {{< /tabs >}}
 
-*Note: Moving a folder retains its internal structure and file versions.*
+_Note: Moving a folder retains its internal structure and file versions._
 
 ## **How to Check if Storage Exists**
 
@@ -597,18 +593,18 @@ GET https://api.aspose.cloud/v3.0/cells/storage/{storageName}/exist
 
 The request parameters are listed below:
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
+| Parameter Name | Type   | Location | Description                   |
+| -------------- | ------ | -------- | ----------------------------- |
 | storageName    | string | path     | Name of the storage to check. |
 
 **HTTP Responses**
 
-| Code | Description                              |
-|------|------------------------------------------|
+| Code | Description                                     |
+| ---- | ----------------------------------------------- |
 | 200  | Storage existence returned (`true` or `false`). |
-| 401  | Unauthorized – missing or invalid JWT.   |
-| 404  | Storage not found.                       |
-| 500  | Internal server error.                   |
+| 401  | Unauthorized – missing or invalid JWT.          |
+| 404  | Storage not found.                              |
+| 500  | Internal server error.                          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Storage/StorageExists) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -646,20 +642,20 @@ GET https://api.aspose.cloud/v3.0/cells/storage/exist/{path}
 
 The request parameters are listed below:
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
+| Parameter Name | Type   | Location | Description                                            |
+| -------------- | ------ | -------- | ------------------------------------------------------ |
 | path           | string | path     | File or folder path (e.g., `/file.xlsx` or `/folder`). |
-| storageName    | string | query    | Name of the storage to check. |
-| versionId      | string | query    | File version identifier (optional). |
+| storageName    | string | query    | Name of the storage to check.                          |
+| versionId      | string | query    | File version identifier (optional).                    |
 
 **HTTP Responses**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | Existence information returned.          |
-| 401  | Unauthorized – missing or invalid JWT.   |
-| 404  | File or folder not found.                |
-| 500  | Internal server error.                   |
+| Code | Description                            |
+| ---- | -------------------------------------- |
+| 200  | Existence information returned.        |
+| 401  | Unauthorized – missing or invalid JWT. |
+| 404  | File or folder not found.              |
+| 500  | Internal server error.                 |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Storage/ObjectExists) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -698,17 +694,17 @@ GET https://api.aspose.cloud/v3.0/cells/storage/disc
 
 The request parameters are listed below:
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
+| Parameter Name | Type   | Location | Description                   |
+| -------------- | ------ | -------- | ----------------------------- |
 | storageName    | string | query    | Name of the storage to query. |
 
 **HTTP Responses**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | Disk usage information returned.         |
-| 401  | Unauthorized – missing or invalid JWT.   |
-| 500  | Internal server error.                   |
+| Code | Description                            |
+| ---- | -------------------------------------- |
+| 200  | Disk usage information returned.       |
+| 401  | Unauthorized – missing or invalid JWT. |
+| 500  | Internal server error.                 |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Storage/GetDiscUsage) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -747,19 +743,19 @@ GET https://api.aspose.cloud/v3.0/cells/storage/version/{path}
 
 The request parameters are listed below:
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
+| Parameter Name | Type   | Location | Description                     |
+| -------------- | ------ | -------- | ------------------------------- |
 | path           | string | path     | File path (e.g., `/file.xlsx`). |
-| storageName    | string | query    | Name of the storage to query. |
+| storageName    | string | query    | Name of the storage to query.   |
 
 **HTTP Responses**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | List of file versions returned.          |
-| 401  | Unauthorized – missing or invalid JWT.   |
-| 404  | File not found.                          |
-| 500  | Internal server error.                   |
+| Code | Description                            |
+| ---- | -------------------------------------- |
+| 200  | List of file versions returned.        |
+| 401  | Unauthorized – missing or invalid JWT. |
+| 404  | File not found.                        |
+| 500  | Internal server error.                 |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Storage/GetFileVersions) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 

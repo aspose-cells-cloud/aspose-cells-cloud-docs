@@ -66,23 +66,24 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/myWorkbook.xlsx/worksheets/Shee
 {{< /tabs >}}
 
 ### Parameters
-| Parameter            | Type   | Required | Description |
-|----------------------|--------|----------|-------------|
-| `fileName`           | string | Yes      | Name of the Excel file stored in the cloud. |
-| `worksheetName`      | string | Yes      | Name of the worksheet from which to retrieve the last cell. |
-| `cellOrMethodName`   | string | Yes      | Must be set to **`endcell`** to invoke this operation. |
-| `folder` *(optional)*| string | No       | Cloud folder path where the workbook is located. |
-| `storageName` *(optional)*| string | No   | Name of the storage. If omitted, the default storage is used. |
+
+| Parameter                  | Type   | Required | Description                                                   |
+| -------------------------- | ------ | -------- | ------------------------------------------------------------- |
+| `fileName`                 | string | Yes      | Name of the Excel file stored in the cloud.                   |
+| `worksheetName`            | string | Yes      | Name of the worksheet from which to retrieve the last cell.   |
+| `cellOrMethodName`         | string | Yes      | Must be set to **`endcell`** to invoke this operation.        |
+| `folder` _(optional)_      | string | No       | Cloud folder path where the workbook is located.              |
+| `storageName` _(optional)_ | string | No       | Name of the storage. If omitted, the default storage is used. |
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Successful operation; returns the end cell address and metadata. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                      |
+| ---- | --------------------- | ---------------------------------------------------------------- |
+| 200  | OK                    | Successful operation; returns the end cell address and metadata. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).     |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                    |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                |
+| 500  | Internal Server Error | Unexpected server error.                                         |
 
 - **Use Aspose.Cells Cloud SDKs**
 
@@ -153,11 +154,3 @@ _The Swift SDK for Aspose.Cells Cloud v4.0 is under active development. Check ba
 {{< /tab >}}
 
 {{< /tabs >}}
-
-For further operations related to cell navigation, see the **[Get First Cell]({{< relref "/get-first-cell-of-excel-worksheet/" >}})** and **[Get Max Row]({{< relref "/get-max-row-of-worksheet/" >}})** topics.
-
-### See Also
-- [Get First Cell of Excel Worksheet]({{< relref "/get-first-cell-of-excel-worksheet/" >}})
-- [Get Max Row of Worksheet]({{< relref "/get-max-row-of-worksheet/" >}})
-- [Get Min Column of Worksheet]({{< relref "/get-min-column-of-worksheet/" >}})
-- [Get Total Rows]({{< relref "/get-total-rows-of-worksheet/" >}})

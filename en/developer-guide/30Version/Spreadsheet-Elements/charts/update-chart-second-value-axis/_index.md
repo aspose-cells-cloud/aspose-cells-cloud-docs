@@ -10,9 +10,10 @@ description: "Updates the second value axis of a chart in an Excel worksheet usi
 
 This REST API updates the second value axis of a chart.
 
-**Prerequisites:**  
-- A valid JWT access token (see the [Authentication guide](https://docs.aspose.cloud/cells/authentication/)).  
-- The target Excel file must be stored in Aspose Cloud storage (provide `folder` and optional `storageName`).  
+**Prerequisites:**
+
+- A valid JWT access token (see the [Authentication guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）).
+- The target Excel file must be stored in Aspose Cloud storage (provide `folder` and optional `storageName`).
 - API version v3.0 is used; ensure the base URL is `https://api.aspose.cloud/v3.0`.
 
 ## PostChartSecondValueAxis API
@@ -84,16 +85,17 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
-**See also:**  
-- [Get Chart Second Value Axis](https://docs.aspose.cloud/cells/charts/second-value-axis/get/)  
+**See also:**
+
+- [Get Chart Second Value Axis](https://docs.aspose.cloud/cells/charts/second-value-axis/get/)
 - [Update Chart Value Axis](https://docs.aspose.cloud/cells/charts/value-axis/update/)
 
 ## Cloud SDK Family

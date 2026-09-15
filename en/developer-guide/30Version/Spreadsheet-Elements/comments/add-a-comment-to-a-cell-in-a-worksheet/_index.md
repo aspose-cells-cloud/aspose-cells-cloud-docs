@@ -2,7 +2,7 @@
 title: "Add Worksheet Comment (v3.1)"
 url: /comments/add/
 aliases: [/add-a-comment-to-a-cell-in-a-worksheet/]
-description: "Add a comment to a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API v3.1 (PUT /v3.1/cells/{name}/worksheets/{sheetName}/comments/{cellName}). Includes cURL, SDK examples, request/response schemas, and error handling."
+description: "Add a comment to a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API v3.1 . Includes cURL, SDK examples, request/response schemas, and error handling."
 keywords: "Aspose.Cells, Cloud API, Add Worksheet Comment, Excel, Spreadsheet, Cell Comment"
 weight: 20
 api_version: "v3.1"
@@ -20,7 +20,7 @@ Add a comment to a specific cell in a worksheet of an Excel workbook using the A
 ## Prerequisites / Authentication
 
 - A **Bearer JWT token** is required for every request.  
-  _Obtain a token_ via the **/connect/token** endpoint (see the [Authentication guide]({{< relref "/cells/authentication/" >}})).
+  _Obtain a token_ via the **/connect/token** endpoint (see the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)).
 - Include the token in the `Authorization` header:
 
 ```http
@@ -30,6 +30,7 @@ Authorization: Bearer <jwt_token>
 - All calls must be made over **HTTPS** to protect the token and data.
 
 > 💡 **Tip**: Replace `<jwt_token>` with your actual JWT token. To generate one programmatically:
+>
 > ```bash
 > TOKEN=$(curl -s -X POST "https://api.aspose.cloud/connect/token" \
 >   -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>" \
@@ -340,7 +341,7 @@ config.clientSecret = "<your_client_secret>";
 let api = new WorksheetsApi(config);
 
 let comment = new Comment({
-  cellName: "A1",  // camelCase for JS/Node.js
+  cellName: "A1", // camelCase for JS/Node.js
   author: "test",
   note: "this is a comment",
   htmlNote: '<font style="font-weight:bold;">this is a comment</font>',
@@ -474,9 +475,10 @@ func main() {
 {{< /tabs >}}
 
 > ⚠️ **Note**: Field names follow the SDK’s language-specific naming conventions:
+>
 > - C#/Java/Go: `CellName` (PascalCase)
 > - JS/Python/Ruby/PHP/Perl: `cellName` / `cell_name` (camelCase/snake_case)
-> Ensure your SDK version matches the casing in this example.
+>   Ensure your SDK version matches the casing in this example.
 
 ---
 

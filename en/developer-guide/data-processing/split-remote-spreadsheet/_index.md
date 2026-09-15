@@ -1,5 +1,5 @@
 ---
-url: https://reference.aspose.cloud/cells/#/DataProcessingController/SplitRemoteSpreadsheet
+url: split-remote-spreadsheet
 title: Split Remote Spreadsheet in Cloud
 second title: Developer Reference
 linktitle: Split Remote Spreadsheet in Cloud
@@ -43,19 +43,19 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ### Request Parameters
 
-| Parameter Name | Type    | Location              | Description                                                                                                                                                        |
-| :------------- | :------ | :-------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `name`         | String  | Path                  | The name of the workbook file (e.g., `data.xlsx`) to be split, located in the specified cloud storage folder.                                                    |
-| `folder`       | String  | Query                 | The cloud storage folder path where the source workbook is stored.                                                                                               |
-| `from`         | Integer | Query                 | The starting worksheet index (0‑based) for the split operation. For example, `from=0` indicates the first worksheet.                                            |
-| `to`           | Integer | Query                 | The ending worksheet index (0‑based) for the split operation. For example, `from=0` and `to=2` splits worksheets 0, 1, and 2 (inclusive).                        |
-| `outFormat`    | String  | Query                 | The output file format for the split files. Supported formats include `XLSX`, `PDF`, `CSV`, `JSON`, `HTML`, and 30+ others. Default: `XLSX`.                      |
-| `storageName`  | String  | Query                 | *(Optional)* The name of the cloud storage where the source workbook resides. If omitted, the default cloud storage is used.                                   |
-| `outPath`      | String  | Query                 | *(Optional)* The target cloud folder path where the split files will be saved. If omitted, files are saved in the source folder.                               |
-| `outStorageName` | String | Query                | The name of the cloud storage where the output split files will be stored.                                                                                       |
-| `fontsLocation`| String  | Query                 | *(Optional)* Specifies a custom cloud folder path containing font files for proper text rendering in PDF/image outputs.                                        |
-| `region`       | String  | Query                 | *(Optional)* Sets the locale for formatting numbers, dates, and currency in the output files (e.g., `"en-US"`, `"zh-CN"`, `"de-DE"`).                           |
-| `password`     | String  | Query                 | *(Optional)* If the source workbook is password‑protected, provide the password to open the file.                                                               |
+| Parameter Name   | Type    | Location | Description                                                                                                                                  |
+| :--------------- | :------ | :------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`           | String  | Path     | The name of the workbook file (e.g., `data.xlsx`) to be split, located in the specified cloud storage folder.                                |
+| `folder`         | String  | Query    | The cloud storage folder path where the source workbook is stored.                                                                           |
+| `from`           | Integer | Query    | The starting worksheet index (0‑based) for the split operation. For example, `from=0` indicates the first worksheet.                         |
+| `to`             | Integer | Query    | The ending worksheet index (0‑based) for the split operation. For example, `from=0` and `to=2` splits worksheets 0, 1, and 2 (inclusive).    |
+| `outFormat`      | String  | Query    | The output file format for the split files. Supported formats include `XLSX`, `PDF`, `CSV`, `JSON`, `HTML`, and 30+ others. Default: `XLSX`. |
+| `storageName`    | String  | Query    | _(Optional)_ The name of the cloud storage where the source workbook resides. If omitted, the default cloud storage is used.                 |
+| `outPath`        | String  | Query    | _(Optional)_ The target cloud folder path where the split files will be saved. If omitted, files are saved in the source folder.             |
+| `outStorageName` | String  | Query    | The name of the cloud storage where the output split files will be stored.                                                                   |
+| `fontsLocation`  | String  | Query    | _(Optional)_ Specifies a custom cloud folder path containing font files for proper text rendering in PDF/image outputs.                      |
+| `region`         | String  | Query    | _(Optional)_ Sets the locale for formatting numbers, dates, and currency in the output files (e.g., `"en-US"`, `"zh-CN"`, `"de-DE"`).        |
+| `password`       | String  | Query    | _(Optional)_ If the source workbook is password‑protected, provide the password to open the file.                                            |
 
 ### Response
 
@@ -72,19 +72,19 @@ The file can be downloaded directly or saved to the location specified by `outPa
 
 #### Success Response Details
 
-| Status Code | Content-Type               | Description                           |
-| ----------- | -------------------------- | ------------------------------------- |
-| 200 OK      | `application/octet-stream` | Binary stream of the split file(s).   |
+| Status Code | Content-Type               | Description                         |
+| ----------- | -------------------------- | ----------------------------------- |
+| 200 OK      | `application/octet-stream` | Binary stream of the split file(s). |
 
 #### HTTP Status Codes
 
-| Code | Meaning               | Description                                                                 |
-| ---- | --------------------- | --------------------------------------------------------------------------- |
-| 200  | OK                    | Split completed successfully; response contains the file(s).               |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type or format).     |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                               |
-| 404  | Not Found             | Source file not found in storage or inaccessible.                          |
-| 500  | Internal Server Error | Unexpected server error during processing (e.g., file corruption).         |
+| Code | Meaning               | Description                                                            |
+| ---- | --------------------- | ---------------------------------------------------------------------- |
+| 200  | OK                    | Split completed successfully; response contains the file(s).           |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type or format). |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                          |
+| 404  | Not Found             | Source file not found in storage or inaccessible.                      |
+| 500  | Internal Server Error | Unexpected server error during processing (e.g., file corruption).     |
 
 ## Use Cases: Split Excel Files in the Cloud
 

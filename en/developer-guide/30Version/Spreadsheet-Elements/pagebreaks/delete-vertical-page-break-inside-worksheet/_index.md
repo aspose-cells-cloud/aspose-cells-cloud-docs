@@ -20,7 +20,7 @@ api_version: v3.0
 
 Delete a vertical page break from a worksheet in an Excel workbook using the Aspose.Cells Cloud REST API.
 
-> 💡 **Tip**: Replace `client_id` and `client_secret` with valid credentials from your [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/). For JWT token generation, see our [Authentication Guide](/cells/authentication/).
+> 💡 **Tip**: Replace `client_id` and `client_secret` with valid credentials from your [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/). For JWT token generation, see our [Authentication Guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）.
 
 ---
 
@@ -275,16 +275,16 @@ func main() {
 
 ## Related Resources
 
-- **OpenAPI Specification (Swagger)** – [Download JSON](https://raw.githubusercontent.com/aspose-cells-cloud/aspose-cells-cloud-go/master/docs/openapi.yaml)  
-- **Aspose.Cells Cloud SDKs** – <https://github.com/aspose-cells-cloud>  
-- **Authentication Guide** – <https://docs.aspose.cloud/cells/authentication/>  
+- **OpenAPI Specification (Swagger)** – [Download JSON](https://raw.githubusercontent.com/aspose-cells-cloud/aspose-cells-cloud-go/master/docs/openapi.yaml)
+- **Aspose.Cells Cloud SDKs** – <https://github.com/aspose-cells-cloud>
+- **Authentication Guide** – <https://docs.aspose.cloud/cells/authentication/>
 
 ---
 
 Was this page helpful?  
-✅ Yes  |  ❌ No  
+✅ Yes | ❌ No
 
-*(Feedback helps us improve our documentation.)*
+_(Feedback helps us improve our documentation.)_
 
 ---
 

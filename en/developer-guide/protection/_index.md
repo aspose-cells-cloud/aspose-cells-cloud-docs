@@ -13,18 +13,19 @@ weight: 60
 
 In this guide you will learn how to set, modify, and remove both the **open password** and the **read-write password** for spreadsheets using the Aspose.Cells Cloud Web API. These features help protect sensitive data in your Excel workbooks.
 
-**Prerequisites**  
-- An active Aspose.Cells Cloud account with a valid API key and SID.  
-- The workbook you want to protect must be uploaded to Aspose Cloud storage or accessible via a public URL.  
+**Prerequisites**
 
-**API Reference**  
+- An active Aspose.Cells Cloud account with a valid API key and SID.
+- The workbook you want to protect must be uploaded to Aspose Cloud storage or accessible via a public URL.
 
-| **HTTP Method** | **Endpoint** | **Query / Path Parameters** | **Description** |
-|-----------------|--------------|----------------------------|-----------------|
-| `PUT` | `/cells/{fileName}/protection` | `fileName` (path) – name of the workbook<br>`openPassword` (query, optional) – password required to open the file<br>`readWritePassword` (query, optional) – password required to modify the file | Sets or updates the open and/or read-write passwords for the specified workbook. |
-| `DELETE` | `/cells/{fileName}/protection` | `fileName` (path) – name of the workbook | Removes any passwords protecting the workbook. |
+**API Reference**
 
-**Request Body Example (JSON)**  
+| **HTTP Method** | **Endpoint**                   | **Query / Path Parameters**                                                                                                                                                                       | **Description**                                                                  |
+| --------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `PUT`           | `/cells/{fileName}/protection` | `fileName` (path) – name of the workbook<br>`openPassword` (query, optional) – password required to open the file<br>`readWritePassword` (query, optional) – password required to modify the file | Sets or updates the open and/or read-write passwords for the specified workbook. |
+| `DELETE`        | `/cells/{fileName}/protection` | `fileName` (path) – name of the workbook                                                                                                                                                          | Removes any passwords protecting the workbook.                                   |
+
+**Request Body Example (JSON)**
 
 ```json
 {
@@ -33,7 +34,7 @@ In this guide you will learn how to set, modify, and remove both the **open pass
 }
 ```
 
-**Response Example (JSON)**  
+**Response Example (JSON)**
 
 ```json
 {
@@ -45,17 +46,17 @@ In this guide you will learn how to set, modify, and remove both the **open pass
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Protection applied successfully; workbook now secured. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                  |
+| ---- | --------------------- | ------------------------------------------------------------ |
+| 200  | OK                    | Protection applied successfully; workbook now secured.       |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                            |
+| 500  | Internal Server Error | Unexpected server error.                                     |
 
 **Code Samples**
 
-*C# (Aspose.Cells Cloud SDK)*  
+_C# (Aspose.Cells Cloud SDK)_
 
 ```csharp
 using Aspose.Cells.Cloud.SDK.Api;
@@ -70,7 +71,7 @@ var request = new SetWorkbookProtectionRequest(
 apiInstance.SetWorkbookProtection(request);
 ```
 
-*Python (Aspose.Cells Cloud SDK)*  
+_Python (Aspose.Cells Cloud SDK)_
 
 ```python
 import asposecellscloud
@@ -86,7 +87,7 @@ request = SetWorkbookProtectionRequest(
 api.set_workbook_protection(request)
 ```
 
-*Bash (cURL)*  
+_Bash (cURL)_
 
 ```bash
 curl -X PUT "https://api.aspose.cloud/v3.0/cells/MyFile.xlsx/protection?openPassword=MyOpenPwd123&readWritePassword=MyEditPwd456" \
@@ -96,12 +97,8 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/MyFile.xlsx/protection?openPass
 **Error Handling**  
 When an error occurs, the API returns a JSON payload containing `Code`, `Message`, and optionally `Description`. Check the status code and handle it accordingly in your application logic.
 
-**Best Practices**  
-- Use strong, unique passwords for workbook protection.  
-- Store credentials securely—avoid hardcoding secrets in source code.  
-- Rotate passwords periodically for sensitive workbooks.  
+**Best Practices**
 
-**Related Topics**  
-
-- **{{% relref "cells/protect-spreadsheet" %}}**  
-- **{{% relref "cells/unprotect-spreadsheet" %}}**
+- Use strong, unique passwords for workbook protection.
+- Store credentials securely—avoid hardcoding secrets in source code.
+- Rotate passwords periodically for sensitive workbooks.

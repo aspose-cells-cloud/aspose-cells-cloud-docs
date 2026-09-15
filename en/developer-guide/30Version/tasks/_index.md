@@ -14,7 +14,8 @@ weight: 100
 
 Aspose.Cells Cloud provides a **Task API** that enables developers to perform a variety of operations on Excel workbooks, such as converting formats, importing data, executing SmartMarker templates, and saving results. Tasks are executed asynchronously: you create a task, run it, and retrieve the outcome.
 
-**Prerequisites:** an Aspose Cloud account with a valid API key, supported Excel file formats, and the latest version of the Cells API (v3.0+).  
+**Prerequisites:** an Aspose Cloud account with a valid API key, supported Excel file formats, and the latest version of the Cells API (v3.0+).
+
 > **Note**: As of June 2024, the Task API is stable in v3.0+. v2.x is deprecated.  
 > 📅 [View API changelog](/cells/changelog/)
 
@@ -29,6 +30,7 @@ Aspose.Cells Cloud provides a **Task API** that enables developers to perform a 
 For complete method specifications—including HTTP verbs, endpoint URLs, request/response schemas, parameter tables, and example payloads—refer to the individual task pages linked above. This detailed API reference helps developers integrate the Tasks API quickly and reliably.
 
 **See Also:**
-- [Authentication and API Keys](/cells/authentication/)
+
+- [Authentication and API Keys]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）
 - [Error Handling and Status Codes](/cells/error-handling/)
 - [Asynchronous Task Workflow](/cells/async-tasks/)

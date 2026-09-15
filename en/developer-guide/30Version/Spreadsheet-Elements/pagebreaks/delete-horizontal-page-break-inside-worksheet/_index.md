@@ -13,7 +13,7 @@ weight: 50
 
 This REST API deletes a **horizontal** page break.
 
-**Prerequisites**: To call this endpoint you must have a valid Aspose Cloud JWT access token. Obtain it by following the [Authentication guide](https://docs.aspose.cloud/cells/authentication/).
+**Prerequisites**: To call this endpoint you must have a valid Aspose Cloud JWT access token. Obtain it by following the [Authentication guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）.
 
 ## DeleteHorizontalPageBreak API
 
@@ -21,7 +21,7 @@ This REST API deletes a **horizontal** page break.
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks/{index}
 ```
 
-*All API calls must be made over **HTTPS**.*
+_All API calls must be made over **HTTPS**._
 
 ### **Security and Authentication**
 
@@ -46,9 +46,10 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | 400       | Bad Request – malformed request syntax or invalid parameters.                  |
 | 500       | Internal Server Error – an unexpected condition was encountered.               |
 
-**See also:**  
-- [Add Horizontal Page Break](/page-breaks/add-horizontal-page-break/)  
-- [Get Horizontal Page Breaks](/page-breaks/get-horizontal-page-breaks/)  
+**See also:**
+
+- [Add Horizontal Page Break](/page-breaks/add-horizontal-page-break/)
+- [Get Horizontal Page Breaks](/page-breaks/get-horizontal-page-breaks/)
 - [Delete Vertical Page Break](/page-breaks/delete-vertical-page-break/)
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteHorizontalPageBreak) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
@@ -81,7 +82,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/horizo
 **Response Schema**
 
 | Field   | Type    | Description                                      |
-|---------|---------|--------------------------------------------------|
+| ------- | ------- | ------------------------------------------------ |
 | Code    | integer | HTTP status code (e.g., 200).                    |
 | Status  | string  | Textual status message (e.g., "OK").             |
 | Message | string  | Optional additional information for error cases. |
@@ -101,56 +102,56 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< tab tabNum="1" >}}
 
 {{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleDeleteHorizontalPageBreak.cs" >}}
-*If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d).*
+_If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d)._
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_DeleteHorizontalPageBreak.java" >}}
-*If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/c59aa5c02f735466a5e34751cee73f5f).*
+_If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/c59aa5c02f735466a5e34751cee73f5f)._
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
 {{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_DeleteHorizontalPageBreak.php" >}}
-*If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/84283c8ba766ed815f47e6dfb0891152).*
+_If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/84283c8ba766ed815f47e6dfb0891152)._
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
 {{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_DeleteHorizontalPageBreak.rb" >}}
-*If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/36ed8b8727561b92692939513d365fca).*
+_If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/36ed8b8727561b92692939513d365fca)._
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
 {{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_DeleteHorizontalPageBreak.ts" >}}
-*If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/e82de2e4189bc27ae92abf73c36b4df0).*
+_If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/e82de2e4189bc27ae92abf73c36b4df0)._
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
 {{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_DeleteHorizontalPageBreak.py" >}}
-*If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/61e922de11e6e7144db88adcad6501c1).*
+_If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/61e922de11e6e7144db88adcad6501c1)._
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_DeleteHorizontalPageBreak.pl" >}}
-*If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/f82a3a00251e34ff8766116282c8c9ca).*
+_If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/f82a3a00251e34ff8766116282c8c9ca)._
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
 {{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_DeleteHorizontalPageBreak.go" >}}
-*If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/2b824d4e13644368d12682856aa49185).*
+_If the example fails to load, view it on the [GitHub Gist](https://gist.github.com/aspose-cells-cloud-gists/2b824d4e13644368d12682856aa49185)._
 
 {{< /tab >}}
 

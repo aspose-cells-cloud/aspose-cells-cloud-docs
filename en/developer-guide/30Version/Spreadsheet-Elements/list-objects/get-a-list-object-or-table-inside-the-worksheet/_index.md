@@ -22,7 +22,7 @@ aliases:
 
 ## Retrieve a List Object (Table) from a Worksheet
 
-Retrieve a **list object** (also known as a *table*) from a specific worksheet in an Excel workbook using the Aspose.Cells Cloud REST API. The endpoint supports retrieving the full ListObject metadata in JSON format or exporting the table directly to a specified format (PDF, CSV, JSON, etc.) via the optional `format` query parameter.
+Retrieve a **list object** (also known as a _table_) from a specific worksheet in an Excel workbook using the Aspose.Cells Cloud REST API. The endpoint supports retrieving the full ListObject metadata in JSON format or exporting the table directly to a specified format (PDF, CSV, JSON, etc.) via the optional `format` query parameter.
 
 ---
 
@@ -31,9 +31,9 @@ Retrieve a **list object** (also known as a *table*) from a specific worksheet i
 | Requirement         | Details                                                                                                                                                        |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Authentication**  | A valid **JWT** (Bearer) token is required. Obtain the token via the **OAuth2** authentication flow described in the [Authentication guide](/authentication/). |
-| **Storage**         | The workbook must be stored in an Aspose Cloud storage location. For non-default storage, specify the `storageName` query parameter.                         |
+| **Storage**         | The workbook must be stored in an Aspose Cloud storage location. For non-default storage, specify the `storageName` query parameter.                           |
 | **Rate limits**     | Standard Aspose Cloud rate limit: 100 requests/minute per account.                                                                                             |
-| **SDKs (optional)** | Official SDKs (C#, Java, Python, PHP, Ruby, Go, Node.js) simplify request construction and response handling. See **SDK Samples** below.                      |
+| **SDKs (optional)** | Official SDKs (C#, Java, Python, PHP, Ruby, Go, Node.js) simplify request construction and response handling. See **SDK Samples** below.                       |
 
 ---
 
@@ -45,16 +45,17 @@ Retrieve a **list object** (also known as a *table*) from a specific worksheet i
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listobjectindex}
 ```
 
-| Parameter           | Type      | Location | Required | Description                                                                 |
-| ------------------- | --------- | -------- | -------- | --------------------------------------------------------------------------- |
-| **name**            | `string`  | Path     | ✔️       | Name of the Excel file (including extension, e.g., `Book1.xlsx`).         |
-| **sheetName**       | `string`  | Path     | ✔️       | Worksheet name containing the target list object.                           |
-| **listobjectindex** | `integer` | Path     | ✔️       | **Zero-based** index of the list object to retrieve.                        |
-| **format**          | `string`  | Query    | ❌       | Export format: `pdf`, `csv`, `json`, `xlsx`, etc. Omit to return JSON.     |
-| **folder**          | `string`  | Query    | ❌       | Folder path where the workbook resides (e.g., `Reports/2024`).              |
-| **storageName**     | `string`  | Query    | ❌       | Name of the Aspose Cloud storage (if not using default storage).           |
+| Parameter           | Type      | Location | Required | Description                                                            |
+| ------------------- | --------- | -------- | -------- | ---------------------------------------------------------------------- |
+| **name**            | `string`  | Path     | ✔️       | Name of the Excel file (including extension, e.g., `Book1.xlsx`).      |
+| **sheetName**       | `string`  | Path     | ✔️       | Worksheet name containing the target list object.                      |
+| **listobjectindex** | `integer` | Path     | ✔️       | **Zero-based** index of the list object to retrieve.                   |
+| **format**          | `string`  | Query    | ❌       | Export format: `pdf`, `csv`, `json`, `xlsx`, etc. Omit to return JSON. |
+| **folder**          | `string`  | Query    | ❌       | Folder path where the workbook resides (e.g., `Reports/2024`).         |
+| **storageName**     | `string`  | Query    | ❌       | Name of the Aspose Cloud storage (if not using default storage).       |
 
 #### Notes
+
 - All requests **must** use HTTPS.
 - When `format` is provided, the response is a binary file stream (e.g., `Content-Type: text/csv`).
 - Without `format`, the response is a JSON object describing the ListObject.
@@ -208,7 +209,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
 | **500**   | Internal server error.                                          | `{"Code":500,"Message":"Unexpected server error."}`  |
 
 ### Common Pitfalls
-- **Zero-based indexing**: `listobjectindex=1` retrieves the *second* table in the worksheet.
+
+- **Zero-based indexing**: `listobjectindex=1` retrieves the _second_ table in the worksheet.
 - **Folder path**: Include subfolder paths in the `folder` query (e.g., `?folder=Reports/2024`).
 - **Supported formats**: Only formats supported by Aspose.Cells (e.g., `pdf`, `xlsx`, `csv`, `json`) are accepted. Invalid values return `400`.
 
@@ -415,11 +417,11 @@ func main() {
 
 ## See Also
 
-| Related Endpoint                     | Description                                     |
-| ------------------------------------ | ----------------------------------------------- |
-| [Add ListObject](/list-objects/add/) | Create a new table in a worksheet.              |
-| [Update ListObject](/list-objects/update/) | Modify table properties (style, columns, etc.). |
-| [Delete ListObject](/list-objects/delete/) | Remove a table from a worksheet.                |
+| Related Endpoint                            | Description                                     |
+| ------------------------------------------- | ----------------------------------------------- |
+| [Add ListObject](/list-objects/add/)        | Create a new table in a worksheet.              |
+| [Update ListObject](/list-objects/update/)  | Modify table properties (style, columns, etc.). |
+| [Delete ListObject](/list-objects/delete/)  | Remove a table from a worksheet.                |
 | [List All ListObjects](/list-objects/list/) | Enumerate all tables in a worksheet.            |
 
 ---
@@ -427,5 +429,5 @@ func main() {
 ## References
 
 - **OpenAPI Specification** – [https://apireference.aspose.cloud/cells/#/ListObjects/GetWorksheetListObject](https://apireference.aspose.cloud/cells/#/ListObjects/GetWorksheetListObject)
-- **Authentication Guide** – [https://docs.aspose.cloud/cells/authentication/](https://docs.aspose.cloud/cells/authentication/)
+- **Authentication Guide** – [https://docs.aspose.cloud/cells/authentication/]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）
 - **GitHub SDK Repositories** – [https://github.com/aspose-cells-cloud](https://github.com/aspose-cells-cloud)

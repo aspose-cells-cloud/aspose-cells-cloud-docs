@@ -52,25 +52,26 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/col
 
 ### Path Parameters
 
-| Parameter   | Type   | Required | Description                          |
-|-------------|--------|----------|--------------------------------------|
-| `name`      | string | Yes      | The name of the workbook (e.g., `input.xlsx`). |
+| Parameter   | Type   | Required | Description                                       |
+| ----------- | ------ | -------- | ------------------------------------------------- |
+| `name`      | string | Yes      | The name of the workbook (e.g., `input.xlsx`).    |
 | `sheetName` | string | Yes      | The name of the worksheet containing the columns. |
 
 ### Query Parameters
 
-| Parameter                | Type    | Required | Description                                                                 |
-|--------------------------|---------|----------|-----------------------------------------------------------------------------|
-| `sourceColumnIndex`      | integer | Yes      | 0-based index of the first column to copy (e.g., `1` for column B).        |
-| `destinationColumnIndex` | integer | Yes      | 0-based index where the copied column(s) will be inserted.                 |
-| `columnNumber`           | integer | Yes      | Number of consecutive columns to copy.                                      |
+| Parameter                | Type    | Required | Description                                                                                       |
+| ------------------------ | ------- | -------- | ------------------------------------------------------------------------------------------------- |
+| `sourceColumnIndex`      | integer | Yes      | 0-based index of the first column to copy (e.g., `1` for column B).                               |
+| `destinationColumnIndex` | integer | Yes      | 0-based index where the copied column(s) will be inserted.                                        |
+| `columnNumber`           | integer | Yes      | Number of consecutive columns to copy.                                                            |
 | `worksheet`              | string  | No       | **Optional**: Target worksheet name for cross-worksheet copy. Defaults to `sheetName` if omitted. |
-| `folder`                 | string  | No       | Path to the folder in Aspose Cloud storage (e.g., `/docs/sheets`).         |
-| `storageName`            | string  | No       | Name of the cloud storage (e.g., `FirstStorage`). Defaults to the account’s primary storage. |
+| `folder`                 | string  | No       | Path to the folder in Aspose Cloud storage (e.g., `/docs/sheets`).                                |
+| `storageName`            | string  | No       | Name of the cloud storage (e.g., `FirstStorage`). Defaults to the account’s primary storage.      |
 
-> **Important**:  
-> - All indices are **0-based**.  
-> - The `destinationColumnIndex` must be ≥ 0 and ≤ total columns in the worksheet.  
+> **Important**:
+>
+> - All indices are **0-based**.
+> - The `destinationColumnIndex` must be ≥ 0 and ≤ total columns in the worksheet.
 > - Copying columns may shift existing columns to the right.
 
 ### OpenAPI Specification
@@ -265,7 +266,7 @@ const request = new PostCopyWorksheetColumnsRequest({
   destinationColumnIndex: 12,
   columnNumber: 3,
   folder: "docs/sheets",
-  storageName: "FirstStorage"
+  storageName: "FirstStorage",
 });
 
 try {
@@ -396,62 +397,10 @@ func main() {
 
 The API returns standard HTTP status codes with a JSON body containing error details.
 
-| Status Code | Meaning                                          | Example Response Body                                              |
-|-------------|--------------------------------------------------|--------------------------------------------------------------------|
-| `200`       | Success                                          | `{"Code": 200, "Status": "OK"}`                                   |
-| `400`       | Bad Request – invalid column indices or missing params | `{"Code": 400, "Message": "Column index is out of range."}`     |
-| `401`       | Unauthorized – invalid/expired token             | `{"Code": 401, "Message": "Access token is invalid or expired."}` |
-| `404`       | Not Found – workbook/worksheet does not exist    | `{"Code": 404, "Message": "Workbook 'test.xlsx' not found."}`     |
-| `500`       | Internal Server Error                            | `{"Code": 500, "Message": "An internal server error occurred."}`  |
-
-### Troubleshooting Tips
-
-- **"Column index is out of range"**: Verify `sourceColumnIndex`, `destinationColumnIndex`, and `columnNumber` are non-negative and within bounds.  
-- **"Workbook not found"**: Confirm `name` matches the file in cloud storage (case-sensitive).  
-- **"Access token expired"**: Regenerate the token; tokens expire after 24 hours.  
-- **"Worksheet not found"**: Ensure `sheetName` matches the worksheet name exactly (including spaces and case).
-
----
-
-## Visual Guide
-
-![Row Copy Operation Diagram](https://docs.aspose.cloud/total/images/copy-columns-diagram.png)
-
-*Figure 1: Visual representation of copying 3 columns (B–D) from source index 1 to destination index 12 (inserted as M–O). Existing columns shift right.*
-
-**Alt text**: Diagram showing source columns B–D (index 1–3) copied to destination starting at column M (index 12), shifting columns M–Z right by 3 positions.
-
----
-
-## FAQ
-
-{{< faq title="How do I authenticate when calling the Copy Columns API?" >}}
-Obtain an OAuth2 access token using your `client_id` and `client_secret` from the Aspose.Cloud Dashboard. Include it in the request header as `Authorization: Bearer <access_token>`.
-{{< /faq >}}
-
-{{< faq title="Can I copy columns to another worksheet or workbook?" >}}
-To copy within the same workbook, set `worksheet` to the target worksheet name. For cross-workbook copying, first download the source workbook, modify it locally, and upload as a new file — or use the [Copy Worksheet](/worksheets/copy/) API.
-{{< /faq >}}
-
-{{< faq title="What happens to existing data at the destination?" >}}
-Existing data at and after the `destinationColumnIndex` shifts right to make space. For example, copying 3 columns into index 12 will push column 12 → 15, 13 → 16, etc.
-{{< /faq >}}
-
-{{< faq title="Does this operation preserve formulas and formatting?" >}}
-Yes. The API copies cell values, formulas, styles, conditional formatting, data validation, and comments. Only column widths are preserved if explicitly copied (default behavior).
-{{< /faq >}}
-
----
-
-## See Also
-
-- [Add Column](/columns/add/)  
-- [Delete Column](/columns/delete/)  
-- [Hide Column](/columns/hide/)  
-- [Unhide Column](/columns/unhide/)  
-- [Column Width Management](/columns/width/)  
-- [Copy Rows Operation](/rows/copy/)  
-
----
-
-{{< /faq >}}
+| Status Code | Meaning                                                | Example Response Body                                             |
+| ----------- | ------------------------------------------------------ | ----------------------------------------------------------------- |
+| `200`       | Success                                                | `{"Code": 200, "Status": "OK"}`                                   |
+| `400`       | Bad Request – invalid column indices or missing params | `{"Code": 400, "Message": "Column index is out of range."}`       |
+| `401`       | Unauthorized – invalid/expired token                   | `{"Code": 401, "Message": "Access token is invalid or expired."}` |
+| `404`       | Not Found – workbook/worksheet does not exist          | `{"Code": 404, "Message": "Workbook 'test.xlsx' not found."}`     |
+| `500`       | Internal Server Error                                  | `{"Code": 500, "Message": "An internal server error occurred."}`  |

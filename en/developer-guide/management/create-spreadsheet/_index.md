@@ -37,6 +37,7 @@ POST https://api.aspose.cloud/connect/token
 ```
 
 With form data:
+
 ```
 grant_type=client_credentials&client_id={ClientID}&client_secret={ClientSecret}
 ```
@@ -45,14 +46,14 @@ Include the resulting `access_token` in the `Authorization: Bearer` header for s
 
 ### Request Parameters
 
-| Parameter Name     | Type   | Location | Required | Description |
-|--------------------|--------|----------|----------|-------------|
-| **format**         | String | Query    | No       | File format for the new spreadsheet. Supported values: `XLSX`, `XLS`, `ODS`, `CSV`. Default: `XLSX`. |
-| **template**       | String | Query    | No       | Name of a template file stored in your cloud storage (e.g., `invoice_template.xlsx`). If omitted, a blank workbook is created. |
+| Parameter Name     | Type   | Location | Required | Description                                                                                                                                       |
+| ------------------ | ------ | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **format**         | String | Query    | No       | File format for the new spreadsheet. Supported values: `XLSX`, `XLS`, `ODS`, `CSV`. Default: `XLSX`.                                              |
+| **template**       | String | Query    | No       | Name of a template file stored in your cloud storage (e.g., `invoice_template.xlsx`). If omitted, a blank workbook is created.                    |
 | **outPath**        | String | Query    | No       | Target folder path in cloud storage for the generated file. If `null` or omitted, the spreadsheet is saved to the root of the configured storage. |
-| **outStorageName** | String | Query    | Yes      | Identifier of the configured cloud storage (e.g., `MyDrive`). |
-| **region**         | String | Query    | No       | Locale setting (e.g., `en-US`, `fr-FR`) that determines default date, number, and currency formats. |
-| **password**       | String | Query    | No       | Password for an encrypted template file. Leave empty if the template is not protected. |
+| **outStorageName** | String | Query    | Yes      | Identifier of the configured cloud storage (e.g., `MyDrive`).                                                                                     |
+| **region**         | String | Query    | No       | Locale setting (e.g., `en-US`, `fr-FR`) that determines default date, number, and currency formats.                                               |
+| **password**       | String | Query    | No       | Password for an encrypted template file. Leave empty if the template is not protected.                                                            |
 
 ### Response
 
@@ -60,13 +61,13 @@ The API returns the generated file as a binary stream in the response body.
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description |
-|------|-----------------------|-------------|
+| Code | Meaning               | Description                                                               |
+| ---- | --------------------- | ------------------------------------------------------------------------- |
 | 200  | OK                    | Spreadsheet created successfully; file content returned in response body. |
-| 400  | Bad Request           | Invalid parameters (e.g., unsupported format, missing `outStorageName`). |
-| 401  | Unauthorized          | Invalid or missing JWT token. |
-| 404  | Not Found             | Template file not found in storage. |
-| 500  | Internal Server Error | Unexpected server error during file generation. |
+| 400  | Bad Request           | Invalid parameters (e.g., unsupported format, missing `outStorageName`).  |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                             |
+| 404  | Not Found             | Template file not found in storage.                                       |
+| 500  | Internal Server Error | Unexpected server error during file generation.                           |
 
 ### Example: cURL Request
 
@@ -86,6 +87,7 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/create?format=XLSX&
 
 {{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // Install-Package Aspose.Cells.Cloud.Sdk -Version 23.3.0
 
@@ -97,8 +99,10 @@ if (response != null && response.FileContents != null)
     File.WriteAllBytes("new_report.xlsx", response.FileContents);
 }
 ```
+
 {{< /tab >}}
 {{< tab tabNum="2" >}}
+
 ```java
 // Install: com.aspose:aspose-cells-cloud:23.3.0
 
@@ -107,8 +111,10 @@ FileContentResult response = cellsApi.cellsSpreadsheetCreate("XLSX", "MyStorage"
 
 Files.write(Paths.get("new_report.xlsx"), response.getFileContents());
 ```
+
 {{< /tab >}}
 {{< tab tabNum="3" >}}
+
 ```php
 // composer require aspose/cells-cloud-php
 
@@ -117,8 +123,10 @@ $response = $cellsApi->cellsSpreadsheetCreate("XLSX", "MyStorage");
 
 file_put_contents("new_report.xlsx", $response->getFileContents());
 ```
+
 {{< /tab >}}
 {{< tab tabNum="4" >}}
+
 ```ruby
 # gem install aspose_cells_cloud
 
@@ -127,20 +135,29 @@ response = api.cells_spreadsheet_create("XLSX", out_storage_name: "MyStorage")
 
 File.write("new_report.xlsx", response.file_contents)
 ```
+
 {{< /tab >}}
 {{< tab tabNum="5" >}}
+
 ```typescript
 // npm install @aspose/cells-cloud
 
 import { CellsApi } from "@aspose/cells-cloud";
 
 const cellsApi = new CellsApi("xxxxx", "xxxxx");
-const response = await cellsApi.cellsSpreadsheetCreate("XLSX", { outStorageName: "MyStorage" });
+const response = await cellsApi.cellsSpreadsheetCreate("XLSX", {
+  outStorageName: "MyStorage",
+});
 
-await fs.promises.writeFile("new_report.xlsx", Buffer.from(response.fileContents));
+await fs.promises.writeFile(
+  "new_report.xlsx",
+  Buffer.from(response.fileContents),
+);
 ```
+
 {{< /tab >}}
 {{< tab tabNum="6" >}}
+
 ```python
 # pip install asposecellscloud
 
@@ -156,8 +173,10 @@ response = cells_api.cells_spreadsheet_create(
 with open("new_report.xlsx", "wb") as f:
     f.write(response.file_contents)
 ```
+
 {{< /tab >}}
 {{< tab tabNum="7" >}}
+
 ```perl
 # cpan install AsposeCellsCloud
 
@@ -177,8 +196,10 @@ binmode $fh;
 print $fh $response->{file_contents};
 close $fh;
 ```
+
 {{< /tab >}}
 {{< tab tabNum="8" >}}
+
 ```go
 // go get github.com/aspose-cells-cloud/aspose-cells-cloud-go/v23
 
@@ -202,18 +223,22 @@ if err == nil {
     os.WriteFile("new_report.xlsx", response.FileContents, 0644)
 }
 ```
+
 {{< /tab >}}
 {{< /tabs >}}
 
 ## Where to Use the Create Spreadsheet API?
 
 ### Initialization of Automated Reporting Systems
+
 Create a new blank workbook or generate a report file from a standard template at the start of each daily/weekly automation cycle.
 
 ### User Self-Service Portals
+
 Allow customers to select a template (e.g., quotation, project schedule) and instantly download a customized Excel file without developer involvement.
 
 ### Batch Data Export and Distribution
+
 Produce separate workbooks with a uniform format for each exported dataset, simplifying downstream processing and distribution.
 
 ## Why Use the Create Spreadsheet API?
@@ -235,12 +260,12 @@ Produce separate workbooks with a uniform format for each exported dataset, simp
 
 ## Error Handling
 
-| Code | Scenario | Resolution |
-|------|----------|------------|
-| 400 | Missing required parameter (e.g., `outStorageName`) | Validate request parameters; ensure `outStorageName` is provided and storage is configured. |
-| 404 | Template file not found | Confirm the template filename and path are correct in cloud storage. |
-| 401 | Invalid or expired token | Re-authenticate and refresh the JWT token. |
-| 500 | Internal server error | Retry the request; if persistent, contact Aspose support with request ID and timestamp. |
+| Code | Scenario                                            | Resolution                                                                                  |
+| ---- | --------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| 400  | Missing required parameter (e.g., `outStorageName`) | Validate request parameters; ensure `outStorageName` is provided and storage is configured. |
+| 404  | Template file not found                             | Confirm the template filename and path are correct in cloud storage.                        |
+| 401  | Invalid or expired token                            | Re-authenticate and refresh the JWT token.                                                  |
+| 500  | Internal server error                               | Retry the request; if persistent, contact Aspose support with request ID and timestamp.     |
 
 ## Best Practices
 
@@ -258,11 +283,3 @@ Produce separate workbooks with a uniform format for each exported dataset, simp
 
 5. **Caching Templates**  
    Store frequently used templates in cloud storage and reference them by name to avoid re-uploads.
-
-## See Also
-
-- [Add Worksheet API]({{< ref "add-worksheet.md" >}})  
-- [Update Cell API]({{< ref "update-cell.md" >}})  
-- [Export Workbook API]({{< ref "export-workbook.md" >}})  
-- [Aspose.Cells Cloud SDKs on GitHub](https://github.com/aspose-cells-cloud)  
-- [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)

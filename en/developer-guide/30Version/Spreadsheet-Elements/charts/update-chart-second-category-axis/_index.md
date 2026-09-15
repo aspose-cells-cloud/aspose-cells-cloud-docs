@@ -31,7 +31,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | folder         | string  | query    | The folder path where the file is stored.              |
 | storageName    | string  | query    | The name of the storage service.                       |
 
-**Authentication** – The API requires a valid OAuth 2.0 access token. Generate a JWT token by following the [Authentication Guide](https://docs.aspose.cloud/cells/authentication/). Include the token in the `Authorization` header as shown in the cURL example below.
+**Authentication** – The API requires a valid OAuth 2.0 access token. Generate a JWT token by following the [Authentication Guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）. Include the token in the `Authorization` header as shown in the cURL example below.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostChartSecondCategoryAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -47,20 +47,20 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <jwt token>" \
-  -d '{ 
+  -d '{
         "axis": {
           /* axis settings, e.g., "Title": "New Axis Title", "IsVisible": true */
         }
       }'
 ```
 
-*Replace `{name}`, `{sheetName}`, `{chartIndex}`, `{folder}`, and `{storageName}` with your actual values. The request body must contain the `axis` object with the desired settings.*
+_Replace `{name}`, `{sheetName}`, `{chartIndex}`, `{folder}`, and `{storageName}` with your actual values. The request body must contain the `axis` object with the desired settings._
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-**Successful response (200)**  
+**Successful response (200)**
 
 ```json
 {
@@ -70,21 +70,21 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
     "Id": "chart_1",
     "SecondCategoryAxis": {
       "Title": "New Axis Title",
-      "IsVisible": true,
+      "IsVisible": true
       /* additional axis properties */
     }
   }
 }
 ```
 
-**Error responses**  
+**Error responses**
 
-| Status Code | Description                              |
-|-------------|------------------------------------------|
-| 400         | Bad request – missing or invalid parameters. |
-| 401         | Unauthorized – invalid or missing JWT token. |
+| Status Code | Description                                                         |
+| ----------- | ------------------------------------------------------------------- |
+| 400         | Bad request – missing or invalid parameters.                        |
+| 401         | Unauthorized – invalid or missing JWT token.                        |
 | 404         | Not found – the specified file, worksheet, or chart does not exist. |
-| 500         | Internal server error – unexpected condition on the server. |
+| 500         | Internal server error – unexpected condition on the server.         |
 
 ```json
 {
@@ -167,7 +167,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 **Notes & Best Practices**
 
-* The `chartIndex` parameter is zero‑based; the first chart in a worksheet is index 0.  
-* The API supports both `.xlsx` and `.xls` workbook formats.  
-* Include only the properties you need in the `axis` object; unspecified properties retain their existing values.  
-* Respect rate‑limit guidelines (typically 100 requests per minute per account) to avoid throttling.
+- The `chartIndex` parameter is zero‑based; the first chart in a worksheet is index 0.
+- The API supports both `.xlsx` and `.xls` workbook formats.
+- Include only the properties you need in the `axis` object; unspecified properties retain their existing values.
+- Respect rate‑limit guidelines (typically 100 requests per minute per account) to avoid throttling.

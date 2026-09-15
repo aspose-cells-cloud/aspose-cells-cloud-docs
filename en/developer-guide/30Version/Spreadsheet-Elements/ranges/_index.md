@@ -34,4 +34,4 @@ The Aspose.Cells Cloud REST API provides dedicated endpoints for each range oper
 All requests and responses are in JSON format. Include the `Authorization` header with your access token for authentication.
 
 > **Prerequisites**  
-> Requires a valid Aspose.Cells Cloud API key. See [Authentication Guide](/cells/authentication/) for setup instructions.
+> Requires a valid Aspose.Cells Cloud API key. See [Authentication Guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/） for setup instructions.

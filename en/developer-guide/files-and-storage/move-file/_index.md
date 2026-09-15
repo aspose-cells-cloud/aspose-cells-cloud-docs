@@ -1,213 +1,88 @@
 ---
-url: /move-file/
-title: Move File in Aspose.Cells Cloud
-second_title: "API Reference"
+title: "Aspose.Cells Cloud Move File API – Interface for Fast Moving of Files in the Cloud"
+second_title: "Document"
+ArticleTitle: "Cloud-based Excel File Efficient Management Solution – Interface for Fast Moving of Files in the Cloud"
 linktitle: "Move File"
 type: docs
-description: "Use Aspose.Cells Cloud's v4.0 Move File API to programmatically relocate Excel files between cloud storage folders. Includes API endpoint, parameters, cURL, and SDK examples."
-keywords: "Aspose.Cells Cloud API, Excel file move REST, cloud storage management, file operations API, document automation"
-date: 2024-03-15
+url: /move-file/
+keywords: "Aspose.Cells, Move File API, Cloud Storage, Excel API, File Management"
+description: "How to move files between folders in Aspose.Cells Cloud storage using the v4.0 Move File API – endpoint, parameters, examples, and SDK links."
 weight: 100
-draft: false
 ---
 
-## Move File in Aspose.Cells Cloud
+The **moveFile** API moves a file from one location to another within Aspose.Cells Cloud storage. It helps you organize files and manage storage efficiently.
 
-The **Move File** API enables you to relocate files between folders within Aspose.Cells Cloud storage. This operation supports organizing large file inventories, implementing archival strategies, and maintaining structured storage hierarchies—all without modifying the file’s content or metadata. Version history is preserved during the move.
+## **Excel API: Move File**
 
-> **Prerequisites**  
-> Before using this API, ensure you have:  
-> 1. An active [Aspose.Cells Cloud account](https://dashboard.aspose.cloud/)  
-> 2. Valid client credentials (`Client ID` and `Client Secret`)  
-> 3. A file already uploaded to your cloud storage (e.g., via [Upload File](/upload-file/))
+### Web API
 
----
-
-### Excel API: Move File
-
-#### Web API Endpoint
-
-```http
+```bash
 PUT https://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}
 ```
 
-#### Authentication
+### **Security and Authentication**
 
-All Aspose.Cells Cloud API requests require JWT token-based authentication. Include your access token in the `Authorization` header:
-
-```http
-Authorization: Bearer {access_token}
-```
-
-For detailed instructions, see our [Aspose.Cells Cloud JWT authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-#### Request Parameters
-
-| Parameter Name    | Type   | Location | Required | Description                                                                 |
-|-------------------|--------|----------|----------|-----------------------------------------------------------------------------|
-| `srcPath`         | string | Path     | Yes      | Full path of the source file in cloud storage (e.g., `Source/Report.xlsx`) |
-| `destPath`        | string | Query    | Yes      | Full path where the file will be moved (e.g., `Archive/2024/Report.xlsx`) |
-| `srcStorageName`  | string | Query    | No       | Name of the source storage (uses default storage if omitted)               |
-| `destStorageName` | string | Query    | No       | Name of the destination storage (uses default storage if omitted)          |
-| `versionId`       | string | Query    | No       | Specific version ID to move (for versioned files)                          |
-
-#### Request Example (cURL)
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/file/move/Source/Report.xlsx?destPath=Archive/2024/Report.xlsx" \
-     -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.x..." \
-     -H "Content-Type: application/json"
+-H "Authorization: Bearer {access_token}"
 ```
 
-#### Response
+### The request parameters of **moveFile** API are
 
-A successful request returns `HTTP 200 OK` with an empty JSON body:
+| Parameter Name  | Type   | Path/Query String/HTTP Body | Description                                        |
+| --------------- | ------ | --------------------------- | -------------------------------------------------- |
+| srcPath         | String | Path                        | The source path of the file to be moved.           |
+| destPath        | String | Query                       | The destination path where the file will be moved. |
+| srcStorageName  | String | Query                       | The source storage name, if applicable.            |
+| destStorageName | String | Query                       | The destination storage name, if applicable.       |
+| versionId       | String | Query                       | The version ID of the file, if applicable.         |
+
+### **Response**
+
+A successful request returns **HTTP 200 OK** with an empty JSON body.
 
 ```json
 {}
 ```
 
-#### HTTP Status Codes
+**HTTP Status Codes**
 
-| Code | Status            | Description                                                                 |
-|------|-------------------|-----------------------------------------------------------------------------|
-| 200  | OK                | File moved successfully.                                                    |
-| 400  | Bad Request       | Missing or invalid parameters (e.g., `srcPath` or `destPath` invalid).      |
-| 401  | Unauthorized      | Invalid, expired, or missing JWT token.                                     |
-| 404  | Not Found         | Source file does not exist or storage path is inaccessible.                 |
-| 409  | Conflict          | Destination path already exists and cannot be overwritten.                  |
-| 500  | Internal Server Error | Unexpected server-side error occurred during processing.               |
+| HTTP Code | HTTP Status           | Description                                                       |
+| --------- | --------------------- | ----------------------------------------------------------------- |
+| 200       | OK                    | Web API called successfully; response contains operation details. |
+| 400       | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401       | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413       | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500       | Internal Server Error | Unexpected server error.                                          |
 
-#### Notes
+## OpenAPI Specification
 
-- Moving a file **does not** change its content, formatting, or embedded metadata (e.g., custom properties).
-- Version history is preserved when moving versioned files.
-- If `destPath` includes non-existent folders, they will be created automatically.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/MoveFile) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
----
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
-### Code Examples
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
-Using an SDK is the best way to accelerate development. SDKs handle authentication, serialization, and error handling automatically.
+{{< tab tabNum="11" >}}
 
-The following code examples demonstrate how to call the Move File API:
-
-{{< tabs tabTotal="4" tabID="1" tabName1="Go" tabName2="Python" tabName3="Node.js" tabName4="C#" >}}
-
-{{< tab tabNum="1" >}}
-
-```go
-package main
-
-import (
-    "fmt"
-    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v40/cells"
-)
-
-func main() {
-    cfg := cells.NewConfiguration("YOUR_CLIENT_ID", "YOUR_CLIENT_SECRET")
-    client := cells.NewAPIClient(cfg)
-    
-    srcPath := "Source/Report.xlsx"
-    destPath := "Archive/2024/Report.xlsx"
-    
-    _, err := client.FileController.MoveFile(srcPath, &cells.MoveFileOptions{
-        DestPath: &destPath,
-    })
-    
-    if err != nil {
-        fmt.Println("Error:", err)
-    } else {
-        fmt.Println("File moved successfully!")
-    }
-}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}?destPath={destPath}" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
 {{< /tab >}}
 
-{{< tab tabNum="2" >}}
+{{< tab tabNum="12" >}}
 
-```python
-from asposecellscloud.api import CellsApi
-from asposecellscloud.models import MoveFileRequest
-
-client_id = "YOUR_CLIENT_ID"
-client_secret = "YOUR_CLIENT_SECRET"
-api = CellsApi(client_id, client_secret)
-
-src_path = "Source/Report.xlsx"
-dest_path = "Archive/2024/Report.xlsx"
-
-request = MoveFileRequest(
-    src_path=src_path,
-    dest_path=dest_path
-)
-
-api.cells_storage_move_file(request)
-print("File moved successfully!")
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```javascript
-const { CellsApi } = require("asposecellscloud");
-
-const clientId = "YOUR_CLIENT_ID";
-const clientSecret = "YOUR_CLIENT_SECRET";
-const api = new CellsApi(clientId, clientSecret);
-
-const srcPath = "Source/Report.xlsx";
-const destPath = "Archive/2024/Report.xlsx";
-
-api.cellsStorageMoveFile(srcPath, destPath)
-  .then(() => {
-    console.log("File moved successfully!");
-  })
-  .catch(err => {
-    console.error("Error:", err);
-  });
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```csharp
-using Aspose.Cells.Cloud.Sdk;
-
-var configuration = new Configuration 
-{ 
-    ClientId = "YOUR_CLIENT_ID", 
-    ClientSecret = "YOUR_CLIENT_SECRET" 
-};
-var cellsApi = new CellsApi(configuration);
-
-string srcPath = "Source/Report.xlsx";
-string destPath = "Archive/2024/Report.xlsx";
-
-await cellsApi.CellsStorageMoveFileAsync(srcPath, destPath);
-Console.WriteLine("File moved successfully!");
+```json
+{}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-> 💡 **Tip**: For full SDK examples and language-specific documentation, explore the [open-source Aspose.Cells Cloud SDKs on GitHub](https://github.com/aspose-cells-cloud).
+Using an SDK is the best way to speed up the development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
----
-
-### See Also
-
-- [Upload File](/upload-file/)  
-- [Delete File](/delete-file/)  
-- [Get File](/get-file/)  
-- [Download File](/download-file/)  
-
----
-
-### OpenAPI Specification
-
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/MoveFile) defines this publicly accessible programming interface and enables direct REST interactions from any HTTP client.
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

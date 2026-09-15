@@ -4,21 +4,11 @@ type: docs
 url: /get-first-cell-from-excel-worksheet/
 weight: 20
 keywords: "Aspose.Cells Cloud, Excel, REST API, Get First Cell, Worksheet, A1, API v3"
-description: "Step-by-step guide to retrieve the first cell (A1) from an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL, JSON, error handling, and SDK examples in C#, Java, Python, and more."
+description: "Learn how to retrieve the first cell (A1) of an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL request, JSON response, error examples, and SDK samples for C#, Java, PHP, Python, and more."
 ArticleTitle: "Get First Cell (A1) from an Excel Worksheet using Aspose.Cells Cloud API"
-date: 2024-03-15T09:30:00Z
-lastmod: 2024-05-02T14:10:00Z
-sitemap:
-  priority: 0.8
 ---
 
-## Retrieve the First Cell (A1)
-
 This REST API shows how to retrieve the **first cell** in an Excel file when the `cellOrMethodName` parameter is set to `firstcell`.
-
-{{< note >}}
-**⚠️ Note:** This example uses Aspose.Cells Cloud API v3.0. For the latest version, see our [API Changelog](/api-changelog/).
-{{< /note >}}
 
 **Endpoint**  
 `GET https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{worksheet}/cells/firstcell`
@@ -110,7 +100,7 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Success; the first cell data is returned in the response body. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
@@ -122,9 +112,7 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 - **Cloud SDK Family**
 
-Using an SDK is the best way to accelerate development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [open-source Aspose.Cells Cloud SDKs on GitHub](https://github.com/aspose-cells-cloud), including installation guides and contribution guidelines.
-
-For related operations, see [Get Cell by Name](/get-cell-by-name/) or [Update Cell Value](/update-cell-value/).
+Using an SDK is the best way to accelerate development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
@@ -132,49 +120,49 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="1" >}}
 
-{{< gist lang="csharp" "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleGetWorksheetCell.cs" >}}
+{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleGetWorksheetCell.cs" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist lang="java" "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_GetWorksheetCell.java" >}}
+{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_GetWorksheetCell.java" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist lang="php" "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_GetWorksheetCell.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_GetWorksheetCell.php" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist lang="ruby" "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetCell.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetCell.rb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist lang="typescript" "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetCell.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetCell.ts" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist lang="python" "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetCell.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetCell.py" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist lang="perl" "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetCell.pl" >}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetCell.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-{{< gist lang="go" "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetCell.go" >}}
+{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetCell.go" >}}
 
 {{< /tab >}}
 

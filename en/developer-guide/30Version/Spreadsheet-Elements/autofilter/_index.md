@@ -28,7 +28,7 @@ AutoFilter is the quickest way to display only the items you need from a workshe
 Aspose.Cells Cloud provides multiple APIs to apply various filter types, such as Color Filter, Date Filter, Number Filter, Text Filter, Blank Filter, and Non-Blank Filter.
 
 <!-- Use Hugo shortcode (if theme supports it) -->
-{{< table class="table table-striped" >}}
+<table class="table table-striped">
   <tr>
     <td class="col-md-2"><strong>Fill Color</strong></td>
     <td class="col-md-10">
@@ -77,9 +77,9 @@ Aspose.Cells Cloud provides multiple APIs to apply various filter types, such as
       <p>Aspose.Cells Cloud provides <a href="/cells/autofilter/add-custom-filter/">the Custom Filters API</a> for advanced scenarios, such as filtering rows that contain a specific substring or that start/end with a particular string.</p>
     </td>
   </tr>
-{{< /table >}}
+</table>
 
-> *Note:* The `add-filter` endpoint supports multiple filter types (text, number, date, custom); use query parameters to specify the filter criteria.
+> _Note:_ The `add-filter` endpoint supports multiple filter types (text, number, date, custom); use query parameters to specify the filter criteria.
 
 **AutoFilter Operations**
 
@@ -96,11 +96,12 @@ Aspose.Cells Cloud provides multiple APIs to apply various filter types, such as
 - [How to match all non-blank cells in an Excel worksheet](/cells/autofilter/match-all-non-blank/) – **Method:** POST, **Endpoint:** `/cells/autofilter/match-all-non-blank/`
 - [How to refresh an AutoFilter in an Excel worksheet](/cells/autofilter/refresh/) – **Method:** POST, **Endpoint:** `/cells/autofilter/refresh/`
 
-> *Note:* Icon filters are now managed via Conditional Formatting APIs. For details, see the [Conditional Formatting Guide](/conditional-formatting/).
+> _Note:_ Icon filters are now managed via Conditional Formatting APIs. For details, see the [Conditional Formatting Guide](/conditional-formatting/).
 
 **Prerequisites**
 
 Ensure you have:
+
 1. A valid Aspose.Cells Cloud API key
 2. A sample Excel file uploaded to cloud storage
 
@@ -123,6 +124,6 @@ response = api.cells_autofilter_post_worksheet_autofilter(
     match_blanks=False,
     case_sensitive=False
 )
-``` 
+```
 
 > Code samples in C#, Java, Node.js, PHP, and other languages are available in each operation’s dedicated documentation page.

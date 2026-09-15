@@ -14,17 +14,13 @@ weight: 100
 
 Hyperlinks in Excel let users create shortcuts to worksheets, files, folders, or webpages, providing quick navigation to specific locations.
 
-**Prerequisites:** a valid API token (see the [Authentication Guide]({{< relref "/authentication" >}})) and the Cells.Cloud SDK installed.
+**Prerequisites:** a valid API token (see the [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)) and the Cells.Cloud SDK installed.
 
 ## Working with Hyperlinks on an Excel file
 
-- [How to get a hyperlink description from Excel Worksheet.](/cells/hyperlinks/get/) – Retrieve the details of a single hyperlink, including its address and display text.  
-- [How to get all hyperlinks description from Excel Worksheet.](/cells/hyperlinks/get-all/) – List every hyperlink defined in a worksheet with their corresponding properties.  
-- [How to add hyperlinks to Excel Worksheet](/cells/hyperlinks/add/) – Insert a new hyperlink into a worksheet, specifying the target URL and the cell range.  
-- [How to update hyperlinks in Excel Worksheet](/cells/hyperlinks/update/) – Modify an existing hyperlink’s address, display text, or target cell.  
-- [How to delete all hyperlinks from Excel Worksheet](/cells/hyperlinks/clear/) – Remove every hyperlink from a worksheet in a single operation.  
-- [How to delete a hyperlink from Excel Worksheet](/cells/hyperlinks/delete/) – Delete a specific hyperlink identified by its index or cell reference.  
-
-{{< tip >}}
-Hyperlinks may break if cell references change; use absolute paths (e.g., `https://example.com/report.xlsx#Sheet2!A1`) where possible to ensure robustness.
-{{< /tip >}}
+- [How to get a hyperlink description from Excel Worksheet.](/cells/hyperlinks/get/) – Retrieve the details of a single hyperlink, including its address and display text.
+- [How to get all hyperlinks description from Excel Worksheet.](/cells/hyperlinks/get-all/) – List every hyperlink defined in a worksheet with their corresponding properties.
+- [How to add hyperlinks to Excel Worksheet](/cells/hyperlinks/add/) – Insert a new hyperlink into a worksheet, specifying the target URL and the cell range.
+- [How to update hyperlinks in Excel Worksheet](/cells/hyperlinks/update/) – Modify an existing hyperlink’s address, display text, or target cell.
+- [How to delete all hyperlinks from Excel Worksheet](/cells/hyperlinks/clear/) – Remove every hyperlink from a worksheet in a single operation.
+- [How to delete a hyperlink from Excel Worksheet](/cells/hyperlinks/delete/) – Delete a specific hyperlink identified by its index or cell reference.
